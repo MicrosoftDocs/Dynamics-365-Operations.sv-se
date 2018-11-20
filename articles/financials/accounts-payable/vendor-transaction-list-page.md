@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 53740f6ed0d463de5ba962f1ba15b208634a0739
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 45033b8b015d468b7ee0f6c3fba5e6fb6201433e
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Visa kvittningar
 
-Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvittningshistoriken och mer information om hela kvittningstransaktionen. Du kan också visa ytterligare transaktioner som är relaterade till den valda transaktionen, antingen eftersom de tillhörde samma kvittning eller eftersom de är betalningar som skapades i samma betalningsjournal.
+Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvittningshistoriken och mer information om kvittningstransaktionen. Du kan också visa ytterligare transaktioner som är relaterade till den valda transaktionen, antingen eftersom de tillhörde samma kvittning eller eftersom de är betalningar som skapades i samma betalningsjournal.
 
 1. Välj **Leverantörsreskontra \>Alla leverantörer**.
 2. Markera en leverantör med transaktioner och sedan i åtgärdsfönstret, på fliken **leverantör**, välj **transaktioner**.
@@ -49,7 +49,7 @@ Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvitt
 
 ## <a name="global-transactions"></a>Globala transaktioner
 
-Knappen **globala transaktioner** har lagts till leverantören. Den här knappen låter dig visa alla transaktioner för en leverantör i alla juridiska personer. Listsidan **leverantörstransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på dennes säkerhetsinställningar.
+Knappen **globala transaktioner** visas även på listsidan **leverantörstransaktioner**. Den här knappen låter dig visa alla transaktioner för en leverantör i alla juridiska personer. Listsidan **leverantörstransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på dennes säkerhetsinställningar.
 
 Listsidan visar alla transaktioner för leverantörer som har samma part-ID som leverantören du startade med. Om t.ex. leverantör US-001 i en juridisk person har samma part-ID som leverantör DE-001 i en annan juridisk person, visas alla transaktioner för både leverantörs-ID:n.
 
@@ -67,13 +67,13 @@ Filtret för att visa öppna transaktioner har ersatts av ett nytt filter där d
 - **Alla** – Visa alla transaktionerna för den valda leverantören (öppna och stängda).
 - **Stängda** – Visa endast transaktioner som har kvittats och stängts helt.
 - **Öppen** – Visa endast transaktioner som inte har kvittats.
-- **Öppna från och med datum** – Visa endast transaktioner som inte har kvittats helt för ett datum som du anger. När du väljer det här alternativet kan du ändra datumet som visas bredvid filtret. Transaktioner som har värdet **Senaste kvittningsdatumet** efter det datum som du anger visas i listan, även om dessa transaktioner kvittas fullständigt per aktuellt datum. Saldot representerar emellertid saldon per aktuellt datum, inte på det valda datumet.
+- **Öppna inklusive stängda på eller efter datumet** – Visa endast transaktioner som inte har kvittats helt eller efter ett datum som du anger. När du väljer det här alternativet kan du ändra datumet som visas bredvid filtret. Transaktioner som har värdet **Senaste kvittningsdatumet** på eller efter det datum som du anger visas i listan, även om dessa transaktioner kvittas fullständigt per aktuellt datum. Saldot representerar emellertid saldon per aktuellt datum, inte på det valda datumet.
 
-Ett filter har också lagts som låter dig dölja transaktioner för valutaregistrering. Markera bara kryssrutan **Dölj valutaomvärderingar**.
+Markera kryssrutan **Dölj valutaomvärderingar** för att dölja transaktioner för valutaregistrering.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Ändra enklare förfallodatum och rabattdatum
+## <a name="modify-due-dates-and-discount-dates"></a>Ändra förfallodatum och rabattdatum
 
-Du kan uppdatera förfallodatum och rabattdatum för öppna kundtransaktioner. Erfarenheten har förbättrats i versionen 8.1. Du kan nu lägga till förfallodatum till listsidan **leverantörstransaktioner**. Genom att klicka på förfallodatumet på listsidan **leverantörstransaktioner** kan du även ändra förfallodatum, rabattdatum, betalningsvillkor och kassarabattsvillkoren i dialogrutan **Uppdatera förfallodatum och kassarabattdatum**.
+Du kan uppdatera förfallodatum och rabattdatum för öppna kundtransaktioner. I version 8.1 kan du nu lägga till förfallodatum till listsidan **leverantörstransaktioner**. Genom att klicka på förfallodatumet på listsidan **leverantörstransaktioner** kan du även ändra förfallodatum, rabattdatum, betalningsvillkor och kassarabattsvillkoren i dialogrutan **Uppdatera förfallodatum och kassarabattdatum**.
 
 ### <a name="activate-the-feature"></a>Aktivera funktionen
 
@@ -91,11 +91,11 @@ Listsidan **leverantörstransaktioner** visar alla transaktioner för en leveran
 
 Varje fält har en annan effekt på transaktionen vid redigering:
 
-- **Redigera basdatum:** Förfallodagen och rabattdatumet ändras som om basdatumet är dokumentdatumet.
-- **Redigera förfallodatum:** Endast förfallodatumet ändras
-- **Redigera rabattdatum:** Endast rabattdatum ändras.
-- **Redigera betalningsvillkoren:** Förfallodatumet ändras utifrån basdatum och betalningsvillkoren.
-- **Redigera villkoren för kassarabatt:** kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
+- **Redigera basdatum** - Förfallodagen och rabattdatumet ändras som om basdatumet är dokumentdatumet.
+- **Redigera förfallodatum** - Endast förfallodatumet ändras
+- **Redigera rabattdatum** - Endast rabattdatum ändras.
+- **Redigera betalningsvillkoren** - Förfallodatumet ändras utifrån basdatum och betalningsvillkoren.
+- **Redigera villkoren för kassarabatt** - Kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
 
 När du är klar med redigeringen av betalningdinställningar väljer du **Stäng** att spara dina ändringar.
 

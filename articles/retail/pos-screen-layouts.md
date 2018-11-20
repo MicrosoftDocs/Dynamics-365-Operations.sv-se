@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e4c1f8c7435a901431286960581754e5b2820dad
-ms.openlocfilehash: 34e744884b4bae890d7990103ecc7157c6883869
+ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
+ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/03/2018
+ms.lasthandoff: 11/13/2018
 
 ---
 
@@ -71,7 +71,7 @@ Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen a
 
 ### <a name="assignment"></a>Uppdrag
 
-Skärmlayouter kan tilldelas på butik- och användarnivå. Användartilldelningen åsidosätter kassa- och butikstilldelningen, och kassatilldelningen åsidosättningar butikstilldelningen. I ett enkelt scenario där alla användare använder samma layout oavsett kassa eller roll kan skärmlayouten endast anges för butiksnivå. I de scenarier där vissa kassor eller användare kräver specialiserade layouter, kan dessa layouter tilldelas.
+Skärmlayouter kan tilldelas på butik-, kassa- och användarnivå. Användartilldelningen åsidosätter kassa- och butikstilldelningen, och kassatilldelningen åsidosättningar butikstilldelningen. I ett enkelt scenario där alla användare använder samma layout oavsett kassa eller roll kan skärmlayouten endast anges för butiksnivå. I de scenarier där vissa kassor eller användare kräver specialiserade layouter, kan dessa layouter tilldelas.
 
 ### <a name="layout-sizes"></a>Layoutstorlekar
 

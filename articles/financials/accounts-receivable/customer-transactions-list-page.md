@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 79479f6949c52830918598583ee91dd85d2d7ac3
+ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
+ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 10/12/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/01/2018
 
 ## <a name="view-settlements"></a>Visa kvittningar
 
-Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvittningshistoriken och mer information om hela kvittningstransaktionen. Du kan också visa ytterligare transaktioner som är relaterade till den valda transaktionen, antingen eftersom de tillhörde samma kvittning eller eftersom de är betalningar som skapades i samma betalningsjournal.
+Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvittningshistoriken och mer information om kvittningstransaktionen. Du kan också visa ytterligare transaktioner som är relaterade till den valda transaktionen, antingen eftersom de tillhörde samma kvittning eller eftersom de är betalningar som skapades i samma betalningsjournal.
 
 1. Välj **Kundreskontra \> Alla kunder**.
 2. Markera en kund med transaktioner och sedan i åtgärdsfönstret, på fliken **kund**, välj **transaktioner**.
@@ -49,7 +49,7 @@ Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvitt
 
 ## <a name="global-transactions"></a>Globala transaktioner
 
-Knappen **globala transaktioner** har lagts till kundsidan. Den här knappen låter dig visa alla transaktioner för en kund i alla juridiska personer. Listsidan **kundtransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på dennes säkerhetsinställningar.
+Knappen **globala transaktioner** visas även på listsidan **kundtransaktioner**. Den här knappen låter dig visa alla transaktioner för en kund i alla juridiska personer. Listsidan **kundtransaktioner** visar endast transaktioner för de juridiska personer som användaren har tillgång till, baserat på dennes säkerhetsinställningar.
 
 Listsidan visar alla transaktioner för kunder som har samma part-ID som kunder du startade med. Om t.ex. kunder US-001 i en juridisk person har samma part-ID som kunder DE-001 i en annan juridisk person, visas alla transaktioner för både kunder-ID:n.
 
@@ -67,13 +67,13 @@ Filtret för att visa öppna transaktioner har ersatts av ett nytt filter där d
 - **Alla** – Visa alla transaktionerna för de valda kunderna (öppna och stängda).
 - **Stängda** – Visa endast transaktioner som har kvittats och stängts helt.
 - **Öppen** – Visa endast transaktioner som inte har kvittats.
-- **Öppna från och med datum** – Visa endast transaktioner som inte har kvittats helt för ett datum som du anger. När du väljer det här alternativet kan du ändra datumet som visas bredvid filtret. Transaktioner som har värdet **Senaste kvittningsdatumet** efter det datum som du anger visas i listan, även om dessa transaktioner kvittas fullständigt per aktuellt datum. Saldot representerar emellertid saldon per aktuellt datum, inte på det valda datumet.
+- **Öppna inklusive stängda på eller efter datumet** – Visa endast transaktioner som inte har kvittats helt eller efter ett datum som du anger. När du väljer det här alternativet kan du ändra datumet som visas bredvid filtret. Transaktioner som har värdet **Senaste kvittningsdatumet** på eller efter det datum som du anger visas i listan, även om dessa transaktioner kvittas fullständigt per aktuellt datum. Saldot representerar emellertid saldon per aktuellt datum, inte på det valda datumet.
 
-Ett filter har också lagts som låter dig dölja transaktioner för valutaregistrering. Markera bara kryssrutan **Dölj valutaomvärderingar**.
+Markera kryssrutan **Dölj valutaomvärderingar** för att dölja transaktioner för valutaregistrering.
 
-## <a name="more-easily-modify-due-dates-and-discount-dates"></a>Ändra enklare förfallodatum och rabattdatum
+## <a name="modify-due-dates-and-discount-dates"></a>Ändra förfallodatum och rabattdatum
 
-Du kan uppdatera förfallodatum och rabattdatum för öppna kundtransaktioner. Erfarenheten har förbättrats i versionen 8.1. Du kan nu lägga till förfallodatum till listsidan **Kundtransaktioner**. Genom att klicka på förfallodatumet på listsidan **kundtransaktioner** kan du även ändra förfallodatum, rabattdatum, betalningsvillkor och kassarabattsvillkoren i dialogrutan **Uppdatera förfallodatum och kassarabattdatum**.
+Du kan uppdatera förfallodatum och rabattdatum för öppna kundtransaktioner. I version 8.1 kan du nu lägga till förfallodatum till listsidan **kundtransaktioner**. Genom att klicka på förfallodatumet på listsidan **kundtransaktioner** kan du även ändra förfallodatum, rabattdatum, betalningsvillkor och kassarabattsvillkoren i dialogrutan **Uppdatera förfallodatum och kassarabattdatum**.
 
 ### <a name="activate-the-feature"></a>Aktivera funktionen
 
@@ -91,11 +91,11 @@ Listsidan **kundtransaktioner** visar alla transaktioner för en kund. När du v
 
 Varje fält har en annan effekt på transaktionen vid redigering:
 
-- **Redigera basdatum:** Förfallodagen och rabattdatumet ändras som om basdatumet är dokumentdatumet.
-- **Redigera förfallodatum:** Endast förfallodatumet ändras
-- **Redigera rabattdatum:** Endast rabattdatum ändras.
-- **Redigera betalningsvillkoren:** Förfallodatumet ändras utifrån basdatum och betalningsvillkoren.
-- **Redigera villkoren för kassarabatt:** kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
+- **Redigera basdatum** - Förfallodagen och rabattdatumet ändras som om basdatumet är dokumentdatumet.
+- **Redigera förfallodatum** - Endast förfallodatumet ändras.
+- **Redigera rabattdatum** - Endast rabattdatum ändras.
+- **Redigera betalningsvillkoren** - Förfallodatumet ändras utifrån basdatum och betalningsvillkoren.
+- **Redigera villkoren för kassarabatt** - Kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
 
 När du är klar med redigeringen av betalningdinställningar väljer du **Stäng** att spara dina ändringar.
 

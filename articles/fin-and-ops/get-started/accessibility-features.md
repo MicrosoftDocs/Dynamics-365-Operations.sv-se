@@ -3,7 +3,7 @@ title: "Hjälpmedelsfunktioner"
 description: "Det här avsnittet beskriver de funktioner som hjälper användare med olika funktionsnedsättningar att använda Dynamics 365 for Finance and Operations, Dynamics 365 for Retail och Dynamics 365 for Talent."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 834146c1a57cca0c02598290352c3ab8e1e4b7f5
+ms.sourcegitcommit: a67b51ced4bea11be258aed359a758d88294beb1
+ms.openlocfilehash: bc48aa5ccf50705ef0c5087608798875953fe888
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -41,7 +41,7 @@ För de flesta användare omfattar daglig systemanvändning en stor mängd data 
 
 Alla sidor som nås via menyn Navigeringsfönster (menyn längst till vänster) är även tillgänglig via rutan **Sök**. Tryck på Alt+G för att flytta fokus till rutan **Sök** och ange sedan sidan namn eller beskrivning.
 
-![”Bankkonto” angivet i sökrutan](media/6d08b0be32808221023e2aa92d69fd70.png)
+![”Bankkonton” som anges i Sökrutan](media/6d08b0be32808221023e2aa92d69fd70.png  "\"Bank accounts\" entered in the Search box")
 
 Mer information finns i [Navigeringssökning](navigation-search.md).
 
@@ -56,17 +56,21 @@ Varje åtgärd som finns på en sida kan nås från tangentbordet via fliksekven
 
 Du ska köra åtgärden **Meddelandelogg för e-post** som visas i gruppen **E-postmeddelande** på fliken **Försäljningsorder** i åtgärdsfönstret.
 
-![Meddelandeloggs-åtgärd för e-post i åtgärdsfönstret](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg)
+![Meddelandeloggs-åtgärd för e-post i åtgärdsfönstret](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg  "\"Meddelandeloggs-åtgärd för e-post i åtgärdsfönstret")
 
 Ett alternativ är att använda tangentbordet. Tryck på Ctrl+F6 för att flytta fokus till åtgärdsfönstret och tryck sedan på Tabb flera gånger för att bläddra igenom alla flikar och åtgärder tills åtgärden **Meddelandelogg för e-post** är i fokus.
 
 Du kan emellertid också köra åtgärden mer direkt. Tryck på Ctrl + apostrof (') att visa sökrutan för åtgärder.
 
-![Sökruta för åtgärder](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg)
+![Sökruta för åtgärder](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg  "Sökruta för åtgärder")
 
 I sökrutan skriver du ord som beskriver åtgärden. Åtgärden görs tillgänglig för dig och du kan köra den direkt. Genom att exempelvis skriva **e-post**, **medde** (en del av ett ord) eller **logg** kan du ”hoppa” till funktionen för meddelandelogg för e-post.
 
-![”E-post” angivet i sökrutan](media/image4.png) ![”Medde” angivet i sökrutan](media/image5.png) ![”Logg” angivet i sökrutan](media/image6.png)
+![”E-post” som anges i Sökrutan](media/image4.png "\"E-post\" som anges i Sökrutan") 
+
+![”Meddelande” som anges i Sökrutan](media/image5.png "\"Meddelande\" som anges i Sökrutan")
+
+![”Logg” som anges i Sökrutan](media/image6.png "\"Logg\" som anges i Sökrutan")
 
 När du är klar trycker du på Ctrl + apostrof igen för att återföra fokus till det fält som du arbetade med innan du körde åtgärdssökningen.
 
@@ -78,7 +82,7 @@ Vid vardaglig systemanvändning krävs inte alla fält för att utföra vanliga 
 
 Du upptäcker emellertid kanske att vissa fält som du ofta använder för att utföra uppgifter som inte finns med i den förvalda fliksekvensen. Om du använder Windows skärmläsare kan du då använda tangentbordskommandon i Windows skärmläsare för att nå dessa fält och granska innehållet. Alternativt kan du aktivera alternativet **Utökad fliksekvens** på sidan **Alternativ**. Det här alternativet inkluderar samtliga redigerbara och skrivskyddade fält i fliksekvensen. Du kan sedan använda sidoanpassningen för att skapa en anpassad fliksekvens och utelämna fält som inte behöver ingå i fliksekvensen. Mer information om anpassning finns i [Anpassa användarupplevelsen](personalize-user-experience.md).
 
-![Utökade alternativ för tabbsekvens](media/8c0f12bbb3f26032997ef0ba95d89b6a.png)
+![Alternativet ”Utökad tabbsekvens”](media/8c0f12bbb3f26032997ef0ba95d89b6a.png  "Alternativet ”Utökad tabbsekvens")
 
 ## <a name="form-patterns"></a>Formulärmönster
 

@@ -1,9 +1,9 @@
 ---
-title: Redovisning journaltyper
-description: "Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations."
+title: Redovisningsjournaltyper
+description: "I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 9f8fc40f199b83a9e0cb36ce905163c3ed547057
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/16/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations.
+I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler. Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations.
 
 | Journaltyp                      | Syfte                       | Registrera transaktioner på denna sida                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -53,7 +53,8 @@ Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för 
 | Löneutbetalning              | Utfärda betalningar som baseras på lön betalar uttalanden. Du kan inte ange transaktioner i journalen manuellt. Du måste skapa löneutdrag och sedan skicka dessa utdrag för betalning.                                                                                                                                                              |                                                                |
 | Periodisk                          | Skapa periodiska transaktioner för den periodiska journalen.                                                                                                                                                                                                                                                                                                      | Periodiska journaler                                              |
 | Bokför anläggningstillgångar                 | Bokföra anläggningstillgångar.                                                                                                                                                                                                                                                                                                                              | Anläggningstillgångar                                                   |
-| Projekt - utgifter                | Skapa utgiftstransaktioner för projekt.                                                                                                                                                                                                                                                                                                                        | Utgift                                                        |
+| Projekt - utgifter                | Skapa utgiftstransaktioner för projekt.                                                                                                                                                                                                                                                                                                                        | Expense                                                        |
+| Justering av rapporteringsvaluta     | Skapa justeringar i rapporteringsvaluta för saldon på redovisningskonton.               | Justeringsjournaler för rapporteringsvaluta                         |
 | Statistiktransaktioner            | Skapa statistiktransaktioner.                                                                                                                                                                                                                                                                                                                            |                                                                |
 | Leverantörsbankremissa            | Skapa en remissafil för en skuldsedel som kan skickas till din organisations bank.                                                                                                                                                                                                                                                                      | Remissajournal                                             |
 | Leverantörsutbetalning               | Skapa leverantörsutbetalningstransaktioner.                                                                                                                                                                                                                                                                                                                    | Betalningsjournal                                                |

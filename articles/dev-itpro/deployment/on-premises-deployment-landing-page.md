@@ -3,7 +3,7 @@ title: "Startsida för lokal distribution"
 description: "Det här avsnittet innehåller information och länkar till innehåll om lokal distribution."
 author: kfend
 manager: AnnBe
-ms.date: 09/11/2018
+ms.date: 11/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
-ms.openlocfilehash: e65edc9d613c9898776e30ea5ab4104a3ce5b4c8
+ms.sourcegitcommit: b8fb8c963e2bba2e6fe7cb31e71a38232f1e8a54
+ms.openlocfilehash: c80a41427db18607577b4f89c8e30fe6c8f872d3
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/17/2018
+ms.lasthandoff: 11/02/2018
 
 ---
 # <a name="on-premises-deployments-home-page"></a>Startsida för lokal distribution
@@ -31,37 +31,44 @@ ms.lasthandoff: 09/17/2018
 Du kan distribuera Microsoft Dynamics 365 for Finance and Operations (lokal). När du väljer en lokal distributionstyp skiljer sig systemkrav, maskinvarustorlek och funktionalitet sig åt från en molnbaserad distribution. Det här avsnittet innehåller länkar till specifik innehåll om lokal distribution.
 
 ## <a name="get-started"></a>Kom igång
-- [Vad är nytt eller ändrat i lokala distributioner av Dynamics 365 for Finance and Operations, Enterprise edition 7.2 med plattformsuppdatering 12 (mars 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
-- [Översikt över Dynamics 365 for Finance and Operations (lokal)](on-premises-overview.md)
-- [Planera inför lokal distribution](plan-onprem-deployment.md)
+- [Alternativ för lokal distribution](on-premises-overview.md)
+- [Planera och förbereda för lokala distributioner](plan-onprem-deployment.md)
 - [Systemkrav för lokala distributioner](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Beräkna maskinvara för lokala miljöer](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Köpa Dynamics 365 for Finance and Operations (lokal)](../../fin-and-ops/get-started/purchase-on-premises.md)
-- [Jämförelse mellan molnet och lokala funktioner](../../fin-and-ops/get-started/cloud-prem-comparison.md)
+- [Köp Finance and Operations (lokal)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Jämförelse mellan funktioner i molnet och lokalt](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
-## <a name="onboard"></a>Onboard
-- [Skapa ett lokalt projekt i Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Ställa in och distribuera lokala miljöer (plattformsuppdatering 12)](setup-deploy-on-premises-pu12.md)
+## <a name="onboard"></a>Integrera
+- [Ställ in lokala projekt i Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [Ställ in och distribuera lokala miljöer på (Plattformuppdatering 12 och senare)](setup-deploy-on-premises-pu12.md)
 - [Ställa in och distribuera lokala miljöer (plattformsuppdatering 8 och 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Installera nätverksskrivare i lokala miljöer](../analytics/install-network-printer-onprem.md)
-- [Konfigurera SQL Server Reporting Services för en lokal distribution](../analytics/configure-ssrs-on-premises.md)
+- [Konfigurera SQL Server Reporting Services för lokal distribution](../analytics/configure-ssrs-on-premises.md)
 - [Utveckla och distribuera anpassade modeller i lokala miljöer](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Arbeta i lokal distribution
 - [Konfigurera dokumenthantering](../../fin-and-ops/organization-administration/configure-document-management.md)
-- [Importera konfigurationer för elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
-- [Funktioner för att skapa, publicera och skriva ut dokument i lokala distributioner](../analytics/printing-capabilities-on-premises.md)
-- [Konfigurera omvänd proxy för lokal miljö](onprem-reverseproxy.md)
-- [Ställa in teknisk support](../lifecycle-services/support-experience.md)
-- [Felsökning av klientens Internetanslutning](../user-interface/client-disconnected.md)
-- [Uppdatera en lokal distribution](apply-updates-on-premises.md)
-- [Distribuera en lokal distribution](redeploy-on-prem.md)
+- [Importera konfigurationer för (ER) elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
+- [Skapa, publicera och skriva ut dokument i lokala distributioner](../analytics/printing-capabilities-on-premises.md)
+- [Konfigurera omvända proxyservrar för lokala miljöer](onprem-reverseproxy.md)
+- [Konfigurera teknisk support för Finance and Operations](../lifecycle-services/support-experience.md)
+- [Internetanslutning för klient](../user-interface/client-disconnected.md)
+- [Uppdatera lokala distributioner](apply-updates-on-premises.md)
+- [Omdistribuera lokala miljöer](redeploy-on-prem.md)
+
+## <a name="retail"></a>Retail
+- [Retail-funktionerna som finns i lokala distributioner](../../retail/retail-onprem.md)
+- [Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö](deploy-retail-onprem.md)
+- [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurera och installera Retail Store Scale Unit](../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+
+
 
 ## <a name="other-resources"></a>Andra resurser
-- [Felsöka Dynamics 365 for Finance and Operations (lokal)](troubleshoot-on-prem.md)
+- [Felsöka lokala distributioner](troubleshoot-on-prem.md)
 - [Lokal diagnostik](on-premises-diagnostics.md)
 - [Funktioner som inte implementerats i lokala distributioner](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
-- [Inaktuella funktioner](../migration-upgrade/deprecated-features.md)
+- [Borttagna och inaktuella funktioner](../migration-upgrade/deprecated-features.md)
 - [Livscykelpolicy lokala versioner av programmet](../migration-upgrade/on-prem-version-update-policy.md)
  
 

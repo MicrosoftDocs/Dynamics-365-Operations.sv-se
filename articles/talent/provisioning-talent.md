@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 # <a name="provision-talent"></a>Reservera Talent
@@ -47,7 +47,7 @@ Mer information om hur du kommer igång med Talent finns i metoden för **Talent
 När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 
 1. I LCS-projektet väljer du fliken **App-hantering for Talent**.
-2. Talent etableras alltid i en Microsoft PowerApps-miljö, detta i syfte att möjliggöra PowerApps-integrering och -utbyggnad. Läs avsnittet ”Välja en PowerApps-miljö” i det här ämnet innan du fortsätter. 
+2. Talent etableras alltid i en Microsoft PowerApps-miljö, detta i syfte att möjliggöra PowerApps-integrering och -utbyggnad. Läs avsnittet ”Välja en PowerApps-miljö” i det här ämnet innan du fortsätter. Om du inte redan har en PowerApps-miljö, välj hantera miljöer i LCS eller gå till PowerApps administrationscenter. Följ stegen för att [skapa en miljö med PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en PowerApps P2-licens. Om din organisation inte har en licens för PowerApps P2 kan du skaffa en från din CSP eller [Prissättningssidan för PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
@@ -73,7 +73,7 @@ Integreringen mellan Talent och PowerApps-miljöer låter dig integrera och utö
 Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska användas för att distribuera Talent: 
 1. I LCS, välj Hantera miljöer eller gå direkt till PowerApps Administratörscenter, där du kan visa befintliga miljöer och skapa nya miljöer.
 2. En enskild Talent-miljö mappas till en enda PowerApps-miljö.
-3. En PowerApps-miljö "innehåller" Talent-programmet tillsammans med motsvarande PowerApps, Flow och CDS-program. Om PowerApps-miljön tas bort tas även apparna bort.
+3. En PowerApps-miljö "innehåller" Talent-programmet tillsammans med motsvarande PowerApps, Flow och CDS-program. Om PowerApps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Talent-miljö konfigureras antingen ”Utvärderingsversion” eller ”Produktion”. Välj typ av miljö baserat på hur miljön kommer att användas. 
 4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Därför rekommenderar vi att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en PowerApps-miljö.
 5. Följande PowerApps-miljöer kan inte användas för Talent och filtreras i urvalslistan i LCS:
  

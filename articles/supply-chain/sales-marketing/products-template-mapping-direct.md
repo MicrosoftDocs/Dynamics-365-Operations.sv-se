@@ -3,7 +3,7 @@ title: "Synkronisera produkter direkt från Finance and Operations till produkte
 description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations, till Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/25/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 06/25/2018
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Innan du kan använda lösningen potentiell kund till kontanter ska du bekanta dig med [Dynamics 365 dataintegrering](/common-data-service/entity-reference/dynamics-365-integration).
+> Innan du kan använda lösningen potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera produkter direkt från Microsoft Dynamics 365 for Finance and Operations, till Microsoft Dynamics 365 for Sales.
 

@@ -25,6 +25,7 @@ ms.lasthandoff: 09/24/2018
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Avyttra en anläggningstillgång med hjälp av en fritextfaktura
 
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du avyttrar en anläggningstillgång med hjälp av formuläret Fritextfaktura.
 

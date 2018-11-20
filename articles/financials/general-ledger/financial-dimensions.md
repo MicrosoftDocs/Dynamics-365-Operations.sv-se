@@ -3,7 +3,7 @@ title: Ekonomiska dimensioner
 description: "Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/24/2018
+ms.date: 10/26/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
-ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
+ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
+ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 11/05/2018
 
 ---
 
@@ -51,9 +51,9 @@ Nedan följer några av begränsningarna:
 
 ## <a name="custom-dimensions"></a>Anpassade dimensioner
 
-Om du vill skapa en användardefinierad ekonomisk dimension, i fältet **Använd värden från**, välj **&lt;&nbsp;Anpassa dimension&nbsp;&gt;**.
+Om du vill skapa en användardefinierad ekonomisk dimension väljer du **Anpassad dimension** i fältet **Använd värden från**.
 
-Du kan även ange en kontomask för att begränsa beloppet och typen av information som du kan ange för dimensionsvärden. Du kan ange tecken som ska vara oförändrade för varje dimensionsvärde, till exempel bokstäver eller ett bindestreck (-). Du kan även ange nummertecken (\#) och et-tecken (&) som platshållare för tecken som ska ändras varje gång ett dimensionsvärde skapas. Använd ett nummertecken (\#) som platshållare för ett nummer och ett et-tecken (&) som platshållare för en bokstav. Det här fältet för formatmask är bara tillgängligt när du väljer **&lt;&nbsp;Anpassad dimension&nbsp;&gt;** i fältet **Använd värden från**.
+Du kan även ange en kontomask för att begränsa beloppet och typen av information som du kan ange för dimensionsvärden. Du kan ange tecken som ska vara oförändrade för varje dimensionsvärde, till exempel bokstäver eller ett bindestreck (-). Du kan även ange nummertecken (\#) och et-tecken (&) som platshållare för tecken som ska ändras varje gång ett dimensionsvärde skapas. Använd ett nummertecken (\#) som platshållare för ett nummer och ett et-tecken (&) som platshållare för en bokstav. Det här fältet för formatmask är bara tillgängligt när du väljer du **Anpassad dimension** i fältet **Använd värden från**.
 
 **Exempel**
 
@@ -108,14 +108,30 @@ Du kan ställa in härledda värden på sidan för dimensioner.
 
 Ange dimensionskombinationer som bör härledas från dimensionen i den första kolumnen. Om du vill använda kostnadsstället som dimensionen avdelning och plats härleds från t.ex. kostnadsställe 10, avdelning 20, lokal 30. Sedan när du anger kostnadsställe 10, i en huvudpost eller på en sida för transaktionssidan, avdelning 20 och plats 30 anges som standard.
 
-Dimension härledda processen åsidosätta inte befintliga härledda storleksvärden. Till exempel om du anger kostnadsställe 10 och inga andra dimensionen anges, anges avdelning 20 och plats 30 som standard. Om du ändrar kostnadsställe ändras dock inte de värden som redan har upprättats. Därför kan du upprätta standarddimensioner för huvudposter och dessa dimensioner ändras inte efter härledda dimensioner.
+### <a name="overriding-existing-values-with-derived-dimensions"></a>Åsidosättning av befintliga dimensionsvärden med härledda dimensioner
+ 
+Som standard åsidosätter inte den härledda dimensionsprocessen befintliga härledda dimensioner. Till exempel om du anger kostnadsställe 10 och inga andra dimensionen anges, anges avdelning 20 och plats 30 som standard. Om du ändrar kostnadsställe ändras dock inte de värden som redan har upprättats. Därför kan du upprätta standarddimensioner för huvudposter och dessa dimensioner ändras inte efter härledda dimensioner.
+
+Du kan ändra beteendet för härledda dimensioner att åsidosätta befintliga värden genom att markera kryssrutan **Ersätt befintliga dimensionsvärden med härledda värden** på sidan **härledda dimensioner**. Om detta fält är markerat kan du ange en dimension med härledda dimensionsvärden och de härledda dimensionsvärdena åsidosätter eventuella värden som redan finns. Med föregående exempel, om du anger kostnadsställe 10 och inga andra dimensionen anges, anges avdelning 20 och plats 30 som standard. Om värdet redan var avdelning 50 och plats 60 ändras emellertid värdena men nu till avdelning 20 och plats 30.
+ 
+Härledda dimensioner med denna inställning ersätter inte automatiskt befintliga standardvärden för dimension när dimensionsvärdena är standard. Dimensionsvärden åsidosätts bara när du anger ett nytt dimensionsvärde på en sida och det finns befintliga härledda värden för den aktuella dimensionen på sidan.
+
+### <a name="preventing-changes-with-derived-dimensions"></a>Förhindra ändringar med härledda dimensioner
+ 
+När du använder **Lägg till segment ”** på sidan **Härledda dimensioner** om du vill lägga till ett segment som en härledd dimension finns ett alternativ längst ned på sidan **Lägg till segment** som låter dig förhindra ändringar till den dimensionen när den hämtas på en sida. Standardinställningen är av så att den inte förhindrar härledda dimensionsvärdena från att ändras. Ändra inställningen till **Ja** om du vill förhindra att dimensionen ändras när de har härletts. Till exempel om värdet för avdelningsdimensionen härleds från värdet för kostnadsställedimensionen kan avdelningsvärdet inte ändras om inställningen**Förhindra ändringar** är **Ja**. 
+ 
+Inställningen inte ändras om dimensionsvärdet är giltig, men visas inte i listan över härledda dimensioner. Till exempel om avdelning 20 härleds från kostnadsställe 10 och du anger kostnadsställe 10 kommer du inte att kunna redigera avdelning 20. Men om du anger kostnadsställe 20 och det är inte i listan över härledda dimensionerna för kostnadsställe, kan du redigera värdet avdelning. 
+ 
+I samtliga fall kommer kontovärdet och alla dimensionsvärden fortfarande valideras mot kontostrukturerna efter att de härledda dimensionsvärden har använts. Om du använder härledda dimensioner och de inte kan valideras när de används på en sida, måste du ändra härledda dimensionsvärden på sidan för härledda dimensioner innan du kan använda dem i transaktioner. 
+ 
+När du ändrar dimensionerna på snabbfliken **ekonomiska dimensioner** kommer den dimension som har markerats för att förhindra ändringar inte att vara redigerbar. Om du anger ett konto och dimensioner i kontrollen av segmenterade poster på en sida, kan dimensionerna redigeras. Men när du flyttar markeringen från kontroll av segmenterade poster och flyttar till annat fält eller utför en åtgärd kommer kontot och dimensionerna att valideras mot listan med härledda dimensioner och kontostrukturer för att se till att du har angett lämpliga värden. 
 
 ### <a name="derived-dimensions-and-entities"></a>Härledda dimensioner och enheter
 
 Du kan ställa in dimensioner härledda segment och värden med hjälp av enheter.
 
 - Härledda dimensioner ordnar upp dimensioner och segment som används för dessa dimensioner.
-- Entitet DerivedDimensionValue kan du importera de värden som ska hämtas för varje dimension körtid.
+- Härledda entiteters dimensionsvärde låter dig importera de värden som ska härledas för varje huvuddimension.
 
 När du använder en enhet för att importera data, om den enheten importerar dimensioner tillämpas reglerna för härledd dimension under importen, om inte enheten specifikt åsidosätter dessa dimensioner.
 

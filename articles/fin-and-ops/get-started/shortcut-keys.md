@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
+ms.sourcegitcommit: 58551a26d9f3a55e8a6ab8b4ca0805aaca4a4c28
+ms.openlocfilehash: d9d3ace80e49b8dc29259c8c16925f474c9e74b3
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/25/2018
 
 ---
 
@@ -192,7 +192,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Lägg till/ta bort ett formulär som favorit (med fokus på ett formulär i navigeringsfönstret)   | Skift+F                    |
 | Flytta till standardåtgärdsfönstret                                              | Alt+M,A eller Ctrl+F6         |
 | Flytta till filterfönstret (kan inkludera att öppna det)                        | Alt+M,F eller Ctrl+F3         |
-| Flytta fokus till sidoinnehållet (med fokus på navigeringsbalken)            | Alt+M,M eller Ctrl+F3         |
+| Flytta fokus till sidoinnehållet (med fokus på Filterfönstret)                | Alt+M,M eller Ctrl+F3         |
 | Flytta till navigeringslistan i detaljformuläret (som kan inbegripa att öppna det.)    | Alt+M,S eller Ctrl+F8         |
 | Flytta fokus till sidoinnehållet (med fokus på navigeringsbalken)            | Alt+M,M eller Ctrl+F8         |
 | Stäng navigeringlistan på formuläret Detaljer (med fokus i navigeringlistan) | Esc                        |
