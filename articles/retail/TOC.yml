@@ -8,7 +8,7 @@
       href: get-started/before-you-buy.md
     - name: Registrera dig för ett abonnemang av förhandsversionen
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: Distribuera en demonstrationsmiljö
+    - name: Installera en demonstrationsmiljö
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
     - name: Distribueringsalternativ
       href: dev-itpro/choose-deployment.md
@@ -47,19 +47,23 @@
       href: dev-itpro/updating-environments.md
     - name: Problem med testning och prestanda
       href: dev-itpro/retail-implementation-testing-performance.md
+- name: Fördelad orderhantering (DOM)
+  href: dom.md
 - name: Betalningar
   items:
     - name: Betalningsmetoder
       href: payment-methods.md
     - name: 'Inställning, auktorisering och registrering av kreditkort'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: Konfigurera kontantvalörer för POS
+    - name: Konfigurera kontantvalörer för kassan
       href: cash-denominations.md
-    - name: Frågor och svar om betalningar
+    - name: Ordna scenarier för fakturabetalning
+      href: payinvoice.md
+    - name: Vanliga frågor om betalningar
       href: dev-itpro/payments-retail.md
 - name: Inköpsorder
   items:
-    - name: Översikt över inköpsorder
+    - name: Översikt av inköpsorder
       href: ../supply-chain/procurement/purchase-order-overview.md
     - name: Skapa inköpsorder
       href: ../supply-chain/procurement/purchase-order-creation.md
@@ -213,6 +217,8 @@
       href: Order-fulfillment-POS-setup.md
     - name: Visa ordermeddelanden i kassan
       href: Notifications-POS.md
+- name: Konfigurera och behandla ett utbyte för en returorder
+  href: orderexchanges.md
 - name: Övervakning och analys
   items:
     - name: Övervaka försäljningsresultat och marginaler
@@ -235,7 +241,9 @@
       href: price-management.md
     - name: Prisjusteringar och rabatter
       href: price-adjustments-discounts.md
-    - name: Fastställa den optimala kombinationen av överlappande rabatter
+    - name: Använda flera Retail-rabatter på en produkt
+      href: Apply-multiple-retail-discounts.md
+    - name: Bestämma den optimala kombinationen av överlappande rabatter
       href: optimal-combination-overlapping-discounts.md
     - name: Definiera kanalspecifika rabatter
       href: define-channel-specific-discounts.md
@@ -488,6 +496,8 @@
       items:
         - name: Skärmlayouter för Retail POS
           href: pos-screen-layouts.md
+        - name: Öppna webbadressen i kassan
+          href: Open-URL-in-POS.md
         - name: Installera layoutdesignern för kassa
           href: install-pos-layout-designer.md
         - name: Retail Modern POS i offlineläge
@@ -508,6 +518,10 @@
           href: dev-itpro/gift-card.md
         - name: Skapa och använda profilering i appen Retail Experience
           href: dev-itpro/create-retail-experience-app.md
+        - name: Konfigurera appen POS Hybrid i Android och iOS
+          href: dev-itpro/hybridApp.md
+        - name: Åsidosätt kassans begärandehanterare
+          href: dev-itpro/pos-handler.md
     - name: Maskinvarustation och utbyggbarhet
       href: dev-itpro/hardware-station-extensibility.md
     - name: Utbyggbarhet för Retail Server
@@ -562,9 +576,13 @@
           href: dev-itpro/payment-custom-error-messages.md
         - name: Skapa Windows-installationsprogram för betalningskopplingar
           href: dev-itpro/create-windows-installer-payment-connector.md
+        - name: Bruk av betalningsdata
+          href: payment-connector-data-fields.md
     - name: SDK för Retail
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Kommande ändringar i SDK för Retail
+          href: dev-itpro/UpcomingSDKChanges.md
         - name: Sammanfoga versionssystem för Retail och Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: 'Exempel på utbyggbarhet: SDK för Retail'
