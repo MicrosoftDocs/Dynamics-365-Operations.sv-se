@@ -3,7 +3,7 @@ title: "Startsida för Huvudplanering"
 description: "Med huvudplanering kan ett företag fastställa och balansera sitt framtida behov av råmaterial och sin kapacitet att uppfylla företagets mål."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -58,13 +58,13 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 
 ## <a name="quick-links"></a>Snabblänkar
 
-|      |   |
-|------|---|
-|        [Huvudplaner](master-plans.md)       |     [Generera en begränsad plan](./tasks/constrained-plan.md)  |
-| [Skapa en materialplan för samprodukter](./tasks/create-material-plan-co-products.md)   |  [Huvudplanering och multisitefunktioner](master-plan-multisite-functionality.md)  |
-| [Skapa en koncernintern plan](./tasks/create-intercompany-plan.md) | [Översikt för efterfrågeprognosticering](introduction-demand-forecasting.md)  | 
-|[Reduceringsnycklar](reduction-keys.md)| [Grundläggande om huvudplanering](https://mbspartner.microsoft.com/AX/CourseOverview/1275) (eLearning) (kräver CustomerSource-konto)     |
-|  [Huvudplanering för processtillverkning](https://mbspartner.microsoft.com/D365E/CourseOverview/1514) (eLearning) (kräver CustomerSource-konto) | [Koncernintern huvudplanering](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (kräver CustomerSource-konto)|
+- [Huvudplaner](master-plans.md)  
+- [Generera en begränsad plan](./tasks/constrained-plan.md)
+- [Skapa en materialplan för samprodukter](./tasks/create-material-plan-co-products.md)
+- [Huvudplanering och multisitefunktioner](master-plan-multisite-functionality.md)
+- [Skapa en koncernintern plan](./tasks/create-intercompany-plan.md)
+- [Översikt för efterfrågeprognosticering](introduction-demand-forecasting.md)
+- [Reduceringsnycklar](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Ytterligare resurser
 
