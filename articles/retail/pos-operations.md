@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
+ms.sourcegitcommit: c9f9368dc3e0fb4ed63250889016d6abe7d15a8c
+ms.openlocfilehash: 557e43c05f7015b04380f45fbd69f58a7250829a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -152,6 +152,7 @@ Obs! Åtgärderna i listan nedan gäller den senaste versionen av Dynamics 365 f
 | 644 | Ta bort kupongkod | Uppmana användaren till att ta bort kuponger genom att markera dem i en lista över kuponger som associeras med transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 1057 | Skriv ut Z igen | Skriv ut Z-rapporten igen för föregående skift eller ett markerat skift. | Ja | Ja | Ja | Nr | Nr |
 | 1216 | Ange ett nytt lösenord | Den här operationen låter användaren med behörighet att återställa lösenord för en annan medarbetares med hjälp av ett tillfälligt lösenord. | Ja | Ja | Ja | Nr | Nr |
+| 1219 | Öppna URL i kassan | Denna åtgärd låter användaren öppna en administratörkonfigurerad URL i kassan. | Ja | Ja | Ja | Ja | Nr | 
 | 109 | Returnera produkt | Utför en retur av enskilda produkter. Nästa skannade produkt visas som en returnerad produkt som har en negativ kvantitet och pris. | Ja | Ja | Nr | Ja | Nr |
 | 114 | Returtransaktion | Återställa en tidigare transaktion genom dess kvittonummer för att returnera några eller alla produkter. | Ja | Ja | Ja | Ja§ | Nr |
 | 1211 | Lämna pengar i kassaskåp | Flytta pengar från kassan till ett kassaskåp. | Ja | Ja | Ja | Ja | Nr |

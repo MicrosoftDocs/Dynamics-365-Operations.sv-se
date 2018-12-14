@@ -1,9 +1,9 @@
 ---
 title: "Produktinleverans mot inköpsorder"
-description: "Den här artikeln innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna."
+description: "Detta avsnitt innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c227664da360f6f8d54b49f15e1b7160aa142ba9
+ms.sourcegitcommit: 09432d278c51301f8b01fef8cbd3353af75a88f3
+ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/08/2018
 
 [!include [retail name](../includes/retail-name.md)]
 
-Den här artikeln innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
+Detta avsnitt innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
 
 Produktinleverans är en process som används för att registrera att de produkter som har beställts har tagits emot så att inköpsorderrader (IO) sedan kan bearbetas för fakturering. I vissa fall genomgår produkterna en förregistrering där extra information från leverantören registreras innan produkterna tas emot. När en produkt tas emot får den först statusen **Registrerad**. Produkten kan sedan genomgå ytterligare processer, till exempel kvalitetshantering, innan den slutligen får statusen **Mottagen**.
 
@@ -46,8 +46,6 @@ Produkter som tas emot på ett lagerställe kan genomgå en kvalitetskontroll in
 
 ## <a name="product-receipt"></a>Produktinleverans
 Oftast används åtgärden **Produktinleverans** på sidan **Inköpsorder** för att markera produkten som **Mottagen** på inköpsordern. Sidan **Bokföra produktinleverans** har olika alternativ för den kvantitet som redovisas som mottagen. Du kan till exempel ställa in fältet **Kvantitet** till **Orderkvantitet** eller **Inleverera nu-kvantitet**. Om ett lagerställes inleveransprocess har använts är det vanligt att fältet i stället ställs in till **Registrerad kvantitet**. Du kan ändra kvantiteterna för varje orderrad som kommer att få statusen **Mottagen** för att kunna ta hänsyn till eventuella avvikelser såsom under- eller överleverans. Vid produktinleveransen måste du ange en identifierare för produktinleveransen. Identifieraren utgörs vanligtvis av en referens till följesedeln från leverantören. Den här identifieraren krävs för redovisning eftersom den möjliggör kontroller och granskningar av leverantörens följesedlar mot vad som har tagits emot. Den krävs även för det bokförda lagret och utgiften.  
-
-Om en medarbetare beställde varor med hjälp av en inköpsrekvisition kan den anställde bli ombedd att bekräfta mottagandet av produkten. Du kan konfigurera det här scenariot med hjälp av ett arbetsflöde. Du kan konfigurera arbetsflödesvillkor så att de matchar din affärsprocess.  
 
 Inköpsorder kan skapas för produkter som inte är avsedda som lagervaror, men som betraktas som en utgift. Den här kategorin inkluderar orderrader där produkter får statusen **Finns inte i lager** av respektive lagermodellgrupp och även rader som använder anskaffningskategorier. I detta fall kan artiklarna inte genomgå ankomstregistrering och inleveransen på lagerstället. I stället används åtgärden **Produktinleverans** för att registrera inleveransen direkt på inköpsordern och inleveransen baseras då på den beställda kvantiteten och inte på den registrerade kvantiteten.  
 

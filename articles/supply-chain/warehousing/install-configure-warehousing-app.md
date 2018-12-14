@@ -3,7 +3,7 @@ title: Installera och konfigurera Microsoft Dynamics 365 for Finance and Operati
 description: "Det här avsnittet beskriver hur du installerar och konfigurerar Microsoft Dynamics 365 for Finance and Operations - Lagerstyrning."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
-ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
+ms.sourcegitcommit: 0967b10c2037c24c044f38c49b1b998f6771c66b
+ms.openlocfilehash: a1f3cb65e370154e8f3f94780ffb5cab223c85f8
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -74,13 +74,12 @@ Om du vill att programmet ska interagera med en viss Finance and Operations-serv
 ## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Skapa och konfigurera ett användarkonto i Finance and Operations
 Om du vill aktivera Finance and Operations för ditt Azure AD-program, måste du slutföra följande konfigurationssteg:
 
-1.  Skapa ett nytt användarkonto i Azure Active Directory för Finance and Operations-innehavaren. Detta användarkonto syftar till att få åtkomst till den specifika kundtjänsten för lagerstyrningsprogrammet som Finance and Operations-servern visar. När du har slutfört det här steget får du WMDP-autentiseringsuppgifter, som består av en WMDP-e-postadress och ett WMDP-lösenord. Mer information om de grundläggande stegen för att lägga till användare i Azure AD och Finance and Operations finns i kursen: [Registrera dig för ett Finance and Operations-abonnemang](../../dev-itpro/dev-tools/sign-up-preview-subscription.md).
-2.  Skapa en Finance and Operations-användare som motsvarar autentiseringsuppgifterna för lagerstyrningsprogrammet.
+1.  Skapa en Finance and Operations-användare som motsvarar autentiseringsuppgifterna för lagerstyrningsprogrammet.
     1.  I Finance and Operations, navigera till **Systemadministration** &gt; **Allmänt** &gt; **Användare**.
     2.  Skapa en ny användare.
     3.  Tilldela den mobila enhetsanvändaren på lagret enligt följande skärmbild. [![wh-09-lägg-till-säkerhetsroll-för-användare](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
-3.  Koppla ditt Azure Active Directory-program till användaren av lagerstyrningsprogrammet.
+2.  Koppla ditt Azure Active Directory-program till användaren av lagerstyrningsprogrammet.
     1.  I Finance and Operations, navigera till **Systemadministration** &gt; **Inställningar** &gt; **Azure Active Directory-program**.
     2.  Skapa en ny rad.
     3.  Ange det **Klient-ID** (som erhölls i det senaste avsnittet), namnge det och välj den användare som skapades tidigare. Vi rekommenderar att du märker samtliga dina enheter, så att du kan enkelt ta bort deras åtkomst till Finance and Operations från denna sida om de skulle gå förlorade. [![wh-10-ad-programformulär](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)

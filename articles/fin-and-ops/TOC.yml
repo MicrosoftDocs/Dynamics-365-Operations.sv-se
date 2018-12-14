@@ -8,7 +8,7 @@
           items:
             - name: Registrera en prenumeration på förhandsversionen
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
-            - name: Distribuera en demonstrationsmiljö
+            - name: Installera en demonstrationsmiljö
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
             - name: Jämförelse mellan funktioner i molnet och lokalt
               href: get-started/cloud-prem-comparison.md
@@ -46,8 +46,12 @@
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: AX 2012-funktioner som har senarelagts
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
-            - name: Funktioner som inte implementerats i lokala distributioner
+            - name: Funktioner som inte implementeras i lokala installationer
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations version 8.1.3 (december 2018)
+              href: get-started/whats-new-changed-8-1-3.md
+            - name: Platform update 23 (december 2018)
+              href: get-started/whats-new-platform-update-23.md
             - name: Platform update 22 (november 2018)
               href: get-started/whats-new-platform-update-22.md
             - name: Finance and Operations version 8.1.2 (november 2018)
@@ -150,8 +154,10 @@
           items:
             - name: Hjälpsystem
               href: get-started/help-overview.md
-            - name: "Ansluta\_hjälpsystemet"
+            - name: Ansluta hjälpsystemet
               href: get-started/help-connect.md
+            - name: Ansluta en anpassad hjälpwebbplats
+              href: get-started/help-custom.md
             - name: Visa och exportera fältbeskrivningar
               href: get-started/view-export-field-descriptions.md
             - name: Uppgiftsguider och uppgiftsinspelare
@@ -1243,6 +1249,8 @@
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: Återställa data mart för ekonomisk rapportering
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        - name: Elektroniska meddelanden
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: Lokaliserings- och regelfunktioner
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
@@ -2222,6 +2230,10 @@
               href: ../financials/localizations/rus-transactions-settlement-date.md
             - name: Fakturor för betalning
               href: ../financials/localizations/rus-invoice-payment.md
+            - name: Ekonomisk rapportering
+              href: ../financials/localizations/rus-financial-reports.md
+            - name: Skapa en inköpsbok
+              href: ../financials/localizations/rus-sales-books-purchase-books.md
         - name: Saudiarabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2741,6 +2753,8 @@
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
                 - name: Importera konfigurationer från Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)
+                  href: ../dev-itpro/analytics/rcs-download-configurations.md
                 - name: Ladda ned konfigurationer från Lifecycle Services
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
                 - name: Importera konfigurationer
@@ -3046,7 +3060,7 @@
               href: ../supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts.md
         - name: Inköpsorder
           items:
-            - name: Översikt över inköpsorder
+            - name: Översikt av inköpsorder
               href: ../supply-chain/procurement/purchase-order-overview.md
             - name: Godkänn och bekräfta inköpsorder
               href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
@@ -4145,10 +4159,12 @@
               href: ../supply-chain/warehousing/change-warehouse-mobile-device-displays.md
             - name: Inleverans av blandat ID-nummer på en mobil enhet
               href: ../supply-chain/warehousing/mixed-license-plate-receiving.md
-            - name: Konfigurera visning av äldre batcher inom lagerstället på en mobil enhet
+            - name: Konfigurera visning av äldre batchar inom lagerstället på en mobil enhet
               href: ../supply-chain/warehousing/display-older-batches-within-warehouses.md
             - name: Plocka den äldsta batchen på en mobil enhet
               href: ../supply-chain/warehousing/pick-oldest-batch.md
+            - name: Processguideram
+              href: ../supply-chain/warehousing/process-guide-framework.md
         - name: Uppgradering och migrering
           items:
             - name: Uppgradera lagerstyrningsprocesser från Microsoft Dynamics AX 2012 till Finance and Operations

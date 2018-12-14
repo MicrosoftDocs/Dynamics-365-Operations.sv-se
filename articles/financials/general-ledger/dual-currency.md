@@ -17,14 +17,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c026a540fb7d30644d485b6a057c2c46bd7c091d
+ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
 # <a name="dual-currency"></a>Dubbel valuta
+
+[!include [banner](../includes/banner.md)]
 
 Funktion som infördes i Microsoft Dynamics 365 for Finance and Operations version 8.1 (oktober 2018) gör det möjligt att återanvända rapporteringsvalutan och använda den som en andra redovisningsvaluta. Den här funktionen kallas ibland för *dubbel valuta*. Ändringarna för dubbel valuta kan inte inaktiveras via en konfigurationsnyckel eller parameter. Eftersom rapporteringsvalutan används som en andra redovisningsvaluta, har sättet att beräkna rapporteringsvaluta i bokföringslogiken ändrats.
 
@@ -67,8 +69,8 @@ Följande moduler använder rapporteringsvaluta som en andra redovisningsvaluta:
 
 - [Redovisning](#general-ledger)
 - [Ekonomisk rapportering](#financial-reporting)
-- [Leverantörsreskontra](#accounts-payable/accounts-receivable)
-- [Kundreskontra](#accounts-payable/accounts-receivable)
+- [Leverantörsreskontra](#accounts-payable-and-accounts-receivable)
+- [Kundreskontra](#accounts-payable-and-accounts-receivable)
 - [Kassa- och bankhantering](#cash-and-bank-management)
 - [Anläggningstillgångar](#fixed-assets)
 
@@ -90,7 +92,7 @@ En förbättring av modulen **ekonomisk rapportering** låter dig lägga till et
 
 Den här ändringen ingår i inställningen **valutavisning** i kolumndefinitionen. Om du väljer **Rapporteringsvaluta från redovisningen** kommer beloppen i kolumnen inte att konverteras. De rapporteras i stället direkt från redovisningen. Om du vill att kolumnen ska visa konverterade belopp väljer du alternativet **Konvertera till XXXX** där *XXXX* är rapporteringsvalutan som kolumnen ska visa. I det här fallet ska redovisningsvalutabeloppet konverteras till den valda valutan genom att använda den befintliga valutafunktionen.
 
-### <a name="accounts-payableaccounts-receivable"></a>Leverantörsreskontra/Kundreskontra
+### <a name="accounts-payable-and-accounts-receivable"></a>Leverantörsreskontra och Kundreskontra
 
 Modulerna **Leverantörsreskontra** och **Kundreskontra** har redan spårat rapporteringsvalutabelopp. Beloppen visas eller används emellertid inte för olika processer. Följande ändringar gjordes:
 

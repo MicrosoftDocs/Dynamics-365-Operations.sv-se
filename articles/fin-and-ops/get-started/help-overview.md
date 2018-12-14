@@ -1,9 +1,9 @@
 ---
 title: "Hjälpsystem för Finance and Operations"
-description: "Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation."
+description: "Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations."
 author: margoc
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
-ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
+ms.sourcegitcommit: 87ca6afe817d27de12479f1b7d8155d11d800233
+ms.openlocfilehash: dc057faf3cd08ea1c939d0cc35ae404bde59e514
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/17/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/17/2018
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation. 
+Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. 
 
 > [!NOTE] 
 > Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
@@ -48,8 +48,6 @@ Finance and Operations inkluderar ett hjälpsystem baserat på två huvudkompone
 Du kommer åt hjälpen via hjälpfönstret i alla produkter du använder. Följande skärmdump visar Finance and Operations.
 
 ![Hjälpfönster](./media/help-pane-ops-task-guides.png)
-
-Det här avsnittet beskriver hjälpsystemet och förklarar hur du kan skapa anpassad dokumentation och anpassade utbildningsresurser för din organisation.
 
 > [!IMPORTANT]
 > **Uppgiftsguider** är inte tillgängliga för närvarande för Retail eller i hjälpfönstret för Talent (några uppgiftsguider finns i Fönstret Komma igång för Talent). Procedurhjälp finns att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) för såväl Retail som Talent.
@@ -83,7 +81,7 @@ Om du vill prenumerera på ett RSS-flöde för att gå alla uppdateringar Unifie
 ### <a name="give-feedback"></a>Ge feedback 
 Vi gillar verkligen kundfeedback. Du kan antignen kommentera eller föreslå ändringar till vårt innehåll via GitHub. Läs mer om vårt feedbacksystem i [detta blogginlägg](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-feedback"></a>Skicka feedback till oss 
+#### <a name="leave-us-feedback"></a>Skicka feedback till oss 
 Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned på sidan.  
 
 1. Klicka på **Feedback** för att nå kommentarerna längst ner på sidan och klicka sedan på antingen **Produktfeedback** eller **Logga in för att skicka detaljerad feedback**.
@@ -93,8 +91,6 @@ Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned 
 2. Skriv dina kommentarer och klicka sedan på **Publicera feedback**.
 
 ![Publicera kommentar](./media/feedback.png)
-
-
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Föreslå en ändring eller bidra med innehåll via GitHub
 Om du vill föreslå en ändring måste du ha ett GitHub-konto och registrera ett licensavtal för deltagare.  När du har skickat en pull-begäran granskar dina föreslagna ändringar. Om det behövs ska vi diskutera dem internt och återkomma till dig.  
@@ -122,22 +118,7 @@ Om du vill starta en guidad, interaktiv tur ska du klicka på **Starta uppgiftsg
 > [!IMPORTANT] 
 > De data som du anger när du spelar upp en uppgiftsguide är verkliga. Om du arbetar i en produktionsmiljö anges data i företaget som du för närvarande använder.
 
-### <a name="it-all-begins-with-task-recorder"></a>Allt börjar med uppgiftsregistreraren
-
-Uppgiftsguider skapas genom med uppgiftsregistreraren. När du använder uppgiftsinspelaren registreras alla åtgärder du utför i användargränssnittet för Finance and Operations (som att klicka på menyer, ändra inställningar eller ange data). Stegen som du registrerar kallas gemensamt för en uppgiftsregistrering Som vi förklarade i det föregående avsnittet, kan uppgiftsregistreringar visas i fönstret Hjälp och spelas som uppgiftsguider. Det finns dock andra sätt att använda uppgiftsregistrering:
-
--   **Spara uppgiftsregistrering i BPM** – Du kan spara en uppgiftsregistrering på en rad i en hierarki i ett BPM-bibliotek i LCS. När du sparar en uppgiftsregistrering i BPM, skapas och visas ett flödesschema tillsammans med stegen för inspelningen. 
-
-    > [!Note]
-    > Om du vill visa en uppgiftsinspelning i hjälpfönstret för Finance and Operations och spela upp den som en uppgiftsguide, måste du spara inspelningen i ett BPM-bibliotek.
-    
--   **Spara uppgiftsregistrering som Word-dokument** – Genom att spara en uppgiftsregistrering som ett Microsoft Word-dokument kan du enkelt producera utskrivbara utbildningsguider för din organisation.
-
-För mer information om uppgiftsinspelaren, se [Uppgiftsinspelaren i Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
-
-### <a name="creating-customized-task-recordings"></a>Skapa anpassade uppgiftsregistreringar
-
-Du kan skapa egna uppgiftsregistreringar eller så hämta och anpassa uppgiftsregistreringen som Microsoft tillhandahåller. Därför kan du skapa anpassad hjälp för din organisation som återspeglar din specifika implementering av Finance and Operations. Om du vill visa en uppgiftsinspelning i hjälpfönstret för Finance and Operations och spela upp den som en uppgiftsguide, måste du spara inspelningen i ett BPM-bibliotek i LCS. Om du är partner och befordrar ett bibliotek till ett företagsbibliotek och inkluderar det i en lösning, blir det tillgängligt även för dina kunder. Fullständiga instruktioner finns i [Använda uppgiftsregistreringar för att skapa dokumentation eller utbildning](../../dev-itpro/user-interface/task-recorder.md).
+Du kan använda Uppgiftsregistrerare för att skapa egna anpassade uppgiftsguider. Mer information finns i avsnittet [Skapa dokumentation eller utbildning med uppgiftsregistrering](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## <a name="in-product-help"></a>Produkthjälp
 För att nå hjälpavsnittet i Dynamics 365 for Finance and Operations klickar du antingen på ikonen **Hjälp** (**?**) och väljer sedan Hjälp, eller också trycker du på Ctrl+Shift+?. I båda fall öppnas fönstret Hjälp. I fönstret Hjälp kan du öppna artiklar eller uppgiftsguider. 
@@ -184,6 +165,11 @@ När en systemadministratör har slutfört dessa steg kan du öppna fönstret Hj
 Översatta uppgiftsguider publiceras i bibliotek med "Alla språk" i rubriken. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Finance and Operations, se då till att du är ansluten till ett lämpligt bibliotek. Språket i uppgiftsguiden styrs av varje användare via Språkinställningar under **Alternativ** &gt; **Inställningar**. 
 -   Om en uppgiftsguide har översatts visas all text i guiden på det valda språket när du öppnar den.
 -   Om en uppgiftsguide ännu inte har översatts, visas enbart en del text i guiden (text för kontroller) på det valda språket när du öppnar den.
+
+## <a name="creating-custom-help"></a>Skapa anpassad hjälp
+Du kan skapa hjälp för användarna genom att skapa en anpassad uppgiftsgudie eller ansluta din webbplats till hjälpfönstret. Mer information finns i: 
+- [Skapa en uppgiftsinspelning som ska användas som dokumentation eller utbildning](../../dev-itpro/user-interface/task-recorder.md)
+- [Skapa egen hjälp för Finance and Operations (vitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

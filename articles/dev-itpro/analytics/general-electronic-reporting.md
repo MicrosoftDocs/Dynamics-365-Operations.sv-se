@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
+ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
+ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -164,13 +164,23 @@ För information om hur du registrerar en ny ER-leverantör, kör uppgiftsguiden
 
 #### <a name="repository"></a>Databas
 
-En ER-databas lagrar ER-konfigurationer. Två typer av ER-databaser stöds för närvarande: **Verksamhetsresurser** och **LCS-projekt**.
+En ER-databas lagrar ER-konfigurationer. Fyra typer av ER-datalager stöds: **Operationsresurser**, **LCS-projekt (LCS)**, **Filsystem** och **Lagstadgade konfigurationstjänster (RCS)**.
 
 En databas för **Verksamhetsresurser** ger åtkomst till listan över konfigurationer som Microsoft frisläpper som en del av Finance and Operations-lösningen i egenskap av ER-konfigurationsleverantör. Dessa konfigurationer kan importeras till den aktuella instansen av Finance and Operations och användas för elektronisk rapportering. De kan också användas för ytterligare lokaliseringar och anpassningar.
 
 En **LCS-projekt**-databas ger åtkomst till listan över konfigurationerna för ett visst LCS-projekt (tillgångsbibliotek för LCS-projekt) som valdes i registreringssteget för databasen. ER låter dig överföra delade konfigurationer från den befintliga Finance and Operations-instansen till en specifik databas för **LCS-projekt**. Du kan även importera konfigurationer från en **LCS-projekt**-databas till den befintliga Finance and Operations-instansen.
 
-Obligatoriska **LCS-projekt**-databaser kan registreras separat för respektive konfigurationsleverantör av den aktuella Finance and Operations-instansen. Varje databas kan reserveras för en viss konfigurationsleverantör.
+En **Filsystem**-datalager ger åtkomst till listan över konfigurationer som finns som XML-filer i en viss mapp i det lokala filsystemet på maskinen där AOS-tjänsten finns. Önskad mapp väljs vid registreringssteget för datalagret. Du kan även importera konfigurationer från ett **Filsystem**-datalager till den befintliga Finance and Operations-instansen. Observera att den här datalagertypen är tillgänglig i följande Dynamics 365 for Finance and Operations-miljöer:
+- molnstyrda miljöer distribueras i utvecklingssyften (innehåller testmodeller av bifogade paket)
+- lokalt distribuerade miljöer (lokal distribution av affärsdata (LBD))
+
+Besök sidan [Importera konfigurationer för elektronisk rapportering (ER)](/electronic-reporting-import-ger-configurations.md) för mer information om detta.
+
+Ett **RCS-instans**-datalager ger åtkomst till listan över konfigurationerna för en viss RCS-instans som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen av Finance and Operations och används för elektronisk rapportering.
+
+Besök sidan [Importera konfigurationer för elektronisk rapportering (ER) från Lagstadgade konfigurationstjänster (RCS)](/rcs-download-configurations.md) för mer information om detta.
+
+Obligatoriska datalager för **LCS-projekt**, **Filsystem** och **Lagstadgade konfigurationstjänster (RCS)** kan registreras separat för respektive konfigurationsleverantör av den aktuella Finance and Operations-instansen. Varje databas kan reserveras för en viss konfigurationsleverantör.
 
 ## <a name="supported-scenarios"></a>Stödda scenarier
 ### <a name="building-a-data-model"></a>Bygga en datamodell

@@ -3,7 +3,7 @@ title: Borttagna och inaktuella funktioner
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
 author: sericks007
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 6750cfc62e2d151ddf760ff3dc36bab9c078b2d9
+ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
+ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2018
+ms.lasthandoff: 12/04/2018
 
 ---
 
@@ -87,6 +87,19 @@ Funktionen exporterar genererade elektroniska filer av deklarationer till mapp f
 | **Produktområden som påverkas**         | Redovisningsuppgifter, skatt |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+
+
+### <a name="profit-tax-register-wizard"></a>Guiden för vinstskattregister
+Funktion för att skapa mallar för nya vinstskattregister. Den här funktionen skapar X++-objekten för nya register som sedan skapas som mallar med lämplig beräkningslogik tillagd.
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Funktionen är inte kompatibel med Dynamics 365 for Finance and Operations utvidgningsmodell. |
+| **Ersatt av en annan funktion?**   | Nr |
+| **Produktområden som påverkas**         | Skatt |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0. med plattformsuppdatering 15
 Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.
@@ -993,6 +1006,17 @@ Product Builder användes för att dynamiskt konfigurera artiklar från en förs
 | **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [skapa en modell för produktkonfiguration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Produktområden som påverkas**         | Produktinformationshantering, Försäljning och marknadsföring  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.      |
+
+### <a name="production-floor-app"></a>Appen Produktionsgolv
+Detta är appen för pekplattor med Windows 8.1 RT och Windows 8.1 Pro.
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Med ändringen till en webbaserad klient är det möjligt att genomföra liknande funktioner med hjälp av inbyggda 7.0 för Dynamics AX-klienten. Jobbkortenhet tillhandahåller ett användargränssnitt för produktionsgolv som är optimerat för formfaktorer tryck- och pekplattor. |
+| **Ersatt av en annan funktion?**   | Ja. Jobbkortenhet som ingår i Dynamics AX 7.0.                                                                           |
+| **Produktområden som påverkas**         | Produktionskontroll                                                |
+| **Status**                         | Inaktuell: Ett borttagningsdatum från Microsoft store har inte ännu ställts in för den här funktionen.                                                |
+
 
 ### <a name="rename-product-dimension"></a>Byt namn på produktdimension
 
