@@ -29,16 +29,19 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](../includes/banner.md)]
 
 ## <a name="getting-started"></a>Komma igång
+
 Innan du ställer in en notifieringsregel måste du bestämma när eller i vilka situationer du vill få notifieringar. När du vet vilka händelser du vill meddelas om, går du till sidan i Microsoft Dynamics 365 for Finance and Operations där de data som orsakar händelsen visas. Händelsen kan vara ett datum eller en viss händelse som inträffar. Därför måste du hitta sidan där datumet anges eller där fältet ändras eller den nya posten som har skapats visas. När du har den här informationen kan du skapa notifieringsregeln.
 
 När du skapar en notifieringsregel måste du definiera de kriterier som måste uppfyllas innan en notifiering utlöses. Du kan se kriterier som en matchning av förekomsten av en händelse och uppfyllandet av bestämda villkor. När en händelse inträffar börjar systemet utföra en kontroll enligt villkoren som är angivna i Finance and Operations.
 
 ## <a name="events"></a>Händelser
+
 Den händelse som utlöser en notifieringsregel kan vara ett datum som anländer eller en viss händelse som inträffar. Utlösare för händelser definieras på snabbfliken **Notifiera när** i dialogrutan **Skapa notifieringsregel**. Händelser som är fördefinierade för ett visst fält beror på vilken utlösare som har valts.
 
 Om du t.ex. ställer in en notifieringsregel för fältet **Startdatum** är händelser för förfallodatum lämpliga. Därför är händelsetypen **förfaller i** tillgänglig för det fältet. Men för ett fält som t.ex. **Kostnadsställe**, är en händelse för förfallodatum inte lämplig. Därför är händelsetypen **förfaller i** inte tillgänglig. I stället är händelsetypen **har ändrats** tillgänglig.
 
 ## <a name="event-types"></a>Händelsetyper
+
 Tre typer av händelser kan inträffa:
 
 - **Händelser av typerna skapa och radera** – de här händelserna utlöser en notifiering när en post skapas eller tas bort.
@@ -48,6 +51,7 @@ Tre typer av händelser kan inträffa:
 Ändringar som görs kan startas av en användare. Till exempel ändrar en användare leveransdatum för en inköpsorder. Alternativt kan ändringar göras som en del av en process. Till exempel fältet **Status** på en sida ändras för att reflektera livscykeln för olika processer i systemet.
 
 ## <a name="conditions"></a>Villkor
+
 På snabbfliken **Notifiera för** i dialogrutan **Skapa notifieringsregel** kan du välja villkoren för att styra när du får en varning om händelser.
 
 Du kan exempelvis ange att systemet ska varna när status för inköpsorder ändras, men bara om status matchar en viss uppsättning villkor. Särskilt om du vill notifieras när status för en inköpsorder anges till **inlevererad**. Denna ändring av status är den händelse som utlöser notifieringen.
@@ -58,15 +62,19 @@ Sedan måste du bestämma vilka inköpsorder som du vill få notifieringar om. D
 - **Alla poster** – Du får en notifiering när status för en inköpsorder ändras för en artikel på den aktiva sidvyn. Du kan använda de avancerade filterfunktionen som finns på sidan för att skapa regler för en specifik uppsättning poster. Du kan till exempel skapa en notifiering som utlöses för alla inköpsorder för kunder i en viss kundgrupp.
     
 ## <a name="expiry-of-rule"></a>Regelutgång
+
 På snabbfliken **Notifiera tills** i dialogrutan **Skapa notifieringsregel** kan du ange hur länge notifieringsregeln ska vara aktiv.
 
 ## <a name="alert-contents"></a>Notifieringsinnehåll
+
 På snabbfliken **Notifiera med** i dialogrutan **Skapa notifieringsregel** anger du ämnestexten och meddelandetexten som varningsmeddelandet ska använda.
 
 ## <a name="user-id"></a>Användar-ID
+
 På snabbfliken **Notifiera mig** i dialogrutan **Skapa notifieringsregel** kan du ange vilken användare som ska få notifieringar. Ditt användar-ID är markerad som standard. Det här alternativet är begränsat till administratörer i organisationen.
 
 ## <a name="create-an-alert-rule"></a>Skapa en notifieringsregel.
+
 1. Öppna sidan som innehåller de data som ska övervakas.
 2. I åtgärdsfönstret, på fliken **Alternativ** i gruppen **Andel** markerar du **Skapa notifieringsregel**.
 3. I dialogrtuan **Skapa notifieringsregel** i fältet **Fält** markerar du fältet som du vill övervaka.

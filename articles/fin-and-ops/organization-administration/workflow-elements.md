@@ -34,42 +34,46 @@ Det här ämnet beskriver de olika elementen som utgör ett arbetsflöde.
 Ett arbetsflöde består av olika element, t.ex. De olika avsnitten som följer beskriver varje typ av element.
 
 ## <a name="tasks"></a>Uppgifter
+
 En *uppgift* är en arbetsenhet som måste utföras. Två typer av uppgifter kan läggas till i ett arbetsflöde: manuella uppgifter och automatiska uppgifter.
 
 ### <a name="manual-task"></a>Manuell uppgift
 
 En *manuell uppgift* är en arbetsenhet som måste utföras av en användare. Till exempel kan en utgiftsrapport arbetsflöde ha manuella uppgifter som kräver att de tilldelade användarna utför följande åtgärder:
 
--   Granska de inleveranser som skickas in tillsammans med en utgiftsrapport.
--   Kontakta en medarbetares chef.
+- Granska de inleveranser som skickas in tillsammans med en utgiftsrapport.
+- Kontakta en medarbetares chef.
 
 ### <a name="automated-task"></a>Automatisk uppgift
 
 En *automatisk uppgift* är en arbetsenhet som måste utföras av systemet. Ingen mänsklig interaktion krävs. Till exempel kan ett arbetsflöde med en försäljningsorder ha automatiska uppgifter som kräver att systemet utför följande åtgärder:
 
--   Utför en kreditkontroll.
--   Skapa en kundpost för kunden, om en post inte redan finns.
+- Utför en kreditkontroll.
+- Skapa en kundpost för kunden, om en post inte redan finns.
 
 ## <a name="approval-processes"></a>Godkännandeprocess
+
 En *godkännandeprocess* är en process som består av separata steg. I varje godkännandesteg kan användaren utföra följande åtgärder:
 
--   Godkänna dokumentet.
--   Avvisa dokumentet.
--   Begära en ändring av dokumentet.
--   Tilldela en annan användare dokumentet för godkännande.
+- Godkänna dokumentet.
+- Avvisa dokumentet.
+- Begära en ändring av dokumentet.
+- Tilldela en annan användare dokumentet för godkännande.
 
 ## <a name="line-item-workflow-elements"></a>Arbetsflödeselement för radartikel
+
 Ett arbetsflöde kan skapas för att bearbeta antingen dokument eller radartiklarna på ett dokument. Om du till exempel har skapat ett arbetsflöde för godkännande för tidrapporter. (Du refererar till arbetsflödet som *dokumentarbetsflöde*.) Du kan lägga till ett element för *arbetsflöde för radartikel* till det dokumentarbetsflödet. När elementet för radartikeln körs, skickas varje radartikel på dokumentet in för bearbetning. Du kan vilja att alla radartiklar bearbetas av samma radartikelarbetsflöde, eller du kanske vill att varje radartikel kan bearbetas i ett annat arbetsflöde för radartikel. Tänk dig att en medarbetare har skickat in en tidrapport som liknar följande bild.
 
-![Arbetsflöde med radobjekt](./media/workflow_lineitemworkflow.gif) 
+![Arbetsflöde med radobjekt](./media/workflow_lineitemworkflow.gif)
 
 I det här scenariot vill du kanske skapa följande arbetsflöden för radobjekt:
 
--   **Arbetsflöde för radartikel 1** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 1111.
--   **Arbetsflöde för radartikel 2** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 2222.
--   **Arbetsflöde för radartikel 3** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 3333.
+- **Arbetsflöde för radartikel 1** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 1111.
+- **Arbetsflöde för radartikel 2** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 2222.
+- **Arbetsflöde för radartikel 3** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 3333.
 
 ## <a name="flow-control-elements"></a>Flödeskontrollelement
+
 Följande element låter dig designa arbetsflöden som har alternativa förgreningar eller förgreningar som körs samtidigt.
 
 ### <a name="manual-decision"></a>Manuellt beslut
@@ -87,7 +91,4 @@ En *parallell aktivitet* är ett arbetsflödeselement som inkluderar två eller 
 ### <a name="subworkflow"></a>Delarbetsflöde
 
 Ett *delarbetsflöde* är ett arbetsflöde som körs i ett annat arbetsflödes sammanhang.
-
-
-
 

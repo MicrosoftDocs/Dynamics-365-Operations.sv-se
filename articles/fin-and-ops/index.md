@@ -51,7 +51,7 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Introducera ett projekt</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Förbereda publicering</a></p>
-  
+
 <h3><a href="../financials/index.md">Ekonomisk styrning</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Leverantörsreskontra</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Kundreskontra</a></p>
@@ -65,7 +65,7 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <p><a href="../financials/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funktioner för nationella föreskrifter</a></p>
 
-<H3><a href="hr/hr-landing-page.md">Personal</a></h3>
+<h3><a href="hr/hr-landing-page.md">Personal</a></h3>
 <p><a href="../talent/manage-benefit-program.md">Förmåner</a></p>
 <p><a href="../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
 <p><a href="../talent/questionnaires.md">Enkät</a></p>
