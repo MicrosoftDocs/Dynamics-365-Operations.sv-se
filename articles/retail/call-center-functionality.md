@@ -42,25 +42,30 @@ Förutom att stödja skapande av order ger kundtjänstmodulen även ett använda
 Den här sidan innehåller länkar till relevanta handlingar som är relaterade till installation, konfiguration och funktionell användning av kundtjänstfunktionerna i Dynamics 365 for Retail.
 
 ## <a name="configure-the-call-center"></a>Konfigurera kundtjänst.
+
 [Ställ in alternativ för orderbearbetning](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurera orderbearbetning
+
 [Ställ in bedrägerivarningar](set-up-fraud-alerts.md)
 
 [Manuella orderspärrar](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurera betalningsbearbetning
+
 [Betalningsmetoder i ett kundcenter](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurera leveranslägen
+
 [Konfigurera leveranslägen och avgifter för kundtjänst](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurera direkt marknadsföring
+
 [Kundtjänstkataloger](call-center-catalogs.md)
 
 [Ställa in RFM-analys](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurera kontinuitetsprogram
-[Ställ in ett kontinuitetsprogram för en kundtjänst](set-up-continuity-program.md)
 
+[Ställ in ett kontinuitetsprogram för en kundtjänst](set-up-continuity-program.md)
 

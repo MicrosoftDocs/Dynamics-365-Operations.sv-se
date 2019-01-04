@@ -31,20 +31,18 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Du kan studera lönsamheten för de 10 främsta produkterna med hjälp av Microsoft Dynamics 365 for Retail. 
+Du kan studera lönsamheten för de 10 främsta produkterna med hjälp av Microsoft Dynamics 365 for Retail.
 
 Som en del av Dynamics 365 for Retail kan användare studera lönsamheten för de främsta produkterna (10–100) mellan olika nivåer i organisationshierarkin, baserat på ett av följande kriterier:
 
--   Försäljningsbelopp
--   Kvantitet
--   Bruttovinstmarginal
--   Marginalprocent
+- Försäljningsbelopp
+- Kvantitet
+- Bruttovinstmarginal
+- Marginalprocent
 
 För denna bedömning kan du använda färdiga **topprodukter** betänkande, som du kan öppna från någon av följande platser:
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna - rapport**
--   Arbetsytan **Kategori- och produkthantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Rapport över topprodukter**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta produkterna - rapport**
-
-
+- Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna - rapport**
+- Arbetsytan **Kategori- och produkthantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Rapport över topprodukter**
+- Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta produkterna - rapport**
 

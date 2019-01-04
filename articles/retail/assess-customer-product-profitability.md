@@ -31,33 +31,30 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om kunder och produktlönsamhet från dina Microsoft Dynamics 365 for Retail-data. 
+Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om kunder och produktlönsamhet från dina Microsoft Dynamics 365 for Retail-data.
 
 Som en del av Dynamics 365 for Retail kan användare studera lönsamheten för de främsta kunderna (10-100) mellan olika nivåer i organisationshierarkin, baserat på ett av följande kriterier:
 
--   Försäljningsbelopp
--   Kvantitet
--   Bruttovinstmarginal
--   Marginalprocent
+- Försäljningsbelopp
+- Kvantitet
+- Bruttovinstmarginal
+- Marginalprocent
 
 För denna bedömning kan du använda färdiga **översta kunder** , som du kan öppna från någon av följande platser:
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta kunderna - rapport**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta kunderna - rapport**
+- Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta kunderna - rapport**
+- Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta kunderna - rapport**
 
 Likaså användare kan studera lönsamheten för produkter (10 till 100) mellan olika nivåer i organisationshierarkin, baserat på ett av följande kriterier:
 
--   Försäljningsbelopp
--   Kvantitet
--   Bruttovinstmarginal
--   Marginalprocent
+- Försäljningsbelopp
+- Kvantitet
+- Bruttovinstmarginal
+- Marginalprocent
 
 För denna bedömning kan du använda färdiga **topprodukter** betänkande, som du kan öppna från någon av följande platser:
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna - rapport**
--   Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna - rapport**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta produkterna - rapport**
-
-
-
+- Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna - rapport**
+- Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna - rapport**
+- Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta produkterna - rapport**
 
