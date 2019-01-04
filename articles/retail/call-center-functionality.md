@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 2b536ad4f29a3bb76294ef2fba30c529c24f1375
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -42,25 +42,30 @@ ms.lasthandoff: 08/09/2018
 <span data-ttu-id="e0952-112">Den här sidan innehåller länkar till relevanta handlingar som är relaterade till installation, konfiguration och funktionell användning av kundtjänstfunktionerna i Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="e0952-112">This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Dynamics 365 for Retail.</span></span>
 
 ## <a name="configure-the-call-center"></a><span data-ttu-id="e0952-113">Konfigurera kundtjänst.</span><span class="sxs-lookup"><span data-stu-id="e0952-113">Configure the call center</span></span>
+
 [<span data-ttu-id="e0952-114">Ställ in alternativ för orderbearbetning</span><span class="sxs-lookup"><span data-stu-id="e0952-114">Set up order processing options</span></span>](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a><span data-ttu-id="e0952-115">Konfigurera orderbearbetning</span><span class="sxs-lookup"><span data-stu-id="e0952-115">Configure order processing</span></span>
+
 [<span data-ttu-id="e0952-116">Ställ in bedrägerivarningar</span><span class="sxs-lookup"><span data-stu-id="e0952-116">Set up fraud alerts</span></span>](set-up-fraud-alerts.md)
 
 [<span data-ttu-id="e0952-117">Manuella orderspärrar</span><span class="sxs-lookup"><span data-stu-id="e0952-117">Manual Order Holds</span></span>](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a><span data-ttu-id="e0952-118">Konfigurera betalningsbearbetning</span><span class="sxs-lookup"><span data-stu-id="e0952-118">Configure payment processing</span></span>
+
 [<span data-ttu-id="e0952-119">Betalningsmetoder i ett kundcenter</span><span class="sxs-lookup"><span data-stu-id="e0952-119">Payment methods in a call center</span></span>](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a><span data-ttu-id="e0952-120">Konfigurera leveranslägen</span><span class="sxs-lookup"><span data-stu-id="e0952-120">Configure delivery modes</span></span>
+
 [<span data-ttu-id="e0952-121">Konfigurera leveranslägen och avgifter för kundtjänst</span><span class="sxs-lookup"><span data-stu-id="e0952-121">Configure call center delivery modes and charges</span></span>](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a><span data-ttu-id="e0952-122">Konfigurera direkt marknadsföring</span><span class="sxs-lookup"><span data-stu-id="e0952-122">Configure direct marketing</span></span>
+
 [<span data-ttu-id="e0952-123">Kundtjänstkataloger</span><span class="sxs-lookup"><span data-stu-id="e0952-123">Call center catalogs</span></span>](call-center-catalogs.md)
 
 [<span data-ttu-id="e0952-124">Ställa in RFM-analys</span><span class="sxs-lookup"><span data-stu-id="e0952-124">Set up RFM analysis</span></span>](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a><span data-ttu-id="e0952-125">Konfigurera kontinuitetsprogram</span><span class="sxs-lookup"><span data-stu-id="e0952-125">Configure continuity programs</span></span>
-[<span data-ttu-id="e0952-126">Ställ in ett kontinuitetsprogram för en kundtjänst</span><span class="sxs-lookup"><span data-stu-id="e0952-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
 
+[<span data-ttu-id="e0952-126">Ställ in ett kontinuitetsprogram för en kundtjänst</span><span class="sxs-lookup"><span data-stu-id="e0952-126">Set up a continuity program for a call center</span></span>](set-up-continuity-program.md)
 
