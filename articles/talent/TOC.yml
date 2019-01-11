@@ -7,6 +7,10 @@
         - name: Nyheter och ändringar
           href: whats-new.md
           items:
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (14 december 2018)
+              href: whats-new-talent-december-14.md
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (6 december 2018)
+              href: whats-new-talent-december-6.md
             - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (27 november 2018)
               href: whats-new-talent-november-27.md
             - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (15 november 2018)
@@ -71,6 +75,8 @@
     - name: Hantera ledighet och frånvaro
       href: leave-absence-overview.md
       items:
+        - name: Begrepp för tjänstledighet och frånvaro
+          href: leave-absence-concepts.md
         - name: Periodisera ledig tid baserat på antal arbetade timmar
           href: leave-accrue-hours-worked.md
         - name: Arbetstidskalendrar
@@ -128,10 +134,13 @@
         - name: Skapa utbildningar
           href: courses.md
     - name: Definiera och hantera ett förmånsprogram
-      href: manage-benefit-program.md
-    - name: Policyer för förmånsberättigande
-      href: benefit-eligibility-policies.md
       items:
+        - name: Hantera ett förmånsprogram
+          href: manage-benefit-program.md
+        - name: Policyer för förmånsberättigande
+          href: benefit-eligibility-policies.md
+        - name: Generera Affordable Care Act (ACA)-rapporter
+          href: generate-aca-reports.md
         - name: Hantera artiklar utlånade till arbetare
           href: loan-items.md
     - name: Samla in information med enkäter
@@ -272,12 +281,10 @@
       items:
         - name: Analysrapporter uppdateras inte
           href: analytic-reports-not-updated.md
-        - name: Det går inte att skapa en miljö i PowerApps administrationscenter
+        - name: Det går inte att skapa en miljö i administrationscentret för PowerApps
           href: create-envi-powerapps-admin-ctr.md
         - name: Talent-klienten kopplas från
           href: client-disconnects.md
-        - name: Hur säkerhetskopiering av databaser hanteras
-          href: database-backups.md
         - name: Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
           href: avoid-text-truncation-position-hierarchy-visio.md
         - name: Kör kompensationsprocessen

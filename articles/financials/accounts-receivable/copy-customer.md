@@ -17,10 +17,10 @@ ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: 08e939f87bc4a1769533b205bc5706648e1d1dce
+ms.sourcegitcommit: c093c9af7184d93b1200a8bcab16573f2bb4be09
+ms.openlocfilehash: 7a1e6c6e3a995ad745522d58960e850d72c2ee57
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -60,9 +60,9 @@ Du kan kopiera en part endast om parten har en kundroll och har den rollen i en 
 
 När du kopierar en kund försöker systemet spara den nya kundinformationen. Valideringar körs för att säkerställa att kopierade data är rätt. Du får ett felmeddelande för varje verifiering som misslyckas. Felmeddelandena förklarar vilken information som måste uppdateras. Det går inte att spara kopian av kunden förrän du har åtgärdat alla valideringsfel.
 
-## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a>Kopiera en kund genom att använda sökfunktionen för momsregistereringsnummer
+## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a>Kopiera en kund genom att använda sökfunktionen för momsregistreringsnummer
 
-Du kan även kopiera leverantörer med hjälp av sökfunktionen för momsregistreringsnummer i gruppen **Registrering** i fliken **Kund** i åtgärdsfönstret på sidan **Alla kunder**. Dialogrutan **Sök momsregistreringsnummer** visar momsregistreringsnummer, kund-ID, kundens namn och den juridiska person där momsregistreringsnumret används. Du kan kopiera en kund om den finns i en juridisk person som inte är den aktuella juridiska personen. Gör följande när du väljer en kund som uppfyller detta kriterium.
+Du kan även kopiera kunder med hjälp av sökfunktionen för momsregistreringsnummer i gruppen **Registrering** på fliken **Kund** i åtgärdsfönstret på sidan **Alla kunder**. Dialogrutan **Sök momsregistreringsnummer** visar momsregistreringsnummer, kund-ID, kundens namn och den juridiska person där momsregistreringsnumret används. Du kan kopiera en kund om den finns i en juridisk person som inte är den aktuella juridiska personen. Gör följande när du väljer en kund som uppfyller detta kriterium.
 
 1. Alternativet **Kopiera kund** visas. Standardvärdet för det här alternativet är **Nej**. Om du vill kopiera kunden till den aktuella juridiska personen väljer du alternativet **Ja**. 
 2. Välj **Välj**. Den nya kunden skapas.
