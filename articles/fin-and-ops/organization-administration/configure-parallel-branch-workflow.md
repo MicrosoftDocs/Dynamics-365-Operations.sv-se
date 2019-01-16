@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: a0359f8312e5e3fe1349dbc89831c98c46cd61ff
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 73626ad21dfe2be7400f321a3eee272c896276f3
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,24 +34,22 @@ Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera 
 En parallellt gren är i grunden i ett arbetsflöde som körs i samband med ett överordnat arbetsflöde.
 
 ## <a name="name-a-branch"></a>Namnge en gren
+
 Följ dessa steg när du vill ange ett namn för en parallell gren.
-1.  Högerklicka på den parallella grenen och klicka sedan på **Egenskaper**. Formuläret **Egenskaper** visas.
-2.  Klicka på **Grundinställningar** i det vänstra fönstret.
-3.  Ange ett unikt namn för parallellnamnet i fältet **Namn**.
-4.  Klicka på **Stäng**.
+
+1. Högerklicka på den parallella grenen och klicka sedan på **Egenskaper**. Formuläret **Egenskaper** visas.
+2. Klicka på **Grundinställningar** i det vänstra fönstret.
+3. Ange ett unikt namn för parallellnamnet i fältet **Namn**.
+4. Klicka på **Stäng**.
 
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Designa och konfigurera elementen för en gren
+
 Gör på följande sätt när du vill designa och konfigurera elementen för en parallell gren.
-1.  Dubbelklicka på den parallella grenen.
-2.  Dra arbetsflödeselement till arbetsytan och konfigurera sedan elementen, på samma sätt som du skapar vilket annat arbetsflöde som helst. Mer information finns i Skapa ett arbetsflöde.
 
+1. Dubbelklicka på den parallella grenen.
+2. Dra arbetsflödeselement till arbetsytan och konfigurera sedan elementen, på samma sätt som du skapar vilket annat arbetsflöde som helst. Mer information finns i [Skapa ett arbetsflöde](create-workflow.md).
 
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Skapa ett arbetsflöde](create-workflow.md)
-
-
-
 

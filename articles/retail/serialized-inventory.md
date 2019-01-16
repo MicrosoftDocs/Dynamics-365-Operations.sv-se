@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 65e60f3e289bb68ea055548299d58bca42e84c02
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -28,8 +28,9 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-## <a name="overview"></a>Översikt 
-Baserat på inställningarna i detaljhandelns huvudkontor kan produkterna klassificeras som antingen serialiserade eller icke-serialiserade. När produkterna serialiseras kan respektive vara tilldelas ett unikt nummer som hjälper dig att spåra garantier och artiklar, samt bekräfta ägarskap. Även om möjligheten att tillhandahålla serienummer för serialiserade produkter redan fanns i vårt moderna kassasystem/kassasystem via moln har vissa förbättringar införts i syfte att hjälpa kassapersonalen att spara tid och vara mer produktiv.  
+## <a name="overview"></a>Översikt
+
+Baserat på inställningarna i detaljhandelns huvudkontor kan produkterna klassificeras som antingen serialiserade eller icke-serialiserade. När produkterna serialiseras kan respektive vara tilldelas ett unikt nummer som hjälper dig att spåra garantier och artiklar, samt bekräfta ägarskap. Även om möjligheten att tillhandahålla serienummer för serialiserade produkter redan fanns i vårt moderna kassasystem/kassasystem via moln har vissa förbättringar införts i syfte att hjälpa kassapersonalen att spara tid och vara mer produktiv.
 
 ## <a name="pos-improvements"></a>Kassaförbättringar
 
@@ -37,9 +38,9 @@ Baserat på inställningarna i detaljhandelns huvudkontor kan produkterna klassi
 
     En kommentar visas under transaktionsraden för varje enskild serialiserad vara där serienumret hoppades över. Denna kommentar anger att serienumret inte har angetts för varan. Kassören kan därför snabbt hitta varor som saknar ett serienummer.
 
-    Den nya åtgärden **Lägg till serienummer** tillhandahåller även serienummer för varor som saknar serienummer. Ett angivet serienummer kan inte redigeras. Kassören måste ogiltigförklara raden och lägga till produkten på nytt. 
+    Den nya åtgärden **Lägg till serienummer** tillhandahåller även serienummer för varor som saknar serienummer. Ett angivet serienummer kan inte redigeras. Kassören måste ogiltigförklara raden och lägga till produkten på nytt.
     
-- **Inga serienummer krävs för att lägga kundorder** – Kundorder kan läggas i en butik och utföras från en annan. En kassör som lägger en kundorder behöver inte ange något serienummer. Serienumret anges i samband med plock eller hämtning. Ett serienummer måste emellertid anges för samtliga radobjekt som leveranstypen **Utkörning** väljs för. I annat fall kan transaktionen inte slutföras.    
+- **Inga serienummer krävs för att lägga kundorder** – Kundorder kan läggas i en butik och utföras från en annan. En kassör som lägger en kundorder behöver inte ange något serienummer. Serienumret anges i samband med plock eller hämtning. Ett serienummer måste emellertid anges för samtliga radobjekt som leveranstypen **Utkörning** väljs för. I annat fall kan transaktionen inte slutföras.
 - **Serialiserade produkter sammanställs inte på transaktionsskärmen** – Inställningen **Sammanställda produkter** i fältgruppen **Terminal** på sidan **Funktionalitetsprofil** låter dig sammanställa samma icke-serialiserade produkter på transaktionsskärmen. När samma produkter sammanställs blir de lättare att se i transaktionsrutnätet. Eftersom serienummer som regel är unika och försäljningsmedarbetare inte behöver ange serienummer före kassan, gäller inställningen **Sammanställda produkter** emellertid inte serialiserade produkter. Därför kommer serialiserade produkter inte att sammanställas på transaktionsskärmen om inställningen **Sammanställ produkter** väljs.
 - **Möjlighet att söka efter journalerna med serienummer** - Journalerna går nu dessutom att söka med serienummer. Öppna åtgärden Journaler och tryck på knappen Avancerad sökning i appfältet. Knappen Lägg till filter gör det möjligt att även använda ett filter vid sökning efter serienummer.
 

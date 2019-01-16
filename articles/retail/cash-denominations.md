@@ -20,10 +20,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: afc53754c3ff5b1afed2380369cf8280cfffc5e4
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 24775044e5a502a5615392a6a8c4030bdfafb0ab
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -34,11 +34,13 @@ ms.lasthandoff: 08/09/2018
 Kontantbenämningar för sedlar och mynt kan definieras i back office för kassörer, affärskontakter och butikschefer iifrån kassan. Dessa benämningar kan användas vid beräkning av kontanter i kassaavstämningar i slutet av dagen eller för att genomföra en försäljning snabbt.
 
 ## <a name="define-denominations"></a>Definiera benämningar
-Benämningar ställs in per butik i alternativet **Ställ in** > **kontantavstämning från sidan butiksegenskaper**. 
+
+Benämningar ställs in per butik på alternativet **Ställ in** \> **kontantavstämning från sidan butiksegenskaper**.
 
 ![kontantbenämningar](./media/image1-denomination.png)
 
 För att definiera en benämning:
+
 1. Klicka på **Ny**.
 1. Ange typen (mynt eller sedel).
 1. Ange beloppet (värde).
@@ -46,9 +48,9 @@ För att definiera en benämning:
 ![kontantbenämningar](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>Konfigurera funktionsprofilen
+
 Vid betalning av kontanter i kassan kan användaren använda sedelbenämningar för att snabbt ange det belopp som betalats av kunden. Du kan konfigurera två alternativ för visning av benämningen i kassan i funktionsprofilen.
 
-**Större eller lika med det förfallna beloppet**: som standard visar kassan endast de sedelbenämningar som är större än beloppet som förfaller till betalning, vilket gör det möjligt för snabb genomföring av transaktionen. Om till exempel det förfallna beloppet är 7,50 visar kassan följande benämningar: 10, 20, 50 och 100. Om du rör något av dessa belopp kommer försäljningaen att genomföras automatiskt för detta belopp. Sedlarna 1 och 5 visas inte eftersom dessa belopp är mindre än beloppet som förfaller.
-
-**Alla benämningar**: Markera det här alternativet för att alltidvisa alla sedelbenämningar i kassan, oavsett hur mycket förfaller. Detta innebär att användaren kan använda en kombination av sedlar till det förfallna beloppet. Om till exempel det förfallna beloppet är 25,00 kan användaren välja 20 och 5 för att slutföra försäljningen.
+- **Större eller lika med det förfallna beloppet** - som standard visar kassan endast de sedelbenämningar som är större än beloppet som förfaller till betalning, vilket gör det möjligt för snabb genomföring av transaktionen. Om till exempel det förfallna beloppet är 7,50 visar kassan följande benämningar: 10, 20, 50 och 100. Om du rör något av dessa belopp kommer försäljningaen att genomföras automatiskt för detta belopp. Sedlarna 1 och 5 visas inte eftersom dessa belopp är mindre än beloppet som förfaller.
+- **Alla benämningar** - Markera det här alternativet för att alltid visa alla sedelbenämningar i kassan, oavsett hur mycket förfaller. Detta innebär att användaren kan använda en kombination av sedlar till det förfallna beloppet. Om till exempel det förfallna beloppet är 25,00 kan användaren välja 20 och 5 för att slutföra försäljningen.
 

@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d1ee87dbe9dab089a893d9c69d2573a4c4b11b58
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -32,29 +32,36 @@ ms.lasthandoff: 08/09/2018
 
 Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar.
 
-Microsoft Dynamics 365 for Finance and Operations har beskrivningar för vissa av de mer komplexa fälten. Dessa beskrivningar visas när du håller muspekaren över ett fält. På sidan **Fältbeskrivningar** kan du visa och exportera fältbeskrivningar. 
+Microsoft Dynamics 365 for Finance and Operations har beskrivningar för vissa av de mer komplexa fälten. Dessa beskrivningar visas när du håller muspekaren över ett fält. På sidan **Fältbeskrivningar** kan du visa och exportera fältbeskrivningar.
 
-Inte alla sidor har fältbeskrivningar. Vi tillhandahåller enbart beskrivningar av de mer komplexa fälten och inte av dem där användningen av fältet är tydligt. Av den anledningen saknas fältbeskrivningar på vissa sidor. Andra sidor innehåller några få beskrivningar och några av de mer komplexa sidorna, till exempel många av parametersidorna, har många beskrivningar. 
+Inte alla sidor har fältbeskrivningar. Vi tillhandahåller enbart beskrivningar av de mer komplexa fälten och inte av dem där användningen av fältet är tydligt. Av den anledningen saknas fältbeskrivningar på vissa sidor. Andra sidor innehåller några få beskrivningar och några av de mer komplexa sidorna, till exempel många av parametersidorna, har många beskrivningar.
 
 Om du har tillgång till utvecklingsmiljön för Finance and Operationskan kan du lägga till egna fältbeskrivningar och anpassa befintliga beskrivningar. Du kan till exempel lägga till företagsspecifik information i en fältbeskrivning. Mer information hittar du i [Hjälp för Anpassa fält](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Se fältbeskrivningarna i användargränssnittet.
-Du kan visa fältbeskrivningar genom att hovra över ett fält. Om det inte finns någon beskrivning ser du fältnamnet när du för muspekaren över fältet. (Obs! I Dynamics AX 7.0 (February 2016) kan fältbeskrivningarna endast visas på sidan **Fältbeskrivningar**.) Följande illustration visar den fältbeskrivning som visas när du för muspekaren över fältet **Lås artiklar under inventeringen**. 
+
+Du kan visa fältbeskrivningar genom att hovra över ett fält. Om det inte finns någon beskrivning ser du fältnamnet när du för muspekaren över fältet.
+
+> [!NOTE]
+> Fältbeskrivningar i Dynamics AX 7.0 (februari 2016) kan endast visas på sidan **Fältbeskrivningar**.
+
+I följande illustration visas fältbeskrivningen som visas när du för muspekaren över fältet **Lås artiklar under inventeringen**.
 
 [![Exempel på en fältbeskrivning](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Använd sidan Fältbeskrivningar för att visa och exportera hjälp för fält.
+
 På sidan **Fältbeskrivningar** kan du visa och exportera fältbeskrivningar. Du kan se de beskrivningar som är tillgängliga en sida i taget.
 
 ### <a name="view-the-descriptions-for-a-page"></a>Visa beskrivningarna för en sida
 
 Visa beskrivningarna för en sida genom att följa det här steget:
 
--   Ange sidan namn i fältet **Välj en sida**. Du kan också klicka på pilen om du vill öppna en lista över alla sidor och sedan bläddra i eller filtrera listan.
+- Ange sidan namn i fältet **Välj en sida**. Du kan också klicka på pilen om du vill öppna en lista över alla sidor och sedan bläddra i eller filtrera listan.
 
-Du kan antingen använda sidans namn som visas i användargränssnittet (UI) (till exempel **Kunder**) eller kodnamnet (AOT-namn) som visas när du högerklickar på en sida (till exempel **CustTable**). 
+Du kan antingen använda sidans namn som visas i användargränssnittet (UI) (till exempel **Kunder**) eller kodnamnet (AOT-namn) som visas när du högerklickar på en sida (till exempel **CustTable**).
 
-Information om olika sätt att filtrera listan över sidor hittar du i avsnittet "Söka efter en sida" senare i den här artikeln. 
+Information om olika sätt att filtrera listan över sidor hittar du i avsnittet "Söka efter en sida" senare i den här artikeln.
 
 Om du ställer in alternativet **Inkludera fält utan en beskrivning** till **Ja** kommer alla fält på sidan att visas, oavsett om de har en fältbeskrivning eller inte.
 
@@ -62,23 +69,25 @@ Om du ställer in alternativet **Inkludera fält utan en beskrivning** till **Ja
 
 Om du vill exportera beskrivningarna för en sida ska du följa de här stegen:
 
-1.  Välj en sida i fältet **Välj en sida**.
-2.  Klicka på knappen **Öppna i Microsoft Office** i det övre högra hörnet och klicka sedan på **FieldDescriptionTmp**.
+1. Välj en sida i fältet **Välj en sida**.
+2. Klicka på knappen **Öppna i Microsoft Office** i det övre högra hörnet och klicka sedan på **FieldDescriptionTmp**.
 
 ### <a name="searching-for-a-page"></a>Söka efter en sida
 
 Det finns flera sätt att söka efter en sida i fältet **Välj en sida**. I många fall måste du klicka på pilen i fältet **Välj en sida** om du vill öppna listrutan och sedan välja från en filtrerad lista över sidor.
 
--   Skriv in en del av namnet och öppna sedan listrutan för att välja från en filtrerad lista över sidor.
--   Öppna listrutan och klicka antingen på rubriken **Sök namn** högst upp i listan eller på rubriken **Sök AOT-namn**. Efter detta öppnas en dialogruta där du kan använda avancerada filtreringsalternativ såsom **Sidnamn som börjar med**.
--   Skriv in hela namnet på sidan. När du använder det här alternativet är det bäst att öppna listrutan och se vad mer som finns i listan, även om fältbeskrivningar visas.
-    -   Om det finns en enskild exakt matchning på namnet visas fältbeskrivningarna för den sidan.
-    -   Om det finns fler än en exakt matchning visas inga beskrivningar. Du måste öppna listrutan och välja sida.
-    -   Om namnet du angav är en del av namnet på en annan sida ser du beskrivningarna av sidan. Om du öppnar listrutan kan du se ytterligare sidor som innehåller det aktuella namnet.
+- Skriv in en del av namnet och öppna sedan listrutan för att välja från en filtrerad lista över sidor.
+- Öppna listrutan och klicka antingen på rubriken **Sök namn** högst upp i listan eller på rubriken **Sök AOT-namn**. Efter detta öppnas en dialogruta där du kan använda avancerada filtreringsalternativ såsom **Sidnamn som börjar med**.
+- Skriv in hela namnet på sidan. När du använder det här alternativet är det bäst att öppna listrutan och se vad mer som finns i listan, även om fältbeskrivningar visas.
 
-Inga beskrivningar visas om du exempelvis skriver <strong>Inventering</strong> i fältet *<strong><em>Välj en sida</em></strong>*. Om du öppnar listrutan och ser du att det finns två sidor med namnet <strong>Inventering</strong> och flera sidor som innehåller ordet "Inventering". Om du väljer sidan med AOT-namnet <strong>InventJournalCount</strong> visas fältbeskrivningarna för den sidan. Om du öppnar listrutan igen ser du att listan nu innehåller alla sidor som har "InventJournalCount" som en del i AOT-sidans namn.
+    - Om det finns en enskild exakt matchning på namnet visas fältbeskrivningarna för den sidan.
+    - Om det finns fler än en exakt matchning visas inga beskrivningar. Du måste öppna listrutan och välja sida.
+    - Om namnet du angav är en del av namnet på en annan sida ser du beskrivningarna av sidan. Om du öppnar listrutan kan du se ytterligare sidor som innehåller det aktuella namnet.
+
+Inga beskrivningar visas om du exempelvis skriver **Inventering** i fältet **Välj en sida**. Om du öppnar listrutan och ser du att det finns två sidor med namnet **Inventering** och flera sidor som innehåller ordet "Inventering". Om du väljer sidan med AOT-namnet **InventJournalCount** visas fältbeskrivningarna för den sidan. Om du öppnar listrutan igen ser du att listan nu innehåller alla sidor som har "InventJournalCount" som en del i AOT-sidans namn.
 
 ## <a name="troubleshooting"></a>Felsökning
+
 Det här avsnittet innehåller information som hjälper dig att felsöka problem som kan uppstå när du använder fältbeskrivningar.
 
 ### <a name="i-cant-find-a-field-description"></a>Jag kan inte hitta en fältbeskrivning
@@ -97,12 +106,7 @@ Ställ in alternativet **Inkludera fält utan en beskrivning** på **Ja** om du 
 
 Information om olika sätt att hitta sidor hittar du i avsnittet "Söka efter sidor" tidigare i den här artikeln. Om du har skrivit in sidans exakta namn kan det hända att fältbeskrivningarna inte visas om det finns fler än en sida med samma namn. Klicka på pilen i fältet **Välj en sida** om du vill öppna en filtrerad lista över de sidor som är tillgängliga.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hjälp för Anpassa fält](../../dev-itpro/user-interface/customize-field-help.md)
-
-
-
-
 

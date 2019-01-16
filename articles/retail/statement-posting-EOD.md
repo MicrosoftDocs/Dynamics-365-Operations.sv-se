@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: d428da2a6fb8ce5d63c3373def879c9b32cfd492
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -59,11 +59,12 @@ Som del av förbättringarna av funktionerna för bokföring av utdrag har tre n
 
 Dessutom har fältet **Maximalt antal parallella utdragsbokföringar** införts på snabbfliken **batchbearbetning**. Det här fältet anger antalet batchuppgifter som ska köras samtidigt. För närvarande måste du manuellt ange värdet i det här fältet.
 
-Dessutom med nya bokföringsprocessen är du skyldig att definiera en **Presentkortsprodukt** på snabbfliken **presentkort** på fliken **bokföring** på sidan **butiksparametrar** Detta gäller även om ingen presentkort används i organisationen. 
+Dessutom med nya bokföringsprocessen är du skyldig att definiera en **Presentkortsprodukt** på snabbfliken **presentkort** på fliken **bokföring** på sidan **butiksparametrar** Detta gäller även om ingen presentkort används i organisationen.
 
 Observera att alla inställningar och parametrar som relateras till bokföring av utdrag och som definieras i butiker och på sidan **Butiksparametrar**, gäller för den förbättrade funktionen för bokföring av utdrag.
 
 ## <a name="processing"></a>Bearbetning
+
 Utdrag kan beräknas och bokföras i en batch med hjälp av menyalternativeet **Beräkna utdrag i batch** och **Bokför utdrag i batch**. Alternativt kan utdrag beräknas och bokföras manuellt med hjälp av menyalternativet **Butiksutdrag** som innehåller den förbättrade funktionen för bokföring av utdrag.
 
 Processen och stegen för beräkning och bokföring av utdrag i en batch är desamma som i den äldre funktionen för bokföring av utdrag. Dock har viktiga förbättringar gjorts i den huvudsakliga interna behandlingen av utdragen. Dessa förbättringar gör processen mer flexibel och ger bättre insyn i tillstånden och felinformation. Därför kan användarna adressera orsaken till fel och sedan fortsätta bokföringssprocessen utan att orsaka datakorruption och utan att det krävs datakorrigeringar.
@@ -71,6 +72,7 @@ Processen och stegen för beräkning och bokföring av utdrag i en batch är des
 I följande avsnitt beskrivs några viktiga förbättringar för utdragsbokföring som visas i användargränssnittet för butiksutdrag och bokförda utdrag.
 
 ### <a name="status-details"></a>Statusinformation
+
 En ny tillståndsmodell har introducerats i metoden för bokföring av utdrag genom beräknings- och bokföringsprocesser.
 
 I följande tabell beskrivs de olika tillstånden och deras ordning under beräkningsprocessen.
@@ -109,9 +111,11 @@ Alla tillstånden i föregående tabell är av oberoende karaktär och hierarkis
 Dessutom visas rubriken i andra och tredje avsnitten övergripande tillstånd för den aktuella processen.
 
 ### <a name="event-logs"></a>Händelseloggar
+
 Ett utdrag genomgår olika operationer (till exempel skapa, beräkna, radera och bokföra) och flera instanser av samma operation kan anropas under utdragets livscykel. Exempelvis när ett utdrag skapas och beräknas kan användaren avmarkera utdraget och beräkna det igen. Knappen **händelseloggar** i gruppen **Information om körning** för utdraget ger en fullständig redovisningsspårning av olika åtgärder som kallas på utdraget sats, tillsammans med information om när dessa åtgärder kallades.
 
 ### <a name="aggregated-transactions"></a>Sammansatta transaktioner
+
 Under bokföringsprocessen sammanställs försäljningstransaktionerna baserat på konfigurationen. Dessa sammanlagda transaktioner lagras i systemet och används till att skapa försäljningsorder. Varje sammanlagd transaktion skapar en motsvarande försäljningsorder i systemet. Du kan visa sammanlagd transaktion med knappen **sammanlagda transaktioner** i gruppen **Information om körning** för utdraget.
 
 Fliken **detaljer för försäljningsorder** för en sammanlagd transaktionen visar följande information:
@@ -136,11 +140,13 @@ Vyn sammanlagd transaktion ger följande fördelar:
 - Sammanlagd XML-filen gör det enklare att identifiera problem vid upprättande av försäljningsorder och fakturering.
 
 ### <a name="journal-vouchers"></a>Bokföringsorder
+
 Knappen **journalverifikationer** i gruppen **Information om körning** för utdraget visar alla de olika verifikationstransaktioner som skapas för ett utdrag och som rör rabatter, intäkter/kostnader-konton, presentkort kort, osv.
 
 Programmet visar för närvarande endast data för bokförda utdrag.
 
 ### <a name="payment-journals"></a>Betalningsjournaler
+
 Knappen **betalningsjournaler** i gruppen **Information om körning** för utdraget visar alla de olika betalningsjournaler som har skapats för ett utdrag.
 
 Programmet visar för närvarande endast data för bokförda utdrag.

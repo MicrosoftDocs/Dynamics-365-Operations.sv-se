@@ -3,7 +3,7 @@ title: "Ställa in erbjudandehantering"
 description: "I det här avsnittet beskrivs hur du ställer in erbjudanden i Talent."
 author: josaw
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fa2f2f9f67562524961352a87a7db49992776e46
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 # <a name="set-up-offer-management"></a>Ställa in erbjudandehantering 
@@ -105,7 +105,7 @@ Gör följande om du vill överföra filen med regler för erbjudandedata.
 
 1.  Du kan ta bort en befintlig överföring av regeluppsättning om platshållaren som definieras inte används i en annan dokumentmall.
 
->[!ANTECKNINGAR]
+>[!NOTE]
 > - Varje platshållare kan bara ha en unik uppsättning kolumner som den är beroende av. Om till exempel **årslön** är beroende av **plats för jobbet** och **nivå** kan du inte överföra en annan regeluppsättning där **årslön** är beroende av en annan uppsättning kolumner.
 
 > - Du kan hämta exempel på regeluppsättningar för erbjudandedata på fliken **Exempel** på sidan **Regler för erbjudandedata**.
@@ -136,7 +136,7 @@ Gör följande om du vill skapa en erbjudandedokumentmall.
 
     - Hashtag platshållaren för erbjudandedata direkt till en position. Skriva **\#** och sedan börja skriva in namnet på platshållaren för erbjudandedata. Alternativen visas i den nedrullningsbara listan. Klicka eller tryck på **ange** för att infoga platshållaren för erbjudandedata.
 
-    >[!ANTECKNINGAR]
+    >[!NOTE]
     > - Hovra över platshållaren för erbjudandedata om du vill associera en platshållare till dokumentmallen för erbjudandet utan att visa dess värde för kandidaten och klicka på **fäst**-ikonen. Detta för platshållaren till avsnittet **Fästa erbjudandedata** av dokumentmallen för erbjudandet. Ta bort genom att följa samma steg men klicka på **ta bort** i listan över platshållare för erbjudandedata.
 
     > - Om du vill visa listan över aktiva platshållare för erbjudandedata, växla till fliken **aktiva** i det högra fönstret.
@@ -175,7 +175,7 @@ Erbjudandet är erbjudandet artefakterna som delas med sökande och består av e
 
 1.  Klicka på **Lägg till mall**.
 
-    >[!ANTECKNINGAR]
+    >[!NOTE]
     > - Du kan välja att skapa en ny mall eller välja från en befintlig.
 
     > - Om du vill lägga till en befintlig mall måste du kontrollera att erbjudandedokumentmallen har sparats, slutförts och markerats som aktiv.
@@ -198,8 +198,10 @@ Det finns flera olika delar av erbjudandets skapandeprocess som kan konfigureras
 
 - **Kandidatens erfarenhet av erbjudandet** - som administratör kan du ange om alla erbjudanden har ett förfallodatum och i så fall vad standardförskjutningen för förfallodatum ska vara. Du kan också ange om kandidater kan avvisa ett erbjudande.
 
-- **e-signaturer** -för närvarande är alternativet endast elektroniska signaturer för sökande skriver du namnet i erbjudandet paketet när du godtar erbjudandet. Vi kommer att introducera partnerintegration med andra leverantörer av elektroniska signaturer i framtiden.
+- **e-signaturer** - Som administratör kan du också välja metoden kandidater kan använda för att skriva under erbjudanden.
+    - Adobe Sign - Alla erbjudandepaket skickas och signerats via Adobe Sign. Varje erbjudandeskapare publicerar erbjudandet måste ha Adobe Sign-licensen ansluten till Attract. 
 
+    - ESign - Detta är standardalternativet, tillhandahålles direkt vid leverans, där användaren kan registrera ett erbjudande genom att ange deras namn och initialer.
 
 Mer information om processen att skapa erbjudanden finns i [skapa, godkänna och signera erbjudanden](./creating-offers.md).
 

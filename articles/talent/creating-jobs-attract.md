@@ -3,7 +3,7 @@ title: "Skapa, godkänn och bokföra jobb i Attract"
 description: "Det här avsnittet beskriver delarna av ett jobb i Attract. Här förklaras också hur du skapar ett jobb."
 author: josaw
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 12/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: af945042c150fff1a95cdb046f2a712cb2c2c061
+ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
+ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/23/2018
 
 ---
 
@@ -75,7 +75,25 @@ Mer information om aktiviteter som kan läggas till i anställningsprocessen fin
 
 ## <a name="postings"></a>Bokföringar
 
-När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Microsoft Dynamics 365 for Talent) eller LinkedIn. Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Därför utvidgas listan över tiden.
+När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Microsoft Dynamics 365 for Talent) eller LinkedIn. 
+
+> [!NOTE]
+> Det finns tre viktiga saker att komma ihåg om processen för jobbpubliceringar i LinkedIn.
+> 1. Jobb som har publicerats på LinkedIn publiceras som ”begränsad listor”-jobb. Begränsade listor-jobb kan inte erbjudas på LinkedIn-webbplatsen. Om du vill erbjuda begränsade listor-jobb som har publicerats i LinkedIn från Attract ska du arbeta med LinkedIn att tillåta ”Jobbförpackning”. Se länkarna nedan och kontakta LinkedIn support för mer information.
+>
+>    [Begränsade listor jämfört med Premium-jobbplatser för jobbförpackning](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
+>
+>    [Vanliga frågor om jobbförpackning](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>
+> 1. När du publicerar jobb på LinkedIn skickar Attract Microsoft 365 organisationsnamn mot jobbet. LinkedIn kopplar jobben i ett företag på LinkedIn-sidan utifrån det organisationsnamn som överförs. Kontrollera att Microsoft 365 organisationsnamn matchar företagsnamnet på LinkedIn om ditt jobb listas mot fel företag på LinkedIn.  
+>
+>    [Ändra adresskontakt m.m.](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
+>
+>    Kontakta LinkedIn support om du får problem efter detta steg. 
+> 
+> 1. Det kan ta upp till 24 timmar för jobb som publicerats på LinkedIn att visas för alla kandidater i LinkedIn, på grund av det aktuella batchjobbet för LinkedIn publiceringsprocess.
+
+Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden.
 
 Mer information om jobbpubliceringar finns i [Funktionen för karriärwebbplats i Attract](./career-site.md).
 

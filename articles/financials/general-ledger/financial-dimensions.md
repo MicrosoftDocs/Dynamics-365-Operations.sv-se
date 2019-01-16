@@ -3,7 +3,7 @@ title: Ekonomiska dimensioner
 description: "Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in."
 author: aprilolson
 manager: AnnBe
-ms.date: 10/26/2018
+ms.date: 01/03/2019
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: 003b7eac16c1be50bc982da0672df42a87a69722
-ms.openlocfilehash: bda8b14b1752ca67fc4eeec6d6345dcf3968179d
+ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/05/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -93,6 +93,8 @@ Du kan använda värden från huvudposter, till exempel kund och leverantör som
 Den här funktionen kontrolleras av en inställning i dimensionen. Den här inställningen kallas **kopiera värdena till denna dimension för varje ny DimensionName skapas**, där **DimensionName** är namnet på dimensionen. Funktionen är avstängd som standard. Det kan dock sättas på när som helst.
 
 Om det redan finns poster för dimensionen uppdateras huvudposterna när du aktiverar funktionen. Men befintliga dokument och transaktioner uppdaterade.
+
+Om du använder en mall för att skapa en huvudpost, kontrollera att mallvärdet för huvuddimensionen är tomt. Om du till exempel skapar kunder från en mall, kontrollera att kunddimensionen i mallen är tom. Kunddimensionsvärdet hämtas som standard från det nya kundnumret när du skapar en ny kund.  
 
 ## <a name="derived-dimensions"></a>Härledda dimensioner
 

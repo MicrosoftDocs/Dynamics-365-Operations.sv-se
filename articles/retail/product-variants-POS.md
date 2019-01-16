@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: e40c558e03ef230fee6726994bc94979d40493c2
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -52,8 +52,8 @@ Kvantiteterna **Reserverat** och **Beställt** visas också för varje plats.
 
 Listan över platser innehåller två typer av enheter:
 
-- **Butiker** – Listab visar butiker som konfigureras med hjälp av butikslokaliserargruppen för den aktuella butiken i Butik administration. 
-- **Distributionscenter** – olika typer av distributionscenter (till exempel lagerställen) kan konfigureras i Microsoft Dynamics 365 for Retail. I listan visas dock endast lagertillgänglighetsinformation för distributionscenter av standardtypen **Standard**. 
+- **Butiker** – Listab visar butiker som konfigureras med hjälp av butikslokaliserargruppen för den aktuella butiken i Butik administration.
+- **Distributionscenter** – olika typer av distributionscenter (till exempel lagerställen) kan konfigureras i Microsoft Dynamics 365 for Retail. I listan visas dock endast lagertillgänglighetsinformation för distributionscenter av standardtypen **Standard**.
 
     > [!NOTE]
     > Lagertillgänglighetsinformation visas inte för lagerställe av typerna **transport**, **karantän** och **varor på väg** för kassan.
@@ -86,7 +86,7 @@ I vyn **Dimensionsbaserad matris** inkluderar cellerna för produktvarianter ett
 | **0** (noll)                             | En variant har frisläppts till den valda platsen, men artikeln är inte tillgänglig på den valda platsen. Du kan emellertid utföra ytterligare åtgärder i cellen. (Dessa åtgärder kommer att beskrivas mer utförligt i detta ämne.) |
 | **Ej tillämpligt** eller en inaktiv cell              | En variant har inte frisläppts till den angivna platsen och du kan inte utföra ytterligare åtgärder i cellen. |
 
-Du kan också ändra pivot för dimensioner genom att välja att använda den nya dimensionen. 
+Du kan också ändra pivot för dimensioner genom att välja att använda den nya dimensionen.
 
 ![Ändra pivot](media/ChangePivot.png)
 
@@ -108,14 +108,12 @@ Dessutom i vyn **Dimensionsbaserad matris** kan fler åtgärder utföras för at
 
 Följande tabell visar mer information om ytterligare åtgärder som är tillgängliga.
 
-
-|        Åtgärd        |                                                                                                                    beskrivning                                                                                                                    |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       Sälj nu       |                               Lägg till vald artikelvariant till transaktionen och omdirigera användaren till skärmbilden för transaktionen. (Den här åtgärden är inte tillgänglig när den markerade platsen är ett distributionscenter.)                               |
-|   Hämta i butik   |      Skapa kundorder för produktvarianten som ska hämtas från den valda platsen och dirigera om användaren till skärmbilden för transaktionen. (Den här åtgärden är inte tillgänglig när den markerade platsen är ett distributionscenter.)       |
-|     Leverera produkt     |                                                 Skapa kundorder för produktvarianten som ska levereras från den valda platsen och dirigera om användaren till skärmbilden för transaktionen.                                                 |
-|     Tillgänglighet     |                                                                             Visa ATP-information om den valda variantkombinationen för den valda platsen.                                                                              |
-|  Visa alla platser  | Växla till standardinställda lagersökningsvyn och markera lagertillgänglighetsinformation för artikelvarianten i alla butiker i butikslokaliserargruppen samt i distributionscenter av typen <strong>Standard/standard</strong>. |
-| Visa produktinformation |                                                                         Omdirigera användaren till sidan <strong>produktinformation</strong> med den associerade produktmallen.                                                                          |
-
+| Åtgärd               | beskrivning |
+|----------------------|-------------|
+| Sälj nu             | Lägg till vald artikelvariant till transaktionen och omdirigera användaren till skärmbilden för transaktionen. (Den här åtgärden är inte tillgänglig när den markerade platsen är ett distributionscenter.) |
+| Hämta i butik     | Skapa kundorder för produktvarianten som ska hämtas från den valda platsen och dirigera om användaren till skärmbilden för transaktionen. (Den här åtgärden är inte tillgänglig när den markerade platsen är ett distributionscenter.) |
+| Leverera produkt         | Skapa kundorder för produktvarianten som ska levereras från den valda platsen och dirigera om användaren till skärmbilden för transaktionen. |
+| Tillgänglighet         | Visa ATP-information om den valda variantkombinationen för den valda platsen. |
+| Visa alla platser   | Växla till standardinställda lagersökningsvyn och markera lagertillgänglighetsinformation för artikelvarianten i alla butiker i butikslokaliserargruppen samt i distributionscenter av typen **Standard/standard**. |
+| Visa produktinformation | Omdirigera användaren till sidan **produktinformation** med den associerade produktmallen. |
 

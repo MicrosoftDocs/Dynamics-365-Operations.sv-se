@@ -3,7 +3,7 @@ title: Aktiviteter i processerna
 description: "Det här avsnittet innehåller information om olika typer av aktiviteter som kan användas i anställningsprocesserna."
 author: 
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: ccd9e2d0ff1f7fb6825c6823936b4013b3054f5d
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -62,6 +62,10 @@ Aktiviteten Intervju är valfritt. Den här aktiviteten har tre komponenter: kan
 - Om du vill skicka e-post till kandidater för att begära deras tillgänglighet, ange alternativet **Begär tillgänglighet för kandidat** till **på**. Om du väljer alternativet **Av**, kommer det här steget inte att visas i anställningsprocessen för jobbet.
 - För att live-streama eller ha ett konferenssamtal via Skype för företag, ange fältet **onlinemöte** till **Skype för företag**. Den korrekta länken för **Anslut till Skype-möte** läggs till i begäran om intervjumöte.
 - Om du vill skicka e-post till kandidater för att slutföra tidsplaneringen, ange alternativet **Skicka e-post till kandidat** till **på**. Om du anger alternativet **av**, kommer kandidater att endast få tidsplan för intervju när de loggar in på kandidatportalen.
+
+>[!NOTE]
+> - För alla 1:1-intervjuer skickas påminnelser till intervjuare per dygn om intervjuaren inte har svarat (accepterat eller avböjt) begäran om intervju.
+> - Det finns inga automatiska påminnelser för att svara på begäran om intervju för alla panelintervjuer. För att utlösa en påminnelse manuellt, redigera intervjun och använd alternativet **uppdatera och skicka** för att skicka tillbaka begäran till intervjuare.
 
 Komponenten Feedback låter användarna ange rekommendationer för en sökande. De kan också ange eventuella feedbackkommentarer de har. Om du aktiverar alternativet **Ärv feedbackdeltagare från anställningsteamet** kommer rekryterare, anställande chefer och intervjuare registreras automatiskt i komponenten Feedback. Organisationer kan låta intervjuare visa feedback för andra människor innan de skickar sin egen feedback. Organisationer kan även tillåta att intervjuare redigerar deras feedback när de har skickat sina kommentarer.
 

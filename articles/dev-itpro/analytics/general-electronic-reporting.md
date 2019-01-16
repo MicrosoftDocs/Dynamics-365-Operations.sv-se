@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
-ms.openlocfilehash: f27f228e48da653a9caf666f9053fe45a7c23745
+ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
+ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
+ms.lasthandoff: 01/03/2019
 
 ---
 
@@ -174,11 +174,11 @@ En **Filsystem**-datalager ger åtkomst till listan över konfigurationer som fi
 - molnstyrda miljöer distribueras i utvecklingssyften (innehåller testmodeller av bifogade paket)
 - lokalt distribuerade miljöer (lokal distribution av affärsdata (LBD))
 
-Besök sidan [Importera konfigurationer för elektronisk rapportering (ER)](/electronic-reporting-import-ger-configurations.md) för mer information om detta.
+Besök sidan [Importera konfigurationer för elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md) för mer information om detta.
 
 Ett **RCS-instans**-datalager ger åtkomst till listan över konfigurationerna för en viss RCS-instans som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen av Finance and Operations och används för elektronisk rapportering.
 
-Besök sidan [Importera konfigurationer för elektronisk rapportering (ER) från Lagstadgade konfigurationstjänster (RCS)](/rcs-download-configurations.md) för mer information om detta.
+Besök sidan [Importera konfigurationer för elektronisk rapportering (ER) från Lagstadgade konfigurationstjänster (RCS)](./rcs-download-configurations.md) för mer information om detta.
 
 Obligatoriska datalager för **LCS-projekt**, **Filsystem** och **Lagstadgade konfigurationstjänster (RCS)** kan registreras separat för respektive konfigurationsleverantör av den aktuella Finance and Operations-instansen. Varje databas kan reserveras för en viss konfigurationsleverantör.
 

@@ -3,7 +3,7 @@ title: "Skapa, godkänna och signera erbjudanden"
 description: "Det här avsnittet beskriver hur du skapar, godkänner och registrerar ett erbjudande för en sökande med Dynamics 365 for Talent."
 author: josaw
 manager: AnnBe
-ms.date: 10/19/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: f6b17dca13431a9d674920833b4a44141fac0bd8
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -104,6 +104,11 @@ Det finns flera åtgärder du kan vidta innan du skickar erbjudanden till kandid
 -  Du kan ange ett förfallodatum för erbjudandet. Sökande förväntas acceptera eller avböja erbjudandet före förfallodatum.  Sökande skickas en påminnelse 48 timmar innan erbjudandet löper ut.
 
 -  Det kan finnas flera dokument som du vill inkludera i processen för godkännande av erbjudandet. Du har alternativet att lista krävd dokumenttyp.
+
+- Alternativet e-signatur: om Adobe Sign valdes som den föredragna metoden för e-signering måste skapare av erbjudandet ansluta Adobe Sign-licensen. Det finns två sätt att göra detta. Gå till användare **Användarinställningar** i **Erbjudande** i **Anslutningar** och anslut till **Adobe Sign**. Du kan också uppmanas att ansluta till skärmen Skicka erbjudanden till kandidat om anslutningen inte redan upprättats baserat på användarinställningarna. 
+
+> [!NOTE]
+> Användarna behöver bara ansluta sina Adobe Sign-konton en gång. Samma användarlicens används för alla framtida erbjudandepaket som skickas av samma användare. 
 
 -  Du kan visa och redigera e-postmallen efter behov.
 
