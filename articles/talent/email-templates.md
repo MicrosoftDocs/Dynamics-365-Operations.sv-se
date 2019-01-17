@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 85581968d9d242460117693174acbf906463997f
+ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
+ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 10/22/2018
 [!include[banner](../includes/banner.md)]
 
 Genom att använda biblioteket för e-postmallar kan administratörer skapa ett enhetligt tema och profilering för alla e-postmeddelanden som skickas via Microsoft Dynamics 365 for Talent: Attract. Administratörer kan också anordna en samling innehåll för e-postmallar som andra användare kan använda. Anställningsteamet kan använda mallarna i arbetsflödet för att effektivare skicka e-post. Vissa e-postmeddelanden i Attract har konfigurerats att skickas automatiskt och administratören kan använda biblioteket för e-postmallar för att anpassa innehållet för dessa e-postmeddelanden.
+
+> [!NOTE]
+> Organisationen måste ha tillägget för omfattande anställning om du vill använda e-postmallar.
 
 ## <a name="global-template-configurations"></a>Konfiguration av global mall
 

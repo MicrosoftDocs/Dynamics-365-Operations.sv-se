@@ -34,11 +34,13 @@ Notifieringar utgör ett meddelandesystem för kritiska händelser i Microsoft D
  I resursplanering i företag (ERP) finns flera vanliga scenarier där notifieringsfunktionen i Finance and Operations kan användas. Nedan följer några exempel.
 
 ### <a name="scenario-1-create-an-alert-rule-for-new-sales-orders"></a>Scenario 1: Skapa en notifieringsregel för nya försäljningsorder
+
 1. Öppna sidan **Alla försäljningsorder**.
 2. I åtgärdsfönstret, på fliken **Alternativ** i gruppen **Andel** markerar du **Skapa ett anpassat meddelande**.
 3. I dialogrutan **Skapa notifieringsregel**, på snabbfliken **Notifiera när** i fältet **Händelse** väljer du **Post har skapats**.
 
 ### <a name="scenario-2-create-an-alert-rule-for-postponement-of-a-delivery-date"></a>Scenario 2: Skapa en notifieringsregel för att senarelägga ett leveransdatum
+
 1. Öppna sidan **Alla försäljningsorder**.
 2. Välj ett inköpsordernummer för att komma åt inköpsorderdetaljerna.
 3. Expandera snabbfliken **Inköpsorderrubrik**.
@@ -49,6 +51,7 @@ Notifieringar utgör ett meddelandesystem för kritiska händelser i Microsoft D
 När du har stängt dialogrutan **Skapa notifieringsregel** visas din regel på sidan **Hantera notifieringsregler**. Du kan använda sidan **Hantera notifieringsregler** för att uppdatera befintliga notifieringsregler. Du kan till exempel ändra händelseutlösare, uppdatera händelsemeddelanden och uppdatera utgångsdatum. För att öppna sidan **Hantera notifieringsregler** kan du använda knappen **Avisera** på fliken **Alternativ** i åtgärdsfönstret.
 
 ## <a name="what-occurs-when-an-alert-rule-is-created"></a>Vad händer när en notifieringsregel skapas?
+
 När du skapar notifieringsregler kan du tilldela en fördefinierad händelse till ett visst fält. Till exempel anländer det datum som angetts i fältet eller innehållet i fältet ändras. Alternativt kan du koppla en händelse till posterna på en viss sida. Exempelvis skapas en post eller en post tas bort.
 
 När den valda händelsen inträffar för fältet eller för en post på sidan får du en notifiering. Du skapar exempelvis en regel där du kopplar fältet **leveransdatum** till en viss inköpsorderrad med händelsen **förföll till betalning för så här länge sedan**. Du ställer in tidsramen till fem dagar. I det här fallet skickas en notifiering fem dagar efter leveransdatumet av denna inköpsorderrad.
@@ -56,9 +59,11 @@ När den valda händelsen inträffar för fältet eller för en post på sidan f
 Du kan dessutom begränsa notifieringsreglerna genom att ange villkor. Exempelvis kan du notifieras om nya inköpsorder som skapas för särskilda leverantörskonton.
 
 ## <a name="preparing-for-an-alert"></a>Förbereda för en notifiering
+
 Innan du ställer in en notifieringsregel måste du bestämma när eller i vilka situationer du vill få notifieringar. När du vet vilka händelser du vill meddelas om, går du till sidan i Finance and Operations där de data som orsakar händelsen visas. Händelsen kan vara ett datum eller en viss händelse som inträffar. Därför måste du hitta sidan där datumet anges eller där fältet ändras eller den nya posten som har skapats visas. När du har den här informationen kan du skapa notifieringsregeln.
 
 ## <a name="components-of-an-alert-rule"></a>Komponenter för en notifieringsregel
+
 Komponenter för en notifieringsregel
 
 - **Händelse** – Den händelse som utlöser en notifieringsregel kan vara ett datum som anländer eller en viss händelse som inträffar. Du definierar händelser på snabbfliken **Skicka e-postaviseringar vid ändringar av jobbstatus** i dialogrutan **Skapa notifieringsregel**.
@@ -71,5 +76,6 @@ Komponenter för en notifieringsregel
     > Det här alternativet är begränsat till administratörer i organisationen.
 
 ## <a name="email-notifications-from-alerts"></a>E-postmeddelanden från aviseringar
+
 E-postmeddelanden från aviseringar har inte aktiverats ännu. Detta aktiveras i en kommande uppdatering.
 

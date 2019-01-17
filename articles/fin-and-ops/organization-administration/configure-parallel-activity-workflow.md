@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 64cd387f8a6ab693d159cd659fca51fa6568ee39
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 01c1fa876dd66ba6f0e1cdcecff56f424e117bd9
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -34,26 +34,25 @@ Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera 
 En parallellt aktivitet består av arbetsflödesförgreningar som körs samtidigt.
 
 ## <a name="name-a-parallel-activity"></a>Namnge en parallell aktivitet
+
 Följ dessa steg när du vill ange ett namn för en parallell aktivitet.
-1.  Högerklicka den parallella aktiviteten och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper**.
-2.  Klicka på **Grundinställningar** i det vänstra fönstret.
-3.  Ange ett unikt namn för den parallella aktiviteten i fältet **Namn**.
-4.  Klicka på **Stäng**.
+
+1. Högerklicka den parallella aktiviteten och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper**.
+2. Klicka på **Grundinställningar** i det vänstra fönstret.
+3. Ange ett unikt namn för den parallella aktiviteten i fältet **Namn**.
+4. Klicka på **Stäng**.
 
 ## <a name="configure-the-branches-of-a-parallel-activity"></a>Konfigurera förgreningarna i en parallell aktivitet
+
 Gör på följande sätt när du vill lägga till och konfigurera förgreningarna i denna parallella aktivitet.
+
 1. Dubbelklicka på den parallella aktiviteten för att visa förgreningarna för den parallella aktiviteten.
-2. Dra elementet **Avdelning** från området **Arbetsflödeselement** till en infogningspunkt på duken om du vill lägga till en förgrening. Följande bild visar en infogningspunkt.![Infogningspunkt](./media/workflow_insertionpoint.gif)
+2. Dra elementet **Avdelning** från området **Arbetsflödeselement** till en infogningspunkt på duken om du vill lägga till en förgrening. Följande bild visar en infogningspunkt.
 
-   |                                              <strong>Obs!</strong>                                               |
-   |------------------------------------------------------------------------------------------------------------------|
-   | Ordningen för förgreningarna är oviktig eftersom alla förgreningar i en parallell aktivitet körs samtidigt. |
+    ![Infogningspunkt](./media/workflow_insertionpoint.gif)
 
+    > [!NOTE]
+    > Ordningen för förgreningarna är oviktig eftersom alla förgreningar i en parallell aktivitet körs samtidigt.
 
 3. Se [Konfigurera en parallell gren](configure-parallel-branch-workflow.md) för att konfigurera respektive förgrening.
-
-
-
-
-
 

@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 918f8555bc3d2e4a79262b428d5c7ba278fa7409
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 *Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). I Microsoft Dynamics 365 for Finance and Operations kan attribut förknippas med olika Retailsenheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
- 
+
 En normal TV-produkt kan till exempel ha följande attribut.
 
 | Kategori   | Attribut                | Tillåtna värden          | Standardvärde |
@@ -50,7 +50,7 @@ En normal TV-produkt kan till exempel ha följande attribut.
 | Plasma     | Drifttemperatur från      | 32–110 grader              | 32            |
 |            | Drifttemperatur till        | 32–110 grader              | 100           |
 | Projektion | Projektionrörgaranti | 6, 12, eller 18 månader         | 12            |
-|            | # antal projektionsrör    | 1–5                         | 3             |
+|            | \# av antalet projektionsrör   | 1–5                         | 3             |
 
 ## <a name="attributes-and-attribute-types"></a>Attribut och attributtyper
 
@@ -104,7 +104,7 @@ Nedan följer de återstående alternativen för attributmetadata på sidan **At
 
 De här alternativen var ursprungligen avsedda till att förbättra sökfunktionen för onlinebutiken. Även om Finance and Operations inte inkluderar skyltfönster online, inkluderar den eCommerce Publishing Software Development Kit (SDK). Kunderna kan använda denna SDK för att lägga in produkter i ett valfritt sökindex. Även om produktdata importeras bör kunder ändå kunna skilja mellan sökbar data, data som kan efterfrågas och så vidare. På så sätt kan de skapa ett optimalt index för att se till att de bara indexerar attribut som *enligt deras mening* bör indexeras.
 
-Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint 2013 Server](https://technet.microsoft.com/en-us/library/jj219669.aspx).
+Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint 2013 Server](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Filterinställningar för attribut
 
@@ -121,7 +121,7 @@ Sidan **Visningsinställningar för filter** innehåller följande fält:
 - **Displaykontroll** – Följande alternativ finns tillgängliga för bearbetningsordning:
 
     - **Lista** – Det här alternativet är tillgängligt för alla attributtyper.
-    - **Intervall** – det här alternativet är tillgängligt för följande attributtyper: **valuta**, **decimal** och **heltal**. 
+    - **Intervall** – det här alternativet är tillgängligt för följande attributtyper: **valuta**, **decimal** och **heltal**.
     - **Reglage** – det här alternativet är tillgängligt för följande attributtyper: **valuta**, **decimal** och **heltal**.
     - **Reglage med lister** – det här alternativet är tillgängligt för följande attributtyper: **valuta**, **decimal** och **heltal**.
 
@@ -228,13 +228,13 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 5. På snabbfliken **Produkter** väljer du den produktkvalitet som behövs och väljer sedan **Attribut** ovanför produktrutnätet.
 6. Uppdatera värden för de attribut som krävs på följande snabbflikar:
 
-   - Delad produktmedia
-   - Delade produktattribut
-   - Kanalmedia
-   - Kanalproduktattribut
+    - Delad produktmedia
+    - Delade produktattribut
+    - Kanalmedia
+    - Kanalproduktattribut
 
-     > [!NOTE]
-     > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
+    > [!NOTE]
+    > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
 
 ![Katalogens produktattributgrupper](media/CatalogProdAttrValues.png)
 
@@ -250,11 +250,11 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 
 5. Uppdatera värden för de attribut som krävs på följande snabbflikar:
 
-   - Delad produktmedia
-   - Delade produktattribut
-   - Kanalmedia
-   - Kanalproduktattribut
+    - Delad produktmedia
+    - Delade produktattribut
+    - Kanalmedia
+    - Kanalproduktattribut
 
-     > [!NOTE]
-     > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
+    > [!NOTE]
+    > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
 

@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -31,10 +31,12 @@ ms.lasthandoff: 08/09/2018
 
 Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics AX (maj 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut. 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguider i (maj 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX
-------------------------------------------------------------------------------------------------
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguider i (maj 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX
 
-(Maj 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX (maj 2016) – uppdatering och Microsoft Dynamics AX (utgåva februari 2016). Lokaliserade versioner av uppgiftsguider som frisläpptes i (februari 2016) APQC Unified Library är tillgängliga i det här biblioteket. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md). <strong>Obs!</strong> En asterisk (<strong>\</strong>*) bredvid rubriken för en affärsprocessmodellerar (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX maj 2016-uppdateringen och stöds inte i tidigare versioner av Microsoft Dynamics AX.
+(Maj 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX (maj 2016) – uppdatering och Microsoft Dynamics AX (utgåva februari 2016). Lokaliserade versioner av uppgiftsguider som frisläpptes i (februari 2016) APQC Unified Library är tillgängliga i det här biblioteket. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
+
+> [!NOTE]
+> En asterisk (\*) bredvid rubriken för en affärsprocessmodellerare (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX maj 2016-uppdateringen och inte stöds i tidigare versioner av Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funktionsland/-region
 
@@ -62,15 +64,15 @@ Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för M
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 
-|                                  BPM-rad                                  | Land/region |
+| BPM-rad                                                                   | Land/region |
 |----------------------------------------------------------------------------|----------------|
-|                         ER konfigurera mål                          |     Globalt     |
-|     ER utformar en konfiguration för rapportgenerering i OPENXML-format     |     Globalt     |
-| ER skapa elektroniska handlingar för betalningar med en formatkonfiguration |     Globalt     |
-|             ER importera en konfiguration från Lifecycle Services              |     Globalt     |
-|               <strong>\</strong>*ER väljer tjänsteleverantör                |     Globalt     |
-|   ER uppgraderar ditt format genom att anta den nya basversionen för det formatet    |     Globalt     |
-|             ER överför en konfiguration till Lifecycle Services              |     Globalt     |
+| ER konfigurera mål                                                  | Globalt         |
+| ER utformar en konfiguration för rapportgenerering i OPENXML-format         | Globalt         |
+| ER skapa elektroniska handlingar för betalningar med en formatkonfiguration | Globalt         |
+| ER importera en konfiguration från Lifecycle Services                          | Globalt         |
+| \*ER väljer tjänsteleverantör                                               | Globalt         |
+| ER uppgraderar ditt format genom att anta den nya basversionen för det formatet      | Globalt         |
+| ER överför en konfiguration till Lifecycle Services                          | Globalt         |
 
 ### <a name="human-capital-management"></a>HR
 
@@ -176,25 +178,21 @@ Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för M
 
 ### <a name="warehouse-and-transportation"></a>Lager- och transport
 
-|                                     BPM-rad                                     | Land/region |
-|----------------------------------------------------------------------------------|----------------|
-|                            Konfigurera påfyllnadsbearbetning                             |     Globalt     |
-| <strong>\</strong>*Rapportera som färdig till en ej ID-nummertyrd plats |     Globalt     |
-|                      Ställa in en min-max process för lagerpåfyllnad                      |     Globalt     |
-|                             Ställa in skapande av behållare                              |     Globalt     |
-|                              Ställa in manuell förpackning                               |     Globalt     |
-|                  Ställ in transportbegränsningar för en artikel                   |     Globalt     |
-|                <strong>\</strong>*Ställ in policyer för lagerarbete                 |     Globalt     |
+|                                     BPM-rad                    | Land/region |
+|-----------------------------------------------------------------|----------------|
+| Konfigurera påfyllnadsbearbetning                                       | Globalt         |
+| \*Rapportera som färdig till en ej ID-nummertyrd plats | Globalt         |
+| Ställa in en min-max process för lagerpåfyllnad                          | Globalt         |
+| Ställa in skapande av behållare                                         | Globalt         |
+| Ställa in manuell förpackning                                           | Globalt         |
+| Ställ in transportbegränsningar för en artikel                   | Globalt         |
+| \*Ställ in policyer för lagerarbete                                 | Globalt         |
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
-
-
-
 

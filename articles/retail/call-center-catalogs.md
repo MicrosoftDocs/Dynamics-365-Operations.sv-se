@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
-ms.openlocfilehash: d135b499025d904cd157cf5e3dcb6288cb75757d
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/04/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -31,29 +31,29 @@ ms.lasthandoff: 09/04/2018
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen som är länkad till kataloger i Microsoft Dynamics 365 for Retail.  
+Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen som är länkad till kataloger i Microsoft Dynamics 365 for Retail.
 
-Katalogfunktionerna i Dynamics 365 for Retail kan användas för flera ändamål. Urspungligen skapades funktionerna för katalogen för e-handelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts e-handelslösning.  
+Katalogfunktionerna i Dynamics 365 for Retail kan användas för flera ändamål. Urspungligen skapades funktionerna för katalogen för e-handelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts e-handelslösning.
 
-När kundtjänsts supportkanal lades till i Dynamics 365 for Retail, utökades katalogkonceptet till att lägga till ytterligare funktioner för stöd och hantering relaterade till traditionella marknadsföringskataloger för försäljning direkt till konsument Ett direkt till konsument-företag ger ofta ut tryckta kataloger som sedan skickas till ett eller flera segment med kunder. Dessa kataloger har vanligtvis särskilda erbjudanden och erbjudanden som bara gäller om kunden anger en katalogidentifieringskod när beställningen görs. 
+När kundtjänsts supportkanal lades till i Dynamics 365 for Retail, utökades katalogkonceptet till att lägga till ytterligare funktioner för stöd och hantering relaterade till traditionella marknadsföringskataloger för försäljning direkt till konsument Ett direkt till konsument-företag ger ofta ut tryckta kataloger som sedan skickas till ett eller flera segment med kunder. Dessa kataloger har vanligtvis särskilda erbjudanden och erbjudanden som bara gäller om kunden anger en katalogidentifieringskod när beställningen görs.
 
 Försäljning direkt till konsument-företag är mycket fokuserade på att följa upp svar på dessa kataloger så att kostnaderna för att tillverka och skicka dem är berättigade. För att spåra svar skrivs en kod traditionellt ut på baksidan av katalogen och denna kod begärs sedan och tillämpas när katalogmottagaren ringer för att göra en beställning per telefon (eller nu mer traditionellt kan koden anges när kunden gör en beställning online). Det finns olika branschtermer som har använts för att identifiera den här katalogen artikelspårningskod (inklusive nyckelkod, kampanjkod, katalogkod, källkoden) avses koden i Dynamics 365 for Retail som **Källkods-ID**.
 
 ## <a name="basic-catalog-setup"></a>Grundläggande kataloginställningar
 
-Gå till **Retail** > **kataloger och sortiment** > **alla kataloger** för att konfigurera katalogen.
+Gå till **Retail** \> **kataloger och sortiment** \> **alla kataloger** för att konfigurera katalogen.
 
-När du skapar en ny katalog måste du först koppla katalogen minst en butikskanal. Detta görs på snabbfliken **butikskanaler** på formuläret **kataloginställningar**. Klicka på **Lägg till** och välj en eller flera butikskanaler. Endast artiklar som är kopplade till den valda kanalen [sortiment](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/assortments) kan användas när du skapar katalogen.
+När du skapar en ny katalog måste du först koppla katalogen minst en butikskanal. Detta görs på snabbfliken **butikskanaler** på formuläret **kataloginställningar**. Klicka på **Lägg till** och välj en eller flera butikskanaler. Endast artiklar som är kopplade till den valda kanalen [sortiment](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) kan användas när du skapar katalogen.
 
-Om du vill lägga till produkter i en katalog måste en navigeringshierarkin väljas. Kategoristrukturen stöder navigeringshierarkin för katalogen. Du måste välja från en av de navigeringshierarkier som är kopplade till återförsäljare som valts på snabbfliken **Butikskanaler** på sidan **katalog**. Om en navigeringskanal inte har kopplats till en kanal tidigare, går du till **Butik** > **Kanalinställning** > **Kanalkategorier och produktattribut** för att koppla standardnavigeringshierarkin till var och en av dina butikskanaler.
+Om du vill lägga till produkter i en katalog måste en navigeringshierarkin väljas. Kategoristrukturen stöder navigeringshierarkin för katalogen. Du måste välja från en av de navigeringshierarkier som är kopplade till återförsäljare som valts på snabbfliken **Butikskanaler** på sidan **katalog**. Om en navigeringskanal inte har kopplats till en kanal tidigare, går du till **Retail** \> **Kanalinställning** \> **Kanalkategorier och produktattribut** för att koppla standardnavigeringshierarkin till var och en av dina butikskanaler.
 
 På menyfliken **kataloger** på sidan **Kataloginställning** klickar du på **lägga till produkter** för att konfigurera produkter som ska läggas till katalogen eller väljer en nod i navigeringshierarkin (när du markerar en nod ändras skärmpresentationen och du kan lägga till produkter direkt till en kategori i katalogen).
 
-Klicka på toppnoden i kataloghierarkin för att gå tillbaka till huvudkatalogens rubrikvy. Konfigurera giltighetsdatumet och utgångsdatumet efter behov på snabbfliken **Allmänna**.  
+Klicka på toppnoden i kataloghierarkin för att gå tillbaka till huvudkatalogens rubrikvy. Konfigurera giltighetsdatumet och utgångsdatumet efter behov på snabbfliken **Allmänna**.
 
-Innan du kan använda katalogen måste den publiceras. Klicka på **Validera katalogen** på menyn **Kataloger** om du vill bearbeta en validering. Detta är begärd åtgärd och verifierar att de nödvändiga inställningarna är korrekta. Klicka på **Visa resultat** om du vill visa detaljer för valideringen. Om fel påträffas måste du korrigera data och köra validering igen tills valideringen är klar.  
+Innan du kan använda katalogen måste den publiceras. Klicka på **Validera katalogen** på menyn **Kataloger** om du vill bearbeta en validering. Detta är begärd åtgärd och verifierar att de nödvändiga inställningarna är korrekta. Klicka på **Visa resultat** om du vill visa detaljer för valideringen. Om fel påträffas måste du korrigera data och köra validering igen tills valideringen är klar.
 
-När valideringen har bekräftats, klickar du på **arbetsflöde** på menyn för att starta arbetsflödet för godkännande. Klicka på **skicka** på menyn **arbetsflöde** om du vill köra processen. Konfigurera stegen och behöriga användare för arbetsflöde från **Butik** > **Inställningar för huvudkontor** > **Arbetsflöden (butik)**. Arbetsflödet definierar de steg som krävs för att hämta katalogen till status **Godkänd**. När katalogen har status **godkänd** kan du klicka på alternativet **publicera** på menyn **kataloger** för att slutföra processen. När katalogen är i status **publicerad** kan den användas vid orderregistrering för kundtjänst och skicka katalogprocesser.
+När valideringen har bekräftats, klickar du på **arbetsflöde** på menyn för att starta arbetsflödet för godkännande. Klicka på **skicka** på menyn **arbetsflöde** om du vill köra processen. Konfigurera stegen och behöriga användare för arbetsflöde från **Retail** \> **Inställningar för huvudkontor** \> **Arbetsflöden (butik)**. Arbetsflödet definierar de steg som krävs för att hämta katalogen till status **Godkänd**. När katalogen har status **godkänd** kan du klicka på alternativet **publicera** på menyn **kataloger** för att slutföra processen. När katalogen är i status **publicerad** kan den användas vid orderregistrering för kundtjänst och skicka katalogprocesser.
 
 ## <a name="use-catalogs-to-drive-sales-order-pricing-and-promotions"></a>Använd kataloger till prissättning av försäljningsorder och kampanjer
 
@@ -61,23 +61,23 @@ En huvudorsak för att definiera en katalog med en kundtjänst är att kunna kon
 
 Om du vill konfigurera specifika priser väljer du alternativet **prisgrupper** från fliken **kataloger** för att länka en eller flera prisgrupper i katalogen. Alla handelsavtal, journaler för prisjusteringar och avancerade butiksrabatter (tröskelvärde, kvantitet, mixa och matcha) som har länkats till samma prisgrupp kommer att tillämpas när kunderna beställer från den här katalogen.
 
-På snabbfliken **källkoder** klickar du på **Lägg till** för att lägga till en eller flera identifierare av **Källkods-ID** i katalogen. Detta är den kod som kommer att gälla vid orderregistrering för kundtjänst till försäljningsorderns rubrik (och rader). Den här koden används för att koppla försäljningsordern till katalogen och slutligen till prisgrupperna och särskilda priser och kampanjer som har konfigurerats.  
+På snabbfliken **källkoder** klickar du på **Lägg till** för att lägga till en eller flera identifierare av **Källkods-ID** i katalogen. Detta är den kod som kommer att gälla vid orderregistrering för kundtjänst till försäljningsorderns rubrik (och rader). Den här koden används för att koppla försäljningsordern till katalogen och slutligen till prisgrupperna och särskilda priser och kampanjer som har konfigurerats.
 
 ## <a name="use-the-source-id-to-track-costs-and-response-rates"></a>Använd käll-ID för att spåra kostnader och svarsfrekvenser
 
-När du definierar **källkods-ID** kan du alternativt koppla detta ID till ett **Målmarknad-ID**. **Målmarknad-ID** kan definieras i **Butik** > **Kunder** > **Målmarknad**. Målmarknaden är en lista med kunder och/eller potentiella kunder som hör till ett användardefinierat segment. Att länka data för kunder eller potentiella kunder till källkod-ID ger bättre insyn i mottagarna av katalogen. Om en kund är kopplad till en målmarknad och denna målmarknad är kopplad till en aktiv källkod-ID/katalog kan användare av kundtjänst kunna se vilka kataloger som kunden har fått genom att välja menyalternativet **källkoder** på menyfliken **Kunder** på sidan **kundtjänst**. Under orderregistreringen kan användare av kundtjänst också se vissa kataloger som en kund har skickats i listrutan **källa** i försäljningsorderrubriken. Att ändra filtret från **alla** till **inriktade** tillåter användare att se de specifika aktiva katalogerna som kunden har skickats. Detta är användbart i situationer där kunden kan ha glömt sin katalog eller inte kan hitta eller läsa katalogkoden när de ringer för att skapa en försäljningsorder.
+När du definierar **källkods-ID** kan du alternativt koppla detta ID till ett **Målmarknad-ID**. **Målmarknad-ID** kan definieras i **Retail** \> **Kunder** \> **Målmarknad**. Målmarknaden är en lista med kunder och/eller potentiella kunder som hör till ett användardefinierat segment. Att länka data för kunder eller potentiella kunder till källkod-ID ger bättre insyn i mottagarna av katalogen. Om en kund är kopplad till en målmarknad och denna målmarknad är kopplad till en aktiv källkod-ID/katalog kan användare av kundtjänst kunna se vilka kataloger som kunden har fått genom att välja menyalternativet **källkoder** på menyfliken **Kunder** på sidan **kundtjänst**. Under orderregistreringen kan användare av kundtjänst också se vissa kataloger som en kund har skickats i listrutan **källa** i försäljningsorderrubriken. Att ändra filtret från **alla** till **inriktade** tillåter användare att se de specifika aktiva katalogerna som kunden har skickats. Detta är användbart i situationer där kunden kan ha glömt sin katalog eller inte kan hitta eller läsa katalogkoden när de ringer för att skapa en försäljningsorder.
 
 Det går att länka flera källkod-ID till en katalog. Det behövs ofta när ett företag vill följa upp svarsfrekvensen av olika segment. Företaget får en unik katalogkod till olika kundsegment som tillåter att spåra svarsfrekvensen ner till segmentnivån i en viss kataloghändelse.
 
 Att välja en viss **källkod-ID som** och klicka på alternativet **information** på snabbfliken **källkoder** ger ytterligare fält där försäljningsprognoser, portokostnader och datum då utskicket sänds kan hämtas. Informationen är användbar för att göra detaljerad analys av katalogens effektivitet. Användare kan återgå till den här sidan med tiden och använda knapparna **källkodsanalys** och **jämför erbjudanden** för att utlösa analytiska rapporter utifrån aktuella försäljningsdata och jämföra kostnader och budget till verkliga värden.
 
-## <a name="configure-catalog-specific-order-and-item-scripts"></a>Konfigurera katalogspecifik order och artikelskript 
+## <a name="configure-catalog-specific-order-and-item-scripts"></a>Konfigurera katalogspecifik order och artikelskript
 
-När en användare av kundtjänst skapar en försäljningsorder kan de använda skript på skärmen. Dessa textbaserade skript kan ge ytterligare information som användaren ska säga till kunden eller det kan vara interna noteringar/påminnelser som användaren av kundtjänst ska granska och reagera på när de skapar försäljningsordern.  
+När en användare av kundtjänst skapar en försäljningsorder kan de använda skript på skärmen. Dessa textbaserade skript kan ge ytterligare information som användaren ska säga till kunden eller det kan vara interna noteringar/påminnelser som användaren av kundtjänst ska granska och reagera på när de skapar försäljningsordern.
 
 Det är ofta användbart att ha olika typer av skript för olika kataloger. På snabbfliken **skript** kan fördefinierade skript kopplas till en katalog. Använd fältet **tidpunkt** för att avgöra om skriptet visas i början av ordern (så snart som källkod-ID anges i orderrubriken) eller i slutet av ordern (i försäljningsorderns sammanfattningsformulär).
 
-När du väljer en nod i katalogens hierarki och arbetar med data på snabbfliken **produkter** kan användare också länka skript som är specifika för kataloger eller artiklar med hjälp av åtgärden **skript**.  
+När du väljer en nod i katalogens hierarki och arbetar med data på snabbfliken **produkter** kan användare också länka skript som är specifika för kataloger eller artiklar med hjälp av åtgärden **skript**.
 
 ## <a name="configure-catalog-specific-up-sell-and-cross-sell-items"></a>Konfigurera katalogspecifika artiklar för merförsäljning och korsförsäljning
 
@@ -87,13 +87,13 @@ Artiklar för merförsäljning eller korsförsäljning kan också utnyttja skrip
 
 ## <a name="catalog-page-analysis"></a>Katalogsidaanalys
 
-På fliken **kataloger** finns alternativ att konfigurera **katalogsidor**. Den här funktionen låter dig definiera särskilda sidor och sidtyper för utskrivna katalogen och deras associerade kostnader.  
+På fliken **kataloger** finns alternativ att konfigurera **katalogsidor**. Den här funktionen låter dig definiera särskilda sidor och sidtyper för utskrivna katalogen och deras associerade kostnader.
 
-När du konfigurerar produkter i katalogen, använd åtgärden **Produktsidlayout** för att definiera specifika sidor, procentandel av sidan och placering av sidinformation för artikeln. Genom att konfigurera denna information kommer användarna att kunna dra nytta av **Rapport över katalogområdesanalys**. Rapporten finns genom att gå till rapporten **Butik** > **Kundtjänstrapporter** > **Katalogområdesanalys**. Rapporten analyserar försäljningen mot katalogen (försäljningsorder där käll-ID för katalogen var knuten till orderrubriken eller raden) och deras associerade procentandel av sidan och kostnader för en traditionell rapport av direkt marknadsföring **Analys av kvadrattum**.
+När du konfigurerar produkter i katalogen, använd åtgärden **Produktsidlayout** för att definiera specifika sidor, procentandel av sidan och placering av sidinformation för artikeln. Genom att konfigurera denna information kommer användarna att kunna dra nytta av **Rapport över katalogområdesanalys**. Rapporten finns genom att gå till **Retail** \> **Kundtjänstrapporter** \> **Katalogområdesanalys**. Rapporten analyserar försäljningen mot katalogen (försäljningsorder där käll-ID för katalogen var knuten till orderrubriken eller raden) och deras associerade procentandel av sidan och kostnader för en traditionell rapport av direkt marknadsföring **Analys av kvadrattum**.
 
 ## <a name="catalog-requests"></a>Katalogförfrågningar
 
-Medan kataloger som konfigurerats och publiceras i Dynamics 365 for Retail, kan funktionen **skicka katalog** användas. Den här funktionen finns på sidan **kundsökning** och **kundtjänst**. När du har valt en kundpost genom **Sök efter kund** eller medan du visar ett konto för valda kunder från **kundtjänst** kan användarna välja alternativet **skicka katalog** som leder till en dialogruta som tillåter användaren att välja från en lista över alla publicerade och aktiva kataloger. Användaren kan välja en katalog och en kvantitet och ett visst källkod-ID som ska skickas. När de klickar på knappen **skicka** kommer en begäran att lagras som sedan kan hanteras genom att skriva ut rapporten **Katalogförfrågningar**. Rapporten finns genom att gå till rapporten **Butik** > **Kundtjänstrapporter** > **Katalogförfrågningar - rapport**. Den listar alla katalogförfrågningar, inklusive kundinformation för namn och adress till kunden som begärde ändringen av katalogen. Rapporten kan användas internt eller data kan överföras till tredje part underliggande externa processer för att fysiskt skicka katalogen till kunden.
+Medan kataloger som konfigurerats och publiceras i Dynamics 365 for Retail, kan funktionen **skicka katalog** användas. Den här funktionen finns på sidan **kundsökning** och **kundtjänst**. När du har valt en kundpost genom **Sök efter kund** eller medan du visar ett konto för valda kunder från **kundtjänst** kan användarna välja alternativet **skicka katalog** som leder till en dialogruta som tillåter användaren att välja från en lista över alla publicerade och aktiva kataloger. Användaren kan välja en katalog och en kvantitet och ett visst källkod-ID som ska skickas. När de klickar på knappen **skicka** kommer en begäran att lagras som sedan kan hanteras genom att skriva ut rapporten **Katalogförfrågningar**. Rapporten finns genom att gå till **Retail** \> **Kundtjänstrapporter** \> **Katalogförfrågningar - rapport**. Den listar alla katalogförfrågningar, inklusive kundinformation för namn och adress till kunden som begärde ändringen av katalogen. Rapporten kan användas internt eller data kan överföras till tredje part underliggande externa processer för att fysiskt skicka katalogen till kunden.
 
 ## <a name="additional-features"></a>Ytterligare funktioner
 
@@ -101,5 +101,5 @@ På fliken **kataloger**, finns även alternativ för att konfigurera en **betal
 
 ## <a name="additional-notes"></a>Ytterligare noteringar
 
-När en källkod-ID gäller för en försäljningsorder i kundtjänst, används den för närvarande för att skapa priser, erbjudanden, skript och merförsäljning/korsförsäljnings som är katalogspecifika. Systemet kommer inte att förbjuda eller hindra att en produkt som inte finns i katalogen beställs på försäljningsordern. Om en artikel är beställd som inte tillhör katalogen, kommer systemet först att använda **prisgrupp** som definieras i kundtjänstkanalen (**Butik** > **Kanaler** > **Kundtjänst** > **Alla öppna resurser**) för artikelpris eller erbjudanden.  Om du inte hittar något specifikt kanalpris, används det grundläggande försäljningspriset för artikeln.
+När en källkod-ID gäller för en försäljningsorder i kundtjänst, används den för närvarande för att skapa priser, erbjudanden, skript och merförsäljning/korsförsäljnings som är katalogspecifika. Systemet kommer inte att förbjuda eller hindra att en produkt som inte finns i katalogen beställs på försäljningsordern. Om en artikel är beställd som inte tillhör katalogen, kommer systemet först att använda prisgrupp som definieras i kundtjänstkanalen **Prisgrupp** som definieras i kundtjänstkanalen (**Retail** \> **Kanaler** \> **Kundtjänst** \> **Alla kundtjänster**) för artikelpris eller erbjudanden. Om du inte hittar något specifikt kanalpris, används det grundläggande försäljningspriset för artikeln.
 

@@ -261,6 +261,8 @@
               href: extensibility/extensibility-changes-811.md
             - name: Ändringar av utbyggbarhet version 8.1.2
               href: extensibility/extensibility-changes-812.md
+            - name: Ändringar av utbyggbarhet version 8.1.3
+              href: extensibility/extensibility-changes-813.md
         - name: Grunder
           items:
             - name: Inkräktande anpassningar
@@ -883,12 +885,33 @@
       href: deployment/deploy-demo-environment.md
     - name: Molndistribution
       items:
+        - name: Självbetjäning för distribution
+          href: deployment/infrastructure-stack.md
+          items:
+            - name: Distribuera en ny miljö
+              href: deployment/deployenvironment-newinfrastructure.md
+            - name: Frågor och svar om distribution
+              href: deployment/deploymentFAQ.md
+            - name: Kända problem med självbetjäningsdistribution
+              href: deployment/known-issues-new-deployment-experience.md
+            - name: Underhållsåtgärder för distributioner
+              href: deployment/maintenanceoperationsguide-newinfrastructure.md
+            - name: Uppdatera en miljö
+              href: deployment/updateenvironment-newinfrastructure.md
+            - name: Felsöka miljöer som distribuerats med självbetjäningsdistribution
+              href: deployment/troubleshoot-newinfrastructure.md
         - name: Slutför integration av Azure Resource Manager
           href: deployment/arm-onboarding.md
         - name: Azure ExpressRoute och Finance and Operations
           href: deployment/expressroute.md
         - name: Arkitektur för Finance and Operations
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+        - name: Tillämpa uppdateringar i molnmiljöer
+          href: deployment/apply-deployable-package-system.md
+        - name: Installera uppdateringar och tillägg för molnstyrda kanalkomponenter för Retail
+          href: deployment/Update-retail-channel.md
+        - name: Initiera molnstyrda kanalkomponenter för Retail
+          href: deployment/Initialize-Retail-Channels.md
     - name: Lokal distribution
       href: deployment/on-premises-deployment-landing-page.md
       items:
@@ -931,8 +954,6 @@
       items:
         - name: Skapa modellpaket som kan distribueras
           href: deployment/create-apply-deployable-package.md
-        - name: Tillämpa uppdateringar i molnmiljöer
-          href: deployment/apply-deployable-package-system.md
         - name: Installera distribuerbara paket från kommandoraden
           href: deployment/install-deployable-package.md
         - name: Avinstallera ett paket
@@ -1021,9 +1042,7 @@
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Uppgradera Dynamics AX-plattformen till augusti 2016-versionen
           href: migration-upgrade/update-platform-each-release.md
-        - name: Uppgradera begränsade lägen
-          href: migration-upgrade/upgrade-sandbox-environment.md
-        - name: Uppgradera data i utvecklings- eller demonstrationsmiljöer eller begränsade miljöer
+        - name: Uppgradera data i utvecklings- eller demonstrationsmiljöer eller sandbox-miljöer
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Uppdatera utvecklingsverktyg
           href: dev-tools/update-development-tools.md

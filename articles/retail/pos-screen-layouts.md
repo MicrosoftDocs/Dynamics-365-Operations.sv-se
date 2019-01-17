@@ -40,6 +40,7 @@ Följande bild visar förhållandet mellan de olika enheter som utgör de konfig
 ![Entiteter för kassaskärmlayout](../retail/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuell profil
+
 Visuella profiler tilldelas till kassor och de anger visuella element som är kassaspecifika och delade för användare. Alla användare som loggar in på kassan ser samma tema, färger och bilder.
 
 ![Välkommen till POS-skärmen med ljust tema](../retail/media/POS-Welcome-Screen-with-Light-theme.png)
@@ -55,6 +56,7 @@ Visuella profiler tilldelas till kassor och de anger visuella element som är ka
 - **Programmets bakgrund** - Du kan ange en bakgrundsbild som används istället för den fasta temafärgen i hela programmet. När det gäller inloggningsbakgrunder ska filstorleken hållas så liten som möjligt.
 
 ## <a name="screen-layouts"></a>Skärmlayouter
+
 Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av gränssnittskontrollerna på kassavälkomstskärmen och **transaktionsskärmen**.
 
 ![Visa vy för kassaskärmslayout](../retail/media/POS-Screen-Layout-View.png)
@@ -95,6 +97,7 @@ Vid uppstart väljer kassaprogrammet automatiskt den närmaste layoutstorleken s
 ![Kassalayoutstorlekar](../retail/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Knappsatser
+
 För varje layoutstorlek i en skärmlayout kan du konfigurera och tilldela knappsatser för kassavälkomstskärmen och **transaktionsskärmen**. Knappsatser på välkomstskärmen placeras ut automatiskt från vänster till höger, från det lägsta numret (välkomstskärm 1) till det högsta numret.
 
 I fullständiga kassalayouter anges placeringen av knappsatser i skärmlayoutdesignern.
@@ -104,6 +107,7 @@ I kompakta kassalayouter placeras knappsatser på välkomstskärmen ut automatis
 ![Komprimera layoutens knappsatser](../retail/media/Compact-View-Button-Grids.png)
 
 ### <a name="images"></a>Bilder
+
 För varje layoutstorlek i en skärmlayout kan du ange bilder som ska inkluderas i kassagränssnittet. För fullständiga kassalayouter kan en enda bild anges för välkomstskärmen. Den här bilden visas som det första gränssnittselement till vänster. På skärmen **transaktion** kan bilder användas som flikbilder eller logga. Komprimerade kassalayouter använder inte dessa bilder.
 
 ### <a name="screen-layout-designer"></a>Layoutdesigner för skärm
@@ -141,11 +145,13 @@ Den fullständiga layoutdesignern låter användarna dra gränssnittskontroller 
     - **Anpassad kontroll** – Den anpassade kontrollen fungerar som platshållare i skärmlayouten så att du kan reservera utrymme för anpassat innehåll. Den anpassade kontrollen är bara tillgänglig för fullständiga layouter.
 
 ### <a name="compact-layout-designer"></a>Kompakt layoutdesigner
+
 Liksom den fullständiga layoutdesignern kan du med den komprimerade layoutdesignern konfigurera kassaskärmlayout enbart för mobiltelefoner och små surfplattor. Men då har själva layouten åtgärdats. Du kan konfigurera kontrollerna genom att högerklicka och använda snabbmenyn. Du kan däremot inte använda dra och släpp-åtgärder för ytterligare innehåll.
 
 ![Kompakt layoutdesigner](../retail/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Knappsatsdesigner
+
 Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassavälkomstskärmen och **transaktionsskärmen** för både fullständig och komprimerad layout. Samma knappsats kan användas för olika layouter och typer av layout. Liksom skärmlayoutdesignern använder knappsatsdesignern ClickOnce-distributionsteknik för att hämta, installera och starta den senaste versionen av programmet varje gång användaren öppnar den. Kom ihåg att kontrollera webbläsarkrav för ClickOnce. Vissa webbläsare, till exempel Google Chrome kräver filnamnstillägg.
 
 ![Knappsatsdesigner](../retail/media/Button-Grid-Designer.png)

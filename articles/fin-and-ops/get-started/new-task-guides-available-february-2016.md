@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: eeb56ec9697447ebd2385f3a0a516fcc9dc1bd3e
+ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 12/18/2018
 
 ---
 
@@ -29,104 +29,87 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics AX (februari 2016) samt Komma igång (februari 2016).
+Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016. De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics AX (februari 2016) samt Komma igång (februari 2016).
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguuider i (februari 2016) APQC Unified Library för Microsoft Dynamics AX
----------------------------------------------------------------------------------
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguuider i (februari 2016) APQC Unified Library för Microsoft Dynamics AX
 
 APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Dynamics AX 7.0.0-versionen. Om du behöver lokaliserade versioner av uppgiftsguiderna finns dessa tillgängliga i APQC Unified Library (maj 2016) för Microsoft Dynamics AX. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
 
 ### <a name="accounts-payable"></a>Leverantörsreskontra
 
-|                                                           |                    |
-|-----------------------------------------------------------|--------------------|
-| **BPM-rad**                                              | **Land/region** |
-| Huvudfakturadata i AP-system med hjälp av leverantörsfakturan        | Globalt             |
-| Huvudfakturadata i AP-system med hjälp av fakturajournal     | Globalt             |
-| Huvudfakturadata i AP-system med hjälp av fakturapool        | Globalt             |
-| Huvudfakturadata i AP-system med hjälp av fakturaregister    | Globalt             |
-| Registrera leverantörsfakturan och matcha mot mottagen kvantitet | Globalt             |
-| Ställ in validering av Fakturamatchning för leverantörsreskontra       | Globalt             |
-| Ställ in leverantörsfakturapolicyer                            | Globalt             |
+| BPM-rad                                                  | Land/region |
+|-----------------------------------------------------------|----------------|
+| Huvudfakturadata i AP-system med hjälp av leverantörsfakturan        | Globalt         |
+| Huvudfakturadata i AP-system med hjälp av fakturajournal     | Globalt         |
+| Huvudfakturadata i AP-system med hjälp av fakturapool        | Globalt         |
+| Huvudfakturadata i AP-system med hjälp av fakturaregister    | Globalt         |
+| Registrera leverantörsfakturan och matcha mot mottagen kvantitet | Globalt         |
+| Ställ in validering av Fakturamatchning för leverantörsreskontra       | Globalt         |
+| Ställ in leverantörsfakturapolicyer                            | Globalt         |
 
-
- 
 ### <a name="accounts-receivable"></a>Kundreskontra
 
-|                                                             |                    |
-|-------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                | **Land/region** |
-| Tilldela en återkommande fritextfakturamall till en kund | Globalt             |
-| Skapa en kravbrevsserie                         | Globalt             |
-| Skapa ett autogiromedgivande för en kund.                | Globalt             |
-| Skapa en fritextfakturamall                         | Globalt             |
-| Skapa en avskrivningsjournal för en kund                   | Globalt             |
-| Skapa en räntekod med ett intervall                        | Globalt             |
-| Skapa och bearbeta fritextfakturor                       | Globalt             |
-| Skapa försäljningsorderfakturor                                 | Globalt             |
-| Skapa och bokföra återkommande fritextfakturor.              | Globalt             |
-| Bearbeta kravbrev                                  | Globalt             |
-| Beräkna ränta                                            | Globalt             |
-| Granska inkasseringsinformation                              | Globalt             |
-| Ställ in och skapa åldersfördelningsinformation för kundreskontra   | Globalt             |
+| BPM-rad                                                    | Land/region |
+|-------------------------------------------------------------|----------------|
+| Tilldela en återkommande fritextfakturamall till en kund | Globalt         |
+| Skapa en kravbrevsserie                         | Globalt         |
+| Skapa ett autogiromedgivande för en kund.                | Globalt         |
+| Skapa en fritextfakturamall                         | Globalt         |
+| Skapa en avskrivningsjournal för en kund                   | Globalt         |
+| Skapa en räntekod med ett intervall                        | Globalt         |
+| Skapa och bearbeta fritextfakturor                       | Globalt         |
+| Skapa försäljningsorderfakturor                                 | Globalt         |
+| Skapa och bokföra återkommande fritextfakturor.              | Globalt         |
+| Bearbeta kravbrev                                  | Globalt         |
+| Beräkna ränta                                            | Globalt         |
+| Granska inkasseringsinformation                              | Globalt         |
+| Ställ in och generera åldersfördelningsinformation för kundreskontra   | Globalt         |
 
-
- 
 ### <a name="cash-and-bank-management"></a>Kassa- och bankhantering
 
-|                                                                      |                    |
-|----------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                         | **Land/region** |
-| Skapa ett kreditlimitavtal för rembursen                | Globalt             |
-| Skapa ett kreditlimitavtal för garantin             | Globalt             |
-| Översikt över kundbetalningar                                           | Globalt             |
-| Definiera leverantörsbetalningsavgifter                                           | Globalt             |
-| Definiera betalningsvillkor för leverantör                                          | Globalt             |
-| Insättning av kundbetalningar                                            | Globalt             |
-| Upprätta betalningsmetod för kund                                 | Globalt             |
-| Upprätta kundbetalningsavgifter                                      | Globalt             |
-| Upprätta kundbetalningsvillkor                                     | Globalt             |
-| Exportremburs                                              | Globalt             |
-| Importera remburs                                              | Globalt             |
-| Garantitransaktion                                      | Globalt             |
-| Registrera och bokför en efterdaterad check för en kund                   | Globalt             |
-| Registrera och bokför en efterdaterad check för en leverantör                     | Globalt             |
-| Ställ in bankkreditlimiter och bokföringsprofiler för remburs     | Globalt             |
-| Ställ in bankkreditlimiter och bokföringsprofiler för garanti | Globalt             |
-| Ställ in efterdaterade checkar                                              | Globalt             |
-| Betala en efterdaterad check för en leverantör                                | Globalt             |
-| Betala en efterdaterad check från en kund                             | Globalt             |
-| Översikt över leverantörsbetalning                                              | Globalt             |
+| BPM-rad                                                             | Land/region |
+|----------------------------------------------------------------------|----------------|
+| Skapa ett kreditlimitavtal för rembursen                | Globalt         |
+| Skapa ett kreditlimitavtal för garantin             | Globalt         |
+| Översikt över kundbetalningar                                           | Globalt         |
+| Definiera leverantörsbetalningsavgifter                                           | Globalt         |
+| Definiera betalningsvillkor för leverantör                                          | Globalt         |
+| Insättning av kundbetalningar                                            | Globalt         |
+| Upprätta betalningsmetod för kund                                 | Globalt         |
+| Upprätta kundbetalningsavgifter                                      | Globalt         |
+| Upprätta kundbetalningsvillkor                                     | Globalt         |
+| Exportremburs                                              | Globalt         |
+| Importera remburs                                              | Globalt         |
+| Garantitransaktion                                      | Globalt         |
+| Registrera och bokför en efterdaterad check för en kund                   | Globalt         |
+| Registrera och bokför en efterdaterad check för en leverantör                     | Globalt         |
+| Ställ in bankkreditlimiter och bokföringsprofiler för remburs     | Globalt         |
+| Ställ in bankkreditlimiter och bokföringsprofiler för garanti | Globalt         |
+| Ställ in efterdaterade checkar                                              | Globalt         |
+| Betala en efterdaterad check för en leverantör                                | Globalt         |
+| Kvitta en efterdaterad check från en kund                             | Globalt         |
+| Översikt över leverantörsbetalning                                              | Globalt         |
 
-
- 
 ### <a name="compliance"></a>Regelefterlevnad
 
-|                                            |                    |
-|--------------------------------------------|--------------------|
-| **BPM-rad**                               | **Land/region** |
-| Definiera granskningsprinciper för källdokument | Globalt             |
+| BPM-rad                                   | Land/region |
+|--------------------------------------------|----------------|
+| Definiera granskningspolicyer för källdokument | Globalt         |
 
-
- 
 ### <a name="cost-management"></a>Kostnadshantering
 
-|                                                                     |                    |
-|---------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                        | **Land/region** |
-| Jämföra aktiva, uppskattade och faktiska kostnader på en produktionsorder | Globalt             |
-| Visa kostnadsposter för ett kostnadsobjekt                                 | Globalt             |
-| Visa saldo för kostnadsobjekt                                            | Globalt             |
-| Visa aktuell PIA-status för en produktionsorder                       | Globalt             |
-| Visa lagerutdrag och KPI efter kostnadsobjekt                     | Globalt             |
+| BPM-rad                                                            | Land/region |
+|---------------------------------------------------------------------|----------------|
+| Jämföra aktiva, uppskattade och faktiska kostnader på en produktionsorder | Globalt         |
+| Visa kostnadsposter för ett kostnadsobjekt                                 | Globalt         |
+| Visa saldo för kostnadsobjekt                                            | Globalt         |
+| Visa aktuell PIA-status för en produktionsorder                       | Globalt         |
+| Visa lagerutdrag och KPI efter kostnadsobjekt                     | Globalt         |
 
+### <a name="countryregion-functionality"></a>Funktionsland/-region
 
- 
-### <a name="countryregion-functionality"></a>Funktionen Land/region
-
-|                                                                                                        |                                 |
+| BPM-rad                                                                                               | Land/region                  |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
-| **BPM-rad**                                                                                           | **Land/region**              |
 | Lägga till BAS-rapportrutor och skapa den australiska affärsaktivitetsrapporten BAS                        | Australien och Nya Zeeland       |
 | Ställ in orsakskoder för BAS för Australien                                                                  | Australien och Nya Zeeland       |
 | Tilldela ett betalningsblankettformat till ett kundkonto                                                     | Danmark                         |
@@ -262,472 +245,406 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | GB-00009 Skapa en kreditfaktura för kvittningsrabatten.                                               | Storbritannien                  |
 | GB-00009 Inställningsparametrar för kreditfaktura för snabb betalningsrabatt                                   | Storbritannien                  |
 
-
- 
 ### <a name="develop-vision-and-strategy"></a>Utveckla vision och strategi
 
-|                                                                                          |                    |
-|------------------------------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                                             | **Land/region** |
-| Analysera enkätresultat                                                            | Globalt             |
-| Skapa en stängd avslutad fråga                                                           | Globalt             |
-| Skapa en öppen avslutad fråga                                                            | Globalt             |
-| Göra en fråga beroende av svaret på den föregående frågan (villkorsfrågor) | Globalt             |
-| Betygsätt en enkät baserat på procent                                                   | Globalt             |
+| BPM-rad                                                                                 | Land/region |
+|------------------------------------------------------------------------------------------|----------------|
+| Analysera enkätresultat                                                            | Globalt         |
+| Skapa en stängd avslutad fråga                                                           | Globalt         |
+| Skapa en öppen avslutad fråga                                                            | Globalt         |
+| Göra en fråga beroende av svaret på den föregående frågan (villkorsfrågor) | Globalt         |
+| Betygsätt en enkät baserat på procent                                                   | Globalt         |
 
-
- 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 
-|                                                 |                    |
-|-------------------------------------------------|--------------------|
-| **BPM-rad**                                    | **Land/region** |
-| ER definierar modellmappning och väljer datakällor | Globalt             |
-| ER designar domänspecifika datamodeller            | Globalt             |
-| ER designar domänspecifika format                | Globalt             |
-| ER mappar datamodeller till utvalda datakällor      | Globalt             |
-| ER väljer tjänsteleverantör                      | Globalt             |
+| BPM-rad                                        | Land/region |
+|-------------------------------------------------|----------------|
+| ER definierar modellmappning och väljer datakällor | Globalt         |
+| ER designar domänspecifika datamodeller            | Globalt         |
+| ER designar domänspecifika format                | Globalt         |
+| ER mappar datamodeller till utvalda datakällor      | Globalt         |
+| ER väljer tjänsteleverantör                      | Globalt         |
 
-
- 
 ### <a name="expense-management"></a>Utläggshantering
 
-|                              |                    |
-|------------------------------|--------------------|
-| **BPM-rad**                 | **Land/region** |
-| Konfigurera utgiftshantering | Globalt             |
+| BPM-rad                     | Land/region |
+|------------------------------|----------------|
+| Konfigurera utgiftshantering | Globalt         |
 
-
- 
 ### <a name="fixed-assets"></a>Anläggningstillgångar
 
-|                                                           |                    |
-|-----------------------------------------------------------|--------------------|
-| **BPM-rad**                                              | **Land/region** |
-| Ändra avskrivningspraxis för flera anläggningstillgångar | Globalt             |
-| Skapa en anläggningstillgång                                      | Globalt             |
-| Skapa och anskaffa tillgångar från leverantörsreskontra           | Globalt             |
-| Skapa avskrivningsförslag                              | Globalt             |
-| Avyttra en anläggningstillgång med hjälp av en fritextfaktura        | Globalt             |
-| Ange ett tillägg till en anläggningstillgång                        | Globalt             |
-| Föreslå anskaffning för anläggningstillgång                          | Globalt             |
-| Ställ in och skapa avskrivningsprofiler                   | Globalt             |
-| Ställ in bonusavskrivning                                 | Globalt             |
-| Ställ in avskrivningsregler                                 | Globalt             |
-| Ställ in Anläggningstillgångsgrupper                                 | Globalt             |
-| Ställ in bokföringsprofiler för anläggningstillgångar                       | Globalt             |
-| Ställ in värdemodeller                                       | Globalt             |
-| Dela en anläggningstillgång                                       | Globalt             |
-| Överför en anläggningstillgång                                    | Globalt             |
+| BPM-rad                                                  | Land/region |
+|-----------------------------------------------------------|----------------|
+| Ändra avskrivningspraxis för flera anläggningstillgångar | Globalt         |
+| Skapa en anläggningstillgång                                      | Globalt         |
+| Skapa och anskaffa tillgångar från leverantörsreskontra           | Globalt         |
+| Skapa avskrivningsförslag                              | Globalt         |
+| Avyttra en anläggningstillgång med hjälp av en fritextfaktura        | Globalt         |
+| Ange ett tillägg till en anläggningstillgång                        | Globalt         |
+| Föreslå anskaffning för anläggningstillgång                          | Globalt         |
+| Ställ in och skapa avskrivningsprofiler                   | Globalt         |
+| Ställ in bonusavskrivning                                 | Globalt         |
+| Ställ in avskrivningsregler                                 | Globalt         |
+| Ställ in Anläggningstillgångsgrupper                                 | Globalt         |
+| Ställ in bokföringsprofiler för anläggningstillgångar                       | Globalt         |
+| Ställ in värdemodeller                                       | Globalt         |
+| Dela en anläggningstillgång                                       | Globalt         |
+| Överföra en anläggningstillgång                                    | Globalt         |
 
-
- 
 ### <a name="general-ledger"></a>Huvudbok
 
-|                                                                   |                    |
-|-------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                      | **Land/region** |
-| Stäng räkenskapsåret                                             | Globalt             |
-| Skapa en journalpost med hjälp av en mall                           | Globalt             |
-| Skapa ett huvudkonto                                             | Globalt             |
-| Skapa kontostrukturer                                         | Globalt             |
-| Skapa periodiseringsscheman                                            | Globalt             |
-| Skapa avancerade regler för journaler                                | Globalt             |
-| Skapa och tilldela avancerade regelstrukturer                        | Globalt             |
-| Skapa och validera journaler                                      | Globalt             |
-| Skapa konsolideringsgrupper och ytterligare konsolideringskonton | Globalt             |
-| Skapa periodiseringtransaktioner i redovisningen                                | Globalt             |
-| Definiera ekonomisk dimension                                       | Globalt             |
-| Journalföra bokförda journalposter                                 | Globalt             |
-| Underhåll standardmallar för ekonomisk dimension                    | Globalt             |
-| Stängning av massräkenskapsperiod                                       | Globalt             |
-| Uför en online-konsolidering                                   | Globalt             |
-| Bokför periodiska journaler                                            | Globalt             |
-| Förbered en juridisk person som ska användas i konsolideringsprocessen       | Globalt             |
-| Bearbeta elimineringstransaktioner                                  | Globalt             |
-| Bearbeta journal för redovisningsallokering                                 | Globalt             |
-| Ställ in alias för huvudbokskonto                                     | Globalt             |
-| Ställ in elimineringsregler                                          | Globalt             |
-| Ställ in huvudkontokategorier                                    | Globalt             |
-| Kvitta transaktioner mellan redovisningskonton                       | Globalt             |
-| Visa journalposter eller transaktioner                              | Globalt             |
-| Visa relaterad koncernintern verifikation från journal                    | Globalt             |
+| BPM-rad                                                          | Land/region |
+|-------------------------------------------------------------------|----------------|
+| Stänga räkenskapsåret                                             | Globalt         |
+| Skapa en journalpost med hjälp av en mall                           | Globalt         |
+| Skapa ett huvudkonto                                             | Globalt         |
+| Skapa kontostrukturer                                         | Globalt         |
+| Skapa periodiseringsscheman                                            | Globalt         |
+| Skapa avancerade regler för journaler                                | Globalt         |
+| Skapa och tilldela avancerade regelstrukturer                        | Globalt         |
+| Skapa och validera journaler                                      | Globalt         |
+| Skapa konsolideringsgrupper och ytterligare konsolideringskonton | Globalt         |
+| Skapa periodiseringtransaktioner i redovisningen                                | Globalt         |
+| Definiera ekonomisk dimension                                       | Globalt         |
+| Journalföra bokförda journalposter                                 | Globalt         |
+| Underhåll standardmallar för ekonomisk dimension                    | Globalt         |
+| Stängning av massräkenskapsperiod                                       | Globalt         |
+| Uför en online-konsolidering                                   | Globalt         |
+| Bokför periodiska journaler                                            | Globalt         |
+| Förbered en juridisk person som ska användas i konsolideringsprocessen       | Globalt         |
+| Bearbeta elimineringstransaktioner                                  | Globalt         |
+| Bearbeta journal för redovisningsallokering                                 | Globalt         |
+| Ställ in alias för huvudbokskonto                                     | Globalt         |
+| Ställ in elimineringsregler                                          | Globalt         |
+| Ställ in huvudkontokategorier                                    | Globalt         |
+| Kvitta transaktioner mellan redovisningskonton                       | Globalt         |
+| Visa journalposter eller transaktioner                              | Globalt         |
+| Visa relaterad koncernintern verifikation från journal                    | Globalt         |
 
+### <a name="human-capital-management"></a>Administration av humankapital
 
- 
-### <a name="human-capital-management"></a>HR
+| BPM-rad                                                         | Land/region |
+|------------------------------------------------------------------|----------------|
+| Analysera enkätresultat                                    | Globalt         |
+| Godkänna poster för ansökningsinkorg                                | Globalt         |
+| Förmånsberättigandeprocess                                      | Globalt         |
+| Skapa ett massanställningsprojekt                                       | Globalt         |
+| Skapa låneartiklar                                                | Globalt         |
+| Definiera förmånberättiganderegler och policyer                    | Globalt         |
+| Definiera kompensationsprocess och beräkna resultat                | Globalt         |
+| Definiera nya avdelningar                                           | Globalt         |
+| Definiera nya jobb                                                  | Globalt         |
+| Utveckla förmånsprogram för medarbetare                                | Globalt         |
+| Utveckla och öppna jobbrekvisition                                 | Globalt         |
+| Utveckla successionsplan                                          | Globalt         |
+| Anställningverifiering av i9-verifiering                          | Globalt         |
+| Registrera och ta bort förmåner för en arbetare                          | Globalt         |
+| Registrera medarbetare i en plan för fast kompensation                    | Globalt         |
+| Registrera medarbetare i en variabel kompensationsplan                 | Globalt         |
+| Ange sökanden och programdata manuellt                    | Globalt         |
+| Ange arbetarinformation                                         | Globalt         |
+| Anställa en befintlig medarbetare genom rekrytering                    | Globalt         |
+| Anställa kandidat genom att rekrytera                                | Globalt         |
+| Anställa flera medarbetare                                          | Globalt         |
+| Identifiera och distribuera kandidaturvalsverktyg                    | Globalt         |
+| Låneartikel till en arbetare                                            | Globalt         |
+| Underhålla information om anställdas skador och sjukdomar                 | Globalt         |
+| Gör en fråga beroende av svaret för den föregående frågan | Globalt         |
+| Hantera utgångsdatum för förmån                                  | Globalt         |
+| Hantera e-postmallar                                           | Globalt         |
+| Hantera medarbetarövergångar och -överföringar                        | Globalt         |
+| Hantera ledighet och frånvaro                                          | Globalt         |
+| Hantera arbetstagarnas logi                                     | Globalt         |
+| Ändra rapporteringsrelationer för en befattning                    | Globalt         |
+| Ställ in kompensationsrutnät                                        | Globalt         |
+| Ställ in information om skador och sjukdomar                            | Globalt         |
+| Ställ in information om skador och sjukdomar                            | Globalt         |
+| Ställa in policyer för förmånsberättigande                             | Globalt         |
+| Ställ in i9-dokumenttyper                                     | Globalt         |
 
-|                                                                  |                    |
-|------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                     | **Land/region** |
-| Analysera enkätresultat                                    | Globalt             |
-| Poster för inkorg för ansökningar                                | Globalt             |
-| Förmånsberättigandeprocess                                      | Globalt             |
-| Skapa ett massanställningsprojekt                                       | Globalt             |
-| Skapa låneartiklar                                                | Globalt             |
-| Definiera förmånberättiganderegler och policyer                    | Globalt             |
-| Definiera kompensationsprocess och beräkna resultat                | Globalt             |
-| Definiera nya avdelningar                                           | Globalt             |
-| Definiera nya jobb                                                  | Globalt             |
-| Utveckla förmånsprogram för medarbetare                                | Globalt             |
-| Utveckla och öppna jobbrekvisition                                 | Globalt             |
-| Utveckla successionsplan                                          | Globalt             |
-| Anställningverifiering av i9-verifiering                          | Globalt             |
-| Registrera och ta bort förmåner för en arbetare                          | Globalt             |
-| Registrera medarbetare i en plan för fast kompensation                    | Globalt             |
-| Registrera medarbetare i en variabel kompensationsplan                 | Globalt             |
-| Ange sökanden och programdata manuellt                    | Globalt             |
-| Ange arbetarinformation                                         | Globalt             |
-| Anställa en befintlig medarbetare genom rekrytering                    | Globalt             |
-| Anställa kandidat genom att rekrytera                                | Globalt             |
-| Anställa flera medarbetare                                          | Globalt             |
-| Identifiera och distribuera kandidaturvalsverktyg                    | Globalt             |
-| Låneartikel till en arbetare                                            | Globalt             |
-| Underhålla information om anställdas skador och sjukdomar                 | Globalt             |
-| Gör en fråga beroende av svaret för den föregående frågan | Globalt             |
-| Hantera utgångsdatum för förmån                                  | Globalt             |
-| Hantera e-postmallar                                           | Globalt             |
-| Hantera medarbetarövergångar och -överföringar                        | Globalt             |
-| Hantera ledighet och frånvaro                                          | Globalt             |
-| Hantera arbetstagarnas logi                                     | Globalt             |
-| Ändra rapporteringsrelationer för en befattning                    | Globalt             |
-| Ställ in kompensationsrutnät                                        | Globalt             |
-| Ställ in information om skador och sjukdomar                            | Globalt             |
-| Ställ in information om skador och sjukdomar                            | Globalt             |
-| Ställa in policyer för förmånsberättigande                             | Globalt             |
-| Ställ in i9-dokumenttyper                                     | Globalt             |
-
-
- 
 ### <a name="inventory-management"></a>Lagerhantering
 
-|                                                                                   |                    |
-|-----------------------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                                      | **Land/region** |
-| Justera lagernivåer i lagerstället                                              | Globalt             |
-| Kontrollera lagertillgängligheten                                                   | Globalt             |
-| Korrekt information om lagerspårning                                            | Globalt             |
-| Inventering på ett lagerställe                                                    | Globalt             |
-| Skapa en ny layout för lagerställe                                                     | Globalt             |
-| Skapa och underhålla en lagerspärr                                         | Globalt             |
-| Skapa och bearbeta en avvikelse                                              | Globalt             |
-| Definiera lagerberäkningsprocesser                                               | Globalt             |
-| Initiera lagernivåer i lagerstället                                          | Globalt             |
-| Inspektera kvaliteten på varor                                                      | Globalt             |
-| Underhålla streckkodstyper                                                            | Globalt             |
-| Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal | Globalt             |
-| Ställ in översiktsprofiler för införsel                                                  | Globalt             |
-| Ställ in kvalitetsorder                                                             | Globalt             |
-| Spåra en artikel eller råmaterial                                                     | Globalt             |
-| Överför fysiskt lager i lagerstället                                  | Globalt             |
+| BPM-rad                                                                          | Land/region |
+|-----------------------------------------------------------------------------------|----------------|
+| Justera lagernivåer i lagerstället                                              | Globalt         |
+| Kontrollera lagertillgängligheten                                                   | Globalt         |
+| Korrekt information om lagerspårning                                            | Globalt         |
+| Inventering på ett lagerställe                                                    | Globalt         |
+| Skapa en ny layout för lagerställe                                                     | Globalt         |
+| Skapa och underhålla en lagerspärr                                         | Globalt         |
+| Skapa och bearbeta en avvikelse                                              | Globalt         |
+| Definiera lagerberäkningsprocesser                                               | Globalt         |
+| Initiera lagernivåer i lagerstället                                          | Globalt         |
+| Inspektera kvaliteten på varor                                                      | Globalt         |
+| Underhålla streckkodstyper                                                            | Globalt         |
+| Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal | Globalt         |
+| Ställ in översiktsprofiler för införsel                                                  | Globalt         |
+| Ställ in kvalitetsorder                                                             | Globalt         |
+| Spåra en artikel eller råmaterial                                                     | Globalt         |
+| Överför fysiskt lager i lagerstället                                  | Globalt         |
 
-
- 
 ### <a name="manufacturing"></a>Tillverkning
 
-|                                                               |                    |
-|---------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                  | **Land/region** |
-| Lägga till en beräkningspolicy för kanban-kvantitet till en kanban-regel     | Globalt             |
-| Batchorderlivscykeln för början till start                    | Globalt             |
-| Beräkna förslag på kanban-kvantitet                         | Globalt             |
-| Ändra kanban-regel för ett processjobb                         | Globalt             |
-| Konfigurera en arbetare med den mobila jobbenheten                | Globalt             |
-| Kopiera en formel                                                | Globalt             |
-| Skapa en formel genom att kopiera från en befintlig formel          | Globalt             |
-| Skapa en produktionsflödesversion                              | Globalt             |
-| Skapa en produktionsorder                                     | Globalt             |
-| Skapa kanban-regel för en försäljningsaktivitet                              | Globalt             |
-| Skapa en värdeström                                         | Globalt             |
-| Skapa aktivitetsrelation: Efterträdare                           | Globalt             |
-| Skapa en verksamhetsresurs                                 | Globalt             |
-| Skapa kanban-regler för fast kvantitet                            | Globalt             |
-| Skapa nya kanban-regler genom att kopiera befintliga kanban-regler  | Globalt             |
-| Skapa processaktiviteter för lean-tillverkning              | Globalt             |
-| Skapa resurskapaciteter                                  | Globalt             |
-| Skapa överföringsaktiviteter för lean-tillverkning             | Globalt             |
-| Skapa planeringsegenskaper för arbetstider                     | Globalt             |
-| Skapa operationstidsmallar                                 | Globalt             |
-| Definiera kalendrar och arbetsartiklar                            | Globalt             |
-| Definiera diskret tillverkningsresursgrupp                  | Globalt             |
-| Definiera arbetsgrupper för lean manufacturing                          | Globalt             |
-| Definiera resurssnåla schemagrupper                                   | Globalt             |
-| Definiera produktionsflödesmodeller                                 | Globalt             |
-| Definiera resurskunskaper                                  | Globalt             |
-| Aktivera löneprocessen för tid och närvaro                | Globalt             |
-| Avsluta en produktionsorder                                        | Globalt             |
-| Uppskatta en produktionsorder                                   | Globalt             |
-| Lean-pegging från försäljningsorder                                | Globalt             |
-| Hantera måttenhet                                        | Globalt             |
-| Flytta tidsplanerade kanban-jobb                                    | Globalt             |
-| Förbereda ett kanban-processjobb när materialen är tillgängliga     | Globalt             |
-| Förbereda ett kanban-processjobb när materialen inte är tillgängliga | Globalt             |
-| Frisläpp en produktionsorder                                    | Globalt             |
-| Ta bort ett kanban-jobb från tidsplanen                         | Globalt             |
-| Rapportera en produktionsorder som färdig                         | Globalt             |
-| Rapportera framsteg på en mobil jobbenhet                        | Globalt             |
-| Återställa kanban-jobbstatus                                      | Globalt             |
-| Schemalägg en produktionsorder                                   | Globalt             |
-| Tidsplanera kanban-jobb                                          | Globalt             |
-| Starta en produktionsorder                                      | Globalt             |
-| Överföra material med kanban-jobb                            | Globalt             |
-| Validera produktionsflöde och version                          | Globalt             |
+| BPM-rad                                                      | Land/region |
+|---------------------------------------------------------------|----------------|
+| Lägg till en beräkning av kanban-kvantitet i en kanban-regel     | Globalt         |
+| Batchorderlivscykeln för början till start                    | Globalt         |
+| Beräkna förslag på kanban-kvantitet                         | Globalt         |
+| Ändra kanban-regel för ett processjobb                         | Globalt         |
+| Konfigurera en arbetare med den mobila jobbenheten                | Globalt         |
+| Kopiera en formel                                                | Globalt         |
+| Skapa en formel genom att kopiera från en befintlig formel          | Globalt         |
+| Skapa en produktionsflödesversion                              | Globalt         |
+| Skapa en produktionsorder                                     | Globalt         |
+| Skapa kanban-regel för en försäljningsaktivitet                              | Globalt         |
+| Skapa en värdeström                                         | Globalt         |
+| Skapa aktivitetsrelation: Efterträdare                           | Globalt         |
+| Skapa en verksamhetsresurs                                 | Globalt         |
+| Skapa kanban-regler för fast kvantitet                            | Globalt         |
+| Skapa nya kanban-regler genom att kopiera befintliga kanban-regler  | Globalt         |
+| Skapa processaktiviteter för lean-tillverkning              | Globalt         |
+| Skapa resurskapaciteter                                  | Globalt         |
+| Skapa överföringsaktiviteter för lean-tillverkning             | Globalt         |
+| Skapa planeringsegenskaper för arbetstider                     | Globalt         |
+| Skapa operationstidsmallar                                 | Globalt         |
+| Definiera kalendrar och arbetsartiklar                            | Globalt         |
+| Definiera diskret tillverkningsresursgrupp                  | Globalt         |
+| Definiera arbetsgrupper för lean manufacturing                          | Globalt         |
+| Definiera resurssnåla schemagrupper                                   | Globalt         |
+| Definiera produktionsflödesmodeller                                 | Globalt         |
+| Definiera resurskunskaper                                  | Globalt         |
+| Aktivera löneprocessen för tid och närvaro                | Globalt         |
+| Avsluta en produktionsorder                                        | Globalt         |
+| Uppskatta en produktionsorder                                   | Globalt         |
+| Lean-pegging från försäljningsorder                                | Globalt         |
+| Hantera måttenhet                                        | Globalt         |
+| Flytta tidsplanerade kanban-jobb                                    | Globalt         |
+| Förbereda ett kanban-processjobb när materialen är tillgängliga     | Globalt         |
+| Förbereda ett kanban-processjobb när materialen inte är tillgängliga | Globalt         |
+| Frisläpp en produktionsorder                                    | Globalt         |
+| Ta bort ett kanban-jobb från tidsplanen                         | Globalt         |
+| Rapportera en produktionsorder som färdig                         | Globalt         |
+| Rapportera framsteg på en mobil jobbenhet                        | Globalt         |
+| Återställa kanban-jobbstatus                                      | Globalt         |
+| Schemalägg en produktionsorder                                   | Globalt         |
+| Tidsplanera kanban-jobb                                          | Globalt         |
+| Starta en produktionsorder                                      | Globalt         |
+| Överföra material med kanban-jobb                            | Globalt         |
+| Validera produktionsflöde och version                          | Globalt         |
 
-
- 
 ### <a name="master-planning"></a>Huvudplanering
 
-|                                                   |                    |
-|---------------------------------------------------|--------------------|
-| **BPM-rad**                                      | **Land/region** |
-| Definiera disponeringregler för artiklar                   | Globalt             |
-| Utveckla baslinjeprognos                         | Globalt             |
-| Skapa en begränsad plan                       | Globalt             |
-| Identifiera kritiskt material och leverantörskapacitet | Globalt             |
-| Ändra en efterfrågeprognos manuellt                 | Globalt             |
+| BPM-rad                                          | Land/region |
+|---------------------------------------------------|----------------|
+| Definiera disponeringsregler för artiklar                   | Globalt         |
+| Utveckla baslinjeprognos                         | Globalt         |
+| Skapa en begränsad plan                       | Globalt         |
+| Identifiera kritiskt material och leverantörskapacitet | Globalt         |
+| Ändra en efterfrågeprognos manuellt                 | Globalt         |
 
-
- 
 ### <a name="organization-administration"></a>Organisationsadministration
 
-|                                           |                    |
-|-------------------------------------------|--------------------|
-| **BPM-rad**                              | **Land/region** |
-| Ändra webbannonsen eller logotypen                 | Globalt             |
-| Konfigurera adressböcker                   | Globalt             |
-| Konfigurera den globala adressboken         | Globalt             |
-| Skapa en driftenhet                  | Globalt             |
-| Ställ in elektroniska signaturer              | Globalt             |
-| Ställa in nummerserier med hjälp av en guide | Globalt             |
+| BPM-rad                                  | Land/region |
+|-------------------------------------------|----------------|
+| Ändra webbannonsen eller logotypen                 | Globalt         |
+| Konfigurera adressböcker                   | Globalt         |
+| Konfigurera den globala adressboken         | Globalt         |
+| Skapa en driftenhet                  | Globalt         |
+| Ställ in elektroniska signaturer              | Globalt         |
+| Ställ in nummerserier med hjälp av en guide | Globalt         |
 
-
- 
 ### <a name="planning"></a>Planering
 
-|                        |                    |
-|------------------------|--------------------|
-| **BPM-rad**           | **Land/region** |
-| Fastställa tillgänglighet | Globalt             |
+| BPM-rad               | Land/region |
+|------------------------|----------------|
+| Fastställa tillgänglighet | Globalt         |
 
-
- 
 ### <a name="procurement-and-sourcing"></a>Anskaffning och källa
 
-|                                                                  |                    |
-|------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                     | **Land/region** |
-| Skapa ett inköpsavtal                                      | Globalt             |
-| Skapa en inköpsfrisläppningsorder från en inköpsavtal        | Globalt             |
-| Skapa en inköpsfrisläppningsorder när inköpsordern skapas | Globalt             |
-| Skapa en rekvisition för förbrukning                             | Globalt             |
-| Skapa ett leverantörskonto                                          | Globalt             |
-| Sök efter leverantörer                                               | Globalt             |
-| Ställa in en kategorihierarki för anskaffning                          | Globalt             |
+| BPM-rad                                                         | Land/region |
+|------------------------------------------------------------------|----------------|
+| Skapa ett nytt inköpsavtal                                      | Globalt         |
+| Skapa en inköpsfrisläppningsorder från ett inköpsavtal        | Globalt         |
+| Skapa en inköpsfrisläppningsorder när inköpsordern skapas | Globalt         |
+| Skapa en rekvisition för förbrukning                             | Globalt         |
+| Skapa ett leverantörskonto                                          | Globalt         |
+| Sök efter leverantörer                                               | Globalt         |
+| Ställ in en anskaffningskategorihierarki                          | Globalt         |
 
-
- 
 ### <a name="product-information-and-configuration"></a>Produktinformation och konfiguration
 
-|                                                       |                    |
-|-------------------------------------------------------|--------------------|
-| **BPM-rad**                                          | **Land/region** |
-| Lägga till en beräkning i en produktkonfigurationsmodell    | Globalt             |
-| Godkänna en modellversion för produktkonfiguration                 | Globalt             |
-| Slutföra grundläggande inställningar för en frisläppt produktmall | Globalt             |
-| Skapa en... \financial-dimensions\dimension-baserad produktmall               | Globalt             |
-| Skapa en produktklassificeringshierarki          | Globalt             |
-| Skapa en ny produktkonfigurationsmodell                  | Globalt             |
-| Skapa en produktmall.                               | Globalt             |
-| Skapa en uttrycksbegränsning                       | Globalt             |
-| Skapa batchattribut för en produkt                 | Globalt             |
-| Skapa konfigurationsregler                            | Globalt             |
-| Skapa ett nytt produktmodellkomponenter                       | Globalt             |
-| Definiera konfigurationsgrupper                           | Globalt             |
-| Definiera konfigurationsflöde                            | Globalt             |
-| Underhålla strukturlista för produktkonfigurationsmodellen        | Globalt             |
-| Underhåll flöde för produktkonfigurationsmodellen                    | Globalt             |
-| Hantera frisläppta produkter                              | Globalt             |
-| Frisläpp en... \financial-dimensions\dimension-baserad produktmall              | Globalt             |
-| Överför data för produktmodeller                      | Globalt             |
+| BPM-rad                                                           | Land/region |
+|--------------------------------------------------------------------|----------------|
+| Lägg till en beräkning i en produktkonfigurationsmodell                 | Globalt         |
+| Godkänna en modellversion för produktkonfiguration                              | Globalt         |
+| Slutföra grundläggande inställningar för en frisläppt produktmall              | Globalt         |
+| Skapa en ..\\financial-dimensions\\dimension-baserad produktmall  | Globalt         |
+| Skapa en produktklassificeringshierarki                       | Globalt         |
+| Skapa en ny produktkonfigurationsmodell                               | Globalt         |
+| Skapa en produktmall.                                            | Globalt         |
+| Skapa en uttrycksbegränsning                                    | Globalt         |
+| Skapa batchattribut för en produkt                              | Globalt         |
+| Skapa konfigurationsregler                                         | Globalt         |
+| Skapa ett nytt produktmodellkomponenter                                    | Globalt         |
+| Definiera konfigurationsgrupper                                        | Globalt         |
+| Definiera konfigurationsflöde                                         | Globalt         |
+| Underhålla strukturlista för produktkonfigurationsmodellen                     | Globalt         |
+| Underhåll flöde för produktkonfigurationsmodellen                                 | Globalt         |
+| Hantera frisläppta produkter                                           | Globalt         |
+| Frisläpp en ..\\financial-dimensions\\dimension-baserad produktmall | Globalt         |
+| Överför data för produktmodeller                                   | Globalt         |
 
-
- 
 ### <a name="public-sector"></a>Offentlig sektor
 
-|                                                                                         |                    |
-|-----------------------------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                                            | **Land/region** |
-| Lägga till en leverantörscertifieringtyp för offentliga sektorn                                  | Globalt             |
-| Kontrollera åtkomsten till inköpsavtal för offentliga sektorn                                 | Globalt             |
-| Skapa en faktureringsklassificering för offentliga sektorn                                       | Globalt             |
-| Skapa en faktureringskod för offentliga sektorn                                                 | Globalt             |
-| Skapa en utfästelse för att reservera budgetmedel till offentliga sektorn                           | Globalt             |
-| Skapa ett anpassat fält för en faktureringskod för offentliga sektorn                              | Globalt             |
-| Skapa en fondtyp för offentliga sektorn                                                    | Globalt             |
-| Skapa en engångsleverantör och faktura för offentliga sektorn                                  | Globalt             |
-| Skapa en preliminär budget för offentliga sektorn                                           | Globalt             |
-| Skapa en leverantörscertifieringtyp för offentliga sektorn                                    | Globalt             |
-| Skapa en avancerad redovisningspost för offentliga sektorn                                       | Globalt             |
-| Skapa en ursprunglig budget och sedan återföra preliminära budgetposter för offentliga sektorn | Globalt             |
-| Skapa och tilldela en handelspartnerskod för offentliga sektorn                              | Globalt             |
-| Skapa baksida och signatursidor för betalningsrapporter för offentliga sektorn                 | Globalt             |
-| Importera och skapa flera engångsleverantörer och fakturor för offentliga sektorn              | Globalt             |
-| Ställa in en härledd ekonomisk hierarki för offentliga sektorn                                  | Globalt             |
-| Ställa in en fond för offentliga sektorn                                                         | Globalt             |
-| Ställ in inköpsavtalsklassificeringar för offentlig sektor                             | Globalt             |
+| BPM-rad                                                                                | Land/region |
+|-----------------------------------------------------------------------------------------|----------------|
+| Lägga till en leverantörscertifieringtyp för offentliga sektorn                                  | Globalt         |
+| Kontrollera åtkomsten till inköpsavtal för offentliga sektorn                                 | Globalt         |
+| Skapa en faktureringsklassificering för offentliga sektorn                                       | Globalt         |
+| Skapa en faktureringskod för offentliga sektorn                                                 | Globalt         |
+| Skapa en utfästelse för att reservera budgetmedel till offentliga sektorn                           | Globalt         |
+| Skapa ett anpassat fält för en faktureringskod för offentliga sektorn                              | Globalt         |
+| Skapa en fondtyp för offentliga sektorn                                                    | Globalt         |
+| Skapa en engångsleverantör och faktura för offentliga sektorn                                  | Globalt         |
+| Skapa en preliminär budget för offentliga sektorn                                           | Globalt         |
+| Skapa en leverantörscertifieringtyp för offentliga sektorn                                    | Globalt         |
+| Skapa en avancerad redovisningspost för offentliga sektorn                                       | Globalt         |
+| Skapa en ursprunglig budget och sedan återföra preliminära budgetposter för offentliga sektorn | Globalt         |
+| Skapa och tilldela en handelspartnerskod för offentliga sektorn                              | Globalt         |
+| Skapa baksida och signatursidor för betalningsrapporter för offentliga sektorn                 | Globalt         |
+| Importera och skapa flera engångsleverantörer och fakturor för offentliga sektorn              | Globalt         |
+| Ställa in en härledd ekonomisk hierarki för offentliga sektorn                                  | Globalt         |
+| Ställa in en fond för offentliga sektorn                                                         | Globalt         |
+| Ställ in inköpsavtalsklassificeringar för offentlig sektor                             | Globalt         |
 
-
- 
 ### <a name="retail-and-commerce"></a>Butik och handel
 
-|                                                                                           |                    |
-|-------------------------------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                                              | **Land/region** |
-| Lägga till variantprodukter i inköpsorder med hjälp av variantvikter                              | Globalt             |
-| Baspris och handelsavtal                                                           | Globalt             |
-| Kategoriprissättningregler för att skapa handelsavtal                                         | Globalt             |
-| Konfigurera och köra jobb för att beräkna utdrag                                             | Globalt             |
-| Konfigurera och köra jobb för att bokföra utdrag                                                  | Globalt             |
-| Konfigurera kreditkortsbearbetning                                                          | Globalt             |
-| Konfigurera länkade produkter                                                                 | Globalt             |
-| Skapa en visuell kassaprofil.                                                               | Globalt             |
-| Skapa en produkt                                                                          | Globalt             |
-| Skapa en produktmall.                                                                   | Globalt             |
-| Skapa och associera en enhet                                                             | Globalt             |
-| Skapa och associera en maskinvarustation                                                   | Globalt             |
-| Skapa ekonomiska dimensioner för POS-register och konfigurera dimensionsvärden på register | Globalt             |
-| Skapa ekonomiska dimensioner för detaljhandelskanaler och konfigurera dimensionsvärden på butiker  | Globalt             |
-| Skapa online-kanal och definiera kanalattribut                                       | Globalt             |
-| Skapa kassabehörighetsgrupper                                                              | Globalt             |
-| Skapa produktpaket och använda i inköpsorder                                         | Globalt             |
-| Definiera kundtjänst och kanalattribut                                         | Globalt             |
-| Definiera kanalattribut                                                                 | Globalt             |
-| Definiera bonusprogram                                                                   | Globalt             |
-| Definiera förmånsbelöningspoäng                                                              | Globalt             |
-| Definiera bonusprogram                                                                    | Globalt             |
-| Utforma relationerna mellan organisationsenheter                                     | Globalt             |
-| Skapa och köra färdiga rapporter                                                       | Globalt             |
-| Hantera handelsrabatter för kunder                                                      | Globalt             |
-| Parameterkonfigurationer för butiksutdrag                                            | Globalt             |
-| Betalningskonfigurationer för butiksutdrag                                              | Globalt             |
-| Utföra självbetjäning för att hämta maskinvarustation                                         | Globalt             |
-| Bokföring av försäljningar och betalningar online                                                      | Globalt             |
-| Bearbeta justeringar av förmånsbelöningspoäng                                                  | Globalt             |
-| Skjut produkter från distributionscenter om du vill lagra med hjälp av centraliserad distribution                        | Globalt             |
-| Frisläpp en produkt/produktmall till juridiska personer                                        | Globalt             |
-| Butiksprisjusteringar                                                                  | Globalt             |
-| Butikskonfigurationer för butiksutdrag                                                | Globalt             |
+| BPM-rad                                                                                  | Land/region |
+|-------------------------------------------------------------------------------------------|----------------|
+| Lägga till variantprodukter i inköpsorder med hjälp av variantvikter                              | Globalt         |
+| Baspris och handelsavtal                                                           | Globalt         |
+| Kategoriprissättningregler för att skapa handelsavtal                                         | Globalt         |
+| Konfigurera och köra jobb för att beräkna utdrag                                             | Globalt         |
+| Konfigurera och köra jobb för att bokföra utdrag                                                  | Globalt         |
+| Konfigurera kreditkortsbearbetning                                                          | Globalt         |
+| Konfigurera länkade produkter                                                                 | Globalt         |
+| Skapa en visuell kassaprofil.                                                               | Globalt         |
+| Skapa en produkt                                                                          | Globalt         |
+| Skapa en produktmall.                                                                   | Globalt         |
+| Skapa och associera en enhet                                                             | Globalt         |
+| Skapa och associera en maskinvarustation                                                   | Globalt         |
+| Skapa ekonomiska dimensioner för POS-register och konfigurera dimensionsvärden på register | Globalt         |
+| Skapa ekonomiska dimensioner för detaljhandelskanaler och konfigurera dimensionsvärden på butiker  | Globalt         |
+| Skapa online-kanal och definiera kanalattribut                                       | Globalt         |
+| Skapa kassabehörighetsgrupper                                                              | Globalt         |
+| Skapa produktpaket och använda i inköpsorder                                         | Globalt         |
+| Definiera kundtjänst och kanalattribut                                         | Globalt         |
+| Definiera kanalattribut                                                                 | Globalt         |
+| Definiera bonusprogram                                                                   | Globalt         |
+| Definiera förmånsbelöningspoäng                                                              | Globalt         |
+| Definiera bonusprogram                                                                    | Globalt         |
+| Utforma relationerna mellan organisationsenheter                                     | Globalt         |
+| Skapa och köra färdiga rapporter                                                       | Globalt         |
+| Hantera handelsrabatter för kunder                                                      | Globalt         |
+| Parameterkonfigurationer för butiksutdrag                                            | Globalt         |
+| Betalningskonfigurationer för butiksutdrag                                              | Globalt         |
+| Utföra självbetjäning för att hämta maskinvarustation                                         | Globalt         |
+| Bokföring av försäljningar och betalningar online                                                      | Globalt         |
+| Bearbeta justeringar av förmånsbelöningspoäng                                                  | Globalt         |
+| Skjut produkter från distributionscenter om du vill lagra med hjälp av centraliserad distribution                        | Globalt         |
+| Frisläpp en produkt/produktmall till juridiska personer                                        | Globalt         |
+| Butiksprisjusteringar                                                                  | Globalt         |
+| Butikskonfigurationer för Retail-utdrag                                                | Globalt         |
 
-
- 
 ### <a name="sales"></a>Försäljning
 
-|                                            |                    |
-|--------------------------------------------|--------------------|
-| **BPM-rad**                               | **Land/region** |
-| Bekräfta försäljningsorder                       | Globalt             |
-| Skapa ett nytt handelsavtal               | Globalt             |
-| Skapa en inköpsorder från en försäljningsorder | Globalt             |
-| Skapa och redigera försäljningsofferter           | Globalt             |
-| Skapa leveransplaner                   | Globalt             |
-| Ange försäljningsavtal                     | Globalt             |
-| Uppfylla försäljningsavtal                   | Globalt             |
-| Skapa och bearbeta kundrabatter      | Globalt             |
-| Slå upp tillämpliga priser och rabatter    | Globalt             |
-| Masskapa försäljningsofferter               | Globalt             |
-| Bearbeta rabatter för betalning                | Globalt             |
-| Registrera försäljningsprovisioner                 | Globalt             |
-| Ställ in regler för försäljningsprovision              | Globalt             |
-| Skicka order som direktleveranser           | Globalt             |
-| Skicka försäljningsorder utan lagerstyrning      | Globalt             |
+| BPM-rad                                   | Land/region |
+|--------------------------------------------|----------------|
+| Bekräfta försäljningsorder                       | Globalt         |
+| Skapa ett nytt handelsavtal               | Globalt         |
+| Skapa en inköpsorder från en försäljningsorder | Globalt         |
+| Skapa och redigera försäljningsofferter           | Globalt         |
+| Skapa leveransplaner                   | Globalt         |
+| Ange försäljningsavtal                     | Globalt         |
+| Uppfylla försäljningsavtal                   | Globalt         |
+| Skapa och bearbeta kundrabatter      | Globalt         |
+| Slå upp tillämpliga priser och rabatter    | Globalt         |
+| Masskapa försäljningsofferter               | Globalt         |
+| Bearbeta rabatter för betalning                | Globalt         |
+| Registrera försäljningsprovisioner                 | Globalt         |
+| Ställ in regler för försäljningsprovision              | Globalt         |
+| Skicka order som direktleveranser           | Globalt         |
+| Skicka försäljningsorder utan lagerstyrning      | Globalt         |
 
-
- 
 ### <a name="sales-tax"></a>Moms
 
-|                                                    |                    |
-|----------------------------------------------------|--------------------|
-| **BPM-rad**                                       | **Land/region** |
-| Beräkna och justera moms på en leverantörsfaktura | Globalt             |
-| Skapa en momsbetalning                         | Globalt             |
-| Skapa momstransaktioner på dokument         | Globalt             |
-| Ställ in redovisningsbokföringsgrupper för moms         | Globalt             |
-| Ställ in momsmyndigheter                       | Globalt             |
-| Ställ in momskoder                             | Globalt             |
-| Ställa in momsgrupper och artikelmomsgrupper  | Globalt             |
-| Ställ in momsrapporteringskoder                   | Globalt             |
-| Ställ in momskvittningsperioder                | Globalt             |
-| Ställa in källskatt                             | Globalt             |
-| Visa bokförda momstransaktioner                 | Globalt             |
+| BPM-rad                                           | Land/region |
+|----------------------------------------------------|----------------|
+| Beräkna och justera moms på en leverantörsfaktura | Globalt         |
+| Skapa en momsbetalning                         | Globalt         |
+| Skapa momstransaktioner på dokument         | Globalt         |
+| Ställ in redovisningsbokföringsgrupper för moms         | Globalt         |
+| Ställ in momsmyndigheter                       | Globalt         |
+| Ställ in momskoder                             | Globalt         |
+| Ställa in momsgrupper och artikelmomsgrupper  | Globalt         |
+| Ställ in momsrapporteringskoder                   | Globalt         |
+| Ställ in momskvittningsperioder                | Globalt         |
+| Ställa in källskatt                             | Globalt         |
+| Visa bokförda momstransaktioner                 | Globalt         |
 
-
- 
 ### <a name="security"></a>Säkerhet
 
-|                                                         |                    |
-|---------------------------------------------------------|--------------------|
-| **BPM-rad**                                            | **Land/region** |
-| Skapa nya användare                                        | Globalt             |
-| Identifiera och lösa konflikter vid ansvarsfördelning | Globalt             |
-| Ställ in ansvarsfördelning                            | Globalt             |
+| BPM-rad                                                | Land/region |
+|---------------------------------------------------------|----------------|
+| Skapa nya användare                                        | Globalt         |
+| Identifiera och lösa konflikter vid ansvarsfördelning | Globalt         |
+| Ställ in ansvarsfördelning                            | Globalt         |
 
-
- 
 ### <a name="warehouse-and-transportation"></a>Lager- och transport
 
-|                                                                                   |                    |
-|-----------------------------------------------------------------------------------|--------------------|
-| **BPM-rad**                                                                      | **Land/region** |
-| Associera ett bränsleindex med ett transportföretag som ett tillägg                    | Globalt             |
-| Konfigurera platser på ett lagerställe med lagerstyrningssystem                                    | Globalt             |
-| Skapa en arbetsklass                                                               | Globalt             |
-| Definiera rullande inventering                                                             | Globalt             |
-| Aktivera utskrift av registreringsskylt                                               | Globalt             |
-| Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal | Globalt             |
-| Ställa in bränsleindex för transportföretag                                                       | Globalt             |
-| Ställ in ett platsdirektiv för inlagring av inköpsorder                           | Globalt             |
-| Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder       | Globalt             |
-| Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar                       | Globalt             |
-| Ställ in en arbetsmall för inköpsorder                                        | Globalt             |
-| Ställa in tilläggstilldelningar                                                    | Globalt             |
-| Ställ in dispositionskoder                                                         | Globalt             |
-| Ställa in hubbens tilläggsavgifter och tilläggsmallar                            | Globalt             |
-| Ställa in tariffhuvuden                                                               | Globalt             |
-| Konfigurera transportföretag                                                          | Globalt             |
-| Använd workbench för lastplanering för att planera laster och försändelser                       | Globalt             |
+| BPM-rad                                                                          | Land/region |
+|-----------------------------------------------------------------------------------|----------------|
+| Associera ett bränsleindex med ett transportföretag som ett tillägg                    | Globalt         |
+| Konfigurera platser på ett lagerställe med lagerstyrningssystem                                    | Globalt         |
+| Skapa en arbetsklass                                                               | Globalt         |
+| Definiera rullande inventering                                                             | Globalt         |
+| Aktivera utskrift av registreringsskylt                                               | Globalt         |
+| Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal | Globalt         |
+| Ställa in bränsleindex för transportföretag                                                       | Globalt         |
+| Ställ in ett platsdirektiv för inlagring av inköpsorder                           | Globalt         |
+| Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder       | Globalt         |
+| Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar                       | Globalt         |
+| Ställ in en arbetsmall för inköpsorder                                        | Globalt         |
+| Ställa in tilläggstilldelningar                                                    | Globalt         |
+| Ställ in dispositionskoder                                                         | Globalt         |
+| Ställa in hubbens tilläggsavgifter och tilläggsmallar                            | Globalt         |
+| Ställa in tariffhuvuden                                                               | Globalt         |
+| Konfigurera transportföretag                                                          | Globalt         |
+| Använd workbench för lastplanering för att planera laster och försändelser                       | Globalt         |
 
-
- 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Uppgiftsguider i (februari 2016) Komma igång-bibliotek
 
-|                                                    |                    |
-|----------------------------------------------------|--------------------|
-| **BPM-rad**                                       | **Land/region** |
-| Analysera redovisningsbalanser                            | Globalt             |
-| Skapa en frisläppt produkt för ett enskilt företag     | Globalt             |
-| Skapa och tidsplanera en produktionsorder             | Globalt             |
-| Effektiv marknadsföring                            | Globalt             |
-| Elektronisk rapportering                               | Globalt             |
-| Anställd self-service                              | Globalt             |
-| Hur du minskar dina dagar för utestående försäljning          | Globalt             |
-| Introduktion till lokaliseringsfunktioner i AX      | Globalt             |
-| Introduktion till landsspecifika funktioner för Japan | Japan              |
-| Hantera prissättning och kampanjer                      | Globalt             |
-| Självbetjäning för chef                               | Globalt             |
-| Projektöversikt                                  | Globalt             |
-| Ställa in och konfigurera kanaler                      | Globalt             |
+| BPM-rad                                           | Land/region |
+|----------------------------------------------------|----------------|
+| Analysera redovisningsbalanser                            | Globalt         |
+| Skapa en frisläppt produkt för ett enskilt företag     | Globalt         |
+| Skapa och tidsplanera en produktionsorder             | Globalt         |
+| Effektiv marknadsföring                            | Globalt         |
+| Elektronisk rapportering                               | Globalt         |
+| Anställd self-service                              | Globalt         |
+| Hur du minskar dina dagar för utestående försäljning          | Globalt         |
+| Introduktion till lokaliseringsfunktioner i AX      | Globalt         |
+| Introduktion till landsspecifika funktioner för Japan | Japan          |
+| Hantera prissättning och kampanjer                      | Globalt         |
+| Självbetjäning för chef                               | Globalt         |
+| Projektöversikt                                  | Globalt         |
+| Ställa in och konfigurera kanaler                      | Globalt         |
 
- 
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
-
-
-
 

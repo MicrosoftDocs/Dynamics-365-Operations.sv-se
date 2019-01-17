@@ -3,7 +3,7 @@ title: Anskaffning med LinkedIn-rekryterare
 description: "Det här avsnittet innehåller information om hur du använder maskininlärning för att få rekommendationer om jobb och jobbkandidater."
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc6bf25d303d7d8de8002a923a080b90dcfbeab
-ms.openlocfilehash: 106103e2c3d8f3d89aac5140174e5794da22536f
+ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
+ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 12/07/2018
 
 ---
 
@@ -83,7 +83,12 @@ När LinkedIn-rekryterarens funktioner har aktiverats av Attract Admin är den t
 
 Du kan visa kandidatens LinkedIn-profil i Attract. LinkedIn-widgeten visar kandidatens profil när ATS-informationen matchar LinkedIn-information för användarna.
 
-Om du vill visa en profil, gå till kandidatens profil från ett jobb eller talangpool. I kandidatprofilen väljer du fliken **LinkedIn** och profilwidgeten läses in. Genom att använda profilwidgeten, ange om detta är korrekt matchning. Om inte, hitta rätt person. Du kan också spara kandidaten till dina LinkedIn-rekryterarprojekt på den här sidan.
+Om du vill visa en profil, gå till kandidatens profil från ett jobb eller talangpool. I kandidatprofilen väljer du fliken **LinkedIn** och profilwidgeten läses in. Du kan också spara kandidaten till dina LinkedIn-rekryterarprojekt på den här sidan.
+1. Den sökandes profil visas om LinkedIn hittar en match baserat på e-post och LinkedIn medlems-ID (exakt träff). Användaren har fortfarande ett alternativ för att länka/ta bort länk till profilen.
+
+2. Om LinkedIn inte hittar kandidaten baserat på deras e-post eller medlems-ID, visas en lista över möjliga kandidatmatchningar baserat på sökande och användaren kan välja en av dem och länka profilen.  
+
+3. Om LinkedIn inte hittar dem utifrån namnet kommer den returnera att ingen matchning hittades.
 
 ### <a name="1-click-export"></a>1-klick exportera 
 
@@ -117,11 +122,14 @@ Genom att använda LinkedIn-rekryterare kan du följa upp om en kandidat har sö
 
 6.  Välj fliken **anteckningar** för att visa anteckningar som har hämtats för sökanden i Attract.
 
+> [!NOTE]
+> Kandidater och programdata synkroniseras inte med LinkedIn Recruiter om kandidaten inte har flyttats från fasen potentiell kandidat.
+
 ### <a name="inmail-history"></a>InMail-historik
 
 LinkedIn InMail-historik finns i åtkomst på kontraktnivå med LinkedIn-rekryteraren. Om den är aktiverad måste visa hela InMail-historiken med kandidaten. Du kan också se vilka andra från din organisation som har utbytt InMail med kandidaten, men du inte kan visa meddelanden mellan dem..
 
-För att historik för InMail, gå till kandidatens profil, gå till fliken **LinkedIn** och bläddra till slutet på sidan för att visa historik. Du kan endast visa InMail-historik om sökande har svarat på din begäran och valt att dela sin profil med dig i LinkedIn. Meddelanden från InMail synkroniseras med Attract varannan timme.
+För att historik för InMail, gå till kandidatens profil, gå till fliken **LinkedIn** och bläddra till slutet på sidan för att visa historik. Du kan visa InMail-historik om du har haft en diskussion med kandidaten. Meddelanden från InMail synkroniseras med Attract varannan timme.
 
 ### <a name="notes-history"></a>Anteckningshistorik 
 
@@ -131,7 +139,7 @@ För att historik för anteckningar, gå till kandidatens profil, gå till flike
 
 ### <a name="inmail-stub-profile"></a>InMail stub-profil
 
-LinkedIn InMail stub-historik finns i åtkomst på kontraktnivå med LinkedIn-rekryteraren. Om kandidater enas om att deras LinkedIn-profiler delas med alla användare i organisationen, kan du spåra kandidater i Attract och en ny kandidatpost skapas för varje kandidat.
+LinkedIn InMail stub-historik finns i åtkomst på kontraktnivå med LinkedIn-rekryteraren. Om kandidater enas om att deras LinkedIn-profiler delas med alla användare i organisationen, kan du spåra kandidater i Attract och en ny kandidatpost skapas för varje kandidat. Du kan visa kandidatens e-postadress om kandidaten redan finns i systemet med en e-postadress eller delat adressen med rekryteraren.
 
 Om du vill visa listan med kandidater, gå till **talangpooler** för att se en systemskapad LinkedIn talangpool. Den här talangpoolen innehåller listan av kandidater och deras stub-profiler som fås från LinkedIn och som visar kandidatens förnamn och efternamn. Kandidatens e-post-ID visas om kandidaten har delat sin e-postadress.
 

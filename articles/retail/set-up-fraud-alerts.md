@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 6cca9e5b606f298d000354f6aeb01fbe2c8f2141
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 13b6a18750e79a17c7f6034780922c64b12390e2
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -38,13 +38,13 @@ Det här avsnittet beskriver hur du ställer in kriterier och regler för att sp
 
 ## <a name="turning-on-the-fraud-check-feature"></a>Slå på funktionen för bedrägerikontroll
 
-Om du vill använda funktionen bedrägerikontroll måste du ange alternativet **aktivera slutförande av order** till **Ja** när kundtjänstkanalen är [definieras](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-order-processing-options). När ordern är klar aktiveras måste kundtjänstanvändare välja **komplett** på försäljningsordersidan för alla försäljningsorder som skapas. Slutföringsåtgärden gör att sidan **Sammanfattning av försäljningsorder** att öppnas. När användare skriver betalningsdata på sidan **Sammanfattning av försäljningsorder** kan de välja att **skicka** för att slutföra ordern. När ordern har skickats kommer funktionen bedrägerikontroll utlöses de regler som är aktiva i systemet verifieras automatiskt
+Om du vill använda funktionen bedrägerikontroll måste du ange alternativet **aktivera slutförande av order** till **Ja** när kundtjänstkanalen är [definieras](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). När ordern är klar aktiveras måste kundtjänstanvändare välja **komplett** på försäljningsordersidan för alla försäljningsorder som skapas. Slutföringsåtgärden gör att sidan **Sammanfattning av försäljningsorder** att öppnas. När användare skriver betalningsdata på sidan **Sammanfattning av försäljningsorder** kan de välja att **skicka** för att slutföra ordern. När ordern har skickats kommer funktionen bedrägerikontroll utlöses de regler som är aktiva i systemet verifieras automatiskt
 
-Kundtjänstanvändare kan även manuellt spärra försäljningsorder för bedrägerigranskning innan de väljer **skicka**. För att manuellt spärra en försäljningsorder, på sidan **Sammanfattning av försäljningsorder** väljer du **Spärra**\>**manuell bedrägerispärr**. Därefter uppmanas du att ange en kommentar som förklarar orsaken till att ordern spärrats. Kommentaren visas i workbench [order spärrar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) för att ge kontexten för den användare som granskar ordern som är spärrad för att bestämma om ordern ska frisläppas.
+Kundtjänstanvändare kan även manuellt spärra försäljningsorder för bedrägerigranskning innan de väljer **skicka**. För att manuellt spärra en försäljningsorder, på sidan **Sammanfattning av försäljningsorder** väljer du **Spärra**\>**manuell bedrägerispärr**. Därefter uppmanas du att ange en kommentar som förklarar orsaken till att ordern spärrats. Kommentaren visas i workbench [order spärrar](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) för att ge kontexten för den användare som granskar ordern som är spärrad för att bestämma om ordern ska frisläppas.
 
 Förutom att konfigurera alternativet **Aktivera slutförande av order** på kanalen måste du konfigurera funktionen för bedrägerikontroll i parametrarna för kundtjänst. Gå till **Retail**\>**kanalinställning**\>**inställning av kundtjänst**\>**parametrar för kundtjänst**. På sidan **parametrar för kundtjänst** på fliken **spärrar** anger du alternativet **bedrägerikontroll** till **Ja**.
 
-På fliken **spärr** bör du även definiera [spärrkoder](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) som ska kopplas till en order som är manuellt eller automatiskt spärrad för bedrägerigranskning. Ange spärrkoder i fälten **Manuell spärrkod för bedrägeri** och **Spärrkod för bedrägeri**. Det är praktiskt att skapa två unika spärrkoder så att användare som arbetar i spärrworkbench snabbt kan filtrera och skilja automatiska spärrar från manuella spärrar.
+På fliken **spärr** bör du även definiera [spärrkoder](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) som ska kopplas till en order som är manuellt eller automatiskt spärrad för bedrägerigranskning. Ange spärrkoder i fälten **Manuell spärrkod för bedrägeri** och **Spärrkod för bedrägeri**. Det är praktiskt att skapa två unika spärrkoder så att användare som arbetar i spärrworkbench snabbt kan filtrera och skilja automatiska spärrar från manuella spärrar.
 
 För att funktionen bedrägericheck ska fungera effektivt måste du också ange fältet **lägsta poäng**. Varje bedrägerivillkor och regler som definieras i systemet har ett poäng. När en försäljningsorder kontrolleras för bedrägeri, om en eller flera matchningar påträffas läggs poängen ihop för att ge ordern ett totalt bedrägeripoäng. Om totalt bedrägeripoäng för en order överstiger värdet i fältet **lägsta poäng** spärras ordern automatiskt. Du kan även använda andra resultatrelaterade fält på fliken **spärrar** för att ange poängen för e-post, telefonpoäng, postnummerpoäng och utökade postnummerpoäng. Om du inte anger poäng för någon av dessa statiska bedrägerikriterier när du definierar dem på sidan **Statiska bedrägeridata** kommer systemet att ge dem poäng med hjälp av standardpoängen som du anger på fliken **spärrar** på sidan **Parametrar för kundtjänst**.
 
@@ -68,5 +68,5 @@ Ordern har sparats, men flaggan **bearbeta inte** anges på den. Den här flagga
 
 Om du vill visa och hantera de order som är spärrade för granskning, gå till **Retail**\>**kunder**\>**Orderspärrar**. På sidan **Orderspärrar** markerar du en post i listan och klickar sedan på **Orderspärr** för att se en mer detaljerad vy som innehåller information om orsaken till spärren. På snabbfliken **bedrägeridetaljer** kan du se systematiskt bedrägerikriterie som befanns vara en matchning för ordern och poäng som har använts. Om ordern har spärrats manuellt, kan du granska eventuella kommentarer som angavs av användaren som spärrats ordern genom att titta på avsnittet **bedrägerianteckningar** på snabbfliken **anteckningar**.
 
-Mer information om hur du arbetar med spärra order, se [orderspärrar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds).
+Mer information om hur du arbetar med spärra order, se [orderspärrar](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
 

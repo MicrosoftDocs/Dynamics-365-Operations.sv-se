@@ -20,10 +20,10 @@ ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 41930e89a7cae5cdb84e728da47de3bc5de312ca
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -41,7 +41,7 @@ Exempel på de skärmlayouter som medföljer Retail demodata ger innehåll som �
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Beskrivning av en skärmlayout-ID
 
-För att hitta skärmlayouter i Retail, gå till **Butik** > **Kanalinställning** > **Butiksinställning** > **Butik** > **Skärmlayouter**.
+För att hitta skärmlayouter i Retail, gå till **Butik** \> **Kanalinställning** \> **Kassainställning** \> **Kassa** \> **Skärmlayouter**.
 
 ![Sidan skärmlayouter i Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,10 +107,8 @@ Följande tabell visar layoutstorlek för normal skärmupplösning.
 
 \*Dessa ytterligare layoutstorlekar är bara tillgängliga i Adventure Works och Fabrikam layouter.
 
-
->[!TIP]
-> Kassan väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Retail Modern POS (MOPS) eller Retail Cloud POS (CPOS), öppna sidan **inställningar** och titta i avsnittet **sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet i Retail genom att gå till **kanalinställning** > **kassainställningar** > **kassa** > **skärmlayouter**.
-
+> [!TIP]
+> Kassan väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Retail Modern POS (MOPS) eller Retail Cloud POS (CPOS), öppna sidan **inställningar** och titta i avsnittet **sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet i Retail genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
 
 ![Skärmlayouter och layoutlösningar/storlekar i Retail och kassa](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -126,10 +124,8 @@ Varje fiktivt företag är avsett för ett annat butikssegment och innehåller p
 | Fabrikam        | Houston  | Mode        | Grönt  | Ljus |
 | Contoso         | Boston   | Elektronik    | Röd    | Mörk  |
 
-
->[!NOTE]
+> [!NOTE]
 > Adventure Works och Fabrikam är två framstående varumärken. Contoso finns tillgänglig, men alla layouter har inte tillhandahållits.
-
 
 I följande illustrationer visas exempel på välkomstsidan och transaktionssidan för de tre fiktiva företagen.
 
@@ -153,28 +149,26 @@ I följande illustrationer visas exempel på välkomstsidan och transaktionssida
 
 Användare har angetts för de olika layouterna för skärmen. Med hjälp av tabellen nedan kan vara du få tillgång till skärmarna. Logga bara in med lämpligt operatörs-ID.
 
-| Företag         | Skärmlayout-id | Person          | Operatörs-ID           |
-|-----------------|------------------|---------------   |------------------------|
-| Adventure Works | A3MGR            | Butikschef    | 000154, 000137, 000073 |
-| Adventure Works | A3CSH            | Kassör          | 000150, 000175, 000165 |
-| Adventure Works | A3STK            | Ansvarig för lager      | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Butikschef    | 000160, 000168, 000163 |
-| Fabrikam        | F3CSH            | Kassör          | 000161, 000113, 000114 |
-| Fabrikam        | F3STK            | Ansvarig för lager      | 000164, 000112, 000123 |
-| Contoso         | C3MGR            | Butikschef    | 000100, 000111         |
-| Contoso         | C3CSH            | Kassör          | 000110, 000120         |
-| Contoso         | Inte tillämpligt   | Ansvarig för lager      | Inte tillämpligt         |
+| Företag         | Skärmlayout-id | Person       | Operatörs-ID           |
+|-----------------|------------------|---------------|------------------------|
+| Adventure Works | A3MGR            | Butikschef | 000154, 000137, 000073 |
+| Adventure Works | A3CSH            | Kassör       | 000150, 000175, 000165 |
+| Adventure Works | A3STK            | Ansvarig för lager   | 000155, 000181, 000152 |
+| Fabrikam        | F3MGR            | Butikschef | 000160, 000168, 000163 |
+| Fabrikam        | F3CSH            | Kassör       | 000161, 000113, 000114 |
+| Fabrikam        | F3STK            | Ansvarig för lager   | 000164, 000112, 000123 |
+| Contoso         | C3MGR            | Butikschef | 000100, 000111         |
+| Contoso         | C3CSH            | Kassör       | 000110, 000120         |
+| Contoso         | Inte tillämpligt   | Ansvarig för lager   | Inte tillämpligt         |
 
-
->[!TIP]
+> [!TIP]
 > För bästa resultat, aktivera ett register i motsvarande lagringsplats och ange vilket företag för den person som du tänker använda när du loggar in. På så sätt kan du garantera den visuella profilen och varumärkesanpassade bilder är justerade genom erfarenheten. Om du till exempel vill visa Fabrikam-layouten Fabrikam för en kassör, bör du aktivera en kassa i Houston-butiken.
-
 
 <!-- Hiding until the content page is available on CustomerSource -->
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail > Channel setup > POS setup > POS > Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
 
 <!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 

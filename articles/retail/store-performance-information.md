@@ -31,21 +31,19 @@ ms.lasthandoff: 11/03/2017
 
 [!include [banner](includes/banner.md)]
 
-Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Retail-data. 
+Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Retail-data.
 
 Som en del av Dynamics 365 for Retail kan användare studera butikens resultat i realtid på olika nivåer i organisationshierarkin under en vald period genom att öppna rapporten **Kanalöversikt** från en av följande platser:
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**
--   Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalöversiktsrapport**
+- Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**
+- Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**
+- Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalöversiktsrapport**
 
 Denna rapport ger en ögonblicksbild av följande sammanfattningar som en del av affären prestanda:
 
--   Sammanfattning av bruttoförsäljning
--   Översikt över betalningsmedelstyp
--   Momssammanfattning
--   Priset åsidosätter sammanfattning
--   Rabatter sammanfattning
-
-
+- Sammanfattning av bruttoförsäljning
+- Översikt över betalningsmedelstyp
+- Momssammanfattning
+- Priset åsidosätter sammanfattning
+- Rabatter sammanfattning
 

@@ -35,15 +35,13 @@ Du kan studera försäljningstrender och mönster i realtid i Microsoft Dynamics
 
 Som en del av Dynamics 365 for Retail kan användare studera försäljningstrender och -mönster, i realtid på olika nivåer i organisationshierarkin och för olika år, genom att öppna den medföljande rapporten **Kanalförsäljning efter år**. Du kan öppna den här rapporten från någon av följande platser:
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**
--   Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per år - rapport**
+- Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**
+- Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**
+- Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per år - rapport**
 
 Användare kan även studera försäljningstrender och mönster på timnivå i organisationshierarkin för en vald period genom att öppna den inbyggda rapporten **Kanalförsäljning per timme**. Du kan öppna den här rapporten från någon av följande platser:
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**
--   Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per timme - rapport**
-
-
+- Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**
+- Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**
+- Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per timme - rapport**
 

@@ -20,10 +20,10 @@ ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 26b03b6712c97b12e1221598de308813c7986179
+ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 01/04/2019
 
 ---
 
@@ -32,57 +32,67 @@ ms.lasthandoff: 08/09/2018
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> Vi tar bort den nuvarande versionen av tjänsten produktrekommendation eftersom vi designar om funktionen med en bättre algoritm och nya butiksorienterade funktioner. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). 
+> Vi tar bort den nuvarande versionen av tjänsten produktrekommendation eftersom vi designar om funktionen med en bättre algoritm och nya butiksorienterade funktioner. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
 Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 for Retail.
 
 Du kan visa produktrekommendationer på din kassaenhet när du använder Microsoft Dynamics 365 for Retail. *Rekommendationer* är artiklar som dina kunder kan vara intresserade av baserat på sina tidigare inköp, artiklar i sina önskelistor samt artiklar som andra kunder köpt online och i fysiska butiker. Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionsskärmen med skärmlayoutdesignern.
 
 ## <a name="open-layout-designer"></a>Öppna layoutdesignern
-1.  Navigera till **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Skärmlayout**.
-2.  Med snabbfiltret kan du snabbt hitta den skärm som du vill lägga till kontrollen i. Filtrera till exempel fältet **ID för skärmlayout** med hjälp av värdet "F2CP16:9M".
-3.  Hitta och markera önskad post i listan. Markera exempelvis "Namn: F2CP16:9M Skärmlayout-ID: F2CP16:9M".
-4.  Klicka på **Layoutdesigner**.
-5.  Följ instruktionerna för att starta layoutdesignern. När du uppmanas ange dina autentiseringsuppgifter, ange då samma autentiseringsuppgifter som användes när layoutdesignern startades från sidan **Skärmlayouter**.
-6.  När du loggar in visas en sida som liknar den nedanstående. Layouten är olika beroende på de anpassningar som gjorts för din butik.
 
-[![skärmlayout-bild-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Välj ett visningsalternativ
------------------------
+1. Navigera till **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Skärmlayout**.
+2. Med snabbfiltret kan du snabbt hitta den skärm som du vill lägga till kontrollen i. Filtrera till exempel fältet **ID för skärmlayout** med hjälp av värdet "F2CP16:9M".
+3. Hitta och markera önskad post i listan. Markera exempelvis "Namn: F2CP16:9M Skärmlayout-ID: F2CP16:9M".
+4. Klicka på **Layoutdesigner**.
+5. Följ instruktionerna för att starta layoutdesignern. När du uppmanas ange dina autentiseringsuppgifter, ange då samma autentiseringsuppgifter som användes när layoutdesignern startades från sidan **Skärmlayouter**.
+6. När du loggar in visas en sida som liknar den nedanstående. Layouten är olika beroende på de anpassningar som gjorts för din butik.
+
+    [![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+
+## <a name="choose-a-display-option"></a>Välj ett visningsalternativ
 
 Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som passar bäst för din butik, och följ sedan resten av anvisningarna för att avsluta kontrollinställningarna. De två alternativen är:
--   Rekommendationer visas alltid.
--   Fliken **Rekommendationer** visas i rutnätet till höger på skärmen.
 
-#### <a name="to-make-recommendations-always-visible"></a>För att alltid visa rekommendationer
+- Rekommendationer visas alltid.
+- Fliken **Rekommendationer** visas i rutnätet till höger på skärmen.
 
-1.  Minska höjden på detaljområdet för transaktionsrader så att denna är samma höjd som hos kundpanelen till vänster.[](./media/pic-2.png)[![skärmlayout-bild-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
-2.  Från menyn till vänster, dra och släpp rekommendationskontrollen mellan detaljområdet för transaktionsrad och knappsatsen längst ned i mitten längst på transaktionsskärmen. Ändra storlek på kontrollen så att den passar in i utrymmet.[](./media/pic-3.png)[![bildlayout-bild-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
-3.  Klick på **X** för att spara och stänga layoutdesignern.
-4.  I Dynamics 365 for Retail, navigera till **Butik** &gt; **Butiks-IT** &gt; **Fördelningsscheman**.
-5.  I listan väljer du **1090 Registers**.
-6.  Klicka på **Kör nu**.
+### <a name="make-recommendations-always-visible"></a>Gör så att rekommendationer alltid visas
 
-#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>För att lägga till en rekommendationsflik i knappsatsen till höger på skärmen
+1. Minska höjden på detaljområdet för transaktionsrader så att denna är samma höjd som hos kundpanelen till vänster.
 
-1.  Högerklicka i det tomma utrymmet under den sista fliken på knappsatsen till höger på sidan.
-2.  Klicka på **Anpassa**.[![bild-5](./media/pic-5.png)](./media/pic-5.png)
-3.  Klicka på **Ny flik**.
-4.  Hitta den nya fliken som du just skapade. Du kan behöva rulla nedåt.
-5.  I listrutan **Innehåll** väljer du **Rekommenderade produkter**. [![bild-6](./media/pic-6.png)](./media/pic-6.png)
-6.  I fältet **Etikett** anger du ett namn för rekommendationsfliken. Skriv till exempel ”Rekommenderade produkter”.
-7.  I fältet **Bild** väljer du den bild du vill visa i fliken.
-8.  Klicka på **OK**. Den nya fliken visas i knappsatsen.
-9.  Klick på **X** för att spara och stänga layoutdesignern.
+    [![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+
+2. Från menyn till vänster, dra och släpp rekommendationskontrollen mellan detaljområdet för transaktionsrad och knappsatsen längst ned i mitten längst på transaktionsskärmen. Ändra storlek på kontrollen så att den passar in i utrymmet.
+
+    [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+
+3. Klick på **X** för att spara och stänga layoutdesignern.
+4. I Dynamics 365 for Retail, navigera till **Butik** &gt; **Butiks-IT** &gt; **Fördelningsscheman**.
+5. I listan väljer du  **1090 Registers**.
+6. Klicka på **Kör nu**.
+
+### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Lägg till en rekommendationsflik i knappsatsen till höger på skärmen
+
+1. Högerklicka i det tomma utrymmet under den sista fliken på knappsatsen till höger på sidan.
+2. Klicka på **anpassa**.
+
+    [![bild-5](./media/pic-5.png)](./media/pic-5.png)
+
+3. Klicka på **Ny flik**.
+4. Hitta den nya fliken som du just skapade. Du kan behöva rulla nedåt.
+5. I listrutan **Innehåll** väljer du **Rekommenderade produkter**.
+
+    [![bild-6](./media/pic-6.png)](./media/pic-6.png)
+
+6. I fältet **Etikett** anger du ett namn för rekommendationsfliken. Skriv till exempel ”Rekommenderade produkter”.
+7. I fältet **Bild** väljer du den bild du vill visa i fliken.
+8. Klicka på **OK**. Den nya fliken visas i knappsatsen.
+9. Klick på **X** för att spara och stänga layoutdesignern.
 10. I Dynamics 365 for Retail, navigera till **Butik** &gt; **Butiks-IT** &gt; **Fördelningsscheman**.
-11. I listan väljer du **1090 Registers**.
+11. I listan väljer du  **1090 Registers**.
 12. Klicka på **Kör nu**.
 
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över anpassade produktrekommendationer](personalized-product-recommendations.md)
-
-
-
 

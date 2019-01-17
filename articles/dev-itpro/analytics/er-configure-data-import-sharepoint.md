@@ -3,13 +3,13 @@ title: "Konfigurera dataimporten från SharePoint"
 description: "Det här avsnittet beskriver hur du importerar data från Microsoft SharePoint."
 author: NickSelin
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 11/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
@@ -18,10 +18,10 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 9f23f73e9a98fc50c622255bf6ed027c41ec8010
+ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
+ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 12/08/2018
 
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurera dataimporten från SharePoint
@@ -40,65 +40,70 @@ För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst
     - Systemadministratör
 
 - Åtkomst till instansen på Microsoft SharePoint Server som konfigureras för användning med Finance and Operations.
-- ER-format och modellkonfigurationer för 1099-betalningar
+- ER-format och modellkonfigurationer för 1099-betalningar.
 
 ### <a name="create-required-er-configurations"></a>Skapa nödvändiga ER-konfigurationer
-Spela upp uppgiftsguiden **ER data från Microsoft Excel-fil** som ingår i affärsprocessen **7.5.4.3 hämta/utveckla IT-tjänst/lösningskomponenter (10677)**. Dessa uppgiftsguider förklarar processen med hur du utformar och använder ER-konfigurationer för att interaktivt importera leverantörstransaktioner från externa filer i Microsoft Excel. Mer information finns i [Tolka inkommande dokument i Microsoft Excel](parse-incoming-documents-excel.md). Slutligen kommer du att ha:
+Spela upp uppgiftsguiden **ER data från Microsoft Excel-fil** som ingår i affärsprocessen **7.5.4.3 hämta/utveckla IT-tjänst/lösningskomponenter (10677)**. Dessa uppgiftsguider förklarar processen med hur du utformar och använder ER-konfigurationer för att interaktivt importera leverantörstransaktioner från filer i Microsoft Excel. Mer information finns i [Tolka inkommande dokument i Microsoft Excel](parse-incoming-documents-excel.md). När du har slutfört uppgiftsguiderna måste du ställa in följande.
 
-- ER-konfigurationer:
+#### <a name="er-configurations"></a>ER-konfigurationer
 
-    - ER-modellkonfiguration **1099-betalningsmodell**
-    - ER-formatkonfiguration **Format för import av leverantörernas transaktioner från Excel**
+- ER-modellkonfiguration **1099-betalningsmodell**
+- ER-formatkonfiguration **Format för import av leverantörernas transaktioner från Excel**
 
-    [![ER-konfigurationer för import av data från SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![ER-konfigurationer för import av data från SharePoint](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
-- Exempel på den importerade filen för dataimport:
+#### <a name="sample-of-the-incoming-file-for-data-import"></a>Exempel på den importerade filen för dataimport
 
-    - Excel-filen **1099import-data.xlsx** med leverantörstransaktioner som ska importeras till Finance and Operations
+- Excel-filen **1099import-data.xlsx** med leverantörstransaktioner som ska importeras till Finance and Operations.
 
-    [![Exempelfilen i Microsoft Excel för att importera från SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)](./media/GERImportFromSharePoint-02-Excel.PNG)
-
+![Exempelfilen i Microsoft Excel för att importera från SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+    
 > [!NOTE]
 > Format för import av leverantörstransaktioner väljs som standardvärde för modellmappning. Därför om du kör en modellmappning av **1099-betalningsmodell** och den modellmappningen är av typen **till målet** kör modellmappningen det här formatet för att importera data från externa filer. Den använder sedan den data för att uppdatera programregister.
 
-## <a name="configure-document-management-parameters"></a>Konfigurera dokumenthanteringsparametrar
-1. På sidan **Dokumenthanteringsparametrar** konfigurerar du åtkomst till den SharePoint Server-instans som ska användas av det företag som du för närvarande är inloggad på. I det här exemplet är USMF företaget.
-2. Testa anslutningen till SharePoint Server-instansen för att kontrollera att du har åtkomst.
+## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurera åtkomst till SharePoint för lagring av filer
+Om du vill lagra elektroniska rapportfiler på en SharePoint-plats, måste du konfigurera åtkomst till SharePoint Server-instansen som används av det aktuella företaget. I det här exemplet är USMF företaget. Instruktioner finns i [Konfigurera SharePoint-lagring](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-    [![Dokumenthanteringsinställningar - SharePoint server](./media/GERImportFromSharePoint-03-SharePointSetup.png)](./media/GERImportFromSharePoint-03-SharePointSetup.png)
+1. Följ instruktionerna i [Konfigurera SharePoint-lagring](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+2. Öppna den konfigurerade SharePoint-siten.
+3. Skapa följande mappar där inkommande elektroniska rapportfiler kan lagras:
 
-3. Öppna den konfigurerade SharePoint-webbplatsen och skapa följande mappar där inkommande filer kan lagras:
+     - Filimportkälla (huvudsaklig) (exempel framgår av bilden nedan)
+     - Filimportkälla (alternativ)
 
-    - Filimportkälla (huvudsaklig)
-    - Filimportkälla (alternativ)
+    ![Filimportkälla (huvudsaklig)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
-    [![Dokumenthanteringsinställningar - SharePoint server](./media/GERImportFromSharePoint-04-SharePointFolder1.png)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+4. (Valfritt) Skapa följande mappar där inkommande filer kan lagras efter import. 
 
-    [![Dokumenthanteringsinställningar - SharePoint server](./media/GERImportFromSharePoint-05-SharePointFolder2.png)](./media/GERImportFromSharePoint-05-SharePointFolder2.png)
+    - Arkivera arkivmapp - den här mappen är för importerade filer.
+    - Mapp för filer med varning - den här mappen är för filer som importerades med en varning.
+    - Mapp för filer med fel - den här mappen är för filer som misslyckades med import.
 
-4. I Finance and Operations, på sidan **Dokumenttyper** skapar du följande dokumenttyper som kommer att användas för åtkomst till de SharePoint-mappar som du precis skapade:
+4. I Finance and Operations, gå till **Organisationsadministration > Dokumenthantering > Dokumenttyper**.
+5. Skapa följande dokumenttyper som ska användas för att komma åt SharePoint-mappar som du har skapat. Instruktioner finns i [Konfigurera dokumenttyper](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
 
-    - SP huvudsaklig
-    - SP alternativ
+|Dokumenttyp       | Grupp              | Plats      | SharePoint-mapp      |
+|--------------------|--------------------|---------------|------------------------|
+|SP huvudsaklig             |Fil                |SharePoint     |Filimportkälla (huvudsaklig)|
+|SP alternativ             |Fil                |SharePoint     |Filimportkälla (alternativ)|
+|SP-arkiv             |Fil                |SharePoint     |Arkivera arkivmapp|
+|SP-varning             |Fil                |SharePoint     |Mapp för filer med varning|
+|SP-fel             |Fil                |SharePoint     |Mapp för filer med fel|
 
-5. För skapade dokumenttyper, i fältet **grupp** anger du **fil** och i fältet **plats** anger du **SharePoint**. Ange sedan adressen till SharePoint-mappen:
-
-    - För dokumenttyp **SP huvudsaklig**: filimportkälla (huvudsaklig)
-    - För dokumenttyp **SP alternativ**: filimportkälla (alternativ)
-
-    [![SharePoint-inställning - ny dokumenttyp](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint-inställning - ny dokumenttyp](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Konfigurera ER källor för ER-format
 1. Klicka på **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektronisk rapporteringskälla**.
 2. På sidan **Elektronisk rapporteringskälla** kan du konfigurera källfilerna för dataimport genom att använda det konfigurerade ER-formatet.
 3. Ange en filnamnmask så att endast filer med filtillägget .xlsx importeras. Filnamnmasken är valfri och används endast när den har definierats. Du kan endast definiera en mask för varje ER-format.
-4. Markera båda SharePoint-mapparna som du skapade tidigare.
+4. Ändra **sortera filer före import** till **sortera inte**, om det finns många filer som ska importeras och ordningen för import är inte viktig
+5. Markera alla SharePoint-mapparna som du skapade tidigare.
 
     [![Inställning av ER-källfiler](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - *ER-källa* definieras för varje programföretag individuellt. Däremot delas *ER-konfigurationer* mellan flera företag.
-> - När du tar bort en inställning för ER-källan för ett ER-format tas även alla kopplade fillägen bort (se nedan).
+> - När du tar bort en inställning för ER-källan för ett ER-format tas även alla kopplade fillägen bort genom bekräftelse (se nedan).
 
 ## <a name="review-the-files-states-for-the-er-format"></a>Granska filtillstånden för ER-format
 1. På sidan **källa för elektronisk rapportering** väljer du **filtillstånd för källorna** för att granska innehållet i de konfigurerade filkällorna för det aktuella ER-formatet.
@@ -114,13 +119,13 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 
     [![SharePoint innehåll - Microsoft Excel-fil för import](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
-2. I Finance and Operations på sidan **Filtillstånd för källorna**, välj **Uppdatera**för att uppdatera sidan. Observera att Excel-filen som överfördes till SharePoint visades i det här formuläret med statusen **klar**. Följande statusvärden stöds för närvarande:
+2. I Finance and Operations på sidan **Filtillstånd för källorna**, välj **Uppdatera**för att uppdatera sidan. Observera att Excel-filen som överfördes till SharePoint visades på den här sidan med statusen **klar**. Följande statusvärden stöds för närvarande:
 
     - **Klar** - tilldelas automatiskt för varje ny fil i en SharePoint-mapp. Denna status innebär att filen är klar för import.
     - **Importera** - tilldelas automatiskt av en ER-rapport när filen låses av importprocessen för att förhindra dess användning av andra processer (om många av dem körs samtidigt).
     - **Importerad** - tilldelas automatiskt av en ER-rapport när filimporten är slutförd. Denna status innebär att den importerade filen har tagits bort från den konfigurerade filkällan (SharePoint-mapp).
     - **Misslyckad** - tilldelas automatiskt av en ER-rapport när filimporten är slutförd med fel eller undantag.
-    - **Spärrad** - tilldelas manuellt av användaren i formuläret. Denna status innebär att filen inte importeras just nu. Denna status kan användas för att skjuta upp importen av vissa filer.
+    - **Spärrad** - tilldelas manuellt av användaren på den här sidan. Denna status innebär att filen inte importeras just nu. Denna status kan användas för att skjuta upp importen av vissa filer.
 
     [![ER-fil anger sidan för valda källor](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
@@ -136,13 +141,9 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 
     [![Kör ER-modell-mappning](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
-4. Modellmappningen kan köras automatiskt i batchläge. I detta fall importeras varje gång som en batch kör detta ER-format, en enskild fil från konfigurerade filkällor. Använd följande kod för att implementera den här batchkörningen.
+4. Modellmappningen kan köras automatiskt i batchläge. I detta fall importeras varje gång som en batch kör detta ER-format, en enskild fil från konfigurerade filkällor.
 
-    ```
-    ERObjectsFactory::createMappingDestinationRunByImportFormatMappingId().run()
-    ```
-
-    När en fil har importerats från SharePoint-mappen raderas den från den mappen.
+    När en fil har importerats från SharePoint-mappen, har den tagits bort från mappen och flyttas till mappen för importerade filer eller till mappen för importerade filer med varningar. Annars flyttas den till mappen för misslyckade filer eller stannar kvar i den här mappen om mappen för misslyckade filer inte har konfigurerats. 
 
 5. Ange verifikations-ID som **V-00001** och välj sedan **OK**.
 
@@ -178,7 +179,7 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 8. Välj **kör** för att köra den ändrade ER-modellmappningen.
 9. Ange verifikations-ID som **V-00002** och välj sedan **OK**.
 
-    Observera att informationsloggen innehåller meddelandet som informerar som finns i SharePoint-mappfil innehåller felaktigt leverantörskonto och inte kan importeras.
+    Observera att informationsloggen innehåller meddelandet att det finns en fil i SharePoint-mappen som innehåller felaktigt leverantörskonto och inte kan importeras.
 
     [![Kör ER-modell-mappning](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
@@ -186,10 +187,9 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 
     [![ER-fil anger sidan för valda källor](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-    Avsnittet **Källoggar för importformatet** anger att importen har misslyckats och att filen fortfarande är i SharePoint-mappen (kryssrutan **Är borttagen** är inte markerad). Om du åtgärdar filen i SharePoint genom att lägga till rätt leverantörskod och ändrar status för en fil från **misslyckad** till **klar** i avsnittet **Källoggar för importformatet** kan du importera filen igen.
+   Avsnittet **Källoggar för importformatet** anger att importen har misslyckats och att filen är i SharePoint-mappen för filer med fel (kryssrutan **Är borttagen** är inte markerad). Om du vill åtgärda filen i SharePoint genom att lägga till rätt leverantörskod och flytta den till SharePoint-mappen för filernas importkälla (huvudsaklig) kan du importera filen igen.
 
-11. Granska SharePoint-mappen **Filimportkälla (huvudsaklig)**. Observera att Excel-filen som inte importeras fortfarande är i den här mappen.
-12. I Finance and Operations, välj **Leverantörsreskontra**\>**Periodiska uppgifter**\>**1099-skatt**\>**Leverantörskvittning för 1099-rapportering**, ange tillämpliga värden i **Från-datum** och **Till-datum** och markera **manuell 1099-transaktioner**.
+11. I Finance and Operations, välj **Leverantörsreskontra**\>**Periodiska uppgifter**\>**1099-skatt**\>**Leverantörskvittning för 1099-rapportering**, ange tillämpliga värden i **Från-datum** och **Till-datum** och markera **manuell 1099-transaktioner**.
 
     Endast transaktioner för verifikation V-00001 är tillgängliga. Inga transaktioner för verifikation V-00002 är tillgängliga även om felet för den senaste importerade transaktionen har hittats i Excel-filen.
 

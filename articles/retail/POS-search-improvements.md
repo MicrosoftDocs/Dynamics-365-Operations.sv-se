@@ -66,7 +66,7 @@ Upplevelsen av lokala produktsökningar har nu gjorts mer användarvänlig. Föl
 - Återförsäljare kan nu konfigurera produktsökningen så att denna visar sökförslag när användarna skriver produktnamn. En ny inställning för denna funktion finns i kassafunktionens profil, i en grupp som heter **Produktsökning**. Inställningen kallas **Visa sökförslag medan du skriver**. Denna funktion hjälper anställda att snabbt hitta den produkt som de söker efter, detta eftersom de inte behöver skriva hela namnet manuellt.
 - Sökalgoritmen för produkten söker nu också efter de sökta villkoren i produktens **Söknamn**-egenskap.
 
-![Produktförslag](./media/Productsuggestions.png "Produktförslag")
+    ![Produktförslag](./media/Productsuggestions.png "Produktförslag")
 
 ## <a name="customer-search"></a>Sök efter kund
 

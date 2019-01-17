@@ -35,21 +35,19 @@ Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Mic
 
 Som en del av Dynamics 365 for Retail kan användare övervaka prestanda för försäljning och marginaler i realtid på andra nivåer i organisationshierarkin för följande dimensioner:
 
--   Produkter
--   Kategorier
--   Rabatter
--   År som tidsperiod
--   Kassor/terminaler
--   Personal/anställda
--   Kunder
--   Driftenheter
+- Produkter
+- Kategorier
+- Rabatter
+- År som tidsperiod
+- Kassor/terminaler
+- Personal/anställda
+- Kunder
+- Driftenheter
 
 Dessutom kan två unika rapporter, som används för strukturering av det hierarkiska rutnätet låta användare övervaka försäljning och marginalprestanda genom att detaljgranska från toppkategorinoden till enskilda lövnoder för kategorin i produktkategorihierarkin för butiken. Användarna kan också gå ned från den översta driftenheten till en enskild kanal i organisationshierarkin som har definierats som standardorganisationshierarki för hierarkiändamål för butiksrapportering. Du kan öppna rapporterna från någon av följande platser:
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**
--   Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
--   Arbetsytan **Pris- och rabatthantering** &gt; **Butik** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
-
-
+- Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**
+- Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
+- Arbetsytan **Pris- och rabatthantering** &gt; **Butik** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
+- Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
 

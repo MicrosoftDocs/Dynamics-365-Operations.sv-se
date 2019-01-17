@@ -59,4 +59,3 @@ Du kan använda den här nya förbättrade strukturen för produktegenskaper fö
 
 ![Dialogrutan Uppdatera produkter](media/NewUpdateProductsEnhancedView.PNG)
 
-
