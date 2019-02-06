@@ -35,8 +35,10 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 2. Klicka på **Rapporteringskonfiguration**.
 3. I trädet väljer du **Betalningar (förenklad modell)**.
 4. Klicka på **Skapa konfiguration** om du vill öppna dialogrutan.
+
  > [!NOTE]
  > Om du inte ser **Skapa konfiguration** måste du aktivera designläge på sidan **Elektronisk rapportering parametrar**. 
+ 
 5. I fältet **Nytt** anger du **Format som baseras på datamodellen PaymentModel**.
 6. I fältet **Namn**, ange **BACS (fiktivt UK)**.
 7. I fältet **Beskrivning** ange **BACS-leverantörsbetalningsformat (fiktivt UK)**.
@@ -44,6 +46,7 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
     * Ett visst format för elektroniska dokument kan definieras. Lämna det här fältet tomt om du vill välja ett format vid körning.  
 8. I fältet **Definition av datamodell** ange eller välj ett värde.
 9. Klicka på **Skapa konfiguration**. En ny konfiguration har skapats. Utkastversionen kan användas för att lagra designformatet för att hantera elektroniska dokument.  
+
  > [!NOTE]
  > Om du inte ser **Skapa konfiguration** måste du aktivera designläge på sidan **Elektronisk rapportering parametrar**.
 
