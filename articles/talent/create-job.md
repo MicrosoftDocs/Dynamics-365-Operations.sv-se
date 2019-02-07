@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
+ms.sourcegitcommit: 901ab6e309754338925c34c2cbecb3b83a0b0452
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 02/07/2019
 
 ---
 
@@ -30,7 +30,6 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 <span data-ttu-id="98dbb-104">Det här avsnittet beskriver begreppsmässiga element som ett projekt kan innehålla och ger exempel på hur du kan använda dessa objekt inom din organisation.</span><span class="sxs-lookup"><span data-stu-id="98dbb-104">This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization.</span></span> 
 
@@ -41,7 +40,7 @@ ms.lasthandoff: 08/09/2018
 ## <a name="job-titles"></a><span data-ttu-id="98dbb-115">jobbtitlar</span><span class="sxs-lookup"><span data-stu-id="98dbb-115">Job titles</span></span>
 <span data-ttu-id="98dbb-116">Innan du skapar jobb måste du ställa in titlar för jobben.</span><span class="sxs-lookup"><span data-stu-id="98dbb-116">Before you create jobs, you must set up titles for those jobs.</span></span> <span data-ttu-id="98dbb-117">Befattningar ärver jobbtitlar från jobben som befattningarna är kopplade till.</span><span class="sxs-lookup"><span data-stu-id="98dbb-117">Positions inherit job titles from the jobs that the positions are associated with.</span></span> 
 
-<span data-ttu-id="98dbb-118">Underhåll jobbtitlar med hjälp av sidan **Titlar**, som du kan öppna genom att använda sökfunktionen.</span><span class="sxs-lookup"><span data-stu-id="98dbb-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="98dbb-119">På sidan **Titlar** anger du de rubriker som du vill använda för dina jobb.</span><span class="sxs-lookup"><span data-stu-id="98dbb-119">On the **Titles **page, enter the titles that you plan to use for your jobs.</span></span>
+<span data-ttu-id="98dbb-118">Underhåll jobbtitlar med hjälp av sidan **Titlar**, som du kan öppna genom att använda sökfunktionen.</span><span class="sxs-lookup"><span data-stu-id="98dbb-118">Maintain job titles using the **Titles** page, which you can open by using the Search function.</span></span> <span data-ttu-id="98dbb-119">På sidan **Titlar** anger du de rubriker som du vill använda för dina jobb.</span><span class="sxs-lookup"><span data-stu-id="98dbb-119">On the \*\*Titles \*\*page, enter the titles that you plan to use for your jobs.</span></span>
 
 ## <a name="job-types"></a><span data-ttu-id="98dbb-120">Jobbtyper</span><span class="sxs-lookup"><span data-stu-id="98dbb-120">Job types</span></span>
 <span data-ttu-id="98dbb-121">Du använder jobbtyper för att gruppera liknande jobb i kategorier.</span><span class="sxs-lookup"><span data-stu-id="98dbb-121">You use job types to group similar jobs into categories.</span></span> <span data-ttu-id="98dbb-122">Jobbtyper krävs inte.</span><span class="sxs-lookup"><span data-stu-id="98dbb-122">Job types aren't required.</span></span> <span data-ttu-id="98dbb-123">Om du tänker använda jobbtyper när du ställer in berättiganderegler för kompensationshantering bör du ställa in jobbtyper innan du ställer in jobb.</span><span class="sxs-lookup"><span data-stu-id="98dbb-123">However, if you plan to use job types when you set up eligibility rules for compensation management, you should set up job types before you set up jobs.</span></span> <span data-ttu-id="98dbb-124">Några exempel på jobbtyper är heltid och deltid, eller lön och timpenning.</span><span class="sxs-lookup"><span data-stu-id="98dbb-124">Some examples of job types are full-time and part-time, or salary and hourly pay.</span></span> <span data-ttu-id="98dbb-125">Du kan underhålla jobbtyper med hjälp av sidan **Jobbtyper**.</span><span class="sxs-lookup"><span data-stu-id="98dbb-125">You maintain job types by using the **Job types** page.</span></span> <span data-ttu-id="98dbb-126">På sidan **Jobbtyper** anger du ett namn och en kort beskrivning för jobbtypen.</span><span class="sxs-lookup"><span data-stu-id="98dbb-126">On the **Job types** page, enter a name and a brief description for the job type.</span></span> <span data-ttu-id="98dbb-127">I fältet **Befrielsestatus** väljer du ett av följande alternativ för att ange befrielsestatusen Fair Labor Standards Act (FLSA) befrielsestatus för jobb som har den här jobbtypen:</span><span class="sxs-lookup"><span data-stu-id="98dbb-127">In the **Exempt status** field, select one of the following options to indicate the Fair Labor Standards Act (FLSA) exempt status of jobs that have this job type:</span></span>
