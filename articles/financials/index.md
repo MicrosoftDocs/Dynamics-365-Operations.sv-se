@@ -1,13 +1,13 @@
 ---
 title: Startsidan Ekonomisk styrning
-description: "Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,69 +17,56 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 437c9ba7142dadcb49c9255b119586598511453d
+ms.sourcegitcommit: cbc5a4f0d752d4f147fe269e4d7a2460f772c95b
 ms.translationtype: HT
-ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
-ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "307950"
 ---
-
-# <a name="financial-management-home-page"></a><span data-ttu-id="3c115-103">Startsidan Ekonomisk styrning</span><span class="sxs-lookup"><span data-stu-id="3c115-103">Financial management home page</span></span>
+# <a name="financial-management-home-page"></a><span data-ttu-id="f39fb-103">Startsidan Ekonomisk styrning</span><span class="sxs-lookup"><span data-stu-id="f39fb-103">Financial management home page</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="3c115-104">Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="3c115-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+<span data-ttu-id="f39fb-104">Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f39fb-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-<span data-ttu-id="3c115-105">Välj ett funktionsområde för att läsa mer om det.</span><span class="sxs-lookup"><span data-stu-id="3c115-105">Select a feature area to learn more about it.</span></span>
+<span data-ttu-id="f39fb-105">Välj ett funktionsområde för att läsa mer om det.</span><span class="sxs-lookup"><span data-stu-id="f39fb-105">Select a feature area to learn more about it.</span></span>
 
 :::row:::
     :::column:::
-        <span data-ttu-id="3c115-106">- [Leverantörsreskontra](accounts-payable/accounts-payable.md) 
-        - [Kundreskontra](accounts-receivable/accounts-receivable.md)
-        - [Budgetering](budgeting/budgeting-overview.md) 
-        - [Kassa- och bankhantering](cash-bank-management/cash-bank-management.md)
-        - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md)</span><span class="sxs-lookup"><span data-stu-id="3c115-106">- [Accounts payable](accounts-payable/accounts-payable.md) 
-        - [Accounts receivable](accounts-receivable/accounts-receivable.md)
-        - [Budgeting](budgeting/budgeting-overview.md) 
-        - [Cash and bank management](cash-bank-management/cash-bank-management.md)
-        - [Cost accounting](cost-accounting/cost-accounting-home-page.md)</span></span>
+        - [<span data-ttu-id="f39fb-106">Leverantörsreskontra</span><span class="sxs-lookup"><span data-stu-id="f39fb-106">Accounts payable</span></span>](accounts-payable/accounts-payable.md) 
+        - [<span data-ttu-id="f39fb-107">Kundreskontra</span><span class="sxs-lookup"><span data-stu-id="f39fb-107">Accounts receivable</span></span>](accounts-receivable/accounts-receivable.md)
+        - [<span data-ttu-id="f39fb-108">Budgetering</span><span class="sxs-lookup"><span data-stu-id="f39fb-108">Budgeting</span></span>](budgeting/budgeting-overview.md) 
+        - [<span data-ttu-id="f39fb-109">Kassa- och bankhantering</span><span class="sxs-lookup"><span data-stu-id="f39fb-109">Cash and bank management</span></span>](cash-bank-management/cash-bank-management.md)
+        - [<span data-ttu-id="f39fb-110">Kostnadsredovisning</span><span class="sxs-lookup"><span data-stu-id="f39fb-110">Cost accounting</span></span>](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        <span data-ttu-id="3c115-107">- [Utgiftshantering](expense-management/expense-management.md)
-        - [Ekonomisk rapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
-        - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
-        - [Redovisning](general-ledger/general-ledger.md) 
-        - [Projektledning](project-management/overview-project-management-accounting.md)
-        - [Offentlig sektor](public-sector/public-sector-functionality.md)</span><span class="sxs-lookup"><span data-stu-id="3c115-107">- [Expense management](expense-management/expense-management.md)
-        - [Financial reporting](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
-        - [Fixed assets](fixed-assets/fixed-assets.md)
-        - [General ledger](general-ledger/general-ledger.md) 
-        - [Project management](project-management/overview-project-management-accounting.md)
-        - [Public sector](public-sector/public-sector-functionality.md)</span></span> 
+        - [<span data-ttu-id="f39fb-111">Utläggshantering</span><span class="sxs-lookup"><span data-stu-id="f39fb-111">Expense management</span></span>](expense-management/expense-management.md)
+        - [<span data-ttu-id="f39fb-112">Ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="f39fb-112">Financial reporting</span></span>](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
+        - [<span data-ttu-id="f39fb-113">Anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="f39fb-113">Fixed assets</span></span>](fixed-assets/fixed-assets.md)
+        - [<span data-ttu-id="f39fb-114">Redovisning</span><span class="sxs-lookup"><span data-stu-id="f39fb-114">General ledger</span></span>](general-ledger/general-ledger.md) 
+        - [<span data-ttu-id="f39fb-115">Projekthantering</span><span class="sxs-lookup"><span data-stu-id="f39fb-115">Project management</span></span>](project-management/overview-project-management-accounting.md)
+        - [<span data-ttu-id="f39fb-116">Offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="f39fb-116">Public sector</span></span>](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
 
 
-## <a name="additional-resources"></a><span data-ttu-id="3c115-108">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="3c115-108">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="f39fb-117">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="f39fb-117">Additional resources</span></span>
 
-### <a name="blogs"></a><span data-ttu-id="3c115-109">Bloggar</span><span class="sxs-lookup"><span data-stu-id="3c115-109">Blogs</span></span>
+### <a name="blogs"></a><span data-ttu-id="f39fb-118">Bloggar</span><span class="sxs-lookup"><span data-stu-id="f39fb-118">Blogs</span></span>
 
-<span data-ttu-id="3c115-110">Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).</span><span class="sxs-lookup"><span data-stu-id="3c115-110">You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).</span></span>
+- [<span data-ttu-id="f39fb-119">Microsoft Dynamics 365-blogg</span><span class="sxs-lookup"><span data-stu-id="f39fb-119">Microsoft Dynamics 365 blog</span></span>](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
+- [<span data-ttu-id="f39fb-120">Financials-bloggen</span><span class="sxs-lookup"><span data-stu-id="f39fb-120">Financials blog</span></span>](https://community.dynamics.com/365/financeandoperations/b/financials) 
+- [<span data-ttu-id="f39fb-121">Bloggen Microsoft Dynamics Operations Partner Community</span><span class="sxs-lookup"><span data-stu-id="f39fb-121">Microsoft Dynamics Operations Partner Community Blog</span></span>](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
 
-<span data-ttu-id="3c115-111">Det finns många inlägg om ekonomisk styrning i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/).</span><span class="sxs-lookup"><span data-stu-id="3c115-111">There are many posts about financial management on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/).</span></span> <span data-ttu-id="3c115-112">En del av inläggen skrevs för en äldre version av produkten, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.</span><span class="sxs-lookup"><span data-stu-id="3c115-112">Although some of these posts were written for an older version of the product, the same concepts still apply, and the procedures are also similar in the current version.</span></span>
+### <a name="task-guides"></a><span data-ttu-id="f39fb-122">Uppgiftsguider</span><span class="sxs-lookup"><span data-stu-id="f39fb-122">Task guides</span></span>
+<span data-ttu-id="f39fb-123">Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f39fb-123">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="f39fb-124">Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.</span><span class="sxs-lookup"><span data-stu-id="f39fb-124">To access task guides, click the Help button on any page.</span></span>
 
-<span data-ttu-id="3c115-113">I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics Partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="3c115-113">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
+### <a name="videos"></a><span data-ttu-id="f39fb-125">Videoklipp</span><span class="sxs-lookup"><span data-stu-id="f39fb-125">Videos</span></span>
 
-### <a name="task-guides"></a><span data-ttu-id="3c115-114">Uppgiftsguider</span><span class="sxs-lookup"><span data-stu-id="3c115-114">Task guides</span></span>
-<span data-ttu-id="3c115-115">Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="3c115-115">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="3c115-116">Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.</span><span class="sxs-lookup"><span data-stu-id="3c115-116">To access task guides, click the Help button on any page.</span></span>
+<span data-ttu-id="f39fb-126">Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="f39fb-126">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
-### <a name="videos"></a><span data-ttu-id="3c115-117">Videoklipp</span><span class="sxs-lookup"><span data-stu-id="3c115-117">Videos</span></span>
+### <a name="countryregion-functionality"></a><span data-ttu-id="f39fb-127">Funktionsland/-region</span><span class="sxs-lookup"><span data-stu-id="f39fb-127">Country/region functionality</span></span>
 
-<span data-ttu-id="3c115-118">Ta en titt på instruktionsfilmerna som finns på [kanalen Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="3c115-118">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
-
-### <a name="countryregion-functionality"></a><span data-ttu-id="3c115-119">Funktionsland/-region</span><span class="sxs-lookup"><span data-stu-id="3c115-119">Country/region functionality</span></span>
-
-<span data-ttu-id="3c115-120">Regleringar för land/region påverkar momsinställningarna och andra områden inom ekonomisk styrning.</span><span class="sxs-lookup"><span data-stu-id="3c115-120">Country/region regulations affect tax setup and other areas of financial management.</span></span> <span data-ttu-id="3c115-121">Mer information om lands- och regionspecifika funktioner finns i avsnittet [Lokaliserings- och regelfunktioner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i hjälpinnehållet.</span><span class="sxs-lookup"><span data-stu-id="3c115-121">Refer to the [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) section of our help content to learn about country/region-specific functionality.</span></span>
-
+<span data-ttu-id="f39fb-128">Regleringar för land/region påverkar momsinställningarna och andra områden inom ekonomisk styrning.</span><span class="sxs-lookup"><span data-stu-id="f39fb-128">Country/region regulations affect tax setup and other areas of financial management.</span></span> <span data-ttu-id="f39fb-129">Mer information om lands- och regionspecifika funktioner finns i avsnittet [Lokaliserings- och regelfunktioner](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) i hjälpinnehållet.</span><span class="sxs-lookup"><span data-stu-id="f39fb-129">Refer to the [Localization and regulatory features](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) section of our help content to learn about country/region-specific functionality.</span></span>
 
