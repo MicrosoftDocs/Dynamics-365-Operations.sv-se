@@ -1,13 +1,13 @@
 ---
-title: "Kopiera leverantörer genom att använda delade nummerserier"
-description: "Det här avsnittet beskriver hur du använder delade nummerserier för att kopiera en leverantör till en annan juridisk person men behålla samma leverantörs-ID."
+title: Kopiera leverantörer genom att använda delade nummerserier
+description: Det här avsnittet beskriver hur du använder delade nummerserier för att kopiera en leverantör till en annan juridisk person men behålla samma leverantörs-ID.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302919"
 ---
-
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiera leverantörer genom att använda delade nummerserier
 
 [!include [banner](../includes/banner.md)]
@@ -66,4 +65,3 @@ Du kan även kopiera leverantörer med hjälp av sökfunktionen för momsregistr
 
 1. Alternativet **Kopiera leverantör** visas. Standardvärdet för det här alternativet är **Nej**. Om du vill kopiera leverantören till den aktuella juridiska personen väljer du alternativet **Ja**.
 2. Välj **Välj**. Den nya leverantören skapas.
-

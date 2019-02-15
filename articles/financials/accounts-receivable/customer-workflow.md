@@ -1,13 +1,13 @@
 ---
-title: "Kundarbetsflöde"
-description: "Det här avsnittet innehåller information om kundarbetsflödet. Du ändrar specifika fält för en kund och skickar sedan ändringarna för godkännande via arbetsflödet innan de läggs till för kunden."
+title: Kundarbetsflöde
+description: Det här avsnittet innehåller information om kundarbetsflödet. Du ändrar specifika fält för en kund och skickar sedan ändringarna för godkännande via arbetsflödet innan de läggs till för kunden.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 1b0e1621b256e6bbb42f97134b87dd65fa146193
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302901"
 ---
-
 # <a name="customer-workflow"></a>Kundarbetsflöde
 
 [!include [banner](../includes/banner.md)]
@@ -62,4 +61,3 @@ När du har minst en föreslagen ändring visas två extra menyer i åtgärdsfö
     Sidans status ändras till **Ändringar som väntar på godkännande**.
 
 Arbetsflödet följer den vanliga arbetsflödesprocessen i Finance and Operations. Godkännaren dirigeras till sidan **Kund** där han eller hon kan granska ändringarna på sidan **Föreslagna ändringar** och sedan välja **Arbetsflöde \> Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.
-

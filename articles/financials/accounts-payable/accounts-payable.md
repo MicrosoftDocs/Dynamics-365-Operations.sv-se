@@ -1,13 +1,13 @@
 ---
-title: "Startsida för Leverantörsreskontra"
-description: "Det här ämnet ger en översikt över leverantörsreskontra."
+title: Startsida för Leverantörsreskontra
+description: Det här ämnet ger en översikt över leverantörsreskontra.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7bc09cbd108949b37ea1b2207fc3e0c6961abf4b
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302895"
 ---
-
 # <a name="accounts-payable-home-page"></a>Startsida för Leverantörsreskontra
 
 [!include [banner](../includes/banner.md)]
@@ -132,15 +131,14 @@ Det finns åsikter, nyheter och annan information om leverantörsreskontra och a
 
 Det finns många inlägg om leverantörsreskontra i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). En del av inläggen skrevs för den föregående versionen av leverantörsreskontra, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics Partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
 
 #### <a name="videos"></a>Videoklipp
 
-Ta en titt på instruktionsfilmerna som finns på [YouTube-kanalen för Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 
 

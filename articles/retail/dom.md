@@ -1,29 +1,29 @@
 ---
-title: "Fördelad orderhantering (DOM)"
-description: "I detta avsnitt beskrivs funktionen fördelad orderhantering (DOM) i Microsoft Dynamics 365 for Retail."
+title: Fördelad orderhantering (DOM)
+description: I detta avsnitt beskrivs funktionen fördelad orderhantering (DOM) i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/15/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302905"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -61,10 +61,10 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
     - **Radie för lokal butiksregion** – Ange ett värde. Detta fält bestämmer hur platser grupperas och anses vara desamma vad avstånd beträffar. Om du t.ex. väljer **100** anses alla butiker och distributionscenter inom en radie av 100 miles från uppfyllelseadressen vara likvärdig i fråga om avstånd.
     - **Problemlösartyp** – Välj ett värde. Två typer av problemlösare medföljer Retail: **Produktionproblemlösare** och **Förenklad problemlösare**. **Produktionsproblemlösare** måste väljas för alla maskiner som kör DOM (dvs. alla servrar som ingår i DOMBatch-gruppen). Produktionsproblemlösare kräver en särskild licensnyckel som normalt licensieras och används i produktionsmiljö. I andra miljöer måste denna licensnyckel börja användas manuellt. Använd licensnyckeln manuellt på detta sätt:
 
-        1. Öppna biblioteket Gemensamma tillgångar i Microsoft Dynamics Lifecycle Services, välj **Modell** som tillgångstyp och ladda ned **DOM-licens**-filen.
+        1. Öppna biblioteket Gemensamma tillgångar i Microsoft Dynamics Lifecycle Services, välj **Modell** som tillgångstyp och ladda ned filen **DOM-licens**.
         2. Starta Microsoft Internet Information Services-hanteraren (IIS), högerklicka på **AOSServices webbplats** och välj **Utforska**. Utforskaren öppnas i **\<roten för AOS-tjänsten\>\\webroot**. Anteckna sökvägen till \<roten för AOS-tjänsten\>, eftersom den anges i nästa steg.
         3. Kopiera konfigurationsfilen i katalogen **\<roten för AOS-tjänsten\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Gå till Butik administration-klienten och öppna sidan **DOM-parametrar**. Välj **Produktionproblemlösare** i fältet **Problemlösartyp** på fliken **Problemlösare** och bekräfta att inga felmeddelanden visas.
+        4. Gå till Retail Headquarters-klienten och öppna sidan **DOM-parametrar**. Välj **Produktionproblemlösare** i fältet **Problemlösartyp** på fliken **Problemlösare** och bekräfta att inga felmeddelanden visas.
 
         > [!NOTE]
         > Den förenklade problemlösaren medföljer så att återförsäljare ska kunna testa DOM-funktionen utan att behöva använda den särskilda licensen. Den förenklade problemlösaren bör inte användas i produktionsmiljö.
@@ -229,4 +229,3 @@ Här är några saker att tänka på när du använder DOM-funktionen:
 - Nu granskar DOM bara order som skapas från butikskanaler. Försäljningsorder identifieras som butiksförsäljningsorder när alternativet **Butiksförsäljning** har värdet **Ja**.
 - Microsoft har inte testat DOM med avancerade lagerstyrningsfunktioner. Kunder och partner måste noga bedöma om DOM är kompatibelt med den avancerade lagerstyrningskapacitet och processerna som är relevanta för dem.
 - DOM är bara tillgängligt i molnversionen av Retail. Det stöds inte i lokala installationer.
-
