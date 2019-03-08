@@ -1,13 +1,13 @@
 ---
-title: "Uppdatera den sammansatta enheten för bankjournal"
-description: "Följande steg behövs för att lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity)."
+title: Uppdatera den sammansatta enheten för bankjournal
+description: Följande steg behövs för att lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity).
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,42 +17,40 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 70db65dca4cfadd1ed8769386b4b437cecc217a2
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359369"
 ---
-
-# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="c370e-103">Uppdatera den sammansatta enheten för bankjournal</span><span class="sxs-lookup"><span data-stu-id="c370e-103">Update the bank journal composite entity</span></span>
+# <a name="update-the-bank-journal-composite-entity"></a><span data-ttu-id="e95de-103">Uppdatera den sammansatta enheten för bankjournal</span><span class="sxs-lookup"><span data-stu-id="e95de-103">Update the bank journal composite entity</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c370e-104">Följande steg behövs för att lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity).</span><span class="sxs-lookup"><span data-stu-id="c370e-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="e95de-104">Följande steg behövs för att lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity).</span><span class="sxs-lookup"><span data-stu-id="e95de-104">The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-<span data-ttu-id="c370e-105">Gör på följande sätt när du vill lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity).</span><span class="sxs-lookup"><span data-stu-id="c370e-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
+<span data-ttu-id="e95de-105">Gör på följande sätt när du vill lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity).</span><span class="sxs-lookup"><span data-stu-id="e95de-105">Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.</span></span>
 
-1.  <span data-ttu-id="c370e-106">Kompilera och synkronisera följande sammansatta enheter, enheter och mellanlagringsregister:</span><span class="sxs-lookup"><span data-stu-id="c370e-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
-    -   <span data-ttu-id="c370e-107">Sammansatt enhet\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="c370e-107">Composite Entity\\BankJournalEntity</span></span>
-    -   <span data-ttu-id="c370e-108">Enhet\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="c370e-108">Entity\\BankJournalHeaderEntity</span></span>
-    -   <span data-ttu-id="c370e-109">Enhet\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="c370e-109">Entity\\BankJournalLineEntity</span></span>
-    -   <span data-ttu-id="c370e-110">Tabell\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="c370e-110">Table\\BankJournalHeaderStaging</span></span>
-    -   <span data-ttu-id="c370e-111">Tabell\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="c370e-111">Table\\BankJournalLineStaging</span></span>
+1.  <span data-ttu-id="e95de-106">Kompilera och synkronisera följande sammansatta enheter, enheter och mellanlagringsregister:</span><span class="sxs-lookup"><span data-stu-id="e95de-106">Compile and synchronize the following bank journal composite entities, entities, and staging tables:</span></span>
+    -   <span data-ttu-id="e95de-107">Sammansatt enhet\\BankJournalEntity</span><span class="sxs-lookup"><span data-stu-id="e95de-107">Composite Entity\\BankJournalEntity</span></span>
+    -   <span data-ttu-id="e95de-108">Enhet\\BankJournalHeaderEntity</span><span class="sxs-lookup"><span data-stu-id="e95de-108">Entity\\BankJournalHeaderEntity</span></span>
+    -   <span data-ttu-id="e95de-109">Enhet\\BankJournalLineEntity</span><span class="sxs-lookup"><span data-stu-id="e95de-109">Entity\\BankJournalLineEntity</span></span>
+    -   <span data-ttu-id="e95de-110">Tabell\\BankJournalHeaderStaging</span><span class="sxs-lookup"><span data-stu-id="e95de-110">Table\\BankJournalHeaderStaging</span></span>
+    -   <span data-ttu-id="e95de-111">Tabell\\BankJournalLineStaging</span><span class="sxs-lookup"><span data-stu-id="e95de-111">Table\\BankJournalLineStaging</span></span>
 
-2.  <span data-ttu-id="c370e-112">Datahantering\\dataprojekt</span><span class="sxs-lookup"><span data-stu-id="c370e-112">Data management\\data projects</span></span>
-    -   <span data-ttu-id="c370e-113">Exponera typen **Banktransaktion** i layouten **Källdata**.</span><span class="sxs-lookup"><span data-stu-id="c370e-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
-        -   <span data-ttu-id="c370e-114">Källdataformat = XML-Element</span><span class="sxs-lookup"><span data-stu-id="c370e-114">Source data format = XML-Element</span></span>
-        -   <span data-ttu-id="c370e-115">Enhetsnamn = Bank Journal</span><span class="sxs-lookup"><span data-stu-id="c370e-115">Entity name = Bank Journal</span></span>
-        -   <span data-ttu-id="c370e-116">Överföra datafil = den nya versionen SampleBankJournalCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="c370e-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
-        -   <span data-ttu-id="c370e-117">Klicka på **Ja** om du vill skriva över den befintliga filen.</span><span class="sxs-lookup"><span data-stu-id="c370e-117">Click **Yes** to overwrite the existing file.</span></span>
-        -   <span data-ttu-id="c370e-118">Klicka på **Ja** för att generera mappning från grunden.</span><span class="sxs-lookup"><span data-stu-id="c370e-118">Click **Yes** to generate mapping from scratch.</span></span>
-        -   <span data-ttu-id="c370e-119">Kontrollera att typen Banktransaktion har mappats.</span><span class="sxs-lookup"><span data-stu-id="c370e-119">Verify that the Bank Transaction Type is mapped.</span></span>
-            -   <span data-ttu-id="c370e-120">Klicka på **Visa karta** på enheten Line.</span><span class="sxs-lookup"><span data-stu-id="c370e-120">Click **View map** on Line entity.</span></span>
-            -   <span data-ttu-id="c370e-121">Kontrollera att banktransaktionstypen mappas från källa (Source) till mellanlagring (Staging).</span><span class="sxs-lookup"><span data-stu-id="c370e-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
+2.  <span data-ttu-id="e95de-112">Datahantering\\dataprojekt</span><span class="sxs-lookup"><span data-stu-id="e95de-112">Data management\\data projects</span></span>
+    -   <span data-ttu-id="e95de-113">Exponera typen **Banktransaktion** i layouten **Källdata**.</span><span class="sxs-lookup"><span data-stu-id="e95de-113">Expose the **Bank Transaction** type on **Source Data** layout.</span></span>
+        -   <span data-ttu-id="e95de-114">Källdataformat = XML-Element</span><span class="sxs-lookup"><span data-stu-id="e95de-114">Source data format = XML-Element</span></span>
+        -   <span data-ttu-id="e95de-115">Enhetsnamn = Bank Journal</span><span class="sxs-lookup"><span data-stu-id="e95de-115">Entity name = Bank Journal</span></span>
+        -   <span data-ttu-id="e95de-116">Överföra datafil = den nya versionen SampleBankJournalCompositeEntity.xml</span><span class="sxs-lookup"><span data-stu-id="e95de-116">Upload data file = new version SampleBankJournalCompositeEntity.xml</span></span>
+        -   <span data-ttu-id="e95de-117">Klicka på **Ja** om du vill skriva över den befintliga filen.</span><span class="sxs-lookup"><span data-stu-id="e95de-117">Click **Yes** to overwrite the existing file.</span></span>
+        -   <span data-ttu-id="e95de-118">Klicka på **Ja** för att generera mappning från grunden.</span><span class="sxs-lookup"><span data-stu-id="e95de-118">Click **Yes** to generate mapping from scratch.</span></span>
+        -   <span data-ttu-id="e95de-119">Kontrollera att typen Banktransaktion har mappats.</span><span class="sxs-lookup"><span data-stu-id="e95de-119">Verify that the Bank Transaction Type is mapped.</span></span>
+            -   <span data-ttu-id="e95de-120">Klicka på **Visa karta** på enheten Line.</span><span class="sxs-lookup"><span data-stu-id="e95de-120">Click **View map** on Line entity.</span></span>
+            -   <span data-ttu-id="e95de-121">Kontrollera att banktransaktionstypen mappas från källa (Source) till mellanlagring (Staging).</span><span class="sxs-lookup"><span data-stu-id="e95de-121">Verify that Bank Transaction type is mapped from Source to Staging.</span></span>
 
-3.  <span data-ttu-id="c370e-122">Importera det nya utdraget.</span><span class="sxs-lookup"><span data-stu-id="c370e-122">Import the new statement.</span></span>
-
+3.  <span data-ttu-id="e95de-122">Importera det nya utdraget.</span><span class="sxs-lookup"><span data-stu-id="e95de-122">Import the new statement.</span></span>
 
 
 

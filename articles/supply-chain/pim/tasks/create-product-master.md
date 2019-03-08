@@ -1,13 +1,13 @@
---- 
+---
 title: Skapa en produktmall
-description: "Skapa en produktmall för de fördefinierade varianterna."
+description: Skapa en produktmall för de fördefinierade varianterna.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
 ms.reviewer: shylaw
@@ -16,55 +16,54 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6e34f7c630e872468d888938e0f1aa57f3f0d4c4
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326088"
 ---
-# <a name="create-a-product-master"></a><span data-ttu-id="c9fbe-103">Skapa en produktmall</span><span class="sxs-lookup"><span data-stu-id="c9fbe-103">Create a product master</span></span>
+# <a name="create-a-product-master"></a><span data-ttu-id="cac26-103">Skapa en produktmall</span><span class="sxs-lookup"><span data-stu-id="cac26-103">Create a product master</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="c9fbe-104">Skapa en produktmall för de fördefinierade varianterna.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-104">Create a product master for the predefined variants.</span></span> <span data-ttu-id="c9fbe-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="c9fbe-106">Den här proceduren är avsedd för produktplaneraren.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-106">This procedure is intended for the product designer.</span></span>
+<span data-ttu-id="cac26-104">Skapa en produktmall för de fördefinierade varianterna.</span><span class="sxs-lookup"><span data-stu-id="cac26-104">Create a product master for the predefined variants.</span></span> <span data-ttu-id="cac26-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="cac26-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="cac26-106">Den här proceduren är avsedd för produktplaneraren.</span><span class="sxs-lookup"><span data-stu-id="cac26-106">This procedure is intended for the product designer.</span></span>
 
 
-## <a name="create-a-new-product-master"></a><span data-ttu-id="c9fbe-107">Skapa en ny produktmall</span><span class="sxs-lookup"><span data-stu-id="c9fbe-107">Create a new product master</span></span>
-1. <span data-ttu-id="c9fbe-108">Gå till Produktinformationshantering > Produkter > Produktmallar.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-108">Go to Product information management > Products > Product masters.</span></span>
-2. <span data-ttu-id="c9fbe-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-109">Click New.</span></span>
-3. <span data-ttu-id="c9fbe-110">Skriv ett värde i fältet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-110">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="c9fbe-111">Numret måste vara unikt.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-111">The number must be unique.</span></span> <span data-ttu-id="c9fbe-112">En nummerserie kan ställas in för fältet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-112">A number sequence can be set for the Product number field.</span></span> <span data-ttu-id="c9fbe-113">I det här fallet måste användaren inte ange något värde.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-113">In this case, the user doesn't have to enter a value.</span></span>  
-4. <span data-ttu-id="c9fbe-114">Skriv ett värde i fältet Produktnamn.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-114">In the Product name field, type a value.</span></span>
-    * <span data-ttu-id="c9fbe-115">Ange ett beskrivande namn på produkten.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-115">Enter a descriptive product name.</span></span> <span data-ttu-id="c9fbe-116">Värdet hämtas som standard i söknamnet, men det kan ändras av användaren.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-116">The value defaults to the search name, but this can be changed by the user.</span></span>  
-5. <span data-ttu-id="c9fbe-117">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Produktdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-117">In the Product dimension group field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="c9fbe-118">Produktdimensionsgruppen bestämmer vilken av de 4 produktdimensionerna som kan användas för att skapa produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-118">The product dimension group determines which of the 4 product dimensions that can be used to create product variants.</span></span> <span data-ttu-id="c9fbe-119">I det här exemplet används en grupp med färg och storlek.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-119">This example uses a group with color and size.</span></span>  
-6. <span data-ttu-id="c9fbe-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-120">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="c9fbe-121">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-121">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="c9fbe-122">Standardkonfigurationstekniken är den fördefinierade varianten.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-122">The default configuration technology is Predefined variant.</span></span> <span data-ttu-id="c9fbe-123">Denna används för det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-123">This will be used for this example.</span></span>  
-8. <span data-ttu-id="c9fbe-124">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-124">Click OK.</span></span>
+## <a name="create-a-new-product-master"></a><span data-ttu-id="cac26-107">Skapa en ny produktmall</span><span class="sxs-lookup"><span data-stu-id="cac26-107">Create a new product master</span></span>
+1. <span data-ttu-id="cac26-108">Gå till Produktinformationshantering > Produkter > Produktmallar.</span><span class="sxs-lookup"><span data-stu-id="cac26-108">Go to Product information management > Products > Product masters.</span></span>
+2. <span data-ttu-id="cac26-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="cac26-109">Click New.</span></span>
+3. <span data-ttu-id="cac26-110">Skriv ett värde i fältet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="cac26-110">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="cac26-111">Numret måste vara unikt.</span><span class="sxs-lookup"><span data-stu-id="cac26-111">The number must be unique.</span></span> <span data-ttu-id="cac26-112">En nummerserie kan ställas in för fältet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="cac26-112">A number sequence can be set for the Product number field.</span></span> <span data-ttu-id="cac26-113">I det här fallet måste användaren inte ange något värde.</span><span class="sxs-lookup"><span data-stu-id="cac26-113">In this case, the user doesn't have to enter a value.</span></span>  
+4. <span data-ttu-id="cac26-114">Skriv ett värde i fältet Produktnamn.</span><span class="sxs-lookup"><span data-stu-id="cac26-114">In the Product name field, type a value.</span></span>
+    * <span data-ttu-id="cac26-115">Ange ett beskrivande namn på produkten.</span><span class="sxs-lookup"><span data-stu-id="cac26-115">Enter a descriptive product name.</span></span> <span data-ttu-id="cac26-116">Värdet hämtas som standard i söknamnet, men det kan ändras av användaren.</span><span class="sxs-lookup"><span data-stu-id="cac26-116">The value defaults to the search name, but this can be changed by the user.</span></span>  
+5. <span data-ttu-id="cac26-117">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Produktdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="cac26-117">In the Product dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="cac26-118">Produktdimensionsgruppen bestämmer vilken av de 4 produktdimensionerna som kan användas för att skapa produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="cac26-118">The product dimension group determines which of the 4 product dimensions that can be used to create product variants.</span></span> <span data-ttu-id="cac26-119">I det här exemplet används en grupp med färg och storlek.</span><span class="sxs-lookup"><span data-stu-id="cac26-119">This example uses a group with color and size.</span></span>  
+6. <span data-ttu-id="cac26-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-120">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="cac26-121">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-121">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="cac26-122">Standardkonfigurationstekniken är den fördefinierade varianten.</span><span class="sxs-lookup"><span data-stu-id="cac26-122">The default configuration technology is Predefined variant.</span></span> <span data-ttu-id="cac26-123">Denna används för det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="cac26-123">This will be used for this example.</span></span>  
+8. <span data-ttu-id="cac26-124">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="cac26-124">Click OK.</span></span>
 
-## <a name="select-product-dimension-groups"></a><span data-ttu-id="c9fbe-125">Välj produktdimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="c9fbe-125">Select product dimension groups</span></span>
-1. <span data-ttu-id="c9fbe-126">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Färggrupp.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-126">In the Color group field, click the drop-down button to open the lookup.</span></span>
-2. <span data-ttu-id="c9fbe-127">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-127">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="c9fbe-128">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-128">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="c9fbe-129">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Storleksgrupp.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-129">In the Size group field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="c9fbe-130">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-130">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="c9fbe-131">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-131">In the list, click the link in the selected row.</span></span>
+## <a name="select-product-dimension-groups"></a><span data-ttu-id="cac26-125">Välj produktdimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="cac26-125">Select product dimension groups</span></span>
+1. <span data-ttu-id="cac26-126">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Färggrupp.</span><span class="sxs-lookup"><span data-stu-id="cac26-126">In the Color group field, click the drop-down button to open the lookup.</span></span>
+2. <span data-ttu-id="cac26-127">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-127">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="cac26-128">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-128">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="cac26-129">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Storleksgrupp.</span><span class="sxs-lookup"><span data-stu-id="cac26-129">In the Size group field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="cac26-130">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-130">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="cac26-131">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-131">In the list, click the link in the selected row.</span></span>
 
-## <a name="add-dimension-groups"></a><span data-ttu-id="c9fbe-132">Lägg till dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="c9fbe-132">Add dimension groups</span></span>
-1. <span data-ttu-id="c9fbe-133">Klicka på Produkt i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-133">On the Action Pane, click Product.</span></span>
-2. <span data-ttu-id="c9fbe-134">Klicka på Dimensionsgrupper för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-134">Click Dimension groups to open the drop dialog.</span></span>
-3. <span data-ttu-id="c9fbe-135">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagringsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-135">In the Storage dimension group field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="c9fbe-136">Lagringsdimensioner bestämmer hur artiklar lagras och tas från lagret.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-136">The storage dimensions help you control how items are stored and taken from inventory.</span></span> <span data-ttu-id="c9fbe-137">Till exempel kan en lagringsdimension omfatta webbplats och lagerställe.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-137">For example, a storage dimension can include Site and Warehouse.</span></span>  
-4. <span data-ttu-id="c9fbe-138">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-138">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="c9fbe-139">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-139">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="c9fbe-140">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Spårningsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-140">In the Tracking dimension group field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="c9fbe-141">Spårningsdimensionsgruppen avgör vilka spårningsdimensioner du kan lägga till för en produkt.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-141">The tracking dimension group determines which tracking dimensions you can add to a product.</span></span> <span data-ttu-id="c9fbe-142">Batchnummer och serienummer används till exempel för att spåra lagerartiklar.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-142">For example, the batch number and serial number are used to track inventory items.</span></span>  
-7. <span data-ttu-id="c9fbe-143">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-143">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="c9fbe-144">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-144">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="c9fbe-145">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-145">Click OK.</span></span>
-10. <span data-ttu-id="c9fbe-146">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-146">Click Save.</span></span>
-11. <span data-ttu-id="c9fbe-147">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-147">Close the page.</span></span>
-
+## <a name="add-dimension-groups"></a><span data-ttu-id="cac26-132">Lägg till dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="cac26-132">Add dimension groups</span></span>
+1. <span data-ttu-id="cac26-133">Klicka på Produkt i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="cac26-133">On the Action Pane, click Product.</span></span>
+2. <span data-ttu-id="cac26-134">Klicka på Dimensionsgrupper för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="cac26-134">Click Dimension groups to open the drop dialog.</span></span>
+3. <span data-ttu-id="cac26-135">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagringsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="cac26-135">In the Storage dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="cac26-136">Lagringsdimensioner bestämmer hur artiklar lagras och tas från lagret.</span><span class="sxs-lookup"><span data-stu-id="cac26-136">The storage dimensions help you control how items are stored and taken from inventory.</span></span> <span data-ttu-id="cac26-137">Till exempel kan en lagringsdimension omfatta webbplats och lagerställe.</span><span class="sxs-lookup"><span data-stu-id="cac26-137">For example, a storage dimension can include Site and Warehouse.</span></span>  
+4. <span data-ttu-id="cac26-138">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-138">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="cac26-139">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-139">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="cac26-140">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Spårningsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="cac26-140">In the Tracking dimension group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="cac26-141">Spårningsdimensionsgruppen avgör vilka spårningsdimensioner du kan lägga till för en produkt.</span><span class="sxs-lookup"><span data-stu-id="cac26-141">The tracking dimension group determines which tracking dimensions you can add to a product.</span></span> <span data-ttu-id="cac26-142">Batchnummer och serienummer används till exempel för att spåra lagerartiklar.</span><span class="sxs-lookup"><span data-stu-id="cac26-142">For example, the batch number and serial number are used to track inventory items.</span></span>  
+7. <span data-ttu-id="cac26-143">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-143">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="cac26-144">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="cac26-144">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="cac26-145">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="cac26-145">Click OK.</span></span>
+10. <span data-ttu-id="cac26-146">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="cac26-146">Click Save.</span></span>
+11. <span data-ttu-id="cac26-147">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="cac26-147">Close the page.</span></span>
 

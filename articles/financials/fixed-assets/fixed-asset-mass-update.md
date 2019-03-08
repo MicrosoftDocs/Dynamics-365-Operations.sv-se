@@ -1,13 +1,13 @@
 ---
-title: "Massuppdatering av anläggningstillgång"
-description: "Om du använder böcker kan du ändra avskrivningspraxis för grupper av tillgångar som tillhör samma bok."
+title: Massuppdatering av anläggningstillgång
+description: Om du använder böcker kan du ändra avskrivningspraxis för grupper av tillgångar som tillhör samma bok.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,28 +17,26 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: b740f1fe710c2278bd5ac5f8d615f0e305cd7df1
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348812"
 ---
-
-# <a name="fixed-asset-mass-update"></a><span data-ttu-id="83d4e-103">Massuppdatering av anläggningstillgång</span><span class="sxs-lookup"><span data-stu-id="83d4e-103">Fixed asset mass update</span></span>
+# <a name="fixed-asset-mass-update"></a><span data-ttu-id="d317d-103">Massuppdatering av anläggningstillgång</span><span class="sxs-lookup"><span data-stu-id="d317d-103">Fixed asset mass update</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="83d4e-104">Om du använder böcker kan du ändra avskrivningspraxis för grupper av tillgångar som tillhör samma bok.</span><span class="sxs-lookup"><span data-stu-id="83d4e-104">If you use books, you can change the depreciation conventions for groups of assets that are part of the same book.</span></span>
+<span data-ttu-id="d317d-104">Om du använder böcker kan du ändra avskrivningspraxis för grupper av tillgångar som tillhör samma bok.</span><span class="sxs-lookup"><span data-stu-id="d317d-104">If you use books, you can change the depreciation conventions for groups of assets that are part of the same book.</span></span>
 
-<span data-ttu-id="83d4e-105">Om t.ex. du är i USA och mer än 40 procent av dina tillgångar togs i bruk under det fjärde kvartalet under ett år måste du använda avskrivningspraxis för mitt i kvartalet.</span><span class="sxs-lookup"><span data-stu-id="83d4e-105">For example, if you are in the United States, and you put more than 40 percent of your assets in service during the fourth quarter of the year, you must use the mid-quarter depreciation convention.</span></span> <span data-ttu-id="83d4e-106">Du kan använda processen för en massuppdatering för att ändra alla tillgångar som kräver den nya avskrivningspraxis.</span><span class="sxs-lookup"><span data-stu-id="83d4e-106">You can use the process for a mass update to change all assets that require the new depreciation convention.</span></span> 
+<span data-ttu-id="d317d-105">Om t.ex. du är i USA och mer än 40 procent av dina tillgångar togs i bruk under det fjärde kvartalet under ett år måste du använda avskrivningspraxis för mitt i kvartalet.</span><span class="sxs-lookup"><span data-stu-id="d317d-105">For example, if you are in the United States, and you put more than 40 percent of your assets in service during the fourth quarter of the year, you must use the mid-quarter depreciation convention.</span></span> <span data-ttu-id="d317d-106">Du kan använda processen för en massuppdatering för att ändra alla tillgångar som kräver den nya avskrivningspraxis.</span><span class="sxs-lookup"><span data-stu-id="d317d-106">You can use the process for a mass update to change all assets that require the new depreciation convention.</span></span> 
 
-<span data-ttu-id="83d4e-107">När du uppdaterar avskrivningspraxis för tillgångar, tar du bort alla avskrivningstransaktioner som finns för de tillgångarna.</span><span class="sxs-lookup"><span data-stu-id="83d4e-107">When you update the depreciation convention for assets, you delete all depreciation transactions that exist for those assets.</span></span> <span data-ttu-id="83d4e-108">Du kan också ta bort alla transaktioner för avskrivningsjusteringar, transaktioner för bonusavskrivningar och transaktioner för extraordinära avskrivningar för dessa tillgångar.</span><span class="sxs-lookup"><span data-stu-id="83d4e-108">You also delete all transactions for depreciation adjustments, transactions for bonus depreciation, and transactions for extraordinary depreciation for those assets.</span></span> 
+<span data-ttu-id="d317d-107">När du uppdaterar avskrivningspraxis för tillgångar, tar du bort alla avskrivningstransaktioner som finns för de tillgångarna.</span><span class="sxs-lookup"><span data-stu-id="d317d-107">When you update the depreciation convention for assets, you delete all depreciation transactions that exist for those assets.</span></span> <span data-ttu-id="d317d-108">Du kan också ta bort alla transaktioner för avskrivningsjusteringar, transaktioner för bonusavskrivningar och transaktioner för extraordinära avskrivningar för dessa tillgångar.</span><span class="sxs-lookup"><span data-stu-id="d317d-108">You also delete all transactions for depreciation adjustments, transactions for bonus depreciation, and transactions for extraordinary depreciation for those assets.</span></span> 
 
-<span data-ttu-id="83d4e-109">Om du vill uppdatera avskrivningspraxis för tillgångar som redan har avyttrats måste du först ta bort befintliga avyttringstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="83d4e-109">To update the depreciation convention for assets that have already been disposed of, you must first delete the existing disposal transactions.</span></span> <span data-ttu-id="83d4e-110">Du måste även ta bort alla transaktioner som skapades på grund av avyttringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="83d4e-110">You must also delete all transactions that were generated because of the disposal process.</span></span> 
+<span data-ttu-id="d317d-109">Om du vill uppdatera avskrivningspraxis för tillgångar som redan har avyttrats måste du först ta bort befintliga avyttringstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="d317d-109">To update the depreciation convention for assets that have already been disposed of, you must first delete the existing disposal transactions.</span></span> <span data-ttu-id="d317d-110">Du måste även ta bort alla transaktioner som skapades på grund av avyttringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="d317d-110">You must also delete all transactions that were generated because of the disposal process.</span></span> 
 
-<span data-ttu-id="83d4e-111">När du har uppdaterat avskrivningspraxis för tillgångar kan du bearbeta avskrivningar och Belopp för extraordinära avskrivningar för varje tillgång.</span><span class="sxs-lookup"><span data-stu-id="83d4e-111">After you update the depreciation convention for assets, you can process depreciation and extraordinary depreciation for each asset.</span></span> <span data-ttu-id="83d4e-112">Du kan också göra manuella justeringar om eventuella justeringar krävs.</span><span class="sxs-lookup"><span data-stu-id="83d4e-112">You can also make manual depreciation adjustments, if any adjustments are required.</span></span>
-
+<span data-ttu-id="d317d-111">När du har uppdaterat avskrivningspraxis för tillgångar kan du bearbeta avskrivningar och Belopp för extraordinära avskrivningar för varje tillgång.</span><span class="sxs-lookup"><span data-stu-id="d317d-111">After you update the depreciation convention for assets, you can process depreciation and extraordinary depreciation for each asset.</span></span> <span data-ttu-id="d317d-112">Du kan också göra manuella justeringar om eventuella justeringar krävs.</span><span class="sxs-lookup"><span data-stu-id="d317d-112">You can also make manual depreciation adjustments, if any adjustments are required.</span></span>
 
 
 

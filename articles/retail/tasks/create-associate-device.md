@@ -1,13 +1,13 @@
---- 
+---
 title: " Skapa och associera en enhet"
-description: "Den här proceduren går igenom hur du skapar en ny enhet och kopplar den till ett register."
+description: Den här proceduren går igenom hur du skapar en ny enhet och kopplar den till ett register.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -17,28 +17,27 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: bb199c9d7cf75827445be4aa8a18cc68698b027c
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354056"
 ---
-# <a name="create-and-associate-a-device"></a><span data-ttu-id="58c37-103"> Skapa och associera en enhet</span><span class="sxs-lookup"><span data-stu-id="58c37-103">Create and associate a device</span></span>
+# <a name="create-and-associate-a-device"></a><span data-ttu-id="6eb1d-103"> Skapa och associera en enhet</span><span class="sxs-lookup"><span data-stu-id="6eb1d-103">Create and associate a device</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="58c37-104">Den här proceduren går igenom hur du skapar en ny enhet och kopplar den till ett register.</span><span class="sxs-lookup"><span data-stu-id="58c37-104">This procedure walks through how to create a new device and associate it to a register.</span></span> <span data-ttu-id="58c37-105">Det antas att registret redan har skapats.</span><span class="sxs-lookup"><span data-stu-id="58c37-105">It is assumed that the register is already created.</span></span>  <span data-ttu-id="58c37-106">Den här uppgiften använder sig av demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="58c37-106">This task uses the USRT company in demo data.</span></span> <span data-ttu-id="58c37-107">Denna uppgift är avsedd för administratörer, IT-proffs eller Butikens IT och rollen butikschef.</span><span class="sxs-lookup"><span data-stu-id="58c37-107">This task is intended for Administrators, IT Professional or Retail IT, and the Store Manager roles.</span></span>
+<span data-ttu-id="6eb1d-104">Den här proceduren går igenom hur du skapar en ny enhet och kopplar den till ett register.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-104">This procedure walks through how to create a new device and associate it to a register.</span></span> <span data-ttu-id="6eb1d-105">Det antas att registret redan har skapats.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-105">It is assumed that the register is already created.</span></span>  <span data-ttu-id="6eb1d-106">Den här uppgiften använder sig av demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-106">This task uses the USRT company in demo data.</span></span> <span data-ttu-id="6eb1d-107">Denna uppgift är avsedd för administratörer, IT-proffs eller Butikens IT och rollen butikschef.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-107">This task is intended for Administrators, IT Professional or Retail IT, and the Store Manager roles.</span></span>
 
-1. <span data-ttu-id="58c37-108">Gå till Butik och handel > ..</span><span class="sxs-lookup"><span data-stu-id="58c37-108">Go to Retail and commerce > ..</span></span> <span data-ttu-id="58c37-109">> Enheter.</span><span class="sxs-lookup"><span data-stu-id="58c37-109">> Devices.</span></span>
-2. <span data-ttu-id="58c37-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="58c37-110">Click New.</span></span>
-3. <span data-ttu-id="58c37-111">Skriv ett värde i fältet Enhets-ID.</span><span class="sxs-lookup"><span data-stu-id="58c37-111">In the Device ID field, type a value.</span></span>
-4. <span data-ttu-id="58c37-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Enhetstyp.</span><span class="sxs-lookup"><span data-stu-id="58c37-112">In the Device type field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="58c37-113">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="58c37-113">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="58c37-114">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="58c37-114">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="58c37-115">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Registernummer.</span><span class="sxs-lookup"><span data-stu-id="58c37-115">In the Register number field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="58c37-116">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="58c37-116">In the list, find and select the desired record.</span></span>
-9. <span data-ttu-id="58c37-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="58c37-117">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="58c37-118">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="58c37-118">Click Save.</span></span>
-
+1. <span data-ttu-id="6eb1d-108">Gå till Butik och handel > ..</span><span class="sxs-lookup"><span data-stu-id="6eb1d-108">Go to Retail and commerce > ..</span></span> <span data-ttu-id="6eb1d-109">> Enheter.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-109">> Devices.</span></span>
+2. <span data-ttu-id="6eb1d-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-110">Click New.</span></span>
+3. <span data-ttu-id="6eb1d-111">Skriv ett värde i fältet Enhets-ID.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-111">In the Device ID field, type a value.</span></span>
+4. <span data-ttu-id="6eb1d-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Enhetstyp.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-112">In the Device type field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="6eb1d-113">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-113">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="6eb1d-114">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-114">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="6eb1d-115">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Registernummer.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-115">In the Register number field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="6eb1d-116">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-116">In the list, find and select the desired record.</span></span>
+9. <span data-ttu-id="6eb1d-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-117">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="6eb1d-118">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="6eb1d-118">Click Save.</span></span>
 

@@ -1,13 +1,13 @@
 ---
-title: "Rapportdefinitioner i designer för ekonomiska rapporter"
-description: "Den här artikeln innehåller information om rapportdefinitioner. En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport."
+title: Rapportdefinitioner i designer för ekonomiska rapporter
+description: Den här artikeln innehåller information om rapportdefinitioner. En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,72 +18,70 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 322f1cca32053224e1cd6dbaf29c098b983b5e1f
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327353"
 ---
-
-# <a name="report-definitions-in-financial-report-designer"></a><span data-ttu-id="d69f6-105">Rapportdefinitioner i designer för ekonomiska rapporter</span><span class="sxs-lookup"><span data-stu-id="d69f6-105">Report definitions in financial report designer</span></span>
+# <a name="report-definitions-in-financial-report-designer"></a><span data-ttu-id="a567e-105">Rapportdefinitioner i designer för ekonomiska rapporter</span><span class="sxs-lookup"><span data-stu-id="a567e-105">Report definitions in financial report designer</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d69f6-106">Den här artikeln innehåller information om rapportdefinitioner.</span><span class="sxs-lookup"><span data-stu-id="d69f6-106">This article provides information about report definitions.</span></span> <span data-ttu-id="d69f6-107">En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport.</span><span class="sxs-lookup"><span data-stu-id="d69f6-107">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="d69f6-108">En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport.</span><span class="sxs-lookup"><span data-stu-id="d69f6-108">A report definition also provides options and settings that for customizing a report.</span></span> 
+<span data-ttu-id="a567e-106">Den här artikeln innehåller information om rapportdefinitioner.</span><span class="sxs-lookup"><span data-stu-id="a567e-106">This article provides information about report definitions.</span></span> <span data-ttu-id="a567e-107">En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport.</span><span class="sxs-lookup"><span data-stu-id="a567e-107">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="a567e-108">En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport.</span><span class="sxs-lookup"><span data-stu-id="a567e-108">A report definition also provides options and settings that for customizing a report.</span></span> 
 
-<span data-ttu-id="d69f6-109">En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport.</span><span class="sxs-lookup"><span data-stu-id="d69f6-109">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="d69f6-110">En rapportdefinition innehåller också alternativ och inställningar som du kan använda för att anpassa en rapport.</span><span class="sxs-lookup"><span data-stu-id="d69f6-110">A report definition also provides options and settings that you can use to customize a report.</span></span> <span data-ttu-id="d69f6-111">När du har definierat raddefinitioner och kolumndefinitioner, måste du kombinera dem i en rapportdefinition.</span><span class="sxs-lookup"><span data-stu-id="d69f6-111">After you define row definitions and column definitions, you must combine them in a report definition.</span></span> <span data-ttu-id="d69f6-112">I det här läget definierar du också andra aspekter av definitioner, till exempel detaljnivå och rapportdatum.</span><span class="sxs-lookup"><span data-stu-id="d69f6-112">At this point, you also define other aspects of the definitions, such as the detail level and report date.</span></span> <span data-ttu-id="d69f6-113">Du kan sedan spara och skapa en rapport.</span><span class="sxs-lookup"><span data-stu-id="d69f6-113">You can then save and generate a report.</span></span> <span data-ttu-id="d69f6-114">Ekonomist rapportering omfattar följande detaljnivåer:</span><span class="sxs-lookup"><span data-stu-id="d69f6-114">Financial reporting offers the following levels of detail:</span></span>
+<span data-ttu-id="a567e-109">En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport.</span><span class="sxs-lookup"><span data-stu-id="a567e-109">A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report.</span></span> <span data-ttu-id="a567e-110">En rapportdefinition innehåller också alternativ och inställningar som du kan använda för att anpassa en rapport.</span><span class="sxs-lookup"><span data-stu-id="a567e-110">A report definition also provides options and settings that you can use to customize a report.</span></span> <span data-ttu-id="a567e-111">När du har definierat raddefinitioner och kolumndefinitioner, måste du kombinera dem i en rapportdefinition.</span><span class="sxs-lookup"><span data-stu-id="a567e-111">After you define row definitions and column definitions, you must combine them in a report definition.</span></span> <span data-ttu-id="a567e-112">I det här läget definierar du också andra aspekter av definitioner, till exempel detaljnivå och rapportdatum.</span><span class="sxs-lookup"><span data-stu-id="a567e-112">At this point, you also define other aspects of the definitions, such as the detail level and report date.</span></span> <span data-ttu-id="a567e-113">Du kan sedan spara och skapa en rapport.</span><span class="sxs-lookup"><span data-stu-id="a567e-113">You can then save and generate a report.</span></span> <span data-ttu-id="a567e-114">Ekonomist rapportering omfattar följande detaljnivåer:</span><span class="sxs-lookup"><span data-stu-id="a567e-114">Financial reporting offers the following levels of detail:</span></span>
 
-- <span data-ttu-id="d69f6-115">Ekonomi</span><span class="sxs-lookup"><span data-stu-id="d69f6-115">Financial</span></span>
-- <span data-ttu-id="d69f6-116">Ekonomisk och Konto</span><span class="sxs-lookup"><span data-stu-id="d69f6-116">Financial and Account</span></span>
-- <span data-ttu-id="d69f6-117">Ekonomisk, Konto och Transaktion</span><span class="sxs-lookup"><span data-stu-id="d69f6-117">Financial, Account, and Transaction</span></span>
+- <span data-ttu-id="a567e-115">Ekonomi</span><span class="sxs-lookup"><span data-stu-id="a567e-115">Financial</span></span>
+- <span data-ttu-id="a567e-116">Ekonomisk och Konto</span><span class="sxs-lookup"><span data-stu-id="a567e-116">Financial and Account</span></span>
+- <span data-ttu-id="a567e-117">Ekonomisk, Konto och Transaktion</span><span class="sxs-lookup"><span data-stu-id="a567e-117">Financial, Account, and Transaction</span></span>
 
-<span data-ttu-id="d69f6-118">Beroende på hur data lagras i Microsoft Dynamics ERP-system kanske inte transaktionsdetaljer är tillgängliga i rapporter.</span><span class="sxs-lookup"><span data-stu-id="d69f6-118">However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.</span></span>
+<span data-ttu-id="a567e-118">Däremot är det inte säkert att transaktionsinformation finns tillgänglig i rapporter, beroende på hur informationen är lagrad i Microsoft Dynamics ERP-systemet.</span><span class="sxs-lookup"><span data-stu-id="a567e-118">However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.</span></span>
 
-## <a name="create-a-report-definition"></a><span data-ttu-id="d69f6-119">Skapa en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="d69f6-119">Create a report definition</span></span>
-1. <span data-ttu-id="d69f6-120">I Report Designer i menyn **Fil** klickar du på **Nytt** och väljer sedan **Rapportdefinition**.</span><span class="sxs-lookup"><span data-stu-id="d69f6-120">In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.</span></span>
-2. <span data-ttu-id="d69f6-121">Ange lämplig information i flikarna **Rapport**som krävs på **Utleverans och fördelning**, **Sidhuvud och sidfot**och **Inställningar**.</span><span class="sxs-lookup"><span data-stu-id="d69f6-121">Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.</span></span>
+## <a name="create-a-report-definition"></a><span data-ttu-id="a567e-119">Skapa en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="a567e-119">Create a report definition</span></span>
+1. <span data-ttu-id="a567e-120">I Report Designer i menyn **Fil** klickar du på **Nytt** och väljer sedan **Rapportdefinition**.</span><span class="sxs-lookup"><span data-stu-id="a567e-120">In Report Designer, on the **File** menu, click **New**, and then select **Report Definition**.</span></span>
+2. <span data-ttu-id="a567e-121">Ange lämplig information i flikarna **Rapport**som krävs på **Utleverans och fördelning**, **Sidhuvud och sidfot**och **Inställningar**.</span><span class="sxs-lookup"><span data-stu-id="a567e-121">Specify the appropriate information on the **Report**, **Output and Distribution**, **Headers and Footers**, and **Settings** tabs.</span></span>
 
-## <a name="contents-of-a-report-definition"></a><span data-ttu-id="d69f6-122">Innehåll i en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="d69f6-122">Contents of a report definition</span></span>
-<span data-ttu-id="d69f6-123">I följande register finns beskrivningar av flikarna i en rapportdefinition och hur informationen används.</span><span class="sxs-lookup"><span data-stu-id="d69f6-123">The following table describes the tabs in a report definition and how the information is used.</span></span>
+## <a name="contents-of-a-report-definition"></a><span data-ttu-id="a567e-122">Innehåll i en rapportdefinition</span><span class="sxs-lookup"><span data-stu-id="a567e-122">Contents of a report definition</span></span>
+<span data-ttu-id="a567e-123">I följande register finns beskrivningar av flikarna i en rapportdefinition och hur informationen används.</span><span class="sxs-lookup"><span data-stu-id="a567e-123">The following table describes the tabs in a report definition and how the information is used.</span></span>
 
 <table>
 <thead>
 <tr>
-<th><span data-ttu-id="d69f6-124">Tabb</span><span class="sxs-lookup"><span data-stu-id="d69f6-124">Tab</span></span></th>
-<th><span data-ttu-id="d69f6-125">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="d69f6-125">Description</span></span></th>
+<th><span data-ttu-id="a567e-124">Tabb</span><span class="sxs-lookup"><span data-stu-id="a567e-124">Tab</span></span></th>
+<th><span data-ttu-id="a567e-125">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="a567e-125">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span data-ttu-id="d69f6-126">Rapport</span><span class="sxs-lookup"><span data-stu-id="d69f6-126">Report</span></span></td>
-<td><span data-ttu-id="d69f6-127">Skapa en rapport, konfigurera en rapport eller ändra en befintlig rapport.</span><span class="sxs-lookup"><span data-stu-id="d69f6-127">Create a report, configure a report, or modify an existing report.</span></span></td>
+<td><span data-ttu-id="a567e-126">Rapport</span><span class="sxs-lookup"><span data-stu-id="a567e-126">Report</span></span></td>
+<td><span data-ttu-id="a567e-127">Skapa en rapport, konfigurera en rapport eller ändra en befintlig rapport.</span><span class="sxs-lookup"><span data-stu-id="a567e-127">Create a report, configure a report, or modify an existing report.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="d69f6-128">Utleverans och fördelning</span><span class="sxs-lookup"><span data-stu-id="d69f6-128">Output and Distribution</span></span></td>
-<td><span data-ttu-id="d69f6-129">Ändra rapportens utleveranstyp och mål.</span><span class="sxs-lookup"><span data-stu-id="d69f6-129">Change the output type and destination of the report.</span></span></td>
+<td><span data-ttu-id="a567e-128">Utleverans och fördelning</span><span class="sxs-lookup"><span data-stu-id="a567e-128">Output and Distribution</span></span></td>
+<td><span data-ttu-id="a567e-129">Ändra rapportens utleveranstyp och mål.</span><span class="sxs-lookup"><span data-stu-id="a567e-129">Change the output type and destination of the report.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="d69f6-130">Huvud och sidfot</span><span class="sxs-lookup"><span data-stu-id="d69f6-130">Headers and Footers</span></span></td>
-<td><span data-ttu-id="d69f6-131">Definiera och formatera rapportens sidhuvud och sidfot.</span><span class="sxs-lookup"><span data-stu-id="d69f6-131">Define and format the headers and footers for the report.</span></span> <span data-ttu-id="d69f6-132">Du kan till exempel lägga till text eller bilder till sidhuvudet eller sidfoten.</span><span class="sxs-lookup"><span data-stu-id="d69f6-132">For example, you can add text or images to the header or footer.</span></span> <span data-ttu-id="d69f6-133">Ekonomisk rapportering stöder .bmp-, .jpg- och .png-filer för bilder.</span><span class="sxs-lookup"><span data-stu-id="d69f6-133">Financial reporting supports .bmp, .jpg, and .png files for images.</span></span> <span data-ttu-id="d69f6-134">Du kan också lägga till autotextkoder om du vill infoga annan information som till exempel företagsnamn, rapportnamn eller sidnummer.</span><span class="sxs-lookup"><span data-stu-id="d69f6-134">You can also add autotext codes to insert other information, such as a company name, report name, or page number.</span></span></td>
+<td><span data-ttu-id="a567e-130">Huvud och sidfot</span><span class="sxs-lookup"><span data-stu-id="a567e-130">Headers and Footers</span></span></td>
+<td><span data-ttu-id="a567e-131">Definiera och formatera rapportens sidhuvud och sidfot.</span><span class="sxs-lookup"><span data-stu-id="a567e-131">Define and format the headers and footers for the report.</span></span> <span data-ttu-id="a567e-132">Du kan till exempel lägga till text eller bilder till sidhuvudet eller sidfoten.</span><span class="sxs-lookup"><span data-stu-id="a567e-132">For example, you can add text or images to the header or footer.</span></span> <span data-ttu-id="a567e-133">Ekonomisk rapportering stöder .bmp-, .jpg- och .png-filer för bilder.</span><span class="sxs-lookup"><span data-stu-id="a567e-133">Financial reporting supports .bmp, .jpg, and .png files for images.</span></span> <span data-ttu-id="a567e-134">Du kan också lägga till autotextkoder om du vill infoga annan information som till exempel företagsnamn, rapportnamn eller sidnummer.</span><span class="sxs-lookup"><span data-stu-id="a567e-134">You can also add autotext codes to insert other information, such as a company name, report name, or page number.</span></span></td>
 </tr>
 <tr>
-<td><span data-ttu-id="d69f6-135">Inställningar</span><span class="sxs-lookup"><span data-stu-id="d69f6-135">Settings</span></span></td>
-<td><span data-ttu-id="d69f6-136">Ange rapportdefinitioninställningar, till exempel följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="d69f6-136">Specify report definition settings, such as the following settings:</span></span>
+<td><span data-ttu-id="a567e-135">Inställningar</span><span class="sxs-lookup"><span data-stu-id="a567e-135">Settings</span></span></td>
+<td><span data-ttu-id="a567e-136">Ange rapportdefinitioninställningar, till exempel följande inställningar:</span><span class="sxs-lookup"><span data-stu-id="a567e-136">Specify report definition settings, such as the following settings:</span></span>
 <ul>
-<li><span data-ttu-id="d69f6-137">Formatering och avrundningsbelopp</span><span class="sxs-lookup"><span data-stu-id="d69f6-137">Formatting and rounding amounts</span></span></li>
-<li><span data-ttu-id="d69f6-138">Formatdetaljrapporter</span><span class="sxs-lookup"><span data-stu-id="d69f6-138">Format detail reports</span></span></li>
-<li><span data-ttu-id="d69f6-139">Formatrapporteringsträd</span><span class="sxs-lookup"><span data-stu-id="d69f6-139">Format reporting trees</span></span></li>
-<li><span data-ttu-id="d69f6-140">Skapa rapport över inleveransavvikelser</span><span class="sxs-lookup"><span data-stu-id="d69f6-140">Generate an exception report</span></span></li>
-<li><span data-ttu-id="d69f6-141">Ange valutakonvertering</span><span class="sxs-lookup"><span data-stu-id="d69f6-141">Specify currency conversion</span></span></li>
-<li><span data-ttu-id="d69f6-142">Delsumma- och filterkontodetaljer</span><span class="sxs-lookup"><span data-stu-id="d69f6-142">Subtotal and filter account details</span></span></li>
+<li><span data-ttu-id="a567e-137">Formatering och avrundningsbelopp</span><span class="sxs-lookup"><span data-stu-id="a567e-137">Formatting and rounding amounts</span></span></li>
+<li><span data-ttu-id="a567e-138">Formatdetaljrapporter</span><span class="sxs-lookup"><span data-stu-id="a567e-138">Format detail reports</span></span></li>
+<li><span data-ttu-id="a567e-139">Formatrapporteringsträd</span><span class="sxs-lookup"><span data-stu-id="a567e-139">Format reporting trees</span></span></li>
+<li><span data-ttu-id="a567e-140">Skapa rapport över inleveransavvikelser</span><span class="sxs-lookup"><span data-stu-id="a567e-140">Generate an exception report</span></span></li>
+<li><span data-ttu-id="a567e-141">Ange valutakonvertering</span><span class="sxs-lookup"><span data-stu-id="a567e-141">Specify currency conversion</span></span></li>
+<li><span data-ttu-id="a567e-142">Delsumma- och filterkontodetaljer</span><span class="sxs-lookup"><span data-stu-id="a567e-142">Subtotal and filter account details</span></span></li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-resources"></a><span data-ttu-id="d69f6-143">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="d69f6-143">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="a567e-143">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="a567e-143">Additional resources</span></span>
 
-[<span data-ttu-id="d69f6-144">Ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="d69f6-144">Financial reporting</span></span>](financial-reporting-intro.md)
-
+[<span data-ttu-id="a567e-144">Ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="a567e-144">Financial reporting</span></span>](financial-reporting-intro.md)

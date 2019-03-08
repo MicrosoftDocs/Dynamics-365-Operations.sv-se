@@ -1,13 +1,13 @@
---- 
+---
 title: Identifiera och distribuera kandidaturvalsverktyg
-description: "Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fylla vakanser, särskilt för en befattning kräver en unik kompetenskombination."
+description: Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fylla vakanser, särskilt för en befattning kräver en unik kompetenskombination.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: rschloma
@@ -16,46 +16,45 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: df7956cfdc3c470b5e652b62e659060120cdd770
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332735"
 ---
-# <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="499d1-103">Identifiera och distribuera kandidaturvalsverktyg</span><span class="sxs-lookup"><span data-stu-id="499d1-103">Identify and deploy candidate selection tools</span></span>
+# <a name="identify-and-deploy-candidate-selection-tools"></a><span data-ttu-id="12c2d-103">Identifiera och distribuera kandidaturvalsverktyg</span><span class="sxs-lookup"><span data-stu-id="12c2d-103">Identify and deploy candidate selection tools</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="499d1-104">Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fylla vakanser, särskilt för en befattning kräver en unik kompetenskombination.</span><span class="sxs-lookup"><span data-stu-id="499d1-104">Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.</span></span>  <span data-ttu-id="499d1-105">Det kan dock hända att kandidater med de färdigheter som du behöver redan arbetar i din organisation.</span><span class="sxs-lookup"><span data-stu-id="499d1-105">However, candidates with the skills you need might already be employed in your organization.</span></span> <span data-ttu-id="499d1-106">Du kan söka efter en viss kompetensuppsättning bland befintliga medarbetare eller nya sökande.</span><span class="sxs-lookup"><span data-stu-id="499d1-106">You can search for a specific skill set among existing employees, or new applicants.</span></span> <span data-ttu-id="499d1-107">Det gör att en rekryterare snabbt kan samla in och gå igenom sökande som har ansökt till en vakans, nu eller tidigare, eller hitta potentiella sökande från sin befintliga pool av medarbetare.</span><span class="sxs-lookup"><span data-stu-id="499d1-107">This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees.</span></span> <span data-ttu-id="499d1-108">Använd den här uppgiftsregistreringen om du vill veta hur kompetensmappningsfunktionen kan hjälpa dig att hitta rätt person för en vakans.</span><span class="sxs-lookup"><span data-stu-id="499d1-108">Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position.</span></span> <span data-ttu-id="499d1-109">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="499d1-109">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="12c2d-104">Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fylla vakanser, särskilt för en befattning kräver en unik kompetenskombination.</span><span class="sxs-lookup"><span data-stu-id="12c2d-104">Finding a qualified pool of candidates to fill vacancies can be difficult, especially when a position requires a unique set of skills.</span></span>  <span data-ttu-id="12c2d-105">Det kan dock hända att kandidater med de färdigheter som du behöver redan arbetar i din organisation.</span><span class="sxs-lookup"><span data-stu-id="12c2d-105">However, candidates with the skills you need might already be employed in your organization.</span></span> <span data-ttu-id="12c2d-106">Du kan söka efter en viss kompetensuppsättning bland befintliga medarbetare eller nya sökande.</span><span class="sxs-lookup"><span data-stu-id="12c2d-106">You can search for a specific skill set among existing employees, or new applicants.</span></span> <span data-ttu-id="12c2d-107">Det gör att en rekryterare snabbt kan samla in och gå igenom sökande som har ansökt till en vakans, nu eller tidigare, eller hitta potentiella sökande från sin befintliga pool av medarbetare.</span><span class="sxs-lookup"><span data-stu-id="12c2d-107">This allows a recruiter to quickly gather and screen applicants who have applied for open position now or in the past, or to find potential candidates from their existing pool of employees.</span></span> <span data-ttu-id="12c2d-108">Använd den här uppgiftsregistreringen om du vill veta hur kompetensmappningsfunktionen kan hjälpa dig att hitta rätt person för en vakans.</span><span class="sxs-lookup"><span data-stu-id="12c2d-108">Use this task recording to learn how the skill mapping functionality can help you find the right person for an open position.</span></span> <span data-ttu-id="12c2d-109">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="12c2d-109">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="499d1-110">Gå till Personal > Kompetenser > Kompetensanalys > Kompetensmappningsprofiler.</span><span class="sxs-lookup"><span data-stu-id="499d1-110">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
-2. <span data-ttu-id="499d1-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="499d1-111">Click New.</span></span>
-3. <span data-ttu-id="499d1-112">Ange ett namn för din kompetensmappning i kompetensmappningsfältet.</span><span class="sxs-lookup"><span data-stu-id="499d1-112">In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="499d1-113">Exempel: Redovisare.</span><span class="sxs-lookup"><span data-stu-id="499d1-113">Example: Accountant.</span></span>
-4. <span data-ttu-id="499d1-114">Ange en beskrivning av kompetensmappningen i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="499d1-114">In the Description field, enter a description of the skill mapping..</span></span>
-5. <span data-ttu-id="499d1-115">Ange ett datum i fältet Datum.</span><span class="sxs-lookup"><span data-stu-id="499d1-115">In the Date field, enter a date.</span></span>
-6. <span data-ttu-id="499d1-116">Klicka på Hämta profil.</span><span class="sxs-lookup"><span data-stu-id="499d1-116">Click Retrieve profile.</span></span>
-    * <span data-ttu-id="499d1-117">Använd Hämta profil om du vill hämta data om certifikat, färdighet och utbildning från ett val av person, jobb eller kurs som grund för sökningen.</span><span class="sxs-lookup"><span data-stu-id="499d1-117">Use Retrieve profile to pull in the Certificate, Skill, and Education data from a selected Person, Job or Course as the basis for your search.</span></span>   <span data-ttu-id="499d1-118">Du kan sedan lägga till eller ta bort villkor, ange om villkoren är valfria och rangordna betydelsen av villkoret.</span><span class="sxs-lookup"><span data-stu-id="499d1-118">You can then add or remove criteria, state if the criteria is optional and rank the importance of the criteria.</span></span>  
-7. <span data-ttu-id="499d1-119">Klicka på Jobb.</span><span class="sxs-lookup"><span data-stu-id="499d1-119">Click Job.</span></span>
-8. <span data-ttu-id="499d1-120">Ange eller välj ett värde i fältet Jobb.</span><span class="sxs-lookup"><span data-stu-id="499d1-120">In the Job field, enter or select a value.</span></span>
-9. <span data-ttu-id="499d1-121">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="499d1-121">Click OK.</span></span>
-10. <span data-ttu-id="499d1-122">Expandera snabbsorteringsfliken och lägg till ytterligare information, till exempel avdelning.</span><span class="sxs-lookup"><span data-stu-id="499d1-122">Expand the range fast tab, and add any additional information, such as department.</span></span>
-11. <span data-ttu-id="499d1-123">Expandera certifikatsnabbfliken om du vill visa eller redigera certifikat.</span><span class="sxs-lookup"><span data-stu-id="499d1-123">Expand the certificates fast tab to view or edit the certificates.</span></span>
-12. <span data-ttu-id="499d1-124">Expandera snabbfliken Kompetenser om du vill visa eller redigera kompetenser.</span><span class="sxs-lookup"><span data-stu-id="499d1-124">Expand the Skills fast tab to view or edit the skills.</span></span>
-13. <span data-ttu-id="499d1-125">Expandera snabbfliken Utbildning om du vill visa eller redigera utbildningskriterier.</span><span class="sxs-lookup"><span data-stu-id="499d1-125">Expand the Education fast tab to view or edit the education criteria.</span></span>
-14. <span data-ttu-id="499d1-126">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="499d1-126">Click Execute.</span></span>
-15. <span data-ttu-id="499d1-127">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="499d1-127">Click OK.</span></span>
-16. <span data-ttu-id="499d1-128">Klicka på Resultat.</span><span class="sxs-lookup"><span data-stu-id="499d1-128">Click Result.</span></span>
-17. <span data-ttu-id="499d1-129">Klicka på Resultat.</span><span class="sxs-lookup"><span data-stu-id="499d1-129">Click Result.</span></span>
-18. <span data-ttu-id="499d1-130">Klicka på Fortsätt.</span><span class="sxs-lookup"><span data-stu-id="499d1-130">Click Resume.</span></span>
-19. <span data-ttu-id="499d1-131">Klicka på Certifikat.</span><span class="sxs-lookup"><span data-stu-id="499d1-131">Click Certificates.</span></span>
-    * <span data-ttu-id="499d1-132">Du kan detaljgranska varje person och visa information om deras utbildning, färdigheter, yrkeserfarenhet osv.</span><span class="sxs-lookup"><span data-stu-id="499d1-132">You can drill further into each person listed and see details regarding their education, skills, professional experience etc.</span></span>  
-20. <span data-ttu-id="499d1-133">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="499d1-133">Close the page.</span></span>
-21. <span data-ttu-id="499d1-134">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="499d1-134">Close the page.</span></span>
-22. <span data-ttu-id="499d1-135">Välj resultatet igen.</span><span class="sxs-lookup"><span data-stu-id="499d1-135">Select result again.</span></span>
-23. <span data-ttu-id="499d1-136">Klicka på Rapport.</span><span class="sxs-lookup"><span data-stu-id="499d1-136">Click Report.</span></span>
-    * <span data-ttu-id="499d1-137">Rapporten anger de bästa matchningarna högst upp i rapporten.</span><span class="sxs-lookup"><span data-stu-id="499d1-137">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="499d1-138">Du kan se att det finns en lucka i listan.</span><span class="sxs-lookup"><span data-stu-id="499d1-138">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="499d1-139">Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.</span><span class="sxs-lookup"><span data-stu-id="499d1-139">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
-24. <span data-ttu-id="499d1-140">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="499d1-140">Close the page.</span></span>
-25. <span data-ttu-id="499d1-141">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="499d1-141">Click Save.</span></span>
-
+1. <span data-ttu-id="12c2d-110">Gå till Personal > Kompetenser > Kompetensanalys > Kompetensmappningsprofiler.</span><span class="sxs-lookup"><span data-stu-id="12c2d-110">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
+2. <span data-ttu-id="12c2d-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12c2d-111">Click New.</span></span>
+3. <span data-ttu-id="12c2d-112">Ange ett namn för din kompetensmappning i kompetensmappningsfältet.</span><span class="sxs-lookup"><span data-stu-id="12c2d-112">In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="12c2d-113">Exempel: Redovisare.</span><span class="sxs-lookup"><span data-stu-id="12c2d-113">Example: Accountant.</span></span>
+4. <span data-ttu-id="12c2d-114">Ange en beskrivning av kompetensmappningen i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="12c2d-114">In the Description field, enter a description of the skill mapping..</span></span>
+5. <span data-ttu-id="12c2d-115">Ange ett datum i fältet Datum.</span><span class="sxs-lookup"><span data-stu-id="12c2d-115">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="12c2d-116">Klicka på Hämta profil.</span><span class="sxs-lookup"><span data-stu-id="12c2d-116">Click Retrieve profile.</span></span>
+    * <span data-ttu-id="12c2d-117">Använd Hämta profil om du vill hämta data om certifikat, färdighet och utbildning från ett val av person, jobb eller kurs som grund för sökningen.</span><span class="sxs-lookup"><span data-stu-id="12c2d-117">Use Retrieve profile to pull in the Certificate, Skill, and Education data from a selected Person, Job or Course as the basis for your search.</span></span>   <span data-ttu-id="12c2d-118">Du kan sedan lägga till eller ta bort villkor, ange om villkoren är valfria och rangordna betydelsen av villkoret.</span><span class="sxs-lookup"><span data-stu-id="12c2d-118">You can then add or remove criteria, state if the criteria is optional and rank the importance of the criteria.</span></span>  
+7. <span data-ttu-id="12c2d-119">Klicka på Jobb.</span><span class="sxs-lookup"><span data-stu-id="12c2d-119">Click Job.</span></span>
+8. <span data-ttu-id="12c2d-120">Ange eller välj ett värde i fältet Jobb.</span><span class="sxs-lookup"><span data-stu-id="12c2d-120">In the Job field, enter or select a value.</span></span>
+9. <span data-ttu-id="12c2d-121">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="12c2d-121">Click OK.</span></span>
+10. <span data-ttu-id="12c2d-122">Expandera snabbsorteringsfliken och lägg till ytterligare information, till exempel avdelning.</span><span class="sxs-lookup"><span data-stu-id="12c2d-122">Expand the range fast tab, and add any additional information, such as department.</span></span>
+11. <span data-ttu-id="12c2d-123">Expandera certifikatsnabbfliken om du vill visa eller redigera certifikat.</span><span class="sxs-lookup"><span data-stu-id="12c2d-123">Expand the certificates fast tab to view or edit the certificates.</span></span>
+12. <span data-ttu-id="12c2d-124">Expandera snabbfliken Kompetenser om du vill visa eller redigera kompetenser.</span><span class="sxs-lookup"><span data-stu-id="12c2d-124">Expand the Skills fast tab to view or edit the skills.</span></span>
+13. <span data-ttu-id="12c2d-125">Expandera snabbfliken Utbildning om du vill visa eller redigera utbildningskriterier.</span><span class="sxs-lookup"><span data-stu-id="12c2d-125">Expand the Education fast tab to view or edit the education criteria.</span></span>
+14. <span data-ttu-id="12c2d-126">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="12c2d-126">Click Execute.</span></span>
+15. <span data-ttu-id="12c2d-127">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="12c2d-127">Click OK.</span></span>
+16. <span data-ttu-id="12c2d-128">Klicka på Resultat.</span><span class="sxs-lookup"><span data-stu-id="12c2d-128">Click Result.</span></span>
+17. <span data-ttu-id="12c2d-129">Klicka på Resultat.</span><span class="sxs-lookup"><span data-stu-id="12c2d-129">Click Result.</span></span>
+18. <span data-ttu-id="12c2d-130">Klicka på Fortsätt.</span><span class="sxs-lookup"><span data-stu-id="12c2d-130">Click Resume.</span></span>
+19. <span data-ttu-id="12c2d-131">Klicka på Certifikat.</span><span class="sxs-lookup"><span data-stu-id="12c2d-131">Click Certificates.</span></span>
+    * <span data-ttu-id="12c2d-132">Du kan detaljgranska varje person och visa information om deras utbildning, färdigheter, yrkeserfarenhet osv.</span><span class="sxs-lookup"><span data-stu-id="12c2d-132">You can drill further into each person listed and see details regarding their education, skills, professional experience etc.</span></span>  
+20. <span data-ttu-id="12c2d-133">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="12c2d-133">Close the page.</span></span>
+21. <span data-ttu-id="12c2d-134">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="12c2d-134">Close the page.</span></span>
+22. <span data-ttu-id="12c2d-135">Välj resultatet igen.</span><span class="sxs-lookup"><span data-stu-id="12c2d-135">Select result again.</span></span>
+23. <span data-ttu-id="12c2d-136">Klicka på Rapport.</span><span class="sxs-lookup"><span data-stu-id="12c2d-136">Click Report.</span></span>
+    * <span data-ttu-id="12c2d-137">Rapporten anger de bästa matchningarna högst upp i rapporten.</span><span class="sxs-lookup"><span data-stu-id="12c2d-137">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="12c2d-138">Du kan se att det finns en lucka i listan.</span><span class="sxs-lookup"><span data-stu-id="12c2d-138">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="12c2d-139">Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.</span><span class="sxs-lookup"><span data-stu-id="12c2d-139">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
+24. <span data-ttu-id="12c2d-140">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="12c2d-140">Close the page.</span></span>
+25. <span data-ttu-id="12c2d-141">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="12c2d-141">Click Save.</span></span>
 

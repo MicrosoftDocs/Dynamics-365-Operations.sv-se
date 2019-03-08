@@ -1,13 +1,13 @@
---- 
-title: "Skapa modellmappningskonfigurationer för elektronisk rapportering (ER)"
-description: "Använd den här proceduren för att skapa en ny elektronisk rapportering (ER)-modellmappningskonfiguration och använda inbyggda funktioner för ER för effektiv aggregerade beräkningar."
+---
+title: Skapa modellmappningskonfigurationer för elektronisk rapportering (ER)
+description: Använd den här proceduren för att skapa en ny elektronisk rapportering (ER)-modellmappningskonfiguration och använda inbyggda funktioner för ER för effektiv aggregerade beräkningar.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,55 +15,54 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 614ef06fcf5761f1cf2afb6e7655558d2858d763
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357184"
 ---
-# <a name="create-electronic-reporting-er-model-mapping-configurations"></a><span data-ttu-id="dff6b-103">Skapa modellmappningskonfigurationer för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="dff6b-103">Create Electronic reporting (ER) model mapping configurations</span></span>
+# <a name="create-electronic-reporting-er-model-mapping-configurations"></a><span data-ttu-id="bb67c-103">Skapa modellmappningskonfigurationer för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="bb67c-103">Create Electronic reporting (ER) model mapping configurations</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="dff6b-104">Använd den här proceduren för att skapa en ny elektronisk rapportering (ER)-modellmappningskonfiguration och använda inbyggda funktioner för ER för effektiv aggregerade beräkningar.</span><span class="sxs-lookup"><span data-stu-id="dff6b-104">Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations.</span></span> <span data-ttu-id="dff6b-105">I det här exemplet ska du skapa en konfiguration för exempelföretaget, Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="dff6b-105">In this procedure, you will create a configuration for sample company, Litware, Inc.</span></span> 
+<span data-ttu-id="bb67c-104">Använd den här proceduren för att skapa en ny elektronisk rapportering (ER)-modellmappningskonfiguration och använda inbyggda funktioner för ER för effektiv aggregerade beräkningar.</span><span class="sxs-lookup"><span data-stu-id="bb67c-104">Use this procedure to design a new Electronic reporting (ER) model mapping configuration and use built-in ER functions for efficient aggregate calculations.</span></span> <span data-ttu-id="bb67c-105">I det här exemplet ska du skapa en konfiguration för exempelföretaget, Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="bb67c-105">In this procedure, you will create a configuration for sample company, Litware, Inc.</span></span> 
 
-<span data-ttu-id="dff6b-106">Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="dff6b-106">This procedure is created for uses with the assigned role of System administrator or Electronic reporting developer.</span></span>
+<span data-ttu-id="bb67c-106">Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="bb67c-106">This procedure is created for uses with the assigned role of System administrator or Electronic reporting developer.</span></span>
 
-<span data-ttu-id="dff6b-107">Stegen kan utföras med hjälp av valfri datauppsättning.</span><span class="sxs-lookup"><span data-stu-id="dff6b-107">These steps can be completed using any dataset.</span></span> <span data-ttu-id="dff6b-108">För att slutföra dessa steg måste du först slutföra stegen i proceduren "Skapa en konfigurationsleverantör och markera den som aktiv”.</span><span class="sxs-lookup"><span data-stu-id="dff6b-108">To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active.”</span></span>
+<span data-ttu-id="bb67c-107">Stegen kan utföras med hjälp av valfri datauppsättning.</span><span class="sxs-lookup"><span data-stu-id="bb67c-107">These steps can be completed using any dataset.</span></span> <span data-ttu-id="bb67c-108">För att slutföra dessa steg måste du först slutföra stegen i proceduren "Skapa en konfigurationsleverantör och markera den som aktiv”.</span><span class="sxs-lookup"><span data-stu-id="bb67c-108">To complete these steps, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active.”</span></span>
 
-1. <span data-ttu-id="dff6b-109">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="dff6b-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-    * <span data-ttu-id="dff6b-110">Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="dff6b-110">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active.</span></span> <span data-ttu-id="dff6b-111">Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="dff6b-111">If you don’t see this configuration provider, complete the steps in the procedure, “Create a configuration provider and mark it as active”.</span></span>  
-2. <span data-ttu-id="dff6b-112">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="dff6b-112">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="dff6b-113">Klicka på Visa filter.</span><span class="sxs-lookup"><span data-stu-id="dff6b-113">Click Show filters.</span></span>
-4. <span data-ttu-id="dff6b-114">I fältet "Namn" anger du filtervärdet, "Intrastat" och använder filteroperatören "börjar med".</span><span class="sxs-lookup"><span data-stu-id="dff6b-114">In the "Name" field, enter the filter value, "Intrastat" and use the filter operator "begins with".</span></span>
-    * <span data-ttu-id="dff6b-115">Tillämpa det här filtret om du vill hitta datamodellkonfigurationen ”Intrastat”.</span><span class="sxs-lookup"><span data-stu-id="dff6b-115">Apply this filter to find the ‘Intrastat’ data model configuration.</span></span> <span data-ttu-id="dff6b-116">Den här modellen finns redan i konfigurationsträdet.</span><span class="sxs-lookup"><span data-stu-id="dff6b-116">This model may already exist in the configurations tree.</span></span> <span data-ttu-id="dff6b-117">Om så är fallet kan du hoppa över nästa underaktivitet.</span><span class="sxs-lookup"><span data-stu-id="dff6b-117">If it does, skip the next sub-task.</span></span>   
+1. <span data-ttu-id="bb67c-109">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="bb67c-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="bb67c-110">Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="bb67c-110">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active.</span></span> <span data-ttu-id="bb67c-111">Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="bb67c-111">If you don’t see this configuration provider, complete the steps in the procedure, “Create a configuration provider and mark it as active”.</span></span>  
+2. <span data-ttu-id="bb67c-112">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="bb67c-112">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="bb67c-113">Klicka på Visa filter.</span><span class="sxs-lookup"><span data-stu-id="bb67c-113">Click Show filters.</span></span>
+4. <span data-ttu-id="bb67c-114">I fältet "Namn" anger du filtervärdet, "Intrastat" och använder filteroperatören "börjar med".</span><span class="sxs-lookup"><span data-stu-id="bb67c-114">In the "Name" field, enter the filter value, "Intrastat" and use the filter operator "begins with".</span></span>
+    * <span data-ttu-id="bb67c-115">Tillämpa det här filtret om du vill hitta datamodellkonfigurationen ”Intrastat”.</span><span class="sxs-lookup"><span data-stu-id="bb67c-115">Apply this filter to find the ‘Intrastat’ data model configuration.</span></span> <span data-ttu-id="bb67c-116">Den här modellen finns redan i konfigurationsträdet.</span><span class="sxs-lookup"><span data-stu-id="bb67c-116">This model may already exist in the configurations tree.</span></span> <span data-ttu-id="bb67c-117">Om så är fallet kan du hoppa över nästa underaktivitet.</span><span class="sxs-lookup"><span data-stu-id="bb67c-117">If it does, skip the next sub-task.</span></span>   
 
-## <a name="get-the-intrastat-model-configuration-provided-by-microsoft"></a><span data-ttu-id="dff6b-118">Hämta Intrastat-modellkonfigurationerna som tillhandahålls av Microsoft</span><span class="sxs-lookup"><span data-stu-id="dff6b-118">Get the Intrastat model configuration provided by Microsoft</span></span>
-1. <span data-ttu-id="dff6b-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="dff6b-119">Close the page.</span></span>
-2. <span data-ttu-id="dff6b-120">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="dff6b-120">Close the page.</span></span>
-3. <span data-ttu-id="dff6b-121">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="dff6b-121">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-4. <span data-ttu-id="dff6b-122">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="dff6b-122">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="dff6b-123">Välj panelen Microsoft provider.</span><span class="sxs-lookup"><span data-stu-id="dff6b-123">Select the Microsoft provider tile.</span></span>  
-5. <span data-ttu-id="dff6b-124">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="dff6b-124">Click Repositories.</span></span>
-    * <span data-ttu-id="dff6b-125">Klicka på Databaser i panelen Microsoft-leverantör.</span><span class="sxs-lookup"><span data-stu-id="dff6b-125">Click Repositories in the Microsoft provider tile.</span></span>  
-6. <span data-ttu-id="dff6b-126">Klicka på Visa filter.</span><span class="sxs-lookup"><span data-stu-id="dff6b-126">Click Show filters.</span></span>
-7. <span data-ttu-id="dff6b-127">I fältet "Typnamn" anger du filtervärdet, "resurser" och använder filteroperatören "innehåller".</span><span class="sxs-lookup"><span data-stu-id="dff6b-127">In the "Type name" field, enter the filter value, “resources” and use the filter operator "contains".</span></span> 
-8. <span data-ttu-id="dff6b-128">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="dff6b-128">Click Open.</span></span>
-9. <span data-ttu-id="dff6b-129">Välj "Intrastat-modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="dff6b-129">In the tree, select 'Intrastat model'.</span></span>
-10. <span data-ttu-id="dff6b-130">Klicka på Importera.</span><span class="sxs-lookup"><span data-stu-id="dff6b-130">Click Import.</span></span>
-11. <span data-ttu-id="dff6b-131">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="dff6b-131">Click Yes.</span></span>
-    * <span data-ttu-id="dff6b-132">Du har importerat ER-modellkonfigurationen med datamodellen som ska användas för att undersöka hur de nya funktionerna för ER kan användas.</span><span class="sxs-lookup"><span data-stu-id="dff6b-132">You imported the ER model configuration that contains the data model that you will use to explore how the new ER functionality can be used.</span></span>  
-12. <span data-ttu-id="dff6b-133">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="dff6b-133">Close the page.</span></span>
-13. <span data-ttu-id="dff6b-134">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="dff6b-134">Close the page.</span></span>
-14. <span data-ttu-id="dff6b-135">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="dff6b-135">Click Reporting configurations.</span></span>
+## <a name="get-the-intrastat-model-configuration-provided-by-microsoft"></a><span data-ttu-id="bb67c-118">Hämta Intrastat-modellkonfigurationerna som tillhandahålls av Microsoft</span><span class="sxs-lookup"><span data-stu-id="bb67c-118">Get the Intrastat model configuration provided by Microsoft</span></span>
+1. <span data-ttu-id="bb67c-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb67c-119">Close the page.</span></span>
+2. <span data-ttu-id="bb67c-120">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb67c-120">Close the page.</span></span>
+3. <span data-ttu-id="bb67c-121">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="bb67c-121">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+4. <span data-ttu-id="bb67c-122">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="bb67c-122">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="bb67c-123">Välj panelen Microsoft provider.</span><span class="sxs-lookup"><span data-stu-id="bb67c-123">Select the Microsoft provider tile.</span></span>  
+5. <span data-ttu-id="bb67c-124">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="bb67c-124">Click Repositories.</span></span>
+    * <span data-ttu-id="bb67c-125">Klicka på Databaser i panelen Microsoft-leverantör.</span><span class="sxs-lookup"><span data-stu-id="bb67c-125">Click Repositories in the Microsoft provider tile.</span></span>  
+6. <span data-ttu-id="bb67c-126">Klicka på Visa filter.</span><span class="sxs-lookup"><span data-stu-id="bb67c-126">Click Show filters.</span></span>
+7. <span data-ttu-id="bb67c-127">I fältet "Typnamn" anger du filtervärdet, "resurser" och använder filteroperatören "innehåller".</span><span class="sxs-lookup"><span data-stu-id="bb67c-127">In the "Type name" field, enter the filter value, “resources” and use the filter operator "contains".</span></span> 
+8. <span data-ttu-id="bb67c-128">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="bb67c-128">Click Open.</span></span>
+9. <span data-ttu-id="bb67c-129">Välj "Intrastat-modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="bb67c-129">In the tree, select 'Intrastat model'.</span></span>
+10. <span data-ttu-id="bb67c-130">Klicka på Importera.</span><span class="sxs-lookup"><span data-stu-id="bb67c-130">Click Import.</span></span>
+11. <span data-ttu-id="bb67c-131">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="bb67c-131">Click Yes.</span></span>
+    * <span data-ttu-id="bb67c-132">Du har importerat ER-modellkonfigurationen med datamodellen som ska användas för att undersöka hur de nya funktionerna för ER kan användas.</span><span class="sxs-lookup"><span data-stu-id="bb67c-132">You imported the ER model configuration that contains the data model that you will use to explore how the new ER functionality can be used.</span></span>  
+12. <span data-ttu-id="bb67c-133">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb67c-133">Close the page.</span></span>
+13. <span data-ttu-id="bb67c-134">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb67c-134">Close the page.</span></span>
+14. <span data-ttu-id="bb67c-135">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="bb67c-135">Click Reporting configurations.</span></span>
 
-## <a name="add-a-new-model-mapping-configuration"></a><span data-ttu-id="dff6b-136">Lägg till en ny konfiguration för modellmappning</span><span class="sxs-lookup"><span data-stu-id="dff6b-136">Add a new model mapping configuration</span></span>
-1. <span data-ttu-id="dff6b-137">Välj "Intrastat-modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="dff6b-137">In the tree, select 'Intrastat model'.</span></span>
-2. <span data-ttu-id="dff6b-138">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="dff6b-138">Click Create configuration to open the drop dialog.</span></span>
-3. <span data-ttu-id="dff6b-139">I fältet Nytt anger du "Modellmappning baserat på datamodell Intrastat".</span><span class="sxs-lookup"><span data-stu-id="dff6b-139">In the New field, enter 'Model Mapping based on data model Intrastat'.</span></span>
-4. <span data-ttu-id="dff6b-140">I fältet Namn skriver du "Intrastat-exempelmappning".</span><span class="sxs-lookup"><span data-stu-id="dff6b-140">In the Name field, type 'Intrastat sample mapping'.</span></span>
-    * <span data-ttu-id="dff6b-141">Intrastat-exempelmappning</span><span class="sxs-lookup"><span data-stu-id="dff6b-141">Intrastat sample mapping</span></span>  
-5. <span data-ttu-id="dff6b-142">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="dff6b-142">Click Create configuration.</span></span>
-
+## <a name="add-a-new-model-mapping-configuration"></a><span data-ttu-id="bb67c-136">Lägg till en ny konfiguration för modellmappning</span><span class="sxs-lookup"><span data-stu-id="bb67c-136">Add a new model mapping configuration</span></span>
+1. <span data-ttu-id="bb67c-137">Välj "Intrastat-modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="bb67c-137">In the tree, select 'Intrastat model'.</span></span>
+2. <span data-ttu-id="bb67c-138">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="bb67c-138">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="bb67c-139">I fältet Nytt anger du "Modellmappning baserat på datamodell Intrastat".</span><span class="sxs-lookup"><span data-stu-id="bb67c-139">In the New field, enter 'Model Mapping based on data model Intrastat'.</span></span>
+4. <span data-ttu-id="bb67c-140">I fältet Namn skriver du "Intrastat-exempelmappning".</span><span class="sxs-lookup"><span data-stu-id="bb67c-140">In the Name field, type 'Intrastat sample mapping'.</span></span>
+    * <span data-ttu-id="bb67c-141">Intrastat-exempelmappning</span><span class="sxs-lookup"><span data-stu-id="bb67c-141">Intrastat sample mapping</span></span>  
+5. <span data-ttu-id="bb67c-142">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="bb67c-142">Click Create configuration.</span></span>
 

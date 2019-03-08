@@ -1,13 +1,13 @@
---- 
-title: "Ställ in kompensationsrutnät"
-description: "Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner."
+---
+title: Ställ in kompensationsrutnät
+description: Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompGridView
 audience: Application User
 ms.reviewer: rschloma
@@ -16,82 +16,81 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 139c4e2adbf5029f8084c7c934a05def04cd31ca
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340417"
 ---
-# <a name="set-up-compensation-grids"></a><span data-ttu-id="fe11e-103">Ställ in kompensationsrutnät</span><span class="sxs-lookup"><span data-stu-id="fe11e-103">Set up compensation grids</span></span>
+# <a name="set-up-compensation-grids"></a><span data-ttu-id="7e8ea-103">Ställ in kompensationsrutnät</span><span class="sxs-lookup"><span data-stu-id="7e8ea-103">Set up compensation grids</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="fe11e-104">Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner.</span><span class="sxs-lookup"><span data-stu-id="fe11e-104">Compensation grids are used to define and maintain the pay structures for fixed compensation plans.</span></span> <span data-ttu-id="fe11e-105">Kompensationsrutnät kan delas mellan flera planer och kopieras när du skapar en ny kompensationsplan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-105">Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.</span></span>  <span data-ttu-id="fe11e-106">Innan du skapar ett kompensationsrutnät måste nivåer och referenspunkter ställas in.</span><span class="sxs-lookup"><span data-stu-id="fe11e-106">Before creating a compensation grid, Levels and Reference points must be set up.</span></span> <span data-ttu-id="fe11e-107">I det här exemplet skapas en ny typ av kompensationsrutnät med hjälp av demodata för nivåer och referenspunkter.</span><span class="sxs-lookup"><span data-stu-id="fe11e-107">This example will create a new Grade type of compensation grid using demo data for the Levels and Reference points.</span></span> <span data-ttu-id="fe11e-108">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="fe11e-108">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="7e8ea-104">Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-104">Compensation grids are used to define and maintain the pay structures for fixed compensation plans.</span></span> <span data-ttu-id="7e8ea-105">Kompensationsrutnät kan delas mellan flera planer och kopieras när du skapar en ny kompensationsplan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-105">Compensation grids can be shared between multiple plans or copied when creating a new compensation plan.</span></span>  <span data-ttu-id="7e8ea-106">Innan du skapar ett kompensationsrutnät måste nivåer och referenspunkter ställas in.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-106">Before creating a compensation grid, Levels and Reference points must be set up.</span></span> <span data-ttu-id="7e8ea-107">I det här exemplet skapas en ny typ av kompensationsrutnät med hjälp av demodata för nivåer och referenspunkter.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-107">This example will create a new Grade type of compensation grid using demo data for the Levels and Reference points.</span></span> <span data-ttu-id="7e8ea-108">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-108">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="set-up-information-about-the-compensation-grid"></a><span data-ttu-id="fe11e-109">Ställ in information om kompensationsrutnätet</span><span class="sxs-lookup"><span data-stu-id="fe11e-109">Set up information about the compensation grid</span></span>
-1. <span data-ttu-id="fe11e-110">Gå till Personal > Kompensation > Fast kompensation > Kompensationsrutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-110">Go to Human resources > Compensation > Fixed compensation > Compensation grids.</span></span>
-2. <span data-ttu-id="fe11e-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe11e-111">Click New.</span></span>
-3. <span data-ttu-id="fe11e-112">Ange ett värde i fältet Rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-112">In the Grid field, type a value.</span></span>
-4. <span data-ttu-id="fe11e-113">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="fe11e-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="fe11e-114">Välj ett alternativ i fältet Typ.</span><span class="sxs-lookup"><span data-stu-id="fe11e-114">In the Type field, select an option.</span></span>
-6. <span data-ttu-id="fe11e-115">Ange eller välj ett värde i fältet Referensinställningar.</span><span class="sxs-lookup"><span data-stu-id="fe11e-115">In the Reference setup field, enter or select a value.</span></span>
-7. <span data-ttu-id="fe11e-116">Ange eller välj ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="fe11e-116">In the Currency field, enter or select a value.</span></span>
-8. <span data-ttu-id="fe11e-117">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="fe11e-117">In the Currency field, type a value.</span></span>
-9. <span data-ttu-id="fe11e-118">Ange ett datum i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="fe11e-118">In the Effective date field, enter a date.</span></span>
+## <a name="set-up-information-about-the-compensation-grid"></a><span data-ttu-id="7e8ea-109">Ställ in information om kompensationsrutnätet</span><span class="sxs-lookup"><span data-stu-id="7e8ea-109">Set up information about the compensation grid</span></span>
+1. <span data-ttu-id="7e8ea-110">Gå till Personal > Kompensation > Fast kompensation > Kompensationsrutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-110">Go to Human resources > Compensation > Fixed compensation > Compensation grids.</span></span>
+2. <span data-ttu-id="7e8ea-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-111">Click New.</span></span>
+3. <span data-ttu-id="7e8ea-112">Ange ett värde i fältet Rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-112">In the Grid field, type a value.</span></span>
+4. <span data-ttu-id="7e8ea-113">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="7e8ea-114">Välj ett alternativ i fältet Typ.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-114">In the Type field, select an option.</span></span>
+6. <span data-ttu-id="7e8ea-115">Ange eller välj ett värde i fältet Referensinställningar.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-115">In the Reference setup field, enter or select a value.</span></span>
+7. <span data-ttu-id="7e8ea-116">Ange eller välj ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-116">In the Currency field, enter or select a value.</span></span>
+8. <span data-ttu-id="7e8ea-117">Ange ett värde i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-117">In the Currency field, type a value.</span></span>
+9. <span data-ttu-id="7e8ea-118">Ange ett datum i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-118">In the Effective date field, enter a date.</span></span>
 
-## <a name="add-levels-to-the-compensation-structure"></a><span data-ttu-id="fe11e-119">Lägg till nivåer i kompensationsstrukturen</span><span class="sxs-lookup"><span data-stu-id="fe11e-119">Add levels to the compensation structure</span></span>
-1. <span data-ttu-id="fe11e-120">Klicka på Kompensationsstruktur.</span><span class="sxs-lookup"><span data-stu-id="fe11e-120">Click Compensation structure.</span></span>
-2. <span data-ttu-id="fe11e-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-121">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="fe11e-122">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="fe11e-122">In the Level field, enter or select a value.</span></span>
-4. <span data-ttu-id="fe11e-123">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe11e-123">Click New.</span></span>
-5. <span data-ttu-id="fe11e-124">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-124">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="fe11e-125">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="fe11e-125">In the Level field, enter or select a value.</span></span>
-7. <span data-ttu-id="fe11e-126">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe11e-126">Click New.</span></span>
-8. <span data-ttu-id="fe11e-127">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-127">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="fe11e-128">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="fe11e-128">In the Level field, enter or select a value.</span></span>
-10. <span data-ttu-id="fe11e-129">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe11e-129">Click New.</span></span>
-11. <span data-ttu-id="fe11e-130">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-130">In the list, mark the selected row.</span></span>
-12. <span data-ttu-id="fe11e-131">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="fe11e-131">In the Level field, enter or select a value.</span></span>
-13. <span data-ttu-id="fe11e-132">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="fe11e-132">Click New.</span></span>
-14. <span data-ttu-id="fe11e-133">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-133">In the list, mark the selected row.</span></span>
-15. <span data-ttu-id="fe11e-134">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="fe11e-134">In the Level field, enter or select a value.</span></span>
+## <a name="add-levels-to-the-compensation-structure"></a><span data-ttu-id="7e8ea-119">Lägg till nivåer i kompensationsstrukturen</span><span class="sxs-lookup"><span data-stu-id="7e8ea-119">Add levels to the compensation structure</span></span>
+1. <span data-ttu-id="7e8ea-120">Klicka på Kompensationsstruktur.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-120">Click Compensation structure.</span></span>
+2. <span data-ttu-id="7e8ea-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-121">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="7e8ea-122">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-122">In the Level field, enter or select a value.</span></span>
+4. <span data-ttu-id="7e8ea-123">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-123">Click New.</span></span>
+5. <span data-ttu-id="7e8ea-124">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-124">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="7e8ea-125">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-125">In the Level field, enter or select a value.</span></span>
+7. <span data-ttu-id="7e8ea-126">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-126">Click New.</span></span>
+8. <span data-ttu-id="7e8ea-127">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-127">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="7e8ea-128">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-128">In the Level field, enter or select a value.</span></span>
+10. <span data-ttu-id="7e8ea-129">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-129">Click New.</span></span>
+11. <span data-ttu-id="7e8ea-130">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-130">In the list, mark the selected row.</span></span>
+12. <span data-ttu-id="7e8ea-131">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-131">In the Level field, enter or select a value.</span></span>
+13. <span data-ttu-id="7e8ea-132">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-132">Click New.</span></span>
+14. <span data-ttu-id="7e8ea-133">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-133">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="7e8ea-134">Ange eller välj ett värde i fältet Nivå.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-134">In the Level field, enter or select a value.</span></span>
 
-## <a name="fill-in-the-compensation-structure-with-values"></a><span data-ttu-id="fe11e-135">Fyll i kompensationsstrukturen med värden</span><span class="sxs-lookup"><span data-stu-id="fe11e-135">Fill in the compensation structure with values</span></span>
-1. <span data-ttu-id="fe11e-136">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-136">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="fe11e-137">Nu kan kompensationsvärden anges manuellt i varje fält i registret, eller också kan massändringsfunktionen användas för att fylla i flera fält och utför grundläggande beräkningar.</span><span class="sxs-lookup"><span data-stu-id="fe11e-137">At this point, compensation values can manually be entered into each field in the table, or the Mass change functionality can be used to easily fill in multiple fields and perform basic calculations.</span></span>  
-2. <span data-ttu-id="fe11e-138">Klicka på Massändra.</span><span class="sxs-lookup"><span data-stu-id="fe11e-138">Click Mass change.</span></span>
-    * <span data-ttu-id="fe11e-139">I det här rutnätet använder vi först värdet på mittpunkten på den första nivån till alla fält i registret.</span><span class="sxs-lookup"><span data-stu-id="fe11e-139">For this grid, we'll first apply the value for the midpoint of the first level's to all the fields in the table.</span></span> <span data-ttu-id="fe11e-140">Detta blir basen för kompensationsmatrisen.</span><span class="sxs-lookup"><span data-stu-id="fe11e-140">This will be the basis for the compensation matrix.</span></span>  
-3. <span data-ttu-id="fe11e-141">Välj ett alternativ i fältet Modifieringstyp.</span><span class="sxs-lookup"><span data-stu-id="fe11e-141">In the Adjustment type field, select an option.</span></span>
-4. <span data-ttu-id="fe11e-142">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="fe11e-142">In the Adjustment amount field, enter a number.</span></span>
-5. <span data-ttu-id="fe11e-143">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-143">In the list, mark or unmark all rows.</span></span>
-6. <span data-ttu-id="fe11e-144">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-144">Click Apply to grid.</span></span>
-    * <span data-ttu-id="fe11e-145">Nu använder massändringsfunktionen för att öka beloppen på varje efterföljande nivå med en viss procentandel eller ett visst belopp.</span><span class="sxs-lookup"><span data-stu-id="fe11e-145">Now we'll use the mass change function to increment the amounts in each subsequent level by a certain percentage or amount.</span></span> <span data-ttu-id="fe11e-146">I det här exemplet ska varje grad ha en spridning på 12,5 % mellan mittpunkterna.</span><span class="sxs-lookup"><span data-stu-id="fe11e-146">In this example, each grade will have a 12.5% spread between their midpoints.</span></span>  
-7. <span data-ttu-id="fe11e-147">Välj ett alternativ i fältet Modifieringstyp.</span><span class="sxs-lookup"><span data-stu-id="fe11e-147">In the Adjustment type field, select an option.</span></span>
-8. <span data-ttu-id="fe11e-148">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="fe11e-148">In the Adjustment amount field, enter a number.</span></span>
-9. <span data-ttu-id="fe11e-149">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-149">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="fe11e-150">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-150">In the list, find and select the desired record.</span></span>
-11. <span data-ttu-id="fe11e-151">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-151">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="fe11e-152">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-152">In the list, find and select the desired record.</span></span>
-13. <span data-ttu-id="fe11e-153">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-153">Click Apply to grid.</span></span>
-14. <span data-ttu-id="fe11e-154">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-154">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="fe11e-155">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-155">In the list, find and select the desired record.</span></span>
-16. <span data-ttu-id="fe11e-156">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-156">In the list, find and select the desired record.</span></span>
-17. <span data-ttu-id="fe11e-157">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-157">Click Apply to grid.</span></span>
-18. <span data-ttu-id="fe11e-158">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-158">In the list, find and select the desired record.</span></span>
-19. <span data-ttu-id="fe11e-159">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-159">In the list, find and select the desired record.</span></span>
-20. <span data-ttu-id="fe11e-160">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-160">Click Apply to grid.</span></span>
-21. <span data-ttu-id="fe11e-161">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-161">In the list, find and select the desired record.</span></span>
-22. <span data-ttu-id="fe11e-162">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-162">Click Apply to grid.</span></span>
-    * <span data-ttu-id="fe11e-163">Nu använder vi massändringsfunktionen för att de lägsta och högsta referenspunkterna för varje nivå.</span><span class="sxs-lookup"><span data-stu-id="fe11e-163">Now we'll use the mass change function to adjust the Minimum and Maximum reference points for each level.</span></span> <span data-ttu-id="fe11e-164">I det här exemplet använder vi en spridning på 50 %, så den lägsta referenspunkten justeras med -20 %, och den högsta med +20 %.</span><span class="sxs-lookup"><span data-stu-id="fe11e-164">This example will use a 50% spread so the Minimum reference point will be adjusted -20% and the Maximum will be adjusted +20%.</span></span>  
-23. <span data-ttu-id="fe11e-165">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="fe11e-165">In the Adjustment amount field, enter a number.</span></span>
-24. <span data-ttu-id="fe11e-166">Ange eller välj ett värde i fältet Referenspunkt.</span><span class="sxs-lookup"><span data-stu-id="fe11e-166">In the Reference point field, enter or select a value.</span></span>
-25. <span data-ttu-id="fe11e-167">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-167">In the list, mark or unmark all rows.</span></span>
-26. <span data-ttu-id="fe11e-168">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-168">Click Apply to grid.</span></span>
-27. <span data-ttu-id="fe11e-169">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="fe11e-169">In the Adjustment amount field, enter a number.</span></span>
-28. <span data-ttu-id="fe11e-170">Ange eller välj ett värde i fältet Referenspunkt.</span><span class="sxs-lookup"><span data-stu-id="fe11e-170">In the Reference point field, enter or select a value.</span></span>
-29. <span data-ttu-id="fe11e-171">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="fe11e-171">In the list, mark or unmark all rows.</span></span>
-30. <span data-ttu-id="fe11e-172">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="fe11e-172">Click Apply to grid.</span></span>
-
+## <a name="fill-in-the-compensation-structure-with-values"></a><span data-ttu-id="7e8ea-135">Fyll i kompensationsstrukturen med värden</span><span class="sxs-lookup"><span data-stu-id="7e8ea-135">Fill in the compensation structure with values</span></span>
+1. <span data-ttu-id="7e8ea-136">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-136">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="7e8ea-137">Nu kan kompensationsvärden anges manuellt i varje fält i registret, eller också kan massändringsfunktionen användas för att fylla i flera fält och utför grundläggande beräkningar.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-137">At this point, compensation values can manually be entered into each field in the table, or the Mass change functionality can be used to easily fill in multiple fields and perform basic calculations.</span></span>  
+2. <span data-ttu-id="7e8ea-138">Klicka på Massändra.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-138">Click Mass change.</span></span>
+    * <span data-ttu-id="7e8ea-139">I det här rutnätet använder vi först värdet på mittpunkten på den första nivån till alla fält i registret.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-139">For this grid, we'll first apply the value for the midpoint of the first level's to all the fields in the table.</span></span> <span data-ttu-id="7e8ea-140">Detta blir basen för kompensationsmatrisen.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-140">This will be the basis for the compensation matrix.</span></span>  
+3. <span data-ttu-id="7e8ea-141">Välj ett alternativ i fältet Modifieringstyp.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-141">In the Adjustment type field, select an option.</span></span>
+4. <span data-ttu-id="7e8ea-142">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-142">In the Adjustment amount field, enter a number.</span></span>
+5. <span data-ttu-id="7e8ea-143">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-143">In the list, mark or unmark all rows.</span></span>
+6. <span data-ttu-id="7e8ea-144">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-144">Click Apply to grid.</span></span>
+    * <span data-ttu-id="7e8ea-145">Nu använder massändringsfunktionen för att öka beloppen på varje efterföljande nivå med en viss procentandel eller ett visst belopp.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-145">Now we'll use the mass change function to increment the amounts in each subsequent level by a certain percentage or amount.</span></span> <span data-ttu-id="7e8ea-146">I det här exemplet ska varje grad ha en spridning på 12,5 % mellan mittpunkterna.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-146">In this example, each grade will have a 12.5% spread between their midpoints.</span></span>  
+7. <span data-ttu-id="7e8ea-147">Välj ett alternativ i fältet Modifieringstyp.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-147">In the Adjustment type field, select an option.</span></span>
+8. <span data-ttu-id="7e8ea-148">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-148">In the Adjustment amount field, enter a number.</span></span>
+9. <span data-ttu-id="7e8ea-149">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-149">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="7e8ea-150">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-150">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="7e8ea-151">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-151">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="7e8ea-152">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-152">In the list, find and select the desired record.</span></span>
+13. <span data-ttu-id="7e8ea-153">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-153">Click Apply to grid.</span></span>
+14. <span data-ttu-id="7e8ea-154">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-154">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="7e8ea-155">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-155">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="7e8ea-156">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-156">In the list, find and select the desired record.</span></span>
+17. <span data-ttu-id="7e8ea-157">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-157">Click Apply to grid.</span></span>
+18. <span data-ttu-id="7e8ea-158">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-158">In the list, find and select the desired record.</span></span>
+19. <span data-ttu-id="7e8ea-159">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-159">In the list, find and select the desired record.</span></span>
+20. <span data-ttu-id="7e8ea-160">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-160">Click Apply to grid.</span></span>
+21. <span data-ttu-id="7e8ea-161">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-161">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="7e8ea-162">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-162">Click Apply to grid.</span></span>
+    * <span data-ttu-id="7e8ea-163">Nu använder vi massändringsfunktionen för att de lägsta och högsta referenspunkterna för varje nivå.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-163">Now we'll use the mass change function to adjust the Minimum and Maximum reference points for each level.</span></span> <span data-ttu-id="7e8ea-164">I det här exemplet använder vi en spridning på 50 %, så den lägsta referenspunkten justeras med -20 %, och den högsta med +20 %.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-164">This example will use a 50% spread so the Minimum reference point will be adjusted -20% and the Maximum will be adjusted +20%.</span></span>  
+23. <span data-ttu-id="7e8ea-165">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-165">In the Adjustment amount field, enter a number.</span></span>
+24. <span data-ttu-id="7e8ea-166">Ange eller välj ett värde i fältet Referenspunkt.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-166">In the Reference point field, enter or select a value.</span></span>
+25. <span data-ttu-id="7e8ea-167">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-167">In the list, mark or unmark all rows.</span></span>
+26. <span data-ttu-id="7e8ea-168">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-168">Click Apply to grid.</span></span>
+27. <span data-ttu-id="7e8ea-169">Ange ett tal i fältet Justeringsbelopp.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-169">In the Adjustment amount field, enter a number.</span></span>
+28. <span data-ttu-id="7e8ea-170">Ange eller välj ett värde i fältet Referenspunkt.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-170">In the Reference point field, enter or select a value.</span></span>
+29. <span data-ttu-id="7e8ea-171">Markera eller avmarkera alla rader i listan.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-171">In the list, mark or unmark all rows.</span></span>
+30. <span data-ttu-id="7e8ea-172">Klicka på Använd i rutnät.</span><span class="sxs-lookup"><span data-stu-id="7e8ea-172">Click Apply to grid.</span></span>
 

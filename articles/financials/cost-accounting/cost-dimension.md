@@ -1,13 +1,13 @@
 ---
 title: Skapa dimensioner och importera dimensionsmedlemmar
-description: "Kostnadsredovisningen är en oberoende modul som kräver huvuddata från andra moduler."
+description: Kostnadsredovisningen är en oberoende modul som kräver huvuddata från andra moduler.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: josaw
@@ -18,40 +18,38 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: d48ba0a0b80d251e107baa0ceeb66d8e328f13dc
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342326"
 ---
-
-# <a name="create-dimensions-and-import-dimension-members"></a><span data-ttu-id="d2c40-103">Skapa dimensioner och importera dimensionsmedlemmar</span><span class="sxs-lookup"><span data-stu-id="d2c40-103">Create dimensions and import dimension members</span></span>
+# <a name="create-dimensions-and-import-dimension-members"></a><span data-ttu-id="d6a71-103">Skapa dimensioner och importera dimensionsmedlemmar</span><span class="sxs-lookup"><span data-stu-id="d6a71-103">Create dimensions and import dimension members</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d2c40-104">Kostnadsredovisningen är en oberoende modul som kräver data från andra moduler.</span><span class="sxs-lookup"><span data-stu-id="d2c40-104">Cost accounting is an independent module that requires data from other modules.</span></span> <span data-ttu-id="d2c40-105">Denna data kategoriseras till följande:</span><span class="sxs-lookup"><span data-stu-id="d2c40-105">This data is categorized into the following:</span></span>
+<span data-ttu-id="d6a71-104">Kostnadsredovisningen är en oberoende modul som kräver data från andra moduler.</span><span class="sxs-lookup"><span data-stu-id="d6a71-104">Cost accounting is an independent module that requires data from other modules.</span></span> <span data-ttu-id="d6a71-105">Denna data kategoriseras till följande:</span><span class="sxs-lookup"><span data-stu-id="d6a71-105">This data is categorized into the following:</span></span>
 
--  <span data-ttu-id="d2c40-106">Kostnadselement</span><span class="sxs-lookup"><span data-stu-id="d2c40-106">Cost elements</span></span>
--  <span data-ttu-id="d2c40-107">Kostnadsobjekt</span><span class="sxs-lookup"><span data-stu-id="d2c40-107">Cost objects</span></span>
--  <span data-ttu-id="d2c40-108">Statistikdimensioner</span><span class="sxs-lookup"><span data-stu-id="d2c40-108">Statistical dimensions</span></span>
+-  <span data-ttu-id="d6a71-106">Kostnadselement</span><span class="sxs-lookup"><span data-stu-id="d6a71-106">Cost elements</span></span>
+-  <span data-ttu-id="d6a71-107">Kostnadsobjekt</span><span class="sxs-lookup"><span data-stu-id="d6a71-107">Cost objects</span></span>
+-  <span data-ttu-id="d6a71-108">Statistikdimensioner</span><span class="sxs-lookup"><span data-stu-id="d6a71-108">Statistical dimensions</span></span>
 
-<span data-ttu-id="d2c40-109">Ett **Kostnadselement** motsvarar en kostnadsrelevant artikel i kontolistan.</span><span class="sxs-lookup"><span data-stu-id="d2c40-109">A **Cost element** corresponds to a cost-relevant item in the chart of accounts.</span></span> <span data-ttu-id="d2c40-110">Ett **kostnadsobjekt** motsvarar valfri ekonomisk dimensionstyp, till exempel produkter, kostnadsställen samt projekt som du vill beräkna, allokera kostnader till eller mäta direkt.</span><span class="sxs-lookup"><span data-stu-id="d2c40-110">A **Cost object** corresponds to any type of financial dimension, such as products, cost centers, and projects that you want to estimate, allocate costs to, or measure directly.</span></span> <span data-ttu-id="d2c40-111">En **statistisk dimension** och dess medlemmar används för att registrera icke-monetära poster.</span><span class="sxs-lookup"><span data-stu-id="d2c40-111">A **Statistical dimension** and its members are used to register non-monetary entries.</span></span> <span data-ttu-id="d2c40-112">Statistiska dimensionsmedlemmar kan användas som allokeringsbas inom kostnadsdistribution och -allokering</span><span class="sxs-lookup"><span data-stu-id="d2c40-112">Statistical dimension members can be used as an allocation base in cost distribution and allocation</span></span> 
+<span data-ttu-id="d6a71-109">Ett **Kostnadselement** motsvarar en kostnadsrelevant artikel i kontolistan.</span><span class="sxs-lookup"><span data-stu-id="d6a71-109">A **Cost element** corresponds to a cost-relevant item in the chart of accounts.</span></span> <span data-ttu-id="d6a71-110">Ett **kostnadsobjekt** motsvarar valfri ekonomisk dimensionstyp, till exempel produkter, kostnadsställen samt projekt som du vill beräkna, allokera kostnader till eller mäta direkt.</span><span class="sxs-lookup"><span data-stu-id="d6a71-110">A **Cost object** corresponds to any type of financial dimension, such as products, cost centers, and projects that you want to estimate, allocate costs to, or measure directly.</span></span> <span data-ttu-id="d6a71-111">En **statistisk dimension** och dess medlemmar används för att registrera icke-monetära poster.</span><span class="sxs-lookup"><span data-stu-id="d6a71-111">A **Statistical dimension** and its members are used to register non-monetary entries.</span></span> <span data-ttu-id="d6a71-112">Statistiska dimensionsmedlemmar kan användas som allokeringsbas inom kostnadsdistribution och -allokering</span><span class="sxs-lookup"><span data-stu-id="d6a71-112">Statistical dimension members can be used as an allocation base in cost distribution and allocation</span></span> 
 
-<span data-ttu-id="d2c40-113">Följande diagram illustrerar de dimensioner som används inom kostnadsredovisningen.</span><span class="sxs-lookup"><span data-stu-id="d2c40-113">The following diagram illustrates the dimensions that are used in Cost accounting.</span></span>
+<span data-ttu-id="d6a71-113">Följande diagram illustrerar de dimensioner som används inom kostnadsredovisningen.</span><span class="sxs-lookup"><span data-stu-id="d6a71-113">The following diagram illustrates the dimensions that are used in Cost accounting.</span></span>
 
-<span data-ttu-id="d2c40-114">[![Dimensioner i kostnadsredovisning](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span><span class="sxs-lookup"><span data-stu-id="d2c40-114">[![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span></span>
+<span data-ttu-id="d6a71-114">[![Dimensioner i kostnadsredovisning](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span><span class="sxs-lookup"><span data-stu-id="d6a71-114">[![Cost accounting dimensions](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)</span></span>
 
-<span data-ttu-id="d2c40-115">När datan väl har importerats till kostnadsredovisningen kan du använda den för att skapa olika perspektiv som ger insikter till chefer på alla organisationsnivåer.</span><span class="sxs-lookup"><span data-stu-id="d2c40-115">After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization.</span></span> <span data-ttu-id="d2c40-116">Mer information om hur du skapar dimensioner och importerar dimensionsmedlemmar finns i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="d2c40-116">The following topics provide information about creating dimensions and importing dimension members.</span></span> 
+<span data-ttu-id="d6a71-115">När datan väl har importerats till kostnadsredovisningen kan du använda den för att skapa olika perspektiv som ger insikter till chefer på alla organisationsnivåer.</span><span class="sxs-lookup"><span data-stu-id="d6a71-115">After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization.</span></span> <span data-ttu-id="d6a71-116">Mer information om hur du skapar dimensioner och importerar dimensionsmedlemmar finns i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="d6a71-116">The following topics provide information about creating dimensions and importing dimension members.</span></span> 
 
--  [<span data-ttu-id="d2c40-117">Dimensioner för kostnadselement</span><span class="sxs-lookup"><span data-stu-id="d2c40-117">Cost element dimensions</span></span>](cost-elements.md)
--  [<span data-ttu-id="d2c40-118">Skapa kostnadselement (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="d2c40-118">Create cost elements (Task guide)</span></span>](./tasks/create-cost-elements.md)
--  [<span data-ttu-id="d2c40-119">Kostnadsobjektdimensioner</span><span class="sxs-lookup"><span data-stu-id="d2c40-119">Cost object dimensions</span></span>](cost-objects.md)
--  [<span data-ttu-id="d2c40-120">Skapa kostnadselement (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="d2c40-120">Create cost elements (Task guide)</span></span>](./tasks/create-cost-objects.md)
--  [<span data-ttu-id="d2c40-121">Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar</span><span class="sxs-lookup"><span data-stu-id="d2c40-121">Map cost element dimension members to a common set of dimension members</span></span>](map-cost-elements-dimension-members.md)
--  [<span data-ttu-id="d2c40-122">Mappa dimension för kostnadselement (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="d2c40-122">Map a cost element dimension (Task guide)</span></span>](./tasks/map-cost-element-dimension.md)
--  [<span data-ttu-id="d2c40-123">Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar</span><span class="sxs-lookup"><span data-stu-id="d2c40-123">Statistical dimension members and statistical measure provider templates</span></span>](statistical-measure-provider-template.md)
-
+-  [<span data-ttu-id="d6a71-117">Dimensioner för kostnadselement</span><span class="sxs-lookup"><span data-stu-id="d6a71-117">Cost element dimensions</span></span>](cost-elements.md)
+-  [<span data-ttu-id="d6a71-118">Skapa kostnadselement (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="d6a71-118">Create cost elements (Task guide)</span></span>](./tasks/create-cost-elements.md)
+-  [<span data-ttu-id="d6a71-119">Kostnadsobjektdimensioner</span><span class="sxs-lookup"><span data-stu-id="d6a71-119">Cost object dimensions</span></span>](cost-objects.md)
+-  [<span data-ttu-id="d6a71-120">Skapa kostnadselement (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="d6a71-120">Create cost elements (Task guide)</span></span>](./tasks/create-cost-objects.md)
+-  [<span data-ttu-id="d6a71-121">Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar</span><span class="sxs-lookup"><span data-stu-id="d6a71-121">Map cost element dimension members to a common set of dimension members</span></span>](map-cost-elements-dimension-members.md)
+-  [<span data-ttu-id="d6a71-122">Mappa dimension för kostnadselement (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="d6a71-122">Map a cost element dimension (Task guide)</span></span>](./tasks/map-cost-element-dimension.md)
+-  [<span data-ttu-id="d6a71-123">Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar</span><span class="sxs-lookup"><span data-stu-id="d6a71-123">Statistical dimension members and statistical measure provider templates</span></span>](statistical-measure-provider-template.md)
 
 
 

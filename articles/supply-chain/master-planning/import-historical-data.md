@@ -1,13 +1,13 @@
 ---
-title: "Importera historikdata för efterfrågeprognoser"
-description: "För att få korrekta efterfrågeprognoser behöver du historiska efterfrågedata per artikel eller artikelallokeringsnyckel. Det här avsnittet beskriver hur du använder dataenheter för att importera historiska efterfrågedata från valfritt system, så att du får en längre historik över efterfrågeprognosdatan."
+title: Importera historikdata för efterfrågeprognoser
+description: För att få korrekta efterfrågeprognoser behöver du historiska efterfrågedata per artikel eller artikelallokeringsnyckel. Det här avsnittet beskriver hur du använder dataenheter för att importera historiska efterfrågedata från valfritt system, så att du får en längre historik över efterfrågeprognosdatan.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -18,46 +18,44 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 018694c79c6dd64e19b010848aad8acd36b0a9a8
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328618"
 ---
-
-# <a name="import-historical-data-for-demand-forecasts"></a><span data-ttu-id="95ca1-104">Importera historikdata för efterfrågeprognoser</span><span class="sxs-lookup"><span data-stu-id="95ca1-104">Import historical data for demand forecasts</span></span>
+# <a name="import-historical-data-for-demand-forecasts"></a><span data-ttu-id="7aba9-104">Importera historikdata för efterfrågeprognoser</span><span class="sxs-lookup"><span data-stu-id="7aba9-104">Import historical data for demand forecasts</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="95ca1-105">För att garantera att efterfrågeprognoserna blir korrekt måste du ha lika mycket historiska efterfrågeuppgifter som du kan för varje artikel eller artikelallokeringsnyckel.</span><span class="sxs-lookup"><span data-stu-id="95ca1-105">To help guarantee the accuracy of demand forecasts, you must have as much historical demand data as you can get per item or item allocation key.</span></span> <span data-ttu-id="95ca1-106">Om den historiska begärandedatan inte redan har importerats, använd då dataenheten **Historisk extern begäran** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Finance and Operations för att importera den.</span><span class="sxs-lookup"><span data-stu-id="95ca1-106">If the historical demand data isn't already imported, use the **Historical external demand** (ReqDemPlanHistoricalExternalDemandEntity) data entity in Microsoft Dynamics 365 for Finance and Operations to import it.</span></span>
+<span data-ttu-id="7aba9-105">För att garantera att efterfrågeprognoserna blir korrekt måste du ha lika mycket historiska efterfrågeuppgifter som du kan för varje artikel eller artikelallokeringsnyckel.</span><span class="sxs-lookup"><span data-stu-id="7aba9-105">To help guarantee the accuracy of demand forecasts, you must have as much historical demand data as you can get per item or item allocation key.</span></span> <span data-ttu-id="7aba9-106">Om den historiska efterfrågedatan inte redan har importerats, använd då dataenheten **Historisk extern efterfrågan** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Finance and Operations för att importera den.</span><span class="sxs-lookup"><span data-stu-id="7aba9-106">If the historical demand data isn't already imported, use the **Historical external demand** (ReqDemPlanHistoricalExternalDemandEntity) data entity in Microsoft Dynamics 365 for Finance and Operations to import it.</span></span>
 
-<span data-ttu-id="95ca1-107">I arbetsytan **Datahantering** kan du visa en översikt över alla fält i entiteten.</span><span class="sxs-lookup"><span data-stu-id="95ca1-107">In the **Data management** workspace, you can see an overview of all the fields in the entity.</span></span>
+<span data-ttu-id="7aba9-107">I arbetsytan **Datahantering** kan du visa en översikt över alla fält i entiteten.</span><span class="sxs-lookup"><span data-stu-id="7aba9-107">In the **Data management** workspace, you can see an overview of all the fields in the entity.</span></span>
 
-1. <span data-ttu-id="95ca1-108">Öppna arbetsytan **Datahantering**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-108">Open the **Data management** workspace.</span></span>
-2. <span data-ttu-id="95ca1-109">Klicka på fliken **Dataenheter**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-109">Click the **Data entities** tile.</span></span>
-3. <span data-ttu-id="95ca1-110">Sök enhetslistan för **Historisk extern efterfrågan**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-110">Search the entity list for **Historical external demand**.</span></span>
-4. <span data-ttu-id="95ca1-111">Klicka på **Målfält**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-111">Click **Target fields**.</span></span> <span data-ttu-id="95ca1-112">Följande enhetsfält är obligatoriska: webbplats (**DeliveringSiteId**), datum (**DemandDate**), kvantitet (**DemandQuantity**) samt antingen artikelnummer (**ItemNumber**) eller artikelallokeringsnyckel (**ProductAllocationKeyId**).</span><span class="sxs-lookup"><span data-stu-id="95ca1-112">The following entity fields are mandatory: site (**DeliveringSiteId**), date (**DemandDate**), quantity (**DemandQuantity**), and either item number (**ItemNumber**) or item allocation key (**ProductAllocationKeyId**).</span></span>
+1. <span data-ttu-id="7aba9-108">Öppna arbetsytan **Datahantering**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-108">Open the **Data management** workspace.</span></span>
+2. <span data-ttu-id="7aba9-109">Klicka på fliken **Dataenheter**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-109">Click the **Data entities** tile.</span></span>
+3. <span data-ttu-id="7aba9-110">Sök enhetslistan för **Historisk extern efterfrågan**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-110">Search the entity list for **Historical external demand**.</span></span>
+4. <span data-ttu-id="7aba9-111">Klicka på **Målfält**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-111">Click **Target fields**.</span></span> <span data-ttu-id="7aba9-112">Följande enhetsfält är obligatoriska: webbplats (**DeliveringSiteId**), datum (**DemandDate**), kvantitet (**DemandQuantity**) samt antingen artikelnummer (**ItemNumber**) eller artikelallokeringsnyckel (**ProductAllocationKeyId**).</span><span class="sxs-lookup"><span data-stu-id="7aba9-112">The following entity fields are mandatory: site (**DeliveringSiteId**), date (**DemandDate**), quantity (**DemandQuantity**), and either item number (**ItemNumber**) or item allocation key (**ProductAllocationKeyId**).</span></span>
 
-<span data-ttu-id="95ca1-113">Du måste ha en Microsoft Excel-fil eller kommaseparerade värden (CSV) som innehåller historiska efterfrågeuppgifter data om du vill använda dataenheten.</span><span class="sxs-lookup"><span data-stu-id="95ca1-113">To use the data entity, you must have a Microsoft Excel file or comma-separated values (CSV) file that contains the historical demand data.</span></span> <span data-ttu-id="95ca1-114">I följande exempel visas hur du importerar data från en CSV-fil.</span><span class="sxs-lookup"><span data-stu-id="95ca1-114">The following example shows how to import the data from a CSV file.</span></span>
+<span data-ttu-id="7aba9-113">Du måste ha en Microsoft Excel-fil eller kommaseparerade värden (CSV) som innehåller historiska efterfrågeuppgifter data om du vill använda dataenheten.</span><span class="sxs-lookup"><span data-stu-id="7aba9-113">To use the data entity, you must have a Microsoft Excel file or comma-separated values (CSV) file that contains the historical demand data.</span></span> <span data-ttu-id="7aba9-114">I följande exempel visas hur du importerar data från en CSV-fil.</span><span class="sxs-lookup"><span data-stu-id="7aba9-114">The following example shows how to import the data from a CSV file.</span></span>
 
-## <a name="example"></a><span data-ttu-id="95ca1-115">Exempel</span><span class="sxs-lookup"><span data-stu-id="95ca1-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7aba9-115">Exempel</span><span class="sxs-lookup"><span data-stu-id="7aba9-115">Example</span></span>
 
-<span data-ttu-id="95ca1-116">Du kan använda följande fil som exempel.</span><span class="sxs-lookup"><span data-stu-id="95ca1-116">You can use the following file as an example.</span></span> <span data-ttu-id="95ca1-117">Hämta [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast).</span><span class="sxs-lookup"><span data-stu-id="95ca1-117">Download the [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast).</span></span> <span data-ttu-id="95ca1-118">Denna fil innehåller historiska efterfrågedata för artikel D0001.</span><span class="sxs-lookup"><span data-stu-id="95ca1-118">This file contains the historical demand data for item D0001.</span></span> <span data-ttu-id="95ca1-119">Den innehåller endast följande obligatoriska fält: webbplats, kvantitet och efterfrågedatum.</span><span class="sxs-lookup"><span data-stu-id="95ca1-119">It contains only the following mandatory fields: site, quantity, and the demand date.</span></span>
+<span data-ttu-id="7aba9-116">Du kan använda följande fil som exempel.</span><span class="sxs-lookup"><span data-stu-id="7aba9-116">You can use the following file as an example.</span></span> <span data-ttu-id="7aba9-117">Hämta [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast).</span><span class="sxs-lookup"><span data-stu-id="7aba9-117">Download the [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast).</span></span> <span data-ttu-id="7aba9-118">Denna fil innehåller historiska efterfrågedata för artikel D0001.</span><span class="sxs-lookup"><span data-stu-id="7aba9-118">This file contains the historical demand data for item D0001.</span></span> <span data-ttu-id="7aba9-119">Den innehåller endast följande obligatoriska fält: webbplats, kvantitet och efterfrågedatum.</span><span class="sxs-lookup"><span data-stu-id="7aba9-119">It contains only the following mandatory fields: site, quantity, and the demand date.</span></span>
 
-1. <span data-ttu-id="95ca1-120">Välj det företag som du vill importera de historiska efterfrågeuppgifterna till.</span><span class="sxs-lookup"><span data-stu-id="95ca1-120">Select the company to import the historical demand data into.</span></span>
-2. <span data-ttu-id="95ca1-121">Öppna arbetsytan **Datahantering**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-121">Open the **Data management** workspace.</span></span>
-3. <span data-ttu-id="95ca1-122">Klicka på fliken **Importera**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-122">Click the **Import** tile.</span></span>
-4. <span data-ttu-id="95ca1-123">Namnge importprojektet, exempelvis **Importera historisk efterfrågan för artikeln D0001**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-123">Enter a name for the import project, such as **Import historical demand for item D0001**.</span></span>
-5. <span data-ttu-id="95ca1-124">I fältet **Källdataformat** väljer du filformat för den fil som du importerar.</span><span class="sxs-lookup"><span data-stu-id="95ca1-124">In the **Source data format** field, select the file format of the file that you're importing.</span></span> <span data-ttu-id="95ca1-125">Om du vill importera filen HistoricalDemandData i det här exemplet väljer du **CSV**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-125">To import the HistoricalDemandData file for this example, select **CSV**.</span></span>
-6. <span data-ttu-id="95ca1-126">I fältet **Enhetsnamn** väljer du **Historisk extern efterfrågan**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-126">In the **Entity name** field, select **Historical external demand**.</span></span>
-7. <span data-ttu-id="95ca1-127">Spara filen på din dator och överför den sedan.</span><span class="sxs-lookup"><span data-stu-id="95ca1-127">Save the file to your computer, and then upload it.</span></span>
-8. <span data-ttu-id="95ca1-128">Klicka på **Importera**.</span><span class="sxs-lookup"><span data-stu-id="95ca1-128">Click **Import**.</span></span>
-9. <span data-ttu-id="95ca1-129">Sidan **Utförandesummering** öppnas automatiskt.</span><span class="sxs-lookup"><span data-stu-id="95ca1-129">The **Execution summary** page is opened automatically.</span></span> <span data-ttu-id="95ca1-130">Kontrollera den importerade informationen på sidan.</span><span class="sxs-lookup"><span data-stu-id="95ca1-130">Verify the imported data on the page.</span></span>
+1. <span data-ttu-id="7aba9-120">Välj det företag som du vill importera de historiska efterfrågeuppgifterna till.</span><span class="sxs-lookup"><span data-stu-id="7aba9-120">Select the company to import the historical demand data into.</span></span>
+2. <span data-ttu-id="7aba9-121">Öppna arbetsytan **Datahantering**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-121">Open the **Data management** workspace.</span></span>
+3. <span data-ttu-id="7aba9-122">Klicka på fliken **Importera**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-122">Click the **Import** tile.</span></span>
+4. <span data-ttu-id="7aba9-123">Namnge importprojektet, exempelvis **Importera historisk efterfrågan för artikeln D0001**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-123">Enter a name for the import project, such as **Import historical demand for item D0001**.</span></span>
+5. <span data-ttu-id="7aba9-124">I fältet **Källdataformat** väljer du filformat för den fil som du importerar.</span><span class="sxs-lookup"><span data-stu-id="7aba9-124">In the **Source data format** field, select the file format of the file that you're importing.</span></span> <span data-ttu-id="7aba9-125">Om du vill importera filen HistoricalDemandData i det här exemplet väljer du **CSV**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-125">To import the HistoricalDemandData file for this example, select **CSV**.</span></span>
+6. <span data-ttu-id="7aba9-126">I fältet **Enhetsnamn** väljer du **Historisk extern efterfrågan**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-126">In the **Entity name** field, select **Historical external demand**.</span></span>
+7. <span data-ttu-id="7aba9-127">Spara filen på din dator och överför den sedan.</span><span class="sxs-lookup"><span data-stu-id="7aba9-127">Save the file to your computer, and then upload it.</span></span>
+8. <span data-ttu-id="7aba9-128">Klicka på **Importera**.</span><span class="sxs-lookup"><span data-stu-id="7aba9-128">Click **Import**.</span></span>
+9. <span data-ttu-id="7aba9-129">Sidan **Utförandesummering** öppnas automatiskt.</span><span class="sxs-lookup"><span data-stu-id="7aba9-129">The **Execution summary** page is opened automatically.</span></span> <span data-ttu-id="7aba9-130">Kontrollera den importerade informationen på sidan.</span><span class="sxs-lookup"><span data-stu-id="7aba9-130">Verify the imported data on the page.</span></span>
 
-<span data-ttu-id="95ca1-131">När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.</span><span class="sxs-lookup"><span data-stu-id="95ca1-131">After you've imported the historical demand data, you can generate a demand forecast.</span></span>
+<span data-ttu-id="7aba9-131">När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.</span><span class="sxs-lookup"><span data-stu-id="7aba9-131">After you've imported the historical demand data, you can generate a demand forecast.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="95ca1-132">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="95ca1-132">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7aba9-132">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="7aba9-132">Additional resources</span></span>
 
-[<span data-ttu-id="95ca1-133">Generera en statistisk baslinjeprognos</span><span class="sxs-lookup"><span data-stu-id="95ca1-133">Generate a statistical baseline forecast</span></span>](generate-statistical-baseline-forecast.md)
-
+[<span data-ttu-id="7aba9-133">Generera en statistisk baslinjeprognos</span><span class="sxs-lookup"><span data-stu-id="7aba9-133">Generate a statistical baseline forecast</span></span>](generate-statistical-baseline-forecast.md)

@@ -1,13 +1,13 @@
 ---
 title: Nedbrytning av en strukturlisteversion
-description: "Den här artikeln förklarar ett övergripande planeringsscenario som omfattar nedbrytning av en strukturlista (BOM)."
+description: Den här artikeln förklarar ett övergripande planeringsscenario som omfattar nedbrytning av en strukturlista (BOM).
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: josaw
@@ -19,34 +19,32 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 4f3c800d96805df38a2e31018f2d6c305e3ed7da
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353918"
 ---
-
-# <a name="explosion-of-a-bom-version"></a><span data-ttu-id="6bb4b-103">Nedbrytning av en strukturlisteversion</span><span class="sxs-lookup"><span data-stu-id="6bb4b-103">Explosion of a BOM version</span></span>
+# <a name="explosion-of-a-bom-version"></a><span data-ttu-id="57da8-103">Nedbrytning av en strukturlisteversion</span><span class="sxs-lookup"><span data-stu-id="57da8-103">Explosion of a BOM version</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6bb4b-104">Den här artikeln förklarar ett övergripande planeringsscenario som omfattar nedbrytning av en strukturlista (BOM).</span><span class="sxs-lookup"><span data-stu-id="6bb4b-104">This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.</span></span>
+<span data-ttu-id="57da8-104">Den här artikeln förklarar ett övergripande planeringsscenario som omfattar nedbrytning av en strukturlista (BOM).</span><span class="sxs-lookup"><span data-stu-id="57da8-104">This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.</span></span>
 
-<span data-ttu-id="6bb4b-105">En efterfrågenedbrytning av en strukturlisteversion skapar en efterfrågan för varje artikelrad i strukturlistan på en viss site och kanske ett särskilt lager.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-105">A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse.</span></span> <span data-ttu-id="6bb4b-106">I en sitespecifik strukturlista kan ett visst lager definieras för varje strukturlisterad.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-106">In a site-specific BOM, a specific warehouse can be defined for each BOM line.</span></span> <span data-ttu-id="6bb4b-107">Dessutom bestämmer artikeldimensionens inställningar huruvida lagret krävs för varje strukturlisterad.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-107">Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required.</span></span> <span data-ttu-id="6bb4b-108">Den resulterande efterfrågan för varje strukturlisterad blir i sin tur utgångspunkten för en vidare efterfrågenedbrytning.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-108">The resulting demand for each BOM line item then becomes the starting point for additional demand explosion.</span></span> <span data-ttu-id="6bb4b-109">Det här huvudplaneringsscenariot omfattar följande villkor:</span><span class="sxs-lookup"><span data-stu-id="6bb4b-109">This master planning scenario involves the following conditions:</span></span>
+<span data-ttu-id="57da8-105">En efterfrågenedbrytning av en strukturlisteversion skapar en efterfrågan för varje artikelrad i strukturlistan på en viss site och kanske ett särskilt lager.</span><span class="sxs-lookup"><span data-stu-id="57da8-105">A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse.</span></span> <span data-ttu-id="57da8-106">I en sitespecifik strukturlista kan ett visst lager definieras för varje strukturlisterad.</span><span class="sxs-lookup"><span data-stu-id="57da8-106">In a site-specific BOM, a specific warehouse can be defined for each BOM line.</span></span> <span data-ttu-id="57da8-107">Dessutom bestämmer artikeldimensionens inställningar huruvida lagret krävs för varje strukturlisterad.</span><span class="sxs-lookup"><span data-stu-id="57da8-107">Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required.</span></span> <span data-ttu-id="57da8-108">Den resulterande efterfrågan för varje strukturlisterad blir i sin tur utgångspunkten för en vidare efterfrågenedbrytning.</span><span class="sxs-lookup"><span data-stu-id="57da8-108">The resulting demand for each BOM line item then becomes the starting point for additional demand explosion.</span></span> <span data-ttu-id="57da8-109">Det här huvudplaneringsscenariot omfattar följande villkor:</span><span class="sxs-lookup"><span data-stu-id="57da8-109">This master planning scenario involves the following conditions:</span></span>
 
--   <span data-ttu-id="6bb4b-110">Sitedimensionen är obligatorisk och måste anges på efterfrågetransaktionen.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-110">The site dimension is mandatory and must be entered on the demand transaction.</span></span>
--   <span data-ttu-id="6bb4b-111">Sitedimensionen är konsekvent.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-111">The site dimension is consistent.</span></span> <span data-ttu-id="6bb4b-112">Därför är siten för efterfrågan på lägre nivåer densamma som siten för den ursprungliga efterfrågetransaktionen.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-112">Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.</span></span>
+-   <span data-ttu-id="57da8-110">Sitedimensionen är obligatorisk och måste anges på efterfrågetransaktionen.</span><span class="sxs-lookup"><span data-stu-id="57da8-110">The site dimension is mandatory and must be entered on the demand transaction.</span></span>
+-   <span data-ttu-id="57da8-111">Sitedimensionen är konsekvent.</span><span class="sxs-lookup"><span data-stu-id="57da8-111">The site dimension is consistent.</span></span> <span data-ttu-id="57da8-112">Därför är siten för efterfrågan på lägre nivåer densamma som siten för den ursprungliga efterfrågetransaktionen.</span><span class="sxs-lookup"><span data-stu-id="57da8-112">Therefore, the site for lower-level demand is the same as the site on the initial demand transaction.</span></span>
 
-<span data-ttu-id="6bb4b-113">Följande bild visar hur processen för efterfrågenedbrytningen i huvudplaneringen fortskrider.</span><span class="sxs-lookup"><span data-stu-id="6bb4b-113">The following illustration shows how the process for master planning demand explosion.</span></span> ![Efterfrågenedbrytning med hjälp av strukturlisteversion](./media/multisitedemandexplosionscenariousingbomversion.gif)
+<span data-ttu-id="57da8-113">Följande bild visar hur processen för efterfrågenedbrytningen i huvudplaneringen fortskrider.</span><span class="sxs-lookup"><span data-stu-id="57da8-113">The following illustration shows how the process for master planning demand explosion.</span></span> ![Efterfrågenedbrytning med hjälp av strukturlisteversion](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="additional-resources"></a><span data-ttu-id="6bb4b-115">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="6bb4b-115">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="57da8-115">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="57da8-115">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="6bb4b-116">Huvudplanering - hur strukturlisteversionen bestäms</span><span class="sxs-lookup"><span data-stu-id="6bb4b-116">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
+[<span data-ttu-id="57da8-116">Huvudplanering - hur strukturlisteversionen bestäms</span><span class="sxs-lookup"><span data-stu-id="57da8-116">Master planning - how the BOM version is determined</span></span>](master-plan-bom-version-determined.md)
 
-[<span data-ttu-id="6bb4b-117">Huvudplanering och multisitefunktioner</span><span class="sxs-lookup"><span data-stu-id="6bb4b-117">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
-
+[<span data-ttu-id="57da8-117">Huvudplanering och multisitefunktioner</span><span class="sxs-lookup"><span data-stu-id="57da8-117">Master planning and multisite functionality</span></span>](master-plan-multisite-functionality.md)
 
 
 
