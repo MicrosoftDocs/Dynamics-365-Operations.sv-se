@@ -1,13 +1,13 @@
 ---
 title: Projektprognoser och projektbudgetar
-description: "Microsoft Dynamics 365 for Finance and Operations tillhandahåller projektprognoser och projektbudgetar för att hantera och kontrollera dina projekt."
+description: Microsoft Dynamics 365 for Finance and Operations ger projektprognoser och projektbudgetar för att hantera och kontrollera dina projekt.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310402"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Projektprognoser och projektbudgetar
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations tillhandahåller två sätt för att hantera och kontrollera dina projekt: projektprognoser och projektbudgetar. 
+Microsoft Dynamics 365 for Finance and Operations erbjuder två sätt att hantera och styra dina projekt: projektprognoser och projektbudgetar. 
 
 Använda projektprognoser om organisationen har ett driftperspektiv och fokuserar på intäkter och kostnader som härleds från specifika transaktioner. Om din organisation fokuserar mer på ekonomiska belopp, kan du använda budgetering. 
 
@@ -80,7 +79,6 @@ Projektbudgeter associeras automatiskt med två prognosmodeller, en för ursprun
 Prognosmodeller har enskikts hierarki. Detta innebär att varje projektprognos måste vara kopplad till en prognosmodell.
 
 Om du använder projektprognoser kan du identifiera modeller som delmodeller. Du kan sedan skapa prognoser efter avdelning, tidsperiod eller region. Du kan till exempel skapa en prognosmodell för ett år och sedan delmodeller för regionprognoserna nordost, sydost, nordväst och sydväst som regioncheferna skickar in. Genom att välja olika alternativ i det tillgängliga rapporterna kan du visa information efter total prognos eller efter delmodell.
-
 
 
 

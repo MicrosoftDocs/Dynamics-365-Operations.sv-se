@@ -1,13 +1,13 @@
 ---
 title: Redovisningskvittningar
-description: "Det här avsnittet beskriver hur du använder sidan Redovisningskvittningar för att kvitta redovisningstransaktioner och återföra kvittningar."
+description: Det här avsnittet beskriver hur du använder sidan Redovisningskvittningar för att kvitta redovisningstransaktioner och återföra kvittningar.
 author: mikefalkner
 manager: aolson
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b02a1a066913c9959e9a55e78789e5ff1a175c56
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: ec659a53c187b1bdfd81565d6e2f20a59e08834c
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308493"
 ---
-
 # <a name="ledger-settlements"></a>Redovisningskvittningar
 
 [!include [banner](../includes/banner.md)]
@@ -76,4 +75,3 @@ Du kan återföra en kvittning som har gjorts av misstag.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Uppdatera listan över konton som ingår i transaktionslistan
 
 Välj **Konton för redovisningskvittning** för att öppna en dialogruta där du kan redigera de konton som ingår i listan över transaktioner. Välj **Ny** om du vill lägga till en ny bild i listan. Listan används för att filtrera listan över transaktioner som visas på sidan **Redovisningskvittningar**.
-

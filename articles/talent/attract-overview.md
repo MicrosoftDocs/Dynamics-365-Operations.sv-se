@@ -1,13 +1,13 @@
 ---
-title: "Funktioner och möjligheter i Attract"
-description: "Här beskrivs funktionerna som Attract tillhandahåller för att hantera processen med att anställa nya användare."
+title: Funktioner och möjligheter i Attract
+description: Här beskrivs funktionerna som Attract tillhandahåller för att hantera processen med att anställa nya användare.
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306266"
 ---
 # <a name="attract-features-and-capabilities"></a>Funktioner och möjligheter i Attract
 
@@ -46,4 +46,3 @@ Attract innehåller en fördefinierad rekryteringsprocess som har fyra grundläg
 
 ## <a name="candidate-app"></a>Kandidatapp
 Så fort de har lagts till i ett jobb får kandidaterna ett e-postmeddelande som inkluderar en länk för att hämta webbappen. Appen ger information om jobbet och används för att kommunicera med rekryteringsteamet. De sökande kan även använda det för att registrera sin tillgänglighet för intervjuer.
-

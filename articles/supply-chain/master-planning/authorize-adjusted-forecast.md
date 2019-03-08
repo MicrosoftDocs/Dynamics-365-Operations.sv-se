@@ -1,13 +1,13 @@
 ---
 title: Auktorisera en justerad prognos
-description: "Inte alla prognosdata måste godkännas omedelbart. Denna artikel beskriver hur du kan ange den period som en prognos är godkända för. Det förklarar också hur du kan attestera prognos för specifika företag och prognosmodeller."
+description: Inte alla prognosdata måste godkännas omedelbart. Denna artikel beskriver hur du kan ange den period som en prognos är godkända för. Det förklarar också hur du kan attestera prognos för specifika företag och prognosmodeller.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanImportForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6c397329993bd3014b608cdc50d5002dcd5ed6a4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 64838fd20349c21bf3c0a3b9a3c68d4f19f60745
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313484"
 ---
-
 # <a name="authorize-an-adjusted-forecast"></a>Auktorisera en justerad prognos
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Det är mycket viktigt att du förstår hur **spara den manuella justeringar av 
 [Gör manuella justeringar till den ursprungliga prognosen](manual-adjustments-baseline-forecast.md)
 
 [Övervaka prognosprecision](monitor-forecast-accuracy.md)
-
 
 
 

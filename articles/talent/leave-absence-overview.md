@@ -1,13 +1,13 @@
 ---
-title: "Hantering av tjänstledighet och frånvaro"
-description: "Det här avsnittet innehåller en översikt över modulen tjänstledighets- och frånvarohantering."
+title: Hantering av tjänstledighet och frånvaro
+description: Det här avsnittet innehåller en översikt över modulen tjänstledighets- och frånvarohantering.
 author: ryansandness
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 72bfbb878fa076e204e00c3ccaceb4ba04c00ea9
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306265"
 ---
 # <a name="leave-and-absence-management"></a>Hantering av tjänstledighet och frånvaro
 
@@ -68,4 +68,3 @@ Tjänstledighets- och frånvarohantering innehåller följande funktioner:
 - **Skicka ledighetsansökningar.**
 
     Medarbetare kan skicka ledighetsansökningar mot sina tillgängliga timmar. Ansökningar kan vara enkla endagsansökningar eller flera dagar ansökningar som omfattar flera typer av tjänstledighet och frånvaro. Om ett arbetsflöde inte är aktiverat kommer ansökan att godkännas automatiskt. Om ett arbetsflöde aktiverats kan godkännandet ske automatiskt eller kräva signering, beroende på hur arbetsflödet är inställt.
-

@@ -1,14 +1,14 @@
 ---
 title: En verifikation
-description: "En verifikation för redovisningsjournaler (allmän journal, journal för anläggningstillgångar, leverantörsbetalningsjournal och så vidare) låter dig ange flera redovisningsjournaltransaktioner i samband med en enda verifikation."
+description: En verifikation för redovisningsjournaler (allmän journal, journal för anläggningstillgångar, leverantörsbetalningsjournal och så vidare) låter dig ange flera redovisningsjournaltransaktioner i samband med en enda verifikation.
 author: kweekley
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
+ms.openlocfilehash: ada04948c4775091091cc30664dd7d9405b4f9da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 26ae31efe55eeaf6d09ef14112811ea8977bfb0a
-ms.openlocfilehash: 62c30ea748c49b0a3cfe544c7ba10eb52389c50a
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/05/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308562"
 ---
-
 # <a name="one-voucher"></a>En verifikation
 
 [!include [banner](../includes/banner.md)]
@@ -69,7 +68,7 @@ På grund av de problem som har angetts tidigare används inte längre funktione
 - **Version våren 2018** – som standard inaktiveras funktionen via parametern **tillåta flera transaktioner i en verifikation** på fliken **allmänna** på sidan **allmänna redovisningsparametrar**. Men kan du aktivera funktionen om ditt företag har ett scenario som faller inom en av funktionsluckorna som nämns senare i detta avsnitt.
 
     - Om kunder har ett affärsscenario som inte kräver en verifikation ska funktionen inte aktiveras. Microsoft åtgärdar inte ”fel” i områden som identifierades senare i det här avsnittet om den här funktionen används även om det finns en annan lösning.
-    - Sluta använda en verifikation för integrering i Microsoft Dynamics 365 for Finance and Operations om funktionen krävs för en av de fungerande luckorna.
+    - Sluta använda en verifikation för integrering i Microsoft Dynamics 365 for Finance and Operations om inte funktionen krävs för en av de fungerande luckorna.
 
 - **Senare versioner** – Alla funktionella luckorna fylls. **När funktionella luckor har fyllt och nya funktioner levereras tar det minst ett år innan funktionen för en verifikation inaktiveras permanent**, eftersom kunder och oberoende programförsäljare (ISV) måste ha tillräckligt med tid att reagera på de nya funktionerna. De kan t.ex. behöva uppdatera sina affärsprocesser, enheter och integration.
 
@@ -153,7 +152,7 @@ Organisationer vill ofta bokföra i redovisningen i sammanfattningsform för att
 
 Det här scenariot finns vanligtvis i butiksorganisationer där användare kan använda flera betalningsmetoder för inköp. I det här scenariot måste organisationen kunna registrera flera ej bokförda betalningar och kvitta dem mot den valda kundfakturan.
 
-En ny funktion lades till i Microsoft Dynamics 365 for Operations version 1611 (November 2016) som tillåter flera ej bokförda betalningar att kvittas mot en enda faktura. +Flera kundbetalningar måste inte längre tas upp i en enda verifikation.
+En ny funktion lades till i Microsoft Dynamics 365 for Operations version 1611 (november 2016) som tillåter flera ej bokförda betalningar att kvittas mot en enda faktura. +Flera kundbetalningar måste inte längre tas upp i en enda verifikation.
 
 ### <a name="import-bank-statement-transactions"></a>Importera transaktioner för bankutdrag
 

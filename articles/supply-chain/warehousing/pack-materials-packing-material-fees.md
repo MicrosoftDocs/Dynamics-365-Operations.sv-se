@@ -1,13 +1,13 @@
 ---
-title: "Förpackningsmaterial och avgifter"
-description: "Avgifter för förpackningsmaterial betalas i vissa intervaller till ett återvinningsföretag. Ett belopp per viktenhet måste betalas för varje material som en förpackningsenhet består av. Avgifter för förpackningsmaterial beräknas och rapporteras, men inga redovisningstransaktioner bokförs eftersom avgifterna inte räknas som skatter som måste betalas till en myndighet."
+title: Förpackningsmaterial och avgifter
+description: Avgifter för förpackningsmaterial betalas i vissa intervaller till ett återvinningsföretag. Ett belopp per viktenhet måste betalas för varje material som en förpackningsenhet består av. Avgifter för förpackningsmaterial beräknas och rapporteras, men inga redovisningstransaktioner bokförs eftersom avgifterna inte räknas som skatter som måste betalas till en myndighet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c188651fe8ba3fe3f9678f36ab11ae886ef6f1cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312311"
 ---
-
 # <a name="packing-materials-and-fees"></a>Förpackningsmaterial och avgifter
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,6 @@ Om ditt företag ska betala förpackningsmaterialavgifterna ska du inte fylla i 
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Skriv ut vikter på förpackningsmaterial på fakturor
 Du kan skriva ut vikter för förpackningsmaterial på fakturan och ange vem som betalar förpackningsmaterialavgifterna. Vikterna sammanställs efter förpackningsmaterialkod.
-
 
 
 

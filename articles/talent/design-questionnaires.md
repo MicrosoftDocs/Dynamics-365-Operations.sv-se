@@ -1,13 +1,13 @@
 ---
-title: "Utforma enkäter"
-description: "Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller."
+title: Utforma enkäter
+description: Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306272"
 ---
-
 # <a name="design-questionnaires"></a>Utforma enkäter
 
 [!include [banner](includes/banner.md)]
@@ -94,7 +93,7 @@ Nummerseriekoderna används för att ordna frågor och svar. Baserat på nummers
 Du bör definiera alla parametrar innan du börjar skapa dina data. Du kan ändra enkätparameterinställningarna när som helst.
 
 ## <a name="questionnaire-components"></a>Enkätkomponenter
-Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor, frågor i enkäten samt själva enkäten. Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper kategoriserar frågor och tillhandahåller ytterligare analys i enkäten. 
+Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor, frågor i enkäten samt själva enkäten. Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper kategoriserar frågor och tillhandahåller ytterligare analys i enkäten. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -111,7 +110,7 @@ Svarsgrupper och svar är komponenter som utgör det huvudsakliga informationsma
 
 Samma svarsgrupp kan användas för fler frågor i samma enkät och den kan också användas i flera enkäter. 
 
-**Anm.** Om du ändrar svarstext i svarsgrupper som redan har använts i ifyllda enkäter kan bli data svåra att utvärdera och enkätresultat gäller kanske inte längre. Om du måste ändra en svarsgrupp, bör du vill skapa en ny svarsgrupp i stället för att ändra en befintlig. Du kan inte radera svarsgrupper som har kopplats till en fråga eller ett svar eller som har besvarats.
+**Anm.** Om du ändrar svarstext i svarsgrupper som redan har använts i ifyllda enkäter kan bli data svåra att utvärdera och enkätresultat gäller kanske inte längre. Om du måste ändra en svarsgrupp, bör du vill skapa en ny svarsgrupp i stället för att ändra en befintlig. Du kan inte radera svarsgrupper som har kopplats till en fråga eller ett svar eller som har besvarats.
 
 ### <a name="questions"></a>Frågor
 
@@ -186,11 +185,11 @@ En resultatgrupp används för att beräkna poäng och kategorisera resultaten f
 
 Bifoga frågor till en enkät genom att använda resultatgrupper, genom att först lägga till resultatgrupper för enkäten och sedan lägga till frågor till resultatgrupperna. Om du inte använder resultatgrupper kan du koppla frågor direkt till enkäten. 
 
-Du kan ställa in resultatgrupper för att bedöma hur många poäng som en svarande har i varje kategori. När en enkät har slutförts kan du visa hur många poäng som har uppnåtts för varje resultatgrupp. 
+Du kan ställa in resultatgrupper för att bedöma hur många poäng som en svarande har i varje kategori. När en enkät har slutförts kan du visa hur många poäng som har uppnåtts för varje resultatgrupp. 
 
-**Tips:** Om du vill utvärdera en enkät genom att använda poäng men inte separata kategorier, kan du lägga till alla frågor i en enskild resultatgrupp. 
+**Tips:** Om du vill utvärdera en enkät genom att använda poäng men inte separata kategorier, kan du lägga till alla frågor i en enskild resultatgrupp. 
 
-För varje resultatgrupp kan du även skapa en eller flera poängbaserade meddelanden som svarande får när de har fyllt i en enkät. Texten som visas kan variera beroende på poängen som en svarande får i en resultatgrupp. Använd poängbaserade meddelanden genom att definiera poängintervall och en beskrivning av varje intervall. När en svarande uppnår en poäng i ett speciellt intervall inkluderas texten för det intervallet i resultatrapporten. 
+För varje resultatgrupp kan du även skapa en eller flera poängbaserade meddelanden som svarande får när de har fyllt i en enkät. Texten som visas kan variera beroende på poängen som en svarande får i en resultatgrupp. Använd poängbaserade meddelanden genom att definiera poängintervall och en beskrivning av varje intervall. När en svarande uppnår en poäng i ett speciellt intervall inkluderas texten för det intervallet i resultatrapporten. 
 
 Eftersom en resultatgrupp är relaterad till poäng som är kopplade till specifika uppsättningar med frågor i en enkät, kan du endast använda en viss resultatgrupp för en enkät.
 
@@ -238,5 +237,4 @@ Alternativt kan du skapa en enkät så att om den svarande väljer Svar A på fr
 [Distribuera och slutföra enkäter](distribute-questionnaires.md)
 
 [Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
-
 

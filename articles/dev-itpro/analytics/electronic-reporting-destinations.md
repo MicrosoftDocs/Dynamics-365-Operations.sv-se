@@ -1,13 +1,13 @@
 ---
-title: "Destinationer för elektronisk rapportering (ER)"
-description: "Du kan konfigurera en mål för varje elektronisk rapportering (ER) formatkonfiguration för elektronisk rapportering (ER) (en mapp eller en fil). Användare med rätt behörighet kan även ändra målsinställningarna vid körning. Den här artikeln innehåller en beskrivning av hur ER-mål, typer av mål som stöds och säkerhetsaspekter hanteras."
+title: Destinationer för elektronisk rapportering (ER)
+description: Du kan konfigurera en mål för varje elektronisk rapportering (ER) formatkonfiguration för elektronisk rapportering (ER) (en mapp eller en fil). Användare med rätt behörighet kan även ändra målsinställningarna vid körning. Den här artikeln innehåller en beskrivning av hur ER-mål, typer av mål som stöds och säkerhetsaspekter hanteras.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314933"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ Du kan konfigurera en mål för varje elektronisk rapportering (ER) formatkonfig
 Formatkonfigurationer för elektronisk rapportering (ER) innehåller vanligtvis minst en utdatakomponent: en fil. Vanligtvis innehåller konfigurationerna flera filutdatakomponenter av olika typer (till exempel XML, TXT eller XLSX) som är grupperade i en enda mapp eller i flera mappar. Med hjälp av målshantering för ER kan du förkonfigurera vad som händer när du kör varje komponent. När du kör en konfiguration visas automatiskt en dialogruta som låter användaren spara eller öppna filen. Samma beteende uppvisas när du importerar en ER-konfiguration och inte konfigurerar några specifika mål för den. När du har skapat en mål för en huvudutdatakomponent åsidosätter målen standardbeteendet och mappen eller filen skickas enligt inställningarna för målen.
 
 ## <a name="availability-and-general-prerequisites"></a>Tillgänglighet och allmänna förutsättningar
-Funktionen för ER-målen är inte tillgänglig i Microsoft Dynamics AX 7.0 (februari 2016). Därför måste du installera Microsoft Dynamics 365 for Operation version 1611 (November 2016) att använda de funktioner som beskrivs i detta avsnitt. Alternativt kan du installera någon av följande förutsättningar: Notera emellertid att dessa alternativ ger en mer begränsad upplevelse av ER-målen.
+Funktionen för ER-målen är inte tillgänglig i Microsoft Dynamics AX 7.0 (februari 2016). Därför måste du installera Microsoft Dynamics 365 for Operations version 1611 (November 2016) att använda de funktioner som beskrivs i detta avsnitt. Alternativt kan du installera någon av följande förutsättningar: Notera emellertid att dessa alternativ ger en mer begränsad upplevelse av ER-målen.
 
-- Microsoft Dynamics AX, programvaruversion 7.0.1 (maj 2016)
+- Microsoft Dynamics AX programversion 7.0.1 (maj 2016)
 - [Snabbkorrigering av programvara](https://fix.lcs.dynamics.com/issue/results/?q=3160213) för ER-målshantering
 
 Du kan enbart ställa in mål för ER-konfigurationer som har importerats och för de format som är tillgängliga på sidan **Konfigurationer för elektronisk rapportering**.
@@ -105,9 +104,9 @@ Platsen avgör var filen sparas. När målen **Arkiv** har aktiverats kan result
 
 #### <a name="sharepoint"></a>SharePoint
 
-Du kan spara en fil i en viss SharePoint-mapp. Du anger förvald SharePoint-server under **Organisationsadministration** &gt; **Dokumenthantering** &gt; **Parametrar för dokumenthantering** på fliken **SharePoint**. När SharePoint-mappen har konfigurerats kan du välja den som den mapp där ER-resultatet sparas för dokumenttypen.
+Du kan spara en fil i en viss SharePoint-mapp. Du anger förvald SharePoint-server på **Organisationsadministration** &gt; **Dokumenthantering** &gt; **Parametrar för dokumenthantering**, på fliken **SharePoint**. När SharePoint mappen har konfigurerats kan du välja den som den mapp där ER-resultatet sparas för dokumenttypen.
 
-[![Markera en SharePoint-mapp](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
+[![Markera SharePoint-mappen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
 #### <a name="azure-storage"></a>Azure Storage
 
@@ -119,11 +118,11 @@ Om du anger **Aktiverad** som **Ja** visas en dialogruta för Öppna eller Spara
 
 ### <a name="screen-destination"></a>Skärmmål
 
-Om du ställer in **Aktiverad** som **Ja** skapas en förhandsgranskning av resultatet. Du kan visa vissa filtyper, till exempel XML, TXT eller PDF, direkt i ett webbläsarfönster. För andra filtyper som exempelvis Microsoft Excel eller Word, används tjänsten Microsoft Office Online.
+Om du ställer in **Aktiverad** som **Ja** skapas en förhandsgranskning av resultatet. Du kan visa vissa filtyper, till exempel XML, TXT eller PDF, direkt i ett webbläsarfönster. För andra filtyper som exempelvis Microsoft Excel eller Word, används tjänsten Microsoft Office Office Online.
 
-### <a name="power-bi-destination"></a>Power BI-mål
+### <a name="power-bi-destination"></a>Power BI-destination
 
-Ange **Aktiverad** som **Ja** om du vill använda din konfiguration för elektronisk rapportering (ER) för att ordna överföringen av data från din Finance and Operations-instans till Microsoft Power BI-tjänster. De överförda filerna lagras i en Microsoft SharePoint-serverinstans som måste ha konfigurerats för det syftet. Mer information finns i [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+Ange **Aktiverad** till **Ja** om du vill använda din konfiguration för elektronisk rapportering (ER) för att ordna överföringen av data från din Finance and Operations-instans till Microsoft Power BI-tjänster. De överförda filerna lagras i en Microsoft SharePoint-serverinstans som måste ha konfigurerats för det syftet. Mer information finns i [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Om du vill åsidosätta standardbeteendet (dvs. dialogrutan för en konfiguration) kan du skapa en målsreferens och en målsfil för huvudutdatakomponenten och sedan inaktivera alla mål.
@@ -165,4 +164,3 @@ Förutsättningen är att formatet är tillgängligt i ER-konfigurationerna. Om 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering](general-electronic-reporting.md)
-

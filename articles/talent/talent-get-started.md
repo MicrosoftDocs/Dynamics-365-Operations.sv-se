@@ -1,13 +1,13 @@
 ---
-title: "Kom igång med Talent"
-description: "Det här avsnittet innehåller information om hur du anpassar dina inställningar för användargränssnittet som ansluter till hjälpresurser som är tillgängliga i produkten och på webbplatsen docs.microsoft.com."
+title: Kom igång med Talent
+description: Det här avsnittet innehåller information om hur du anpassar dina inställningar för användargränssnittet som ansluter till hjälpresurser som är tillgängliga i produkten och på webbplatsen docs.microsoft.com.
 author: rschloma
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: ddd7d9315b61cb3aa5e23f86666752ca8280acbf
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306333"
 ---
 # <a name="get-started-with-talent"></a>Kom igång med Talent
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/09/2018
 I Microsoft Dynamics 365 for Talent är det enkelt att ändra användargränssnittet och ange alternativ som gör programmet enklare för dina behov. Det här avsnittet innehåller länkar till avsnitt med information om hur du anpassar användargränssnittet enligt dina önskemål. Avsnittet innehåller också länkar till information som hjälper dig att hitta information i systemet effektivt och korrekt. 
 
 > [!NOTE] 
-> Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
+> Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail och Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent. I avsnitt som huvudsakligen berör kärnprodukter blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
 
 ## <a name="personalizing-talent"></a>Anpassa Talent 
 Följande avsnitt beskriver hur du ställer in många funktioner som gör det enklare för dig att få arbetet gjort i tid i Dynamics 365 for Talent. 
@@ -64,6 +64,5 @@ I följande avsnitt beskrivs hur du använder sökningar och funktionerna för s
 Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videoklipp
-Ta en titt på instruktionsfilmerna som finns på [YouTube-kanalen för Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

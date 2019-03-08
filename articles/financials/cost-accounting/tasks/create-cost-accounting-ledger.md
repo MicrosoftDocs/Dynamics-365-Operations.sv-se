@@ -1,13 +1,13 @@
---- 
-title: "Skapa en redovisning för kostnadsredovisning"
-description: "En huvudbok för kostnadsredovisning utgör den övergripande rapporteringsenheten."
+---
+title: Skapa en redovisning för kostnadsredovisning
+description: En huvudbok för kostnadsredovisning utgör den övergripande rapporteringsenheten.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a9878a03181ccb1eb9e31edefae345cee84b40c5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ba8562f01ef440dd98db242550ee0e60db7acfc5
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310218"
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Skapa en redovisning för kostnadsredovisning
 
@@ -37,5 +37,4 @@ En huvudbok för kostnadsredovisning utgör den övergripande rapporteringsenhet
 7. Ange eller välj ett värde i fältet Valutakurstyp.
 8. Ange eller välj ett värde i fältet Statistikdimension.
 9. Klicka på Spara.
-
 

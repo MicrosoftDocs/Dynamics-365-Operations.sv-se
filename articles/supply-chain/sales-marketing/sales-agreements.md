@@ -1,13 +1,13 @@
 ---
-title: "Försäljningsavtal"
-description: "Det här ämnet innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter."
+title: Försäljningsavtal
+description: Det här ämnet innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309528"
 ---
-
 # <a name="sales-agreements"></a>Försäljningsavtal
 
 [!include [banner](../includes/banner.md)]
@@ -100,18 +99,17 @@ Om du har skapat (frisläppt) en försäljningsorder mot ett försäljningsavtal
 | Kvantitet                                                          | Om du anger en kvantitet som överskrider kvantiteten som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** om du vill ta bort länken till försäljningsavtalsraden och om du vill räkna om priset. Klicka på **Nej** om du vill ta bort länken till försäljningsavtalsraden och om du inte vill räkna om priset.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnera en artikel som har beställts från ett försäljningsavtal
-När en kund returnerar en produkt som har beställts från ett försäljningsavtal kan Microsoft Dynamics 365 for Finance and Operations söka efter och automatiskt uppdatera den relaterade utfästelsen för försäljningsavtalet för att återspegla ändringen i kvantitet eller belopp. Genom att skapa en returorder som baseras på den ursprungliga försäljningsordern som är kopplad till en försäljningsavtal, upprättar du en relation mellan försäljningsavtalutfästelsen, försäljningsorderraden och returnera orderfakturan.  
+När en kund returnerar en produkt som har beställts från en försäljningsavtal, kan Microsoft Dynamics 365 for Finance and Operations söka efter och automatiskt uppdatera den relaterade försäljningsavtalutfästelsen för att återspeglar ändringen i kvantitet eller ett belopp. Genom att skapa en returorder som baseras på den ursprungliga försäljningsordern som är kopplad till en försäljningsavtal, upprättar du en relation mellan försäljningsavtalutfästelsen, försäljningsorderraden och returnera orderfakturan.  
 
 Om du inte vill dra av en returnerad artikelkvantiteten från försäljningsavtalutfästelsen, kan du använda kontrollen **Ta bort länk** på sidan **Returorder** för att ta bort länken mellan returordern och försäljningsavtalutfästelsen. Om du behöver återställa länken senare, klicka på **Skapa länk**.  
 
 **Obs!** En returorder kan bara länkas till en försäljningsavtal. Om din kund returnerar mer än en produkt som har beställts från mer än ett försäljningsavtal, måste du skapa en ny returorder för varje produkt och skapa en länk till motsvarande försäljningsavtalet.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatisk sökning efter försäljningsavtal
-I vissa fall där försäljningsorder skapas indirekt såsom när du skapar en kreditfaktura eller koncerninterna försäljningsorder, kan du kontrollera att Microsoft Dynamics 365 for Finance and Operations söker automatiskt efter tillämpliga försäljningsavtal.
+I vissa fall där försäljningsorder skapas indirekt, som till exempel när du skapar en kreditfaktura eller koncerninterna försäljningsorder, kan du kontrollera att Microsoft Dynamics 365 for Finance and Operations söker automatiskt efter tillämpliga försäljningsavtal.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Ekonomiska dimensioner i försäljningsavtal
 Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda rader i ett försäljningsavtal. Du kan ändra dimensionerna i ett avtalshuvud eller avtalsrad när som helst. I det här fallet kopieras dimensionerna automatiskt till leveranshuvudet eller leveransraden på leveransordern.
-
 
 
 

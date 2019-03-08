@@ -1,37 +1,36 @@
 ---
 title: Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
-description: "Det här avsnittet beskriver hur du löser ett problem där namnen på personer och befattningar trunkeras när kunder visar befattningshierarkin i Microsoft Dynamics 365 for Talent. Texttrunkering kan göra det svårt att ta en skärmbild eller skriva ut hierarkin."
+description: Det här avsnittet beskriver hur du löser ett problem där namnen på personer och befattningar trunkeras när kunder visar befattningshierarkin i Microsoft Dynamics 365 for Talent. Texttrunkering kan göra det svårt att ta en skärmbild eller skriva ut hierarkin.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: b688a396e3b384aedb06c470b1634150ae7aa038
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306232"
 ---
-
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Undvika att texten trunkeras i befattningshierarkin och exportera till Visio
 
 [!include [banner](includes/banner.md)]
 
 **Utleverans**
 
-När en kund visar befattningshierarkin i Microsoft Dynamics 365 for Talent trunkeras namnen på individer och befattningar. Därför kan det vara svårt att ta en skärmbild eller att skriva ut och distribuera hierarkin.
+När en kund visar befattningshierarkin i Dynamics 365 for Talent trunkeras namnen på individer och befattningar. Därför kan det vara svårt att ta en skärmbild eller att skriva ut och distribuera hierarkin.
 
 ![Befattningshierarki](media/position-h.png)
 
@@ -107,4 +106,3 @@ Baserat på de fält som du valt att inkludera i diagrammet visar varje nod den 
 **Ytterligare alternativ**
 
 I Talent kanske du också använder arbetsytan **Personer** för att visa hierarkirelaterad information.
-

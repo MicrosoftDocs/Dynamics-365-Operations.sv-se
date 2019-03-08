@@ -1,30 +1,29 @@
 ---
-title: "Jämförelse mellan moln- och lokala funktioner"
-description: "Detta avsnitt anger vilka funktioner stöds i molnet och på plats."
+title: Jämförelse mellan moln- och lokala funktioner
+description: Detta avsnitt anger vilka funktioner stöds i molnet och på plats.
 author: robinarh
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
-ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313990"
 ---
-
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Jämförelse mellan moln- och lokala funktioner
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 12/04/2018
 Detta avsnitt anger huruvida respektive funktion finns i dessa produkter:
 
 + Dynamics 365 for Finance and Operations (moln)
-+ Dynamics 365 for Finance and Operations (lokal)
++ Dynamics 365 for Finance and Operations (lokalt)
 
 Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för funktionen som helhet. Funktionerna listas på en separat rad i kolumnen Funktion i de fall där specifika funktioner varierar från området som helhet.
 
@@ -46,7 +45,7 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | | Innehållspaket för kostnadsredovisning för Power BI | Ja | Nr |
 | | Arbetsyta för kostnadsredovisning för mobilapp | Ja | Nr |
 | Kostnadshantering | | Ja | Ja |
-| | Innehållspaket för kostnadshantering för Power BI | Ja | Nr |
+| | Innehållspaket Kostnadshantering för Power BI | Ja | Nr |
 | Datahantering och integration | | Ja | Ja |
 | | Konfigurationsdrivet tillägg | Ja | Nr |
 | | Exportera data till ditt eget datalager | Ja | Ja |
@@ -78,14 +77,14 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | | Direktinsättning | Ja | Nr |
 | Anskaffning och källa | | Ja | Ja |
 | | Utstämpling till extern katalog från inköpsrekvisition | Ja | Nr |
-| | Power BI-rapporter som berör analyser av inköpsutgifter | Ja | Nr |
+| | Inköps- och utgiftsanalys Power BI-rapporter | Ja | Nr |
 | Produktinformationshantering | | Ja | Ja |
 | Produktmalldata | | Ja | Ja |
 | Produktion | | Ja | Ja |
-| | Power BI-rapporter över produktionsresultat | Ja | Nr |
+| | Produktionsprestanda Power BI-rapporter | Ja | Nr |
 | Projekthantering och redovisning | | Ja | Ja |
 | Försäljning | | Ja | Ja |
-| | Power BI-rapporter över sälj- och lönsamhetsresultat | Ja | Nr |
+| | Försäljnings- och lönsamhetsresultat Power BI-rapporter | Ja | Nr |
 | Säkerhet | | Ja | Ja |
 | Servicehantering | | Ja | Ja |
 | Hantering av underleverantörer | | Ja | Ja |
@@ -93,7 +92,7 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | Leverantörssamarbete | | Ja | Nr |
 | Lagerstyrning | | Ja | Ja |
 | | Lagerapp för mobil | Ja | Ja |
-| | Power BI-lagerrapporter | Ja | Nr |
+| | Power BI-rapporter för lagerställe | Ja | Nr |
 | Webbklient | | Ja | Ja |
 | | Uppgiftsregistrerare - Spara eller ladda uppgiftsregistreringar från BPM-biblioteket | Ja | Nr |
 | Support | | Ja | Ja |
@@ -115,7 +114,7 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | | Uppgradering och stöd för tidigare versioner | Ja | Nr |
 | Visual Studio-utveckling | | Ja | Ja |
 
-### <a name="retail"></a>Retail 
+### <a name="retail"></a>Detaljhandel 
 En lista över Retail-funktioner som är tillgängliga i lokal distribution finns i [Retail-funktionerna i lokala distributioner](../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
@@ -127,4 +126,3 @@ En lista över Retail-funktioner som är tillgängliga i lokal distribution finn
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Funktioner som inte implementerats i lokala distributioner](features-not-implemented-on-prem.md)
-

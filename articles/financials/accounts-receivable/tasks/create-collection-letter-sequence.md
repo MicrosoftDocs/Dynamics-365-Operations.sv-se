@@ -1,13 +1,13 @@
---- 
+---
 title: Skapa in en kravbrevsserie
-description: "Använd den här uppgifthandbok om du vill skapa ett kravbrev sekvens."
+description: Använd den här uppgifthandbok om du vill skapa ett kravbrev sekvens.
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: db5264f6d8d7723ff01d13e99728c2bfebcb4515
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6331c3680169b305c4bfbfada4ba106b619be092
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311575"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Skapa in en kravbrevsserie
 
@@ -65,5 +65,4 @@ Använd den här uppgifthandbok om du vill skapa ett kravbrev sekvens. I den hä
 26. Expandera snabbfliken Anmärkning.
 27. Ange den text som ska visas i kravbrevet för den valda kravbrevskoden.
     * Du kan översätta den här texten in på språk med hjälp av översättningsmenyn över anmärkningsasken.  
-
 

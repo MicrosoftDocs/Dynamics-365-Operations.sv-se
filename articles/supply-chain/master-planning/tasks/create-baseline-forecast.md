@@ -1,13 +1,13 @@
---- 
+---
 title: Skapa en baslinjeprognos
-description: "En produktionsplanerare kan skapa en baslinjeprognos, antingen genom att använda tidsserieprognosmodeller eller genom att kopiera den historiska efterfrågan."
+description: En produktionsplanerare kan skapa en baslinjeprognos, antingen genom att använda tidsserieprognosmodeller eller genom att kopiera den historiska efterfrågan.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqIntercompanyPlanningGroupSetup, ReqIntercompanyPlanningGroupAllocKeys, ReqDemPlanForecastParameters, ReqDemPlanCreateForecastDialog, SysQueryForm, ReqDemPlanForecastViewer
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0d23e245ed1c084c26554ef3f859fdadaef9990d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e6363ee48c0d13c79a6c623205dfa10f50d6070f
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310057"
 ---
 # <a name="create-a-baseline-forecast"></a>Skapa en baslinjeprognos
 
@@ -81,5 +81,4 @@ En produktionsplanerare kan skapa en baslinjeprognos, antingen genom att använd
 4. Du har gjort en manuell justering av prognosen. Observera den grafiska indikeringen i nästa steg.
 5. Klicka på Raddetaljer för prognos.
     * På den här sidan kan du se precisionsvärdena, den historiska efterfrågan och prognosen. Du kan fortfarande göra ändringar även i prognosen.  
-
 

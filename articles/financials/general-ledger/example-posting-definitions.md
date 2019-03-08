@@ -1,13 +1,13 @@
 ---
-title: "Bokföringsdefinitioner"
-description: "Denna artikel innehåller exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslag."
+title: Bokföringsdefinitioner
+description: Denna artikel innehåller exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslag.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f5fb08a86639e9a9a79dca5fc1200e73e5870432
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 10015952773ce0ae6ab36912df636919b572704d
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310264"
 ---
-
 # <a name="posting-definition-examples"></a>Exempel: bokföringsdefinitioner
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ Genererade redovisningsposter skapas för att registrera den ursprungliga budget
 | 300146-OU\_1-OU\_3566-Training | 250.00 |        |         |
 
 I det här exemplet matchar alla konton, som är en del av kontostrukturen - Resultat matchar bokföringsdefinitionvillkoren. När 606400-OU\_1-OU\_3566-utbildning utvärderas, skapas därför genererade bokföringsposter.
-
 
 
 

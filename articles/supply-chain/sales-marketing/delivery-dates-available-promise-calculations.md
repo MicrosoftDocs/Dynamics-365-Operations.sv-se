@@ -1,13 +1,13 @@
 ---
-title: "Orderlöfte"
-description: "Denna artikel innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum."
+title: Orderlöfte
+description: Denna artikel innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312357"
 ---
-
 # <a name="order-promising"></a>Orderlöfte
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Du skapar en försäljningsorderrad för produkten och anger kvantitetens **150*
 Eftersom metoden för kontroll av leveransdatum är ATP, beräknas ATP-data för att hitta tidigast möjliga transportdatum. Försenade inköpsorder och försäljningsorder beaktas baserat på inställningarna, och resulterande ATP-kvantitet för det aktuella datumet är 0. Imorgon, då den försenade inköpsordern förväntas inlevereras, beräknas ATP-kvantiteten som mer än 0 (i detta fal beräknas den som 125). 10 dagar från och med nu, när ytterligare inköpsorder för 100 enheter förväntas inlevereras, kommer ATP-kvantiteten däremot att överstiga 150.  
 
 Därför anges transportdatum som 10 dagar från nu, baserat på beräkningen av ATP. Därför talar du om för kunden att den begärda kvantiteten kan levereras 10 dagar från och med nu.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Gör manuella justeringar på baslinjeprognosen"
-description: "Detta ämne beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen."
+title: Gör manuella justeringar på baslinjeprognosen
+description: Detta ämne beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a7c7d1fcaaeef7a01b43886e4d69458dbd942439
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 543a88a8df4252e5bf1b6b27b5209650c1ceca0b
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315899"
 ---
-
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Gör manuella justeringar på baslinjeprognosen
 
 [!include [banner](../includes/banner.md)]
@@ -72,7 +71,7 @@ Du kan öppna **Demand forecast sidan detaljer för** att se mer information om 
 **Anteckningar:**
 
 -   De konfidensintervall som visas i **Prognosdelen** av sidan representerar skillnaden mellan konfidensintervall övre gräns och konfidensintervallet undre gräns. För att se värdena för de övre och nedre gränserna, hovra över diagrammet i den **historiska efterfrågan och prognos grafiskt** .
--   Om du använder tjänsten Microsoft Azure Machine Learning för Finance and Operations-efterfrågeprognoser, kan du ange vilken förtroendenivå som den genererade prognosen ska ha. Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att efterfrågan faller utanför konfidensintervallet.
+-   Om du använder tjänsten Microsoft Azure för Finance and Operations-efterfrågeprognoser, kan du ange vilken förtroendenivå som den genererade prognosen ska ha. Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att efterfrågan faller utanför konfidensintervallet.
 
 Du kan också göra manuella justeringar av prognosen på **efterfrågan sidan detaljer** genom att ändra värdena i **prognosen** raden i **prognos** .
 
@@ -82,7 +81,6 @@ Du kan också göra manuella justeringar av prognosen på **efterfrågan sidan d
 [Övervaka prognosprecision](monitor-forecast-accuracy.md)
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
-
 
 
 

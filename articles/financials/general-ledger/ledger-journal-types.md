@@ -1,13 +1,13 @@
 ---
 title: Redovisningsjournaltyper
-description: "I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler."
+description: I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
 ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308677"
 ---
-
 # <a name="ledger-journal-types"></a>Redovisningsjournaltyper
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler. Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations.
+I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisningsjournaler. Använd sidan **Journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations.
 
 | Journaltyp                      | Syfte                       | Registrera transaktioner på denna sida                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
@@ -64,7 +63,6 @@ I det här avsnittet beskrivs de journaltyper där du kan ställa in redovisning
 | Registrering av leverantörsfaktura          | Bokföra leverantörsfakturor som är i en journal.                                                                                                                                                                                                                                                                                                                 | Fakturajournal                                                |
 | Leverantör ställer ut ny skuldsedel     | Återutställa en skuldsedel som tidigare har inlösts av din organisations bank.                                                                                                                                                                                                                                                                      | Journal för återutställda skuldsedlar                                 |
 | Leverantör likviderar skuldsedel     | Skapa transaktioner för leverantörslikvid av skuldsedel.                                                                                                                                                                                                                                                                                                          | Journal för likviderade skuldsedlar                                 |
-
 
 
 

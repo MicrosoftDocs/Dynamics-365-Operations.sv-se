@@ -1,13 +1,13 @@
---- 
-title: "Använd konfigurationer för modellmappning för att sammanställa beräkningar på databasnivå"
-description: "Denna procedur ger information för att skapa en ny elektronisk rapportering (ER)-modellmappningskonfiguration och använda inbyggda funktioner för ER för effektiv aggregerade beräkningar."
+---
+title: Använd konfigurationer för modellmappning för att sammanställa beräkningar på databasnivå
+description: Denna procedur ger information för att skapa en ny elektronisk rapportering (ER)-modellmappningskonfiguration och använda inbyggda funktioner för ER för effektiv aggregerade beräkningar.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313645"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Använd konfigurationer för modellmappning för att sammanställa beräkningar på databasnivå
 
@@ -37,7 +37,7 @@ Den här proceduren har skapats för användare med rollen Systemadministratör 
 3. Välj "Intrastat model\Intrastat sample mapping" i trädet.
 4. Klicka på Designer.
 5. Klicka på Designer.
-6. Välj Dynamics 365 for Dynamics 365 for Operations\Table records i trädet.
+6. Välj "Dynamics 365 for Operations\Table records" i trädet.
 7. Klicka på Lägg till rot.
     * Lägg till en ny datakälla som representerar poster som du vill gruppera.  
 8. Skriv "Transaktioner" i fältet Namn.
@@ -116,5 +116,4 @@ Den här proceduren har skapats för användare med rollen Systemadministratör 
 67. Expandera "Commodity record(Intrastat)" i trädet.
 68. Klicka på Spara.
     * Observera att fältet "körning på" anger att grupperingen ska utföras vid körning i minnet även om det inte finns några aggregeringar definierade och den valda datakällan av typen ”registerposter” refererar till samma Intrastat-tabell. Detta beror på att datakällan innehåller vissa beräknade fält som ännu inte kan konverteras till SQL-databasnivå.  
-
 

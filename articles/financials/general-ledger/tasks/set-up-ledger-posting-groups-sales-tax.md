@@ -1,13 +1,13 @@
---- 
-title: "Ställ in redovisningsbokföringsgrupper för moms"
-description: "Moms beräknas och bokförs på huvudkontona som anges i redovisningsbokföringsgrupperna."
+---
+title: Ställ in redovisningsbokföringsgrupper för moms
+description: Moms beräknas och bokförs på huvudkontona som anges i redovisningsbokföringsgrupperna.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 15421da6f325dfee22a303e9fe83a0e72895fa08
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308355"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Ställ in redovisningsbokföringsgrupper för moms
 
@@ -48,5 +48,4 @@ Moms beräknas och bokförs på huvudkontona som anges i redovisningsbokförings
 11. Välj huvudkontot för att bokföra kassarabatten för momskoder som är kopplade till denna redovisningsbokföringsgrupp i kundkassarabattfältet.
     * Det är valfritt och om inget konto anges, ska huvudkontot för kassarabattkoder användas. Det kan vara praktiskt att använda andra konton, per redovisningsbokföringsgrupp, om du använder alterantivet för återföring av moms vid kassarabatter i momsgrupperna.  
 12. Klicka på Spara.
-
 

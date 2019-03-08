@@ -1,13 +1,13 @@
 ---
 title: Prestandahantering
-description: "Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna."
+description: Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna.
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306208"
 ---
-
 # <a name="performance-management"></a>Prestandahantering
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ När prestationsjournalen öppnas från arbetsytan **Självbetjäning för medar
 
 Du kan även koppla prestationsjournalen till en extern webbplats genom att lagra URL:en till webbplatsen. Om journalen är relaterad till mål eller prestationsgranskningar kan du också länka du den till en eller flera av dem. När prestationsjournalen öppnas från sidan **Självbetjäning för chef** kan du ange samma information som du kan ange för medarbetarjournalen. Du kan dessutom ange medarbetaren som journalen skapas för. Du kan välja om du vill dela chefsjournalen med dina medarbetare.
 
-### <a name="praise"></a>Beröm
+### <a name="send-feedback"></a>Skicka feedback
 
-Prestationsjournalen innehåller en funktion som heter Beröm. När du klickar på **Skicka beröm** kan du välja en medarbetare och ge återkoppling till den medarbetaren via e-post. Meddelandet skickas till medarbetaren som ska berömmas, till den medarbetarens chef, till medarbetaren som skickar berömmet och den medarbetarens chef. En prestationsjournalpost skapas för varje person som får meddelandet med berömmet.
+Prestationsjournalen innehåller en funktion som heter Feedback. När du klickar på **Skicka feedback** kan du välja en medarbetare och ge återkoppling till den medarbetaren via e-post. Meddelandet skickas till medarbetaren som få feedback, till den medarbetarens chef, till medarbetaren som skickar feedback och den medarbetarens chef. En prestationsjournalpost skapas för varje person som får meddelandet med feedback.
 
 ## <a name="goals"></a>Mål
 På sidan **resultatmål** kan du spåra målen du och din chef har skapat åt dig. Du kan skapa valfritt antal mål och dessa mål kan sträcka sig över olika perioder och prestationsgranskningar. Du kan också skapa enkla eller komplexa mål, beroende på hur mycket information som du vill ange om målet. Mål behövs inte för prestationsgranskningar. 
@@ -151,7 +150,6 @@ Prestationsjournalens källtyper beskriver var prestationsjournalerna kommer ifr
 ### <a name="review-types"></a>Granskningstyper
 
 Med prestationsgranskningstyperna kan du styra granskningens beteende. Du kan aktivera eller inaktivera arbetsflöde för en granskning. Om arbetsflöde inte används för granskningen, kan du definiera den standardstatus som ska användas när granskningen skapas. Du kan också bestämma om medarbetaren, chef eller båda måste godkänna granskningen.
-
 
 
 

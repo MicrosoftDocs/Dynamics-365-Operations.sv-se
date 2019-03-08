@@ -1,14 +1,14 @@
 ---
-title: "Få åtkomst till förhandsfunktioner i Talent"
-description: "Det här avsnittet beskriver hur en administratör kan aktivera funktionen Förhandsgranska och visar funktionerna som är aktiverade för förhandsgranskning."
+title: Få åtkomst till förhandsfunktioner i Talent
+description: Det här avsnittet beskriver hur en administratör kan aktivera funktionen Förhandsgranska och visar funktionerna som är aktiverade för förhandsgranskning.
 author: rschloma
 manager: AnnBe
 ms.date: 04/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306247"
 ---
-
 # <a name="access-preview-features-in-talent"></a>Få åtkomst till förhandsfunktioner i Talent
 
 [!include[banner](../includes/banner.md)]
@@ -36,16 +35,16 @@ Det här avsnittet beskriver hur en administratör kan aktivera funktionen Förh
 
 ## <a name="enable-or-disable-preview-features"></a>Aktivera eller inaktivera funktioner för förhandsgranskning
 
-Du kan använda inställningrn **förhandsgranskningsfunktioner** i administratörscenter för Microsoft Dynamics 365 for Talent för att aktivera eller inaktivera funktioner för förhandsgranskning. Inställningen är avstängd som standard. Åtgärden att aktivera eller inaktivera funktioner för förhandsgranskning är miljöspecifika.
+Du kan använda inställningen **förhandsgranskningsfunktioner** i administratörscenter för Dynamics 365 for Talent för att aktivera eller inaktivera funktioner för förhandsgranskning. Inställningen är avstängd som standard. Åtgärden att aktivera eller inaktivera funktioner för förhandsgranskning är miljöspecifika.
 
 > [!IMPORTANT]
 > Genom att aktivera inställningen **förhandsgranskningsfunktioner** kan du aktivera förhandsgranskning för alla användare i organisationen i denna miljö. Genom att inaktivera inställningen, inaktiveras förhandsgranskningsfunktioner och gör dem otillgängliga för användarna. Förhandsgranskningsfunktioner har begränsad funktionalitet i Talent. De använder färre sekretess- och säkerhetsfunktioner och de ingår inte i Talent servicenivåavtal. Du bör inte använda funktioner för förhandsgranskning för att behandla personuppgifter (d.v.s. all information som kan identifiera dig) eller bearbeta andra data som omfattas av lagar och andra efterföljandekrav.
 
 ### <a name="enable-or-disable-preview-features-for-your-organization"></a>Aktivera eller inaktivera funktioner för förhandsgranskning för organisationen
 
-#### <a name="attract"></a>Attract
+#### <a name="attract"></a>Attrahera
 
-1. Logga in på Microsoft Dynamics 365 for Talent: Attract
+1. Logga in på Microsoft Dynamics 365 for Talent: Attract.
 2. I menyn **inställningar** (växel-symbol) i det övre högra hörnet väljer du **administrationsinställningar**.
 3. På fliken **Funktionshantering** väljer du alternativet bredvid **Förhandsgranskningsfunktioner** så att det blir blått.
 4. Du kan även styra enskilda funktioner genom att aktivera/inaktivera specifika funktioner på den här sidan.
@@ -92,4 +91,3 @@ Inkludera inte personuppgifter (all information som kan identifiera dig) i feedb
 
 > [!TIP]
 > Sätt ett bokmärke i detta ämne och gå tillbaka ofta för att hålla dig uppdaterad om nya funktioner för förhandsgranskning som vi släpper.
-

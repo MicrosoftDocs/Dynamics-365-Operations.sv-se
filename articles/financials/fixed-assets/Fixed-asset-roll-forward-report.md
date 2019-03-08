@@ -1,14 +1,14 @@
 ---
-title: "Uppdateringsrapport över anläggningstillgångar"
-description: "Det här avsnittet beskriver hur du använder uppdateringsrapporten för anläggningstillgångar."
+title: Uppdateringsrapport över anläggningstillgångar
+description: Det här avsnittet beskriver hur du använder uppdateringsrapporten för anläggningstillgångar.
 author: saraschi2
-manager: 
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,23 +17,23 @@ ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313760"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Uppdateringsrapport över anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
 
-**Uppdateringsrapporten för anläggningstillgångar** ger detaljerade data, i ett lättläst Microsoft Excel-format, för periodens stängning, bokslut och momsrapportering. Rapporten innehåller start- och slutsaldon för anläggningstillgångar, samt en värderingen av rörelser för perioden, och ny anskaffning och avyttring som uppstått under perioden. Data rapporteras för enskilda anläggningstillgångar och sammanfattas även för grupper av anläggningstillgångar och juridisk person.
+**Uppdateringsrapport över anläggningstillgångar** ger detaljerade data, i ett lättläst Microsoft Excel-format, för periodens stängning, bokslut och momsrapportering. Rapporten innehåller start- och slutsaldon för anläggningstillgångar, samt en värderingen av rörelser för perioden, och ny anskaffning och avyttring som uppstått under perioden. Data rapporteras för enskilda anläggningstillgångar och sammanfattas även för grupper av anläggningstillgångar och juridisk person.
 
 **Uppdateringsrapporten för anläggningstillgångar** använder ramverket för elektronisk rapportering (ER). Innan du kan köra rapporten måste konfigurationen för modellen för anläggningstillgångar och uppdateringsrapporten för anläggningstillgångar importeras från Microsoft Dynamics Lifecycle Services (LCS). Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
-Den här rapporten finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, eller som en snabbkorrigering för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017). Tre snabbkorrigeringar måste implementeras för miljöer som har versionen från juli 2017:
+Den här rapporten finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, 7.3 eller som en snabbkorrigering för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017). Tre snabbkorrigeringar måste implementeras för miljöer som har versionen från juli 2017:
 
 - **KB 4041754:** konfigurationen för elektronisk rapportering (ER) kan inte hämtas från LCS eftersom den inte gäller för den aktuella versionen av programmet efter implementation av plattformens uppdateringspaket
 - **KB 4056107:** elektronisk rapportering (ER) ackumulerad uppdatering 5
@@ -66,5 +66,4 @@ Följande register beskriver de fält som är tillgängliga i rapporten.
 |            Avyttring: Försäljningsvärde            |                                                                                               Försäljningsvärde för förteckning över anläggningstillgångar med avyttring - försäljningstransaktion.                                                                                                |
 |           Avyttring: Kassationsvärde            |                                                                                               Kassationsvärde för förteckning över anläggningstillgångar med avyttring - kassationstransaktion.                                                                                               |
 |           Avyttring: Vinst/förlust            |                                                                                 Vinst- eller förlustvärdet som beräknas som en del av avyttringstransaktionen för förteckning över anläggningstillgångar.                                                                                 |
-
 

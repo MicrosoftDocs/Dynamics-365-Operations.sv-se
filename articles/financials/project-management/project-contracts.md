@@ -1,13 +1,13 @@
 ---
 title: Projektkontrakt
-description: "Det här ämnet beskriver och ger exempel på projektkontrakten som går att skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet beskriver och ger exempel på projektkontrakten som du kan skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0f0fcec64ce03c6e1d877fb1c8d004bb416bd95
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310379"
 ---
-
 # <a name="project-contracts"></a>Projektkontrakt
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln beskriver och ger exempel på projektkontrakten som går att skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver och ger exempel på projektkontrakten som du kan skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations.
 
 Typen av projektet som du skapar för ett projektavtal bestämmer vilken metod som används för att faktura projektkunderna. Du kan ändra ett projektavtal och det relaterade projektet, men du kan inte ändra projekttypen. 
 
@@ -342,7 +341,6 @@ När du ställer in projektkontraktet går du med på att fakturera kunden varje
 -   Du skapar en kundfaktura i slutet av varje månad under projektet.
 
 Under den första månaden registrerades totalt 800 timmar av konsulterna i projektet. Kostnaden för kontorsmaterial som debiteras projektet är 2 000. I slutet av månaden skapar du en faktura på 122 000 (800 timmar för 150 per timme plus 2 000 för kontorsmaterial).
-
 
 
 

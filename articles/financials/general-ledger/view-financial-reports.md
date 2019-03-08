@@ -1,13 +1,13 @@
 ---
 title: Visa ekonomiska rapporter
-description: "Den här artikeln beskriver hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller."
+description: Den här artikeln innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312955"
 ---
-
 # <a name="view-financial-reports"></a>Visa ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln beskriver hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
+Den här artikeln innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 
 <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 ----------------------------
@@ -82,13 +81,12 @@ Skriv ut en ekonomisk rapport genom att klicka på **Skriv ut** i åtgärdsföns
 När du är klar med utskriftsalternativen klickar du på **Skriv ut**. Om du inte vill skriva ut rapporten klickar du på **Avbryt**. En förhandsgranskning av den utskrivna rapporten visas. Du kan välja vilken skrivare som utskriften ska skickas till och du kan också justera utskriftsalternativen.
 
 ## <a name="export-a-financial-report"></a>Exportera en ekonomisk rapport
-Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfönstret. Rapporten exporteras till Microsoft Excel, och webbläsaren uppmanar dig att öppna eller spara den exporterade filen. Exportinställningarna som definieras i rapportdesignen används i den exporterade rapporten.    
+Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfönstret. Rapporten exporteras till Microsoft Excel och webbläsaren uppmanar dig att öppna eller spara den exporterade filen. Exportinställningarna som definieras i rapportdesignen används i den exporterade rapporten.    
 
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Ekonomisk rapportering för Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
-
 
 
 

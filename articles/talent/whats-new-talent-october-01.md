@@ -1,31 +1,30 @@
 ---
-title: "Nyheter och ändringar i Dynamics 365 for Talent Core HR (1 oktober 2018)"
-description: "Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent Core HR."
+title: Nyheter och ändringar i Dynamics 365 for Talent Core HR (1 oktober 2018)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
 ms.openlocfilehash: 97820cd25ece48dc0b8045d9ba509d0971ca5aad
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306239"
 ---
-
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-october-1-2018"></a>Nyheter och ändringar i Dynamics 365 for Talent Core HR (1 oktober 2018)
 
 [!include [banner](includes/banner.md)]
@@ -59,4 +58,3 @@ Organisationer tilldela ledig tid olika beroende på om medarbetarna börjar ell
 ## <a name="known-issue"></a>Kända problem
 
 -   **Problem:** när du lägger till en ny bilaga till en arbetare är knapparna **Ny** och **Redigera** nedtonade. **Lösning:** innan du öppnar bilagesidan, se till att faktarutorna på sidan **arbetare** är stängda. Om faktarutorna är stängda när sidan **arbetare** hämtas **Bilagor** kommer att aktiveras. (Det här problemet kommer att åtgärdas i nästa plattformsuppdatering.)
-

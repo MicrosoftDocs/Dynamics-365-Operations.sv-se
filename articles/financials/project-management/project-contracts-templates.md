@@ -1,13 +1,13 @@
 ---
-title: "Synkronisera projektkontrakt och projekt direkt från Project Service Automation till Finance and Operations"
-description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera projektprojektkontrakt och projekt direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations."
+title: Synkronisera projektkontrakt och projekt direkt från Project Service Automation till Finance and Operations
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera projektkontrakt och projekt direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312127"
 ---
-
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synkronisera projektkontrakt och projekt direkt från Project Service Automation till Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera projektprojektkontrakt och projekt direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera projektkontrakt och projekt direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE] 
-> Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, 7.3.0, måste du installera KB 4074835.
+> Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, måste du installera KB 4074835.
 
 ## <a name="data-flow-for-project-service-automation-to-finance-and-operations"></a>Dataflöde för Project Service Automation till Finance and Operations
 
 > [!NOTE]
-> Innan du kan använda integrationslösningen Project Service Automation till Finance and Operations bör du känna till dataintegrationsfunktionen för Microsoft Dynamics 365.
+> Innan du kan använda integrationslösningen Project Service Automation till Finance and Operations bör du känna till Microsoft Dynamics 365 dataintegrationsfunktionen.
 
 Automatisering av integrationslösningen Project Service Automation till Finance and Operations använder funktionen dataintegration för att synkronisera data mellan instanser av Project Service Automation och Finance and Operations. Integrationsmallen som är tillgänglig med dataintegrationsfunktionen tillåter flöde av data om projektkontrakt, projekt, projektkontraktsrader och projektkontraktraders milstolpar från Project Service Automation till Finance and Operations.
 
@@ -47,7 +46,7 @@ Följande bild visar hur data synkroniseras mellan Project Service Automation oc
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
-För att få åtkomst till tillgängliga mallar väljer du **Projekt** i administratörscentret för Microsoft PowerApps, och i det övre högra hörnet väljer du **Nytt projekt** för att välja offentliga mallar.
+För att få åtkomst till tillgängliga mallar väljer du i administratörscentret för Microsoft PowerApps **Projekt** och sedan i det övre högra hörnet **Ny projekt** för att välja offentliga mallar.
 
 Följande mall och underliggande uppgift används för att synkronisera projektkontrakt och proojekt från Project Service Automation till Finance and Operations:
 
@@ -111,7 +110,7 @@ När integrationslösningen för Project Service Automation till Finance and Ope
 
 Du måste använda Microsoft Power Query för Excel för att filtrera data om följande villkor uppfylls:
 
-- Det finns försäljningsorder i Microsoft Dynamics 365 for Sales.
+- Innehåller försäljningsorder i Microsoft Dynamics 365 for Sales.
 - Det finns flera organisationsenheter i Project Service Automation och organisationsenheterna mappas till flera juridiska personer i Finance and Operations.
 
 Om du måste använda Power Query enligt riktlinjerna nedan:
@@ -135,4 +134,3 @@ I följande illustrationer visas ett exempel på uppgiftsmallmappning i datainte
 [![Mallmappning](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![Mallmappning](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
-

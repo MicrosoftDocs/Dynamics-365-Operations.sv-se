@@ -1,13 +1,13 @@
 ---
-title: "Konfigurera manuella uppgifter i ett arbetsflöde"
-description: "I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för en manuell uppgift."
+title: Konfigurera manuella uppgifter i ett arbetsflöde
+description: I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för en manuell uppgift.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309758"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurera manuella uppgifter i ett arbetsflöde
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,7 @@ Följ dessa steg för att ange vem som ska tilldelas den manuella uppgiften.
     </tr>
     <tr>
     <td>Användare</td>
-    <td>Specifika användare av Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Specifika Microsoft Dynamics 365 for Finance and Operations användare</td>
     <td>
     <ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
@@ -383,4 +382,3 @@ När den manuella uppgiften tilldelas en användare, måste användaren vidta å
 5. Markera kryssrutan **Delegera** om du vill att användaren ska kunna tilldela uppgiften till en annan användare.
 6. Markera kryssrutan **Överlåt** om du vill att användaren ska kunna överlåta uppgiften till en annan användare i arbetsuppgiftskön.
 7. Markera kryssrutan **Frisläpp** om du vill att användaren ska kunna överlåta uppgiften till arbetsuppgiftskön. En annan användare kan sedan slutföra uppgiften.
-

@@ -1,13 +1,13 @@
 ---
-title: "Översikt över inköpsrekvisition"
-description: "Det här ämnet beskriver arbetsflödet för inköpsrekvisition och olika statusar en inköpsrekvisition kan ha."
+title: Översikt över inköpsrekvisition
+description: Det här ämnet beskriver arbetsflödet för inköpsrekvisition och olika statusar en inköpsrekvisition kan ha.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309850"
 ---
-
 # <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ När en inköpsrekvisition har godkänts kan den användas för att skapa inköp
 ## <a name="creating-purchase-requisitions"></a>Skapa inköpsrekvisitioner
 Du kan skapa en inköpsrekvisition på sidan **Mina inköpsrekvisitioner** och väljer de artiklar och tjänster som du behöver. Du kan välja artiklar från en anskaffningskatalog som din organisation har skapat, eller så kan du begära, artiklar som inte finns i en katalog, genom att välja en anskaffningskategori och ange produktdetaljerna.  
 
-Innan du kan skicka en inköpsrekvisition för granskning måste arbetsflödena konfigureras i Microsoft Dynamics 365 for Finance and Operations. Du använder ett arbetsflöde för att flytta en inköpsrekvisition genom granskningsprocessen, från den ursprungliga statusen **Utkast** till den slutliga statusen **godkänd**.
+Innan en inköpsrekvisition kan skickas för granskning måste arbetsflödet konfigureras i Microsoft Dynamics 365 for Finance and Operations. Du använder ett arbetsflöde för att flytta en inköpsrekvisition genom granskningsprocessen, från den ursprungliga statusen **Utkast** till den slutliga statusen **godkänd**.
 
 ### <a name="purchase-requisition-statuses"></a>Status för inköpsrekvisitioner
 
@@ -69,10 +68,10 @@ Den övergripande statusen på inköpsrekvisitionen bestäms av statusen på ink
 <tr class="odd">
 <td>Utkast</td>
 <td>Utkast</td>
-<td>Inköpsrekvisitionen och inköpsorderraden har skapats, men de har inte skickats in för granskning. Inköpsrekvisitionen och inköpsrekvisitionsrader som har en status på <strong>Utkast</strong> kan ändras. En inköpsrekvisition eller inköpsrekvisitionsrad har också statusen <strong>utkast</strong> om den har den återkallats men inte har skickats för granskning. <strong>Anmärkning:</strong> Du kan skicka eller återkalla en inköpsrekvisition på dokumentnivå. Du kan dock inte skicka in eller återkalla en enskild inköpsrekvisitionsrad.</td>
+<td>Inköpsrekvisitionen och inköpsorderraden har skapats, men de har inte skickats in för granskning. Inköpsrekvisitionen och inköpsrekvisitionsrader som har en status på <strong>Utkast</strong> kan ändras. En inköpsrekvisition eller inköpsrekvisitionsrad har också statusen <strong>utkast</strong> om den har återkallats men inte har skickats för granskning. <strong>Anmärkning:</strong> Du kan skicka eller återkalla en inköpsrekvisition på dokumentnivå. Du kan dock inte skicka in eller återkalla en enskild inköpsrekvisitionsrad.</td>
 </tr>
 <tr class="even">
-<td>Under granskning</td>
+<td>Undergår granskning</td>
 <td><ul>
 <li>Under granskning</li>
 <li>Avvisad</li>
@@ -142,7 +141,7 @@ I anskaffningspolicyerna kan du kontrollera rekvisitionssyftena som är tillgän
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Rekvisitioner med förbrukningssyfte
 
-En rekvisition med förbrukningssyfte representerar en efterfrågan på artiklar eller tjänster som ska användas internt i organisationen. En begäran som har skapats av den här sortens rekvisition uppfylls alltid av en inköpsorder. Om Microsoft Dynamics 365 for Finance and Operations ställs in på att automatiskt skapa inköpsorder, skapas inköpsorder när inköpsrekvisitionen har godkänts.
+En rekvisition med förbrukningssyfte representerar en efterfrågan på artiklar eller tjänster som ska användas internt i organisationen. En begäran som har skapats av den här sortens rekvisition uppfylls alltid av en inköpsorder. Om Microsoft Dynamics 365 for Finance and Operations ställs in på att skapa inköpsorder automatiskt, skapas inköpsorder när inköpsrekvisitionen godkänns.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Rekvisitioner som har ett syfte med påfyllnad
 
@@ -198,7 +197,6 @@ Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 [Skapa en rekvisition för förbrukning (uppgiftsguide)](tasks/create-requisition-consumption.md)
 
 [Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
-
 
 
 

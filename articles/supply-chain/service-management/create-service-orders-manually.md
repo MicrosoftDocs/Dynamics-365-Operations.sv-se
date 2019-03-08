@@ -1,31 +1,30 @@
 ---
 title: Skapa en serviceorder manuellt
-description: "Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med formuläret **Serviceorder**."
+description: Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med formuläret **Serviceorder**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9fbcdaa50a8f13247c13c1885cdb4ab7f5f39a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a0cc6b2646929776f4efb20474de6b0fc5c4719c
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310931"
 ---
-
 # <a name="create-service-orders-manually"></a>Skapa en serviceorder manuellt    
 
 [!include [banner](../includes/banner.md)]
@@ -102,5 +101,4 @@ Du kan skapa en serviceorder från formuläret **försäljningsorder** genom att
 [Skapa serviceorder automatiskt](create-service-orders-automatically.md)
 
 [Skapa serviceorder (klassformulär)](https://technet.microsoft.com/en-us/library/aa553901\(v=ax.60\)) 
-
 

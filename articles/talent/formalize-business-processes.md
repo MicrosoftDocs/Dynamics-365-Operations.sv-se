@@ -1,13 +1,13 @@
 ---
-title: "Formalisera affärsprocesser"
-description: "Det här avsnittet förklarar hur du använder funktionen affärsprocess för att skapa affärsprocessmallar för processer som behöver slutföras inom organisationen."
+title: Formalisera affärsprocesser
+description: Det här avsnittet förklarar hur du använder funktionen affärsprocess för att skapa affärsprocessmallar för processer som behöver slutföras inom organisationen.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306323"
 ---
 # <a name="formalize-business-processes"></a>Formalisera affärsprocesser
 
@@ -43,7 +43,7 @@ En processägare kan definieras för varje affärsprocess. Processägaren kommer
 En processägare kan inte skapa nya affärsprocesser eller affärsprocessmallar eller ta bort aktiva processer eller affärsprocessmallar.
 
 ## <a name="tasks"></a>Uppgifter
-En affärsprocess består ofta av flera uppgifter. Vissa uppgifter, till exempel en granskning av interna kursutbud, kan slutföras i Microsoft Dynamics 365 for Talent [?]. I det här fallet välj sett alternativ i fältet **aktivitetslänk**. Andra uppgifter kan omfatta granska eller komplettera sidor på en webbplats. I det här fallet väljs **URL** i fältet **aktivitetslänk** och webbadressen kan anges. Du kan ange URL:er för både externa och interna webbplatser i det här fältet. Du kan också skapa uppgifter för aktiviteter som du slutför manuellt, till exempel granska tillgänglighet av alla strukturer. I detta fall krävs inte en uppgiftslänk. Denna flexibilitet låter dig spåra flera typer av uppgifter i en omfattande process.
+En affärsprocess består ofta av flera uppgifter. Vissa uppgifter, till exempel en granskning av interna kursutbud, kan slutföras i Microsoft Dynamics 365 for Talent[?]. I det här fallet välj sett alternativ i fältet **aktivitetslänk**. Andra uppgifter kan omfatta granska eller komplettera sidor på en webbplats. I det här fallet väljs **URL** i fältet **aktivitetslänk** och webbadressen kan anges. Du kan ange URL:er för både externa och interna webbplatser i det här fältet. Du kan också skapa uppgifter för aktiviteter som du slutför manuellt, till exempel granska tillgänglighet av alla strukturer. I detta fall krävs inte en uppgiftslänk. Denna flexibilitet låter dig spåra flera typer av uppgifter i en omfattande process.
 
 Uppgifter kan tilldelas till en särskild arbetare eller till en befattning. Exempelvis ska en chef över kompensationer och förmåner alltid vara den person som utför en granskning av försäkringspremier. När du skapar denna uppgift, välj **Befattning** i fältet **Uppgiftstyp** och välj sedan **Chef över kompensationer och förmåner** i listan **Befattning** När processen startar tilldelas uppgiften till den anställde som har befattningen **chef över kompensationer och förmåner**. Du kan också tilldela en uppgift till en särskild **arbetare** i fältet **Tilldelningstyp** och sedan välja rätt person.
 
@@ -74,5 +74,4 @@ För att skapa eller kopiera en mall för företagsprocessen, eller för att sta
 - Välj **Starta process** för att starta den valda affärsprocessen, tilldela uppgifter och beräkna förfallodatum.
 
 Om du vill visa aktiva processer och tillhörande uppgifter, gå till arbetsytan **Affärsprocesser**
-
 
