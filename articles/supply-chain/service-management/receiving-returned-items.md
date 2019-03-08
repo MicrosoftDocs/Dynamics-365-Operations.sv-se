@@ -1,50 +1,47 @@
 ---
 title: Inleverera returnerade artiklar
-description: "När en returnförsändelse inkommer matchar du den mot en returorder som redan har skapats."
+description: När en returnförsändelse inkommer matchar du den mot en returorder som redan har skapats.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: d46f2b16c475cda9b99c1ba084538de47ec3dc7c
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365809"
 ---
-
-
-# <a name="receive-returned-items"></a><span data-ttu-id="8e2c2-103">Inleverera returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="8e2c2-103">Receive returned items</span></span> 
+# <a name="receive-returned-items"></a><span data-ttu-id="38fdb-103">Inleverera returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="38fdb-103">Receive returned items</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="8e2c2-104">När en returnförsändelse inkommer matchar du den mot en returorder som redan har skapats.</span><span class="sxs-lookup"><span data-stu-id="8e2c2-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
+<span data-ttu-id="38fdb-104">När en returnförsändelse inkommer matchar du den mot en returorder som redan har skapats.</span><span class="sxs-lookup"><span data-stu-id="38fdb-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
 
-<span data-ttu-id="8e2c2-105">Beroende på företagets riktlinjer kan artiklarna i returförsändelsen skickas i karantän för ytterligare inspektion eller kan returneras till lagret.</span><span class="sxs-lookup"><span data-stu-id="8e2c2-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
+<span data-ttu-id="38fdb-105">Beroende på företagets riktlinjer kan artiklarna i returförsändelsen skickas i karantän för ytterligare inspektion eller kan returneras till lagret.</span><span class="sxs-lookup"><span data-stu-id="38fdb-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8e2c2-106">Se även</span><span class="sxs-lookup"><span data-stu-id="8e2c2-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="38fdb-106">Se även</span><span class="sxs-lookup"><span data-stu-id="38fdb-106">See also</span></span>
 
-[<span data-ttu-id="8e2c2-107">Registrera inleverans av returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="8e2c2-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
+[<span data-ttu-id="38fdb-107">Registrera inleverans av returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="38fdb-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
 
-[<span data-ttu-id="8e2c2-108">Bokför införseljournalen för returnerade produkter</span><span class="sxs-lookup"><span data-stu-id="8e2c2-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
+[<span data-ttu-id="38fdb-108">Bokför införseljournalen för returnerade produkter</span><span class="sxs-lookup"><span data-stu-id="38fdb-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
 
-[<span data-ttu-id="8e2c2-109">Föra returnerade artiklar genom inspektionen</span><span class="sxs-lookup"><span data-stu-id="8e2c2-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="38fdb-109">Föra returnerade artiklar genom inspektionen</span><span class="sxs-lookup"><span data-stu-id="38fdb-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
   
-
 
 
