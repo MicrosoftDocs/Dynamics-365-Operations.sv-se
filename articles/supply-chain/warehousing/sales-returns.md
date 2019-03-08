@@ -1,13 +1,13 @@
 ---
-title: "Försäljningsreturer"
-description: "Det här avsnittet innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter."
+title: Försäljningsreturer
+description: Det här avsnittet innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d4da2ed8d61ffae3a4a4dc24793d82de22e86e59
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362704"
 ---
-
 # <a name="sales-returns"></a>Försäljningsreturer
 
 [!include [banner](../includes/banner.md)]
@@ -329,7 +328,6 @@ I det här exemplet skapas returorderraden med hjälp av funktionen **Sök efter
 ![Returorderraden skapas med hjälp av funktionen Sök efter försäljningsorder  ](./media/SalesReturn11.png)  
 
 >[Obs!] **Rabatt** och **Retursjälvkostnad** är korrekt inställda. Därför uppstår en exakt återföring av kundfakturan.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Skapa och tilldela avancerade regelstrukturer
-description: "Den här uppgiften beskriver steg för steg hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur."
+description: Den här uppgiften beskriver steg för steg hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: dd62254c20cf5d77677d03c7d7335fb793d7f5f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: ebad4ec9ec6242978a26007a64416ae1b2af5c28
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367051"
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Skapa och tilldela avancerade regelstrukturer
 
@@ -68,5 +68,4 @@ Den här uppgiften beskriver steg för steg hur du skapar och tilldelar en avanc
 20. Stäng sidan.
 21. Klicka på Aktivera.
 22. Klicka på Aktivera.
-
 

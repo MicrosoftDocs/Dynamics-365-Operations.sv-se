@@ -1,13 +1,13 @@
 ---
 title: Startsidan Redovisning och ekonomisk rapportering
-description: "Använd redovisningen när du vill definiera och hantera den juridiska personens ekonomiska poster."
+description: Använd redovisningen när du vill definiera och hantera den juridiska personens ekonomiska poster.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
-ms.openlocfilehash: 9ee3f73cd11b38ed2237ea3fe08db18000e55f07
-ms.contentlocale: sv-se
-ms.lasthandoff: 06/25/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363371"
 ---
-
 # <a name="general-ledger"></a>Huvudbok 
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Använd redovisningen när du vill definiera och hantera den juridiska personens
  - [Planera kontoplanen](plan-chart-of-accounts.md)
  - [Huvudkontotyper](main-account-types.md)
 
-Du kan allokera, eller fördela, monetära belopp på ett eller flera konton eller konto-/ och dimensionskombinationer som baseras på allokeringsregler. Det finns två typer av allokeringar: fasta och variabla. Du kan också kvitta transaktioner mellan redovisningskonton och revalvera valutabelopp. I slutet av ett räkenskapsår måste du skapa UB-transaktioner och förbereda redovisningssystemet för det nya räkenskapsåret. Du kan använda konsolideringsfunktionen för att kombinera de finansiella resultaten för flera juridiska personer till resultat för en enda, konsoliderad organisation. Dotterbolagen kan finnas i samma Microsoft Dynamics 365 for Finance and Operations-databas eller i separata databaser.
+Du kan allokera, eller fördela, monetära belopp på ett eller flera konton eller konto-/ och dimensionskombinationer som baseras på allokeringsregler. Det finns två typer av allokeringar: fasta och variabla. Du kan också kvitta transaktioner mellan redovisningskonton och revalvera valutabelopp. I slutet av ett räkenskapsår måste du skapa UB-transaktioner och förbereda redovisningssystemet för det nya räkenskapsåret. Du kan använda konsolideringsfunktionen för att kombinera de finansiella resultaten för flera juridiska personer till resultat för en enda, konsoliderad organisation. Dotterbolagen kan finnas in samma Microsoft Dynamics 365 for Finance and Operations-databas eller i separata databaser.
 
 - [Översikt över konsolidering och eliminering](../budgeting/consolidation-elimination-overview.md)
 - [Kontosaldon i redovisningskontot](general-ledger-account-balances.md)
@@ -60,18 +59,17 @@ Gå till [Viktig information](https://docs.microsoft.com/en-us/business-applicat
 
 ### <a name="videos"></a>Videoklipp
 
-Ta en titt på instruktionsfilmerna som finns på [YouTube-kanalen för Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### <a name="blogs"></a>Bloggar
 
 Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Det finns många poster om redovisningen i [Microsoft Dynamics AX-produktteamets blogg](https://blogs.msdn.microsoft.com/dax/). Även om vissa av dessa poster skrivits för den föregående redovisningsversionen gäller fortfarande samma koncept, och procedurerna är också snarlika i den aktuella versionen.
+Det finns många inlägg om Redovisning i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). Även om vissa av dessa poster skrivits för den föregående redovisningsversionen gäller fortfarande samma koncept, och procedurerna är också snarlika i den aktuella versionen.
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics Partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 
 #### <a name="community-blogs"></a>Bloggar
 
-- [Vad du bör veta om redovisning i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
-
+- [Vad du bör veta om redovisningen i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/04/29/what-you-should-know-about-ledger-in-dynamics-365-for-finance-and-operations)
 

@@ -1,13 +1,13 @@
 ---
-title: "Räkenskapsintegration för butikskanal"
-description: "I det här avsnittet finns en översikt över räkenskapsintegration för Retail POS."
+title: Översikt över räkenskapsintegration för butikskanaler
+description: Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Microsoft Dynamics 365 for Retail.
 author: josaw
 manager: annbe
-ms.date: 11/01/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -15,122 +15,104 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c852d095505abecbd44d29e9e7b53875e9069def
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377145"
 ---
-# <a name="fiscal-integration-for-retail-channel"></a>Räkenskapsintegration för butikskanal
+# <a name="overview-of-fiscal-integration-for-retail-channels"></a>Översikt över räkenskapsintegration för butikskanaler
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration i Microsoft Dynamics 365 for Retail. Funktionen för räkenskapsintegration är ett ramverk som är utformat för att stödja lokala skatteregler som är avsedda att förebygga bedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegration är:
+## <a name="introduction"></a>Introduktion
 
-- Skriva ut kvitto och ge det till kunden.
-- Skydda inlämnande av uppgifter som rör försäljning och returer som gjorts i en kassa till en extern tjänst som tillhandahålls av myndigheten.
-- Använda dataskydd med en digital signatur som godkänts av myndigheten.
+Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Microsoft Dynamics 365 for Retail. Räkenskapsintegration omfattar integration med olika räkenskapsenheter och tjänster som underlättar för räkenskapsregistrering av butiksförsäljning i enlighet med lokala skattelagar som syftar till förhindrande av skattebedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegration är: 
 
-Det här avsnittet ger riktlinjer för att skapa räkenskapsintegration så att användarna kan utföra följande uppgifter. 
+- Registrera en räkenskapsårets enhet som är ansluten till Retail inköpstillfället (PO), till exempel en kvittoskrivare detaljhandelsförsäljning och skriva ut en kvittoskrivare för kunden.
+- Skicka säkert information som är relaterad till försäljning och returer som slutförs i Retail POS till en extern webbtjänst som drivs av skattemyndigheten.
+- Hjälpa till att garantera oföränderlighet av försäljningstransaktionsdata via digitala signaturer.
 
-- Konfigurera räkenskapskopplingar som är kvittoskrivarenheter eller tjänster som används för räkenskapsregistrering såsom spara, digitala signaturer och skyddad överföring av räkenskapsdata.
-- Konfigurera dokumentleverantören, som definierar en för utmatningsmetod och en algoritm för generering av skattedokument.
-- Konfigurera räkenskapsregistrering som definierar en följd av steg och en grupp med kontakter som används i varje steg.
-- Tilldela räkenskapsregistrering till funktionsprofiler för kassa.
-- Tilldela tekniska profiler för koppling, antingen till maskinvaruprofiler (för lokala räkenskapskopplingar) eller till funktionsprofiler för kassa (för andra typer av räkenskapskopplingar).
+Räkenskapsintegreringen i Retail är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integration mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegration som stöder grundläggande butiksscenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegration består av flera tillägg av Retail-komponenter och ingår i Retail programutvecklingskit (SDK). För information om exempel på räkenskapsintegration som finns i Retail SDK, se [exempel på räkenskapsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Information om hur du installerar och använder Retail SDK finns i [översikt över Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-## <a name="fiscal-integration-execution-flow"></a>Räkenskapsintegration körningsflöde
-I följande scenario visar vanligt körningsflöde för räkenskapsintegration.
+Stöd för andra scenarier som inte stöds av exempel på räkenskapsintegration, för att integrera Retail POS med andra räkenskapsprodukter eller tjänster och täcka kraven i andra länder eller regioner, måste du utöka ett befintligt exempel på räkenskapsintegration eller skapa ett nytt prov med ett befintligt prov som exempel.
 
-1. Initialisering av räkenskapsregistreringen.
-  
-   Efter att ha utfört vissa åtgärder där räkenskapsregister krävs, till exempel när en detaljhandelstransaktion har slutförts, är räkenskapsregistreringen associerad med den nuvarande funktionalitetsprofil för kassa.
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Process för räkenskapsregistrering och exempel på räkenskapsintegration för räkenskapsenheter
 
-1. Sök efter en räkenskapskoppling.
-   
-   För varje räkenskapsregistreringssteg i räkenskapsregistreringen matchar systemet listan över räkenskapskopplingar. Dessa kopplingar har en funktionell profil som ingår i den angivna kopplingsgruppen med en lista över de kopplingar som har en teknisk profil associerad till den aktuella maskinvaruprofilen (för en typ av koppling som endast motsvarar **lokala**) eller med den aktuella funktionsprofilen för kassa (för andra typer av kopplingar).
-   
-1. Utför räkenskapsintegrationen.
+En process för räkenskapsregistrering i Retail POS kan bestå av ett eller flera steg. Varje steg omfattar räkenskapsregistrering av specifika butikstransaktioner och händelser i en räkenskapsenhet eller tjänst. Följande komponenter ingår i räkenskapsregistrering i en räkenskapsenhet som är ansluten till en maskinvarustation:
 
-   Systemet utför alla nödvändiga åtgärder som definieras av en uppsättning kopplade till den hittade kopplingen. Detta görs i enlighet med inställningarna för funktionella profilen och tekniska profilen som hittades i det föregående steget för den här kopplingen.
+- **Tillägget Commerce Runtime (CRT)** - den här komponenten serialiserar butikens transaktionshändelsen/data i det format som också används i samband med räkenskapsårets analyserar svaren från räkenskapsenhet och lagrar svaren i kanaldatabasen. Tillägget definierar även specifika transaktioner och händelser som ska registreras. Den här komponenten kalla ofta en *leverantör av skattedokument*.
+- **Tillägg för maskinvarustation** – denna komponent initierar kommunikationen med räkenskapsenheten, skickar begärande och kommandon direkt till räkenskapsenheten baserat på butikens transaktionshändelse/data som extraheras från skattedokument och tar emot svar från räkenskapsenheten. Den här komponenten kalla ofta en *räkenskapskoppling*.
 
-## <a name="setup-needed-before-using-fiscal-integration"></a>Inställningar behövs innan du använder räkenskapsintegration
-Du bör definiera följande inställningar innan du kan använda funktionen räkenskapsintegrering:
+Ett exempel på räkenskapsintegration för räkenskapsenheter innehåller respektive tillägg för CRT och maskinvarustation för en leverantör av skattedokument och en räkenskapskoppling Den innehåller även följande komponentkonfigurationer:
 
-- Definiera en nummerserie på sidan **Butiksparametrar** för funktionell profilnummer för räkenskap.
-  
-- Definiera nummersekvens på sidan **Delade butiksparametrar** för följande referenser:
-  
-  - Nummer för teknisk profil för räkenskaper
-  - Gruppnummer för räkenskapskoppling
-  - Nummer för registreringsprocess
+- **Konfiguration av leverantör av skattedokument** – den här konfigurationen definierar en utmatningsmetod och ett format för skattedokument. Den innehåller även en datamappning för skatter och betalningsmetoder som gör data från Retail POS kompatibel med de värden som ska fördefinieras i räkenskapsenhetens inbyggda programvara.
+- **Konfiguration av räkenskapskopplare** – definierar den fysiska kommunikationen med räkenskapsenheten.
 
-- Skapa en **räkenskapskoppling** i **Retail > kanalinställning > räkenskapsintegration > räkenskapskopplingar** för varje enhet eller tjänst som du tänker använda för räkenskapsintegration.
+En process för räkenskapsregistrering för ett visst kassaregister definieras av en motsvarande inställning i kassans funktionsprofil. Mer information om hur du konfigurerar processen för räkenskapsregistrering, laddar upp konfiguration av leverantör av skattedokument och räkenskapskopplare och ändra deras parametrar finns i [skapa en process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
--  Skapa en **skattedokumentleverantör** i **Retail > kanalinställning > räkenskapsintegration > leverantörer av skattedokument** för alla räkenskapskopplingar. Datamappning betraktas som en del av skattedokumentleverantören. Om du vill ställa in olika datamappningar för samma typ av koppling (till exempel delstatsspecifika regler) bör du skapa olika leverantörer för skattedokument.
+I följande exempel visas en typisk flöde för räkenskapsregistreringskörning för räkenskapsenheter. Flödet börjar med en händelse i kassan (exempelvis slutförandet av en försäljningstransaktion) och implementerar följande sekvens med steg:
 
-- Skapa en **Funktionsprofil för koppling** i **Retail > kanalinställning > räkenskapsintegration > Funktionsprofil för koppling** för varje leverantör av skattedokument.
-  - Välj namnet på en koppling.
-  - Välj en dokumentleverantör.
-  - Ange momsinställningar på fliken **tjänstinställning**.
-  - Ange momskodmappning och betalningsmedeltypmappning på fliken **Datamappning**.
+1. Kassan begär ett skattedokumentet från CRT.
+2. CRT avgör om händelsen kräver räkenskapsregistrering.
+3. Baserat på processen för räkenskapsregistrering identifierar CRT en skattekoppling och motsvarande leverantör av skattedokument för räkenskapsregistreringen.
+4. CRT kör leverantören av skattedokument som genererar skattedokument (till exempel ett XML-dokument) som motsvarar butikens transaktionen eller händelse.
+5. Kassan skickar skattedokumentet som CRT förbereder till en maskinvarustation.
+6. Maskinvarustationen kör räkenskapskopplingen som bearbetar skattedokumentet och vidarebefordrar informationen till räkenskapsenheten eller tjänsten.
+7. Kassan analyserar svaret från räkenskapsenheten eller tjänsten för att avgöra om räkenskapsregistreringen har lyckats.
+8. CRT sparar svaret i kanaldatabasen.
 
-  #### <a name="examples"></a>Exempel 
+![Lösningsschema](media/emea-fiscal-integration-solution.png "Lösningsschema")
 
-  |  | Format | Exempel | 
-  |--------|--------|--------|
-  | Inställning av momssatser | värde: VATrate | 1 : 2000, 2 : 1800 |
-  | Mappning av momskoder | VATcode : värde | vat20 : 1, vat18 : 2 |
-  | Mappning av betalningsmedelstyper | TenderTyp: värde | Kontant: 1 kort: 2 |
+## <a name="error-handling"></a>Felhantering
 
-- Skapa **Grupper för räkenskapskoppling** i **Retail > kanalinställning > räkenskapsintegration > grupp för räkenskapskoppling**. En kopplingsgrupp som är en delmängd av funktionella profiler länkas till räkenskapskopplingar som utför identiska funktioner som används i samma fas inom en räkenskapsregistrering.
+Ramverket för räkenskapsintegration ger följande alternativ för att hantera misslyckanden under räkenskapsregistreringen:
 
-   - Lägg till funktionella profiler till kopplingsgruppen. Klicka på **Lägg till** på sidan **funktionella profiler** och välj ett profilnummer.
-   - Om du vill skjuta upp förbrukningen av funktionella profilen, ange **inaktivera** till **Ja**. 
-   
-     Denna ändring påverkar endast aktuella kopplingsgruppen. Du kan fortsätta att använda samma funktionella profil i andra kopplingsgrupper.
+- **Försök igen** – Operatörer kan använda det här alternativet när felet kan lösas snabbt och räkenskapsregistreringen kan köras igen. Det här alternativet kan till exempel användas när räkenskapsenheten inte är ansluten, kvittoskrivaren har slut på papper eller så finns det ett papper har fastnat i kvittoskrivaren.
+- **Avbryt** – inställningen låter operatörer senarelägga räkenskapsregistreringen av den aktuella transaktionen eller händelsen om det uppstår ett fel. När registreringen senareläggs kan operatören fortsätta att arbeta med kassan kan utföra alla åtgärder som räkenskapsregistrering inte är obligatoriskt för När en händelse som kräver räkenskapsregistrering sker i kassan (till exempel en ny transaktion öppnas), kommer dialogrutan för felhantering automatisk att visas för att meddela operatören att föregående transaktion inte registrerades korrekt och att ge alternativ för felhantering.
+- **Hoppa över** - operatörer kan använda det här alternativet när räkenskapsregistreringen kan utelämnas, under vissa förhållanden och vanliga operationer kan fortsätta i kassan. Det här alternativet kan exempelvis användas när en försäljningstransaktion som räkenskapsregistreringen misslyckades för kan registreras i en speciell pappersjournal.
+- **Markera som registrerad** – operatörer kan använda detta alternativ när transaktionen faktiskt registrerades i räkenskapsenhet (exempelvis ett skattekvitto skrevs ut), men ett fel uppstod vid räkenskapssvaret sparades i kanaldatabasen.
 
-     >[!NOTE]
-     > Inom en kopplingsgrupp kan varje räkenskapsår bara ha en funktionell profil.
+> [!NOTE]
+> Alternativen **Hoppa över** och **Markera som registrerad** måste vara aktiverade på processen för räkenskapsregistrering innan de används. Dessutom måste motsvarande behörigheter tilldelas operatörer.
 
-- Skapa en **Teknisk profil för koppling** i **Retail > kanalinställning > räkenskapsintegration > Teknisk profil för koppling** för varje räkenskapskoppling.
-  - Välj namnet på en koppling.
-  - Välj en kopplingstyp: 
-      - **Lokal** - Ange den här typen för fysiska enheter eller program som är installerade på datorn.
-      - **Intern** – ange den här typen för kvittoskrivarenheter och tjänster som är anslutna till Retail Server.
-      - **Extern** - för externa räkenskapstjänster såsom en webbportal som tillhandahålls av skattemyndigheten.
-    
-  - Ange inställningar på fliken **anslutning**.
+Alternativen **Hoppa över** och **Markera som registrerade** tillåter informationskoder att samla in viss information om felet, till exempel orsaken till felet eller en justering för att hoppa över räkenskapsregistreringen eller märka transaktionen som registrerad. Mer information om hur du ställer in parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-      
- >[!NOTE]
- > En uppdaterad version av en konfiguration som lästes in tidigare laddas för både funktionella och tekniska profiler. Om en rätt anslutning eller dokumentleverantör redan används, meddelas du. Som standard sparas alla ändringar som gjorts manuellt i funktions- och tekniska profiler. För att ignorera dessa profiler med standarduppsättningen med parametrar från en konfiguration, klicka på **uppdatering** på sidan **Funktionsprofiler för koppling** och **Tekniska profiler för koppling**.
- 
-- Skapa en **räkenskapsregistrering** i **Retail > kanalinställning > räkenskapsintegration > räkenskapsregistrering** för varje unik process i räkenskapsintegreringen. En registreringsprocess definieras av ordningen på registreringsstegen och kopplingsgruppen som används i varje steg. 
-  
-  - Lägg till registreringsteg i processen:
-      - Klicka på **Lägg till**.
-      - Välj en kopplingstyp.
-      
-      >[!NOTE]
-      > Det här fältet definierar var systemet söker i en teknisk profil för kopplingen, antingen i maskinvaruprofiler för kopplingstypen **lokal** eller funktionsprofiler för kassa för andra räkenskapskopplingstyper.
-      
-   - Välj en kopplingsgrupp.
-   
-     >[!NOTE]
-     > Klicka på **Validera** för att kontrollera integriteten hos registreringsprocesstrukturen. Det rekommenderas att valideringar sker i följande fall:
-       >- För en ny registreringsprocess när alla inställningarna slutförs, inklusive bindning till funktionsprofiler för kassa och maskinvaruprofiler.
-       >- Efter att du uppdaterar en befintlig registreringsprocess.
+## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagra räkenskapssvar i räkenskapstransaktion
 
--  Bind räkenskapsregistreringar till funktionsprofiler för kassa i **Retail > kanalinställningar > kassainställningar > kassaprofiler > funktionsprofiler**.
-   - Klicka på **redigera** och välj ett **processnummer** på fliken **räkenskapsregistrering**.
-- Bind tekniska kopplingsprofiler till maskinvaruprofiler i **Retail > kanalinställningar > kassainställningar > kassaprofiler > maskinvaruprofiler**.
-   - Klickar på **redigera**, klicka på **nytt** på fliken **Teknisk profil för räkenskaper**.
-   - Välj en teknisk profil för koppling på fliken **Profilnummer**.
-   
-     >[!NOTE]
-     > Du kan lägga till flera tekniska profiler till en maskinvaruprofil. Men detta stöds inte om en maskinvaruprofil har flera skärningspunkter med någon kopplingsgrupp. Om du vill undvika felaktiga inställningar bör du validera registreringsprocessen när du har uppdaterat alla maskinvaruprofiler.
+Vid räkenskapsregistrering av transaktioner eller händelser lyckas, skapas en räkenskapstransaktion i kanaldatabasen och kopplas till den ursprungliga transaktionen eller händelsen. På samma sätt om alternativet **Hoppa över** eller **Markera som registrerad** väljs för en misslyckad räkenskapsregistrering, lagras informationen i en räkenskapstransaktion. En räkenskapstransaktion innehåller räkenskapssvar för räkenskapsenheten eller tjänsten. Om processen för räkenskapsregistrering består av flera steg, skapas en räkenskapstransaktion för varje steg i processen som resulterade i en lyckad eller misslyckad registrering.
 
+Räkenskapstransaktioner överförs till Butik administration av *P-jobb*tillsammans med butikstransaktioner. På snabbfliken **räkenskapstransaktioner** på sidan **butikstransaktioner** kan du visa de räkenskapstransaktioner som är kopplade till butikstransaktioner.
+
+En räkenskapstransaktion innehåller följande information:
+
+- Information om processen för räkenskapsregistrering (process, kopplingsgrupp, koppling och så vidare). Serienumret för räkenskapsenheten sparas också i fältet **registreringsnummer** om informationen ingår i räkenskapssvaret.
+- Status för räkenskapsregistreringen: **slutförd** för att registreringen har lyckats, **överhoppad** om operatören har valt alternativet **hoppa över** för en misslyckad registrering eller **markera som registrerad** om operatören har valt alternativ **Markera som registrerad**.
+- Informationskodtransaktioner som är relaterade till den valda skattetransaktionen. Visa informationskodtransaktionerna, på snabbfliken **räkenskapstransaktioner** väljer du en räkenskapstransaktion som har statusen **överhoppad** eller **markeras som registrerats** och väljer sedan **informationskodtransaktioner**.
+
+## <a name="fiscal-texts-for-discounts"></a>Räkenskapstexter för rabatter
+
+Vissa länder eller regioner har särskilda önskemål om ytterligare texter som måste skrivas ut på skattekvitton när olika sorters rabatter tillämpas. Räkenskapsintegration kan du ställa in en särskild text för en rabatt som skrivs ut efter en rabattrad på en kvittoskrivare. För manuella rabatter kan du konfigurera en räkenskapstext för den informationskod som anges som **produktrabatt**-informationskod i funktionsprofil för kassa. För mer information om hur man sätter upp räkenskapstexter för rabatter, se [skriva in räkenskapstexter för rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+
+## <a name="printing-fiscal-x-and-fiscal-z-reports"></a>Skriva ut skatterapporter X och Z
+
+Funktionen räkenskapsintegration stöder generering av rapporter vid dagens slut som är specifika för integrerad räkenskapsenhet eller tjänst:
+
+- Nya knappar som kör motsvarande operationer ska läggas till kassaskärmlayout. Mer information finns i [skapa skatterapporter X/Z från kassan](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- I exemplet på räkenskapsintegration bör dessa transaktioner anpassas till motsvarande verksamhet i räkenskapsenheten.
+
+## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Exempel på räkenskapsintegration i Retail SDK
+
+Följande exempel på räkenskapsintegration är tillgängliga i Retail SDK som publiceras med Retail:
+
+- [Exempel på integrering av kvittoskrivare för Italien](emea-ita-fpi-sample.md)
+- [Exempel på integrering av kvittoskrivare för Polen](emea-pol-fpi-sample.md)
+
+Följande funktioner för räkenskapsintegration finns också i Retail SDK men för närvarande utnyttjar inte i ramverket för räkenskapsintegration. Migrering av den här funktionen till ramverket för räkenskapsintegration planeras för senare uppdateringar.
+
+- [Digital signatur i Frankrike](emea-fra-cash-registers.md)
+- [Digital signatur för Norge](emea-nor-cash-registers.md)
+- [Exempel på integration av kontrollenhet för Sverige](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)

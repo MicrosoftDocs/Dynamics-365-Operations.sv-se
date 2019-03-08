@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll för produktionsprestanda"
-description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för produktionsprestanda. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
+title: Produktionsprestanda för Power BI-innehåll
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för produktionsprestanda. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProductionPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365970"
 ---
-
-# <a name="production-performance-power-bi-content"></a>Power BI-innehåll för produktionsprestanda
+# <a name="production-performance-power-bi-content"></a>Produktionsprestanda för Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet för **Produktionsprestanda**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver vad som omfattas i Power BI-innehåll för **produktionsprestanda**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
@@ -40,12 +39,12 @@ Power BI-innehållet markerar organisationens förmåga att slutföra produktion
 
 Power BI-innehållet låter dig även analysera produktionsavvikelser. Produktionsavvikelser beräknas som skillnaden mellan uppskattad och verklig kostnad. Produktionsavvikelser beräknas när produktionsorder eller batchorder uppnår statusen **Avslutad**.
 
-Den **Produktionsprestanda** som Power BI-innehållet omfattar inkluderar data som har hämtats från produktionsorder och batchorder. Rapporterna innehåller inte data som är relaterade till kanban-produktioner.
+Power BI-innehåll för **Produktionsprestanda** omfattar inkluderar data som har hämtats från produktionsorder och batchorder. Rapporterna innehåller inte data som är relaterade till kanban-produktioner.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehållet **Produktionsprestanda** visas på sidan **Produktionsprestanda** (**Produktionskontroll** \> **Förfrågningar och rapporter** \> **Analys av produktionsprestanda** \> **Produktionsprestanda**). 
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+**Produktionsprestanda** Power BI-innehåll visas på sidan **Produktionsprestanda** (**Produktionskontroll** \> **Förfrågningar och rapporter** \> **Analys av produktionsprestanda** \> **Produktionsprestanda**). 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mätvärden som ingår i Power BI-innehållet
 
 Power BI-innehållet **Produktionsprestanda** omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller.
 
@@ -130,4 +129,3 @@ Följande tabell visar nyckeldimensionerna som används som filter för att dela
 | Enheter                  | Id och Namn                                                   |
 | Resurser                 | Resurs-ID, resursnamn, resurstyp och resursgrupp |
 | Produkter                  | Produktnummer, produktnamn, artikel-ID och artikelgrupp         |
-

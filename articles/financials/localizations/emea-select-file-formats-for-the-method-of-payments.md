@@ -1,13 +1,13 @@
 ---
-title: "Filformat för betalningsmetod"
-description: "Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder."
+title: Filformat för betalningsmetod
+description: Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 350bea3e4a698e5e7c71fe4fcbb7e7386939511e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b6ee0ceb9d773ad1f510a5d192a7094a37061808
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371841"
 ---
-
 # <a name="file-formats-for-methods-of-payment"></a>Filformat för betalningsmetod
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ Gör följande om du vill välja filformat som baseras på X++ -kod.
 4.  Välj ett filformat i listan **Tillgänglig** listan och flytta det till listan **Markerat** med pilkontrollen.
 5.  Stäng sidan **Filformat för betalningsmetoder**.
 6.  På snabbfliken **Filformat** väljer du det filformat som ska användas för betalningsmetoden i motsvarande filformatsfält. De allmänna alternativen för elektronisk rapportering bör anges som **Nej** for X++ -filformat.
-
 
 
 

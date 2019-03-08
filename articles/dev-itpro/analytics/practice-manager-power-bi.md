@@ -1,45 +1,44 @@
 ---
-title: "Power BI-innehåll för praxischef"
-description: "Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet."
+title: Praxischef Power BI-innehåll
+description: Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367810"
 ---
-
-# <a name="practice-manager-power-bi-content"></a>Power BI-innehåll för praxischef
+# <a name="practice-manager-power-bi-content"></a>Praxischef Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet för **Praxischef**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i **praxischef** Microsoft Power BI-innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
-Power BI-innehållet för **Praxischef** har skapats för praxischefer och projektledare. Det tillhandahåller viktiga mätvärden som är relaterade till de projekt som organisationen med. Instrumentpanelen ger en översikt över projekt och tillhörande kunder. Ett rapportnivåfilter kan användas för rapporter till specifika juridiska personer. Detta Power BI-innehåll hämtar data från sammanlagda mått för projektredovisning.
+**Praxischef** Power BI-innehåll har skapats för praxischefer och projektledare. Det tillhandahåller viktiga mätvärden som är relaterade till de projekt som organisationen med. Instrumentpanelen ger en översikt över projekt och tillhörande kunder. Ett rapportnivåfilter kan användas för rapporter till specifika juridiska personer. Detta Power BI-innehåll hämtar data från sammanlagda mått för projektredovisning.
 
-Power BI-innehållet för **Praxischef** innehåller fem rapportsidor: en översiktssida och fyra sidor som ger information om projektkostnader, intäkter, hantering av upparbetat värde samt timmätvärden som är fördelade över flera olika dimensioner.
+Power BIPower BI-innehållet för **Praxischef** innehåller fem rapportsidor: en översiktssida och fyra sidor som ger information om projektkostnader, intäkter, hantering av upparbetat värde samt timmätvärden som är fördelade över flera olika dimensioner.
 
 Alla belopp i innehållet visas i systemvalutan. Du kan ange systemvalutan på sidan **Systemparametrar**.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 
 Power BI-innehållet **Praxischef** visas i arbetsytan **Projekthantering**.
 
@@ -55,11 +54,11 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 | EVM               | Index för kostnad och schemaprestanda efter projekt |
 | Timmar             | <ul><li>Faktiska fakturerbara utnyttjade timmar kontra faktiska fakturerbara ej fakturerbara timmar kontra budgeterade timmar</li><li>Faktiska fakturerbara utnyttjade timmar kontra faktiska fakturerbara ej fakturerbara timmar efter projekt</li><li>Faktiska fakturerbara utnyttjade timmar kontra faktiska fakturerbara ej fakturerbara timmar efter resurs</li><li>Kvot för faktiska fakturerbara timmar efter projekt</li><li>Kvot för faktiska fakturerbara timmar efter resurs</li></ul> |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
-Följande data används för att fylla i rapportsidorna i Power-Bi-innehållet **Praxischef**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna i Power BI-innehållet **Praxischef**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive enhet.
 
@@ -119,4 +118,3 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Sammanlagda huvudmått       | Fält               | beskrivning |
 |---------------------------------|---------------------|-------------|
 | Planerad kostnad för slutförd aktivitet | Sum(TotalCostPrice) | Uppskattad total självkostnad för alla projekttransaktionstyper som har slutförda uppgifter. |
-

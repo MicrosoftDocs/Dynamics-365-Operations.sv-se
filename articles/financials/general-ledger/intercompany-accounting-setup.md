@@ -1,13 +1,13 @@
 ---
-title: "Inställningar för koncernintern redovisning"
-description: "Det här avsnittet beskriver hur du ställer in koncernintern redovisning så att du kan använda koncerninterna journaler för redovisningsallokeringar och redovisningsjournaler, till exempel dagboksjournaler, leverantörsfakturajournaler och betalningsjournaler."
+title: Inställningar för koncernintern redovisning
+description: Det här avsnittet beskriver hur du ställer in koncernintern redovisning så att du kan använda koncerninterna journaler för redovisningsallokeringar och redovisningsjournaler, till exempel dagboksjournaler, leverantörsfakturajournaler och betalningsjournaler.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ce07a29d7aa5057d0b61c7fcc6bb87a0a2755fc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48e0b00e2a9bd1a1387780747e1976bd386200eb
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363992"
 ---
-
 # <a name="intercompany-accounting-setup"></a>Inställningar för koncernintern redovisning
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Välj **Debetkonto (förfaller den)** och **Kreditkonto (förfaller)** för båd
 Slutligen kan du välja den juridiska person som ska få redovisningen för stödbelopp, till exempel kassarabatt eller realiserade vinster/förluster för centraliserade betalningar. 
 
 Ett ömsesidigt förhållande kan enkelt skapas på sidan **Koncernintern redovisning** genom att använda knappen **Skapa ömsesidigt förhållande** när det första paret juridiska personer har skapats. När motsvarande par skapas, kopieras informationen för destinationsföretaget till det ursprungliga företaget och vice versa. Journalen som har definierats för destinationsföretaget blir kvar. De flesta organisationer använder samma namnkonventioner för sina journalnamn så att journalnamnet förblir densamma. Om journalnamnet skiljer sig åt, visas en varning i fältet för att påpeka att journalen inte finns, och du kan då välja en annan journal.
-
 
 
 

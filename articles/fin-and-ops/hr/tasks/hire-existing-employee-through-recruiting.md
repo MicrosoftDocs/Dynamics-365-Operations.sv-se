@@ -1,13 +1,13 @@
---- 
-title: "Anställ befintliga medarbetare genom att rekrytera"
-description: "Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i organisationen."
+---
+title: Anställ befintliga medarbetare genom att rekrytera
+description: Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i organisationen.
 author: rschloma
 manager: AnnBe
 ms.date: 02/10/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
 ms.openlocfilehash: 71793ce48142b19b288e2315dcd44a07d8e39f90
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365395"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Anställ befintliga medarbetare genom att rekrytera
 
@@ -40,5 +40,4 @@ Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i 
 8. Du kan även välja en orsakskod. Exempel: Omorganisation
 9. Klicka på Ändra befattning.
     * Du kan också ändra kompensation vid denna tidpunkt. Om du inte tilldelar kompensation vid denna tidpunkt kan du ändra den genom att gå till arbetarformuläret, välja fliken Kompensation och sedan "Fast plan". När du har valt "Ändra befattning" uppdateras statusen för ansökningen till "Anställd".  
-
 

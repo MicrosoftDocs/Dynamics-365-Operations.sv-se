@@ -1,13 +1,13 @@
---- 
+---
 title: Hantera sortiment (november 2016)
-description: "Den här proceduren visar hur du skapar och publicerar ett nytt produktsortiment samt hur du använder demonstrationsdataföretaget USRT."
+description: Den här proceduren visar hur du skapar och publicerar ett nytt produktsortiment samt hur du använder demonstrationsdataföretaget USRT.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCategoryAndProductAssortment, RetailAssortmentDetails, RetailOperatingUnitPicker, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f96c79558c3248406a1b5988f9c9dc9783db4406
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363670"
 ---
 # <a name="manage-assortments-november-2016"></a>Hantera sortiment (november 2016)
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du skapar och publicerar ett nytt produktsortiment samt hur du använder demonstrationsdataföretaget USRT. Denna procedur kräver programmet Dynamics AX 7.0.1 eller senare, samt plattformen Dynamics AX 7.1.  
+Den här proceduren visar hur du skapar och publicerar ett nytt produktsortiment samt hur du använder demonstrationsdataföretaget USRT. Denna procedur kräver programmet Dynamics AX 7.0.1 eller senare och Dynamics AX plattform 7.1.  
 
 1. Klicka på Kategori- och produkthantering.
 
@@ -53,5 +53,4 @@ Den här proceduren visar hur du skapar och publicerar ett nytt produktsortiment
 ## <a name="publish-an-assortment"></a>Publicera ett sortimentet
 1. Klicka på Publicera.
 2. Klicka på Ja.
-
 

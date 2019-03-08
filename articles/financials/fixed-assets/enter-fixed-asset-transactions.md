@@ -1,13 +1,13 @@
 ---
-title: "Alternativ för transaktioner för anläggningstillgång"
-description: "Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar."
+title: Alternativ för transaktion för anläggningstillgång
+description: Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6362a63bca43b5ac8da14becf6b966e459365ce1
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377192"
 ---
-
-# <a name="fixed-asset-transaction-options"></a>Alternativ för transaktioner för anläggningstillgång
+# <a name="fixed-asset-transaction-options"></a>Alternativ för transaktion för anläggningstillgång
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,9 +65,6 @@ Alla transaktionstyper för anläggningstillgångar kan bokföras på sidan Allm
 | ** **                               | Kundreskontra      | Fritextfaktura                         |
 
 
+Avskrivningsperiodernas återstående värde av anläggningstillgången uppdateras inte när en journalrad för avskrivningstransaktionstyp skapas manuellt eller importeras via en datatabell. Detta värde uppdateras när avskrivningsförslagsprocessen används till att skapa journalraden.
 
 Mer information finns i [Integrering av anläggningstillgångar](fixed-asset-integration.md).
-
-
-
-

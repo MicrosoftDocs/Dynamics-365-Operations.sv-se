@@ -1,13 +1,13 @@
 ---
-title: "Säljfunktion för kundtjänst"
-description: "Det här ämnet innehåller en översikt över funktionen för callcenterförsäljning i Microsoft Dynamics 365 for Retail."
+title: Säljfunktion för kundtjänst
+description: Det här avsnittet innehåller en översikt över funktionen för callcenterförsäljning i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 2b536ad4f29a3bb76294ef2fba30c529c24f1375
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363164"
 ---
-
-# <a name="call-center-sales-functionality"></a>Säljfunktion för kundtjänst
+# <a name="call-center-sales-functionality"></a>Försäljningsfunktioner för kundtjänst
 
 [!include [banner](includes/banner.md)]
 
-I Dynamics 365 for Retail är kundtjänst en typ av butikskanal som kan definieras i programmet. Definiera en viss kanal för dina kundtjänstenheter låter systemet koppla specifika datastandarder och orderhantering är som standard försäljningsorder som har skapats av en användare av kundtjänst.
+I Dynamics 365 for Retail, är kundtjänst en typ av butikskanal som kan definieras i programmet. Definiera en viss kanal för dina kundtjänstenheter låter systemet koppla specifika datastandarder och orderhantering är som standard försäljningsorder som har skapats av en användare av kundtjänst.
 
 Kundtjänst omfattar avancerat butikspris och erbjudanden, kataloger, presentkort, bonusprogram och kuponger. Kundtjänstorder utnyttjas också av kassaprogrammet för att ge stöd för scenarier för orderuppfyllelse mellan kanaler.
 
@@ -68,4 +67,3 @@ Den här sidan innehåller länkar till relevanta handlingar som är relaterade 
 ## <a name="configure-continuity-programs"></a>Konfigurera kontinuitetsprogram
 
 [Ställ in ett kontinuitetsprogram för en kundtjänst](set-up-continuity-program.md)
-

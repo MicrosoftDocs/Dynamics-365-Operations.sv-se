@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll för organisationsutbildning"
-description: "Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för organisationsutbildning."
+title: Organisationsutbildning Power BI-innehåll
+description: Det här avsnittet beskriver Finance and Operations - organisationsutbildning Power BI-innehåll.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6c1855013dc449950877f8727a5453942aeb75de
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367534"
 ---
-
-# <a name="organizational-training-power-bi-content"></a>Power BI-innehåll för organisationsutbildning
+# <a name="organizational-training-power-bi-content"></a>Organisationsutbildning Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för organisationsutbildning.
+Det här avsnittet beskriver Finance and Operations - organisationsutbildning Power BI-innehåll.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i innehållspaketet
 När du har anslutit innehållspaketet till dina Finance and Operations-data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
@@ -39,7 +38,7 @@ När du har anslutit innehållspaketet till dina Finance and Operations-data kom
 | Kursanalys | Registrering per plats, deltagare i kursen efter status och registreringslista |
 | Kurstyper    | Kurstyper per kompetens                                                       |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Finance and Operations -data används för att fylla i rapporter i innehållspaketet för organisationsutbildning. Följande tabell visar enheterna som innehållspaketet baserades på.
@@ -59,4 +58,3 @@ Finance and Operations -data används för att fylla i rapporter i innehållspak
 | Training\_Position        | Befattning, titel och heltidsanställning (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Förnamn, efternamn och fullständiga namn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Titel och tjänsteålder                                         | Training\_CourseAttendees |
-

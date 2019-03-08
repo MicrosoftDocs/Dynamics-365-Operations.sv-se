@@ -1,13 +1,13 @@
 ---
-title: "Återför produktionsorderstatus"
-description: "I det här avsnittet beskrivs hur du återför produktionsorderstatus."
+title: Återför produktionsorderstatus
+description: I det här avsnittet beskrivs hur du återför produktionsorderstatus.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367327"
 ---
-
 # <a name="reverse-the-production-order-status"></a>Återför produktionsorderstatus
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ När du återför statusen för en produktionsorder från **Frisläppt** till **
 
 ## <a name="from-started-to-released"></a>Från startad till frisläppt
 När du återför statusen för en produktionsorder från **Startad** till **Frisläpp**, återställs alla artiklar som rapporterats som färdiga. Om material har plockats eller inkommande och utgående leveranser har gått till produktion återställs även dessa inställningar. Fältet **Reststatus** på produktionsorderns strukturlisterader ändras från **Avslutad** till **Materialförbrukning**. Om tid har registrerats, eller om kvantiteter har rapporterats som färdiga för operationer i produktionsflödet, återförs dessa inställningar. Fältet **Reststatus** på produktionsorderns strukturlisterader ändras från **Avslutad** till **Flädesförbrukning** i produktionsflödet. Inställningarna för alla artiklar som bokförs som pågående eller som pågående arbete återförs. På sidan **Produktionsorderdetaljer** återställs de fält som visar en kvantitet som startades, eller rapporterades som avslutad. Data för dessa transaktioner återställs också.
-
 
 
 

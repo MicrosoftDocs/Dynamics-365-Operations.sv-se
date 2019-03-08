@@ -1,13 +1,13 @@
 ---
 title: Kostnadsredovisningsterminologi
-description: "Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning."
+description: Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365947"
 ---
-
 # <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Allokeringsunderlaget används för att mäta och kvantifiera aktiviteter som t.
 
 **Kostnadsredovisning**
 
-Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv. Källadatan som används för kostnadsanalys hanteras oberoende i kostnadsredovisning. Därför påverkas inte källadatan av uppdateringar i kostnadsredovisning. När du samlar in kostnadsdata från olika källor och särskilt när du importerar huvudkontona från huvudboken i Microsoft Dynamics 365 for Operation for  Finance and Operations som kostnadselement finns det dataredundans, eftersom samma data finns i både huvudbok och i kostnadsredovisning. Den här redundansen krävs, eftersom du använder ekonomisk hantering för extern rapportering och kostnadsredovisning för intern rapportering.
+Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv. Källadatan som används för kostnadsanalys hanteras oberoende i kostnadsredovisning. Därför påverkas inte källadatan av uppdateringar i kostnadsredovisning. När du samlar in kostnadsdata från olika källor och särskilt när du importerar huvudkontona från huvudboken i Microsoft Dynamics 365 for Finance and Operations som kostnadselement finns det dataredundans, eftersom samma data finns i både huvudbok och i kostnadsredovisning. Den här redundansen krävs, eftersom du använder ekonomisk hantering för extern rapportering och kostnadsredovisning för intern rapportering.
 
 **Huvudbok för kostnadsredovisning**
 
@@ -119,7 +118,7 @@ Det finns två dimensionshierarkier: kategoriseringshierarki och klassificerings
 Kostnadsredovisning stöder integrering av data från källsystem via en uppsättning datakopplingar. Följande datakopplingar finns:
 
 -  Importerade transaktioner (förkonfigurerade)
--  Dynamics 365 for Finance and Operations (förkonfigurerat)
+-  Dynamics 365 for Finance and Operations (förkonfigurerad)
 -  Dynamics AX (konfiguration krävs)
 
 **Obs:** Transaktioner importerade via datakopplingen baseras på datatabeller.
@@ -128,7 +127,7 @@ Kostnadsredovisning stöder integrering av data från källsystem via en uppsät
 
 De flesta källsystem kan innehålla data som matchar en eller flera datakällor i kostnadsredovisningen. Om du vill justera data från källsystemen med datakällan i kostnadsredovisningen, måste en dataleverantör konfigureras. I följande tabell visas vilka dataleverantörer som finns tillgängliga per dataanslutning och datakälla.
 
-|  **Datakällor** |  **Dataanslutning för importerade transaktioner** | **Datakoppling för Dynamics 365 for Finance and Operations**  | **Datakoppling för Dynamics AX**  |
+|  **Datakällor** |  **Dataanslutning för importerade transaktioner** | **Dynamics 365 for Finance and Operations datakoppling**  | **Datakoppling för Dynamics AX**  |
 |---|---|---|---|
 | Dimensionsmedlemmar för kostnadselement  |  Ja | Ja  | Ja  |
 |  Dimensionsmedlemmar för kostnadsobjekt |  Ja | Ja  | Ja  |
@@ -204,6 +203,5 @@ Utdrag för vyer för chefer som är ansvariga för att kontrollera kostnader. U
 **Version**
 
 Versioner används för att simulera, visa och jämföra olika resultat. Som standard visas alla faktiska kostnader i en basversion som kallas för *faktisk* För budgetar och beräkningar kan du efter behov arbeta med valfritt antal versioner. Du kan till exempel importera budgetdata till en ursprunglig version och sedan ändra budgeten i en reviderad version. För beräkningar kan du skapa flera versioner. I dessa olika versioner kan du sedan skapa beräkningar genom att använda olika beräkningsregler som ska tillämpas för kostnadsallokering.
-
 
 

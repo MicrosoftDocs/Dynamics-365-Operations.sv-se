@@ -1,13 +1,13 @@
---- 
-title: "Definiera beroendet av ER-konfigurationer för andra komponenter"
-description: "För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS)."
+---
+title: Definiera beroendet av ER-konfigurationer för andra komponenter
+description: För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 18eb8de7c851e5477d93a00f744fe56929c43ca2
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365096"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera beroendet av ER-konfigurationer för andra komponenter
 
@@ -62,7 +62,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 18. Välj Microsoft Dynamics AX 7.0 RTW.
 19. Skriv "[7.0.1265.3015,7.1)" i fältet Version.
     * [7.0.1265.3015,7.1)  
-    * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Sample data redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.    
+    * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Sample data redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.   
 20. Klicka på Spara.
 21. Stäng sidan.
 22. Klicka på Ändra status.
@@ -140,5 +140,4 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 26. Expandera Sample data model i trädet.
     * Observera att modellkonfigurationen Sample mapping har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Sample mapping har definierats till att implementera den valda datamodellen, och eftersom den gäller för Finance and Operations. Konfigurationen Sample mapping (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
     * Om du loggar in till Dynamics 365 for Finance and Operations, Enterprise Edition, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Sample mapping (alternative) medan konfigurationen Sample mapping hoppas över.  
-
 

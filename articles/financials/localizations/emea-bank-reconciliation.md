@@ -1,13 +1,13 @@
 ---
-title: "Bankutdrag och betalningsavstämning för EU"
-description: "Det här avsnittet innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder."
+title: Bankutdrag och betalningsavstämning för EU
+description: Det här avsnittet innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder.
 author: neserovleo
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 40742ff82e916b64e68662f79899baf2549b1f2c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3dc0b968fdf217554b350a152195a4b3d235fdf0
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371811"
 ---
-
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankutdrag och betalningsavstämning för EU
 
 [!include [banner](../includes/banner.md)]
@@ -60,6 +59,5 @@ Förutom ett bankutdrag kan banker även tillhandahålla specifika meddelanden s
 -   (DNK) BetalingsserviceBasis-returformat – Returformat för kundexportformatet Betalingsservice
 -   [Importera betalningsformat för Sverige](emea-swe-payment-formats-import.md) - Bankgirot Autogiro returnerar
 -   (SVERIGE) BankGirot retur – Returformat för leverantörsbetalningar som motsvarar exportformatet Bankgirot
-
 
 

@@ -1,13 +1,13 @@
 ---
 title: Operations-resurser
-description: "Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor."
+description: Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor.
 author: sorenva
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OpResLifecycleManagementWorkspace, WrkCtrCapability
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e11d64ec37775f4fe2fc113af238a6294b459454
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366614"
 ---
-
 # <a name="operations-resources"></a>Operations-resurser
 
 [!include [banner](../includes/banner.md)]
@@ -83,7 +82,6 @@ När en arbetsgrupp används som en lean-arbetsgrupp, anges kapaciteten för arb
 
 ## <a name="costing-resources"></a>Kostnadsredovisningsresurser
 När du definierar en aktivitet som till exempel en flödesoperation eller en timprognos för projekt, kan du ange behovet av en viss verksamhetsresurs eller resursgrupp. Du kan emellertid också ange behovet av en verksamhetsresurs av en viss typ eller en verksamhetsresurs som har en specifik kapacitet eller kompetens. Av denna anledning görs den verkliga resurstilldelningen inte förrän aktiviteten tidsplaneras och kapaciteten reserveras. Därför kan du på en flödesoperation ange att uppskattningen och strukturlisteberäkningen måste baseras på en viss verksamhetsresurs. Den här verksamhetsresurs kallas för kostnadsredovisningresursen. Du kan också överföra kostnadskategorier och arbetstider från kostnadsredovisningresursen till aktiviteten. När operationen tidsplaneras görs uppskattnings- och strukturlisteberäkningen genom att använda operationsresursen som faktiskt har tidsplanerats.
-
 
 
 

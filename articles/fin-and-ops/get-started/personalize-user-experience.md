@@ -1,13 +1,13 @@
 ---
-title: "Anpassa användarupplevelsen"
-description: "Det här ämnet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations."
+title: Anpassa användarupplevelsen
+description: Det här avsnittet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserSetup, DefaultDashboard
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
-ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/28/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363486"
 ---
-
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 
 Det finns tre grundläggande klasser anpassningar i Finance and Operations.
 
@@ -115,7 +114,7 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 - Använd knappen **infoga** för att visa en lista med element som kan infogas på en sida.
 
     - Välj verktyget **fält** under **infoga** för att lägga till ett fält till sidan. När du använder verktyget **fält**, du kan lägga till fält som ingår i definitionen för sidan, men som för tillfället visas inte på sidan. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns [anpassade fält](user-defined-fields.md). När du har valt verktyget **fält** måste du först välja den grupp eller det område där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till den valda gruppen eller området. Välj ett eller flera fält i dialogrutan och välj sedan **Infoga**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
-    - Välj verktyget **PowerApp** under **infoga** i ett program som har skapats med hjälp av Microsoft PowerApps på sidan. För detaljerad information om hur du bäddar in en PowerApps-app på en sida finns i [bädda in PowerApps](embed-power-apps.md).
+    - Välj verktyget **PowerApp**-verktyg under **infoga** i ett program som har skapats med hjälp av Microsoft PowerApps på sidan. För detaljerad information om hur du bäddar in en PowerApps-app på en sida finns i [bädda in PowerApps](embed-power-apps.md).
 
 - Välj knappen **Hantera** för att visa en lista över hanteringsalternativ som är relaterade till alla anpassningar för den aktuella sidan.
 
@@ -171,4 +170,3 @@ När du anpassar inställningarna för lagerdimensionerna på en sida, beakta in
 Inställningarna för **Dimensionsvisning** tillämpas på alla sidor och åsidosätter eventuella anpassade inställningar av lagerdimensionsfälten på enskilda sidor.
 
 Därför i det föregående exemplet om du inte vill att kolumnen för batchnummerlagerdimensionen ska visas, måste du avmarkera dimensionen som en del av alternativet **visa mått** för tabellen. Slutligen används ändringen inte bara på en specifik sida utan på alla sidor.
-

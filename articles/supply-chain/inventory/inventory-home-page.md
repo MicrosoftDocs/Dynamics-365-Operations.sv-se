@@ -1,13 +1,13 @@
 ---
 title: Startsidan Lagerhantering
-description: "Det här ämnet ger en översikt över Lagerhantering."
+description: Det här ämnet ger en översikt över Lagerhantering.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5376c6c18c2d7d48d3ee253e8818e0c868a52145
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 01b51b3442ca2a924cec2e894c3840c90989791c
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364935"
 ---
-
 # <a name="inventory-management"></a>Lagerhantering 
 
 [!include [banner](../includes/banner.md)]
@@ -55,10 +54,9 @@ Följande inlärningskarta anger de huvudsakliga koncept och uppgifter som utgö
 Mer information finns i [lagerredovisning i kostnadshantering](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Bloggar om tillverkning och logistikhantering
-Det finns åsikter, nyheter och annan information om kassa- och bankhantering och andra lösningar i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Det finns åsikter, nyheter och annan information om kassa- och bankhantering och andra lösningar i teambloggen [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen **Hjälp** på valfri sida för att få åtkomst till uppgiftsguiderna.
-
 
 

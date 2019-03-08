@@ -1,13 +1,13 @@
---- 
+---
 title: ER Skapa en formatkonfiguration (november 2016)
-description: "I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en formatkonfiguration för elektronisk rapportering (ER)."
+description: I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en formatkonfiguration för elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
+ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
 ms.translationtype: HT
-ms.sourcegitcommit: 13469aad7fdcefb3a1706eec0527f29968e007eb
-ms.openlocfilehash: 10511fe5b936135471b522fc7152a54686a3be87
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377559"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Skapa en formatkonfiguration (november 2016)
 
@@ -46,10 +46,6 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
     * Ett visst format för elektroniska dokument kan definieras. Lämna det här fältet tomt om du vill välja ett format vid körning.  
 8. I fältet **Definition av datamodell** ange eller välj ett värde.
 9. Klicka på **Skapa konfiguration**. En ny konfiguration har skapats. Utkastversionen kan användas för att lagra designformatet för att hantera elektroniska dokument.  
-
- > [!NOTE]
- > Om du inte ser **Skapa konfiguration** måste du aktivera designläge på sidan **Elektronisk rapportering parametrar**.
-
 
 ## <a name="design-the-format-of-an-electronic-document"></a>Designa formatet för ett elektroniskt dokument
 1. Klicka på **Designer**.
@@ -162,5 +158,4 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 41. Klicka på **OK**.
 42. Klicka på **Spara**.
 43. Stäng sidan.
-
 

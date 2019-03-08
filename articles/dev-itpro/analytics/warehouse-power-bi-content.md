@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll för lagerställets prestanda"
-description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för lagerställets prestanda. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
+title: Resultat för lagerställe Power BI-innehåll
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för lagerställets prestanda. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 author: Mirzaab
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWarehousePerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 99966a67fa1fd91fc54e7100f8e2e41b87f6a406
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365372"
 ---
-
-# <a name="warehouse-performance-power-bi-content"></a>Power BI-innehåll för lagerställets prestanda
+# <a name="warehouse-performance-power-bi-content"></a>Resultat för lagerställe Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet för **Lagerställets prestanda**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i Power BI-innehållet för **lagerställets prestanda**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
@@ -42,10 +41,10 @@ Lagerställechefer kan använda Power BI-innehåll för **lagerställets prestan
 - **Leveransprestanda** – mät om distributionslagret levereras i sin helhet och i tid till kunder (d.v.s. mät utgående transport- och leveransprestanda), så att du kan identifiera eventuella problem som rör produkter, platser eller lagerställen eller särskilda kunder. Om du tycker att du får sen leverans till specifika områden eller städer kan du behöva ägna mer uppmärksamhet åt transport eller kontohantering.
 - **Platslagerprecision** – lagerprecision är en viktigt intern Business Intelligence för lagerställe (BI). Det är mycket viktigt att du avgör hur exakt du i allmänhet räknar. Det är dock också viktigt att fastställa hur exakt du artiklarna lagras på rätt plats och att markera avvikelsedata så att du kan hitta bättre befattningar för artiklar eller initiera totala positioner om ett visst objekt. (För närvarande levereras nya artikelbaserade cykliska funktioner som en snabbkorrigering). Om du använder Power BI-innehållet för att avgöra korrekt lagerbehållningsdata per lagerställe kan du även identifiera stöld i dina butiker. Du kan bestämma om några platser har lagerbehållningskvantiteter som avviker från företagets resursplaneringsdata (ERP). Dessa platser kan vara för stora eller omöjligt att räkna. Alternativt kan bland annat fysisk placering vara dålig, så att det är svårt att synkronisera en enstaka objekttyp med behållningsdata.
 
-## <a name="accessing-the-power-bi-content-pack"></a>Åtkomst till Power BI-innehållspaket
-Power BI-innehållet **Lagerprestanda** visas på sidan **Lagerprestanda** (**Lagerhantering** \> **Förfrågningar och rapporter** \> **Analys av lagerprestanda** \> **Lagerprestanda**).
+## <a name="accessing-the-power-bi-content-pack"></a>Åtkomst till Power BI-innehållspaketet
+**Lagerprestanda** Power BI-innehåll visas på sidan **Lagerprestanda** (**Lagerhantering** \> **Förfrågningar och rapporter** \> **Analys av lagerprestanda** \> **Lagerprestanda**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mätvärden som ingår i Power BI-innehållet
 Power BI-innehållet för **Prestanda för lagerställe** innehåller ofta en rapport. Denna rapport består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Prestanda för lagerställe**.
 
 | Rapportsida                 | Diagram                                   | beskrivning |
@@ -79,7 +78,7 @@ Power BI-innehållet för **Prestanda för lagerställe** innehåller ofta en ra
 | Leveransprestanda        | Levererat per site/lagerställe              | Den procentandel som levererades tidigt, i tid eller sent per site eller lagerställe. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Förstå datamodellen och beräkningar
-Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Lagerställeprestanda**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna Power BI-innehållet **Lagerställeprestanda**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Följande sammanlagda huvudmått används till grund för innehållet:
 
@@ -113,4 +112,3 @@ Följande sammanlagda huvudmått används till grund för innehållet:
 | Leveransprestanda        | Leverans efter produkt                       | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
 | Leveransprestanda        | Levererade av kunder                      | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
 | Leveransprestanda        | Levererat per site/lagerställe              | CustPackingSlipOnTimeStatus           | Tidig, I tid och Sen (se beskrivningarna tidigare i den här tabellen). |
-

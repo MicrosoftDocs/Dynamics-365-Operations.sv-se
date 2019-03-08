@@ -1,14 +1,14 @@
 ---
-title: "Säkerhets- och rollhantering i Attract"
-description: "Det här avsnittet innehåller information om rollsäkerhet i Microsoft Dynamics 365 for Talent - Attract."
+title: Säkerhets- och rollhantering i Attract
+description: Det här avsnittet innehåller information om rollsäkerhet i Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
 ms.date: 10/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: 9eb12bd6b9fc1aa66002908e5989b3ac504ab673
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374790"
 ---
-
 # <a name="security-and-role-management-in-attract"></a>Säkerhets- och rollhantering i Attract
 
 [!include[banner](../includes/banner.md)]
@@ -65,7 +64,7 @@ Användare som tilldelas rollen Rekryterare har fullständiga behörigheter för
 
 ## <a name="interviewer"></a>Intervjuare
 
-Alla användare som har ett konto i Microsoft Azure Active Directory (Azure AD) i organisationen kan läggas till ett anställningsteam som intervjuare. Användare som tilldelas rollen Intervjuare kan visa jobbinformation och data om sökande för jobb som de är i anställningsteamet. För dessa jobb kan intervjuare också göra anställningsrekommendationer och ge feedback om kandidater. Emellertid kan inte de uppdatera jobbinformation eller data om sökande.
+Alla användare som har ett konto i Azure Active Directory (Azure AD) i organisationen kan läggas till ett anställningsteam som intervjuare. Användare som tilldelas rollen Intervjuare kan visa jobbinformation och data om sökande för jobb som de är i anställningsteamet. För dessa jobb kan intervjuare också göra anställningsrekommendationer och ge feedback om kandidater. Emellertid kan inte de uppdatera jobbinformation eller data om sökande.
 
 ## <a name="read-only"></a>Skrivskydd
 
@@ -108,7 +107,7 @@ Följande behörigheter gäller jobbspecifika data för sökande och de åtgärd
 | Flytta fram ett stadium           | Kan avvisa om användaren är i anställningsteamet | Kan avancera om användaren är i anställningsteamet | Tillåts inte |
 | Starta erbjudandehantering | Kan starta erbjudandehantering | Det finns ett konfigurationsalternativ för erbjudandeaktivitet. | Tillåts inte |
 
-\*\* Ett konfigurationsalternativ i [inställning av feedback-aktivitet](./activities-attract.md#feedback-activity) kontrollerar om intervjuare ser varandras feedback.
+\*\* Ett konfigurationsalternativ i [inställning av feedback-aktivitet](activities-attract.md#feedback-activity) kontrollerar om intervjuare ser varandras feedback.
 
 ## <a name="process-templates"></a>Processmallar
 
@@ -146,4 +145,3 @@ Kandidater är personer som har lagts till i en talangpool men som inte har kopp
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil - information om kandidat | Skapa, läsa, uppdatera och ta bort | Skapa, läsa, uppdatera och ta bort | Ingen åtkomst   |
 | Dokument                   | Skapa, läsa, uppdatera och ta bort | Skapa, läsa, uppdatera och ta bort | Ingen åtkomst   |
-

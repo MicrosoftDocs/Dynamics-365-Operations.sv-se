@@ -1,13 +1,13 @@
 ---
 title: Importera ISO20022-filer
-description: "I det här avsnittet beskrivs hur du importerar betalningsfiler i ISO 20022 camt.054 och pain.002-format i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet beskriver hur du importerar betalningsfiler ISO 20022 camt.054 och pain.002 format i Microsoft Dynamics 365 for Finance and Operations.
 author: neserovleo
 manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: d91e937c62d4d498e67d753e39676514835f4161
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f55e8fbc4d13f84686298cb8dbcebb4baf134cf3
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371819"
 ---
-
 # <a name="import-iso20022-files"></a>Importera ISO20022-filer
 
 [!include [banner](../includes/banner.md)]
@@ -130,4 +129,3 @@ Mer information om elektronisk rapportering finns i [översikt över elektronisk
 - [Ställ in en betalningsmetod för ISO20022-kreditöverföringar](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Ställ in en betalningsmetod för ISO20022-autogiro](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar](./tasks/set-up-vendor-iso20022-credit-transfers.md)
-

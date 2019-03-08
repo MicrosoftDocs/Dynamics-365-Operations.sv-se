@@ -1,13 +1,13 @@
 ---
 title: Intrastat
-description: "Det här ämnet ger information om Intrastat-rapportering för handel av varor och, i vissa fall, tjänster mellan länder/regioner i den Europeiska unionen (EU). Det ger en översikt över rapporteringsprocessen och beskriver nödvändiga inställningar och förutsättningar."
+description: Det här ämnet ger information om Intrastat-rapportering för handel av varor och, i vissa fall, tjänster mellan länder/regioner i den Europeiska unionen (EU). Det ger en översikt över rapporteringsprocessen och beskriver nödvändiga inställningar och förutsättningar.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: b4b3d8f7da4fbb107353a25ff177492a0744b4c1
 ms.openlocfilehash: 50eb50c636d70dbdc374e8cfc89438433fb1f1b0
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371843"
 ---
-
 # <a name="intrastat"></a>Intrastat
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ Följande avsnitt beskriver det generella flödet av information som används f�
 
 ### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Ange en transaktion som korsar gränsen till ett annat EU-land eller en annan EU-region
 
-En kundfaktura, fritextfaktura, inköpsfaktura, projektfaktura, kundföljesedel, produktinleverans för leverantör eller överföringsorder överförs bara till Intrastat-journalen om landet/regionen för målen (vid utförsel) eller försändelsen (vid införsel) är **EU**. Denna funktion har utökats för Microsoft Dynamics 365 for Operations version 1611 och låter dig ange fraktadresser för en transaktion inom gemenskapen. Om en fraktadress skiljer sig åt från en leverantörsföretagsadress (eller en kunderföretagsadress för returorder), fungerar Intrastat-rapporteringen med den här informationen. När du skapar en försäljningsorder, fritextfaktura, inköpsorder, leverantörsfaktura, projektfaktura eller överföringsorder har vissa fält som är relaterade till utländsk handel standardvärden i dokumenthuvudet eller på raden. Standardtransaktionskoden hämtas från motsvarande fält på sidan **Utländska handelsparametrar**. Standardartikelkoden, ursprungsland/ursprungsregion och ursprungsstat/ursprungsprovins hämtas från artikeln. Du kan ändra standardvärdena och du kan även fylla i annan utländsk handelsrelaterad information: statistikprocedur, transportmetod och hamn.
+En kundfaktura, fritextfaktura, inköpsfaktura, projektfaktura, kundföljesedel, produktinleverans för leverantör eller överföringsorder överförs bara till Intrastat-journalen om landet/regionen för målen (vid utförsel) eller försändelsen (vid införsel) är **EU**. Denna funktion har utökats för Microsoft Dynamics 365 for Operations (1611) och låter dig ange fraktadresser för en transaktion inom gemenskapen. Om en fraktadress skiljer sig åt från en leverantörsföretagsadress (eller en kunderföretagsadress för returorder), fungerar Intrastat-rapporteringen med den här informationen. När du skapar en försäljningsorder, fritextfaktura, inköpsorder, leverantörsfaktura, projektfaktura eller överföringsorder har vissa fält som är relaterade till utländsk handel standardvärden i dokumenthuvudet eller på raden. Standardtransaktionskoden hämtas från motsvarande fält på sidan **Utländska handelsparametrar**. Standardartikelkoden, ursprungsland/ursprungsregion och ursprungsstat/ursprungsprovins hämtas från artikeln. Du kan ändra standardvärdena och du kan även fylla i annan utländsk handelsrelaterad information: statistikprocedur, transportmetod och hamn.
 
 ### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Använd Intrastat-journalen för att skapa information om handel mellan EU-länder/EU-regioner
 
@@ -240,5 +239,4 @@ Använd sidan **Utländska handelsparametrar** för att ställa in parametrarna 
 </tr>
 </tbody>
 </table>
-
 

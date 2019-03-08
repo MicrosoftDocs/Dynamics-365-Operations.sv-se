@@ -1,14 +1,14 @@
 ---
 title: Aktiviteter i processerna
-description: "Det här avsnittet innehåller information om olika typer av aktiviteter som kan användas i anställningsprocesserna."
-author: 
+description: Det här avsnittet innehåller information om olika typer av aktiviteter som kan användas i anställningsprocesserna.
+author: ''
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c32db1f563466f05b9fef1a03578392888c0b7e6
+ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: 4f59193991420fd9ec05a83049e569058bf81932
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "374767"
 ---
-
 # <a name="activities-in-the-hiring-processes"></a>Aktiviteter i anställningsprocesserna
 
 [!include[banner](../includes/banner.md)]
@@ -43,31 +42,9 @@ Potentiella kandidaters aktivitet styr om potentiella kandidater kan läggas til
 
 Ansökningsaktiviteten krävs i anställningsprocessmallen. Om du vill skicka e-post till kandidater när de lämnar in sin ansökan eller läggs till i ansökningsfasen, ange alternativet **skicka e-post till kandidater** till **på**.
 
-## <a name="scheduler-activity"></a>Aktiviteten Schemaläggare
+## <a name="interview-schedule-and-feedback-activity"></a>Tidsplanering av intervjuer och aktiviteten feedback
 
-Aktiviteten Schemaläggare är valfritt. Den här aktiviteten har två komponenter: kandidatens tillgänglighet och tidsplanering. Komponenten kandidaten tillgänglighet kan du använda e-post för att begära den sökandes tillgänglighet. Komponenten schemaläggare ger möjligheten att tidsplanera intervjuer med kandidater och anställningsteamet. I aktiviteten Schemaläggare kan följande alternativ konfigureras: **Begär tillgänglighet för kandidat**, **Onlinemöte** och **skicka e-post till kandidater**.
-
-- Om du vill skicka e-post till kandidater för att begära deras tillgänglighet, ange alternativet **Begär tillgänglighet för kandidat** till **på**. Om du väljer alternativet **Av**, kommer det här steget inte att visas i anställningsprocessen för jobbet.
-- För att live-streama eller ha ett konferenssamtal via Skype för företag, ange fältet **onlinemöte** till **Skype för företag**. Den korrekta länken för **Anslut till Skype-möte** läggs till i begäran om intervjumöte som skickas till intervjuare.
-- Om du vill skicka e-post till kandidater för att slutföra tidsplaneringen, ange alternativet **Skicka e-post till kandidat** till **på**. Om du anger alternativet **av**, kommer kandidater att endast få tidsplan för intervju när de loggar in på kandidatportalen.
-
-## <a name="feedback-activity"></a>Aktiviteten Feedback
-
-Aktiviteten Feedback är valfritt. Denna aktivitet låter intervjudeltagare ange rekommendationer för en sökande. De kan också ange eventuella feedbackkommentarer de har. Om du aktiverar alternativet **Ärv feedbackdeltagare från anställningsteamet** kommer rekryterare, anställande chefer och intervjuare registreras automatiskt i aktiviteten Feedback. Organisationer kan låta intervjuare visa feedback för andra människor innan de skickar sin egen feedback. Organisationer kan även tillåta att intervjuare redigerar deras feedback när de har skickat sina kommentarer.
-
-## <a name="interview-activity"></a>Aktiviteten Intervju
-
-Aktiviteten Intervju är valfritt. Den här aktiviteten har tre komponenter: kandidatens tillgänglighet, tidsplan och feedback. Komponenten kandidaten tillgänglighet kan du använda e-post för att begära den sökandes tillgänglighet. Komponenten schemaläggare ger möjligheten att tidsplanera intervjuer med kandidater och anställningsteamet. I aktiviteten Schemaläggare kan följande alternativ konfigureras: **Begär tillgänglighet för kandidat**, **Onlinemöte** och **skicka e-post till kandidater**.
-
-- Om du vill skicka e-post till kandidater för att begära deras tillgänglighet, ange alternativet **Begär tillgänglighet för kandidat** till **på**. Om du väljer alternativet **Av**, kommer det här steget inte att visas i anställningsprocessen för jobbet.
-- För att live-streama eller ha ett konferenssamtal via Skype för företag, ange fältet **onlinemöte** till **Skype för företag**. Den korrekta länken för **Anslut till Skype-möte** läggs till i begäran om intervjumöte.
-- Om du vill skicka e-post till kandidater för att slutföra tidsplaneringen, ange alternativet **Skicka e-post till kandidat** till **på**. Om du anger alternativet **av**, kommer kandidater att endast få tidsplan för intervju när de loggar in på kandidatportalen.
-
->[!NOTE]
-> - För alla 1:1-intervjuer skickas påminnelser till intervjuare per dygn om intervjuaren inte har svarat (accepterat eller avböjt) begäran om intervju.
-> - Det finns inga automatiska påminnelser för att svara på begäran om intervju för alla panelintervjuer. För att utlösa en påminnelse manuellt, redigera intervjun och använd alternativet **uppdatera och skicka** för att skicka tillbaka begäran till intervjuare.
-
-Komponenten Feedback låter användarna ange rekommendationer för en sökande. De kan också ange eventuella feedbackkommentarer de har. Om du aktiverar alternativet **Ärv feedbackdeltagare från anställningsteamet** kommer rekryterare, anställande chefer och intervjuare registreras automatiskt i komponenten Feedback. Organisationer kan låta intervjuare visa feedback för andra människor innan de skickar sin egen feedback. Organisationer kan även tillåta att intervjuare redigerar deras feedback när de har skickat sina kommentarer.
+Den här aktiviteten har tre komponenter: kandidatens begäran om tillgänglighet, tidsplan och feedback. Använd aktiviteten intervju i jobbmallen om du vill inkludera sökandes begäran tillgänglighet schema och feedback som en del av en process istället för att använda dem som en del av Zayacs individuellt. Mer information finns i [Intervjuplanering och feedback](interview-scheduling-feedback.md).
 
 ## <a name="powerapps-activity"></a>PowerApps-aktivitet
 
@@ -102,4 +79,3 @@ I Microsoft Forms kan författare ändra inställningarna så att användare uta
 
 > [!NOTE]
 > Microsoft Forms-aktiviteten är endast tillgänglig med tillägget för omfattande anställning.
-

@@ -1,28 +1,27 @@
 ---
-title: "Arbetsyta för checklista för datavalidering"
-description: "Arbetsytan checklista för datavalidering låter dig spåra processer för validering av data mellan företag, områden och personer. Checklistan kan användas under en ny implementering efter uppgradering eller efter en migrering."
+title: Arbetsyta för checklista för datavalidering
+description: Arbetsytan checklista för datavalidering låter dig spåra processer för validering av data mellan företag, områden och personer. Checklistan kan användas under en ny implementering efter uppgradering eller efter en migrering.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataValidationWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: dd758ac5698d84532c0b724485cc6f0da83bc8e0
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364199"
 ---
-
 # <a name="data-validation-checklist-workspace"></a>Arbetsyta för checklista för datavalidering
 
 [!include [banner](../includes/banner.md)]
@@ -59,4 +58,3 @@ Innan du kan använda arbetsytan **checklista för datavalidering** måste du ko
 Du använder uppgiftområden för att gruppera datavalideringsuppgifter i logiska området baserat på ägarskap i din organisation. Exempelvis kan Leverantörsreskontra, Kundreskontra eller Huvudbok användas som uppgiftområden.
 
 **Menyobjektnamnet** är associerat med uppgiftens arbetsinsats, och kan användas för att gå direkt till motsvarande sida från aktivitetslänken på arbetsytan. Exempelvis en datavalideringsuppgift för att köra rapporten **åldersfördelning i leverantörsreskontra** för leverantörsreskontra kan länkas till sidan **åldersfördelningsrapport för leverantörsreskontra**.
-
