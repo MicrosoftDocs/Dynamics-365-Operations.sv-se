@@ -1,13 +1,13 @@
 ---
 title: Kolumndefinitioner i ekonomiska rapporter
-description: "Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent eller ett byggblock som definierar innehållet i kolumner i en rapport. Precis som raddefinitioner kan grundläggande kolumndefinitioner användas för flera rapporter."
+description: Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent eller ett byggblock som definierar innehållet i kolumner i en rapport. Precis som raddefinitioner kan grundläggande kolumndefinitioner användas för flera rapporter.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356356"
 ---
-
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -121,11 +120,11 @@ Följande register beskriver kolumnbegränsningskoderna.
 | ADJ                     | Begränsa beloppen i kolumnen till periodjusteringsbelopp, om dessa belopp är tillgängliga. |
 | XAD                     | Begränsa beloppen i kolumnen så att periodjusteringsbelopp exkluderas. |
 | PT                      | Begränsa beloppen i kolumnen, så att endast bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga. |
-| UPT                     | Begränsa beloppen i kolumnen, så att endast ej bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga.<blockquote>[!NOTE] Alla dataproviders har inte stöd för icke bokförda transaktioner. Mer information finns i <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>dataintegreringsguiden</a> för ditt Microsoft Dynamics ERP-system.</blockquote> |
+| UPT                     | Begränsa beloppen i kolumnen, så att endast ej bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga.<blockquote>[!NOTE] Alla dataproviders har inte stöd för icke bokförda transaktioner. Mer information finns i <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsguide</a> för ditt Microsoft Dynamics ERP-system.</blockquote> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begränsa en kolumn i en rapportenhet
 
-1. Öppna kolumndefinitionen för att ändra den i Report Designer.
+1. Öppna den kolumndefinition som ska ändras i Report Designer.
 2. Dubbelklicka på cellen **Rapportenhet** för kolumnen för att begränsa.
 3. I diaglogrutan **Val av rapporteringsenhet**, i listan **Rapporteringsträd**, välj ett träd.
 4. Expandera eller dölj listan över enheter, välj en rapportenhet och klicka sedan på **OK**.
@@ -171,25 +170,25 @@ Du kan använda dialogrutan **Kolumnrubrik** för att lägga till, ändra och ta
 
 ### <a name="create-an-automatically-generated-header"></a>Skapa en automatiskt skapad rubrik
 
-Rapportutformaren kan skapa kolumnrubriker automatiskt baserat på autotextkoder. Autotextkoder är variabler som uppdateras varje gång som en rapport skapas. Alla kolumnrubriker kan innehålla dessa koder för att ange rapportinformation som kan variera, t.ex. datum eller periodnummer. Därför kan du använda en kolumndefinition för flera rapportdefinitioner, tidsperioder och rapportträd. Eftersom autotextkoder hänvisar till kalenderinformationen från detaljraderna i kolumndefinitionen, stöds de endast för kolumnerna **CALC**, **FD** och **WKS**. Sättet som en autotextkod visas i kolumnrubriken inverkar på hur den informationen visas i rapporten. I dialogrutan **Kolumnrubrik** visas autotextkoderna när gemener och versaler blandas. Därför visas texten i rapporten när gemener och versaler blandas. Under ett vanligt kalenderår förvandlar exempelvis **@CalMonthLong** månaden **7** till **juli**. Om namnet på månaden ska vara i versaler (till exempel **JULI**) anger du autotextkoden i versala tecken i fältet **Kolumnrubriktext**. Ange till exempel **@CALMONTHLONG**. Du kan blanda koder och text. Till exempel anger du följande rubriktext: **Perioden @FiscalPeriod-@FiscalYear från @StartDate till @EndDate**. Rapportrubriken som skapas liknar följande text: **Period 1-02 från 01/01/02 till 01/31/02**.
+Rapportutformaren kan skapa kolumnrubriker automatiskt baserat på autotextkoder. Autotextkoder är variabler som uppdateras varje gång som en rapport skapas. Alla kolumnrubriker kan innehålla dessa koder för att ange rapportinformation som kan variera, t.ex. datum eller periodnummer. Därför kan du använda en kolumndefinition för flera rapportdefinitioner, tidsperioder och rapportträd. Eftersom autotextkoder hänvisar till kalenderinformationen från detaljraderna i kolumndefinitionen, stöds de endast för kolumnerna **CALC**, **FD** och **WKS**. Sättet som en autotextkod visas i kolumnrubriken inverkar på hur den informationen visas i rapporten. I dialogrutan **Kolumnrubrik** visas autotextkoderna när gemener och versaler blandas. Därför visas texten i rapporten när gemener och versaler blandas. Till exempel i ett vanligt kalenderår är **@CalMonthLong** månad **7** **juli**. Om namnet på månaden ska visas med versaler (till exempel **JULI**) skriver du autotextkoden med versaler i fältet **Rubriktext**. Skriv till exempel **@CALMONTHLONG**. Du kan blanda koder och text. Till exempel anger du följande rubriktext: **Period @FiscalPeriod-@FiscalYear från @StartDate till @EndDate**. Rapportrubriken som skapas liknar följande text: **Period 1-02 från 01/01/02 till 01/31/02**.
 
 > [!NOTE]
 > Formatet för en del av texten, till exempel det långa datumformatet, beror på dina regionala inställningar på Finance and Operations-servern. För att ändra dessa inställningar, klicka på knappen **Starta**, klicka på **Kontrollpanelen** och klicka sedan på **Region och språk**. Följande tabeller listar de tillgängliga autotextalternativen för kolumnrubriker.
 
 
-| Autotextalternativ och kod                | beskrivning |
+| Autotextalternativ och kod                | Beskrivning |
 |-----------------------------------------|-------------|
 | Månadsnamn (@CalMonthLong)              | Skriv ut namnet på den aktuella månaden i kolumnrubriken. Om du väljer att avrunda beloppen i rapporten till tusental, miljoner eller miljarder, eller om du har ställt in kolumnbredden i rapporten till färre än nio tecken, förkortas namnet på månaden till de första tre tecknen. |
 | Förkortat månadsnamn (@CalMonthShort) | Skriv ut det förkortade månadsnamnet för den valda räkenskapsperioden. |
 | Periodnummer (@FiscalPeriod)           | Skriv ut den numeriska formen för räkenskapsperioden som identifieras för den kolumnen. Om kolumnen omfattar flera perioder, skriv ut den senaste perioden i intervallet. |
-| Periodbeskrivning (@FiscalPeriodName)  | Skriv ut beskrivningen av räkenskapsperioden som identifieras i de ekonomiska data. |
+| Beskrivning av period (@FiscalPeriodName)  | Skriv ut beskrivningen av räkenskapsperioden som identifieras i de ekonomiska data. |
 | Räkenskapsår (@FiscalYear)               | Skriv ut räkenskapsåret för kolumnen i numerisk form. |
-| Kalenderår (@CalYear)                | Skriv ut kalenderåret för kolumnen i numerisk form. |
+| Kalender (@CalYear)                | Skriv ut kalenderåret för kolumnen i numerisk form. |
 | Startdatum (@StartDate)                 | Skriv ut startdatumet för kolumnen. |
 | Slutdatum (@EndDate)                     | Skriv ut slutdatumet för kolumnen. |
-| Enhetsnamn i trädet (@UnitName)         | Om du begränsar en kolumn till en viss enhet av rapportträdet, skriver du ut enhetsnamnet i kolumnrubriken. |
+| Enhetsnamn från trädet (@UnitName)         | Om du begränsar en kolumn till en viss enhet av rapportträdet, skriver du ut enhetsnamnet i kolumnrubriken. |
 | Enhetsbeskrivning (@UnitDesc)            | Om du begränsar en kolumn till en viss enhet av rapportträdet, skriver du ut enhetsbeskrivningen i kolumnrubriken. |
-| Kod för bok (@BookCode)                   | Skriv ut bokkoden som anges i kolumnen. |
+| Bokkod (@BookCode)                   | Skriv ut bokkoden som anges i kolumnen. |
 | Tom rad (@Blank)                     | Infoga en tom rad i kolumnrubriken. |
 
 ### <a name="create-a-conditional-spanning-header"></a>Skapa en villkorsstyrd omfattande rubrik
@@ -216,7 +215,7 @@ Villkorsstyrda omfattande rubriker kan omfatta flera kolumner som baseras på sp
 Phyllis skapar en rapport för en dynamisk sexmånadersprognos. Hon vill att ordet "Aktuell" ska skrivas ut över kolumnerna, som innehåller aktuella data och att ordet "Budget" ska skrivas ut över kolumner som innehåller budgetprognoser. Varje månad som rapporten körs finns det en till aktuell kolumn och en mindre budgetkolumn. Även om Phyllis kan ändra kolumndefinitionen manuellt varje gång som rapporten skapas för att justera rubrikerna bestämmer hon, i syfte att spara tid och insats, sig för att skapa villkorsstyrda omfattande rubriker som automatiskt kommer att skapa rubriker över motsvarande kolumner varje gång som rapporten körs. Phyllis öppnar Report Designer, klickar på **Kolumndefinition** i navigeringsfönstret och öppnar kolumndefinitionen för rapporten. Hon anger följande information. Basperioden i rapportdefinitionen är 4.
 
 
-|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | k             | S             | M             |
+|                     |  A   | G             | C             | D             | E             | F             | G             | H             | I             | J             | k             | S             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
 | Rubrik 1            |      | Faktisk        | Budget        |               |               |               |               |               |               |               |               |               |               |
 | Rubrik 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
@@ -519,7 +518,7 @@ Du kan också använda någon kombination av alfanumeriska tecken för exakt mat
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatera en rapport med flera valutor i en kolumndefinition
 
-En rapport med flera valutor kan visa belopp i den naturliga valutan (lokal valuta), funktionella valutan (standardinställning) eller rapporteringsvalutan. Ett företags funktionella valuta definieras i ERP-systemet i Microsoft Dynamics. Förväxla inte den här ERP-inställningen med operativsystemets regionala alternativinställningar där du kan ange de symboler för standardinställd valuta som används i rapporter. Följande valutarelaterade celler är tillgängliga i kolumndefinitionen:
+En rapport med flera valutor kan visa belopp i den naturliga valutan (lokal valuta), funktionella valutan (standardinställning) eller rapporteringsvalutan. Ett företags funktionella valuta definieras i Microsoft Dynamics ERP-system. Förväxla inte den här ERP-inställningen med operativsystemets regionala alternativinställningar där du kan ange de symboler för standardinställd valuta som används i rapporter. Följande valutarelaterade celler är tillgängliga i kolumndefinitionen:
 
 - **Valutavisning** – Ange valuta (naturlig, funktionell eller rapportering) som visas i transaktionerna. Den här funktionen kallas ibland för valutaomräkning. Valutaomräkning är förmågan att rapportera redovisningsbelopp i en valuta som inte kanske är företagets funktionella valuta eller den valuta som transaktionen angavs i.
 - **Valutafilter** – Ange ett valutafilter. Endast transaktioner som anges i den valda valutan visas i rapporten.
@@ -612,4 +611,3 @@ Du kan dela beloppet i en kolumn med ett specifik antalet perioder. Till exempel
 [Rapportdefinitioner i ekonomiska rapporter](row-definitions-financial-reporting.md)
 
 [Avancerade formateringsalternativ i ekonomiska rapporter](advanced-formatting-options-financial-reporting.md)
-

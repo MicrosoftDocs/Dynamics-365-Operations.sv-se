@@ -1,13 +1,13 @@
---- 
+---
 title: " Kategoriprissättningsregler för att skapa handelsavtal"
-description: "I den här proceduren visas hur du skapar handelsavtal för försäljningspris med hjälp av en kategoriprissättningsregel."
+description: I den här proceduren visas hur du skapar handelsavtal för försäljningspris med hjälp av en kategoriprissättningsregel.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8d252982cf1e4fa2f06646d0909e6f82d16f4cfc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 133ca34a0e85454dc40d4e1d36fbe8278019c7e4
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355528"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategoriprissättningsregler för att skapa handelsavtal
 
@@ -40,7 +40,7 @@ I den här proceduren visas hur du skapar handelsavtal för försäljningspris m
 7. I fältet Kategori, ange eller välj ett värde.
 8. I fältet Belopp/procent, ange ett tal.
 9. I fältet Avrundningsversion, ange eller välj ett värde.
-10. Klicka på Generera handelsavtal.
+10. Klicka på Skapa handelsavtal.
 11. Klicka på Nästa.
 12. Ange ett datum i fältet Från datum.
 13. Ange ett datum i fältet Till datum.
@@ -49,7 +49,7 @@ I den här proceduren visas hur du skapar handelsavtal för försäljningspris m
 16. Klicka på Avsluta.
     * Då skapas en handelsavtalsjournal som öppnas för granskning.  
 17. Hitta och markera önskad post i listan.
-    * Handelsavtalsjournalerna som skapas från kategoriprissättningsreglerna bokförs inte. Du kan granska och redigera priserna som genereras innan du bokför dem.  
+    * Handelsavtalsjournalerna som skapas från kategoriprissättningsreglerna bokförs inte. Du kan granska och redigera priserna som skapas innan du bokför dem.  
 18. Klicka på Redigera.
 19. Ange ett nummer i fältet Belopp i valuta.
 20. Klicka på Bokför.
@@ -58,5 +58,4 @@ I den här proceduren visas hur du skapar handelsavtal för försäljningspris m
 23. Stäng sidan.
 24. Klicka på fliken Kategoriprisregler.
     * Kanalspecifika kategoriprissättningsregler visas i den här listan.  
-
 

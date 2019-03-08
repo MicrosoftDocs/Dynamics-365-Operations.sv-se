@@ -1,14 +1,14 @@
 ---
-title: "Hantering av försäljningspris (butik)"
-description: "Det här avsnittet beskriver begreppen för att skapa och hantera försäljningspriser i Microsoft Dynamics 365 for Retail."
+title: Hantering av försäljningspris (butik)
+description: Det här avsnittet beskriver begreppen för att skapa och hantera försäljningspriser i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362152"
 ---
-
-# <a name="retail-sales-price-management"></a>Hantering av försäljningspris (butik)
+# <a name="retail-sales-price-management"></a>Prishantering för Retail-försäljning
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet ger information om processen för att skapa och hantera försäljningspriser i Microsoft Dynamics 365 for Retail. Det fokuserar på begreppen som ingår i den här processen och på effekterna av olika konfigurationsalternativ för försäljningspriser.
+Det här avsnittet innehåller information om att skapa och hantera försäljningspriser i Microsoft Dynamics 365 for Retail. Det fokuserar på begreppen som ingår i den här processen och på effekterna av olika konfigurationsalternativ för försäljningspriser.
 
 ## <a name="terminology"></a>Terminologi
 
@@ -149,7 +148,7 @@ Om en butikskanals valuta skiljer sig från företagsvalutan, bestäms grundpris
 
 ### <a name="sales-price-trade-agreement"></a>Handelsavtal för försäljningspris
 
-Du kan skapa handelsavtal för varje produkt genom att använda handelsavtalsjournalen. Det finns tre kundomfattningar för handelsavtal för försäljningspris i Microsoft Dynamics 365: **tabell**, **grupp**, och **alla**. Kundens omfattning bestämmer kunder som ges ett visst handelsavtal för försäljningspris.
+Du kan skapa handelsavtal för varje produkt genom att använda handelsavtalsjournalen. I Microsoft Dynamics 365 finns tre kundomfattningar för handelsavtal för försäljningspris: **tabell**, **grupp** och **alla**. Kundens omfattning bestämmer kunder som ges ett visst handelsavtal för försäljningspris.
 
 Ett handelsavtal för försäljningspris **Tabell** är för en kund som anges direkt i handelsavtalet. Detta scenario är inte ett vanligt B2C-scenario för butik. Om detta uppstår kommer butiksprissättningsmotorn att använda handelsavtal **tabell** för att fastställa priset.
 
@@ -232,4 +231,3 @@ Dessutom, **endast** butiksprissättningsmotorn stöder följande prissättnings
 
 - Priset baseras på produktdimensioner i ordning från de mest specifika variantpriset till det minst specifika variantpriset till produktmallpriset. Ett pris som anges med två produktdimensioner (till exempel färg och storlek) används innan ett pris som anges med hjälp av en enda produktdimensionen (exempelvis storlek).
 - Samma prisgrupp kan användas för att kontrollera priser och rabatter.
-

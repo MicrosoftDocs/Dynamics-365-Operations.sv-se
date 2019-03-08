@@ -1,13 +1,13 @@
---- 
-title: "Skapa en tidsplan för en plats"
-description: "I den här proceduren visas hur du tidsplanerar tillverkningsorder som ännu inte har startat för en site."
+---
+title: Skapa en tidsplan för en plats
+description: I den här proceduren visas hur du tidsplanerar tillverkningsorder som ännu inte har startat för en site.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 54bb2532534d5567239dad4fab7fd74fa50d2826
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 775428bf84a752c03c492e764fa9ed576ab64fb8
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330067"
 ---
 # <a name="create-a-schedule-for-a-site"></a>Skapa en tidsplan för en plats
 
@@ -55,5 +55,4 @@ I den här proceduren visas hur du tidsplanerar tillverkningsorder som ännu int
     * På den här sidan kan du se en lista med jobb. På fliken Tidsplanering kan du se Startdatum och Slutdatum för ett jobb.  
 4. Klicka på Material.
     * På den här sidan kan du se den uppskattade materialförbrukningen för operationerna i produktionsordern och det aktuella tillgängliga lagret.  
-
 

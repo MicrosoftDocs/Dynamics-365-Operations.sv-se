@@ -1,31 +1,30 @@
 ---
-title: "Skapa kuponger för butiksförsäljning"
-description: "Det här avsnittet innehåller en översikt över butikskuponger och hur du ställer in dem."
+title: Skapa kuponger för butiksförsäljning
+description: Det här avsnittet innehåller en översikt över butikskuponger och hur du ställer in dem.
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336599"
 ---
-
 # <a name="set-up-coupons-for-retail-sales"></a>Skapa kuponger för butiksförsäljning
 
 [!include [banner](includes/banner.md)]
@@ -38,10 +37,10 @@ Varje kupong är kopplad till en butiksrabatt. Prisgrupper som associeras med ra
 
 I princip är kuponger extra validering utöver butikskuponger. Kupongen innehåller de kupongkoder och streckkoder som krävs samt datumintervall för dessa koder. Kupongen ger dessutom valfria användningsbegränsningar och villkor som ska uppfyllas av kunden. Rabatten innehåller de produkter som gäller för kupongen. Prisgrupper för rabatten innehåller uppsättningen med kunder, kanaler eller kataloger som kupongen gäller för.
 
-Om du vill skapa en kupong skapar du rabatten och kupongen separat. Du kan sedan länka dem genom att välja en rabatt på sidan Kupong i Microsoft Dynamics 365 for Retail.
+Om du vill skapa en kupong skapar du rabatten och kupongen separat. Sedan länkar du dem genom att välja en rabatt på sidan Kupong i Microsoft Dynamics 365 for Retail.
 
 > [!NOTE]
-> När en kupong är länkad till en rabatt blir flera fält i Microsoft Dynamics 365 for Retail skrivskyddade, eftersom de hanteras av inställningen för kupongen. Fälten inkluderar fält för status och standarddatumintervall.
+> När du har länkat en kupong till en rabatt blir flera fält på rabattsidan i Microsoft Dynamics 365 for Retail skrivskyddade, eftersom de hanteras av inställningarna för kupongen. Fälten inkluderar fält för status och standarddatumintervall.
 
 ### <a name="limited-use-coupons"></a>Kuponger med begränsad användning
 
@@ -76,9 +75,8 @@ Innan du kan skapa en kupong måste du ställa in kupongens streckkod och två k
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Effekten av ofullständiga uppdateringar av kuponger
 
-Kupongfunktionen omfattar flera olika funktioner i Dynamics 365 for Retail. Microsoft Dynamics 365 för Retail headquarters (huvudkontor) och kanalen kan delvis uppdateras över komponenter. Därför är det viktigt att du förstår hur ofullständiga uppdateringar påverkar kupongens funktion i sin helhet.
+Kupongfunktionen omfattar flera olika funktioner i Dynamics 365 for Retail. Microsoft Dynamics 365 for Retail headquarters (huvudkontor) och kanalen kan delvis uppdateras över komponenter. Därför är det viktigt att du förstår hur ofullständiga uppdateringar påverkar kupongens funktion i sin helhet.
 
 - **Huvudkontor är delvis uppdaterat, men Butik och Kassa är inte uppdaterade.** Vid uppdatering av Huvudkontor uppdateras sidorna Kupong och Rabatt. Även motorn för butikspris uppdateras. Om endast en av dessa två komponenter uppdateras kommer vissa sidor i Retail inte att matcha prisberäkningsdata. Därför kan oväntade rabattberäkningar eller fel inträffa vid beräkningarna av rabatten.
 - **Huvudkontor är uppdaterat, men Butik-servern och Kassa är inte uppdaterade (N-1).** Eftersom inte alla butiker kan uppdateras samtidigt, rekommenderar vi att du uppdaterar huvudkontoret innan du uppdaterar butiker. I N-1-scenariot kommer inte nya funktioner som är relaterade till kuponger att visas i butiker som ännu inte har uppdaterats. Exempelvis introducerar kuponger funktionen ”Uteslut”-rader. Om du använder utelämnar rader på en rabatt, används de inte i butiker som kör en tidigare version.
 - **Huvudkontor är inte uppdaterat, men Butik-servern och Kassa är inte uppdaterade (N+1).** Eftersom prismotorn är uppdaterad i Butik kan servern hantera äldre rabattkoder under prisberäkningar. Uppdateringen bör inte ha någon funktionspåverkan i det här scenariot.
-

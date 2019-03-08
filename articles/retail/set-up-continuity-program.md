@@ -1,13 +1,13 @@
 ---
-title: "Ställ in kontinuitetsprogram för kundtjänst"
-description: "Det här avsnittet innehåller en beskrivning av hur du ställer in ett kontinuitetsprogram för en kundtjänst."
+title: Ställ in kontinuitetsprogram för kundtjänst
+description: Det här avsnittet innehåller en beskrivning av hur du ställer in ett kontinuitetsprogram för en kundtjänst.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 369856f33c6da49b6c6b3f51f42c99a8f07fe777
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 9952785afd8e5d1877e96239ee23f9de1c332bcf
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320982"
 ---
-
 # <a name="set-up-continuity-programs-for-call-centers"></a>Ställ in kontinuitetsprogram för kundtjänst
 
 [!include [banner](includes/banner.md)]
@@ -51,4 +50,3 @@ När du har ställt in ett kontinuitetsprogram enligt beskrivningen ovan kan du 
 - **Utöka kontinuitetsrader** (vid behov) – Utöka antalet gånger som en kontinuitetshändelse kan upprepas. Repetitionen av försändelser kan överskrida tidsgränsen som anges i fältet **Tröskel för upprepa kontinuitet** i kundtjänstparametrarna.
 - **Utför en kontinuitetsuppdatering** (vid behov) – Synkronisera ändringar mellan kontinuitetsprogrammet och överordnade kontinuitetsförsäljningsorder.
 - **Stäng överordnade kontinuitetsrader och kontinuitetsorder** – Stäng kontinuitetsorder.
-

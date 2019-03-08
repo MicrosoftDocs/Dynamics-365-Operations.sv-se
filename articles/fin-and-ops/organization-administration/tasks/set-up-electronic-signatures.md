@@ -1,13 +1,13 @@
---- 
-title: "Ställ in elektroniska signaturer"
-description: "Använd den här proceduren för att konfigurera elektroniska signaturer."
+---
+title: Ställ in elektroniska signaturer
+description: Använd den här proceduren för att konfigurera elektroniska signaturer.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysConfiguration, SIGParameters, SIGReasonCode, SIGProcSetup
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: eb6bf529b1e94d598e219482f182140402f2928a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 11fee0b2358e6a2b84c221f8eb06e32c888e5f44
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318590"
 ---
 # <a name="set-up-electronic-signatures"></a>Ställ in elektroniska signaturer
 
@@ -77,5 +77,4 @@ Använd den här proceduren för att konfigurera elektroniska signaturer. En ele
     * Ange när en signatur är obligatorisk.     Välj Alltid om en signatur krävs när data i fältet ändras.     Välj Endast om du vill ange att en signatur enbart krävs under vissa förhållanden. Om du väljer Endast måste du även välja ett av följande alternativ: När en post infogas, När en post uppdateras eller När en post tas bort.  
 10. Klicka på Spara.
 11. Stäng sidan.
-
 

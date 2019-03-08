@@ -1,13 +1,13 @@
---- 
-title: "Identifiera och lösa konflikter vid ansvarsfördelning"
-description: "Du kan ställa in regler för att separera uppgifter som måste utföras av andra användare."
+---
+title: Identifiera och lösa konflikter vid ansvarsfördelning
+description: Du kan ställa in regler för att separera uppgifter som måste utföras av andra användare.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
 ms.reviewer: margoc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9d4a6bd14090213cc19a072d030bc26886c7a8d0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c3a366ea4b558ba4e4af7336992dbb091b0b1414
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353113"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifiera och lösa konflikter vid ansvarsfördelning
 
@@ -48,5 +48,4 @@ Du kan ställa in regler för att separera uppgifter som måste utföras av andr
     * Välj en regel.  
 2. Klicka på Validera programbehörigheter och roller.
     * Om några befintliga roller strider mot den valda regeln visas ett meddelande som innehåller namnet på rollen och namnen på de motstridiga programbehörigheterna. Administratören måste antingen ange hanteringen av säkerhetrisken eller ändra rollen så att den inte bryter mot reglerna för ansvarsfördelning.     Om inga roller strider mot den valda regeln visas ett meddelande om att alla roller efterlevs.  
-
 

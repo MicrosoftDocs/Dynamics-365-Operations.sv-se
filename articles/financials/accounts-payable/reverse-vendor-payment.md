@@ -1,13 +1,13 @@
 ---
-title: "Återföra en leverantörsbetalning"
-description: "Den här artikeln beskriver skillnaderna mellan att återföra, ta bort, annullera och avvisa en betalning. Den beskriver dessutom de två metoderna för att återföra en leverantörscheck."
+title: Återföra en leverantörsbetalning
+description: Den här artikeln beskriver skillnaderna mellan att återföra, ta bort, annullera och avvisa en betalning. Den beskriver dessutom de två metoderna för att återföra en leverantörscheck.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankChequeTable, LedgerJournalTransBankChequeReversal, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d58aac20f9ef54e4ee41464a30b7c8190ade26b7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 019b765cd1e9fa00078018354f0d0792b97faba6
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329630"
 ---
-
 # <a name="reverse-a-vendor-payment"></a>Återföra en leverantörsbetalning
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Om checken som återfördes utfärdades för en kundåterbetalning inträffar ä
 
 -   En transaktion bokförs mot kundkontot för betalningsåterföringen och kvittningen mellan den ursprungliga betalningen och dokumentet som betalningen ursprungligen kvittades mot återförs (en negativ betalning skapas).
 -   En betalningsåterföring tillämpas på den ursprungliga betalningen. Fältet **Senaste kvittningsverifikation** på sidan **Kundtransaktioner** för den ursprungliga kundutbetalningen uppdateras för att avspegla verifikationsnumret för den återförda transaktionen.
-
 
 
 

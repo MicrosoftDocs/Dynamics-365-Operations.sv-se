@@ -1,13 +1,13 @@
---- 
-title: "Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder"
-description: "I detta avsnitt finns information steg för steg om hur du skapar konfigurationer för elektronisk rapportering (ER) som skapar elektroniska dokument i Microsof Office-format (Excel och Word) och som innehåller inbäddade bilder."
+---
+title: Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder
+description: I detta avsnitt finns information steg för steg om hur du skapar konfigurationer för elektronisk rapportering (ER) som skapar elektroniska dokument i Microsoft Office-format (Excel och Word) och som innehåller inbäddade bilder.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/23/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 1fb02e561f6792c57b924ba64a5ca3d3974289ee
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358104"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-För att slutföra stegen i den här proceduren ska du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". Den här proceduren förklarar hur du skapar konfigurationer för elektronisk rapportering (ER) för att skapa elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel eller Microsoft Word-dokument. I den här proceduren skapar du de nödvändiga ER-konfigurationerna för exempelföretaget Litware, Inc. Dessa steg kan slutföras med hjälp av USMF-datauppsättning. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Innan du börjar ska du hämta och spara filerna i hjälpavsnittet [bädda in bilder och former i affärsdokument som skapas med verktyget elektronisk rapportering](../electronic-reporting-embed-images-shapes.md). Filerna är: modell för checkar.xml, utskriftsformat för checkar.xml, företagslogotyp.png, signatur.png, signaturbild 2.png och checkmall för Word.docx.
+För att slutföra stegen i den här proceduren ska du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". Den här proceduren förklarar hur du skapar konfigurationer för elektronisk rapportering (ER) för att skapa elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel eller Word-dokument. I den här proceduren skapar du de nödvändiga ER-konfigurationerna för exempelföretaget Litware, Inc. Dessa steg kan slutföras med hjälp av USMF-datauppsättning. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Innan du börjar ska du hämta och spara filerna i hjälpavsnittet [bädda in bilder och former i affärsdokument som skapas med verktyget elektronisk rapportering](../electronic-reporting-embed-images-shapes.md). Filerna är: modell för checkar.xml, utskriftsformat för checkar.xml, företagslogotyp.png, signatur.png, signaturbild 2.png och checkmall för Word.docx.
 
 ## <a name="verify-prerequisites"></a>Verifiera förutsättningar  
  1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.  
@@ -34,7 +34,7 @@ För att slutföra stegen i den här proceduren ska du först slutföra stegen i
  3. Klicka på Reporting configurations.  
  
 ## <a name="add-a-new-er-model-configuration"></a>Lägg till en ny konfiguration för ER-modell  
- 1. Du kan läsa in konfigurationsfilen för ER-modell (modell för cheques.xml) som du sparat tidigare istället för att skapa en ny modell. Den här filen innehåller exempeldatamodellen för betalningscheckar och mappning av datamodellen till datakomponenterna i Dynamics 365 for Operations-programmet .   
+ 1. Du kan läsa in konfigurationsfilen för ER-modell (modell för cheques.xml) som du sparat tidigare istället för att skapa en ny modell. Den här filen innehåller exempeldatamodellen för betalningscheckar och mappning av datamodellen till datakomponenterna i programmet Dynamics 365 for Operations.   
  2. Klicka på Utbyte på snabbfliken Versioner.   
  3. Klicka på Läs in från XML-fil.  
  4. Klicka på Bläddra och välj Modell för cheques.xml.   
@@ -91,4 +91,3 @@ För att slutföra stegen i den här proceduren ska du först slutföra stegen i
  30. Välj Ja i fältet Tillåt att reservationer skapas för inaktiva bankkonton:  
  31. Klicka på Spara.  
  32. Stäng sidan.  
-

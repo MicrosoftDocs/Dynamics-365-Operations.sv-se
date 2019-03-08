@@ -1,13 +1,13 @@
 ---
-title: "FAQ – adressbok"
-description: "Det här avsnittet ger svar på vanliga frågor som rör adressböcker i Microsoft Dynamics 365 for Finance and Operations."
+title: FAQ – adressbok
+description: Det här avsnittet finns svar på vanliga frågor som rör adressböcker i Microsoft Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: bb0239fd9bd80ae15bd2cca08d5a5f5258aef638
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337818"
 ---
-
-# <a name="address-books-faq"></a>FAQ – adressbok
+# <a name="address-books-faq"></a>Vanliga frågor och svar om adressböcker
 
 [!include [banner](../includes/banner.md)]
 
@@ -68,5 +67,4 @@ Du kan ange partposter antingen i den globala adressboken eller på lämplig enh
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jag översätta adressinformation för partposter?
 
-Du kan ställa in översättningar av adressinformation så att informationen visas på ditt användarspråk (systemspråk) i Microsoft Dynamics 365 for Finance and Operations, men på ett annat språk för dokument såsom försäljningsorder. Du kan ange översättningar för land/regionnamn, i adressyften och namnsekvenser. Ditt systemspråk är till exempel danska och du skapar en försäljningsorder för en kund i Frankrike. I detta fall kan du visa kundposten på danska i programmet, men visa adressinformation på franska på den utskrivna försäljningsordern. När du ställer in översättningar måste du ange en översättning för varje artikel på listan. Alla artiklar som du inte anger någon översättning för visas på systemspråket. Ditt systemspråk är till exempel danska och du skickar ett dokument till en kund i Spanien. Om du inte har angett spanska (ESP) översättningar för adressinformationen, visas den informationen på danska både i programmet och på det utskrivna dokumentet.
-
+Du kan ställa in översättningar av adressinformation så att informationen visas i ditt användarspråk (systemspråk) i Microsoft Dynamics 365 for Finance and Operations men på ett annat språk för dokument såsom försäljningsorder. Du kan ange översättningar för land/regionnamn, i adressyften och namnsekvenser. Ditt systemspråk är till exempel danska och du skapar en försäljningsorder för en kund i Frankrike. I detta fall kan du visa kundposten på danska i programmet, men visa adressinformation på franska på den utskrivna försäljningsordern. När du ställer in översättningar måste du ange en översättning för varje artikel på listan. Alla artiklar som du inte anger någon översättning för visas på systemspråket. Ditt systemspråk är till exempel danska och du skickar ett dokument till en kund i Spanien. Om du inte har angett spanska (ESP) översättningar för adressinformationen, visas den informationen på danska både i programmet och på det utskrivna dokumentet.

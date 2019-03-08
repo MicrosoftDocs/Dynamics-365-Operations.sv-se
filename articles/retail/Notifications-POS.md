@@ -1,13 +1,13 @@
 ---
 title: Visa ordermeddelanden i kassan (POS)
-description: "Det här avsnittet beskriver hur du aktiverar ordermeddelanden i kassan och ramverket för meddelanden. Så småningom ska utvecklare kunna utöka dessa funktioner till andra åtgärder utöver orderuppföljningsåtgärder."
+description: Det här avsnittet beskriver hur du aktiverar ordermeddelanden i kassan och ramverket för meddelanden. Så småningom ska utvecklare kunna utöka dessa funktioner till andra åtgärder utöver orderuppföljningsåtgärder.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361347"
 ---
-
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i kassan (POS)
 
 [!include [banner](includes/banner.md)]
 
-I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten ger en enda applikation där medarbetare kan utföra alla dessa uppgifter och många andra. Eftersom olika aktiviteter måste utföras under dagen kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i kassan hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. I Microsoft Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden bara konfigureras för kassaåtgärder.
+I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten ger en enda applikation där medarbetare kan utföra alla dessa uppgifter och många andra. Eftersom olika aktiviteter måste utföras under dagen kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i kassan hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. I Microsoft Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden konfigureras för kassaoperationer.
 
 Systemet kan för närvarande endast visa meddelanden för orderuppföljningsåtgärder. Men eftersom ramverket är utformat till att vara utbyggbart kommer utvecklare så småningom kunna skriva en meddelandehanterare för alla åtgärder och visa meddelanden för den åtgärden i kassan.
 
@@ -72,4 +71,3 @@ Följande bild visar inställningarna för levande innehåll i knappsatsen för 
 Följande bild visar effekterna av att välja **Högst upp till höger** jämfört med **Mitten** i fältet **Innehållsjustering** för knappar med olika storlekar.
 
 ![Levande innehåll på kassaknappar](./media/ButtonsWithLiveContent.png "Levande innehåll på kassaknappar")
-

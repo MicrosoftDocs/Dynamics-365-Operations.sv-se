@@ -1,13 +1,13 @@
 ---
-title: "Ställ in kanaler för kundtjänst"
-description: "Det här avsnittet innehåller information om hur du bearbetar beställningar för kundtjänst med Microsoft Dynamics 365 for Retail."
+title: Ställ in kanaler för kundtjänst
+description: Det här avsnittet innehåller information om hur du bearbetar order till kundtjänst med Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334851"
 ---
-
-# <a name="set-up-call-center-channels"></a>Ställ in kanaler för kundtjänst
+# <a name="set-up-call-center-channels"></a>Ställa in kundtjänstkanaler
 
 [!include [banner](includes/banner.md)]
 
@@ -77,7 +76,6 @@ När du definierar kundstjänstkanal måste du koppla användare till kundstjän
 
 Som standard är flaggan **butiksförsäljning** i rubriken på försäljningsordern aktiverad för alla order som kundtjänstanvändaren skapar. Dessa order kan sedan utnyttja systemets butikspecifika pris- och kampanjegenskaper.
 
-Användare som inte är länkade till en kundtjänstkanal använder funktionerna för standardorderkvantitet i Microsoft Dynamics 365 for Finance and Operations. Order som användarna anger via försäljningsorderformuläret identifieras inte systematiskt som butiksorder. Dessutom är dessa order som dessa användare anger kanske inte föremål för några orderbearbetningsregler, butikprissättningslogik eller andra ordervalideringar som kan definieras i konfigurationen för kundtjänstkanalen eller kundtjänstsystemparametrar.
+Användare som inte är kopplade till ett kundtjänstkanaler använda standardorderkvantitet för funktioner i Microsoft Dynamics 365 for Finance and Operations. Order som användarna anger via försäljningsorderformuläret identifieras inte systematiskt som butiksorder. Dessutom är dessa order som dessa användare anger kanske inte föremål för några orderbearbetningsregler, butikprissättningslogik eller andra ordervalideringar som kan definieras i konfigurationen för kundtjänstkanalen eller kundtjänstsystemparametrar.
 
 När du är klar med att konfigurera kundtjänstkanalen och definiera kanalanvändare, för att garantera önskad systemfunktion, se till att alla nödvändiga kundtjänstparametrar definieras i **butik**\>**kanalinställningar**\>**kundtjänstinställningar**\>**kundtjänstparametrar**. Se till att relaterade nummerserier definieras också.
-

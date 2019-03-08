@@ -1,13 +1,13 @@
 ---
 title: Batchattribut
-description: "Den här ämnet innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Ämnet innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar."
+description: Den här ämnet innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Ämnet innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 325e647185e3eb4c0eacdfd00c320804e31ddb48
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6c18b007a72686b1ede69b750e930d72e86f0aba
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347639"
 ---
-
 # <a name="batch-attributes"></a>Batchattribut
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Du kan öppna sidorna för produkter som du väljer på sidan **Frisläppta prod
 
 ## <a name="reserve-batches"></a>Reservera batchar 
 Du kan söka i batchattribut när du gör batchreservationer för en försäljningsorder för att fullfölja en kunds order, eller när du plockar och reserverar batchar för en tillverkningsorder. Sökninghjälpen hittar en lagerbatch som innehåller produkten som har det batchattribut som du vill ha. När du har hittat batchen eller batcharna kan du reservera produkten till den ursprungliga lagertransaktionsraden.
-
 
 
 

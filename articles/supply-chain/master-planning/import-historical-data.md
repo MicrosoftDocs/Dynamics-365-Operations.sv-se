@@ -1,13 +1,13 @@
 ---
-title: "Importera historikdata för efterfrågeprognoser"
-description: "För att få korrekta efterfrågeprognoser behöver du historiska efterfrågedata per artikel eller artikelallokeringsnyckel. Det här avsnittet beskriver hur du använder dataenheter för att importera historiska efterfrågedata från valfritt system, så att du får en längre historik över efterfrågeprognosdatan."
+title: Importera historikdata för efterfrågeprognoser
+description: För att få korrekta efterfrågeprognoser behöver du historiska efterfrågedata per artikel eller artikelallokeringsnyckel. Det här avsnittet beskriver hur du använder dataenheter för att importera historiska efterfrågedata från valfritt system, så att du får en längre historik över efterfrågeprognosdatan.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 018694c79c6dd64e19b010848aad8acd36b0a9a8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e7975003620d951717c66144c8d0521de0f69158
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328618"
 ---
-
 # <a name="import-historical-data-for-demand-forecasts"></a>Importera historikdata för efterfrågeprognoser
 
 [!include [banner](../includes/banner.md)]
 
-För att garantera att efterfrågeprognoserna blir korrekt måste du ha lika mycket historiska efterfrågeuppgifter som du kan för varje artikel eller artikelallokeringsnyckel. Om den historiska begärandedatan inte redan har importerats, använd då dataenheten **Historisk extern begäran** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Finance and Operations för att importera den.
+För att garantera att efterfrågeprognoserna blir korrekt måste du ha lika mycket historiska efterfrågeuppgifter som du kan för varje artikel eller artikelallokeringsnyckel. Om den historiska efterfrågedatan inte redan har importerats, använd då dataenheten **Historisk extern efterfrågan** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Finance and Operations för att importera den.
 
 I arbetsytan **Datahantering** kan du visa en översikt över alla fält i entiteten.
 
@@ -60,4 +59,3 @@ När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
-

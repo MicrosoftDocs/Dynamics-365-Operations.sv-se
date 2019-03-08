@@ -1,13 +1,13 @@
 ---
-title: "Konfigurera leverantörsreskontra"
-description: "Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs."
+title: Konfigurera leverantörsreskontra
+description: Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6a832a30870f77578503bae6eea17ad1d0881d91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 60313da23fdbd5a06b71c7c91a236165f8f189de
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326709"
 ---
-
 # <a name="configure-accounts-payable"></a>Konfigurera leverantörsreskontra
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,6 @@ De ytterligare inställningssidorna som används ordnas efter funktion.
 **Kassa- och bankhantering**
 
 -   Ställ in centralbankens syfteskoder på sidan Syfteskoder för betalning
-
 
 
 

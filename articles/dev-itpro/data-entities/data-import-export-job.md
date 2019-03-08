@@ -1,13 +1,13 @@
 ---
-title: "Jobb för import och export av data"
-description: "Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb."
+title: Jobb för import och export av data
+description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360220"
 ---
-
 # <a name="data-import-and-export-jobs"></a>Jobb för import och export av data
 
 [!include [banner](../includes/banner.md)]
 
-Om du vill skapa och hantera dataimport- och dataexportjobb i Microsoft Dynamics 365 for Finance and Operations, använd då arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
+För att skapa och hantera dataimport- och dataexportjobb i Microsoft Dynamics 365 for Finance and Operations kan du använda arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
 
 > [!NOTE]
 > I det här avsnittet förutsätts att du känner till [datatabeller](data-entities.md).
@@ -158,4 +157,3 @@ Du kan rensa mellanlagringstabeller genom att använda funktionen **Mellanlagrin
 - **Dataprojekt** – Om bara ett dataprojekt har markerats kommer alla poster för alla entiteter och över alla jobb för det valda dataprojektet att tas bort.
 
 Du kan också kombinera alternativen för att ytterligare begränsa den postuppsättning som raderas.
-

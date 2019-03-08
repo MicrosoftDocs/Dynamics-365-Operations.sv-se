@@ -1,13 +1,13 @@
 ---
-title: "Mobil arbetsyta för fakturagodkännanden"
-description: "Det här avsnittet innehåller information om den mobila arbetsytan för fakturagodkännanden. Denna arbetsyta tillhandahåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud."
+title: Mobil arbetsyta för fakturagodkännanden
+description: Det här avsnittet innehåller information om den mobila arbetsytan för fakturagodkännanden. Denna arbetsyta tillhandahåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud.
 author: abruer
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: ff726670e0fd7566a74e6def73555a7c53b86f97
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6c95c2779d996f489679c8dda4cda462ba0a05ac
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327008"
 ---
-
 # <a name="invoice-approvals-mobile-workspace"></a>Mobil arbetsyta för fakturagodkännanden
 
 [!include [banner](../includes/banner.md)]
 
 Detta avsnitt tillhandahåller innehåller information om den mobila arbetsytan för **fakturagodkännanden**. Denna arbetsyta tillhandahåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud. 
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Översikt
 
@@ -49,7 +48,7 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Finance and Operations måste användas inom din organisation.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations måste distribueras i organisationen.</td>
 <td>Systemadministratör</td>
 <td>Se <a href="../deployment/deploy-demo-environment.md">Distribuera en demonstrationsmiljö</a>.
 </td>
@@ -72,7 +71,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 ## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 
 1.  Starta appen i din mobila enhet.
-2.  Ange din webbadress för Microsoft Dynamics 365.
+2.  Ange din Microsoft Dynamics 365 URL.
 3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 4.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
@@ -88,4 +87,3 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 7.  Välj **Bilagor** för att visa noteringar eller filer som är kopplade till fakturan.
 8.  På sidan **Fakturainformation** väljer du lämplig arbetsflödesåtgärd för att slutföra din granskningsprocess.
 9.  Välj **Klar**.
-

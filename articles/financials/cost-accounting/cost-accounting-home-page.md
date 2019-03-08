@@ -1,13 +1,13 @@
 ---
-title: "Startsida för kostnadsredovisning"
-description: "Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser som är tillgängliga för kostnadsredovisningen."
+title: Startsida för kostnadsredovisning
+description: Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser som är tillgängliga för kostnadsredovisningen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 707cbb8f4a4a71d147e1aa3c048fb1eb3872f8d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 8f4a371664ceb7df9ac28cececc456bc73d655cb
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346673"
 ---
-
 # <a name="cost-accounting-home-page"></a>Startsida för Kostnadsredovisning
 
 [!include [banner](../includes/banner.md)]
@@ -52,6 +51,5 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 |------------------------|--------------------|-----------------------------|
 | [Kom igång med Kostnadsredovisning](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobil arbetsyta för kostnadsredovisning](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Använd Excel för kostnadsredovisningsanalys](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
 |  |  |                             |
-
 
 

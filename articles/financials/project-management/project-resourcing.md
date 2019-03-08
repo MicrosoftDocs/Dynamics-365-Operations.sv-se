@@ -1,13 +1,13 @@
 ---
-title: "Resurshantering för projekt"
-description: "Det här avsnittet innehåller information om resurshantering för projekt."
+title: Resurshantering för projekt
+description: Det här avsnittet innehåller information om resurshantering för projekt.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjProjectsListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 34f80d283bb710d7db3137a439dbe8dc67d22682
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351664"
 ---
-
 # <a name="project-resourcing"></a>Resurshantering för projekt
 
 [!include [banner](../includes/banner.md)]
@@ -351,4 +350,3 @@ När föregående uppgifter har slutförts kan du slutföra följande uppgifter 
 ## <a name="monitor-project-teams"></a>Övervaka projektteam
 1. På sidan **Alla projekt**, markera länken **Projekt-ID** för projektet **XYZ-uppgradering fas 2**.
 2. På snabbfliken **Projektteam och tidsplanering**, verifiera att de listade projektresurserna är korrekta.
-

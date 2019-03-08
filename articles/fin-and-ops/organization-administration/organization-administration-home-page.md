@@ -1,13 +1,13 @@
 ---
 title: Startsidan Organisationsadministration
-description: "Det här avsnittet hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i organisationen."
+description: Det här avsnittet hänvisar till resurser som hjälper dig använda Microsoft Dynamics 365 for Finance and Operations i din organisation.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a693529b55b66eb940f8215a336d5c4ae0acedd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332827"
 ---
-
 # <a name="organization-administration-home-page"></a>Startsidan Organisationsadministration
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt presenterar innehåll som hjälper avancerade användare och administratörer att konfigurera Microsoft Dynamics 365 for Finance and Operations. Innehållet hjälper dem att konfigurera systemet så att det arbetar snabbt och effektivt inom din organisation eller företag.
+Det här avsnittet hänvisar till innehåll som hjälper privilegierade användare och administratörer att konfigurera Microsoft Dynamics 365 for Finance and Operations. Innehållet hjälper dem att konfigurera systemet så att det arbetar snabbt och effektivt inom din organisation eller företag.
 
 Stora delar av det innehåll som anges här avser funktioner i modulen **Organisationsadministration**. Det finns emellertid ett antal uppgifter, exempelvis att skapa och använda en bokföringsmall, som kan utföras i valfri modul i syfte att hjälpa din organisation att arbeta mer effektivt.
 
@@ -103,4 +102,3 @@ Bokföringsmallar hjälper dig att skapa poster snabbare. Du kan skapa en bokfö
 - [Konfigurera dokumenthantering](configure-document-management.md)
 - [Konfigurera och skicka e-post](configure-email.md)
 - [Datum/tidsdata och tidszoner](date-time-zones.md)
-

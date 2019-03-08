@@ -1,13 +1,13 @@
 ---
 title: Betalningsmetoder i kundcenter
-description: "Det här avsnittet beskriver olika betalningsmetoder som du kan använda i en kundtjänst i Microsoft Dynamics 365 for Retail."
+description: Det här avsnittet beskriver olika betalningsmetoder som du kan använda i en kundtjänst i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 0b86388efab113af605d62c6ad76c8169d9c4643
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355390"
 ---
-
 # <a name="payment-methods-in-call-centers"></a>Betalningsmetoder i kundcenter
 
 [!include [banner](includes/banner.md)]
@@ -54,4 +53,3 @@ När betalningsmetoder definieras ska de länkas till ett redovisnings- eller ba
 För scenarier för bearbetning av återbetalning använder kundtjänst även vissa av de betalningsmetoder som definierats i Kundreskontra. Om du vill konfigurera dessa betalningsmetoder, gå till **Butik**\>**Kanalinställning**\>**Kundtjänstinställning**\>**Återbetalningsmetoder för kundtjänst**. Du måste slutföra den här konfigurationen om du vill bearbeta återbetalning av checkar till kunder. Exempelvis om en kund ursprungligen har betalat för en order med kontanter eller check kanske användaren vill skicka kunden en återbetalningscheck via Kundreskontra. I det här fallet måste betalningstyperna kontanter och check i kundtjänst mappas till korrekt betalningsmetod i Kundreskontra för att säkerställa att återbetalningen behandlas på rätt sätt.
 
 Dessutom, om en användare bearbetar en returorder som en kundtjänstanvändare i Retail men han eller hon inte kan länka returen till en ursprunglig försäljning måste betalningsmetoden **Retur** definieras i kundtjänstparametrarna. Gå till **Butik**\>**Kanalinställning**\>**Kundtjänstinställning**\>**Kundtjänstparametrar** och sedan till fliken **RMA/retur** i fältet **Betalningsmetod** och se till att du har angett en betalningsmetod. Betalningsmetoden kommer att bli den betalningsmetod som används för återbetalningar. Vanligtvis definieras den som antingen en checkmetod eller en kundkontometod.
-

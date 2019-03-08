@@ -1,13 +1,13 @@
 ---
-title: "Centraliserade betalningar för leverantörsreskontra"
-description: "Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste inte samma betalningar anges i flera juridiska personer. Den här artikeln ger exempel som visar hur bokföringen av centraliserade betalningar hanteras i olika scenarier."
+title: Centraliserade betalningar för leverantörsreskontra
+description: Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste inte samma betalningar anges i flera juridiska personer. Den här artikeln ger exempel som visar hur bokföringen av centraliserade betalningar hanteras i olika scenarier.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e6744aae97499385405e192cd6d6cb8590dd79b7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 54329582abd36a8ca896ce731ce06ca4de58bbb0
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327077"
 ---
-
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserade betalningar för leverantörsreskontra
 
 [!include [banner](../includes/banner.md)]
@@ -297,7 +296,6 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 | Förfaller till Fabrikam (Fabrikam West)      |              | 75,00         |
 | Leverantörsreskontra (Fabrikam West)     | 25,00        |               |
 | Förfaller till Fabrikam East (Fabrikam West) |              | 25,00         |
-
 
 
 

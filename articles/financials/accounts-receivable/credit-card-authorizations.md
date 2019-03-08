@@ -1,13 +1,13 @@
 ---
-title: "Kreditkortinställning, auktorisering och registrering"
-description: "Den här artikeln innehåller en översikt över kreditkortskontroll i Microsoft Dynamics 365 for Finance and Operations. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering."
+title: Kreditkortinställning, auktorisering och registrering
+description: Den här artikeln ger en översikt över kreditkortskontroll i Microsoft Dynamics 365 for Finance and Operations. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CreditCardProcessors, CustTable, SalesTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a6354563fdebff901498f1cd6caed3aedae668b
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343016"
 ---
-
 # <a name="credit-card-setup-authorization-and-capture"></a>Kreditkortinställning, auktorisering och registrering
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-Den här artikeln innehåller en översikt över kreditkortskontroll i Microsoft Dynamics 365 for Finance and Operations. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering.
+Den här artikeln ger en översikt över kreditkortskontroll i Microsoft Dynamics 365 for Finance and Operations. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Ställa in kreditkortbetalningtjänsten
 ------------------------------------------
@@ -78,7 +77,6 @@ Om du levererar en delorder kommer beloppet för denna del av ordern att regitre
 
 ## <a name="voiding-an-authorization"></a>Annullera en auktorisering 
 Om du vill annullera en kreditkortskontroll kan du ändra betalningsmetoden till en annan metod som inte har någon typ av kreditkort.
-
 
 
 

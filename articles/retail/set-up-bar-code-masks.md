@@ -1,13 +1,13 @@
 ---
-title: "Ställ in streckkodsmasker"
-description: "Det här avsnittet beskriver hur du ställer in streckkodsmasktecken, streckkodsmasker och hur du tilldelar streckkodsmasker till streckkoder."
+title: Ställ in streckkodsmasker
+description: Det här avsnittet beskriver hur du ställer in streckkodsmasktecken, streckkodsmasker och hur du tilldelar streckkodsmasker till streckkoder.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d3527807650061804212abf67e536c17078aabf9
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340624"
 ---
-
 # <a name="set-up-bar-code-masks"></a>Ställ in streckkodsmasker
 
 [!include [banner](includes/banner.md)]
@@ -51,7 +50,7 @@ Streckkodsmasker används för att skapa streckkoder och snabbt identifiera stre
 | Medarbetare         | Anger streckkodssegment för anställningsnummer som ska användas för kassainloggning med streckkod. |
 | Kund         | Anger kund-ID-segment. |
 | Datapost       | *Ej implementerad.* |
-| Rabattkod    | *Avskrivningsvärde* från Dynamics 365 for Retail, vårutgåvan 2017. Tidigare: Anger en rabattkod för en streckkod som används för att lägga till en rabatt i en kassatransaktion. |
+| Rabattkod    | *Inaktuell* från Dynamics 365 for Retail version våren 2017. Tidigare: Anger en rabattkod för en streckkod som används för att lägga till en rabatt i en kassatransaktion. |
 | Kupongkod      | Anger kupongkod för en streckkod som används för att lägga till en rabatt i en butiksorder. Detta ersatte rabattkoden. |
 | Presentkort        | Anger ett presentkortsnummer när de utfärdar eller betalar med presentkort. |
 | Förmånskort     | Lägger till en förmånskund till transaktionen och kan användas vid betalning av förmåner. |
@@ -84,4 +83,3 @@ Streckkodsmasker måste tilldelas till streckkoder innan de kan användas. Gör 
 5. Klicka på **Spara**.
 
 Streckkodsmasken kan nu användas för att skapa streckkoder för produkter. Stegen ovan är exempel på hur du skapar streckkodsmasker för produkter, men de visar också hur du kan skapa streckkodsmasker för alla andra streckkodstyper som stöds. Streckkodsmasker, typer och längd ska justeras för användning i din specifika miljö.
-

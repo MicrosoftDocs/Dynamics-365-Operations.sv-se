@@ -1,13 +1,13 @@
---- 
-title: "Kopiera samprodukter från en befintlig formelversion"
-description: "I den här proceduren visas hur du kopierar samprodukter från en befintlig formelversion till en annan formelversion för en frisläppt produkt."
+---
+title: Kopiera samprodukter från en befintlig formelversion
+description: I den här proceduren visas hur du kopierar samprodukter från en befintlig formelversion till en annan formelversion för en frisläppt produkt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, BOMConsistOf, PmfFormulaCoBy, BOMRouteCopyDialog
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 179c12da0c2ddc7b5e2f2fdddd21168eac121811
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 80543780c423b5beac3ec57f4fa035e560aaa4ce
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319257"
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>Kopiera samprodukter från en befintlig formelversion
 
@@ -53,5 +53,4 @@ I den här proceduren visas hur du kopierar samprodukter från en befintlig form
 5. I fältet Formelversion, ange eller välj ett värde.
 6. Klicka på OK.
 7. Stäng sidan.
-
 

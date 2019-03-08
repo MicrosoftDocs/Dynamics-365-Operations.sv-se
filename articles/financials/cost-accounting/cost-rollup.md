@@ -1,32 +1,31 @@
 ---
-title: "Policy för samlade kostnader och omkostnadsberäkning"
-description: "Det här avsnittet innehåller information om hur du avgör korrekt nivå på sekundära kostnadselement och skapar regler för samlade kostnader som passar organisationens rapportering och kostnadsspårbarhet."
+title: Policy för samlade kostnader och omkostnadsberäkning
+description: Det här avsnittet innehåller information om hur du avgör korrekt nivå på sekundära kostnadselement och skapar regler för samlade kostnader som passar organisationens rapportering och kostnadsspårbarhet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e809cb2cadadc623134805e028de7f2e64dd662f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356149"
 ---
-
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
 [!include [banner](../includes/banner.md)]
@@ -251,7 +250,7 @@ Sidan **Information om kostnadsobjektets journalposter för kostnadsbalans** som
 | CC003       | Sammansättning     | SC-CC002 | Finansiellt         | 11.527,75   | 31-01-2017 |
 | CC004       | Paketering    | SC-CC002 | Finansiellt         | 6.207,25    | 31-01-2017 |
 
-När **omkostnadsberäkning** är klar kan du rapportera resultaten med verktyg som t.ex. Microsoft SharePoint Workspace, Excel eller Power BI.
+När **omkostnadsberäkning** är klar kan du rapportera resultaten med verktyg som t.ex. SharePoint Workspace, Excel eller Power BI.
 
 ## <a name="view-reporting-in-excel"></a>Visa rapportering i Excel 
 
@@ -302,4 +301,3 @@ Den tydliga avgränsningen mellan **kostnadsallokering** och **Policyer för sam
 -  [Dimensioner för kostnadselement](cost-elements.md)
 -  [Dimensionshierarkier](dimension-hierarchy.md)
 -  [Beräkning av indirekta kostnader](overhead-calculation.md)
-

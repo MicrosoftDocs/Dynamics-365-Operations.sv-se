@@ -1,13 +1,13 @@
 ---
 title: Importera valutakurser
-description: "Om en juridisk person har fått fakturor i utländsk valuta, måste den utländska valutan konverteras till lokal valuta. Detta innebär att aktuella valutakurser krävs för olika valutor. Det här avsnittet innehåller en översikt över de inställningar och den bearbetning som krävs för att importera utländska referensvalutakurser som publiceras online av valutakursleverantörer som exempelvis Europeiska centralbanken och Ryska centralbanken."
+description: Om en juridisk person har fått fakturor i utländsk valuta, måste den utländska valutan konverteras till lokal valuta. Detta innebär att aktuella valutakurser krävs för olika valutor. Det här avsnittet innehåller en översikt över de inställningar och den bearbetning som krävs för att importera utländska referensvalutakurser som publiceras online av valutakursleverantörer som exempelvis Europeiska centralbanken och Ryska centralbanken.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: edd72b48a640126577dd7a2add3a4891ae505fdf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: df07066371cb7d9c69976c9714b6d2fe456a0308
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333402"
 ---
-
 # <a name="import-currency-exchange-rates"></a>Importera valutakurser
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ Du kan importera valutakurser från valutakursleverantörskällan och ställa in
 | **Skapa nödvändiga valutapar**    | Den här kryssrutan styr automatiskt skapande av valutapar, om de valutapar som importeras inte finns. Det här alternativet är kanske inte tillgängligt för vissa leverantörer.                                                                                                                                                                                               |
 | **Ersätt befintliga valutakurser**   | Den här kryssrutan hanterar uppdateringen av den befintliga valutakursen för ett valutapar när valutakursen för ett visst datum redan finns. Om du inte markerar den här kryssrutan, importeras inte valutakursen för specifika datum om det redan finns en annan valutakurs.                                                                                       |
 | **Förhindra import på helgdagar** | Den här kryssrutan styr importen av valutakurser för ett datum som är en helgdag. Om du till exempel markerar den här kryssrutan och använder Europeiska centralbanken som valutakursleverantör, uppdaterar systemet inte valutakursen på en allmän helgdag som hör till den aktuella juridiska personen. Det här alternativet är kanske inte tillgängligt för vissa leverantörer. |
-
 
 
 

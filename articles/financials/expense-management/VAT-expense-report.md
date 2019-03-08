@@ -1,13 +1,13 @@
 ---
-title: "Momsåtervinning i Utgiftshantering"
-description: "Det här avsnittet beskriver hur du tar emot återbetalningar vid berättigade momstransaktioner."
+title: Momsåtervinning i Utgiftshantering
+description: Det här avsnittet beskriver hur du tar emot återbetalningar vid berättigade momstransaktioner.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359576"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>Momsåtervinning i Utgiftshantering
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ När Arnie är redo att skicka utgiftsrapportdata till tredje parts återförsä
 Arnie måste kontrollera att transaktionerna i utgiftsrapporten är berättigade för momsåtervinning och att digitala kvitton har bifogats till rapporterna. För att börja bearbeta berättigade utgifter för inhemsk återvinning öppnar Arnie sidan **Momsåterbetalning för utgift** och väljer utgiftsrapporten som kräver verifiering. Han kontrollerar att kvittona är i företagets namnet i stället för medarbetaren. För momsåtervinning måste kvittona vara i företagets namn. Arnie bekräftar sedan att rätt momsgrupp och momskoder har tillämpats.
 
 När Arnie får papperskvittona kan han ändras status för utgiftsrapporten till **klar för återbäring**. Han kan sedan ansöka om återvinningen från lämplig skattemyndighet. I det här fallet är lämplig skattemyndighet i USA Internal Revenue Service (IRS).
-

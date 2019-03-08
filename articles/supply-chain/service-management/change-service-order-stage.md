@@ -1,31 +1,30 @@
 ---
-title: "Ändra serviceorderfasen"
-description: "Du kan ändra serviceorderfasen."
+title: Ändra serviceorderfasen
+description: Du kan ändra serviceorderfasen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4bad6ebdac9c61e31ac97cfdf97b040d868a5c4b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 06e95d2722c8ebe6c8807146a1a5d94469bb358d
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323811"
 ---
-
 # <a name="change-the-service-order-stage"></a>Ändra serviceorderfasen 
 
 [!include [banner](../includes/banner.md)]
@@ -40,6 +39,5 @@ Följ dessa steg för att flytta en serviceorder till nästa steg i servicearbet
 3.  I **åtgärdsfönstret**, antingen klicka på **nästa fas** eller **föregående fas**.
 
 4.  I formulärt **ändra servicefas**, välj lämplig fas.
-
 
 

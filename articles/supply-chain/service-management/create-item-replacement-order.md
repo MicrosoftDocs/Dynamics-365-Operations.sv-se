@@ -1,30 +1,29 @@
 ---
-title: "Skapa en artikelersättningsorder"
-description: "Ersättningsorder skapas vanligtvis efter att en produkt har returnerats och inspekterats."
+title: Skapa en artikelersättningsorder
+description: Ersättningsorder skapas vanligtvis efter att en produkt har returnerats och inspekterats.
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 784a2522c27e8131f211ffc52319552b3b928cc3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f0cd629658972f98e2233dfa287940c4444b82a
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355022"
 ---
-
 # <a name="create-an-item-replacement-order"></a>Skapa en artikelersättningsorder 
 
 [!include [banner](../includes/banner.md)]
@@ -52,11 +51,11 @@ Ersättningsorder skapas vanligtvis efter att en produkt har returnerats och ins
 
 2.  Skapa en ny returorder eller välj en returorder i listan för att öppna formuläret **Returorder - RMA-nummer: %1, %2**.
 
-3.  Klicka på **Hitta försäljningsorder** om du vill identifiera försäljningsordern för den returnerade artikeln. Slutför formuläret **söka efter försäljningsorder** och klicka på **OK** för att stänga formuläret och återgå till formuläret **returorder - RMA-nummer: %1, %2**. Försäljningsorderraden för den returnerade artikeln kopieras till returordern.
+3.  Klicka på **Hitta försäljningsorder** om du vill identifiera försäljningsordern för den returnerade artikeln. Slutför formuläret **söka efter försäljningsorder**och klicka på **OK** för att stänga formuläret och återgå till formuläret **returorder - RMA-nummer: %1, %2**. Försäljningsorderraden för den returnerade artikeln kopieras till returordern.
 
 4.  Klicka på **Ersättningsorder** för att öppna formuläret **Skapa försäljningsorder**.
 
-5.  Markera kryssrutan **Kopiera returorderrader** ör att överföra detaljer från den returorder som du markerade på formuläret **Returorder - RMA-nummer: %1, %2** till den här försäljningsordern.
+5.  Markera kryssrutan **Kopiera returorderrader** för att överföra detaljer från den returorder som du markerade på formuläret **Returorder - RMA-nummer: %1, %2** till den här försäljningsordern.
 
 6.  Ange eller ändra detaljer vid behov.
     
@@ -66,6 +65,5 @@ Ersättningsorder skapas vanligtvis efter att en produkt har returnerats och ins
     
     Om identifieraren för försäljningsavtalet visas automatiskt i fältet **Försäljningsavtals-ID** har försäljningsavtalet länkats till försäljningsorderrubriken för artikelutbytesordern. Om det finns en lämplig åtagande i försäljningsavtalet som ännu inte har fullgjorts, och försäljningsorder skapas före försäljningsavtalet går ut, skapas en koppling mellan försäljningsavtalraden och försäljningsorderraden. Därför information kopieras från försäljningsavtalet, till exempel artikelpris, till den nya försäljningsorderraden. 
   
-
 
 

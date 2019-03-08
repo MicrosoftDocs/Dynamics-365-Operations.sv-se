@@ -1,13 +1,13 @@
---- 
+---
 title: Hantera ER-modellmappning i separata ER-konfigurationer
-description: "I följande steg förklaras hur en användare som är tilldelad rollen som systemadministratör eller utvecklare för elektronisk rapportering kan hantera ER-modellmappningar (elektronisk rapportering) i separata ER-konfigurationer."
+description: I följande steg förklaras hur en användare som är tilldelad rollen som systemadministratör eller utvecklare för elektronisk rapportering kan hantera ER-modellmappningar (elektronisk rapportering) i separata ER-konfigurationer.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349157"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Hantera ER-modellmappning i separata ER-konfigurationer
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/09/2018
 
 I följande steg förklaras hur en användare som är tilldelad rollen som systemadministratör eller utvecklare för elektronisk rapportering kan hantera ER-modellmappningar (elektronisk rapportering) i separata ER-konfigurationer. I den här uppgiftsguide skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra uppgiftsguiden måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv. 
 
-Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här uppgiftsguiden med valfri företagsdatauppsättning. Funktionen för den här uppgiften är tillgänglig om du har installerat någon av följande snabbkorrigeringar: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 för Dynamics AX 7.0-versionen eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 för Dynamics 365 for Operations-versionen.
+Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här uppgiftsguiden med valfri företagsdatauppsättning. Funktionen för den här uppgiften är tillgänglig om du har installerat någon av följande snabbkorrigeringar: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 för Dynamics AX 7.0 version eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 för Dynamics 365 for Operations version.
 
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
     * Kontrollera att konfigurationsleverantören för provföretaget "Litware, Inc." är markerad som aktiv och tillgänglig. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i uppgiftsguiden Skapa en konfigurationsleverantör och välj den som aktiv.   
@@ -70,7 +70,7 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 6. Klicka på Designer.
     * Observera att den skapade modellmappningskonfigurationen innehåller en tom ny mappning med samma namn som den skapade konfigurationen. När en vald överordnad modellkonfiguration innehåller modellmappningar kopieras de till en ny modellmappningskonfiguration.   
 7. Klicka på Designer.
-8. Välj Dynamics 365 for Operations\Table i trädet.
+8. Välj "Dynamics 365 for Operations\Table" i trädet.
 9. Klicka på Lägg till rot.
 10. Skriv "Företag" i fältet Namn.
     * Företag  
@@ -123,7 +123,7 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 5. Klicka på Skapa konfiguration.
 6. Klicka på Designer.
 7. Klicka på Designer.
-8. Välj Dynamics 365 for Operations\Table i trädet.
+8. Välj "Dynamics 365 for Operations\Table" i trädet.
 9. Klicka på Lägg till rot.
 10. Skriv "Företag" i fältet Namn.
     * Företag  
@@ -161,5 +161,4 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 6. Klicka på Kör.
 7. Klicka på OK.
     * Observera att standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att skapa det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).  
-
 

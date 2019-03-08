@@ -1,13 +1,13 @@
---- 
-title: "Använda kontinuitetsprogram"
-description: "Denna procedur visar hur du säljer ett kontinuitetsprogram och behandlar relaterade försäljningsordrar."
+---
+title: Använda kontinuitetsprogram
+description: Denna procedur visar hur du säljer ett kontinuitetsprogram och behandlar relaterade försäljningsordrar.
 author: scott-tucker
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 45bd4a3cc9f9b03c713d33638d6dc93aa696c581
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358173"
 ---
 # <a name="using-continuity-program"></a>Använda kontinuitetsprogram
 
@@ -61,5 +61,4 @@ Denna procedur visar hur du säljer ett kontinuitetsprogram och behandlar relate
 20. I fältet Sales order anger eller väljer du ett värde.
     * Ange försäljningsordernummer som du noterade tidigare i proceduren. Detta håller bearbetningstiden till ett minimum för denna procedur. Fältet för försäljningsorder valfritt ‒ du kan processa alla ordrar för valfritt program.  
 21. Klicka på OK.
-
 

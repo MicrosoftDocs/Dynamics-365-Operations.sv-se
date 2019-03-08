@@ -1,13 +1,13 @@
---- 
-title: "Ställ in policyer för hierarkier för anskaffningskategorier"
-description: "Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori."
+---
+title: Ställ in policyer för hierarkier för anskaffningskategorier
+description: Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d1fdf357466de12bd0188fc43cd266c67af762c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 50764f99be04d27e04047824f870e724336cb452
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323167"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Ställ in policyer för hierarkier för anskaffningskategorier
 
@@ -58,5 +58,4 @@ Använd den här proceduren för att ställa in regler för att beställa produk
     * Välj en regel för att kontrollera vilken typ av leverantörer som kan väljas för kategorin, när rekvisitioner skapas.  
 7. Klicka på Stäng.
     * De policyregler som du har definierat har varit för rekvisitioner av typen Förbrukning. Om du vill definiera policyer för rekvisitioner av typen Återanskaffning, ska du skapa en regel för Policyregeltypen som kallas "Åtkomstpolicyregel för återanskaffningskategori".  
-
 

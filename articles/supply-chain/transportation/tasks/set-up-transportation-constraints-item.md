@@ -1,13 +1,13 @@
---- 
-title: "Ställ in transportbegränsningar för en artikel"
-description: "Den här proceduren ställer in en transportbegränsning för att förhindra att en vald artikel ska transporteras genom ett valt nav."
+---
+title: Ställ in transportbegränsningar för en artikel
+description: Den här proceduren ställer in en transportbegränsning för att förhindra att en vald artikel ska transporteras genom ett valt nav.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 900ea1476c95d295a151125afe46aebd9642630e
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338140"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Ställ in transportbegränsningar för en artikel
 
@@ -43,5 +43,4 @@ Den här proceduren ställer in en transportbegränsning för att förhindra att
 9. Välj ett alternativ i fältet Begränsningsåtgärd.
 10. Klicka på Spara.
 11. Stäng sidan.
-
 

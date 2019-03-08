@@ -1,13 +1,13 @@
 ---
 title: Uppskatta en produktionsorder
-description: "Du kan köra den här proceduren med demonstrationsdataföretaget USMF eller använda dina egna data."
+description: Du kan köra den här proceduren med demonstrationsdataföretaget USMF eller använda dina egna data.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8274e390a177f51649f5cad70ef7ad5bd50a8830
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: 862281adac67757e1ce0e9ddd1e96483363abb9a
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351871"
 ---
 # <a name="estimate-a-production-order"></a>Uppskatta en produktionsorder
 
@@ -42,4 +42,3 @@ Du kan köra den här proceduren med demonstrationsdataföretaget USMF eller anv
 1. Klicka på Hantera kostnader i åtgärdsfönstret.
 2. Klicka på Visa beräkningsuppgifter.
     * Den här sidan visar kostnadsuppdelningen. Du kan till exempel visa den totala självkostnaden per enhet för den färdiga produkten på den första raden. De efterföljande raderna innehåller kostnader i enlighet med strukturlistan, produktionsflödet och de indirekta kostnaderna.  
-

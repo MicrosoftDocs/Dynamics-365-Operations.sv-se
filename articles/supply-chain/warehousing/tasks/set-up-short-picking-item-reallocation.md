@@ -1,13 +1,13 @@
---- 
-title: "Skapa omallokering av artiklar för kort plockning"
-description: "I den här proceduren visas hur du auktoriserar lagerarbetare att snabbt söka efter alternativa platser om det inte finns tillräckligt med lagerutrymme på den plats som de har hänvisats till."
+---
+title: Skapa omallokering av artiklar för kort plockning
+description: I den här proceduren visas hur du auktoriserar lagerarbetare att snabbt söka efter alternativa platser om det inte finns tillräckligt med lagerutrymme på den plats som de har hänvisats till.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bf56a0811c4793ee2e3eaf78c8696c3c29e984c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b67965b6c8641b5d91ab3c5b0a7a7fd28a07cba6
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361232"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Skapa omallokering av artiklar för kort plockning
 
@@ -53,5 +53,4 @@ I den här proceduren visas hur du auktoriserar lagerarbetare att snabbt söka e
 4. I listan väljer du worker 24.
 5. Expandera avsnittet Work.
 6. Välj Yes i fältet Allow manual item reallocation.
-
 

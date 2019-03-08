@@ -1,32 +1,30 @@
 ---
 title: Serviceorder
-description: "Du kan se när arbetet med serviceordern inleddes och när det kommer att vara klart."
+description: Du kan se när arbetet med serviceordern inleddes och när det kommer att vara klart.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbf109c32811089a1a864e6279eee911c7825146
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e64b2d2549cb51b38de3682e3fa6e1cd987a5895
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349870"
 ---
-
-
 # <a name="view-the-start-time-and-duration-of-a-service-order"></a>Visa starttid och tidslängd för en serviceorder 
 
 [!include [banner](../includes/banner.md)]
@@ -59,6 +57,5 @@ Du kan även se när tidsregistreringen för en serviceorder startades och stopp
 [Serviceorder (formulär)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
 
   
-
 
 

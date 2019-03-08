@@ -1,13 +1,13 @@
 ---
 title: Elektroniska signaturer
-description: "Den här artikeln innehåller en översikt över elektroniska signaturer samt en beskrivning av hur de kan användas i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet innehåller en översikt över elektroniska signaturer samt en beskrivning av hur de kan användas i Microsoft Dynamics 365 for Finance and Operations.
 author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325674"
 ---
-
 # <a name="electronic-signatures"></a>Elektroniska signaturer
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln innehåller en översikt över elektroniska signaturer samt en beskrivning av hur de kan användas i Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet innehåller en översikt över elektroniska signaturer samt en beskrivning av hur de kan användas i Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="what-is-an-electronic-signature"></a>Vad är en elektronisk signatur?
 
@@ -111,4 +110,3 @@ Följ dessa steg om du vill utse godkännare.
 1. Gå till sidan **Alternativ** och sedan till fliken **Konton** och klicka på **Utse godkännare**.
 2. Välj ID för den användare som ska signera för andra användarens ändringar i fältet **Godkänn användar-ID**.
 3. Välj ID för den användare vars ändringar måste signeras i fältet **Signera för användar-ID**.
-

@@ -1,13 +1,13 @@
---- 
-title: "Ställ in kompensationsrutnät"
-description: "Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner."
+---
+title: Ställ in kompensationsrutnät
+description: Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompGridView
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 139c4e2adbf5029f8084c7c934a05def04cd31ca
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340417"
 ---
 # <a name="set-up-compensation-grids"></a>Ställ in kompensationsrutnät
 
@@ -93,5 +93,4 @@ Kompensationsrutnät används för att definiera och underhålla lönstrukturern
 28. Ange eller välj ett värde i fältet Referenspunkt.
 29. Markera eller avmarkera alla rader i listan.
 30. Klicka på Använd i rutnät.
-
 

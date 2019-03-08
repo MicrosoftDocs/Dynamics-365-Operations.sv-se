@@ -1,13 +1,13 @@
 ---
 title: Ekonomisk rapportering
-description: "Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls."
+description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316980"
 ---
-
 # <a name="financial-reporting"></a>Ekonomisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
+Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 
 <a name="accessing-financial-reporting"></a>Åtkomst till ekonomisk rapportering
 -----------------------------
@@ -122,7 +121,6 @@ På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en b
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Visa ekonomiska rapporter](view-financial-reports.md)
-
 
 
 

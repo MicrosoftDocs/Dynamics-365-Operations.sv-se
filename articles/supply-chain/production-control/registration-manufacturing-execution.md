@@ -1,13 +1,13 @@
 ---
-title: "Registrering för tillverkningskörning"
-description: "I det här avsnittet beskrivs viktiga begrepp och termer som du behöver känna till när du konfigurerar och använder tillverkningskörning."
+title: Registrering för tillverkningskörning
+description: I det här avsnittet beskrivs viktiga begrepp och termer som du behöver känna till när du konfigurerar och använder tillverkningskörning.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318176"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Registrering för tillverkningskörning
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Arbetstagare kan göra olika typer av registreringar i formuläret för utföran
 -   **Registrera raster** (finns med tid och närvaro) – Under arbetsdagen kan anställda registrera att de lämnar sin arbetsstation om de vill ta en rast. Flera avbrottstyper kan ställas in. När arbetstagaren återvänder och loggar in igen kommer systemet att registrera att arbetstagaren är tillbaka och pausregistreringen stoppas.
 -   **Registrera indirekta aktiviteter** (finns med tid och närvaro) – Indirekta aktiviteter är improduktiva aktiviteter som anställda kan arbeta med under en arbetsdag, till exempel ett avdelningsmöte, ett teammöte eller ett underhållsjobb som utförs i fabriken. Arbetstagare kan göra registreringar för indirekta aktiviteter som har ställts in.
 -   **Registrera övertid** (finns med tid och närvaro) – Anställda som har tillfrågats att arbeta längre tid, kan välja om de extra timmarna ska registreras som övertid eller flextid.
-
 
 
 

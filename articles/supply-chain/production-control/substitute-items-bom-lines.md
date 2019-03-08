@@ -1,13 +1,13 @@
 ---
-title: "Materiell ersättning i tillverkning"
-description: "I det här avsnittet beskrivs hur du ersätter material under produktionsprocessen."
+title: Materiell ersättning i tillverkning
+description: I det här avsnittet beskrivs hur du ersätter material under produktionsprocessen.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461b717acafb5ccf37acae23a1564069cea6828a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3e70a6ad074911438ef45b6aac2523a4a9fccf8
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327629"
 ---
-
 # <a name="material-substitution-in-manufacturing"></a>Materiell ersättning i tillverkning
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Du kan bara ersätta material under planering när du använder recept, inte nä
 
 ## <a name="substituting-material-during-production"></a>Ersätta material under produktion
 Beakta följande situationer: Ett del av metallplattan krävs för en svetsningoperation. Under operationen informerar en lagerarbetare maskinoperatören om att plattan är slut på lager. Men det bestäms att plattan kan ersättas med en platta som är något tjockare. På så vis kan operationen slutföras. Material kan läggas till strukturlistan för en öppen produktionsorder. Om produktionsordern har status **Startad**, uppmanas användarna till att återuppskatta ordern när de lägger till en ny artikel i produktionsstrukturlistan. När materialet har lagts till, kan en ny plocklista skapas för den nya artikeln. Du behöver inte lägga till det nya materialet i produktionsstrukturlistan. I stället kan du lägga till den direkt i produktionplocklistan. Därefter när plocklistan bokförs, lägger systemet till materialet i produktionsstrukturlistan.
-
 
 
 

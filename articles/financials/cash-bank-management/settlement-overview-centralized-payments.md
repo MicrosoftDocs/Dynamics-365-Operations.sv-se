@@ -1,13 +1,13 @@
 ---
-title: "Kvittningsöversikt för centraliserade betalningar"
-description: "Det här avsnittet beskriver kvittning för centraliserade betalningar för Microsoft Dynamics 365 for Finance and Operations."
+title: Kvittningsöversikt för centraliserade betalningar
+description: Det här avsnittet beskriver kvittning för centraliserade betalningar med Microsoft Dynamics 365 for Finance and Operations.
 author: abruer
 manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
 ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358587"
 ---
-
 # <a name="settlement-overview-for-centralized-payments"></a>Kvittningsöversikt för centraliserade betalningar
 
 [!include [banner](../includes/banner.md)]
@@ -109,4 +108,3 @@ För leverantörsbetalningar använder förfaller till- och förfaller från-tra
 
 ## <a name="withholding-tax"></a>Källskatt
 Leverantörskontot som är associerat till fakturan används för att avgöra om källskatt ska beräknas. Om källskatt gäller beräknas denna i den juridiska person som är associerad med fakturan. Om de juridiska personer använder olika valutor, används valutakursen från den juridiska person som är kopplad till fakturan.
-

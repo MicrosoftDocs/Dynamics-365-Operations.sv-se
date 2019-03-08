@@ -1,13 +1,13 @@
 ---
-title: "Vanliga frågor för produktrelaterade översättningar"
-description: "I det här avsnittet beskrivs hur du hanterar översättningar för produkter, produktdimensionvärden och produktattribut."
+title: Vanliga frågor för produktrelaterade översättningar
+description: I det här avsnittet beskrivs hur du hanterar översättningar för produkter, produktdimensionvärden och produktattribut.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Product information
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d124e2608f01878487bc8fc9af2e27d143c8ae9e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342878"
 ---
-
 # <a name="product-related-translations-faq"></a>Vanliga frågor för produktrelaterade översättningar
 
 [!include [banner](../includes/banner.md)]
@@ -124,7 +123,6 @@ Om du vill hantera översättningar för värden i ett dimensionsvärdegrupp, f�
 
 ## <a name="when-can-translations-of-product-related-information-be-managed"></a>När kan översättningar av produktrelaterad information hanteras?
 Översättningar av produktrelaterad information kan hanteras när som helst. När översättningar uppdateras för ett dimensionsvärde som är kopplat till en produkt, uppdateras produktinformationen, oavsett om produkten har transaktioner.
-
 
 
 

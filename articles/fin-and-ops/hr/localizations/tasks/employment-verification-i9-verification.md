@@ -1,13 +1,13 @@
---- 
-title: "Anställningverifiering av i9-verifiering"
-description: "Immigration Reform and Control Act kräver att amerikanska arbetsgivare verifierar nyanställdas anställningskvalifikationer."
+---
+title: Anställningverifiering av i9-verifiering
+description: Immigration Reform and Control Act kräver att amerikanska arbetsgivare verifierar nyanställdas anställningskvalifikationer.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
 ms.reviewer: josaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4d7346507179d237f60459978b9b7c6351f48611
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333333"
 ---
 # <a name="employment-verification-i9-verification"></a>Anställningverifiering av i9-verifiering
 
@@ -54,5 +54,4 @@ Immigration Reform and Control Act kräver att amerikanska arbetsgivare verifier
 21. Välj den typ av dokument som arbetaren har angett i fältet I-9-dokumenttyp.
 22. Ange eller välj ett värde i fältet Dokumentnummer.
 23. Klicka på Spara.
-
 

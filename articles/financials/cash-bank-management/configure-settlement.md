@@ -1,13 +1,13 @@
 ---
 title: Konfigurera kvittning
-description: "Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra."
+description: Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra.
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319280"
 ---
-
 # <a name="configure-settlement"></a>Konfigurera kvittning
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ För att undvika ytterligare redovisningsposter, debet och kredit till samma red
 
 -   Organisationer använder ofta fasta dimensioner som fylls i med nollvärden en finansiell dimension som inte krävs. Detta är ofta fallet för balansräkningskonton, till exempel Kundreskontra/Leverantörsreskontra. Kontostrukturer kan användas för att spåra ekonomiska dimensioner som vanligtvis fylls i med nollvärden.  Du kan ta bort den ekonomiska dimensionen för balansräkningskonton, utan att behöva använda fasta dimensioner.
 -   Om din organisation kräver fasta dimensioner på huvudkontot för Kundreskontra/Leverantörsreskontra, hitta ett sätt att ställa in fast dimension till betalning som standard så att fasta dimensionsvärdet lagras på leverantörstransaktionen för betalningen. På så sätt kan systemet återställa huvudkontona för Kundreskontra/Leverantörsreskontra att inkludera de fasta dimensionsvärdena. Fast dimensionsvärden kan definieras som standard på antingen leverantörer eller journalnamnet för betalningsjournalen.
-

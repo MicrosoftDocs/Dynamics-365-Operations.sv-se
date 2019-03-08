@@ -1,13 +1,13 @@
 ---
-title: "Datum för viktat medelvärde"
-description: "Datum för viktat medelvärde är en lagermodell som bygger på principen om viktat medelvärde, där utleveranser från lagret värderas till medelvärdet av artiklarna som inlevereras till lagret för varje dag i lagerstängningsperioden."
+title: Datum för viktat medelvärde
+description: Datum för viktat medelvärde är en lagermodell som bygger på principen om viktat medelvärde, där utleveranser från lagret värderas till medelvärdet av artiklarna som inlevereras till lagret för varje dag i lagerstängningsperioden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355413"
 ---
-
 # <a name="weighted-average-date"></a>Datum för viktat medelvärde
 
 [!include [banner](../includes/banner.md)]
@@ -35,13 +34,13 @@ ms.lasthandoff: 11/03/2017
 
 Viktat genomsnittligt datum är en lagermodell som baseras på principen om viktat medelvärde. För principen om viktat medelvärde värderas utleveranser från lagret till medelvärdet av artiklarna som inlevereras till lagret för varje enskild dag i lagerstängningsperioden. 
 
-När du kör en lagerstängning genom att använda viktat genomsnittligt datum, kvittas alla dagliga inleveranser mot en virtuell utleverans. Den virtuella utleveransen innehåller den totala inlevererade kvantiteten och värdet för dagen. Den virtuella utleveransen har en motsvarande virtuell inleverans som utleveranserna kvittas mot. På så sätt får alla utleveranser samma genomsnittskostnad. Den virtuella utleveransen och inleveransen kan ses som en virtuell överföring, som kallas *viktat medelvärde för stängning av lager*. 
+När du kör en lagerstängning genom att använda viktat genomsnittligt datum, kvittas alla dagliga inleveranser mot en virtuell utleverans. Den virtuella utleveransen innehåller den totala inlevererade kvantiteten och värdet för dagen. Den virtuella utleveransen har en motsvarande virtuell inleverans som utleveranserna kvittas mot. På så sätt får alla utleveranser samma genomsnittskostnad. Den virtuella utleveransen och inleveransen kan ses som en virtuell överföring, som kallas *viktat medelvärde för stängning av lager*. 
 
 Om bara en inleverans har gjorts på eller före datumet, behöver du inte värdera medelvärdet av dessa. Eftersom alla utleveranser kvittas från den inleveransen, kommer den virtuella överföringen inte att skapas. Om bara utleveranser görs på datumet finns det heller inga inleveranser att värdera medelvärdet från, och den virtuella överföringen skapas inte heller i detta fall. När du använder viktat genomsnittligt datum kan du markera lagertransaktioner så att en specifik artikelinleverans kvittas mot en specifik utleverans. I det här fallet används inte regeln för viktat genomsnittligt datum. Vi rekommenderar en lagerstängning varje månad när du använder lagermodellen med datum för viktat medelvärde. 
 
 Följande formel används för att beräkna viktat genomsnittligt datum för kostnadsredovisningsmetod. 
 
-Viktat medelvärde = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Viktat medelvärde = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
 
 Under lagerstängningen utförs beräkningen dagligen under hela stängningsperioden vilket visas i följande bild. 
 
@@ -54,7 +53,7 @@ Lagertransaktioner som lämnar lagerinleveranserna, bland anat försäljningsord
 
 Kvittningar är lagerstängningstransaktioner som justerar utleveranser till rätt viktat medelvärde vid stängningsdatumet. 
 
-**Obs!**  Mer information om kvittning i Dynamics AX finns i artikeln om lagerstängning. I följande exempel visas effekten av att använda viktat medelvärde med fem olika konfigurationer:
+**Obs!** Mer information om kvittningar finns i artikeln om lagerstängning. I följande exempel visas effekten av att använda viktat medelvärde med fem olika konfigurationer:
 
 -   Viktat genomsnittligt datum med direkt kvittning när alternativet **Inkludera fysiskt värde** inte används.
 -   Viktat genomsnittligt datum med summerad kvittning när **Inkludera fysiskt värde** inte används
@@ -195,7 +194,6 @@ Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av eko
 -   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 -   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 -   Kvittningar som utförs av en lagerstängning visas som streckade röda pilar som löper diagonalt från en inleverans till en utleverans.
-
 
 
 

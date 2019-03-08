@@ -1,13 +1,13 @@
 ---
 title: Skapa en fraktsedel
-description: "I det här avsnittet beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser."
+description: I det här avsnittet beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8d5caed5553ad1c7aec5db83591024129aab1264
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ab5aa60198e442237fd85bb295589ae0ebe9c5f5
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352607"
 ---
-
 # <a name="create-a-bill-of-lading"></a>Skapa en fraktsedel
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,6 @@ Om du genererar fraktsedeln från **Workbench för lastplanering** måste beläg
 
 ## <a name="master-bill-of-lading"></a>Huvudfraktsedel
 Om det finns mer än en leverans i en last kan du skapa en huvudfraktsedel. Denna har samma layout och information som en fraktsedel, men innehåller det sammanfattade innehållet för alla leveranser. Om alternativet **Skapa en huvudfraktsedel när det finns mer än en leverans på en beläggning** anges som **Ja** på sidan **Transportledningsparametrar**, genereras en huvudfraktsedel automatiskt om du skapar en fraktsedel från **Workbench för lastplanering** och det finns mer än en leverans. Du kan också få en lista över fraktsedlarna genom att klicka på **Relaterad information** &gt; **Fraktsedel**. Om du skapar fraktsedlar manuellt kan du skapa en huvudfraktsedel på sidan **Fraktsedel**.
-
 
 
 

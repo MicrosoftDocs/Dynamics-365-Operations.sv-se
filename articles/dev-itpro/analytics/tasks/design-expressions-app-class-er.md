@@ -1,13 +1,13 @@
---- 
-title: "Skapa ER-uttryck för att anropa programklassmetoder"
-description: "Denna guide ger information om hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering (ER) genom att anropa metoder för programklasser i ER-uttryck."
+---
+title: Skapa ER-uttryck för att anropa programklassmetoder
+description: Denna guide ger information om hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering (ER) genom att anropa metoder för programklasser i ER-uttryck.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357253"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Skapa ER-uttryck för att anropa programklassmetoder
 
@@ -103,7 +103,7 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "ER
     * Datamodellmappning  
 6. Klicka på Spara.
 7. Klicka på Designer.
-8. Välj "Dynamics 365 for Operations\Class" i trädet.
+8. I trädet väljer du 'Dynamics 365 for Operations\Class'.
 9. Klicka på Lägg till rot.
     * Lägg till en ny datakälla för att öppna befintliga programlogik för validering av IBAN koder.  
 10. Ange "Checkkoder" i namnfältet.
@@ -157,5 +157,4 @@ För testningsändamål, utför formatmappning med den SampleIncomingMessage.txt
     * Klicka på Bläddra och navigera till filen SampleIncomingMessage.txt som du hämtade tidigare.  
 2. Klicka på OK.
     * Granska utdata i XML-format, vilket representerar de data som har importerats från den valda filen och integrerats i datamodellen. Observera att endast 3 raderna i importerade TXT-filen har bearbetats. IBAN-kod på rad 4 som inte gäller hoppades över och ett felmeddelande ges i informationsloggen.  
-
 

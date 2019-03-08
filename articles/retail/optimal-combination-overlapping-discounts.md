@@ -1,13 +1,13 @@
 ---
-title: "Fastställa den optimala kombinationen av överlappande rabatter"
-description: "När rabatterna överlappar måste du fastställ vilken kombination av överlappande rabatter som ger det lägsta transaktionssumman eller den högsta rabattsumman. När rabattbeloppet varierar beroende på priset på de produkter som köps, så som den vanliga butiksrabatten \"Köp 1, få 1 X procent rabatt\" (BOGO), blir processen en fråga om kombinatorisk optimering."
+title: Fastställa den optimala kombinationen av överlappande rabatter
+description: När rabatterna överlappar måste du fastställ vilken kombination av överlappande rabatter som ger det lägsta transaktionssumman eller den högsta rabattsumman. När rabattbeloppet varierar beroende på priset på de produkter som köps, så som den vanliga butiksrabatten "Köp 1, få 1 X procent rabatt" (BOGO), blir processen en fråga om kombinatorisk optimering.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360703"
 ---
-
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Fastställa den optimala kombinationen av överlappande rabatter
 
 [!include [banner](includes/banner.md)]
 
 När rabatterna överlappar måste du fastställ vilken kombination av överlappande rabatter som ger det lägsta transaktionssumman eller den högsta rabattsumman. När rabattbeloppet varierar beroende på priset på de produkter som köps, så som den vanliga butiksrabatten "Köp 1, få 1 X procent rabatt" (BOGO), blir processen en fråga om kombinatorisk optimering.
 
-Den här artikeln gäller för Microsoft Dynamics AX 2012 R3 med KB 3105973 (utgiven den 2 november 2015) eller senare, samt Microsoft Dynamics 365 for Retail. För att fastställa kombinationen av överlappande rabatter som ska tillämpas vid rätt tidpunkt har vi introducerat en metod för att använda överlappande rabatter. Den nya metoden kallas **marginalvärderankning**. Marginalvärderankning används när den tid som krävs för att utvärdera möjliga kombinationer av överlappande rabatter överskrider ett tröskelvärde som kan konfigureras på sidan **Butiksparametrar**. I metoden marginalvärderankning beräknas ett värde för varje överlappande rabatt genom att använda rabattvärdet på de delade produkterna. Överlappande rabatter tillämpas sedan från det högsta relativa värdet till det lägsta relativa värdet. Mer information om den nya metoden finns i avsnittet "Marginalvärde" nedan. Marginalvärderankning används inte när rabattbeloppen för en produkt inte påverkas av en annan produkt i transaktionen. Denna metod används exempelvis inte för två enkla rabatter, eller för en enkel rabatt och en enda produktkvantitetsrabatt.
+Den här artikeln avser Microsoft DynamicsAX 2012 R3 KB 3105973 (utgiven 2 november 2015) eller senare och till Microsoft Dynamics 365 for Retail. För att fastställa kombinationen av överlappande rabatter som ska tillämpas vid rätt tidpunkt har vi introducerat en metod för att använda överlappande rabatter. Den nya metoden kallas **marginalvärderankning**. Marginalvärderankning används när den tid som krävs för att utvärdera möjliga kombinationer av överlappande rabatter överskrider ett tröskelvärde som kan konfigureras på sidan **Butiksparametrar**. I metoden marginalvärderankning beräknas ett värde för varje överlappande rabatt genom att använda rabattvärdet på de delade produkterna. Överlappande rabatter tillämpas sedan från det högsta relativa värdet till det lägsta relativa värdet. Mer information om den nya metoden finns i avsnittet "Marginalvärde" nedan. Marginalvärderankning används inte när rabattbeloppen för en produkt inte påverkas av en annan produkt i transaktionen. Denna metod används exempelvis inte för två enkla rabatter, eller för en enkel rabatt och en enda produktkvantitetsrabatt.
 
 ## <a name="discount-examples"></a>Exempel på rabatter
 
@@ -85,4 +84,3 @@ För att lösa problemet med ett exponentiellt ökande antal kombinationer som m
 ![Överlappande rabatt-kombination 06](./media/overlapping-discount-combo-06.jpg)
 
 När marginalvärdet av varje rabatt i en delad uppsättning produkter beräknas, tillämpas rabatterna på de delade produkterna i ordning och fullständigt, från högsta marginalvärde till lägsta marginalvärde. För den här metoden jämförs inte alla resterande rabattmöjligheter varje gång när en enda instans av en rabatt har tillämpats. I stället jämförs överlappande rabatter en gång och tillämpas sedan i ordning. Inga ytterligare jämförelser görs. Du kan konfigurera tröskeln att byta till marginalvärdesmetoden på fliken **Rabatt** på sidan **Butiksparametrar**. Den godtagbar tiden att beräkna den totala rabatten varierar mellan butiksbranscher. Tiden ligger dock vanligtvis mellan tiotals millisekunder och en sekund.
-

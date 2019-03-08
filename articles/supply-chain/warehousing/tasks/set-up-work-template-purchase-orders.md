@@ -1,13 +1,13 @@
---- 
-title: "Ställ in en arbetsmall för inköpsorder"
-description: "I den här proceduren fokuseras på inställningarna av en enkel arbetsmall som ska användas när mottagna artiklar inlagras."
+---
+title: Ställ in en arbetsmall för inköpsorder
+description: I den här proceduren fokuseras på inställningarna av en enkel arbetsmall som ska användas när mottagna artiklar inlagras.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkTemplateTable, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d737f9dfd1888602266a87853e54407618ae2781
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbbe019bdca2d5182466a20370418a14032fe63d
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318038"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Ställ in en arbetsmall för inköpsorder
 
@@ -70,5 +70,4 @@ I den här proceduren fokuseras på inställningarna av en enkel arbetsmall som 
     * Instruktionerna för plock och plats är en uppsättning. Varje plock/platsuppsättning måste ha samma arbetsklass. Använda samma arbetsklass som du gjorde i plockinstruktionen.  
 7. Klicka på Spara.
     * Observera att kryssrutan Giltig nu är markerad.  
-
 

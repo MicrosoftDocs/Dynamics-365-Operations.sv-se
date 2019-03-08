@@ -1,13 +1,13 @@
 ---
 title: Fiktiva artiklar
-description: "Det här avsnittet beskriver i detalj, hur radtypen Fiktiv kan användas för rader i en strukturlista (BOM) och en formel i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet beskrivs i detalj, hur radtypen fiktiv kan användas för rader i en strukturlista (BOM) och en formel i Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -15,16 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validfrom: 
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.search.validfrom: ''
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: a92dd82f309867586f047e0dfc36e452a44a0f9c
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341820"
 ---
-
 # <a name="phantom-items"></a>Fiktiva artiklar
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ I den här strukturen kan du se att det inte finns några delar F och G och de m
 
 Till skillnad från teknikstrukturlistan som hade två operationsblad har tillverkningsstrukturlistan endast ett operationsblad. Förpackningsoperationen som var kopplad till del G har också utökats och ingår nu i operationsbladet för produkt H. Sammansättningen av den elektriska enheten är den första operationen. Denna order passar bra, eftersom enheten används i nästa operation som är maskinsammansättningen. Den sista operationen är förpackningsoperationen som förbrukar två förpackningsmaterial (C och D).
 
-I Microsoft Dynamics 365 for Finance and Operations aktiveras övergången mellan teknikstrukturlistan och tillverkningsstrukturlistan genom strukturlistans radtyp Fiktiv. Såsom begreppet ”fiktiv” anger, har delar F och G försvunnit under övergångsperioden mellan de två typerna av strukturlista. I det här exemplet används radtypen Fiktiv till strukturlisteraderna för delar F och G i teknikstrukturlistan. När en produktions- eller batchorder skapas kopieras teknikstrukturlista till produktions- eller batchordern. Sedan när ordern beräknas, sker övergången från teknikstrukturlistan till tillverkningsstrukturlistan enligt föregående illustrationer. Från operationsbladet i den andra bilden inmatas förpackningsmaterialen C och D för operationen. 
+I Microsoft Dynamics 365 for Finance and Operations övergången mellan teknikstrukturlistan och tillverkningsstrukturlistan har aktiverats via radtypen Fiktiv strukturlista. Såsom begreppet ”fiktiv” anger, har delar F och G försvunnit under övergångsperioden mellan de två typerna av strukturlista. I det här exemplet används radtypen Fiktiv till strukturlisteraderna för delar F och G i teknikstrukturlistan. När en produktions- eller batchorder skapas kopieras teknikstrukturlista till produktions- eller batchordern. Sedan när ordern beräknas, sker övergången från teknikstrukturlistan till tillverkningsstrukturlistan enligt föregående illustrationer. Från operationsbladet i den andra bilden inmatas förpackningsmaterialen C och D för operationen. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Fiktiva artikelstrukturlistor på flera nivåer
 Radtypen Fiktiv kan användas i strukturlistor på flera nivåer, vilket visas i följande illustration. I den här illustrationen (a) är strukturlistan för produkt G och (b) flödesbladet för delar E och produkt G. 
@@ -74,4 +73,3 @@ Fiktiva strukturlistor kan också användas för en strukturlista som har ett fl
 I bilden nedan (a) är strukturlistan för produkt G och del F och (b) flödesbladet för produkt G och del F.
 
 ![Produkt G och del F med bladflöde](media/product-G-part-F-with-route-sheet.png)
-

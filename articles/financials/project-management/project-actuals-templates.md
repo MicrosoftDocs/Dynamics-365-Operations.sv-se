@@ -1,13 +1,13 @@
 ---
-title: "Synkronisera projektets verkliga värden från Project Service Automation direkt till projektets integrationsjournal för bokföring i Finance and Operations"
-description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera projektets verkliga värden direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations."
+title: Synkronisera projektets verkliga värden från Project Service Automation direkt till projektets integrationsjournal för bokföring i Finance and Operations
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera projektets faktiska värden direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 0a965e8de596decf39a15977e6df8a6aa9dd35b0
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343361"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synkronisera projektets verkliga värden från Project Service Automation direkt till projektets integrationsjournal för bokföring i Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera projektets verkliga värden direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera projektets faktiska värden direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations.
 
 Mallen synkroniserar transaktionerna från Project Service Automation till ett mellanlagringsregister i Finance and Operations. När synkroniseringen är klar **måste** du importera datan från mellanlagringsregistret till integrationsjournalen.
 
 > [!NOTE]
-> - Integration av projektets verkliga värden finns i Microsoft Dynamics 365 for Finance and Operations version 8.01 eller senare.
-> - Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, efter det att du har installerat KB 4132657 och KB 4132660 kommer du att kunna använda mallarna för att integrera projektuppgifter, utgiftstransaktionskategorier, timuppskattningar, utgiftsuppskattningar och verkliga värden, och för att konfigurera funktionslåsning. Om du måste återställa redovisningsfördelningarna rekommenderar vi att du också installerar KB 4131710.
+> - Projektets verkliga integration finns i Microsoft Dynamics 365 for Finance and Operations version 8.0.1 eller senare.
+> - Om du använder Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3.0, när du har installerat KB 4132657 och KB 4132660, kommer du att kunna använda mallarna för att integrera projektuppgifter, utgiftstransaktionskategorier, timuppskattningar, utgiftsuppskattningar och verkliga värden, och så här konfigurerar du funktionslåsning. Om du måste återställa redovisningsfördelningarna rekommenderar vi att du också installerar KB 4131710.
 > - Om du använder Finance and Operations 7.3.0 och överför avgiftstransaktioner från Project Service Automation måste du installera KB 4345320 för att inkludera dessa avgifter på projektfakturan.
 > - Om du anger momsbelopp för tids- eller utgiftstransaktioner i Project Service Automation, måste du installera Project Service Automation uppdatering 7. I annat fall kommer de faktiska momsvärdena inte att kopplas till faktiska associerade tids- eller utgiftsvärden, och kommer heller inte att associeras med Finance and Operations. Kontakta support för mer information.
 
@@ -50,7 +50,7 @@ Följande bild visar hur data synkroniseras mellan Project Service Automation oc
 
 ### <a name="template-and-tasks"></a>Mall och uppgifter
 
-För att få åtkomst till tillgängliga mallar väljer du **Projekt** i administratörscentret för Microsoft PowerApps, och i det övre högra hörnet väljer du **Nytt projekt** för att välja offentliga mallar.
+För att få åtkomst till tillgängliga mallar väljer du i administratörscentret för Microsoft PowerApps **Projekt** och sedan i det övre högra hörnet **Ny projekt** för att välja offentliga mallar.
 
 Följande mall och underliggande uppgift används för att synkronisera projektets verkliga värden från Project Service Automation till Finance and Operations:
 
@@ -140,4 +140,3 @@ I följande illustrationer visas ett exempel på uppgiftsmallmappning i datainte
 [![Mallmappning](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
 [![Mallmappning](./media/TransactionConnectionsUpdate.jpg)](./media/TransactionConnectionsUpdate.jpg)
-

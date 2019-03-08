@@ -1,32 +1,31 @@
 ---
 title: Dimensionshierarki
-description: "Det här ämnet innehåller information om dimensionshierarkier. Du använder en hierarki för att definiera rapporteringsstruktur, kostnadspolicyer och säkerhetsinställningar i kostnadsredovisning."
+description: Det här ämnet innehåller information om dimensionshierarkier. Du använder en hierarki för att definiera rapporteringsstruktur, kostnadspolicyer och säkerhetsinställningar i kostnadsredovisning.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 55d567eb3b4ad6746f39118b575457bb00fe0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320223"
 ---
-
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,7 @@ En dimensionshierarki kan skapas för följande typer av dimensioner:
 > [!NOTE]
 > - Du kan skapa flera dimensionshierarkier för samma dimension om olika perspektiv krävs.
 > - En dimensionshierarki kan endast associeras med en dimension.
-> - En dimensionshierarki kan ha obegränsat antal nivåer i strukturen. Alla nivåer ska vara tillgängliga i arbetsytan **kostnadskontroll**. Endast de första 15 nivåerna i dimensionshierarkin exporteras när du använder Microsoft Excel eller Microsoft Power BI för rapporteringsändamål. Denna begränsning beror på att både Excel och Power BI kräver ett fast schema.
+> - En dimensionshierarki kan ha obegränsat antal nivåer i strukturen. Alla nivåer ska vara tillgängliga i arbetsytan **kostnadskontroll**. Endast de första 15 nivåerna i dimensionshierarkin exporteras när du använder Microsoft Excel eller Power BI för rapporteringsändamål. Denna begränsning beror på att både Excel och Power BI kräver ett fast schema.
 > - En dimensionshierarki har inget giltighetsdatum. Därför sparas alla ändringar i en dimensionshierarki omedelbart till posten och kan du inte jämföra före- och efter-datum.
 
 ## <a name="dimension-hierarchy-type"></a>Typ av dimensionshierarki
@@ -200,7 +199,7 @@ Dimensionshierarkier finns i följande rapportverktyg. Den här metoden hjälper
 
     - Alla dimensionshierarkier är tillgängliga.
     
-Om du skapar rapporter med hjälp av Excel eller Power BI exporteras endast de första 15 nivåerana av dimensionshierarkier. Denna begränsning beror på att både Excel och Power BI kräver ett fast schema. Om en hierarki har högst 15 nivåer kan ytterligare nivåer inte exporteras. Den normaliserade tabellen innehåller en post för varje dimensionsmedlem i hierarkin. Därför sker automatisk aggregering. Detta beteende hjälper till att garantera att saldon på någon av de 15 tillgängliga nivåerna i hierarkin fortfarande stämmer.
+Om du skapar rapporter med hjälp av Excel eller Power BIexporteras endast de första 15 nivåerna av dimensionshierarkier. Denna begränsning beror på att både Excel och Power BI kräver ett fast schema. Om en hierarki har högst 15 nivåer kan ytterligare nivåer inte exporteras. Den normaliserade tabellen innehåller en post för varje dimensionsmedlem i hierarkin. Därför sker automatisk aggregering. Detta beteende hjälper till att garantera att saldon på någon av de 15 tillgängliga nivåerna i hierarkin fortfarande stämmer.
 
 I följande exempel visas hur en dimensionshierarki kan se ut i rapportstrukturen.
 
@@ -329,9 +328,8 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
 - Power BI:
 
     - Data som visas i Power BI-visualiseringar
-    - Data Power BI-visualiseringar som bäddas in i Microsoft Dynamics 365 for Finance and Operations, klient
+    - Data Power BI visuella effekter som är inbäddade i Microsoft Dynamics 365 for Finance and Operations-klienten
 
 > [!NOTE] 
-> - Innan Hierarki för åtkomstlista kan påverka data i Power BI, måste hierarkiåtkomst och säkerhet på radnivå i Power BI anges. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Innan Hierarki för åtkomstlista kan påverka data i Power BI måste hierarkiåtkomst och säkerhet på radnivå i Power BI paras ihop. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarki för åtkomstlista hjälper inte export av data till Excel. Därför ska detta rapportverktyg bara användas av kostnadsrevisorer och chefer som måste ha fullständig behörighet för att visa data.
-

@@ -1,13 +1,13 @@
 ---
-title: "Beräkningsmetod för moms i fältet Ursprung"
-description: "Den här artikeln beskriver alternativen i fältet Ursprung på momskodsidan och hur moms beräknas utifrån det markerade alternativet för en momskod."
+title: Beräkningsmetod för moms i fältet Ursprung
+description: Den här artikeln beskriver alternativen i fältet Ursprung på momskodsidan och hur moms beräknas utifrån det markerade alternativet för en momskod.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 1473eeb2950296f5ae6250d7a53794af3d9cba81
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330688"
 ---
-
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beräkningsmetod för moms i fältet Ursprung
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,6 @@ Dokumentet/journalen ställs in på Moms ingår i beloppen = Nej, Transaktionens
 [Bestämning av momssatser baserat på fälten Marginal base och Calculation method](marginal-base-field.md)
 
 [Alternativ för hela belopp och intervallberäkning för momskoder](whole-amount-interval-options-sales-tax-codes.md)
-
 
 
 

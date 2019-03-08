@@ -1,13 +1,13 @@
---- 
-title: "ER Uppgradera ditt format genom att implementera en ny basversion för det formatet"
-description: "I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER)."
+---
+title: ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
+description: I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342280"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
 
@@ -199,5 +199,4 @@ För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testa det anpassade formatet för att skapa betalningsfiler
     * Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Dynamics 365 for Finance and Operations, Enterprise Edition-session. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
-
 

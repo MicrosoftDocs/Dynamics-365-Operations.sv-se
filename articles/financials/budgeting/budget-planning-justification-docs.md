@@ -1,13 +1,13 @@
 ---
-title: "Motiveringsdokument för budgetplan"
-description: "Motiveringsdokument förklarar varför det är nödvändigt med en specifik budget."
+title: Motiveringsdokument för budgetplan
+description: Motiveringsdokument förklarar varför det är nödvändigt med en specifik budget.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanJustificationTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cae6334cd39a91eaf3a2a79f30edc705f484bc8c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333586"
 ---
-
 # <a name="budget-planning-justification-documents"></a>Motiveringsdokument för budgetplan
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Motiveringsdokument förklarar varför det är nödvändigt med en specifik budg
 
 En budgetplansmall skapas av den budgetansvarige i Microsoft Word och tilldelas till aktuell budgetplaneringsprocess. Budgetägaren kan sedan öppna mallen och låta datan fyllas i automatiskt i Word baserat på sin budgetbegäran. De kan sedan lägga till ytterligare text eller data innan de sparar, samt bifoga sitt personliga motiveringsdokument till sin budgetplan.
 
-##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Konfigurera Microsoft Dynamics Office-tillägg för Microsoft Word
+##### <a name="set-up-microsoft-dynamics-office-add-in-for-microsoft-word"></a>Ställa in Microsoft Dynamics Office-tillägget för Microsoft Word
 
 1.  Öppna ett nytt Microsoft Word-dokument.
 2.  Klicka på **Infoga** i menyfliksområdet och på **Butik**.
@@ -42,7 +41,7 @@ En budgetplansmall skapas av den budgetansvarige i Microsoft Word och tilldelas 
 4.  Klicka på **Lägg till serverinformation** i fönstret till höger.
 5.  Skriv eller klistra in serverns URL och klicka på **OK**.
 
-##### <a name="define-the-justification-template-in-microsoft-word"></a>Definiera motiveringsmallen i Microsoft Word
+##### <a name="define-the-justification-template-in-microsoft-word"></a>Definiera justeringsmallen i Microsoft Word
 
 1.  Klicka på **Design** i Microsoft Dynamics Office-tillägget när du loggar in.
 2.  Använd knappen **Lägg till fält** för rubrikinformation.
@@ -69,7 +68,6 @@ En budgetplansmall skapas av den budgetansvarige i Microsoft Word och tilldelas 
 1.  Skapa en ny budgetplan i Finance and Operations, eller öppna en befintlig budgetplan.
 2.  I listrutan **Motivering** väljer du **Skapa ny motivering**.
 3.  När du har fyllt i uppgifterna väljer att överföra anpassade dokumentet via listrutan **Motivering**.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Ställ in validering av fakturamatchning för leverantörsreskontra"
-description: "I den här registreringen används demonstrationsföretaget USMF."
+---
+title: Ställ in validering av fakturamatchning för leverantörsreskontra
+description: I den här registreringen används demonstrationsföretaget USMF.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 7a26a057b524f162e4b288b88e8c30f7c5db7a45
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346857"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Ställ in validering av fakturamatchning för leverantörsreskontra
 
@@ -50,5 +50,4 @@ I den här registreringen används demonstrationsföretaget USMF. Leverantörsre
 11. Växla utökningen av avsnittet Avgiftsmatchning.
 12. Markera kryssrutan Matcha avgifter om du vill matcha verkliga transaktioner mot förväntade kostnader.
 13. Stäng sidan.
-
 

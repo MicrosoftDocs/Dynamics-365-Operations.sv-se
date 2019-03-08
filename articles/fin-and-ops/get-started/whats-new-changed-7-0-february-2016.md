@@ -1,13 +1,13 @@
 ---
-title: "Nyheter och ändringar i Microsoft Dynamics AX 7.0 (februari 2016)"
-description: "Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX 7.0. Den här versionen innehåller både plattform och programfunktioner och gavs ut i februari 2016."
+title: Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
+description: Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX 7.0. Den här versionen innehåller både plattform och programfunktioner och gavs ut i februari 2016.
 author: sericks007
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334897"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Microsoft Dynamics AX 7.0 (februari 2016)
+# <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,7 +61,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 <td>Det är enklare att konfigurera systemet eftersom de nya etiketterna är relaterade till drifthändelserna som använder den här bokföringstypen.</td>
 </tr>
 <tr>
-<td>Importera eller exportera inköpspriset, kostnaden eller försäljningspriset från Microsoft Excel till eller från en kostnadsversion.</td>
+<td>Importera/exportera inköpspriset, kostnads- eller försäljningspriset från Microsoft Excel till eller från en kostnadsversion.</td>
 <td>Du kan inte importera priser eller kostnader korrekt till en kostnadsversion eftersom datamodellen kräver ett InventDim-ID.</td>
 <td>Introduktionen av datatabeller gör det möjligt att tillämpa en import- och exportfunktion. Med den här funktionen kan användare importera/exportera priser eller kostnader till en kostnadsversion.
 <ul>
@@ -119,8 +118,8 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 | Använd Microsoft Visual Studio för att utveckla dina lösningar. | Microsoft MorphX är huvudutvecklingsmiljön, men en del utveckling sker i Visual Studio. | Visual Studio är den enda utvecklingsmiljön. | Välbekanta Dynamics AX 2012-begrepp finns kvar och har anpassats sömlöst till Visual Studio-ramverket och -paradigmerna. Standardinteroperabilitet med andra .NET-språk och .NET-projekt stöds. |
 | Kompilera CIL (Common Intermediate Language) för alla funktioner. | X++ kompileras till p-kod. | Den splitternya X++kompileraren skapar CIL för alla funktioner. CIL är samma mellanliggande språk som används av andra .NET-baserade språk. | CIL är snabbare, kan effektivt referera till klasser i hanterade DLL-bibliotek (Dynamic Link Library) och kan köras med många .NET-verktyg. |
 | Bädda in BI-rapporter (Business Intelligence) och visualiseringar i Microsoft Dynamics AX-klienten. | Inte tillgänglig | Skapa mycket intuitiva och smidiga visualiseringar. | Du får beslutsgrundande insikter som baseras på BI. |
-| Integrera med Microsoft Office. | Inte tillgänglig | Nya möjligheter inkluderar appen Excel Data Connector, sidan **Arbetsboksdesigner**, Exportera API och Dokumenthantering. | Du kan skapa produktivitetslösningar för dina slutanvändare. |
-| Automatisera version, test och distribution. | Delvis tillgänglig | Distribuera utvecklartopologin med hjälp av VM för utvecklare och version. Konfigurera automatiskt versions-VM för att upptäcka, bygga moduler från VSO (Visual Studio) och för att köra tester. C\# och X++-modulkompilering och -referenser stöds. | Utvecklarens produktivitet ökar genom att kostnaden för och arbetet med testning och validering minskas. |
+| Integration med Microsoft Office. | Inte tillgänglig | Nya möjligheter inkluderar appen Excel Data Connector, sidan **Arbetsboksdesigner**, Exportera API och Dokumenthantering. | Du kan skapa produktivitetslösningar för dina slutanvändare. |
+| Automatisera version, test och distribution. | Delvis tillgänglig | Distribuera utvecklartopologin med hjälp av VM för utvecklare och version. Konfigurera automatiskt versions-VM för att upptäcka, bygga moduler från Visual Studio Online (VSO) och för att köra tester. C\# och X++-modulkompilering och -referenser stöds. | Utvecklarens produktivitet ökar genom att kostnaden för och arbetet med testning och validering minskas. |
 | Anpassa med överlägg och tillägg. | Tillägg är inte tillgängliga. | Den aktuella versionen av Dynamics AX har en ny anpassningsmodell. | Du kan anpassa källkoden och metadata för modellelement som skickats av Microsoft eller externa Microsoft-partners. |
 | Bygg nya kontroller och UI-element genom att använda X++ och ett modernt webbramverk. | Anpassade kontroller förlitar sig på externa ramverk som Microsoft ActiveX och Windows Presentation Foundation (WPF). | Det är enklare att bygga kontroller i den aktuella versionen. X++-ramverket kan användas för programbeteende och affärslogik, och en HTML-/JavaScript-baserad klient stöder moderna visualiseringar. | Dina kontroller kan utformas för att se ut och uppföra sig precis som våra OOB-kontroller för Dynamics AX. |
 | Utvärdera och finjustera prestanda genom att använda nya verktyg. | PerfSDK, Data Expansion Toolkit, appen Trace Parser WEb och PerfTimer är inte tillgängliga. | PerfSDK, Data Expansion Toolkit, appen Trace Parser Web och PerfTimer är nya. | Med SDK (Software Development Kit) kan du testa och validera prestanda i alla kritiska affärsprocesser genom att köra tester med en enskild användare eller, vid behov, med flera användare. Med Data Expansion Toolkit kan du korrekt expandera alla prestandatester vars huvuddata och transaktionella data måste utökas korrekt. Med Trace Parser kan du validera ett prestandatest med en enskild användare eller en körning med flera användare. Med PerfTimer kan du se om en fråga eller specifikt metodanrop medför prestandaproblem. Därför måste du inte använda spårning och analysera allt i detalj. |
@@ -213,15 +212,15 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 <td>Du kan nu visa ekonomiska rapporter utan att behöva öppna en annan klient eller ett annat program.</td>
 </tr>
 <tr>
-<td>Skriva ut ekonomiska rapporter (Management Reporter) från Microsoft Dynamics AX-klienten.</td>
+<td>Skriv ut ekonomiska rapporter (Management Reporter) från Microsoft Dynamics AX-klienten.</td>
 <td>Vid utskrift av en rapport skulle webbläsarens alternativ för utskrift användas och endast skriva ut vad användaren ser på skärmen.</td>
 <td>Användaren kan välja detaljnivå och sidinställningar för en rapport med hjälp av alternativet Skriv ut i den ekonomiska rapporten i Dynamics AX-klienten.</td>
 <td>Utskrivna rapporter skrivs ut på det sätt användarna förväntar sig, i stället för att skrivas ut som en webbsida.</td>
 </tr><tr>
 <td>Analysera ekonomiska data genom att använda innehållet "Övervaka ekonomiska resultat" för Power BI.</td>
 <td>Inte tillgänglig</td>
-<td>Gå till PowerBI.com och välj <strong>Hämta data</strong> och välj sedan innehållspaketet <strong>Dynamics AX – Ekonomiska resultat</strong>. Ange URL:en för din Dynamics AX-slutpunkt för att visa dina data på instrumentpanelen.</td>
-<td>Med tre eller fyra klick kan organisationer distribuera en Power BI-instrumentpanel som innehåller viktiga ekonomiska data. Innehållet kan anpassas av organisationen.</td>
+<td>På PowerBI.com, välj <strong>Hämta data</strong> och välj sedan innehållspaketet <strong>Dynamics AX – Ekonomiska resultat</strong>. Ange URL:en för din Dynamics AX-slutpunkt för att visa dina data på instrumentpanelen.</td>
+<td>Me bara tre eller fyra klick kan organisationer distribuera en Power BI-instrumentpanel som innehåller viktiga ekonomiska data. Innehållet kan anpassas av organisationen.</td>
 </tr>
 <tr>
 <td>Spåra processer för räkenskapsperiodens stängning.</td>
@@ -282,7 +281,7 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 </tr>
 <tr>
 <td>Bli produktiv genom att använda nya Uppgiftsregistrering.</td>
-<td>Uppgiftsregistrering i AX 2012 kräver direkt åtkomst till en AOS-dator (Application Object Server) och förhöjd behörighet och tillhandahåller inga redigeringsfunktioner.</td>
+<td>Uppgiftsregistrering i AX 2012 kräver direkt åtkomst till en AOS-dator (Application Object Server) och förhöjd behörighet och tillhandahåller inga redigeringsfunktioner.</td>
 <td>Nya Uppgiftsregistrering kan användas direkt från webbklienten. Åtkomst till Uppgiftsregistrering kräver inte administratörsbehörighet. Registrerade steg kan visas medan du registrerar, nya redigeringsalternativ har introducerats och Uppgiftsregistrering stöder fler scenarier förutom befintliga BPM-scenarier (Business Process Modeler).</td>
 <td>Nya Uppgiftsregistrering ger en smidig upplevelse och möjliggör nya funktioner i Dynamics AX. Några av dessa funktioner är nu tillgängliga och fler kommer i framtiden.</td>
 </tr>
@@ -322,13 +321,13 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 <tr>
 <td>Komma åt guidad procedurbaserad hjälp (uppgiftsguider) och begreppsbaserade avsnitt genom att klicka på <strong>Hjälp</strong>.</td>
 <td>AX 2012-hjälpsystemet pekar på HTML-avsnitt som lagras på en lokal webbserver. Kunder och partner kan skapa sin egen hjälp.</td>
-<td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från webbsidan för Microsoft-dokument. Mer information finns i <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">hjälpen för Dynamics AX - komma igång</a> och <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Ny uppgiftsguide tillgänglig (februari 2016)</a>.</td>
+<td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från webbsidan för Microsoft-dokument. For more information, see <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX Hjälp - Komma igång</a> och <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Ny uppgiftsguide tillgänglig (februari 2016)</a>.</td>
 <td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Det här avsnittet låter dig skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste tekniska informationen.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="human-capital-management"></a>HR
+## <a name="human-capital-management"></a>Administration av humankapital
 
 <table>
 <thead>
@@ -550,7 +549,7 @@ Inga nya funktioner har lagts till.
 | Varnar användaren om en försäljningsorder eller produktionsorder inte är klar för leverans på det tidsplanerade datumet. | Varningarna som skapas av huvudplaneringen kallas *leveransplansmeddelanden*. *Leveransplaner* är ett avtal mellan två parter om att köpa eller sälja en tillgång till ett överenskommet pris (*leveransplanspriset*) även om leverans och betalning görs i framtiden (*leveransdatumet*). | *Leveransplansmeddelanden* och *leveransplansdatum* har bytt namn till *beräknade förseningar* och *försenade datum*. | Terminologin som används i AX 2012 var inkorrekt och ledde till felaktiga översättningar. |
 | Få snabb inblick i statusen för en huvudplaneringskörning, brådskande planerade order och planerade order som orsakar förseningar. | Informationen är tillgänglig, men är utspridd över flera formulär. | Arbetsytan **Huvudplanering** ger snabb information om när den senaste huvudplaneringskörningen slutfördes, huruvida eventuella fel uppstod, vilka brådskande planerade order som finns och vilka planerade order som orsakar förseningar. | Du har nytta av översikten som arbetsytan innehåller. Relevant information sammanställs för att styra huvudplaneringen och förbättra produktiviteten. |
 | Använd Excel för att uppdatera efterfrågeprognoser. | Inte tillgänglig | Du kan dra fördel av sömlös integration med Excel när du anger efterfrågeprognoser, gör uppdateringar och tar bort efterfrågeprognoser. | Det hjälper dig att öka effektivitet och produktivitet. |
-| Uppskatta framtida efterfrågan och skapa efterfrågeprognoser baserat på historiska transaktionsdata. | I Microsoft Dynamics AX 2012 R3 används prognosmodellerna i Microsoft SQL Server Analysis Services för att skapa prognoser om efterfrågeprognoser. | Uppskatta framtida efterfrågan genom att använda kraften och skalbarheten i molntjänsten Microsoft SQL Server Analysis Services. Det är enkelt att använda och utöka prognosmodellerna i Machine Learning för att uppfylla kundkrav. Tjänsten väljer den modell som matchar bäst och tillhandahåller KPI:er som kan användas för att beräkna prognosprecision. | Skapa mer exakta prognoser genom att använda Machine Learning-teknikerna. |
+| Uppskatta framtida efterfrågan och skapa efterfrågeprognoser baserat på historiska transaktionsdata. | I Microsoft DynamicsAX 2012 R3 används prognosmodeller i Microsoft SQL Server Analysis Service för att skapa prognostiserade förutsägelser om efterfrågeprognoser. | Uppskatta framtida efterfrågan genom att använda kraften och skalbarheten i molntjänsten Microsoft Azure Machine Learning. Det är enkelt att använda och utöka prognosmodellerna i Machine Learning för att uppfylla kundkrav. Tjänsten väljer den modell som matchar bäst och tillhandahåller KPI:er som kan användas för att beräkna prognosprecision. | Skapa mer exakta prognoser genom att använda Machine Learning-teknikerna. |
 | Optimera orderdatumet och kvantiteten baserat på en visuell översikt över relaterade åtgärder från huvudplaneringskörningen. | Översikten över åtgärdsdiagrammet är tillgänglig men visar alla relaterade åtgärder. När åtgärder tillämpas försvinner de genast från vyn. | Åtgärdsdiagrammet ger en bättre översikt. Här finns alternativ som låter dig visa bara tillämpade åtgärder och direkt relaterade åtgärder. När åtgärder används visas de som nedtonade, men visas fortfarande. Därför finns översikten kvar. Mer information har lagts till för åtgärderna i diagrammet som visar data på en enda sida. | Du kan dra fördel av produktivitetsförbättring eftersom du bara fokuserar på de relevanta åtgärderna. |
 
 ## <a name="procurement-and-sourcing"></a>Anskaffning och källa
@@ -559,7 +558,7 @@ Inga nya funktioner har lagts till.
 |------------------|------------------|-----------------|------------------------|
 | Använd arbetsytan **Inköpsorderförberedelse** när du vill få en snabb inblick i statusen för inköpsorder som förbereds. | Stöds ej | Arbetsytan **Inköpsorderförberedelse** ger en översikt över order från den tidpunkt då de skapas som utkast och spåras genom godkännandetillstånd för arbetsflöde och fram till bekräftelse. | Din inköpsavdelning behöver inte längre leta efter information från flera sidor utan kan använda översikten som arbetsytan tillhandahåller. |
 | Använd arbetsytan **Inleverans av inköpsorder och uppföljning** när du vill få snabb inblick i inköpsorder som väntar på inleverans, för enklare uppföljning. | Stöds ej | Arbetsytan **Inleverans av inköpsorder och uppföljning** ger en översikt över bekräftade inköpsorder som har väntande inleveranser eller försändelser. Arbetsytan inkluderar listor med förfallna inleveranser och väntande inleveranser och möjliggör en proaktiv granskning och uppföljning av leverantören. Arbetsytan visar också inköpsorder för vilka införselregistrering har skett på lagerstället, för att garantera att inleveransen bokförs. Inköpsorderreturer som ännu inte har skickats är också tillgängliga för granskning. | Inköpsavdelningen kan dra fördel av översikten som arbetsytan tillhandahåller. Relevant information sammanställs för att vägleda uppföljningen och förbättra produktiviteten. |
-| Skicka inköpsorder för bekräftelse till en leverantörsportal som Dynamics AX-klienten är värd för. Låt leverantören bekräftar eller avvisa. | Stöds ej | Leverantörsportalens gränssnitt låter leverantörer ta emot inköpsorder som ska bekräftas eller avvisas. Den låter också leverantören ha en översikt över alla bekräftade inköpsorder för ett konto. Inköpsagenten kan skicka en inköpsorder som behöver bekräftas av leverantören. Leverantören måste vara en registrerad Microsoft Azure Active Directory (Azure AD)-användare i Dynamics AX, en kontaktperson för leverantören och ha en dedikerad säkerhetsroll. | Inköpsavdelningen får mindre pappersarbete och behöver inte manuellt hålla reda på svar relaterade till inköpsorder eftersom allt flödar direkt in i systemet. Med en enda källa minskar risken för missförstånd mellan kund och leverantör. |
+| Skicka inköpsorder för bekräftelse till en leverantörsportal som Dynamics AX-klienten är värd för. Låt leverantören bekräftar eller avvisa. | Stöds ej | Leverantörsportalens gränssnitt låter leverantörer ta emot inköpsorder som ska bekräftas eller avvisas. Den låter också leverantören ha en översikt över alla bekräftade inköpsorder för ett konto. Inköpsagenten kan skicka en inköpsorder som behöver bekräftas av leverantören. Leverantören måste vara en registrerad Microsoft Azure Active Directory (Azure AD)-användare i AX, en kontaktperson för leverantören och ha en dedikerad säkerhetsroll. | Inköpsavdelningen får mindre pappersarbete och behöver inte manuellt hålla reda på svar relaterade till inköpsorder eftersom allt flödar direkt in i systemet. Med en enda källa minskar risken för missförstånd mellan kund och leverantör. |
 
 ## <a name="projects"></a>Projekt
 
@@ -624,7 +623,7 @@ Arbetsytan <strong>Kataloghantering</strong> aktiverar följande funktioner:
 <ul>
 <li>Skapa och konfigurera nya kanaler och relaterade enheter.</li>
 <li>Hantera dagliga butiksaktiviteter.</li>
-<li>Bearbeta butikstransaktioner i Microsoft Dynamics AX, skapa butiksutdrag och uppdatera Microsoft Dynamics AX-lagret och -ekonomin.</li>
+<li>Bearbeta butikstransaktioner i Microsoft Dynamics AX, generera butiksutdrag och uppdatera Microsoft Dynamics AX lager och ekonomi.</li>
 </ul>
 </td>
 <td>Arbetsytan <strong>Kanalgruppering</strong> låter dig utföra följande uppgifter:
@@ -655,7 +654,7 @@ Arbetsytan <strong>Kataloghantering</strong> aktiverar följande funktioner:
 <tr>
 <td>Hantera IT-relaterade butiksaktiviteter.</td>
 <td>Användaren måste få åtkomst till flera formulär.</td>
-<td>Arbetsytan <strong>Butikens IT</strong> möjliggör förfrågningar om Commerce Data Exchange på samma plats för en viss kanal, så att du kan utföra följande uppgifter:
+<td>Arbetsytan <strong>Retail IT</strong> möjliggör förfrågningar om Commerce Data Exchange på samma plats för en viss kanal, så att du kan utföra följande uppgifter:
 <ul>
 <li>Hämta sessioner.</li>
 <li>Ladda upp sessioner.</li>
@@ -679,8 +678,8 @@ Arbetsytan <strong>Kataloghantering</strong> aktiverar följande funktioner:
 <tr>
 <td>Analysera försäljningsdata från butikskanaler med hjälp av innehållet ”Övervaka Retail Channel performance” för Power BI.</td>
 <td>Inte tillgänglig</td>
-<td>På PowerBI.com väljer du <strong>Hämta data</strong> och väljer sedan innehållspaketet <strong>Dynamics AX – prestanda i butikskanalen</strong>. Ange URL:en för din Dynamics AX-slutpunkt för att visa dina data på instrumentpanelen.</td>
-<td>Med tre eller fyra klick kan organisationer distribuera en Power BI-instrumentpanel som innehåller viktiga ekonomiska data. Innehållet kan anpassas av organisationen. Dessutom kan användarna bädda in Power BI-instrumentpanelsrutor på sina anpassade arbetsytor i Dynamics AX, så att de snabbt kan visa analytisk information.</td>
+<td>På PowerBI.com, välj <strong>Hämta data</strong> och väljer sedan innehållspaketet <strong>Dynamics AX – Retail Channel performance</strong>. Ange URL:en för din Dynamics AX-slutpunkt för att visa dina data på instrumentpanelen.</td>
+<td>Me bara tre eller fyra klick kan organisationer distribuera en Power BI-instrumentpanel som innehåller viktiga ekonomiska data. Innehållet kan anpassas av organisationen. Dessutom kan användarna bädda in Power BI-instrumentpanelsrutor på sina anpassade arbetsytor i Dynamics AX, så att de snabbt kan visa analytisk information.</td>
 </tr>
 <tr>
 <td>Konfigurera konsumentbehörighet.</td>
@@ -734,13 +733,13 @@ Retail Server och datahantering låter konsumenter och företag skapa en shoppin
 <td>Det ger tillgång till värdbaserade och skalbara e-handelstjänster som kan användas med onlinebutiker från tredje part.</td>
 </tr>
 <tr>
-<td>Flytta data mellan Microsoft Dynamics AX-back office och kanaler genom att använda Commerce Data Exchange.</td>
+<td>Flytta data mellan Microsoft Dynamics AX backoffice och kanaler med Commerce Data Exchange.</td>
 <td>Commerce Data Exchange är ett system som överför data mellan Microsoft Dynamics AX och detaljhandelskanaler, till exempel onlinebutiker eller fysiska butiker. Mer information finns i <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
-<td>Samma funktioner som i Microsoft Dynamics AX 2012 CU8 tillhandahålls. Observera dock följande information:
+<td>Det är samma funktioner med Microsoft Dynamics AX 2012 CU8. Observera dock följande information:
 <ul>
 <li>Commerce Data Exchange har anpassats för molnet.</li>
 <li>Async-tjänsten använder direkt databasåtkomst till kanaldatabasen.</li>
-<li>Commerce Data Exchange: Realtidstjänsten fungerar som en Microsoft Dynamics AX-anpassad tjänst.</li>
+<li>Commerce Data Exchange: Real-time Service finns som en Microsoft Dynamics AX anpassad tjänst.</li>
 <li>MPOS hanterar synkroniseringen mellan offlinedatabaser och Retail Server.</li>
 </ul></td>
 <td>Commerce Data Exchange har anpassats för molnplattformen. Det fortsätter att hantera överföringen av data mellan Microsoft Dynamics AX och detaljhandelskanaler, till exempel onlinebutiker eller fysiska butiker.</td>
@@ -762,7 +761,7 @@ Retail Server och datahantering låter konsumenter och företag skapa en shoppin
 <td>Inte tillgänglig</td>
 <td>Följande funktioner tillhandahålls:
 <ul>
-<li>Förbättrad säkerhet efter Azure AD-baserad aktivering för molnet.</li>
+<li>Förbättrad säkerhet efter Azure AD-baserad aktivering för molnet</li>
 <li>Förbättrad säkerhet för tokenhantering.</li>
 <li>Förbättrad tillförlitlighet, felsökning och felmeddelanden under aktiveringen</li>
 <li>Förenklade IT-administrationsuppgifter som är relaterade till aktivering.</li>
@@ -770,7 +769,7 @@ Retail Server och datahantering låter konsumenter och företag skapa en shoppin
 </ul></td>
 <td>Den ger följande fördelar:
 <ul>
-<li>Säkerheten har förbättrats via Azure AD och enhetstoken/ID (RS-anrop som använder en token, användarspecifik programlagring).</li>
+<li>Säkerheten har förbättrats via Azure AD och enhetstoken/ID (RS-anrop som använder en token, användarspecifik programlagring).</li>
 <li>Den stoppar obehörig fjärranvändning av MPOS (fysisk enhet).</li>
 <li>Den spårar MPOS-enheter för PCI-efterlevnadssyften.</li>
 <li>Den mappar fysiska enheter med en affärsenhet (register) genom att använda en token.</li>
@@ -959,14 +958,14 @@ Lifecycle Services (LCS) tillhandahåller ett antal tjänster som kunder och par
 </ul>
 Det finns en förbättrad ”low-touch”-klientkomponentinstallation via självbetjäningsinstallation:
 <ul>
-<li>Retail Modern POS.</li>
+<li>Retail Modern POS</li>
 <li>Retail Hardware Station.</li>
 <li>Stöd för överföring och distribution av anpassade paket via självbetjäningsinstallation.</li>
 </ul></td>
 <td>Molndistributionstjänsterna tillhandahåller följande fördelar:
 <ul>
 <li>Mycket mindre distributionsarbete och komplexitet för komponenter för Administration för detaljhandel.</li>
-<li>Ursprunglig distribution till det offentliga Microsoft Azure-molnet.</li>
+<li>Ursprunglig distribution till det offentliga Microsoft Azure-molnet</li>
 <li>Förbättrad självbetjäningsinstallation av butikskomponenter som gör konfigurationen enklare och mer intuitiv</li>
 </ul></td>
 </tr>
@@ -1034,4 +1033,3 @@ Inga nya funktioner har lagts till.
 [Nyheter eller ändringar](whats-new-changed.md)
 
 [Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
-

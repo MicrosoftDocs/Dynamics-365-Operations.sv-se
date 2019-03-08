@@ -1,13 +1,13 @@
 ---
-title: "Leverantörssamarbete med externa leverantörer"
-description: "I det här avsnittet förklaras hur inköpare kan samarbeta med externa leverantörer för att byta ut information om inköpsorder och försändelselager."
+title: Leverantörssamarbete med externa leverantörer
+description: I det här avsnittet förklaras hur inköpare kan samarbeta med externa leverantörer för att byta ut information om inköpsorder och försändelselager.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350031"
 ---
-
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
 [!include [banner](../includes/banner.md)]
 
-Modulen **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 for Finance and Operations. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I det här avsnittet förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
+Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 for Finance and Operations. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I det här avsnittet förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
 
 För mer information om vad externa leverantörer kan göra i gränssnittet för leverantörssamarbeten, se [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
@@ -106,7 +105,7 @@ Inköpsordern som skickades till leverantören och har statusen <strong>I extern
 </tr>
 <tr class="even">
 <td>Leverantören <strong>avvisar</strong> ordern.</td>
-<td>Säljarens svar registreras som <strong>Avvisad</strong> och statusen för IO:n förblir <strong>I extern granskning</strong>. Avvisningen tas emot tillsammans med leverantöranmärkningen.</td>
+<td>Säljarens svar registreras som <strong>Avvisad</strong> och statusen för IO:n förblir <strong>I extern granskning</strong>. Kasseringen tas emot tillsammans med leverantöranmärkningen.</td>
 </tr>
 <tr class="odd">
 <td>Leverantören <strong>godkänner</strong> ordern <strong>med ändringar</strong>. Ändringar föreslås på radnivån. Leverantören kan godkänna eller avvisa enskilda rader. Nedan följer några ändringar som leverantören kan föreslå:
@@ -260,4 +259,3 @@ Den användare som ställer in parametrarna för anbudsförfråganprocessen kan 
 - %createddate%
 
 Om en ändring krävs och skickas efter att en anbudsförfrågan har skickats, skickas anbudsförfrågan på nytt till alla inbjudna leverantörer. Det publicerade dokumentet uppdateras också på sidan **Öppna publicerad anbudsförfrågningar**.
-

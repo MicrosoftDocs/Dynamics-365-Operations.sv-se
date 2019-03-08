@@ -1,13 +1,13 @@
 ---
-title: "Integrera leverantörer"
-description: "Det här avsnittet beskriver processen för att integrera nya leverantörer. Det förklarar de åtgärder som krävs av olika roller under denna process."
+title: Integrera leverantörer
+description: Det här avsnittet beskriver processen för att integrera nya leverantörer. Det förklarar de åtgärder som krävs av olika roller under denna process.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322155"
 ---
-
 # <a name="onboard-vendors"></a>Integrera leverantörer
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +48,7 @@ Följande tabell anger de steg och roller som ingår i processen.
 | Administratör            | | | Skapa ett användarkonto i Finance and Operations och Microsoft Azure. | | | |
 | Leverantörens kontaktperson    | | | Skicka e-post till kontaktpersonen. | Registrera leverantörsinformation. | | |
 
-Titta på den här korta YouTube-videon för en snabb demonstration av leverantörens integreringsprocess: [Integrera en ny leverantör i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Titta på det här korta videoklippet på YouTube för en snabb demonstration av leverantörens integreringsprocess YouTube-video: [Integrera en ny leverantör i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importera begäran om registrering för potentiell leverantör
 
@@ -67,7 +66,7 @@ Följande tabell visar den information som denna enhet innehåller och som kan i
 | Kontaktpersonens mellannamn | Mellannamnet på den person som kommer att uppmanas att registrera information om leverantören. |
 | Kontaktpersonens efternamn   | Efternamnet på den person som kommer att uppmanas att registrera information om leverantören. |
 | Kontaktpersonens e-postadress       | Den e-postadress som används för att skapa en ny användare i Finance and Operations och som kommer att registreras i innehavarens Azure Active Directory (Azure AD)-konto. |
-| Inskickad den               | Det datum då begäran skapades i ett externt system. |
+| Skickad den               | Det datum då begäran skapades i ett externt system. |
 | Juridisk person                 | Den juridiska person där leverantören begär att bli en leverantör. Detta värde måste vara en kod för juridisk person som har registrerats i Finance and Operations. Om inget värde erhålls genom importen används ett värde från parametrarna Anskaffning och inköp. |
 | Leverantörstyp                  | Leverantören kan vara antingen en organisation eller en person. Leverantörstypen bestämmer hur leverantören slutligen skapas. |
 
@@ -174,5 +173,4 @@ Genom att tillämpa åtgärden **Ta bort** på registreringsbegäran för en pot
 |  Leverantörsförfrågan har skapats  |                                                                     Registreringsguiden för leverantör har slutförts.                                                                      | En begäran om att inaktivera användaren skapas, och registreringsbegäran för potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsbegäran tas bort.<blockquote>[!NOTE]<br>Du kan inte använda åtgärden <strong>Ta bort</strong> när leverantörsförfrågan befinner sig i en granskningsprocess i arbetsflödet.</blockquote> |
 |         Godkänt         |                                                                               Leverantörsförfrågan godkänns.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
 |         Avvisat         |                                                                               Leverantörsförfrågan avvisas.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
-
 

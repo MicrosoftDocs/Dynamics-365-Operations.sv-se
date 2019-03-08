@@ -1,13 +1,13 @@
 ---
-title: "Rapportdefinitioner i designer för ekonomiska rapporter"
-description: "En raddefinition är en rapportkomponent eller byggblock som anger innehållet på varje rad i en ekonomisk rapport. En raddefinition kan kombineras med kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner för att skapa en byggblocksgrupp som kan användas av flera företag."
+title: Rapportdefinitioner i designer för ekonomiska rapporter
+description: En raddefinition är en rapportkomponent eller byggblock som anger innehållet på varje rad i en ekonomisk rapport. En raddefinition kan kombineras med kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner för att skapa en byggblocksgrupp som kan användas av flera företag.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: c829af1da1b3109f4687c9a2536dd156339d5c76
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "350445"
 ---
-
 # <a name="row-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -158,9 +157,9 @@ Du kan skapa och ändra teckensnitt för din rapport. Du kan sedan tillämpa des
 
 ### <a name="format-row-text"></a>Formatradtext
 
-Den formatering som anges i raddefinitionen åsidosätter all formatering som anges i kolumndefinitionen och i rapportdefinitionen. Du kan ändra textformatet genom att använda kontrollerna i verktygsfältet Formatering. Dessa kontroller är standardinställda Microsoft Windows-kontroller.
+Den formatering som anges i raddefinitionen åsidosätter all formatering som anges i kolumndefinitionen och i rapportdefinitionen. Du kan ändra textformatet genom att använda kontrollerna i verktygsfältet Formatering. Kontrollerna är Microsoft Windows-standardkontroller.
 
-1. Öppna raddefinitionen i Report Designer för att ändra den.
+1. Öppna den raddefinition som ska ändras i Report Designer.
 2. Välj cellerna om du vill formatera. Håll ned CTRL-tangenten medan du väljer koderna om du vill välja mer än en cell.
 3. Klicka på verktygsfältsknappen av formatet som ska användas. Om du exempelvis vill göra ett indrag på en rad ska du välja raden och klicka sedan på **Öka indrag** ![Öka indrag](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Öka indrag") i verktygsfältet.
 
@@ -189,4 +188,3 @@ För att göra det enklare att se kolumnerna som du arbetar med i raddefinitione
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-

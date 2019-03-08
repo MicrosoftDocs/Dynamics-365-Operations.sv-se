@@ -1,13 +1,13 @@
 ---
-title: "Arbetsflöde för inköpsrekvisitioner"
-description: "Arbetsflödesprocessen flyttar inköpsrekvisitionerna genom granskningsprocessen, från en ursprunglig status för Utkast till statusen Godkänd. När en inköpsrekvisition skickas in för granskning, startas arbetsflödesprocessen. När en inköpsrekvisition har godkänts, kan en inköpsorder skapas för inköpsrekvisitionsraderna och skickas till leverantören för uppfyllelse av ordern."
+title: Arbetsflöde för inköpsrekvisitioner
+description: Arbetsflödesprocessen flyttar inköpsrekvisitionerna genom granskningsprocessen, från en ursprunglig status för Utkast till statusen Godkänd. När en inköpsrekvisition skickas in för granskning, startas arbetsflödesprocessen. När en inköpsrekvisition har godkänts, kan en inköpsorder skapas för inköpsrekvisitionsraderna och skickas till leverantören för uppfyllelse av ordern.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0adc43f3ed238a7a49cde44dd5f2d3bd55201cb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a5dcc294b3dde7dc7e0f789d9e7678b75bc699b0
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355781"
 ---
-
 # <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde
 [Anskaffnings- och källarbetsflöden](procurement-sourcing-workflows.md)
 
 [Översikt över inköpsrekvisition](purchase-requisitions-overview.md)
-
 
 
 

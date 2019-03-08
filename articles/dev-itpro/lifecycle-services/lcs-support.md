@@ -1,13 +1,13 @@
 ---
-title: "Få hjälp med Finance and Operations eller Lifecycle Services (LCS)"
-description: "I den här artikeln beskrivs hur du kan få hjälp med Microsoft Dynamics 365 for Finance and Operations eller Microsoft Dynamics Lifecycle Services (LCS)."
+title: Få hjälp med Finance and Operations eller Lifecycle Services (LCS)
+description: Den här artikeln beskrivs hur du får hjälp med Microsoft Dynamics 365 for Finance and Operations eller Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Developer, Application user
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334782"
 ---
-
 # <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Få hjälp med Finance and Operations eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Om du vill ha stöd för Fnance and Operations eller LCS använder du resurserna
 <tbody>
 <tr class="odd">
 <td>Fråga communityn.</td>
-<td>Gå till sidan <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations communityn</span></a> om du vill få hjälp med frågor från Dynamics communityn.</td>
+<td>Gå till <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations communitysidan</span></a> om du vill få hjälp med frågor från Dynamics community.</td>
 </tr>
 <tr class="even">
 <td>Använd verktyget Problemsökning.</td>
@@ -75,7 +74,7 @@ Obs! Microsoft Premier-kunder och partners kan även skicka premier-supportären
 <li>Fel som uppstår när du använder LCS eller problem som uppstår när du försöker komma åt LCS.</li>
 <li>Fel som uppstår när du använder Finance and Operations.</li>
 </ul>
-Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSource, onlinekurser, sök, kunskapsbasen, filhämtning och sid- eller systemfel finns på <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">webbplatssupport</span></a>.</td>
+Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSource, e-learning, sök, kunskapsbasen, filhämtning och sid- eller systemfel finns på <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">webbplatssupport</span></a>.</td>
 </tr>
 <tr class="odd">
 <td>Få hjälp med frågor om Finance and Operations-licenser.</td>
@@ -92,6 +91,5 @@ Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSo
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Få support för Dynamics 365 for Retail](../../retail/retail-support.md)
 - [Få support för Dynamics 365 for Talent](../../talent/talent-support.md)
-- För mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
-
+- Mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 

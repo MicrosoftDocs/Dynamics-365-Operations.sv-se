@@ -1,13 +1,13 @@
---- 
-title: "Konfigurera påfyllnadsbearbetning"
-description: "I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete som genereras för ett lagerställe när en påfyllnad bearbetas och om påfyllnad bearbetas manuellt eller automatiskt."
+---
+title: Konfigurera påfyllnadsbearbetning
+description: I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete som genereras för ett lagerställe när en påfyllnad bearbetas och om påfyllnad bearbetas manuellt eller automatiskt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 399146d35388a0151abb23e57bc36ec0173be928
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f7a6db585468c235e07c4a0117a83995ec93f4b0
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337519"
 ---
 # <a name="configure-wave-processing"></a>Konfigurera påfyllnadsbearbetning
 
@@ -68,5 +68,4 @@ I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete
 24. Markera ett alternativ i fältet Släpp till lagerställe.
     * För försäljnings - och kanbanorder måste lager reserveras om ordern har frisläppts till lagerstället. Annars kan artiklarna eller allokeringsraderna inte bearbetas i en våg. För tillverkningsorder har du även alternativet att välja Tillåt viss reservation. Detta är till exempel praktiskt om du har material som behövs för att starta en produktion, och kan vänta tills ytterligare material är tillgängligt för att avsluta processen. Om du markerar det här alternativet måste du upprepa frisläppningen till lagerprocess när ytterligare material blir tillgängliga.  
 25. Stäng sidan.
-
 

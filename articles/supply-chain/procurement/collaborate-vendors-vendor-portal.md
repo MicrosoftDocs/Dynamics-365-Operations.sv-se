@@ -1,13 +1,13 @@
 ---
-title: "Samarbeta med leverantörer med hjälp av leverantörsportalen"
-description: "Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016."
+title: Samarbeta med leverantörer med hjälp av leverantörsportalen
+description: Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 och maj 2016.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339888"
 ---
-
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer med hjälp av leverantörsportalen
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer genom leverantörsportalen
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016.
+Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 och maj 2016.
 
 Informationen i det här avsnittet gäller bara Dynamics AX-versionerna från februari 2016 och maj 2016. Funktionen för leverantörsportal har ersatts med utökade funktioner för leverantörsamarbeten i Dynamics 365 for Operations, version 1611. För mer information om det nya leverantörssamarbetet, se [Använda leverantörssamarbeten för att arbeta med externa leverantörer](vendor-collaboration-work-external-vendors.md).  
 
@@ -39,7 +38,7 @@ Leverantörsportalen vänder sig till leverantörer som inte har elektroniskt da
 Processen kan konfigureras så att en bekräftelse från leverantören automatiskt bekräftar ordern. I det här fallet behövs uppföljning bara ibland, när en order avslås eller om säljarens bekräftelse är registrerad som ett svar men statusen för IO:n är inte uppdaterad till **Bekräftad** på grund av ett problem med bekräftelseprocessen.
 
 ## <a name="po-confirmation-and-rejection"></a>IO-bekräftelse och -avvisande
-IO:r förbereds i Dynamics AX. När du har en IO som har statusen **Godkänd** skickar du den till leverantören genom att generera bekräftelseförfrågan. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post. Inköpsordern visas på leverantörsportalen med möjlighet för säljaren att bekräfta eller avvisa den. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n.  
+Inköpsorder förbereds i Dynamics AX. När du har en IO som har statusen **Godkänd** skickar du den till leverantören genom att generera bekräftelseförfrågan. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post. Inköpsordern visas på leverantörsportalen med möjlighet för säljaren att bekräfta eller avvisa den. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n.  
 
 På leverantörsportalen kan leverantören se orderrader. Dessa rader innehåller information som det externa produktnumret, dimensioner, prisinformation, kvantitet, leveransdatum och leveransadress. Leverantören kan generera en rapport som visar inköpsorderinformationen och också det totala priset. Avgifter som är relevanta för leverantören visas om leverantören klickar på **Avgifter** på knappen i sidhuvudet eller på raderna. Leverantörer kan importera PO information i sina egna system med **Export till Excel** funktionsduglighet.  
 
@@ -63,7 +62,7 @@ Tabellen nedan visar ett exempel på förändringar i status och version som en 
 
 | Åtgärd                                                   | Status och version                                                                                    |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Den första versionen av IO:n skapas i Dynamics AX. | Statusen är **Godkänd**.                                                                           |
+| Den första versionen av inköpsordern skapas i Dynamics AX. | Statusen är **Godkänd**.                                                                           |
 | IO:n skickas till leverantörsportalen.                     | En version registreras på leverantörsportalen och statusen ändras till **I extern granskning**.    |
 | Du gör några förändringar som begärs av leverantören.  | Statusen ändras tillbaka till **Godkänd**.                                                            |
 | Du skickar den nya versionen av IO:n till leverantörsportalen. | En version registreras på leverantörsportalen och statusen ändras till **I extern granskning**. |
@@ -88,7 +87,7 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 
 |                                                    Åtgärd                                                     |                                                                                                                                                                                                                      Status och version                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           Den första versionen av IO:n skapas i Dynamics AX.                            |                                                                                                                                                                                                            Statusen är <strong>Utkast</strong>.                                                                                                                                                                                                             |
+|                           Den första versionen av inköpsordern skapas i Dynamics AX.                            |                                                                                                                                                                                                            Statusen är <strong>Utkast</strong>.                                                                                                                                                                                                             |
 | IO:n är skickad till godkännandeprocessen. (Detta är en intern process som leverantören inte ingår i.) |                                                                                                                        Statusvärdet ändras från <strong>Utkast</strong> till <strong>Under granskning</strong> till <strong>Godkännande</strong> om IO:n inte avvisas under godkännandeprocessen. Den godkända inköpsordern registreras som en version.                                                                                                                        |
 |                                      PO skickas till leverantören portal                                      |                                                                                                                                                                      Versionen registreras på leverantörsportalen och statusen ändras till <strong>I extern granskning</strong>.                                                                                                                                                                       |
 |                            Du gör några förändringar som begärs av leverantören.                            |                                                                                                                                                                                                    Statusen ändras tillbaka till <strong>Utkast</strong>.                                                                                                                                                                                                     |
@@ -102,7 +101,6 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 [Konfigurering av säkerhet för leverantörssamarbetesanvändare](configure-security-vendor-portal-users.md)
 
 [Faktureringsarbetsyta för leverantörssamarbeten](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
-
 
 
 

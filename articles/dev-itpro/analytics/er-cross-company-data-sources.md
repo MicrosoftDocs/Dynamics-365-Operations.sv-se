@@ -1,13 +1,13 @@
 ---
-title: "Företagsövergripande datakällor i elektronisk rapportering (ER)"
-description: "Det här avsnittet beskriver hur du kan använda datakällor mellan företag i elektronisk rapportering (ER)."
+title: Företagsövergripande datakällor i elektronisk rapportering (ER)
+description: Det här avsnittet beskriver hur du kan använda datakällor mellan företag i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 3ff94c49eed378d92e995782e73d76d669b44292
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "351986"
 ---
-
 # <a name="cross-company-data-sources-in-electronic-reporting-er"></a>Företagsövergripande datakällor i elektronisk rapportering (ER)
 
 [!include[banner](../includes/banner.md)]
@@ -77,4 +76,3 @@ Hämta följande filer för att slutföra uppgiftsguiden:
 
 - [Konfiguration av ER-datamodell - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER-formatkonfiguration - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
-

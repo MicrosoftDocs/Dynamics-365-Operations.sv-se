@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll med förmåner"
-description: "Det här avsnittet beskriver Power BI-innehåll för förmåner. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet."
+title: Förmåner Power BI-innehåll
+description: Det här avsnittet beskriver förmåner Power BI-innehållet. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,38 +16,37 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355252"
 ---
-
-# <a name="benefits-power-bi-content"></a>Power BI-innehåll med förmåner
+# <a name="benefits-power-bi-content"></a>Förmåner Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver Microsoft Power BI-innehåll för **Förmåner**. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver **Förmåner** Microsoft Power BI-innehållet. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehåll för **Förmåner** visas i arbetsytan **Förmånshantering** om du använder någon av följande produkter:
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+Power BI-innehåll för **Förmåner** Power BI visas i arbetsytan **Förmånshantering** om du använder någon av följande produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
-Rapporter som ingår i  Power BI-innehållspaketet **Förmåner** har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
+Rapporter som ingår i **Förmåner** Power BI-innehållet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                      | Innehåll                                                                                       |
 |-----------------------------|------------------------------------------------------------------------------------------------|
 | Översikt över förmånsanmälan | De mesta och minst anmälda planerna, anmäland per medarbetargrupp och valda förmånsplanalternativ |
 | Anställningsförmåner           | Anmälan till medarbetare efter valt förmån                                                        |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Följande data används för att fylla i rapporterna i Power-Bi-innehållet för **Förmåner**. Denna tabell visar enheterna som innehållet baserades på.
+Följande data används för att fylla i rapporterna i **Förmåner** Power BI-innehållet. Denna tabell visar enheterna som innehållet baserades på.
 
 | Enhet                   | Innehåll                                                                                                   | Relationer med andra entiteter |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
@@ -71,4 +70,3 @@ Följande data används för att fylla i rapporterna i Power-Bi-innehållet för
 | Namn på medarbetare            | Förnamn, efternamn och fullständiga namn                                                                       | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetartitel           | Titel och tjänsteålder                                                                                   | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                                        | Företag, kompensation, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb, förmåner |
-

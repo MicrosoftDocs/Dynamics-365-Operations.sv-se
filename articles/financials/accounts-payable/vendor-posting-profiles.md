@@ -1,13 +1,13 @@
 ---
-title: "Bokföringsprofiler för leverantörer"
-description: "Leverantörsbokföringsprofiler styr bokföringen av leverantörstransaktioner i redovisningen."
+title: Bokföringsprofiler för leverantörer
+description: Leverantörsbokföringsprofiler styr bokföringen av leverantörstransaktioner i redovisningen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPosting
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ae019ebec2788fc499b0f2ef27a7eb2832ceaa9d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3571726fd3603371b8e1daec7d6ebe85d72d280d
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346535"
 ---
-
 # <a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,6 @@ Ange följande värden om du vill ställa in din bokföringsprofil:
 | **Kvittning** | Välj det här alternativet för att aktivera automatisk kvittning av transaktioner som har denna bokföringsprofil. Om det här alternativet avmarkeras måste du kvitta transaktioner manuellt genom att använda sidan Kvitta öppna transaktioner. |
 | **Avbryt**     | Välj det här alternativet för möjlighet att avbryta transaktioner som har denna bokföringsprofil.                                                                                                               |
 | **Stäng**      | Markera en bokföringsprofiler att ändra till när transaktionerna med denna bokföringsprofil stängs. En transaktion betraktas som stängd när den har kvittats helt.                                       |
-
 
 
 

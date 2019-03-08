@@ -1,13 +1,13 @@
 ---
-title: "Rapportdefinitioner i designer för ekonomiska rapporter"
-description: "Den här artikeln innehåller information om rapportdefinitioner. En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport."
+title: Rapportdefinitioner i designer för ekonomiska rapporter
+description: Den här artikeln innehåller information om rapportdefinitioner. En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 322f1cca32053224e1cd6dbaf29c098b983b5e1f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: ee130dd357b5ae678f623630165a1ab787d6ae2c
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327353"
 ---
-
 # <a name="report-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ En rapportdefinition är en rapportkomponent (eller byggblock) som använder en 
 - Ekonomisk och Konto
 - Ekonomisk, Konto och Transaktion
 
-Beroende på hur data lagras i Microsoft Dynamics ERP-system kanske inte transaktionsdetaljer är tillgängliga i rapporter.
+Däremot är det inte säkert att transaktionsinformation finns tillgänglig i rapporter, beroende på hur informationen är lagrad i Microsoft Dynamics ERP-systemet.
 
 ## <a name="create-a-report-definition"></a>Skapa en rapportdefinition
 1. I Report Designer i menyn **Fil** klickar du på **Nytt** och väljer sedan **Rapportdefinition**.
@@ -86,4 +85,3 @@ I följande register finns beskrivningar av flikarna i en rapportdefinition och 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-

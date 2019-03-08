@@ -1,13 +1,13 @@
 ---
-title: "Direktleverans från produktionsorder till utlastningsplatser"
-description: "Det här avsnittet beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter."
+title: Direktleverans från produktionsorder till utlastningsplatser
+description: Det här avsnittet beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCrossDockOpportunityPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8691bb6702028070810a1503add33985de5ede3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 62194012cfbe101d19e9de3254afb004da79a562
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329032"
 ---
-
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direktleverans från produktionsorder till utlastningsplatser
 
 [!include [banner](../includes/banner.md)]
@@ -126,6 +125,5 @@ När en produkt har rapporterats som avslutad på produktionsraden överförs de
 ### <a name="additional-information"></a>Ytterligare information
 
 -   Direktutleverans scenario stöds för batch- och seriekontrollerade element, både för batch- och serienummerdimensioner definierade ovan och under platsen i reservationshierarkin. 
-
 
 

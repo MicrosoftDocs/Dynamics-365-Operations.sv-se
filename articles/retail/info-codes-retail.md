@@ -1,13 +1,13 @@
 ---
 title: Infokoder och infokodgrupper
-description: "Den här artikeln ger en översikt över informationskoder och infokodgrupper och hur du använder dem."
+description: Den här artikeln ger en översikt över informationskoder och infokodgrupper och hur du använder dem.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340831"
 ---
-
 # <a name="info-codes-and-info-code-groups"></a>Infokoder och infokodgrupper
 
 [!include [banner](includes/banner.md)]
@@ -43,7 +42,7 @@ Informationskoder utgör ett sätt att samla in data vid ett kassaregister (POS)
 
 ## <a name="info-codes-group"></a>Infokodgrupp
 
-I Dynamics 365 for Retail kan du skapa grupper med informationskoder. Informationskodgrupper tillför flexibilitet genom att du kan definiera färre informationskoder och sedan använda dem på ett mer mångsidigt sätt. Du kan använda informationskodgrupper på följande sätt:
+I Dynamics 365 for Retail kan du skapa grupper av informationskoder. Informationskodgrupper tillför flexibilitet genom att du kan definiera färre informationskoder och sedan använda dem på ett mer mångsidigt sätt. Du kan använda informationskodgrupper på följande sätt:
 
 - Definiera färre informationskoder och återanvänd dem enkelt. Informationskoder som ingår i informationskodgrupper har inga fördefinierade beroenden i andra informationskoder. Du kan ta med samma informationskod i flera informationskodgrupper och sedan använda prioritering för att visa samma informationskoder i den ordning som fungerar för olika situationer.
 - Länka infokoder till andra infokoder eller infokodgrupper för att samla in information om en produkt eller en transaktion så att du inte behöver ange en separat infokod eller den kopplade infokoden för alla scenarier.
@@ -57,4 +56,3 @@ Du kan koppla infokoder så att, när en infokod utlöses, utlöses även en ann
 **Exempel 2: Länka infokoder till  infokodgrupper**
 
 När du säljer vissa produkter, till exempel mobila enheter, vill du alltid samla in specifik information, till exempel telefonnummer, den mobila utrustningsidentifieraren (MEID) och serienummer. Men du vill också hämta in olika information för en Tablet PC kontra en mobiltelefon. Du kan ställa in en informationkodgrupp som innehåller prompt för telefonnummer, MEID och serienummer och sedan informationkodgruppen länkar till en enskild informationskod. När den produktspecifika informationskoden utlöses, kan informationskodgruppen sedan utlösas för att göra det möjligt för dig att samla in gemensamma data, utan att behöva definiera flera uppsättningar av kopplade informationskoder för varje enhet.
-

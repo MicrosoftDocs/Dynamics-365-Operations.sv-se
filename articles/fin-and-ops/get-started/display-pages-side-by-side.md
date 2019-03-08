@@ -1,13 +1,13 @@
 ---
-title: "Visa sidor sida vid sida med hjälp av funktionen Öppna i nytt fönster"
-description: "Denna artikel förklarar hur du visar sidor sida vid sida i Microsoft Dynamics 365 for Finance and Operations."
+title: Visa sidor sida vid sida med hjälp av funktionen Öppna i nytt fönster
+description: Det här avsnittet beskriver hur du visar sidor sida vid sida i Microsoft Dynamics 365 for Finance and Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330182"
 ---
-
-# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Visa sidor sida vid sida med hjälp av funktionen Öppna i nytt fönster
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Visa sidor sida vid sida med funktionen Öppna i nytt fönster
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel förklarar hur du visar sidor sida vid sida i Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver hur du visar sidor sida vid sida i Microsoft Dynamics 365 for Finance and Operations.
 
-Microsoft Dynamics 365 for Finance and Operations hjälper dig att utföra uppgifter effektivt. I vissa fall vill du kanske visa flera sidor sida vid sida för att slutföra uppgifter snabbt. Som ett exempel vill du kanske validera eller ange rader i mer än en journal. För att göra detta måste vanligen du gå fram och tillbaka mellan sidan som visar en lista med journaler och sidan som visar rader för en viss journal. Funktionen **Öppna i nytt fönster** gör det dock möjligt att visa dessa sidor sida vid sida så att du kan utföra dina uppgifter snabbt.
+Microsoft Dynamics 365 for Finance and Operations hjälper dig att utföra uppgifter på ett effektivt sätt. I vissa fall vill du kanske visa flera sidor sida vid sida för att slutföra uppgifter snabbt. Som ett exempel vill du kanske validera eller ange rader i mer än en journal. För att göra detta måste vanligen du gå fram och tillbaka mellan sidan som visar en lista med journaler och sidan som visar rader för en viss journal. Funktionen **Öppna i nytt fönster** gör det dock möjligt att visa dessa sidor sida vid sida så att du kan utföra dina uppgifter snabbt.
 
 Om vi fortsätter med exemplet ovan kan du klicka på ikonen **Öppna i nytt fönster** när du visar raderna.
 
@@ -50,4 +49,3 @@ Innan du använder funktionen **Öppna i nytt fönster** bör du konfigurera web
 Funktionen **Öppna i nytt fönster** är endast tillgänglig när det finns fler än en sida som är öppen i fönstret. Popup-fönstret stängs även automatiskt när det inte finns några fler öppna sidor (det vill säga när den sista sidan i det fönstret stängs.) Finance and Operations stänger också öppna sidor när du navigerar till ett annat område i programmet. Om du har öppna popup-fönster och navigerar till ett annat område i programmet stängs därför popup-fönster automatiskt, eftersom sidorna i dessa fönster stängdes av systemet.
 
 Det övre fältet i popup-fönster visar information om företaget som sidan öppnades i och är skrivskyddat. Popup-fönster beror också på huvudwebbläsarfönstret för Finance and Operations. Om huvudfönstret stängs eller uppdateras, blir alla öppna popup-fönster skrivskyddade. Det innebär att du fortfarande kan visa informationen i dessa fönster, men du kan inte interagera med den.
-

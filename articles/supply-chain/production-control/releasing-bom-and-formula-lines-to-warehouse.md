@@ -1,13 +1,13 @@
 ---
-title: "Frisläpp strukturliste- och formelrader till lagerstället"
-description: "Det här avsnittet beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret."
+title: Frisläpp strukturliste- och formelrader till lagerstället
+description: Det här avsnittet beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343154"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frisläpp strukturliste- och formelrader till lagerstället
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Den metod som används för att frisläppa strukturlista och formelrader styrs a
 - **Frisläpp strukturliste- och formelrader som en del av frisläppningen av produktion eller batchorder** – med den här metoden frisläpps strukturlista och formelrader för en produktions- eller batchorder som en del av processen med att frisläppa ordern. Vanligtvis under frisläppning av produktions- eller batchorder kommer produktionsjobb att frisläppas till verkstadsarbetare och produktionspapper skrivs ut. Under denna process kommer status för ordern att ändras till **frisläppt**.
 - **Frisläpp strukturliste- och formelrader via ett batchjobb eller som en manuell åtgärd** – med den här metoden kan strukturlista och formelrader endast frisläppas genom batchjobbet **automatisk version av strukturliste- och formelrader** eller som en manuell åtgärd. För att manuellt frisläppa strukturliste- och formelrader på sidan för produktionorderlista eller produktionsorderinformationssidan i åtgärdsfönstret, väljer du **Frisläpp till lagerställe**.
 
-För en snabb demonstration av hur du frisläpper strukturlistor och formlrader till produktion genom att använda ett batchjobb kan du titta på den här korta YouTube-videon: [Frisläppa produktionsplockning till lagerstället i batch](https://www.youtube.com/watch?v=8urAJn50dQ8).
+För en snabb demonstration av hur du frisläpper strukturlistor och formlrader till produktion genom att använda ett batchjobb kan du titta på den här korta YouTube video: [Släpp produktionsplockning till lagret i batch](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Att frisläppa strukturliste- och formelrader med hjälp av ett batchjobb
 
@@ -99,4 +98,3 @@ Du kan frisläppa råmaterial för en delkvantitet av färdiga varor, eller i en
     Enheter som är tillgängliga fastställs i enhetssekvensgrupp-ID för den färdiga varan.
 
     Till exempel har en färdig vara följande enhetskonvertering mellan kilo (kg) och lastpall (PL): 1 PL = 100 kg. Skapa en tillverkningsorder för 10 000 kg. av färdiga varor kan du frisläppa råmaterial för antalet lastpallar som du planerar att producera. Välj **PL** som enhet, och välj sedan ett motsvarande värde i fältet **kvantitet**.
-

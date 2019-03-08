@@ -1,13 +1,13 @@
---- 
+---
 title: Skapa en driftenhet
-description: "En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag."
+description: En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, OMInternalOrganizationSelector
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9c49000b09fdbac10dfa952718453bf82cbb1498
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 838d1c2d5d1ab2524e9f4be423fbf529b89f5f59
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332643"
 ---
 # <a name="create-an-operating-unit"></a>Skapa en driftenhet
 
@@ -42,5 +42,4 @@ En driftenhet är en organisation som används för skilja kontrollen av ekonomi
     * Expandera avsnittet Kontaktinformation, om det behövs.  
     * Ange information om kommunikationsmetoder, till exempel e-postadresser, webbadresser (URL:er) och telefonnummer. Klicka på Ny om du vill ange en ny kommunikationspost. Klicka på Fler alternativ > Avancerat om du vill ändra en befintlig post.   
 6. Klicka på Spara.
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer"
-description: "I den här proceduren visas hur du skapar ett menyobjekt för en mobil enhet med avseende på konsolideringsarbete för registreringsskyltar."
+---
+title: Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
+description: I den här proceduren visas hur du skapar ett menyobjekt för en mobil enhet med avseende på konsolideringsarbete för registreringsskyltar.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: bfe07426e9ff11c60c5f703b810ba09d6c863399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7b8d20561ff092bd64c17c5d9335e9f54a1d191b
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343660"
 ---
 # <a name="create-a-mobile-device-menu-item-for-license-plate-consolidation"></a>Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
 
@@ -36,5 +36,4 @@ I den här proceduren visas hur du skapar ett menyobjekt för en mobil enhet med
 4. Ange ett värde i fältet Titel.
 5. Välj "Indirect" i fältet Model.
 6. Välj "Consolidate license plates" i fältet Activity code.
-
 

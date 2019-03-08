@@ -1,13 +1,13 @@
 ---
-title: "Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI"
-description: "Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet Försäljnings- och lönsamhetsresultat. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
+title: Försäljnings- och lönsamhetsresultat Power BI-innehåll
+description: Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet Försäljnings- och lönsamhetsresultat. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,23 +18,22 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: cf4d3e12d33b67158ff4f96580b4ac2eb903bb93
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360427"
 ---
-
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Försäljnings- och lönsamhetsresultat Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **Försäljnings- och lönsamhetsresultat**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i **Försäljnings- och lönsamhetsresultat** Microsoft Power BI-innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
-Power BI-innehållet **Försäljnings- och lönsamhetsresultat** skapades så att försäljningschefer kan övervaka viktiga försäljningsmått på omsättning, bruttovinst och vinstmarginaler. Den använder försäljningstransaktionsdata och ger både en sammanfattning av de företagsomspännande försäljningsuppgifterna och en fördelning av försäljningsprestanda för kunder och produkter.
+**Försäljnings- och lönsamhetsresultat** Power BI-innehåll skapades så att försäljningschefer kan övervaka viktiga försäljningsmått på omsättning, bruttovinst och vinstmarginaler. Den använder försäljningstransaktionsdata och ger både en sammanfattning av de företagsomspännande försäljningsuppgifterna och en fördelning av försäljningsprestanda för kunder och produkter.
 
 Rapporterna visar ändringar i ökade intäkter och vinst över tid. De kan därför användas för att uppmärksamma chefer på positiva och negativa utgiftstrender för enskilda kunder och produkter. Diagram jämför dessutom intäkt och lönsamhet för olika produktkategorier och kundgrupper med varandra. Därför kan kategori- och regionala chefer identifiera eftersläntrare och ledare. En sammanfattande rapport visar dessutom en kunds intäkter och vinstmarginal. Kontoansvariga kan därför ha säkerhetskopierade data som en grund. Dessa kan de använda för att finjustera sina insatser med försäljning och marknadsföringsförsök för varje kundprofil.
 
@@ -49,11 +48,11 @@ Lönsamhet kan analyseras på följande sätt:
 - Bruttovinständring, årsbasis
 - Kundlönsamhet (efter intäkt jämfört med bruttomarginal)
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehållet **Försäljnings- och lönsamhetsprestanda** visas på sidan **Försäljnings- och lönsamhetsprestanda** (**Försäljnings- och marknadsföring** \> **Förfrågningar och rapporter** \> **Analys av försäljningsprestanda** \> **Försäljnings- och lönsamhetsprestanda**).
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+**Försäljnings- och lönsamhetsprestanda** Power BI-innehåll visas på sidan **Försäljnings- och lönsamhetsprestanda** (**Försäljnings- och marknadsföring** \> **Förfrågningar och rapporter** \> **Analys av försäljningsprestanda** \> **Försäljnings- och lönsamhetsprestanda**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
-Power BI-innehållet **Försäljnings- och lönsamhetsresultat** omfattar en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över de visualiseringar som används i innehållet.
+## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Mätvärden som ingår i Power BI-innehållet
+**Försäljnings- och lönsamhetsresultat** Power BI omfattar en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över de visualiseringar som används i innehållet.
 
 | Rapportsida            | Diagram                                     | Paneler                                                   |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
@@ -78,9 +77,9 @@ Power BI-innehållet **Försäljnings- och lönsamhetsresultat** omfattar en rap
 \*Intäkter detta och förra året och tillväxt per försäljningskategori.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Försäljnings- och lönsamhetsresultat**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna **Försäljnings- och lönsamhetsresultat** Power BI-innehållet. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
-De sammanlagda måtten i det här innehållet är del av de sammanlagda måtten som fanns i Sales Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i Enhetslagring måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i enhetsbutiken i blogginlägget [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i Microsoft Dynamics AX 2012 och Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i Enhetslagring måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i enhetsbutiken i blogginlägget [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
 Följande huvudaggregatmått för fakturaradsenheter används som grund för innehållet:
 
@@ -94,8 +93,8 @@ Följande tabell visar de sammanlagda mått för fakturaradenheten som används 
 
 | Mått           | Beräkning                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| Bruttovinst      | SUM(Intäkt - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura)           |
-| Bruttomarginal      | SUM(Bruttovinst - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura)              |
+| Bruttovinst      | SUM(Intäkt - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura))          |
+| Bruttomarginal      | SUM(Bruttovinst - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura))             |
 | Intäkt ifjol | Intäkt ifjol = BERÄKNA(SUM('Fakturarader'\[intäkter\]), SAMMAPERIODSOMFÖRRAÅRET(datum\[datum\]) |
 
 Följande tabell visar nyckeldimensionerna i försäljningskuben som används som filter för att dela upp de sammanlagda måtten så att du kan uppnå bättre nivåer och få djupare analysinsikter.
@@ -109,4 +108,3 @@ Följande tabell visar nyckeldimensionerna i försäljningskuben som används so
 | Datum            | Datum                                                |
 
 Som standard visar innehållet data för det aktuella kalenderåret. Du kan dock ändra filtret i datumavsnittet i rapportfilteravsnittet. Du kan också ändra filtret för företaget.
-

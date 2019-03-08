@@ -1,13 +1,13 @@
 ---
-title: "Arbetsflöde för leverantör"
-description: "Ändra leverantörsinformationen och använd arbetsflöde för att godkänna den."
+title: Arbetsflöde för leverantör
+description: Ändra leverantörsinformationen och använd arbetsflöde för att godkänna den.
 author: mikefalkner
 manager: annbe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Vendor
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: 98ed3378ab05c0c69c9e5b2a82310113a81c2264
 ms.openlocfilehash: 950a1852acf9f3e4747ce2d55738c0eb3a646897
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/31/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329699"
 ---
-
 # <a name="vendor-workflow"></a>Arbetsflöde för leverantör
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,7 @@ Innan du kan använda funktionen för arbetsflöde måste du aktivera den.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Ändra leverantörsinformation och skicka ändringarna till arbetsflödet
 
-När du ändrar ett fält som är aktiverat för arbetsflödet visas sidan **föreslagna ändringar**. Denna sida visar det ursprungliga värdet i fältet och det nya värdet som du angav. Fältet som du har ändrat återställs till originalvärdet. Ett statusmeddelande informerar också vilka ändringarna som inte har skickats. 
+När du ändrar ett fält som är aktiverat för arbetsflödet visas sidan **föreslagna ändringar**. På den här sidan visas det ursprungliga värdet i fältet och det nya värdet som du angav. Fältet som du har ändrat återställs till originalvärdet. Ett statusmeddelande informerar också vilka ändringarna som inte har skickats. 
 
 Varje gång du ändrar ett fält som är aktiverat för arbetsflödet läggs det fältet till i listan på sidan **föreslagna ändringar**. Om du vill ångra det föreslagna värdet för ett fält använder du knappen **Ignorera** bredvid fältet i listan. Om du vill ignorera alla ändringar, använd knappen **Ignorera alla ändringar** längst ned på sidan. Välj **OK** om du vill stänga sidan.
 
@@ -59,7 +58,6 @@ När du har minst en föreslagen ändring visas två ytterligare flikar i åtgä
 1. Välj **föreslagna ändringar** för att öppna sidan **föreslagna ändringar** och granska ändringarna.
 2. Välj **Arbetsflöde \> Skicka för att skicka ändringarna till arbetsflödet**.
 
-    Status på sidan ändras till **Ändringar som väntar på godkännande**.
+    Sidans status ändras till **Ändringar som väntar på godkännande**.
 
-Arbetsflödet följer standardarbetsflödesprocessen i Microsoft Dynamics 365 for Finance and Operations. Godkännaren dirigeras till sidan **leverantör** där han eller hon kan gå igenom ändringarna på sidan **föreslagna ändringar** sidan och välj sedan **Arbetsflöde \>Godkänn** för att godkänna arbetsflödet. Fälten uppdateras med de värden du föreslog när alla godkännanden har slutförts.
-
+Arbetsflödet följer standard i arbetsflödesprocessen i Microsoft Dynamics 365 for Finance and Operations. Godkännaren dirigeras till sidan **leverantör** där han eller hon kan gå igenom ändringarna på sidan **föreslagna ändringar** sidan och välj sedan **Arbetsflöde \>Godkänn** för att godkänna arbetsflödet. När alla godkännanden har slutförts uppdateras fälten med de värden du har föreslagit.

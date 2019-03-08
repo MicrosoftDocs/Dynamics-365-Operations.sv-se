@@ -1,13 +1,13 @@
 ---
-title: "Skapa och arbeta med anpassade fält"
-description: "Det här avsnittet visar hur Microsoft Dynamics 365 for Finance and Operations tillåter vissa användare att skapa egna fält för att anpassa programmet så att det passar verksamheten."
+title: Skapa och arbeta med anpassade fält
+description: Det här avsnittet visar hur Microsoft Dynamics 365 for Finance and Operations tillåter vissa användare att skapa egna fält för att anpassa programmet så att det passar verksamheten.
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 18402579789c17de7b46dd7a013b3b6327ea5d4f
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348030"
 ---
-
 # <a name="create-and-work-with-custom-fields"></a>Skapa och arbeta med anpassade fält
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ Trots att Microsoft Dynamics 365 for Finance and Operations ger en omfattande up
 
 Möjligheten att lägga till egna fält finns i plattformsuppdatering 13 och senare.
 
-Det här videoklippet visar hur enkelt det är att lägga till ett anpassat fält i en sida: [Lägga till anpassade fält i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
+Det här videoklippet visar hur enkelt det är att lägga till ett anpassat fält på en sida: [Lägga till anpassade fält i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## <a name="creating-custom-fields"></a>Skapa anpassade fält
 
@@ -160,4 +159,3 @@ Av prestandaskäl och tekniska skäl kan för tillfället endast tabeller som up
 - Tabellen kan inte utöka en annan tabell.
 - Registret kan inte klassas som ett systemregister.
 - Registret kan inte vara ett tillfälligt register.
-

@@ -1,13 +1,13 @@
 ---
-title: "Konfigurera godkännandeprocesser i ett arbetsflöde"
-description: "Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen."
+title: Konfigurera godkännandeprocesser i ett arbetsflöde
+description: Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325651"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurera godkännandeprocesser i ett arbetsflöde
 
 [!include [banner](../includes/banner.md)]
@@ -124,11 +123,11 @@ Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, 
     </tr>
     <tr>
     <td><strong>Användare</strong></td>
-    <td>Specifika användare av Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Specifika Microsoft Dynamics 365 for Finance and Operations användare</td>
     <td>
     <ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Microsoft Dynamics 365 for Finance and Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>:.</li>
+    <li>Listan <strong>Tillgängliga användare</strong>: innehåller alla Microsoft Dynamics 365 for Finance and Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>:.</li>
     </ol>
     </td>
     </tr>
@@ -184,4 +183,3 @@ En godkännandeprocess består av godkännandesteg. Slutför följande procedur 
 1. Dubbelklicka på godkännandeprocessen i arbetsflödesredigeraren. Arbetsflödesredigeraren visar stegen för godkännandeprocessen.
 2. Dra steget från området **Arbetsflödeselement** till arbetsytan för att lägga till ett godkännandesteg.
 3. Se [Konfigurera ett godkännandesteg](configure-approval-step-workflow.md) för att konfigurera ett godkännandesteg.
-

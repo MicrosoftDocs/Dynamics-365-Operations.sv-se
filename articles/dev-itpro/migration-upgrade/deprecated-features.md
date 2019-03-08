@@ -1,13 +1,13 @@
 ---
 title: Borttagna och inaktuella funktioner
-description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
+description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning.
 author: sericks007
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329262"
 ---
-
 # <a name="removed-or-deprecated-features"></a>Borttagna och inaktuella funktioner
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver funktioner som är borttagna eller inaktuella för Dynamics 365 for Finance and Operations.
+I det här avsnittet beskrivs funktioner som har tagits bort eller är utfasad för Dynamics 365 for Finance and Operations.
 
 - En *borttagen* funktion är inte längre tillgänglig i produkten.
 - En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
@@ -37,12 +36,12 @@ Det här ämnet beskriver funktioner som är borttagna eller inaktuella för Dyn
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 > [!Note]
-> Från och med  Dynamics 365 for Finance and Operations, juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
+> Från och med Dynamics 365 for Finance and Operations, juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
 
 > [!Note]
 > Detaljerad information om objekt i Finance and Operations finns i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations.
 
-## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med plattformsuppdatering 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Batchöverföringsregler för kontoposter i redovisningsjournalen
 Det synkrona överföringsläget är inaktuellt i redovisningsparametrarna.  Detta läge ersätts endast av asynkron och schemalagd batch som endast finns som alternativ för överföring. 
@@ -64,7 +63,7 @@ Funktionen för att konfigurera .txt och .xml-format för deklarationer.
 | **Ersatt av en annan funktion?**   | Ja. |
 | **Produktområden som påverkas**         | Redovisning |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Dynamics 365 for Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Ekonomisk rapportgenerator för Ryssland
 Ett verktyg för inställning av datainsamling för redovisning och momsrapporter behövs och exportera data till XLS och DOC-rapportmallar Funktionella delar: exportera data till XLS och DOC rapportmallar, frågor, fasta krav tas bort. 
@@ -75,7 +74,7 @@ Ett verktyg för inställning av datainsamling för redovisning och momsrapporte
 | **Ersatt av en annan funktion?**   | Ja. Användargränssnittet för installationen av ekonomirapporter ska användas för att förbereda datainsamlingsregler av huvudbokskonton eller skatteregister. Exportera data till olika filtyper, fasta krav och frågeliknande datainsamlingsregler ska konfigureras i elektronisk rapportering. |
 | **Produktområden som påverkas**         | Huvudbok. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Dynamics 365 for Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med externa leverantörer för att skicka elektronisk rapportering via kommunikationskanaler för Ryssland
 Funktionen exporterar genererade elektroniska filer av deklarationer till mapp för vidare sändning till officiella leverantörer av elektronisk rapportering samt importera tillstånd tillbaka.
@@ -86,7 +85,7 @@ Funktionen exporterar genererade elektroniska filer av deklarationer till mapp f
 | **Ersatt av en annan funktion?**   | Ja.  |
 | **Produktområden som påverkas**         | Redovisningsuppgifter, skatt |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Dynamics 365 for Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Guiden för vinstskattregister
@@ -98,13 +97,13 @@ Funktion för att skapa mallar för nya vinstskattregister. Den här funktionen 
 | **Ersatt av en annan funktion?**   | Nr |
 | **Produktområden som påverkas**         | Skatt |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+| **Status**                         | Tas bort från Dynamics 365 for Finance and Operations 8.1 med plattformsuppdatering 20. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0. med plattformsuppdatering 15
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 med plattformsuppdatering 15
 Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3. med plattformsuppdatering 12
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 med plattformsuppdatering 12
 
 ### <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer 
 Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information i [anpassade produktrekommendationer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations)..  
@@ -126,7 +125,7 @@ Möjligheten att införa anpassade funktioner som ska användas i ER uttrycksver
 | **Ersatt av en annan funktion?**   | Ingen. När den nya inbyggda funktionen krävs måste en ny tilläggsbegäran sändas till ER-ramverkets team.<br><br>Som en tillfällig lösning medan den begärda funktionen är under utveckling av ER-teamet kan logiken som krävs programmeras som en metod för en anpassad programklass. Den här metoden kan användas i ER-uttryck som en egenskap för den tillagda ER-datakällan i typen **Application\Class** som refererar till den anpassade programklassen.  |
 | **Produktområden som påverkas**         | Elektroniskt rapporteringsramverk                                                      |
 | **Distribueringsalternativ**              | Allt                                                                                      |
-| **Status**                         | Borttagen från och med Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.    |
+| **Status**                         | Tas bort från Dynamics 365 for Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Lager per artikelgrupp och Lager per åldersfördelningsrapport för lagerdimension 
 
@@ -140,13 +139,13 @@ Dessa två rapporter stöds inte längre i Finance and Operations. I stället ka
 | **Distribueringsalternativ**        | Allt|
 | **Status**                       | Inaktuell: Menyalternativen för de två rapporterna har tagits bort i version 7.3. Koden för rapporterna finns emellertid kvar i produkten Planen är att ta bort koden i framtida versioner. |
 
-### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI innehållspaket finns på AppSource
-Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Resultat för butikskanal**  som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innehållspaket finns på AppSource
+Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Retail channel performance** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Produktuppdateringar i Microsoft Power BI. |
-| **Ersatt av en annan funktion?**   | Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat**, och **Resultat för butikskanal** som finns på webbplatsen [AppSource](https://appsource.microsoft.com), ersätts med analytiska applikationer som möjliggör lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Orsak till inaktuell/borttagning** | Produktuppdateringar Microsoft Power BI. |
+| **Ersatt av en annan funktion?**   | Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Retail channel performance** som finns på webbplatsen [AppSource](https://appsource.microsoft.com) ersätts med analytiska applikationer som möjliggör lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Produktområden som påverkas**         | Kostnadshantering, Ekonomi och Butik                                                                                               |
 | **Distribueringsalternativ**              | Endast molnet (integrering med PowerBI.com stöds inte i lokala distributioner.)                                                                                                            |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är K2 2018.    |
@@ -223,7 +222,7 @@ Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa 
 | **Status**                         |Borttagen från den 15 februari 2018. Detta påverkar kunder som kör Dynamics 365 for Retail 7.2 och senare. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition juli 2017 med plattformsuppdatering 8
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 med plattformsuppdatering 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valutakonvertering för redovisnings- och rapporteringsvalutor
 
@@ -244,7 +243,7 @@ Warehouse mobile devices portalen (WMDP) är en fristående komponent som är av
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion.       |
-| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar och krav finns i [installera och konfigurera Microsoft Dynamics 365 for Finance and Operations - lagring](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations - Lagerhållning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Produktområden som påverkas**         | Lager- och transporthantering     |
 | **Distribueringsalternativ**              | Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution.               |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q4 2019.   |
@@ -261,7 +260,7 @@ En matchningsregel användes för att välja och markera ett bankdokument när d
 | **Distribueringsalternativ**              | Allt                                                                                    |
 | **Status**                         | Borttagen från och med juli 2017.                                                               |
 
-## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 med uppdatering 3
+## <a name="dynamics-365-for-operations-1611-with-platform-update-3"></a>Dynamics 365 for Operations 1611 med plattformsuppdatering 3
 
 ### <a name="aeb-payment-formats-for-spain"></a>AEB-betalningformat för Spanien
 
@@ -353,7 +352,7 @@ EDIVAT är en inaktuell belgisk standard för elektronisk deklaration säker via
 
 ### <a name="egiro-edifact-cremul-payment-import-format-for-norway"></a>eGiro EDIFACT CREMUL-betalningsformat för Norge
 
-eGiro baseras på den internationella UN EDIFACT CREMUL-standarden (Multiple Credit Advice Message) som används för automatisk bokföring av kundbetalningar. I Microsoft Dynamics AX tillämpas eGiro som ett importformat för kundbetalning.
+eGiro baseras på den internationella UN EDIFACT CREMUL-standarden (Multiple Credit Advice Message) som används för automatisk bokföring av kundbetalningar. I Microsoft Dynamics AX implementeras eGiro som ett importformat för kundbetalningar.
 
 |   |  |
 |------------|--------------------|
@@ -481,7 +480,7 @@ Löneinformation i HR
 | **Orsak till inaktuell/borttagning** | Den här funktionen har ersatts av huvudsidorna Lön och Personal.  |
 | **Ersatt av en annan funktion?**   | **Förmåner**, **Inkomster** och andra relaterade sidor, som tidigare fanns i USA-lönelistan, har konfigurerats om och är nu en del av den grundläggande konfigurationen Personal för att ge stöd för extern lönebearbetning. Den här funktionen kan nås med hjälp av konfigurationsnyckeln **Personal 1** \> **Lönelista**. |
 | **Produktområden som påverkas**         | Personal, Lön   |
-| **Status**                         | Togs nort från och med Dynamics 365 for Operations version 1611.    |
+| **Status**                         | Borttagen från Dynamics 365 for Operations version 1611.    |
 
 ### <a name="performance-management-goal-workflow"></a>Arbetsflöde för prestationshanteringmål
 
@@ -492,7 +491,7 @@ Prestationshantering inkluderar målhantering och integration med prestationsgra
 | **Orsak till inaktuell/borttagning** | Prestationshantering formades om, och antalet målsidor förminskades för att förenkla processen.                 |
 | **Ersatt av en annan funktion?**   | Nr. Mål kan visas för chefer via portalen Självbetjäning för chef, och kan ändras och visas av chefen. |
 | **Produktområden som påverkas**         | Administration av humankapital       |
-| **Status**                         | Togs nort från och med Dynamics 365 for Operations version 1611.    |
+| **Status**                         | Borttagen från Dynamics 365 for Operations version 1611.    |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Postgirot och Postgirot Utland betalningsformat för Sverige
 
@@ -514,7 +513,7 @@ Radiofrekvensidentifiering (RFID) är en datainsamlingsteknik som använder elek
 | **Orsak till inaktuell/borttagning** | Låg kundanvändning och en begränsad uppsättning funktioner.   |
 | **Ersatt av en annan funktion?**   | Nr                                              |
 | **Produktområden som påverkas**         | Lagerhantering                            |
-| **Status**                         | Togs nort från och med Dynamics 365 for Operations 1611. |
+| **Status**                         | Borttagen Dynamics 365 for Operations 1611. |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Rapport om numrering av statliga fakturor för Lettland
 
@@ -545,7 +544,7 @@ Namnen på chefen och den allmänna revisorn i ett företag kan anges i företag
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion   |
 | **Ersatt av en annan funktion?**   | Delvis ersatt med transporthantering |
 | **Produktområden som påverkas**         | Försäljning och marknadsföring, Lagerhantering  |
-| **Status**                         | Togs nort från och med Dynamics 365 for Operations version 1611.  |
+| **Status**                         | Borttagen från Dynamics 365 for Operations version 1611.  |
 
 ### <a name="telepay-payment-formats-for-norway"></a>Telepay betalningsformat för Norge
 
@@ -573,10 +572,10 @@ Två format för att exportera betalningar är tillgängliga för Finland. LM02 
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Lagerstyrningssystem II-lösningar (WMS II) som var tillgängliga i modulen **Lagerhantering** duplicerar funktionerna som finns i modulen **Lagerstyrning** som släpptes i Microsoft Dynamics AX 2012 R3.                                                                         |
-| **Ersatt av en annan funktion?**   | Modulen **Lagerstyrning** som släpptes i AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, och Microsoft Dynamics AX 2012 R3 CU9 ersätter funktionerna i Lagerstyrning II. Den nya modulen har mer avancerade funktioner och mer flexibla lagerstyrningsprocesser än de som erbjöds av funktionerna i Lagerstyrning II. |
+| **Orsak till inaktuell/borttagning** | Lagerstyrningssystem II-lösningar (WMS II) som var tillgängliga i **lagerhanteringsmodulen** duplicerar funktionerna som finns i **lagerstyrningsmodulen** om släpptes i Microsoft Dynamics AX 2012 R3.                                                                         |
+| **Ersatt av en annan funktion?**   | Modulen **Lagerstyrning** som släpptes i AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 och Dynamics AX 2012 R3 CU9 ersätter funktionerna i Lagerstyrning II. Den nya modulen har mer avancerade funktioner och mer flexibla lagerstyrningsprocesser än de som erbjöds av funktionerna i Lagerstyrning II. |
 | **Produktområden som påverkas**         | Lagerhantering, försäljning och marknadsföring, anskaffning och källa   |
-| **Status**                         | Togs nort från och med Dynamics 365 for Operations version 1611.    |
+| **Status**                         | Borttagen från Dynamics 365 for Operations version 1611.    |
 
 ### <a name="worker-reminders-in-human-resources"></a>Påminnelser till arbetare i Personal
 
@@ -587,7 +586,7 @@ Löneinformation i HR
 | **Orsak till inaktuell/borttagning** | Låg användning                                                           |
 | **Ersatt av en annan funktion?**   | Nr                                                                  |
 | **Produktområden som påverkas**         | Personal                                                     |
-| **Status**                         | Togs nort från och med Dynamics 365 for Operations version 1611. |
+| **Status**                         | Borttagen från Dynamics 365 for Operations version 1611. |
 
 ### <a name="workflow-for-creating-goals"></a>Arbetsflöde för att skapa mål
 
@@ -595,10 +594,10 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Prestandahantering har helt formats om i Microsoft Dynamics 365 for Finance and Operations.     |
+| **Orsak till inaktuell/borttagning** | Prestandahantering har gjorts om helt i Microsoft Dynamics 365 for Finance and Operations.     |
 | **Ersatt av en annan funktion?**   | Den omformade prestandahanteringsfunktionen innehåller mer kontroll över innehållet av mål, måtten som används för att spåra framsteg och bilaga med förklarande dokumentation. Mål kan lagras som mallar och sedan återanvändas. Den här funktionen kan hjälpa dig att snabbare ställa in ytterligare mål för medarbetarna. |
 | **Produktområden som påverkas**         | Administration av humankapital                 |
-| **Status**                         | Togs nort från och med Dynamics 365 for Operations version 1611. |
+| **Status**                         | Borttagen från Dynamics 365 for Operations version 1611. |
 
 ## <a name="dynamics-ax-70"></a>Dynamics AX 7.0 
 
@@ -674,7 +673,7 @@ Det här mobila programmet låter användare granska viktiga affärsmått.
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen har ersatts med en annan funktion.   |
-| **Ersatt av en annan funktion?**   | Innehållspaketet för övervakning av ekonomiska resultat för Microsoft PowerBI kommer att inkludera samma ekonomiska mätvärden som tidigare var tillgängliga i Business Analyzer. |
+| **Ersatt av en annan funktion?**   | Innehållspaketet för övervakning av ekonomiska resultat för Microsoft Power BI kommer att inkludera samma ekonomiska mätvärden som tidigare var tillgängliga i Business Analyzer. |
 | **Produktområden som påverkas**         | Huvudbok      |
 | **Status**                         | Inaktuell: Användning av Business Analyzer stöds inte längre.    |
 
@@ -725,7 +724,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Funktionen har ersatts med en annan funktion. |
-| **Ersatt av en annan funktion?**   | Common data service                                      |
+| **Ersatt av en annan funktion?**   | Common Data Service                                      |
 | **Produktområden som påverkas**         | Connector för Microsoft Dynamics                         |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                           |
 
@@ -734,7 +733,7 @@ Verktyget användes för att integrerar viktiga data från Microsoft Dynamics CR
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion |
-| **Ersatt av en annan funktion?**   | Ja. Sedan AXET 2012 har den här funktionen ersatts av funktionsuppsättning av konsoliderade batchorder. Den här funktionsuppsättningen inkluderar den konsoliderade behållningsvyn. |
+| **Ersatt av en annan funktion?**   | Ja. Sedan AX 2012 har den här funktionen ersatts av funktionsuppsättning av konsoliderade batchorder. Den här funktionsuppsättningen inkluderar den konsoliderade behållningsvyn. |
 | **Produktområden som påverkas**         | Produktinformationshantering, Produktionskontroll, Lagerhantering, Försäljning och marknadsföring  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0. |
 
@@ -814,7 +813,7 @@ I Dynamics AX 2012 R3 kunde inte Retail Modern POS ansluta direkt till Channel D
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Direkt databasanslutning krävde lägre säkerhetsprotokoll och användes främst för att uppnå högsta möjliga prestanda. På grund av prestanda- och säkerhetsförbättringar som har uppstått i Dynamics 365 for Finance and Operations orsakar nu den här funktionen fler problem än den löser. |
 | **Ersatt av en annan funktion?**   | Nr. Endast standardkommunikation för Retail Server stöds nu.  |
-| **Produktområden som påverkas**         | Channel DB/Retail Modern POS   |
+| **Produktområden som påverkas**         | Kanal-DB/Retail Modern POS   |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.  |
 
 ### <a name="dutch-swift-mt940"></a>Holländsk SWIFT MT940
@@ -873,7 +872,7 @@ Genereringen av förauktoriseringar kan inte utföras med hjälp av en batch men
 | **Orsak till inaktuell/borttagning** | Inget formulär finns för att bevara och visa den resulterande filen med förauktoriseringar när den skapats med hjälp av en batch. |
 | **Ersatt av en annan funktion?**   | Förauktoriseringar kan fortfarande skapas och användaren har kontroll över var filen sparas.   |
 | **Produktområden som påverkas**         | Leverantörsreskontra, Kundreskontra och Kassa- och bankhantering  |
-| **Status**                         | Borttagen från och med AX 7.0.    |
+| **Status**                         | Borttagen AX 7.0.    |
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Tysk DTAUS-betalningsexport och -kontoutdragsimport (summor och transaktioner)
 
@@ -980,9 +979,9 @@ Microsoft Dynamics AX 2012 hanterade orealiserad mervärdesskatt (VAT) genom att
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Den här funktionen har ersatts av Microsoft Exchange Server-integrering. |
+| **Orsak till inaktuell/borttagning** | Funktionen har ersatts med en Microsoft Exchange Server-integrering. |
 | **Ersatt av en annan funktion?**   | Ja                                                                            |
-| **Produktområden som påverkas**         | Försäljning och marknadsföring                                                            |
+| **Produktområden som påverkas**         | Sales and Marketing                                                            |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.                                                 |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Privat blockering av inventerings- och lagerhanteringsjournaler
@@ -1037,7 +1036,7 @@ I Dynamics AX 2012 R3 kan Retail Server med hjälp av HTTP-kommunikation (icke-s
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | På grund av nya säkerhetskrav stöds endast säker kommunikation med TLS 1.2 (eller högre om tillgängligt) nu. Installationsprogrammet för självbetjäning konfigurerar automatiskt datorn för den här kommunikationen. |
 | **Ersatt av en annan funktion?**   | Nr. Endast standardkommunikation för HTTPS stöds nu. |
-| **Produktområden som påverkas**         | Retail Server  |
+| **Produktområden som påverkas**         | Butiksserver  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0. |
 
 ### <a name="role-center-pages"></a>Rollcentersidor
@@ -1049,7 +1048,7 @@ I Dynamics AX 2012 R3 kan Retail Server med hjälp av HTTP-kommunikation (icke-s
 | **Produktområden som påverkas**         | Alla moduler    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.   |
 
-### <a name="sales-tax-jurisdictions"></a>Momsmyndigheter
+### <a name="sales-tax-jurisdictions"></a>Skattemyndigheter
 
 |   |  |
 |------------|--------------------|
@@ -1127,5 +1126,4 @@ Windows 8 surfplatteapp gav funktion för utgiftsregistrering och godkännande.
 |  <strong>Ersatt av en annan funktion?</strong>  | Management Reporter (med etiketten <strong>Ekonomisk rapportering</strong> i den aktuella versionen av Dynamics AX) |
 |     <strong>Produktområden som påverkas</strong>     |                                              Huvudbok                                              |
 |             <strong>Status</strong>             |                                      Borttagen från och med Dynamics AX 2012.                                      |
-
 

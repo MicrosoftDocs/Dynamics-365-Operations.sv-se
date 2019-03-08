@@ -1,30 +1,29 @@
 ---
-title: "Arbetsyta för leverantörsbetalningar"
-description: "Det här avsnittet innehåller information om arbetsytan för leverantörsbetalningar. Arbetsyta för leverantörsbetalningar visar information kopplad till behandling av leverantörsbetalningar."
+title: Arbetsyta för leverantörsbetalningar
+description: Det här avsnittet innehåller information om arbetsytan för leverantörsbetalningar. Arbetsyta för leverantörsbetalningar visar information kopplad till behandling av leverantörsbetalningar.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPaymentWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 03fd290f8ad780e740a8fe6552c7a64c44b65a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: fa8ddf52d34c3662e120509156ab0b343bb4cc16
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346121"
 ---
-
 # <a name="vendor-payments-workspace"></a>Arbetsyta för leverantörsbetalningar
 
 [!include [banner](../includes/banner.md)]
@@ -69,5 +68,4 @@ Följande tabell visar de visulaiseringar som är tillgängliga på varje rapppo
 |         Arbetsflöde för betalning          |                                                                                <ul><li>Instanser av arbetsflöde för betalning</li><li>Instanser av arbetsflöde för betalning per godkännare</li><li>Instanser av arbetsflöde för betalning per företag</li><li>Genomsnittligt antal dagar i arbetsflödet per godkännare</li></ul>                                                                                |
 |    Kund till leverantörssaldo     |                                                                                                                   <ul><li>Kund till leverantörssaldo</li><li>Kund till leverantörssaldo per företag</li><li>Information om kund till leverantörssaldo</li></ul>                                                                                                                    |
 |    Fakturor med betalningsspärr     |                                                                                         <ul><li>Fakturor med betalningsspärr</li><li>Information om fakturor med betalningsspärr</li><li>Fakturor med betalningsspärr per företag</li><li>Fakturor med betalningsspärr per leverantörsgrupp</li></ul>                                                                                          |
-
 

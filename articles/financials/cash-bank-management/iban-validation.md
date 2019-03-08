@@ -1,13 +1,13 @@
 ---
 title: Hantera validering av internationellt bankkontonummer (IBAN)
-description: "Det här avsnittet förklarar hur du hanterar validering av internationellt bankkontonummer (IBAN)."
+description: Det här avsnittet förklarar hur du hanterar validering av internationellt bankkontonummer (IBAN).
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
 ms.openlocfilehash: 19e0528b95952de8e5503c361efcfeca4c529caf
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/12/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360013"
 ---
-
 # <a name="manage-international-bank-account-number-iban-validation"></a>Hantera validering av internationellt bankkontonummer (IBAN)
 
 [!include [banner](../includes/banner.md)]
 
 Validering av internationellt bankkontonummer (IBAN) ökar mängden validering som görs när du lägger till ett IBAN till ett bankkonto.
 
-Information om strukturen i IBAN lagras i Microsoft Dynamics 365 for Finance and Operations. Informationen läses in automatiskt när du först använder IBAN på bankkonton. Den innehåller längden på IBAN, bankkontonumrets startposition och organisationsnumret och längden på kontonumret och organisationsnummer.
+Information om strukturen i IBAN-numret lagras i Microsoft Dynamics 365 for Finance and Operations. Informationen läses in automatiskt när du först använder IBAN på bankkonton. Den innehåller längden på IBAN, bankkontonumrets startposition och organisationsnumret och längden på kontonumret och organisationsnummer.
 
 ## <a name="set-up-iban-structures"></a>Ställ in IBAN-strukturer
 
@@ -49,4 +48,3 @@ Information om strukturen i IBAN lagras i Microsoft Dynamics 365 for Finance and
     Valideringen kontrollerar även att bankkontonumret stämmer överens med delen i IBAN-numret som representerar numret på bankkontot. Om bankkontonumret inte överensstämmer visas ett varningsmeddelande. Detta meddelande är bara en varning. Du kan fortsätta trots att bankkontonumret inte stämmer överens.
 
     Valideringen kontrollerar även att bankorganisationsnumret stämmer överens med delen i IBAN-numret som representerar bankorganisationsnumret. Organisationsnumret inkluderar ett banknummer och ofta ett ytterligare bankkontor. Om bankorganisationsnumret inte överensstämmer visas ett varningsmeddelande. Detta meddelande är bara en varning. Du kan fortsätta trots att bankorganisationsnumret inte stämmer överens.
-

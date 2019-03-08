@@ -1,33 +1,32 @@
 ---
-title: "Demo-skärmlayouter i Retail Modern POS (MPOS) och molnbaserad kassa"
-description: "Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Microsoft Dynamics 365 for Retail."
+title: Demodataskärmlayouter i Retail Modern POS (MPOS) och Cloud POS
+description: Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Microsoft Dynamics 365 for Retail.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352492"
 ---
-
-# <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Demo-skärmlayouter i Retail Modern POS (MPOS) och molnbaserad kassa
+# <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Demodataskärmlayouter i Retail Modern POS (MPOS) och Cloud POS
 
 [!include [banner](includes/banner.md)]
 
@@ -108,7 +107,7 @@ Följande tabell visar layoutstorlek för normal skärmupplösning.
 \*Dessa ytterligare layoutstorlekar är bara tillgängliga i Adventure Works och Fabrikam layouter.
 
 > [!TIP]
-> Kassan väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Retail Modern POS (MOPS) eller Retail Cloud POS (CPOS), öppna sidan **inställningar** och titta i avsnittet **sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet i Retail genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
+> Kassan väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Retail Modern POS (MPOS) eller Retail Cloud POS (CPOS), öppna sidan **Inställningar** och titta i avsnittet **Sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet i Retail genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
 
 ![Skärmlayouter och layoutlösningar/storlekar i Retail och kassa](../retail/media/demo-screen-layouts-fig-3-1.png)
 
@@ -175,4 +174,3 @@ Användare har angetts för de olika layouterna för skärmen. Med hjälp av tab
 <!-- Use the [POS Icon and Image Mapping](../retail/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
-

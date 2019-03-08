@@ -1,13 +1,13 @@
 ---
 title: Hantera legotillverkningsarbete i produktionen
-description: "Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör."
+description: Det här avsnittet beskriver hur legotillverkningen hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326594"
 ---
-
 # <a name="manage-subcontracting-work-in-production"></a>Hantera legotillverkningsarbete i produktionen
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
+Det här avsnittet beskriver hur legotillverkningen hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
 
 I [produktionsprocesser](production-process-overview.md) kan arbetet utföras av resurser som ägs eller förvaltas av leverantörer. Leverantörsresurser används vanligtvis för att jämna ut periodiskt överdriven efterfrågan som överskrider den tillgängliga kapaciteten hos ett företags egna resurser. Leverantören kan eventuellt också erbjuda särskilda [resurskunskaper](resource-capabilities.md) eller resurser till ett lägre pris.  
 
@@ -101,7 +100,6 @@ Halvfabrikat utgör undantagen till regeln. Om du vill överföra halvfabrikat b
 **Obs!** Ett produktionsflöde för en enskild produktionsorder kan inte korsa flera platser. Denna regel gäller även legotillverkningen. Därför måste de lagerställen som representerar leverantörshanterade materialplatser definieras på samma plats som de interna resurser som används i flödet. Även om produktionsflöden kan passera flera platser, kan de inte transportera halvfärdiga produkter från en plats till en annan, detta eftersom åtgärden innebär en förändring av kostnadskontexten.  
 
 Vanligtvis tilldelas utleveranslagerställe och platsen för en resursgrupp inom legotillverkning direkt till lagret och platsen för nästa verksamhetssteg i produktionsflödet/annat flöde. Den här inställningen hjälper till att minska mängden jobbrapportering som uppstår, eller antalet ytterligare överföringar som måste utformas.
-
 
 
 

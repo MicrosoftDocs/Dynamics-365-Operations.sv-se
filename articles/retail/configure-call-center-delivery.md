@@ -1,13 +1,13 @@
 ---
-title: "Konfigurera leveranssätt och avgifter för kundtjänst"
-description: "Det här avsnittet beskriver hur du ställer in leveranssätt och avgifter för en kundtjänst i Microsoft Dynamics 365 for Retail."
+title: Konfigurera leveranssätt och avgifter för kundtjänst
+description: Det här avsnittet beskriver hur du ställer in leveranssätten och avgifter för en kundtjänstorder i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
-ms.openlocfilehash: ebc8ee52da7d10ca18147684a0190e52a495ad5a
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328434"
 ---
-
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurera leveranssätt och avgifter för kundtjänst
 
 [!INCLUDE [banner](includes/banner.md)]
@@ -96,4 +95,3 @@ Du kan även länka en expedieringskod till varje leveranssätt som du konfigure
 Exempelvis för order som ska levereras med flyg, nästa dag måste plockning göras på ett lagerställe kl 13 varje dag. I det här fallet kan du skapa en expedieringskod och koden kan länkas till leverans nästa arbetsdagsläge som har konfigurerats i systemet. När lagerstället skapar dess påfyllnadsplockning och lämplig expedieringskod i fältet **expediering** kan användas som ett filter så att plockning utförs endast för order som har de leveranssätt som är kopplade till koden.
 
 Dessutom när en kundtjänstorder anges kan en expedieringskod användas manuellt till försäljningsorderrubriken eller till enskilda försäljningsorderraden. Igen kan koden användas för sorterings- eller rapporteringsändamål. Ibland kan måste en order hanteras försiktigt på grund av ett problem med kundtjänst. Då kan en viss expedieringskod tillämpas på orderrubriken eller rader för att identifiera och prioritera ordern under utförandeprocessen.
-

@@ -1,13 +1,13 @@
 ---
-title: "Konfigurera dataimporten från SharePoint"
-description: "Det här avsnittet beskriver hur du importerar data från Microsoft SharePoint."
+title: Konfigurera dataimport från SharePoint
+description: Det här avsnittet beskriver hur du importerar data från Microsoft SharePoint.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 060c3dec71e2b953d9341c5b5c89e60925fda34d
 ms.openlocfilehash: 8053b0316c86c614b87b0e658dffade3a135f2cc
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331102"
 ---
-# <a name="configure-data-import-from-sharepoint"></a>Konfigurera dataimporten från SharePoint
+# <a name="configure-data-import-from-sharepoint"></a>Konfigurera dataimport från SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-Om du vill importera data från en inkommande fil med ramverket för elektronisk rapportering (ER) måste du konfigurera ett ER-format som stöder import och sedan köra en modellmappning av typen **Till mål** som använder det formatet som en datakälla. När du importerar data måste du gå till den fil som du vill importera. Den importerade filen kan manuellt väljas av användaren. Med den nya ER-kapaciteten för att stödja import av data från Microsoft SharePoint kan den här processen konfigureras som obevakad. Du kan använda ER-konfigurationer för att utföra dataimport från filer som är lagrade i Microsoft SharePoint-mappar. Det här avsnittet beskriver hur du slutför importen från SharePoint till Microsoft Dynamics 365 for Finance and Operations. I exemplen används leverantörstransaktioner som affärsdata.
+Om du vill importera data från en inkommande fil med ramverket för elektronisk rapportering (ER) måste du konfigurera ett ER-format som stöder import och sedan köra en modellmappning av typen **Till mål** som använder det formatet som en datakälla. När du importerar data måste du gå till den fil som du vill importera. Den importerade filen kan manuellt väljas av användaren. Med den nya ER-kapaciteten för att stödja import av data från Microsoft SharePoint kan den här processen konfigureras som obevakad. Du kan använda ER-konfigurationer för att utföra dataimport från filer som är lagrade i Microsoft SharePoint-mappar. Det här avsnittet beskrivs hur du slutför importen från SharePoint till Microsoft Dynamics 365 for Finance and Operations. I exemplen används leverantörstransaktioner som affärsdata.
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst:
 
 - Gå till Finance and Operation för någon av följande roller:
@@ -43,7 +43,7 @@ För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst
 - ER-format och modellkonfigurationer för 1099-betalningar.
 
 ### <a name="create-required-er-configurations"></a>Skapa nödvändiga ER-konfigurationer
-Spela upp uppgiftsguiden **ER data från Microsoft Excel-fil** som ingår i affärsprocessen **7.5.4.3 hämta/utveckla IT-tjänst/lösningskomponenter (10677)**. Dessa uppgiftsguider förklarar processen med hur du utformar och använder ER-konfigurationer för att interaktivt importera leverantörstransaktioner från filer i Microsoft Excel. Mer information finns i [Tolka inkommande dokument i Microsoft Excel](parse-incoming-documents-excel.md). När du har slutfört uppgiftsguiderna måste du ställa in följande.
+Spela upp uppgiftsguiden **ER data från en Microsoft Excel-fil** som är en del av affärsprocessen **7.5.4.3 hämta/utveckla IT-tjänst/lösningskomponenter (10677)**. Dessa uppgiftsguider förklarar processen med hur du utformar och använder ER-konfigurationer för att interaktivt importera leverantörstransaktioner från filer i Microsoft Excel. Mer information finns i [Tolka inkommande dokument i Microsoft Excel](parse-incoming-documents-excel.md). När du har slutfört uppgiftsguiderna måste du ställa in följande.
 
 #### <a name="er-configurations"></a>ER-konfigurationer
 
@@ -56,7 +56,7 @@ Spela upp uppgiftsguiden **ER data från Microsoft Excel-fil** som ingår i aff�
 
 - Excel-filen **1099import-data.xlsx** med leverantörstransaktioner som ska importeras till Finance and Operations.
 
-![Exempelfilen i Microsoft Excel för att importera från SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Microsoft Excel-exempelfil som ska importeras från SharePoint](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > Format för import av leverantörstransaktioner väljs som standardvärde för modellmappning. Därför om du kör en modellmappning av **1099-betalningsmodell** och den modellmappningen är av typen **till målet** kör modellmappningen det här formatet för att importera data från externa filer. Den använder sedan den data för att uppdatera programregister.
@@ -90,7 +90,7 @@ Om du vill lagra elektroniska rapportfiler på en SharePoint-plats, måste du ko
 |SP-varning             |Fil                |SharePoint     |Mapp för filer med varning|
 |SP-fel             |Fil                |SharePoint     |Mapp för filer med fel|
 
-![SharePoint-inställning - ny dokumenttyp](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint inställning - ny dokumenttyp](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Konfigurera ER källor för ER-format
 1. Klicka på **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektronisk rapporteringskälla**.
@@ -115,9 +115,9 @@ Om du vill lagra elektroniska rapportfiler på en SharePoint-plats, måste du ko
 Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **Organisationsadministration**\>**Elektronisk rapportering**\>**Filtillstånd för källorna**. I det här fallet innehåller sidan information om filkällor för alla ER-format som filkällorna har konfigurerats för för företaget som du är inloggad i.
 
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>Importera data från Excel-filer som är i en mapp i SharePoint
-1. I SharePoint, överför Microsoft Excel-filen **1099import-data.xlsx** som innehåller leverantörstransaktionerna till **Filimportkälla (huvudsaklig)** SharePoint-mapp som du skapade tidigare.
+1. I SharePoint överför Microsoft Excel-fil **1099import-data.xlsx** som innehåller leverantörstransaktionerna till **Filimportkälla (huvudsaklig)** SharePoint-mapp som du skapade tidigare.
 
-    [![SharePoint innehåll - Microsoft Excel-fil för import](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![SharePoint innehåll – Microsoft Excel-fil som ska importeras](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. I Finance and Operations på sidan **Filtillstånd för källorna**, välj **Uppdatera**för att uppdatera sidan. Observera att Excel-filen som överfördes till SharePoint visades på den här sidan med statusen **klar**. Följande statusvärden stöds för närvarande:
 
@@ -129,7 +129,7 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 
     [![ER-fil anger sidan för valda källor](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
-## <a name="import-data-from-sharepoint-files"></a>Importera data från SharePoint-filer
+## <a name="import-data-from-sharepoint-files"></a>Importera data från SharePoint-fil.
 1. Öppnar ER-konfigurationsträdet, markera **1099-betalningsmodell** och utöka listan över ER-modellkomponenter.
 2. Välj namnet på modellmappning för att öppna listan över modellmappningar av den valda ER-modellkonfigurationen.
 
@@ -154,7 +154,7 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
     [![ER-fil anger sidan för valda källor](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
 
 7. I avsnittet **filer**, granska listan med filer. Avsnittet **Källoggar för importformatet** ger historik för Excel-filimporten. Eftersom den här filen har importerats, markeras den som **borttagen** i SharePoint-mappen.
-8. Granska SharePoint-mappen **Filimportkälla (huvudsaklig)**. Excel-filerna som har importerats har tagits bort från den här mappen.
+8. Granska **Filimportkälla (huvudsaklig)** SharePoint-mapp. Excel-filerna som har importerats har tagits bort från den här mappen.
 9. I Finance and Operations, välj **Leverantörsreskontra**\>**Periodiska uppgifter**\>**1099-skatt**\>**Leverantörskvittning för 1099-rapportering**.
 10. I fälten **från datum** och **till datum** anger du lämpliga värden. Välj sedan **Manuella 1099-transaktioner**.
 
@@ -165,7 +165,7 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 ## <a name="prepare-an-excel-file-for-import"></a>Förbered en Excel-fil för import
 1. Öppna Excel-filen som du använt tidigare. I rad 3, kolumn 1, lägg till en leverantörskod som inte finns i programmet. Lägg till ytterligare falsk leverantörsinformation på raden.
 
-    [![Exempelfilen i Microsoft Excel för att importera från SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
+    [![Exempel Microsoft Excel-filen för från SharePoint](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
 
 2. Skicka den uppdaterade Excel-filen som innehåller leverantörstransaktioner till SharePoint-mappen **Filimportkälla (huvudsaklig)**.
 3. I Finance and Operations, öppna ER-konfigurationsträdet, markera **1099-betalningsmodell** och utöka listan över ER-modellkomponenter.
@@ -187,9 +187,8 @@ Du kan också öppna sidan **Filtillstånd för källorna** genom att välja **O
 
     [![ER-fil anger sidan för valda källor](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
-   Avsnittet **Källoggar för importformatet** anger att importen har misslyckats och att filen är i SharePoint-mappen för filer med fel (kryssrutan **Är borttagen** är inte markerad). Om du vill åtgärda filen i SharePoint genom att lägga till rätt leverantörskod och flytta den till SharePoint-mappen för filernas importkälla (huvudsaklig) kan du importera filen igen.
+   Avsnittet **Källoggar för importformatet** anger att importen har misslyckats och att filen är i SharePoint-mappen för filer med fel (kryssrutan **checkÄr borttagen** är inte markerad). Om du vill åtgärda filen i SharePoint genom att lägga till rätt leverantörskod och flytta den till SharePoint-mappen för filernas importkälla (huvudsaklig) kan du importera filen igen.
 
 11. I Finance and Operations, välj **Leverantörsreskontra**\>**Periodiska uppgifter**\>**1099-skatt**\>**Leverantörskvittning för 1099-rapportering**, ange tillämpliga värden i **Från-datum** och **Till-datum** och markera **manuell 1099-transaktioner**.
 
     Endast transaktioner för verifikation V-00001 är tillgängliga. Inga transaktioner för verifikation V-00002 är tillgängliga även om felet för den senaste importerade transaktionen har hittats i Excel-filen.
-

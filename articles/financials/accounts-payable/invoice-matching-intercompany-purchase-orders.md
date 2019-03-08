@@ -1,13 +1,13 @@
 ---
-title: "Fakturamatchning och koncerninterna inköpsorder"
-description: "Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras."
+title: Fakturamatchning och koncerninterna inköpsorder
+description: Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 68b586f8afe7557bf6edee3eca0261d1e9cac0f2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357575"
 ---
-
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturamatchning och koncerninterna inköpsorder
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Exempelvis följer du dessa steg.
 2.  Utför en fakturauppdatering för KIFO999 i Fabrikam Sales. Bokföringen misslyckad eftersom artikeln inte finns i lager och ännu inte har inlevererats. Därför kan den ekonomiska informationen inte uppdateras.
 3.  Registrera att artiklar har inlevererats och bokför en följesedel för KIFO999 i Fabrikam Sales. En produktinleverans för KIIO333 bokförs automatiskt i Fabrikam Purchase. Den mottagna kvantiteten för artikel B-R14 ändras till 100 i Fabrikam Purchase.
 4.  Utför en fakturauppdatering för KIFO999 i Fabrikam Sales. Bokföringen lyckas i båda juridiska personer. Den inköpta kvantiteten för artikel B-R14 ändras till 100 i Fabrikam Purchase. 
-
 
 
 

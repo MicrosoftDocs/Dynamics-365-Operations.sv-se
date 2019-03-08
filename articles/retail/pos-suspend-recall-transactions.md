@@ -1,13 +1,13 @@
 ---
-title: "Pausa och återuppta en transaktion i kassan"
-description: "Det här avsnittet beskriver hur användare kan avbryta pågående transaktioner och sedan återuppta dem senare eller i en annan kassa med Microsoft Dynamics 365 for Retail."
+title: Pausa och återuppta en transaktion i kassan
+description: Det här avsnittet beskriver hur användare kan avbryta pågående transaktioner och sedan återuppta dem senare eller i en annan kassa med Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: ffb04609318c7de4b9ef729a8e03a7f9395806b8
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333908"
 ---
-
 # <a name="suspend-and-resume-transactions-in-the-point-of-sale-pos"></a>Pausa och återuppta transaktioner i kassan
 
 [!include [banner](includes/banner.md)]
@@ -83,4 +82,3 @@ För att snabbt och enkelt återkalla en pausad transaktion, skanna streckkoden 
 ### <a name="void-a-suspended-transaction"></a>Annullera en pausad transaktion
 
 Du kan annullera pausade transaktioner antingen genom att återkalla transaktionen och sedan utföra operationen **Annullera transaktion**, eller genom att välja transaktionen i listan **återkalla transaktion** och välja **annullera** i appfältet. Alternativt kan butiken konfigureras för att uppmana användare att annullera pausade transaktioner när de har avslutat sina skift.
-

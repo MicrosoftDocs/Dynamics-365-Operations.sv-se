@@ -1,32 +1,31 @@
 ---
-title: "Startsida för kostnadshantering"
-description: "Med kostnadshantering kan du hantera värdering och redovisning av råmaterial, färdiga varor, delvis färdiga varor och tillgångar i pågående arbete."
+title: Startsida för kostnadshantering
+description: Med kostnadshantering kan du hantera värdering och redovisning av råmaterial, färdiga varor, delvis färdiga varor och tillgångar i pågående arbete.
 author: AndersGirke
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: b1513e5a7cb3a19fd3743a5aac8efd211aa02ce8
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "333954"
 ---
-
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Du når lagerredovisning och tillverkningsredovisning från arbetsytorna **kostn
 
 Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](production-order-cost-analysis.md) i tillverkningsorder och batchorder samt [kostnadskalkylering med automatisk lageravräkning](backflush-costing.md) i lean manufacturing.
 
-Innehållet i Power BI [kostnadshantering](../../dev-itpro/analytics/cost-management-content-pack.md) ger ledare inblick i lager och PIA-lager (projekt i arbete), samt hur kostnader flödar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
+[Innehållet i Power BI kostnadshantering](../../dev-itpro/analytics/cost-management-content-pack.md) ger ledare inblick i lager och PIA-lager (projekt i arbete), samt hur kostnader flödar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
 
 ### <a name="additional-resources"></a>Ytterligare resurser
 
@@ -71,5 +70,4 @@ Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambl
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
-
 

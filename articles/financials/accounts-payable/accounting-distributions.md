@@ -1,13 +1,13 @@
 ---
-title: "Redovisningsfördelningar"
-description: "Det här avsnittet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton."
+title: Redovisningsfördelningar
+description: Det här avsnittet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AccountingDistribution
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ba6a581efe8353ccb9e02606db58d18550d71af
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 52cb689723584c862d85fa51a643b42096372a29
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320476"
 ---
-
 # <a name="accounting-distributions"></a>Redovisningsfördelningar
 
 [!include [banner](../includes/banner.md)]
@@ -53,10 +52,9 @@ De allmänna redovisningsfördelningsfunktionerna innehåller följande alternat
     -   Knappen **Korrekt** visas och kan aktiveras för dokument som stöder korrigeringar. **Korrekt** skapar nya fördelningar. Först skapas fördelningar som återför ursprungliga fördelningar. Dessa fördelningar kan inte ändras. Därnäst skapas nya och korrekta redovisningsfördelningar. Dessa fördelningar kan ändras, om de ursprungliga fördelningarna kunde ändras.
     -   Knappen **Projektinformation** aktiveras som ett tillägg när en rad hör till ett projekt. Projektredovisningsfördelningar gör att du kan ändra detaljer som finansieringskälla och radegenskap.
     -   Du kan visa aktuell redovisningsstatus för dokumentet under **Referens**. Statusen är för hela dokumentet och anger om dokumentet är pågående eller slutfört.
--   ** Visa fördelningar** – Visa redovisningsfördelningarna för alla rader och penningbelopp i dokumentet. Du kan inte ändra redovisningsfördelningarna från den här vyn.
+-   **Visa fördelningar** – Visa redovisningsfördelningarna för alla rader och penningbelopp i dokumentet. Du kan inte ändra redovisningsfördelningarna från den här vyn.
 
 
 Mer information finns i [Redovisningsfördelningar och redovisningsjournalposter för fritextfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
-
 
 

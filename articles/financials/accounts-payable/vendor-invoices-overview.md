@@ -1,13 +1,13 @@
 ---
-title: "Översikt över leverantörsfakturor"
-description: "Det här avsnittet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster."
+title: Översikt över leverantörsfakturor
+description: Det här avsnittet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
-ms.openlocfilehash: 8368d67efb8483ab6f447fbfcbfda45c1aa14f8d
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329768"
 ---
-
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
 [!include [banner](../includes/banner.md)]
@@ -92,5 +91,4 @@ Mer information finns i
  - [Mata in fakturadata i LR-systemet genom att använda fakturapool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 
  - [Registrera en leverantörsfaktura i fakturajournalen](tasks/record-vendor-invoice-invoice-journal.md)
-
 

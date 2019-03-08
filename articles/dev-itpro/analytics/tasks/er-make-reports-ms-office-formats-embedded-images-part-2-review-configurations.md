@@ -1,13 +1,13 @@
---- 
-title: "Gransa konfigurationer för att generera rapporter i Office-format med inbäddade bilder"
-description: "För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden \"ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 1: Ställ in parametrar)\"."
+---
+title: Gransa konfigurationer för att generera rapporter i Office-format med inbäddade bilder
+description: 'För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden "ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 1: Ställ in parametrar)".'
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331424"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gransa konfigurationer för att generera rapporter i Office-format med inbäddade bilder
 
@@ -91,5 +91,4 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 14. Expandera "labels: Container" i trädet.
     * Vissa etiketter som visas i det förtryckta checkformuläret inkluderas i rapporten när den skapas i testsyfte. Dessa etiketter skrivs dock inte ut vid den verkliga utskriften eftersom det förtryckta formuläret redan innehåller dem.  
 15. Stäng sidan.
-
 

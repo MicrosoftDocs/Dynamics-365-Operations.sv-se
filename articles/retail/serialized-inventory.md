@@ -1,13 +1,13 @@
 ---
-title: "Kassaförbättringar för serialiserade produkter"
-description: "Detta avsnitt listar förbättringar som har gjorts på serialiserade produkter i syfte att hjälpa dig att spara tid och bli mer produktiv."
+title: Kassaförbättringar för serialiserade produkter
+description: Detta avsnitt listar förbättringar som har gjorts på serialiserade produkter i syfte att hjälpa dig att spara tid och bli mer produktiv.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,14 +16,13 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 17cd46ba9ee972c92db8950eea1cd258d67c2e92
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346213"
 ---
-
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Kassaförbättringar för serialiserade produkter
 
 [!include [banner](includes/banner.md)]
@@ -43,4 +42,3 @@ Baserat på inställningarna i detaljhandelns huvudkontor kan produkterna klassi
 - **Inga serienummer krävs för att lägga kundorder** – Kundorder kan läggas i en butik och utföras från en annan. En kassör som lägger en kundorder behöver inte ange något serienummer. Serienumret anges i samband med plock eller hämtning. Ett serienummer måste emellertid anges för samtliga radobjekt som leveranstypen **Utkörning** väljs för. I annat fall kan transaktionen inte slutföras.
 - **Serialiserade produkter sammanställs inte på transaktionsskärmen** – Inställningen **Sammanställda produkter** i fältgruppen **Terminal** på sidan **Funktionalitetsprofil** låter dig sammanställa samma icke-serialiserade produkter på transaktionsskärmen. När samma produkter sammanställs blir de lättare att se i transaktionsrutnätet. Eftersom serienummer som regel är unika och försäljningsmedarbetare inte behöver ange serienummer före kassan, gäller inställningen **Sammanställda produkter** emellertid inte serialiserade produkter. Därför kommer serialiserade produkter inte att sammanställas på transaktionsskärmen om inställningen **Sammanställ produkter** väljs.
 - **Möjlighet att söka efter journalerna med serienummer** - Journalerna går nu dessutom att söka med serienummer. Öppna åtgärden Journaler och tryck på knappen Avancerad sökning i appfältet. Knappen Lägg till filter gör det möjligt att även använda ett filter vid sökning efter serienummer.
-

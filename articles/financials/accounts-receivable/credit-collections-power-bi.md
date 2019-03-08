@@ -1,13 +1,13 @@
 ---
-title: "Power BI innehållspaket för kredit- och inkassohantering"
-description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kredit- och inkassohantering. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
+title: Hantering av kredit och inkasso Power BI-innehåll
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kredit- och inkassohantering. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325191"
 ---
-
-# <a name="credit-and-collections-management-power-bi-content"></a>Power BI innehållspaket för kredit- och inkassohantering
+# <a name="credit-and-collections-management-power-bi-content"></a>Hantering av kredit och inkasso Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,8 +42,8 @@ Alla belopp i visas i systemvalutan. Du kan ange systemvalutan på sidan **Syste
 
 Som standard visas kredit- och inkassodata för det aktuella företaget. Om du vill visa data för alla företag, tilldelar du programbehörigheten **CustCollectionsBICrossCompany** till rollen.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehållet **Kredit- och inkassohantering** visas i arbetsytan **Kundkredit och kundinkasso**.
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+Power BI-innehållet för **Kredit- och inkassohantering** visas i arbetsytan **Kundkredit och kundinkasso**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 
@@ -63,11 +62,11 @@ Power BI-innehållet **CustCollectionsBICrossCompany** innehåller ofta en rappo
 | Kravstatus          | <ul><li>Omtvistat</li><li>Löfte om betalning brutet</li><li>Lova att betala</li><li>Detaljer om inkassostatus</li><li>Belopp för inkassostatus</li><li>Öppna ärenden</li><li>Öppna aktiviteter</li></ul> |
 | Kravbrev         | <ul><li>Belopp för inkassokod</li><li>Detaljer om belopp för inkassokod</li><li>Belopp för kravbrev per företag</li><li>Belopp för kravbrev per kundgrupp</li><li>Belopp för kravbrev efter region</li></ul> |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
-Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **kredit- och inkassohantering**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna Power BI-innehållet **kredit- och inkassohantering**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
 
 
 |                   Enhet                    |      Sammanlagda huvudmått      |             Datakälla              |                           Fält                            |                                    beskrivning                                     |
@@ -88,5 +87,4 @@ Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **k
 |        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Antalet räntefakturor som har skapats.                |
 |        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Antalet totala försäljningsorder som är spärrade.                 |
 |          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Summan av transaktioner som har skrivits av.                 |
-
 

@@ -1,13 +1,13 @@
 ---
 title: Aktivitetsbaserad legotillverkning
-description: "Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing."
+description: Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350054"
 ---
-
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaserad legotillverkning
 
 [!include [banner](../includes/banner.md)]
@@ -89,7 +88,7 @@ Precis som för processaktiviteter måste du konfigurera en standardtjänst för
 ## <a name="service-quantity-calculation"></a>Beräkning av tjänstkvantitet
 Hela inköpsprocessen baseras på en artikelreferens för en tjänst. Artikelreferensen mäts i en måttenhet för en tjänst. Tjänster mäts normalt i antalet tjänster (enheter) eller i tid. Du kan använda följande metoder för att beräkna tjänstekvantiteten baserat på registrerat slutförande av kanban-jobb:
 
--   **Beräkningen som är baserad på antalet jobb** – Ett kanban-jobb är lika med *n* tjänsteenheter, oavsett den produktkvantitet som anges. Ett jobb motsvarar en materialhanteringsenhet i lean manufacturing. Den här beräkningsmetoden gäller för alla tjänster som har ett fast pris per materialhanteringsenhet. Denna metod gäller därför vanligtvis för överföringsaktiviteter. Den kan emellertid också gälla processaktiviteter som bearbetar hela materialhanteringsenheter.
+-   **Beräkning baserad på antalet jobb** – ett kanban-jobb är lika med *n* tjänsteenheter, oavsett den produktkvantitet som anges. Ett jobb motsvarar en materialhanteringsenhet i lean manufacturing. Den här beräkningsmetoden gäller för alla tjänster som har ett fast pris per materialhanteringsenhet. Denna metod gäller därför vanligtvis för överföringsaktiviteter. Den kan emellertid också gälla processaktiviteter som bearbetar hela materialhanteringsenheter.
 -   **Beräkning baserad på produktkvantiteten** – Tjänstekvantiteten är relativ i förhållande till den produktkvantitet som har tidsplanerats/tillhandahålls. När den angivna produktkvantiteten beräknas kan felaktiga kvantiteter antingen inkluderas eller exkluderas. Den här beräkningsmetoden gäller för alla fall där tjänstepriset per enhet för den bearbetade produkten har överenskommits.
 -   **Beräkning baserad på aktivitetstiden** – Teoretiska aktivitetstider beräknas baserat på bearbetningstiden för aktiviteten, den totala bearbetade kvantiteten samt genomflödestakten för den bearbetade produkten. Den här beräkningsmetoden gäller för tjänster som betalas per timme och har en avvikelse i tid per bearbetad produkt.
 
@@ -104,7 +103,6 @@ Många betraktar transport som ickeproduktivt och menar att det inte tillför n�
 Verksamhetsbaserad legotillverkning inom lean manufacturing gör att du kan integrera speditörer och transporteleverantörer som flyttar material och produkter mellan platser för ett produktionsflöde. Du kan tilldela smittbärare eller leverantören av modellvariabler en överföringsaktivitet. Aktiviteter/överföringsjobbet baseras på ett avtal för tjänster och inköp, och du kan skapa inköpsorder och rekommendationer för inleverans, baserat på de faktiska överföringsjobben. Denna funktion är densamma som funktionerna för processaktiviteter för legotillverkning.  
 
 Därför stöder Finance and Operations numera strukturlisteberäkning som innehåller transporttjänster, skapandet av relaterade inköpsorder, integrerad inleveransregistrering samt integrering av transporttjänstkostnader i kostnaderna för produktionsflödet.
-
 
 
 

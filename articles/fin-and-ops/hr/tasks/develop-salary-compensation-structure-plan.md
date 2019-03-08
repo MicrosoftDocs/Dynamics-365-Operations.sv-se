@@ -1,13 +1,13 @@
---- 
-title: "Utveckla struktur och plan för lön/kompensation"
-description: "Den här uppgiftsguiden är en genomgång av processen att skapa en fast kompensationsplan och låta medarbetare anmäla sig till planen med hjälp av berättiganderegler."
+---
+title: Utveckla struktur och plan för lön/kompensation
+description: Den här uppgiftsguiden är en genomgång av processen att skapa en fast kompensationsplan och låta medarbetare anmäla sig till planen med hjälp av berättiganderegler.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332781"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>Utveckla struktur och plan för lön/kompensation
 
@@ -74,5 +74,4 @@ Den här uppgiftsguiden är en genomgång av processen att skapa en fast kompens
     * Markera det villkor som en medarbetare måste uppfylla för att kunna berättigas till kompensationsplanen. Villkor kan vara en avdelning, en fackförening, en plats (kompensationregion), ett jobb, en funktion, en jobbtyp eller en viss kompensationsnivå. En medarbetare måste uppfylla alla angivna villkor för att kunna berättigas till kompensationsplanen. Om inget villkore anges är alla medarbetare berättigade till kompensationsplanen. Om en medarbetare inte uppfyller kriteriet som ställts in i berättiganderegeln, eller en berättiganderegel inte har ställts in för en kompensationsplan, kommer kompensationsplanen inte att visas i sökningen när du skapar en post med fast kompensation för en medarbetare.  
 7. Stäng sidan.
 8. Stäng sidan.
-
 

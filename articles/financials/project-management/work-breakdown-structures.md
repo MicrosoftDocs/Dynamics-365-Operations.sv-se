@@ -1,13 +1,13 @@
 ---
 title: Uppdelade arbetsstrukturer
-description: "En uppdelad arbetsstruktur (WBS) är en beskrivning av det arbete som utförs för ett projekt. Det är en hierarki med uppgifter som representerar projektteamets kännedom om sammansättningen av arbete och storleken, kostnaden och tidslängden för varje komponent eller uppgift."
+description: En uppdelad arbetsstruktur (WBS) är en beskrivning av det arbete som utförs för ett projekt. Det är en hierarki med uppgifter som representerar projektteamets kännedom om sammansättningen av arbete och storleken, kostnaden och tidslängden för varje komponent eller uppgift.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWorkBreakdownStructure
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df4bc39f8df80580261102941712622ed59262bd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358909"
 ---
-
 # <a name="work-breakdown-structures"></a>Uppdelade arbetsstrukturer
 
 [!include [banner](../includes/banner.md)]
@@ -90,7 +89,7 @@ Du kan slutföra följande hierarkioperationer om du vill aktivera generering av
 
 **Ny uppgift** Alla nya uppgifter som du skapar läggs till automatiskt under rotnoden och ett WBS-nummer tilldelas automatiskt till uppgiften. WBS-numret representerar uppgiftens nivå i hierarkin. För uppgifter i den första nivån under projektrotuppgiften används numreringen 1, 2, 3 och så vidare. För uppgifter under den första nivån används numreringen 1.1, 1.2, 1.3 och så vidare. För varje nivå som läggs till under en föregående nivå anges i en ny prickig serie med nummer. 
 
-För närvarande kan du inte anpassa numrering för WBS. 
+För närvarande kan du inte anpassa numrering för WBS. 
 
 **Dra in uppgift** När du drar in en uppgift blir den underordnad föregående uppgift. WBS-numret för den nya underordnade uppgiften omräknas automatiskt baserat på WBS-numret för dess nya överordnade. Den överordnade uppgiften är nu en sammanfattnings- eller behållaruppgift och blir därför en summering av dess deluppgifter. 
 
@@ -106,7 +105,7 @@ För närvarande kan du inte anpassa numrering för WBS.
 Tidsplanuppskattning är vanligtvis det andra steget i att skapa en WBS. Som bästa praxis bör du slutföra tidsplanuppskattning efter att du skapar uppgifterna. Sidan **Uppdelad arbetsstruktur** i Finance and Operations har två avsnitt. Det övre fönstret är avsett för tidsplanuppskattning och det nedre fönstret innehåller fliken **Uppskattade kostnader och intäkter** som du kan använda för kostnadsuppskattning. 
 **Uppgiftsberoenden** I en WBS kan du skapa en företrädarrelation mellan uppgifter. När du tilldelar företrädaruppgifter till en uppgift, kan den uppgiften endast starta när alla dess företrädaruppgifter har slutförts. Planerat startdatum för uppgiften ställs automatiskt in på det senaste datumet för alla dess företrädare. 
 
-**Uppgiftsplanering i Microsoft Dynamics 365 for Finance and Operations** Följande faktorer bestämmer planering av lövnoduppgifter:
+**Uppgiftsplanering i Microsoft Dynamics 365 for Finance and Operations** Följande faktorer bestämmer planering av lövnoduppgifter:
 
 -   Företrädare
 -   Insats
@@ -314,7 +313,6 @@ Insats = Antal resurser * Varaktighet * Antalet timmar under en vanlig arbetsdag
 Du kan korrigera alla tidsplanerings samtidigt genom att klicka på **Korrigera alla planeringsfel**. 
 
 Du kan också korrigera tidsplaneringsfel enskilt genom att klicka på varningsikonen för varje uppgift.
-
 
 
 

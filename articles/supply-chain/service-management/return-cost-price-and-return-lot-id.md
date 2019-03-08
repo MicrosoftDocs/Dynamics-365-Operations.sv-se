@@ -1,31 +1,30 @@
 ---
-title: "Retursjälvkostnad och returparti-ID"
-description: "Vill du eventuellt att kostnaden för de returnerade produkterna lika med kostnaden för produkter som vid den tidpunkt då du sålde produkter till kunden. Det gör du med hjälp av **returparti-ID**."
+title: Retursjälvkostnad och returparti-ID
+description: Vill du eventuellt att kostnaden för de returnerade produkterna lika med kostnaden för produkter som vid den tidpunkt då du sålde produkter till kunden. Det gör du med hjälp av **returparti-ID**.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335150"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Retursjälvkostnad och returparti-ID        
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Som standard när du lägger till objekt mot en returorder returneras artiklarna
 
 3.  I formuläret **Skapa returorder** välj ett kundkonto och klicka sedan på **OK**.
 
-4.  I formuläret **returorder - RMA-nummer: %1, %2**, välj ett objekt och ange en negativ kvantitet i fältet **kvantitet**.
+4.  I formuläret **returorder - RMA-nummer: %1, %2** välj ett objekt och ange en negativ kvantitet i fältet **kvantitet**.
 
 5.  Klicka på **Radinformation**.
 
@@ -109,7 +108,6 @@ När du använder fältet **returparti-ID** på en returorderrad för att ange r
 10. I Hantering av lager och lagerplatser använd formuläret **stängning och justering** när du vill köra proceduren **3. Stäng**.
     
     Åtgärden justerar kostnaden på de ursprungliga försäljningsrader som har kostnadsberäknats till -35,00 (5 enheter \*7,00) till -30.00 (5 enheter \*6,00). Detta beror på att lagermodellgruppen använder Först in, först ut (FIFO) och 6,00 per enhet är FIFO-kostnaden från den inköpsordern. Dessutom justerar åtgärden kostnaden på returförsäljningsraden för att matcha kostnaden per styck på den ursprungliga försäljningsraden. Därför justeras kostnaderna för returraden från 35,00 till 30,00.
-
 
 
 

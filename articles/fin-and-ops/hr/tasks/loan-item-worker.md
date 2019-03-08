@@ -1,13 +1,13 @@
---- 
-title: "Låneartikel till en arbetare"
-description: "I den här proceduren visas hur du lånar ut en artikel till en arbetare och registrerar den arbetare som returnerar en artikel."
+---
+title: Låneartikel till en arbetare
+description: I den här proceduren visas hur du lånar ut en artikel till en arbetare och registrerar den arbetare som returnerar en artikel.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPersonLoan, HcmPersonLookup
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 9041a24a7197c350a38339408197f643f2b9b6dd
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332229"
 ---
 # <a name="loan-item-to-a-worker"></a>Låneartikel till en arbetare
 
@@ -43,5 +43,4 @@ I den här proceduren visas hur du lånar ut en artikel till en arbetare och reg
 1. Gå till Personal > Arbetare > Låneartiklar > Lånad utrustning.
 2. Klicka på Redigera.
 3. Ange ett datum i fältet Faktisk retur.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Inköpspolicyer"
-description: "Det här avsnittet innehåller information om inköpspolicyer. En inköpspolicy är en grupp regler som styr processen för inköpsrekvisition. Administratörer som är hjälper till med inköpspolicyer för anskaffning implementerar sin anskaffningsstrategi genom att skapa en policystruktur som stämmer överens med organisationens strategiska inköpskrav."
+title: Inköpspolicyer
+description: Det här avsnittet innehåller information om inköpspolicyer. En inköpspolicy är en grupp regler som styr processen för inköpsrekvisition. Administratörer som är hjälper till med inköpspolicyer för anskaffning implementerar sin anskaffningsstrategi genom att skapa en policystruktur som stämmer överens med organisationens strategiska inköpskrav.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358771"
 ---
-
 # <a name="purchasing-policies"></a>Inköpspolicyer
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Inköpsorderskapande och efterfrågekonsolideringsregeln definierar policyregler
     -   **Tillåt inte efterfråganskonsolidering** – Inga godkända inköpsrekvisitionsrader är valbara för efterfråganskonsolidering. Det här alternativet är markerat som standard och gäller endast för inköpsrekvisitionsrader som måste bearbetas manuellt för inköpsorderskapelse.
     -   **Tillåt alltid efterfråganskonsolidering** – Alla godkända inköpsrekvisitionsrader är valbara för efterfråganskonsolidering. **Obs!** Om du väljer alternativet **Tillåt alltid efterfråganskonsolidering** på fliken **Efterfråganskonsolidering** men du väljer alternativet **Automatiskt skapande av inköpsorder** på fliken **Manuellt skapande av inköpsorder** kommer alla inköpsrekvisitioner att hållas för manuell bearbetning.
     -   **Tillåt efterfråganskonsolidering under dessa villkor** – Definiera kriterierna som avgör om godkända inköpsrekvisitionsrader är valbara för efterfråganskonsolidering. För varje typ av inköpsrekvisitionsraden kan du ange kriterierna efter anskaffningkategori och leverantör. Om du väljer **Tillåt efterfråganskonsolidering under dessa villkor** kan du ange kriterierna efter anskaffningskategori och leverantör, För varje typ av inköpsrekvisitionsrad. När du väljer en anskaffningkategori markeras även alla underkategorier för anskaffningkategorin. Om du väljer alternativet **Alla** för en viss radtyp, är alla inköpsrekvisitionsrader för den radtyp valbara för begärankonsolidering.
-
 
 
 

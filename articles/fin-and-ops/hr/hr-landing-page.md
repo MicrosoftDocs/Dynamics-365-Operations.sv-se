@@ -1,13 +1,13 @@
 ---
 title: Personal
-description: "Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
+description: Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
 author: rschloma
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341774"
 ---
-
 # <a name="human-resources"></a>Personal
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +80,7 @@ Utöver att kompensera din personal i form av löner och bonusar går det att ut
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
 
-Med Microsoft Dynamics AX går det att upprätthålla en säker arbetsmiljö som överensstämmer med gällande lagar, inklusive Americans with Disabilities Act eller INS-lagstiftning. Det går till exempel att hantera de fysiska kraven för specifika jobb samt spåra förfrågningar för anpassningar som hjälper organisationen att optimera arbetsstyrkans kompetenser.
+Microsoft Dynamics AX kan hjälpa dig att upprätthålla en säker arbetsmiljö som överensstämmer med gällande lagar, inklusive Americans with Disabilities Act eller INS-lagstiftning. Det går till exempel att hantera de fysiska kraven för specifika jobb samt spåra förfrågningar för anpassningar som hjälper organisationen att optimera arbetsstyrkans kompetenser.
 
 - [Verifiering av I–9-anställningsformulär](localizations/noam-usa-form-i-9-verification.md)
 - [Efterleva Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
@@ -95,4 +94,3 @@ Det går att utforma och dela ut enkäter för att samla in information används
 - [Utforma en enkät](../../talent/design-questionnaires.md)
 - [Distribuera och slutföra en enkät](../../talent/distribute-questionnaires.md)
 - [Visa och utvärdera resultaten av en enkät](../../talent/evaluate-questionnaire-results.md)
-

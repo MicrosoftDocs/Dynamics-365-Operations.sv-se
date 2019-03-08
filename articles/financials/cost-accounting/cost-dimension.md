@@ -1,13 +1,13 @@
 ---
 title: Skapa dimensioner och importera dimensionsmedlemmar
-description: "Kostnadsredovisningen är en oberoende modul som kräver huvuddata från andra moduler."
+description: Kostnadsredovisningen är en oberoende modul som kräver huvuddata från andra moduler.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: d48ba0a0b80d251e107baa0ceeb66d8e328f13dc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0012761b3aa8ce391b956329a9e249e5c9339db7
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342326"
 ---
-
 # <a name="create-dimensions-and-import-dimension-members"></a>Skapa dimensioner och importera dimensionsmedlemmar
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ När datan väl har importerats till kostnadsredovisningen kan du använda den f
 -  [Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar](map-cost-elements-dimension-members.md)
 -  [Mappa dimension för kostnadselement (uppgiftsguide)](./tasks/map-cost-element-dimension.md)
 -  [Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar](statistical-measure-provider-template.md)
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "ER Använd dokumenthanteringsfiler i formatutmatningar (Del 1 - Förbered datamodellen)"
-description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar."
+---
+title: ER Använd dokumenthanteringsfiler i formatutmatningar (Del 1 - Förbered datamodellen)
+description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 00d366e61077e27a13b13e31a55acc89ae2b0cd0
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345247"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1-prepare-data-model"></a>ER Använd dokumenthanteringsfiler i formatutmatningar (Del 1: Förbered datamodellen)
 
@@ -67,5 +67,4 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 3. Ange "Customer invoice model (custom)" i namnfältet.
     * Fakturamodell för kund (anpassad)  
 4. Klicka på Skapa konfiguration.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Godkänn och bekräfta inköpsorder"
-description: "Det här avsnittet innehåller en beskrivning av de statusar en inköpsorder (IO) genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder."
+title: Godkänn och bekräfta inköpsorder
+description: Det här avsnittet innehåller en beskrivning av de statusar en inköpsorder (IO) genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -15,18 +15,17 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336967"
 ---
-
 # <a name="approve-and-confirm-purchase-orders"></a>Godkänn och bekräfta inköpsorder
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ När en order har bekräftats kan du inte längre ta bort den. Du kan dock ändr
 [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 
 [Översikt över leverantörsfakturor](../../financials/accounts-payable/vendor-invoices-overview.md)
-
 
 
 

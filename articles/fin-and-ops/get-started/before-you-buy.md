@@ -1,13 +1,13 @@
 ---
-title: "Innan du köper"
-description: "Stegv-för-steg-instruktioner som ska användas när du funderar på att köpa Dynamics 365 for Finance and Operations."
+title: Innan du köper
+description: Stegvisa instruktioner som ska användas när du funderar på att köpa Dynamics 365 for Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 01/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,27 +16,26 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345477"
 ---
-
 # <a name="before-you-buy"></a>Innan du köper
 
 [!include [banner](../includes/banner.md)]
 
-Ny på Dynamics 365 for Finance and Operations? Vi har samlat ihop en steg-för-steg-guide om du fortfarande utvärderar Finance and Operations eller är redo för att göra ett inköp.
+Ny till Dynamics 365 for Finance and Operations? Vi har samlat ihop en steg-för-steg-guide om du fortfarande utvärderar Finance and Operations eller är redo för att göra ett inköp.
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Steg ett: Prova Finance and Operations gratis under 30 dagar
 
-Du kan prova en 30 dagars provversion av Dynamics 365 for Finance and Operations genom en enkel e-postregistrering. Provversionen av Finance and Operations innehåller en Komma igång-guide med steg-för-steg-instruktioner som låter dig visa specifika scenarier i praktiken. Produkten är tillgänglig att utforska och utöva scenarier, men kan inte anpassas. Demodata ingår för att underlätta användningen av produkten och för att upplevelsen ska bli mer beskrivande. En påminnelse i e-postmeddelandet skickas 3 dagar innan testperioden går ut. Hämta information på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Du kan prova Dynamics 365 for Finance and Operations i 30 dagar genom en enkel e-postregistrering. Provversionen av Finance and Operations innehåller en Komma igång-guide med steg-för-steg-instruktioner som låter dig visa specifika scenarier i praktiken. Produkten är tillgänglig att utforska och utöva scenarier, men kan inte anpassas. Demodata ingår för att underlätta användningen av produkten och för att upplevelsen ska bli mer beskrivande. En påminnelse i e-postmeddelandet skickas 3 dagar innan testperioden går ut. Hämta information på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Steg två: Välj ett distributionsalternativ.
 
-Du kan nu distribuera Microsoft Dynamics 365 for Finance and Operations i molnet eller lokalt. Molndistributioner erbjuder en ERP-tjänst som hanteras fullt ut av Microsoft, medan lokala distributioner installeras lokalt i kundens datacenter.
+Nu kan du distribuera Microsoft Dynamics 365 for Finance and Operations i molnet eller lokalt. Molndistributioner erbjuder en ERP-tjänst som hanteras fullt ut av Microsoft, medan lokala distributioner installeras lokalt i kundens datacenter.
 
 Följande beaktanden skall vidtas om du väljer ett lokalt distributionsalternativ:
 
@@ -46,7 +45,7 @@ Följande beaktanden skall vidtas om du väljer ett lokalt distributionsalternat
 - [Minsta infrastrukturkrav](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
-> Lokal distribution av Microsoft Dynamics 365 for Finance and Operations stöds inte av någon offentlig molnbaserad infrastruktur, inklusive Azure.
+> Lokala distributioner av Microsoft Dynamics 365 for Finance and Operations stöds inte i alla offentliga molnbaserade infrastrukturer, inklusive Azure.
 
 Mer information finns i [Distributionsalternativ](../../dev-itpro/deployment/choose-deployment-type.md)
 
@@ -54,7 +53,7 @@ Mer information finns i [Distributionsalternativ](../../dev-itpro/deployment/cho
 
 Om du vill utforska prenumerationsalternativ, gå till [Dynamics 365](https://www.microsoft.com/dynamics365/pricing) prissättningssida. Den här sidan innehåller flera olika planer för att passa ditt företags behov.
 
-Det finns många sätt att köpa prenumeration av Dynamics 365 for Finance and Operations:
+Det finns många sätt att köpa en prenumeration för Dynamics 365 for Finance and Operations:
 
 - Köp via en partner och använd volymlicensiering (molnbaserad eller lokal)
 - Köp via en molnbaserad lösningsleverantör (endast moln)
@@ -79,7 +78,7 @@ En Microsoft molnbaserad lösningsleverantör kan samarbeta med dig för att fö
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Köp via en Dynamics-partner (lokal)
 
-Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köp Dynamics 365 for Finance and Operations (lokal)](purchase-on-premises.md)
+Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köpa Dynamics 365 for Finance and Operations (lokalt)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Välj ditt stödalternativ
 
@@ -96,5 +95,4 @@ Microsoft FastTrack för Dynamics 365 är vår lyckade kundtjänst som är utfor
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Om du uppgraderar från Dynamics AX 2012 eller migrerar från AX 2009
 
-Om du är kund som uppgraderar från Microsoft Dynamics AX 2012 eller migrerar från Microsoft Dynamics AX 2009 kan du vara berättigad till en längre utvärderingsversion. Kontakta <daxcf@microsoft.com> för mer information.
-
+Om du är kund som uppgraderar från Microsoft Dynamics AX 2012 eller migrerar från Microsoft Dynamics AX 2009, kan du vara berättigad till en längre utvärderingsversion. Kontakta <daxcf@microsoft.com> för mer information.

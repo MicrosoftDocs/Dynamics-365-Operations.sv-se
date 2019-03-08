@@ -1,13 +1,13 @@
 ---
-title: "Rapportträddefinitioner i ekonomiska rapporter"
-description: "Den här artikeln innehåller information om rapportdefinitioner. En rapportträdsdefinition är en rapportkomponent eller ett byggblock som bidrar till att definiera strukturen och hierarkin i din organisation."
+title: Rapportträddefinitioner i ekonomiska rapporter
+description: Den här artikeln innehåller information om rapportdefinitioner. En rapportträdsdefinition är en rapportkomponent eller ett byggblock som bidrar till att definiera strukturen och hierarkin i din organisation.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316957"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -49,9 +48,9 @@ Du kan skapa ett obegränsat antal rapportträd för att visa ditt företags dat
 ## <a name="create-a-reporting-tree-definition"></a> Skapa rapportträddefinition
 En rapportträddefinition innehåller de kolumner som beskrivs i följande tabell.
 
-| Rapportträdkolumn | beskrivning |
+| Rapportträdkolumn | Beskrivning |
 |-----------------------|-------------|
-| Företag               | Företagsnamn för rapportenheten. Värdet **@ANY**, som normalt bara tilldelas sammanfattningsnivån aktiverar rapportträdet som ska användas för alla företag. Alla underordnade grenar har ett tilldelat företag. |
+| Företag               | Företagsnamn för rapportenheten. Värdet **@ANY** som endast brukar tilldelas sammanfattningsnivån, gör det möjligt att använda rapportträdet för alla företag. Alla underordnade grenar har ett tilldelat företag. |
 | Enhetsnamn             | Den kod som identifierar den här rapportenheten i det grafiska rapportträdet. Se till att upprätta ett unikt kodsystem som är konsekvent och som är enkelt för användarna att förstå. |
 | Enhetsbeskrivning      | Rapportenhetsrubriken visas i rapportens sidhuvudet eller sidfoten om du anger **UnitDesc** som kod i fliken **Sidhuvud och Sidfot** på rapportdefinitionen. Rubriken visas i rapportradbeskrivningen om du anger **UnitDesc** i cellen **Beskrivning** på raddefinitionen . |
 | Dimensioner            | En rapportenhet om du vill ställa ut information direkt från ekonomiska data. Den definierar den logiska placeringen och längderna för kontot och de relaterade segmenten. Varje rapportenhetsrad måste ha en dimension i den här kolumnen. Du kan också placera en dimension på en rad för en summeringsenhet (till exempel för utgifter som är direkt kopplade till enheten). Om du anger en dimension på en rad för en summeringsenhet ska konton som används i överordnade enheter inte användas i underordnade. I annat fall kan belopp dubbleras. |
@@ -166,9 +165,9 @@ Du kan förhindra vissa användare och grupper från åtkomst till en rapportenh
 3. I dialogrutan **Enhetssäkerhet** väljer du ett namn och klickar sedan på **Ta bort.**.
 4. Klicka på **OK**.
 
-### <a name="link-to-reports"></a>Länk till rapporter
+### <a name="link-toreports"></a>Länk till rapporter
 
-Efter att du har skapat kolumnen **Rapport** i raddefinitionen och angett vilken rapport som ska inkluderas i rapporten måste du uppdatera rapportträdet med den länkade kolumnen och informationen om rapporten. En rapport kan importeras till alla enheter i rapportträdet.
+Efter att du har skapat kolumnen  **Rapport** i raddefinitionen och angett vilken rapport som ska inkluderas i rapporten måste du uppdatera rapportträdet med den länkade kolumnen och informationen om rapporten. En rapport kan importeras till alla enheter i rapportträdet.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identifiera rapporten i ett rapportträd
 
@@ -222,4 +221,3 @@ Följande exempel visar möjlig information som används i en rapportträddefini
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-

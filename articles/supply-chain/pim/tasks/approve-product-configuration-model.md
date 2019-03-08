@@ -1,13 +1,13 @@
---- 
-title: "Godkänn en produktkonfigurationsmodell"
-description: "När du kör den här proceduren krävs det att det finns minst en modell för produktkonfiguration."
+---
+title: Godkänn en produktkonfigurationsmodell
+description: När du kör den här proceduren krävs det att det finns minst en modell för produktkonfiguration.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductModelVersion, PCApproveProductModelVersion, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c196731046fa01059d61f2df08f47639ba839642
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fa4548d3017246cbe49e2613f8990df6ea1c368b
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360519"
 ---
 # <a name="approve-a-product-configuration-model"></a>Godkänn en produktkonfigurationsmodell
 
@@ -48,5 +48,4 @@ När du kör den här proceduren krävs det att det finns minst en modell för p
 12. Markera ett alternativ i fältet Prissättningsmetod.
     * Aktivera produktmodellsversionen. Det är endast möjligt att ha en aktiv produkt för en produktmodell åt gången.  
 13. Stäng sidan.
-
 

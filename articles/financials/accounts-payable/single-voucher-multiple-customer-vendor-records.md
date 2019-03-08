@@ -1,13 +1,13 @@
 ---
-title: "En verifikation med flera kund- eller leverantörsposter"
-description: "Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 for Finance and Operations och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling."
+title: En verifikation med flera kund- eller leverantörsposter
+description: Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 for Finance and Operations och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d27c4182703b4421763036b2a338b3598f9e969b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330366"
 ---
-
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>En verifikation med flera kund- eller leverantörsposter
 
 [!include [banner](../includes/banner.md)]
@@ -249,7 +248,6 @@ För att undvika oönskade problem med framtida kvittningar för denna transakti
 | **Verifikation** | **Kontotyp** | **Konto** | **Beskrivning** | **Debet** | **Kredit** | **Avräkningstyp** | **Motkonto** |
 | 001         | Kund         | US-008      |                 |           |  75,00     | Redovisning          | 999999---          |
 | 002         | Leverantör           | 1001        |                 |  75,00    |            | Redovisning          | 999999---          |
-
 
 
 

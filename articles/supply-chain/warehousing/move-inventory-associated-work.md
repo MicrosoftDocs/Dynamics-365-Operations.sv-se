@@ -1,13 +1,13 @@
 ---
-title: "Lagerrörelse med tillhörande arbete i lagerstyrning"
-description: "Det här avsnittet beskriver hur du ställer in och använder bekräftelse av komponentplockning från en mobil enhet."
+title: Lagerrörelse med tillhörande arbete i lagerstyrning
+description: Det här avsnittet beskriver hur du ställer in och använder bekräftelse av komponentplockning från en mobil enhet.
 author: Mirzaab
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorker
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 618942ff22b6a81c75bd472955e4add14e6f4d84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7b330d6aa8e972d3c35bb7783ec0a39f09775011
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347662"
 ---
-
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Lagerrörelse med tillhörande arbete i lagerstyrning
 
 [!include [banner](../includes/banner.md)]
@@ -59,5 +58,4 @@ För den arbetare som ska kunna flytta reserverat lager väljer du kryssrutan **
 
 Denna funktion har också anpassats i efterhand för Microsoft Dynamics AX 2012 R3 och blir tillgänglig som en del av CU12.
 Den kan också hämtas separat via KB-nummer 3192548. 
-
 

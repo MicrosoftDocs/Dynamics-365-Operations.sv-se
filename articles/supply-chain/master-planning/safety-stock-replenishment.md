@@ -1,32 +1,31 @@
 ---
-title: "Säkerhet för artiklar i lageruppfyllelse"
-description: "Här beskrivs uppfyllandet av säkerhetslagret och hur du ställer in säkerhetslagerantalet för artiklar."
+title: Säkerhet för artiklar i lageruppfyllelse
+description: Här beskrivs uppfyllandet av säkerhetslagret och hur du ställer in säkerhetslagerantalet för artiklar.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 147cc3984e6dc641209beefdb3545615b42767a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: d6ecb346f7bfa54a4e16307f623c82acb3a86892
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341544"
 ---
-
 # <a name="safety-stock-fulfillment-for-items"></a>Säkerhet för artiklar i lageruppfyllelse
 
 [!include [banner](../includes/banner.md)]
@@ -117,4 +116,3 @@ Fullgörande av transaktionen för säkerhetslagret aktier prioriteras ned om sy
 Under huvudplaneringens täckningfas prioriteras lagerpåfyllnad av säkerhetslager inte längre ned. Lagerbehållning kan användas före alla andra typer av efterfrågan. Under fördröjningsberäkningen läggs ny logik till som överskrider fördröjda försäljningsrader, strukturlisteradbehov och alla andra behovstyper, för att fastställa om de kan levereras i tid, förutsatt att säkerhetslagret används. Om systemet identifierar att det kan minimera fördröjningar genom att använda säkerhetslagret, ersätter sedan försäljningsrader eller strukturlisterader den ursprungliga täckningen med säkerhetslagret och systemet utlöser lagerpåfyllnad för säkerhetslagret i stället.
 
 Om planen eller artikeln inte har ställts in för försenad beräkning har säkerhetslagerbegränsningen samma prioritet som övrig efterfrågan. Detta innebär att en reserv av lagerbehållning och annat tillgängligt lager före andra typer av efterfrågan.
-

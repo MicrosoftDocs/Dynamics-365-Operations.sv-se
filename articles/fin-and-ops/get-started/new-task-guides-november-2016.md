@@ -1,13 +1,13 @@
 ---
 title: Nya eller uppdaterade uppgiftsguider (november 2016)
-description: "Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft (november 2016 - alla språk) APQC Unified Library för Microsoft Dynamics 365 for Operations. Inge nytt Komma igång-biblioteket gavs ut."
+description: Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics 365 for Operations (november 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9cba30560762b5f647621aafb8db19241523f904
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348927"
 ---
-
 # <a name="new-or-updated-task-guides-november-2016"></a>Nya eller uppdaterade uppgiftsguider (november 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft (november 2016 - alla språk) APQC Unified Library för Microsoft Dynamics 365 for Operations. Inge nytt Komma igång-biblioteket gavs ut.
+Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics 365 for Operations (november 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut.
 
-APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna som ska användas om du behöver hjälp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations plattformsuppdatering 3, Microsoft Dynamics AX plattformsuppdatering 2, Dynamics AX May 2016-uppdateringen och Microsoft Dynamics AX februari 2016-utgåvan. Mer information om dessa utgåvor finns i [Vad är nytt eller ändrat](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
+(November 2016 – alla språk) APQC Unified Library innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations-plattformsuppdatering 3 Microsoft Dynamics AX-plattformsuppdatering 2, Dynamics AX maj 2016 uppdatering Microsoft Dynamics AX februari 2016 utgåvan. Mer information om dessa utgåvor finns i [Vad är nytt eller ändrat](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
 
 > [!NOTE]
-> En asterisk (\*) bredvid rubriken för en affärsprocessmodellerar (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics 365 for Operations november 2016-uppdateringen och stöds inte i tidigare versioner av Microsoft Dynamics AX.
+> En asterisk (\*) bredvid rubriken för en affärsprocessmodellerare (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics 365 for Operations november 2016 -uppdateringen och inte stöds i tidigare versioner av Microsoft Dynamics AX.
 
 ### <a name="accounts-payable"></a>Leverantörsreskontra
 
@@ -549,4 +548,3 @@ APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna
 [Nya eller uppdaterade uppgiftsguider tillgängliga (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider finns tillgängliga (augusti 2016)](new-updated-task-guides-available-august-2016.md)
-

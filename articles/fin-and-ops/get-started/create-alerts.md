@@ -1,13 +1,13 @@
 ---
 title: Skapa notifieringsregler
-description: "Det här avsnittet innehåller information om notifieringar och förklarar hur du skapar en notifieringsregel så att du meddelas om händelser, t.ex. ett datum som anländer eller en viss händelse som inträffar."
+description: Det här avsnittet innehåller information om notifieringar och förklarar hur du skapar en notifieringsregel så att du meddelas om händelser, t.ex. ett datum som anländer eller en viss händelse som inträffar.
 author: tjvass
 manager: AnnBe
 ms.date: 06/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: cbf4917424e72a70a6d513b5daf45f6bf9cd57c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 78e1e6f7be04e1d4fecae080cbd4a285358590fb
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329423"
 ---
-
 # <a name="create-alert-rules"></a>Skapa notifieringsregler
 
 [!include [banner](../includes/banner.md)]
@@ -84,4 +83,3 @@ På snabbfliken **Notifiera mig** i dialogrutan **Skapa notifieringsregel** kan 
 7. På snabbfliken **Notifiera med** på fältet **Ämne**, acceptera standardämnet för e-postmeddelandet eller ange ett nytt ämne. Texten som används som ämne för e-postmeddelandet som du får när en notifiering initieras.
 8. Skriv ett valfritt meddelande i fältet **Meddelande**. Den text används som meddelandet som du får när en notifiering utlöses.
 9. Välj **OK** om du vill spara inställningarna och skapa notifieringsregeln.
-

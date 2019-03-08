@@ -1,13 +1,13 @@
---- 
+---
 title: Tilldela en fritextfakturamall till en kund
 description: Denna uppgift visar hur du tilldelar en fritextfakturamall till en kund.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318935"
 ---
 # <a name="assign-free-text-invoice-template-to-a-customer"></a>Tilldela en fritextfakturamall till en kund
 
@@ -48,5 +48,4 @@ Denna uppgift visar hur du tilldelar en fritextfakturamall till en kund. I denna
 10. Välj upprepningsmönstret.
     * Dagligen – Ange det här alternativet och ange antalet dagar i fältet Per. Om du till exempel anger 15, kommer en faktura skapas var 15:e dag för den här kunden.  Varje vecka - Välj det här alternativet och ange antalet veckor i fältet Per. Om du till exempel anger 2, kommer en faktura skapas varannan vecka för den här kunden.  Varje månad - Välj det här alternativet och ange antalet månader i fältet Per. Om du till exempel anger 6, kommer en faktura skapas var sjätte månad för den här kunden.  Årligen - Välj det här alternativet och ange antalet år i fältet Per. Om du till exempel anger 2, kommer en faktura skapas vartannat år för den här kunden.  
 11. Ange ett tal i fältet Per.
-
 

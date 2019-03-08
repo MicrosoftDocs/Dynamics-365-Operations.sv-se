@@ -1,13 +1,13 @@
---- 
-title: "Utforma ER-konfigurationer för att tolka inkommande dokument"
-description: "Denna procedur visar hur du utformar ER-konfigurationer (elektronisk rapportering) för att tolka ett inkommande elektroniskt dokument."
+---
+title: Utforma ER-konfigurationer för att tolka inkommande dokument
+description: Denna procedur visar hur du utformar ER-konfigurationer (elektronisk rapportering) för att tolka ett inkommande elektroniskt dokument.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326111"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Utforma ER-konfigurationer för att tolka inkommande dokument
 
@@ -35,7 +35,7 @@ Stegen kan utföras med hjälp av valfri datauppsättning. Innan du börjar, hä
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
     * Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.  
 2. Klicka på Reporting configurations.
-    * Följande scenario används för att visa möjligheterna med tolkning av inkommande elektroniska dokument i XML-format: ERP-programmet (Dynamics 365 for Finance and Operations) begär data från webbtjänsten (t ex http://efsta.org/ räkenskapstjänsten EFSTA) och tolkar inkommande svar för att uppdatera programdatan. Det mest effektiva sättet att tolka använder ett enkelt ER-format trots att förväntad struktur på inkommande dokument i XML-format är annorlunda.   
+    * Följande scenario används för att visa möjligheterna med tolkning av inkommande elektroniska dokument i XML-format: ERP-programmet (Dynamics 365 for Finance and Operations) begär data från webbtjänsten (t.ex. http://efsta.org/ räkenskapstjänsten EFSTA) och tolkar inkommande svar för att uppdatera programdatan. Det mest effektiva sättet att tolka använder ett enkelt ER-format trots att förväntad struktur på inkommande dokument i XML-format är annorlunda.   
 
 ## <a name="import-and-review-er-configurations"></a>Importera och granska ER-konfigurationer
 Importera ER-modellkonfigurationen som innehåller exempeldatamodellen som är utformad för lagring av information om den importerade filen.  
@@ -110,5 +110,4 @@ Du kommer att köra den skapade modellmappningen för testning för att se hur d
     * Klicka på Bläddra och välj filen Response4.xml.  
 16. Klicka på OK.
     * Granska den skapade utleveransen. Observera att svarstypen nu korrekt har erkänts att överensstämma med Response1.xml-fil.  
-
 

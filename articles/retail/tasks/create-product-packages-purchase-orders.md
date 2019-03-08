@@ -1,13 +1,13 @@
---- 
+---
 title: " Skapa produktförpackningar för inköpsorder"
-description: "Den här proceduren går igenom hur du skapar ett produktpaket och använder det i en inköpsorder."
+description: Den här proceduren går igenom hur du skapar ett produktpaket och använder det i en inköpsorder.
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b7a7386a9be15f4eeef7aaab73cb320b71994eea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d89744a4dbe52d201dc370b5cde151cc579508ea
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360450"
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Skapa produktförpackningar för inköpsorder
 
@@ -72,5 +72,4 @@ Den här proceduren går igenom hur du skapar ett produktpaket och använder det
 16. Ange ett nummer i fältet Kvantitet.
 17. Klicka på Skapa.
 18. Klicka på Spara.
-
 

@@ -1,13 +1,13 @@
 ---
 title: Konfigurera kredit och inkasso
-description: "Denna artikel förklarar hur du ställer in samlingsfunktionen."
+description: Denna artikel förklarar hur du ställer in samlingsfunktionen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6b1dcd6ad0ca05a94409d5d23039ccefe53392e3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f35981396c782b530737adac8ad62d0ff4b0f77e
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351848"
 ---
-
 # <a name="set-up-credit-and-collections"></a>Konfigurera kredit och inkasso
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ Ställ in avskrivningskontot som används för redovisningsavskrivningsposten n�
 Uppdatera bankkonton så att de har korrekt journal när NSF-betalningar identifieras på sidan **Inkasso**. På fliken **Valutaledning**, i fältet **NSF-betalningsjournal**, väljer du en betalningsjournal.
 
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Ställa in Outlook-inställningar för användare av sidan Inkasso
-Innan anställda kan skapa aktiviteter eller skicka e-postmeddelanden med hjälp av sidan **Inkasso** måste du kontrollera att konfigurationsnyckeln **Microsoft Outlook-synkronisering** har valts och att Outlook-synkronisering har ställts in för dessa arbetare.
+Innan anställda kan skapa aktiviteter eller skicka e-postmeddelanden med hjälp av sidan **Inkasso** måste du verifiera att konfigurationsnyckeln **Microsoft Outlook-synkronisering** har valts och att Outlook-synkronisering har ställts in för dessa arbetare.
 
 ## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Ställ in inställningar för e-post och adress frö samlingskundkontakter
 Ställ in e-postadresser för kundkontakter om du vill skicka e-postmeddelanden till dessa kontakter från sidan **Inkasso** . Inkassokontakten används som standardkontakten på sidan **Inkasso**. Du kan ställa in en utdragadress för kunden om utdrag ska ha en annan adress än den primära adressen. 
@@ -100,5 +99,4 @@ Mer information finns i följande avsnitt:
  - [Bearbeta kravbrev](tasks/process-collection-letters.md)
 
  - [Granska inkasseringsinformation](tasks/review-collections-information.md)
-
 

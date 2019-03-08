@@ -1,13 +1,13 @@
 ---
-title: "Lagerpåfyllnad"
-description: "Detta avsnitt beskriver de påfyllnadsstrategier som erbjuds för lager som använder funktionerna i lagerhanteringen."
+title: Lagerpåfyllnad
+description: Detta avsnitt beskriver de påfyllnadsstrategier som erbjuds för lager som använder funktionerna i lagerhanteringen.
 author: Mirzaab
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37a5509b6161caffa8f3ab65f1fd8378966c2c30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344534"
 ---
-
 # <a name="replenishment"></a>Lagerpåfyllnad
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ Lagerpåfyllnadsbegäran stöds för försäljningsorder, överföringsorder, pr
 ## <a name="minmax-replenishment"></a>Minsta/största lagerpåfyllnad
 I Minsta/största lagerpåfyllnad fylls lagret på så att behållningen ligger inom de gränser för minsta och största lager som har markerats. Denna process sker som regel en gång varje dag i syfte att säkerställa att samtliga plockplatser fylls maximalt innan plocket inleds. 
 
-Minimi- och maximinivåerna ställs in i en lagerpåfyllnadsmall. Många av de andra inställningarna i mallen liknar inställningarna i mallarna som används i Lagerpåfyllnad baserad på efterfrågan. Mallen ska innehålla en rad för varje artikel och plats. När du kör påfyllnad genom batch-jobb kommer Microsoft Dynamics 365 for Finance and Operations att utvärdera huruvida påfyllnad krävs, detta genom att använda den sekvens som raderna organiserats i. 
+Minimi- och maximinivåerna ställs in i en lagerpåfyllnadsmall. Många av de andra inställningarna i mallen liknar inställningarna i mallarna som används i Lagerpåfyllnad baserad på efterfrågan. Mallen ska innehålla en rad för varje artikel och plats. När du kör lagerpåfyllnad med hjälp av batchjobbet utvärderar Microsoft Dynamics 365 for Finance and Operations om påfyllnad krävs, i den sekvens raderna är ordnad i. 
 
 Observera att strategin Minsta/största lagerpåfyllnad inte kan fylla på en tom plats om inte platsen är markerad som fast lagerplats för artikeln. Om platsen som måste fyllas på inte är fast, kan systemet inte avgöra vilken vara som ska fyllas på. Därför krävs åtminstone en viss lagerbehållning innan lagerpåfyllnad utförs.
 
@@ -77,5 +76,4 @@ Du kan applicera en omedelbar påfyllnadsstrategi istället för att behöva sam
 |    Platsprofiler    |                                                                                                        Platsprofiler krävs för att skapa platser.                                                                                                        |
 |   Platsdirektiv   |                                                       Platsdirektiv krävs för att dirigera arbete till de platser där påfyllnad krävs, samt till de platser lager hämtas ifrån.                                                        |
 |     Arbetsmallar      |                                                   Arbetsmallar av typen <strong>Lagerpåfyllnad</strong> krävs för att skapa lagerpåfyllnadsarbete så att lagret kan flyttas till valfria platser.                                                    |
-
 

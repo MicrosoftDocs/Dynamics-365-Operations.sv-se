@@ -1,13 +1,13 @@
 ---
-title: "Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet"
-description: "Den här artikeln diskuterar effekten av kvittning av betalningar till fakturor för kunder. Scenariot fokuserar på effekterna i reskontran, inte i redovisningen."
+title: Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
+description: Den här artikeln diskuterar effekten av kvittning av betalningar till fakturor för kunder. Scenariot fokuserar på effekterna i reskontran, inte i redovisningen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 79d252ca04ca9434c10d282722b3e3dec58aab6a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f3843935cf17aeb0fd358398dccbca4cf494b132
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336875"
 ---
-
 # <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
 
 [!include [banner](../includes/banner.md)]
@@ -107,7 +106,6 @@ Arnie ändrar värdet i fältet **Använd kassarabatt** tillbaka till **Normal**
 | ARP-10020  |                  | 2015/07/01  |         |                                      | 297,00                                | 0,00    | USD      |
 | RAB-10020 |                  | 2015/07/01  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 2015/07/11 |         |                                      | 700,00                                | 0,00    | USD      |
-
 
 
 

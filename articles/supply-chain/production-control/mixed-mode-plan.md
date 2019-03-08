@@ -1,13 +1,13 @@
 ---
-title: "Blandad planering - Kombinera diskret, process- och lean-försörjning"
-description: "Detta ämne innehåller information om läget för blandad planering."
+title: Blandad planering - Kombinera diskret, process- och lean-försörjning
+description: Detta ämne innehåller information om läget för blandad planering.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e6a896b2a073e189b956ef189f63908f08606ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358242"
 ---
-
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandad planering - Kombinera diskret, process- och lean-försörjning
 
 [!include [banner](../includes/banner.md)]
 
-Detta ämne innehåller information om läget för blandad planering. I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet. Microsoft Dynamics 365 for Finance and Operations ser till att materialflödet följer dina modeller, oavsett vald leveranspolicy (kanban, produktionsorder, inköpsorder, batchorder eller överföringsorder). 
+Detta ämne innehåller information om läget för blandad planering. I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet. Microsoft Dynamics 365 for Finance and Operations ser till att materialflödet följer dina modeller, oavsett den valda leveranspolicyn (kanban, produktionsorder, inköpsorder, batchorder eller överföringsorder). 
 
 Du kan välja din övergripande strategi för att leverera en produkt, oavsett produktstrukturen.  
 
@@ -67,7 +66,6 @@ För arbete som är oberoende av policyn, behöver du inte ändra informationen 
 
 ## <a name="process-manufacturing--the-production-type"></a>Process manufacturing – produktion typ
 För fullständig flexibilitet i blandat läge rekommenderar vi att du använder strukturlistor av produktionstyp för alla produkter. Du kan sedan använda produktionsorder, överföringsorder, kanbans eller inköpsorder för att tillhandahålla en produkt. Process manufacturing, måste du använda en typ av **formel**, **Co-produkt**, **biprodukt** eller **planering**. Kanban och produktionsorder kan inte användas för dessa typer av produktion.
-
 
 
 

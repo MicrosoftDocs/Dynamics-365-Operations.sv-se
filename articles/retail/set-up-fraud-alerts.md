@@ -1,13 +1,13 @@
 ---
-title: "Ställa in och arbeta med bedrägerivarningar för kundtjänst"
-description: "Det här avsnittet innehåller information om hur du ställer in regler för att varna kundtjänstrepresentanter om eventuell falsk information när order bearbetas. Du kan definiera särskilda koder som används automatiskt eller manuellt för att spärra misstänkta order."
+title: Ställa in och arbeta med bedrägerivarningar för kundtjänst
+description: Det här avsnittet innehåller information om hur du ställer in regler för att varna kundtjänstrepresentanter om eventuell falsk information när order bearbetas. Du kan definiera särskilda koder som används automatiskt eller manuellt för att spärra misstänkta order.
 author: josaw1
 manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13b6a18750e79a17c7f6034780922c64b12390e2
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361508"
 ---
-
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Ställa in och arbeta med bedrägerivarningar för kundtjänst
 
 [!include [banner](includes/banner.md)]
@@ -69,4 +68,3 @@ Ordern har sparats, men flaggan **bearbeta inte** anges på den. Den här flagga
 Om du vill visa och hantera de order som är spärrade för granskning, gå till **Retail**\>**kunder**\>**Orderspärrar**. På sidan **Orderspärrar** markerar du en post i listan och klickar sedan på **Orderspärr** för att se en mer detaljerad vy som innehåller information om orsaken till spärren. På snabbfliken **bedrägeridetaljer** kan du se systematiskt bedrägerikriterie som befanns vara en matchning för ordern och poäng som har använts. Om ordern har spärrats manuellt, kan du granska eventuella kommentarer som angavs av användaren som spärrats ordern genom att titta på avsnittet **bedrägerianteckningar** på snabbfliken **anteckningar**.
 
 Mer information om hur du arbetar med spärra order, se [orderspärrar](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
-

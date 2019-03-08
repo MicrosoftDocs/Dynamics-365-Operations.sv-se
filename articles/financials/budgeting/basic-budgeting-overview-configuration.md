@@ -1,13 +1,13 @@
 ---
-title: "Budgetöversikt"
-description: "I stort sett alla företag som använder funktionen ekonomi i Microsoft Dynamics 365 for Finance and Operations måste kunna skapa rapporter över budget kontra faktiska värden. Den här artikeln beskriver den minimikonfiguration som krävs för att skapa budgetar i Finance and Operations eller läsa in dem från ett tredjepartsprogram."
+title: Budgetöversikt
+description: I stort sett alla företag som använder funktionen ekonomi i Microsoft Dynamics 365 for Finance and Operations måste kunna skapa rapporter över budget kontra faktiska värden. Den här artikeln beskriver den minimikonfiguration som krävs för att skapa budgetar i Finance and Operations eller läsa in dem från ett tredjepartsprogram.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1d768ee6d2244a237972f7183f27a60b93eea819
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332321"
 ---
-
 # <a name="budgeting-overview"></a>Budgetöversikt
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Den godkända budgeten för ett rättssubjekt är kvar i ett dokument som kallas
 Det finns flera metoder för att skapa budgetregisterposter i Finance and Operations.
 
 -   Ange information om **budgeten registrera poster** sida.
--   Använd Microsoft Excel mallen som du kan öppna genom att klicka på **Öppna i Excel-** knappen på **budgeten registrera poster** sida.
+-   Använd Microsoft Excel mallen som du kan öppna genom att klicka på knappen **Öppna i Excel** på sidan **Budgetregisterposter**.
 -   Använd **Budgetkonto poster** data i Data Management (Datahantering) för att importera poster i registret. Du bör överväga att använda denna metod och att aktivera parameterns **Uppsättningsbaserad** **bearbetningsparameter** när du måste importera budgetkontoposter i systemet.
 -   Om företaget använder Budget planeringsfunktionen för att förbereda budgeten data, kan du använda funktionen **Generera budget registret** regelbundet återkommande process.
 
@@ -80,7 +79,6 @@ Den budgetansvarige kan granska det aktuella tillståndet för en budget i **huv
 Den **faktiska vs budget** undersökning sidan kan du borra i detaljerna i budgeten kontra faktiska belopp. Markera en rad på förfrågan och klicka sedan **periodsaldon** att se budget och faktiska belopp fördelade över verksamhetsåret perioder. **Budgetkontot poster** sida ger djupare genom att detaljerna i budgeten beloppet i budgeten registrera poster. **Allmänna journalposter** sidan öppnar reskontratransaktioner som ingår i beräknade **faktiska** belopp. 
 
 Ett företag som använder Budget planeringsfunktionen kan skapa och använda *budget prognoser* i **huvudboken budgetar och prognoser som** arbetsyta.
-
 
 
 

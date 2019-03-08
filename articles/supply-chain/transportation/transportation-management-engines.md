@@ -1,13 +1,13 @@
 ---
 title: Transporthanteringsmotorer
-description: "Transporthanteringsmotorer definierar logiken som används för att generera och bearbeta transporttariffer i Transporthantering."
+description: Transporthanteringsmotorer definierar logiken som används för att generera och bearbeta transporttariffer i Transporthantering.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361140"
 ---
-
 # <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Följande tabell visar de transporthanteringsmotorer som är tillgängliga i Mic
 | Transporthanteringsmotor | beskrivning                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Tariffmotor**                  | Beräknar tariffer.                                                                                                                                                                                                                                                                                                           |
-| **Allmän motor**               | Enkla hjälpmotorer som används av andra motorer och som inte behöver data från Microsoft Dynamics 365 for Finance and Operations, till exempel en fördelningsmotor. Fördelningsmotorer används för att minska de slutgiltiga kostnaderna för transport till vissa order och rader som baseras på dimensioner, till exempel volym och vikt. |
+| **Allmän motor**               | Enkla hjälpmotorer som används av andra motorer och som inte behöver data från Microsoft Dynamics 365 for Finance and Operations, till exempel en fördelningmotor. Fördelningsmotorer används för att minska de slutgiltiga kostnaderna för transport till vissa order och rader som baseras på dimensioner, till exempel volym och vikt. |
 | **Milkostnadsmotor**               | Beräknar transportavståndet.                                                                                                                                                                                                                                                                                     |
 | **Transporttidsmotor**          | Beräknar den tid det tar att resa från start till mål.                                                                                                                                                                                                                                       |
 | **Zonmotor**                  | Beräknar zon baserat på aktuell adress och beräknar antalet zoner som måste passeras för att resa från adress A till adress B.                                                                                                                                                                    |
@@ -63,8 +62,8 @@ I de flesta fall kan du klicka på knappen **Parametrar** i transporthanteringsm
 |          Parameter           |                                                                                  Beskrivning                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>RateBaseAssigner</em>   | Den .NET-typ som tolkar tariffbastilldelningsdata för ett visst schema. Syntaxen av parametervärdet består av två segment avgränsade med ett vertikalstreck ( |
-|  <em>MileageEngineCode</em>  |                       Kod för milkostnadsmotor som identifierar milkostnadsmotorposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
-| <em>ApportionmentEngine</em> |                        Kod för allmän motor som identifierar fördelningsmotorn i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+|  <em>MileageEngineCode</em>  |                       Koden för milkostnadsmotor som identifierar milkostnadmotorposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+| <em>ApportionmentEngine</em> |                        Koden för allmän motor som identifierar fördelningsmotorn i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hur används metadata i transportledningsmotorer?
 ----------------------------------------------------------
@@ -90,7 +89,7 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | **Zonmotor**                                | Kräver att metadata ska ställas in direkt på zonoriginalet.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Transporttidsmotor** och **Milkostnadmotor** | Hämtar metadata direkt från milkostnadsmotorns konfigurationsinställningsformulär.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Exempel på metadata för en tariffmotor** Transportledningsmotorn kräver identifiering av ursprungsadressen, destinationens stat och land/region samt start- och slutpunkt för försändelsen. Genom att använda dessa krav ser metadata ut som i följande tabell. Registret innehåller också information om vilken typ av ingångsdata som krävs.
+  **Exempel på metadata för en tariffmotor** Transportledningsmotorn kräver identifiering av ursprungsadressen, destinationens stat och land/region samt start- och slutpunkt för försändelsen. Genom att använda dessa krav ser metadata ut som i följande tabell. Registret innehåller också information om vilken typ av ingångsdata som krävs.
 -   Definiera den här informationen i **Transporthantering** &gt; **Inställningar** på sidan **Tariffbastyp**.
 
 | Sekvens | Namn                          | Fälttyp | Datatyp | Uppslagstyp    | Obligatoriskt |
@@ -100,7 +99,6 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | 3        | Destination – från postnummer | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 4        | Destination – till postnummer   | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 5        | Destinationsland           | Uppdrag | Sträng    | Land/region |           |
-
 
 
 

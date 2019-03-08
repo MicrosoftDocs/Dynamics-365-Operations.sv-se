@@ -1,13 +1,13 @@
 ---
-title: "Listsida för kundtransaktioner"
-description: "Det här avsnittet innehåller information om kundtransaktionssidan för Microsoft Dynamics 365 for Finance and Operations."
+title: Listsida för kundtransaktioner
+description: Det här avsnittet innehåller information om Listsida för kundtransaktioner för Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
+ms.openlocfilehash: b9936a66cc8c8abb24601dae91dcfca77e4f58a4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341705"
 ---
-
 # <a name="customer-transactions-list-page"></a>Listsida för kundtransaktioner
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Knappen **Visa kvittningar** i åtgärdsfönstret ger snabb tillgång till kvitt
 
 4. I dialogrutan kan du utföra olika uppgifter. Markera en eller flera verifikationer och välj en av följande knappar:
 
-    - **Visa relaterade** – Visa alla transaktioner i betalningsjournal som skapades i betalningsjournalen som är relaterade till det valda dokumentet visas. Dessutom visas alla kvittningar som är relaterade till betalningarna. Medan du visar relaterade betalningar ändras etiketten på den här knappen till **Visa kvittningar**. Välj **Visa kvittningar** om du endast vill visa transaktioner som visades när du öppnade dialogrutan **Visa kvittningar**.
+    - **Visa relaterade** – visa alla transaktioner i betalningsjournalen och allmänna journaltransaktioner för den kund som har skapats i journalerna där dokumenten som visas i listan skapades. Till exempel om en betalning visas kommer alla betalningar i betalningsjournalen där den skapades att visas. Om en faktura eller betalning visas och den skapades i en redovisningsjournal visas alla dokument i den redovisningsjournalen som den skapades i. Alla kvittningar som är relaterade till listan med dokument visas också. Medan du visar relaterade betalningar ändras etiketten på den här knappen till **Visa kvittningar**. Välj **Visa kvittningar** om du endast vill visa transaktioner som visades när du öppnade dialogrutan **Visa kvittningar**.
     - **Visa historik** – Visa kvittningshistoriken för verifikationerna. Välj **Stäng** för att stänga dialogrutan.
     - **Visa redovisning** – Visa alla verifikationer som är relaterade till de valda dokumenten. Välj **Stäng** för att stänga dialogrutan.
     - **Exportera** – Exportera de valda verifikationerna till Microsoft Excel.
@@ -98,4 +97,3 @@ Varje fält har en annan effekt på transaktionen vid redigering:
 - **Redigera villkoren för kassarabatt** - Kassarabatterna ändras utifrån basdatum och kassarabattsvillkoren.
 
 När du är klar med redigeringen av betalningdinställningar väljer du **Stäng** att spara dina ändringar.
-

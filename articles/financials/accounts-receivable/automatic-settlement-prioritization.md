@@ -1,13 +1,13 @@
 ---
 title: Automatisk kvittning och prioritering
-description: "Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten."
+description: Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318981"
 ---
-
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk kvittning och prioritering
 
 [!include [banner](../includes/banner.md)]
 
 Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 
-Du har två alternativ när du kvittar fakturor och betalningar mot andra transaktioner. Du kan manuellt välja de transaktioner som du vill kvitta, eller också kan Microsoft Dynamics 365 for Finance and Operations markera transaktionerna automatiskt genom att använda automatisk kvittningsfunktionen. Du kan också anpassa hur automatiska kvittningar bearbetas genom att använda alternativet **Prioritera kvittning**. Alla dessa alternativ ingår i de kvittringsparametrar som definieras på sidan **Parametrar för kundreskontra**. Det sätt på vilket transaktioner automatiskt kvittas kan vara olika, beroende på vilken metod som du använder för automatisk kvittning. Följande metoder finns:
+Du har två alternativ när du kvittar fakturor och betalningar mot andra transaktioner. Du kan manuellt välja de transaktioner som du vill kvitta, eller Microsoft Dynamics 365 for Finance and Operations kan markera transaktionerna automatiskt, genom att använda automatisk kvittningsfunktionen. Du kan också anpassa hur automatiska kvittningar bearbetas genom att använda alternativet **Prioritera kvittning**. Alla dessa alternativ ingår i de kvittringsparametrar som definieras på sidan **Parametrar för kundreskontra**. Det sätt på vilket transaktioner automatiskt kvittas kan vara olika, beroende på vilken metod som du använder för automatisk kvittning. Följande metoder finns:
 
 -   Användardefinierad kvittningsprioritet
 -   Standardvald automatisk kvittning
@@ -79,7 +78,6 @@ Om det inte finns någon användardefinierad kvittningsprioritet, markeras autom
 | Faktura 2     | 2015/09/01   | 10002   | 250.00                         | 250.00           | 0,00    | USD      |
 | Faktura 3     | 2015/10/15 |         | 500.00                         | 350,00           | 150,00  | USD      |
 | Räntefaktura | 2015/10/15 |         | 7,00                           | 0,00             | 0,00    | USD      |
-
 
 
 

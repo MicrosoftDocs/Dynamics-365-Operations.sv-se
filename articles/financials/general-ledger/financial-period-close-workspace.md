@@ -1,13 +1,13 @@
 ---
-title: "Arbetsyta för räkenskapsperiodens stängning"
-description: "Det här avsnittet innehåller en översikt över arbetsytan Räkenskapsperiodens stängning och den associerade konfigurationen."
+title: Arbetsyta för räkenskapsperiodens stängning
+description: Det här avsnittet innehåller en översikt över arbetsytan Räkenskapsperiodens stängning och den associerade konfigurationen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9c3c7f00d0a0e4379547edc5199f4a9a6727f3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326916"
 ---
-
 # <a name="financial-period-close-workspace"></a>Arbetsyta för räkenskapsperiodens stängning
 
 [!include [banner](../includes/banner.md)]
@@ -53,7 +52,7 @@ Två indikatorer används för uppgifter:
 -   Ikonen utropstecken anger att aktiviteten är försenad. För aktiviteter som är förfallna markeras förfallodatum med rött.
 -   En hänglåsikon indikerar att uppgiften är beroende av andra uppgifter som ännu inte har slutförts. En uppgift som har blockerats av beroenden kan inte markeras som slutförd. Du kan ange beroenden för en aktivitet med hjälp av åtgärden **Ange beroende**.
 
-Aktivitetens namn är en hyperlänk till Microsoft Dynamics 365 for Operations-sidan eller en annan webbsida dit användaren måste bege sig för att slutföra arbetet. Du kan ställa din denna hyperlänk genom att använda fältet **Uppgiftslänk** när du redigerar eller skapar en uppgift. 
+Aktivitetens namn är en hyperlänk till sidan för Microsoft Dynamics 365 for Operations eller annan webbsida dit användaren måste bege sig för att slutföra arbetet. Du kan ställa din denna hyperlänk genom att använda fältet **Uppgiftslänk** när du redigerar eller skapar en uppgift. 
 
 Du kan bifoga filer, anteckningar, bilder och URL-adresser till en aktivitet med hjälp av åtgärden **Bilagor**. Du kan exempelvis ange journalnummer som används som en del av en aktivitet, lägga till kommentarer om en viss aktivitet eller bifoga en rapportfil som skrevs ut för en aktivitet. En ikon syns i kolumnen **Bilaga** för aktiviteten om det finns en bifogad fil. 
 
@@ -63,7 +62,7 @@ Alternativet **Uppgiften slutförd** måste väljas manuellt när aktiviteten ä
 Du kan visa alla aktuella och föregående periodstängningsuppgifter från listsidan **Alla ekonomiska periodstängningsuppgifter**. Den här listsidan passar bäst för historisk analys av stängningen, detta eftersom den innehåller information om planerade förfallodatum, verkligt slutdatum och den person som har slutfört uppgiften. Du kan enkelt exportera informationen på den här listsidan till Microsoft Excel i rapporterings- och granskningssyfte.
 
 ## <a name="financial-period-close-configuration-page"></a>Sidan Räkenskapsperiodens stängningskonfiguration
-Innan du kan använda arbetsytan **Räkenskapsperiodens stängning** måste du konfigurera processen i Microsoft Dynamics 365 for Finance and Operations på sidan **Räkenskapsperiodens stängningskonfiguration**. (Klicka på **Huvudbok** &gt; **Periodstängning** &gt; **Räkenskapsperiodens stängningskonfiguration**.)
+Innan du kan använda arbetsytan **Räkenskapsperiodens stängning** måste du konfigurera processen i Microsoft Dynamics 365 for Finance and Operations genom att använda **Räkenskapsperiodens stängningskonfiguration**. (Klicka på **Huvudbok** &gt; **Periodstängning** &gt; **Räkenskapsperiodens stängningskonfiguration**.)
 
 ### <a name="resources"></a>Resurser
 
@@ -106,7 +105,6 @@ Tilldela en lämplig kalender för stängningsschemat vi syfte att ange vilka ar
 Du måste också ange de företag som ska associeras med stängningsschemat. Om malluppgifter tilldelas till flera olika företag, skapas separata uppgifter för varje företag som finns i stängningsschemat och som tilldelats malluppgiften. 
 
 När ett stängningsschema är slutfört väljer du alternativet **Stängd** för den. Tidigare aktiviteter är fortsatt tillgängliga från listsidan **Alla stängningsuppgifter för ekonomisk period**, men stängningsschemat tas bort från arbetsytan. När ett stängningsschema har markerats som **Stängt** kan du inte lägga till aktiviteter i det, redigera aktiviteter eller ta bort uppgifter.
-
 
 
 

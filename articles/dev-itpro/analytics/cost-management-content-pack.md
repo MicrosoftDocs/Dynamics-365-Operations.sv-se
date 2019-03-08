@@ -1,13 +1,13 @@
 ---
-title: "Innehåll i Power BI-kostnadshanteringen"
-description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering."
+title: Kostnadshantering Power BI-innehåll
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,15 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327813"
 ---
-
-# <a name="cost-management-power-bi-content"></a>Innehåll i Power BI-kostnadshanteringen
+# <a name="cost-management-power-bi-content"></a>Kostnadshantering Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +35,7 @@ ms.lasthandoff: 08/13/2018
 Microsoft Power BI-innehållet **Kostnadshantering** riktar sig till lagerredovisare eller personer i organisationen som är ansvarig för eller i intresserad av status för lager eller resurser i arbete (PIA) eller som är ansvarig för eller vill analysera standardkostnadsavvikelser.
 
 > [!NOTE]
-> Power BI-innehållet **Kostnadshantering** som beskrivs i detta avsnitt avser Dynamics 365 for Finance and Operations 8.0.
+> **Kostnadshantering** Power BI-iinehåll som beskrivs i detta avsnitt gäller Dynamics 365 for Finance and Operations 8.0.
 > 
 > Power BI-innehållspaketet **Kostnadshantering** som finns tillgänglig på webbplatsen för AppSource har tagits bort. Mer information om denna borttagning finns i [Power BI innehållspaket finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
@@ -46,22 +45,22 @@ Power BI-innehåll bygger på de sammanlagda måtten **CostObjectStatementCacheM
 
 Efter varje uppdatering av tabellen **CostObjectStatementCache** måste den sammanlagda mätningen **CostObjectStatementCacheMonthly** uppdateras innan data i Power BI-visualiseringarna uppdateras.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 
-Power BI innehållet **kostnadshantering** visas i arbetsytorna **Kostnadsredovisning** och **Kostnadsanalys**.
+Power BI-innehållet **kostnadshantering** visas i arbetsytorna **Kostnadsredovisning** och **Kostnadsanalys**.
 
 Arbetsytan **Kostnadsredovisning** innehåller följande flikar:
 
 - **Översikt** – den här fliken visar programdata.
-- **Lagrets redovisningsstatus** – den här fliken visar Power BI innehåll.
-- **Status för tillverkningsredovisning** – den här fliken visar Power BI innehåll.
+- **Lagrets redovisningsstatus** – den här fliken visar Power BI-innehåll.
+- **Tillverkningens redovisningsstatus** – den här fliken visar Power BI-innehåll.
 
 Arbetsytan **Kostnadsanalys** innehåller följande flikar:
 
 - **Översikt** – den här fliken visar programdata.
-- **Lagrets redovisningsanalys** – den här fliken visar Power BI innehåll.
-- **Analys av tillverkningsredovisning** – den här fliken visar Power BI innehåll.
-- **Analys av standardkostnadsavvikelse** – den här fliken visar Power BI innehåll.
+- **Lagrets redovisningsanalys** – den här fliken visar Power BI-innehåll.
+- **Tillverkningens redovisningsanalys** – den här fliken visar Power BI-innehåll.
+- **Analys av standardkostnadsavvikelse** – den här fliken visar Power BI-innehåll.
 
 ## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Rapportsidor som ingår i Power BI-innehållet
 
@@ -173,7 +172,7 @@ Följande register ger en översikt över de visuella effekterna i Power BI-inne
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
-Data från Microsoft Dynamics 365 for Finance and Operations används för att fylla rapportsidorna i Power BI-innehållet **Kostnadshantering**. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Data från Microsoft Dynamics 365 for Finance and Operations används för att fylla i rapportsidorna i **Kostnadshantering** Power BI-innehåll. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Huvudaggregatmått för följande objekt ligger till grund för Power BI-innehållet.
 
@@ -209,4 +208,3 @@ Följande tabell visar nyckeldimensionerna används som filter för att dela upp
 | Juridiska personer                                          | Namn på juridisk person                              |
 | Räkenskapskalendrar                                        | Räkenskapskalender, år, kvartal, period, månad   |
 | Webbplats                                                    | ID, namn, adress, delstat, land               |
-

@@ -1,49 +1,48 @@
 ---
 title: Produktidentifierare
-description: "Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata."
+description: Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
 author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: afd542a652abdf6e45c83a6097dc8f0d36efa905
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335426"
 ---
-
 # <a name="product-identifiers"></a>Produktidentifierare 
 
 [!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
 
-När du arbetar med produkter i fabriken eller på ett lagerställe i Microsoft Dynamics ERP eller Microsoft Dynamics CRM måste du ha en bra strategi för att identifiera de produkterna och produktvarianterna.
+När du arbetar med produkter i fabriken eller på ett lagerställe i Microsoft Dynamics ERP eller Microsoft Dynamics CRM, måste du ha en bra strategi för att identifiera de produkterna och produktvarianterna.
 
 ## <a name="unique-product-numberproduct-id"></a>Unikt produktnummer/produkt-ID
 
-I Microsoft Dynamics 365 för Finance and Operations är den primära identifieraren för en produkt produktnumret (det vill säga det unika produkt-ID:t). Detta nummer kan genereras automatiskt av en nummerserie eller så kan det associeras manuellt med en produkt. Siffrorna kan definieras genom mallen för produktnomenklatur för produktvarianter.
+I Microsoft Dynamics 365 for Finance and Operations är den primära identifieraren för produktnumret (det vill säga unikt produkt-ID). Detta nummer kan genereras automatiskt av en nummerserie eller så kan det associeras manuellt med en produkt. Siffrorna kan definieras genom mallen för produktnomenklatur för produktvarianter.
 
 I många fall skapades inte produktnumret ursprungligen i Finance and Operations. I stället associeras det med en produkt i system för livscykelhantering för produkt (PLM) eller hantering av produktdata (PDM). I det här fallet kan du använda datatabeller för att importera produkterna och produktvarianterna. Finance and Operations och använder numren i alla åtgärder.
 
 När du implementerar Finance and Operations bör du särskilt beakta din strategi för produktnummer. Ett bra numreringssystem förbättrar logistikflöden och förebygger fel. En bra produktidentifierare har högst 15 tecken. Idealiskt har den färre än 10 tecken och innehåller högst fem klassificeringstecken. Du kan också använda söknamn för att aktivera snabbsökning. Ett söknamn är ett ytterligare namn som representerar klassificeringen av en produkt.
 
-När du använder  Common Data Service (CDS), är produktnumret i Finance and Operations även i produktnumret i CDS. Produktvarianter synkroniseras till CDS som olika produkter.
+När du använder Common Data Service (CDS), är produktnumret i Finance and Operations även i produktnumret i CDS. Produktvarianter synkroniseras till CDS som olika produkter.
 
 ## <a name="item-number-and-product-dimensions"></a>Artikelnummer och produktdimensioner
 
@@ -186,4 +185,3 @@ Nu kan du använda dataentiteterna **Entiteten identifierare av common data serv
 ## <a name="related-topic"></a>Relaterat ämne
 
 [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
-

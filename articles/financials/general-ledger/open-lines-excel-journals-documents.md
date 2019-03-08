@@ -1,13 +1,13 @@
 ---
-title: "Publicera journalrader och dokument från Microsoft Excel"
-description: "I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett."
+title: Publicera journalrader och dokument från Microsoft Excel
+description: I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 36eed913e658433b9200043163aad38521381be2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2da864254efda2621e1b157413a16d251020786
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321051"
 ---
-
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Publicera journalrader och dokument från Microsoft Excel
 
 [!include [banner](../includes/banner.md)]
@@ -50,8 +49,7 @@ Användarna kan ange och publicera rader för redovisningsjournaler från Micros
 
 När rader har publicerats valideras de för att kontrollera att de uppfyller de regler som anges i de ekonomiska journalerna. När rader publiceras kan användare redigera eller bokföra verifikationerna från Microsoft Dynamics 365 for Finance and Operations. 
 
-Ytterligare ändringar krävs om du vill lägga till ekonomiska dimensioner i en mall. Mer information finns i [Lägga till dimensioner i Microsoft Excel-mallen](../../dev-itpro/financial/add-dimensions-excel-templates.md). När dimensionerna har lagts till i enheten är de tillgängliga i Excel-designern och kan läggas till i mallen.
-
+Ytterligare ändringar krävs om du vill lägga till ekonomiska dimensioner i en mall. Mer information finns i [Lägga till dimensioner i Microsoft Excel-mall](../../dev-itpro/financial/add-dimensions-excel-templates.md). När dimensionerna har lagts till i enheten är de tillgängliga i Excel-designern och kan läggas till i mallen.
 
 
 

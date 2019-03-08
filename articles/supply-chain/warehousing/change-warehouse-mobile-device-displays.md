@@ -1,13 +1,13 @@
 ---
-title: "Visningsinställningar för mobil lagerställeenhet"
-description: "I det här avsnittet beskrivs hur du ställer in utseendet på skärmen på en mobil enhet och hur du mappar kortkommandon till kontroller såsom knappar."
+title: Visningsinställningar för mobil lagerställeenhet
+description: I det här avsnittet beskrivs hur du ställer in utseendet på skärmen på en mobil enhet och hur du mappar kortkommandon till kontroller såsom knappar.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328043"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Visningsinställningar för mobil lagerställeenhet
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Som en del av den mobila enhetens konfiguration kan du ange olika layouter för 
 -    I **CSS-filen** , ange namnet på din CSS-filen. Inkludera .css-filtillägg.
 -   I den **mobila enheten visa inställningar visa** fältet anger ASPX fil. Inkludera **inte** .aspx filtillägg.
 
-CSS och ASPX filer måste vara placerad i en särskild katalog, så att Internet Information Services (IIS) ansökan kan ladda dem. Det kan vara lämpligt att definiera olika CSS-filer om du använder den mobila enhetens funktionalitet i olika browsers eller på olika typer av hårdvara som kräver olika layout. Enkla inställningar, t.ex. bakgrundsfärg, teckensnitt och teckenstorlek för text, och bredden, och uppförandet av knappar, kan enkelt styras genom användning av CSS-filer. Det ASPX fil används för att visa den mobila anläggningen på server-sidan Asp.net-ansökan. Filen styr hur den övergripande HTML-strukturen är utformad. Att anpassa denna funktion rekommenderas enbart om du har allvarliga strukturella problem med HTML och JavaScript, och måste ändra denna kod för dina specifika enheter. För att mappa HTML-kontroller på den mobila enheten sidan tangentbordgenvägar, på den **mobila enheten visa inställningssidan** i **kortkommandot** fält, tilldela den numeriska koder för nycklar. Du kan använda **visa koderna för kortkommandon** menyn på den mobila enheten att hitta numeriska teckenkoder. Observera att kartläggningar kan variera beroende på maskinvara som används. Du måste använda följande syntax för att skapa mappningen:
+CSS och ASPX filer måste vara placerad i en särskild katalog, så att Internet Information Services (IIS) ansökan kan ladda dem. Det kan vara lämpligt att definiera olika CSS-filer om du använder den mobila enhetens funktionalitet i olika browsers eller på olika typer av hårdvara som kräver olika layout. Enkla inställningar, t.ex. bakgrundsfärg, teckensnitt och teckenstorlek för text, och bredden, och uppförandet av knappar, kan enkelt styras genom användning av CSS-filer. ASPX-filen används för att visa den mobila anläggningen på serversidans ASP.NET-programmet. Filen styr hur den övergripande HTML-strukturen är utformad. Att anpassa denna funktion rekommenderas enbart om du har allvarliga strukturella problem med HTML och JavaScript, och måste ändra denna kod för dina specifika enheter. För att mappa HTML-kontroller på den mobila enheten sidan tangentbordgenvägar, på den **mobila enheten visa inställningssidan** i **kortkommandot** fält, tilldela den numeriska koder för nycklar. Du kan använda **visa koderna för kortkommandon** menyn på den mobila enheten att hitta numeriska teckenkoder. Observera att kartläggningar kan variera beroende på maskinvara som används. Du måste använda följande syntax för att skapa mappningen:
 
 &lt;kontrollnamn&gt;(&lt;tangentnamn&gt;)=&lt;tangentkodkod&gt;;
 
@@ -68,7 +67,7 @@ Här följer en förklaring av de olika delarna i uttryck:
 -   **&lt;användarens värdnamn&gt;** – Ett .NET-uttryck av standardtyp som matchar den begärandes nätverksnamn.
 -   **&lt;användaragent&gt;** – Ett .NET-uttryck av standardtyp som matchar identifieraren för den begärandes webbläsare.
 
-Följande exempel gör Internet Explorer 8 att användas:
+Följande exempel tillåter användning av Internet Explorer 8:
 
 Request.UserHostAddress=.\*|HostName=.\*|Request.UserAgent=MSIE\\s8\\.0
 
@@ -87,7 +86,7 @@ Du kan använda **mobila enheten textfärger** sida att styra olika färger som 
 För att välja färg, **välj färg** , klicka i paletten eller typ en hexadecimal färgkod.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Definiera det datumformat som ska användas i mobila enheter
-Du kan även utöka listan över godkända datumformat för varje installationen. Denna funktion kan vara användbar om du t.ex. vill ge ett format som gör det lättare för en arbetstagare att ange datum på en mobil enhet. Standardformat bestäms av användarens språk, som anges i fältet **språk** på sidan **Användaralternativ**. (Samma sida används också för att koppla en medarbetare till en specifik lagerarbetare.) **Obs!** Lagerställets portal för mobila enheter använder inte inställningen för fältet **Format för datum/tid och nummer** på sidan **Inställningar för språk och region**. Om du vill ändra datumformat, du måste vara bekant med regelbundna uttryck i den Microsoft .NET ramen. För mer information, se [.NET Framework regelbundna uttryck](http://go.microsoft.com/fwlink/?LinkId=391260). För att definiera datumformat, redigera filen datum.ini som finns på Innehåll\\Inställningar\\Dates.ini på portalservern för lagerställets mobila enheter. Denna fil använder .NET reguljära uttryck för att ange datumformat. Den regelbundna uttryck måste innehålla deluttryck att skapa namngivna grupper för dag, månad och år (ddmmåå), vilket visas i följande exempel:
+Du kan även utöka listan över godkända datumformat för varje installationen. Denna funktion kan vara användbar om du t.ex. vill ge ett format som gör det lättare för en arbetstagare att ange datum på en mobil enhet. Standardformat bestäms av användarens språk, som anges i fältet **språk** på sidan **Användaralternativ**. (Samma sida används också för att koppla en medarbetare till en specifik lagerarbetare.) **Obs!** Lagerställets portal för mobila enheter använder inte inställningen för fältet **Format för datum/tid och nummer** på sidan **Inställningar för språk och region**. Om du vill ändra ett datumformat måste du känna till reguljära uttryck i Microsoft .NET Framework. För mer information, se [.NET Framework regelbundna uttryck](http://go.microsoft.com/fwlink/?LinkId=391260). För att definiera datumformat, redigera filen datum.ini som finns på Innehåll\\Inställningar\\Dates.ini på portalservern för lagerställets mobila enheter. Denna fil använder .NET reguljära uttryck för att ange datumformat. Den regelbundna uttryck måste innehålla deluttryck att skapa namngivna grupper för dag, månad och år (ddmmåå), vilket visas i följande exempel:
 
 ^(? &lt;dag&gt;\\d{2})(?&lt;månad&gt;\\d{2})(?&lt;år&gt;\\d{2}) $
 
@@ -101,7 +100,6 @@ Du kan ange mer än ett uttryck i samma fil. Varje uttryck måste vara på en se
 --------
 
 [Konfiguration av mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
-
 
 
 

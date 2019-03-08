@@ -1,13 +1,13 @@
 ---
 title: Butikskringutrustning
-description: "Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik."
+description: Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik.
 author: rubencdelgado
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/16/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: c2539af8a29b580a10002bc8648505d42c7b8456
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347869"
 ---
-
 # <a name="retail-peripherals"></a>Butikskringutrustning
 
 [!include [banner](includes/banner.md)]
@@ -40,7 +39,7 @@ Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainstä
 
 ### <a name="devices"></a>Enheter
 
-Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Enheter**. En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till ett kassaregister. När en enhet skapas är den mappad till ett kassaregister. Enhetsentiteten spårar information om när ett kassaregister aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. Enheter kan mappas till följande programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android och Retail Modern POS – iOS.
+Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Enheter**. En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till ett kassaregister. När en enhet skapas är den mappad till ett kassaregister. Enhetsentiteten spårar information om när ett kassaregister aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. Enheter som kan mappas till följande programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone Retail Modern POS - Android och Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -119,7 +118,7 @@ Stöd för betalningsenheten implementeras via betalningskopplingen. Betalningse
 
 För att garantera att den största mängden enheter kan användas med Microsoft Dynamics 365 for Retail är OLE för kassabranschstandard den primära enhetsplattformen för kringutrustning i butik som stöds av Microsoft Dynamics 365 for Retail. OLE för kassastandarden anses vara framställt av National Retail Federation (NRF), som fastställer branschstandardiserade kommunikationsprotokoll för kringutrustning i butik. OPOS är en ATSC implementering av OLE för POS-standarden. Den utvecklades i mitten av 1990-talet och har uppdaterats flera gånger sedan dess. OPOS ger en enhetsdrivrutinarkitektur som ger enkel integrering av maskinvaruprofil för kassa med Windows-baserade kassasystem. OPOS-kontrollerna styr kommunikationen mellan kompatibel maskinvara och kassaprogram. En OPOS-kontroll består av två delar:
 
-- **Kontrollobjekt** – Kontrollobjektet för en enhetsklass (t.ex. radvisningar) tillhandahåller ett gränssnitt för programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tillhandahåller en standardiserad uppsättning OPOS-kontrollobjekt som kallas Common Control-objekt (CCO). CCO används för att testa kassakomponenten i Microsoft Dynamics 365 for Retail. Därför kan testningen garantera att många enhetstyper stöds under förutsättning att tillverkaren tillhandahåller ett serviceobjekt som skapats för OPOS, om Microsoft Dynamics 365 for Retail stöder en enhetsklass via OPOS. Du behöver inte uttryckligen testa varje enhetstyp.
+- **Kontrollobjekt** – Kontrollobjektet för en enhetsklass (t.ex. radvisningar) tillhandahåller ett gränssnitt för programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) tillhandahåller en standardiserad uppsättning OPOS-kontrollobjekt som kallas Common Control-objekt (CCO). CCO som används för att testa POS-komponent i Microsoft Dynamics 365 for Retail. Därför kan testningen garantera att många enhetstyper stöds under förutsättning att tillverkaren tillhandahåller ett serviceobjekt som skapats för OPOS, om Microsoft Dynamics 365 for Retail stöder en enhetsklass via OPOS. Du behöver inte uttryckligen testa varje enhetstyp.
 - **Serviceobjekt** – Serviceobjektet ger kommunikation mellan kontrollobjektet (CCO) och enheten. Vanligtvis tillhandahålls serviceobjektet för en enhet av enhetens tillverkare. Men i vissa fall kan du behöva hämta serviceobjektet från tillverkarens webbplats. Till exempel kan ett nyare serviceobjekt vara tillgängligt. Se maskinvarudokumentationen för att hitta adressen till tillverkarens webbplats.
 
 [![Kontrollobjekt och serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -127,7 +126,7 @@ För att garantera att den största mängden enheter kan användas med Microsoft
 Stöd för OPOS-implementeringen av OLE för POS hjälper till att garantera att om tillverkare och utgivare POS följer korrekt, POS-system och enheter som stöds kan samarbeta, även om de inte tidigare testats tillsammans.
 
 > [!NOTE]
-> OPOS-stöd garanterar inte stöd för alla enheter som har OPOS-drivrutiner. Microsoft Dynamics 365 for Retail måste först ge stöd för denna enhetstyp eller klass via OPOS. Dessutom kanske serviceobjekt inte alltid är uppdaterade med den senaste versionen av dessa CCO. Du bör också vara medveten om att i allmänhet varierar kvaliteten på serviceobjekten.
+> OPOS-stöd garanterar inte stöd för alla enheter som har OPOS-drivrutiner. Microsoft Dynamics 365 for Retail måste först stöd för denna enhetstyp eller via OPOS-klass. Dessutom kanske serviceobjekt inte alltid är uppdaterade med den senaste versionen av dessa CCO. Du bör också vara medveten om att i allmänhet varierar kvaliteten på serviceobjekten.
 
 ### <a name="windows"></a>Windows
 
@@ -203,7 +202,7 @@ För mer information se [Konfiguration och installation av Retail hardware stati
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS för Windows-installation och konfiguration
 
-För mer information se [Konfiguration och installation av Retail Modern POS](retail-modern-pos-device-activation.md).
+Mer information om [Retail Modern POS inställning och konfiguration finns i](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS inställning och konfiguration av enheter
 
@@ -223,9 +222,9 @@ I följande tabell visas topologier och distributionsscenarier som stöds.
 | Kund      | IPC maskinvarustation | IIS maskinvarustation |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Ingen                   | Ja                  |
-| Android     | Ingen                   | Ja                  |
-| iOS         | Ingen                   | Ja                  |
+| Cloud POS   | Nr                   | Ja                  |
+| Android     | Nr                   | Ja                  |
+| iOS         | Nr                   | Ja                  |
 
 ### <a name="network-peripherals"></a>Nätverkskringutrustning
 
@@ -234,9 +233,9 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 | Kund      | IPC maskinvarustation | IIS maskinvarustation |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Ingen                   | Ja                  |
-| Android     | Ingen                   | Ja                  |
-| iOS         | Ingen                   | Ja                  |
+| Cloud POS   | Nr                   | Ja                  |
+| Android     | Nr                   | Ja                  |
+| iOS         | Nr                   | Ja                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Enhetstyper som stöds efter maskinvarustationstyp
 
@@ -296,7 +295,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>[!NOTE] Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<blockquote>Obs! Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
 </li>
 </ul>
 </td>
@@ -307,7 +306,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>[!NOTE] Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<blockquote>Obs! Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
 </li>
 </ul>
 </td>
@@ -375,7 +374,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Windows-drivrutin
-<blockquote>[!NOTE] För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</blockquote>
+<blockquote>Obs! För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</blockquote>
 </li>
 <li>Nätverk</li>
 </ul>
@@ -405,7 +404,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>[!NOTE] Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<blockquote>Obs! Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
 </li>
 </ul>
 </td>
@@ -470,7 +469,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Windows-drivrutin
-<blockquote>[!NOTE] För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</blockquote>
+<blockquote>Obs! För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</blockquote>
 </li>
 <li>Nätverk</li>
 </ul>
@@ -492,7 +491,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>[!NOTE] Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<blockquote>Obs! Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
 </li>
 </ul>
 </td>
@@ -523,7 +522,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 Mer information om hur du skapar maskinvaruprofiler finns i [definiera och underhålla kanalklienter såsom register och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> För Microsoft Dynamics 365 for Retail version 1611 används inte längre maskinvarustationsprofilen. Attribut som du tidigare skapat i maskinvaruprofilstation ingår nu i själva maskinvarustationen.
+> För Microsoft Dynamics 365 for Retail version 1611, maskinvarustationprofilen används inte längre. Attribut som du tidigare skapat i maskinvaruprofilstation ingår nu i själva maskinvarustationen.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS för Windows med en IPC maskinvarustation (inbyggt)
 
@@ -564,7 +563,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som har en 
 5. Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 6. Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 7. Installation av maskinvarustation. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
-8. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns [Konfiguration och installation av Retail Modern POS](retail-modern-pos-device-activation.md).
+8. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns si [Retail Modern POS konfiguration och installation](retail-modern-pos-device-activation.md).
 9. Logga in i Modern POS och markera **Utföra en åtgärd som inte är en lådåtgärd**.
 10. Starta åtgärden **hantera maskinvarustationer**.
 11. Klicka på **Hantera**.
@@ -593,7 +592,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
 6. Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 7. Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 8. Installera maskinvarustationen på varje värddator som du angav i steg 2 och 3. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
-9. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns [Konfiguration och installation av Retail Modern POS](retail-modern-pos-device-activation.md).
+9. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns si [Retail Modern POS konfiguration och installation](retail-modern-pos-device-activation.md).
 10. Logga in i Modern POS och markera **Utföra en åtgärd som inte är en lådåtgärd**.
 11. Starta åtgärden **hantera maskinvarustationer**.
 12. Klicka på **Hantera**.
@@ -743,7 +742,6 @@ Följande kringutrustning har testats med hjälp av en särskild (Ej delad) IIS 
 | Epson        | TM-T88V  | OPOS      |                           |
 | Stjärna         | TSP650II | OPOS      |                           |
 | Stjärna         | TSP650II | Anpassa    | Ansluten via nätverket     |
-| Stjärna         | TSP100   | OPOS      | Kräver drivrutiner för TSP650II |
 | HP           | F7M67AA  | OPOS      | Strömförsörjd USB               |
 
 #### <a name="bar-code-scanner"></a>Streckkodsläsare
@@ -818,7 +816,6 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 | Epson        | TM-T88V  | OPOS      |                           |
 | Stjärna         | TSP650II | OPOS      |                           |
 | Stjärna         | TSP650II | Anpassa    | Ansluten via nätverket     |
-| Stjärna         | TSP100   | OPOS      | Kräver drivrutiner för TSP650II |
 | HP           | F7M67AA  | OPOS      | Strömförsörjd USB               |
 
 #### <a name="payment-terminal"></a>Betalterminal 
@@ -894,4 +891,3 @@ Följande kringutrustning har testats med hjälp av en delad IIS maskinvarustati
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Kringutrustningssimulator för Retail](dev-itpro/retail-peripheral-simulator.md)
-

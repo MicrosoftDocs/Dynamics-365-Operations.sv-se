@@ -1,13 +1,13 @@
 ---
 title: Sammanfoga lagerbatchar
-description: "Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch."
+description: Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch.
 author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f118ef38e88171ad1eac463078acf37ba4390e57
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319832"
 ---
-
 # <a name="merge-inventory-batches"></a>Sammanfoga lagerbatchar
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Ja finns ingen saker som du måste ställa in, innan du kan använda sammanfogni
 <td>De rekommenderade inställningarna för artikeln är:
 <ul>
 <li>För att automatiskt generera batchnummer för sammanslagna batchar, måste du tilldela den frisläppta produkten till en batchnummergrupp. Du kan också ange en batch numret manuellt, när du skapar en sammanslagen batch, eller markerar ett befintligt batchnummer. Om du väljer ett befintligt batchnummer, måste du kontrollera att den valda batchen inte har inkluderats i en lagertransaktion.</li>
-<li>Om du använder hållbarhetstid eller bäst före-datum för den frisläppta produkten, kommer datumen för en sammanslagen batch beräknas baserat på valet i fältet <strong>Databeräkning för batchsammanfogning</strong>. Följande alternativ är tillgängliga:
+<li>Om du använder hållbarhetstid eller bäst före-datum för den frisläppta produkten, kommer datumen för en sammanslagen batch beräknas baserat på valet i fältet <strong>Databeräkning för batchsammanfogning.</strong> Följande alternativ är tillgängliga:
 <ul>
 <li><strong>Tidigast</strong> – Beräkningen baseras på det tidigaste datumet som angetts för en källbatch som väljs för batchsammanfogningen.</li>
 <li><strong>Senast</strong> – Beräkningen baseras på det senaste datumet som angetts för en källbatch som väljs för batchsammanfogningen.</li>
@@ -141,4 +140,3 @@ Du kan godkänna lagerjournalen för batchsammanfogningen från listsidan **Alla
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Varför visas inte faktisk/nominell vikt i lagerjournalen efter att jag slagit ihop en fångstviktartikel?
 Du kan sammanslå batchar med fångstviktartiklar precis som alla andra artiklar. Dock visas information om faktisk/nominell vikt inte i lagerjournalen. Vi rekommenderar att du kontrollerar information om faktisk/nominell vikt innan du överför batchsammanfogningen till lagerjournalen.
-

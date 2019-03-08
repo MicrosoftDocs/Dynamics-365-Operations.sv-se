@@ -1,13 +1,13 @@
 ---
-title: "Översikt över periodiseringar"
-description: "Det här avsnittet innehåller en beskrivning av periodiseringar och information om hur du ställer in dem och skapar transaktioner."
+title: Översikt över periodiseringar
+description: Det här avsnittet innehåller en beskrivning av periodiseringar och information om hur du ställer in dem och skapar transaktioner.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAccuralTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 23c6a3402e4bc4a22d764017ba56554001300a67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 00ecc493e6dcf59ab61e7082297c95516a248b58
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339704"
 ---
-
 # <a name="accruals-overview"></a>Översikt över periodiseringar
 
 [!include [banner](../includes/banner.md)]
@@ -47,4 +46,3 @@ När du anger en journal, kan du klicka på **Periodiseringar** på menyn **Funk
 
 
 Mer information finns i [Skapa periodiseringsscheman](tasks/create-accrual-schemes.md) och [Skapa periodiseringstransaktioner](tasks/create-ledger-accrual-transactions.md).
-

@@ -1,13 +1,13 @@
 ---
-title: "Planera för att ställa in den globala adressboken och andra adressböcker"
-description: "Det här ämnet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Finance and Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin."
+title: Planera för att ställa in den globala adressboken och andra adressböcker
+description: Det här avsnittet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Finance and Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 20795cb8dd752a32f6c57fdb8f369691e41139b3
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332666"
 ---
-
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planera för att ställa in den globala adressboken och andra adressböcker
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Finance and Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
+Det här avsnittet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Finance and Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
 
 ## <a name="global-address-book"></a>Global adressbok
 
@@ -67,4 +66,3 @@ Du kan skapa adressböcker när som helst och du kan även ange säkerhetsparame
 **Beslut:**
 
 - Vilka team ska ha åtkomst till varje ny adressbok som du skapar?
-

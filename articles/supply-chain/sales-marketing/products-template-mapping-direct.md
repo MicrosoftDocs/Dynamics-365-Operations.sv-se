@@ -1,40 +1,39 @@
 ---
-title: "Synkronisera produkter direkt från Finance and Operations till produkter i Sales"
-description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations, till Microsoft Dynamics 365 for Sales."
+title: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348260"
 ---
-
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Synkronisera produkter direkt från Finance and Operations till produkter i Sales
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Innan du kan använda lösningen potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+> Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
-Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera produkter direkt från Microsoft Dynamics 365 for Finance and Operations, till Microsoft Dynamics 365 for Sales.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter direkt från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Sales.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
@@ -79,7 +78,7 @@ Externt underhållna produkter läggs automatiskt till den första giltiga prisl
 
 > [!NOTE]
 > - Produktsynkronisering lyckas inte, såvida det inte finns en prislista som har en matchande valuta.
-> - Du kan kontrollera den använda prislistan genom att mappa pricelevelid.name [standardprislista (namn)] i dataintegreringsprojektet. Inmatningen måste vara i gemener. Standardvärdet för en prislista i försäljning med namnet ”Standard” är till exempel: målfält: pricelevelid.name [standardprislista (namn)] och mapptyp: [ { ”transformType”: ”standard” ”defaultValue”: ”standard” } ].
+> - Du kan kontrollera den använda prislistan genom att mappa pricelevelid.name [standardprislista (namn)] i dataintegreringsprojektet. Inmatningen måste vara i gemener. Standardvärdet för en prislista i försäljning med namnet ”Standard” är till exempel: målfält: pricelevelid.name [standardprislista (namn)] och mapptyp: [ { "transformType": "Default", "defaultValue": "standard" } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
@@ -120,7 +119,6 @@ I följande illustration visas ett exempel på en mallmappning i dataintegrering
 [Synkronisera huvuden och rader i försäljningsorder direkt från Finance and Operations till Sales](sales-order-template-mapping-direct-two-ways.md)
 
 [Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales](sales-invoice-template-mapping-direct.md)
-
 
 
 

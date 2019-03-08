@@ -1,13 +1,13 @@
 ---
-title: "Bädda in PowerApps-program"
-description: "Det här avsnittet beskriver hur du bäddar in PowerApps till Finance and Operations-klienten för att utöka produktens funktionalitet."
+title: Bädda in PowerApps-program
+description: Det här avsnittet beskriver hur du bäddar in PowerApps till Finance and Operations-klienten för att utöka produktens funktionalitet.
 author: jasongre
 manager: AnnBe
 ms.date: 09/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.search.scope: Operations, Core
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 262d34cbc50251595d22c27387fbd3f1045d1fbb
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334161"
 ---
-
-# <a name="embed-powerapps-apps"></a>Bädda in PowerApps-program
+# <a name="embed-powerapps-apps"></a>Bädda in appar för PowerApps
 
 [!include [banner](../includes/banner.md)]
 
 I plattformsuppdatering 14 stöder Microsoft Dynamics 365 for Finance and Operations integrering med Microsoft PowerApps, en tjänst för utvecklare och icke-tekniska användare för att skapa anpassade affärsappar för mobila enheter, surfplattor och webb utan att skriva kod. PowerApps utvecklats av dig, ditt företag eller det bredare ekosystemet och kan sedan bäddas in i Finance and Operations-klienten utöka produktens funktioner. Exempelvis kan du skapa en PowerApp för att komplettera Finance and Operations med information som hämtas från ett annat system.
 
-Om du vill veta mer om inbäddning av PowerApps kan du titta på den korta videon [Så här bäddar du in PowerApps i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
+Om du vill veta mer om inbäddning av PowerApps kan du titta på den korta videon Så här bäddar du in PowerApps i [Så här bäddar du in PowerApps i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Lägger till en inbäddad PowerApp på en sida
 
@@ -132,4 +131,3 @@ public final class ClassTest_Extension
     }
 }
 ```
-

@@ -1,33 +1,32 @@
 ---
 title: Optimerings-advisor
-description: "Det här avsnittet beskrivs hur du kan använda optimerings-advisor för att säkerställa optimal konfiguration av Microsoft Dynamics 365 Finance and Operations."
+description: Det här avsnittet beskrivs hur du kan använda optimerings-advisor för att säkerställa optimal konfiguration av Microsoft Dynamics 365 Finance and Operations.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335633"
 ---
-
-# <a name="optimization-advisor"></a>Optimerings-advisor
+# <a name="optimization-advisor"></a>Rådgivning om optimering
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +38,7 @@ Felaktig konfiguration och inställning av en modul kan allvarligt påverka till
 
 Arbetsytan **Optimerings-advisor** är ett verktyg som låter privilegierade användare, affärsanalytiker, funktionskonsulter och IT-supportfunktioner identifiera problem i modulkonfiguration och affärsdata. Optimerings-advisor föreslår metodtips för modulkonfigurationen och identifierar affärsdata som är inaktuell eller felaktig.
 
-Optimerings-advisor kör regelbundet en uppsättning metodregler. En standarduppsättning av regler släpps tillsammans med Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018). Användare kan också skapa regler som är specifika för deras anpassningar, lösningar från oberoende programvaruleverantörer (ISV) och affärsdata. Mer information om hur du skapar regler finns i [Skapa nya regler](./create-rules-optimization-advisor.md).
+Optimerings-advisor kör regelbundet en uppsättning metodregler. En standarduppsättning regler som ges ut tillsammans med Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018). Användare kan också skapa regler som är specifika för deras anpassningar, lösningar från oberoende programvaruleverantörer (ISV) och affärsdata. Mer information om hur du skapar regler finns i [Skapa nya regler](./create-rules-optimization-advisor.md).
 
 När ett brott mot en regel upptäcks skapas en optimeringsmöjlighet och visas på arbetsytan **Optimerings-advisor**. En användare kan vidta lämpliga korrigeringsåtgärder direkt från arbetsytan **Optimerings-advisor**.
 
@@ -49,7 +48,7 @@ Standardsäkerhetsprinciper gäller för optimeringsmöjligheter. Exempelvis vis
 
 När du utför en åtgärd på några optimeringsmöjligheter beräknar systemet effekten av affärsmöjligheten med avseende på minskning av affärsprocessernas körtid. Funktionen är tyvärr inte tillgänglig för alla optimeringsmöjligheter.
 
-Om du vill veta mer om optimeringsmöjligheter kan du titta på den korta videon [Optimerings-advisor i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ).
+Om du vill veta mer om klassificering av optimering kan titta på kort [ptimerings-advisor i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)-video.
 
 ## <a name="optimization-rules"></a>Optimeringsregler
 
@@ -95,5 +94,4 @@ Markera affärsmöjligheten som skapades av regeln om du vill inaktivera utvärd
 
 [Skapa nya regler](./create-rules-optimization-advisor.md)
 
-[Optimerings-advisor i Dynamics 365 for Finance and Operations (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-
+[Optimerings-advisor i Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

@@ -1,13 +1,13 @@
 ---
 title: Bygg en produktkonfigurationsmodell
-description: "De behöver konfigurera produkter för att uppfylla särskilda krav blir regel snarare än undantag, både i business-to-business och business-to-consumer relationer."
+description: De behöver konfigurera produkter för att uppfylla särskilda krav blir regel snarare än undantag, både i business-to-business och business-to-consumer relationer.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327468"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Bygg en produktkonfigurationsmodell
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Registerbegränsningar kan vara antingen användardefinierade eller systemdefini
 
 En användardefinierad tabell begränsning är byggd av användaren. Användaren väljer en kombination av attribut som representerar tabellens kolumner och sedan in värdena från domäner på valt attribut typer att bilda rader i tabellen.  
 
-En systemdefinierad tabellbegränsning definieras genom att välja den Microsoft Dynamics 365 for Finance and Operations-tabell som ska användas som referens, och sedan välja fält från denna tabellen för att bilda kolumnerna i begränsningen. Raderna i tabellbegränsning är rader av inance and Operations-tabellen som finns vid konfigurering.  
+En systemdefinierad tabellbegränsning definieras genom att välja som Microsoft Dynamics 365 for Finance and Operations-tabell som ska användas som referens och sedan välja fält från tabellen att bilda kolumnerna i tvång. Raderna i tabellbegränsning är rader av inance and Operations-tabellen som finns vid konfigurering.  
 
 En tabellbegränsning ingår i en produktkonfiguration modell genom att referera till tabellbegränsningsdefinitionen och mappa relevanta attribut i modellen till kolumnerna i tabellen.
 
@@ -158,7 +157,6 @@ Syftet med den är att skapa ett distinkt variant av produkt som uppfyller kunde
 ### <a name="multiple-sites-and-intercompany"></a>Flera orter och företagsinterna
 
 Om konfigurationen kommer att ske på en ort, eller ens ett företag, som skiljer sig från den ort eller det företag där produktionen sker, BOM och rutten skapas för och sätta på leverantörens ort i det levererande företaget. Produkten variant kommer att släppas i alla företag som deltar i distributionskedjan.
-
 
 
 

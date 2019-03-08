@@ -1,13 +1,13 @@
 ---
 title: Hantera rekryteringsprocesser
-description: "Denna artikel beskriver ett begrepp som rekryterare kan använda för att följa stegen i en rekryteringsprocess, inklusive försök att annonsera lediga jobberbjudanden och att rekrytera sökande, spåra sökande och ansökningsinformation, intervjua sökande och välja en eller flera kandidater till de lediga befattningarna i din organisation."
+description: Denna artikel beskriver ett begrepp som rekryterare kan använda för att följa stegen i en rekryteringsprocess, inklusive försök att annonsera lediga jobberbjudanden och att rekrytera sökande, spåra sökande och ansökningsinformation, intervjua sökande och välja en eller flera kandidater till de lediga befattningarna i din organisation.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9695a7a3f98220f48627e85a51bc6dae5adb35c2
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345684"
 ---
-
 # <a name="manage-recruiting-processes"></a>Hantera rekryteringsprocesser
 
 [!include [banner](../includes/banner.md)]
@@ -105,4 +104,3 @@ Om en ansökning måste granskas av flera medarbetare kan du använda sidan **An
 ## <a name="hiring-applicants"></a>Anställa sökande
 
 Använd sidna **Ansökningar** när du anställer en sökande. När du anställer en sökande, kommer ansökningsposten har statusvärdet **Anställd** och sökandens globala adressbokspost är kopplad till den nya medarbetarposten. Ändringar av informationen om den globala adressboken för den nya medarbetarposten visas även i ansökningsposten. Detta kan hjälpa till att minska registreringen av information om den nya arbetaren någonsin skulle ansöka om ett annat jobb inom ditt företag. Om du vill anställa en befintlig arbetare på en ny befattning klickar du på **Byt befattning** i listrutan **Ansökningsstatus** för att initiera flytten.
-

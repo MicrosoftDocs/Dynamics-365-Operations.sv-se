@@ -1,13 +1,13 @@
 ---
 title: Uppgradera budgetplanering
-description: "Det finns viktiga skillnader i budgetplanering mellan Microsoft Dynamics AX 2012 och Microsoft Dynamics 365 for Finance and Operations. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Det här avsnittet beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar."
+description: Det finns väsentliga skillnader i budgetplanering mellan Microsoft DynamicsAX 2012 och Microsoft Dynamics 365 for Finance and Operations. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Det här avsnittet beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: ryansand
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 3d57419ca5c59be185c87b869302b41bef05a3c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a39f516bb6d023ea18492ba3dfe721bd1127c60e
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342970"
 ---
-
 # <a name="upgrade-budget-planning"></a>Uppgradera budgetplanering
 
 [!include [banner](../includes/banner.md)]
 
-Det finns viktiga skillnader i budgetplanering mellan Microsoft Dynamics AX 2012 och Microsoft Dynamics 365 for Finance and Operations. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Det här avsnittet beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.  
+Det finns väsentliga skillnader i budgetplanering mellan Microsoft DynamicsAX 2012 och Microsoft Dynamics 365 for Finance and Operations. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Det här avsnittet beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.  
 
-Budgetplanering i Microsoft Dynamics 365 for Finance and Operations har många förbättringar som inte var tillgängliga i Microsoft Dynamics AX 2012. Det här avsnittet beskriver de ändringar som kunder som uppgraderar måste göra. Den pekar även ut de nya funktionerna som ska beaktas under uppgraderingsprocessen. På grund av omfattningen av förändringarna kommer eventuella befintliga budgetplaner inte at kunna öppnas förrän du har gjort ändringarna som beskrivs i det här avsnittet. Rapporterna bör emellertid fortsätta att fungera och kräver inte ytterligare ändringar.
+Budgetplanering i Microsoft Dynamics 365 for Finance and Operations innehåller många förbättringar som inte var tillgängliga i Microsoft DynamicsAX 2012. Det här avsnittet beskriver de ändringar som kunder som uppgraderar måste göra. Den pekar även ut de nya funktionerna som ska beaktas under uppgraderingsprocessen. På grund av omfattningen av förändringarna kommer eventuella befintliga budgetplaner inte at kunna öppnas förrän du har gjort ändringarna som beskrivs i det här avsnittet. Rapporterna bör emellertid fortsätta att fungera och kräver inte ytterligare ändringar.
 
 ## <a name="overview-of-changes"></a>Översikt över ändringar
 Många viktiga förändringar har gjorts i budgetering för Finance and Operations. Dessa ändringar är avsedda att göra budgetplaneringen enklare att konfigurera och mer återanvändningsbar för att minska årligt underhåll och inställningar. Följande områden i AX 2012 finns inte längre i Finance and Operations:
@@ -41,7 +40,7 @@ Många viktiga förändringar har gjorts i budgetering för Finance and Operatio
 -   Scenariobegränsningar (budgetplaneringskonfiguration)
 -   Mallar för Budgetplaneringsfasregler och mallar (budgetplaneringsprocess)
 -   Matrisfält för kalkylbladsmallar
--   Mallguide för budgetplan i Microsoft Office
+-   Guide för Microsoft Excel-mall för budgetplanen
 
 Vissa nya koncept kan inte direkt uppgraderas från den tidigare funktionen. Därför måste du utföra viss omkonfiguration för att hantera dessa nya koncept. I följande avsnitt beskrivs de koncept som har ersatt objekten i föregående lista.
 
@@ -160,7 +159,6 @@ Flera datatabeller har lagts till för att aktivera snabb implementering av budg
 -   Budgetplansprioriteter
 -   Budgetplanskolumner
 -   Layoutelement för budgetplan
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Definiera produktionsflödesmodeller"
-description: "Produktionsflödesmodeller beskriver hur kapaciteten i lean manufacturing-arbetsgrupper beräknas och hanteras."
+---
+title: Definiera produktionsflödesmodeller
+description: Produktionsflödesmodeller beskriver hur kapaciteten i lean manufacturing-arbetsgrupper beräknas och hanteras.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e410928bc850e1f3427c9536e9943d1196be7a05
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7850a121ca06f25f6c532e49e18c0b6811bd7455
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336737"
 ---
 # <a name="define-production-flow-models"></a>Definiera produktionsflödesmodeller
 
@@ -45,5 +45,4 @@ Produktionsflödesmodeller beskriver hur kapaciteten i lean manufacturing-arbets
     * Planläggningstidsgränsen beskriver antal dagar där kapacitetsreservationer kan göras för de relaterade arbetsgrupperna. Ange antalet dagar i Planeringstidsgräns.   Kanban-processjobb som ligger utanför denna period planläggs inte med automatisk planering. Planläggningstidsgränsen är normalt två gånger den genomsnittliga lagerledtiden för produkterna som produceras i ett produktionsflöde eller en arbetsgrupp. EPE-cykeln ska inte vara mer halva planläggningstidsgränsen.     
 8. Markera ett alternativ i fältet Reaktion på kapacitetsbrist.
     * Alternativen omfattar: senarelägga - senarelägga det fullständiga behovet av planläggningshändelsen på nästa tillgängliga produktionsdag med tillgängligt genomflöde. Avbryt - Avsluta automatisk planläggning för planläggningshändelsen och lämna relaterade jobb oplanerade.   Lägga till begärd dag - Planera de begärda jobben för den begärda perioden. Detta överbelastar cellen för den aktuella dagen och kräver att planeraren gör en granskning och manuell åtgärd.   Fördela till tillgängliga perioder - fördela olika jobb i planläggningshändelsen till alla aktuella produktionsorderdagar med start från den första tillgängliga dagen. Den minsta distributionskvantiteten är Kanban-jobbkvantiteten. Fördelningen tilldelas den minsta planeringskvantiteten (kanbankvantitet) för varje dag med tillräckligt tillgängligt genomflöde.  
-
 

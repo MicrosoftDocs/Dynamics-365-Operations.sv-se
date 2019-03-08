@@ -1,13 +1,13 @@
 ---
-title: "Mobil arbetsyta för leverantörssamarbete"
-description: "Det här avsnittet innehåller information om den mobila arbetsytan för leverantörssamarbete. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter."
+title: Mobil arbetsyta för leverantörssamarbete
+description: Det här avsnittet innehåller information om den mobila arbetsytan för leverantörssamarbete. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: df27ff3477443611278436a680d70ea81a21763e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 83fcf1d0432d5afa71d6f9d7d22cea5a583777bf
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358656"
 ---
-
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobil arbetsyta för leverantörssamarbete
 
 [!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **Leverantörssamarbete**. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter.
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Översikt 
-Den mobila arbetsytan **Leverantörssamarbete** håller leverantörer informerade om nya inköpsorder, så att de kan visa och svara på dem i webbklienten för Microsoft Dynamics 365 for Finance and Operations. 
+Mobil arbetsyta för **leverantörssamarbete** sparar information om nya inköpsorder så att de kan visa inköpsorder och sedan svara på dem i webbklienten för Microsoft Dynamics 365 for Finance and Operations. 
 
 >[!NOTE]
 > Den mobila arbetsytan ska användas som ett tillägg till webbgränssnittet för leverantörssamarbete, inte som en ersättning för det. 
@@ -58,12 +57,12 @@ Med hjälp av den mobila arbetsytan **Leverantörssamarbete** kan en leverantör
 -   Visa information om en användarförfrågan som skickades av leverantören och följa statusen på densamma. (Den här uppgiften kräver ytterligare en säkerhetsroll.)
 
 ## <a name="prerequisites"></a>Förutsättningar
-Förutsättningarna varierar beroende på vilken version av Microsoft Dynamics 365 som har distribuerats inom organisationen.
+Kraven varierar beroende på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations. 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations 
 Om Microsoft Dynamics 365 for Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Leverantörssamarbete**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdateringen 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
@@ -80,7 +79,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 <td>Systemadministratör</td>
 <td>KB 3216943 är en binär uppdatering som krävs om du använder plattformsuppdatering 3. Om du vill implementera denna KB måste systemadministratören göra följande:
 <ol>
-<li>Hämta KB 3216943 från Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Ladda ned KB 3216943 från Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li>Installera den binära uppdateringen som levereras som ett distribuerbart paket. Information om hur du installerar ett distribuerbart paket hittar du under <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Tillämpa ett distribuerbart paket</a>.</li>
 </ol></td>
 </tr>
@@ -120,7 +119,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 1.  Starta appen i din mobila enhet.
-2.  Ange din webbadress för Microsoft Dynamics 365.
+2.  Ange din Microsoft Dynamics 365 URL.
 4.  Första gången du loggar in uppmanas du att ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 5.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
@@ -171,4 +170,3 @@ All ändringar som har gjorts av responsen på orderraden visas. Dock visas inte
 
 ### <a name="open-confirmed-orders"></a>Öppna bekräftade order
 När inköpsordern har bekräftats av kunden (dvs. när statusen för inköpsordern har ändrats till **Bekräftad**) visas den i den öppna bekräftade ordern. Den finns kvar i listan tills den registreras som mottagen av kunden.
-

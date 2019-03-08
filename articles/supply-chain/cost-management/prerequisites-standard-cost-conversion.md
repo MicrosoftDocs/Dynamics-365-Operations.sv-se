@@ -1,13 +1,13 @@
 ---
-title: "Förutsättningar för en standardkostnadskonvertering"
-description: "I det här avsnittet beskrivs hur du utför uppgifter, innan du kör en standardkostnadskonvertering."
+title: Förutsättningar för en standardkostnadskonvertering
+description: I det här avsnittet beskrivs hur du utför uppgifter, innan du kör en standardkostnadskonvertering.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 955191a32165a32c455d0dba7424a82eb2559399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 65844bd78363dc6638b16b3fd4ca163a3fde6a23
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351940"
 ---
-
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Förutsättningar för en standardkostnadskonvertering
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Gör på följande sätt innan du kör en standardkostnadkonvertering:
 
         En aktiv kostnadsuppdelning innebär också att en aktivering av en tillverkad artikels kostnad leder till att kostnadsgruppssegmenteringen lagras inom artikelns kostnadspost. Om du inte anger ett värde i fältet **Kostnadsuppdelning** innebär det att kostnadsgruppssegmenteringen inte underhålls för standardkostnadsartiklar. En tillverkad artikels standardkostnad beräknas och underhålls därför som ett enskilt belopp utan kostnadsgruppssegmentering, och kostnadsbidragen från tillverkade komponenter aggregeras till ett enda belopp.
     -   Använd fältet **Avvikelser från standard** om du vill välja summerad eller per kostnadsgrupp. Valet av per den kostnadskalkylerade gruppen låter dig identifiera inköpsprisavvikelser och produktionsavvikelser per den kostnadskalkylerade gruppen. Detta låter dig även identifiera fyra typer av produktionsavvikelser (partistorlek, kvantitet, pris och ersättning). Om du väljer summerad kan du inte identifiera avvikelser per kostnadsgrupp, och du kan inte identifiera de fyra typerna av produktionsavvikelse. Du kan bara visa en summerad produktionsavvikelse. Principen om avvikelse från standarden fungerar oberoende av kostnadsuppdelningsprincipen. Det innebär att du kan välja en kostnadsuppdelningsprincip som är ingen, och välja avvikelser per kostnadsgrupp, så att produktionsavvikelser per kostnadsgrupp ändå kan fångas in.
-
 
 
 

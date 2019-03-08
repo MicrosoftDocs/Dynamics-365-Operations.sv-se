@@ -1,13 +1,13 @@
---- 
-title: "Konfigurera adressböcker"
-description: "Använd den här proceduren och besluten, som du har gjort i planeringen av konfigurationen för den globala adressboken och det ytterligare adressbokavsnittet för att ställa in ytterligare adressböcker för din organisation."
+---
+title: Konfigurera adressböcker
+description: Använd den här proceduren och besluten, som du har gjort i planeringen av konfigurationen för den globala adressboken och det ytterligare adressbokavsnittet för att ställa in ytterligare adressböcker för din organisation.
 author: kfend
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirAddressBook, DirAddressBookTeam
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 325e3974cb38afea46c2f735165ee2fd1a6a22ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: e633b35cdd5441f7f9d1c1465dbc468e047cdee5
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353228"
 ---
 # <a name="configure-address-books"></a>Konfigurera adressböcker
 
@@ -41,5 +41,4 @@ Det demonstrationsdataföretag som används för att skapa den här uppgiften ä
 6. Hitta och markera önskad post i listan.
 7. Klicka på pilen om du vill lägga till de valda tillgängliga teamen till adressboken.
 8. Klicka på Spara.
-
 

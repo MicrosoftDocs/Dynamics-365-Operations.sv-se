@@ -1,13 +1,13 @@
 ---
-title: "Hantera leverantörssamarbetesanvändare"
-description: "I det här avsnittet beskrivs hur du kan begära reservation av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter."
+title: Hantera leverantörssamarbetesanvändare
+description: I det här avsnittet beskrivs hur du kan begära reservation av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 520dcaa1eec3c0fb8aa72fc7f75a56622069881f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
-ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356701"
 ---
-
 # <a name="manage-vendor-collaboration-users"></a>Hantera leverantörssamarbetesanvändare
 
 [!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kan begära reservation av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter. 
 
-Leverantörssamarbetsgränssnittet i Microsoft Dynamics 365 for Finance and Operations visar information om inköpsorder, fakturor och försändelselager till externa leverantörer. Du kan skapa nya lleverantörssamarbeteskontakter och begära att nya användare reserveras om du arbetar som en extern leverantör med säkerhetsrollen **Leverantörs-admin (extern)** eller liknande behörigheter. Du kan också utföra dessa uppgifter om du arbetar professionellt inom anskaffning. I det här avsnittet avser denna roll en yrkesperson inom anskaffning som arbetar inom det företag som äger Finance and Operations-instansen. Mer information om hur du använder leverantörssamarbete om du använder en extern leverantör finns i [Leverantör med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Lleverantörssamarbetesgränssnittet i Microsoft Dynamics 365 for Finance and Operations visar information om inköpsorder, fakturor och försändelselager till externa leverantörer. Du kan skapa nya lleverantörssamarbeteskontakter och begära att nya användare reserveras om du arbetar som en extern leverantör med säkerhetsrollen **Leverantörs-admin (extern)** eller liknande behörigheter. Du kan också utföra dessa uppgifter om du arbetar professionellt inom anskaffning. I det här avsnittet avser denna roll en yrkesperson inom anskaffning som arbetar inom det företag som äger Finance and Operations-instansen. Mer information om hur du använder leverantörssamarbete om du använder en extern leverantör finns i [Leverantör med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Mer information om hur du använder leverantörssamarbete om du är inköpsspecialist, se [Leverantörssamarbete med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
@@ -61,12 +60,12 @@ När en begäran skickas in läggs den till i listan **Användarbegäran från l
 Innan du kan begära att en ny användare reserveras, måste den personen ställas in som en kontakt för en eller flera leverantörskonton. För att skapa en begäran för en ny leverantörssamarbetesanvändare:
 
 1. På sidan **Alla kontakter** klickar du på **Reservera leverantörsanvändare**.
-2. Ange en e-postadress för användare. Denna adress används av användaren för att logga in på Finance and Operations. Om e-postadressen tillhör en domän som registrerats som en innehavare i Microsoft Azure, så måste e-postadressen vara ett befintligt Azure Active Directory (AAD)-konto för att reservationsprocessen ska slutföras. Om e-postadressen inte tillhör någon domän som har registrerats för Microsoft Azure, kommer ett ADD-konto att skapas som ett led i reserveringsprocessen, och den nya användaren kommer att få en inbjudan via mail. E-postadresser för konsumenter med domäner som exempelvis @hotmail.com, @gmail.com och @comcast.net kan inte användas för att registrera en Finance and Operations-användare.
+2. Ange en e-postadress för användare. Denna adress används av användaren för att logga in på Finance and Operations. Om e-postadressen tillhör en domän som registrerats som en innehavare i Microsoft Azure så måste e-postadressen vara ett befintligt Azure Active Directory (AAD)-konto för att reservationsprocessen ska slutföras. Om e-postadressen inte tillhör någon domän som har registrerats för Microsoft Azure kommer ett AAD-konto att skapas som ett led i reserveringsprocessen, och den nya användaren kommer att få en inbjudan via e-post. E-postadresser för konsumenter med domäner som exempelvis @hotmail.com, @gmail.com eller @comcast.net kan inte användas för att registrera en Finance and Operations-användare.
 3. Ange alternativet **Åtkomst till leverantörssamarbete tillåten** som **Ja** för alla juridiska personer som användaren behöver åtkomst till.
 4. I avsnittet **Tilldela användarroller** väljer du kryssrutan **Tilldela** för de säkerhetsroller som den nya användaren ska få.
 5. Klicka på **Skicka**.
 
-När begäran om leverantörsanvändare skickas in, anges fältet **Åtkomst för leverantörssamarbete medges** som **Ja** för valt leverantörskonto, och ett nytt arbetsflöde för användarbegäran startas. Som en del av arbetsflödet skapas en ny användare i Finance and Operations, och säkerhetsroller tilldelas. Dessutom aktiveras en Azure B2B-tjänst som initierar en interaktion med Azure-portalen samt associerar ett nytt eller befintligt AAD-konto med Finance and Operations-användarkontot. Mer information finns i [vad är Azure AD B2B-samarbete?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+När begäran om leverantörsanvändare skickas in, anges fältet **Åtkomst för leverantörssamarbete medges** som **Ja** för valt leverantörskonto, och ett nytt arbetsflöde för användarbegäran startas. Som en del av arbetsflödet skapas en ny användare i Finance and Operations, och säkerhetsroller tilldelas. Dessutom aktiveras en Azure B2B-tjänst som initierar en interaktion med Azure-portalen samt associerar ett nytt eller befintligt AAD-konto med Finance and Operations-användarkontot. Mer information finns i [Vad är Azure AD B2B-samarbete?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Inaktivera en användare
 
@@ -91,7 +90,6 @@ Om du vill begära att säkerhetsrollerna ändras för en användare:
 2.  Skriv en kommentar i fältet **Affärsjustering**.
 3.  I avsnittet **Underhåll användarroller** väljer du de säkerhetsroller som du vill tilldela eller tar bort de som du vill bli av med.
 4.  Klicka på **Skicka**.
-
 
 
 

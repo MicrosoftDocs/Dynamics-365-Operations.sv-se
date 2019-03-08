@@ -1,13 +1,13 @@
 ---
-title: "Kostnadsredovisningsanalys för Power BI-innehåll"
-description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
+title: Power BI-innehåll för kostnadsredovisningsanalys
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: d0b563044843157940f456b07479bbd6006a42f9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347455"
 ---
-
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsredovisningsanalys för Power BI-innehåll
+# <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innehåll för kostnadsredovisningsanalys
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **Kostnadsredovisningsanalys**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i Power BI-innehållet för **kostnadsredovisning**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
@@ -41,9 +40,9 @@ Innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera k
 
 Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](../../financials/cost-accounting/cost-accounting-home-page.md).
 
-Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
+Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet för **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
@@ -53,7 +52,7 @@ Hämta innehållet **Kostnadsredovisningsanalys** innehåll som avser versionen 
 > [!NOTE]
 > KB 4011327 är ett krav för detta Power BI-innehåll När du loggar in på LCS når KB på <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mätvärden som ingår i Power BI-innehållet
 Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadsredovisningsanalys**.
 
 | Rapportsida                      | Diagram                                                                                                                         | Panel                                          |
@@ -75,7 +74,7 @@ Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsät
 |                                  | Faktisk kostnad efter medlemsnamn för kostnadsobjektdimension samt medlemsnamn för kostnadselemetdimension                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna Power BI-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Följande sammanlagda huvudmått används till grund för innehållet:
 
@@ -127,4 +126,3 @@ Följande huvuddimensioner används som filter för att dela upp de sammanlagda 
 | Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
 | Räkenskapsår                       | Kalenderår                                                                                                        |
 | Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
-

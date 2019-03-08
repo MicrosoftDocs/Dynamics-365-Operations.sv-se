@@ -1,13 +1,13 @@
 ---
-title: "Ställ in butiksprodukter"
-description: "Denna artikel beskriver hur du ställer in butiksprodukter i Microsoft Dynamics 365 for Retail."
+title: Ställa in butiksprodukter
+description: Den här artikeln beskriver hur du ställer in butiksprodukter i Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 991546424a95463315eaa73c2776d0defe66def5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0906d83ea00edcbd4c04a1f21cc0911828286607
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357414"
 ---
-
-# <a name="set-up-retail-products"></a>Ställ in butiksprodukter
+# <a name="set-up-retail-products"></a>Ställa in butiksprodukter
 
 [!include [banner](includes/banner.md)]
 
-Denna artikel beskriver hur du ställer in butiksprodukter i Microsoft Dynamics 365 for Retail.
+Den här artikeln beskriver hur du ställer in butiksprodukter i Microsoft Dynamics 365 for Retail.
 
-Innan det går att erbjuda produkter att sälja i butikskanalerna måste du skapa och konfigurera produkterna i Microsoft Dynamics 365 for Retail. Butik använder produktfunktionerna i Dynamics 365 for Retail för att skapa produkter i produktmallen inom organisationen. Du kan skapa produkterna, definiera produktegenskaperna och attributen och tilldela produkterna till butikskategorihierarkier. Om du vill göra dina produkter tillgängliga för butikskanaler och lägga till dem till ett aktivt sortiment måste du frisläppa produkterna till de juridiska personerna där de är tillgängliga. Gör på följande sätt när du vill ställa in produkterna som du säljer, genom att använda butikskanaler.
+Innan det går att erbjuda vidareförsäljning av produkter i butikskanalerna måste du skapa och konfigurera produkterna i Dynamics 365 for Retail. Retail använder produktfunktionerna i Dynamics 365 for Retail för att skapa produkter i produktmallen inom organisationen. Du kan skapa produkterna, definiera produktegenskaperna och attributen och tilldela produkterna till butikskategorihierarkier. Om du vill göra dina produkter tillgängliga för butikskanaler och lägga till dem till ett aktivt sortiment måste du frisläppa produkterna till de juridiska personerna där de är tillgängliga. Gör på följande sätt när du vill ställa in produkterna som du säljer, genom att använda butikskanaler.
 
 1. Definiera en produkthierarki för butik. Genom att använda kategorihierarkifunktionerna i Dynamics 365 for Retail kan du definiera butikskategorihierarkier om du vill gruppera och kategorisera de produkter som du fördelar till dina butikskanaler. Användardefinierade och systemattribut kan definieras på kategorinivån. Därefter ärver alla produkter som tilldelas kategorin dessa attribut. Flera kategorihierarkier kan definieras och varje produkt kan tilldelas flera hierarkier. Men i en enda hierarki kan varje produkt bara tilldelas en kategori.
 2. Lägg till produkter och produktvarianter i produktmallen. Produkter som läggs till produktmallen, representerar en global lista med produkter. Du kan lägga till produkter manuellt, en i taget, eller så kan du importera produktdata från leverantörerna.
@@ -41,4 +40,3 @@ Innan det går att erbjuda produkter att sälja i butikskanalerna måste du skap
 4. Lägg till produkter i sortimentet. Ett sortiment representerar en samling av produkter som du erbjuder i dina butikskanaler. Du kan definiera en eller flera sortiment, och varje produkt kan tilldelas en eller flera sortiment. Om du vill tilldela produkter i butikskanaler tilldelar du sortimenten till dessa butikskanaler. När du skapar ett sortiment kan du lägga till produkter som ännu inte har frisläppts till en juridisk person. Men du måste frisläppa produkterna till en juridisk person innan dessa produkter kan göras tillgängliga i butikskanalerna.
 5. Lägg till produkter i navigeringshierarkier. Innan produkter kan bläddras i online eller i butiker (POS), måste de kategoriseras i en butiksnavigeringhierarki.
 6. Lägg till produkter i kataloger Även om detta steg är valfritt för butiker, kräver onlinebutiker att produkter inkluderas i minst en katalog.
-

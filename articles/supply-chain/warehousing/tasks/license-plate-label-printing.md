@@ -1,13 +1,13 @@
---- 
+---
 title: Aktivera utskrift av ID-nummer
-description: "I den här proceduren aktiveras automatisk utskrift av ett EAN-kollinummer (SSCC) efter den sista artikeln som plockas från lagret i arbetsprocessen för försäljningsplocklistan."
+description: I den här proceduren aktiveras automatisk utskrift av ett EAN-kollinummer (SSCC) efter den sista artikeln som plockas från lagret i arbetsprocessen för försäljningsplocklistan.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 8d906ca9f5a6536870fa0c322a0792ed5672c25e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6d186bf7e4aee8cfa97adbd90b9090085e842f9b
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324041"
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivera utskrift av ID-nummer
 
@@ -108,5 +108,4 @@ I den här proceduren aktiveras automatisk utskrift av ett EAN-kollinummer (SSCC
 9. Klicka på Flytta upp.
 10. Klicka på Spara.
 11. Stäng sidan.
-
 

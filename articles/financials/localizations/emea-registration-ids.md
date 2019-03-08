@@ -1,13 +1,13 @@
 ---
 title: Registrerings-ID
-description: "Det här avsnittet innehåller information om hur du konfigurerar och använder registrerings-ID."
+description: Det här avsnittet innehåller information om hur du konfigurerar och använder registrerings-ID.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350514"
 ---
-
 # <a name="registration-ids"></a>Registrerings-ID
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Registreringskategori är registreringsidentifierare för land/region som har go
 |-----------------------|----------------|
 | Registreringstyp     | Registreringstypen i ett visst land/en viss region.|
 | Begränsat till         | Begränsningstypen gäller för momsregistreringstypen: Ingen, Person, Organisation.|
-| Registreringskategori | Den unika registreringsidentifieraren som har godkänts för användning i landet. En fullständig lista över stöds i Microsoft Dynamics 365 for Finance and Operations-kategorierna nedan. |
+| Registreringskategori | Den unika registreringsidentifieraren som har godkänts för användning i landet. Nedan följer en fullständig lista över kategorier som stöds i Microsoft Dynamics 365 for Finance and Operations. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Ange registrerings-ID för globala adressboksposter
 
@@ -85,7 +84,7 @@ I följande tabell visas de registreringstyper som stöds i Finance and Operatio
 | Registreringskategori för Finance and Operations         |Land/region  | Term/fält för Dynamics AX 2012|
 |---------------------------------------------------------------|---------------------|---------------------------------|
 | Moms-ID                                                        | Alla länder i den Europeiska unionen (EU)|  Momsfriskrivningsnummer (lagstiftande typ SKATTE-ID i AX 2012 R3)|
-| Företags-ID (COID)                                          | Belgien, Tjeckien,Estland,Ungern,Lettland,Litauen,Polen,Schweiz | Företagsnummer (EnterpriseNumber) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Företagskod (EnterpriseCode) Registreringsnummer (RegNum\_W) UID (lagstiftande typ UID i AX 2012 R3) |
+| Företags-ID (COID)                                          | Belgien, Tjeckien,Estland,Ungern,Lettland,Litauen,Polen,Schweiz | Företagsnummer (EnterpriseNumber) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Registreringsnummer (RegNum\_W) Företagskod (EnterpriseCode) Registreringsnummer (RegNum\_W) UID (Lagstiftande typ UID i AX 2012 R3) |
 | Filial-ID                                                     | Belgien            | Filialnummer (BranchNumber)|
 | Spisová značka (registreringsnummer, utfärdande organ, avsnitt) | Tjeckien     | Infällt nummer (CommercialRegisterInsetNumber) Förvaras i avsnittet Handelsregister (CommercialRegister) i handelsregistret (CommercialRegisterSection)|
 | Tullkund-ID                                           | Finland | Kundnummer för tull (CustomsCustomerNumber\_FI)|
@@ -96,12 +95,12 @@ I följande tabell visas de registreringstyper som stöds i Finance and Operatio
 | RCOAD                                                         | Ryska federationen| RCOAD (lagar typ RCOAD i AX 2012 R3)|
 | OGRN                                                          | Ryska federationen| OGRN (lagstiftande typ OGRN i AX 2012 R3) |
 | SNILS                                                         | Ryska federationen| SNILS (lagstiftande typ SNILS i AX 2012 R3)|
-| CIFTS                                                         | Ryska federationen| CIFTS (lagstiftande typ CIFTS i AXAX 2012 R3)|
+| CIFTS                                                         | Ryska federationen| CIFTS (lagstiftande typ CIFTS i AX 2012 R3)|
 | Pass                                                      | Spanien             | Pass|
 | Officiellt ID-dokument                              | Spanien             | Officiellt ID-dokument|
 | Uppehållstillstånd                                         | Spanien             | Uppehållstillstånd|
 | Annat ID-dokument                                 | Spanien             | Annat ID-dokument|
-| Inte inräknat                                                  | Spanien             | Inte tillgängligt i AX 2012 R3|
+| Ingår inte i befolkningsräkningen                                                  | Spanien             | Inte tillgängligt i AX 2012 R3|
 
 
 Mer information om bearbetning av registrerings-ID, inklusive erforderliga förutsättningar, se följande uppgiftsinspelningar för moms-ID i Lifecycle Services (LCS):
@@ -109,7 +108,6 @@ Mer information om bearbetning av registrerings-ID, inklusive erforderliga föru
 -   Skapa moms-ID
 -   Registrering av moms-ID för leverantör
 -    Partsökning via moms-ID
-
 
 
 
