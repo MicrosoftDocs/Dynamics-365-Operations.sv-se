@@ -1,32 +1,31 @@
 ---
-title: "Lagerpåfyllnad med uttags-kanbans"
-description: "Det här avsnittet beskriver hur uttags-kanban används för materialpåfyllnad för tillverkning."
+title: Lagerpåfyllnad med uttags-kanbans
+description: Det här avsnittet beskriver hur uttags-kanban används för materialpåfyllnad för tillverkning.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fe3ebe3c27c380d95cbc12b864264e9538d433f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 011da8cd894cc044b6af8b740e49ed8d7c3c0c67
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320936"
 ---
-
 # <a name="replenishment-with-withdrawal-kanbans"></a>Lagerpåfyllnad med uttags-kanbans
 
 [!include [banner](../includes/banner.md)]
@@ -87,5 +86,4 @@ I följande scenario konfigureras överföringsaktiviteten för uttags-kanban at
 6.  Tillverkningsprocess
 
 När en kanban har förbrukats på platsen för produktionsinleverans rapporteras den som tom, och en ny kanban läggs till i flödet. En påfyllnadsrad läggs till i en kanban-påfyllnad när en kanban skapas. När kanban-påfyllnaden bearbetas, skapas lagerställearbete för kanban-plockning. Lagerarbetaren bearbetar arbetet för kanban-plockning och dirigeras av arbetet för att plocka material för kanban på ett lagerställe. När denna lagerarbetare bekräftar plockningen slutförs kanban automatiskt, och lagerarbetaren vägleds för att förflytta materialet till produktionsinleveransplatsen.
-
 

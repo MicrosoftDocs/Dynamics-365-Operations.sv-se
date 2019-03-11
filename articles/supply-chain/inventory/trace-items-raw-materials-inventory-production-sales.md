@@ -1,13 +1,13 @@
 ---
-title: "Spåra artiklar och råmaterial i lager, produktion och försäljning"
-description: "I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen."
+title: Spåra artiklar och råmaterial i lager, produktion och försäljning
+description: I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310080"
 ---
-
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Spåra artiklar och råmaterial i lager, produktion och försäljning
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Om du vill använda alternativen **Ny bakåt** eller **Ny framåt** måste du an
 Du kan spara informationen på fliken <strong>Detaljer</strong> som en XML-fil genom att klicka på <strong>Exportera</strong> under åtgärden *<strong><em>Spårning</em></strong>* i åtgärdsfönstret. Förutom spårningsdetaljerna, XML-filen innehåller även spårningskriterier, överordnad nod och lagerbehållning. Möjligheten att spara information om en spårning är användbar, till exempel om du vill bekräfta informationen till en kvalitetsorder eller annan efterlevnadsdokumentation. Du kan ange där filen sparas. Markera alternativet <strong>Visa dokument</strong> om du vill visa filen direkt. <strong>Obs!</strong> Filen sparas alltid, även om du endast vill visa den. Som standard öppnas XML-filen i ett webbläsarfönster. Du kan dock högerklicka på filen, välja <strong>Öppna med</strong> och sedan välja programmet som ska användas för att visa innehållet.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kan jag beräkna saldo för en viss artikel eller ingrediens?
-Du kan exportera informationen från sammanfattningssidorna till Microsoft Excel. Öppna den aktuella sidan, klicka på **Öppna i Microsoft Office**-ikonen och välj sedan **Exportera till Microsoft Excel**. Den här funktionen är särskilt användbar när du vill beräkna ett klumpsaldo för en artikel eller ingrediens från sidan **Transaktioner**. På sidan **Sammanfattning av transaktioner** kan du filtrera på artikeln eller ingrediensen, och alternativt även på batchen, och sedan exportera informationen till Excel. I Excel kan du till exempel isolera lagerbehållningen, kvantiteten som sålts och den mängd som användes i produktionen.
+Du kan exportera informationen från de samlingssidor till Microsoft Excel. Öppna den aktuella sidan, klicka på **Öppna i Microsoft Office**-ikonen och välj sedan **Exportera till Microsoft Excel**. Den här funktionen är särskilt användbar när du vill beräkna ett klumpsaldo för en artikel eller ingrediens från sidan **Transaktioner**. På sidan **Sammanfattning av transaktioner** kan du filtrera på artikeln eller ingrediensen, och alternativt även på batchen, och sedan exportera informationen till Excel. I Excel kan du till exempel isolera lagerbehållningen, kvantiteten som sålts och den mängd som användes i produktionen.
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>Kan jag se historik över problem med artiklar och råmaterial?
 Spårningsdetaljerna innehåller information om kvalitetsorder och avvikelser som gäller råmaterial eller artikeln. Du kan visa en sammanfattning av kvalitetsorder och avvikelser genom att klicka på **Kvalitetsorder** eller **Avvikelser** i åtgärdsfönstret. **Obs!** Destruktiva kvalitetsorder kan visas mer än en gång i spårningsdetaljerna. När en destruktiv kvalitetsorder skapas för ett dokument, till exempel en inköpsorder, visas den för varje transaktion för dokumentet.
@@ -141,4 +140,3 @@ Du kan generera rapporten **Levererade till kunder** när du vill identifiera m�
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jag spåra samprodukter och biprodukter?
 Du kan spåra samprodukter, men du kan inte spåra en biprodukt eftersom spårningsdimensioner vanligtvis inte tilldelas till biprodukter. När du spårar en artikel omfattar spårningsdetaljerna alla relaterade samprodukter. En nod som innehåller en samprodukt inkluderar ordet ”samprodukt” i detaljerna. Du kan även visa information om en samprodukt genom att välja noden i spårningsdetaljerna och sedan klicka på snabbfliken **Produktion**.
-

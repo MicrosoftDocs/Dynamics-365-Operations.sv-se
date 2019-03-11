@@ -1,13 +1,13 @@
 ---
-title: "Översikt över SEPA-kreditöverföring"
-description: "Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring."
+title: Översikt över SEPA-kreditöverföring
+description: Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d6081c12ea65812a15b50c627330b4566ab4c679
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1aa70dea3b0e7056afbdba96f4475c3e7e71f57c
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363785"
 ---
-
 # <a name="sepa-credit-transfer-overview"></a>Översikt över SEPA-kreditöverföring
 
 [!include [banner](../includes/banner.md)]
@@ -52,10 +51,10 @@ EPC som består av ett antal europeiska banker, utvecklar de kommersiella och te
 En SEPA-överföring är en betalning från ett företag eller en person till ett annat företag eller annan person. Betalningar måste vara i euro och måste inkludera det internationella bankkontonumret (IBAN) och bankidentifierarkoden (BIC) för båda parterna. (BIC kallas även Society for Worldwide Interbank Financial Telecommunication \[SWIFT\]-kod.) Transaktionskostnader måste delas mellan de båda parterna. Krediteringsöverföringar som uppstår mellan parterna ska använda XML-filer som överensstämmer med ISO 20022-standarderna för betalning och XML-formatet, som anges av EPC.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Hur utförs en kreditöverföring?
-Betalningsformatet för kreditöverföring i europeiska länder implementeras genom att använda funktionerna för elektronisk rapportering och betalningsmetod i Microsoft Dynamics 365 for Finance and Operations. Några får kreditöverföringsformat som används i andra regioner använder fortfarande äldre betalningsramverk. Bland många andra format finns det tolv ISO 20022 kreditöverföringsfilformat tillgängliga. Följande exportformat motsvarar SEPA ISO 20022 XML-standarden. De används för att generera betalningsöverföringar som inte är i euro för länder/regioner där de används och betalningar i euro enligt version 8.2 av SEPA Credit Transfer Scheme Rulebook som EPC släpper. Innan du inför kreditöverföringar måste du kontakta din bank för att erhålla programvaran som krävs för att överföra elektroniska bankfiler. Du använder programmet för att överföra XML-filerna som innehåller betalningsorder till banken.
+Betalningsformatet för kreditöverföring för europeiska länder implementeras genom att använda funktionerna för elektronisk rapportering och betalningsmetod i Microsoft Dynamics 365 for Finance and Operations. Några får kreditöverföringsformat som används i andra regioner använder fortfarande äldre betalningsramverk. Bland många andra format finns det tolv ISO 20022 kreditöverföringsfilformat tillgängliga. Följande exportformat motsvarar SEPA ISO 20022 XML-standarden. De används för att generera betalningsöverföringar som inte är i euro för länder/regioner där de används och betalningar i euro enligt version 8.2 av SEPA Credit Transfer Scheme Rulebook som EPC släpper. Innan du inför kreditöverföringar måste du kontakta din bank för att erhålla programvaran som krävs för att överföra elektroniska bankfiler. Du använder programmet för att överföra XML-filerna som innehåller betalningsorder till banken.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported-in-finance-and-operations"></a>Vilket kreditöverföringsformat stöds i Finance and Operations?
-Du bör alltid gå till det delade resursbiblioteket i Microsoft Dynamics Lifecycle Services (LCS) och visa en lista över tillgängliga filer som har tillgångstypen **GER-konfiguration**. Nästa avsnitt "Vad måste jag ställa in?" innehåller en länk till ett hjälpavsnitt som beskriver hur du skapar en LCS-databas för att granska tillgängliga konfigurationer och importera valda konfigurationer.
+Du bör alltid gå till det delade resursbiblioteket i Microsoft Dynamics Lifecycle services (LCS) och visa en lista över tillgängliga filer som har tillgångstypen **GER-konfiguration**. Nästa avsnitt "Vad måste jag ställa in?" innehåller en länk till ett hjälpavsnitt som beskriver hur du skapar en LCS-databas för att granska tillgängliga konfigurationer och importera valda konfigurationer.
 
 ## <a name="what-do-i-have-to-set-up"></a>Vad måste jag ställa in?
 -   Innan du skapar kreditöverföringsfiler måste minst en aktiv konfiguration för kreditöverföring importeras till dina ER-konfigurationer. Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
@@ -124,7 +123,6 @@ International Bank Account Number (IBAN) och Bank Identifier Code (BIC) används
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Hur överför jag en betalningsfil till banken?
 När du genererar betalningar genereras betalningsfilen och du ombeds att spara den i webbläsaren till en tillgänglig plats. Nästa steg är att skicka XML-filen till banken. Den här processen varierar från bank till bank. Följ instruktionerna från banken om att skicka in filerna till banken för bearbetning.
-
 
 
 

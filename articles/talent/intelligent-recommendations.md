@@ -1,14 +1,14 @@
 ---
 title: Intelligenta rekommendationer
-description: "Det här avsnittet beskriver hur du kan använda maskininlärning för att ge rekommendationer för jobb och jobbsökande."
+description: Det här avsnittet beskriver hur du kan använda maskininlärning för att ge rekommendationer för jobb och jobbsökande.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306271"
 ---
-
 # <a name="intelligent-recommendations"></a>Intelligenta rekommendationer
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ För alla rekommenderade kandidater kan du välja **visa kandidat** på kandidat
 ## <a name="job-recommendations"></a>Jobbrekommendationer 
 
 När en potentiell medarbetare använder jobbwebbplatsen för att ansöka om ett jobb, rekommenderas andra lediga befattningar inom organisationen. Dessa rekommendationer baseras på potentiella kandidatens tidigare ansökningar och på hans eller hennes meritförteckning eller kandidatprofil. Därför hjälper jobbrekommendationer potentiella kandidater att snabbt identifiera vilka jobb som passar dem bäst. Jobbrekommendationer ges till potentiella kandidater om mer än tio jobb publiceras på jobbwebbplatsen. Potentiella kandidater kan öppna detaljerna på en jobbpublicering från rekommendationskortet. De kan också ge feedback om en rekommendationen för att förbättra framtida rekommendationer.
-

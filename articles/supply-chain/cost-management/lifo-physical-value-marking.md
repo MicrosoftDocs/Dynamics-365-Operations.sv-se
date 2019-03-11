@@ -1,13 +1,13 @@
 ---
-title: "LIFO med fysiskt värde och markering"
-description: "Sist in, först ut (LIFO) är en lagermodell där de senast (nyaste) anskaffade inleveranserna utlevereras först. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen."
+title: LIFO med fysiskt värde och markering
+description: Sist in, först ut (LIFO) är en lagermodell där de senast (nyaste) anskaffade inleveranserna utlevereras först. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: db6d04a64821b3b02679056f787092dc40ef4423
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344212"
 ---
-
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysiskt värde och markering
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,7 @@ Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet fö
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unit-pris.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
@@ -98,7 +97,7 @@ I illustrationen visas effekten av den LIFO-lagermodellen på serien med transak
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unit-pris.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
@@ -140,14 +139,13 @@ I illustrationen nedan visas hur den här serien med transaktioner påverkas av 
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unit-pris.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
 - Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 - Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 - Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
-
 
 
 

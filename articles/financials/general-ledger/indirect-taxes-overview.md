@@ -1,13 +1,13 @@
 ---
-title: "Momsöversikt"
-description: "Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans."
+title: Momsöversikt
+description: Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 11fe694af6180419460ba5dbf4c55f760a38f987
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311368"
 ---
-
 # <a name="sales-tax-overview"></a>Momsöversikt
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ På varje transaktion (försäljnings-/inköpsdokumentrader, journaler och så v
 På varje transaktion kan du slå upp den beräknade momsen genom att öppna sidan **Momstransaktion**. Du kan slå upp momsen för en dokumentrad eller för hela dokumentet. För vissa dokument (exempelvis,leverantörsfaktura och allmänna journaler) kan du justera den beräknade momsen om originaldokumentet visar avvikande belopp.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Momskvittning och rapportering
-Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 for Finance and Operations innehåller de funktioner som gör att du kan kvitta momskonton för intervallet, och förskjuta saldon till momskvittningskontot, enligt uppgifterna i redovisningsbokföringsgrupperna. Du kan använda den här funktionen på sidan **Kvitta och bokföra moms**. Du måste ange en momskvittningsperiod för vilken moms ska kvittas. 
+Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 for Finance and Operations innehåller funktioner så att du kan kvitta momskonton för intervallet och förskjuta saldon till momskvittningskontot, enligt uppgifterna i redovisningsbokföringsgrupperna. Du kan använda den här funktionen på sidan **Kvitta och bokföra moms**. Du måste ange en momskvittningsperiod för vilken moms ska kvittas. 
 
 När momsen har betalats, ska saldot för momskvittningskontot balanseras mot bankkontot. Om skattemyndigheten som anges i momskvittningsperioden hör till ett annat leverantörskonto, bokförs momssaldot som en öppen leverantörsfaktura och inkluderas i det vanliga betalningsförslaget.
 
@@ -97,4 +96,3 @@ Om du emellertid använder villkorsmoms kvittar du med skattemyndigheten när du
 
 
 Mer information finns i [Ställ in källskatt](tasks/set-up-withholding-tax.md).
-

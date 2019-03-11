@@ -1,13 +1,13 @@
 ---
-title: "Åtgärdssökning"
-description: "Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida."
+title: Åtgärdssökning
+description: I artikeln beskrivs funktionen åtgärdssökning i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 960c715c487fbda5d93630327f07380e6d8fbd3c
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317509"
 ---
-
 # <a name="action-search"></a>Åtgärdssökning
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
+I artikeln beskrivs funktionen åtgärdssökning i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
 
 ## <a name="introduction"></a>Introduktion
 
-Sidor i Microsoft Dynamics 365 for Finance and Operations visar främst kommandon i åtgärdsfönster, både det vanliga åtgärdsfönstret som visas högst upp på en sida och verktygsfälten som visas på olika delar av sidan. I tidigare versioner fanns funktionen Tangenttips, som snabbt gav dig åtkomst till valfri knapp i ett åtgärdsfönster genom att trycka på ALT och en serie bokstäver.
+Sidorna i Microsoft Dynamics 365 for Finance and Operations visar främst kommandon i åtgärdsfönster, både det vanliga åtgärdsfönstret som visas högst upp på en sida och verktygsfälten som visas på olika delar av sidan. I tidigare versioner fanns funktionen Tangenttips, som snabbt gav dig åtkomst till valfri knapp i ett åtgärdsfönster genom att trycka på ALT och en serie bokstäver.
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 

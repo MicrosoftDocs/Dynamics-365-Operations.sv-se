@@ -1,32 +1,31 @@
 ---
-title: "Produktens livscykeltillstånd"
-description: "Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant."
+title: Produktens livscykeltillstånd
+description: Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant.
 author: cvocph
 manager: AnnBe
 ms.date: 12/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: bf9e8fe828cae0f643bfb89c34f1d545e3993619
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
-ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364843"
 ---
-
 # <a name="product-lifecycle-state"></a>Produktens livscykeltillstånd 
 
 [!include [banner](../includes/banner.md)]
@@ -110,8 +109,7 @@ Använd följande kriterier för att välja och uppdatera frisläppta produkter 
 
 -  [Skapa ett nytt produktlivscykeltillstånd (Uppgiftsguide)](tasks/new-product-lifecycle-state.md)
 -  [Skapa ett standardiserat produktlivscykeltillstånd (Uppgiftsguide)](tasks/default-product-lifecycle-state.md)
--  [Associera ett produktlivscykeltillstånd till en frisläppt produktmall (Uppgiftsguide)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tilldela ett produktlivscykeltillstånd för en frisläppt produktmall (uppgiftsguide)](tasks/product-lifecycle-state-released-product-master.md)
 -  [Associera ett produktlivscykeltillstånd till en frisläppt produkt (Uppgiftsguide)](tasks/product-lifecycle-state-released-product.md)
 -  [Sök efter inaktuella produktvarianter och tilldela ett produktlivscykeltillstånd (Uppgiftsguide)](tasks/obsolete-product-variants.md)
 -  [Skapa ett produktlivscykeltillstånd för att utesluta produkter från huvudplanering (Uppgiftsguide)](tasks/exclude-products-master-planning.md)
-

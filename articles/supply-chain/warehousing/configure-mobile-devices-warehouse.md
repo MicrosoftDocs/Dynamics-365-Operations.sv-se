@@ -1,13 +1,13 @@
 ---
-title: "Ställ in mobila enheter för lagerarbete"
-description: "Det här ämnet beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet."
+title: Ställ in mobila enheter för lagerarbete
+description: Det här ämnet beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 74522c97716238b62af3d65a1c23ba9e5e60a68b
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347961"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Ställ in mobila enheter för lagerarbete
 
 [!include [banner](../includes/banner.md)]
@@ -208,7 +207,7 @@ Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du 
 </thead>
 <tbody>
 <tr class="odd">
-<td>Inga</td>
+<td>Ingen</td>
 <td>Detta standardvärde processar inte arbete.</td>
 </tr>
 <tr class="even">
@@ -367,11 +366,11 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="even">
 <td>Fält för systemgruppering</td>
-<td>Välj det fält som bestämmer hur Microsoft Dynamics 365 for Finance and Operations ska gruppera plockningsarbete för arbetare. Om du till exempel väljer fältet <strong>ShipmentId</strong> kommer arbetstagare att skanna leverans-ID:t för att gruppera plockningsarbetet. Allt arbete för leveransen tilldelas sedan till arbetaren. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också ange text i fältet <strong>Systemgrupperingsetikett</strong> för att instruera arbetaren om vad den ska skanna..</td>
+<td>Välj det fält som bestämmer hur Microsoft Dynamics 365 for Finance and Operations ska gruppera plockningsarbete för arbetaren. Om du till exempel väljer fältet <strong>ShipmentId</strong> kommer arbetstagare att skanna leverans-ID:t för att gruppera plockningsarbetet. Allt arbete för leveransen tilldelas sedan till arbetaren. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också ange text i fältet <strong>Systemgrupperingsetikett</strong> för att instruera arbetaren om vad den ska skanna..</td>
 </tr>
 <tr class="odd">
 <td>Etikett för systemgruppering</td>
-<td>Ange den text som ska instruera arbetaren om vad som ska skannas när plockarbetet grupperas av Microsoft Dynamics 365 for Finance and Operations. Om du till exempel använder fältet <strong>ShipmentId</strong> för att gruppera plockningarbete efter leveransen kan du ange <strong>Leverans-ID</strong> i fältet. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också välja fältet som du vill gruppera efter i fältet <strong>Systemgruppering</strong>.</td>
+<td>Ange text för att instruera arbetaren om vad som skannas när plockarbetet grupperas av Microsoft Dynamics 365 for Finance and Operations. Om du till exempel använder fältet <strong>ShipmentId</strong> för att gruppera plockningarbete efter leveransen kan du ange <strong>Leverans-ID</strong> i fältet. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också välja fältet som du vill gruppera efter i fältet <strong>Systemgruppering</strong>.</td>
 </tr>
 <tr class="even">
 <td>Använd standarddata</td>
@@ -387,13 +386,13 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="odd">
 <td>Kod för arbetsmall</td>
-<td>Välj den arbetsmall som ska användas för att skapa arbetet för en process. Om du till exempel tar emot en artikel för en inköpsorder, genereras det inlagrade arbetet baserat på arbetsmallen. Om du inte väljer en mall för arbetet, tilldelar Microsoft Dynamics 365 for Finance and Operations en mall, baserat på frågevillkor. Mer information om arbetsmallar finns i <a href="control-warehouse-location-directives.md">Kontrollera lagerarbete med arbetsmallar och platsdirektiv</a>.</td>
+<td>Välj den arbetsmall som ska användas för att skapa arbetet för en process. Om du till exempel tar emot en artikel för en inköpsorder, genereras det inlagrade arbetet baserat på arbetsmallen. Om du inte väljer någon arbetsmall tilldelar Microsoft Dynamics 365 for Finance and Operations en mall baserat på frågevillkor. Mer information om arbetsmallar finns i <a href="control-warehouse-location-directives.md">Kontrollera lagerarbete med arbetsmallar och platsdirektiv</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Begär att arbetare ska bekräfta produkten, platsen eller kvantiteten när de plockar artiklar
-Du kan ställa in arbetsbekräftelser som kräver en arbetare att använda en mobil enhet för att registrera platsen eller kvantitet, när han eller hon utför arbete på lagerstället. Arbetsbekräftelser hjälper till att garantera att arbetaren är på rätt plats eller hanterar rätt kvantitet av artiklar. Du kan också aktivera Microsoft Dynamics 365 for Finance and Operations om du automatiskt vill bekräfta arbetarens registrering. Om du aktiverar automatisk bekräftelse, kan du inte också kräva bekräftelser för plats och kvantitet. Arbetsbekräftelser innehåller också produkter och produktvarianter. Du kan registrera bekräftelser genom att skanna en streckkod. Om du bekräfta produkter och produktvarianter måste du ange ett ID för produkten eller produktvarianten. Detta ID kan vara ett produkt-ID, ett produktsöknings-ID, ett externt ID, en GTIN eller en streckkod. När du har angett ID eller skannat streckkoden visas dimensionerna för produktvarianten i den mobila enheten. 
+Du kan ställa in arbetsbekräftelser som kräver en arbetare att använda en mobil enhet för att registrera platsen eller kvantitet, när han eller hon utför arbete på lagerstället. Arbetsbekräftelser hjälper till att garantera att arbetaren är på rätt plats eller hanterar rätt kvantitet av artiklar. Du kan också aktivera Microsoft Dynamics 365 for Finance and Operations du automatiskt vill bekräfta arbetarens registrering. Om du aktiverar automatisk bekräftelse, kan du inte också kräva bekräftelser för plats och kvantitet. Arbetsbekräftelser innehåller också produkter och produktvarianter. Du kan registrera bekräftelser genom att skanna en streckkod. Om du bekräfta produkter och produktvarianter måste du ange ett ID för produkten eller produktvarianten. Detta ID kan vara ett produkt-ID, ett produktsöknings-ID, ett externt ID, en GTIN eller en streckkod. När du har angett ID eller skannat streckkoden visas dimensionerna för produktvarianten i den mobila enheten. 
 
 I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekräftelser med.
 
@@ -420,6 +419,5 @@ I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekr�
 
 [Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar (uppgiftsguide)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Fördelar med att använda lagerstatus](../inventory/inventory-statuses.md)
-
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Granska inkasseringsinformation
-description: "I den här proceduren du går igenom hur du granskar inkassoinformation samt olika inställningsalternativ och inkassotransaktioner."
+description: I den här proceduren du går igenom hur du granskar inkassoinformation samt olika inställningsalternativ och inkassotransaktioner.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eb0866505702ec5d047b6c8f3f0657aae787bedc
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349111"
 ---
 # <a name="review-collections-information"></a>Granska inkasseringsinformation
 
@@ -131,5 +131,4 @@ I den här proceduren du går igenom hur du granskar inkassoinformation samt oli
     * Välj ett inkasseringsärende som tilldelats kunden eller lämna det här fältet tomt. Om ett ärende är markerat, visas endast transaktioner och aktiviteter som är kopplade till ärendet i det här formuläret.  
 8. Klicka på Visa lista.
     * Markera ett kundkonto eller acceptera standardvärdet. Som standard är det här det valda kundkontot på listsidan eller i formuläret från vilket du öppnade det här formuläret. Om du öppnade formuläret från en listsida, kunderna i listan är de kunder som ingår i inkassopoolen som används på listsidan.  
-
 

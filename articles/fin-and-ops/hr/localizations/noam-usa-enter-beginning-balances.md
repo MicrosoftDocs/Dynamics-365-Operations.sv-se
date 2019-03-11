@@ -1,13 +1,13 @@
 ---
-title: "Ange initiala lönesaldon"
-description: "Avsnittet beskriver stegen för att ange initiala saldon för lönekoder, förmåner, avdrag och moms. Denna information är viktig för partnerföretag som vill migrera eller överföra data för en ny implementering av lönelistor från ett annat system."
+title: Ange initiala lönesaldon
+description: Avsnittet beskriver stegen för att ange initiala saldon för lönekoder, förmåner, avdrag och moms. Denna information är viktig för partnerföretag som vill migrera eller överföra data för en ny implementering av lönelistor från ett annat system.
 author: kherr75
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1e7bdfca55e1bdaba0b5ebdf55b46744e584ab2c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313001"
 ---
-
 # <a name="enter-payroll-beginning-balances"></a>Ange initiala lönesaldon
 
 [!include [banner](../../includes/banner.md)]
@@ -168,4 +167,3 @@ Det går att återföra och omregistrera transaktioner. Om du vill återföra tr
 2. Klicka på **Ja** när meddelandet ”När du återför detta löneutdrag kommer ett utdrag om löneåterförande att skapas för att kompensera detta löneutdrag. Ingetdera löneutdrag kan redigeras. Vill du återföra detta löneudrag?" visningar. 
 
 När du återför löneutdraget kan du generera ett nytt löneutdrag för arbetaren från inkomstutdrag som du skapade tidigare. Kom ihåg att korrigera felaktiga rader på inkomstutdraget innan du skapar nya löneutdrag och generera sedan nya löneutdrag med korrekt belopp. 
-

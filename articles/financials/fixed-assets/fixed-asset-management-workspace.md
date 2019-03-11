@@ -1,30 +1,29 @@
 ---
-title: "Arbetsyta för hantering av anläggningstillgångar"
-description: "Det här ämnet innehåller information om arbetsyta för anläggningstillgångar. Den här arbetsytan visar information som är relaterad till anläggningstillgångar som har registrerats i systemet. Den innehåller en sammanfattningsvy och en analysvy."
+title: Arbetsyta för hantering av anläggningstillgångar
+description: Det här ämnet innehåller information om arbetsyta för anläggningstillgångar. Den här arbetsytan visar information som är relaterad till anläggningstillgångar som har registrerats i systemet. Den innehåller en sammanfattningsvy och en analysvy.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 1e8e02bf308b5506aef41d302755911f6a9ce3e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8425387d4004e02e9b8adf9ba3b31a0b4e02b6e9
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352331"
 ---
-
 # <a name="fixed-asset-management-workspace"></a>Arbetsyta för hantering av anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
@@ -75,4 +74,3 @@ Följande tabell visar de visulaiseringar som är tillgängliga på varje rapppo
 | Värderingskartor        | Information om anläggningstillgångar |
 
 Om du vill visa analysen med data måste du först uppdatera det sammanlagda måttet AssetTransactionMeasure på sidan **enhetslagring**.
-

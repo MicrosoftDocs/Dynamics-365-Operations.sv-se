@@ -1,35 +1,34 @@
 ---
-title: "Importera leverantörskataloger"
-description: "Det här ämnet beskriver hur du importerar leverantörskatalogdata."
+title: Importera leverantörskataloger
+description: Det här ämnet beskriver hur du importerar leverantörskatalogdata.
 author: mkirknel
 manager: AnnBe
 ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ac7754bd6361ad74f7ab4d564ae3114dd4b9f165
-ms.openlocfilehash: caf801ea27ade63c24bb0907313e7f8294c50702
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362037"
 ---
-
 # <a name="import-vendor-catalogs"></a>Importera leverantörskataloger
 [!include[banner](../includes/banner.md)]
 
-## <a name="vendor-catalogs-import"></a>Importera leverantörskataloger
+## <a name="vendor-catalogs-import"></a>Import av leverantörskataloger
 
 I Microsoft Dynamics 365 for Finance and Operations kan inköpare skapa och underhålla kataloger som anställda i företaget kan använda när de beställer artiklar och tjänster för intern användning. Om du vill skapa en anskaffningskatalog kan du lägga till artiklar och tjänster som du vill göra tillgänglig för anställda, antingen genom att importera produktkatalogdata eller genom att manuellt lägga till produktkatalogdata till produktmallen. 
 
@@ -53,7 +52,7 @@ Om du vill importera leverantörskatalogdata måste du utföra följande uppgift
 
 6.  Överför CMR-filen.
 
-7.  Granska, godkänn eller avvisa produkterna i leverantörskatalogen. Produkter mappas automatiskt till anskaffningskategorier i Dynamics 365 for Finance and Operations. 
+7.  Granska, godkänn eller avvisa produkterna i leverantörskatalogen. Produkter som mappas automatiskt till anskaffningskategorier i Dynamics 365 for Finance and Operations. 
     
 Godkända produkter läggs till i produktmallen och frisläpps för de valda juridiska personer. Endast godkända produkter kan läggas till anskaffningskatalogen.
 
@@ -70,4 +69,3 @@ En filmall för katalogimport är en XSD-fil som du använder för att skapa en 
 3. Välj plats där du vill lagra katalogfilmallen och spara filen i dialogrutan **Spara som**.
 
 Mer information och exempel finns i det här blogginlägget: [leverantörskataloger i Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
-

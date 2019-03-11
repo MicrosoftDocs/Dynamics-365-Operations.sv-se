@@ -1,13 +1,13 @@
 ---
-title: "Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa"
-description: "Det här avsnittet beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa."
+title: Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa
+description: Det här avsnittet beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346006"
 ---
-
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa
 
 [!include [banner](includes/banner.md)]
@@ -108,7 +107,7 @@ Klicka på **Fortsätt** om du vill återuppta inspelningssessionen när du har 
 
 ### <a name="capture-screenshots"></a>Ta skärmbilder
 
-Uppgiftsinspelaren kan läsa in skärmdumpar på Modern Retail POS-användargränssnittet när du spelar in en affärsprocess. Aktivera inspelningsfunktionen för skärmbild genom att ange alternativet **Fånga skärmbild** på **Ja** och registrera den. När registreringen är klar klickar du på **Stopp** och hämta Word-dokumentet. Dokumentet innehåller steg med relevanta skärmdumpar.
+Uppgiftsinspelaren kan läsa in skärmdumpar på Retail Modern POS-användargränssnittet när du spelar in en affärsprocess. Aktivera inspelningsfunktionen för skärmbild genom att ange alternativet **Fånga skärmbild** på **Ja** och registrera den. När registreringen är klar klickar du på **Stopp** och hämta Word-dokumentet. Dokumentet innehåller steg med relevanta skärmdumpar.
 
 > [!NOTE]
 > Funktionen för att fånga skärmbild stöds inte i Cloud POS.
@@ -137,14 +136,13 @@ Text som du anger i fältet **Text** visas *ovanför* stegtexten i uppgiftsguide
 
 Text som du anger i fältet **Anteckningar** visas *under* stegtexten i uppgiftsguiden. Användaren måste expandera stegtexten i popup-fönstret för att läsa anteckningen. Den här platsen passar valfritt läsmaterial eller annan information som kan vara användbart för användaren, men som användaren inte behöver för att slutföra åtgärden.
 
-## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjälp i Retail Modern POS och molnbaserad kassa
+## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjälp i Retail Modern POS och Cloud POS
 
-Om du vill visa dina egna anpassade uppgiftsinspelningar i hjälpfönstret för Retail Modern POS och Cloud POS så att de kan spelas upp text, så måste du spara dina uppgiftsinspelningar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar på ditt BPM-bibliotek. Mer information finns i [Ansluta hjälpsystemet](../fin-and-ops/get-started/help-connect.md). Retail Modern POS och Cloud POS Help söker LCS i realtid. Det söker igenom alla BPM-bibliotek som valts i hjälpsystemparametrarna för Microsoft Dynamics 365 for Retail och visar relevanta resultat. För att få åtkomst till menyn **Hjälp** klickar du på knappen **Hjälp** (frågetecken) högst upp på skärmen. Ange sedan ditt processnamn i sökrutan och tryck på sökknappen.
+Om du vill visa dina egna anpassade uppgiftsinspelningar i hjälpfönstret för Retail Modern POS och Cloud POS så att de kan spelas upp text, så måste du spara dina uppgiftsinspelningar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar på ditt BPM-bibliotek. Mer information finns i [Ansluta hjälpsystemet](../fin-and-ops/get-started/help-connect.md). Retail Modern POS och Cloud POS Help söker LCS i realtid. Det söker igenom alla BPM-bibliotek som valts i systemparametrarna för Microsoft Dynamics 365 for Retail Help och visar relevanta resultat. För att få åtkomst till menyn **Hjälp** klickar du på knappen **Hjälp** (frågetecken) högst upp på skärmen. Ange sedan ditt processnamn i sökrutan och tryck på sökknappen.
 
 [![Knappen Hjälp](./media/help.jpg)](./media/help.jpg)
 
 När du klickar på en uppgiftsguide i sökresultaten kan du antingen se stegen som ett hjälpavsnitt eller exportera stegen till ett Word-dokument.
 
 > [!NOTE]
-> Hjälp i Retail Modern POS och molnbaserad kassa visar inte aktivitetsguiderna i enlighet med det formulär du använder eller den åtgärd du utför. Skriv in processnamnet i sökrutan och klicka på **Sök**.
-
+> Hjälp i Retail Modern POS och Cloud POS visar inte aktivitetsguiderna i enlighet med det formulär du använder eller den åtgärd du utför. Skriv in processnamnet i sökrutan och klicka på **Sök**.

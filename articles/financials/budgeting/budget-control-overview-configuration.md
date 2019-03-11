@@ -1,13 +1,13 @@
 ---
-title: "Översikt över budgetkontroll"
-description: "Det här avsnittet innehåller en presentation av budgetkontroll och information som hjälper dig att konfigurera budgetkontrollen i Microsoft Dynamics 365 for Finance and Operations så att du kan hantera ekonomiska resurser."
+title: Översikt över budgetkontroll
+description: Det här avsnittet innehåller en presentation av budgetkontroll och information som hjälper dig att konfigurera budgetkontroll i Microsoft Dynamics 365 for Finance and Operations så att du kan hantera ekonomiska resurser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308539"
 ---
-
 # <a name="budget-control-overview"></a>Översikt över budgetkontroll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en presentation av budgetkontroll och information som hjälper dig att konfigurera budgetkontrollen i Microsoft Dynamics 365 for Finance and Operations så att du kan hantera ekonomiska resurser.
+Det här avsnittet innehåller en presentation av budgetkontroll och information som hjälper dig att konfigurera budgetkontroll i Microsoft Dynamics 365 for Finance and Operations så att du kan hantera ekonomiska resurser.
 
 <a name="overview"></a>Översikt
 --------
@@ -128,4 +127,3 @@ När budgetkontroll aktiveras kommer användarna att få varnings- och felmeddel
 Från den här sidan kan användare titta på sidan **Budgetkontrollstatistik efter period** för att se information om tillgänglig budget och reservationer för en vald kombination av budgetkontrolldimensioner. Användarna kan även titta på sidan **Budgetkontrollstatistik** för att se tillgänglig budget för alla kombinationer av ekonomisk dimension som används i budgetkontroll. 
 
 Om budgetkontroll aktiveras för inköpsorder kan budgetchefen använda arbetsområdet **Redovisningsbudgetar och prognoser** för att granska kön för alla obekräftade inköpsorder som har varningar och fel för budgetkontroll. Om budgetchefen har behörigheter för överskriden budget kan han eller hon bekräfta inköpsorder direkt i arbetsområdet.    
-

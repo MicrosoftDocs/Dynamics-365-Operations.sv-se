@@ -1,13 +1,13 @@
 ---
 title: Planera en organisationshierarki
-description: "Innan du konfigurerar organisationer och organiationshierarkier, se till att du förstår hur du utformar din verksamhet på bästa sätt."
+description: Innan du konfigurerar organisationer och organiationshierarkier, se till att du förstår hur du utformar din verksamhet på bästa sätt.
 author: sericks007
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 633d85333a510cec9cee2721e6e2330a47b6c78c
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331999"
 ---
-
 # <a name="plan-your-organizational-hierarchy"></a>Planera en organisationshierarki
 
 [!include [banner](../includes/banner.md)]
 
-Innan du ställer in organisationer och organisationshierarkier i Microsoft Dynamics 365 for Finance and Operations måste du planera hur din verksamhet ska utformas. Organisationsmodellen har en avsevärd effekt på implementeringen av Finance and Operations och på affärsprocesser.
+Innan du ställer in organisationer och organisationshierarkier i Microsoft Dynamics 365 for Finance and Operations måste du planera hur din verksamhet ska se ut. Organisationsmodellen har en avsevärd effekt på implementeringen av Finance and Operations och på affärsprocesser.
 
 Organisationshierarkier representerar relationerna mellan organisationer som utgör ett företag. Därför är det viktigaste övervägandet, när du modellerar organisationer, strukturen på företaget. Vi rekommenderar att du definierar organisationsstrukturer som baseras på feedback från chefer och ledande befattningshavare från funktionella områden, till exempel ekonomi och redovisning, personal, drift, inköp, och försäljning och marknadsföring.
 
@@ -168,7 +167,7 @@ Driftenheter använder landssammanhanget för den överordnade juridiska persone
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Om organisationen modelleras som en juridisk person
 
-I länder/regioner som stöds av Finance and Operations kan de flesta lagstadgade rapporter skapas. Information om vilka rapporter som är tillgängliga för varje land/region finns i [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) för Finance and Operations. (CustomerSource-inloggning krävs.)
+I länder/regioner som stöds av Finance and Operations kan de flesta lagstadgade rapporter skapas. Information om vilka rapporter som är tillgängliga för varje land/region finns i [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) for Finance and Operations. (En CustomerSource-logo ett obligatoriskt fält.)
 
 > [!NOTE]
 > Ett bokföringslager i redovisningen i Finance and Operations gör att du kan justera poster i ett moderbolag som använder en annan redovisningsstandard än dotterbolaget. För ett företag som använder allmänt accepterad boföringspraxis i Storbritannien (UK GAAP) kan du göra justeringar i bokföringsskiktet, till exempel. Dessa poster kan konsolideras i ett moderbolag som använder allmänt accepterade redovisningsprinciper (GAAP) i USA. Justeringsposterna påverkar inte UK GAAP-rapporteringen.
@@ -243,4 +242,3 @@ Tänk på följande när du implementerar en organisationshierarki:
 - Innan du utformar stora omstruktureringsscenarier använder du hierarkins giltighetsdatum för att utföra en följdanalys och ett valideringstest.
 - Använd utkastläge för att ändra en hierarki innan du publicerar en ny version i en produktionsmiljö.
 - Begränsa antalet personer som har behörighet att lägga till eller ta bort organisationer från en hierarki i en produktionsmiljö. Ett lägre antal minskar risken för kostsamma misstag och behovet av korrigeringar.
-

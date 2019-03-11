@@ -1,13 +1,13 @@
 ---
 title: Ekonomiska insikter
-description: "Ekonomiska insikter använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI)."
+description: Ekonomiska insikter använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI).
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,20 +16,19 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308861"
 ---
-
 # <a name="financial-insights"></a>Ekonomiska insikter
 
 [!include [banner](../includes/banner.md)]
 
-**Ekonomiska insikter** använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI är inbäddat i Microsoft Dynamics 365 Finance and Operations. Tyngdpunkten i **Ekonomiska insikter** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 
+**Ekonomiska insikter**använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI bäddas in i Microsoft Dynamics 365 Finance and Operations. Tyngdpunkten i **Ekonomiska insikter** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 
 
 **Ekonomiska insikter** kombinerar data från redovisningen och reskontran för att ge en mer fullständig bild av den ekonomiska situationen i en organisation.
 
@@ -87,7 +86,7 @@ För närvarande kan inte data i inbäddade Power BI-rapporter begränsas till d
 |-----------------------------------------|-------|------------|
 | Visa arbetsyta för ekonomichefsöversikt             | Ekonomichef | Behörigheten ger åtkomst till arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
 | Visa aktuellt företag för ekonomiska insikter | <ul><li>Redovisare</li><li>Redovisningschef</li><li>Redovisningsansvarig</li><li>Revisor</li><li>Budgetchef</li><li>Verkställande direktör</li><li>Ekonomichef</li><li>Ekonomicontroller</li></ul> | Behörigheten ger tillgång till Ekonomiska insikter. Normalt används det aktiva företaget som ett filter. Du kan inte lägga till andra juridiska personer. |
-| Visa korsföretag för ekonomiska insikter   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, är denna behörighet inte tilldelad en roll. I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
+| Visa korsföretag för ekonomiska insikter   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, uppgiften inte är tilldelade till en roll. I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna. |
 
 
 ## <a name="financial-reporting-vs-finanical-insights"></a>Ekonomisk rapportering jämfört med finansiell information
@@ -126,7 +125,7 @@ Utöver användargränssnittet i den ursprungliga arbetsytan **Översikt för ek
 I den ursprungliga versionen av **Ekonomiska insikter**kunde inga visuella element redigeras. I framtida versioner kommer användare som har lämplig behörighet kunna skapa nya visuella element, kopiera befintliga och redigera elementen. Även om .pbix-filer som innehåller rapporter är tillgängliga som resurser, rekommenderas inte att du ändrar i standardrapporterna. Ytterligare ändringar kommer att göras i de visuella element för egna bokslut, standardrapport och datamodell som används för bokslut. För att dra nytta av nya funktioner och ändringar i nästa versions datamodell måste du göra om alla ändringar som du gjort i standardrapporterna via Microsoft Power BI Desktop.
 
 ## <a name="filtering"></a>Filtrering
-Användare kan filtrera rapporten med hjälp av fönstret **Filter** till vänster. Det här fönstret är detsamma som det som finns på skrivbordet för Power BI. Det finns olika nivåer av filtrering, varav en del kanske inte är tillgängliga, beroende på vad du har markerat på en sida (flik) eller om du använder funktionerna för detaljgranskning:
+Användare kan filtrera rapporten med hjälp av fönstret **Filter** till vänster. Det här fönstret är detsamma som det som finns på skrivbordet för Power BI Desktop. Det finns olika nivåer av filtrering, varav en del kanske inte är tillgängliga, beroende på vad du har markerat på en sida (flik) eller om du använder funktionerna för detaljgranskning:
 
 - **Rapportnivåfilter** – dessa filter tillämpas på alla visuella element på alla sidor (flikar).
 - **Sidnivåfilter** – dessa filter tillämpas på alla visuella element på den aktiva fliken. Filtren läggs ovanpå rapportnivåfiltren.
@@ -250,4 +249,3 @@ Informationen i följande resurser krävs inte för att aktivera inbäddade rapp
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

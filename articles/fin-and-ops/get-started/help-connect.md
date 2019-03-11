@@ -1,13 +1,13 @@
 ---
-title: "Ansluta hjälpsystemet"
-description: "Det här avsnittet innehåller en beskrivning av komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations, en översikt över hur du ansluter dem samt en sammanfattning över hur du skapar anpassad hjälp."
+title: Ansluta hjälpsystemet
+description: Det här avsnittet innehåller en beskrivning av komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations och ger en översikt över hur du kopplar dem och en sammanfattning av hur du skapar anpassad hjälp.
 author: margoc
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 673b01648127fe1d19fb3c75c4d6812c4f22c761
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317739"
 ---
-
-# <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
+# <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller komponenten för hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp.
+Det här avsnittet beskriver komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp.
 
 ## <a name="help-architecture"></a>Hjälparkitektur
 
@@ -44,7 +43,7 @@ Följande bild visar delarna i hjälpsystemet för Finance and Operations. Produ
 ## <a name="connecting-the-help-system"></a>Ansluta hjälpsystemet
 
 > [!NOTE]
-> Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns även att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) för såväl Retail som Talent.
+> Fliken **uppgiftsguide** finns för närvarande inte i Microsoft Dynamics 365 for Talent och Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns även att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) för såväl Retail som Talent.
 
 Med hjälp av sidan **Systemparametrar** ansluter systemadministratörer delar av hjälpsystemet för en implementering
 
@@ -102,4 +101,3 @@ Microsoft tillhandahåller en vitbok och exempelkod som beskriver hur du skapar 
 [Uppgiftsregistreringsöversikt](../../dev-itpro/user-interface/task-recorder.md)
 
 [Skapa en uppgiftsinspelning som ska användas som dokumentation eller utbildning](../../dev-itpro/user-interface/task-recorder-training-docs.md)
-

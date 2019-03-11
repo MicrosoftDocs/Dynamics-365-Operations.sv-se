@@ -1,13 +1,13 @@
 ---
 title: 125 procent degressiv avskrivning
-description: "Den här avsnittet ger en översikt över 125-procentsmetoden för degressiv avskrivning."
+description: Den här avsnittet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f7af5413376a98c3b2b7ded46c757c9156a3fadf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8ec88d799c44e035b6490861383557f8c3beda41
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362727"
 ---
-
 # <a name="125-percent-reducing-balance-depreciation"></a>125 procent degressiv avskrivning
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 | Antal tjänsteår             | 5      |
 | Årlig avskrivningsprocent | 25 %    |
 
-Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
+Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört värde                    | Bokfört nettovärde i slutet av året |
 |--------|-----------------------------------------------|-------------------------------|---------------------------------------|
@@ -86,7 +85,6 @@ Den degressiva avskrivningsmetoden på 125 % delar 125 procent med tjänstelivst
 
 > [!NOTE] 
 > Om beloppet som beräknas med den degressiva avskrivningsmetoden 125 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Hantera lagerställearbetare"
-description: "Denna artikel beskriver hur du kan använda Dynamics 365 for Finance and Operations för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda på dina lager."
+title: Hantera lagerställearbetare
+description: Denna artikel beskriver hur du kan använda Dynamics 365 for Finance and Operations för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311000"
 ---
-
 # <a name="manage-warehouse-workers"></a>Hantera lagerställearbetare
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel beskriver hur du kan använda Microsoft Dynamics 365 for Finance and Operations för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda på dina lager.
+Denna artikel beskriver hur du kan använda Microsoft Dynamics 365 for Finance and Operations för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
 
 Om du använder funktionerna i lagerhantering, alla lagerarbetare operationer som *arbete*. Arbetet såsom plockning, flytta och räknar lagersaldot registreras med hjälp av mobila enheter. Innan en lagerarbetare kan utföra arbete, han eller hon måste vara associerad med en arbetstagare i mänskliga resurser. Varje **arbetstagare** kan ha flera lagerarbetet användare som är associerade med den. Dessa arbeten kan användarna arbeta i olika lager och kan ha olika nivåer av åtkomst till olika mobila enheten menyer. Du kan tänker av lagerarbetet användare som flera inloggningar för vald anställd. Varje användare har en standard lager, och specifika arbetsflöden exponeras genom menyerna tillgängliga alternativ som fungerar. 
 
@@ -54,7 +53,6 @@ Analysen av den tid som används för att bearbeta arbetsposter kan hjälpa till
 
 -   **Arbete med användaren** – den här rapporten visar medarbetarnas produktivitet, baserat på faktiska tider mot förväntade tider.
 -   **Arbete med arbete transaktionstyp** – Du kan använda rapporten för att undersöka bristerna i särskilda lager processer. Till exempel, du märker att plockar för överföringsuppdrag tar längre denna vecka än under föregående veckor. Du kan sedan använda den här informationen för vidare utredning.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget"
-description: "Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel."
+title: Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget
+description: Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 01474a82e860c6f51b316cb683cd44fb9bf2a6bc
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340647"
 ---
-
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel. För att öppna enhetsdata kan du starta från Excel eller Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel. För att öppna entitetsdata kan du starta från antingen Excel eller Microsoft Dynamics 365 for Finance and Operations.
 
 Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och redigera data med tillägget för Excel. Det här tillägget kräver Microsoft Excel 2016.
 
 > [!NOTE]
-> Om din Microsoft Azure Active Directory (Azure AD)-innehavare har konfigurerats för att använda Active Directory Federation Services (ADFS), måste du se till att uppdateringen för Office från maj 2016 har installerats, så att Excel-tilläggen logga in dig korrekt.
+> Om din Microsoft Azure Active Directory (Azure AD)-innehavare har konfigurerats för att använda Active Directory Federation Services (ADFS), måste du se till att uppdateringen för Office från maj 2016 har installerats, så att Excel-tilläggen logga in dig korrekt.
 
 Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta videon [Skapa en Excel-mall för rubriker och mönster i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
@@ -52,7 +51,7 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Öppna enhetsdata i Excel när du startar från Excel
 1. I Excel på fliken **infoga** i gruppen **tillägg** klickar du på **butik** för att öppna Office Store.
-2. I Office Store.söker du efter nyckelordet **Dynamics** och klickar på **Lägg till** bredvid **Microsoft Dynamics Office-tillägget** (Excel-tillägget).
+2. I Office Store.söker du efter nyckelordet **Dynamics** och väljer sedan **Lägg till** bredvid **Microsoft Dynamics Office-tillägget** (Excel-tillägget).
 3. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4. Klicka på **lägga till information om server** för att öppna fönstret **alternativ**.
 5. I webbläsaren kopierar du webbadressen från Finance and Operations.-instansen, klistra in den i fältet **Server-URL** och ta bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
@@ -125,4 +124,3 @@ Det finns några problem som kan lösas genom några enkla steg.
 - **Knappen Läs in appletar visas** – Om Excel-tillägget har knappen **Läs in appletar** är du troligen inte korrekt inloggad som användare. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 - **Felmeddelandet "Förbjudet" visas** – Om felmeddelandet "Förbjudet" visas medan Excel-tillägget läser in metadata, har det konto som är inloggat i Excel-tillägget inte behörighet att använda den riktade tjänsten, instansen eller databasen. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 - **En tom webbsida visas över Excel** – Om en tom webbsida öppnas när du loggar in på kontot kräver AD FS, men versionen av Excel som kör Excel-tillägget är inte tillräckligt nytt för att läsa in dialogrutan för inloggning Uppdatera versionen av Excel som du använder för att lösa problemet. Uppdatera Excel-versionen när du arbetar i ett företag på den uppskjutna kanalen med [Office distributionsverktyg](https://technet.microsoft.com/library/jj219422.aspx) för att [flytta från uppskjuten kanal till den aktuella kanalen](https://technet.microsoft.com/library/mt455210.aspx).
-

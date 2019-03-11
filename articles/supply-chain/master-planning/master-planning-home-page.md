@@ -1,32 +1,31 @@
 ---
-title: "Startsida för Huvudplanering"
-description: "Med huvudplanering kan ett företag fastställa och balansera sitt framtida behov av råmaterial och sin kapacitet att uppfylla företagets mål."
+title: Startsida för Huvudplanering
+description: Med huvudplanering kan ett företag fastställa och balansera sitt framtida behov av råmaterial och sin kapacitet att uppfylla företagets mål.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 99c10649d7683265fcac86c1825c5a965bbdb415
 ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314795"
 ---
-
 # <a name="master-planning-home-page"></a>Startsida för Huvudplanering
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ Det finns tre processer för huvudplanering:
 
 -  **Prognosplanering** -Prognosschemat beräknar bruttobehoven. Den baseras på framtida prognoser och gör det möjligt att genomföra långsiktig planering av material och kapacitet. Mer information finns i [Prognosplanering](introduction-demand-forecasting.md). 
 
--  **Koncernintern huvudplanering** -Den koncerninterna huvudplanen beräknar nettobehov över juridiska personer. Den sammanför tillgång och efterfrågan mellan företag inte bara för kortfristig, konkret tillgång och efterfrågan utan även för långsiktig, planerad (dvs. ännu inte bekräftad) tillgång och efterfrågan. Mer information finns i [Koncernintern huvudplanering](https://mbspartner.microsoft.com/AX/CourseOverview/1276)  (eLearning) (kräver CustomerSource-konto). 
+-  **Koncernintern huvudplanering** -Den koncerninterna huvudplanen beräknar nettobehov över juridiska personer. Den sammanför tillgång och efterfrågan mellan företag inte bara för kortfristig, konkret tillgång och efterfrågan utan även för långsiktig, planerad (dvs. ännu inte bekräftad) tillgång och efterfrågan. Mer information finns i [Koncernintern huvudplanering](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (kräver CustomerSource-konto). 
 
 Företag kan ändra planresultatet. De kan köra regenerativ, nettoförändring eller båda. Regenerativa planer uppdaterar alla krav, medan nettoförändringsplaner endast uppdaterar planen för artiklar med nya behov som har kommit in sedan den senaste schemaläggningskörningen.
 
@@ -72,7 +71,7 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling.
 
 ### <a name="blogs"></a>Bloggar
-Du hittar åsikter, nyheter och annan information om huvudplanering och andra lösningar i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Du hittar åsikter, nyheter och annan information om huvudplanering och andra lösningar i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen **Hjälp** på valfri sida för att få åtkomst till uppgiftsguiderna.
@@ -84,7 +83,6 @@ Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka 
 -  [Utöka funktionen prognos för efterfrågan](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 -  [Huvudplanering - tips och trick för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
 -  [Hjälp! MPS går långsamt!](https://youtu.be/RLXybx20B5o)
-
 
 
 

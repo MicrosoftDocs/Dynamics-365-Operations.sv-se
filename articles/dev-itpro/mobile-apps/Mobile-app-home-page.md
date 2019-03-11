@@ -1,13 +1,13 @@
 ---
-title: "Startsida för appen Dynamics 365 for Unified Operations mobile"
-description: "Det här avsnittet beskriver mobilappen Microsoft Dynamics 365 for Unified Operations och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation."
+title: Startsida för appen Dynamics 365 for Unified Operations mobile
+description: Det här avsnittet beskriver mobilappen Microsoft Dynamics 365 for Unified Operations Mobile och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 author: sericks007
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321396"
 ---
-
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Startsida för appen Dynamics 365 for Unified Operations mobile
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver mobilappen Microsoft Dynamics 365 for Unified Operations och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
+Det här avsnittet beskriver mobilappen Microsoft Dynamics 365 for Unified Operations Mobile och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 
 > [!NOTE]
 > Mobilappen kallades tidigare *Microsoft Dynamics 365 for Finance and Operations*.
@@ -85,12 +84,12 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 <td>1</td>
 <td>Systemadministratör</td>
 <td>Implementer Finance and Operations i din organisation.</td>
-<td><ul><li>Om du ännu inte har installerat en version av Microsoft Dynamics 365, se då <a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö</a>.</li><li>En lista över de mobila arbetsytor som kan användas finns i <a href="mobile-workspaces-released.md">Mobila arbetsytor som nyligen lanserats</a>.</li></ul></td>
+<td><ul><li>Om du ännu inte har installerat en version av Microsoft DynamicsMicrosoft Dynamics 365, se<a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö.</a></li><li>En lista över de mobila arbetsytor som kan användas finns i <a href="mobile-workspaces-released.md">Mobila arbetsytor som nyligen lanserats</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Systemadministratör</td>
-<td><strong>Om du använder Microsoft Dynamics 365 for Operations version 1611:</strong> Hämta och installera KBs som gör det möjligt att aktivera de mobila arbetsytor som tillhandahålls av Microsoft.</td>
+<td><strong>Om du använder Microsoft Dynamics 365 for Operations version 1611: </strong> Hämta och installera KBs som gör det möjligt för mobila arbetsytor som tillhandahålls av Microsoft.</td>
 <td>Se följande avsnitt för mer information:
 <ul>
 
@@ -119,7 +118,7 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 <tr class="odd">
 <td>5</td>
 <td>ISV</td>
-<td>Skapa driftfärdiga paket som innehåller anpassade mobila arbetsytor och överför paketet till Microsoft Dynamics Lifecycle Services (LCS).</td>
+<td>Skapa driftfärdiga paket som innehåller anpassade mobila arbetsytor och överför paketet till Microsoft Dynamics Microsoft Dynamics Lifecycle Services (LCS).</td>
 <td><a href="../deployment/create-apply-deployable-package.md">Skapa ett driftfärdigt paket</a></td>
 </tr>
 <tr class="even">
@@ -139,7 +138,7 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 <td>Användare</td>
 <td>Hämta och installera mobilappen.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations app för Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Unified Operations-app för Android</a><BR/>
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">Unified Operations app för iOS</a><BR/>
 (Windows Phone stöds inte)
 </td>
@@ -153,4 +152,3 @@ Följande tabell innehåller länkar till resurser som hjälper dig att implemen
 </tr>
 </tbody>
 </table>
-

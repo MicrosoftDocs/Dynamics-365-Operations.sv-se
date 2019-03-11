@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll för översikt över ekonomichef"
-description: "Det här avsnittet beskriver Microsoft Power BI-innehåll för översikt över ekonomichef"
+title: Översikt över ekonomichef Power BI-innehåll
+description: Det här avsnittet beskriver översikt över ekonomichef Power BI-innehåll.
 author: kweekley
 manager: AnnBe
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 026274e06d27fb1254ffa971bcb0fbdbb5e7eac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 01233890603f6f199b7a815eb91d1d5a7f2ae53e
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331401"
 ---
-
-# <a name="cfo-overview-power-bi-content"></a>Power BI-innehåll för översikt över ekonomichef
+# <a name="cfo-overview-power-bi-content"></a>Översikt över ekonomichef Power BI-innehåll
 
 [!include [banner](../includes/banner.md)] 
 
-Det här avsnittet beskriver **Översikt över ekonomichef** för Microsoft Power BI-innehåll. Detta Power BI-innehåll gäller för dem som använder Microsoft Dynamics 365 for Finance and Operations version 7.2. Om du använder version 7.3 eller senare läs [Ekonomiska insikter](financial-insights.md).
+Det här avsnittet beskriver **översikt över ekonomichef** Power BI-innehåll. Detta Power BI-innehåll riktar sig till de som använder Microsoft Dynamics 365 for Finance and Operations version 7.2. Om du använder version 7.3 eller senare läs [Ekonomiska insikter](financial-insights.md).
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 
 Rapporter från Power BI-innehållet **Ekonomichefsöversikt** visas i den arbetsytan **Ekonomichefsöversikt**.
 
@@ -45,4 +44,3 @@ Följande tabell visar Power BI-innehållet som rapporten kopieras från och de 
 | [Försäljnings- och lönsamhet](sales-profitability-performance-content-pack.md) | <ul><li>Intäkter per region</li><li>Bästa 10 kunderna per intäkt</li><li>Bästa 10 produkterna per intäkt</li></ul> |
 | [Hantering av kredit och inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Förfallna kunder</li><li>Kundens över kreditgräns</li><li>Åldersfördelade saldon</li></ul> |
 | [Inköps- och utgiftsanalys](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Inköp per månad/dag</li><li>Främsta 10 leverantörerna per inköp</li><li>Främsta 10 produkterna per inköp</li></ul> |
-

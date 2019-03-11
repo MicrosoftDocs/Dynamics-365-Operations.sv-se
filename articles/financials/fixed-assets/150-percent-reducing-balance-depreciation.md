@@ -1,13 +1,13 @@
 ---
 title: 150 procent degressiv avskrivning
-description: "Det här avsnittet ger en översikt över 150-procentsmetoden för degressiv avskrivning."
+description: Det här avsnittet ger en översikt över 150-procentsmetoden för degressiv avskrivning.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff4b40663f0da6bcc01b00f3f44cd8d8b43b56a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b35b8ea652ccb06c45b8091cc7f57e849e1a5915
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331631"
 ---
-
 # <a name="150-percent-reducing-balance-depreciation"></a>150 procent degressiv avskrivning
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 | Antal tjänsteår             | 5      |
 | Årlig avskrivningsprocent | 30 %    |
 
-Den degressiva avskrivningsmetoden på 150 % delar 150 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
+Den degressiva avskrivningsmetoden på 150 % delar 150 procent med tjänstelivstiden i år. Den procenten multipliceras med anläggningstillgångens bokförda nettovärde för att bestämma årets avskrivningsbelopp.
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört värde             | Bokfört nettovärde i slutet av året |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
@@ -86,7 +85,6 @@ Den degressiva avskrivningsmetoden på 150 % delar 150 procent med tjänstelivst
 
 > [!NOTE]
 > Om beloppet som beräknas med den degressiva avskrivningsmetoden 150 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
-
 
 
 

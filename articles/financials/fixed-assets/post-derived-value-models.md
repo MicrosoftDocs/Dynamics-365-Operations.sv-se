@@ -1,13 +1,13 @@
 ---
-title: "Bokför med härledda böcker"
-description: "Det här avsnittet beskriver hur du använder härledda böcker."
+title: Bokför med härledda böcker
+description: Det här avsnittet beskriver hur du använder härledda böcker.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBookTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff1dbf67a53a5639e448da707898b55cd00cba94
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 94eb82936da2a51a25105b26723088fb7dee9ae5
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339152"
 ---
-
 # <a name="post-with-derived-books"></a>Bokför med härledda böcker
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ När en anskaffning bokförs för en anläggningstillgång med bok VM 1 bokförs
 > Om härledda böcker inte används måste du bokföra anskaffningen av anläggningstillgången för både boken VM 1 och boken VM 2.
 
 Mer information finns i [Härledda böcker](derived-books.md).
-
 
 
 

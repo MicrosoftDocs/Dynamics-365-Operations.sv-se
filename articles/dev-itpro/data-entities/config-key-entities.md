@@ -1,13 +1,13 @@
 ---
 title: Konfigurationsnycklar och datatabeller
-description: "Det här avsnittet beskriver förhållandet mellan konfigurationsnycklar och datatabeller i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet beskriver förhållandet mellan konfigurationsnycklar och datatabeller i Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336484"
 ---
-
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnycklar och datatabeller
 
 [!include [banner](../includes/banner.md)]
@@ -96,4 +95,3 @@ Genom att använda de metadata för konfigurationsnycklar som skapas under enhet
 När du uppdaterar konfigurationsnycklar i enheten, på register- eller fältnivå, måste enhetslistan i ramverket för datahantering uppdateras. Proceduren säkerställer att ramverket hämtar de senaste inställningarna för konfigurationsnycklar. Tills enhetslistan uppdateras visas följande varningsmeddelande på enhetslistans sida. De uppdaterade ändringarna för konfigurationsnycklar börjar gälla omedelbart efter att enhetslistan uppdateras. Vi rekommenderar att du validerar befintliga dataprojekt och jobb för att säkerställa att de fungerar som förväntat efter att ändringarna av konfigurationsnycklar har börjar gälla.
 
 ![Målfält](./media/Target_fields_3.png)
-

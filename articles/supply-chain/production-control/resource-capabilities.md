@@ -1,13 +1,13 @@
 ---
 title: Resurskunskaper
-description: "Det här avsnittet innehåller information om resurskapaciteter. En kapacitet är möjligheten hos en verksamhetsresurs att utföra en viss aktivitet. Det här avsnittet ger en beskrivning av hur kapaciteter och relaterade koncept såsom kompetensnivå och prioritet kan används för att välja lämpliga resurser för en aktivitet."
+description: Det här avsnittet innehåller information om resurskapaciteter. En kapacitet är möjligheten hos en verksamhetsresurs att utföra en viss aktivitet. Det här avsnittet ger en beskrivning av hur kapaciteter och relaterade koncept såsom kompetensnivå och prioritet kan används för att välja lämpliga resurser för en aktivitet.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319303"
 ---
-
 # <a name="resource-capabilities"></a>Resurskunskaper
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ I detta exempel, båda maskinerna kan väljas av scheduling motor, eftersom båd
 
 ## <a name="competencies-for-human-resources"></a>Kompetenser för mänskliga resurser
 När du har operationer resurser av **mänskliga resurser** som är kopplade till anställda i mänskliga resurser, du kan fattar dessutom fördel av kompetenser för arbetstagare när du definierar resursbehovet för en produktion rutt. Med andra ord kan du också ange krav på specifik kompetens, kurser, certifikat, eller titlar. Det scheduling motor kan sedan välja resurser som är kopplade till arbetstagare, och valet baseras på kompetenser för dessa arbetstagare. De kompetenser som finns i mänskliga resurser, inte på **Resource kapaciteter** . När du definierar kompetens, kurser, certifikat, eller titlar som resursbehov måste du använda de personalfunktioner och länka varje resurs av typen **Personal** till en motsvarande arbetare. Om du inte använder personalfunktionerna kan du definiera kunskaper på sidan **Resurskunskaper** som liknar eller duplicerar kompetenser från Personal. Men **resursen kapacitet** inte sidan innehåller den funktionalitet som krävs för att bibehålla kompetens, kurser, certifieringar, eller titlar.
-
 
 
 

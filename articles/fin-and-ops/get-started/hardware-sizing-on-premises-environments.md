@@ -1,30 +1,29 @@
 ---
-title: "Krav för beräkning av maskinvara för lokala miljöer"
-description: "Detta ämne listar krav för beräkning av maskinvara för lokala miljöer"
+title: Krav för beräkning av maskinvara för lokala miljöer
+description: Detta ämne listar krav för beräkning av maskinvara för lokala miljöer
 author: kfend
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340739"
 ---
-
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav för beräkning av maskinvara för lokala miljöer
 
 [!include [banner](../includes/banner.md)]
@@ -143,4 +142,3 @@ Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering och överabonnemang
 
 Missionskritiska tjänster som AOS bör finnas på virtuella värdar som har dedikerade resurser - kärnor, minne och disk.
-

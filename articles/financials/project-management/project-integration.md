@@ -1,13 +1,13 @@
 ---
 title: Integrering av Microsoft Project-klient
-description: "Att planera och underhålla en projekttidsplan kan vara komplext, därför behöver projektledare verktyg som hjälper dem att hantera uppgiften. Integration med Microsoft Project-klienten ger stöd för att öppna och hantera en uppdelad arbetsstruktur för projekt."
+description: Att planera och underhålla en projekttidsplan kan vara komplext, därför behöver projektledare verktyg som hjälper dem att hantera uppgiften. Integration med Microsoft Project-klienten ger stöd för att öppna och hantera en uppdelad arbetsstruktur för projekt.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjWbsTemplate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,15 +17,14 @@ ms.assetid: b454ad57-2fd6-46c9-a77e-646de4153067
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-04
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 48feb0182c623714b2acffafc42016c0471ba6c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4a3445417d5ae88e2ff3676962a82921a7ab475d
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317486"
 ---
-
 # <a name="microsoft-project-client-integration"></a>Integrering av Microsoft Project-klient
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 03/26/2018
 Att planera och underhålla en projekttidsplan kan vara komplext, därför behöver projektledare verktyg som hjälper dem att hantera uppgiften. Integration med Microsoft Project-klienten ger stöd för att öppna och hantera en uppdelad arbetsstruktur för projekt. Projektledaren kan publicera alla ändringar tillbaka till den uppdelade arbetsstrukturen för projekt i Finance and Operations.
 
 > [!NOTE]
-> Om du använder Microsoft Dynamics 365 for Finance and Operations, Juli uppdatering, måste du installera KB 4054797 and 4055884.
+> Om du använder Microsoft Dynamics 365 for Finance and Operations, uppdateringen från juli, måste du installera KB 4054797 och 4055884.
 
 ## <a name="configure-the-microsoft-project-client-add-in"></a>Konfigurera tillägget för Microsoft Project-klienten
 Om du vill aktivera integrationen med Microsoft Project-klienten behöver Microsoft Dynamics 365-tillägget installeras på användarens klient i Microsoft Project-programmet. Detta görs genom att öppna arbetsytan för **projekthantering**.
@@ -43,14 +42,14 @@ Om du vill aktivera integrationen med Microsoft Project-klienten behöver Micros
 • Klicka på **öppna** och välj **kör** när du blir tillfrågad.
 
 ## <a name="open-and-edit-an-existing-draft-work-breakdown-structure-in-microsoft-project-client"></a>Öppna och redigera ett befintligt utkast till uppdelad arbetsstruktur i Microsoft Project-klienten
-Om ett projekt i Finance and Operations redan har en uppdelad arbetsstruktur kan den uppdelade arbetsstrukturen öppnas i Microsoft Project klientprogrammet, om strukturen har statusen utkast. För att öppna från sidan för **projekt** klicka på länken som **öppnar Microsoft Project** från fliken för **planera**. Den här sidan kan även öppnas från Microsoft Project-klientprogrammet genom att klicka på **öppna** i fliken **Microsoft Dynamics 365**. Välj **juridisk person** och **projekt** i listan.
+Om ett projekt i Finance and Operations redan har en uppdelad arbetsstruktur kan den uppdelade arbetsstrukturen öppnas i Microsoft Project klientprogrammet, om strukturen har statusen utkast. För att öppna från sidan **Projekt** klicka på länken **Öppna i Microsoft Project** från fliken **Planera**. Den här sidan kan även öppnas från Microsoft Project-klientprogrammet genom att klicka på **Öppna** på fliken **Microsoft Dynamics 365**. Välj **Juridisk person** och **Projekt**.
 
 > [!NOTE]
 > Om du använder Internet Explorer som webbläsare kan du behöva klicka på **spara** för att manuellt öppna från den plats filen är nedladdad till. Eller klicka på **spara och öppna** för att öppna filen i Microsoft Project-klienten. Byt inte namn på filen när du sparar.
 
-Innan du gör redigeringar i filen med hjälp av Microsoft Project-klienten måste du checka ut den. Klicka på **utcheckning** i fliken **Microsoft Dynamics 365**. Detta förhindrar att andra användare redigerar den uppdelade arbetsstrukturen i Finance and Operations samtidigt. Om du vill publicera den uppdelade arbetsstrukturen efter att du slutfört redigeringarna klickar du på **checka in** i fliken **Microsoft Dynamics 365**.
+Innan du gör redigeringar i filen med hjälp av Microsoft Project-klienten måste du checka ut den. Klicka på **utcheckning** på fliken **Microsoft Dynamics 365**. Detta förhindrar att andra användare redigerar den uppdelade arbetsstrukturen i Finance and Operations samtidigt. Om du vill publicera den uppdelade arbetsstrukturen efter att du slutfört redigeringarna klickar du på **Incheckning** på fliken **Microsoft Dynamics 365**.
 
-Om en projektgrupp redan har lagts till projektet i Finance and Operations fylls resurslistan med gruppmedlemmar. Om en projektgrupp inte har lagts till i projektet kan du välja resurser och skapa ett team i Microsoft Project-klienten genom att klicka på knappen **resurser** i fliken **Microsoft Dynamics 365**. 
+Om en projektgrupp redan har lagts till projektet i Finance and Operations fylls resurslistan med gruppmedlemmar. Om en projektgrupp inte har lagts till i projektet kan du välja resurser och skapa ett team i Microsoft Project-klienten genom att klicka på knappen **Resurser** på fliken **Microsoft Dynamics 365**. 
 
 Följande data synkroniseras tillbaka till Finance and Operations som en del av incheckningsprocessen:
 
@@ -83,15 +82,15 @@ För att skapa en ny uppdelad arbetsstruktur för ett befintligt projekt med hj�
 
 1.  Öppna Microsoft Project-klienten.
 
-2.  I fliken **Microsoft Dynamics 365** klickar du på **öppna**.
+2.  På fliken **Microsoft Dynamics 365**, klicka på **Öppna**.
 
 3.  Välj **juridisk person** för projektet.
 
 4.  Välj lämpligt **projekt**.
 
-5.  I fliken **Microsoft Dynamics 365** klickar du på **checka ut**.
+5.  Klicka på **Utcheckning** på fliken **Microsoft Dynamics 365**.
 
-6.  När du är klar att publicera till Finance and Operations klickar du på **checka in** på fliken **Microsoft Dynamics 365**.
+6.  När du är klar att publicera till Finance and Operations klickar du på **Incheckning** på fliken **Microsoft Dynamics 365**.
 
 ## <a name="replace-the-existing-work-breakdown-structure-for-an-existing-project-using-microsoft-project-client"></a>Ersätt en befintlig uppdelad arbetsstruktur för ett befintligt projekt med hjälp av Microsoft Project-klienten
 Om du vill skapa en ny uppdelad arbetsstruktur med hjälp av Microsoft Project-klienten och ersätta en befintlig struktur för ett befintligt projekt gör så här:
@@ -100,7 +99,7 @@ Om du vill skapa en ny uppdelad arbetsstruktur med hjälp av Microsoft Project-k
 
 2.  Skapa tidsplanen i Microsoft Project-klienten.
 
-3.  I fliken **Microsoft Dynamics 365** klickar du på **spara ändringarna** > **ersätt befintligt projekt**.
+3.  På fliken **Microsoft Dynamics 365**, klicka på **Spara ändringar** > **Ersätt befintligt projekt**.
 
 4.  Välj **juridisk person** för projektet.
 
@@ -115,7 +114,7 @@ Om du vill skapa en ny uppdelad arbetsstruktur med hjälp av Microsoft Project-k
 
 2.  Skapa tidsplanen i Microsoft Project-klienten.
 
-3.  I fliken **Microsoft Dynamics 365** klickar du på **spara ändringarna** > **spara som nytt projekt**.
+3.  På fliken **Microsoft Dynamics 365**, klicka på **Spara ändringar** > **Spara till nytt projekt**.
 
 4.  Välj **juridisk person** för projektet.
 
@@ -128,4 +127,3 @@ Om du vill skapa en ny uppdelad arbetsstruktur med hjälp av Microsoft Project-k
 8.  Välj vilken **kalender** som ska användas för resurshantering.
 
 11. Klicka på **OK**.
-

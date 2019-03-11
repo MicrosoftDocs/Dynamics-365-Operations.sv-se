@@ -1,13 +1,13 @@
---- 
-title: "Stänga räkenskapsåret"
-description: "Denna procedur vägleder dig genom stegen i årsbokslutsprocessen som överför saldon till ett nytt räkenskapsår."
+---
+title: Stänga räkenskapsåret
+description: Denna procedur vägleder dig genom stegen i årsbokslutsprocessen som överför saldon till ett nytt räkenskapsår.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 628b084dbcc85c3f7c08f209bdb325a110554ad9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4f2f1f1206f3cb3534ef93923d4945bb63814514
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367925"
 ---
 # <a name="close-the-fiscal-year"></a>Stänga räkenskapsåret
 
@@ -67,5 +67,4 @@ Denna procedur vägleder dig genom stegen i årsbokslutsprocessen som överför 
 23. Årsbokslutets standardvärden som ska köras i batch.
     * Det bästa är att låta långvariga processer köras i batch-läge. Detta är vanligtvis en av dessa processer, vilket är orsaken till att standardinställningen är att använda batch-läge.  
 24. Klicka på OK.
-
 

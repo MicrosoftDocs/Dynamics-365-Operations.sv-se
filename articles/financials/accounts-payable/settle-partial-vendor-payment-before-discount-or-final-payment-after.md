@@ -1,13 +1,13 @@
 ---
-title: "Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet"
-description: "Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs. Vissa av dem inom kassarabattperioden och andra utanför den."
+title: Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
+description: Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs. Vissa av dem inom kassarabattperioden och andra utanför den.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cdbcc990ddb20d126f2e0309bcb617640989f027
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 683fb598a62cf993d0db26ffd492b8c3354a92d3
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313553"
 ---
-
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
 
 [!include [banner](../includes/banner.md)]
@@ -118,7 +117,6 @@ April bokför sedan betalningen. När hon öppnar sidan **Leverantörstransaktio
 | RAB-10020 | Kassarabatt    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 | APP-10021  | Betalning          | 7/15/2015 |         | 693,00                               |                                       | 0,00    | USD      |
 | RAB-10021 | Kassarabatt    | 7/15/2015 |         | 07:00                                 |                                       | 0,00    | USD      |
-
 
 
 

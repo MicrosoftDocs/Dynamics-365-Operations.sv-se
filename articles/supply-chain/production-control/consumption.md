@@ -1,13 +1,13 @@
 ---
-title: "Beräkna materialförbrukning"
-description: "Den här artikeln innehåller information om olika alternativ som är relaterade till beräkningen av materialförbrukning."
+title: Beräkna materialförbrukning
+description: Den här artikeln innehåller information om olika alternativ som är relaterade till beräkningen av materialförbrukning.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3e4010b5abb6b5a871d098422f1489cb2db3a071
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f674a1f0051ee4b228b8a92f717ef5348a452bed
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316198"
 ---
-
 # <a name="calculate-material-consumption"></a>Beräkna materialförbrukning
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Följande alternativ, som är relaterade till beräkningen av materialförbrukni
 I fältet **Förbrukningen är** kan du välja om förbrukningen ska beräknas som en konstant kvantitet eller en variabel kvantitet. Välj **Konstant** om en fast kvantitet eller volym krävs för tillverkningen, oavsett den kvantitet som tillverkas. Välj **Variabel** som är standardinställningen om det obligatoriska beloppet för material i de färdiga varorna är proportionellt mot antalet färdiga varor som tillverkas.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Beräkna förbrukning från en formel
-I fältet **Formel** kan du ställa in olika formler för beräkning av materialförbrukning. Om du använder standardvärde **Standard**, beräknas förbrukningen inte från en formel. Följande formler fungerar tillsammans med fälten **Höjd**,  **Bredd****Djup****Densitet**, och **Konstant**:
+I fältet **Formel** kan du ställa in olika formler för beräkning av materialförbrukning. Om du använder standardvärde **Standard**, beräknas förbrukningen inte från en formel. Följande formler fungerar tillsammans med fälten **Höjd**,  **Bredd** **Djup** **Densitet**, och **Konstant**:
 
 -   Höjd \* Konstant
 -   Höjd \* Bredd \* Konstant
@@ -47,7 +46,7 @@ I fältet **Formel** kan du ställa in olika formler för beräkning av material
 -   (Höjd \* Bredd \* Djup / Densitet) \* Konstant
 
 ## <a name="rounding-up-and-multiples"></a>Avrundning och multipler.
-Tillsammans låter fälten **Avrundning** och **Multipler** avrunda värdet för materialförbrukning. Du kan till exempel avrunda värdet enligt hanteringsenheten där råmaterial plockas för produktion. Följande alternativ är tillgängliga i fältet **Avrundning**: **Kvantitet****Mått**, och **Förbrukning**.
+Tillsammans låter fälten **Avrundning** och **Multipler** avrunda värdet för materialförbrukning. Du kan till exempel avrunda värdet enligt hanteringsenheten där råmaterial plockas för produktion. Följande alternativ är tillgängliga i fältet **Avrundning**: **Kvantitet** **Mått**, och **Förbrukning**.
 
 ### <a name="quantity"></a>Kvantitet
 
@@ -80,7 +79,6 @@ Stegförbrukning används för att beräkna konstant förbrukning i kvantitetint
 | 200,00      | 40,0000  |
 
 Kvantiteten för strukturlista (BOM) är 1, och produktionskvantiteten är 110. Formeln för förbrukningen är From series (kvantitet) = förbrukning. Eftersom produktionskvantiteten är 110, är den i "Från 100-serien". Därför är kvantiteten 20.
-
 
 
 

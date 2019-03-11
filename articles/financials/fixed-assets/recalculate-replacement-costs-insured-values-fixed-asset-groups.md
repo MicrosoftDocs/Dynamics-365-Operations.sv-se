@@ -1,13 +1,13 @@
 ---
-title: "Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper"
-description: "Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar."
+title: Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
+description: Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0756287406ad12237632ffbd455dbc6ba15d9915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: eb3db5863bf2fcca31b6af878e7324b079f1c630
-ms.openlocfilehash: ad706a9ee441858a6f4a128ff978e24efb6ecfce
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/12/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324386"
 ---
-
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ Nästa dag informerar chefen om att datorerna har minskat 8 procent i stället f
 
 > [!NOTE]  
 > Du kan inte ångra faktorn -10 genom att registrera det positiva talet 10 (eller faktorn 2, skillnaden mellan -10 och -8), eftersom beloppen inte beräknas som du har tänkt dig. 
-
 
 
 

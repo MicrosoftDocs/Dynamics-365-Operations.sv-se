@@ -1,34 +1,34 @@
 ---
-title: "Konfigurera SQL Server Reporting Services för lokal distribution"
-description: "Det här avsnittet innehåller information om hur du konfigurerar SQL Server Reporting Services (SSRS) för en lokal distribution."
+title: Konfigurera SQL Server Reporting Services för lokal distribution
+description: Det här avsnittet innehåller information om hur du konfigurerar SQL Server Reporting Services (SSRS) för en lokal distribution.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.custom: 55651
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 166d419f16866f699b96013222ce8da147a5ec21
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315140"
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Konfigurera SQL Server Reporting Services för lokal distribution
 
 [!include [banner](../includes/banner.md)]
 
-Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Services (SSRS) för distribution av Microsoft Dynamics 365 for Finance and Operations (lokal).
+Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Services (SSRS) för din Microsoft Dynamics 365 for Finance and Operations (lokala) distribution.
 
 1. Öppna Reporting Services Configuration Manager-programmet.
 2. Lämna standardnamnet **servernamn**, som bör vara namnet på den aktuella datorn och **rapportserverinstansen**, **MSSQLSERVER**.
@@ -87,11 +87,10 @@ Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Se
 
     [![Fliken Skala ut-distribution](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
 
-    Ändra inte standardinställningarna på fliken **Power BI-integration**.
+    Ändra inte standardinställningarna på fliken **Power BI Integration**.
 
     [![Fliken Power BI-integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)
 
 13. Klicka på **Avsluta** för att stänga **Reporting Services Configuration Manager**.
 
     [![Stänga reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
-

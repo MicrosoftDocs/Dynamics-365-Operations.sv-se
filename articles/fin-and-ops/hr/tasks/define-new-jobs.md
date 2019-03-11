@@ -1,13 +1,13 @@
---- 
+---
 title: Definiera nya jobb
-description: "Denna uppgift är avsedd för generering av ett nytt jobb."
+description: Denna uppgift är avsedd för generering av ett nytt jobb.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: abb85b1e8d9bc7386bf2d2f059b78faff9933f5c
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347938"
 ---
 # <a name="define-new-jobs"></a>Definiera nya jobb
 
@@ -57,7 +57,7 @@ Denna uppgift är avsedd för generering av ett nytt jobb. Detta ska utföras me
 21. Hitta och markera önskad post i listan.
 22. Klicka på länken på den valda raden i listan.
 23. Växla utökningen av avsnittet Kompetenser.
-    * Observera att fälten på snabbflikarna för kunskap, färdigheter och certifikat är blanka. När du har kopierat information från en jobbmall, kommer information i dessa fält att anges i ett enda steg.   
+    * Observera att fälten på snabbflikarna för kunskap, färdigheter och certifikat är blanka. När du har kopierat information från en jobbmall, kommer information i dessa fält att anges i ett enda steg.   
 24. Klicka på Spara.
 25. Klicka på Kopiera från.
 26. Klicka på Kopiera från mall.
@@ -70,5 +70,4 @@ Denna uppgift är avsedd för generering av ett nytt jobb. Detta ska utföras me
 32. Växla utökningen av avsnittet Certifikat.
 33. Växla utökningen av avsnittet Utbildning.
 34. Klicka på Spara.
-
 

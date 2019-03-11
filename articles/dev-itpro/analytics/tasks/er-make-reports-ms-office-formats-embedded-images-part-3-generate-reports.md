@@ -1,13 +1,13 @@
---- 
-title: "Skapa rapporter i Office-format som omfattar inbäddade bilder"
-description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa konfigurationer för Elektronisk rapportering (ER) för att skapa elektroniska dokument i MS Office-format (Excel och Word) som innehåller inbäddade bilder."
+---
+title: Skapa rapporter i Office-format som omfattar inbäddade bilder
+description: I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa konfigurationer för Elektronisk rapportering (ER) för att skapa elektroniska dokument i MS Office-format (Excel och Word) som innehåller inbäddade bilder.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 5ef7ec2f8b5b7fdf456ebb71b863e620ae21e6b5
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327192"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Skapa rapporter i Office-format som omfattar inbäddade bilder
 
@@ -119,5 +119,4 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 22. Klicka på Testutskrift
 23. Klicka på OK.
     * Granska den skapade utleveransen. Observera att utdata har skapats som ett Microsoft Word-dokument med inbäddade bilder som innehåller företagslogotypen, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
-
 

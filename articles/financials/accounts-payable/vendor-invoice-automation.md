@@ -1,13 +1,13 @@
 ---
-title: "Automation av leverantörsfaktura"
-description: "Det här avsnittet beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor."
+title: Automation av leverantörsfaktura
+description: Det här avsnittet beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6ea483a82b8215f0e6d8f420c007da349313daa5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 551f3d5fc52fac725fcc9fedc37dc1c85fac5a26
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324524"
 ---
 # <a name="vendor-invoice-automation"></a>Automation av leverantörsfaktura
 
@@ -232,4 +232,3 @@ Följande roller ger skrivskyddad åtkomst till visningsprogrammet för bilagor 
 + **Ansvarig för leverantörsreskontra** och **Chef för leverantörsreskontra** – underhålla leverantörsfakturor har tilldelats dessa roller.
 
 Som standard, om användarrollen ger redigeringsrättigheter på valfri sida, har användaren även redigeringsrättigheter i visningsprogrammet för bilagor för att markera, blockera och anteckna åtgärder. Om scenarier där en viss roll bör ha redigeringsrättigheter på sidan men inte i visningsprogrammet för bilagor kan behörighet i ovanstående lista användas i detta användningsfall.
-

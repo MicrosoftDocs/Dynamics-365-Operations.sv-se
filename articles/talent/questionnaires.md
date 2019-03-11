@@ -1,13 +1,13 @@
 ---
-title: "Enkäter"
-description: "Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten."
+title: Enkäter
+description: Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: d5c3e02bf5bc17db7232ccbb56e4dfbc062795b4
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306225"
 ---
-
 # <a name="questionnaires"></a>Enkäter
 
 [!include [banner](includes/banner.md)]
@@ -44,7 +43,7 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 
 | Avsnitt| beskrivning|
 |------|------------|
-| [Utforma en enkät](design-questionnaires.md)  | Den här artikeln ger information om hur du utformar en enkät. Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät. |
+| [Utforma en enkät](design-questionnaires.md)  | Den här artikeln ger information om hur du utformar en enkät. Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät. |
 | [Distribuera och slutföra en enkät](distribute-questionnaires.md)  | Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter.                                                                       |
 | [Visa och utvärdera resultaten för en enkät](evaluate-questionnaire-results.md) | Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter.                                                                                        |
 
@@ -58,5 +57,4 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 [Distribuera och slutföra enkäter](distribute-questionnaires.md)
 
 [Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
-
 

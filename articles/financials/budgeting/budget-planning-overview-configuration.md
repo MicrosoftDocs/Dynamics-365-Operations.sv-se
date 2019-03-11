@@ -1,13 +1,13 @@
 ---
-title: "Översikt över budgetplanering"
-description: "Det här avsnittet introducerar budgetplanering och innehåller information om hur du konfigurerar budgetplanering och ställer in budgetplaneringsprocessen."
+title: Översikt över budgetplanering
+description: Det här avsnittet introducerar budgetplanering och innehåller information om hur du konfigurerar budgetplanering och ställer in budgetplaneringsprocessen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329929"
 ---
-
 # <a name="budget-planning-overview"></a>Översikt över budgetplanering
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Det här avsnittet introducerar budgetplanering och innehåller information om h
 
 Du gör budgetplanering när du förbereder budgetar som ska implementeras av en organisation. En organisation kan konfigurera budgetplanering och sedan ställa in budgetplaneringsprocesser för att uppfylla organisationens policyer, procedurer och krav för budgetförberedelse. 
 
-När du förstår de begrepp och den terminologi som används i Microsoft Dynamics 365 for Finance and Operations, blir det enklare att genomföra budgetplaneringen inom din organisation.
+Om du förstår de begrepp och den terminologi som används i Microsoft Dynamics 365 for Finance and Operations blir det enklare att genomföra budgetplaneringen i din organisation.
 
 ### <a name="key-terms"></a>Nyckeltermer
 
@@ -58,7 +57,7 @@ Du kan använda budgetplanering för att utföra följande uppgifter:
 -   Du kan automatiskt skicka budgetplanerna tillsammans med kalkylblad, justeringsdokument och andra bilagor, för granskning och godkännande.
 -   Konsolidera flera budgetplaner från en lägre nivå i organisationen till en enda överordnad budgetplan på en högre nivå i organisationen. Du kan också utveckla en enskild budgetplan på en högre nivå i organisationen och fördela budgeten till lägre nivåer i organisationen.
 
-Budgetplaneringen är integrerad med andra Microsoft Dynamics 365 for Finance and Operations-moduler. Därför kan du hämta information från tidigare i budgetar, verkliga utgifter, anläggningstillgångar och personal. Eftersom budgetplanering också är integrerad med Microsoft Excel och Microsoft Word, kan använda dessa program för att arbeta med budgetplaneringsdata. En budgetchef kan till exempel exportera en avdelnings budgetförfrågan från ett budgetplanscenario till Excel. Data kan analyseras, uppdateras och mappas i kalkylbladet och sedan publiceras tillbaka till budgetplansraderna.
+Integrering av budgetplanering med andra Microsoft Dynamics 365 for Finance and Operations-moduler. Därför kan du hämta information från tidigare i budgetar, verkliga utgifter, anläggningstillgångar och personal. Eftersom budgetplanering också är integrerad med Microsoft Excel och Microsoft Word kan du använda dessa verktyg för att arbeta med budgetplaneringsdata. En budgetchef kan till exempel exportera en avdelnings budgetförfrågan från ett budgetplanscenario till Excel. Data kan analyseras, uppdateras och mappas i kalkylbladet och sedan publiceras tillbaka till budgetplansraderna.
 
 ## <a name="configuring-budget-planning"></a>Konfigurera budgetplanering
 Sidan **Budgetplaneringskonfiguration** innehåller de flesta inställningar som du behöver för att ställa in budgetplanering. I följande avsnitt beskrivs några viktiga faktorer du bör beakta när du konfigurerar budgetplaneringen. När du har slutfört konfigurationen, ställer du in budgetplaneringsprocesserna.
@@ -188,7 +187,6 @@ Du kan också skapa en ny process genom att kopiera en befintlig på menyn **Åt
 Ett annat användbart kommando på menyn **Åtgärder** är **Visa budgetprocessens status**. Detta kommando visar grafiskt budgetplanerna i en process, tillsammans med relevanta data, till exempel planernas arbetsflödesstatus, sammanfattningar efter belopp och enhet och enklicksnavigering till själva budgetplanerna.
 
 [![Status för budgetplaneringsprocess](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
 
 
 

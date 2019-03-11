@@ -1,13 +1,13 @@
 ---
 title: Ekonomisk rapportering
-description: "Ekonomisk rapportering för Finance and Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt."
+description: Ekonomisk rapportering för Finance and Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt.
 author: aprilolson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinanicalReportingSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: ae2087cf142fc2670bda3c542b336f12978178a6
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323788"
 ---
-
 # <a name="financial-reporting"></a>Ekonomisk rapportering
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,7 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 <ul>
 <li>Tidsplanera rapporter så att de skapas automatiskt varje dag, varje vecka, varje månad eller varje år.</li>
 <li>Exportera till skrivskyddat XPS-format, som ger en bättre dokumentsäkerhet via digitala signaturer.</li>
-<li>Exportera till ett Microsoft Excel-kalkylblad.</li>
+<li>Exportera ett Microsoft Excel-kalkylblad</li>
 <li>Om du vill dela rapporter kan du skapa e-postmeddelanden som innehåller länkar till rapporterna.</li>
 </ul>
 </td>
@@ -98,4 +97,3 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 [Skapa en ekonomisk rapport](generate-financial-report.md)
-

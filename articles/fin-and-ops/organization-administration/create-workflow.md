@@ -1,13 +1,13 @@
 ---
-title: "Skapa arbetsflöden"
-description: "Det här ämnet förklarar hur du skapar ett arbetsflöde."
+title: Skapa arbetsflöden
+description: Det här ämnet förklarar hur du skapar ett arbetsflöde.
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
+ms.openlocfilehash: 7d4a3c5e12b226a7d801d8db9abcbd15738c1ce0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 0edf6f1a97b3bbd074168a3cb8bb5c2375492b71
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353366"
 ---
-
 # <a name="create-workflows"></a>Skapa arbetsflöden
 
 [!include [banner](../includes/banner.md)]
@@ -85,4 +84,3 @@ Följ dessa steg när du är redo att spara och aktivera arbetsflödet.
 
     - Klicka på **Aktivera den nya versionen** för att aktivera denna version av arbetsflödet. När ett arbetsflöde är aktivt kan användare skicka dokument till det för bearbetning.
     - Klicka på **Aktivera inte den nya versionen** om du inte vill aktivera denna version. Du kan aktivera arbetsflödet senare.
-

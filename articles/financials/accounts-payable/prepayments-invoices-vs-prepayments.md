@@ -1,13 +1,13 @@
 ---
-title: "Förskottsfakturor kontra förskottsbetalningar"
-description: "Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. I den ena metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal."
+title: Förskottsfakturor kontra förskottsbetalningar
+description: Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. I den ena metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310149"
 ---
-
 # <a name="prepayment-invoices-vs-prepayments"></a>Förskottsfakturor kontra förskottsbetalningar
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Organisationer kan utfärda förskottsbetalningar till leverantörer för varor 
 | Förskottsfaktura                                                                | Förskottsbetalningar                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definiera förskottsbetalningsvärde på inköpsordern.                                    | Inget förskottsbetalningsvärde är definierat på inköpsordern.                    |
-| Nyckel: En förskottsfaktura och en slutfaktura måste bokföras.                       | Ingen förskottsfaktura måste bokföras.                                    |
+| Nyckel: En förskottsfaktura och en slutfaktura måste bokföras.                       | Ingen förskottsfaktura måste bokföras.                                    |
 | Skulder för förskottsbetalningen hålls på kontot för förskottsbetalning, inte AP-kontot. | Skulder för förskottsbetalningen hålls på AP-kontot.                  |
 | Leverantörssaldot återspeglar inte förskottsbetalningvärdet genom hela processen.     | Leverantörssaldot återspeglar förskottsbetalningvärdet genom hela processen. |
 | Förskottsbetalningsfakturering är tillgänglig i leverantörsreskontra.                         | Förskottsbetalning är tillgänglig i leverantörsreskontra och kundreskontra.    |
@@ -49,21 +48,20 @@ Redovisningsseden i många länder/regioner kräver att förskottsbetalningar fr
 
 1.  Ställ in bokföringsprofiler för förskottsbetalning.
 2.  I Parametrar för kundreskontra och Parametrar för leverantörsreskontra, under **Redovisning och moms**, väljer du den nya bokföringsprofilen genom parametern **Bokföringsprofil för betalningsjournal vid förskottsbetalning**.
-3.  Skapa en betalningsjournal och skapa sedan den nya betalningen.
-4.  Du kan flagga betalningen som en förskottsbetalning. Om en betalning flaggas som en förskottsbetalning, bokförs betalningen till kontona som definieras på bokföringsprofilen, som du ställde in i steg 1 och 2. Dessutom beräknas momsen om betalningen markeras som en förskottsbetalning. Alla myndigheter kräver att momsen betalas, när en förskottsbetalning registreras, även om det inte finns en faktura.
+3.  Skapa en betalningsjournal och skapa sedan den nya betalningen.
+4.  Du kan flagga betalningen som en förskottsbetalning. Om en betalning flaggas som en förskottsbetalning, bokförs betalningen till kontona som definieras på bokföringsprofilen, som du ställde in i steg 1 och 2. Dessutom beräknas momsen om betalningen markeras som en förskottsbetalning. Alla myndigheter kräver att momsen betalas, när en förskottsbetalning registreras, även om det inte finns en faktura.
 5.  Bokför förskottsbetalningen.
-6.  Valfritt: Du kan kvitta förskottsbetalningen mot försäljningsordern eller inköpsordern innan du skapar en faktura. På sidan för försäljningsordern eller inköpsordern, i åtgärdsfönstret, använd **Kvitta transaktioner**.
-7.  Registrera fakturan, efter att leverantören har levererat varorna eller tjänsterna. Om du kvittade förskottsbetalningen mot inköpsordern eller försäljningordern i steg 6, kvittas förskottsbetalningen automatiskt mot fakturan som du själv har skapat. Om du inte kvittade förskottsbetalningen mot försäljningsordern eller inköpsordern, kan du manuellt kvitta den mot fakturan, genom att **Kvitta transaktioner** på sidan för kunden eller leverantören. Förskottsbetalningbeloppet återförs sedan ut ur det tillfälliga AP/AR-redovisningskontot. Dessutom, om moms beräknade återförs den eftersom fakturan har den verkliga momsen.
+6.  Valfritt: Du kan kvitta förskottsbetalningen mot försäljningsordern eller inköpsordern innan du skapar en faktura.På sidan för försäljningsordern eller inköpsordern, i åtgärdsfönstret, använd **Kvitta transaktioner**.
+7.  Registrera fakturan, efter att leverantören har levererat varorna eller tjänsterna. Om du kvittade förskottsbetalningen mot inköpsordern eller försäljningordern i steg 6, kvittas förskottsbetalningen automatiskt mot fakturan som du själv har skapat. Om du inte kvittade förskottsbetalningen mot försäljningsordern eller inköpsordern, kan du manuellt kvitta den mot fakturan, genom att **Kvitta transaktioner** på sidan för kunden eller leverantören. Förskottsbetalningbeloppet återförs sedan ut ur det tillfälliga AP/AR-redovisningskontot. Dessutom, om moms beräknade återförs den eftersom fakturan har den verkliga momsen.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Översikt över förskottsfaktureringsprocessen
-Förskottsfakturor är en vanlig företagspraxis. En leverantör utfärdar förskottsfakturor för att begära en deposition för inköpet innan inköpsordern är uppfylld. En del leverantörer kan till exempel kräva en förskottsbetalning för anpassade varor eller tjänster. Om en leverantör utfärdar en faktura som begär förskottsbetalning, kan du använda funktionen förskottsbetalningsfakturering. Ett förskottsbetalningsvärde kan definieras på inköpsordern, en förskottsfaktura registreras och betalas, och sedan tillämpas förskottsfakturan till den senaste fakturan. Gör så här om du vill skapa en förskottsbetalning.
+Förskottsfakturor är en vanlig företagspraxis. En leverantör utfärdar förskottsfakturor för att begära en deposition för inköpet innan inköpsordern är uppfylld. En del leverantörer kan till exempel kräva en förskottsbetalning för anpassade varor eller tjänster. Om en leverantör utfärdar en faktura som begär förskottsbetalning, kan du använda funktionen förskottsbetalningsfakturering. Ett förskottsbetalningsvärde kan definieras på inköpsordern, en förskottsfaktura registreras och betalas, och sedan tillämpas förskottsfakturan till den senaste fakturan. Gör så här om du vill skapa en förskottsbetalning.
 
 1.  Inköpsagenten skapar, bekräftar och skickar sedan in en inköpsorder som leverantören har begärt förskottsbetalningen för. Förskottsbetalningvärdet definieras på inköpsordern som en del i avtalet.
 2.  Leverantören skickar in en förskottsfaktura.
 3.  Leverantörsreskontrakoordinatorn registrerar förskottsfakturan mot inköpsorder, och sedan betalas förskottsfakturan.
 4.  När leverantören har levererat varorna eller tjänsterna, och de relaterade leverantörsfakturorna har kommit, använder leverantörsreskontrakoordinatorn förskottsbetalningsbeloppet som redan har betalats mot fakturan.
 5.  Leverantörsreskontrakoordinatorn betalar och kvittar det resterande beloppet på fakturan.
-
 
 
 

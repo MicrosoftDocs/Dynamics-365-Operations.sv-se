@@ -1,13 +1,13 @@
 ---
-title: "Beräkningsgrupper för strukturlista"
-description: "Den här artikeln innehåller information om beräkningsgrupper för strukturlistor och hur du ställer in dem. Om du vill köra en strukturlisteberäkning måste du antingen ställa in beräkningsgrupper och tilldela dem till enskilda artiklar eller ställa en standardberäkningsgrupp. Beräkningsinställningarna från beräkningsgruppen används sedan som standardvärden på sidan Strukturlisteberäkning när strukturlistan beräknas."
+title: Beräkningsgrupper för strukturlista
+description: Den här artikeln innehåller information om beräkningsgrupper för strukturlistor och hur du ställer in dem. Om du vill köra en strukturlisteberäkning måste du antingen ställa in beräkningsgrupper och tilldela dem till enskilda artiklar eller ställa en standardberäkningsgrupp. Beräkningsinställningarna från beräkningsgruppen används sedan som standardvärden på sidan Strukturlisteberäkning när strukturlistan beräknas.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 55bca29016e06b6ed71c0f1a4aa412401976ebdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d1bc67038c6080bb96d524a549deddbc8d4e0b
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362888"
 ---
-
 # <a name="bom-calculations-groups"></a>Beräkningsgrupper för strukturlista
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ En strukturlisteberäkning genererar varningsmeddelanden. Du kan visa varningar 
 -   Identifiera när artikeln på en strukturlisterad har en lägre vinstmarginal än du önskar.
 
 Du kan definiera flera beräkningsgrupper för strukturlistor, beroende på dina krav för variationer i varningsmeddelanden. Det kan till exempel räcka med en beräkningsgrupp för strukturlistor som visar ett varningsmeddelande om en aktiv strukturlista eller om en komponentkvantitet som är lika med 0 (noll). När du startar beräkningen av en strukturlista kan du åsidosätta varningsvillkoren som är kopplade till beräkningsgruppen för strukturlistor. Du kan också lägga till eller ta bort varningsvillkor. Om den aktuella situationen inte berör flödesdata kan du exempelvis ta bort varningsvillkoret för ett aktivt flöde. **Obs!** Sidan **Beräkningsgrupper** inkluderas i Tid och närvaro, men har ingen koppling till beräkningsgrupper för strukturlistor. I Tid och närvaro kan arbetstagare tilldelas till beräkningsgrupper som återspeglar grupperingen av arbetstagare som är associerade med samma arbetsledare eller chef. Beräkning av arbetstagarregistreringar kan utföras automatiskt eller manuellt av en arbetsledare eller chef.
-
 
 
 

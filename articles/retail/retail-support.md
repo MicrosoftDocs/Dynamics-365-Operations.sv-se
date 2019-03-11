@@ -1,35 +1,34 @@
 ---
-title: "Få support för Dynamics 365 for Retail"
-description: "I den här artikeln förklaras hur du kan få hjälp med Microsoft Dynamics 365 for Retail."
+title: Få support för Dynamics 365 for Retail
+description: Det här avsnittet beskriver hur du får hjälp med Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364061"
 ---
-
 # <a name="get-support-for-dynamics-365-for-retail"></a>Få support för Dynamics 365 for Retail
 
 [!include [banner](../includes/banner.md)]
 
-I den här artikeln förklaras hur du kan få hjälp med Dynamics 365 for Retail.
+Det här avsnittet beskriver hur du får hjälp med Dynamics 365 for Retail.
 
 ## <a name="contact-support"></a>Kontakta supporten
 
@@ -49,7 +48,7 @@ Om du vill ha stöd för Retail, använd modulen i följande tabell. Resurserna 
 <tbody>
 <tr>
 <td>Fråga communityn.</td>
-<td>Gå till communitysidan <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> för mer hjälp med dina frågor från Dynamics community.</td>
+<td>Gå till communitysidan <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> om du vill få hjälp med frågor från Dynamics community.</td>
 </tr>
 <tr>
 <td>Använd verktyget Problemsökning.</td>
@@ -72,7 +71,7 @@ Om du vill ha stöd för Retail, använd modulen i följande tabell. Resurserna 
 <li>Fel som uppstår när du använder LCS eller problem som uppstår när du försöker komma åt LCS.</li>
 <li>Fel som uppstår när du använder Retail.</li>
 </ul>
-Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSource, onlinekurser, sök, kunskapsbasen, filhämtning och sid- eller systemfel finns på <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">webbplatssupport</a>.</td>
+Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSource, e-learning, sök, kunskapsbasen, filhämtning och sid- eller systemfel finns på <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">webbplatssupport</a>.</td>
 </tr>
 <tr>
 <td>Få hjälp med frågor om Retail eller Finance and Operations-licenser.</td>
@@ -85,5 +84,4 @@ Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSo
 </tbody>
 </table>
 
-För mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
-
+Mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://dynamics.microsoft.com/en-us/support/).

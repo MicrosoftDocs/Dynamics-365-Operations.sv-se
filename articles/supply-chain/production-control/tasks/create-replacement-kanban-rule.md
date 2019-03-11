@@ -1,13 +1,13 @@
---- 
-title: "Skapa en kanban-regel för ersättning"
-description: "Den här proceduren fokuserar på att ersätta en befintlig kanban-regel med en ny kanban-regel vid ett visst datum."
+---
+title: Skapa en kanban-regel för ersättning
+description: Den här proceduren fokuserar på att ersätta en befintlig kanban-regel med en ny kanban-regel vid ett visst datum.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c8a9367d4796999857e473bcbe36a709d534f3b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e5b27200a8d56192d473887f01076eced0f92e4c
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362290"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Skapa en kanban-regel för ersättning
 
@@ -55,5 +55,4 @@ Den här proceduren fokuserar på att ersätta en befintlig kanban-regel med en 
 ## <a name="modify-maximum-quantity-for-the-replacement-kanban-rule"></a>Ändra den högsta kvantiteten för ersättningskanban-regeln
 1. AngeHögsta kvantitet till "100".
     * Visa snabbfliken Kvantiteter om du vill visa fältet Högsta kvantitet. Om du ändrar den högsta kvantiteten till 100 kommer upp till 100 kanban att bearbetas.    Detta är det sista steget i den här uppgiften.  
-
 

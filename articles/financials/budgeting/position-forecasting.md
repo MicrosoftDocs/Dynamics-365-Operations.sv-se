@@ -1,13 +1,13 @@
 ---
 title: Befattningsprognos
-description: "Utgifter relateradr till att kompensera för arbetare är ofta en stor del av ett företags kostnader. Med befattningsprognoser kan du planera dessa utgifter och inkludera dem i planeringen av budgetar."
+description: Utgifter relateradr till att kompensera för arbetare är ofta en stor del av ett företags kostnader. Med befattningsprognoser kan du planera dessa utgifter och inkludera dem i planeringen av budgetar.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356172"
 ---
-
 # <a name="position-forecasting"></a>Befattningsprognos
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,7 @@ Det kostnader för elementet förtjänsten, som valts på kompensationsgruppen, 
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Skapa befattningar en befintlig prognos för befattningar
 
-För den här exaktaste planeringen kan du skapa prognosbefattningar, med hjälp av information från befintliga befattningar i Microsoft Dynamics 365 for Finance and Operations, oavsett om befattningen för närvarande är fylld eller ofylld. 
+För den här exaktaste planeringen kan du skapa prognosbefattningar, med hjälp av information från befintliga befattningar i Microsoft Dynamics 365 for Finance and Operations oavsett om befattningen är för närvarande här ofullständig eller. 
 
 **Lägga till befintliga befattningar** Funktionen visas alla befattningar för en organisation. Genom att **Fr o m** ange datum, kan du ändra listan med befattningar, så att den innehåller befattningarna som hittats vid ett datum i det förflutna, eller mer allmän, i framtiden (till exempel, början på nästa budgettransaktioner cykeln). Välj en budgetrapport planeringsprocess och budgetering planscenariot, valda befattningar i listan och klicka på om **OK** du vill skapa prognosbefattningar för de valda befattningar. Observera att du kan bara skapa en förväntad befattning för varje befintlig position i en budgetrapport och planeringsprocess situationer. Du kan dock skapa ytterligare versioner, genom att tilldela olika budgettransaktioner planscenarion. 
 
@@ -216,7 +215,6 @@ För både utvecklingsprocessen och startdatumet valprocessen avgör på det bud
 Den här planradshowen källan för budgetbeloppen (prognosbefattningnumret )men inte är kopplad. Därför visas ändringar i prognosbefattningen inte i budgetjournalen planraden, och ändringar i budgetjournalen planraden visas i prognosbefattningen. Om du ändrar en prognos befattning och vill uppdateringarna ska inkluderas i en budgetrapport plan, måste du för att prognosbefattningen till planen igen. Kom ihåg att denna process tar bort alla rader där den prognosbefattning har tilldelats. Därför tas bort, de ändringar du har gjort till de rader. 
 
 Om du vill se vilken budget planerar en prognos, befattning har inkluderats in, kan du generera **Prognosbefattningar med den här planen** rapporten. Alternativt på prognosbefattningen, kan du öppna faktaboxen **Associerade budgetplaner** om du vill visa planerna.
-
 
 
 

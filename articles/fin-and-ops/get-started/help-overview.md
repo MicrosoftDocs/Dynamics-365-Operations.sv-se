@@ -1,13 +1,13 @@
 ---
-title: "Hjälpsystem för Finance and Operations"
-description: "Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations."
+title: Hjälpsystem för Finance and Operations
+description: Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350744"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Hjälpsystem för Finance and Operations
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 12/18/2018
 Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations.
 
 > [!NOTE]
-> Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
+> Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail och Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent. I avsnitt som huvudsakligen berör kärnprodukter blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
 
 Hjälpsystemet är gemensamt för följande produkter:
 
@@ -78,7 +77,7 @@ Du kan få hjälp med andra Dynamics 365-produkter genom att söka efter dem, el
 
 ### <a name="use-an-rss-feed"></a>Använd ett RSS-flöde
 
-Om du vill prenumerera på ett RSS-flöde för att gå alla uppdateringar Unified Operations, använder du följande länk i en webbläsare som stöder RSS-feeds, t ex Internet Explorer, eller ett program för RSS-feed:
+Om du vill prenumerera på ett RSS-flöde för att gå alla uppdateringar Unified Operations, använder du följande länk i en webbläsare som stöder RSS-feeds, t.ex. Internet Explorer, eller ett program för RSS-feed:
 
 [RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -137,7 +136,7 @@ För att nå hjälpavsnittet i Dynamics 365 for Finance and Operations klickar d
 Via hjälpfönstret kan du få åtkomst till artiklar som gäller för Finance and Operations-klienten. När du först öppnar hjälpfönstret och klickar på fliken **Hjälp** ser du de artiklar som gäller för den sida du för närvarande använder i Finance and Operations. Om inga artiklar hittas kan du ange nyckelord för att begränsa sökningen. När du klickar på en artikel i fönstret Hjälp öppnas en ny flik i webbläsaren som visar artikeln.
 
 > [!IMPORTANT]
-> Det här avsnittet gäller inte Dynamics 365 for Talent. Hjälpsystemet för Talent ansluts automatiskt till uppgiftsguider för produkten. Du skapa heller inte skapa anpassade uppgiftsguider för Talent.
+> Det här avsnittet gäller inte för Dynamics 365 for Talent. Hjälpsystemet för Talent ansluts automatiskt till uppgiftsguider för produkten. Du skapa heller inte skapa anpassade uppgiftsguider för Talent.
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Öppna uppgiftsguider via hjälpfönstret
 
@@ -158,7 +157,7 @@ Gå till sidan **Systemparametrar** och följ dessa steg:
 2. Välj Lifecycle Services-projektet att ansluta till.
 3. Välj BPM-bibliotek (inom det valda projektet) att hämta uppgiftsinspelningar från.
 
-    - För Microsoft innehåll för Finance and Operations väljer du QPC Unified Library (februari 2017) för Microsoft Dynamics 365 for Finance and Operations.
+    - För Finance and Operations för Microsoft-innehåll väljer du februari 2017 QPC enhetliga bibliotek för Microsoft Dynamics 365 for Finance and Operations.
     - För Retail släpper vi ett bibliotek i juli.
     - Du behöver inte välja ett bibliotek för Talent — anslutningen till rätt bibliotek sker automatiskt.
 
@@ -193,11 +192,10 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 | Plats                                                                                           | beskrivning |
 |------------------------------------------------------------------------------------------------|-------------|
 | [Docs.microsoft.com](/dynamics365/)                                                            | Värdar eller länkar till all produktdokumentation för Dynamics 365. |
-| [Microsofts utbildning](https://docs.microsoft.com/learn/)                                           | Webbplatsen för Microsofts kostnadsfria eLearning-kurser. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Tillhandahåller en molnbaserad samarbetsyta som kunder och partners kan använda för att hantera Dynamics 365 for Finance and Operations-projekt, från förförsäljning till implementering och åtgärder. Den här webbplatsen är användbar för alla implementeringsfaser. |
-| [Supportblogg](http://aka.ms/AXSupportBlog)                                                    | Ger tips som har publicerats av Dynamics 365 for Finance and Operations-supportteamet. |
+| [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Webbplatsen för Microsofts kostnadsfria eLearning-kurser. |
+| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Ger en molnbaserad samarbetsarbetsyta som kunder och deras partners kan använda för att hantera Dynamics 365 for Finance and Operations-projekt från förförsäljning till genomförande och åtgärder. Den här webbplatsen är användbar för alla implementeringsfaser. |
+| [Supportblogg](http://aka.ms/AXSupportBlog)                                                    | Ger tips som har lagts in av Dynamics 365 for Finance and Operations supportteam. |
 | [Docs.microsoft.com/tidigare versioner](https://docs.microsoft.com/previous-versions/dynamics/) | Värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/)                                          | Värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Information om utvärdering och försäljning. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Värd för vissa utbildningsresurser för Finance and Operations, nedladdningsbara rapporter och dokument och är den primära supportsidan för serviceplaninnehavare. Kan kräva en serviceplan för att komma åt vissa resurser på webbplatsen. |
-

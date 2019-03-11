@@ -1,13 +1,13 @@
---- 
-title: "Ställ in efterdaterade checkar"
-description: "I det här avsnittet beskrivs hur du anger om du vill bokföra journalposter för postdaterade checkar och vilka bokföringsjournaler som ska användas för att rensa poster och leverantörsbetalningar."
+---
+title: Ställ in efterdaterade checkar
+description: I det här avsnittet beskrivs hur du anger om du vill bokföra journalposter för postdaterade checkar och vilka bokföringsjournaler som ska användas för att rensa poster och leverantörsbetalningar.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e4b18ebe1388998b45e5ef38318b0ade9153f7c8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d83713f9d54b396a10894995024ac1c8dd47a6f1
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342625"
 ---
 # <a name="set-up-postdated-checks"></a>Ställ in efterdaterade checkar
 
@@ -64,5 +64,4 @@ Rollen för den här proceduren är Kassaförvaltare. I den här proceduren anv�
 24. I fältet Betalningskonto, ange önskade värden.
     * Välj det bankkonto som används för att dra av fakturabeloppet.  
 25. Stäng sidan.
-
 

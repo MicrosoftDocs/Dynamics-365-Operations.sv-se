@@ -1,33 +1,32 @@
 ---
-title: "Hjälpmedelsfunktioner"
-description: "Det här avsnittet beskriver de funktioner som hjälper användare med olika funktionsnedsättningar att använda Dynamics 365 for Finance and Operations, Dynamics 365 for Retail och Dynamics 365 for Talent."
+title: Hjälpmedelsfunktioner
+description: Det här avsnittet beskriver de funktioner som hjälper användare med olika handikapp Dynamics 365 for Finance and Operations, Dynamics 365 for Retail och Dynamics 365 for Talent.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 11/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: f88b485b0bdbf66532adff530e399bdd9d5b0ed5
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363417"
 ---
-
 # <a name="accessibility-features"></a>Hjälpmedelsfunktioner
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de funktioner som hjälper användare med olika funktionsnedsättningar att använda Dynamics 365 for Finance and Operations, Dynamics 365 for Retail och Dynamics 365 for Talent. Till exempel finns funktioner för användare som använder hjälpmedel som skärmläsaren i Microsoft Windows.
+Det här avsnittet beskriver de funktioner som hjälper användare med olika handikapp Dynamics 365 for Finance and Operations, Dynamics 365 for Retail och Dynamics 365 for Talent. Till exempel finns funktioner för användare som använder synhjälpmedel som skärmläsaren i Microsoft Windows.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows skärmläsare och tangentbordsexklusiv åtkomst
 
@@ -97,4 +96,3 @@ Produkten är avsedd att fungera på olika enheter och med olika formulärfaktor
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Riktlinjer för att hjälpa utvecklare och kunder att inkorporera tillgänglighetstänk i sina anpassningar
 
 Mer information om Microsofts bästa praxis för att aktivera hjälpmedel finns [Hjälpmedel i formulär, produkter och kontroller](../../dev-itpro/user-interface/enable-accessibility.md).
-

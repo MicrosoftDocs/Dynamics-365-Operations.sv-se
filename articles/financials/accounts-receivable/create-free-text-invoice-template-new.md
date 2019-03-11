@@ -1,13 +1,13 @@
---- 
-title: "Skapa en mall för fritextfaktura"
-description: "Den här proceduren visar hur du skapar en mall för fritextfaktura."
+---
+title: Skapa en mall för fritextfaktura
+description: Den här proceduren visar hur du skapar en mall för fritextfaktura.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 91f2ec2f8ab21616c6a1b886ee89d6faf84023e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f69505f0c6137121cae92d42d052b244326c8436
-ms.openlocfilehash: 9b7ce8ba180f67c4a52439f4e03b59f07a71323d
-ms.contentlocale: sv-se
-ms.lasthandoff: 06/28/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310793"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Skapa en mall för fritextfaktura
 
@@ -68,4 +68,3 @@ För den här genomgången använder du demonstrationsföretaget USMF. Procedure
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Spara en fritextfaktura som en mall
 Du kan också spara en befintlig fritextfaktura som en mall. När du väljer Spara till mall på fliken Faktura, ange ett namn och en beskrivning för mallen. Om det finns redan en mall med namnet, visas ett meddelande om att en mall med samma namn redan finns. Du kan fortfarande klicka på Ok om du vill ersätta den. 
-

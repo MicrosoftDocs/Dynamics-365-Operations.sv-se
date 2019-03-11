@@ -1,13 +1,13 @@
 ---
-title: "Översikt över kvalitetshantering"
-description: "Det här ämnet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja."
+title: Översikt över kvalitetshantering
+description: Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 79b3127f726a08cc24c20145b5ad9969157a899c
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338324"
 ---
-
 # <a name="quality-management-overview"></a>Översikt över kvalitetshantering
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja.
+Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja.
 
-Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Microsoft Dynamics 365 for Finance and Operations planera uppgifter för att korrigera problem och hindra dem från att återkomma.
+Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Microsoft Dynamics 365 for Finance and Operations planera uppgifter för att korrigera problem och förhindra dem från att återkomma.
 
 Förutom funktioner för att hantera avvikelser inkluderar kvalitetshantering funktioner för att spåra problem efter problemtyp (även interna problem), och för att identifiera lösningar som kortsiktiga och långsiktiga. Statistik om KPI:er (Key Performance Indicator) ger insyn i historiken över tidigare avvikelseproblem och lösningarna som användes för att korrigera dem. Du kan använda historiska data om du vill granska effektiviteten hos tidigare kvalitetsmått och bestämma lämpliga mått som ska användas i framtiden.
 
@@ -362,4 +361,3 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 [Kvalitetshanteringsprocesser](quality-management-processes.md)
 
 [Aktivera avvikelsehantering](enable-nonconformance-management.md)
-

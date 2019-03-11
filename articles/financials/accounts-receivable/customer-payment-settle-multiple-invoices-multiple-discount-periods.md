@@ -1,13 +1,13 @@
 ---
-title: "Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder"
-description: "Det här ämnet visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs."
+title: Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder
+description: Det här ämnet visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a358af4878de0d02ce4dd3520e786d8779d7f030
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 92a981cbf9803e8adce1efc26a3fcfcb998540da
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319234"
 ---
-
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder
 
 [!include [banner](../includes/banner.md)]
@@ -97,7 +96,6 @@ Arnie kan visa den här informationen på sidan **Kundtransaktioner**.
 | FTI-10042  | Faktura          | 2015/06/25 | 10042   | 1 000,00                             |                                       | 505.10   | USD      |
 | ARP-10040  | Betalning          | 2015/06/29 |         |                                      | 1 485,00                              | 0,00     | USD      |
 | RAB-10040 | Kassarabatt    | 2015/06/29 |         |                                      | 9,90                                  | 0,00     | USD      |
-
 
 
 

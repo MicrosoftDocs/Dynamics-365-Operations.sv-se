@@ -1,13 +1,13 @@
---- 
+---
 title: Ange arbetarinformation
-description: "När en rekryterare har skapat ett massanställningsprojekt och genererat befattningar, är nästa steg att ange arbetarinformation för de personer som anställs."
+description: När en rekryterare har skapat ett massanställningsprojekt och genererat befattningar, är nästa steg att ange arbetarinformation för de personer som anställs.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMMassHireProject, HRMMassHireLine
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 0d850f271a3add191fcdc8ff5624bebbc6c6327f
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339566"
 ---
 # <a name="enter-worker-information"></a>Ange arbetarinformation
 
@@ -44,5 +44,4 @@ När en rekryterare har skapat ett massanställningsprojekt och genererat befatt
 7. Hitta och markera önskad post i listan.
 8. Avmarkera vald rad i listan.
     * Välj nästa projektbefattning och fortsätt ange information om arbetare för varje person som du anställer.  
-
 

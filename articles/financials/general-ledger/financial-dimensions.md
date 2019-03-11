@@ -1,13 +1,13 @@
 ---
 title: Ekonomiska dimensioner
-description: "Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in."
+description: Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
-ems.prod: 
+ems.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 ms.reviewer: shylaw
@@ -16,15 +16,14 @@ ms.custom: 25871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317555"
 ---
-
 # <a name="financial-dimensions"></a>Ekonomiska dimensioner
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Använd sidan **Ekonomiska dimensioner** om du vill skapa ekonomiska dimensioner
 
 Använd formuläret om du vill tilldela ytterligare egenskaper för varje **Värden för ekonomiska dimensioner** efter att du har skapat ekonomiska dimensioner.
 
-Du kan använda ekonomiska dimensioner som representerar juridiska personer. Du behöver inte skapa de juridiska personerna i Microsoft Dynamics 365 for Finance and Operations. Ekonomiska dimensioner är inte emellertid avsedda för för juridiska personers drift- eller affärskrav. Internredovisningsfunktionen i Finance and Operations har utformats att endast fokusera på de redovisningsposter som skapas av respektive transaktion.
+Du kan använda ekonomiska dimensioner som representerar juridiska personer. Du behöver inte skapa juridiska personer i Microsoft Dynamics 365 for Finance and Operations. Ekonomiska dimensioner är inte emellertid avsedda för för juridiska personers drift- eller affärskrav. Internredovisningsfunktionen i Finance and Operations har utformats att endast fokusera på de redovisningsposter som skapas av respektive transaktion.
 
 Utvärdera dina arbetsprocesser i följande områden för att avgöra, innan du ställer in ekonomiska dimensioner som juridiska personer, om den här inställningen kommer att fungera i din organisation:
 
@@ -141,4 +140,3 @@ Mer information finns i följande avsnitt:
 
 - [Definiera ekonomiska dimensioner](tasks/define-financial-dimensions.md)
 - [Underhåll standardmallar för ekonomisk dimension](tasks/maintain-financial-dimension-default-templates.md)
-

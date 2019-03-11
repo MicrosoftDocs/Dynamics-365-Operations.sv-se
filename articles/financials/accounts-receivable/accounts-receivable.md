@@ -1,13 +1,13 @@
 ---
-title: "Startsida för Kundreskontra"
-description: "Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar."
+title: Startsida för Kundreskontra
+description: Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302913"
 ---
-
 # <a name="accounts-receivable-home-page"></a>Startsida för Kundreskontra
 
 [!include [banner](../includes/banner.md)]
@@ -49,16 +48,16 @@ Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalninga
         - [Kundbokföringsprofiler](customer-posting-profiles.md)
         - [Inställning, auktorisering och registrering av kreditkort](credit-card-authorizations.md)
         - [Skapa en kundfaktura](configure-customer-invoices.md)
-        - [Ställ in och bearbeta återkommande fakturor](set-up-process-recurring-invoices.md)
+        - [Ställa in och bearbeta återkommande fakturor](set-up-process-recurring-invoices.md)
         - [Korrigera en fritextfaktura](correct-free-text-invoice.md)
     :::column-end:::
     :::column:::
-        - [Ställ in växlar](set-up-bills-exchange.md)
+        - [Ställa in växlar](set-up-bills-exchange.md)
         - [Ställa in räntesatser för en räntekod](set-up-interest-rates-interest-code.md)
         - [Avstå, återinföra eller återföra ränteavgifter](waive-reinstate-reverse-interest-fees.md)
         - [Översikt över SEPA-autogiro](sepa-direct-debit-overview.md)
-        - [Ställa in SEPA autogiromedgivande](sepa-direct-debit-mandate.md)
-        - [Stäng kundreskontra](close-accounts-receivable.md)
+        - [Ställa in SEPA Autogiromedgivande](sepa-direct-debit-mandate.md)
+        - [Stänga kundreskontra](close-accounts-receivable.md)
     :::column-end:::
 :::row-end:::
 
@@ -105,15 +104,14 @@ Det finns åsikter, nyheter och annan information om kundreskontra och andra lö
 
 Det finns många inlägg om kundreskontra i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). Vissa av dessa inlägg har skrivits för en tidigare version av kundreskontra men samma begrepp gäller fortfarande. och procedurerna är ungefär desamma i den här versionen.
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics Partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
 
 #### <a name="videos"></a>Videoklipp
 
-Ta en titt på instruktionsfilmerna som finns på [kanalen Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
+Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 
 

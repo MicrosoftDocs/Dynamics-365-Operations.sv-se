@@ -1,13 +1,13 @@
 ---
 title: Nya uppgiftguider (februari 2016)
-description: "Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång."
+description: Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics 365 for Operations och (februari 2016) Komma igång.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,21 +17,20 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366453"
 ---
-
 # <a name="new-task-guides-february-2016"></a>Nya uppgiftguider (februari 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016. De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics AX (februari 2016) samt Komma igång (februari 2016).
+Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016. De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics AX och (februari 2016) Komma igång.
 
-## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguuider i (februari 2016) APQC Unified Library för Microsoft Dynamics AX
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguider i (februari 2016) APQC Unified Library for Microsoft Dynamics AX
 
 APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Dynamics AX 7.0.0-versionen. Om du behöver lokaliserade versioner av uppgiftsguiderna finns dessa tillgängliga i APQC Unified Library (maj 2016) för Microsoft Dynamics AX. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
 
@@ -647,4 +646,3 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
-

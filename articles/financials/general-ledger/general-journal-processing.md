@@ -1,13 +1,13 @@
 ---
 title: Hantering av redovisningsjournaler
-description: "Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas."
+description: Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations som kan underlätta processen för allmänna journaler och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
 ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358449"
 ---
-
 # <a name="general-journal-processing"></a>Hantering av redovisningsjournaler
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
+Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations som kan underlätta processen för allmänna journaler och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
 
 ## <a name="journal-names"></a>Journalnamn
 
@@ -97,4 +96,3 @@ Mer information finns i följande avsnitt:
 Du hittar **Simulera bokföring** på menyn **Validera** för de flesta journaler. När du validerar en journal med hjälp av funktionen **Validera** testar systemet journalen för specifika felförhållanden. Om du använder funktionen **Simulera bokföring**, kör systemet alla samma processer som körs utan att själva bokföringen av journalen vid bokföring. Du kan sedan granska bokföringsmeddelanden som visas, korrigera eventuella fel som kan du söka efter och klicka på menyn **bokför** om du vill bokföra journalen. 
 
 **Simulera bokföring** är inte tillgänglig för batchbearbetning. Det finns emellertid kod tillgänglig för att simulera bokföring i batch kod och utvecklare kan använda kod för att lägga till funktionen.  
-

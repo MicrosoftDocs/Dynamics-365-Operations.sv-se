@@ -1,13 +1,13 @@
 ---
-title: "Gränssnitt för Report Designer"
-description: "Den här artikeln innehåller en beskrivning av hur du navigerar på Report Designer och hur du använder de olika alternativen för att uppfylla dina krav."
+title: Gränssnitt för Report Designer
+description: Den här artikeln innehåller en beskrivning av hur du navigerar på Report Designer och hur du använder de olika alternativen för att uppfylla dina krav.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e9b77e2b510a72d1e3fe3c68c997d58245a86a27
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "368040"
 ---
-
 # <a name="report-designer-interface"></a>Gränssnitt för Report Designer
 
 [!include [banner](../includes/banner.md)]
@@ -139,7 +138,7 @@ Menyn **Verktyg** är tillgänglig för alla användare, men en del kommandon ha
 |-------------------------------|-------------|
 | Skydda                       | Tillämpa ett lösenord till det aktuella byggblocket. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
 | Rapportköstatus           | Öppna dialogrutan **Rapportköstatus** där du kan se alla de senaste skapade rapporterna och detaljerna för varje rapport. |
-| Källsysteminformation     | Visa inställningarna för ditt Microsoft Dynamics ERP-system. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
+| Information om källsystem     | Visar inställningarna för dina Microsoft Dynamics ERP-system. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
 | Utcheckade objekt             | Visa de raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner som för närvarande är öppna. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
 | Uppdatera cachelagrade ekonomiska data | Uppdatera data i den ekonomiska dimensionkolumnen. |
 | Alternativ                       | Öppna dialogrutan **Alternativ** där du kan ändra användarinställningar för Report Designer. |
@@ -229,4 +228,3 @@ Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigeri
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
 [Skapa en ekonomisk rapport](generate-financial-report.md)
-

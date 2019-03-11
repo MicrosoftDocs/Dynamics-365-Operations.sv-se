@@ -1,13 +1,13 @@
---- 
-title: "Ange sökanden och ansökningsdata manuellt"
-description: "I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning."
+---
+title: Ange sökanden och ansökningsdata manuellt
+description: I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 60b3d155826d234744c9805b18edf0226e237ed3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6aef83b18ba5f18506921e08f3674b6bb272d3ab
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364544"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ange sökanden och ansökningsdata manuellt
 
@@ -41,7 +41,7 @@ I den här proceduren visas hur du manuellt hanterar information om sökanden oc
 7. Skriv "E-post för kommunikation" i fältet Beskrivning.
 8. Välj ett alternativ i fältet Typ.
 9. Skriv ett värde i fältet Kontaktens nummer/adress.
-    * Den här e-postadressen används för att generera e-postkommunikation med den sökande.  
+    * Den här e-postadressen används för att skapa e-postkommunikation med den sökande.  
 10. Klicka på Lägg till.
 11. Ange ett värde i fältet Beskrivning.
 12. Skriv ett värde i fältet Kontaktens nummer/adress.
@@ -61,5 +61,4 @@ I den här proceduren visas hur du manuellt hanterar information om sökanden oc
     * Som standard baseras jobbet och avdelningen på det valda rekryteringsprojektet.  
 6. Klicka på Spara.
     * När du har sparat ansökningen kan du koppla dokument till den, inklusive sökandens erfarenhet, belöningar och följebrevet.  
-
 

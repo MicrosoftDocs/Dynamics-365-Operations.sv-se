@@ -1,13 +1,13 @@
---- 
+---
 title: Utveckla successionsplan
-description: "I takt med att organisationen växer och du börjar planera successioner kan du vilja hitta någon som har liknande kompetens som en annan person."
+description: I takt med att organisationen växer och du börjar planera successioner kan du vilja hitta någon som har liknande kompetens som en annan person.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmSkillMapping
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339198"
 ---
 # <a name="develop-succession-plan"></a>Utveckla successionsplan
 
@@ -59,5 +59,4 @@ I takt med att organisationen växer och du börjar planera successioner kan du 
 27. Klicka på Resultat.
 28. Klicka på Rapport.
     * Rapporten anger de bästa matchningarna högst upp i rapporten.  Du kan se att det finns en lucka i listan.  Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.  
-
 

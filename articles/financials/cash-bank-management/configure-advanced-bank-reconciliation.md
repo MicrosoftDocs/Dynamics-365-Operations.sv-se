@@ -1,13 +1,13 @@
 ---
-title: "Avancerad inställningsprocess för bankavstämning"
-description: "Med hjälp av en avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning."
+title: Avancerad inställningsprocess för bankavstämning
+description: Med hjälp av Avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c95589b013b569f15fce80612a11eca621944f6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f77a9c927232c95558ba78037f6a6e9f77e202c2
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357345"
 ---
-
 # <a name="advanced-bank-reconciliation-setup-process"></a>Avancerad inställningsprocess för bankavstämning
 
 [!include [banner](../includes/banner.md)]
 
-Med hjälp av en avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning.  
+Med hjälp av Avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning.  
 
 Det finns ett antal delar som måste ställas in innan du använder funktionen för avancerad bankavstämning. Mer information om hur du ställer in import av bankutdrag finns i [Ställa in importprocessen för bankutdrag](set-up-advanced-bank-reconciliation-import-process.md).  Kraven för konfigurering av avstämningsprocessen beskrivs nedan.
 
@@ -59,7 +58,6 @@ Funktionen **Använd bankutdrag som en bekräftelse på elektronisk betalning** 
 Fältet **Bankkontots namn i rapporter** är det namn som används för bankkontot på dina elektroniska bankutdrag.  Detta namn används när det ska fastställas vilka transaktioner som ska importeras för ett bankkonto från ett utdrag som kan innehålla information om flera olika bankkonton. 
 
 Alternativet för **Avstämning efter import** kommer automatiskt att validera bankutdraget, skapa en ny bankavstämning och ett nytt kalkylblad, samt köra standarduppsättningen matchningsregler.  Den här funktionen automatiserar processen fram till de transaktioner som måste stämmas av manuellt.  Inställningen för bankkontot återgår till standardvärdet när du importerar.
-
 
 
 

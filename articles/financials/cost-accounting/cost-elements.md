@@ -1,13 +1,13 @@
 ---
-title: "Dimensioner för kostnadselement"
-description: "Som en av kärnapelarna i kostnadsredovisning, används kostnadselementen för att kategorisera och spåra var kostnaderna flödar till."
+title: Dimensioner för kostnadselement
+description: Som en av kärnapelarna i kostnadsredovisning, används kostnadselementen för att kategorisera och spåra var kostnaderna flödar till.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c703d1a9ae36d4342dc652d70dd82379187057c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0f47c75b6f6f4533501070f78698de82cf70f9bd
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366085"
 ---
-
 # <a name="cost-element-dimensions"></a>Dimensioner för kostnadselement
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ För att underlätta inställningarna av dimensionsmedlemmar för kostnadselemen
 
 ## <a name="implementation-considerations"></a>Implementeringöverväganden
 Eftersom kostnadselement representerar den lägsta nivån i kostnadsdetaljer, ska du se till att alla kostnadselement som är nödvändiga för att göra chefs rapporteringen inkluderas när du implementerar kostnadselementstrukturen. Det kan vara en utmaning att hitta ett lämpligt antal kostnadselement för kostnadskontroll. Att ha tusentals kostnadselement kan göra det svårt att kontrollera varje kostnadselement. Alternativt kan du gruppera kostnadselement och hantera kostnadskontroll på en samlad nivå.
-
 
 
 

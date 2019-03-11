@@ -1,13 +1,13 @@
 ---
-title: "Registrera serienummer i försäljningsprocessen"
-description: "Det här ämnet beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans."
+title: Registrera serienummer i försäljningsprocessen
+description: Det här ämnet beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350422"
 ---
-
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i försäljningsprocessen
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Det här ämnet beskriver hur du kan registrera serienummer på följesedlar ell
 
 Många företag vill bara hämta in serienummer för uppfylla tjänste- och garantikrav och måste inte underhålla serienummer i lager från inleverans till utleverans. I dessa situationer kan Microsoft Dynamics 365 for Finance and Operations låta dig registrera serienumren på följesedlar eller fakturor när produkter säljs. Om produkter lämnas tillbaka senare kan du spåra varje produkt till en faktura för att avgöra om du har sålt produkten, och om service- eller garantiskyldigheterna gäller.
 
-Du måste aktivera serienummer för försäljningsprocessen med alternativet **Aktiv i försäljningsprocess** på sidan **Spårningsdimensionsgrupper**. Följande händelser inträffar då i Microsoft Dynamics 365 for Finance and Operations:
+Du måste aktivera serienummer för försäljningsprocessen med alternativet **Aktiv i försäljningsprocess** på sidan **Spårningsdimensionsgrupper**. Då inträffar följande händelser i Microsoft Dynamics 365 for Finance and Operations:
 -   På snabbfliken **Serienummer** markeras alternativet **Serienummerkontroll**. Om det här alternativet är markerat, måste du registrera ett serienummer för varje artikel på följesedeln eller fakturan.
 -   Alla val i spårningsdimensionsgruppen för serienummer är avmarkerade, utom alternativet **Tom utleverans tillåten**. Du kan markera alternativet **Tom utleverans tillåten** om du vill åsidosätta serienummerkontrollen och tillåta produkter och packas faktureras, utan att registrera serienummer.
 
@@ -54,12 +53,12 @@ Inställningarna för den spårningsdimensionsgrupp som har tilldelats produkten
 Du kan skapa delvisa fakturor och följesedlar för försäljningsorder och register endast serienumren för de artiklar som dessa fakturor och följesedlar innehåller. Om du vill skapa en delfaktura, och du har mer än en följesedel för försäljningsordern, kan du inkludera serienummer från mer än en följesedel. Det kan dock bara finnas en följesedel där alla serienummer inte är inkluderade. Om du till exempel har tre följesedlar och varje innehåller två seriekopplade artiklar, kan du inte skapa en delfaktura för en artikel från varje följesedel.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Vad gör jag när ett serienummer inte är läsligt?
-Om ett serienummer inte kan läsas eller skannas kan du skapa en tom rad för artikeln genom att klicka på **Det går inte att läsa** på sidan **Serienummer**. Om serienumret blir tillgängligt senare kan du uppdatera fakturan eller följesedeln. Mer information finns i nästa avsnittet ”Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?”.
+Om ett serienummer inte kan läsas eller skannas kan du skapa en tom rad för artikeln genom att klicka på **Det går inte att läsa** på sidan **Serienummer**. Om serienumret blir tillgängligt senare kan du uppdatera fakturan eller följesedeln. Mer information finns i nästa avsnittet ”Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?”.
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?
 Ja du kan korrigera serienummer, när följande villkor uppfylls:
--   **Fakturor** – Du kan ändra serienummer för de artiklar som du ännu inte har fakturerat. Följesedeln uppdateras då också. Men om en försäljningsorderrad korrigerades genom att registrera en negativ kvantitet kan du inte ändra serienummer för försäljningsorderraden.
--   **Följesedlar** - Du kan inte delvis korrigera en följesedelrad som innehåller seriekopplade artiklar. Du måste återföra hela kvantiteten för raden. Om en följesedel har annullerats eller åtgärdats behöver du inte registrera de återförda serienumren igen när du skapar en ny följesedel för samma seriekopplade artiklar. Numren som har registrerats kommer att användas.
+-   **Fakturor** – Du kan ändra serienummer för de artiklar som du ännu inte har fakturerat. Följesedeln uppdateras då också. Men om en försäljningsorderrad korrigerades genom att registrera en negativ kvantitet kan du inte ändra serienummer för försäljningsorderraden.
+-   **Följesedlar** – Du kan inte delvis korrigera en följesedelrad som innehåller seriekopplade artiklar. Du måste återföra hela kvantiteten för raden. Om en följesedel har annullerats eller åtgärdats behöver du inte registrera de återförda serienumren igen när du skapar en ny följesedel för samma seriekopplade artiklar. Numren som har registrerats kommer att användas.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Kan där jag visa serienumren som har skickats med en viss följesedel, eller som har inkluderats i en faktura?
 Ja kan du köra en fråga på följesedeljournalraden, eller fakturajournalraden som visar serienummer i en lista, som inkluderade, där alla i dokumentet.
@@ -68,17 +67,16 @@ Ja kan du köra en fråga på följesedeljournalraden, eller fakturajournalraden
 Nej, du kan inte visa de serialiserade artiklarna som du har i lager, eftersom serienummer inte registrerats för artiklar förrän artiklarna säljs.
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jag registrera serienummer för fångstviktartiklar?
-Nej, under en försäljningsprocess kan du inte registrera serienummer för fångstviktartiklar. Dessutom, om en produkt har ställts in som en fångstviktartikel, kan du inte tilldela produkten till en spårningsdimensionsgrupp som är inställd på att endast använda serienummer under försäljningsprocessen.
+Nej, under en försäljningsprocess kan du inte registrera serienummer för fångstviktartiklar. Dessutom, om en produkt har ställts in som en fångstviktartikel, kan du inte tilldela produkten till en spårningsdimensionsgrupp som är inställd på att endast använda serienummer under försäljningsprocessen.
 
 ## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Kan jag registrera serienummer i Kassa?
 
-Ja, kassan kommer att uppmana användaren att ange ett serienummer, där användaren säljer en artikel som har tilldelats en spårningsdimensionsgrupp som har ställts in för att endast använda serienummer under försäljningsprocessen.
+Ja, kassan kommer att uppmana användaren att ange ett serienummer, där användaren säljer en artikel som har tilldelats en spårningsdimensionsgrupp som har ställts in för att endast använda serienummer under försäljningsprocessen.
 
 ## <a name="what-security-roles-are-required-in-order-to-register-serial-numbers-during-the-sales-process"></a>Vilka säkerhetsroller krävs för att registrera serienummer under försäljningsprocessen?
 Den här funktionen är tillgänglig för alla roller som kan underhålla försäljningsföljesedlar och försäljningsfakturor. Följande behörigheter gör det möjligt för anställda att korrigera serienummer och registrera blanka poster för serienummer som inte kan läsas eller skannas:
 -   Underhåll korrigering av serienummer
 -   Underhåll registrering av oläsliga serienummer
-
 
 
 

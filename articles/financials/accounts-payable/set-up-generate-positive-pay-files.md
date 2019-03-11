@@ -1,13 +1,13 @@
 ---
-title: "Ställa in och generera betalningskontrollfiler"
-description: "Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler."
+title: Ställa in och generera betalningskontrollfiler
+description: Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d7b64f8414385629acef071c47a654d56005bd
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346098"
 ---
-
 # <a name="set-up-and-generate-positive-pay-files"></a>Ställa in och generera betalningskontrollfiler
 
 [!include [banner](../includes/banner.md)]
@@ -160,7 +159,6 @@ När checkarna som anges i en betalningskontrollfil har betalats får du ett bek
 
 ## <a name="recall-a-positive-pay-file"></a>Återkalla en betalningskontrollfil
 Om du måste ändra en betalningskontrollfil kan du sedan återkalla den. På sidan **Sammanfattning om betalningskontrollfil**, välj en betalningskontrollfil som har statusen **Skapat** och välj sedan åtgärden **Återkalla**. För varje check i betalningskontrollfilen återställs fältet som anger om denna check har inkluderats i en betalningskontrollfil. Sedan kan du skapa en ny betalningskontrollfil som innehåller den check som återkallades.
-
 
 
 

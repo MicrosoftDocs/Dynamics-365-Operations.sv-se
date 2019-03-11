@@ -1,13 +1,13 @@
 ---
 title: Bearbeta kompensation
-description: "Kompensationsbearbetning gör att du kan beräkna nya baskompensationsbelopp för personalen utifrån justeringar av eget kapital, meritökningsmål och prestanda."
+description: Kompensationsbearbetning gör att du kan beräkna nya baskompensationsbelopp för personalen utifrån justeringar av eget kapital, meritökningsmål och prestanda.
 author: kherr75
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: 3ecadaf20ea82cd1328b266907d2ba43515d76c6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 0886f60dbdfc531893cd2c1b23df5b52a4a2f4b6
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306284"
 ---
-
 # <a name="process-compensation"></a>Bearbeta kompensation
 
 [!include [banner](includes/banner.md)]
@@ -80,4 +79,3 @@ När kompensationsbeloppen har granskats för en medarbetare och de rekommendera
 När en eller flera medarbetarhändelser har fått sin status uppdaterad till Godkänd, kan de läsas till medarbetarnas fasta kompensationsposter. Detta gör du genom att markera varje Medarbetarhändelse en i taget och klicka på knappen **Läs in medarbetarkompensation** på resultatsidan **Medarbetarresultat** eller genom att klicka på **Läs in kompensation** på sidan **Processresultat** för att läs in alla godkända medarbetarhändelser samtidigt.
 
 Om du klickar på **OK** i dialogrutan **Läs in kompensation** läggs noll kompensationsåtgärdsrader till på sidan **Fast medarbetarkompensation**.
-

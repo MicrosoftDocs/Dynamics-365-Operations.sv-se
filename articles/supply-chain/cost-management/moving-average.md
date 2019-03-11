@@ -1,13 +1,13 @@
 ---
-title: "Rörligt genomsnitt"
-description: "Glidande medelvärde är en beständig kostnadsredovisning som baseras på principen om medelvärde där kostnaderna för lagerutleveranser inte ändras när inköpskostnaden gör det. Skillnaden kapitaliseras och baseras på en proportionell beräkning. Beloppet som kvarstår kostnadsförs."
+title: Rörligt genomsnitt
+description: Glidande medelvärde är en beständig kostnadsredovisning som baseras på principen om medelvärde där kostnaderna för lagerutleveranser inte ändras när inköpskostnaden gör det. Skillnaden kapitaliseras och baseras på en proportionell beräkning. Beloppet som kvarstår kostnadsförs.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0befa0e31347c9ee15ac0426fa3314b151a0200d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348076"
 ---
-
 # <a name="moving-average"></a>Rörligt genomsnitt
 
 [!include [banner](../includes/banner.md)]
@@ -78,7 +77,7 @@ Om du behöver justera en produkts rörliga genomsnittskostnad tillåts lagerjus
 
 I det här exemplet justeras den rörliga genomsnittskostnaden för en produkt.
 
-1.  Välj produkten som du vill justera den rörliga genomsnittskostnaden för. **Obs:** **Omvärdering för rörligt genomsnitt** undersöker tillgängligt lager för en produkt. Den markerade produkten har en bokförd kvantitet på 1, ett bokfört värde på 12,00, en bokförd enhetskostnad på 12,00 och en enhetskostnad på 12,00.
+1.  Välj produkten som du vill justera den rörliga genomsnittskostnaden för. **Obs:** **Omvärdering för rörligt genomsnitt** undersöker tillgängligt lager för en produkt. Den markerade produkten har en bokförd kvantitet på 1, ett bokfört värde på 12,00, en bokförd enhetskostnad på 12,00 och en enhetskostnad på 12,00.
 2.  Uppdatera fältet **Enhetskostnad** till 16,00. Systemet beräknar de kvarvarande fälten.
 3.  Justeringen bokförs.
 
@@ -113,8 +112,7 @@ I det här exemplet på rörligt genomsnitt skrivs rapporten om lagervärde ut f
 | 8 oktober        | 8 oktober    | Omvärdering av rörligt genomsnitt |          | 4,00   | 16,00             |
 |                  | 31 oktober   | Totalt                      | 2        | 32,00  | 16,00             |
 
- **Obs:** Du kan inte stämma av redovisningen med lager genom att använda alternativet **Sortering av transaktionstid**. Rapporten måste skrivas ut genom att använda alternativet **Bokföringsdatum**.
-
+ **Obs:** Du kan inte stämma av redovisningen med lager genom att använda alternativet **Sortering av transaktionstid**. Rapporten måste skrivas ut genom att använda alternativet **Bokföringsdatum**.
 
 
 

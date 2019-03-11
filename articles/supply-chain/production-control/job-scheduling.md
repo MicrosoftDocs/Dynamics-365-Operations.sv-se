@@ -1,13 +1,13 @@
 ---
 title: Finplanering
-description: "Det här avsnittet innehåller information om Jobbplanering, som är ett mer detaljerat formulär för att schemaläggning än Grovplanering. Du kan använda finplaneringen för att planera individuella jobb eller arbetsorder och för att styra din tillverkningsmiljö."
+description: Det här avsnittet innehåller information om Jobbplanering, som är ett mer detaljerat formulär för att schemaläggning än Grovplanering. Du kan använda finplaneringen för att planera individuella jobb eller arbetsorder och för att styra din tillverkningsmiljö.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d506a6fbeb7e88dc6b1709203bc0822b1f4dc0f8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8162797256e221192dc3e1a12aa145e28d5bc0f5
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339543"
 ---
-
 # <a name="job-scheduling"></a>Finplanering
 
 [!include [banner](../includes/banner.md)]
@@ -75,7 +74,6 @@ Resurser tilldelas jobb genom finplanering. Du kan fastställa maximikapaciteter
 
 ## <a name="resource-efficiency"></a>Resurseffektivitet
 Vid finplaneringen används även de effektivitetsprocent som angetts för resurserna. Effektivitetsprocent minskar eller ökar den tid som reserverats för resursen. Det innebär att produktionstiden ökar eller minskar. Denna formel används för beräkningen: Planeringstid = Tid × 100 ÷ Effektivitet i procent i denna formel, *Tid* innefattar både körtiden och ställtider.
-
 
 
 

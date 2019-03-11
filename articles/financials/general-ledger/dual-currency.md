@@ -1,29 +1,28 @@
 ---
 title: Dubbel valuta
-description: "Det här avsnittet innehåller information om dubbel valuta där rapporteringsvalutan används som en andra redovisningsvaluta för Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet innehåller information om dubbel valuta där rapporteringsvalutan används som en andra redovisningsvaluta för Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330320"
 ---
-
 # <a name="dual-currency"></a>Dubbel valuta
 
 [!include [banner](../includes/banner.md)]
@@ -184,4 +183,3 @@ Dessutom har större ändringar gjorts i avskrivningsprocessen. Ändringarna kr�
     - Om transaktionstypen för avskrivning anges i journalen för anläggningstillgångar visas rapporteringsvalutabeloppen i de nya kolumnerna. Dessa belopp kan ändras.
     - Om redovisningsvalutan och rapporteringsvalutan i redovisningen överensstämmer kommer beloppen att synkroniseras. Om du ändrar beloppet **kredit** kommer **kredit i rapporteringsvaluta** att ändras automatiskt så att den matchar.
     - Om alla andra transaktionstyper anges i journalen för anläggningstillgångar kommer beloppen **debet i rapporteringsvaluta** och **kredit i rapporteringsvaluta** aldrig att visas varken före eller efter bokföring. Redovisningsvaluta och rapporteringsvalutabelopp finns kvar i verifikationen som bokförs till redovisningen.
-

@@ -1,32 +1,31 @@
 ---
-title: "Översikt över produktinformation"
-description: "Det här avsnittet innehåller information om hur du hanterar produktinformation. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna."
+title: Översikt över produktinformation
+description: Det här avsnittet innehåller information om hur du hanterar produktinformation. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363026"
 ---
-
 # <a name="product-information-overview"></a>Översikt över produktinformation
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,7 @@ Observera att dynamiska och flexibla organisationers produktinformationsdata än
 
 ## <a name="product-masters-and-product-variants"></a>Produktmallar och produktvarianter
 
-I en smidig värld där produkter snabbt måste anpassas efter kundens behov specificerar produktdefinitioner en uppsättning produkter i stället för specifika produkter. I Microsoft Dynamics 365 for Finance and Operations kallas de generiska produkterna för *produktmallar*. Produktmallar innehåller definitionen och reglerna som anger hur olika specifika produkter beskrivs och uppträder i affärsprocesser. Utifrån dessa definitioner kan olika specifika produkter genereras. Dessa specifika produkter kallas för *produktvarianter*.
+I en smidig värld där produkter snabbt måste anpassas efter kundens behov specificerar produktdefinitioner en uppsättning produkter i stället för specifika produkter. I Microsoft Dynamics 365 for Finance and Operations allmänna produkterna kallas *produktmallar*. Produktmallar innehåller definitionen och reglerna som anger hur olika specifika produkter beskrivs och uppträder i affärsprocesser. Utifrån dessa definitioner kan olika specifika produkter genereras. Dessa specifika produkter kallas för *produktvarianter*.
 
 I Finance and Operations associeras en produktmall med en produktdimensionsgrupp och en konfigurationsteknik som anger affärsreglerna. Produktdimensioner (färg, storlek, utförande och konfiguration) är en särskild uppsättning attribut som kan användas i hela programmet för att definiera och spåra beteendet hos berörda produkter. Dessa dimensioner kan också hjälpa användarna att söka efter och identifiera produkten.
 
@@ -97,4 +96,3 @@ Arbetsytan består av en sammanfattning av paneler och två listor. Listan **Öp
 ### <a name="manually-creating-a-new-released-product"></a>Skapa en ny frisläppt produkt manuellt
 
 Du kan manuellt skapa en frisläppt produkt i en enda körning, beroende på organisationens affärsprocesser och regler om huruvida den här funktionen ska användas. Den här funktionen skapar en ny produkt och frisläpper den automatiskt till den aktuella juridiska personen. Om du vill skapa en ny produkt, klicka på **Frisläppta produkter** på arbetsytan **Underhåll av frisläppta produkter** eller på listsidan **Frisläppt produkt**.
-

@@ -1,13 +1,13 @@
 ---
-title: "Uttryckbegränsningar och tabellbegränsningar i produktkonfigurationsmodeller."
-description: "I det här avsnittet beskrivs hur du använder uttrycksbegränsningar och registerbegränsningar. Med begränsningar kontrolleras vilka attributvärden som du kan välja när du konfigurerar produkter för en försäljningsorder, försäljningsoffert, inköpsorder eller produktionsorder. Du kan använda uttrycksbegränsningar eller registerbegränsningar, beroende på hur du föredrar att skapa begränsningar."
+title: Uttryckbegränsningar och tabellbegränsningar i produktkonfigurationsmodeller.
+description: I det här avsnittet beskrivs hur du använder uttrycksbegränsningar och registerbegränsningar. Med begränsningar kontrolleras vilka attributvärden som du kan välja när du konfigurerar produkter för en försäljningsorder, försäljningsoffert, inköpsorder eller produktionsorder. Du kan använda uttrycksbegränsningar eller registerbegränsningar, beroende på hur du föredrar att skapa begränsningar.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 88d52031f4c916f5ec3e970f38864977e69a9d9a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b6b5b7e7894cb74e33e08893934b3eaede957556
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356655"
 ---
-
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttryckbegränsningar och tabellbegränsningar i produktkonfigurationsmodeller.
 
 [!include [banner](../includes/banner.md)]
@@ -170,7 +169,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 </tr>
 <tr class="even">
 <td>Effekt</td>
-<td>Detta tar en exponential. Detta gäller exponentiering från höger till vänster. (Med andra ord är det rättighetsförenande.) Och därför är <strong>Power[a, b, c]</strong> det samma som <strong>Power[a, Power[b, c]].</strong> <strong>Effekt</strong> kan bara användas med en positiv konstant som exponent.</td>
+<td>Detta tar en exponential. Detta gäller exponentiering från höger till vänster. (Med andra ord är det rättighetsförenande) Därför är <strong>Power[a, b, c] </strong>det samma som <strong>Power[a, Power[b, c]].</strong> <strong>Effekt</strong> kan bara användas med en positiv konstant som exponent.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operatör:</strong> Power[x, 2] == y</li>
@@ -252,7 +251,6 @@ Du kan inte använda reserverade nyckelord som solvernamn för attribut, kompone
 [Skapa en uttrycksbegränsning (uppgiftsguide)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [Lägg till en beräkning i en produktkonfigurationsmodell (uppgiftsguide)](tasks/add-calculation-product-configuration-model.md)
-
 
 
 

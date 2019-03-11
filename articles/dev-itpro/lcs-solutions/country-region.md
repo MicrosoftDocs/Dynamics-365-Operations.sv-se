@@ -1,13 +1,13 @@
 ---
 title: Lokaliserings- och regelfunktioner
-description: "Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner."
+description: Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/01/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302915"
 ---
-
 # <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i [tillgänglighetsguiden för lokaliserade och översatta produkter](https://aka.ms/ax-availabilityguide). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
+Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i [tillgänglighetsguiden för lokaliserade och översatta produkter](https://aka.ms/dynamics_365_international_availability_deck). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
 
 Det här avsnittet innehåller listor över resurser som kan hjälpa dig att göra följande: 
 - lära dig hur du utvecklar lands-/regionspecifika lösningar
@@ -45,10 +44,11 @@ Följande resurser innehåller anvisningar och information som hjälper utveckla
 -   [Klassificera lokaliseringsfunktioner](classify-localization-features.md)
 -   [Landskoder - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates-and-communication"></a>Uppdateringar av lokalisering och kommunikation
+## <a name="regulatory-updates-and-communication"></a>Regeluppdateringar och kommunikation
 Följande resurser innehåller information om planerade och nya lokaliseringsfunktioner. 
 
-### <a name="localization-updates"></a>Lokaliseringsuppdateringar
+### <a name="regulatory-updates"></a>Regeluppdateringar
+-   [Regeluppdateringar](../../financials/localizations/regulatory-updates.md)
 -   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (uppdateras en gång i veckan)
 -   [LCS-problemsökning](../lifecycle-services/issue-search-lcs.md) (uppdateras dagligen)
 
@@ -118,7 +118,6 @@ Mer information finns i [Uppgiftsguider](../../fin-and-ops/get-started/help-over
         - [USA](../../financials/localizations/united-states.md)
     :::column-end:::
 :::row-end:::
-
 
 
 

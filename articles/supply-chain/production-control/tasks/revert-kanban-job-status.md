@@ -1,13 +1,13 @@
---- 
-title: "Återställ kanban-jobbstatus"
-description: "Den här proceduren är avsedd för att återställa en felaktig kanban-jobbstatus."
+---
+title: Återställ kanban-jobbstatus
+description: Den här proceduren är avsedd för att återställa en felaktig kanban-jobbstatus.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 27874f89cede151b52b869fa0d58e320d548e6d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d359232da5f3087b1e6baed182a20da09aeff7
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352101"
 ---
 # <a name="revert-kanban-job-status"></a>Återställ kanban-jobbstatus
 
@@ -48,11 +48,10 @@ Den här proceduren är avsedd för att återställa en felaktig kanban-jobbstat
     * Välj det första jobbet som har förberetts.  
 2. I åtgärdsfönstret, klicka på Tillverka.
 3. Klicka på Återställ status.
-    * Du kan använda en alternativ kanban-regel när följande villkor är sant: återanskaffningsstrategin är densamma för båda reglerna.  - Den version av produktionsflödet är densamma för båda regler.  - Produkten som levereras är densamma för båda regler.  - Vissa nedströmsaktiviteter som konfigurerats för den senaste aktiviteten för kanban-reglerna måste vara samma för båda regler.  - Samma levererade lagerdimensioner måste ha konfigurerats för båda reglerna.  - Statusen för materialhanteringsenheten måste vara Inte tilldelat.  - Konfigurationen för händelse-kanbans måste vara samma.  
+    * Du kan använda en alternativ kanban-regel när följande villkor är sant: återanskaffningsstrategin är densamma för båda reglerna.  - Den version av produktionsflödet är densamma för båda regler.  - Produkten som levereras är densamma för båda regler.  - Vissa nedströmsaktiviteter som konfigurerats för den senaste aktiviteten för kanban-reglerna måste vara samma för båda regler.  - Samma levererade lagerdimensioner måste ha konfigurerats för båda reglerna.  - Statusen för materialhanteringsenheten måste vara Inte tilldelat.  - Konfigurationen för händelse-kanbans måste vara samma.  
     * Kontrollera att den nya statusen är Planerat.  
 4. Klicka på OK.
 5. Avmarkera vald rad i listan.
     * Välj samma jobb.  
     * Observera att jobbstatusen för kanban-jobbet återställs till Planerat, vilket anges med en tom kanban-ikon.  
-
 

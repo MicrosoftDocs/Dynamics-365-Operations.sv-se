@@ -1,13 +1,13 @@
 ---
-title: "Simulera kostnadsändringar med hjälp av en kostnadsversion för planerade kostnader"
-description: "Det här avsnittet innehåller en beskrivning av hur du kan simulera effekterna av kostnadsändringar för en tillverkad artikels beräknade kostnader med hjälp av en separat kostnadsversion för planerade kostnader."
+title: Simulera kostnadsändringar med hjälp av en kostnadsversion för planerade kostnader
+description: Det här avsnittet innehåller en beskrivning av hur du kan simulera effekterna av kostnadsändringar för en tillverkad artikels beräknade kostnader med hjälp av en separat kostnadsversion för planerade kostnader.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318889"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulera kostnadsändringar med hjälp av en kostnadsversion för planerade kostnader
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ Följande scenarier visar hur du använder en kostnadsversion för att simulera 
 -   Simulera kostnadsändringen i en beräkningsformel för indirekt kostnad. Kostnadsändringen kan till exempel återspegla en förväntad ökning eller minskning av tillverkningsomkostnader. Du definierar ändringen av en beräkningsformel för indirekt kostnad genom att använda sidan **Inställningar för kostnadsredovisning** där du registrerar en väntande kostnadspost i simuleringsversionen och kontrollerar och sparar ändringen.
 
 När du har registrerat de simulerade kostnadsändringarna ska du beräkna kostnaderna för de tillverkade artiklar som påverkas av kostnadsändringen. Använd sidan **Beräkning** för simuleringsversionen och identifiera de valda tillverkade artiklarna som påverkas av kostnadsändringarna. Strukturlisteberäkningarna gäller för alla tillverkade artiklar såvida du inte väljer särskilda artiklar. Du kan också använda alternativet för strukturlisteberäkning för uppdateringar av typen var-använd. Visa artikelkostnadsposterna i simuleringsversionen om du vill analysera hur de simulerade kostnadsändringarna påverkar kostnaderna för de valda tillverkade artiklarna. Använd sidorna **Artikelpris** och **Beräkna artikelkostnad** för att visa och analysera kostnaderna.
-
 
 
 

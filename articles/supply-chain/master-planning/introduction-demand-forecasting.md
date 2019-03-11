@@ -1,13 +1,13 @@
 ---
-title: "Översikt för efterfrågeprognosticering"
-description: "Behovsprognoser används för att förutsäga oberoende efterfrågan från beställningar och beroende efterfrågan på någon frikoppling för kundorder. De förbättrade minskningsreglerna för efterfrågeprognosticering ger en perfekt lösning för massanpassning."
+title: Översikt för efterfrågeprognosticering
+description: Behovsprognoser används för att förutsäga oberoende efterfrågan från beställningar och beroende efterfrågan på någon frikoppling för kundorder. De förbättrade minskningsreglerna för efterfrågeprognosticering ger en perfekt lösning för massanpassning.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310011"
 ---
-
 # <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
 [!include [banner](../includes/banner.md)]
 
 Behovsprognoser används för att förutsäga oberoende efterfrågan från beställningar och beroende efterfrågan på någon frikoppling för kundorder. De förbättrade minskningsreglerna för efterfrågeprognosticering ger en perfekt lösning för massanpassning.
 
-För att generera den ursprungliga prognosen, en sammanfattning av historiska transaktioner överförs till en Microsoft Azure maskinen lärande service som finnas värtt på Azure. Eftersom denna tjänst är inte delas mellan användare, det kan lätt anpassas till branschspecifika krav. Du kan använda Finance and Operations för att visualisera prognosen, justera prognosen och visa viktiga resultatindikatorer (KPI) om prognosprecisionen.
+För att generera den ursprungliga prognosen, en sammanfattning av historiska transaktioner överförs till en Microsoft Azure Machine Learning-tjänst som finns på Azure. Eftersom denna tjänst är inte delas mellan användare, det kan lätt anpassas till branschspecifika krav. Du kan använda Finance and Operations för att visualisera prognosen, justera prognosen och visa viktiga resultatindikatorer (KPI) om prognosprecisionen.
 
 ## <a name="key-features-of-demand-forecasting"></a>Nyckeldrag av behovsprognoser
 Här är några av de viktigaste funktionerna i behovsprognoser:
@@ -52,7 +51,7 @@ Tre stora teman genomförs i behovsprognoser:
 -   **Återanvändning av Microsoft-stapeln** – Microsoft lanserade plattformen för maskininlärning i februari 2015. Med maskininlärning, som nu ingår i Microsoft Cortana Analytics Suite, kan du snabbt och enkelt skapa försök förutsägbara analysexperiment, till exempel experiment för efterfrågeuppskattning, genom att använda R-algoritmer eller programmeringsspråket Python och ett enkelt gränssnitt för dra och släpp.
     -   Du kan hämta Finance and Operations experiment för efterfrågeprognosticering , ändra dessa för att uppfylla dina affärsbehov, publicera dem som en webbtjänst på Azure och använda dem för att skapa efterfrågeprognoser. Experimenten är tillgängliga för nedladdning om du har köpt en Finance and Operations-prenumeration för en produktionsplanerare som användare på företagsnivå.
     -   Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos i Finance and Operations automatiskt integreras med Finance and Operations, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Experiment från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/) kan därför inte användas lika enkelt som experimenten för efterfrågeprognosticering för Finance and Operations. Du måste modifiera koden för experimenten så att de använder programmeringsgränssnittet (API) för Finance and Operations-program.
-    -   Du kan skapar dina egna experiment i Microsoft Azure maskinen lärande Studio, publicerar dem som tjänster på Azure, och använda dem för att skapa prognoser.
+    -   Du kan skapar dina egna experiment i Microsoft Azure Machine Learning Studio, publicerar dem som tjänster på Azure, och använda dem för att skapa prognoser.
     -   Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. Mer information om prissättning för Machine Learning finns på <http://aka.ms/machine-learning-price-info>.
 -   **Prognostiserad minskning vid någon frikoppling** – Efterfrågeprognosticering i Finance and Operations bygger på denna funktion, som låter dig prognosticera såväl beroende som oberoende behov hos någon frikoppling.
 
@@ -61,7 +60,7 @@ Följande diagram visar grundflöde i behovsprognoser.
 
 [![Introduktionsdiagram till efterfrågeprognosticering](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
-Generering av efterfrågeprognoser börjar i Finance and Operations. Historiska transaktionsdata från transaktionsdatabasen för Finance and Operations samlas in och fyller en mellanlagringstabell. Mellanlagringstabellen matas senare vidare till en maskininlärningstjänst. Genom att utföra minimal anpassning kan du ansluta olika datakällor till mellanlagringstabellen. Datakällorna kan innehålla Microsoft Excel-filer, filer med kommaavgränsade värden (CSV), samt data från Microsoft Dynamics AX 2009 och Microsoft Dynamics AX 2012. Därför kan du generera efterfrågeprognoser som beaktar historiska data spridda över flera system. Men huvuddata, såsom namn och enheter av åtgärden, måste vara den samma i de olika datakällorna.
+Generering av efterfrågeprognoser börjar i Finance and Operations. Historiska transaktionsdata från transaktionsdatabasen för Finance and Operations samlas in och fyller en mellanlagringstabell. Mellanlagringstabellen matas senare vidare till en maskininlärningstjänst. Genom att utföra minimal anpassning kan du ansluta olika datakällor till mellanlagringstabellen. Datakällor kan innehålla Microsoft Excel-filer, kommaavgränsade värdefiler (CSV) och data från Microsoft Dynamics AX 2009 och Microsoft Dynamics AX 2012. Därför kan du generera efterfrågeprognoser som beaktar historiska data spridda över flera system. Men huvuddata, såsom namn och enheter av åtgärden, måste vara den samma i de olika datakällorna.
 
 Om du använder maskininlärningsexperiment för efterfrågeprognos för Finance and Operations, så söker dessa efter den bästa matchningen bland fem prognosticeringsmetoder med tidsserier för att beräkna en baslinje för prognosen. Parametrarna för dessa prognosticeringsmetoder hanteras i Finance and Operations. 
 
@@ -88,7 +87,6 @@ Efterfrågeprognosticering i Finance and Operations är ett verktyg som hjälper
 [Ta bort avskilda från historiska transaktionsdata vid beräkning av en efterfrågeprognos](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Utöka funktionen prognos för efterfrågan](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
 
 
 

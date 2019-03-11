@@ -1,37 +1,36 @@
 ---
-title: "Synkronisera produkter från Finance and Operations till produkter i Field Service"
-description: "Det här avsnittet beskriver vilka mallar och underliggande uppgift som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations, till Microsoft Dynamics 365 for Field Service"
+title: Synkronisera produkter från Finance and Operations till produkter i Field Service
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: 3f26240ec289f5ddcc2682e598bbf93f516b99af
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: bf5de13fee6db1b467c1cf4d5cc65b46c67b29fe
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316336"
 ---
-
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>Synkronisera produkter från Finance and Operations till produkter i Field Service
+# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>Synkronisera produkter i Finance and Operations till produkter i Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vilka mallar och underliggande uppgift som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations, till Microsoft Dynamics 365 for Field Service
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 
 Mallen **Fältserviceprodukter (Fin and Ops till Field Service)** som används baseras på mallen **Produkter (Field Service till Sales) – direkt** från potentiell kund till kontanter. Mer information finns i [Produkter (Fin and Ops till Sales) – direkt](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
@@ -74,4 +73,3 @@ I följande illustrationer visas en mallmappning i dataintegrering.
 ### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Fältserviceprodukter (Fin and Ops till Field Service): Produkter - Produkter
 
 [![Mallmappning i dataintegrering](./media/FSProduct.png)](./media/FSProduct.png)
-

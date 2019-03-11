@@ -1,13 +1,13 @@
---- 
-title: "Direktleverera produkter från det mottagande lagerstället till butiker"
-description: "Den här proceduren går igenom stegen för att skapa och bearbeta en direktutleverans om du vill fördela produkter från inleveransplatsen för en inköpsorder till en eller flera butiker."
+---
+title: Direktleverera produkter från det mottagande lagerstället till butiker
+description: Den här proceduren går igenom stegen för att skapa och bearbeta en direktutleverans om du vill fördela produkter från inleveransplatsen för en inköpsorder till en eller flera butiker.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/17/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: daa42bb83d6b988e8fd18db6ad8386c67fd3e6e5
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364406"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Direktleverera produkter från det mottagande lagerstället till butiker
 
@@ -47,5 +47,4 @@ Den här proceduren går igenom stegen för att skapa och bearbeta en direktutle
 14. Klicka på Ja.
 15. I listan, sök efter och välj ett lagerställe som har tagit emot produkter.
 16. Klicka på order för att visa de order som skapades för det valda lagerstället
-
 

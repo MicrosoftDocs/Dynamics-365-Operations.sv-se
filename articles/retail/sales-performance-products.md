@@ -1,13 +1,13 @@
 ---
-title: "Utvärdera försäljningsresultat per produkt"
-description: "Du kan studera lönsamheten för de 10 främsta produkterna med hjälp av Microsoft Dynamics 365 for Retail."
+title: Utvärdera försäljningsresultat per produkt
+description: Du kan studera lönsamheten för de 10 främsta produkterna med hjälp av Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d40f51208503fe9d2dadca455bb0531bbe519a4
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343982"
 ---
-
 # <a name="assess-sales-performance-by-product"></a>Utvärdera försäljningsresultat per produkt
 
 [!include [banner](includes/banner.md)]
 
 Du kan studera lönsamheten för de 10 främsta produkterna med hjälp av Microsoft Dynamics 365 for Retail.
 
-Som en del av Dynamics 365 for Retail kan användare studera lönsamheten för de främsta produkterna (10–100) mellan olika nivåer i organisationshierarkin, baserat på ett av följande kriterier:
+Som en del av Dynamics 365 for Retail kan användare studera lönsamheten för topprodukterna (10 till 100) mellan olika nivåer i organisationshierarkin, baserat på ett av följande kriterier:
 
 - Försäljningsbelopp
 - Kvantitet
@@ -45,4 +44,3 @@ För denna bedömning kan du använda färdiga **topprodukter** betänkande, som
 - Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkterna - rapport**
 - Arbetsytan **Kategori- och produkthantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Rapport över topprodukter**
 - Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta produkterna - rapport**
-

@@ -1,13 +1,13 @@
 ---
 title: Nummerserier
-description: "Nummerserier används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter och som kräver identifierare."
+description: Nummerserier används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter och som kräver identifierare.
 author: MargoC
 manager: AnnBe
 ms.date: 08/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7dadbe811e385ea6d5802c03381093d6693b23ba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5f4ff7eb8ee9b87b9d90af4d215743596555fd73
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328457"
 ---
-
 # <a name="number-sequences"></a>Nummerserier
 
 [!include [banner](../includes/banner.md)]
@@ -117,4 +116,3 @@ Om det finns ett reglerat krav där du använder kontinuerliga nummerserier, rek
 I händelse av strömavbrott, programfel eller annat oväntat fel kan inte systemet återanvända nummer automatiskt för kontinuerliga nummerserier. Du kan köra rensningen manuellt eller automatiskt återställa de förlorade numren.
 
 Tänk noggrant igenom serveranvändningen när du planerar rensningen. Vi rekommenderar att du utför rensningen som ett batchjobb under tider då arbetsbelastningen är låg.
-

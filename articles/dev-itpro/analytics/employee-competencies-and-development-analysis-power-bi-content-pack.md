@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll för medarbetares kompetenser och utveckling"
-description: "Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för medarbetares kompetenser och utveckling."
+title: Medarbetares kompetenser och utveckling Power BI-innehåll
+description: Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för medarbetares kompetenser och utveckling.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0442e795eadf28a07132c160d69ad44e9fb05eed
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352929"
 ---
-
-# <a name="employee-competencies-and-development-power-bi-content"></a>Power BI-innehåll för medarbetares kompetenser och utveckling
+# <a name="employee-competencies-and-development-power-bi-content"></a>Medarbetares kompetenser och utveckling Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +39,7 @@ När du har anslutit innehållspaketet till dina Finance and Operations-data kom
 | Kompetensprofil                     | Kompetensprofil för vald medarbetare.                |
 | Kompetensanalys                    | Kompetens efter typ och värdering                              |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Finance and Operations-data används för att fylla i rapporter i innehållspaketet för medarbetares kompetenser och utveckling. Följande tabell visar enheterna som innehållspaketet baserades på.
@@ -71,4 +70,3 @@ Finance and Operations-data används för att fylla i rapporter i innehållspake
 | Personal\_ArbetareNamn             | Förnamn, efternamn och fullständiga namn                                                                       | |
 | Personal\_ArbetareTitel            | Titel och tjänsteålder                                                                                   | |
 | Personal\_ArbetareTrend             | Arbetare över tid, antal anställda, företag och befattning                                                        | Personal\_Företag, Personal\_Kompensation, Personal\_GeographicLocation, Personal\_Prestanda, Personal\_WorkerName, Personal\_ReportsToWorkerName, Personal\_CalendarOffset, Personal\_Datum, Personal\_WorkerTitle, Personal\_Demografi, Personal\_Anställning, Personal\_Jobb |
-

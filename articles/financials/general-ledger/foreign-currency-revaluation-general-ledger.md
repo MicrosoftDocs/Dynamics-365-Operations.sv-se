@@ -1,13 +1,13 @@
 ---
-title: "Omvärdering i utländsk valuta för huvudbok"
-description: "Den här artikeln innehåller en översikt över följande för redovisningsomräkningsprocessen i utländsk valuta: ställa in, köra processen, beräkningen för processen, samt hur du återför omvärderingtransaktionerna vid behov."
+title: Omvärdering i utländsk valuta för huvudbok
+description: 'Den här artikeln innehåller en översikt över följande för redovisningsomräkningsprocessen i utländsk valuta: ställa in, köra processen, beräkningen för processen, samt hur du återför omvärderingtransaktionerna vid behov.'
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315554"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Omvärdering i utländsk valuta för huvudbok
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ Omvärderingsprocessen kan köras för en eller flera juridiska personer. Sökni
 
 Omvärderingen kan köras för en eller flera utländska valutor. Sökningen omfattar alla valutor som har bokförts inom det angivna datumintervallet för typen av huvudkonto (balansräkning eller resultaträkning) för de juridiska personer som du har valt att omvärdera. Redovisningsvalutan tas med i listan, men inget omvärderas om redovisningsvalutan har valts. 
 
-Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att omvärderingsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel, om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Välj valda juridiska personer att bokföra**. 
+Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att omvärderingsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Välj valda juridiska personer att bokföra**. 
 
 När processen för omräkning i utländsk valuta är klar skapas en post där du kan spåra historiken för respektive körning.  En separat post skapas för varje juridisk person och bokföringsskikt.
 
@@ -116,7 +115,6 @@ Följande redovisningspost skapas.
 Om du måste återföra omvärderingtransaktionen, välj knappen **Återför transaktion** på sidan **Omräkning i utländsk valuta**. En historisk ny post om omräkning i utländsk valuta skapas för att bibehålla den historiska redovisningsspårningen för när omvärdering genomfördes eller återfördes. 
 
 Du kan ångra resultatet för omvärderingen av datumordning, men du kanske även måste återföra en nyare omvärdering för att säkerställa korrekta saldon för varje omvärderade huvudkonto. Återföringarna kan ske oberoende av datumordning, detta eftersom det inte går att kontrollera vilka huvudkonton som omvärderas och frekvensen för när de omvärderas. En organisation kan exempelvis välja att omvärdera sina huvudsakliga kassakonton kvartalsvis, men alla andra huvudkonton månadsvis.
-
 
 
 

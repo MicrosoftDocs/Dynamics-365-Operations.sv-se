@@ -1,32 +1,31 @@
 ---
 title: Formler och formelversioner
-description: "Det här avsnittet innehåller information om formler och formelversioner. En formel definierar material, komponenter och resultat för en viss process i processtillverkning. Formler används för att planera och framställa produkter i processtillverkning."
+description: Det här avsnittet innehåller information om formler och formelversioner. En formel definierar material, komponenter och resultat för en viss process i processtillverkning. Formler används för att planera och framställa produkter i processtillverkning.
 author: cvocph
 manager: AnnBe
 ms.date: 09/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbffc298ff5d2442092f8f0c987b7e79a7934a84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4475695b1a00213ab7e3b5060fd38cc71883d2bd
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350123"
 ---
-
 # <a name="formulas-and-formula-versions"></a>Formler och formelversioner
 
 [!include [banner](../includes/banner.md)]
@@ -72,4 +71,3 @@ Funktionen Skalbar finns bara om samtliga formelns varukomponenter har angetts s
 
 ## <a name="use-step-consumption"></a>Använd stegförbrukning
 Stegförbrukning eliminerar kravet att ange en kvantitet för en ingrediens på fliken **Formelrad**. Stegförbrukning har istället konfigurerats att ha ett **Från serie**-värde och ett **Kvantitet**-värde. Informationen från den Stegförbrukning per serie-post som uppfyller kvantiteten i batch-ordern väljs. Stegförbrukningen är användbar när förbrukningstakten inte är linjär med avseende på batchorderns storlek, och ökar behovet endast när en viss kvantitetströskel uppnås. Du aktiverar funktionen för en ny formel i gruppen **Förbrukningsberäkning** och ändra formelinställningen för tillämpbar ingrediens från **Standard** till **Steg**. Du anger denna förbrukningsmetod på fliken **Inställningar** på sidan **Formelrad**.
-

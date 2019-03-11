@@ -1,13 +1,13 @@
---- 
+---
 title: " Skapa, beräkna och bokföra ett utdrag för en butik"
-description: "Den här proceduren går igenom de manuella stegen för att skapa, beräkna och bokföra ett utdrag för en butik."
+description: Den här proceduren går igenom de manuella stegen för att skapa, beräkna och bokföra ett utdrag för en butik.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 33ebb28196baa9ae944dbd124274b05cb587fea4
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354401"
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a> Skapa, beräkna och bokföra ett utdrag för en butik
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Den här proceduren går igenom de manuella stegen för att skapa, beräkna och bokföra ett utdrag för en butik. Det finns också batchjobb som kan konfigureras för samma uppgifter. Stegen för att konfigurera och att köra batchjobb finns i andra avsnitt. För att slutföra den här proceduren måste du ha transaktioner som slutfördes i kassan och sedan samlats in till Dynamics AX. I den här insamlingen används demonstrationsföretaget USRT. Den här proceduren kan referera till Microsoft Dynamics AX. Notera att Dynamics AX nu kallas Microsoft Dynamics 365 for Operations.
+Den här proceduren går igenom de manuella stegen för att skapa, beräkna och bokföra ett utdrag för en butik. Det finns också batchjobb som kan konfigureras för samma uppgifter. Stegen för att konfigurera och att köra batchjobb finns i andra avsnitt. För att slutföra den här proceduren måste du ha transaktioner som slutfördes i kassan och sedan samlats in till Dynamics AX. I den här insamlingen används demonstrationsföretaget USRT. Den här proceduren kan referera till Microsoft DynamicsAX. Notera att Dynamics AX nu kallas Microsoft Dynamics 365 for Operations.
 
 1. Alla arbetsytor > .. > Butiksekonomi.
 2. Klicka på Nytt utdrag.
@@ -47,5 +47,4 @@ Den här proceduren går igenom de manuella stegen för att skapa, beräkna och 
 10. Klicka på Stäng.
 11. Gå till Butik och handel > Kanaler > Butiksekonomi.
 12. Klicka på fliken Bokförda utdrag.
-
 

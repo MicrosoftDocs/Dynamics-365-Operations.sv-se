@@ -1,13 +1,13 @@
 ---
-title: "Ställa in SEPA Autogiromedgivande"
-description: "Ett SEPA-autogiro låter en fordringshavare ta ut medel från en kunds bankkonto, förutsatt att kunden har gett fordringshavaren en undertecknad fullmakt."
+title: Ställa in SEPA Autogiromedgivande
+description: Ett SEPA-autogiro låter en fordringshavare ta ut medel från en kunds bankkonto, förutsatt att kunden har gett fordringshavaren en undertecknad fullmakt.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 757f3f6e0c5443054d2d6bd21381d9f692e1b9a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 242d6d3d517ad5190b96ace36bd585a5769ae994
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334828"
 ---
-
 # <a name="set-up-sepa-direct-debit-mandate"></a>Ställa in SEPA Autogiromedgivande
 
 [!include [banner](../includes/banner.md)]
@@ -54,5 +53,4 @@ Ytterligare resurser
 [Översikt över autogiro](sepa-direct-debit-overview.md) 
 
 [Skapa ett autogiromedgivande för en kund](tasks/create-direct-debit-mandate-customer.md) 
-
 

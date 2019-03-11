@@ -1,13 +1,13 @@
 ---
-title: "Ställa in försändelse"
-description: "Det här avsnittet beskriver hur du konfigurerar inkommande försändelselageroperationer."
+title: Ställa in försändelse
+description: Det här avsnittet beskriver hur du konfigurerar inkommande försändelselageroperationer.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventJournalOwnershipChange, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 758ea8b658693910edeada3a4c27c34ae187b28c
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308723"
 ---
-
 # <a name="set-up-consignment"></a>Ställa in försändelse
 
 [!include [banner](../includes/banner.md)]
@@ -51,4 +50,3 @@ Journalen **Lagerägarskapsändring**används till att bokföra överföringen a
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverantörssamarbete i försändelseprocesser
 Om dina leverantörer använder leverantörsamarbetesgränssnittet, kan du använda det för att övervaka förbrukningen av lager på din site. Mer information finns i [Konfigurering av säkerhet för leverantörssamarbetesanvändare](../procurement/configure-security-vendor-portal-users.md).
-

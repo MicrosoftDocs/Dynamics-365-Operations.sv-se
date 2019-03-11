@@ -1,13 +1,13 @@
 ---
-title: "Skärmlayout för kassan (POS)"
-description: "Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail, kassamiljöer (POS)."
+title: Skärmlayout för kassan (POS)
+description: Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail kassamiljöer (POS)-uppgifter.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321902"
 ---
-
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skärmlayout för kassan (POS)
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail, kassamiljöer (POS).
+Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail kassamiljöer (POS)-uppgifter.
 
 Användargränssnittet för Retail POS kan konfigureras med en kombination av visuella profiler och skärmlayouter, tilldelade till butiker, kassor och/eller användare.
 
@@ -51,7 +50,7 @@ Visuella profiler tilldelas till kassor och de anger visuella element som är ka
 - **Beskrivning** - Du kan ange ett beskrivande namn som gör det lättare att identifiera korrekt profil för din situation.
 - **Tema** - Du kan välja mellan programtema Ljus eller Mörk. Temat påverkar teckensnitt och bakgrundsfärg färgerna i hela programmet.
 - **Accentfärg** - Accentfärgen används i hela kassan för att åtskilja eller framhäva vissa visuella element som rubriker, kommandoknappar eller hyperlänkar. Dessa element är vanligtvis åtgärdbara.
-- **Färgen på rubriken** – du kan konfigurera färgen på sidhuvudet för att tillgodose återförsäljarens varumärkeskrav. Den här funktionen finns bara i Microsoft Dynamics 365 for Retail version 1611.
+- **Färgen på rubriken** – du kan konfigurera färgen på sidhuvudet för att tillgodose återförsäljarens varumärkeskrav. Den här funktionen är endast i Microsoft Dynamics 365 for Retail version 1611.
 - **Inloggningsbakgrunder** - Du kan ange en bakgrundsbild för inloggningsskärmen. Bakgrundsbildfilens storlek bör hållas så liten som möjligt, eftersom lagring och inläsning av stora filer kan påverka programfunktioner och prestanda.
 - **Programmets bakgrund** - Du kan ange en bakgrundsbild som används istället för den fasta temafärgen i hela programmet. När det gäller inloggningsbakgrunder ska filstorleken hållas så liten som möjligt.
 
@@ -185,7 +184,7 @@ Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassav
     - **Anpassa tema** – som standard använder kassaknappar accentfärg från den visuella profilen. När du markerar kryssrutan **Använd anpassat tema** kan du ange ytterligare färger.
 
         > [!NOTE]
-        > Modern Retail POS och Cloud POS använder endast värdena **bakgrundsfärg** och **teckenfärg**.
+        > Retail Modern POS och Cloud POS använder endast värdena **bakgrundsfärg** och **teckenfärg**.
 
     - **Bild av knappen** – knappar kan innehålla bilder och ikoner. Välj bland de tillgängliga bilderna som angetts i **Retail \> kanalinställning \> kassainställning \> kassa \> bilder**.
 
@@ -194,4 +193,3 @@ Knappsatsdesignern låter dig konfigurera knappsatser som kan användas i kassav
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Installera layoutdesignern för Retail POS](install-pos-layout-designer.md)
-

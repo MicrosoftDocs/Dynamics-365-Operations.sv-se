@@ -1,13 +1,13 @@
 ---
 title: Betalningsmetoder
-description: "Varje betalningstyp som en återförsäljare godtar, måste konfigureras när systemet installeras. Det här avsnittet ger en beskrivning av betalningstyperna som du kan ställa in och processen för hur du ställer in dem."
+description: Varje betalningstyp som en återförsäljare godtar, måste konfigureras när systemet installeras. Det här avsnittet ger en beskrivning av betalningstyperna som du kan ställa in och processen för hur du ställer in dem.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1ba80e48c8b3b5ed94b9e03302788099a1d31909
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328986"
 ---
-
 # <a name="payment-methods"></a>Betalningsmetoder
 
 [!include [banner](includes/banner.md)]
 
 Varje betalningstyp som en återförsäljare godtar, måste konfigureras när systemet installeras. Det här avsnittet ger en beskrivning av betalningstyperna som du kan ställa in och processen för hur du ställer in dem.
 
-Återförsäljare kan acceptera olika typer av betalning i utbytet för produkter och tjänster som de säljer. Även om kontanter är den vanligaste betalningsformen kan också återförsäljare ta emot betalning i form av checkar, kort, verifikationer, osv. Varje betalningstyp som återförsäljaren godtar måste konfigureras i Dynamics 365 for Retail när systemet installeras. I listan nedan beskrivs varje betalningstyp som kan ställas in i Dynamics 365 for Retail:
+Återförsäljare kan acceptera olika typer av betalning i utbytet för produkter och tjänster som de säljer. Även om kontanter är den vanligaste betalningsformen kan också återförsäljare ta emot betalning i form av checkar, kort, verifikationer, osv. Varje betalningstyp som en återförsäljare godtar, måste konfigureras i Dynamics 365 for Retail när systemet installeras. I listan nedan beskrivs varje betalningstyp som kan ställas in i Dynamics 365 for Retail:
 
 - **Kontant** – Pengar i valutans fysiska form, som sedlar och mynt. Denna valuta kan antingen vara företagsvalutan eller butikens lokala valuta.
 - **Check** – Ett överlåtbart instrument som ger instruktioner om betalning av ett specifikt belopp i en specifik valuta och som är utställt på en specifik bank. En check är vanligtvis giltig utan tidsgräns eller i sex månader efter utfärdandet, om inte en annan giltighetsperiod anges. Denna period, varierar beroende på banken som checken ställs ut på. Det finns olika typer av checkar, som ordercheckar, kassacheckar, innehavarcheckar och korsade checkar. Du kan ställa in checkar som en betalningsmetod för varje butik. Checkar kan accepteras i den valuta som definieras på antingen företagsnivå eller butiksnivån. Du måste ställa in checkar som en betalningsmetod, innan du kan acceptera en check som betalning i en butik.
@@ -50,4 +49,3 @@ Om du vill ställa in betalsätten måste du göra följande.
 2. Skapa korttyper och kortnummer för hela organisationen. Om kreditkort eller betalkort tas emot måste du först skapa en betalningsmetod för kort, och sedan skapa korttyper och kortnummer för hela organisationen.
 3. Ställ in betalningsmetod för butiken. Associera betalningsmetoderna med varje butiker och ange sedan de butiksspecifika inställningarna för varje betalningsmetod.
 4. Ställ in kortbetalningsmetoder för butiker. Slutför kortinställningarna för alla kortbetalningsmetoder som butiken godtar.
-

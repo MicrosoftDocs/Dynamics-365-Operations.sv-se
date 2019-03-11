@@ -1,13 +1,13 @@
 ---
-title: "Lägga upp ett sortiment"
-description: "Denna artikeln beskriver vad ett sortiment är och förklarar hur du ställer in sortiment i Microsoft Dynamics 365 for Retail."
+title: Lägga upp ett sortiment
+description: Denna artikeln beskriver vad ett sortiment är och förklarar hur du ställer in sortiment i Microsoft Dynamics 365 for Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,15 +19,14 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: a9578a0784d4f4fbfca27ec4093a3f61d1068a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 91713a4492ad82520f7dde611c17a5ea168ed80d
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314979"
 ---
-
-# <a name="set-up-assortments"></a>Lägg upp sortiment
+# <a name="set-up-assortments"></a>Ställa in sortiment
 
 [!include [banner](includes/banner.md)]
 
@@ -56,4 +55,3 @@ När du har slutfört förberedelserna, kan du skapa ett sortiment och tilldela 
 2. Välj de butikskanalerna eller grupper med butikskanaler på hög nivå som sortimentet gäller för.
 3. Lägg till produktkategorier, enskilda produkter eller produktvarianter till sortimentet. Du kan inkludera alla produkter i en specifik kategori, eller så kan du utesluta valda produkter från en kategori som ingår i sortimentet.
 4. Publicera sortimentet. När du publicerar sortimentet kommer butikssortimentsschemaläggaren att köras automatiskt. Den här processen genererar listan med produkter. När den här processen slutförs blir produkterna tillgängliga för de butikskanaler som produktsortimentet tilldelas. Om ändringar görs i ett sortiment som har publicerats, eller till de butikskanalerna som sortimentet har tilldelats, måste sortimentet uppdateras. Om du vill uppdatera sortimentet när ändringar görs kan du köra en lämpligt sortimentplanerare som ett batchjobb.
-

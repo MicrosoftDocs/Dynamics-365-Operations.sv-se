@@ -1,13 +1,13 @@
 ---
 title: Organisationer och organisationshierarkier
-description: "En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget."
+description: En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f8afc37e8d69b06622176d4f6cfb3ff06a0ab54
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322247"
 ---
-
 # <a name="organizations-and-organizational-hierarchies"></a>Organisationer och organisationshierarkier
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ En organisation är en grupp personer som arbetar tillsammans för att utföra e
 
 ## <a name="organizations"></a>Organisationer
 
-I Microsoft Dynamics 365 for Finance and Operations kan du definiera följande typer av interna organisationer: juridiska personer, driftenheter och team.
+I Microsoft Dynamics 365 for Finance and Operations, kan du definiera följande typer av interna organisationer: juridiska personer, driftenheter och team.
 
 Alla interna organisationer är typer av enheten **Part**. Därför använder dessa organisationer adressboken för att lagra adress - och kontaktinformation. En part, som kan vara antingen en person eller en organisation, kan tillhöra en eller flera adressböcker.
 
@@ -48,7 +47,7 @@ Ett företag är en sorts juridisk person. I denna version av Microsoft Dynamics
 
 En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag. Personer i en driftenhet har en skyldighet att maximera användningen av knappa resurser, att förbättra processer och att redovisa deras resultat.
 
-Följande driftenheter ingår i Microsoft Dynamics 365 for Finance and Operations: kostnadsställen, affärsenheter, värdeströmmar, avdelningar och butikskanaler. I följande tabell finns mer information om varje typ av driftenhet.
+I Microsoft Dynamics 365 for Finance and Operations innehåller typerna av driftenheter kostnadsställen, affärsenheter, värdeströmmar, avdelningar och butikskanaler. I följande tabell finns mer information om varje typ av driftenhet.
 
 | Typ av driftenhet | Beskrivning | Syfte |
 |---------------------|-------------|---------|
@@ -69,4 +68,3 @@ Ställa in organisatoriska hierarkier för att visa och rapportera utifrån olik
 Varje hierarki tilldelas ett syfte i Microsoft Dynamics 365 for Finance and Operations. Syftet med en hierarki bestämmer vilka typer av organisationer som kan inkluderas i hierarkin. Syftet avgör också de programscenarier som en hierarki kan användas i.
 
 Organisationer i en hierarki kan dela parametrar, policyer och transaktioner. En organisation kan ärva eller åsidosätta parametrarna för dess överordnade organisation. Delade huvuddata, till exempel produkter och adressböcker, gäller däremot för hela organisationen och kan inte åsidosättas för enskilda organisationer. När du skapar organisationer och hierarkier krävs det noga planering. Mer information om hierarkidesignern finns i [Planera organisationshierarkin](plan-organizational-hierarchy.md).
-

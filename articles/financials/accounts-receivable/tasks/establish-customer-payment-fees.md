@@ -1,13 +1,13 @@
---- 
-title: "Upprätta avgifter för kundbetalning"
-description: "Skapa betalningsavgifter för kundbetalningar."
+---
+title: Upprätta avgifter för kundbetalning
+description: Skapa betalningsavgifter för kundbetalningar.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5acb202d46ef39376a01ca592f60926786d11186
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 659f4560747cea73c61a9b748a980946ca252bd6
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354838"
 ---
 # <a name="establish-customer-payment-fees"></a>Upprätta avgifter för kundbetalning
 
@@ -60,5 +60,4 @@ I den här uppgiften används demonstrationsföretaget USMF.
 18. Välj valuta för tillägget i avgiftvalutafältet.
     * Detta är den valuta som avgiften ska skapas i.  
 19. Klicka på Spara.
-
 

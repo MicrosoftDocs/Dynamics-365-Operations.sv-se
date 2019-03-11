@@ -1,13 +1,13 @@
 ---
 title: Lagerstyrning
-description: "Använd lagerstyrning för att övervaka och automatisera lagerställeprocesser."
+description: Använd lagerstyrning för att övervaka och automatisera lagerställeprocesser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7c9613070e077bced4b272b136985de5f4ddbdd0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: fc039b3c35c9ff8f40bf671e523104031c598171
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335265"
 ---
 # <a name="warehouse-management"></a>Lagerstyrning
 
 [!include [banner](../includes/banner.md)]
 
-Modulen för lagerhantering för Dynamics 365 for Finance and Operations gör att du kan hantera lagerprocesser inom tillverknings-, distributions- och detaljhandelsföretag. Denna modul har ett stort antal funktioner som stöder lagerlokalen på en optimal nivå och utan avbrott. Lagerhanteringen är helt integrerad med andra affärsprocesser i Finance and Operations, till exempel transport, tillverkning, kvalitetskontroll, inköp, överföringar, försäljning och returer.
+Lagerstyrningsmodulen för Dynamics 365 for Finance and Operations låter dig hantera lagerprocesser för tillverknings-, distributions- och detaljhandelsföretag. Denna modul har ett stort antal funktioner som stöder lagerlokalen på en optimal nivå och utan avbrott. Lagerhanteringen är helt integrerad med andra affärsprocesser i Finance and Operations, till exempel transport, tillverkning, kvalitetskontroll, inköp, överföringar, försäljning och returer.
 
 ## <a name="get-started"></a>Kom igång
 För att kunna arbeta med lagerhanteringen måste du konfigurera de allmänna lagerparametrarna, så att dessa stöder ditt företags affärsprocesser.
@@ -69,9 +69,8 @@ Du måste konfigurera komponenter för in- och utgående arbetsflöden för lage
 Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling.
 
 ### <a name="blogs"></a>Bloggar
-Synpunkter, nyheter och annan information som berör lagerhantering och andra lösningar finns i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog).
+Det finns åsikter, nyheter och annan information om lagerstyrning och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).
 
 
  
-
 

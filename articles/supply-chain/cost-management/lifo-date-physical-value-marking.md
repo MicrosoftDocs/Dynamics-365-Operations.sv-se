@@ -1,13 +1,13 @@
 ---
-title: "LIFO-datum med fysiskt värde och markering"
-description: "Sist in, först ut-datum (LIFO-datum) är en lagermodell baserat på LIFO-principen. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen. Genom att använda LIFO-datum, om det inte finns någon inleverans före utleveransen, kvittas utleveransen mot alla eventuella inleveranser som sker efter utleveransen. Flera utleveranser på samma datum kan kvittas i ordningen senaste utleverans - senaste inleverans."
+title: LIFO-datum med fysiskt värde och markering
+description: Sist in, först ut-datum (LIFO-datum) är en lagermodell baserat på LIFO-principen. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen. Genom att använda LIFO-datum, om det inte finns någon inleverans före utleveransen, kvittas utleveransen mot alla eventuella inleveranser som sker efter utleveransen. Flera utleveranser på samma datum kan kvittas i ordningen senaste utleverans - senaste inleverans.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3913801eb35faec858ef4b8e1e5056b755054218
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0b94d3f23c929c45a67894bd08706144c9226491
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311736"
 ---
-
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-datum med fysiskt värde och markering
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ I illustrationen visas effekten av lagermodellen LIFO-data på serien med transa
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
@@ -103,7 +102,7 @@ I illustrationen visas effekten av lagermodellen LIFO på serien med transaktion
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
@@ -149,14 +148,13 @@ I illustrationen visas effekten av lagermodellen LIFO på serien med transaktion
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
 - Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 - Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 - Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
-
 
 
 

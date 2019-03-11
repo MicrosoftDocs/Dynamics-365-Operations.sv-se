@@ -1,13 +1,13 @@
 ---
-title: "Analys av inköpsutgift – Power BI-innehåll"
-description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet Inköps- och utgiftsanalys. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet."
+title: Inköps- och utgiftsanalys för Power BI-innehåll
+description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet Inköps- och utgiftsanalys. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 author: FrankDahl
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchaseSpendAnalysisPowerBI
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313852"
 ---
-
-# <a name="purchase-spend-analysis-power-bi-content"></a>Analys av inköpsutgift – Power BI-innehåll
+# <a name="purchase-spend-analysis-power-bi-content"></a>Inköps- och utgiftsanalys för Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **Inköps- och utgiftsanalys**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i Power BI-innehållet **Inköps- och utgiftsanalys**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
 
@@ -41,11 +40,11 @@ Power BI-innehållet **Inköps- och utgiftsanalys** har utvecklats för att ink�
 
 Innehållet använder inköpstransaktionsdata och ger både en sammanfattning av de företagsomspännande inköpsuppgifterna och en fördelning av inköpsutgifter efter leverantör och produkt. Rapporter visar ändringar i inköpsutgifter över tiden. Rapporterna kan därför användas för att uppmärksamma chefer på positiva och negativa utgiftstrender för enskilda leverantörer och produkter. Diagram visar dessutom inköpsutgifter för olika anskaffningskategorier och leverantörsgrupper. Kategorichefer och regionala chefer kan använda diagrammen för att identifiera ändringar i utgiftsbeteende.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehållet **Analys av inköpsutgift** visas på sidan **Analys av inköp och utgifter** (**Anskaffning och källa** \> **Förfrågningar och rapporter** \> **Analys av köpprestanda** \> **Analys av inköp och utgifter**).
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+**Analys av inköpsutgift** Power BI-innehåll visas på sidan **Analys av inköp och utgifter** (**Anskaffning och källa** \> **Förfrågningar och rapporter** \> **Analys av köpprestanda** \> **Analys av inköp och utgifter**).
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
-Power BI-innehållet **Inköps- och utgiftsanalys** innehåller en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över visualiseringarna.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mätvärden som ingår i Power BI-innehållet
+Power BI-innehåll för **analys av inköpsutgift** innehåller en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över visualiseringarna.
 
 <table>
 <thead>
@@ -129,9 +128,9 @@ Power BI-innehållet **Inköps- och utgiftsanalys** innehåller en rapport som b
 \* Inköp detta och förra året och tillväxt per anskaffningskategori.
 
 ## <a name="data-model-and-entities"></a>Datamodell och enheter
-Följande data används för att fylla i rapportsidorna i Power-Bi-innehållet **Inköps- och utgiftsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna i Power BI-innehållet **Inköps- och utgiftsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
-De sammanlagda måtten i det här innehållet är del av de sammanlagda mått som fanns i inköpskuben i Microsoft Dynamics AX 2012 och Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i Enhetslagring måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i Enhetslagring i [Översikt över Power BI-integrering med Enhetslagring](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått är tillgängliga direkt från fakturaradenheten och används som grund för innehållet.
+De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i inköpskuben i Microsoft Dynamics AX 2012 och Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i Enhetslagring måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i Enhetslagring i [Översikt över Power BI-integrering med Enhetslagring](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått är tillgängliga direkt från fakturaradenheten och används som grund för innehållet.
 
 | Enhet        | Sammanlagda huvudmått | Datakälla                                 | Fält              | beskrivning                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|
@@ -156,4 +155,3 @@ Följande huvuddimensioner i innehållet används som filter för att dela upp d
 | Datum                  | Datum, Förskjutning för år                                    |
 
 Som standard visar innehållet data för det aktuella kalenderåret. Du kan dock ändra filtret i datumavsnittet i rapportfilteravsnittet. Du kan också ändra filtret för företaget.
-

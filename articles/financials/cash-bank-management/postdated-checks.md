@@ -1,13 +1,13 @@
 ---
 title: Efterdaterade checkar
-description: "Den här artikeln innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 for Finance and Operations. Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum. Därför kan checken inte lösas in förrän på angivet datum."
+description: Det här avsnittet innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 for Finance and Operations. Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum. Därför kan checken inte lösas in förrän på angivet datum.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendPostDatedChecks, CustPostDatedChecks
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ea1cd9926f3ea55d82f9030372a15b3545ed824
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362934"
 ---
-
 # <a name="postdated-checks"></a>Efterdaterade checkar
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 for Finance and Operations. Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum. Därför kan checken inte lösas in förrän på angivet datum.
+Det här avsnittet innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 for Finance and Operations. Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum. Därför kan checken inte lösas in förrän på angivet datum.
 
-Microsoft Dynamics 365 for Finance and Operations stöder den fullständiga cykeln för efterdaterade checkar i både Leverantörsreskontra och Kundreskontra, enligt följande tabell.
+Microsoft Dynamics 365 for Finance and Operations stöder den fullständiga cykeln för efterdaterade checkar in både Leverantörsreskontra och Kundreskontra, enligt följande tabell.
 <table>
 <colgroup>
 <col width="50%" />
@@ -97,7 +96,6 @@ Mer information finns i följande avsnitt:
 [Registrera och bokför en efterdaterad check för en leverantör](tasks/register-post-postdated-check-vendor.md) 
 
 [Kvitta en efterdaterad check för en leverantör](tasks/settle-postdated-check-vendor.md)
-
 
 
 

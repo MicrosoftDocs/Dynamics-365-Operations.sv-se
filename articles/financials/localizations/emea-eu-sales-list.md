@@ -1,13 +1,13 @@
 ---
-title: "Rapportering av EU-säljlista"
-description: "Det här avsnittet innehåller information om rapportering av försäljningslista för Europeiska unionen (EU)."
+title: Rapportering av EU-säljlista
+description: Det här avsnittet innehåller information om rapportering av försäljningslista för Europeiska unionen (EU).
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2c4fe1c93693cee9164f2c22ad71a29abd6473d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e1eff86902170401e593019ea555d9c2a4c11c04
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371849"
 ---
-
 # <a name="eu-sales-list-reporting"></a>EU-säljlistrapportering
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,7 @@ Genom att använda ESL, skattemyndigheterna i varje EU-medlemsstat kan kontrolle
 Du kan utföra följande uppgifter för försäljning i EU listan rapportering:
 
 -   Samla information om gemenskapsintern handel. En gemenskapsintern handel transaktion kan vara en faktura, fri text faktura, fakturera projekt, eller säljaren fakturan. En transaktion är identifierade som baseras på det land/den region av motparten. Handeln inom gemenskapen transaktioner av olika slag samlas in i lista över försäljning inom EU tabell, där de är representerade i den gemensamma blankett. Varje post i ESL tabellen representerar en enda transaktion och består av moms-id för en motpart och det sammanlagda värdet av de varor och tjänster som levereras.
--   (Valfritt) Förhandsgranska en **lista över försäljning inom EU** . Du kan förhandsgranska och godkänn **försäljningslista för EU-** rapport för en given period i form av en Microsoft Excel arbetsboken.
+-   (Valfritt) Förhandsgranska en **lista över försäljning inom EU** . Du kan förhandsgranska och godkänn rapporten **försäljningslista för EU** för en given period i form av en Microsoft Excel arbetsbok.
 -   Generera **försäljning i EU-lista** . **EU:s lista över försäljning** rapport genereras i form av en elektronisk fil av ett särskilt format som är specifika för varje medlemsstat i EU. I allmänhet är en **lista över försäljning inom EU** rapport innehåller grundläggande information om rapportering och värdena för leveranser av varor och tjänster. Informationen grupperas av land och momsnummer för en motpart.
 -   Stäng försäljningslista för EU rapportperioden. Efter den **lista över försäljning inom EU** rapport genereras och skickas till myndigheterna, kan du markera de poster i ESL tabell som **stängt**. Dessa transaktioner inte ingår i ytterligare rapporter.
 
@@ -122,7 +121,7 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 <li><strong>Land/regionparametrar</strong> fliken: Identifiera EU:s medlemsstater. För varje medlemsstat i EU, skapa en post på sidan och ange följande information:
 <ul>
 <li><strong>Land/region</strong> – Välj land/region.</li>
-<li><strong>Land/region ange</strong> – Om <strong>land/region</strong> värde är det land/den region där företaget är registrerat i, välj <strong>inhemska</strong>. Om <strong>land/region</strong> är en EU-medlemsstat än det land/den region där företaget är registrerat i, välj <strong>EU</strong>. Om <strong>land/region</strong> värde är inte en EU-medlemsstat, välj <strong>tredje land/region</strong>.</li>
+<li><strong>Land/region ange</strong> – Om <strong>land/region</strong> värde är det land/den region där företaget är registrerat i, välj <strong>inhemska</strong>. Om <strong>land/region</strong> är en EU-medlemsstat än det land/den region där företaget är registrerat i, välj <strong>EU</strong>. Om värdet <strong>Land/region</strong> inte är en EU-medlemsstat, välj <strong>Tredje land/region</strong>.</li>
 </ul></li>
 <li><strong>Nummersekvenser</strong> fliken: På raden där <strong>referensvärdet</strong> är <strong>EU-försäljningslista</strong>, välj en nummersekvenskod.</li>
 </ul></td>
@@ -158,7 +157,6 @@ Du kan generera en **lista över försäljning inom EU** rapport genom att anvä
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Stängning av försäljningslista för EU rapporteringsperioden
 
 När du har slutfört rapporteringen för en specifik period (exempelvis när skattemyndigheten har godtagit **EU-försäljningslista** rapporten), kan du markera ESL poster som ingår i rapporten för perioden genom inställning av **rapporteringsstatusvärdet** som **stängd**. För att ställa denna status, använd **markera som avslutad**funktion på **EU-lista över försäljning**sida. Om du återställer periodslutet kan du markera ESL poster genom att ställa in **rapporteringsstatus**till **Inkluderad**. Dessa poster kan sedan ingå i en **lista över försäljning inom EU** rapport igen. För att ställa denna status, använd **markera som** **ingår**i **EU:s lista över försäljning** sida.
-
 
 
 

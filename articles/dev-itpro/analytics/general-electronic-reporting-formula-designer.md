@@ -1,13 +1,13 @@
 ---
 title: Formeldesigner i elektronisk rapportering (ER)
-description: "Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER)."
+description: Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331286"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapport
 
 ER stöder formeldesignern. Därför kan du vid designtillfället konfigurera uttryck som kan användas för följande uppgifter under körning:
 
-- Omvandla data från en Microsoft Dynamics 365 for Finance and Operations-databas som ska användas i en ER-datamodell utformad som en datakälla för ER- format. (Till exempel kan dessa omvandlingar omfatta konvertering, filtrering och gruppering av datatyp.)
+- Omvandla data som tas emot från en Microsoft Dynamics 365 for Finance and Operations-databas och som anges i en ER-datamodell som fungerar som datakälla för ER-format. (Till exempel kan dessa omvandlingar omfatta konvertering, filtrering och gruppering av datatyp.)
 - Formatera data som ska skickas till ett skapande elektroniskt dokument i enlighet med layout och villkor för ett specifikt ER-format. (Till exempel kan formateringen göras i enlighet med det begärda språket eller kulturen, eller i enlighet med kodning).
 - Kontrollera processen för generering av elektroniska dokument. (Till exempel kan uttryck aktivera eller inaktivera utdata från specifika element av formatet, beroende på bearbetade data. De kan också avbryta processen att skapa dokument eller skicka meddelanden till användare.)
 
@@ -626,7 +625,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <li>Finance and Operations-etikett SYS18389, som har följande text:
 <ul>
 <li><strong>För språket EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>För språket SV-SE:</strong> &quot;Gäldenären "%1" spärras för %2.&quot;</li>
+<li><strong>För språket DE:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Här följer formeln som kan utformas:</p>
@@ -692,7 +691,7 @@ När du har definierat dessa datakällor kan du använda ett uttryck såsom <str
 <tr>
 <td>JSONVALUE (id, sökväg)</td>
 <td>Tolka data i JSON-format (JavaScript Object Notation) som används av den angivna sökvägen för att ta fram ett skalärvärde som baseras på angivet-ID.</td>
-<td>Datakällan <strong>$JsonField</strong> innehåller följande data i JSON-format: <strong>{&quot;nummer&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. För den här datakällan returnerar </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> värdet <strong>7.3.1234.1</strong> av datatypen <strong>sträng</strong>.</td>
+<td>Datakällan <strong>$JsonField</strong> innehåller följande data i JSON-format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. För den här datakällan returnerar </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> värdet <strong>7.3.1234.1</strong> av datatypen <strong>sträng</strong>.</td>
 </tr>
 </tbody>
 </table>
@@ -731,7 +730,7 @@ När du har definierat dessa datakällor kan du använda ett uttryck såsom <str
 | FA\_BALANCE (Anläggningstillgångskod, värdemodellkod, rapporteringsår, rapporteringsdatum) | Returnera den förberedda databehållaren med anläggningstillgångssaldo. Rapporteringsåret måste anges som ett värde för Finance and Operations-uppräkningen **AssetYear**. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returnerar den förberedda databehållaren för belopp tillhörande anläggningstillgången **"COMP-000001"** med värdemodellen **"Current"** på aktuellt Finance and Operations-sessionsdatum. |
 | TABLENAME2ID (string) | Returnera en heltalsrepresentation av ett register-ID för ett givet registernamn. | **TABLENAME2ID ("Intrastat")** returnerar **1510**. |
 | ISVALIDCHARACTERISO7064 (string) | Returnerar booleskt värde **TRUE** när en specificerad sträng representerar ett giltigt internationellt bankkontonummer (IBAN). Annars returnera det booleska värdet **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerar **SANT**. **ISVALIDCHARACTERISO7064 ("AT61")** returnerar **FALSKT**. |
-| NUMSEQVALUE (nummerseriekod, område, områdes-ID) | Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseriekod, område och områdes-ID. Område måste anges som ett värde för uppräkningen **ERExpressionNumberSequenceområdes-IDType** (**delad**, **juridisk person** eller **företag**). För området **delad**, ange en tom sträng som områdes-ID. För området **företag** och **juridisk person**, ange företagskoden som områdes-ID. För området **företag** och **juridisk person**, om du anger en tom sträng som områdes-ID, används aktuella företagskoden. | Du definierar följande datakällor i din modellmappning:<ul><li>**enumScope** (typen **Dynamics 365 for Operations-uppräkning**), som refererar till uppräkningen **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typen **beräknat fält**), som innehåller uttrycket **NUMSEQVALUE (”Gene\_1”, enumScope.Company, ””)**</li></ul>När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien **Gen\_1** som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under. |
+| NUMSEQVALUE (nummerseriekod, område, områdes-ID) | Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseriekod, område och områdes-ID. Område måste anges som ett värde för uppräkningen **ERExpressionNumberSequenceområdes-IDType** (**delad**, **juridisk person** eller **företag**). För området **delad**, ange en tom sträng som områdes-ID. För området **företag** och **juridisk person**, ange företagskoden som områdes-ID. För området **företag** och **juridisk person**, om du anger en tom sträng som områdes-ID, används aktuella företagskoden. | Du definierar följande datakällor i din modellmappning:<ul><li>**enumScope** (typen **Dynamics 365 for Operations-uppräkning**) som hänvisar till uppräkningen **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typen **beräknat fält**), som innehåller uttrycket **NUMSEQVALUE (”Gene\_1”, enumScope.Company, ””)**</li></ul>När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien **Gen\_1** som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under. |
 | NUMSEQVALUE (nummerseriekod) | Returnerar det nya genererade värdet för en nummerserie, baserat på den angivna nummerserien, området **företag** och koden för det företag som tillhandahåller kontexten som ER-formatet kör under (som områdes-ID). | Du kan definiera följande datakälla i din modellmappning: **NumSeq** (**beräknat fält**-typ). Datakällan innehåller uttrycket **NUMSEQVALUE ("Gene\_1")**. När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien **Gen\_1** som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under. |
 | NUMSEQVALUE (nummerseriens post-ID) | Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseries post-ID. | Du definierar följande datakällor i din modellmappning:<ul><li>**LedgerParms** (**tabell** typ), som refererar till tabellen LedgerParameters</li><li>**NumSeq** (typen **beräknat fält**), som innehåller uttrycket **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien som har konfigurerats i Redovisningsparametrar för det företag som tillhandahåller den kontext som ER-formatet körs under. Den här nummerserien identifierar unikt journaler och fungerar som ett batchnummer som kopplar ihop transaktionerna. |
 
@@ -743,4 +742,3 @@ ER stöder utökning av listfunktioner som används i ER-uttryck. Vissa tekniska
 
 - [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 - [Utöka listan över elektronisk rapportering (ER)](general-electronic-reporting-formulas-list-extension.md)
-

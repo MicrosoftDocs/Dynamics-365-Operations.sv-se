@@ -1,27 +1,27 @@
---- 
-title: "Kontrollera lagertillgängligheten"
-description: "Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerbehållning för ett visst artikelnummer."
+---
+title: Kontrollera lagertillgängligheten
+description: Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerbehållning för ett visst artikelnummer.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand
 audience: Application User
-ms.reviewer: 
+ms.reviewer: ''
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 26a8f51eda1f4249862a23fa0103b7a144d974a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 62338fe11c30781f264e626fad835a2ba9dca837
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338002"
 ---
 # <a name="check-the-availability-of-stock"></a>Kontrollera lagertillgängligheten
 
@@ -67,5 +67,4 @@ Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerb
 4. Klicka på Visa dimensioner.
 5. Klicka på OK.
 6. Stäng sidan.
-
 

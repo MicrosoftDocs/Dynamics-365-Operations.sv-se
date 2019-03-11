@@ -1,28 +1,27 @@
 ---
-title: "Kundbetalningsinsikter (förhandsgranskning)"
-description: "Det här avsnittet beskriver hur insikter om kundbetalningar kan hjälpa till att förutsäga när en faktura ska betalas och hjälpa organisationer att optimera strategier som förbättrar sannolikheten att få betalt i tid."
+title: Kundbetalningsinsikter (förhandsgranskning)
+description: Det här avsnittet beskriver hur insikter om kundbetalningar kan hjälpa till att förutsäga när en faktura ska betalas och hjälpa organisationer att optimera strategier som förbättrar sannolikheten att få betalt i tid.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 07/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: 
+ms.search.scope: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-04-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 9e722db6302d7ef51c01601cde245d4f4a333eba
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344672"
 ---
-
 # <a name="customer-payment-insights-preview"></a>Kundbetalningsinsikter (förhandsgranskning)
 
 [!include[banner](../includes/banner.md)]
@@ -77,5 +76,4 @@ Om du är intresserad av att testa insikter om kundbetalningar (förhandsgranskn
 
 ## <a name="privacy-statement"></a>Sekretessmeddelande
 
-Förhandsgranskning lagrar kunddata i USA. Förhandsgranskningar (1) kan dessutom använda mindre sekretess- och säkerhetsfunktioner än Dynamics 365 for Finance and Operations, de (2) ingår inte i servicenivåavtalet för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterföljande krav, samt (4) har begränsad support.
-
+Förhandsgranskning lagrar kunddata i USA. Förhandsgranskningar (1) kan dessutom använda mindre sekretess- och säkerhetsfunktioner än Dynamics 365 for Finance and Operations de (2) ingår inte i servicenivåavtalet för den här tjänsten, (3) bör inte användas för behandling av personuppgifter eller andra uppgifter som omfattas av lagar och andra efterföljande krav, samt (4) har begränsad support.

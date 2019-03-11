@@ -1,37 +1,36 @@
 ---
 title: Attribut och attributgrupper
-description: "Det här avsnittet beskriver hur du använder attribut för att tillhandahålla ett sätt att beskriva en produkt och dess egenskaper med hjälp av anpassade fält."
+description: Det här avsnittet beskriver hur du använder attribut för att tillhandahålla ett sätt att beskriva en produkt och dess egenskaper med hjälp av anpassade fält.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326249"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>Attribut och attributgrupper
 
 [!include [banner](includes/banner.md)]
 
-*Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). I Microsoft Dynamics 365 for Finance and Operations kan attribut förknippas med olika Retailsenheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
+*Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). I Microsoft Dynamics 365 for Finance and Operations, attribut som kan förknippas med olika retail enheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
 
 En normal TV-produkt kan till exempel ha följande attribut.
 
@@ -104,7 +103,7 @@ Nedan följer de återstående alternativen för attributmetadata på sidan **At
 
 De här alternativen var ursprungligen avsedda till att förbättra sökfunktionen för onlinebutiken. Även om Finance and Operations inte inkluderar skyltfönster online, inkluderar den eCommerce Publishing Software Development Kit (SDK). Kunderna kan använda denna SDK för att lägga in produkter i ett valfritt sökindex. Även om produktdata importeras bör kunder ändå kunna skilja mellan sökbar data, data som kan efterfrågas och så vidare. På så sätt kan de skapa ett optimalt index för att se till att de bara indexerar attribut som *enligt deras mening* bör indexeras.
 
-Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint 2013 Server](https://technet.microsoft.com/library/jj219669.aspx).
+Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Filterinställningar för attribut
 
@@ -257,4 +256,3 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 
     > [!NOTE]
     > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
-

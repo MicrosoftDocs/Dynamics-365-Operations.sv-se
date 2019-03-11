@@ -1,13 +1,13 @@
 ---
 title: Generera en statistisk baslinjeprognos
-description: "Den här artikeln innehåller information om parametrar och filter som används i beräkningen av behovsprognoser."
+description: Den här artikeln innehåller information om parametrar och filter som används i beräkningen av behovsprognoser.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326433"
 ---
-
 # <a name="generate-a-statistical-baseline-forecast"></a>Generera en statistisk baslinjeprognos
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ När prognosen är inställd på att **kopiera över historiska behov**, slutet 
 
 För att undvika förvirring i produktionsplaner, ett visst antal prognos kostnadsslag kan frysas. Numret anges i **frys tidsgräns** . Om det **justerade behovet prognos** sida, celler för fryst skopor är avaktiverad, för att ge en visuell indikation på att dessa värden bör inte ändras. 
 
-Startdatum för baslinjen efterfrågan behöver inte vara dagens datum eller ett datum i framtiden. Om du vill ställa in ett annat startdatum, använd den **ursprungliga prognosen startdatum – från fältet datum** . Till exempel, i juni, användare kan generera en prognos för nästa år. Eftersom prognosen hinkar mellan slutet av historisk efterfrågan och start av baslinjen saknas förutsägelser kanske inte exakt. Om du använder tjänsten för efterfrågeprognosticering i Microsoft Dynamics 365 for Finance and Operations finns det fyra sätt för dig att fylla i de luckor som saknas. Du kan välja den metod som du vill använda genom att ange parametern MISSING\_VALUE\_SUBSTITUTION på sidan **Parametrar för efterfrågeprognosticering**. 
+Startdatum för baslinjen efterfrågan behöver inte vara dagens datum eller ett datum i framtiden. Om du vill ställa in ett annat startdatum, använd den **ursprungliga prognosen startdatum – från fältet datum** . Till exempel, i juni, användare kan generera en prognos för nästa år. Eftersom prognosen hinkar mellan slutet av historisk efterfrågan och start av baslinjen saknas förutsägelser kanske inte exakt. Om du använder tjänsten Microsoft Dynamics 365 for Finance and Operations behovsprognoser finns det fyra sätt som du kan fylla i de felande luckor. Du kan välja den metod som du vill använda genom att ange parametern MISSING\_VALUE\_SUBSTITUTION på sidan **Parametrar för efterfrågeprognosticering**. 
 
 Värdet i fältet **Startdatum för statistisk baslinje prognos** - **Startdatum** måste vara i början på prognosgruppen, till exempel (i USA) en söndag om prognosgruppen är veckan. Systemet justerar automatiskt fältet **Startdatum för baslinjeprognos** - **Startdatum** så att detta matchar början på en prognosgrupp. 
 
@@ -72,7 +71,6 @@ Om prognosen inte skapas för en stor grupp objekt, utan (till exempel) för en 
 [Gör manuella justeringar till den ursprungliga prognosen](manual-adjustments-baseline-forecast.md)
 
 [Auktorisering av den justerade prognosen](authorize-adjusted-forecast.md)
-
 
 
 

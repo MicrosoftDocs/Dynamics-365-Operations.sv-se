@@ -1,13 +1,13 @@
---- 
-title: "Definiera disponeringsregler för artiklar"
-description: "Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF."
+---
+title: Definiera disponeringsregler för artiklar
+description: Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 02aa3b2b7924cdf6317225bfce23f182aa390b8c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 14f56c30753da9458d66a46da8935305619fd0b8
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320637"
 ---
 # <a name="define-coverage-rules-for-items"></a>Definiera disponeringsregler för artiklar
 
@@ -108,5 +108,4 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
 10. Markera rutan i rubriken för Inköp.
 11. Ange "5" i fältet Inköpstid.
 12. Klicka på Spara.
-
 

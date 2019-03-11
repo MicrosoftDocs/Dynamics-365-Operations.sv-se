@@ -1,32 +1,31 @@
 ---
-title: "Skapa regler för Optimization advisor"
-description: "Det här avsnittet beskriver hur du lägger till nya regler Optimization advisor."
+title: Skapa regler för Optimization advisor
+description: Det här avsnittet beskriver hur du lägger till nya regler Optimization advisor.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: ca73120a5a0da4dc348c2d16dca8e7654876af5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: a18fac31b5acb7d2a1ec40203122d4eb9d94a439
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354171"
 ---
-
 # <a name="create-rules-for-optimization-advisor"></a>Skapa regler för Optimization advisor
 
 [!include [banner](../includes/banner.md)]
@@ -103,11 +102,11 @@ Två ytterligare metoder som måste implementeras är **opportunityTitle** och *
 
 Den rubrik som returneras av **opportunityTitle** visas i kolumnen **Optimeringsmöjlighet** i arbetsytan **Optimerings-advisor**. Den visas också som rubrik i det sidofönster som visar mer information om affärsmöjligheten. Enligt praxis dekoreras den här metoden med attributet **DiagnosticRuleSubscription** som har följande argument: 
 
-* **Diagnostic area** – en uppräkning av typen **DiagnosticArea** som beskriver vilket tillämpningsområde regeln tillhör, t ex **DiagnosticArea::SCM**. 
+* **Diagnosområde** – en uppräkning av typen **DiagnosticArea** som beskriver vilket tillämpningsområde regeln tillhör t.ex. **DiagnosticArea::SCM**. 
 
 * **Regelnamn** – en sträng med regelnamn. Namnet visas i kolumnen **Regelnamn** i formuläret **Diagnostikregel – validering** (**DiagnosticsValidationRuleMaintain**). 
 
-* **Körningsfrekvens** – en uppräkning av typen **DiagnosticRunFrequency** som beskriver hur ofta regeln ska köras, t ex **DiagnosticRunFrequency::Daily**. 
+* **Körningsfrekvens** – en uppräkning av typen **DiagnosticRunFrequency** som beskriver hur ofta regeln ska köras **DiagnosticRunFrequency::Daily**. 
 
 * **Regelbeskrivning** – en sträng med en mer detaljerad beskrivning av regeln. Namnet visas i kolumnen **Regelbeskrivning** i formuläret **Diagnostikregel – validering** (**DiagnosticsValidationRuleMaintain**). 
 
@@ -255,5 +254,4 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-Om du vill veta mer kan du titta på den korta YouTube-videon: [Optimerings -advisor i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-
+Mer information, se den korta YouTube-video: [klassificering av optimering i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

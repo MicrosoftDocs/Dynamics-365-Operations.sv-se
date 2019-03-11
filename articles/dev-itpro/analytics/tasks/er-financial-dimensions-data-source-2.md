@@ -1,13 +1,13 @@
---- 
+---
 title: "\"ER Använd ekonomiska dimensioner som en datakälla (Del 2 - Modellmappning)\""
-description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter."
+description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 92efd6a0b36471286c292a80542b81cd14a8eff3
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319602"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2-model-mapping"></a>ER Använd ekonomiska dimensioner som en datakälla (Del 2: Modellmappning)
 
@@ -43,7 +43,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 8. Ange "Dimensions data mapping" i beskrivningsfältet.
 9. Klicka på Spara.
 10. Klicka på Designer.
-11. Välj Dynamics 365 for Operations\Table i trädet.
+11. Välj "Dynamics 365 for Operations\Table" i trädet.
 12. Klicka på Lägg till rot.
 13. Skriv "Företag" i fältet Namn.
 14. Skriv "CompanyInfo" i fältet Tabell.
@@ -59,7 +59,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 21. Välj Yes i fältet Ask for main account.
     * Ange "Ask for main account" som Yes om du vill låta användare välja huvudkontot som en del i listan över dimensioner.   Om No kommer huvudkontot inte att inkluderas i listan över dimensioner, och alternativet "Is main account mandatory" aktiveras. Om ”Is main account mandatory" anges som Yes, inkludera då huvudkontot i dimensionslistan oavsett användarens urval.  
 22. Klicka på OK.
-23. Välj Dynamics 365 for Dynamics 365 for Operations\Table records i trädet.
+23. Välj "Dynamics 365 for Operations\Table records" i trädet.
 24. Klicka på Lägg till rot.
 25. Välj "LedgerJournal" i namnfältet.
 26. Välj Ja i fältet Fråga efter fråga.
@@ -143,5 +143,4 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 3. Klicka på Ändra status.
 4. Klicka på Slutför.
 5. Klicka på OK.
-
 

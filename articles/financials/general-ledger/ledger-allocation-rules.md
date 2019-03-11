@@ -1,13 +1,13 @@
 ---
-title: "Allokeringsregler för redovisning"
-description: "Den här artikeln innehåller information om allokeringsregler för redovisning. Den beskriver de olika komponenterna för dessa allokeringsregler och allokeringsmetoderna som kan användas för dem."
+title: Allokeringsregler för redovisning
+description: Den här artikeln innehåller information om allokeringsregler för redovisning. Den beskriver de olika komponenterna för dessa allokeringsregler och allokeringsmetoderna som kan användas för dem.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: abbeb1bb4481139dff902916362a479f94fb96e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 63562cde3f2813fdcfc9df7ccbfc623aa2fbe9b1
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365740"
 ---
-
 # <a name="ledger-allocation-rules"></a>Allokeringsregler för redovisning
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ En allokeringsregel har fyra huvudsakliga komponenter – allmän, källa, desti
 -   **Destination** – Denna komponent anger hur resultatet från allokeringsberäkningen ska fördelas och bokföras. Till exempel kan det finnas en destinationsrad för varje avdelning.
 -   **Motboka** Denna komponent definierar hur huvudkonton och dimensioner ska bestämmas för motbokningsposter som överensstämmer med posterna. användardefinierade alternativ används vanligtvis i stället för de konton och dimensioner som baseras på källan. När **Datakälla** är inställd på **Fast värde**, kan inte **Källa** användas som ett alternativ.
 -   **Basallokeringsregler för redovisning** – Dessa regler använder sin egen källafiltervillkor som avgör vilka redovisningssaldon som ska användas för allokering (exempelvis intäkt per avdelning.) Varje allokeringsbasregel kan användas för många allokeringsregler.
-
 
 
 

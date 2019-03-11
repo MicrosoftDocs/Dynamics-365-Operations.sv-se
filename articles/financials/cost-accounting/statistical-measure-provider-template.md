@@ -1,32 +1,31 @@
 ---
-title: "Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar"
-description: "Det här avsnittet innehåller information om statistikdimensionsmedlemmar och providermallar för statistisk mätning. Statistikdimensionsmedlemmar kan användas som en fördelningsbas i policyerna för bland annat kostnadsfördelning och kostnadsallokering. De kan också användas för att rapportera icke-monetär kostnadsförbrukning."
+title: Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar
+description: Det här avsnittet innehåller information om statistikdimensionsmedlemmar och providermallar för statistisk mätning. Statistikdimensionsmedlemmar kan användas som en fördelningsbas i policyerna för bland annat kostnadsfördelning och kostnadsallokering. De kan också användas för att rapportera icke-monetär kostnadsförbrukning.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: cc9170f10fe2be0446b1c974a50dbdf1cb5fe236
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 8c74c47a5e0ca72fc4509786b091a70b5e292b54
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360312"
 ---
-
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar
 
 [!include [banner](../includes/banner.md)]
@@ -73,7 +72,7 @@ Här följer några exempel på vanliga statistiska dimensionsmedlemmar.
 
 ## <a name="statistical-measure-provider-template"></a>Providermall för statistisk mätning
 
-Statistiska mätningar kan ha sitt ursprung i många typer av källor. Microsoft Dynamics 365 for Finance and Operations är en stor källa för att extrahera statistiska mätningar från. Du kan använda en providermall för statistisk mätning för att enkelt konfigurera de statistiska mätningar du vill extrahera.
+Statistiska mätningar kan ha sitt ursprung i många typer av källor. Microsoft Dynamics 365 for Finance and Operations är en bra källa att extrahera statistikändamål från. Du kan använda en providermall för statistisk mätning för att enkelt konfigurera de statistiska mätningar du vill extrahera.
 
 Definitionen av en providermall för statistisk mätning kan återanvändas i flera statistiska dimensionsmedlemmar.
 
@@ -132,13 +131,13 @@ Innan du kan hämta statistiska mätningar till kostnadsredovisningen måste du 
 > [!NOTE]
 > I det här exemplet skapar vi en relation för en **Faktisk version**.
 
-Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du datakopplingen **Dynamics 365 for Finance and Operations – statistiska mätningar**, eftersom vi vill hämta data från Finance and Operations.
+Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du **Dynamics 365 for Finance and Operations – statistiska mätningar** eftersom vi vill hämta data från Finance and Operations.
 
 **Datakälla**
 
 | Namn        | Datakoppling                                                                     | Statistikdimensionsmedlem |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Heltidsanställda D365FO | Dynamics 365 for Finance and Operations – Statistiska åtgärder | Heltidsanställda                         |
+| Heltidsanställda D365FO | Dynamics 365 for Finance and Operations – Statistiska mätningar | Heltidsanställda                         |
 
 **Dataproviderkonfiguration**
 
@@ -220,13 +219,13 @@ Innan du kan hämta statistiska mätningar till kostnadsredovisningen måste du 
 > [!NOTE]
 > I det här exemplet skapar vi en relation för en **Faktisk version**.
 
-Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du datakopplingen **Dynamics 365 for Finance and Operations – statistiska mätningar**, eftersom vi vill hämta data från Finance and Operations.
+Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du **Dynamics 365 for Finance and Operations – statistiska mätningar** eftersom vi vill hämta data från Finance and Operations.
 
 **Datakälla**
 
 | Namn           | Datakoppling                                                                     | Statistikdimensionsmedlem |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Packkopia D365FO | Dynamics 365 for Finance and Operations – Statistiska åtgärder | Packkopia                      |
+| Packkopia D365FO | Dynamics 365 for Finance and Operations – Statistiska mätningar | Packkopia                      |
 
 Systemet känner igen att ProdRouteTrans är ett register där varje post tillhör en separat juridisk person. Därför uppmanas du att välja den juridiska person som transaktionerna ska importeras från.
 
@@ -347,4 +346,3 @@ Om den fördefinierad dimensionsmedlemsallokeringsbasen för el tilldelas som en
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Allokeringsunderlag](allocation-bases.md)
-

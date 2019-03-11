@@ -1,13 +1,13 @@
 ---
-title: "Projektidrapporter på mobil enhet"
-description: "Mina tidrapporter (optimerad för mobil) låter anställda skapa och skicka projekttidrapporter för att registrera deras timmar för ett visst projekt på en mobil enhet."
+title: Projektidrapporter på mobil enhet
+description: Mina tidrapporter (optimerad för mobil) låter anställda skapa och skicka projekttidrapporter för att registrera deras timmar för ett visst projekt på en mobil enhet.
 author: abruer
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
+ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3e09433a9bb819cf24ee74443dd7e2d80a2b6b2e
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360956"
 ---
-
 # <a name="project-timesheets-on-a-mobile-device"></a>Projektidrapporter på mobil enhet
 
 [!include [banner](../includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 04/13/2018
 
 **Tidrapporter för min granskning (optimerad för mobil)** låter projektledare, som har behörighet för godkännande av tidrapport, granska och godkänna projekttidrapporter på en mobil enhet. Redigera eller visa ekonomisk information stöds inte från den mobila appen. **Tidrapporter för min granskning (optimerad för mobil)** kan nås via en webbläsare på din mobila enhet.
 
-Mobilappen är kompatibel för iPhone med Dynamics 365 for Finance and Operation, plattformsuppdatering 15.
+Den här mobilappen är kompatibel med iPhone med Dynamics 365 for Finance and Operations plattformsuppdatering 15.
 Android kommer att vara kompatibel med plattformsuppdatering 16, när den blir tillgänglig.
 
 <a name="create-a-project-timesheet-on-your-mobile-device"></a>Skapa en projekttidrapporten på din mobila enhet
@@ -66,4 +65,3 @@ Android kommer att vara kompatibel med plattformsuppdatering 16, när den blir t
 13. Valfritt: Ange ytterligare tidrapportrader.
 
 14. När du är klar med att ange tidrapportraderna väljer du åtgärden **Arbetsflöde**\>**Skicka** för att skicka tidrapporten till arbetsflödets godkännandeprocess.
-

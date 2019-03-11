@@ -1,33 +1,32 @@
 ---
-title: Integrering med Microsoft Dynamics 365 for Field Service
-description: "Det här ämnet innehåller en översikt över integrationen med Microsoft Dynamics 365 for Field Service."
+title: Integration med Microsoft Dynamics 365 for Field Service
+description: Det här ämnet innehåller en översikt över integrering med Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/25/2018
+ms.date: 02/05/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
+ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
+ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
 ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
-ms.openlocfilehash: 673ab2a101cee1a3dbbb1249f582d959cecc7f7f
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "377888"
 ---
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integrering med Microsoft Dynamics 365 for Field Service
+# <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integration med Microsoft Dynamics 365 for Field Service
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,23 +47,7 @@ Den första fasen av integrationen mellan Field Service och Finance and Operatio
 
 Titta på den korta YouTube-videon om du vill se ett exempel på hur du synkroniserar en arbetsorder mellan Field Service och Finance and Operations [Så här synkroniserar du en arbetsorder med integration med Microsoft Dynamics 365](https://www.youtube.com/watch?v=46ylO7raZAo).
 
-## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
-Field Service-integration stöder följande versioner:
-
-### <a name="dynamics-365-for-finance-and-operations-version-80-april-2018-or-later"></a>Dynamics 365 for Finance and Operations version 8.0 (april 2018) eller senare
-
-- Dynamics 365 for Finance and Operations version 8.0 (april 2018) gavs ut i april 2018 och har programversionsnummer 8.0.30.8020 med plattformsuppdatering 15 (7.0.4841.35234). 
-
-## <a name="system-requirements-for-field-service"></a>Systemkrav för Field Service
-Om du vill använda integrationslösningen för Field Service måste du installera följande komponenter:
-
-### <a name="microsoft-dynamics-365-for-field-service-90-or-later"></a>Microsoft Dynamics 365 for Field Service 9.0 eller senare
-
-- Dynamics 365 for Field Service, version 1612 (9.0.1.733) (DB 9.0.1.733) online eller en senare version.
-- Lösningen Potentiell kund till kontanter (P2C) för Dynamics 365, version 1.15.0.1 eller senare. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-- Integrationslösningen för Field Service för Dynamics 365, version 1.0.0.0 eller en senare version. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegration).
-
-# <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integrering med Microsoft Dynamics 365 for Field Service, inklusive information om lager och projekt
+## <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integration med Microsoft Dynamics 365 for Field Service, till exempel lager- och projektinformation
 
 Ytterligare funktioner i den här andra fasen fokuserar på att ge fälttekniker insikt om vilken lagerinformation som från Finance and Operations som tillåter dem att uppdatera lagernivåer och göra materialöverföringar. Dessutom får företag som utför installation och underhåll av sålda varor bättre kontroll och insyn i den fullständiga försäljnings- och serviceprocessen med integrering från projekt.
 
@@ -73,8 +56,8 @@ Ytterligare funktioner i den här andra fasen fokuserar på att ge fälttekniker
 - Information om lagerbehållning
 - Lageröverföringar
 - Lagerjusteringar
-- Dynamics 365 for Finance and Operations-projekt som är kopplade till Dynamics 365 for Field Service arbetsorder
-- Dynamics 365 for Field Service arbetsorder med en länk till Dynamics 365 for Finance and Operations projekt, tillämpa det här projektnumret till Dynamics 365 for Finance and Operations försäljningsorder för att kunna fakturera från projektet. 
+- Dynamics 365 for Finance and Operations projekt som är anslutna med Dynamics 365 for Field Service arbetsorder
+- Dynamics 365 for Field Service arbetsorder med länk till Dynamics 365 for Finance and Operations projekt använder detta projektnummer för att Dynamics 365 for Finance and Operations försäljningsorder ska kunna fakturera från projektet. 
 
 ![Synkronisering av affärsprocesser mellan Finance and Operations och Field Service](./media/FSv2overview.png)
 
@@ -87,15 +70,16 @@ Ytterligare funktioner i den här andra fasen fokuserar på att ge fälttekniker
 - Arbetsorder med projekt (Field Service till Fin and Ops) - arbetsorder i Field Service till försäljningsorder i Finance and Operations, med stöd för projekt [avancerad fråga] 
 - Field Service-produkter med lagerenhet (Fin and Ops till Sales) - Finance and Operations "Säljbara frisläppta produkter" till Sales "produkter" för Field Service, inklusive lagerenhet 
 
-## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
+## <a name="system-requirements"></a>Systemkrav
+
+### <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
 Field Service-integration stöder följande versioner:
 
-- Dynamics 365 for Finance and Operations version 8.1.2 (december 2019) gavs ut i december 2019 och har programversionsnummer 8.1.195 med plattformsuppdatering 22 (7.0.5095). 
+- Dynamics 365 for Finance and Operations version 8.1.2 (december 2019) släpptes i december 2019 och har programversionsnummer 8.1.195 med plattformsuppdatering 22 (7.0.5095). 
 
-## <a name="system-requirements-for-field-service"></a>Systemkrav för Field Service
+### <a name="system-requirements-for-field-service"></a>Systemkrav för Field Service
 Om du vill använda integrationslösningen för Field Service måste du installera följande komponenter:
 
-- Field Service for Dynamics 365 (version 8.2.0.286) eller en senare version för Dynamics 365 9.1.x - publicerad i november 2018
+- Field Service for Dynamics 365 (version 8.2.0.286) eller en senare version på Dynamics 365 9.1.x - utgiven i november 2018
 - Lösningen Potentiell kund till kontanter (P2C) för Dynamics 365, version 1.15.0.1 eller senare. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Lösningen "Field Service integrering, projekt och lager" för Dynamics 365, version 2.0.0.0 eller en senare version. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
-

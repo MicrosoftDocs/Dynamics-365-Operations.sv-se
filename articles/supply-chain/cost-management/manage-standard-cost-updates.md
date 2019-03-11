@@ -1,13 +1,13 @@
 ---
 title: Hantera standardkostnadsuppdateringar
-description: "Uppdateringar för standardkostnadsdata kan hanteras genom att använda två olika sätt - med en version eller två versioner."
+description: Uppdateringar för standardkostnadsdata kan hanteras genom att använda två olika sätt - med en version eller två versioner.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e72d4e90ac83787ed7c58d91c2102696acfac68
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b64d9e53736fd3b81ee997ed28ccfa62ed7e9ce6
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367557"
 ---
-
 # <a name="manage-standard-cost-updates"></a>Hantera standardkostnadsuppdateringar
 
 [!include [banner](../includes/banner.md)]
@@ -45,7 +44,6 @@ Följande exempel visas hur enversionssättet och tvåversionssättet kan använ
 -   **Tvåversionssättet på kostnadsuppdateringar** − Ttvåversionssättet kräver ytterligare en kostnadsversion, som bara innehåller de uppdateringarna kostnadsredovisning. ID för den här versionen är 2016-STD-CHANGES. Kostnadsuppdateringar registreras i 2016-STD-CHANGES och ställs in till statusen "Väntande". Med tvåversionssättet kräver strukturlisteberäkningar av väntande kostnader för tillverkade artiklar en reservdatakälla. Detta beror på att den ytterligare kostnadsversionen 2016-STD-CHANGES innehåller endast en delmängd av kostnadsdata. Reservutvägen kan uttryckas som de aktiva kostnaderna, eller som kostnadsversionen 2016-STD, eftersom båda identifierar källan för kostnadsdata när den inte inkluderas i 2016-STD-CHANGES. När de väntande kostnaderna har blivit aktiva, ska kostnadsversionen 2016-STD-CHANGES innehåller den aktuella aktiva kostnader som återspeglar uppdateringar, medan den ursprungliga kostnadsversionen 2016-STD ska vara orörd. När tvåversionssättet används kommer spärrningsprinciper för den ursprungliga kostnadsversionen ställas in för att förhindra uppdateringar. Identiska spärrningsprinciper ska ställas in för den ytterligare kostnadsversionen, med undantag för det angivna från-datumet och den selektiva användningen av spärrningsprinciper som tillåter uppdateringar. Angivet fråndatum ska uppdateras med varje grupp med ändringar för att återspegla det schemalagda aktiveringsdatumet.
 
 Detta exempel använde en extra kostnadsversion för hantering av uppdateringar under hela år 2016. Mer än en extra kostnadsversion kan användas, till exempel en separat version för varje uppdateringsbatch. När fler än en ytterligare kostnadsredovisning används, måste reserven uttryckas som de aktiva kostnaderna, eftersom de aktiva kostnaderna fördelas över flera kostnadsversioner.
-
 
 
 

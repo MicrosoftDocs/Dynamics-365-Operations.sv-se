@@ -1,13 +1,13 @@
---- 
-title: "Inaktivera en produktionsflödesversion"
-description: "När en aktiv produktionsflödesversion är inte längre behövs kan den inaktiveras."
+---
+title: Inaktivera en produktionsflödesversion
+description: När en aktiv produktionsflödesversion är inte längre behövs kan den inaktiveras.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 091cafd02bd568323e586373fc8b0f983afee343
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4a7eee6617e12d59a3d06207f5f6b58c93e28240
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340762"
 ---
 # <a name="deactivate-a-production-flow-version"></a>Inaktivera en produktionsflödesversion
 
@@ -45,5 +45,4 @@ För den här proceduren behöver du ett produktionsflöde med en version som ka
 5. Klicka på Deactivate.
     * Fortsätt inte om du inte är 100 % säker på att denna produktionsflödesversion är föråldrad. Om du klickar på Ok kommer alla aktiva kanban-regler att hävas och omedelbart stoppa alla produktions- och lagerpåfyllnadsaktiviteter för denna produktionsflödesversion.  
 6. Klicka på OK.
-
 

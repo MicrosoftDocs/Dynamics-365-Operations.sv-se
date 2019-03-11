@@ -1,13 +1,13 @@
 ---
-title: "Stöd för kanban-överföringstavla för streckkodsskanner"
-description: "Kanban-överföringstavlan stöder skannerindata från en widgetstreckkodsskanner för att välja, starta, slutföra och tömma ett kanban-jobb."
+title: Stöd för kanban-överföringstavla för streckkodsskanner
+description: Kanban-överföringstavlan stöder skannerindata från en widgetstreckkodsskanner för att välja, starta, slutföra och tömma ett kanban-jobb.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e63a33af63144b78d0c375022b9802e11c255598
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a8393efd51032271d3023f1e0569425a16222cc3
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319464"
 ---
-
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Stöd för kanban-överföringstavla för streckkodsskanner
 
 [!include [banner](../includes/banner.md)]
@@ -45,8 +44,8 @@ På snabbfliken **Skannerregistrering** kan du välja det registreringsläge som
 | Tom                 | Registrera den materialhanteringsenhet som refereras av kanban-kortet som tomt.              |
 | Välj                | Registrera ett kanban-kortnummer och välj automatiskt det jobb som refereras i kanban-listan |
 
- 
-<a name="registration-mode-select"></a>Registreringsläge Välj
+ 
+Registreringsläge Välj
 ------------------------
 
 När du använder en streckkodsläsare för att välja ett jobb, ändras visningsläget på kanban-tavlan. I detta läge gäller följande villkor:
@@ -188,7 +187,6 @@ Status för valda jobb och status för alla fixerade jobb för händelsekanban a
 </tr>
 </tbody>
 </table>
-
 
 
 

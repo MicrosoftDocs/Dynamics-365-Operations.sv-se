@@ -1,13 +1,13 @@
 ---
-title: "Förbättringar av funktionen för bokföring av utdrag"
-description: "Det här avsnittet beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag."
+title: Förbättringar av funktionen för bokföring av utdrag
+description: Det här avsnittet beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,19 +16,18 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321442"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
 [!include[banner](includes/banner.md)]
 
-Det här avsnittet beskriver den första uppsättningen förbättringar som har gjorts till funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 för Finance and Operations 7.3.2.
+Det här avsnittet beskriver den första uppsättningen förbättringar som har gjorts till funktionen för bokföring av utdrag. Dessa förbättringar är tillgängliga i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 
@@ -171,4 +170,3 @@ Andra interna förbättringar som användarna kan se att de har gjorts till funk
 
     - Gå till **Butiker** \> **Inställningar för huvudkontor** \> **Parametrar** \> **Detaljhandelsparametrar**. Klicka sedan på fliken **bokföring** på snabbfliken **lageruppdatering** på fältet **Detaljnivå** och välj **sammanfattning**.
     - Gå till **Butiker** \> **Inställningar för huvudkontor** \> **Parametrar** \> **Detaljhandelsparametrar**. Klicka sedan på fliken **bokföring** på snabbfliken **Sammanslagning** och ställ in alternativet **Verifikationstransaktioner** till **Ja**.
-

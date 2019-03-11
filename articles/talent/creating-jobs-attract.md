@@ -1,37 +1,36 @@
 ---
-title: "Skapa, godkänn och bokföra jobb i Attract"
-description: "Det här avsnittet beskriver delarna av ett jobb i Attract. Här förklaras också hur du skapar ett jobb."
+title: Skapa, godkänn och bokföra jobb i Attract
+description: Det här avsnittet beskriver delarna av ett jobb i Attract. Här förklaras också hur du skapar ett jobb.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306287"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Skapa, godkänn och bokföra jobb i Attract
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver elementen i ett jobb i Microsoft Dynamics 365 for Talent: Attract. Här förklaras också hur du skapar ett jobb.
+Det här avsnittet beskriver delarna av ett jobb i Dynamics 365 for Talent: Attract. Här förklaras också hur du skapar ett jobb.
 
 ## <a name="job-creation"></a>Skapa jobb
 
@@ -75,7 +74,7 @@ Mer information om aktiviteter som kan läggas till i anställningsprocessen fin
 
 ## <a name="postings"></a>Bokföringar
 
-När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Microsoft Dynamics 365 for Talent) eller LinkedIn. 
+När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Dynamics 365 for Talent) eller LinkedIn. 
 
 > [!NOTE]
 > Det finns tre viktiga saker att komma ihåg om processen för jobbpubliceringar i LinkedIn.
@@ -127,7 +126,7 @@ När ett jobb sparas skickas den för godkännande. I följande tabell visas sta
 
 I jobblistan kan du filtrera på jobbstatus.
 
-Godkännande kan skickas till alla Microsoft Azure Active Directory (AD Azure)-användare i företaget. Godkännanden skickas parallellt till alla personer som är angivna som godkännare. När ett jobb har godkänts kan det aktiveras.
+Godkännanden kan skickas till Microsoft Azure Active Directory (Azure AD)-användare i företaget. Godkännanden skickas parallellt till alla personer som är angivna som godkännare. När ett jobb har godkänts kan det aktiveras.
 
 Personer som är angivna som godkännare meddelas i Attract för att informera dem om att de har en artikel att godkänna. En artikel för godkännande visas också i avsnittet **Tilldelad till dig** på instrumentpanelen. När någon godtar eller godkänner ett jobb meddelas anställningsteamet. Slutligen får anställningsteamet ett meddelande när jobbet är godkänd.
 
@@ -169,4 +168,3 @@ Följ dessa steg för att skapa ett jobb.
 
 13. Aktivera jobbet genom att välja **Aktivera**.
 14. Om du vill publicera jobbet går du till **Publiceringar** och väljer sedan **Publicera nu** under Talent karriärwebbplats eller LinkedIn.
-

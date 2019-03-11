@@ -1,13 +1,13 @@
---- 
-title: "Skapa en kanban-regel för strukturlistehändelse"
-description: "Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-regel för händelse för att säkerställa leverans till produktionsstrukturlisterader i ett blandat resurssnål och klassisk produktionsmiljö."
+---
+title: Skapa en kanban-regel för strukturlistehändelse
+description: Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-regel för händelse för att säkerställa leverans till produktionsstrukturlisterader i ett blandat resurssnål och klassisk produktionsmiljö.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 82a4252548fd030f2a044436ff607da5125d2854
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 452cc5cf6060b71f91ad43e39e756dc23d759448
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337105"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Skapa en kanban-regel för strukturlistehändelse
 
@@ -82,5 +82,4 @@ Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-r
 8. Markera vald rad i listan.
     * Observera de kanban som skapats för att leverera M0001 för den uppskattade tillverkningsordern.  
     * Detta är det sista steget!  
-
 

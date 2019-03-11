@@ -1,32 +1,31 @@
 ---
-title: "Produktionsparametrar i Tillverkningskörning"
-description: "Det här avsnittet innehåller information om inställningar av produktionsparametrar i Tillverkningskörning."
+title: Produktionsparametrar i Tillverkningskörning
+description: Det här avsnittet innehåller information om inställningar av produktionsparametrar i Tillverkningskörning.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgProdParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bf1afd18132e92cf081b7bde5067e1be90314467
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339474"
 ---
-
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametrar i Tillverkningskörning
 
 [!include [banner](../includes/banner.md)]
@@ -154,5 +153,4 @@ Du kan använda följande inställningar om materialen alltid ska dras av manuel
 |     Operations     |   Automatisk strukturlisteförbrukning    | <strong>Aldrig</strong>  |
 | Rapportera som färdig |   Automatisk strukturlisteförbrukning    | <strong>Aldrig</strong>  |
 | Rapportera som färdig | Uppdatera färdig rapport online | <strong>Status</strong> |
-
 

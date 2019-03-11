@@ -1,13 +1,13 @@
 ---
 title: Hybridkundorder
-description: "Hybridkundorder är en enstaka order som innehåller produkter som kan bäras ut från butiken av kunden själv, samt produkter som hämtas eller levereras senare."
+description: Hybridkundorder är en enstaka order som innehåller produkter som kan bäras ut från butiken av kunden själv, samt produkter som hämtas eller levereras senare.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -18,14 +18,13 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: a00e69a589ffe744f88edb6a8b3709c4029fc1ec
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 88d12641fa05953f7082158303237b7ba40c3fe2
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364337"
 ---
-
 # <a name="hybrid-customer-orders"></a>Hybridkundorder
 
 [!include [banner](includes/banner.md)]
@@ -42,4 +41,3 @@ Om en vagnrad har valts och **Plocka valda**, **Skeppa valda** eller **Leverera 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över kundorder](customer-orders-overview.md)
-

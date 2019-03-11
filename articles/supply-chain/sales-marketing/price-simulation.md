@@ -1,13 +1,13 @@
 ---
 title: Prissimulering
-description: "Det här avsnittet innehåller information om prissimulering för offerter. Prissimulering hjälper dig att utvärdera effekten av avdrag på det framtida försäljningspriset under offertprocessen innan du på fastställer ett specifikt pris."
+description: Det här avsnittet innehåller information om prissimulering för offerter. Prissimulering hjälper dig att utvärdera effekten av avdrag på det framtida försäljningspriset under offertprocessen innan du på fastställer ett specifikt pris.
 author: omulvad
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316543"
 ---
-
 # <a name="price-simulation"></a>Prissimulering
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,7 @@ Var försiktig när du kör prissimuleringar på offerter som har rabatter så a
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typer av rabatter i handelsavtal
 
-Handelsavtal i Microsoft Dynamics 365 for Finance and Operations kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
+Handelsavtalen i Microsoft Dynamics 365 for Finance and Operations kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
 
 -   **Försäljningspris** – Olika försäljningspriser kan anges för artiklar. När offertrader skapas söker programmet efter rätt försäljningspris för en artikel och överför det till offertraderna. Därför påverkar ett handelsavtal som har den här typen av rabatt inte prissimuleringen. Försäljningspriset som används på offertraden återspeglar handelsavtalet.
 -   **Radrabatt** – Särskilda rabatter anges för artiklar, beroende på den beställda kvantiteten. Radbelopp reduceras normalt med radrabatten innan en prissimulering körs. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.
@@ -143,7 +142,6 @@ Du kör en prissimulering och tillämpar en 10 procent totalrabatt till enheter 
 | Ny total täckningsgrad                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38,93 %   |
 
 Prissimuleringen påverkar enbart raden som den tillämpas på och minskar summan för den raden.
-
 
 
 

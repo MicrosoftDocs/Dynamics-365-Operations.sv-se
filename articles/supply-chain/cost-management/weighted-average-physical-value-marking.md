@@ -1,13 +1,13 @@
 ---
-title: "Viktat genomsnitt med fysiskt värde och markering"
-description: "Viktat medelvärde är en lagermodell som baseras på principen om viktat medelvärde, där utleveranser från lagret värderas till medelvärdet av de artiklar som inlevereras till lagret under lagerstängningsperioden, plus all lagerbehållning från föregående period."
+title: Viktat genomsnitt med fysiskt värde och markering
+description: Viktat medelvärde är en lagermodell som baseras på principen om viktat medelvärde, där utleveranser från lagret värderas till medelvärdet av de artiklar som inlevereras till lagret under lagerstängningsperioden, plus all lagerbehållning från föregående period.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc70b9cffd8716bc1d90cdb611076b4fc0bf6b30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355689"
 ---
-
 # <a name="weighted-average-with-physical-value-and-marking"></a>Viktat genomsnitt med fysiskt värde och markering
 
 [!include [banner](../includes/banner.md)]
@@ -77,7 +76,7 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
@@ -111,7 +110,7 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
@@ -140,7 +139,7 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
@@ -173,7 +172,7 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@Enhetspris.
 - Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
@@ -221,14 +220,13 @@ I bilden nedan visas hur den här serien med transaktioner påverkas om du välj
 - Lagertransaktioner visas som lodräta pilar.
 - Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 - Utleveranser från lagret visas som lodräta pilar under tidslinjen.
-- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@"Unitprice".
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@"Enhetspris".
 - Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 - Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
 - Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
 - Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 - Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
 - Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Hantering av handelsavdrag
-description: "Det här avsnittet beskriver hantering av handelsavdrag för Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet beskriver hantering av handelsavdrag för Microsoft Dynamics 365 for Finance and Operations.
 author: t-benebo
 manager: AnnBe
 ms.date: 08/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: c3794535cf9230389d7da3f9dbde010e5c48cf2f
 ms.openlocfilehash: 907d59f850d8d761e2dd4e04bd288a696f00964d
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318820"
 ---
-
 # <a name="trade-allowance-management"></a>Hantering av handelsavdrag
 
 [!include [banner](../includes/banner.md)]
@@ -199,5 +198,4 @@ Fliken **Återfaktureringskredit** innehåller detaljerad information om återfa
 Om du vill få en mer analytisk översikt av de olika resultatmåtten för kampanjen kan du använda analysvyn. Gå till analysvyn genom att klicka på **Försäljning och marknadsföring**\>**Handelsavdrag**\>**Handelsavdragsavtal**. Klicka på **Analys** på åtgärdsfönstret.  
 
 Om du vill få en mer analytisk översikt av de olika resultatmåtten för kampanjen kan du använda analysvyn. Gå till analysvyn genom att klicka på **Försäljning och marknadsföring**\>**Handelsavdrag**\>**Handelsavdragsavtal**. Klicka på **Analys** på åtgärdsfönstret. 
-
 

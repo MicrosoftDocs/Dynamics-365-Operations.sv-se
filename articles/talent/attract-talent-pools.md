@@ -1,31 +1,30 @@
 ---
-title: "Källkandidater med talangpooler"
-description: "Det här avsnittet beskriver hur du skapar och konfigurerar talangpooler i Attract."
-author: 
+title: Källkandidater med talangpooler
+description: Det här avsnittet beskriver hur du skapar och konfigurerar talangpooler i Attract.
+author: ''
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
 ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306255"
 ---
-
 # <a name="source-candidates-by-using-talent-pools"></a>Källkandidater med talangpooler
 
 [!include[banner](../includes/banner.md)]
@@ -108,7 +107,7 @@ Alla användare har en gemensam vy över kandidatprofiler. Markera raden för en
 
 - Fliken **dokument** visar alla handlingar som kandidaten har lagt till från hans eller hennes profil eller under jobbansökningar. Den här fliken kan användas för att hantera kandidatens meritförteckningar, följebrev, portföljarbete, och så vidare. Du kan också använda den här fliken för att lägga till dokument.
 
-    Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i ansökningen med hjälp av Microsoft Office 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
+    Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i programmet med Microsoft Office 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
 
 - Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn-rekryteraranslutning måste skapas. Mer information finns i [Anskaffning med LinkedIn-rekryterare](./attract-linked-in-recruiter.md).
 
@@ -139,4 +138,3 @@ Ofta väljs inte flera bra kandidater till ett jobb, men du vill inte tappa bort
 1. På ansökningssidan väljer du **Lägg till i talangpool**. En lista över talangpooler som du har tillgång till visas.
 
 1. Välj eller sök efter talangpool och välj sedan **Lägg till** för att lägga till kandidater till talangpoolen.
-

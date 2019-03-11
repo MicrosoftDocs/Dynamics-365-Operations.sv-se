@@ -1,13 +1,13 @@
 ---
-title: "Konfiguration av lagerställe"
-description: "Det här avsnittet innehåller information om hur du konfigurerar ett lagerställe. Det inkluderar information om att aktivera ett lagerställes layout och lagerställeprocesser."
+title: Konfiguration av lagerställe
+description: Det här avsnittet innehåller information om hur du konfigurerar ett lagerställe. Det inkluderar information om att aktivera ett lagerställes layout och lagerställeprocesser.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7e50d03718234748d9ad5092500b970216c40284
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 79e0ce728cb3c1eec450d0814d0a3aeda131fe89
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318452"
 ---
-
 # <a name="warehouse-configuration"></a>Konfiguration av lagerställe
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Det här avsnittet innehåller information om hur du konfigurerar ett lagerstäl
 **Anm.:** Den här artikeln gäller funktioner i modulen **Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
 
 ## <a name="warehouse-layout"></a>Layout för lagerställe
-Lagerhanteringssystemet i Microsoft Dynamics 365 for Finance and Operations ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå en optimal lagereffektivitet.
+Lagerhanteringssystemet i Microsoft Dynamics 365 for Finance and Operations ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå optimal lagereffektivitet.
 
 -   Du kan fastställa högprioriterade och lågprioriterade lagerområden för optimal placering av varor.
 -   Du kan dela upp till lagerstället i zoner som tar hänsyn till olika lagringsbehov, till exempel temperaturkrav eller olika omsättningshastigheter för artiklar.
@@ -116,7 +115,6 @@ Gör det enklare och snabbare att definiera åtgärder som är knutna till varje
 --------
 
 [Konfigurera platser på ett WMS-aktiverat lagerställe (uppgiftsguiden)](tasks/configure-locations-wms-enabled-warehouse.md)
-
 
 
 

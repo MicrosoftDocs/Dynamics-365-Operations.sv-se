@@ -1,13 +1,13 @@
 ---
-title: "Visa och exportera fältbeskrivningar"
-description: "Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar."
+title: Visa och exportera fältbeskrivningar
+description: Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
 ms.reviewer: rschloma
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7be1495fc42b5f19884a7d9df747f6bec9b64680
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359346"
 ---
-
 # <a name="view-and-export-field-descriptions"></a>Visa och exportera fältbeskrivningar
 
 [!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar.
 
-Microsoft Dynamics 365 for Finance and Operations har beskrivningar för vissa av de mer komplexa fälten. Dessa beskrivningar visas när du håller muspekaren över ett fält. På sidan **Fältbeskrivningar** kan du visa och exportera fältbeskrivningar.
+Microsoft Dynamics 365 for Finance and Operations har beskrivningar för några av de mer komplexa fälten. Dessa beskrivningar visas när du håller muspekaren över ett fält. På sidan **Fältbeskrivningar** kan du visa och exportera fältbeskrivningar.
 
 Inte alla sidor har fältbeskrivningar. Vi tillhandahåller enbart beskrivningar av de mer komplexa fälten och inte av dem där användningen av fältet är tydligt. Av den anledningen saknas fältbeskrivningar på vissa sidor. Andra sidor innehåller några få beskrivningar och några av de mer komplexa sidorna, till exempel många av parametersidorna, har många beskrivningar.
 
@@ -43,7 +42,7 @@ Om du har tillgång till utvecklingsmiljön för Finance and Operationskan kan d
 Du kan visa fältbeskrivningar genom att hovra över ett fält. Om det inte finns någon beskrivning ser du fältnamnet när du för muspekaren över fältet.
 
 > [!NOTE]
-> Fältbeskrivningar i Dynamics AX 7.0 (februari 2016) kan endast visas på sidan **Fältbeskrivningar**.
+> Fältbeskrivningar AX 7.0 (februari 2016) kan endast visas på sidan **Fältbeskrivningar**.
 
 I följande illustration visas fältbeskrivningen som visas när du för muspekaren över fältet **Lås artiklar under inventeringen**.
 
@@ -70,7 +69,7 @@ Om du ställer in alternativet **Inkludera fält utan en beskrivning** till **Ja
 Om du vill exportera beskrivningarna för en sida ska du följa de här stegen:
 
 1. Välj en sida i fältet **Välj en sida**.
-2. Klicka på knappen **Öppna i Microsoft Office** i det övre högra hörnet och klicka sedan på **FieldDescriptionTmp**.
+2. Klicka på **Öppna i Microsoft Office** i det övre högra hörnet och klicka sedan på **FieldDescriptionTmp**.
 
 ### <a name="searching-for-a-page"></a>Söka efter en sida
 
@@ -109,4 +108,3 @@ Information om olika sätt att hitta sidor hittar du i avsnittet "Söka efter si
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hjälp för Anpassa fält](../../dev-itpro/user-interface/customize-field-help.md)
-

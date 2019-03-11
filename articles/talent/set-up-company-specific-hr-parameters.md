@@ -1,13 +1,13 @@
 ---
-title: "Ställ in företagsspecifika personalparametrar"
-description: "Inställningarna för vissa HR-parametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Den här artikeln innehåller information om hur du ställer in företagsspecifika HR-parametrar."
+title: Ställ in företagsspecifika personalparametrar
+description: Inställningarna för vissa HR-parametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Den här artikeln innehåller information om hur du ställer in företagsspecifika HR-parametrar.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306328"
 ---
-
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Ställ in företagsspecifika personalparametrar
 
 [!include [banner](includes/banner.md)]
@@ -35,9 +34,9 @@ Inställningarna för vissa HR-parametrar delas av alla företag, medan inställ
 Två sidor används för att ställa mänskliga resurser (HR) parametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika (med andra ord inställningar tillämpas på ett enda företag) kan du använda den **mänskliga resursen parametrar sidan** . På **mänskliga resurser parametrar sidan** , inställningarna är uppdelade i sex flikar:
 
 -   Allmänt
--   Rekrytering – detta ingår inte i Dynamics 365 for Talent
+-   Rekrytering - detta ingår inte i Dynamics 365 for Talent
 -   Kompensation
--   Nummerserier
+-   Nummersekvenser
 -   Familj och medicinska lämnar Act (fmla)
 -   Anställd self-service
 
@@ -61,7 +60,6 @@ Inställningar på **fliken FMLA** ange hur många timmar som en anställd måst
 --------
 
 [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md)
-
 
 
 

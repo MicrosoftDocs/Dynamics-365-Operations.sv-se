@@ -1,13 +1,13 @@
---- 
-title: "Utforma ER-konfigurationer för rapportgenerering i Word-format"
-description: "I följande steg beskrivs hur en användare med systemadministratörsroll eller roll som utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering så att detta skapar rapporter som Microsoft Word-filer."
+---
+title: Utforma ER-konfigurationer för rapportgenerering i Word-format
+description: I följande steg beskrivs hur en användare med systemadministratörsroll eller roll som utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering så att detta skapar rapporter som Microsoft Word-filer.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362359"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Utforma ER-konfigurationer för rapportgenerering i Word-format
 
@@ -35,7 +35,7 @@ För att slutföra dessa steg måste du först slutföra stegen i uppgiftsguiden
 - [Bunden mall för betalningsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
 
-Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 365 for Operations, version 1611.
+Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 365 for Operations version 1611.
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Markera den befintliga ER-rapportkonfigurationen
@@ -99,5 +99,4 @@ Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 3
 16. Klicka på OK.
 17. Klicka på OK.
     * Analysera den skapade utleveransen. Observera att skapade utdata visas i Word-format och innehåller information om de behandlade betalningarna.  
-
 

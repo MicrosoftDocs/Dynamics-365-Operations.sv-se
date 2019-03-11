@@ -1,13 +1,13 @@
 ---
-title: "Arbetsyta för bankhantering"
-description: "Det här ämnet innehåller information om Arbetsyta för bankhantering. Den här arbetsytan visar information som är relaterat till företagets bankkonton och omfattar en sammanfattningsvy och en sida för analys. Sammanfattningen innehåller sammanfattningsrutor, bankkontoinformation, saldodiagram och relaterad information. Sidan analys använder funktionerna i Microsoft Power BI för att visa visuella som är relaterade till bankkontosaldon."
+title: Arbetsyta för bankhantering
+description: Det här ämnet innehåller information om Arbetsyta för bankhantering. Den här arbetsytan visar information som är relaterat till företagets bankkonton och omfattar en sammanfattningsvy och en sida för analys. Sammanfattningen innehåller sammanfattningsrutor, bankkontoinformation, saldodiagram och relaterad information. Sidan analys använder funktionerna i Microsoft Power BI för att visa visuella som är relaterade till bankkontosaldon.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: fdc0d1e5ea02cdcff9f7f5ede4ab685f54365698
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 3c38807e9ed3b2ced37ada35b72e388c125bd654
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/05/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348375"
 ---
 # <a name="bank-management-workspace"></a>Arbetsyta för bankhantering
 
 [!include [banner](../includes/banner.md)]
 
-Arbetsytan **Bankhantering** visar information som hör till företagets bankkonton. Den här arbetsytan innehåller en **sammanfattningsvy** och en **analyssida**. **Sammanfattningsvyn** innehåller sammanfattningsrutor, bankkontoinformation, saldodiagram och relaterad information. Sidan **analys** använder funktionerna i Microsoft Power BI för att visa visuella som är relaterade till bankkontosaldon.
+Arbetsytan **Bankhantering** visar information som hör till företagets bankkonton. Den här arbetsytan innehåller en **sammanfattningsvy** och en **analyssida**. **Sammanfattningsvyn** innehåller sammanfattningsrutor, bankkontoinformation, saldodiagram och relaterad information. Sidan **Analys** använder funktionerna i Microsoft Power BI för att visa visuella som är relaterade till bankkontosaldon.
 
 ## <a name="summary-view"></a>Sammanfattningsvy
 
@@ -64,4 +64,3 @@ Sidan **analys** ger viktiga mått om bankkonton i det aktuella företaget. Föl
 -   Saldo per valuta
 
 Du kan visa bankanalys i alla företag från arbetsytan **kontantöversikt – alla företag**.
-

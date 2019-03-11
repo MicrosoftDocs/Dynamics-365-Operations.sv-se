@@ -1,13 +1,13 @@
 ---
-title: "Standardmotkonton för leverantörsfakturajournaler och fakturagodkännandejournaler"
-description: "Det här ämnet hjälper dig att bestämma var du bör tilldela standardkonton och motkonton för fakturajournaler."
+title: Standardmotkonton för leverantörsfakturajournaler och fakturagodkännandejournaler
+description: Det här ämnet hjälper dig att bestämma var du bör tilldela standardkonton och motkonton för fakturajournaler.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f876e5dfdab67dd98b2449993c3ba2baacde1587
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 90b24e8e00a78c122e0f7c712a694c9c62bd4824
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320269"
 ---
-
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Standardmotkonton för leverantörsfakturajournaler och fakturagodkännandejournaler
 
 [!include [banner](../includes/banner.md)]
@@ -84,7 +83,7 @@ Använd följande register som hjälper dig att bestämma var du bör tilldela s
 <li>Journalposter i journaler som använder journalnamn</li>
 </ul></td>
 <td>Dessa standardvärden används på sidor för journalrubriker och motkontot på sidan för journalrubriker används som en standardinställning på sidan för bokföringsorder. Standardkonton från sidan <strong>Journalnamn</strong> används bara om standardkonton inte har ställts in för leverantörskontot.</td>
-<td>Använd det här alternativet om du vill ställa in standardkonton som ska användas när en standardleverantörmotkonto inte tilldelas.</td>
+<td>Använd det här alternativet om du vill ställa in standardkonton som ska användas när ett standardleverantörmotkonto inte tilldelas.</td>
 </tr>
 <tr class="odd">
 <td><strong>Journalrubrik</strong> – Ställa in ett standardmotkonto för en journal som ska användas som ett standardvärde på sidan för bokföringsorder. Observera att du kan inte kan ange standardmotkonton för journalrubrik om journaltypen av journalnamnen är <strong>Fakturaregister</strong> eller <strong>Godkänn</strong>.</td>
@@ -94,7 +93,6 @@ Använd följande register som hjälper dig att bestämma var du bör tilldela s
 </tr>
 </tbody>
 </table>
-
 
 
 

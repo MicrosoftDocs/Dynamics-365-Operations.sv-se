@@ -1,13 +1,13 @@
---- 
-title: "Ställ in ett platsdirektiv för inlagring av inköpsorder"
-description: "I den här proceduren visas hur du ställer in ett enkelt platsdirektiv."
+---
+title: Ställ in ett platsdirektiv för inlagring av inköpsorder
+description: I den här proceduren visas hur du ställer in ett enkelt platsdirektiv.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9ca4b3c2598a268c065011daff31296521faa918
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 4bb4af7cb7aff101a8b9e6162823515f63b12886
-ms.openlocfilehash: 98ce3ad38dddda33be5466490fcd39d81251679c
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/02/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349088"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Ställ in ett platsdirektiv för inlagring av inköpsorder
 
@@ -93,5 +93,4 @@ I den här proceduren visas hur du ställer in ett enkelt platsdirektiv. I exemp
 4. Ange ett värde i fältet Kriterier.
 5. Klicka på OK.
     * Du kan fortsätta att lägga till direktivrader och direktivåtgärder tills du har täckt alla möjliga scenarier i ditt lagerställe.  
-
 

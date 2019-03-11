@@ -1,13 +1,13 @@
 ---
-title: "Mobil arbetsyta för utgiftshantering"
-description: "Det här avsnittet innehåller information om mobil arbetsyta för Utläggshantering. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter."
+title: Mobil arbetsyta för utgiftshantering
+description: Det här avsnittet innehåller information om mobil arbetsyta för Utläggshantering. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 6ec9966826830e9ceaa3ed7e1b06e2cb89e8a780
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344350"
 ---
-
 # <a name="expense-management-mobile-workspace"></a>Mobil arbetsyta för utläggshantering
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 03/26/2018
 Det här avsnittet innehåller information om mobil arbetsyta för **Utläggshantering**. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter. Godkännare kan dessutom använda den mobila arbetsytan **utgiftshantering** för att visa kostnadsrapporter som har tilldelats till dem och antingen godkänna eller avvisa de utgiftsrapporterna.
 
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 
 ## <a name="overview"></a>Översikt
@@ -42,11 +41,11 @@ Många organisationer kräver att en kopia av ett kvitto ska kopplas till en res
 
 Särskilt den mobila arbetsytan **Utgiftshantering** låter användarna utföra följande uppgifter:
 
-- Ta en bild av en inleverans och överföra den till Microsoft Dynamics 365 for Finance and Operations. En användare kan sedan bifoga den bilden i en utgiftsrapport senare.
+- Ta en bild av ett kvitto och skicka det till Microsoft Dynamics 365 for Finance and Operations. En användare kan sedan bifoga den bilden i en utgiftsrapport senare.
 - Överför en fil som ett insamlat kvitto. En användare kan sedan bifoga den filen i en utgiftsrapport senare.
 - Skapa en ny utgiftsrad med en kopplad inleverans. En användare kan sedan lägga till artikeln i en utgiftsrapport senare och skicka det för godkännande och återbetalning.
 
-Om du använder Microsoft Dynamics 365 for Finance and Operations kan du även använda följande funktioner:
+Om du använder Microsoft Dynamics 365 for Finance and Operations kan du också använda dessa funktioner:
 
 - Skapa en ny utgiftsrapport.
 - Koppla kreditkortstransaktioner och andra tidigare skapade utgifter i en utgiftsrapport.
@@ -60,10 +59,10 @@ Om du använder Microsoft Dynamics 365 for Finance and Operations kan du även a
 ## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations. 
-Om Microsoft Dynamics 365 for Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Utgiftshantering**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations 
+Om Microsoft Dynamics 365 for Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Utläggshantering**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdateringen 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
@@ -80,7 +79,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 <td>Systemadministratör</td>
 <td>KB 4019015 är X ++ uppdatering eller snabbkorrigering av metadata som innehåller den mobila arbetsytan för <strong>Utgiftshantering</strong>. Om du vill implementera KB 4019015 måste systemadministratören göra följande.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Hämta snabbkorrigering av metadata från Microsoft Dynamics AX Lifecycle Services(LCS)</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Hämta snabbkorrigeringar för metadata från Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Snabbkorrigering av metadata</a>.</li>
 <li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Skapa ett driftfärdigt paket</a> som innehåller modellerna <strong>ApplicationSuite</strong> och modellen <strong>ExpenseMobile</strong> och överför sedan det driftfärdiga paketet till LCS.</li>
 <li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Tillämpa ett distribuerbart paket</a></li>
@@ -94,7 +93,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Hämta och installera mobilappen Dynamics 365 for Operation.
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Hämta och installera mobilappen Dynamics 365 for Operations
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 - [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
@@ -243,4 +242,3 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 22. Välj **skicka**.
 23. Ange eventuella kommentarer för godkännaren.
 24. Välj **Klar**.
-

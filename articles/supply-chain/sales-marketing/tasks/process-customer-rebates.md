@@ -1,13 +1,13 @@
---- 
+---
 title: Generera och bearbeta kundrabatter
-description: "Den här proceduren visar hur du vill bearbeta kunden rabatter från krav generation till passerar dem såsom periodiseringar av kundfordringar."
+description: Den här proceduren visar hur du vill bearbeta kunden rabatter från krav generation till passerar dem såsom periodiseringar av kundfordringar.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336461"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generera och bearbeta kundrabatter
 
@@ -83,5 +83,4 @@ Den här proceduren visar hur du vill bearbeta kunden rabatter från krav genera
 9. Ange eller välj ett värde i fältet Kund.
 10. Klicka på OK.
     * I ett meddelande visas att rabatten har bearbetats och att statusen för anspråken har ändrats till Markera. Detta innebär att som ett resultat av en rabatt periodiseringsjournal som konteras: a) kraven har nu överförts till den temporära kund balans som avdrag; b) Rabatten accrual konto har krediterats utgör den framtida ansvar gentemot kunden, och c) Rabatten bekostnad konto har debiterats, erkännande av kostnader i samband med försäljning.   
-
 

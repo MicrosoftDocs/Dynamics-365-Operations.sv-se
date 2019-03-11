@@ -1,40 +1,39 @@
 ---
-title: "Verksamhet för online- och offlinekassor (POS)"
-description: "Det här avsnittet innehåller information om kassaoperation i Microsoft Dynamics 365 for Retail. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge."
+title: Verksamhet för online- och offlinekassor (POS)
+description: Det här avsnittet innehåller information om kassaoperation i Microsoft Dynamics 365 for Retail. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353826"
 ---
-
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
 [!include [banner](includes/banner.md)]
 
-De flesta åtgärder som användaren vidtar i kassan anses vara operationer. Operationer konfigureras och hanteras i Microsoft Dynamics 365 for Retail back office. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
+De flesta åtgärder som användaren vidtar i kassan anses vara operationer. Operationer konfigureras och hanteras i formuläret i Microsoft Dynamics 365 for Retail backoffice. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
 
-Tabellen nedan visar detaljerad information om operationer i Retail Modern POS och Cloud POS for Dynamics 365 for Retail. Tabellen aner också var i programmet som operationerna kan anropas och om de är tillgängliga när kassan är i offlineläge.
+Följande tabell innehåller information om de åtgärder som är tillgängliga i Retail Modern POSoch molnbaserad kassa för Dynamics 365 for Retail. Tabellen aner också var i programmet som operationerna kan anropas och om de är tillgängliga när kassan är i offlineläge.
 
-Vissa åtgärder är inte tillgängliga i Retail Modern POS eller Cloud POS for Dynamics 365 for Retail. Vissa av dessa åtgärder är antingen språkspecifika åtgärder som kräver ytterligare tillägg och konfiguration. Övriga är funktioner Microsoft Dynamics AX 2012 som inte stöds för närvarande.
+Vissa åtgärder är inte tillgängliga i Retail Modern POSeller molnbaserad kassa för Dynamics 365 for Retail. Vissa av dessa åtgärder är antingen språkspecifika åtgärder som kräver ytterligare tillägg och konfiguration. Övriga är funktioner Microsoft Dynamics AX 2012 som inte stöds för närvarande.
 
 Följande kolumner anger var operationerna kan startas:
 
@@ -199,4 +198,3 @@ Följande kolumner anger var operationerna kan startas:
 § När kassan är offline kan endast transaktioner i den aktuella offlinedatabasen återställas för retur.
 
 \*\* När kassan är offline kan endast transaktioner i den aktuella offlinekanaldatabasen visas i journalen.
-

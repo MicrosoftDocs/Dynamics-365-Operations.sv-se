@@ -1,13 +1,13 @@
 ---
-title: "Kassaapparatfunktioner för Sverige"
-description: "Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige."
+title: Kassaapparatfunktioner för Sverige
+description: Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 06/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: acf52c3a878af75618f77986af9470f2c8b7c5a6
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "371817"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
@@ -32,13 +32,13 @@ Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sv
 
 - Vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner som ett alternativ för att förhindra försäljning och returer från att slås samman i ett butikskvitto
 - Sverige-specifika funktioner, t.ex. ytterligare räknare i dagliga kassarapporter
-- Ett exempel för att integrera 365 Dynamics for Retail POS med Sverige-specifika kvittoskrivarenhet som kallas kontrollenheter.
+- Ett exempel för att integrera kassa i Dynamics 365 for Retail med Sverige-specifika kvittoskrivarenheter som kallas kontrollenheter.
 
 ## <a name="overview-of-cash-register-functionality-for-sweden"></a>Översikt över kassaapparatfunktioner för Sverige 
 
 ### <a name="common-pos-features"></a>Vanliga kassafunktioner
 
-Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Microsoft Dynamics 365 Retail, dokumentation](../index.md).
+Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Microsoft Dynamics 365 for Retail-dokumentation](../index.md).
 
 Dessutom har följande kassafunktioner som implementerades för Sverige gjorts tillgängliga för kunder i alla länder eller regioner:
 
@@ -81,7 +81,7 @@ Mer information om styrenhetens integrationsprov finns i [Guiden för provanvän
 
 ## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
-Det här avsnittet beskriver inställningar för Retails som avser och rekommenderas för Sverige. Mer information om hur du ställer in Retail finns i [Microsoft Dynamics 365 for Retail - dokumentation](../index.md).
+Det här avsnittet beskriver inställningar för Retails som avser och rekommenderas för Sverige. Mer information om hur du ställer in Retail finns i [Microsoft Dynamics 365 for Retail-dokumentation](../index.md).
 
 Om du vill använda Sverige-specifika funktioner för Retail måste du utföra följande uppgifter:
 
@@ -188,4 +188,3 @@ Du måste du ange följande inställningar för att aktivera [integrationsprovet
     3. För försäljningskvittoformat, kvittorformatdesignern i avsnittet **sidfot** på kvittolayouten, lägger du till fälten för de angivna rubrikerna (**kontrollkod** och **kontrollenhets-ID** i föregående exempel).
 
 3. Uppdatera kassabehörighetsgrupper och enskilda behörighetsinställningar för arbetare i butiken. Om du vill tillåta att arbetare som tilldelats behörighetsgruppen hoppar över räkenskapsregister markerar du kryssrutan **Tillåt hoppa över räkenskapsregister**.
-

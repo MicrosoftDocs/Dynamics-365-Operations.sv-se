@@ -1,13 +1,13 @@
 ---
-title: "Framställ utskrivbara FTI-formulär"
-description: "I det här avsnittet beskrivs hur du använder ramverket för elektronisk rapportering (ER) för att skapa utskrivbara fritextfakturaformulär (FTI) som Microsoft Office-dokument."
+title: Framställ utskrivbara FTI-formulär
+description: I det här avsnittet beskrivs hur du använder ramverket för elektronisk rapportering (ER) för att skapa utskrivbara fritextfakturaformulär (FTI) som Microsoft Office-dokument.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: d27a11a0d925b0f1164578f9c04e6abd4736b2b2
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325536"
 ---
-
-# <a name="generate-printable-fti-forms"></a>Framställ utskrivbara FTI-formulär
+# <a name="generate-printable-fti-forms"></a>Skapa utskrivbara FTI-formulär
 
 [!include[banner](../includes/banner.md)]
 
@@ -33,7 +32,7 @@ Ramverket för elektronisk rapportering (ER) låter dig skapa utskrivbara fritex
 
 ## <a name="overview"></a>Översikt
 
-Förutom den redan befintliga möjligheten att skapa utskrivbara formulär genom att använda Microsoft SQL Server Reporting Services (SSRS) kan du nu också använda ER-ramverket. Du kan hantera utskrivbara FTI-formulär i Microsoft Office Excel och Word. Du kan också ändra layout, dataflöde och formatering för att uppfylla särskilda krav utan att göra ändringar i koden.
+Förutom den redan befintliga möjligheten att skapa utskrivbara formulär genom att använda Microsoft SQL Server Server Reporting Services (SSRS) kan du nu också använda ER-ramverket. Du kan hantera utskrivbara FTI-formulär i Microsoft Office Excel och Word. Du kan också ändra layout, dataflöde och formatering för att uppfylla särskilda krav utan att göra ändringar i koden.
 
 > [!NOTE]
 > Om du vill börja med en översikt över befintliga ER-konfigurationer för det här exemplet på en utskrivbar FTI-formulärslösning, kan du gå direkt till avsnittet **Hämta exempel på ER-konfigurationer i syfte att skapa utskrivbara FTI-formulär** senare i det här avsnittet.
@@ -215,7 +214,7 @@ ER-uttrycket **Emailing.TxtToUse.Subject** för ER-provformatet konfigureras i s
 
 Uttrycket **Emailing.TxtToUse.Body** för provformatet konfigureras för följande ersättningar för platshållare:
 
-- ”%1” ersätts med namnet på kundens kontaktperson.
+- %1” ersätts med namnet på kundens kontaktperson.
 - ”%2” ersätts med namnet på företaget.
 - ”%3” ersätts med namnet på kunden.
 - ”%4” ersätts med namnet på företagets kontaktperson.
@@ -226,4 +225,3 @@ Uttrycket **Emailing.TxtToUse.Body** för provformatet konfigureras för följan
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 [Översikt över elektronisk rapportering](general-electronic-reporting.md)
-

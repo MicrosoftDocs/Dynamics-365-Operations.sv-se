@@ -1,31 +1,30 @@
 ---
 title: Skapa serviceavtal
-description: "I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehantering och projekthantering och redovisning för att skapa serviceavtal."
+description: I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehantering och projekthantering och redovisning för att skapa serviceavtal.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a094ce9f0d9323b089055e74d41cf1f45323a7d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2a46173a3566a56a21add9d42c111d456b1ae7c1
-ms.openlocfilehash: 517bc1b9de9b2512f42e4f32b4a19e517e349e8e
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/19/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310954"
 ---
-
 # <a name="create-service-agreements"></a>Skapa serviceavtal
 
 [!include [banner](../includes/banner.md)]
@@ -61,6 +60,5 @@ I det här avsnittet beskrivs hur du använder funktioner i modulerna servicehan
 ## <a name="related-topics"></a>Relaterade ämnen
 
 [Serviceavtal ](service-agreements.md)
-
 
 

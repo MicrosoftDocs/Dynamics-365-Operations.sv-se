@@ -1,13 +1,13 @@
---- 
-title: "Skapa ett mål"
-description: "Du kan skapa mål, lägga till aktiviteter för mål, spåra mått och länka målen till en granskning."
+---
+title: Skapa ett mål
+description: Du kan skapa mål, lägga till aktiviteter för mål, spåra mått och länka målen till en granskning.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350721"
 ---
 # <a name="create-a-goal"></a>Skapa ett mål
 
@@ -59,5 +59,4 @@ Du kan skapa mål, lägga till aktiviteter för mål, spåra mått och länka m�
     * Det finns ofta mål som är ofta desamma eller liknande för teammedlemmar eller för alla medarbetare.     Din personaladministratör eller chef kan skapa målmallar för dessa mål. Du kan lägga till ett mål från en mall och sedan ändra den så att den matchar dina tidslinjer.  
     * Det finns ofta ett flertal mål som är ofta desamma eller liknande för teammedlemmar eller för alla medarbetare.     Din personaladministratör eller chef kan skapa målgrupper som innehåller en eller flera målmallar. Du kan lägga till mål från en målgrupp och sedan ändra dem så att de matchar dina tidslinjer.  
     * När du skapar en granskning, kan du lägga till mål till den granskningen. Se uppgiftsguiden för granskningen för att se hur du kan lägga till mål till dina granskningar.  
-
 

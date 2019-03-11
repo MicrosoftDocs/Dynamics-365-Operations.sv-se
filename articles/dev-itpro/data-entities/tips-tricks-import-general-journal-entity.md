@@ -1,13 +1,13 @@
 ---
-title: "Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal"
-description: "Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal."
+title: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+description: Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 29cb4b940875b96cabaff540360674da528f8f39
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322523"
 ---
-
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
 
 [!include [banner](../includes/banner.md)]
@@ -67,4 +66,3 @@ Följande avsnitt innehåller en beskrivning av effekten av dessa inställningar
 - Om fältet **Verifikationsnummer** är inställt på **Automatiskt skapad** misslyckas importen. Inställningen **Automatiskt skapad** för fältet **Verifikationsnummer** stöds inte.
 
 Enheten Allmän journal använder uppsättningsbaserad bearbetning. När du utvärderar affärskraven för din organisation kan du ändra inställningen **Uppsättningsbaserad bearbetning** genom att klicka på **Datatabeller** i arbetsytan **Datahantering**. Uppsättningsbaserad bearbetning används för att påskynda importprocessen. Om du inte använder uppsättningsbaserad bearbetning går importen av enheten Allmän journal långsammare.
-

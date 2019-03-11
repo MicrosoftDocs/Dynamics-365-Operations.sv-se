@@ -1,13 +1,13 @@
 ---
-title: "Transporthanteringsöversikt"
-description: "I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Finance and Operations."
+title: Transporthanteringsöversikt
+description: Det här avsnittet innehåller en översikt över funktionen för transporthantering i Microsoft Dynamics 365 for Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 918167a3ab72b3d3665cf710d8e509417b94a056
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f4dc2c15d35d93d1563c866b20ad7f2bbb5c8457
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355620"
 ---
-
 # <a name="transportation-management-overview"></a>Transporthanteringsöversikt
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet innehåller en översikt över funktionen för transporthantering i Microsoft Dynamics 365 for Finance and Operations.
 
-Transporthantering låter dig använda företagets transporter och även identifiera leverantörs- och ruttlösningar för ingående och utgående order. Du kan till exempel identifiera det snabbaste flödet eller den minst kostsamma tariffen för en leverans. I tabellen nedan beskrivs de huvudsakliga scenarierna för att använda Transporthantering i Microsoft Dynamics 365 for Finance and Operations.
+Transporthantering låter dig använda företagets transporter och även identifiera leverantörs- och ruttlösningar för ingående och utgående order. Du kan till exempel identifiera det snabbaste flödet eller den minst kostsamma tariffen för en leverans. I tabellen nedan beskrivs de huvudsakliga scenarierna för att använda Transporthantering i Microsoft Dynamics 365 for Finance and Operations.
 
 <table>
 <colgroup>
@@ -85,7 +84,6 @@ Du kan planera och bearbeta en utgående last för att skicka vissa artiklar fr�
 
 ## <a name="load-building"></a>Lastuppbyggnad
 Finance and Operations innehåller en lastuppbyggnadsstrategi med namnet Volymbaserad lastuppbyggnadsstrategi. Denna strategi låter dig använda de angivna maximivärdena som specificerats för höjd och vikt i lastmallen eller så kan du åsidosätta inställningarna genom att ange nya värden. För att använda denna strategi, välj den i fältet **Lastuppbyggnadsstrategi** på snabbfliken **Inställningar** på sidan **Workbench för lastuppbyggnad**. Dessutom kan du lägga till dina egna uppbyggnadsstrategier genom att skapa en ny klass i programobjektträdet.
-
 
 
 

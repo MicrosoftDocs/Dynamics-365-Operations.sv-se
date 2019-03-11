@@ -1,13 +1,13 @@
 ---
-title: "Kundtjänstkataloger"
-description: "Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen för kataloger i Microsoft Dynamics 365 for Retail."
+title: Kundtjänstkataloger
+description: Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen för kataloger i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322753"
 ---
-
 # <a name="call-center-catalogs"></a>Kundtjänstkataloger
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktio
 
 Katalogfunktionerna i Dynamics 365 for Retail kan användas för flera ändamål. Urspungligen skapades funktionerna för katalogen för e-handelsintegration för tredje part. Katalogens konfiguration tillät att företag kunde skapa en grupp med produkter och attribut som kunde publiceras externt för förbrukning av en tredje parts e-handelslösning.
 
-När kundtjänsts supportkanal lades till i Dynamics 365 for Retail, utökades katalogkonceptet till att lägga till ytterligare funktioner för stöd och hantering relaterade till traditionella marknadsföringskataloger för försäljning direkt till konsument Ett direkt till konsument-företag ger ofta ut tryckta kataloger som sedan skickas till ett eller flera segment med kunder. Dessa kataloger har vanligtvis särskilda erbjudanden och erbjudanden som bara gäller om kunden anger en katalogidentifieringskod när beställningen görs.
+När kundtjänsts supportkanal lades till i Dynamics 365 for Retail utökades katalogkonceptet till att lägga till ytterligare funktioner för stöd och hantering relaterade till traditionella marknadsföringskataloger för försäljning direkt till konsument. Ett direkt till konsument-företag ger ofta ut tryckta kataloger som sedan skickas till ett eller flera segment med kunder. Dessa kataloger har vanligtvis särskilda erbjudanden och erbjudanden som bara gäller om kunden anger en katalogidentifieringskod när beställningen görs.
 
 Försäljning direkt till konsument-företag är mycket fokuserade på att följa upp svar på dessa kataloger så att kostnaderna för att tillverka och skicka dem är berättigade. För att spåra svar skrivs en kod traditionellt ut på baksidan av katalogen och denna kod begärs sedan och tillämpas när katalogmottagaren ringer för att göra en beställning per telefon (eller nu mer traditionellt kan koden anges när kunden gör en beställning online). Det finns olika branschtermer som har använts för att identifiera den här katalogen artikelspårningskod (inklusive nyckelkod, kampanjkod, katalogkod, källkoden) avses koden i Dynamics 365 for Retail som **Källkods-ID**.
 
@@ -93,7 +92,7 @@ När du konfigurerar produkter i katalogen, använd åtgärden **Produktsidlayou
 
 ## <a name="catalog-requests"></a>Katalogförfrågningar
 
-Medan kataloger som konfigurerats och publiceras i Dynamics 365 for Retail, kan funktionen **skicka katalog** användas. Den här funktionen finns på sidan **kundsökning** och **kundtjänst**. När du har valt en kundpost genom **Sök efter kund** eller medan du visar ett konto för valda kunder från **kundtjänst** kan användarna välja alternativet **skicka katalog** som leder till en dialogruta som tillåter användaren att välja från en lista över alla publicerade och aktiva kataloger. Användaren kan välja en katalog och en kvantitet och ett visst källkod-ID som ska skickas. När de klickar på knappen **skicka** kommer en begäran att lagras som sedan kan hanteras genom att skriva ut rapporten **Katalogförfrågningar**. Rapporten finns genom att gå till **Retail** \> **Kundtjänstrapporter** \> **Katalogförfrågningar - rapport**. Den listar alla katalogförfrågningar, inklusive kundinformation för namn och adress till kunden som begärde ändringen av katalogen. Rapporten kan användas internt eller data kan överföras till tredje part underliggande externa processer för att fysiskt skicka katalogen till kunden.
+Medan kataloger som konfigurerats och publiceras i Dynamics 365 for Retail, **skicka katalog** användas. Den här funktionen finns på sidan **kundsökning** och **kundtjänst**. När du har valt en kundpost genom **Sök efter kund** eller medan du visar ett konto för valda kunder från **kundtjänst** kan användarna välja alternativet **skicka katalog** som leder till en dialogruta som tillåter användaren att välja från en lista över alla publicerade och aktiva kataloger. Användaren kan välja en katalog och en kvantitet och ett visst källkod-ID som ska skickas. När de klickar på knappen **skicka** kommer en begäran att lagras som sedan kan hanteras genom att skriva ut rapporten **Katalogförfrågningar**. Rapporten finns genom att gå till **Retail** \> **Kundtjänstrapporter** \> **Katalogförfrågningar - rapport**. Den listar alla katalogförfrågningar, inklusive kundinformation för namn och adress till kunden som begärde ändringen av katalogen. Rapporten kan användas internt eller data kan överföras till tredje part underliggande externa processer för att fysiskt skicka katalogen till kunden.
 
 ## <a name="additional-features"></a>Ytterligare funktioner
 
@@ -102,4 +101,3 @@ På fliken **kataloger**, finns även alternativ för att konfigurera en **betal
 ## <a name="additional-notes"></a>Ytterligare noteringar
 
 När en källkod-ID gäller för en försäljningsorder i kundtjänst, används den för närvarande för att skapa priser, erbjudanden, skript och merförsäljning/korsförsäljnings som är katalogspecifika. Systemet kommer inte att förbjuda eller hindra att en produkt som inte finns i katalogen beställs på försäljningsordern. Om en artikel är beställd som inte tillhör katalogen, kommer systemet först att använda prisgrupp som definieras i kundtjänstkanalen **Prisgrupp** som definieras i kundtjänstkanalen (**Retail** \> **Kanaler** \> **Kundtjänst** \> **Alla kundtjänster**) för artikelpris eller erbjudanden. Om du inte hittar något specifikt kanalpris, används det grundläggande försäljningspriset för artikeln.
-

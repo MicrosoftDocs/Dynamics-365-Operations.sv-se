@@ -1,13 +1,13 @@
 ---
 title: Kostnadsredovisningsversioner
-description: "Det här avsnittet innehåller information om kostnadsversioner, hur du underhåller dem och datatyperna som du kan inkludera i dem. Det primära syftet med en kostnadsredovisningsversion är att den innehåller kostnadsposter om artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader."
+description: Det här avsnittet innehåller information om kostnadsversioner, hur du underhåller dem och datatyperna som du kan inkludera i dem. Det primära syftet med en kostnadsredovisningsversion är att den innehåller kostnadsposter om artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330159"
 ---
-
 # <a name="costing-versions"></a>Kostnadsredovisningsversioner
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +65,6 @@ Huvudsyftet med att aktivera inköpsprisdata är att definiera inköpsprisposter
 Om du vill aktivera inköpsprisinnehåll definierar du först en strukturlisteberäkningsgrupp som innehåller en självkostnadsmodell för artikelns inköpspris och tilldelar strukturlisteberäkningsgruppen till inköpta artiklar. Du använder sedan en självkostnadsmodell för strukturlisteberäkningsgruppen när du utför strukturlisteberäkningar med planerade kostnader för att beräkna försäljningpriset för tillverkade artiklar. 
 
 Inköpsprisposterna för artiklar används även som referensinformation. Genom att ändra status för en artikels inköpsprispost från **Väntande** till **Aktiv** går det att uppdatera artikelns basinköpspris. Basinköpspriset är dock inte platsspecifikt och går att åsidosätta manuellt. Artikelns basinköpspris används som standardinköpspris på inköpsorder.
-
 
 
 

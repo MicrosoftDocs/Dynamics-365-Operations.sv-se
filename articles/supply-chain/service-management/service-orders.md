@@ -1,31 +1,30 @@
 ---
 title: Serviceorder
-description: "En serviceorder representerar ett besök av en servicetekniker hos en kund ett specifikt datum."
+description: En serviceorder representerar ett besök av en servicetekniker hos en kund ett specifikt datum.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 647bbe9cca0167d33048ad07e092708f90b41fc3
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366522"
 ---
-
 # <a name="service-orders"></a>Serviceorder   
 
 [!include [banner](../includes/banner.md)]
@@ -88,6 +87,5 @@ Under andra halvåret upptäcker kunden att servicebesöken inträffar alltför 
 [Serviceorder (formulär)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
 
   
-
 
 

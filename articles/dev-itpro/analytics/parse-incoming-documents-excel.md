@@ -1,13 +1,13 @@
 ---
 title: Tolka inkommande dokument i Excel-format
-description: "Det här avsnittet innehåller information om hur du utformar elektronisk rapportering (ER)-format för att tolka innehållet på inkommande filer i Microsoft Excel."
+description: Det här avsnittet innehåller information om hur du utformar elektronisk rapportering (ER)-format för att tolka innehållet på inkommande filer i Microsoft Excel-filer.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 490a9325be25908564a40478a1ee29feea67fc02
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 32fd82f0e46068c7ed7bfcfddc4ff84603bd20b4
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367488"
 ---
-
 # <a name="parse-incoming-documents-in-excel-format"></a>Tolka inkommande dokument i Excel-format
 
 [!include[banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ Du kan utforma elektronisk rapportering (ER)-format för att analysera inkommand
 - Designar en ny modell och format och vill testa dem under körning. I det här fallet simulerar Excel verkliga programdata.
 - Hantera data utanför programmet i Excel och vill importera denna data för att skicka en specifik rapport.
 
-Om du vill veta mer om den här funktionen kan du spela upp uppgiftsguiderna **ER importera data från Microsoft Excel-fil (del 1: Designformat)** och **ER importera data från Microsoft Excel-fil (del 2:  data)** (delar av affärsprocessen 7.5.4.3 hämta/utveckla IT-tjänst/lösningskomponenter (10677)). Uppguftsguidera uppgift går igenom hur den inkommande Excel-filen kan tolkas med ER-formatet för att importera information från inkommande dokument och uppdatera programdata. Du kan hämta uppgiftsguidefilerna från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
+Om du vill veta mer om den här funktionen kan du spela upp uppgiftsguiderna **ER importera data från en Microsoft Excel-fil (Del 1: Designformat)** och **ER importera data från en Microsoft Excel-fil (Del 2: Importera data)** (delar av affärsprocessen 7.5.4.3 hämta/utveckla IT-tjänst/lösningskomponenter (10677)). Uppguftsguidera uppgift går igenom hur den inkommande Excel-filen kan tolkas med ER-formatet för att importera information från inkommande dokument och uppdatera programdata. Du kan hämta uppgiftsguidefilerna från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 Hämta följande filer för att slutföra uppgiftsguiderna som nämns ovan.
 
@@ -48,4 +47,3 @@ Om du inte har spelat upp följande uppgiftguide än [ER Skapa erforderliga konf
 | Beskrivning av innehåll    | Fil                                                            |
 |------------------------|-----------------------------------------------------------------|
 | ER modellkonfiguration | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
-

@@ -1,13 +1,13 @@
 ---
 title: Sortimenthantering
-description: "Det här avsnittet beskriver de grundläggande begreppen för sortimenthantering i Microsoft Dynamics 365 for Retail och ger överväganden för genomförande av projektet."
+description: Det här avsnittet beskriver de grundläggande begreppen för sortimenthantering i Microsoft Dynamics 365 for Retail och ger överväganden för genomförande av projektet.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365050"
 ---
-
 # <a name="assortment-management"></a>Sortimenthantering
 
 [!include [banner](../includes/banner.md)]
@@ -108,4 +107,3 @@ Sortiment som har definierats i Butik måste bearbetas innan de träder i kraft.
 - **Försäljning och returer utanför sortiment** – denna kunskap hjälper återförsäljare att effektivt hantera sina sortiment genom att låta dem begränsa antalet produkter till produkter som tillhör butikens grundläggande produktkombination. Den här funktionen hjälper dig också återförsäljare att hantera situationer där en produkt utelämnades av misstag från ett sortiment och om en produkt har returnerats utanför giltighetsdatumen för sortimentet.
 
 Om produktdata inte finns i kanaldatabasen ringer kassan huvudkontoret i realtid för att hämta den information som krävs så att produkten kan säljas, returneras eller sättas på en kundorder. Produktinformation som hämtas på det här sättet finns endast under tillämpningsområdet för den aktuella transaktionen. Produkten läggs inte till i sortimentdefinitionen. Därför görs följande samtal i realtid om det behövs.
-

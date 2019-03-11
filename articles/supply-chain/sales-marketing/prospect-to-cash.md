@@ -1,37 +1,36 @@
 ---
 title: Potentiell kund till kontanter
-description: "Detta avsnitt ger en översikt över lösningen Potentiell kund till pengar mellan Microsoft Dynamics 365 for Finance and Operations och Microsoft Dynamics 365 for Sales."
+description: Det här avsnittet innehåller en översikt över lösningen potentiell kund till pengar mellan Microsoft Dynamics 365 for Finance and Operations och Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309505"
 ---
-
 # <a name="prospect-to-cash"></a>Potentiell kund till kontanter
 
 [!include [banner](../includes/banner.md)]
 
-Denna Potentiell kund till pengar-lösning erbjuder direktsynkronisering mellan Dynamics 365 for Finance and Operations och Dynamics 365 for Sales. Potentiell kund till pengar-mallarna med funktion för dataintegrering möjliggör ett dataflöde för konton, produkter, kontakter, produkter, försäljningskvoter, försäljningsorder samt försäljningsfakturor Finance and Operations och Sales. Samtidigt som datan flödar mellan Finance and Operations och Sales kan du genomföra försäljnings- och marknadsföringsaktiviteter i Sales, samt hantera orderutförande genom att utnyttja lagerhantering i Finance and Operations. 
+Lösningen potentiell kund till pengar ger direkt synkronisering mellan Dynamics 365 for Finance and Operations och Dynamics 365 for Sales. Potentiell kund till pengar-mallarna med funktion för dataintegrering möjliggör ett dataflöde för konton, produkter, kontakter, produkter, försäljningskvoter, försäljningsorder samt försäljningsfakturor Finance and Operations och Sales. Samtidigt som datan flödar mellan Finance and Operations och Sales kan du genomföra försäljnings- och marknadsföringsaktiviteter i Sales, samt hantera orderutförande genom att utnyttja lagerhantering i Finance and Operations. 
 
 För mer information om integration av funktionen potentiell kund till kontanter se en kort YouTube-video [Integrering av potentiell kund till pengar](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
@@ -47,13 +46,13 @@ I den aktuella versionen innehåller lösningen Potentiell kund till pengar föl
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
 Potentiell kund till kontanter-integrering stöds på följande versioner:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (December 2017)
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (december 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (December 2017) - Application build 7.3.11971.56116 med med plattformsuppdatering 12 (7.0.4709.41129)
+- Dynamics 365 for Finance and Operations, Enterprise edition (december 2017) - programversion 7.3.11971.56116 med plattformsuppdatering 12 (7.0.4709.41129)
 
-### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
+### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (July 2017) - med plattformsuppdatering 8 (programversion 7.2.11792.56024 med plattform 7.0.4565.16212).
+- Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017) - med plattformsuppdatering 8 (programversion 7.2.11792.56024 med plattformsuppdatering 7.0.4565.16212).
 - Följande snabbkorrigeringar är nödvändiga:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Denna snabbkorrigering möjliggör synkronisering av försäljningsorder med funktionen för dataintegrering mellan Finance and Operations och Sales. Den innehåller även flera förbättringar.
@@ -65,7 +64,7 @@ Potentiell kund till kontanter-integrering stöds på följande versioner:
 
 ### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations version 1611 (november 2016)
 
-- Dynamics 365 for Finance and Operations version 1611 (november 2016) med plattformsuppdatering 8 eller senare
+- Dynamics 365 for Finance and Operations version 1611 (november 2016) med plattformsuppdatering 8 eller högre
 
 - Följande snabbkorrigeringar är nödvändiga:
 
@@ -81,6 +80,5 @@ Potentiell kund till kontanter-integrering stöds på följande versioner:
 
 Om du vill använda lösningen Potentiell kund till kontanter måste du installera följande komponenter:
 
-- Dynamics 365 for Sales, version 1612 (8.2.1.207) (DB 8.2.1.207) online eller en senare version.
+- Dynamics 365 for Sales version 1612 (DB 8.2.1.207) (8.2.1.207) online eller senare
 - Lösningen Potentiell kund till kontanter för Dynamics 365 for Sales, version 1.15.0.0 eller senare. Lösningen finns att hämta från AppSource. [Hämta Dynamics 365, potentiell kund till kontanter](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-

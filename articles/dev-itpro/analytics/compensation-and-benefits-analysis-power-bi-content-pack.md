@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll om kompensationer och förmåner"
-description: "Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för kompensationer och förmåner."
+title: Power BI-innehåll för kompensationer och förmåner.
+description: Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för kompensationer och förmåner.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6834940b16749461066e8f1000cbb7c2d4371109
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327445"
 ---
-
-# <a name="compensation-and-benefits-power-bi-content"></a>Power BI-innehåll om kompensationer och förmåner
+# <a name="compensation-and-benefits-power-bi-content"></a>Power BI-innehåll för kompensationer och förmåner.
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +38,7 @@ När du har anslutit innehållspaketet till dina Finance and Operations-data kom
 | Analys av kompensationer och förmåner | Timlön och avlönade anställda i företag, genomsnittlig timlön, genomsnittliga lön, anställda efter anställningstyp och planregistrering |
 | Anställningsförmåner          | Anmälan till medarbetare efter valt förmån                                                                                               |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Finance and Operations-data används för att fylla i rapporter i innehållspaketet för kompensationer och förmåner. Följande tabell visar enheterna som innehållspaketet baserades på.
@@ -68,4 +67,3 @@ Finance and Operations-data används för att fylla i rapporter i innehållspake
 | Personal\_ArbetareNamn             | Förnamn, efternamn och fullständiga namn                                                                       | Personal\_CurrentWorker, Personal\_TerminatedWorker, Personal\_WorkerTrend |
 | Personal\_ArbetareTitel            | Titel och tjänsteålder                                                                                   | Personal\_CurrentWorker, Personal\_TerminatedWorker, Personal\_WorkerTrend |
 | Personal\_WorkerTrend            | Arbetare över tid, antal anställda, företag och befattning                                                        | Personal\_Företag, Personal\_Kompensation, Personal\_GeographicLocation, Personal\_Resultat, Personal\_WorkerName, Personal\_ReportsToWorkerName, Personal\_CalendarOffset, Personal\_Datum, Personal\_WorkerTitle, Personal\_Demografi, Personal\_Anställning, Personal\_Jobb, Personal\_WorkerBenefit |
-

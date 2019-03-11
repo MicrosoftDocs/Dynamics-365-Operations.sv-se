@@ -1,13 +1,13 @@
 ---
-title: "Komponenter för ekonomisk rapport"
-description: "Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln innehåller en beskrivning av hur du ordnar och låser byggblock och hur du arbetar med byggblocksgrupper."
+title: Komponenter för ekonomisk rapport
+description: Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln innehåller en beskrivning av hur du ordnar och låser byggblock och hur du arbetar med byggblocksgrupper.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 0829c9eb54a8a5ca1f78bfe85de4779e541b945a
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368155"
 ---
-
 # <a name="financial-report-components"></a>Komponenter för ekonomisk rapport
 
 [!include [banner](../includes/banner.md)]
@@ -128,4 +127,3 @@ När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-

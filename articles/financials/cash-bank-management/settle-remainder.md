@@ -1,34 +1,31 @@
 ---
 title: Kvitta rest
-description: "Du kan kvitta det belopp som återstår från kvittningsaktiviteten genom att använda detta belopp på ett redovisningskonto."
+description: Du kan kvitta det belopp som återstår från kvittningsaktiviteten genom att använda detta belopp på ett redovisningskonto.
 author: mikefalkner
 manager: aolson
 ms.date: 10/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
-ms.search.validFrom: 2018-11-30
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2018-12-01
+ms.dyn365.ops.version: 8.1.3
+ms.openlocfilehash: 408a36a7cf221463b38260bd8830b422e58ccb64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 075d0f5dc0c9dc4e46dc92a2da75da9f7a207472
-ms.openlocfilehash: e67bd36adc92bffea48087d0322ab14e9c066a4e
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/06/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367212"
 ---
-
 # <a name="settle-remainder"></a>Kvitta rest
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan kvitta det belopp som återstår från kvittningsaktiviteten genom att använda detta belopp på ett redovisningskonto eller en annan kund. Du kan kvitta återstoden när du kvittar betalning av belopp som förts in i en journal eller när du bara kvittar öppna transaktioner.
 
@@ -73,4 +70,3 @@ Om du vill kvitta rest gör du följande:
 7)  Du kan också välja att skapa en betalningsjournal med kvittning rest eller bara bokföra dem utan en journal. Välj **Ja** för **Redigera i journal** för att skapa en betalningsjournal. Du kommer att kunna redigera den betalningsjournal som du skapar.
 8)  Klicka på **Kvitta rest**. Om du vill skapa en journal ändras knappen till **Skapa journal**. Klicka på **Skapa journal** istället
 9)  Om du har skapat en betalningsjournal kan sidan öppnas när du klickar på **Kvitta rest**. En journalrad läggs till journalen med kvitta återstående belopp som beloppet och kontot för kvittning av rest som motkonto. Om du har lagt till en kund eller leverantör så att du kan flytta kvittningsbeloppet till en annan kund eller leverantör, läggs ytterligare en rad till i journalen för att flytta kvittningsbeloppet till kunden eller leverantören.
-

@@ -1,13 +1,13 @@
 ---
-title: "Valutaomvärdering i ett konsolideringsföretag"
-description: "Detta avsnitt beskriver hur du omvärderar valuta i ett konsolideringsföretag."
+title: Valutaomvärdering i ett konsolideringsföretag
+description: Detta avsnitt beskriver hur du omvärderar valuta i ett konsolideringsföretag.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerExchAdjHist
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: ad0083018d2734cb1e36cbf5f94105376c57cdf9
 ms.openlocfilehash: 76290564037ab6f5c7a1cd4508a819bd603e8148
-ms.contentlocale: sv-se
-ms.lasthandoff: 10/02/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338761"
 ---
-
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valutaomvärdering i ett konsolideringsföretag
 
 [!include [banner](../includes/banner.md)]
@@ -85,7 +84,6 @@ Du kommer att se ytterligare transaktioner för rapportering valuta.
 | 130100         | Euro      | -500,00 | Ursprungligt belopp -500 × 1                          |
 | 801400         | Euro      | 250     | 500 – 333,33 = 166,67 166,67 83,33 + = 250           |
 | 801600         | Euro      | -250    | -500 – (-333,33) = -166,67 -166,67 + (-83,33) = -250 |
-
 
 
 

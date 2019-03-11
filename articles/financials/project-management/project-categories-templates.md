@@ -1,13 +1,13 @@
 ---
 title: Synkronisera projektutgiftskategorier mellan Finance and Operations och Project Service Automation
-description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera projektuppgiftskategorier mellan Microsoft Dynamics 365 for Finance and Operations och Microsoft Dynamics 365 for Project Service Automation."
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera projektutgiftskategorier mellan Microsoft Dynamics 365 for Finance and Operations och Microsoft Dynamics 365 for Project Service Automation.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,24 +17,23 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: c4d09fde2cf4335553243c136590f9f3135db97a
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347846"
 ---
-
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Synkronisera projektutgiftskategorier mellan Finance and Operations och Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera projektuppgiftskategorier mellan Microsoft Dynamics 365 for Finance and Operations och Microsoft Dynamics 365 for Project Service Automation.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera projektutgiftskategorier mellan Microsoft Dynamics 365 for Finance and Operations och Microsoft Dynamics 365 for Project Service Automation.
 
 > [!NOTE]
-> - Projektuppgiftsintegration, utgiftstransationskategorier, timuppskattningar, utgiftsuppskattningar och funktionslåsning är tillgängliga i Microsoft Dynamics 365 for Finance and Operations version 8.0.
-> - Integration av projektets verkliga värden finns i Microsoft Dynamics 365 for Finance and Operations version 8.01 eller senare.
-> - Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, efter det att du har installerat KB 4132657 och KB 4132660 kommer du att kunna använda mallarna för att integrera projektuppgifter, utgiftstransaktionskategorier, timuppskattningar, utgiftsuppskattningar och verkliga värden, och för att konfigurera funktionslåsning. Om du måste återställa redovisningsfördelningarna rekommenderar vi att du också installerar KB 4131710.
+> - Projektuppgiftsintegration, utgiftstransationskategorier, uppskattningar av timme, uppskattning av utgifter och funktionslåsning är tillgängliga i Microsoft Dynamics 365 for Finance and Operations version 8.0.
+> - Integrering av faktiska uppgifter finns i Microsoft Dynamics 365 for Finance and Operations version 8.0.1 eller senare.
+> - Om du använder Microsoft Dynamics 365 for Finance and Operations Enterprise edition 7.3.0, när du har installerat KB 4132657 och KB 4132660, kommer du att kunna använda mallarna för att integrera projektuppgifter, utgiftstransaktionskategorier, timuppskattningar, utgiftsuppskattningar och verkliga värden, och så här konfigurerar du funktionslåsning. Om du måste återställa redovisningsfördelningarna rekommenderar vi att du också installerar KB 4131710.
 
 ## <a name="data-flow-for-project-service-automation-and-finance-and-operations"></a>Dataflöde för Project Service Automation och Finance and Operations
 
@@ -65,7 +64,7 @@ Följande bild visar hur data synkroniseras mellan Project Service Automation oc
 
 ### <a name="template-and-task"></a>Mall och uppgift
 
-För att få åtkomst till mallen väljer du i administratörscentret för Microsoft PowerApps **Projekt** och sedan i det övre högra hörnet **Projekt** för att välja offentliga mallar.
+För att få åtkomst till mallen väljer du i administratörscentret för Microsoft PowerApps **Projekt** och sedan i det övre högra hörnet **Ny projekt** för att välja offentliga mallar.
 
 Följande mall och underliggande uppgift används för att synkronisera projektets utgiftskategorier från Finance and Operations till Project Service Automation:
 
@@ -125,4 +124,3 @@ I följande illustration visas ett exempel på uppgiftsmallmappning i dataintegr
 > Mappningen visar vilken fältinformation som kommer att synkroniseras från Project Service Automation till Finance and Operations.
 
 [![Mallmappning](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)](./media/ProjectExpenseCategoriesToFinOpsMapping.jpg)
-

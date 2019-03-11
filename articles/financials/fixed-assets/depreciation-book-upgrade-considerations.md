@@ -1,13 +1,13 @@
 ---
-title: "Uppgraderingsöversikt för avskrivningsregler"
-description: "I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations, version 1611, har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för \"bok\". Detta avsnitt listar några saker att beakta i samband med uppgraderingen."
+title: Uppgraderingsöversikt för avskrivningsregler
+description: 'I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations (1611), har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Detta avsnitt listar några saker att beakta i samband med uppgraderingen.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 805f6ab1cd1d0996e685278cc997f532213c76c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e95fa9dd15dfe5e6b26de61b5dbc1a9a6c0d768d
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359323"
 ---
-
 # <a name="depreciation-book-upgrade-overview"></a>Uppgraderingsöversikt för avskrivningsregler
 
 [!include [banner](../includes/banner.md)]
 
-I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations, version 1611, har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Detta avsnitt listar några saker att beakta i samband med uppgraderingen. 
+I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations (1611), har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Detta avsnitt listar några saker att beakta i samband med uppgraderingen. 
 
 Uppgraderingsprocessen flyttar din befintliga inställning och alla befintliga transaktioner till den nya bokstrukturen. Värdemodeller kommer att kvarstå som de är, som en bok som bokförs till huvudboken. Avskrivningsregler flyttas till en bok som har alternativet **Bokför i huvudboken** inställt på **Nej**. Journalnamn för avskrivningsregel flyttas till ett journalnamn för huvudbok som har bokföringsskiktet inställt på **Ingen**. Transaktioner för avskrivningsregler flyttas till transaktioner för anläggningstillgångar. 
 
@@ -81,7 +80,6 @@ När du använder metoden med systemgenererad nummersekvens (alternativ 1) anvä
 När du använder den användardefinierade, befintliga nummerserieinställningen (alternativ 2) kontrollera datauppgraderingen om nummerserien med det angivna omfånget finns i databasen för respektive partition och företag med transaktioner i avskrivningsregeln. Om den finns använder uppgraderingen bearbetning rad för rad för att allokera verifikationsnumren enligt nummerserien med hjälp av nummersekvensramverket. Om nummerserien inte finns med i angivet definitionsområde, kommer uppgraderingen att använda metoden med förvald, systemdefinierad nummersekvens för att allokera verifikationsnumren, samt skapa en ny nummersekvens med angivna standardparametrar efter allokeringen.
 
 Oavsett metod kommer datauppgraderingsskriptet också att använda nummerserien för fältet **Verifikationsserie** på de nya redovisningsjournalnamnen som skapas för de tidigare journalnamnen i avskrivningsregeln.
-
 
 
 

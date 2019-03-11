@@ -1,13 +1,13 @@
 ---
-title: "Nyheter och ändringar i Dynamics 365 for Operations-programvaruversion 1611 (november 2016)"
-description: "Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 for Operations version 1611."
+title: Nyheter och ändringar i Dynamics 365 for Operations version 1611 (november 2016)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Operations version 1611.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 7e907813323ef6b1c8b83675be75456f5844fa0a
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339083"
 ---
-
-# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheter och ändringar i Dynamics 365 for Operations-programvaruversion 1611 (november 2016)
+# <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheter och ändringar i Dynamics 365 for Operations version 1611 (november 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 for Operations version 1611.
+Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Operations version 1611.
 
 ## <a name="cost-accounting"></a>Kostnadsredovisning
 
@@ -101,7 +100,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 </tr>
 <tr>
 <td>Skapa rapporter genom att använda Excel.
-<blockquote>[!NOTE] Du måste köra Microsoft Excel 2016.</blockquote>
+<blockquote>[!NOTE] Du måste köra batchen Microsoft Excel 2016.</blockquote>
 </td>
 <td>Du kan exportera data för kostnadsredovisning direkt till Excel via datatabeller och använda Microsoft PivotTable om du vill skapa rapporter.</td>
 </tr>
@@ -265,7 +264,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 <td>Du kan ange en tidsperiod för en resultatgranskning och start- och slutdatum för granskningen anges automatiskt. Du kan dock ändra de standarddata efter behov.</td>
 </tr>
 <tr>
-<td>Öppna fem nya Power BI innehållspaket för personal</td>
+<td>Öppna fem nya Power BI-innehållspaket för personal</td>
 <td>De nya innehållspaketen gör det möjligt för personalorganisationer och personalansvariga att analysera följande:
 <p>Personalmätningar</p>
 <ul>
@@ -344,7 +343,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 <li>Sverige</li>
 </ul>
 </td>
-<td>Dynamik 365 for Operations är tillgänglig i ytterligare 18 länder. Som en del av vårt försök att skapa lokalisering och mer konfigurerbar, har lagstadgade elektroniska rapporteringsfunktioner konverterats till Elektronisk rapportering (ER)-konfigureringar och en del lagstadgade Microsoft SQL Server Reporting Services (SSRS)-rapporter har konverterats till ER-konfigurationer som använder Excel-mallar. Dessa konverterade funktioner nämns specifikt senare i den här tabellen.</td>
+<td>Dynamics 365 for Operations finns ytterligare 18 länder. Som en del av vårt försök att skapa lokalisering och mer konfigurerbar, har lagstadgade elektroniska rapporteringsfunktioner konverterats till Elektronisk rapportering (ER)-konfigureringar och en del lagstadgade Microsoft SQL Server Reporting Services (SSRS)-rapporter har konverterats till ER-konfigurationer som använder Excel-mallar. Dessa konverterade funktioner nämns specifikt senare i den här tabellen.</td>
 </tr>
 <tr>
 <td>Japan – gruppera anläggningstillgångar när du skriver ut formulär 26 och dess bifogade register.</td>
@@ -624,12 +623,12 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 | Konfigurera ER-rapporter för att skapa elektroniska handlingar i Excel, Microsoft Word eller PDF-format. | En konfiguration aktiverar ER-rapporter för att skapa elektroniska handlingar i tre olika format: OpenXML kalkylblad (Excel), Word och XML-formulärdataformat (XFDF) (PDF). Användarna kan välja ett format genom att lägga till en formatmall till en ER-rapport som Excel, Word eller PDF-dokument. |
 | Konfigurera ER-rapporter om du vill infoga data i sidhuvud och sidfötter av elektroniska handlingar, som skapas i OpenXML kalkylbladformat och för att kontrollera sidbrytningar. | ER-rapporter kan ange affärsdata i sidhuvud och sidfötter och styr även var sidbrytningar inträffar. Därför kan rapporterna stödja statiska övre och undre avsnitt för sidor i de elektroniska handlingar som skapas. Det går också att stödja viss växling av dessa dokument, så att de överensstämmer med juridiska krav. |
 | Konfigurera målet för ER-rapporter, så att utleveransens skickas som e-postmeddelanden och så att affärsdata och ER-logik (uttryck) kan användas för att ange e-postadressen som ska användas under körning. | Tidigare när du konfigurerade en ER-mål, kan e-postadress för utleveransens mottagare definieras vid designtillfället. Du kan nu konfigurera ett uttryck i ER-formatet. Detta uttryck kan sedan markeras i en mål som källa för e-postadressen för varje formatkonfiguration och varje utleveranskomponent (mapp eller fil) separat. Därför, när en ER-rapport körs, kan varje fil som skapas, e-postas till en annan mottagare och e-postadressen kan definieras baserat på ER-logik och affärsdata. |
-| Konfigurera målen för ER-rapporter, så att problemet skickas till Microsoft SharePoint-mappen som antingen en ny namngiven fil eller en ny version av den befintliga filen och så att affärsdata kan användas i ramverket för Microsoft Power BI som antingen en datauppsättning eller en rapport. | När du konfigurerar ER-rapporter kan du nu enkelt (utan kodning) förbereda de begärda affärsdata så att den kan användas av Power BI-ramverket. När du kör dessa ER-rapporter kan du erhålla Power BI-ramverket med passande affärsdata och/eller Excel-rapporter som redan är tillgängliga. Om du schemalägger rapportkörningarna i regelbundet återkommande läge, kan du upprätta den schemalagda distributionen av affärsdata från Dynamics 365 for Operations till Power BI för att stödja uppdateringsschemat för Power BI-baserade rapporter. |
+| Konfigurera målen för ER-rapporter, så att problemet skickas till Microsoft SharePoint-mappen som antingen en ny namngiven fil eller en ny version av den befintliga filen och så att affärsdata kan användas i ramverket för Microsoft Power BI som antingen en datauppsättning eller en rapport. | När du konfigurerar ER-rapporter kan du nu enkelt (utan kodning) förbereda de begärda affärsdata så att den kan användas av Power BI-ramverket. När du kör dessa ER-rapporter kan du erhålla Power BI-ramverket med passande affärsdata och/eller Excel-rapporter som redan är tillgängliga. Om du schemalägger rapportkörningarna i regelbundet återkommande läge, kan du upprätta den schemalagda distributionen av affärsdata från Dynamics 365 for Operations till Power BI för att stödja uppdateringsschemat för Power BI-baserade rapporter. |
 | Konfigurera ER-rapporter till att använda en del av de elektroniska handlingar som redan har skapats som en datakälla för att skapa resten av dokumentet. | Du kan konfigurera ER-rapporter som skapar utleveransen i textformat för att göra dokumentets räkning av rader. Den här informationen kan sedan användas i andra delar av dokumentet för att skapa rader som innehåller sammanfattningsuppgifter. Sammanfattningsuppgifter (summor och nummer) kan beräknas och skrivas ut till de elektroniska handlingarna som skapas, utan att kräva ytterligare transformeringar av data. Därför förbättrar den här funktionen resultatet av rapportkörning och gör framtida underhållet av det konfigurerade ER-formatet enklare. |
 | Konfigurera ER-rapporter för att ange filnamnstillägget för elektroniska handlingar som skapas i textformat. | Du kan konfigurera ER-rapporter om du vill skapa utleveransen i textformat, så att den kan sparas som en fil som har ett specifikt tillägg. Förutom standardtillägget .txt kan du konfigurera tillägg som till exempel .csv och .prn, i enlighet med formatspecifikationen. |
 | Skapa nya ER-rapporter som baseras på en specifik version av en ER-modell. | Tidigare när du skapade ett nytt ER-format, kunde endast den allra senaste versionen av den valda ER-modellen användas som formatets datakällplats. Du kan du välja någon tillgänglig version av den valda ER-modellen. Den här funktionen låter dig underhålla ER-rapporter för innevarande år och utforma en ny version av ER-modellen för nästa år parallellt. |
 | Sök datakällor och format/modeller efter text eller den valda artefakten i ett klick. Lös eventuella ombaseringskonflikter och konflikter mellan konfigurationer proaktivt. Konfigurera ER-rapporter om du vill skapa flera valideringsmeddelanden för fel som upptäcks, tills rapportkörningen stoppas. | Flera förbättringar av användarupplevelse (UX) i ER-ramverket hjälper användare att arbeta effektivare och enklare med ER. |
-| Visa **ER**-arbetsytan på Power BI-rapporter. | Användarna kan konfigurera sidan **ER-arbetsyta** så att den innehåller nya menykommandon och levande paneler som kör de Power BI-baserade transaktioner. |
+| Visa **ER**-arbetsytan på Power BI-rapporter. | Användarna kan konfigurera sidan **ER**-arbetsyta så att den innehåller nya menykommandon och levande paneler som kör de Power BI-baserade transaktioner. |
 
 ## <a name="payroll"></a>Lön
 
@@ -643,7 +642,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 <tbody>
 <tr>
 <td>Konfigurera löneposter och bearbeta lönekonton genom att använda funktionen som motsvarar kontoplanens funktion för modulen <strong>Lön</strong> i Microsoft Dynamics AX 2012 R3.</td>
-<td>Du kan nu konfigurera och bearbeta amerikansk lönelista, med hjälp av en viss funktion som motsvarar kontoplanens funktion som anges i AX 2012 R3.
+<td>Du kan nu konfigurera och bearbeta amerikansk lönelista, med hjälp av en viss funktion som motsvarar kontoplanens funktion som anges i AX 2012 R3.
 <ul>
 <li>Du kan konfigurera lönecykler och löneperioder, arbetscykler och arbetsperioder, ersättningskoder och ersättningskodgrupper, tidsplaner, tjänstledighetstyper och förmånsperiodiseringsplaner.</li>
 <li>Du kan också ställa in obligatoriska avdrag för både förmåner och skatt och registrera löneinformation för befattningar och anställda i rapporterings- och analyssyfte.</li>
@@ -764,7 +763,7 @@ Sömlös omni-kanalkommers refererar till hantering och orderbearbetning mellan 
 
 | Vad du kan göra | Varför detta är viktigt |
 |-----------------|-----------------------|
-| Visa anpassade produktrekommendationer vid flera beröringspunkter i kassan (POS) för att avgöra vad kunden kan vara intresserad av baserat på deras tidigare inköp, artiklar i deras önskelista och artiklar som andra kunder har köpt online och i fysiska butiker | För återförsäljare med stora kataloger hjälper anpassade rekommendationer kunden att hitta produkter och stärka butikens associerade med intelligent kundbas. Genom att visa upp riktade till en kunds intresse och inköpsvanor kan produktrekommendationer hjälpa återförsäljare med medförsäljning och förbättrad kundvård. I Microsoft Dynamics 365 for Retail är produktrekommendationer utrustade med kognitiva tjänster och Microsoft Azure-maskininlärning. |
+| Visa anpassade produktrekommendationer vid flera beröringspunkter i kassan (POS) för att avgöra vad kunden kan vara intresserad av baserat på deras tidigare inköp, artiklar i deras önskelista och artiklar som andra kunder har köpt online och i fysiska butiker | För återförsäljare med stora kataloger hjälper anpassade rekommendationer kunden att hitta produkter och stärka butikens associerade med intelligent kundbas. Genom att visa upp riktade till en kunds intresse och inköpsvanor kan produktrekommendationer hjälpa återförsäljare med medförsäljning och förbättrad kundvård. I Microsoft Dynamics 365 for Retail produktrekommendationer drivs av kognitiva tjänster och Microsoft Azure maskininlärning. |
 
 ### <a name="pos-task-recorder"></a>Uppgiftsregistrering i kassan
 
@@ -783,7 +782,7 @@ Butiksystem är ett distributionsval för återförsäljare som hjälper till at
 - Retail Server och butiksdatabasen är i butiken, tillsammans med Async-klienttjänsten.
 - Retail Server i butiken kommunicerar direkt med Application Object Server (AOS) i huvudkontor för butikssystem.
 - Stödja korsterminalscenarier där det inte finns någon anslutning till huvudkontor.
-- Retail Modern POS och Cloud POS kommunicerar alltid med Retail Server i butiken.
+- Retail Modern POS Cloud POS kommunicerar alltid med Retail Server i butiken.
 - Stödja Retail Modern POS och Cloud POS där det inte finns anslutning till huvudkontor.
 - Stödja en Retail Modern POS-specifik offlinedatabas (som isoleras till varje Retail Modern POS-instans) där det inte finns någon anslutning till huvudkontor.
 - Autentisering baseras på tjänst-till-tjänst endast för butikssystem.
@@ -801,7 +800,7 @@ Butiksystem är ett distributionsval för återförsäljare som hjälper till at
 | En återförsäljare kan ha säker kommunikation mellan lokala butikssystemet och huvudkontor. | Återförsäljaren kan kommunicera säkert från butikssystem, om det finns en möjlighet att ansluta. |
 | IT-chefen och Microsoft Operations kan övervaka och rapportera i lokala butikssystem (diagnostik- och rapporteringsändringar). | IT-chefen och Microsoft Operations kan övervaka butikssystemet på säkert sätt och felsöka effektivt. |
 
-### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Universal Windows Platform-app för Retail Modern POS
+### <a name="universal-windows-platform-app-for-retail-modern-pos"></a>Universal Windows-plattform app för Retail Modern POS
 
 För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-program för stationära maskiner och surfplattor och som Cloud POS för webbläsare för stationära datorer surfplattor. I denna version konverteras Retail Moderns POS till Universal Windows Platform (UWP)-app. Den här ändringen kommer att aktivera Retail Modern POS till att köras på alla Windows 10-enheter (dator, surfplatta eller telefon) och till om med växla mellan vyerna för Continuum-aktiverade enheter.
 
@@ -819,7 +818,7 @@ För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-progr
 | Som leverantör får du information om beloppet för det avsända lagret som överförs till kunden. | Om du vill fakturera en kund, kräver leverantören information om det råmaterial som köpts från försändelselagret och datum för inköpet. Leverantören kan också övervaka det lokala lagret hos en kund med hjälp av leverantörsamarbetesgränssnittet. |
 | Flytta det leverantörsägda lagret, med hjälp av en överföringsjournal. | För att spåra den fysiska positionen av de leverantörsägda lagret måste du kunna registrera positionen i systemet. Genom att använda en överföringsjournal kan du registrera den fysiska flyttningen av lager, som till exempel flytt från en plats på ett lagerställe till en annan plats på det lagerstället. |
 | Justera det leverantörsägda lagret, med hjälp av en inventeringsjournal. | Det är viktigt att du synkroniserar systemlagerbehållningen med det faktiska fysiska lagret. Det leverantörsägda lagret kan justeras in och ut, med hjälp av redovisningsprocesser som t.ex. kvantitetsjustering och inventeringsjournal. |
-| Få mer information om försändelsesupport i Dynamics 365 for Operations | För mer information om support för försändelseprocesses, se [Försändelse](../../supply-chain/inventory/consignment.md), [Ställa in försändelse](../../supply-chain/inventory/set-up-consignment.md), [Skapa en order för försändelseåteranskaffning (uppgiftsgudie)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) och [Ändra ägarskapet för försändelselagret baserat på produktionsbegäran (uppgiftsgudie)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Lär dig mer om stöd för försändelse i Dynamics 365 for Operations | För mer information om support för försändelseprocesses, se [Försändelse](../../supply-chain/inventory/consignment.md), [Ställa in försändelse](../../supply-chain/inventory/set-up-consignment.md), [Skapa en order för försändelseåteranskaffning (uppgiftsgudie)](../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) och [Ändra ägarskapet för försändelselagret baserat på produktionsbegäran (uppgiftsgudie)](../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Leverantörssamarbete (tidigare känt som leverantörsportalen)
 
@@ -828,7 +827,7 @@ För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-progr
 | Låt leverantörer svara på varje inköpsorderrad och föreslå ändringar. | I vissa fall vill leverantörer acceptera en del inköpsorderrader men avvisar andra. Leverantörer kan nu individuellt hantera inköpsorderrader. Varje rad kan avvisas, accepteras eller accepterats med ändringar. T.ex. kan leverantörer ändra leveransdatumet, dela leverans och kvantitet eller föreslå en alternativ artikel. |
 | Aktivera leverantörer om du vill hantera information om kontaktperson. | Leverantörer kan behålla kontaktpersoninformation för det deras företag. Denna information omfattar namn och telefonnummer, e-postadress. Åtkomst till den här funktionen beviljas genom en dedikerad säkerhetsroll. |
 | Dela dokument relaterade till inköpsorder med leverantörer. | När du måste dela ett dokument med en leverantör, till exempel ett dokument om behov, är det lämpligt att koppla dokumentet till den relevanta inköpsordern. Leverantören kan sedan dela anteckningar och bilagor med kunden, genom att koppla dokumentet till hans eller hennes svar på inköpsordern. Dokumenthantering är det underliggande stödjande ramverket och bara anteckningar och bilagor som klassificeras som ”externa” kan delas med leverantörer. |
-| Reservera nya leverantörsanvändare. | Om dina leverantörer använder leverantörsamarbetesgränssnittet har ett sömlöst sätt att begära nya användarkonton, när nya kontakter behöver åtkomst till leverantörssamarbete. Anskaffningsproffs kan skicka in begäran om ett användarkonto för en kontaktperson på leverantörsorganisationen. En leverantörskontaktperson som redan är en leverantörssamarbetesanvändare kan också skicka in den här typen av begäran. Denna begäran skapar slutligen en ny användare i Dynamics 365 for Operations som har leverantörspecifika säkerhetsroller. Den underlättar också begäran till Microsoft Azure B2B-portalen att ge användaren ett nytt Azure Active Directory (Azure AD)-användarkonto). Leverantörer kan också begära att specifika leverantörsanvändarkonton inaktiveras, eller att säkerhetsroller ändras. |
+| Reservera nya leverantörsanvändare. | Om dina leverantörer använder leverantörsamarbetesgränssnittet har ett sömlöst sätt att begära nya användarkonton, när nya kontakter behöver åtkomst till leverantörssamarbete. Anskaffningsproffs kan skicka in begäran om ett användarkonto för en kontaktperson på leverantörsorganisationen. En leverantörskontaktperson som redan är en leverantörssamarbetesanvändare kan också skicka in den här typen av begäran. Denna begäran skapar slutligen en ny användare i Dynamics 365 for Operations som har leverantörspecifika säkerhetsroller. Gör det också lättare en begäran till den Microsoft Azure B2B-portal för att etablera användaren med ett nytt Azure Active Directory (Azure AD) användarkonto. Leverantörer kan också begära att specifika leverantörsanvändarkonton inaktiveras, eller att säkerhetsroller ändras. |
 | Få mer information om support för leverantörssamarbete i Dynamics 365 for Operations. | Mer information om leverantörssamarbete finns i [Leverantörssamarbete med externa leverantörer](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Leverantörssamarbete med kunder](../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Hantera användare av leverantörssamarbete](../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Skapa och underhåll leverantörssamarbeten](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) och [Faktureringsarbetsyta för leverantörssamarbeten](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). |
 
 ### <a name="intercompany-order-processing"></a>Koncerninterna orderbearbetning
@@ -884,8 +883,8 @@ För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-progr
 
 | Vad du kan göra | Varför detta är viktigt |
 |-----------------|-----------------------|
-| Forma olika behållaretyper. | Du kan använda olika behållartyper i lagerstället för att optimera lagring och för andra orsaker. Den nya behållartypenheten har de fysiska egenskaperna för behållartyperna. Du kan nu associera registreringsskyltar med en viss behållartyp och använda lagringsbegränsningsplats. Du kan till exempel använda den här funktionen om du vill kontrollera hur många lastpallar (eller andra behållartyper) som du tillåter på en viss plats. Behållartyper också har lagts till enhetsekvensgrupper för att lägga till standardbehållartyper för inleveransen. Behållartyper kan användas med inkommande och utgående platsdirektiv. De kan även användas i lagerbehållningsvyn för att bestämma hur många behållartyper som för närvarande finns i lager. Mer information finns i blogginlägget [Använda registreringsskyltar som är kopplade till en typ av behållare för att påskynda lagerhanteringsprocesser](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/). Även om det här blogginlägget beskriver en uppdatering till Microsoft Dynamics AX 2012, har samma support nu lagts till Dynamics 365 for Operations. |
-| Återför leveranser. | I ett lagerställe måste du vara en stånd att hantera sena ändringar. Några varor kan till exempel skadas så att du inte kan skicka dem. Alternativt kan en kund göra en sen begäran om att annullera eller ändra en order. Dynamics 365 for Operations låter dig nu återföra en försändelse. Därför kan du avbryta en följesedel, så att du kan uppdatera den senare med de korrekta kvantiteterna. På samma sätt på det inkommande flödet, kan du avbryta produktinleveranser, så att en uppdaterad version kan skapas. |
+| Forma olika behållaretyper. | Du kan använda olika behållartyper i lagerstället för att optimera lagring och för andra orsaker. Den nya behållartypenheten har de fysiska egenskaperna för behållartyperna. Du kan nu associera registreringsskyltar med en viss behållartyp och använda lagringsbegränsningsplats. Du kan till exempel använda den här funktionen om du vill kontrollera hur många lastpallar (eller andra behållartyper) som du tillåter på en viss plats. Behållartyper också har lagts till enhetsekvensgrupper för att lägga till standardbehållartyper för inleveransen. Behållartyper kan användas med inkommande och utgående platsdirektiv. De kan även användas i lagerbehållningsvyn för att bestämma hur många behållartyper som för närvarande finns i lager. Mer information finns i blogginlägget [Använda registreringsskyltar som är kopplade till en typ av behållare för att påskynda lagerhanteringsprocesser](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/20/use-of-license-plates-associated-with-a-container-type-to-drive-warehouse-management-processes/). Även om det här blogginlägget beskriver en uppdatering Microsoft Dynamics AX 2012, har samma support nu lagts till Dynamics 365 for Operations. |
+| Återför leveranser. | I ett lagerställe måste du vara en stånd att hantera sena ändringar. Några varor kan till exempel skadas så att du inte kan skicka dem. Alternativt kan en kund göra en sen begäran om att annullera eller ändra en order. Dynamics 365 for Operations låter dig nu återställa en försändelse. Därför kan du avbryta en följesedel, så att du kan uppdatera den senare med de korrekta kvantiteterna. På samma sätt på det inkommande flödet, kan du avbryta produktinleveranser, så att en uppdaterad version kan skapas. |
 | Använd lastpallar som har blandat artiklar. | Du kan nu ta emot och registrera ”blandad” lastpall. En blandad lastpall består av olika artiklar, som samlas i en lastpall för en eller flera inköpsorder, eller rader. Alla registreringar kan sammanfattas på en målregistreringsskylt. Den här processen har aktiverats genom mobil enhet för lagerställe. När till exempel lastpallen av blandade artiklar ankommer till lagerstället, identifierar inleveransansvarige artiklarna och kvantiteterna på lastpallen innan lastpallen flyttas till dedikerade platser. Platserna anges med arbetsmallar och platsdirektiv. Om platserna fördelas över flera artiklar, som har fasta platser, skapar den här funktionen så många satta inlagringsarbetsrader som det finns olika artiklar på den blandade lastpallen. Den här funktionen gör registreringar och placeringen av mottagna blandade artikellastpallar snabbare och mer flexibel. Mer information finns i blogginlägget [Ta emot och registrera en lastpall med blandade källdokumentrader med hjälp av 1 registreringsskylt – inköpsordermatchning](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/13/receive-and-register-a-pallet-with-mixed-source-document-lines-using-1-license-plate-purchase-order-matching/) och information om support för blandad pallet support i [ finns i tillkännagivandet av vår senaste kumulativa uppdateringen](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/06/30/whats-new-in-cu11-for-wms-and-tms/). Även om det här blogginlägget beskriver en uppdatering AX 2012, har samma support nu lagts till Dynamics 365 for Operations. |
 
 ### <a name="minor-feature-enhancements-in-supply-chain-management"></a>Mindre funktionsförbättringar i Hantering av underleverantörer
@@ -946,4 +945,3 @@ För närvarande är Retail Modern POS endast tillgänglig som Windows 8.1-progr
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Nyheter eller ändringar](whats-new-changed.md)
-

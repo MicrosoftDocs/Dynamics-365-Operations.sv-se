@@ -1,13 +1,13 @@
---- 
-title: "Skapa avancerade regler för journaler"
-description: "Den här proceduren går igenom hur du kan skapa avancerade regler för journaler."
+---
+title: Skapa avancerade regler för journaler
+description: Den här proceduren går igenom hur du kan skapa avancerade regler för journaler.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalControl, CompanyLookup, LedgerJournalPostControl
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: e3fc764a6fa92a050084ae610a11acac46995d2a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1bb1663b0f5d7e6a550e1ffd2ee2edf3771a13b3
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326180"
 ---
 # <a name="create-advanced-rules-for-journals"></a>Skapa avancerade regler för journaler
 
@@ -57,5 +57,4 @@ Den här proceduren går igenom hur du kan skapa avancerade regler för journale
 3. Välj Efter användargrupp i Hur vill du ställa in bokföringsrestriktioner.
 4. Markera gruppen du vill tillåta bokföring för när det gäller journalnamnet i trädet.
 5. Klicka på OK.
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Definiera ER-modellmappningar och välj datakällor för dem"
-description: "I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan välja datakällor för en datamodell för elektronisk rapportering."
+---
+title: Definiera ER-modellmappningar och välj datakällor för dem
+description: I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan välja datakällor för en datamodell för elektronisk rapportering.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5f2f2c699514d723f42f5d1fb25724f46dfc4f4
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348881"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definiera ER-modellmappningar och välj datakällor för dem
 
@@ -51,7 +51,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 
 ## <a name="define-required-data-sources-for-the-current-model-mapping"></a>Definiera obligatoriska datakällor för den aktuella modellmappningen
 1. Klicka på Designer.
-2. Välj Dynamics 365 for Dynamics 365 for Operations\Table records i trädet.
+2. Välj "Dynamics 365 for Operations\Table records" i trädet.
 3. Klicka på Lägg till rot.
     * Ange den här datakällan för att komma åt betalningstransaktioner.  
 4. Skriv "Transaktioner" i fältet Namn.
@@ -110,7 +110,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 41. Expandera "Transaktioner" i trädet.
 42. Expandera eller komprimera Transactions\$Amount i trädet.
 43. Expandera eller komprimera "Transaktioner" i trädet.
-44. Välj Dynamics 365 for Dynamics 365 for Operations\Table records i trädet.
+44. Välj "Dynamics 365 for Operations\Table records" i trädet.
 45. Klicka på Lägg till rot.
     * Ange den här datakällan för att komma åt företagets bankkontodetaljer.  
 46. Skriv "BankAccount" i fältet Namn.
@@ -157,5 +157,4 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 70. Stäng sidan.
 71. Stäng sidan.
 72. Stäng sidan.
-
 

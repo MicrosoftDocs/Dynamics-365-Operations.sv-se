@@ -1,13 +1,13 @@
---- 
-title: "Ställ in bonusavskrivning"
-description: "I den här proceduren visas hur du skapar en särskild avskrivning och kopplar den till en förteckning över anläggningstillgångar."
+---
+title: Ställ in bonusavskrivning
+description: I den här proceduren visas hur du skapar en särskild avskrivning och kopplar den till en förteckning över anläggningstillgångar.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus, AssetGroup, AssetGroupBookSetup, AssetGroupSetupBonus
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6bbd6b78d05fcc9d95f6e6409db2619a210ad760
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7e6ebb13084626b477b6e0b24acdc09e2c0d3d6d
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339221"
 ---
 # <a name="set-up-bonus-depreciation"></a>Ställ in bonusavskrivning
 
@@ -48,5 +48,4 @@ I den här proceduren visas hur du skapar en särskild avskrivning och kopplar d
 7. Ange eller välj ett värde i fältet Special depreciation allowance.
     * Förvalet för procentandel eller belopp stammar från de särskilda avskrivningsinställningarna.  
 8. Välj ett tal i fältet Prioritet.
-
 

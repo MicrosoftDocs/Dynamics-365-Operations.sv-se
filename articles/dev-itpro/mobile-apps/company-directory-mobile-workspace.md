@@ -1,13 +1,13 @@
 ---
-title: "Mobila arbetsytan för företagskatalog"
-description: "Det här avsnittet innehåller information om mobila arbetsytan för företagskatalog som låter användarna visa och kontakta andra medarbetare i din organisation."
+title: Mobila arbetsytan för företagskatalog
+description: Det här avsnittet innehåller information om mobila arbetsytan för företagskatalog som låter användarna visa och kontakta andra medarbetare i din organisation.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308631"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Mobila arbetsytan för företagskatalog
 
 [!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **företagskatalog**. Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.
 
-Denna mobila arbetsyta kan användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
+Denna mobila arbetsyta kan användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.
 
 ## <a name="overview"></a>Översikt
 Den mobil arbetsytan **företagskatalog** låter användarna utföra följande uppgifter:
@@ -58,7 +57,7 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </ul>
 </td>
 <td>Systemadministratör</td>
-<td>Om du inte redan använder Finance and Operations i din organisation, se <a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö</a>. Om du inte redan använder Talent i din organisation kan systemadministratören komma åt en utvärderingsversion från webbsidan <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-användare</a>.
+<td>Om du inte redan använder Finance and Operations i din organisation, se <a href="../deployment/deploy-demo-environment.md"> Distribuera en demomiljö</a>. Om du inte redan använder Talent i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://www.microsoft.com/en-us/dynamics365/talent">webbsidan Talent</a>.
 </td>
 </tr>
 <tr class="even">
@@ -77,7 +76,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 ## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 1.  Starta appen i din mobila enhet.
-2.  Ange din webbadress för Microsoft Dynamics 365.
+2.  Ange din Microsoft Dynamics 365 URL.
 3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
 4.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
@@ -91,4 +90,3 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 1.  I mobilappen väljer du **Företagskatalog**.
 2.  I fältet **söka** anger du medarbetarens förnamn, efternamn, titel eller avdelning för att starta sökningen.
 3.  Välj en medarbetare. Sidan **profil för medarbetaren** visas. Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.
-

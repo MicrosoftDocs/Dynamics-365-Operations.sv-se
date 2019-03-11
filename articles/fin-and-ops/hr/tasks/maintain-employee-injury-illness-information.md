@@ -1,13 +1,13 @@
---- 
-title: "Underhålla information om medarbetares skador och sjukdomar"
-description: "Vi rekommenderar att du slutför uppgiftsguiden Ställ in skador och sjukdomar först eftersom en del av inställningsinformationen används här."
+---
+title: Underhålla information om medarbetares skador och sjukdomar
+description: Vi rekommenderar att du slutför uppgiftsguiden Ställ in skador och sjukdomar först eftersom en del av inställningsinformationen används här.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 03d1e7f7b648e65cbe628aa4ff8b39dfa03ce96b
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332620"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Underhålla information om medarbetares skador och sjukdomar
 
@@ -92,5 +92,4 @@ Registreringen av den här uppgiften omfattar de grundläggande stegen för att 
     * Exempel: röntgenundersökning bekräftar fraktur, spjälning måste göras  
 36. Klicka på Spara.
     * Ärendets status kan när som helst uppdateras.  Ange ärendet till pågående om behandlingen av sjukdomen eller skadan pågår.  När du stänger incidenten kan du bara lägga till eller ta bort kostnader, behandlingar eller arkiveringar som är relaterade till incidenten.  Öppna ärendet på nytt för att ändra annan information.  
-
 

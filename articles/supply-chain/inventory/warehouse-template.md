@@ -1,32 +1,31 @@
 ---
-title: "Konfigurera ett lagerställe med hjälp av en konfigurationsmall"
-description: "Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall."
+title: Konfigurera ett lagerställe med hjälp av en konfigurationsmall
+description: Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall.
 author: perlynne
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338071"
 ---
-
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurera ett lagerställe med hjälp av en konfigurationsmall
 
 [!include [banner](../includes/banner.md)]
@@ -94,9 +93,8 @@ Du kan hämta en zip-fil för datapaketet. Den här filen innehåller alla data 
 
 Loggen **Visa körning** ger detaljerad information om varje dataenhet som importeras. Du kan använda mellanlagringsdatavyn för att snabbt komma till måldata. På så sätt visas hur de importerade data ser ut på tillhörande sidor i programmet. När du använder standarddatamallar fungerar importsekvensen för varje datatabell på fördefinierade sätt, för att garantera att alla beroende data importeras först. Om anpassade datatabeller ingår i projektet, måste du kontrollera att du angett rätt sekvens. Mer information finns i [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Om du vill veta mer om hur du använder lagermall för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du se den här 3 minuters videon på YouTube: [Använd lagermall för att kopiera konfigurationen i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du titta på den här 3-minuters videon på YouTube: [Använd lagermall för att kopiera konfigurationen i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relaterat ämne
 
 [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md)
-

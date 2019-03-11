@@ -1,13 +1,13 @@
 ---
-title: "Ta bort Talent-miljöer"
-description: "I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 for Talent."
+title: Ta bort Talent-miljöer
+description: I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: e0422a5b7ac227ad03ccafb4e34e614dc770a363
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 5080f1ec182b8cbdf281967185a1afeb9887f682
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306345"
 ---
 # <a name="remove-talent-environments"></a>Ta bort Talent-miljöer
 
@@ -36,7 +36,7 @@ Talent testkörning etableras med en 60 dagars giltighetspolicy. Ägare av test
 
 1. Gå till [PowerApps Admin center](https://admin.businessplatform.microsoft.com/).
 2. Välj **Miljö**.
-3. Välj testkörningsmiljö som har ett namnmönster ungefär så här: TestDrive -alias@domain
+3. Välj testkörningsmiljö som har ett namnmönster ungefär så här: TestDrive - alias@domain
 4. Välj **Ta bort** och bekräfta beslutet. 
 
 Den befintliga testkörningsmiljön tas bort. Om det tas bort kan du skaffa en ny testkörningmiljö. 
@@ -73,5 +73,4 @@ Gör följande om du vill ta bort en Talent-miljö från en befintlig PowerApps-
 6. I LCS-projektet väljer du fliken **App-hantering for Talent**. 
 7. Välj instansen som du vill ta bort, som bör markeras med distributionsstatusen **Misslyckad**.
 8. Välj **Ta bort instans** och bekräfta ditt val. 
-
 

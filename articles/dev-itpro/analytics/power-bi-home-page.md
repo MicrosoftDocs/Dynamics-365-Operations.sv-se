@@ -1,13 +1,13 @@
 ---
-title: "PowerBI.com-startsida för lösningar"
-description: "Det här avsnittet listar PowerBI.com-lösningar som är tillgängliga och hänvisar till resurser där du kan lära dig mer om lösningen."
+title: PowerBI.com-startsida för lösningar
+description: Det här avsnittet listar PowerBI.com-lösningar som är tillgängliga och hänvisar till resurser där du kan lära dig mer om lösningen.
 author: sericks007
 manager: AnnBe
 ms.date: 05/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: PowerBIPbixDeployForm
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 64b1c09b781b7bdbaf01a374e321b8dd9418f3da
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 1a391c0111ad39cb8c4ec809eccb3eb7cfb18687
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316704"
 ---
-
 # <a name="powerbicom-solutions-home-page"></a>PowerBI.com-startsida för lösningar
 
 [!include [banner](../includes/banner.md)]
 
-Följande PowerBI.com-lösningar är tillgängliga för Dynamics 365 för Finance and Operations-miljöer.
+Följande PowerBI.com-lösningar är tillgängliga för Dynamics 365 for Finance and Operations-miljöer.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com-lösningar tillgängliga från Lifecycle Services (LCS)
 
@@ -59,12 +58,11 @@ Följande PowerBI.com-lösningar är tillgängliga i det delade resursbiblioteke
 
 ## <a name="powerbicom-solutions-available-from-appsource"></a>PowerBI.com-lösningar är tillgängliga från AppSource
 
-Följande PowerBI.com-lösningar finns på [Microsoft AppSource](https://appsource.microsoft.com).
+Följande PowerBI.com-lösningar är tillgängliga från [Microsoft AppSource](https://appsource.microsoft.com).
 
 > [!NOTE]
-> Dessa lösningar är inaktuella enligt beskrivningen i [Power BI innehållspaket som finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Dessa lösningar är inaktuella enligt beskrivningen i [Power BI-innehållspaket som finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 - Kostnadshantering
 - [Finansiellt resultat](financial-performance-power-bi-content-pack.md)
 - [Resultat för butikskanal ](retail-channel-performance-dashboard-power-bi-data.md)
-

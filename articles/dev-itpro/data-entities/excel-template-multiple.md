@@ -1,35 +1,34 @@
 ---
-title: "Importera data från Excel-datatabellmallar med flera kalkylblad"
-description: "Det här avsnittet beskriver hur du importerar data med hjälp av Excel datatabellmallar i Microsoft Dynamics 365 for Finance and Operations."
+title: Importera data från Excel-datatabellmallar med flera kalkylblad
+description: Det här avsnittet beskriver hur du importerar data med hjälp av Excel-datatabellmallar till Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351273"
 ---
-
 # <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importera data från Excel-datatabellmallar med flera kalkylblad
 
 [!include [banner](../includes/banner.md)]
 
-Datahantering i Microsoft Dynamics 365 for Finance and Operations har stöd för Microsoft Excel-mallar för datatabeller. Mallarna kan innehålla ett eller flera kalkylblad. Mallar med flera kalkylblad används ofta när det är lämpligt att hantera data i en fil och importera den till flera datatabeller. Ett exempel är platser och lagerställen.
+Hantering av data i Microsoft Dynamics 365 for Finance and Operations stöder Microsoft Excel-baserade mallar för datatabeller. Mallarna kan innehålla ett eller flera kalkylblad. Mallar med flera kalkylblad används ofta när det är lämpligt att hantera data i en fil och importera den till flera datatabeller. Ett exempel är platser och lagerställen.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Överför en fil en gång och koppla den till alla entiteter
 Låt oss ta ett exempel där det finns en Excel-fil med kalkylblad kallat **Platser** och **Lagerställen**. Om du vill installera dataimportprojektet ska du lägga till den första datatabellen **platser** och överföra filen. Du kan välja **platser** som kalkylblad som ska användas för den här entiteten.
@@ -51,4 +50,3 @@ I fall där en ny version av samma fil eller en helt ny fil måste läsas in fö
 ## <a name="upload-a-file-using-run-project"></a>Överför en fil genom att använda Kör projekt
 
 Du kan överföra en Excel-fil när du använder alternativet **Köra projekt** som kör ett importprojekt. Du måste vara noga med att överföra filer som har samma kalkylblad som de befintliga mappningarna för datatabellerna i dataprojektet. Om ett kalkylblad inte finns i den nyligen överförda filen, visas ett fel i systemet och importen avbryts. Om mappningen till kalkylbladet måste ändras för en entitet och mappningarna i dataprojektet måste först uppdateras från i inne i dataprojektet innan du använder filen i upplevelsen **Kör projekt**.
-

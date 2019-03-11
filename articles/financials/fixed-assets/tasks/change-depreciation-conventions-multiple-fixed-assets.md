@@ -1,13 +1,13 @@
---- 
-title: "Ändra avskrivningspraxis för flera anläggningstillgångar"
-description: "Uppgiften uppdaterar avskrivningspraxis för en viss grupp av anläggningstillgångar."
+---
+title: Ändra avskrivningspraxis för flera anläggningstillgångar
+description: Uppgiften uppdaterar avskrivningspraxis för en viss grupp av anläggningstillgångar.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysQueryForm, SrsReportViewerForm
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a7a79b2edf64f0063253d3f2a23b0020eceb87c0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0f711d2e18a13ab972e548d3304652dee3f2e406
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324271"
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Ändra avskrivningspraxis för flera anläggningstillgångar
 
@@ -48,5 +48,4 @@ Uppgiften uppdaterar avskrivningspraxis för en viss grupp av anläggningstillg�
 14. Klicka på OK.
 15. Klicka på OK.
     *  Resultatet av processen visas på massuppdateringrapporten.     
-
 

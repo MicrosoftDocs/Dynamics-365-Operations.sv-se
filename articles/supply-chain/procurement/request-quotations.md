@@ -1,13 +1,13 @@
 ---
-title: "Anbudsförfrågningar (RFQ)"
-description: "Det här ämnet ger en översikt över anbudsförfrågningar (RFQ). Organisationer utfärdar anbudsförfrågan (RFQ) när de vill ta emot konkurrenskraftiga erbjudanden för de artiklar eller tjänster som de måste köpa."
+title: Anbudsförfrågningar (RFQ)
+description: Det här ämnet ger en översikt över anbudsförfrågningar (RFQ). Organisationer utfärdar anbudsförfrågan (RFQ) när de vill ta emot konkurrenskraftiga erbjudanden för de artiklar eller tjänster som de måste köpa.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9b840f5511f6a0df0e9ce3db4be69a0ab4ec3261
-ms.openlocfilehash: 8d7b07027443d1ca3894ccb7ed7f3cf49a4dc3e3
-ms.contentlocale: sv-se
-ms.lasthandoff: 06/21/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351296"
 ---
-
 # <a name="requests-for-quotation-rfqs"></a>Anbudsförfrågningar (RFQ)
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ Du kan skapa ett anbudsförfrågansärende från planerade order, från en inkö
 
 När du förbereder anbudsförfrågansärende och lägger till leverantörer väljer du **Sskicka** (**Sskicka och publicera** för offentliga sektorn) på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
 
-Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om datorn är inställd för leverantörssamarbete kan leverantörer antingen ange bud direkt i Microsoft Dynamics 365 for Finance and Operations. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
+Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Microsoft Dynamics 365 for Finance and Operations. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
 Om du måste ändra en anbudsförfrågan när du har skickat den, kan du skicka anbudsförfrågan igen till leverantörer när du är klar med ändringen av två åtgärder: skapa och färdigställ.+
 
@@ -58,7 +57,7 @@ När du tar emot bud via e-post kan du hantera desssa bud från sidan **Anbudsf�
 Om en andra iteration av ett svar från en leverantör krävs, välj **Retur** på sidan **Anbudsförfrågan**. Returåtgärden skapar en ny journal och en rapport som ska skrivas ut, arkiveras och skickas enligt dina inställningar för utskrift.
 
 > [!NOTE]
-> Namn på sidan **Anbudsförfrågan** har ändrats. I tidigare versioner av Dynamics 365 for Finance and Operations kallas denna sida för **Svar på anbudsförfrågningar**.
+> Namn på sidan **Anbudsförfrågan** har ändrats. I tidigare versioner av Dynamics 365 for Finance and Operations, kallas den här sidan **Begär svar på anbudsförfrågan**.
 
 Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer anbudsförfrågan att ha en poängpanel där du kan ange poängen. Det totala resultatet visas på anbudsförfrågan när du jämför svar på sidan **Jämför svar**. På sidan **Jämför svar** kan du jämföra andra svarsinformation som t.ex. radpris, leveransdatum och totalpris.
 
@@ -268,5 +267,4 @@ I exemplet nedan du ser högsta/lägsta status på anbudsförfrågansärenden d�
 |------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
 | Acceptera ett av buden. (eller minst en rad) |                          Inlevererat                           |                           Accepterade                           |                    Inlevererat                    |                    Accepterade                     |                   Inlevererat                   |                   Accepterade                    |
 |           Avvisa alla de andra buden.           |                          Avvisat                           |                           Accepterade                           |                    Avvisat                    |                    Accepterade                     |                   Avvisat                   |                   Godkänt                    |
-
 

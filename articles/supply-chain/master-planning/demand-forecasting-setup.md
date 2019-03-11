@@ -1,13 +1,13 @@
 ---
-title: "Behovsprognoser inställning"
-description: "Detta avsnitt beskriver de uppgifter som du måste utföra för att förbereda behovsprognoser."
+title: Behovsprognoser inställning
+description: Detta avsnitt beskriver de uppgifter som du måste utföra för att förbereda behovsprognoser.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 59fb8938720ce1634735dd728eee3874660a4289
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: be962bffd9dfe756b444f6946990058971896a27
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330458"
 ---
-
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
 [!include [banner](../includes/banner.md)]
@@ -43,11 +42,11 @@ Ett objekt och dess dimensioner måste vara en del av endast en punkt fördelnin
 För att lägga till en lagerhållningsenhet (SKU) i en artikelallokeringsnyckel, gå till **Huvudplanering** &gt; **Inställningar** &gt; **Efterfrågeprognosticering** &gt; **Artikelallokeringsnycklar**. Använd **Tilldela artiklar** sidan till att tilldela ett objekt till en fördelningsnyckel.
 
 ## <a name="intercompany-planning-groups"></a>Koncerninterna planeringsgrupper
-Behovsprognoser genererar gränsöverskridande företag prognoser. Företag som planeras tillsammans grupperas i en enda koncernintern planeringsgrupp i Microsoft Dynamics 365 for Finance and Operations. För att ange (efter företag) vilka artikelallokeringsnycklar som ska beaktas för efterfrågeprognosticering, associera en artikelallokeringsnyckel med den koncerninterna planeringsgruppmedlemmen genom att gå till **Huvudplanering** &gt; **Inställningar** &gt; **Koncerninterna planeringsgrupper**. 
+Behovsprognoser genererar gränsöverskridande företag prognoser. I Microsoft Dynamics 365 for Finance and Operations grupperas företag som är planerade tillsammans i en koncernintern planeringsgrupp. För att ange (efter företag) vilka artikelallokeringsnycklar som ska beaktas för efterfrågeprognosticering, associera en artikelallokeringsnyckel med den koncerninterna planeringsgruppmedlemmen genom att gå till **Huvudplanering** &gt; **Inställningar** &gt; **Koncerninterna planeringsgrupper**. 
 
 Om inga artikelallokeringsnycklar tilldelas företagsinterna planeringsgruppmedlemmar, kommer en efterfrågeprognos som standard att beräknas för alla artiklar som tilldelats till samtliga artikelallokeringsnycklar från alla Finance and Operations-företag. Extra filtering alternativ för företag och fördelningsnycklar finns på **generera statistiska basprognosen** sida. 
 
-Kontrollera antalet objekt som prognostiseras. Onödiga objekt kan orsaka ökade kostnader när du använder Microsoft Azure maskinen lärande.
+Kontrollera antalet objekt som prognostiseras. Onödiga objekt kan orsaka ökade kostnader när du använder Microsoft Azure Machine Learning.
 
 ## <a name="demand-forecasting-parameters"></a>Parametrar för efterfrågeprognosticering
 Gå till **Huvudplanering** &gt; **Inställningar** &gt; **Parametrar för efterfrågeprognosticering** för att skapa parametrar för efterfrågeprognosticering. Eftersom efterfrågan prognostisera körs cross-firma, installationen är global. Med andra ord, gäller för alla företag. 
@@ -86,7 +85,6 @@ Gå till **Huvudplanering** &gt; **Inställningar** &gt; **Efterfrågeprognostic
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 
 [Gör manuella justeringar till den ursprungliga prognosen](manual-adjustments-baseline-forecast.md)
-
 
 
 

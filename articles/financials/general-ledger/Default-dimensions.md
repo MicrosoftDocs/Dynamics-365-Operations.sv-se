@@ -1,13 +1,13 @@
 ---
-title: "Ekonomiska dimensioner och bokföring"
-description: "När du planerar och ställer in kontoplanen måste du bestämma hur komponenterna fungerar tillsammans när du bokför ett dokument eller en journal. Dessa komponenter inkluderar kontostrukturer, avancerade regler och balansering och fasta dimensioner. Det här avsnittet beskriver vad varje komponent är och hur komponenterna fungerar tillsammans."
+title: Ekonomiska dimensioner och bokföring
+description: När du planerar och ställer in kontoplanen måste du bestämma hur komponenterna fungerar tillsammans när du bokför ett dokument eller en journal. Dessa komponenter inkluderar kontostrukturer, avancerade regler och balansering och fasta dimensioner. Det här avsnittet beskriver vad varje komponent är och hur komponenterna fungerar tillsammans.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 89bc6f1f01f77dac4c24419705737783b07e4ac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0530a569978bafffcdcc63c8d502b9bfa645bc5
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327951"
 ---
-
 # <a name="financial-dimensions-and-posting"></a>Ekonomiska dimensioner och bokföring 
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ När du planerar och ställer in kontoplanen måste du bestämma hur komponenter
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Import av kontoplan och ekonomiska dimensionskomponenter
 
-Microsoft Dynamics 365 for Finance and Operations, har ett omfattande och regelbaserad system för att definiera giltiga kombinationer av huvudkonto och ekonomiska dimensionsvärdena. Det här avsnittet innehåller en kort översikt över varje komponent och förklarar var du hittar komponenten.
+Microsoft Dynamics 365 for Finance and Operations har ett omfattande och regelbaserat system för att definiera giltiga kombinationer av huvudkonto och ekonomiska dimensionsvärden. Det här avsnittet innehåller en kort översikt över varje komponent och förklarar var du hittar komponenten.
 
 ### <a name="account-structures"></a>Kontostrukturer
 
@@ -123,9 +122,8 @@ Några av följande resurser hänvisar till en tidigare version av Finance and O
 
 [Planera kontoplanen](plan-chart-of-accounts.md) 
 
-[Planera din kontoplan i AX 2012 blogg](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – den här länken leder till del 1 av 7.
+[Planera din kontoplan i bloggen AX 2012](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – den här länken leder till del 1 av 7.
 
 [Dimension som används som standard i redovisningsfördelningar](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Standardvärden i dimensionsramverket](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
-

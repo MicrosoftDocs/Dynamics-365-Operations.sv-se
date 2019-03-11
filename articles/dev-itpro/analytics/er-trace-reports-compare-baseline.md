@@ -1,13 +1,13 @@
 ---
-title: "Spåra skapade rapportresultat och jämföra dem med baslinjevärden"
-description: "Det här avsnittet innehåller information om hur du kan jämföra resultaten av skapade ER-rapporter med baslinjerapportvärden."
+title: Spåra skapade rapportresultat och jämföra dem med baslinjevärden
+description: Det här avsnittet innehåller information om hur du kan jämföra resultaten av skapade ER-rapporter med baslinjerapportvärden.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 7f7877ccaa0c45ab5f0032d6808280e3c47a43ca
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317946"
 ---
-
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spåra skapade rapportresultat och jämföra dem med baslinjevärden
 
 [!include[banner](../includes/banner.md)]
@@ -40,4 +39,3 @@ Du kan lagra enskilda baslinjeprogramfiler för alla ER-format. Filer betraktas 
 Du kan utvärdera spårningen för att analysera om elektroniska dokument som skapas innehåller förväntade innehåll. Du kan göra en sådan utvärdering i ett acceptanstestet för användare (UAT) – när kodbasen har ändrats (till exempel när du migrerar till en ny instans av programmet, installerar snabbkorrigeringspaket eller distribuerar kodändringar). På så sätt kan se du till att utvärderingen inte påverkar genomförandet av ER-rapporter som används. Utvärderingen för många ER rapporter kan göras i obevakat läge.
 
 Om du vill veta mer om den här funktionen kan du spela upp ER-uppgiftsguiderna **ER Skapa rapporter och jämföra resultat (del 1)** och **ER Skapa rapporter och jämföra resultat (del 2)** som ingår i affärsprocessen **7.5.4.3 Testa IT-lösningar och tjänster (10679)** och kan hämtas från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Dessa uppgiftsguider går igenom processen att konfigurera ER-ramverket för att använda basfiler till att utvärdera skapade elektroniska dokument.
-

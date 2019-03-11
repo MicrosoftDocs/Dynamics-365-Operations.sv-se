@@ -1,13 +1,13 @@
 ---
-title: "Lojalitetsöversikt"
-description: "Det här avsnittet beskriver lojalitetsfunktioner i Microsoft Dynamics 365 for Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram."
+title: Lojalitetsöversikt
+description: Det här avsnittet beskriver lojalitetsfunktioner i Microsoft Dynamics 365 for Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 01/08/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: bb1a1ff28c846a35858df971e29bb7a551c8012a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 09d4e46694e89b648981352f64da4a43ab1522e1
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320131"
 ---
-
 # <a name="loyalty-overview"></a>Lojalitetsöversikt
 
 [!include [banner](includes/banner.md)]
@@ -43,7 +42,7 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ.
 
 ## <a name="setting-up-loyalty-programs"></a>Ställa in bonusprogram
 
-Du måste ställa in flera komponenter om du vill aktivera bonusfunktionen i Dynamics 365 for Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra.
+Du måste ställa in flera komponenter om du vill aktivera lojalitetsfunktionen i Dynamics 365 for Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra.
 
 ![Processflöde för bonus](./media/loyaltyprocess.gif "Lojalitetskomponenter och hur de är relaterade till varandra")
 
@@ -118,12 +117,29 @@ Retail har nya bonusfunktioner som en del av versionen från oktober 2018. Var o
 
     ![Utgångna poäng](./media/Expiring%20points.png "Visa utgångna poäng")
     
-## <a name="upcoming-enhancements"></a>Kommande förbättringar
 
-Följande funktioner kommer att vara tillgängliga i framtida månadsuppdateringar för Dynamics 365 for Retail.
-    
-- Kunderna vill kunna visa information om deras förmånssaldot på konsumentinriktade kanaler. Dessutom är det viktigt för kassören att kunna visa kundens förmånspoäng i MOPS/CPOS för att snabbt svara på frågor från kunden. I en kommande månadsutgåva ska kunder och kassörer kunna se information om lojalitetshistorik.
-- Många återförsäljare kan tilldela förmånspoäng endast utifrån försäljningstransaktionerna men mer kundinriktade återförsäljare vill belöna kunderna för deras åtagande med deras varumärke. Till exempel vill de ge belöningar för att fylla en online-undersökning, besöka en butik, gilla återförsäljare på Facebook, twittra om återförsäljaren med mera. I framtiden kommer vi kommer att lägga till möjligheten att tilldela förmånspoäng för alla kundaktiviteter. För att göra detta kan återförsäljaren definiera en ”andra aktivitetstyp” och definiera inkomstreglerna för aktiviteterna. Vi kommer också att visa en Retail Server API som kan anropas när en aktivitet har identifierats som använder inkomstregeln för att tilldela obligatoriska förmånspoäng.
-- Om du vill aktivera Retail Experience i omni-kanal låter vi kunder tjäna och lösa in förmånspoäng i alla kanaler.
-- Gratis eller rabatterad leverans är en mycket motiverande faktor för kunderna att handla online. Om du vill aktivera återförsäljare för att ställa in leveranserbjudanden introducerar vi en ny typ av kampanj där återförsäljaren kan definiera de tröskelvärden som, när de uppfylls, berättigar kunderna till gratis eller rabatterad leverans.
+- Med 8.1.3 frisläppning vi har aktiverat alternativet ”betald av förmånskort” i kundtjänstkanalen. Om du vill aktivera det här alternativet skapar du en typen för förmånsbetalningsmedel och associerar den till en kundtjänst. 
 
+>[!NOTE]
+> Eftersom lojalitetsbetalningarna är inställda som kortbetalningar du måste välja ett kort från sidan **kortinställningar**. 
+
+![Lojalitetkortinställningar](./media/LoyaltyCardSetup.png "Lojalitetkortinställningar")
+
+När detta har ställts in kunder lösa in sina förmånspoäng i kundtjänst. Dessutom förbättrar vi användargränssnittet för att visa ”Belopp som täcks av förmånspoäng”, så att kundtjänstanvändare inte behöver gå till en annan skärm för att visa förmånskortets saldo.
+
+- Många återförsäljare kan tilldela förmånspoäng endast utifrån försäljningstransaktionerna men mer kundinriktade återförsäljare vill belöna kunderna för deras åtagande med deras varumärke. Till exempel vill de ge belöningar för att fylla en online-undersökning, besöka en butik, gilla återförsäljare på Facebook, twittra om återförsäljaren med mera. För att göra detta kan återförsäljaren definiera en ”andra aktivitetstyp” och definiera inkomstreglerna för aktiviteterna. Det finns också en exponeras Retail Server API ”PostNonTransactionalActivityLoyaltyPoints” som kan anropas när en aktivitet identifieras att belöna kunden med förmånspoäng. Detta API förväntar sig att förmåner kort-ID, kanal-ID och annan aktivitetstyp-ID, så att den kund som ska tilldelas kan finnas inkomstregeln för aktiviteten kan identifieras. 
+
+    Tilldelning av poäng för icke-transaktionsaktiviteter vanligtvis består av två steg:
+    - Att uppnå en aktivitet har inträffat som borde belönas.
+    - Belöna lämpliga punkter.
+
+    Det första steget är utanför Microsoft Dynamics 365 for Retail, t.ex. twittra om varumärke eller gilla varumärket på Facebook. När aktiviteten har identifierats kan återförsäljarna anropa ovannämnda butiksserver-API och tilldela förmånspoäng i realtid. I sådana scenarier behövs det inte några granskningssteg eftersom en aktivitet har inträffat och motsvarande punkter ska tilldelas. Det finns scenarier där återförsäljaren vill granska posterna innan tilldelning av poäng. Återförsäljaren måste till exempel konfigurera en workshop i butiken som kunderna registrerar sig för på webbplatsen för e-handel eller andra program för händelseregistrering. Endast de deltagande kunderna tjänar lojalitetspoäng. För sådana scenarier introducerar vi i version 10.0 en dataentitet med namnet **Butikens förmåner andra aktivitetstyprader**. Denna dataentitet låter återförsäljare använda Data Import/Export Framework (DIXF) eller OData-API för att registrera de aktiviteter för att tilldela kunder förmånspoäng. Dataentiteten lagrar aktiviteterna i en journal med namnet **lojalitetsrader för andra aktiviteter**, som kan användas för granskning och ändring. När data har granskats kan IT-användaren manuellt bokföra aktivitetsraderna eller köra ett jobb som heter **bearbeta annan aktivitetstyp för lojalitetsrader**, som kommer att bokföra alla ej bokförda aktivitetsrader och tilldela poäng till kunder baserat på inkomstreglerna. I fallet ovan skulle händelseregistreringen kräva OData API för att skicka kundinformation till Dynamics 365 for Retail. Men IT-användaren kan endast bokföra aktivitetsraderna för kunder som har deltagit i verkstaden och ta bort aktivitetsraderna för andra kunder. 
+
+> [!NOTE]
+> För närvarande tvingar systemet användare att ställa in en nummerserie för ”andra aktivitetstyper”, men detta blir inte ett obligatoriskt steg i framtida versioner. Om du vill ställa in en nummerserie gå till **Gemensamma butiksparametrar > Nummerserier** och välj en nummerserie för **Lojalitets-ID för annan aktivitetstyp**.
+
+- För att ge bra kundservice och effektivt lösa kundfrågor är det viktigt för kassörerna att få tillgång till fullständig kundprofil. Med version 10.0 kommer kassörerna kunna se historikinformation tillsammans med den associerade lojalitetsprogrammet och nivåinformation för kassa.
+- Gratis eller rabatterad leverans är en mycket motiverande faktor för kunderna att handla online. Om du vill aktivera återförsäljare för att ställa in leveranserbjudanden introducerar vi med version 10.0 en ny typ av kampanj kallad "Tröskelrabatt för leverans" där återförsäljaren kan definiera de tröskelvärden som, när de uppfylls, berättigar kunderna till gratis eller rabatterad leverans. Spendera till exempel 35 $ för gratis "två dagars leverans" eller "två dagars leverans" för alla förmånskunder. Rabatterna används bara i leveransavgifterna som tillämpas på order. Eftersom en återförsäljare kan ställa in flera typer av avgifter, till exempel hantering eller installation måste den ange vilka avgifter anses vara leveransavgifter. Denna konfiguration kallas ”kod för leveransavgift” och finns på fliken **kundorder** på sidan **returparametrar**. Rabatten godkänner alla befintliga standardrabatter, till exempel att återförsäljaren kan begränsa rabatterna med kuponger så att bara kunder med kuponger får rabatterna. Dessutom utnyttjar rabatterna prisgrupper för att avgöra berättigande till sådana rabatter. Exempelvis kan återförsäljaren välja att endast köra dessa erbjudanden i online-kanaler och/eller i kanaler för vissa kundgrupper, exempelvis förmånskunder. När orderrader med angivet leveransläge uppfyller det definierade tröskelvärdet tillämpas leveransrabatten och minskar leveranskostnaden baserat på den rabatt som anges. 
+
+> [!NOTE]
+> Till skillnad från andra tidsbegränsade rabatter bl.a kvantitet, enkla, mixa och matcha och tröskelvärde skapar leveransrabatten inte rabattrader, ändringar i leveranskostnader behöver göras direkt.

@@ -1,13 +1,13 @@
---- 
-title: "ER Skapa erforderliga konfigurationer för att importera data från en extern fil"
-description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet Dynamics 365 for Finance and Operations, Enterprise edition från en extern fil."
+---
+title: ER Skapa erforderliga konfigurationer för att importera data från en extern fil
+description: I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet Dynamics 365 for Finance and Operations Enterprise edition, från en extern fil.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "337381"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Skapa erforderliga konfigurationer för att importera data från en extern fil
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet Dynamics 365 for Finance and Operations, Enterprise edition från en extern fil. I det här exemplet skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra stegen måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv. Stegen kan utföras med hjälp av datauppsättningen USMF. Du måste också hämta och spara följande filer lokalt med hjälp av länkar från ämnet för översikt av elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet Dynamics 365 for Finance and Operations Enterprise edition, från en extern fil. I det här exemplet skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra stegen måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv. Stegen kan utföras med hjälp av datauppsättningen USMF. Du måste också hämta och spara följande filer lokalt med hjälp av länkar från ämnet för översikt av elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-    * ER ger företagsanvändare möjlighet att konfigurera importen av externa datafiler till tabeller i Dynamics 365 for Finance and Operations, Enterprise Edition i antingen XML- eller TXT-format. Först måste en abstrakt datamodell och en konfiguration av en ER-datamodell skapas med syfte att representera de data som du importerar. Därefter måste du definiera strukturen för den fil som du importerar och den metod som du använder för att porta datan från filen till den abstrakta datamodellen. ER-formatkonfigurationen som mappar till utformad datamodell måste skapas för den abstrakta datamodellen. Därefter måste modellkonfiguration utökas med en mappning som beskriver hur importerade data bevaras som data för en abstrakt datamodell, samt hur den används för att uppdatera tabellerna i Dynamics 365 for Finance and Operations, Enterprise edition.  Modellkonfigurationen för ER-data måste läggas till en ny modellmappning som beskriver hur datamodellen är kopplad till programmodellens mål.  
-    * I följande scenario visas importmöjligheterna för ER-dataimport. Detta inkluderar leverantörstransaktioner som spåras externt och sedan importeras till Dynamics 365 for Finance and Operations, Enterprise edition för att senare rapporteras i leverantörskvittningen för 1099-rapportering.   
+    * ER ger företagsanvändare möjlighet att konfigurera importen av externa datafiler till tabeller i Dynamics 365 for Finance and Operations, Enterprise Edition i antingen XML- eller TXT-format. Först måste en abstrakt datamodell och en konfiguration av en ER-datamodell skapas med syfte att representera de data som du importerar. Därefter måste du definiera strukturen för den fil som du importerar och den metod som du använder för att porta datan från filen till den abstrakta datamodellen. ER-formatkonfigurationen som mappar till utformad datamodell måste skapas för den abstrakta datamodellen. Därefter måste modellkonfiguration utökas med en mappning som beskriver hur importerade data bevaras som data för en abstrakt datamodell, samt hur den används för att uppdatera tabellerna i Dynamics 365 for Finance and Operations, Enterprise Edition.  Modellkonfigurationen för ER-data måste läggas till en ny modellmappning som beskriver hur datamodellen är kopplad till programmodellens mål.  
+    * I följande scenario visas importmöjligheterna för ER-dataimport. Detta inkluderar leverantörstransaktioner som spåras externt och sedan importeras till Dynamics 365 for Finance and Operations, Enterprise Edition för att senare rapporteras i leverantörskvittningen för 1099-rapportering.   
 
 ## <a name="add-a-new-er-model-configuration"></a>Lägg till en ny konfiguration för ER-modell
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
@@ -121,7 +121,7 @@ I följande steg beskrivs hur en användare som har rollen Systemadministratör 
 12. Välj "tax1099trans: Table 'VendSettlementTax1099' records= model.Validated" i trädet.
 13. Klicka på Redigera mål.
     * Detta ER-mål lades till i syfte att ange hur den importerade informationen uppdaterar programtabellerna. I det här fallet har tabellen VendSettlementTax1099 valts. Eftersom du har valt poståtgärden Infoga kommer importerade transaktioner att infogas i tabellen VendSettlementTax1099. Observera att en enskild modellmappning kan innehålla flera mål. Detta innebär att den importerade informationen kan användas för att uppdatera tabeller i flera program samtidigt. Tabeller, vyer och dataenheter kan användas som mål för ER.   
-    * Om mappningen anropas från en punkt i Dynamics 365 for Finance and Operations, Enterprise edition-programmet (t.ex. en knapp eller ett menyobjekt) som är särskilt utformat för denna åtgärd, ska ER-målet markeras som integreringspunkt. I det här exemplet är detta punkten ERTablemål#VendSettlementTax1099.  
+    * Om mappningen anropas från en punkt i Dynamics 365 for Finance and Operations Enterprise edition-programmet (t.ex. en knapp eller ett menyobjekt) som är särskilt utformat för denna åtgärd, ska ER-målet markeras som integreringspunkt. I det här exemplet är detta punkten ERTablemål#VendSettlementTax1099.  
 14. Klicka på Avbryt.
 15. Klicka på Visa alla.
 16. Klicka på Visa endast mappade.
@@ -189,5 +189,4 @@ I följande steg beskrivs hur en användare som har rollen Systemadministratör 
 26. Klicka på Avbryt.
 27. Stäng sidan.
 28. Stäng sidan.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Utgående process"
-description: "I det här avsnittet finns en översikt över utgående processer inom lagerhantering."
+title: Utgående process
+description: I det här avsnittet finns en översikt över utgående processer inom lagerhantering.
 author: perlynne
 manager: AnnBe
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
+ms.openlocfilehash: 5ac3260f128acbc819d7207f68f17adb085da11c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: f2cae64263769b5168d2bb9614d6388b42e23b49
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334391"
 ---
-
 # <a name="outbound-process"></a>Utgående process
 
 [!include [banner](../includes/banner.md)]
@@ -86,4 +85,3 @@ De varor som ännu inte har reserverats kommer att reserveras i samband med att 
 Så fort samtliga plocklinor har plockats på sidan **Registrera plocklist** har tillhörande leverans slutförts. Processen för försäljningsordrarnas packsedlar kan edan initialiseras baserat på plockade varor.
 
 [![Uppdatera utgående leveranser](./media/outbound-shipments.png)](./media/outbound-shipments.png)
-

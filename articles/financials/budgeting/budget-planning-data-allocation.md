@@ -1,13 +1,13 @@
 ---
-title: "Dataallokering för budgetplanering"
-description: "Det här avsnittet beskriver de olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations och hur de kan användas."
+title: Dataallokering för budgetplanering
+description: Det här avsnittet ger en beskrivning av olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations och hur de kan användas.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 430040f7b3706aa1ad913d70c0dbcab9249ea222
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b5f262318b4defb941f1216d0bfe06961f62bad4
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352515"
 ---
-
 # <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations och hur de kan användas.  
+Det här avsnittet ger en beskrivning av olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations och hur de kan användas.  
 
 Du kan fördela data i en budgetplan på många sätt för att exakt att beskriva de projekterade beloppen.
 
@@ -72,7 +71,6 @@ Därefter skapar du en fasallokering på sidan **Budgetplaneringskonfiguration**
 Lägg slutligen till en automatisk uppgift för allokeringsfas för budgetplanering på önskad arbetsflödefas. I följande exempel har två fasallokeringar för budgetplanering (anges i rött) infogats i arbetsflödet.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
-
 
 
 

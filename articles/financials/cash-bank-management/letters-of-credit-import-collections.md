@@ -1,13 +1,13 @@
 ---
 title: Remburs och importinkasso
-description: "Det här avsnittet innehåller allmän information om remburser och importsamlingar. Båda typerna av bankdokument används ofta för inköp och försäljning av varor över internationella gränser."
+description: Det här avsnittet innehåller allmän information om remburser och importsamlingar. Båda typerna av bankdokument används ofta för inköp och försäljning av varor över internationella gränser.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2b5deef65cc4af2fdfee6549660527007c3bed3a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebabff4d467df54b2e79485ba3a16344435140e6
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323052"
 ---
-
 # <a name="letters-of-credit-and-import-collections"></a>Remburs och importinkasso
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ En remburs kan vara **återkallelig** eller **oåterkallelig**. En remburs kan v
 En importinkasso är ett avtal mellan banken och exportörn (säljaren), där banken förbinder sig att leverera leveransdokumentationen till den internationella importören (köparen). Banken förväntas att skicka leveransdokumentationen när betalningen för de levererade varorna tas emot, eller när en växel tas emot för betalningen. 
 
 En importinkasso garanterar att säljaren får betalt när köparen får leveransdokumentationen för de importerade varorna.
-
 
 
 

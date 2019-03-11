@@ -1,13 +1,13 @@
 ---
-title: "Konfigurera manuella beslut i ett arbetsflöde"
-description: "I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett manuellt beslut."
+title: Konfigurera manuella beslut i ett arbetsflöde
+description: I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett manuellt beslut.
 author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: d09e99a5bf99593a8fa7682f9d4f29eaa4e7c836
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341406"
 ---
-
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurera manuella beslut i ett arbetsflöde
 
 [!include [banner](../includes/banner.md)]
@@ -164,7 +163,7 @@ Du kan skicka meddelanden till andra när ett beslut har fattats, delegerats ell
     </tr>
     <tr>
     <td>Användare</td>
-    <td>Specifika användare av Microsoft Dynamics 365 for Finance and Operations</td>
+    <td>Specifika Microsoft Dynamics 365 for Finance and Operations användare</td>
     <td>
     <ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
@@ -372,4 +371,3 @@ Följ dessa steg om beslutet måste fattas inom en viss tid.
     - **År –** – Välj dag, vecka och månad då beslutet senast måste vara fattat. Du kanske till exempel vill att beslutet ska vara fattat senast på fredagen i den tredje veckan i december.
 
 4. Om tidsgränsen överskrids kommer systemet att fatta beslutet. I listan **Åtgärd** väljer du det alternativ som systemet ska vidta.
-

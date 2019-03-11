@@ -1,13 +1,13 @@
 ---
-title: "Tidsplanera kapacitet för lagerställe"
-description: "Det här avsnittet beskrivs hur du ställer in och schemalägger den arbetsbelastningskapacitet för arbetare i ett lagerställe eller en hel lagerställe."
+title: Tidsplanera kapacitet för lagerställe
+description: Det här avsnittet beskrivs hur du ställer in och schemalägger den arbetsbelastningskapacitet för arbetare i ett lagerställe eller en hel lagerställe.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317302"
 ---
-
 # <a name="schedule-workload-capacity"></a>Tidsplanera kapacitet för lagerställe
 
 [!include[banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ Om den här informationen inte anges korrekt, visas ett meddelande när du gener
 3. På fältet **Ordertyp** välj **planerat och bekräftat**, **planerat**, eller **bekräftat** för att bestämma vilken typ av order till projekt i rapporten.
 4. Välj en beläggningtyp om du vill visa att arbetsbördakapaciteten ska förutses för volym eller vikt, i fältet **Beläggningstyp**.
 5. Välj en inställning för arbetsbelastningskapacitet i fältet **Arbetsbelastningskapacitet**.
-

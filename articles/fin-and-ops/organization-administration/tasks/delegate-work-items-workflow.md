@@ -1,13 +1,13 @@
---- 
-title: "Delegera arbetsuppgifter i ett arbetsflöde"
-description: "Om du kommer att vara borta från kontoret under en tid eller av annat skäl inte kommer att kunna arbeta med en arbetsuppgift, kan du delegera eller omfördela dina arbetsuppgifter till andra användare."
+---
+title: Delegera arbetsuppgifter i ett arbetsflöde
+description: Om du kommer att vara borta från kontoret under en tid eller av annat skäl inte kommer att kunna arbeta med en arbetsuppgift, kan du delegera eller omfördela dina arbetsuppgifter till andra användare.
 author: jasongre
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserSetup, WorkflowDelegationUserListLookup
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 4765fec0cdce0e2f8859c979ff97d20aa6b20bfa
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346259"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegera arbetsuppgifter i ett arbetsflöde
 
@@ -48,5 +48,4 @@ Det demonstrationsdataföretag som används för att skapa den här proceduren �
 8. Aktivera delegeringsregeln genom att markera kryssrutan Aktiverad.
     * Om du har valt Modul som Omfattning måste du välja modulen i fältet Namn.    Om du har valt Arbetsflöde som Omfattning måste du välja specifikt arbetsflöde att delegera i fältet Namn.  
 9. Ange en kommentar som förklarar varför du delegerar arbetsuppgifterna i fältet Kommentar.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Kostnadskategorier som används i produktionskontroll och projekthanteringsredovisning"
-description: "Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. Den här artikeln innehåller information om de kostnadskategorier som du måste definiera för dessa typer av produktionsarbete för produktions- och projektändamål."
+title: Kostnadskategorier som används i produktionskontroll och projekthanteringsredovisning
+description: Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. Den här artikeln innehåller information om de kostnadskategorier som du måste definiera för dessa typer av produktionsarbete för produktions- och projektändamål.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cab4629740e92f9075b7afc7a5d228b2e01c4664
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d641ce950aed87b0cf6763fc9dae67ef47268b8d
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326042"
 ---
-
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostnadskategorier som används i produktionskontroll och projekthanteringsredovisning
 
 [!include [banner](../includes/banner.md)]
@@ -42,7 +41,6 @@ Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och r
 -   Vanligtvis definieras huvudbokskontona, som rör kostnader och försäljning, för kategorigruppen som har tilldelats kostnadskategorin. Du kan dock definiera specifika konton för en enskild kostnadskategori.
 
 Ytterligare knappar på **Kostnadskategorier**-sidan kan ge dig åtkomst till projektrelaterad information om en vald kostnadskategori. Du kan till exempel visa projektrelaterade transaktioner, definiera medarbetare eller projekt, definiera timkostnader och försäljningspriser och visa rapporter.
-
 
 
 

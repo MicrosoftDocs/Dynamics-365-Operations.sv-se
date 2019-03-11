@@ -1,13 +1,13 @@
 ---
-title: "Mobila fakturagodkännanden"
-description: "Det här avsnittet är avsett att beskriva hur du på ett praktiskt sätt skapar mobila scenarier i Dynamics 365 for Finance and Operations genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall."
+title: Mobila fakturagodkännanden
+description: Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier i Dynamics 365 for Finance and Operations genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314404"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Mobila fakturagodkännanden
 
 [!include [banner](../includes/banner.md)]
 
-Med mobila funktioner i Microsoft Dynamics 365 for Finance and Operations kan en affärsanvändare skapa mobila upplevelser. För avancerade scenarier gör plattformen också att utvecklare kan utöka användningsområdena som de önskar. Det mest effektiva sättet att lära sig nya koncept på mobilen är att gå igenom processen att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra scenarier som inte är relaterade till leverantörsfakturor.
+Med mobila funktioner i Microsoft Dynamics 365 for Finance and Operations kan en affärsanvändare skapa mobila funktioner. För avancerade scenarier gör plattformen också att utvecklare kan utöka användningsområdena som de önskar. Det mest effektiva sättet att lära sig nya koncept på mobilen är att gå igenom processen att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra scenarier som inte är relaterade till leverantörsfakturor.
 
 <a name="prerequisites"></a>Förutsättningar
 -------------
 
 | Förutsättning                                                                                            | beskrivning                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobil handbok - före läsning                                                                                |[Mobil plattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | En miljö med Microsoft Dynamics 365 for Operations version 1611 och plattformsuppdatering 3 för Microsoft Dynamics for Operations (november 2016)                   |
+| Mobil handbok - före läsning                                                                                |[Mobilplattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Dynamics 365 for Finance and Operations                                                                             | En miljö som har Microsoft Dynamics 365 for Operations version 1611 och Microsoft Dynamics for Operations uppdatering 3 (november 2016)                   |
 | Installera snabbkorrigering KB 3204341.                                                                              | Uppgiftsinspelaren kan felaktigt spela in två Stäng-kommandon för listrutans dialogrutor. Detta ingår i Dynamics 365 for Operation-plattformsuppdatering 3 (uppdatering november 2016) |
 | Installera snabbkorrigering KB 3207800.                                                                              | Denna snabbkorrigering gör att bifogade filer kan visas på mobila klienten. Detta ingår i Dynamics 365 for Operation-plattformsuppdatering 3 (uppdatering november 2016).           |
 | Installera snabbkorrigering KB 3208224.                                                                              | Programkoden för godkännandeprogrammet för mobila leverantörsfakturan. Detta ingår i Microsoft Dynamics AX-programmet 7.0.1 (maj 2016).                          |
@@ -488,7 +487,6 @@ Följande ändringar kan göras för scenario 1, baserat på kraven för scenari
     3.  Vi rekommenderar att fördelningarna visas i samband med en fakturarad i det här scenariot. Kontrollera därför att användaren kan gå nedåt i en rad för att visa fördelningssidan. Använd sidans länkfunktion för att upprätta detaljgranskningen, precis som du gjorde för huvud- och detaljsidorna i scenario 1.
 
 2.  Eftersom flera beloppstyper förväntas för fördelningar i scenario 2 (moms, tillägg och så vidare), kan det vara praktiskt att visa beskrivningen av beloppstypen. (Vi uteslöt den här informationen i scenario 1.)
-
 
 
 

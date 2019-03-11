@@ -1,30 +1,29 @@
 ---
-title: "Talent-klienten kopplas från"
-description: "Det här avsnittet beskriver vad du gör om kunden kopplas från sin miljö och inte vet varför."
+title: Talent-klienten kopplas från
+description: Det här avsnittet beskriver vad du gör om kunden kopplas från sin miljö och inte vet varför.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: d3f974f94b6c327fd70b8098d24f9e1f1e1e8eeb
 ms.openlocfilehash: 4f96b986059c179268f8a96ea7e7725831a93524
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306235"
 ---
-
 # <a name="talent-client-disconnects"></a>Talent-klienten kopplas från
 
 [!include [banner](includes/banner.md)]
@@ -55,4 +54,3 @@ Microsoft Dynamics 365 for Talent-plattformen kopplar från användare när två
 Kontrollera att endast en miljö är öppen i taget för en viss webbläsartyp. Användare kan öppna flera sessioner till samma miljö (det vill säga flera flikar i samma webbläsare).
 
 Användare som vill hoppa mellan två miljöer samtidigt ska öppna varje miljö i olika webbläsartyper. (T.ex. användare A kan visa miljö 1 i Chrome och miljö 2 i Microsoft Edge.)
-

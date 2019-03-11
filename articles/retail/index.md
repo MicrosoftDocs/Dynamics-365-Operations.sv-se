@@ -1,31 +1,30 @@
 ---
-title: "Välkommen till Dynamics 365 for Retail"
-description: "Startsida för Dynamics 365 for Retail"
+title: Välkommen till Dynamics 365 for Retail
+description: Startsida för Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: fbdcfc747186e2d8f55ff294a477226a83fbe1b2
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302903"
 ---
-
 # <a name="welcome-to-dynamics-365-for-retail"></a>Välkommen till Dynamics 365 for Retail
 
 [!include [banner](includes/banner.md)]
@@ -33,7 +32,7 @@ ms.lasthandoff: 08/09/2018
 Microsoft Dynamics 365 for Retail är en komplett lösning för enhetlig handel i alla kanaler. Den omfattar försäljning, mobilitet, intelligence och produktivitet som hjälper detaljhandlare och arbetare att uppnå mer i molnet och på mobila enheter. Retail har ett omfattande stöd för en mängd olika affärsprocesser, till exempel funktioner för hantering av marknadsföring, lager och kanaler. Den ger också en integrerad kundupplevelse i alla beröringspunkter.
 
 > [!NOTE]
-> Dynamics 365 for Retail är nära besläktat med Dynamics 365 for Finance and Operations samt Dynamics 365 for Talent. Samma funktioner kan visas i alla tre produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Microsoft Dynamics 365 for Retail; i avsnitt som främst berör huvudprodukten (Finance and Operations) blir produktnamnet Microsoft Dynamics 365 for Finance and Operations. I avsnitt som huvudsakligen berör personalfrågor blir produktnamnet Dynamics 365 for Talent.
+> Dynamics 365 for Retail är nära besläktat med Dynamics 365 for Finance and Operations och Dynamics 365 for Talent. Samma funktioner kan visas i alla tre produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Microsoft Dynamics 365 for Retail; i avsnitt som främst berör huvudprodukten (Finance and Operations) blir produktnamnet Microsoft Dynamics 365 for Finance and Operations. I avsnitt som huvudsakligen berör personalfrågor blir produktnamnet Dynamics 365 for Talent.
 
 Välj ett funktionsområde som du vill veta mer om i det vänstra fönstret.
 
@@ -51,9 +50,9 @@ Kunderna kan dessutom hitta vad de vill ha på mängder av olika sätt, och till
 
 ## <a name="hardware-and-peripherals"></a>Maskinvara och kringutrustning
 
-Retail Modern point of sale (MPOS) och Cloud POS kan användas med en mängd olika typer av maskinvarubaserad kringutrustning. Både MPOS och Cloud POS har flera olika gränssnitts- och distributionsalternativ som underlättar vid olika affärsscenarier.
+Retail Modern point of sale (MPOS) och molnbaserad kassa användas med en mängd olika typer av maskinvarubaserad kringutrustning. Både MPOS och molnbaserad kassa har flera olika gränssnitts- och distributionsalternativ som underlättar vid olika affärsscenarier.
 
-Kringutrustningssimulatorn för Retail omfattar en virtuell kringutrustningssimulator och en POS-simulator. Den virtuella kringutrustningssimulatorn underlättar i första hand när du testar scenarier där vanligtvis fysisk POS-kringutrustning behövs. Med POS-simulatorn kan du testa om den fysiska kringutrustningen är kompatibel med Retail utan att behöva distribuera POS-klienten.
+Kringutrustningssimulatorn för Retail omfattar en virtuell kringutrustningssimulator och en kassasimulator. Den virtuella kringutrustningssimulatorn underlättar i första hand när du testar scenarier där vanligtvis fysisk kassakringutrustning behövs. Med kassasimulatorn kan du testa om den fysiska kringutrustningen är kompatibel med Retail utan att behöva distribuera kassaklienten.
 
 ## <a name="intelligence"></a>Intelligence
 
@@ -67,13 +66,13 @@ Med Retail kan du övervaka försäljnings- och marginalresultat i realtid för 
 
 Innan det går att erbjuda produkter att sälja i butikskanalerna måste du skapa och konfigurera produkterna i Retail. Det går att skapa produkterna, definiera produktegenskaperna och attributen och tilldela produkterna till butikskategorihierarkier. Gör produkterna tillgängliga i butikskanalerna och lägg till dem i ett aktivt sortiment och släpp sedan produkterna till juridiska personer där de finns tillgängliga.
 
-Det går att justera priset på produkter och även ställa in rabatter som används på en radartikel eller en transaktion i POS, en försäljningsorder i kundtjänst eller på en beställning online.
+Det går att justera priset på produkter och även ställa in rabatter som används på en radartikel eller en transaktion i kassan, en försäljningsorder i kundtjänst eller på en beställning online.
 
-## <a name="store-operations-and-pos"></a>Butiksåtgärder och POS
+## <a name="store-operations-and-pos"></a>Butiksåtgärder och kassa
 
-MPOS är en POS-app för datorer, pekplattor och telefoner. Försäljningspersonal kan bearbeta försäljningstransaktioner och kundorder, utföra klienteling, dagliga rutiner och lagerhantering med mobila enheter var som helst i butiken såväl som i datorbaserade kassor. Cloud POS är en webbläsarbaserad POS som går att starta i vanliga webbläsare.
+MPOS är en kassaapp för datorer, pekplattor och telefoner. Försäljningspersonal kan bearbeta försäljningstransaktioner och kundorder, utföra klienteling, dagliga rutiner och lagerhantering med mobila enheter var som helst i butiken såväl som i datorbaserade kassor. Den molnbaserade kassan är en webbläsarbaserad kassa som går att starta i vanliga webbläsare.
 
-Du måste konfigurera flera komponenter för att definiera relationer mellan en butik, POS-registren i butiken och butikskringutrustningen som kassorna använder till att bearbeta transaktioner. Du ska också ange egenskaperna för en viss instans av POS. Dessa egenskaper är bland annat maskinvaruprofilen eller inställningarna för den butikskringutrustning som används vid kassan, butiken som kassan är mappad till och den visuella upplevelsen för användaren som loggar in på den kassan och funktionerna som är aktiverade i kassan. Du ska även definiera om kassan kan användas offline eller frånkopplad.
+Du måste konfigurera flera komponenter för att definiera relationer mellan en butik, kassaregistren i butiken och butikskringutrustningen som kassorna använder till att bearbeta transaktioner. Du ska också ange egenskaperna för en viss instans av kassan. Dessa egenskaper är bland annat maskinvaruprofilen eller inställningarna för den butikskringutrustning som används vid kassan, butiken som kassan är mappad till och den visuella upplevelsen för användaren som loggar in på den kassan och funktionerna som är aktiverade i kassan. Du ska även definiera om kassan kan användas offline eller frånkopplad.
 
 ## <a name="customize-and-administer-retail-environments"></a>Anpassa och administrera Retail-miljöer
 
@@ -94,5 +93,4 @@ Det finns åsikter, nyheter och annan information om Retail och andra lösningar
 
 Det finns många inlägg om Retail i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). Vissa av dessa inlägg har skrivits för en tidigare version av Retail men samma begrepp gäller fortfarande. och procedurerna är ungefär desamma i den här versionen.
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics Partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
-
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.

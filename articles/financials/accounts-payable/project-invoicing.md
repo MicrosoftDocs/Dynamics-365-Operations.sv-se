@@ -1,13 +1,13 @@
 ---
 title: Projektfakturering
-description: "Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor."
+description: Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5dd51e442479a05ce715fe91ebab0c99df9a8b6f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2434e0a97846ce9ca0643327a7a032a9998bde5b
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346328"
 ---
-
 # <a name="project-invoicing"></a>Projektfakturering
 
 [!include [banner](../includes/banner.md)]
@@ -121,7 +120,6 @@ Samma dokument kan inkludera transaktioner som markerat för kreditering, kredit
 För att kreditera ett fakturerat belopp måste du först välja det fakturerade beloppet att kreditera och sedan skapa en kreditfaktura. Skapa en kreditfaktura genom att följa samma procedur som du använder för att skapa en vanlig kundfaktura. 
 
 Du kan skapa en faktura med negativt belopp, vilken klassificeras som en kreditfaktura. För att skapa och skriva ut kreditfakturan måste du välja transaktionerna som tidigare bokfördes för en kundfaktura och sedan ändra transaktionerna. Med undantag för juridiska personer vars primära adress är Tyskland, är titeln på fakturan Korrigeringsfaktura.
-
 
 
 

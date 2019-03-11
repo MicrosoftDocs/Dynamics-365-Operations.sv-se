@@ -1,13 +1,13 @@
 ---
-title: "Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations"
-description: "I det här avsnittet finns en översikt över produkt- och lagerhantering samt migreringsalternativ."
+title: Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations
+description: I det här avsnittet finns en översikt över produkt- och lagerhantering samt migreringsalternativ.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,22 +18,21 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324478"
 ---
-
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations
 
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över hur du uppgraderar från Microsoft Dynamics AX 2012 R3, kör WMSII-modulen, till Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet innehåller en översikt över hur du uppgraderar från Microsoft DynamicsAX 2012 R3, med modulen WMSII till Microsoft Dynamics 365 for Finance and Operations.
 
-Finance and Operations stöder inte längre stöder äldre **WMSII**-moduler från Microsoft Dynamics AX 2012. I stället kan du använda den nya **lagerstyrningsmodulen**. I WMSII-modulen kan lagerdimensionerna för lagerställe och lastpalls-ID väljas för ekonomiskt lager, med lagerdimension för lastpalls-ID kan inte användas för ekonomiskt lager i Finance and Operations.
+Finance and Operations stöder inte längre stöder äldre **WMSII**-modulen från Microsoft Dynamics AX 2012. I stället kan du använda den nya **lagerstyrningsmodulen**. I WMSII-modulen kan lagerdimensionerna för lagerställe och lastpalls-ID väljas för ekonomiskt lager, med lagerdimension för lastpalls-ID kan inte användas för ekonomiskt lager i Finance and Operations.
 
 Under en uppgradering har alla produkter som hör till en lagringsdimensionsgrupp som använder lagerdimensionen för lastpalls-ID identifierats, har markerats som spärrade och har inte bearbetats för uppgradering.
 
@@ -84,4 +83,3 @@ Innan du kan använda frisläppta produkter i **lagerstyrningsmodulen** måste p
 6.  På sidan **Ändra lagringsdimensionsgruppen för artiklar** och lägg till artikelnummer, lagringsdimensionsgrupper och sekvensgrupper. Du kan slutföra det här steget direkt på sidan med hjälp av Microsoft Office-integrering eller genom att använda dataenhetsprocessen i [Datahantering](../../dev-itpro/data-entities/data-entities.md).
 7.  Godkänn ändringarna. Som en del av valideringen kan olika valideringar av dataintegritet uppträda. Som en del av en större uppgraderingsprocess kan problem som uppstår justeras på källimplementeringen. I detta fall krävs ytterligare en datauppgradering.
 8.  Behandla ändringarna. En uppdatering av alla lagerdimensioner kan ta en stund. Du kan övervaka förloppet med hjälp av batchjobbsuppgifterna.
-

@@ -1,13 +1,13 @@
 ---
-title: "Ställ in en produktkonfigurationsmodell"
-description: "Den här artikeln beskriver hur du ställer in och skapar en modell för produktkonfiguration."
+title: Ställ in en produktkonfigurationsmodell
+description: Den här artikeln beskriver hur du ställer in och skapar en modell för produktkonfiguration.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 10faa26a53b026a70487124d696b0313d1f5814d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8504eb789b0d449cf2e29d4314d189dc0b8a6b43
-ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360680"
 ---
-
 # <a name="set-up-a-product-configuration-model"></a>Ställ in en produktkonfigurationsmodell
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Den här artikeln beskriver hur du ställer in och skapar en modell för produkt
 | Testa en produktkonfigurationsmodell.                         | Testa produktkonfigurationsmodell antingen från sidan **Detaljer för begränsningsbaserad produktkonfigurationsmodell** eller sidan **Lista över produktkonfigurationsmodeller**. Test av produktkonfigurationsmodellerna simulerar produktmodellkonfigurationprocessen som inträffar under orderhantering.                                                                                                |
 | Skapa mallar för produktkonfigurationsmodeller                | Skapa en mall för produktkonfigurationsmodell på sidan **Konfigurationsmallar**. En konfigurationsmall innehåller värden för attribut i produktkonfigurationsmodellen. Välj attributvärdena på sidan **Konfigurera rad**. Du kan välja om du vill läsa in en konfigurationsmall för produktmodell under produktmodellkonfigurationen.                                                   |
 | Konfigurera en artikel.                                          | Produktkonfigurationsmodeller kan konfigureras från en försäljningsorder, försäljningsoffert, inköpsorder eller produktionsorder.                                                                                                                                                                                                                                                                           |
-
 
 
 

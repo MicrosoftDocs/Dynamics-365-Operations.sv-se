@@ -1,33 +1,32 @@
 ---
 title: Elektroniska meddelanden
-description: "Det här avsnittet innehåller översikt och inställningsinformation för elektroniska meddelanden i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet innehåller information om översikt och inställningar för elektronisk post i Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357943"
 ---
-
 # <a name="electronic-messaging"></a>Elektroniska meddelanden
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller översikt och inställningsinformation för elektroniska meddelanden i Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet innehåller information om översikt och inställningar för elektronisk post i Microsoft Dynamics 365 for Finance and Operations.
 
 Myndigheter och rättsliga myndigheter i olika länder och regioner i världen har nyligen implementerat rapporteringskraven för företag som är registrerade i dessa länder eller regioner. Syftet med kraven är att tillåta hämta data från dessa företag i elektroniskt format direkt från systemen där den bokfördes, lagrades och bearbetades.
 
@@ -47,7 +46,7 @@ Följande illustration visar flödet av data för elektroniska meddelanden.
 
 Funktionen för elektroniska meddelanden stöder följande scenarier:
 
-- Manuellt skapa meddelanden och generera rapporter utifrån associerade ER-exportformat för olika typer: Microsoft Excel XML, JavaScript Object Notation (JSON), PDF, text och Microsoft Word.
+- Manuellt skapa meddelanden och generera rapporter utifrån associerade ER-exportformat för olika typer: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text och Microsoft Word.
 - Automatiskt skapa och bearbeta meddelanden som baseras på information som har begärs och erhållits från en myndighet via ett associerat ER-importformat.
 - Samla in och bearbeta information från en datakälla (Finance and Operations-tabell) som meddelandeartiklar.
 - Lagra ytterligare information och utvärdera olika värden genom att uttryckligen anropa definierade körbara klasser i förhållande till meddelanden eller meddelandeartiklar.
@@ -452,4 +451,3 @@ Du kan nu ta bort eller uppdatera meddelandestatus. Välj om du vill uppdatera m
 ![Uppdatera meddelandets status](media/update-status.png)
 
 Meddelandestatus har uppdaterats till **förberedd** och du kan nu skapa rapporten genom att markera **generera rapporten**. Rapporten genereras och meddelandestatus och åtgärdsloggen uppdateras. Om du vill visa den genererade rapporten, välj knappen **bilaga** i åtgärdsfönstret.
-

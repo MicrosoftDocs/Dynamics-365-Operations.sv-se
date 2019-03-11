@@ -1,13 +1,13 @@
 ---
 title: Generera Affordable Care Act (ACA)-rapporter
-description: "Funktioner finns på plats med syfte att bistå arbetsgivare som måste spåra information som rapporterats i formulären 1095-B och 1095-C gällande delen för arbetsgivarmandat i Affordable Care Act (hälsovårdslagen, eller \"Obama-Care\"). Notera att denna funktion endast är aktiverad för juridiska personer i USA."
+description: Funktioner finns på plats med syfte att bistå arbetsgivare som måste spåra information som rapporterats i formulären 1095-B och 1095-C gällande delen för arbetsgivarmandat i Affordable Care Act (hälsovårdslagen, eller "Obama-Care"). Notera att denna funktion endast är aktiverad för juridiska personer i USA.
 author: kherr75
 manager: AnnBe
 ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
 ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306258"
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Generera Affordable Care Act (ACA)-rapporter
 
@@ -70,4 +70,3 @@ Du kan exportera listor över medarbetare som har skapats med något av filtreri
 Om du vill rapportera omfattade personer eftersom du som arbetsgivare tillhandahåller egenförsäkrade täckning, kan du även visa alla beroende personer som täcks av förmånsplaner markerade som **ACA-pliktiga** genom att välja åtgärden Visa beroendetäckning via fliken i åtgärdsfönstret.
 
 **Obs!** Bara förmåner vars plan har markerats som **ACA-pliktig** visas i frågefönstret.
-

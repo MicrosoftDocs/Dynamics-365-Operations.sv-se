@@ -1,14 +1,14 @@
 ---
 title: Ekonomisk konsolidering och valutaregistrering
-description: "Det här avsnittet beskriver online ekonomiska konsolideringar och valutaöversättningar i redovisning."
+description: Det här avsnittet beskriver online ekonomiska konsolideringar och valutaöversättningar i redovisning.
 author: aprilolson
 manager: AnnBe
 ms.date: 07/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354010"
 ---
-
 # <a name="financial-consolidations-and-currency-translation"></a>Ekonomisk konsolidering och valutaregistrering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet hjälper dig genom metoden med både Microsoft Dynamics 365 for Finance and Operations och ekonomisk rapportering för konsolidering. Det beskriver scenarier som omfattar rapportering med flera företag, aggregering, eliminering och minoritetsintresse. Här förklaras också hur du ska hantera vissa situationer, till exempel scenarier där juridiska personer har olika räkenskapsperioder eller olika kontoplaner.
+Det här avsnittet hjälper dig genom metoden som både Microsoft Dynamics 365 for Finance and Operations och ekonomisk rapportering använder för konsolideringar. Det beskriver scenarier som omfattar rapportering med flera företag, aggregering, eliminering och minoritetsintresse. Här förklaras också hur du ska hantera vissa situationer, till exempel scenarier där juridiska personer har olika räkenskapsperioder eller olika kontoplaner.
 
 Det här avsnittet är avsett för användare och funktionella konsulter och antar att läsare har en förståelse för Finance and Operations och ekonomisk rapportering. Grundinställningen omfattas inte.
 
@@ -181,4 +180,3 @@ Nedan följer några konsolideringsscenarier som Ekonomisk rapportering stöder:
 
 ## <a name="generating-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).
-

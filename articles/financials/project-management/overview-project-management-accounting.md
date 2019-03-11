@@ -1,13 +1,13 @@
 ---
 title: Projekthantering och redovisning
-description: "Funktionen för projekthantering och redovisning kan användas i flera branscher för att tillhandahålla en tjänst, för att tillverka en produkt eller för att uppnå ett resultat."
+description: Funktionen för projekthantering och redovisning kan användas i flera branscher för att tillhandahålla en tjänst, för att tillverka en produkt eller för att uppnå ett resultat.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311345"
 ---
-
 # <a name="project-management-and-accounting"></a>Projekthantering och redovisning
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Funktionen för projekthantering och redovisning kan användas i flera branscher
 
 [![Projekt i flera branscher](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-Hos en kundtjänst kan en biljett användas för att beskriva åtgärderna som krävs för att lösa ett ärende. Konsultföretag, till exempel management eller tekniska konsultorganisationer eller reklambyråer kallar sina aktiviteter för projekt. I marknadsföring representerar en kampanj en uppsättning med arbete som måste levereras. I projektbaserad tillverkning innehåller en produktionsorder de olika arbetsmomenten som måste göras för att tillverka en färdig produkt. Oavsett vilket namn som används, ingår det resurser, scheman och kostnader i projekten, och funktionen för projekthantering och redovisning i Microsoft Dynamics 365 for Finance and Operations kan hjälpa dig med planeringen, utförandet, och analysen av dessa projekt.
+Hos en kundtjänst kan en biljett användas för att beskriva åtgärderna som krävs för att lösa ett ärende. Konsultföretag, till exempel management eller tekniska konsultorganisationer eller reklambyråer kallar sina aktiviteter för projekt. I marknadsföring representerar en kampanj en uppsättning med arbete som måste levereras. I projektbaserad tillverkning innehåller en produktionsorder de olika arbetsmomenten som måste göras för att tillverka en färdig produkt. Oavsett vilket namn som används, ingår det resurser, scheman och kostnader i projekten, och funktionen för projekthantering och redovisning i Microsoft Dynamics 365 for Finance and Operations kan hjälpa dig med planeringen, utförandet, och analysen av dessa projekt.
 
 ## <a name="project-phases"></a>Projektfaser
 Även om projektflödet nedan gäller externa projekt eller projekt som slutförs för en eller flera kunder, gäller funktionerna även interna projekt med enbart kostnader. 
@@ -129,7 +128,7 @@ Nedan visas hur du kan använda resursplaneringsfunktionen på olika sätt:
 -   Ändra resurstilldelningar för olika tidsenheter, till exempel dag, vecka eller månad, för att optimera hur personalen används.
 
 ## <a name="execute-the-project"></a>Köra projektet
-Under projektutförandet registrerar gruppmedlemmarna eller projektledarna arbetet och utgifterna via tidrapporter, utgiftsrapporter och andra affärsdokument. Projektledare har verktyg som gör att de kan övervaka förbrukningen av budgeterade belopp i projektet. Projektledare kan också beställa, välja eller producera material för projekt med hjälp av inköpsorder och andra dokument. Fakturor förbereds och godkänns, så att kunder kan faktureras för pågående arbete. Slutligen identifieras intäkter som kan påverkar företagets ekonomi.
+Under projektutförandet registrerar gruppmedlemmarna eller projektledarna arbetet och utgifterna via tidrapporter, utgiftsrapporter och andra affärsdokument. Projektledare har verktyg som gör att de kan övervaka förbrukningen av budgeterade belopp i projektet. Projektledare kan också beställa, välja eller producera material för projekt med hjälp av inköpsorder och andra dokument. Fakturor förbereds och godkänns, så att kunder kan faktureras för pågående arbete. Slutligen identifieras intäkter som kan påverkar företagets ekonomi.
 
 ### <a name="manage-work-breakdown-structures"></a>Hantera uppdelade arbetsstrukturer
 
@@ -301,11 +300,11 @@ Baserat på dina inställningar, kan du prognostisera kassainflödena för ett v
 -   **Projektdatum:** 5 mars 2012.
 -   **Fakturadatum:** 31 mars 2012. Det här datumet bestäms utifrån fakturafrekvens. För det här exemplet ställer du in fakturafrekvensen på den aktuella månaden. Därför faktureras alla transaktioner som bokförs under månaden mars den sista dagen i månaden.
 -   **Förfallodatum:** 14 april 2012. Det här datumet bestäms utifrån betalningsvillkoren som har angetts för projektet. I det är exemplet är betalningsvillkoren 14 dagar. Därför läggs 14 dagar till fakturadatumet så att datumet blir 14 april 2012.
--   **Förväntat försäljningsbetalningsdatum:** 27 april 2012. Det här datumet beräknas genom att addera antal dagar i fältet **Allmänna buffertdagar** på sidan **Parametrar för projekthantering och redovisning** till antalet dagar i fältet **Individuella buffertdagar** på sidan **Projektkontrakt** och sedan lägga till totalt antal dagar i fältet **Förfallodatum**. För det här exemplet har du angett **3** i fältet **Allmänna buffertdagar** och **10** i fältet **Individuella buffertdagar**. Därför adderas 13 dagar till förfallodatumet så att resultatet blir det förväntade försäljningsbetalningsdatumet 27 april 2012.
+-   **Förväntat försäljningsbetalningsdatum:** 27 april 2012. Det här datumet beräknas genom att addera antal dagar i fältet **Allmänna buffertdagar** på sidan **Parametrar för projekthantering och redovisning** till antalet dagar i fältet **Individuella buffertdagar** på sidan **Projektkontrakt** och sedan lägga till totalt antal dagar i fältet **Förfallodatum**. För det här exemplet har du angett **3** i fältet **Allmänna buffertdagar** och **10** i fältet **Individuella buffertdagar**. Därför adderas 13 dagar till förfallodatumet så att resultatet blir det förväntade försäljningsbetalningsdatumet 27 april 2012.
 
 De allmänna buffertdagarna kan antingen ersätta de enskilda buffertdagarna eller läggas till de enskilda buffertdagarna:
 
--   Om du vill använda de allmänna buffertdagarna som ersättning för de enskilda buffertdagarna anger du det genomsnittliga antalet dagar mellan förfallodatumet och det riktiga betalningsdatum för kunder.
+-   Om du vill använda de allmänna buffertdagarna som ersättning för de enskilda buffertdagarna anger du det genomsnittliga antalet dagar mellan förfallodatumet och det riktiga betalningsdatum för kunder.
 -   Om du vill addera de allmänna buffertdagarna till de enskilda buffertdagarna, anger du din uppskattning av antalet dagar mellan dagen när kunden skickar betalningen och dagen då ditt företag får betalningen i fältet, **Allmänna buffertdagar**.
 
 Ställ in enskilda buffertdagar i projektets kontrakt. Dagarna beräknas utifrån både fakturans förfallodag och företagets erfarenhet av kundens betalningsmönster.
@@ -372,7 +371,7 @@ Om **Resterande budget** är markerad som kostnadskontrollmetod på sidan **Para
 -   **Resterande budget** – originalbudgetbeloppet som fortfarande är tillgängligt för den valda kostnadsraden. Det resterande budgetbeloppet beräknas på sidan **Förhandsgranskning av huvudbok**.
 -   **Totalkostnad** – summan av den faktiska kostnaden, den utfästa kostnaden och det resterande budgetbeloppet.
 
-På fliken **Avvikelse** på sidan **Kostnadskontroll** kan du visa en jämförelse mellan den totala förväntande kostnaden och den ursprungliga budgeten. Denna jämförelse visar eventuella skillnader mellan dessa belopp. Därför kan du se var uppgifterna inte stämmer. Avvikelsebeloppen beräknas på följande sätt:
+På fliken **Avvikelse** på sidan **Kostnadskontroll** kan du visa en jämförelse mellan den totala förväntande kostnaden och den ursprungliga budgeten. Denna jämförelse visar eventuella skillnader mellan dessa belopp. Därför kan du se var uppgifterna inte stämmer. Avvikelsebeloppen beräknas på följande sätt:
 
 -   **Ursprunglig budget** – det belopp som ursprungligen budgeterades för den valda kostnadsraden. Det ursprungliga budgetbeloppet beräknas på sidan **Förhandsgranskning av huvudbok**.
 -   **Totalkostnad** – summan av den faktiska kostnaden, den utfästa kostnaden och resterande budget enligt fliken **Allmänt**.
@@ -399,7 +398,7 @@ På sidan **Kostnadskontroll** på fliken **Avvikelse** kan du se skillnaden mel
 
 ### <a name="analyze-utilization"></a>Analysera utnyttjande
 
-Utnyttjandegraden är den procent av tiden en anställd utför fakturerbart arbete eller produktivt arbete under en viss period. Fakturerbara timmar är den anställdas timmar som går att debitera på en viss kund. 
+Utnyttjandegraden är den procent av tiden en anställd utför fakturerbart arbete eller produktivt arbete under en viss period. Fakturerbara timmar är den anställdas timmar som går att debitera på en viss kund. 
 
 En anställds utnyttjandegrad beräknas genom att dela antalet fakturerbara timmar med arbetstiden under en viss period. Om en anställd t.ex. har 30 fakturerbara timmar i en period och arbetstiden i samma period är 40, är utnyttjandegraden 75 procent. 
 
@@ -415,11 +414,11 @@ Du beräknar utnyttjandegraderna på sidan **Timutnyttjande**. Beräkningarna ba
 -   **Enligt radegenskap** – radegenskaperna i en viss timtransaktion bestämmer om timmarna är fakturerbara eller effektivitetsutnyttjade.
 -   **Inkluderas inte** – timmar ingår inte i beräkningarna av fakturerbar tid eller effektivitetsutnyttjande.
 
-Förutom den övergripande utnyttjandegraden för en anställd eller ett projekt , kan du på sidan **Timutnyttjande** visa antalet timmar som användes för beräkningar av utnyttjandegraden för var och en av följande timmetyper:
+Förutom den övergripande utnyttjandegraden för en anställd eller ett projekt , kan du på sidan **Timutnyttjande** visa antalet timmar som användes för beräkningar av utnyttjandegraden för var och en av följande timmetyper:
 
 -   **Ej inkluderade timmar** – dessa timmar inkluderas inte i timutnyttjandegraden.
 -   **Inkluderade timmar** – timmarna beräknas genom att addera utnyttjandetimmar och ej fakturerbara timmar. Dessa timmar ingår i utnyttjandegraden.
--   **Ej fakturerbara timmar** – om du beräknar en fakturerbar tid, blir dessa timmar samma som ej debiteringsbara timmar. Om du beräknar en effektivitetsgrad, blir dessa timmar samma som ej produktiva timmar.
+-   **Ej fakturerbara timmar** – om du beräknar en fakturerbar tid, blir dessa timmar samma som ej debiteringsbara timmar. Om du beräknar en effektivitetsgrad, blir dessa timmar samma som ej produktiva timmar.
 -   **Timutnyttjande** – om du beräknar en fakturerbar tid, blir dessa timmar samma som debiteringsbara timmar. Om du beräknar en effektivitetsgrad, blir dessa timmar samma som produktiva timmar.
 
 När du beräknar utnyttjandegraden för en anställd, kan du använda normtimmar eller inkluderade timmar. Om du använder inkluderade timmar, måste du se till att den anställda registrerar sina all arbetstid för tidrapportperioderna, eftersom beräkningen uttrycks som en procentandel av timmar som anges. När du beräknar timutnyttjandegraden för ett projekt, ett projektkontrakt, en kundpost eller en kategori, måste du använda inkluderade timmar i beräkningen.
@@ -441,4 +440,3 @@ När utdraget har beräknats, kan du visa följande information på de olika fli
 -   **Förbrukning** – information om förbrukning av timmar, artiklar, utgifter och lönetransaktioner.
 -   **Faktura** – information om fakturor och a conto-fakturering.
 -   **Timtariff** – timpriset på timmarna som bokförs på vinst- och förlustkonton.
-

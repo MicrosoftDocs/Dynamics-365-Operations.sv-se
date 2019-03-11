@@ -1,13 +1,13 @@
---- 
-title: "Ställa in enskilda nummerserier"
-description: "Nummerserier används för att generera läsliga, unika identifierare för huvuddataposter och transaktionsposter och som kräver dem."
+---
+title: Ställa in enskilda nummerserier
+description: Nummerserier används för att generera läsliga, unika identifierare för huvuddataposter och transaktionsposter och som kräver dem.
 author: sericks007
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6734d66a06f8a8dc90a48bd68b7b4e22177b4672
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4e2808e57dc8d137fac892d48e99d7687ff1bf81
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362221"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Ställa in enskilda nummerserier
 
@@ -43,5 +43,4 @@ Nummerserier används för att generera läsliga, unika identifierare för huvud
 8. Expandera avsnittet Allmänt.
     * Ange om nummerserien är manuell och kontinuerlig eller ickekontinuerlig på snabbfliken Allmänt. Ange även lägsta och högsta numret som kan användas i nummerserien.     Vi rekommenderar inte att ändra en löpande nummerserie till en kontinuerlig nummerserie. Nummerserien kommer inte att vara korrekt kontinuerlig. Den här ändringen kan även orsaka dubbelnyckelkränkningar i databasen. Dessutom har kontinuerliga nummerserier en större effekt på systemets prestanda.   
 9. Klicka på Spara.
-
 

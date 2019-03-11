@@ -1,13 +1,13 @@
 ---
-title: "Faktureringsarbetsyta för leverantörssamarbeten"
-description: "Det här avsnittet beskriver hur du kan visa leverantörsfakturor och skicka fakturor från arbetsytan för leverantörssamarbetesfakturering."
+title: Faktureringsarbetsyta för leverantörssamarbeten
+description: Det här avsnittet beskriver hur du kan visa leverantörsfakturor och skicka fakturor från arbetsytan för leverantörssamarbetesfakturering.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 5520012a00e918e8748b974773eeaf2450f0c55e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2368fae3913f67d9d2ce0bbe6b2e0bee7968bb15
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340532"
 ---
-
 # <a name="vendor-collaboration-invoicing-workspace"></a>Faktureringsarbetsyta för leverantörssamarbeten
 
 [!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du kan visa leverantörsfakturor och skicka fakturor från arbetsytan för leverantörssamarbetesfakturering.
 
-**Faktureringsarbetsyta för leverantörssamarbeten** kan användas för att visa information om leverantörsfaktura och skicka in fakturor till Microsoft Dynamics 365 for Finance and Operations med hjälp av arbetsflödesfunktionerna.
+Arbetsyta för **leverantörssamarbeten** kan användas för att visa information om leverantörsfaktura och skicka in fakturor till Microsoft Dynamics 365 for Finance and Operations med hjälp av arbetsflödesfunktionerna.
 
 
-<a name="vendor-collaboration-invoicing-workspace"></a>Arbetsyta för leverantörssamarbetesfakturering
+<a name="vendor-collaboration-invoicing-workspace"></a>Arbetsyta för leverantörssamarbetsfakturering
 ----------------------------------------
 
 ### <a name="summary-tiles"></a>Sammanfattningsrutor
@@ -60,7 +59,6 @@ Skapa en ny leverantörsfaktura från en inköpsorder
 Du kan skapa en ny leverantörsfaktura, genom att välja åtgärden **Ny** på **Faktureringsarbetsyta för leverantörssamarbete**. Inköpsordernumret och fakturanumret måste anges av leverantören. Som standard visas alla rader från leverantörens inköpsorder på den nya fakturan. Informationen om kvantitet och kostnad kan redigeras innan leverantörsfakturan skickas till arbetsflödet. Du kan bifoga filer, anteckningar, bilder och URL-adresser till en faktura, innan du skickar in den.
 
 Mer information finns i [Samarbeten med externa leverantörer](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
-
 
 
 

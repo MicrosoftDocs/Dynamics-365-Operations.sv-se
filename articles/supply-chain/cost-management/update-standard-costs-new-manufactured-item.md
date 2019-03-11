@@ -1,13 +1,13 @@
 ---
-title: "Uppdatera standardkostnader för en ny tillverkad artikel"
-description: "Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader för en ny tillverkad artikel."
+title: Uppdatera standardkostnader för en ny tillverkad artikel
+description: Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader för en ny tillverkad artikel.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc8725bcab61fa20a4c35a83473b00e54cf0bf28
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1cfb04a98f7d01f7766bea97157ca3c44c51e326
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325513"
 ---
-
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Uppdatera standardkostnader för en ny tillverkad artikel
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Följ dessa steg för att lägga till tillverkade artiklar under den låsta peri
 5.  Använd **Inställningar för kostnadsredovisningsversion**-sidan för att ändra spärrflaggan för att tillåta aktivering av de väntande kostnadsposterna i den andra kostnadsredovisningsversionen.
 6.  Använd **Aktivera priser**-sidan (som du öppnar från sidan **Underhåll av kostnadsredovisningsversion**) för att aktivera alla väntande kostnadsposter i den andra kostnadsredovisningsversionen. Du kan även aktivera de väntande kostnadsposterna för enskilda artiklar genom att klicka på knappen **Aktivera** på sidan **Artikelpris**.
 7.  För att förhindra ytterligare dataunderhåll, använd **Inställningar för kostnadsredovisningsversion**-sidan för att ändra spärrflaggorna i den andra kostnadsredovisningsversionen. Spärrprinciperna förhindrar registrering av nya pågående kostnader samt aktivering av pågående kostnader.
-
 
 
 

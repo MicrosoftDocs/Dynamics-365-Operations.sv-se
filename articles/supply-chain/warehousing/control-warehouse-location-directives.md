@@ -1,13 +1,13 @@
 ---
 title: Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
-description: "Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret."
+description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
 ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325421"
 ---
-
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 
 [!include [banner](../includes/banner.md)]
 
 Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 
-De instruktioner som lagerarbetare tar emot på en mobil enhet bestäms av de arbetsmallar som du anger i Microsoft Dynamics 365 for Finance and Operations för att definiera de olika lagerprocesserna och -uppgifterna. Arbetsmallar avgör hur arbetet utförs för varje lager. Genom att koppla en lagerplats direktiv att arbeta mallar, du kan bidra till att garantera att arbetet sker i särskilda fysiska områden i lager.
+De instruktioner som lagerarbetare på en mobil enhet bestäms av arbete mallar som du ställer in i Microsoft Dynamics 365 for Finance and Operations för att definiera de olika lager och uppgifter. Arbetsmallar avgör hur arbetet utförs för varje lager. Genom att koppla en lagerplats direktiv att arbeta mallar, du kan bidra till att garantera att arbetet sker i särskilda fysiska områden i lager.
 
 ## <a name="work-templates"></a>Arbetsmallar
 **Arbetsmallar** sidan låter dig definiera arbeten som måste utföras i lagret. Typiskt, warehouse arbeten består av ett par åtgärder: en lagerarbetare plockar upp lagersaldot på en plats och sedan lägger de plockade lager ned på en annan plats. 
@@ -163,4 +162,3 @@ Markera om du vill använda batchstrategier för artiklarna som är batchaktiver
 I det här exemplet kommer vi att överväga en inköpsorder där placering direktiv måste hitta ledig kapacitet inom ett lager för inventarier som just registrerats vid mottagningsplatsen. Först måste du försöka hitta ledig kapacitet inom lagret genom att konsolidera med befintliga lagersaldot. Om konsolideringen är inte möjligt, då måste du hitta en tom plats. 
 
 För detta scenario, måste du definiera två platsdirektivåtgärder. Den första åtgärden i sekvensen måste **konsolidera** strategi, och den andra ska använda den **tomma platsen med några inkommande arbete** strategi. Om du definierar en tredje handlingsplan för att hantera ett överskott scenario två utfall är möjliga när det inte finns något mer kapacitet i lagret: arbete kan skapas även om inga lagerplatser definieras eller arbete processen kan misslyckas. Resultatet bestäms av inställningar på **plats direktiv fel** sida, där du kan bestämma om du vill välja **stopp på plats direktiv fel** alternativ för varje arbetsorder.
-

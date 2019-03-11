@@ -1,13 +1,13 @@
 ---
 title: Reservera lagerkvantiteter
-description: "I det här avsnittet beskrivs de olika alternativ som är tillgängliga för att reservera lager."
+description: I det här avsnittet beskrivs de olika alternativ som är tillgängliga för att reservera lager.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 89441ee4c799e2d1215fbd82e0490d7168e2aa1b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c351618f4d710062dd8f369c5319cdce79f7339
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365464"
 ---
-
 # <a name="reserve-inventory-quantities"></a>Reservera lagerkvantiteter
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Avsnittet **Lagerpolicyer** innehåller följande reservationspolicyer.
 | **Reservationspolicy**  | **Beskrivning**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO-datumkontrollerad    | Om du väljer alternativet **FIFO-datumkontrollerad**, kommer lagerreservationen att styras av ett sorteringsdatum i enlighet med bästa FIFO-princip. En batch reserveras baserat på det tidigaste datumet för inleverans av artiklar, enligt principen först in-först ut (FIFO).                                                                                                                                                                                                                                                                       |
 | Bakåt från transportdatum | Det här alternativet blir tillgängligt först när du väljer alternativet **FIFO-datumkontrollerad**. Om du väljer **Bakåt från transportdatum** reserveras lager bakåt från önskat leveransdatum enligt principen sist in, först ut (LIFO). Om inga inleveranser är tillgängliga före leveransdatum används en FIFO-reservation.                                                                                                                                                                                                           |
-| Reservering av artikelförsäljning  | Bestämmer om artikelreservation sker manuellt eller automatiskt. Om reservation sker automatiskt kommer lager att reserveras när orderrader skapas. Det är möjligt att skapa reservationer på artikelnummernivå för strukturlistor (alternativet **Automatic**), eller för individuella element i en strukturlista (alternativet **Explosion**). Standardvärdet för **Reservering av artikelförsäljning** kan ärvas från **Parametrar för kundreskontra.** På den sidan anges värdet i fältet Reservation i avsnittet **Försäljningsstandardvärden** **** på fliken **Allmänt**. |
+| Reservering av artikelförsäljning  | Bestämmer om artikelreservation sker manuellt eller automatiskt. Om reservation sker automatiskt kommer lager att reserveras när orderrader skapas. Det är möjligt att skapa reservationer på artikelnummernivå för strukturlistor (alternativet **Automatic**), eller för individuella element i en strukturlista (alternativet **Explosion**). Standardvärdet för **Reservering av artikelförsäljning** kan ärvas från **Parametrar för kundreskontra.** På den sidan anges värdet i fältet Reservation i avsnittet **Försäljningsstandardvärden** på fliken **Allmänt**. |
 | Urval från samma batch    | Samma batchreservation gör att du kan du reservera lager för en försäljningsorderrad mot en enda lagerbatch. Om du vill använda detta alternativ måste du också ange alternativet **Konsolidera behov** som **Ja**. Det finns ytterligare inställningar som krävs för spårningsdimensionsgruppen och lagringsdimensionsgruppen. Mer information finns i [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md).                                                          |
 | Konsolidera behov | Detta alternativ liknar alternativet **Urval från samma batch**, och det konsoliderar lager som har reserverats för försäljningsorderrader till ett enskilt behov.                                                                                                                                                                                                                                                                                                                                                                                      |
 | FEFO-datumkontrollerad    | Detta alternativ låter dig reservera batchar som närmar sig sina utgångsdatum eller bäst före-datum. Du måste också ange fältet **Plockningskriterier** som antingen **Utgångsdatum** eller **Bäst-före-datum**.                                                                                                                                                                                                                                                                                                                              |
@@ -84,4 +83,3 @@ Det finns två alternativ som är relaterade till reservationer på sidan **Para
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Lagerreservationpolicyer på sidan för produktparametrar
 
 Värdet i fältet **Reservation** i fliken **Allmänt** på sidan **Produktionsparametrar** avgör den förvalda punkten i produktionsprocessen då lager bör reserveras. Till exempel kan lager reserveras när arbete schemaläggs eller när jobbet startas.
-

@@ -1,39 +1,38 @@
 ---
-title: "Videor för Finance and Operations"
-description: "Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Dynamics 365 for Finance and Operations som är tillgängliga på YouTube och andra platser."
+title: Videor för Finance and Operations
+description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Dynamics 365 for Finance and Operations som är tillgängliga på YouTube och andra platser.
 author: josaw1
 manager: AnnBe
 ms.date: 05/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
+ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d22fe0c9a38026350c839d1d7d35835bfc77d995
-ms.openlocfilehash: 7f1fb4d2094076de62873148212c76ae6812d6a2
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/17/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317831"
 ---
-
 # <a name="videos-for-finance-and-operations"></a>Videor för Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
 Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Dynamics 365 for Finance and Operations som är tillgängliga på YouTube och andra platser.
 
-## <a name="dynamics-365-youtube-channel"></a>Dynamics 365 YouTube-kanal
+## <a name="dynamics-365-youtube-channel"></a>Dynamics 365 YouTube-kanaler
 
-På [Microsoft Dynamics 365 YouTube-kanal](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), hittar du videoklipp som skapats av Microsoft för olika affärslösningar för Dynamics 365-produkter. Det här avsnittet visar instruktionsvideor för Dynamics 365 for Finance and Operations som finns på kanalen.
+På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), hittar du videoklipp som skapats av Microsoft för olika affärslösningar för Dynamics 365-produkter. Det här avsnittet visar instruktionsvideor för Dynamics 365 for Finance and Operations som finns på kanalen.
 
 Videor listas efter funktion, så rulla nedåt för att se hela listan med videoinnehåll.
 
@@ -68,29 +67,29 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 #### <a name="intelligence"></a>Intelligence
 
 - [Ta med din egen databas (BYOD) till Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
-- [Använda Power BI-innehållet för kostnadshantering i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
+- [Använda Power BI-innehåll i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
 
 - [Tillgångsbibliotek i Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
 - [Molnstyrda miljöer](https://www.youtube.com/watch?v=igjVt1lbyLQ&t=17s)
-- [Skapa supportärenden från Dynamics 365 for Operations](https://www.youtube.com/watch?v=avENUYBTBlA&t=2s)
+- [Skapa stöd för biljetter från Dynamics 365 for Operations](https://www.youtube.com/watch?v=avENUYBTBlA&t=2s)
 - [Distribuera miljöer](https://www.youtube.com/watch?v=FUROjGuhQEA&t=68s)
 - [Kom igång med Lifecycle Services:](https://www.youtube.com/watch?v=qLBjKAPaqN4&t=24s)
 - [Distribuera kod till en miljö med begränsat läge](https://www.youtube.com/watch?v=5azLeOO078k)
 - [Distribuera kod till en produktionsmiljö](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
 - [Genomföra projekt i Lifecycle Services](https://www.youtube.com/watch?v=V1vVOgcTuw4&t=18s)
-- [Hantera koduppgradering och verktygsprocess i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
+- [Hantera koduppgraderingen och verktyg i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
 - [Hantera affärsprocessbibliotek i Lifecycle Services](https://www.youtube.com/watch?v=S5msxj-2-x0)
 - [Metoder i Lifecycle Services](https://www.youtube.com/watch?v=YRMJ15DvgZ8)
-- [Begära en produktionsmiljö för Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
+- [Begär en Dynamics 365 for Finance and Operations produktionsmiljön](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
 - [Uppdatera data i en produktionsmiljö](https://www.youtube.com/watch?v=VCd5SgkYPTw)
-- [Upptag av en ny Dynamics 365 for Finance and Operations-plattformsutgåva efter plattformsuppdatering 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
+- [Deltagande i en ny Dynamics 365 for Finance and Operations plattform versionen efter plattformsuppdatering 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Använda telemetri för att övervaka viktiga prestandaräknare i Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
 #### <a name="office-integration"></a>Integrering med Office
 
-- [Skapa en Excel-mall för huvud- och radmönster i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+- [Skapa en Excel-mall för huvud- och linjemönster i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
 #### <a name="organization-administration"></a>Organisationsadministration
 
@@ -136,7 +135,7 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 
 #### <a name="develop-and-customize"></a>Utveckla och anpassa
 
-- [Azure integreringsverktyg för Dynamics 365 for Finance and Operations (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Integration av Azure-verktyg för Dynamics 365 for Finance and Operations (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Utbyggbarhet (DYN384PAL2)](https://infopedia.eventbuilder.com/event?eventid=e0x4q5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Så här utökar eller skapar du nya analytiska arbetsytor (DYN321PAL)](https://infopedia.eventbuilder.com/event?eventid=r7z0f5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Prestandatestmetod (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
@@ -151,7 +150,7 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 
 - [CDS-dataintegration (DYN451PAL2)](https://infopedia.eventbuilder.com/event?eventid=i8v2n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integrering (VIR806PAL)](https://infopedia.eventbuilder.com/event?eventid=y0w0k9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Integreringen mellan Dynamics 365 for Sales och Dynamics 365 for Finance & Operations via CDS (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Integrera Dynamics 365 for Sales och Dynamics 365 for Finance & Operations via CD (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Integreringsramverk inom Dynamics 365 for Finance & Operations (DYN385PAL)](https://infopedia.eventbuilder.com/event?eventid=y4y2v9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Ramverk för uppgiftsautomatisering för datahantering (DYN447PAL2)](https://youtu.be/KqnXjNpR4AY)
 
@@ -170,11 +169,11 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 - [Punchout (DYN332PAL2)](https://infopedia.eventbuilder.com/event?eventid=w5u5q8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Leverantörssamarbete (DYN327PAL)](https://infopedia.eventbuilder.com/event?eventid=c3e4c0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
-#### <a name="retail"></a>Retail
+#### <a name="retail"></a>Detaljhandel
 
-- [Dynamics 365 for Retail POS utbyggbarhet: djupdykning (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Arkitektur för Retail och Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Nyheter i Dynamics 365 for Retail POS utbyggbarhet (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Dynamics 365 for RetailPOS utbyggbarhet: djupdykning (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Arkitektur och Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Nyheter i Dynamics 365 for Retail POS-utbyggbarhet (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="support"></a>Support
 
@@ -182,9 +181,9 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 
 #### <a name="upgrade-and-migration"></a>Uppgradering och migrering
 
-- [Migreringsverktyg för AX 2009 to Dynamics 365 for Operations (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [AX 2009 till Dynamics 365 for Operations migreringsverktyg (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [AX 2009 migreringsverktyg (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Uppgradera AX 2012 till Dynamics 365 for Operations (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [AX 2012 till Dynamics 365 for Operations uppgradering (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Så här uppgraderar du till 7.2 (juli 2017) från 7.0 (RTW)/7.1 (Frisläpp 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Azure DevOps-konfiguration (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
@@ -196,4 +195,3 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 - [Plockningsprocess del för del (DYN330PAL2)](https://infopedia.eventbuilder.com/event?eventid=u6e0z6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Visuell planeringen av tillverkningsorder och kanbans (DYN328PAL)](https://infopedia.eventbuilder.com/event?eventid=h0o0n0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Lagerställe för integrering med produktion (DYN344PAL)](https://infopedia.eventbuilder.com/event?eventid=y8p6o1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) - [mobilappen för lager (VIR816PAL)](https://infopedia.eventbuilder.com/event?eventid=t8t7l8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-

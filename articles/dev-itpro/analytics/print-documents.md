@@ -1,13 +1,13 @@
 ---
 title: Dokumentutskrift
-description: "Du kan skriva ut dokument i Microsoft Dynamics 365 for Finance and Operations genom att använda en lokal skrivare eller en nätverksansluten enhet. Den här artikeln innehåller en översikt över hur dokument skrivs ut."
+description: Du kan skriva ut dokument i Microsoft Dynamics 365 for Finance and Operations genom att använda en lokal skrivare eller en nätverksansluten enhet. Den här artikeln innehåller en översikt över hur dokument skrivs ut.
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 4fd20022ff91fedb6d0323e82fbe3c1acae38e48
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362060"
 ---
-
 # <a name="document-printing"></a>Dokumentutskrift
 
 [!include [banner](../includes/banner.md)]
@@ -76,4 +75,3 @@ Diagrammet nedan visar de grundläggande komponenterna som hjälper till att st�
 [![tjänstkomponenter för nätverksutskrift\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Observera att en skrivare kan registreras med flera dokumentflödesagenter. För att lösa skrivarens egenskaper använder värdtjänsten nätverkssökvägen som unikt identifierar alla nätverksskrivare. Därför visas den som ett alternativ i listan över skrivare som är tillgänglig i Finance and Operations-program även om en skrivare är registrerad med flera klienter.
-

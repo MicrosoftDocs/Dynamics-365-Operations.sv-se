@@ -1,13 +1,13 @@
 ---
 title: Notifieringar
-description: "Det här avsnittet innehåller allmän information om notifieringar i Microsoft Dynamics 365 for Finance and Operations. Du kan använda notifieringar för att hålla dig informerad om händelser som du vill spåra under arbetsdagen."
+description: Det här avsnittet innehåller allmän information om notifieringar i Microsoft Dynamics 365 for Finance and Operations. Du kan använda notifieringar för att hålla dig informerad om händelser som du vill spåra under arbetsdagen.
 author: tjvass
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
+ms.openlocfilehash: 28ee34cd9133c634af98a50168e22efd0f74abce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 38309e986c1d284ed63be760745b20a5415adb4c
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367465"
 ---
-
 # <a name="alerts"></a>Notifieringar
 
 [!include [banner](../includes/banner.md)]
@@ -78,4 +77,3 @@ Komponenter för en notifieringsregel
 ## <a name="email-notifications-from-alerts"></a>E-postmeddelanden från aviseringar
 
 E-postmeddelanden från aviseringar har inte aktiverats ännu. Detta aktiveras i en kommande uppdatering.
-

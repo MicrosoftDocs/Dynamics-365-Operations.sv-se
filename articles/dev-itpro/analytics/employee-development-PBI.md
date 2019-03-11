@@ -1,13 +1,13 @@
 ---
-title: "Utveckling av medarbetare Power BI-innehåll"
-description: "Det här avsnittet beskriver Power BI-innehåll för medarbetarutveckling."
+title: Power BI-innehåll för medarbetarutveckling
+description: Det här avsnittet beskriver Power BI-innehåll för medarbetarutveckling.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,22 +15,21 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347179"
 ---
-
-# <a name="employee-development-power-bi-content"></a>Utveckling av medarbetare Power BI-innehåll
+# <a name="employee-development-power-bi-content"></a>Power BI-innehåll för medarbetarutveckling
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver Power BI-innehåll för **medarbetarutveckling**.
+Det här avsnittet beskriver **Medarbetarutveckling** Microsoft Power BI-innehåll.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
-Rapporter som ingår i Power BI-innehållspaketet **Medarbetarutveckling** har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
+Rapporter som ingår i **Medarbetarutveckling** Power BI har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                        | Innehåll |
 |-------------------------------|----------|
@@ -42,7 +41,7 @@ Rapporter som ingår i Power BI-innehållspaketet **Medarbetarutveckling** har b
 | Resultatvärderingsanalys   | Medarbetare per lägsta och högsta värdering per jobb, medarbetarvärderingar per avdelning, medarbetare per värdering och beafattningstyp och högsta och lägsta värdering per befattning |
 | Medarbetarresultatanalys | Medarbetarvärdering för vald värdering av chef |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
@@ -70,4 +69,3 @@ Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på 
 | Analys över medarbetarens kompetenser  | Certifierad, nivå, nivådatum och kompetens                                                                    | Medarbetarens namn, kompetens |
 | Resultat              | Värdering, beskrivning och bedömningsmodellen                                                                      | Aktuell medarbetare, aktuell befattning, medarbetarutveckling, prioriterade kompetenser för jobbet, tidigare befattningstilldelning, avslutade medarbetare |
 | Kompetens                    | Färdighet, färdighetstyp och värdering                                                                              | Analys över medarbetarens kompetenser, prioriterad kompetens för jobbet |
-

@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehåll för personalmätningar"
-description: "Det här avsnittet beskriver Power BI-innehåll för personalmätningar. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
+title: Personalmätningar Power BI-innehåll
+description: Det här avsnittet beskriver Power BI-innehåll för personalmätningar. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,27 +18,26 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345799"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>Power BI-innehåll för personalmätningar
+# <a name="workforce-metrics-power-bi-content"></a>Personalmätningar Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver **Microsoft Power BI-innehåll för personalmätningar**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver **personalmätningar** Microsoft Power BI -innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehåll för **Personalmätningar** visas i arbetsytan **Personalhantering** om du använder någon av följande produkter:
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+**Personalmätningar** Power BI-innehåll visas på arbetsytan **Personalhantering** om du använder någon av följande produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mätvärden som ingår i Power BI-innehållet
 Följande tabell visar mätningar som är tillgängliga i varje rapport.
 
 | Rapport                                           | Mätvärden |
@@ -57,9 +56,9 @@ Följande tabell visar mätningar som är tillgängliga i varje rapport.
 | Medarbetarnas födelsedagar                               | Månadens födelsedagar, födelsedagar nästa månad, medarbetarnas födelsedagar, och födelsedagar per månad och avdelning |
 | Massanställningsprojekt                               | Totalt antal massanställningsprojekt, massanställningsprojekt efter status, massanställningsprojekt efter avdelning och ägare, massanställningsprojekt efter jobb och massanställningsprojekt |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-Hämta Power BI-innehåll för **Personalmätningar** som kan tillämpas på den version av Microsoft Dynamics 365 som du använder.
+Hämta **Personalmätningar** Power BI-innehåll som gäller för den version av Microsoft Dynamics 365 som du använder.
 
 > [!NOTE]
 > .pbix-filerna i Lifecycle Services gäller endast Finance and Operations.
@@ -88,4 +87,3 @@ Följande tabell visar enheterna som innehållet baserades på.
 | Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                 | Företag, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb |
 | Massanställningsprojekt        | Antal massanställningsprojekt, projektägare och projektstatus                     | Företag, massanställningsrad |
 | Massanställningsrad           | Avdelning, anställningstyp och befattning                                           | Datum, jobb, massanställningsprojekt |
-

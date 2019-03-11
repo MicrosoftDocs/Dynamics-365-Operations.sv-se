@@ -1,13 +1,13 @@
 ---
-title: "Ställa in räntesatser för en räntekod"
-description: "Räntekoder innehåller inställningar som bestämmer när ränta debiteras och hur den beräknas på förfallna konton."
+title: Ställa in räntesatser för en räntekod
+description: Räntekoder innehåller inställningar som bestämmer när ränta debiteras och hur den beräknas på förfallna konton.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Interest
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 665c58fd29fb986bf51e10f5814c4793940c0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1c19cb68df5be5245722da43f3ef9c2072873a34
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317785"
 ---
-
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Ställa in räntesatser för en räntekod
 
 [!include [banner](../includes/banner.md)]
@@ -129,7 +128,6 @@ Du ställer in information om intervall så här.
 Räntekoder har giltighetsdatum. Om du vill ändra räntesatsen kan du skapa en **ny version** som gäller för ett framtida datum.
 
 Om du vill visa andra versioner kan du använda menyvalet **Från och med (datum)** för att välja slutdatumet. Du kan också markera **Visa alla poster** för att visa alla räntekoder på sidan.
-
 
 
 

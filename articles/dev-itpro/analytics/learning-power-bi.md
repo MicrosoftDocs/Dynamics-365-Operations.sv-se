@@ -1,13 +1,13 @@
 ---
-title: "Learning Power BI-innehåll"
-description: "Det här avsnittet beskriver Learning Power BI-innehållet."
+title: Lär dig Power BI-innehåll
+description: Det här avsnittet beskriver Learning Power BI-innehållet.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,39 +15,38 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321465"
 ---
-
-# <a name="learning-power-bi-content"></a>Learning Power BI-innehåll
+# <a name="learning-power-bi-content"></a>Lär dig Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver Microsoft Power BI-innehållet för **utbildning (Learning)**.
+Det här avsnittet beskriver **Learning** Microsoft Power BI-innehållet.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 
-De rapporter som ingår i Power BI-innehållspaketet **Learning** har både diagram och tabeller som innehåller ytterligare information. Följande register beskriver rapporterna.
+Rapporter som ingår i **Learning** Power BI-innehållet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                | Innehåll |
 |-----------------------|----------|
 | Översikt - Learning     | Sammanfattning av andra rapporter |
-| Kursanalys       | Registrering efter plats, deltagare efter status, kurser efter typ per företag, samt kursnärvaro efter jobb |
+| Kursanalys       | Registrering efter plats, deltagare efter status, kurser efter typ per företag, samt kursnärvaro efter jobb |
 | Registreringsanalys | Registreringslista |
 | Kurstyper          | Kurstyper per kompetens |
 | Instruktörsanalys   | Kurskvot för instruktörer, antal instruktörer, kurser efter instruktör, kurser per lärare och kursagenda per instruktör |
 | Erbjudna kurser       | Lista över kurser |
 | Kursdesign        | Kursagenda |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
-Följande data används för att fylla i rapporterna i Power-Bi-innehållet för **Learning**. Denna tabell visar enheterna som innehållet baserades på.
+Följande data används för att fylla i rapporterna i **Learning** Power BI-innehållet. Denna tabell visar enheterna som innehållet baserades på.
 
 | Enhet           | Innehåll                                                         | Relationer med andra entiteter |
 |------------------|------------------------------------------------------------------|-----------------------------------|
@@ -64,4 +63,3 @@ Följande data används för att fylla i rapporterna i Power-Bi-innehållet för
 | Befattning         | Befattning, titel och heltidsanställning (FTE)                  | Kursagenda, kursdeltagare |
 | Namn på medarbetare    | Förnamn, efternamn och fullständiga namn                             | Kursdeltagare |
 | Medarbetartitel   | Titel och tjänsteålder                                         | Kursdeltagare |
-

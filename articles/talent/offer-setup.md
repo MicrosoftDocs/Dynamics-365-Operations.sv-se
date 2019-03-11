@@ -1,28 +1,28 @@
 ---
-title: "Ställa in erbjudandehantering"
-description: "I det här avsnittet beskrivs hur du ställer in erbjudanden i Talent."
+title: Ställa in erbjudandehantering
+description: I det här avsnittet beskrivs hur du ställer in erbjudanden i Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
+ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376517"
 ---
 # <a name="set-up-offer-management"></a>Ställa in erbjudandehantering 
 
@@ -203,5 +203,7 @@ Det finns flera olika delar av erbjudandets skapandeprocess som kan konfigureras
 
     - ESign - Detta är standardalternativet, tillhandahålles direkt vid leverans, där användaren kan registrera ett erbjudande genom att ange deras namn och initialer.
 
-Mer information om processen att skapa erbjudanden finns i [skapa, godkänna och signera erbjudanden](./creating-offers.md).
+>[!NOTE]
+> Adobe Sign-licenser och en kostnadsfri utvärderingsversion finns i [länk](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+Mer information om processen att skapa erbjudanden finns i [skapa, godkänna och signera erbjudanden](./creating-offers.md).

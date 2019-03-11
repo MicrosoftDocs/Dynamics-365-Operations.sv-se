@@ -1,13 +1,13 @@
 ---
 title: Startsidan Budgetering
-description: "Det här ämnet innehåller en översikt med komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapportering i Microsoft Dynamics 365 for Finance and Operations."
+description: Det här avsnittet innehåller en översikt över komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapporteringskapaciteter i Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 84321b78c9869a4920c3488373876bb56bcb3a29
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: efe348d9967ab7594afd22a3ebb4df76dc6607f8
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302909"
 ---
-
 # <a name="budgeting-home-page"></a>Startsidan Budgetering
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet innehåller en översikt med komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapportering i Finance and Operations. 
+Det här avsnittet innehåller en översikt med komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapportering i Finance and Operations. 
 
 <a name="components-of-budgeting-functionality"></a>Komponenter i budgeteringsfunktionen
 -------------------------------------
@@ -66,7 +65,6 @@ Information om att hämta planeringsdata från andra moduler till budgetplaner f
 I Finance and Operations kan användarna skapa budgetplaner antingen direkt i Finance and Operations-klienten (genom att använda en konfigurerbar sida i budgetplansdokumentet) eller i Excel. Excel innehåller flera ytterligare funktioner. Det går till exempel att använda externa uppgifter som källa till en budgetplan, göra egna beräkningar och använda Microsoft pivottabeller och diagram. De flesta variablerna i budgetplaneringsprocessen går att konfigurera. 
 
 Det går till exempel att definiera vem som gör budgeten, vad som budgeteras och hur processen går till. Även om du använder Excel till budgetplanering, behålls Finance and Operations som en enda sanningskälla som förhindrar budgetkontrollproblem. Periodiska processer kan användas för att införa startuppgifter för budgeteringen i budgetplanen. Till rapporteringen erbjuder Finance and Operations en uppsättning standardförfrågningssidor som gör det möjligt att visa och analysera budgeteringsdata. Budgetplandata går att öppna i Management Reporter och enskilda budgetplansscenarier går att visa som kolumner i Management Reporter-rapporten.
-
 
 
 

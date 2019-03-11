@@ -1,13 +1,13 @@
 ---
-title: "Parametrar för utläggshantering"
-description: "Följande parametrar styr beteendet i utgiftshanteringen."
+title: Parametrar för utläggshantering
+description: Följande parametrar styr beteendet i utgiftshanteringen.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: b6f67d44e0c64c145bb6d477c83d5a245b1682d4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 22f766b780d10d4fc615660990729f008007787a
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355942"
 ---
-
 # <a name="expense-management-parameters"></a>Parametrar för utläggshantering
 
 [!include [banner](../includes/banner.md)]
@@ -92,5 +91,4 @@ Följande parametrar styr det allmänna beteendet i utgiftshanteringen.
 |  <strong>Visa antikorruptionsattestering</strong>  | Välj detta alternativ om du vill visa antikorruptionstexten när du skapar en ny utgiftsrapport. Särskilda kostnadskategorier kan aktiveras som kräver att antikorruptionsattestering väljs i utgiftsrapporten. Exempelvis kan en gåvokategori relaterad till officiella offentliga utgifter kräva att medarbetare bekräftar att utgiften uppfyller företagets policy relaterat till statliga tjänstemän. |
 | <strong>Antikorruptionsmeddelande till insändare</strong> |                                                                                             Ange den text som ska visas för medarbetaren när du skapar en ny utgiftsrapport. Klicka på knappen <strong>översättningar</strong> för att ange språkspecifik text som ska visas baserat på användarens språk.                                                                                             |
 | <strong>Antikorruptionsmeddelande till godkännare</strong>  |                                                                                             Ange den text som ska visas för godkännaren när du skapar en ny utgiftsrapport. Klicka på knappen <strong>översättningar</strong> för att ange språkspecifik text som ska visas baserat på användarens språk.                                                                                             |
-
 

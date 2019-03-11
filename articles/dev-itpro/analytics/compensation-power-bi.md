@@ -1,13 +1,13 @@
 ---
-title: "Power BI-innehållspaket för kompensationer"
-description: "Det här avsnittet beskriver Power BI-innehåll för kompensationer. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
+title: Kompensation Power BI-innehåll
+description: Det här avsnittet beskriver kompensation Power BI-innehållet. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,28 +16,27 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 8457182fee49e28256f2a1102ba77b2b4e89d5b2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 93c005d4b85b56f77ddd488c91e477970f4ccd07
-ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347294"
 ---
-
-# <a name="compensation-power-bi-content"></a>Power BI-innehållspaket för kompensationer
+# <a name="compensation-power-bi-content"></a>Kompensation Power BI-innehåll
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver Microsoft Power BI-innehåll för **Kompensation**. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver **Kompensation** Microsoft Power BI-innehållet. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehåll för **kompensation** visas i arbetsytan **kompensationshantering** om du använder någon av följande produkter:
+## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+Power BI-innehåll för **kompensation** Power BI visas i arbetsytan **kompensationshantering** om du använder någon av följande produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
-Rapporter som ingår i  Power BI-innehållspaketet **Kompensation** har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
+Rapporter som ingår i **Kompensation** Power BI-innehållet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                     | Innehåll |
 |----------------------------|----------|
@@ -46,10 +45,10 @@ Rapporter som ingår i  Power BI-innehållspaketet **Kompensation** har både di
 | Befattningsutbetalningsanalys      | Högsta och lägsta timlön och löneutbetalning, befattning med högsta och lägsta lön och heltids- och deltidsbefattning |
 | Kompensationsplananalys | Anmälan till medarbetare efter valt förmån |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Följande data används för att fylla i rapporterna i Power-Bi-innehållet för **Kompensation**. Denna tabell visar enheterna som innehållet baserades på.
+Följande data används för att fylla i rapporterna i **Kompensation** Power BI-innehållet. Denna tabell visar enheterna som innehållet baserades på.
 
 | Enhet                   | Innehåll                                                                                                   | Relationer med andra entiteter |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
@@ -73,4 +72,3 @@ Följande data används för att fylla i rapporterna i Power-Bi-innehållet för
 | Namn på medarbetare            | Förnamn, efternamn och fullständiga namn                                                                       | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetartitel           | Titel och tjänsteålder                                                                                   | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                                        | Företag, kompensation, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb, förmåner |
-

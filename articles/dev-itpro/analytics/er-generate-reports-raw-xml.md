@@ -1,13 +1,13 @@
 ---
-title: "Skapa rapporter genom att lägga till innehåll som råa XML-dokument"
-description: "Du kan utforma elektronisk rapportering (ER)-format som skapar utgående dokument i XML-format."
+title: Skapa rapporter genom att lägga till innehåll som råa XML-dokument
+description: Du kan utforma elektronisk rapportering (ER)-format som skapar utgående dokument i XML-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312196"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Skapa rapporter genom att lägga till innehåll som råa XML-data
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ Du kan använda **RÅA XML**-formatelement för att utforma format för elektron
 > Tänk på att ramverket inte kontrollerar om XML-innehållet som placeras i det skapade dokumentet med hjälp av formatelementet **RÅA XML** är korrekt.
 
 Om du vill veta mer om den här funktionen kan du spela upp uppgiftsguiderna **Rapporterna ER använda råa XML-data för att skapa XML (Del 1: Designa datamodell)** och **Rapporterna ER använda råa XML-data för att skapa XML (Del 2: Designa och köra rapport)** som ingår i affärsprocessen **7.5.4.3 hämta/utveckla fram IT-tjänst/komponenter (10677)** och kan hämtas från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Dessa uppgiftsguider förklarar processen att konfigurera ett ER-format för att infoga råa XML-data i skapade filer.
-

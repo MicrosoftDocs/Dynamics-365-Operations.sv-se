@@ -1,13 +1,13 @@
 ---
-title: "Omräkning i utländsk valuta för Leverantörsreskontra och Kundreskontra"
-description: "Variationer i valutakurser gör att det teoretiska värdet (bokförda värdet) för öppna kundtransaktioner i utländska valutor varierar över tiden. Den här artikeln innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra."
+title: Omräkning i utländsk valuta för Leverantörsreskontra och Kundreskontra
+description: Variationer i valutakurser gör att det teoretiska värdet (bokförda värdet) för öppna kundtransaktioner i utländska valutor varierar över tiden. Den här artikeln innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: da1aee4c678cb4786d52abc81b787edceaa5aa38
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 259b487b0f11b19af9609d63f12114dcaa61be52
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341337"
 ---
-
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Omräkning i utländsk valuta för Leverantörsreskontra och Kundreskontra
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ En registrering görs varje gång du kör en omräkning i utländsk valuta. Frå
     -   **Ingen** – Inga ekonomiska dimensioner bokförs. Om du har en obligatorisk ekonomisk dimension i din kontostruktur, körs omvärderingsprocessen fortfarande och skapar redovisningsposter som saknar ekonomiska dimensioner. Du får ett varningsmeddelande först, så att du kan avbryta omvärderingen.
     -   **Register** – De ekonomiska dimensionerna för kundkontot eller leverantörskontot bokförs i transaktioner för omräkning i utländsk valuta.
     -   **Bokföring** – De ekonomiska dimensionerna för transaktionen som omvärderas bokförs i transaktioner för omräkning i utländsk valuta. Som standard ska ekonomiska dimensioner från den ursprungliga transaktionens AR/AP-redovisningskonto användas för omvärderingtransaktionens huvudkontot för AR/AP, och ekonomiska dimensioner från den ursprungliga transaktionens kostnader/tillgångar/intäktsredovisningskonto ska användas för omvärderingtransaktionens huvudkontot för orealiserad vinst/förlust.
-
 
 
 

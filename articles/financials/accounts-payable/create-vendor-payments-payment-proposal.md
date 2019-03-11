@@ -1,13 +1,13 @@
 ---
-title: "Skapa leverantörsbetalningar med ett betalningsförslag"
-description: "Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar."
+title: Skapa leverantörsbetalningar med ett betalningsförslag
+description: Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327422"
 ---
-
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Skapa leverantörsbetalningar med ett betalningsförslag
 
 [!include [banner](../includes/banner.md)]
@@ -70,14 +69,14 @@ Den 1 juli betalar April leverantörer. Hon använder ett betalningsförslag fö
 
 ### <a name="option-1-by-cash-discount"></a>Alternativ 1: Efter kassarabatt
 
-April väljer **Kassarabatt** som förslagstyp. Hon anger datumintervallet 26 juni till 10 juli. Följande fakturor inkluderas i förslaget:
+April väljer  **Kassarabatt** som förslagstyp. Hon anger datumintervallet 26 juni till 10 juli. Följande fakturor inkluderas i förslaget:
 
 -   1002, eftersom rabattdatumet 4 juli ligger inom intervallet för betalningsdatum.
 -   1004, eftersom rabattdatumet för 1 juli ligger inom intervallet för betalningsdatum.
 
 Följande fakturor inkluderas inte i förslaget:
 
--   1001, eftersom rabattdatumet 29 juni redan har förfallit, så den här fakturan är inte längre valbar för kassarabatten.
+-   1001, eftersom rabattdatumet 29 juni redan har förfallit, så den här fakturan är inte längre valbar för kassarabatten.
 -   1003, eftersom den här fakturan inte har ett rabattdatum.
 
 ### <a name="option-2-by-due-date"></a>Förslag 2: Efter förfallodatum
@@ -102,7 +101,7 @@ April väljer **Förfallodatum och kassarabattdatum** som förslagstyp. Hon ange
 
 Följande fakturor inkluderas inte i förslaget:
 
--   1001, eftersom rabattdatumet 29 juni redan har förfallit, så den här fakturan är inte längre valbar för kassarabatten, och förfallodatumet 15 juli ligger också utanför datumintervallet.
+-   1001, eftersom rabattdatumet 29 juni redan har förfallit, så den här fakturan är inte längre valbar för kassarabatten, och förfallodatumet 15 juli ligger också utanför datumintervallet.
 
 ## <a name="country-specific-considerations"></a>Lands-/regionspecifika hänsyn
 ### <a name="norway"></a>Norge
@@ -113,15 +112,14 @@ Med dimensionskontroll kan du kontrollera grupperingen av genererade rader efter
 
 -   Fältet **Dimensionskontroll** avaktiveras. Betalningsförslaget fungerar som för alla andra länder.
 -   Fältet **Dimensions control** aktiveras utan att ytterligare definiera dimensionerna. Betalningsförslaget skapas utan att ta hänsyn till dimensioner. Den skapade transaktionen ärver inga dimensioner från den använda posten.
--   Fältet **Dimensionskontroll** aktiveras och ytterligare dimensioner aktiveras. Nu kan du definiera hur dimensionerna ska kopieras till journalen. Till exempel: • Välj kryssrutan **BusinessUnit** kryssrutan om du vill skapa ett betalningsförslag per affärsenhet för betalningsmetoden • Välj kryssrutan **CostCenter** för att skapa ett betalningsförslag per kostnadsställe för betalningsmetoden
+-   Fältet **Dimension control** aktiveras och ytterligare dimensioner aktiveras. Nu kan du definiera hur dimensionerna ska kopieras till journalen. Till exempel: • Välj kryssrutan **BusinessUnit** kryssrutan om du vill skapa ett betalningsförslag per affärsenhet för betalningsmetoden • Välj kryssrutan **CostCenter** för att skapa ett betalningsförslag per kostnadsställe för betalningsmetoden
 
 > [[!NOTE]
 > Om du väljer fler än en dimension i det tredje alternativet skapas ett betalningsförslag för dimensionskombinationen.
 
 #### <a name="bank-account-selection"></a>Val av bankkonto
 
-Du kan definiera ett standardkonto för betalningsdebitering per betalningsmetod oavsett landskontext. Detta ska anges i betalningsrader som genereras av ett förslag. Med bankkontofunktionen kan du definiera flera debiterande bankkonton som hanteras av dimension och valuta, eller en kombination av dessa om du vill använda andra debiteringsbankkonton, beroende på respektive kombination. Du kan ställa in dessa kombinationer på sidan **Betalningsmetoder** genom att använda knappen **Bankkonton** som finns för respektive betalningsmetod med **Bokförande kontotyp** = **Bank**.
-
+Du kan definiera ett standardkonto för betalningsdebitering per betalningsmetod oavsett landskontext. Detta ska anges i betalningsrader som genereras av ett förslag. Med bankkontofunktionen kan du definiera flera debiterande bankkonton som hanteras av dimension och valuta, eller en kombination av dessa om du vill använda andra debiteringsbankkonton, beroende på respektive kombination. Du kan ställa in dessa kombinationer på sidan **Betalningsmetoder** genom att använda knappen **Bankkonton** som finns för respektive betalningsmetod med **Bokföringskontotyp** = **Bank**.
 
 
 

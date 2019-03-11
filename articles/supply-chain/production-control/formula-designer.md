@@ -1,32 +1,31 @@
 ---
 title: Receptdesigner
-description: "Det här avsnittet beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy."
+description: Det här avsnittet beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.
 author: cvocph
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 31a46230251be3a654092a4acc05a404533001b2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348513"
 ---
-
 # <a name="formula-designer"></a>Receptdesigner
 
 [!include [banner](../includes/banner.md)]
@@ -68,7 +67,7 @@ Filtret som används för formeln och flödet visas i formeldesignerns rubrik. D
 <tbody>
 <tr class="odd">
 <td>Produktdimensioner</td>
-<td>Du kan definiera aktiva produktdimensioner för huvudurvalet om vald slutprodukt är en produktmall. Observera att om du öppnar formeldesigner för en produkt som inte är en produktmall, så kan inga produktdimensioner väljas i dialogrutan <strong>Filter</strong>.</p></td>
+<td>Du kan definiera aktiva produktdimensioner för huvudurvalet om vald slutprodukt är en produktmall. Observera att om du öppnar formeldesigner för en produkt som inte är en produktmall kan inga produktdimensioner väljas i dialogrutan <strong>Filter</strong>.</p></td>
 </tr>
 <tr class="even">
 <td>Plats</td>
@@ -121,5 +120,4 @@ Klicka på **Inställningar** om du vill anpassa informationen som visas i träd
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     Strukturlista     | Använd kryssrutorna för att välja de kriterier som visas i trädstrukturen. I formeldesignern visas det valda villkoret längst ned på båda flikarna. |
 |    Flöde    |                                           Använd kryssrutorna för att välja de kriterier som visas för flödena.                                           |
-
 

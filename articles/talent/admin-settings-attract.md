@@ -1,14 +1,14 @@
 ---
-title: "Administrationsinställningar i Attract"
-description: "Det här avsnittet beskriver hur du aktiverar funktioner för företag och användare i Attract."
-author: 
+title: Administrationsinställningar i Attract
+description: Det här avsnittet beskriver hur du aktiverar funktioner för företag och användare i Attract.
+author: ''
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306253"
 ---
-
 # <a name="admin-settings-in-attract"></a>Administrationsinställningar i Attract
 [!include[banner](../includes/banner.md)]
 
@@ -69,4 +68,3 @@ Du kan också konfigurera alternativ som är relaterade till kandidatens erfaren
 Du kan också ställa in och tillämpa utgångsdatum för erbjudanden. Om du ställer in alternativet **Kräv ett förfallodatum för alla erbjudanden** till **Ja**, kommer erbjudandet att upphöra att gälla efter det antal timmar eller dagar som du anger.
 
 Mer information om hantering av erbjudandet finns i [Ställ in erbjudandehantering](./offer-setup.md).
-

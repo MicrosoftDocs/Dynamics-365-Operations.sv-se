@@ -1,13 +1,13 @@
 ---
-title: "Övervaka resultat för försäljning och marginaler"
-description: "Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail."
+title: Övervaka resultat för försäljning och marginaler
+description: Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSales
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e1d4f693fa9712585593b9d3de43c3603588531c
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357276"
 ---
-
 # <a name="monitor-sales-and-margin-performance"></a>Övervaka försäljningsresultat och marginaler
 
 [!include [banner](includes/banner.md)]
 
 Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.
 
-Som en del av Dynamics 365 for Retail kan användare övervaka prestanda för försäljning och marginaler i realtid på andra nivåer i organisationshierarkin för följande dimensioner:
+Som en del av Dynamics 365 for Retail kan användare övervaka prestanda för försäljning och marginaler i realtid i andra nivåer för organisationshierarkin för följande dimensioner:
 
 - Produkter
 - Kategorier
@@ -50,4 +49,3 @@ Dessutom kan två unika rapporter, som används för strukturering av det hierar
 - Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
 - Arbetsytan **Pris- och rabatthantering** &gt; **Butik** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
 - Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
-

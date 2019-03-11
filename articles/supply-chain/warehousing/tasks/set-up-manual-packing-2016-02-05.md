@@ -1,13 +1,13 @@
---- 
-title: "Skapa manuell förpackning (februari 2016 och maj 2016)"
-description: "Förpackningsprocessen låter dig validera och packa produkter i behållare."
+---
+title: Skapa manuell förpackning (februari 2016 och maj 2016)
+description: Förpackningsprocessen låter dig validera och packa produkter i behållare.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b90b4a71e2447e942dbb4a9645ef93064da630d3
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347731"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Skapa manuell förpackning (februari 2016 och maj 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Förpackningsprocessen låter dig validera och packa produkter i behållare. I denna process plockar lagerarbetare produkter från lagringsplatserna och flyttar dem till en förpackningsstation där de kontrollerar artikelkvantiteterna och typerna och tilldelar dem en lämplig behållare. När en behållare är helt ilastad, kan du stänga den och flytta den till utlastningsplatserna och produkterna är redo att skeppas. I den här proceduren används demonstrationsföretaget USMF. Den här proceduren är endast avsedd för versionerna från februari 2016 och maj 2016 av Dynamics 365 for Operations.
+Förpackningsprocessen låter dig validera och packa produkter i behållare. I denna process plockar lagerarbetare produkter från lagringsplatserna och flyttar dem till en förpackningsstation där de kontrollerar artikelkvantiteterna och typerna och tilldelar dem en lämplig behållare. När en behållare är helt ilastad, kan du stänga den och flytta den till utlastningsplatserna och produkterna är redo att skeppas. I den här proceduren används demonstrationsföretaget USMF. Denna procedur är endast avsedd för versionerna för februari och maj 2016 av Dynamics 365 for Operations.
 
 
 ## <a name="set-up-location-profiles"></a>Konfigurera platsprofiler
@@ -94,5 +94,4 @@ Förpackningsprocessen låter dig validera och packa produkter i behållare. I d
     * Detta kommer att vara platsen till vilken produkterna ska flyttas till, efter att behållarna har stängts. Denna plats måste ha en platsprofil definierad i lagerställeparametrar.  
 8. Ange eller välj ett värde i fältet Viktenhet.
 9. Klicka på Spara.
-
 

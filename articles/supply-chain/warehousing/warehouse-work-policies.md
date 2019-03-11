@@ -1,13 +1,13 @@
 ---
-title: "Policyer för lagerarbete"
-description: "Policyer för lagerställearbete styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt."
+title: Policyer för lagerarbete
+description: Policyer för lagerställearbete styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325605"
 ---
-
 # <a name="warehouse-work-policies"></a>Policyer för lagerarbete
 
 [!include [banner](../includes/banner.md)]
@@ -126,7 +125,7 @@ STEG (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>Välj resursgrupp "5102" i listan.</td>
+<td>Välj resursgrupp 5102 i listan.</td>
 </tr>
 <tr>
 <td></td>
@@ -136,17 +135,17 @@ STEG (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Ange "51" i fältet Utleveranslagerställe.</td>
+<td>Ange 51 i fältet Utleveranslagerställe.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>Ange "001" i fältet Utleveransplats.</td>
+<td>Ange 001 fältet Utleveransplats.</td>
 </tr>
 <tr>
 <td></td>
 <td>6.</td>
-<td>Plats 001 är en ej ID-nummertyrd plats. Du kan ställa in en plats för ej ID-nummertyrd utleveransplats bara om en lämplig arbetspolicy finns för platsen.</td>
+<td>Plats 001 är en ej ID-nummerstyrd plats. Du kan ställa in en plats för ej ID-nummertyrd utleveransplats bara om en lämplig arbetspolicy finns för platsen.</td>
 </tr>
 <tr>
 <td colspan="3"><strong>Deluppgift: Skapa en produktionsorder och rapportera den som färdig.</strong></td>
@@ -169,7 +168,7 @@ STEG (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Ange ett artikelnummer i fältet "L0101".</td>
+<td>Ange L0101 i fältet Artikelnummer.</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +203,7 @@ STEG (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>Välj "Aldrig" i fältet Automatisk strukturlisteförbrukning.</td>
+<td>Välj Aldrig i fältet Automatisk strukturlisteförbrukning.</td>
 </tr>
 <tr>
 <td></td>
@@ -248,7 +247,6 @@ STEG (25)
 </tr>
 </tbody>
 </table>
-
 
 
 

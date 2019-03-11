@@ -1,13 +1,13 @@
---- 
-title: "Slå upp tillämpliga priser och rabatter"
-description: "I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt som för närvarande är giltig för en viss kund, utan att skapa en försäljningsorder."
+---
+title: Slå upp tillämpliga priser och rabatter
+description: I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt som för närvarande är giltig för en viss kund, utan att skapa en försäljningsorder.
 author: omulvad
 manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ba95e651898da0e0fbd1221f61436ffac59db09e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/02/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359875"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå upp tillämpliga priser och rabatter
 
@@ -59,5 +59,4 @@ I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt 
 3. Klicka på Visa radrabatt.
     * Det finns två radrabattavtal för produkten T0012 som anger en rabatt på 5 procent för en orderradskvantitet från mellan 1 till 10 och 7 procents rabatt för orderkvantiteter över 10. Observera att rabatter gäller för en grupp produkter, i det här exemplet gruppkod 01, som produkten T0012 tillhör.  
 4. Stäng sidan.
-
 

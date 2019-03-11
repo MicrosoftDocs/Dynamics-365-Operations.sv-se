@@ -1,13 +1,13 @@
---- 
-title: "Beräkna avskrivning av anläggningstillgången över juridiska personer"
-description: "Avskrivning av anläggningstillgångar kan köras över juridiska personer i ett enda steg."
+---
+title: Beräkna avskrivning av anläggningstillgången över juridiska personer
+description: Avskrivning av anläggningstillgångar kan köras över juridiska personer i ett enda steg.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, LedgerJournalTable
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b2575354af322827972ffa650e9c732170c5a6eb
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317003"
 ---
 # <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a>Beräkna avskrivning av anläggningstillgången över juridiska personer
 
@@ -50,5 +50,4 @@ Avskrivning av anläggningstillgångar kan köras över juridiska personer i ett
     * Alternativet Batchbearbetning aktiveras som standard. När detta alternativ är aktiverat körs skapande och bokföring av avskrivningjournal i bakgrunden.  
 5. Kicka på Skapa journal.
 6. Gå till Anläggningstillgångar > Journalposter > Journal för anläggningstillgångar.
-
 

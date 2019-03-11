@@ -1,13 +1,13 @@
 ---
 title: Kundorder i Retail Modern POS (MPOS)
-description: "Det här avsnittet innehåller information om kundorder i Retail Modern POS (MOPS). Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden."
+description: Det här avsnittet innehåller information om kundorder i Retail Modern POS (MPOS). Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: b54f39cc7896871d77f9371e6197bf6dbaac51de
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336622"
 ---
-
 # <a name="customer-orders-in-retail-modern-pos-mpos"></a>Kundorder i Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om kundorder i Retail Modern POS (MOPS). Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
+Det här avsnittet innehåller information om kundorder i Retail Modern POS (MPOS). Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
 
 I en handelsvärld kännetecknad av omnikanaler erbjuder många återförsäljare möjlighet till kundorder (eller specialorder) för att uppfylla kraven för olika produkter och utföranden. Här följer några vanliga scenarier:
 
@@ -57,7 +56,7 @@ Här följer några av de parametrar som kan anges på sidan **Handelsparametrar
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsflöde för kundorder
 
-### <a name="create-a-customer-order-in-retail-modern-pos"></a>Skapa en kundorder i Retail Modern POS
+### <a name="create-a-customer-order-in-retail-modern-pos"></a>Skapa kundorder i Retail Modern POS
 
 1. Lägg till en kund i transaktionen.
 2. Lägg till produkter i kundvagnen.
@@ -97,9 +96,8 @@ Kundorder kan skapas från kassaklienten i antingen synkront eller asynkront lä
 1. Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofil** &gt; **Funktionsprofiler**.
 2. I snabbfliken **Allmänt** anger du alternativet för **Skapa kundorder i asynkront läge** som **Ja**.
 
-När alternativet **Skapa kundorder i asynkront läge** är inställt på **Ja**, skapas kundorder alltid i asynkront läge, även om tjänsten för handelstransaktioner (Retail Transaction Service, RTS) är tillgänglig. Om du anger detta alternativ som **Nej**, skapas kundorder alltid i synkront läge med hjälp av RTS. När kundorder skapas i asynkront läget hämtas och infogas de i Retail genom hämtningsjobb. Motsvarande försäljningsorder skapas i Retail när **Synkronisera order** körs antingen manuellt eller via en batchprocess.
+När alternativet **Skapa kundorder i asynkront läge** är inställt på **Ja**, skapas kundorder alltid i asynkront läge, även om tjänsten för Retail Transaction Service (RTS) är tillgänglig. Om du anger detta alternativ som **Nej**, skapas kundorder alltid i synkront läge med hjälp av RTS. När kundorder skapas i asynkront läget hämtas och infogas de i Retail genom hämtningsjobb. Motsvarande försäljningsorder skapas i Retail när **Synkronisera order** körs antingen manuellt eller via en batchprocess.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Kombinerade kundorder](hybrid-customer-orders.md)
-

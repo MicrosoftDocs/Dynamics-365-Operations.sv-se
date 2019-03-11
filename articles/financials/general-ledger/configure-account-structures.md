@@ -1,13 +1,13 @@
 ---
 title: Konfigurera kontostrukturer
-description: "Det här avsnittet innehåller information om kontostrukturer och ekonomiska dimensioner."
+description: Det här avsnittet innehåller information om kontostrukturer och ekonomiska dimensioner.
 author: aprilolson
 manager: AnnBe
 ms.date: 05/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 8435389a523d8393e9d4daa0cb1244203c0dbb12
 ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351733"
 ---
-
 # <a name="configure-account-structures"></a>Konfigurera kontostrukturer
 
 [!include[banner](../includes/banner.md)]
@@ -100,4 +99,3 @@ När du ställer in dina kontostrukturer finns det metodtips som du kan följa. 
 När du är nöjd med dina nya inställningar eller en ändring av en kontostruktur måste du aktivera den. Om en kontostruktur tilldelas till redovisningen kommer denna aktivering vara en tidskrävande process eftersom alla ej bokförda transaktioner i systemet måste vara synkroniserade med den nya strukturen. Bokförda transaktioner påverkas inte med hänsyn till förändringar struktur.
 
 Mer information finns i [planera din kontoplan](plan-chart-of-accounts.md), [ekonomiska dimensioner](financial-dimensions.md) och [och dimensionskombinationer (indelad kontroll) ange](enter-account-dimension-combinations-segmented-entry-control.md).
-

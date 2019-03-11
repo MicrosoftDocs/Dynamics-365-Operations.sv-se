@@ -1,13 +1,13 @@
---- 
-title: "Upprätta en betalningsmetod för kund"
-description: "Skapa en betalningsmetod för kundbetalningar."
+---
+title: Upprätta en betalningsmetod för kund
+description: Skapa en betalningsmetod för kundbetalningar.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymMode, BankAccountTableLookUp
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ab035c6268b701c78da32d589e99ece38c31781d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cabcfe83ac83a8210ce4e0d46a08acdc48f4bf3b
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348973"
 ---
 # <a name="establish-customer-method-of-payment"></a>Upprätta en betalningsmetod för kund
 
@@ -54,5 +54,4 @@ Skapa en betalningsmetod för kundbetalningar. I den här uppgiften används dem
     * Om du till exempel kräver att alla betalningar med denna betalningsmetod som ska infogas, kan du välja den väljare på den här fliken.  
 15. Använd betalningatrributesfliken för att definiera betalningsattribut som du vill använda för betalningsmetoden.
 16. Klicka på Spara.
-
 

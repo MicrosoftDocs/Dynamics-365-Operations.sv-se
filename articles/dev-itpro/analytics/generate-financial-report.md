@@ -1,13 +1,13 @@
 ---
 title: Skapa ekonomiska rapporter
-description: "Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport."
+description: Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340900"
 ---
-
 # <a name="generate-financial-reports"></a>Skapa ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
@@ -41,9 +40,9 @@ Följande alternativ är tillgängliga för rapportgenerering:
 
 När du skapar en rapport används de alternativ du har angett på fliken Rapportdefinition.
 
-## <a name="generate-a-financial-report"></a>Generera en ekonomisk rapport
+## <a name="generate-a-financial-report"></a>Generera ekonomisk rapport
 
-Om du vill skapa en ekonomisk rapport med Microsoft Dynamics 365 for Finance and Operations, gå till **Redovisning** \> **Förfrågningar och rapporter** \> **Ekonomirapporter**.
+För att skapa en ekonomirapport med Microsoft Dynamics 365 for Finance and Operations, gå till **redovisning** \> **förfrågningar och rapporter** \> **ekonomirapporter**.
 
 - Välj en rapport att skapa och klicka på **Skapa**.
 - Fyll i fältet **Rapportdatum** och klicka på **OK**.
@@ -158,4 +157,3 @@ Du kan använda följande tangentbordsgenvägar när du kör en analys av saknad
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
 [Användargränssnitt i Report Designer](report-designer-interface.md)
-

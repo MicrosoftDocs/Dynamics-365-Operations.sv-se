@@ -1,32 +1,31 @@
 ---
 title: Anskaffning med LinkedIn-rekryterare
-description: "Det här avsnittet innehåller information om hur du använder maskininlärning för att få rekommendationer om jobb och jobbkandidater."
+description: Det här avsnittet innehåller information om hur du använder maskininlärning för att få rekommendationer om jobb och jobbkandidater.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: sv-se
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306213"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>Anskaffning med LinkedIn-rekryterare
 [!include[banner](../includes/banner.md)]
 
@@ -125,9 +124,9 @@ Genom att använda LinkedIn-rekryterare kan du följa upp om en kandidat har sö
 > [!NOTE]
 > Kandidater och programdata synkroniseras inte med LinkedIn Recruiter om kandidaten inte har flyttats från fasen potentiell kandidat.
 
-### <a name="inmail-history"></a>InMail-historik
+### <a name="inmail-history"></a>InMail historik
 
-LinkedIn InMail-historik finns i åtkomst på kontraktnivå med LinkedIn-rekryteraren. Om den är aktiverad måste visa hela InMail-historiken med kandidaten. Du kan också se vilka andra från din organisation som har utbytt InMail med kandidaten, men du inte kan visa meddelanden mellan dem..
+LinkedIn InMail-historik finns i åtkomst på kontraktnivå med LinkedIn-rekryteraren. Om den är aktiverad måste visa hela InMail-historiken med kandidaten. Du kan också se vilka andra från din organisation som har utbytt InMail med kandidaten, men du inte kan visa meddelanden mellan dem.
 
 För att historik för InMail, gå till kandidatens profil, gå till fliken **LinkedIn** och bläddra till slutet på sidan för att visa historik. Du kan visa InMail-historik om du har haft en diskussion med kandidaten. Meddelanden från InMail synkroniseras med Attract varannan timme.
 
@@ -142,4 +141,3 @@ För att historik för anteckningar, gå till kandidatens profil, gå till flike
 LinkedIn InMail stub-historik finns i åtkomst på kontraktnivå med LinkedIn-rekryteraren. Om kandidater enas om att deras LinkedIn-profiler delas med alla användare i organisationen, kan du spåra kandidater i Attract och en ny kandidatpost skapas för varje kandidat. Du kan visa kandidatens e-postadress om kandidaten redan finns i systemet med en e-postadress eller delat adressen med rekryteraren.
 
 Om du vill visa listan med kandidater, gå till **talangpooler** för att se en systemskapad LinkedIn talangpool. Den här talangpoolen innehåller listan av kandidater och deras stub-profiler som fås från LinkedIn och som visar kandidatens förnamn och efternamn. Kandidatens e-post-ID visas om kandidaten har delat sin e-postadress.
-

@@ -5,27 +5,26 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e2b7bfad1e0d80675848353d4118960d44f2dc01
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f9f596d31f2438a353b02bf939786b284937db86
-ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363923"
 ---
-
 # <a name="receive-partial-deliveries-of-returned-items"></a>Ta emot delleveranser med returnerade artiklar    
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Om en returleverans innehåller mindre än den fullständiga kvantiteten på en 
 
 ## <a name="register-and-post-a-partial-quantity"></a>Registrera och bokföra en delkvantitet
 
-1.  När du har valt en returorder för införsel i formuläret **Införselöversikt - lagerställe: %1, plats: %2, journalnamn: %3** klickar du på **starta införsel** för att skapa införseljournalen och klickar sedan på **journaler**\>**Visa införsel från inleveranser** för att öppna formuläret **platsjournal**.
+1.  När du har valt en returorder för införsel i formuläret **Införselöversikt - lagerställe: %1, plats: %2, journalnamn: %3** klickar du på **starta införsel** för att skapa införseljournalen och klickar sedan på **journaler** \> **Visa införsel från inleveranser** för att öppna formuläret **platsjournal**.
 
 2.  Välj den journalrad som du vill arbeta med och klickar sedan på **rader** för att öppna formuläret **Journalrader, platser**.
 
@@ -48,7 +47,6 @@ Om en returleverans innehåller mindre än den fullständiga kvantiteten på en 
 4.  I fältet **Dela kvantitet**, ange kvantiteten för det totala antalet artiklar som har tagits emot i fältet och klicka sedan på **OK**.
 
 5.  I formuläret **Journalrader, platser** markerar du raden för den kvantitet med artiklar som har levererats och klickar på **bokför**. Du kan bokföra raden för den ytterligare kvantiteten efter att artiklarna har levererats.
-
 
 
 

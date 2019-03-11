@@ -1,13 +1,13 @@
 ---
-title: "Ställ in och designa inleveransformat"
-description: "Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. I Microsoft Dynamics 365 for Retail finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter."
+title: Ställ in och designa inleveransformat
+description: Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. Microsoft Dynamics 365 for Retail inkludera finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.contentlocale: sv-se
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357828"
 ---
-
 # <a name="set-up-and-design-receipt-formats"></a>Ställ in och designa inleveransformat
 
 [!include [banner](includes/banner.md)]
 
-Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. I Microsoft Dynamics 365 for Retail finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
+Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. Microsoft Dynamics 365 for Retail inkludera finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
 
 > [!IMPORTANT]
 > Du måste ställa in formulärlayouter och kvittoprofiler om du vill skriva ut kvitton och andra dokument från Retail Modern POS och Cloud POS. Du kan inkludera flera formulärlayouter i en kvittoprofil. Du kan sedan tilldela mottagandet profil till en skrivare genom att modifiera hårdvara profil.
@@ -55,8 +54,8 @@ Använd den grafiska layoutdesignern för att grafiskt skapa layouten för formu
 1. Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **POS** &gt; **Kvittoformat**.
 2. På **kvittot format** väljer du en form layout och klicka sedan **Designer**.
 3. Klicka på **Kör** för att starta installationen av Retail designer värd.
-4. Om anmälan bar som visas längst ner i Internet Explorer-fönstret, klicka på **Öppna för** att starta installationen av etta-klickar designer. (Meddelandefältet kan visas på en annan plats i andra webbläsare.) Förloppsindikatorn visar förloppet för installationen.
-5. När installationen är klar, skriv in ditt användarnamn och lösenord för Dynamics 365 for Retail och klicka sedan på **Logga in** för att starta designern.
+4. Om anmälan bar som visas längst ner i Internet Explorer klicka på **Öppna** att starta installationen av etta-klickar designer. (Meddelandefältet kan visas på en annan plats i andra webbläsare.) Förloppsindikatorn visar förloppet för installationen.
+5. När installationen är klar, skriv din Dynamics 365 for Retail användarnamn och lösenord och klicka sedan på **Logga in** för att starta designer.
 6. Efter dina inloggningsuppgifter är validerade och designern börjar, du kan börja utforma mottagandet format eller ändra ett befintligt format.
 7. För att skapa delar av formuläret, välj **sidhuvud**, **linjerna**, eller **sidfotssektion** och sedan dra ett element från den delen av arbetsytan. De flesta element innehåller variabler som fylls automatiskt med data från databasen. Andra element, till exempel **Text**, kan du skriva ut egen text på kvittot.
 
@@ -83,4 +82,3 @@ Mottagandet profiler tilldelas direkt till skrivare via hårdvara profil.
 
 > [!NOTE]
 > Om två skrivare används en skrivare kan användas för att skriva ut 40-kolumnen termiska kvitton. Den andra skrivare används vanligen för att skriva ut sida typerna som kräver mer information. Dessa inleveranstyperna inkludera kundens inköpsorder och kundfakturor.
-

@@ -1,13 +1,13 @@
 ---
-title: "Produktionsbokföring"
-description: "Det här avsnittet innehåller information om andra typer av bokföringar i produktionsprocessen."
+title: Produktionsbokföring
+description: Det här avsnittet innehåller information om andra typer av bokföringar i produktionsprocessen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0b44d57fe89ef7ae3def835865e4da80c260f907
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332413"
 ---
-
 # <a name="production-posting"></a>Produktionsbokföring
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,6 @@ I **Produktionkontrollparametrar**kan du använda fältet **Redovisningsbokföri
 -   **Produktionsgrupper** – Använd redovisningskonton som har ställts in för produktionsgrupper för både material- och tidsförbrukning. Produktiongrupperna är associerade till de frisläppta produkterna och kopieras till produktionsordern när dessa order skapas. Bokföringen för produktionsorder ska sedan följa produktionsgrupper som är kopplade till produktionsordern.
 
 **Obs!** Om standardmetoden för att beräkna kostnaden för den färdiga artikeln användes reflekterar de slutliga transaktionerna denna fakta. Om de faktiska kostnaderna och de kostnader som beräknas med hjälp av standardmetoden skiljer sig, kommer mellanskillnaden att bokföras på det konto som visar vinst eller förlust.
-
 
 
 

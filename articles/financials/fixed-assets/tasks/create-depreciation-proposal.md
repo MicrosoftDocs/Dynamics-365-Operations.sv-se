@@ -1,13 +1,13 @@
 ---
-title: "Skapa avskrivningsförslag"
-description: "Den här proceduren beskriver hur avskrivningsbatchförslag fungerar och förklarar hur man föreslår avskrivning för anläggningstillgångar."
+title: Skapa avskrivningsförslag
+description: Den här proceduren beskriver hur avskrivningsbatchförslag fungerar och förklarar hur man föreslår avskrivning för anläggningstillgångar.
 author: abruer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: d11554ee5f26ef5a85e799194d2f75757a31c254
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361301"
 ---
-
 # <a name="create-depreciation-proposal"></a>Skapa avskrivningsförslag
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
@@ -47,5 +46,4 @@ Den här proceduren beskriver hur avskrivningsbatchförslag fungerar och förkla
 2. Hitta och markera önskad post i listan.
 3. Klicka på Rader.
 4. Klicka på Bokför.
-
 

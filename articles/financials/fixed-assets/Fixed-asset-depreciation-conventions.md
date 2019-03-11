@@ -1,13 +1,13 @@
 ---
-title: "Avskrivningspraxis för anläggningstillgångar"
-description: "Den här ämnet ger en översikt över avskrivningspraxis för anläggningstillgångar."
+title: Avskrivningspraxis för anläggningstillgångar
+description: Den här ämnet ger en översikt över avskrivningspraxis för anläggningstillgångar.
 author: saraschi2
 manager: AnnBe
 ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ff8575749a33321450ea61fe1f01105c005e9092
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c69fd798c2e978935a63b079fb11c68d8555594c
-ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337450"
 ---
-
 # <a name="fixed-asset-depreciation-conventions"></a>Avskrivningspraxis för anläggningstillgångar
 
 [!include [banner](../includes/banner.md)]
@@ -45,5 +44,4 @@ Avskrivningspraxis kan tilldelas till inställningen för en räkenskapsbok för
 | Mitt i månaden (15:e i månaden) |                                                                                                                                                        Om du vill beräkna dina avskrivningsavdrag för året när du använder egendomen, multiplicera avskrivningen för ett helt år med en kvot. Täljaren (översta talet) i denna kvot är antalet fullständiga månader under det år som egendomen är i tjänst plus 1/2 eller (0,5). Nämnaren (understa numret) är 12. Om du avyttrar egendomen före utgången av din återställningsperiod använder du samma metod för att beräkna dina avskrivningsavdrag för året för dispositionen.                                                                                                                                                        |
 | Halvår (start på året) |                                                                                                                                                                                                                                                          Tillgångar som har ett <strong>Tas i drift</strong>-datum i den första hälften av året börjar skriva av den första dagen på året (hela år). Tillgångar som har ett <strong>Tas i drift</strong>-datum i den andra hälften av året börjar skriva av i mitten på året.                                                                                                                                                                                                                                                          |
 |   Halvår (nästa år)   |                                                            Tillgångar som har ett <strong>Tas i drift</strong>-datum i den första hälften av året börjar skriva av den första dagen på året (hela år). Tillgångar som har ett <strong>Tas i drift</strong>-datum i den andra hälften av året börjar skriva av den första dagen nästa år. Tillgångar som skulle dras tillbaka under första delen av året betraktas som tillbakadragna för avskrivningssyfte den sista dagen i föregående år. All avskrivning som bokförs för innevarande år måste återföras eller justeras. Tillgångar som skulle dras tillbaka under andra halvan av året anses indragna för avskrivning den sista dagen på året för tillbakadragandet.                                                            |
-
 

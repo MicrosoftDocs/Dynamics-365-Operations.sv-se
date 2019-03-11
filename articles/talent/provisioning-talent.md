@@ -1,13 +1,13 @@
 ---
 title: Reservera Talent
-description: "I det här avsnittet får du veta hur du skapar en ny miljö för Microsoft Dynamics 365 for Talent."
+description: I det här avsnittet får du veta hur du skapar en ny miljö för Microsoft Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
 ms.date: 09/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
-ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "306312"
 ---
-# <a name="provision-talent"></a>Reservera Talent
+# <a name="provision-talent"></a>Etablera Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -38,7 +38,7 @@ För att hantera dina Talent-miljöer med LCS måste först skapa ett LCS-projek
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index) med det konto som du använder för din Talent-prenumeration.
 2. Klicka på plustecknet (**+**) för att skapa ett projekt.
 3. Välj **Microsoft Dynamics 365 for Talent** som produktversion och produktnamn.
-4. Välj metoden **Dynamics 365 for Talent**.
+4. Välj **Dynamics 365 for Talent**-metoden.
 5. Markera **Skapa**.
 
 Mer information om hur du kommer igång med Talent finns i metoden för **Talent** som du skapade i det nya projektet. När du har skapat projektet slutför du stegen nedan för att skapa din Talent-miljö.
@@ -79,7 +79,7 @@ Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska
  
    **Standardinställda PowerApps- miljöer** Även om varje innehavare konfigureras automatiskt med en standardmiljö för PowerApps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till PowerApps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med PowerApps eller Flow.
    
-   <strong>Testkörningsmiljöer</strong> Miljöer med ett namn som ”TestDrive- alias@domain" skapas med en 60 dagars förfalloperiod och upphör att gälla efter den tiden vilket kan orsaka att miljön tas bort automatiskt.
+   <strong>Testkörningsmiljöer</strong> Miljöer med ett namn som ”TestDrive – alias@domain" skapas med en 60 dagars förfalloperiod och upphör att gälla efter den tiden vilket kan orsaka att miljön tas bort automatiskt.
    
    **Regioner som inte stöds** För närvarande stöds bara Talent i följande regioner: USA, Europa och Australien.
   
@@ -87,5 +87,4 @@ Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska
  
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
 Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst lägger du [till användare](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela dem lämpliga roller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) i bas-miljön för HR. Global administratör som har distribuerat Talent måste också starta både Attract- och Onboard-programmen för att slutföra initieringen och aktivera åtkomst för andra innehavare.  Tills detta inträffar kan andra användare inte komma åt Onboard- och Attract-programmen och får åtkomstfel.
-
 

@@ -1,13 +1,13 @@
 ---
 title: Utforma en smidig organisation
-description: "Det här avsnittet innehåller information om nyckelkoncepten för modellering av en lean organisation."
+description: Det här avsnittet innehåller information om nyckelkoncepten för modellering av en lean organisation.
 author: cvocph
 manager: AnnBe
 ms.date: 09/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
 ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.contentlocale: sv-se
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350997"
 ---
-
 # <a name="modeling-a-lean-organization"></a>Utforma en smidig organisation
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ I produktionsscenarier baserade på produktionsorder tilldelas material till en 
 
 Lean manufacturing stöder kanban-lagerpåfyllnad och storlager för tillverknings- och lagerpåfyllnad för att minska de leveransledtider och överskottslager mellan resurser som orsakas av batchproduktion. De här funktionerna stör vanligtvis produktionen av delvis oberoende kanban-cykler. Lagerpåfyllnad av en kanban för en halvfärdig produkt utlöses inte längre av en order för en färdig produkt. 
 
-Aktivitetsbaserade produktionsflöden utgör nu en grund för lean manufacturing, och används för att återupprätta ett produktions- och kostnadssammanhang för de olika kanban-scenarier som föreslås i Microsoft Dynamics 365 for Finance and Operations. Alla kanbankort regler se här fördefinierade struktur. Den aktivitetsbaserade modellen stöder installationen av ett stort antal scenarier. Den här modellen försvårar dock inte arbetet för medarbetarna i butiken eftersom alla scenarier använder samma aktivitetsbaserade användargränssnittet.
+Aktivitetsbaserade produktionsflöden utgör nu en grund för lean manufacturing och används för att återupprätta ett produktions- och kostnadssammanhang för de olika kanban-scenarier som föreslås i Microsoft Dynamics 365 for Finance and Operations. Alla kanbankort regler se här fördefinierade struktur. Den aktivitetsbaserade modellen stöder installationen av ett stort antal scenarier. Den här modellen försvårar dock inte arbetet för medarbetarna i butiken eftersom alla scenarier använder samma aktivitetsbaserade användargränssnittet.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halvfabrikat (icke-BOM-nivåer)
 Lean manufacturing integrerar kanban för inventerade och halvfärdiga produkter inom ett och samma ramverk och ger därför en enhetlig användarupplevelse för samtliga fall. Tack vare denna arkitektur behöver inga ytterligare strukturlistenivåer längre införas för att kanban ska kunna användas för halvfärdiga produkter. Arkitektur bidrar även till att minska lagertransaktionerna till ett minimum.
@@ -65,7 +64,6 @@ För att bättre stödja kontinuerlig förbättring, produktionsflöden genomfö
 
 ## <a name="simplicity"></a>Enkelhet
 För genomförandet av Lean Manufacturing har vi valt ett produktionsflöde och en aktivitetsmetod som möjliggör modellering av enkla och komplexa scenarier i en enda skalbar arkitektur. En närmare titt på aktivitetskonceptet avslöjar en ny enkelhet för de användarna som verkligen behöver det: butiksgolvet och logistikpersonalen. Genom att rapportera mot verksamhetsbaserad jobb istället för lagertransaktioner, ett enhetligt användargränssnitt för alla lean manufacturing varianter överför företag komplexitet från användargränssnittet där det hör hemma: produktionsflödet som ryggraden i lean manufacturing.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Lägg till analys i arbetsytor med Power BI Embedded"
-description: "Det här avsnittet beskriver hur du bäddar in en Power BI-rapport på fliken analys i en arbetsyta."
+title: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
+description: Det här avsnittet beskriver hur du bäddar in en Power BI-rapport på fliken analys i en arbetsyta.
 author: tjvass
 manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Core, Operations
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a190e15dc304f60739c80d75222830ee737c5a32
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
-ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: sv-SE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355229"
 ---
-
-# <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Lägg till analys i arbetsytor med Power BI Embedded
+# <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Lägg till analyser i arbetsytor genom att använda Power BI Embedded
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,7 +30,7 @@ ms.lasthandoff: 08/13/2018
 > Den här funktionen stöds i Dynamics 365 for Finance and Operations (version 7.2 och senare).
 
 ## <a name="introduction"></a>Introduktion
-Det här avsnittet beskriver hur du bäddar in en Microsoft Power BI-rapport på fliken **Analys** i en arbetsyta. För det exempel som anges här utökar vi arbetsytan **Reservationshantering** i programmet Hantering av vagnpark att bädda in en analytisk arbetsyta på fliken **analys**.
+Det här avsnittet beskriver hur du bäddar in en Microsoft Power BI-rapport på fliken **analys** i en arbetsyta. För det exempel som anges här utökar vi arbetsytan **Reservationshantering** i programmet Hantering av vagnpark att bädda in en analytisk arbetsyta på fliken **analys**.
 
 ## <a name="prerequisites"></a>Förutsättningar
 + Åtkomst till en utvecklarmiljö som kör plattformsuppdatering 8 eller senare.
@@ -177,4 +176,3 @@ public static void initializeReportControl(
 | showFilterPane   | Ett booleskt värde som anger om filterrutan ska visas (**sant**) eller döljas (**falsk**).     |
 | showNavPane      | Ett booleskt värde som anger om navigeringsrutan ska visas (**sant**) eller döljas (**falsk**). |
 | defaultFilters   | Standardfilter för Power BI-rapporten.                                                                 |
-
