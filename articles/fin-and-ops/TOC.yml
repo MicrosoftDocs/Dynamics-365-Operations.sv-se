@@ -35,12 +35,6 @@ items:
     - name: Nyheter och ändringar
       href: get-started/whats-new-changed.md
       items:
-      - name: Frågor och svar om tjänstuppdateringar för en version
-        href: get-started/one-version.md
-      - name: Livscykelpolicy och molnbaserade versioner av programmet
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: Livscykelpolicy och lokala versioner av programmet
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
       - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
         href: get-started/mainstream-support-ax-2009-2012.md
       - name: Borttagna och utfasade funktioner
@@ -49,10 +43,14 @@ items:
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Funktioner som inte implementeras i lokala installationer
         href: get-started/features-not-implemented-on-prem.md
+      - name: Förhandsgranska funktioner i Finance and Operations version 10.0.1 (april 2019)
+        href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations version 10.0 (april 2019)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations version 8.1.3 (januari 2019)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Förhandsgranska funktioner i Finance and Operations platform update 25 (april 2019)
+        href: get-started/whats-new-platform-25.md
       - name: Platform update 24 (mars 2019)
         href: get-started/whats-new-platform-update-24.md
       - name: Platform update 23 (januari 2019)
@@ -202,6 +200,29 @@ items:
       href: get-started/move-lcs-implementation-project-tenant.md
     - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klient
       href: get-started/implement-multiple-projects-aad-tenant.md
+  - name: Tjänstuppdateringar för en version
+    href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+    items:
+    - name: Frågor och svar om tjänstuppdateringar för en version
+      href: get-started/one-version.md
+    - name: Livscykelpolicy för programmet – moln
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+    - name: Livscykelpolicy för programmet – lokal
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+    - name: Tjänstuppdateringar för standardversion och första version
+      href: get-started/public-preview-releases.md
+    - name: Tillämpa uppdateringar i molnmiljöer
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md
+    - name: Konfigurera tjänstuppdateringar
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+    - name: Pausa tjänstuppdateringar
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+    - name: Få meddelanden om tjänstuppdateringar
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+    - name: Automatisering av datauppgift
+      href: ../dev-itpro/data-entities/data-task-automation.md
+    - name: Regression Suite Automation Tool
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
   - name: Affärshändelser
     href: ../dev-itpro/business-events/home-page.md
     items:
@@ -401,7 +422,7 @@ items:
             href: ../supply-chain/sales-marketing/synchronize-project-list.md
           - name: Synkronisera lagerställen från Finance and Operations till Field Service
             href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-          - name: Synkronisera arbetsorder från Finance and Operations till Field Service
+          - name: Synkronisera arbetsorder med projekt från Field Service till Finance and Operations
             href: ../supply-chain/sales-marketing/synchronize-work-orders.md
         - name: Konfigurera Project Service Automation-integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
@@ -1412,15 +1433,17 @@ items:
           href: ../financials/localizations/latam-bra-nfe-certs.md
         - name: Ställ in, importera och verifiera NF-e XML-dokument och DANFE
           href: ../financials/localizations/latam-bra-set-up-import-nfe.md
-        - name: Ställ in parametrar för federal NF-e
+        - name: Ställa in parametrar för federal NF-e
           href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
-        - name: Ställ in NF-e-parametrar för en skattemyndighet
+        - name: Ställa in NF-e-parametrar för en skattemyndighet
           href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+      - name: SPED ECD
+        href: ../financials/localizations/latam-bra-sped-ecd.md
       - name: SPED-Reinf skattedeklaration
         href: ../financials/localizations/latam-bra-sped-reinf.md
       - name: Parametrar för juridiska personer
         href: ../financials/localizations/latam-bra-legal-entity-parameters.md
-      - name: Ställ in parametrar för juridisk person
+      - name: Ställa in parametrar för juridisk person
         href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
       - name: Förvärva en CIAP-anläggningstillgång
         href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
@@ -2236,6 +2259,8 @@ items:
           href: ../financials/localizations/rus-sales-books-purchase-books.md
       - name: Anläggningstillgångar
         items:
+        - name: Ställa in anläggningstillgångar
+          href: ../financials/localizations/rus-set-up-fixed-assets.md
         - name: Anskaffning av anläggningstillgångar och att omsätta dem
           href: ../financials/localizations/rus-fixed-asset-acquisition.md
         - name: Registrera anskaffningar av anläggningstillgångar
@@ -2266,22 +2291,36 @@ items:
           href: ../financials/localizations/rus-bonus-depreciation.md
         - name: Beräkna avskrivning
           href: ../financials/localizations/rus-depreciation-calculation.md
+      - name: Leverantörsreskontra och kundreskontra
+        items:
+        - name: Fakturor för betalning
+          href: ../financials/localizations/rus-invoice-payment.md
+        - name: Ställa in dimensionskontroll för kvittningar
+          href: ../financials/localizations/rus-transactions-settlement-date.md
+        - name: Kassaflödeshantering
+          href: ../financials/localizations/rus-cash-flow.md
+      - name: Rapportering
+        items:
+        - name: Ekonomisk rapportering
+          href: ../financials/localizations/rus-financial-reports.md
       - name: Företagsdivisioner
         href: ../financials/localizations/rus-company-divisions.md
-      - name: Ställ in valutakurser för valutatransaktioner
+      - name: Ställa in valutakurser för valutatransaktioner
         href: ../financials/localizations/rus-exchange-difference.md
       - name: Förhandsgranska redovisningstransaktioner
         href: ../financials/localizations/rus-ledger-transactions-preview.md
       - name: Ställ in tjänstemän
         href: ../financials/localizations/rus-officials.md
-      - name: Ställ in dimensionskontroll för kvittningar
+      - name: Ställa in dimensionskontroll för kvittningar
         href: ../financials/localizations/rus-transactions-settlement-date.md
       - name: Fakturor för betalning
         href: ../financials/localizations/rus-invoice-payment.md
       - name: Ekonomisk rapportering
         href: ../financials/localizations/rus-financial-reports.md
-      - name: Skapa en inköpsbok
-        href: ../financials/localizations/rus-sales-books-purchase-books.md
+      - name: Redovisningsrapportering i elektroniskt format
+        href: ../financials/localizations/rus-accounting-reporting.md
+      - name: Kassaflödeshantering
+        href: ../financials/localizations/rus-cash-flow.md
     - name: Saudiarabien
       href: ../financials/localizations/saudi-arabia.md
       items:
@@ -2367,6 +2406,8 @@ items:
         href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
       - name: Ställa in momsgrupper för återfört tillägg
         href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+      - name: Göra skatt digitalt för moms
+        href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
     - name: USA
       href: ../financials/localizations/united-states.md
       items:
@@ -2827,6 +2868,8 @@ items:
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Ändringar av API:et för ramverket för elektronisk rapportering för Application update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+        - name: Ange anpassad lagring för skapade dokument
+          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: Inbäddade analyslösningar
       items:
       - name: Inbäddad Power BI i arbetsytor
@@ -3281,6 +3324,8 @@ items:
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: Rapport för arbetsflödestyper
         href: organization-administration/workflow-types-report.md
+      - name: Vanliga frågor om arbetsflöde
+        href: organization-administration/workflow-FAQ.md
     - name: Notifieringar
       href: get-started/alerts-overview.md
       items:
@@ -3799,8 +3844,6 @@ items:
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Uppfyll försäljningsavtal
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: Skapa ett nytt handelsavtal
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: Generera och bearbeta kundrabatter
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: Bearbeta rabatter för betalning
@@ -3823,16 +3866,18 @@ items:
       items:
       - name: Registrera försäljningsprovisioner
         href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
-      - name: Ställ in regler för försäljningsprovision
+      - name: Ställa in regler för försäljningsprovision
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: Handelsavdrag
       href: ../supply-chain/sales-marketing/trade-allowance.md
-  - name: Servicehantering
+    - name: Skapa ett nytt handelsavtal
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
+  - name: Tjänsthantering
     href: ../supply-chain/service-management/service-management-home-page.md
     items:
-    - name: Ställ in kundtjänst
+    - name: Ställa in kundtjänst
       items:
-      - name: Ställ in serviceavtal
+      - name: Ställa in serviceavtal
         href: ../supply-chain/service-management/service-agreement-groups.md
         items:
         - name: Skapa serviceavtal
@@ -4241,9 +4286,9 @@ items:
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-ms.openlocfilehash: cb58a9f8fa8305a3d8b956804ef74bef86ca04b9
-ms.sourcegitcommit: 7e0097bdd835e04521bffbce2fd802e6381dde0d
+ms.openlocfilehash: a1c64fd645063db11c632b34e8e0b934c97f2251
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "376928"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836406"

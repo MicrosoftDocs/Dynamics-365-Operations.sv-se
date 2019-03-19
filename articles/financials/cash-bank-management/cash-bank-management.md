@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 944030859c26a1aadeb98a070d071e30f8b86dc4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d15ff8add8a77c27a9f0153c9e881ecae3d9da78
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302917"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403318"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startsidan för kassa- och bankhantering
 
@@ -86,13 +86,11 @@ Dessa instrument inkluderar insättningskvitton, checkar, växlar och skuldsedla
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling. 
+Gå till Viktig information om [Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om kassa- och bankhantering och andra lösningar i [bloggen Microsoft Dynamics 365] (https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Det finns många inlägg om kassa- och bankhantering i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). En del av inläggen skrevs för den föregående versionen av kassa- och bankhantering, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Det finns åsikter, nyheter och annan information om bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 

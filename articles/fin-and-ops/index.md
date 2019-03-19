@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Dokumentation för Microsoft Dynamics 365 for Finance and Operations
 description: Dokumentation för Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/08/2019
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: ''
+ms.technology: null
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: 'Core, Operations'
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302885"
 ---
+
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation för Microsoft Dynamics 365 for Finance and Operations
 
 [!include [banner](includes/banner.md)]
@@ -44,12 +40,26 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <h3><a href="get-started/before-you-buy.md">Innan du köper</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrera ett abonnemang på förhandsversionen</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Välj ett distributionsalternativ</a></p>
- <p><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (lokal)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementera livscykel</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Introducera ett projekt</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Förbereda publicering</a></p>
+
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Tjänstuppdateringar för en version</a></h3>
+<p><a href="get-started/one-version.md">Frågor och svar om tjänstuppdateringar för en version</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Livscykelpolicy för programmet: moln</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Livscykelpolicy för programmet: lokal</a></p>
+<p><a href="get-started/public-preview-releases.md">Tjänstuppdateringar för standardversion och första version</a></p>
+<p><a href="get-started/whats-new-changed.md">Nyheter och ändringar</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uppgraderingar, uppdateringar och snabbkorrigeringar</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Tillämpa uppdateringar i molnmiljöer</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurera tjänstuppdateringar</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Pausa tjänstuppdateringar</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Få meddelanden om tjänstuppdateringar</a></p>
+<p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatisering av datauppgift</a></p>
+<p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
 
 <h3><a href="../financials/index.md">Ekonomisk styrning</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Leverantörsreskontra</a></p>
@@ -71,6 +81,8 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <p><a href="hr/manage-recruiting-process.md">Rekrytering</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Lön, USA</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Hantering av underleverantörer</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Kostnadshantering</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Lagerhantering</a></p>
@@ -82,8 +94,7 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Transporthantering</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Lagerstyrning</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Analyser</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Affärsdokument</a></p>
