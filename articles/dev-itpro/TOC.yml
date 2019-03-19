@@ -46,11 +46,15 @@ items:
       href: dev-tools/development-tools-overview.md
     - name: Utvecklingsverktyg – självstudier
       href: dev-tools/introduction-visual-studio.md
+    - name: AppChecker
+      items:
+      - name: Installera BaseX för AppChecker
+        href: dev-tools/install-basex.md
     - name: Programutforskaren
       href: dev-tools/application-explorer.md
     - name: Skapa och felsöka projekt
       href: dev-tools/build-debug-project.md
-    - name: Versionsoperationer
+    - name: Build-operationer
       href: dev-tools/build-operations.md
     - name: Kodredigerare – funktioner
       href: dev-tools/code-editor.md
@@ -264,6 +268,8 @@ items:
         href: extensibility/extensibility-changes-812.md
       - name: Ändringar av utbyggbarhet version 8.1.3
         href: extensibility/extensibility-changes-813.md
+      - name: Ändringar av utbyggbarhet version 10.0
+        href: extensibility/extensibility-changes-10.md
     - name: Grunder
       items:
       - name: Inkräktande anpassningar
@@ -887,6 +893,7 @@ items:
   - name: Distribuera demonstrationsmiljöer
     href: deployment/deploy-demo-environment.md
   - name: Molndistribution
+    href: deployment/cloud-deployment-overview.md
     items:
     - name: Självbetjäning för distribution
       href: deployment/infrastructure-stack.md
@@ -911,7 +918,7 @@ items:
       href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: Tillämpa uppdateringar i molnmiljöer
       href: deployment/apply-deployable-package-system.md
-    - name: Installera uppdateringar och tillägg för molnstyrda kanalkomponenter för Retail
+    - name: Installera uppdateringar och tillägg för molnstyrda kanalkomponenter
       href: deployment/Update-retail-channel.md
     - name: Initiera molnstyrda kanalkomponenter för Retail
       href: deployment/Initialize-Retail-Channels.md
@@ -1073,10 +1080,12 @@ items:
       href: dev-tools/update-development-tools.md
   - name: Utfasningar
     items:
-    - name: Utfasade API:er
-      href: migration-upgrade/deprecated-apis.md
-    - name: Utfasade funktioner
+    - name: Borttagna och utfasade funktioner
       href: migration-upgrade/deprecated-features.md
+    - name: Avskrivning av metoder och metadataelement
+      href: migration-upgrade/deprecation-deletion-apis.md
+    - name: Utfasade API:er (juni 2017)
+      href: migration-upgrade/deprecated-apis.md
 - name: Systemadministration
   href: sysadmin/system-administration-home-page.md
   items:
@@ -1122,7 +1131,9 @@ items:
       href: sysadmin/activeperiod.md
     - name: Säkerhetsrollen Batchhanterare
       href: sysadmin/runby.md
-  - name: Optimerings-advisor
+    - name: Batchjobbet ska hantera defragmentering av SQL-index
+      href: sysadmin/batch-job-SQL-defragmentation.md
+  - name: Rådgivning om optimering
     href: sysadmin/optimization-advisor-overview.md
     items:
     - name: Skapa regler för optimerings-advisor
@@ -1200,21 +1211,33 @@ items:
       href: lifecycle-services/use-translation-service-ua.md
     - name: Filer för översättningsminne
       href: lifecycle-services/use-translation-service-tm.md
-- name: Databashantering
+- name: Database movement-operationer
   items:
-  - name: Kopiera databaser från Azure SQL Database till SQL Server-miljöer
-    href: database/copy-database-from-azure-sql-to-sql-server.md
-  - name: Kopiera databaser från SQL Server till produktionsmiljöer för Azure SQL Database
-    href: database/copy-database-from-sql-server-to-azure-sql.md
-  - name: Återställa databaser i miljöer för icke-produktion
-    href: database/request-point-in-time-restore.md
-  - name: Exportera kopior av databaser som ska återställas senare
-    href: database/copy-operations-database.md
-  - name: Begära uppdateringar av sandbox-databas
-    href: database/database-refresh.md
+  - name: Översikt
+    href: database/dbmovement-operations.md
+  - name: Snabbstartsguider
+    items:
+    - name: Uppdatera databas
+      href: database/database-refresh.md
+    - name: Exportera en databas
+      href: database/export-database.md
+    - name: Importera en databas
+      href: database/import-database.md
+    - name: Återställning av databas till tidpunkt
+      href: database/database-point-in-time-restore.md
+  - name: Självstudier
+    items:
+    - name: Uppdatera för utbildningssyften
+      href: database/dbmovement-scenario-general-refresh.md
+    - name: Felsökning och diagnostik
+      href: database/dbmovement-scenario-debugdiag.md
+    - name: Golden-konfigurationskampanj
+      href: database/dbmovement-scenario-goldenconfig.md
+    - name: Destruktivt test
+      href: database/dbmovement-scenario-destructivetests.md
 - name: Support
   items:
-  - name: Får hjälp med Finance and Operations och Lifecycle Services
+  - name: Få hjälp med Finance and Operations och Lifecycle Services
     href: lifecycle-services/lcs-support.md
   - name: Logga ett Premier-supportärende
     href: lifecycle-services/premier-support.md
@@ -1228,9 +1251,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Hantera upplevelser av support för Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: 9baabd73eb9a6e0c33b41bc30a1ba0788a858ce9
-ms.sourcegitcommit: bacad87e2b9146e08e6fe16af01356954eb90574
+ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
+ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "373333"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "773812"

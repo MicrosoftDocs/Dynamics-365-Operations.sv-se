@@ -5,6 +5,10 @@ items:
   items:
   - name: Nyheter och ändringar
     href: get-started/whats-new.md
+  - name: Förhandsfunktioner i Dynamics 365 for Retail 10.0.1
+    href: get-started/whats-new-10-0-1.md
+  - name: Vad är nytt och ändrat i Dynamics 365 for Retail (april 2019)
+    href: get-started/april-whats-new.md
   - name: Innan du köper Retail
     href: get-started/before-you-buy.md
   - name: Registrera ett abonnemang på förhandsversionen
@@ -109,7 +113,11 @@ items:
   - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Avancerade automatiska avgifter för flera kanaler
-  href: omni-auto-charges.md
+  items:
+  - name: Konfigurera och använda avancerade automatiska avgifter
+    href: omni-auto-charges.md
+  - name: Proportionell fördelning och gruppering av automatiska debiteringar för rubrik
+    href: pro-rate-charges-matching-lines.md
 - name: Kundtjänst
   items:
   - name: Försäljningsfunktioner för kundtjänst
@@ -387,7 +395,7 @@ items:
     - name: Funktioner för kassaapparat
       href: localizations/emea-swe-cash-registers.md
     - name: Exempel för Retail POS-integration med styrenheter
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Retail-uppgifter
   items:
   - name: Skapa en produkt
@@ -553,6 +561,8 @@ items:
       href: dev-itpro/hybridApp.md
     - name: Åsidosätt kassans begärandehanterare
       href: dev-itpro/pos-handler.md
+    - name: Visa information om kassatilläggspaket
+      href: view-pos-extension-package-details.md
   - name: Hardware Station och utbyggbarhet
     href: dev-itpro/hardware-station-extensibility.md
   - name: Utbyggbarhet för Retail Server
@@ -659,9 +669,9 @@ items:
     items:
     - name: Lojalitetstillägg
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 1f86096b0572f0309afa04e086d53294a7a8f4fa
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
+ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377261"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791648"
