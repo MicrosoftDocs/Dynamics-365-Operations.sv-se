@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376517"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768892"
 ---
 # <a name="set-up-offer-management"></a>Ställa in erbjudandehantering 
 
@@ -199,11 +199,11 @@ Det finns flera olika delar av erbjudandets skapandeprocess som kan konfigureras
 - **Kandidatens erfarenhet av erbjudandet** - som administratör kan du ange om alla erbjudanden har ett förfallodatum och i så fall vad standardförskjutningen för förfallodatum ska vara. Du kan också ange om kandidater kan avvisa ett erbjudande.
 
 - **e-signaturer** - Som administratör kan du också välja metoden kandidater kan använda för att skriva under erbjudanden.
-    - Adobe Sign - Alla erbjudandepaket skickas och signerats via Adobe Sign. Varje erbjudandeskapare publicerar erbjudandet måste ha Adobe Sign-licensen ansluten till Attract. 
+    - Adobe Sign - Alla erbjudandepaket skickas och signerats via Adobe Sign. Varje erbjudandeskapare publicerar erbjudandet måste ha Adobe Sign-kontot anslutet till Attract. Adobe Sign-licenser och en kostnadsfri utvärderingsversion finns i [länk](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
+    - DocuSign - Alla erbjudandepaket skickas och signerats via DocuSign. Varje erbjudandeskapare publicerar erbjudandet måste ha DocuSign-kontot anslutet till Attract. 
+    
     - ESign - Detta är standardalternativet, tillhandahålles direkt vid leverans, där användaren kan registrera ett erbjudande genom att ange deras namn och initialer.
 
->[!NOTE]
-> Adobe Sign-licenser och en kostnadsfri utvärderingsversion finns i [länk](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html).
 
 Mer information om processen att skapa erbjudanden finns i [skapa, godkänna och signera erbjudanden](./creating-offers.md).

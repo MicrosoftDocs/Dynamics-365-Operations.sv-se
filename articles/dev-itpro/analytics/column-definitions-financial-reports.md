@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356356"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832158"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -62,7 +62,7 @@ En kolumndefinition kan innehålla två till 255 kolumner.
 En kolumndefinition omfattar följande information:
 
 - En kolumn för beskrivningar av raddefinitionen
-- Beloppkolumner som visar data från ekonomiska data, ett Microsoft Excel-kalkylblad eller beräkningar som baseras på andra data i kolumndefinitionen
+- Beloppkolumner som visar data från ekonomiska data eller ett kalkylblad eller beräkningar som baseras på andra data i kolumndefinitionen
 - Formateringskolumner
 - Attributkolumner
 
@@ -170,7 +170,7 @@ Du kan använda dialogrutan **Kolumnrubrik** för att lägga till, ändra och ta
 
 ### <a name="create-an-automatically-generated-header"></a>Skapa en automatiskt skapad rubrik
 
-Rapportutformaren kan skapa kolumnrubriker automatiskt baserat på autotextkoder. Autotextkoder är variabler som uppdateras varje gång som en rapport skapas. Alla kolumnrubriker kan innehålla dessa koder för att ange rapportinformation som kan variera, t.ex. datum eller periodnummer. Därför kan du använda en kolumndefinition för flera rapportdefinitioner, tidsperioder och rapportträd. Eftersom autotextkoder hänvisar till kalenderinformationen från detaljraderna i kolumndefinitionen, stöds de endast för kolumnerna **CALC**, **FD** och **WKS**. Sättet som en autotextkod visas i kolumnrubriken inverkar på hur den informationen visas i rapporten. I dialogrutan **Kolumnrubrik** visas autotextkoderna när gemener och versaler blandas. Därför visas texten i rapporten när gemener och versaler blandas. Till exempel i ett vanligt kalenderår är **@CalMonthLong** månad **7** **juli**. Om namnet på månaden ska visas med versaler (till exempel **JULI**) skriver du autotextkoden med versaler i fältet **Rubriktext**. Skriv till exempel **@CALMONTHLONG**. Du kan blanda koder och text. Till exempel anger du följande rubriktext: **Period @FiscalPeriod-@FiscalYear från @StartDate till @EndDate**. Rapportrubriken som skapas liknar följande text: **Period 1-02 från 01/01/02 till 01/31/02**.
+Rapportutformaren kan skapa kolumnrubriker automatiskt baserat på autotextkoder. Autotextkoder är variabler som uppdateras varje gång som en rapport skapas. Alla kolumnrubriker kan innehålla dessa koder för att ange rapportinformation som kan variera, t.ex. datum eller periodnummer. Därför kan du använda en kolumndefinition för flera rapportdefinitioner, tidsperioder och rapportträd. Eftersom autotextkoder hänvisar till kalenderinformationen från detaljraderna i kolumndefinitionen, stöds de endast för kolumnerna **CALC** och **FD**. Sättet som en autotextkod visas i kolumnrubriken inverkar på hur den informationen visas i rapporten. I dialogrutan **Kolumnrubrik** visas autotextkoderna när gemener och versaler blandas. Därför visas texten i rapporten när gemener och versaler blandas. Till exempel i ett vanligt kalenderår är **@CalMonthLong** månad **7** **juli**. Om namnet på månaden ska visas med versaler (till exempel **JULI**) skriver du autotextkoden med versaler i fältet **Rubriktext**. Skriv till exempel **@CALMONTHLONG**. Du kan blanda koder och text. Till exempel anger du följande rubriktext: **Period @FiscalPeriod-@FiscalYear från @StartDate till @EndDate**. Rapportrubriken som skapas liknar följande text: **Period 1-02 från 01/01/02 till 01/31/02**.
 
 > [!NOTE]
 > Formatet för en del av texten, till exempel det långa datumformatet, beror på dina regionala inställningar på Finance and Operations-servern. För att ändra dessa inställningar, klicka på knappen **Starta**, klicka på **Kontrollpanelen** och klicka sedan på **Region och språk**. Följande tabeller listar de tillgängliga autotextalternativen för kolumnrubriker.
@@ -291,7 +291,7 @@ Cellen **Ytterligare blanksteg innan kolumn** anger bredden på avgränsaren mel
 1. Öppna kolumndefinitionen för att ändra den i Report Designer.
 2. I cellen **Ytterligare blanksteg innan kolumn** anger du det antal blanksteg som ska infogas mellan kolumner.
 
-### <a name="specify-a-currency"></a>Ange en valuta
+### <a name="specify-a-format-currency-override"></a>Ange en åsidosättning av format
 
 Cellen **Åsidosätt format/valuta** anger formateringen av decimaltecken-, valuta- och procentsatsbeloppen i kolumnen. Denna formatering åsidosätter den eventuella formatering som anges i rapportdefinitionen eller systemets standardinställningar.
 
@@ -361,7 +361,7 @@ Typen av information som varje kolumn i en rapport innehåller, anges av värdet
     <tbody>
     <tr>
     <td>FD</td>
-    <td>Visa ekonomiska data eller data från ett Excel-kalkylblad när du använder en kolumn av typen <strong>Länk till ekonomiska dimensioner</strong> eller en kolumn av typen <strong>Länk till kalkylblad</strong> i raddefinitionen. Om du väljer kolumntypen <strong>FD</strong> anges standardinställningarna automatiskt för följande rader: <ul>
+    <td>Visa ekonomiska data när du använder en kolumn <strong>länk till ekonomiska dimensioner</strong> i raddefinitionen. Om du väljer kolumntypen <strong>FD</strong> anges standardinställningarna automatiskt för följande rader: <ul>
     <li><strong>Redovisningskod/attributkategori:</strong> ACTUAL</li>
     <li><strong>Redovisningskod/attributkategori:</strong> ACTUAL</li>
     <li><strong>Räkenskapsår:</strong> BASE</li>
@@ -394,14 +394,6 @@ Du kan ändra dessa standardinställningar.</td>
     <tr>
     <td>SIDA</td>
     <td>Infoga en lodrät sidbrytning i rapporten. Kolumnerna som ligger till höger om kolumnen <strong>PAGE</strong> visas på en annan sida.</td>
-    </tr>
-    <tr>
-    <td>WKS</td>
-    <td>Visa data som hämtas från ett Excel-kalkylblad. Om du väljer kolumntypen <strong>WKS</strong> anges standardinställningarna automatiskt för följande rader: <ul>
-    <li><strong>Räkenskapsår:</strong> PERIODIC</li>
-    <li><strong>Period:</strong> BASE</li>
-    </ul>
-Du kan ändra dessa standardinställningar.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -518,13 +510,13 @@ Du kan också använda någon kombination av alfanumeriska tecken för exakt mat
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatera en rapport med flera valutor i en kolumndefinition
 
-En rapport med flera valutor kan visa belopp i den naturliga valutan (lokal valuta), funktionella valutan (standardinställning) eller rapporteringsvalutan. Ett företags funktionella valuta definieras i Microsoft Dynamics ERP-system. Förväxla inte den här ERP-inställningen med operativsystemets regionala alternativinställningar där du kan ange de symboler för standardinställd valuta som används i rapporter. Följande valutarelaterade celler är tillgängliga i kolumndefinitionen:
+En rapport med flera valutor kan visa beloppen i den aktuella redovisningsvalutan, rapportering i redovisningen, ursprungliga transaktionsvalutan eller översatta rapporteringsvaluta. Ett företags redovisningsvaluta definieras i redovisningsinställningen. Förväxla inte den här inställningen med operativsystemets regionala alternativinställningar där du kan ange de symboler för standardinställd valuta som används i rapporter. Följande valutarelaterade celler är tillgängliga i kolumndefinitionen:
 
-- **Valutavisning** – Ange valuta (naturlig, funktionell eller rapportering) som visas i transaktionerna. Den här funktionen kallas ibland för valutaomräkning. Valutaomräkning är förmågan att rapportera redovisningsbelopp i en valuta som inte kanske är företagets funktionella valuta eller den valuta som transaktionen angavs i.
+- **Valutavisning** – Ange valutatyp (redovisning, rapportering, transaktion eller omräkning) som visas i transaktionerna. Omräknat till en rapporteringsvalutafunktion kallas ibland valutaomräkning. Valutaomräkning är förmågan att rapportera redovisningsbelopp i en valuta som inte kanske är företagets funktionella eller rapporteringsvaluta eller den valuta som transaktionen angavs i.
 - **Valutafilter** – Ange ett valutafilter. Endast transaktioner som anges i den valda valutan visas i rapporten.
 
-> [!NOTE]
-> Om du vill skapa rapporter som använder flera valutor måste du markera kryssrutan **Inkludera alla rapporteringsvalutor** på fliken **Rapport** i rapportdefinitionen. Följ stegen nedan om du vill avgöra ett företags funktionella valuta.
+> 
+Följ stegen nedan om du vill avgöra ett företags redovisningsvaluta.
 
 1. Klicka på **Företag** på **Företag**-menyn i Report Designer.
 2. I dialogrutan **Företag** väljer du ett företag och klickar sedan på **Visa**.
@@ -533,20 +525,18 @@ En rapport med flera valutor kan visa belopp i den naturliga valutan (lokal valu
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Ange valutan på en rapport med flera valutor
 
 1. Öppna kolumndefinitionen för att ändra den i Report Designer.
-2. Dubbelklicka på cellen **Valutabildskärm** i rätt **FD**-kolumn och välj sedan alternativet för att visa valutainformation: **Naturlig/ursprunglig valuta**, **Funktionell valuta från företagsinformation** eller rapporteringsvalutan.
+2. Dubbelklicka på cellen **Valutabildskärm** i rätt **FD**-kolumn och välj sedan alternativet för att visa valutainformation: **Redovisningsvaluta**, **Redovisningsrapportering**, transaktionsvaluta eller välj att konvertera till en annan rapporteringsvaluta.
 3. Dubbelklicka på cellen **Valutafilter** i rätt **FD**-kolumn och välj rätt valutakod i listan. Endast transaktioner som anges i denna valutan visas i rapporten.
 
-> [!NOTE]
-> Alternativen som beskrivs här kan komma att skilja sig beroende på ERP-systemet. Mer information finns i [systemdokumentationen för Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Exempel på celler för Valutavisning och Valutafilter
 
 Phyllis har gjort följande valutaval i sin kolumndefinition:
 
 - **Valutafilter:** Yen
-- **Valutabildskärm:** Funktionell (USD)
+- **Valutavisning:** redovisningsvalutan från redovisningen (USD)
 
-På grund av valutafiltret som Phyllis markerat, innehåller rapporten endast transaktioner som registreras i japanska yen (JPY). På grund av valutabildskärmen som hon har markerat, visar rapporten de transaktionerna i den funktionella valutan USD,
+På grund av valutafiltret som Phyllis markerat, innehåller rapporten endast transaktioner som registreras i japanska yen (JPY). På grund av valutabildskärmen som hon har markerat, visar rapporten de transaktionerna i redovisningsvalutan USD,
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Kombinationer av Valutafilter och Valutavisning
 
@@ -555,10 +545,10 @@ Följande tabell visar rapportresultaten som kan uppstå för olika kombinatione
 
 | Cellen Valutavisning                        | Cellen Valutafilter | Rapportresutat |
 |----------------------------------------------|----------------------|---------------|
-| Naturligt/ursprunglig valuta                 | **YEN**              | **6 000 Y** – Resultatet visas endast transaktioner som angavs i JPY. |
-| Funktionell valuta från företagsinformation | **YEN**              |**60 $** – Resultatet visar endast transaktioner som angavs i JPY, och visar de transaktionerna i USD.<blockquote>[!NOTE] konverteringskursen är ungefär 100 JPY per USD.</blockquote> |
-| Funktionell valuta från företagsinformation | Tom                | **2 310 $** - Resultatet visar alla data i den funktionella valutan som anges i företagsinformationen.<blockquote>[!NOTE] Detta belopp är summan av alla transaktioner i funktionell valuta.</blockquote> |
-| Naturlig/ursprunglig valuta                 | Tom                | **2 250 $** - Resultatet visar alla belopp i den valuta som transaktionen genomfördes i. |
+| Transaktionsvaluta                 | **YEN**              | **6 000 Y** – Resultatet visas endast transaktioner som angavs i JPY. |
+| Redovisningsvaluta från redovisningen | **YEN**              |**60 $** – Resultatet visar endast transaktioner som angavs i JPY, och visar de transaktionerna i USD.<blockquote>[!NOTE] konverteringskursen är ungefär 100 JPY per USD.</blockquote> |
+| Redovisningsvaluta från redovisningen | Tom                | **2 310 $** - Resultatet visar alla data i redovisningsvalutan som anges i redovisningen.<blockquote>[!NOTE] Detta belopp är summan av alla transaktioner i redovisningsvaluta.</blockquote> |
+| Transaktionsvaluta                 | Tom                | **2 250 $** - Resultatet visar alla belopp i den valuta som transaktionen genomfördes i. Detta innebär att summan lägger ihop belopp från olika valutor. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Beräkningskolumn i en kolumndefinition
 

@@ -3,7 +3,7 @@ title: Avancerade automatiska avgifter för flera kanaler
 description: Det här avsnittet beskriver funktionerna för hantering av ytterligare avgifter för beställningar i butikskanal med hjälp av funktioner för avancerade automatiska avgifter.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345569"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789781"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om konfiguration och distribution av funktionen för avancerade automatiska avgifter som är tillgängliga i Dynamics 365 for Retail version 10.0.
@@ -49,7 +48,7 @@ På sidan **Butik \> Administrationsinställning \> Parametrar \> Butiksparametr
 
 ![Parametrar för avancerade automatiska avgifter](media/advancedchargesparameter.png)
 
-När avancerad automatiska avgifter aktiveras uppmanas användare att manuellt ange en fraktkostnad vid kassaterminalen när man skapar en leverera alla eller leverera utvalda kundorder. Kassans orderavgifter beräknas systematiskt och läggs till kassatransaktionen (om det finns en motsvarande tabell för automatiska avgifter som matchar kriteriet om ordern som skapats). Användare kan också lägga till eller underhålla sidhuvud eller radnivå tillägg manuellt via tillagda kassaoperationer som kan läggas till kassaskärmens layout.  
+När avancerad automatiska avgifter aktiveras uppmanas användare inte längre att manuellt ange en fraktkostnad vid kassaterminalen när man skapar en leverera alla eller leverera utvalda kundorder. Kassans orderavgifter beräknas systematiskt och läggs till kassatransaktionen (om det finns en motsvarande tabell för automatiska avgifter som matchar kriteriet om ordern som skapats). Användare kan också lägga till eller underhålla sidhuvud eller radnivå tillägg manuellt via tillagda kassaoperationer som kan läggas till kassaskärmens layout.  
 
 När avancerade automatiska tillägg är aktiverade kommer befintliga **butiksparametrar** för **leveransavgiftskod** och **återbetala leveransavgifter** inte längre användas. Dessa parametrar kan endast användas om parametern **Använd avancerade automatiska avgifter** är inställd på **Nej**.
 
@@ -67,6 +66,8 @@ Följande nya åtgärder finns.
 - **143 - beräkna om avgifter** - Använd följande åtgärd för att utföra en fullständig ny beräkning av avgifterna för försäljningstransaktionen. Tidigare överskrivna automatiska avgifter för användare beräknas om utifrån den aktuella vagnkonfigurationen.  
 
 Som med alla kassaoperationer kan säkerhetskonfigurationen kräva godkännande av chef för att utföra operationen.
+
+Det är viktigt att komma ihåg de ovan angivna kassaoperationerna kan också läggas till kassalayout även om parametern **Använd avancerade automatiska avgifter** inaktiveras. I det här scenariot får organisationer fortfarande fördelarna med att kunna visa manuellt tillagda avgifter och redigera dem med hjälp av åtgärden **Hantera avgifter**. Användare kan även använda åtgärderna **Lägg till huvudavgifter** och **Lägg till radavgifter** för kassatransaktioner även om parametern **Använd avancerade automatiska avgifter** är inaktiverad. Åtgärden **beräkna om avgifter** har begränsad funktionalitet om den används med **Använd avancerade automatiska avgifter** inaktiverad. I detta scenario kan inget beräknas om och eventuella avgifter som har lagts till manuellt i transaktionen återställs bara till 0,00 $.
 
 ## <a name="use-case-examples"></a>Använd fallexempel
 I det här avsnittet visas exempel på användningsfall som hjälper dig att förstå konfiguration och användning av automatiska avgifter och övriga kostnader i samband med order för butikskanal. De här exemplen visar hur programmet uppför sig när parametern **Använd avancerade automatiska avgifter** har aktiverats.
@@ -207,3 +208,7 @@ Det rekommenderas att organisationen även lägger till fritextfält på kvittos
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Förhindrar att avgifter beräknas innan kassaordern är klar.
 
 Vissa organisationer föredrar att vänta tills användaren är klar med att lägga till alla försäljningsrader i kassatransaktionen innan de beräknar avgifter. För att undvika beräkning av avgifter när artiklar läggs till i kassatransaktionen, aktiverar du parametern **Manuell beräkning av avgifter** i den **funktionsprofil** som används i butiken. För att aktivera den här parametern måste kassaanvändaren använda åtgärden **beräkna summa** när de är klara med att lägga till produkter i kassatransaktionen. Åtgärden **beräkna summa** utlöser sedan beräkning av eventuella automatiska avgifter för orderrubriken eller rader.
+
+### <a name="charges-override-reports"></a>Raporrter för avgiftsåsidosättning
+
+Om användare åsidosätter beräknade avgifter eller lägger till manuell avgift i transaktionen, kommer dessa data vara tillgängliga för granskning i rapporten **historik för avgiftsåsidosättning**. Rapporten kan tillgås från **butik \> förfrågningar och rapporter \> historik för avgiftsåsidosättning**.  Det är viktigt att komma ihåg att de data som krävs för den här rapporten importeras från kanaldatabasen i HQ genom ”P” distribution tidsplanera jobb. Information om åsidosättningar kan därför endast utföras i kassan och kanske inte är omedelbart tillgängliga i rapporten tills jobbet har överfört butikens transaktionsdata till HQ. 

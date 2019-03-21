@@ -3,7 +3,7 @@ title: Produkt- och kundsökning i kassan (POS)
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313599"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789879"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i kassan (POS)
 
@@ -69,7 +69,7 @@ Upplevelsen av lokala produktsökningar har nu gjorts mer användarvänlig. Föl
 
 ## <a name="customer-search"></a>Sök efter kund
 
-Kundsök används för att hitta kunder för olika ändamål. Kassörer kan exempelvis visa en kunds önskelista eller inköpshistorik, eller lägga till kunden i en transaktion. När det gäller sökningar med flera nyckelord returnerar kundsökningens algoritm alla kunder som matchar något av de nyckelorden som sökts. De kunder som matchar de flesta nyckelorden visas emellertid överst i resultatet. Detta motsvarar hur andra sökmotorer visar sina resultat. De visar först de resultat som matchar flest söktermer. Därefter visas de resultat om delvis matchar sökningens nyckelord. Detta gör det enklare för kassörerna i situationer där de använder flera nyckelord för sin sökning, men ett av nyckelorden är felstavat.
+Kundsök används för att hitta kunder för olika ändamål. Kassörer kan exempelvis visa en kunds önskelista eller inköpshistorik, eller lägga till kunden i en transaktion. Sökalgoritmen matchar sökvillkoren mot de värden som finns i följande kundegenskaper: namn, e-post, telefon, förmånskortnummer, adress och kontonummer. Bland dessa ger namnegenskapen större flexibilitet när det gäller flera nyckelordssökningar eftersom algoritmen returnerar alla kunder som matchar något av de sökta nyckelorden och de kunder som matchar de flesta nyckelorden visas överst i resultatet. Detta beteende hjälper kassörerna i situationer där sökningen sker genom att skriva det fullständiga namnet, men efternamn och förnamn har växlas under den första datainmatningen. Av prestandaskäl bevaras andra egenskaper efter nyckelord, så om nyckelorden inte matchar ordningen som data lagras i kommer inga resultat att returneras.
 
 En kundsökning utförs som standard på kund-adressböcker kopplade till butiken. Denna typ av sökning kallas en *lokal kundsökning*. Medarbetare kan emellertid också söka efter kunder globalt. Med andra ord kan man söka i samtliga företagets butiker och mellan alla juridiska personer. Denna typ av sökning kallas en *fjärrkundsökning*.
 

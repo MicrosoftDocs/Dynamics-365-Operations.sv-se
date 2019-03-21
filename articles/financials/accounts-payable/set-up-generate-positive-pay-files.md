@@ -1,9 +1,9 @@
 ---
-title: Ställa in och generera betalningskontrollfiler
-description: Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler.
+title: Ställ in och generera betalningskontrollfiler
+description: Det här ämnet innehåller information om hur du ställer och genererar betalningskontrollfiler.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dbc512c6d214dc8cf2527ac23103529111896ec5
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346098"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778188"
 ---
-# <a name="set-up-and-generate-positive-pay-files"></a>Ställa in och generera betalningskontrollfiler
+# <a name="set-up-and-generate-positive-pay-files"></a>Ställ in och generera betalningskontrollfiler
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler. 
+Det här ämnet innehåller information om hur du ställer och genererar betalningskontrollfiler. 
 
 Ställa in betalningskontroll för att generera en elektrisk lista med checkar som ges till banken. När checken sedan visas för banken, jämför banken checken med listan med checkar. Om checken matchar en check i listan behandlar banken checken. Om checken inte matchar en check in listan kvarhåller banken checken för granskning.
 
@@ -94,7 +94,7 @@ Betalningskontrollfiler skapas genom att använda dataentiteter. Innan du kan ge
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />

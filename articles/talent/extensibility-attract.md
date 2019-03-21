@@ -3,7 +3,7 @@ title: Utbyggbarhet i Attract
 description: Det här avsnittet beskriver hur du kan utöka Microsoft Dynamics 365 for Talent - Attract-appen med Microsoft Power-plattformen.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306241"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789661"
 ---
 # <a name="extensibility-in-attract"></a>Utbyggbarhet i Attract
 
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent byggs ovanför Common Data Service (CDS) for Apps-plattformen och kan utökas på olika sätt med hjälp av Microsofts Power-plattformen och funktionerna som Common Data Service for Apps ger. Därför kan du konfigurera och anpassa systemet med hjälp av Microsoft PowerApps och Microsoft Flow. Du kan också få ytterligare analys om personer genom att använda Microsoft Power BI. Dessutom gör nya anpassade aktiviteter, till exempel PowerApps och webbinnehåll (iframe), anställningsprocessen mer anpassningsbar än någonsin. Genom att använda dessa nya aktiviteter kan du skräddarsy anställningsprocessen till dina affärsbehov och processer och kan se till att både anställningsteam och sökande har en smidig och anpassad upplevelse.
+
+## <a name="extending-option-sets-in-attract"></a>Utökade alternativuppsättningar i Attract
+
+En **alternativuppsättning** (plocklista) är en typ av fält som kan inkluderas i en enhet. Den definierar en uppsättning med alternativ. När en alternativuppsättning visas i ett formulär används en nedrullningsbar listkontroll.  I Attract finns flera fält som består av alternativuppsättningar.  Vi börjar introducera förmågan att utöka alternativuppsättningar, från och med fältet Avvisningsorsak, fältet Anställningstyp och fältet Tjänsteåldertyp.   Dessutom kan du lägga till lokaliserade visningsetiketter för de alternativ som du lägger till.  Se länken nedan för mer information: [Anpassa etiketter för alternativuppsättningar](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Jobbpublicering till LinkedIn-funktionen kräver användning av fälten **Anställningstyp** och **Tjänsteåldertyp** på sidan **Projektdetaljer**. Standardvärden i dessa fält stöds av LinkedIn och visas när jobbet har publicerats. Om du publicerar jobb på LinkedIn och du ändrar befintliga alternativuppsättningsvärden i fälten, kommer jobbet fortfarande publiceras och LinkedIn visar inte de anpassade värdena för **Anställningstyp** och **Tjänsteåldertyp**.  
+
+Nedan visas stegen för att uppdatera fälten **Orsak till avvisning** med värden som är specifika för ditt företag.  
+
+1. För att utöka alternativuppsättningen **orsak till avvisning**, gå till [webbplatsen för PowerApps administration.](Https://admin.powerapps.microsoft.com)
+2. Du kanske uppmanas att logga in på ditt konto. Ange dina autentiseringsuppgifter för användar-ID och lösenord som du använder för att logga in på Dynamics 365 och/eller Office 365 och klicka sedan på **nästa**.
+3. På fliken **miljöer** väljer du miljön som du vill hantera och dubbelklicka för att komma till fliken **information**.
+4. På fliken **information** väljer du **Dynamics 365 administrationscenter**.
+5. Välj den instans du vill ändra och välj **Öppen**.
+6. Gå till **inställningar** och sedan **anpassning** och välj **anpassa systemet**.
+7. Hitta den entitet som du vill expandera alternativuppsättningen till genom att markera **entiteter** och expandera gruppen. I det här exemplet blir den **entiteten Jobbansökan**.
+8. Gå till det fält som du vill utöka alternativuppsättningen för genom att välja alternativet **fält**. I det här exemplet blir det **msdyn_rejectionreason**. Dubbelklicka på fältet.
+9. I fältet **alternativuppsättning** väljer du **redigera**.
+10. Välj ikonen **+**.
+11. Ange en **etikett**.  (Detta måste vara ett unikt värde – inga dubbletter).
+12. Välj **Spara**.
+13. Välj **publicera** överst på sidan.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Utnyttja Microsoft Power platform 
 

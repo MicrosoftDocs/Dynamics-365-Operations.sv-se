@@ -3,7 +3,7 @@ title: Skapa, godkänna och signera erbjudanden
 description: Det här avsnittet beskriver hur du skapar, godkänner och registrerar ett erbjudande för en sökande med Dynamics 365 for Talent.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306309"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768915"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Skapa, godkänna och signera erbjudanden
 
@@ -104,15 +104,20 @@ Det finns flera åtgärder du kan vidta innan du skickar erbjudanden till kandid
 
 -  Det kan finnas flera dokument som du vill inkludera i processen för godkännande av erbjudandet. Du har alternativet att lista krävd dokumenttyp.
 
-- Alternativet e-signatur: om Adobe Sign valdes som den föredragna metoden för e-signering måste skapare av erbjudandet ansluta Adobe Sign-licensen. Det finns två sätt att göra detta. Gå till användare **Användarinställningar** i **Erbjudande** i **Anslutningar** och anslut till **Adobe Sign**. Du kan också uppmanas att ansluta till skärmen Skicka erbjudanden till kandidat om anslutningen inte redan upprättats baserat på användarinställningarna. 
+- Alternativet e-signatur: det finns två sätt att koppla e-signaturleverantören av ditt val. Gå till **Användarinställningar** i **Erbjudande**, under **Anslutningar** och anslut till **Adobe Sign** eller **DocuSign**. Du kan också uppmanas att ansluta till sidan **Skicka erbjudanden till kandidat** om anslutningen inte redan upprättats baserat på användarinställningarna. E-signaturkontot behöver bara kopplas en gång. Samma användarlicens används för alla framtida erbjudandepaket som skickas av samma användare. 
 
-> [!NOTE]
-> Användarna behöver bara ansluta sina Adobe Sign-konton en gång. Samma användarlicens används för alla framtida erbjudandepaket som skickas av samma användare. 
+### <a name="adobe-sign"></a>Adobe Sign
+Om Adobe Sign valdes som den föredragna metoden för e-signering måste skapare av erbjudandet ansluta Adobe Sign-licensen i det här steget. 
+
+### <a name="docusign"></a>DocuSign
+Om DocuSign valdes som den föredragna metoden för e-signering måste skapare av erbjudandet ansluta DocuSign-licensen. När du har loggat in ansluts standardkontot och behörigheter som är kopplade till användarens DocuSign-profil till Talent Attract. 
 
 -  Du kan visa och redigera e-postmallen efter behov.
 
 När erbjudandet är klart och du klickar på **skicka till kandidaten**, får kandidaten ett e-postmeddelande att ett erbjudande väntar på granskning.
 
+>[!NOTE]
+> Om du använder Adobe Sign eller DocuSign och du får ett felmeddelande när erbjudandet skickades till kandidaten, försök koppla från och återansluta e-signaturens användarkonto från **användarinställningar**. Om problemet kvarstår kontaktar du vår support genom att använda länken **rapportera ett problem**.
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>Sökandes åtgärder efter att ha mottagit ett erbjudande
 

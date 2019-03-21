@@ -3,7 +3,7 @@ title: Räkenskapskalendrar, räkenskapsår och perioder
 description: Det här avsnittet behandlar räkenskapskalendrar, räkenskapsår och perioder och hur du använder dem för juridiska personer, anläggningstillgångar och budgetering.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361669"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778211"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Räkenskapskalendrar, räkenskapsår och perioder
 
@@ -43,7 +43,7 @@ En bokslutsperiod används för att separera redovisningstransaktioner som gener
 När du skapar en bokslutsperiod väljer du en period som har statusvärdet Öppen och har de datum som du vill använda. Den nya bokslutsperioden ska kopiera start- och slutdatum från den befintliga perioden. Den ursprungliga perioden fortsätter finnas kvar. Du väljer till exempel Period 12, som är den sista perioden under räkenskapsåret och har datumen 1 augusti till och med 31 augusti. Du anger ett namn för bokslutsperioden, till exempel Stäng. När du har skapat den nya bokslutsperioden har du nu den ursprungliga perioden och bokslutsperioden. Båda har datum som börjar med 1 augusti och slutar på 31 augusti.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Välj räkenskapskalendrar för redovisningar, anläggningstillgångar och budgetcykler
-Räkenskapskalendrar används vid avskrivning av anläggningstillgångar, ekonomiska transaktioner och budgetcykler. När du skapar en räkenskapskalender kan du använda den för flera syften. Du kan välja en rapporteringsgrupp kalender för att en värdemodell eller avskrivningsregel kommer att göra det en kalender för anläggningstillgångar. Du kan välja en räkenskapskalender för en redovisning och göra den till redovisningskalender. Och du kan välja en räkenskapskalender för en budgetcykel för att skapa en budgetkalender. Du kan använda samma räkenskapskalender för alla dessa.
+Räkenskapskalendrar används vid avskrivning av anläggningstillgångar, ekonomiska transaktioner och budgetcykler. När du skapar en räkenskapskalender kan du använda den för flera syften. Du kan välja en räkenskapskalender för en förteckning över anläggningstillgångar för att göra den till en kalender för anläggningstillgångar. Du kan välja en räkenskapskalender för en redovisning och göra den till redovisningskalender. Och du kan välja en räkenskapskalender för en budgetcykel för att skapa en budgetkalender. Du kan använda samma räkenskapskalender för alla dessa.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Välj en räkenskapskalender för din juridiska person.
 
@@ -51,7 +51,7 @@ Välj den räkenskapskalender som du vill använda för redovisningen för din j
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Välj en räkenskapskalender för anläggningstillgångar
 
-Du kan välja en rapporteringsgrupp kalender för en värdemodell eller avskrivningsregel, och den räkenskapsgrupp kalender ska användas av de anläggningstillgångar som använder den valda värdemodellen eller avskrivningsregeln. Du kan välja bland alla räkenskapskalendrar som definieras på sidan Räkenskapskalendrar.
+Du kan välja en räkenskapskalender för en förteckning över anläggningstillgångar och den räkenskapskalendern ska användas av de anläggningstillgångar som använder den valda förteckningen.+ Du kan välja bland alla räkenskapskalendrar som definieras på sidan Räkenskapskalendrar.
 
 ### <a name="define-budget-cycle-time-spans"></a>Definiera tidsrymder för budgetcykel
 

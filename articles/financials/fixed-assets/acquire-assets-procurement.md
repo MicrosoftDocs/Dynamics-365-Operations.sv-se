@@ -3,7 +3,7 @@ title: Skaffa tillgångar genom anskaffning
 description: Det här ämnet beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eef69de1c93de5c19b9f197838f1f2d3eb2e7645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ba3484e62caa790a5b05ae0693f69926514f6425
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "355804"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778234"
 ---
 # <a name="acquire-assets-through-procurement"></a>Skaffa tillgångar genom anskaffning
 
 [!include [banner](../includes/banner.md)]
 
-Det här ämnet beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar.
+Det här ämnet beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar. En inköpsrad skapar en tillgång oavsett kvantiteten på inköpsraden. Om du behöver skapa flera anläggningstillgångar måste du skapa flera inköpsrader.
 
  Följande metoder används för integration av anläggningstillgångar och leverantörsreskontra och du måste använda samma metod för alla anläggningstillgångar:
 -   Du skapar en anläggningstillgång manuellt innan du lägger till anläggningstillgångens nummer på raden i inköpsordern eller leverantörsfakturan. En anskaffningstransaktion bokförs automatiskt för tillgången när du bokför leverantörsfakturan. Det här är standardmetoden.

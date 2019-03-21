@@ -3,7 +3,7 @@ title: Synkronisera produkter med lagerenhet från Finance and Operations till F
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter med lagerenhet från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359254"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836312"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
 
@@ -34,9 +34,11 @@ Det här avsnittet beskriver de mallar och underliggande uppgifter som används 
 
 [![Synkronisering av affärsprocesser mellan Finance and Operations och Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Mallen **Field Service-produkter (Finance and Operations till Field Service)** som används baseras på mallen **Produkter (Finance and Operations till Sales) – direkt** från potentiell kund till kontanter. Mer information finns i [Produkter (Finance and Operations till Sales) – direkt](products-template-mapping-direct.md).
+Den använda mallen **Field Service-produkter med lagerenhet (Finance and Operations till Field Service)** baseras på mallen **Field Service-produkter (Finance and Operations till Field Service)**. Mer information finns i [Field Service-produkter (Finance and Operations till Field Service)](field-service-product.md).
 
-Det här ämnet beskriver bara skillnaden mellan mallarna **Field Service-produkter (Finance and Operations till Field Service)** och **Produkter (Finance and Operations till Field Service) – direkt**.
+Det här avsnittet beskriver endast skillnaderna mellan två mallar: 
+- **Field Service-produkter med lagerenhet (Finance and Operations till Sales)**
+- **Field Service-produkter (Finance and Operations till Field Service)**. 
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 

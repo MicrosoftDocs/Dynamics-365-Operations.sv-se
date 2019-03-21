@@ -3,7 +3,7 @@ title: Centraliserade betalningar för leverantörsreskontra
 description: Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste inte samma betalningar anges i flera juridiska personer. Den här artikeln ger exempel som visar hur bokföringen av centraliserade betalningar hanteras i olika scenarier.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/12/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6744aae97499385405e192cd6d6cb8590dd79b7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b61320617dd85a880414b31ad6c88e611beca161
+ms.sourcegitcommit: ca1a472a670393f7aa208189dc8964c9691e2cdc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327077"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "390176"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserade betalningar för leverantörsreskontra
 
@@ -33,7 +33,7 @@ Organisationer som omfattar flera juridiska personer kan skapa och hantera betal
 
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste inte samma betalningar anges i flera juridiska personer. Dessutom sparar organisationen tid eftersom betalningsprocessen rationaliseras.
 
-I en organisation med centraliserade betalningar finns det många juridiska personer för operationer, och varje fungerande juridisk person hanterar sina egna leverantörsfakturor. Betalningar för alla verksamma juridiska personer genereras från en enda juridisk person, som kallas betalningens juridiska person. Under kvittningsprocessen genereras de förfaller till- och förfaller från-transaktioner som behövs. Du kan ange vilken juridisk person i organisationen som får de realiserade vinst- eller förlusttransaktionerna, och hur kassarabattransaktioner som hör till en korsföretagsbetalning hanteras. 
+I en organisation med centraliserade betalningar finns det många juridiska personer för operationer, och varje fungerande juridisk person hanterar sina egna leverantörsfakturor. Betalningar för alla verksamma juridiska personer genereras från en enda juridisk person, som kallas betalningens juridiska person. Under kvittningsprocessen genereras de förfaller till- och förfaller från-transaktioner som behövs. Du kan ange vilken juridisk person i organisationen som får de realiserade vinst- eller förlusttransaktionerna, och hur kassarabattransaktioner som hör till en korsföretagsbetalning hanteras. Den centraliserade betalningsjournalraden **kontotyp** bör anges till Leverantör. **Motkontotypen** bör anges till Bank eller Huvudbok. Bakkontot bör vara i nuvarande företaget. 
 
 I följande exempel visas hur bokföringen hanteras i olika scenarier. Följande konfiguration används i alla tre exempel:
 

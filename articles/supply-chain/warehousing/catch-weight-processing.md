@@ -3,7 +3,7 @@ title: Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5161860e3b1c5b0ae795d109159268be085ec5af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334069"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777282"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
-[!include [preview banner](../../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
-**Funktionen exponering**
+## <a name="feature-exposure"></a>Funktionen exponering
 
 Om du vill använda lagerstyrning för att bearbeta produkt i faktisk/nominell vikt måste du använda en licensnyckelkonfiguration för att aktivera funktionen. (Gå till **Systemadministration \> Inställningar \> Licenskonfiguration**. Klicka sedan på fliken **konfigurationsnycklar**, expandera **handel \> hantering av lager och transport** och markera kryssrutan för **faktisk/nominell vikt för lagerstället**).
 
 > [!NOTE]
-> Både **hantering av lager och transport** licensnyckeln för konfiguration och **Processfördelning av faktisk/nominell vikt** måste också aktiveras.
+> Både **hantering av lager och transport** licensnyckeln för konfiguration och **Processfördelning \> faktisk/nominell vikt** måste också aktiveras.
 
 Efter att licenskonfigurationens nyckel är inaktiverad, när du skapar en frisläppt produkt, kan du välja **faktisk/nominell vikt**. Du kan också koppla frisläppt produkt till en lagringsdimension som parametern **använda processer för lagerhantering** väljs för.
 

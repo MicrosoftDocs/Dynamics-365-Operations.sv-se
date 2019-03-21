@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d636e77888fff383849b3a91bf643475a6d516ac
-ms.sourcegitcommit: 383a344deb5abf48584ea2ee7774b8dbbbec49b3
+ms.openlocfilehash: efda4e39f63155785386ecec6d21973e01a0f69f
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377888"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770903"
 ---
 # <a name="integration-with-microsoft-dynamics-365-for-field-service"></a>Integration med Microsoft Dynamics 365 for Field Service
 
@@ -75,7 +75,7 @@ Ytterligare funktioner i den här andra fasen fokuserar på att ge fälttekniker
 ### <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
 Field Service-integration stöder följande versioner:
 
-- Dynamics 365 for Finance and Operations version 8.1.2 (december 2019) släpptes i december 2019 och har programversionsnummer 8.1.195 med plattformsuppdatering 22 (7.0.5095). 
+- Dynamics 365 for Finance and Operations version 8.1.2 (december 2018) släpptes i december 2018 och har programversionsnummer 8.1.195 med plattformsuppdatering 22 (7.0.5095). 
 
 ### <a name="system-requirements-for-field-service"></a>Systemkrav för Field Service
 Om du vill använda integrationslösningen för Field Service måste du installera följande komponenter:

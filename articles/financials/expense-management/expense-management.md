@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cd637f1b74056db89520b762255d03afa3855ba
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 11445390acef5ddfd57a1a0017e8bc423cdb1914
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313415"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403224"
 ---
 # <a name="expense-management"></a>Utläggshantering
 
@@ -37,15 +37,13 @@ Använd utgiftshanteraren för att skapa ett integrerat arbetsflöde där du kan
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling. 
+Gå till [Microsoft Dynamics 365 viktig information](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner som har planerats. 
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om kundreskontra och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Du hittar synpunkter, nyheter och annan information på [Microsoft Dynamics 365 blogg](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – ekonomiblogg](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-Det finns många inlägg om kundreskontra i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). Vissa av dessa inlägg har skrivits för en tidigare version av kundreskontra men samma begrepp gäller fortfarande. och procedurerna är ungefär desamma i den här versionen.
-
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations. 
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.

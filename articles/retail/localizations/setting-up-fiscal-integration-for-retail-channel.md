@@ -3,7 +3,7 @@ title: Ställ in räkenskapsintegration för butikskanaler
 description: Det här avsnittet ger riktlinjer för att skapa funktionen för räkenskapsintegration för butikskanaler.
 author: josaw
 manager: annbe
-ms.date: 2/01/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 3c2945c4310dc4c1ae74f215e9b28056e7d1ede9
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377329"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773337"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Ställ in räkenskapsintegration för butikskanaler
 
@@ -175,7 +175,7 @@ I vissa fall kan måste en särskild text skrivas ut på en kvittoskrivare om en
     3. I fältet **Text för kvittoskrivare**, anger du en räkenskapstext som ska skrivas ut på en kvittoskrivare.
 
     > [!NOTE]
-    > Om flera rabatter tillämpas på samma transaktionsrad innehåller kvittoskrivaren räkenskapstexter från alla rabatter som är kopplade till transaktionsraden. 
+    > Om flera rabatter tillämpas på samma transaktionsrad innehåller kvittoskrivaren räkenskapstexter från alla rabatter som är kopplade till transaktionsraden.
 
 ## <a name="set-error-handling-settings"></a>Ange inställningar för felhantering
 
@@ -210,3 +210,4 @@ För att aktivera räkenskapsrapporter X/Z att köras från kassan, bör du läg
     2. Lägg till en ny knapp och ange knappegenskapen **Skriv ut skatt X**.
     3. Lägg till en ny knapp och ange knappegenskapen **Skriv ut skatt Z**.
     4. På sidan **Distributionsschemaläggare** kör jobb **1090** för att överföra ändringar till kanaldatabasen.
+

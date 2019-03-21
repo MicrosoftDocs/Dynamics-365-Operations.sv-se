@@ -3,7 +3,7 @@ title: Integrering av anläggningstillgångar
 description: Anläggningstillgångar kan integreras med Redovisning, Lagerhantering, Kundreskontra och Leverantörsreskontra. Du kan också ställa in anläggningstillgångar så att detta integreras med inköpsorder.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2023d68a1455c6bb5ec569b6ae19fc3268f8769d
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336990"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778165"
 ---
 # <a name="fixed-assets-integration"></a>Integrering av anläggningstillgångar
 
@@ -41,7 +41,7 @@ På sidan **Bokföringsprofiler för anläggningstillgångar** anger du de huvud
 ## <a name="inventory-management"></a>Lagerhantering
 I lagerjournalen för anläggningstillgångar kan du ange anskaffningen av anläggningstillgångar som den juridiska personen har producerat eller skapat åt sig själv. Du kan sedan överföra lagerartiklar till anläggningstillgångar antingen som en anskaffning eller som en del av en anskaffning. 
 
-Du kan också anskaffa tillgångar med inköpsorder. När inköpsorder innehåller lagerartiklar som betecknas som anläggningstillgångar, bestämmer inställningen **Tillåt förvärv av tillgångar från inköp** på sidan **Parametrar för anläggningstillgångar** om anskaffningen bokförs för anläggningstillgången när fakturan bokförs. Vilken effekt som anskaffningen av anläggningstillgångar har på lagret beror på konfigurationen av den juridiska personen. 
+Du kan också anskaffa tillgångar med inköpsorder. När inköpsorder innehåller lagerartiklar som betecknas som anläggningstillgångar, bestämmer inställningen **Tillåt förvärv av tillgångar från inköp** på sidan **Parametrar för anläggningstillgångar** om anskaffningen bokförs för anläggningstillgången när fakturan bokförs. En inköpsrad skapar bara en anläggningstillgång, oberoende av kvantitet. Vilken effekt som anskaffningen av anläggningstillgångar har på lagret beror på konfigurationen av den juridiska personen. 
 
 När en lagerartikel blir en anskaffning av en anläggningstillgång genom lagerjournalen, en inköpsorder eller ett anskaffningsförslag, skapas en anskaffningstransaktion för Anläggningstillgångsboken. Om en bokanskaffning inkluderar en härledd bok, skapas också en anskaffningstransaktion för den härledda boken. 
 
