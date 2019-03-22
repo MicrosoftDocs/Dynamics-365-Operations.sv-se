@@ -5,44 +5,52 @@ items:
   - name: Kom igång
     href: talent-get-started.md
     items:
-    - name: Nyheter och ändringar
+    - name: Nyheter och ändringar i Talent
       href: whats-new.md
       items:
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (31 januari 2019)
+      - name: 5 mars 2019
+        href: whats-new-talent-march-5.md
+      - name: 27 februari 2019
+        href: whats-new-talent-feb-27.md
+      - name: 14 februari 2019
+        href: whats-new-talent-feb14.md
+      - name: 7 februari 2019
+        href: whats-new-talent-february-7.md
+      - name: 31 januari 2019
         href: whats-new-talent-january-29.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (23 januari 2019)
+      - name: 23 januari 2019
         href: whats-new-talent-january-23.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (17 januari 2019)
+      - name: 17 januari 2019
         href: whats-new-talent-january-17.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (11 januari 2019)
+      - name: 11 januari 2019
         href: whats-new-talent-january-11.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (14 december 2018)
+      - name: 14 december 2018
         href: whats-new-talent-december-14.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (6 december 2018)
+      - name: 6 december 2018
         href: whats-new-talent-december-6.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (27 november 2018)
+      - name: 27 november 2018
         href: whats-new-talent-november-27.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (15 november 2018)
+      - name: 15 november 2018
         href: whats-new-talent-november-15.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (31 oktober 2018)
+      - name: 31 oktober 2018
         href: whats-new-talent-october-31.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (19 oktober 2018)
+      - name: 19 oktober 2018
         href: whats-new-talent-october-19.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (15 oktober 2018)
+      - name: 15 oktober 2018
         href: whats-new-talent-october-11.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (8 oktober 2018)
+      - name: 8 oktober 2018
         href: whats-new-talent-october-8.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (1 oktober 2018)
+      - name: 1 oktober 2018
         href: whats-new-talent-october-01.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (24 september 2018)
+      - name: 24 september 2018
         href: whats-new-talent-september-24.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (17 september 2018)
+      - name: 17 september 2018
         href: whats-new-talent-september-17-2018.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (10 september 2018)
+      - name: 10 september 2018
         href: whats-new-talent-september-10.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (augusti 2018)
+      - name: Augusti 2018
         href: whats-new-talent-august2018.md
-      - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (juli 2018)
+      - name: Juli 2018
         href: whats-new-talent-july2018.md
     - name: Systemkrav och uppdateringspolicy
       href: talent-versions-update-policy.md
@@ -193,6 +201,8 @@ items:
       href: data-integration.md
     - name: Integrering av frågor och svar
       href: talent-fo-integration.md
+    - name: Återkommande dataexport med hjälp av Azure Logic Apps
+      href: tutorial-integration-recurring-export.md
   - name: Integrering med Office
     items:
     - name: Integrering med Office, självstudier
@@ -322,9 +332,9 @@ items:
       href: talent-FO-integration.md
     - name: Azure Active Directory-användare som inte finns i personväljaren
       href: people-picker-user-not-found.md
-ms.openlocfilehash: 2e3035ec9aa71fd66cba7b394bf5007880646aca
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: 4123fb80126695bb35a02d3d2fc00b3ea38c1881
+ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374837"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "782762"

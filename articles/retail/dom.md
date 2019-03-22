@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8f1b07243ec2d42e47073d8d90f00ea563020d82
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302905"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "380026"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -62,8 +62,8 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
     - **Problemlösartyp** – Välj ett värde. Två typer av problemlösare medföljer Retail: **Produktionproblemlösare** och **Förenklad problemlösare**. **Produktionsproblemlösare** måste väljas för alla maskiner som kör DOM (dvs. alla servrar som ingår i DOMBatch-gruppen). Produktionsproblemlösare kräver en särskild licensnyckel som normalt licensieras och används i produktionsmiljö. I andra miljöer måste denna licensnyckel börja användas manuellt. Använd licensnyckeln manuellt på detta sätt:
 
         1. Öppna biblioteket Gemensamma tillgångar i Microsoft Dynamics Lifecycle Services, välj **Modell** som tillgångstyp och ladda ned filen **DOM-licens**.
-        2. Starta Microsoft Internet Information Services-hanteraren (IIS), högerklicka på **AOSServices webbplats** och välj **Utforska**. Utforskaren öppnas i **\<roten för AOS-tjänsten\>\\webroot**. Anteckna sökvägen till \<roten för AOS-tjänsten\>, eftersom den anges i nästa steg.
-        3. Kopiera konfigurationsfilen i katalogen **\<roten för AOS-tjänsten\>\\PackagesLocalDirectory\\DOM\\bin**.
+        2. Starta Microsoft Internet Information Services-hanteraren (IIS), högerklicka på **AOSServices webbplats** och välj **Utforska**. Utforskaren öppnas i **\<AOS Service root\>\\webroot**. Anteckna sökvägen till \<AOS Service root\>, eftersom den anges i nästa steg.
+        3. Kopiera konfigurationsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
         4. Gå till Retail Headquarters-klienten och öppna sidan **DOM-parametrar**. Välj **Produktionproblemlösare** i fältet **Problemlösartyp** på fliken **Problemlösare** och bekräfta att inga felmeddelanden visas.
 
         > [!NOTE]

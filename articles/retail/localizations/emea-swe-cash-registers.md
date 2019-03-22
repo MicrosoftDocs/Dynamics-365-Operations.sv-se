@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: acf52c3a878af75618f77986af9470f2c8b7c5a6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6e5907cbf7540ea4cdfe57a22c8b899c1b8bec79
+ms.sourcegitcommit: 0e01d3907b70261aee2df3e3ce0dde2f1343a43a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371817"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "769962"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
@@ -34,7 +34,7 @@ Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sv
 - Sverige-specifika funktioner, t.ex. ytterligare räknare i dagliga kassarapporter
 - Ett exempel för att integrera kassa i Dynamics 365 for Retail med Sverige-specifika kvittoskrivarenheter som kallas kontrollenheter.
 
-## <a name="overview-of-cash-register-functionality-for-sweden"></a>Översikt över kassaapparatfunktioner för Sverige 
+## <a name="overview-of-cash-register-functionality-for-sweden"></a>Översikt över kassaapparatfunktioner för Sverige
 
 ### <a name="common-pos-features"></a>Vanliga kassafunktioner
 
@@ -45,7 +45,7 @@ Dessutom har följande kassafunktioner som implementerades för Sverige gjorts t
 - **Förbjuda försäljning och returer från att slås samman i ett butikskvitto.** När du anger parametern **förbjuda blandning av försäljning och returer i ett kvitto** i kassafunktionsprofilen till **Ja**, kommer Cloud POS och Modern POS inte låta användarna skapa en transaktion som innehåller både positiva och negativa rader.
 - **Skriva ut textfälten på kvittot i en stor teckenstorlek.** Du kan använda parametern **Teckenstorlekstorlek** i kvittoformatdesignern för att ange att stort teckenstorlek ska användas för ett fält i ett kvittoformat. (Stor teckenstorlek är ungefär dubbelt så stor som normal storlek.) Du kan exempelvis använda denna parameter för att skriva ut indikatorn ”kopia” på ett kvitto med stora bokstäver.
 - **Registrera utskrift av kvittokopior i händelseloggen kassagranskning.** Du kan använda parametern **granska** i kassafunktionsprofilen för utskrift av kvittokopior och andra kassagranskningshändelser som ska registreras. Granskningshändelserna registreras i kanaldatabasen och i butiksadministrationen. Du kan visa granskningshändelser på sidan **granskningshändelser**.
-- **Förhindra att en kopia av ett kvitto skrivs ut mer än en gång.** När parametern **granska** i kassafunktionsprofilen är aktiverad kan kassabehörigheten **Tillåt utskrift av kassakopior** kontrollera om kvittokopiorna kan skrivas ut. Det finns också ett alternativ för att förhindra att en kopia av ett kvitto skrivs ut mer än en gång. 
+- **Förhindra att en kopia av ett kvitto skrivs ut mer än en gång.** När parametern **granska** i kassafunktionsprofilen är aktiverad kan kassabehörigheten **Tillåt utskrift av kassakopior** kontrollera om kvittokopiorna kan skrivas ut. Det finns också ett alternativ för att förhindra att en kopia av ett kvitto skrivs ut mer än en gång.
 
 ### <a name="sweden-specific-pos-features"></a>Sverige-specifika kassafunktioner
 
@@ -77,7 +77,7 @@ Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvi
 > [!NOTE]
 > För närvarande stöder inte styrenhetens integrationsprov kundorder. Men ett prov som stöder kundorder kommer att bli tillgängligt senare.
 
-Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md).
+Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](./retail-sdk-control-unit-sample.md).
 
 ## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
@@ -99,15 +99,15 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 1. Ange följande parametrar för skatt (VAT) enligt svenska krav:
 
-   - Momskoder
-   - Momsgrupper
-   - Artikelmomsgrupper
-   - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
+    - Momskoder
+    - Momsgrupper
+    - Artikelmomsgrupper
+    - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
 
-     Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
+    Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
 
 2. På sidan **Alla butiker** uppdaterar du butiksinformation. Du måste speciellt ställa in följande parametrar:
-    
+
     - I fältet **Momsgrupp** anger du en momsgrupp som ska användas för försäljning till butikskund.
     - Markera kryssrutan **Moms ingår i priserna**.
     - Ange fältet **Butiksnamn** till att inkludera företagets namn. Den här ändringen hjälper till att garantera att företagsnamnet visas på ett försäljningskvittot. Alternativt kan du kan lägga till företagsnamnet på layouten av försäljningskvittot i fritt format.
@@ -129,15 +129,14 @@ Du måste ange följande allmänna inställningar för Sverige.
 
     - Ändra värdet i fältet **Utskriftssätt** till **Skriv alltid ut** för kvittoformatet.
     - Gör följande ändringar i Layoutdesigner för kvitto:
-    
+
         - Lägg till minst följande fält till **Rubrik**-delen på kvittolayouten:
-        
+
             - Fälten **Butiksnamn** och **momsidentifieringsnummer** så att företagsnamnet och identitetnumret är utskrivna kvitton. Alternativt kan du kan lägga till företagsnamn och identitetsnummer på layouten i fritt format.
             - Fälten **Butiksadress**, **datum**, **Tid, 24 h**, **kvittonummer**, och **registreringsnummer**.
             - Fältet **Skriv ut meddelande på nytt** så att indikatorn ”kopia” skrivs ut på kvittokopior. Ange fältet **Teckenstorlek** för fältet **Skriv ut meddelande på nytt** till **Stor**.
-    
-        - Lägger till minst i följande fält på **rader**-delen av kvittolayouten: **artikelnamn**, **kvantitet**, och **totalpris inkl. skatt**.
 
+        - Lägger till minst i följande fält på **rader**-delen av kvittolayouten: **artikelnamn**, **kvantitet**, och **totalpris inkl. skatt**.
         - Lägg till minst följande fält till **Sidfot**-delen på kvittolayouten:
 
             - Momsfält så att momsbeloppen för varje momssats skrivs ut. Lägg till exempel till fälten **skatte-Id**, **momsprocent**, och **Momsbelopp** till en rad i layouten.
@@ -147,7 +146,7 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 ### <a name="control-unitspecific-settings"></a>Styrenhet - specifika inställningar
 
-Du måste du ange följande inställningar för att aktivera [integrationsprovet](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md) så att Retail POS är integrerat med kontrollenheter för Sverige.
+Du måste du ange följande inställningar för att aktivera [integrationsprovet](./retail-sdk-control-unit-sample.md) så att Retail POS är integrerat med kontrollenheter för Sverige.
 
 1. Skapa räkenskapsregisterkonfigurationer och tilldela dem till maskinvaruprofiler:
 
@@ -162,7 +161,7 @@ Du måste du ange följande inställningar för att aktivera [integrationsprovet
             </TaxMapping>
         </UnitConfiguration>
         ```
-        
+
         Du kan också exportera en provkonfiguration genom att klicka på **Exportera provkonfiguration** i åtgärdsfönstret.
 
     3. På sidan **maskinvaruprofiler** markerar du maskinvaruprofilen på den maskinvarustation som kassan är sammankopplad med och kontrollenheten som den är ansluten till. På snabbfliken **räkenskapsregister** anger du följande fält:
@@ -179,12 +178,12 @@ Du måste du ange följande inställningar för att aktivera [integrationsprovet
 
             - **Namn:** **FiscalRegisterControlCode**
             - **Beskrivning av text-ID:** text-ID som du angav för kodfältet kontrollen (**900001** i föregående exempel)
-            
+
         - Tillverkningsnummer för kontrollenheten:
 
             - **Namn:** **FiscalRegisterId**
             - **Beskrivning av text-ID:** text-ID som du angav för fältet kontrollenhets-ID (**900002** i föregående exempel)
-            
+
     3. För försäljningskvittoformat, kvittorformatdesignern i avsnittet **sidfot** på kvittolayouten, lägger du till fälten för de angivna rubrikerna (**kontrollkod** och **kontrollenhets-ID** i föregående exempel).
 
 3. Uppdatera kassabehörighetsgrupper och enskilda behörighetsinställningar för arbetare i butiken. Om du vill tillåta att arbetare som tilldelats behörighetsgruppen hoppar över räkenskapsregister markerar du kryssrutan **Tillåt hoppa över räkenskapsregister**.

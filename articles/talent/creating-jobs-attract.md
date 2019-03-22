@@ -3,7 +3,7 @@ title: Skapa, godkänn och bokföra jobb i Attract
 description: Det här avsnittet beskriver delarna av ett jobb i Attract. Här förklaras också hur du skapar ett jobb.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
+ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306287"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "772821"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Skapa, godkänn och bokföra jobb i Attract
 
@@ -76,8 +76,23 @@ Mer information om aktiviteter som kan läggas till i anställningsprocessen fin
 
 När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Dynamics 365 for Talent) eller LinkedIn. 
 
+Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden.
+
+Mer information om jobbpubliceringar finns i [Funktionen för karriärwebbplats i Attract](career-site.md).
+
 > [!NOTE]
-> Det finns tre viktiga saker att komma ihåg om processen för jobbpubliceringar i LinkedIn.
+> Funktionen jobbpublicering är bara tillgänglig för tillägget omfattande anställning. för Attract.
+
+### <a name="posting-jobs-to-linkedin"></a>Publicera jobb på LinkedIn 
+
+Innan du publicerar ett jobb från Attract till LinkedIn, måste administratören lägga till LinkedIn företags-ID och LinkedIn företagsnamn i **administrationsinställningar**. LinkedIn företags-ID krävs för att jobb som publiceras från Attract mappas till rätt företagssida.
+
+Ditt LinkedIn företags-ID är en sträng med nummer som unikt identifierar ditt företag inom LinkedIn. Mer information om hur du hittar LinkedIn företags-ID finns på [LinkedIn-webbplatsen](https://aka.ms/findID).
+
+För att uppdatera LinkedIn-företaget markerar du  **administratörscenter** på menyn **inställningar** (växel-symbol) och väljer sedan fliken **LinkedIn-integration** . Under avsnittet **Anslut till LinkedIn** anger du LinkedIn företagsnamn och företag-ID och sparar inställningarna.
+
+> [!NOTE]
+> Det finns fyra viktiga saker att komma ihåg om processen för jobbpubliceringar i LinkedIn.
 > 1. Jobb som har publicerats på LinkedIn publiceras som ”begränsad listor”-jobb. Begränsade listor-jobb kan inte erbjudas på LinkedIn-webbplatsen. Om du vill erbjuda begränsade listor-jobb som har publicerats i LinkedIn från Attract ska du arbeta med LinkedIn att tillåta ”Jobbförpackning”. Se länkarna nedan och kontakta LinkedIn support för mer information.
 >
 >    [Begränsade listor jämfört med Premium-jobbplatser för jobbförpackning](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -90,14 +105,10 @@ När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administ
 >
 >    Kontakta LinkedIn support om du får problem efter detta steg. 
 > 
+> 1. Jobb som har publicerats på LinkedIn visas på den publicerade LinkedIn-webbplatsen. Det finns ingen testmiljö för att publicera jobb till LinkedIn. 
+>
 > 1. Det kan ta upp till 24 timmar för jobb som publicerats på LinkedIn att visas för alla kandidater i LinkedIn, på grund av det aktuella batchjobbet för LinkedIn publiceringsprocess.
 
-Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden.
-
-Mer information om jobbpubliceringar finns i [Funktionen för karriärwebbplats i Attract](./career-site.md).
-
-> [!NOTE]
-> Funktionen jobbpublicering är bara tillgänglig för tillägget omfattande anställning. för Attract.
 
 ## <a name="activate"></a>Aktivera
 

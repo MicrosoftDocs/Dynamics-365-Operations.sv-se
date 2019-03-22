@@ -3,7 +3,7 @@ title: Importera remburs
 description: I den här proceduren förklaras processen för att importera en remburs.
 author: kweekley
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3d5539fbd17c880d8bbadd47444c9cc53fce039c
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313576"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771241"
 ---
 # <a name="import-letter-of-credit"></a>Importera remburs
 
@@ -111,8 +111,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 1. Gå till Kassa- och bankhantering > Remburser > Importremburs och importinkasso.
 2. Hitta och markera önskad post i listan.
 3. Klicka på länken på den valda raden i listan.
-    * Kontrollera statusen för Importremburs.    
-    *   
+    * Kontrollera statusen för Importremburs.     
 4. Stäng sidan.
 5. Stäng sidan.
 

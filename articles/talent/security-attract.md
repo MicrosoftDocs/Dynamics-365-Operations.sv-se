@@ -3,7 +3,7 @@ title: Säkerhets- och rollhantering i Attract
 description: Det här avsnittet innehåller information om rollsäkerhet i Microsoft Dynamics 365 for Talent - Attract.
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw1
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5674df1657b46aa31e2011562f4ebbff2c16fee9
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.openlocfilehash: bb313c489a3bdaa71f8db870cab729d86088f4db
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374790"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789707"
 ---
 # <a name="security-and-role-management-in-attract"></a>Säkerhets- och rollhantering i Attract
 
@@ -100,14 +100,16 @@ Följande behörigheter gäller jobbspecifika data för sökande och de åtgärd
 | Data eller åtgärd          | Rekryterare | Anställande chef | Intervjuare |
 |-------------------------|-----------|----------------|-------------|
 | Ansökningsdokument   | Skapa, läsa, uppdatera och ta bort jobb som användaren är i anställningsteamet för | Skapa, läsa, uppdatera och ta bort jobb som användaren är i anställningsteamet för | Skrivskydd |
-| Ansökningsanteckningar       | Skapa, läsa, uppdatera och ta bort jobb som användaren är i anställningsteamet för | Skapa, läsa, uppdatera och ta bort jobb som användaren är i anställningsteamet för | Skapa |
+| Ansökningsanteckningar       | Skapa, läsa, uppdatera och ta bort jobb som användaren är i anställningsteamet för | Skapa, läsa, uppdatera och ta bort jobb som användaren är i anställningsteamet för | Skrivskydd|
 | Ansökningsaktivitet    | Visa om sökande är i anställningsteamet | Visa om sökande är i anställningsteamet | Skrivskydd |
 | Feedback om ansökan    | Lägga till och visa all feedback om användaren finns med i anställningsteamet | Lägga till och visa all feedback om användaren finns med i anställningsteamet | Kan lägga till feedback\*\* |
 | Avvisa ansökning      | Kan avvisa om användaren är i anställningsteamet | Tillåts inte | Tillåts inte |
 | Flytta fram ett stadium           | Kan avvisa om användaren är i anställningsteamet | Kan avancera om användaren är i anställningsteamet | Tillåts inte |
 | Starta erbjudandehantering | Kan starta erbjudandehantering | Det finns ett konfigurationsalternativ för erbjudandeaktivitet. | Tillåts inte |
 
-\*\* Ett konfigurationsalternativ i [inställning av feedback-aktivitet](activities-attract.md#feedback-activity) kontrollerar om intervjuare ser varandras feedback.
+
+\*\* Ett konfigurationsalternativ i [inställning av feedback-aktivitet](./activities-attract.md) kontrollerar om intervjuare ser varandras feedback.
+
 
 ## <a name="process-templates"></a>Processmallar
 

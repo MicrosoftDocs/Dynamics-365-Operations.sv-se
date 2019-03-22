@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 64362ae9e4ebb63ca6da2cd2f41376d1d9047694
+ms.sourcegitcommit: c6af2de37309b574dcb69c9caad436b55136600f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306189"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768495"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systemkrav och uppdateringspolicy för Talent
 
@@ -36,8 +36,8 @@ Webbprogrammet Microsoft Dynamics 365 for Talent går att köra i följande webb
 
 *   Microsoft Edge (den senaste tillgängliga versionen) på Windows 10
 *   Internet Explorer 11 på Windows 10, Windows 8.1 eller Windows 7
-*   Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10 surfplatta
-*   Apple Safari (senaste tillgängliga versionen) på Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) eller 10.12 (Sierra), eller Apple iPad
+*   Google Chrome (den senaste tillgängliga versionen)
+*   Apple Safari (den senaste tillgängliga versionen)
 
 Gå till programtillverkarens startsida för att hitta den senaste versionen för varje webbläsare. 
 

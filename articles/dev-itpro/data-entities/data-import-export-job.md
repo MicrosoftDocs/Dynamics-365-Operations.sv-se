@@ -3,7 +3,7 @@ title: Jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360220"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834670"
 ---
 # <a name="data-import-and-export-jobs"></a>Jobb för import och export av data
 
@@ -128,6 +128,9 @@ Ett jobb kan skyddas med roller, användare och juridisk person samtidigt.
 
 ## <a name="run-the-import-or-export-job"></a>Kör import- eller exportjobbet.
 Du kan köra ett jobb en gång genom att välja knappen **Importera** eller **Exportera** när du har definierat jobbet. Välj **Skapa återkommande datajobb** för att skapa ett återkommande jobb.
+
+[!NOTE]
+Ett import- eller exportjobb kan köras asynkront genom att välja knappen **importera** eller **exportera**. Köra asynkrona använder asynkrona ramverk i Finance and Operations som skiljer sig från batchramverket. men liksom batchramverket, kan asynkrona ramverk också genomgå begränsning och därmed körs kanske inte jobbet omedelbart. Jobb kan även köras synkront genom att markera **importera nu** eller **exportera nu**. Det här jobbet startar omedelbart och är användbart om asynkrona eller en batch inte startas på grund av begränsning. Jobb kan också köras i ett batchjobb genom att välja alternativet **kör i batch**. Batchresurser är föremål för begränsning, så batchjobbet kanske inte startar omedelbart. Asynkrona alternativet är användbart när användare interagerar direkt med användargränssnittet och inte privilegierade användare att förstå batch-tidsplanering. Att använda en batch är ett alternativ om stora volymer måste exporteras eller importeras. Batchjobb kan planeras på en viss batchgrupp som ger mer kontroll ur ett belastningsutjämningsperspektiv. Om asynkrona och batch både är under begränsning på grund av hög resursanvändning på systemet, kan den synkrona versionen av import och export användas som en omedelbar lösning. Det synkrona alternativet startar omedelbart och blockerar användargränssnittet eftersom det körs synkront. Webbläsarfönstret måste vara öppet när synkrona åtgärder pågår.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Validera att jobbet har körts som förväntat
 Jobbhistoriken blir tillgänglig för felsökning och undersökning för såväl import- som exportjobb. Historiska jobbkörningar ordnas efter tidsintervall.

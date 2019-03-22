@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c70ade5a1ca9794760e72fb94e0735848aae79
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a925d16239ec78b09403a0c0db1346e35b7eee20
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302887"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403272"
 ---
 # <a name="fixed-assets-home-page"></a>Startsidan Anläggningstillgångar
 
@@ -41,13 +41,11 @@ Det går att ställa in och ange anskaffningsinformation för anläggningstillg�
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling. 
+Gå till Viktig information om [Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om anläggningstillgångar och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Det finns många inlägg om anläggningstillgångar i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). En del av inläggen skrevs för den föregående versionen av leverantörsreskontra, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Det finns åsikter, nyheter och annan information om bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 

@@ -3,7 +3,7 @@ title: Reduceringsnycklar
 description: Den här artikeln ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e62431a1fdbeb81dda68297f034ee00adece079
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364820"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770926"
 ---
 # <a name="reduction-keys"></a>Reduceringsnycklar
 
@@ -98,6 +98,7 @@ I de flesta fall ställs systemen in så att transaktioner minskar efterfrågepr
 
    I denna prognos finns det inte en tydlig period mellan prognosdata: mellan de första och andra data finns det endast en tidsperiod på 4 dagar, och mellan de andra och tredje data finns det endast en tidsperiod på 1 dag. Dessa olika tidsperioder är de dynamiska perioderna.
 2. Skapa försäljningsorderrader enligt följande.
+
    | Datum                             | Försäljningsorderns kvantitet |
    |----------------------------------|----------------------|
    | 15 december föregående år | 500                  |

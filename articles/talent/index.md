@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Välkommen till Dynamics 365 for Talent
-description: Talent förenklar många vanliga arkiveringsuppgifter och automatiserar ett antal processer relaterade till personalen i organisationen. De här processerna är bland annat personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
+description: 'Talent förenklar många vanliga arkiveringsuppgifter och automatiserar ett antal processer relaterade till personalen i organisationen. De här processerna är bland annat personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.'
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-talent
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: 'Core, Operations, Talent'
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302881"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Talent July 2017 update'
 ---
+
 # <a name="welcome-to-dynamics-365-for-talent"></a>Välkommen till Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
@@ -79,7 +75,7 @@ Du kan skapa planer som effektivt och rättvist hanterar såväl kompensation so
 
 ## <a name="develop-and-train-employees"></a>Utveckla och utbilda medarbetare
 
-För att hjälpa medarbetare att nå karriärmålen och samtidigt uppfylla viktiga affärsbehov går det att sätta upp mål, skapa prestationsgranskningar och spåra kommentarer. För att hjälpa medarbetare att skaffa nödvändiga kompetenser, går det även att ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en lärare till en kurs eller registrerar någon på en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
+För att hjälpa personalen att uppnå karriärsmålen samtidigt som vi tillhandahåller viktiga affärsbehov kan du ställa in mål, skapa prestationsgranskning och spåra feedback. För att hjälpa anställda att skaffa nödvändiga kompetenser, kan du ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en instruktör till en kurs eller anmäler någon till en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
 
 -   [Prestandahantering](performance-management-overview.md)
 -   [Justera personalens kompetenser och affärsbehov](skills.md)

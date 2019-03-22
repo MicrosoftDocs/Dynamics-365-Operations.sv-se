@@ -1,9 +1,9 @@
 ---
 title: Visa ekonomiska rapporter
-description: Den här artikeln innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
+description: Den här ämnet innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312955"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791451"
 ---
 # <a name="view-financial-reports"></a>Visa ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
+Den här ämnet innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 
 <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 ----------------------------
@@ -67,18 +67,15 @@ En ekonomisk rapport kan visas i vilken valuta som helst när som helst. Visa en
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Visa en summerad vy av den ekonomiska rapporten
 En ekonomisk rapport kan innehålla detaljrader och sammanfattningsrader. Detaljrader är rader som innehåller huvudkonton eller dimensioner. Sammanfattningsrader innehåller beskrivningar, summor och beräkningar. Visa bara sammanfattningsraderna genom att klicka på **Visa** och sedan på **Endast sammanfattningsrader**. Rapporten komprimeras och visar bara sammanfattningsraderna. Om du vill visa detaljraderna tillsammans med sammanfattningsraderna klickar du på **Visa** och sedan på **Endast sammanfattningsrader** igen.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Öppna en ekonomisk rapport från en tidigare månad
-Du kan visa rapporter för den aktuella månaden eller föregående månader utan att generera rapporten igen. Klicka för att öppna rapporten för föregående månad, klicka på **Visa** och klicka sedan på **Tidigare rapporter**. De senaste månaderna som rapporten har genererats för visas. Expandera månaden som du vill visa i rapporten, välj datumet och klicka sedan på **OK**. Rapporten för föregående månad visas. Gå tillbaka till den aktuella månadens rapport genom att klicka på **Avbryt**.
-
 ## <a name="print-a-financial-report"></a>Skriva ut en ekonomisk rapport
-Skriv ut en ekonomisk rapport genom att klicka på **Skriv ut** i åtgärdsfönstret och sedan ställa in utskriftsalternativen genom att följa ett eller flera av stegen nedan:
+Om du skriver ut en ekonomisk rapport skapas en PDF-fil som sedan kan skrivas ut manuellt. För att skapa en utskriftsbar ekonomisk rapport, klicka på **Skriv ut** i åtgärdsfönstret och sedan ställa in utskriftsalternativen genom att följa ett eller flera av stegen nedan:
 
 -   Ta med olika detaljnivåer i den utskrivna rapporten genom att ställa in skjutreglaget på **Ja** eller **Nej**. Om en rapport använder en rapportträd, kan du välja att inkludera alla rapporteringsenheter eller bara den aktuella rapporteringsenheten.
 -   Välj en sidstorlek genom att välja en storlek i listan.
 -   Välj layout genom att välja layout i listan. Om du vill att rapportinnehållet ska passa bredd du valde, ställer du in skjutreglaget på **Ja**.
 -   Ange sidmarginalerna genom att skriva storleken på den övre, nedre, vänstra och högra marginalen i tum.
 
-När du är klar med utskriftsalternativen klickar du på **Skriv ut**. Om du inte vill skriva ut rapporten klickar du på **Avbryt**. En förhandsgranskning av den utskrivna rapporten visas. Du kan välja vilken skrivare som utskriften ska skickas till och du kan också justera utskriftsalternativen.
+När du har angett utskriftsalternativen klickar du på **Skriv ut** för att fortsätta och tillfrågas om du vill hämta filen eller spara filen till OneDrive eller SharePoint. Om du inte vill fortsätta klickar du på **Avbryt**. När du fortsätter kommer rapporten börja återgivningen på servern och du uppmanas att hämta rapporten i PDF-format. Du kan nu visa rapporten i ditt PDF-visningsprogram och härifrån välja att skicka rapporten till skrivaren och göra eventuella ytterligare justeringar för utskriftsalternativen.
 
 ## <a name="export-a-financial-report"></a>Exportera en ekonomisk rapport
 Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfönstret. Rapporten exporteras till Microsoft Excel och webbläsaren uppmanar dig att öppna eller spara den exporterade filen. Exportinställningarna som definieras i rapportdesignen används i den exporterade rapporten.    
@@ -86,7 +83,7 @@ Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfö
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Ekonomisk rapportering för Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Ekonomisk rapportering](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

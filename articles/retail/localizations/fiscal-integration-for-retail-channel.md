@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377145"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773287"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Översikt över räkenskapsintegration för butikskanaler
 
@@ -30,7 +30,7 @@ ms.locfileid: "377145"
 
 ## <a name="introduction"></a>Introduktion
 
-Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Microsoft Dynamics 365 for Retail. Räkenskapsintegration omfattar integration med olika räkenskapsenheter och tjänster som underlättar för räkenskapsregistrering av butiksförsäljning i enlighet med lokala skattelagar som syftar till förhindrande av skattebedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegration är: 
+Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Microsoft Dynamics 365 for Retail. Räkenskapsintegration omfattar integration med olika räkenskapsenheter och tjänster som underlättar för räkenskapsregistrering av butiksförsäljning i enlighet med lokala skattelagar som syftar till förhindrande av skattebedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegration är:
 
 - Registrera en räkenskapsårets enhet som är ansluten till Retail inköpstillfället (PO), till exempel en kvittoskrivare detaljhandelsförsäljning och skriva ut en kvittoskrivare för kunden.
 - Skicka säkert information som är relaterad till försäljning och returer som slutförs i Retail POS till en extern webbtjänst som drivs av skattemyndigheten.
@@ -87,6 +87,7 @@ Vid räkenskapsregistrering av transaktioner eller händelser lyckas, skapas en 
 
 Räkenskapstransaktioner överförs till Butik administration av *P-jobb*tillsammans med butikstransaktioner. På snabbfliken **räkenskapstransaktioner** på sidan **butikstransaktioner** kan du visa de räkenskapstransaktioner som är kopplade till butikstransaktioner.
 
+
 En räkenskapstransaktion innehåller följande information:
 
 - Information om processen för räkenskapsregistrering (process, kopplingsgrupp, koppling och så vidare). Serienumret för räkenskapsenheten sparas också i fältet **registreringsnummer** om informationen ingår i räkenskapssvaret.
@@ -115,4 +116,5 @@ Följande funktioner för räkenskapsintegration finns också i Retail SDK men f
 
 - [Digital signatur i Frankrike](emea-fra-cash-registers.md)
 - [Digital signatur för Norge](emea-nor-cash-registers.md)
-- [Exempel på integration av kontrollenhet för Sverige](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Exempel på integration av kontrollenhet för Sverige](./retail-sdk-control-unit-sample.md)
+

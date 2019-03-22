@@ -1,9 +1,9 @@
 ---
-title: Ändra raddefinitionceller
-description: Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen.
+title: Ändra raddefinitionsceller
+description: Det här ämnet innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323650"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379674"
 ---
-# <a name="modify-row-definition-cells"></a>Ändra raddefinitionceller
+# <a name="modify-row-definition-cells"></a>Ändra raddefinitionsceller
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen.
+Det här ämnet innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Ange en radkod i en raddefinition
 
@@ -252,7 +252,7 @@ I följande exempel sorteras värdena i rapportkolumnen D i stigande ordning på
 | 490      | Räntainkomst                                     |             |                             | C              |                    | 7000                         |
 | 520      |                                                     | DES         |                             |                |                    |                              |
 | 550      | Sorterat efter YTD absolut avvikelse i fallande ordning | DES         |                             |                |                    |                              |
-| 580      |                                                     | ASORTDESC   | %610 %940                     |                | G                  |                              |
+| 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
 | 610      | Försäljning                                               |             |                             | C              |                    | 4100                         |
 | 640      | Försäljningsreturer                                       |             |                             |                |                    | 4 110                         |
 |          | ...                                                 |             |                             |                |                    |                              |
@@ -386,7 +386,7 @@ Du kan begränsa en rad i en befintlig bokkod. Kolumndefinitionen måste innefat
 Vissa redovisningssystem stöder kontoattribut och transaktionattribut i ekonomiska data. Dessa attribut fungerar som virtuella kontosegment och kan ha mer information om kontot eller transaktionen. Denna ytterligare information kan vara konto-ID, batch-ID, postnummer eller andra attribut. Om dina attribut och redovisningssystem stöder kan du använda kontoattribut eller transaktionattribut som radmodifikatorer i raddefinitionen. Mer information om hur du åsidosätter radnformation, se avsnittet "Åsidosätt en kolumndefinition" tidigare i den här artikeln.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Ange en länk till den ekonomiska dimensioncellen
-Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonomiska data som ska inkluderas i varje rad i en rapport. Den här cellen innehåller dimensionsvärden, men du kan ange celler i ett Microsoft Excel-kalkylblad i stället för segmentvärden eller dimensionsvärden, eller som komplement till dessa. Dubbelklicka på cellen **Dimensioner** för att öppna dialogrutan **Länk till ekonomiska dimensioner** .
+Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonomiska data som ska inkluderas i varje rad i en rapport. Den här cellen innehåller dimensionsvärden. Dubbelklicka på cellen **Dimensioner** för att öppna dialogrutan **Länk till ekonomiska dimensioner** .
 
 > [!NOTE]
 > Report Designer kan inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller något av följande reserverade tecken: &, \*, \[, \], {, or }. Om du vill ange information för en rad som redan finns i raddefinitionen, lägger du till informationen i cellen **Länk till ekonomiska dimensioner**. För att skapa nya rader som länkar till ekonomiska data, använd dialogrutan **Infoga rader från** för att skapa nya rader i rapportdefinitionen som länkar till de ekonomiska data. Kolumnrubriken ändras, beroende på hur kolumnen konfigureras enligt vad som visas i följande tabell.
@@ -394,9 +394,7 @@ Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonom
 | Länktyp som är vald       | Beskrivningen av länken ändras till den här |
 |----------------------------------|----------------------------------------------------|
 | Ekonomiska dimensioner             | Länk till ekonomiska dimensioner                       |
-| Externt kalkylblad               | Länk till kalkylblad                                  |
-| Ekonomiska dimensioner + kalkylblad | Länk till ekonomiska dimensioner + kalkylblad           |
-| Management Reporter-rapport       | Management Reporter-rapport                         |
+| Rapportkalkylblad                 | Ekonomisk rapportering                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Ange en dimension eller ett intervall
 

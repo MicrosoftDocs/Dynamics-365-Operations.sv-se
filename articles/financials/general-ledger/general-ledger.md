@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0b6683107f4b2dbe36af78749612ce950ea19582
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363371"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403247"
 ---
 # <a name="general-ledger"></a>Huvudbok 
 
@@ -53,21 +53,19 @@ Dessutom måste reglerna uppdateras regelbundet när skattemyndigheter ändrar s
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-### <a name="whats-new"></a>Nyheter
+#### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till [Viktig information](https://docs.microsoft.com/en-us/business-applications-release-notes/) för att se vilka nya funktioner som har släppts. 
+Gå till [Microsoft Dynamics 365 viktig information](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner som har planerats. 
+
+#### <a name="blogs"></a>Bloggar
+
+Du hittar synpunkter, nyheter och annan information på [Microsoft Dynamics 365 blogg](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – ekonomiblogg](https://community.dynamics.com/365/financeandoperations/b/financials).
+
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 
 ### <a name="videos"></a>Videoklipp
 
 Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-### <a name="blogs"></a>Bloggar
-
-Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Det finns många inlägg om Redovisning i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). Även om vissa av dessa poster skrivits för den föregående redovisningsversionen gäller fortfarande samma koncept, och procedurerna är också snarlika i den aktuella versionen.
-
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 
 #### <a name="community-blogs"></a>Bloggar
 

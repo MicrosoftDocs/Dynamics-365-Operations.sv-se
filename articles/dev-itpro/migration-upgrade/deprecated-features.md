@@ -3,7 +3,7 @@ title: Borttagna och inaktuella funktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329262"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836358"
 ---
 # <a name="removed-or-deprecated-features"></a>Borttagna och inaktuella funktioner
 
@@ -35,11 +35,77 @@ I det här avsnittet beskrivs funktioner som har tagits bort eller är utfasad f
 
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
-> [!Note]
+> [!NOTE]
 > Från och med Dynamics 365 for Finance and Operations, juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
 
-> [!Note]
+> [!NOTE]
 > Detaljerad information om objekt i Finance and Operations finns i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 med plattformsuppdatering 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 med plattformsuppdatering 25 är tillgänglig för användarna som en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tjänstuppdateringar för standardversion och första version](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Gamla API:er och eventuell uppdelning av ändringar
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>Som härrör från interna klasser är inaktuella
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | I versioner före plattformsuppdatering 25 var det möjligt att skapa en klass eller tabell som härleds från en intern klass/tabell som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Med start i plattformsuppdatering 25 visar kompileraren ett varningsmeddelande om du försöker göra detta.|
+| **Ersatt av en annan funktion?**   | Kompilerarens varning ersätts av ett fel i en kommande plattformsuppdatering. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>Åsidosätta interna metoder är inaktuellt
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | I versioner före plattformsuppdatering 25 var det möjligt att åsidosätta en intern metod i en härledd klass som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Med start i plattformsuppdatering 25 visar kompileraren ett varningsmeddelande om du försöker göra detta.|
+| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i en kommande plattformsuppdatering. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 med plattformsuppdatering 23
+
+### <a name="print-to-screen-functionality"></a>Skriva ut till skärmfunktionen.
+Användare kan använda åtgärden **Importera** från Report Viewer-kontrollen för att hämta dokument som skapas av Finance and Operations-programmen. Denna HTML-baserade presentationen av rapporten ger användare en onumrerad förhandsgranskning av dokumentet.
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | HTML-baserade förhandsgranskningserfarenhetens onumrerade natur levererar **inte** återgivning med det fysiska dokumentet som slutligen skapats av Finance and Operations. Genom att helt använda PDF som standardformat för affärsverksamheten kan vi drastiskt förenkla användaralternativ för att interagera med programrapporter och effektivisera återgivningen av dokument. |
+| **Ersatt av en annan funktion?**   | Framöver kommer PDF-dokument att vara standardformatet för rapporter som återges av Finance and Operations.   |
+| **Produktområden som påverkas**         | Ändringen påverkar **inte** kundscenarier där rapporter distribueras elektroniskt eller skickas direkt till en skrivare.    |
+| **Distribueringsalternativ**              | Allt  |
+| **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. Funktionen för att automatiskt hämta programrapporter till webbläsaren som PDF-dokument planeras för maj 2019 plattformsuppdateringen. <br><br>**Viktigt:** befintliga kunder som behöver tillgång till funktionen för utskrift till skärm bör meddela [Support](../lifecycle-services/lcs-support.md) innan de uppgraderar till plattformsuppdatering 26. |
+
+### <a name="client-kpi-controls"></a>Klien-KPI-kontroller
+Inbäddade KPI:er (Key Performance Indicators) kan utformas i Visual Studio av en utvecklare och ytterligare anpassas av slutanvändaren.
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | De originella klientkontrollerna som används för att definiera KPI:er har lågt kundupptag och är beroende av att en utvecklare lägger till spårbara mått. |
+| **Ersatt av en annan funktion?**   | PowerBI.com-tjänsten levererar verktyg i världsklass för att definiera och hantera KPI:er baserade på data från externa källor.  I en kommande version låter vi dig bädda in lösningar som finns på PowerBI.com i programmets arbetsytor.   |
+| **Produktområden som påverkas**         | Uppdateringen förhindrar att utvecklare inför nya KPI-kontroller i Visual Studio designer.    |
+| **Distribueringsalternativ**              | Allt  |
+| **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Gamla API:er och framtida uppdelning av ändringar
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Fältgrupper innehåller ogiltiga fältreferenser
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Det är möjligt för definitioner av registermetadata att ha fältgrupper som innehåller ogiltiga fältreferenser. Det här problemet är kategoriserat som en *kompileringsvarning* i stället för ett *fel*, vilket innebär att skapande och distribution av paket som kan distribueras kan fortsätta utan att åtgärda problemet. Om distribuerad kan det orsaka körningsfel i Ekonomisk rapportering och SQL Server Reporting Services (SSRS). Åtgärda det här problemet:<br><br>1. Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.<br><br>2. Kompilera om.<br><br>3. Kontrollera att eventuella varningar eller fel åtgärdas. |
+| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i framtiden.  |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Alla. |
+| **Status**                         | Inaktuell - varningen blir ett kompileringstidsfel i framtiden. Vi riktar för närvarande in oss på plattformsuppdatering 30. |
+
+#### <a name="complete-list"></a>Fullständig lista
+Du hittar en fullständig lista över API:er som är inaktuella i [Avskrivning av metoder och metadataelement](deprecation-deletion-apis.md).
 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med plattformsuppdatering 20
 
@@ -52,7 +118,7 @@ Det synkrona överföringsläget är inaktuellt i redovisningsparametrarna.  Det
 | **Ersatt av en annan funktion?**   | Asynkron och schemalagd batch är alternativ som ska användas i stället för synkron.   |
 | **Produktområden som påverkas**         | Redovisning, Leverantörsreskontra, Kundreskontra, Inköp, Utgift    |
 | **Distribueringsalternativ**              | Allt  |
-| **Status**                         | Inaktuell - Måltidsramen för att ta bort funktioner är versionen 10.0.|
+| **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är versionen 10.0.|
 
 ### <a name="electronic-reporting-for-russia"></a>Elektronisk rapportering för Ryssland
 Funktionen för att konfigurera .txt och .xml-format för deklarationer. 
@@ -613,7 +679,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- och AxBC-integrationer
 
-I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Microsoft Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras till eller från Microsoft Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som baseras på dokument använder **Axd \<dokument\>**-klasserna.
+I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras in eller ut från Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som baseras på dokument använder **Axd \<dokument\>**-klasserna.
 
 |   |  |
 |------------|--------------------|
@@ -811,7 +877,7 @@ I Dynamics AX 2012 R3 kunde inte Retail Modern POS ansluta direkt till Channel D
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Direkt databasanslutning krävde lägre säkerhetsprotokoll och användes främst för att uppnå högsta möjliga prestanda. På grund av prestanda- och säkerhetsförbättringar som har uppstått i Dynamics 365 for Finance and Operations orsakar nu den här funktionen fler problem än den löser. |
+| **Orsak till inaktuell/borttagning** | Direkt databasanslutning krävde lägre säkerhetsprotokoll och användes främst för att uppnå högsta möjliga prestanda. På grund av prestanda- och säkerhetsförbättringar som har uppstått i Finance and Operations orsakar nu den här funktionen fler problem än den löser. |
 | **Ersatt av en annan funktion?**   | Nr. Endast standardkommunikation för Retail Server stöds nu.  |
 | **Produktområden som påverkas**         | Kanal-DB/Retail Modern POS   |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.  |
@@ -1093,7 +1159,7 @@ Funktionen för virtuella företag stöds inte längre i Dynamics AX. Funktionen
 
 |   |  | 
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | - Virtuella företag måste ställas in innan data lagras i registren. Det är mycket svårt att ställa in virtuella företag efter en befintlig implementering i efterhand.<br><br>- Eftersom det har gjorts så mycket datanormalisering i den aktuella versionen av Microsoft Dynamics AX har det blivit svårt att veta vad som ska lägga till i registersamlingarna. Till exempel är det svårt att veta vilka register som ska delas. Alla register som refereras från register som ingår i ett virtuellt företag måste också läggas till. Registernormalisering har inneburit att även enkla huvuddata som är fördelade över flera register måste vara en del av det virtuella företaget. Alla misstag som begås här kommer att leda till funktionsproblem.<br><br>- När ett register ingår i ett virtuellt företag förlorar det information om informationens ursprung, och endast det virtuella företaget registreras.   |
+| **Orsak till inaktuell/borttagning** | - Virtuella företag måste ställas in innan data lagras i registren. Det är mycket svårt att ställa in virtuella företag efter en befintlig implementering i efterhand.<br><br>- Eftersom det har gjorts så mycket datanormalisering i den aktuella versionen av AX har det blivit svårt att veta vad som ska lägga till i registersamlingarna. Till exempel är det svårt att veta vilka register som ska delas. Alla register som refereras från register som ingår i ett virtuellt företag måste också läggas till. Registernormalisering har inneburit att även enkla huvuddata som är fördelade över flera register måste vara en del av det virtuella företaget. Alla misstag som begås här kommer att leda till funktionsproblem.<br><br>- När ett register ingår i ett virtuellt företag förlorar det information om informationens ursprung, och endast det virtuella företaget registreras.   |
 | **Ersatt av en annan funktion?** | Globala register kan användas för att göra register tillgängliga från alla företag. För närvarande finns det ingen ersättning. |   
 | **Produktområden som påverkas**       | Alla moduler |   
 | **Status**                       | Borttagen från och med Dynamics AX 7.0.   |   

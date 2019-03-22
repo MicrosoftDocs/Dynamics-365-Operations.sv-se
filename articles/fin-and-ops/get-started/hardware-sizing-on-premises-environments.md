@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340739"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768424"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav för beräkning av maskinvara för lokala miljöer
 
@@ -86,7 +86,7 @@ För att förstå dina beräkningskrav måste du veta högsta transaktionsvolyme
     - Användning av flera funktioner, som t.ex. logg och varningar. Extrema databainloggning kommer att ytterligare minska per timme per kärna under 3K rader.
     - Komplex datasammansättning – en enkel kontoplanen jämfört med mer detaljerad kontoplan har konsekvenser på genomflödet (exempelvis).
     - Beskrivning av transaktionen.
-    - 2 GB till 4 GB minne, för varje kärna.
+    - 2 GB till 16 GB minne, för varje kärna.
     - Extra databaser på en databasserver som t.ex. Management reporter och SSRS-databaser.
     - Temp DB = 15 % av storleken på DB, med så många filer som fysiska processorer.
     - SAN-storlek och genomflöde baserat på total samtidig transaktionsvolym/användning.

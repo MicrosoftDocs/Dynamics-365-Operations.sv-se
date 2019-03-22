@@ -3,7 +3,7 @@ title: Startsida för Leverantörsreskontra
 description: Det här ämnet ger en översikt över leverantörsreskontra.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302895"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403295"
 ---
 # <a name="accounts-payable-home-page"></a>Startsida för Leverantörsreskontra
 
@@ -123,15 +123,17 @@ I följande avsnitt finns information om kvittningar. Kvittning är en process d
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling. 
+Gå till Viktig information om [Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner som är planerade. 
 
 #### <a name="blogs"></a>Bloggar
 
-Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Det finns många inlägg om leverantörsreskontra i [Microsoft Dynamics AX produktteamblogg](https://blogs.msdn.microsoft.com/dax/). En del av inläggen skrevs för den föregående versionen av leverantörsreskontra, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
+Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)och [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
+
+#### <a name="community-blogs"></a>Bloggar
+
+[Hantera leverantörsskulder iDynamics 365 for Finance and Operations](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
