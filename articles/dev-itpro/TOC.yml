@@ -278,7 +278,7 @@ items:
         href: extensibility/class-extensions.md
       - name: Klasstillägg via metodradbyte och beslutskedja
         href: extensibility/method-wrapping-coc.md
-      - name: Riktlinjer för namngivning av modelltillägg
+      - name: Riktlinjer för namngivning av tillägg
         href: extensibility/naming-guidelines-extensions.md
       - name: Släppa på modellbegränsningar för att omstrukturera överlägg till tillägg
         href: extensibility/refactoring-over-layering.md
@@ -374,6 +374,28 @@ items:
       href: perf-test/continuous-build-test-automation.md
     - name: SysTest-filtrering med hjälp av klass- och metodattribut
       href: perf-test/systest-filtering.md
+    - name: Bibliotek för acceptanstest
+      href: perf-test/acceptance-test-library.md
+    - name: Navigeringsbegrepp
+      href: perf-test/concepts-navigation.md
+    - name: Metoder för testdata
+      href: perf-test/test-data-methods.md
+    - name: Enheter i biblioteket för acceptanstester
+      href: perf-test/concepts-entities.md
+    - name: Kommandon i biblioteket för acceptanstester
+      href: perf-test/concepts-commands.md
+    - name: Skapare i biblioteket för acceptanstester
+      href: perf-test/concepts-creators.md
+    - name: Frågor i biblioteket för acceptanstester
+      href: perf-test/concepts-queries.md
+    - name: Specifikationsklasser
+      href: perf-test/concepts-specifications.md
+    - name: Kodgenerering i biblioteket för acceptanstester
+      href: perf-test/code-generation-wizard.md
+    - name: Regelverk för biblioteket för acceptanstester
+      href: perf-test/atl-best-practices.md
+    - name: Vanliga frågor
+      href: perf-test/atl-faq.md
   - name: Gäller från
     href: dev-tools/date-effectivity.md
   - name: ISV-licensiering
@@ -451,7 +473,9 @@ items:
       href: user-interface/control-checklist.md
   - name: Meddelanden
     items:
-    - name: Skjutreglage och MessageBox – dialogrutor
+    - name: Bildtexter för funktioner
+      href: user-interface/feature-callouts.md
+    - name: Dialogrutor för skjutreglage och meddelanderutor
       href: user-interface/slider-messagebox.md
     - name: API för meddelandecenter, meddelandefält och meddelandeinformation
       href: user-interface/messaging-api-center-bar-details.md
@@ -918,9 +942,9 @@ items:
       href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: Tillämpa uppdateringar i molnmiljöer
       href: deployment/apply-deployable-package-system.md
-    - name: Installera uppdateringar och tillägg för molnstyrda kanalkomponenter
+    - name: Installera uppdateringar och tillägg för molnstyrda kanalkomponenter i Retail
       href: deployment/Update-retail-channel.md
-    - name: Initiera molnstyrda kanalkomponenter för Retail
+    - name: Initiera Retail Cloud Scale Unit
       href: deployment/Initialize-Retail-Channels.md
   - name: Lokal distribution
     href: deployment/on-premises-deployment-landing-page.md
@@ -1044,7 +1068,7 @@ items:
     items:
     - name: Process för att flytta till den senaste uppdateringen
       href: migration-upgrade/upgrade-latest-update.md
-    - name: Uppdatera miljöer från version 8.0 till 8.1
+    - name: Uppdatera miljöer från version 8.0 till 8.1.X/10.X
       href: migration-upgrade/appupdate-80-81.md
     - name: Livscykelpolicy och molnbaserade versioner av programmet
       href: migration-upgrade/versions-update-policy.md
@@ -1129,14 +1153,20 @@ items:
       href: sysadmin/copy-batch-job.md
     - name: Aktiva batchperioder
       href: sysadmin/activeperiod.md
-    - name: Säkerhetsrollen Batchhanterare
+    - name: Säkerhetsroll för batchhanterare
       href: sysadmin/runby.md
     - name: Batchjobbet ska hantera defragmentering av SQL-index
       href: sysadmin/batch-job-SQL-defragmentation.md
+    - name: Konfigurera batchnotifieringar
+      href: sysadmin/alerts.md
+    - name: Utökade batchformulär
+      href: sysadmin/enhanced-forms.md
+    - name: Rensa batchhistorik
+      href: sysadmin/batch-history-cleanup.md
   - name: Rådgivning om optimering
     href: sysadmin/optimization-advisor-overview.md
     items:
-    - name: Skapa regler för optimerings-advisor
+    - name: Skapa regler för optimeringsrådgivning
       href: sysadmin/create-rules-optimization-advisor.md
   - name: Rapportera ett produktionsavbrott
     href: lifecycle-services/report-production-outage.md
@@ -1229,8 +1259,10 @@ items:
     items:
     - name: Uppdatera för utbildningssyften
       href: database/dbmovement-scenario-general-refresh.md
-    - name: Felsökning och diagnostik
+    - name: Felsöka en kopia av produktionsdatabasen
       href: database/dbmovement-scenario-debugdiag.md
+    - name: Exportera en kopia av standarddatabasen för användaracceptanstest (UAT)
+      href: database/dbmovement-scenario-exportuat.md
     - name: Golden-konfigurationskampanj
       href: database/dbmovement-scenario-goldenconfig.md
     - name: Destruktivt test
@@ -1251,9 +1283,9 @@ items:
     href: lifecycle-services/cloud-operations-servicing.md
   - name: Hantera upplevelser av support för Finance and Operations
     href: lifecycle-services/cloud-powered-support-lcs.md
-ms.openlocfilehash: b2462f8391ba3253b61c72bea481266d04ac8721
-ms.sourcegitcommit: 32e98213118968307c48b656b663c3df897faa79
+ms.openlocfilehash: 93081e4ccc64b68ae8f5cb3aa0f0c499bc1a426b
+ms.sourcegitcommit: 4d77340f5b3480f60a3a28c854fafc83e959f192
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "773812"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "976022"
