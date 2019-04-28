@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773287"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950414"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Översikt över räkenskapsintegration för butikskanaler
 
@@ -81,12 +81,37 @@ Ramverket för räkenskapsintegration ger följande alternativ för att hantera 
 
 Alternativen **Hoppa över** och **Markera som registrerade** tillåter informationskoder att samla in viss information om felet, till exempel orsaken till felet eller en justering för att hoppa över räkenskapsregistreringen eller märka transaktionen som registrerad. Mer information om hur du ställer in parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### <a name="optional-fiscal-registration"></a>Valfri skatteregistrering
+
+Räkenskapsregistrering kan vara obligatorisk för vissa åtgärder och valfri för andra. Exempelvis kan räkenskapsregistrering av vanlig försäljning och returer kan vara obligatorisk men räkenskapsregistrering av åtgärder som är relaterade till kundinsättningar kan vara valfria. I detta fall blockerar misslyckande att slutföra räkenskapsregistreringen av en försäljning ytterligare försäljning, men misslyckande att slutföra räkenskapsregistreringen av en kundinsättning bör inte blockera ytterligare försäljning. Om du vill skilja mellan obligatoriska och frivilliga åtgärder, rekommenderas det att du hanterar dem via olika dokumentleverantörer och att du ställer in separata steg i räkenskapsregistreringsprocessen för leverantörerna. Parametern **Fortsätt vid fel** ska aktiveras för varje steg som hör till valfri räkenskapsregistrering. Mer information om hur du ställer in parametrar för felhantering finns i [ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### <a name="manually-running-fiscal-registration"></a>Manuellt köra räkenskapsregistrering
+
+Om räkenskapsregistrering av transaktioner eller händelser har skjutits upp efter ett fel (till exempel om operatören valde **Avbryt** i dialogrutan för felhantering), kan du manuellt köra räkenskapsregistreringen genom att åberopa en motsvarande åtgärd. För mer information, se [Aktivera manuell körning av uppskjutna räkenskapsregistreringar](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="fiscal-registration-health-check"></a>Hälsokontroll av räkenskapsregistrering
+
+Hälsokontrollproceduren för räkenskapsregistreringar kontrollerar tillgängligheten för räkenskapsenheten eller tjänsten när specifika händelser inträffar. Om räkenskapsregistreringen för tillfället inte kan slutföras meddelas operatorn i förväg.
+
+Kassan kör hälsokontrollen när följande händelser inträffar:
+
+- En ny transaktion öppnas.
+- En uppskjuten transaktion återkallas.
+- En försäljnings- eller returtransaktion slutförs.
+
+Om hälsokontrollen misslyckas visar kassan dialogrutan för hälsokontroll. Den här dialogrutan innehåller följande knappar:
+
+- **OK** – med den här knappen kan operatorn ignorera ett hälsokontrollfel och fortsätta att utföra åtgärden. Operatörer kan välja den här knappen om behörigheten **Tillåt hoppa över hälsofel** är aktiverad för dem.
+- **Avbryt** – om operatören väljer denna knapp, avbryter kassan den senaste åtgärden (till exempel en artikel läggs inte till en ny transaktion).
+
+> [!NOTE]
+> Hälsokontrollen körs endast om den aktuella åtgärden kräver räkenskapsregistrering och om parametern **Fortsätt vid fel** inaktiveras för det aktuella steget av räkenskapsregistreringsprocessen. Mer information finns i [Ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagra räkenskapssvar i räkenskapstransaktion
 
 Vid räkenskapsregistrering av transaktioner eller händelser lyckas, skapas en räkenskapstransaktion i kanaldatabasen och kopplas till den ursprungliga transaktionen eller händelsen. På samma sätt om alternativet **Hoppa över** eller **Markera som registrerad** väljs för en misslyckad räkenskapsregistrering, lagras informationen i en räkenskapstransaktion. En räkenskapstransaktion innehåller räkenskapssvar för räkenskapsenheten eller tjänsten. Om processen för räkenskapsregistrering består av flera steg, skapas en räkenskapstransaktion för varje steg i processen som resulterade i en lyckad eller misslyckad registrering.
 
-Räkenskapstransaktioner överförs till Butik administration av *P-jobb*tillsammans med butikstransaktioner. På snabbfliken **räkenskapstransaktioner** på sidan **butikstransaktioner** kan du visa de räkenskapstransaktioner som är kopplade till butikstransaktioner.
-
+Räkenskapstransaktioner överförs till Retail Headquarters av *P-jobb* tillsammans med butikstransaktioner. På snabbfliken **räkenskapstransaktioner** på sidan **butikstransaktioner** kan du visa de räkenskapstransaktioner som är kopplade till butikstransaktioner.
 
 En räkenskapstransaktion innehåller följande information:
 
@@ -111,10 +136,11 @@ Följande exempel på räkenskapsintegration är tillgängliga i Retail SDK som 
 
 - [Exempel på integrering av kvittoskrivare för Italien](emea-ita-fpi-sample.md)
 - [Exempel på integrering av kvittoskrivare för Polen](emea-pol-fpi-sample.md)
+- [Exempel på skatteregistreringstjänsten för Österrike](emea-aut-fi-sample.md)
+- [Exempel på skatteregistreringstjänsten för Tjeckien](emea-cze-fi-sample.md)
 
 Följande funktioner för räkenskapsintegration finns också i Retail SDK men för närvarande utnyttjar inte i ramverket för räkenskapsintegration. Migrering av den här funktionen till ramverket för räkenskapsintegration planeras för senare uppdateringar.
 
 - [Digital signatur i Frankrike](emea-fra-cash-registers.md)
 - [Digital signatur för Norge](emea-nor-cash-registers.md)
 - [Exempel på integration av kontrollenhet för Sverige](./retail-sdk-control-unit-sample.md)
-

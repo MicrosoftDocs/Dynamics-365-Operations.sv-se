@@ -1,29 +1,29 @@
 ---
 title: Intelligenta rekommendationer
 description: Det här avsnittet beskriver hur du kan använda maskininlärning för att ge rekommendationer för jobb och jobbsökande.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306271"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896567"
 ---
 # <a name="intelligent-recommendations"></a>Intelligenta rekommendationer
 
@@ -32,8 +32,9 @@ ms.locfileid: "306271"
 Maskininlärning kan hjälpa rekryterare och personalchefer att snabbt identifiera de bästa kandidaterna för en befattning. Den kan också hjälpa potentiella kandidater att hitta en befattning som passar deras profil och intressen. När dessa funktioner används och feedback ges förbättras rekommendationer.
 
 > [!NOTE] 
-> - Funktionerna för intelligent rekommendation finns endast med tillägget för omfattande anställning.
-> - Om du vill aktivera funktionen för kandidat- och jobbrekommendationer måste en administratör aktivera alternativen för förhandsgranskning. I administrationscenter på fliken **Funktionshantering** ser du till att alternativet **Förhandsgranska funktioner** är inställt på **På**. Kontrollera sedan att de enskilda alternativen för **kandidatrekommendation** och **jobbrekommendation** ställs in på **på**.
+> - Funktionerna för intelligent rekommendation finns endast med [tillägget för omfattande anställning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationsinställningar** i Attract. Ange **Kandidatrekommendation**, **Jobbrekommendation** och **Rekommendation av potentiell kandidat** till **på**. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+
 
 ## <a name="candidate-recommendations"></a>Kandidatrekommendationer
 
@@ -43,4 +44,15 @@ För alla rekommenderade kandidater kan du välja **visa kandidat** på kandidat
 
 ## <a name="job-recommendations"></a>Jobbrekommendationer 
 
-När en potentiell medarbetare använder jobbwebbplatsen för att ansöka om ett jobb, rekommenderas andra lediga befattningar inom organisationen. Dessa rekommendationer baseras på potentiella kandidatens tidigare ansökningar och på hans eller hennes meritförteckning eller kandidatprofil. Därför hjälper jobbrekommendationer potentiella kandidater att snabbt identifiera vilka jobb som passar dem bäst. Jobbrekommendationer ges till potentiella kandidater om mer än tio jobb publiceras på jobbwebbplatsen. Potentiella kandidater kan öppna detaljerna på en jobbpublicering från rekommendationskortet. De kan också ge feedback om en rekommendationen för att förbättra framtida rekommendationer.
+När en potentiell medarbetare använder jobbwebbplatsen för att ansöka om ett jobb, rekommenderar Attract andra lediga befattningar inom organisationen. Dessa rekommendationer baseras på tidigare ansökningar och på potentiella kandidatens profil. Därför hjälper jobbrekommendationer potentiella kandidater att snabbt identifiera vilka jobb som passar dem bäst. Jobbrekommendationer ges till potentiella kandidater om mer än tio jobb publiceras på jobbwebbplatsen. Potentiella kandidater kan öppna detaljerna på en jobbpublicering från rekommendationskortet. De kan också ge feedback om en rekommendationen för att förbättra framtida rekommendationer.
+
+## <a name="prospect-recommendations"></a>Rekommendation av potentiell kandidat 
+
+När en ny befattning blir tillgänglig kan det ta en stund att söka igenom tidigare sökande och hela Talent-nätverket. För att Attract ska hjälpa dig att göra detta kan du använda intelligenta maskininlärningsalgoritmer. Detta innebär att Attract granskar alla kandidater och föreslår de som passar perfekt när du skapar jobbet. För att visa dessa rekommendationer aktiverar du fasen **Potentiella kandidater** för jobbet. Det kan ta upp till en minut för Attract att söka igenom hela kandidatdatabasen för att göra rekommendationer.
+
+Rekommendationerna visas som kort i fliken **Potentiella kandidater** för alla jobb som har fasen **Potentiella kandidater** aktiverad. Dessa kort listar de kompetenser som hittas i den potentiella kandidatens profil samt eventuell utbildningskvalifikationsinformation. Om du hittar en rekommendation som gillar kan du lägga till kandidaten som en potentiell kandidat för jobbet.
+
+> [!NOTE]
+> Om du nyligen har börjat använda Attract måste du vänta tills du har minst 10 sökanden som har fullständiga profiler eller meritförteckningar innan du kan använda den här funktionen.
+
+För att undvika eventuell snedvridning i rekommendationerna skannar Attract endast kandidatprofiler för kompetenser, kvalifikationer och andra nyckelord som matchar jobbbeskrivningen. Dessutom tar Attract bort personlig identifieringsinformation från kandidatprofiler före utvärderingen.

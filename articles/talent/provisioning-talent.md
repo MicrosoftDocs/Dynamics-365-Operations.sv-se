@@ -1,28 +1,28 @@
 ---
 title: Reservera Talent
 description: I det här avsnittet får du veta hur du skapar en ny miljö för Microsoft Dynamics 365 for Talent.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
-ms.date: 09/27/2018
+ms.date: 00/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 98f60e466b8b97215fdba0f48ca53ca57157283b
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306312"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969384"
 ---
 # <a name="provision-talent"></a>Etablera Talent
 
@@ -53,38 +53,37 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
     > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en PowerApps P2-licens. Om din organisation inte har en licens för PowerApps P2 kan du skaffa en från din CSP eller [Prissättningssidan för PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Välj **Lägg till** och välj sedan den miljö du vill etablera Talent i.
-5. Markera alternativet ”Inkludera demodata" om du vill att din miljö med samma demodatauppsättning används i Talent testkörning.  Detta är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer.  Observera att du måste välja det här alternativet vid den första implementeringen och det går inte att uppdatera en befintlig distribution senare.
+5. Markera alternativet **Inkludera demodata** om du vill att din miljö med samma demodatauppsättning används i Talent testkörning. Detta är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer.  Observera att du måste välja det här alternativet vid den första implementeringen. Du kan inte uppdatera en befintlig distribution senare.
 6. Välj **Ja** för att acceptera villkoren och börja implementeringen.
 
-    Den nya miljön visas i listan över miljöer i navigeringsfönstret till vänster. Du kan emellertid inte börja att använda miljön förrän objektets implementeringsstatus uppdateras till **Implementera**. Den här processen tar normalt bara några minuter. Om försörjningprocessen misslyckas måste du kontakta Support.
+    Den nya miljön visas i listan över miljöer i navigeringsfönstret till vänster. Du kan emellertid inte börja att använda miljön förrän objektets implementeringsstatus uppdateras till **Implementera**. Den här processen tar normalt några minuter. Om försörjningprocessen misslyckas måste du kontakta Support.
 
 7. Välj **Logga in på Talent** för att använda den nya miljön.
 
-> [!NOTE]
-> Om du ännu inte har uppfyllt de slutgiltiga kraven kan du implementera en testinstans av Talent i projektet. Du kan sedan använda den här instansen för att testa din lösning tills du loggar ut. Om du använder den nya miljön för testning måste du upprepa denna procedur för att skapa en produktionsmiljö.
+    > [!NOTE]
+    > Om du ännu inte har uppfyllt de slutgiltiga kraven kan du implementera en testinstans av Talent i projektet. Du kan sedan använda den här instansen för att testa din lösning tills du loggar ut. Om du använder den nya miljön för testning måste du upprepa denna procedur för att skapa en produktionsmiljö.
 
-> [!NOTE]
-> Eftersom bara två LCS-miljöer tillåts tillsammans med Talent-abonnemanget kan du även försöka utnyttja den kostnadsfria 60-dagars [utvärderingsmiljön för Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Även om utvärderingsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för personalfrågor. Utvärderingsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. De är inte avsedda att användas som produktionsmiljöer. Observera att alla data i miljön tas bort och kan inte återställas när utvärderingstiden upphör att gälla efter 60 dagar. Du kan registrera dig för en ny utvärderingsmiljö när den befintliga miljön har gått ut.
+    > Eftersom bara två LCS-miljöer tillåts tillsammans med Talent-abonnemanget kan du även försöka utnyttja den kostnadsfria 60-dagars [utvärderingsmiljön för Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Även om utvärderingsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för personalfrågor. Utvärderingsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. De är inte avsedda att användas som produktionsmiljöer. Observera att alla data i miljön tas bort och kan inte återställas när utvärderingstiden upphör att gälla efter 60 dagar. Du kan registrera dig för en ny utvärderingsmiljö när den befintliga miljön har gått ut.
 
 ## <a name="select-a-powerapps-environment"></a>Välj en PowerApps-miljö
 
-Integreringen mellan Talent och PowerApps-miljöer låter dig integrera och utöka användningen av Talent-data med verktyg för PowerApps. Att förstå syftet med PowerApps-miljöer kan inte bara hjälpa dig att skapa appar för att utöka Talent, utan kan även hjälpa dig att välja rätt miljö vid tillhandahållande av Talent. Mer information om PowerApps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [Vi presenterar PowerApps-miljöer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
+Integreringen mellan Talent och PowerApps-miljöer låter dig integrera och utöka användningen av Talent-data med verktyg för PowerApps. Att förstå syftet med PowerApps-miljöer kan inte bara hjälpa dig att skapa appar för att utöka Talent, utan kommer även hjälpa dig att välja rätt miljö vid tillhandahållande av Talent. Mer information om PowerApps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [Vi presenterar PowerApps-miljöer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
 
 Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska användas för att distribuera Talent: 
-1. I LCS, välj Hantera miljöer eller gå direkt till PowerApps Administratörscenter, där du kan visa befintliga miljöer och skapa nya miljöer.
+
+1. I LCS, välj **Hantera miljöer** eller gå direkt till PowerApps Administratörscenter, där du kan visa befintliga miljöer och skapa nya miljöer.
 2. En enskild Talent-miljö mappas till en enda PowerApps-miljö.
-3. En PowerApps-miljö "innehåller" Talent-programmet tillsammans med motsvarande PowerApps, Flow och CDS-program. Om PowerApps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Talent-miljö konfigureras antingen ”Utvärderingsversion” eller ”Produktion”. Välj typ av miljö baserat på hur miljön kommer att användas. 
-4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Därför rekommenderar vi att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en PowerApps-miljö.
+3. En PowerApps-miljö "innehåller" Talent-programmet tillsammans med motsvarande PowerApps, Flow och Common Data Service-program. Om PowerApps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Talent-miljö konfigureras antingen ”Utvärderingsversion” eller ”Produktion”. Välj typ av miljö baserat på hur miljön kommer att användas. 
+4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Vi rekommenderar att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en PowerApps-miljö.
 5. Följande PowerApps-miljöer kan inte användas för Talent och filtreras i urvalslistan i LCS:
  
-   **Standardinställda PowerApps- miljöer** Även om varje innehavare konfigureras automatiskt med en standardmiljö för PowerApps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till PowerApps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med PowerApps eller Flow.
+    - **Standardinställda PowerApps- miljöer** Även om varje innehavare konfigureras automatiskt med en standardmiljö för PowerApps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till PowerApps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med PowerApps eller Flow.
    
-   <strong>Testkörningsmiljöer</strong> Miljöer med ett namn som ”TestDrive – alias@domain" skapas med en 60 dagars förfalloperiod och upphör att gälla efter den tiden vilket kan orsaka att miljön tas bort automatiskt.
+    - **Testmiljöer** Dessa miljöer skapas med ett förfallodatum och upphör att gälla efter den tiden vilket kan orsaka att miljön och alla Talent-instanser som den innehåller tas bort automatiskt.
    
-   **Regioner som inte stöds** För närvarande stöds bara Talent i följande regioner: USA, Europa och Australien.
+    - **Regioner som inte stöds** För närvarande stöds bara Talent i följande regioner: USA, Europa, Storbritannien och Australien.
   
-6. Det finns inga specifika åtgärder som ska vidtas när du har fastställt den korrekta miljön att använda. Fortsätt försörjningsprocessen. 
+6. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
  
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
-Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst lägger du [till användare](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela dem lämpliga roller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) i bas-miljön för HR. Global administratör som har distribuerat Talent måste också starta både Attract- och Onboard-programmen för att slutföra initieringen och aktivera åtkomst för andra innehavare.  Tills detta inträffar kan andra användare inte komma åt Onboard- och Attract-programmen och får åtkomstfel.
-
+Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst måste du lägga till användare och tilldela dem lämpliga roller i Core HR-miljön. Global administratör som har distribuerat Talent måste också starta både Attract- och Onboard-programmen för att slutföra initieringen och aktivera åtkomst för andra innehavare.  Tills detta inträffar kan andra användare inte komma åt Onboard- och Attract-programmen och får åtkomstfel. Mer information finns i [skapa nya användare](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela användare till säkerhetsroller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

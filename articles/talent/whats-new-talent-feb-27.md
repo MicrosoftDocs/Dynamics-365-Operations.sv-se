@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b622276000c56a5af1bb258dbc3c6c4a56af4d20
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "783014"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949907"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (27 februari 2019)
 
@@ -87,7 +87,7 @@ Detta gäller för medarbetare som ansluter sig till en organisation med startda
 
 ## <a name="known-issues"></a>Kända problem
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-for-apps-to-finance-and-operations"></a>Ändringar i Core HR-integrationsmall (Talent Common Data Service för appar till Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Ändringar i Core HR-integrationsmall (Talent Common Data Service till Finance and Operations)
 Mallen för Core HR har uppdaterats till en ”avancerad frågemall”. Därför blir avancerad fråga som standard tillgänglig för projekt som har skapats med hjälp av den här mallen. Dessutom visas alla standardmappningsfunktioner bara i redigeraren för avancerad fråga. (Standardmappningsfunktioner visas som ”FN” i mappningarna.)
 
 Mer information om mappningsfel finns i [Nyheter eller ändringar i Dynamics 365 for Talent Core HR (14 december 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
@@ -100,19 +100,19 @@ Följ dessa steg om du vill uppdatera den befintliga mallen.
 
     - **Jobbefattningar till befattningar:** ta bort den här mappningen.
     - **Jobbefattningar till befattningars överordnade jobbtilldelningar:** ta bort den här mappningen.
-    - **Jobbefattningar till jobb till grundläggande befattning:** lägga till en ny mappning från **Jobbefattningar**Common Data Service för appentitet till entiteten **grundläggande befattning** Finance and Operations. Flytta till position 7 i sekvensen.
+    - **Jobbefattningar till jobb till grundläggande befattning:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **grundläggande befattning** Finance and Operations. Flytta till position 7 i sekvensen.
 
         [![Jobbefattningar till grundläggande beffattningsmappning](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Jobbefattningar till befattningsdetaljer:** lägga till en ny mappning från **Jobbefattningar**Common Data Service för appentitet till entiteten **befattningsdetaljer** Finance and Operations. Flytta till position 8 i sekvensen.
+    - **Jobbefattningar till befattningsdetaljer:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **befattningsdetaljer** Finance and Operations. Flytta till position 8 i sekvensen.
 
         [![Jobbefattningar till befattningsdetaljmappning](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Jobbefattningar till befattningstidslängder:** lägga till en ny mappning från **Jobbefattningar**Common Data Service för appentitet till entiteten **befattningstidslängder** Finance and Operations.
+    - **Jobbefattningar till befattningstidslängder:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **befattningstidslängder** Finance and Operations.
 
         [![Jobbefattningar till befattningstidslängdmappning](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Jobbefattningar till befattningshierarkier:** lägga till en ny mappning från **Jobbefattningar**Common Data Service för appentitet till entiteten **befattningshierarkier** Finance and Operations. Välj **avancerad fråga** för att göra en avancerad fråga tillgänglig för projektet.
+    - **Jobbefattningar till befattningshierarkier:** lägga till en ny mappning från entiteten **Jobbefattningar**Common Data Service till entiteten **befattningshierarkier** Finance and Operations. Välj **avancerad fråga** för att göra en avancerad fråga tillgänglig för projektet.
 
        [![Knappen Avancerad sökfråga](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 

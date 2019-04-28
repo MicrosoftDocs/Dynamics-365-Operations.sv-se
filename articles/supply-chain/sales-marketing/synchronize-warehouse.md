@@ -3,7 +3,7 @@ title: Synkronisera lagerställen från Finance and Operations till Field Servic
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 34cd18a18715d12d4002e6dbeee047467ed2a5ad
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7e6d7626c00b9d7d98ce872652653c36ce7bc975
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340325"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842543"
 ---
 # <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Synkronisera lagerställen från Finance and Operations till Field Service
 
@@ -38,7 +38,7 @@ Det här avsnittet beskriver de mallar och underliggande uppgifter som används 
 Följande mall och underliggande uppgifter används för att köra synkronisering av lagerställen från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 
 **Mall i dataintegrering**
-- Lagerställen (Finance and Operations till Field Service)
+- Lagerställen (Fin and Ops till Field Service)
 
 **Uppgift i dataintegreringsprojektet**
 - Lagerställe
@@ -76,6 +76,6 @@ Kontrollera att **integreringsnyckel** finns i **msdyn_warehouses** genom att:
 
 I följande illustrationer visas en mallmappning i dataintegrering.
 
-### <a name="warehouses-finance-and-operations-to-field-service-warehouse"></a>Lagerställen (Finance and Operations till Field Service): lagerställe
+### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Lagerställen (Fin and Ops till Field Service): Lagerställe
 
 [![Mallmappning i dataintegrering](./media/Warehouse1.png)](./media/Warehouse1.png)

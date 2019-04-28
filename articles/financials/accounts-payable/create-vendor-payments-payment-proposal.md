@@ -1,7 +1,7 @@
 ---
 title: Skapa leverantörsbetalningar med ett betalningsförslag
 description: Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 54c3d2b6ecae1481fd9b979e5d4ced217a67f5aa
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327422"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896866"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Skapa leverantörsbetalningar med ett betalningsförslag
 
@@ -111,8 +111,8 @@ Följande fakturor inkluderas inte i förslaget:
 Med dimensionskontroll kan du kontrollera grupperingen av genererade rader efter betalningsförslag och ange standardinställningsdimensioner baserat på de ekonomiska dimensioner som används för de tillämpade fakturorna. Under den norska landskontexten för varje betalningsmetod finns en ekonomisk dimensionflik där du kan aktivera dimensionskontroll samt även aktivera gruppering för respektive dimension. Möjliga alternativ är:
 
 -   Fältet **Dimensionskontroll** avaktiveras. Betalningsförslaget fungerar som för alla andra länder.
--   Fältet **Dimensions control** aktiveras utan att ytterligare definiera dimensionerna. Betalningsförslaget skapas utan att ta hänsyn till dimensioner. Den skapade transaktionen ärver inga dimensioner från den använda posten.
--   Fältet **Dimension control** aktiveras och ytterligare dimensioner aktiveras. Nu kan du definiera hur dimensionerna ska kopieras till journalen. Till exempel: • Välj kryssrutan **BusinessUnit** kryssrutan om du vill skapa ett betalningsförslag per affärsenhet för betalningsmetoden • Välj kryssrutan **CostCenter** för att skapa ett betalningsförslag per kostnadsställe för betalningsmetoden
+-   Fältet **Dimensionskontroll** aktiveras utan att ytterligare definiera dimensionerna. Betalningsförslaget skapas utan att ta hänsyn till dimensioner. Den skapade transaktionen ärver inga dimensioner från den använda posten.
+-   Fältet **Dimensionskontroll** aktiveras och ytterligare dimensioner aktiveras. Nu kan du definiera hur dimensionerna ska kopieras till journalen. Till exempel: • Välj kryssrutan **BusinessUnit** kryssrutan om du vill skapa ett betalningsförslag per affärsenhet för betalningsmetoden • Välj kryssrutan **CostCenter** för att skapa ett betalningsförslag per kostnadsställe för betalningsmetoden
 
 > [[!NOTE]
 > Om du väljer fler än en dimension i det tredje alternativet skapas ett betalningsförslag för dimensionskombinationen.

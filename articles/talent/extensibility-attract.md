@@ -1,46 +1,46 @@
 ---
 title: Utbyggbarhet i Attract
 description: Det här avsnittet beskriver hur du kan utöka Microsoft Dynamics 365 for Talent - Attract-appen med Microsoft Power-plattformen.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichsew
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789661"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949976"
 ---
 # <a name="extensibility-in-attract"></a>Utbyggbarhet i Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent byggs ovanför Common Data Service (CDS) for Apps-plattformen och kan utökas på olika sätt med hjälp av Microsofts Power-plattformen och funktionerna som Common Data Service for Apps ger. Därför kan du konfigurera och anpassa systemet med hjälp av Microsoft PowerApps och Microsoft Flow. Du kan också få ytterligare analys om personer genom att använda Microsoft Power BI. Dessutom gör nya anpassade aktiviteter, till exempel PowerApps och webbinnehåll (iframe), anställningsprocessen mer anpassningsbar än någonsin. Genom att använda dessa nya aktiviteter kan du skräddarsy anställningsprocessen till dina affärsbehov och processer och kan se till att både anställningsteam och sökande har en smidig och anpassad upplevelse.
+Microsoft Dynamics 365 for Talent byggs ovanpå Common Data Service-plattformen och kan utökas på olika sätt med hjälp av Microsoft Power Platform och funktionerna som Common Data Service ger. Därför kan du konfigurera och anpassa systemet med hjälp av Microsoft PowerApps och Microsoft Flow. Du kan också få ytterligare analys om personer genom att använda Microsoft Power BI. Dessutom gör nya anpassade aktiviteter, till exempel PowerApps och webbinnehåll (iframe), anställningsprocessen mer anpassningsbar än någonsin. Genom att använda dessa nya aktiviteter kan du skräddarsy anställningsprocessen till dina affärsbehov och processer och kan se till att både anställningsteam och sökande har en smidig och anpassad upplevelse.
 
 ## <a name="extending-option-sets-in-attract"></a>Utökade alternativuppsättningar i Attract
 
-En **alternativuppsättning** (plocklista) är en typ av fält som kan inkluderas i en enhet. Den definierar en uppsättning med alternativ. När en alternativuppsättning visas i ett formulär används en nedrullningsbar listkontroll.  I Attract finns flera fält som består av alternativuppsättningar.  Vi börjar introducera förmågan att utöka alternativuppsättningar, från och med fältet Avvisningsorsak, fältet Anställningstyp och fältet Tjänsteåldertyp.   Dessutom kan du lägga till lokaliserade visningsetiketter för de alternativ som du lägger till.  Se länken nedan för mer information: [Anpassa etiketter för alternativuppsättningar](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+En **alternativuppsättning** (plocklista) är en typ av fält som kan inkluderas i en enhet. Den definierar en uppsättning med alternativ. När en alternativuppsättning visas i ett formulär används en nedrullningsbar listkontroll.  I Attract finns flera fält som består av alternativuppsättningar.  Vi börjar introducera förmågan att utöka alternativuppsättningar, från och med fältet Avvisningsorsak, fältet Anställningstyp och fältet Tjänsteåldertyp.   Dessutom kan du lägga till lokaliserade visningsetiketter för de alternativ som du lägger till. Mer information finns i [Anpassa etiketter för alternativuppsättningar](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Jobbpublicering till LinkedIn-funktionen kräver användning av fälten **Anställningstyp** och **Tjänsteåldertyp** på sidan **Projektdetaljer**. Standardvärden i dessa fält stöds av LinkedIn och visas när jobbet har publicerats. Om du publicerar jobb på LinkedIn och du ändrar befintliga alternativuppsättningsvärden i fälten, kommer jobbet fortfarande publiceras och LinkedIn visar inte de anpassade värdena för **Anställningstyp** och **Tjänsteåldertyp**.  
 
 Nedan visas stegen för att uppdatera fälten **Orsak till avvisning** med värden som är specifika för ditt företag.  
 
-1. För att utöka alternativuppsättningen **orsak till avvisning**, gå till [webbplatsen för PowerApps administration.](Https://admin.powerapps.microsoft.com)
+1. För att utöka alternativuppsättningen **orsak till avvisning**, gå till [webbplatsen för PowerApps administration.](https://admin.powerapps.com)
 2. Du kanske uppmanas att logga in på ditt konto. Ange dina autentiseringsuppgifter för användar-ID och lösenord som du använder för att logga in på Dynamics 365 och/eller Office 365 och klicka sedan på **nästa**.
 3. På fliken **miljöer** väljer du miljön som du vill hantera och dubbelklicka för att komma till fliken **information**.
 4. På fliken **information** väljer du **Dynamics 365 administrationscenter**.
@@ -56,17 +56,17 @@ Nedan visas stegen för att uppdatera fälten **Orsak till avvisning** med värd
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Utnyttja Microsoft Power platform 
 
-Eftersom all data från Attract finns i Common Data Service for Apps kan du använda verktyg från Microsoft Power-plattformen för att inkludera unika affärsbehov i Attract.
+Eftersom all data från Attract finns i Common Data Service kan du använda verktyg från Microsoft Power Platform för att inkludera unika affärsbehov i Attract.
 
 ### <a name="powerapps"></a>PowerApps
 
 Du kan använda PowerApps för att enkelt skapa appar som ansluter dig till dina Attract-data och som använder uttryck såsom uttryck i Microsoft Excel för att lägga till logik. Appar som du skapar genom att använda PowerApps kan köras på webben och på Apple iOS- och Google Android-enheter.
 
-Exempelvis kan du göra universitetskarriärmässor enklare för rekryterare genom att skapa en enkel app där du skannar in meritförteckningarna, och matar kandidater till en plats i Attract. Alternativt kan du bygga ett program som hjälper till att uppfylla ditt företags krav på efterlevnad. Mer information om PowerApps och hur man skapar appar finns i integrera data i [Integrera data i Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps).
+Exempelvis kan du göra universitetskarriärmässor enklare för rekryterare genom att skapa en enkel app där du skannar in meritförteckningarna, och matar kandidater till en plats i Attract. Alternativt kan du bygga ett program som hjälper till att uppfylla ditt företags krav på efterlevnad. Mer information om PowerApps och hur man skapar appar finns i integrera data i [Integrera data i Common Data Service](https://docs.microsoft.com/en-us/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Du kan använda Microsoft Flow till att skapa automatiska arbetsflöden som körs ovanpå Attract-data. Du kan enkelt ansluta till hundratals populära appar och tjänster utan att behöva skriva kod. Du kan automatisera olika åtgärder genom att skapa flöden som samverkar med Attract jobb-, kandidat- och sökandeentiteter i Common Data Service for Apps. Till exempel när en kandidat godkänner ett erbjudande, kan ett meddelande skickas till ett integrationsteam eller nyheterna kan meddelas på Twitter. Mer information om flöden finns i [Microsoft Flow dokumentation](https://docs.microsoft.com/en-us/flow/).
+Du kan använda Microsoft Flow till att skapa automatiska arbetsflöden som körs ovanpå Attract-data. Du kan enkelt ansluta till hundratals populära appar och tjänster utan att behöva skriva kod. Du kan automatisera olika åtgärder genom att skapa flöden som samverkar med Attract jobb-, kandidat- och sökandeentiteter i Common Data Service. Till exempel när en kandidat godkänner ett erbjudande, kan ett meddelande skickas till ett integrationsteam eller nyheterna kan meddelas på Twitter. Mer information om flöden finns i [Microsoft Flow dokumentation](https://docs.microsoft.com/en-us/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -78,14 +78,14 @@ Du kan lägga till anpassade aktiviteter, till exempel PowerApps-program och web
 
 #### <a name="powerapps-activity"></a>PowerApps-aktivitet 
 
-PowerApps-aktiviteten låter skaparen av ett jobb eller en jobbprocessmall bädda in ett PowerApps-app anställningsflödet. När du har skapat och publicerat programmet anger du dess program-ID i aktivitetskonfigurationen. Genom att använda en PowerApps-app kan du läsa och skriva data i Common Data Service for Apps. Du kan även koppla appen till ett flöde. Exempelvis har du en app som rekryterare använder för att fylla i ett formulär när de genomför telefonintervjuer. I det här fallet kan du koppla programmet till ett flöde som bedömer om en sökande kan avancera ytterligare i jobbsökningsprocessen eller inte. Den här typen av aktivitet kan endast visas av medlemmarna av anställningsteamet. Mer information om hur du konfigurerar PowerApps-aktiviteten finns i [aktiviteter i Attract](./activities-attract.md).
+PowerApps-aktiviteten låter skaparen av ett jobb eller en jobbprocessmall bädda in ett PowerApps-app anställningsflödet. När du har skapat och publicerat programmet anger du dess program-ID i aktivitetskonfigurationen. Genom att använda en PowerApps-app kan du läsa och skriva data i Common Data Service. Du kan även koppla appen till ett flöde. Exempelvis har du en app som rekryterare använder för att fylla i ett formulär när de genomför telefonintervjuer. I det här fallet kan du koppla programmet till ett flöde som bedömer om en sökande kan avancera ytterligare i jobbsökningsprocessen eller inte. Den här typen av aktivitet kan endast visas av medlemmarna av anställningsteamet. Mer information om hur du konfigurerar PowerApps-aktiviteten finns i [aktiviteter i Attract](./activities-attract.md).
 
 > [!NOTE]
 > PowerApps-aktiviteten är endast tillgänglig med tillägget för omfattande anställning.
 
 #### <a name="web-content-iframe-activity"></a>Webbinnehållsaktivitet (iframe)
 
-Webbinnehållsaktiviteten (iframe) låter dig bädda in en anpassat webblösning som du byggt in i anställningsprocessen eller kandidatportalen. Du kan läsa och skriva data direkt från Common Data Service for Apps. Du kan också anpassa lösningen så att den utlöser flöden eller utnyttjar Microsoft Azure-funktioner. Mer information om hur du konfigurerar webbinnehållsaktiviteten finns i [aktiviteter i Attract](./activities-attract.md).
+Webbinnehållsaktiviteten (iframe) låter dig bädda in en anpassat webblösning som du byggt in i anställningsprocessen eller kandidatportalen. Du kan läsa och skriva data direkt från Common Data Service. Du kan också anpassa lösningen så att den utlöser flöden eller utnyttjar Microsoft Azure-funktioner. Mer information om hur du konfigurerar webbinnehållsaktiviteten finns i [aktiviteter i Attract](./activities-attract.md).
 
 > [!NOTE]
 > Webbinnehållsaktiviteten är endast tillgänglig med tillägget för omfattande anställning.

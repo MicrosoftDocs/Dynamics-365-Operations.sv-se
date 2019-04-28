@@ -3,7 +3,7 @@ title: Synkronisera information om lagernivåer från Finance and Operations til
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356793"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842566"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synkronisera information om lagernivåer från Finance and Operations till Field Service 
 
@@ -38,14 +38,14 @@ Det här avsnittet beskriver de mallar och underliggande uppgifter som används 
 Följande mall och underliggande uppgifter används för att synkronisera lagerhållningsnivåer från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 
 **Mall i dataintegrering**
-- Produktlager (Finance and Operations till Field Service)
+- Produktlager (Fin and Ops till Field Service)
   
 **Uppgift i dataintegreringsprojektet**
 - Produktlager
 
 Följande synkroniseringsuppgifter krävs före synkronisering av lagernivåer kan uppstå:
-- Lagerställen (Finance and Operations till Field Service) 
-- Field Service-produkter med lagerenhet (Finance and Operations till Sales) 
+- Lagerställen (Fin and Ops till Field Service) 
+- Field Service-produkter med lagerenhet (Fin and Ops till Sales) 
 
 ## <a name="entity-set"></a>Ange entiteten
 
@@ -80,6 +80,6 @@ Du kan tillämpa filter med avancerad fråga och filtrering för att kontrollera
 
 ## <a name="template-mapping-in-data-integration"></a>Mallmappning i dataintegrering
 
-### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>Produktlager (Finance and Operations till Field Service): Produktlager
+### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Produktlager (Fin and Ops till Field Service): Produktlager
 
 [![Mallmappning i dataintegrering](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

@@ -1,7 +1,7 @@
 ---
 title: Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
 description: Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs. Vissa av dem inom kassarabattperioden och andra utanför den.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdbcc990ddb20d126f2e0309bcb617640989f027
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b44d3d561b5d7fdccf34d2220d5ade0d3974ea8b
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313553"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896981"
 ---
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
 

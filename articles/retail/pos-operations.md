@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353826"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842732"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -93,8 +93,8 @@ Följande kolumner anger var operationerna kan startas:
 | 614 | Redigera kundorder | Återkalla den valda ordern så att den går att ändra i kassan. | Nr | Nr | Nr | Nr | Nr |
 | 615 | Redigera offert | Återkalla den valda offerten så att den går att ändra i kassan. | Nr | Nr | Nr | Nr | Nr |
 | 518 | Utgiftskonton | Registrera pengar som tas bort ur kassalådan för tillfälliga utgifter. | Ja | Ja | Ja | Ja | Nr |
-| 919 | Förlängd inloggning | Tilldela eller ta bort behörighet att logga in genom att skanna en streckkod eller genom att dra ett kort. | Ja | Ja | Ja | Nr | Nr |
-| 1 201 | Växelpost | Den här operationen låter användaren lägga till ytterligare pengar i den aktuella kassalådan eller skift. | Ja | Ja | Ja | Ja | Nr |
+| 919 | Förlängd inloggning | Tilldela eller ta bort behörighet att logga in genom att skanna en streckkod eller genom att dra ett kort. | Ja | Ja | Ja | Ja | Nej |
+| 1201 | Växelpost | Den här operationen låter användaren lägga till ytterligare pengar i den aktuella kassalådan eller skift. | Ja | Ja | Ja | Ja | Nr |
 | 1218 | Tvinga upp lås av kringutrustning | Systemet använder denna operation internt för att låsa upp kringutrustning för kassa. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 520 | Presentkortssaldo | Visa presentkortssaldo. | Ja | Ja | Nr | Nr | Nr |
 | 708 | Inaktiv enhet | Inaktivera aktuell enhet så att den inte kan användas som ett kassaregister. | Nr | Nr | Nr | Nr | Nr |

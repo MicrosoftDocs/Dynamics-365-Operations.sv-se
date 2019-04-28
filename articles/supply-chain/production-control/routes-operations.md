@@ -3,7 +3,7 @@ title: Flöden och operationer
 description: Det här avsnittet innehåller information om Flöden och operationer.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333356"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850678"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -59,11 +59,10 @@ Om du aktiverar mer komplexa flödesnätverk i produktionsstyrningsparametrarna 
 
 [![Flödesnätverk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Anteckningar:**
-
--   Varje operation kan ha endast ha en efterföljande operation och hela flödet måste sluta i en enkel operation.
--   Det finns ingen garanti för att flera operationer med samma efterföljande operation (exempelvis operationer 30 och 40 i bilden ovan) kommer att köras parallellt. Tillgängligheten och kapaciteten hos resurserna kan sätta begränsningar på sättet som operationerna schemaläggs.
--   Du kan inte använda 0 (noll) som operationsnummer. Det numret är reserverat och används för att ange att den sista operationen i flödet inte har någon efterföljande operation.
+> [!NOTE]
+> -   Varje operation kan ha endast ha en efterföljande operation och hela flödet måste sluta i en enkel operation.
+> -   Det finns ingen garanti för att flera operationer med samma efterföljande operation (exempelvis operationer 30 och 40 i bilden ovan) kommer att köras parallellt. Tillgängligheten och kapaciteten hos resurserna kan sätta begränsningar på sättet som operationerna schemaläggs.
+> -   Du kan inte använda 0 (noll) som operationsnummer. Det numret är reserverat och används för att ange att den sista operationen i flödet inte har någon efterföljande operation.
 
 ### <a name="parallel-operations"></a>Parallella operationer
 
@@ -122,7 +121,8 @@ Du kan ange att en operationsrelation är specifik för en plats. På så sätt 
 
 Operationsrelationer ger stor flexibilitet när du definierar dina flöden. Dessutom kan du definiera standardegenskaperna för att minska mängden huvuddata som du måste underhålla. Den här flexibiliteten innebär dock även att du måste känna till det sammanhang som du kan ändra en operationsrelation i.  
 
-**Obs!** eftersom funktionella egenskaper lagras i operationsrelationer per operation, per flöde, har alla förekomster av samma operation (exempelvis sammansättningen) samma ställtid, körtid, resurskrav och så vidare. Om två förekomster av en operation måste finnas i samma flöde men har olika körtider, måste du därför skapa två olika operationer, t.ex. Sammansättning1 och Sammansättning2.
+> [!NOTE]
+> Eftersom funktionella egenskaper lagras i operationsrelationer per operation för varje flöde, per flöde, har alla förekomster av samma operation (exempelvis sammansättningen) samma ställtid, körtid, resurskrav. Om två förekomster av en operation måste finnas i samma flöde men har olika körtider, måste du därför skapa två olika operationer, t.ex. Sammansättning1 och Sammansättning2.
 
 ### <a name="modifying-product-specific-routes"></a>Ändra produktspecifika flöden
 
@@ -132,7 +132,8 @@ På sidan **flöde** kan du ändra funktionella egenskaperna för operationen, t
 
 Kan du också manuellt skapa en operation som gäller ett flöde och en frisläppt produkt med hjälp av funktionen **kopiera och redigera relation**.  
 
-**Obs!** om du lägger till en ny operation till ett flöde på sidan **flöde**, skapas en operationsrelation endast för den aktuella frisläppta produkten. Därför används också flödet för att tillverka andra frisläppta produkter, gäller inte operationsrelationen för de frisläppta produkterna och flödet kan inte längre användas för de frisläppta produkterna.
+> [!NOTE]
+> Om du lägger till en ny operation till ett flöde på sidan **flöde**, skapas en operationsrelation endast för den aktuella frisläppta produkten. Därför används också flödet för att tillverka andra frisläppta produkter, gäller inte operationsrelationen för de frisläppta produkterna och flödet kan inte längre användas för de frisläppta produkterna.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Underhåll operationsrelationer för flöden
 
@@ -226,19 +227,34 @@ Om du inte anger en operationsresurs eller resursgrupp som en del av resurskrave
 -   **Standard** – (standardalternativet) beräkningen använder endast fälten från operationsrelationen och angiven körtid multipliceras med orderantalet.
 -   **Kapacitet** – beräkningen innefattar fältet **kapacitet** från operationsresursen. Därför är tiden resursenberoende. Värdet som anges för operationsresursen är kapacitet per timme. Det här värdet multipliceras med orderantalet och värdet **faktor** från operationsrelationen.
 -   **Batch** – Batchkapacitet beräknas utifrån informationen från operationsrelationen. Antal batchar och därmed bearbetningstiden kan beräknas baserat på orderkvantiteten.
--   **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursenberoende.
+-   **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursberoende.
 
+### <a name="set-up-route-groups"></a>Ställ in flödesgrupper
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+Du kan definiera flödesgrupperna och inställningarna för dess flödes- eller jobbtyper under **Produktionskontroll > Inställningar > Flöden > Flödesgrupper**. För varje flödes-/jobbtyp i flödesgruppen kan du markera eller avmarkera följande alternativ:
 
-[Strukturlistor och formler](bill-of-material-bom.md)
+- **Aktivering** - Välj det här alternativet om du vill aktivera beräkningar och tidsplanering för den valda jobbtypen och få återrapportering för ett jobb när du kör finplanering. Du måste markera det här alternativet för att aktivera jobbtyp och sedan välja resten av alternativ för denna jobbtyp. Om aktiveringen inte markeraskommer denna jobbtyp inte att aktiveras, oavsett vad som valts av de andra alternativen. 
+- **Jobbhantering** - Välj det här alternativet för att inkludera jobbtypen i jobbhantering när du kör finplanering. 
+- **Arbetstid** Välj det här alternativet om du vill tidsplanera jobbtypen enligt arbetstidskalendern som har definierats för operationsresursen. Annars används den gregorianska kalendern. Arbetstid kan antingen tidsplaneras enligt den gregorianska kalendern eller enligt den definierade arbetskalendern. Om du väljer det här alternativet kommer tidsplaneringen att baseras på den definierade arbetstidskalendern. Dessutom tidsplaneras jobbtypens jobb från midnatt det datum som har angetts som jobbets startdatum.
+- **Kapacitet** - Välj det här alternativet om du vill reservera kapacitet för jobbtypen när du kör finplanering. Om du väljer det här alternativet reserveras kapacitet när tidsplanering körs för den valda jobbtypen. Detta ger en översikt över vilka jobbtyper i varje flödesgruppbruk som använder operationsresurserna. Om du till exempel i en situation där uttorkningsresurser är flaskhalsar måste dessa resurser anges som flaskhalsar. Uttorkningoperationer som är tilldelade kötidjobbtyper kommer att reservera uttorkningresurser. 
 
-[Kostnadskategorier som används i produktionsflöde](../cost-management/cost-categories-used-production-routings.md)
+För var och en av jobbtyperna måste du först aktivera eller inaktivera den. När du inaktiverar beaktas ingen av de övriga inställningarna (jobbhantering, arbetstid och kapacitet) eftersom jobbtypen inte kommer att vara aktiverad. 
 
-[Resurskunskaper](resource-capabilities.md)
+Bland jobbtyper hittar du överlappning. Överlappning tillåter att olika jobb utförs samtidigt. När jobben överlappas kan resurserna användas men kan inte reserveras inte för specifika jobb.
+Därför när aktivering väljs för överlappning kommer resten av inställningarna (jobbhantering, arbetstid och kapacitet) inte ha någon inverkan på flödesgruppen. 
 
-[Översikt över elektroniska underskrifter](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> När du uppgraderar versioner kan följande fel uppstå: **”CRL-fel uppstod när planeringsmotorn anropades”**. Om du får detta felmeddelande går du till sidan **flödesgrupper** och för alla flöden där du har aktiverat **överlappa**avmarkerar du alternativen **jobbhantering**, **arbetstid** och **kapacitet**. 
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+- [Strukturlistor och formler](bill-of-material-bom.md)
+
+- [Kostnadskategorier som används i produktionsflöde](../cost-management/cost-categories-used-production-routings.md)
+
+- [Resurskunskaper](resource-capabilities.md)
+
+- [Översikt över elektroniska underskrifter](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

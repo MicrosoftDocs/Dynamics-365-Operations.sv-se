@@ -1,6 +1,6 @@
 ---
-title: Reduceringsnycklar
-description: Den här artikeln ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
+title: Prognosreduceringnycklar
+description: Den här ämnet ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/28/2019
@@ -19,52 +19,83 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
-ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
+ms.openlocfilehash: b915570145a48db7a182b9fce34e1544e3600107
+ms.sourcegitcommit: a95ccf4cee8757c5fb2442a2aaeb45b1e33b6492
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "770926"
+ms.lasthandoff: 04/14/2019
+ms.locfileid: "993054"
 ---
-# <a name="reduction-keys"></a>Reduceringsnycklar
+# <a name="method-used-to-reduce-forecast-requirements"></a>Metod som används för att minska prognosbehov
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
+Det här ämnet innehåller information om de olika metoder som används för att minska prognosbehov. Det inkluderar exempel på resultatet av varje metod. Det förklarar även hur du skapar, konfigurerar och använder en prognosreduceringnyckel. Vissa metoder använder en prognosreduceringnyckel för att ange hur du ska minska prognosbehoven.
 
-<a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Exempel 1: Procent - reduceringsnyckel för prognosreduceringsprincip
----------------------------------------------------------------
+## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metoder som används för att minska prognosbehov
+
+När du inkluderar en prognos i en huvudplan kan du välja hur prognosbehoven reduceras när faktisk efterfrågan inkluderas.
+
+Om du vill ta med en prognos i en huvudplan och välja den metod som används för att minska prognosbehoven, gå till **huvudplanering \> inställningar \> planer \> huvudplaner**. I fältet **prognosmodell** väljer du en prognosmodell. I fältet **Metod som används för att minska prognosbehov** väljer du en metod. Följande alternativ är tillgängliga:
+
+- Ingen
+- Procent - reduceringsnyckel
+- Transaktioner - reduceringsnyckel
+- Transaktions - dynamisk period
+
+Följande avsnitt innehåller mer information om varje alternativ.
+
+### <a name="none"></a>Ingen
+
+Om du väljer **Inga** minskas prognosbehoven inte under huvudplaneringen. I detta fall skapar huvudplaneringen planerade order för att tillhandahålla prognostiserade efterfrågan (prognosbehov). Dessa planerade order behåller det föreslagna antalet oavsett andra typer av efterfrågan. Om till exempel försäljningsorder placeras skapar huvudplanen ytterligare planerade order för att tillhandahålla försäljningsorder. Antalet prognosbehov reduceras inte.
+
+### <a name="percent--reduction-key"></a>Procent - reduceringsnyckel
+
+Om du väljer **Procent - reduceringsnyckel** prognosbehoven reduceras enligt procentsatserna och de perioder som definieras av reduceringsnyckeln. I detta fall skapar huvudplaneringen planerade order där kvantiteten beräknas som det prognostiserade antalet × reduceringsnyckel i varje period. Om det finns andra typer av efterfrågan, skapar huvudplanering planerade order för att tillgodose den efterfrågan.
+
+#### <a name="example-percent--reduction-key"></a>Exempel: Procent - reduceringsnyckel
 
 Detta exempel visar hur en reduceringsnyckel reducerar behoven av efterfrågeprognos enligt procentsatserna och de perioder som definieras av reduceringsnyckeln.
 
-1. Ange följande rader på sidan **Reduceringsnycklar**.
+I det här exemplet inkluderar du följande efterfrågeprognos i en huvudplan.
 
-   | Växel | Enhet  | Procent |
-   |--------|-------|---------|
-   |   1    | Månad |   100   |
-   |   2    | Månad |   75    |
-   |   3    | Månad |   50    |
-   |   4    | Månad |   25    |
+| Månad    | Efterfrågeprognos |
+|----------|-----------------|
+| Januari  | 1 000           |
+| Februari | 1 000           |
+| Mars    | 1 000           |
+| april    | 1 000           |
 
+Ange följande rader på sidan **Reduceringsnycklar**.
 
-2. Länka reduceringsnyckeln till artikelns täckningsgrupp.
-3. På sidan **Huvudplaner** i fältet **Reduceringsprincip** väljer du **Procent - reduceringsnyckel**.
-4. Skapa en efterfrågeprognos på 1 000 enheter per månad.
+| Växel | Enhet  | Procent |
+|--------|-------|---------|
+| 1      | Månad | 100     |
+| 2      | Månad | 75      |
+| 3      | Månad | 50      |
+| 4      | Månad | 25      |
 
-Om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du ställer in på sidan **Reduceringsnycklar**. Följande behovskvantiteter överförs till huvudplanen.
+Du tilldelar reduceringsnyckeln till artikelns täckningsgrupp. Sedan på sidan **huvudplaner** i fältet **Metod som används för att minska prognosbehov** väljer du **procent - reduceringsnyckel**.
 
-| Månad                | Obligatoriskt antal enheter |
-|----------------------|---------------------------|
-| Januari              | 0                         |
-| Februari             | 250                       |
-| Mars                | 500                       |
-| april                | 750                       |
-| Maj - december | 1 000                     |
+I det här fallet om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du ställer in på sidan **Reduceringsnycklar**. Följande behovskvantiteter överförs till huvudplanen.
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Exempel 2: Transaktioner - reduceringsnyckel för prognosreduceringsprincip
+| Månad                | Planerad orderkvantitet | Beräkning    |
+|----------------------|------------------------|----------------|
+| Januari              | 0                      | = 0 % × 1 000   |
+| Februari             | 250                    | = 25 % × 1 000  |
+| Mars                | 500                    | = 50 % × 1 000  |
+| april                | 750                    | = 75 % × 1 000  |
+| Maj - december | 1 000                  | = 100 % × 1 000 |
+
+### <a name="transactions--reduction-key"></a>Transaktioner - reduceringsnyckel
+
+Om du väljer **Transaktioner - reduceringsnyckel** prognosbehoven reduceras av de transaktioner som genomförs under de perioder som definieras av reduceringsnyckeln.
+
+#### <a name="example-transactions--reduction-key"></a>Exempel: Transaktioner - reduceringsnyckel
+
 Detta exempel visar hur aktuella order som inträffar under de perioder som definieras av reduceringsnyckeln reducerar behoven av efterfrågeprognos.
 
--   På sidan **Huvudplaner** i fältet **Reduceringsprincip** väljer du **Transaktioner - reduceringsnyckel**.
+I det här exemplet väljer du **Transaktionsplaner - reduceringsnyckel** i fältet **Metod som används för att minska prognosbehov** på sidan **Huvudplaner**.
 
 Följande försäljningsorder finns den 1 januari.
 
@@ -75,7 +106,7 @@ Följande försäljningsorder finns den 1 januari.
 | Mars    | 451                      |
 | april    | 119                      |
 
-Med samma försäljningsprognos på 1 000 enheter per månad överförs följande behovskvantiteter till huvudplanen:
+Med samma försäljningsprognos på 1 000 enheter per månad som användes i det föregående exemplet överförs följande behovskvantiteter till huvudplanen:
 
 | Månad                | Obligatoriskt antal enheter |
 |----------------------|---------------------------|
@@ -85,56 +116,114 @@ Med samma försäljningsprognos på 1 000 enheter per månad överförs följand
 | april                | 881                       |
 | Maj - december | 1 000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Exempel 3: Transaktioner - dynamisk period för prognosreduceringsprincip
+### <a name="transactions--dynamic-period"></a>Transaktions - dynamisk period
+
+Om du väljer **transaktioner - dynamisk period** reduceras prognosbehoven av de faktiska ordertransaktioner som sker under en dynamisk period. Den dynamiska perioden omfattar de aktuella prognosdatumen och slutar i början av nästa prognos. I detta fall skapar huvudplaneringen planerade order för att tillhandahålla prognostiserade efterfrågan (prognosbehov). När de faktiska ordertransaktionerna placeras reduceras prognosbehoven. De faktiska transaktionerna förbrukar en del av det prognostiserade behovet.
+
+När det här alternativet används, sker följande beteende:
+
+- Reduceringsnycklar krävs eller används inte. 
+- Om prognosen reduceras fullständigt, blir prognosbehoven för den aktuella prognosen 0 (noll).
+- Om det inte finns någon framtida prognos, kommer prognosbehov från sista prognosen att reduceras.
+- Tidsgränser ingår i prognosförminskningsberäkningen.
+- Positiva dagar ingår i beräkningen av prognosreducering.
+- Om verkliga ordertransaktioner överskrider prognosbehoven, förs resten av transaktionerna inte framåt till nästa prognosperiod.
+
+#### <a name="example-1-transactions--dynamic-period"></a>Exempel 1: Transaktions - dynamisk period
+
+Här ett enkelt exempel som visar hur metoden **transaktioner - dynamisk period** fungerar.
+
+I det här exemplet inkluderar du följande efterfrågeprognos i en huvudplan.
+
+| Datum       | Efterfrågeprognos |
+|------------|-----------------|
+| 1 januari  | 1 000           |
+| 1 februari | 500             |
+
+Du kan också skapa följande försäljningsorder.
+
+| Datum        | Försäljningsorderns kvantitet |
+|-------------|----------------------|
+| 15 januari  | 500                  |
+| 15 februari | 100                  |
+
+I det här fallet skapas följande planerade order.
+
+| Efterfrågeprognosdatum | Kvantitet | Förklaring                           |
+|--------------------- |----------|---------------------------------------|
+| 1 januari            | 800      | Prognosbehoven (= 1 000 - 200) |
+| 15 januari           | 200      | Krav på försäljningsorder             |
+| 1 februari           | 600      | Prognosbehoven (= 1 000 - 400) |
+| 15 februari          | 400      | Krav på försäljningsorder             |
+
+#### <a name="example-2-transactions--dynamic-period"></a>Exempel 2: Transaktions - dynamisk period
+
 I de flesta fall ställs systemen in så att transaktioner minskar efterfrågeprognosen inom specifika detaljprognosperioder: veckor, månader och så vidare. Dessa perioder definieras i reduceringsnyckeln. Men tiden mellan två efterfrågeprognosrader kan också *antyda* en period.
 
-1. Skapa en efterfrågeprognos för följande datum och kvantiteter.
+I det här exemplet skapar du en efterfrågeprognos för följande datum och kvantiteter.
 
-   | Datum       | Efterfrågeprognos |
-   |------------|-----------------|
-   | 1 januari  | 1 000           |
-   | 5 januari  | 500             |
-   | 12 januari | 1 000           |
+| Datum       | Efterfrågeprognos |
+|------------|-----------------|
+| 1 januari  | 1 000           |
+| 5 januari  | 500             |
+| 12 januari | 1 000           |
 
-   I denna prognos finns det inte en tydlig period mellan prognosdata: mellan de första och andra data finns det endast en tidsperiod på 4 dagar, och mellan de andra och tredje data finns det endast en tidsperiod på 1 dag. Dessa olika tidsperioder är de dynamiska perioderna.
-2. Skapa försäljningsorderrader enligt följande.
+Observera att i den här prognosen finns det inte en tydlig period mellan prognosdatumen. Mellan de första och andra datumen är ett intervall med en tidsperiod på fyra dagar och mellan de andra och tredje datumet är ett intervall med sju dagar. Dessa tidsperioder är de dynamiska perioderna.
 
-   | Datum                             | Försäljningsorderns kvantitet |
-   |----------------------------------|----------------------|
-   | 15 december föregående år | 500                  |
-   | 3 januari                        | 100                  |
-   | 10 januari                       | 200                  |
+Du kan också skapa följande försäljningsorderrader.
 
-Prognosen reduceras enligt följande:
+| Datum                             | Försäljningsorderns kvantitet |
+|----------------------------------|----------------------|
+| 15 december föregående år | 500                  |
+| 3 januari                        | 100                  |
+| 10 januari                       | 200                  |
 
--   Den första försäljningsordern sker inte inom någon period, så den kommer inte att reducera prognosen.
--   Den andra försäljningsordern sker mellan 1 januari och 5 januari, så den ska reducera prognosen för 1 januari med 100.
--   Den tredje försäljningsordern sker mellan 5 januari och 12 januari, så den ska reducera prognosen för 5 januari med 200.
+I det här fallet minskas prognosen på följande sätt:
 
-Följande planerade order skapas för att uppfylla prognosen.
+- Eftersom den första försäljningsordern inte sker inom någon period, så den kommer inte att reducera prognosen.
+- Eftersom den andra försäljningsordern sker mellan 1 januari och 5 januari, reducerar den prognosen för 1 januari med 100.
+- Eftersom den tredje försäljningsordern sker mellan 5 januari och 12 januari, reducerar den prognosen för 5 januari med 200.
 
-| Efterfrågeprognosdatum | Reducerad kvantitet |
-|----------------------|------------------|
-| 1 januari            | 900              |
-| 5 januari            | 300              |
-| 12 januari           | 1 000            |
+Därför skapas följande planerade order.
 
-Här följer en sammanfattning av **Transaktioner - dynamisk period** för reducering:
+| Efterfrågeprognosdatum             | Kvantitet | Förklaring                                                         |
+|----------------------------------|----------|---------------------------------------------------------------------|
+| 15 december föregående år | 500      | Krav på försäljningsorder                                            |
+| 1 januari                        | 900      | Prognosbehovperioden 1 januari till 5 januari (= 1 000 – 100) |
+| 3 januari                        | 100      | Krav på försäljningsorder                                            |
+| 5 januari                        | 300      | Prognosbehovperioden 5 januari till 10 januari (= 500 – 200)  |
+| 12 januari                       | 1 000    | Prognosbehovperioden 12 januari till slutet                      |
 
--   Prognosbehoven reduceras med de verkliga ordertransaktionerna som inträffar under den dynamiska perioden. Den dynamiska perioden omfattar de aktuella prognosdatumen och slutar i början av nästa prognos.
--   Den här metoden använder inte eller kräver en reduceringsnyckel.
--   När det här alternativet används, sker följande beteende:
-    -   Om prognosen reduceras fullständigt, blir prognosbehoven för den aktuella prognosen 0 (noll).
-    -   Om det inte finns någon framtida prognos, kommer prognosbehov från sista prognosen att reduceras.
-    -   Tidsgränser ingår i prognosförminskningsberäkningen.
-    -   Positiva dagar ingår i beräkningen av prognosreducering.
-    -   Om verkliga ordertransaktioner överskrider prognosbehoven, förs resten av transaktionerna inte framåt till nästa prognosperiod.
+## <a name="create-and-set-up-a-forecast-reduction-key"></a>Skapa och ställa in en prognosreduceringsnyckel
 
+En prognosreduceringsnyckel används i metoderna **transaktioner - reduceringsnyckel** och **procent - reduceringsnyckel** för att minska prognosbehoven. Följ dessa steg om du vill skapa och ställa in en reduceringsnyckel.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+1. Gå till **huvudplanering \> inställningar \> täckning \> reduceringsnycklar**.
+2. Välj **ny** eller tryck på **Ctrl+N** för att skapa en reduceringsnyckel.
+3. I fältet **reduceringsnyckeln** anger ett unikt ID för prognosreduceringsnyckeln. Ange sedan ett namn i fältet **Namn**. 
+4. Definiera perioder och procentandel av reduktionsnyckel i varje period:
+
+    - Fältet **giltighetsdatum** visar datumet då skapande av perioderna börjar. När alternativet **Använd giltighetsdatum** anges till **Ja** startar perioderna från giltighetsdatumet. När det anges till **Nej** startar perioderna på datumet då huvudplaneringen körs.
+    - Definiera perioder då prognosreducering ska ske.
+    - För en viss period anger du de procentsatser som prognosbehoven bör minskas med. Du kan ange positiva värden för att minska behov eller negativa värden att öka behov.
+
+## <a name="use-a-reduction-key"></a>Använd en reduceringsnyckel
+
+En prognosreduceringsnyckel måste tilldelas artikelns disponeringsgrupp. Följ dessa steg om du vill tilldela en reduceringsnyckel till artikelns disponeringsgrupp.
+
+1. Gå till **huvudplanering \> inställningar \> täckning \> disponeringsgrupper**.
+2. På snabbfliken **Övrigt** i fältet **reduceringsnyckel** väljer du reduceringsnyckeln som ska tilldelas disponeringsgruppen. Reduceringsnyckeln gäller för alla objekt som hör till disponeringsgruppen.
+3. Om du vill använda en reduceringsnyckel för att beräkna prognosreducering under huvudplaneringen måste du definiera inställningen av prognosplanen eller huvudplanen. Gå till en av följande platser:
+
+    - Huvudplanering \> Inställning \> Planer \> Prognosplaner
+    - Huvudplanering \> Inställningar \> Planer \> Huvudplaner
+
+4. På sidan **Prognosplaner** eller **Huvudplaner** på snabbfliken **Allmänt** i fältet **Metod som används för att minska prognosbehov** väljer du antingen **Procent - reduceringsnyckel** eller **transaktioner - reduceringsnyckel**.
+
+## <a name="reduce-a-forecast-by-transactions"></a>Minska en prognos med transaktioner
+
+När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dynamisk period** som metod för att minska prognosbehoven kan du ange vilka transaktioner som reducerar prognosen. På sidan **frisläppta produkter** på transaktioner **Övrigt** i fältet **reducera prognos efter** väljer du **alla transaktioner** om alla transaktioner ska reducera prognosen eller **order** om bara försäljningsorder ska reducera prognosen.
+
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Huvudplaner](master-plans.md)
-
-
-

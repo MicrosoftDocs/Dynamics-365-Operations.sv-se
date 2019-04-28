@@ -1,7 +1,7 @@
 ---
 title: Förskottsfakturor kontra förskottsbetalningar
 description: Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. I den ena metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0f97eba8831e96b43f7fe7d5ea58359cab47315c
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310149"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "897142"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Förskottsfakturor kontra förskottsbetalningar
 

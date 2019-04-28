@@ -3,14 +3,14 @@ title: Elektronisk rapportering (ER)
 description: Det här ämnet ger en översikt till verktyget Elektronisk rapportering (ER). Den innehåller information om huvudkoncepten, scenarier som ER stöder och en lista över format som har utformats och lanserats som en del av lösningen.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310816"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902970"
 ---
 # <a name="electronic-reporting-er"></a>Elektronisk rapportering (ER)
 
@@ -41,7 +41,7 @@ ER stöder för närvarande formaten TEXT, XML, Microsoft Word-dokument och OPEN
 ER-motorn har följande funktioner:
 
 - Den representerar ett enskilt verktyg som kan användas för elektronisk rapportering i olika domäner och ersätter fler än 20 olika motorer som används för någon form av elektronisk rapportering för Microsoft Dynamics 365 for Finance and Operations.
-- Den skapar ett rapportformat utanför den aktuella Dynamics 365 for Finance and Operations-implementeringen. Formatet är med andra ord tillämpligt för olika versioner av Finance and Operations.
+- Den skapar ett rapportformat utanför den aktuella Finance and Operations-implementeringen. Formatet är med andra ord tillämpligt för olika versioner av Finance and Operations.
 - Den har stöd för att skapa ett anpassat format som är baserat på ett originalformat. Det innehåller även funktioner för automatisk uppdatering av det anpassade formatet när ursprungsformatet ändras på grund av nya lokaliserings-/anpassningskrav.
 - Det kommer att vara det primära standardverktyget för att stödja lokaliseringskrav vid elektronisk rapportering – både för Microsoft samt för Microsofts partners.
 - Den stöder funktionen för att distribuera format till partners och kunder via Microsoft Dynamics Lifecycle Services (LCS).
@@ -163,21 +163,33 @@ För information om hur du registrerar en ny ER-leverantör, kör uppgiftsguiden
 
 #### <a name="repository"></a>Databas
 
-En ER-databas lagrar ER-konfigurationer. Fyra typer av ER-datalager stöds: **Operationsresurser**, **LCS-projekt (LCS)**, **Filsystem** och **Lagstadgade konfigurationstjänster (RCS)**.
+En ER-databas lagrar ER-konfigurationer. Följande typer av ER-databaser stöds för närvarande: 
 
-En databas för **Verksamhetsresurser** ger åtkomst till listan över konfigurationer som Microsoft frisläpper som en del av Finance and Operations-lösningen i egenskap av ER-konfigurationsleverantör. Dessa konfigurationer kan importeras till den aktuella instansen av Finance and Operations och användas för elektronisk rapportering. De kan också användas för ytterligare lokaliseringar och anpassningar.
+- Delat LCS-bibliotek
+- LCS-projekt
+- Filsystem:
+- Lagstadgad konfigurationstjänst (RCS)
+- Verksamhetsresurser
+
+
+En databas för **delat LCS-bibliotek** ger dig listan över konfigurationer i det delade tillgångsbiblioteket i Lifecycle Services (LCS). Den här typen av ER-databas kan endast registreras för Microsoft-leverantören. Från det delade LCS-tillgångsbiblioteket kan du importera de senaste versionerna av ER-konfigurationer till den aktuella Finance and Operations-instansen.
 
 En **LCS-projekt**-databas ger åtkomst till listan över konfigurationerna för ett visst LCS-projekt (tillgångsbibliotek för LCS-projekt) som valdes i registreringssteget för databasen. ER låter dig överföra delade konfigurationer från den befintliga Finance and Operations-instansen till en specifik databas för **LCS-projekt**. Du kan även importera konfigurationer från en **LCS-projekt**-databas till den befintliga Finance and Operations-instansen.
 
-En **Filsystem**-datalager ger åtkomst till listan över konfigurationer som finns som XML-filer i en viss mapp i det lokala filsystemet på maskinen där AOS-tjänsten finns. Önskad mapp väljs vid registreringssteget för datalagret. Du kan även importera konfigurationer från ett **Filsystem**-datalager till den befintliga Finance and Operations-instansen. Observera att den här databasen är tillgänglig i följande Dynamics 365 for Finance and Operations-miljöer:
-- molnstyrda miljöer distribueras i utvecklingssyften (innehåller testmodeller av bifogade paket)
-- lokalt distribuerade miljöer (lokal distribution av affärsdata (LBD))
+En **Filsystem**-datalager ger åtkomst till listan över konfigurationer som finns som XML-filer i en viss mapp i det lokala filsystemet på maskinen där AOS-tjänsten finns. Önskad mapp väljs vid registreringssteget för datalagret. Du kan även importera konfigurationer från ett **Filsystem**-datalager till den befintliga Finance and Operations-instansen. 
 
-Besök sidan [Importera konfigurationer för elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md) för mer information om detta.
+Observera att den här databasen är tillgänglig i följande Dynamics 365 for Finance and Operations-miljöer:
 
-Ett **RCS-instans**-datalager ger åtkomst till listan över konfigurationerna för en viss RCS-instans som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen av Finance and Operations och används för elektronisk rapportering.
+- Molnstyrda miljöer distribueras i utvecklingssyften (innehåller testmodeller av bifogade paket)
+- Lokalt distribuerade miljöer (lokala)
 
-Besök sidan [Importera konfigurationer för elektronisk rapportering (ER) från Lagstadgade konfigurationstjänster (RCS)](./rcs-download-configurations.md) för mer information om detta.
+Mer information finns i [Importera konfigurationer för elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md).
+
+Ett **RCS-instans**-datalager ger åtkomst till listan över konfigurationerna för en viss RCS-instans som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen av Finance and Operations så att du kan använda dem för elektronisk rapportering.
+
+För mer information, se [Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+
+En databas för **Verksamhetsresurser** ger åtkomst till listan över konfigurationer som Microsoft frisläpper som en del av Finance and Operations-lösningen i egenskap av ER-konfigurationsleverantör. Dessa konfigurationer kan importeras till den aktuella instansen av Finance and Operations och användas för elektronisk rapportering eller spela upp exempeluppgiftsguider. De kan också användas för ytterligare lokaliseringar och anpassningar. Observera att de senaste versionerna från Microsoft ER-konfigurationer måste importeras från det delade LCS-tillgångsbiblioteket med motsvarande ER-databas.
 
 Obligatoriska datalager för **LCS-projekt**, **Filsystem** och **Lagstadgade konfigurationstjänster (RCS)** kan registreras separat för respektive konfigurationsleverantör av den aktuella Finance and Operations-instansen. Varje databas kan reserveras för en viss konfigurationsleverantör.
 
@@ -377,6 +389,5 @@ Med hjälp av ER kan du införa ändringar av den senaste versionen av baskompon
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Krav för lokalisering – Skapa en konfiguration för elektronisk rapportering](electronic-reporting-configuration.md)
-
-[Hantera livscykeln för konfigurering av elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Krav för lokalisering – Skapa en konfiguration för elektronisk rapportering](electronic-reporting-configuration.md)
+- [Hantera livscykeln för konfigurering av elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)

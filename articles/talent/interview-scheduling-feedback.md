@@ -1,25 +1,25 @@
 ---
 title: Tidsplanering av intervjuer och feedback
 description: Det här avsnittet innehåller information om intervjuplanering och återrapportering aktiviteter i Attract.
-author: ''
+author: hasrivas
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
-ms.author: hasrivas
-ms.openlocfilehash: 7bc5a66bb221cb0ab2c69fcb1013ed48a7c664a6
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.author: shielas
+ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374982"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "989947"
 ---
 # <a name="interview-scheduling-and-feedback"></a>Tidsplanering av intervjuer och feedback
 
@@ -28,6 +28,8 @@ ms.locfileid: "374982"
 ## <a name="scheduler-activity"></a>Aktiviteten Schemaläggare
 
 Aktiviteten schemaläggare är valfri och har två komponenter: kandidatens begäran om tillgänglighet och tidsplan. Komponenten kandidaten tillgänglighet kan du använda e-post för att begära den sökandes tillgänglighet. Komponenten schemaläggare ger möjligheten att tidsplanera intervjuer med kandidater och anställningsteamet.
+
+Om du vill konfigurera schemaläggarens aktivitet att inkludera eller begränsa kandidater som ska tidsplaneras väljer du ett värde i fältet **Vem du tidsplanerar**. Tillgängliga alternativ är följande **alla kandidater**, **externa kandidater** och **interna kandidater**. Om du till exempel vill hoppa över interna kandidater i tidsplaneringens första runda kan du endast tilldela tidsplaneringsaktiviteten till externa kandidater genom att ange **Vem du tidsplanerar** till **externa kandidater**.
 
 ### <a name="candidate-availability-request"></a>Begär tillgänglighet för kandidat
 
@@ -54,7 +56,7 @@ Det finns flera konfigurationer för tidsplan för intervju använder och snabbt
 
 2. Markera intervjun varaktigheten för varje intervju händelse och klicka på **OK** för att skapa schemat.
 
-    Om **rekommendationer** är markerat kommer visas och intervjurutnätet kommer att vara förifylld. Du kommer att kunna se aktuell i kalendertillgängligheten för alla markerade intervjuare. Du kommer också kunna visa kalendern och om de är en intern kandidaten.
+    Om **rekommendationer** är markerat kommer visas och intervjurutnätet kommer att vara förifylld. Du kommer att kunna se aktuell i kalendertillgängligheten för alla markerade intervjuare. Du kommer också kunna visa kalendern och om de är en intern kandidaten. För intervjuare och interna kandidater kan du visa deras upptagna tider, deras arbetstimmar, deras ej på kontorettid och även identifiera om de har markerat sina kalendrar när de arbetar på en annan plats för specifika tidsperioder. 
 
 3. Om det finns inga förslag, i kolumnen **intervjuare** väljer du i ett klockslag, ange intervjuntitel, information och fylla i platsinformation efter behov. Kan du inkludera **Skype för företag** för intervjun.
 
@@ -73,7 +75,7 @@ Det finns flera konfigurationer för tidsplan för intervju använder och snabbt
 
     Intervjuarens svar samlas in och visas i Attract. Om intervjuaren tackar nej till inbjudan, meddelas ändringar. För att se svaren i rutnätsvyn **schemaläggare**, klicka på bubbelikonen.
 
-[![Attract rekryterarvy av en intervjuarens svar](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
+[![Attract rekryterarvy av en intervjuarens svar](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. När du är klar kan delas med sökande intervjuschemat klickar du på **skicka till kandidaten**. Du kan välja att visa eller dölja intervjuarens namn och platser med sökande.
 
@@ -82,10 +84,21 @@ Det finns flera konfigurationer för tidsplan för intervju använder och snabbt
 >[!NOTE] 
 > Tillgängligheten för en kalender visas endast om kandidaten är intern. Endast en intern kandidat kan ska användas för att förbättra rekommendationer för intervjuschema. Kandidater (intern eller extern) kan för närvarande inte ta emot e-postinbjudningar, istället får kandidaterna endast en sammanfattning av intervjuerna.
 
-## <a name="feedback-activity"></a>Aktiviteten Feedback
+Kandidater får e-post med sammanfattning av deras intervjuloop. E-postmeddelandena innehåller en .ics-fil som kan sparas på deras personliga kalendrar för enklare åtkomst och meddelanden om intervjun.
 
-Feedbackaktiviteten är valfri i en jobbmall. Denna aktivitet låter intervjudeltagare ange rekommendationer eller feedbackkommentarer för en sökande. Om fältet **Ärv feedbackdeltagare från anställningsteamet** har valts kommer rekryterare, anställande chefer och intervjuare registreras automatiskt i aktiviteten Feedback. Organisationer kan låta intervjuare visa feedback för andra människor innan de skickar sin egen feedback. Organisationer kan även tillåta att intervjuare redigerar deras feedback när de har skickat sina kommentarer. Intervjuare påminns skicka feedback för nyligen gjorda intervjuer utifrån den förinställda konfigurationen som en del av jobbmallen. Anställande chefen eller en rekryterare för jobbet kan också välja att manuellt påminna intervjuaren om att skicka feedback.
+>[!TIP] 
+> Om du skickar intervjuschemat igen till kandidater, får de en annan bifogad .ics-fil. Du bör uppdatera e-postmallar för kandidaternas intervjusammanfattning för att säkerställa att kandidaterna tar bort tidigare tillagda intervjuhändelser och inte ser dubbletter i deras kalender. 
+
+## <a name="feedback-activity"></a>Feedbackaktivitet
+
+Feedbackaktiviteten är valfri i en jobbmall. Denna aktivitet låter intervjudeltagare ange rekommendationer eller feedbackkommentarer för en sökande. 
+
+För att inkludera eller begränsa kandidaterna för att ge feedback, välj ett värde i fältet **Vem som intervjuare bör ge feedback till**.  Tillgängliga alternativ är följande **alla kandidater**, **externa kandidater** och **interna kandidater**. Om du till exempel vill hoppa över interna kandidater i första rundan av tidsplanering anger du **Vem bör intervjuare ge feedback för** till **externa kandidater**.
+
+Om du väljer fältet **Ärv feedbackdeltagare från anställningsteamet** kommer rekryterare, anställande chefer och intervjuare registreras automatiskt i feedback-aktiviteten. Organisationer kan låta intervjuare visa feedback för andra människor innan de skickar sin egen feedback. Organisationer kan även tillåta att intervjuare redigerar deras feedback när de har skickat sina kommentarer. Intervjuare påminns skicka feedback för nyligen gjorda intervjuer utifrån den förinställda konfigurationen som en del av jobbmallen. Anställande chefen eller en rekryterare för jobbet kan också välja att manuellt påminna intervjuaren om att skicka feedback.
 
 ## <a name="interview-activity"></a>Aktiviteten Intervju
 
-Intervjuaktiviteten är en valfri aktivitet med tre komponenter: Begär tillgänglighet för kandidat, schema och feedback. Använd intervjuaktiviteten i jobbmallen om du vill att alla kandidaters begäran om tillgänglighet schemalägga. och feedback som en del av processen i stället använder dem individuellt i anställningsprocessen.
+Intervjuaktiviteten är en valfri aktivitet med tre komponenter: **Begär tillgänglighet för kandidat**, **schema** och **feedback**. Använd aktiviteten intervju i jobbmallen om du vill inkludera alla kandidaters begäran om tillgänglighet, schema och feedback som en del av en process istället för att använda dem individuellt.
+
+Om du vill inkludera eller begränsa kandidater till detta väljer du ett värde i fältet **Vem du intervjuar**. Tillgängliga alternativ är följande **alla kandidater**, **externa kandidater** och **interna kandidater**. Om du till exempel vill hoppa över interna kandidater i första rundan av intervjun anger du **Vem du intervjuar** till **externa kandidater**.
