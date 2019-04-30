@@ -3,7 +3,7 @@ title: Borttagna och inaktuella funktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning.
 author: sericks007
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836358"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992893"
 ---
 # <a name="removed-or-deprecated-features"></a>Borttagna och inaktuella funktioner
 
@@ -41,45 +41,114 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > [!NOTE]
 > Detaljerad information om objekt i Finance and Operations finns i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations.
 
+
+## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 med plattformsuppdatering 26
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.2 med plattformsuppdatering 26 är tillgänglig för användarna som en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-default-action-behavior"></a>Äldre standardbeteende för åtgärd
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Äldre standardbeteende för åtgärd i rutnät resulterar i en oväntad kolumn med standardåtgärdslänken efter att rutnätskolumner har beställts om via anpassning. Den nya tröga standardåtgärdsfunktionen korrigerar detta. Mer information finns i [Tröga standardåtgärder i rutnät](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 21 infördes en funktion för ”tröga standardåtgärder”. Den här funktionen kan aktiveras på sidan **Prestandaalternativ för klient**. |
+| **Produktområden som påverkas**         | Rutnät i webbklienten |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Från och med april 2020 blir tröga standardåtgärder standardbeteendet, utan en mekanism för att återgå till äldre funktion. |
+
+### <a name="legacy-is-one-of-filtering-experience"></a>Äldre "är någon av" filtreringsupplevelsen
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Filtreringsupplevelsen ”är någon av” har gått igenom en ny utformning av plattformsuppdatering 22, med planen att så småningom blir den enda ”är någon av”-filtreringsupplevelsen. |
+| **Ersatt av en annan funktion?**   | Med start i plattformsuppdatering 22, är en förbättrad ”är någon av”-filtreringserfarenhet tillgänglig på sidan **Prestandaalternativ för klient**. För mer information, se [Optimerad "är någon av" filtreringsupplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Produktområden som påverkas**         | Webbklient |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Från och med april 2020 blir den förbättrade "är någon av"-upplevelsen standardbeteendet, utan en mekanism för att återgå till äldre funktion. |
+
+### <a name="deriving-from-internal-classes-is-deprecated"></a>Som härrör från interna klasser är inaktuella
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Före plattformsuppdatering 25 var det möjligt att skapa en klass eller tabell som härleds från en intern klass/tabell som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Per plattformsuppdatering 25 kommer kompileraren att visa ett varningsmeddelande. |
+| **Ersatt av en annan funktion?**   | Kompilerarens varning ersätts av ett fel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid.|
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+
+### <a name="overriding-internal-methods-is-deprecated"></a>Åsidosätta interna metoder är inaktuellt
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Före plattformsuppdatering 25 var det möjligt att åsidosätta en intern metod i en härledd klass som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Per plattformsuppdatering 25 kommer kompileraren att visa ett varningsmeddelande. |
+| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+
+### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametern för att aktivera försäljningsorder med flera finansieringskällor för projektkontrakt
+Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet har flera finansieringskällor aktiveras med inställningen**Parametrar för projekthantering** **Tillåt försäljningsorder för projekt som har flera finansieringskällor**. Den här parametern är som standard inte aktiverat. 
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Funktionen kommer alltid att aktiveras alltid när den här parametern har tagits bort. |
+| **Ersatt av en annan funktion?**   | Nr. Funktionen för att stödja projektbaserade försäljningsorder med flera finansieringskällor alltid aktiverade.   |
+| **Produktområden som påverkas**         |Parametern **Tillåt försäljningsorder för projekt som har flera finansieringskällor** kommer att tas bort. Följande metoder ändras när parametern tas bort: metoden **ctrlSalesOrderTable** i klassen **ProjStatusType**, metoden **validera** för fältet **ProjId** och **kör** metoden i formuläret **SalescreateOrder**. Följande metoder ska vara inaktuell när parametern tas bort: **IsSalesOrderAllowedForMultipleFundingSources** i registerfilen **ProjTable**, metoden **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** i registerfilen **ProjTable**, datafältet **AllowSalesOrdersForMultipleFundingSources** i formuläret **ProjParameters** och filerna **ProjParameterEntity**, privat metod **IsAssociatedToMultipleFundingSourcesContract** i regsiterfilen **ProjTable**. |
+| **Distribueringsalternativ**              | Allt  |
+| **Status**                         | Avskrivning planeras för släpp av påfyllnad, april 2020. |
+
+### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a>Äldre arbetsflödesrapporter för spårning och instansstatus
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Äldre arbetsflödesrapporter för spårning och instansstatus utfasas eftersom de inte längre refereras från navigeringsrutan. Rapportnamn är WorkflowWorkflowInstanceByStatusReport och WorkflowWorkflowTrackingReport. |
+| **Ersatt av en annan funktion?**   | Du kan använda formuläret arbetsflödeshistorik i stället. |
+| **Produktområden som påverkas**         | Webbklient |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är april 2020. |
+
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 med plattformsuppdatering 25
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 med plattformsuppdatering 25 är tillgänglig för användarna som en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tjänstuppdateringar för standardversion och första version](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+> Dynamics 365 for Finance and Operations 10.0.1 med plattformsuppdatering 25 är tillgänglig för användarna som en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Gamla API:er och eventuell uppdelning av ändringar
+
 
 #### <a name="deriving-from-internal-classes-is-deprecated"></a>Som härrör från interna klasser är inaktuella
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | I versioner före plattformsuppdatering 25 var det möjligt att skapa en klass eller tabell som härleds från en intern klass/tabell som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Med start i plattformsuppdatering 25 visar kompileraren ett varningsmeddelande om du försöker göra detta.|
-| **Ersatt av en annan funktion?**   | Kompilerarens varning ersätts av ett fel i en kommande plattformsuppdatering. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
+| **Orsak till inaktuell/borttagning** | Före plattformsuppdatering 25 var det möjligt att skapa en klass eller tabell som härleds från en intern klass/tabell som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Per plattformsuppdatering 25 kommer kompileraren att visa ett varningsmeddelande. |
+| **Ersatt av en annan funktion?**   | Kompilerarens varning ersätts av ett fel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid.|
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering. |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Åsidosätta interna metoder är inaktuellt
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | I versioner före plattformsuppdatering 25 var det möjligt att åsidosätta en intern metod i en härledd klass som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Med start i plattformsuppdatering 25 visar kompileraren ett varningsmeddelande om du försöker göra detta.|
-| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i en kommande plattformsuppdatering. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
+| **Orsak till inaktuell/borttagning** | Före plattformsuppdatering 25 var det möjligt att åsidosätta en intern metod i en härledd klass som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Per plattformsuppdatering 25 kommer kompileraren att visa ett varningsmeddelande. |
+| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering. |
+| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 med plattformsuppdatering 23
 
-### <a name="print-to-screen-functionality"></a>Skriva ut till skärmfunktionen.
-Användare kan använda åtgärden **Importera** från Report Viewer-kontrollen för att hämta dokument som skapas av Finance and Operations-programmen. Denna HTML-baserade presentationen av rapporten ger användare en onumrerad förhandsgranskning av dokumentet.
+### <a name="sql-server-reporting-services-reportviewer-control"></a>SQL Server Reporting Services ReportViewer-kontroll
+Användare kan använda åtgärden **Exportera** från den inbäddade SQL Server Reporting Services (SSRS) ReportViewe-kontrollen för att hämta dokument som skapas av Finance and Operations-programmen. Denna HTML-baserade presentationen av rapporten ger användare en onumrerad förhandsgranskning av dokumentet.
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | HTML-baserade förhandsgranskningserfarenhetens onumrerade natur levererar **inte** återgivning med det fysiska dokumentet som slutligen skapats av Finance and Operations. Genom att helt använda PDF som standardformat för affärsverksamheten kan vi drastiskt förenkla användaralternativ för att interagera med programrapporter och effektivisera återgivningen av dokument. |
+| **Orsak till inaktuell/borttagning** | HTML-baserade förhandsgranskningserfarenhetens onumrerade natur levererar **inte** återgivning med det fysiska dokumentet som slutligen skapats av Finance and Operations. Genom att helt använda PDF som standardformat för affärsdokument, ska användare kunna dra nytta av en modern tittarupplevelse med förbättrad prestanda när programrapporter produceras. |
 | **Ersatt av en annan funktion?**   | Framöver kommer PDF-dokument att vara standardformatet för rapporter som återges av Finance and Operations.   |
 | **Produktområden som påverkas**         | Ändringen påverkar **inte** kundscenarier där rapporter distribueras elektroniskt eller skickas direkt till en skrivare.    |
 | **Distribueringsalternativ**              | Allt  |
-| **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. Funktionen för att automatiskt hämta programrapporter till webbläsaren som PDF-dokument planeras för maj 2019 plattformsuppdateringen. <br><br>**Viktigt:** befintliga kunder som behöver tillgång till funktionen för utskrift till skärm bör meddela [Support](../lifecycle-services/lcs-support.md) innan de uppgraderar till plattformsuppdatering 26. |
+| **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. Funktionen för att automatiskt förhandsgranska programrapporter med en inbäddad PDF-läsare planeras för maj 2019 plattformsuppdateringen. |
 
 ### <a name="client-kpi-controls"></a>Klien-KPI-kontroller
 Inbäddade KPI:er (Key Performance Indicators) kan utformas i Visual Studio av en utvecklare och ytterligare anpassas av slutanvändaren.
@@ -110,7 +179,7 @@ Du hittar en fullständig lista över API:er som är inaktuella i [Avskrivning a
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 med plattformsuppdatering 20
 
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Batchöverföringsregler för kontoposter i redovisningsjournalen
-Det synkrona överföringsläget är inaktuellt i redovisningsparametrarna.  Detta läge ersätts endast av asynkron och schemalagd batch som endast finns som alternativ för överföring. 
+Det synkrona överföringsläget är inaktuellt i redovisningsparametrarna.  Detta läge ersätts endast av asynkron och schemalagd batch som endast finns som alternativ för överföring. Mer information finns i bloggen [allmänna redovisningsparametrar – Batchöverföringsregler](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
 
 |   |  |
 |------------|--------------------|
@@ -172,7 +241,7 @@ Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsu
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise edition 7.3 med plattformsuppdatering 12
 
 ### <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer 
-Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information i [anpassade produktrekommendationer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations)..  
+Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information i [anpassade produktrekommendationer](../../retail/personalized-product-recommendations.md)..  
 
 |   |  |
 |------------|--------------------|
@@ -206,12 +275,12 @@ Dessa två rapporter stöds inte längre i Finance and Operations. I stället ka
 | **Status**                       | Inaktuell: Menyalternativen för de två rapporterna har tagits bort i version 7.3. Koden för rapporterna finns emellertid kvar i produkten Planen är att ta bort koden i framtida versioner. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-innehållspaket finns på AppSource
-Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Retail channel performance** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
+Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Butikskanalresultat** som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Produktuppdateringar Microsoft Power BI. |
-| **Ersatt av en annan funktion?**   | Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Retail channel performance** som finns på webbplatsen [AppSource](https://appsource.microsoft.com) ersätts med analytiska applikationer som möjliggör lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Ersatt av en annan funktion?**   | Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Butikskanalresultat** som finns på webbplatsen [AppSource](https://appsource.microsoft.com) ersätts med analytiska applikationer som möjliggör lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Produktområden som påverkas**         | Kostnadshantering, Ekonomi och Butik                                                                                               |
 | **Distribueringsalternativ**              | Endast molnet (integrering med PowerBI.com stöds inte i lokala distributioner.)                                                                                                            |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är K2 2018.    |
@@ -277,7 +346,7 @@ Användare kan hämta denna från myndighetsportalen.
 ## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
 
 ### <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer 
-Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information i [anpassade produktrekommendationer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations)..  
+Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information i [anpassade produktrekommendationer](../../retail/personalized-product-recommendations.md)..  
 
 |   |  |
 |------------|--------------------|
@@ -309,7 +378,7 @@ Warehouse mobile devices portalen (WMDP) är en fristående komponent som är av
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion.       |
-| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations - Lagerhållning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations - Lagerhållning](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Produktområden som påverkas**         | Lager- och transporthantering     |
 | **Distribueringsalternativ**              | Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution.               |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q4 2019.   |
@@ -687,6 +756,17 @@ I AIF (Application Integration Framework) kan data utbytas med externa system ge
 | **Ersatt av en annan funktion?**   | Den här funktionen har ersatts av ramverket för dataimport/dataexport, som stöder återkommande massimport/massexport. För AxBC rekommenderar vi att du använder faktiska tabeller. |
 | **Produktområden som påverkas**         | AxDs, AxBCs och AIF   |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.   |
+
+### <a name="billing-code-rate-scripts"></a>Tariffskript för faktureringskod
+
+Faktureringsskript används för att beräkna fakturerbara kostnader för faktureringskoder. Detta skript kräver anpassad utveckling i C-Sharp eller Visual Basic programmeringsspråk. I den aktuella versionen av Dynamics AX stöds inte **tariffskript för faktureringskod**.
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Stöd för anpassade C Sharp eller Visual Basic-skript har inte lagts till i Dynamics AX 7.0. |
+| **Ersatt av en annan funktion?**   | Nej                                                                                      |
+| **Produktområden som påverkas**         | Offentlig sektor, kundreskontra                                    |
+| **Status**                         | Borttagen från och med Dynamics AX 7.0.                                                          |
 
 ### <a name="boms-without-bom-versions"></a>Strukturlistor utan strukturlisteversioner
 
@@ -1068,7 +1148,7 @@ Product Builder användes för att dynamiskt konfigurera artiklar från en förs
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Product Builder exponerade X++-kod till slutanvändare och stöds inte i den aktuella versionen av Dynamics AX. Den har tagits bort för att undvika dubbelt underhållsarbete med överlappande, ansenliga kodbaser.  |
-| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [skapa en modell för produktkonfiguration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [skapa en modell för produktkonfiguration](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Produktområden som påverkas**         | Produktinformationshantering, Försäljning och marknadsföring  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.      |
 

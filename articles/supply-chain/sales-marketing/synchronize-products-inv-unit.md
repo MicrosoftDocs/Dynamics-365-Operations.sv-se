@@ -3,7 +3,7 @@ title: Synkronisera produkter med lagerenhet från Finance and Operations till F
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter med lagerenhet från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/12/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
-ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
+ms.openlocfilehash: 080672b9a6acd9fd6137580b5b7e14d12cfccf19
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "836312"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842472"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
 
@@ -34,23 +34,23 @@ Det här avsnittet beskriver de mallar och underliggande uppgifter som används 
 
 [![Synkronisering av affärsprocesser mellan Finance and Operations och Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Den använda mallen **Field Service-produkter med lagerenhet (Finance and Operations till Field Service)** baseras på mallen **Field Service-produkter (Finance and Operations till Field Service)**. Mer information finns i [Field Service-produkter (Finance and Operations till Field Service)](field-service-product.md).
+Den använda mallen **Field Service-produkter med lagerenhet (Fin and Ops till Field Service)** baseras på mallen **Field Service-produkter (Fin and Ops till Field Service)**. Mer information finns i [Field Service-produkter (Finance and Operations till Field Service)](field-service-product.md).
 
 Det här avsnittet beskriver endast skillnaderna mellan två mallar: 
-- **Field Service-produkter med lagerenhet (Finance and Operations till Sales)**
-- **Field Service-produkter (Finance and Operations till Field Service)**. 
+- **Field Service-produkter med lagerenhet (Fin and Ops till Sales)**
+- **Fältserviceprodukter (Fin and Ops till Field Service)** 
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
 **Namnet på mallen i dataintegreringen**
 
-- Field Service-produkter med lagerenhet (Finance and Operations till Sales)
+- Field Service-produkter med lagerenhet (Fin and Ops till Sales)
 
 **Namnen på uppgiften i dataintegreringsprojektet:**
 
 - Produkter
 
-Mallen **Field Service-produkter med lagerenhet (Finance and Operations till Field Service)** innehåller en mappning som inte ingår i mallen **Field Service-produkter (Finance and Operations till Field Service)**. Den här mappningen garanterar att den lagerenhet som behövs för synkronisering på nivå lager ingår.
+Mallen **Field Service-produkter med lagerenhet (Fin and Ops till Field Service)** innehåller en mappning som inte ingår i mallen **Field Service-produkter (Fin and Ops till Field Service)**. Den här mappningen garanterar att den lagerenhet som behövs för synkronisering på nivå lager ingår.
 
 ```
 INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryunit.name [Inventory Unit(Name)] 
@@ -60,6 +60,6 @@ INVENTORYUNITSYMBOL [INVENTORYUNITSYMBOL]         Fn        msdynce_inventoryuni
 
 I följande illustrationer visas en mallmappning i dataintegrering.
 
-### <a name="field-service-products-with-inventory-unit-finance-and-operations-to-field-service-products"></a>Field Service-produkter med lagerenhet (Finance and Operations till Field Service): produkter
+### <a name="field-service-products-with-inventory-unit-fin-and-ops-to-field-service-products"></a>Field Service-produkter med lagerenhet (Fin and Ops till Field Service): produkter
 
 [![Mallmappning i dataintegrering](./media/FSProduct1.png)](./media/FSProduct1.png)

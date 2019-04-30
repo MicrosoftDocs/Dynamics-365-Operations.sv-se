@@ -1,30 +1,30 @@
 ---
 title: Skapa, godkänn och bokföra jobb i Attract
 description: Det här avsnittet beskriver delarna av ett jobb i Attract. Här förklaras också hur du skapar ett jobb.
-author: josaw
+author: hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
-ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
+ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "772821"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969359"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Skapa, godkänn och bokföra jobb i Attract
 
@@ -44,7 +44,7 @@ Fliken **Jobbdetaljer** innehåller information om jobbets ansvarsområden och a
 
 Som standard anges fältet **antal lediga jobb** till **1**. Du kan dock ändra värdet. När ett erbjudande har tagits fram för ett jobb, minskar värdet i fältet **antal tillgängliga lediga jobb**.
 
-Om befattningshantering är aktiverat på administratörscenter är **uppdatera befattningar** tillgängligt. Den här sökningen läser entiteten JobPosition i Common Data Service for Apps och returnerar en lista över befattningar som kan väljas för jobbet. Om antalet befattningar som du väljer överskrider antalet lediga befattningar, visas ett varningsmeddelande. Du får också en varning om en befattning används i flera jobb.
+Om befattningshantering är aktiverat på administratörscenter är **uppdatera befattningar** tillgängligt. Den här sökningen läser entiteten JobPosition i Common Data Service och returnerar en lista över befattningar som kan väljas för jobbet. Om antalet befattningar som du väljer överskrider antalet lediga befattningar, visas ett varningsmeddelande. Du får också en varning om en befattning används i flera jobb.
 
 > [!NOTE]
 > Befattningshantering finns i tillägget omfattande anställning.
@@ -74,9 +74,7 @@ Mer information om aktiviteter som kan läggas till i anställningsprocessen fin
 
 ## <a name="postings"></a>Bokföringar
 
-När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Dynamics 365 for Talent) eller LinkedIn. 
-
-Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden.
+När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Dynamics 365 for Talent) eller LinkedIn. Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden. När ett jobb har publicerats som endast internt behöver kandidater ett AAD-konto för att visa och ansöka om jobbet. Om jobbet är offentlig kan sökanden visa och ansöka om jobb med alla autentiseringsalternativ. 
 
 Mer information om jobbpubliceringar finns i [Funktionen för karriärwebbplats i Attract](career-site.md).
 
@@ -137,16 +135,21 @@ När ett jobb sparas skickas den för godkännande. I följande tabell visas sta
 
 I jobblistan kan du filtrera på jobbstatus.
 
-Godkännanden kan skickas till Microsoft Azure Active Directory (Azure AD)-användare i företaget. Godkännanden skickas parallellt till alla personer som är angivna som godkännare. När ett jobb har godkänts kan det aktiveras.
+Godkännanden kan skickas till Microsoft Azure Active Directory (Azure AD)-användare i företaget. Godkännanden skickas parallellt till alla personer som är angivna som godkännare. Alla godkännare måste godkänna jobbet innan det kan fortsätta. Om en godkännare avvisar jobbet, visar projektet statusen **Avvisat**. När ett jobb har godkänts kan det aktiveras.
 
-Personer som är angivna som godkännare meddelas i Attract för att informera dem om att de har en artikel att godkänna. En artikel för godkännande visas också i avsnittet **Tilldelad till dig** på instrumentpanelen. När någon godtar eller godkänner ett jobb meddelas anställningsteamet. Slutligen får anställningsteamet ett meddelande när jobbet är godkänd.
+Om en användare redigerar jobbet när det är godkänt, men inte aktiverat återställs jobbstatus till **utkast** och jobbet måste skickas in igen för godkännande. När ett godkänt jobb har aktiverats kan du inte redigera det.
+
+Personer som är angivna som godkännare meddelas i Attract och ett e-postmeddelande för att informera dem om att de har en artikel att godkänna.  I e-postmeddelandet kan godkännare klicka på länken för att öppna jobbet, granska informationen och antingen godkänna eller avvisa. När projektets status anges som **godkänd** eller **avvisad** meddelas avsändaren i Attract och de tar emot ett e-postmeddelande. Dessutom får godkännare ett e-postmeddelande med påminnelse om de inte har svarat på en begäran om godkännande inom 24 timmar.
+
+> [!NOTE]
+> Du kan skapa anpassade e-postmallar för e-post för godkännande. Mer information [Skapa och hantera e-postmallar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Skapa ett jobb
 
 Följ dessa steg för att skapa ett jobb.
 
 1. Gå till **Jobb**.
-2. Välj **Nytt**.
+2. Välj **Ny**.
 3. I fältet **Jobbtitel**, ange jobbtiteln. I fältet **Roll** anger du din roll.
 4. I fältet **Mall** anger du en mall. Du kan också välja **Hoppa över**. Om du väljer **hoppa över** används mallen som har markerats som standardmall.
 

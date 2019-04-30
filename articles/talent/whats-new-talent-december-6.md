@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 80d62492d58a436c15fac82df0d000ab9efa6ea5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306334"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949953"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Nyheter och ändringar i Dynamics 365 for Talent Core HR (6 december 2018)
 
@@ -54,7 +54,7 @@ Filtreringsoperatorn ”är någon av” är tillgänglig för de flesta fält n
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Klistra in listor från Excel till filterfält med operatorn ”"är någon av”
 
-För vissa uppgifter kan användare ha en lista över värden i Excel som de skulle vilja använda för att filtrera data i Talent. Exempelvis i Personal kan användaren ha identifierat en grupp av medarbetare i en rapport som kräver ytterligare undersökning i systemet och det skulle vara perfekt för den här användaren att kunna kopiera listan direkt från Microsoft Excel till ett filterfält i Talent.
+För vissa uppgifter kan användare ha en lista över värden i Excel som de skulle vilja använda för att filtrera data i Talent. Exempelvis i Personal kan användaren ha identifierat en grupp av medarbetare i en rapport som kräver ytterligare undersökning i systemet och det skulle vara perfekt för den här användaren att kunna kopiera listan direkt från Excel till ett filterfält i Talent.
 
 Med start i plattformsuppdatering 22 identifieras operatorn ”är någon av” i filterfönstret och filtrering i rutnätskolumner erkänner nu listor som kopieras från Excel så att de kan klistras in direkt i ett filterfält. Detta inkluderar en uppsättning värden som kopieras från olika rader och kolumner i Excel. Mer information om den här funktionen finns i [Klistra in listor från Excel till filterfält med operatorn ”är någon av”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
@@ -135,7 +135,7 @@ Arbetare till arbetsuppgift måste ha följande mappningar uppdaterade.
 
 Transformering av fältet Kön behöver också uppdateras. Välj mapptypen **fn** (funktion) för kön och uppdatera följande värdemappningar.
 
-| CDS-värdee   | Finance and Operations-värde | | ------------|------------------ -----------| | 75440000    | Man                         | | 75440001    | Kvinna                       | | 75440002    | Ingen                         | | 75440003    | Ej specifik                   |
+| Common Data Service Värde   | Finance and Operations-värde | | ------------|------------------ -----------| | 75440000    | Man                         | | 75440001    | Kvinna                       | | 75440002    | Ingen                         | | 75440003    | Ej specifik                  |
 
 Uppdaterade mappningar ska se ut så här.
 

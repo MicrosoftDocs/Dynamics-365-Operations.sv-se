@@ -1,29 +1,29 @@
 ---
 title: Källkandidater med talangpooler
 description: Det här avsnittet beskriver hur du skapar och konfigurerar talangpooler i Attract.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306255"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949354"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Källkandidater med talangpooler
 
@@ -44,7 +44,7 @@ Följ instruktionerna nedan för att skapa och dela en talangpool.
 
     Fliken **Mina talangpooler** visar alla talangpooler som du har tillgång till, med information om varje. Informationen omfattar ägare till poolen och antal kandidater i den.
 
-1. I det övre högra hörnet väljer du **+ Ny** för att öppna dialogrutan **skapa talangpool**.
+1. I det övre högra hörnet av sidan väljer du **+ Ny** för att öppna dialogrutan **skapa talangpool**.
 1. Ange ett unikt namn för talangpoolen.
 1. Om du vill lägga till personer som deltagare i poolen, hitta namnen med hjälp av personväljaren och lägg till dem i listan. Du kan endast dela en talangpool med användare som har rollen rekryteraren, anställande chef eller Attract-administratör.
 1. Välj **Lägg till** för att skapa talangpool.
@@ -78,26 +78,35 @@ Följ instruktionerna nedan för att skapa och dela en talangpool.
 
 ## <a name="search-and-view-candidate-profiles"></a>Söka och visa kandidatprofiler
 
-Användare av en talangpool kan visa kandidatens profil, hans eller hennes LinkedIn-information, relaterade dokument eller historik och hela ansökningshistoriken. Du kan också söka hela databasen med kandidater för alla kandidater som någonsin har ansökt om något jobb i organisationen eller som någonsin lagts till en talangpool.
+> [!NOTE] 
+> Den här funktionen är för närvarande i förhandsgranskning. Om du vill prova den måste du [aktivera den i Attract administrationsinställningar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
 
-1. Använd sökfältet längst upp på fliken **Mina talangpooler** om du vill söka hela databasen med kandidater.
-1. Sök bland olika profilattribut. Markera sökattributkategori, utforma en sökfråga och välj sedan höger pilknapp (**-\>**) för att starta sökningen.
+Talangpooler låter dig visa kandidaters profil, LinkedIn-information, relaterade dokument och ansökningshistorik. Du kan söka igenom hela databasen över alla kandidater till någon talangpool, inklusive stängda och aktiva sökande.
 
-    Du kan slå upp kandidater efter deras namn, organisationen som de arbetar på, de kompetenser som de har taggats för, deras tidigare utbildning, deras aktuell jobbtitel eller examen som de erhållit om den här informationen ingår i deras profil.
+>[!NOTE]
+> När du lägger till nya kandidater eller sökande kan nya tillägg ta upp till 15 minuter att indexeras för sökning.
 
-    Du kan också skapa en sökfråga som använder två eller fler av dessa attribut som kriterier. Kombinera kriterier med hjälp av en **och**-operatör.
+Med den förbättrade sökfunktionen kan du söka igenom alla kandidatens dokument och filtrera efter silvermedaljer, källor, färdigheter, utbildning och mycket mer. I tidigare versioner var du tvungen att ange enheten du vill söka igenom. Attract kan nu söka alla kandidatrelaterade fält och rangordna resultat.
 
-    Om alla kandidater matchar sökvillkoren, visas de i sökresultaten.
+1. Om du vill starta en ny sökning i kandidatdatabasen anger du texten som du vill söka efter i sökrutan på fliken **talangpooler**. 
 
-1. Du kan uppdatera sökfrågan om du vill begränsa sökresultatet med hjälp av sökfältet högst upp.
+Du kan skriva kandidatens namn eller andra attribut du söker. Om du vill avgränsa attribut använder du blanksteg.
 
-    Du kan också använda listan med smarta filter till höger. Dessa smarta filter dras dynamiskt in baserat på sökresultaten.
+Du kan begränsa reslutaten genom att ändra sökfrågan eller genom att använda smarta filter till vänster på sidan.
 
-    Sökresultatet visar de 20 bästa kompetenserna, skolor, organisation och osv, som oftast finns i listan med kandidater. Du kan lägga till fler filter för något av dessa attribut för att begränsa sökresultatet ytterligare.
+Sökresultatet visarmarkeringar för olika attribut som matchade sökfrågan. Markera den kandidat som du är intresserad av för att visa deras profil.
 
-1. När du har identifierat en kandidat markerar du raden för den kandidaten för att visa hans eller hennes profil.
+### <a name="syntax-highlights"></a>Syntaxmarkeringar 
 
-Alla användare har en gemensam vy över kandidatprofiler. Markera raden för en kandidat i en uppsättning sökresultat eller en talangpool för att visa hans eller hennes profil. Fliken **profil** visar all information om kompetenser, arbetserfarenhet och utbildning som kandidaten har uppdaterat från karriärportalen.
+| Operatör | Användning                                                      | Exempel              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Söka efter delsträngar; kan användas för att returnera alla poster | Indata: Mi\* <br></br> Resultat: Alla poster som innehåller fält som börjar med ”Mi”, t.ex. Microsoft, Micro system, Midtown-företag eller Middleton <br></br>Indata: \* <br></br> Resultat: Alla poster i databasen |
+| “”       | Söker efter en exakt matchning                                | Indata: ”Microsoft” <br></br> Resultat: Alla poster som innehåller ”Microsoft”                    |
+
+>[!WARNING]
+> Stäng inte av relevanssökning efter din Common Data Service-instans. Detta kommer att inaktivera sökupplevelsen i Attract.
+
+Alla användare har en gemensam vy över kandidatprofiler. Fliken **profil** visar all information om kompetenser, arbetserfarenhet och utbildning som kandidaten har tillhandahållit som en del av sin ansökan med hjälp av karriärportalen.
 
 - Du kan visa kontaktinformation för kandidaten. Du kan också redigera eller uppdatera informationen som du behöver genom att använda knappen **redigera detaljer**.
 
@@ -109,7 +118,7 @@ Alla användare har en gemensam vy över kandidatprofiler. Markera raden för en
 
     Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i programmet med Microsoft Office 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
 
-- Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn-rekryteraranslutning måste skapas. Mer information finns i [Anskaffning med LinkedIn-rekryterare](./attract-linked-in-recruiter.md).
+- Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn Recruiter-anslutning måste skapas. Mer information finns i [Anskaffning med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Lägg till kandidater från en talangpool till ett jobb
 
@@ -117,7 +126,7 @@ Från sökresultaten eller en talangpool kan du trycka en kandidat till alla akt
 
 1. Hitta kandidater genom att använda sökfunktionen och öppna hans eller hennes profil. Alternativt öppnar du talangpoolen från fliken **Mina talangpooler**, söker efter kandidaten i talangpoolen och öppnar hans eller hennes profil.
 
-1. Markera **+ Lägg till jobb** på kandidatens profil i det övre högra hörnet. 
+1. Markera **Lägg till jobb** på kandidatens profil i det övre högra hörnet. 
      
      En lista med jobb som tillhör anställningsteamet, antingen som en rekryterare eller anställande chef visas.
 

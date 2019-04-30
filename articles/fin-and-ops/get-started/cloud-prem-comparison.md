@@ -1,28 +1,28 @@
 ---
 title: Jämförelse mellan moln- och lokala funktioner
 description: Detta avsnitt anger vilka funktioner stöds i molnet och på plats.
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.custom: 89563
 ms.assetid: ''
 ms.search.region: Global
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 18f668bdc49da1022230278f1de8494150e8a5f9
+ms.sourcegitcommit: bdcdcdddcb0517f0c64d541258ccbd119b960719
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313990"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "977216"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Jämförelse mellan moln- och lokala funktioner
 
@@ -56,9 +56,12 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | Hjälp | | Ja | Nr |
 | Personal | | Ja | Ja |
 | Intelligence | | Ja | Ja |
-| | Elektronisk rapportering (ER) - Integrering med LCS | Ja | Nr |
-| | Elektronisk rapportering (ER) - Integrering med SharePoint | Ja | Nr |
-| | Integrering med PowerBI.com | Ja | Nr |
+| | Elektronisk rapportering (ER) | Ja | Ja |
+| | ER: Integration med LCS | Ja | Nej |
+| | ER: Integration med SharePoint | Ja | Nej |
+| | ER: Integration med Regulatory Configuration Services (RCS) | Ja | Nej |
+| | ER: Använder lokalt filsystem som lagringsplats för ER-konfigurationer som är tillgängliga via ER-databaser | Nej | Ja |
+| | Integrering med PowerBI.com | Ja | Nej |
 | | Analytiska arbetsytor | Ja | Nr |
 | | Intelligent affärsprocess: Rekommendationer | Ja | Nr |
 | | Skapa Power BI-rapporter med OData med hjälp av stationära Power BI- eller Excel PowerQuery-verktyg | Ja | Nr |

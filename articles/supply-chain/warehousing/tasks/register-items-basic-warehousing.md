@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c53a38eb6afdf8d3cc1a316c8da5e84549ab60d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e3e8ffa6cee7742de1cd98c9c83d134b6d5e4a89
+ms.sourcegitcommit: 529763612e8af315d588e85ba807a5c849df57bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361439"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894688"
 ---
 # <a name="register-items-for-a-basic-warehousing-enabled-item-using-an-item-an-item-arrival-journal"></a>Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du registrerar artiklar via artikelinförseljournalen när du använder “grundläggande lagerstyrning” i modulen Lagerhantering. Detta görs vanligtvis av en inleveransansvarig. Du kan köra den här proceduren i demonstrationsdataföretaget USMF med exempelvärdena som visas.  Om du inte använder USMF måste du ha en bekräftad inköpsorder med en öppen inköpsorderrad innan du startar den här guiden. Artikeln på raden måste finnas i lager och får inte innehålla produktvarianter och spårningsdimensioner. Och artikeln behöver associeras med en lagringsdimension grupp, där webbplats och lagerställe är aktiva.
+I den här proceduren visas hur du registrerar artiklar via artikelinförseljournalen när du använder “grundläggande lagerstyrning” i modulen Lagerhantering. Detta görs vanligtvis av en inleveransansvarig. Du kan köra den här proceduren i demonstrationsdataföretaget USMF med exempelvärdena som visas.  Om du inte använder USMF måste du ha en bekräftad inköpsorder med en öppen inköpsorderrad innan du startar den här guiden. Artikeln på raden måste lagras. Och artikeln behöver associeras med en lagringsdimension grupp, där webbplats och lagerställe är aktiva.
 
 
 ## <a name="create-item-arrival-journal-header"></a>Skapa artikelinförseljournalhuvudet

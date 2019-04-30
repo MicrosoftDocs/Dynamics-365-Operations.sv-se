@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773337"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898987"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Ställ in räkenskapsintegration för butikskanaler
 
@@ -60,7 +60,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
 2. Överför konfigurationer av räkenskapskopplingar och leverantörer av skattedokument.
 
     En leverantör av skattedokument ansvarar för generering av skattedokument som representerar butikstransaktioner och händelser som har registrerats i kassan i ett format som även används för interaktionen med en räkenskapsenhet eller tjänst. En leverantör av skattedokument kan generera en representation av en kvittoskrivare i XML-format.
-    
+
     En räkenskapskoppling ansvarar för kommunikationen med en räkenskapsenhet eller tjänst. En räkenskapskoppling kan skicka en kvittoskrivare som en leverantör av skattedokument skapat i XML-format till en kvittoskrivare. Mer information om komponenter för räkenskapsintegration finns i [Process för räkenskapsregistrering och exempel på räkenskapsintegration för kvittoskrivarenheter](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. På sidan **räkenskapskopplingar** (**Butik \> Kanalinställning \> Räkenskapsintegration \> Räkenskapskopplingar**), ladda upp en XML-konfiguration för varje enhet eller tjänst som du tänker använda för räkenskapsintegration.
@@ -150,7 +150,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
     - När du har ändrat en befintlig räkenskapsregistreringsprocess, och de ändringar som kan göra att en annan räkenskapskontakt kan väljas vid körning (till exempel om du ändrar kontaktgruppen för ett räkenskapsregistreringsprocessteg, aktivera en funktionsprofil för koppling i en kopplingsgrupp eller lägg till en ny funktionsprofil för koppling till en kopplingsgrupp).
     - När du ändrar i tilldelningen av tekniska profiler för koppling till maskinvaruprofiler.
 
-8. På sidan **Distributionsschemaläggare**, kör **1070** och **1090**-jobb för att överföra data till kanaldatabasen.
+8. På sidan **Distributionsschema**, kör **1070** och **1090**-jobb för att överföra data till kanaldatabasen.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Ställ in räkenskapstexter för rabatter
 
@@ -185,8 +185,12 @@ Alternativ för felhantering som finns tillgängliga i räkenskapsintegration st
 
     - **Tillåt hoppa över** – den här parametern aktiverar alternativet **hoppa över** i dialogrutan för felhantering.
     - **Tillåt att markera som registrerad** – den här parametern aktiverar alternativet **Markera som registrerad** i dialogrutan för felhantering.
+    - **Fortsätt vid fel** – om den här parametern är aktiverad kan räkenskapsregistreringen fortsätta på kassaregister om räkenskapsregistreringen av en transaktioner eller händelser misslyckas. Annars om du vill köra räkenskapsregistreringen av nästa transaktion eller händelse måste operatorn göra om den misslyckade räkenskapsregistreringen, hoppa över den eller markera transaktioner eller händelser som registrerats. Mer information finns i [Valfri räkenskapsregistrering](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. Alternativen **Hoppa över** och **Markera som registrerad** kräver behörigheten **tillåt hoppa över eller markera som registrerade**. Därför på sidan **behörighetsgrupper** (**Butik \> medarbetare \> behörighetsgrupper**), aktivera behörigheten **tillåt hoppa över eller markera som registrerad**.
+    > [!NOTE]
+    > Om parametern **Fortsätt vid fel** är aktiverad kan parametrarna **Tillåt hoppa över** och **Tillåt markera som registrerad** inaktiveras automatiskt.
+
+2. Alternativen **Hoppa över** och **Markera som registrerad** kräver behörigheten **Tillåt hoppa över registrering eller markera som registrerade**. Därför på sidan **behörighetsgrupper** (**Butik \> medarbetare \> behörighetsgrupper**), aktivera behörigheten **Tillåt hoppa över registrering eller markera som registrerad**.
 3. Alternativen **hoppa över** och **markera som registrerad** låter operatörer ange ytterligare information när räkenskapsregistreringen misslyckas. Om du vill göra funktionen tillgänglig bör du ange infokoderna**hoppa över** och **markera som registrerad** på en grupp för räkenskapskoppling. Informationen som operatörer anger sparas som en infokodtransaktion som kopplas till räkenskapstransaktionen. Mer information om infokoder finns i [Infokoder och infokodgrupper](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ Alternativ för felhantering som finns tillgängliga i räkenskapsintegration st
     > - **Skattedokument** – ett obligatoriskt dokument som ska registreras korrekt (t.ex en kvittoskrivare).
     > - **Icke skattedokument** – ett kompletterande dokument för transaktionen eller händelsen (till exempel ett presentkortkvitto).
 
+4. Om operatören ska kunna fortsätta att bearbeta aktuell åtgärd (till exempel skapa eller slutföra en transaktion) efter att ett hälsokontrollfel inträffar, bör du aktivera behörigheten **Tillåt hoppa över hälsokontrollfel** på sidan **Behörighetsgrupper** (**Butik \> Medarbetare \> Behörighetsgrupper**). Mer information om hälsokontrollproceduren finns i [hälsokontroll av räkenskapsregistrering](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Ställ in räkenskapsrapporter X/Y från kassan
 
 För att aktivera räkenskapsrapporter X/Z att köras från kassan, bör du lägga till nya knappar i kassalayouten.
@@ -211,3 +217,12 @@ För att aktivera räkenskapsrapporter X/Z att köras från kassan, bör du läg
     3. Lägg till en ny knapp och ange knappegenskapen **Skriv ut skatt Z**.
     4. På sidan **Distributionsschemaläggare** kör jobb **1090** för att överföra ändringar till kanaldatabasen.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktivera manuell körning av uppskjutna räkenskapsregistreringar
+
+Om du vill aktivera manuell körning av en senarelagd räkenskapsregistrering bör du lägga till en ny knapp till en kassalayout.
+
+- På sidan **knapprutnät**, följer du instruktionerna i [lägga till knappen anpassad åtgärd till kassalayouten i Butik administration](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) för att installera designern och uppdatera en kassalayout.
+
+    1. Välj layout som ska uppdateras.
+    2. Lägg till en ny knapp och ange knappegenskapen **Slutför räkenskapsregistreringsprocess**.
+    3. På sidan **Distributionsschemaläggare** kör jobb **1090** för att överföra ändringar till kanaldatabasen.

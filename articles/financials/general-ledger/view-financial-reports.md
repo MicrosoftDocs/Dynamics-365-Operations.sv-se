@@ -3,7 +3,7 @@ title: Visa ekonomiska rapporter
 description: Den här ämnet innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics 365 for Finance and Operations. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 author: kweekley
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.openlocfilehash: 0ba92ab4f751758c4adf26885ebb7b2c5290ecac
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791451"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894598"
 ---
 # <a name="view-financial-reports"></a>Visa ekonomiska rapporter
 
@@ -46,12 +46,11 @@ Ekonomiska rapporter kan innehålla flera detaljnivåer. Den ekonomiska nivån �
 Om informationen är budgetdata, kan du välja att öppna budgetkontoposter. Om du vill stänga någon av nivåerna i rapporten och gå tillbaka till starten, kan du antingen trycka på Esc eller klicka på knappen **Stäng** (**X**) överst till höger.
 
 ## <a name="change-report-options"></a>Ändra rapportalternativ
-Du kan ändra rapportdatumet, lägga till attribut och dimensionsfilter samt ändra budgetscenariot i rapporten **Utfall kontra budget**. I åtgärdsfönstret klickar du på **Rapportalternativ** och sedan följer du något eller några av följande steg:
+Du kan lägga till attribut och dimensionsfilter samt ändra budgetscenariot i rapporten **Utfall kontra budget**. I åtgärdsfönstret klickar du på **Rapportalternativ** och sedan följer du något eller några av följande steg:
 
--   Ändra basperioden och basåret i en rapport genom att välja en basperiod och ett basår och klicka på **OK**.
 -   Välj attributfilter till en rapport genom att markera **Lägg till ett attributfilter**. Välj attributet, skriv attributvärdet och klicka sedan på **OK**. Om du t.ex. väljer attributet **Kontokategori** anger du **FÖRSÄLJNING** som attributvärde. Ta bort ett attributfilter genom att klicka på **Ta bort**.
 -   Välj dimensionsfilter till en rapport genom att markera **Lägg till ett dimensionsfilter**. Välj dimension och skriv sedan dimensions-ID eller välj dimensionen i listan. Ta bort ett dimensionsfilter genom att klicka på **Ta bort**.
--   Ändra scenariot i rapporten **Utfall kontra budget** genom att väja ett nytt scenario och sedan klicka på **OK**. Om det valda scenariot gäller ett annat år, uppdaterar du basåret. Om t.ex. det aktuella scenariot gäller FY2015, och du markerar ett nytt scenario som gäller FY2016, ska du ändra basåret till **2016**.
+-   Ändra scenariot i rapporten **Utfall kontra budget** genom att väja ett nytt scenario och sedan klicka på **OK**. Om det valda scenariot är ett annat räkenskapsår kommer inga resultat att returneras. Till exempel om en rapport genereras för FY2015 och det aktuella scenariot för FY2015 och det nya valda scenariot är FY2016, returneras inga resultat. Om ett nytt scenario för ett annat räkenskapsår behövs, generera en ny version av rapporten för verksamhetsåret relaterat till scenariot.
 
 När du klickar på **OK** sparas alla alternativ du har valt i rapporten. Om du inte vill använda de valda alternativen klickar du på **Avbryt**.
 

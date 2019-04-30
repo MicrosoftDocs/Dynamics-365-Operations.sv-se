@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 for Talent till Dynamics 365 for Finance and Operations-integrering av frågor och svar
 description: Det här avsnittet beskriver vilken information som synkroniseras Talent och Finance and Operations-integrering.
-author: negudava
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2019
 ms.topic: article
@@ -9,20 +9,20 @@ ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: negudava
+ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: aea025bc4898d6399e82030cf1f52b21949e014f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306295"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950093"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent till Dynamics 365 for Finance and Operations-integrering av frågor och svar
 
@@ -34,15 +34,15 @@ Det här avsnittet svarar på vanliga frågor om vilken information som synkroni
 
 Med Core Human Resources (HR) synkroniseras en delmängd data. En lista över alla enheter finns i [integrering från Dynamics 365 for Talent till Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
 
-För Attract och Onboard, är all data inbyggd i Common Data Service (CDS) för appar.
+För Attract och Onboard, är all data inbyggd i Common Data Service.
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jag skapa en ny mappning utan att använda mallarna?
 
-Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integration. Mer information om projekt, mallar och dataintegration (DI) finns i [integrera data i Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integration. Mer information om projekt, mallar och dataintegration (DI) finns i [integrera data i Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Kan jag mappa ekonomiska dimensioner för överföring mellan Talent och Finance and Operations?
 
-Ekonomiska dimensioner finns inte för närvarande i CDS för appar och ingår därför inte i standardmallen. Mallen är planerad men det finns för närvarande ingen tidslinje när den släpps.
+Ekonomiska dimensioner finns inte för närvarande i Common Data Service och ingår därför inte i standardmallen. Mallen är planerad men det finns för närvarande ingen tidslinje när den släpps.
 
 För data som finns i Finance and Operations men inte finns i Talent, länkar ihop de två systemen med hjälp av **konfigurerar länkar** i Talent. Mer information om hur du konfigurerar länkar mellan Talent och Finance and Operations finns i [Vad är nytt eller ändrat i Dynamics 365 for Talent Core HR (31 oktober 2018)](whats-new-talent-october-31.md).
 
@@ -64,7 +64,7 @@ Med hjälp av "Avancerad fråga" kan du filtrera och omforma källdata innan du 
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kan jag ange vilka fält som ska skickas till Finance and Operations för en viss enhet?
 
-Fält kan läggas till eller tas bort från integrationsaktiviteten. Alla fält som existerar på entiteten CDS för appar (CDS 2.0) fylls i från Core HR.
+Fält kan läggas till eller tas bort från integrationsaktiviteten. Alla fält som existerar på entiteten Common Data Service fylls i från Core HR.
 Ytterligare data kan fyllas i via PowerApps.
 
 ![](media/SpecifyFieldsIncludedInIntegration.png)
@@ -83,7 +83,7 @@ Nej, dataintegration kommer inte att fånga borttagna poster för dataöverföri
 
 ## <a name="can-i-rerun-the-errored-execution-if-so-will-it-send-a-full-file-or-only-the-changes"></a>Kan jag köra om felaktig körning? I så fall skickar den en fullständig fil eller bara ändringarna?
 
-Den första körningen av dataintegration är alltid en fullständig körning. Efterföljande körningar baseras på ändringsspårning. När en felkörning utförs, extraherar den posterna i körningen och skickar ut de senaste ändringarna från CDS.
+Den första körningen av dataintegration är alltid en fullständig körning. Efterföljande körningar baseras på ändringsspårning. När en felkörning utförs, extraherar den posterna i körningen och skickar ut de senaste ändringarna från Common Data Service.
 
 ## <a name="when-i-save-the-project-i-get-the-error-project-has-mapping-errors-what-do-i-do"></a>När jag sparar projektet visas felmeddelandet: ”projektet har mappningsfel”. Vad ska jag göra?
 
@@ -97,15 +97,15 @@ Ja, för varje juridisk person i Finance and Operations behöver du ett separat 
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Behöver jag överföra data som inte ingår i standardmallen som tillhandahålls av Microsoft. Kan jag göra det?
 
-Ja, fält kan läggas till eller tas bort från den nuvarande mallen. Mallen kan ändras så att den inkluderar ytterligare data från andra CDS för appar-entiteter. Enheten måste ha CDS för appar inkluderad i mallen. 
+Ja, fält kan läggas till eller tas bort från den nuvarande mallen. Mallen kan ändras så att den inkluderar ytterligare data från andra Common Data Service-entiteter. Enheten måste ha Common Data Service inkluderad i mallen. 
 
 ## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Jag skapade precis nya miljöer för Finance and Operations och Talent och jag får felet ”datavärdet strider mot integritetsbegränsningar”. Varför?
 
 Orsaker till felet kan vara:
 
-- Dataöverföring resulterade i dubbla extraheringar av poster vid källan (CD).
+- Dataöverföring resulterade i dubbla extraheringar av poster vid källan (Common Data Service).
 
-- Dataöverföringen har null-värden för fält som behövs i Finance and Operations. Verifiera data på CDS-skivor som uppfyller behovet av Finance and Operations.
+- Dataöverföringen har null-värden för fält som behövs i Finance and Operations. Verifiera data på Common Data Service som uppfyller behovet av Finance and Operations.
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Om det finns exekveringsfel och anställningsidentifikationen inte synkroniserades, hur hittar jag det historikjobb som har misslyckad medarbetarpost?
 
@@ -127,17 +127,17 @@ Spåra tiden från tidigare dataintegrerare körningshistorik och letar upp inde
 
 ## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>När du integrerar Talent och Finance and Operations ser jag inte mina Talent-data i Finance and Operations. Vad ska jag göra?
 
-Integrering med Finance and Operations är en tvåstegsprocess. Kontrollera först att Talent-data är uppdaterade och finns tillgänglig i CDS. Detta är en synkronisering nästan i realtid och kan kontrolleras i PowerApps genom att granska data i datatabellerna.
+Integrering med Finance and Operations är en tvåstegsprocess. Kontrollera först att Talent-data är uppdaterade och finns tillgänglig i Common Data Service. Detta är en synkronisering nästan i realtid och kan kontrolleras i PowerApps genom att granska data i datatabellerna.
 
-![Data i CDS](media/DataInCDS.png)
+![Data i Common Data Service](media/DataInCDS.png)
 
-Om data inte visas som förväntat i CDS, kontrollerar du att enheten stöds i integrationen. Om du vill inkludera ytterligare information i CDS krävs en ändring på Microsoft-sidan.
+Om data inte visas som förväntat i Common Data Service, kontrollerar du att enheten stöds i integrationen. Om du vill inkludera ytterligare information i Common Data Service krävs en ändring på Microsoft-sidan.
 
-Om enheten stöds och data som finns på CDS-skivor, verifiera att mappningen är korrekt i dataintegrerare. Om integratormappningen ser bra ut, verifiera att datahanteringsjobb har körts. Fel kan uppstå vid körning av batch-jobb. Mer information om hur du använder datahantering finns i [Datahantering](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Om enheten stöds och data som finns på Common Data Service, verifiera att mappningen är korrekt i dataintegrerare. Om integratormappningen ser bra ut, verifiera att datahanteringsjobb har körts. Fel kan uppstå vid körning av batch-jobb. Mer information om hur du använder datahantering finns i [Datahantering](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Adresser för mina medarbetare är felaktiga när jag har importerat dem till Finance and Operations. Vad ska jag göra?
 
-Nummerserien för **plats-ID** använder samma mönster i både Talent och Finance and Operations. Nummerserien måste vara unika på båda sidor så att det inte finns några adresskollisioner när du integrerar data från CDS till Finance and Operations.
+Nummerserien för **plats-ID** använder samma mönster i både Talent och Finance and Operations. Nummerserien måste vara unika på båda sidor så att det inte finns några adresskollisioner när du integrerar data från Common Data Service till Finance and Operations.
 
 Under implementering av Talent, verifiera att nummerserier inte är desamma i Talent och Finance and Operations. Verifiera att alla nummerserier inte är identiska där data kan behållas i båda systemen.
 
@@ -147,7 +147,7 @@ Se till att du väljer Dynamics 365 for Finance and Operations (för närvarande
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Vid synkronisering av anställningar får jag felet ”CompanyInfo_FK finns inte” eller ”värdet 12/31/2154 11:59:59 pm i fältet Slutdatum för anställning saknas i den relaterade tabellen Anställning. Vad ska jag göra?
 
-Se till att du mappar till rätt juridiska personer. Synkronisering av juridisk person ingår inte i standardmallen, så det är normalt att varje juridisk person som finns i Talent och CDS även finns i Finance and Operations.
+Se till att du mappar till rätt juridiska personer. Synkronisering av juridisk person ingår inte i standardmallen, så det är normalt att varje juridisk person som finns i Talent och Common Data Service även finns i Finance and Operations.
 Se också till att du väljer rätt juridiska personer för associerad anslutningsinställning.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>Efter installationen av mitt projekt verkar fältmappningen för Finance and Operations vara tom. Vad ska jag göra?
@@ -160,11 +160,11 @@ Uppdatera datatabellerna i Finance and Operations genom att gå till **datahante
 
 - Dataintegrerare (DI): 
 
-  - [Integrera data i Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrera data i Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
 
   - [dataintegrerare felhantering och felsökning](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
 
-  - [Svara på DSR-förfrågningar för systemgenererade loggar i PowerApps, Microsoft Flow och Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Svara på DSR-förfrågningar för systemgenererade loggar i PowerApps Microsoft Flow och Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Datahantering
 

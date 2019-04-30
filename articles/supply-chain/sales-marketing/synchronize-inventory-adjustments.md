@@ -3,7 +3,7 @@ title: Synkronisera lageröverföringar och justeringar från Field Service till
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerjusteringar och överföringar från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: aa54945cea5821da163e1f6ea1747ac29b31a3ce
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 75181661c41d238cdc06ffbb6969a2efd7d88d46
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "308378"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842425"
 ---
 # <a name="synchronize-inventory-adjustments-from-field-service-to-finance-and-operations"></a>Synkronisera lagerjusteringar från Field Service till Finance and Operations
 
@@ -38,8 +38,8 @@ Det här avsnittet beskriver de mallar och underliggande uppgifter som används 
 Följande mall och underliggande uppgifter används för att synkronisera lagerjustering och överföringar från Microsoft Dynamics 365 for Field Service till Microsoft Dynamics 365 for Finance and Operations.
 
 **Mallar i dataintegrering**
-- Lagerjustering (Field Service till Finance and Operations)
-- Lageröverföringar (Field Service till Finance and Operations)
+- Lagerjustering (Field Service till Fin and Ops)
+- Lageröverföring (Field Service till Fin and Ops)
 
 **Uppgifter i dataintegreringsprojektet**
 - Lagerjusteringar
@@ -71,11 +71,11 @@ Lagerjournaler från integreringning som genereras av integrationen kan automati
 
 I följande illustrationer visas en mallmappning i dataintegrering.
 
-### <a name="inventory-adjustment-field-service-to-finance-and-operations-inventory-adjustment"></a>Lagerjustering (Field Service till Finance and Operations): Lagerjustering
+### <a name="inventory-adjustment-field-service-to-fin-and-ops-inventory-adjustment"></a>Lagerjustering (Field Service till Fin and Ops): Lagerjustering
 
 [![Mallmappning i dataintegrering](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
-### <a name="inventory-transfer-field-service-to-finance-and-operations-inventory-transfer"></a>Lageröverföring (Field Service till Finance and Operations): Lageröverföring
+### <a name="inventory-transfer-field-service-to-fin-and-ops-inventory-transfer"></a>Lageröverföring (Field Service till Fin and Ops): Lageröverföring
 
 [![Mallmappning i dataintegrering](./media/FSTrans1.png)](./media/FSTrans1.png)

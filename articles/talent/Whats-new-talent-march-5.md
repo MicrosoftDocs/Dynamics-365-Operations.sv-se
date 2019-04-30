@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "783013"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949815"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (5 mars 2019)
 
@@ -35,7 +35,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Talent.
 
 ### <a name="extending-option-sets-in-attract"></a>Utökade alternativuppsättningar i Attract
 
-I Attract finns flera fält som består av alternativuppsättningar i Common Data Service (CDS). Nya funktioner har införts för att utöka alternativuppsättningar, från och med orsaksfältet **Avvisning**, fältet **Anställningstyp** och fältet **tjänsteåldertyp**.
+I Attract finns flera fält som består av alternativuppsättningar i Common Data Service. Nya funktioner har införts för att utöka alternativuppsättningar, från och med orsaksfältet **Avvisning**, fältet **Anställningstyp** och fältet **tjänsteåldertyp**.
 
 > [!IMPORTANT]
 > Jobbpublicering till LinkedIn-funktionen kräver användning av fälten **Anställningstyp** och **Tjänsteåldertyp** på sidan **Projektdetaljer**. Standardvärden i dessa fält stöds av LinkedIn och visas när jobbet har publicerats. Om du publicerar jobb på LinkedIn och du ändrar befintliga alternativuppsättningsvärden i fälten, kommer jobbet fortfarande publiceras och LinkedIn visar inte de anpassade värdena för **Anställningstyp** och **Tjänsteåldertyp**.
@@ -70,8 +70,8 @@ Med denna ändring, när du begär ändringar i befintliga befattningar, kommer 
 ### <a name="other-miscellaneous-bug-fixes"></a>Diverse andra felkorrigeringar
 Den här versionen innehåller andra mindre felkorrigeringar.
 
-### <a name="upgrade-to-cds-for-apps"></a>Uppgradera till CDS för appar
-Tidsgränser för uppgradering till CDS för appar närmar sig snabbt. Logga in på PowerApps administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgraderar till Common Data Service för appar](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### <a name="upgrade-to-common-data-service"></a>Uppgradera till Common Data Service
+Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 

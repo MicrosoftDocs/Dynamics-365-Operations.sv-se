@@ -3,7 +3,7 @@ title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363486"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975861"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Det här avsnittet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 
@@ -47,6 +48,8 @@ Sidan **användaralternativ** innehåller flera systeminställningar för den ak
 - **Inställningar** – Välj standardvärden som används varje gång du öppnar Finance and Operations. Dessa värden inkluderar företaget, den första sidan och standardläget visa/redigera. (Det/redigeringsläget bestämmer om en sida är låst för visning eller öppnas för redigering i varje gång du öppnar den.) Den här fliken innehåller också alternativ för språk, tidszon, och datum, tid och nummerformat. Den här fliken innehåller dessutom flera diverse inställningar som kan variera från version till version.
 - **Konto:** - Justera ditt användarnamn och andra kontorelaterade inställningar.
 - **Arbetsflöde** – Välj arbetsflöderelaterade alternativ.
+
+Förutom att ändra dina användarinställningar kan du också visa och ta bort dina användardata och anpassningar genom att klicka på knappen **användardata**. När du använder programmet sparas många av dina val för att underlätta för dig när du använder systemet i framtiden. Särskilt fliken **Anpassning** låter dig visa och hantera personliga ändringar du har gjort på sidor i systemet. Bildtexter för funktioner, popup-fönstret som introducerar nya funktioner i produkten (tillgänglig i plattformsuppdatering 26) kan också återställas från denna flik så att du meddelas om tidigare förekommande funktioner.  
 
 ## <a name="implicit-personalizations"></a>Uttryckliga anpassningsalternativ
 
@@ -160,7 +163,7 @@ Användare med administratörsbehörighet kan även hantera anpassningsalternati
 
 - **Tillämpa** – Du kan importera eller välja en anpassning för en eller flera användare. Om du vill använda en anpassning till en eller flera användare, markerar du först en roll och användare som har rollen. Välj sedan en befintlig anpassning som gäller för de valda användare eller importera en anpassningsfil. Anpassningen valideras och gäller för de alla valda användare nästa gång de öppnar den markerade sidan.
 - **Rensa** – Du kan rensa alla anpassningar för arbetsyta för en eller flera användare. Välj först en sida eller arbetsyta för att se en lista över de användare som har anpassat den. Sedan väljer du de användare vars anpassningar för den aktuella sidan eller arbetsytan ska avmarkeras och välj **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om en anpassning sparades för sidan eller arbetsytan, kan den anpassningen emellertid återimporteras.
-- **Manager per användare** – Välj en användare för att visa listan över sidor som personen har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare.
+- **Hanterare per användare** – Välj en användare för att visa listan över sidor som användaren har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare. Dessutom kan du återställa bildtexter för funktioner för den markerade användaren, vilket innebär att alla tidigare uppsagda popup-fönster som införde nya funktioner visas nästa gång som användaren stöter på dessa funktioner.   
 - **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I detta fall tas anpassningarna bort. Alla sidor återställs bara till standardinställningarna för alla användare. Om du senare återaktiverar anpassningen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Anpassning av lagerdimensioner

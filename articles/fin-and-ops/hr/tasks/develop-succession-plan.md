@@ -1,7 +1,7 @@
 ---
 title: Utveckla successionsplan
 description: I takt med att organisationen växer och du börjar planera successioner kan du vilja hitta någon som har liknande kompetens som en annan person.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmSkillMapping
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 63999252fa00ba474d1e40f696029973f746ba2c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8ccc7cea4c69c9ff583af6a393ea3ffea5e737bd
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339198"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "856518"
 ---
 # <a name="develop-succession-plan"></a>Utveckla successionsplan
 

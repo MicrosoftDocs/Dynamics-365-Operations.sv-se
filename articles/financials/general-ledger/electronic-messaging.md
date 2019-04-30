@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5326642553c7efcebc6c6af953e2dafe9e62e9ec
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 2753f2828b4890d9893a1538e905bd7061e1bc33
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832205"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902900"
 ---
 # <a name="electronic-messaging"></a>Elektroniska meddelanden
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 Det här avsnittet innehåller information om översikt och inställningar för elektronisk post i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -32,13 +33,13 @@ Myndigheter och rättsliga myndigheter i olika länder och regioner i världen h
 
 Funktionen för elektroniska meddelanden i Finance and Operations stöder olika processer för elektroniska driftskompatibilitet mellan Finance and Operations och de system som myndigheter och rättsliga myndigheter för rapportering, avsändning och mottagning av officiell information.
 
-Funktionen för elektroniska meddelanden ingår i modulen **elektronisk rapportering** (ER). Därför kan du ställa in ER-format för elektroniska meddelanden. Mer information finns i [Elektronisk rapportering (ER)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Funktionen för elektroniska meddelanden ingår i modulen **elektronisk rapportering** (ER). Därför kan du ställa in ER-format för elektroniska meddelanden. Mer information finns i [Elektronisk rapportering (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Elektroniska meddelanden utifrån följande enheter:
 
 - **Elektroniskt meddelande** – en rapport eller deklaration som ska rapporteras och/eller överföras internt. Ett exempel är en rapport som skickas till ett skattekontor.
 - **Elektroniska meddelandeartiklar** - poster som ska tas med i meddelandet som rapporteras.
-- **Elektronisk meddelandebehandling** – en åtgärdskedja, antingen länkad eller ej länkad, som bör köras för att samla in nödvändiga uppgifter, generera rapporter, lagra data i Microsoft Azure Blob-lagring, överföra rapporter från utanför systemet, få svar från utanför systemet och uppdatera databasen baserat på den information som tas emot.
+- **Elektronisk meddelandebehandling** – en åtgärdskedja som bör köras för att samla in nödvändiga uppgifter, generera rapporter, lagra data i Microsoft Azure Blob-lagring, överföra rapporter från utanför systemet, få svar från utanför systemet och uppdatera databasen baserat på den information som tas emot. Åtgärderna i kedjan kan vara antingen länkade eller inte länkade
 
 Följande illustration visar flödet av data för elektroniska meddelanden.
 
@@ -48,7 +49,7 @@ Funktionen för elektroniska meddelanden stöder följande scenarier:
 
 - Manuellt skapa meddelanden och generera rapporter utifrån associerade ER-exportformat för olika typer: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text och Microsoft Word.
 - Automatiskt skapa och bearbeta meddelanden som baseras på information som har begärs och erhållits från en myndighet via ett associerat ER-importformat.
-- Samla in och bearbeta information från en datakälla (Finance and Operations-tabell) som meddelandeartiklar.
+- Samla in och bearbeta information från en datakälla som meddelandeartiklar. Datakällan är en Finance and Operations-tabell.
 - Lagra ytterligare information och utvärdera olika värden genom att uttryckligen anropa definierade körbara klasser i förhållande till meddelanden eller meddelandeartiklar.
 - Sätta samman information som samlas in i en meddelandeartikel, dela upp den informationen per meddelande och generera rapporter med tillhörande ER-exportformat.
 - Skicka rapporter som genererats till en webbtjänst med hjälp av säkerhetsinformation som lagras i Azure Key Vault.
@@ -61,7 +62,7 @@ Funktionen för elektroniska meddelanden stöder följande scenarier:
 
 Elektroniska meddelanden kan hjälpa dig att underhålla olika processer för elektronisk rapportering för olika typer av dokument. I vissa komplexa scenarier ställs elektroniska meddelanden in med en kombination av många meddelandestatus, status för meddelandeartiklar, åtgärder. extra, fält och körbara klasser. För dessa scenarier finns paket med datatabeller tillgängliga för import. Om du använder dessa paket med datatabeller bör du importera dem till en juridisk person med hjälp av verktyget för datahantering. Mer information om hur du använder verktyget för datahantering finns i [Datahantering](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
-Om du inte importerar ett paket för datatabeller kan du manuellt ställa in funktionen för elektroniska meddelanden. I detta fall måste du ställa in följande element: 
+Om du inte importerar ett paket för datatabeller kan du manuellt ställa in funktionen för elektroniska meddelanden. I detta fall måste du ställa in följande element:
 
 - [Nummerserier](#number-sequences)
 - [Artikeltyper och status för meddelande](#message-item-types-and-statuses)
@@ -78,7 +79,7 @@ Följande avsnitt innehåller mer information om varje element.
 
 ### <a name="number-sequences"></a>Nummerserier
 
-Ställ in nummerserier för både meddelanden och meddelandeartiklar. Nummerserierna används för att automatiskt numrera meddelandena och meddelandeartiklarna och de nummer som tilldelas används som unika identifierare för meddelanden och meddelandeartiklar i systemet. Du kan ställa in nummerserier för elektroniska meddelanden på sidan **Redovisningsparametrar** (**Redovisning** \> **Redovisningsinställningar** \> **Redovisningsparametrar**).
+Ställ in nummerserier för både meddelanden och meddelandeartiklar. Nummerserierna används för att automatiskt numrera meddelandena och meddelandeartiklarna. Nummer som tilldelas används som unika identifierare för meddelanden och meddelandeartiklar i systemet. Du kan ställa in nummerserier för elektroniska meddelanden på sidan **Redovisningsparametrar** (**Redovisning** \> **Redovisningsinställningar** \> **Redovisningsparametrar**).
 
 ### <a name="message-item-types-and-statuses"></a>Artikeltyper och status för meddelande
 
@@ -86,49 +87,49 @@ Artikeltyper för meddelanden identifierar de typer av poster som kommer att anv
 
 Artikelstatus för meddelanden identifierar den status som ska tillämpas på meddelandeartiklar i bearbetningen som du konfigurerar. Du kan ställa in artikeltyper för meddelanden på sidan **Artikelstatus för meddelanden** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Artikelstatus för meddelanden**).
 
-**Tillåt borttagning av** parameter för en meddelandeartikelstatus anger om användare kan ta bort en meddelandeartikel i denna status via formuläret **Elektroniska meddelanden** eller formuläret **Elektroniska meddelandeartiklar**. 
+Parametern **Tillåt borttagning av** för en meddelandeartikelstatus anger om användare kan ta bort meddelandeartiklar som har denna status på sidan **Elektroniska meddelanden** eller sidan **Elektroniska meddelandeartiklar**.
 
 ### <a name="message-statuses"></a>Meddelandestatus
 
 Ställ in artikelstatus för meddelanden som ska vara tillgänglig i meddelandebearbetning. Du kan ställa in meddelandestatus på sidan **Artikelstatus för meddelanden** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Meddelandestatus**).
 
-Fältbeskrivning:
+I följande tabell beskrivs fälten på sidan **Meddelandestatusar**.
 
-| Fältnamn           | Beskrivning |
-|----------------------|-------------|
-|Meddelandestatus        | Unikt namn på status på elektroniskt meddelande som kännetecknar status för ett meddelande i varje tidpunkt. Detta namn visas i form av elektroniska meddelanden och i en logg som är relaterad till elektroniskt meddelande. |
-|Beskrivning           | Beskrivning som avser statusen för elektroniskt meddelande      |
-|Svarstyp         | Vissa åtgärder i en bearbetning kan leda till mer än en svarstyp. Som till exempel åtgärd av typen **webbtjänst** kan antingen resultera i svarstypen **har körts** eller **tekniska fel** beroende på resultatet av körningen. I det här fallet måste meddelandestatus för båda svarstyper definieras. Se [Åtgärdstyper för meddelandebearbetning](#message-processing-action-types) för mer information om åtgärdstyper och relatera dem till svarstyper. |
-|Status för meddelandeartikel   |Dessa är fall när status för elektroniska meddelanden måste påverkar respektive status för relaterade meddelandeartiklar. Koppla denna status för meddelandeartikel i det här fältet genom att välja Sök. |
-|Tillåt borttagning          | **Tillåt borttagning** parameter för status för elektroniskt meddelande anger om användare kan ta bort ett elektroniskt meddelande i denna status via formuläret **Elektroniska meddelanden**.            |
+| Fältnamn          | Beskrivning |
+|---------------------|-------------|
+| Meddelandestatus      | Ange ett unikt namn för meddelandestatus. Meddelandestatusar används för att beskriva tillståndet i ett elektroniskt meddelande vid varje tidpunkt. Namnet som du anger visas på sidan **elektroniska meddelanden** och i en logg som är relaterad till elektroniska meddelanden. |
+| Beskrivning         | Ange en beskrivning av meddelandestatusen. |
+| Svarstyp       | Välj typ av svar för meddelandestatusen. Vissa åtgärder i en bearbetning kan ge mer än en svarstyp. Till exempel åtgärd av typen **webbtjänst** kan ge svar av antingen typen **har körts** eller **tekniska fel** beroende på resultatet av körningen. I det här fallet måste du definiera statusar för båda svarstyper. För mer information om åtgärdstyper och typer av svar som är relaterade till dem, se [Åtgärdstyper för meddelandebearbetning](#message-processing-action-types). |
+| Status för meddelandeartikel | Status för ett elektroniskt meddelande måste påverka status för relaterad meddelandeartikel. Välj en meddelandeartikelstatus i detta fält för att associera den med meddelandestatus. |
+| Tillåt borttagning        | Markera den här kryssrutan om användare ska kunna ta bort elektroniska meddelanden som har denna status på sidan **elektroniska meddelanden**. |
 
 ### <a name="additional-fields"></a>Ytterligare fält
 
-Funktionen för elektroniska meddelanden låter dig fylla i poster från en transaktionell tabell. På så sätt kan du förbereda posterna för rapportering och sedan rapportera dem. Ibland finns det inte tillräckligt med information i den transaktionella tabellen för att rapportera en post enligt rapportkraven. Du kan fylla i all information som ska rapporteras för en post genom att ställa in ytterligare fält. Ytterligare fält kan associeras med både meddelanden och meddelandeartiklar. Du kan ställa in ytterligare fält på sidan **Ytterligare fält** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Ytterligare fält**).
+Funktionen för elektroniska meddelanden låter dig fylla i poster från en transaktionell tabell. På så sätt kan du förbereda posterna för rapportering och sedan rapportera dem. Transaktionsregister har ibland dock inte tillräckligt med information för att fylla i poster på ett sätt som uppfyller rapporteringskraven. Du kan fylla i all information som ska rapporteras för en post genom att ställa in ytterligare fält. Ytterligare fält kan associeras med både meddelanden och meddelandeartiklar. Du kan ställa in ytterligare fält på sidan **Ytterligare fält** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Ytterligare fält**).
 
 I följande tabell beskrivs i allmänna fälten på sidan **Ytterligare fält**.
 
+| Fält       | Beskrivning |
+|-------------|-------------|
+| Fältnamn  | Ange namnet på ett ytterligare attribut med meddelandeartiklar som är relaterade till processen. Detta namn visas i användargränssnittet när du arbetar med processen. Den kan också användas i ER-konfigurationer som är relaterade till processen. |
+| Beskrivning | Ange en beskrivning av det ytterligare fältet. |
+| Användarredigering   | Ange detta alternativ till **Ja** om användare ska kunna ändra värdet för ytterligare fält i användargränssnittet. |
+| Räknare     | Ange detta alternativ till **Ja** om det ytterligare fältet ska innehålla en nummersekvens i ett elektroniskt meddelande. Värde för ytterligare fält fylls i automatiskt när du kör en åtgärd av typen **Export av elektronisk rapportering**. |
+| Dolt      | Ange detta alternativ till **Ja** om det ytterligare fältet ska döljas i användargränssnittet. |
+
+Varje ytterligare fält kan ha olika värden för bearbetning. Du definierar dessa värden på snabbfliken **Värden**. Följande register beskriver fälten.
+
 | Fält                | Beskrivning |
 |----------------------|-------------|
-| Fältnamn           | Ange namnet på ett ytterligare attribut med meddelandeartiklar som är relaterade till processen. Detta namn visas i användargränssnittet när du arbetar med processen. Den kan också användas i ER-konfigurationer som är relaterade till processen. |
-| beskrivning          | Ange en beskrivning på ytterligare attribut med meddelandeartiklar som är relaterade till processen. |
-| Användarredigering            | I de fall när användaren måste kunna ändra värdet för ytterligare fält från användargränssnitt, ange kryssutan till **Ja**, annars **Nej**. |
-| Räknare              | När ytterligare fält måste innehålla ett löpnummer i ett elektroniskt meddelande, markera den här kryssrutan. Värden för ytterligare fält fylls i automatiskt när du kör en åtgärd av typen ”Export av elektronisk rapportering”.  |
-| Dolt               | Markera den här kryssrutan när ytterligare fält måste döljas från användargränssnittet.  |
-
-Varje ytterligare fält kan ha olika värden för bearbetning. Du kan ange dessa värden på snabbfliken Värden:
-
-| Fält                | Beskrivning |
-|----------------------|-------------|
-| Fältvärde          | Ange fältvärdet som ska användas i relation till ett meddelande eller meddelandeartikel under rapportering. |
-| Fältbeskrivning    | Ange en beskrivning av fältvärdet som ska användas i relation till ett meddelande eller meddelandeartikel under rapportering. |
-| Kontotyp         | Vissa värden i ytterligare fält kan begränsas till särskilda kontotyper. Välj ett av följande värden: **Alla**, **Kunden**, eller **Leverantör**. |
-| Kontokod         | Om du har valt **Kund** eller **Leverantör** i fältet **Kontotyp** kan du begränsa användningen av fältvärdena ytterligare till en viss grupp eller tabell. |
+| Fältvärde          | Ange fältvärdet som ska användas till ett meddelande eller meddelandeartikel under rapportering. |
+| Beskrivning          | Ange en beskrivning av fältvärdet. |
+| Kontotyp         | Vissa fältvärden kan begränsas till särskilda kontotyper. Välj ett av följande värden: **Alla**, **Kunden**, eller **Leverantör**. |
+| Kontokod         | Om du har valt **Kund** eller **Leverantör** i fältet **Kontotyp** kan du begränsa användningen av fältvärdet ytterligare till en viss grupp eller tabell. |
 | Konto-/gruppnummer | Om du har valt **Kund** eller **Leverantör** i fältet **Kontotyp** och om du anger en grupp eller en tabell i fältet **Kontokod** kan du ange en viss grupp eller utländskt ombud i det här fältet. |
 | Giltighet            | Ange datum då värdet bör börja övervägas. |
 | Utgång           | Ange datum då värdet bör sluta övervägas. |
 
-Kombinationer av kriterier som anges i **Konto/gruppnummer**, **Kontokod**, **Giltighet**, **Utgång** påverkar inte vanligtvis val av värde för ytterligare fält men kan användas i körbara klassen för att implementera viss specifik logik för beräkning av ytterligare fältvärde.
+Som standard definieras kombinationer av villkor av fälten **Konto-/ gruppnummer**, **Kontokod**, **Giltighet** och **Utgång** påverkar inte valet av värdena för ytterligare fält. Men dessa kombinationer kan användas i en körbar klass för att genomföra särskild affärslogik som beräknar värden för ytterligare fält.
 
 ### <a name="executable-class-settings"></a>Körbara klassinställningar
 
@@ -144,16 +145,16 @@ Du kan manuellt ställa in en körbar klass på sidan **Körbara klassinställni
 | Körningsnivå       | Det här fältet anges automatiskt, eftersom värdet ska fördefinieras för den markerade körbara klassen. Det här fältet begränsar nivån som den relaterade utvärderingen körs på. |
 | Klassbeskrivning     | Det här fältet anges automatiskt, eftersom värdet ska fördefinieras för den markerade körbara klassen. |
 
-Vissa körbara klasser kan ha obligatoriska parametrar som måste anges innan den körbara klassen körs för första gången. Om du vill definiera dessa parametrar klickar du på knappen **parametrar** i åtgärdsfönstret, ange motsvarande värden och fält i dialogrutan och klicka på **OK**. Det är viktigt att klicka på **OK**, annars kommer parametern inte att sparas till basen och den körbara klassen anropas inte på rätt sätt.
+Vissa körbara klasser kan ha obligatoriska parametrar som måste anges innan den körbara klassen körs för första gången. Om du vill definiera dessa parametrar, välj **parametrar** i åtgärdsfönstret, ställ in fälten i dialogrutan som visas och välj sedan **OK**. Det är viktigt att du väljer **OK**. Annars sparas inte parametrarna i databasen och den körbara klassen anropas inte korrekt.
 
 ### <a name="populate-records-actions"></a>Fyll i poster, åtgärder
 
-Du använder ifyllda poster för att konfigurera åtgärder som lägger till poster i artikelregistret för meddelanden så att de kan lägga till ett elektroniskt meddelande. Till exempel om elektroniska meddelandet måste rapportera kundfakturor, måste du ställa in åtgärden **Fylla i poster** som kopplas på registret **Kundfakturajournal** register (i fältet **Datakälla**). Du kan ange åtgärder för att fylla i poster på sidan **Fyll i poster, åtgärd** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Fyll i poster, åtgärder**). Skapa en ny post för varje åtgärd som ska lägga till poster i tabellen och ange följande fält.
+Du använder ifyllda poster för att konfigurera åtgärder som lägger till poster i artikelregistret för meddelanden så att de kan lägga till ett elektroniskt meddelande. Till exempel om elektroniska meddelandet måste rapportera kundfakturor, måste du ställa in åtgärden Fylla i poster som kopplas fältet **Datakälla** i registret Kundfakturajournal. Du kan ange åtgärder för att fylla i poster på sidan **Fyll i poster, åtgärd** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Fyll i poster, åtgärder**). Skapa en ny post för varje åtgärd som ska lägga till poster i tabellen och ange följande fält.
 
-| Fält       | beskrivning                                                               |
-|-------------|---------------------------------------------------------------------------|
-| Namn        | Ange ett namn för åtgärden som fyller i poster i din process.       |
-| beskrivning | Ange en beskrivning för åtgärden som fyller i poster i din process. |
+| Fält       | Beskrivning |
+|-------------|-------------|
+| Namn        | Ange ett namn för åtgärden som fyller i poster i din process. |
+| Beskrivning | Ange en beskrivning av åtgärden Fyll i poster. |
 
 På snabbfliken **Inställningar för datakällor**, lägg till en rad för varje datakälla som används för processen och ange följande fält.
 
@@ -166,38 +167,39 @@ På snabbfliken **Inställningar för datakällor**, lägg till en rad för varj
 | Dokumentnummerfält  | Markera fältet som dokumentnumret ska tas från i det valda registret. |
 | Dokumentdatumfält    | Markera fältet som dokumentdatum ska tas från i det valda registret. |
 | Dokumentkontofält | Markera fältet som dokumentkonto ska tas från i det valda registret. |
-| Användarfråga             | Om den här kryssrutan är markerad kan du skapa en fråga genom att markera **Redigera fråga** ovanför rutnätet. Annars fylls alla poster i från datakällan. |
+| Användarfråga             | Om den här kryssrutan är markerad kan du skapa en fråga genom att markera **Redigera fråga** ovanför rutnätet. Annars fylls alla poster i från den valda datakällan. |
 
 ### <a name="web-applications"></a>Webbprogram
 
-Du använder sidan för webbprogram för att ställa in parametrar för ett webbprogram för att stödja öppen standard OAuth 2.0 som ger användarna ”säker delegerad åtkomst” till programmet för deras räkning, utan att dela deras autentiseringsuppgifter. På den här sidan kan du också gå igenom auktoriseringsprocessen genom att få en auktoriseringsskod och åtkomsttoken. Du kan konfigurera inställningar för webbprogram på sidan **Webbprogram** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Webbprogram**) .
+Du kan använda inställningar för webbprogram för att ställa in ett program så att det stöder öppen auktorisering (OAuth) 2.0. OAuth är en öppen standard som ger användarna ”säker delegerad åtkomst” till programmet för deras räkning, utan att dela sina autentiseringsuppgifter. Du kan också gå igenom auktoriseringsprocessen genom att få en auktoriseringsskod och åtkomsttoken. Du kan konfigurera inställningar för webbprogram på sidan **Webbprogram** (**Skatt** \> **Inställningar** \> **Elektroniska meddelanden** \> **Webbprogram**) .
 
 I följande tabell beskrivs fälten på sidan **Webbprogram**.
 
-| Fält                         | Beskrivning |
-|-------------------------------|-------------|
-| Programnamn              | Skriv ett namn på webbprogrammet. |
-| Beskrivning                   | Ange en beskrivning för webbprogrammet. |
-| Bas-URL                      | Ange basinternetadressen till webbprogrammet. |
-| URL-sökväg för auktorisering        | Ange sökvägen om du ska skapa URL för auktorisering.  |
-| URL-sökväg för token                | Ange sökvägen om du ska skapa URL för token.  |
-| Omdirigerings-URL                  | Ange omdirigerings-URL  |
-| Klient-ID                     | Ange klient-ID för webbprogrammet.  |
-| Klienthemlighet                 | Ange klienthemlighet för webbprogrammet.  |
-| Servertoken                  | Ange servertoken för webbprogrammet.  |
-| Mappning av auktoriseringsformat  | Välj ett format för elektronisk rapportering (ER) som används för att generera en begäran om godkännande.   |
-| Modellmappning för importtoken    | Välj en modellmappning för ER-import som ska användas för att lagra åtkomsttoken.  |
-| Beviljad omfattning      Åtkomsttoken kommer att gå ut i  | Det här fältet uppdateras automatiskt. Dess värde visar beviljad omfattning för begäran till webbprogrammet.  |
-| Godta                        | Ange egenskap för godkännande av webbegäran. Till exempel ”application/vnd.hmrc.1.0+json”.  |
-| Innehållstyp           | Ange innehållstyp. Till exempel ”application/json”.  |
+| Fält                        | Beskrivning |
+|------------------------------|-------------|
+| Programnamn             | Skriv ett namn på webbprogrammet. |
+| Beskrivning                  | Ange en beskrivning för webbprogrammet. |
+| Bas-URL                     | Ange basinternetadressen till webbprogrammet. |
+| URL-sökväg för auktorisering       | Ange sökvägen om används för att skapa URL för auktorisering. |
+| URL-sökväg för token               | Ange sökvägen om används för att skapa URL för token. |
+| Omdirigerings-URL                 | Ange omdirigerings-URL |
+| Klient-ID                    | Ange klient-ID för webbprogrammet. |
+| Klienthemlighet                | Ange klienthemlighet för webbprogrammet. |
+| Servertoken                 | Ange servertoken för webbprogrammet. |
+| Mappning av auktoriseringsformat | Välj ER-format som används för att generera en begäran om godkännande. |
+| Modellmappning för importtoken   | Välj en modellmappning för ER-import som används för att lagra åtkomsttoken. |
+| Beviljat område                | Omfattningen beviljas för begäran till programmet. Det här fältet uppdateras automatiskt. |
+| Åtkomsttoken upphör att gälla om  | Återstående tid innan åtkomsttoken upphör att gälla. | 
+| Godta                       | Ange egenskap för **godkännande** av webbegäran. ange t-ex **application/vnd.hmrc.1.0+json**. |
+| Innehållstyp                 | Ange innehållstyp. Ange t.ex. **application/json**. |
 
-Följande funktioner är tillgängliga från sidan för **webbprogram** för att stödja auktoriseringsprocessen:
--   **Hämta auktoriseringskod** - initiera auktorisering av webbprogrammet.
--   **Hämta ett åtkomsttoken** - initiera hämtningen av ett åtkomsttoken.
--   **Uppdatera åtkomsttoken** - om du vill uppdatera ett åtkomsttoken.
+Dessutom är följande knappar tillgängliga i åtgärdsfönstret för sidan **webbprogram** för att ge stöd till auktoriseringsprocessen:
 
-När ett åtkomsttoken till ett webbprogram som lagras i systemets databas är i krypterat format kan det användas för begäran till en webbtjänst. I säkerhetssyfte begränsas åtkomsten till åtkomsttoken till endast de som har dessa säkerhetsroller som får göra dessa begäranden. När en användare utanför säkerhetsgruppen försöker göra en begäran, informerar ett undantag användaren att han (hon) inte får interagera med det valda webbprogrammet.
-Använd snabba tabellen **säkerhetsroller** på sidan Skatt > Inställningar > Elektroniska meddelanden > Webbprogram för att konfigurera roller som måste ha tillgång till åtkomsttoken. När säkerhetsroller inte definieras för ett webbprogram, kommer en systemadministratör endast att kunna interagera med det här webbprogrammet.
+- **Hämta auktoriseringskod** - initiera auktorisering av webbprogrammet.
+- **Hämta ett åtkomsttoken** - initiera processen för att hämta ett åtkomsttoken.
+- **Uppdatera åtkomsttoken** - uppdatera ett åtkomsttoken.
+
+När ett åtkomsttoken till ett webbprogram som lagras i systemets databas är i krypterat format kan det användas för begäran till en webbtjänst. I säkerhetssyfte måste åtkomsten till åtkomsttoken begränsas till säkerhetsroller som får göra dessa begäranden. Om användare utanför säkerhetsgruppen försöker lämna en begäran får de ett felmeddelande som anger att de inte tillåts att kommunicera via det valda webbprogrammet. Om du vill konfigurera vilka säkerhetsroller som måste ha tillgång till åtkomsttoken, använd snabbfliken **säkerhetsroller** på sidan **webbprogram**. Om säkerhetsroller inte definieras för ett webbprogram, kan endast en systemadministratör interagera med det här webbprogrammet.
 
 ### <a name="web-service-settings"></a>Inställningar för webbtjänst
 
@@ -205,21 +207,21 @@ Du använder inställningar för webbtjänst för att konfigurera dataöverföri
 
 I följande tabell beskrivs fälten på sidan **Inställningar för webbtjänst**.
 
-| Fält                   | beskrivning |
-|-------------------------|-------------|
-| Webbtjänst             | Skriv ett namn på webbtjänsten. |
-| beskrivning             | Ange en beskrivning för webbtjänsten. |
-| Internet-adress        | Ange internetadressen till webbtjänsten. Om ett webbprogram anges för en webbtjänst och adressen ska vara samma som definierats för det valda webbprogrammet klickar du på knappen **kopiera bas-URL** om du vill kopiera **bas-URL** från webbprogram till fältet **Internetadress** för webbtjänsten.  |
-| Intyg             | Välj ett Key Vault-certifikat som tidigare har ställts in. |
-| Webbprogram         | Välj ett Key Vault-certifikat som tidigare har ställts in. |
-| Svarstyp – XML | Ange det här alternativet till **Ja** om svarstypen är XML. |
-| Metod för begäran          | Ange vilken metod för begäran. HTTP definierar en uppsättning metodförfrågan som anger vilken åtgärd som ska utföras av en viss resurs. Metoden kan vara **HÄMTA**, **BOKFÖR**, eller någon annan HTTP-metod. |
-| Rubrik för begäran         | Ange rubrik för begäran. En rubrik för begäran är en HTTP-rubrik som kan användas i en HTTP-begäran och som inte är relaterat till innehållet i meddelandet. |
-| Godta                  | Ange egenskap för godkännande av webbegäran. |
-| Godkänn kodning         | Ange vilken acceptera-kodning. HTTP-huvudet för begäran att acceptera-kodning meddelar innehålllskodning som klienten kan förstå. Den här innehållskodningen är vanligtvis en komprimeringsalgoritm. |
-| Innehållstyp            | Ange innehållstyp. Entitetsrubriken Innehållstyp anger medietypen för resursen. |
-| Svarskod för genomförd åtgärd   | Ange HTTP-statuskod som indikerar att begäran beviljades. |
-| Formatmappning av rubrik för begäran  | Välj ER-format för generering av rubrik för webbegäran. |
+| Fält                          | beskrivning |
+|--------------------------------|-------------|
+| Webbtjänst                    | Skriv ett namn på webbtjänsten. |
+| beskrivning                    | Ange en beskrivning för webbtjänsten. |
+| Internet-adress               | Ange internetadressen till webbtjänsten. Om ett webbprogram anges för webbtjänsten och om internetadressen för webbtjänsten är samma som internetadressen som definierats för det webbprogrammet klickar du på knappen **kopiera bas-URL** för att kopiera bas-URL från webbprogram till det här fältet. |
+| Intyg                    | Välj ett Key Vault-certifikat som tidigare har ställts in. |
+| Webbprogram                | Välj ett Key Vault-certifikat som tidigare har ställts in. |
+| Svarstyp – XML        | Ange det här alternativet till **Ja** om svarstypen är XML. |
+| Metod för begäran                 | Ange vilken metod för begäran. HTTP definierar en uppsättning metodförfrågan som anger vilken åtgärd som ska utföras av en viss resurs. Den begärda metoden kan vara **HÄMTA**, **BOKFÖR**, eller någon annan HTTP-metod. |
+| Rubrik för begäran                | Ange rubrik för begäran. En rubrik för begäran är en HTTP-rubrik som kan användas i en HTTP-begäran och som inte är relaterat till innehållet i meddelandet. |
+| Godta                         | Ange egenskap för **godkännande** av webbegäran. |
+| Godkänn kodning                | Ange värdet **Acceptera kodning**. HTTP-huvudet för begäran att acceptera-kodning meddelar innehålllskodning som klienten kan förstå. Den här innehållskodningen är vanligtvis en komprimeringsalgoritm. |
+| Innehållstyp                   | Ange innehållstyp. Entitets-HTTP-rubriken innehållstyp anger medietypen för resursen. |
+| Svarskod för genomförd åtgärd       | Ange den HTTP-statuskod som indikerar att begäran beviljades. |
+| Formatmappning av rubrik för begäran | Välj ER-format som används för att generera rubriker för webbegäran. |
 
 ### <a name="message-processing-actions"></a>Åtgärder för meddelandebearbetning
 
@@ -229,76 +231,76 @@ I följande tabell beskrivs fälten på sidan **Åtgärder för meddelandebearbe
 
 #### <a name="general-fasttab"></a>Snabbfliken Allmänt
 
-| Fält                   | beskrivning |
-|-------------------------|-------------|
-| Åtgärdstyp             | Välj typ av åtgärd Mer information om alternativen finns i [Åtgärdstyper för meddelandebearbetning](#message-processing-action-types). |
-| Mappning av format          | Välj ER-format som ska anropas för åtgärden. Det här fältet är endast tillgängligt för åtgärder av typerna **Export av elektronisk rapportering**, **Import av elektronisk rapportering** och **Meddelande om export av elektronisk rapportering**. |
-| Formatmappning för URL-sökväg | Välj ER-format som ska anropas för åtgärden. Det här fältet är endast tillgängligt för åtgärder av typen **webbtjänst** och används för att skriva sökvägen till URL-adressen som ska läggas till grundläggande internetadressen som angetts för den markerade webbservern. |
-| Meddelandets artikeltyp       | Välj typ av poster som åtgärden ska utvärderas för. Det här fältet är endast tillgängligt för åtgärder av typerna **Körningsnivå för meddelandeartikel**, **Export av elektronisk rapportering** och **Import av elektronisk rapportering**, **Webbtjänst** och även några andra typer. Om du lämnar fältet tomt beräknas alla meddelandeobjekttyper som har definierats för meddelandebehandling. |
-| Körbar klass        | Välj körbara klassinställningar som skapades tidigare. Det här fältet är bara tillgängligt för åtgärder av typerna **Körningsnivå för meddelandeartikel** och **Körningsnivå för meddelandeartikel**. |
-| Fyll i poster, åtgärd | Välj en åtgärd för att fylla i poster som redan har ställts in. Det här fältet är endast tillgängligt för åtgärder av typen **fylla i poster**. |
-| Webbtjänst  | Välj en webbtjänst som redan har ställts in. Det här fältet är endast tillgängligt för åtgärder av typen **Webbtjänst**.  |
-| Filnamn  | Ange namnet på filen, vilket resulterar i att åtgärden som svar från webbservern eller generering av en rapport. Det här fältet är endast tillgängligt för åtgärder av typerna **webbtjänst** och **meddelande om export av elektronisk rapportering**.   |
-| Visa dialogruta  | Markera den här kryssrutan om en dialogruta måste visas för en användare innan rapportgenerering. Det här fältet är endast tillgängligt för åtgärder av typen **meddelande om export av elektronisk rapportering**.   |
+| Fält                       | beskrivning |
+|-----------------------------|-------------|
+| Åtgärdstyp                 | Välj typ av åtgärd Mer information om alternativen finns i [Åtgärdstyper för meddelandebearbetning](#message-processing-action-types). |
+| Mappning av format              | Välj ER-format som ska anropas för åtgärden. Det här fältet är endast tillgängligt för åtgärder av typerna **Export av elektronisk rapportering**, **Import av elektronisk rapportering** och **Meddelande om export av elektronisk rapportering**. |
+| Formatmappning för URL-sökväg | Välj ER-format som ska anropas för åtgärden. Det här fältet är endast tillgängligt för åtgärder av typen **Webbtjänst**. Den används för att skriva sökvägen till URL-adressen som ska läggas till den grundläggande internetadress som har angetts för den markerade webbservern. |
+| Meddelandets artikeltyp           | Välj typ av poster som åtgärden ska utvärderas för. Det här fältet är endast tillgängligt för åtgärder av typerna **Körningsnivå för meddelandeartikel**, **Export av elektronisk rapportering** och **Import av elektronisk rapportering**, **Webbtjänst** och även några andra typer. Om du lämnar fältet tomt beräknas alla meddelandeobjekttyper som har definierats för meddelandebehandling. |
+| Körbar klass            | Välj körbara klassinställningar som skapades tidigare. Det här fältet är bara tillgängligt för åtgärder av typerna **Körningsnivå för meddelandeartikel** och **Körningsnivå för meddelandeartikel**. |
+| Fyll i poster, åtgärd     | Välj en åtgärd för att fylla i poster som redan har ställts in. Det här fältet är endast tillgängligt för åtgärder av typen **fylla i poster**. |
+| Webbtjänst                 | Välj en webbtjänst som redan har ställts in. Det här fältet är endast tillgängligt för åtgärder av typen **Webbtjänst**. |
+| Filnamn                   | Ange namnet på den fil som blir resultatet av åtgärden. Den här filen kan vara svaret från webbservern eller den rapport som genereras. Det här fältet är endast tillgängligt för åtgärder av typerna **webbtjänst** och **meddelande om export av elektronisk rapportering**. |
+| Visa dialogruta                 | Ange det här alternativet till **Ja** om en dialogruta måste visas för en användare innan rapportgenerering. Det här fältet är endast tillgängligt för åtgärder av typen **meddelande om export av elektronisk rapportering**. |
 
 ##### <a name="message-processing-action-types"></a>Åtgärdstyper för meddelandebearbetning
 
 Följande alternativ finns tillgängliga **Åtgärdstyp**:
 
-- **Skapa meddelande** – Använd denna typen för att låta användarna manuellt skapa meddelanden på sidan **elektroniskt meddelande**. En inledande status kan inte ställas in för en åtgärd av den här typen.
-- **Uppdatera poster** – en åtgärd för att **fylla i posterna** måste ställas in tidigare. Associera den med en åtgärd av typen **Fylla i posterna** så att den kan inkluderas i bearbetning. Det antas att den här typen används för den första åtgärden i bearbetning av meddelandet (när inget elektroniskt meddelande skapas i förväg) eller när en åtgärd lägger till meddelandeartiklar i ett tidigare skapat meddelande (efter en åtgärd av typen **skapa ett meddelande**). Därför kan resultatstatus för meddelandeartiklar bara ställas in för en åtgärd av den här typen. En inledande status kan inte anges endast för meddelanden.
-- **Körningsnivå för meddelandeartikel** – Använd den här typen om du vill ställa in en körbar klass som ska utvärderas på meddelandeartikelnivå visas.
-- **Körningsnivå för meddelande** – Använd den här typen om du vill ställa in en körbar klass som ska utvärderas på nivån visas.
-- **Export av elektronisk rapportering** – Använd den här typen för åtgärder som ska generera en rapport som är baserad på en ER-konfiguration på meddelandeartikelnivå.
-- **Meddelande om export av elektronisk rapportering** – Använd den här typen för åtgärder som ska generera en rapport som är baserad på en ER-konfiguration på meddelandeartikelnivå (till exempel när ett meddelande inte har några meddelandeartiklar.)
-- **Import av elektronisk rapportering** – Använd den här typen för åtgärder som ska generera en rapport som är baserad på import av ER-konfiguration.
-- **Användares bearbetning på meddelandenivå** – Använd den här typen för åtgärder antar vissa manuella åtgärder av användaren. Användaren kan till exempel uppdatera status för meddelanden.
-- **Användares bearbetning** – Använd den här typen för åtgärder antar vissa manuella åtgärder av användaren. Användaren kan till exempel uppdatera status för meddelandeartiklar.
-- **Webbtjänst** – Använd den här typen för åtgärder som ska överföra en genererad rapport till en webbtjänst. Den här åtgärdstypen används inte för italienska kommunikationsrapporter för inköps och försäljningsfakturor. Åtgärder typen **webbtjänst** låter dig ange en **bekräftelsetext** på snabbfliken **Diverse detaljer** i **Åtgärder för meddelandebearbetning**. Denna bekräftelsetext kommer att visas för användaren innan begäran till den valda webbtjänsten kommer att göras.
-- **Begära verifiering** – Använd den här typen till begäran av verifiering från en server.
+- **Skapa meddelande** – Använd denna åtgärdstyp för att låta användarna manuellt skapa meddelanden på sidan **elektroniskt meddelande**. En inledande status kan inte ställas in för en åtgärd av den här typen.
+- **Uppdatera poster** – en åtgärd för typen **fylla i posterna** måste ställas in tidigare. Associera den här åtgärdstypen med åtgärden Fylla i poster så att den kan inkluderas i bearbetning. Det antas att den här typen används för den första åtgärden i bearbetning av meddelandet (när inget elektroniskt meddelande skapas i förväg) eller för en åtgärd som lägger till meddelandeartiklar i ett meddelande som skapats tidigare av en åtgärd av typen (efter en åtgärd av typen **skapa ett meddelande**). För åtgärder av den här typen kan resultatstatus endast ställas in för meddelandeartiklar. En inledande status kan inte anges endast för meddelanden.
+- **Körningsnivå för meddelandeartikel** – Använd den här åtgärdstypen om du vill ställa in en körbar klass som ska utvärderas på meddelandeartikelnivå visas.
+- **Körningsnivå för meddelande** – Använd den här åtgärdstypen om du vill ställa in en körbar klass som ska utvärderas på nivån visas.
+- **Export av elektronisk rapportering** – Använd den här åtgärdstypen för åtgärder som ska generera en rapport som är baserad på en ER-konfiguration på meddelandeartikelnivå.
+- **Meddelande om export av elektronisk rapportering** – Använd den här åtgärdstypen för åtgärder som ska generera en rapport som är baserad på en ER-konfiguration på meddelandeartikelnivå (till exempel när ett meddelande inte har några meddelandeartiklar.)
+- **Import av elektronisk rapportering** – Använd den här åtgärdstypen för åtgärder som ska generera en rapport som är baserad på import av ER-konfiguration.
+- **Användares bearbetning på meddelandenivå** – Använd den här åtgärdstypen för åtgärder som antar någon manuell åtgärd av användaren på meddelandennivån. Användaren kan till exempel uppdatera status för meddelanden.
+- **Användarbearbetning** – Använd den här åtgärdstypen för åtgärder som antar någon manuell åtgärd av användaren på meddelandeartikelnivån. Användaren kan till exempel uppdatera status för meddelandeartiklar.
+- **Webbtjänst** – Använd den här åtgärdstypen för åtgärder som ska överföra en genererad rapport till en webbtjänst. Den här åtgärdstypen används inte för italienska kommunikationsrapporter för inköps och försäljningsfakturor. För åtgärder av typen **webbtjänst** inkluderar sidan **Åtgärder för meddelandebearbetning** snabbfliken **Diverse detaljer** där du kan ange en bekräftelsetext. Denna bekräftelsetext kommer att visas för användaren innan begäran till den valda webbtjänsten kommer att göras.
+- **Begära verifiering** – Använd den här åtgärdstypen till begäran av verifiering från en server.
 
 #### <a name="initial-statuses-fasttab"></a>Snabbfliken Ursprunglig status
 
 > [!NOTE]
-> Snabbfliken **inledande status** är inte tillgänglig för åtgärder som har en inledande typ av **Skapa ett meddelande**.
+> Snabbfliken **inledande status** är inte tillgänglig för åtgärder som har en inledande åtgärdstyp av **Skapa ett meddelande**.
 
-| Fält               | Beskrivning                                                                                         |
-|---------------------|-----------------------------------------------------------------------------------------------------|
+| Fält               | Beskrivning |
+|---------------------|-------------|
 | Status för meddelandeartikel | Välj meddelandeartikelstatus som den vald meddelandebearbetningsåtgärden ska utvärderas för. |
-| beskrivning         | En beskrivning av den valda meddelandeartikelstatusen.                                                  |
+| beskrivning         | En beskrivning av den valda meddelandeartikelstatusen. |
 
 #### <a name="result-statuses-fasttab"></a>Snabbfliken Status för resultat
 
 | Fält               | beskrivning |
 |---------------------|-------------|
-| Meddelandestatus      | Välj meddelandestatus som den vald meddelandebearbetningsåtgärden ska utvärderas för. Det här fältet är endast tillgängligt för åtgärder för meddelandebearbetning som utvärderas på meddelandenivå. Den är till exempel tillgänglig för åtgärder av typerna **Export av elektronisk rapportering** och **Import av elektronisk rapportering**. Den är inte tillgänglig för åtgärder av typen **Användarbearbetning** och **Körningsnivå för meddelandeartikel**. |
+| Meddelandestatus      | Välj meddelandestatus som den vald meddelandebearbetningsåtgärden ska utvärderas för. Det här fältet är endast tillgängligt för åtgärder för meddelandebearbetning som utvärderas på meddelandenivå. Är till exempel tillgänglig för åtgärder av typen **Export av elektronisk rapportering** och **Import av elektronisk rapportering**, men är inte tillgänglig efter åtgärder av typen **Användarbearbetning** och **Körningsnivå för meddelandeartikel**. |
 | beskrivning         | En beskrivning av den valda meddelandestatusen. |
 | Svarstyp       | Svarstyp för den valda meddelandestatusen. |
 | Status för meddelandeartikel | Välj resulterande status som ska vara tillgänglig efter att meddelandebearbetningsåtgärden utvärderas. Det här fältet är endast tillgängligt för åtgärder för meddelandebearbetning som utvärderas på meddelandeartikelnivå. Den är till exempel tillgänglig för åtgärder av typen **Användarbearbetning** och **Körningsnivå för meddelandeartikel**. För meddelandebearbetningsåtgärder som utvärderas på meddelandenivån visar det här fältet statusen för meddelandetypen som ställdes in för den valda meddelandestatusen. |
 
-I följande tabell visas vilket resultatstatus som måste ställas in med avseende på de typer av åtgärder:
+Följande register visar resultatstatus som måste ställas in för olika åtgärdstyper och svarstyper.
 
-| Elektroniskt meddelande åtgärdstyp/svarstyp  | Har utförts  | Verksamhetsfel  | Tekniskt fel  | Användardefinierat  | Avbryt  |
-|-------------------------------------------------|--------------|---------|-------|-----|-----------------|
-| Skapa ett meddelande                                  | X            |         |       |     |                 |
-| Export av elektronisk rapportering                     | X            |         |       |     |                 |
-| Import av elektronisk rapportering                     |              |         |       |     |                 |
-| Webbtjänst                                     | X            |         | X     |     |                 |
-| Användarbearbetning                                 |              |         |       |     |                 |
-| Körningsnivå för meddelande                         |              |         |       |     |                 |
-| Fyll i poster                                |              |         |       |     |                 |
-| Körningsnivå för meddelandeartikel                    |              |         |       |     |                 |
-| Verifiering av begäran                            | X            |  X      | X     |     |                 |
-| Meddelande om export av elektronisk rapportering             | X            |         |       |     |                 |
-| Användares bearbetning på meddelandenivå                   |              |         |       |     |                 |
+| Elektroniskt meddelande åtgärdstyp/svarstyp | Har utförts | Verksamhetsfel | Tekniskt fel | Användardefinierat | Avbryt |
+|----------------------------------------------|-----------------------|----------------|-----------------|--------------|--------|
+| Skapa ett meddelande                               | X                     |                |                 |              |        |
+| Export av elektronisk rapportering                  | X                     |                |                 |              |        |
+| Import av elektronisk rapportering                  |                       |                |                 |              |        |
+| Webbtjänst                                  | X                     |                | X               |              |        |
+| Användarbearbetning                              |                       |                |                 |              |        |
+| Körningsnivå för meddelande                      |                       |                |                 |              |        |
+| Fyll i poster                             |                       |                |                 |              |        |
+| Körningsnivå för meddelandeartikel                 |                       |                |                 |              |        |
+| Verifiering av begäran                         | X                     | X              | X               |              |        |
+| Meddelande om export av elektronisk rapportering          | X                     |                |                 |              |        |
+| Användares bearbetning på meddelandenivå                |                       |                |                 |              |        |
 
 ### <a name="electronic-message-processing"></a>Elektronisk meddelandebearbetning
 
 Elektronisk meddelandebearbetning är ett grundläggande begrepp för funktionen för elektroniska meddelanden. Den sammanställer åtgärder som ska utvärderas för det elektroniska meddelandet. Åtgärderna kan kopplas via en inledande status och resulterande status. Alternativt kan åtgärder av typen **Användarbearbetning** startas oberoende av varandra. På sidan **Elektronisk meddelandebearbetning** (**Moms** \> **Inställningar** \> **Elektroniska meddelanden** \> **Elektronisk meddelandebearbetning**), kan du också välja ytterligare fält som ska användas för bearbetning antingen på meddelandenivå eller meddelandeartikelnivå.
 
-Snabbfliken **Åtgärd** låter dig lägga till fördefinierade åtgärder till bearbetningen. Du kan ange om en åtgärd måste köras separat, eller om den kan startas av bearbetningen. Om du vill definiera om åtgärden endast kan initieras av en användare, markera kryssrutan **körs separat** för åtgärden i bearbetningen. Avmarkera parametern **körs separat** om du vill att åtgärden ska startas av bearbetning för meddelanden eller meddelandeartiklar i den status som definieras som den ursprungliga status för åtgärden. Åtgärd av typen **Användaråtgärd** får endast köras separat. 
+Snabbfliken **Åtgärd** låter dig lägga till fördefinierade åtgärder till bearbetningen. Du kan ange om en åtgärd måste köras separat, eller om den kan startas av bearbetningen. Om vill ange att en åtgärd i bearbetningen endast kan initieras av en användare anger du **kör separat** till **Ja** för åtgärden. Om en åtgärd bör startas av behandlingen för meddelanden eller meddelandeposter som är i status som definieras som den ursprungliga statusen för åtgärden, ställer du in **Kör separat** till **Nej**. Åtgärder av typen **Användaråtgärd** måste alltid köras separat.
 
-Ibland kan det behövas för att aggregera flera åtgärder i en sekvens, även när den första av dem definieras för att köras separat. När det till exempel krävs att rapportgenerering initialiseras av en användare, men en rapport som väl är genererad måste skickas omedelbart till en webbtjänst och svaret från webbtjänsten måste återspeglas i systemet. Du kan använda **Oskiljaktig sekvens** för detta ändamål. Gör det genom att klicka på knappen **Oskiljaktig sekvens** i åtgärdsfönstret på snabbfliken **åtgärd** på sidan **Elektronisk meddelandebearbetning** och skapa en sekvens och markera den i kolumnen **Oskiljaktig sekvens** för de åtgärder som alltid måste köras tillsammans. Den första åtgärden i det här fallet kan ställas in som **körs separat**, men inte alla andra.
+Ibland kan flera åtgärder aggregeras i en sekvens, trots att den första åtgärden har ställts in så att det körs separat. Till exempel måste en användare initiera en rapportgenerering men måste skickas omedelbart till en webbtjänst när rapporten genererades och svaret från webbtjänsten måste återspeglas i systemet. I denna situation kan du skapa oskiljaktig sekvens för de åtgärder som alltid måste köras tillsammans. På snabbfliken **åtgärd**, välj **Oskiljaktig sekvenser** ovanför rutnätet och skapa en sekvens. Sedan, för alla åtgärder som måste köras tillsammans väljer du fältet **Oskiljaktig sekvens**. I detta fall kan fältet **körs separat** ställas in på **Ja** för den första åtgärden i sekvensen men **Nej** för alla andra åtgärder.
 
 Snabbfliken **Ytterligare fält för meddelandeartikel** låter dig lägga till fördefinierade ytterligare fält som är relaterade till meddelandeobjekt. Du måste lägga till ytterligare fält för varje typ av meddelandeobjekt som hör till fälten.
 
@@ -308,7 +310,7 @@ Snabbfliken **säkerhetsroller** låter dig konfigurera de säkerhetsroller som 
 
 Snabbfliken **Batch** låter dig ställa in bearbetning för att arbeta i ett system för batchordning.
 
-## <a name="work-with-electronic-messages-functionality"></a>Arbeta med funktioner för elektroniska meddelanden
+## <a name="work-with-the-electronic-messages-functionality"></a>Arbeta med funktioner för elektroniska meddelanden
 
 Om du arbetar på meddelandenivån är sidan **elektroniska meddelanden** (**moms** \> **förfrågningar och rapporter** \> **elektroniska meddelanden** \> **elektroniska meddelanden**)mer användbar. Om du arbetar på datainsamlingsnivån (meddelandeobjekt) är sidan **elektroniska meddelanden** (**skatt** \> **förfrågningar och rapporter** \> **elektroniska meddelanden** \> **elektroniska meddelanden**) mer användbar.
 
@@ -327,25 +329,25 @@ Snabbfliken **Meddelanden** visar elektroniska meddelanden för det valda jobbet
 - **Uppdatera status** – den här knappen är kopplad till åtgärder av typen **Användares bearbetning på meddelandenivå**.
 - **Meddelandeartiklar** – öppnar sidan **Elektroniska meddelandeartiklar**.
 
-Snabbfliken **Åtgärdslogg** visar information om alla åtgärder som har körts för det markerade meddelandet. Om en åtgärd resulterade i ett fel, ska information om felet bifogas till relaterad åtgärds loggrad. Markera raden och klicka på knappen **klipp** i övre högra hörnet på sidan om du vill granska information om felet.
+Snabbfliken **Åtgärdslogg** visar information om alla åtgärder som har körts för det markerade meddelandet. Om en åtgärd resulterade i ett fel, ska information om felet bifogas till relaterad rad i rutnätet. Om du vill granska information om fel markerar du raden i rutnätet och väljer sedan knappen **bilaga** (gemsymbolen) i det övre högra hörnet på sidan.
 
 Snabbfliken **Ytterligare fält för meddelande** visar alla ytterligare fält som har definierats för meddelanden i inställningarna för bearbetning. Den visar också värdena för dessa ytterligare fält.
 
-Snabbfliken **Meddelandeobjekt** visar alla meddelandeobjekt som är relaterade till det markerade meddelandet. För varje meddelandeartikel kan följande funktion användas beroende på status för meddelandeartikeln:
+Snabbfliken **Meddelandeobjekt** visar alla meddelandeobjekt som är relaterade till det markerade meddelandet. Beroende på status för den valda meddelandeartikeln kan du köra vissa åtgärder genom att välja knapparna ovanför rutnätet:
 
 - **Ta bort** - Den här knappen är tillgänglig om kryssrutan **Tillåt borttagning** är markerad för aktuell status för den markerade meddelandeartikeln.
 - **Uppdatera status** – den här knappen är kopplad till åtgärder av typen **Användarbearbetning**.
-- **Originaldokumentet** - den här knappen låter användaren öppna en sida med det ursprungliga dokumentet till det markerade meddelandet.
+- Välj **originaldokumentet** - Öppna en sida som visar det ursprungliga dokumentet för den markerade meddelandeartikeln.
 
-Du kan granska alla bilagor för det markerade meddelandet. Dessa bilagor är rapporter som redan har skapats och mottagits. Markera meddelandet för att granska bilagor för och välj sedan knappen **bilaga** i åtgärdsfönstret.
+Alla rapporter som redan har skapats och mottagits för ett meddelande är kopplade till meddelandet. Om du vill granska bilagor som är relaterade till ett meddelande, markerar du meddelandet och väljer sedan knappen **bilaga** (gemsymbolen) i det övre högra hörnet på sidan.
 
 ![Knappen Bilaga](media/attachment-icon.png)
 
-Sidan **Bilagor** visar alla bilagor som hör till meddelandet. Om du vill visa en fil markerar du den i listan till vänster och markerar **öppna** i åtgärdsfönstret.
+Sidan **Bilagor** visar alla bilagor som hör till det valda meddelandet. Om du vill visa en fil markerar du den i listan till vänster och markerar **öppna** i åtgärdsfönstret.
 
 ![Knappen Öppna](media/open-button.png)
 
-Om du vill granska en bifogad fil som är kopplad till en viss åtgärd som kördes tidigare för ett meddelande markerar du meddelandet på sidan **elektroniska meddelanden** och klickar sedan på snabbfliken **Åtgärdslogg** och väljer åtgärd. Välj sedan knappen **bilaga** i åtgärdsfönstret.
+Du kan också granska bilagor som hör till en viss åtgärd som kördes tidigare för ett meddelande. På sidan **elektroniska meddelanden** markerar du meddelandet på snabbfliken **meddelanden** och väljer åtgärden på snabbfliken **Åtgärdslogg** och väljer sedan knappen **bilaga** i det övre högra hörnet på sidan.
 
 Du kan också köra antingen hela bearbetningen eller bara någon specifik åtgärd genom att markera **Kör bearbetning** i åtgärdsfönstret.
 
@@ -400,7 +402,7 @@ I följande tabell hittar du beskrivningar av fälten på fliken **Meddelandeart
 </tr>
 <tr>
 <td>Kontonummer</td>
-<td>Kontonumret för kunden eller leverantören (eller ett annat fältvärde, beroende på vilket fält som definieras i åtgärden <strong>fylla i poster</strong>). Fältet kan endast fyllas i automatiskt när en faktura har lagts till artikelregistret för meddelanden.</td>
+<td>Kontonumret för kunden eller leverantören (eller ett annat fältvärde, beroende på vilket fält som definieras i åtgärden fylla i poster). Fältet kan endast fyllas i automatiskt när en faktura har lagts till artikelregistret för meddelanden.</td>
 </tr>
 <tr>
 <td>Meddelande</td>
@@ -412,7 +414,7 @@ I följande tabell hittar du beskrivningar av fälten på fliken **Meddelandeart
 </tr>
 <tr>
 <td>Nästa åtgärd</td>
-<td>Nästa åtgärd som kan inledas för aktuell status för objektet visas.</td>
+<td>Nästa åtgärd som kan startas för aktuell status för objektet visas.</td>
 </tr>
 </tbody>
 </table>
@@ -429,13 +431,13 @@ Välj **Generera rapport** i åtgärdsfönstret om du vill skapa en rapport. Den
 
 #### <a name="update-status"></a>Uppdatera status
 
-Välj **uppdatera status** i åtgärdsfönstret om du vill uppdatera status för ett eller flera meddelandeobjekt. I dialogrutan **uppdatera status** använd snabbfliken **poster som ska ingå** för att välja meddelandeobjekt för uppdatering. Se till att du korrekt definierar urvalskriterierna, eftersom meddelandeartikelstatus uppdateras enligt dessa kriterier, den ursprungliga statusen för den valda åtgärden och värdet **ny status** du angav. När en statusuppdatering har slutförts kan det vara svårt att avgöra vilka artiklar som precis har uppdaterats. Därför är det svårt att återställa statusuppdateringar.
+Välj **uppdatera status** i åtgärdsfönstret om du vill uppdatera status för ett eller flera meddelandeobjekt. I dialogrutan **uppdatera status** använd snabbfliken **poster som ska ingå** för att välja meddelandeobjekt för uppdatering. Se till att du korrekt definierar urvalskriterierna, eftersom meddelandeartikelstatus uppdateras enligt dessa kriterier, den ursprungliga statusen för den valda åtgärden och värdet **ny status** du angav. När en statusuppdatering har slutförts kan det vara svårt att avgöra vilka artiklar som precis har uppdaterats. Därför är det svårt att återställa statusuppdateringen.
 
 #### <a name="electronic-messages"></a>Elektroniska meddelanden
 
-Välj **elektroniskt meddelande** i åtgärdsfönstret om du vill granska ett elektroniskt meddelande som är relaterat till det markerade meddelandeobjektet.
+Välj **elektroniska meddelanden** i åtgärdsfönstret om du vill granska ett elektroniskt meddelande som är relaterat till det markerade meddelandeobjektet.
 
-Du kan också granska alla filer som motsvarar meddelandeobjektet. Välj fältet **meddelande** i meddelandeartikel eller välj **elektroniskt meddelande** i åtgärdsfönstret. På sidan **elektroniskt meddelande** markera meddelandet att granska en rapport för och välj sedan knappen **bilaga** i åtgärdsfönstret.
+Du kan också granska alla filer som är relaterade till en viss meddelandeartikel. Välj fältet **meddelande** för meddelandeartikeln eller välj **elektroniska meddelanden** i åtgärdsfönstret. Sedan, på sidan **Elektroniskt meddelande** markerar du meddelandet som du vill granska filer för och väljer sedan knappen **Bilaga** (gemsymbolen) i det övre högra hörnet på sidan.
 
 ![Knappen Bilaga](media/attachment-icon.png)
 
@@ -447,21 +449,17 @@ Sidan **Bilagor** visar alla bilagor som hör till meddelandet. Om du vill visa 
 
 Välj **originaldokumentet** i åtgärdsfönstret för att öppna det ursprungliga dokumentet för det markerade meddelande objektet.
 
-## <a name="example"></a>Exempel
+## <a name="example-set-up-and-run-processing-to-call-a-simple-er-exporting-format-to-generate-an-excel-report"></a>Exempel: Ställa in och köra bearbetning för att anropa ett enkelt ER-exportformat om du vill generera en Excel-rapport
 
 När du har skapat ett ER-format, mappat det till datakällor och slutfört det kan du köra det med arbetsytan **elektronisk rapportering**. En rapport skapas som du kan spara lokalt.
 
 Om du vill kontrollera följande aspekter av rapporteringsprocessen måste du konfigurera behandling av elektroniska meddelanden:
 
 - Logga information om som genererade rapporten.
-- Logga när rapporten genererats.
+- Logga information om när rapporten genererades.
 - Spara rapporter som har skapats för tidigare perioder.
 
-Det här avsnittet innehåller ett exempel som visar hur du kan konfigurera funktionen för elektroniska meddelanden för att bygga en rapporteringsprocess.
-
-### <a name="set-up-and-run-processing-to-call-a-simple-er-exporting-format-to-generate-an-excel-report"></a>Ställa in och köra bearbetning för att anropa ett enkelt ER-exportformat om du vill generera en Excel-rapport
-
-Det här avsnittet innehåller ett exempel som visar hur du ställer in elektroniska meddelanden för att generera en rapport som är baserad på ett exporterande ER-format för Excel. Om du vill öppna det här exemplet måste ER Excel-exportformat redan skapats, mappats till datakällor och slutförts. En nummerserie måste redan ha ställts in för elektroniska meddelanden.
+Det här avsnittet innehåller ett exempel som visar hur du ställer in elektroniska meddelanden för att generera en rapport som är baserad på ett exporterande ER-format för Excel. Om du vill följa det här exemplet måste ER Excel-exportformat redan skapats, mappats till datakällor och slutförts. Dessutom måste en nummerserie redan ha ställts in för elektroniska meddelanden.
 
 När du skapar bearbetning, är det viktigt att du först definierar åtgärder för bearbetning och status som ska ställas in. Följande bild visar hur bearbetningen ser ut i det här exemplet.
 
@@ -518,11 +516,11 @@ I det här exemplet skapas följande åtgärder:
 
     - På snabbfliken **allmänna** i fältet **åtgärdstyp** väljer du **Användares bearbetning på meddelandenivå**.
     - På snabbfliken **ursprungliga statusar** i fältet **meddelandestatus** väljer du **Genererad**.
-    - På snabbfliken **Status för resultat** i fältet **meddelandestatus** väljer du **Förberedd** eller (och) **Ny**. I fältet **svarstyp** anger du **har körts**.
+    - På snabbfliken **Resultatstatus** lägger du till en separat rad för var och en av två statusvärden för meddelande (**Förberett** och **Nytt**). För båda raderna anger du fältet **svarstyp** till **har körts**.
 
 #### <a name="electronic-message-processing"></a>Elektronisk meddelandebearbetning
 
-I det här exemplet ska alla åtgärder konfigureras så att de körs separat. Förutsättningen är att varje åtgärd ska initieras av användaren.
+I det här exemplet ska alla åtgärder konfigureras så att de körs separat. Förutsättningen är att användaren initierar varje åtgärd.
 
 1. Gå till **moms \> inställningar \> elektroniska meddelanden \> Elektronisk meddelandebearbetning**.
 2. Lägg till en post för din bearbetning och lägg till alla tidigare definierade åtgärder och ett ytterligare fält.
@@ -534,8 +532,8 @@ I det här exemplet ska alla åtgärder konfigureras så att de körs separat. F
 
 Rutnätet på snabbfliken **Åtgärdslogg** fylls i automatiskt med en logg över alla åtgärder som utförs på meddelandet.
 
-Du kan nu ta bort eller uppdatera meddelandestatus. Välj om du vill uppdatera meddelandestatus **uppdateringsstatus** och sedan i fältet **ny status** väljer du **förberedd**. Välj sedan **OK**.
+Du kan nu ta bort eller uppdatera meddelandestatus. För att uppdatera meddelandestatus, välj **uppdateringsstatus**. I fältet **ny status** väljer du **förberett** och väljer sedan **OK**.
 
 ![Uppdatera meddelandets status](media/update-status.png)
 
-Meddelandestatus har uppdaterats till **förberedd** och du kan nu skapa rapporten genom att markera **generera rapporten**. Rapporten genereras och meddelandestatus och åtgärdsloggen uppdateras. Om du vill visa den genererade rapporten, välj knappen **bilaga** i åtgärdsfönstret.
+Meddelandestatus har uppdaterats till **förberedd** och du kan nu skapa rapporten genom att markera **generera rapporten**. Rapporten genereras och meddelandestatus och åtgärdsloggen uppdateras. För att visa den genererade rapporten väljer du knappen **bilaga** (gemsymbolen) i övre högra hörnet på sidan.

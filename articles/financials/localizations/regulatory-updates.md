@@ -3,7 +3,7 @@ title: Regeluppdateringar
 description: Det här avsnittet innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832111"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992846"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -28,12 +28,18 @@ ms.locfileid: "832111"
 
 Det här avsnittet beskriver de regeluppdateringar som planeras att ges ut i Microsoft Dynamics 365 for Finance and Operations lokaliseringar som stöds. Leveranstidslinjer kan ändras och planerade funktioner kan ändras eller kanske inte har frisläppts. Läs [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) för mer information. 
 
-Regeluppdateringar skiljer sig från regelfunktioner. Information om planerade eller släppta regelfunktioner finns i följande resurser.
+Regeluppdateringar är funktioner som har implementerats så att de stöder ny eller ändrad landsspecifik lagstiftning. Information om andra planerade och släppta landsspecifika funktioner finns i följande resurser:
 
-- [Viktig information om Dynamics 365 och Power-plattformen](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Dynamics 365 och Power Platform, Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Nyheter för Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-När en månad används i kolumnen Datum planeras regeluppdateringen att levereras någon gång inom den månaden. Leveransdatumet kan vara en annan dag under den gångna månaden inte bara på den första dagen i månaden.
+Microsoft strävar efter att implementera nya regelkrav så tidigt som möjligt. Det faktiska leveransdatumet beror på rätt meddelandedatum, tillgänglighet av kravdetaljer från de lokala myndigheterna, tillgänglighet av valideringsverktyg och på storlek och komplexitet av ändringen. 
+
+Vi planerar att släppa andra tjänstuppdateringar för en version som ges ut i tid för kunderna att uppdatera och vara klar för genomförandedatumet (för transaktionsbaserade regeluppdateringar) eller för första obligatoriska rapporteringsdeadline (för regeluppdateringar relaterade till rapportering). Kunder och partners kan förhandsgranska regeluppdateringar i PEAP (Preview Early Adoption Program).
+
+Vid sena meddelandedatum, sen tillgänglighet av kravdetaljer eller valideringsverktyg eller ovanligt stora och komplexa ändringar kanske det inte är möjligt att göra en andra regeluppdatering tillgänglig genom allmänna tillgänglighetsdatum av en månatlig uppdatering. I så fall måste regeluppdateringen levereras som snabbkorrigeringar för vissa månatliga uppdateringar.
+
+För de senaste kravuppdateringsplanerna, se följande tabell. 
 
 |Planerat frisläppningsdatum |Slutversion|Land|Regeluppdatering|
 |--------------------|---------------|-------|-------|
@@ -47,7 +53,9 @@ När en månad används i kolumnen Datum planeras regeluppdateringen att leverer
 |      2019 april          |   10.0.1      |    Storbritannien     |[Ändringar i överföring av momsrapport (gör moms digital)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019 april          |   10.0.1      |    Brasilien     |NF-e ny NT 2018.005         |
 |      2019 april          |   10.0.1      |    Ryssland     |Momsdeklarationsformat ändras från 2019         |
-|      2019 april          |   10.0.1      |    Ryssland     |Momsdeklarationsformat ändras från 2019 (format för försäljnings- och inköpsböcker)  |
+|      2019 april          |   10.0.1      |    Ryssland     |Momsdeklarationsformat ändras från 2019 (försäljnings- och inköpsböcker) 
+|      2019 maj            |   10.0.2      | Brasilien      |   SPED ECD Layout 7   |
+
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - Hitta alla planerade och andra uppdateringar i [Lifecycle Service - problemsökning](https://lcs.dynamics.com/Logon/Index) (inloggning krävs).

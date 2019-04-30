@@ -3,7 +3,7 @@ title: Delegera arbetsuppgifter i ett arbetsflöde
 description: Om du kommer att vara borta från kontoret under en tid eller av annat skäl inte kommer att kunna arbeta med en arbetsuppgift, kan du delegera eller omfördela dina arbetsuppgifter till andra användare.
 author: jasongre
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 04/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,25 +16,26 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f85a1318822ceaf829134bf2eb3581e350d5bea4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: feace647d7acef6abf86b13fcb8019c622c55ff6
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346259"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "976791"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegera arbetsuppgifter i ett arbetsflöde
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Om du kommer att vara borta från kontoret under en tid eller av annat skäl inte kommer att kunna arbeta med en arbetsuppgift, kan du delegera eller omfördela dina arbetsuppgifter till andra användare. Med den här proceduren kan du konfigurera systemet att automatiskt delegera dina arbetsuppgifter till en annan användare.
+## <a name="manually-delegate-a-work-item"></a>Manuellt delegera en arbetsuppgift
 
+Om du vill delegera en enskild arbetsuppgift, välj alternativet **Delegera** i menyn **Arbetsflöde** och ange sedan användaren som ska delegeras till tillsammans med en kommentar. Detta tilldelar om arbetsuppgift till användaren så att de kan slutföra den.
 
+## <a name="automatically-delegate-work-items"></a>Delegera arbetsuppgiften automatiskt
 
-Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+Om du tänker vara borta från kontoret eller annars inte kan åtgärda arbetsuppgifter för en viss tidsperiod, kan du automatiskt delegera nya arbetsuppgifter till andra användare på sidan **Användaralternativ**.
 
-
-## <a name="set-up-automatic-delegation"></a>Ställa in automatisk delegering
+### <a name="set-up-automatic-delegation"></a>Ställa in automatisk delegering
 1. Gå till Allmänt > Inställningar > Användaralternativ.
 2. Klicka på fliken Arbetsflöde.
     * Kontrollera att avsnittet för Delegering expanderas.    Om du vill konfigurera systemet för att automatiskt delegera dina arbetsuppgifter till andra användare, måste du skapa delegeringsregler som anger när vissa typer av arbetsuppgifter delegeras. Följ dessa steg för att skapa en ny delegeringsregel.  

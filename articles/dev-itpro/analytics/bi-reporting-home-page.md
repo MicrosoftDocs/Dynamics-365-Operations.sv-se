@@ -3,7 +3,7 @@ title: Startsida för Business Intelligence (BI) och rapportering
 description: Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence- och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 372113f019cbce790dcd3e356a14a7bb49b8afd7
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: efd96759c5fb50e30d213e9e5d58a22fd77bc7a2
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302883"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902852"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Startsida för Business Intelligence (BI) och rapportering
 
@@ -33,7 +33,7 @@ Det här avsnittet hänvisar till resurser som du kan använda för att lära di
 ## <a name="get-started"></a>Kom igång
 - [Åtkomst till information och rapportering](information-access-reporting.md)
 - [Tekniksnack: Rapporteringsalternativ](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blogg)
+- [Finance and Operations: Power BI blogg för analys- och rapporttjänster](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogg)
 
 ## <a name="analytical-workspaces"></a>Analytiska arbetsytor
 Med Finance and Operations kan du skapa interaktiva rapporter som integreras i programarbetsytorna. Arbetsytorna kan använda informationsgrafik och effekter som stöds av Microsoft Power BI. Informationsgrafiken och de visuella elementen innehåller många kontroller som tillhandahålls av tredje part. Därför kan användarna få en mycket visuell och interaktiv miljö tack vare arbetsytorna.

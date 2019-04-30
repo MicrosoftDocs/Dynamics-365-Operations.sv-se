@@ -1,9 +1,9 @@
 ---
 title: Översikt över leverantörsfakturor
 description: Det här avsnittet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329768"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975812"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Det här avsnittet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster. 
 
-<a name="vendor-invoices"></a>Leverantörsfakturor
----------------
+## <a name="vendor-invoices"></a>Leverantörsfakturor
 
 En leverantörsfaktura från en inköpsorder är en faktura som skapas när produkter eller tjänster tas emot enligt en inköpsorder som skickades till en leverantör. Leverantörsfakturor innehåller en rubrik och en eller flera rader för artiklar eller tjänster. En leverantörsfaktura slutför cykeln från inköpsordern till produktinleveransen till leverantörsfakturan. 
 
@@ -79,8 +79,15 @@ Mer information finns i [Registrera leverantörsfakturan och matcha mot mottagen
 
 Du kan arbeta med flera fakturor samtidigt och bokföra dem samtidigt. Om du måste skapa flera fakturor, använd sidan **Väntande leverantörsfakturor**. Om du måste bokföra och skriv ut flera leverantörsfakturor, använd sidan med fakturagodkännandejournalen. Om du använder fakturagodkännandejournalen måste minst en produktinleverans vara bokförd för inköpsordern och att en faktura för inköpsordern har bokförts i ett fakturaregister. Den ekonomiska informationen för fakturan kommer från fakturan som bokfördes i registret.
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>Återställer leverantörsfakturor som används
 
-Mer information finns i 
+När en leverantörsfaktura används kan den inte redigeras av en annan användare. Men statusen för en faktura kan ibland indikera att fakturan används, även om den inte redigeras aktivt. Till exempel kanske programmet slutar svara när fakturan har redigerats eller en användare kanske lämnat fakturan öppen i programmet av misstag.
+
+Du kan använda sidan **Återställa leverantörsfakturor** om du vill återställa eller frisläppa leverantörsfakturor som har använts under längre än fyra timmar, så att de kan redigeras. Du kan öppna den här sidan från navigeringen **Periodisk uppgift** eller en panel på arbetsytan **Leverantörsfakturaregistrering**. När en faktura har återskapats blir den tillgänglig för redigering på sidan **leverantörsfakturan**.
+
+Du kan endast komma åt sidan **återställa leverantörsfakturor** om säkerhetsprogrambehörighet och privilegium **återställa leverantörsfakturor som används** har tilldelats till dig. Dessutom måste parametern **Tillåt återställning av leverantörsfaktura** på sidan **Parametrar för leverantörsreskontra** måste vara aktiverad.
+
+## <a name="additional-resources"></a>Ytterligare resurser
 
  - [Ställ in leverantörsfakturapolicyer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 

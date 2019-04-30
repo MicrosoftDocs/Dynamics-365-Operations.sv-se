@@ -1,7 +1,7 @@
 ---
 title: Personal
 description: Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c8b743e667413dfc263fe640b4c6c7350e887142
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "341774"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859815"
 ---
 # <a name="human-resources"></a>Personal
 

@@ -3,7 +3,7 @@ title: Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777282"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946443"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
@@ -97,7 +97,9 @@ Till exempel **Låda** är faktisk/nominell viktenheten och du får en lastpall 
 
 När spårning av tagg för faktisk/nominell vikt inte används registreras vikten för varje dimensionsuppsättning (till exempel för varje registreringsskylt och spårningsdimension). Du kan också registrera vikten in baserat på aggregerad nivå, t.ex. fem registreringsskyltar (lastpallar).
 
-För metoder för att registrera utgående vikt, kan du ange om vägning utförs för varje faktisk/nominell viktenhet (det vill säga varje låda), eller om vikten registreras baserat på den kvantitet som plockas (t.ex. tre lådor). Observera att för plockningsprocessen för produktionsrad ska genomsnittsvikten användas om alternativet **inte registrerad** används.
+För metoder för att registrera utgående vikt, kan du ange om vägning utförs för varje faktisk/nominell viktenhet (det vill säga varje låda), eller om vikten registreras baserat på den kvantitet som plockas (t.ex. tre lådor). Observera att för plocknings- och interna förflyttningsprocessen ska genomsnittsvikten användas om alternativet **inte registrerad** används.
+
+För att begränsa att lagerstyrningens plockningsprocesser samlar in vikter som resulterar i för justeringar av vinst/förlust för faktisk/nominell vikt kan utgående viktavvikelsemetod användas.
 
 ## <a name="supported-scenarios"></a>Stödda scenarier
 
@@ -121,14 +123,12 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
  
 ### <a name="order-processing"></a>Orderbehandling
 
-- Koncernintern orderbearbetning stöds inte.
 - Skapandet av leveransavisering (ASN/förpackningsstruktur) stöder inte information om vikt.
 - Orderkvantiteten måste underhållas utifrån faktisk/nominell viktenheten.
  
 ### <a name="inbound-warehouse-processing"></a>Bearbetning av ingående lagerställe
 
 - Ta emot registreringsskyltar kräver att vikter tilldelas under registreringen, eftersom viktinformation inte stöds som en del av leveransaviseringen. Processer för taggar för faktisk/nominell vikt när taggnummer måste tilldelas manuellt per faktisk/nominell vikt.
-- Mottagande av blandade licensskyltar stöds inte för produkter med faktisk/nominell vikt.
  
 ### <a name="inventory-and-warehouse-operations"></a>Operationer för lager och lagerställen
 
@@ -169,7 +169,6 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andra begränsningar och beteenden för processer med produkter med faktisk/nominell vikt med lagerstyrning
 
-- När taggar för faktisk/nominell vikt sparas som en del av lagerappbearbetning, kan användaren inte avbryta utanför arbetsflödet.
 - Vid plockningsprocesser där användaren inte ombeds att identifiera spårningsdimensioner sker viktfördelningen utifrån den genomsnittliga vikten. Detta beteende uppstår när exempelvis en kombination av spårningsdimensioner används på samma plats och efter att en användare bearbetar plockning lämnas endast en spårningsdimension kvar på platsen.
 - När lagret reserveras för en produkt med faktisk/nominell vikt som är konfigurerad för lagerhanteringsprocesser görs bokningen baserat på den minsta vikten som definieras, även om den här kvantiteten är den sista hanteringskvantiteten. Detta beteende skiljer sig från funktionen för artiklar som inte är konfigurerade för hantering av lagerprocesser.
 - Processer som använder vikten som en del av kapacitetsberäkningar (vågtröskelvärden, arbetets maximala raster, maximal kapacitet för behållare, lastningskapacitet för platsen och så vidare) använder inte lagrets faktiska vikt. I stället baseras processer på vikten av fysisk hantering som är definierad för produkten.
@@ -193,3 +192,5 @@ Funktionerna för taggar för faktisk/nominell vikt stöds för närvarande bara
 - När behållare öppnas på nytt.
 - När formelprodukter rapporteras som färdiga via appen lagerställe.
 - När transporten läses in bearbetas via appen lagerställe.
+
+En kod för faktisk/nominell vikt kan skapas antingen med en lagerstyrningsapprocess, skapas manuellt i formuläret eller skapas med en dataentitetsprocess. Om en kod för nominell vikt blir associerad med en inkommande källdokumentrad, till exempel inköpsorderrad, kommer koden att registreras. Om raden används för utgående bearbetning. Koden uppdateras som levererad.

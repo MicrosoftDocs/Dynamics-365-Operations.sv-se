@@ -1,9 +1,9 @@
 ---
 title: Fördröjningar
-description: Det här avsnittet innehåller information om fördröjda data i huvudplaneringen. Ett fördröjt datum är ett realistiskt förfallodatum som en transaktion får om det tidigaste uppfyllelsedatumet som huvudplaneringen beräknar infaller efter begärt datum.
+description: Det här ämnet innehåller information om fördröjda data i huvudplaneringen. Ett fördröjt datum är ett realistiskt förfallodatum som en transaktion får om det tidigaste uppfyllelsedatumet som huvudplaneringen beräknar infaller efter begärt datum.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a87b19732f413aa2844101f76dea83535da86599
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7c26fedf15118a304469604527c33a25871356be
+ms.sourcegitcommit: 8eac5eee94bb32143df44c82a2dfdbe903967af8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359622"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "878320"
 ---
 # <a name="delays"></a>Fördröjningar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om fördröjda data i huvudplaneringen. Ett fördröjt datum är ett realistiskt förfallodatum som en transaktion får om det tidigaste uppfyllelsedatumet som huvudplaneringen beräknar infaller efter begärt datum.
+Det här ämnet innehåller information om fördröjda data i huvudplaneringen. Ett fördröjt datum är ett realistiskt förfallodatum som en transaktion får om det tidigaste uppfyllelsedatumet som huvudplaneringen beräknar infaller efter begärt datum.
 
 Huvudplaneringen kan beräkna det tidigaste uppfyllelsedatumet för en transaktion baserat på produktionstiderna, materialtillgänglighet, kapacitettillgänglighet och olika planläggningsparametrar. 
 
@@ -42,12 +42,13 @@ Du kan konfigurera hur förseningar beräknas för en disponeringsgrupp. Du kan 
 
 På sidan **Huvudplaneringsparametrar** kan du ange starttiden för beräkningen av förseningar. Om en order expedieras efter den här tiden läggs en försening på en dag till i orderns förseningsdatum. 
 
-**Obs!** I tidigare versioner kallades beräknade förseningar *leveransplansmeddelanden*, förseningsdatumet kallades *leveransplansdatum* och en försenad transaktion kallades *en transaktion som är inställd på ett datum i framtiden*.
+> OBS!} I tidigare versioner kallades beräknade förseningar *leveransplansmeddelanden*, förseningsdatumet kallades *leveransplansdatum* och en försenad transaktion kallades *en transaktion som är inställd på ett datum i framtiden*.
+
+## <a name="desired-date"></a>Önskat datum
+
+På sidan **planerad order** under fliken **Förseningar** är **önskat datum** för den planerade ordern. Önskat datum för en planerad order är grunddata för förseningar, vilket är ett beräknat datum som är lika med **begärt datum** beräknat från **nettobehovet**. Om den planerade ordern är en strukturlisterad, produktionsrad eller kanban-rad, baseras önskat datum på **Behovsdatum** och det önskade datumet visas på sidan **Planerad order**.
 
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Disponeringsinställningar](coverage-settings.md)
-
-
-

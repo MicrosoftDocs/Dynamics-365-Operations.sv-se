@@ -1,7 +1,7 @@
 ---
 title: Enkäter
 description: Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: d5c3e02bf5bc17db7232ccbb56e4dfbc062795b4
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2762179a13ff9bbcb4001f3a9aba443c4aa00f9f
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "306225"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "855780"
 ---
 # <a name="questionnaires"></a>Enkäter
 
