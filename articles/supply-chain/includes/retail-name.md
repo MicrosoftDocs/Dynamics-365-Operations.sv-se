@@ -1,2 +1,2 @@
 > [!NOTE]
-> <span data-ttu-id="74c2e-101">Det här avsnittet gäller både Dynamics 365 for Finance and Operations och Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="74c2e-101">This topic applies to both Dynamics 365 for Finance and Operations and to Dynamics 365 for Retail.</span></span> 
+> <span data-ttu-id="3c73d-101">Det här avsnittet gäller både för Dynamics 365 for Finance and Operations och Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="3c73d-101">This topic applies to both Dynamics 365 for Finance and Operations and to Dynamics 365 for Retail.</span></span> 
