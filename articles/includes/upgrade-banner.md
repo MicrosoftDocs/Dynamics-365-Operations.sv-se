@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> <span data-ttu-id="7cd79-101">Du måste ha en inbjudan för att kunna använda den här funktionen.</span><span class="sxs-lookup"><span data-stu-id="7cd79-101">This feature is currently available by invitation only.</span></span> <span data-ttu-id="7cd79-102">Du kan ansöka om att din organisation får delta genom att genomföra [den här undersökningen](https://aka.ms/ax2012upgrade).</span><span class="sxs-lookup"><span data-stu-id="7cd79-102">To nominate your organization to participate, please complete [this survey](https://aka.ms/ax2012upgrade).</span></span> 
