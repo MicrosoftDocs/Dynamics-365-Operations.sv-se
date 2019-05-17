@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Det här avsnittet gäller Dynamics 365 for Retail och Dynamics 365 for Finance and Operations.
+> Det här avsnittet gäller för Dynamics 365 for Retail och Dynamics 365 for Finance and Operations.
