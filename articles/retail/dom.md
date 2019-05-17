@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4f682e0c98ff70d526648bc50f8a5d6cb884ac93
-ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
+ms.openlocfilehash: 0251321f02d533326e1e8b642e30002a633b6871
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "380026"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1512683"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -59,12 +59,12 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
 
     - **Maximalt antal automatiska uppfyllelseförsök** – Ange hur många gånger DOM-motorn försöker koppla en orderrad till en plats. Om DOM-motorn inte kan koppla en orderrad till en plats på det uppgivna antalet försök flaggas orderraden som ett undantag. Motorn hoppar sedan över den raden framöver tills statusen återställs manuellt.
     - **Radie för lokal butiksregion** – Ange ett värde. Detta fält bestämmer hur platser grupperas och anses vara desamma vad avstånd beträffar. Om du t.ex. väljer **100** anses alla butiker och distributionscenter inom en radie av 100 miles från uppfyllelseadressen vara likvärdig i fråga om avstånd.
-    - **Problemlösartyp** – Välj ett värde. Två typer av problemlösare medföljer Retail: **Produktionproblemlösare** och **Förenklad problemlösare**. **Produktionsproblemlösare** måste väljas för alla maskiner som kör DOM (dvs. alla servrar som ingår i DOMBatch-gruppen). Produktionsproblemlösare kräver en särskild licensnyckel som normalt licensieras och används i produktionsmiljö. I andra miljöer måste denna licensnyckel börja användas manuellt. Använd licensnyckeln manuellt på detta sätt:
+    - **Problemlösartyp** – Välj ett värde. Två typer av problemlösare medföljer Retail: **Produktionsproblemlösare** och **Förenklad problemlösare**. **Produktionsproblemlösare** måste väljas för alla maskiner som kör DOM (dvs. alla servrar som ingår i DOMBatch-gruppen). Produktionsproblemlösare kräver en särskild licensnyckel som normalt licensieras och används i produktionsmiljö. I andra miljöer måste denna licensnyckel börja användas manuellt. Använd licensnyckeln manuellt på detta sätt:
 
         1. Öppna biblioteket Gemensamma tillgångar i Microsoft Dynamics Lifecycle Services, välj **Modell** som tillgångstyp och ladda ned filen **DOM-licens**.
         2. Starta Microsoft Internet Information Services-hanteraren (IIS), högerklicka på **AOSServices webbplats** och välj **Utforska**. Utforskaren öppnas i **\<AOS Service root\>\\webroot**. Anteckna sökvägen till \<AOS Service root\>, eftersom den anges i nästa steg.
         3. Kopiera konfigurationsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        4. Gå till Retail Headquarters-klienten och öppna sidan **DOM-parametrar**. Välj **Produktionproblemlösare** i fältet **Problemlösartyp** på fliken **Problemlösare** och bekräfta att inga felmeddelanden visas.
+        4. Gå till Retail Headquarters-klienten och öppna sidan **DOM-parametrar**. Välj **Produktionsproblemlösare** i fältet **Problemlösartyp** på fliken **Problemlösare** och bekräfta att inga felmeddelanden visas.
 
         > [!NOTE]
         > Den förenklade problemlösaren medföljer så att återförsäljare ska kunna testa DOM-funktionen utan att behöva använda den särskilda licensen. Den förenklade problemlösaren bör inte användas i produktionsmiljö.
