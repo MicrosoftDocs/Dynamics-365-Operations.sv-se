@@ -16,41 +16,41 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: dd9d40bb331b9e024617c8be55330dfce8ba1cc6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "309482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555918"
 ---
-# <a name="assign-a-product-lifecycle-state-to-a-released-product-master"></a><span data-ttu-id="09db9-103">Associera ett produktlivscykeltillstånd till en frisläppt produktmall</span><span class="sxs-lookup"><span data-stu-id="09db9-103">Assign a product lifecycle state to a released product master</span></span>
+# <a name="assign-a-product-lifecycle-state-to-a-released-product-master"></a><span data-ttu-id="cf9d9-103">Associera ett produktlivscykeltillstånd till en frisläppt produktmall</span><span class="sxs-lookup"><span data-stu-id="cf9d9-103">Assign a product lifecycle state to a released product master</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="09db9-104">Nedan beskrivs proceduren för att tilldela ett livscykeltillstånd till en frisläppt produktmall och dess varianter.</span><span class="sxs-lookup"><span data-stu-id="09db9-104">This procedure shows how to assign a product lifecycle state to a released product master and its variants.</span></span> <span data-ttu-id="09db9-105">Förutsättning: Du behöver spela uppgiftsguiden ”skapa ett nytt tillstånd för produktlivscykel” först för att se till att minst ett produktlivscykeltillstånd skapas innan du kan spela upp den här uppgiftsguiden.</span><span class="sxs-lookup"><span data-stu-id="09db9-105">Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that you have at least one product lifecycle state created before you can play this task guide.</span></span>
+<span data-ttu-id="cf9d9-104">Nedan beskrivs proceduren för att tilldela ett livscykeltillstånd till en frisläppt produktmall och dess varianter.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-104">This procedure shows how to assign a product lifecycle state to a released product master and its variants.</span></span> <span data-ttu-id="cf9d9-105">Förutsättning: Du behöver spela uppgiftsguiden ”skapa ett nytt tillstånd för produktlivscykel” först för att se till att minst ett produktlivscykeltillstånd skapas innan du kan spela upp den här uppgiftsguiden.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-105">Prerequisite: You need to play the task guide "Create a new product lifecycle state" first to make sure that you have at least one product lifecycle state created before you can play this task guide.</span></span>
 
 
-## <a name="find-a-released-product-master"></a><span data-ttu-id="09db9-106">Hitta den frisläppta produktmallen</span><span class="sxs-lookup"><span data-stu-id="09db9-106">Find a released product master</span></span>
-1. <span data-ttu-id="09db9-107">Gå till Produktinformationshantering > Produkter > Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="09db9-107">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="09db9-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="09db9-108">In the list, find and select the desired record.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="09db9-109">En produktmall har produktundertypen Produktmall.</span><span class="sxs-lookup"><span data-stu-id="09db9-109">A product master has the Product subtype Product master.</span></span>  
-
-## <a name="update-the-lifecycle-state"></a><span data-ttu-id="09db9-110">Uppdatera livscykeltillståndet</span><span class="sxs-lookup"><span data-stu-id="09db9-110">Update the lifecycle state</span></span>
-1. <span data-ttu-id="09db9-111">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="09db9-111">Click Edit.</span></span>
-2. <span data-ttu-id="09db9-112">Ange eller välj ett värde i fältet produktlivscykeltillstånd.</span><span class="sxs-lookup"><span data-stu-id="09db9-112">In the Product lifecycle state field, enter or select a value.</span></span>
-3. <span data-ttu-id="09db9-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="09db9-113">Click Save.</span></span>
-4. <span data-ttu-id="09db9-114">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="09db9-114">Click Yes.</span></span>
+## <a name="find-a-released-product-master"></a><span data-ttu-id="cf9d9-106">Hitta den frisläppta produktmallen</span><span class="sxs-lookup"><span data-stu-id="cf9d9-106">Find a released product master</span></span>
+1. <span data-ttu-id="cf9d9-107">Gå till Produktinformationshantering > Produkter > Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-107">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="cf9d9-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-108">In the list, find and select the desired record.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="09db9-115">Om Ja väljs uppdateras även alla relaterade frisläppta produktvarianter som har samma ursprungliga tillstånd, eftersom frisläppt produktmall även uppdateras till det nya produktlivscykeltillståndet.</span><span class="sxs-lookup"><span data-stu-id="09db9-115">If Yes is selected, all the related released product variants that have the same original status as the released product master are also updated to the new product lifecycle state.</span></span> <span data-ttu-id="09db9-116">Om Nej är markerat kommer alla varianter behålla sina verkliga tillstånd.</span><span class="sxs-lookup"><span data-stu-id="09db9-116">If No is selected, all variants keep their actual state.</span></span> <span data-ttu-id="09db9-117">Varianter som har ett annat produktlivscykeltillstånd än den frisläppta produktmallen uppdateras inte.</span><span class="sxs-lookup"><span data-stu-id="09db9-117">Variants that have a different product lifecycle state from the released product master are not updated.</span></span>  
+> <span data-ttu-id="cf9d9-109">En produktmall har produktundertypen Produktmall.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-109">A product master has the Product subtype Product master.</span></span>  
 
-## <a name="verify-the-lifecycle-state-of-the-variants"></a><span data-ttu-id="09db9-118">Kontrollera livscykelstatus för varianterna</span><span class="sxs-lookup"><span data-stu-id="09db9-118">Verify the lifecycle state of the variants</span></span>
-1. <span data-ttu-id="09db9-119">Klicka på Frisläppta produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="09db9-119">Click Released product variants.</span></span>
+## <a name="update-the-lifecycle-state"></a><span data-ttu-id="cf9d9-110">Uppdatera livscykeltillståndet</span><span class="sxs-lookup"><span data-stu-id="cf9d9-110">Update the lifecycle state</span></span>
+1. <span data-ttu-id="cf9d9-111">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-111">Click Edit.</span></span>
+2. <span data-ttu-id="cf9d9-112">Ange eller välj ett värde i fältet produktlivscykeltillstånd.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-112">In the Product lifecycle state field, enter or select a value.</span></span>
+3. <span data-ttu-id="cf9d9-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-113">Click Save.</span></span>
+4. <span data-ttu-id="cf9d9-114">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-114">Click Yes.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="09db9-120">Observera att alla varianter har ärvt det valda livscykeltillståndet från den frisläppt produktmallen.</span><span class="sxs-lookup"><span data-stu-id="09db9-120">Note that all variants have inherited the selected lifecycle state from the released product master.</span></span>  
+> <span data-ttu-id="cf9d9-115">Om Ja väljs uppdateras även alla relaterade frisläppta produktvarianter som har samma ursprungliga tillstånd, eftersom frisläppt produktmall även uppdateras till det nya produktlivscykeltillståndet.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-115">If Yes is selected, all the related released product variants that have the same original status as the released product master are also updated to the new product lifecycle state.</span></span> <span data-ttu-id="cf9d9-116">Om Nej är markerat kommer alla varianter behålla sina verkliga tillstånd.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-116">If No is selected, all variants keep their actual state.</span></span> <span data-ttu-id="cf9d9-117">Varianter som har ett annat produktlivscykeltillstånd än den frisläppta produktmallen uppdateras inte.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-117">Variants that have a different product lifecycle state from the released product master are not updated.</span></span>  
 
-2. <span data-ttu-id="09db9-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="09db9-121">In the list, mark the selected row.</span></span>
-3. <span data-ttu-id="09db9-122">Ange eller välj ett värde i fältet produktlivscykeltillstånd.</span><span class="sxs-lookup"><span data-stu-id="09db9-122">In the Product lifecycle state field, enter or select a value.</span></span>
+## <a name="verify-the-lifecycle-state-of-the-variants"></a><span data-ttu-id="cf9d9-118">Kontrollera livscykelstatus för varianterna</span><span class="sxs-lookup"><span data-stu-id="cf9d9-118">Verify the lifecycle state of the variants</span></span>
+1. <span data-ttu-id="cf9d9-119">Klicka på Frisläppta produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-119">Click Released product variants.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="cf9d9-120">Observera att alla varianter har ärvt det valda livscykeltillståndet från den frisläppt produktmallen.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-120">Note that all variants have inherited the selected lifecycle state from the released product master.</span></span>  
+
+2. <span data-ttu-id="cf9d9-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-121">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="cf9d9-122">Ange eller välj ett värde i fältet produktlivscykeltillstånd.</span><span class="sxs-lookup"><span data-stu-id="cf9d9-122">In the Product lifecycle state field, enter or select a value.</span></span>
 

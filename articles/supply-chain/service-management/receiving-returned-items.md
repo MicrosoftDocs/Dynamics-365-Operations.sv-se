@@ -19,28 +19,28 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d46f2b16c475cda9b99c1ba084538de47ec3dc7c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365809"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570116"
 ---
-# <a name="receive-returned-items"></a><span data-ttu-id="38fdb-103">Inleverera returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="38fdb-103">Receive returned items</span></span> 
+# <a name="receive-returned-items"></a><span data-ttu-id="3c64e-103">Inleverera returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="3c64e-103">Receive returned items</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="38fdb-104">När en returnförsändelse inkommer matchar du den mot en returorder som redan har skapats.</span><span class="sxs-lookup"><span data-stu-id="38fdb-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
+<span data-ttu-id="3c64e-104">När en returnförsändelse inkommer matchar du den mot en returorder som redan har skapats.</span><span class="sxs-lookup"><span data-stu-id="3c64e-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
 
-<span data-ttu-id="38fdb-105">Beroende på företagets riktlinjer kan artiklarna i returförsändelsen skickas i karantän för ytterligare inspektion eller kan returneras till lagret.</span><span class="sxs-lookup"><span data-stu-id="38fdb-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
+<span data-ttu-id="3c64e-105">Beroende på företagets riktlinjer kan artiklarna i returförsändelsen skickas i karantän för ytterligare inspektion eller kan returneras till lagret.</span><span class="sxs-lookup"><span data-stu-id="3c64e-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="38fdb-106">Se även</span><span class="sxs-lookup"><span data-stu-id="38fdb-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3c64e-106">Se även</span><span class="sxs-lookup"><span data-stu-id="3c64e-106">See also</span></span>
 
-[<span data-ttu-id="38fdb-107">Registrera inleverans av returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="38fdb-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
+[<span data-ttu-id="3c64e-107">Registrera inleverans av returnerade artiklar</span><span class="sxs-lookup"><span data-stu-id="3c64e-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
 
-[<span data-ttu-id="38fdb-108">Bokför införseljournalen för returnerade produkter</span><span class="sxs-lookup"><span data-stu-id="38fdb-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
+[<span data-ttu-id="3c64e-108">Bokför införseljournalen för returnerade produkter</span><span class="sxs-lookup"><span data-stu-id="3c64e-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
 
-[<span data-ttu-id="38fdb-109">Föra returnerade artiklar genom inspektionen</span><span class="sxs-lookup"><span data-stu-id="38fdb-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="3c64e-109">Föra returnerade artiklar genom inspektionen</span><span class="sxs-lookup"><span data-stu-id="3c64e-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
   
 

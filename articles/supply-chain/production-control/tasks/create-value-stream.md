@@ -18,34 +18,34 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1d684e4e87b806035b1ec09c642ad0b07248fed2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550524"
 ---
-# <a name="create-a-value-stream"></a><span data-ttu-id="a059c-103">Skapa en värdeström</span><span class="sxs-lookup"><span data-stu-id="a059c-103">Create a value stream</span></span>
+# <a name="create-a-value-stream"></a><span data-ttu-id="3d6dc-103">Skapa en värdeström</span><span class="sxs-lookup"><span data-stu-id="3d6dc-103">Create a value stream</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a059c-104">Värdeströmmar är driftenheter som grupperar ett eller flera produktionsflöden.</span><span class="sxs-lookup"><span data-stu-id="a059c-104">Value streams are operating units, that group one or multiple production flows.</span></span> <span data-ttu-id="a059c-105">Om du vill definiera ett produktionsflöde måste du först definiera en värdeström.</span><span class="sxs-lookup"><span data-stu-id="a059c-105">To define a production flow, you first must define a value stream.</span></span>
+<span data-ttu-id="3d6dc-104">Värdeströmmar är driftenheter som grupperar ett eller flera produktionsflöden.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-104">Value streams are operating units, that group one or multiple production flows.</span></span> <span data-ttu-id="3d6dc-105">Om du vill definiera ett produktionsflöde måste du först definiera en värdeström.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-105">To define a production flow, you first must define a value stream.</span></span>
 
 
-## <a name="open-the-form"></a><span data-ttu-id="a059c-106">Öppna formuläret</span><span class="sxs-lookup"><span data-stu-id="a059c-106">Open the form</span></span>
-1. <span data-ttu-id="a059c-107">Gå till Produktionskontroll > Inställning > Lean-produktionsflöde > Värdeströmmar.</span><span class="sxs-lookup"><span data-stu-id="a059c-107">Go to Production control > Setup > Lean production flow > Value streams.</span></span>
+## <a name="open-the-form"></a><span data-ttu-id="3d6dc-106">Öppna formuläret</span><span class="sxs-lookup"><span data-stu-id="3d6dc-106">Open the form</span></span>
+1. <span data-ttu-id="3d6dc-107">Gå till Produktionskontroll > Inställning > Lean-produktionsflöde > Värdeströmmar.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-107">Go to Production control > Setup > Lean production flow > Value streams.</span></span>
 
-## <a name="create-a-new-value-stream"></a><span data-ttu-id="a059c-108">Skapa en ny värdeström</span><span class="sxs-lookup"><span data-stu-id="a059c-108">Create a new value stream</span></span>
-1. <span data-ttu-id="a059c-109">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="a059c-109">Click New to open the drop dialog.</span></span>
-2. <span data-ttu-id="a059c-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="a059c-110">In the Name field, type a value.</span></span>
+## <a name="create-a-new-value-stream"></a><span data-ttu-id="3d6dc-108">Skapa en ny värdeström</span><span class="sxs-lookup"><span data-stu-id="3d6dc-108">Create a new value stream</span></span>
+1. <span data-ttu-id="3d6dc-109">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-109">Click New to open the drop dialog.</span></span>
+2. <span data-ttu-id="3d6dc-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-110">In the Name field, type a value.</span></span>
 
-## <a name="select-a-value-stream-manager"></a><span data-ttu-id="a059c-111">Välj en värdeströmansvarig</span><span class="sxs-lookup"><span data-stu-id="a059c-111">Select a value stream manager</span></span>
-1. <span data-ttu-id="a059c-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Chef.</span><span class="sxs-lookup"><span data-stu-id="a059c-112">In the Manager field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="a059c-113">Den värdeströmansvarige definieras för att dokumentera organisationen.</span><span class="sxs-lookup"><span data-stu-id="a059c-113">The value stream manager is defined to document the organization.</span></span>  
-2. <span data-ttu-id="a059c-114">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="a059c-114">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="a059c-115">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a059c-115">In the list, click the link in the selected row.</span></span>
+## <a name="select-a-value-stream-manager"></a><span data-ttu-id="3d6dc-111">Välj en värdeströmansvarig</span><span class="sxs-lookup"><span data-stu-id="3d6dc-111">Select a value stream manager</span></span>
+1. <span data-ttu-id="3d6dc-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Chef.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-112">In the Manager field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="3d6dc-113">Den värdeströmansvarige definieras för att dokumentera organisationen.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-113">The value stream manager is defined to document the organization.</span></span>  
+2. <span data-ttu-id="3d6dc-114">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-114">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="3d6dc-115">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-115">In the list, click the link in the selected row.</span></span>
 
-## <a name="save-and-close"></a><span data-ttu-id="a059c-116">Spara och stäng</span><span class="sxs-lookup"><span data-stu-id="a059c-116">Save and close</span></span>
-1. <span data-ttu-id="a059c-117">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a059c-117">Click Save.</span></span>
-2. <span data-ttu-id="a059c-118">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a059c-118">Close the page.</span></span>
-3. <span data-ttu-id="a059c-119">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="a059c-119">Refresh the page.</span></span>
+## <a name="save-and-close"></a><span data-ttu-id="3d6dc-116">Spara och stäng</span><span class="sxs-lookup"><span data-stu-id="3d6dc-116">Save and close</span></span>
+1. <span data-ttu-id="3d6dc-117">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-117">Click Save.</span></span>
+2. <span data-ttu-id="3d6dc-118">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-118">Close the page.</span></span>
+3. <span data-ttu-id="3d6dc-119">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="3d6dc-119">Refresh the page.</span></span>
 

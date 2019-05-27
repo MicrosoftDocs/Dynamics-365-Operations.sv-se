@@ -17,25 +17,25 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: be337accdde23d5bd9871c75115f45474d960604
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364360"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572521"
 ---
-# <a name="create-a-credit-note-on-project-invoices"></a><span data-ttu-id="b27f6-103">Skapa en kreditfaktura för projektfakturor</span><span class="sxs-lookup"><span data-stu-id="b27f6-103">Create a credit note on project invoices</span></span>
+# <a name="create-a-credit-note-on-project-invoices"></a><span data-ttu-id="47096-103">Skapa en kreditfaktura för projektfakturor</span><span class="sxs-lookup"><span data-stu-id="47096-103">Create a credit note on project invoices</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-1. <span data-ttu-id="b27f6-104">Gå till Projekthantering och redovisning > Projekt > Alla projekt.</span><span class="sxs-lookup"><span data-stu-id="b27f6-104">Go to Project management and accounting > Projects > All projects.</span></span> 
-2. <span data-ttu-id="b27f6-105">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="b27f6-105">In the list, find and select the desired record.</span></span> 
-3. <span data-ttu-id="b27f6-106">Välj det projekt-ID som används för kreditfakturan.</span><span class="sxs-lookup"><span data-stu-id="b27f6-106">Select the Project ID that is used for the Credit Note.</span></span> <span data-ttu-id="b27f6-107">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="b27f6-107">In the list, click the link in the selected row.</span></span> 
-4. <span data-ttu-id="b27f6-108">Klicka på Hantera i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="b27f6-108">On the Action Pane, click Manage.</span></span> 
-5. <span data-ttu-id="b27f6-109">Klicka på Fakturajournaler.</span><span class="sxs-lookup"><span data-stu-id="b27f6-109">Click Invoice journals.</span></span> 
-6. <span data-ttu-id="b27f6-110">Välj transaktionen för kreditfakturan.</span><span class="sxs-lookup"><span data-stu-id="b27f6-110">Select the transaction for credit note.</span></span> <span data-ttu-id="b27f6-111">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="b27f6-111">In the list, mark the selected row.</span></span> 
-7. <span data-ttu-id="b27f6-112">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="b27f6-112">Click Functions.</span></span> 
-8. <span data-ttu-id="b27f6-113">Klicka på Välj för kreditfaktura.</span><span class="sxs-lookup"><span data-stu-id="b27f6-113">Click Select for credit note.</span></span> 
-9. <span data-ttu-id="b27f6-114">Välj transaktion för kreditfakturan genom att markera kryssrutan.</span><span class="sxs-lookup"><span data-stu-id="b27f6-114">Select the transaction for credit note by marking the check box.</span></span>
-10. <span data-ttu-id="b27f6-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="b27f6-115">Click OK.</span></span> 
+1. <span data-ttu-id="47096-104">Gå till Projekthantering och redovisning > Projekt > Alla projekt.</span><span class="sxs-lookup"><span data-stu-id="47096-104">Go to Project management and accounting > Projects > All projects.</span></span> 
+2. <span data-ttu-id="47096-105">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="47096-105">In the list, find and select the desired record.</span></span> 
+3. <span data-ttu-id="47096-106">Välj det projekt-ID som används för kreditfakturan.</span><span class="sxs-lookup"><span data-stu-id="47096-106">Select the Project ID that is used for the Credit Note.</span></span> <span data-ttu-id="47096-107">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="47096-107">In the list, click the link in the selected row.</span></span> 
+4. <span data-ttu-id="47096-108">Klicka på Hantera i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="47096-108">On the Action Pane, click Manage.</span></span> 
+5. <span data-ttu-id="47096-109">Klicka på Fakturajournaler.</span><span class="sxs-lookup"><span data-stu-id="47096-109">Click Invoice journals.</span></span> 
+6. <span data-ttu-id="47096-110">Välj transaktionen för kreditfakturan.</span><span class="sxs-lookup"><span data-stu-id="47096-110">Select the transaction for credit note.</span></span> <span data-ttu-id="47096-111">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="47096-111">In the list, mark the selected row.</span></span> 
+7. <span data-ttu-id="47096-112">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="47096-112">Click Functions.</span></span> 
+8. <span data-ttu-id="47096-113">Klicka på Välj för kreditfaktura.</span><span class="sxs-lookup"><span data-stu-id="47096-113">Click Select for credit note.</span></span> 
+9. <span data-ttu-id="47096-114">Välj transaktion för kreditfakturan genom att markera kryssrutan.</span><span class="sxs-lookup"><span data-stu-id="47096-114">Select the transaction for credit note by marking the check box.</span></span>
+10. <span data-ttu-id="47096-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="47096-115">Click OK.</span></span> 
 
-<span data-ttu-id="b27f6-116">Efter detta steg blir kreditfakturan tillgänglig för fakturaförslaget.</span><span class="sxs-lookup"><span data-stu-id="b27f6-116">After this step, the Credit Note will be available for Invoice Proposal.</span></span>
+<span data-ttu-id="47096-116">Efter detta steg blir kreditfakturan tillgänglig för fakturaförslaget.</span><span class="sxs-lookup"><span data-stu-id="47096-116">After this step, the Credit Note will be available for Invoice Proposal.</span></span>

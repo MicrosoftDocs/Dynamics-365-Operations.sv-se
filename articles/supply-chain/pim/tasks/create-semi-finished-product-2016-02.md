@@ -17,60 +17,60 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9caeae552471eed1cb1d8630f387ca31107fcece
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "362865"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1567853"
 ---
-# <a name="create-a-semi-finished-product-february-2016"></a><span data-ttu-id="bb97a-103">Skapa en halvfärdig produkt (februari 2016)</span><span class="sxs-lookup"><span data-stu-id="bb97a-103">Create a semi-finished product (February 2016)</span></span>
+# <a name="create-a-semi-finished-product-february-2016"></a><span data-ttu-id="f9bc5-103">Skapa en halvfärdig produkt (februari 2016)</span><span class="sxs-lookup"><span data-stu-id="f9bc5-103">Create a semi-finished product (February 2016)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="bb97a-104">Den här uppgiften fokuserar på att skapa en halvfärdig produkt.</span><span class="sxs-lookup"><span data-stu-id="bb97a-104">This task focuses on creating a semi-finished product.</span></span> <span data-ttu-id="bb97a-105">Detta är den andra uppgiften i beräkningsserien för strukturlista.</span><span class="sxs-lookup"><span data-stu-id="bb97a-105">It is the second task in the BOM calculation series.</span></span> <span data-ttu-id="bb97a-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="bb97a-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="f9bc5-104">Den här uppgiften fokuserar på att skapa en halvfärdig produkt.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-104">This task focuses on creating a semi-finished product.</span></span> <span data-ttu-id="f9bc5-105">Detta är den andra uppgiften i beräkningsserien för strukturlista.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-105">It is the second task in the BOM calculation series.</span></span> <span data-ttu-id="f9bc5-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="bb97a-107">Gå till Produktinformationshantering > Produkter > Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="bb97a-107">Go to Product information management > Products > Released products.</span></span>
-2. <span data-ttu-id="bb97a-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="bb97a-108">Click New.</span></span>
-3. <span data-ttu-id="bb97a-109">Skriv ett värde i fältet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="bb97a-109">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="bb97a-110">Ange BOM_2 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-110">For this example, type BOM_2.</span></span>  
-4. <span data-ttu-id="bb97a-111">Ange eller välj ett värde i fältet Artikelmodellgrupp.</span><span class="sxs-lookup"><span data-stu-id="bb97a-111">In the Item model group field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-112">Välj STD.</span><span class="sxs-lookup"><span data-stu-id="bb97a-112">Select STD.</span></span> <span data-ttu-id="bb97a-113">STD innebär "standardkostnad" och är den vanligaste modellen när du arbetar med kostnadsberäkningar.</span><span class="sxs-lookup"><span data-stu-id="bb97a-113">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
-5. <span data-ttu-id="bb97a-114">Ange eller välj ett värde i fältet Artikelgrupp.</span><span class="sxs-lookup"><span data-stu-id="bb97a-114">In the Item group field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-115">Välj till exempel "Ljud".</span><span class="sxs-lookup"><span data-stu-id="bb97a-115">For example, select Audio.</span></span> <span data-ttu-id="bb97a-116">Detta påverkar inte kostnadsberäkningarna.</span><span class="sxs-lookup"><span data-stu-id="bb97a-116">This has no impact on cost calculations.</span></span>  
-6. <span data-ttu-id="bb97a-117">Ange eller välj ett värde i fältet Lagringsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="bb97a-117">In the Storage dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-118">Välj SiteWH.</span><span class="sxs-lookup"><span data-stu-id="bb97a-118">Select SiteWH.</span></span> <span data-ttu-id="bb97a-119">Endast plats och lagerställe används för detta exempel.</span><span class="sxs-lookup"><span data-stu-id="bb97a-119">Only Site and Warehouse will be used for this example.</span></span>  
-7. <span data-ttu-id="bb97a-120">Ange eller välj ett värde i fältet Spårningsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="bb97a-120">In the Tracking dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-121">Spårningsdimensioner kommer inte att användas i det här exemplet; välj Ingen.</span><span class="sxs-lookup"><span data-stu-id="bb97a-121">Tracking dimensions will not be used for this example, select None.</span></span>  
-8. <span data-ttu-id="bb97a-122">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="bb97a-122">Click OK.</span></span>
-9. <span data-ttu-id="bb97a-123">Klicka på Hantera inventering i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="bb97a-123">On the Action Pane, click Manage inventory.</span></span>
-10. <span data-ttu-id="bb97a-124">Visa standardorderinställningar.</span><span class="sxs-lookup"><span data-stu-id="bb97a-124">Click Default order settings.</span></span>
-11. <span data-ttu-id="bb97a-125">Välj "Produktion" i fältet för förvald ordertyp.</span><span class="sxs-lookup"><span data-stu-id="bb97a-125">In the Default order type field, select 'Production'.</span></span>
-    * <span data-ttu-id="bb97a-126">Eftersom detta är en halvfärdig produkt som ska tillverkas, välj Produktion.</span><span class="sxs-lookup"><span data-stu-id="bb97a-126">Because this is a semi-finished product that will be produced, select Production.</span></span>  
-12. <span data-ttu-id="bb97a-127">Ange eller välj ett värde i fältet Inköpsplats.</span><span class="sxs-lookup"><span data-stu-id="bb97a-127">In the Purchase site field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-128">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-128">For this example, select Site 1.</span></span>  
-13. <span data-ttu-id="bb97a-129">Ange eller välj ett värde i fältet Lagerplats.</span><span class="sxs-lookup"><span data-stu-id="bb97a-129">In the Inventory site field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-130">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-130">For this example, select Site 1.</span></span>  
-14. <span data-ttu-id="bb97a-131">Ange eller välj ett värde i fältet Försäljningsplats.</span><span class="sxs-lookup"><span data-stu-id="bb97a-131">In the Sales site field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-132">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-132">For this example, select Site 1.</span></span>  
-15. <span data-ttu-id="bb97a-133">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb97a-133">Close the page.</span></span>
-16. <span data-ttu-id="bb97a-134">Klicka på Hantera kostnader i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="bb97a-134">On the Action Pane, click Manage costs.</span></span>
-17. <span data-ttu-id="bb97a-135">Klicka på Artikelpris.</span><span class="sxs-lookup"><span data-stu-id="bb97a-135">Click Item price.</span></span>
-18. <span data-ttu-id="bb97a-136">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="bb97a-136">Click New.</span></span>
-19. <span data-ttu-id="bb97a-137">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="bb97a-137">In the list, mark the selected row.</span></span>
-20. <span data-ttu-id="bb97a-138">Ange eller välj ett värde i fältet Version.</span><span class="sxs-lookup"><span data-stu-id="bb97a-138">In the Version field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-139">Välj Version 10 för det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-139">For this example, select Version 10.</span></span>  
-21. <span data-ttu-id="bb97a-140">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="bb97a-140">In the Site field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-141">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-141">For this example, select Site 1.</span></span>  
-22. <span data-ttu-id="bb97a-142">Ange Pris som "10".</span><span class="sxs-lookup"><span data-stu-id="bb97a-142">Set Price to '10'.</span></span>
-    * <span data-ttu-id="bb97a-143">Ange ett självkostnadspris på 10 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-143">For this example, type a cost price of 10.</span></span>  
-23. <span data-ttu-id="bb97a-144">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="bb97a-144">Click Save.</span></span>
-24. <span data-ttu-id="bb97a-145">Klicka på Aktivera väntande pris(er).</span><span class="sxs-lookup"><span data-stu-id="bb97a-145">Click Activate pending price(s).</span></span>
-25. <span data-ttu-id="bb97a-146">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb97a-146">Close the page.</span></span>
-26. <span data-ttu-id="bb97a-147">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb97a-147">Close the page.</span></span>
-27. <span data-ttu-id="bb97a-148">Klicka på BOM_2 för att öppna.</span><span class="sxs-lookup"><span data-stu-id="bb97a-148">Click BOM_2 to open it.</span></span>
-28. <span data-ttu-id="bb97a-149">Expandera avsnittet Hantera kostnader.</span><span class="sxs-lookup"><span data-stu-id="bb97a-149">Expand the Manage costs section.</span></span>
-29. <span data-ttu-id="bb97a-150">Ange eller välj ett värde i fältet Kostnadsgrupp.</span><span class="sxs-lookup"><span data-stu-id="bb97a-150">In the Cost group field, enter or select a value.</span></span>
-    * <span data-ttu-id="bb97a-151">Välj Kostnadsgrupp M1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="bb97a-151">For this example, select Cost group M1.</span></span>  
-30. <span data-ttu-id="bb97a-152">Använd genvägen för att spara en post.</span><span class="sxs-lookup"><span data-stu-id="bb97a-152">Use the shortcut for saving a record.</span></span>
-31. <span data-ttu-id="bb97a-153">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bb97a-153">Close the page.</span></span>
+1. <span data-ttu-id="f9bc5-107">Gå till Produktinformationshantering > Produkter > Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-107">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="f9bc5-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-108">Click New.</span></span>
+3. <span data-ttu-id="f9bc5-109">Skriv ett värde i fältet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-109">In the Product number field, type a value.</span></span>
+    * <span data-ttu-id="f9bc5-110">Ange BOM_2 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-110">For this example, type BOM_2.</span></span>  
+4. <span data-ttu-id="f9bc5-111">Ange eller välj ett värde i fältet Artikelmodellgrupp.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-111">In the Item model group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-112">Välj STD.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-112">Select STD.</span></span> <span data-ttu-id="f9bc5-113">STD innebär "standardkostnad" och är den vanligaste modellen när du arbetar med kostnadsberäkningar.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-113">STD stands for standard cost and is the most commonly used model when working with cost calculations.</span></span>  
+5. <span data-ttu-id="f9bc5-114">Ange eller välj ett värde i fältet Artikelgrupp.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-114">In the Item group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-115">Välj till exempel "Ljud".</span><span class="sxs-lookup"><span data-stu-id="f9bc5-115">For example, select Audio.</span></span> <span data-ttu-id="f9bc5-116">Detta påverkar inte kostnadsberäkningarna.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-116">This has no impact on cost calculations.</span></span>  
+6. <span data-ttu-id="f9bc5-117">Ange eller välj ett värde i fältet Lagringsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-117">In the Storage dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-118">Välj SiteWH.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-118">Select SiteWH.</span></span> <span data-ttu-id="f9bc5-119">Endast plats och lagerställe används för detta exempel.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-119">Only Site and Warehouse will be used for this example.</span></span>  
+7. <span data-ttu-id="f9bc5-120">Ange eller välj ett värde i fältet Spårningsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-120">In the Tracking dimension group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-121">Spårningsdimensioner kommer inte att användas i det här exemplet; välj Ingen.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-121">Tracking dimensions will not be used for this example, select None.</span></span>  
+8. <span data-ttu-id="f9bc5-122">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-122">Click OK.</span></span>
+9. <span data-ttu-id="f9bc5-123">Klicka på Hantera inventering i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-123">On the Action Pane, click Manage inventory.</span></span>
+10. <span data-ttu-id="f9bc5-124">Visa standardorderinställningar.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-124">Click Default order settings.</span></span>
+11. <span data-ttu-id="f9bc5-125">Välj "Produktion" i fältet för förvald ordertyp.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-125">In the Default order type field, select 'Production'.</span></span>
+    * <span data-ttu-id="f9bc5-126">Eftersom detta är en halvfärdig produkt som ska tillverkas, välj Produktion.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-126">Because this is a semi-finished product that will be produced, select Production.</span></span>  
+12. <span data-ttu-id="f9bc5-127">Ange eller välj ett värde i fältet Inköpsplats.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-127">In the Purchase site field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-128">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-128">For this example, select Site 1.</span></span>  
+13. <span data-ttu-id="f9bc5-129">Ange eller välj ett värde i fältet Lagerplats.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-129">In the Inventory site field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-130">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-130">For this example, select Site 1.</span></span>  
+14. <span data-ttu-id="f9bc5-131">Ange eller välj ett värde i fältet Försäljningsplats.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-131">In the Sales site field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-132">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-132">For this example, select Site 1.</span></span>  
+15. <span data-ttu-id="f9bc5-133">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-133">Close the page.</span></span>
+16. <span data-ttu-id="f9bc5-134">Klicka på Hantera kostnader i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-134">On the Action Pane, click Manage costs.</span></span>
+17. <span data-ttu-id="f9bc5-135">Klicka på Artikelpris.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-135">Click Item price.</span></span>
+18. <span data-ttu-id="f9bc5-136">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-136">Click New.</span></span>
+19. <span data-ttu-id="f9bc5-137">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-137">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="f9bc5-138">Ange eller välj ett värde i fältet Version.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-138">In the Version field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-139">Välj Version 10 för det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-139">For this example, select Version 10.</span></span>  
+21. <span data-ttu-id="f9bc5-140">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-140">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-141">Välj Plats 1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-141">For this example, select Site 1.</span></span>  
+22. <span data-ttu-id="f9bc5-142">Ange Pris som "10".</span><span class="sxs-lookup"><span data-stu-id="f9bc5-142">Set Price to '10'.</span></span>
+    * <span data-ttu-id="f9bc5-143">Ange ett självkostnadspris på 10 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-143">For this example, type a cost price of 10.</span></span>  
+23. <span data-ttu-id="f9bc5-144">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-144">Click Save.</span></span>
+24. <span data-ttu-id="f9bc5-145">Klicka på Aktivera väntande pris(er).</span><span class="sxs-lookup"><span data-stu-id="f9bc5-145">Click Activate pending price(s).</span></span>
+25. <span data-ttu-id="f9bc5-146">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-146">Close the page.</span></span>
+26. <span data-ttu-id="f9bc5-147">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-147">Close the page.</span></span>
+27. <span data-ttu-id="f9bc5-148">Klicka på BOM_2 för att öppna.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-148">Click BOM_2 to open it.</span></span>
+28. <span data-ttu-id="f9bc5-149">Expandera avsnittet Hantera kostnader.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-149">Expand the Manage costs section.</span></span>
+29. <span data-ttu-id="f9bc5-150">Ange eller välj ett värde i fältet Kostnadsgrupp.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-150">In the Cost group field, enter or select a value.</span></span>
+    * <span data-ttu-id="f9bc5-151">Välj Kostnadsgrupp M1 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-151">For this example, select Cost group M1.</span></span>  
+30. <span data-ttu-id="f9bc5-152">Använd genvägen för att spara en post.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-152">Use the shortcut for saving a record.</span></span>
+31. <span data-ttu-id="f9bc5-153">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="f9bc5-153">Close the page.</span></span>
 

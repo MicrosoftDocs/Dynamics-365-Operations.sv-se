@@ -1,9 +1,9 @@
 ---
 title: Utläggshantering
-description: Använd utgiftshanteraren för att skapa ett integrerat arbetsflöde där du kan lagra information om betalsätt, importera kreditkortstransaktioner och spåra de pengar som medarbetarna ger ut när de ådrar sig utgifter för ditt företag.
+description: Det här ämnet innehåller allmän information om Utläggshantering och länkar till ytterligare resurser. Du kan använda utgiftshanteraren för att skapa ett integrerat arbetsflöde där du kan lagra information om betalsätt, importera kreditkortstransaktioner och spåra de pengar som medarbetarna ger ut när de ådrar sig utgifter för ditt företag.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,41 +18,44 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11445390acef5ddfd57a1a0017e8bc423cdb1914
-ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
+ms.openlocfilehash: fe1e92dbf63d2683a53684b350f77c978b14c75e
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "403224"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538619"
 ---
-# <a name="expense-management"></a><span data-ttu-id="84367-103">Utläggshantering</span><span class="sxs-lookup"><span data-stu-id="84367-103">Expense management</span></span>
+# <a name="expense-management"></a><span data-ttu-id="be3b6-104">Utläggshantering</span><span class="sxs-lookup"><span data-stu-id="be3b6-104">Expense management</span></span>
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="84367-104">Använd utgiftshanteraren för att skapa ett integrerat arbetsflöde där du kan lagra information om betalsätt, importera kreditkortstransaktioner och spåra de pengar som medarbetarna ger ut när de ådrar sig utgifter för ditt företag.</span><span class="sxs-lookup"><span data-stu-id="84367-104">Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business.</span></span> <span data-ttu-id="84367-105">Du kan även definiera utgiftsprinciper och automatisera ersättningen av reskostnader.</span><span class="sxs-lookup"><span data-stu-id="84367-105">You can also define expense policies and automate the reimbursement of travel expenses.</span></span> 
+<span data-ttu-id="be3b6-105">Du kan använda utgiftshanteraren för att skapa ett integrerat arbetsflöde där du kan lagra information om betalsätt, importera kreditkortstransaktioner och spåra de pengar som medarbetarna ger ut när de ådrar sig utgifter för ditt företag.</span><span class="sxs-lookup"><span data-stu-id="be3b6-105">You can use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees spend when they incur expenses for your business.</span></span> <span data-ttu-id="be3b6-106">Du kan även definiera utgiftsprinciper och automatisera ersättningen av reskostnader.</span><span class="sxs-lookup"><span data-stu-id="be3b6-106">You can also define expense policies and automate the reimbursement of travel expenses.</span></span>
 
-[<span data-ttu-id="84367-106">Planera utgiftshantering</span><span class="sxs-lookup"><span data-stu-id="84367-106">Planning expense management</span></span>](plan-expense-management.md) 
+<span data-ttu-id="be3b6-107">Mer information finns i [konfigurera utgiftshantering.](plan-expense-management.md)</span><span class="sxs-lookup"><span data-stu-id="be3b6-107">For more information, see [Configure expense management](plan-expense-management.md).</span></span>
 
-### <a name="additional-resources"></a><span data-ttu-id="84367-107">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="84367-107">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="be3b6-108">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="be3b6-108">Additional resources</span></span>
 
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="84367-108">Vad är nytt och under utveckling</span><span class="sxs-lookup"><span data-stu-id="84367-108">What's new and in development</span></span>
+### <a name="whats-new-and-in-development"></a><span data-ttu-id="be3b6-109">Vad är nytt och under utveckling</span><span class="sxs-lookup"><span data-stu-id="be3b6-109">What's new and in development</span></span>
 
-<span data-ttu-id="84367-109">Gå till [Microsoft Dynamics 365 viktig information](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner som har planerats.</span><span class="sxs-lookup"><span data-stu-id="84367-109">Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned.</span></span> 
+<span data-ttu-id="be3b6-110">För att se vilka nya funktioner som planeras, se [Microsoft Dynamics 365 nyheter](https://go.microsoft.com/fwlink/?linkid=2010158).</span><span class="sxs-lookup"><span data-stu-id="be3b6-110">To see what new features are planned, see the [Microsoft Dynamics 365 release notes](https://go.microsoft.com/fwlink/?linkid=2010158).</span></span>
 
-#### <a name="blogs"></a><span data-ttu-id="84367-110">Bloggar</span><span class="sxs-lookup"><span data-stu-id="84367-110">Blogs</span></span>
+#### <a name="expense-report-entry"></a><span data-ttu-id="be3b6-111">Inmatning av utgiftsrapporter</span><span class="sxs-lookup"><span data-stu-id="be3b6-111">Expense report entry</span></span>
 
-<span data-ttu-id="84367-111">Du hittar synpunkter, nyheter och annan information på [Microsoft Dynamics 365 blogg](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – ekonomiblogg](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="84367-111">You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+<span data-ttu-id="be3b6-112">Utgiftsrapporttransaktionen har omkonstruerats för att förenkla upplevelsen och förkorta den tid som krävs för att slutföra utgiftsrapporter.</span><span class="sxs-lookup"><span data-stu-id="be3b6-112">Expense report entry has been redesigned to simplify the experience and decrease the time that is required to complete expense reports.</span></span> <span data-ttu-id="be3b6-113">Du kan aktivera den här funktionen i funktionshantering.</span><span class="sxs-lookup"><span data-stu-id="be3b6-113">You can turn on this functionality in Feature management.</span></span> <span data-ttu-id="be3b6-114">Du kan lägga till en ny inställningssida för att konfigurera visningen av utgiftsfält och ange vilka data som krävs, valfritt eller inte tillgängligt när utgiftsrapporter registreras.</span><span class="sxs-lookup"><span data-stu-id="be3b6-114">You can add a new setup page to configure the visibility of expense fields, and specify what data is required, optional, or not available when expense reports are entered.</span></span> <span data-ttu-id="be3b6-115">När den här funktionen är aktiverad är en ny utgiftsarbetsyta tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="be3b6-115">When this functionality is turned on, a new expense workspace is available.</span></span> <span data-ttu-id="be3b6-116">Den här arbetsytan ersätter den tidigare utgiftsarbetsytan och är landningssidan för den förbättrade inmatningsupplevelsen.</span><span class="sxs-lookup"><span data-stu-id="be3b6-116">This workspace replaces the previous expense workspace and is the landing page for the improved entry experience.</span></span>
 
-<span data-ttu-id="84367-112">I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="84367-112">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span> 
+<span data-ttu-id="be3b6-117">Mer information finns i [Utgiftsrapporter på nytt sätt](ExpenseWorkspaceNew.md)</span><span class="sxs-lookup"><span data-stu-id="be3b6-117">For more information, see [Expense reports reimagined](ExpenseWorkspaceNew.md).</span></span>
 
-#### <a name="task-guides"></a><span data-ttu-id="84367-113">Uppgiftsguider</span><span class="sxs-lookup"><span data-stu-id="84367-113">Task guides</span></span>
-<span data-ttu-id="84367-114">Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="84367-114">Additional help is available as task guides inside Finance and Operations.</span></span> <span data-ttu-id="84367-115">Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.</span><span class="sxs-lookup"><span data-stu-id="84367-115">To access task guides, click the Help button on any page.</span></span>
+### <a name="blogs"></a><span data-ttu-id="be3b6-118">Bloggar</span><span class="sxs-lookup"><span data-stu-id="be3b6-118">Blogs</span></span>
 
-#### <a name="videos"></a><span data-ttu-id="84367-116">Videoklipp</span><span class="sxs-lookup"><span data-stu-id="84367-116">Videos</span></span>
+<span data-ttu-id="be3b6-119">Det finns åsikter, nyheter och annan information om bloggen [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="be3b6-119">You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
 
-<span data-ttu-id="84367-117">Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="84367-117">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+<span data-ttu-id="be3b6-120">I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.</span><span class="sxs-lookup"><span data-stu-id="be3b6-120">The [Microsoft Dynamics Operations Partner Community blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.</span></span>
 
+### <a name="task-guides"></a><span data-ttu-id="be3b6-121">Uppgiftsguider</span><span class="sxs-lookup"><span data-stu-id="be3b6-121">Task guides</span></span>
 
+<span data-ttu-id="be3b6-122">Mer hjälp är tillgänglig som uppgiftsguider i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="be3b6-122">Additional help is available as task guides inside Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="be3b6-123">Klicka på knappen **Hjälp** på valfri sida för att få åtkomst till uppgiftsguiderna.</span><span class="sxs-lookup"><span data-stu-id="be3b6-123">To access task guides, select the **Help** button on any page.</span></span>
 
+### <a name="videos"></a><span data-ttu-id="be3b6-124">Videoklipp</span><span class="sxs-lookup"><span data-stu-id="be3b6-124">Videos</span></span>
 
-
+<span data-ttu-id="be3b6-125">Ta en titt på instruktionsfilmerna som finns i [Microsoft Dynamics 365-kanalen på YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="be3b6-125">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
