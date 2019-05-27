@@ -18,28 +18,28 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 676216d90c50c0d3fa1a839cab7a734e624708ba
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1550126"
 ---
-# <a name="configure-and-run-job-to-post-statements"></a><span data-ttu-id="d4520-103">Konfigurera och köra jobb för att bokföra utdrag</span><span class="sxs-lookup"><span data-stu-id="d4520-103">Configure and run job to post statements</span></span>
+# <a name="configure-and-run-job-to-post-statements"></a><span data-ttu-id="f56d8-103">Konfigurera och köra jobb för att bokföra utdrag</span><span class="sxs-lookup"><span data-stu-id="f56d8-103">Configure and run job to post statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d4520-104">Den här proceduren går igenom konfigurationen och körning av regelbundet återkommande batchjobb för att bokföra utdrag för en vald butik eller grupp av butiker.</span><span class="sxs-lookup"><span data-stu-id="d4520-104">This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores.</span></span> <span data-ttu-id="d4520-105">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="d4520-105">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="f56d8-104">Den här proceduren går igenom konfigurationen och körning av regelbundet återkommande batchjobb för att bokföra utdrag för en vald butik eller grupp av butiker.</span><span class="sxs-lookup"><span data-stu-id="f56d8-104">This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores.</span></span> <span data-ttu-id="f56d8-105">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="f56d8-105">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="d4520-106">Alla arbetsytor > ..</span><span class="sxs-lookup"><span data-stu-id="d4520-106">Go to All workspaces > ..</span></span> <span data-ttu-id="d4520-107">> Butiksekonomi.</span><span class="sxs-lookup"><span data-stu-id="d4520-107">> Retail store financials.</span></span>
-2. <span data-ttu-id="d4520-108">Klicka på Bokför utdrag.</span><span class="sxs-lookup"><span data-stu-id="d4520-108">Click Post statements.</span></span>
-    * <span data-ttu-id="d4520-109">Välj en organisationshierarki och sedan i organisationsnodträdet, välj antingen en enskild butik eller en nod.</span><span class="sxs-lookup"><span data-stu-id="d4520-109">Select an organizational hierarchy and then in the organization nodes tree, select either an individual store or a node.</span></span> <span data-ttu-id="d4520-110">Välj en nod om du vill skapa batchjobbet för en grupp av butiker.</span><span class="sxs-lookup"><span data-stu-id="d4520-110">Select a node if you want to create the batch job for a group of stores.</span></span>  
-    * <span data-ttu-id="d4520-111">Klicka på pilen om du vill lägga till ditt val.</span><span class="sxs-lookup"><span data-stu-id="d4520-111">Click the arrow to add your selection.</span></span>  
-3. <span data-ttu-id="d4520-112">Klicka på fliken Kör i bakgrunden ...</span><span class="sxs-lookup"><span data-stu-id="d4520-112">Click the Run in the background tab.</span></span>
-4. <span data-ttu-id="d4520-113">Markera eller avmarkera kryssrutan Batchbearbetning.</span><span class="sxs-lookup"><span data-stu-id="d4520-113">Check or uncheck the Batch processing checkbox.</span></span>
-5. <span data-ttu-id="d4520-114">Klicka på Upprepning.</span><span class="sxs-lookup"><span data-stu-id="d4520-114">Click Recurrence.</span></span>
-6. <span data-ttu-id="d4520-115">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="d4520-115">In the Start date field, enter a date.</span></span>
-7. <span data-ttu-id="d4520-116">Ange en tid i fältet Starttid.</span><span class="sxs-lookup"><span data-stu-id="d4520-116">In the Start time field, enter a time.</span></span>
-    * <span data-ttu-id="d4520-117">Välj om du vill att slutföra återkommande efter ett visst antal körningar, vid ett visst datum eller aldrig.</span><span class="sxs-lookup"><span data-stu-id="d4520-117">Choose whether you want to end the recurrence after a specific number of runs, at a specific date, or never.</span></span> <span data-ttu-id="d4520-118">Välj sedan de olika alternativen för att definiera hur ofta du vill att jobbet ska köras.</span><span class="sxs-lookup"><span data-stu-id="d4520-118">Then choose the various options to define how frequently you want the job to run.</span></span>  
-8. <span data-ttu-id="d4520-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d4520-119">Click OK.</span></span>
-9. <span data-ttu-id="d4520-120">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d4520-120">Click OK.</span></span>
+1. <span data-ttu-id="f56d8-106">Alla arbetsytor > ..</span><span class="sxs-lookup"><span data-stu-id="f56d8-106">Go to All workspaces > ..</span></span> <span data-ttu-id="f56d8-107">> Butiksekonomi.</span><span class="sxs-lookup"><span data-stu-id="f56d8-107">> Retail store financials.</span></span>
+2. <span data-ttu-id="f56d8-108">Klicka på Bokför utdrag.</span><span class="sxs-lookup"><span data-stu-id="f56d8-108">Click Post statements.</span></span>
+    * <span data-ttu-id="f56d8-109">Välj en organisationshierarki och sedan i organisationsnodträdet, välj antingen en enskild butik eller en nod.</span><span class="sxs-lookup"><span data-stu-id="f56d8-109">Select an organizational hierarchy and then in the organization nodes tree, select either an individual store or a node.</span></span> <span data-ttu-id="f56d8-110">Välj en nod om du vill skapa batchjobbet för en grupp av butiker.</span><span class="sxs-lookup"><span data-stu-id="f56d8-110">Select a node if you want to create the batch job for a group of stores.</span></span>  
+    * <span data-ttu-id="f56d8-111">Klicka på pilen om du vill lägga till ditt val.</span><span class="sxs-lookup"><span data-stu-id="f56d8-111">Click the arrow to add your selection.</span></span>  
+3. <span data-ttu-id="f56d8-112">Klicka på fliken Kör i bakgrunden ...</span><span class="sxs-lookup"><span data-stu-id="f56d8-112">Click the Run in the background tab.</span></span>
+4. <span data-ttu-id="f56d8-113">Markera eller avmarkera kryssrutan Batchbearbetning.</span><span class="sxs-lookup"><span data-stu-id="f56d8-113">Check or uncheck the Batch processing checkbox.</span></span>
+5. <span data-ttu-id="f56d8-114">Klicka på Upprepning.</span><span class="sxs-lookup"><span data-stu-id="f56d8-114">Click Recurrence.</span></span>
+6. <span data-ttu-id="f56d8-115">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="f56d8-115">In the Start date field, enter a date.</span></span>
+7. <span data-ttu-id="f56d8-116">Ange en tid i fältet Starttid.</span><span class="sxs-lookup"><span data-stu-id="f56d8-116">In the Start time field, enter a time.</span></span>
+    * <span data-ttu-id="f56d8-117">Välj om du vill att slutföra återkommande efter ett visst antal körningar, vid ett visst datum eller aldrig.</span><span class="sxs-lookup"><span data-stu-id="f56d8-117">Choose whether you want to end the recurrence after a specific number of runs, at a specific date, or never.</span></span> <span data-ttu-id="f56d8-118">Välj sedan de olika alternativen för att definiera hur ofta du vill att jobbet ska köras.</span><span class="sxs-lookup"><span data-stu-id="f56d8-118">Then choose the various options to define how frequently you want the job to run.</span></span>  
+8. <span data-ttu-id="f56d8-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f56d8-119">Click OK.</span></span>
+9. <span data-ttu-id="f56d8-120">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="f56d8-120">Click OK.</span></span>
 

@@ -17,59 +17,59 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b7a7386a9be15f4eeef7aaab73cb320b71994eea
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1556171"
 ---
-# <a name="create-product-packages-for-purchase-orders"></a><span data-ttu-id="a729c-103"> Skapa produktförpackningar för inköpsorder</span><span class="sxs-lookup"><span data-stu-id="a729c-103">Create product packages for purchase orders</span></span>
+# <a name="create-product-packages-for-purchase-orders"></a><span data-ttu-id="30ee8-103"> Skapa produktförpackningar för inköpsorder</span><span class="sxs-lookup"><span data-stu-id="30ee8-103">Create product packages for purchase orders</span></span>
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a729c-104">Den här proceduren går igenom hur du skapar ett produktpaket och använder det i en inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="a729c-104">This procedure walks through creating a product package and using it on a purchase order.</span></span> <span data-ttu-id="a729c-105">Inköpsordern ska användas för att skapa en order för en fördefinierad uppsättning av produkter.</span><span class="sxs-lookup"><span data-stu-id="a729c-105">The purchase order will be used to create an order for a pre-defined set of products.</span></span> <span data-ttu-id="a729c-106">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="a729c-106">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="30ee8-104">Den här proceduren går igenom hur du skapar ett produktpaket och använder det i en inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="30ee8-104">This procedure walks through creating a product package and using it on a purchase order.</span></span> <span data-ttu-id="30ee8-105">Inköpsordern ska användas för att skapa en order för en fördefinierad uppsättning av produkter.</span><span class="sxs-lookup"><span data-stu-id="30ee8-105">The purchase order will be used to create an order for a pre-defined set of products.</span></span> <span data-ttu-id="30ee8-106">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="30ee8-106">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-product-package"></a><span data-ttu-id="a729c-107">Skapa ett produktpaket</span><span class="sxs-lookup"><span data-stu-id="a729c-107">Create a product package</span></span>
-1. <span data-ttu-id="a729c-108">Gå till butik och handel > lagerhantering > återfyllnad > produktpaket.</span><span class="sxs-lookup"><span data-stu-id="a729c-108">Go to Retail and commerce > Inventory management > Replenishment > Product packages.</span></span>
-2. <span data-ttu-id="a729c-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a729c-109">Click New.</span></span>
-3. <span data-ttu-id="a729c-110">Skriv ett värde i fältet Paketnummer.</span><span class="sxs-lookup"><span data-stu-id="a729c-110">In the Package number field, type a value.</span></span>
-4. <span data-ttu-id="a729c-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="a729c-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="a729c-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="a729c-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="a729c-113">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a729c-113">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="a729c-114">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a729c-114">Click Add.</span></span>
-8. <span data-ttu-id="a729c-115">Skriv 0160 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="a729c-115">In the Item number field, type '0160'.</span></span>
-9. <span data-ttu-id="a729c-116">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Storlek.</span><span class="sxs-lookup"><span data-stu-id="a729c-116">In the Size field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="a729c-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a729c-117">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="a729c-118">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="a729c-118">In the Quantity field, enter a number.</span></span>
-12. <span data-ttu-id="a729c-119">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a729c-119">Click Add.</span></span>
-13. <span data-ttu-id="a729c-120">Skriv 0160 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="a729c-120">In the Item number field, type '0160'.</span></span>
-14. <span data-ttu-id="a729c-121">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Variant number.</span><span class="sxs-lookup"><span data-stu-id="a729c-121">In the Variant number field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="a729c-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a729c-122">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="a729c-123">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="a729c-123">In the Quantity field, enter a number.</span></span>
-17. <span data-ttu-id="a729c-124">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a729c-124">Click Add.</span></span>
-18. <span data-ttu-id="a729c-125">Skriv 0175 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="a729c-125">In the Item number field, type '0175'.</span></span>
-19. <span data-ttu-id="a729c-126">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="a729c-126">In the Quantity field, enter a number.</span></span>
-20. <span data-ttu-id="a729c-127">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a729c-127">Click Save.</span></span>
-21. <span data-ttu-id="a729c-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a729c-128">Close the page.</span></span>
+## <a name="create-a-product-package"></a><span data-ttu-id="30ee8-107">Skapa ett produktpaket</span><span class="sxs-lookup"><span data-stu-id="30ee8-107">Create a product package</span></span>
+1. <span data-ttu-id="30ee8-108">Gå till butik och handel > lagerhantering > återfyllnad > produktpaket.</span><span class="sxs-lookup"><span data-stu-id="30ee8-108">Go to Retail and commerce > Inventory management > Replenishment > Product packages.</span></span>
+2. <span data-ttu-id="30ee8-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="30ee8-109">Click New.</span></span>
+3. <span data-ttu-id="30ee8-110">Skriv ett värde i fältet Paketnummer.</span><span class="sxs-lookup"><span data-stu-id="30ee8-110">In the Package number field, type a value.</span></span>
+4. <span data-ttu-id="30ee8-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="30ee8-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="30ee8-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="30ee8-112">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="30ee8-113">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="30ee8-113">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="30ee8-114">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="30ee8-114">Click Add.</span></span>
+8. <span data-ttu-id="30ee8-115">Skriv 0160 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="30ee8-115">In the Item number field, type '0160'.</span></span>
+9. <span data-ttu-id="30ee8-116">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Storlek.</span><span class="sxs-lookup"><span data-stu-id="30ee8-116">In the Size field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="30ee8-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="30ee8-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="30ee8-118">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="30ee8-118">In the Quantity field, enter a number.</span></span>
+12. <span data-ttu-id="30ee8-119">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="30ee8-119">Click Add.</span></span>
+13. <span data-ttu-id="30ee8-120">Skriv 0160 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="30ee8-120">In the Item number field, type '0160'.</span></span>
+14. <span data-ttu-id="30ee8-121">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Variant number.</span><span class="sxs-lookup"><span data-stu-id="30ee8-121">In the Variant number field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="30ee8-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="30ee8-122">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="30ee8-123">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="30ee8-123">In the Quantity field, enter a number.</span></span>
+17. <span data-ttu-id="30ee8-124">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="30ee8-124">Click Add.</span></span>
+18. <span data-ttu-id="30ee8-125">Skriv 0175 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="30ee8-125">In the Item number field, type '0175'.</span></span>
+19. <span data-ttu-id="30ee8-126">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="30ee8-126">In the Quantity field, enter a number.</span></span>
+20. <span data-ttu-id="30ee8-127">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="30ee8-127">Click Save.</span></span>
+21. <span data-ttu-id="30ee8-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="30ee8-128">Close the page.</span></span>
 
-## <a name="add-package-to-purchase-order"></a><span data-ttu-id="a729c-129">Lägg till paket i inköpsorder</span><span class="sxs-lookup"><span data-stu-id="a729c-129">Add package to purchase order</span></span>
-1. <span data-ttu-id="a729c-130">Gå till leverantörsskulder > inköpsorder > Alla inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="a729c-130">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="a729c-131">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a729c-131">Click New.</span></span>
-3. <span data-ttu-id="a729c-132">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="a729c-132">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="a729c-133">I listan, välj samma leverantör som produktpaketet har skapats tidigare för om en leverantör valdes.</span><span class="sxs-lookup"><span data-stu-id="a729c-133">In the list, select the same vendor that the product package was previously created for, if a vendor was selected.</span></span>
-5. <span data-ttu-id="a729c-134">Växla utökningen av avsnittet Allmänt.</span><span class="sxs-lookup"><span data-stu-id="a729c-134">Toggle the expansion of the General section.</span></span>
-6. <span data-ttu-id="a729c-135">Öppna sökningen genom att klicka på listruteknappen i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="a729c-135">In the Site field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="a729c-136">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a729c-136">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="a729c-137">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="a729c-137">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="a729c-138">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a729c-138">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="a729c-139">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="a729c-139">Click OK.</span></span>
-11. <span data-ttu-id="a729c-140">Växla expanderingen av avsnittet Raddetaljer.</span><span class="sxs-lookup"><span data-stu-id="a729c-140">Toggle the expansion of the Line details section.</span></span>
-12. <span data-ttu-id="a729c-141">Klicka på fliken Produktpaket.</span><span class="sxs-lookup"><span data-stu-id="a729c-141">Click the Product packages tab.</span></span>
-13. <span data-ttu-id="a729c-142">Klicka på Inköpsorderrad.</span><span class="sxs-lookup"><span data-stu-id="a729c-142">Click Purchase order line.</span></span>
-14. <span data-ttu-id="a729c-143">Klicka på Skapa rader från paket.</span><span class="sxs-lookup"><span data-stu-id="a729c-143">Click Create lines from package.</span></span>
-15. <span data-ttu-id="a729c-144">I listan, sök efter och välj produktpaketet som skapas i föregående steg.</span><span class="sxs-lookup"><span data-stu-id="a729c-144">In the list, find and select the product package created in previous step.</span></span>
-16. <span data-ttu-id="a729c-145">Ange ett nummer i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="a729c-145">In the Quantity field, enter a number.</span></span>
-17. <span data-ttu-id="a729c-146">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="a729c-146">Click Create.</span></span>
-18. <span data-ttu-id="a729c-147">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a729c-147">Click Save.</span></span>
+## <a name="add-package-to-purchase-order"></a><span data-ttu-id="30ee8-129">Lägg till paket i inköpsorder</span><span class="sxs-lookup"><span data-stu-id="30ee8-129">Add package to purchase order</span></span>
+1. <span data-ttu-id="30ee8-130">Gå till leverantörsskulder > inköpsorder > Alla inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="30ee8-130">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="30ee8-131">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="30ee8-131">Click New.</span></span>
+3. <span data-ttu-id="30ee8-132">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="30ee8-132">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="30ee8-133">I listan, välj samma leverantör som produktpaketet har skapats tidigare för om en leverantör valdes.</span><span class="sxs-lookup"><span data-stu-id="30ee8-133">In the list, select the same vendor that the product package was previously created for, if a vendor was selected.</span></span>
+5. <span data-ttu-id="30ee8-134">Växla utökningen av avsnittet Allmänt.</span><span class="sxs-lookup"><span data-stu-id="30ee8-134">Toggle the expansion of the General section.</span></span>
+6. <span data-ttu-id="30ee8-135">Öppna sökningen genom att klicka på listruteknappen i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="30ee8-135">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="30ee8-136">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="30ee8-136">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="30ee8-137">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="30ee8-137">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="30ee8-138">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="30ee8-138">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="30ee8-139">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="30ee8-139">Click OK.</span></span>
+11. <span data-ttu-id="30ee8-140">Växla expanderingen av avsnittet Raddetaljer.</span><span class="sxs-lookup"><span data-stu-id="30ee8-140">Toggle the expansion of the Line details section.</span></span>
+12. <span data-ttu-id="30ee8-141">Klicka på fliken Produktpaket.</span><span class="sxs-lookup"><span data-stu-id="30ee8-141">Click the Product packages tab.</span></span>
+13. <span data-ttu-id="30ee8-142">Klicka på Inköpsorderrad.</span><span class="sxs-lookup"><span data-stu-id="30ee8-142">Click Purchase order line.</span></span>
+14. <span data-ttu-id="30ee8-143">Klicka på Skapa rader från paket.</span><span class="sxs-lookup"><span data-stu-id="30ee8-143">Click Create lines from package.</span></span>
+15. <span data-ttu-id="30ee8-144">I listan, sök efter och välj produktpaketet som skapas i föregående steg.</span><span class="sxs-lookup"><span data-stu-id="30ee8-144">In the list, find and select the product package created in previous step.</span></span>
+16. <span data-ttu-id="30ee8-145">Ange ett nummer i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="30ee8-145">In the Quantity field, enter a number.</span></span>
+17. <span data-ttu-id="30ee8-146">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="30ee8-146">Click Create.</span></span>
+18. <span data-ttu-id="30ee8-147">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="30ee8-147">Click Save.</span></span>
 

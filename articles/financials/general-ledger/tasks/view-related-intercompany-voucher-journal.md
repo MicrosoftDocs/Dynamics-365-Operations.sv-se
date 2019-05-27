@@ -17,40 +17,40 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: fe2590b43a4399c3935906c8ab67a91883bbf094
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "366039"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1543547"
 ---
-# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="026bd-103">Visa relaterad koncernintern verifikation från journal</span><span class="sxs-lookup"><span data-stu-id="026bd-103">View related intercompany voucher from journal</span></span>
+# <a name="view-related-intercompany-voucher-from-journal"></a><span data-ttu-id="63f2a-103">Visa relaterad koncernintern verifikation från journal</span><span class="sxs-lookup"><span data-stu-id="63f2a-103">View related intercompany voucher from journal</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="026bd-104">Fönstret Relaterad verifikation visar verifikationen från motkontots företag när du bokför en koncernintern transaktion från den allmänna journalen.</span><span class="sxs-lookup"><span data-stu-id="026bd-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
+<span data-ttu-id="63f2a-104">Fönstret Relaterad verifikation visar verifikationen från motkontots företag när du bokför en koncernintern transaktion från den allmänna journalen.</span><span class="sxs-lookup"><span data-stu-id="63f2a-104">The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal.</span></span>
 
 
-## <a name="post-an-intercompany-journal"></a><span data-ttu-id="026bd-105">Bokför en koncernintern journal</span><span class="sxs-lookup"><span data-stu-id="026bd-105">Post an intercompany journal</span></span>
-1. <span data-ttu-id="026bd-106">Gå till Allmänna journaler.</span><span class="sxs-lookup"><span data-stu-id="026bd-106">Go to General journals.</span></span>
-2. <span data-ttu-id="026bd-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="026bd-107">Click New.</span></span>
-3. <span data-ttu-id="026bd-108">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="026bd-108">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="026bd-109">I fältet Namn, ange eller välj det koncerninterna journalnamnet.</span><span class="sxs-lookup"><span data-stu-id="026bd-109">In the Name field, enter or select the intercompany journal name.</span></span>
-5. <span data-ttu-id="026bd-110">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="026bd-110">Click Lines.</span></span>
-6. <span data-ttu-id="026bd-111">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="026bd-111">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="026bd-112">Ange önskade värden i fältet Konto.</span><span class="sxs-lookup"><span data-stu-id="026bd-112">In the Account field, specify the desired values.</span></span>
-8. <span data-ttu-id="026bd-113">I fältet Beskrivning, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="026bd-113">In the Description field, enter or select a value.</span></span>
-9. <span data-ttu-id="026bd-114">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="026bd-114">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="026bd-115">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="026bd-115">Close the page.</span></span>
-11. <span data-ttu-id="026bd-116">Ange ett tal i fältet Debet.</span><span class="sxs-lookup"><span data-stu-id="026bd-116">In the Debit field, enter a number.</span></span>
-12. <span data-ttu-id="026bd-117">I fältet Motbokning av företag, skriv eller välj motbokningsföretaget.</span><span class="sxs-lookup"><span data-stu-id="026bd-117">In the Offset company field, type or select the offset company.</span></span>
-13. <span data-ttu-id="026bd-118">I fältet Motbokning av företag, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="026bd-118">In the Offset company field, enter or select a value.</span></span>
-14. <span data-ttu-id="026bd-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="026bd-119">Close the page.</span></span>
-15. <span data-ttu-id="026bd-120">Ange önskade värden i fältet Motkonto.</span><span class="sxs-lookup"><span data-stu-id="026bd-120">In the Offset account field, specify the desired values.</span></span>
-16. <span data-ttu-id="026bd-121">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="026bd-121">Click Post.</span></span>
+## <a name="post-an-intercompany-journal"></a><span data-ttu-id="63f2a-105">Bokför en koncernintern journal</span><span class="sxs-lookup"><span data-stu-id="63f2a-105">Post an intercompany journal</span></span>
+1. <span data-ttu-id="63f2a-106">Gå till Allmänna journaler.</span><span class="sxs-lookup"><span data-stu-id="63f2a-106">Go to General journals.</span></span>
+2. <span data-ttu-id="63f2a-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="63f2a-107">Click New.</span></span>
+3. <span data-ttu-id="63f2a-108">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="63f2a-108">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="63f2a-109">I fältet Namn, ange eller välj det koncerninterna journalnamnet.</span><span class="sxs-lookup"><span data-stu-id="63f2a-109">In the Name field, enter or select the intercompany journal name.</span></span>
+5. <span data-ttu-id="63f2a-110">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="63f2a-110">Click Lines.</span></span>
+6. <span data-ttu-id="63f2a-111">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="63f2a-111">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="63f2a-112">Ange önskade värden i fältet Konto.</span><span class="sxs-lookup"><span data-stu-id="63f2a-112">In the Account field, specify the desired values.</span></span>
+8. <span data-ttu-id="63f2a-113">I fältet Beskrivning, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="63f2a-113">In the Description field, enter or select a value.</span></span>
+9. <span data-ttu-id="63f2a-114">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="63f2a-114">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="63f2a-115">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="63f2a-115">Close the page.</span></span>
+11. <span data-ttu-id="63f2a-116">Ange ett tal i fältet Debet.</span><span class="sxs-lookup"><span data-stu-id="63f2a-116">In the Debit field, enter a number.</span></span>
+12. <span data-ttu-id="63f2a-117">I fältet Motbokning av företag, skriv eller välj motbokningsföretaget.</span><span class="sxs-lookup"><span data-stu-id="63f2a-117">In the Offset company field, type or select the offset company.</span></span>
+13. <span data-ttu-id="63f2a-118">I fältet Motbokning av företag, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="63f2a-118">In the Offset company field, enter or select a value.</span></span>
+14. <span data-ttu-id="63f2a-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="63f2a-119">Close the page.</span></span>
+15. <span data-ttu-id="63f2a-120">Ange önskade värden i fältet Motkonto.</span><span class="sxs-lookup"><span data-stu-id="63f2a-120">In the Offset account field, specify the desired values.</span></span>
+16. <span data-ttu-id="63f2a-121">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="63f2a-121">Click Post.</span></span>
 
-## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="026bd-122">Visa relaterad koncernintern verifikation</span><span class="sxs-lookup"><span data-stu-id="026bd-122">View related intercompany voucher</span></span>
-1. <span data-ttu-id="026bd-123">Klicka på Verifikation.</span><span class="sxs-lookup"><span data-stu-id="026bd-123">Click Voucher.</span></span>
-2. <span data-ttu-id="026bd-124">Klicka på Relaterade verifikationer.</span><span class="sxs-lookup"><span data-stu-id="026bd-124">Click Related vouchers.</span></span>
-3. <span data-ttu-id="026bd-125">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="026bd-125">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="026bd-126">Klicka på Verifikation.</span><span class="sxs-lookup"><span data-stu-id="026bd-126">Click Voucher.</span></span>
+## <a name="view-related-intercompany-voucher"></a><span data-ttu-id="63f2a-122">Visa relaterad koncernintern verifikation</span><span class="sxs-lookup"><span data-stu-id="63f2a-122">View related intercompany voucher</span></span>
+1. <span data-ttu-id="63f2a-123">Klicka på Verifikation.</span><span class="sxs-lookup"><span data-stu-id="63f2a-123">Click Voucher.</span></span>
+2. <span data-ttu-id="63f2a-124">Klicka på Relaterade verifikationer.</span><span class="sxs-lookup"><span data-stu-id="63f2a-124">Click Related vouchers.</span></span>
+3. <span data-ttu-id="63f2a-125">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="63f2a-125">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="63f2a-126">Klicka på Verifikation.</span><span class="sxs-lookup"><span data-stu-id="63f2a-126">Click Voucher.</span></span>
 

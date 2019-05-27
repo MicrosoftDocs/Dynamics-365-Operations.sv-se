@@ -19,42 +19,42 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 215b10cc0733c1beab52fa39e09c83d40a6297a3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "352584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557440"
 ---
-# <a name="reassign-activities"></a><span data-ttu-id="cf653-103">Tilldela om aktiviteter</span><span class="sxs-lookup"><span data-stu-id="cf653-103">Reassign activities</span></span> 
+# <a name="reassign-activities"></a><span data-ttu-id="07ffc-103">Tilldela om aktiviteter</span><span class="sxs-lookup"><span data-stu-id="07ffc-103">Reassign activities</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="cf653-104">I det här avsnittet beskrivs hur du tilldelar om tjänsteaktiviteter från en arbetare till en annan arbetare.</span><span class="sxs-lookup"><span data-stu-id="cf653-104">This topic describes how to reassign service activities from one worker to another worker.</span></span> <span data-ttu-id="cf653-105">Du kan omtilldela serviceaktiviteter från en arbetstagare till en annan, även om arbetstagarna tillhör olika serviceteam.</span><span class="sxs-lookup"><span data-stu-id="cf653-105">You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.</span></span>
+<span data-ttu-id="07ffc-104">I det här avsnittet beskrivs hur du tilldelar om tjänsteaktiviteter från en arbetare till en annan arbetare.</span><span class="sxs-lookup"><span data-stu-id="07ffc-104">This topic describes how to reassign service activities from one worker to another worker.</span></span> <span data-ttu-id="07ffc-105">Du kan omtilldela serviceaktiviteter från en arbetstagare till en annan, även om arbetstagarna tillhör olika serviceteam.</span><span class="sxs-lookup"><span data-stu-id="07ffc-105">You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.</span></span>
 
-<span data-ttu-id="cf653-106">Använd något av följande steg för att tilldela en aktivitet till en annan arbetare:</span><span class="sxs-lookup"><span data-stu-id="cf653-106">Use the following steps to reassign an activity to another worker:</span></span>
+<span data-ttu-id="07ffc-106">Använd något av följande steg för att tilldela en aktivitet till en annan arbetare:</span><span class="sxs-lookup"><span data-stu-id="07ffc-106">Use the following steps to reassign an activity to another worker:</span></span>
 
-1.  <span data-ttu-id="cf653-107">Klicka på **Servicehantering** \> **Periodisk** \> **Utförseltavla**.</span><span class="sxs-lookup"><span data-stu-id="cf653-107">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="07ffc-107">Klicka på **Servicehantering** \> **Periodisk** \> **Utförseltavla**.</span><span class="sxs-lookup"><span data-stu-id="07ffc-107">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="cf653-108">I fälten **Från datum** och **Till datum** anger du datum för att definiera tidsperioden som du vill visa aktiviteter för.</span><span class="sxs-lookup"><span data-stu-id="cf653-108">In the **From date** and **To date** fields, enter dates to define the time period to view activities for.</span></span>
+2.  <span data-ttu-id="07ffc-108">I fälten **Från datum** och **Till datum** anger du datum för att definiera tidsperioden som du vill visa aktiviteter för.</span><span class="sxs-lookup"><span data-stu-id="07ffc-108">In the **From date** and **To date** fields, enter dates to define the time period to view activities for.</span></span>
 
-3.  <span data-ttu-id="cf653-109">Välj om du vill visa stängda aktiviteter och försändelseinformation för relaterade team och klicka sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="cf653-109">Select whether to view closed activities and dispatch information for related teams, and then click **OK**.</span></span>
+3.  <span data-ttu-id="07ffc-109">Välj om du vill visa stängda aktiviteter och försändelseinformation för relaterade team och klicka sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="07ffc-109">Select whether to view closed activities and dispatch information for related teams, and then click **OK**.</span></span>
 
-4.  <span data-ttu-id="cf653-110">I formuläret **Utförseltavla** klicka på **Avancerad** för att endast visa Gantt-diagrammet överst på sidan.</span><span class="sxs-lookup"><span data-stu-id="cf653-110">In the **Dispatch board** form, click **Advanced** to display only the Gantt chart at the top of the page.</span></span> <span data-ttu-id="cf653-111">Klicka på **Enkel** för att visa Gantt-diagrammet och flikarna i formuläret.</span><span class="sxs-lookup"><span data-stu-id="cf653-111">Click **Simple** to display the Gantt chart and the tabs in the form.</span></span>
+4.  <span data-ttu-id="07ffc-110">I formuläret **Utförseltavla** klicka på **Avancerad** för att endast visa Gantt-diagrammet överst på sidan.</span><span class="sxs-lookup"><span data-stu-id="07ffc-110">In the **Dispatch board** form, click **Advanced** to display only the Gantt chart at the top of the page.</span></span> <span data-ttu-id="07ffc-111">Klicka på **Enkel** för att visa Gantt-diagrammet och flikarna i formuläret.</span><span class="sxs-lookup"><span data-stu-id="07ffc-111">Click **Simple** to display the Gantt chart and the tabs in the form.</span></span>
 
-5.  <span data-ttu-id="cf653-112">Expandera respektive serviceteamlista.</span><span class="sxs-lookup"><span data-stu-id="cf653-112">Expand each dispatch team list.</span></span>
+5.  <span data-ttu-id="07ffc-112">Expandera respektive serviceteamlista.</span><span class="sxs-lookup"><span data-stu-id="07ffc-112">Expand each dispatch team list.</span></span>
 
-6.  <span data-ttu-id="cf653-113">Använd något av följande steg för att tilldela en aktivitet:</span><span class="sxs-lookup"><span data-stu-id="cf653-113">Use either of the following steps to reassign an activity:</span></span>
+6.  <span data-ttu-id="07ffc-113">Använd något av följande steg för att tilldela en aktivitet:</span><span class="sxs-lookup"><span data-stu-id="07ffc-113">Use either of the following steps to reassign an activity:</span></span>
     
-      - <span data-ttu-id="cf653-114">Markera en färgkodad grafik som representerar den serviceaktivitet som ska omtilldelas.</span><span class="sxs-lookup"><span data-stu-id="cf653-114">Select a color-coded graphic that represents the service activity to reassign.</span></span> <span data-ttu-id="cf653-115">Tryck på SKIFT-tangenten och flytta sedan den färgkodade grafiken till raden för en annan medarbetare.</span><span class="sxs-lookup"><span data-stu-id="cf653-115">Press the SHIFT key, and then move the color-coded graphic to the row for another employee.</span></span>
+      - <span data-ttu-id="07ffc-114">Markera en färgkodad grafik som representerar den serviceaktivitet som ska omtilldelas.</span><span class="sxs-lookup"><span data-stu-id="07ffc-114">Select a color-coded graphic that represents the service activity to reassign.</span></span> <span data-ttu-id="07ffc-115">Tryck på SKIFT-tangenten och flytta sedan den färgkodade grafiken till raden för en annan medarbetare.</span><span class="sxs-lookup"><span data-stu-id="07ffc-115">Press the SHIFT key, and then move the color-coded graphic to the row for another employee.</span></span>
     
-      - <span data-ttu-id="cf653-116">Gå till fliken **Alla**, **Team** fliken, **Ej skickad** eller fliken **Relaterad** i fältet **Arbetare** och ange namnet på arbetaren som ersätter den aktuella arbetaren för aktiviteten.</span><span class="sxs-lookup"><span data-stu-id="cf653-116">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.</span></span>
+      - <span data-ttu-id="07ffc-116">Gå till fliken **Alla**, **Team** fliken, **Ej skickad** eller fliken **Relaterad** i fältet **Arbetare** och ange namnet på arbetaren som ersätter den aktuella arbetaren för aktiviteten.</span><span class="sxs-lookup"><span data-stu-id="07ffc-116">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="cf653-117">Se även</span><span class="sxs-lookup"><span data-stu-id="cf653-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="07ffc-117">Se även</span><span class="sxs-lookup"><span data-stu-id="07ffc-117">See also</span></span>
 
-[<span data-ttu-id="cf653-118">Serviceaktiviteter</span><span class="sxs-lookup"><span data-stu-id="cf653-118">Service activities</span></span>](service-activities.md)
+[<span data-ttu-id="07ffc-118">Serviceaktiviteter</span><span class="sxs-lookup"><span data-stu-id="07ffc-118">Service activities</span></span>](service-activities.md)
 
-[<span data-ttu-id="cf653-119">Utförseltavla</span><span class="sxs-lookup"><span data-stu-id="cf653-119">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="07ffc-119">Utförseltavla</span><span class="sxs-lookup"><span data-stu-id="07ffc-119">Dispatch board</span></span>](dispatch-board.md)
 
 
 
