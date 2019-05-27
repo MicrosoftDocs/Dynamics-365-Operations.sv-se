@@ -17,39 +17,39 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 9959c20f9a8fd07cbf0cfd76f7760b44d7b5cae1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331907"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1560081"
 ---
-# <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a><span data-ttu-id="345b7-103">Ställ in hubbens tilläggsavgifter och tilläggsmallar</span><span class="sxs-lookup"><span data-stu-id="345b7-103">Set up hub accessorial charges and accessorial masters</span></span>
+# <a name="set-up-hub-accessorial-charges-and-accessorial-masters"></a><span data-ttu-id="16ab5-103">Ställ in hubbens tilläggsavgifter och tilläggsmallar</span><span class="sxs-lookup"><span data-stu-id="16ab5-103">Set up hub accessorial charges and accessorial masters</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="345b7-104">I den här proceduren visas hur du skapar en tilläggsmall för en hub och använder den mallen för att skapa en tilläggsavgift för hubben.</span><span class="sxs-lookup"><span data-stu-id="345b7-104">This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge.</span></span> <span data-ttu-id="345b7-105">Proceduren använder USMF-datauppsättningen.</span><span class="sxs-lookup"><span data-stu-id="345b7-105">The procedure uses the USMF dataset.</span></span> <span data-ttu-id="345b7-106">Den här inställningen görs vanligtvis av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="345b7-106">This set up will typically be done by a transportation coordinator.</span></span>
+<span data-ttu-id="16ab5-104">I den här proceduren visas hur du skapar en tilläggsmall för en hub och använder den mallen för att skapa en tilläggsavgift för hubben.</span><span class="sxs-lookup"><span data-stu-id="16ab5-104">This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge.</span></span> <span data-ttu-id="16ab5-105">Proceduren använder USMF-datauppsättningen.</span><span class="sxs-lookup"><span data-stu-id="16ab5-105">The procedure uses the USMF dataset.</span></span> <span data-ttu-id="16ab5-106">Den här inställningen görs vanligtvis av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="16ab5-106">This set up will typically be done by a transportation coordinator.</span></span>
 
 
-## <a name="set-up-a-hub-master"></a><span data-ttu-id="345b7-107">Ställa in ett hubbhuvud</span><span class="sxs-lookup"><span data-stu-id="345b7-107">Set up a hub master</span></span>
-1. <span data-ttu-id="345b7-108">Gå till Transporthantering > Inställningar > Klassificering > Tilläggsmallar.</span><span class="sxs-lookup"><span data-stu-id="345b7-108">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
-2. <span data-ttu-id="345b7-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="345b7-109">Click New.</span></span>
-3. <span data-ttu-id="345b7-110">Skriv ett värde i fältet Tilläggsmall.</span><span class="sxs-lookup"><span data-stu-id="345b7-110">In the Accessorial master field, type a value.</span></span>
-4. <span data-ttu-id="345b7-111">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="345b7-111">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="345b7-112">Välj "Hubb" i fältet Tilläggstyp.</span><span class="sxs-lookup"><span data-stu-id="345b7-112">In the Accessorial type field, select 'Hub'.</span></span>
-6. <span data-ttu-id="345b7-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="345b7-113">Click Save.</span></span>
-7. <span data-ttu-id="345b7-114">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="345b7-114">Close the page.</span></span>
+## <a name="set-up-a-hub-master"></a><span data-ttu-id="16ab5-107">Ställa in ett hubbhuvud</span><span class="sxs-lookup"><span data-stu-id="16ab5-107">Set up a hub master</span></span>
+1. <span data-ttu-id="16ab5-108">Gå till Transporthantering > Inställningar > Klassificering > Tilläggsmallar.</span><span class="sxs-lookup"><span data-stu-id="16ab5-108">Go to Transportation management > Setup > Rating > Accessorial masters.</span></span>
+2. <span data-ttu-id="16ab5-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="16ab5-109">Click New.</span></span>
+3. <span data-ttu-id="16ab5-110">Skriv ett värde i fältet Tilläggsmall.</span><span class="sxs-lookup"><span data-stu-id="16ab5-110">In the Accessorial master field, type a value.</span></span>
+4. <span data-ttu-id="16ab5-111">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="16ab5-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="16ab5-112">Välj "Hubb" i fältet Tilläggstyp.</span><span class="sxs-lookup"><span data-stu-id="16ab5-112">In the Accessorial type field, select 'Hub'.</span></span>
+6. <span data-ttu-id="16ab5-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="16ab5-113">Click Save.</span></span>
+7. <span data-ttu-id="16ab5-114">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="16ab5-114">Close the page.</span></span>
 
-## <a name="set-up-a-hub-accessorial-charge"></a><span data-ttu-id="345b7-115">Ställa in en tilläggsavgift för hubb</span><span class="sxs-lookup"><span data-stu-id="345b7-115">Set up a hub accessorial charge</span></span>
-1. <span data-ttu-id="345b7-116">Gå till Transporthantering > Inställningar > Klassificering > Hubbens tilläggsavgifter.</span><span class="sxs-lookup"><span data-stu-id="345b7-116">Go to Transportation management > Setup > Rating > Hub accessorial charges.</span></span>
-2. <span data-ttu-id="345b7-117">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="345b7-117">Click New.</span></span>
-3. <span data-ttu-id="345b7-118">Skriv ett värde i fältet Hubbens tilläggs-ID.</span><span class="sxs-lookup"><span data-stu-id="345b7-118">In the Hub accessorial ID field, type a value.</span></span>
-4. <span data-ttu-id="345b7-119">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Hubb.</span><span class="sxs-lookup"><span data-stu-id="345b7-119">In the Hub field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="345b7-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="345b7-120">In the list, find and select the desired record.</span></span>
-6. <span data-ttu-id="345b7-121">Välj ett alternativ i fältet Hubbplats.</span><span class="sxs-lookup"><span data-stu-id="345b7-121">In the Hub position field, select an option.</span></span>
-    * <span data-ttu-id="345b7-122">Du kan antingen skapa tillägget som en hämtning eller lämning.</span><span class="sxs-lookup"><span data-stu-id="345b7-122">You can either create the charge as a pickup or drop-off.</span></span> <span data-ttu-id="345b7-123">Beroende på ditt val ska tillägget tillämpas på motsvarande transportsegmentet i ditt flöde.</span><span class="sxs-lookup"><span data-stu-id="345b7-123">Depending on your selection the charge will be applied to the corresponding transportation segment on your route.</span></span>  
-7. <span data-ttu-id="345b7-124">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Tilläggsmall.</span><span class="sxs-lookup"><span data-stu-id="345b7-124">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="345b7-125">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="345b7-125">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="345b7-126">Välj den mall du precis har skapat.</span><span class="sxs-lookup"><span data-stu-id="345b7-126">Select the master you just created.</span></span>  
-9. <span data-ttu-id="345b7-127">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="345b7-127">Click Save.</span></span>
-10. <span data-ttu-id="345b7-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="345b7-128">Close the page.</span></span>
+## <a name="set-up-a-hub-accessorial-charge"></a><span data-ttu-id="16ab5-115">Ställa in en tilläggsavgift för hubb</span><span class="sxs-lookup"><span data-stu-id="16ab5-115">Set up a hub accessorial charge</span></span>
+1. <span data-ttu-id="16ab5-116">Gå till Transporthantering > Inställningar > Klassificering > Hubbens tilläggsavgifter.</span><span class="sxs-lookup"><span data-stu-id="16ab5-116">Go to Transportation management > Setup > Rating > Hub accessorial charges.</span></span>
+2. <span data-ttu-id="16ab5-117">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="16ab5-117">Click New.</span></span>
+3. <span data-ttu-id="16ab5-118">Skriv ett värde i fältet Hubbens tilläggs-ID.</span><span class="sxs-lookup"><span data-stu-id="16ab5-118">In the Hub accessorial ID field, type a value.</span></span>
+4. <span data-ttu-id="16ab5-119">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Hubb.</span><span class="sxs-lookup"><span data-stu-id="16ab5-119">In the Hub field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="16ab5-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="16ab5-120">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="16ab5-121">Välj ett alternativ i fältet Hubbplats.</span><span class="sxs-lookup"><span data-stu-id="16ab5-121">In the Hub position field, select an option.</span></span>
+    * <span data-ttu-id="16ab5-122">Du kan antingen skapa tillägget som en hämtning eller lämning.</span><span class="sxs-lookup"><span data-stu-id="16ab5-122">You can either create the charge as a pickup or drop-off.</span></span> <span data-ttu-id="16ab5-123">Beroende på ditt val ska tillägget tillämpas på motsvarande transportsegmentet i ditt flöde.</span><span class="sxs-lookup"><span data-stu-id="16ab5-123">Depending on your selection the charge will be applied to the corresponding transportation segment on your route.</span></span>  
+7. <span data-ttu-id="16ab5-124">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Tilläggsmall.</span><span class="sxs-lookup"><span data-stu-id="16ab5-124">In the Accessorial master field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="16ab5-125">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="16ab5-125">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="16ab5-126">Välj den mall du precis har skapat.</span><span class="sxs-lookup"><span data-stu-id="16ab5-126">Select the master you just created.</span></span>  
+9. <span data-ttu-id="16ab5-127">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="16ab5-127">Click Save.</span></span>
+10. <span data-ttu-id="16ab5-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="16ab5-128">Close the page.</span></span>
 
