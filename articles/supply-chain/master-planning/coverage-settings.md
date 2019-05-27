@@ -1,6 +1,6 @@
 ---
 title: Disponeringsinställningar
-description: Under huvudplanering används disponeringsinställningar för att beräkna artikelbehov.
+description: Det här ämnet ger information om de disponeringsinställningar som huvudplaneringen använder för att beräkna artikelbehov.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,39 +19,37 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50f47394a4d4e95b4e158ea42a630d9e6e91f05b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
+ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "322569"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538904"
 ---
 # <a name="coverage-settings"></a>Disponeringsinställningar
 
 [!include [banner](../includes/banner.md)]
 
-Under huvudplanering används disponeringsinställningar för att beräkna artikelbehov. 
+Under huvudplanering används disponeringsinställningar för att beräkna artikelbehov.
 
 Du kan ange disponeringsinställningar på flera sätt:
 
--   Ange disponeringsinställningar för en disponeringsgrupp. Du kan skapa en disponeringsgrupp som innehåller inställningar för alla produkter som är länkade till disponeringsgruppen. Klicka på **Huvudplanering &gt; Inställningar &gt; Disponering &gt; Disponeringsgrupper** för att skapa en disponeringsgrupp. Du kan koppla en disponeringsgrupp till en produkt. Om länken är specifik för en plats, ett lagerställe eller en produktdimension, ska du använda fältet **Disponeringsgrupp** på sidan **Artikeldisponering**. Om länken är allmänn, oavsett produktdimensionerna, använder du **Disponeringsgrupp** på snabbfliken **Planera** på sidan **Produktdetaljer** sidan. Om du inte länkar en disponeringsgrupp till en produkt, använder du den **Huvudplaneringsgrupp** som anges på sidan **Huvudplaneringsparametrar** sidan som standardinställning.
+- Ange disponeringsinställningar för en disponeringsgrupp.
 
--   Ange disponeringsinställningar för en produkt. Du kan skapa disponeringsinställningar för en specifik produkt. Klicka på **Hantering av produktinformation &gt; Produkter &gt; Frisläppta produkter**. Välj produkt och gå sedan till **Åtgärdsfönster**, på fliken **Planera**, i **Disponeringsgrupp**, och klicka på **Artikeldisponering** för att öppna sidan **Artikeldisponering**. Om produkten redan är länkad till en disponeringsgrupp kan du åsidosätta inställningarna för gruppen med hjälp av fältet **Åsidosätt**. Disponeringinställningarna på sidan**Artikeldisponering** åsidosätter inställningarna på sidan **Disponeringsgrupp**.
+    Du kan skapa en disponeringsgrupp som innehåller inställningar för alla produkter som är länkade till disponeringsgruppen. För att skapa en täckningsgrupp, gå till **huvudplanering &gt; Inställningar &gt; Disponering &gt; Disponeringsgrupper**. Du kan koppla en disponeringsgrupp till en produkt. Om länken är specifik för en plats, ett lagerställe eller en produktdimension, ska du använda fältet **Disponeringsgrupp** på sidan **Artikeldisponering**. Om länken är allmänn, oavsett produktdimensionerna, använder du fältet **Disponeringsgrupp** på snabbfliken **Planera** på sidan **Produktdetaljer** sidan. Som standard, om du inte länkar en täckningsgrupp till en produkt, använder du huvudplaneringen av den allmänna täckningsgruppen som anges på **Huvudplaneringsparametrar**.
 
-<!-- -->
+- Ange disponeringsinställningar för en produkt.
 
--   Ange disponeringsinställningar för en produkt med hjälp av en guide. Guiden innehåller steg-för-steg-instruktioner för att hjälpa dig ställa in de primära parametrarna för artikeldisponering. På sidan **Artikeldisponering** klickar du på **Guide** om du vill öppna **Artikeldisponeringsguiden**.
+    Du kan skapa disponeringsinställningar för en specifik produkt. Gå till **Produktinformationshantering &gt; Produkter &gt; Frisläppta produkter**. Välj produkt och gå sedan till Åtgärdsfönster, på fliken **Plan** i grupp **Disponering** och klicka på **Artikeldisponering** för att öppna sidan **Artikeldisponering**. Om produkten redan är länkad till en disponeringsgrupp kan du åsidosätta inställningarna för gruppen med hjälp av fältet **Åsidosätt**. Disponeringinställningarna på sidan**Artikeldisponering** åsidosätter inställningarna på sidan **Disponeringsgrupp**.
 
-<!-- -->
+- Ange disponeringsinställningar för en produkt med hjälp av en guide.
 
-- Ange disponeringsinställningar för en dimensionsgrupp. Klicka på **Produktinformationshantering &gt; Allmänt &gt; Frisläppta produkter**. På sidan **Frisläppt produktdetalj** på fliken **Allmänt** i gruppen **Administration** klickar du på länken **Lagringsdimensionsgrupp**. På fältet **Lagringsdimensionsgrupp** väljer du fältet **Disponera per dimension** om du vill skapa disponeringsinställningar för en dimension i lagringsdimensiongruppen. Alla produktdimensioner, till exempel konfiguration, färg, storlek, och utförande, måste ha fältet **Disponera per dimension** markerat.
+    Guiden hjälper dig steg för steg genom processen att ställa in de primära parametrarna för artikeldisponering. På åtgärdssidan **Artikeldisponering** klickar du på **Guide** om du vill öppna **Artikeldisponeringsguiden**.
 
+- Ange disponeringsinställningar för en dimensionsgrupp.
 
+    Gå till **Produktinformationshantering &gt; Produkter &gt; Frisläppta produkter**. På sidan **Frisläppt produktdetalj** på snabbfliken **Allmänt** i avsnittet **Administration** klickar du på länken i fältet **Lagringsdimensionsgrupp**. På fältet **Lagringsdimensionsgrupper** markerar du fältet **Disponera per dimension** om du vill skapa disponeringsinställningar för en dimension i lagringsdimensiongruppen. Fält **Disponera per dimension** måste väljas för alla produktdimensioner, t.ex. konfiguration, färg, storlek och stil.
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Huvudplaner](master-plans.md)
-
-
-

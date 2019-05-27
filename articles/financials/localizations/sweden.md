@@ -16,12 +16,12 @@ ms.search.region: Sweden
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 867908bbf4eebe91585c285ec6f63fa8cc03d93a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3fad3f2bb768043f791725a5c232ed56f33f9230
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371831"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1538388"
 ---
 # <a name="sweden"></a>Sverige 
 

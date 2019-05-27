@@ -3,14 +3,14 @@ title: Utöka Talent genom att använda PowerApps och Microsoft Flow- exempelsce
 description: Det här ämnet beskriver några exempel på tilläggsscenarier för Microsoft Dynamics 365 for Talent som använder Microsoft PowerApps och Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949930"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1519100"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utöka Talent genom att använda PowerApps och Microsoft Flow- exempelscenarier
 
@@ -101,7 +101,21 @@ Den här mallen kan utökas så att den kan användas för vissa situationer som
 
 För att hämta mallen **Flöde – SharePoint Integration**, gå till [Flöde – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) på Microsoft Download Center.
 
+## <a name="admin-console-to-manage-talent-pools"></a>Administrationskonsol för hantering av talangpooler
 
+När du aktiverar integrering med LinkedIn skapar Attract automatiskt en LinkedIn-talangpool automatiskt. När en rekryterare utbyter InMail med en rekrytering via LinkedIn skapar Attract en profil för rekryteringen och rekryteringen blir medlem i den LinkedIn talangpoolen. Denna PowerApps-app är användbar för att ordna om kandidater i talangpooler utifrån färdighet.
+
+Kör den här PowerApps-appen som en administrationskonsol när du vill utföra följande uppgifter:
+
+- Lista kandidater i en talangpool
+- Lägg till och ta bort kandidater från en talangpool
+- Flytta kandidater från en talangpool till en annan
+- Ta reda på om kandidater redan ingår i en talangpool innan du flyttar dem
+- Kontrollera kompetenserna hos kandidater innan du flyttar dem till andra talangpooler
+
+Det här PowerApps-appen använder många-till-många-relationer, så du kan använda den som en mall för andra scenarier där du behöver extrahera poster som har många-till-många-relationer.
+
+Om du vill hämta **Administrationskonsol för hantering av talangpooler**, gå till [Administrationskonsol för hantering av talangpooler](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) på Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

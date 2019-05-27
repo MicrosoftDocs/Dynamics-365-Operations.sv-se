@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
+ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350744"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1538966"
 ---
 # <a name="finance-and-operations-help-system"></a>Hjälpsystem för Finance and Operations
 
@@ -91,8 +91,6 @@ Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned 
 
 1. Klicka på **Feedback** för att nå kommentarerna längst ner på sidan och klicka sedan på antingen **Produktfeedback** eller **Logga in för att skicka detaljerad feedback**.
 
-    ![Feedback](./media/comments.png)
-
 2. Skriv dina kommentarer och klicka sedan på **Publicera feedback**.
 
     ![Publicera kommentar](./media/feedback.png)
@@ -127,7 +125,7 @@ Du kan använda Uppgiftsregistrerare för att skapa egna anpassade uppgiftsguide
 
 ## <a name="in-product-help"></a>Produkthjälp
 
-För att nå hjälpavsnittet i Dynamics 365 for Finance and Operations klickar du antingen på ikonen **Hjälp** (**?**) och väljer sedan Hjälp, eller också trycker du på Ctrl+Shift+?. I båda fall öppnas fönstret Hjälp. I fönstret Hjälp kan du öppna artiklar eller uppgiftsguider.
+För att nå hjälpavsnittet i Finance and Operations klickar du antingen på ikonen **Hjälp** (**?**) och väljer sedan Hjälp, eller också trycker du på Ctrl+Shift+?. I båda fall öppnas fönstret Hjälp. I fönstret Hjälp kan du öppna artiklar eller uppgiftsguider.
 
 ![Hjälpfönster](./media/help-pane-wiki.png)
 

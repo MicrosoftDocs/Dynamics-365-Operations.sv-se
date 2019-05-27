@@ -3,7 +3,7 @@ title: Omklassificera anläggningstillgångar
 description: Om du vill omklassificera en anläggningstillgång, måste du överföra den till en ny anläggningstillgångsgrupp eller tilldela ett nytt anläggningstillgångsnummer till den inom samma grupp.
 author: saraschi2
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 05/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8e289e2c18fd28829fb4b749933ae1d84e0b631
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: df4a2fa3c1a38519da83391bcf1c4aa38b6504ff
+ms.sourcegitcommit: 6890b5a372a18e11354003098a512685e339ddb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323305"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541207"
 ---
 # <a name="reclassify-fixed-assets"></a>Omklassificera anläggningstillgångar
 
@@ -30,18 +30,19 @@ Om du vill omklassificera en anläggningstillgång, måste du överföra den til
 
 När en anläggningstillgång omklassificeras:
 
-• Alla värdemodeller för den befintliga anläggningstillgången skapas för den nya anläggningstillgången. All information som skapades för den ursprungliga anläggningstillgången kopieras till den nya anläggningstillgången. Statusen för den ursprungliga anläggningstillgångens värdemodell är Stängd. 
+• Alla böcker för den befintliga anläggningstillgången skapas för den nya anläggningstillgången. All information som skapades för den ursprungliga anläggningstillgången kopieras till den nya anläggningstillgången. Statusen för den ursprungliga anläggningstillgångens böcker är Stängd. 
 
-• De nya värdemodellerna för den nya anläggningstillgången innehåller datumet för omklassificeringen i fältet Anskaffningsdatum. Datumet i körfältet Avskrivning kopieras från den ursprungliga tillgångsinformationen. Om avskrivningen redan har påbörjats visas datumet för senaste omklassificeringen i fältet för senaste avskrivning. 
+• De nya böckerna för den nya anläggningstillgången innehåller datumet för omklassificeringen i fältet **Anskaffningsdatum**. Datumet i fältet **Startdatum för avskrivning** kopieras från den ursprungliga tillgångsinformationen. Om avskrivningen redan har påbörjats visas datumet för senaste omklassificeringen i fältet **Datum när avskrivning senast kördes**. 
 
 • De befintliga anläggningstillgångstransaktionerna för den ursprungliga anläggningstillgången annulleras och regenereras för den nya anläggningstillgången.
 
-1. Gå till Anläggningstillgångar > Periodiska uppgifter > Omklassificering.
-2. I fältet Anläggningstillgångsgrupper väljer du den grupp som du vill omklassificera.
-3. I nummerfältet för Anläggningstillgång väljer du den anläggningstillgång du vill omklassificera.
-4. I fältet Ny anläggningstillgångsgrupp väljer du den grupp du vill överföra anläggningstillgången till.
-    * Om den nya anläggningstillgångsgruppen kopplas till en nummerserie, kommer fältet Nytt anläggningstillgångsnummer att uppdateras med numret från den nya anläggningstillgångsgruppens nummerserie. I annat fall uppdateras fältet Nytt anläggningstillgångsnummer med numret från den nummerserie som är inställd på sidan Parametrar för anläggningstillgångar. Om ingen nummerserie har angetts på sidan för Parametrar för anläggningstillgångar, ange då ett nummer i nummerfältet för Ny anläggningstillgång.  
-5. Ange ett datum i fältet Omklassificeringsdatum.
-6. Ange eller välj ett värde i fältet Voucher series.
-7. Klicka på OK.
+Följ dessa steg för att omklassificera en anläggningstillgång:
 
+1. Gå till **Anläggningstillgångar > Periodiska uppgifter > Omklassificering**.
+2. I fältet **Anläggningstillgångsgrupper** väljer du den grupp som du vill omklassificera.
+3. I fältet **Nummer för anläggningstillgång** väljer du den anläggningstillgång du vill omklassificera.
+4. I fältet **Ny anläggningstillgångsgrupp** väljer du den grupp du vill överföra anläggningstillgången till.
+    * Om den nya anläggningstillgångsgruppen kopplas till en nummerserie, kommer fältet **Nytt anläggningstillgångsnummer** att uppdateras med numret från den nya anläggningstillgångsgruppens nummerserie. I annat fall uppdateras fältet **Nytt anläggningstillgångsnummer** med numret från den nummerserie som är inställd på sidan **Parametrar för anläggningstillgångar**. Om ingen nummerserie har angetts på sidan för **Parametrar för anläggningstillgångar**, ange då ett nummer i nummerfältet för **Ny anläggningstillgång**.  
+5. Ange ett datum i fältet **Omklassificeringsdatum**.
+6. Ange eller välj ett värde i fältet **Verifikationsserie**.
+7. Klicka på **OK**.

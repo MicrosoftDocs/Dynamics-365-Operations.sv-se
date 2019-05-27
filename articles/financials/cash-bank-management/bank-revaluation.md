@@ -3,7 +3,7 @@ title: Bank – omräkning i utländsk valuta
 description: Det här avsnittet innehåller en översikt över processen för bank – omräkning i utländsk valuta. Den innehåller information om inställningar, köra processen, beräkningen för processen och återföring av omvärderingstransaktioner.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976705"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538642"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – omräkning i utländsk valuta
 
@@ -52,7 +52,7 @@ Du måste aktivera funktionen för bank - omvärdering i utländsk valuta innan 
 3. På fliken **nummerserier** lägger du till en nummerserie för omvärdering i utländsk valuta.
 4. Uppdatera webbläsaren för att se **omvärdering i utländsk valuta** i avsnittet **periodiska uppgifter** på områdessidan.
 
-Du måste aktivera funktionen för varje juridisk person som används för omvärdering i utländsk valuta.
+Du måste aktivera funktionen för varje juridisk person som används för omvärdering i utländsk valuta. Om du har tilldelats rollen som systemadministratör eller funktionshanterare kan du undvika det här steget genom att aktivera funktionen **Aktivera omvärdering av bank utan parameter** på arbetsytan för **funktionshantering**.
 
 > [!NOTE]
 > Om en juridisk person använder en ryska, polska och ungerska lands-/regionskoder kan du redan göra bank – omräkning i utländsk valuta. Du kan inte använda omvärdering i utländsk valuta som används i andra länder eller regioner.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992893"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527681"
 ---
 # <a name="removed-or-deprecated-features"></a>Borttagna och inaktuella funktioner
 
@@ -66,26 +66,6 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Produktområden som påverkas**         | Webbklient |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell: Från och med april 2020 blir den förbättrade "är någon av"-upplevelsen standardbeteendet, utan en mekanism för att återgå till äldre funktion. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>Som härrör från interna klasser är inaktuella
-
-|   |  |
-|------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Före plattformsuppdatering 25 var det möjligt att skapa en klass eller tabell som härleds från en intern klass/tabell som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Per plattformsuppdatering 25 kommer kompileraren att visa ett varningsmeddelande. |
-| **Ersatt av en annan funktion?**   | Kompilerarens varning ersätts av ett fel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid.|
-| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
-| **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>Åsidosätta interna metoder är inaktuellt
-
-|   |  |
-|------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Före plattformsuppdatering 25 var det möjligt att åsidosätta en intern metod i en härledd klass som definieras i ett annat paket/modul. Detta är inte en säker metod för kodning. Per plattformsuppdatering 25 kommer kompileraren att visa ett varningsmeddelande. |
-| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i plattformsuppdatering 26. Ändringen är bakåtkompatibel vid körning, vilket innebär att om du kör plattformsuppdatering 25 eller senare kan detta distribueras i begränsad eller produktionsmiljö utan att behöva ändra anpassad kod. Denna ändring påverkar endast utveckling och kompileringstid. |
-| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
-| **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametern för att aktivera försäljningsorder med flera finansieringskällor för projektkontrakt
 Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet har flera finansieringskällor aktiveras med inställningen**Parametrar för projekthantering** **Tillåt försäljningsorder för projekt som har flera finansieringskällor**. Den här parametern är som standard inte aktiverat. 
