@@ -3,7 +3,7 @@ title: Synkronisering av försäljningsorder direkt mellan Sales och Finance and
 description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningorder direkt mellan Microsoft Dynamics 365 for Sales och Microsoft Dynamics 365 for Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339129"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539124"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
 
@@ -146,6 +146,16 @@ Innan du synkroniserar försäljningsorder är det viktigt att du uppdaterar fö
 ### <a name="setup-in-finance-and-operations"></a>Inställningar i Finance and Operations
 
 - Gå till **Försäljning och marknadsföring** &gt; **3periodiska uppgifter** &gt; **Beräkna försäljningssummor** och ange att jobbet ska köras som ett batchjobb. Ange alternativet **Beräkna summor för försäljningsorder** till **Ja**. Detta steg är viktigt eftersom endast försäljningsorder med beräknade försäljningstotaler synkroniseras med Sales. Batch-jobbets frekvens ska vara densamma som frekvensen för synkroniseringen av försäljningsordern.
+
+Om du också använder integration av arbetsorder måste du ställa in försäljningsursprung. Försäljningsursprunget används för att särskilja försäljningsorder i Finance and Operations som skapats från arbetsorder i Field Service. När försäljningsordern har sitt försäljningsursprung av typen **Integrering av arbetsorder** visas fältet **Extern arbetsorderstatus** på försäljningsorderns rubrik. Dessutom hjälper försäljningsursprunget till att garantera att försäljningsorder som har skapats från arbetsorder i Field Service filtreras bort under synkroniseringen från Finance and Operations till Field Service.
+
+1. Gå till **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Alla försäljningsorder**.
+2. Välj **Ny** för att skapa ett nytt försäljningsursprung.
+3. I fältet **Försäljningsursprung** anger du ett namn för försäljningsursprung som t.ex. **Försäljningsorder**.
+4. I fältet **Beskrivning** anger du en beskrivning såsom **Försäljningsorder från försäljning**.
+5. Markera kryssrutan **Tilldelning av ursprungstyp**.
+6. Ange fältet **Typ av försäljningsursprung** till **Försäljningsorder av arbetsorder**.
+7. Välj **Spara**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>Inställningen i försäljningsorder (Sales till Fin and Ops) - Direkt dataintegreringsprojekt
 

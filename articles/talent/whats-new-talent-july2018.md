@@ -19,11 +19,11 @@ ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
 ms.openlocfilehash: 5a26f32dcf10565d988bf177eee0f42e6a4ceae3
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "859078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1519087"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Nyheter och ändringar i Dynamics 365 for Talent Core HR (juli 2018)
 
