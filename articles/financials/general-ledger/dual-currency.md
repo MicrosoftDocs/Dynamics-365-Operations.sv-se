@@ -3,7 +3,7 @@ title: Dubbel valuta
 description: Det här avsnittet innehåller information om dubbel valuta där rapporteringsvalutan används som en andra redovisningsvaluta för Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330320"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532258"
 ---
 # <a name="dual-currency"></a>Dubbel valuta
 
@@ -61,6 +61,9 @@ För olika rapporter och förfrågningarna lades även logik till för att ignor
 ## <a name="financial-journals"></a>Redovisningsjournaler
 
 De ekonomiska journalerna, till exempel redovisningsjournal och leverantörsfakturajournal har uppdaterats så att de innehåller ytterligare information om rapporteringsvalutan. Totalbelopp för verifikationen och journalen visas nu i rapporteringsvalutan. Dessutom visas nu information om rapporteringsvalutans valutakurs på fliken **Allmänt** på journalraderna. Därför kan du åsidosätta den rapporteringsvalutans valutakurs när du registrerar transaktioner.
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Leverantörsfakturor, försäljningsorder och försäljningsavtal
+Leverantörsfakturor, försäljningsorder och försäljningsavtal har uppdaterats så att de inkluderar en fast valutakurs för rapporteringsvalutan. Du kan definiera en fast valutakurs för både redovisningsvalutan och rapporteringsvalutan när transaktionsvalutan är olika. När redovisningsvalutan och rapporteringsvalutan är desamma, behålls den fasta valutakursen med redovisningsvalutans fasta tariff som rapport valutans fasta tariff. Den fasta valutakursen för rapporterings valutan kan inte ändras för den här konfigurationen. När bokföringsvalutan och rapporteringsvalutan skiljer sig från kan en fast växelkurs definieras för både bokföringsvaluta och rapporteringsvaluta under transaktionspost. Om rapporteringsvalutan inte har definierats i redovisningen aktiveras inte fältet **Rapporteringsvaluta fast valutakurs** och inget rapporteringsvalutabelopp beräknas.
 
 ## <a name="module-changes"></a>Moduländringar
 

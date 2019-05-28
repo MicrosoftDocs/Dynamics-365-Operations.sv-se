@@ -3,7 +3,7 @@ title: Synkronisera information om lagernivåer från Finance and Operations til
 description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: c7dce4427810b93e0ee4f1a27881c2b1b04fb125
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1535708"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synkronisera information om lagernivåer från Finance and Operations till Field Service 
 
@@ -75,6 +75,14 @@ Entiteten **Externt produktlager** är en ny entitet som endast används för st
 
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
+### <a name="data-integration"></a>Dataintegration
+För att projektet ska fungera måste du se till att integrationsnyckeln uppdateras för msdynce_externalproductinventories.
+1.  Gå till **Dataintegration > anslutningsuppsättningar**.
+2.  Välj den använda anslutningsuppsättningen.
+3.  På fliken **Integrationsnyckeln**, se till att följande nyckel läggs till msdynce_externalproductinventories:
+      - msdynce_productnumber (produktnummer)
+      - msdynce_warehouseid (dist.lager-ID)
+      
 ### <a name="data-integration-project"></a>Dataintegreringsprojektet
 Du kan tillämpa filter med avancerad fråga och filtrering för att kontrollera att bara önskade produkter och lagerställen skickar information om lagernivåer från Finance and Operations till Field Service.
 

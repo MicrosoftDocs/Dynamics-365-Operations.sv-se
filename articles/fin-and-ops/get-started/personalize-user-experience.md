@@ -3,7 +3,7 @@ title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528854"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -75,7 +75,7 @@ Några av de vanligaste och mest viktiga ändringar som kan göras till en sida 
 
 Dessutom är de vanligaste typerna av uttrycklig anpassning tillgängliga genom att högerklicka på ett element och sedan välja **anpassa**. (Observera att inte alla element på sidan kan anpassas). När du använder den här metoden för anpassning visas elementets egenskapsfönster.
 
-[![Anpassa egenskaper för ett element](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![Anpassa egenskaper för ett element](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 Du kan använda egenskapsfönstret för att anpassa ett element på följande sätt:
 
@@ -91,7 +91,7 @@ Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket 
 
 Om du vill göra flera ändringar på en sida eller göra ändringar som inte är tillgängliga genom andra metoder (till exempel ändra ordning på element), kan du använda verktygsfältet **anpassning**. För att öppna verktygsfältet **anpassning**, välj **anpassa formuläret** i ett elements egenskapsfönster. Du kan också välja **anpassa det här formuläret** i gruppen **anpassa** på fliken **alternativ** för varje sidas åtgärdsfönster.
 
-[![Verktygsfält för anpassning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Verktygsfält för anpassning](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigera på sidan
 

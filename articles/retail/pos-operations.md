@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842732"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505106"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -70,8 +70,10 @@ Följande kolumner anger var operationerna kan startas:
 | 106 | Rensa kvantitet | Återställ kvantiteten på den markerade raden till **1**. | Ja | Ja | Nr | Ja | Nr |
 | 640 | Rensa säljare på rad | Ta bort provisionssäljgruppen (säljare) från den markerade raden. | Ja | Ja | Nr | Ja | Nr |
 | 121 | Ta bort säljare | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
-| 1055 | Stäng skift | Stäng det aktuella skiftet, skriv ut en Z-rapport och logga ut användaren ur systemet. | Ja | Ja | Ja | Nr | Nr |
-| 925 | Kopiera bankchecken | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Ja |
+| 1055 | Stäng skift | Stäng det aktuella skiftet, skriv ut en Z-rapport och logga ut användaren ur systemet. | Ja | Ja | Ja | Nej | Nej |
+| 139 | Genomför transaktion | Uppmanar användaren att välja betalningsmetod | Ja | Ja | Nej | Ja | Nej |
+| 620 | Skapa kundorder | Konvertera kassatransaktionen till en kundorder. | Ja | Ja | Nej | Ja\* | Nej |
+| 925 | Kopiera bankchecken | Den här operationen stöds inte. | Inte aktuellt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Ja |
 | 620 | Skapa kundorder | Konvertera kassatransaktionen till en kundorder. | Ja | Ja | Nr | Ja\* | Nr |
 | 621 | Skapa offert | Konvertera kassatransaktionen till en försäljningsoffert. | Ja | Ja | Nr | Ja\* | Nr |
 | 636 | Skapa butikstransaktion | Den här operationen låter användaren skapa en försäljningstransaktion som standard när standardkassabeteendet är att skapa kundorder. | Ja | Ja | Nr | Ja | Nr |

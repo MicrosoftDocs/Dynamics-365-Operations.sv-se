@@ -17,11 +17,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: a82c3e8e8787beb309b75b73cda36f4ca8031d6f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558893"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definiera granskningspolicyer för källdokument
 
@@ -72,7 +72,7 @@ I den här proceduren visar vi hur du ställer in och kör granskningsprincipreg
 41. Välj transaktionsbelopp
 42. Ange eller välj ett värde i fältet Fält.
 43. Välj ”Summa” i fältet AggregateFunction.
-44. I fältet skriver du ">2000".
+44. I fältet skriver du &quot;&gt;2000".
 45. Klicka på OK.
 46. Klicka på Ja.
 47. I fältet Startdatum för dokumenturval, ange datum och tid.

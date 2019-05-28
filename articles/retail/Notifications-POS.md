@@ -1,9 +1,9 @@
 ---
 title: Visa ordermeddelanden i kassan (POS)
-description: Det här avsnittet beskriver hur du aktiverar ordermeddelanden i kassan och ramverket för meddelanden. Så småningom ska utvecklare kunna utöka dessa funktioner till andra åtgärder utöver orderuppföljningsåtgärder.
+description: Det här avsnittet beskriver hur du aktiverar ordermeddelanden i kassan och ramverket för meddelanden.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361347"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530280"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i kassan (POS)
 
@@ -67,6 +67,10 @@ Kassaknapparna kan nu visa ett antal för att hjälpa medarbetarna att bestämma
 Följande bild visar inställningarna för levande innehåll i knappsatsen för designern,
 
 ![Inställningar för levande innehåll i knappsatsen för designern](./media/ButtonGridDesigner.png "Inställningar för levande innehåll i knappsatsen för designern")
+
+Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rätt skärmlayout håller på att uppdateras. Om du vill ta reda på vilken skärmlayout som används i POS väljer du ikonen **Inställningar** i övre högra hörnet och noterar **Skärmlayout-ID** och **Layoutupplösning.** Nu använder du Edge-webbläsaren, gå till sidan **skärmlayout** i Dynamics 365 for Finance and Operations, leta reda på **bildskärms-ID** och **Layoutupplösning** som identifieras ovan och markera kryssrutan **Aktivera live-innehåll**. Gå till **Butik > Butikens IT > Distributionsschema** och kör 1090-jobbet (journaler) för att synkronisera layoutändringar. 
+
+![Hitta den skärmlayout som används av kassan](./media/Choose_screen_layout.png "Hitta skärmlayouten ")
 
 Följande bild visar effekterna av att välja **Högst upp till höger** jämfört med **Mitten** i fältet **Innehållsjustering** för knappar med olika storlekar.
 

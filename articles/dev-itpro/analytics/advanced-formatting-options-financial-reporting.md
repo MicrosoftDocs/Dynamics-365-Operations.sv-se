@@ -1,16 +1,16 @@
 ---
 title: Avancerade formateringsalternativ i ekonomiska rapporter
 description: När du skapar en rapport inom ekonomisk rapportering blir ytterligare formateringsfunktioner tillgängliga, inklusive filter för dimensioner, begränsningar för kolumner och rapportenheter, icke-utskriftsrader samt IF/THEN/ELSE-utdrag i beräkningar.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502575"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerade formateringsalternativ i ekonomiska rapporter
 
@@ -41,6 +41,7 @@ I följande tabell beskrivs de avancerade formateringfunktionerna som är tillg�
 | Kolumnbegränsning         | Kolumnbegränsningen i raddefinitionen är användbar när du vill dölja relevanta värden bara på några rader i rapporten. När procentsatsberäkningar utförs på en rad, förhindrar kolumnbegränsningen totala kolumner eller andra kolumner från att skrivas ut när dessa nummer inte gäller. |
 | Kolumnavbrott               | Du kan lägga till kolumnavbrott i en raddefinition för att visa rapportinformation parallellt. Du kan lägga till flera kolumnavbrott i en enda raddefinition och kolumnrubriker upprepas högst upp i varje kolumn efter kolumnavbrott. Kommentarer för en rapport visas mellan kolumnavbrotten. |
 | IF/THEN/ELSE-utdrag     | Du kan ändra definitionen för beräkningar i följd eller en kolumndefinition. |
+| Använda enkla citattecken ('') och ett et-tecken (&) för dimensionsvärden | Du kan använda dimensionsvärden, inklusive et-tecknet för rapportdesignen. |
 
 ## <a name="advanced-cell-placement"></a>Avancerad cellplacering
 Den avancerade cellplaceringen eller *framtvinga*placeringen av specifika värden till specifika celler. Exempelvis används ofta framtvinga till att flytta det korrekta saldot i ett kassaflödesutdrag. Du kan använda framtvinga i följande syften:
@@ -297,3 +298,9 @@ Ett **IF/THEN/ELSE**-utdrag gör att en beräkning är beroende av resultaten fr
 
 > [!NOTE]
 > Du kan inte infoga resultaten av en beräkning till någon annan kolumn. Resultaten måste vara i kolumnen som innehåller formeln.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Använda enkla citattecken och ett et-tecken (&) för dimensionsvärden i en rad, kolumn eller ett träd
+
+Du kan utforma rapporter med hjälp av dimensionsvärden som innehåller ett et-tecken (&). 
+
+I fältet **Länk till ekonomiska dimensioner** kan du ange ett värde som **t.ex. "P&L"**. Om du inkluderar enkla citat tecken (' ') på båda sidor av dimensionsvärdet anger att du använder ett litteralt värde, t.ex. et-tecknet (&). 

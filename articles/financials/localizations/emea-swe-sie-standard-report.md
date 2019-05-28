@@ -15,12 +15,12 @@ ms.search.region: Sweden
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a01872c812347fd5ceeaab6b594e4303dd3a4934
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ff10dcf9c43d15d84c1535745dd9ce42bac71c6f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "371853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1513048"
 ---
 # <a name="export-financial-information-for-auditors-in-sweden"></a>Exportera ekonomisk information för revisorer i Sverige
 

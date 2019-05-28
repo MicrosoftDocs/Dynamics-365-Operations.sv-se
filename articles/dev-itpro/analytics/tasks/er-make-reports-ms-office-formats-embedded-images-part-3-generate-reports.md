@@ -16,11 +16,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5ef7ec2f8b5b7fdf456ebb71b863e620ae21e6b5
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "327192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544390"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Skapa rapporter i Office-format som omfattar inbäddade bilder
 
@@ -93,7 +93,7 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 6. Klicka på OK.
     * Granska den skapade utleveransen. Observera att bilden från dokumenthanteringsbilagan visas som underskriften för en behörig person.  
 
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Använd Microsoft Word-dokument som en mall i det importerade formatet
+## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Använd MS Word-dokument som en mall i det importerade formatet
 1. Stäng sidan.
 2. Stäng sidan.
 3. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
@@ -118,5 +118,5 @@ I det här exemplet ska du använda skapade ER-konfigurationer för exempelföre
 21. Klicka på Kontrollera.
 22. Klicka på Testutskrift
 23. Klicka på OK.
-    * Granska den skapade utleveransen. Observera att utdata har skapats som ett Microsoft Word-dokument med inbäddade bilder som innehåller företagslogotypen, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
+    * Granska den skapade utleveransen. Observera att utdata har skapats som ett MS Word-dokument med inbäddade bilder som innehåller företagslogotypen, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
 

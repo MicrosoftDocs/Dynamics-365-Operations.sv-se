@@ -3,7 +3,7 @@ title: Inköps- och utgiftsanalys för Power BI-innehåll
 description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet Inköps- och utgiftsanalys. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313852"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527727"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Inköps- och utgiftsanalys för Power BI-innehåll
 
@@ -33,7 +33,7 @@ Det här avsnittet beskriver vad som ingår i Power BI-innehållet **Inköps- oc
 
 ## <a name="overview"></a>Översikt
 
-Power BI-innehållet **Inköps- och utgiftsanalys** har utvecklats för att inköpschefer och chefer som ansvarar för budgetar ska kunna hålla ett öga på inköpsutgifter. Chefer kan analysera inköpsutgifter på följande sätt:
+Power BI-innehållet **Inköps- och utgiftsanalys** har utvecklats för att inköpschefer och chefer som ansvarar för budgetar ska kunna hålla koll på köputgifterna. Chefer kan analysera inköpsutgifter på följande sätt:
 
 - Ackumulerat inköp för i år (efter leverantörsgrupp och enskilda leverantörer, anskaffningskategori och enskilda produkter samt leverantörens plats)
 - Inköpsförändring på årsbasis (efter leverantörsgrupp och upphandlingskategori)
@@ -44,88 +44,88 @@ Innehållet använder inköpstransaktionsdata och ger både en sammanfattning av
 **Analys av inköpsutgift** Power BI-innehåll visas på sidan **Analys av inköp och utgifter** (**Anskaffning och källa** \> **Förfrågningar och rapporter** \> **Analys av köpprestanda** \> **Analys av inköp och utgifter**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mätvärden som ingår i Power BI-innehållet
-Power BI-innehåll för **analys av inköpsutgift** innehåller en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över visualiseringarna.
+Power BI-innehåll för **analys av inköpsutgift** innehåller en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. 
 
-<table>
-<thead>
-<tr>
-<th>Rapportsida</th>
-<th>Diagram</th>
-<th>Paneler</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Inköp efter leverantör</td>
-<td><ul>
-<li>De 10 främsta leverantörerna per inköp (stapeldiagram)</li>
-<li>Totalt inköp per leverantörsgrupp / land / namn (cirkeldiagram)</li>
-<li>Inköp per leverantörsgrupp / land / namn (stapeldiagram)</li>
-<li>Genomsnittligt inköp per leverantörsgrupp / land / namn (stapeldiagram)</li>
-</ul></td>
-<td><ul>
-<li>Totalt inköp</li>
-<li>YOY inköpstillväxt</li>
-<li>Totalt antal leverantörer</li>
-<li>Totalt antal aktiva leverantörer</li>
-</ul></td>
-</tr>
-<tr>
-<td>Inköp efter produkt</td>
-<td><ul>
-<li>Inköp per anskaffningskategori / produktnamn (stapeldiagram)</li>
-<li>Totalt inköp per anskaffningskategori / produktnamn (cirkeldiagram)</li>
-<li>De 10 främsta produkterna efter inköp (stapeldiagram)</li>
-</ul></td>
-<td><ul>
-<li>Totalt antal produkter</li>
-<li>Totalt antal aktiva produkters procentuella andel av totalt antal produkter</li>
-<li>Antal produkter som står för 80 % av inköp</li>
-</ul></td>
-</tr>
-<tr>
-<td>Inköp efter period*</td>
-<td><ul>
-<li>Inköp per månad / dag (stapeldiagram)</li>
-<li>Ackumulerad YOY inköpsavvikelse (vattenfallsdiagram)</li>
-<li>Totala YOY inköpstillväxt (stapeldiagram)</li>
-<li>Anskaffningsutdrag (matris)</li>
-</ul></td>
-<td><ul>
-<li>YOY inköpstillväxt</li>
-<li>YOY inköpstillväxt %</li>
-</ul></td>
-</tr>
-<tr>
-<td>Inköp per leverantörsplats</td>
-<td><ul>
-<li>Inköp per ort</li>
-<li>Inköp YOY tillväxt %</li>
-<li>Inköp per land</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Analys av inköpsutgift per tid</td>
-<td><ul>
-<li>Inköp innevarande år per månad / dag (linjediagram)</li>
-<li>Inköp innevarande år och föregående år (linje- och stapeldiagram)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Analys av inköpsutgift per leverantör</td>
-<td><ul>
-<li>Topp 10 leverantörers inköp % av inköp (tratt)</li>
-<li>Topp 10 leverantörer med ökad utgifts YOY</li>
-<li>Topp 10 leverantörer med minskad utgifts YOY</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+Nedanstående avsnitt ger en översikt över visualiseringarna.
 
-\* Inköp detta och förra året och tillväxt per anskaffningskategori.
+### <a name="purchase-by-vendor-report-page"></a>Sidan inköp per leverantörrapport
+**Diagram**
+- De 10 främsta leverantörerna per inköp (stapeldiagram)
+- Totalt inköp per leverantörsgrupp / land / namn (cirkeldiagram)
+- Inköp per leverantörsgrupp / land / namn (stapeldiagram)
+- Genomsnittligt inköp per leverantörsgrupp / land / namn (stapeldiagram)
+
+**Paneler**
+- Totalt inköp
+- YOY inköpstillväxt
+- Totalt antal leverantörer
+- Totalt antal aktiva leverantörer
+
+**Exempel**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>Sidan produkt per leverantörrapport
+
+**Diagram**
+- Inköp per anskaffningskategori / produktnamn (stapeldiagram)
+- Totalt inköp per anskaffningskategori / produktnamn (cirkeldiagram)
+- De 10 främsta produkterna efter inköp (stapeldiagram)
+
+**Paneler**
+- Totalt antal produkter</li>
+- Totalt antal aktiva produkters procentuella andel av totalt antal produkter
+- Antal produkter som står för 80 % av inköp
+
+**Exempel**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>Sidan inköp per periodrapport
+Den här sidan visar inköp i år och förra året och tillväxt efter upphandlingskategori.
+
+**Diagram** 
+- Inköp per månad / dag (stapeldiagram)
+- Ackumulerad YOY inköpsavvikelse (vattenfallsdiagram)
+- Totala YOY inköpstillväxt (stapeldiagram)
+- Anskaffningsutdrag (matris)
+
+**Paneler**
+- YOY inköpstillväxt
+- YOY inköpstillväxt %
+
+**Exempel**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>Sidan inköp per leverantörplatsrapport
+
+**Diagram**
+- Inköp per ort
+- Inköp YOY tillväxt %
+- Inköp per land
+
+**Exempel**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>Analys av inköpsutgift per tidsrapport
+
+**Diagram** 
+- Inköp innevarande år per månad / dag (linjediagram)
+- Inköp innevarande år och föregående år (linje- och stapeldiagram)
+
+**Exempel**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Analys av inköpsutgift per leverantörsrapport
+
+**Diagram** 
+- Topp 10 leverantörers inköp % av inköp (tratt)
+- Topp 10 leverantörer med ökad utgifts YOY
+- Topp 10 leverantörer med minskad utgifts YOY
+
+**Exempel** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>Datamodell och enheter
 Följande data används för att fylla i rapportsidorna i Power BI-innehållet **Inköps- och utgiftsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).

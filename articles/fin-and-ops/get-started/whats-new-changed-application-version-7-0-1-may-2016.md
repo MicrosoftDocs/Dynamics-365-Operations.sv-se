@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "314519"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561653"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheter och ändringar i Microsoft Dynamics AX programvaruversion 7.0.1 (maj 2016)
 

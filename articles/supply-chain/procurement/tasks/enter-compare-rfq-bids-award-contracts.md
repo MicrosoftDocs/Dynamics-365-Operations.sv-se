@@ -1,9 +1,9 @@
 ---
 title: Ange och jämför anbudsförfråganbud och tilldela kontrakt
-description: Den här proceduren visar dig hur du anger svar på en anbudsförfrågan, poäng och jämför bud, och sedan tilldelar budet till en av leverantörerna.
+description: Den här proceduren visar dig hur du anger svar på en anbudsförfrågan (RFQ), poäng och jämför bud, och sedan tilldelar kontraktet till en av leverantörerna.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,104 +16,130 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cd4876acfebcc9595abb358cfc9b355e93041d6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 45ddab03810b331bcd8965f6a2ba699ffb138910
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350008"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1533362"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Ange och jämför anbudsförfråganbud och tilldela kontrakt
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar dig hur du anger svar på en anbudsförfrågan, poäng och jämför bud, och sedan tilldelar budet till en av leverantörerna. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Innan du startar måste du ha en anbudsförfrågan med två rader som har skickats till minst två leverantörer. Du kan köra proceduren ”Skapa en anbudsförfrågan” som en förutsättning för att skapa detta. Du måste ha ställt in ett poängkriterium innan du kan köra den här proceduren.
+Den här proceduren visar dig hur du anger svar på en anbudsförfrågan (RFQ), poäng och jämför bud som du får och sedan tilldelar kontraktet till en av leverantörerna som skickade bud. Du kan använda den här proceduren i demonstrationsdataföretaget **USMF**.
 
+Innan du startar proceduren måste du ha en anbudsförfrågan med två rader som har skickats till minst två leverantörer. Om du vill skapa en anbudsförfrågan slutför du proceduren [skapa en anbudsförfrågan](create-request-quotation.md). Poängkriterier måste också ställas in innan du kan slutföra den här proceduren.
 
-## <a name="enter-a-reply-from-a-vendor"></a>Ange ett svar från en leverantör
-1. Gå till Anskaffning och källa > Anbudsförfrågningar > Alla anbudsförfrågningar.
-2. Välj en anbudsförfrågan som har statusen Skickad och klicka på länken på Ärendenummer på anbudsförfrågan.
-    * Anbudsförfrågan ska ha skickats till minst 2 leverantörer.  
-3. Klicka på Rubrik om du vill gå till listan över leverantörer.
-4. +Markera leverantören som du vill ange för ett svar på anbudsförfrågan.
-5. Klicka på Ange svar.
-6. Klicka på Svar i åtgärdsfönstret.
-7. Klicka på Kopiera data för att svara.
-    * Denna åtgärd kommer att kopiera valda data, till exempel kvantiteten från anbudsförfrågansärendet till svaret på anbudsförfrågan. Alternativt kan du hoppa över den här åtgärden och fylla i alla svarfälten manuellt när du redigerar svaret.  
-8. Klicka på Redigera.
-9. Ange ett tal i fältet Enhetspris.
-10. Välj den andra offertraden.
-11. Ange ett tal i fältet Enhetspris.
+Du kan ange budet som antingen leverantör eller anskaffningsproffs. Mer information finns i [Ställa in och underhålla leverantörssamarbete](../set-up-maintain-vendor-collaboration.md).
 
-## <a name="score-the-bid"></a>Poängsätt budet
-1. Klicka på Rubrik om du vill gå till budets poäng.
-2. Visa avsnittet Poängsättning av bud.
-3. Ange ett nummer för ett av poängkriterierna i fältet Poäng.
-    * Om du hovrar över en av poängkriterierna visar en knappbeskrivning det intervall som poängen måste vara i. I denna demonstration kan du lägga till ett värde på mellan 1 och 5 till något av kriterierna.  
-4. Välj ett annat poängkriterium.
-5. Ange ett nummer i fältet Poäng.
-6. Visa avsnittet Enkäter.
-    * Om anbudsförfråganfallet har en enkät som skickats till leverantörerna, kan du ange sina svar i avsnittet Enkäter.  
-7. Stäng sidan.
+## <a name="enter-a-reply-as-a-vendor"></a>Ange ett svar som leverantör
 
-## <a name="enter-a-reply-for-another-vendor"></a>Ange ett svar för en annan leverantör
-1. Välj nästa leverantör genom att avmarkera den leverantör som du precis har angett svaret för och välj sedan raden för nästa leverantör.
-2. Hitta och markera önskad post i listan.
-3. Klicka på Ange svar.
-4. Klicka på Kopiera data för att svara.
-5. Klicka på Redigera.
-6. Ange ett tal i fältet Enhetspris.
-7. Välj den andra offertraden.
-8. Ange ett tal i fältet Enhetspris.
+1. På instrumentpanelen väljer du **Budgivning av leverantör**.
+2. I listan **Nya budinbjudningar**, hitta en anbudsförfrågan som precis skickades. Välj anbudsförfrågan som ska granskas efter önskemål.
+3. Markera **bifogade anbudsförfrågan** för att granska bilagor som har lagts till.
+4. Välj **bud** om du vill göra fälten redigerbara. Observera att fältet **budförlopp** är inställt **leverantören uppdaterar**.
+5. Ange värden från anbudssvaret i rubriken och raderna.
+6. Om bilagor ska läggas till i budet väljer **Budbilagor**
+7. Välj snabbfliken **Objekt i riktlinjer för budgivning** för att visa om ett dokument krävs.
+8. Välj snabbfliken **ändringar** för att visa om anbudsförfrågan har ändrats.
+9. På snabbfliken **Enkät**. Alla enkäter som visas här måste besvaras.
+10. Välj snabbfliken **radinformation** om du vill visa utökad information om raden.
+11. Välj endast **Återställ från anbudsförfrågan** om du måste återställa de värden som har angetts för de ursprungliga värdena för anbudsförfrågan.
+12. Du kan spara buden när som helst och göra ytterligare bearbetning senare under förutsättning att utgångsdatum och tid inte har passerat. I det här fallet kan du hitta budet i **Pågående bud** i arbetsytan **Budgivning av leverantör**.
+13. När budet är klart att skickas väljer du **Skicka**. Om du inte vill lägga ett bud väljer du **Avslå**.
 
-## <a name="score-the-second-bid"></a>Poängsätt det andra budet
-1. Klicka på Rubrik om du vill gå till budets poäng.
-2. Ange ett nummer i fältet Poäng.
-3. Hitta och markera önskad post i listan.
-4. Ange ett nummer i fältet Poäng.
+    Inskickade bud finns tillgängliga i listan **Skickade bud** i arbetsytan **leverantörens budgivning**.
+
+14. När budet har lämnats in kan du när som helst återkalla det före utgångsdatum och-tid. Observera att när ett budet återkallas, behandlas det inte som skickat.
+
+    När budet accepteras eller avvisas av anskaffningsavdelningen visas det antingen i listan **Beviljade bud** eller **Förlorade bud** i arbetsytan **leverantörens budgivning**.
+
+## <a name="enter-a-reply-from-a-vendor-as-a-procurement-professional"></a>Ange ett svar från en leverantör som ett anskaffningsproffs
+
+1. Kontrollera att behörigheten för att redigera leverantörsbudet har ställts in. Gå till **Anskaffning och källa \> Inställningar \> Anskaffnings- och källparametrar**. På fliken **Anbudsförfrågan**, ange alternativet **Köparen kan redigera leverantörens bud** till **Ja**.
+2. Gå till **Anskaffning och källa \> Anbudsförfrågningar \> Alla anbudsförfrågningar**.
+3. Välj en anbudsförfrågan som har statusen **Skickad** och välj sedan länken i fältet **Ärende i anbudsförfrågan**.
+4. Välj **Hantera svar**. Sidan som visas visar en anbudsförfrågan för varje leverantör som är inbjuden att lägga ett bud.
+5. Välj en anbudsförfrågan som inte har besvarats. (Fältet **svarsförlopp** ska anges till **ej startat**.)
+6. Välj **Redigera \> Redigera svar på anbudsförfrågan**.
+
+    Sidan **Svar på anbudsförfrågan** visas. Som inköpsproffs kan du nu ange svaret på uppdrag av leverantören. Observera att fältet **budförlopp** är inställt **inköparen uppdaterar**.
+
+7. Ange buddata. Välj **Skicka** när du är klar.
+
+## <a name="score-the-bids"></a>Poängsätt bud
+
+1. På sidan **Alla anbudsförfrågningar** väljer du det ärende för anbudsförfrågan som du vill att poäng ska besvaras.
+2. Välj **Hantera svar**.
+3. Markera svaret att poängsätta.
+4. Välj **rubrik** så att du kan se poängen för budet.
+5. På snabbfliken **Poängsättning av bud**, ange ett nummer i fältet **Poäng** för ett av poängsättningskriterierna.
+
+    Om du hovrar över en av poängkriterierna visar en knappbeskrivning det intervall som poängen måste vara i. I denna demonstration kan du ange ett nummer mellan 1 och 5 för något av kriterierna.
+
+6. Upprepa steg 5 för ett annat poängsättningskriterium.
+7. Om anbudsförfråganfallet har en enkät som skickats till leverantörerna, kan du ange leverantörens svar på snabbfliken **Enkäter**.
+8. Stäng sidan.
+9. Upprepa steg 1 till och med 8 för alla andra bud.
 
 ## <a name="compare-the-replies"></a>Jämför svaren
-1. Klicka på Allmänt i åtgärdsfönstret.
-2. Klicka på Jämför svar.
-3. Ange ett nummer i fältet Rangordning.
-    * På den här sidan visas buden med rubriken och raderna och den totala på poängen på rubriknivån. Du kan jämföra raderna genom att sortera i rutnätet så att jämförbara rader finns bredvid varandra. Informationen innehåller även: Kvantitet: Den kvantitet som anges av leverantören. Detta kanske inte är lika med kvantiteten som specificerats i anbudsförfrågan.   Nettobelopp: priset som anges av en leverantör, att betala av eventuella rabatter, för artiklarna på raden.   Avvikelse: Antal dagar som leveransdatumet i budhuvud eller raden avviker från det begärda leveransdatumet i huvudet för anbudsförfrågan eller anbudsförfråganraden.   Du kan ange en ranking för varje bud.  
-4. Välj rubrikrad för det andra budet som du vill rangordna.
-5. Ange ett nummer i fältet Rangordning.
-6. Klicka på Spara.
+
+1. Välj **Jämför svar** på fliken **Allmänt** i åtgärdsfönstret.
+2. I fältet **Rangordning** anger du ett nummer.
+
+    På den här sidan visas buden med rubriken och radinformationen och den totala på poängen på rubriknivån. Du kan jämföra raderna genom att sortera i rutnätet så att jämförbara rader finns bredvid varandra. I det här avsnittet ingår även följande information:
+
+    - **Kvantitet** - Kvantiteten som leverantören angav. Denna kvantitet kanske inte är lika med kvantiteten som specificerats i anbudsförfrågan.
+    - **Nettobelopp**: priset som anges av en leverantör för artiklarna på raden minus eventuella rabatter.
+    - **Avvikelse**: Antal dagar som leveransdatumet i budhuvud eller raden avviker från det begärda leveransdatumet i huvudet för anbudsförfrågan eller anbudsförfråganraden. Du kan ange en ranking för varje bud.
+
+3. Välj rubrikrad för det andra budet som du vill rangordna.
+4. I fältet **Rangordning** anger du ett nummer.
+5. Välj **Spara**.
 
 ## <a name="reject-a-bid"></a>Avvisa ett bud
+
 1. Välj rubrikrad för det budet som du vill avvisa.
-    * Du kan bara godkänna, avvisa eller returnera ett bud eller rader inom ett bud i taget.  
-2. Markera kryssrutan Markera.
-    * Om du väljer Markera kryssrutan i budets Rubrik kommer även alla rader att markeras. Du kan också välja att markera en deluppsättning av raderna i budet om du vill avvisa eller godkänna dessa. Det går att acceptera en leverantörs bud för alla rader i en anbudsförfrågan och sedan tilldela andra anbudsförfrågansrader till en annan leverantör, men du måste göra detta i 2, ett bud i taget. Du kan bara godkänna antingen originalanbudsraden eller dess alternativ, men inte båda, om det finns alternativa rader.  
-3. Klicka på Avvisa.
-4. Klicka på Parametrar för att öppna dialogrutan.
-5. Ange eller välj ett värde i fältet Orsak för avvisande.
-    * Skälet till avvisande kommer att lagras på svaret.  
-6. Klicka på OK.
-7. Klicka på OK.
-8. Stäng sidan.
-9. Stäng sidan.
-10. Uppdatera sidan.
+
+    Du kan bara godkänna, avvisa eller returnera ett bud eller raderna på ett bud i taget.
+
+2. Markera kryssrutan **Markera**.
+
+    Om du väljer kryssrutan **Markera** i budets rubrik kommer även alla rader att markeras. Om du bara vill avvisa eller acceptera några av raderna i budet markerar du enbart dessa rader. Du kan dessutom acceptera en leverantörs bud på alla rader på en anbudsförfrågan men tilldela andra rader i anbudsförfrågan till en annan leverantör. Du måste emellertid göra ett bud åt gången.
+
+    Du kan godkänna antingen originalanbudsraden eller dess alternativ, men inte båda, om det finns alternativa rader.
+
+3. Välj **avvisa**.
+4. Välj **parametrar**och ange sedan budet i fältet **Orsak för avvisande**, ange eller välj orsak för att avvisa budet.
+
+    Orsaken lagras i svaret.
+
+5. Välj **OK**.
+6. Välj **OK**.
 
 ## <a name="accept-a-bid"></a>Acceptera ett bud
-1. Välj budet som du vill godkänna och klicka sedan på länken i fältet Anbudsförfrågan.
-2. Klicka på Svar i åtgärdsfönstret.
-3. Klicka på Godkänn.
-    * Om du har valt specifika rader och inte andra kommer åtgärden godkänn endast att inkludera de markerade raderna. Om du vill godkänna alla rader på budet behöver du inte markera raderna.  
-4. Klicka på Parametrar för att öppna dialogrutan.
-    * På så sätt kan du registrera en orsak till att godkänna budet. Skälet till avvisande kommer att lagras på svaret.  
-5. Ange eller välj ett värde i fältet Orsak till godkännande.
-6. Klicka på OK.
-7. Klicka på OK.
-    * När du klickar på OK genererar detta en inköpsorder baserat på de rader som ingår i godkännandet av anbudsförfrågan. Om det finns andra bud som inte har bearbetats (godkända, avvisade eller returnerade) kommer systemet att uppmana dig att avvisa de återstående buden.  
 
-## <a name="view-the-purchase-order-thats-been-generated"></a>Visa den inköpsorder som har genererats
-1. Klicka på Allmänt i åtgärdsfönstret.
-2. Klicka på Inköpsorder.
-    * Här kan du se inköpsordern som genererades, när du godkände budet.  
-3. Stäng sidan.
-4. Stäng sidan.
-5. Stäng sidan.
-6. Stäng sidan.
+1. Markera budet som ska accepteras och välj sedan länken i fältet **Anbudsförfrågan**.
 
+    Om du är på sidan **Jämför svar på anbudsförfrågan** är det markerade budet som har fokus det bud som systemet kommer att beakta ha under åtgärden acceptera. Du kan bara ta emot rader från ett bud åt gången.
+
+2. Klicka på **Svar** i åtgärdsfönstret.
+3. Välj **Godkänn**.
+
+    Om du bara har markerat vissa rader tas endast de raderna med i åtgärden acceptera med. Om du vill godkänna alla rader på budet behöver du inte markera raderna.
+
+4. Välj **parametrar**och ange sedan i fältet **Orsak för godkännande**, ange eller välj orsak för att godkänna budet.
+
+    Orsaken lagras i budet.
+
+5. Välj **OK**.
+6. Välj **OK**.
+
+    När du klickar på **OK** genererar detta en inköpsorder baserat på de rader som ingår i godkännandet av anbudsförfrågan. Om det finns andra bud som inte har bearbetats (godkända, avvisade eller returnerade) kommer systemet att uppmana dig att avvisa dem.
+
+## <a name="view-the-purchase-order-that-is-generated"></a>Visa den inköpsorder som har genererats
+
+- Välj **Inköpsorder** på fliken **Allmänt** i åtgärdsfönstret.
+
+    Sidan som visas visar inköpsordern som genererades, när du godkände budet.

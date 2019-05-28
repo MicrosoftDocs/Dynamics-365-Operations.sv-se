@@ -3,7 +3,7 @@ title: Förbättringar av funktionen för bokföring av utdrag
 description: Det här avsnittet beskriver de förbättringar som har gjorts till funktionen för bokföring av utdrag.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321442"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541301"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Förbättringar av funktionen för bokföring av utdrag
 
@@ -43,7 +43,7 @@ Finance and Operations omfattar följande valideringar som hör till dessa konfi
 - Samma konfigurationsnycklarna måste användas för alla åtgärder som utförs på ett visst utdrag under dess livscykel (skapa, beräkna, radera, bokföra och så vidare). Exempelvis kan du inte skapa och beräkna ett utdrag när konfigurationsnyckeln **Butiksutdrag (äldre)** aktiveras och sedan försöker bokföra samma uttryck när konfigurationsnyckeln **Butiksutdrag**.
 
 > [!NOTE]
-> Vi rekommenderar att du använder konfigurationsnyckeln **Butiksutdrag** för förbättrad funktion för bokföring av utdrag om du inte måste använda konfigurationsnyckeln **Butiksutdrag (äldre)** istället. Microsoft fortsätter att investera i nya och förbättrade funktioner för bokföring av utdrag och det är viktigt att du växlar till det så snart som möjligt för att kunna utnyttja denna. Den äldre funktionen för bokföring av utdrag kommer att tas bort i framtida versioner.
+> Vi rekommenderar att du använder konfigurationsnyckeln **Butiksutdrag** för förbättrad funktion för bokföring av utdrag om du inte måste använda konfigurationsnyckeln **Butiksutdrag (äldre)** istället. Microsoft fortsätter att investera i nya och förbättrade funktioner för bokföring av utdrag och det är viktigt att du växlar till det så snart som möjligt för att kunna utnyttja denna. Funktionen för bokföring av äldre utdrag kommer att tas bort från och med version 8.0.
 
 ## <a name="setup"></a>Konfigurera
 
@@ -56,11 +56,15 @@ Som del av förbättringarna av funktionerna för bokföring av utdrag har tre n
 
 - **Inaktivera att inventering krävs** – när det här alternativet ställs in på **Ja**, fortsätter bokföringsprocessen för ett utdrag, även om skillnaden mellan det beräknade beloppet och transaktionsbeloppet för utdraget är utanför det tröskelvärde som är definieras på snabbfliken **Utdrag** för butiker.
 
-Dessutom har fältet **Maximalt antal parallella utdragsbokföringar** införts på snabbfliken **batchbearbetning**. Det här fältet anger antalet batchuppgifter som ska köras samtidigt. För närvarande måste du manuellt ange värdet i det här fältet.
+Dessutom har följande parametrar införts på snabbfliken **gruppbearbetning** på fliken **bokföring** på sidan för **butiksparametrar**: 
 
-Dessutom med nya bokföringsprocessen är du skyldig att definiera en **Presentkortsprodukt** på snabbfliken **presentkort** på fliken **bokföring** på sidan **butiksparametrar** Detta gäller även om ingen presentkort används i organisationen.
+- **Maximalt antal parallella utdragsbokföringar** – det här fältet definierar antalet batchjobb som ska användas för att bokföra flera utdrag. 
+- **Max. tråd för orderbearbetning per utdrag** - det här fältet representerar det högsta antalet trådar som används av batch-jobbet utdragsbokföring för att skapa och fakturera försäljningsorder för ett enda utdrag. Det totala antalet trådar som kommer att användas av utdragsbokföringsprocessen beräknas utifrån värdet i den här parametern multiplicerat med värdet i parametern **Maximalt antal parallella utdragsbokföringar**. Om du anger värdet för den här parametern för högt kan prestandan i bokföringsprocessen för utdraget påverkas negativt.
+- **Max. transaktionsrader inkluderade i sammansättning** - det här fältet definierar antalet transaktionsrader som ska inkluderas i en samlad transaktion innan en ny skapas. Aggregerade transaktioner skapas utifrån olika sammansättningskriterier, t.ex. kund, affärsdatum eller ekonomiska dimensioner. Det är viktigt att notera att raderna från en enda butikstransaktion inte delas mellan olika sammansättningstransaktioner. Detta innebär att det finns en risk för att antalet rader i en sammansättningstransaktion är något högre eller lägre baserat på faktorer som antal specifika produkter.
+- **Maximalt antal trådar för validering av butikstransaktioner** – det här fältet definierar antalet trådar som ska användas för att validera butikstransaktioner. Validering av butikstransaktioner är ett obligatoriskt steg som måste inträffa innan transaktionerna kan hämtas till kontoutdrag. Du måste definiera en **Presentkortsprodukt** på snabbfliken **presentkort** på fliken **bokföring** på sidan **butiksparametrar** Detta måste definieras även om inga presentkort används i organisationen.
 
-Observera att alla inställningar och parametrar som relateras till bokföring av utdrag och som definieras i butiker och på sidan **Butiksparametrar**, gäller för den förbättrade funktionen för bokföring av utdrag.
+> [!NOTE]
+> Alla inställningar och parametrar som relateras till bokföring av utdrag och som definieras i butiker och på sidan **Butiksparametrar**, gäller för den förbättrade funktionen för bokföring av utdrag.
 
 ## <a name="processing"></a>Bearbetning
 

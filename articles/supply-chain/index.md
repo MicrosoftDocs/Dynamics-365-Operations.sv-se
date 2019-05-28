@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b46b95a10d257c56fdf20b016fbb598225d1f930
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302911"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517169"
 ---
 # <a name="supply-chain-management-home-page"></a>Startsidan Hantering av underleverantörer
 
@@ -59,7 +59,7 @@ Med hjälp av videoklippen får du lära dig mer om de nya funktionerna i Micros
 Med hjälp av videoklippen får du lära dig mer om de nya funktionerna i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (december 2017).
 
 -  [Integrering av potentiell kund till pengar](https://youtu.be/AVV9x5x-XCg) 
--  [Optimerings-advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Rådgivning om optimering](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 -  [Använd lagerställemall för att kopiera konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Med hjälp av videoklippen får du lära dig mer om de nya funktionerna i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017).
