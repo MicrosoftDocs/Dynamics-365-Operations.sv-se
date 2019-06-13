@@ -1,73 +1,165 @@
----
-title: Startsidan Budgetering
-description: Det här avsnittet innehåller en översikt över komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapporteringskapaciteter i Microsoft Dynamics 365 for Finance and Operations.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2017
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: BudgetPlanningWorkspace
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 106043
-ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
-ms.search.region: Global
-ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7e755e9cbcce332bf2a010083be438a8aeb9e2f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512108"
----
-# <a name="budgeting-home-page"></a>Startsidan Budgetering
-
-[!include [banner](../includes/banner.md)]
-
-Det här avsnittet innehåller en översikt med komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapportering i Finance and Operations. 
-
-<a name="components-of-budgeting-functionality"></a>Komponenter i budgeteringsfunktionen
--------------------------------------
-
-Resursplanläggningscykeln för ett företag består typiskt av aktiviteter för planering, budgetering och prognostisering.
-
-[![Komponenter för budgetringsfunktioner](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
-
-Processerna för såväl långsiktig strategisk planering som årlig budgetplanering stöds via ett budgetplandokument. Budgetplandokument är väl integrerade med Microsoft Excel. Användarna kan konfigurera obegränsade monetära och kvantitativa scenarier och även definiera en organisationshierarki för budgetering som stöder budgetmetoder både uppifrån och ned och nedifrån och upp. När en budget har skapats och godkänts i Finance and Operations, konverterar du budgetplanen till en budgetregisterpost. Budgetregisterposter innehåller verktyg för underhåll av budgeten för att göra beloppen spårningsbara med budgetkoder. Budgetregisterposter gör att det går att ändra ursprungliga budgetar, utföra överföringar och överföra budgetbelopp från föregående år. Utifrån den upprättade budgeten kan företaget aktivera budgetkontroll. Nivån på kontrollen beror på organisationens kultur och mognadsnivå. Organisationer med en lägre mognadsnivå kan lämna budgeten som den är och kan vara mer reaktiva än proaktiva om en budget inte uppfyller förväntningarna. Andra organisationer kan aktivera budgetkontrollregler som hindrar att användare gör inköp om budgeterade medel inte finns tillgängliga.
-
-Slutligen: Väl utvecklade organisationer kan skapa en organisationskultur där medarbetare utbildas om organisationens mål och följer dessa mål genom olika policyer, t.ex. "Överväg internetkonferenser istället för resor." Finance and Operations omfattar ett ramverk för budgetkontroll som låter företagets ledning välja antingen hård styrning (som förhindrar bokföringar som skulle överskrida budgeten) eller mjuk styrning (där användarna varnas att de kommer att överskrida tillgängliga budgetmedel, men själva kan bestämma hur de vill fortsätta). Slutligen går det även att använda löpande prognoser. En rullande prognos är en jämförelse av budgeten och de verkliga siffrorna och används för att definiera hur bra företaget går i förhållande till budgeten. En rullande prognos kan också identifiera tendenser. Finance and Operations stöder rullande prognoser genom ett budgetplandokument som första planeringsaktivitet. Rullande prognoser kan utföras parallellt med planeringen för nästkommande budgetcykel.
-
--   [Grundläggande budgetering: Översikt och konfiguration](basic-budgeting-overview-configuration.md)
--   [Budgetkontroll: Översikt och konfiguration](budget-control-overview-configuration.md)
--   [Budgetplanering: Översikt och konfiguration](budget-planning-overview-configuration.md)
--   [Befattningsprognos](position-forecasting.md)
--   [Motiveringsdokument för budgetplanering](budget-planning-justification-docs.md)
--   [Microsoft Excel-mallar för budgetplanering](budget-planning-excel-templates.md)
-
-## <a name="budgeting-tools-in-finance-and-operations"></a>Budgeteringsverktyg i Finance and Operations
-[![Budgeteringsverktyg](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
-
-Ytterligare funktioner för planering och budgetering finns i Finance and Operations och är integrerade i redovisningsbudgetarna.
-
--   **Personalbudgetar** – personalbudgeteringen innefattar detaljerad planering av budgetkostnadskomponenter för befattningar, kompensationsgrupper osv.
--   **Budgetar för anläggningstillgångar** – Med utgångspunkt från information om anläggningstillgångar går det att beräkna avskrivningar och registrera andra planerade transaktioner som rör anläggningstillgångar.
--   **Projektbudgetar** – I projektmodulen går det att skapa detaljerade projektprognoser. Projektprognoserna inkluderar information om planerade timmar, utgifter, avgifter och artiklar.
--   **Efterfrågeprognostisering** – Med utgångspunkt från historiska transaktionsdata går det att uppskatta framtida lagerefterfrågan och skapa efterfrågeprognoser.
-
-Information om att hämta planeringsdata från andra moduler till budgetplaner finns i [Integrering av budgetplanering med andra moduler](budget-planning-integration-other-modules.md).
-
-## <a name="user-interface-and-reporting-capabilities"></a>Användargränssnitt och rapporteringsfunktioner
-I Finance and Operations kan användarna skapa budgetplaner antingen direkt i Finance and Operations-klienten (genom att använda en konfigurerbar sida i budgetplansdokumentet) eller i Excel. Excel innehåller flera ytterligare funktioner. Det går till exempel att använda externa uppgifter som källa till en budgetplan, göra egna beräkningar och använda Microsoft pivottabeller och diagram. De flesta variablerna i budgetplaneringsprocessen går att konfigurera. 
-
-Det går till exempel att definiera vem som gör budgeten, vad som budgeteras och hur processen går till. Även om du använder Excel till budgetplanering, behålls Finance and Operations som en enda sanningskälla som förhindrar budgetkontrollproblem. Periodiska processer kan användas för att införa startuppgifter för budgeteringen i budgetplanen. Till rapporteringen erbjuder Finance and Operations en uppsättning standardförfrågningssidor som gör det möjligt att visa och analysera budgeteringsdata. Budgetplandata går att öppna i Management Reporter och enskilda budgetplansscenarier går att visa som kolumner i Management Reporter-rapporten.
-
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="budgeting-overview.md" target-language="sv-SE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>budgeting-overview.a0e130.84321b78c9869a4920c3488373876bb56bcb3a29.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>84321b78c9869a4920c3488373876bb56bcb3a29</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\budgeting\budgeting-overview.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Budgeting home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startsidan Budgetering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller en översikt över komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapporteringskapaciteter i Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Budgeting home page</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Startsidan Budgetering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller en översikt med komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapportering i Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Components of budgeting functionality</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Komponenter i budgeteringsfunktionen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The resource planning cycle for a company typically consists of planning, budgeting, and forecasting activities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Resursplanläggningscykeln för ett företag består typiskt av aktiviteter för planering, budgetering och prognostisering.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budgeting functionality components<ept id="p1">](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Komponenter för budgetringsfunktioner<ept id="p1">](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The processes for both long-term strategic planning and annual budget planning are supported through a budget plan document.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Processerna för såväl långsiktig strategisk planering som årlig budgetplanering stöds via ett budgetplandokument.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Budget plan documents are tightly integrated with Microsoft Excel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budgetplandokument är väl integrerade med Microsoft Excel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Users can configure unlimited monetary and quantitative scenarios, and can also define a budgeting organizational hierarchy to both support top-down and bottom-up budgeting methods.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Användarna kan konfigurera obegränsade monetära och kvantitativa scenarier och även definiera en organisationshierarki för budgetering som stöder budgetmetoder både uppifrån och ned och nedifrån och upp.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>After a budget is established and approved in Finance and Operations, you convert the budget plan to a budget register entry.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När en budget har skapats och godkänts i Finance and Operations, konverterar du budgetplanen till en budgetregisterpost.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Budget register entries provide tools for maintaining the budget and for keeping amounts traceable through budget codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budgetregisterposter innehåller verktyg för underhåll av budgeten för att göra beloppen spårningsbara med budgetkoder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Budget register entries let you revise original budgets, perform transfers, and carry forward budget amounts from the previous year.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budgetregisterposter gör att det går att ändra ursprungliga budgetar, utföra överföringar och överföra budgetbelopp från föregående år.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Based on the established budget, a company can enable budget control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utifrån den upprättade budgeten kan företaget aktivera budgetkontroll.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>The level of control depends on the organizational culture and the organization's level of maturity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nivån på kontrollen beror på organisationens kultur och mognadsnivå.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Organizations that have low maturity might leave the budget “as is” and might be more reactive than proactive if a budget doesn't meet expectations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Organisationer med en lägre mognadsnivå kan lämna budgeten som den är och kan vara mer reaktiva än proaktiva om en budget inte uppfyller förväntningarna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Other organizations might enable budget control policies that prevent users from purchasing if budget funds aren't available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Andra organisationer kan aktivera budgetkontrollregler som hindrar att användare gör inköp om budgeterade medel inte finns tillgängliga.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Finally, very mature organizations might establish an organizational culture where employees are educated about organizational targets and follow those targets through policies such as “Consider online meeting instead of a travel.”</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Slutligen: Väl utvecklade organisationer kan skapa en organisationskultur där medarbetare utbildas om organisationens mål och följer dessa mål genom olika policyer, t.ex. "Överväg internetkonferenser istället för resor."</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Finance and Operations includes a budget control framework that lets the company's management select either hard control (which prevents postings that would go over the budget) or soft control (where users are warned that they will exceed the available budget funds but can decide for themselves how to proceed).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations omfattar ett ramverk för budgetkontroll som låter företagets ledning välja antingen hård styrning (som förhindrar bokföringar som skulle överskrida budgeten) eller mjuk styrning (där användarna varnas att de kommer att överskrida tillgängliga budgetmedel, men själva kan bestämma hur de vill fortsätta).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Finally, you can use rolling forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Slutligen går det även att använda löpande prognoser.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>A rolling forecast is a regular comparison of budget to actuals and is used to define how well the company operates against the budget.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En rullande prognos är en jämförelse av budgeten och de verkliga siffrorna och används för att definiera hur bra företaget går i förhållande till budgeten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>A rolling forecast is also used to identify trends.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En rullande prognos kan också identifiera tendenser.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In Finance and Operations, rolling forecasts are supported, through a budget plan document, as initial planning activities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations stöder rullande prognoser genom ett budgetplandokument som första planeringsaktivitet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Rolling forecasts can be done in parallel with the planning for the upcoming budget cycle.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rullande prognoser kan utföras parallellt med planeringen för nästkommande budgetcykel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source><bpt id="p1">[</bpt>Basic budgeting: Overview and configuration<ept id="p1">](basic-budgeting-overview-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Grundläggande budgetering: Översikt och konfiguration<ept id="p1">](basic-budgeting-overview-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source><bpt id="p1">[</bpt>Budget control: Overview and configuration<ept id="p1">](budget-control-overview-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Budgetkontroll: Översikt och konfiguration<ept id="p1">](budget-control-overview-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source><bpt id="p1">[</bpt>Budget planning: Overview and configuration<ept id="p1">](budget-planning-overview-configuration.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Budgetplanering: Översikt och konfiguration<ept id="p1">](budget-planning-overview-configuration.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source><bpt id="p1">[</bpt>Position forecasting<ept id="p1">](position-forecasting.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Befattningsprognos<ept id="p1">](position-forecasting.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">[</bpt>Budget planning justification documents<ept id="p1">](budget-planning-justification-docs.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Motiveringsdokument för budgetplanering<ept id="p1">](budget-planning-justification-docs.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">[</bpt>Microsoft Excel templates for budget planning<ept id="p1">](budget-planning-excel-templates.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Microsoft Excel-mallar för budgetplanering<ept id="p1">](budget-planning-excel-templates.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Budgeting tools in Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budgeteringsverktyg i Finance and Operations</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budgeting tools<ept id="p1">](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Budgeteringsverktyg<ept id="p1">](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Additional planning and budgeting capabilities are available across Finance and Operations and are integrated with ledger budgets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytterligare funktioner för planering och budgetering finns i Finance and Operations och är integrerade i redovisningsbudgetarna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source><bpt id="p1">**</bpt>Workforce budgets<ept id="p1">**</ept> – Workforce budgeting includes detailed budget cost component planning for positions, compensation groups, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Personalbudgetar<ept id="p1">**</ept> – personalbudgeteringen innefattar detaljerad planering av budgetkostnadskomponenter för befattningar, kompensationsgrupper osv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source><bpt id="p1">**</bpt>Fixed assets budgets<ept id="p1">**</ept> – Based on fixed asset information, you can calculate planned depreciation and record other planned transactions that are related to fixed assets.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Budgetar för anläggningstillgångar<ept id="p1">**</ept> – Med utgångspunkt från information om anläggningstillgångar går det att beräkna avskrivningar och registrera andra planerade transaktioner som rör anläggningstillgångar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>Project budgets<ept id="p1">**</ept> – In the projects module, you can create detailed project forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Projektbudgetar<ept id="p1">**</ept> – I projektmodulen går det att skapa detaljerade projektprognoser.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>The projects forecasts will include details about the planned hours, expenses, fees, and items.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Projektprognoserna inkluderar information om planerade timmar, utgifter, avgifter och artiklar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>**Demand forecasting **– Based on historical transaction data, you can estimate future inventory demand and create demand forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">**Efterfrågeprognostisering** – Med utgångspunkt från historiska transaktionsdata går det att uppskatta framtida lagerefterfrågan och skapa efterfrågeprognoser.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For information about how to bring planning data from other modules into budget plans, see <bpt id="p1">[</bpt>Budget planning integration with other modules<ept id="p1">](budget-planning-integration-other-modules.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Information om att hämta planeringsdata från andra moduler till budgetplaner finns i <bpt id="p1">[</bpt>Integrering av budgetplanering med andra moduler<ept id="p1">](budget-planning-integration-other-modules.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>User interface and reporting capabilities</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Användargränssnitt och rapporteringsfunktioner</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>In Finance and Operations, users can create budget plans either directly in the Finance and Operations client (by using a configurable budget plan document page) or through Excel.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I Finance and Operations kan användarna skapa budgetplaner antingen direkt i Finance and Operations-klienten (genom att använda en konfigurerbar sida i budgetplansdokumentet) eller i Excel.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Excel provides several additional capabilities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Excel innehåller flera ytterligare funktioner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>For example, you can use external data as a source for a budget plan, do custom calculations, and use Microsoft PivotTable and charts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det går till exempel att använda externa uppgifter som källa till en budgetplan, göra egna beräkningar och använda Microsoft pivottabeller och diagram.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Most of the variables in the budget planning process can be configured.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De flesta variablerna i budgetplaneringsprocessen går att konfigurera.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>For example, you can define who does budgeting, what is budgeted, and what the process looks like.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det går till exempel att definiera vem som gör budgeten, vad som budgeteras och hur processen går till.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Although you can use Excel for budget planning, Finance and Operations is kept as a single source of truth and helps prevent budget control issues.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Även om du använder Excel till budgetplanering, behålls Finance and Operations som en enda sanningskälla som förhindrar budgetkontrollproblem.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Periodic processes can be used to bring initial data for budgeting into the budget plan.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Periodiska processer kan användas för att införa startuppgifter för budgeteringen i budgetplanen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>For reporting, Finance and Operations offers a set of standard inquiry pages that let you view and analyze budgeting data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till rapporteringen erbjuder Finance and Operations en uppsättning standardförfrågningssidor som gör det möjligt att visa och analysera budgeteringsdata.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Budget plan data can be accessed through Management Reporter, and separate budget plan scenarios can be displayed as columns on the Management Reporter report.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Budgetplandata går att öppna i Management Reporter och enskilda budgetplansscenarier går att visa som kolumner i Management Reporter-rapporten.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
