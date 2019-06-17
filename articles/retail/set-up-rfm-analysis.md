@@ -1,99 +1,216 @@
----
-title: Ställ in aktualitets-, frekvens- och monetär (RFM) analys
-description: Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.
-author: josaw1
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-365-retail
-ms.technology: ''
-ms.search.form: MCRRFMDefinition
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 78943
-ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: josaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553055"
----
-# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Ställ in aktualitets-, frekvens- och monetär (RFM) analys
-
-[!include [banner](includes/banner.md)]
-
-Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.
-
-Aktualitet, frekvens och monetär (RFM) analys är ett marknadsföringsverktyg som din organisation kan använda för att utvärdera de data som skapas av kundens inköp. När du har ställt in RFM-analys tilldelas kunderna en beräknad RFM-poäng när de gör inköp. RFM-poängen kan vara en tresiffrig klassificering eller ett aggregerat tal, beroende på hur din organisation har konfigurerat RFM-analysen. Så här fungerar värderingen om organisationen använder en tresiffrig klassificering för poängresultat:
-
-- Den första siffran är kundens aktualitetsklassificering, d.v.s. hur nyligen kunden gjorde ett inköp från din organisation.
-- Den andra siffran är kundens frekvensbedömning, d.v.s. hur ofta kunden gör inköp från din organisation.
-- Den tredje siffran är kundens monetära värdering, d.v.s. hur mycket kunden spenderar när den gör inköp från din organisation.
-
-Till exempel, din organisation har satt betyg på en skala från 1 till 5, där 5 är högsta betyg. I detta fall en kund värdering av 535 berättar dig följande information om kunden:
-
-- **Aktualitet värdering av 5** – kunden har nyligen gjort ett köp.
-- **Bedömning av frekvens av 3** – Kunden köper produkter från din organisation måttligt ofta.
-- **Monetär värdering 5** – När kunden gör ett köp spenderar den en avsevärd summa pengar.
-
-Om din organisation använder en sammanlagd siffra för tjoget, den individuella betyg läggs ihop. För samma exempel, kunden har en värdering av 13 (5 + 3 + 5).
-
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Ställ in RFM-analys för kunderna i din organisation.
-
-1. Gå till **Kundtjänst** \> **Periodisk** \> **RFM-analys**.
-2. Välj **Ny** på sidan **RFM-analys**. Ange ett beskrivande namn på RFM-definitionen i fältet **RFM-definition**. Du kan till exempel kalla definitionen RFM-A.
-3. Ange start- och slutdatum för den här RFM-definitionen.
-4. Gör följande på snabbfliken **Allmänt**:
-
-    - Om varje del av RFM-poängen måste innehålla ett likvärdigt antal kunder markerar du kryssrutan **Jämn distribution**.
-    - Markera kryssrutan **Lägg till poäng** om du vill lägga samman de tre poängen. Detta ger till exempel en kund en RFM-poäng på 13 istället för 535.
-    - Markera kryssrutan **Spara historik** om du vill att systemet ska spara statistiska uppgifter för kunder, så att dessa kan användas för att beräkna RFM-poäng.
-
-5. Gör följande på snabbfliken **Aktualitet**:
-
-    - Ange antalet avdelningar, eller grupper, som ska användas för att beräkna poängen recency för kunder i fältet **Indelningar**. Om du till exempel har 100 kunder innebär en indelning i 5 att det finns 20 kunder för varje poäng. 20 kunder som har gjort inköp helt nyligen har aktualitetspoäng 5. Nästa 20 kunder har en aktualitetspoäng på 4 osv. Om du har 50 kunder, har 10 kunder en recencyställning på 5, 10 har en recencyställning på 4, och så vidare.
-    - I fältet **Prioritet** väljer du hur stor viktning parametern recency ska ha i förhållande till de andra parametrarna när RFM-poängen beräknas för en kund. Du kan till exempel lägga mer värde på recencypoängen än på den monetära poängen.
-    - I fältet **Multiplikator** anger du det värde som aktualitetspoängen ska multipliceras med. Om du inte anger något värde kommer poängen inte att multipliceras.
-    - Välj den tidsperiod för vilken aktualitetspoängen beräknas i fältet **Period**. Till exempel per vecka eller per månad.
-
-6. Gör följande på snabbfliken **Frekvens**:
-
-    - Ange antalet avdelningar, eller grupper, som ska användas för att beräkna frekvenspoängen för kunder i fältet **Indelningar**.
-    - I fältet **Prioritet** väljer du hur stor viktning frekvensparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund.
-    - I fältet **Multiplikator** anger du det värde som frekvenspoängen ska multipliceras med. Om du inte anger något värde kommer poängen inte att multipliceras.
-
-7. Gör följande på snabbfliken **Monetär**:
-
-    - Ange antalet avdelningar, eller grupper, som ska användas för att beräkna monetär poäng för kunder i fältet **Indelningar**.
-    - I fältet **Prioritet** väljer du hur stor viktning monetärparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund.
-    - I fältet **Multiplikator** anger du det värde som monetära poäng ska multipliceras med. Om du inte anger något värde kommer poängen inte att multipliceras.
-    - I fältet **Brutto/netto** anger du om kundens monetära poäng ska beräknas genom att använda brutto- eller nettofakturabeloppet.
-    - Om en kunds returbelopp ska dras från kundens totala fakturaberäkning markerar du kryssrutan **Subtrahera returer**.
-
-## <a name="view-a-customers-rfm-score"></a>Visa en kunds RFM-poäng
-
-Använd den här proceduren när du vill visa en kunds RFM-poäng.
-
-1. Gå till **Kundtjänst** \> **Journaler** \> **Kundtjänst**.
-2. På sidan **Kundtjänst** i fönstret **Kundtjänst** väljer du nyckelordtypen du vill söka på och anger sedan söktexten i sökfälten.
-3. Välj **Sök**.
-4. På sidan **Kundtjänst** markera kundposten som du vill använda och klicka sedan på **Välj kund**.
-
-RFM-poängen visas i gruppen **Orderhistorik** till höger på sidan **Kundtjänst**.
-
-## <a name="view-or-clear-the-history-of-an-rfm-analysis-record"></a>Visa eller ta bort historik för en RFM-analyspost
-
-Använd den här proceduren när du vill visa eller ta bort historik för en RFM-post.
-
-1. Gå till **Kundtjänst** \> **Periodisk** \> **RFM-analys**.
-2. På sidan **RFM-analys**, välj den post som du vill visa.
-3. Klicka på snabbfliken **Historik** om du vill visa posthistoriken.
-4. Klicka på snabbfliken **Rensa historik** om du vill rensa posthistoriken.
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="set-up-rfm-analysis.md" target-language="sv-SE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>set-up-rfm-analysis.69f5cb.c7cb79fa82b579bee01e51cb635597cc5f711a98.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>c7cb79fa82b579bee01e51cb635597cc5f711a98</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>e2fb0846fcc6298050a0ec82c302e5eb5254e0b5</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/27/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\retail\set-up-rfm-analysis.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ställ in aktualitets-, frekvens- och monetär (RFM) analys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Set up Recency, Frequency, and Monetary (RFM) analysis</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ställ in aktualitets-, frekvens- och monetär (RFM) analys</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Recency, frequency, and monetary (RFM) analysis is a marketing tool that your organization can use to evaluate the data that is generated by customer purchases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktualitet, frekvens och monetär (RFM) analys är ett marknadsföringsverktyg som din organisation kan använda för att utvärdera de data som skapas av kundens inköp.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>After you set up RFM analysis, customers are assigned a calculated RFM score as they make purchases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du har ställt in RFM-analys tilldelas kunderna en beräknad RFM-poäng när de gör inköp.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The RFM score can be a three-digit rating or an aggregate number, depending on how your organization has configured RFM analysis.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RFM-poängen kan vara en tresiffrig klassificering eller ett aggregerat tal, beroende på hur din organisation har konfigurerat RFM-analysen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Here's how the rating works if your organization uses a three-digit rating for the score:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Så här fungerar värderingen om organisationen använder en tresiffrig klassificering för poängresultat:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The first digit is the customer's recency rating, which is how recently the customer made a purchase from your organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den första siffran är kundens aktualitetsklassificering, d.v.s. hur nyligen kunden gjorde ett inköp från din organisation.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The second digit is the customer's frequency rating, which is how often the customer makes purchases from your organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den andra siffran är kundens frekvensbedömning, d.v.s. hur ofta kunden gör inköp från din organisation.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The third digit is the customer's monetary rating, which is how much the customer spends when he makes purchases from your organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den tredje siffran är kundens monetära värdering, d.v.s. hur mycket kunden spenderar när den gör inköp från din organisation.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>For example, your organization has set the ratings on a scale of 1 through 5, where 5 is the highest rating.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel, din organisation har satt betyg på en skala från 1 till 5, där 5 är högsta betyg.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>In this case, a customer rating of 535 tells you the following information about the customer:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I detta fall en kund värdering av 535 berättar dig följande information om kunden:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source><bpt id="p1">**</bpt>Recency rating of 5<ept id="p1">**</ept> – The customer recently made a purchase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Aktualitet värdering av 5<ept id="p1">**</ept> – kunden har nyligen gjort ett köp.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source><bpt id="p1">**</bpt>Frequency rating of 3<ept id="p1">**</ept> – The customer purchases products from your organization moderately often.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Bedömning av frekvens av 3<ept id="p1">**</ept> – Kunden köper produkter från din organisation måttligt ofta.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source><bpt id="p1">**</bpt>Monetary rating of 5<ept id="p1">**</ept> – When the customer makes a purchase, he spends a significant amount of money.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Monetär värdering 5<ept id="p1">**</ept> – När kunden gör ett köp spenderar den en avsevärd summa pengar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>If your organization uses an aggregate number for the score, the individual ratings are added together.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om din organisation använder en sammanlagd siffra för tjoget, den individuella betyg läggs ihop.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>For the same example, the customer has a rating of 13 (5 + 3 + 5).</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">För samma exempel, kunden har en värdering av 13 (5 + 3 + 5).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Set up RFM analysis for the customers in your organization</source><target logoport:matchpercent="94" state="translated" state-qualifier="x-fuzzy-match-unedited">Ställ in RFM-analys för kunderna i din organisation.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Go to <bpt id="p1">**</bpt>Call center<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>RFM analysis<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Gå till <bpt id="p1">**</bpt>Kundtjänst<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodisk<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>RFM-analys<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>On <bpt id="p1">**</bpt>RFM analysis<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>New<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj <bpt id="p2">**</bpt>Ny<ept id="p2">**</ept> på sidan <bpt id="p1">**</bpt>RFM-analys<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>In the <bpt id="p1">**</bpt>RFM definition<ept id="p1">**</ept> field, enter a name for the RFM definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange ett beskrivande namn på RFM-definitionen i fältet <bpt id="p1">**</bpt>RFM-definition<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>For example, you could call the definition RFM-A.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan till exempel kalla definitionen RFM-A.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Enter a start date and end date for this RFM definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange start- och slutdatum för den här RFM-definitionen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gör följande på snabbfliken <bpt id="p1">**</bpt>Allmänt<ept id="p1">**</ept>:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>If each section of the RFM score must contain an equal count of customers, select the <bpt id="p1">**</bpt>Even distribution<ept id="p1">**</ept> check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om varje del av RFM-poängen måste innehålla ett likvärdigt antal kunder markerar du kryssrutan <bpt id="p1">**</bpt>Jämn distribution<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Select the <bpt id="p1">**</bpt>Add scores<ept id="p1">**</ept> check box to aggregate the three scores.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markera kryssrutan <bpt id="p1">**</bpt>Lägg till poäng<ept id="p1">**</ept> om du vill lägga samman de tre poängen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>For example, this would give a customer an RFM score of 13 instead of 535.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detta ger till exempel en kund en RFM-poäng på 13 istället för 535.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Select the <bpt id="p1">**</bpt>Save history<ept id="p1">**</ept> check box to require the system to save the statistical data for customers so that the data can be used to calculate the RFM score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markera kryssrutan <bpt id="p1">**</bpt>Spara historik<ept id="p1">**</ept> om du vill att systemet ska spara statistiska uppgifter för kunder, så att dessa kan användas för att beräkna RFM-poäng.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>On the <bpt id="p1">**</bpt>Recency<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gör följande på snabbfliken <bpt id="p1">**</bpt>Aktualitet<ept id="p1">**</ept>:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the <bpt id="p1">**</bpt>Divisions<ept id="p1">**</ept> field, enter the number of divisions, or groups, which will be used to calculate the recency score for customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange antalet avdelningar, eller grupper, som ska användas för att beräkna poängen recency för kunder i fältet <bpt id="p1">**</bpt>Indelningar<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, if you have 100 customers, a division of 5 means that there are 20 customers for each score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du till exempel har 100 kunder innebär en indelning i 5 att det finns 20 kunder för varje poäng.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>The 20 customers who have made purchases most recently have a recency score of 5.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20 kunder som har gjort inköp helt nyligen har aktualitetspoäng 5.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The next 20 customers have a recency score of 4, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nästa 20 kunder har en aktualitetspoäng på 4 osv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>If you have 50 customers, 10 customers have a recency score of 5, 10 have a recency score of 4, and so on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du har 50 kunder, har 10 kunder en recencyställning på 5, 10 har en recencyställning på 4, och så vidare.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>In the <bpt id="p1">**</bpt>Priority<ept id="p1">**</ept> field, select how much weight to give the recency parameter in relation to the other parameters when the RFM score is calculated for a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I fältet <bpt id="p1">**</bpt>Prioritet<ept id="p1">**</ept> väljer du hur stor viktning parametern recency ska ha i förhållande till de andra parametrarna när RFM-poängen beräknas för en kund.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>For example, you might place more value on the recency score than the monetary score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan till exempel lägga mer värde på recencypoängen än på den monetära poängen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the <bpt id="p1">**</bpt>Multiplier<ept id="p1">**</ept> field, enter the value by which to multiply the recency score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I fältet <bpt id="p1">**</bpt>Multiplikator<ept id="p1">**</ept> anger du det värde som aktualitetspoängen ska multipliceras med.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>If you do not enter a value, the score will not be multiplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du inte anger något värde kommer poängen inte att multipliceras.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the <bpt id="p1">**</bpt>Period<ept id="p1">**</ept> field, select the time period by which the recency score is calculated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj den tidsperiod för vilken aktualitetspoängen beräknas i fältet <bpt id="p1">**</bpt>Period<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>For example, by week or by month.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel per vecka eller per månad.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>On the <bpt id="p1">**</bpt>Frequency<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gör följande på snabbfliken <bpt id="p1">**</bpt>Frekvens<ept id="p1">**</ept>:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In the <bpt id="p1">**</bpt>Divisions<ept id="p1">**</ept> field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange antalet avdelningar, eller grupper, som ska användas för att beräkna frekvenspoängen för kunder i fältet <bpt id="p1">**</bpt>Indelningar<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In the <bpt id="p1">**</bpt>Priority<ept id="p1">**</ept> field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I fältet <bpt id="p1">**</bpt>Prioritet<ept id="p1">**</ept> väljer du hur stor viktning frekvensparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>In the <bpt id="p1">**</bpt>Multiplier<ept id="p1">**</ept> field, enter the value by which to multiply the frequency score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I fältet <bpt id="p1">**</bpt>Multiplikator<ept id="p1">**</ept> anger du det värde som frekvenspoängen ska multipliceras med.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>If you do not enter a value, the score will not be multiplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du inte anger något värde kommer poängen inte att multipliceras.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>On the <bpt id="p1">**</bpt>Monetary<ept id="p1">**</ept> FastTab, do the following:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gör följande på snabbfliken <bpt id="p1">**</bpt>Monetär<ept id="p1">**</ept>:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>In the <bpt id="p1">**</bpt>Divisions<ept id="p1">**</ept> field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange antalet avdelningar, eller grupper, som ska användas för att beräkna monetär poäng för kunder i fältet <bpt id="p1">**</bpt>Indelningar<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>In the <bpt id="p1">**</bpt>Priority<ept id="p1">**</ept> field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I fältet <bpt id="p1">**</bpt>Prioritet<ept id="p1">**</ept> väljer du hur stor viktning monetärparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>In the <bpt id="p1">**</bpt>Multiplier<ept id="p1">**</ept> field, enter the value by which to multiply the monetary score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I fältet <bpt id="p1">**</bpt>Multiplikator<ept id="p1">**</ept> anger du det värde som monetära poäng ska multipliceras med.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>If you do not enter a value, the score will not be multiplied.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du inte anger något värde kommer poängen inte att multipliceras.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>In the <bpt id="p1">**</bpt>Gross/net<ept id="p1">**</ept> field, select whether the customer's monetary score should be calculated by using the gross or net invoice amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I fältet <bpt id="p1">**</bpt>Brutto/netto<ept id="p1">**</ept> anger du om kundens monetära poäng ska beräknas genom att använda brutto- eller nettofakturabeloppet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>If a customer's return amounts should be subtracted from the customer's total invoice calculation, select the <bpt id="p1">**</bpt>Subtract returns<ept id="p1">**</ept> check box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om en kunds returbelopp ska dras från kundens totala fakturaberäkning markerar du kryssrutan <bpt id="p1">**</bpt>Subtrahera returer<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>View a customer's RFM score</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visa en kunds RFM-poäng</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Use this procedure to view a customer's RFM score.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Använd den här proceduren när du vill visa en kunds RFM-poäng.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Go to <bpt id="p1">**</bpt>Call center<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Journals<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Customer service<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå till <bpt id="p1">**</bpt>Kundtjänst<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Journaler<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Kundtjänst<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>On the <bpt id="p1">**</bpt>Customer service<ept id="p1">**</ept> page, in the <bpt id="p2">**</bpt>Customer service<ept id="p2">**</ept> pane, in the search fields, select the keyword type to search on and enter the search text.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På sidan <bpt id="p1">**</bpt>Kundtjänst<ept id="p1">**</ept> i fönstret <bpt id="p2">**</bpt>Kundtjänst<ept id="p2">**</ept> väljer du nyckelordtypen du vill söka på och anger sedan söktexten i sökfälten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Select <bpt id="p1">**</bpt>Search<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj <bpt id="p1">**</bpt>Sök<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>On the <bpt id="p1">**</bpt>Customer search<ept id="p1">**</ept> page, select the customer record that you want, and then click <bpt id="p2">**</bpt>Select customer<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På sidan <bpt id="p1">**</bpt>Kundtjänst<ept id="p1">**</ept> markera kundposten som du vill använda och klicka sedan på <bpt id="p2">**</bpt>Välj kund<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>The RFM score is displayed in the <bpt id="p1">**</bpt>Order history<ept id="p1">**</ept> group on the right side of the <bpt id="p2">**</bpt>Customer service<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RFM-poängen visas i gruppen <bpt id="p1">**</bpt>Orderhistorik<ept id="p1">**</ept> till höger på sidan <bpt id="p2">**</bpt>Kundtjänst<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>View or clear the history of an RFM analysis record</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Visa eller ta bort historik för en RFM-analyspost</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Use this procedure to view or clear the history of an RFM analysis record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Använd den här proceduren när du vill visa eller ta bort historik för en RFM-post.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Go to <bpt id="p1">**</bpt>Call center<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodic<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>RFM analysis<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå till <bpt id="p1">**</bpt>Kundtjänst<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Periodisk<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>RFM-analys<ept id="p3">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>On the <bpt id="p1">**</bpt>RFM analysis<ept id="p1">**</ept> page, select the record that you want to view.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På sidan <bpt id="p1">**</bpt>RFM-analys<ept id="p1">**</ept>, välj den post som du vill visa.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>To view the record history, select the <bpt id="p1">**</bpt>History<ept id="p1">**</ept> FastTab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på snabbfliken <bpt id="p1">**</bpt>Historik<ept id="p1">**</ept> om du vill visa posthistoriken.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>To clear the history of the record, select <bpt id="p1">**</bpt>Clear history<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på snabbfliken <bpt id="p1">**</bpt>Rensa historik<ept id="p1">**</ept> om du vill rensa posthistoriken.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
