@@ -1,66 +1,150 @@
----
-title: EUR-00015 Registrering av moms-ID för leverantör
-description: I den här proceduren visas hur du lägger till momsregistrerings-ID och momsbefrielsenummer i ett leverantörskonto.
-author: v-oloski
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: v-oloski
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33e21137e604ead6cc3a7ad6f0b5bb6bfdc6992e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538379"
----
-# <a name="eur-00015-registration-of-vendor-vat-id"></a><span data-ttu-id="409d3-103">EUR-00015 Registrering av moms-ID för leverantör</span><span class="sxs-lookup"><span data-stu-id="409d3-103">EUR-00015 Registration of vendor VAT ID</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="409d3-104">I den här proceduren visas hur du lägger till momsregistrerings-ID och momsbefrielsenummer i ett leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="409d3-104">This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</span></span> <span data-ttu-id="409d3-105">Den här processen påminner om den för juridiska personer och kunder.</span><span class="sxs-lookup"><span data-stu-id="409d3-105">This process is similar for legal entities and customers.</span></span> 
-
-<span data-ttu-id="409d3-106">Innan du kan slutföra denna procedur måste du skapa moms-ID:n.</span><span class="sxs-lookup"><span data-stu-id="409d3-106">Before you can complete this procedure you must set up VAT IDs.</span></span> <span data-ttu-id="409d3-107">Den här proceduren gäller för alla europeiska länder/regioner.</span><span class="sxs-lookup"><span data-stu-id="409d3-107">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="409d3-108">Proceduren skapades med hjälp av demonstrationsdataföretaget DEMF, med primär adress i Tyskland.</span><span class="sxs-lookup"><span data-stu-id="409d3-108">The procedure was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="409d3-109">Denna procedur är avsedd för en datahanteringsadministratör, leverantörsreskontrachef eller en kundreskontrachef.</span><span class="sxs-lookup"><span data-stu-id="409d3-109">This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</span></span> <span data-ttu-id="409d3-110">Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="409d3-110">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
-
-1. <span data-ttu-id="409d3-111">Gå till leverantörsreskontra > Leverantörer > Alla leverantörer.</span><span class="sxs-lookup"><span data-stu-id="409d3-111">Go to Accounts payable > Vendors > All vendors.</span></span>
-2. <span data-ttu-id="409d3-112">Hitta och välj leverantören vendor DE-01001 i listan</span><span class="sxs-lookup"><span data-stu-id="409d3-112">In the list find and select vendor DE-01001</span></span>
-3. <span data-ttu-id="409d3-113">Klicka på Registration IDs.</span><span class="sxs-lookup"><span data-stu-id="409d3-113">Click Registration IDs.</span></span>
-4. <span data-ttu-id="409d3-114">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="409d3-114">Click Add.</span></span>
-5. <span data-ttu-id="409d3-115">Välj moms-ID.</span><span class="sxs-lookup"><span data-stu-id="409d3-115">Select VAT ID.</span></span>
-6. <span data-ttu-id="409d3-116">Ange ett värde i fältet Registration number.</span><span class="sxs-lookup"><span data-stu-id="409d3-116">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="409d3-117">Ange ett moms-ID i Tyskland för den valda leverantören.</span><span class="sxs-lookup"><span data-stu-id="409d3-117">Specify a VAT ID in Germany for the selected vendor.</span></span> <span data-ttu-id="409d3-118">ID måste matcha det angivna formatet för registreringstypen.</span><span class="sxs-lookup"><span data-stu-id="409d3-118">The ID must match the specified format of the registration type.</span></span>  
-7. <span data-ttu-id="409d3-119">Klicka på fliken Allmänt.</span><span class="sxs-lookup"><span data-stu-id="409d3-119">Click the General tab.</span></span>
-8. <span data-ttu-id="409d3-120">Ange ett datum i fältet Giltighet.</span><span class="sxs-lookup"><span data-stu-id="409d3-120">In the Effective field, enter a date.</span></span>
-9. <span data-ttu-id="409d3-121">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="409d3-121">Click Save.</span></span>
-10. <span data-ttu-id="409d3-122">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="409d3-122">Click New.</span></span>
-11. <span data-ttu-id="409d3-123">Skriv ett värde i fältet Namn eller beskrivning.</span><span class="sxs-lookup"><span data-stu-id="409d3-123">In the Name or description field, type a value.</span></span>
-    * <span data-ttu-id="409d3-124">Ange exempelvis ITA.</span><span class="sxs-lookup"><span data-stu-id="409d3-124">For example, enter ITA.</span></span>  
-12. <span data-ttu-id="409d3-125">Ange eller välj ett värde i fältet Land/region.</span><span class="sxs-lookup"><span data-stu-id="409d3-125">In the Country/region field, enter or select a value.</span></span>
-    * <span data-ttu-id="409d3-126">Välj till exempel ITA.</span><span class="sxs-lookup"><span data-stu-id="409d3-126">For example, select ITA.</span></span>  
-13. <span data-ttu-id="409d3-127">Välj Yes i fältet Primary for country.</span><span class="sxs-lookup"><span data-stu-id="409d3-127">Select Yes in the Primary for country field.</span></span>
-14. <span data-ttu-id="409d3-128">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="409d3-128">Click Save.</span></span>
-15. <span data-ttu-id="409d3-129">Klicka på fliken Översikt.</span><span class="sxs-lookup"><span data-stu-id="409d3-129">Click the Overview tab.</span></span>
-16. <span data-ttu-id="409d3-130">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="409d3-130">Click Add.</span></span>
-17. <span data-ttu-id="409d3-131">Ange eller välj ett värde i fältet Registration type.</span><span class="sxs-lookup"><span data-stu-id="409d3-131">In the Registration type field, enter or select a value.</span></span>
-    * <span data-ttu-id="409d3-132">Välj till exempel moms-ID (VAT ID).</span><span class="sxs-lookup"><span data-stu-id="409d3-132">For example, select VAT ID.</span></span>  
-18. <span data-ttu-id="409d3-133">Ange ett värde i fältet Registration number.</span><span class="sxs-lookup"><span data-stu-id="409d3-133">In the Registration number field, type a value.</span></span>
-    * <span data-ttu-id="409d3-134">Ange exempelvis ett moms-ID i Italien.</span><span class="sxs-lookup"><span data-stu-id="409d3-134">For example, specify a VAT ID in Italy.</span></span>  <span data-ttu-id="409d3-135">ID måste ha samma format som registreringstypen.</span><span class="sxs-lookup"><span data-stu-id="409d3-135">The ID must have the same format as the registration type.</span></span>  
-19. <span data-ttu-id="409d3-136">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="409d3-136">Click Save.</span></span>
-20. <span data-ttu-id="409d3-137">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="409d3-137">Close the page.</span></span>
-21. <span data-ttu-id="409d3-138">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="409d3-138">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="409d3-139">Välj till exempel DE-01001.</span><span class="sxs-lookup"><span data-stu-id="409d3-139">For example, select DE-01001.</span></span>  
-22. <span data-ttu-id="409d3-140">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="409d3-140">In the list, click the link in the selected row.</span></span>
-23. <span data-ttu-id="409d3-141">Expandera faktura- och leveransavsnittet.</span><span class="sxs-lookup"><span data-stu-id="409d3-141">Expand the Invoice and delivery section.</span></span>
-24. <span data-ttu-id="409d3-142">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="409d3-142">Click Edit.</span></span>
-25. <span data-ttu-id="409d3-143">Ange eller välj ett värde i fältet Momsregistreringsnummer.</span><span class="sxs-lookup"><span data-stu-id="409d3-143">In the Tax exempt number field, enter or select a value.</span></span>
-26. <span data-ttu-id="409d3-144">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="409d3-144">Click Save.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="eur-00015-registration-vendor-vat-id.md" target-language="sv-SE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>eur-00015-registration-vendor-vat-id.3218da.d9788a35e768a4a289742e9cd864b3ca185a0407.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>d9788a35e768a4a289742e9cd864b3ca185a0407</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00015-registration-vendor-vat-id.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>EUR-00015 Registration of vendor VAT ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00015 Registrering av moms-ID för leverantör</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den här proceduren visas hur du lägger till momsregistrerings-ID och momsbefrielsenummer i ett leverantörskonto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>EUR-00015 Registration of vendor VAT ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00015 Registrering av moms-ID för leverantör</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure shows how to add VAT registration IDs and a tax except number to a vendor account.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den här proceduren visas hur du lägger till momsregistrerings-ID och momsbefrielsenummer i ett leverantörskonto.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>This process is similar for legal entities and customers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här processen påminner om den för juridiska personer och kunder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Before you can complete this procedure you must set up VAT IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Innan du kan slutföra denna procedur måste du skapa moms-ID:n.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>This procedure applies to all European countries/regions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här proceduren gäller för alla europeiska länder/regioner.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The procedure was created using the demo data company DEMF with a primary address in Germany.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Proceduren skapades med hjälp av demonstrationsdataföretaget DEMF, med primär adress i Tyskland.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>This procedure is intended for a data management administrator, accounts payable manager, or accounts receivable manager.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denna procedur är avsedd för en datahanteringsadministratör, leverantörsreskontrachef eller en kundreskontrachef.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Go to Accounts payable &gt; Vendors &gt; All vendors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå till leverantörsreskontra &gt; Leverantörer &gt; Alla leverantörer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>In the list find and select vendor DE-01001</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hitta och välj leverantören vendor DE-01001 i listan</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Click Registration IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Registration IDs.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Lägg till.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Select VAT ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj moms-ID.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>In the Registration number field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange ett värde i fältet Registration number.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Specify a VAT ID in Germany for the selected vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange ett moms-ID i Tyskland för den valda leverantören.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>The ID must match the specified format of the registration type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ID måste matcha det angivna formatet för registreringstypen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click the General tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på fliken Allmänt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>In the Effective field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange ett datum i fältet Giltighet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Spara.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Ny.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>In the Name or description field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skriv ett värde i fältet Namn eller beskrivning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>For example, enter ITA.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange exempelvis ITA.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>In the Country/region field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange eller välj ett värde i fältet Land/region.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>For example, select ITA.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj till exempel ITA.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Select Yes in the Primary for country field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj Yes i fältet Primary for country.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Spara.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Click the Overview tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på fliken Översikt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Click Add.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Lägg till.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the Registration type field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange eller välj ett värde i fältet Registration type.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>For example, select VAT ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj till exempel moms-ID (VAT ID).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>In the Registration number field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange ett värde i fältet Registration number.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>For example, specify a VAT ID in Italy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange exempelvis ett moms-ID i Italien.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>The ID must have the same format as the registration type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ID måste ha samma format som registreringstypen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Spara.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stäng sidan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>In the list, find and select the desired record.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hitta och markera önskad post i listan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>For example, select DE-01001.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj till exempel DE-01001.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>In the list, click the link in the selected row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på länken på den valda raden i listan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Expand the Invoice and delivery section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Expandera faktura- och leveransavsnittet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Click Edit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Redigera.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>In the Tax exempt number field, enter or select a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange eller välj ett värde i fältet Momsregistreringsnummer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på Spara.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,109 +1,369 @@
----
-title: Ställ in en extern katalog för PunchOut eProcurement
-description: Det här avsnittet beskriver hur en extern katalog eller PunchOut-katalog används för att samla in offertinformation från en leverantör och lägga till den i en rekvisition.
-author: mkirknel
-manager: AnnBe
-ms.date: 11/02/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: PurchTable, PurchVendorPortalRequests
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
-ms.custom: 30211
-ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
-ms.search.region: Global
-ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571655"
----
-# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a><span data-ttu-id="e7ecc-103">Ställ in en extern katalog för PunchOut eProcurement</span><span class="sxs-lookup"><span data-stu-id="e7ecc-103">Set up an external catalog for PunchOut eProcurement</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="e7ecc-104">Genom att använda den externa katalogen kan du säkerställa att produkt- och prisinformationen som du därefter bearbetar i Dynamics 365 for Finance and Operations, juli 2017 är korrekt och aktuell.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-104">By using the external catalog, you can ensure that the product and price information that you subsequently process in Dynamics 365 for Finance and Operations July 2017 is accurate and up to date.</span></span> <span data-ttu-id="e7ecc-105">Rekvisitionen kan sedan godkännas och konverteras till en inköpsorder och en order kan läggas hos leverantören.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-105">The requisition can then be approved and converted to a purchase order and an order can be placed at the vendor.</span></span>
-
-<span data-ttu-id="e7ecc-106">När den externa katalogen har ställts in och anställd förbereder en rekvisition finns det ett alternativ för att omdirigera till en extern plats, den externa katalogen, och återgå till varukorgen som skapades på den externa platsen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-106">When the external catalog is set up and an employee is preparing a requisition, there will be an option to redirect to an external site, the external catalog, and return the shopping basket that was created at the external site.</span></span> <span data-ttu-id="e7ecc-107">Detta meddelande är baserat på cXML-protokollet och måste ställas in mellan systemen för den köpande och den säljande organisationen</span><span class="sxs-lookup"><span data-stu-id="e7ecc-107">This communication is based on the cXML protocol and it has to be set up between the systems of the buying and the selling organization.</span></span>
-
-<span data-ttu-id="e7ecc-108">Om du vill ställa in kommunikationen måste din leverantör tillhandahålla uppgifter som du kan använda i konfiguration av den externa katalogen såsom identiteten för köparens företaget, till exempel ”DUNS” och ”DUNS-nummer”, autentiseringsuppgifter och webbadressen för åtkomst till leverantörens katalog.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-108">To set up the communication, your vendor has to provide pieces of information for you to use in the configuraiton of the external catalog such as Identity, domain of the buyers company, for example, "DUNS" and "DUNS number", credentials, and the URL to reach the vendors catalog.</span></span>
-
-## <a name="setting-up-an-external-catalog"></a><span data-ttu-id="e7ecc-109">Ställa in en extern katalog</span><span class="sxs-lookup"><span data-stu-id="e7ecc-109">Setting up an external catalog</span></span>
-
-<span data-ttu-id="e7ecc-110">Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrekvisition som ska omdirigeras till en extern webbplats för val av produkter.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-110">The external catalog should enable an employee who enters a purchase requisition to be redirected to an external site to select products.</span></span> <span data-ttu-id="e7ecc-111">Produkter som medarbetaren väljer från den externa katalogen returneras till Dynamics 365 for Finance and Operations med aktuell prisinformation och härifrån kan de läggas till på inköpsrekvisitionen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-111">The products that the employee selects from the external catalog are returned to Dynamics 365 for Finance and Operations with up-to-date price information and from here, they can be added to the purchase requisition.</span></span> <span data-ttu-id="e7ecc-112">Syftet är inte att göra det möjligt för medarbetare att göra en beställning på den externa webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-112">The intention is not to enable employees to place an order on the external site.</span></span> <span data-ttu-id="e7ecc-113">När du ställer in den externa katalogen måste du kontrollera att syftet med den site det går att komma åt via den externa katalogen är att samla in offertinformation, inte att lägga riktiga order.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-113">When setting up the external catalog, you need to make sure that the purpose of the site that can be accessed by the external catalog is to collect quote information and not to place a real order.</span></span>
-
-### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a><span data-ttu-id="e7ecc-114">Om du vill ställa in en extern leverantörskatalog måste du göra följande:</span><span class="sxs-lookup"><span data-stu-id="e7ecc-114">To set up an external vendor catalog, complete the following tasks:</span></span>
-
-1. <span data-ttu-id="e7ecc-115">Ställa in en kategorihierarki för anskaffning.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-115">Set up a procurement category hierarchy.</span></span> <span data-ttu-id="e7ecc-116">För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).</span><span class="sxs-lookup"><span data-stu-id="e7ecc-116">For more information, see [Set up policies for procurement category hierarchies](tasks/set-up-policies-procurement-category-hierarchies.md).</span></span>
-2. <span data-ttu-id="e7ecc-117">Registrera leverantören i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-117">Register the vendor in Finance and Operations.</span></span> <span data-ttu-id="e7ecc-118">Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-118">Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365.</span></span> <span data-ttu-id="e7ecc-119">Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-119">The external catalog’s vendor must also be added to the selected procurement category.</span></span> <span data-ttu-id="e7ecc-120">Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i [Hantera leverantörssamarbetesanvändare.](manage-vendor-collaboration-users.md)</span><span class="sxs-lookup"><span data-stu-id="e7ecc-120">For more information about registering vendors in Microsoft Dynamics 365, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).</span></span> <span data-ttu-id="e7ecc-121">Information om hur du tilldelar leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).</span><span class="sxs-lookup"><span data-stu-id="e7ecc-121">For information about how to assign vendors to a procurement category, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).</span></span>
-3. <span data-ttu-id="e7ecc-122">Kontrollera att måttenheterna och valutan som leverantören använder har ställts in.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-122">Make sure that the units of measure and the currency that the vendor uses are set up.</span></span> <span data-ttu-id="e7ecc-123">Information om hur du skapar en måttenhet finns i [Hantera måttenheter](../pim/tasks/manage-unit-measure.md).</span><span class="sxs-lookup"><span data-stu-id="e7ecc-123">For information about how to create a unit of measure, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).</span></span>
-4. <span data-ttu-id="e7ecc-124">Konfigurera den externa leverantörskatalogen med hjälp av kraven för webbplatsen för din externa leverantörskatalog.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-124">Configure the external vendor catalog by using the requirements for your vendor’s external catalog site.</span></span> <span data-ttu-id="e7ecc-125">Mer information om den här uppgiften finns i [Konfigurera externa leverantörskatalogen](#configure-the-external-vendor-catalog).</span><span class="sxs-lookup"><span data-stu-id="e7ecc-125">For more details about this task, see [Configure the external vendor catalog](#configure-the-external-vendor-catalog).</span></span>
-5. <span data-ttu-id="e7ecc-126">Testa leverantörens externa katalogkonfigurationer för att bekräfta att inställningarna är korrekta och att du kan komma åt leverantörens externa katalog.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-126">Test the vendor’s external catalog configurations to verify that the settings are valid and that you can access the vendor’s external catalog.</span></span> <span data-ttu-id="e7ecc-127">Använd åtgärden **Validera inställningar** för att validera meddelandet om begäran om inställning som du har definierat.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-127">Use the **Validate settings** action to validate the request setup message that you’ve defined.</span></span> <span data-ttu-id="e7ecc-128">Det här meddelandet ska åstadkomma att leverantörens externa katalogwebbplats öppnas i ett webbläsarfönster.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-128">This message should cause the vendors external catalog site to be opened in a browser window.</span></span> <span data-ttu-id="e7ecc-129">Vid validering kan du inte beställa artiklar och tjänster från leverantören.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-129">During validation, you can’t order items and services from the vendor.</span></span> <span data-ttu-id="e7ecc-130">Om du vill beställa artiklar och tjänster måste du använda leverantörens katalog från en inköpsrekvisition.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-130">To order items and services, you must access the vendor’s catalog from a purchase requisition.</span></span>
-6. <span data-ttu-id="e7ecc-131">Aktivera den externa katalogen med hjälp av knappen **Aktivera katalog** på sidan **Externa kataloger**.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-131">Activate the external catalog by using the **Activate catalog** button on the **External catalogs** page.</span></span> <span data-ttu-id="e7ecc-132">Den externa katalogen måste aktiveras innan anställda kan använda den.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-132">The external catalog must be activated before employees can use it.</span></span> <span data-ttu-id="e7ecc-133">Du kan när som helst inaktivera den externa katalogen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-133">You can inactivate the external catalog at any time.</span></span>
-
-
-## <a name="configure-the-external-vendor-catalog"></a><span data-ttu-id="e7ecc-134">Konfigurera den externa leverantörskatalogen</span><span class="sxs-lookup"><span data-stu-id="e7ecc-134">Configure the external vendor catalog</span></span>
-
-<span data-ttu-id="e7ecc-135">Det här avsnittet innehåller mer information om uppgift 4 i föregående avsnitt.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-135">This section gives more details about task 4 in the preceding section.</span></span>
-
-1. <span data-ttu-id="e7ecc-136">Ange ett namn och en beskrivning för leverantörens externa katalog.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-136">Enter a name and description for the vendor’s external catalog.</span></span> <span data-ttu-id="e7ecc-137">Det namn du anger visas på vagnen som representerar den externa katalogen som visas för medarbetare som skapar en inköpsrekvisition.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-137">The name that you enter will appear on the cart that represents the external catalog that is shown to employees who creates a requisition.</span></span> <span data-ttu-id="e7ecc-138">Medarbetare kan klicka på vagnen för att öppna katalogen på webbplatsen för leverantörens externa katalog.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-138">Employees can click on the cart to open the catalog on the vendor’s external catalog site.</span></span>
-2. <span data-ttu-id="e7ecc-139">Lägga till en bild med hjälp av åtgärden  **Extern katalogbild**.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-139">Add an image by using the **External catalog image** action.</span></span> <span data-ttu-id="e7ecc-140">Bilden visas på vagnen som representerar den externa katalogen som visas för medarbetarna som skapar en inköpsrekvisition.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-140">The image will appear on the cart that represents the external catalog that is shown to employees who create a requisition.</span></span> <span data-ttu-id="e7ecc-141">Observera att bildens bredd och höjd måste vara lika.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-141">Note that the image’s width and height must be equal.</span></span> <span data-ttu-id="e7ecc-142">Annars visas bilden inte korrekt.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-142">Otherwise the image won’t be displayed correctly.</span></span>
-3. <span data-ttu-id="e7ecc-143">Välj om webbplatsen för leverantörens externa katalog ska visas i samma webbläsarfönster som det där medarbetaren skapade rekvisitionen eller om den ska öppnas i ett nytt fönster.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-143">Select whether the vendor’s external catalog website should appear in the same browser window as the one where the employee has created the requisition, or if it should open in a new window.</span></span>
-4. <span data-ttu-id="e7ecc-144">Markera leverantören för katalogen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-144">Select the vendor for the catalog.</span></span> <span data-ttu-id="e7ecc-145">I listan **Juridiska personer** finns det en rad för varje juridisk person där leverantören är inställd.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-145">In the **Legal entities** list, there is a row for each legal entity where the vendor is set up.</span></span> <span data-ttu-id="e7ecc-146">Om du vill tillåta användare att begära produkter direkt från leverantörskatalog i vissa juridiska personer men inte i andra kan du använda knappen **Neka åtkomst** eller **Tillåt åtkomst** för varje juridisk person som du vill att katalogen ska vara eller inte vara tillgänglig för.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-146">To allow users to request products directly from the vendor’s catalog in some legal entities but not others, you can use the **Prevent access** or **Allow access** button for each legal entity where you want the catalog to be or not to be available.</span></span>
-5. <span data-ttu-id="e7ecc-147">Ange antalet dagar som en offert mottagen från en extern katalog är giltig och kan användas för inköpet från den externa leverantören i fältet **Standardutgångsdatum (dagar)**.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-147">In the **Default expiration (Days)** field, enter the number of days that a quotation received from the external catalog is valid and can be used to purchase from the external vendor.</span></span> <span data-ttu-id="e7ecc-148">När en offert skapas och hämtas från webbplatsen för leverantörens externa katalog är offerten giltig det aktuella systemdatumet och fortsätter vara giltig i det antal dagar du anger i det här fältet.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-148">When a quotation is created and retrieved from the vendor’s external catalog site, the quotation is valid as of the current system date and remains valid for the number of days that you enter in this field.</span></span>
-6. <span data-ttu-id="e7ecc-149">Klicka på knappen **Lägg till** för att starta mappningen av anskaffningskategorierna till den externa katalogen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-149">Click the **Add** button to start mapping the procurement categories to the external catalog.</span></span><span data-ttu-id="e7ecc-150"> Välj sedan en kategori i listan Kategorinamn.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-150"> Then, in the Category name list, select a category.</span></span> <span data-ttu-id="e7ecc-151">Listan över kategorier är en överordnad uppsättning kategorier som leverantören har kopplats till för alla juridiska personer som har ställts in för leverantören.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-151">The list of categories is a superset of procurement categories that the vendor has been mapped to in all the legal entities that are set up for the vendor.</span></span>
-[!NOTE]
-<span data-ttu-id="e7ecc-152">Anskaffningspolicyer används för att tillåta eller begränsa åtkomst till kategorier för juridisk person för inköp och mottagande driftenhet.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-152">Procurement policies are used to allow or restrict access to categories for the buying legal entity or receiving operating unit.</span></span><span data-ttu-id="e7ecc-153"> Punchout till en extern katalog kräver åtkomst tillåts för minst de anskaffningskategorier som är mappade till katalogen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-153"> Punchout to an external catalog requires that access be allowed to at least one of the procurement categories that is mapped to the catalog.</span></span>
-7. <span data-ttu-id="e7ecc-154">Ställ in cXML för begärandemeddelandet som ska skickas till leverantören.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-154">Set up the cXML setup request message that will be sent to the vendor.</span></span> <span data-ttu-id="e7ecc-155">Automatiskt genererade meddelandeformat är den minsta mallen som krävs för att starta en session.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-155">The automatically generated message format is the minimal template that is required in order to start a session.</span></span> <span data-ttu-id="e7ecc-156">Fyll i värden för taggarna.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-156">Fill in values for the tags.</span></span>
-
-<span data-ttu-id="e7ecc-157">När som helst kan du ladda om den systemgenererade meddelandemallen genom att klicka på **Återställ meddelandeformat**. </span><span class="sxs-lookup"><span data-stu-id="e7ecc-157">At any time, you can reload the system-generated message template by clicking **Restore message format**. </span></span>
-<span data-ttu-id="e7ecc-158">Observera att om du återställer meddelandeformatet kommer det aktuella meddelandet att ersätts med det automatiskt genererade meddelandeformatet som har tomma taggar.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-158">Note that if you restore the message format, the current message will be replaced by the automatically generated message format, which has empty tags.</span></span>
-
-### <a name="cxml-setup-message"></a><span data-ttu-id="e7ecc-159">Installationsmeddelande för cXML</span><span class="sxs-lookup"><span data-stu-id="e7ecc-159">cXML setup message</span></span>
-<span data-ttu-id="e7ecc-160">Nedan hittar du en beskrivning av de etiketter som ingår i mallen:</span><span class="sxs-lookup"><span data-stu-id="e7ecc-160">Below you can find a description of the tags that are included in the template:</span></span>
-
-| <span data-ttu-id="e7ecc-161">Fält</span><span class="sxs-lookup"><span data-stu-id="e7ecc-161">Field</span></span> | <span data-ttu-id="e7ecc-162">beskrivning</span><span class="sxs-lookup"><span data-stu-id="e7ecc-162">Description</span></span> | 
-|---------|---------|
-|<span data-ttu-id="e7ecc-163">< Header >< From >< Credential domain=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-163">< Header >< From >< Credential domain=”” ></span></span>|<span data-ttu-id="e7ecc-164">Domänen för köparens företag.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-164">The domain of the buyer’s company.</span></span>|
-|<span data-ttu-id="e7ecc-165">< Header >< From >< Credential>< Identity >< /Identity ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-165">< Header >< From >< Credential>< Identity >< /Identity ></span></span> | <span data-ttu-id="e7ecc-166">Identiteten för köparens företag.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-166">The identity of the buyer’s company.</span></span>|
-|<span data-ttu-id="e7ecc-167">< Header >< To >< Credential domain=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-167">< Header >< To >< Credential domain=”” ></span></span> | <span data-ttu-id="e7ecc-168">Domänen för leverantören företag.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-168">The domain of the vendor’s company.</span></span>|
-|<span data-ttu-id="e7ecc-169">< Header >< To >< Credential>< Identity >< /Identity></span><span class="sxs-lookup"><span data-stu-id="e7ecc-169">< Header >< To >< Credential>< Identity >< /Identity></span></span> | <span data-ttu-id="e7ecc-170">Identiteten för leverantörens företag.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-170">The identity of the vendor’s company.</span></span>|
-|<span data-ttu-id="e7ecc-171">< Header >< Sender >< Credential domain=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-171">< Header >< Sender >< Credential domain=”” ></span></span> | <span data-ttu-id="e7ecc-172">Domänen för köparens företag.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-172">The domain of the buyer’s company.</span></span>|
-|<span data-ttu-id="e7ecc-173">< Header >< Sender >< Credential >< Identity >< /Identity></span><span class="sxs-lookup"><span data-stu-id="e7ecc-173">< Header >< Sender >< Credential >< Identity >< /Identity></span></span> | <span data-ttu-id="e7ecc-174">Identiteten för köparens företag.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-174">The identity of the buyer’s company.</span></span>|
-|<span data-ttu-id="e7ecc-175">< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-175">< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret ></span></span>|<span data-ttu-id="e7ecc-176">Den delade hemligheten för köparens företag.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-176">The shared secret for the buyer’s company.</span></span>|
-|<span data-ttu-id="e7ecc-177">< Request deploymentMode=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-177">< Request deploymentMode=”” ></span></span>|<span data-ttu-id="e7ecc-178">Distributionstest eller -produktion.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-178">The test or production deployment.</span></span>|
-|<span data-ttu-id="e7ecc-179">< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL></span><span class="sxs-lookup"><span data-stu-id="e7ecc-179">< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL></span></span>|<span data-ttu-id="e7ecc-180">URL för leverantörens PunchOut-slutpunkt.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-180">The URL of the vendor’s punchout endpoint.</span></span>|
-
-### <a name="extrinsic-elements"></a><span data-ttu-id="e7ecc-181">Extrinsic-element</span><span class="sxs-lookup"><span data-stu-id="e7ecc-181">Extrinsic elements</span></span>
-
-<span data-ttu-id="e7ecc-182">Ett yttre element är ytterligare information, till exempel ett användarnamn som baseras på en användare som stämplar ut. Det yttre elementet anges när utstämplingen inträffar och kan skickas i meddelandet om begärandeinställningar.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-182">An extrinsic element is additional information, such as a user name that is based on a user that punches out. The extrinsic element is set when the punchout occurs and it can be sent in the request setup message.</span></span>
-<span data-ttu-id="e7ecc-183">Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-183">Your vendor could have a requirement for receiving an extrinsic element in the setup request.</span></span> <span data-ttu-id="e7ecc-184">I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet **Meddelandeformatet** på sidan **Extern katalog**.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-184">In that case, you should add the extrinsic element to the list of extrinsic elements in the **Message format** section of the **External catalog** page.</span></span> <span data-ttu-id="e7ecc-185">Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-185">Specify a name for the extrinsic element that the vendor can recognize and map it to a value.</span></span> <span data-ttu-id="e7ecc-186">Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-186">The options for values are: User name, User email, or Random value.</span></span>
-<span data-ttu-id="e7ecc-187">Mer information om cXML-protokoll hittar du i: http://cxml.org/</span><span class="sxs-lookup"><span data-stu-id="e7ecc-187">For more information about the cXML protocol, see: http://cxml.org/</span></span>
-
-## <a name="post-back-message"></a><span data-ttu-id="e7ecc-188">Retroaktivt meddelande</span><span class="sxs-lookup"><span data-stu-id="e7ecc-188">Post back message</span></span>
-<span data-ttu-id="e7ecc-189">Det retroaktiva meddelandet är det meddelande som tas emot från leverantören när användaren checkar ut från den externa webbplatsen och återgår till Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-189">The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Finance and Operations.</span></span> <span data-ttu-id="e7ecc-190">Retroaktiva meddelanden kan inte konfigureras.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-190">Post back messages can’t be configured.</span></span> <span data-ttu-id="e7ecc-191">Meddelandena är baserade på cXML-protokolldefinitionen.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-191">The messages are based on the cXML protocol definition.</span></span><span data-ttu-id="e7ecc-192"> Här finns all information som kan ingå i det retroaktiva meddelandet som tas emot på en rekvisitionsrad:</span><span class="sxs-lookup"><span data-stu-id="e7ecc-192"> Here is the information that can be part of the post back message that is received on a requisition line:</span></span>
-
-| <span data-ttu-id="e7ecc-193">Meddelande mottaget från leverantör</span><span class="sxs-lookup"><span data-stu-id="e7ecc-193">Message received from vendor</span></span> | <span data-ttu-id="e7ecc-194">Kopierad till rekvisitionsraden i Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="e7ecc-194">Copied to requisition line in Finance and Operations</span></span>|
-|------------------------------|----------------------------------------------------------|
-|<span data-ttu-id="e7ecc-195">< ItemIn quantity=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-195">< ItemIn quantity=”” ></span></span> |<span data-ttu-id="e7ecc-196">Kvantitet</span><span class="sxs-lookup"><span data-stu-id="e7ecc-196">Quantity</span></span>|
-|<span data-ttu-id="e7ecc-197">< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-197">< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID ></span></span>|<span data-ttu-id="e7ecc-198">Externt artikel-ID</span><span class="sxs-lookup"><span data-stu-id="e7ecc-198">External item ID</span></span>|
-|<span data-ttu-id="e7ecc-199">< ItemDetail>< UnitPrice >< Money currency=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-199">< ItemDetail>< UnitPrice >< Money currency=”” ></span></span>| <span data-ttu-id="e7ecc-200">Valuta</span><span class="sxs-lookup"><span data-stu-id="e7ecc-200">Currency</span></span>|
-|<span data-ttu-id="e7ecc-201">< ItemDetail >< UnitPrice >< Money >< /Money ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-201">< ItemDetail >< UnitPrice >< Money >< /Money ></span></span>| <span data-ttu-id="e7ecc-202">Pris per enhet</span><span class="sxs-lookup"><span data-stu-id="e7ecc-202">Unit price</span></span>|
-|<span data-ttu-id="e7ecc-203">< ItemDetail >< Description ShortName=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-203">< ItemDetail >< Description ShortName=”” ></span></span>|<span data-ttu-id="e7ecc-204">Produktnamn</span><span class="sxs-lookup"><span data-stu-id="e7ecc-204">Product name</span></span>|
-|<span data-ttu-id="e7ecc-205">< ItemDetail >< Description >< /Description ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-205">< ItemDetail >< Description >< /Description ></span></span>|<span data-ttu-id="e7ecc-206">Ingår i artikelbeskrivningen: Produktnamn om ShortName inte har angetts.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-206">Included in item description; Product name if ShortName is not specified.</span></span>|
-|<span data-ttu-id="e7ecc-207">< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-207">< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure ></span></span>|<span data-ttu-id="e7ecc-208">Enhet</span><span class="sxs-lookup"><span data-stu-id="e7ecc-208">Unit</span></span>|
-|<span data-ttu-id="e7ecc-209">< ItemDetail >< Classification >< /Classification ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-209">< ItemDetail >< Classification >< /Classification ></span></span>|<span data-ttu-id="e7ecc-210">Ingår i artikebeskrivningen</span><span class="sxs-lookup"><span data-stu-id="e7ecc-210">Included in item description</span></span>|
-|<span data-ttu-id="e7ecc-211">< ItemDetail >< Classification domain=”” ></span><span class="sxs-lookup"><span data-stu-id="e7ecc-211">< ItemDetail >< Classification domain=”” ></span></span>|<span data-ttu-id="e7ecc-212">Ingår i artikebeskrivningen</span><span class="sxs-lookup"><span data-stu-id="e7ecc-212">Included in item description</span></span>|
-
-## <a name="delete-an-external-catalog"></a><span data-ttu-id="e7ecc-213">Ta bort en extern katalog</span><span class="sxs-lookup"><span data-stu-id="e7ecc-213">Delete an external catalog</span></span>
-<span data-ttu-id="e7ecc-214">Ta bort en extern katalog med åtgärden Ta bort på sidan.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-214">Delete an external catalog with the Delete action on the page.</span></span>
-
-<span data-ttu-id="e7ecc-215">Om en produkt från den externa leverantörskatalogen har efterfrågats kan den externa leverantörskatalogen inte raderas.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-215">If a product from the external vendor catalog has been requested, the external vendor catalog cannot be deleted.</span></span> <span data-ttu-id="e7ecc-216">I stället är statusen för den externa leverantörskatalogen inaktiv.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-216">Instead, the status of the external vendor catalog is set to inactive.</span></span> <span data-ttu-id="e7ecc-217">Om du vill ta bort åtkomsten till webbplatsen för den externa leverantörens katalog, men inte ta bort, ändra den externa katalogen till inaktiv.</span><span class="sxs-lookup"><span data-stu-id="e7ecc-217">If you want to remove access to the external vendor’s catalog site, but not delete it, change the external catalog status to Inactive.</span></span>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="set-up-external-catalog-for-punchout.md" target-language="sv-SE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>set-up-external-catalog-for-punchout.474d96.39baa331120d765543c3cf662ce53d2bcfe404ab.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>39baa331120d765543c3cf662ce53d2bcfe404ab</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\supply-chain\procurement\set-up-external-catalog-for-punchout.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Set up an external catalog for PunchOut eProcurement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ställ in en extern katalog för PunchOut eProcurement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes the use of an  external catalog or punchout catalog to collect quote information from a vendor and add it to a requisition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet beskriver hur en extern katalog eller PunchOut-katalog används för att samla in offertinformation från en leverantör och lägga till den i en rekvisition.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Set up an external catalog for PunchOut eProcurement</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ställ in en extern katalog för PunchOut eProcurement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>By using the external catalog, you can ensure that the product and price information that you subsequently process in Dynamics 365 for Finance and Operations July 2017 is accurate and up to date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Genom att använda den externa katalogen kan du säkerställa att produkt- och prisinformationen som du därefter bearbetar i Dynamics 365 for Finance and Operations, juli 2017 är korrekt och aktuell.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>The requisition can then be approved and converted to a purchase order and an order can be placed at the vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rekvisitionen kan sedan godkännas och konverteras till en inköpsorder och en order kan läggas hos leverantören.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>When the external catalog is set up and an employee is preparing a requisition, there will be an option to redirect to an external site, the external catalog, and return the shopping basket that was created at the external site.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När den externa katalogen har ställts in och anställd förbereder en rekvisition finns det ett alternativ för att omdirigera till en extern plats, den externa katalogen, och återgå till varukorgen som skapades på den externa platsen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>This communication is based on the cXML protocol and it has to be set up between the systems of the buying and the selling organization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detta meddelande är baserat på cXML-protokollet och måste ställas in mellan systemen för den köpande och den säljande organisationen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>To set up the communication, your vendor has to provide pieces of information for you to use in the configuraiton of the external catalog such as Identity, domain of the buyers company, for example, "DUNS" and "DUNS number", credentials, and the URL to reach the vendors catalog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill ställa in kommunikationen måste din leverantör tillhandahålla uppgifter som du kan använda i konfiguration av den externa katalogen såsom identiteten för köparens företaget, till exempel ”DUNS” och ”DUNS-nummer”, autentiseringsuppgifter och webbadressen för åtkomst till leverantörens katalog.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Setting up an external catalog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ställa in en extern katalog</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The external catalog should enable an employee who enters a purchase requisition to be redirected to an external site to select products.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrekvisition som ska omdirigeras till en extern webbplats för val av produkter.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The products that the employee selects from the external catalog are returned to Dynamics 365 for Finance and Operations with up-to-date price information and from here, they can be added to the purchase requisition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Produkter som medarbetaren väljer från den externa katalogen returneras till Dynamics 365 for Finance and Operations med aktuell prisinformation och härifrån kan de läggas till på inköpsrekvisitionen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>The intention is not to enable employees to place an order on the external site.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syftet är inte att göra det möjligt för medarbetare att göra en beställning på den externa webbplatsen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>When setting up the external catalog, you need to make sure that the purpose of the site that can be accessed by the external catalog is to collect quote information and not to place a real order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du ställer in den externa katalogen måste du kontrollera att syftet med den site det går att komma åt via den externa katalogen är att samla in offertinformation, inte att lägga riktiga order.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>To set up an external vendor catalog, complete the following tasks:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill ställa in en extern leverantörskatalog måste du göra följande:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Set up a procurement category hierarchy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ställa in en kategorihierarki för anskaffning.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>For more information, see <bpt id="p1">[</bpt>Set up policies for procurement category hierarchies<ept id="p1">](tasks/set-up-policies-procurement-category-hierarchies.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För mer information, se <bpt id="p1">[</bpt>Ställ in policyer för anskaffningskategorihierarkier<ept id="p1">](tasks/set-up-policies-procurement-category-hierarchies.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Register the vendor in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registrera leverantören i Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>The external catalog’s vendor must also be added to the selected procurement category.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>For more information about registering vendors in Microsoft Dynamics 365, see <bpt id="p1">[</bpt>Manage vendor collaboration users<ept id="p1">](manage-vendor-collaboration-users.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i <bpt id="p1">[</bpt>Hantera leverantörssamarbetesanvändare.<ept id="p1">](manage-vendor-collaboration-users.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>For information about how to assign vendors to a procurement category, see <bpt id="p1">[</bpt>Approve vendors for specific procurement categories<ept id="p1">](tasks/approve-vendors-specific-procurement-categories.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Information om hur du tilldelar leverantörer till en anskaffningskategori finns i <bpt id="p1">[</bpt>Godkänna leverantörer för specifika anskaffningskategorier<ept id="p1">](tasks/approve-vendors-specific-procurement-categories.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Make sure that the units of measure and the currency that the vendor uses are set up.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrollera att måttenheterna och valutan som leverantören använder har ställts in.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>For information about how to create a unit of measure, see <bpt id="p1">[</bpt>Manage units of measure<ept id="p1">](../pim/tasks/manage-unit-measure.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Information om hur du skapar en måttenhet finns i <bpt id="p1">[</bpt>Hantera måttenheter<ept id="p1">](../pim/tasks/manage-unit-measure.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Configure the external vendor catalog by using the requirements for your vendor’s external catalog site.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurera den externa leverantörskatalogen med hjälp av kraven för webbplatsen för din externa leverantörskatalog.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>For more details about this task, see <bpt id="p1">[</bpt>Configure the external vendor catalog<ept id="p1">](#configure-the-external-vendor-catalog)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mer information om den här uppgiften finns i <bpt id="p1">[</bpt>Konfigurera externa leverantörskatalogen<ept id="p1">](#configure-the-external-vendor-catalog)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Test the vendor’s external catalog configurations to verify that the settings are valid and that you can access the vendor’s external catalog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Testa leverantörens externa katalogkonfigurationer för att bekräfta att inställningarna är korrekta och att du kan komma åt leverantörens externa katalog.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Use the <bpt id="p1">**</bpt>Validate settings<ept id="p1">**</ept> action to validate the request setup message that you’ve defined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Använd åtgärden <bpt id="p1">**</bpt>Validera inställningar<ept id="p1">**</ept> för att validera meddelandet om begäran om inställning som du har definierat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>This message should cause the vendors external catalog site to be opened in a browser window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här meddelandet ska åstadkomma att leverantörens externa katalogwebbplats öppnas i ett webbläsarfönster.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>During validation, you can’t order items and services from the vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vid validering kan du inte beställa artiklar och tjänster från leverantören.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>To order items and services, you must access the vendor’s catalog from a purchase requisition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill beställa artiklar och tjänster måste du använda leverantörens katalog från en inköpsrekvisition.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>Activate the external catalog by using the <bpt id="p1">**</bpt>Activate catalog<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>External catalogs<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivera den externa katalogen med hjälp av knappen <bpt id="p1">**</bpt>Aktivera katalog<ept id="p1">**</ept> på sidan <bpt id="p2">**</bpt>Externa kataloger<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>The external catalog must be activated before employees can use it.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den externa katalogen måste aktiveras innan anställda kan använda den.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>You can inactivate the external catalog at any time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan när som helst inaktivera den externa katalogen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Configure the external vendor catalog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurera den externa leverantörskatalogen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>This section gives more details about task 4 in the preceding section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller mer information om uppgift 4 i föregående avsnitt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Enter a name and description for the vendor’s external catalog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange ett namn och en beskrivning för leverantörens externa katalog.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>The name that you enter will appear on the cart that represents the external catalog that is shown to employees who creates a requisition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det namn du anger visas på vagnen som representerar den externa katalogen som visas för medarbetare som skapar en inköpsrekvisition.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Employees can click on the cart to open the catalog on the vendor’s external catalog site.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Medarbetare kan klicka på vagnen för att öppna katalogen på webbplatsen för leverantörens externa katalog.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Add an image by using the<bpt id="p1"> **</bpt>External catalog image<ept id="p1">**</ept> action.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lägga till en bild med hjälp av åtgärden <bpt id="p1"> **</bpt>Extern katalogbild<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>The image will appear on the cart that represents the external catalog that is shown to employees who create a requisition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden visas på vagnen som representerar den externa katalogen som visas för medarbetarna som skapar en inköpsrekvisition.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Note that the image’s width and height must be equal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Observera att bildens bredd och höjd måste vara lika.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Otherwise the image won’t be displayed correctly.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars visas bilden inte korrekt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Select whether the vendor’s external catalog website should appear in the same browser window as the one where the employee has created the requisition, or if it should open in a new window.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj om webbplatsen för leverantörens externa katalog ska visas i samma webbläsarfönster som det där medarbetaren skapade rekvisitionen eller om den ska öppnas i ett nytt fönster.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>Select the vendor for the catalog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markera leverantören för katalogen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>In the <bpt id="p1">**</bpt>Legal entities<ept id="p1">**</ept> list, there is a row for each legal entity where the vendor is set up.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I listan <bpt id="p1">**</bpt>Juridiska personer<ept id="p1">**</ept> finns det en rad för varje juridisk person där leverantören är inställd.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>To allow users to request products directly from the vendor’s catalog in some legal entities but not others, you can use the <bpt id="p1">**</bpt>Prevent access<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Allow access<ept id="p2">**</ept> button for each legal entity where you want the catalog to be or not to be available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill tillåta användare att begära produkter direkt från leverantörskatalog i vissa juridiska personer men inte i andra kan du använda knappen <bpt id="p1">**</bpt>Neka åtkomst<ept id="p1">**</ept> eller <bpt id="p2">**</bpt>Tillåt åtkomst<ept id="p2">**</ept> för varje juridisk person som du vill att katalogen ska vara eller inte vara tillgänglig för.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>In the <bpt id="p1">**</bpt>Default expiration (Days)<ept id="p1">**</ept> field, enter the number of days that a quotation received from the external catalog is valid and can be used to purchase from the external vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange antalet dagar som en offert mottagen från en extern katalog är giltig och kan användas för inköpet från den externa leverantören i fältet <bpt id="p1">**</bpt>Standardutgångsdatum (dagar)<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>When a quotation is created and retrieved from the vendor’s external catalog site, the quotation is valid as of the current system date and remains valid for the number of days that you enter in this field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När en offert skapas och hämtas från webbplatsen för leverantörens externa katalog är offerten giltig det aktuella systemdatumet och fortsätter vara giltig i det antal dagar du anger i det här fältet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Click the <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> button to start mapping the procurement categories to the external catalog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicka på knappen <bpt id="p1">**</bpt>Lägg till<ept id="p1">**</ept> för att starta mappningen av anskaffningskategorierna till den externa katalogen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source> Then, in the Category name list, select a category.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Välj sedan en kategori i listan Kategorinamn.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>The list of categories is a superset of procurement categories that the vendor has been mapped to in all the legal entities that are set up for the vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Listan över kategorier är en överordnad uppsättning kategorier som leverantören har kopplats till för alla juridiska personer som har ställts in för leverantören.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Procurement policies are used to allow or restrict access to categories for the buying legal entity or receiving operating unit.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anskaffningspolicyer används för att tillåta eller begränsa åtkomst till kategorier för juridisk person för inköp och mottagande driftenhet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source> Punchout to an external catalog requires that access be allowed to at least one of the procurement categories that is mapped to the catalog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Punchout till en extern katalog kräver åtkomst tillåts för minst de anskaffningskategorier som är mappade till katalogen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Set up the cXML setup request message that will be sent to the vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ställ in cXML för begärandemeddelandet som ska skickas till leverantören.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>The automatically generated message format is the minimal template that is required in order to start a session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Automatiskt genererade meddelandeformat är den minsta mallen som krävs för att starta en session.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Fill in values for the tags.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fyll i värden för taggarna.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>At any time, you can reload the system-generated message template by clicking <bpt id="p1">**</bpt>Restore message format<ept id="p1">**</ept>.<ph id="ph1"> </ph></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När som helst kan du ladda om den systemgenererade meddelandemallen genom att klicka på <bpt id="p1">**</bpt>Återställ meddelandeformat<ept id="p1">**</ept>.<ph id="ph1"> </ph></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Note that if you restore the message format, the current message will be replaced by the automatically generated message format, which has empty tags.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Observera att om du återställer meddelandeformatet kommer det aktuella meddelandet att ersätts med det automatiskt genererade meddelandeformatet som har tomma taggar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>cXML setup message</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Installationsmeddelande för cXML</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Below you can find a description of the tags that are included in the template:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nedan hittar du en beskrivning av de etiketter som ingår i mallen:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fält</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>&lt; Header &gt;&lt; From &gt;&lt; Credential domain=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Header &gt;&lt; From &gt;&lt; Credential domain=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>The domain of the buyer’s company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Domänen för köparens företag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>&lt; Header &gt;&lt; From &gt;&lt; Credential&gt;&lt; Identity &gt;&lt; /Identity &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Header &gt;&lt; From &gt;&lt; Credential&gt;&lt; Identity &gt;&lt; /Identity &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>The identity of the buyer’s company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Identiteten för köparens företag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>&lt; Header &gt;&lt; To &gt;&lt; Credential domain=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Header &gt;&lt; To &gt;&lt; Credential domain=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>The domain of the vendor’s company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Domänen för leverantören företag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>&lt; Header &gt;&lt; To &gt;&lt; Credential&gt;&lt; Identity &gt;&lt; /Identity&gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Header &gt;&lt; To &gt;&lt; Credential&gt;&lt; Identity &gt;&lt; /Identity&gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>The identity of the vendor’s company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Identiteten för leverantörens företag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>&lt; Header &gt;&lt; Sender &gt;&lt; Credential domain=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Header &gt;&lt; Sender &gt;&lt; Credential domain=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>The domain of the buyer’s company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Domänen för köparens företag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>&lt; Header &gt;&lt; Sender &gt;&lt; Credential &gt;&lt; Identity &gt;&lt; /Identity&gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Header &gt;&lt; Sender &gt;&lt; Credential &gt;&lt; Identity &gt;&lt; /Identity&gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>The identity of the buyer’s company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Identiteten för köparens företag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>&lt; Header &gt;&lt; Sender &gt;&lt; Credential &gt;&lt; SharedSecret &gt;&lt; /SharedSecret &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Header &gt;&lt; Sender &gt;&lt; Credential &gt;&lt; SharedSecret &gt;&lt; /SharedSecret &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>The shared secret for the buyer’s company.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den delade hemligheten för köparens företag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>&lt; Request deploymentMode=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Request deploymentMode=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>The test or production deployment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Distributionstest eller -produktion.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>&lt; Request &gt;&lt; PunchOutSetupRequest &gt;&lt; SupplierSetup &gt;&lt; URL &gt;&lt; /URL&gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; Request &gt;&lt; PunchOutSetupRequest &gt;&lt; SupplierSetup &gt;&lt; URL &gt;&lt; /URL&gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>The URL of the vendor’s punchout endpoint.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">URL för leverantörens PunchOut-slutpunkt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Extrinsic elements</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Extrinsic-element</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>An extrinsic element is additional information, such as a user name that is based on a user that punches out. The extrinsic element is set when the punchout occurs and it can be sent in the request setup message.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett yttre element är ytterligare information, till exempel ett användarnamn som baseras på en användare som stämplar ut. Det yttre elementet anges när utstämplingen inträffar och kan skickas i meddelandet om begärandeinställningar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Your vendor could have a requirement for receiving an extrinsic element in the setup request.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>In that case, you should add the extrinsic element to the list of extrinsic elements in the <bpt id="p1">**</bpt>Message format<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>External catalog<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet <bpt id="p1">**</bpt>Meddelandeformatet<ept id="p1">**</ept> på sidan <bpt id="p2">**</bpt>Extern katalog<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Specify a name for the extrinsic element that the vendor can recognize and map it to a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>The options for values are: User name, User email, or Random value.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>For more information about the cXML protocol, see the <bpt id="p1">[</bpt>cXML.org website<ept id="p1">](http://cxml.org/)</ept>.</source><target logoport:matchpercent="0" state="translated">Mer information om cXML-protokollet finns på: <bpt id="p1">[</bpt>cXML.org webbsida<ept id="p1">](http://cxml.org/)</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Post back message</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Retroaktivt meddelande</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Finance and Operations.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Det retroaktiva meddelandet är det meddelande som tas emot från leverantören när användaren checkar ut från den externa webbplatsen och återgår till Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Post back messages can’t be configured.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retroaktiva meddelanden kan inte konfigureras.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>The messages are based on the cXML protocol definition.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meddelandena är baserade på cXML-protokolldefinitionen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source> Here is the information that can be part of the post back message that is received on a requisition line:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"> Här finns all information som kan ingå i det retroaktiva meddelandet som tas emot på en rekvisitionsrad:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Message received from vendor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meddelande mottaget från leverantör</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Copied to requisition line in Finance and Operations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopierad till rekvisitionsraden i Finance and Operations</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>&lt; ItemIn quantity=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemIn quantity=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Quantity</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kvantitet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>&lt; ItemIn&gt;&lt; ItemID &gt;&lt; SupplierPartID &gt;&lt; /SupplierPartID &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemIn&gt;&lt; ItemID &gt;&lt; SupplierPartID &gt;&lt; /SupplierPartID &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>External item ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Externt artikel-ID</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>&lt; ItemDetail&gt;&lt; UnitPrice &gt;&lt; Money currency=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemDetail&gt;&lt; UnitPrice &gt;&lt; Money currency=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>Currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valuta</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>&lt; ItemDetail &gt;&lt; UnitPrice &gt;&lt; Money &gt;&lt; /Money &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemDetail &gt;&lt; UnitPrice &gt;&lt; Money &gt;&lt; /Money &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>Unit price</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Pris per enhet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>&lt; ItemDetail &gt;&lt; Description ShortName=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemDetail &gt;&lt; Description ShortName=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Product name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Produktnamn</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>&lt; ItemDetail &gt;&lt; Description &gt;&lt; /Description &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemDetail &gt;&lt; Description &gt;&lt; /Description &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Included in item description; Product name if ShortName is not specified.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingår i artikelbeskrivningen: Produktnamn om ShortName inte har angetts.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>&lt; ItemDetail &gt;&lt; UnitOfMeasure &gt;&lt; /UnitOfMeasure &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemDetail &gt;&lt; UnitOfMeasure &gt;&lt; /UnitOfMeasure &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Unit</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Enhet</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>&lt; ItemDetail &gt;&lt; Classification &gt;&lt; /Classification &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemDetail &gt;&lt; Classification &gt;&lt; /Classification &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Included in item description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingår i artikebeskrivningen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>&lt; ItemDetail &gt;&lt; Classification domain=”” &gt;</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">&lt; ItemDetail &gt;&lt; Classification domain=”” &gt;</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Included in item description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ingår i artikebeskrivningen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>Delete an external catalog</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta bort en extern katalog</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>Delete an external catalog with the Delete action on the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ta bort en extern katalog med åtgärden Ta bort på sidan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>If a product from the external vendor catalog has been requested, the external vendor catalog cannot be deleted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om en produkt från den externa leverantörskatalogen har efterfrågats kan den externa leverantörskatalogen inte raderas.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>Instead, the status of the external vendor catalog is set to inactive.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I stället är statusen för den externa leverantörskatalogen inaktiv.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>If you want to remove access to the external vendor’s catalog site, but not delete it, change the external catalog status to Inactive.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill ta bort åtkomsten till webbplatsen för den externa leverantörens katalog, men inte ta bort, ändra den externa katalogen till inaktiv.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,57 +1,96 @@
----
-title: Filformat för betalningsmetod
-description: Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: CustPaymMode, VendPaymMode
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.custom: 262514
-ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
-ms.author: v-lenest
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 21414624e1b0fe74a9a1c390f9c118892a480779
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1538390"
----
-# <a name="file-formats-for-methods-of-payment"></a><span data-ttu-id="3a993-103">Filformat för betalningsmetod</span><span class="sxs-lookup"><span data-stu-id="3a993-103">File formats for methods of payment</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="3a993-104">Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder.</span><span class="sxs-lookup"><span data-stu-id="3a993-104">This topic describes the two methods for getting file formats that you can use for methods of payment.</span></span>
-
-<span data-ttu-id="3a993-105">Det finns två sätt att få filformat som du kan använda med betalningsmetoder, filformat för elektronisk rapportering (ER) eller X++ -filformat.</span><span class="sxs-lookup"><span data-stu-id="3a993-105">There are two methods that you can use to get file formats for use with methods of payment, electronic reporting (ER) file formats or X++ file formats.</span></span> <span data-ttu-id="3a993-106">När du anger en betalningsmetod för en kund eller leverantör anger du vilka filformat och standarder som ska användas för betalningar och hur betalningar ska bearbetas.</span><span class="sxs-lookup"><span data-stu-id="3a993-106">When you set up a method of payment for a customer or vendor, you indicate which file formats and standards should be used for payments and how payments will be processed.</span></span> <span data-ttu-id="3a993-107">Du kan välja mellan följande format:</span><span class="sxs-lookup"><span data-stu-id="3a993-107">You can select from the following types of formats:</span></span>
-
--   <span data-ttu-id="3a993-108">Exportera</span><span class="sxs-lookup"><span data-stu-id="3a993-108">Export</span></span>
--   <span data-ttu-id="3a993-109">Importera</span><span class="sxs-lookup"><span data-stu-id="3a993-109">Import</span></span>
--   <span data-ttu-id="3a993-110">Retur</span><span class="sxs-lookup"><span data-stu-id="3a993-110">Return</span></span>
--   <span data-ttu-id="3a993-111">Remittering</span><span class="sxs-lookup"><span data-stu-id="3a993-111">Remittance</span></span>
-
-### <a name="method-1-electronic-reporting-file-formats"></a><span data-ttu-id="3a993-112">Metod 1: Filformat för elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="3a993-112">Method 1: Electronic reporting file formats</span></span>
-
-<span data-ttu-id="3a993-113">För filformat som baseras på ER-konfigurationer måste du importera konfigurationer från Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="3a993-113">For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS).</span></span> <span data-ttu-id="3a993-114">Mer information finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span><span class="sxs-lookup"><span data-stu-id="3a993-114">For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span></span> <span data-ttu-id="3a993-115">När du importerar rapporteringskonfigurationer för dess filformat, blir importerade format tillgängliga för val på sidan **Betalningsmetoder**.</span><span class="sxs-lookup"><span data-stu-id="3a993-115">After you import reporting configurations for those file formats, the imported formats will be available to select on the **Methods of payment** page.</span></span> <span data-ttu-id="3a993-116">Hur du importerar och väljer filformat för Europa liknar proceduren för Japan.</span><span class="sxs-lookup"><span data-stu-id="3a993-116">The process for importing and selecting file formats for Europe is similar to the procedure for Japan.</span></span> <span data-ttu-id="3a993-117">Mer information finns i [Aktivera JBA-betalningsfilformat](tasks/jba-payment-file-format.md)</span><span class="sxs-lookup"><span data-stu-id="3a993-117">For more details, see [Enable the JBA payment file format](tasks/jba-payment-file-format.md)</span></span>
-
-### <a name="method-2-x-file-formats"></a><span data-ttu-id="3a993-118">Metod 2: X++ -filformat</span><span class="sxs-lookup"><span data-stu-id="3a993-118">Method 2: X++ file formats</span></span>
-
-<span data-ttu-id="3a993-119">Gör följande om du vill välja filformat som baseras på X++ -kod.</span><span class="sxs-lookup"><span data-stu-id="3a993-119">To select file formats that are based on X++ code, complete the following steps.</span></span>
-
-1.  <span data-ttu-id="3a993-120">Gå till sidan **Betalningsmetoder**.</span><span class="sxs-lookup"><span data-stu-id="3a993-120">Go to the **Methods of payment** page.</span></span>
-2.  <span data-ttu-id="3a993-121">På snabbfliken **Filformat** klickar du på **Inställningar**.</span><span class="sxs-lookup"><span data-stu-id="3a993-121">On the **File formats** FastTab, click **Setup**.</span></span>
-3.  <span data-ttu-id="3a993-122">Välj den flik som motsvarar filformatet.</span><span class="sxs-lookup"><span data-stu-id="3a993-122">Select the tab that corresponds with the file format type.</span></span>
-4.  <span data-ttu-id="3a993-123">Välj ett filformat i listan **Tillgänglig** listan och flytta det till listan **Markerat** med pilkontrollen.</span><span class="sxs-lookup"><span data-stu-id="3a993-123">Select a file format from the **Available** list and move it to the **Selected** list with the arrow control.</span></span>
-5.  <span data-ttu-id="3a993-124">Stäng sidan **Filformat för betalningsmetoder**.</span><span class="sxs-lookup"><span data-stu-id="3a993-124">Close the **File formats for methods of payment** page.</span></span>
-6.  <span data-ttu-id="3a993-125">På snabbfliken **Filformat** väljer du det filformat som ska användas för betalningsmetoden i motsvarande filformatsfält.</span><span class="sxs-lookup"><span data-stu-id="3a993-125">On the **File formats** FastTab, select the file format to use for the method of payment from the appropriate file format field.</span></span> <span data-ttu-id="3a993-126">De allmänna alternativen för elektronisk rapportering bör anges som **Nej** for X++ -filformat.</span><span class="sxs-lookup"><span data-stu-id="3a993-126">The General electronic reporting options should be set to **No** for X++ file formats.</span></span>
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-select-file-formats-for-the-method-of-payments.md" target-language="sv-SE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-select-file-formats-for-the-method-of-payments.a5ec3a.350bea3e4a698e5e7c71fe4fcbb7e7386939511e.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>350bea3e4a698e5e7c71fe4fcbb7e7386939511e</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-select-file-formats-for-the-method-of-payments.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>File formats for methods of payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filformat för betalningsmetod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic describes the two methods for getting file formats that you can use for methods of payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>File formats for methods of payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filformat för betalningsmetod</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This topic describes the two methods for getting file formats that you can use for methods of payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>There are two methods that you can use to get file formats for use with methods of payment, electronic reporting (ER) file formats or X++ file formats.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det finns två sätt att få filformat som du kan använda med betalningsmetoder, filformat för elektronisk rapportering (ER) eller X++ -filformat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>When you set up a method of payment for a customer or vendor, you indicate which file formats and standards should be used for payments and how payments will be processed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du anger en betalningsmetod för en kund eller leverantör anger du vilka filformat och standarder som ska användas för betalningar och hur betalningar ska bearbetas.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>You can select from the following types of formats:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan välja mellan följande format:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Export</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exportera</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>Import</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importera</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Return</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Retur</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Remittance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Remittering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Method 1: Electronic reporting file formats</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metod 1: Filformat för elektronisk rapportering</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För filformat som baseras på ER-konfigurationer måste du importera konfigurationer från Lifecycle Services (LCS).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>For more information, see <bpt id="p1">[</bpt>Download Electronic reporting configurations from Lifecycle Services<ept id="p1">](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mer information finns i <bpt id="p1">[</bpt>Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services<ept id="p1">](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>After you import reporting configurations for those file formats, the imported formats will be available to select on the <bpt id="p1">**</bpt>Methods of payment<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du importerar rapporteringskonfigurationer för dess filformat, blir importerade format tillgängliga för val på sidan <bpt id="p1">**</bpt>Betalningsmetoder<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>The process for importing and selecting file formats for Europe is similar to the procedure for Japan.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hur du importerar och väljer filformat för Europa liknar proceduren för Japan.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>For more details, see <bpt id="p1">[</bpt>Enable the JBA payment file format<ept id="p1">](tasks/jba-payment-file-format.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mer information finns i <bpt id="p1">[</bpt>Aktivera JBA-betalningsfilformat<ept id="p1">](tasks/jba-payment-file-format.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Method 2: X++ file formats</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Metod 2: X++ -filformat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>To select file formats that are based on X++ code, complete the following steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gör följande om du vill välja filformat som baseras på X++ -kod.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Go to the <bpt id="p1">**</bpt>Methods of payment<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gå till sidan <bpt id="p1">**</bpt>Betalningsmetoder<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>On the <bpt id="p1">**</bpt>File formats<ept id="p1">**</ept> FastTab, click <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På snabbfliken <bpt id="p1">**</bpt>Filformat<ept id="p1">**</ept> klickar du på <bpt id="p2">**</bpt>Inställningar<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Select the tab that corresponds with the file format type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj den flik som motsvarar filformatet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Select a file format from the <bpt id="p1">**</bpt>Available<ept id="p1">**</ept> list and move it to the <bpt id="p2">**</bpt>Selected<ept id="p2">**</ept> list with the arrow control.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Välj ett filformat i listan <bpt id="p1">**</bpt>Tillgänglig<ept id="p1">**</ept> listan och flytta det till listan <bpt id="p2">**</bpt>Markerat<ept id="p2">**</ept> med pilkontrollen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Close the <bpt id="p1">**</bpt>File formats for methods of payment<ept id="p1">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stäng sidan <bpt id="p1">**</bpt>Filformat för betalningsmetoder<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>On the <bpt id="p1">**</bpt>File formats<ept id="p1">**</ept> FastTab, select the file format to use for the method of payment from the appropriate file format field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På snabbfliken <bpt id="p1">**</bpt>Filformat<ept id="p1">**</ept> väljer du det filformat som ska användas för betalningsmetoden i motsvarande filformatsfält.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>The General electronic reporting options should be set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept> for X++ file formats.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De allmänna alternativen för elektronisk rapportering bör anges som <bpt id="p1">**</bpt>Nej<ept id="p1">**</ept> for X++ -filformat.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
