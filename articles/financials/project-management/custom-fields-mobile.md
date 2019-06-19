@@ -1,591 +1,435 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="custom-fields-mobile.md" target-language="sv-SE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-d915bc8" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>custom-fields-mobile.2a9e5e.4343c875da05641c57b7784bf52f1c814dd26d20.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>4343c875da05641c57b7784bf52f1c814dd26d20</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>19859d8566a8c7840066b2c10c6b08b67f1b83f4</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>06/04/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\project-management\custom-fields-mobile.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Implementera anpassade fält för Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS och Android</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides common patterns for using extensions to implement custom fields.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Det här avsnittet innehåller vanliga mönster för hur du använder tillägg för att implementera anpassade fält.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Implementera anpassade fält för Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS och Android</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides common patterns for using extensions to implement custom fields.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Det här avsnittet innehåller vanliga mönster för hur du använder tillägg för att implementera anpassade fält.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The following topics are covered:</source><target logoport:matchpercent="80" state="translated" state-qualifier="x-fuzzy-match-unedited">Följande avsnitt ingår:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>The various data types that the custom field framework supports</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">De olika datatyper som det anpassade fältramverket stöder</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>How to show read-only or editable fields on timesheet entries, and save user-provided values back to the database</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Så här visar du skrivskyddade eller redigerbara fält i tidrapportposter, och sparar de värden som användaren anger tillbaka i databasen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>How to show read-only fields on the timesheet header</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Visa skrivskyddade fält i tidrapporthuvudet</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>How to integrate other custom business logic to enter default values in fields and do additional validation</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Så här integrerar du annan anpassad affärslogik så här anger du standardvärden i fält och gör ytterligare valideringar</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Audience</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Målgrupp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This topic is intended for developers who are integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application that is available for Apple iOS and Google Android.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Det här avsnittet är avsett för utvecklare som integrerar sina anpassade fält i Microsoft Dynamics 365 Project Timesheet-mobilappen som är tillgängligt för Apple iOS och Google Android.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The assumption is that readers are familiar with X++ development and project timesheet functionality.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Antagandet är att läsarna är bekant med funktionen för X ++-utveckling och funktionen för projekttidrapporter.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Data contract – TSTimesheetCustomField X++ class</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Datakontrakt – TSTimesheetCustomField X++-klass</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>The <bpt id="p1">**</bpt>TSTimesheetCustomField<ept id="p1">**</ept> class is the X++ data contract class that represents information about a custom field for timesheet functionality.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetCustomField<ept id="p1">**</ept>-klassen är X ++-datakontraktklassen som representerar information om ett anpassat fält för funktionen tidrapport.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Listor i anpassade fält skickas till både TSTimesheetDetails datakontrakt och TSTimesheetEntry datakontrakt för att visa anpassade fält i mobilappen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source><bpt id="p1">**</bpt>TSTimesheetDetails<ept id="p1">**</ept> - The timesheet header contract.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetDetails<ept id="p1">**</ept> - kontrakt för tidrapporthuvudet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source><bpt id="p1">**</bpt>TSTimesheetEntry<ept id="p1">**</ept> - The timesheet transaction contract.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSTimesheetEntry<ept id="p1">**</ept>- tidrapporten för transaktionskontraktet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Groups of these objects that have the same project information and <bpt id="p1">**</bpt>timesheetLineRecId<ept id="p1">**</ept> value constitute a line.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Grupper av dessa objekt som har samma projektinformation och <bpt id="p1">**</bpt>timesheetLineRecId<ept id="p1">**</ept>-värde utgör en rad.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>fieldBaseType (Types)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">fieldBaseType (typer)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>The <bpt id="p1">**</bpt>FieldBaseType<ept id="p1">**</ept> property on the <bpt id="p2">**</bpt>TsTimesheetCustom<ept id="p2">**</ept> object determines the type of the field that appears in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Egenskapen <bpt id="p1">**</bpt>FieldBaseType<ept id="p1">**</ept> för objektet <bpt id="p2">**</bpt>TsTimesheetCustom<ept id="p2">**</ept> bestämmer vilken typ av fält som visas i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>The following <bpt id="p1">**</bpt>Types<ept id="p1">**</ept> values that are supported.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Följande <bpt id="p1">**</bpt>typer<ept id="p1">**</ept> av värden stöds.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Types value</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">Typers värde</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Type</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Typ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Notes</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Anteckningar</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>0</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">0</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>String (and Enum)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Sträng (och fasttexttyp)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>The field appears as a text field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Fältet visas som ett textfält.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>1</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Integer</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Heltal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The value is shown as a number without decimal places.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Värdet visas som ett tal utan decimaler.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>2</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>Real</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Realtal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The value is shown as a number that has decimal places.</source><target logoport:matchpercent="84" state="translated" state-qualifier="x-fuzzy-match-unedited">Värdet visas som ett tal utan decimaler.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>To show the real value as a currency in the app, use the <bpt id="p1">**</bpt>fieldExtenededType<ept id="p1">**</ept> property.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om du vill visa det verkliga värdet som en valuta i appen använder du egenskapen <bpt id="p1">**</bpt>fieldExtenededType<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>You can use the <bpt id="p1">**</bpt>numberOfDecimals<ept id="p1">**</ept> property to set the number of decimal places that are shown.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan använda egenskapen <bpt id="p1">**</bpt>numberOfDecimals<ept id="p1">**</ept> för att ange antalet decimaler som visas.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>3</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Date</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Date formats are determined by the user's <bpt id="p1">**</bpt>Date, times, and number format<ept id="p1">**</ept> setting that is specified under <bpt id="p2">**</bpt>Language and country/region preference<ept id="p2">**</ept> in <bpt id="p3">**</bpt>User options<ept id="p3">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Datumformat bestäms av användarens inställning för <bpt id="p1">**</bpt>Datum-, tids- och nummerformat<ept id="p1">**</ept> som anges under <bpt id="p2">**</bpt>inställningar för språk- och land/region<ept id="p2">**</ept> i <bpt id="p3">**</bpt>användaralternativ<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>4</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Boolean</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Boolesk</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>15</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">15</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>GUID</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">GUID</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>16</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">16</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>Int64</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Int64</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>If the <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> property isn't provided on the <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> object, a free-text field is provided to the user.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om egenskapen <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> inte finns i <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept>-objektet får du ett fritextfält till användaren.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>The <bpt id="p1">**</bpt>stringLength<ept id="p1">**</ept> property can be used to set the maximum string length that users can enter.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Egenskapen <bpt id="p1">**</bpt>stringLength<ept id="p1">**</ept> kan användas för att ange den maximala stränglängd som användarna kan ange.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>If the <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> property is provided on the <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept> object, those list elements are the only values that users can select by using option buttons (radio buttons).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om egenskapen <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> finns i <bpt id="p2">**</bpt>TSTimesheetCustomField<ept id="p2">**</ept>-objektet är dessa element de enda värden som användarna kan välja med hjälp av alternativ knappar (alternativknappar).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>In this case, the string field can act as an enum value for the purpose of user entry.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I det här fallet kan strängfältet användas som ett uppräkningsvärde för användarpostens syfte.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om du vill spara värdet i databasen som en fasttexttyp mappar du strängvärdet manuellt till uppräkningsvärdet innan du sparar till databasen med hjälp av kommandokedjan (se kommandot "Använd kedja av i klassen TSTimesheetEntryService för att spara en tidrapportpost från appen tillbaka till databasen" längre fram i det här avsnittet för ett exempel).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>fieldExtendedType (TSCustomFieldExtendedType)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">fieldExtendedType (TSCustomFieldExtendedType)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>You can use this property to format real values as currency.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan använda den här egenskapen för att formatera verkliga värden som valuta.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>This approach is applicable only when the <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> value is <bpt id="p2">**</bpt>Real<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här metoden kan endast användas om <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept>-värdet är <bpt id="p2">**</bpt>Realtal<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source><bpt id="p1">**</bpt>TSCustomFieldExtendedType:None<ept id="p1">**</ept> – No formatting is applied.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldExtendedType: ingen<ept id="p1">**</ept> – ingen formatering används.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">**</bpt>TSCustomFieldExtendedType::Currency<ept id="p1">**</ept> – Format the value as currency.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldExtendedType::valuta<ept id="p1">**</ept> – formatera värdet som valuta.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>When currency formatting is active, the <bpt id="p1">**</bpt>stringValue<ept id="p1">**</ept> field can be used pass the currency code that should be shown in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">När valutaformatet är aktivt kan fältet <bpt id="p1">**</bpt>stringValue<ept id="p1">**</ept> användas för att skicka den valutakod som ska visas i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>The value is a read-only value.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Värdet är ett skrivskyddat värde.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>The <bpt id="p1">**</bpt>realValue<ept id="p1">**</ept> field contains the money amount that should be saved to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Fältet <bpt id="p1">**</bpt>realValue<ept id="p1">**</ept> innehåller det belopp som ska sparas i databasen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>fieldSection (TSCustomFieldSection)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">fieldSection (TSCustomFieldSection)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>You can use this property specify where the custom field should appear in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan använda den här egenskapen för att ange var det anpassade fältet ska visas i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source><bpt id="p1">**</bpt>TSCustomFieldSection::Header<ept id="p1">**</ept> – The field will appear in the <bpt id="p2">**</bpt>View more details<ept id="p2">**</ept> section in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldSection::huvud<ept id="p1">**</ept> – fältet kommer att visas i avsnittet <bpt id="p2">**</bpt>Visa fler detaljer<ept id="p2">**</ept> i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>These fields are always read-only.</source><target logoport:matchpercent="83" state="translated" state-qualifier="fuzzy-match">Dessa fält är alltid skrivskyddade.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source><bpt id="p1">**</bpt>TSCustomFieldSection::Line<ept id="p1">**</ept> – The field will appear after all the out-of-box line fields on timesheet entries.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TSCustomFieldSection::rad<ept id="p1">**</ept> – fältet kommer att visas efter alla färdiga radfält på tidrapportposter.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>These fields can be either editable or read-only.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Dessa fält kan antingen vara redigerbara eller skrivskyddade.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>fieldName (FieldNameShort)</source><target logoport:matchpercent="0" state="translated">fieldName (FieldNameShort)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>This property identifies the field when values that the app provides are saved back to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här egenskapen identifierar fältet när värden som programmet tillhandahåller sparas i databasen igen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>tableName (TableNameShort)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">tableName (TableNameShort)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>This property identifies the field when values that the app provides are saved back to the database.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Den här egenskapen identifierar fältet när värden som programmet tillhandahåller sparas i databasen igen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>isEditable (NoYes)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">isEditable (NoYes)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>Set this property to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to specify that the field in the timesheet entry section should be editable by users.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ange den här egenskapen till <bpt id="p1">**</bpt>Ja<ept id="p1">**</ept> för att ange att fältet i avsnittet tidrapportpost ska redigeras av användarna.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Set the property to <bpt id="p1">**</bpt>No<ept id="p1">**</ept> to make the field read-only.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ställ in egenskapen på <bpt id="p1">**</bpt>Nej<ept id="p1">**</ept> för att skrivskydda fältet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>isMandatory (NoYes)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">isMandatory (NoYes)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Set this property to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to specify that the field in the timesheet entry section should be mandatory.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Ange den här egenskapen till <bpt id="p1">**</bpt>Ja<ept id="p1">**</ept> för att ange att fältet i avsnittet tidrapportpost ska vara obligatorisk.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>label (str)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">etikett (str)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>This property specifies the label that is shown next the field in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här egenskapen anger etiketten som visas i nästa fält i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>stringOptions (List of Strings)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">stringOptions (lista över strängar)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>This property is applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>String<ept id="p2">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här egenskapen används endast om <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> har värdet <bpt id="p2">**</bpt>Sträng<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>If <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om <bpt id="p1">**</bpt>stringOptions<ept id="p1">**</ept> har angetts, anges de strängvärden som är tillgängliga för markering via alternativknappar (alternativknappar) enligt strängarna i listan.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om det inte finns några strängar tillåts fritextinmatning i strängfältet (se avsnittet "använda en beslutskedja i klassen TSTimesheetEntryService för att spara en tidrapportpost från appen tillbaka till databasen" längre fram i det här avsnittet för ett exempel).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>stringLength (int)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">stringLength (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>This property specifies the maximum length for a string field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här egenskapen anger den maximala längden för ett strängfält.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>It's applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>String<ept id="p2">**</ept>.</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">Det används endast om <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> har värdet <bpt id="p2">**</bpt>Sträng<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>numberOfDecimals (int)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">numberOfDecimals (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>This property specifies the number of decimal places that are shown for a real field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här egenskapen anger antalet decimaler som visas för ett riktigt fält.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>It's applicable only when <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> is set to <bpt id="p2">**</bpt>Real<ept id="p2">**</ept>.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">Det används endast om <bpt id="p1">**</bpt>fieldBaseType<ept id="p1">**</ept> har värdet <bpt id="p2">**</bpt>Riktigt<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>orderSequence (int)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">orderSequence (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>This property controls the order in which the custom fields are shown in the app when more than one custom field is specified.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här egenskapen bestämmer i vilken ordning de anpassade fälten visas i appen när fler än ett anpassat fält anges.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Fields that have lower numbers are shown first.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Fält med lägre nummer visas först.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>booleanValue (boolean)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">booleanValue (boolesk)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>For fields of the <bpt id="p1">**</bpt>Boolean<ept id="p1">**</ept> type, this property passes the Boolean value of the field between the server and the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">För fält av <bpt id="p1">**</bpt>boolesk<ept id="p1">**</ept> typ skickar den här egenskapen booleskt värde för fältet mellan servern och appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>guidValue (guid)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">guidValue (guid)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>For fields of the <bpt id="p1">**</bpt>GUID<ept id="p1">**</ept> type, this property passes the globally unique identifier (GUID) value of the field between the server and the app.</source><target logoport:matchpercent="81" state="translated" state-qualifier="fuzzy-match">För fält av <bpt id="p1">**</bpt>GUID<ept id="p1">**</ept> typ skickar den här egenskapen till den globala unika identifieraren (GUID) för fältet mellan servern och appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>int64Value (int64)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">int64Value (Int64)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>For fields of the <bpt id="p1">**</bpt>Int64<ept id="p1">**</ept> type, this property passes the int64 value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">För fält av <bpt id="p1">**</bpt>Int64<ept id="p1">**</ept> typ skickar den här egenskapen Int64 värde för fältet mellan servern och appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>intValue (int)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">intValue (int)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>For fields of the <bpt id="p1">**</bpt>Int<ept id="p1">**</ept> type, this property passes the int value of the field between the server and the app.</source><target logoport:matchpercent="92" state="translated" state-qualifier="fuzzy-match">För fält av <bpt id="p1">**</bpt>Int<ept id="p1">**</ept> typ skickar den här egenskapen int värde för fältet mellan servern och appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>realValue (real)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">realValue (real)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>For fields of the <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> type, this property passes the real value of the field between the server and the app .</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">För fält av <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> typ skickar den här egenskapen real värde för fältet mellan servern och appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>stringValue (str)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">stringValue (str)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>For fields of the <bpt id="p1">**</bpt>String<ept id="p1">**</ept> type, this property passes the string value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">För fält av <bpt id="p1">**</bpt>Sträng<ept id="p1">**</ept> typ skickar den här egenskapen strängvärde för fältet mellan servern och appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>It's also used for fields of the <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> type that are formatted as currency.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Det används också för fält av <bpt id="p1">**</bpt>Real<ept id="p1">**</ept> typ som är formaterade som valuta.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>For those fields, the property is used to pass the currency code to the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">För dessa fält används egenskapen för att skicka valutakoden till programmet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>dateValue (date)</source><target logoport:matchpercent="67" state="translated" state-qualifier="fuzzy-match">dateValue (datum)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>For fields of the <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> type, this property passes the date value of the field between the server and the app.</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">Datum för fält av <bpt id="p1">**</bpt>Datum<ept id="p1">**</ept> typ skickar den här egenskapen datumvärde för fältet mellan servern och appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>Show and save a custom field in the timesheet entry section</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Visa och spara ett anpassat fält i avsnittet tidrapportpost</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Below is a screenshot from the mobile app of a timesheet entry creation.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Nedan visas en skärmdump från mobilappen för en tidrapportpost.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den visar färdiga fältet utanför rutan och ett anpassat fält i avsnittet "Tidspost" som kallas "Teststräng" med ett fasttextvärde på "Andra alternativet" som redan är inställt.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Test string custom field in the app</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Teststrängens anpassade fält i appen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Nedan visas en skärmbild av användarens mobilapp som väljer ett av de uppräkningsalternativ som är tillgängliga för det anpassade fältet "teststräng".</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>The two options are "First option" and "Second option" shown as radio buttons.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">De två alternativen är "första alternativet" och "andra alternativet" visas som alternativknappar.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>The second option is currently selected.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Det andra alternativet är markerat.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Option buttons (radio buttons) for the Test string custom field</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Alternativknappar (alternativknappar) för det anpassade fältet för teststrängar</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Extend the TSTimesheetLine table so that it has a custom field</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Utöka TSTimesheetLine-tabellen så att den har ett anpassat fält</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I vanliga fall är det troligt att data för ett anpassat fält i avsnittet tidrapportost kommer att sparas i TSTimesheetLine-registret.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Andra register kan dock användas om data kan hämtas baserat på en TSTimesheetTrans-post som tillhandahålls, eller om den inte har specifik postkontext (t.ex. om fältet är skrivskyddat i projektparametrarna).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Note that custom fields don't have to have any backing database records.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Observera att anpassade fält inte behöver ha några säkerhetsposter i databasen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>They can be dynamically generated based on X++ logic.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">De kan genereras dynamiskt baserat på X ++-logik.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här metoden kan vara användbar i skrivskyddade scenarier (se avsnittet "använda en beslutskedja i klassen TSTimesheetDetails, buildCustomFieldListForHeader-metod för att fylla i tidrapportdetaljer" för ett exempel på dynamiskt genererade anpassade fältvärden.)</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Below is a screenshot from Visual Studio of the Application Object Tree.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Nedan visas en skärmbild från Visual Studio av programobjektträdet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Det visar ett tillägg till TSTimesheetLine-registret med TestLineString-fältet tillagt som ett anpassat fält.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Line string</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Radsträng</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the timesheet entry section</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Använd en beslutskedja på buildCustomFieldList-metoden i TSTimesheetSettings-klassen för att visa ett fält i postområdet för tidrapport</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>This code controls the display settings for the field in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den här koden styr bildskärmsinställningarna för fältet i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">T.ex. styrs typen av fält, etiketten, om fältet är obligatoriskt och vilket avsnitt fältet visas i.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>The following example shows a string field on time entries.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I följande exempel visas ett strängfält i tidsposter.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>This field has two options, <bpt id="p1">**</bpt>First option<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Second option<ept id="p2">**</ept>, that are available via option buttons (radio buttons).</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Det här fältet har två alternativ, <bpt id="p1">**</bpt>första alternativet<ept id="p1">**</ept> och <bpt id="p2">**</bpt>andra alternativet<ept id="p2">**</ept> som är tillgängliga via alternativknappar (alternativknappar).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>The field in the app is associated with the <bpt id="p1">**</bpt>TestLineString<ept id="p1">**</ept> field that is added to the TSTimesheetLine table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Fältet i programmet är kopplat till fältet <bpt id="p1">**</bpt>TestLineString<ept id="p1">**</ept> som läggs till i TSTimesheetLine-registret.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Note the use of the <bpt id="p1">**</bpt>TSTimesheetCustomField::newFromMetatdata()<ept id="p1">**</ept> method to simplify the initialization of the custom field properties: <bpt id="p2">**</bpt>fieldBaseType<ept id="p2">**</ept>, <bpt id="p3">**</bpt>tableName<ept id="p3">**</ept>, <bpt id="p4">**</bpt>fieldname<ept id="p4">**</ept>, <bpt id="p5">**</bpt>label<ept id="p5">**</ept>, <bpt id="p6">**</bpt>isEditable<ept id="p6">**</ept>, <bpt id="p7">**</bpt>isMandatory<ept id="p7">**</ept>, <bpt id="p8">**</bpt>stringLength<ept id="p8">**</ept>, and <bpt id="p9">**</bpt>numberOfDecimals<ept id="p9">**</ept>.</source><target logoport:matchpercent="0" state="translated">Observera att användning av <bpt id="p1">**</bpt>TSTimesheetCustomField::newFromMetatdata()<ept id="p1">**</ept>-metoden för att förenkla initieringen av de anpassade fältegenskaperna: <bpt id="p2">**</bpt>fieldBaseType<ept id="p2">**</ept>, <bpt id="p3">**</bpt>tableName<ept id="p3">**</ept>, <bpt id="p4">**</bpt>fieldname<ept id="p4">**</ept>, <bpt id="p5">**</bpt>label<ept id="p5">**</ept>, <bpt id="p6">**</bpt>isEditable<ept id="p6">**</ept>, <bpt id="p7">**</bpt>isMandatory<ept id="p7">**</ept>, <bpt id="p8">**</bpt>stringLength<ept id="p8">**</ept> och <bpt id="p9">**</bpt>numberOfDecimals<ept id="p9">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>You can also set these parameters manually, as you prefer.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan också ställa in dessa parametrar manuellt, som du vill.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>Use chain of command on the buildCustomFieldListForEntry method of the TSTimesheetEntry class to enter values in a timesheet entry</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Använd en beslutskedja på buildCustomFieldListForEntry-metoden i TSTimesheetEntry-klassen för att ange värden i en tidrapportpost</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>The <bpt id="p1">**</bpt>buildCustomFieldListForEntry<ept id="p1">**</ept> method is used to enter values on the saved timesheet lines in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Metoden <bpt id="p1">**</bpt>buildCustomFieldListForEntry<ept id="p1">**</ept> används för att ange värden på de sparade tidrapportrader som finns i mobilappen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>It takes a TSTimesheetTrans record as a parameter.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Den tar en TSTimesheetTrans-post som en parameter.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Fields from that record can be used to fill in the custom field value in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Fält från den posten kan användas för att fylla i det anpassade fältvärdet i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Använd beslutskedjan i TSTimesheetEntryService-klassen för att spara en tidrapportpost från appen tillbaka till databasen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>To save a custom field back to the database in typical usage, you must extend multiple methods:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om du vill återställa ett anpassat fält till databasen i typisk användning måste du utöka flera metoder:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>The <bpt id="p1">**</bpt>timesheetLineNeedsUpdating<ept id="p1">**</ept> method is used to determine whether the line record has been changed by the user in the app and must be saved to the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>TimesheetLineNeedsUpdating<ept id="p1">**</ept>-metoden används för att avgöra om radposten har ändrats av användaren i appen och måste sparas i databasen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>If performance isn't a concern, this method can be simplified so that it always returns <bpt id="p1">**</bpt>true<ept id="p1">**</ept>.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om prestanda inte är ett problem kan den här metoden förenklas så att den alltid returnerar <bpt id="p1">**</bpt>sant<ept id="p1">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>The <bpt id="p1">**</bpt>populateTimesheetLineFromEntryDuringCreate<ept id="p1">**</ept> and <bpt id="p2">**</bpt>populateTimesheetLineFromEntryDuringUpdate<ept id="p2">**</ept> methods can be extended so that they enter values in the TSTimesheetLine database record from the TSTimesheetEntry data contract record that is provided.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Metoderna <bpt id="p1">**</bpt>populateTimesheetLineFromEntryDuringCreate<ept id="p1">**</ept> och <bpt id="p2">**</bpt>populateTimesheetLineFromEntryDuringUpdate<ept id="p2">**</ept> kan utökas så att de anger värden i TSTimesheetLine-databasposten från TSTimesheetEntry-datakontraktspost som tillhandahålls.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>In the example that follows, notice how the mapping between the database field and the entry field is manually done via X++ code.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I exemplet nedan ska du observera att mappningen mellan databasfältet och transaktionsfältet utförs manuellt via koden X++.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>The <bpt id="p1">**</bpt>populateTimesheetWeekFromEntry<ept id="p1">**</ept> method can also be extended if the custom field that is mapped to the <bpt id="p2">**</bpt>TSTimesheetEntry<ept id="p2">**</ept> object must write back to the TSTimesheetLineweek database table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt"><bpt id="p1">**</bpt>PopulateTimesheetWeekFromEntry<ept id="p1">**</ept>-metoden kan också utökas om det anpassade fält som mappas till <bpt id="p2">**</bpt>TSTimesheetEntry<ept id="p2">**</ept>-objektet måste skriva tillbaka till TSTimesheetLineweek databasregister.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>The following example saves the <bpt id="p1">**</bpt>firstOption<ept id="p1">**</ept> or <bpt id="p2">**</bpt>secondOption<ept id="p2">**</ept> value that the user selects to the database as a raw string value.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I följande exempel sparas värdet <bpt id="p1">**</bpt>firstOption<ept id="p1">**</ept> eller <bpt id="p2">**</bpt>secondOption<ept id="p2">**</ept> som användaren väljer till databasen som ett råsträngvärde.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>If the database field is a field of the <bpt id="p1">**</bpt>Enum<ept id="p1">**</ept> type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om databasfältet är ett fält av typen <bpt id="p1">**</bpt>fastext<ept id="p1">**</ept> kan dessa värden mappas manuellt till ett uppräkningsvärde och sedan sparas till ett uppräkningsfält i databasregistret.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Show a custom field in the timesheet header section</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Visa och spara ett anpassat fält i avsnittet tidrapporthuvud</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Below is a screenshot from the mobile app of a user viewing a timesheet.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">Nedan visas en skärmdump från mobilappen för användare som tittar på en tidrapport.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>The "More information" button has been selected in the upper-right corner to show the "View more details" option.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Knappen "Mer information" har markerats i det övre högra hörnet för att visa alternativet "Visa mer information".</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>View more details command</source><target logoport:matchpercent="77" state="translated" state-qualifier="fuzzy-match">Kommandot Visa mer information</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Below is a screenshot from the mobile app showing the “More” section of a timesheet.</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Nedan visas en skärmdump från mobilappen med avsnittet "Mer" på en tidrapport.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ett anpassat fält med namnet "utnyttjandegrad för den här tidrapporten (ett beräknat anpassat fält) har lagts till i avsnittet tidrapportrubrik.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>A read-only value of "0.667" is set on the custom field.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ett skrivskyddat värde på "0,667" har ställts in för det anpassade fältet.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>More section</source><target logoport:matchpercent="79" state="translated" state-qualifier="fuzzy-match">Avsnittet Mer</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>Extend the TSTimesheetTable table so that it has a custom field</source><target logoport:matchpercent="90" state="translated" state-qualifier="fuzzy-match">Utöka TSTimesheetTable-tabellen så att den har ett anpassat fält</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>In typical scenarios, it's likely that the data for a custom field in the header section will be pulled from the TSTimesheetHeader table.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">I vanliga fall är det troligt att data för ett anpassat fält i avsnittet rubrik kommer att dras från TSTimesheetHeader-registret.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>However, other tables can be used if the data can be retrieved based on a TSTimesheetTable record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</source><target logoport:matchpercent="97" state="translated" state-qualifier="fuzzy-match">Andra register kan dock användas om data kan hämtas baserat på en TSTimesheetTable-post som tillhandahålls, eller om den inte har specifik postkontext (t.ex. om fältet är skrivskyddat i projektparametrarna).</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>Note that custom fields don't have to have any backing database records.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Observera att anpassade fält inte behöver ha några säkerhetsposter i databasen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>They can be dynamically generated based on X++ logic.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">De kan genereras dynamiskt baserat på X ++-logik.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>The example that follows shows this approach.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I exemplet nedan visas den här metoden.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Fields in the header section are always read-only in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Fält i rubrikavsnittet är alltid skrivskyddade i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the header section</source><target logoport:matchpercent="89" state="translated" state-qualifier="fuzzy-match">Använd en beslutskedja på buildCustomFieldList-metoden i TSTimesheetSettings-klassen för att visa ett fält i avsnittet rubrik</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>This code controls the display settings for the field in the app.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Den här koden styr bildskärmsinställningarna för fältet i appen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">T.ex. styrs typen av fält, etiketten, om fältet är obligatoriskt och vilket avsnitt fältet visas i.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>The following example shows a computed value in the header section in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I följande exempel visas ett beräknat värde i rubrik avsnittet i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Use chain of command on the buildCustomFieldListForHeader method of the TSTimesheetDetails class to fill in timesheet details</source><target logoport:matchpercent="75" state="translated" state-qualifier="fuzzy-match">Använd en beslutskedja på buildCustomFieldListForHeader-metoden i TSTimesheetDetails-klassen för att fylla i detaljerna för tidrapport</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>The <bpt id="p1">**</bpt>buildCustomFieldListForHeader<ept id="p1">**</ept> method is used to fill in the timesheet header details in the mobile app.</source><target logoport:matchpercent="71" state="translated" state-qualifier="fuzzy-match">Metoden <bpt id="p1">**</bpt>buildCustomFieldListForHeader<ept id="p1">**</ept> används för att fylla i tidrapportens rubrikdetaljer i mobilappen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>It takes a TSTimesheetTable record as a parameter.</source><target logoport:matchpercent="87" state="translated" state-qualifier="fuzzy-match">Den tar en TSTimesheetTable-post som en parameter.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>Fields from that record can be used to fill in the custom field value in the app.</source>
-        <target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-inherited">Fält från den posten kan användas för att fylla i det anpassade fältvärdet i appen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>The following example doesn't read any values from the database.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I följande exempel läses inga värden från databasen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Instead, it uses X++ logic to generate a computed value that is then shown in the app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">I stället används X++-logik för att generera ett beräknat värde som sedan visas i appen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Other configurability/extensibility opportunities</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Andra konfigurerbara och utökningsmöjligheter</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>Adding additional validation for the app</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Lägger till ytterligare validering för appen</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>Existing logic for timesheet functionality at the database level will still work as expected.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Befintlig logik för tidrapportfunktioner på databasnivå fungerar fortfarande som förväntat.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>To interrupt the completion of save or submit operations and show a specific error message, you can add <bpt id="p1">**</bpt>throw error("message to user")<ept id="p1">**</ept> to the code via a chain of command extension.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om du vill avbryta arbetet med att spara eller skicka meddelanden och visa ett visst felmeddelande, kan du lägga till <bpt id="p1">**</bpt>utlös fel (meddelande till användare")<ept id="p1">**</ept> till koden via ett tillägg för en beslutskedja.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Here are three examples of useful extensible methods:</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Här är tre exempel på användbara utökningsmetoder:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>If <bpt id="p1">**</bpt>validateWrite<ept id="p1">**</ept> on the TSTimesheetLine table returns <bpt id="p2">**</bpt>false<ept id="p2">**</ept> during a save operation for a timesheet line, an error message is shown in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om <bpt id="p1">**</bpt>ValidateWrite<ept id="p1">**</ept> i TSTimesheetLine-tabellen returnerar <bpt id="p2">**</bpt>falsk<ept id="p2">**</ept> under en spara-åtgärd för en tidrapportrad visas ett felmeddelande i mobilappen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>If <bpt id="p1">**</bpt>validateSubmit<ept id="p1">**</ept> on the TSTimesheetTable table returns <bpt id="p2">**</bpt>false<ept id="p2">**</ept> during timesheet submission in the app, an error message is shown to the user.</source><target logoport:matchpercent="72" state="translated" state-qualifier="fuzzy-match">Om <bpt id="p1">**</bpt>validateSubmit<ept id="p1">**</ept> i TSTimesheetTable-tabellen returnerar <bpt id="p2">**</bpt>falsk<ept id="p2">**</ept> när tidrapporten skickas till appen visas ett felmeddelande för användaren.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>Logic that fills in fields (for example, <bpt id="p1">**</bpt>Line Property<ept id="p1">**</ept>) during the <bpt id="p2">**</bpt>insert<ept id="p2">**</ept> method on the TSTimesheetLine table will still run.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">iLogik som fyller i fält (t.ex. <bpt id="p1">**</bpt>radegenskap<ept id="p1">**</ept>) under <bpt id="p2">**</bpt>infoga<ept id="p2">**</ept>-metoden i TSTimesheetLine-tabellen kommer fortfarande att köras.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>Hiding and marking out-of-box fields as read-only via configuration</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Dölja och markera färdiga fält som skrivskyddade via konfiguration</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>From the project parameters, you can make out-of-box fields read-only or hidden in the mobile app.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Från projektets parametrar kan du ange att fält i ett färdigt fält som skrivskyddad eller dold i mobilappen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Set the options in the <bpt id="p1">**</bpt>Mobile timesheets<ept id="p1">**</ept> section on the <bpt id="p2">**</bpt>Timesheet<ept id="p2">**</ept> tab of the <bpt id="p3">**</bpt>Project management and accounting parameters<ept id="p3">**</ept> page.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ställ in alternativen i avsnittet <bpt id="p1">**</bpt>mobila tidrapporter<ept id="p1">**</ept> på fliken <bpt id="p2">**</bpt>tidrapport<ept id="p2">**</ept> på sidan <bpt id="p3">**</bpt>projekthantering och redovisningsparametrar<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>Project parameters</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Projektparametrar</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Changing the activities that are available for selection via extensions</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ändra vilka aktiviteter som är tillgängliga för markering via tillägg</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>The activities that are available for selection for a project are filled in via the <bpt id="p1">**</bpt>getActivitiesForProject()<ept id="p1">**</ept> and <bpt id="p2">**</bpt>getActivityQuery()<ept id="p2">**</ept> methods in the <bpt id="p3">**</bpt>TsTimesheetProjectService<ept id="p3">**</ept> class.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">De aktiviteter som är tillgängliga för val för ett projekt fylls i via metoderna <bpt id="p1">**</bpt>getActivitiesForProject()<ept id="p1">**</ept> och <bpt id="p2">**</bpt>getActivityQuery()<ept id="p2">**</ept> i klassen <bpt id="p3">**</bpt>TsTimesheetProjectService<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>You can use chain of command to change this behavior to match your business scenario for the activities that are available for selection for a specific project.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan använda beslutskedja om du vill ändra det här beteendet så att det passar ditt affärsscenario för de aktiviteter som kan väljas för ett visst projekt.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Entering a default project category on timesheet entries</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Ange en standardkategori för projektet på tidrapportposter</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Entry of a default project category on timesheet entries occurs at three levels.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Inmatning av en standardprojektkategori på tidrapportposter sker på tre nivåer.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Du kan använda beslutskedja om du vill utöka beteendet på någon av eller alla dessa nivåer för att uppnå önskat beteende.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>The following hierarchy is used:</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">Följande hierarki används:</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>The app tries to put the default category from the project resource.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Appen försöker placera standardkategorin från projektresursen.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getCurrentUserResource<ept id="p1">**</ept> and <bpt id="p2">**</bpt>getDelegatedResourcesForCurrentUser<ept id="p2">**</ept> methods in the <bpt id="p3">**</bpt>TSTimesheetSettingsService<ept id="p3">**</ept> class.</source><target logoport:matchpercent="0" state="translated">Denna standardkategori ställs in i metoderna <bpt id="p1">**</bpt>getCurrentUserResource<ept id="p1">**</ept> och <bpt id="p2">**</bpt>getDelegatedResourcesForCurrentUser<ept id="p2">**</ept> i klassen <bpt id="p3">**</bpt>TSTimesheetSettingsService<ept id="p3">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>If the default category isn't provided at the project resource level, the app tries to pull it from the project activity.</source><target logoport:matchpercent="70" state="translated" state-qualifier="leveraged-mt">Om standardkategorin inte finns på projektets resursnivå försöker programmet att hämta den från projektaktiviteten.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getActivitiesForProject<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> class.</source><target logoport:matchpercent="0" state="translated">Denna standardkategori ställs in i metoden <bpt id="p1">**</bpt>getActivitiesForProject<ept id="p1">**</ept> i klassen <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept>.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>If the default category isn't provided at the project activity level, the default category it taken from the project parameters.</source><target logoport:matchpercent="82" state="translated" state-qualifier="fuzzy-match">Om standardkategorin inte finns på projektets aktivitetsnivå tas standardkategorin från projektparametrarna.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>This default category is set in the <bpt id="p1">**</bpt>getProjectDetailsbyRule<ept id="p1">**</ept> method in the <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept> class.</source><target logoport:matchpercent="91" state="translated" state-qualifier="fuzzy-match">Denna standardkategori ställs in i metoden <bpt id="p1">**</bpt>getProjectDetailsbyRule<ept id="p1">**</ept> i klassen <bpt id="p2">**</bpt>TSTimesheetProjectService<ept id="p2">**</ept>.</target>
-        </trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Implementera anpassade fält för Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS och Android
+description: Det här avsnittet innehåller vanliga mönster för hur du använder tillägg för att implementera anpassade fält.
+author: KimANelson
+manager: AnnBe
+ms.date: 05/29/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: Service industries
+ms.author: knelson
+ms.dyn365.ops.version: 10.0.3
+ms.search.validFrom: 2019-05-29
+ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1618006"
+---
+# <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a><span data-ttu-id="175cc-103">Implementera anpassade fält för Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS och Android</span><span class="sxs-lookup"><span data-stu-id="175cc-103">Implement custom fields for the Microsoft Dynamics 365 Project Timesheet mobile app on iOS and Android</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="175cc-104">Det här avsnittet innehåller vanliga mönster för hur du använder tillägg för att implementera anpassade fält.</span><span class="sxs-lookup"><span data-stu-id="175cc-104">This topic provides common patterns for using extensions to implement custom fields.</span></span> <span data-ttu-id="175cc-105">Följande avsnitt ingår:</span><span class="sxs-lookup"><span data-stu-id="175cc-105">The following topics are covered:</span></span>
+
+- <span data-ttu-id="175cc-106">De olika datatyper som det anpassade fältramverket stöder</span><span class="sxs-lookup"><span data-stu-id="175cc-106">The various data types that the custom field framework supports</span></span>
+- <span data-ttu-id="175cc-107">Så här visar du skrivskyddade eller redigerbara fält i tidrapportposter, och sparar de värden som användaren anger tillbaka i databasen</span><span class="sxs-lookup"><span data-stu-id="175cc-107">How to show read-only or editable fields on timesheet entries, and save user-provided values back to the database</span></span>
+- <span data-ttu-id="175cc-108">Visa skrivskyddade fält i tidrapporthuvudet</span><span class="sxs-lookup"><span data-stu-id="175cc-108">How to show read-only fields on the timesheet header</span></span>
+- <span data-ttu-id="175cc-109">Så här integrerar du annan anpassad affärslogik så här anger du standardvärden i fält och gör ytterligare valideringar</span><span class="sxs-lookup"><span data-stu-id="175cc-109">How to integrate other custom business logic to enter default values in fields and do additional validation</span></span>
+
+## <a name="audience"></a><span data-ttu-id="175cc-110">Målgrupp</span><span class="sxs-lookup"><span data-stu-id="175cc-110">Audience</span></span>
+
+<span data-ttu-id="175cc-111">Det här avsnittet är avsett för utvecklare som integrerar sina anpassade fält i Microsoft Dynamics 365 Project Timesheet-mobilappen som är tillgängligt för Apple iOS och Google Android.</span><span class="sxs-lookup"><span data-stu-id="175cc-111">This topic is intended for developers who are integrating their custom fields into the Microsoft Dynamics 365 Project Timesheet mobile application that is available for Apple iOS and Google Android.</span></span> <span data-ttu-id="175cc-112">Antagandet är att läsarna är bekant med funktionen för X ++-utveckling och funktionen för projekttidrapporter.</span><span class="sxs-lookup"><span data-stu-id="175cc-112">The assumption is that readers are familiar with X++ development and project timesheet functionality.</span></span>
+
+## <a name="data-contract--tstimesheetcustomfield-x-class"></a><span data-ttu-id="175cc-113">Datakontrakt – TSTimesheetCustomField X++-klass</span><span class="sxs-lookup"><span data-stu-id="175cc-113">Data contract – TSTimesheetCustomField X++ class</span></span>
+
+<span data-ttu-id="175cc-114">**TSTimesheetCustomField**-klassen är X ++-datakontraktklassen som representerar information om ett anpassat fält för funktionen tidrapport.</span><span class="sxs-lookup"><span data-stu-id="175cc-114">The **TSTimesheetCustomField** class is the X++ data contract class that represents information about a custom field for timesheet functionality.</span></span> <span data-ttu-id="175cc-115">Listor i anpassade fält skickas till både TSTimesheetDetails datakontrakt och TSTimesheetEntry datakontrakt för att visa anpassade fält i mobilappen.</span><span class="sxs-lookup"><span data-stu-id="175cc-115">Lists of the custom field objects are passed on both the TSTimesheetDetails data contract and the TSTimesheetEntry data contract to show custom fields in the mobile app.</span></span>
+
+- <span data-ttu-id="175cc-116">**TSTimesheetDetails** - kontrakt för tidrapporthuvudet.</span><span class="sxs-lookup"><span data-stu-id="175cc-116">**TSTimesheetDetails** - The timesheet header contract.</span></span>
+- <span data-ttu-id="175cc-117">**TSTimesheetEntry**- tidrapporten för transaktionskontraktet.</span><span class="sxs-lookup"><span data-stu-id="175cc-117">**TSTimesheetEntry** - The timesheet transaction contract.</span></span> <span data-ttu-id="175cc-118">Grupper av dessa objekt som har samma projektinformation och **timesheetLineRecId**-värde utgör en rad.</span><span class="sxs-lookup"><span data-stu-id="175cc-118">Groups of these objects that have the same project information and **timesheetLineRecId** value constitute a line.</span></span>
+
+### <a name="fieldbasetype-types"></a><span data-ttu-id="175cc-119">fieldBaseType (typer)</span><span class="sxs-lookup"><span data-stu-id="175cc-119">fieldBaseType (Types)</span></span>
+
+<span data-ttu-id="175cc-120">Egenskapen **FieldBaseType** för objektet **TsTimesheetCustom** bestämmer vilken typ av fält som visas i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-120">The **FieldBaseType** property on the **TsTimesheetCustom** object determines the type of the field that appears in the app.</span></span> <span data-ttu-id="175cc-121">Följande **typer** av värden stöds.</span><span class="sxs-lookup"><span data-stu-id="175cc-121">The following **Types** values that are supported.</span></span>
+
+| <span data-ttu-id="175cc-122">Typers värde</span><span class="sxs-lookup"><span data-stu-id="175cc-122">Types value</span></span> | <span data-ttu-id="175cc-123">Typ</span><span class="sxs-lookup"><span data-stu-id="175cc-123">Type</span></span>              | <span data-ttu-id="175cc-124">Anteckningar</span><span class="sxs-lookup"><span data-stu-id="175cc-124">Notes</span></span> |
+|-------------|-------------------|-------|
+| <span data-ttu-id="175cc-125">0</span><span class="sxs-lookup"><span data-stu-id="175cc-125">0</span></span>           | <span data-ttu-id="175cc-126">Sträng (och fasttexttyp)</span><span class="sxs-lookup"><span data-stu-id="175cc-126">String (and Enum)</span></span> | <span data-ttu-id="175cc-127">Fältet visas som ett textfält.</span><span class="sxs-lookup"><span data-stu-id="175cc-127">The field appears as a text field.</span></span> |
+| <span data-ttu-id="175cc-128">1</span><span class="sxs-lookup"><span data-stu-id="175cc-128">1</span></span>           | <span data-ttu-id="175cc-129">Heltal</span><span class="sxs-lookup"><span data-stu-id="175cc-129">Integer</span></span>           | <span data-ttu-id="175cc-130">Värdet visas som ett tal utan decimaler.</span><span class="sxs-lookup"><span data-stu-id="175cc-130">The value is shown as a number without decimal places.</span></span> |
+| <span data-ttu-id="175cc-131">2</span><span class="sxs-lookup"><span data-stu-id="175cc-131">2</span></span>           | <span data-ttu-id="175cc-132">Realtal</span><span class="sxs-lookup"><span data-stu-id="175cc-132">Real</span></span>              | <span data-ttu-id="175cc-133">Värdet visas som ett tal utan decimaler.</span><span class="sxs-lookup"><span data-stu-id="175cc-133">The value is shown as a number that has decimal places.</span></span><p><span data-ttu-id="175cc-134">Om du vill visa det verkliga värdet som en valuta i appen använder du egenskapen **fieldExtenededType**.</span><span class="sxs-lookup"><span data-stu-id="175cc-134">To show the real value as a currency in the app, use the **fieldExtenededType** property.</span></span> <span data-ttu-id="175cc-135">Du kan använda egenskapen **numberOfDecimals** för att ange antalet decimaler som visas.</span><span class="sxs-lookup"><span data-stu-id="175cc-135">You can use the **numberOfDecimals** property to set the number of decimal places that are shown.</span></span></p> |
+| <span data-ttu-id="175cc-136">3</span><span class="sxs-lookup"><span data-stu-id="175cc-136">3</span></span>           | <span data-ttu-id="175cc-137">Datum</span><span class="sxs-lookup"><span data-stu-id="175cc-137">Date</span></span>              | <span data-ttu-id="175cc-138">Datumformat bestäms av användarens inställning för **Datum-, tids- och nummerformat** som anges under **inställningar för språk- och land/region** i **användaralternativ**.</span><span class="sxs-lookup"><span data-stu-id="175cc-138">Date formats are determined by the user's **Date, times, and number format** setting that is specified under **Language and country/region preference** in **User options**.</span></span> |
+| <span data-ttu-id="175cc-139">4</span><span class="sxs-lookup"><span data-stu-id="175cc-139">4</span></span>           | <span data-ttu-id="175cc-140">Boolesk</span><span class="sxs-lookup"><span data-stu-id="175cc-140">Boolean</span></span>           | |
+| <span data-ttu-id="175cc-141">15</span><span class="sxs-lookup"><span data-stu-id="175cc-141">15</span></span>          | <span data-ttu-id="175cc-142">GUID</span><span class="sxs-lookup"><span data-stu-id="175cc-142">GUID</span></span>              | |
+| <span data-ttu-id="175cc-143">16</span><span class="sxs-lookup"><span data-stu-id="175cc-143">16</span></span>          | <span data-ttu-id="175cc-144">Int64</span><span class="sxs-lookup"><span data-stu-id="175cc-144">Int64</span></span>             | |
+
+- <span data-ttu-id="175cc-145">Om egenskapen **stringOptions** inte finns i **TSTimesheetCustomField**-objektet får du ett fritextfält till användaren.</span><span class="sxs-lookup"><span data-stu-id="175cc-145">If the **stringOptions** property isn't provided on the **TSTimesheetCustomField** object, a free-text field is provided to the user.</span></span>
+
+    <span data-ttu-id="175cc-146">Egenskapen **stringLength** kan användas för att ange den maximala stränglängd som användarna kan ange.</span><span class="sxs-lookup"><span data-stu-id="175cc-146">The **stringLength** property can be used to set the maximum string length that users can enter.</span></span>
+
+- <span data-ttu-id="175cc-147">Om egenskapen **stringOptions** finns i **TSTimesheetCustomField**-objektet är dessa element de enda värden som användarna kan välja med hjälp av alternativ knappar (alternativknappar).</span><span class="sxs-lookup"><span data-stu-id="175cc-147">If the **stringOptions** property is provided on the **TSTimesheetCustomField** object, those list elements are the only values that users can select by using option buttons (radio buttons).</span></span>
+
+    <span data-ttu-id="175cc-148">I det här fallet kan strängfältet användas som ett uppräkningsvärde för användarpostens syfte.</span><span class="sxs-lookup"><span data-stu-id="175cc-148">In this case, the string field can act as an enum value for the purpose of user entry.</span></span> <span data-ttu-id="175cc-149">Om du vill spara värdet i databasen som en fasttexttyp mappar du strängvärdet manuellt till uppräkningsvärdet innan du sparar till databasen med hjälp av kommandokedjan (se kommandot "Använd kedja av i klassen TSTimesheetEntryService för att spara en tidrapportpost från appen tillbaka till databasen" längre fram i det här avsnittet för ett exempel).</span><span class="sxs-lookup"><span data-stu-id="175cc-149">To save the value to the database as an enum, manually map the string value back to the enum value before you save to the database by using chain of command (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</span></span>
+
+### <a name="fieldextendedtype-tscustomfieldextendedtype"></a><span data-ttu-id="175cc-150">fieldExtendedType (TSCustomFieldExtendedType)</span><span class="sxs-lookup"><span data-stu-id="175cc-150">fieldExtendedType (TSCustomFieldExtendedType)</span></span>
+
+<span data-ttu-id="175cc-151">Du kan använda den här egenskapen för att formatera verkliga värden som valuta.</span><span class="sxs-lookup"><span data-stu-id="175cc-151">You can use this property to format real values as currency.</span></span> <span data-ttu-id="175cc-152">Den här metoden kan endast användas om **fieldBaseType**-värdet är **Realtal**.</span><span class="sxs-lookup"><span data-stu-id="175cc-152">This approach is applicable only when the **fieldBaseType** value is **Real**.</span></span>
+
+- <span data-ttu-id="175cc-153">**TSCustomFieldExtendedType: ingen** – ingen formatering används.</span><span class="sxs-lookup"><span data-stu-id="175cc-153">**TSCustomFieldExtendedType:None** – No formatting is applied.</span></span>
+- <span data-ttu-id="175cc-154">**TSCustomFieldExtendedType::valuta** – formatera värdet som valuta.</span><span class="sxs-lookup"><span data-stu-id="175cc-154">**TSCustomFieldExtendedType::Currency** – Format the value as currency.</span></span>
+
+    <span data-ttu-id="175cc-155">När valutaformatet är aktivt kan fältet **stringValue** användas för att skicka den valutakod som ska visas i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-155">When currency formatting is active, the **stringValue** field can be used pass the currency code that should be shown in the app.</span></span> <span data-ttu-id="175cc-156">Värdet är ett skrivskyddat värde.</span><span class="sxs-lookup"><span data-stu-id="175cc-156">The value is a read-only value.</span></span>
+
+    <span data-ttu-id="175cc-157">Fältet **realValue** innehåller det belopp som ska sparas i databasen.</span><span class="sxs-lookup"><span data-stu-id="175cc-157">The **realValue** field contains the money amount that should be saved to the database.</span></span>
+
+### <a name="fieldsection-tscustomfieldsection"></a><span data-ttu-id="175cc-158">fieldSection (TSCustomFieldSection)</span><span class="sxs-lookup"><span data-stu-id="175cc-158">fieldSection (TSCustomFieldSection)</span></span>
+
+<span data-ttu-id="175cc-159">Du kan använda den här egenskapen för att ange var det anpassade fältet ska visas i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-159">You can use this property specify where the custom field should appear in the app.</span></span>
+
+- <span data-ttu-id="175cc-160">**TSCustomFieldSection::huvud** – fältet kommer att visas i avsnittet **Visa fler detaljer** i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-160">**TSCustomFieldSection::Header** – The field will appear in the **View more details** section in the app.</span></span> <span data-ttu-id="175cc-161">Dessa fält är alltid skrivskyddade.</span><span class="sxs-lookup"><span data-stu-id="175cc-161">These fields are always read-only.</span></span>
+- <span data-ttu-id="175cc-162">**TSCustomFieldSection::rad** – fältet kommer att visas efter alla färdiga radfält på tidrapportposter.</span><span class="sxs-lookup"><span data-stu-id="175cc-162">**TSCustomFieldSection::Line** – The field will appear after all the out-of-box line fields on timesheet entries.</span></span> <span data-ttu-id="175cc-163">Dessa fält kan antingen vara redigerbara eller skrivskyddade.</span><span class="sxs-lookup"><span data-stu-id="175cc-163">These fields can be either editable or read-only.</span></span>
+
+### <a name="fieldname-fieldnameshort"></a><span data-ttu-id="175cc-164">fieldName (FieldNameShort)</span><span class="sxs-lookup"><span data-stu-id="175cc-164">fieldName (FieldNameShort)</span></span>
+
+<span data-ttu-id="175cc-165">Den här egenskapen identifierar fältet när värden som programmet tillhandahåller sparas i databasen igen.</span><span class="sxs-lookup"><span data-stu-id="175cc-165">This property identifies the field when values that the app provides are saved back to the database.</span></span>
+
+### <a name="tablename-tablenameshort"></a><span data-ttu-id="175cc-166">tableName (TableNameShort)</span><span class="sxs-lookup"><span data-stu-id="175cc-166">tableName (TableNameShort)</span></span>
+
+<span data-ttu-id="175cc-167">Den här egenskapen identifierar fältet när värden som programmet tillhandahåller sparas i databasen igen.</span><span class="sxs-lookup"><span data-stu-id="175cc-167">This property identifies the field when values that the app provides are saved back to the database.</span></span>
+
+### <a name="iseditable-noyes"></a><span data-ttu-id="175cc-168">isEditable (NoYes)</span><span class="sxs-lookup"><span data-stu-id="175cc-168">isEditable (NoYes)</span></span>
+
+<span data-ttu-id="175cc-169">Ange den här egenskapen till **Ja** för att ange att fältet i avsnittet tidrapportpost ska redigeras av användarna.</span><span class="sxs-lookup"><span data-stu-id="175cc-169">Set this property to **Yes** to specify that the field in the timesheet entry section should be editable by users.</span></span> <span data-ttu-id="175cc-170">Ställ in egenskapen på **Nej** för att skrivskydda fältet.</span><span class="sxs-lookup"><span data-stu-id="175cc-170">Set the property to **No** to make the field read-only.</span></span>
+
+### <a name="ismandatory-noyes"></a><span data-ttu-id="175cc-171">isMandatory (NoYes)</span><span class="sxs-lookup"><span data-stu-id="175cc-171">isMandatory (NoYes)</span></span>
+
+<span data-ttu-id="175cc-172">Ange den här egenskapen till **Ja** för att ange att fältet i avsnittet tidrapportpost ska vara obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="175cc-172">Set this property to **Yes** to specify that the field in the timesheet entry section should be mandatory.</span></span>
+
+### <a name="label-str"></a><span data-ttu-id="175cc-173">etikett (str)</span><span class="sxs-lookup"><span data-stu-id="175cc-173">label (str)</span></span>
+
+<span data-ttu-id="175cc-174">Den här egenskapen anger etiketten som visas i nästa fält i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-174">This property specifies the label that is shown next the field in the app.</span></span>
+
+### <a name="stringoptions-list-of-strings"></a><span data-ttu-id="175cc-175">stringOptions (lista över strängar)</span><span class="sxs-lookup"><span data-stu-id="175cc-175">stringOptions (List of Strings)</span></span>
+
+<span data-ttu-id="175cc-176">Den här egenskapen används endast om **fieldBaseType** har värdet **Sträng**.</span><span class="sxs-lookup"><span data-stu-id="175cc-176">This property is applicable only when **fieldBaseType** is set to **String**.</span></span> <span data-ttu-id="175cc-177">Om **stringOptions** har angetts, anges de strängvärden som är tillgängliga för markering via alternativknappar (alternativknappar) enligt strängarna i listan.</span><span class="sxs-lookup"><span data-stu-id="175cc-177">If **stringOptions** is set, the string values that are available for selection via option buttons (radio buttons) are specified by the strings in the list.</span></span> <span data-ttu-id="175cc-178">Om det inte finns några strängar tillåts fritextinmatning i strängfältet (se avsnittet "använda en beslutskedja i klassen TSTimesheetEntryService för att spara en tidrapportpost från appen tillbaka till databasen" längre fram i det här avsnittet för ett exempel).</span><span class="sxs-lookup"><span data-stu-id="175cc-178">If no strings are provided, free-text entry in the string field is allowed (see the “Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database” section later in this topic for an example).</span></span>
+
+### <a name="stringlength-int"></a><span data-ttu-id="175cc-179">stringLength (int)</span><span class="sxs-lookup"><span data-stu-id="175cc-179">stringLength (int)</span></span>
+
+<span data-ttu-id="175cc-180">Den här egenskapen anger den maximala längden för ett strängfält.</span><span class="sxs-lookup"><span data-stu-id="175cc-180">This property specifies the maximum length for a string field.</span></span> <span data-ttu-id="175cc-181">Det används endast om **fieldBaseType** har värdet **Sträng**.</span><span class="sxs-lookup"><span data-stu-id="175cc-181">It's applicable only when **fieldBaseType** is set to **String**.</span></span>
+
+### <a name="numberofdecimals-int"></a><span data-ttu-id="175cc-182">numberOfDecimals (int)</span><span class="sxs-lookup"><span data-stu-id="175cc-182">numberOfDecimals (int)</span></span>
+
+<span data-ttu-id="175cc-183">Den här egenskapen anger antalet decimaler som visas för ett riktigt fält.</span><span class="sxs-lookup"><span data-stu-id="175cc-183">This property specifies the number of decimal places that are shown for a real field.</span></span> <span data-ttu-id="175cc-184">Det används endast om **fieldBaseType** har värdet **Riktigt**.</span><span class="sxs-lookup"><span data-stu-id="175cc-184">It's applicable only when **fieldBaseType** is set to **Real**.</span></span>
+
+### <a name="ordersequence-int"></a><span data-ttu-id="175cc-185">orderSequence (int)</span><span class="sxs-lookup"><span data-stu-id="175cc-185">orderSequence (int)</span></span>
+
+<span data-ttu-id="175cc-186">Den här egenskapen bestämmer i vilken ordning de anpassade fälten visas i appen när fler än ett anpassat fält anges.</span><span class="sxs-lookup"><span data-stu-id="175cc-186">This property controls the order in which the custom fields are shown in the app when more than one custom field is specified.</span></span> <span data-ttu-id="175cc-187">Fält med lägre nummer visas först.</span><span class="sxs-lookup"><span data-stu-id="175cc-187">Fields that have lower numbers are shown first.</span></span>
+
+### <a name="booleanvalue-boolean"></a><span data-ttu-id="175cc-188">booleanValue (boolesk)</span><span class="sxs-lookup"><span data-stu-id="175cc-188">booleanValue (boolean)</span></span>
+
+<span data-ttu-id="175cc-189">För fält av **boolesk** typ skickar den här egenskapen booleskt värde för fältet mellan servern och appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-189">For fields of the **Boolean** type, this property passes the Boolean value of the field between the server and the app.</span></span>
+
+### <a name="guidvalue-guid"></a><span data-ttu-id="175cc-190">guidValue (guid)</span><span class="sxs-lookup"><span data-stu-id="175cc-190">guidValue (guid)</span></span>
+
+<span data-ttu-id="175cc-191">För fält av **GUID** typ skickar den här egenskapen till den globala unika identifieraren (GUID) för fältet mellan servern och appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-191">For fields of the **GUID** type, this property passes the globally unique identifier (GUID) value of the field between the server and the app.</span></span>
+
+### <a name="int64value-int64"></a><span data-ttu-id="175cc-192">int64Value (Int64)</span><span class="sxs-lookup"><span data-stu-id="175cc-192">int64Value (int64)</span></span>
+
+<span data-ttu-id="175cc-193">För fält av **Int64** typ skickar den här egenskapen Int64 värde för fältet mellan servern och appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-193">For fields of the **Int64** type, this property passes the int64 value of the field between the server and the app.</span></span>
+
+### <a name="intvalue-int"></a><span data-ttu-id="175cc-194">intValue (int)</span><span class="sxs-lookup"><span data-stu-id="175cc-194">intValue (int)</span></span>
+
+<span data-ttu-id="175cc-195">För fält av **Int** typ skickar den här egenskapen int värde för fältet mellan servern och appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-195">For fields of the **Int** type, this property passes the int value of the field between the server and the app.</span></span>
+
+### <a name="realvalue-real"></a><span data-ttu-id="175cc-196">realValue (real)</span><span class="sxs-lookup"><span data-stu-id="175cc-196">realValue (real)</span></span>
+
+<span data-ttu-id="175cc-197">För fält av **Real** typ skickar den här egenskapen real värde för fältet mellan servern och appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-197">For fields of the **Real** type, this property passes the real value of the field between the server and the app .</span></span>
+
+### <a name="stringvalue-str"></a><span data-ttu-id="175cc-198">stringValue (str)</span><span class="sxs-lookup"><span data-stu-id="175cc-198">stringValue (str)</span></span>
+
+<span data-ttu-id="175cc-199">För fält av **Sträng** typ skickar den här egenskapen strängvärde för fältet mellan servern och appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-199">For fields of the **String** type, this property passes the string value of the field between the server and the app.</span></span> <span data-ttu-id="175cc-200">Det används också för fält av **Real** typ som är formaterade som valuta.</span><span class="sxs-lookup"><span data-stu-id="175cc-200">It's also used for fields of the **Real** type that are formatted as currency.</span></span> <span data-ttu-id="175cc-201">För dessa fält används egenskapen för att skicka valutakoden till programmet.</span><span class="sxs-lookup"><span data-stu-id="175cc-201">For those fields, the property is used to pass the currency code to the app.</span></span>
+
+### <a name="datevalue-date"></a><span data-ttu-id="175cc-202">dateValue (datum)</span><span class="sxs-lookup"><span data-stu-id="175cc-202">dateValue (date)</span></span>
+
+<span data-ttu-id="175cc-203">Datum för fält av **Datum** typ skickar den här egenskapen datumvärde för fältet mellan servern och appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-203">For fields of the **Date** type, this property passes the date value of the field between the server and the app.</span></span>
+
+## <a name="show-and-save-a-custom-field-in-the-timesheet-entry-section"></a><span data-ttu-id="175cc-204">Visa och spara ett anpassat fält i avsnittet tidrapportpost</span><span class="sxs-lookup"><span data-stu-id="175cc-204">Show and save a custom field in the timesheet entry section</span></span>
+
+<span data-ttu-id="175cc-205">Nedan visas en skärmdump från mobilappen för en tidrapportpost.</span><span class="sxs-lookup"><span data-stu-id="175cc-205">Below is a screenshot from the mobile app of a timesheet entry creation.</span></span> <span data-ttu-id="175cc-206">Den visar färdiga fältet utanför rutan och ett anpassat fält i avsnittet "Tidspost" som kallas "Teststräng" med ett fasttextvärde på "Andra alternativet" som redan är inställt.</span><span class="sxs-lookup"><span data-stu-id="175cc-206">It shows the out-of-box fields and a custom field in the "Time entry" section called "Test string" with an enum value of "Second option" already set.</span></span>
+
+![Teststrängens anpassade fält i appen](media/timesheet-entry.jpg)
+
+
+
+<span data-ttu-id="175cc-208">Nedan visas en skärmbild av användarens mobilapp som väljer ett av de uppräkningsalternativ som är tillgängliga för det anpassade fältet "teststräng".</span><span class="sxs-lookup"><span data-stu-id="175cc-208">Below is a screenshot from the mobile app of the user selecting one of the enum options available for the "Test string" custom field.</span></span>  <span data-ttu-id="175cc-209">De två alternativen är "första alternativet" och "andra alternativet" visas som alternativknappar.</span><span class="sxs-lookup"><span data-stu-id="175cc-209">The two options are "First option" and "Second option" shown as radio buttons.</span></span> <span data-ttu-id="175cc-210">Det andra alternativet är markerat.</span><span class="sxs-lookup"><span data-stu-id="175cc-210">The second option is currently selected.</span></span>
+
+![Alternativknappar (alternativknappar) för det anpassade fältet för teststrängar](media/enum-option.jpg)
+
+
+
+### <a name="extend-the-tstimesheetline-table-so-that-it-has-a-custom-field"></a><span data-ttu-id="175cc-212">Utöka TSTimesheetLine-tabellen så att den har ett anpassat fält</span><span class="sxs-lookup"><span data-stu-id="175cc-212">Extend the TSTimesheetLine table so that it has a custom field</span></span>
+
+<span data-ttu-id="175cc-213">I vanliga fall är det troligt att data för ett anpassat fält i avsnittet tidrapportost kommer att sparas i TSTimesheetLine-registret.</span><span class="sxs-lookup"><span data-stu-id="175cc-213">In typical scenarios, it's likely that the data for a custom field in the timesheet entry section will be saved to the TSTimesheetLine table.</span></span> <span data-ttu-id="175cc-214">Andra register kan dock användas om data kan hämtas baserat på en TSTimesheetTrans-post som tillhandahålls, eller om den inte har specifik postkontext (t.ex. om fältet är skrivskyddat i projektparametrarna).</span><span class="sxs-lookup"><span data-stu-id="175cc-214">However, other tables can be used if the data can be retrieved based on a TSTimesheetTrans record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</span></span>
+
+<span data-ttu-id="175cc-215">Observera att anpassade fält inte behöver ha några säkerhetsposter i databasen.</span><span class="sxs-lookup"><span data-stu-id="175cc-215">Note that custom fields don't have to have any backing database records.</span></span> <span data-ttu-id="175cc-216">De kan genereras dynamiskt baserat på X ++-logik.</span><span class="sxs-lookup"><span data-stu-id="175cc-216">They can be dynamically generated based on X++ logic.</span></span> <span data-ttu-id="175cc-217">Den här metoden kan vara användbar i skrivskyddade scenarier (se avsnittet "använda en beslutskedja i klassen TSTimesheetDetails, buildCustomFieldListForHeader-metod för att fylla i tidrapportdetaljer" för ett exempel på dynamiskt genererade anpassade fältvärden.)</span><span class="sxs-lookup"><span data-stu-id="175cc-217">This approach can be useful in read-only scenarios (see the “Use chain of command on the TSTimesheetDetails class, buildCustomFieldListForHeader method to fill in timesheet details” section for an example of dynamically generated custom field values.)</span></span>
+
+<span data-ttu-id="175cc-218">Nedan visas en skärmbild från Visual Studio av programobjektträdet.</span><span class="sxs-lookup"><span data-stu-id="175cc-218">Below is a screenshot from Visual Studio of the Application Object Tree.</span></span> <span data-ttu-id="175cc-219">Det visar ett tillägg till TSTimesheetLine-registret med TestLineString-fältet tillagt som ett anpassat fält.</span><span class="sxs-lookup"><span data-stu-id="175cc-219">It shows an extension of the TSTimesheetLine table with the TestLineString field added as a custom field.</span></span>
+
+![Radsträng](media/b6756b4a3fc5298093327a088a7710fd.png)
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlist-method-of-the-tstimesheetsettings-class-to-show-a-field-in-the-timesheet-entry-section"></a><span data-ttu-id="175cc-221">Använd en beslutskedja på buildCustomFieldList-metoden i TSTimesheetSettings-klassen för att visa ett fält i postområdet för tidrapport</span><span class="sxs-lookup"><span data-stu-id="175cc-221">Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the timesheet entry section</span></span>
+
+<span data-ttu-id="175cc-222">Den här koden styr bildskärmsinställningarna för fältet i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-222">This code controls the display settings for the field in the app.</span></span> <span data-ttu-id="175cc-223">T.ex. styrs typen av fält, etiketten, om fältet är obligatoriskt och vilket avsnitt fältet visas i.</span><span class="sxs-lookup"><span data-stu-id="175cc-223">For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</span></span>
+
+<span data-ttu-id="175cc-224">I följande exempel visas ett strängfält i tidsposter.</span><span class="sxs-lookup"><span data-stu-id="175cc-224">The following example shows a string field on time entries.</span></span> <span data-ttu-id="175cc-225">Det här fältet har två alternativ, **första alternativet** och **andra alternativet** som är tillgängliga via alternativknappar (alternativknappar).</span><span class="sxs-lookup"><span data-stu-id="175cc-225">This field has two options, **First option** and **Second option**, that are available via option buttons (radio buttons).</span></span> <span data-ttu-id="175cc-226">Fältet i programmet är kopplat till fältet **TestLineString** som läggs till i TSTimesheetLine-registret.</span><span class="sxs-lookup"><span data-stu-id="175cc-226">The field in the app is associated with the **TestLineString** field that is added to the TSTimesheetLine table.</span></span>
+
+<span data-ttu-id="175cc-227">Observera att användning av **TSTimesheetCustomField::newFromMetatdata()**-metoden för att förenkla initieringen av de anpassade fältegenskaperna: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength** och **numberOfDecimals**.</span><span class="sxs-lookup"><span data-stu-id="175cc-227">Note the use of the **TSTimesheetCustomField::newFromMetatdata()** method to simplify the initialization of the custom field properties: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength**, and **numberOfDecimals**.</span></span> <span data-ttu-id="175cc-228">Du kan också ställa in dessa parametrar manuellt, som du vill.</span><span class="sxs-lookup"><span data-stu-id="175cc-228">You can also set these parameters manually, as you prefer.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
+    {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('Second option');
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlistforentry-method-of-the-tstimesheetentry-class-to-enter-values-in-a-timesheet-entry"></a><span data-ttu-id="175cc-229">Använd en beslutskedja på buildCustomFieldListForEntry-metoden i TSTimesheetEntry-klassen för att ange värden i en tidrapportpost</span><span class="sxs-lookup"><span data-stu-id="175cc-229">Use chain of command on the buildCustomFieldListForEntry method of the TSTimesheetEntry class to enter values in a timesheet entry</span></span>
+
+<span data-ttu-id="175cc-230">Metoden **buildCustomFieldListForEntry** används för att ange värden på de sparade tidrapportrader som finns i mobilappen.</span><span class="sxs-lookup"><span data-stu-id="175cc-230">The **buildCustomFieldListForEntry** method is used to enter values on the saved timesheet lines in the mobile app.</span></span> <span data-ttu-id="175cc-231">Den tar en TSTimesheetTrans-post som en parameter.</span><span class="sxs-lookup"><span data-stu-id="175cc-231">It takes a TSTimesheetTrans record as a parameter.</span></span> <span data-ttu-id="175cc-232">Fält från den posten kan användas för att fylla i det anpassade fältvärdet i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-232">Fields from that record can be used to fill in the custom field value in the app.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetEntry))]
+final class TsTimesheetEntry_Extension
+{
+    protected List buildCustomFieldListForEntry(TSTimesheetTrans _tsTimesheetTrans)
+    {
+        List customFieldList = next buildCustomFieldListForEntry(_tsTimesheetTrans);
+        TSTimesheetLine tsTimesheetLine = _tsTimesheetTrans.timesheetLine();
+        TSTimesheetCustomField tsTimesheetCustomField;
+        tsTimesheetCustomField =
+        TSTimesheetCustomField::newFromMetadata(tableNum(TsTimesheetLine),
+        fieldNum(TSTimesheetLine, TestLineString));
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Line);
+        tsTimesheetCustomField.parmOrderSequence(1);
+        tsTimesheetCustomField.parmStringValue(tsTimesheetLine.TestLineString);
+        List stringOptions = new List(Types::String);
+        stringOptions.addEnd('First option');
+        stringOptions.addEnd('second option;);
+        tsTimesheetCustomField.parmStringOptions(stringOptions);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-tstimesheetentryservice-class-to-save-a-timesheet-entry-from-the-app-back-to-the-database"></a><span data-ttu-id="175cc-233">Använd beslutskedjan i TSTimesheetEntryService-klassen för att spara en tidrapportpost från appen tillbaka till databasen</span><span class="sxs-lookup"><span data-stu-id="175cc-233">Use chain of command on the TSTimesheetEntryService class to save a timesheet entry from the app back to the database</span></span>
+
+<span data-ttu-id="175cc-234">Om du vill återställa ett anpassat fält till databasen i typisk användning måste du utöka flera metoder:</span><span class="sxs-lookup"><span data-stu-id="175cc-234">To save a custom field back to the database in typical usage, you must extend multiple methods:</span></span>
+
+- <span data-ttu-id="175cc-235">**TimesheetLineNeedsUpdating**-metoden används för att avgöra om radposten har ändrats av användaren i appen och måste sparas i databasen.</span><span class="sxs-lookup"><span data-stu-id="175cc-235">The **timesheetLineNeedsUpdating** method is used to determine whether the line record has been changed by the user in the app and must be saved to the database.</span></span> <span data-ttu-id="175cc-236">Om prestanda inte är ett problem kan den här metoden förenklas så att den alltid returnerar **sant**.</span><span class="sxs-lookup"><span data-stu-id="175cc-236">If performance isn't a concern, this method can be simplified so that it always returns **true**.</span></span>
+- <span data-ttu-id="175cc-237">Metoderna **populateTimesheetLineFromEntryDuringCreate** och **populateTimesheetLineFromEntryDuringUpdate** kan utökas så att de anger värden i TSTimesheetLine-databasposten från TSTimesheetEntry-datakontraktspost som tillhandahålls.</span><span class="sxs-lookup"><span data-stu-id="175cc-237">The **populateTimesheetLineFromEntryDuringCreate** and **populateTimesheetLineFromEntryDuringUpdate** methods can be extended so that they enter values in the TSTimesheetLine database record from the TSTimesheetEntry data contract record that is provided.</span></span> <span data-ttu-id="175cc-238">I exemplet nedan ska du observera att mappningen mellan databasfältet och transaktionsfältet utförs manuellt via koden X++.</span><span class="sxs-lookup"><span data-stu-id="175cc-238">In the example that follows, notice how the mapping between the database field and the entry field is manually done via X++ code.</span></span>
+- <span data-ttu-id="175cc-239">**PopulateTimesheetWeekFromEntry**-metoden kan också utökas om det anpassade fält som mappas till **TSTimesheetEntry**-objektet måste skriva tillbaka till TSTimesheetLineweek databasregister.</span><span class="sxs-lookup"><span data-stu-id="175cc-239">The **populateTimesheetWeekFromEntry** method can also be extended if the custom field that is mapped to the **TSTimesheetEntry** object must write back to the TSTimesheetLineweek database table.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="175cc-240">I följande exempel sparas värdet **firstOption** eller **secondOption** som användaren väljer till databasen som ett råsträngvärde.</span><span class="sxs-lookup"><span data-stu-id="175cc-240">The following example saves the **firstOption** or **secondOption** value that the user selects to the database as a raw string value.</span></span> <span data-ttu-id="175cc-241">Om databasfältet är ett fält av typen **fastext** kan dessa värden mappas manuellt till ett uppräkningsvärde och sedan sparas till ett uppräkningsfält i databasregistret.</span><span class="sxs-lookup"><span data-stu-id="175cc-241">If the database field is a field of the **Enum** type, those values can be manually mapped to an enum value and then saved to an enum field on the database table.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TSTimesheetEntryService))]
+final class TSTimesheetEntryService_Extension
+{
+    protected boolean timesheetLineNeedsUpdating(TSTimesheetLine _tsTimesheetLine,
+    TsTimesheetEntry _tsTimesheetEntry)
+    {
+        boolean ret = next timesheetLineNeedsUpdating(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        if (!ret)
+        {
+            */ Loop through custom fields to see if value needs updating*/
+            ListEnumerator enumerator =  _tsTimesheetEntry.parmCustomFields().getEnumerator();
+            while (enumerator.moveNext())
+            {
+                TSTimesheetCustomField customField = enumerator.current();
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
+                {
+                    */ If Custom field value for TestLineString field has changed, We need to update the timesheet line.*/
+                    if (_tsTimesheetLine.TestLineString != customField.parmStringValue())
+                    {
+                        ret = true;
+                    }
+                }
+            }
+        }
+        return ret;
+    }
+    protected void populateTimesheetLineFromEntryDuringCreate(TSTimesheetLine
+    _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+    {
+        next populateTimesheetLineFromEntryDuringCreate(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+        _tsTimesheetEntry);
+        }
+        protected void populateTimesheetLineFromEntryDuringUpdate(TSTimesheetLine
+        \_tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+        {
+            next populateTimesheetLineFromEntryDuringUpdate(_tsTimesheetLine,
+            _tsTimesheetEntry);
+            this.populateTimesheetLineFromCustomFields(_tsTimesheetLine,
+            _tsTimesheetEntry);
+        }
+        private void populateTimesheetLineFromCustomFields(TSTimesheetLine
+        _tsTimesheetLine, TSTimesheetEntry _tsTimesheetEntry)
+        {
+            ListEnumerator enumerator =
+            _tsTimesheetEntry.parmCustomFields().getEnumerator();
+            while (enumerator.moveNext())
+            {
+                TSTimesheetCustomField customField = enumerator.current();
+                if (customField.parmFieldName() == fieldId2Name(tableNum(TsTimesheetLine),
+                fieldNum(TSTimesheetLine, TestLineString)))
+                {
+                    _tsTimesheetLine.TestLineString = customField.parmStringValue();
+                }
+            }
+        }
+    }
+...
+```
+
+## <a name="show-a-custom-field-in-the-timesheet-header-section"></a><span data-ttu-id="175cc-242">Visa och spara ett anpassat fält i avsnittet tidrapporthuvud</span><span class="sxs-lookup"><span data-stu-id="175cc-242">Show a custom field in the timesheet header section</span></span>
+
+<span data-ttu-id="175cc-243">Nedan visas en skärmdump från mobilappen för användare som tittar på en tidrapport.</span><span class="sxs-lookup"><span data-stu-id="175cc-243">Below is a screenshot from the mobile app of a user viewing a timesheet.</span></span> <span data-ttu-id="175cc-244">Knappen "Mer information" har markerats i det övre högra hörnet för att visa alternativet "Visa mer information".</span><span class="sxs-lookup"><span data-stu-id="175cc-244">The "More information" button has been selected in the upper-right corner to show the "View more details" option.</span></span>  
+
+![Kommandot Visa mer information](media/show-more.png)
+
+
+
+<span data-ttu-id="175cc-246">Nedan visas en skärmdump från mobilappen med avsnittet "Mer" på en tidrapport.</span><span class="sxs-lookup"><span data-stu-id="175cc-246">Below is a screenshot from the mobile app showing the “More” section of a timesheet.</span></span> <span data-ttu-id="175cc-247">Ett anpassat fält med namnet "utnyttjandegrad för den här tidrapporten (ett beräknat anpassat fält) har lagts till i avsnittet tidrapportrubrik.</span><span class="sxs-lookup"><span data-stu-id="175cc-247">A custom field called “Utilization rate of this timesheet (computed custom field)” has been added to the timesheet header section.</span></span> <span data-ttu-id="175cc-248">Ett skrivskyddat värde på "0,667" har ställts in för det anpassade fältet.</span><span class="sxs-lookup"><span data-stu-id="175cc-248">A read-only value of "0.667" is set on the custom field.</span></span>
+
+![Avsnittet Mer](media/more-section.jpg)
+
+
+
+### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a><span data-ttu-id="175cc-250">Utöka TSTimesheetTable-tabellen så att den har ett anpassat fält</span><span class="sxs-lookup"><span data-stu-id="175cc-250">Extend the TSTimesheetTable table so that it has a custom field</span></span>
+
+<span data-ttu-id="175cc-251">I vanliga fall är det troligt att data för ett anpassat fält i avsnittet rubrik kommer att dras från TSTimesheetHeader-registret.</span><span class="sxs-lookup"><span data-stu-id="175cc-251">In typical scenarios, it's likely that the data for a custom field in the header section will be pulled from the TSTimesheetHeader table.</span></span> <span data-ttu-id="175cc-252">Andra register kan dock användas om data kan hämtas baserat på en TSTimesheetTable-post som tillhandahålls, eller om den inte har specifik postkontext (t.ex. om fältet är skrivskyddat i projektparametrarna).</span><span class="sxs-lookup"><span data-stu-id="175cc-252">However, other tables can be used if the data can be retrieved based on a TSTimesheetTable record that is provided, or if it doesn't have specific record context (for example, if the field is set as read-only in the project parameters).</span></span>
+
+<span data-ttu-id="175cc-253">Observera att anpassade fält inte behöver ha några säkerhetsposter i databasen.</span><span class="sxs-lookup"><span data-stu-id="175cc-253">Note that custom fields don't have to have any backing database records.</span></span> <span data-ttu-id="175cc-254">De kan genereras dynamiskt baserat på X ++-logik.</span><span class="sxs-lookup"><span data-stu-id="175cc-254">They can be dynamically generated based on X++ logic.</span></span> <span data-ttu-id="175cc-255">I exemplet nedan visas den här metoden.</span><span class="sxs-lookup"><span data-stu-id="175cc-255">The example that follows shows this approach.</span></span>
+
+<span data-ttu-id="175cc-256">Fält i rubrikavsnittet är alltid skrivskyddade i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-256">Fields in the header section are always read-only in the app.</span></span>
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlist-method-of-the-tstimesheetsettings-class-to-show-a-field-in-the-header-section"></a><span data-ttu-id="175cc-257">Använd en beslutskedja på buildCustomFieldList-metoden i TSTimesheetSettings-klassen för att visa ett fält i avsnittet rubrik</span><span class="sxs-lookup"><span data-stu-id="175cc-257">Use chain of command on the buildCustomFieldList method of the TSTimesheetSettings class to show a field in the header section</span></span>
+
+<span data-ttu-id="175cc-258">Den här koden styr bildskärmsinställningarna för fältet i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-258">This code controls the display settings for the field in the app.</span></span> <span data-ttu-id="175cc-259">T.ex. styrs typen av fält, etiketten, om fältet är obligatoriskt och vilket avsnitt fältet visas i.</span><span class="sxs-lookup"><span data-stu-id="175cc-259">For example, it controls the type of field, the label, whether the field is mandatory, and what section the field appears in.</span></span>
+
+<span data-ttu-id="175cc-260">I följande exempel visas ett beräknat värde i rubrik avsnittet i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-260">The following example shows a computed value in the header section in the app.</span></span>
+
+```
+...
+[ExtensionOf(classStr(TsTimesheetSettings))]
+final class TSTimesheetSettings_Extension
+{
+    protected List buildCustomFieldList()
+    {
+        List customFieldList = next buildCustomFieldList();
+        TSTimesheetCustomField tsTimesheetCustomField;
+
+        */ Computed utilization rate*/
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+### <a name="use-chain-of-command-on-the-buildcustomfieldlistforheader-method-of-the-tstimesheetdetails-class-to-fill-in-timesheet-details"></a><span data-ttu-id="175cc-261">Använd en beslutskedja på buildCustomFieldListForHeader-metoden i TSTimesheetDetails-klassen för att fylla i detaljerna för tidrapport</span><span class="sxs-lookup"><span data-stu-id="175cc-261">Use chain of command on the buildCustomFieldListForHeader method of the TSTimesheetDetails class to fill in timesheet details</span></span>
+
+<span data-ttu-id="175cc-262">Metoden **buildCustomFieldListForHeader** används för att fylla i tidrapportens rubrikdetaljer i mobilappen.</span><span class="sxs-lookup"><span data-stu-id="175cc-262">The **buildCustomFieldListForHeader** method is used to fill in the timesheet header details in the mobile app.</span></span> <span data-ttu-id="175cc-263">Den tar en TSTimesheetTable-post som en parameter.</span><span class="sxs-lookup"><span data-stu-id="175cc-263">It takes a TSTimesheetTable record as a parameter.</span></span> <span data-ttu-id="175cc-264">Fält från den posten kan användas för att fylla i det anpassade fältvärdet i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-264">Fields from that record can be used to fill in the custom field value in the app.</span></span> <span data-ttu-id="175cc-265">I följande exempel läses inga värden från databasen.</span><span class="sxs-lookup"><span data-stu-id="175cc-265">The following example doesn't read any values from the database.</span></span> <span data-ttu-id="175cc-266">I stället används X++-logik för att generera ett beräknat värde som sedan visas i appen.</span><span class="sxs-lookup"><span data-stu-id="175cc-266">Instead, it uses X++ logic to generate a computed value that is then shown in the app.</span></span>
+
+
+```
+...
+[ExtensionOf(classStr(TSTimesheetDetails))]
+final class TSTimesheetDetails_Extension
+{
+    protected List buildCustomFieldListForHeader(TSTimesheetTable
+    _tsTimesheetTable)
+    {
+        List customFieldList = next buildCustomFieldListForHeader(_tsTimesheetTable);
+        TSTimesheetCustomField tsTimesheetCustomField;
+
+        */ Computed utilization rate*/
+        tsTimesheetCustomField = new TSTimesheetCustomField();
+        tsTimesheetCustomField.parmFieldBaseType(Types::Real);
+        tsTimesheetCustomField.parmLabel("Utilization rate of this timesheet (computed
+        custom field)");
+        tsTimesheetCustomField.parmFieldSection(TSCustomFieldSection::Header);
+        tsTimesheetCustomField.parmOrderSequence(2);
+        tsTimesheetCustomField.parmNumberOfDecimals(3);
+        real utilizationRate = 0;
+        if (_tsTimesheetTable.totalHours() != 0)
+        {
+            utilizationRate = _tsTimesheetTable.totalHoursBillable() /
+            _tsTimesheetTable.totalHours();
+        }
+        tsTimesheetCustomField.parmRealValue(utilizationRate);
+        customFieldList.addEnd(tsTimesheetCustomField);
+        return customFieldList;
+    }
+}
+...
+```
+
+## <a name="other-configurabilityextensibility-opportunities"></a><span data-ttu-id="175cc-267">Andra konfigurerbara och utökningsmöjligheter</span><span class="sxs-lookup"><span data-stu-id="175cc-267">Other configurability/extensibility opportunities</span></span>
+
+### <a name="adding-additional-validation-for-the-app"></a><span data-ttu-id="175cc-268">Lägger till ytterligare validering för appen</span><span class="sxs-lookup"><span data-stu-id="175cc-268">Adding additional validation for the app</span></span>
+
+<span data-ttu-id="175cc-269">Befintlig logik för tidrapportfunktioner på databasnivå fungerar fortfarande som förväntat.</span><span class="sxs-lookup"><span data-stu-id="175cc-269">Existing logic for timesheet functionality at the database level will still work as expected.</span></span> <span data-ttu-id="175cc-270">Om du vill avbryta arbetet med att spara eller skicka meddelanden och visa ett visst felmeddelande, kan du lägga till **utlös fel (meddelande till användare")** till koden via ett tillägg för en beslutskedja.</span><span class="sxs-lookup"><span data-stu-id="175cc-270">To interrupt the completion of save or submit operations and show a specific error message, you can add **throw error("message to user")** to the code via a chain of command extension.</span></span> <span data-ttu-id="175cc-271">Här är tre exempel på användbara utökningsmetoder:</span><span class="sxs-lookup"><span data-stu-id="175cc-271">Here are three examples of useful extensible methods:</span></span>
+
+- <span data-ttu-id="175cc-272">Om **ValidateWrite** i TSTimesheetLine-tabellen returnerar **falsk** under en spara-åtgärd för en tidrapportrad visas ett felmeddelande i mobilappen.</span><span class="sxs-lookup"><span data-stu-id="175cc-272">If **validateWrite** on the TSTimesheetLine table returns **false** during a save operation for a timesheet line, an error message is shown in the mobile app.</span></span>
+- <span data-ttu-id="175cc-273">Om **validateSubmit** i TSTimesheetTable-tabellen returnerar **falsk** när tidrapporten skickas till appen visas ett felmeddelande för användaren.</span><span class="sxs-lookup"><span data-stu-id="175cc-273">If **validateSubmit** on the TSTimesheetTable table returns **false** during timesheet submission in the app, an error message is shown to the user.</span></span>
+- <span data-ttu-id="175cc-274">iLogik som fyller i fält (t.ex. **radegenskap**) under **infoga**-metoden i TSTimesheetLine-tabellen kommer fortfarande att köras.</span><span class="sxs-lookup"><span data-stu-id="175cc-274">Logic that fills in fields (for example, **Line Property**) during the **insert** method on the TSTimesheetLine table will still run.</span></span>
+
+### <a name="hiding-and-marking-out-of-box-fields-as-read-only-via-configuration"></a><span data-ttu-id="175cc-275">Dölja och markera färdiga fält som skrivskyddade via konfiguration</span><span class="sxs-lookup"><span data-stu-id="175cc-275">Hiding and marking out-of-box fields as read-only via configuration</span></span>
+
+<span data-ttu-id="175cc-276">Från projektets parametrar kan du ange att fält i ett färdigt fält som skrivskyddad eller dold i mobilappen.</span><span class="sxs-lookup"><span data-stu-id="175cc-276">From the project parameters, you can make out-of-box fields read-only or hidden in the mobile app.</span></span> <span data-ttu-id="175cc-277">Ställ in alternativen i avsnittet **mobila tidrapporter** på fliken **tidrapport** på sidan **projekthantering och redovisningsparametrar**.</span><span class="sxs-lookup"><span data-stu-id="175cc-277">Set the options in the **Mobile timesheets** section on the **Timesheet** tab of the **Project management and accounting parameters** page.</span></span>
+
+![Projektparametrar](media/5753b8ecccd1d8bb2b002dd538b3f762.png)
+
+### <a name="changing-the-activities-that-are-available-for-selection-via-extensions"></a><span data-ttu-id="175cc-279">Ändra vilka aktiviteter som är tillgängliga för markering via tillägg</span><span class="sxs-lookup"><span data-stu-id="175cc-279">Changing the activities that are available for selection via extensions</span></span>
+
+<span data-ttu-id="175cc-280">De aktiviteter som är tillgängliga för val för ett projekt fylls i via metoderna **getActivitiesForProject()** och **getActivityQuery()** i klassen **TsTimesheetProjectService**.</span><span class="sxs-lookup"><span data-stu-id="175cc-280">The activities that are available for selection for a project are filled in via the **getActivitiesForProject()** and **getActivityQuery()** methods in the **TsTimesheetProjectService** class.</span></span> <span data-ttu-id="175cc-281">Du kan använda beslutskedja om du vill ändra det här beteendet så att det passar ditt affärsscenario för de aktiviteter som kan väljas för ett visst projekt.</span><span class="sxs-lookup"><span data-stu-id="175cc-281">You can use chain of command to change this behavior to match your business scenario for the activities that are available for selection for a specific project.</span></span>
+
+### <a name="entering-a-default-project-category-on-timesheet-entries"></a><span data-ttu-id="175cc-282">Ange en standardkategori för projektet på tidrapportposter</span><span class="sxs-lookup"><span data-stu-id="175cc-282">Entering a default project category on timesheet entries</span></span>
+
+<span data-ttu-id="175cc-283">Inmatning av en standardprojektkategori på tidrapportposter sker på tre nivåer.</span><span class="sxs-lookup"><span data-stu-id="175cc-283">Entry of a default project category on timesheet entries occurs at three levels.</span></span> <span data-ttu-id="175cc-284">Du kan använda beslutskedja om du vill utöka beteendet på någon av eller alla dessa nivåer för att uppnå önskat beteende.</span><span class="sxs-lookup"><span data-stu-id="175cc-284">You can use chain of command to extend the behavior at any or all of these levels to achieve the desired behavior.</span></span> <span data-ttu-id="175cc-285">Följande hierarki används:</span><span class="sxs-lookup"><span data-stu-id="175cc-285">The following hierarchy is used:</span></span>
+
+1. <span data-ttu-id="175cc-286">Appen försöker placera standardkategorin från projektresursen.</span><span class="sxs-lookup"><span data-stu-id="175cc-286">The app tries to put the default category from the project resource.</span></span> <span data-ttu-id="175cc-287">Denna standardkategori ställs in i metoderna **getCurrentUserResource** och **getDelegatedResourcesForCurrentUser** i klassen **TSTimesheetSettingsService**.</span><span class="sxs-lookup"><span data-stu-id="175cc-287">This default category is set in the **getCurrentUserResource** and **getDelegatedResourcesForCurrentUser** methods in the **TSTimesheetSettingsService** class.</span></span>
+2. <span data-ttu-id="175cc-288">Om standardkategorin inte finns på projektets resursnivå försöker programmet att hämta den från projektaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="175cc-288">If the default category isn't provided at the project resource level, the app tries to pull it from the project activity.</span></span> <span data-ttu-id="175cc-289">Denna standardkategori ställs in i metoden **getActivitiesForProject** i klassen **TSTimesheetProjectService**.</span><span class="sxs-lookup"><span data-stu-id="175cc-289">This default category is set in the **getActivitiesForProject** method in the **TSTimesheetProjectService** class.</span></span>
+3. <span data-ttu-id="175cc-290">Om standardkategorin inte finns på projektets aktivitetsnivå tas standardkategorin från projektparametrarna.</span><span class="sxs-lookup"><span data-stu-id="175cc-290">If the default category isn't provided at the project activity level, the default category it taken from the project parameters.</span></span> <span data-ttu-id="175cc-291">Denna standardkategori ställs in i metoden **getProjectDetailsbyRule** i klassen **TSTimesheetProjectService**.</span><span class="sxs-lookup"><span data-stu-id="175cc-291">This default category is set in the **getProjectDetailsbyRule** method in the **TSTimesheetProjectService** class.</span></span>
