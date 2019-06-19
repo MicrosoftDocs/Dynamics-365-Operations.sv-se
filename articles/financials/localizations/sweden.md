@@ -1,39 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="sweden.md" target-language="sv-SE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>sweden.83fdf7.867908bbf4eebe91585c285ec6f63fa8cc03d93a.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>867908bbf4eebe91585c285ec6f63fa8cc03d93a</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\sweden.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sverige</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Sweden.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller länkar till Microsoft Dynamics 365 for Finance and Operations dokumentationsresurser för Sverige.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Sweden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sverige</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic provides links to documentation resources for Sweden.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source><bpt id="p1">[</bpt>Export financial information for auditors in Sweden<ept id="p1">](emea-swe-sie-standard-report.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Exportera ekonomisk information för revisorer i Sverige<ept id="p1">](emea-swe-sie-standard-report.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source><bpt id="p1">[</bpt>Import payment formats<ept id="p1">](emea-swe-payment-formats-import.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Importera betalningsformat<ept id="p1">](emea-swe-payment-formats-import.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source><bpt id="p1">[</bpt>Cash registers<ept id="p1">](../../retail/localizations/emea-swe-cash-registers.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Kassaapparater<ept id="p1">](../../retail/localizations/emea-swe-cash-registers.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Sverige
+description: Det här avsnittet innehåller länkar till Microsoft Dynamics 365 for Finance and Operations dokumentationsresurser för Sverige.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 07/17/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.search.region: Sweden
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 867908bbf4eebe91585c285ec6f63fa8cc03d93a
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1555174"
+---
+# <a name="sweden"></a><span data-ttu-id="a90d5-103">Sverige</span><span class="sxs-lookup"><span data-stu-id="a90d5-103">Sweden</span></span> 
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a90d5-104">Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.</span><span class="sxs-lookup"><span data-stu-id="a90d5-104">This topic provides links to documentation resources for Sweden.</span></span> 
+
+- [<span data-ttu-id="a90d5-105">Exportera ekonomisk information för revisorer i Sverige</span><span class="sxs-lookup"><span data-stu-id="a90d5-105">Export financial information for auditors in Sweden</span></span>](emea-swe-sie-standard-report.md)
+- [<span data-ttu-id="a90d5-106">Importera betalningsformat</span><span class="sxs-lookup"><span data-stu-id="a90d5-106">Import payment formats</span></span>](emea-swe-payment-formats-import.md)
+- [<span data-ttu-id="a90d5-107">Kassaapparater</span><span class="sxs-lookup"><span data-stu-id="a90d5-107">Cash registers</span></span>](../../retail/localizations/emea-swe-cash-registers.md)
