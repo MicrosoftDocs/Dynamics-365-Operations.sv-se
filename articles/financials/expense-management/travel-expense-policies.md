@@ -1,93 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="travel-expense-policies.md" target-language="sv-SE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>travel-expense-policies.21ca19.6923a4d5420cd768d1b0da24eab406033c17fd67.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>6923a4d5420cd768d1b0da24eab406033c17fd67</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>06c8dc5bc4e1c41f68e1cda141d61529768be958</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\expense-management\travel-expense-policies.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Define expense policies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera utgiftspolicyer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>You can define expense policies that your workers must follow when entering and submitting expense reports and travel requisitions in Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan definiera utgiftspolicyer som dina medarbetare måste följa i samband med att de anger och skickar in utgiftsrapporter och reserekvisitioner i Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Expense policies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utgiftspolicy</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan definiera policyer som dina medarbetare måste följa i samband med att de anger och skickar in utgiftsrapporter och reserekvisitioner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>Implementing expense policies can help you manage expenses effectively.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du använder utgiftsprinciper kan det hjälpa dig att hantera dina utgifter på ett effektivt sätt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan till exempel ange en policy för hotellutgifter i New York, som anger att utgiften per natt inte får överstiga 250 USD.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om en anställd skickar utgiftsrapporter eller en reserekvisition där rumspriset överstiger detta belopp kommer systemet att meddela</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>worker that the policy amount for the expense has been exceeded.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">medarbetaren att policybeloppet för utgiften har överskridits.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>You can configure the message that the worker will receive when you</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan konfigurera det meddelande som medarbetaren får i samband med att du</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>define the policy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">definierar policyn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>You can define three types of policies:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan definiera tre olika typer av policy:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varnings – Tillåter medarbetaren att skicka in en utgiftsrapport eller en reserekvisition, men utgiften markeras för samtliga godkännare samt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>for later reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">för senare rapportering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fel – Kräver att medarbetaren reviderar utgiften så att denna uppfyller policykraven innan utgiftsrapporten eller reserekvisitionen lämnas in.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Motivering – Kräver att medarbetaren eller en chef anger en motivering för att policybeloppet har överskridits innan utgiftsrapporten eller reserekvisitionen lämnas in.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Policy tips</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Policytips</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Here are a few suggestions that can assist you whe creating new policies for expense management.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Här är några förslag som kan hjälpa dig när du skapar nya policyer för kostnadshantering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Principer är giltighetsdatum och börjar inte gälla om policyn skapas med ett datum efter det datum då kostnaden inträffade.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du till exempel skapar en ny policy idag för att upprätthålla en maximal måltidskostnaden av 50 USD, kontrolleras inte alla befintliga utgifter som anges i igår mot den här policy.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du skapar en policy för en utgiftskategori som kan specificeras, bör du lägga till ett villkor för utgiftsradtypen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vissa policyer t.ex. krav på inleverans, kanske inte stämmer överens med specificerade rader och ska bara användas på rubrikraden eller en rad som inte har specificerats.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>When to evaluate policies</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När policyer ska utvärderas</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I parametrar för utgiftshantering finns det ett alternativ som antingen utvärderar utgiftshanteringspolicyer när en rad sparas eller när en utgiftsrapport skickas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du väljer att utvärdera när en rad sparas ser du till att användarna har tidigare insyn i vad de behöver göra för att slutföra sina utgiftsrapporter samtidigt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars kan du fördröja policyutvärdering och spara tid om du har validering inträffat i slutet, under inlämning till arbetsflödet.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Definiera utgiftspolicyer
+description: Du kan definiera utgiftspolicyer som dina medarbetare måste följa i samband med att de anger och skickar in utgiftsrapporter och reserekvisitioner i Microsoft Dynamics 365 for Finance and Operations.
+author: ryansandness
+manager: AnnBe
+ms.date: 04/26/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: SysPolicyListPage, TrvPolicyRule
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: ryansand
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6923a4d5420cd768d1b0da24eab406033c17fd67
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594946"
+---
+# <a name="expense-policies"></a><span data-ttu-id="80312-103">Utgiftspolicy</span><span class="sxs-lookup"><span data-stu-id="80312-103">Expense policies</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="80312-104">Du kan definiera policyer som dina medarbetare måste följa i samband med att de anger och skickar in utgiftsrapporter och reserekvisitioner.</span><span class="sxs-lookup"><span data-stu-id="80312-104">You can define policies that your workers must follow when entering and submitting expense reports and travel requisitions.</span></span>         
+<span data-ttu-id="80312-105">Om du använder utgiftsprinciper kan det hjälpa dig att hantera dina utgifter på ett effektivt sätt.</span><span class="sxs-lookup"><span data-stu-id="80312-105">Implementing expense policies can help you manage expenses effectively.</span></span>         
+
+<span data-ttu-id="80312-106">Du kan till exempel ange en policy för hotellutgifter i New York, som anger att utgiften per natt inte får överstiga 250 USD.</span><span class="sxs-lookup"><span data-stu-id="80312-106">For example, you can set a policy for hotel expenses in New York City, which states that the per night expense cannot exceed USD 250.</span></span>       
+<span data-ttu-id="80312-107">Om en anställd skickar utgiftsrapporter eller en reserekvisition där rumspriset överstiger detta belopp kommer systemet att meddela</span><span class="sxs-lookup"><span data-stu-id="80312-107">If a worker submits an expense report or a travel requisition in which the room rate exceeds this amount, the system will notify the</span></span>        
+<span data-ttu-id="80312-108">medarbetaren att policybeloppet för utgiften har överskridits.</span><span class="sxs-lookup"><span data-stu-id="80312-108">worker that the policy amount for the expense has been exceeded.</span></span> <span data-ttu-id="80312-109">Du kan konfigurera det meddelande som medarbetaren får i samband med att du</span><span class="sxs-lookup"><span data-stu-id="80312-109">You can configure the message that the worker will receive when you</span></span>        
+<span data-ttu-id="80312-110">definierar policyn.</span><span class="sxs-lookup"><span data-stu-id="80312-110">define the policy.</span></span>      
+        
+<span data-ttu-id="80312-111">Du kan definiera tre olika typer av policy:</span><span class="sxs-lookup"><span data-stu-id="80312-111">You can define three types of policies:</span></span>         
+        
+- <span data-ttu-id="80312-112">Varnings – Tillåter medarbetaren att skicka in en utgiftsrapport eller en reserekvisition, men utgiften markeras för samtliga godkännare samt</span><span class="sxs-lookup"><span data-stu-id="80312-112">Warning – Allows the worker to submit an expense report or travel requisition but the expense will be marked for all approvers and</span></span>        
+  <span data-ttu-id="80312-113">för senare rapportering.</span><span class="sxs-lookup"><span data-stu-id="80312-113">for later reporting.</span></span>        
+
+- <span data-ttu-id="80312-114">Fel – Kräver att medarbetaren reviderar utgiften så att denna uppfyller policykraven innan utgiftsrapporten eller reserekvisitionen lämnas in.</span><span class="sxs-lookup"><span data-stu-id="80312-114">Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition.</span></span>       
+ 
+ - <span data-ttu-id="80312-115">Motivering – Kräver att medarbetaren eller en chef anger en motivering för att policybeloppet har överskridits innan utgiftsrapporten eller reserekvisitionen lämnas in.</span><span class="sxs-lookup"><span data-stu-id="80312-115">Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.</span></span>        
+
+## <a name="policy-tips"></a><span data-ttu-id="80312-116">Policytips</span><span class="sxs-lookup"><span data-stu-id="80312-116">Policy tips</span></span>
+<span data-ttu-id="80312-117">Här är några förslag som kan hjälpa dig när du skapar nya policyer för kostnadshantering.</span><span class="sxs-lookup"><span data-stu-id="80312-117">Here are a few suggestions that can assist you whe creating new policies for expense management.</span></span> 
+* <span data-ttu-id="80312-118">Principer är giltighetsdatum och börjar inte gälla om policyn skapas med ett datum efter det datum då kostnaden inträffade.</span><span class="sxs-lookup"><span data-stu-id="80312-118">Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred.</span></span> <span data-ttu-id="80312-119">Om du till exempel skapar en ny policy idag för att upprätthålla en maximal måltidskostnaden av 50 USD, kontrolleras inte alla befintliga utgifter som anges i igår mot den här policy.</span><span class="sxs-lookup"><span data-stu-id="80312-119">For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.</span></span>
+* <span data-ttu-id="80312-120">När du skapar en policy för en utgiftskategori som kan specificeras, bör du lägga till ett villkor för utgiftsradtypen.</span><span class="sxs-lookup"><span data-stu-id="80312-120">When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type.</span></span> <span data-ttu-id="80312-121">Vissa policyer t.ex. krav på inleverans, kanske inte stämmer överens med specificerade rader och ska bara användas på rubrikraden eller en rad som inte har specificerats.</span><span class="sxs-lookup"><span data-stu-id="80312-121">Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line.</span></span> 
+
+## <a name="when-to-evaluate-policies"></a><span data-ttu-id="80312-122">När policyer ska utvärderas</span><span class="sxs-lookup"><span data-stu-id="80312-122">When to evaluate policies</span></span>
+
+<span data-ttu-id="80312-123">I parametrar för utgiftshantering finns det ett alternativ som antingen utvärderar utgiftshanteringspolicyer när en rad sparas eller när en utgiftsrapport skickas.</span><span class="sxs-lookup"><span data-stu-id="80312-123">In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted.</span></span> <span data-ttu-id="80312-124">Om du väljer att utvärdera när en rad sparas ser du till att användarna har tidigare insyn i vad de behöver göra för att slutföra sina utgiftsrapporter samtidigt.</span><span class="sxs-lookup"><span data-stu-id="80312-124">If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once.</span></span> <span data-ttu-id="80312-125">Annars kan du fördröja policyutvärdering och spara tid om du har validering inträffat i slutet, under inlämning till arbetsflödet.</span><span class="sxs-lookup"><span data-stu-id="80312-125">Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.</span></span>

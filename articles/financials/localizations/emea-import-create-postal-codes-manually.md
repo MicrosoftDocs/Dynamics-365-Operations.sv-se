@@ -1,81 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-import-create-postal-codes-manually.md" target-language="sv-SE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-import-create-postal-codes-manually.6b805a.db7090e47301aad9ab56a62efd807140db62ab3b.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>db7090e47301aad9ab56a62efd807140db62ab3b</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-import-create-postal-codes-manually.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Import or manually create postal codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importera eller skapa postnummer manuellt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to import and manually create postal codes in the correct format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här ämnet beskriver hur du importerar och manuellt skapar postnummer i rätt format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>This topic includes information about feature that was added for Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller information om funktioner som lagts till eller ändrats för Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>Import or manually create postal codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importera eller skapa postnummer manuellt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This topic explains how to import and manually create postal codes in the correct format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här ämnet beskriver hur du importerar och manuellt skapar postnummer i rätt format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This topic includes information about feature that was added for Microsoft Dynamics 365 for Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här avsnittet innehåller information om funktioner som lagts till eller ändrats för Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>The import process lets you update the ZIP/postal codes for a specific country/region.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Genom importen kan du uppdatera postnummer för ett visst land/en viss region.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>You can also create postal codes manually.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan också skapa postnummer manuellt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Import ZIP/postal codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importera postnr</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>You can use the <bpt id="p1">**</bpt>Import ZIP/postal codes<ept id="p1">**</ept> page to import new postal codes into Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan använda sidan <bpt id="p1">**</bpt>Importera postnummer<ept id="p1">**</ept> för att importera nya postnummer till Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>When you import the codes, the existing ZIP or postal codes are replaced with the new format, and any new codes are added.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du importerar koderna ersätts befintliga postnummer och postkoder med det nya formatet, och alla nya nummer/koder läggs till.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>For some countries, you must use the Data management framework to import codes, while for other countries only an upload file is required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I vissa länder måste du använda ramverket för datahantering för att importera koder, medan för andra länder bara den överförda filen krävs.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Belgium, Netherlands, and Sweden require a file to upload.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belgien, Nederländerna och Sverige kräver en fil att överföra.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>For Belgium, the official webpage from the Belgian Post provides an official list of the postcodes and the corresponding city names.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För Belgien tillhandahåller det belgiska postverkets hemsida en officiell lista över postnumren och motsvarande ortsnamn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>The import supports html file format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importen stöder html-filformat.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>For Netherlands, a third-party organization provides the file that contains postal codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För Nederländerna tillhandahåller en tredjepartsorganisation den fil som innehåller postnummer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>After the import is completed, all postal codes will appear in the format (NNNN AA).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När importen har slutförts visas alla postnummer i formatet (NNNN AA).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>For Sweden, Postnummerservice.se provides two types of files: Swedish postal codes and Swedish addresses.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För Sverige finns Postnummerservice.se, som tillhandahåller två typer av filer: svenska postnummer och svenska adresser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>The import supports text file format for both types.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Importen stöder textfilsformat för båda typer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Create ZIP/postal codes manually</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Skapa postnummer/postkoder manuellt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Instead of importing codes, you can use the <bpt id="p1">**</bpt>Address setup<ept id="p1">**</ept> page to manually add new ZIP/postal codes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I stället för att importera koder kan du använda sidan <bpt id="p1">**</bpt>Adressinställningar<ept id="p1">**</ept> för att manuellt lägga till nya postnummer.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Importera eller skapa postnummer manuellt
+description: Det här ämnet beskriver hur du importerar och manuellt skapar postnummer i rätt format. Det här avsnittet innehåller information om funktioner som lagts till eller ändrats för Microsoft Dynamics 365 for Finance and Operations.
+author: EvgenyPopovMBS
+manager: AnnBe
+ms.date: 10/31/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: LogisticsAddressSetup
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 29901
+ms.search.region: Belgium, Netherlands, Sweden
+ms.author: epopov
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: db7090e47301aad9ab56a62efd807140db62ab3b
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559651"
+---
+# <a name="import-or-manually-create-postal-codes"></a><span data-ttu-id="fb4ec-104">Importera eller skapa postnummer manuellt</span><span class="sxs-lookup"><span data-stu-id="fb4ec-104">Import or manually create postal codes</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="fb4ec-105">Det här ämnet beskriver hur du importerar och manuellt skapar postnummer i rätt format.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-105">This topic explains how to import and manually create postal codes in the correct format.</span></span> <span data-ttu-id="fb4ec-106">Det här avsnittet innehåller information om funktioner som lagts till eller ändrats för Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-106">This topic includes information about feature that was added for Microsoft Dynamics 365 for Finance and Operations.</span></span> 
+
+<span data-ttu-id="fb4ec-107">Genom importen kan du uppdatera postnummer för ett visst land/en viss region.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-107">The import process lets you update the ZIP/postal codes for a specific country/region.</span></span> <span data-ttu-id="fb4ec-108">Du kan också skapa postnummer manuellt.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-108">You can also create postal codes manually.</span></span>
+
+## <a name="import-zippostal-codes"></a><span data-ttu-id="fb4ec-109">Importera postnr</span><span class="sxs-lookup"><span data-stu-id="fb4ec-109">Import ZIP/postal codes</span></span>
+<span data-ttu-id="fb4ec-110">Du kan använda sidan **Importera postnummer** för att importera nya postnummer till Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-110">You can use the **Import ZIP/postal codes** page to import new postal codes into Finance and Operations.</span></span> <span data-ttu-id="fb4ec-111">När du importerar koderna ersätts befintliga postnummer och postkoder med det nya formatet, och alla nya nummer/koder läggs till.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-111">When you import the codes, the existing ZIP or postal codes are replaced with the new format, and any new codes are added.</span></span>
+
+<span data-ttu-id="fb4ec-112">I vissa länder måste du använda ramverket för datahantering för att importera koder, medan för andra länder bara den överförda filen krävs.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-112">For some countries, you must use the Data management framework to import codes, while for other countries only an upload file is required.</span></span> <span data-ttu-id="fb4ec-113">Belgien, Nederländerna och Sverige kräver en fil att överföra.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-113">Belgium, Netherlands, and Sweden require a file to upload.</span></span>
+
+> [!NOTE]
+> -   <span data-ttu-id="fb4ec-114">För Belgien tillhandahåller det belgiska postverkets hemsida en officiell lista över postnumren och motsvarande ortsnamn.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-114">For Belgium, the official webpage from the Belgian Post provides an official list of the postcodes and the corresponding city names.</span></span> <span data-ttu-id="fb4ec-115">Importen stöder html-filformat.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-115">The import supports html file format.</span></span>
+> -   <span data-ttu-id="fb4ec-116">För Nederländerna tillhandahåller en tredjepartsorganisation den fil som innehåller postnummer.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-116">For Netherlands, a third-party organization provides the file that contains postal codes.</span></span> <span data-ttu-id="fb4ec-117">När importen har slutförts visas alla postnummer i formatet (NNNN AA).</span><span class="sxs-lookup"><span data-stu-id="fb4ec-117">After the import is completed, all postal codes will appear in the format (NNNN AA).</span></span>
+> -   <span data-ttu-id="fb4ec-118">För Sverige finns Postnummerservice.se, som tillhandahåller två typer av filer: svenska postnummer och svenska adresser.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-118">For Sweden, Postnummerservice.se provides two types of files: Swedish postal codes and Swedish addresses.</span></span> <span data-ttu-id="fb4ec-119">Importen stöder textfilsformat för båda typer.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-119">The import supports text file format for both types.</span></span>
+
+
+## <a name="create-zippostal-codes-manually"></a><span data-ttu-id="fb4ec-120">Skapa postnummer/postkoder manuellt</span><span class="sxs-lookup"><span data-stu-id="fb4ec-120">Create ZIP/postal codes manually</span></span>
+<span data-ttu-id="fb4ec-121">I stället för att importera koder kan du använda sidan **Adressinställningar** för att manuellt lägga till nya postnummer.</span><span class="sxs-lookup"><span data-stu-id="fb4ec-121">Instead of importing codes, you can use the **Address setup** page to manually add new ZIP/postal codes.</span></span>
+
+
