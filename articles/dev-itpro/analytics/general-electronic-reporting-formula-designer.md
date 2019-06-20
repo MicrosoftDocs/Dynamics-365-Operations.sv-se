@@ -1,2505 +1,749 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="general-electronic-reporting-formula-designer.md" target-language="sv-SE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>general-electronic-reporting-formula-designer.d3f1ab.85d2370353520ee588dfe2aedf9998d707f0eda6.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>85d2370353520ee588dfe2aedf9998d707f0eda6</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>97ed74889a09ef385f6ecbab69e84a05ff42ee41</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/20/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\dev-itpro\analytics\general-electronic-reporting-formula-designer.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Formula designer in Electronic reporting (ER)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formeldesigner i elektronisk rapportering (ER)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This topic explains how to use the formula designer in Electronic reporting (ER).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Formula designer in Electronic reporting (ER)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formeldesigner i elektronisk rapportering (ER)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This topic explains how to use the formula designer in Electronic reporting (ER).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du utformar ett format för ett visst elektroniskt dokument i ER kan du använda formler för datatransformering för att uppfylla kraven för dokumentets uppfyllelse och formatering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>These formulas resemble formulas in Microsoft Excel.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dessa formler liknar formler i Microsoft Excel.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formulären ger stöd åt olika typer av funktioner: text, datum och tid, matematik, logik, information, datatypskonvertering och andra (företagsdomänspecifika funktioner).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Formula designer overview</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formel designer översikt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>ER supports the formula designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER stöder formeldesignern.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Därför kan du vid designtillfället konfigurera uttryck som kan användas för följande uppgifter under körning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations database, and that should be entered in an ER data model that is designed to be a data source for ER formats.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Omvandla data som tas emot från en Microsoft Dynamics 365 for Finance and Operations-databas och som anges i en ER-datamodell som fungerar som datakälla för ER-format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>(For example, these transformations might include filtering, grouping, and data type conversion.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Till exempel kan dessa omvandlingar omfatta konvertering, filtrering och gruppering av datatyp.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formatera data som ska skickas till ett skapande elektroniskt dokument i enlighet med layout och villkor för ett specifikt ER-format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>(For example, the formatting might be done in accordance with the requested language or culture, or the encoding).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Till exempel kan formateringen göras i enlighet med det begärda språket eller kulturen, eller i enlighet med kodning).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Control the process of creating electronic documents.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontrollera processen för generering av elektroniska dokument.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>(For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Till exempel kan uttryck aktivera eller inaktivera utdata från specifika element av formatet, beroende på bearbetade data.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>They can also interrupt the document creation process or throw messages to users.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De kan också avbryta processen att skapa dokument eller skicka meddelanden till användare.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>You can open the <bpt id="p1">**</bpt>Formula designer<ept id="p1">**</ept> page when you perform any of the following actions:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan öppna sidan <bpt id="p1">**</bpt>Formula designer<ept id="p1">**</ept> när du utför någon av följande åtgärder:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Bind data source items to data model components.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Binda datakällsartiklar till datamodellkomponenter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Bind data source items to format components.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Binda datakällsartiklar till formatkomponenter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Complete maintenance of calculated fields that are part of data sources.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Slutför underhåll av beräknade fält som är en del av datakällor.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Define the visibility conditions for user input parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera synlighetvillkoren för användarnas indataparametrar.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Design a format's transformations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utforma transformeringar för ett format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Define the enabling conditions for the format's components.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera aktiveringsvillkoren för formatets komponenter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Define the file names for the format's FILE components.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera filnamnen för formatets FIL-komponenter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Define the conditions for process control validations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera villkoren för processtyrningsvalideringarna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Define the message text for process control validations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera meddelandetexten för processtyrningsvalideringar.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Designing ER formulas</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utforma ER-formler</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Data binding</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data bindande</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer at runtime:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-formeldesignern kan användas för att definiera ett uttryck som transformerar data som tagits emot från datakällor så att dessa data kan anges i datakonsumenten vid körning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>From Finance and Operations data sources and runtime parameters to an ER data model</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Från Finance and Operations-datakällor och körtidsparametrar till en ER-datamodell</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>From an ER data model to an ER format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Från en ER-datamodell till ett ER-format</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>From Finance and Operations data sources and runtime parameters to an ER format</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Från Finance and Operations-datakällor och körtidsparametrar till en ER-formatmodell</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>The following illustration shows the design of an expression of this type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden visar hur ett uttryck av den här typen skapas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>In this example, the expression rounds the value of the <bpt id="p1">**</bpt>Intrastat.AmountMST<ept id="p1">**</ept> field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet avrundar uttrycket värdet i fältet <bpt id="p1">**</bpt>Intrastat.AmountMST<ept id="p1">**</ept> i tabellen Intrastat i Finance and Operations till två decimaler och returnerar det avrundade värdet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Data binding<ept id="p1">](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Data bindande<ept id="p1">](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>The following illustration shows how an expression of this type can be used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden nedan visar hur ett uttryck av den här typen kan användas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>In this example, the result of the designed expression is entered in the <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> component of the <bpt id="p2">**</bpt>Tax reporting model<ept id="p2">**</ept> data model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet anges resultatet av det utformade uttrycket i komponenten <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> i datamodellen <bpt id="p2">**</bpt>Tax reporting model<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Data binding being used<ept id="p1">](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Databindning används<ept id="p1">](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>At runtime, the designed formula, <bpt id="p1">**</bpt>ROUND (Intrastat.AmountMST, 2)<ept id="p1">**</ept>, rounds the value of the <bpt id="p2">**</bpt>AmountMST<ept id="p2">**</ept> field for each record in the Intrastat table to two decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vid körning avrundar den designade formeln <bpt id="p1">**</bpt>ROUND (Intrastat.AmountMST 2)<ept id="p1">**</ept>värdet av fältet <bpt id="p2">**</bpt>AmountMST<ept id="p2">**</ept> för varje post i tabellen Intrastat till två decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>It then enters the rounded value in the <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> component of the <bpt id="p2">**</bpt>Tax reporting<ept id="p2">**</ept> data model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Därefter skrivs det avrundade värdet in i komponenten <bpt id="p1">**</bpt>Transaction.InvoicedAmount<ept id="p1">**</ept> i datamodellen <bpt id="p2">**</bpt>Tax reporting<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Data formatting</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Data formatering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-formeldesignern kan användas för att definiera uttryck som formaterar data som tagits emot från datakällor, så att dessa data kan skickas som en del av det skapade elektroniska dokumentet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>You might have formatting that must be applied as a typical rule that should be reused for a format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du har kanske en formatering som måste användas som en typisk regel och som ska återanvändas för ett format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Då kan du ange den formateringen en gång för alla i formatkonfigurationen, som en namngiven omvandling som innehåller ett uttryck med formatering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>This named transformation can then be linked to many format components where the output must be formatted according to the formatting expression that you created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den namngivna transformeringen kan sedan länkas till flera formatkomponenter, där utdata måste vara formaterade enligt det uttryck du skapade.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>The following illustration shows the design of a transformation of this type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden nedan visar hur du skapar en transformering av den här typen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>In this example, the <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept> transformation truncates incoming data of the <bpt id="p2">**</bpt>String<ept id="p2">**</ept> data type by removing leading and trailing spaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet trunkerar <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept>-transformeringen inkommande data för datatypen <bpt id="p2">**</bpt>String<ept id="p2">**</ept> genom att ta bort inledande och avslutande blanksteg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>It then returns the truncated string value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Därefter returneras det trunkerade strängvärdet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Transformation<ept id="p1">](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Transformering<ept id="p1">](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>The following illustration shows how a transformation of this type can be used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden nedan visar hur en transformering av den här typen kan användas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>In this example, several format components send text as output to the generating electronic document at runtime.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet skickar flera formatkomponenter text som utdata till det skapande elektroniska dokumentet vid körning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>All these format components refer to the <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept> transformation by name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dessa formatkomponenter hänvisar till <bpt id="p1">**</bpt>TrimmedString<ept id="p1">**</ept>-transformationen med namn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Transformation being used<ept id="p1">](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Transformering används<ept id="p1">](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>When format components, such as the <bpt id="p1">**</bpt>partyName<ept id="p1">**</ept> component in the preceding illustration, refer to the <bpt id="p2">**</bpt>TrimmedString<ept id="p2">**</ept> transformation, the transformation sends text as output to the generating electronic document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När formatkomponenter, såsom komponenten <bpt id="p1">**</bpt>partyName<ept id="p1">**</ept> i föregående illustration, hänvisar till transformeringen <bpt id="p2">**</bpt>TrimmedString<ept id="p2">**</ept> sänds text som utdata till det skapande elektroniska dokumentet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>This text doesn't include leading and trailing spaces.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Denna text inkluderar inte inledande eller avslutande blanksteg.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>If you have formatting that must be applied individually, you can introduce that formatting as an individual expression of a binding of a specific format component.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du har en formatering som måste tillämpas separat kan du införa den formateringen som ett individuellt uttryck för en bindning av en särskild formatkomponent.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>The following illustration shows an expression of this type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden visar ett uttryck av den här typen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>In this example, the <bpt id="p1">**</bpt>partyType<ept id="p1">**</ept> format component is bound to the data source via an expression that converts incoming data from the <bpt id="p2">**</bpt>Model.Company.RegistrationType<ept id="p2">**</ept> field in the data source to uppercase text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet är <bpt id="p1">**</bpt>partyType<ept id="p1">**</ept>-formatkomponenten bunden till datakällan via ett uttryck som omvandlar inkommande data från fältet <bpt id="p2">**</bpt>Model.Company.RegistrationType<ept id="p2">**</ept> i datakällan till versal text.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>The expression then sends that text as output to the electronic document.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uttrycket skickar sedan texten som utdata till det elektroniska dokumentet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Applying formatting to an individual component<ept id="p1">](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Att tillämpa formatering på en enskild komponent<ept id="p1">](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Process flow control</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Processen flödeskontroll</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>The ER formula designer can be used to define expressions that control the process flow of generating electronic documents.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-formeldesignern kan användas för att definiera uttryck som styr processflödet för skapande elektroniska dokument.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>You can perform the following tasks:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan utföra följande uppgifter:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>Define conditions that determine when a document creation process must be stopped.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera villkor som fastställer när processen för att skapa ett dokument måste stoppas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Specify expressions that either create messages for the user about stopped processes or throw execution log messages about the continuing process of report generation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera uttryck som antingen skapar meddelanden till användaren om stoppade processer eller sänder körningsloggmeddelanden om den pågående processen att skapa en rapport.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Specify the file names of generating electronic documents, and control the conditions of their creation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera filnamnen på de skapande elektroniska dokumenten och styr villkoren för hur de skapas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>Each rule of the process flow control is designed as an individual validation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varje regel i processen flödeskontroll är utformad som en individuell validering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>The following illustration shows a validation of this type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden nedan visar en validering av den här typen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>Here is an explanation of the configuration in this example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Här följer en förklaring av konfigureringen i det här exemplet:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>The validation is evaluated when the <bpt id="p1">**</bpt>INSTAT<ept id="p1">**</ept> node is created during generation of the XML file.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valideringen utvärderas när <bpt id="p1">**</bpt>INSTAT<ept id="p1">**</ept>-noden skapas under generering av XML-filen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>If the list of transactions is empty, the validation stops the execution process and returns <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valideringen stoppar körningsprocessen och returnerar <bpt id="p1">**</bpt>FALSKT<ept id="p1">**</ept> om listan över transaktioner är tom.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>The validation returns an error message that includes the text of Finance and Operations label SYS70894 in the user's preferred language.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Valideringen returnerar ett felmeddelande som innehåller text från etiketten Finance and Operations SYS70894 på användarens valda språk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Validation<ept id="p1">](./media/picture-validation.jpg)](./media/picture-validation.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Validering<ept id="p1">](./media/picture-validation.jpg)](./media/picture-validation.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>The ER formula designer can also be used to generate a file name for a generating electronic document and control the file creation process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-formeldesignern kan även användas för att skapa ett filnamn för ett skapande elektroniskt dokument och styra processen för hur en fil skapas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>The following illustration shows the design of a process flow control of this type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bilden nedan visar utformningen av en styrning av ett processflöde av den här typen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Here is an explanation of the configuration in this example:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Här följer en förklaring av konfigureringen i det här exemplet:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>The list of records from the <bpt id="p1">**</bpt>model.Intrastat<ept id="p1">**</ept> data source is divided into batches.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Listan med poster från datakällan <bpt id="p1">**</bpt>modell. Intrastat-<ept id="p1">**</ept> är uppdelat i batchar.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>Each batch contains up to 1,000 records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varje batch innehåller upp till 1 000 poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>The output creates a zip file that contains one file in XML format for every batch that was created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utdata skapar en zip-fil som innehåller en fil i XML-format för varje skapad batch.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>An expression returns a file name for generating electronic documents by concatenating the file name and the file name extension.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett uttryck returnerar ett filnamn för skapande elektroniska dokument genom att konkatenera filnamnet och filnamnstillägget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>For the second batch and all subsequent batches, the file name contains the batch ID as a suffix.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För den andra batchen och alla efterföljande batchar innehåller filnamnet batchens ID som ett suffix.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>An expression enables (by returning <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>) the file creation process for batches that contain at least one record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett uttryck möjliggör (genom att returnera <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept>) processen för att skapa en fil för batchar som innehåller minst en post.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>File control<ept id="p1">](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Filkontroll<ept id="p1">](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>Basic syntax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grundläggande syntax</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>ER expressions can contain any or all of the following elements:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-uttryck kan innehålla några eller flera av följande element:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Constants</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konstanter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>Operators</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatorer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>References</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Referenser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>Paths</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sökvägar</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Constants</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konstanter</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>When you design expressions, you can use text and numeric constants (that is, values that aren't calculated).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan använda text och numeriska konstanter (värden som inte är beräknade) för att utforma uttryck.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>For example, the expression <bpt id="p1">**</bpt>VALUE ("100") + 20<ept id="p1">**</ept> uses the numeric constant <bpt id="p2">**</bpt>20<ept id="p2">**</ept> and the string constant <bpt id="p3">**</bpt>"100"<ept id="p3">**</ept>, and returns the numeric value <bpt id="p4">**</bpt>120<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I uttrycket <bpt id="p1">**</bpt>VALUE ("100") + 20<ept id="p1">**</ept> används exempelvis den numeriska konstanten <bpt id="p2">**</bpt>20<ept id="p2">**</ept> och strängkonstanten <bpt id="p3">**</bpt>"100"<ept id="p3">**</ept>, och uttrycket returnerar det numeriska värdet <bpt id="p4">**</bpt>120<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>The ER formula designer supports escape sequences.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronisk rapportering (ER) formeldesignern stöder escape-sekvenser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Therefore, you can specify an expression string that should be handled differently.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Därför kan du ange en uttryckssträng som ska hanteras på olika sätt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>For example, the expression <bpt id="p1">**</bpt>"Leo Tolstoy ""War and Peace"" Volume 1"<ept id="p1">**</ept> returns the text string <bpt id="p2">**</bpt>Leo Tolstoy "War and Peace" Volume 1<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel returnerar uttrycket <bpt id="p1">**</bpt>"Leo Tolstoy" "Krig och fred" "Volym 1"<ept id="p1">**</ept> textsträngen <bpt id="p2">**</bpt>Leo Tolstoy "Krig och fred" Volym 1<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>Operators</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatorer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>The following table shows the arithmetic operators that you can use to do basic mathematical operations, such as addition, subtraction, multiplication, and division.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande register visar de aritmetiska operatorer du kan använda för att göra grundläggande matematiska operationer såsom addition, subtraktion, multiplikation och division.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>Operator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatör</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Meaning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betydelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>Addition</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tillägg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>1+2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 + 2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>Subtraction, negation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Subtraktion, negering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>5-2, -1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5-2,-1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Multiplication</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Multiplikation</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>7<ph id="ph1">\*</ph>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7<ph id="ph1">\*</ph>8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>Division</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Indelning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>9/3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9/3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>The following table shows the comparison operators that are supported.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande tabell visar de jämförelseoperatorer som stöds.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>You can use these operators to compare two values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan använda dessa operatorer för att jämföra två värden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>Operator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatör</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>Meaning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betydelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Equal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lika</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>X=Y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X = Y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>Greater than</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Större än</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>X<ph id="ph1">&amp;gt;</ph>Y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;gt;</ph>Y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>Less than</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mindre än</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>X<ph id="ph1">&amp;lt;</ph>Y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;lt;</ph>Y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Greater than or equal to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Större än eller lika med</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>X<ph id="ph1">&amp;gt;</ph>=Y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;gt;</ph>=Y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>Less than or equal to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mindre än eller lika med</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>X<ph id="ph1">&amp;lt;</ph>=Y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;lt;</ph>=Y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Not equal to</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Inte lika med</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>X<ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph>Y</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">X<ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph>Y</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>Additionally, you can use an ampersand (&amp;) as a text concatenation operator.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dessutom kan du använda ett och-tecken (&amp;) som en operator för textkonkatenering.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>In this way, you can join, or concatenate, one or more text strings into a single piece of text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På så sätt kan du koppla eller konkatenera en eller flera textsträngar till ett enda textstycke.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>Operator</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatör</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Meaning</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betydelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>Concatenate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sammanfoga</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>"Nothing to print" &amp; ":<ph id="ph1">&amp;nbsp;</ph>" &amp; "no records found"</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">"Det finns inget att skriva ut" &amp; ":<ph id="ph1">&amp;nbsp;</ph>" &amp; "inga poster hittades"</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>Operator precedence</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatorprioritet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>The order that the parts of a compound expression are evaluated in is important.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ordningen i vilken delarna i ett sammansatt uttryck utvärderas är viktig.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>For example, the result of the expression <bpt id="p1">**</bpt>1 + 4 / 2<ept id="p1">**</ept> varies, depending on whether the addition operation or the division operation is done first.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel är det skillnad på resultatet av uttrycket <bpt id="p1">**</bpt>1 + 4 / 2<ept id="p1">**</ept> beroende på om additionsoperationen eller divisionsoperationen utförs först.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>You can use parentheses to explicitly define how an expression is evaluated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan använda parenteser för att explicit definiera hur ett uttryck utvärderas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>For example, to indicate that the addition operation should be done first, you can change the preceding expression to <bpt id="p1">**</bpt>(1 + 4) / 2<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du till exempel vill ange att additionsoperationen ska göras först kan du ändra det föregående uttrycket till <bpt id="p1">**</bpt>(1 + 4) / 2<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>If you don't explicitly indicate the order of operations in an expression, the order is based on the default precedence that is assigned to the supported operators.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om ordningen för operationer som ska utföras i ett uttryck inte uttryckligen rangordnas baseras ordningen på standardprioriteten som tilldelats de operatorer som stöds.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>The following table shows the precedence that is assigned to each operator.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande register visar den rangordning som tilldelats respektive operator.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Operators that have a higher precedence (for example, 7) are evaluated before operators that have a lower precedence (for example, 1).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatorer som har en högre prioritet (till exempel 7) utvärderas före operatorer med en lägre prioritet (exempelvis 1).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>Precedence</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prioritet</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>Operators</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operatorer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>Syntax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Syntax</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Grouping</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gruppering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>( …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">( …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Member access</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Medlemsåtkomst</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Function call</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktionsanrop</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>( …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">( …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Multiplicative</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Multiplikation</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source><ph id="ph1">\*</ph> …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\*</ph> …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>/ …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">/ …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Additive</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Additiv</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>+ …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">+ …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>- …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>Comparison</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jämförelse</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source><ph id="ph1">&amp;lt;</ph> …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph> …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source><ph id="ph1">&amp;lt;</ph>= …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph>= …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source><ph id="ph1"> =</ph><ph id="ph2">&amp;gt;</ph> …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1"> =</ph><ph id="ph2">&amp;gt;</ph> …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source><ph id="ph1">&amp;gt;</ph> …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;gt;</ph> …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>= …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">= …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source><ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph> …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;lt;</ph><ph id="ph2">&amp;gt;</ph> …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>Separation</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Separation</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>…</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">…</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>, …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">, …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>If an expression includes multiple consecutive operators that have the same precedence, those operations are evaluated from left to right.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om ett uttryck omfattar flera på varandra följande operatorer med samma rangordning, utvärderas dessa åtgärder från vänster till höger.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>For example, the expression <bpt id="p1">**</bpt>1 + 6 / 2 <ph id="ph1">\*</ph> 3 <ph id="ph2">&amp;gt;</ph> 5<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>true<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uttrycket <bpt id="p1">**</bpt>1 + 6 / 2 <ph id="ph1">\*</ph> 3 <ph id="ph2">&amp;gt;</ph> 5<ept id="p1">**</ept> returnerar exempelvis <bpt id="p2">**</bpt>sant<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>We recommend that you use parentheses to explicitly indicate the desired order of operations in expressions, so that the expressions are easier to read and maintain.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vi rekommenderar att du använder parenteser om du explicit vill ange önskad ordning för utvärdering av uttryck så att uttrycken blir enklare att läsa och underhålla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>References</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Referenser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>All data sources of the current ER component that are available during the design of an expression can be used as named references.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alla datakällor för den aktuella ER-komponenten som är tillgängliga under utformningen av ett uttryck kan användas som namngivna referenser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>(The current ER component can be either a model or a format.) For example, the current ER data model contains the <bpt id="p1">**</bpt>ReportingDate<ept id="p1">**</ept> data source, and this data source returns a value of the <bpt id="p2">**</bpt>DATETIME<ept id="p2">**</ept> data type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Den aktuella komponenten ER kan vara antingen en modell eller ett format.) Aktuell ER-datamodell innehåller exempelvis datakällan <bpt id="p1">**</bpt>ReportingDate<ept id="p1">**</ept> och denna datakälla returnerar ett värde av datatypen <bpt id="p2">**</bpt>DATETIME<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>To correctly format that value in the generating document, you can reference the data source in the expression as <bpt id="p1">**</bpt>DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I syfte att korrekt formatera värdet i skapande dokument kan du referera datakällan i uttrycket på följande sätt: <bpt id="p1">**</bpt>DATETIMEFORMAT (ReportingDate, "dd-mm-yyyy")<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark (').</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alla tecken i referenser till en datakälla som inte representerar en bokstav i alfabetet måste föregås av en apostrof (').</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om namnet på en refererad datakälla innehåller minst en symbol som inte representerar inte en bokstav i alfabetet måste namnet visas inom enkla citattecken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>(For example, these non-alphabetic symbols can be punctuation marks or other written symbols.) Here are some examples:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Dessa icke-alfabetiska symboler kan till exempel vara skiljetecken eller andra skrivna symboler.) Här följer några exempel:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>The <bpt id="p1">**</bpt>Today's date &amp; time<ept id="p1">**</ept> data source must be referred to in an ER expression as <bpt id="p2">**</bpt>'Today''s date &amp; time'<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I ett ER-uttryck måste en referens till datakällan <bpt id="p1">**</bpt>dagens datum och tid<ept id="p1">**</ept> skrivas enligt följande <bpt id="p2">**</bpt>'Today''s date &amp; time'<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>The <bpt id="p1">**</bpt>name()<ept id="p1">**</ept> method of the <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> data source must be referred to in an ER expression as <bpt id="p3">**</bpt>Customers.'name()'<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I ett ER-uttryck måste kundens namn <bpt id="p1">**</bpt>name()<ept id="p1">**</ept> för datakällan <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> anges enligt följande <bpt id="p3">**</bpt>Customers.'name()'<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>If the methods of Finance and Operations data sources have parameters, the following syntax is used to call those methods:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om datakällor från Finance and Operations har parametrar måste följande syntax användas för att anropa dessa metoder:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>If the <bpt id="p1">**</bpt>isLanguageRTL<ept id="p1">**</ept> method of the <bpt id="p2">**</bpt>System<ept id="p2">**</ept> data source has an <bpt id="p3">**</bpt>EN-US<ept id="p3">**</ept> parameter of the <bpt id="p4">**</bpt>String<ept id="p4">**</ept> data type, this method must be referred to in an ER expression as <bpt id="p5">**</bpt>System.'isLanguageRTL'("EN-US")<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om metoden <bpt id="p1">**</bpt>isLanguageRTL<ept id="p1">**</ept> i datakällan <bpt id="p2">**</bpt>System<ept id="p2">**</ept> har en <bpt id="p3">**</bpt>EN-US<ept id="p3">**</ept>-parameter av typen <bpt id="p4">**</bpt>String<ept id="p4">**</ept> så måste denna anges på följande sätt <bpt id="p5">**</bpt>System.'isLanguageRTL'("EN-US")<ept id="p5">**</ept> i ett ER-uttryck.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Quotation marks aren't required when a method name contains only alphanumeric symbols.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det krävs inga citationstecken när ett metodnamn innehåller endast alfanumeriska symboler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>However, they are required for a method of a table if the name includes brackets.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dock är de obligatoriska för en metod i en tabell när namnet innehåller parenteser.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>When the <bpt id="p1">**</bpt>System<ept id="p1">**</ept> data source is added to an ER mapping that refers to the <bpt id="p2">**</bpt>Global<ept id="p2">**</ept> Finance and Operations application class, the expression returns the Boolean value <bpt id="p3">**</bpt>FALSE<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När datakällan <bpt id="p1">**</bpt>System<ept id="p1">**</ept> läggs till en ER-mappning som refererar till programklassen <bpt id="p2">**</bpt>Global<ept id="p2">**</ept> Finance and Operations returnerar uttrycket ett booleskt värde <bpt id="p3">**</bpt>FALSE<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>The modified expression <bpt id="p1">**</bpt>System.' isLanguageRTL'("AR")<ept id="p1">**</ept> returns the Boolean value <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det ändrade uttrycket <bpt id="p1">**</bpt>Systemet.' isLanguageRTL'("AR")<ept id="p1">**</ept> returnerar det booleska värdet <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>You can limit the way that values are passed to the parameters of this type of method:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan begränsa hur värden skickas till parametrarna för den här typen av metod:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Only constants can be passed to methods of this type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Endast konstanter kan överföras till metoder av den här typen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>The values of the constants are defined at design time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Värdena för konstanterna definieras i designläge.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>Only primitive (basic) data types are supported for parameters of this type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Endast primitiva (grundläggande) datatyper stöds för parametrar av den här typen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>(The primitive data types are integer, real, Boolean, string, and so on.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Primitiva datatyper är integer, real, boolesk, sträng osv).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Paths</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sökvägar</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>When an expression references a structured data source, you can use the path definition to select a specific primitive element of that data source.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När ett uttryck refererar till en strukturerad datakälla kan du använda sökvägsdefinitionen för att välja ett specifikt primitivt element i den datakällan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>A dot character (.) is used to separate individual elements of a structured data source.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En punkt (.) används för separera enskilda element i en strukturerad datakälla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>For example, the current ER data model contains the <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> data source, and this data source returns a list of records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel innehåller den aktuella ER-datamodellen datakällan <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept>, och denna returnerar en lista över poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>The <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> record structure contains the <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> and <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept> fields, and both these fields return numeric values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poststrukturen <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> innehåller fälten <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> och <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept>, som båda returnerar numeriska värden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Therefore, you can design the following expression to calculate the invoiced amount: <bpt id="p1">**</bpt>InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett uttryck för att beräkna det fakturerade beloppet kan därför utformas på följande sätt: <bpt id="p1">**</bpt>InvoiceTransactions.AmountDebit – InvoiceTransactions.AmountCredit<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>The next section describes the functions that can be used in ER expressions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nästa avsnitt innehåller beskrivningar av de funktioner som kan användas i ER-uttryck.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>All data sources of the expression context (the current ER data model or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alla datakällor i uttryckets sammanhang (aktuell ER-datamodell eller aktuellt ER-format) kan användas som parametrar för anropsfunktioner i enlighet med listan över argument för anropsfunktionen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>Constants can also be used as parameters of calling functions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konstanter kan också användas som parametrar av anropsfunktioner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>For example, the current ER data model contains the <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> data source, and this data source returns a list of records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel innehåller den aktuella ER-datamodellen datakällan <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept>, och denna returnerar en lista över poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>The <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> record structure contains the <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> and <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept> fields, and both these fields return numeric values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Poststrukturen <bpt id="p1">**</bpt>InvoiceTransactions<ept id="p1">**</ept> innehåller fälten <bpt id="p2">**</bpt>AmountDebit<ept id="p2">**</ept> och <bpt id="p3">**</bpt>AmountCredit<ept id="p3">**</ept>, som båda returnerar numeriska värden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: <bpt id="p1">**</bpt>ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett uttryck för att beräkna det fakturerade beloppet kan utformas på följande sätt med hjälp av den inbyggda ER-avrundningsfunktionen: <bpt id="p1">**</bpt>ROUND (InvoiceTransactions.AmountDebit – InvoiceTransactions.AmountCredit, 2)<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>Supported functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktioner som stöds</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>The following tables describe the data manipulation functions that you can use to design ER data models and ER reports.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan användas för att designa ER-datamodeller och ER-rapporter.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>The list of functions isn't fixed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Listan över funktioner är inte fast.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>Developers can extend it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvecklare kan utöka den.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>To see the list of functions that you can use, open the functions pane in the ER formula designer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill se listan över vilka funktioner du kan öppna ska du gå till funktionsfönstret i ER-formeldesignern.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>Date and time functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum- och tidsfunktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>ADDDAYS (datetime, days)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ADDDAYS (datetime, days)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>Add the specified number of days to the specified date/time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lägg till det angivna antalet dagar till det definierade värdet för datum/tid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source><bpt id="p1">**</bpt>ADDDAYS (NOW(), 7)<ept id="p1">**</ept> returns the date and time seven days in the future.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ADDDAYS (NOW(), 7)<ept id="p1">**</ept> returnerar datum och tid sju dagar framöver.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>DATETODATETIME (date)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETODATETIME (date)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Convert the specified date value to a date/time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konvertera det angivna datumvärdet till ett värde för datum/tid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. 'getCurrentDate()')<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>12/24/2015 12:00:00 AM<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. ”getCurrentDate()')<ept id="p1">**</ept> returnerar aktuellt sessionsdatum för Finance and Operations, 2015-12-24 som <bpt id="p2">**</bpt>2015-12-24 12:00:00: 00<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>In this example, <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> is an ER data source of the <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> type and refers to the CompanyInfo table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet är <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> en ER-datakälla av typen <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> och refererar till CompanyInfo-tabellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>NOW ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NOW ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Return the current Finance and Operations application server date and time as a date/time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar aktuellt datum och aktuell tid för Finance and Operations-servern som ett värde datum/tid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>TODAY ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TODAY ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>Return the current Finance and Operations application server date as a date value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar aktuellt datum och aktuell tid för Finance and Operations-servern som ett datumvärde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>NULLDATE ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NULLDATE ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> date value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar date-värdet <bpt id="p1">**</bpt>null<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>NULLDATETIME ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NULLDATETIME ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> date/time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar värdet för datum/tid som <bpt id="p1">**</bpt>noll<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>DATETIMEFORMAT (datetime, format)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEFORMAT (datetime, format)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>Convert the specified date/time value to a string in the specified format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>(For information about the supported formats, see <bpt id="p1">[</bpt>standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> and <bpt id="p2">[</bpt>custom<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Om du vill ha mer information om format som stöds, se <bpt id="p1">[</bpt>Standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> och <bpt id="p2">[</bpt>Anpassat<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "dd-MM-yyyy")<ept id="p1">**</ept> returns the current Finance and Operations application server date, December 24, 2015, as <bpt id="p2">**</bpt>"24-12-2015"<ept id="p2">**</ept>, based on the specified custom format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "dd-MM-yyyy")<ept id="p1">**</ept> returnerar det aktuella datumet för Finance and Operations-serverprogrammet, 2015-12-24, som <bpt id="p2">**</bpt>"2015-12-24"<ept id="p2">**</ept> baserat på det definierade och anpassade formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>DATETIMEFORMAT (datetime, format, culture)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEFORMAT (datetime, format, culture)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>Convert the specified date/time value to a string in the specified format and <bpt id="p1">[</bpt>culture<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och <bpt id="p1">[</bpt>kulturen<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>(For information about the supported formats, see <bpt id="p1">[</bpt>standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> and <bpt id="p2">[</bpt>custom<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Om du vill ha mer information om format som stöds, se <bpt id="p1">[</bpt>Standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> och <bpt id="p2">[</bpt>Anpassat<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "d", "de")<ept id="p1">**</ept> returns the current Finance and Operations application server date, December 24, 2015, as <bpt id="p2">**</bpt>"24.12.2015"<ept id="p2">**</ept>, based on the selected German culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEFORMAT (NOW(), "s", "sv")<ept id="p1">**</ept> returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som <bpt id="p2">**</bpt>"2015-12-24"<ept id="p2">**</ept> baserat på den valda svenska kulturen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>SESSIONTODAY ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SESSIONTODAY ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>Return the current Finance and Operations session date as a date value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera aktuellt datum för Finance and Operations-sessionen som ett datumvärde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>SESSIONNOW ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SESSIONNOW ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>Return the current Finance and Operations session date and time as a date/time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera aktuellt datum och aktuell tid för Finance and Operations-sessionen som ett värde datum/tid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>DATEFORMAT (date, format)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEFORMAT (datum, format)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>Return a string representation of the specified date in the specified format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en sträng som representerar det definierade datumet i det angivna formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source><bpt id="p1">**</bpt>DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>"24-12-2015"<ept id="p2">**</ept>, based on the specified custom format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATEFORMAT (SESSIONTODAY () "dd-MM-yyyy")<ept id="p1">**</ept> returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som <bpt id="p2">**</bpt>"2015-12-24"<ept id="p2">**</ept> baserat på det definierade och anpassade formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>DATEFORMAT (date, format, culture)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEFORMAT (datum, format, kultur)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>Convert the specified date value to a string in the specified format and <bpt id="p1">[</bpt>culture<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade <bpt id="p1">[</bpt>kulturen<ept id="p1">](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>(For information about the supported formats, see <bpt id="p1">[</bpt>standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> and <bpt id="p2">[</bpt>custom<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Om du vill ha mer information om format som stöds, se <bpt id="p1">[</bpt>Standard<ept id="p1">](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx)</ept> och <bpt id="p2">[</bpt>Anpassat<ept id="p2">](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)</ept>.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source><bpt id="p1">**</bpt>DATETIMEFORMAT (SESSIONNOW (), "d", "de")<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>"24.12.2015"<ept id="p2">**</ept>, based on the selected German culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEFORMAT (SESSIONNOW (), "d", "de")<ept id="p1">**</ept> returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som <bpt id="p2">**</bpt>"2015-12-24"<ept id="p2">**</ept> baserat på den valda tyska kulturen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>DAYOFYEAR (date)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DAYOFYEAR (datum)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>Return an integer representation of the number of days between January 1 and the specified date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en heltalsrepresentation av antalet dagar mellan 1 januari och det angivna datumet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>61<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE (”01-03-2016”, ”dd-MM-åååå”))<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>61<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DAYOFYEAR (DATEVALUE (”01-01-2016”, ”dd-MM-åååå”))<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>DAYS (date 1, date 2)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DAGAR (datum 1, datum 2)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source>Return the number of days between the first specified date and the second specified date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera antalet dagar mellan första och andra angivna datum.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>Return a positive value when the first date is later than the second date, return <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar ett positivt värde när det första datumet är senare än det andra, returnerar <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (noll) när det första datumet är lika med det andra, annars ett negativt värde när det första datumet är tidigare än det andra datumet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source><bpt id="p1">**</bpt>DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>-1<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DAYS (TODAY (), DATUMVÄRDE (DATETIMEFORMAT (ADDDAYS(NOW() 1), ”yyyyMMdd”), ”yyyyMMdd”))<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>-1<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>Data conversion functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktioner för datakonvertering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source>DATETODATETIME (date)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETODATETIME (date)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>Convert the specified date value to a date/time value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konvertera det angivna datumvärdet till ett värde för datum/tid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. 'getCurrentDate()')<ept id="p1">**</ept> returns the current Finance and Operations session date, December 24, 2015, as <bpt id="p2">**</bpt>12/24/2015 12:00:00 AM<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETODATETIME (CompInfo. ”getCurrentDate()')<ept id="p1">**</ept> returnerar aktuellt sessionsdatum för Finance and Operations, 2015-12-24 som <bpt id="p2">**</bpt>2015-12-24 12:00:00: 00<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>In this example, <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> is an ER data source of the <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> type and refers to the CompanyInfo table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet är <bpt id="p1">**</bpt>CompInfo<ept id="p1">**</ept> en ER-datakälla av typen <bpt id="p2">**</bpt>Finance and Operations/Table<ept id="p2">**</ept> och refererar till CompanyInfo-tabellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source>DATEVALUE (string, format)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEVALUE (sträng, format)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>Return a date representation of the specified string in the specified format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en datumrepresentation för den definierade strängen i angivet format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source><bpt id="p1">**</bpt>DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")<ept id="p1">**</ept> returns the date December 21, 2016, based on specified custom format and the default application's <bpt id="p2">**</bpt>EN-US<ept id="p2">**</ept> culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")<ept id="p1">**</ept> returnerar datumet 2016-12-24 baserat på angivet anpassat format och standardprogrammets kultur <bpt id="p2">**</bpt>EN-US<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>DATEVALUE (string, format, culture)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATEVALUE (sträng, format, kultur)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>Return a date representation of the specified string in the specified format and culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en datumrepresentation för den definierade strängen enligt angivet format och kultur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source><bpt id="p1">**</bpt>DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")<ept id="p1">**</ept> returns the date January 21, 2016, based on the specified custom format and culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATEVALUE (”21-Gen-2016”, ”dd-MMM-yyyy”, ”IT”)<ept id="p1">**</ept> returnerar datumet januari 21 2016, enligt format och kultur som angivits och anpassats.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>However, <bpt id="p1">**</bpt>DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")<ept id="p1">**</ept> throws an exception to inform the user that the specified string isn't recognized as a valid date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Men <bpt id="p1">**</bpt>DATUMVÄRDE (”21-Gen-2016”, ”dd-MMM-yyyy”, ”EN-US”)<ept id="p1">**</ept> ska utlösa ett undantag som informerar användaren om att den angivna strängen inte identifieras som ett datum.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source>DATETIMEVALUE (string, format)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEVALUE (sträng, format)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>Return a date/time representation of the specified string in the specified format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returner en datum/tidsrepresentation för den definierade strängen i angivet format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source><bpt id="p1">**</bpt>DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")<ept id="p1">**</ept> returns 2:55:00 AM on December 21, 2016, based on the specified custom format and the default application's <bpt id="p2">**</bpt>EN-US<ept id="p2">**</ept> culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")<ept id="p1">**</ept> returnerar 2:55:00: 00 på 21 December 2016 utifrån angivna och anpassade format och standardprogrammets <bpt id="p2">**</bpt>engelska<ept id="p2">**</ept> kultur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source>DATETIMEVALUE (string, format, culture)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DATETIMEVALUE (sträng, format, kultur)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>Return a date/time representation of the specified string in the specified format and culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en datum/tidsrepresentation för den definierade strängen enligt angivet format och kultur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source><bpt id="p1">**</bpt>DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")<ept id="p1">**</ept> returns 2:55:00 AM on December 21, 2016, based on the specified custom format and culture.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>DATETIMEVALUE (”21-Dec-2016 02:55:00”, "dd-MMM-yyyy hh:mm:ss", "IT")<ept id="p1">**</ept> returnerar 2:55:00:00 21 December 2016 utifrån angivna och anpassade format och standardprogrammets italienska kultur.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>However, <bpt id="p1">**</bpt>DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")<ept id="p1">**</ept> throws an exception to inform the user that the specified string isn't recognized as a valid date/time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Men <bpt id="p1">**</bpt>DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")<ept id="p1">**</ept> ska utlösa ett undantag som informerar användaren om att den angivna strängen inte identifieras som ett värde för datum/tid.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source>List functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lista över funktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>SPLIT (input, length)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLIT (input, length)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>Split the specified input string into substrings, each of which has the specified length.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Delar upp den definierade indatasträngen i delsträngar som var och en är av den definierade längden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>Return the result as a new list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar resultatet som en ny lista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returns a new list that consists of two records that have a <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returnerar en ny lista som består av två poster som har ett <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept>-fält.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>The field in the first record contains the text <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept>, and the field in the second record contains the text <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>d<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fältet i den första posten innehåller texten <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept>, och fältet i den andra posten innehåller texten <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>d<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source>SPLIT (input, delimiter)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLIT (indata, avgränsare)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>Split the specified input string into substrings, based on the specified delimiter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Delar upp den definierade indatasträngen i delsträngar baserat på den definierade avgränsaren.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>XAb aBy<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>aB<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns a new list that consists of three records that have a <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>SPLIT (<ph id="ph1">&amp;quot;</ph>XAb aBy<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>aB<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar en ny lista som består av tre poster som har ett <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept>-fältet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source>The field in the first record contains the text <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>X<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept>, the field in the second record contains the text <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>, and the field in the third record contains the text <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>y<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fältet i den första posten innehåller texten <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>X<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept>, fältet i den andra posten innehåller texten <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>, och fältet i den tredje posten innehåller texten <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>y<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>If the delimiter is empty, a new list is returned that consists of one record that has a <bpt id="p1">&lt;strong&gt;</bpt>STRING<ept id="p1">&lt;/strong&gt;</ept> field that contains the input text.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om avgränsaren är tom returneras en ny lista som består av en post med ett <bpt id="p1">&lt;strong&gt;</bpt>STRING<ept id="p1">&lt;/strong&gt;</ept>-fält som innehåller indatatexten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source>If the input is empty, a new empty list is returned.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om indata är tomt returneras en tom ny lista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>If either the input or the delimiter is unspecified (null), an application exception is thrown.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om antingen indata eller avgränsaren är ospecificerad (null) kastas ett programundantag.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source>SPLITLIST (list, number)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLITLIST (list, number)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>Split the specified list into batches, each of which contains the specified number of records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Delar upp den angivna listan i batchar som var och en innehåller det definierade antalet poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>Return the result as a new list of batches that contains the following elements:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar resultatet som en ny lista med batchar som innehåller följande element:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>Batches as regular lists (<bpt id="p1">&lt;strong&gt;</bpt>Value<ept id="p1">&lt;/strong&gt;</ept> component)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Batchar som vanliga listor (<bpt id="p1">&lt;strong&gt;</bpt>Värde<ept id="p1">&lt;/strong&gt;</ept> komponent)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source>The current batch number (<bpt id="p1">&lt;strong&gt;</bpt>BatchNumber<ept id="p1">&lt;/strong&gt;</ept> component)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det aktuella batchnumret (<bpt id="p1">&lt;strong&gt;</bpt>Batchnummer<ept id="p1">&lt;/strong&gt;</ept> component)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>In the following illustration, a <bpt id="p1">&lt;strong&gt;</bpt>Lines<ept id="p1">&lt;/strong&gt;</ept> data source is created as a record list of three records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande bild visar hur en datakälla på en <bpt id="p1">&lt;strong&gt;</bpt>rad<ept id="p1">&lt;/strong&gt;</ept> skapas av tre poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source>This list is divided into batches, each of which contains up to two records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här listan är indelad i batchar som innehåller högst två poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>The following illustration shows the designed format layout.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande illustration visar layouten på det designade formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source>In this format layout, bindings to the <bpt id="p1">&lt;strong&gt;</bpt>Lines<ept id="p1">&lt;/strong&gt;</ept> data source are created to generate output in XML format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den här formatlayouten skapas bindningar till datakällans <bpt id="p1">&lt;strong&gt;</bpt>rader<ept id="p1">&lt;/strong&gt;</ept> för att skapa utdata i XML-format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>This output presents individual nodes for each batch and the records in it.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dessa utdata visar enskilda noder för varje batch och poster i den.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source>The following illustration shows the result when the designed format is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande illustration visar resultatet när det designade formatet har körts.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>LIST (record 1 [, record 2, …])</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIST (post 1 [, post 2, ...])</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source>Return a new list that is created from the specified arguments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en ny lista som skapas från de definierade argumenten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>LIST (model.MainData, model.OtherData)<ept id="p1">&lt;/strong&gt;</ept> returns an empty record, where the list of fields contains all fields of the <bpt id="p2">&lt;strong&gt;</bpt>MainData<ept id="p2">&lt;/strong&gt;</ept> and <bpt id="p3">&lt;strong&gt;</bpt>OtherData<ept id="p3">&lt;/strong&gt;</ept> record lists.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LIST (model.MainData, model.OtherData)<ept id="p1">&lt;/strong&gt;</ept> returnerar en tom post där fältlistan innehåller alla fält i postlistorna <bpt id="p2">&lt;strong&gt;</bpt>MainData<ept id="p2">&lt;/strong&gt;</ept> och <bpt id="p3">&lt;strong&gt;</bpt>OtherData<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>LISTJOIN (list 1, list 2, …)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTJOIN (list 1, list 2, ...)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>Return a joined list that is created from lists of specified arguments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en konkatenerad lista som skapas från listor med definierade argument.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>LISTJOIN (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1), SPLIT (<ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> returns a list of six records, where one field of the <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> data type contains single letters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LISTJOIN (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1), SPLIT (<ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> returnerar en lista över sex poster där ett fält i datatypen <bpt id="p2">&lt;strong&gt;</bpt>STRING<ept id="p2">&lt;/strong&gt;</ept> innehåller enskilda bokstäver.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>ISEMPTY (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISEMPTY (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source>Return <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept> if the specified list contains no elements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept> om den definierade listan inte innehåller några element.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>Otherwise, return <bpt id="p1">&lt;strong&gt;</bpt>FALSE<ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars returneras <bpt id="p1">&lt;strong&gt;</bpt>FALSKT<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source>EMPTYLIST (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EMPTYLIST (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>Return an empty list by using the specified list as a source for the list structure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en tom lista genom att använda den definierade en lista som källa för liststrukturen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>EMPTYLIST (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> returns a new empty list that has the same structure as the list that is returned by the <bpt id="p2">&lt;strong&gt;</bpt>SPLIT<ept id="p2">&lt;/strong&gt;</ept> function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>EMPTYLIST (SPLIT (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, 1))<ept id="p1">&lt;/strong&gt;</ept> returnerar en ny tom lista som har samma struktur som listan som returneras av funktionen <bpt id="p2">&lt;strong&gt;</bpt>SPLIT<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>FIRST (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIRST (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source>Return the first record of the specified list, if that record isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar den första posten i den definierade listan, om posten inte är tom.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Otherwise, throw an exception.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I annat fall kastas ett undantag.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>FIRSTORNULL (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FIRSTORNULL (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source>Return the first record of the specified list, if that record isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar den första posten i den definierade listan, om posten inte är tom.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>Otherwise, return a <bpt id="p1">&lt;strong&gt;</bpt>null<ept id="p1">&lt;/strong&gt;</ept> record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I annat fall returneras en <bpt id="p1">&lt;strong&gt;</bpt>null<ept id="p1">&lt;/strong&gt;</ept>-post.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source>LISTOFFIRSTITEM (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTOFFIRSTITEM (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>Return a list that contains only the first item of the specified list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en lista som endast innehåller det första objektet i den definierade listan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source>ALLITEMS (path)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALLITEMS (path)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="447">
-          <source>This function runs as an in-memory selection.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här funktionen körs som ett urval i minnet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="448">
-          <source>It returns a new flattened list that represents all items that match the specified path.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="449">
-          <source>The path must be defined as a valid data source path of a data source element of a record list data type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista”.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="450">
-          <source>Data elements such as the path string and date should raise an error in the ER expression builder at design time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataelement som sökväg och datum bör skapa ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="451">
-          <source>If you enter <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph> , 2)<ept id="p1">&lt;/strong&gt;</ept> as a data source (DS), <bpt id="p2">&lt;strong&gt;</bpt>COUNT( ALLITEMS (DS.Value))<ept id="p2">&lt;/strong&gt;</ept> returns <bpt id="p3">&lt;strong&gt;</bpt>3<ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du anger <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph> , 2)<ept id="p1">&lt;/strong&gt;</ept> som en datakälla (DS), returnerar <bpt id="p2">&lt;strong&gt;</bpt>COUNT( ALLITEMS (DS.Value))<ept id="p2">&lt;/strong&gt;</ept> <bpt id="p3">&lt;strong&gt;</bpt>3<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="452">
-          <source>ALLITEMSQUERY (path)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ALLITEMSQUERY (sökväg)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="453">
-          <source>This function runs as a joined SQL query.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här funktionen körs som en sammanslagen SQL-fråga.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="454">
-          <source>It returns a new flattened list that represents all items that match the specified path.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="455">
-          <source>The specified path must be defined as a valid data source path of a data source element of a record list data type, and it must contain at least one relation.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">De angivna sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista” och den måste innehålla minst en relation.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="456">
-          <source>Data elements such as the path string and date should raise an error in the ER expression builder at design time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dataelement som sökväg och datum bör skapa ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="457">
-          <source>Define the following data sources in your model mapping:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definiera följande datakällor i din modellmappning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="458">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>CustInv<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Table records<ept id="p2">&lt;/strong&gt;</ept> type), which refers to the CustInvoiceTable table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>CustInv<ept id="p1">&lt;/strong&gt;</ept> (typen <bpt id="p2">&lt;strong&gt;</bpt>Registerposter<ept id="p2">&lt;/strong&gt;</ept>), som refererar till tabellen CustInvoiceTable</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="459">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>FilteredInv<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type), which contains the expression <bpt id="p3">&lt;strong&gt;</bpt>FILTER (CustInv, CustInv.InvoiceAccount = <ph id="ph1">&amp;quot;</ph>US-001<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>FilteredInv<ept id="p1">&lt;/strong&gt;</ept> (typen <bpt id="p2">&lt;strong&gt;</bpt>beräknat fält<ept id="p2">&lt;/strong&gt;</ept>), som innehåller uttrycket <bpt id="p3">&lt;strong&gt;</bpt>FILTER (CustInv, CustInv.InvoiceAccount = <ph id="ph1">&amp;quot;</ph>US-001<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="460">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type), which contains the expression <bpt id="p3">&lt;strong&gt;</bpt>ALLITEMSQUERY (FilteredInv.'<ph id="ph1">&amp;lt;</ph>Relations'.CustInvoiceJour.'<ph id="ph2">&amp;lt;</ph>Relations'.CustInvoiceTrans)<ept id="p3">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept> (typen <bpt id="p2">&lt;strong&gt;</bpt>beräknat fält<ept id="p2">&lt;/strong&gt;</ept> ), som innehåller uttrycket <bpt id="p3">&lt;strong&gt;</bpt>ALLITEMSQUERY (FilteredInv.'<ph id="ph1">&amp;lt;</ph>Relations'.CustInvoiceJour.'<ph id="ph2">&amp;lt;</ph>Relations'.CustInvoiceTrans)<ept id="p3">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="461">
-          <source>When you run your model mapping to call the <bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept> data source, the following SQL statement is run:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du kör en modellmappning att anropa datakällan <bpt id="p1">&lt;strong&gt;</bpt>JourLines<ept id="p1">&lt;/strong&gt;</ept>, kör följande SQL-sats:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="462">
-          <source>SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VÄLJ ... FRÅN CUSTINVOICETABLE T1 KORSKOPPLA CUSTINVOICEJOUR T2 KORSKOPPLA CUSTINVOICETRANS T3 DÄR...</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="463">
-          <source>ORDERBY (list [, expression 1, expression 2, …])</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ORDERBY (list [, expression 1, expression 2, …])</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="464">
-          <source>Return the specified list after it has been sorted according to the specified arguments.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den angivna listan efter att den sorterats enligt de angivna argumenten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="465">
-          <source>These arguments can be defined as expressions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan definiera följande argument som uttryck.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="466">
-          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>ORDERBY (Vendors, Vendors.'name()')<ept id="p2">&lt;/strong&gt;</ept> returns a list of vendors that is sorted by name in ascending order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> konfigureras som en ER-datakälla som refererar till tabellen VendTable, <bpt id="p2">&lt;strong&gt;</bpt>ORDERBY (Vendors, Vendors.'name()')<ept id="p2">&lt;/strong&gt;</ept> returneras en lista med leverantörerna sorterade efter namn i stigande ordning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="467">
-          <source>REVERSE (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">REVERSE (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="468">
-          <source>Return the specified list in reversed sort order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar den definierade listan i omvänd sorteringsordning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="469">
-          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )<ept id="p2">&lt;/strong&gt;</ept> returns a list of vendors that is sorted by name in descending order.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> konfigureras som en ER-datakälla som refererar till tabellen VendTable, <bpt id="p2">&lt;strong&gt;</bpt>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )<ept id="p2">&lt;/strong&gt;</ept> returneras en lista med leverantörerna sorterade efter namn i fallande ordning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="470">
-          <source>WHERE (list, condition)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WHERE (list, condition)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="471">
-          <source>Return the specified list after it has been filtered according to the specified condition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den angivna listan efter att den filtrerats enligt de angivna argumenten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="472">
-          <source>The specified condition is applied to the list in memory.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det angivna villkoret används i listan i minnet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="473">
-          <source>In this way, the <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> function differs from the <bpt id="p2">&lt;strong&gt;</bpt>FILTER<ept id="p2">&lt;/strong&gt;</ept> function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På så sätt kan funktionen <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> skilja sig från funktionen <bpt id="p2">&lt;strong&gt;</bpt>FILTER<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="474">
-          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>WHERE(Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> returns a list of just the vendors that belong to vendor group 40.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <bpt id="p2">&lt;strong&gt;</bpt>WHERE(Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> en lista över just de leverantörer som ingår i leverantörsgrupp 40.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="475">
-          <source>ENUMERATE (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ENUMERATE (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="476">
-          <source>Return a new list that consists of enumerated records of the specified list, and that exposes the following elements:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en ny lista som består av fasta poster i den definierade listan och som visar följande element:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="477">
-          <source>Specified list records as regular lists (<bpt id="p1">&lt;strong&gt;</bpt>Value<ept id="p1">&lt;/strong&gt;</ept> component)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Definierade listposter som vanliga listor (<bpt id="p1">&lt;strong&gt;</bpt>Värde<ept id="p1">&lt;/strong&gt;</ept> komponent)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="478">
-          <source>The current record index (<bpt id="p1">&lt;strong&gt;</bpt>Number<ept id="p1">&lt;/strong&gt;</ept> component)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den aktuella postens index (<bpt id="p1">&lt;strong&gt;</bpt>Nummer<ept id="p1">&lt;/strong&gt;</ept> komponent)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="479">
-          <source>In the following illustration, an <bpt id="p1">&lt;strong&gt;</bpt>Enumerated<ept id="p1">&lt;/strong&gt;</ept> data source is created as an enumerated list of vendor records from the <bpt id="p2">&lt;strong&gt;</bpt>Vendors<ept id="p2">&lt;/strong&gt;</ept> data source that refers to the VendTable table.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I följande illustration har datakällan <bpt id="p1">&lt;strong&gt;</bpt>Enumerated<ept id="p1">&lt;/strong&gt;</ept> skapat en numrerad lista över leverantörsposter från datakällan <bpt id="p2">&lt;strong&gt;</bpt>Vendors<ept id="p2">&lt;/strong&gt;</ept> som refererar till tabellen VendTable.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="480">
-          <source>The following illustration shows the format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På bilden nedan visas formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="481">
-          <source>In this format, data bindings are created to generate output in XML format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I den här formatlayouten skapas bindningar för att skapa utdata i XML-format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="482">
-          <source>This output presents individual vendors as enumerated nodes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dessa utdata visar enskilda leverantörer som fasta noder.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="483">
-          <source>The following illustration shows the result when the designed format is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande illustration visar resultatet när det designade formatet har körts.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="484">
-          <source>COUNT (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COUNT (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="485">
-          <source>Return the number of records in the specified list, if the list isn't empty.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det antalet poster i den definierade i listan, om listan inte är tom.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="486">
-          <source>Otherwise, return <bpt id="p1">&lt;strong&gt;</bpt>0<ept id="p1">&lt;/strong&gt;</ept> (zero).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars returneras <bpt id="p1">&lt;strong&gt;</bpt>0<ept id="p1">&lt;/strong&gt;</ept> (noll).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="487">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>COUNT (SPLIT(<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph> , 3))<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt>2<ept id="p2">&lt;/strong&gt;</ept>, because the <bpt id="p3">&lt;strong&gt;</bpt>SPLIT<ept id="p3">&lt;/strong&gt;</ept> function creates a list that consists of two records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>COUNT (SPLIT(<ph id="ph1">&amp;quot;</ph>abcd<ph id="ph2">&amp;quot;</ph> , 3))<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt>2<ept id="p2">&lt;/strong&gt;</ept> eftersom funktionen <bpt id="p3">&lt;strong&gt;</bpt>SPLIT<ept id="p3">&lt;/strong&gt;</ept> skapar en lista som består av två poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="488">
-          <source>LISTOFFIELDS (path)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTOFFIELDS (sökväg)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="489">
-          <source>Return a record list that is created from an argument of one of the following types:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en postlista som har skapats av ett argument tillhörande en av följande typer:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="490">
-          <source>Model enumeration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uppräkning för modell</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="491">
-          <source>Format enumeration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formatuppräkning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="492">
-          <source>Container</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Behållare</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="493">
-          <source>The list that is created consists of records that have the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Listan som skapas består av poster som innehåller följande fält:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="494">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Namn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="495">
-          <source>Label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etikett</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="496">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="497">
-          <source>At runtime, the <bpt id="p1">&lt;strong&gt;</bpt>Label<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Description<ept id="p2">&lt;/strong&gt;</ept> fields return values that are based on the format's language settings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I samband med körning returnerar fälten <bpt id="p1">&lt;strong&gt;</bpt>Label<ept id="p1">&lt;/strong&gt;</ept> och <bpt id="p2">&lt;strong&gt;</bpt>Description<ept id="p2">&lt;/strong&gt;</ept> värden baserade på formatets språkinställningar.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="498">
-          <source>In the following illustration, an enumeration is introduced in a data model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I följande illustration introduceras en uppräkning i datamodellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="499">
-          <source>The following illustration shows these details:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Illustrationen som följer visar dessa detaljer:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="500">
-          <source>The model enumeration is inserted into a report as a data source.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modelluppräkningen har infogats i en rapport som en datakälla.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="501">
-          <source>An ER expression uses the model enumeration as a parameter of the <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-uttryck använder uppräkningsmodellen som en parameter för funktionen <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="502">
-          <source>A data source of the record list type is inserted into a report by using the ER expression that is created.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En datakälla av typen postlista infogas i en rapport med hjälp av det ER-uttryck som skapats.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="503">
-          <source>The following example shows the ER format elements that are bound to the data source of the record list type that was created by using the <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande exempel visar de ER-formatelement som är kopplade till en datakälla av typen postlista som skapats med funktionen <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="504">
-          <source>The following illustration shows the result when the designed format is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande illustration visar resultatet när det designade formatet har körts.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="505">
-          <source>Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Baserat på språkinställningarna i de överordnade FILE- och FOLDER-elementen infogas översatt text för etiketter och beskrivningar i utdata till ER-formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="506">
-          <source>LISTOFFIELDS (path, language)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LISTOFFIELDS (sökvägen, språk)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="507">
-          <source>Return a record list that is created from an argument, such as a model enumeration, a format enumeration, or a container.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en postlista som skapas från ett argument, t ex en modelluppräkning, en formatuppräkning eller en behållare.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="508">
-          <source>The list that is created consists of records that have the following fields:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Listan som skapas består av poster som innehåller följande fält:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="509">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Namn</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="510">
-          <source>Label</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Etikett</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="511">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="512">
-          <source>Is translated</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Är översatt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="513">
-          <source>At runtime, the <bpt id="p1">&lt;strong&gt;</bpt>Label<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>Description<ept id="p2">&lt;/strong&gt;</ept> fields return values that are based on the format's language settings and the specified language.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I samband med körning returnerar fälten <bpt id="p1">&lt;strong&gt;</bpt>Label<ept id="p1">&lt;/strong&gt;</ept> och <bpt id="p2">&lt;strong&gt;</bpt>Description<ept id="p2">&lt;/strong&gt;</ept> värden baserade på formatets språkinställningar och angivet språk.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="514">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>Is translated<ept id="p1">&lt;/strong&gt;</ept> field indicates that the <bpt id="p2">&lt;strong&gt;</bpt>Label<ept id="p2">&lt;/strong&gt;</ept> field has been translated into the specified language.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Fältet <bpt id="p1">&lt;strong&gt;</bpt>Is translated<ept id="p1">&lt;/strong&gt;</ept> anger att fältet <bpt id="p2">&lt;strong&gt;</bpt>Label<ept id="p2">&lt;/strong&gt;</ept> har översatts till det angivna språket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="515">
-          <source>For example, you use the <bpt id="p1">&lt;strong&gt;</bpt>Calculated field<ept id="p1">&lt;/strong&gt;</ept> data source type to configure the <bpt id="p2">&lt;strong&gt;</bpt>enumType_de<ept id="p2">&lt;/strong&gt;</ept> and <bpt id="p3">&lt;strong&gt;</bpt>enumType_deCH<ept id="p3">&lt;/strong&gt;</ept> data sources for the <bpt id="p4">&lt;strong&gt;</bpt>enumType<ept id="p4">&lt;/strong&gt;</ept> data model enumeration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel kan du använda datakälltypen <bpt id="p1">&lt;strong&gt;</bpt>Calculated field<ept id="p1">&lt;/strong&gt;</ept> för att konfigurera datakällor för <bpt id="p2">&lt;strong&gt;</bpt>enumType_de<ept id="p2">&lt;/strong&gt;</ept> och <bpt id="p3">&lt;strong&gt;</bpt>enumType_deCH<ept id="p3">&lt;/strong&gt;</ept> till uppräkning av datamodell <bpt id="p4">&lt;strong&gt;</bpt>enumType<ept id="p4">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="516">
-          <source>enumType_de = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de<ph id="ph2">&amp;quot;</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enumType_de = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de<ph id="ph2">&amp;quot;</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="517">
-          <source>enumType_deCH = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de-CH<ph id="ph2">&amp;quot;</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">enumType_deCH = <bpt id="p1">&lt;strong&gt;</bpt>LISTOFFIELDS<ept id="p1">&lt;/strong&gt;</ept> (enumType, <ph id="ph1">&amp;quot;</ph>de-CH<ph id="ph2">&amp;quot;</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="518">
-          <source>In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här fallet kan du använda följande uttryck för att få etiketten på uppräkningsvärdet på tyska (Schweiz), om denna översättning är tillgänglig.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="519">
-          <source>If the Swiss German translation isn't available, the label is in German.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om schweizisk tysk översättning inte är tillgänglig är etiketten på tyska.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="520">
-          <source>IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="521">
-          <source>STRINGJOIN (list, field name, delimiter)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">STRINGJOIN (lista, fältnamn, avgränsare)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="522">
-          <source>Return a string that consists of concatenated values of the specified field from the specified list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en sträng som består av de konkatenerade värdena från det definierade fältet från den angivna listan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="523">
-          <source>The values are separated by the specified delimiter.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Värdena avgränsas med angivna avgränsare.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="524">
-          <source>If you enter <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> , 1)<ept id="p1">&lt;/strong&gt;</ept> as a data source (DS), <bpt id="p2">&lt;strong&gt;</bpt>STRINGJOIN (DS, DS.Value, <ph id="ph3">&amp;quot;</ph><ph id="ph4">-</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> returns <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>a-b-c<ph id="ph7">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du anger <bpt id="p1">&lt;strong&gt;</bpt>SPLIT(<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> , 1)<ept id="p1">&lt;/strong&gt;</ept> som datakälla (DS), <bpt id="p2">&lt;strong&gt;</bpt>STRINGJOIN (DS, DS.Value, <ph id="ph3">&amp;quot;</ph><ph id="ph4">-</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> returnerar <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>a-b-c<ph id="ph7">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="525">
-          <source>SPLITLISTBYLIMIT (list, limit value, limit source)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPLITLISTBYLIMIT (lista, gränsvärde, gränskälla)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="526">
-          <source>Split the specified list into a new list of sub-lists, and return the result in record list content.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dela angiven lista i en ny lista bestående av underlistor och returnera resultatet i form av innehåll i en postlista.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="527">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>limit value<ept id="p1">&lt;/strong&gt;</ept> parameter defines the value of the limit for splitting the original list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametern <bpt id="p1">&lt;strong&gt;</bpt>gränsvärde<ept id="p1">&lt;/strong&gt;</ept> definierar värdet på den gräns som delar ursprungslistan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="528">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>limit source<ept id="p1">&lt;/strong&gt;</ept> parameter defines the step that the total sum is increased on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametern <bpt id="p1">&lt;strong&gt;</bpt>gränsvärde<ept id="p1">&lt;/strong&gt;</ept> definierar värdet på den gräns som delar ursprungslistan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="529">
-          <source>The limit isn't applied to a single item of the original list if the limit source exceeds the defined limit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gränsen tillämpas inte på en enskild artikel i ursprungslistan när gränskällan överskrider angiven gräns.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="530">
-          <source>The following illustration shows a format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">På bilden nedan visas ett format.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="531">
-          <source>The following illustration shows the data sources that are used for the format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I följande illustrationer visar de datakällor som används för det formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="532">
-          <source>The following illustration shows the result when the format is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande illustration visar resultatet när formatet har körts.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="533">
-          <source>In this case, the output is a flat list of commodity items.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här fallet är resultatet en förenklad lista över varuartiklar.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="534">
-          <source>In the following illustrations, the same format has been adjusted so that it presents the list of commodity items in batches when a single batch must include commodities and the total weight should not exceed the limit of 9.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I följande exempel visas samma format som har justerats för att visa listan med varuartiklar i batchar, där varje enskild batch måste innehålla varuartiklar och inte överskrida gränsen på 9.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="535">
-          <source>The following illustration shows the result when the adjusted format is run.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande illustration visar resultatet när det anpassade formatet har körts.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="536">
-          <source>The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="537">
-          <source>Use either the <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> function or the <bpt id="p2">&lt;strong&gt;</bpt>Enabled<ept id="p2">&lt;/strong&gt;</ept> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Använd antingen funktionen <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> eller uttrycket <bpt id="p2">&lt;strong&gt;</bpt>Enabled<ept id="p2">&lt;/strong&gt;</ept> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering, efter behov.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="538">
-          <source>FILTER (list, condition)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FILTER (list, villkor)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="539">
-          <source>Return the specified list after the query has been modified to filter for the specified condition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den angivna listan efter att frågan har ändrats för att filtrerats enligt de angivna villkoren.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="540">
-          <source>This function differs from the <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> function, because the specified condition is applied to any ER data source of the <bpt id="p2">&lt;strong&gt;</bpt>Table records<ept id="p2">&lt;/strong&gt;</ept> type at the database level.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till skillnad från funktionen <bpt id="p1">&lt;strong&gt;</bpt>WHERE<ept id="p1">&lt;/strong&gt;</ept> tillämpas angivet villkor på alla ER-datakällor av typen <bpt id="p2">&lt;strong&gt;</bpt>Table records<ept id="p2">&lt;/strong&gt;</ept> på databasnivå.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="541">
-          <source>The list and condition can be defined by using tables and relations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Listan och villkoret kan definieras med hjälp av tabeller och relationer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="542">
-          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, <bpt id="p2">&lt;strong&gt;</bpt>FILTER (Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> returns a list of just the vendors that belong to vendor group 40.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <bpt id="p2">&lt;strong&gt;</bpt>FILTER(Vendors, Vendors.VendGroup = <ph id="ph1">&amp;quot;</ph>40<ph id="ph2">&amp;quot;</ph>)<ept id="p2">&lt;/strong&gt;</ept> en lista över just de leverantörer som ingår i leverantörsgrupp 40.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="543">
-          <source>If <bpt id="p1">&lt;strong&gt;</bpt>Vendor<ept id="p1">&lt;/strong&gt;</ept> is configured as an ER data source that refers to the VendTable table, and if <bpt id="p2">&lt;strong&gt;</bpt>parmVendorBankGroup<ept id="p2">&lt;/strong&gt;</ept> is configured as an ER data source that returns a value of the <bpt id="p3">&lt;strong&gt;</bpt>String<ept id="p3">&lt;/strong&gt;</ept> data type, <bpt id="p4">&lt;strong&gt;</bpt>FILTER (Vendor.'<ph id="ph1">&amp;lt;</ph>Relations'.VendBankAccount, Vendor.'<ph id="ph2">&amp;lt;</ph>Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)<ept id="p4">&lt;/strong&gt;</ept> returns a list of just the vendor accounts that belong to a specific bank group.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om <bpt id="p1">&lt;strong&gt;</bpt>Leverantör<ept id="p1">&lt;/strong&gt;</ept> konfigureras som en ER-datakälla som hänvisar till registret och om <bpt id="p2">&lt;strong&gt;</bpt>parmVendorBankGroup<ept id="p2">&lt;/strong&gt;</ept> konfigureras som en ER-datakälla som returnerar ett värde av datatypen <bpt id="p3">&lt;strong&gt;</bpt>Sträng<ept id="p3">&lt;/strong&gt;</ept>, returnerar <bpt id="p4">&lt;strong&gt;</bpt>FILTER (Vendor.'<ph id="ph1">&amp;lt;</ph>Relations'.VendBankAccount, Vendor.'<ph id="ph2">&amp;lt;</ph>Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)<ept id="p4">&lt;/strong&gt;</ept> en lista över just de leverantörskonton som tillhör en viss bankgrupp.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="544">
-          <source>INDEX (list, index)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INDEX (lista, index)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="545">
-          <source>This function returns a record that is selected by a specific numeric index in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här funktionen returnerar en post som väljs av ett specifikt numeriskt index i listan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="546">
-          <source>An exception is thrown if the index is out of range of the records in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett undantag erhålls om indexet ligger utanför intervallet för posterna i listan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="547">
-          <source>If you enter the data source <bpt id="p1">&lt;strong&gt;</bpt>DS<ept id="p1">&lt;/strong&gt;</ept> for the <bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type and it contains the expression <bpt id="p3">&lt;strong&gt;</bpt>SPLIT ("A|B|C", “|”), 2<ept id="p3">&lt;/strong&gt;</ept>, the expression <bpt id="p4">&lt;strong&gt;</bpt>DS.Value<ept id="p4">&lt;/strong&gt;</ept> returns the text value, “B”.</source><target logoport:matchpercent="0" state="translated" state-qualifier="fuzzy-match">Om du anger datakällans <bpt id="p1">&lt;strong&gt;</bpt>DS<ept id="p1">&lt;/strong&gt;</ept> för typen <bpt id="p2">&lt;strong&gt;</bpt>Beräknat fält<ept id="p2">&lt;/strong&gt;</ept> och den innehåller uttrycket <bpt id="p3">&lt;strong&gt;</bpt>SPLIT ("A|B|C", “|”), 2<ept id="p3">&lt;/strong&gt;</ept>, kommer uttrycket <bpt id="p4">&lt;strong&gt;</bpt>DS.Value<ept id="p4">&lt;/strong&gt;</ept> returnera textvärdet “B”.</target>
-        </trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="548">
-          <source>The expression <bpt id="p1">&lt;strong&gt;</bpt>INDEX (SPLIT ("A|B|C", “|”), 2).Value<ept id="p1">&lt;/strong&gt;</ept> also returns the “B” text value.</source>
-        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Uttrycket <bpt id="p1">&lt;strong&gt;</bpt>INDEX (SPLIT ("A|B|C", “|”), 2).Value<ept id="p1">&lt;/strong&gt;</ept> returnerar även text värde "B".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="549">
-          <source>Logical functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Logiska funktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="550">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="551">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="552">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="553">
-          <source>CASE (expression, option 1, result 1 <ph id="ph1">\[</ph>, option 2, result 2<ph id="ph2">\]</ph> …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CASE (expression, option 1, result 1 <ph id="ph1">\[</ph>, option 2, result 2<ph id="ph2">\]</ph> …</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="554">
-          <source><ph id="ph1">\[</ph>, default result<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">\[</ph>, default result<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="555">
-          <source>Evaluate the specified expression value against the specified alternative options.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utvärderar det definierade uttryckets värde mot de definierade alternativa alternativen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="556">
-          <source>Return the result of the option that equals the value of the expression.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera resultatet av alternativet som är lika med värdet av uttrycket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="557">
-          <source>Otherwise, return the optional default result, if a default result is specified.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera annars det valfria standardresultatet, om ett sådant har angetts.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="558">
-          <source>(The default result is the last parameter that isn't preceded by an option.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Standardresultatet är den sista parametern som inte föregås av ett alternativ.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="559">
-          <source><bpt id="p1">**</bpt>CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")<ept id="p1">**</ept> returns the string <bpt id="p2">**</bpt>"WINTER"<ept id="p2">**</ept> when the current Finance and Operations session date is between October and December.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "VINTER", "11", "VINTER", "12", "VINTER", "")<ept id="p1">**</ept> returnerar strängen <bpt id="p2">**</bpt>"VINTER"<ept id="p2">**</ept> om det aktuella Finance and Operations-sessionsdatumet är mellan oktober och december.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="560">
-          <source>Otherwise, it returns a blank string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars returneras en tom sträng.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="561">
-          <source>IF (condition, value 1, value 2)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">IF (condition, value 1, value 2)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="562">
-          <source>Return the first specified value when the specified condition is met.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera det första definierade värdet när det definierade villkoret uppfylls.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="563">
-          <source>Otherwise, return the second specified value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera annars det andra angivna värdet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="564">
-          <source>If value 1 and value 2 are records or record lists, the result has only the fields that exist in both lists.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om värde 1 och värde 2 är poster eller postlistor, har resultatet enbart de fält som finns med i båda listorna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="565">
-          <source><bpt id="p1">**</bpt>IF (1=2, "condition is met", "condition is not met")<ept id="p1">**</ept> returns the string <bpt id="p2">**</bpt>"condition is not met"<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>IF (1=2, "condition is met", "condition is not met")<ept id="p1">**</ept> returnerar strängen <bpt id="p2">**</bpt>"villkoret är inte uppfyllt"<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="566">
-          <source>NOT (condition)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NOT (condition)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="567">
-          <source>Return the reversed logical value of the specified condition.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det omvända logiska värdet för det definierade kriteriet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="568">
-          <source><bpt id="p1">**</bpt>NOT (TRUE)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NOT (SANT)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>FALSKT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="569">
-          <source>AND (condition 1<ph id="ph1">\[</ph>, condition 2, …<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">OCH (villkor 1<ph id="ph1">\[</ph>, villkor 2, …<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="570">
-          <source>Return <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> if <bpt id="p2">*</bpt>all<ept id="p2">*</ept> specified conditions are true.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar <bpt id="p1">**</bpt>SANT<ept id="p1">**</ept> om <bpt id="p2">*</bpt>alla<ept id="p2">*</ept> definierade kriterier är sanna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="571">
-          <source>Otherwise, return <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars returneras <bpt id="p1">**</bpt>FALSKT<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="572">
-          <source><bpt id="p1">**</bpt>AND (1=1, "a"="a")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AND (1=1, "a"="a")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>SANT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="573">
-          <source><bpt id="p1">**</bpt>AND (1=2, "a"="a")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>AND (1=2, "a"="a")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>FALSKT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="574">
-          <source>OR (condition 1<ph id="ph1">\[</ph>, condition 2, …<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ELLER (villkor 1<ph id="ph1">\[</ph>, villkor 2, ...<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="575">
-          <source>Return <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept> if <bpt id="p2">*</bpt>all<ept id="p2">*</ept> specified conditions are false.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar <bpt id="p1">**</bpt>FALSKT<ept id="p1">**</ept> om <bpt id="p2">*</bpt>alla<ept id="p2">*</ept> definierade kriterier är falska.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="576">
-          <source>Return <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> if <bpt id="p2">*</bpt>any<ept id="p2">*</ept> specified condition is true.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar <bpt id="p1">**</bpt>SANT<ept id="p1">**</ept> om <bpt id="p2">*</bpt>något<ept id="p2">*</ept> av de definierade kriterierna är sant.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="577">
-          <source><bpt id="p1">**</bpt>OR (1=2, "a"="a")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>OR (1=2, "a"="a")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>SANT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="578">
-          <source>VALUEIN (input, list, list item expression)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VALUEIN (indata, lista, uttryck för listobjekt)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="579">
-          <source>Determine whether the specified input matches any value of an item in the specified list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bestämmer om specifik indata matchar något värde för ett objekt i den angivna listan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="580">
-          <source>Return <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> if the specified input matches the result of running the specified expression for at least one record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> om angiven indata matchar resultatet av det angivna uttrycket för minst en post.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="581">
-          <source>Otherwise, return <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars returneras <bpt id="p1">**</bpt>FALSKT<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="582">
-          <source>The <bpt id="p1">**</bpt>input<ept id="p1">**</ept> parameter represents the path of a data source element.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametern <bpt id="p1">**</bpt>indata<ept id="p1">**</ept> representerar sökvägen till ett datakällelement.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="583">
-          <source>The value of this element will be matched.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Värdet för det här elementet kommer att matchas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="584">
-          <source>The <bpt id="p1">**</bpt>list<ept id="p1">**</ept> parameter represents the path of a data source element of the record list type as a list of records that contains an expression.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametern <bpt id="p1">**</bpt>lista<ept id="p1">**</ept> representerar sökvägen till ett datakällelement av typ av postlista som en lista med poster som innehåller ett uttryck.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="585">
-          <source>The value of this element will be compared with the specified input.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Värdet för det här elementet ska jämföras med angiven indata.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="586">
-          <source>The <bpt id="p1">**</bpt>list item expression<ept id="p1">**</ept> argument represents an expression that either points to or contains a single field of the specified list that should be used for the matching.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Argumentet <bpt id="p1">**</bpt>Uttryck för listobjekt<ept id="p1">**</ept> representerar ett uttryck som antingen refererar till eller innehåller ett enskilt fält för den angivna listan som ska användas för matchningen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="587">
-          <source>For examples, see the <bpt id="p1">[</bpt>Examples: VALUEIN (input, list, list item expression)<ept id="p1">](#examples-valuein-input-list-list-item-expression)</ept> section that follows.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För exempel se avsnittet <bpt id="p1">[</bpt>Exempel: VALUEIN (indata, lista, uttryck för listobjekt)<ept id="p1">](#examples-valuein-input-list-list-item-expression)</ept> som följer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="588">
-          <source>Examples: VALUEIN (input, list, list item expression)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel: VALUEIN (indata, lista, uttryck för listobjekt)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="589">
-          <source>In general, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to a set of <bpt id="p2">**</bpt>OR<ept id="p2">**</ept> conditions:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I allmänhet översätts funktionen <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> till en uppsättning <bpt id="p2">**</bpt>ELLER<ept id="p2">**</ept>-villkor:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="590">
-          <source>(input = list.item1.value) OR (input = list.item2.value) OR …</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(indata = list.item1.value) ELLER (indata = list.item2.value) ELLER...</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="591">
-          <source>Example 1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel 1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="592">
-          <source>You define the following data source in your model mapping: <bpt id="p1">**</bpt>List<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan definiera följande datakälla i din modellmappning: <bpt id="p1">**</bpt>lista<ept id="p1">**</ept> (<bpt id="p2">**</bpt>beräknat fält<ept id="p2">**</ept>-typ).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="593">
-          <source>This data source contains the expression <bpt id="p1">**</bpt>SPLIT ("a,b,c", ",")<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datakällan innehåller uttrycket <bpt id="p1">**</bpt>SPLIT ("a,b,c", ",")<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="594">
-          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>VALUEIN ("B", List, List.Value)<ept id="p1">**</ept> expression, it returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När en datakälla anropas som konfigurerats som uttrycket <bpt id="p1">**</bpt>VALUEIN ("B", List, List.Value)<ept id="p1">**</ept> returnerar det <bpt id="p2">**</bpt>SANT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="595">
-          <source>In this case, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to the following set of conditions:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här fallet översätts funktionen <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> till följande uppsättning villkor:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="596">
-          <source><bpt id="p1">**</bpt>(("B" = "a") or ("B" = "b") or ("B" = "c"))<ept id="p1">**</ept>, where <bpt id="p2">**</bpt>("B" = "b")<ept id="p2">**</ept> is equal to <bpt id="p3">**</bpt>TRUE<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>(("B" = "a") eller ("B" = "b") eller ("B" = "c"))<ept id="p1">**</ept>, där <bpt id="p2">**</bpt>("B" = "b")<ept id="p2">**</ept> är lika med <bpt id="p3">**</bpt>SANT<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="597">
-          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>VALUEIN ("B", List, LEFT(List.Value, 0))<ept id="p1">**</ept> expression, it returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När en datakälla anropas som konfigurerats som uttrycket <bpt id="p1">**</bpt>VALUEIN ("B", List, LEFT(List.Value, 0))<ept id="p1">**</ept> returnerar det <bpt id="p2">**</bpt>FALSKT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="598">
-          <source>In this case, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to the following condition:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här fallet översätts funktionen <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> till följande villkor:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="599">
-          <source><bpt id="p1">**</bpt>("B" = "")<ept id="p1">**</ept>, which isn't equal to <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>("B" = "")<ept id="p1">**</ept>, vilket inte är lika med <bpt id="p2">**</bpt>SANT<ept id="p2">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="600">
-          <source>Note that the upper limit for the number of characters in the text of such a condition is 32,768 characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Observera att den övre gränsen för antalet tecken i texten i sådant tillstånd är 32 768 tecken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="601">
-          <source>Therefore, you should not create data sources that might exceed this limit at runtime.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Därför bör du inte skapa datakällor som eventuellt överskrider begränsningen vid körning.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="602">
-          <source>If the limit is exceeded, the application will stop running, and an exception will be thrown.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Programmet ska sluta köras om gränsen överskrids och ett undantag genereras.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="603">
-          <source>For example, this situation can occur if the data source is configured as <bpt id="p1">**</bpt>WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)<ept id="p1">**</ept>, and the <bpt id="p2">**</bpt>List1<ept id="p2">**</ept> and <bpt id="p3">**</bpt>List2<ept id="p3">**</ept> lists contain a large volume of records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Till exempel kan detta inträffa om datakällan har konfigurerats som <bpt id="p1">**</bpt>WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)<ept id="p1">**</ept> och listorna <bpt id="p2">**</bpt>List1<ept id="p2">**</ept> och <bpt id="p3">**</bpt>List2<ept id="p3">**</ept> innehåller en stor mängd poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="604">
-          <source>In some cases, the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function is translated to a database statement by using the <bpt id="p2">**</bpt>EXISTS JOIN<ept id="p2">**</ept> operator.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I vissa fall kan funktionen <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> översätts till en databas med hjälp av operatören <bpt id="p2">**</bpt>EXISTS JOIN<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="605">
-          <source>This behavior occurs when the <bpt id="p1">**</bpt>FILTER<ept id="p1">**</ept> function is used and the following conditions are met:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Det här problemet uppstår när funktionen <bpt id="p1">**</bpt>FILTER<ept id="p1">**</ept> används och följande villkor uppfylls:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="606">
-          <source>The <bpt id="p1">**</bpt>ASK FOR QUERY<ept id="p1">**</ept> option is turned off for the data source of the <bpt id="p2">**</bpt>VALUEIN<ept id="p2">**</ept> function that refers to the list of records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alternativet <bpt id="p1">**</bpt>FRÅGA EFTER FRÅGA<ept id="p1">**</ept> är inte markerat för datakällan för funktionen <bpt id="p2">**</bpt>VALUEIN<ept id="p2">**</ept> som refererar till listan över poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="607">
-          <source>(No additional conditions will be applied to this data source at runtime.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Inga ytterligare villkor ska kopplas till den här datakällan vid körning)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="608">
-          <source>No nested expressions are configured for the data source of the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function that refers to the list of records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Inga kapslade uttryck är konfigurerade för funktionen <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> som refererar till listan över poster.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="609">
-          <source>A list item of the <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> function refers to a field (not an expression or a method) of the specified data source.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett listobjekt för funktionen <bpt id="p1">**</bpt>VALUEIN<ept id="p1">**</ept> refererar till ett fält (inte ett uttryck eller en metod) i den angivna datakällan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="610">
-          <source>Consider using this option instead of the <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> function as described earlier in this example.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Överväg att använda det här alternativet i stället för funktionen <bpt id="p1">**</bpt>WHERE<ept id="p1">**</ept> som beskrivs tidigare i det här exemplet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="611">
-          <source>Example 2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel 2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="612">
-          <source>You define the following data sources in your model mapping:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du definierar följande datakällor i din modellmappning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="613">
-          <source><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table records<ept id="p2">**</ept> type), which refers to the Intrastat table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (typen <bpt id="p2">**</bpt>Registerposter<ept id="p2">**</ept>), som refererar till tabellen Intrastat</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="614">
-          <source><bpt id="p1">**</bpt>Port<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table records<ept id="p2">**</ept> type), which refers to the IntrastatPort table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Port<ept id="p1">**</ept> (typen <bpt id="p2">**</bpt>Registerposter<ept id="p2">**</ept>), som refererar till tabellen IntrastatPort</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="615">
-          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>FILTER (In, VALUEIN(In.Port, Port, Port.PortId)<ept id="p1">**</ept> expression, the following SQL statement is generated to return filtered records of the Intrastat table:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När en datakälla anropas som konfigurerats som uttrycket <bpt id="p1">**</bpt>FILTER (In, VALUEIN(In.Port, Port, Port.PortId)<ept id="p1">**</ept> genereras följande SQL-sats för att returnera filtrerade poster i Intrastat-registret:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="616">
-          <source>For <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> fields, the final SQL statement is generated by the using <bpt id="p2">**</bpt>IN<ept id="p2">**</ept> operator.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För fälten <bpt id="p1">**</bpt>dataAreaId<ept id="p1">**</ept> genereras den slutliga SQL-satsen utifrån operatör <bpt id="p2">**</bpt>IN<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="617">
-          <source>Example 3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel 3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="618">
-          <source>You define the following data sources in your model mapping:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du definierar följande datakällor i din modellmappning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="619">
-          <source><bpt id="p1">**</bpt>Le<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type), which contains the expression <bpt id="p3">**</bpt>SPLIT ("DEMF,GBSI,USMF", ",")<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Le<ept id="p1">**</ept> (typen <bpt id="p2">**</bpt>beräknat fält<ept id="p2">**</ept>), som innehåller uttrycket <bpt id="p3">**</bpt>SPLIT ("DEMF,GBSI,USMF", ",")<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="620">
-          <source><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table records<ept id="p2">**</ept> type), which refers to the Intrastat table and for which the <bpt id="p3">**</bpt>Cross-company<ept id="p3">**</ept> option is turned on</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>In<ept id="p1">**</ept> (typen <bpt id="p2">**</bpt>Registerposter<ept id="p2">**</ept>), som refererar till Intrastat-registret och för vilka alternativet <bpt id="p3">**</bpt>mellan företag<ept id="p3">**</ept> aktiveras</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="621">
-          <source>When a data source is called that is configured as the <bpt id="p1">**</bpt>FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)<ept id="p1">**</ept> expression, the final SQL statement contains the following condition:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När en datakälla anropas som konfigurerats som den <bpt id="p1">**</bpt>FILTER (i VALUEIN (Le.Value In.dataAreaId Le,)<ept id="p1">**</ept>, slutgiltiga SQL-satsen innehåller följande villkor:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="622">
-          <source>Mathematical functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Matematiska funktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="623">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="624">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="625">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="626">
-          <source>ABS (number)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ABS (number)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="627">
-          <source>Return the absolute value of the specified number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera absolutvärdet av det angivna numret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="628">
-          <source>(In other words, return the number without its sign.)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Med andra ord returnera tal utan tecken.)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="629">
-          <source><bpt id="p1">**</bpt>ABS (-1)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ABS (-1)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>1<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="630">
-          <source>POWER (number, power)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">POWER (number, power)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="631">
-          <source>Return the result of raising the specified positive number to the specified power.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar resultatet av en ökning av det definierade positiva talet till den definierade kraften.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="632">
-          <source><bpt id="p1">**</bpt>POWER (10, 2)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>POWER (10, 2)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="633">
-          <source>NUMBERVALUE (string, decimal separator, digit grouping separator)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMBERVALUE (string, decimal separator, digit grouping separator)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="634">
-          <source>Convert the specified string to a number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konverterar den definierade strängen till ett tal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="635">
-          <source>The specified decimal separator is used between the integer and fractional parts of a decimal number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den angivna decimalavgränsaren används mellan heltal och decimaler i ett decimaltal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="636">
-          <source>The specified digit grouping separator is used as the thousands separator.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den angivna gruppavgränsaren används som tusentalsavgränsare.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="637">
-          <source><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> returns the value <bpt id="p2">**</bpt>1234.56<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> returnerar värdet <bpt id="p2">**</bpt>1234.56<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="638">
-          <source>VALUE (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VALUE (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="639">
-          <source>Convert the specified string to a number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konverterar den definierade strängen till ett tal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="640">
-          <source>Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kommatecken och punkter (.) betraktas som decimalavgränsare och ett inledande bindestreck (-) används som ett negativt tecken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="641">
-          <source>Throw an exception if the specified string contains other non-numeric characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meddela att ett undantag inträffat om den specificerade strängen innehåller andra icke-numeriska tecken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="642">
-          <source><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> throws an exception.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> kastar ett undantag.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="643">
-          <source>ROUND (number, decimals)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUND (number, decimals)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="644">
-          <source>Return the specified number after it has been rounded to the specified number of decimal places:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera det specificerade numret efter att det avrundats till det angivna antalet decimaler:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="645">
-          <source>If the value of the <bpt id="p1">**</bpt>decimals<ept id="p1">**</ept> parameter is more than 0 (zero), the specified number is rounded to that many decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om värdet för parametern <bpt id="p1">**</bpt>decimaler<ept id="p1">**</ept> är större än 0 (noll) avrundas det specificerade numret till det angivna antalet decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="646">
-          <source>If the value of the <bpt id="p1">**</bpt>decimals<ept id="p1">**</ept> parameter is <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (zero), the specified number is rounded to the nearest integer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om värdet för parametern <bpt id="p1">**</bpt>decimaler<ept id="p1">**</ept> är <bpt id="p2">**</bpt>0<ept id="p2">**</ept> (noll) avrundas det specificerade numret till det angivna antalet decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="647">
-          <source>If the value of the <bpt id="p1">**</bpt>decimals<ept id="p1">**</ept> parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om värdet för parametern <bpt id="p1">**</bpt>decimaler<ept id="p1">**</ept> är mindre än 0 (noll) avrundas det specificerade numret till vänster om decimaltecknet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="648">
-          <source><bpt id="p1">**</bpt>ROUND (1200.767, 2)<ept id="p1">**</ept> rounds to two decimal places and returns <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUND (1200.767, 2)<ept id="p1">**</ept> avrundar till två decimaler och returnerar <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="649">
-          <source><bpt id="p1">**</bpt>ROUND (1200.767, -3)<ept id="p1">**</ept> rounds to the nearest multiple of 1,000 and returns <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUND (1200.767, -3)<ept id="p1">**</ept> avrundar till närmaste multipel av 1 000 och returnerar <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="650">
-          <source>ROUNDDOWN (number, decimals)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUNDDOWN (number, decimals)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="651">
-          <source>Return the specified number after it has been rounded down to the specified number of decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera det specificerade numret efter att det avrundats ned till det angivna antalet decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="652">
-          <source>This function behaves like <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept>, but it always rounds the specified number down (toward zero).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här funktionen fungerar som <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept> men avrundar alltid det specificerade numret nedåt (mot noll).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="653">
-          <source><bpt id="p1">**</bpt>ROUNDDOWN (1200.767, 2)<ept id="p1">**</ept> rounds down to two decimal places and returns <bpt id="p2">**</bpt>1200.76<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDDOWN (1200.767, 2)<ept id="p1">**</ept> avrundar nedåt till två decimaler och returnerar <bpt id="p2">**</bpt>1200.76<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="654">
-          <source><bpt id="p1">**</bpt>ROUNDDOWN (1700.767, -3)<ept id="p1">**</ept> rounds down to the nearest multiple of 1,000 and returns <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDDOWN (1700.767, -3)<ept id="p1">**</ept> avrundar nedåt till närmaste multipel av 1 000 och returnerar <bpt id="p2">**</bpt>1000<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="655">
-          <source>ROUNDUP (number, decimals)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUNDUP (number, decimals)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="656">
-          <source>Return the specified number after it has been rounded up to the specified number of decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera det specificerade numret efter att det avrundats upp till det angivna antalet decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="657">
-          <source>This function behaves like <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept>, but it always rounds the specified number up (away from zero).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här funktionen fungerar som <bpt id="p1">**</bpt>ROUND<ept id="p1">**</ept> men avrundar alltid det specificerade numret uppåt (från noll).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="658">
-          <source><bpt id="p1">**</bpt>ROUNDUP (1200.763, 2)<ept id="p1">**</ept> rounds up to two decimal places and returns <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDUP (1200.763, 2)<ept id="p1">**</ept> avrundar uppåt till två decimaler och returnerar <bpt id="p2">**</bpt>1200.77<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="659">
-          <source><bpt id="p1">**</bpt>ROUNDUP (1200.767, -3)<ept id="p1">**</ept> rounds up to the nearest multiple of 1,000 and returns <bpt id="p2">**</bpt>2000<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ROUNDUP (1200.767, -3)<ept id="p1">**</ept> avrundar uppåt till närmaste multipel av 1 000 och returnerar <bpt id="p2">**</bpt>2000<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="660">
-          <source>Data conversion functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktioner för datakonvertering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="661">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="662">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="663">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="664">
-          <source>VALUE (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VALUE (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="665">
-          <source>Convert the specified string to a number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konverterar den definierade strängen till ett tal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="666">
-          <source>Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kommatecken och punkter (.) betraktas som decimalavgränsare och ett inledande bindestreck (-) används som ett negativt tecken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="667">
-          <source>Throw an exception if the specified string contains other non-numeric characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Meddela att ett undantag inträffat om den specificerade strängen innehåller andra icke-numeriska tecken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="668">
-          <source><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> throws an exception.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>VALUE ("1 234,56")<ept id="p1">**</ept> kastar ett undantag.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="669">
-          <source>NUMBERVALUE (string, decimal separator, digit grouping separator)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMBERVALUE (string, decimal separator, digit grouping separator)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="670">
-          <source>Convert the specified string to a number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konverterar den definierade strängen till ett tal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="671">
-          <source>The specified decimal separator is used between the integer and fractional parts of a decimal number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den angivna decimalavgränsaren används mellan heltal och decimaler i ett decimaltal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="672">
-          <source>The specified digit grouping separator is used as the thousands separator.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den angivna gruppavgränsaren används som tusentalsavgränsare.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="673">
-          <source><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1234.56<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NUMBERVALUE("1 234,56", ",", " ")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>1234,56<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="674">
-          <source>INTVALUE (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INTVALUE (sträng)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="675">
-          <source>Return an integer representation of the specified string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en heltalsrepresentation av den specificerade strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="676">
-          <source>Any decimal places are truncated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eventuella decimaler trunkeras.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="677">
-          <source><bpt id="p1">**</bpt>INTVALUE ("100.77")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INTVALUE (”100.77”)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>100<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="678">
-          <source>INTVALUE (number)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INTVALUE (värde)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="679">
-          <source>Return an integer representation of the specified number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en heltalsrepresentation av det specificerade numret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="680">
-          <source>Any decimal places are truncated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eventuella decimaler trunkeras.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="681">
-          <source><bpt id="p1">**</bpt>INTVALUE (-100.77)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>-100<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INTVALUE (-100.77)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>-100<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="682">
-          <source>INT64VALUE (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INT64VALUE (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="683">
-          <source>Return an int64 representation of the specified string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en int64 representation av den specificerade strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="684">
-          <source>Any decimal places are truncated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eventuella decimaler trunkeras.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="685">
-          <source><bpt id="p1">**</bpt>INT64VALUE ("22565422744")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INT64VALUE ("22565422744")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="686">
-          <source>INT64VALUE (number)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">INT64VALUE (number)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="687">
-          <source>Return an int64 representation of the specified number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en int64 representation av det specificerade numret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="688">
-          <source>Any decimal places are truncated.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eventuella decimaler trunkeras.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="689">
-          <source><bpt id="p1">**</bpt>INT64VALUE (22565422744.00)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>INT64VALUE (22565422744.00)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>22565422744<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="690">
-          <source>Record functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Inspelningsfunktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="691">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="692">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="693">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="694">
-          <source>NULLCONTAINER (list)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NULLCONTAINER (list)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="695">
-          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> record that has the same structure as the specified record list or record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en <bpt id="p1">**</bpt>null<ept id="p1">**</ept>-post som har samma struktur som den definierade postlistan eller posten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="696">
-          <source>This function is obsolete.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här funktionen är föråldrad.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="697">
-          <source>Use <bpt id="p1">**</bpt>EMPTYRECORD<ept id="p1">**</ept> instead.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Använd <bpt id="p1">**</bpt>EMPTYRECORD<ept id="p1">**</ept> i stället.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="698">
-          <source><bpt id="p1">**</bpt>NULLCONTAINER (SPLIT ("abc", 1))<ept id="p1">**</ept> returns a new empty record that has the same structure as the list that is returned by the <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept> function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NULLCONTAINER (SPLIT ("abc", 1))<ept id="p1">**</ept> returnerar en ny tom post som har samma struktur som listan som returneras från <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept>-funktionen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="699">
-          <source>EMPTYRECORD (record)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EMPTYRECORD (record)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="700">
-          <source>Return a <bpt id="p1">**</bpt>null<ept id="p1">**</ept> record that has the same structure as the specified record list or record.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en <bpt id="p1">**</bpt>null<ept id="p1">**</ept>-post som har samma struktur som den definierade postlistan eller posten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="701">
-          <source>A <bpt id="p1">**</bpt>null<ept id="p1">**</ept> record is a record where all fields have an empty value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">En <bpt id="p1">**</bpt>noll<ept id="p1">**</ept> post är en post där alla fält innehåller ett tomt värde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="702">
-          <source>An empty value is <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) for numbers, an empty string for strings, and so on.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett tomt värde är <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (noll) för tal, en tom sträng för strängar, osv.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="703">
-          <source><bpt id="p1">**</bpt>EMPTYRECORD (SPLIT ("abc", 1))<ept id="p1">**</ept> returns a new empty record that has the same structure as the list that is returned by the <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept> function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>EMPTYRECORD (SPLIT ("abc", 1))<ept id="p1">**</ept> returnerar en ny tom post som har samma struktur som listan som returneras från <bpt id="p2">**</bpt>SPLIT<ept id="p2">**</ept>-funktionen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="704">
-          <source>Text functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Textfunktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="705">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="706">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="707">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="708">
-          <source>UPPER (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">UPPER (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="709">
-          <source>Return the specified string after it has been converted to uppercase letters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den specificerade strängen efter att den konverterats till versaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="710">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>UPPER(<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>SAMPLE<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>ÖVRE(<ph id="ph1">&amp;quot;</ph>prov<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>PROV<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="711">
-          <source>LOWER (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LOWER (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="712">
-          <source>Return the specified string after it has been converted to lowercase letters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den specificerade strängen efter att den konverterats till gemener.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="713">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>LOWER (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>sample<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LÄGRE (<ph id="ph1">&amp;quot;</ph>Prov<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>prov<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="714">
-          <source>LEFT (string, number of characters)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LEFT (string, number of characters)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="715">
-          <source>Return the specified number of characters from the start of the specified string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det definierade antalet tecken från början av den definierade strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="716">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>LEFT (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>Sam<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>VÄNSTER (<ph id="ph1">&amp;quot;</ph>prov<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>Pr<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="717">
-          <source>RIGHT (string, number of characters)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">RIGHT (string, number of characters)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="718">
-          <source>Return the specified number of characters from the end of the specified string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det definierade antalet tecken från slutet av den definierade strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="719">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>RIGHT (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>ple<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>HÖGER (<ph id="ph1">&amp;quot;</ph>Prov<ph id="ph2">&amp;quot;</ph>, 3)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>ov<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="720">
-          <source>MID (string, starting position, number of characters)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MID (string, starting position, number of characters)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="721">
-          <source>Return the specified number of characters from the specified string, starting at the specified position.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det definierade antalet tecken från den definierade strängen, med start från den definierade positionen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="722">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>MID (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>, 2, 3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>amp<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>MEL (<ph id="ph1">&amp;quot;</ph>Prov<ph id="ph2">&amp;quot;</ph>, 2, 3)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>ro<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="723">
-          <source>LEN (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LEN (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="724">
-          <source>Return the number of characters in the specified string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar antalet tecken i den definierade strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="725">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>LEN (<ph id="ph1">&amp;quot;</ph>Sample<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt>6<ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>LEN (<ph id="ph1">&amp;quot;</ph>Prov<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt>6<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="726">
-          <source>CHAR (number)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CHAR (number)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="727">
-          <source>Return the string of characters that is referenced by the specified Unicode number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar teckensträngen som har en referens till det definierade Unicode-numret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="728">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>CHAR (255)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>ÿ<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>CHAR (255)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>ÿ<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="729">
-          <source>The string that this function returns depends on the encoding that is selected in the parent FILE format element.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet FILE.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="730">
-          <source>For the list of supported encodings, see <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx"&gt;</bpt>Encoding class<ept id="p1">&lt;/a&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För listan över vilka koder som stöds se <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx"&gt;</bpt>Encoding class<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="731">
-          <source>CONCATENATE (string 1 [, string 2, …])</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CONCATENATE (string 1 [, string 2, …])</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="732">
-          <source>Return all specified text strings after they have been joined into one string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera alla specificerade textsträngar efter att de har sammanfogats till en sträng.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="733">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>CONCATENATE (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>abcdef<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>CONCATENATE (<ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>def<ph id="ph4">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>abcdef<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="734">
-          <source>The expression <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> <ph id="ph3">&amp;amp;</ph> <ph id="ph4">&amp;quot;</ph>def<ph id="ph5">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> also returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>abcdef<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uttrycket <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>abc<ph id="ph2">&amp;quot;</ph> <ph id="ph3">&amp;amp;</ph> <ph id="ph4">&amp;quot;</ph>def<ph id="ph5">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> returnerar också <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph>abcdef<ph id="ph7">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="735">
-          <source>TRANSLATE (string, pattern, replacement)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ÖVERSÄTT (string, pattern, replacement)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="736">
-          <source>Return the specified string after all occurrences of the characters in the specified pattern string have been replaced by the characters at the corresponding position in the specified replacement string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar den definierade strängen efter att alla förekomster av tecknen i den definierade mönstersträngen har ersätts av tecknen på motsvarande position i den definierade utbytessträngen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="737">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>TRANSLATE (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> replaces the pattern <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> with the string <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> and returns <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>ÖVERSÄTT (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> ersätter mönstret <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> med strängen <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> och returnerar <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="738">
-          <source>REPLACE (string, pattern, replacement, regular expression flag)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">REPLACE (string, pattern, replacement, regular expression flag)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="739">
-          <source>When the specified <bpt id="p1">&lt;strong&gt;</bpt>regular expression flag<ept id="p1">&lt;/strong&gt;</ept> parameter is <bpt id="p2">&lt;strong&gt;</bpt>true<ept id="p2">&lt;/strong&gt;</ept>, return the specified string after it has been modified by applying the regular expression that is specified as the <bpt id="p3">&lt;strong&gt;</bpt>pattern<ept id="p3">&lt;/strong&gt;</ept> argument for this function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om flaggan för det definierade <bpt id="p1">&lt;strong&gt;</bpt>reguljära uttrycket<ept id="p1">&lt;/strong&gt;</ept> har parametern <bpt id="p2">&lt;strong&gt;</bpt>sant<ept id="p2">&lt;/strong&gt;</ept>, returneras den definierade strängen efter att ett reguljärt uttryck som definierats som ett <bpt id="p3">&lt;strong&gt;</bpt>mönsterargument<ept id="p3">&lt;/strong&gt;</ept> för den här funktionen har tillämpats.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="740">
-          <source>This expression is used to find characters that must be replaced.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Uttrycket används för att hitta tecken som måste ersättas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="741">
-          <source>Characters of the specified <bpt id="p1">&lt;strong&gt;</bpt>replacement<ept id="p1">&lt;/strong&gt;</ept> argument are used to replace characters that are found.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tecknen i det definierade <bpt id="p1">&lt;strong&gt;</bpt>utbytesargumentet<ept id="p1">&lt;/strong&gt;</ept> används för att ersätta tecken som hittas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="742">
-          <source>When the specified <bpt id="p1">&lt;strong&gt;</bpt>regular expression flag<ept id="p1">&lt;/strong&gt;</ept> parameter is <bpt id="p2">&lt;strong&gt;</bpt>false<ept id="p2">&lt;/strong&gt;</ept>, this function behaves like <bpt id="p3">&lt;strong&gt;</bpt>TRANSLATE<ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om flaggan för det definierade <bpt id="p1">&lt;strong&gt;</bpt>reguljära uttrycket<ept id="p1">&lt;/strong&gt;</ept> har parametern <bpt id="p2">&lt;strong&gt;</bpt>falskt<ept id="p2">&lt;/strong&gt;</ept>, uppför sig den här funktionen på samma sätt som <bpt id="p3">&lt;strong&gt;</bpt>ÖVERSÄTT<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="743">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>+1 923 456 4971<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>[^0-9]<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph><ph id="ph6">&amp;quot;</ph>, true)<ept id="p1">&lt;/strong&gt;</ept> applies a regular expression that removes all non-numeric symbols, and returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>19234564971<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>+1 923 456 4971<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>[^0-9]<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph><ph id="ph6">&amp;quot;</ph>, sant)<ept id="p1">&lt;/strong&gt;</ept> tillämpar ett standarduttryck som avlägsnar alla icke-numeriska symboler och returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>19234564971<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="744">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>, false)<ept id="p1">&lt;/strong&gt;</ept> replaces the pattern <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> with the string <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> and returns <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>REPLACE (<ph id="ph1">&amp;quot;</ph>abcdef<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>cd<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>GH<ph id="ph6">&amp;quot;</ph>, falskt)<ept id="p1">&lt;/strong&gt;</ept> ersätter mönstret <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph7">&amp;quot;</ph>cd<ph id="ph8">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept> med strängen <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph9">&amp;quot;</ph>GH<ph id="ph10">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept> och returnerar <bpt id="p4">&lt;strong&gt;</bpt><ph id="ph11">&amp;quot;</ph>abGHef<ph id="ph12">&amp;quot;</ph><ept id="p4">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="745">
-          <source>TEXT (input)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TEXT (input)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="746">
-          <source>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="747">
-          <source>For values of the <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept> type, the string conversion is limited to two decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För värden av typen <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept> är strängkonverteringen begränsad till två decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="748">
-          <source>If the server locale of the Finance and Operations instance is defined as <bpt id="p1">&lt;strong&gt;</bpt>EN-US<ept id="p1">&lt;/strong&gt;</ept>, <bpt id="p2">&lt;strong&gt;</bpt>TEXT (NOW ())<ept id="p2">&lt;/strong&gt;</ept> returns the current Finance and Operations session date, December 17, 2015, as the text string <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>12/17/2015 07:59:23 AM<ph id="ph2">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om serverns lokala inställningar för Finance and Operations anges som <bpt id="p1">&lt;strong&gt;</bpt>EN-US<ept id="p1">&lt;/strong&gt;</ept>, returnerar <bpt id="p2">&lt;strong&gt;</bpt>TEXT (NOW ())<ept id="p2">&lt;/strong&gt;</ept> aktuellt Finance and Operations-sessionsdatum, December 17, 2015, som textsträngen <bpt id="p3">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>12/17/2015 07:59:23 AM<ph id="ph2">&amp;quot;</ph><ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="749">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>TEXT (1/3)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>0.33<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>TEXT (1/3)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>0.33<ph id="ph2">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="750">
-          <source>FORMAT (string 1, string 2[, string 3, …])</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FORMAT (string 1, string 2[, string 3, …])</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="751">
-          <source>Return the specified string after it has been formatted by substituting any occurrences of <bpt id="p1">&lt;strong&gt;</bpt>%N<ept id="p1">&lt;/strong&gt;</ept> with the <bpt id="p2">&lt;em&gt;</bpt>n<ept id="p2">&lt;/em&gt;</ept>th argument.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <bpt id="p1">&lt;strong&gt;</bpt>%N<ept id="p1">&lt;/strong&gt;</ept> med argumentet <bpt id="p2">&lt;em&gt;</bpt>n<ept id="p2">&lt;/em&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="752">
-          <source>The arguments are strings.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Argumenten är strängar.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="753">
-          <source>If an argument isn't provided for a parameter, the parameter is returned as <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>%N<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> in the string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om ett argument inte har angetts för en parameter, returneras parametern som <bpt id="p1">&lt;strong&gt;</bpt><ph id="ph1">&amp;quot;</ph>%N<ph id="ph2">&amp;quot;</ph><ept id="p1">&lt;/strong&gt;</ept> i strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="754">
-          <source>For values of the <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept> type, the string conversion is limited to two decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För värden av typen <bpt id="p1">&lt;strong&gt;</bpt>real<ept id="p1">&lt;/strong&gt;</ept> är strängkonverteringen begränsad till två decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="755">
-          <source>In the following illustration, the <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> data source returns the list of customer records via the <bpt id="p2">&lt;strong&gt;</bpt>Customer<ept id="p2">&lt;/strong&gt;</ept> component and the processing date value via the <bpt id="p3">&lt;strong&gt;</bpt>ProcessingDate<ept id="p3">&lt;/strong&gt;</ept> field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I det här exemplet returnerar datakällan <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> listan över kundposter via komponenten <bpt id="p2">&lt;strong&gt;</bpt>Customer<ept id="p2">&lt;/strong&gt;</ept> och bearbetar datumvärdet via fältet <bpt id="p3">&lt;strong&gt;</bpt>ProcessingDate<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="756">
-          <source>In the ER format that is designed to generate an electronic file for selected customers, <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> is selected as a data source and controls the process flow.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I ER-formatet, som har utformats för att skapa en elektronisk fil för utvalda kunder, väljs <bpt id="p1">&lt;strong&gt;</bpt>PaymentModel<ept id="p1">&lt;/strong&gt;</ept> som en datakälla och styr processflödet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="757">
-          <source>An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ett undantag meddelas användaren när en vald kund stoppas för det datum då rapporten bearbetas.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="758">
-          <source>The formula that is designed for this type of processing control can use the following resources:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="759">
-          <source>Finance and Operations label SYS70894, which has the following text:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations-etikett SYS70894, som har följande text:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="760">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>For the EN-US language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Nothing to print<ph id="ph2">&amp;quot;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>För språket EN-US:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Nothing to print<ph id="ph2">&amp;quot;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="761">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>For the DE language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Nichts zu drucken<ph id="ph2">&amp;quot;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>För språket SV-SE:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Inget att skriva ut<ph id="ph2">&amp;quot;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="762">
-          <source>Finance and Operations label SYS18389, which has the following text:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Finance and Operations-etikett SYS18389, som har följande text:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="763">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>For the EN-US language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Customer %1 is stopped for %2.<ph id="ph2">&amp;quot;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>För språket EN-US:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Customer %1 is stopped for %2.<ph id="ph2">&amp;quot;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="764">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>For the DE language:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Debitor '%1' wird für %2 gesperrt.<ph id="ph2">&amp;quot;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>För språket DE:<ept id="p1">&lt;/strong&gt;</ept> <ph id="ph1">&amp;quot;</ph>Debitor '%1' wird für %2 gesperrt.<ph id="ph2">&amp;quot;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="765">
-          <source>Here is the formula that can be designed:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Här följer formeln som kan utformas:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="766">
-          <source>FORMAT (CONCATENATE (@<ph id="ph1">&amp;quot;</ph>SYS70894<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FORMAT (CONCATENATE (@<ph id="ph1">&amp;quot;</ph>SYS70894<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="767">
-          <source><ph id="ph1">&amp;quot;</ph>, @<ph id="ph2">&amp;quot;</ph>SYS18389<ph id="ph3">&amp;quot;</ph>), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, <ph id="ph4">&amp;quot;</ph>d<ph id="ph5">&amp;quot;</ph>))</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;quot;</ph>, @<ph id="ph2">&amp;quot;</ph>SYS18389<ph id="ph3">&amp;quot;</ph>), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, <ph id="ph4">&amp;quot;</ph>d<ph id="ph5">&amp;quot;</ph>))</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="768">
-          <source>If a report is processed for the <bpt id="p1">&lt;strong&gt;</bpt>Litware Retail<ept id="p1">&lt;/strong&gt;</ept> customer on December 17, 2015, in the <bpt id="p2">&lt;strong&gt;</bpt>EN-US<ept id="p2">&lt;/strong&gt;</ept> culture and the <bpt id="p3">&lt;strong&gt;</bpt>EN-US<ept id="p3">&lt;/strong&gt;</ept> language, this formula returns the following text, which can be presented to the user as an exception message:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om en rapport bearbetas för kunden <bpt id="p1">&lt;strong&gt;</bpt>Litware-butikskund<ept id="p1">&lt;/strong&gt;</ept> en 17 december 2015 i kulturen <bpt id="p2">&lt;strong&gt;</bpt>SV-SV<ept id="p2">&lt;/strong&gt;</ept> och på språket <bpt id="p3">&lt;strong&gt;</bpt>SV-SV<ept id="p3">&lt;/strong&gt;</ept>, kommer denna formel att returnera följande text som kan presenteras som ett undantagsmeddelande för slutanvändaren:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="769">
-          <source><ph id="ph1">&amp;quot;</ph>Nothing to print.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;quot;</ph>Inget att skriva ut.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="770">
-          <source>Customer Litware Retail is stopped for 12/17/2015.<ph id="ph1">&amp;quot;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Customer Litware Retail is stopped for 12/17/2015."<ph id="ph1">&amp;quot;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="771">
-          <source>If the same report is processed for the <bpt id="p1">&lt;strong&gt;</bpt>Litware Retail<ept id="p1">&lt;/strong&gt;</ept> customer on December 17, 2015, in the <bpt id="p2">&lt;strong&gt;</bpt>DE<ept id="p2">&lt;/strong&gt;</ept> culture and the <bpt id="p3">&lt;strong&gt;</bpt>DE<ept id="p3">&lt;/strong&gt;</ept> language, the formula returns the following text, which uses a different date format:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om samma rapport bearbetas för <bpt id="p1">&lt;strong&gt;</bpt>Litware-butikskunden<ept id="p1">&lt;/strong&gt;</ept> den 17 december 2015, i kulturen <bpt id="p2">&lt;strong&gt;</bpt>DE<ept id="p2">&lt;/strong&gt;</ept> och på språket <bpt id="p3">&lt;strong&gt;</bpt>DE<ept id="p3">&lt;/strong&gt;</ept>, kommer denna formel att returnera följande text som använder ett annat datumformat:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="772">
-          <source><ph id="ph1">&amp;quot;</ph>Nichts zu drucken.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><ph id="ph1">&amp;quot;</ph>Nichts zu drucken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="773">
-          <source>Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.<ph id="ph1">&amp;quot;</ph></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gäldenären 'Litware Butik' stoppad 2015-12-17.".<ph id="ph1">&amp;quot;</ph></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="774">
-          <source>The following syntax is applied in ER formulas for labels:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Följande syntax tillämpas i ER-formler för etiketter:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="775">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>For labels from Finance and Operations resources:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, where <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> is the label ID in the Application Object Tree (AOT)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>För etiketter från Finance and Operations-resurser:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, där <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> är etikettens ID i programobjektträdet (Application Object Tree, AOT)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="776">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>For labels that reside in ER configurations:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>GER_LABEL:X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, where <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> is the label ID in the ER configuration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>För etiketter i ER-konfigurationer:<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph1">@</ph><ph id="ph2">&amp;quot;</ph>GER_LABEL:X<ph id="ph3">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>, där <bpt id="p3">&lt;strong&gt;</bpt>X<ept id="p3">&lt;/strong&gt;</ept> är etikettens ID i ER-konfigurationen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="777">
-          <source>NUMBERFORMAT (number, format)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMBERFORMAT (number, format)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="778">
-          <source>Return a string representation of the specified number in the specified format.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en sträng som representerar det specificerade numret i det angivna formatet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="779">
-          <source>(For information about the supported formats, see <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx"&gt;</bpt>standard<ept id="p1">&lt;/a&gt;</ept> and <bpt id="p2">&lt;a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx"&gt;</bpt>custom<ept id="p2">&lt;/a&gt;</ept>.) The context that this function is run in determines the culture that is used to format numbers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Information om format som stöds finns i <bpt id="p1">&lt;a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx"&gt;</bpt>standard<ept id="p1">&lt;/a&gt;</ept> och <bpt id="p2">&lt;a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx"&gt;</bpt>anpassade<ept id="p2">&lt;/a&gt;</ept>.) Den kontext som denna funktion körs i avgör den kultur som används för att formatera tal.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="780">
-          <source>For the EN-US culture, <bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (0.45, <ph id="ph1">&amp;quot;</ph>p<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>45.00 %<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För kulturen EN-US returnerar <bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (0.45, <ph id="ph1">&amp;quot;</ph>p<ph id="ph2">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph3">&amp;quot;</ph>45.00 %<ph id="ph4">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="781">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (10.45, <ph id="ph1">&amp;quot;</ph><ph id="ph2">#</ph><ph id="ph3">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph4">&amp;quot;</ph>10<ph id="ph5">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMBERFORMAT (10.45, <ph id="ph1">&amp;quot;</ph><ph id="ph2">#</ph><ph id="ph3">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph4">&amp;quot;</ph>10<ph id="ph5">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="782">
-          <source>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMERALSTOTEXT (nummer, språk, valuta, skriv ut flagga för valutanamn, decimaler)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="783">
-          <source>Return the specified number after it has been spelled out (converted to text strings) in the specified language.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera det specificerade numret efter att det har skrivits ut (konverterats) till textsträngar på det angivna språket.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="784">
-          <source>The language code is optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Språkkod är valfritt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="785">
-          <source>When it's defined as an empty string, the language code for the running context is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När den är definierad som en tom sträng används istället språkkoden för löpande kontext.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="786">
-          <source>(The language code for the running context is defined for a generating folder or file.) The currency code is also optional.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Språkkoden för löpande kontext definieras för en skapande mapp eller fil.) Valutakoden är också valfri.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="787">
-          <source>When it's defined as an empty string, the company currency is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När den definieras som en tom sträng, används företagsvalutan.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="788">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>print currency name flag<ept id="p1">&lt;/strong&gt;</ept> and <bpt id="p2">&lt;strong&gt;</bpt>decimal points<ept id="p2">&lt;/strong&gt;</ept> parameters are analyzed only for the following language codes: <bpt id="p3">&lt;strong&gt;</bpt>CS<ept id="p3">&lt;/strong&gt;</ept>, <bpt id="p4">&lt;strong&gt;</bpt>ET<ept id="p4">&lt;/strong&gt;</ept>, <bpt id="p5">&lt;strong&gt;</bpt>HU<ept id="p5">&lt;/strong&gt;</ept>, <bpt id="p6">&lt;strong&gt;</bpt>LT<ept id="p6">&lt;/strong&gt;</ept>, <bpt id="p7">&lt;strong&gt;</bpt>LV<ept id="p7">&lt;/strong&gt;</ept>, <bpt id="p8">&lt;strong&gt;</bpt>PL<ept id="p8">&lt;/strong&gt;</ept>, and <bpt id="p9">&lt;strong&gt;</bpt>RU<ept id="p9">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametrarna för <bpt id="p1">&lt;strong&gt;</bpt>den utskrivna flaggan för valutanamn<ept id="p1">&lt;/strong&gt;</ept> och <bpt id="p2">&lt;strong&gt;</bpt>decimalpunkter<ept id="p2">&lt;/strong&gt;</ept> analyseras endast för följande språkkoder: <bpt id="p3">&lt;strong&gt;</bpt>CS<ept id="p3">&lt;/strong&gt;</ept>, <bpt id="p4">&lt;strong&gt;</bpt>ET<ept id="p4">&lt;/strong&gt;</ept>, <bpt id="p5">&lt;strong&gt;</bpt>HU<ept id="p5">&lt;/strong&gt;</ept>, <bpt id="p6">&lt;strong&gt;</bpt>LT<ept id="p6">&lt;/strong&gt;</ept>, <bpt id="p7">&lt;strong&gt;</bpt>LV<ept id="p7">&lt;/strong&gt;</ept>, <bpt id="p8">&lt;strong&gt;</bpt>PL<ept id="p8">&lt;/strong&gt;</ept>, och <bpt id="p9">&lt;strong&gt;</bpt>RU<ept id="p9">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="789">
-          <source>Additionally, the <bpt id="p1">&lt;strong&gt;</bpt>print currency name flag<ept id="p1">&lt;/strong&gt;</ept> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I tillägg analyseras endast parametern <bpt id="p1">&lt;strong&gt;</bpt>utskriven flagga för valutanamn<ept id="p1">&lt;/strong&gt;</ept> för Finance and Operations-företag vars länder eller regioner stöder valutanamnnedgång.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="790">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (1234.56, <ph id="ph1">&amp;quot;</ph>EN<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 2)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>One Thousand Two Hundred Thirty Four and 56<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (1234.56, <ph id="ph1">&amp;quot;</ph>EN<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 2)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>One Thousand Two Hundred Thirty Four and 56<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="791">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120, <ph id="ph1">&amp;quot;</ph>PL<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 0)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Sto dwadzieścia<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120, <ph id="ph1">&amp;quot;</ph>PL<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;quot;</ph>, false, 0)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Sto dwadzieścia<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="792">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120.21, <ph id="ph1">&amp;quot;</ph>RU<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>EUR<ph id="ph4">&amp;quot;</ph>, true, 2)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Сто двадцать евро 21 евроцент<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>NUMERALSTOTEXT (120.21, <ph id="ph1">&amp;quot;</ph>RU<ph id="ph2">&amp;quot;</ph>, <ph id="ph3">&amp;quot;</ph>EUR<ph id="ph4">&amp;quot;</ph>, true, 2)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph5">&amp;quot;</ph>Сто двадцать евро 21 евроцент<ph id="ph6">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="793">
-          <source>PADLEFT (string, length, padding chars)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PADLEFT (sträng, längd, teckenutfyllnad)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="794">
-          <source>Return a string of the specified length, where the start of the specified string is padded with the specified characters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en sträng med angiven längd i de fall den aktuella strängens början är utfylld med de angivna tecknen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="795">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>PADLEFT (<ph id="ph1">&amp;quot;</ph>1234<ph id="ph2">&amp;quot;</ph>, 10, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns the text string <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph><ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph><ph id="ph12">&amp;nbsp;</ph>1234<ph id="ph13">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>PADLEFT (<ph id="ph1">&amp;quot;</ph>1234<ph id="ph2">&amp;quot;</ph>, 10, <ph id="ph3">&amp;quot;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar textsträngen <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph6">&amp;quot;</ph><ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph><ph id="ph12">&amp;nbsp;</ph>1234<ph id="ph13">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="796">
-          <source>TRIM (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TRIM (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="797">
-          <source>Return the specified text string after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den angivna textsträngen efter att inledande och efterföljande blanksteg har trunkerats och multipla blanksteg mellan ord har tagits bort.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="798">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>TRIM (<ph id="ph1">&amp;quot;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;nbsp;</ph><ph id="ph6">&amp;nbsp;</ph>Sample<ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph>text<ph id="ph12">&amp;nbsp;</ph><ph id="ph13">&amp;nbsp;</ph><ph id="ph14">&amp;nbsp;</ph><ph id="ph15">&amp;nbsp;</ph><ph id="ph16">&amp;nbsp;</ph><ph id="ph17">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returns <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph18">&amp;quot;</ph>Sample text<ph id="ph19">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>TRIM (<ph id="ph1">&amp;quot;</ph><ph id="ph2">&amp;nbsp;</ph><ph id="ph3">&amp;nbsp;</ph><ph id="ph4">&amp;nbsp;</ph><ph id="ph5">&amp;nbsp;</ph><ph id="ph6">&amp;nbsp;</ph>Sample<ph id="ph7">&amp;nbsp;</ph><ph id="ph8">&amp;nbsp;</ph><ph id="ph9">&amp;nbsp;</ph><ph id="ph10">&amp;nbsp;</ph><ph id="ph11">&amp;nbsp;</ph>text<ph id="ph12">&amp;nbsp;</ph><ph id="ph13">&amp;nbsp;</ph><ph id="ph14">&amp;nbsp;</ph><ph id="ph15">&amp;nbsp;</ph><ph id="ph16">&amp;nbsp;</ph><ph id="ph17">&amp;quot;</ph>)<ept id="p1">&lt;/strong&gt;</ept> returnerar <bpt id="p2">&lt;strong&gt;</bpt><ph id="ph18">&amp;quot;</ph>Sample text<ph id="ph19">&amp;quot;</ph><ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="799">
-          <source>GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GETENUMVALUEBYNAME (uppräkning av sökväg för datakälla, uppräkning av etikettext för värde)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="800">
-          <source>Return a value of the specified enumeration data source, based on the specified text of the enumeration label.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera ett värde för den specificerade fasta datakällan baserat på den angivna texten för uppräkningsetiketten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="801">
-          <source>In the following illustration, the <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> enumeration is introduced in a data model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I följande illustration introduceras uppräkningen <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> i en datamodell.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="802">
-          <source>Note that labels are defined for enumeration values.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Observera att etiketter definieras för uppräkningsvärden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="803">
-          <source>The following illustration shows these details:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Illustrationen som följer visar dessa detaljer:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="804">
-          <source>The <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> model enumeration is inserted into a report as a data source, <bpt id="p2">&lt;strong&gt;</bpt>$Direction<ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Modelluppräkningen <bpt id="p1">&lt;strong&gt;</bpt>ReportDirection<ept id="p1">&lt;/strong&gt;</ept> infogas i en rapport som en datakälla <bpt id="p2">&lt;strong&gt;</bpt>$Direction<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="805">
-          <source>An ER expression, <bpt id="p1">&lt;strong&gt;</bpt>$IsArrivals<ept id="p1">&lt;/strong&gt;</ept>, is designed to use the model enumeration as a parameter of this function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER-uttrycket <bpt id="p1">&lt;strong&gt;</bpt>$IsArrivals<ept id="p1">&lt;/strong&gt;</ept> är utformat för att använda modelluppräkning som en parameter för denna funktion.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="806">
-          <source>The value of this expression is <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Värdet för detta uttryck är <bpt id="p1">&lt;strong&gt;</bpt>TRUE<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="807">
-          <source>GUIDVALUE (input)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GUIDVALUE (indata)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="808">
-          <source>Convert the specified input of the <bpt id="p1">&lt;strong&gt;</bpt>String<ept id="p1">&lt;/strong&gt;</ept> data type to a data item of the <bpt id="p2">&lt;strong&gt;</bpt>GUID<ept id="p2">&lt;/strong&gt;</ept> data type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konvertera angivna indata för datatypen <bpt id="p1">&lt;strong&gt;</bpt>sträng<ept id="p1">&lt;/strong&gt;</ept> till ett dataobjekt i datatypen <bpt id="p2">&lt;strong&gt;</bpt>GUID<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="809">
-          <source>To do a conversion in the opposite direction (that is, to convert specified input of the <bpt id="p1">&lt;strong&gt;</bpt>GUID<ept id="p1">&lt;/strong&gt;</ept> data type to a data item of the <bpt id="p2">&lt;strong&gt;</bpt>String<ept id="p2">&lt;/strong&gt;</ept> data type), you can use the <bpt id="p3">&lt;strong&gt;</bpt>TEXT()<ept id="p3">&lt;/strong&gt;</ept> function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För att göra en konvertering i motsatt riktning (d.v.s. konvertera angiven indata för datatypen <bpt id="p1">&lt;strong&gt;</bpt>GUID<ept id="p1">&lt;/strong&gt;</ept> till ett dataobjekt i datatypen <bpt id="p2">&lt;strong&gt;</bpt>sträng<ept id="p2">&lt;/strong&gt;</ept>), kan du använda funktionen <bpt id="p3">&lt;strong&gt;</bpt>TEXT()<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="810">
-          <source>You define the following data sources in your model mapping:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du definierar följande datakällor i din modellmappning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="811">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>myID<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Calculated field<ept id="p2">&lt;/strong&gt;</ept> type), which contains the expression <bpt id="p3">&lt;strong&gt;</bpt>GUIDVALUE(<ph id="ph1">&amp;quot;</ph>AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>myID<ept id="p1">&lt;/strong&gt;</ept> (typen <bpt id="p2">&lt;strong&gt;</bpt>beräknat fält<ept id="p2">&lt;/strong&gt;</ept>), som innehåller uttrycket <bpt id="p3">&lt;strong&gt;</bpt>GUIDVALUE (<ph id="ph1">&amp;quot;</ph>AF5CCDAC F728-4609-8C8B-A4B30B0C0AA0<ph id="ph2">&amp;quot;</ph>)<ept id="p3">&lt;/strong&gt;</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="812">
-          <source><bpt id="p1">&lt;strong&gt;</bpt>Users<ept id="p1">&lt;/strong&gt;</ept> (<bpt id="p2">&lt;strong&gt;</bpt>Table records<ept id="p2">&lt;/strong&gt;</ept> type), which refers to the UserInfo table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Användare<ept id="p1">&lt;/strong&gt;</ept> (typen <bpt id="p2">&lt;strong&gt;</bpt>Registerposter<ept id="p2">&lt;/strong&gt;</ept>), som refererar till tabellen UserInfo</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="813">
-          <source>When these data sources are defined, you can use an expression such as <bpt id="p1">&lt;strong&gt;</bpt>FILTER (Users, Users.objectId = myID)<ept id="p1">&lt;/strong&gt;</ept> to filter the UserInfo table by the <bpt id="p2">&lt;strong&gt;</bpt>objectId<ept id="p2">&lt;/strong&gt;</ept> field of the <bpt id="p3">&lt;strong&gt;</bpt>GUID<ept id="p3">&lt;/strong&gt;</ept> data type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När du har definierat dessa datakällor kan du använda ett uttryck såsom <bpt id="p1">&lt;strong&gt;</bpt>FILTER (Users, Users.objectId = myID)<ept id="p1">&lt;/strong&gt;</ept> för att filtrera registret UserInfo genom <bpt id="p2">&lt;strong&gt;</bpt>objectId<ept id="p2">&lt;/strong&gt;</ept> i datatypen <bpt id="p3">&lt;strong&gt;</bpt>GUID<ept id="p3">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="814">
-          <source>JSONVALUE (id, path)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JSONVALUE (id, sökväg)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="815">
-          <source>Parse data in JavaScript Object Notation (JSON) format that is accessed by the specified path to extract a scalar value that is based on the specified ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tolka data i JSON-format (JavaScript Object Notation) som används av den angivna sökvägen för att ta fram ett skalärvärde som baseras på angivet-ID.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="816">
-          <source>The data source <bpt id="p1">&lt;strong&gt;</bpt>$JsonField<ept id="p1">&lt;/strong&gt;</ept> contains the following data in JSON format: <bpt id="p2">&lt;strong&gt;</bpt>{<ph id="ph1">&amp;quot;</ph>BuildNumber<ph id="ph2">&amp;quot;</ph>:<ph id="ph3">&amp;quot;</ph>7.3.1234.1<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>KeyThumbprint<ph id="ph6">&amp;quot;</ph>:<ph id="ph7">&amp;quot;</ph>7366E<ph id="ph8">&amp;quot;</ph>}<ept id="p2">&lt;/strong&gt;</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datakällan <bpt id="p1">&lt;strong&gt;</bpt>$JsonField<ept id="p1">&lt;/strong&gt;</ept> innehåller följande data i JSON-format: <bpt id="p2">&lt;strong&gt;</bpt>{<ph id="ph1">&amp;quot;</ph>BuildNumber<ph id="ph2">&amp;quot;</ph>:<ph id="ph3">&amp;quot;</ph>7.3.1234.1<ph id="ph4">&amp;quot;</ph>, <ph id="ph5">&amp;quot;</ph>KeyThumbprint<ph id="ph6">&amp;quot;</ph>:<ph id="ph7">&amp;quot;</ph>7366E<ph id="ph8">&amp;quot;</ph>}<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="817">
-          <source>For this data source, <ph id="ph1">&lt;/strong&gt;</ph>JSONVALUE ( <ph id="ph2">&amp;quot;</ph>BuildNumber<ph id="ph3">&amp;quot;</ph>, $JsonField)<ph id="ph4">&lt;/strong&gt;</ph> returns the value <bpt id="p1">&lt;strong&gt;</bpt>7.3.1234.1<ept id="p1">&lt;/strong&gt;</ept> of the <bpt id="p2">&lt;strong&gt;</bpt>String<ept id="p2">&lt;/strong&gt;</ept> data type.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För den här datakällan returnerar <ph id="ph1">&lt;/strong&gt;</ph>JSONVALUE ( <ph id="ph2">&amp;quot;</ph>BuildNumber<ph id="ph3">&amp;quot;</ph>, $JsonField)<ph id="ph4">&lt;/strong&gt;</ph> värdet <bpt id="p1">&lt;strong&gt;</bpt>7.3.1234.1<ept id="p1">&lt;/strong&gt;</ept> av datatypen <bpt id="p2">&lt;strong&gt;</bpt>sträng<ept id="p2">&lt;/strong&gt;</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="818">
-          <source>Data conversion functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktioner för datakonvertering</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="819">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="820">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="821">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="822">
-          <source>TEXT (input)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TEXT (input)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="823">
-          <source>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="824">
-          <source>For values of the <bpt id="p1">**</bpt>real<ept id="p1">**</ept> type, the string conversion is limited to two decimal places.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För värden av typen <bpt id="p1">**</bpt>real<ept id="p1">**</ept> är strängkonverteringen begränsad till två decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="825">
-          <source>If the server locale of the Finance and Operations instance is defined as <bpt id="p1">**</bpt>EN-US<ept id="p1">**</ept>, <bpt id="p2">**</bpt>TEXT (NOW ())<ept id="p2">**</ept> returns the current Finance and Operations session date, December 17, 2015, as the text string <bpt id="p3">**</bpt>"12/17/2015 07:59:23 AM"<ept id="p3">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om serverns lokala inställningar för Finance and Operations anges som <bpt id="p1">**</bpt>EN-US<ept id="p1">**</ept>, returnerar <bpt id="p2">**</bpt>TEXT (NOW ())<ept id="p2">**</ept> aktuellt Finance and Operations-sessionsdatum, 17 December 2015, som textsträngen <bpt id="p3">**</bpt>"12/17/2015 07:59:23 AM"<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="826">
-          <source><bpt id="p1">**</bpt>TEXT (1/3)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"0.33"<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TEXT (1/3)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>"0.33"<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="827">
-          <source>QRCODE (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QRCODE (sträng)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="828">
-          <source>Return a Quick Response Code (QR code) image in base64 binary format for the specified string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en QR-kod (Quick Response Code ) i binärt base64-format för den specificerade strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="829">
-          <source><bpt id="p1">**</bpt>QRCODE ("Sample text")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>U2FtcGxlIHRleHQ=<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>QRCODE ("Sample text")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>U2FtcGxlIHRleHQ =<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="830">
-          <source>Data collection functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datainsamlingsfunktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="831">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="832">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="833">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="834">
-          <source>FORMATELEMENTNAME ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FORMATELEMENTNAME ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="835">
-          <source>Return the name of the current format's element.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera namnet på det aktuella formatets element.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="836">
-          <source>Return an empty string when the <bpt id="p1">**</bpt>Collect output details<ept id="p1">**</ept> flag of the current files is turned off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en tom sträng när flaggan <bpt id="p1">**</bpt>Samla in utdatadetaljer<ept id="p1">**</ept> är avstängd för aktuella filer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="837">
-          <source>To learn more about how to use this function, see the <bpt id="p1">**</bpt>ER Use data of format output for counting and summing<ept id="p1">**</ept> task guide, which is part of the <bpt id="p2">**</bpt>Acquire/Develop IT service/solution components<ept id="p2">**</ept> business process.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Se uppgiftsguiden <bpt id="p1">**</bpt>ER Använd data från formatutmatningen för inventering och summering<ept id="p1">**</ept> (ingår i affärsprocessen <bpt id="p2">**</bpt>Införskaffa/utveckla komponenter för IT-tjänster/-lösningar<ept id="p2">**</ept>) för mer information om hur du använder dessa funktioner.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="838">
-          <source>SUMIFS (key string for summing, criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SUMIFS (nyckelsträng för summering, kriterispann1, kriterievärde1-sträng <ph id="ph1">\[</ph>, kriteriespann2-sträng, kriterievärde2-sträng, …<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="839">
-          <source>Return the sum of values  that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera summan av värden som samlades in för XML-noder (där namnet definierats som en nyckel) när formatet kördes och som uppfyller angivna villkor (par med intervall och värden).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="840">
-          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value when the <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera ett <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (noll) värde när flaggan <bpt id="p2">**</bpt>Samla in utdatadetaljer<ept id="p2">**</ept> i de aktuella filerna är avstängd.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="841">
-          <source>SUMIF (key string for summing, criteria range string, criteria value string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SUMIF (nyckelsträng för summering, sträng för kriteriespann, värdesträng för kriterier)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="842">
-          <source>Return the sum of values that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified condition (a range and value).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera summan av värden som samlades in för XML-noder (där namnet definierats som en nyckel) när formatet kördes och som uppfyller det angivna villkoret (ett intervall och värde).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="843">
-          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value when the <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera ett <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (noll) värde när flaggan <bpt id="p2">**</bpt>Samla in utdatadetaljer<ept id="p2">**</ept> i de aktuella filerna är avstängd.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="844">
-          <source>COUNTIFS (criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COUNTIFS (sträng för kriteriespann1, sträng för kriterievärde1 <ph id="ph1">\[</ph>, sträng för kriteriespann2, sträng för kriterievärde2, …<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="845">
-          <source>Return the number of XML nodes that was collected when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar antalet XML-noder som samlats in i när formatet kördes och som uppfyller de angivna villkoren (par med intervall och värden).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="846">
-          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value when the <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera ett <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (noll) värde när flaggan <bpt id="p2">**</bpt>Samla in utdatadetaljer<ept id="p2">**</ept> i de aktuella filerna är avstängd.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="847">
-          <source>COUNTIF (criteria range string, criteria value string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COUNTIF (intervallsträng för kriterier, värdesträng för kriterier)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="848">
-          <source>Return the number of XML nodes that was collected when the format was run, and that satisfies the specified condition (a range and value).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar antalet XML-noder som samlats in i när formatet kördes och som uppfyller det angivna villkoret (ett intervall och värde).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="849">
-          <source>Return a <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (zero) value the flag <bpt id="p2">**</bpt>Collect output details<ept id="p2">**</ept> flag of the current files is turned off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera ett <bpt id="p1">**</bpt>0<ept id="p1">**</ept> (noll) värde när flaggan <bpt id="p2">**</bpt>Samla in utdatadetaljer<ept id="p2">**</ept> i de aktuella filerna är avstängd.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="850">
-          <source>COLLECTEDLIST (criteria range1 string, criteria value1 string <ph id="ph1">\[</ph>, criteria range2 string, criteria value2 string, …<ph id="ph2">\]</ph>)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">COLLECTEDLIST (sträng för kriteriespann1, sträng för kriterievärde1 <ph id="ph1">\[</ph>, sträng för kriteriespann2, sträng för kriterievärde2, …<ph id="ph2">\]</ph>)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="851">
-          <source>Return the list of values that was collected for XML nodes when the format was run, and that satisfies the specified conditions (a range and value).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar listan över värden som samlats för XML-noder när formatet kördes och som uppfyller de angivna villkoren (ett intervall och värde).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="852">
-          <source>Return an empty list when the <bpt id="p1">**</bpt>Collect output details<ept id="p1">**</ept> flag of the current files is turned off.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en tom lista när flaggan <bpt id="p1">**</bpt>Samla in utdatadetaljer<ept id="p1">**</ept> är avstängd för aktuella filer.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="853">
-          <source>Other (business domain–specific) functions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Andra (företagsdomänspecifika) funktioner</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="854">
-          <source>Function</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Funktion</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="855">
-          <source>Description</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">beskrivning</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="856">
-          <source>Example</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exempel</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="857">
-          <source>CONVERTCURRENCY (amount, source currency, target currency, date, company)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CONVERTCURRENCY (amount, source currency, target currency, date, company)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="858">
-          <source>Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified Finance and Operations company on the specified date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konvertera det angivna penningbeloppet från den specificerade källvalutan till den specificerade målvalutan genom att använda inställningarna för det specificerade Finance and Operations-företaget på angivet datum.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="859">
-          <source><bpt id="p1">**</bpt>CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")<ept id="p1">**</ept> returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")<ept id="p1">**</ept> returnerar motsvarigheten för en euro i US-dollar för det aktuella sessionsdatumet baserat på inställningarna för DEMF-företaget.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="860">
-          <source>ROUNDAMOUNT (number, decimals, round rule)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ROUNDAMOUNT (number, decimals, round rule)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="861">
-          <source>Round the specified amount to the specified number of decimal places according to the specified rounding rule.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avrunda det angivna beloppet enligt den definierade avrundningsregeln och det angivna antalet decimaler.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="862">
-          <source>The rounding rule must be specified as a value of the Finance and Operations <bpt id="p1">**</bpt>RoundOffType<ept id="p1">**</ept> enumeration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Avrundningsregeln måste anges som ett värde för Finance and Operations-uppräkningen för <bpt id="p1">**</bpt>RoundOffType<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="863">
-          <source>If the <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept> parameter is set to <bpt id="p2">**</bpt>Downward<ept id="p2">**</ept>, <bpt id="p3">**</bpt>ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p3">**</ept> returns the value <bpt id="p4">**</bpt>1000.78<ept id="p4">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om parametern <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept> anges som <bpt id="p2">**</bpt>Downward<ept id="p2">**</ept>, returnerar <bpt id="p3">**</bpt>ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p3">**</ept> värdet <bpt id="p4">**</bpt>1000.78<ept id="p4">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="864">
-          <source>If the <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept> parameter is set to either <bpt id="p2">**</bpt>Normal<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Rounding-up<ept id="p3">**</ept>, <bpt id="p4">**</bpt>ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p4">**</ept> returns the value <bpt id="p5">**</bpt>1000.79<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om <bpt id="p1">**</bpt>model.RoundOff<ept id="p1">**</ept>-parametern är inställd på <bpt id="p2">**</bpt>Normal<ept id="p2">**</ept> eller <bpt id="p3">**</bpt>Rounding-up<ept id="p3">**</ept> returnerar <bpt id="p4">**</bpt>ROUNDAMOUNT (1000.787, 2, model.RoundOff)<ept id="p4">**</ept> värdet <bpt id="p5">**</bpt>1000.79<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="865">
-          <source>CURCredRef (digits)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CURCredRef (digits)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="866">
-          <source>Return a creditor reference, based on the digits of the specified invoice number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en betalningsmottagarreferens baserad på siffrorna i det angivna fakturanumret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="867">
-          <source><bpt id="p1">**</bpt>CURCredRef ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"2200002"<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CURCredRef ("VEND-200002")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>"2200002"<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="868">
-          <source>MOD<ph id="ph1">\_</ph>97 (digits)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MOD<ph id="ph1">\_</ph>97 (siffror)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="869">
-          <source>Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar en betalningsmottagarreferens som ett MOD97-uttryck baserat på siffrorna i det angivna fakturanumret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="870">
-          <source><bpt id="p1">**</bpt>MOD<ph id="ph1">\_</ph>97 ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"20000285"<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>MOD<ph id="ph1">\_</ph>97 ("VEND-200002")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>"20000285"<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="871">
-          <source>ISOCredRef (digits)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISOCredRef (digits)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="872">
-          <source>Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en International Organization for Standardization (ISO)-betalningsmottagarreferens baserad på siffror och bokstäver i det angivna fakturanumret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="873">
-          <source>To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill ta bort symboler som inte överensstämmer med ISO-standarden från alfabetet måste indataparametern översättas innan den skickas till den här funktionen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="874">
-          <source><bpt id="p1">**</bpt>ISOCredRef ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"RF23VEND-200002"<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISOCredRef ("VEND-200002")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>"RF23VEND-200002"<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="875">
-          <source>CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID (string, number)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID (sträng, nummer)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="876">
-          <source>Get the specified additional financial dimension ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hämta angiven ID för ytterligare ekonomisk dimension</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="877">
-          <source>In the <bpt id="p1">**</bpt>string<ept id="p1">**</ept> parameter, dimensions are represented as IDs that are separated by commas.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">I parametern <bpt id="p1">**</bpt>sträng<ept id="p1">**</ept> representeras dimensioner som ID åtskilda med kommatecken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="878">
-          <source>The <bpt id="p1">**</bpt>number<ept id="p1">**</ept> parameter defines the sequence code of the requested dimension in the string.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parametern <bpt id="p1">**</bpt>nummer<ept id="p1">**</ept> definierar den begärda dimensionens seriekod i strängen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="879">
-          <source><bpt id="p1">**</bpt>CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>"CC"<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CN<ph id="ph1">\_</ph>GBT<ph id="ph2">\_</ph>AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>"CC"<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="880">
-          <source>GetCurrentCompany ()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GetCurrentCompany ()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="881">
-          <source>Return a text representation of the code for the legal entity (company) that a user is currently signed in to.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en textrepresentation av den kod för juridisk person (företag) som en användare för tillfället är inloggad till.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="882">
-          <source><bpt id="p1">**</bpt>GETCURRENTCOMPANY ()<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>USMF<ept id="p2">**</ept> for a user who is signed in to the <bpt id="p3">**</bpt>Contoso Entertainment System USA<ept id="p3">**</ept> company in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>GETCURRENTCOMPANY ()<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>USMF<ept id="p2">**</ept> för en användare som är inloggad på Finance and Operations-företaget <bpt id="p3">**</bpt>Contoso Entertainment System USA<ept id="p3">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="883">
-          <source>CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 (digits)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 (siffror)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="884">
-          <source>Return a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en betalningsmottagarreferens som ett MOD10-uttryck baserat på siffrorna i det angivna fakturanumret.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="885">
-          <source><bpt id="p1">**</bpt>CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 ("VEND-200002")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>3<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>CH<ph id="ph1">\_</ph>BANK<ph id="ph2">\_</ph>MOD<ph id="ph3">\_</ph>10 ("VEND-200002")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>3<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="886">
-          <source>FA<ph id="ph1">\_</ph>SUM (fixed asset code, value model code, start date, end date)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FA<ph id="ph1">\_</ph>SUM (Anläggningstillgångskod, värdemodellkod, startdatum, slutdatum)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="887">
-          <source>Return the prepared data container of the fixed asset amount for the specified period.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den förberedda databehållaren med anläggningstillgångsbelopp för angiven period.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="888">
-          <source><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", Date1, Date2)<ept id="p1">**</ept> returns the prepared data container of fixed asset <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> that has the <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> value model for a period from <bpt id="p4">**</bpt>Date1<ept id="p4">**</ept> to <bpt id="p5">**</bpt>Date2<ept id="p5">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", Date1, Date2)<ept id="p1">**</ept> returnerar den förberedda databehållaren för anläggningstillgången <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> som har värdemodellen <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> i en period mellan <bpt id="p4">**</bpt>Date1<ept id="p4">**</ept> och <bpt id="p5">**</bpt>Date2<ept id="p5">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="889">
-          <source>FA<ph id="ph1">\_</ph>BALANCE (fixed asset code, value model code, reporting year, reporting date)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">FA<ph id="ph1">\_</ph>BALANCE (Anläggningstillgångskod, värdemodellkod, rapporteringsår, rapporteringsdatum)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="890">
-          <source>Return the prepared data container of the fixed asset balance.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera den förberedda databehållaren med anläggningstillgångssaldo.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="891">
-          <source>The reporting year must be specified as a value of the <bpt id="p1">**</bpt>AssetYear<ept id="p1">**</ept> enumeration in Finance and Operations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Rapporteringsåret måste anges som ett värde för Finance and Operations-uppräkningen <bpt id="p1">**</bpt>AssetYear<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="892">
-          <source><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())<ept id="p1">**</ept> returns the prepared data container of balances for fixed asset <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> that has the <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> value model on the current Finance and Operations session date.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>FA<ph id="ph1">\_</ph>SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())<ept id="p1">**</ept> returnerar den förberedda databehållaren för belopp tillhörande anläggningstillgången <bpt id="p2">**</bpt>"COMP-000001"<ept id="p2">**</ept> med värdemodellen <bpt id="p3">**</bpt>"Current"<ept id="p3">**</ept> på aktuellt Finance and Operations-sessionsdatum.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="893">
-          <source>TABLENAME2ID (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TABLENAME2ID (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="894">
-          <source>Return an integer representation of a table ID for the specified table name.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnera en heltalsrepresentation av ett register-ID för ett givet registernamn.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="895">
-          <source><bpt id="p1">**</bpt>TABLENAME2ID ("Intrastat")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>1510<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>TABLENAME2ID ("Intrastat")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>1510<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="896">
-          <source>ISVALIDCHARACTERISO7064 (string)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ISVALIDCHARACTERISO7064 (string)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="897">
-          <source>Return the Boolean value <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> when the specified string represents a valid international bank account number (IBAN).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar booleskt värde <bpt id="p1">**</bpt>TRUE<ept id="p1">**</ept> när en specificerad sträng representerar ett giltigt internationellt bankkontonummer (IBAN).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="898">
-          <source>Otherwise, return the Boolean value <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Annars returnera det booleska värdet <bpt id="p1">**</bpt>FALSE<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="899">
-          <source><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>TRUE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>SANT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="900">
-          <source><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61")<ept id="p1">**</ept> returns <bpt id="p2">**</bpt>FALSE<ept id="p2">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>ISVALIDCHARACTERISO7064 ("AT61")<ept id="p1">**</ept> returnerar <bpt id="p2">**</bpt>FALSKT<ept id="p2">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="901">
-          <source>NUMSEQVALUE (number sequence code, scope, scope id)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMSEQVALUE (nummerseriekod, område, områdes-ID)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="902">
-          <source>Return the new generated value of a number sequence, based on the specified number sequence code, scope, and scope ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseriekod, område och områdes-ID.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="903">
-          <source>The scope must be specified as a value of the <bpt id="p1">**</bpt>ERExpressionNumberSequenceScopeType<ept id="p1">**</ept> enumeration (<bpt id="p2">**</bpt>Shared<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Legal entity<ept id="p3">**</ept>, or <bpt id="p4">**</bpt>Company<ept id="p4">**</ept>).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Område måste anges som ett värde för uppräkningen <bpt id="p1">**</bpt>ERExpressionNumberSequenceområdes-IDType<ept id="p1">**</ept> (<bpt id="p2">**</bpt>delad<ept id="p2">**</ept>, <bpt id="p3">**</bpt>juridisk person<ept id="p3">**</ept> eller <bpt id="p4">**</bpt>företag<ept id="p4">**</ept>).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="904">
-          <source>For the <bpt id="p1">**</bpt>Shared<ept id="p1">**</ept> scope, specify an empty string as the scope ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För området <bpt id="p1">**</bpt>delad<ept id="p1">**</ept>, ange en tom sträng som områdes-ID.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="905">
-          <source>For the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Legal entity<ept id="p2">**</ept> scopes, specify the company code as the scope ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För området <bpt id="p1">**</bpt>företag<ept id="p1">**</ept> och <bpt id="p2">**</bpt>juridisk person<ept id="p2">**</ept>, ange företagskoden som områdes-ID.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="906">
-          <source>For the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Legal entity<ept id="p2">**</ept> scopes, if you specify an empty string as the scope ID, the current company code is used.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">För området <bpt id="p1">**</bpt>företag<ept id="p1">**</ept> och <bpt id="p2">**</bpt>juridisk person<ept id="p2">**</ept>, om du anger en tom sträng som områdes-ID, används aktuella företagskoden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="907">
-          <source>You define the following data sources in your model mapping:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du definierar följande datakällor i din modellmappning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="908">
-          <source><bpt id="p1">**</bpt>enumScope<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Dynamics 365 for Operations enumeration<ept id="p2">**</ept> type), which refers to the <bpt id="p3">**</bpt>ERExpressionNumberSequenceScopeType<ept id="p3">**</ept> enumeration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>enumScope<ept id="p1">**</ept> (typen <bpt id="p2">**</bpt>Dynamics 365 for Operations-uppräkning<ept id="p2">**</ept>) som hänvisar till uppräkningen <bpt id="p3">**</bpt>ERExpressionNumberSequenceScopeType<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="909">
-          <source><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type), which contains the expression <bpt id="p3">**</bpt>NUMSEQVALUE ("Gene<ph id="ph1">\_</ph>1", enumScope.Company, "")<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (typen <bpt id="p2">**</bpt>beräknat fält<ept id="p2">**</ept>), som innehåller uttrycket <bpt id="p3">**</bpt>NUMSEQVALUE (”Gene<ph id="ph1">\_</ph>1”, enumScope.Company, ””)<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="910">
-          <source>When the <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> data source is called, it returns the new generated value of the <bpt id="p2">**</bpt>Gene<ph id="ph1">\_</ph>1<ept id="p2">**</ept> number sequence that has been configured for the company that supplies the context that the ER format is run under.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När datakällan <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> kallas, returneras det nya genererade värdet för nummerserien <bpt id="p2">**</bpt>Gen<ph id="ph1">\_</ph>1<ept id="p2">**</ept> som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="911">
-          <source>NUMSEQVALUE (number sequence code)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMSEQVALUE (nummerseriekod)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="912">
-          <source>Return the new generated value of a number sequence, based on the specified number sequence, the <bpt id="p1">**</bpt>Company<ept id="p1">**</ept> scope, and (as the scope ID) the code of the company that supplies the context that is ER format is run under.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det nya genererade värdet för en nummerserie, baserat på den angivna nummerserien, området <bpt id="p1">**</bpt>företag<ept id="p1">**</ept> och koden för det företag som tillhandahåller kontexten som ER-formatet kör under (som områdes-ID).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="913">
-          <source>You define the following data source in your model mapping: <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type).</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du kan definiera följande datakälla i din modellmappning: <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (<bpt id="p2">**</bpt>beräknat fält<ept id="p2">**</ept>-typ).</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="914">
-          <source>This data source contains the expression <bpt id="p1">**</bpt>NUMSEQVALUE ("Gene<ph id="ph1">\_</ph>1")<ept id="p1">**</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datakällan innehåller uttrycket <bpt id="p1">**</bpt>NUMSEQVALUE ("Gene<ph id="ph1">\_</ph>1")<ept id="p1">**</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="915">
-          <source>When the <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> data source is called, it returns the new generated value of the <bpt id="p2">**</bpt>Gene<ph id="ph1">\_</ph>1<ept id="p2">**</ept> number sequence that has been configured for the company that supplies the context that the ER format is run under.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När datakällan <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> kallas, returneras det nya genererade värdet för nummerserien <bpt id="p2">**</bpt>Gen<ph id="ph1">\_</ph>1<ept id="p2">**</ept> som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="916">
-          <source>NUMSEQVALUE (number sequence record ID)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NUMSEQVALUE (nummerseriens post-ID)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="917">
-          <source>Return the new generated value of a number sequence, based on the specified number sequence record ID.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseries post-ID.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="918">
-          <source>You define the following data sources in your model mapping:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Du definierar följande datakällor i din modellmappning:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="919">
-          <source><bpt id="p1">**</bpt>LedgerParms<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Table<ept id="p2">**</ept> type), which refers to the LedgerParameters table</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>LedgerParms<ept id="p1">**</ept> (<bpt id="p2">**</bpt>tabell<ept id="p2">**</ept> typ), som refererar till tabellen LedgerParameters</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="920">
-          <source><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Calculated field<ept id="p2">**</ept> type), which contains the expression <bpt id="p3">**</bpt>NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)<ept id="p3">**</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> (typen <bpt id="p2">**</bpt>beräknat fält<ept id="p2">**</ept>), som innehåller uttrycket <bpt id="p3">**</bpt>NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)<ept id="p3">**</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="921">
-          <source>When the <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> data source is called, it returns the new generated value of the number sequence that has been configured in the General ledger parameters for the company that supplies the context that the ER format is run under.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">När datakällan <bpt id="p1">**</bpt>NumSeq<ept id="p1">**</ept> kallas, returneras det nya genererade värdet för nummerserien som har konfigurerats i Redovisningsparametrar för det företag som tillhandahåller den kontext som ER-formatet körs under.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="922">
-          <source>This number sequence uniquely identifies journals and acts as a batch number that links the transactions together.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den här nummerserien identifierar unikt journaler och fungerar som ett batchnummer som kopplar ihop transaktionerna.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="923">
-          <source>Functions list extension</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Utöka funktionslista</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="924">
-          <source>ER lets you extend the list of functions that are used in ER expressions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ER stöder utökning av listfunktioner som används i ER-uttryck.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="925">
-          <source>Some engineering effort is required.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vissa tekniska insatser krävs.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="926">
-          <source>For detailed information, see <bpt id="p1">[</bpt>Extending the list of Electronic reporting functions<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept>.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Om du vill ha mer information, se <bpt id="p1">[</bpt>Utöka listan över elektroniska rapporteringfunktioner<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept>.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="927">
-          <source>Additional resources</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ytterligare resurser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="928">
-          <source><bpt id="p1">[</bpt>Electronic Reporting overview<ept id="p1">](general-electronic-reporting.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Översikt över elektronisk rapportering<ept id="p1">](general-electronic-reporting.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="929">
-          <source><bpt id="p1">[</bpt>Extend the list of Electronic reporting (ER) functions<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Utöka listan över elektronisk rapportering (ER)<ept id="p1">](general-electronic-reporting-formulas-list-extension.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Formeldesigner i elektronisk rapportering (ER)
+description: Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER).
+author: NickSelin
+manager: AnnBe
+ms.date: 05/14/2014
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+audience: Application User, IT Pro
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592670"
+---
+# <a name="formula-designer-in-electronic-reporting-er"></a><span data-ttu-id="aae9a-103">Formeldesigner i elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="aae9a-103">Formula designer in Electronic reporting (ER)</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="aae9a-104">Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="aae9a-104">This topic explains how to use the formula designer in Electronic reporting (ER).</span></span> <span data-ttu-id="aae9a-105">Om du utformar ett format för ett visst elektroniskt dokument i ER kan du använda formler för datatransformering för att uppfylla kraven för dokumentets uppfyllelse och formatering.</span><span class="sxs-lookup"><span data-stu-id="aae9a-105">When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting.</span></span> <span data-ttu-id="aae9a-106">Dessa formler liknar formler i Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="aae9a-106">These formulas resemble formulas in Microsoft Excel.</span></span> <span data-ttu-id="aae9a-107">Formulären ger stöd åt olika typer av funktioner: text, datum och tid, matematik, logik, information, datatypskonvertering och andra (företagsdomänspecifika funktioner).</span><span class="sxs-lookup"><span data-stu-id="aae9a-107">Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).</span></span>
+
+## <a name="formula-designer-overview"></a><span data-ttu-id="aae9a-108">Formel designer översikt</span><span class="sxs-lookup"><span data-stu-id="aae9a-108">Formula designer overview</span></span>
+
+<span data-ttu-id="aae9a-109">ER stöder formeldesignern.</span><span class="sxs-lookup"><span data-stu-id="aae9a-109">ER supports the formula designer.</span></span> <span data-ttu-id="aae9a-110">Därför kan du vid designtillfället konfigurera uttryck som kan användas för följande uppgifter under körning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-110">Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:</span></span>
+
+- <span data-ttu-id="aae9a-111">Omvandla data som tas emot från en Microsoft Dynamics 365 for Finance and Operations-databas och som anges i en ER-datamodell som fungerar som datakälla för ER-format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-111">Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations database, and that should be entered in an ER data model that is designed to be a data source for ER formats.</span></span> <span data-ttu-id="aae9a-112">(Till exempel kan dessa omvandlingar omfatta konvertering, filtrering och gruppering av datatyp.)</span><span class="sxs-lookup"><span data-stu-id="aae9a-112">(For example, these transformations might include filtering, grouping, and data type conversion.)</span></span>
+- <span data-ttu-id="aae9a-113">Formatera data som ska skickas till ett skapande elektroniskt dokument i enlighet med layout och villkor för ett specifikt ER-format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-113">Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format.</span></span> <span data-ttu-id="aae9a-114">(Till exempel kan formateringen göras i enlighet med det begärda språket eller kulturen, eller i enlighet med kodning).</span><span class="sxs-lookup"><span data-stu-id="aae9a-114">(For example, the formatting might be done in accordance with the requested language or culture, or the encoding).</span></span>
+- <span data-ttu-id="aae9a-115">Kontrollera processen för generering av elektroniska dokument.</span><span class="sxs-lookup"><span data-stu-id="aae9a-115">Control the process of creating electronic documents.</span></span> <span data-ttu-id="aae9a-116">(Till exempel kan uttryck aktivera eller inaktivera utdata från specifika element av formatet, beroende på bearbetade data.</span><span class="sxs-lookup"><span data-stu-id="aae9a-116">(For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data.</span></span> <span data-ttu-id="aae9a-117">De kan också avbryta processen att skapa dokument eller skicka meddelanden till användare.)</span><span class="sxs-lookup"><span data-stu-id="aae9a-117">They can also interrupt the document creation process or throw messages to users.)</span></span>
+
+<span data-ttu-id="aae9a-118">Du kan öppna sidan **Formula designer** när du utför någon av följande åtgärder:</span><span class="sxs-lookup"><span data-stu-id="aae9a-118">You can open the **Formula designer** page when you perform any of the following actions:</span></span>
+
+- <span data-ttu-id="aae9a-119">Binda datakällsartiklar till datamodellkomponenter.</span><span class="sxs-lookup"><span data-stu-id="aae9a-119">Bind data source items to data model components.</span></span>
+- <span data-ttu-id="aae9a-120">Binda datakällsartiklar till formatkomponenter</span><span class="sxs-lookup"><span data-stu-id="aae9a-120">Bind data source items to format components.</span></span>
+- <span data-ttu-id="aae9a-121">Slutför underhåll av beräknade fält som är en del av datakällor.</span><span class="sxs-lookup"><span data-stu-id="aae9a-121">Complete maintenance of calculated fields that are part of data sources.</span></span>
+- <span data-ttu-id="aae9a-122">Definiera synlighetvillkoren för användarnas indataparametrar.</span><span class="sxs-lookup"><span data-stu-id="aae9a-122">Define the visibility conditions for user input parameters.</span></span>
+- <span data-ttu-id="aae9a-123">Utforma transformeringar för ett format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-123">Design a format's transformations.</span></span>
+- <span data-ttu-id="aae9a-124">Definiera aktiveringsvillkoren för formatets komponenter.</span><span class="sxs-lookup"><span data-stu-id="aae9a-124">Define the enabling conditions for the format's components.</span></span>
+- <span data-ttu-id="aae9a-125">Definiera filnamnen för formatets FIL-komponenter.</span><span class="sxs-lookup"><span data-stu-id="aae9a-125">Define the file names for the format's FILE components.</span></span>
+- <span data-ttu-id="aae9a-126">Definiera villkoren för processtyrningsvalideringarna.</span><span class="sxs-lookup"><span data-stu-id="aae9a-126">Define the conditions for process control validations.</span></span>
+- <span data-ttu-id="aae9a-127">Definiera meddelandetexten för processtyrningsvalideringar.</span><span class="sxs-lookup"><span data-stu-id="aae9a-127">Define the message text for process control validations.</span></span>
+
+## <a name="designing-er-formulas"></a><span data-ttu-id="aae9a-128">Utforma ER-formler</span><span class="sxs-lookup"><span data-stu-id="aae9a-128">Designing ER formulas</span></span>
+
+### <a name="data-binding"></a><span data-ttu-id="aae9a-129">Data bindande</span><span class="sxs-lookup"><span data-stu-id="aae9a-129">Data binding</span></span>
+
+<span data-ttu-id="aae9a-130">ER-formeldesignern kan användas för att definiera ett uttryck som transformerar data som tagits emot från datakällor så att dessa data kan anges i datakonsumenten vid körning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-130">The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer at runtime:</span></span>
+
+- <span data-ttu-id="aae9a-131">Från Finance and Operations-datakällor och körtidsparametrar till en ER-datamodell</span><span class="sxs-lookup"><span data-stu-id="aae9a-131">From Finance and Operations data sources and runtime parameters to an ER data model</span></span>
+- <span data-ttu-id="aae9a-132">Från en ER-datamodell till ett ER-format</span><span class="sxs-lookup"><span data-stu-id="aae9a-132">From an ER data model to an ER format</span></span>
+- <span data-ttu-id="aae9a-133">Från Finance and Operations-datakällor och körtidsparametrar till en ER-formatmodell</span><span class="sxs-lookup"><span data-stu-id="aae9a-133">From Finance and Operations data sources and runtime parameters to an ER format</span></span>
+
+<span data-ttu-id="aae9a-134">Bilden visar hur ett uttryck av den här typen skapas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-134">The following illustration shows the design of an expression of this type.</span></span> <span data-ttu-id="aae9a-135">I det här exemplet avrundar uttrycket värdet i fältet **Intrastat.AmountMST** i tabellen Intrastat i Finance and Operations till två decimaler och returnerar det avrundade värdet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-135">In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.</span></span>
+
+<span data-ttu-id="aae9a-136">[![Data bindande](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-136">[![Data binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)</span></span>
+
+<span data-ttu-id="aae9a-137">Bilden nedan visar hur ett uttryck av den här typen kan användas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-137">The following illustration shows how an expression of this type can be used.</span></span> <span data-ttu-id="aae9a-138">I det här exemplet anges resultatet av det utformade uttrycket i komponenten **Transaction.InvoicedAmount** i datamodellen **Tax reporting model**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-138">In this example, the result of the designed expression is entered in the **Transaction.InvoicedAmount** component of the **Tax reporting model** data model.</span></span>
+
+<span data-ttu-id="aae9a-139">[![Databindning används](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-139">[![Data binding being used](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)</span></span>
+
+<span data-ttu-id="aae9a-140">Vid körning avrundar den designade formeln **ROUND (Intrastat.AmountMST 2)** värdet av fältet **AmountMST** för varje post i tabellen Intrastat till två decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-140">At runtime, the designed formula, **ROUND (Intrastat.AmountMST, 2)**, rounds the value of the **AmountMST** field for each record in the Intrastat table to two decimal places.</span></span> <span data-ttu-id="aae9a-141">Därefter skrivs det avrundade värdet in i komponenten **Transaction.InvoicedAmount** i datamodellen **Tax reporting**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-141">It then enters the rounded value in the **Transaction.InvoicedAmount** component of the **Tax reporting** data model.</span></span>
+
+### <a name="data-formatting"></a><span data-ttu-id="aae9a-142">Data formatering</span><span class="sxs-lookup"><span data-stu-id="aae9a-142">Data formatting</span></span>
+
+<span data-ttu-id="aae9a-143">ER-formeldesignern kan användas för att definiera uttryck som formaterar data som tagits emot från datakällor, så att dessa data kan skickas som en del av det skapade elektroniska dokumentet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-143">The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document.</span></span> <span data-ttu-id="aae9a-144">Du har kanske en formatering som måste användas som en typisk regel och som ska återanvändas för ett format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-144">You might have formatting that must be applied as a typical rule that should be reused for a format.</span></span> <span data-ttu-id="aae9a-145">Då kan du ange den formateringen en gång för alla i formatkonfigurationen, som en namngiven omvandling som innehåller ett uttryck med formatering.</span><span class="sxs-lookup"><span data-stu-id="aae9a-145">In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression.</span></span> <span data-ttu-id="aae9a-146">Den namngivna transformeringen kan sedan länkas till flera formatkomponenter, där utdata måste vara formaterade enligt det uttryck du skapade.</span><span class="sxs-lookup"><span data-stu-id="aae9a-146">This named transformation can then be linked to many format components where the output must be formatted according to the formatting expression that you created.</span></span>
+
+<span data-ttu-id="aae9a-147">Bilden nedan visar hur du skapar en transformering av den här typen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-147">The following illustration shows the design of a transformation of this type.</span></span> <span data-ttu-id="aae9a-148">I det här exemplet trunkerar **TrimmedString**-transformeringen inkommande data för datatypen **String** genom att ta bort inledande och avslutande blanksteg.</span><span class="sxs-lookup"><span data-stu-id="aae9a-148">In this example, the **TrimmedString** transformation truncates incoming data of the **String** data type by removing leading and trailing spaces.</span></span> <span data-ttu-id="aae9a-149">Därefter returneras det trunkerade strängvärdet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-149">It then returns the truncated string value.</span></span>
+
+<span data-ttu-id="aae9a-150">[![Transformering](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-150">[![Transformation](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)</span></span>
+
+<span data-ttu-id="aae9a-151">Bilden nedan visar hur en transformering av den här typen kan användas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-151">The following illustration shows how a transformation of this type can be used.</span></span> <span data-ttu-id="aae9a-152">I det här exemplet skickar flera formatkomponenter text som utdata till det skapande elektroniska dokumentet vid körning.</span><span class="sxs-lookup"><span data-stu-id="aae9a-152">In this example, several format components send text as output to the generating electronic document at runtime.</span></span> <span data-ttu-id="aae9a-153">Dessa formatkomponenter hänvisar till **TrimmedString**-transformationen med namn.</span><span class="sxs-lookup"><span data-stu-id="aae9a-153">All these format components refer to the **TrimmedString** transformation by name.</span></span>
+
+<span data-ttu-id="aae9a-154">[![Transformering används](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-154">[![Transformation being used](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)</span></span>
+
+<span data-ttu-id="aae9a-155">När formatkomponenter, såsom komponenten **partyName** i föregående illustration, hänvisar till transformeringen **TrimmedString** sänds text som utdata till det skapande elektroniska dokumentet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-155">When format components, such as the **partyName** component in the preceding illustration, refer to the **TrimmedString** transformation, the transformation sends text as output to the generating electronic document.</span></span> <span data-ttu-id="aae9a-156">Denna text inkluderar inte inledande eller avslutande blanksteg.</span><span class="sxs-lookup"><span data-stu-id="aae9a-156">This text doesn't include leading and trailing spaces.</span></span>
+
+<span data-ttu-id="aae9a-157">Om du har en formatering som måste tillämpas separat kan du införa den formateringen som ett individuellt uttryck för en bindning av en särskild formatkomponent.</span><span class="sxs-lookup"><span data-stu-id="aae9a-157">If you have formatting that must be applied individually, you can introduce that formatting as an individual expression of a binding of a specific format component.</span></span> <span data-ttu-id="aae9a-158">Bilden visar ett uttryck av den här typen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-158">The following illustration shows an expression of this type.</span></span> <span data-ttu-id="aae9a-159">I det här exemplet är **partyType**-formatkomponenten bunden till datakällan via ett uttryck som omvandlar inkommande data från fältet **Model.Company.RegistrationType** i datakällan till versal text.</span><span class="sxs-lookup"><span data-stu-id="aae9a-159">In this example, the **partyType** format component is bound to the data source via an expression that converts incoming data from the **Model.Company.RegistrationType** field in the data source to uppercase text.</span></span> <span data-ttu-id="aae9a-160">Uttrycket skickar sedan texten som utdata till det elektroniska dokumentet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-160">The expression then sends that text as output to the electronic document.</span></span>
+
+<span data-ttu-id="aae9a-161">[![Att tillämpa formatering på en enskild komponent](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-161">[![Applying formatting to an individual component](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)</span></span>
+
+### <a name="process-flow-control"></a><span data-ttu-id="aae9a-162">Processen flödeskontroll</span><span class="sxs-lookup"><span data-stu-id="aae9a-162">Process flow control</span></span>
+
+<span data-ttu-id="aae9a-163">ER-formeldesignern kan användas för att definiera uttryck som styr processflödet för skapande elektroniska dokument.</span><span class="sxs-lookup"><span data-stu-id="aae9a-163">The ER formula designer can be used to define expressions that control the process flow of generating electronic documents.</span></span> <span data-ttu-id="aae9a-164">Du kan utföra följande uppgifter:</span><span class="sxs-lookup"><span data-stu-id="aae9a-164">You can perform the following tasks:</span></span>
+
+- <span data-ttu-id="aae9a-165">Definiera villkor som fastställer när processen för att skapa ett dokument måste stoppas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-165">Define conditions that determine when a document creation process must be stopped.</span></span>
+- <span data-ttu-id="aae9a-166">Definiera uttryck som antingen skapar meddelanden till användaren om stoppade processer eller sänder körningsloggmeddelanden om den pågående processen att skapa en rapport.</span><span class="sxs-lookup"><span data-stu-id="aae9a-166">Specify expressions that either create messages for the user about stopped processes or throw execution log messages about the continuing process of report generation.</span></span>
+- <span data-ttu-id="aae9a-167">Definiera filnamnen på de skapande elektroniska dokumenten och styr villkoren för hur de skapas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-167">Specify the file names of generating electronic documents, and control the conditions of their creation.</span></span>
+
+<span data-ttu-id="aae9a-168">Varje regel i processen flödeskontroll är utformad som en individuell validering.</span><span class="sxs-lookup"><span data-stu-id="aae9a-168">Each rule of the process flow control is designed as an individual validation.</span></span> <span data-ttu-id="aae9a-169">Bilden nedan visar en validering av den här typen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-169">The following illustration shows a validation of this type.</span></span> <span data-ttu-id="aae9a-170">Här följer en förklaring av konfigureringen i det här exemplet:</span><span class="sxs-lookup"><span data-stu-id="aae9a-170">Here is an explanation of the configuration in this example:</span></span>
+
+- <span data-ttu-id="aae9a-171">Valideringen utvärderas när **INSTAT**-noden skapas under generering av XML-filen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-171">The validation is evaluated when the **INSTAT** node is created during generation of the XML file.</span></span>
+- <span data-ttu-id="aae9a-172">Valideringen stoppar körningsprocessen och returnerar **FALSKT** om listan över transaktioner är tom.</span><span class="sxs-lookup"><span data-stu-id="aae9a-172">If the list of transactions is empty, the validation stops the execution process and returns **FALSE**.</span></span>
+- <span data-ttu-id="aae9a-173">Valideringen returnerar ett felmeddelande som innehåller text från etiketten Finance and Operations SYS70894 på användarens valda språk.</span><span class="sxs-lookup"><span data-stu-id="aae9a-173">The validation returns an error message that includes the text of Finance and Operations label SYS70894 in the user's preferred language.</span></span>
+
+<span data-ttu-id="aae9a-174">[![Validering](./media/picture-validation.jpg)](./media/picture-validation.jpg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-174">[![Validation](./media/picture-validation.jpg)](./media/picture-validation.jpg)</span></span>
+
+<span data-ttu-id="aae9a-175">ER-formeldesignern kan även användas för att skapa ett filnamn för ett skapande elektroniskt dokument och styra processen för hur en fil skapas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-175">The ER formula designer can also be used to generate a file name for a generating electronic document and control the file creation process.</span></span> <span data-ttu-id="aae9a-176">Bilden nedan visar utformningen av en styrning av ett processflöde av den här typen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-176">The following illustration shows the design of a process flow control of this type.</span></span> <span data-ttu-id="aae9a-177">Här följer en förklaring av konfigureringen i det här exemplet:</span><span class="sxs-lookup"><span data-stu-id="aae9a-177">Here is an explanation of the configuration in this example:</span></span>
+
+- <span data-ttu-id="aae9a-178">Listan med poster från datakällan **modell. Intrastat-** är uppdelat i batchar.</span><span class="sxs-lookup"><span data-stu-id="aae9a-178">The list of records from the **model.Intrastat** data source is divided into batches.</span></span> <span data-ttu-id="aae9a-179">Varje batch innehåller upp till 1 000 poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-179">Each batch contains up to 1,000 records.</span></span>
+- <span data-ttu-id="aae9a-180">Utdata skapar en zip-fil som innehåller en fil i XML-format för varje skapad batch.</span><span class="sxs-lookup"><span data-stu-id="aae9a-180">The output creates a zip file that contains one file in XML format for every batch that was created.</span></span>
+- <span data-ttu-id="aae9a-181">Ett uttryck returnerar ett filnamn för skapande elektroniska dokument genom att konkatenera filnamnet och filnamnstillägget.</span><span class="sxs-lookup"><span data-stu-id="aae9a-181">An expression returns a file name for generating electronic documents by concatenating the file name and the file name extension.</span></span> <span data-ttu-id="aae9a-182">För den andra batchen och alla efterföljande batchar innehåller filnamnet batchens ID som ett suffix.</span><span class="sxs-lookup"><span data-stu-id="aae9a-182">For the second batch and all subsequent batches, the file name contains the batch ID as a suffix.</span></span>
+- <span data-ttu-id="aae9a-183">Ett uttryck möjliggör (genom att returnera **TRUE**) processen för att skapa en fil för batchar som innehåller minst en post.</span><span class="sxs-lookup"><span data-stu-id="aae9a-183">An expression enables (by returning **TRUE**) the file creation process for batches that contain at least one record.</span></span>
+
+<span data-ttu-id="aae9a-184">[![Filkontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-184">[![File control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)</span></span>
+
+### <a name="basic-syntax"></a><span data-ttu-id="aae9a-185">Grundläggande syntax</span><span class="sxs-lookup"><span data-stu-id="aae9a-185">Basic syntax</span></span>
+
+<span data-ttu-id="aae9a-186">ER-uttryck kan innehålla några eller flera av följande element:</span><span class="sxs-lookup"><span data-stu-id="aae9a-186">ER expressions can contain any or all of the following elements:</span></span>
+
+- <span data-ttu-id="aae9a-187">Konstanter</span><span class="sxs-lookup"><span data-stu-id="aae9a-187">Constants</span></span>
+- <span data-ttu-id="aae9a-188">Operatorer</span><span class="sxs-lookup"><span data-stu-id="aae9a-188">Operators</span></span>
+- <span data-ttu-id="aae9a-189">Referenser</span><span class="sxs-lookup"><span data-stu-id="aae9a-189">References</span></span>
+- <span data-ttu-id="aae9a-190">Sökvägar</span><span class="sxs-lookup"><span data-stu-id="aae9a-190">Paths</span></span>
+- <span data-ttu-id="aae9a-191">Funktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-191">Functions</span></span>
+
+#### <a name="constants"></a><span data-ttu-id="aae9a-192">Konstanter</span><span class="sxs-lookup"><span data-stu-id="aae9a-192">Constants</span></span>
+
+<span data-ttu-id="aae9a-193">Du kan använda text och numeriska konstanter (värden som inte är beräknade) för att utforma uttryck.</span><span class="sxs-lookup"><span data-stu-id="aae9a-193">When you design expressions, you can use text and numeric constants (that is, values that aren't calculated).</span></span> <span data-ttu-id="aae9a-194">I uttrycket **VALUE ("100") + 20** används exempelvis den numeriska konstanten **20** och strängkonstanten **"100"**, och uttrycket returnerar det numeriska värdet **120**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-194">For example, the expression **VALUE ("100") + 20** uses the numeric constant **20** and the string constant **"100"**, and returns the numeric value **120**.</span></span> <span data-ttu-id="aae9a-195">Elektronisk rapportering (ER) formeldesignern stöder escape-sekvenser.</span><span class="sxs-lookup"><span data-stu-id="aae9a-195">The ER formula designer supports escape sequences.</span></span> <span data-ttu-id="aae9a-196">Därför kan du ange en uttryckssträng som ska hanteras på olika sätt.</span><span class="sxs-lookup"><span data-stu-id="aae9a-196">Therefore, you can specify an expression string that should be handled differently.</span></span> <span data-ttu-id="aae9a-197">Till exempel returnerar uttrycket **"Leo Tolstoy" "Krig och fred" "Volym 1"** textsträngen **Leo Tolstoy "Krig och fred" Volym 1**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-197">For example, the expression **"Leo Tolstoy ""War and Peace"" Volume 1"** returns the text string **Leo Tolstoy "War and Peace" Volume 1**.</span></span>
+
+#### <a name="operators"></a><span data-ttu-id="aae9a-198">Operatorer</span><span class="sxs-lookup"><span data-stu-id="aae9a-198">Operators</span></span>
+
+<span data-ttu-id="aae9a-199">Följande register visar de aritmetiska operatorer du kan använda för att göra grundläggande matematiska operationer såsom addition, subtraktion, multiplikation och division.</span><span class="sxs-lookup"><span data-stu-id="aae9a-199">The following table shows the arithmetic operators that you can use to do basic mathematical operations, such as addition, subtraction, multiplication, and division.</span></span>
+
+| <span data-ttu-id="aae9a-200">Operatör</span><span class="sxs-lookup"><span data-stu-id="aae9a-200">Operator</span></span> | <span data-ttu-id="aae9a-201">Betydelse</span><span class="sxs-lookup"><span data-stu-id="aae9a-201">Meaning</span></span>               | <span data-ttu-id="aae9a-202">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-202">Example</span></span> |
+|----------|-----------------------|---------|
+| +        | <span data-ttu-id="aae9a-203">Tillägg</span><span class="sxs-lookup"><span data-stu-id="aae9a-203">Addition</span></span>              | <span data-ttu-id="aae9a-204">1 + 2</span><span class="sxs-lookup"><span data-stu-id="aae9a-204">1+2</span></span>     |
+| -        | <span data-ttu-id="aae9a-205">Subtraktion, negering</span><span class="sxs-lookup"><span data-stu-id="aae9a-205">Subtraction, negation</span></span> | <span data-ttu-id="aae9a-206">5-2,-1</span><span class="sxs-lookup"><span data-stu-id="aae9a-206">5-2, -1</span></span> |
+| \*       | <span data-ttu-id="aae9a-207">Multiplikation</span><span class="sxs-lookup"><span data-stu-id="aae9a-207">Multiplication</span></span>        | <span data-ttu-id="aae9a-208">7\*8</span><span class="sxs-lookup"><span data-stu-id="aae9a-208">7\*8</span></span>    |
+| /        | <span data-ttu-id="aae9a-209">Indelning</span><span class="sxs-lookup"><span data-stu-id="aae9a-209">Division</span></span>              | <span data-ttu-id="aae9a-210">9/3</span><span class="sxs-lookup"><span data-stu-id="aae9a-210">9/3</span></span>     |
+
+<span data-ttu-id="aae9a-211">Följande tabell visar de jämförelseoperatorer som stöds.</span><span class="sxs-lookup"><span data-stu-id="aae9a-211">The following table shows the comparison operators that are supported.</span></span> <span data-ttu-id="aae9a-212">Du kan använda dessa operatorer för att jämföra två värden.</span><span class="sxs-lookup"><span data-stu-id="aae9a-212">You can use these operators to compare two values.</span></span>
+
+| <span data-ttu-id="aae9a-213">Operatör</span><span class="sxs-lookup"><span data-stu-id="aae9a-213">Operator</span></span> | <span data-ttu-id="aae9a-214">Betydelse</span><span class="sxs-lookup"><span data-stu-id="aae9a-214">Meaning</span></span>                  | <span data-ttu-id="aae9a-215">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-215">Example</span></span>    |
+|----------|--------------------------|------------|
+| =        | <span data-ttu-id="aae9a-216">Lika</span><span class="sxs-lookup"><span data-stu-id="aae9a-216">Equal</span></span>                    | <span data-ttu-id="aae9a-217">X = Y</span><span class="sxs-lookup"><span data-stu-id="aae9a-217">X=Y</span></span>        |
+| &gt;     | <span data-ttu-id="aae9a-218">Större än</span><span class="sxs-lookup"><span data-stu-id="aae9a-218">Greater than</span></span>             | <span data-ttu-id="aae9a-219">X&gt;Y</span><span class="sxs-lookup"><span data-stu-id="aae9a-219">X&gt;Y</span></span>     |
+| &lt;     | <span data-ttu-id="aae9a-220">Mindre än</span><span class="sxs-lookup"><span data-stu-id="aae9a-220">Less than</span></span>                | <span data-ttu-id="aae9a-221">X&lt;Y</span><span class="sxs-lookup"><span data-stu-id="aae9a-221">X&lt;Y</span></span>     |
+| &gt;=    | <span data-ttu-id="aae9a-222">Större än eller lika med</span><span class="sxs-lookup"><span data-stu-id="aae9a-222">Greater than or equal to</span></span> | <span data-ttu-id="aae9a-223">X&gt;=Y</span><span class="sxs-lookup"><span data-stu-id="aae9a-223">X&gt;=Y</span></span>    |
+| &lt;=    | <span data-ttu-id="aae9a-224">Mindre än eller lika med</span><span class="sxs-lookup"><span data-stu-id="aae9a-224">Less than or equal to</span></span>    | <span data-ttu-id="aae9a-225">X&lt;=Y</span><span class="sxs-lookup"><span data-stu-id="aae9a-225">X&lt;=Y</span></span>    |
+| &lt;&gt; | <span data-ttu-id="aae9a-226">Inte lika med</span><span class="sxs-lookup"><span data-stu-id="aae9a-226">Not equal to</span></span>             | <span data-ttu-id="aae9a-227">X&lt;&gt;Y</span><span class="sxs-lookup"><span data-stu-id="aae9a-227">X&lt;&gt;Y</span></span> |
+
+<span data-ttu-id="aae9a-228">Dessutom kan du använda ett och-tecken (&) som en operator för textkonkatenering.</span><span class="sxs-lookup"><span data-stu-id="aae9a-228">Additionally, you can use an ampersand (&) as a text concatenation operator.</span></span> <span data-ttu-id="aae9a-229">På så sätt kan du koppla eller konkatenera en eller flera textsträngar till ett enda textstycke.</span><span class="sxs-lookup"><span data-stu-id="aae9a-229">In this way, you can join, or concatenate, one or more text strings into a single piece of text.</span></span>
+
+| <span data-ttu-id="aae9a-230">Operatör</span><span class="sxs-lookup"><span data-stu-id="aae9a-230">Operator</span></span> | <span data-ttu-id="aae9a-231">Betydelse</span><span class="sxs-lookup"><span data-stu-id="aae9a-231">Meaning</span></span>     | <span data-ttu-id="aae9a-232">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-232">Example</span></span>                                             |
+|----------|-------------|-----------------------------------------------------|
+| &        | <span data-ttu-id="aae9a-233">Sammanfoga</span><span class="sxs-lookup"><span data-stu-id="aae9a-233">Concatenate</span></span> | <span data-ttu-id="aae9a-234">"Det finns inget att skriva ut" & ":&nbsp;" & "inga poster hittades"</span><span class="sxs-lookup"><span data-stu-id="aae9a-234">"Nothing to print" & ":&nbsp;" & "no records found"</span></span> |
+
+##### <a name="operator-precedence"></a><span data-ttu-id="aae9a-235">Operatorprioritet</span><span class="sxs-lookup"><span data-stu-id="aae9a-235">Operator precedence</span></span>
+
+<span data-ttu-id="aae9a-236">Ordningen i vilken delarna i ett sammansatt uttryck utvärderas är viktig.</span><span class="sxs-lookup"><span data-stu-id="aae9a-236">The order that the parts of a compound expression are evaluated in is important.</span></span> <span data-ttu-id="aae9a-237">Till exempel är det skillnad på resultatet av uttrycket **1 + 4 / 2** beroende på om additionsoperationen eller divisionsoperationen utförs först.</span><span class="sxs-lookup"><span data-stu-id="aae9a-237">For example, the result of the expression **1 + 4 / 2** varies, depending on whether the addition operation or the division operation is done first.</span></span> <span data-ttu-id="aae9a-238">Du kan använda parenteser för att explicit definiera hur ett uttryck utvärderas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-238">You can use parentheses to explicitly define how an expression is evaluated.</span></span> <span data-ttu-id="aae9a-239">Om du till exempel vill ange att additionsoperationen ska göras först kan du ändra det föregående uttrycket till **(1 + 4) / 2**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-239">For example, to indicate that the addition operation should be done first, you can change the preceding expression to **(1 + 4) / 2**.</span></span> <span data-ttu-id="aae9a-240">Om ordningen för operationer som ska utföras i ett uttryck inte uttryckligen rangordnas baseras ordningen på standardprioriteten som tilldelats de operatorer som stöds.</span><span class="sxs-lookup"><span data-stu-id="aae9a-240">If you don't explicitly indicate the order of operations in an expression, the order is based on the default precedence that is assigned to the supported operators.</span></span> <span data-ttu-id="aae9a-241">Följande register visar den rangordning som tilldelats respektive operator.</span><span class="sxs-lookup"><span data-stu-id="aae9a-241">The following table shows the precedence that is assigned to each operator.</span></span> <span data-ttu-id="aae9a-242">Operatorer som har en högre prioritet (till exempel 7) utvärderas före operatorer med en lägre prioritet (exempelvis 1).</span><span class="sxs-lookup"><span data-stu-id="aae9a-242">Operators that have a higher precedence (for example, 7) are evaluated before operators that have a lower precedence (for example, 1).</span></span>
+
+| <span data-ttu-id="aae9a-243">Prioritet</span><span class="sxs-lookup"><span data-stu-id="aae9a-243">Precedence</span></span> | <span data-ttu-id="aae9a-244">Operatorer</span><span class="sxs-lookup"><span data-stu-id="aae9a-244">Operators</span></span>      | <span data-ttu-id="aae9a-245">Syntax</span><span class="sxs-lookup"><span data-stu-id="aae9a-245">Syntax</span></span>                                                                  |
+|------------|----------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="aae9a-246">7</span><span class="sxs-lookup"><span data-stu-id="aae9a-246">7</span></span>          | <span data-ttu-id="aae9a-247">Gruppering</span><span class="sxs-lookup"><span data-stu-id="aae9a-247">Grouping</span></span>       | <span data-ttu-id="aae9a-248">( …</span><span class="sxs-lookup"><span data-stu-id="aae9a-248">( …</span></span> <span data-ttu-id="aae9a-249">)</span><span class="sxs-lookup"><span data-stu-id="aae9a-249">)</span></span>                                                                   |
+| <span data-ttu-id="aae9a-250">6</span><span class="sxs-lookup"><span data-stu-id="aae9a-250">6</span></span>          | <span data-ttu-id="aae9a-251">Medlemsåtkomst</span><span class="sxs-lookup"><span data-stu-id="aae9a-251">Member access</span></span>  | <span data-ttu-id="aae9a-252">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-252">…</span></span> <span data-ttu-id="aae9a-253">.</span><span class="sxs-lookup"><span data-stu-id="aae9a-253">.</span></span> <span data-ttu-id="aae9a-254">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-254">…</span></span>                                                                   |
+| <span data-ttu-id="aae9a-255">5</span><span class="sxs-lookup"><span data-stu-id="aae9a-255">5</span></span>          | <span data-ttu-id="aae9a-256">Funktionsanrop</span><span class="sxs-lookup"><span data-stu-id="aae9a-256">Function call</span></span>  | <span data-ttu-id="aae9a-257">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-257">…</span></span> <span data-ttu-id="aae9a-258">( …</span><span class="sxs-lookup"><span data-stu-id="aae9a-258">( …</span></span> <span data-ttu-id="aae9a-259">)</span><span class="sxs-lookup"><span data-stu-id="aae9a-259">)</span></span>                                                                 |
+| <span data-ttu-id="aae9a-260">4</span><span class="sxs-lookup"><span data-stu-id="aae9a-260">4</span></span>          | <span data-ttu-id="aae9a-261">Multiplikation</span><span class="sxs-lookup"><span data-stu-id="aae9a-261">Multiplicative</span></span> | <span data-ttu-id="aae9a-262">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-262">…</span></span> <span data-ttu-id="aae9a-263">\* …</span><span class="sxs-lookup"><span data-stu-id="aae9a-263">\* …</span></span><br><span data-ttu-id="aae9a-264">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-264">…</span></span> <span data-ttu-id="aae9a-265">/ …</span><span class="sxs-lookup"><span data-stu-id="aae9a-265">/ …</span></span>                                                         |
+| <span data-ttu-id="aae9a-266">3</span><span class="sxs-lookup"><span data-stu-id="aae9a-266">3</span></span>          | <span data-ttu-id="aae9a-267">Additiv</span><span class="sxs-lookup"><span data-stu-id="aae9a-267">Additive</span></span>       | <span data-ttu-id="aae9a-268">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-268">…</span></span> <span data-ttu-id="aae9a-269">+ …</span><span class="sxs-lookup"><span data-stu-id="aae9a-269">+ …</span></span><br><span data-ttu-id="aae9a-270">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-270">…</span></span> <span data-ttu-id="aae9a-271">- …</span><span class="sxs-lookup"><span data-stu-id="aae9a-271">- …</span></span>                                                          |
+| <span data-ttu-id="aae9a-272">2</span><span class="sxs-lookup"><span data-stu-id="aae9a-272">2</span></span>          | <span data-ttu-id="aae9a-273">Jämförelse</span><span class="sxs-lookup"><span data-stu-id="aae9a-273">Comparison</span></span>     | <span data-ttu-id="aae9a-274">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-274">…</span></span> <span data-ttu-id="aae9a-275">&lt; …</span><span class="sxs-lookup"><span data-stu-id="aae9a-275">&lt; …</span></span><br><span data-ttu-id="aae9a-276">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-276">…</span></span> <span data-ttu-id="aae9a-277">&lt;= …</span><span class="sxs-lookup"><span data-stu-id="aae9a-277">&lt;= …</span></span><br><span data-ttu-id="aae9a-278">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-278">…</span></span><span data-ttu-id="aae9a-279"> =&gt; …</span><span class="sxs-lookup"><span data-stu-id="aae9a-279"> =&gt; …</span></span><br><span data-ttu-id="aae9a-280">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-280">…</span></span> <span data-ttu-id="aae9a-281">&gt; …</span><span class="sxs-lookup"><span data-stu-id="aae9a-281">&gt; …</span></span><br><span data-ttu-id="aae9a-282">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-282">…</span></span> <span data-ttu-id="aae9a-283">= …</span><span class="sxs-lookup"><span data-stu-id="aae9a-283">= …</span></span><br><span data-ttu-id="aae9a-284">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-284">…</span></span> <span data-ttu-id="aae9a-285">&lt;&gt; …</span><span class="sxs-lookup"><span data-stu-id="aae9a-285">&lt;&gt; …</span></span> |
+| <span data-ttu-id="aae9a-286">1</span><span class="sxs-lookup"><span data-stu-id="aae9a-286">1</span></span>          | <span data-ttu-id="aae9a-287">Separation</span><span class="sxs-lookup"><span data-stu-id="aae9a-287">Separation</span></span>     | <span data-ttu-id="aae9a-288">…</span><span class="sxs-lookup"><span data-stu-id="aae9a-288">…</span></span> <span data-ttu-id="aae9a-289">, …</span><span class="sxs-lookup"><span data-stu-id="aae9a-289">, …</span></span>                                                                   |
+
+<span data-ttu-id="aae9a-290">Om ett uttryck omfattar flera på varandra följande operatorer med samma rangordning, utvärderas dessa åtgärder från vänster till höger.</span><span class="sxs-lookup"><span data-stu-id="aae9a-290">If an expression includes multiple consecutive operators that have the same precedence, those operations are evaluated from left to right.</span></span> <span data-ttu-id="aae9a-291">Uttrycket **1 + 6 / 2 \* 3 &gt; 5** returnerar exempelvis **sant**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-291">For example, the expression **1 + 6 / 2 \* 3 &gt; 5** returns **true**.</span></span> <span data-ttu-id="aae9a-292">Vi rekommenderar att du använder parenteser om du explicit vill ange önskad ordning för utvärdering av uttryck så att uttrycken blir enklare att läsa och underhålla.</span><span class="sxs-lookup"><span data-stu-id="aae9a-292">We recommend that you use parentheses to explicitly indicate the desired order of operations in expressions, so that the expressions are easier to read and maintain.</span></span>
+
+#### <a name="references"></a><span data-ttu-id="aae9a-293">Referenser</span><span class="sxs-lookup"><span data-stu-id="aae9a-293">References</span></span>
+
+<span data-ttu-id="aae9a-294">Alla datakällor för den aktuella ER-komponenten som är tillgängliga under utformningen av ett uttryck kan användas som namngivna referenser.</span><span class="sxs-lookup"><span data-stu-id="aae9a-294">All data sources of the current ER component that are available during the design of an expression can be used as named references.</span></span> <span data-ttu-id="aae9a-295">(Den aktuella komponenten ER kan vara antingen en modell eller ett format.) Aktuell ER-datamodell innehåller exempelvis datakällan **ReportingDate** och denna datakälla returnerar ett värde av datatypen **DATETIME**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-295">(The current ER component can be either a model or a format.) For example, the current ER data model contains the **ReportingDate** data source, and this data source returns a value of the **DATETIME** data type.</span></span> <span data-ttu-id="aae9a-296">I syfte att korrekt formatera värdet i skapande dokument kan du referera datakällan i uttrycket på följande sätt: **DATETIMEFORMAT (ReportingDate, "dd-mm-yyyy")**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-296">To correctly format that value in the generating document, you can reference the data source in the expression as **DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")**.</span></span>
+
+<span data-ttu-id="aae9a-297">Alla tecken i referenser till en datakälla som inte representerar en bokstav i alfabetet måste föregås av en apostrof (').</span><span class="sxs-lookup"><span data-stu-id="aae9a-297">All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark (').</span></span> <span data-ttu-id="aae9a-298">Om namnet på en refererad datakälla innehåller minst en symbol som inte representerar inte en bokstav i alfabetet måste namnet visas inom enkla citattecken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-298">If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks.</span></span> <span data-ttu-id="aae9a-299">(Dessa icke-alfabetiska symboler kan till exempel vara skiljetecken eller andra skrivna symboler.) Här följer några exempel:</span><span class="sxs-lookup"><span data-stu-id="aae9a-299">(For example, these non-alphabetic symbols can be punctuation marks or other written symbols.) Here are some examples:</span></span>
+
+- <span data-ttu-id="aae9a-300">I ett ER-uttryck måste en referens till datakällan **dagens datum och tid** skrivas enligt följande **'Today''s date & time'**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-300">The **Today's date & time** data source must be referred to in an ER expression as **'Today''s date & time'**.</span></span>
+- <span data-ttu-id="aae9a-301">I ett ER-uttryck måste kundens namn **name()** för datakällan **Customers** anges enligt följande **Customers.'name()'**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-301">The **name()** method of the **Customers** data source must be referred to in an ER expression as **Customers.'name()'**.</span></span>
+
+<span data-ttu-id="aae9a-302">Om datakällor från Finance and Operations har parametrar måste följande syntax användas för att anropa dessa metoder:</span><span class="sxs-lookup"><span data-stu-id="aae9a-302">If the methods of Finance and Operations data sources have parameters, the following syntax is used to call those methods:</span></span>
+
+- <span data-ttu-id="aae9a-303">Om metoden **isLanguageRTL** i datakällan **System** har en **EN-US**-parameter av typen **String** så måste denna anges på följande sätt **System.'isLanguageRTL'("EN-US")** i ett ER-uttryck.</span><span class="sxs-lookup"><span data-stu-id="aae9a-303">If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the **String** data type, this method must be referred to in an ER expression as **System.'isLanguageRTL'("EN-US")**.</span></span>
+- <span data-ttu-id="aae9a-304">Det krävs inga citationstecken när ett metodnamn innehåller endast alfanumeriska symboler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-304">Quotation marks aren't required when a method name contains only alphanumeric symbols.</span></span> <span data-ttu-id="aae9a-305">Dock är de obligatoriska för en metod i en tabell när namnet innehåller parenteser.</span><span class="sxs-lookup"><span data-stu-id="aae9a-305">However, they are required for a method of a table if the name includes brackets.</span></span>
+
+<span data-ttu-id="aae9a-306">När datakällan **System** läggs till en ER-mappning som refererar till programklassen **Global** Finance and Operations returnerar uttrycket ett booleskt värde **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-306">When the **System** data source is added to an ER mapping that refers to the **Global** Finance and Operations application class, the expression returns the Boolean value **FALSE**.</span></span> <span data-ttu-id="aae9a-307">Det ändrade uttrycket **Systemet.' isLanguageRTL'("AR")** returnerar det booleska värdet **TRUE**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-307">The modified expression **System.' isLanguageRTL'("AR")** returns the Boolean value **TRUE**.</span></span>
+
+<span data-ttu-id="aae9a-308">Du kan begränsa hur värden skickas till parametrarna för den här typen av metod:</span><span class="sxs-lookup"><span data-stu-id="aae9a-308">You can limit the way that values are passed to the parameters of this type of method:</span></span>
+
+- <span data-ttu-id="aae9a-309">Endast konstanter kan överföras till metoder av den här typen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-309">Only constants can be passed to methods of this type.</span></span> <span data-ttu-id="aae9a-310">Värdena för konstanterna definieras i designläge.</span><span class="sxs-lookup"><span data-stu-id="aae9a-310">The values of the constants are defined at design time.</span></span>
+- <span data-ttu-id="aae9a-311">Endast primitiva (grundläggande) datatyper stöds för parametrar av den här typen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-311">Only primitive (basic) data types are supported for parameters of this type.</span></span> <span data-ttu-id="aae9a-312">(Primitiva datatyper är integer, real, boolesk, sträng osv).</span><span class="sxs-lookup"><span data-stu-id="aae9a-312">(The primitive data types are integer, real, Boolean, string, and so on.)</span></span>
+
+#### <a name="paths"></a><span data-ttu-id="aae9a-313">Sökvägar</span><span class="sxs-lookup"><span data-stu-id="aae9a-313">Paths</span></span>
+
+<span data-ttu-id="aae9a-314">När ett uttryck refererar till en strukturerad datakälla kan du använda sökvägsdefinitionen för att välja ett specifikt primitivt element i den datakällan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-314">When an expression references a structured data source, you can use the path definition to select a specific primitive element of that data source.</span></span> <span data-ttu-id="aae9a-315">En punkt (.) används för separera enskilda element i en strukturerad datakälla.</span><span class="sxs-lookup"><span data-stu-id="aae9a-315">A dot character (.) is used to separate individual elements of a structured data source.</span></span> <span data-ttu-id="aae9a-316">Till exempel innehåller den aktuella ER-datamodellen datakällan **InvoiceTransactions**, och denna returnerar en lista över poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-316">For example, the current ER data model contains the **InvoiceTransactions** data source, and this data source returns a list of records.</span></span> <span data-ttu-id="aae9a-317">Poststrukturen **InvoiceTransactions** innehåller fälten **AmountDebit** och **AmountCredit**, som båda returnerar numeriska värden.</span><span class="sxs-lookup"><span data-stu-id="aae9a-317">The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values.</span></span> <span data-ttu-id="aae9a-318">Ett uttryck för att beräkna det fakturerade beloppet kan därför utformas på följande sätt: **InvoiceTransactions.AmountDebit – InvoiceTransactions.AmountCredit**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-318">Therefore, you can design the following expression to calculate the invoiced amount: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**.</span></span>
+
+#### <a name="functions"></a><span data-ttu-id="aae9a-319">Funktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-319">Functions</span></span>
+
+<span data-ttu-id="aae9a-320">Nästa avsnitt innehåller beskrivningar av de funktioner som kan användas i ER-uttryck.</span><span class="sxs-lookup"><span data-stu-id="aae9a-320">The next section describes the functions that can be used in ER expressions.</span></span> <span data-ttu-id="aae9a-321">Alla datakällor i uttryckets sammanhang (aktuell ER-datamodell eller aktuellt ER-format) kan användas som parametrar för anropsfunktioner i enlighet med listan över argument för anropsfunktionen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-321">All data sources of the expression context (the current ER data model or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions.</span></span> <span data-ttu-id="aae9a-322">Konstanter kan också användas som parametrar av anropsfunktioner.</span><span class="sxs-lookup"><span data-stu-id="aae9a-322">Constants can also be used as parameters of calling functions.</span></span> <span data-ttu-id="aae9a-323">Till exempel innehåller den aktuella ER-datamodellen datakällan **InvoiceTransactions**, och denna returnerar en lista över poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-323">For example, the current ER data model contains the **InvoiceTransactions** data source, and this data source returns a list of records.</span></span> <span data-ttu-id="aae9a-324">Poststrukturen **InvoiceTransactions** innehåller fälten **AmountDebit** och **AmountCredit**, som båda returnerar numeriska värden.</span><span class="sxs-lookup"><span data-stu-id="aae9a-324">The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values.</span></span> <span data-ttu-id="aae9a-325">Ett uttryck för att beräkna det fakturerade beloppet kan utformas på följande sätt med hjälp av den inbyggda ER-avrundningsfunktionen: **ROUND (InvoiceTransactions.AmountDebit – InvoiceTransactions.AmountCredit, 2)**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-325">Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: **ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)**.</span></span>
+
+## <a name="supported-functions"></a><span data-ttu-id="aae9a-326">Funktioner som stöds</span><span class="sxs-lookup"><span data-stu-id="aae9a-326">Supported functions</span></span>
+
+<span data-ttu-id="aae9a-327">I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan användas för att designa ER-datamodeller och ER-rapporter.</span><span class="sxs-lookup"><span data-stu-id="aae9a-327">The following tables describe the data manipulation functions that you can use to design ER data models and ER reports.</span></span> <span data-ttu-id="aae9a-328">Listan över funktioner är inte fast.</span><span class="sxs-lookup"><span data-stu-id="aae9a-328">The list of functions isn't fixed.</span></span> <span data-ttu-id="aae9a-329">Utvecklare kan utöka den.</span><span class="sxs-lookup"><span data-stu-id="aae9a-329">Developers can extend it.</span></span> <span data-ttu-id="aae9a-330">Om du vill se listan över vilka funktioner du kan öppna ska du gå till funktionsfönstret i ER-formeldesignern.</span><span class="sxs-lookup"><span data-stu-id="aae9a-330">To see the list of functions that you can use, open the functions pane in the ER formula designer.</span></span>
+
+### <a name="date-and-time-functions"></a><span data-ttu-id="aae9a-331">Datum- och tidsfunktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-331">Date and time functions</span></span>
+
+| <span data-ttu-id="aae9a-332">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-332">Function</span></span> | <span data-ttu-id="aae9a-333">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-333">Description</span></span> | <span data-ttu-id="aae9a-334">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-334">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-335">ADDDAYS (datetime, days)</span><span class="sxs-lookup"><span data-stu-id="aae9a-335">ADDDAYS (datetime, days)</span></span> | <span data-ttu-id="aae9a-336">Lägg till det angivna antalet dagar till det definierade värdet för datum/tid.</span><span class="sxs-lookup"><span data-stu-id="aae9a-336">Add the specified number of days to the specified date/time value.</span></span> | <span data-ttu-id="aae9a-337">**ADDDAYS (NOW(), 7)** returnerar datum och tid sju dagar framöver.</span><span class="sxs-lookup"><span data-stu-id="aae9a-337">**ADDDAYS (NOW(), 7)** returns the date and time seven days in the future.</span></span> |
+| <span data-ttu-id="aae9a-338">DATETODATETIME (date)</span><span class="sxs-lookup"><span data-stu-id="aae9a-338">DATETODATETIME (date)</span></span> | <span data-ttu-id="aae9a-339">Konvertera det angivna datumvärdet till ett värde för datum/tid.</span><span class="sxs-lookup"><span data-stu-id="aae9a-339">Convert the specified date value to a date/time value.</span></span> | <span data-ttu-id="aae9a-340">**DATETODATETIME (CompInfo. ”getCurrentDate()')** returnerar aktuellt sessionsdatum för Finance and Operations, 2015-12-24 som **2015-12-24 12:00:00: 00**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-340">**DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Finance and Operations session date, December 24, 2015, as **12/24/2015 12:00:00 AM**.</span></span> <span data-ttu-id="aae9a-341">I det här exemplet är **CompInfo** en ER-datakälla av typen **Finance and Operations/Table** och refererar till CompanyInfo-tabellen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-341">In this example, **CompInfo** is an ER data source of the **Finance and Operations/Table** type and refers to the CompanyInfo table.</span></span> |
+| <span data-ttu-id="aae9a-342">NOW ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-342">NOW ()</span></span> | <span data-ttu-id="aae9a-343">Returnerar aktuellt datum och aktuell tid för Finance and Operations-servern som ett värde datum/tid.</span><span class="sxs-lookup"><span data-stu-id="aae9a-343">Return the current Finance and Operations application server date and time as a date/time value.</span></span> | |
+| <span data-ttu-id="aae9a-344">TODAY ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-344">TODAY ()</span></span> | <span data-ttu-id="aae9a-345">Returnerar aktuellt datum och aktuell tid för Finance and Operations-servern som ett datumvärde.</span><span class="sxs-lookup"><span data-stu-id="aae9a-345">Return the current Finance and Operations application server date as a date value.</span></span> | |
+| <span data-ttu-id="aae9a-346">NULLDATE ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-346">NULLDATE ()</span></span> | <span data-ttu-id="aae9a-347">Returnerar date-värdet **null**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-347">Return a **null** date value.</span></span> | |
+| <span data-ttu-id="aae9a-348">NULLDATETIME ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-348">NULLDATETIME ()</span></span> | <span data-ttu-id="aae9a-349">Returnerar värdet för datum/tid som **noll**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-349">Return a **null** date/time value.</span></span> | |
+| <span data-ttu-id="aae9a-350">DATETIMEFORMAT (datetime, format)</span><span class="sxs-lookup"><span data-stu-id="aae9a-350">DATETIMEFORMAT (datetime, format)</span></span> | <span data-ttu-id="aae9a-351">Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-351">Convert the specified date/time value to a string in the specified format.</span></span> <span data-ttu-id="aae9a-352">(Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span><span class="sxs-lookup"><span data-stu-id="aae9a-352">(For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span></span> | <span data-ttu-id="aae9a-353">**DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-serverprogrammet, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-353">**DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current Finance and Operations application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.</span></span> |
+| <span data-ttu-id="aae9a-354">DATETIMEFORMAT (datetime, format, culture)</span><span class="sxs-lookup"><span data-stu-id="aae9a-354">DATETIMEFORMAT (datetime, format, culture)</span></span> | <span data-ttu-id="aae9a-355">Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span><span class="sxs-lookup"><span data-stu-id="aae9a-355">Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span></span> <span data-ttu-id="aae9a-356">(Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span><span class="sxs-lookup"><span data-stu-id="aae9a-356">(For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span></span> | <span data-ttu-id="aae9a-357">**DATETIMEFORMAT (NOW(), "s", "sv")** returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som **"2015-12-24"** baserat på den valda svenska kulturen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-357">**DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture.</span></span> |
+| <span data-ttu-id="aae9a-358">SESSIONTODAY ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-358">SESSIONTODAY ()</span></span> | <span data-ttu-id="aae9a-359">Returnera aktuellt datum för Finance and Operations-sessionen som ett datumvärde.</span><span class="sxs-lookup"><span data-stu-id="aae9a-359">Return the current Finance and Operations session date as a date value.</span></span> | |
+| <span data-ttu-id="aae9a-360">SESSIONNOW ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-360">SESSIONNOW ()</span></span> | <span data-ttu-id="aae9a-361">Returnera aktuellt datum och aktuell tid för Finance and Operations-sessionen som ett värde datum/tid.</span><span class="sxs-lookup"><span data-stu-id="aae9a-361">Return the current Finance and Operations session date and time as a date/time value.</span></span> | |
+| <span data-ttu-id="aae9a-362">DATEFORMAT (datum, format)</span><span class="sxs-lookup"><span data-stu-id="aae9a-362">DATEFORMAT (date, format)</span></span> | <span data-ttu-id="aae9a-363">Returnera en sträng som representerar det definierade datumet i det angivna formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-363">Return a string representation of the specified date in the specified format.</span></span> | <span data-ttu-id="aae9a-364">**DATEFORMAT (SESSIONTODAY () "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-364">**DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Finance and Operations session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.</span></span> |
+| <span data-ttu-id="aae9a-365">DATEFORMAT (datum, format, kultur)</span><span class="sxs-lookup"><span data-stu-id="aae9a-365">DATEFORMAT (date, format, culture)</span></span> | <span data-ttu-id="aae9a-366">Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span><span class="sxs-lookup"><span data-stu-id="aae9a-366">Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx).</span></span> <span data-ttu-id="aae9a-367">(Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span><span class="sxs-lookup"><span data-stu-id="aae9a-367">(For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)</span></span> | <span data-ttu-id="aae9a-368">**DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på den valda tyska kulturen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-368">**DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture.</span></span> |
+| <span data-ttu-id="aae9a-369">DAYOFYEAR (datum)</span><span class="sxs-lookup"><span data-stu-id="aae9a-369">DAYOFYEAR (date)</span></span> | <span data-ttu-id="aae9a-370">Returnera en heltalsrepresentation av antalet dagar mellan 1 januari och det angivna datumet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-370">Return an integer representation of the number of days between January 1 and the specified date.</span></span> | <span data-ttu-id="aae9a-371">**DAYOFYEAR (DATEVALUE (”01-03-2016”, ”dd-MM-åååå”))** returnerar **61**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-371">**DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**.</span></span> <span data-ttu-id="aae9a-372">**DAYOFYEAR (DATEVALUE (”01-01-2016”, ”dd-MM-åååå”))** returnerar **1**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-372">**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**.</span></span> |
+| <span data-ttu-id="aae9a-373">DAGAR (datum 1, datum 2)</span><span class="sxs-lookup"><span data-stu-id="aae9a-373">DAYS (date 1, date 2)</span></span> | <span data-ttu-id="aae9a-374">Returnera antalet dagar mellan första och andra angivna datum.</span><span class="sxs-lookup"><span data-stu-id="aae9a-374">Return the number of days between the first specified date and the second specified date.</span></span> <span data-ttu-id="aae9a-375">Returnerar ett positivt värde när det första datumet är senare än det andra, returnerar **0** (noll) när det första datumet är lika med det andra, annars ett negativt värde när det första datumet är tidigare än det andra datumet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-375">Return a positive value when the first date is later than the second date, return **0** (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date.</span></span> | <span data-ttu-id="aae9a-376">**DAYS (TODAY (), DATUMVÄRDE (DATETIMEFORMAT (ADDDAYS(NOW() 1), ”yyyyMMdd”), ”yyyyMMdd”))** returnerar **-1**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-376">**DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**.</span></span> |
+
+### <a name="data-conversion-functions"></a><span data-ttu-id="aae9a-377">Funktioner för datakonvertering</span><span class="sxs-lookup"><span data-stu-id="aae9a-377">Data conversion functions</span></span>
+
+| <span data-ttu-id="aae9a-378">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-378">Function</span></span> | <span data-ttu-id="aae9a-379">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-379">Description</span></span> | <span data-ttu-id="aae9a-380">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-380">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-381">DATETODATETIME (date)</span><span class="sxs-lookup"><span data-stu-id="aae9a-381">DATETODATETIME (date)</span></span> | <span data-ttu-id="aae9a-382">Konvertera det angivna datumvärdet till ett värde för datum/tid.</span><span class="sxs-lookup"><span data-stu-id="aae9a-382">Convert the specified date value to a date/time value.</span></span> | <span data-ttu-id="aae9a-383">**DATETODATETIME (CompInfo. ”getCurrentDate()')** returnerar aktuellt sessionsdatum för Finance and Operations, 2015-12-24 som **2015-12-24 12:00:00: 00**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-383">**DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Finance and Operations session date, December 24, 2015, as **12/24/2015 12:00:00 AM**.</span></span> <span data-ttu-id="aae9a-384">I det här exemplet är **CompInfo** en ER-datakälla av typen **Finance and Operations/Table** och refererar till CompanyInfo-tabellen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-384">In this example, **CompInfo** is an ER data source of the **Finance and Operations/Table** type and refers to the CompanyInfo table.</span></span> |
+| <span data-ttu-id="aae9a-385">DATEVALUE (sträng, format)</span><span class="sxs-lookup"><span data-stu-id="aae9a-385">DATEVALUE (string, format)</span></span> | <span data-ttu-id="aae9a-386">Returnera en datumrepresentation för den definierade strängen i angivet format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-386">Return a date representation of the specified string in the specified format.</span></span> | <span data-ttu-id="aae9a-387">**DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** returnerar datumet 2016-12-24 baserat på angivet anpassat format och standardprogrammets kultur **EN-US**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-387">**DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** returns the date December 21, 2016, based on specified custom format and the default application's **EN-US** culture.</span></span> |
+| <span data-ttu-id="aae9a-388">DATEVALUE (sträng, format, kultur)</span><span class="sxs-lookup"><span data-stu-id="aae9a-388">DATEVALUE (string, format, culture)</span></span> | <span data-ttu-id="aae9a-389">Returnera en datumrepresentation för den definierade strängen enligt angivet format och kultur.</span><span class="sxs-lookup"><span data-stu-id="aae9a-389">Return a date representation of the specified string in the specified format and culture.</span></span> | <span data-ttu-id="aae9a-390">**DATEVALUE (”21-Gen-2016”, ”dd-MMM-yyyy”, ”IT”)** returnerar datumet januari 21 2016, enligt format och kultur som angivits och anpassats.</span><span class="sxs-lookup"><span data-stu-id="aae9a-390">**DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "IT")** returns the date January 21, 2016, based on the specified custom format and culture.</span></span> <span data-ttu-id="aae9a-391">Men **DATUMVÄRDE (”21-Gen-2016”, ”dd-MMM-yyyy”, ”EN-US”)** ska utlösa ett undantag som informerar användaren om att den angivna strängen inte identifieras som ett datum.</span><span class="sxs-lookup"><span data-stu-id="aae9a-391">However, **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", "EN-US")** throws an exception to inform the user that the specified string isn't recognized as a valid date.</span></span> |
+| <span data-ttu-id="aae9a-392">DATETIMEVALUE (sträng, format)</span><span class="sxs-lookup"><span data-stu-id="aae9a-392">DATETIMEVALUE (string, format)</span></span> | <span data-ttu-id="aae9a-393">Returner en datum/tidsrepresentation för den definierade strängen i angivet format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-393">Return a date/time representation of the specified string in the specified format.</span></span> | <span data-ttu-id="aae9a-394">**DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** returnerar 2:55:00: 00 på 21 December 2016 utifrån angivna och anpassade format och standardprogrammets **engelska** kultur.</span><span class="sxs-lookup"><span data-stu-id="aae9a-394">**DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** returns 2:55:00 AM on December 21, 2016, based on the specified custom format and the default application's **EN-US** culture.</span></span> |
+| <span data-ttu-id="aae9a-395">DATETIMEVALUE (sträng, format, kultur)</span><span class="sxs-lookup"><span data-stu-id="aae9a-395">DATETIMEVALUE (string, format, culture)</span></span> | <span data-ttu-id="aae9a-396">Returnera en datum/tidsrepresentation för den definierade strängen enligt angivet format och kultur.</span><span class="sxs-lookup"><span data-stu-id="aae9a-396">Return a date/time representation of the specified string in the specified format and culture.</span></span> | <span data-ttu-id="aae9a-397">**DATETIMEVALUE (”21-Dec-2016 02:55:00”, "dd-MMM-yyyy hh:mm:ss", "IT")** returnerar 2:55:00:00 21 December 2016 utifrån angivna och anpassade format och standardprogrammets italienska kultur.</span><span class="sxs-lookup"><span data-stu-id="aae9a-397">**DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "IT")** returns 2:55:00 AM on December 21, 2016, based on the specified custom format and culture.</span></span> <span data-ttu-id="aae9a-398">Men **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** ska utlösa ett undantag som informerar användaren om att den angivna strängen inte identifieras som ett värde för datum/tid.</span><span class="sxs-lookup"><span data-stu-id="aae9a-398">However, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", "EN-US")** throws an exception to inform the user that the specified string isn't recognized as a valid date/time.</span></span> |
+
+### <a name="list-functions"></a><span data-ttu-id="aae9a-399">Lista över funktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-399">List functions</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="aae9a-400">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-400">Function</span></span></th>
+<th><span data-ttu-id="aae9a-401">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-401">Description</span></span></th>
+<th><span data-ttu-id="aae9a-402">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-402">Example</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="aae9a-403">SPLIT (input, length)</span><span class="sxs-lookup"><span data-stu-id="aae9a-403">SPLIT (input, length)</span></span></td>
+<td><span data-ttu-id="aae9a-404">Delar upp den definierade indatasträngen i delsträngar som var och en är av den definierade längden.</span><span class="sxs-lookup"><span data-stu-id="aae9a-404">Split the specified input string into substrings, each of which has the specified length.</span></span> <span data-ttu-id="aae9a-405">Returnerar resultatet som en ny lista.</span><span class="sxs-lookup"><span data-stu-id="aae9a-405">Return the result as a new list.</span></span></td>
+<td><span data-ttu-id="aae9a-406"><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returnerar en ny lista som består av två poster som har ett <strong>STRING</strong>-fält.</span><span class="sxs-lookup"><span data-stu-id="aae9a-406"><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returns a new list that consists of two records that have a <strong>STRING</strong> field.</span></span> <span data-ttu-id="aae9a-407">Fältet i den första posten innehåller texten <strong>&quot;abc&quot;</strong>, och fältet i den andra posten innehåller texten <strong>&quot;d&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-407">The field in the first record contains the text <strong>&quot;abc&quot;</strong>, and the field in the second record contains the text <strong>&quot;d&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-408">SPLIT (indata, avgränsare)</span><span class="sxs-lookup"><span data-stu-id="aae9a-408">SPLIT (input, delimiter)</span></span></td>
+<td><span data-ttu-id="aae9a-409">Delar upp den definierade indatasträngen i delsträngar baserat på den definierade avgränsaren.</span><span class="sxs-lookup"><span data-stu-id="aae9a-409">Split the specified input string into substrings, based on the specified delimiter.</span></span></td>
+<td><span data-ttu-id="aae9a-410"><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> returnerar en ny lista som består av tre poster som har ett <strong>STRING</strong>-fältet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-410"><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> returns a new list that consists of three records that have a <strong>STRING</strong> field.</span></span> <span data-ttu-id="aae9a-411">Fältet i den första posten innehåller texten <strong>&quot;X&quot;</strong>, fältet i den andra posten innehåller texten &quot;&nbsp;&quot;, och fältet i den tredje posten innehåller texten <strong>&quot;y&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-411">The field in the first record contains the text <strong>&quot;X&quot;</strong>, the field in the second record contains the text &quot;&nbsp;&quot;, and the field in the third record contains the text <strong>&quot;y&quot;</strong>.</span></span> <span data-ttu-id="aae9a-412">Om avgränsaren är tom returneras en ny lista som består av en post med ett <strong>STRING</strong>-fält som innehåller indatatexten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-412">If the delimiter is empty, a new list is returned that consists of one record that has a <strong>STRING</strong> field that contains the input text.</span></span> <span data-ttu-id="aae9a-413">Om indata är tomt returneras en tom ny lista.</span><span class="sxs-lookup"><span data-stu-id="aae9a-413">If the input is empty, a new empty list is returned.</span></span>
+<span data-ttu-id="aae9a-414">Om antingen indata eller avgränsaren är ospecificerad (null) kastas ett programundantag.</span><span class="sxs-lookup"><span data-stu-id="aae9a-414">If either the input or the delimiter is unspecified (null), an application exception is thrown.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-415">SPLITLIST (list, number)</span><span class="sxs-lookup"><span data-stu-id="aae9a-415">SPLITLIST (list, number)</span></span></td>
+<td><span data-ttu-id="aae9a-416">Delar upp den angivna listan i batchar som var och en innehåller det definierade antalet poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-416">Split the specified list into batches, each of which contains the specified number of records.</span></span> <span data-ttu-id="aae9a-417">Returnerar resultatet som en ny lista med batchar som innehåller följande element:</span><span class="sxs-lookup"><span data-stu-id="aae9a-417">Return the result as a new list of batches that contains the following elements:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-418">Batchar som vanliga listor (<strong>Värde</strong> komponent)</span><span class="sxs-lookup"><span data-stu-id="aae9a-418">Batches as regular lists (<strong>Value</strong> component)</span></span></li>
+<li><span data-ttu-id="aae9a-419">Det aktuella batchnumret (<strong>Batchnummer</strong> component)</span><span class="sxs-lookup"><span data-stu-id="aae9a-419">The current batch number (<strong>BatchNumber</strong> component)</span></span></li>
+</ul>
+</td>
+<td><span data-ttu-id="aae9a-420">Följande bild visar hur en datakälla på en <strong>rad</strong> skapas av tre poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-420">In the following illustration, a <strong>Lines</strong> data source is created as a record list of three records.</span></span> <span data-ttu-id="aae9a-421">Den här listan är indelad i batchar som innehåller högst två poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-421">This list is divided into batches, each of which contains up to two records.</span></span>
+<p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
+<p><span data-ttu-id="aae9a-422">Följande illustration visar layouten på det designade formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-422">The following illustration shows the designed format layout.</span></span> <span data-ttu-id="aae9a-423">I den här formatlayouten skapas bindningar till datakällans <strong>rader</strong> för att skapa utdata i XML-format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-423">In this format layout, bindings to the <strong>Lines</strong> data source are created to generate output in XML format.</span></span> <span data-ttu-id="aae9a-424">Dessa utdata visar enskilda noder för varje batch och poster i den.</span><span class="sxs-lookup"><span data-stu-id="aae9a-424">This output presents individual nodes for each batch and the records in it.</span></span></p>
+<p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
+<p><span data-ttu-id="aae9a-425">Följande illustration visar resultatet när det designade formatet har körts.</span><span class="sxs-lookup"><span data-stu-id="aae9a-425">The following illustration shows the result when the designed format is run.</span></span></p>
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-426">LIST (post 1 [, post 2, ...])</span><span class="sxs-lookup"><span data-stu-id="aae9a-426">LIST (record 1 [, record 2, …])</span></span></td>
+<td><span data-ttu-id="aae9a-427">Returnerar en ny lista som skapas från de definierade argumenten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-427">Return a new list that is created from the specified arguments.</span></span></td>
+<td><span data-ttu-id="aae9a-428"><strong>LIST (model.MainData, model.OtherData)</strong> returnerar en tom post där fältlistan innehåller alla fält i postlistorna <strong>MainData</strong> och <strong>OtherData</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-428"><strong>LIST (model.MainData, model.OtherData)</strong> returns an empty record, where the list of fields contains all fields of the <strong>MainData</strong> and <strong>OtherData</strong> record lists.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-429">LISTJOIN (list 1, list 2, ...)</span><span class="sxs-lookup"><span data-stu-id="aae9a-429">LISTJOIN (list 1, list 2, …)</span></span></td>
+<td><span data-ttu-id="aae9a-430">Returnerar en konkatenerad lista som skapas från listor med definierade argument.</span><span class="sxs-lookup"><span data-stu-id="aae9a-430">Return a joined list that is created from lists of specified arguments.</span></span></td>
+<td><span data-ttu-id="aae9a-431"><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> returnerar en lista över sex poster där ett fält i datatypen <strong>STRING</strong> innehåller enskilda bokstäver.</span><span class="sxs-lookup"><span data-stu-id="aae9a-431"><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> returns a list of six records, where one field of the <strong>STRING</strong> data type contains single letters.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-432">ISEMPTY (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-432">ISEMPTY (list)</span></span></td>
+<td><span data-ttu-id="aae9a-433">Returnerar <strong>TRUE</strong> om den definierade listan inte innehåller några element.</span><span class="sxs-lookup"><span data-stu-id="aae9a-433">Return <strong>TRUE</strong> if the specified list contains no elements.</span></span> <span data-ttu-id="aae9a-434">Annars returneras <strong>FALSKT</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-434">Otherwise, return <strong>FALSE</strong>.</span></span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-435">EMPTYLIST (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-435">EMPTYLIST (list)</span></span></td>
+<td><span data-ttu-id="aae9a-436">Returnerar en tom lista genom att använda den definierade en lista som källa för liststrukturen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-436">Return an empty list by using the specified list as a source for the list structure.</span></span></td>
+<td><span data-ttu-id="aae9a-437"><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> returnerar en ny tom lista som har samma struktur som listan som returneras av funktionen <strong>SPLIT</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-437"><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> returns a new empty list that has the same structure as the list that is returned by the <strong>SPLIT</strong> function.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-438">FIRST (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-438">FIRST (list)</span></span></td>
+<td><span data-ttu-id="aae9a-439">Returnerar den första posten i den definierade listan, om posten inte är tom.</span><span class="sxs-lookup"><span data-stu-id="aae9a-439">Return the first record of the specified list, if that record isn't empty.</span></span> <span data-ttu-id="aae9a-440">I annat fall kastas ett undantag.</span><span class="sxs-lookup"><span data-stu-id="aae9a-440">Otherwise, throw an exception.</span></span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-441">FIRSTORNULL (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-441">FIRSTORNULL (list)</span></span></td>
+<td><span data-ttu-id="aae9a-442">Returnerar den första posten i den definierade listan, om posten inte är tom.</span><span class="sxs-lookup"><span data-stu-id="aae9a-442">Return the first record of the specified list, if that record isn't empty.</span></span> <span data-ttu-id="aae9a-443">I annat fall returneras en <strong>null</strong>-post.</span><span class="sxs-lookup"><span data-stu-id="aae9a-443">Otherwise, return a <strong>null</strong> record.</span></span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-444">LISTOFFIRSTITEM (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-444">LISTOFFIRSTITEM (list)</span></span></td>
+<td><span data-ttu-id="aae9a-445">Returnerar en lista som endast innehåller det första objektet i den definierade listan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-445">Return a list that contains only the first item of the specified list.</span></span></td>
+<td></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-446">ALLITEMS (path)</span><span class="sxs-lookup"><span data-stu-id="aae9a-446">ALLITEMS (path)</span></span></td>
+<td><span data-ttu-id="aae9a-447">Den här funktionen körs som ett urval i minnet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-447">This function runs as an in-memory selection.</span></span> <span data-ttu-id="aae9a-448">Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-448">It returns a new flattened list that represents all items that match the specified path.</span></span> <span data-ttu-id="aae9a-449">Sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista”.</span><span class="sxs-lookup"><span data-stu-id="aae9a-449">The path must be defined as a valid data source path of a data source element of a record list data type.</span></span> <span data-ttu-id="aae9a-450">Dataelement som sökväg och datum bör skapa ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-450">Data elements such as the path string and date should raise an error in the ER expression builder at design time.</span></span></td>
+<td><span data-ttu-id="aae9a-451">Om du anger <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> som en datakälla (DS), returnerar <strong>COUNT( ALLITEMS (DS.Value))</strong> <strong>3</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-451">If you enter <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> as a data source (DS), <strong>COUNT( ALLITEMS (DS.Value))</strong> returns <strong>3</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-452">ALLITEMSQUERY (sökväg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-452">ALLITEMSQUERY (path)</span></span></td>
+<td><span data-ttu-id="aae9a-453">Den här funktionen körs som en sammanslagen SQL-fråga.</span><span class="sxs-lookup"><span data-stu-id="aae9a-453">This function runs as a joined SQL query.</span></span> <span data-ttu-id="aae9a-454">Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-454">It returns a new flattened list that represents all items that match the specified path.</span></span> <span data-ttu-id="aae9a-455">De angivna sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista” och den måste innehålla minst en relation.</span><span class="sxs-lookup"><span data-stu-id="aae9a-455">The specified path must be defined as a valid data source path of a data source element of a record list data type, and it must contain at least one relation.</span></span> <span data-ttu-id="aae9a-456">Dataelement som sökväg och datum bör skapa ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-456">Data elements such as the path string and date should raise an error in the ER expression builder at design time.</span></span></td>
+<td><span data-ttu-id="aae9a-457">Definiera följande datakällor i din modellmappning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-457">Define the following data sources in your model mapping:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-458"><strong>CustInv</strong> (typen <strong>Registerposter</strong>), som refererar till tabellen CustInvoiceTable</span><span class="sxs-lookup"><span data-stu-id="aae9a-458"><strong>CustInv</strong> (<strong>Table records</strong> type), which refers to the CustInvoiceTable table</span></span></li> 
+<li><span data-ttu-id="aae9a-459"><strong>FilteredInv</strong> (typen <strong>beräknat fält</strong>), som innehåller uttrycket <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></span><span class="sxs-lookup"><span data-stu-id="aae9a-459"><strong>FilteredInv</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></span></span></li>
+<li><span data-ttu-id="aae9a-460"><strong>JourLines</strong> (typen <strong>beräknat fält</strong> ), som innehåller uttrycket <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></span><span class="sxs-lookup"><span data-stu-id="aae9a-460"><strong>JourLines</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></span></span></li>
+</ul>
+<p><span data-ttu-id="aae9a-461">När du kör en modellmappning att anropa datakällan <strong>JourLines</strong>, kör följande SQL-sats:</span><span class="sxs-lookup"><span data-stu-id="aae9a-461">When you run your model mapping to call the <strong>JourLines</strong> data source, the following SQL statement is run:</span></span></p>
+<span data-ttu-id="aae9a-462">VÄLJ ... FRÅN CUSTINVOICETABLE T1 KORSKOPPLA CUSTINVOICEJOUR T2 KORSKOPPLA CUSTINVOICETRANS T3 DÄR...</span><span class="sxs-lookup"><span data-stu-id="aae9a-462">SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN CUSTINVOICETRANS T3 WHERE...</span></span>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-463">ORDERBY (list [, expression 1, expression 2, …])</span><span class="sxs-lookup"><span data-stu-id="aae9a-463">ORDERBY (list [, expression 1, expression 2, …])</span></span></td>
+<td><span data-ttu-id="aae9a-464">Returnera den angivna listan efter att den sorterats enligt de angivna argumenten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-464">Return the specified list after it has been sorted according to the specified arguments.</span></span> <span data-ttu-id="aae9a-465">Du kan definiera följande argument som uttryck.</span><span class="sxs-lookup"><span data-stu-id="aae9a-465">These arguments can be defined as expressions.</span></span></td>
+<td><span data-ttu-id="aae9a-466">Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till tabellen VendTable, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returneras en lista med leverantörerna sorterade efter namn i stigande ordning.</span><span class="sxs-lookup"><span data-stu-id="aae9a-466">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returns a list of vendors that is sorted by name in ascending order.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-467">REVERSE (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-467">REVERSE (list)</span></span></td>
+<td><span data-ttu-id="aae9a-468">Returnerar den definierade listan i omvänd sorteringsordning.</span><span class="sxs-lookup"><span data-stu-id="aae9a-468">Return the specified list in reversed sort order.</span></span></td>
+<td><span data-ttu-id="aae9a-469">Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till tabellen VendTable, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returneras en lista med leverantörerna sorterade efter namn i fallande ordning.</span><span class="sxs-lookup"><span data-stu-id="aae9a-469">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returns a list of vendors that is sorted by name in descending order.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-470">WHERE (list, condition)</span><span class="sxs-lookup"><span data-stu-id="aae9a-470">WHERE (list, condition)</span></span></td>
+<td><span data-ttu-id="aae9a-471">Returnera den angivna listan efter att den filtrerats enligt de angivna argumenten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-471">Return the specified list after it has been filtered according to the specified condition.</span></span> <span data-ttu-id="aae9a-472">Det angivna villkoret används i listan i minnet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-472">The specified condition is applied to the list in memory.</span></span> <span data-ttu-id="aae9a-473">På så sätt kan funktionen <strong>WHERE</strong> skilja sig från funktionen <strong>FILTER</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-473">In this way, the <strong>WHERE</strong> function differs from the <strong>FILTER</strong> function.</span></span></td>
+<td><span data-ttu-id="aae9a-474">Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> en lista över just de leverantörer som ingår i leverantörsgrupp 40.</span><span class="sxs-lookup"><span data-stu-id="aae9a-474">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-475">ENUMERATE (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-475">ENUMERATE (list)</span></span></td>
+<td><span data-ttu-id="aae9a-476">Returnerar en ny lista som består av fasta poster i den definierade listan och som visar följande element:</span><span class="sxs-lookup"><span data-stu-id="aae9a-476">Return a new list that consists of enumerated records of the specified list, and that exposes the following elements:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-477">Definierade listposter som vanliga listor (<strong>Värde</strong> komponent)</span><span class="sxs-lookup"><span data-stu-id="aae9a-477">Specified list records as regular lists (<strong>Value</strong> component)</span></span></li>
+<li><span data-ttu-id="aae9a-478">Den aktuella postens index (<strong>Nummer</strong> komponent)</span><span class="sxs-lookup"><span data-stu-id="aae9a-478">The current record index (<strong>Number</strong> component)</span></span></li>
+</ul>
+</td>
+<td><span data-ttu-id="aae9a-479">I följande illustration har datakällan <strong>Enumerated</strong> skapat en numrerad lista över leverantörsposter från datakällan <strong>Vendors</strong> som refererar till tabellen VendTable.</span><span class="sxs-lookup"><span data-stu-id="aae9a-479">In the following illustration, an <strong>Enumerated</strong> data source is created as an enumerated list of vendor records from the <strong>Vendors</strong> data source that refers to the VendTable table.</span></span>
+<p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
+<p><span data-ttu-id="aae9a-480">På bilden nedan visas formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-480">The following illustration shows the format.</span></span> <span data-ttu-id="aae9a-481">I den här formatlayouten skapas bindningar för att skapa utdata i XML-format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-481">In this format, data bindings are created to generate output in XML format.</span></span> <span data-ttu-id="aae9a-482">Dessa utdata visar enskilda leverantörer som fasta noder.</span><span class="sxs-lookup"><span data-stu-id="aae9a-482">This output presents individual vendors as enumerated nodes.</span></span></p>
+<p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
+<p><span data-ttu-id="aae9a-483">Följande illustration visar resultatet när det designade formatet har körts.</span><span class="sxs-lookup"><span data-stu-id="aae9a-483">The following illustration shows the result when the designed format is run.</span></span></p>
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-484">COUNT (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-484">COUNT (list)</span></span></td>
+<td><span data-ttu-id="aae9a-485">Returnerar det antalet poster i den definierade i listan, om listan inte är tom.</span><span class="sxs-lookup"><span data-stu-id="aae9a-485">Return the number of records in the specified list, if the list isn't empty.</span></span> <span data-ttu-id="aae9a-486">Annars returneras <strong>0</strong> (noll).</span><span class="sxs-lookup"><span data-stu-id="aae9a-486">Otherwise, return <strong>0</strong> (zero).</span></span></td>
+<td><span data-ttu-id="aae9a-487"><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> returnerar <strong>2</strong> eftersom funktionen <strong>SPLIT</strong> skapar en lista som består av två poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-487"><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> returns <strong>2</strong>, because the <strong>SPLIT</strong> function creates a list that consists of two records.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-488">LISTOFFIELDS (sökväg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-488">LISTOFFIELDS (path)</span></span></td>
+<td><span data-ttu-id="aae9a-489">Returnera en postlista som har skapats av ett argument tillhörande en av följande typer:</span><span class="sxs-lookup"><span data-stu-id="aae9a-489">Return a record list that is created from an argument of one of the following types:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-490">Uppräkning för modell</span><span class="sxs-lookup"><span data-stu-id="aae9a-490">Model enumeration</span></span></li>
+<li><span data-ttu-id="aae9a-491">Formatuppräkning</span><span class="sxs-lookup"><span data-stu-id="aae9a-491">Format enumeration</span></span></li>
+<li><span data-ttu-id="aae9a-492">Behållare</span><span class="sxs-lookup"><span data-stu-id="aae9a-492">Container</span></span></li>
+</ul>
+<p><span data-ttu-id="aae9a-493">Listan som skapas består av poster som innehåller följande fält:</span><span class="sxs-lookup"><span data-stu-id="aae9a-493">The list that is created consists of records that have the following fields:</span></span></p>
+<ul>
+<li><span data-ttu-id="aae9a-494">Namn</span><span class="sxs-lookup"><span data-stu-id="aae9a-494">Name</span></span></li>
+<li><span data-ttu-id="aae9a-495">Etikett</span><span class="sxs-lookup"><span data-stu-id="aae9a-495">Label</span></span></li>
+<li><span data-ttu-id="aae9a-496">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-496">Description</span></span></li>
+</ul>
+<span data-ttu-id="aae9a-497">I samband med körning returnerar fälten <strong>Label</strong> och <strong>Description</strong> värden baserade på formatets språkinställningar.</span><span class="sxs-lookup"><span data-stu-id="aae9a-497">At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings.</span></span>
+</td>
+<td><span data-ttu-id="aae9a-498">I följande illustration introduceras en uppräkning i datamodellen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-498">In the following illustration, an enumeration is introduced in a data model.</span></span>
+<p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
+<p><span data-ttu-id="aae9a-499">Illustrationen som följer visar dessa detaljer:</span><span class="sxs-lookup"><span data-stu-id="aae9a-499">The following illustration shows these details:</span></span></p>
+<ul>
+<li><span data-ttu-id="aae9a-500">Modelluppräkningen har infogats i en rapport som en datakälla.</span><span class="sxs-lookup"><span data-stu-id="aae9a-500">The model enumeration is inserted into a report as a data source.</span></span></li>
+<li><span data-ttu-id="aae9a-501">ER-uttryck använder uppräkningsmodellen som en parameter för funktionen <strong>LISTOFFIELDS</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-501">An ER expression uses the model enumeration as a parameter of the <strong>LISTOFFIELDS</strong> function.</span></span></li>
+<li><span data-ttu-id="aae9a-502">En datakälla av typen postlista infogas i en rapport med hjälp av det ER-uttryck som skapats.</span><span class="sxs-lookup"><span data-stu-id="aae9a-502">A data source of the record list type is inserted into a report by using the ER expression that is created.</span></span></li>
+</ul>
+<p><a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="Format" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a></p>
+<p><span data-ttu-id="aae9a-503">Följande exempel visar de ER-formatelement som är kopplade till en datakälla av typen postlista som skapats med funktionen <strong>LISTOFFIELDS</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-503">The following example shows the ER format elements that are bound to the data source of the record list type that was created by using the <strong>LISTOFFIELDS</strong> function.</span></span></p>
+<p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
+<p><span data-ttu-id="aae9a-504">Följande illustration visar resultatet när det designade formatet har körts.</span><span class="sxs-lookup"><span data-stu-id="aae9a-504">The following illustration shows the result when the designed format is run.</span></span></p>
+<p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
+<blockquote>[!NOTE] <span data-ttu-id="aae9a-505">Baserat på språkinställningarna i de överordnade FILE- och FOLDER-elementen infogas översatt text för etiketter och beskrivningar i utdata till ER-formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-505">Based on the language settings of the parent FILE and FOLDER format elements, translated text for labels and descriptions is entered in the output of the ER format.</span></span></blockquote>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-506">LISTOFFIELDS (sökvägen, språk)</span><span class="sxs-lookup"><span data-stu-id="aae9a-506">LISTOFFIELDS (path, language)</span></span></td>
+<td><span data-ttu-id="aae9a-507">Returnera en postlista som skapas från ett argument, t ex en modelluppräkning, en formatuppräkning eller en behållare.</span><span class="sxs-lookup"><span data-stu-id="aae9a-507">Return a record list that is created from an argument, such as a model enumeration, a format enumeration, or a container.</span></span> <span data-ttu-id="aae9a-508">Listan som skapas består av poster som innehåller följande fält:</span><span class="sxs-lookup"><span data-stu-id="aae9a-508">The list that is created consists of records that have the following fields:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-509">Namn</span><span class="sxs-lookup"><span data-stu-id="aae9a-509">Name</span></span></li>
+<li><span data-ttu-id="aae9a-510">Etikett</span><span class="sxs-lookup"><span data-stu-id="aae9a-510">Label</span></span></li>
+<li><span data-ttu-id="aae9a-511">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-511">Description</span></span></li>
+<li><span data-ttu-id="aae9a-512">Är översatt</span><span class="sxs-lookup"><span data-stu-id="aae9a-512">Is translated</span></span></li>
+</ul>
+<span data-ttu-id="aae9a-513">I samband med körning returnerar fälten <strong>Label</strong> och <strong>Description</strong> värden baserade på formatets språkinställningar och angivet språk.</span><span class="sxs-lookup"><span data-stu-id="aae9a-513">At runtime, the <strong>Label</strong> and <strong>Description</strong> fields return values that are based on the format's language settings and the specified language.</span></span> <span data-ttu-id="aae9a-514">Fältet <strong>Is translated</strong> anger att fältet <strong>Label</strong> har översatts till det angivna språket.</span><span class="sxs-lookup"><span data-stu-id="aae9a-514">The <strong>Is translated</strong> field indicates that the <strong>Label</strong> field has been translated into the specified language.</span></span>
+</td>
+<td><span data-ttu-id="aae9a-515">Till exempel kan du använda datakälltypen <strong>Calculated field</strong> för att konfigurera datakällor för <strong>enumType_de</strong> och <strong>enumType_deCH</strong> till uppräkning av datamodell <strong>enumType</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-515">For example, you use the <strong>Calculated field</strong> data source type to configure the <strong>enumType_de</strong> and <strong>enumType_deCH</strong> data sources for the <strong>enumType</strong> data model enumeration.</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-516">enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</span><span class="sxs-lookup"><span data-stu-id="aae9a-516">enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</span></span></li>
+<li><span data-ttu-id="aae9a-517">enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</span><span class="sxs-lookup"><span data-stu-id="aae9a-517">enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</span></span></li>
+</ul>
+<p><span data-ttu-id="aae9a-518">I det här fallet kan du använda följande uttryck för att få etiketten på uppräkningsvärdet på tyska (Schweiz), om denna översättning är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="aae9a-518">In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available.</span></span> <span data-ttu-id="aae9a-519">Om schweizisk tysk översättning inte är tillgänglig är etiketten på tyska.</span><span class="sxs-lookup"><span data-stu-id="aae9a-519">If the Swiss German translation isn't available, the label is in German.</span></span></p>
+<span data-ttu-id="aae9a-520">IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</span><span class="sxs-lookup"><span data-stu-id="aae9a-520">IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)</span></span>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-521">STRINGJOIN (lista, fältnamn, avgränsare)</span><span class="sxs-lookup"><span data-stu-id="aae9a-521">STRINGJOIN (list, field name, delimiter)</span></span></td>
+<td><span data-ttu-id="aae9a-522">Returnera en sträng som består av de konkatenerade värdena från det definierade fältet från den angivna listan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-522">Return a string that consists of concatenated values of the specified field from the specified list.</span></span> <span data-ttu-id="aae9a-523">Värdena avgränsas med angivna avgränsare.</span><span class="sxs-lookup"><span data-stu-id="aae9a-523">The values are separated by the specified delimiter.</span></span></td>
+<td><span data-ttu-id="aae9a-524">Om du anger <strong>SPLIT(&quot;abc&quot; , 1)</strong> som datakälla (DS), <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> returnerar <strong>&quot;a-b-c&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-524">If you enter <strong>SPLIT(&quot;abc&quot; , 1)</strong> as a data source (DS), <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> returns <strong>&quot;a-b-c&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-525">SPLITLISTBYLIMIT (lista, gränsvärde, gränskälla)</span><span class="sxs-lookup"><span data-stu-id="aae9a-525">SPLITLISTBYLIMIT (list, limit value, limit source)</span></span></td>
+<td><span data-ttu-id="aae9a-526">Dela angiven lista i en ny lista bestående av underlistor och returnera resultatet i form av innehåll i en postlista.</span><span class="sxs-lookup"><span data-stu-id="aae9a-526">Split the specified list into a new list of sub-lists, and return the result in record list content.</span></span> <span data-ttu-id="aae9a-527">Parametern <strong>gränsvärde</strong> definierar värdet på den gräns som delar ursprungslistan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-527">The <strong>limit value</strong> parameter defines the value of the limit for splitting the original list.</span></span> <span data-ttu-id="aae9a-528">Parametern <strong>gränsvärde</strong> definierar värdet på den gräns som delar ursprungslistan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-528">The <strong>limit source</strong> parameter defines the step that the total sum is increased on.</span></span> <span data-ttu-id="aae9a-529">Gränsen tillämpas inte på en enskild artikel i ursprungslistan när gränskällan överskrider angiven gräns.</span><span class="sxs-lookup"><span data-stu-id="aae9a-529">The limit isn't applied to a single item of the original list if the limit source exceeds the defined limit.</span></span></td>
+<td><span data-ttu-id="aae9a-530">På bilden nedan visas ett format.</span><span class="sxs-lookup"><span data-stu-id="aae9a-530">The following illustration shows a format.</span></span> 
+<p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p><span data-ttu-id="aae9a-531">I följande illustrationer visar de datakällor som används för det formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-531">The following illustration shows the data sources that are used for the format.</span></span></p>
+<p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
+<p><span data-ttu-id="aae9a-532">Följande illustration visar resultatet när formatet har körts.</span><span class="sxs-lookup"><span data-stu-id="aae9a-532">The following illustration shows the result when the format is run.</span></span> <span data-ttu-id="aae9a-533">I det här fallet är resultatet en förenklad lista över varuartiklar.</span><span class="sxs-lookup"><span data-stu-id="aae9a-533">In this case, the output is a flat list of commodity items.</span></span></p>
+<p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
+<p><span data-ttu-id="aae9a-534">I följande exempel visas samma format som har justerats för att visa listan med varuartiklar i batchar, där varje enskild batch måste innehålla varuartiklar och inte överskrida gränsen på 9.</span><span class="sxs-lookup"><span data-stu-id="aae9a-534">In the following illustrations, the same format has been adjusted so that it presents the list of commodity items in batches when a single batch must include commodities and the total weight should not exceed the limit of 9.</span></span></p>
+<p><a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="Adjusted format" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a></p>
+<p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
+<p><span data-ttu-id="aae9a-535">Följande illustration visar resultatet när det anpassade formatet har körts.</span><span class="sxs-lookup"><span data-stu-id="aae9a-535">The following illustration shows the result when the adjusted format is run.</span></span></p>
+<p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
+<blockquote>[!NOTE] <span data-ttu-id="aae9a-536">Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9).</span><span class="sxs-lookup"><span data-stu-id="aae9a-536">The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9).</span></span> <span data-ttu-id="aae9a-537">Använd antingen funktionen <strong>WHERE</strong> eller uttrycket <strong>Enabled</strong> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering, efter behov.</span><span class="sxs-lookup"><span data-stu-id="aae9a-537">Use either the <strong>WHERE</strong> function or the <strong>Enabled</strong> expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.</span></span></blockquote>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-538">FILTER (list, villkor)</span><span class="sxs-lookup"><span data-stu-id="aae9a-538">FILTER (list, condition)</span></span></td>
+<td><span data-ttu-id="aae9a-539">Returnera den angivna listan efter att frågan har ändrats för att filtrerats enligt de angivna villkoren.</span><span class="sxs-lookup"><span data-stu-id="aae9a-539">Return the specified list after the query has been modified to filter for the specified condition.</span></span> <span data-ttu-id="aae9a-540">Till skillnad från funktionen <strong>WHERE</strong> tillämpas angivet villkor på alla ER-datakällor av typen <strong>Table records</strong> på databasnivå.</span><span class="sxs-lookup"><span data-stu-id="aae9a-540">This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level.</span></span> <span data-ttu-id="aae9a-541">Listan och villkoret kan definieras med hjälp av tabeller och relationer.</span><span class="sxs-lookup"><span data-stu-id="aae9a-541">The list and condition can be defined by using tables and relations.</span></span></td>
+<td><span data-ttu-id="aae9a-542">Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> en lista över just de leverantörer som ingår i leverantörsgrupp 40.</span><span class="sxs-lookup"><span data-stu-id="aae9a-542">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40.</span></span> <span data-ttu-id="aae9a-543">Om <strong>Leverantör</strong> konfigureras som en ER-datakälla som hänvisar till registret och om <strong>parmVendorBankGroup</strong> konfigureras som en ER-datakälla som returnerar ett värde av datatypen <strong>Sträng</strong>, returnerar <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en lista över just de leverantörskonton som tillhör en viss bankgrupp.</span><span class="sxs-lookup"><span data-stu-id="aae9a-543">If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, and if <strong>parmVendorBankGroup</strong> is configured as an ER data source that returns a value of the <strong>String</strong> data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-544">INDEX (lista, index)</span><span class="sxs-lookup"><span data-stu-id="aae9a-544">INDEX (list, index)</span></span></td>
+<td><span data-ttu-id="aae9a-545">Den här funktionen returnerar en post som väljs av ett specifikt numeriskt index i listan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-545">This function returns a record that is selected by a specific numeric index in the list.</span></span> <span data-ttu-id="aae9a-546">Ett undantag erhålls om indexet ligger utanför intervallet för posterna i listan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-546">An exception is thrown if the index is out of range of the records in the list.</span></span></td>
+<td><span data-ttu-id="aae9a-547">Om du anger datakällans <strong>DS</strong> för typen <strong>Beräknat fält</strong> och den innehåller uttrycket <strong>SPLIT ("A|B|C", “|”), 2</strong>, kommer uttrycket <strong>DS.Value</strong> returnera textvärdet “B”.</span><span class="sxs-lookup"><span data-stu-id="aae9a-547">If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|”), 2</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”.</span></span> <span data-ttu-id="aae9a-548">Uttrycket <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> returnerar även text värde "B".</span><span class="sxs-lookup"><span data-stu-id="aae9a-548">The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> also returns the “B” text value.</span></span></td>
+</tr>
+</tbody>
+</table>
+
+### <a name="logical-functions"></a><span data-ttu-id="aae9a-549">Logiska funktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-549">Logical functions</span></span>
+
+| <span data-ttu-id="aae9a-550">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-550">Function</span></span> | <span data-ttu-id="aae9a-551">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-551">Description</span></span> | <span data-ttu-id="aae9a-552">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-552">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-553">CASE (expression, option 1, result 1 \[, option 2, result 2\] …</span><span class="sxs-lookup"><span data-stu-id="aae9a-553">CASE (expression, option 1, result 1 \[, option 2, result 2\] …</span></span> <span data-ttu-id="aae9a-554">\[, default result\])</span><span class="sxs-lookup"><span data-stu-id="aae9a-554">\[, default result\])</span></span> | <span data-ttu-id="aae9a-555">Utvärderar det definierade uttryckets värde mot de definierade alternativa alternativen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-555">Evaluate the specified expression value against the specified alternative options.</span></span> <span data-ttu-id="aae9a-556">Returnera resultatet av alternativet som är lika med värdet av uttrycket.</span><span class="sxs-lookup"><span data-stu-id="aae9a-556">Return the result of the option that equals the value of the expression.</span></span> <span data-ttu-id="aae9a-557">Returnera annars det valfria standardresultatet, om ett sådant har angetts.</span><span class="sxs-lookup"><span data-stu-id="aae9a-557">Otherwise, return the optional default result, if a default result is specified.</span></span> <span data-ttu-id="aae9a-558">(Standardresultatet är den sista parametern som inte föregås av ett alternativ.)</span><span class="sxs-lookup"><span data-stu-id="aae9a-558">(The default result is the last parameter that isn't preceded by an option.)</span></span> | <span data-ttu-id="aae9a-559">**CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "VINTER", "11", "VINTER", "12", "VINTER", "")** returnerar strängen **"VINTER"** om det aktuella Finance and Operations-sessionsdatumet är mellan oktober och december.</span><span class="sxs-lookup"><span data-stu-id="aae9a-559">**CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** returns the string **"WINTER"** when the current Finance and Operations session date is between October and December.</span></span> <span data-ttu-id="aae9a-560">Annars returneras en tom sträng.</span><span class="sxs-lookup"><span data-stu-id="aae9a-560">Otherwise, it returns a blank string.</span></span> |
+| <span data-ttu-id="aae9a-561">IF (condition, value 1, value 2)</span><span class="sxs-lookup"><span data-stu-id="aae9a-561">IF (condition, value 1, value 2)</span></span> | <span data-ttu-id="aae9a-562">Returnera det första definierade värdet när det definierade villkoret uppfylls.</span><span class="sxs-lookup"><span data-stu-id="aae9a-562">Return the first specified value when the specified condition is met.</span></span> <span data-ttu-id="aae9a-563">Returnera annars det andra angivna värdet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-563">Otherwise, return the second specified value.</span></span> <span data-ttu-id="aae9a-564">Om värde 1 och värde 2 är poster eller postlistor, har resultatet enbart de fält som finns med i båda listorna.</span><span class="sxs-lookup"><span data-stu-id="aae9a-564">If value 1 and value 2 are records or record lists, the result has only the fields that exist in both lists.</span></span> | <span data-ttu-id="aae9a-565">**IF (1=2, "condition is met", "condition is not met")** returnerar strängen **"villkoret är inte uppfyllt"**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-565">**IF (1=2, "condition is met", "condition is not met")** returns the string **"condition is not met"**.</span></span> |
+| <span data-ttu-id="aae9a-566">NOT (condition)</span><span class="sxs-lookup"><span data-stu-id="aae9a-566">NOT (condition)</span></span> | <span data-ttu-id="aae9a-567">Returnerar det omvända logiska värdet för det definierade kriteriet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-567">Return the reversed logical value of the specified condition.</span></span> | <span data-ttu-id="aae9a-568">**NOT (SANT)** returnerar **FALSKT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-568">**NOT (TRUE)** returns **FALSE**.</span></span> |
+| <span data-ttu-id="aae9a-569">OCH (villkor 1\[, villkor 2, …\])</span><span class="sxs-lookup"><span data-stu-id="aae9a-569">AND (condition 1\[, condition 2, …\])</span></span> | <span data-ttu-id="aae9a-570">Returnerar **SANT** om *alla* definierade kriterier är sanna.</span><span class="sxs-lookup"><span data-stu-id="aae9a-570">Return **TRUE** if *all* specified conditions are true.</span></span> <span data-ttu-id="aae9a-571">Annars returneras **FALSKT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-571">Otherwise, return **FALSE**.</span></span> | <span data-ttu-id="aae9a-572">**AND (1=1, "a"="a")** returnerar **SANT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-572">**AND (1=1, "a"="a")** returns **TRUE**.</span></span> <span data-ttu-id="aae9a-573">**AND (1=2, "a"="a")** returnerar **FALSKT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-573">**AND (1=2, "a"="a")** returns **FALSE**.</span></span> |
+| <span data-ttu-id="aae9a-574">ELLER (villkor 1\[, villkor 2, ...\])</span><span class="sxs-lookup"><span data-stu-id="aae9a-574">OR (condition 1\[, condition 2, …\])</span></span> | <span data-ttu-id="aae9a-575">Returnerar **FALSKT** om *alla* definierade kriterier är falska.</span><span class="sxs-lookup"><span data-stu-id="aae9a-575">Return **FALSE** if *all* specified conditions are false.</span></span> <span data-ttu-id="aae9a-576">Returnerar **SANT** om *något* av de definierade kriterierna är sant.</span><span class="sxs-lookup"><span data-stu-id="aae9a-576">Return **TRUE** if *any* specified condition is true.</span></span> | <span data-ttu-id="aae9a-577">**OR (1=2, "a"="a")** returnerar **SANT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-577">**OR (1=2, "a"="a")** returns **TRUE**.</span></span> |
+| <span data-ttu-id="aae9a-578">VALUEIN (indata, lista, uttryck för listobjekt)</span><span class="sxs-lookup"><span data-stu-id="aae9a-578">VALUEIN (input, list, list item expression)</span></span> | <span data-ttu-id="aae9a-579">Bestämmer om specifik indata matchar något värde för ett objekt i den angivna listan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-579">Determine whether the specified input matches any value of an item in the specified list.</span></span> <span data-ttu-id="aae9a-580">Returnerar **TRUE** om angiven indata matchar resultatet av det angivna uttrycket för minst en post.</span><span class="sxs-lookup"><span data-stu-id="aae9a-580">Return **TRUE** if the specified input matches the result of running the specified expression for at least one record.</span></span> <span data-ttu-id="aae9a-581">Annars returneras **FALSKT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-581">Otherwise, return **FALSE**.</span></span> <span data-ttu-id="aae9a-582">Parametern **indata** representerar sökvägen till ett datakällelement.</span><span class="sxs-lookup"><span data-stu-id="aae9a-582">The **input** parameter represents the path of a data source element.</span></span> <span data-ttu-id="aae9a-583">Värdet för det här elementet kommer att matchas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-583">The value of this element will be matched.</span></span> <span data-ttu-id="aae9a-584">Parametern **lista** representerar sökvägen till ett datakällelement av typ av postlista som en lista med poster som innehåller ett uttryck.</span><span class="sxs-lookup"><span data-stu-id="aae9a-584">The **list** parameter represents the path of a data source element of the record list type as a list of records that contains an expression.</span></span> <span data-ttu-id="aae9a-585">Värdet för det här elementet ska jämföras med angiven indata.</span><span class="sxs-lookup"><span data-stu-id="aae9a-585">The value of this element will be compared with the specified input.</span></span> <span data-ttu-id="aae9a-586">Argumentet **Uttryck för listobjekt** representerar ett uttryck som antingen refererar till eller innehåller ett enskilt fält för den angivna listan som ska användas för matchningen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-586">The **list item expression** argument represents an expression that either points to or contains a single field of the specified list that should be used for the matching.</span></span> | <span data-ttu-id="aae9a-587">För exempel se avsnittet [Exempel: VALUEIN (indata, lista, uttryck för listobjekt)](#examples-valuein-input-list-list-item-expression) som följer.</span><span class="sxs-lookup"><span data-stu-id="aae9a-587">For examples, see the [Examples: VALUEIN (input, list, list item expression)](#examples-valuein-input-list-list-item-expression) section that follows.</span></span> |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a><span data-ttu-id="aae9a-588">Exempel: VALUEIN (indata, lista, uttryck för listobjekt)</span><span class="sxs-lookup"><span data-stu-id="aae9a-588">Examples: VALUEIN (input, list, list item expression)</span></span>
+<span data-ttu-id="aae9a-589">I allmänhet översätts funktionen **VALUEIN** till en uppsättning **ELLER**-villkor:</span><span class="sxs-lookup"><span data-stu-id="aae9a-589">In general, the **VALUEIN** function is translated to a set of **OR** conditions:</span></span>
+
+<span data-ttu-id="aae9a-590">(indata = list.item1.value) ELLER (indata = list.item2.value) ELLER...</span><span class="sxs-lookup"><span data-stu-id="aae9a-590">(input = list.item1.value) OR (input = list.item2.value) OR …</span></span>
+
+##### <a name="example-1"></a><span data-ttu-id="aae9a-591">Exempel 1</span><span class="sxs-lookup"><span data-stu-id="aae9a-591">Example 1</span></span>
+<span data-ttu-id="aae9a-592">Du kan definiera följande datakälla i din modellmappning: **lista** (**beräknat fält**-typ).</span><span class="sxs-lookup"><span data-stu-id="aae9a-592">You define the following data source in your model mapping: **List** (**Calculated field** type).</span></span> <span data-ttu-id="aae9a-593">Datakällan innehåller uttrycket **SPLIT ("a,b,c", ",")**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-593">This data source contains the expression **SPLIT ("a,b,c", ",")**.</span></span>
+
+<span data-ttu-id="aae9a-594">När en datakälla anropas som konfigurerats som uttrycket **VALUEIN ("B", List, List.Value)** returnerar det **SANT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-594">When a data source is called that is configured as the **VALUEIN ("B", List, List.Value)** expression, it returns **TRUE**.</span></span> <span data-ttu-id="aae9a-595">I det här fallet översätts funktionen **VALUEIN** till följande uppsättning villkor:</span><span class="sxs-lookup"><span data-stu-id="aae9a-595">In this case, the **VALUEIN** function is translated to the following set of conditions:</span></span>
+
+<span data-ttu-id="aae9a-596">**(("B" = "a") eller ("B" = "b") eller ("B" = "c"))**, där **("B" = "b")** är lika med **SANT**</span><span class="sxs-lookup"><span data-stu-id="aae9a-596">**(("B" = "a") or ("B" = "b") or ("B" = "c"))**, where **("B" = "b")** is equal to **TRUE**</span></span>
+
+<span data-ttu-id="aae9a-597">När en datakälla anropas som konfigurerats som uttrycket **VALUEIN ("B", List, LEFT(List.Value, 0))** returnerar det **FALSKT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-597">When a data source is called that is configured as the **VALUEIN ("B", List, LEFT(List.Value, 0))** expression, it returns **FALSE**.</span></span> <span data-ttu-id="aae9a-598">I det här fallet översätts funktionen **VALUEIN** till följande villkor:</span><span class="sxs-lookup"><span data-stu-id="aae9a-598">In this case, the **VALUEIN** function is translated to the following condition:</span></span>
+
+<span data-ttu-id="aae9a-599">**("B" = "")**, vilket inte är lika med **SANT**</span><span class="sxs-lookup"><span data-stu-id="aae9a-599">**("B" = "")**, which isn't equal to **TRUE**</span></span>
+
+<span data-ttu-id="aae9a-600">Observera att den övre gränsen för antalet tecken i texten i sådant tillstånd är 32 768 tecken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-600">Note that the upper limit for the number of characters in the text of such a condition is 32,768 characters.</span></span> <span data-ttu-id="aae9a-601">Därför bör du inte skapa datakällor som eventuellt överskrider begränsningen vid körning.</span><span class="sxs-lookup"><span data-stu-id="aae9a-601">Therefore, you should not create data sources that might exceed this limit at runtime.</span></span> <span data-ttu-id="aae9a-602">Programmet ska sluta köras om gränsen överskrids och ett undantag genereras.</span><span class="sxs-lookup"><span data-stu-id="aae9a-602">If the limit is exceeded, the application will stop running, and an exception will be thrown.</span></span> <span data-ttu-id="aae9a-603">Till exempel kan detta inträffa om datakällan har konfigurerats som **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)** och listorna **List1** och **List2** innehåller en stor mängd poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-603">For example, this situation can occur if the data source is configured as **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)**, and the **List1** and **List2** lists contain a large volume of records.</span></span>
+
+<span data-ttu-id="aae9a-604">I vissa fall kan funktionen **VALUEIN** översätts till en databas med hjälp av operatören **EXISTS JOIN**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-604">In some cases, the **VALUEIN** function is translated to a database statement by using the **EXISTS JOIN** operator.</span></span> <span data-ttu-id="aae9a-605">Det här problemet uppstår när funktionen **FILTER** används och följande villkor uppfylls:</span><span class="sxs-lookup"><span data-stu-id="aae9a-605">This behavior occurs when the **FILTER** function is used and the following conditions are met:</span></span>
+
+- <span data-ttu-id="aae9a-606">Alternativet **FRÅGA EFTER FRÅGA** är inte markerat för datakällan för funktionen **VALUEIN** som refererar till listan över poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-606">The **ASK FOR QUERY** option is turned off for the data source of the **VALUEIN** function that refers to the list of records.</span></span> <span data-ttu-id="aae9a-607">(Inga ytterligare villkor ska kopplas till den här datakällan vid körning)</span><span class="sxs-lookup"><span data-stu-id="aae9a-607">(No additional conditions will be applied to this data source at runtime.)</span></span>
+- <span data-ttu-id="aae9a-608">Inga kapslade uttryck är konfigurerade för funktionen **VALUEIN** som refererar till listan över poster.</span><span class="sxs-lookup"><span data-stu-id="aae9a-608">No nested expressions are configured for the data source of the **VALUEIN** function that refers to the list of records.</span></span>
+- <span data-ttu-id="aae9a-609">Ett listobjekt för funktionen **VALUEIN** refererar till ett fält (inte ett uttryck eller en metod) i den angivna datakällan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-609">A list item of the **VALUEIN** function refers to a field (not an expression or a method) of the specified data source.</span></span>
+
+<span data-ttu-id="aae9a-610">Överväg att använda det här alternativet i stället för funktionen **WHERE** som beskrivs tidigare i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-610">Consider using this option instead of the **WHERE** function as described earlier in this example.</span></span>
+
+##### <a name="example-2"></a><span data-ttu-id="aae9a-611">Exempel 2</span><span class="sxs-lookup"><span data-stu-id="aae9a-611">Example 2</span></span>
+
+<span data-ttu-id="aae9a-612">Du definierar följande datakällor i din modellmappning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-612">You define the following data sources in your model mapping:</span></span>
+
+- <span data-ttu-id="aae9a-613">**In** (typen **Registerposter**), som refererar till tabellen Intrastat</span><span class="sxs-lookup"><span data-stu-id="aae9a-613">**In** (**Table records** type), which refers to the Intrastat table</span></span>
+- <span data-ttu-id="aae9a-614">**Port** (typen **Registerposter**), som refererar till tabellen IntrastatPort</span><span class="sxs-lookup"><span data-stu-id="aae9a-614">**Port** (**Table records** type), which refers to the IntrastatPort table</span></span>
+
+<span data-ttu-id="aae9a-615">När en datakälla anropas som konfigurerats som uttrycket **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)** genereras följande SQL-sats för att returnera filtrerade poster i Intrastat-registret:</span><span class="sxs-lookup"><span data-stu-id="aae9a-615">When a data source is called that is configured as the **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)** expression, the following SQL statement is generated to return filtered records of the Intrastat table:</span></span>
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+<span data-ttu-id="aae9a-616">För fälten **dataAreaId** genereras den slutliga SQL-satsen utifrån operatör **IN**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-616">For **dataAreaId** fields, the final SQL statement is generated by the using **IN** operator.</span></span>
+
+##### <a name="example-3"></a><span data-ttu-id="aae9a-617">Exempel 3</span><span class="sxs-lookup"><span data-stu-id="aae9a-617">Example 3</span></span>
+
+<span data-ttu-id="aae9a-618">Du definierar följande datakällor i din modellmappning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-618">You define the following data sources in your model mapping:</span></span>
+
+- <span data-ttu-id="aae9a-619">**Le** (typen **beräknat fält**), som innehåller uttrycket **SPLIT ("DEMF,GBSI,USMF", ",")**</span><span class="sxs-lookup"><span data-stu-id="aae9a-619">**Le** (**Calculated field** type), which contains the expression **SPLIT ("DEMF,GBSI,USMF", ",")**</span></span>
+- <span data-ttu-id="aae9a-620">**In** (typen **Registerposter**), som refererar till Intrastat-registret och för vilka alternativet **mellan företag** aktiveras</span><span class="sxs-lookup"><span data-stu-id="aae9a-620">**In** (**Table records** type), which refers to the Intrastat table and for which the **Cross-company** option is turned on</span></span>
+
+<span data-ttu-id="aae9a-621">När en datakälla anropas som konfigurerats som den **FILTER (i VALUEIN (Le.Value In.dataAreaId Le,)**, slutgiltiga SQL-satsen innehåller följande villkor:</span><span class="sxs-lookup"><span data-stu-id="aae9a-621">When a data source is called that is configured as the **FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)** expression, the final SQL statement contains the following condition:</span></span>
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
+
+### <a name="mathematical-functions"></a><span data-ttu-id="aae9a-622">Matematiska funktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-622">Mathematical functions</span></span>
+
+| <span data-ttu-id="aae9a-623">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-623">Function</span></span> | <span data-ttu-id="aae9a-624">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-624">Description</span></span> | <span data-ttu-id="aae9a-625">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-625">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-626">ABS (number)</span><span class="sxs-lookup"><span data-stu-id="aae9a-626">ABS (number)</span></span> | <span data-ttu-id="aae9a-627">Returnera absolutvärdet av det angivna numret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-627">Return the absolute value of the specified number.</span></span> <span data-ttu-id="aae9a-628">(Med andra ord returnera tal utan tecken.)</span><span class="sxs-lookup"><span data-stu-id="aae9a-628">(In other words, return the number without its sign.)</span></span> | <span data-ttu-id="aae9a-629">**ABS (-1)** returnerar **1**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-629">**ABS (-1)** returns **1**.</span></span> |
+| <span data-ttu-id="aae9a-630">POWER (number, power)</span><span class="sxs-lookup"><span data-stu-id="aae9a-630">POWER (number, power)</span></span> | <span data-ttu-id="aae9a-631">Returnerar resultatet av en ökning av det definierade positiva talet till den definierade kraften.</span><span class="sxs-lookup"><span data-stu-id="aae9a-631">Return the result of raising the specified positive number to the specified power.</span></span> | <span data-ttu-id="aae9a-632">**POWER (10, 2)** returnerar **100**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-632">**POWER (10, 2)** returns **100**.</span></span> |
+| <span data-ttu-id="aae9a-633">NUMBERVALUE (string, decimal separator, digit grouping separator)</span><span class="sxs-lookup"><span data-stu-id="aae9a-633">NUMBERVALUE (string, decimal separator, digit grouping separator)</span></span> | <span data-ttu-id="aae9a-634">Konverterar den definierade strängen till ett tal.</span><span class="sxs-lookup"><span data-stu-id="aae9a-634">Convert the specified string to a number.</span></span> <span data-ttu-id="aae9a-635">Den angivna decimalavgränsaren används mellan heltal och decimaler i ett decimaltal.</span><span class="sxs-lookup"><span data-stu-id="aae9a-635">The specified decimal separator is used between the integer and fractional parts of a decimal number.</span></span> <span data-ttu-id="aae9a-636">Den angivna gruppavgränsaren används som tusentalsavgränsare.</span><span class="sxs-lookup"><span data-stu-id="aae9a-636">The specified digit grouping separator is used as the thousands separator.</span></span> | <span data-ttu-id="aae9a-637">**NUMBERVALUE("1 234,56", ",", " ")** returnerar värdet **1234.56**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-637">**NUMBERVALUE("1 234,56", ",", " ")** returns the value **1234.56**.</span></span> |
+| <span data-ttu-id="aae9a-638">VALUE (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-638">VALUE (string)</span></span> | <span data-ttu-id="aae9a-639">Konverterar den definierade strängen till ett tal.</span><span class="sxs-lookup"><span data-stu-id="aae9a-639">Convert the specified string to a number.</span></span> <span data-ttu-id="aae9a-640">Kommatecken och punkter (.) betraktas som decimalavgränsare och ett inledande bindestreck (-) används som ett negativt tecken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-640">Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</span></span> <span data-ttu-id="aae9a-641">Meddela att ett undantag inträffat om den specificerade strängen innehåller andra icke-numeriska tecken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-641">Throw an exception if the specified string contains other non-numeric characters.</span></span> | <span data-ttu-id="aae9a-642">**VALUE ("1 234,56")** kastar ett undantag.</span><span class="sxs-lookup"><span data-stu-id="aae9a-642">**VALUE ("1 234,56")** throws an exception.</span></span> |
+| <span data-ttu-id="aae9a-643">ROUND (number, decimals)</span><span class="sxs-lookup"><span data-stu-id="aae9a-643">ROUND (number, decimals)</span></span> | <span data-ttu-id="aae9a-644">Returnera det specificerade numret efter att det avrundats till det angivna antalet decimaler:</span><span class="sxs-lookup"><span data-stu-id="aae9a-644">Return the specified number after it has been rounded to the specified number of decimal places:</span></span><ul><li><span data-ttu-id="aae9a-645">Om värdet för parametern **decimaler** är större än 0 (noll) avrundas det specificerade numret till det angivna antalet decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-645">If the value of the **decimals** parameter is more than 0 (zero), the specified number is rounded to that many decimal places.</span></span></li><li><span data-ttu-id="aae9a-646">Om värdet för parametern **decimaler** är **0** (noll) avrundas det specificerade numret till det angivna antalet decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-646">If the value of the **decimals** parameter is **0** (zero), the specified number is rounded to the nearest integer.</span></span></li><li><span data-ttu-id="aae9a-647">Om värdet för parametern **decimaler** är mindre än 0 (noll) avrundas det specificerade numret till vänster om decimaltecknet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-647">If the value of the **decimals** parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.</span></span></li></ul> | <span data-ttu-id="aae9a-648">**ROUND (1200.767, 2)** avrundar till två decimaler och returnerar **1200.77**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-648">**ROUND (1200.767, 2)** rounds to two decimal places and returns **1200.77**.</span></span> <span data-ttu-id="aae9a-649">**ROUND (1200.767, -3)** avrundar till närmaste multipel av 1 000 och returnerar **1000**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-649">**ROUND (1200.767, -3)** rounds to the nearest multiple of 1,000 and returns **1000**.</span></span> |
+| <span data-ttu-id="aae9a-650">ROUNDDOWN (number, decimals)</span><span class="sxs-lookup"><span data-stu-id="aae9a-650">ROUNDDOWN (number, decimals)</span></span> | <span data-ttu-id="aae9a-651">Returnera det specificerade numret efter att det avrundats ned till det angivna antalet decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-651">Return the specified number after it has been rounded down to the specified number of decimal places.</span></span><blockquote>[!NOTE] <span data-ttu-id="aae9a-652">Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret nedåt (mot noll).</span><span class="sxs-lookup"><span data-stu-id="aae9a-652">This function behaves like **ROUND**, but it always rounds the specified number down (toward zero).</span></span></blockquote> | <span data-ttu-id="aae9a-653">**ROUNDDOWN (1200.767, 2)** avrundar nedåt till två decimaler och returnerar **1200.76**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-653">**ROUNDDOWN (1200.767, 2)** rounds down to two decimal places and returns **1200.76**.</span></span> <span data-ttu-id="aae9a-654">**ROUNDDOWN (1700.767, -3)** avrundar nedåt till närmaste multipel av 1 000 och returnerar **1000**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-654">**ROUNDDOWN (1700.767, -3)** rounds down to the nearest multiple of 1,000 and returns **1000**.</span></span> |
+| <span data-ttu-id="aae9a-655">ROUNDUP (number, decimals)</span><span class="sxs-lookup"><span data-stu-id="aae9a-655">ROUNDUP (number, decimals)</span></span> | <span data-ttu-id="aae9a-656">Returnera det specificerade numret efter att det avrundats upp till det angivna antalet decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-656">Return the specified number after it has been rounded up to the specified number of decimal places.</span></span><blockquote>[!NOTE] <span data-ttu-id="aae9a-657">Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret uppåt (från noll).</span><span class="sxs-lookup"><span data-stu-id="aae9a-657">This function behaves like **ROUND**, but it always rounds the specified number up (away from zero).</span></span></blockquote> | <span data-ttu-id="aae9a-658">**ROUNDUP (1200.763, 2)** avrundar uppåt till två decimaler och returnerar **1200.77**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-658">**ROUNDUP (1200.763, 2)** rounds up to two decimal places and returns **1200.77**.</span></span> <span data-ttu-id="aae9a-659">**ROUNDUP (1200.767, -3)** avrundar uppåt till närmaste multipel av 1 000 och returnerar **2000**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-659">**ROUNDUP (1200.767, -3)** rounds up to the nearest multiple of 1,000 and returns **2000**.</span></span> |
+
+### <a name="data-conversion-functions"></a><span data-ttu-id="aae9a-660">Funktioner för datakonvertering</span><span class="sxs-lookup"><span data-stu-id="aae9a-660">Data conversion functions</span></span>
+
+| <span data-ttu-id="aae9a-661">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-661">Function</span></span> | <span data-ttu-id="aae9a-662">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-662">Description</span></span> | <span data-ttu-id="aae9a-663">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-663">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-664">VALUE (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-664">VALUE (string)</span></span> | <span data-ttu-id="aae9a-665">Konverterar den definierade strängen till ett tal.</span><span class="sxs-lookup"><span data-stu-id="aae9a-665">Convert the specified string to a number.</span></span> <span data-ttu-id="aae9a-666">Kommatecken och punkter (.) betraktas som decimalavgränsare och ett inledande bindestreck (-) används som ett negativt tecken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-666">Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign.</span></span> <span data-ttu-id="aae9a-667">Meddela att ett undantag inträffat om den specificerade strängen innehåller andra icke-numeriska tecken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-667">Throw an exception if the specified string contains other non-numeric characters.</span></span> | <span data-ttu-id="aae9a-668">**VALUE ("1 234,56")** kastar ett undantag.</span><span class="sxs-lookup"><span data-stu-id="aae9a-668">**VALUE ("1 234,56")** throws an exception.</span></span> |
+| <span data-ttu-id="aae9a-669">NUMBERVALUE (string, decimal separator, digit grouping separator)</span><span class="sxs-lookup"><span data-stu-id="aae9a-669">NUMBERVALUE (string, decimal separator, digit grouping separator)</span></span> | <span data-ttu-id="aae9a-670">Konverterar den definierade strängen till ett tal.</span><span class="sxs-lookup"><span data-stu-id="aae9a-670">Convert the specified string to a number.</span></span> <span data-ttu-id="aae9a-671">Den angivna decimalavgränsaren används mellan heltal och decimaler i ett decimaltal.</span><span class="sxs-lookup"><span data-stu-id="aae9a-671">The specified decimal separator is used between the integer and fractional parts of a decimal number.</span></span> <span data-ttu-id="aae9a-672">Den angivna gruppavgränsaren används som tusentalsavgränsare.</span><span class="sxs-lookup"><span data-stu-id="aae9a-672">The specified digit grouping separator is used as the thousands separator.</span></span> | <span data-ttu-id="aae9a-673">**NUMBERVALUE("1 234,56", ",", " ")** returnerar **1234,56**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-673">**NUMBERVALUE("1 234,56", ",", " ")** returns **1234.56**.</span></span> |
+| <span data-ttu-id="aae9a-674">INTVALUE (sträng)</span><span class="sxs-lookup"><span data-stu-id="aae9a-674">INTVALUE (string)</span></span> | <span data-ttu-id="aae9a-675">Returnera en heltalsrepresentation av den specificerade strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-675">Return an integer representation of the specified string.</span></span> <span data-ttu-id="aae9a-676">Eventuella decimaler trunkeras.</span><span class="sxs-lookup"><span data-stu-id="aae9a-676">Any decimal places are truncated.</span></span> | <span data-ttu-id="aae9a-677">**INTVALUE (”100.77”)** returnerar **100**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-677">**INTVALUE ("100.77")** returns **100**.</span></span> |
+| <span data-ttu-id="aae9a-678">INTVALUE (värde)</span><span class="sxs-lookup"><span data-stu-id="aae9a-678">INTVALUE (number)</span></span> | <span data-ttu-id="aae9a-679">Returnera en heltalsrepresentation av det specificerade numret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-679">Return an integer representation of the specified number.</span></span> <span data-ttu-id="aae9a-680">Eventuella decimaler trunkeras.</span><span class="sxs-lookup"><span data-stu-id="aae9a-680">Any decimal places are truncated.</span></span> | <span data-ttu-id="aae9a-681">**INTVALUE (-100.77)** returnerar **-100**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-681">**INTVALUE (-100.77)** returns **-100**.</span></span> |
+| <span data-ttu-id="aae9a-682">INT64VALUE (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-682">INT64VALUE (string)</span></span> | <span data-ttu-id="aae9a-683">Returnera en int64 representation av den specificerade strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-683">Return an int64 representation of the specified string.</span></span> <span data-ttu-id="aae9a-684">Eventuella decimaler trunkeras.</span><span class="sxs-lookup"><span data-stu-id="aae9a-684">Any decimal places are truncated.</span></span> | <span data-ttu-id="aae9a-685">**INT64VALUE ("22565422744")** returnerar **22565422744**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-685">**INT64VALUE ("22565422744")** returns **22565422744**.</span></span> |
+| <span data-ttu-id="aae9a-686">INT64VALUE (number)</span><span class="sxs-lookup"><span data-stu-id="aae9a-686">INT64VALUE (number)</span></span> | <span data-ttu-id="aae9a-687">Returnera en int64 representation av det specificerade numret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-687">Return an int64 representation of the specified number.</span></span> <span data-ttu-id="aae9a-688">Eventuella decimaler trunkeras.</span><span class="sxs-lookup"><span data-stu-id="aae9a-688">Any decimal places are truncated.</span></span> | <span data-ttu-id="aae9a-689">**INT64VALUE (22565422744.00)** returnerar **22565422744**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-689">**INT64VALUE (22565422744.00)** returns **22565422744**.</span></span> |
+
+### <a name="record-functions"></a><span data-ttu-id="aae9a-690">Inspelningsfunktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-690">Record functions</span></span>
+
+| <span data-ttu-id="aae9a-691">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-691">Function</span></span> | <span data-ttu-id="aae9a-692">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-692">Description</span></span> | <span data-ttu-id="aae9a-693">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-693">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-694">NULLCONTAINER (list)</span><span class="sxs-lookup"><span data-stu-id="aae9a-694">NULLCONTAINER (list)</span></span> | <span data-ttu-id="aae9a-695">Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-695">Return a **null** record that has the same structure as the specified record list or record.</span></span><blockquote>[!NOTE] <span data-ttu-id="aae9a-696">Den här funktionen är föråldrad.</span><span class="sxs-lookup"><span data-stu-id="aae9a-696">This function is obsolete.</span></span> <span data-ttu-id="aae9a-697">Använd **EMPTYRECORD** i stället.</span><span class="sxs-lookup"><span data-stu-id="aae9a-697">Use **EMPTYRECORD** instead.</span></span></blockquote> | <span data-ttu-id="aae9a-698">**NULLCONTAINER (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-698">**NULLCONTAINER (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function.</span></span> |
+| <span data-ttu-id="aae9a-699">EMPTYRECORD (record)</span><span class="sxs-lookup"><span data-stu-id="aae9a-699">EMPTYRECORD (record)</span></span> | <span data-ttu-id="aae9a-700">Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-700">Return a **null** record that has the same structure as the specified record list or record.</span></span><blockquote>[!NOTE] <span data-ttu-id="aae9a-701">En **noll** post är en post där alla fält innehåller ett tomt värde.</span><span class="sxs-lookup"><span data-stu-id="aae9a-701">A **null** record is a record where all fields have an empty value.</span></span> <span data-ttu-id="aae9a-702">Ett tomt värde är **0** (noll) för tal, en tom sträng för strängar, osv.</span><span class="sxs-lookup"><span data-stu-id="aae9a-702">An empty value is **0** (zero) for numbers, an empty string for strings, and so on.</span></span></blockquote> | <span data-ttu-id="aae9a-703">**EMPTYRECORD (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-703">**EMPTYRECORD (SPLIT ("abc", 1))** returns a new empty record that has the same structure as the list that is returned by the **SPLIT** function.</span></span> |
+
+### <a name="text-functions"></a><span data-ttu-id="aae9a-704">Textfunktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-704">Text functions</span></span>
+
+<table>
+<thead>
+<tr>
+<th><span data-ttu-id="aae9a-705">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-705">Function</span></span></th>
+<th><span data-ttu-id="aae9a-706">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-706">Description</span></span></th>
+<th><span data-ttu-id="aae9a-707">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-707">Example</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span data-ttu-id="aae9a-708">UPPER (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-708">UPPER (string)</span></span></td>
+<td><span data-ttu-id="aae9a-709">Returnera den specificerade strängen efter att den konverterats till versaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-709">Return the specified string after it has been converted to uppercase letters.</span></span></td>
+<td><span data-ttu-id="aae9a-710"><strong>ÖVRE(&quot;prov&quot;)</strong> returnerar <strong>&quot;PROV&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-710"><strong>UPPER(&quot;Sample&quot;)</strong> returns <strong>&quot;SAMPLE&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-711">LOWER (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-711">LOWER (string)</span></span></td>
+<td><span data-ttu-id="aae9a-712">Returnera den specificerade strängen efter att den konverterats till gemener.</span><span class="sxs-lookup"><span data-stu-id="aae9a-712">Return the specified string after it has been converted to lowercase letters.</span></span></td>
+<td><span data-ttu-id="aae9a-713"><strong>LÄGRE (&quot;Prov&quot;)</strong> returnerar <strong>&quot;prov&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-713"><strong>LOWER (&quot;Sample&quot;)</strong> returns <strong>&quot;sample&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-714">LEFT (string, number of characters)</span><span class="sxs-lookup"><span data-stu-id="aae9a-714">LEFT (string, number of characters)</span></span></td>
+<td><span data-ttu-id="aae9a-715">Returnerar det definierade antalet tecken från början av den definierade strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-715">Return the specified number of characters from the start of the specified string.</span></span></td>
+<td><span data-ttu-id="aae9a-716"><strong>VÄNSTER (&quot;prov&quot;, 3)</strong> returnerar <strong>&quot;Pr&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-716"><strong>LEFT (&quot;Sample&quot;, 3)</strong> returns <strong>&quot;Sam&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-717">RIGHT (string, number of characters)</span><span class="sxs-lookup"><span data-stu-id="aae9a-717">RIGHT (string, number of characters)</span></span></td>
+<td><span data-ttu-id="aae9a-718">Returnerar det definierade antalet tecken från slutet av den definierade strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-718">Return the specified number of characters from the end of the specified string.</span></span></td>
+<td><span data-ttu-id="aae9a-719"><strong>HÖGER (&quot;Prov&quot;, 3)</strong> returnerar <strong>&quot;ov&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-719"><strong>RIGHT (&quot;Sample&quot;, 3)</strong> returns <strong>&quot;ple&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-720">MID (string, starting position, number of characters)</span><span class="sxs-lookup"><span data-stu-id="aae9a-720">MID (string, starting position, number of characters)</span></span></td>
+<td><span data-ttu-id="aae9a-721">Returnerar det definierade antalet tecken från den definierade strängen, med start från den definierade positionen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-721">Return the specified number of characters from the specified string, starting at the specified position.</span></span></td>
+<td><span data-ttu-id="aae9a-722"><strong>MEL (&quot;Prov&quot;, 2, 3)</strong> returnerar <strong>&quot;ro&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-722"><strong>MID (&quot;Sample&quot;, 2, 3)</strong> returns <strong>&quot;amp&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-723">LEN (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-723">LEN (string)</span></span></td>
+<td><span data-ttu-id="aae9a-724">Returnerar antalet tecken i den definierade strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-724">Return the number of characters in the specified string.</span></span></td>
+<td><span data-ttu-id="aae9a-725"><strong>LEN (&quot;Prov&quot;)</strong> returnerar <strong>6</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-725"><strong>LEN (&quot;Sample&quot;)</strong> returns <strong>6</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-726">CHAR (number)</span><span class="sxs-lookup"><span data-stu-id="aae9a-726">CHAR (number)</span></span></td>
+<td><span data-ttu-id="aae9a-727">Returnerar teckensträngen som har en referens till det definierade Unicode-numret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-727">Return the string of characters that is referenced by the specified Unicode number.</span></span></td>
+<td><span data-ttu-id="aae9a-728"><strong>CHAR (255)</strong> returnerar <strong>&quot;ÿ&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-728"><strong>CHAR (255)</strong> returns <strong>&quot;ÿ&quot;</strong>.</span></span>
+<blockquote>[!NOTE] <span data-ttu-id="aae9a-729">Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet FILE.</span><span class="sxs-lookup"><span data-stu-id="aae9a-729">The string that this function returns depends on the encoding that is selected in the parent FILE format element.</span></span> <span data-ttu-id="aae9a-730">För listan över vilka koder som stöds se <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-730">For the list of supported encodings, see <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</span></span></blockquote>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-731">CONCATENATE (string 1 [, string 2, …])</span><span class="sxs-lookup"><span data-stu-id="aae9a-731">CONCATENATE (string 1 [, string 2, …])</span></span></td>
+<td><span data-ttu-id="aae9a-732">Returnera alla specificerade textsträngar efter att de har sammanfogats till en sträng.</span><span class="sxs-lookup"><span data-stu-id="aae9a-732">Return all specified text strings after they have been joined into one string.</span></span></td>
+<td><span data-ttu-id="aae9a-733"><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returnerar <strong>&quot;abcdef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-733"><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returns <strong>&quot;abcdef&quot;</strong>.</span></span>
+<blockquote>[!NOTE] <span data-ttu-id="aae9a-734">Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar också <strong>&quot;abcdef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-734">The expression <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> also returns <strong>&quot;abcdef&quot;</strong>.</span></span></blockquote>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-735">ÖVERSÄTT (string, pattern, replacement)</span><span class="sxs-lookup"><span data-stu-id="aae9a-735">TRANSLATE (string, pattern, replacement)</span></span></td>
+<td><span data-ttu-id="aae9a-736">Returnerar den definierade strängen efter att alla förekomster av tecknen i den definierade mönstersträngen har ersätts av tecknen på motsvarande position i den definierade utbytessträngen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-736">Return the specified string after all occurrences of the characters in the specified pattern string have been replaced by the characters at the corresponding position in the specified replacement string.</span></span></td>
+<td><span data-ttu-id="aae9a-737"><strong>ÖVERSÄTT (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> ersätter mönstret <strong>&quot;cd&quot;</strong> med strängen <strong>&quot;GH&quot;</strong> och returnerar <strong>&quot;abGHef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-737"><strong>TRANSLATE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> replaces the pattern <strong>&quot;cd&quot;</strong> with the string <strong>&quot;GH&quot;</strong> and returns <strong>&quot;abGHef&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-738">REPLACE (string, pattern, replacement, regular expression flag)</span><span class="sxs-lookup"><span data-stu-id="aae9a-738">REPLACE (string, pattern, replacement, regular expression flag)</span></span></td>
+<td><span data-ttu-id="aae9a-739">Om flaggan för det definierade <strong>reguljära uttrycket</strong> har parametern <strong>sant</strong>, returneras den definierade strängen efter att ett reguljärt uttryck som definierats som ett <strong>mönsterargument</strong> för den här funktionen har tillämpats.</span><span class="sxs-lookup"><span data-stu-id="aae9a-739">When the specified <strong>regular expression flag</strong> parameter is <strong>true</strong>, return the specified string after it has been modified by applying the regular expression that is specified as the <strong>pattern</strong> argument for this function.</span></span> <span data-ttu-id="aae9a-740">Uttrycket används för att hitta tecken som måste ersättas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-740">This expression is used to find characters that must be replaced.</span></span> <span data-ttu-id="aae9a-741">Tecknen i det definierade <strong>utbytesargumentet</strong> används för att ersätta tecken som hittas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-741">Characters of the specified <strong>replacement</strong> argument are used to replace characters that are found.</span></span> <span data-ttu-id="aae9a-742">Om flaggan för det definierade <strong>reguljära uttrycket</strong> har parametern <strong>falskt</strong>, uppför sig den här funktionen på samma sätt som <strong>ÖVERSÄTT</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-742">When the specified <strong>regular expression flag</strong> parameter is <strong>false</strong>, this function behaves like <strong>TRANSLATE</strong>.</span></span></td>
+<td><span data-ttu-id="aae9a-743"><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, sant)</strong> tillämpar ett standarduttryck som avlägsnar alla icke-numeriska symboler och returnerar <strong>&quot;19234564971&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-743"><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, true)</strong> applies a regular expression that removes all non-numeric symbols, and returns <strong>&quot;19234564971&quot;</strong>.</span></span> <span data-ttu-id="aae9a-744"><strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, falskt)</strong> ersätter mönstret <strong>&quot;cd&quot;</strong> med strängen <strong>&quot;GH&quot;</strong> och returnerar <strong>&quot;abGHef&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-744"><strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, false)</strong> replaces the pattern <strong>&quot;cd&quot;</strong> with the string <strong>&quot;GH&quot;</strong> and returns <strong>&quot;abGHef&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-745">TEXT (input)</span><span class="sxs-lookup"><span data-stu-id="aae9a-745">TEXT (input)</span></span></td>
+<td><span data-ttu-id="aae9a-746">Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="aae9a-746">Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</span></span> <span data-ttu-id="aae9a-747">För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-747">For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</span></span></td>
+<td><span data-ttu-id="aae9a-748">Om serverns lokala inställningar för Finance and Operations anges som <strong>EN-US</strong>, returnerar <strong>TEXT (NOW ())</strong> aktuellt Finance and Operations-sessionsdatum, December 17, 2015, som textsträngen <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-748">If the server locale of the Finance and Operations instance is defined as <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returns the current Finance and Operations session date, December 17, 2015, as the text string <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>.</span></span> <span data-ttu-id="aae9a-749"><strong>TEXT (1/3)</strong> returnerar <strong>&quot;0.33&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-749"><strong>TEXT (1/3)</strong> returns <strong>&quot;0.33&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-750">FORMAT (string 1, string 2[, string 3, …])</span><span class="sxs-lookup"><span data-stu-id="aae9a-750">FORMAT (string 1, string 2[, string 3, …])</span></span></td>
+<td><span data-ttu-id="aae9a-751">Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-751">Return the specified string after it has been formatted by substituting any occurrences of <strong>%N</strong> with the <em>n</em>th argument.</span></span> <span data-ttu-id="aae9a-752">Argumenten är strängar.</span><span class="sxs-lookup"><span data-stu-id="aae9a-752">The arguments are strings.</span></span> <span data-ttu-id="aae9a-753">Om ett argument inte har angetts för en parameter, returneras parametern som <strong>&quot;%N&quot;</strong> i strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-753">If an argument isn't provided for a parameter, the parameter is returned as <strong>&quot;%N&quot;</strong> in the string.</span></span> <span data-ttu-id="aae9a-754">För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-754">For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</span></span></td>
+<td><span data-ttu-id="aae9a-755">I det här exemplet returnerar datakällan <strong>PaymentModel</strong> listan över kundposter via komponenten <strong>Customer</strong> och bearbetar datumvärdet via fältet <strong>ProcessingDate</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-755">In the following illustration, the <strong>PaymentModel</strong> data source returns the list of customer records via the <strong>Customer</strong> component and the processing date value via the <strong>ProcessingDate</strong> field.</span></span>
+<p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
+<p><span data-ttu-id="aae9a-756">I ER-formatet, som har utformats för att skapa en elektronisk fil för utvalda kunder, väljs <strong>PaymentModel</strong> som en datakälla och styr processflödet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-756">In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow.</span></span> <span data-ttu-id="aae9a-757">Ett undantag meddelas användaren när en vald kund stoppas för det datum då rapporten bearbetas.</span><span class="sxs-lookup"><span data-stu-id="aae9a-757">An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed.</span></span> <span data-ttu-id="aae9a-758">Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:</span><span class="sxs-lookup"><span data-stu-id="aae9a-758">The formula that is designed for this type of processing control can use the following resources:</span></span></p>
+<ul>
+<li><span data-ttu-id="aae9a-759">Finance and Operations-etikett SYS70894, som har följande text:</span><span class="sxs-lookup"><span data-stu-id="aae9a-759">Finance and Operations label SYS70894, which has the following text:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-760"><strong>För språket EN-US:</strong> &quot;Nothing to print&quot;</span><span class="sxs-lookup"><span data-stu-id="aae9a-760"><strong>For the EN-US language:</strong> &quot;Nothing to print&quot;</span></span></li>
+<li><span data-ttu-id="aae9a-761"><strong>För språket SV-SE:</strong> &quot;Inget att skriva ut&quot;</span><span class="sxs-lookup"><span data-stu-id="aae9a-761"><strong>For the DE language:</strong> &quot;Nichts zu drucken&quot;</span></span></li>
+</ul></li>
+<li><span data-ttu-id="aae9a-762">Finance and Operations-etikett SYS18389, som har följande text:</span><span class="sxs-lookup"><span data-stu-id="aae9a-762">Finance and Operations label SYS18389, which has the following text:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-763"><strong>För språket EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</span><span class="sxs-lookup"><span data-stu-id="aae9a-763"><strong>For the EN-US language:</strong> &quot;Customer %1 is stopped for %2.&quot;</span></span></li>
+<li><span data-ttu-id="aae9a-764"><strong>För språket DE:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</span><span class="sxs-lookup"><span data-stu-id="aae9a-764"><strong>For the DE language:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</span></span></li>
+</ul></li>
+</ul>
+<p><span data-ttu-id="aae9a-765">Här följer formeln som kan utformas:</span><span class="sxs-lookup"><span data-stu-id="aae9a-765">Here is the formula that can be designed:</span></span></p>
+<p><span data-ttu-id="aae9a-766">FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;.</span><span class="sxs-lookup"><span data-stu-id="aae9a-766">FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;.</span></span> <span data-ttu-id="aae9a-767">&quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</span><span class="sxs-lookup"><span data-stu-id="aae9a-767">&quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;))</span></span></p>
+<p><span data-ttu-id="aae9a-768">Om en rapport bearbetas för kunden <strong>Litware-butikskund</strong> en 17 december 2015 i kulturen <strong>SV-SV</strong> och på språket <strong>SV-SV</strong>, kommer denna formel att returnera följande text som kan presenteras som ett undantagsmeddelande för slutanvändaren:</span><span class="sxs-lookup"><span data-stu-id="aae9a-768">If a report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>EN-US</strong> culture and the <strong>EN-US</strong> language, this formula returns the following text, which can be presented to the user as an exception message:</span></span></p>
+<p><span data-ttu-id="aae9a-769">&quot;Inget att skriva ut.</span><span class="sxs-lookup"><span data-stu-id="aae9a-769">&quot;Nothing to print.</span></span> <span data-ttu-id="aae9a-770">Customer Litware Retail is stopped for 12/17/2015."&quot;</span><span class="sxs-lookup"><span data-stu-id="aae9a-770">Customer Litware Retail is stopped for 12/17/2015.&quot;</span></span></p>
+<p><span data-ttu-id="aae9a-771">Om samma rapport bearbetas för <strong>Litware-butikskunden</strong> den 17 december 2015, i kulturen <strong>DE</strong> och på språket <strong>DE</strong>, kommer denna formel att returnera följande text som använder ett annat datumformat:</span><span class="sxs-lookup"><span data-stu-id="aae9a-771">If the same report is processed for the <strong>Litware Retail</strong> customer on December 17, 2015, in the <strong>DE</strong> culture and the <strong>DE</strong> language, the formula returns the following text, which uses a different date format:</span></span></p>
+<p><span data-ttu-id="aae9a-772">&quot;Nichts zu drucken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-772">&quot;Nichts zu drucken.</span></span> <span data-ttu-id="aae9a-773">Gäldenären 'Litware Butik' stoppad 2015-12-17.".&quot;</span><span class="sxs-lookup"><span data-stu-id="aae9a-773">Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</span></span></p>
+<blockquote>[!NOTE] <span data-ttu-id="aae9a-774">Följande syntax tillämpas i ER-formler för etiketter:</span><span class="sxs-lookup"><span data-stu-id="aae9a-774">The following syntax is applied in ER formulas for labels:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-775"><strong>För etiketter från Finance and Operations-resurser:</strong> <strong>@&quot;X&quot;</strong>, där <strong>X</strong> är etikettens ID i programobjektträdet (Application Object Tree, AOT)</span><span class="sxs-lookup"><span data-stu-id="aae9a-775"><strong>For labels from Finance and Operations resources:</strong> <strong>@&quot;X&quot;</strong>, where <strong>X</strong> is the label ID in the Application Object Tree (AOT)</span></span></li>
+<li><span data-ttu-id="aae9a-776"><strong>För etiketter i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, där <strong>X</strong> är etikettens ID i ER-konfigurationen</span><span class="sxs-lookup"><span data-stu-id="aae9a-776"><strong>For labels that reside in ER configurations:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, where <strong>X</strong> is the label ID in the ER configuration</span></span></li>
+</ul>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-777">NUMBERFORMAT (number, format)</span><span class="sxs-lookup"><span data-stu-id="aae9a-777">NUMBERFORMAT (number, format)</span></span></td>
+<td><span data-ttu-id="aae9a-778">Returnera en sträng som representerar det specificerade numret i det angivna formatet.</span><span class="sxs-lookup"><span data-stu-id="aae9a-778">Return a string representation of the specified number in the specified format.</span></span> <span data-ttu-id="aae9a-779">(Information om format som stöds finns i <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> och <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">anpassade</a>.) Den kontext som denna funktion körs i avgör den kultur som används för att formatera tal.</span><span class="sxs-lookup"><span data-stu-id="aae9a-779">(For information about the supported formats, see <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> and <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">custom</a>.) The context that this function is run in determines the culture that is used to format numbers.</span></span></td>
+<td><span data-ttu-id="aae9a-780">För kulturen EN-US returnerar <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> <strong>&quot;45.00 %&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-780">For the EN-US culture, <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> returns <strong>&quot;45.00 %&quot;</strong>.</span></span> <span data-ttu-id="aae9a-781"><strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returnerar <strong>&quot;10&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-781"><strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returns <strong>&quot;10&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-782">NUMERALSTOTEXT (nummer, språk, valuta, skriv ut flagga för valutanamn, decimaler)</span><span class="sxs-lookup"><span data-stu-id="aae9a-782">NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</span></span></td>
+<td><span data-ttu-id="aae9a-783">Returnera det specificerade numret efter att det har skrivits ut (konverterats) till textsträngar på det angivna språket.</span><span class="sxs-lookup"><span data-stu-id="aae9a-783">Return the specified number after it has been spelled out (converted to text strings) in the specified language.</span></span> <span data-ttu-id="aae9a-784">Språkkod är valfritt.</span><span class="sxs-lookup"><span data-stu-id="aae9a-784">The language code is optional.</span></span> <span data-ttu-id="aae9a-785">När den är definierad som en tom sträng används istället språkkoden för löpande kontext.</span><span class="sxs-lookup"><span data-stu-id="aae9a-785">When it's defined as an empty string, the language code for the running context is used.</span></span> <span data-ttu-id="aae9a-786">(Språkkoden för löpande kontext definieras för en skapande mapp eller fil.) Valutakoden är också valfri.</span><span class="sxs-lookup"><span data-stu-id="aae9a-786">(The language code for the running context is defined for a generating folder or file.) The currency code is also optional.</span></span> <span data-ttu-id="aae9a-787">När den definieras som en tom sträng, används företagsvalutan.</span><span class="sxs-lookup"><span data-stu-id="aae9a-787">When it's defined as an empty string, the company currency is used.</span></span>
+<blockquote>[!NOTE] <span data-ttu-id="aae9a-788">Parametrarna för <strong>den utskrivna flaggan för valutanamn</strong> och <strong>decimalpunkter</strong> analyseras endast för följande språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, och <strong>RU</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-788">The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>.</span></span> <span data-ttu-id="aae9a-789">I tillägg analyseras endast parametern <strong>utskriven flagga för valutanamn</strong> för Finance and Operations-företag vars länder eller regioner stöder valutanamnnedgång.</span><span class="sxs-lookup"><span data-stu-id="aae9a-789">Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</span></span></blockquote>
+</td>
+<td><span data-ttu-id="aae9a-790"><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returnerar <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-790"><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>.</span></span> <span data-ttu-id="aae9a-791"><strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returnerar <strong>&quot;Sto dwadzieścia&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-791"><strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returns <strong>&quot;Sto dwadzieścia&quot;</strong>.</span></span> <span data-ttu-id="aae9a-792"><strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returnerar <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-792"><strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returns <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-793">PADLEFT (sträng, längd, teckenutfyllnad)</span><span class="sxs-lookup"><span data-stu-id="aae9a-793">PADLEFT (string, length, padding chars)</span></span></td>
+<td><span data-ttu-id="aae9a-794">Returnera en sträng med angiven längd i de fall den aktuella strängens början är utfylld med de angivna tecknen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-794">Return a string of the specified length, where the start of the specified string is padded with the specified characters.</span></span></td>
+<td><span data-ttu-id="aae9a-795"><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> returnerar textsträngen <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-795"><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> returns the text string <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-796">TRIM (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-796">TRIM (string)</span></span></td>
+<td><span data-ttu-id="aae9a-797">Returnera den angivna textsträngen efter att inledande och efterföljande blanksteg har trunkerats och multipla blanksteg mellan ord har tagits bort.</span><span class="sxs-lookup"><span data-stu-id="aae9a-797">Return the specified text string after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.</span></span></td>
+<td><span data-ttu-id="aae9a-798"><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> returnerar <strong>&quot;Sample text&quot;</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-798"><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> returns <strong>&quot;Sample text&quot;</strong>.</span></span></td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-799">GETENUMVALUEBYNAME (uppräkning av sökväg för datakälla, uppräkning av etikettext för värde)</span><span class="sxs-lookup"><span data-stu-id="aae9a-799">GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</span></span></td>
+<td><span data-ttu-id="aae9a-800">Returnera ett värde för den specificerade fasta datakällan baserat på den angivna texten för uppräkningsetiketten.</span><span class="sxs-lookup"><span data-stu-id="aae9a-800">Return a value of the specified enumeration data source, based on the specified text of the enumeration label.</span></span></td>
+<td><span data-ttu-id="aae9a-801">I följande illustration introduceras uppräkningen <strong>ReportDirection</strong> i en datamodell.</span><span class="sxs-lookup"><span data-stu-id="aae9a-801">In the following illustration, the <strong>ReportDirection</strong> enumeration is introduced in a data model.</span></span> <span data-ttu-id="aae9a-802">Observera att etiketter definieras för uppräkningsvärden.</span><span class="sxs-lookup"><span data-stu-id="aae9a-802">Note that labels are defined for enumeration values.</span></span>
+<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
+<p><span data-ttu-id="aae9a-803">Illustrationen som följer visar dessa detaljer:</span><span class="sxs-lookup"><span data-stu-id="aae9a-803">The following illustration shows these details:</span></span></p>
+<ul>
+<li><span data-ttu-id="aae9a-804">Modelluppräkningen <strong>ReportDirection</strong> infogas i en rapport som en datakälla <strong>$Direction</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-804">The <strong>ReportDirection</strong> model enumeration is inserted into a report as a data source, <strong>$Direction</strong>.</span></span></li>
+<li><span data-ttu-id="aae9a-805">ER-uttrycket <strong>$IsArrivals</strong> är utformat för att använda modelluppräkning som en parameter för denna funktion.</span><span class="sxs-lookup"><span data-stu-id="aae9a-805">An ER expression, <strong>$IsArrivals</strong>, is designed to use the model enumeration as a parameter of this function.</span></span> <span data-ttu-id="aae9a-806">Värdet för detta uttryck är <strong>TRUE</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-806">The value of this expression is <strong>TRUE</strong>.</span></span></li>
+</ul>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-807">GUIDVALUE (indata)</span><span class="sxs-lookup"><span data-stu-id="aae9a-807">GUIDVALUE (input)</span></span></td>
+<td><span data-ttu-id="aae9a-808">Konvertera angivna indata för datatypen <strong>sträng</strong> till ett dataobjekt i datatypen <strong>GUID</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-808">Convert the specified input of the <strong>String</strong> data type to a data item of the <strong>GUID</strong> data type.</span></span><blockquote>[!NOTE] <span data-ttu-id="aae9a-809">För att göra en konvertering i motsatt riktning (d.v.s. konvertera angiven indata för datatypen <strong>GUID</strong> till ett dataobjekt i datatypen <strong>sträng</strong>), kan du använda funktionen <strong>TEXT()</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-809">To do a conversion in the opposite direction (that is, to convert specified input of the <strong>GUID</strong> data type to a data item of the <strong>String</strong> data type), you can use the <strong>TEXT()</strong> function.</span></span></blockquote></td>
+<td><span data-ttu-id="aae9a-810">Du definierar följande datakällor i din modellmappning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-810">You define the following data sources in your model mapping:</span></span>
+<ul>
+<li><span data-ttu-id="aae9a-811"><strong>myID</strong> (typen <strong>beräknat fält</strong>), som innehåller uttrycket <strong>GUIDVALUE (&quot;AF5CCDAC F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong></span><span class="sxs-lookup"><span data-stu-id="aae9a-811"><strong>myID</strong> (<strong>Calculated field</strong> type), which contains the expression <strong>GUIDVALUE(&quot;AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0&quot;)</strong></span></span></li>
+<li><span data-ttu-id="aae9a-812"><strong>Användare</strong> (typen <strong>Registerposter</strong>), som refererar till tabellen UserInfo</span><span class="sxs-lookup"><span data-stu-id="aae9a-812"><strong>Users</strong> (<strong>Table records</strong> type), which refers to the UserInfo table</span></span></li>
+</ul>
+<span data-ttu-id="aae9a-813">När du har definierat dessa datakällor kan du använda ett uttryck såsom <strong>FILTER (Users, Users.objectId = myID)</strong> för att filtrera registret UserInfo genom <strong>objectId</strong> i datatypen <strong>GUID</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-813">When these data sources are defined, you can use an expression such as <strong>FILTER (Users, Users.objectId = myID)</strong> to filter the UserInfo table by the <strong>objectId</strong> field of the <strong>GUID</strong> data type.</span></span>
+</td>
+</tr>
+<tr>
+<td><span data-ttu-id="aae9a-814">JSONVALUE (id, sökväg)</span><span class="sxs-lookup"><span data-stu-id="aae9a-814">JSONVALUE (id, path)</span></span></td>
+<td><span data-ttu-id="aae9a-815">Tolka data i JSON-format (JavaScript Object Notation) som används av den angivna sökvägen för att ta fram ett skalärvärde som baseras på angivet-ID.</span><span class="sxs-lookup"><span data-stu-id="aae9a-815">Parse data in JavaScript Object Notation (JSON) format that is accessed by the specified path to extract a scalar value that is based on the specified ID.</span></span></td>
+<td><span data-ttu-id="aae9a-816">Datakällan <strong>$JsonField</strong> innehåller följande data i JSON-format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-816">The data source <strong>$JsonField</strong> contains the following data in JSON format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>.</span></span> <span data-ttu-id="aae9a-817">För den här datakällan returnerar </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> värdet <strong>7.3.1234.1</strong> av datatypen <strong>sträng</strong>.</span><span class="sxs-lookup"><span data-stu-id="aae9a-817">For this data source, </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> returns the value <strong>7.3.1234.1</strong> of the <strong>String</strong> data type.</span></span></td>
+</tr>
+</tbody>
+</table>
+
+### <a name="data-conversion-functions"></a><span data-ttu-id="aae9a-818">Funktioner för datakonvertering</span><span class="sxs-lookup"><span data-stu-id="aae9a-818">Data conversion functions</span></span>
+
+| <span data-ttu-id="aae9a-819">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-819">Function</span></span> | <span data-ttu-id="aae9a-820">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-820">Description</span></span> | <span data-ttu-id="aae9a-821">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-821">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-822">TEXT (input)</span><span class="sxs-lookup"><span data-stu-id="aae9a-822">TEXT (input)</span></span> | <span data-ttu-id="aae9a-823">Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="aae9a-823">Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance.</span></span> <span data-ttu-id="aae9a-824">För värden av typen **real** är strängkonverteringen begränsad till två decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-824">For values of the **real** type, the string conversion is limited to two decimal places.</span></span> | <span data-ttu-id="aae9a-825">Om serverns lokala inställningar för Finance and Operations anges som **EN-US**, returnerar **TEXT (NOW ())** aktuellt Finance and Operations-sessionsdatum, 17 December 2015, som textsträngen **"12/17/2015 07:59:23 AM"**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-825">If the server locale of the Finance and Operations instance is defined as **EN-US**, **TEXT (NOW ())** returns the current Finance and Operations session date, December 17, 2015, as the text string **"12/17/2015 07:59:23 AM"**.</span></span> <span data-ttu-id="aae9a-826">**TEXT (1/3)** returnerar **"0.33"**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-826">**TEXT (1/3)** returns **"0.33"**.</span></span> |
+| <span data-ttu-id="aae9a-827">QRCODE (sträng)</span><span class="sxs-lookup"><span data-stu-id="aae9a-827">QRCODE (string)</span></span> | <span data-ttu-id="aae9a-828">Returnera en QR-kod (Quick Response Code ) i binärt base64-format för den specificerade strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-828">Return a Quick Response Code (QR code) image in base64 binary format for the specified string.</span></span> | <span data-ttu-id="aae9a-829">**QRCODE ("Sample text")** returnerar **U2FtcGxlIHRleHQ =**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-829">**QRCODE ("Sample text")** returns **U2FtcGxlIHRleHQ=**.</span></span> |
+
+### <a name="data-collection-functions"></a><span data-ttu-id="aae9a-830">Datainsamlingsfunktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-830">Data collection functions</span></span>
+
+| <span data-ttu-id="aae9a-831">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-831">Function</span></span> | <span data-ttu-id="aae9a-832">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-832">Description</span></span> | <span data-ttu-id="aae9a-833">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-833">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-834">FORMATELEMENTNAME ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-834">FORMATELEMENTNAME ()</span></span> | <span data-ttu-id="aae9a-835">Returnera namnet på det aktuella formatets element.</span><span class="sxs-lookup"><span data-stu-id="aae9a-835">Return the name of the current format's element.</span></span> <span data-ttu-id="aae9a-836">Returnera en tom sträng när flaggan **Samla in utdatadetaljer** är avstängd för aktuella filer.</span><span class="sxs-lookup"><span data-stu-id="aae9a-836">Return an empty string when the **Collect output details** flag of the current files is turned off.</span></span> | <span data-ttu-id="aae9a-837">Se uppgiftsguiden **ER Använd data från formatutmatningen för inventering och summering** (ingår i affärsprocessen **Införskaffa/utveckla komponenter för IT-tjänster/-lösningar**) för mer information om hur du använder dessa funktioner.</span><span class="sxs-lookup"><span data-stu-id="aae9a-837">To learn more about how to use this function, see the **ER Use data of format output for counting and summing** task guide, which is part of the **Acquire/Develop IT service/solution components** business process.</span></span> |
+| <span data-ttu-id="aae9a-838">SUMIFS (nyckelsträng för summering, kriterispann1, kriterievärde1-sträng \[, kriteriespann2-sträng, kriterievärde2-sträng, …\])</span><span class="sxs-lookup"><span data-stu-id="aae9a-838">SUMIFS (key string for summing, criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span></span> | <span data-ttu-id="aae9a-839">Returnera summan av värden som samlades in för XML-noder (där namnet definierats som en nyckel) när formatet kördes och som uppfyller angivna villkor (par med intervall och värden).</span><span class="sxs-lookup"><span data-stu-id="aae9a-839">Return the sum of values  that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</span></span> <span data-ttu-id="aae9a-840">Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd.</span><span class="sxs-lookup"><span data-stu-id="aae9a-840">Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off.</span></span> | |
+| <span data-ttu-id="aae9a-841">SUMIF (nyckelsträng för summering, sträng för kriteriespann, värdesträng för kriterier)</span><span class="sxs-lookup"><span data-stu-id="aae9a-841">SUMIF (key string for summing, criteria range string, criteria value string)</span></span> | <span data-ttu-id="aae9a-842">Returnera summan av värden som samlades in för XML-noder (där namnet definierats som en nyckel) när formatet kördes och som uppfyller det angivna villkoret (ett intervall och värde).</span><span class="sxs-lookup"><span data-stu-id="aae9a-842">Return the sum of values that was collected for XML nodes (where the name is defined as a key) when the format was run, and that satisfies the specified condition (a range and value).</span></span> <span data-ttu-id="aae9a-843">Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd.</span><span class="sxs-lookup"><span data-stu-id="aae9a-843">Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off.</span></span> | |
+| <span data-ttu-id="aae9a-844">COUNTIFS (sträng för kriteriespann1, sträng för kriterievärde1 \[, sträng för kriteriespann2, sträng för kriterievärde2, …\])</span><span class="sxs-lookup"><span data-stu-id="aae9a-844">COUNTIFS (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span></span> | <span data-ttu-id="aae9a-845">Returnerar antalet XML-noder som samlats in i när formatet kördes och som uppfyller de angivna villkoren (par med intervall och värden).</span><span class="sxs-lookup"><span data-stu-id="aae9a-845">Return the number of XML nodes that was collected when the format was run, and that satisfies the specified conditions (pairs of ranges and values).</span></span> <span data-ttu-id="aae9a-846">Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd.</span><span class="sxs-lookup"><span data-stu-id="aae9a-846">Return a **0** (zero) value when the **Collect output details** flag of the current files is turned off.</span></span> | |
+| <span data-ttu-id="aae9a-847">COUNTIF (intervallsträng för kriterier, värdesträng för kriterier)</span><span class="sxs-lookup"><span data-stu-id="aae9a-847">COUNTIF (criteria range string, criteria value string)</span></span> | <span data-ttu-id="aae9a-848">Returnerar antalet XML-noder som samlats in i när formatet kördes och som uppfyller det angivna villkoret (ett intervall och värde).</span><span class="sxs-lookup"><span data-stu-id="aae9a-848">Return the number of XML nodes that was collected when the format was run, and that satisfies the specified condition (a range and value).</span></span> <span data-ttu-id="aae9a-849">Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd.</span><span class="sxs-lookup"><span data-stu-id="aae9a-849">Return a **0** (zero) value the flag **Collect output details** flag of the current files is turned off.</span></span> | |
+| <span data-ttu-id="aae9a-850">COLLECTEDLIST (sträng för kriteriespann1, sträng för kriterievärde1 \[, sträng för kriteriespann2, sträng för kriterievärde2, …\])</span><span class="sxs-lookup"><span data-stu-id="aae9a-850">COLLECTEDLIST (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])</span></span> | <span data-ttu-id="aae9a-851">Returnerar listan över värden som samlats för XML-noder när formatet kördes och som uppfyller de angivna villkoren (ett intervall och värde).</span><span class="sxs-lookup"><span data-stu-id="aae9a-851">Return the list of values that was collected for XML nodes when the format was run, and that satisfies the specified conditions (a range and value).</span></span> <span data-ttu-id="aae9a-852">Returnera en tom lista när flaggan **Samla in utdatadetaljer** är avstängd för aktuella filer.</span><span class="sxs-lookup"><span data-stu-id="aae9a-852">Return an empty list when the **Collect output details** flag of the current files is turned off.</span></span> | |
+
+### <a name="other-business-domainspecific-functions"></a><span data-ttu-id="aae9a-853">Andra (företagsdomänspecifika) funktioner</span><span class="sxs-lookup"><span data-stu-id="aae9a-853">Other (business domain–specific) functions</span></span>
+
+| <span data-ttu-id="aae9a-854">Funktion</span><span class="sxs-lookup"><span data-stu-id="aae9a-854">Function</span></span> | <span data-ttu-id="aae9a-855">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aae9a-855">Description</span></span> | <span data-ttu-id="aae9a-856">Exempel</span><span class="sxs-lookup"><span data-stu-id="aae9a-856">Example</span></span> |
+|----------|-------------|---------|
+| <span data-ttu-id="aae9a-857">CONVERTCURRENCY (amount, source currency, target currency, date, company)</span><span class="sxs-lookup"><span data-stu-id="aae9a-857">CONVERTCURRENCY (amount, source currency, target currency, date, company)</span></span> | <span data-ttu-id="aae9a-858">Konvertera det angivna penningbeloppet från den specificerade källvalutan till den specificerade målvalutan genom att använda inställningarna för det specificerade Finance and Operations-företaget på angivet datum.</span><span class="sxs-lookup"><span data-stu-id="aae9a-858">Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified Finance and Operations company on the specified date.</span></span> | <span data-ttu-id="aae9a-859">**CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returnerar motsvarigheten för en euro i US-dollar för det aktuella sessionsdatumet baserat på inställningarna för DEMF-företaget.</span><span class="sxs-lookup"><span data-stu-id="aae9a-859">**CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company.</span></span> |
+| <span data-ttu-id="aae9a-860">ROUNDAMOUNT (number, decimals, round rule)</span><span class="sxs-lookup"><span data-stu-id="aae9a-860">ROUNDAMOUNT (number, decimals, round rule)</span></span> | <span data-ttu-id="aae9a-861">Avrunda det angivna beloppet enligt den definierade avrundningsregeln och det angivna antalet decimaler.</span><span class="sxs-lookup"><span data-stu-id="aae9a-861">Round the specified amount to the specified number of decimal places according to the specified rounding rule.</span></span><blockquote>[!NOTE] <span data-ttu-id="aae9a-862">Avrundningsregeln måste anges som ett värde för Finance and Operations-uppräkningen för **RoundOffType**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-862">The rounding rule must be specified as a value of the Finance and Operations **RoundOffType** enumeration.</span></span></blockquote> | <span data-ttu-id="aae9a-863">Om parametern **model.RoundOff** anges som **Downward**, returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.78**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-863">If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**.</span></span> <span data-ttu-id="aae9a-864">Om **model.RoundOff**-parametern är inställd på **Normal** eller **Rounding-up** returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.79**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-864">If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**.</span></span> |
+| <span data-ttu-id="aae9a-865">CURCredRef (digits)</span><span class="sxs-lookup"><span data-stu-id="aae9a-865">CURCredRef (digits)</span></span> | <span data-ttu-id="aae9a-866">Returnerar en betalningsmottagarreferens baserad på siffrorna i det angivna fakturanumret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-866">Return a creditor reference, based on the digits of the specified invoice number.</span></span> | <span data-ttu-id="aae9a-867">**CURCredRef ("VEND-200002")** returnerar **"2200002"**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-867">**CURCredRef ("VEND-200002")** returns **"2200002"**.</span></span> |
+| <span data-ttu-id="aae9a-868">MOD\_97 (siffror)</span><span class="sxs-lookup"><span data-stu-id="aae9a-868">MOD\_97 (digits)</span></span> | <span data-ttu-id="aae9a-869">Returnerar en betalningsmottagarreferens som ett MOD97-uttryck baserat på siffrorna i det angivna fakturanumret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-869">Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span> | <span data-ttu-id="aae9a-870">**MOD\_97 ("VEND-200002")** returnerar **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-870">**MOD\_97 ("VEND-200002")** returns **"20000285"**.</span></span> |
+| <span data-ttu-id="aae9a-871">ISOCredRef (digits)</span><span class="sxs-lookup"><span data-stu-id="aae9a-871">ISOCredRef (digits)</span></span> | <span data-ttu-id="aae9a-872">Returnera en International Organization for Standardization (ISO)-betalningsmottagarreferens baserad på siffror och bokstäver i det angivna fakturanumret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-872">Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.</span></span><blockquote>[!NOTE] <span data-ttu-id="aae9a-873">Om du vill ta bort symboler som inte överensstämmer med ISO-standarden från alfabetet måste indataparametern översättas innan den skickas till den här funktionen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-873">To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</span></span></blockquote> | <span data-ttu-id="aae9a-874">**ISOCredRef ("VEND-200002")** returnerar **"RF23VEND-200002"**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-874">**ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**.</span></span> |
+| <span data-ttu-id="aae9a-875">CN\_GBT\_AdditionalDimensionID (sträng, nummer)</span><span class="sxs-lookup"><span data-stu-id="aae9a-875">CN\_GBT\_AdditionalDimensionID (string, number)</span></span> | <span data-ttu-id="aae9a-876">Hämta angiven ID för ytterligare ekonomisk dimension</span><span class="sxs-lookup"><span data-stu-id="aae9a-876">Get the specified additional financial dimension ID.</span></span> <span data-ttu-id="aae9a-877">I parametern **sträng** representeras dimensioner som ID åtskilda med kommatecken.</span><span class="sxs-lookup"><span data-stu-id="aae9a-877">In the **string** parameter, dimensions are represented as IDs that are separated by commas.</span></span> <span data-ttu-id="aae9a-878">Parametern **nummer** definierar den begärda dimensionens seriekod i strängen.</span><span class="sxs-lookup"><span data-stu-id="aae9a-878">The **number** parameter defines the sequence code of the requested dimension in the string.</span></span> | <span data-ttu-id="aae9a-879">**CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returnerar **"CC"**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-879">**CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returns **"CC"**.</span></span> |
+| <span data-ttu-id="aae9a-880">GetCurrentCompany ()</span><span class="sxs-lookup"><span data-stu-id="aae9a-880">GetCurrentCompany ()</span></span> | <span data-ttu-id="aae9a-881">Returnera en textrepresentation av den kod för juridisk person (företag) som en användare för tillfället är inloggad till.</span><span class="sxs-lookup"><span data-stu-id="aae9a-881">Return a text representation of the code for the legal entity (company) that a user is currently signed in to.</span></span> | <span data-ttu-id="aae9a-882">**GETCURRENTCOMPANY ()** returnerar **USMF** för en användare som är inloggad på Finance and Operations-företaget **Contoso Entertainment System USA**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-882">**GETCURRENTCOMPANY ()** returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company in Finance and Operations.</span></span> |
+| <span data-ttu-id="aae9a-883">CH\_BANK\_MOD\_10 (siffror)</span><span class="sxs-lookup"><span data-stu-id="aae9a-883">CH\_BANK\_MOD\_10 (digits)</span></span> | <span data-ttu-id="aae9a-884">Returnera en betalningsmottagarreferens som ett MOD10-uttryck baserat på siffrorna i det angivna fakturanumret.</span><span class="sxs-lookup"><span data-stu-id="aae9a-884">Return a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.</span></span> | <span data-ttu-id="aae9a-885">**CH\_BANK\_MOD\_10 ("VEND-200002")** returnerar **3**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-885">**CH\_BANK\_MOD\_10 ("VEND-200002")** returns **3**.</span></span> |
+| <span data-ttu-id="aae9a-886">FA\_SUM (Anläggningstillgångskod, värdemodellkod, startdatum, slutdatum)</span><span class="sxs-lookup"><span data-stu-id="aae9a-886">FA\_SUM (fixed asset code, value model code, start date, end date)</span></span> | <span data-ttu-id="aae9a-887">Returnera den förberedda databehållaren med anläggningstillgångsbelopp för angiven period.</span><span class="sxs-lookup"><span data-stu-id="aae9a-887">Return the prepared data container of the fixed asset amount for the specified period.</span></span> | <span data-ttu-id="aae9a-888">**FA\_SUM ("COMP-000001", "Current", Date1, Date2)** returnerar den förberedda databehållaren för anläggningstillgången **"COMP-000001"** som har värdemodellen **"Current"** i en period mellan **Date1** och **Date2**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-888">**FA\_SUM ("COMP-000001", "Current", Date1, Date2)** returns the prepared data container of fixed asset **"COMP-000001"** that has the **"Current"** value model for a period from **Date1** to **Date2**.</span></span> |
+| <span data-ttu-id="aae9a-889">FA\_BALANCE (Anläggningstillgångskod, värdemodellkod, rapporteringsår, rapporteringsdatum)</span><span class="sxs-lookup"><span data-stu-id="aae9a-889">FA\_BALANCE (fixed asset code, value model code, reporting year, reporting date)</span></span> | <span data-ttu-id="aae9a-890">Returnera den förberedda databehållaren med anläggningstillgångssaldo.</span><span class="sxs-lookup"><span data-stu-id="aae9a-890">Return the prepared data container of the fixed asset balance.</span></span> <span data-ttu-id="aae9a-891">Rapporteringsåret måste anges som ett värde för Finance and Operations-uppräkningen **AssetYear**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-891">The reporting year must be specified as a value of the **AssetYear** enumeration in Finance and Operations.</span></span> | <span data-ttu-id="aae9a-892">**FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returnerar den förberedda databehållaren för belopp tillhörande anläggningstillgången **"COMP-000001"** med värdemodellen **"Current"** på aktuellt Finance and Operations-sessionsdatum.</span><span class="sxs-lookup"><span data-stu-id="aae9a-892">**FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returns the prepared data container of balances for fixed asset **"COMP-000001"** that has the **"Current"** value model on the current Finance and Operations session date.</span></span> |
+| <span data-ttu-id="aae9a-893">TABLENAME2ID (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-893">TABLENAME2ID (string)</span></span> | <span data-ttu-id="aae9a-894">Returnera en heltalsrepresentation av ett register-ID för ett givet registernamn.</span><span class="sxs-lookup"><span data-stu-id="aae9a-894">Return an integer representation of a table ID for the specified table name.</span></span> | <span data-ttu-id="aae9a-895">**TABLENAME2ID ("Intrastat")** returnerar **1510**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-895">**TABLENAME2ID ("Intrastat")** returns **1510**.</span></span> |
+| <span data-ttu-id="aae9a-896">ISVALIDCHARACTERISO7064 (string)</span><span class="sxs-lookup"><span data-stu-id="aae9a-896">ISVALIDCHARACTERISO7064 (string)</span></span> | <span data-ttu-id="aae9a-897">Returnerar booleskt värde **TRUE** när en specificerad sträng representerar ett giltigt internationellt bankkontonummer (IBAN).</span><span class="sxs-lookup"><span data-stu-id="aae9a-897">Return the Boolean value **TRUE** when the specified string represents a valid international bank account number (IBAN).</span></span> <span data-ttu-id="aae9a-898">Annars returnera det booleska värdet **FALSE**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-898">Otherwise, return the Boolean value **FALSE**.</span></span> | <span data-ttu-id="aae9a-899">**ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerar **SANT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-899">**ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returns **TRUE**.</span></span> <span data-ttu-id="aae9a-900">**ISVALIDCHARACTERISO7064 ("AT61")** returnerar **FALSKT**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-900">**ISVALIDCHARACTERISO7064 ("AT61")** returns **FALSE**.</span></span> |
+| <span data-ttu-id="aae9a-901">NUMSEQVALUE (nummerseriekod, område, områdes-ID)</span><span class="sxs-lookup"><span data-stu-id="aae9a-901">NUMSEQVALUE (number sequence code, scope, scope id)</span></span> | <span data-ttu-id="aae9a-902">Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseriekod, område och områdes-ID.</span><span class="sxs-lookup"><span data-stu-id="aae9a-902">Return the new generated value of a number sequence, based on the specified number sequence code, scope, and scope ID.</span></span> <span data-ttu-id="aae9a-903">Område måste anges som ett värde för uppräkningen **ERExpressionNumberSequenceområdes-IDType** (**delad**, **juridisk person** eller **företag**).</span><span class="sxs-lookup"><span data-stu-id="aae9a-903">The scope must be specified as a value of the **ERExpressionNumberSequenceScopeType** enumeration (**Shared**, **Legal entity**, or **Company**).</span></span> <span data-ttu-id="aae9a-904">För området **delad**, ange en tom sträng som områdes-ID.</span><span class="sxs-lookup"><span data-stu-id="aae9a-904">For the **Shared** scope, specify an empty string as the scope ID.</span></span> <span data-ttu-id="aae9a-905">För området **företag** och **juridisk person**, ange företagskoden som områdes-ID.</span><span class="sxs-lookup"><span data-stu-id="aae9a-905">For the **Company** and **Legal entity** scopes, specify the company code as the scope ID.</span></span> <span data-ttu-id="aae9a-906">För området **företag** och **juridisk person**, om du anger en tom sträng som områdes-ID, används aktuella företagskoden.</span><span class="sxs-lookup"><span data-stu-id="aae9a-906">For the **Company** and **Legal entity** scopes, if you specify an empty string as the scope ID, the current company code is used.</span></span> | <span data-ttu-id="aae9a-907">Du definierar följande datakällor i din modellmappning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-907">You define the following data sources in your model mapping:</span></span><ul><li><span data-ttu-id="aae9a-908">**enumScope** (typen **Dynamics 365 for Operations-uppräkning**) som hänvisar till uppräkningen **ERExpressionNumberSequenceScopeType**</span><span class="sxs-lookup"><span data-stu-id="aae9a-908">**enumScope** (**Dynamics 365 for Operations enumeration** type), which refers to the **ERExpressionNumberSequenceScopeType** enumeration</span></span></li><li><span data-ttu-id="aae9a-909">**NumSeq** (typen **beräknat fält**), som innehåller uttrycket **NUMSEQVALUE (”Gene\_1”, enumScope.Company, ””)**</span><span class="sxs-lookup"><span data-stu-id="aae9a-909">**NumSeq** (**Calculated field** type), which contains the expression **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</span></span></li></ul><span data-ttu-id="aae9a-910">När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien **Gen\_1** som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under.</span><span class="sxs-lookup"><span data-stu-id="aae9a-910">When the **NumSeq** data source is called, it returns the new generated value of the **Gene\_1** number sequence that has been configured for the company that supplies the context that the ER format is run under.</span></span> |
+| <span data-ttu-id="aae9a-911">NUMSEQVALUE (nummerseriekod)</span><span class="sxs-lookup"><span data-stu-id="aae9a-911">NUMSEQVALUE (number sequence code)</span></span> | <span data-ttu-id="aae9a-912">Returnerar det nya genererade värdet för en nummerserie, baserat på den angivna nummerserien, området **företag** och koden för det företag som tillhandahåller kontexten som ER-formatet kör under (som områdes-ID).</span><span class="sxs-lookup"><span data-stu-id="aae9a-912">Return the new generated value of a number sequence, based on the specified number sequence, the **Company** scope, and (as the scope ID) the code of the company that supplies the context that is ER format is run under.</span></span> | <span data-ttu-id="aae9a-913">Du kan definiera följande datakälla i din modellmappning: **NumSeq** (**beräknat fält**-typ).</span><span class="sxs-lookup"><span data-stu-id="aae9a-913">You define the following data source in your model mapping: **NumSeq** (**Calculated field** type).</span></span> <span data-ttu-id="aae9a-914">Datakällan innehåller uttrycket **NUMSEQVALUE ("Gene\_1")**.</span><span class="sxs-lookup"><span data-stu-id="aae9a-914">This data source contains the expression **NUMSEQVALUE ("Gene\_1")**.</span></span> <span data-ttu-id="aae9a-915">När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien **Gen\_1** som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under.</span><span class="sxs-lookup"><span data-stu-id="aae9a-915">When the **NumSeq** data source is called, it returns the new generated value of the **Gene\_1** number sequence that has been configured for the company that supplies the context that the ER format is run under.</span></span> |
+| <span data-ttu-id="aae9a-916">NUMSEQVALUE (nummerseriens post-ID)</span><span class="sxs-lookup"><span data-stu-id="aae9a-916">NUMSEQVALUE (number sequence record ID)</span></span> | <span data-ttu-id="aae9a-917">Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseries post-ID.</span><span class="sxs-lookup"><span data-stu-id="aae9a-917">Return the new generated value of a number sequence, based on the specified number sequence record ID.</span></span> | <span data-ttu-id="aae9a-918">Du definierar följande datakällor i din modellmappning:</span><span class="sxs-lookup"><span data-stu-id="aae9a-918">You define the following data sources in your model mapping:</span></span><ul><li><span data-ttu-id="aae9a-919">**LedgerParms** (**tabell** typ), som refererar till tabellen LedgerParameters</span><span class="sxs-lookup"><span data-stu-id="aae9a-919">**LedgerParms** (**Table** type), which refers to the LedgerParameters table</span></span></li><li><span data-ttu-id="aae9a-920">**NumSeq** (typen **beräknat fält**), som innehåller uttrycket **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</span><span class="sxs-lookup"><span data-stu-id="aae9a-920">**NumSeq** (**Calculated field** type), which contains the expression **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</span></span></li></ul><span data-ttu-id="aae9a-921">När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien som har konfigurerats i Redovisningsparametrar för det företag som tillhandahåller den kontext som ER-formatet körs under.</span><span class="sxs-lookup"><span data-stu-id="aae9a-921">When the **NumSeq** data source is called, it returns the new generated value of the number sequence that has been configured in the General ledger parameters for the company that supplies the context that the ER format is run under.</span></span> <span data-ttu-id="aae9a-922">Den här nummerserien identifierar unikt journaler och fungerar som ett batchnummer som kopplar ihop transaktionerna.</span><span class="sxs-lookup"><span data-stu-id="aae9a-922">This number sequence uniquely identifies journals and acts as a batch number that links the transactions together.</span></span> |
+
+### <a name="functions-list-extension"></a><span data-ttu-id="aae9a-923">Utöka funktionslista</span><span class="sxs-lookup"><span data-stu-id="aae9a-923">Functions list extension</span></span>
+
+<span data-ttu-id="aae9a-924">ER stöder utökning av listfunktioner som används i ER-uttryck.</span><span class="sxs-lookup"><span data-stu-id="aae9a-924">ER lets you extend the list of functions that are used in ER expressions.</span></span> <span data-ttu-id="aae9a-925">Vissa tekniska insatser krävs.</span><span class="sxs-lookup"><span data-stu-id="aae9a-925">Some engineering effort is required.</span></span> <span data-ttu-id="aae9a-926">Om du vill ha mer information, se [Utöka listan över elektroniska rapporteringfunktioner](general-electronic-reporting-formulas-list-extension.md).</span><span class="sxs-lookup"><span data-stu-id="aae9a-926">For detailed information, see [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md).</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="aae9a-927">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="aae9a-927">Additional resources</span></span>
+
+- [<span data-ttu-id="aae9a-928">Översikt över elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="aae9a-928">Electronic Reporting overview</span></span>](general-electronic-reporting.md)
+- [<span data-ttu-id="aae9a-929">Utöka listan över elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="aae9a-929">Extend the list of Electronic reporting (ER) functions</span></span>](general-electronic-reporting-formulas-list-extension.md)
