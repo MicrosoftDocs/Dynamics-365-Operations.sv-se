@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c256569135a00ea98a5c059b9dd12a07a000ee6a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546373"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606951"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Ställa in och hantera bilder för Retail Modern POS (MPOS)
 
@@ -49,11 +49,11 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 1. Öppna Dynamics 365 for Retail HQ portal.
 2. Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kanalprofiler**.
 
-    [![kanalprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
+    [![Navigering](./media/channel-profile1.png)](./media/channel-profile1.png)
 
 3. I kanalprofilen, som din butik använder för MPOS, uppdatera **Mediabas-URL**-fältet med bas-URL för din mediaserver eller CDN. Bas-URL är den första delen av URL som delas av alla bildmappar för olika enheter.
 
-    [![kanalprofil2](./media/channel-profile2.png)](./media/channel-profile2.png)
+    [![Sidan Kanalprofiler](./media/channel-profile2.png)](./media/channel-profile2.png)
 
 ### <a name="define-the-media-template-for-an-entity"></a>Definiera mediamallen för en enhet
 
@@ -71,7 +71,7 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 8. Kör synkroniseringjobben för att flytta den nya mallen till kanaldatabasen, så att MPOS kan använda mallen för åtkomst till bilderna.
 9. För att uppdatera mediamallen för katalogbilder på kanalsidan, kontrollera att du kör **Katalogjobb 1150** från **Butik-IT** &gt; **Distributionsschema**.
 
-    [![katalog1](./media/catalog1.png)](./media/catalog1.png)
+    [![Definiera dialogrutan mediamall](./media/catalog1.png)](./media/catalog1.png)
 
 ## <a name="previewing-an-image-from-the-entity-level"></a>Granska en bild ur enhetsnivå
 
@@ -80,12 +80,12 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 3. Du kan använda **Lägg till** och **Ta bort** knapparna som manuellt ändrar sökvägen baserat på den implicita mallen och använda för en viss bild. Mer information finns i [Skriva över mediamallen för enhetsartiklar](#overwriting-the-media-template-for-entity-items) senare i denna artikel.
 4. När du är klar att granska en bild och med de ändringar som du behöver, starta MPOS-instansen för den aktuella butiken och se om katalogbilderna visas.
 
-    [![katalog4](./media/catalog4.png)](./media/catalog4.png)
+    [![Dialogrutan bilder](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
 > Du kan använda samma procedur för alla fem enheter som stöds: Arbetare, kund, katalog, kategori och produkter. ”Katalogprodukter” (produkter som anges på katalognivån), och " kanalprodukter " (produkter som anges på kanalnivån) använder mediamallen som anges för produktenheten. För produktmediamallen kan du välja antalet produktbilder som du vill visa per produkt. Du kan även ange standardbilden för en viss produkt. På så sätt kan du förebygga tomma bilder i MPOS och få hjälp att kontrollera vilken bilden som används som standardbild för en produktartikel. I följande exempel har varje produkt fem bilder, och den första bilden anges som standardbilden. Variantprodukter hanteras på samma sätt som huvudplaneringsprodukter. Filnamnet på bildfilen ska baseras på produktnumret. Vissa tecken undantas också medan filnamnet skapas. Därför är det bra att verifiera filnamnet genom att använda **Skapa bild-URL för Excel** avsnittet.
 >
-> [![prods](./media/prods.png)](./media/prods.png)
+> [![Definiera dialogrutan mediamall](./media/prods.png)](./media/prods.png)
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Synkroniseringsjobb för att skicka en mediamall till kanalsidan
 
@@ -111,11 +111,11 @@ Som du lärde dig i det föregående avsnittet, stöder mediamallen för en viss
     > [!IMPORTANT]
     > Så snart mediamallen ändras, måste du klicka på **Skapa** innan du kan använda Redigera i Excel-funktionen.
 
-    [![excel1](./media/excel1.jpg)](./media/excel1.jpg)
+    [![Generera bild-URL:er för snabbfliken Excel](./media/excel1.jpg)](./media/excel1.jpg)
 
     Du ser nu en förhandsgranskning av bild-webbadresserna som har genererats utifrån den senast sparade mediamallen.
 
-    [![excel2](./media/excel2.png)](./media/excel2.png)
+    [![Generera bid-URL:r för snabbfliken Excel efter att Generera har valts](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
     > De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Dynamics 365 for Retail, och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
@@ -160,11 +160,11 @@ För alla enheter utom produkter kan du skriva över bildURL för en viss enheta
 3. Om du vill att den här bild ska visas i MPOS för katalogen, kan du ange den som standardinställningbilden.
 4. Klicka på **OK**. BildURL uppdateras för den här katalogbild, och en förhandsgranskning visas.
 
-    [![förhandsgranskning3](./media/preview3.png)](./media/preview3.png)
+    [![URL uppdaterad i dialogrutan ny bild](./media/preview3.png)](./media/preview3.png)
 
 5. Du kan även se bildförtitten för alla överskrivavna bildURL på gallerisidan **Katalogbilder**.
 
-    [![förhandsgranska-4](./media/preview-4.png)](./media/preview-4.png)
+    [![Katalogbildgallerisidan](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
 > För närvarande visas galleriet inte förhandsgranskning av bilder för URL för medium mallbild. För katalog-, arbetare-, kund och kategorienheter om användaren innehåller tydligt en URL via den här sidan, rekommenderar vi att du anger vilken bild är standardinställningbilden, eftersom Retail serverklienter visar bara en bild per katalog, kund, anställd och kategori. Om användaren inte anger en standardinställningbild, bestämmer systemet standardinställningbilden och skicka den till Retail Chain Manager-menyn uppringangen tjänst (MPOS eller ecommercen).
@@ -179,7 +179,7 @@ Om du vill skriva över bildURL för katalogproduktbilder måste du använda sid
 4. Klicka **Lägg till** på, och skriver över bildURL med en ny URL-adressen.
 5. Klicka på **OK**. Du ser förhandsgranskning av den och välj den kan nu ange den som standardinställningbilden.
 
-    [![kat3](./media/cat3.png)](./media/cat3.png)
+    [![Förhandsgranskning av bild i dialogrutan ny bild](./media/cat3.png)](./media/cat3.png)
 
 > [!NOTE]
 > När du har kategoribildassociation, måste du publicera kanalen och köra kanaljobbet att garantera att ändringarna publiceras på kanaldatabasen.
@@ -200,7 +200,7 @@ Produktbilderna, som måste användas i frånkopplat leveranssätt, kan ställas
 6. Kör katalogjobbet i Huvudkontor, medan att se till MPOS är anslutet i form, att data skickas minst en gång till offlinedatabasen.
 7. Sätt MPOS till frånkopplat läge. Du bör se den bild du överför för den specifika Huvudkontor i produkten.
 
-    [![offline1](./media/offline1.png)](./media/offline1.png)
+    [![Produktbild i offlineläge](./media/offline1.png)](./media/offline1.png)
 
 ### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Ställ in katalogen, kategori, medarbetare och kundbilder som ska visas i det läget för MPOS offline
 
@@ -212,4 +212,4 @@ Katalogen, kategori, medarbetare och kundbilderna, som måste användas i frånk
 4. Kör katalogjobbet. Den bild du vill använda nu som den offline bilden för den katalog i MPOS.
 5. Följ en liknande process för andra enheter, till exempel kategori, medarbetare och kund.
 
-    [![offline2](./media/offline2.png)](./media/offline2.png)
+    [![Offlineläge](./media/offline2.png)](./media/offline2.png)

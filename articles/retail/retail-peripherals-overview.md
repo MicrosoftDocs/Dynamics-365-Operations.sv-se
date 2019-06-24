@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fa2be91db8213845c2be16b1cc0a0f5457a708b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571568"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577939"
 ---
 # <a name="retail-peripherals"></a>Butikskringutrustning
 
@@ -295,7 +295,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>Obs! Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<p><strong>Obs!</strong> Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</p>
 </li>
 </ul>
 </td>
@@ -306,7 +306,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>Obs! Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<p><strong>Obs!</strong> Bara en enda kassalåda kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</p>
 </li>
 </ul>
 </td>
@@ -374,7 +374,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Windows-drivrutin
-<blockquote>Obs! För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</blockquote>
+<p><strong>Obs!</strong> För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</p>
 </li>
 <li>Nätverk</li>
 </ul>
@@ -404,7 +404,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>Obs! Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<p><strong>Obs!</strong> Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</p>
 </li>
 </ul>
 </td>
@@ -469,7 +469,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Windows-drivrutin
-<blockquote>Obs! För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</blockquote>
+<p><strong>Obs!</strong> För Windows-skrivare i ett nätverk, måste användaren av maskinvarustationen ha behörighet att komma åt skrivaren.</p>
 </li>
 <li>Nätverk</li>
 </ul>
@@ -491,7 +491,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 <ul>
 <li>OPOS</li>
 <li>Nätverk
-<blockquote>Obs! Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</blockquote>
+<p><strong>Obs!</strong> Bara en enda kassalåda per hårdvaruprofil kan ställas in om <strong>Använda delade skift</strong> konfigureras i kassalådan.</p>
 </li>
 </ul>
 </td>

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f0ff56f0ff106bc168b6a27612e08743a539a07
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6923a4d5420cd768d1b0da24eab406033c17fd67
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1514449"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594946"
 ---
 # <a name="expense-policies"></a>Utgiftspolicy
 
@@ -44,11 +44,11 @@ Du kan definiera tre olika typer av policy:
  
  - Motivering – Kräver att medarbetaren eller en chef anger en motivering för att policybeloppet har överskridits innan utgiftsrapporten eller reserekvisitionen lämnas in.        
 
-# <a name="policy-tips"></a>Policytips
+## <a name="policy-tips"></a>Policytips
 Här är några förslag som kan hjälpa dig när du skapar nya policyer för kostnadshantering. 
 * Principer är giltighetsdatum och börjar inte gälla om policyn skapas med ett datum efter det datum då kostnaden inträffade. Om du till exempel skapar en ny policy idag för att upprätthålla en maximal måltidskostnaden av 50 USD, kontrolleras inte alla befintliga utgifter som anges i igår mot den här policy.
 * När du skapar en policy för en utgiftskategori som kan specificeras, bör du lägga till ett villkor för utgiftsradtypen. Vissa policyer t.ex. krav på inleverans, kanske inte stämmer överens med specificerade rader och ska bara användas på rubrikraden eller en rad som inte har specificerats. 
 
-# <a name="when-to-evaluate-policies"></a>När policyer ska utvärderas
+## <a name="when-to-evaluate-policies"></a>När policyer ska utvärderas
 
 I parametrar för utgiftshantering finns det ett alternativ som antingen utvärderar utgiftshanteringspolicyer när en rad sparas eller när en utgiftsrapport skickas. Om du väljer att utvärdera när en rad sparas ser du till att användarna har tidigare insyn i vad de behöver göra för att slutföra sina utgiftsrapporter samtidigt. Annars kan du fördröja policyutvärdering och spara tid om du har validering inträffat i slutet, under inlämning till arbetsflödet.

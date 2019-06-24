@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c73bc10332329e81986a259969f8fe34b57f4ee6
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559568"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607020"
 ---
 # <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer
 
@@ -44,7 +44,7 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
     - Om en butiksmedarbetare besöker en sida **Produktdetaljer** när han eller hon tittar på föregående transaktioner via olika kanaler, föreslår rekommendationsmotorn ytterligare artiklar som kan köpas tillsammans.
     - Om butiksmedarbetaren lägger till en kund i transaktionen och sedan besöker en **Produktdetaljer**-sida ger rekommendationsmotorn personliga rekommendationer som gjorts på kundens transaktionshistorik.
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![Rekommendationer på sidan produktinformation](./media/proddetails.png)](./media/proddetails.png)
 
 2. På sidan **Transaktion**:
 
@@ -54,13 +54,11 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
     > [!NOTE]
     > För att kunna visa rekommendationer på sidan **Transaktion** måste återförsäljaren uppdatera skärmlayouten i Dynamics 365 for Retail. Kontrollen **Rekommendationer** måste tas bort på sidan **Transaktion**.
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Rekommendationer på sidan Transaktion](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. På sidan **Kundinformation**:
+3. På sidan **Kunddetaljer** rekommendationsmotorn föreslår artiklar baserat på användar-ID och artiklar i kundens önskelista.
 
-    - Rekommendationsmotorn föreslår artiklar baserat på användar-ID och artiklar i kundens önskelista.
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![Rekommendationer på sidan kundinformation](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurera Dynamics 365 for Retail för att aktivera rekommendationer i kassa
 

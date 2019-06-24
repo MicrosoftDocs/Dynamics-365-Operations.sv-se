@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 744cf032803c5c2e01a901c818f3253bb7e2b133
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c3bbb2059f61d297cc5c37fe105540dd85a1d99a
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1515717"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577943"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 

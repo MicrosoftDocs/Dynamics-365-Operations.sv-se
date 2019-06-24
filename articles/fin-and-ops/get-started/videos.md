@@ -3,7 +3,7 @@ title: Videor för Finance and Operations
 description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Dynamics 365 for Finance and Operations som är tillgängliga på YouTube och andra platser.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561678"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591558"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videor för Finance and Operations
 
@@ -50,7 +50,7 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 - [Optimerings-advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfigurera en utvecklingsgren och bygga](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Konfigurera en utvecklingsdator](https://www.youtube.com/watch?v=cqp9MetfiyM)
-- [Azure DevOps-integrering med Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+- [Azure DevOps integration med Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 #### <a name="explore-the-user-interface"></a>Utforska användargränssnittet
 
@@ -63,6 +63,7 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 - [Mobil arbetsyta för kostnadskontroll](https://youtu.be/imsuTg8rUVk)
 - [Kom igång med Kostnadsredovisning](https://youtu.be/1pUDtJQZ8FU)
 - [Använd Excel för kostnadsanalys](https://youtu.be/-HKHYdClvx8)
+- [Utgiftserfarenhet](https://youtu.be/Ocy-MsTvEE0)
 
 #### <a name="intelligence"></a>Intelligence
 
@@ -185,7 +186,7 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 - [AX 2009 migreringsverktyg (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [AX 2012 till Dynamics 365 for Operations uppgradering (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Så här uppgraderar du till 7.2 (juli 2017) från 7.0 (RTW)/7.1 (Frisläpp 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Azure DevOps-konfiguration (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Azure DevOps Inställning (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="warehouse-management"></a>Lagerstyrning
 

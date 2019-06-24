@@ -3,7 +3,7 @@ title: Skärmlayout för kassan (POS)
 description: Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail kassamiljöer (POS)-uppgifter.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549438"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607057"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skärmlayout för kassan (POS)
 
@@ -51,6 +51,7 @@ Visuella profiler tilldelas till kassor och de anger visuella element som är ka
 - **Tema** - Du kan välja mellan programtema Ljus eller Mörk. Temat påverkar teckensnitt och bakgrundsfärg färgerna i hela programmet.
 - **Accentfärg** - Accentfärgen används i hela kassan för att åtskilja eller framhäva vissa visuella element som rubriker, kommandoknappar eller hyperlänkar. Dessa element är vanligtvis åtgärdbara.
 - **Färgen på rubriken** – du kan konfigurera färgen på sidhuvudet för att tillgodose återförsäljarens varumärkeskrav. Den här funktionen är endast i Microsoft Dynamics 365 for Retail version 1611.
+- **Visa datum/tid** – när den är aktiverad visas aktuellt datum och tid i kassarubrik.
 - **Inloggningsbakgrunder** - Du kan ange en bakgrundsbild för inloggningsskärmen. Bakgrundsbildfilens storlek bör hållas så liten som möjligt, eftersom lagring och inläsning av stora filer kan påverka programfunktioner och prestanda.
 - **Programmets bakgrund** - Du kan ange en bakgrundsbild som används istället för den fasta temafärgen i hela programmet. När det gäller inloggningsbakgrunder ska filstorleken hållas så liten som möjligt.
 

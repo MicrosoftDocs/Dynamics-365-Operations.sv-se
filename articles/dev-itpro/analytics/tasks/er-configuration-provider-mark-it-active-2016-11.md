@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544919"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595405"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Skapa konfigurationsleverantörer och markera dem som aktiva
 
@@ -34,11 +34,11 @@ I följande steg förklaras hur en användare som är tilldelad rollen som syste
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
 2. Klicka på konfigurationsleverantörer.
 3. Klicka på Ny.
-    * En leverantörspost har ett unikt namn och en unik webbadress. Granska innehållet på den här sidan och hoppa över den här proceduren om en post för Litware, Inc (http://www.litware.com) redan finns.  
+    * En leverantörspost har ett unikt namn och en unik webbadress. Granska innehållet på den här sidan och hoppa över den här proceduren om en post för Litware, Inc (https://www.litware.com) redan finns.  
 4. Skriv "Litware, Inc." i fältet Namn.
     * Litware Inc.  
-5. Skriv in "http://www.litware.com" i fältet för Internetadress.
-    * http://www.litware.com  
+5. Skriv in "https://www.litware.com" i fältet för Internetadress.
+    * https://www.litware.com  
 6. Klicka på Spara.
 7. Stäng sidan.
 

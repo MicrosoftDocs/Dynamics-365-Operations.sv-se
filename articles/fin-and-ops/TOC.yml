@@ -44,9 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funktioner som inte implementeras i lokala installationer
               href: get-started/features-not-implemented-on-prem.md
+            - name: Förhandsfunktioner i Finance and Operations version 10.0.4 (juli 2019)
+              href: get-started/whats-new-changed-10-0-4.md
             - name: Förhandsfunktioner i Finance and Operations version 10.0.3 (juni 2019)
               href: get-started/whats-new-changed-10-0-3.md
-            - name: Förhandsfunktioner i Finance and Operations version 10.0.2 (maj 2019)
+            - name: Finance and Operations version 10.0.2 (maj 2019)
               href: get-started/whats-new-changed-10-0-2.md
             - name: Finance and Operations version 10.0.1 (april 2019)
               href: get-started/whats-new-changed-10-0-1.md
@@ -54,9 +56,11 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations version 8.1.3 (januari 2019)
               href: get-started/whats-new-changed-8-1-3.md
+            - name: Förhandsfunktioner i Finance and Operations platform update 28 (juli 2019)
+              href: get-started/whats-new-platform-update-28.md
             - name: Förhandsfunktioner i Finance and Operations platform update 27 (juni 2019)
               href: get-started/whats-new-platform-update-27.md
-            - name: Förhandsfunktioner i Finance and Operations platform update 26 (maj 2019)
+            - name: Platform update 26 (maj 2019)
               href: get-started/whats-new-platform-update-26.md
             - name: Platform update 25 (april 2019)
               href: get-started/whats-new-platform-25.md
@@ -1261,6 +1265,8 @@
                   href: ../financials/public-sector/tasks/create-original-budget.md
                 - name: Skapa en preliminär budget för offentliga sektorn
                   href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
+                - name: Budgetanalysrapport
+                  href: ../financials/public-sector/budget-analysis-report.md
                 - name: Budgetanalys i offentlig sektor
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Preliminära budgetar och fördelningar i offentlig sektor
@@ -2277,6 +2283,7 @@
                   href: ../financials/localizations/rus-ledger-transactions-preview.md
                 - name: Ställa in valutakurser för valutatransaktioner
                   href: ../financials/localizations/rus-exchange-difference.md
+                - name: Importera valutakurser från CBRF ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Förskottsmottagare
               href: ../financials/localizations/rus-advance-holders.md
               items:
@@ -2638,7 +2645,6 @@
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
                 - name: Ställa in förmåner
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
-            - name: Frekvenser och cykler
             - name: Ställa in lönecykler och löneperioder
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
             - name: Ställa in frekvenser i löneberäkning
@@ -2922,6 +2928,8 @@
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: Tolka inkommande dokument i CSV-format
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
+            - name: Spåra körningen av ER-format för att felsöka prestandaproblem
+              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md
             - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
@@ -3877,6 +3885,10 @@
           href: ../financials/project-management/project-time-entry-mobile-workspace.md
         - name: Mobil app för projekttidrapport
           href: ../financials/project-management/project-timesheet.md
+        - name: Projekttidrapporter på mobil enhet
+          href: ../financials/project-management/mobile-timesheets.md
+        - name: Implementera anpassade fält för mobilappen för projekttidrapporter
+          href: ../financials/project-management/custom-fields-mobile.md
     - name: Försäljning och marknadsföring
       href: ../supply-chain/sales-marketing/overview-sales-marketing.md
       items:

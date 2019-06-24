@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567986"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577854"
 ---
 # <a name="get-support-for-dynamics-365-for-retail"></a>Få support för Dynamics 365 for Retail
 
@@ -61,7 +61,7 @@ Om du vill ha stöd för Retail, använd modulen i följande tabell. Resurserna 
 <li>På fliken <strong>aktivt problem</strong> väljer du ditt problem, och klickar sedan på <strong>skicka till Microsoft</strong>.</li>
 <li>På fliken <strong>skickade till Microsoft</strong> klickar du på <strong>skicka en ny incident</strong> för att skicka problemet.</li>
 </ul>
-<blockquote>[!NOTE] Microsoft Premier-kunder och partners kan även skicka premier-supportärenden genom att följa stegen ovan.</blockquote>
+<p><strong>Obs!</strong> Microsoft Premier-kunder och partners kan även skicka premier-supportärenden genom att följa stegen ovan.</p>
 </td>
 </tr>
 <tr>
@@ -84,4 +84,4 @@ Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSo
 </tbody>
 </table>
 
-Mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://dynamics.microsoft.com/en-us/support/).
+Mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://dynamics.microsoft.com/support/).

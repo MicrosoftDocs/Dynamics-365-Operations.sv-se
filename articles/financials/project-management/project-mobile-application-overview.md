@@ -3,7 +3,7 @@ title: Översikt - projekt för mobila appar
 description: Det här avsnittet innehåller allmän information om projekttidsrelaterade program för Microsoft Dynamics 365 som finns på en mobil enhet.
 author: KimANelson
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 5b0560a8be32962f94b24754458fb2cf714a15c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 22ccc70e242ffc9a487720c6a25fa6c5b8d78073
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1529981"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608148"
 ---
 # <a name="project-mobile-applications-overview"></a>Översikt - projekt för mobila appar
 
@@ -45,4 +45,4 @@ Mina tidrapporter (optimerad för mobil) och tidrapporter för min granskning (o
 
 ## <a name="for-more-information"></a>Mer information
 
-Mer information finns i mobilappen [Microsoft Dynamics 365 Project Timesheet](project-timesheet.md), [Post för projekttid]( project-time-entry-mobile-workspace.md) och [Projektidrapporter på mobil enhet](Mobile-timesheets.md).
+För mer information, se [mobilappen Microsoft Dynamics 365 Project Timesheet](project-timesheet.md), [Post för projekttid]( project-time-entry-mobile-workspace.md), [Project Timesheet på en mobiltelefon](Mobile-timesheets.md) och [Implementera anpassade fält för mobilappen för Project Timesheet](custom-fields-mobile.md).

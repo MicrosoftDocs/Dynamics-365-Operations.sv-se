@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561820"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595672"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
@@ -549,7 +549,7 @@ Inga nya funktioner har lagts till.
 | Varnar användaren om en försäljningsorder eller produktionsorder inte är klar för leverans på det tidsplanerade datumet. | Varningarna som skapas av huvudplaneringen kallas *leveransplansmeddelanden*. *Leveransplaner* är ett avtal mellan två parter om att köpa eller sälja en tillgång till ett överenskommet pris (*leveransplanspriset*) även om leverans och betalning görs i framtiden (*leveransdatumet*). | *Leveransplansmeddelanden* och *leveransplansdatum* har bytt namn till *beräknade förseningar* och *försenade datum*. | Terminologin som används i AX 2012 var inkorrekt och ledde till felaktiga översättningar. |
 | Få snabb inblick i statusen för en huvudplaneringskörning, brådskande planerade order och planerade order som orsakar förseningar. | Informationen är tillgänglig, men är utspridd över flera formulär. | Arbetsytan **Huvudplanering** ger snabb information om när den senaste huvudplaneringskörningen slutfördes, huruvida eventuella fel uppstod, vilka brådskande planerade order som finns och vilka planerade order som orsakar förseningar. | Du har nytta av översikten som arbetsytan innehåller. Relevant information sammanställs för att styra huvudplaneringen och förbättra produktiviteten. |
 | Använd Excel för att uppdatera efterfrågeprognoser. | Inte tillgänglig | Du kan dra fördel av sömlös integration med Excel när du anger efterfrågeprognoser, gör uppdateringar och tar bort efterfrågeprognoser. | Det hjälper dig att öka effektivitet och produktivitet. |
-| Uppskatta framtida efterfrågan och skapa efterfrågeprognoser baserat på historiska transaktionsdata. | I Microsoft DynamicsAX 2012 R3 används prognosmodeller i Microsoft SQL Server Analysis Service för att skapa prognostiserade förutsägelser om efterfrågeprognoser. | Uppskatta framtida efterfrågan genom att använda kraften och skalbarheten i molntjänsten Microsoft Azure Machine Learning. Det är enkelt att använda och utöka prognosmodellerna i Machine Learning för att uppfylla kundkrav. Tjänsten väljer den modell som matchar bäst och tillhandahåller KPI:er som kan användas för att beräkna prognosprecision. | Skapa mer exakta prognoser genom att använda Machine Learning-teknikerna. |
+| Uppskatta framtida efterfrågan och skapa efterfrågeprognoser baserat på historiska transaktionsdata. | I Microsoft Dynamics AX 2012 R3 används prognosmodeller i Microsoft SQL Server Analysis Service för att skapa prognostiserade förutsägelser om efterfrågeprognoser. | Uppskatta framtida efterfrågan genom att använda kraften och skalbarheten i molntjänsten Microsoft Azure Machine Learning. Det är enkelt att använda och utöka prognosmodellerna i Machine Learning för att uppfylla kundkrav. Tjänsten väljer den modell som matchar bäst och tillhandahåller KPI:er som kan användas för att beräkna prognosprecision. | Skapa mer exakta prognoser genom att använda Machine Learning-teknikerna. |
 | Optimera orderdatumet och kvantiteten baserat på en visuell översikt över relaterade åtgärder från huvudplaneringskörningen. | Översikten över åtgärdsdiagrammet är tillgänglig men visar alla relaterade åtgärder. När åtgärder tillämpas försvinner de genast från vyn. | Åtgärdsdiagrammet ger en bättre översikt. Här finns alternativ som låter dig visa bara tillämpade åtgärder och direkt relaterade åtgärder. När åtgärder används visas de som nedtonade, men visas fortfarande. Därför finns översikten kvar. Mer information har lagts till för åtgärderna i diagrammet som visar data på en enda sida. | Du kan dra fördel av produktivitetsförbättring eftersom du bara fokuserar på de relevanta åtgärderna. |
 
 ## <a name="procurement-and-sourcing"></a>Anskaffning och källa
@@ -971,7 +971,7 @@ Det finns en förbättrad ”low-touch”-klientkomponentinstallation via själv
 </tr>
 <tr>
 <td>Övervaka systemhälsa och diagnostisera fel och problem.</td>
-<td>Den här funktionen kräver <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack för Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
+<td>Den här funktionen kräver <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack för Microsoft Dynamics AX 2012 R3 CU8 Retail</a>.</td>
 <td>Övervakning och diagnostik för Retail-komponenter är nu tillgängliga via instrumentpanelen <strong>Insikt i driften</strong> i LCS.</td>
 <td>Instrumentpanelen <strong>Insikt i driften</strong> är en molnbaserad övervakningsportal som ersätter behovet av att installera SCOM-infrastrukturen (System Center Operations Manager).</td>
 </tr>

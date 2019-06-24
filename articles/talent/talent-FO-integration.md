@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519169"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617353"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent till Dynamics 365 for Finance and Operations-integrering av frågor och svar
 
@@ -46,7 +46,7 @@ Ekonomiska dimensioner finns inte för närvarande i Common Data Service och ing
 
 För data som finns i Finance and Operations men inte finns i Talent, länkar ihop de två systemen med hjälp av **konfigurerar länkar** i Talent. Mer information om hur du konfigurerar länkar mellan Talent och Finance and Operations finns i [Vad är nytt eller ändrat i Dynamics 365 for Talent Core HR (31 oktober 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Mappa ekonomiska dimensioner](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Ibland när jag importerar anställda blir de inaktiva arbetare i Finance and Operations. Varför?
 
@@ -60,14 +60,14 @@ Datasynkronisering efter körning av tidsplan. Integreringen kommer att hämta e
 
 Med hjälp av "Avancerad fråga" kan du filtrera och omforma källdata innan du skickar den till destinationen.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Avancerad fråga för aktiva medarbetare](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kan jag ange vilka fält som ska skickas till Finance and Operations för en viss enhet?
 
 Fält kan läggas till eller tas bort från integrationsaktiviteten. Alla fält som existerar på entiteten Common Data Service fylls i från Core HR.
 Ytterligare data kan fyllas i via PowerApps.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Lägg till eller ta bort fält till och från från integrationsaktiviteten.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jag har ställt in integration som ett batchjobb, men Talent förlorade anslutningen till destinationssystemet. Hur kan jag skicka samma uppsättning ändringar till destinationssystemet
 

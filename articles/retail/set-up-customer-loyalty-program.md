@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9b73c52a72c82c109a1ff874d2369ce9c0b3a6d2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505897"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606882"
 ---
 # <a name="loyalty-overview"></a>Lojalitetsöversikt
 
@@ -93,10 +93,10 @@ Retail har nya bonusfunktioner som en del av versionen från oktober 2018. Var o
 
     ![Generera förmånskort](./media/Generate%20loyalty%20card.png "Automatiskt generera förmånskortnummer")
 
-- Intjänad och inlösta förmånspoäng sparas nu för varje transaktion och försäljningsorder mot försäljningsraden, så att samma belopp kan återbetalas eller tas tillbaka vid hela eller delvisa returer. Dessutom ger synliggörs för punkterna på försäljningsraden nivå möjlighet till call center användarna besvara kundfrågor om hur många poäng som har erhållits eller löses in för varje rad. Före ändringen räknades alltid belöningspoängen om vid returer som resulterade i ett annat belopp än det ursprungligt om reglerna för inkomst eller inlösen ändrades och även användarna av kundtjänst syntes inte på poängfördelningen. Poängen visas under formuläret **korttransaktioner** för varje förmånskort. För att aktivera den här funktionen aktiverar du konfigurationen **Bokför förmånspoäng per försäljningsrad** under **Gemensamma parametrar**  > **Allmännt**.
+- Intjänad och inlösta förmånspoäng sparas nu för varje transaktion och försäljningsorder mot försäljningsraden, så att samma belopp kan återbetalas eller tas tillbaka vid hela eller delvisa returer. Dessutom ger synliggörs för punkterna på försäljningsraden nivå möjlighet till call center användarna besvara kundfrågor om hur många poäng som har erhållits eller löses in för varje rad. Före ändringen räknades alltid belöningspoängen om vid returer som resulterade i ett annat belopp än det ursprungligt om reglerna för inkomst eller inlösen ändrades och även användarna av kundtjänst syntes inte på poängfördelningen. Poängen visas under formuläret **korttransaktioner** för varje förmånskort. För att aktivera den här funktionen aktiverar du konfigurationen **Bokför förmånspoäng per försäljningsrad** under **Gemensamma butiksparametrar** \> **Allmännt**.
 
->[!NOTE]
-> Du rekommenderas starkt att aktivera den här funktionen så att vid returer kan rätt mängd punkter återbetalas eller hämtas från kunden.
+    > [!NOTE]
+    > Du rekommenderas starkt att aktivera den här funktionen så att vid returer kan rätt mängd punkter återbetalas eller hämtas från kunden.
 
 - Återförsäljare kan nu ange överlåtelseperiod för varje belöningspoäng. En överlåtelseperiodkonfiguration definierar varaktighet från tjänstedatum, varefter belöningspoängen skulle bli tillgängliga för kunderna. Ej erhållna poäng kan visas i kolumnen **Ej erhållna poäng** på sidan **förmånskort**. Återförsäljare kan dessutom definiera maximal gräns för förmånsbelöningspoäng per förmånskort. Det här fältet kan användas för att minska effekten av förmånskortbedrägeri. När den maximala belöningspoängen har nåtts, kan inte användaren får mer poäng. Återförsäljaren kan välja att blockera sådana kort tills de har undersökts för eventuella bedrägerier. Om återförsäljaren avgör bedrägeri, kan inte återförsäljaren bara spärra förmånskortet för kunden utan även markera kunden som blockerades. För att göra detta, ange egenskapen **spärra kunden för registrering av förmåner** till **Ja** under **alla kunder** på snabbfliken **Retail**. Spärrade kunder kommer inte att utfärda ett förmånskort i någon av kanalerna.
 
@@ -120,31 +120,32 @@ Retail har nya bonusfunktioner som en del av versionen från oktober 2018. Var o
     ![Poäng som omfattas av förmånssaldot](./media/Points%20covered%20by%20loyalty%20balance.png "Visa saldo som omfattas av förmånspoäng")
 
     ![Utgångna poäng](./media/Expiring%20points.png "Visa utgångna poäng")
-    
 
 - Med 8.1.3 frisläppning vi har aktiverat alternativet ”betald av förmånskort” i kundtjänstkanalen. Om du vill aktivera det här alternativet skapar du en typen för förmånsbetalningsmedel och associerar den till en kundtjänst. 
 
->[!NOTE]
-> Eftersom lojalitetsbetalningarna är inställda som kortbetalningar du måste välja ett kort från sidan **kortinställningar**. 
+    > [!NOTE]
+    > Eftersom lojalitetsbetalningarna är inställda som kortbetalningar du måste välja ett kort från sidan **kortinställningar**. 
 
-![Lojalitetkortinställningar](./media/LoyaltyCardSetup.png "Lojalitetkortinställningar")
+    ![Lojalitetkortinställningar](./media/LoyaltyCardSetup.png "Lojalitetkortinställningar")
 
-När detta har ställts in kunder lösa in sina förmånspoäng i kundtjänst. Dessutom förbättrar vi användargränssnittet för att visa ”Belopp som täcks av förmånspoäng”, så att kundtjänstanvändare inte behöver gå till en annan skärm för att visa förmånskortets saldo.
+    När detta har ställts in kunder lösa in sina förmånspoäng i kundtjänst. Dessutom förbättrar vi användargränssnittet för att visa ”Belopp som täcks av förmånspoäng”, så att kundtjänstanvändare inte behöver gå till en annan skärm för att visa förmånskortets saldo.
 
 - Många återförsäljare kan tilldela förmånspoäng endast utifrån försäljningstransaktionerna men mer kundinriktade återförsäljare vill belöna kunderna för deras åtagande med deras varumärke. Till exempel vill de ge belöningar för att fylla en online-undersökning, besöka en butik, gilla återförsäljare på Facebook, twittra om återförsäljaren med mera. För att göra detta kan återförsäljaren definiera en ”andra aktivitetstyp” och definiera inkomstreglerna för aktiviteterna. Det finns också en exponeras Retail Server API ”PostNonTransactionalActivityLoyaltyPoints” som kan anropas när en aktivitet identifieras att belöna kunden med förmånspoäng. Detta API förväntar sig att förmåner kort-ID, kanal-ID och annan aktivitetstyp-ID, så att den kund som ska tilldelas kan finnas inkomstregeln för aktiviteten kan identifieras. 
 
     Tilldelning av poäng för icke-transaktionsaktiviteter vanligtvis består av två steg:
+
     - Att uppnå en aktivitet har inträffat som borde belönas.
     - Belöna lämpliga punkter.
 
     Det första steget är utanför Microsoft Dynamics 365 for Retail, t.ex. twittra om varumärke eller gilla varumärket på Facebook. När aktiviteten har identifierats kan återförsäljarna anropa ovannämnda butiksserver-API och tilldela förmånspoäng i realtid. I sådana scenarier behövs det inte några granskningssteg eftersom en aktivitet har inträffat och motsvarande punkter ska tilldelas. Det finns scenarier där återförsäljaren vill granska posterna innan tilldelning av poäng. Återförsäljaren måste till exempel konfigurera en workshop i butiken som kunderna registrerar sig för på webbplatsen för e-handel eller andra program för händelseregistrering. Endast de deltagande kunderna tjänar lojalitetspoäng. För sådana scenarier introducerar vi i version 10.0 en dataentitet med namnet **Butikens förmåner andra aktivitetstyprader**. Denna dataentitet låter återförsäljare använda Data Import/Export Framework (DIXF) eller OData-API för att registrera de aktiviteter för att tilldela kunder förmånspoäng. Dataentiteten lagrar aktiviteterna i en journal med namnet **lojalitetsrader för andra aktiviteter**, som kan användas för granskning och ändring. När data har granskats kan IT-användaren manuellt bokföra aktivitetsraderna eller köra ett jobb som heter **bearbeta annan aktivitetstyp för lojalitetsrader**, som kommer att bokföra alla ej bokförda aktivitetsrader och tilldela poäng till kunder baserat på inkomstreglerna. I fallet ovan skulle händelseregistreringen kräva OData API för att skicka kundinformation till Dynamics 365 for Retail. Men IT-användaren kan endast bokföra aktivitetsraderna för kunder som har deltagit i verkstaden och ta bort aktivitetsraderna för andra kunder. 
 
-> [!NOTE]
-> För närvarande tvingar systemet användare att ställa in en nummerserie för ”andra aktivitetstyper”, men detta blir inte ett obligatoriskt steg i framtida versioner. Om du vill ställa in en nummerserie gå till **Gemensamma butiksparametrar > Nummerserier** och välj en nummerserie för **Lojalitets-ID för annan aktivitetstyp**.
+    > [!NOTE]
+    > För närvarande tvingar systemet användare att ställa in en nummerserie för ”andra aktivitetstyper”, men detta blir inte ett obligatoriskt steg i framtida versioner. Om du vill ställa in en nummerserie gå till **Gemensamma butiksparametrar** \> **Nummerserier** och välj en nummerserie för **Lojalitets-ID för annan aktivitetstyp**.
 
 - För att ge bra kundservice och effektivt lösa kundfrågor är det viktigt för kassörerna att få tillgång till fullständig kundprofil. Med version 10.0 kommer kassörerna kunna se historikinformation tillsammans med den associerade lojalitetsprogrammet och nivåinformation för kassa.
-- Gratis eller rabatterad leverans är en mycket motiverande faktor för kunderna att handla online. Om du vill aktivera återförsäljare för att ställa in leveranserbjudanden introducerar vi med version 10.0 en ny typ av kampanj kallad "Tröskelrabatt för leverans" där återförsäljaren kan definiera de tröskelvärden som, när de uppfylls, berättigar kunderna till gratis eller rabatterad leverans. Spendera till exempel 35 $ för gratis "två dagars leverans" eller "två dagars leverans" för alla förmånskunder. Den här funktionen använder den nya funktionen för avancerade automatiska avgifter. Se dokumentationen för avancerade automatiska avgifter här: https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-auto-charges. Dessa avancerade automatiska avgifter måste aktiveras för att leveranserbjudandet ska fungera. Dessa kan aktiveras från fliken **kundorder** på sidan **Butiksparametrar** och aktivera konfigurationen ”Använd avancerade automatiska avgifter”. Dessutom, eftersom en återförsäljare kan ställa in flera typer av avgifter, till exempel hantering eller installation måste den ange vilka avgifter anses vara leveransavgifter. Leveransrabatterna används bara i leveransavgifterna. För att ange avgifter som leveransavgifter, gå till formuläret **avgiftskoder** som finns under **Butik** > **Butikens IT** > **Kanalinställning** > **Avgifter** och markera kryssrutan ”leveransavgifter” för önskade avgifter. Nu kan du gå till formuläret **Tröskelrabatt för butiksleverans** för att ställa in rabatten.
+- Gratis eller rabatterad leverans är en mycket motiverande faktor för kunderna att handla online. Om du vill aktivera återförsäljare för att ställa in leveranserbjudanden introducerar vi med version 10.0 en ny typ av kampanj kallad "Tröskelrabatt för leverans" där återförsäljaren kan definiera de tröskelvärden som, när de uppfylls, berättigar kunderna till gratis eller rabatterad leverans. Spendera till exempel 35 $ för gratis "två dagars leverans" eller "två dagars leverans" för alla förmånskunder. Den här funktionen använder den nya funktionen för avancerade automatiska avgifter. Se [dokumentationen för avancerade automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Dessa avancerade automatiska avgifter måste aktiveras för att leveranserbjudandet ska fungera. Dessa kan aktiveras från fliken **kundorder** på sidan **Butiksparametrar** och aktivera konfigurationen ”Använd avancerade automatiska avgifter”. Dessutom, eftersom en återförsäljare kan ställa in flera typer av avgifter, till exempel hantering eller installation måste den ange vilka avgifter anses vara leveransavgifter. Leveransrabatterna används bara i leveransavgifterna. För att ange avgifter som leveransavgifter, gå till formuläret **avgiftskoder** som finns under **Butik** \> **Butikens IT** \> **Kanalinställning** \> **Avgifter** och markera kryssrutan ”leveransavgifter” för önskade avgifter. Nu kan du gå till formuläret **Tröskelrabatt för butiksleverans** för att ställa in rabatten.
+
     Liksom produktrabatter, godkänner den här rabatten alla befintliga standardrabatter, till exempel att återförsäljaren kan begränsa rabatterna med kuponger så att bara kunder med kuponger får rabatterna. Dessutom utnyttjar rabatterna prisgrupper för att avgöra berättigande till sådana rabatter. Exempelvis kan återförsäljaren välja att endast köra dessa erbjudanden i online-kanaler och/eller i kanaler för vissa kundgrupper, exempelvis förmånskunder. När orderrader med angivet leveransläge uppfyller det definierade tröskelvärdet tillämpas leveransrabatten och minskar leveranskostnaden baserat på den rabatt som anges. 
 
-> [!NOTE]
-> Till skillnad från andra tidsbegränsade rabatter bl.a kvantitet, enkla, mixa och matcha och tröskelvärde skapar leveransrabatten inte rabattrader, utan snarare redigerar leveransavgifter direkt och lägger till rabattens namn i avgiftsbeskrivningen.
+    > [!NOTE]
+    > Till skillnad från andra tidsbegränsade rabatter bl.a kvantitet, enkla, mixa och matcha och tröskelvärde skapar leveransrabatten inte rabattrader, utan snarare redigerar leveransavgifter direkt och lägger till rabattens namn i avgiftsbeskrivningen.

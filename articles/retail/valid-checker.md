@@ -3,7 +3,7 @@ title: Konsekvenskontroll av butikstransaktion
 description: I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner i Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 01/08/2019
+ms.date: 05/30/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 972c4d6b244eebc85cc801353ce8fb25ecbc0655
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517171"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617330"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
 
@@ -33,12 +33,12 @@ ms.locfileid: "1517171"
 
 I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner som infördes i Microsoft Dynamics 365 for Finance and Operations version 8.1.3. Konsekvenskontrollen identifierar och isolerar inkonsekventa transaktioner innan de används i bokföringsprocessen för utdrag.
 
-Det går inte att bokföra utdrag i Retail om det finns inkonsekventa data i butikens transaktionsregister. Dataproblemet kan bero på oförutsedda problem i kassaprogrammet, eller om transaktioner har importerats felaktigt från kassasystem från tredje part. Dessa inkonsekvenser kan till exempel uppenbara sig på följande sätt: 
+Det går inte att bokföra utdrag i Microsoft Dynamics 365 for Retail om det finns inkonsekventa data i butikens transaktionsregister. Dataproblemet kan bero på oförutsedda problem i kassaprogrammet, eller om transaktioner har importerats felaktigt från kassasystem från tredje part. Dessa inkonsekvenser kan till exempel uppenbara sig på följande sätt: 
 
-  - Transaktionssumman i huvudtabellen stämmer inte överens med transaktionssumman på raderna.
-  - Radantalet i huvudtabellen stämmer inte överens med antalet rader i transaktionstabellen.
-  - Momsen i huvudtabellen stämmer inte överens med momsbeloppet på raderna. 
-  
+- Transaktionssumman i huvudtabellen stämmer inte överens med transaktionssumman på raderna.
+- Radantalet i huvudtabellen stämmer inte överens med antalet rader i transaktionstabellen.
+- Momsen i huvudtabellen stämmer inte överens med momsbeloppet på raderna. 
+
 När inkonsekventa transaktioner fångas upp i bokföringsprocessen för utdrag, skapas inkonsekventa försäljningsfakturor och betalningsjournaler, och bokföringsprocessen för utdrag går inte att utföra. När utdragen ska återställas från ett sådant tillstånd krävs komplexa datakorrigeringar av flera transaktionsregister. Konsekvenskontrollen av butikstransaktioner förhindrar sådana problem.
 
 I följande diagram visas bokföringsprocessen där konsekvenskontroll av transaktioner tillämpas.
@@ -47,13 +47,24 @@ I följande diagram visas bokföringsprocessen där konsekvenskontroll av transa
 
 Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens transaktionsregister är konsekventa i följande scenarier.
 
-- Kundkonto – Validerar att kundkontot i butikens transaktionsregister finns i huvudkontorets kundmall.
-- Radräkning – Validerar att antalet rader, som anges i transaktionsregistret huvudtabell, motsvarar antalet rader i försäljningstransaktionsregistren.
+- **Kundkonto** – Validerar att kundkontot i butikens transaktionsregister finns i huvudkontorets kundmall.
+- **Radräkning** – Validerar att antalet rader, som anges i transaktionshuvudregistret, motsvarar antalet rader i försäljningstransaktionsregistren.
+- **Pris inklusive moms** – Validerar att parametern **Pris inklusive moms** är konsekvent på transaktionsraderna.
+- **Bruttobelopp** – Validerar att bruttobeloppet i huvudet är lika med summan av nettobeloppen på raderna plus momsbeloppet.
+- **Nettobelopp** – Validerar att nettobeloppet i huvudet är lika med summan av nettobeloppen på raderna.
+- **Under-/överbetalning** – Validerar att skillnaden mellan bruttobeloppet i huvudet och betalningsbeloppet inte överskrider den maximala konfigurationen av underbetalning/överbetalning.
+- **Rabattbelopp** – Validerar att rabattbeloppet för rabattregistren och rabattbeloppet i registren för butikstransaktionsrader är konsekventa och att rabattbeloppet i huvudet är lika med summan av rabattbeloppen på raderna.
+- **Radrabatt** – Validerar att radrabatten på transaktionsraden är lika med summan av alla rader i rabattregistren som motsvarar transaktionsraden.
+- **Presentkortsartikel** – Det går inte att returnera presentkortsartiklar i Retail. Saldot på ett presentkort kan dock betalas ut kontant. En presentkortsartikel som bearbetas som en returrad i stället för en utbetalningsrad gör att utdragsbokföringsprocessen misslyckas. Valideringsprocessen för presentkortsartiklar garanterar att de enda returraderna för presentkortsartiklar i butikstransaktionsregistren utgörs av rader för kontantutbetalning av presentkort.
+- **Negativt pris** – Validerar att det inte finns några negativa pristransaktionsrader.
+- **Artikel och variant** – Validerar att artiklar och varianter på transaktionsraderna finns i artikel- och varianthuvudfilen.
 
 ## <a name="set-up-the-consistency-checker"></a>Ställ in konsekvenskontrollen
+
 Konfigurera batchprocessen "Validera butikstransaktioner" i **Butik \> Butikens IT \> Kassabokföring** för periodiska körningar. Batchjobbet kan schemaläggas utifrån butikens organisationshierarki, vilket påminner om hur processerna "Beräkna utdrag i batch" och "Bokför utdrag i batch" konfigureras. Vi rekommenderar att du konfigurerar den här batchprocessen så att den körs flera gånger under en dag och schemalägga den så att den körs i slutet av varje P-jobbskörning.
 
 ## <a name="results-of-validation-process"></a>Resultat av valideringsprocessen
+
 Resultaten av batchprocessens valideringskontroll märks i motsvarande butikstransaktion. Fältet **Valideringsstatus** i butikens transaktionspost anges antingen till **Slutförd** eller **Fel**, och datumet för den senaste valideringskörningen visas i fältet **Senaste valideringstid**.
 
 Om du vill visa en mer beskrivande feltext som berör ett valideringsfel markerar du aktuell butikstransaktionspost i Retail och klickar på **Valideringsfel**.

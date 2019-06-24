@@ -3,7 +3,7 @@ title: Publicera jobb på externa karriärwebbplatser från Attract
 description: Det här avsnittet beskriver hur du använder Dynamics 365 for Talent - Attract att publicera jobb till externa rekryteringswebbplatser
 author: pganapmsft
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: eca599ad189edae29ef2de496196b08799a5e745
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519127"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590492"
 ---
 # <a name="post-jobs-to-external-career-sites-from-attract"></a>Publicera jobb på externa karriärwebbplatser från Attract
 
@@ -36,6 +36,7 @@ Innan du kan publicera jobb till Broadbean, måste du konfigurera Broadbean-inte
 
 > [!NOTE]
 > - Om du vill skicka jobb till externa platser måste du ha [tillägget för omfattande anställning](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Om du vill bokföra jobb på Broadbean via Attract måste du ha ett Broadbean-abonnemang.
 > - Den här funktionen är för närvarande i förhandsgranskning. Om du vill prova den måste du [aktivera den i Attract administrationsinställningar](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 ### <a name="configure-broadbean-integration"></a>Konfigurera Broadbean-integration

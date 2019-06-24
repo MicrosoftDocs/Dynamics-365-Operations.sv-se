@@ -3,7 +3,7 @@ title: Utgiftsrapporter på nytt sätt
 description: Det här ämnet ger information om den omdesignade och omarbetade upplevelsen för registrering av utgiftsrapport i Microsoft Dynamics 365 for Finance and Operations. Den nya upplevelsen förenklar processen för utgiftsrapporter som slutförs och minskar tiden som krävs.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2019-6-30
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 3039cda3f2cf9259ca06207bdf941bc6b0fb28e1
-ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
+ms.openlocfilehash: c7a2b95456e812970b135d83f0f7e503310ce185
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538710"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592647"
 ---
 # <a name="expense-reports-reimagined"></a>Utgiftsrapporter på nytt sätt
 
@@ -46,10 +46,9 @@ Om du vill aktivera den nya upplevelsen använder du arbetsytan **Funktionshante
 
 ## <a name="getting-started-video-for-new-users"></a>Komma igång-video för nya användare
 
-Du kan titta på en kort video som visar huvudfunktionerna för utgiftsregistrering.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
 
-> [!NOTE]
-> Videon är inte tillgänglig än. Det här avsnittet kommer att uppdateras när videon är tillgänglig.
+[Utgiftsupplevelsen i Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) video (visas ovan) ingår i [Finance and Operations spellista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som finns tillgänglig på YouTube.
 
 ## <a name="new-features"></a>Nya funktioner
 

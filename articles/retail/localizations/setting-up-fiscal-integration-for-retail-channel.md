@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525335"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577910"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Ställ in räkenskapsintegration för butikskanaler
 
@@ -88,7 +88,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
         Du kan ändra parametrarna för datamappning i en funktionsprofil för koppling. Återställ standardparametrar som är definierade i konfigurationen av leverantören av skattedokument, markera **uppdatering**.
 
         **Exempel**
-    
+
         |   | Format | Exempel |
         |---|--------|---------|
         | **Inställning av momssatser** | värde: VATrate | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
 4. Skapa grupper för räkenskapskoppling.
 
     En grupp för räkenskapskoppling kombinerar funktionella profiler med räkenskapskopplingar som utför identiska funktioner som används i samma fas inom en räkenskapsregistrering. Om flera kvittoskrivarmodeller kan användas i en butik kan räkenskapskopplingar för de kvittoskrivare kombineras i en grupp för räkenskapskoppling.
-    
+
     1. På sidan **Grupp för räkenskapskoppling** (**Butik \> kanalinställning \> räkenskapsintegration \> grupper för räkenskapskoppling**), skapa en ny grupp för räkenskapskoppling.
     2. Lägg till funktionella profiler till kopplingsgruppen. På sidan **Lägg till** på sidan **funktionella profiler** och välj ett profilnummer. Varje räkenskapskoppling i en kopplingsgrupp kan bara ha en funktionell profil.
     3. Om du vill skjuta upp användning av funktionella profilen, ange **inaktivera** till **Ja**. Denna ändring påverkar endast aktuella kopplingsgruppen. Du kan fortsätta att använda samma funktionella profil i andra kopplingsgrupper.
@@ -119,7 +119,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
 5. Skapa process för räkenskapsregistrering
 
     En process för räkenskapsregistrering definieras av ordningen på registreringsstegen och kopplingsgruppen som används i varje steg.
-    
+
     1. På sidan **Process för räkenskapsregistrering** (**Butik \> Kanalinställning \> räkenskapsintegration \> process för räkenskapsregistrering**), skapa en ny process för varje unik process i räkenskapsregistreringen.
     2. Lägg till registreringsteg i processen:
 
@@ -145,7 +145,7 @@ Innan du använder funktionen räkenskapsintegrering bör du konfigurera följan
 7. På sidan **Process för räkenskapsregistrering** (**Butik \> Kanalinställning \> Räkenskapsintegration \> Process för räkenskapsregistrering**), välj **Validera** för att validera räkenskapsregistreringen.
 
     Vi rekommenderar att du använder den här typen av verifiering i följande fall:
-    
+
     - När du har slutfört alla inställningar för en ny registreringsprocess, inklusive när du tilldelar registreringsprocesser till kassafunktionalitetsprofiler och hårdvaruprofiler.
     - När du har ändrat en befintlig räkenskapsregistreringsprocess, och de ändringar som kan göra att en annan räkenskapskontakt kan väljas vid körning (till exempel om du ändrar kontaktgruppen för ett räkenskapsregistreringsprocessteg, aktivera en funktionsprofil för koppling i en kopplingsgrupp eller lägg till en ny funktionsprofil för koppling till en kopplingsgrupp).
     - När du ändrar i tilldelningen av tekniska profiler för koppling till maskinvaruprofiler.

@@ -3,7 +3,7 @@ title: Intelligenta rekommendationer
 description: Det här avsnittet beskriver hur du kan använda maskininlärning för att ge rekommendationer för jobb och jobbsökande.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519103"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620630"
 ---
 # <a name="intelligent-recommendations"></a>Intelligenta rekommendationer
 
@@ -33,7 +33,7 @@ Maskininlärning kan hjälpa rekryterare och personalchefer att snabbt identifie
 
 > [!NOTE] 
 > - Funktionerna för intelligent rekommendation finns endast med [tillägget för omfattande anställning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationsinställningar** i Attract. Ange **Kandidatrekommendation**, **Jobbrekommendation** och **Rekommendation av potentiell kandidat** till **på**. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> - Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationscenter** i Attract. Ange **Kandidatrekommendation**, **Jobbrekommendation** och **Rekommendation av potentiell kandidat** till **på**. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Kandidatrekommendationer

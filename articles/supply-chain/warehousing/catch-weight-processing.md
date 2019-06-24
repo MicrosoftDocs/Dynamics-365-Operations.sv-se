@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536720"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617983"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Funktionen exponering
@@ -138,10 +138,6 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 - Skapa karantänorder manuellt stöds inte för produkter med faktisk/nominell vikt.
 - Manuell lagerförflyttning relaterad till arbete stöds inte för produkter med faktisk/nominell vikt.
 - Konsolidering av licensskyltar stöds inte för produkter med faktisk/nominell vikt.
-- Ändringar av lagerstatus som en del av en periodisk uppgift stöds inte för produkter med faktisk/nominell vikt.
-- Ändringar i lagerstatus som definieras av en fråga stöds inte för produkter med faktisk/nominell vikt. (Ändringar i lagerstatus för kvalitetsorder stöds inte.)
-- Lagerstatus för produkter med faktisk/nominell vikt kan inte ändras från sidan **Behållning efter plats**.
-- För produkter med faktisk/nominell vikt kan inte lagerstatus ändras som en del av lagerställeappens rörelse.
 - Inläsningen av registreringsskylt initierar lagerställe stöds inte för produkter med faktisk/nominell vikt.
 - Batchbalanseringsprocesser stöds inte för produkter med faktisk/nominell vikt.
 - Hantering av fysiskt negativt lager stöds inte för produkter med faktisk/nominell vikt.
@@ -151,7 +147,6 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 
 - Funktionen för plockning av kluster stöds inte för produkter med faktisk/nominell vikt.
 - Lagerbearbetning för plocka och packa stöds inte för produkter med faktisk/nominell vikt.
-- För produkter med faktisk/nominell vikt kan inte arbete slutföras från sidan **Arbete**.
 - Produkter med faktisk/nominell vikt som definieras i en arbetsmall kan köras automatiskt.
 - Funktionen för återföringsarbete stöds inte för produkter med faktisk/nominell vikt.
 - För produkter med faktisk/nominell vikt stöds inte manuell stationsbearbetning där arbete skapas när behållare stängs.
@@ -163,7 +158,7 @@ Alla arbetsflöden stöder inte bearbetning av produkt i faktisk/nominell vikt m
 - Kanban-funktionen stöds inte för produkter med faktisk/nominell vikt.
 - Serienummer kan inte registreras före förbrukning för produkter med faktisk/nominell vikt.
 - Funktionen för återföring av registreringsskylt stöds inte för produkter med faktisk/nominell vikt.
-- Produkter med faktisk/nominell vikt kan rapporteras som färdig registreras efter serienummer.
+- Produkter med faktisk/nominell vikt kan inte rapporteras som färdig registreras efter serienummer.
 
 ### <a name="transportation-management-processing"></a>Transporthanteringsprocesser
 

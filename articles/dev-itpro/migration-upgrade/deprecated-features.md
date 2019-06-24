@@ -3,7 +3,7 @@ title: Borttagna och inaktuella funktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning.
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1527681"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620655"
 ---
 # <a name="removed-or-deprecated-features"></a>Borttagna och inaktuella funktioner
 
@@ -38,8 +38,35 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > [!NOTE]
 > Från och med Dynamics 365 for Finance and Operations, juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
 
-> [!NOTE]
 > Detaljerad information om objekt i Finance and Operations finns i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a>Frankrike: FEC-redovisningsdataexport i XML-format
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersatt av TXT-format, **fransk FEC gransk** är tillgänglig via **redovisning** \> **periodiska uppgifter** \> **dataexport**.
+| **Ersatt av en annan funktion?**   | Ja |
+| **Produktområden som påverkas**         | Redovisning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell. Måltidsramen för att ta bort funktioner är juli 2020. |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 med plattformsuppdatering 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 med plattformsuppdatering 28 är tillgänglig för användarna som en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-navigation-bar"></a>Äldre navigeringsfält
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Justering av rubrik med andra Dynamics- och Office-produkter. Mer information finns i [uppdaterat navigeringsfält som justeras mot Office-rubriken.](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar)
+| **Ersatt av en annan funktion?**   | Från och med plattformsuppdatering 24, ett omformaterat navigeringsfält med sökfunktionen införd. |
+| **Produktområden som påverkas**         | Webbklient |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Föråldrade: det äldre navigeringsfältet kommer inte längre att vara tillgängligt från och med april 2020. Till den punkten kan kunderna återgå till det äldre navigeringsfältet via sidan **Alternativ för kundprestanda**. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 med plattformsuppdatering 26

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519100"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577805"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utöka Talent genom att använda PowerApps och Microsoft Flow- exempelscenarier
 
@@ -115,7 +115,7 @@ Kör den här PowerApps-appen som en administrationskonsol när du vill utföra 
 
 Det här PowerApps-appen använder många-till-många-relationer, så du kan använda den som en mall för andra scenarier där du behöver extrahera poster som har många-till-många-relationer.
 
-Om du vill hämta **Administrationskonsol för hantering av talangpooler**, gå till [Administrationskonsol för hantering av talangpooler](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) på Microsoft Download Center.
+Om du vill hämta **Administrationskonsol för hantering av talangpooler**, gå till [Administrationskonsol för hantering av talangpooler](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) på Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

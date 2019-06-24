@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571655"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595621"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Ställ in en extern katalog för PunchOut eProcurement
 
@@ -59,8 +59,10 @@ Det här avsnittet innehåller mer information om uppgift 4 i föregående avsni
 4. Markera leverantören för katalogen. I listan **Juridiska personer** finns det en rad för varje juridisk person där leverantören är inställd. Om du vill tillåta användare att begära produkter direkt från leverantörskatalog i vissa juridiska personer men inte i andra kan du använda knappen **Neka åtkomst** eller **Tillåt åtkomst** för varje juridisk person som du vill att katalogen ska vara eller inte vara tillgänglig för.
 5. Ange antalet dagar som en offert mottagen från en extern katalog är giltig och kan användas för inköpet från den externa leverantören i fältet **Standardutgångsdatum (dagar)**. När en offert skapas och hämtas från webbplatsen för leverantörens externa katalog är offerten giltig det aktuella systemdatumet och fortsätter vara giltig i det antal dagar du anger i det här fältet.
 6. Klicka på knappen **Lägg till** för att starta mappningen av anskaffningskategorierna till den externa katalogen. Välj sedan en kategori i listan Kategorinamn. Listan över kategorier är en överordnad uppsättning kategorier som leverantören har kopplats till för alla juridiska personer som har ställts in för leverantören.
-[!NOTE]
-Anskaffningspolicyer används för att tillåta eller begränsa åtkomst till kategorier för juridisk person för inköp och mottagande driftenhet. Punchout till en extern katalog kräver åtkomst tillåts för minst de anskaffningskategorier som är mappade till katalogen.
+
+    > [!NOTE]
+    > Anskaffningspolicyer används för att tillåta eller begränsa åtkomst till kategorier för juridisk person för inköp och mottagande driftenhet. Punchout till en extern katalog kräver åtkomst tillåts för minst de anskaffningskategorier som är mappade till katalogen.
+
 7. Ställ in cXML för begärandemeddelandet som ska skickas till leverantören. Automatiskt genererade meddelandeformat är den minsta mallen som krävs för att starta en session. Fyll i värden för taggarna.
 
 När som helst kan du ladda om den systemgenererade meddelandemallen genom att klicka på **Återställ meddelandeformat**. 
@@ -85,7 +87,7 @@ Nedan hittar du en beskrivning av de etiketter som ingår i mallen:
 
 Ett yttre element är ytterligare information, till exempel ett användarnamn som baseras på en användare som stämplar ut. Det yttre elementet anges när utstämplingen inträffar och kan skickas i meddelandet om begärandeinställningar.
 Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar. I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet **Meddelandeformatet** på sidan **Extern katalog**. Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde. Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.
-Mer information om cXML-protokoll hittar du i: http://cxml.org/
+Mer information om cXML-protokollet finns på: [cXML.org webbsida](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Retroaktivt meddelande
 Det retroaktiva meddelandet är det meddelande som tas emot från leverantören när användaren checkar ut från den externa webbplatsen och återgår till Finance and Operations. Retroaktiva meddelanden kan inte konfigureras. Meddelandena är baserade på cXML-protokolldefinitionen. Här finns all information som kan ingå i det retroaktiva meddelandet som tas emot på en rekvisitionsrad:

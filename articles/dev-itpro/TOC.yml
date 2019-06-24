@@ -227,8 +227,9 @@
             - name: X-klasser
               href: dev-ref/x-classes.md
     - name: Utbyggbarhet
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Startsida för utbyggbarhet
+          href: extensibility/extensibility-home-page.md
         - name: Introduktion och komma igång
           items:
             - name: Plan för programs utbyggbarhet
@@ -245,36 +246,38 @@
               href: extensibility/customization-overlayering-extensions.md
         - name: Nyheter
           items:
-            - name: Ändringar av utbyggbarhet juli 2017
-              href: extensibility/changes-july-2017.md
-            - name: Ändringar av utbyggbarhet i version 7.3
-              href: extensibility/extensibility-changes-73.md
-            - name: Ändringar av utbyggbarhet i version 8.0
-              href: extensibility/changes-80.md
-            - name: Ändringar av utbyggbarhet version 8.0.1
-              href: extensibility/extensibility-changes-801.md
-            - name: Ändringar av utbyggbarhet version 8.0.2
-              href: extensibility/extensibility-changes-802.md
-            - name: Ändringar av utbyggbarhet version 8.0.3
-              href: extensibility/extensibility-changes-803.md
-            - name: Ändringar av utbyggbarhet version 8.0.4
-              href: extensibility/extensibility-changes-804.md
-            - name: Ändringar av utbyggbarhet version 8.1
-              href: extensibility/extensibility-changes-81.md
-            - name: Ändringar av utbyggbarhet version 8.1.1
-              href: extensibility/extensibility-changes-811.md
-            - name: Ändringar av utbyggbarhet version 8.1.2
-              href: extensibility/extensibility-changes-812.md
-            - name: Ändringar av utbyggbarhet version 8.1.3
-              href: extensibility/extensibility-changes-813.md
-            - name: Ändringar av utbyggbarhet version 10.0
-              href: extensibility/extensibility-changes-10.md
-            - name: Ändringar av utbyggbarhet version 10.0.1
-              href: extensibility/extensibility-changes-10-1.md
-            - name: Ändringar av utbyggbarhet version 10.0.2
-              href: extensibility/extensibility-changes-10-2.md
+            - name: Nyheter och ändringar för utbyggbarhet
+              href: extensibility/extensibility-new.md
             - name: Ändringar av utbyggbarhet version 10.0.3
               href: extensibility/extensibility-changes-10-3.md
+            - name: Ändringar av utbyggbarhet version 10.0.2
+              href: extensibility/extensibility-changes-10-2.md
+            - name: Ändringar av utbyggbarhet version 10.0.1
+              href: extensibility/extensibility-changes-10-1.md
+            - name: Ändringar av utbyggbarhet version 10.0
+              href: extensibility/extensibility-changes-10.md
+            - name: Ändringar av utbyggbarhet version 8.1.3
+              href: extensibility/extensibility-changes-813.md
+            - name: Ändringar av utbyggbarhet version 8.1.2
+              href: extensibility/extensibility-changes-812.md
+            - name: Ändringar av utbyggbarhet version 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Ändringar av utbyggbarhet version 8.1
+              href: extensibility/extensibility-changes-81.md
+            - name: Ändringar av utbyggbarhet version 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Ändringar av utbyggbarhet version 8.0.3
+              href: extensibility/extensibility-changes-803.md
+            - name: Ändringar av utbyggbarhet version 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Ändringar av utbyggbarhet version 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Ändringar av utbyggbarhet i version 8.0
+              href: extensibility/changes-80.md
+            - name: Ändringar av utbyggbarhet i version 7.3
+              href: extensibility/extensibility-changes-73.md
+            - name: Ändringar av utbyggbarhet juli 2017
+              href: extensibility/changes-july-2017.md
         - name: Grunder
           items:
             - name: Inkräktande anpassningar
@@ -357,12 +360,18 @@
               href: extensibility/extensibility-attributes.md
             - name: Dela upp ändringar
               href: extensibility/breaking-changes.md
-    - name: Resultat
+    - name: Prestanda
       items:
         - name: Börja spåra med Trace parser
           href: perf-test/trace-trace-tutorial.md
-        - name: Performance SDK och fleranvändartester via Visual Studio Online
-          href: perf-test/perfsdk-tutorial.md
+        - name: Enanvändartestning med Uppgiftsinspelaren och Performance SDK
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: Fleranvändartestning med Performance SDK och en lokal testkontrollant
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: Fleranvändartestning med Performance SDK och Azure DevOps
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: Felsökningsguide för enanvändartestning eller fleranvändartestning med Performance SDK
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Performance SDK och fleranvändartestning i lokala miljöer
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Diagnostisera problem och analysera prestanda med Trace parser
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Skapa valutakursleverantörer i Finance and Operations version 8.0
           href: financial/create-exchange-rate-8.md
+    - name: 'Kvitta transaktioner med CustTrans::settleTransaction'
+      href: financial/settletransact-obsolete.md
 - name: Logistikutveckling
   items:
     - name: Guide för utveckling av Gantt-kontroll
@@ -1076,7 +1087,7 @@
       items:
         - name: Förbered för att migrera kod
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurera mappning för Azure DevOps
+        - name: Konfigurera Azure DevOps-mappning
           href: migration-upgrade/configure-vso-solution.md
         - name: Delning av modell
           href: dev-tools/model-split.md

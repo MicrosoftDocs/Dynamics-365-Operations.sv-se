@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d410fde2cd127f8d644e6a385937b6bc98d74576
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: c201311028b11121d626e93859a2b98497c047d1
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565310"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Returnera artiklar för flera kunder, order och fakturor
 
@@ -34,7 +34,7 @@ I Dynamics 365 for Finance and Operations version 10.0 kan du göra returer av f
 
 ## <a name="configure-retail-to-support-returns-across-multiple-customer-order-and-invoices"></a>Konfigurera Retail så att det går att göra returer för flera kundorder och fakturor
 
-1. Gå till **Retail-parametrar \> Kundorder**.
+1. Gå till **Butiksparametrar \> Kundorder**.
 1. Aktivera parametern **Aktivera returer för flera order**. 
 
 ## <a name="process-returns"></a>Bearbeta returer

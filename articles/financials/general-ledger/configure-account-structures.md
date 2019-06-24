@@ -3,7 +3,7 @@ title: Konfigurera kontostrukturer
 description: Det här avsnittet innehåller information om kontostrukturer och ekonomiska dimensioner.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552033"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617306"
 ---
 # <a name="configure-account-structures"></a>Konfigurera kontostrukturer
 
@@ -70,6 +70,16 @@ Avsnittet **Information om tillåtna värden** hjälper dig att skapa villkor me
 
 [![Tillåta värden](./media/account.png)](./media/account.png) 
 
+Tillåtna värden används som standard på en journal- eller redovisningspostsida när det inte finns några andra möjliga värden att välja enligt kontostrukturinställningarna.
+
+Här följer ett exempel på **Resultaträkningsstruktur**.
+
+|Huvudkonto          | Affärsenhet    |Avdelning          | Kostnadsställe    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+När du registrerar en journal och väljer ett konto i vinst- och förlustintervallet och väljer affärsenheten "002" kommer värdena 022 och 014 att vara standard i kontokontrollen. Det här beteendet kommer också att uppstå med sidan för redovisningsfördelning. 
+
 ## <a name="more-than-7-criteria-needed"></a>Mer än 7 villkor krävs
 
 Du kan fortsätta att lägga till dem på nästa rad om du har mer än 7 villkor som behövs. Du märker att när du arbetar i avsnittet **Information om tillåtna värden** att villkoret **+Lägg till ny** inte längre är aktiv efter att det sjunde villkoret har angetts. Det beror på många faktorer såsom: 
@@ -79,8 +89,6 @@ Du kan fortsätta att lägga till dem på nästa rad om du har mer än 7 villkor
  - Användbarhet  
  
 Om du vill fortsätta att lägga till ytterligare villkor klickar du på **duplicera i segmentet** och **avsnittet tillåtna värden**. Kriterierna kommer att kopieras till en ny rad. Du kan sedan skriva över eller ändra avsnittet **Information om tillåtna värden**.
-
-(LÄNK TILL VIDEO SOM SKAPAS)
 
 ## <a name="best-practices"></a>Regelverk
 När du ställer in dina kontostrukturer finns det metodtips som du kan följa. Detta är bara riktlinjer så att en holistisk diskussion om ditt företag, planering för tillväxt och underhållsplan bör betraktas som en del av denna diskussion.

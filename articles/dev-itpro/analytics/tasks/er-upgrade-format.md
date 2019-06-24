@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544459"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595450"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uppgradera ditt format genom att implementera en ny basversion för det formatet
 
@@ -36,7 +36,7 @@ För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”
 
 ## <a name="select-format-configuration-for-customization"></a>Välj formatkonfigurationen för anpassning
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-    * I det här exemplet kommer exempelföretaget Litware, Inc. (http://www.litware.com) att fungera som en konfigurationsleverantör som stöder formatkonfigurationer för elektroniska betalningar för ett angivet land.    Eexempelföretaget Proseware, Inc. (http://www.proseware.com) kommer att fungera som en konsument av formatkonfigurationen som Litware, Inc. tillhandahåller. Proseware, Inc. använder format i vissa regioner för det landet.  
+    * I det här exemplet kommer exempelföretaget Litware, Inc. (https://www.litware.com) att fungera som en konfigurationsleverantör som stöder formatkonfigurationer för elektroniska betalningar för ett angivet land.    Eexempelföretaget Proseware, Inc. (http://www.proseware.com) kommer att fungera som en konsument av formatkonfigurationen som Litware, Inc. tillhandahåller. Proseware, Inc. använder format i vissa regioner för det landet.  
 2. Klicka på Reporting configurations.
 3. Klicka på Visa filter.
 4. Använd följande filter: Ange filtervärdet "BACS (fiktivt, Storbritannien)" i fältet "Namn" med hjälp av filteroperatorn "Börjar med"

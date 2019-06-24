@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b71fde2d1b56b237dec2a08d3bd27e8ba6c35fef
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552379"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595556"
 ---
 # <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
@@ -52,7 +52,7 @@ Tre stora teman genomförs i behovsprognoser:
     -   Du kan hämta Finance and Operations experiment för efterfrågeprognosticering , ändra dessa för att uppfylla dina affärsbehov, publicera dem som en webbtjänst på Azure och använda dem för att skapa efterfrågeprognoser. Experimenten är tillgängliga för nedladdning om du har köpt en Finance and Operations-prenumeration för en produktionsplanerare som användare på företagsnivå.
     -   Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos i Finance and Operations automatiskt integreras med Finance and Operations, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Experiment från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/) kan därför inte användas lika enkelt som experimenten för efterfrågeprognosticering för Finance and Operations. Du måste modifiera koden för experimenten så att de använder programmeringsgränssnittet (API) för Finance and Operations-program.
     -   Du kan skapar dina egna experiment i Microsoft Azure Machine Learning Studio, publicerar dem som tjänster på Azure, och använda dem för att skapa prognoser.
-    -   Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. Mer information om prissättning för Machine Learning finns på <http://aka.ms/machine-learning-price-info>.
+    -   Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. För mer information om maskinen lärande prissättning, se [Machine Learning Studio prissättning](https://aka.ms/machine-learning-price-info).
 -   **Prognostiserad minskning vid någon frikoppling** – Efterfrågeprognosticering i Finance and Operations bygger på denna funktion, som låter dig prognosticera såväl beroende som oberoende behov hos någon frikoppling.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Grundflöde i behovsprognoser

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538966"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595649"
 ---
 # <a name="finance-and-operations-help-system"></a>Hjälpsystem för Finance and Operations
 
@@ -192,7 +192,7 @@ I följande register visas våra webbplatser. Webbplatser som har en asterisk (\
 | [Docs.microsoft.com](/dynamics365/)                                                            | Värdar eller länkar till all produktdokumentation för Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Webbplatsen för Microsofts kostnadsfria eLearning-kurser. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Ger en molnbaserad samarbetsarbetsyta som kunder och deras partners kan använda för att hantera Dynamics 365 for Finance and Operations-projekt från förförsäljning till genomförande och åtgärder. Den här webbplatsen är användbar för alla implementeringsfaser. |
-| [Supportblogg](http://aka.ms/AXSupportBlog)                                                    | Ger tips som har lagts in av Dynamics 365 for Finance and Operations supportteam. |
+| [Supportblogg](https://aka.ms/AXSupportBlog)                                                    | Ger tips som har lagts in av Dynamics 365 for Finance and Operations supportteam. |
 | [Docs.microsoft.com/tidigare versioner](https://docs.microsoft.com/previous-versions/dynamics/) | Värd för innehåll från tidigare versioner. |
 | [Dynamics Community](https://community.dynamics.com/)                                          | Värd för bloggar, forum och videor. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Information om utvärdering och försäljning. |

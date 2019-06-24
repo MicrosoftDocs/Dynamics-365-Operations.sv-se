@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a0a6a060a1b4a4d5a80c797f61b212a828d2f04
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561397"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurera och behandla ett utbyte för en returorder
 
@@ -37,7 +37,7 @@ Denna funktion har dock lagts till så att det ska gå att byta ut produkter på
 
 Gör så här för att konfigurera systemet så att de stöder utbyten med returorder.
 
-1. Öppna **Retail \> Administrationsinställning \> Parametrar \> Retail-parametrar**. Ge alternativet **Behandla returorder som försäljningsorder** på snabbfliken **Kundorder** värdet **Ja**.
+1. Öppna **Retail \> Administrationsinställning \> Parametrar \> Butiksparametrar**. Ge alternativet **Behandla returorder som försäljningsorder** på snabbfliken **Kundorder** värdet **Ja**.
 2. Kör jobbet **Globalt konfigurationsfördelningsschema** (**1110**).
 
 ## <a name="make-an-exchange"></a>Gör ett byte

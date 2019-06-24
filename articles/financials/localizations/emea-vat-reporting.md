@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3496e0dec51daa640ff80355b9bcc63f8ba7ea2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5c5cd61c45eb7cbc6f040f054a99d9a54e1ee854
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513104"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569574"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 

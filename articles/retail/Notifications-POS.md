@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530280"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577990"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i kassan (POS)
 
@@ -68,7 +68,7 @@ Följande bild visar inställningarna för levande innehåll i knappsatsen för 
 
 ![Inställningar för levande innehåll i knappsatsen för designern](./media/ButtonGridDesigner.png "Inställningar för levande innehåll i knappsatsen för designern")
 
-Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rätt skärmlayout håller på att uppdateras. Om du vill ta reda på vilken skärmlayout som används i POS väljer du ikonen **Inställningar** i övre högra hörnet och noterar **Skärmlayout-ID** och **Layoutupplösning.** Nu använder du Edge-webbläsaren, gå till sidan **skärmlayout** i Dynamics 365 for Finance and Operations, leta reda på **bildskärms-ID** och **Layoutupplösning** som identifieras ovan och markera kryssrutan **Aktivera live-innehåll**. Gå till **Butik > Butikens IT > Distributionsschema** och kör 1090-jobbet (journaler) för att synkronisera layoutändringar. 
+Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rätt skärmlayout håller på att uppdateras. Om du vill ta reda på vilken skärmlayout som används i POS väljer du ikonen **Inställningar** i övre högra hörnet och noterar **Skärmlayout-ID** och **Layoutupplösning.** Nu använder du Edge-webbläsaren, gå till sidan **skärmlayout** i Dynamics 365 for Finance and Operations, leta reda på **bildskärms-ID** och **Layoutupplösning** som identifieras ovan och markera kryssrutan **Aktivera live-innehåll**. Gå **Butik \> Butikens IT \> Distributionsschema** och kör 1090-jobbet (journaler) för att synkronisera layoutändringar.
 
 ![Hitta den skärmlayout som används av kassan](./media/Choose_screen_layout.png "Hitta skärmlayouten ")
 

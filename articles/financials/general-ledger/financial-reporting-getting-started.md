@@ -3,7 +3,7 @@ title: Ekonomisk rapportering
 description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/26/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550315"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594970"
 ---
 # <a name="financial-reporting"></a>Ekonomisk rapportering
 
@@ -64,7 +64,7 @@ Funktionerna för ekonomisk rapportering är tillgängliga för användare som h
 
 | Privilegieetikett                       | Beskrivning                                                             | AOT-namn                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Underhåll säkerhet för ekonomiska rapporter | Underhåll säkerhet för ekonomiska rapporter och utför administrativa uppgifter. | FinancialReportsSecurityMaintain |
+| Underhåll säkerhet för ekonomiska rapporter | Underhåll säkerhet för ekonomiska rapporter och utför administrativa uppgifter. | FinancialReportsSecuritySystemMaintain |
 | Underhåll ekonomiska rapporter            | Utforma och underhåll ekonomiska rapporter .                                  | FinancialReportsMaintainReports  |
 | Skapa ekonomiska rapporter            | Skapa och uppdatera ekonomiska rapporter.                                 | FinancialReportsGenerateReports  |
 | Visa ekonomiska rapporter                | Visa ekonomiska rapporter.                                                 | FinancialReportsView             |

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502740"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595349"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -120,7 +120,7 @@ Följande register beskriver kolumnbegränsningskoderna.
 | ADJ                     | Begränsa beloppen i kolumnen till periodjusteringsbelopp, om dessa belopp är tillgängliga. |
 | XAD                     | Begränsa beloppen i kolumnen så att periodjusteringsbelopp exkluderas. |
 | PT                      | Begränsa beloppen i kolumnen, så att endast bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga. |
-| UPT                     | Begränsa beloppen i kolumnen, så att endast ej bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga.<blockquote>[!NOTE] Alla dataproviders har inte stöd för icke bokförda transaktioner. Mer information finns i <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsguide</a> för ditt Microsoft Dynamics ERP-system.</blockquote> |
+| UPT                     | Begränsa beloppen i kolumnen, så att endast ej bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga.<p><strong>Obs!</strong> Alla dataleverantörer stödjer inte ej bokförda transaktioner. Mer information finns i <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsguide</a> för ditt Microsoft Dynamics ERP-system.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begränsa en kolumn i en rapportenhet
 
@@ -310,7 +310,7 @@ Cellen **Utskriftskontroll** kan innehålla koder som justerar visningen eller u
 | Skriv ut utskriftskontrollkod | Översättning                                     | Beskrivning |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Icke utskriftsbara                                     | Exkludera beloppen i denna kolumn från rapporten som skrivs ut och från beräkningar. Mer information finns i kolumnen direkt i beräkningsformeln om du vill inkludera icke utskriftsbara kolumner i beräkningen. Exempelvis inkluderas den icke utskriftsbara kolumnen C i följande formel: **B+C+D**. Exempelvis inkluderas den icke utskriftsbara kolumnen C inte i följande formel: **B:D**. |
-| XCR                | Ändra tecknet om vanligt saldo på raden är kredit | Skapa en budget eller jämförande rapport där eventuella ofördelaktiga avvikelser (till exempel intäktbrist eller utgiftsöverskridning) alltid är negativ. Tillämpa den här koden till en **CALC**-kolumn om du vill återställa tecknet för kolumnbeloppet, om det vanliga saldot för en viss rad är en kredit (som identifieras av ett **C** i kolumnen **Normalt saldo** i raddefinitionen.)<blockquote>[!NOTE] För <strong>TOT</strong> rader och </strong>CAL</strong>-rader som vanligtvis har ett kreditsaldo ska du se till att ange ett <strong>C</strong> i kolumnen <strong>Normalt saldo</strong> i raddefinitionen.</blockquote> |
+| XCR                | Ändra tecknet om vanligt saldo på raden är kredit | Skapa en budget eller jämförande rapport där eventuella ofördelaktiga avvikelser (till exempel intäktbrist eller utgiftsöverskridning) alltid är negativ. Tillämpa den här koden till en **CALC**-kolumn om du vill återställa tecknet för kolumnbeloppet, om det vanliga saldot för en viss rad är en kredit (som identifieras av ett **C** i kolumnen **Normalt saldo** i raddefinitionen.)<p><strong>Obs!</strong> För <strong>TOT</strong>-rader och </strong>CAL</strong>-rader som vanligtvis har ett kreditsaldo ska du se till att ange ett <strong>C</strong> i kolumnen <strong>Normalt saldo</strong> i raddefinitionen.</p> |
 | X0                 | Undertryck kolumnen om alla är noll eller tomma          | Exkludera en **FD**-kolumn från rapporten om alla celler i den kolumnen är antingen tomma eller innehåller nollor. |
 | SR                 | Undertryck avrundning                               | Förhindra beloppen i denna kolumn från att avrundas. |
 | XR                 | Undertryck ackumulerade                                 | Undertryck ackumulerade. Om rapporten använder ett rapportträd, är beloppen i denna kolumn inte ackumulerade till överordnade noder. |
@@ -546,8 +546,8 @@ Följande tabell visar rapportresultaten som kan uppstå för olika kombinatione
 | Cellen Valutavisning                        | Cellen Valutafilter | Rapportresutat |
 |----------------------------------------------|----------------------|---------------|
 | Transaktionsvaluta                 | **YEN**              | **6 000 Y** – Resultatet visas endast transaktioner som angavs i JPY. |
-| Redovisningsvaluta från redovisningen | **YEN**              |**60 $** – Resultatet visar endast transaktioner som angavs i JPY, och visar de transaktionerna i USD.<blockquote>[!NOTE] konverteringskursen är ungefär 100 JPY per USD.</blockquote> |
-| Redovisningsvaluta från redovisningen | Tom                | **2 310 $** - Resultatet visar alla data i redovisningsvalutan som anges i redovisningen.<blockquote>[!NOTE] Detta belopp är summan av alla transaktioner i redovisningsvaluta.</blockquote> |
+| Redovisningsvaluta från redovisningen | **YEN**              |**60 $** – Resultatet visar endast transaktioner som angavs i JPY, och visar de transaktionerna i USD.<p><strong>Obs!</strong> konverteringskursen är ungefär 100 JPY per USD.</p> |
+| Redovisningsvaluta från redovisningen | Tom                | **2 310 $** - Resultatet visar alla data i redovisningsvalutan som anges i redovisningen.<p><strong>Obs!</strong> Detta belopp är summan av alla transaktioner i redovisningsvaluta.</p> |
 | Transaktionsvaluta                 | Tom                | **2 250 $** - Resultatet visar alla belopp i den valuta som transaktionen genomfördes i. Detta innebär att summan lägger ihop belopp från olika valutor. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Beräkningskolumn i en kolumndefinition
@@ -565,7 +565,7 @@ Ange kolumnbokstäverna i uträkningsordningen och använd sedan en operator som
 |----------|---------------------|-------------|
 | +        | A+C                 | Lägg till beloppet i Kolumn A till beloppet i Kolumn C. |
 | :        | A:C A:C-D           | Lägg till ett intervall med på varandra följande kolumner. Till exempel formeln **A:C** adderar summorna av kolumner A till C, och formeln **A:C-D** adderar summorna av kolumner A till C och subtraherar sedan beloppet i kolumn D. |
-| -        | A-C                 | Subtrahera beloppet i kolumn A från beloppet i kolumn C.<blockquote>[!NOTE] Du kan också använda minustecknet (-) för att kasta om tecknen i en kolumn. Använd t.ex. <strong>-A+B</strong> om du vill addera det omvända av beloppet i kolumn A till beloppet i kolumn B.</blockquote> |
+| -        | A-C                 | Subtrahera beloppet i kolumn A från beloppet i kolumn C.<p><strong>Obs!</strong> Du kan också använda minustecknet (-) om du vill återställa tecknen i en kolumn. Använd t.ex. <strong>-A+B</strong> om du vill addera det omvända av beloppet i kolumn A till beloppet i kolumn B.</p> |
 | \*       | A\*C                | Multilicera beloppet i kolumn A med beloppet i kolumn C. |
 | /        | A/C                 | Dividera beloppet i kolumn A med beloppet i kolumn C. |
 

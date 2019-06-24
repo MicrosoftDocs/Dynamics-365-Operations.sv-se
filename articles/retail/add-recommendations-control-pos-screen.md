@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 213b47422a5e31c2cfc2d173b8c7d9efdecc7568
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1573382"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606859"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter
 
@@ -40,13 +40,13 @@ Du kan visa produktrekommendationer på din kassaenhet när du använder Microso
 ## <a name="open-layout-designer"></a>Öppna layoutdesignern
 
 1. Navigera till **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Skärmlayout**.
-2. Med snabbfiltret kan du snabbt hitta den skärm som du vill lägga till kontrollen i. Filtrera till exempel fältet **ID för skärmlayout** med hjälp av värdet "F2CP16:9M".
-3. Hitta och markera önskad post i listan. Markera exempelvis "Namn: F2CP16:9M Skärmlayout-ID: F2CP16:9M".
+2. Med snabbfiltret kan du snabbt hitta den skärm som du vill lägga till kontrollen i. Filtrera till exempel fältet **ID för skärmlayout** med hjälp av värdet **F2CP16:9M**.
+3. Hitta och markera önskad post i listan. Markera exempelvis **Namn: F2CP16:9M Skärmlayout-ID: F2CP16:9M**.
 4. Klicka på **Layoutdesigner**.
 5. Följ instruktionerna för att starta layoutdesignern. När du uppmanas ange dina autentiseringsuppgifter, ange då samma autentiseringsuppgifter som användes när layoutdesignern startades från sidan **Skärmlayouter**.
 6. När du loggar in visas en sida som liknar den nedanstående. Layouten är olika beroende på de anpassningar som gjorts för din butik.
 
-    [![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Layoutdesigner](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Välj ett visningsalternativ
 
@@ -59,11 +59,11 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 1. Minska höjden på detaljområdet för transaktionsrader så att denna är samma höjd som hos kundpanelen till vänster.
 
-    [![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Höjden på detaljområdet för transaktionsrader har reducerats](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. Från menyn till vänster, dra och släpp rekommendationskontrollen mellan detaljområdet för transaktionsrad och knappsatsen längst ned i mitten längst på transaktionsskärmen. Ändra storlek på kontrollen så att den passar in i utrymmet.
 
-    [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Rekommendationskontroll som läggs till i layouten](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Klick på **X** för att spara och stänga layoutdesignern.
 4. I Dynamics 365 for Retail, gå till **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
@@ -75,13 +75,13 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 1. Högerklicka i det tomma utrymmet under den sista fliken på knappsatsen till höger på sidan.
 2. Klicka på **anpassa**.
 
-    [![bild-5](./media/pic-5.png)](./media/pic-5.png)
+    [![Anpassning - dialogrutan flikkontroll](./media/pic-5.png)](./media/pic-5.png)
 
 3. Klicka på **Ny flik**.
 4. Hitta den nya fliken som du just skapade. Du kan behöva rulla nedåt.
 5. I listrutan **Innehåll** väljer du **Rekommenderade produkter**.
 
-    [![bild-6](./media/pic-6.png)](./media/pic-6.png)
+    [![Välja rekommenderade produkter i fältet Innehåll](./media/pic-6.png)](./media/pic-6.png)
 
 6. I fältet **Etikett** anger du ett namn för rekommendationsfliken. Skriv till exempel ”Rekommenderade produkter”.
 7. I fältet **Bild** väljer du den bild du vill visa i fliken.
