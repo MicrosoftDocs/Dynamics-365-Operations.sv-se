@@ -3,7 +3,7 @@ title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 51c4cbbba36ed4c93fbbba907031023060d51495
+ms.sourcegitcommit: 0273905ceb371ba17d3a37d690e1f568aa968b4f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620024"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625021"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -169,6 +169,6 @@ Användare med administratörsbehörighet kan även hantera anpassningsalternati
 
 När du anpassar inställningarna för lagerdimensionerna på en sida, beakta inställningarna som har skapats med hjälp av alternativet **Visa dimension**. Du använder till exempel anpassning om du vill dölja en kolumn för batchnummerdimensionen men kolumnen visas nästa gång som sidan öppnas. Detta händer på grund av att inställningarna för **Dimensionsvisning** kontrollerar de lagerdimensionskolumner som visas.
 
-Inställningarna för **Dimensionsvisning** tillämpas på alla sidor och åsidosätter eventuella anpassade inställningar av lagerdimensionsfälten på enskilda sidor.
+Inställningarna för **Dimensionsvisning** tillämpas på alla sidor och åsidosätter eventuella anpassade inställningar av lagerdimensionsfälten på varje enskild sida.
 
-Därför i det föregående exemplet om du inte vill att kolumnen för batchnummerlagerdimensionen ska visas, måste du avmarkera dimensionen som en del av alternativet **visa mått** för tabellen. Slutligen används ändringen inte bara på en specifik sida utan på alla sidor.
+Därför i det föregående exemplet om du inte vill att kolumnen för batchnummerlagerdimensionen ska visas på en sida, måste du avmarkera dimensionen som en del av alternativet **visa mått** för den sidan.

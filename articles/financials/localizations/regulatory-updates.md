@@ -3,7 +3,7 @@ title: Regeluppdateringar
 description: Det här avsnittet innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
-ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
+ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1593353"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624321"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -66,6 +66,13 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      Väntande            |   10.0.3      | Polen     |   SAF fakturor (JPK_FA) v. 2 från 1Jul2019  |
 |      Väntande            |   10.0.3      | Brasilien   |   ICMS för skattedokument aktivera tabell 5.2   |
 |      Väntande            |   10.0.3      | Brasilien    |   NF-e dekret 54.308/18 (RS)   |
+  | Väntande            |   10.0.4      | Brasilien    |   Inkommande skattedokument 66   |
+   | Väntande            |   10.0.4      | Brasilien    |   NF-e och NFC-e - Lösning 13/2019 och förordning SUCIEF 55/2019-RJ - nya villkor för att undanta kodutdata i NF-e.   |
+   | Väntande            |   10.0.4      | Indien   |   Visning av "Platsen för leverans" och "Status" i GST-momsfakturan  |
+   | Väntande            |   10.0.4      | Mexiko   |  DIOT-deklaration från tredje part – ändringar i layout 2019   |
+   | Väntande            |   10.0.4      | Brasilien    |   NF-e ICMS-ST - förordning CAT 42/18 för SP-status CAT 42/18
+   | Väntande            |   10.0.4      | Brasilien    |   NF-e dekret 54.308/18 - RS NF   |
+   
 
 
 ## <a name="additional-resources"></a>Ytterligare resurser

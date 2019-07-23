@@ -3,7 +3,7 @@ title: Grovplanering
 description: Det här avsnittet innehåller information om grovplanering. Du kan använda grovplaneringen för att ange en allmän uppskattning av produktionsprocessen över en viss tid.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560279"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691472"
 ---
 # <a name="operations-scheduling"></a>Grovplanering
 
@@ -67,6 +67,9 @@ Grovplaneringens tidsplan ligger även till grund för huvudplaneringen och avg�
 -   **Eftersläpande produktion** – Artiklar som är planerade, frisläppta eller startade
 -   **Materialtillgänglighet** – Lager, delproduktion och leverantörer
 -   **Tillgänglig kapacitet** – Resurser som krävs för produktionen
+
+> [!NOTE]
+> Om du använder flertrådad huvudplanering och grovplanering kommer begränsad kapacitet inte att beaktas. 
 
 ## <a name="cancellations"></a>Annulleringar
 När du kör grovplanering kan du avbryta specifika delar av rutten. Dessa inkluderar kötid, ställtid, processtid, överlappningstid och transporttider.

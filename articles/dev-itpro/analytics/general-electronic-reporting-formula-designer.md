@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592670"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625882"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -651,6 +651,11 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <td>NUMBERFORMAT (number, format)</td>
 <td>Returnera en sträng som representerar det specificerade numret i det angivna formatet. (Information om format som stöds finns i <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> och <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">anpassade</a>.) Den kontext som denna funktion körs i avgör den kultur som används för att formatera tal.</td>
 <td>För kulturen EN-US returnerar <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returnerar <strong>&quot;10&quot;</strong>.</td>
+</tr>
+<tr>
+<td>NUMBERFORMAT (number, format, kultur)</td>
+<td>Returnera en sträng för det definierade nummer enligt angivet format och given kultur. (Om du vill ha mer information om format som stöds, se <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">Standard</a> och <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">Anpassat</a>.)</td>
+<td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> returnerar <strong>3,33</strong> medan <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> returnerar <strong>3.33</strong>.</td>
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (nummer, språk, valuta, skriv ut flagga för valutanamn, decimaler)</td>

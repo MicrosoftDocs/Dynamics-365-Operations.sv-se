@@ -3,7 +3,7 @@ title: Spåringskörning av ER-format för att hjälpa dig att felsöka prestand
 description: Det här avsnittet innehåller information om hur du använder funktionen för prestandaspårning i elektronisk rapportering (ER) för att felsöka prestandaproblem.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576556"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703885"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spåra körning av ER-format för att felsöka prestanda problem
 
@@ -346,3 +346,29 @@ Om du använder någon av dessa versioner av Finance and Operations kan du analy
 Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avsnittet om du vill generera en ny prestandaspårning.
 
 Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning.
+
+![Spårningsinformation för det körda återställningsformatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Använd externa verktyg för att granska en körningsspårning som omfattar databasfrågor
+
+På grund av de förbättringar som har gjorts i ER-ramverk innehåller den prestandaspårning som genereras i PerfView-format fler detaljer om ER-formatkörning. I Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (juli 2019) kan den här spårningen även innehålla information om utförda SQL-frågor till programdatabasen.
+
+### <a name="configure-user-parameters"></a>Konfigurera användarparametrar
+
+1. I Finance and Operations, gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
+2. På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** i gruppen **Avancerad inställningar** markerar du **Använd parametrar**.
+3. I dialogrutan **Användarparametrar** i avsnittet **körningsspårning** ange följande parametrar:
+
+    - I fältet **körningsspårningsformat**, välj **PerfView XML**.
+    - Ställ in alternativet **Samla in frågestatistik** till **Ja**.
+    - Ställ in alternativet **Spårningsfråga** till **Ja**.
+
+    ![Dialogrutan användarparametrar i Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>Kör ER-format
+
+Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avsnittet om du vill generera en ny prestandaspårning.
+
+Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning. I den här spårningen finns nu information om åtkomst till SQL-databasen under körningen av ER-formatet.
+
+![Spårningsinformation för det körda återställningsformatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

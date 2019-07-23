@@ -3,7 +3,7 @@ title: Översikt över leverantörsfakturor
 description: Det här ämnet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618283"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625089"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
@@ -91,13 +91,6 @@ Du kan använda sidan **Återställa leverantörsfakturor** om du vill återstä
 
 Du kan endast komma åt sidan **återställa leverantörsfakturor** om säkerhetsprogrambehörighet och privilegium **återställa leverantörsfakturor som används** har tilldelats till dig. Dessutom måste parametern **Tillåt återställning av leverantörsfaktura** på sidan **Parametrar för leverantörsreskontra** måste vara aktiverad.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Återställa arbetsflödesstatus för leverantörsfakturor från Oåterkalleligt till Utkast
-
-En arbetsflödesinstans som har stoppats på grund av ett oåterkalleligt fel får arbetsflödesstatusen **oåterkalleligt**. När statusen för ett arbetsflöde för leverantörsfakturor är **Oåterkalleligt** kan du återställa den till **utkast**. Du kan sedan redigera leverantörsfakturan. Den här funktionen är tillgänglig om paramtern **Återställa utkaststatus för arbetsflöde för leverantörsfaktura** på sidan **Funktionshantering** är aktiverad.
-
-På sidan **Återställ arbetsflödesstatus för leverantörsfakturor** för leverantörsfakturor kan du återställa arbetsflödesstatusen till **utkast**. Du kan öppna den här sidan från navigeringen **Periodisk uppgift**. På sidan visas alla leverantörsfakturor som har en arbetsflödesstatus **oåterkallelig** i den aktuella juridiska personen. Den visar även den användare som har skickat varje faktura till arbetsflödet och fakturaidentifieraren och som innehåller en länk till arbetsflödeshistoriken. Om du vill återställa arbetsflödesstatus till **Utkast** markerar du en eller flera fakturor och väljer **uppdatera till utkast**. När arbetsflödesstatusen har återställts till **Utkast** blir den tillgänglig för redigering på sidan **leverantörsfaktura**.
-
-Du kan bara komma åt sidan **Återställ arbetsflödesstatus för leverantörsfakturor** för leverantörsfakturor om säkerhetsprogrambehörigheten **Underhåll status för arbetsflöde för leverantörsfaktura** och privilegiet **Återställ status för arbetsflöde för leverantörsfaktura** tilldelats dig.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

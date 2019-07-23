@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577939"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624822"
 ---
 # <a name="retail-peripherals"></a>Butikskringutrustning
 
@@ -156,13 +156,13 @@ Enhetstypen **Windows** används endast för skrivare. När en Windows-skrivare 
 
 ### <a name="network"></a>Nätverk
 
-Nätverkets adresserbara kassalådor, kvittoskrivare och betalningsterminaler kan användas i ett nätverk direkt antingen via maskinvarustationen Interprocess Communications (IPC) som ingår i Modern POS för Windows-program eller maskinvarustationen IIS för andra Modern POS-klienter.
+Nätverkets adresserbara kassalådor, kvittoskrivare och betalningsterminaler kan användas i ett nätverk direkt antingen via maskinvarustationen Interprocess Communications (IPC) som ingår i Modern POS för Windows- och Modern POS för Android-program eller maskinvarustationen IIS för andra Modern POS-klienter.
 
 ## <a name="hardware-station-deployment-options"></a>Distributionsalternativ för maskinvarustation
 
 ### <a name="ipc-built-in"></a>IPC (inbyggd)
 
-Maskinvarustationen Interprocess Communications (IPC) är inbyggd i Modern POS för Windows-programmet. Om du vill använda maskinvarustationen IPC tilldelar du en maskinvaruprofil till en kassa som kommer att använda Modern POS för Windows-program. Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassan ska användas i. När du startar Modern POS kommer maskinvarustationen IPC att vara aktiv och den kringutrustning för kassa som har konfigurerats är klar att användas. Om du tillfälligt inte kräver lokal maskinvara av någon anledning använder du åtgärden **hantera maskinvarustationer** för att inaktivera maskinvarustationkapaciteterna. Modern POS kan också använda IPC maskinvarustation till att kommunicera direkt med kringutrustning i nätverket.
+Maskinvarustationen Interprocess Communications (IPC) är inbyggd i Modern POS för Windows- and Modern POS för Android-programmet. Om du vill använda maskinvarustationen IPC tilldelar du en maskinvaruprofil till en kassa som kommer att använda Modern POS för Windows-program. Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassan ska användas i. När du startar Modern POS kommer maskinvarustationen IPC att vara aktiv och den kringutrustning för kassa som har konfigurerats är klar att användas. Om du tillfälligt inte kräver lokal maskinvara av någon anledning använder du åtgärden **hantera maskinvarustationer** för att inaktivera maskinvarustationkapaciteterna. Modern POS kan också använda IPC maskinvarustation till att kommunicera direkt med kringutrustning i nätverket.
 
 ### <a name="iis"></a>IIS
 
@@ -190,7 +190,11 @@ Nätverketsbeteckningen för enheter i maskinvaruprofilen kan kassalådor, kvitt
 
 Du kan ange IP-adresser för nätverkets kringutrustning på två ställen. Om Modern POS Windows-klienten använder en uppsättning kringutrustning i nätverket, bör du ange IP-adresserna för dessa enheter med hjälp av alternativet **IP-konfigurationen för** i åtgärdsfönstret för själva journalen. När det gäller enheter som ska delas mellan kassor, kan en maskinvaruprofil som har tilldelats nätverksenheter mappas direkt till en delad maskinvarustation. Markera den maskinvarustation om du vill tilldela IP-adresser på sidan **Butiker** och använd sedan alternativet **IP-konfiguration** i avsnittet **maskinvarustationer** för att ange alla nätverksenheter som är tilldelade till maskinvarustationen. För maskinvarustationer som endast har nätverksenheter har du inte distribuera själva maskinvarustationen. Då kräver maskinvarustationen endast för att konceptuellt gruppera nätverket adresserbara enheter enligt deras placering i butiken.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS för iOS och Modern POS för Android
+#### <a name="modern-pos-for-android"></a>Modern POS för Android
+
+Fr.o.m. Dynamics 365 for Retail version 8.1.3 innehåller Modern POS Android-program innehåller en inbyggd IPC-maskinvarustation. Maskinvarustationen stöder kommunikation med nätverksskrivare och betalningsanslutningar. För mer information, besök [Artikeln appen Hybrid för Android dokument](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS och Modern POS för iOS
 
 Logiken som driver fysiskt anslutna och nätverkets adresserbara kringutrustning finns på maskinvarustationen. För alla POS-klienter utom Modern POS för Windows, måste en station för IIS maskinvarustationer måste därför distribueras och aktivera kassan för att kommunicera med kringutrustning, oavsett om denna kringutrustning är fysiskt ansluten till en maskinvarustation eller beskrivas i nätverket.
 
@@ -222,9 +226,9 @@ I följande tabell visas topologier och distributionsscenarier som stöds.
 | Kund      | IPC maskinvarustation | IIS maskinvarustation |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Nr                   | Ja                  |
-| Android     | Nr                   | Ja                  |
-| iOS         | Nr                   | Ja                  |
+| Cloud POS   | Nej                   | Ja                  |
+| Android     | Ja                  | Ja                  |
+| iOS         | Nej                   | Ja                  |
 
 ### <a name="network-peripherals"></a>Nätverkskringutrustning
 
@@ -233,9 +237,9 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 | Kund      | IPC maskinvarustation | IIS maskinvarustation |
 |-------------|----------------------|----------------------|
 | Windows-app | Ja                  | Ja                  |
-| Cloud POS   | Nr                   | Ja                  |
-| Android     | Nr                   | Ja                  |
-| iOS         | Nr                   | Ja                  |
+| Cloud POS   | Nej                   | Ja                  |
+| Android     | Ja                  | Ja                  |
+| iOS         | Nej                   | Ja                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Enhetstyper som stöds efter maskinvarustationstyp
 
@@ -661,14 +665,15 @@ Följande kringutrustning som har testats med IPC maskinvarustation som ingår i
 
 #### <a name="printer"></a>Skrivare
 
-| Tillverkare | Modell    | Gränssnitt | Kommentarer                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Stjärna         | TSP650II | OPOS      |                         |
-| Stjärna         | TSP650II | Anpassa    | Ansluten via nätverket   |
-| Stjärna         | mPOP     | OPOS      | Ansluten via Bluetooth |
-| HP           | F7M67AA  | OPOS      | Strömförsörjd USB             |
+| Tillverkare | Modell      | Gränssnitt | Kommentarer                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS – Skriv ut | Anpassat    | Ansluten via nätverket   |
+| Stjärna         | TSP650II   | OPOS      |                         |
+| Stjärna         | TSP650II   | Anpassat    | Ansluten via nätverket   |
+| Stjärna         | mPOP       | OPOS      | Ansluten via Bluetooth |
+| HP           | F7M67AA    | OPOS      | Strömförsörjd USB             |
 
 #### <a name="bar-code-scanner"></a>Streckkodsläsare
 
@@ -688,11 +693,12 @@ Följande kringutrustning som har testats med IPC maskinvarustation som ingår i
 
 #### <a name="payment-terminal"></a>Betalterminal 
 
-| Tillverkare | Modell | Gränssnitt | Kommentarer                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Anpassa    | Anpassning av betalningskopplingen krävs                                |
-| VeriFone     | MX925 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
-| VeriFone     | MX915 | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
+| Tillverkare | Modell        | Gränssnitt | Kommentarer                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Anpassa    | Anpassning av betalningskopplingen krävs                                |
+| VeriFone     | MX925        | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
+| VeriFone     | MX915        | Anpassa    | Kräver anpassning av betalningsanslutning; ansluten via nätverket och USB |
+| VeriFone     | Se kommentarer | Adyen     | Adyen-anslutaren stöder alla enheter som anges [här](https://www.adyen.com/pos-payments/terminals) |
 
 #### <a name="cash-drawer"></a>Kassalåda
 

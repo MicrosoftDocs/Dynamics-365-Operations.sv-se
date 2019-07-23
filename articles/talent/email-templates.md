@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b88ba4386dbf3513d75990acca1c07fa6f0dc9b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519137"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729736"
 ---
 # <a name="email-templates"></a>E-postmallar
 [!include[banner](../includes/banner.md)]
 
-Genom att använda biblioteket för e-postmallar kan administratörer skapa ett enhetligt tema och profilering för alla e-postmeddelanden som skickas via Dynamics 365 for Talent: Attract. Administratörer kan också anordna en samling innehåll för e-postmallar som andra användare kan använda. Anställningsteamet kan använda mallarna i arbetsflödet för att effektivare skicka e-post. Vissa e-postmeddelanden i Attract har konfigurerats att skickas automatiskt och administratören kan använda biblioteket för e-postmallar för att anpassa innehållet för dessa e-postmeddelanden.
+Genom att använda biblioteket för e-postmallar kan administratörer skapa ett enhetligt tema och profilering för alla e-postmeddelanden som skickas via Microsoft Dynamics 365 for Talent: Attract eller erbjudande. Administratörer kan också anordna en samling innehåll för e-postmallar som andra användare kan använda. Anställningsteamet kan använda mallarna i arbetsflödet för att effektivare skicka e-post. Vissa e-postmeddelanden har konfigurerats att skickas automatiskt och administratören kan använda biblioteket för e-postmallar för att anpassa innehållet för dessa e-postmeddelanden.
 
 > [!NOTE]
 > Organisationen måste ha tillägget för omfattande anställning om du vill använda e-postmallar.
@@ -37,7 +37,7 @@ Genom att använda biblioteket för e-postmallar kan administratörer skapa ett 
 
 För att skapa konsekvent profilering för alla e-postmeddelanden måste administratören först ställa in globalt sidhuvud och sidfot för alla e-postmallar. I Administrationscenter på fliken **Inställningar för e-postmall** i avsnittet **rubrik** kan administratör överföra en bild som ska användas som sidhuvud eller banderoll för alla e-postmeddelanden. Bilden kanske är företagets logotyp, ett brevhuvud eller någon annan representativ bild. Vi rekommenderar att bredden är mellan 25 och 800 pixlar och att höjden är mellan 25 och 150 pixlar, eftersom dessa mått är optimala för de flesta e-postklienter, till exempel Microsoft Outlook. Bilden måste vara en JPEG-, JPG-, PNG- eller SVG-fil och filen får inte vara mindre än 1 megabyte (MB). När en bild har överförts genereras och visas en förhandsgranskning av sidhuvudet. Om sidhuvudets bild måste tas bort eller ersättas, kan administratören använda alternativet **Ta bort** ovanför förhandsgranskningen.
 
-I avsnittet **sidfot** kan administratören ge länkar till företagets sekretesspolicy för kommunikation och till de villkor som gäller. De här länkarna ingår i en sidfot som genereras automatiskt. Därefter visas en förhandsgranskning av den här sidfoten.
+I avsnittet **sidfot** kan administratören ge länkar till företagets sekretesspolicy för kommunikation och till de villkor som gäller. De här länkarna ingår i en sidfot som genereras automatiskt. Därefter visas en förhandsgranskning av den här sidfoten. Administratören kan också välja ett visst språk som e-postsidfötter ska skickas som en del av alla e-postmeddelanden. Samma språkkonfiguration kommer också att användas för att kombinera intervjuöversiktstabellen. 
 
 Kom ihåg att spara dina ändringar innan du stänger administratörscentret.
 
@@ -46,7 +46,7 @@ Kom ihåg att spara dina ändringar innan du stänger administratörscentret.
 
 ## <a name="email-template-library"></a>Bibliotek för e-postmallar 
 
-När den globala mallkonfigurationer är inställd kan administratör börja skapa och anordna mallar för e-postmeddelanden som skickas från Attract. Biblioteket för e-postmallar är endast tillgänglig för administratörer. För att öppna biblioteket på den huvudsakliga navigeringsmenyn, välj fliken **e-postmallar**. Biblioteket är kategoriserad efter olika aktiviteter i Attract e-post ska skickas för, t.ex tidsplanering, bedömning och skapa jobb. Administratören kan välja en kategori för att visa alla e-posttyper som är kopplade till aktiviteten. Markera exempelvis **tidsplanering** för att visa olika typer av e-post som skickas under planeringsprocessen och alla mallar som är tillgängliga för varje typ av e-post. Varje delavsnitt i en kategori representerar en typ av e-post.
+När den globala mallkonfigurationer är inställd kan administratör börja skapa och anordna mallar för e-postmeddelanden som skickas från Attract och erbjudande. Biblioteket för e-postmallar är endast tillgänglig för administratörer. För att öppna biblioteket på den huvudsakliga navigeringsmenyn, välj fliken **e-postmallar**. Biblioteket är kategoriserad efter olika aktiviteter i Attract e-post ska skickas för, t.ex tidsplanering, bedömning och skapa jobb och erbhjudanden. Administratören kan välja en kategori för att visa alla e-posttyper som är kopplade till aktiviteten. Markera exempelvis **tidsplanering** för att visa olika typer av e-post som skickas under planeringsprocessen och alla mallar som är tillgängliga för varje typ av e-post. Varje delavsnitt i en kategori representerar en typ av e-post.
 
 Vissa typer av e-postmeddelandet kan ha fler än en mottagare. I till exempel kategorin **tidsplanering** skickas e-postmeddelanden när du behöver skicka sammanfattning av tidsplanen för intervjuer till både kandidater och intervjuare. Varje avsnitt har två huvudsakliga kolumner: **Malltitel** och **Mottagare**. Varje rad i avsnittet representerar en enda mall för en typ av e-post. En låssymbol visas först i raden för varje mall. Den här symbolen anger att mallen är en standardmall som ingår i Attract och att den inte kan tas bort. Administratören kan använda knappen med tre punkter för alla mallar (**...**) för att duplicera mallen, ange den som standardmall eller ta bort den. När en mall är en standardmall, kan ett av två problem uppstå. Beteendet framgår av brickan eller brickorna som visas på raden för mallen:
 

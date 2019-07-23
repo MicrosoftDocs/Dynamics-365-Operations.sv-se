@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576931"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624617"
 ---
 # <a name="provision-talent"></a>Etablera Talent
 
@@ -48,6 +48,8 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 
 1. I LCS-projektet väljer du fliken **App-hantering for Talent**.
 2. Ange om detta är ett begränsat läge eller produktionsinstans av Talent. Funktionerna för förhandsgranskning kan finnas tillgängliga i begränsade instanser för att möjliggöra tidig återrapportering och testning. 
+    > [!NOTE]
+    > Instanstypen Talent är separat från instanstypen för PowerApps-miljön, som du anger i PowerApps-administrationscentret.
 3. Markera alternativet **Inkludera demodata** om du vill att din miljö med samma demodatauppsättning används i Talent testkörning. Detta är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer.  Observera att du måste välja det här alternativet vid den första implementeringen. Du kan inte uppdatera en befintlig distribution senare.
 4. Talent etableras alltid i en Microsoft PowerApps-miljö, detta i syfte att möjliggöra PowerApps-integrering och -utbyggnad. Läs avsnittet ”Välja en PowerApps-miljö” i det här ämnet innan du fortsätter. Om du inte redan har en PowerApps-miljö, välj hantera miljöer i LCS eller gå till PowerApps administrationscenter. Följ stegen för att [skapa en miljö med PowerApps](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 

@@ -3,7 +3,7 @@ title: Tilldela användare till säkerhetsroller
 description: För att öppna Microsoft Microsoft Dynamics 365 for Finance and Operations måste användaren tilldelas säkerhetsroller.
 author: maertenm
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55cb085bb5170aa4894a2240a12f6ca451b922fb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ab9f2f5ea07ae1d616c48dffa8810b966f7dbb2f
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556719"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711141"
 ---
 # <a name="assign-users-to-security-roles"></a>Tilldela användare till säkerhetsroller
 
@@ -31,25 +31,20 @@ För att öppna Microsoft Microsoft Dynamics 365 for Finance and Operations mås
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Tilldela användare automatiskt till roller
-1. Gå till systemadministrationen > Säkerhet > Tilldela användare till roller.
-2. Välj "Redovisningsansvarig" i trädet.
-    * Välj den roll som du vill använda till att konfigurera regeln. Välj Redovisningsansvarig i det här exemplet.  
-3. Klicka på Lägg till regel för att öppna dialogrutan.
-4. Hitta och markera önskad post i listan.
-    * Välj frågan som ska användas till den här regeln.  
-5. Klicka på länken på den valda raden i listan.
-6. Klicka på Redigera fråga.
-    * Redigera frågan, om det behövs.  
-7. Klicka på OK.
+1. Gå till **Navigeringsfönster > Moduler > Systemadministration > Säkerhet > Tilldela användare till roller**.
+2. Välj "Redovisningsansvarig" i trädet. Välj den roll som du vill använda till att konfigurera regeln. Välj Redovisningsansvarig i det här exemplet. 
+3. Klicka på **Lägg till regel** för att öppna dialogrutan.
+4. Sök efter och markera önskad post från listan **Välj en frågan**. Välj frågan som ska användas till den här regeln.  
+5. Klicka på länken på den valda raden i listan **Namn på medlemskapsregel**.
+6. Klicka på **Redigera fråga**. Redigera frågan, om det behövs.  
+7. Klicka på **OK**.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Exkludera användare från automatisk rolltilldelning
 1. Stäng sidan.
-2. Gå till systemadministrationen > Säkerhet > Tilldela användare till roller.
-3. Välj "Redovisningsansvarig" i trädet.
-    * Välj en roll. Välj Redovisningsansvarig för det här exemplet.  
-4. Klicka på Tilldela/exkludera användare manuellt.
-5. Markera vald rad i listan.
-    * Välj en användare.  
-6. Klicka på Exkludera från roll.
-    * Klicka på Exkludera från roll om du vill exkludera den valda användaren från rollen. Markera de användare som du vill ta bort exkluderingar för och klicka sedan på Återställ status om du vill ta bort exkluderingar. När du raderar en exkludering genom att återställa användarens status, kommer användarens roll att tilldelas igen automatiskt. Men användaren tilldelas inte omedelbart rollen eller exkluderas från rollen när du återställer statusen. Istället tilldelas användaren antingen rollen eller tas bort från rollen nästa gång som reglerna för automatisk rolltilldelning körs.  
-
+2. Gå till **Navigeringsfönster > Moduler > Systemadministration > Säkerhet > Tilldela användare till roller**.
+3. Välj "Redovisningsansvarig" i trädet. Välj en roll. Välj Redovisningsansvarig för det här exemplet.  
+4. I menyn **Användare som är tilldelade till rollen**, välj **Tilldela/exkludera användare manuellt**.
+5. Markera den markerade raden på listan **Tilldela användare till eller exkludera användare från roll**. Välj en användare.  
+6. På **Åtgärdsfönstret**, välj **Exkludera från roll**.
+    
+    Klicka på **Exkludera från roll** om du vill exkludera den valda användaren från rollen. Markera de användare som du vill ta bort exkluderingar för och klicka sedan på **Återställ status** om du vill ta bort exkluderingar. När du raderar en exkludering genom att återställa användarens status, kommer användarens roll att tilldelas igen automatiskt. Men användaren tilldelas inte omedelbart rollen eller exkluderas från rollen när du återställer statusen. Istället tilldelas användaren antingen rollen eller tas bort från rollen nästa gång som reglerna för automatisk rolltilldelning körs.  

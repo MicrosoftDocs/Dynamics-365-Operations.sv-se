@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 13cfe68e3d06001c56770fa60838404c43d0b38d
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519096"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624591"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Vad är nytt och ändrat i Dynamics 365 for Talent (23 april 2019)
 
@@ -46,7 +46,7 @@ Med den här veckans version har följande entiteter stöd för anpassade fält:
 ### <a name="additional-odata-entities-302992"></a>Ytterligare OData-entiteter (302992)
 Följande entiteter stöds nu i OData: arbetares professionella upplevelse och arbetares utbildning.
    
-### <a name="performance-journal-attachments-for-nanagers-and-employees-308248"></a>Bilagor med prestationsjournal för chefer och medarbetare (308248)
+### <a name="performance-journal-attachments-for-managers-and-employees-308248"></a>Bilagor med prestationsjournal för chefer och medarbetare (308248)
 Med den här versionen kan du nu använda bilagor för både chefer och medarbetare när du skapar och uppdaterar prestationsjournalposter.
 
 ### <a name="employee-rehire-flag-always-available-310047"></a>Medarbetares återanställningsflagga är alltid tillgänglig (310047)

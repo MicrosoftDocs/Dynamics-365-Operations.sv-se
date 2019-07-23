@@ -3,7 +3,7 @@ title: Produkt- och kundsökning i kassan (POS)
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530786"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625652"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i kassan (POS)
 
@@ -40,7 +40,7 @@ Som standard utförs en produktsökning på butikssortimentet. Denna typ av sök
 På sidan **Ändra katalog** kan personalen enkelt välja valfri butik, eller också kan de söka efter produkter i alla butiker.
 
 ![Ändra katalog](./media/Changecatalog.png "Ändra katalog")
- 
+
 En lokal produktsökning söker inom följande produktegenskaper:
 
 - Produktnummer
@@ -55,7 +55,7 @@ En lokal produktsökning söker inom följande produktegenskaper:
 Upplevelsen av lokala produktsökningar har nu gjorts mer användarvänlig. Följande förbättringar har också gjorts:
 
 - Listrutemenyer för produkter och kunder har lagts till i sökfältet så att medarbetare kan välja antingen **Produkt** eller **Kund** innan de genomför sökningen. Som standard har **Produkt** markerats, vilket visas i bilden nedan.
-- För flera nyckelordssökningar (det vill säga, för sökningar med sökvillkor) kan återförsäljare ange om sökresultatet ska innehåll resultat som matchar *alla* sökord eller endast resultat som matchar *alla* sökord. Den här inställningen finns i kassans funktionalitetsprofil i en ny grupp som heter **Produktsökning**. Standardinställningen är **Matcha alla sökord**. Detta är också den rekommenderade inställningen. När inställningen **Matcha alla sökord** används returneras alla produkter som helt eller delvis matchar ett eller flera sökord som resultat. Resultaten sorteras automatiskt i stigande ordning efter produkter som har de flesta nyckelordsträffarna (helt eller delvis).
+- För flera nyckelordssökningar (det vill säga, för sökningar med sökvillkor) kan återförsäljare ange om sökresultatet ska innehåll resultat som matchar *alla* sökord eller endast resultat som matchar *alla* sökord. inställningen för denna funktion finns i kassafunktionens profil, i en ny grupp som heter **Produktsökning**. Standardinställningen är **Matcha alla sökord**. Detta är också den rekommenderade inställningen. När inställningen **Matcha alla sökord** används returneras alla produkter som helt eller delvis matchar ett eller flera sökord som resultat. Resultaten sorteras automatiskt i stigande ordning efter produkter som har de flesta nyckelordsträffarna (helt eller delvis).
 
     Inställningen **Matcha alla sökvillkor** returnerar endast produkter som matchar alla söktermer (helt eller delvis). Denna inställning är praktisk när produktnamnen är långa och medarbetarna endast vill visa begränsade produkter i sökresultaten. Denna typ av sökning har emellertid två begränsningar:
 
@@ -65,11 +65,20 @@ Upplevelsen av lokala produktsökningar har nu gjorts mer användarvänlig. Föl
 - Återförsäljare kan nu konfigurera produktsökningen så att denna visar sökförslag när användarna skriver produktnamn. En ny inställning för denna funktion finns i kassafunktionens profil, i en grupp som heter **Produktsökning**. Inställningen kallas **Visa sökförslag medan du skriver**. Denna funktion hjälper anställda att snabbt hitta den produkt som de söker efter, detta eftersom de inte behöver skriva hela namnet manuellt.
 - Sökalgoritmen för produkten söker nu också efter de sökta villkoren i produktens **Söknamn**-egenskap.
 
-    ![Produktförslag](./media/Productsuggestions.png "Produktförslag")
+![Produktförslag](./media/Productsuggestions.png "Produktförslag")
 
 ## <a name="customer-search"></a>Sök efter kund
 
-Kundsök används för att hitta kunder för olika ändamål. Kassörer kan exempelvis visa en kunds önskelista eller inköpshistorik, eller lägga till kunden i en transaktion. Sökalgoritmen matchar sökvillkoren mot de värden som finns i följande kundegenskaper: namn, e-post, telefon, förmånskortnummer, adress och kontonummer. Bland dessa ger namnegenskapen större flexibilitet när det gäller flera nyckelordssökningar eftersom algoritmen returnerar alla kunder som matchar något av de sökta nyckelorden och de kunder som matchar de flesta nyckelorden visas överst i resultatet. Detta beteende hjälper kassörerna i situationer där sökningen sker genom att skriva det fullständiga namnet, men efternamn och förnamn har växlas under den första datainmatningen. Av prestandaskäl bevaras andra egenskaper efter nyckelord, så om nyckelorden inte matchar ordningen som data lagras i kommer inga resultat att returneras.
+Kundsök används för att hitta kunder för olika ändamål. Kassörer kan exempelvis visa en kunds önskelista eller inköpshistorik, eller lägga till kunden i en transaktion. Sökalgoritmen matchar sökvillkoren mot de värden som finns i följande kundegenskaper:
+
+- Namn
+- E-postadress
+- Telefonnummer
+- Förmånskortnummer
+- Adress
+- Kontonummer
+
+Bland dessa egenskaper ger namnet den mesta flexibiliteten för sökningar med flera nyckelord eftersom algoritmen returnerar alla kunder som matchar något av de söknyckelord som du söker. De kunder som matchar de flesta nyckelorden visas överst i resultatet. Detta beteende hjälper kassörerna i situationer där sökningen sker genom att skriva det fullständiga namnet, men efternamn och förnamn har växlas under den första datainmatningen. Av prestandaskäl har dock alla andra egenskaper bevarat ordningen för nyckelorden i sökningen. Därför returneras inga resultat om ordningen på nyckelorden för sökningen inte matchar den ordning som data lagras i.
 
 En kundsökning utförs som standard på kund-adressböcker kopplade till butiken. Denna typ av sökning kallas en *lokal kundsökning*. Medarbetare kan emellertid också söka efter kunder globalt. Med andra ord kan man söka i samtliga företagets butiker och mellan alla juridiska personer. Denna typ av sökning kallas en *fjärrkundsökning*.
 
@@ -86,7 +95,7 @@ I samband med fjärrkundsökning visas inte kundens ID för kunder från andra j
 
 Sökningar som är baserade på telefonnummer har förenklats. Dessa sökningar kan nu ignorera specialtecken såsom blanksteg, bindestreck och parenteser som kan ha lagts till när kunden skapades. Därför behöver kassörerna inte ta hänsyn till telefonnummerformatet när de söker. De kan även söka efter kunder genom att skriva en del av ett telefonnummer. Om ett telefonnummer innehåller specialtecken kan du även hitta det genom att söka efter de siffror som visas efter specialtecknet. Om ett kundtelefonnummer exempelvis angetts som **123-456-7890** kan en kassör söka efter kunden genom att skriva in **123**, **456**, **7890** eller **1234567890**, eller genom att ange de första siffrorna i telefonnumret.
 
-Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fält. Kassörer kan istället nu söka i en anpassad egenskap, till exempel namn, telefonnummer eller e-postadress. Egenskaper som kundens sökalgoritm använder kallas *sökvillkor för kund*. Systemadministratören kan enkelt konfigurera ett eller flera kriterier som genvägar som visas i kassan. Eftersom sökningen är begränsat till ett enda villkor visas endast relevanta sökresultat och den får mycket bättre prestanda än en standardkundsökningsprestanda. I följande illustration visas kundens sökgenvägar i kassan.
+Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fält. Kassörer kan istället nu söka i en kudegenskap, till exempel namn, telefonnummer eller e-postadress. Egenskaper som kundens sökalgoritm använder kallas *sökvillkor för kund*. Systemadministratören kan enkelt konfigurera ett eller flera kriterier som genvägar som visas i kassan. Eftersom sökningen är begränsat till ett enda villkor visas endast relevanta sökresultat och den får mycket bättre prestanda än en standardkundsökningsprestanda. I följande illustration visas kundens sökgenvägar i kassan.
 
 ![Kundens sökgenvägar](./media/SearchShortcutsPOS.png "Kundens sökgenvägar")
 
@@ -101,3 +110,7 @@ Fältet **visningsordning** anger den ordning som genvägarna visas i kassan. Kr
 
 > [!NOTE]
 > En anpassad egenskap som läggs till enum påverkar inte den standardinställda kundsökalgoritmen. Med andra ord söker inte kundens sökalgoritm i den anpassade egenskapen. Användare kan endast använda en anpassad egenskap för sökningar om den anpassade egenskapen läggs till som en genväg, eller om standardsökalgoritmen åsidosätts.
+
+I en kommande version av Microsoft Dynamics 365 for Retail kan återförsäljare ställa in standardsökläget för kunder i kassan för att **söka igenom alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). En nytt alternativ för **standardsökläget för kunder** är tillgängligt i funktionsprofilen för kassan. Ställ in den på **på** för att ange att standardsökläget **söka igenom alla butiker**. Varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
+
+För att förhindra att oväntade prestandaproblem döljs den här konfigurationen bakom en förhandsversionsflagga som kallas **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Om du därför vill visa inställningen **standardsökläget för kunder** för kund i användargränssnittet måste återförsäljaren skapa ett acceptanstestet för användare (UAT) och produktionsmiljön. När ärendet har tagits emot arbetar teknikteamet tillsammans med återförsäljaren för att säkerställa att återförsäljaren testar i sina miljöer för icke-produktion för att bedöma prestanda och implementera eventuella optimeringar som krävs.
