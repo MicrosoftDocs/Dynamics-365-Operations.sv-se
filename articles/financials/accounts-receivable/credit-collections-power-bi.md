@@ -3,7 +3,7 @@ title: Hantering av kredit och inkasso Power BI-innehåll
 description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kredit- och inkassohantering. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547242"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702782"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Hantering av kredit och inkasso Power BI-innehåll
 
@@ -42,7 +42,17 @@ Alla belopp i visas i systemvalutan. Du kan ange systemvalutan på sidan **Syste
 
 Som standard visas kredit- och inkassodata för det aktuella företaget. Om du vill visa data för alla företag, tilldelar du programbehörigheten **CustCollectionsBICrossCompany** till rollen.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Installationen som behövs för att visa Power BI-innehåll
+
+Följande inställningar måste slutföras för att data ska visas i **Kundkredit och inkasso**Power BI-visualiseringar.
+
+1. Gå till **systemadministrations > inställningar > systemparametrar** för att ställa in **Systemvaluta** och **Systemets valutakurs**.
+2. Gå till **redovisning > Inställningar > redovisning** och ange **redovisningsvaluta** och **valutakurstyp**.
+3. Definiera valutakurser mellan transaktionsvalutor och redovisningsvaluta, redovisningsvaluta och systemvaluta. Det gör du genom att gå till **redovisning > valutor > valutakurser**.
+4. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **CustCollectionsBIMeasurements**.
+
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
+
 Power BI-innehållet för **Kredit- och inkassohantering** visas i arbetsytan **Kundkredit och kundinkasso**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
@@ -63,28 +73,3 @@ Power BI-innehållet **CustCollectionsBICrossCompany** innehåller ofta en rappo
 | Kravbrev         | <ul><li>Belopp för inkassokod</li><li>Detaljer om belopp för inkassokod</li><li>Belopp för kravbrev per företag</li><li>Belopp för kravbrev per kundgrupp</li><li>Belopp för kravbrev efter region</li></ul> |
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
-
-## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-
-Följande data används för att fylla i rapportsidorna Power BI-innehållet **kredit- och inkassohantering**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
-
-
-|                   Enhet                    |      Sammanlagda huvudmått      |             Datakälla              |                           Fält                            |                                    beskrivning                                     |
-|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities AveragecClosedTime  |            smmActivities             | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) |     Antal stängda aktiviteter och genomsnittlig tid för att avsluta dessa aktiviteter.     |
-|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           Antal öppna aktiviteter.                            |
-|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             Summan av förfallna saldon.                              |
-|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           De belopp som har förfallit.                            |
-|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        Antal stängda fall och genomsnittlig tid för att avsluta dessa fall.        |
-|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              Antal öppna fall.                              |
-|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       Antal öppna kravbrev.                        |
-|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     Saldot på bokförda kravbrev.                      |
-|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                Saldot för transaktioner med kravbrevstatus.                 |
-|           CustCollectionsBICredit           | CreditExposed AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | Summan av kreditexponering och belopp som kunder överskridit kreditgränsen. |
-|         CustCollectionsBICustOnHold         |               Spärrad                |      CustCollectionsBICustTable      |                       Count(Blocked)                       |                     Antalet kunder som är spärrade.                      |
-|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        Dagar för utestående försäljning för 30 dagar                         |
-|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 Summan av förväntade betalningar inom ett år.                 |
-|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Antalet räntefakturor som har skapats.                |
-|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Antalet totala försäljningsorder som är spärrade.                 |
-|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Summan av transaktioner som har skrivits av.                 |
-

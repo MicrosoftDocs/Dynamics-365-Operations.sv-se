@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519161"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729713"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funktionen för karriärwebbplats i Attract
 
@@ -48,11 +48,14 @@ Om du vill ange värden för följande artiklar loggar du in på Attract som adm
  
 Om du vill ange värden för följande artiklar loggar du in på Attract som administratör och väljer **administratörscenter** på menyn **inställningar** (växelsymbol) och väljer sedan fliken **Hantera karriärwebbplats**.
 
--   **Sökmotoroptimering** - om aktiverad kommer alla offentliga jobb som publiceras på Attract karriärwebbplats att vara sökbara med hjälp av sökmotorer som Bing och Google.
+-   **Sökmotoroptimering** - om aktiverad kommer alla offentliga jobb som publiceras på Attract karriärwebbplats att vara sökbara med hjälp av sökmotorer som Bing och Google. 
 
     > [!NOTE] 
     > Det kan finnas en fördröjning mellan aktivering av inställningen och sökresultaten som visas, beroende på sökfunktionen du använder.
-         
+    
+-   **Villkor** - när de aktive ras måste alla kandidater godkänna organisationens villkor när de ansöker om ett jobb. Attract-administratören kan konfigurera sin egen godkännandetext samt länken till deras villkor. 
+
+        
 ## <a name="career-site-urls"></a>URL för karriärwebbplats
 
 Följande lista innehåller vanliga URL för karriärwebbplatser och hur du kommer åt dem.

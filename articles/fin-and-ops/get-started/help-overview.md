@@ -3,7 +3,7 @@ title: Hjälpsystem för Finance and Operations
 description: Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: da5b67bd67ff1a227a5f1812d41cdad9f062dfd0
+ms.sourcegitcommit: ad4d378afd88028d2002633a3cc8a67313cbeddd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595649"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625339"
 ---
 # <a name="finance-and-operations-help-system"></a>Hjälpsystem för Finance and Operations
 
@@ -95,11 +95,13 @@ Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned 
 
     ![Publicera kommentar](./media/feedback.png)
 
-##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Föreslå en ändring eller bidra med innehåll via GitHub
+### <a name="contribute-to-the-documentation"></a>Bidra till dokumentationen
 
-Om du vill föreslå en ändring måste du ha ett GitHub-konto och registrera ett licensavtal för deltagare. När du har skickat en pull-begäran granskar dina föreslagna ändringar. Om det behövs ska vi diskutera dem internt och återkomma till dig.
+Du kan delta i och redigera den dokumentation som rör Finance and Operations. För att börja klickar du på  knappen **Redigera** (pennknappen) på ett avsnitt eller går till vår repo på <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. Följande video visar hur du kan bidra till vår dokumentation.
 
-För att börja klickar du på  knappen **Redigera** (pennknappen) på ett avsnitt eller går till vår repo på <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE36liB]
+
+Videon [Hur du bidrar till Microsoft Dynamics 365-dokumentationen](https://youtu.be/m5djioozRbg) (visas ovan) ingår i [Nyheter i Dynamics 365-spellistan](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9) som finns på YouTube.
 
 Mer information finns i vår deltagarguide: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
 

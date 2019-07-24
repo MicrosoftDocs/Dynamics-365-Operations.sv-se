@@ -4,7 +4,7 @@
   items:
     - name: Nyheter och ändringar
       href: get-started/whats-new.md
-    - name: Förhandsfunktioner i Dynamics 365 for Retail 10.0.3
+    - name: Nyheter och ändringar i Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
     - name: Nyheter och ändringar i Dynamics 365 for Retail 10.0.2
       href: get-started/whats-new-10-0-2.md
@@ -407,6 +407,10 @@
       items:
         - name: Exempel på integrering av kvittoskrivare för Italien
           href: localizations/emea-ita-fpi-sample.md
+    - name: Mexiko
+      items:
+        - name: Globala CFDI e-fakturor för Mexiko
+          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
     - name: Norge
       items:
         - name: Funktioner för kassaapparat
@@ -602,7 +606,7 @@
           href: dev-itpro/extend-metadata.md
         - name: Anropa CRT-tjänsten i offlineläge
           href: dev-itpro/call-crt-service-offline.md
-    - name: Utbyggbarhet för Commerce Runtime (CRT)
+    - name: Utbyggbarhet av Commerce Runtime (CRT)
       items:
         - name: CRT-arkitektur och konfiguration
           href: dev-itpro/commerce-runtime-overview.md

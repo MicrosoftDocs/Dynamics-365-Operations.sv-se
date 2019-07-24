@@ -3,7 +3,7 @@ title: Källkandidater med talangpooler
 description: Det här avsnittet beskriver hur du skapar och konfigurerar talangpooler i Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519083"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711304"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Källkandidater med talangpooler
 
@@ -110,15 +110,16 @@ Alla användare har en gemensam vy över kandidatprofiler. Fliken **profil** vis
 
 - Du kan visa kontaktinformation för kandidaten. Du kan också redigera eller uppdatera informationen som du behöver genom att använda knappen **redigera detaljer**.
 
-- Du kan lägga till fler kompetensetiketter för att identifiera kandidatens kompetenser.
-
 - Du kan visa kandidatens historik och hela ansökningshistoriken. Du kan visa alla jobb som kandidaten har ansökt om i organisationen och status för dessa ansökningar. Om du är en del av jobbets anställningsteam kan du välja **visa** för att titta på ansökningen i detalj.
 
-- Fliken **dokument** visar alla handlingar som kandidaten har lagt till från hans eller hennes profil eller under jobbansökningar. Den här fliken kan användas för att hantera kandidatens meritförteckningar, följebrev, portföljarbete, och så vidare. Du kan också använda den här fliken för att lägga till dokument.
+- Fliken **dokument** visar alla handlingar som kandidaten har lagt till från hans eller hennes profil eller under jobbansökningar. Du kan använda den här fliken för att hantera kandidatens meritförteckningar, följebrev, portföljarbete, och så vidare. Du kan också använda den här fliken för att lägga till dokument.
 
     Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i programmet med Microsoft Office 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
 
 - Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn Recruiter-anslutning måste skapas. Mer information finns i [Anskaffning med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Endast kandidater kan uppdatera färdigheter, utbildningshistorik och arbetserfarenhet.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Lägg till kandidater från en talangpool till ett jobb
 

@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557339"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624894"
 ---
-# <a name="project-timesheets-on-a-mobile-device"></a>Projektidrapporter på mobil enhet
+# <a name="project-timesheets-on-a-mobile-device"></a>Projekttidrapporter på mobil enhet
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Översikt
 
 **Mina tidrapporter (optimerad för mobil)** låter anställda skapa och skicka projekttidrapporter för att registrera deras timmar för ett visst projekt på en mobil enhet. Medarbetare kan skapa en ny tidrapport eller kopiera data från en befintlig tidrapport för att säkerställa snabb och exakt tidsregistrering. Om du är angivna som ett ombud, kan du även ange en tidrapport för en annan anställd. Appen låter medarbetare filtrera efter projekt, resurser och godkännandestatus för att snabbt söka efter och välja en tidrapport. Den låter även medarbetare spara favoriter, som sparar information om projekt och aktiviteter i tidrapporten. Sparade favoriter kan användas till att skapa framtida tidrapporter och förbättra tidsregistreringsprocessen. Redigera eller visa ekonomisk information stöds inte från den mobila appen. **Mina tidrapporter (optimerad för mobil)** kan nås via en webbläsare på din mobila enhet.
 
@@ -35,8 +33,7 @@ ms.locfileid: "1557339"
 Den här mobilappen är kompatibel med iPhone med Dynamics 365 for Finance and Operations plattformsuppdatering 15.
 Android kommer att vara kompatibel med plattformsuppdatering 16, när den blir tillgänglig.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Skapa en projekttidrapporten på din mobila enhet
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Skapa en projekttidrapporten på din mobila enhet
 
 1.  Observera Dynamics 365-webbadressen för sidan **Projekthantering och redovisning**\>**Tidrapporter**\>**Mina tidrapporter (optimerad för mobil)**.
 

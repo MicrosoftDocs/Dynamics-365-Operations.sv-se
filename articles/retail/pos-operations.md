@@ -3,7 +3,7 @@ title: Verksamhet för online- och offlinekassor (POS)
 description: Det här avsnittet innehåller information om kassaoperation i Microsoft Dynamics 365 for Retail. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505106"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625675"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -159,9 +159,9 @@ Följande kolumner anger var operationerna kan startas:
 | 114 | Returtransaktion | Återställa en tidigare transaktion genom dess kvittonummer för att returnera några eller alla produkter. | Ja | Ja | Ja | Ja§ | Nr |
 | 1211 | Lämna pengar i kassaskåp | Flytta pengar från kassan till ett kassaskåp. | Ja | Ja | Ja | Ja | Nr |
 | 516 | Försäljningsfaktura | Den här åtgärden kan kunden göra betalningar till den valda fakturan. | Ja | Ja | Nr | Nr | Nr |
-| 502 | Säljare | Den här operation låter användaren ange värdet **Mottagare** på en försäljningsorder för kundorder i kassan. | Ja | Ja | Nr | Ja\* | Nr |
-| 2000 | Hantering av tidsplan | Den här operationen låter användaren skapa, ändra eller visa scheman för medarbetare. | Ja | Ja | Ja | Nr | Nr |
-| 2001 | Tidsplanera begäranden | Denna operation låter användaren begära ledigt, byta skift eller erbjuda skift till andra medarbetare. | Ja | Ja | Ja | Nr | Nr |
+| 502 | Säljare | Den här operation låter användaren ange värdet **Mottagare** på en försäljningsorder för kundorder i kassan. | Ja | Ja | Nej | Ja\* | Nej |
+| 2000 | Hantering av tidsplan | Åtgärden stöds inte ännu. | Ja | Ja | Ja | Nej | Nej |
+| 2001 | Tidsplanera begäranden | Åtgärden stöds inte ännu. | Ja | Ja | Ja | Nej | Nej |
 | 622 | Sök efter order | Denna operation låter användare förkonfigurera kassaknappar för att utföra sökningar efter artikel, kund eller kategori. | Ja | Ja | Ja | Ja | Nr |
 | 1213 | Sök leveransadress | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 709 | Välj maskinvarustation | Den här operationen låter användaren välja maskinvarustation i en lista med tillgängliga maskinvarustationer. | Ja | Ja | Ja | Ja | Nr |

@@ -3,7 +3,7 @@ title: Hantering av försäljningspris (butik)
 description: Det här avsnittet beskriver begreppen för att skapa och hantera försäljningspriser i Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
-ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
+ms.openlocfilehash: 813547f522f5c69920eadf9df61e7f01b13ecd36
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1594080"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624799"
 ---
 # <a name="retail-sales-price-management"></a>Prishantering för Retail-försäljning
 
@@ -234,6 +234,6 @@ Dessutom, **endast** butiksprissättningsmotorn stöder följande prissättnings
 
 ## <a name="pricing-api-enhancements"></a>Förbättringar av prissättnings-API
 
-Pris är en av de viktigaste faktorerna som styr köpbesluten för många kunder och många kunder jämför priserna på olika webbplatser innan de gör ett inköp. För att garantera att de erbjuder konkurrenskraftiga priser håller återförsäljare ett öga på sina konkurrenter och kör ofta erbjudanden. För att hjälpa dessa återförsäljare att locka till sig kunderna är det därför mycket viktigt att produktsökningen, bläddringsfunktionen, listorna och produktinformation visar de mest exakta priserna.
+Pris är en av de viktigaste faktorerna som kontrollerar köpbesluten för många kunder och många kunder jämför priserna på olika webbplatser innan de gör ett inköp. För att garantera att de erbjuder konkurrenskraftiga priser håller återförsäljare ett öga på sina konkurrenter och kör ofta erbjudanden. För att hjälpa dessa återförsäljare att locka till sig kunderna är det mycket viktigt att produktsökningen, bläddringsfunktionen, listorna och produktinformation visar de mest exakta priserna.
 
 I en kommande version av Retail returnerar API:n **GetActivePrices** (Application Programming Interface) priser som innehåller enkla rabatter (t.ex. rabatter på en rad som inte är beroende av andra artiklar i varukorgen). På så sätt ligger priserna som visas nära det faktiska beloppet som kunderna ska betala för artiklar. Denna API kommer att innehålla alla typer av enkla rabatter: anknytningsbaserade, lojalitetsbaserade, katalogbaserade och kanalbaserade rabatter. Dessutom returnerar API:er namn och giltighetsinformation för de rabatter som används, så att detaljhandlare kan ge en mer detaljerad beskrivning av priset och skapa en uppfattning om hur rabatten kommer att förfalla snart.
