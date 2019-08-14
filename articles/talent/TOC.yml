@@ -8,6 +8,12 @@
         - name: Nyheter och ändringar i Talent
           href: whats-new.md
           items:
+            - name: 23 juli 2019
+              href: whats-new-talent-july-24-2019.md
+            - name: 16 juli 2019
+              href: whats-new-talent-july-16-2019.md
+            - name: 9 juli 2019
+              href: whats-new-talent-july-9-2019.md
             - name: 2 juli 2019
               href: whats-new-talent-july-2-2019.md
             - name: 25 juni 2019
@@ -102,8 +108,6 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR och Common Data Service
           href: CoreHREntities.md
-        - name: Få åtkomst till förhandsfunktioner
-          href: access-preview-feature.md
         - name: Få support för Talent
           href: talent-support.md
     - name: Bemanna organisationen med Attract
@@ -112,53 +116,73 @@
           href: attract-comprehensive-hiring.md
         - name: Funktioner och möjligheter i Attract
           href: attract-overview.md
-        - name: Vanliga frågor LinkedIn
-          href: attract-linkedin-faq.md
-        - name: Konfigurera e-postinställningar
-          href: attract-configure-email-settings.md
-        - name: Skapa en processmall i Attract
-          href: Process-templates-Attract.md
-        - name: Skapa och bokföra arbeten
-          href: Creating-jobs-Attract.md
-        - name: Konfigurera integration med LinkedIn
-          href: attract-admin-linkedin.md
-        - name: Publicera jobb på LinkedIn från Attract
-          href: attract-post-jobs-to-linkedin.md
-        - name: Publicera jobb på Broadbean från Attract
-          href: posting-jobs-external.md
-        - name: Hitta kandidater med hjälp av talangpooler
-          href: attract-talent-pools.md
-        - name: Hitta kandidater med LinkedIn Recruiter
-          href: attract-linkedin-recruiter.md
-        - name: Aktiviteter i anställningsprocesserna
-          href: activities-attract.md
-        - name: Tidsplanering av intervjuer och feedback
-          href: interview-scheduling-feedback.md
+        - name: Vanliga frågor
+          items:
+            - name: Vanliga frågor om LinkedIn-integration
+              href: attract-linkedin-faq.md
+        - name: Konfigurera systeminställningar
+          items:
+            - name: Konfigurera företagsinformation
+              href: admin-settings-attract.md
+            - name: Ställ in användarbehörigheter
+              href: security-attract.md
+            - name: Hantera funktioner
+              href: access-preview-feature.md
+            - name: Ställ in din karriärwebbplats
+              href: career-site.md
+            - name: Aktivera Broadbean-integration
+              href: attract-admin-job-board-settings.md
+            - name: Konfigurera e-postinställningar
+              href: attract-configure-email-settings.md
+            - name: Ställ in LinkedIn-integration
+              href: attract-admin-linkedin.md
+        - name: Skapa en anställningsprocess
+          items:
+            - name: Skapa en processmall
+              href: process-templates-attract.md
+            - name: Aktiviteter i anställningsprocesser
+              href: activities-attract.md
+            - name: E-postmallar
+              href: email-templates.md
+            - name: Använd analysrapporter
+              href: analytic-reports.md
+        - name: Skapa och publicera jobb
+          items:
+            - name: Skapa ett jobb
+              href: creating-jobs-attract.md
+            - name: Publicera jobb till LinkedIn
+              href: attract-post-jobs-to-linkedin.md
+            - name: Publicera jobb till Broadbean
+              href: posting-jobs-external.md
+            - name: Stäng ett jobb
+              href: attract-close-job.md
+        - name: Hitta kandidater
+          items:
+            - name: Skaffa kandidater med talangpooler
+              href: attract-talent-pools.md
+            - name: Hitta kandidater med LinkedIn Recruiter
+              href: attract-linkedin-recruiter.md
+            - name: Spåra kandidatkällor
+              href: source-tracking.md
+            - name: Intelligenta rekommendationer
+              href: Intelligent-Recommendations.md
+        - name: Ställ in intervjuer
+          items:
+            - name: Tidsplanering av och feedback för intervjuer
+              href: interview-scheduling-feedback.md
+        - name: Ge ett erbjudande
+          items:
+            - name: Ställ in erbjudandehantering
+              href: offer-setup.md
+            - name: 'Skapa, godkänna och signera erbjudanden'
+              href: creating-offers.md
         - name: Utbyggbarhet i Attract
           href: extensibility-attract.md
-        - name: Funktionen för karriärwebbplats i Attract
-          href: career-site.md
-        - name: Ställ in erbjudandehantering
-          href: offer-setup.md
-        - name: 'Skapa, godkänna och signera erbjudanden'
-          href: creating-offers.md
-        - name: E-postmallar
-          href: email-templates.md
-        - name: Säkerhets- och rollhantering i Attract
-          href: security-attract.md
-        - name: Administrationsinställningar i Attract
-          href: Admin-Settings-Attract.md
-        - name: Intelligenta rekommendationer
-          href: Intelligent-Recommendations.md
-        - name: Spåra källor för kandidatprofiler och ansökningar
-          href: source-tracking.md
-        - name: Få insikter om anställningsprocessen med analysrapporter
-          href: analytic-reports.md
     - name: Välkomna nyanställda med Onboard
       items:
         - name: Kom igång med Onboard
           href: create-onboarding-experience.md
-        - name: Hämta Onboard‑programmet
+        - name: Hämta Onboard‑appen
           href: onboard-get-app.md
         - name: Skapa och skicka en integrationsguide.
           href: onboard-create-guide.md
@@ -186,6 +210,8 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: Ställa in företagsspecifika personalparametrar
               href: set-up-company-specific-hr-parameters.md
+            - name: Datum och tidfält i Talent
+              href: date-time-fields-in-talent.md
             - name: Vanliga frågor och svar om personalåtgärder
               href: personnel-actions-faq.md
             - name: Formalisera affärsprocesser

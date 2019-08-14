@@ -27,6 +27,8 @@
                   href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
                 - name: Finance and Operations drivs av 21Vianet i Kina
                   href: ../dev-itpro/deployment/china-local-deployment.md
+                - name: Finance and Operations i Frankrike
+                  href: ../dev-itpro/deployment/france-local-deployment.md
             - name: Tillgänglighet för tjänsteuppdatering
               href: get-started/public-preview-releases.md
             - name: Köp Finance and Operations
@@ -42,8 +44,10 @@
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: AX 2012-funktioner som har senarelagts
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
-            - name: Funktioner som inte implementeras i lokala installationer
+            - name: Funktioner som ännu inte har implementerats i lokala distributioner
               href: get-started/features-not-implemented-on-prem.md
+            - name: Förhandsgranska funktioner i Finance and Operations version 10.0.5 (oktober 2019)
+              href: get-started/whats-new-changed-10-0-5.md
             - name: Finance and Operations version 10.0.4 (juli 2019)
               href: get-started/whats-new-changed-10-0-4.md
             - name: Finance and Operations version 10.0.3 (juni 2019)
@@ -56,6 +60,8 @@
               href: get-started/whats-new-changed-10.md
             - name: Finance and Operations version 8.1.3 (januari 2019)
               href: get-started/whats-new-changed-8-1-3.md
+            - name: förhandsgranskningsfunktioner i Platform update 29 (oktober 2019)
+              href: get-started/whats-new-platform-update-29.md
             - name: Platform update 28 (juli 2019)
               href: get-started/whats-new-platform-update-28.md
             - name: Platform update 27 (juni 2019)
@@ -156,6 +162,8 @@
               href: get-started/navigation-search.md
             - name: Anpassa användarupplevelsen
               href: get-started/personalize-user-experience.md
+            - name: Sparade vyer
+              href: get-started/saved-views.md
             - name: Skapa och arbeta med anpassade fält
               href: get-started/user-defined-fields.md
             - name: Bädda in PowerApps-appar
@@ -267,14 +275,14 @@
           items:
             - name: Förbruka affärshändelser med Microsoft Flow
               href: ../dev-itpro/business-events/how-to/how-to-flow.md
-    - name: Regelefterlevnad
-      items:
-        - name: Granska policyregler
-          href: ../financials/general-ledger/audit-policy-rules.md
-        - name: Granska policyöverträdelser och ärenden
-          href: ../financials/general-ledger/audit-policy-violations-cases.md
-        - name: Definiera granskningspolicyer för källdokument
-          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+            - name: Konsumera affärshändelser genom att använda Azure Event Grid
+              href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
+            - name: Konsumera affärshändelser genom att använda Azure Service Bus
+              href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
+            - name: Konsumera arbetsflödesgodkännande av affärshändelser
+              href: ../dev-itpro/business-events/how-to/how-to-workflow.md
+            - name: Använd Microsoft Forms Pro med affärshändelser
+              href: ../dev-itpro/business-events/how-to/FormsPro.md
     - name: Kostnadshantering
       href: ../supply-chain/cost-management/cost-management-home-page.md
       items:
@@ -419,65 +427,89 @@
                 - name: Skapa poster med postmallar
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Dataintegration med Common Data Service
-              href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Konfigurera ett scenario för potentiell kund till pengar
-                  href: ../supply-chain/sales-marketing/prospect-to-cash.md
+                - name: Översikt över dataintegrering
+                  href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
+                - name: 'Synkron, dubbelriktad integrering'
                   items:
-                    - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
-                      href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                    - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
-                      href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                    - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
-                      href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                    - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
-                      href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                    - name: Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
-                      href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                    - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
-                      href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                - name: Konfigurera integration med Field Service
-                  href: ../supply-chain/sales-marketing/field-service.md
+                    - name: Dataintegrering nästan i realtid
+                      href: ../dev-itpro/data-entities/dual-write-overview.md?toc=/fin-and-ops/toc.json
+                    - name: Organisationshierarki för Common Data Service
+                      href: ../dev-itpro/data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
+                    - name: Företagskoncept i Common Data Service
+                      href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
+                    - name: Integrerad kundmaster
+                      href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
+                    - name: Integrerad kleverantörsmaster
+                      href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
+                    - name: Initial synkronisering
+                      href: ../dev-itpro/data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
+                    - name: Felsökning av dataintegrering
+                      href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
+                - name: 'Asynkron, enkelriktad integrering'
                   items:
-                    - name: Synkronisera produkter i Finance and Operations till produkter i Field Service
-                      href: ../supply-chain/sales-marketing/field-service-product.md
-                    - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
-                      href: ../supply-chain/sales-marketing/field-service-work-order.md
-                    - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
-                      href: ../supply-chain/sales-marketing/field-service-invoice.md
-                    - name: Synkronisera lageröverföringar och justeringar från Field Service till Finance and Operations
-                      href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                    - name: Synkronisera information om lagernivåer från Finance and Operations till Field Service
-                      href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                    - name: Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
-                      href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                    - name: Synkronisera projektlista från Finance and Operations till Field Service
-                      href: ../supply-chain/sales-marketing/synchronize-project-list.md
-                    - name: Synkronisera lagerställen från Finance and Operations till Field Service
-                      href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-                    - name: Synkronisera arbetsorder med projekt från Field Service till Finance and Operations
-                      href: ../supply-chain/sales-marketing/synchronize-work-orders.md
-                - name: Konfigurera Project Service Automation-integration
-                  href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
-                  items:
-                    - name: Parametrar för Project Service Automation-integration
-                      href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
-                    - name: Synkronisera projektkontrakt och projekt
-                      href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
-                    - name: Synkronisera projektuppgifter
-                      href: ../financials/project-management/project-tasks-template.md?toc=/fin-and-ops/toc.json
-                    - name: Synkronisera utgiftskategorier för projekt
-                      href: ../financials/project-management/project-categories-templates.md?toc=/fin-and-ops/toc.json
-                    - name: Synkronisera projektuppskattningar med projektprognoser
-                      href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
-                    - name: Synkronisera projektutfall med projektets integrationsjournal
-                      href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Prospekt till kontanter
+                      items:
+                        - name: Konfigurera ett scenario för potentiell kund till pengar
+                          href: ../supply-chain/sales-marketing/prospect-to-cash.md
+                        - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
+                          href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                        - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
+                          href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
+                        - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
+                          href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                        - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
+                          href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                        - name: Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
+                          href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                        - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
+                          href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                    - name: Field Service
+                      items:
+                        - name: Konfigurera integration med Field Service
+                          href: ../supply-chain/sales-marketing/field-service.md
+                        - name: Synkronisera produkter i Finance and Operations till produkter i Field Service
+                          href: ../supply-chain/sales-marketing/field-service-product.md
+                        - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
+                          href: ../supply-chain/sales-marketing/field-service-work-order.md
+                        - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
+                          href: ../supply-chain/sales-marketing/field-service-invoice.md
+                        - name: Synkronisera lageröverföringar och justeringar från Field Service till Finance and Operations
+                          href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                        - name: Synkronisera information om lagernivåer från Finance and Operations till Field Service
+                          href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                        - name: Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
+                          href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                        - name: Synkronisera projektlista från Finance and Operations till Field Service
+                          href: ../supply-chain/sales-marketing/synchronize-project-list.md
+                        - name: Synkronisera lagerställen från Finance and Operations till Field Service
+                          href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+                        - name: Synkronisera arbetsorder med projekt från Field Service till Finance and Operations
+                          href: ../supply-chain/sales-marketing/synchronize-work-orders.md
+                    - name: Project Service Automation
+                      items:
+                        - name: Konfigurera Project Service Automation-integration
+                          href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
+                        - name: Parametrar för Project Service Automation-integration
+                          href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
+                        - name: Synkronisera projektkontrakt och projekt
+                          href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
+                        - name: Synkronisera projektuppgifter
+                          href: ../financials/project-management/project-tasks-template.md?toc=/fin-and-ops/toc.json
+                        - name: Synkronisera utgiftskategorier för projekt
+                          href: ../financials/project-management/project-categories-templates.md?toc=/fin-and-ops/toc.json
+                        - name: Synkronisera projektuppskattningar med projektprognoser
+                          href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
+                        - name: Synkronisera projektutfall med projektets integrationsjournal
+                          href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
         - name: Konsumera externa webbtjänster
           href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+        - name: Elektroniska meddelanden
+          href: ../financials/general-ledger/electronic-messaging.md
     - name: Datahantering
       href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Datatabeller
+        - name: Dataentiteter
           href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
           items:
             - name: Konfigurationsdataprojekt
@@ -666,7 +698,9 @@
               href: ../financials/accounts-receivable/set-up-collections.md
             - name: Granska inkasseringsinformation
               href: ../financials/accounts-receivable/tasks/review-collections-information.md
-            - name: Ställ in och bearbeta återkommande fakturor
+            - name: Översikt över intäktsredovisning
+              href: ../financials/accounts-receivable/revenue-recognition-overview.md
+            - name: Ställa in och bearbeta återkommande fakturor
               href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
             - name: Redovisningsfördelningar och reskontrajournalposter för fritextfakturor
               href: ../financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
@@ -1067,166 +1101,6 @@
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
         - name: Redovisning
           href: ../financials/general-ledger/general-ledger.md
-          items:
-            - name: Konton
-              items:
-                - name: Översikt över periodiseringar
-                  href: ../financials/general-ledger/accruals-overview.md
-                - name: Elimineringsregler
-                  href: ../financials/general-ledger/elimination-rules.md
-                - name: Kombinationer av konton och dimensioner
-                  href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                - name: Balanserade journaler för interunit-redovisning
-                  href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
-                - name: Bokföringsdefinitioner
-                  href: ../financials/general-ledger/posting-definitions.md
-                - name: Exempel på bokföringsdefinitioner
-                  href: ../financials/general-ledger/example-posting-definitions.md
-                - name: Balanser på huvudbokskonto
-                  href: ../financials/general-ledger/general-ledger-account-balances.md
-                - name: Definiera ekonomiska dimensioner
-                  href: ../financials/general-ledger/tasks/define-financial-dimensions.md
-                - name: Underhåll standardmallar för ekonomisk dimension
-                  href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                - name: Skapa kontostrukturer
-                  href: ../financials/general-ledger/tasks/create-account-structures.md
-                - name: Ekonomiska dimensioner och bokföring
-                  href: ../financials/general-ledger/default-dimensions.md
-                - name: Skapa periodiseringsscheman
-                  href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: Ekonomisk konsolidering och valutaregistrering
-                  href: ../financials/general-ledger/financial-consolidations-currency-translation.md
-                  items:
-                    - name: Konsolidera online
-                      href: ../financials/general-ledger/consolidate-online.md
-                    - name: Generera konsoliderade bokslut
-                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
-                - name: Skapa konsolideringsgrupper och ytterligare konsolideringskonto
-                  href: ../financials/general-ledger/tasks/create-consolidation-groups.md
-                - name: Huvudkontotyper
-                  href: ../financials/general-ledger/main-account-types.md
-                - name: Skapa ett huvudkonto
-                  href: ../financials/general-ledger/tasks/create-main-account.md
-                - name: Planera kontoplanen
-                  href: ../financials/general-ledger/plan-chart-of-accounts.md
-                - name: Kvitta transaktioner mellan huvudbokskonton
-                  href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
-                - name: Ställ in alias för huvudbokskonto
-                  href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
-                - name: Ställ in kategorier för huvudkonto
-                  href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
-                - name: Utforskare för redovisningskälla
-                  href: ../financials/accounts-payable/accounting-source-explorer.md
-                - name: Redovisningsfördelningar
-                  href: ../financials/accounts-payable/accounting-distributions.md
-                - name: Bearbeta allokeringar
-                  href: ../financials/general-ledger/process-allocations.md
-                - name: Ekonomiska dimensioner
-                  href: ../financials/general-ledger/financial-dimensions.md
-                - name: Konvertera redovisnings- eller rapporteringsvalutor
-                  href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
-                - name: Konsolideringskontogrupper och konton
-                  href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
-                - name: Översikt över konsolidering och eliminering
-                  href: ../financials/budgeting/consolidation-elimination-overview.md
-                - name: 'Räkenskapskalendrar, räkenskapsår och perioder'
-                  href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
-                - name: Konfigurera kontostrukturer
-                  href: ../financials/general-ledger/configure-account-structures.md
-                - name: Dubbel valuta
-                  href: ../financials/general-ledger/dual-currency.md
-            - name: Journaler och redovisningar
-              items:
-                - name: Hantering av allmänna journaler
-                  href: ../financials/general-ledger/general-journal-processing.md
-                - name: Bokför periodiska journaler
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: Bearbeta journal för redovisningsallokering
-                  href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: Ställ in koncernintern redovisning
-                  href: ../financials/general-ledger/intercompany-accounting-setup.md
-                - name: Allokeringsregler för redovisning
-                  href: ../financials/general-ledger/ledger-allocation-rules.md
-                - name: Skapa avancerade regler för journaler
-                  href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
-                - name: Skapa och tilldela avancerade regelstrukturer
-                  href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
-                - name: Redovisningsjournaltyper
-                  href: ../financials/general-ledger/ledger-journal-types.md
-                - name: Skapa och validera journaler
-                  href: ../financials/general-ledger/tasks/create-validate-journals.md
-                - name: Visa poster eller transaktioner i redovisningsjournal
-                  href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
-                - name: Visa en relaterad koncernintern verifikation från en journal
-                  href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                - name: Skapa en post i en redovisningsjournal med hjälp av en mall
-                  href: ../financials/general-ledger/tasks/create-journal-entry-template.md
-                - name: Skapa periodiseringtransaktioner i redovisningen
-                  href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
-                - name: Publicera journalrader och dokument från Excel
-                  href: ../financials/general-ledger/open-lines-excel-journals-documents.md
-                - name: Visa poster i redovisningsjournal och transaktioner
-                  href: ../financials/general-ledger/view-journal-entries-transactions.md
-                - name: Journalföra bokförda poster i redovisningsjournal
-                  href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: Valutaomvärdering i ett konsolideringsföretag
-                  href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
-                - name: Omräkning i utländsk valuta för redovisning
-                  href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Importera valutakurser
-                  href: ../financials/general-ledger/import-currency-exchange-rates.md
-                - name: En verifikation
-                  href: ../financials/general-ledger/one-voucher.md
-                - name: Redovisningskvittningar
-                  href: ../financials/general-ledger/ledger-settlements.md
-            - name: Stängning vid periodslut
-              items:
-                - name: Stänga redovisningen vid periodslutet
-                  href: ../financials/general-ledger/close-general-ledger-at-period-end.md
-                - name: Arbetsyta för räkenskapsperiodens stängning
-                  href: ../financials/general-ledger/financial-period-close-workspace.md
-                - name: Årsbokslut
-                  href: ../financials/general-ledger/year-end-close.md
-                - name: Stänga räkenskapsåret
-                  href: ../financials/general-ledger/tasks/close-fiscal-year.md
-                - name: Masstäng räkenskapsperiod
-                  href: ../financials/general-ledger/tasks/mass-financial-period-close.md
-            - name: Moms
-              items:
-                - name: Momsöversikt
-                  href: ../financials/general-ledger/indirect-taxes-overview.md
-                - name: Momssatser grundade på bidragsunderlaget och beräkningsmetoder
-                  href: ../financials/general-ledger/marginal-base-field.md
-                - name: Momsbetalningar och avrundningsregler
-                  href: ../financials/general-ledger/round-sales-tax-payments.md
-                - name: Momsberäkningsmetoder i fältet Ursprung
-                  href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
-                  href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: Beräkna och justera moms på en leverantörsfaktura
-                  href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: Skapa en momsbetalning
-                  href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
-                - name: Skapa momstransaktioner i dokument
-                  href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: Ställ in redovisningsbokföringsgrupper för moms
-                  href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: Ställ in momsmyndigheter
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: Ställ in momskoder
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: Ställ in momsgrupper och artikelmomsgrupper
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: Ställ in momsrapporteringskoder
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: Ställ in momskvittningsperioder
-                  href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Ställ in källskatt
-                  href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
-                - name: Visa bokförda momstransaktioner
-                  href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md
-        - name: Offentlig sektor
-          href: ../financials/public-sector/public-sector-functionality.md
           items:
             - name: Plan för funktioner för offentlig sektor
               href: ../financials/public-sector/plan-public-sector-functionality.md
@@ -2429,7 +2303,8 @@
                   href: ../financials/localizations/rus-ledger-transactions-preview.md
                 - name: Ställa in valutakurser för valutatransaktioner
                   href: ../financials/localizations/rus-exchange-difference.md
-                - name: Importera valutakurser från CBRF ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: Importera valutakurser från ryska centralbanken
+                  href: ../financials/general-ledger/import-currency-exchange-rates.md
             - name: Förskottsmottagare
               href: ../financials/localizations/rus-advance-holders.md
               items:
@@ -2453,6 +2328,8 @@
                   href: ../financials/localizations/rus-currency-sale-purchase.md
             - name: Moms
               items:
+                - name: Lokalt specifik bokföring av utgående moms
+                  href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
                 - name: Moms för skatteombud
                   href: ../financials/localizations/rus-tax-agent.md
                 - name: Momsdeklaration
@@ -2535,6 +2412,22 @@
                   href: ../financials/localizations/rus-officials.md
                 - name: Företagsdivisioner
                   href: ../financials/localizations/rus-company-divisions.md
+            - name: Uppskjutna
+              items:
+                - name: Ställ in uppskjutande
+                  href: ../financials/localizations/rus-set-up-deferrals.md
+                - name: Skapa eller generera referenser
+                  href: ../financials/localizations/rus-create-generate-deferrals.md
+                - name: Inleverans av uppskjutningar
+                  href: ../financials/localizations/rus-deferral-transactions.md
+                - name: Avskrivning uppskjutningar
+                  href: ../financials/localizations/rus-write-off-deferral.md
+                - name: Kassera uppskjutningar
+                  href: ../financials/localizations/rus-dispose-deferrals.md
+                - name: Inventering av uppskjutningar
+                  href: ../financials/localizations/rus-counting-deferrals.md
+                - name: Rapporter för uppskjutningar
+                  href: ../financials/localizations/rus-reporting-deferrals.md
         - name: Saudiarabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2949,204 +2842,204 @@
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
             - name: Förhandsgranska PDF-dokument med ett inbäddat visningsprogram
               href: ../dev-itpro/analytics/preview-pdf-documents.md?toc=/fin-and-ops/toc.json
-    - name: Elektronisk rapportering
-      items:
-        - name: Översikt över elektronisk rapportering
-          href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
-        - name: Konfigurationer
+        - name: Elektronisk rapportering
           items:
-            - name: Skapa konfigurationer
-              href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
-            - name: Förbered komponenter i den elektroniska rapporteringslösningen
+            - name: Översikt över elektronisk rapportering
+              href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
+            - name: Konfigurationer
               items:
-                - name: Utforma domänspecifik datamodell
-                  href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Förbered programspecifika metadata
+                - name: Skapa konfigurationer
+                  href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
+                - name: Förbered komponenter i den elektroniska rapporteringslösningen
                   items:
-                    - name: (ER) Förbered program-metadata som ska användas i RCS
-                      href: ../dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/fin-and-ops/toc.json
-                    - name: (RCS) Tillgå programmets metadata med hjälp av ER-konfiguration
-                      href: ../dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/fin-and-ops/toc.json
-                    - name: (RCS) Tillgå programmets metadata med hjälp av anslutna program
-                      href: ../dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/fin-and-ops/toc.json
-                - name: Definiera modellmappningar och välja datakällor
-                  href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Mappa datamodell till utvalda datakällor
-                  href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Skapa en formatkonfiguration
-                  href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Mappa de skapade formatkomponenterna till datamodellelement
-                  href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Testa den förberedda ER‑lösningen i målprogrammet
+                    - name: Utforma domänspecifik datamodell
+                      href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
+                    - name: Förbered programspecifika metadata
+                      items:
+                        - name: (ER) Förbered program-metadata som ska användas i RCS
+                          href: ../dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/fin-and-ops/toc.json
+                        - name: (RCS) Tillgå programmets metadata med hjälp av ER-konfiguration
+                          href: ../dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/fin-and-ops/toc.json
+                        - name: (RCS) Tillgå programmets metadata med hjälp av anslutna program
+                          href: ../dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/fin-and-ops/toc.json
+                    - name: Definiera modellmappningar och välja datakällor
+                      href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
+                    - name: Mappa datamodell till utvalda datakällor
+                      href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
+                    - name: Skapa en formatkonfiguration
+                      href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
+                    - name: Mappa de skapade formatkomponenterna till datamodellelement
+                      href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Testa den förberedda ER‑lösningen i målprogrammet
+                  items:
+                    - name: (ER) Importera konfigurationer från RCS
+                      href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
+                    - name: Generera elektroniska dokument för betalningar med en formatkonfiguration
+                      href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
+                - name: Uppgradera formatet genom att implementera en ny basversion för formatet
+                  href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
+            - name: Formeldesigner i elektronisk rapportering
+              href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
+            - name: Hantera ER-modellmappning i separata ER-konfigurationer
+              href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: Välj datamodelldefinitioner när du skapar format
+              href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: Generera rapporter genom att lägga till innehåll som råa XML-data
+              href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
+            - name: (ER) Korsföretags datakällor i elektronisk rapportering
+              href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
+            - name: Utforma ER-format för att skapa utgående elektroniska dokument i olika format
               items:
-                - name: (ER) Importera konfigurationer från RCS
-                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/fin-and-ops/toc.json
-                - name: Generera elektroniska dokument för betalningar med en formatkonfiguration
-                  href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-            - name: Uppgradera formatet genom att implementera en ny basversion för formatet
-              href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
-        - name: Formeldesigner i elektronisk rapportering
-          href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-        - name: Hantera ER-modellmappning i separata ER-konfigurationer
-          href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
-        - name: Välj datamodelldefinitioner när du skapar format
-          href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-        - name: Generera rapporter genom att lägga till innehåll som råa XML-data
-          href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
-        - name: (ER) Korsföretags datakällor i elektronisk rapportering
-          href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-        - name: Utforma ER-format för att skapa utgående elektroniska dokument i olika format
-          items:
-            - name: (ER) Utforma en konfiguration för rapportgenerering i OPENXML-format
-              href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: (ER) Utforma konfigurationer för att generera rapporter i Word-format
-              href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Utforma konfigurationer för att fylla i PDF-mallar
-              href: ../dev-itpro/analytics/er-fillable-pdf.md?toc=/fin-and-ops/toc.json
-        - name: Bädda in bilder och former
-          items:
-            - name: (ER) Bädda in bilder och former i dokument som du skapar
-              href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
-            - name: Exempel på hur du bäddar in bilder och figurer
+                - name: (ER) Utforma en konfiguration för rapportgenerering i OPENXML-format
+                  href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: (ER) Utforma konfigurationer för att generera rapporter i Word-format
+                  href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Utforma konfigurationer för att fylla i PDF-mallar
+                  href: ../dev-itpro/analytics/er-fillable-pdf.md?toc=/fin-and-ops/toc.json
+            - name: Bädda in bilder och former
               items:
-                - name: Utforma konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
-                  href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: Granska konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
-                  href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Skapa rapporter i Office-format som har inbäddade bilder
-                  href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
-        - name: Ändra format för elektronisk rapportering genom att tillämpa mallar från Excel igen
-          href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-        - name: Skapa versionsberoende ER-konfigurationer för Finance and Operations
-          items:
-            - name: Definiera ER‑konfigurationers beroende av andra komponenter
-              href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
-        - name: Designa en ER-lösning för att använda ekonomiska dimensioner
-          items:
-            - name: Utforma datamodeller som använder ekonomiska dimensioner som datakällor
-              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-            - name: Mappa modeller som använder ekonomiska dimensioner som datakällor
-              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-            - name: Utforma rapporter som använder ekonomiska dimensioner som datakällor
-              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-            - name: Köra rapporter som använder ekonomiska dimensioner som datakällor
-              href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-        - name: Utforma ER-format för inventering och summering genom att använda information från genererad utmatning
-          items:
-            - name: Skapa format för att utföra inventering och summering
-              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurera format för att utföra inventering och summering
-              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-            - name: Använda beräkningar för att skapa utdata för inventering och summering
-              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-            - name: Köra format för att utföra inventering och summering
-              href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-        - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
-          items:
-            - name: Utforma format som dynamiskt lägger till kolumner i rapporter från Excel som horisontellt expanderbara intervall
-              href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-            - name: Kör format som dynamiskt lägger till kolumner till rapporter från Excel som horisontellt expanderbara intervall
-              href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-        - name: Använd dokumenthanteringsfiler i formatutdata
-          items:
-            - name: Förbered datamodeller för att använda dokumenthanteringsfiler i ER‑utdata
-              href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-            - name: Utöka datamodeller för att använda dokumenthanteringsfiler i ER‑utdata
-              href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-            - name: Skapa format som ska använda dokumenthanteringsfiler i ER‑utdata
-              href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-            - name: Köra format som ska använda dokumenthanteringsfiler i ER‑utdata
-              href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-            - name: Ändra och köra format som ska använda dokumenthanteringsfiler i ER‑utdata
-              href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-        - name: Uppdatera programdata med elektronisk rapportering
-          items:
-            - name: Generera elektroniska dokument och uppdatera programdata
-              href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
-            - name: Importera konfigurationer för att skapa dokument med programdata
-              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Utforma konfigurationer för att skapa dokument med programdata
-              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-            - name: Ändra modeller och mappningar för att skapa dokument med programdata
-              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-            - name: Ändra format för att skapa dokument med programdata
-              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
-            - name: Skapa dokument som omfattar programdata
-              href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
-        - name: Importera data från inkommande filer med hjälp av ER-lösningar
-          items:
-            - name: Tolka inkommande dokument i olika format
-              href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurera dataimport från manuellt markerade filer
+                - name: (ER) Bädda in bilder och former i dokument som du skapar
+                  href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
+                - name: Exempel på hur du bäddar in bilder och figurer
+                  items:
+                    - name: Utforma konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                      href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
+                    - name: Granska konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                      href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
+                    - name: Skapa rapporter i Office-format som har inbäddade bilder
+                      href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
+            - name: Ändra format för elektronisk rapportering genom att tillämpa mallar från Excel igen
+              href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
+            - name: Skapa versionsberoende ER-konfigurationer för Finance and Operations
               items:
-                - name: Skapa konfigurationer för att importera data från en extern XML‑fil
-                  href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurera dataimport i batchläge från filer i SharePoint
-              href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Importera filer i XML‑format
+                - name: Definiera ER‑konfigurationers beroende av andra komponenter
+                  href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+            - name: Designa en ER-lösning för att använda ekonomiska dimensioner
               items:
-                - name: Importera filer i XML-format med valfria attribut
-                  href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurera ER‑format så att XML-filer importeras med valfria attribut
-                  href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                - name: Utforma datamodeller som använder ekonomiska dimensioner som datakällor
+                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
+                - name: Mappa modeller som använder ekonomiska dimensioner som datakällor
+                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
+                - name: Utforma rapporter som använder ekonomiska dimensioner som datakällor
+                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
+                - name: Köra rapporter som använder ekonomiska dimensioner som datakällor
+                  href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
+            - name: Utforma ER-format för inventering och summering genom att använda information från genererad utmatning
+              items:
+                - name: Skapa format för att utföra inventering och summering
+                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurera format för att utföra inventering och summering
+                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
+                - name: Använda beräkningar för att skapa utdata för inventering och summering
+                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
+                - name: Köra format för att utföra inventering och summering
+                  href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
+            - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
+              items:
+                - name: Utforma format att dynamiskt lägga till kolumner i Excel-rapporter som horisontellt expanderbara intervall
+                  href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
+                - name: Kör format som dynamiskt lägger till kolumner till rapporter från Excel som horisontellt expanderbara intervall
+                  href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
+            - name: Använd dokumenthanteringsfiler i formatutdata
+              items:
+                - name: Förbered datamodeller för att använda dokumenthanteringsfiler i ER‑utdata
+                  href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
+                - name: Utöka datamodeller att använda dokumenthanteringsfiler i ER‑utdata
+                  href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
+                - name: Skapa format som ska använda dokumenthanteringsfiler i ER‑utdata
+                  href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
+                - name: Köra format som ska använda dokumenthanteringsfiler i ER‑utdata
+                  href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
+                - name: Ändra och köra format som ska använda dokumenthanteringsfiler i ER‑utdata
+                  href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
+            - name: Uppdatera programdata med elektronisk rapportering
+              items:
+                - name: Generera elektroniska dokument och uppdatera programdata
+                  href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
+                - name: Importera konfigurationer för att skapa dokument med programdata
+                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
+                - name: Utforma konfigurationer för att skapa dokument med programdata
+                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
+                - name: Ändra modeller och mappningar för att skapa dokument med programdata
+                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
+                - name: Ändra format för att skapa dokument med programdata
+                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
+                - name: Skapa dokument som omfattar programdata
+                  href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+            - name: Importera data från inkommande filer med hjälp av ER-lösningar
+              items:
+                - name: Tolka inkommande dokument i olika format
+                  href: ../dev-itpro/analytics/er-parse-incoming-documents.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurera dataimport från manuellt markerade filer
+                  items:
+                    - name: Skapa konfigurationer för att importera data från en extern XML‑fil
+                      href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurera dataimport i batchläge från filer i SharePoint
+                  href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
+                - name: Importera filer i XML‑format
+                  items:
+                    - name: Importera filer i XML-format med valfria attribut
+                      href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
+                    - name: Konfigurera ER‑format så att filer i XML-format importeras med valfria attribut
+                      href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
             - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
-        - name: Livscykel för konfiguration
-          items:
-            - name: Hantera livscykeln för konfigurationer
-              href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
-            - name: Ladda upp konfigurationer till Lifecycle Services
-              href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-            - name: Importera konfigurationer från Lifecycle Services
-              href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-            - name: Ladda ned konfigurationer från Lifecycle Services
-              href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-            - name: Importera konfigurationer
-              href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Hämta ER-konfigurationer från RCS-databasen
+            - name: Livscykel för konfiguration
               items:
-                - name: Hämta ER-konfigurationer från ER-databasen för RCS‑typen
-                  href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Importera konfigurationer från RCS
-                  href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
-        - name: Använd elektroniska rapporteringslösningar i Finance and Operations
-          items:
-            - name: Konfigurera ramverket
+                - name: Hantera livscykeln för konfigurationer
+                  href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
+                - name: Ladda upp konfigurationer till Lifecycle Services
+                  href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Importera konfigurationer från Lifecycle Services
+                  href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
+                - name: Ladda ned konfigurationer från Lifecycle Services
+                  href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
+                - name: Importera konfigurationer
+                  href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
+                - name: Hämta ER-konfigurationer från RCS-databasen
+                  items:
+                    - name: Hämta konfigurationer från ER-databasen för RCS‑typen
+                      href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
+                    - name: Importera konfigurationer från RCS
+                      href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
+            - name: Använd elektroniska rapporteringslösningar i Finance and Operations
               items:
-                - name: Konfigurera ramverket för elektronisk rapportering
-                  href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
-                - name: Skapa konfigurationsleverantörer och markera dem som aktiva
-                  href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Destinationer
+                - name: Konfigurera ramverket
+                  items:
+                    - name: Konfigurera ramverket för elektronisk rapportering
+                      href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+                    - name: Skapa konfigurationsleverantörer och markera dem som aktiva
+                      href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Destinationer
+                  items:
+                    - name: Översikt över destinationer
+                      href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
+                    - name: Konfigurera destinationer
+                      href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
+                - name: Validera genererade rapporter automatiskt
+                  items:
+                    - name: Spåra genererade rapportresultat och jämför dem med baslinjevärden
+                      href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
+                    - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
+                      href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
+                    - name: Automatisera testning med elektronisk rapportering
+                      href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
+                - name: Automatisera affärsprocesser med hjälp av elektroniska rapporteringskonfigurationer
+                  items:
+                    - name: Konfigurera elektronisk rapportering för att hämta data till Power BI
+                      href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
+                    - name: Generera utskrivbara formulär för fritextfakturor (FTI)
+                      href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
+                - name: Spåra körning av ER-format för att felsöka prestandaproblem
+                  href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+            - name: API för ER‑ramverk
               items:
-                - name: Översikt över destinationer
-                  href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
-                - name: Konfigurera destinationer
-                  href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Validera genererade rapporter automatiskt
-              items:
-                - name: Spåra genererade rapportresultat och jämför dem med baslinjevärden
-                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
-                - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
-                  href: ../dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/fin-and-ops/toc.json
-                - name: Automatisera testning med elektronisk rapportering
-                  href: ../dev-itpro/analytics/er-automate-testing.md?toc=/fin-and-ops/toc.json
-            - name: Automatisera affärsprocesser med hjälp av elektroniska rapporteringskonfigurationer
-              items:
-                - name: Konfigurera elektronisk rapportering för att hämta data till Power BI
-                  href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
-                - name: Generera utskrivbara formulär för fritextfakturor (FTI)
-                  href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
-            - name: Spåra körningen av ER-format för att felsöka prestandaproblem
-              href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
-        - name: API för ER‑ramverk
-          items:
-            - name: Utöka listan med funktioner för elektronisk rapportering
-              href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
-            - name: 'Ändringar av API:et för ramverket för elektronisk rapportering för Application update 7.3'
-              href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
-            - name: Ange anpassad lagringsplats för skapade dokument
-              href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
+                - name: Utöka listan med funktioner för elektronisk rapportering
+                  href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
+                - name: 'Ändringar av API:et för ramverket för elektronisk rapportering för Application update 7.3'
+                  href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+                - name: Ange anpassad lagringsplats för skapade dokument
+                  href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
         - name: Inbäddade analyslösningar
           items:
             - name: Inbäddad Power BI i arbetsytor
@@ -3279,8 +3172,99 @@
               href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
             - name: Spåra löpande genomsnittlig kostnad per lagerdimension
               href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
-    - name: Logistik
+    - name: Försörjningskedja
       href: ../supply-chain/index.md
+    - name: Tillgångshantering
+      items:
+        - name: Översikt av tillgångshantering
+          href: ../supply-chain/asset-management/index.md
+          items:
+            - name: Funktionsplatser och tillgångar
+              href: ../supply-chain/asset-management/overview/functional-locations-and-objects.md
+            - name: Tillgångar och arbetsorder
+              href: ../supply-chain/asset-management/overview/objects-and-work-orders.md
+        - name: Inställning för funktionsplatser
+          items:
+            - name: Livscykelstadier för funktionsplats
+              href: ../supply-chain/asset-management/setup-for-functional-locations/functional-location-stages.md
+            - name: Underhåll av attributtyper
+              href: ../supply-chain/asset-management/setup-for-functional-locations/functional-location-types.md
+            - name: Funktionsplatstyper
+              href: ../supply-chain/asset-management/setup-for-functional-locations/specification-types.md
+        - name: Funktionsplatser
+          items:
+            - name: Introduktion till funktionsplatser
+              href: ../supply-chain/asset-management/functional-locations/introduction-to-functional-locations.md
+            - name: Skapa funktionsplatser
+              href: ../supply-chain/asset-management/functional-locations/create-functional-locations.md
+            - name: Installera tillgångar på funktionsplatser
+              href: ../supply-chain/asset-management/functional-locations/install-objects-on-functional-locations.md
+        - name: Inställning för tillgångar
+          items:
+            - name: Tillgångstyper
+              href: ../supply-chain/asset-management/setup-for-objects/object-types.md
+            - name: Villkorsutvärdering
+              href: ../supply-chain/asset-management/setup-for-objects/condition-assessment.md
+            - name: Tillgångstillverkare och modell
+              href: ../supply-chain/asset-management/setup-for-objects/product-and-model.md
+            - name: Räknare
+              href: ../supply-chain/asset-management/setup-for-objects/counters.md
+            - name: Parametrar för tillgångshantering
+              href: ../supply-chain/asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+            - name: Tillgångs livscykeltillstånd
+              href: ../supply-chain/asset-management/setup-for-objects/object-stages.md
+            - name: Tillgångs tjänstenivå
+              href: ../supply-chain/asset-management/setup-for-objects/object-priorities.md
+            - name: Kritiskt för tillgång
+              href: ../supply-chain/asset-management/setup-for-objects/object-criticalities.md
+            - name: Tillgångsdokument
+              href: ../supply-chain/asset-management/setup-for-objects/object-documents.md
+            - name: Underhållsarbetare och arbetargrupper
+              href: ../supply-chain/asset-management/setup-for-objects/workers-and-worker-groups.md
+        - name: Tillgångar
+          items:
+            - name: Introduktion till tillgångar
+              href: ../supply-chain/asset-management/objects/introduction-to-objects.md
+            - name: Skapa en tillgång
+              href: ../supply-chain/asset-management/objects/create-an-object.md
+            - name: Flernivåtillgångar
+              href: ../supply-chain/asset-management/objects/multi-level-objects.md
+            - name: 'Flytta, ersätt och installera tillgångar'
+              href: ../supply-chain/asset-management/objects/move-replace-and-install-objects.md
+            - name: Skapa tillgångar baserade på inköpsorder
+              href: ../supply-chain/asset-management/objects/create-objects-based-on-purchase-orders.md
+            - name: Tillgångsstruktur
+              href: ../supply-chain/asset-management/objects/object-bom.md
+            - name: Historik för tillgångshändelse
+              href: ../supply-chain/asset-management/objects/object-timeline.md
+            - name: Tillgångsvy
+              href: ../supply-chain/asset-management/objects/object-view.md
+            - name: Översikt av tillgångsattribut
+              href: ../supply-chain/asset-management/objects/object-specification-overview.md
+        - name: Inställning för underhållsbegäran
+          items:
+            - name: Underhållsbegäranden
+              href: ../supply-chain/asset-management/setup-for-maintenance-requests/requests.md
+            - name: Underhållsbegärans livscykeltillstånd
+              href: ../supply-chain/asset-management/setup-for-maintenance-requests/request-stages.md
+            - name: Typer av underhållsbegäran
+              href: ../supply-chain/asset-management/setup-for-maintenance-requests/request-types.md
+            - name: Ansvariga underhållsarbetare
+              href: ../supply-chain/asset-management/setup-for-maintenance-requests/responsible-workers.md
+        - name: Hantera underhållsbegäranden
+          items:
+            - name: Underhållsbegäranden
+              href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-overview.md
+            - name: Skapa en underhållsbegäran
+              href: ../supply-chain/asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+            - name: Skapa en arbetsorder från en underhållsbegäran
+              href: ../supply-chain/asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+            - name: Tillgångslån
+              href: ../supply-chain/asset-management/manage-maintenance-requests/asset-loan.md
+            - name: Ankommande och avgående tillgångar
+              href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+            - name: Underhållsbegäransrapporter
+              href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
     - name: Huvudplanering
       href: ../supply-chain/master-planning/master-planning-home-page.md
       items:
@@ -3289,6 +3273,8 @@
           items:
             - name: Ställ in huvudplaner
               href: ../supply-chain/master-planning/master-planning-setup.md
+            - name: Inställningsguide för huvudplanering
+              href: ../supply-chain/master-planning/master-planning-setup-wizard.md
             - name: Disponeringsinställningar
               href: ../supply-chain/master-planning/coverage-settings.md
             - name: Definiera disponeringsregler för artiklar
@@ -3363,7 +3349,7 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Ändra en efterfrågeprognos manuellt
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Appen Dynamics 365 for Unified Operations Mobile
+    - name: Mobilapp
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
         - name: Tillgängliga mobila arbetsytor
@@ -3615,11 +3601,29 @@
               href: organization-administration/tasks/view-workflow-history.md
             - name: Konfigurera systemet för att skicka arbetsflödesrelaterad e-post till användare
               href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
+            - name: Arbetsflödestyper
+              items:
+                - name: Skapar en arbetsflödestyp
+                  href: organization-administration/workflow-type-create.md
+                - name: Checklista för arbetsflödestyp
+                  href: organization-administration/workflow-type-checklist.md
+                - name: Skapa en arbetsflödeskategori
+                  href: organization-administration/workflow-type-category.md
+                - name: Skapa en fråga för en arbetsflödestyp
+                  href: organization-administration/workflow-type-query.md
+                - name: Skapa en ny arbetsflödestyp
+                  href: organization-administration/workflow-type-create-new.md
+                - name: Skapa en arbetsflödesdokumentklass
+                  href: organization-administration/workflow-type-document-create.md
+                - name: Skapa en SubmitToWorkflow-klass
+                  href: organization-administration/workflow-type-submit-to-workflow.md
+                - name: Associera en arbetsflödesdokumentklass med en arbetsflödestyp
+                  href: organization-administration/workflow-type-associate-document.md
             - name: Rapport för arbetsflödestyper
               href: organization-administration/workflow-types-report.md
             - name: Vanliga frågor om arbetsflöde
               href: organization-administration/workflow-FAQ.md
-        - name: Notifieringar
+        - name: Aviseringar
           href: get-started/alerts-overview.md
           items:
             - name: Skapa notifieringsregler
@@ -4491,6 +4495,8 @@
               href: ../supply-chain/warehousing/tasks/create-work-class.md
             - name: Hantera lagerställearbetare
               href: ../supply-chain/warehousing/manage-warehouse-workers.md
+            - name: Uppskjuten bearbetning av lagerhållningsarbete
+              href: ../supply-chain/warehousing/deferred-put.md
         - name: Delvis frisläppning och delleverans
           items:
             - name: Delleverans av en transportlast
