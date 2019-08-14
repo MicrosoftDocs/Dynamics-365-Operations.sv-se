@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617330"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790431"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
 
@@ -50,6 +50,7 @@ Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens transa
 - **Kundkonto** – Validerar att kundkontot i butikens transaktionsregister finns i huvudkontorets kundmall.
 - **Radräkning** – Validerar att antalet rader, som anges i transaktionshuvudregistret, motsvarar antalet rader i försäljningstransaktionsregistren.
 - **Pris inklusive moms** – Validerar att parametern **Pris inklusive moms** är konsekvent på transaktionsraderna.
+- **Betalningsbelopp** – Validerar att betalningsposterna stämmer med betalningsbelopp i huvudet.
 - **Bruttobelopp** – Validerar att bruttobeloppet i huvudet är lika med summan av nettobeloppen på raderna plus momsbeloppet.
 - **Nettobelopp** – Validerar att nettobeloppet i huvudet är lika med summan av nettobeloppen på raderna.
 - **Under-/överbetalning** – Validerar att skillnaden mellan bruttobeloppet i huvudet och betalningsbeloppet inte överskrider den maximala konfigurationen av underbetalning/överbetalning.
@@ -58,6 +59,7 @@ Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens transa
 - **Presentkortsartikel** – Det går inte att returnera presentkortsartiklar i Retail. Saldot på ett presentkort kan dock betalas ut kontant. En presentkortsartikel som bearbetas som en returrad i stället för en utbetalningsrad gör att utdragsbokföringsprocessen misslyckas. Valideringsprocessen för presentkortsartiklar garanterar att de enda returraderna för presentkortsartiklar i butikstransaktionsregistren utgörs av rader för kontantutbetalning av presentkort.
 - **Negativt pris** – Validerar att det inte finns några negativa pristransaktionsrader.
 - **Artikel och variant** – Validerar att artiklar och varianter på transaktionsraderna finns i artikel- och varianthuvudfilen.
+- **Skattebelopp** – Validerar att skatteposterna stämmer med skattebeloppen på raderna. 
 
 ## <a name="set-up-the-consistency-checker"></a>Ställ in konsekvenskontrollen
 
