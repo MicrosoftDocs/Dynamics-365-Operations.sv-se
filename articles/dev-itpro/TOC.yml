@@ -86,7 +86,7 @@
       items:
         - name: X++ och felsökningsfunktioner
           href: dev-tools/new-x-debugger-features.md
-        - name: Felsöka X ++ mot kopior av produktionsdatabaser
+        - name: Felsöka X++ mot kopior av produktionsdatabaser
           href: dev-tools/debug-x-issue-against-copy-of-production.md
         - name: Felsöka kod av typen X++
           href: dev-tools/debug-xpp.md
@@ -106,10 +106,28 @@
           items:
             - name: Språkreferens för X++
               href: dev-ref/xpp-language-reference.md
-            - name: Variabler och datatyper för X++
-              href: dev-ref/xpp-variables-data-types.md
-            - name: 'Uttryck, loopar och undantagshantering för X++'
-              href: dev-ref/xpp-statements-loops.md
+            - name: Variabler och datatyper
+              items:
+                - name: Variabler
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: Primitiva datatyper
+                  href: dev-ref/xpp-data-primitive.md
+                - name: Sammansatta datatyper
+                  href: dev-ref/xpp-data-composite.md
+                - name: Samlingsklasser
+                  href: dev-ref/xpp-data-collection.md
+                - name: Utökade datatyper
+                  href: dev-ref/xpp-data-edt.md
+            - name: 'Uttryck, loopar och undantagshantering'
+              items:
+                - name: 'Kommentarer, användning och utskrift'
+                  href: dev-ref/xpp-statements-loops.md
+                - name: Villkorssatser
+                  href: dev-ref/xpp-conditional.md
+                - name: Loopa utdrag
+                  href: dev-ref/xpp-loops.md
+                - name: Hantering av undantag
+                  href: dev-ref/xpp-exceptions.md
             - name: 'Fel vid anslutning till SQL, X++-undantag'
               href: dev-ref/sql-connection-error.md
             - name: Operatorer för X++
@@ -118,11 +136,13 @@
               href: dev-ref/xpp-operator-precedence.md
             - name: Klasser och metoder för X++
               href: dev-ref/xpp-classes-methods.md
-            - name: Dataval och manipulering för X ++
+            - name: Dataval och manipulering för X++
               href: dev-ref/xpp-data-query.md
+            - name: Dataåtkomst genom att använda SysDa API
+              href: dev-ref/sysda.md
             - name: Makron för X++
               href: dev-ref/xpp-macros.md
-            - name: Attributklasser för X ++
+            - name: Attributklasser för X++
               href: dev-ref/xpp-attribute-classes.md
             - name: 'Jämförelse mellan X++ och C#'
               href: dev-ref/xpp-cs-comparison.md
@@ -436,8 +456,12 @@
           href: user-interface/page-navigation.md
         - name: Sidlayout i webbklienten
           href: user-interface/page-layout.md
-        - name: Dynamics Symbol-teckensnitt
+        - name: Dynamics symbolteckensnitt
           href: user-interface/symbol-font.md
+        - name: Sparade vyer
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: Skapa formulär som fullt ut utnyttjar sparade vyer
+          href: user-interface/understanding-saved-views.md
         - name: Testa formulär som använder egna mönster
           href: user-interface/testing-forms-custom-patterns.md
         - name: 'Skapa delbara, säkrade URL:er (djuplänkar)'
@@ -494,9 +518,9 @@
           href: user-interface/slider-messagebox.md
         - name: 'API för meddelandecenter, meddelandefält och meddelandeinformation'
           href: user-interface/messaging-api-center-bar-details.md
-        - name: 'Frågor och svar för meddelandecenter, meddelandefält och meddelandeinformation'
+        - name: 'Vanliga frågor om meddelandecenter, meddelandefält och meddelandeinformation'
           href: user-interface/messaging-user.md
-    - name: Riktlinjer för primärt formulärmönster
+    - name: Riktlinjer för formulärmönster
       items:
         - name: Formulärmönster för migrerade formulär
           href: user-interface/select-form-pattern.md
@@ -1129,7 +1153,7 @@
           href: migration-upgrade/on-prem-upgrade.md
     - name: Snabbkorrigeringar
       items:
-        - name: Ladda ned snabbkorrigeringar från Lifecycle Services
+        - name: Få uppdateringar från Lifecycle Services
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Tillämpa uppdateringar i molnmiljöer
           href: deployment/apply-deployable-package-system.md
@@ -1162,6 +1186,8 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: Exportera B2B-användare till Azure AD
       href: sysadmin/implement-b2b.md
+    - name: Ange tidsgräns för inaktiv session
+      href: sysadmin/session-idle-timeout.md
     - name: Rollbaserad säkerhet
       href: sysadmin/role-based-security.md
       items:
@@ -1310,6 +1336,8 @@
   items:
     - name: Få hjälp med Finance and Operations och Lifecycle Services
       href: lifecycle-services/lcs-support.md
+    - name: Översikt över Dynamics 365-support
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
     - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
       href: lifecycle-services/21vianet-support.md
     - name: Logga ett Premier-supportärende
