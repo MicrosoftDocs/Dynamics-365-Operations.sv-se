@@ -3,25 +3,25 @@ title: Konfigurera den globala adressboken
 description: Använd den här proceduren för att ange de förvalda värdena och säkerhetpolicyerna för globala adressboken.
 author: kfend
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/23/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirParameters
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 230d3c089189ddb6186bc2ca4b647b8ad5b003ce
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3994c7bb77e9821a880dc009681e113013129850
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545703"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1851881"
 ---
 # <a name="configure-the-global-address-book"></a>Konfigurera den globala adressboken
 
@@ -31,19 +31,18 @@ Använd den här proceduren för att ange de förvalda värdena och säkerhetpol
 
 Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Denna uppgift är avsedd för planerings- och konfigurationsteamet.
 
-1. Gå till Organisationsadministration > Global adressbok > Parametrar för global adressbok.
-2. Välj hur namn ska visas i fältet Namnordning.
-3. Välj om du vill ta bort parter som inte har tilldelats en roll.
-4. Välj om du vill göra en sökning efter dubblettposter.
-5. Välj om du vill visa DUNS-numret på adresser.
-6. Välj om du vill göra en sökning efter unika DUNS-nummer.
-7. Välj ett alternativ i fältet Part.
-8. Välj ett alternativ i fältet Kund.
-9. Välj ett alternativ i fältet Säljare.
-10. Välj ett alternativ i fältet Potentiell kund.
-11. Välj ett alternativ i fältet Konkurrent.
-12. Klicka på fliken Säkerhet för privat plats.
-13. Hitta och markera önskad post i listan.
-    * Håll Skift-tangenten nedtryckt om du vill markera flera roller som ska läggas till i fönstret Valda roller och klicka sedan på pilen för att lägga till de valda rollerna.  
-14. Klicka på Spara.
+1. I navigeringsfönster, gå till **Moduler > Organisationsadministration > Global adressbok > Parametrar för global adressbok**.
+2. Välj hur namn ska visas i fältet **Namnordning**.
+3. I **Ta bort parter utan roller** väljer du vill ta bort parter med som inte har tilldelats en roll.
+4. I **Använd dubblettkontroll** väljer du om du vill söka efter dubblettposter.
+5. I **Visa DUNS-nummer på adresser** väljer du om du vill visa DUNS-numret på adresser.
+6. I **Sök efter unikt DUNS-nummer** väljer du om du vill söka efter unika DUNS-nummer.
+7. Välj ett alternativ i fältet **Part**.
+8. Välj ett alternativ i fältet **Kund**.
+9. Välj ett alternativ i fältet **Säljare**.
+10. Välj ett alternativ i fältet **Potentiell kund**.
+11. Välj ett alternativ i fältet **Konkurrent**.
+12. Klicka på fliken **Säkerhet för privat plats**.
+13. Hitta och markera önskad post i listan. Håll Skift-tangenten nedtryckt om du vill markera flera roller som ska läggas till i fönstret **Valda roller** och klicka sedan på pilen för att lägga till de valda rollerna.  
+14. Klicka på **Spara**.
 

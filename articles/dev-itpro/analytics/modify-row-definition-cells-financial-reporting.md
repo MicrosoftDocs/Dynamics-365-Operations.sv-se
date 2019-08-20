@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551852"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863734"
 ---
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionsceller
 
@@ -402,7 +402,7 @@ Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonom
 2. Dubbelklicka på en cell i en kolumn av typen **Länk till ekonomiska dimensioner**.
 3. I dialogrutan **Dimensioner** dubbelklickar du på en cell under dimensionsnamnet.
 4. I dialogrutan för dimensionen, välj **Individuella eller intervall**.
-5. I fältet **Från** anger du startdimensionen eller klickar på ![Bläddra](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Bläddra") för att söka efter tillgängliga dimensioner. Om du vill ange ett intervall med dimensioner, anger du den avslutande dimensionen i fältet **Till** .
+5. I fältet **Från** anger du startdimensionen eller klickar på ![Bläddra](media/browse.gif "Bläddra") för att söka efter tillgängliga dimensioner. Om du vill ange ett intervall med dimensioner, anger du den avslutande dimensionen i fältet **Till** .
 6. Klicka på **OK** för att stänga dialogrutan för dimensionen. Dialogrutan **Dimensioner** visar den uppdaterade dimensionen eller intervallet.
 7. Klicka på **OK** för att stänga dialogrutan **Dimensioner**.
 
@@ -479,7 +479,7 @@ I tabellen nedan beskrivs fälten i dialogrutan **Dimensioner**.
 
 | Artikel                | Beskrivning |
 |---------------------|-------------|
-| Individuella eller Intervall | I fältet **Från** anger du namnet på ett konto eller klickar på knappen **Bläddra** ![Bläddra](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Bläddra") för att bläddra till kontot. För att välja ett intervall anger du eller bläddrar efter ett värde i fältet **Till**. |
+| Individuella eller Intervall | I fältet **Från** anger du namnet på ett konto eller klickar på knappen **Bläddra** ![Bläddra](media/browse.gif "Bläddra") för att bläddra till kontot. För att välja ett intervall anger du eller bläddrar efter ett värde i fältet **Till**. |
 | Dimensionsvärdeuppsättning | Ange namnet på en dimensionsvärdeuppsättning i fältet **Namn**. Om du vill skapa, ändra, kopiera eller ta bort en uppsättning, klickar du på **Hantera dimensionsvärdeuppsättningar**. Fältet **Formel** fylls i med formeln från cellen **Länka till ekonomiska dimensioner** för denna dimensionsvärdeuppsättning som anges i raddefinitionen. |
 | SUmmeringskonton   | I fältet **Namn** anger du eller bläddrar efter en dimension av summeringskonton. Fältet **Formel** fylls i med formeln i cellen **Länka till ekonomiska dimensioner** för detta summeringskonto i rapportdefinitionen. |
 

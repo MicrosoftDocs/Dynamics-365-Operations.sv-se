@@ -3,28 +3,29 @@ title: Jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505804"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862914"
 ---
 # <a name="data-import-and-export-jobs"></a>Jobb för import och export av data
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 För att skapa och hantera dataimport- och dataexportjobb i Microsoft Dynamics 365 for Finance and Operations kan du använda arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
 
@@ -129,8 +130,8 @@ Ett jobb kan skyddas med roller, användare och juridisk person samtidigt.
 ## <a name="run-the-import-or-export-job"></a>Kör import- eller exportjobbet.
 Du kan köra ett jobb en gång genom att välja knappen **Importera** eller **Exportera** när du har definierat jobbet. Välj **Skapa återkommande datajobb** för att skapa ett återkommande jobb.
 
-[!NOTE]
-Ett import- eller exportjobb kan köras asynkront genom att välja knappen **importera** eller **exportera**. Köra asynkrona använder asynkrona ramverk i Finance and Operations som skiljer sig från batchramverket. men liksom batchramverket, kan asynkrona ramverk också genomgå begränsning och därmed körs kanske inte jobbet omedelbart. Jobb kan även köras synkront genom att markera **importera nu** eller **exportera nu**. Det här jobbet startar omedelbart och är användbart om asynkrona eller en batch inte startas på grund av begränsning. Jobb kan också köras i ett batchjobb genom att välja alternativet **kör i batch**. Batchresurser är föremål för begränsning, så batchjobbet kanske inte startar omedelbart. Asynkrona alternativet är användbart när användare interagerar direkt med användargränssnittet och inte privilegierade användare att förstå batch-tidsplanering. Att använda en batch är ett alternativ om stora volymer måste exporteras eller importeras. Batchjobb kan planeras på en viss batchgrupp som ger mer kontroll ur ett belastningsutjämningsperspektiv. Om asynkrona och batch både är under begränsning på grund av hög resursanvändning på systemet, kan den synkrona versionen av import och export användas som en omedelbar lösning. Det synkrona alternativet startar omedelbart och blockerar användargränssnittet eftersom det körs synkront. Webbläsarfönstret måste vara öppet när synkrona åtgärder pågår.
+> [!NOTE]
+> Ett import- eller exportjobb kan köras asynkront genom att välja knappen **importera** eller **exportera**. Köra asynkrona använder asynkrona ramverk i Finance and Operations som skiljer sig från batchramverket. men liksom batchramverket, kan asynkrona ramverk också genomgå begränsning och därmed körs kanske inte jobbet omedelbart. Jobb kan även köras synkront genom att markera **importera nu** eller **exportera nu**. Det här jobbet startar omedelbart och är användbart om asynkrona eller en batch inte startas på grund av begränsning. Jobb kan också köras i ett batchjobb genom att välja alternativet **kör i batch**. Batchresurser är föremål för begränsning, så batchjobbet kanske inte startar omedelbart. Asynkrona alternativet är användbart när användare interagerar direkt med användargränssnittet och inte privilegierade användare att förstå batch-tidsplanering. Att använda en batch är ett alternativ om stora volymer måste importeras eller exporteras. Batchjobb kan planeras på en viss batchgrupp som ger mer kontroll ur ett belastningsutjämningsperspektiv. Om asynkrona och batch både är under begränsning på grund av hög resursanvändning på systemet, kan den synkrona versionen av import och export användas som en omedelbar lösning. Det synkrona alternativet startar omedelbart och blockerar användargränssnittet eftersom det körs synkront. Webbläsarfönstret måste vara öppet när synkrona åtgärder pågår.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Validera att jobbet har körts som förväntat
 Jobbhistoriken blir tillgänglig för felsökning och undersökning för såväl import- som exportjobb. Historiska jobbkörningar ordnas efter tidsintervall.
@@ -144,7 +145,7 @@ Varje gång du kör jobbet erhåller du följande information:
 
 Körningsinformationen anger statusen för varje dataenhet som jobbet bearbetat. Därför kan du snabbt hitta följande information:
 
-- Vilka enheter som har bearbetats
+- Vilka enheter som har bearbetats.
 - Hur många poster som bearbetats för en enhet, och hur många som misslyckades
 - Mellanlagringsposter för respektive enhet
 
@@ -153,6 +154,8 @@ Du kan hämta mellanlagringsdatan i en fil för exportjobb, eller också du kan 
 Du kan också öppna körningsloggen från körningsinformationen.
 
 ## <a name="clean-up-the-staging-tables"></a>Rensa mellanlagringsregister
+Från och med plattformsuppdatering 29 har den här funktionen ersatts. Detta ersätts av en ny version av funktionen för jobbhistorikrensning som förklaras nedan.
+
 Du kan rensa mellanlagringstabeller genom att använda funktionen **Mellanlagringsrensning** i arbetsytan **Datahantering**. Du kan använda följande alternativ för att välja vilka poster som ska tas bort från vilka mellanlagringsregister:
 
 - **Enhet** – Om bara en enhet är tillgänglig kommer samtliga poster i den enhetens mellanlagringstabell att raderas. Välj detta alternativ om du vill rensa alla data för enheten mellan alla dataprojekt och alla jobb.
@@ -160,3 +163,37 @@ Du kan rensa mellanlagringstabeller genom att använda funktionen **Mellanlagrin
 - **Dataprojekt** – Om bara ett dataprojekt har markerats kommer alla poster för alla entiteter och över alla jobb för det valda dataprojektet att tas bort.
 
 Du kan också kombinera alternativen för att ytterligare begränsa den postuppsättning som raderas.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Rensa jobbhistoriken (tillgänglig i plattformsuppdatering 29 och senare)
+
+Rensningsfunktionen för jobbhistoriken i datahantering måste användas för att schemalägga en periodisk rensning av körningshistoriken. Den här funktionen ersätter den tidigare mellanlagringsfunktionen, som nu är inaktuell. Följande tabeller kommer att rensas upp av rensningsprocessen.
+
+-   Alla mellanlagringsregister
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+Funktionen kan nås från **datahantering \> rensning av jobbhistorik**.
+
+### <a name="scheduling-parameters"></a>Planeringsparametrar
+
+När du schemalägger rensningsprocessen måste följande parametrar anges för att definiera rensningskriterierna.
+
+-   **Antal dagar att behålla historiken** – den här inställningen används för att kontrollera mängden körningshistorik som ska bevaras. Detta anges i antal dagar. När rensningsjobbet schemaläggs som ett återkommande batchjobb, kommer den här inställningen att fungera som ett kontinuerligt rörligt fönster och därmed alltid lämna historiken för angivet antal dagar intakt medan resten tas bort. Standardvärdet är 7 dagar.
+
+-   **Antal timmar för att utföra jobbet** – beroende på hur mycket historik som ska rensas kan den totala körningstiden för rensningsjobbet kan variera från några minuter till några timmar. Eftersom rensningen av de nämnda tabellerna måste göras när det inte finns någon annan datahanteringsaktivitet i systemet, är det viktigt att se till att rensningsjobbet körs och avslutas innan affärsaktiviteten påbörjas.
+
+    En maximal körningstid kan anges genom att ange en max.gräns för antalet timmar som jobbet måste köras med den här inställningen. Rensningslogiken går igenom ett jobbkörnings-ID i taget i en kronologiskt ordnad sekvens, med äldsta först för rensning av relaterade körningshistoriken. Det slutar att plocka upp nya körnings-ID för rensning när återstående körningstid är inom de senaste 10 % av den angivna varaktigheten. I vissa fall kommer det att förväntas att rensningsjobbet kommer att fortsätta efter den angivna maxtiden. Detta beror till stor del på hur många poster som ska tas bort för det aktuella körnings-ID som startades innan tröskelvärdet på 10 % uppnåddes. Rensningen som startades måste slutföras för att säkerställa dataintegriteten, vilket innebär att rensningen fortsätter trots att den angivna gränsen överskrids. När detta är klart hämtas inte nya körnings-ID och rensningsjobbet har slutförts. Den återstående körningshistoriken som inte har rensats på grund av bristande körningstid kommer att plockas upp nästa gång som rensningsjobbet schemaläggs. Standard- och minimivärdet för den här inställningen är inställt på 2 timmar.
+
+-   **Återkommande batch** – rensningsjobbet kan köras som en engångs, manuell körning eller det kan också schemaläggas för återkommande körning i batch. Batchen kan schemaläggas med hjälp inställningarna **Kör i bakgrund**, vilket är standarduppsättningen för batch.

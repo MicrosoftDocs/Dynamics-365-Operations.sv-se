@@ -3,13 +3,12 @@ title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,17 +16,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: ea2f2dbd615480bb76e1d04a106ae69bf6f45f4b
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620788"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863070"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Introduktion
 Personlig anpassning spelar en viktig roll där användare och organisationer kan optimera användarupplevelsen för Microsoft Dynamics 365 for Finance and Operations för att uppfylla sina behov. Mer information om anpassning finns i [Anpassa användarupplevelsen](personalize-user-experience.md).
@@ -49,13 +48,13 @@ Det finns två storleksvariationer i vyväljaren:
 
 -   **Stora vyväljare**: sidor som är framträdande med en lista har en större vyväljare av några möjliga orsaker. Större delen av den största viktigaste vyväljaren visar sidorna där vyn kan innehålla användardefinierade filter. Eftersom filter inkluderas i vyerna är den större väljarstorleken också motiverad eftersom vynamnen ofta är den bästa beskrivningen av de data som visas på skärmen och det förväntas att användarna ska växla mellan vyer oftare på dessa sidtyper.  
  
--   **Smǻ vyväljare**: alla andra helsideformulär har en mindre vyväljare som visas bredvid sidrubriken. Vyer på dessa sidor innehåller bara anpassningar (och inte användardefinierade filter). På dessa sidor är formulärrubriken eller postrubriken ofta den viktigaste informationen längst upp i formuläret. Den mindre storleken återspeglar också en lägre förväntad frekvens av vyväxling på dessa sidor. 
+-   **Små vyväljare**: alla andra helsideformulär (med undantag för arbetsytor och instrumentpanelen) har en mindre vyväljare som visas bredvid sidrubriken. Vyer på dessa sidor innehåller bara anpassningar (och inte användardefinierade filter). På dessa sidor är formulärrubriken eller postrubriken ofta den viktigaste informationen längst upp i formuläret. Den mindre storleken återspeglar också en lägre förväntad frekvens av vyväxling på dessa sidor. 
  
 Om du klickar på vyns namn öppnas vyväljaren och visar listan över tillgängliga vyer för den här sidan.
 
 -    **Klassiskt läge**: Den klassiska vyn är sidans färdigkonfigurerade vy utan några uttryckliga anpassningar som används.  
 -    **Personliga vyer**: vyerna utan hänglås representerar dina personliga vyer. Detta är vyer som du har skapat eller som en administratör har gett dig.  
--    **Låsta vyer**: vissa vyer (som den klassiska vyn och alla vyer som har publicerats i din roll) har ett hänglås bredvid dem i vyväljaren, vilket indikerar att du inte kan redigera dessa vyer. Implicita anpassningar runt sidanvändningen sparas automatiskt, till exempel för att ändra bredden på en rutnätskolumn eller för att expandera eller komprimera en snabbflik. Du kan dock göra en personlig vy baserat på en låst vy med åtgärden **Spara en kopia** om du har anpassningsprivilegier.
+-    **Låsta vyer**: vissa vyer (som den klassiska vyn och alla vyer som har publicerats i din roll) har ett hänglås bredvid dem i vyväljaren, vilket indikerar att du inte kan redigera dessa vyer. Implicita anpassningar som avspeglar sidanvändningen sparas automatiskt, till exempel för att ändra bredden på en rutnätskolumn eller för att expandera eller komprimera en snabbflik. Du kan dock göra en personlig vy baserat på en låst vy med åtgärden **Spara en kopia** om du har anpassningsprivilegier.
 -    **Nya vyer**: publicerade vyer som inte har öppnats ännu är avgränsade med en gnista till vänster om vyns namn.  
 
 Om du vill växla till en annan vy öppnar du först vyväljaren och väljer sedan den vy som du vill läsa in. 
@@ -75,7 +74,7 @@ Om du vill spara ändringarna följer du stegen nedan.
      3.    Välj **Spara**.
 
 ## <a name="changing-the-default-view"></a>Ändra standardvyn
-Standardvyn är den vy som systemet kommer att försöka öppna första gången du navigerar till sidan. Du bör ställa in det här till den vy som du förväntar dig att använda ofta.  
+Standardvyn är den vy som systemet kommer att försöka öppna första gången du navigerar till sidan. Du bör ställa in det här till den vy som du förväntar dig att använda oftast.  
 
 Om du vill ändra standardvyn för en sida ska du följa de här stegen: 
 1.  Växla till den vy som du använder som standard. 
@@ -100,14 +99,14 @@ För en lista med tillgängliga vyer för sidan är följande åtgärder tillgä
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Hantera anpassningar på organisationsnivå med vyer
 Om du vill förstå förbättringarna i hantera anpassningar på organisationsnivå bör du först se hur hanteringen av anpassning som har utförts före vyer.  
 
-Utan vyer kan administratörer tillämpa en uppsättning anpassningar för en sida för en användare, en grupp användare eller användare med hjälp av formuläret Anpassning. Om dessa användare har anpassningsbehörigheter används anpassningarna på den sidan. Det går dock inte att hindra användarna från att ytterligare anpassa sidan, vilket innebar att organisationen inte kunde garantera att användarna hade ett konsekvent användargränssnitt. Om någon av dessa användare inte har några anpassningsrättigheter laddades inte de anpassningar som de har fått av en administratör. Vidare, om nya användare har anställts i en organisation, måste administratörerna manuellt läsa in en uppsättning anpassningar för användaren. Ingen automatisk mekanism för att ange en viss uppsättning anpassningar bör vara tillgänglig för den användaren.
+Utan vyer kan administratörer tillämpa en uppsättning anpassningar för en sida för en användare eller en grupp användare via sidan Anpassning. Om dessa användare har anpassningsbehörigheter används anpassningarna på den sidan. Det går dock inte att hindra användarna från att ytterligare anpassa sidan, vilket innebar att organisationen inte kunde garantera att användarna hade ett konsekvent användargränssnitt. Om någon av dessa användare inte har några anpassningsrättigheter laddades inte de anpassningar som de har fått av en administratör. Vidare, om nya användare har anställts i en organisation, måste administratörerna manuellt läsa in en uppsättning anpassningar för användaren. Ingen automatisk mekanism för att ange en viss uppsättning anpassningar bör vara tillgänglig för användare i den rollen.
 
 Med funktionen sparade vyer blir det betydligt enklare att administrera anpassningar, främst på grund av möjligheten att publicera vyer till säkerhetsroller. När en vy har har publiceras kan alla användare med den rollen kan komma åt och använda den vyn, oavsett användarens möjlighet att anpassa. Även om varje användare har en kopia av den publicerade vyn där sidanvändning (implicita anpassningar) används automatiskt kan inga användare spara uttryckliga anpassningar eller uppdateringar av frågan i den publicerade vyn (vilket innebär att publicerade vyer låses). Dessutom, om nya användare ges en roll som vyn har publicerats på, visas automatiskt de vyer som associeras med deras roller utan någon åtgärd från administratören. Om en användare ändrar roller i en organisation kommer de vyer som har associerats med deras gamla roll inte längre att vara tillgängliga för dem, utan att administratören vidtar någon åtgärd. Uppdateringar av en publicerad vy kan enkelt distribueras till användare genom att publicera vyn på rätt säkerhetsroller.
 
 Med den här publiceringsfunktionen kan företag definiera företags standardvyer som är optimerade för deras verksamhet, riktade mot användare i specifika säkerhetsroller.  
 
 ## <a name="publishing-views"></a>Publicerande vyer
-Under publiceringsprocessen kan vyer tilldelas till en eller flera säkerhetsroller, vilket innebär att alla användare med den rollen kan komma åt och använda den vyn, även om de inte kan redigera vyn. För närvarande har endast systemadministratörer behörighet för åtgärder **publicering** på vyväljarens rullgardinsmeny.  
+Under publiceringsprocessen kan vyer tilldelas till en eller flera säkerhetsroller, vilket innebär att alla användare med den rollen kan komma åt och använda den vyn, även om de inte kan redigera vyn. För närvarande har endast systemadministratörer behörighet till åtgärden **publicering** på vyväljarens rullgardinsmeny, men en ny säkerhetsroll blir tillgänglig i en framtida uppdatering för att ge publiceringsrättigheter till andra betrodda användare.  
 
 Gör så här om du vill publicera en vy: 
 1.  Skapa och spara en personlig kopia av vyn som du vill publicera. 
@@ -150,14 +149,19 @@ För en lista med alla publicerade vyer för sidan är följande åtgärder till
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hur aktiverar jag sparade vyer i min miljö? 
-Om du vill aktivera sparade vyer ska en systemadministratör göra följande: 
-1.  Gå till sidan **anpassning** med hjälp av navigeringssökning. 
-2.  Välj fliken **Inställningar**.
-3.  Ge alternativet **Aktivera sparade vyer** värdet **Ja**.
+Följ stegen nedan om du vill aktivera sparade vyer medan funktionen är i förhandsversion: 
 
-När den här funktionen har aktiverats startar alla följande användarsessioner med aktiverade vyer.  
+1.  **Aktivera flygningen**: kör följande SQL-uttryck: 
 
-Observera att om anpassningar inaktiveras för miljön aktiveras vyer även om du följer stegen ovan. Detta beror på att vyerna bygger på under systemet för anpassning.
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+
+2.  **Hitta funktionen**: gå till arbetsytan **funktionshantering**. Om **sparade vyer** inte visas i listan väljer du knappen **kontrollera uppdateringar**.   
+
+3.  **Aktivera funktionen**: Leta upp funktionen **Sparade vyer** i listan över funktioner och klicka på knappen **Aktivera nu** i informationsfönstret.
+
+Alla efterföljande användarsessioner börjar med att sparade vyer aktiveras.  
+
+Observera att om anpassningar inaktiveras för miljön inaktiveras vyer även om du följer stegen ovan. Detta beror på att vyerna bygger på under systemet för anpassning.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Vad händer med befintliga anpassningar när vyer aktiveras? 
 När vyer aktiveras sparas alla befintliga anpassningar för en användare och ett formulär i en ny vy som kallas **Min vy** som automatiskt ställs in som standardvy. Detta är avsett att säkerställa att det finns en enhetlig användarupplevelse innan och när vyer har aktiverats, utom för vyväljaren som visas i formulär.  
@@ -166,7 +170,7 @@ När vyer aktiveras sparas alla befintliga anpassningar för en användare och e
 Vyer är tillgängliga på de flesta men inte alla sidor i Finance and Operations. Vyer är för närvarande tillgängliga på alla helskärmssidor utom för instrumentpaneler och arbetsytor. Icke helskärmssidor, som omfattar dialogrutor, nedrullningsbara dialogrutor, uppslag, utökade förhandsgranskningar, stöder för närvarande inte vyer. Visa stöd för fler sidtyper, t.ex. arbetsytor och dialogrutor, kan komma att överväga för framtida uppdateringar.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Vem har tillåtelse att publicera vyer?
-För närvarande är systemadministratörer de enda användare som har behörighet att publicera vyer.  En ny säkerhetsroll är planerad, vilket ger kunderna större flexibilitet för vem som kan publicera dem.  
+För närvarande är systemadministratörer de enda användare som har behörighet att publicera vyer.  En ny säkerhetsroll är planerad i en framtida uppdatering, vilket ger kunderna större flexibilitet för vem som kan publicera dem.  
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Varför kan jag inte spara filter med den här vyn? 
 Det finns några anledningar till varför ett filter kanske inte visas för att spara med en vy: 
@@ -179,4 +183,4 @@ Det finns några anledningar till varför ett filter kanske inte visas för att 
      
   Du bör få en avisering när detta inträffar av ett informationsmeddelande när vyn läses in. Du kan också bekräfta genom att växla till den här vyn efter att sidan har lästs in, eftersom det gör att vyfrågan körs oavsett.  
 
-- Den aktuella sidan kanske inte stöder vyer på rätt sätt, eftersom frågan i vyn kan ignoreras helt. Rapportera alla sådana instanser via **feedback**-funktionen. Gå till sidan feedback genom att klicka på **hjälp och support** och sedan på **feedback**.  
+- Sidan i fråga kanske inte stöder vyer på rätt sätt, eftersom den kan ignorera vyfrågan helt eller kan fungera på en temporär tabell vars data inte är beständiga. 

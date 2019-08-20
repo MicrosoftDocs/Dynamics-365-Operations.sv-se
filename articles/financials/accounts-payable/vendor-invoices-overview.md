@@ -3,14 +3,14 @@ title: Översikt över leverantörsfakturor
 description: Det här ämnet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625089"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863333"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Det här ämnet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
 
@@ -90,6 +90,13 @@ När en leverantörsfaktura används kan den inte redigeras av en annan använda
 Du kan använda sidan **Återställa leverantörsfakturor** om du vill återställa eller frisläppa leverantörsfakturor som har använts under längre än fyra timmar, så att de kan redigeras. Du kan öppna den här sidan från navigeringen **Periodisk uppgift** eller en panel på arbetsytan **Leverantörsfakturaregistrering**. När en faktura har återskapats blir den tillgänglig för redigering på sidan **leverantörsfakturan**.
 
 Du kan endast komma åt sidan **återställa leverantörsfakturor** om säkerhetsprogrambehörighet och privilegium **återställa leverantörsfakturor som används** har tilldelats till dig. Dessutom måste parametern **Tillåt återställning av leverantörsfaktura** på sidan **Parametrar för leverantörsreskontra** måste vara aktiverad.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Återställa arbetsflödesstatus för leverantörsfakturor från Oåterkalleligt till Utkast
+
+En arbetsflödesinstans som har stoppats på grund av ett oåterkalleligt fel får arbetsflödesstatusen **oåterkalleligt**. När statusen för ett arbetsflöde för leverantörsfakturor är **Oåterkalleligt** kan du återställa den till **Utkast** genom att välja **Återkalla**. Du kan sedan redigera leverantörsfakturan. Den här funktionen är tillgänglig om paramtern **Återställa utkaststatus för arbetsflöde för leverantörsfaktura** på sidan **Funktionshantering** är aktiverad.
+
+På sidan **Arbetsflödeshistorik** för leverantörsfakturor kan du återställa arbetsflödesstatusen till **utkast**. Du kan öppna den här sidan från **leverantörsfakturan** eller från navigeringen **Allmänt > Förfrågningar > Arbetsflöde**. Om du vill återställa arbetsflödesstatus **utkast**, välj **återkalla**. Du kan också återställa arbetsflödesstatus till utkast genom att välja åtgärden **återkalla** på sidan **leverantörsfaktura** eller **väntande leverantörsfakturor**. När arbetsflödesstatusen har återställts till **Utkast** blir den tillgänglig för redigering på sidan **leverantörsfaktura**.
+
 
 
 ## <a name="additional-resources"></a>Ytterligare resurser

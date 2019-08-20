@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dc6ee178121fae05d538f5103919442d91e65eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff105bdefff2ea93c853d590c77391653f50a4dc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566120"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842003"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Garantitransaktion
 
@@ -61,7 +61,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 15. I fältet Begärt transportdatum, ange ett datum.
 16. I fältet Bekräftat transportdatum, ange ett datum.
 
-## <a name="process-letter-of-guaranteerequest"></a>Bearbeta garanti_begäran
+## <a name="process-letter-of-guarantee_request"></a>Bearbeta garanti_begäran
 1. Klicka på Hantera i åtgärdsfönstret.
 2. Klicka på Garanti.
 3. I fönstret Åtgärd, klicka på Garanti.
@@ -73,7 +73,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 9. Klicka på OK.
 10. Stäng sidan.
 
-## <a name="process-letter-of-guaranteesubmit-to-bank"></a>Bearbeta garanti_Skicka till bank
+## <a name="process-letter-of-guarantee_submit-to-bank"></a>Bearbeta garanti_Skicka till bank
 1. Gå till Kassa- och bankhantering > Garanti > Garanti.
 2. Hitta och markera önskad post i listan.
 3. Klicka på Skicka till bank för att öppna dialogrutan.
@@ -81,7 +81,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 5. Klicka på länken på den valda raden i listan.
 6. Klicka på OK.
 
-## <a name="process-letter-of-guaranteereceive-from-bank"></a>Bearbeta garanti_Ta emot från bank
+## <a name="process-letter-of-guarantee_receive-from-bank"></a>Bearbeta garanti_Ta emot från bank
 1. Klicka på Ta emot från bank för att öppna dialogrutan.
 2. I fältet Banknummer, skriv ett värde.
     * Kontrollera värdena i de beräknade marginal- och utgiftsfälten.  
@@ -93,7 +93,7 @@ I den här proceduren används demonstrationsföretaget USMF.
     * Kontrollera bokföringen av journalposter.  
 7. Stäng sidan.
 
-## <a name="process-letter-of-guaranteegive-to-beneficiary"></a>Bearbeta garanti_Ge till mottagare
+## <a name="process-letter-of-guarantee_give-to-beneficiary"></a>Bearbeta garanti_Ge till mottagare
 1. Gå till Leverantörsreskontra > Order > Alla försäljningsorder.
 2. Klicka på länken på den valda raden i listan.
 3. Klicka på Hantera i åtgärdsfönstret.
@@ -108,7 +108,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 12. Expandera avsnittet Åtgärder.
     * Validera posten Ge till mottagare.  
 
-## <a name="process-letter-of-guaranteeincrease-value"></a>Bearbeta garanti_Öka värde
+## <a name="process-letter-of-guarantee_increase-value"></a>Bearbeta garanti_Öka värde
 1. Gå till Leverantörsreskontra > Order > Alla försäljningsorder.
 2. Klicka på länken på den valda raden i listan.
 3. Klicka på Hantera i åtgärdsfönstret.
@@ -128,7 +128,7 @@ I den här proceduren används demonstrationsföretaget USMF.
 16. Klicka på Rader.
     * Kontrollera de bokförda journalposterna.  
 
-## <a name="process-letter-of-guaranteeliquidate"></a>Bearbeta garanti_Likvidera
+## <a name="process-letter-of-guarantee_liquidate"></a>Bearbeta garanti_Likvidera
 1. Gå till Leverantörsreskontra > Order > Alla försäljningsorder.
 2. Klicka på länken på den valda raden i listan.
 3. Klicka på Hantera i åtgärdsfönstret.

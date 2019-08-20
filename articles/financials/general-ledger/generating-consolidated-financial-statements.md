@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557741"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863710"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 
@@ -49,11 +49,11 @@ Som den konsoliderade rapporten i följande illustration visar, när du använde
 
 Du kan också skapa rapporteringsträd på flera nivåer som innehåller så många nivåer som behövs. Följande bild visar rapporteringsträdsdefinitioner på flera nivåer med översikter av världsomspännande region.
 
-![Rapporteringsträdsdefinitioner på flera nivåer med översikt per region](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Rapporteringsträdsdefinitioner på flera nivåer med översikt per region")
+![Rapporteringsträdsdefinitioner på flera nivåer med översikt per region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Rapporteringsträdsdefinitioner på flera nivåer med översikt per region")
 
 Följande bild visar rapporteringsträdsdefinitioner på flera nivåer med översikter per funktion.
 
-![Rapporteringsträdsdefinitioner på flera nivåer med översikt per funktion](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Rapporteringsträdsdefinitioner på flera nivåer med översikt per funktion")
+![Rapporteringsträdsdefinitioner på flera nivåer med översikt per funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Rapporteringsträdsdefinitioner på flera nivåer med översikt per funktion")
 
 ### <a name="viewing-companies-side-by-side"></a>Visa företag sida vid sida
 Många kunder föredrar rapporter där företagen visas sida vid sida och där en kolumn visar den konsoliderade summan. Det här formatet är lätt att uppnå när du har skapat rapporteringsträdet. Nedan följer högnivåsteg för att visa företag sida vid sida på konsoliderade bokslut.
@@ -98,7 +98,7 @@ I rapportträdsdefinitionen, ange procentandelen av ägarskap i kolumnen **samma
 > [!NOTE]
 > Du kan använda denna ägarskapsprocentandel för rapporteringsenheten, inte bara på företagsnivå. 
 
-![Använda procentsatsen i rapportträddefinition](./media/Using-reporting%20tree-definition-percentage.png "Använda procentsatsen i rapportträddefinition")
+![Använda procentsatsen i rapportträddefinition](./media/Using-reporting-tree-definition-percentage.png "Använda procentsatsen i rapportträddefinition")
 
 När rapporten skapas, visar Contoso Tyskland-rapporten 100 procent av det totala försäljningsbeloppet och 80 procent av beloppet ska fördelas och slås samman med den konsoliderade nivån för försäljning.
 

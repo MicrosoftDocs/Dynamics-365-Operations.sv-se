@@ -1,5 +1,5 @@
 ---
-title: Nyheter och ändringar i Microsoft Dynamics AX programvaruversion 7.0.1 (maj 2016)
+title: Nyheter och ändringar i Dynamics AX programvaruversion 7.0.1 (maj 2016)
 description: Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX programvaruversion 7.0.1. Den här versionen släpptes i maj 2016 och har en versionsnummer 7.0.1265.23014.
 author: sericks007
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.custom: 91213
 ms.assetid: f0bbc78f-87fc-40e9-b46a-6655893f69be
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c830952b5d9e4887a816b5ab66d0944bddf5b505
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6bd40873d6890bc837188cba1aa1125d874f6bda
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561653"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863475"
 ---
-# <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheter och ändringar i Microsoft Dynamics AX programvaruversion 7.0.1 (maj 2016)
+# <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheter och ändringar i AX programvaruversion 7.0.1 (maj 2016)
 
 [!include [banner](../includes/banner.md)]
 

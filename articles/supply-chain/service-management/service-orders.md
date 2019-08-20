@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555390"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743266"
 ---
 # <a name="service-orders"></a>Serviceorder   
 
@@ -76,7 +76,7 @@ En annan serviceorder som hade genererats för januari blir föråldrad eftersom
 
 ## <a name="post-from-projects"></a>Bokföra från Projekt
 
-I slutet av varje vecka vill klareraren bokföra alla serviceorder som är knutna till ett visst projekt. Därför letar klareraren reda på det relevanta projektet i formuläret **projekt** och bokför serviceorder som har slutförts. Mer information finns i [Bokföra serviceorder automatiskt (klassformulär)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+I slutet av varje vecka vill klareraren bokföra alla serviceorder som är knutna till ett visst projekt. Därför letar klareraren reda på det relevanta projektet i formuläret **projekt** och bokför serviceorder som har slutförts. Mer information finns i [Bokföra serviceorder automatiskt (klassformulär)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Ta bort serviceorder
 
@@ -84,7 +84,7 @@ Under andra halvåret upptäcker kunden att servicebesöken inträffar alltför 
 
 ## <a name="see-also"></a>Se även
 
-[Serviceorder (formulär)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Serviceorder (formulär)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

@@ -3,13 +3,13 @@ title: Videor för Finance and Operations
 description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Dynamics 365 for Finance and Operations som är tillgängliga på YouTube och andra platser.
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 5ede5bfa3b7a61461adb1514b7e96c4eba5a75c7
-ms.sourcegitcommit: fdc37a3c2ca2bac5741e7017fb225344e64f041a
+ms.openlocfilehash: d2bf2c45f6298205dbed67f6921234757a2b736a
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625407"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852091"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videor för Finance and Operations
 
@@ -71,6 +71,8 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 
 #### <a name="intelligence"></a>Intelligence
 
+- [Hur du bäddar in en rapport i en analytisk arbetsyta](https://youtu.be/_8WlwmSggcQ)
+- [Så här bäddar du in PowerBI.com rapporter i Dynamics 365 for Finance and Operations](https://youtu.be/gGWuNJDoi-M)
 - [Ta med din egen databas (BYOD) till Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Använda Power BI-innehåll i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
