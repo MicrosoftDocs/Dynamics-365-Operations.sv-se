@@ -15,78 +15,78 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37b338d5971395264bd2ff673ee7892814859846
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554449"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741169"
 ---
-# <a name="company-directory-mobile-workspace"></a><span data-ttu-id="96173-103">Mobila arbetsytan för företagskatalog</span><span class="sxs-lookup"><span data-stu-id="96173-103">Company directory mobile workspace</span></span>
+# <a name="company-directory-mobile-workspace"></a><span data-ttu-id="aafdb-103">Mobila arbetsytan för företagskatalog</span><span class="sxs-lookup"><span data-stu-id="aafdb-103">Company directory mobile workspace</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="96173-104">Det här avsnittet innehåller information om den mobila arbetsytan för **företagskatalog**.</span><span class="sxs-lookup"><span data-stu-id="96173-104">This topic provides information about the **Company directory** mobile workspace.</span></span> <span data-ttu-id="96173-105">Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.</span><span class="sxs-lookup"><span data-stu-id="96173-105">This workspace lets users view and contact other employees in their organization.</span></span>
+<span data-ttu-id="aafdb-104">Det här avsnittet innehåller information om den mobila arbetsytan för **företagskatalog**.</span><span class="sxs-lookup"><span data-stu-id="aafdb-104">This topic provides information about the **Company directory** mobile workspace.</span></span> <span data-ttu-id="aafdb-105">Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.</span><span class="sxs-lookup"><span data-stu-id="aafdb-105">This workspace lets users view and contact other employees in their organization.</span></span>
 
-<span data-ttu-id="96173-106">Denna mobila arbetsyta kan användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.</span><span class="sxs-lookup"><span data-stu-id="96173-106">This mobile workspace can be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
+<span data-ttu-id="aafdb-106">Denna mobila arbetsyta kan användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.</span><span class="sxs-lookup"><span data-stu-id="aafdb-106">This mobile workspace can be used with the Microsoft Dynamics 365 for Unified Operations mobile app.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="96173-107">Översikt</span><span class="sxs-lookup"><span data-stu-id="96173-107">Overview</span></span>
-<span data-ttu-id="96173-108">Den mobil arbetsytan **företagskatalog** låter användarna utföra följande uppgifter:</span><span class="sxs-lookup"><span data-stu-id="96173-108">The **Company directory** mobile workspace lets users perform these tasks:</span></span>
+## <a name="overview"></a><span data-ttu-id="aafdb-107">Översikt</span><span class="sxs-lookup"><span data-stu-id="aafdb-107">Overview</span></span>
+<span data-ttu-id="aafdb-108">Den mobil arbetsytan **företagskatalog** låter användarna utföra följande uppgifter:</span><span class="sxs-lookup"><span data-stu-id="aafdb-108">The **Company directory** mobile workspace lets users perform these tasks:</span></span>
 
-- <span data-ttu-id="96173-109">Visa en lista över medarbetare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="96173-109">View a list of employees in the organization.</span></span>
-- <span data-ttu-id="96173-110">Söka efter medarbetare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="96173-110">Search for employees in the organization.</span></span>
-- <span data-ttu-id="96173-111">Visa anställdas kontaktinformation</span><span class="sxs-lookup"><span data-stu-id="96173-111">View contact information for employees.</span></span>
-- <span data-ttu-id="96173-112">Kontakta anställda från profilinformationen.</span><span class="sxs-lookup"><span data-stu-id="96173-112">Contact employees from the profile information.</span></span>
+- <span data-ttu-id="aafdb-109">Visa en lista över medarbetare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="aafdb-109">View a list of employees in the organization.</span></span>
+- <span data-ttu-id="aafdb-110">Söka efter medarbetare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="aafdb-110">Search for employees in the organization.</span></span>
+- <span data-ttu-id="aafdb-111">Visa anställdas kontaktinformation</span><span class="sxs-lookup"><span data-stu-id="aafdb-111">View contact information for employees.</span></span>
+- <span data-ttu-id="aafdb-112">Kontakta anställda från profilinformationen.</span><span class="sxs-lookup"><span data-stu-id="aafdb-112">Contact employees from the profile information.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="96173-113">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="96173-113">Prerequisites</span></span>
-<span data-ttu-id="96173-114">Följande förutsättningar måste vara uppfyllda innan du kan använda den här mobila arbetsytan.</span><span class="sxs-lookup"><span data-stu-id="96173-114">Before you can use this mobile workspace, the following prerequisites must be met.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="aafdb-113">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="aafdb-113">Prerequisites</span></span>
+<span data-ttu-id="aafdb-114">Följande förutsättningar måste vara uppfyllda innan du kan använda den här mobila arbetsytan.</span><span class="sxs-lookup"><span data-stu-id="aafdb-114">Before you can use this mobile workspace, the following prerequisites must be met.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="96173-115">Förutsättning</span><span class="sxs-lookup"><span data-stu-id="96173-115">Prerequisite</span></span></th>
-<th><span data-ttu-id="96173-116">Roll</span><span class="sxs-lookup"><span data-stu-id="96173-116">Role</span></span></th>
-<th><span data-ttu-id="96173-117">beskrivning</span><span class="sxs-lookup"><span data-stu-id="96173-117">Description</span></span></th>
+<th><span data-ttu-id="aafdb-115">Förutsättning</span><span class="sxs-lookup"><span data-stu-id="aafdb-115">Prerequisite</span></span></th>
+<th><span data-ttu-id="aafdb-116">Roll</span><span class="sxs-lookup"><span data-stu-id="aafdb-116">Role</span></span></th>
+<th><span data-ttu-id="aafdb-117">beskrivning</span><span class="sxs-lookup"><span data-stu-id="aafdb-117">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="96173-118">Någon av följande produkter måste distribueras i organisationen:</span><span class="sxs-lookup"><span data-stu-id="96173-118">One of the following products must be deployed in your organization:</span></span>
-<ul><li><span data-ttu-id="96173-119">Microsoft Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="96173-119">Microsoft Dynamics 365 for Finance and Operations</span></span></li>
-<li><span data-ttu-id="96173-120">Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="96173-120">Microsoft Dynamics 365 for Talent</span></span></li>
+<td><span data-ttu-id="aafdb-118">Någon av följande produkter måste distribueras i organisationen:</span><span class="sxs-lookup"><span data-stu-id="aafdb-118">One of the following products must be deployed in your organization:</span></span>
+<ul><li><span data-ttu-id="aafdb-119">Microsoft Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="aafdb-119">Microsoft Dynamics 365 for Finance and Operations</span></span></li>
+<li><span data-ttu-id="aafdb-120">Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="aafdb-120">Microsoft Dynamics 365 for Talent</span></span></li>
 </ul>
 </td>
-<td><span data-ttu-id="96173-121">Systemadministratör</span><span class="sxs-lookup"><span data-stu-id="96173-121">System administrator</span></span></td>
-<td><span data-ttu-id="96173-122">Om du inte redan använder Finance and Operations i din organisation, se <a href="../deployment/deploy-demo-environment.md"> Distribuera en demomiljö</a>.</span><span class="sxs-lookup"><span data-stu-id="96173-122">If you don&#39;t already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span> <span data-ttu-id="96173-123">Om du inte redan använder Talent i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://www.microsoft.com/en-us/dynamics365/talent">webbsidan Talent</a>.</span><span class="sxs-lookup"><span data-stu-id="96173-123">If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.</span></span>
+<td><span data-ttu-id="aafdb-121">Systemadministratör</span><span class="sxs-lookup"><span data-stu-id="aafdb-121">System administrator</span></span></td>
+<td><span data-ttu-id="aafdb-122">Om du inte redan använder Finance and Operations i din organisation, se <a href="../deployment/deploy-demo-environment.md"> Distribuera en demomiljö</a>.</span><span class="sxs-lookup"><span data-stu-id="aafdb-122">If you don&#39;t already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span> <span data-ttu-id="aafdb-123">Om du inte redan använder Talent i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://www.microsoft.com/dynamics365/talent">webbsidan Talent</a>.</span><span class="sxs-lookup"><span data-stu-id="aafdb-123">If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/dynamics365/talent">Talent webpage</a>.</span></span>
 </td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="96173-124">Den mobila arbetsytan <strong>företagskatalog</strong> måste publiceras.</span><span class="sxs-lookup"><span data-stu-id="96173-124">The <strong>Company directory</strong> mobile workspace must be published.</span></span></td>
-<td><span data-ttu-id="96173-125">Systemadministratör</span><span class="sxs-lookup"><span data-stu-id="96173-125">System administrator</span></span></td>
-<td><span data-ttu-id="96173-126">Se <a href="publish-mobile-workspace.md">Publicera en mobil arbetsyta</a>.</span><span class="sxs-lookup"><span data-stu-id="96173-126">See <a href="publish-mobile-workspace.md">Publish a mobile workspace</a>.</span></span></td>
+<td><span data-ttu-id="aafdb-124">Den mobila arbetsytan <strong>företagskatalog</strong> måste publiceras.</span><span class="sxs-lookup"><span data-stu-id="aafdb-124">The <strong>Company directory</strong> mobile workspace must be published.</span></span></td>
+<td><span data-ttu-id="aafdb-125">Systemadministratör</span><span class="sxs-lookup"><span data-stu-id="aafdb-125">System administrator</span></span></td>
+<td><span data-ttu-id="aafdb-126">Se <a href="publish-mobile-workspace.md">Publicera en mobil arbetsyta</a>.</span><span class="sxs-lookup"><span data-stu-id="aafdb-126">See <a href="publish-mobile-workspace.md">Publish a mobile workspace</a>.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="96173-127">Hämta och installera mobilappen</span><span class="sxs-lookup"><span data-stu-id="96173-127">Download and install the mobile app</span></span>
-<span data-ttu-id="96173-128">Hämta och installera mobilappen Dynamics 365 for Unified Operations:</span><span class="sxs-lookup"><span data-stu-id="96173-128">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
+## <a name="download-and-install-the-mobile-app"></a><span data-ttu-id="aafdb-127">Hämta och installera mobilappen</span><span class="sxs-lookup"><span data-stu-id="aafdb-127">Download and install the mobile app</span></span>
+<span data-ttu-id="aafdb-128">Hämta och installera mobilappen Dynamics 365 for Unified Operations:</span><span class="sxs-lookup"><span data-stu-id="aafdb-128">Download and install the Dynamics 365 for Unified Operations mobile app:</span></span>
 
--   [<span data-ttu-id="96173-129">För Android-telefoner</span><span class="sxs-lookup"><span data-stu-id="96173-129">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
--   [<span data-ttu-id="96173-130">För iPhones</span><span class="sxs-lookup"><span data-stu-id="96173-130">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
+-   [<span data-ttu-id="aafdb-129">För Android-telefoner</span><span class="sxs-lookup"><span data-stu-id="aafdb-129">For Android phones</span></span>](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [<span data-ttu-id="aafdb-130">För iPhones</span><span class="sxs-lookup"><span data-stu-id="aafdb-130">For iPhones</span></span>](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="96173-131">Logga in på mobilappen</span><span class="sxs-lookup"><span data-stu-id="96173-131">Sign in to the mobile app</span></span>
-1.  <span data-ttu-id="96173-132">Starta appen i din mobila enhet.</span><span class="sxs-lookup"><span data-stu-id="96173-132">Start the app on your mobile device.</span></span>
-2.  <span data-ttu-id="96173-133">Ange din Microsoft Dynamics 365 URL.</span><span class="sxs-lookup"><span data-stu-id="96173-133">Enter your Microsoft Dynamics 365 URL.</span></span>
-3.  <span data-ttu-id="96173-134">Första gången du loggar in uppmanas du ange användarnamn och lösenord.</span><span class="sxs-lookup"><span data-stu-id="96173-134">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="96173-135">Ange dina autentiseringsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="96173-135">Enter your credentials.</span></span>
-4.  <span data-ttu-id="96173-136">När du loggar in visas tillgängliga arbetsytor för ditt företag.</span><span class="sxs-lookup"><span data-stu-id="96173-136">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="96173-137">Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.</span><span class="sxs-lookup"><span data-stu-id="96173-137">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
+## <a name="sign-in-to-the-mobile-app"></a><span data-ttu-id="aafdb-131">Logga in på mobilappen</span><span class="sxs-lookup"><span data-stu-id="aafdb-131">Sign in to the mobile app</span></span>
+1.  <span data-ttu-id="aafdb-132">Starta appen i din mobila enhet.</span><span class="sxs-lookup"><span data-stu-id="aafdb-132">Start the app on your mobile device.</span></span>
+2.  <span data-ttu-id="aafdb-133">Ange din Microsoft Dynamics 365 URL.</span><span class="sxs-lookup"><span data-stu-id="aafdb-133">Enter your Microsoft Dynamics 365 URL.</span></span>
+3.  <span data-ttu-id="aafdb-134">Första gången du loggar in uppmanas du ange användarnamn och lösenord.</span><span class="sxs-lookup"><span data-stu-id="aafdb-134">The first time that you sign in, you're prompted for your user name and password.</span></span> <span data-ttu-id="aafdb-135">Ange dina autentiseringsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="aafdb-135">Enter your credentials.</span></span>
+4.  <span data-ttu-id="aafdb-136">När du loggar in visas tillgängliga arbetsytor för ditt företag.</span><span class="sxs-lookup"><span data-stu-id="aafdb-136">After you sign in, the available workspaces for your company are shown.</span></span> <span data-ttu-id="aafdb-137">Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.</span><span class="sxs-lookup"><span data-stu-id="aafdb-137">Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.</span></span>
 
-<span data-ttu-id="96173-138">[![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="96173-138">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
+<span data-ttu-id="aafdb-138">[![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span><span class="sxs-lookup"><span data-stu-id="aafdb-138">[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)</span></span>
 
-## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a><span data-ttu-id="96173-139">Visa företagskatalogen med mobila arbetsytan</span><span class="sxs-lookup"><span data-stu-id="96173-139">View the company directory by using the mobile workspace</span></span>
-1.  <span data-ttu-id="96173-140">I mobilappen väljer du **Företagskatalog**.</span><span class="sxs-lookup"><span data-stu-id="96173-140">In the mobile app, select the **Company directory** workspace.</span></span> <span data-ttu-id="96173-141">En lista över tillgängliga medarbetare visas.</span><span class="sxs-lookup"><span data-stu-id="96173-141">A list of employees is shown.</span></span>
-3.  <span data-ttu-id="96173-142">Välj en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="96173-142">Select an employee.</span></span> <span data-ttu-id="96173-143">Sidan **profil för medarbetaren** visas.</span><span class="sxs-lookup"><span data-stu-id="96173-143">The **Employee profile** page appears.</span></span> <span data-ttu-id="96173-144">Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.</span><span class="sxs-lookup"><span data-stu-id="96173-144">The information on this page includes the employee's first name, last name, title, and department.</span></span>
+## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a><span data-ttu-id="aafdb-139">Visa företagskatalogen med mobila arbetsytan</span><span class="sxs-lookup"><span data-stu-id="aafdb-139">View the company directory by using the mobile workspace</span></span>
+1.  <span data-ttu-id="aafdb-140">I mobilappen väljer du **Företagskatalog**.</span><span class="sxs-lookup"><span data-stu-id="aafdb-140">In the mobile app, select the **Company directory** workspace.</span></span> <span data-ttu-id="aafdb-141">En lista över tillgängliga medarbetare visas.</span><span class="sxs-lookup"><span data-stu-id="aafdb-141">A list of employees is shown.</span></span>
+3.  <span data-ttu-id="aafdb-142">Välj en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="aafdb-142">Select an employee.</span></span> <span data-ttu-id="aafdb-143">Sidan **profil för medarbetaren** visas.</span><span class="sxs-lookup"><span data-stu-id="aafdb-143">The **Employee profile** page appears.</span></span> <span data-ttu-id="aafdb-144">Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.</span><span class="sxs-lookup"><span data-stu-id="aafdb-144">The information on this page includes the employee's first name, last name, title, and department.</span></span>
 
-## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a><span data-ttu-id="96173-145">Sök i företagskatalogen med mobila arbetsytan</span><span class="sxs-lookup"><span data-stu-id="96173-145">Search the company directory by using the mobile workspace</span></span>
-1.  <span data-ttu-id="96173-146">I mobilappen väljer du **Företagskatalog**.</span><span class="sxs-lookup"><span data-stu-id="96173-146">In the mobile app, select the **Company directory** workspace.</span></span>
-2.  <span data-ttu-id="96173-147">I fältet **söka** anger du medarbetarens förnamn, efternamn, titel eller avdelning för att starta sökningen.</span><span class="sxs-lookup"><span data-stu-id="96173-147">In the **Search** field, enter an employee's first name, last name, title, or department to start the search.</span></span>
-3.  <span data-ttu-id="96173-148">Välj en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="96173-148">Select an employee.</span></span> <span data-ttu-id="96173-149">Sidan **profil för medarbetaren** visas.</span><span class="sxs-lookup"><span data-stu-id="96173-149">The **Employee profile** page appears.</span></span> <span data-ttu-id="96173-150">Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.</span><span class="sxs-lookup"><span data-stu-id="96173-150">The information on this page includes the employee's first name, last name, title, and department.</span></span>
+## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a><span data-ttu-id="aafdb-145">Sök i företagskatalogen med mobila arbetsytan</span><span class="sxs-lookup"><span data-stu-id="aafdb-145">Search the company directory by using the mobile workspace</span></span>
+1.  <span data-ttu-id="aafdb-146">I mobilappen väljer du **Företagskatalog**.</span><span class="sxs-lookup"><span data-stu-id="aafdb-146">In the mobile app, select the **Company directory** workspace.</span></span>
+2.  <span data-ttu-id="aafdb-147">I fältet **söka** anger du medarbetarens förnamn, efternamn, titel eller avdelning för att starta sökningen.</span><span class="sxs-lookup"><span data-stu-id="aafdb-147">In the **Search** field, enter an employee's first name, last name, title, or department to start the search.</span></span>
+3.  <span data-ttu-id="aafdb-148">Välj en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="aafdb-148">Select an employee.</span></span> <span data-ttu-id="aafdb-149">Sidan **profil för medarbetaren** visas.</span><span class="sxs-lookup"><span data-stu-id="aafdb-149">The **Employee profile** page appears.</span></span> <span data-ttu-id="aafdb-150">Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.</span><span class="sxs-lookup"><span data-stu-id="aafdb-150">The information on this page includes the employee's first name, last name, title, and department.</span></span>

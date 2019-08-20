@@ -10,37 +10,37 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f74f8e4efc4474693f0a5b543c1300c3b64ecda0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1968703c7e9662b5cccdb71d049010bb4bd4534
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563237"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836514"
 ---
-# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="ade1e-103">Beräkna en strukturlista med en enda nivå (februari 2016)</span><span class="sxs-lookup"><span data-stu-id="ade1e-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
+# <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a><span data-ttu-id="e4184-103">Beräkna en strukturlista med en enda nivå (februari 2016)</span><span class="sxs-lookup"><span data-stu-id="e4184-103">Calculate a BOM by using a single level structure (February 2016)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ade1e-104">Denna procedur beskriver hur du beräknar kostnaden för en färdig produkt genom att använda en enda nedbrytningsnivå som baseras på arket för kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="ade1e-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="ade1e-105">Detta är den fjärde uppgiften i beräkningsserien för strukturlista.</span><span class="sxs-lookup"><span data-stu-id="ade1e-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="ade1e-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="ade1e-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="e4184-104">Denna procedur beskriver hur du beräknar kostnaden för en färdig produkt genom att använda en enda nedbrytningsnivå som baseras på arket för kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="e4184-104">This procedure shows how to calculate the cost of a finished product by using single level explosion that is based in the Costing sheet.</span></span> <span data-ttu-id="e4184-105">Detta är den fjärde uppgiften i beräkningsserien för strukturlista.</span><span class="sxs-lookup"><span data-stu-id="e4184-105">This is the sixth task in the BOM calculation series.</span></span> <span data-ttu-id="e4184-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="e4184-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="ade1e-107">Gå till Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="ade1e-107">Go to Released products.</span></span>
-2. <span data-ttu-id="ade1e-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ade1e-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ade1e-109">Välj produkten BOM_1.</span><span class="sxs-lookup"><span data-stu-id="ade1e-109">Select product BOM_1.</span></span>  
-3. <span data-ttu-id="ade1e-110">Klicka på Hantera kostnader i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="ade1e-110">On the Action Pane, click Manage costs.</span></span>
-4. <span data-ttu-id="ade1e-111">Klicka på Artikelpris.</span><span class="sxs-lookup"><span data-stu-id="ade1e-111">Click Item price.</span></span>
-5. <span data-ttu-id="ade1e-112">Klicka på Beräkna artikelkostnad.</span><span class="sxs-lookup"><span data-stu-id="ade1e-112">Click Calculate item cost.</span></span>
-    * <span data-ttu-id="ade1e-113">Du kan behöva klicka på ellipsen (...) om du vill se det här alternativet i huvudmenyn.</span><span class="sxs-lookup"><span data-stu-id="ade1e-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
-6. <span data-ttu-id="ade1e-114">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kostnadsredovisningsversion.</span><span class="sxs-lookup"><span data-stu-id="ade1e-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="ade1e-115">Välj 10 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="ade1e-115">For this demo, select 10.</span></span> <span data-ttu-id="ade1e-116">Detta är samma kostnadsversion som används för att lägga till självkostnaden för komponenter.</span><span class="sxs-lookup"><span data-stu-id="ade1e-116">This is the same costing version used for adding the cost price to the components.</span></span>  
-7. <span data-ttu-id="ade1e-117">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="ade1e-117">Click OK.</span></span>
-8. <span data-ttu-id="ade1e-118">Klicka på Visa beräkningsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="ade1e-118">Click View calculation details.</span></span>
-    * <span data-ttu-id="ade1e-119">Du kan behöva klicka på ellipsen (...) om du vill se det här alternativet i huvudmenyn.</span><span class="sxs-lookup"><span data-stu-id="ade1e-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="ade1e-120">Här följer sammansättningen av kostnaden: • 10 härleds från  ITEM_A, 10 från ITEM_B, 10 from BOM_2.</span><span class="sxs-lookup"><span data-stu-id="ade1e-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="ade1e-121">I det här fallet finns ingen information för BOM_2 eftersom denna har registrerats som en standardkostnad på 10, men inte beräkningen.</span><span class="sxs-lookup"><span data-stu-id="ade1e-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="ade1e-122">•  7 härleds från ställtiden, som är en konstant kostnad, och ytterligare 7 härleds från körningen (Process).</span><span class="sxs-lookup"><span data-stu-id="ade1e-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="ade1e-123">•  Det finns också andra belopp som motsvarar indirekta kostnader.</span><span class="sxs-lookup"><span data-stu-id="ade1e-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
-9. <span data-ttu-id="ade1e-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="ade1e-124">@SysTaskRecorder:_RequestClose</span></span>
+1. <span data-ttu-id="e4184-107">Gå till Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="e4184-107">Go to Released products.</span></span>
+2. <span data-ttu-id="e4184-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="e4184-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="e4184-109">Välj produkten BOM_1.</span><span class="sxs-lookup"><span data-stu-id="e4184-109">Select product BOM_1.</span></span>  
+3. <span data-ttu-id="e4184-110">Klicka på Hantera kostnader i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="e4184-110">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="e4184-111">Klicka på Artikelpris.</span><span class="sxs-lookup"><span data-stu-id="e4184-111">Click Item price.</span></span>
+5. <span data-ttu-id="e4184-112">Klicka på Beräkna artikelkostnad.</span><span class="sxs-lookup"><span data-stu-id="e4184-112">Click Calculate item cost.</span></span>
+    * <span data-ttu-id="e4184-113">Du kan behöva klicka på ellipsen (...) om du vill se det här alternativet i huvudmenyn.</span><span class="sxs-lookup"><span data-stu-id="e4184-113">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>  
+6. <span data-ttu-id="e4184-114">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kostnadsredovisningsversion.</span><span class="sxs-lookup"><span data-stu-id="e4184-114">In the Costing version field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="e4184-115">Välj 10 i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="e4184-115">For this demo, select 10.</span></span> <span data-ttu-id="e4184-116">Detta är samma kostnadsversion som används för att lägga till självkostnaden för komponenter.</span><span class="sxs-lookup"><span data-stu-id="e4184-116">This is the same costing version used for adding the cost price to the components.</span></span>  
+7. <span data-ttu-id="e4184-117">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e4184-117">Click OK.</span></span>
+8. <span data-ttu-id="e4184-118">Klicka på Visa beräkningsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="e4184-118">Click View calculation details.</span></span>
+    * <span data-ttu-id="e4184-119">Du kan behöva klicka på ellipsen (...) om du vill se det här alternativet i huvudmenyn.</span><span class="sxs-lookup"><span data-stu-id="e4184-119">You may need to click the ellipsis (...) to see this option in the top menu.</span></span>    <span data-ttu-id="e4184-120">Här följer sammansättningen av kostnaden: • 10 härleds från  ITEM_A, 10 från ITEM_B, 10 from BOM_2.</span><span class="sxs-lookup"><span data-stu-id="e4184-120">Here's the composition of the cost:  •    10 is derived from ITEM_A, 10 from ITEM_B, 10 from BOM_2.</span></span> <span data-ttu-id="e4184-121">I det här fallet finns ingen information för BOM_2 eftersom denna har registrerats som en standardkostnad på 10, men inte beräkningen.</span><span class="sxs-lookup"><span data-stu-id="e4184-121">In this case there are no details for BOM_2 because it was entered as a standard cost of 10 but not done through calculation.</span></span>  <span data-ttu-id="e4184-122">•  7 härleds från ställtiden, som är en konstant kostnad, och ytterligare 7 härleds från körningen (Process).</span><span class="sxs-lookup"><span data-stu-id="e4184-122">•  7 is derived from the setup time, which is a constant cost, and additional 7 is derived from the run-time operation (Process).</span></span>  <span data-ttu-id="e4184-123">•  Det finns också andra belopp som motsvarar indirekta kostnader.</span><span class="sxs-lookup"><span data-stu-id="e4184-123">•   There are also other amounts that correspond to indirect costs.</span></span>  
+9. <span data-ttu-id="e4184-124">@SysTaskRecorder:_RequestClose</span><span class="sxs-lookup"><span data-stu-id="e4184-124">@SysTaskRecorder:_RequestClose</span></span>
 

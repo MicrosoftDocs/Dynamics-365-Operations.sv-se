@@ -1,49 +1,45 @@
 ---
 title: Skapa en ny produkt
-description: Den här uppgiften visar hur du skapar en ny delad produkt.
+description: I det här avsnittet beskrivs hur du skapar en ny delad produkt.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a603d89749242a4c6039ab83da286ec6ab727d8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 722414eee1e738e1438bbb40dbd9b8ca606f9245
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548426"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844811"
 ---
-# <a name="create-a-new-product"></a><span data-ttu-id="ffd9c-103">Skapa en ny produkt</span><span class="sxs-lookup"><span data-stu-id="ffd9c-103">Create a new product</span></span>
+# <a name="create-a-new-product"></a><span data-ttu-id="f518f-103">Skapa en ny produkt</span><span class="sxs-lookup"><span data-stu-id="f518f-103">Create a new product</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ffd9c-104">Den här uppgiften visar hur du skapar en ny delad produkt.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-104">This task shows how to create a new shared product.</span></span> <span data-ttu-id="ffd9c-105">Den utförs vanligtvis av en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="ffd9c-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-106">The demo data company used to create this task is USMF.</span></span>
+<span data-ttu-id="f518f-104">I det här avsnittet beskrivs hur du skapar en ny delad produkt.</span><span class="sxs-lookup"><span data-stu-id="f518f-104">This topic describes how to create a new shared product.</span></span> <span data-ttu-id="f518f-105">Den utförs vanligtvis av en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="f518f-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="f518f-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="f518f-106">The demo data company used to create this task is USMF.</span></span>
 
-1. <span data-ttu-id="ffd9c-107">Gå till Hantering av produktinformation > Produkter > Produkter.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-107">Go to Product information management > Products > Products.</span></span>
 
-## <a name="create-a-product"></a><span data-ttu-id="ffd9c-108">Skapa en produkt</span><span class="sxs-lookup"><span data-stu-id="ffd9c-108">Create a product</span></span>
-1. <span data-ttu-id="ffd9c-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-109">Click New.</span></span>
-2. <span data-ttu-id="ffd9c-110">Skriv ett värde i fältet Produktnummer.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-110">In the Product number field, type a value.</span></span>
-    * <span data-ttu-id="ffd9c-111">Om en nummerserie inte har ställts in för den produktnumret, måste den anges manuellt.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
-3. <span data-ttu-id="ffd9c-112">Skriv ett värde i fältet Produktnamn.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-112">In the Product name field, type a value.</span></span>
-    * <span data-ttu-id="ffd9c-113">Produktnamnet anges som standard till söknamnet.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-113">The product name defaults to the search name.</span></span> <span data-ttu-id="ffd9c-114">Du kan ändra detta om det behövs.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-114">You can change this if needed.</span></span>  
-4. <span data-ttu-id="ffd9c-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-115">Click OK.</span></span>
+## <a name="create-a-product"></a><span data-ttu-id="f518f-107">Skapa en produkt</span><span class="sxs-lookup"><span data-stu-id="f518f-107">Create a product</span></span>
+1. <span data-ttu-id="f518f-108">I navigeringsfönstret, gå till **Moduler > Produktinformationshantering > Produkter > Produkter**.</span><span class="sxs-lookup"><span data-stu-id="f518f-108">In the Navigation pane, go to **Modules > Product information management > Products > Products**.</span></span>
+2. <span data-ttu-id="f518f-109">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="f518f-109">Select **New**.</span></span>
+3. <span data-ttu-id="f518f-110">Skriv ett värde i fältet **Produktnummer**.</span><span class="sxs-lookup"><span data-stu-id="f518f-110">In the **Product number** field, type a value.</span></span> <span data-ttu-id="f518f-111">Om en nummerserie inte har ställts in för den produktnumret, måste den anges manuellt.</span><span class="sxs-lookup"><span data-stu-id="f518f-111">If a number sequence has not been set up for the product number, it must be entered manually.</span></span>  
+4. <span data-ttu-id="f518f-112">Skriv ett värde i fältet **Produktnamn**.</span><span class="sxs-lookup"><span data-stu-id="f518f-112">In the **Product name** field, type a value.</span></span> <span data-ttu-id="f518f-113">Produktnamnet anges som standard till söknamnet.</span><span class="sxs-lookup"><span data-stu-id="f518f-113">The product name defaults to the search name.</span></span> <span data-ttu-id="f518f-114">Du kan ändra detta om det behövs.</span><span class="sxs-lookup"><span data-stu-id="f518f-114">You can change this if needed.</span></span>  
+5. <span data-ttu-id="f518f-115">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="f518f-115">Select **OK**.</span></span>
 
-## <a name="set-up-dimension-groups"></a><span data-ttu-id="ffd9c-116">Ställ in dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="ffd9c-116">Set up dimension groups</span></span>
-1. <span data-ttu-id="ffd9c-117">Klicka på Dimensionsgrupper för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-117">Click Dimension groups to open the drop dialog.</span></span>
-2. <span data-ttu-id="ffd9c-118">Ange eller välj ett värde i fältet Lagringsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-118">In the Storage dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="ffd9c-119">Lagringsdimensiongruppen avgör vilka lagringsdimensioner du måste ange för varje transaktion för produkten och hur den ska spåras i lagret.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
-3. <span data-ttu-id="ffd9c-120">Ange eller välj ett värde i fältet Spårningsdimensionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-120">In the Tracking dimension group field, enter or select a value.</span></span>
-    * <span data-ttu-id="ffd9c-121">Spårningsdimensiongruppen avgör vilka spårningsdimensioner du måste ange för varje transaktion för produkten och hur den ska hanteras i lagret.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
-4. <span data-ttu-id="ffd9c-122">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="ffd9c-122">Click OK.</span></span>
+## <a name="set-up-dimension-groups"></a><span data-ttu-id="f518f-116">Ställ in dimensionsgrupper</span><span class="sxs-lookup"><span data-stu-id="f518f-116">Set up dimension groups</span></span>
+1. <span data-ttu-id="f518f-117">Välj **Dimensionsgrupper** för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="f518f-117">Select **Dimension groups** to open the drop dialog.</span></span>
+2. <span data-ttu-id="f518f-118">Ange eller välj ett värde i fältet **Lagringsdimensionsgrupp**.</span><span class="sxs-lookup"><span data-stu-id="f518f-118">In the **Storage dimension group** field, enter or select a value.</span></span> <span data-ttu-id="f518f-119">Lagringsdimensiongruppen avgör vilka lagringsdimensioner du måste ange för varje transaktion för produkten och hur den ska spåras i lagret.</span><span class="sxs-lookup"><span data-stu-id="f518f-119">The storage dimension group determines which storage dimensions you must enter on each transaction for the product and how it will be tracked in inventory.</span></span>  
+3. <span data-ttu-id="f518f-120">Ange eller välj ett värde i fältet **Spårningsdimensionsgrupp**.</span><span class="sxs-lookup"><span data-stu-id="f518f-120">In the **Tracking dimension group** field, enter or select a value.</span></span> <span data-ttu-id="f518f-121">Spårningsdimensiongruppen avgör vilka spårningsdimensioner du måste ange för varje transaktion för produkten och hur den ska hanteras i lagret.</span><span class="sxs-lookup"><span data-stu-id="f518f-121">The tracking dimension group determines which tracking dimensions you must enter for each transaction for the product, and how it will be handled in inventory.</span></span>  
+4. <span data-ttu-id="f518f-122">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="f518f-122">Select **OK**.</span></span>
 

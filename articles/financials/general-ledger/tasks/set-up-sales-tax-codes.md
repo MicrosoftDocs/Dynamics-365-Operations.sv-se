@@ -1,6 +1,6 @@
 ---
 title: Ställ in momskoder
-description: Momskoder skapas för varje indirekt moms eller skatt som den juridiska personen ska beräkna, samla in och betala till skattemyndigheterna.
+description: Det här avsnittet innehåller information om hur du ställer in momskoder i Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
@@ -10,46 +10,39 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f29442c2ef2e3d0008a74298fda218e4cbd93f8e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3419c6b569093d717158e80bd9bc01054d82bff9
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571593"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834840"
 ---
-# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="19a1d-103">Ställ in momskoder</span><span class="sxs-lookup"><span data-stu-id="19a1d-103">Set up sales tax codes</span></span>
+# <a name="set-up-sales-tax-codes"></a><span data-ttu-id="881a0-103">Ställ in momskoder</span><span class="sxs-lookup"><span data-stu-id="881a0-103">Set up sales tax codes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="19a1d-104">Momskoder skapas för varje indirekt moms eller skatt som den juridiska personen ska beräkna, samla in och betala till skattemyndigheterna.</span><span class="sxs-lookup"><span data-stu-id="19a1d-104">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
+<span data-ttu-id="881a0-104">Det här avsnittet innehåller information om hur du ställer in momskoder i Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="881a0-104">This topic explains how to set up sales tax codes in Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="881a0-105">Momskoder skapas för varje indirekt moms eller skatt som den juridiska personen ska beräkna, samla in och betala till skattemyndigheterna.</span><span class="sxs-lookup"><span data-stu-id="881a0-105">Sales tax codes are created for every indirect tax or duty that the legal entity is obligated to calculate, collect, and pay to sales tax authorities.</span></span>
 
-<span data-ttu-id="19a1d-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="19a1d-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="881a0-106">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="881a0-106">This task uses the USMF demo company.</span></span>
 
-
-
-1. <span data-ttu-id="19a1d-106">Gå till Skatt > Indirekta skatter > Moms > Momskoder.</span><span class="sxs-lookup"><span data-stu-id="19a1d-106">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
-2. <span data-ttu-id="19a1d-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="19a1d-107">Click New.</span></span>
-3. <span data-ttu-id="19a1d-108">I fältet Momskod, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="19a1d-108">In the Sales tax code field, type a value.</span></span>
-4. <span data-ttu-id="19a1d-109">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="19a1d-109">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="19a1d-110">Välj en kvittningsperiod för att ange vilken skattemyndighet och i vilka intervall denna moms ska rapporteras och betalas.</span><span class="sxs-lookup"><span data-stu-id="19a1d-110">Select a Settlement period to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
-6. <span data-ttu-id="19a1d-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="19a1d-111">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="19a1d-112">Välj en bokföringgrupp för att ange huvudkonton för att bokföra moms i redovisningen.</span><span class="sxs-lookup"><span data-stu-id="19a1d-112">Select a Ledger posting group to specify the main accounts to post sales tax to the general ledger.</span></span>
-8. <span data-ttu-id="19a1d-113">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="19a1d-113">In the list, find and select the desired record.</span></span>
-9. <span data-ttu-id="19a1d-114">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="19a1d-114">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="19a1d-115">Expandera snabbfliken Beräkning.</span><span class="sxs-lookup"><span data-stu-id="19a1d-115">Expand the Calculation FastTab.</span></span>
-    * <span data-ttu-id="19a1d-116">Beräkningssnabbfliken har flera fält som kontrollerar hur momsbelopp ska beräknas.</span><span class="sxs-lookup"><span data-stu-id="19a1d-116">The Calculation FastTab has multiple fields that control how sales tax amounts will be calculated.</span></span>  
-11. <span data-ttu-id="19a1d-117">Klicka på Momskod i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="19a1d-117">On the Action Pane, click Sales tax code.</span></span>
-12. <span data-ttu-id="19a1d-118">Klicka på Värden.</span><span class="sxs-lookup"><span data-stu-id="19a1d-118">Click Values.</span></span>
-13. <span data-ttu-id="19a1d-119">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="19a1d-119">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="19a1d-120">Ange värdet för momskoden.</span><span class="sxs-lookup"><span data-stu-id="19a1d-120">Enter the value for this tax code.</span></span>
-    * <span data-ttu-id="19a1d-121">På beräkningssnabbfliken i fältet Ursprung, om belopp per enhet är markerat, kommer värdet multipliceras med kvantiteten på transaktionen för att beräkna momsbeloppet.</span><span class="sxs-lookup"><span data-stu-id="19a1d-121">On the Calculation FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="19a1d-122">Om momskoden inte är en enhetsbaserad moms är värdet en procentsats som används som ursprung för att denna momskod ska kunna beräkna momsbeloppet.</span><span class="sxs-lookup"><span data-stu-id="19a1d-122">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
-15. <span data-ttu-id="19a1d-123">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="19a1d-123">Click Save.</span></span>
-16. <span data-ttu-id="19a1d-124">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="19a1d-124">Close the page.</span></span>
-17. <span data-ttu-id="19a1d-125">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="19a1d-125">Click Save.</span></span>
+1. <span data-ttu-id="881a0-107">Gå till **Navigeringsfönster > Moms > Indirekta skatter > Moms > Momskoder**.</span><span class="sxs-lookup"><span data-stu-id="881a0-107">Go to **Navigation pane > Tax > Indirect taxes > Sales tax > Sales tax codes**.</span></span>
+2. <span data-ttu-id="881a0-108">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="881a0-108">Select **New**.</span></span>
+3. <span data-ttu-id="881a0-109">I fältet **Momskod**, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="881a0-109">In the **Sales tax code** field, type a value.</span></span>
+4. <span data-ttu-id="881a0-110">Skriv ett värde i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="881a0-110">In the **Name** field, type a value.</span></span>
+5. <span data-ttu-id="881a0-111">Välj en **kvittningsperiod** genom att öppna rullgardinslistan för att ange vilken skattemyndighet och i vilka intervall denna moms ska rapporteras och betalas.</span><span class="sxs-lookup"><span data-stu-id="881a0-111">Select a **Settlement period** by opening the pull-down list to specify which Sales tax authority and in which intervals this sales tax needs to be reported and paid.</span></span>
+6. <span data-ttu-id="881a0-112">Välj en **bokföringgrupp** för att ange huvudkonton för att bokföra moms i redovisningen.</span><span class="sxs-lookup"><span data-stu-id="881a0-112">Select a **Ledger posting group** to specify the main accounts to post sales tax to the general ledger.</span></span>
+7. <span data-ttu-id="881a0-113">Expandera snabbfliken **Beräkning**.</span><span class="sxs-lookup"><span data-stu-id="881a0-113">Expand the **Calculation** FastTab.</span></span> <span data-ttu-id="881a0-114">Detta inkluderar flera fält som kontrollerar hur momsbelopp ska beräknas.</span><span class="sxs-lookup"><span data-stu-id="881a0-114">This includes multiple fields that control how sales tax amounts will be calculated.</span></span> <span data-ttu-id="881a0-115">Fyll i dessa fält efter behov.</span><span class="sxs-lookup"><span data-stu-id="881a0-115">Fill these fields out as needed.</span></span>  
+8. <span data-ttu-id="881a0-116">I **åtgärdsfönstret** överst i gränssnittet, välj **momskod**.</span><span class="sxs-lookup"><span data-stu-id="881a0-116">On the **Action Pane** at the top of the interface, select **Sales tax code**.</span></span>
+9. <span data-ttu-id="881a0-117">Markera **värden**.</span><span class="sxs-lookup"><span data-stu-id="881a0-117">Select **Values**.</span></span>
+10. <span data-ttu-id="881a0-118">Ange värdet för den här momskoden i kolumnen **värde**.</span><span class="sxs-lookup"><span data-stu-id="881a0-118">Enter the value for this tax code in the **value** column.</span></span>
+    - <span data-ttu-id="881a0-119">På snabbfliken **Beräkning** i fältet Ursprung, om belopp per enhet är markerat, kommer värdet multipliceras med kvantiteten på transaktionen för att beräkna momsbeloppet.</span><span class="sxs-lookup"><span data-stu-id="881a0-119">On the **Calculation** FastTab, in the Origin field, if Amount per unit is selected, the value will be multiplied by the quantity on the transaction to calculate the sales tax amount.</span></span>  <span data-ttu-id="881a0-120">Om momskoden inte är en enhetsbaserad moms är värdet en procentsats som används som ursprung för att denna momskod ska kunna beräkna momsbeloppet.</span><span class="sxs-lookup"><span data-stu-id="881a0-120">If the tax code is not a unit based tax, the value is a percentage that is applied on the Origin for this tax code to calculate the sales tax amount.</span></span>     
+11. <span data-ttu-id="881a0-121">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="881a0-121">Select **Save**.</span></span>
+12. <span data-ttu-id="881a0-122">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="881a0-122">Close the page.</span></span>
+13. <span data-ttu-id="881a0-123">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="881a0-123">Select **Save**.</span></span>
 

@@ -18,49 +18,49 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16d9f48ed38a5033fab94d45821f0ed6f7f1f011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9c442eed4e9e8d868db253ae0c042f0b6c977f20
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558398"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743059"
 ---
-# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="9296a-103">Registrering av start- och stopptid för en serviceorder</span><span class="sxs-lookup"><span data-stu-id="9296a-103">Start and stop time recording on a service order</span></span> 
+# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="b1ee7-103">Registrering av start- och stopptid för en serviceorder</span><span class="sxs-lookup"><span data-stu-id="b1ee7-103">Start and stop time recording on a service order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="9296a-104">Använd den här proceduren om du vill starta och stoppa tidsregistrering för en serviceorder som har ett definierat serviceavtal.</span><span class="sxs-lookup"><span data-stu-id="9296a-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
+<span data-ttu-id="b1ee7-104">Använd den här proceduren om du vill starta och stoppa tidsregistrering för en serviceorder som har ett definierat serviceavtal.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
 
-## <a name="start-time-recording"></a><span data-ttu-id="9296a-105">Starta tidsregistrering</span><span class="sxs-lookup"><span data-stu-id="9296a-105">Start time recording</span></span>
+## <a name="start-time-recording"></a><span data-ttu-id="b1ee7-105">Starta tidsregistrering</span><span class="sxs-lookup"><span data-stu-id="b1ee7-105">Start time recording</span></span>
 
-1.  <span data-ttu-id="9296a-106">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="9296a-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="b1ee7-106">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="9296a-107">Klicka på fliken **serviceorder**. På **åtgärdsfönstret** i gruppen **Servicenivåavtal** genom att klicka på **starta**.</span><span class="sxs-lookup"><span data-stu-id="9296a-107">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.</span></span>
+2.  <span data-ttu-id="b1ee7-107">Klicka på fliken **serviceorder**. På **åtgärdsfönstret** i gruppen **Servicenivåavtal** genom att klicka på **starta**.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-107">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.</span></span>
 
-3.  <span data-ttu-id="9296a-108">Ange datum och tid då tidsregistreringen ska startas.</span><span class="sxs-lookup"><span data-stu-id="9296a-108">Enter the date and time that the time recording should be started.</span></span>
+3.  <span data-ttu-id="b1ee7-108">Ange datum och tid då tidsregistreringen ska startas.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-108">Enter the date and time that the time recording should be started.</span></span>
 
-## <a name="stop-time-recording"></a><span data-ttu-id="9296a-109">Stoppa tidsregistrering</span><span class="sxs-lookup"><span data-stu-id="9296a-109">Stop time recording</span></span>
+## <a name="stop-time-recording"></a><span data-ttu-id="b1ee7-109">Stoppa tidsregistrering</span><span class="sxs-lookup"><span data-stu-id="b1ee7-109">Stop time recording</span></span>
 
-1.  <span data-ttu-id="9296a-110">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="9296a-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="b1ee7-110">Klicka på noden **Servicehantering** \> **Vanligt** \> **Serviceorder** \> **Serviceorder**.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="9296a-111">Klicka på fliken **serviceorder**. På **åtgärdsfönstret** i gruppen **Servicenivåavtal** genom att klicka på **stopp**.</span><span class="sxs-lookup"><span data-stu-id="9296a-111">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.</span></span>
+2.  <span data-ttu-id="b1ee7-111">Klicka på fliken **serviceorder**. På **åtgärdsfönstret** i gruppen **Servicenivåavtal** genom att klicka på **stopp**.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-111">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.</span></span>
 
-3.  <span data-ttu-id="9296a-112">Ange datum och tid då tidsregistreringen ska stoppas.</span><span class="sxs-lookup"><span data-stu-id="9296a-112">Enter the date and time that the time recording should be stopped.</span></span>
+3.  <span data-ttu-id="b1ee7-112">Ange datum och tid då tidsregistreringen ska stoppas.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-112">Enter the date and time that the time recording should be stopped.</span></span>
 
-4.  <span data-ttu-id="9296a-113">Välj **Lägg till en återkallningsorsak**, och välj en orsakskod i **Fasorsakskod** om du vill ange en orsak till varför tidsregistreringen stoppas.</span><span class="sxs-lookup"><span data-stu-id="9296a-113">Select **Add a revocation reason**, and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
+4.  <span data-ttu-id="b1ee7-113">Välj **Lägg till en återkallningsorsak**, och välj en orsakskod i **Fasorsakskod** om du vill ange en orsak till varför tidsregistreringen stoppas.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-113">Select **Add a revocation reason**, and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="9296a-114">Om <STRONG>Orsakskod för överskriden tidsgräns</STRONG> väljs i formuläret <STRONG>Serviceparametrar</STRONG> måste du ange en orsakskod innan du kan stoppa tidsregistreringen.</span><span class="sxs-lookup"><span data-stu-id="9296a-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
+> <P><span data-ttu-id="b1ee7-114">Om <STRONG>Orsakskod för överskriden tidsgräns</STRONG> väljs i formuläret <STRONG>Serviceparametrar</STRONG> måste du ange en orsakskod innan du kan stoppa tidsregistreringen.</span><span class="sxs-lookup"><span data-stu-id="b1ee7-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="9296a-115">Se även</span><span class="sxs-lookup"><span data-stu-id="9296a-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1ee7-115">Se även</span><span class="sxs-lookup"><span data-stu-id="b1ee7-115">See also</span></span>
 
-<span data-ttu-id="9296a-116">[Starta tidsregistrering för servicenivåavtalet (formulär)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9296a-116">[Start SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))</span></span>
+<span data-ttu-id="b1ee7-116">[Starta tidsregistrering för servicenivåavtalet (formulär)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b1ee7-116">[Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span></span>
 
-<span data-ttu-id="9296a-117">[Stoppa tidsregistrering för servicenivåavtalet (formulär)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9296a-117">[Stop SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))</span></span>
+<span data-ttu-id="b1ee7-117">[Stoppa tidsregistrering för servicenivåavtalet (formulär)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="b1ee7-117">[Stop SLA time recording (form)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span></span>
 
   
 

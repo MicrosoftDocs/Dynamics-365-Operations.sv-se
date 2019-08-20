@@ -10,67 +10,67 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2bee6e81acd029406c95237f0b4ba4ab2565ea1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7e05ebbec1ffb3e3cdd683d847ffc1d2cf817357
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1573077"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1837792"
 ---
-# <a name="create-a-sales-event-kanban-rule"></a><span data-ttu-id="1ef27-103">Skapa en kanban-regel för försäljningshändelse</span><span class="sxs-lookup"><span data-stu-id="1ef27-103">Create a sales event kanban rule</span></span>
+# <a name="create-a-sales-event-kanban-rule"></a><span data-ttu-id="0266a-103">Skapa en kanban-regel för försäljningshändelse</span><span class="sxs-lookup"><span data-stu-id="0266a-103">Create a sales event kanban rule</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1ef27-104">Den här proceduren fokuserar på inställningarna som krävs för att skapa en kanban-regel som utlöses under genereringen av försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="1ef27-104">This procedure focuses on the setup needed to create a kanban rule that is triggered during sales order creation.</span></span> <span data-ttu-id="1ef27-105">Den händelsebaserade kanban-regeln fyller på behov som har sitt ursprung i försäljningsorderrader.</span><span class="sxs-lookup"><span data-stu-id="1ef27-105">The event kanban rule replenishes requirements that originate from sales order lines.</span></span> <span data-ttu-id="1ef27-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="1ef27-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="1ef27-107">Proceduren är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.</span><span class="sxs-lookup"><span data-stu-id="1ef27-107">It is intended for the process engineer or the value stream manager as they prepare production of a new or modified product.</span></span>
+<span data-ttu-id="0266a-104">Den här proceduren fokuserar på inställningarna som krävs för att skapa en kanban-regel som utlöses under genereringen av försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="0266a-104">This procedure focuses on the setup needed to create a kanban rule that is triggered during sales order creation.</span></span> <span data-ttu-id="0266a-105">Den händelsebaserade kanban-regeln fyller på behov som har sitt ursprung i försäljningsorderrader.</span><span class="sxs-lookup"><span data-stu-id="0266a-105">The event kanban rule replenishes requirements that originate from sales order lines.</span></span> <span data-ttu-id="0266a-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="0266a-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="0266a-107">Proceduren är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.</span><span class="sxs-lookup"><span data-stu-id="0266a-107">It is intended for the process engineer or the value stream manager as they prepare production of a new or modified product.</span></span>
 
 
 
 
-## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="1ef27-108">Skapa en ny kanban-regel</span><span class="sxs-lookup"><span data-stu-id="1ef27-108">Create a new kanban rule</span></span>
-1. <span data-ttu-id="1ef27-109">Gå till Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="1ef27-109">Go to Kanban rules.</span></span>
-2. <span data-ttu-id="1ef27-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="1ef27-110">Click New.</span></span>
-3. <span data-ttu-id="1ef27-111">Välj Händelse i fältet för återanskaffningsstrategi.</span><span class="sxs-lookup"><span data-stu-id="1ef27-111">In the Replenishment strategy field, select 'Event'.</span></span>
-    * <span data-ttu-id="1ef27-112">Om du väljer Händelse innebär det att kanban-regeln utlösas av en händelse, till exempel genereringen av en försäljningsorderrad.</span><span class="sxs-lookup"><span data-stu-id="1ef27-112">Selecting Event means that the kanban rule is triggered by an event, for example, creation of a sales order line.</span></span>   <span data-ttu-id="1ef27-113">Detta gäller för områden där varje kanban ska täcka en viss efterfrågan.</span><span class="sxs-lookup"><span data-stu-id="1ef27-113">This is applied to areas where each kanban should cover a specific demand.</span></span>  
-4. <span data-ttu-id="1ef27-114">Ange eller välj ett värde i fältet Första planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="1ef27-114">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="1ef27-115">Välj Slutmontering.</span><span class="sxs-lookup"><span data-stu-id="1ef27-115">Select Final assembly.</span></span>  
-5. <span data-ttu-id="1ef27-116">Expandera avsnittet Detaljer.</span><span class="sxs-lookup"><span data-stu-id="1ef27-116">Expand the Details section.</span></span>
-6. <span data-ttu-id="1ef27-117">Ange eller välj ett värde i fältet Produkt.</span><span class="sxs-lookup"><span data-stu-id="1ef27-117">In the Product field, enter or select a value.</span></span>
-    * <span data-ttu-id="1ef27-118">Välj L0050.</span><span class="sxs-lookup"><span data-stu-id="1ef27-118">Select L0050.</span></span>  
+## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="0266a-108">Skapa en ny kanban-regel</span><span class="sxs-lookup"><span data-stu-id="0266a-108">Create a new kanban rule</span></span>
+1. <span data-ttu-id="0266a-109">Gå till Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="0266a-109">Go to Kanban rules.</span></span>
+2. <span data-ttu-id="0266a-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="0266a-110">Click New.</span></span>
+3. <span data-ttu-id="0266a-111">Välj Händelse i fältet för återanskaffningsstrategi.</span><span class="sxs-lookup"><span data-stu-id="0266a-111">In the Replenishment strategy field, select 'Event'.</span></span>
+    * <span data-ttu-id="0266a-112">Om du väljer Händelse innebär det att kanban-regeln utlösas av en händelse, till exempel genereringen av en försäljningsorderrad.</span><span class="sxs-lookup"><span data-stu-id="0266a-112">Selecting Event means that the kanban rule is triggered by an event, for example, creation of a sales order line.</span></span>   <span data-ttu-id="0266a-113">Detta gäller för områden där varje kanban ska täcka en viss efterfrågan.</span><span class="sxs-lookup"><span data-stu-id="0266a-113">This is applied to areas where each kanban should cover a specific demand.</span></span>  
+4. <span data-ttu-id="0266a-114">Ange eller välj ett värde i fältet Första planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="0266a-114">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="0266a-115">Välj Slutmontering.</span><span class="sxs-lookup"><span data-stu-id="0266a-115">Select Final assembly.</span></span>  
+5. <span data-ttu-id="0266a-116">Expandera avsnittet Detaljer.</span><span class="sxs-lookup"><span data-stu-id="0266a-116">Expand the Details section.</span></span>
+6. <span data-ttu-id="0266a-117">Ange eller välj ett värde i fältet Produkt.</span><span class="sxs-lookup"><span data-stu-id="0266a-117">In the Product field, enter or select a value.</span></span>
+    * <span data-ttu-id="0266a-118">Välj L0050.</span><span class="sxs-lookup"><span data-stu-id="0266a-118">Select L0050.</span></span>  
 
-## <a name="define-an-event"></a><span data-ttu-id="1ef27-119">Definiera en händelse</span><span class="sxs-lookup"><span data-stu-id="1ef27-119">Define an event</span></span>
-1. <span data-ttu-id="1ef27-120">Expandera avsnittet Händelser.</span><span class="sxs-lookup"><span data-stu-id="1ef27-120">Expand the Events section.</span></span>
-2. <span data-ttu-id="1ef27-121">Välj Automatisk i fältet Försäljningshändelse.</span><span class="sxs-lookup"><span data-stu-id="1ef27-121">In the Sales event field, select 'Automatic'.</span></span>
-    * <span data-ttu-id="1ef27-122">Genom att välja försäljningshändelsen Automatisk kommer denna kanban-regel att utlösas automatiskt när en försäljningsrad matchar produkt- och inleveransplatsen.</span><span class="sxs-lookup"><span data-stu-id="1ef27-122">By selecting the sales event Automatic, this kanban rule will be triggered automatically when a sales line matches the product and receipt location.</span></span> <span data-ttu-id="1ef27-123">I den här proceduren är det produkten L0050 på lagerställe 13.</span><span class="sxs-lookup"><span data-stu-id="1ef27-123">In this procedure, it is product L0050 on warehouse 13.</span></span>  
-3. <span data-ttu-id="1ef27-124">Ange den minsta händelsekvantiteten till "50".</span><span class="sxs-lookup"><span data-stu-id="1ef27-124">Set Minimum event quantity to '50'.</span></span>
-    * <span data-ttu-id="1ef27-125">Med en minsta händelsekvantitet på 50 kommer kanban-regeln endast att utlösas av händelser med en kvantitet på 50 eller mer.</span><span class="sxs-lookup"><span data-stu-id="1ef27-125">With a minimum event quantity of 50, the kanban rule will only be triggered by events with a quantity of 50 or more.</span></span>  
-4. <span data-ttu-id="1ef27-126">Expandera avsnittet Produktionsflöde.</span><span class="sxs-lookup"><span data-stu-id="1ef27-126">Expand the Production flow section.</span></span>
-    * <span data-ttu-id="1ef27-127">Observera att inleveransplatsen är lagerställe 13.</span><span class="sxs-lookup"><span data-stu-id="1ef27-127">Notice that the Receipt location is warehouse 13.</span></span> <span data-ttu-id="1ef27-128">Detta innebär att den här kanban-regeln utlöses för den här platsen.</span><span class="sxs-lookup"><span data-stu-id="1ef27-128">This means that this kanban rule will be triggered for this location.</span></span>  
-    * <span data-ttu-id="1ef27-129">I det här exemplet utlöser en försäljningsrad för produkten L0050, med en kvantitet på 50 eller mer, på lagerställe 13, den här kanban-regeln.</span><span class="sxs-lookup"><span data-stu-id="1ef27-129">In this example, a sales line for product L0050, with a quantity of 50 or more, on warehouse 13, will trigger this kanban rule.</span></span>  
+## <a name="define-an-event"></a><span data-ttu-id="0266a-119">Definiera en händelse</span><span class="sxs-lookup"><span data-stu-id="0266a-119">Define an event</span></span>
+1. <span data-ttu-id="0266a-120">Expandera avsnittet Händelser.</span><span class="sxs-lookup"><span data-stu-id="0266a-120">Expand the Events section.</span></span>
+2. <span data-ttu-id="0266a-121">Välj Automatisk i fältet Försäljningshändelse.</span><span class="sxs-lookup"><span data-stu-id="0266a-121">In the Sales event field, select 'Automatic'.</span></span>
+    * <span data-ttu-id="0266a-122">Genom att välja försäljningshändelsen Automatisk kommer denna kanban-regel att utlösas automatiskt när en försäljningsrad matchar produkt- och inleveransplatsen.</span><span class="sxs-lookup"><span data-stu-id="0266a-122">By selecting the sales event Automatic, this kanban rule will be triggered automatically when a sales line matches the product and receipt location.</span></span> <span data-ttu-id="0266a-123">I den här proceduren är det produkten L0050 på lagerställe 13.</span><span class="sxs-lookup"><span data-stu-id="0266a-123">In this procedure, it is product L0050 on warehouse 13.</span></span>  
+3. <span data-ttu-id="0266a-124">Ange den minsta händelsekvantiteten till "50".</span><span class="sxs-lookup"><span data-stu-id="0266a-124">Set Minimum event quantity to '50'.</span></span>
+    * <span data-ttu-id="0266a-125">Med en minsta händelsekvantitet på 50 kommer kanban-regeln endast att utlösas av händelser med en kvantitet på 50 eller mer.</span><span class="sxs-lookup"><span data-stu-id="0266a-125">With a minimum event quantity of 50, the kanban rule will only be triggered by events with a quantity of 50 or more.</span></span>  
+4. <span data-ttu-id="0266a-126">Expandera avsnittet Produktionsflöde.</span><span class="sxs-lookup"><span data-stu-id="0266a-126">Expand the Production flow section.</span></span>
+    * <span data-ttu-id="0266a-127">Observera att inleveransplatsen är lagerställe 13.</span><span class="sxs-lookup"><span data-stu-id="0266a-127">Notice that the Receipt location is warehouse 13.</span></span> <span data-ttu-id="0266a-128">Detta innebär att den här kanban-regeln utlöses för den här platsen.</span><span class="sxs-lookup"><span data-stu-id="0266a-128">This means that this kanban rule will be triggered for this location.</span></span>  
+    * <span data-ttu-id="0266a-129">I det här exemplet utlöser en försäljningsrad för produkten L0050, med en kvantitet på 50 eller mer, på lagerställe 13, den här kanban-regeln.</span><span class="sxs-lookup"><span data-stu-id="0266a-129">In this example, a sales line for product L0050, with a quantity of 50 or more, on warehouse 13, will trigger this kanban rule.</span></span>  
 
-## <a name="create-sales-line-to-trigger-event-kanban-rule"></a><span data-ttu-id="1ef27-130">Skapa försäljningsrader för att utlösa kanban-regel för händelse</span><span class="sxs-lookup"><span data-stu-id="1ef27-130">Create sales line to trigger event kanban rule</span></span>
-1. <span data-ttu-id="1ef27-131">Gå till Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="1ef27-131">Go to All sales orders.</span></span>
-    * <span data-ttu-id="1ef27-132">Ett varningsmeddelande visas när kanban-regeln sparas, vilket innebär att kanbans skapas i realtid under genereringen av försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="1ef27-132">A warning is shown when the kanban rule is saved, which means that kanbans will be created in real-time during sales order creation.</span></span>  
-2. <span data-ttu-id="1ef27-133">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="1ef27-133">Click New.</span></span>
-3. <span data-ttu-id="1ef27-134">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="1ef27-134">In the Customer account field, enter or select a value.</span></span>
-    * <span data-ttu-id="1ef27-135">Välj till exempel US-003.</span><span class="sxs-lookup"><span data-stu-id="1ef27-135">For example, select US-003.</span></span>  
-4. <span data-ttu-id="1ef27-136">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="1ef27-136">Click OK.</span></span>
-5. <span data-ttu-id="1ef27-137">Skriv "L0050" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="1ef27-137">In the Item number field, type 'L0050'.</span></span>
-6. <span data-ttu-id="1ef27-138">Skriv "1" i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="1ef27-138">In the Site field, type '1'.</span></span>
-    * <span data-ttu-id="1ef27-139">Välj Plats 1 eftersom Lagerställe 13 finns på Plats 1.</span><span class="sxs-lookup"><span data-stu-id="1ef27-139">Select Site 1 because Warehouse 13 is on Site 1.</span></span>  
-7. <span data-ttu-id="1ef27-140">Ange eller välj ett värde i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="1ef27-140">In the Warehouse field, enter or select a value.</span></span>
-    * <span data-ttu-id="1ef27-141">Ange lagerstället till 13.</span><span class="sxs-lookup"><span data-stu-id="1ef27-141">Set Warehouse to 13.</span></span>  
-8. <span data-ttu-id="1ef27-142">Ställ in kvantiteten på 75.</span><span class="sxs-lookup"><span data-stu-id="1ef27-142">Set Quantity to '75'.</span></span>
-    * <span data-ttu-id="1ef27-143">Ange en kvantitet på 50 eller högre för att utlösa den skapade kanban-regeln.</span><span class="sxs-lookup"><span data-stu-id="1ef27-143">Enter a quantity of 50 or greater, to trigger the created kanban rule.</span></span>  
+## <a name="create-sales-line-to-trigger-event-kanban-rule"></a><span data-ttu-id="0266a-130">Skapa försäljningsrader för att utlösa kanban-regel för händelse</span><span class="sxs-lookup"><span data-stu-id="0266a-130">Create sales line to trigger event kanban rule</span></span>
+1. <span data-ttu-id="0266a-131">Gå till Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="0266a-131">Go to All sales orders.</span></span>
+    * <span data-ttu-id="0266a-132">Ett varningsmeddelande visas när kanban-regeln sparas, vilket innebär att kanbans skapas i realtid under genereringen av försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="0266a-132">A warning is shown when the kanban rule is saved, which means that kanbans will be created in real-time during sales order creation.</span></span>  
+2. <span data-ttu-id="0266a-133">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="0266a-133">Click New.</span></span>
+3. <span data-ttu-id="0266a-134">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="0266a-134">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="0266a-135">Välj till exempel US-003.</span><span class="sxs-lookup"><span data-stu-id="0266a-135">For example, select US-003.</span></span>  
+4. <span data-ttu-id="0266a-136">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="0266a-136">Click OK.</span></span>
+5. <span data-ttu-id="0266a-137">Skriv "L0050" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="0266a-137">In the Item number field, type 'L0050'.</span></span>
+6. <span data-ttu-id="0266a-138">Skriv "1" i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="0266a-138">In the Site field, type '1'.</span></span>
+    * <span data-ttu-id="0266a-139">Välj Plats 1 eftersom Lagerställe 13 finns på Plats 1.</span><span class="sxs-lookup"><span data-stu-id="0266a-139">Select Site 1 because Warehouse 13 is on Site 1.</span></span>  
+7. <span data-ttu-id="0266a-140">Ange eller välj ett värde i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="0266a-140">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="0266a-141">Ange lagerstället till 13.</span><span class="sxs-lookup"><span data-stu-id="0266a-141">Set Warehouse to 13.</span></span>  
+8. <span data-ttu-id="0266a-142">Ställ in kvantiteten på 75.</span><span class="sxs-lookup"><span data-stu-id="0266a-142">Set Quantity to '75'.</span></span>
+    * <span data-ttu-id="0266a-143">Ange en kvantitet på 50 eller högre för att utlösa den skapade kanban-regeln.</span><span class="sxs-lookup"><span data-stu-id="0266a-143">Enter a quantity of 50 or greater, to trigger the created kanban rule.</span></span>  
 
-## <a name="verify-that-kanban-is-created"></a><span data-ttu-id="1ef27-144">Kontrollera att kanban skapas</span><span class="sxs-lookup"><span data-stu-id="1ef27-144">Verify that kanban is created</span></span>
-1. <span data-ttu-id="1ef27-145">Klicka på Produkt och leverans.</span><span class="sxs-lookup"><span data-stu-id="1ef27-145">Click Product and supply.</span></span>
-2. <span data-ttu-id="1ef27-146">Klicka på Visa pegging-träd.</span><span class="sxs-lookup"><span data-stu-id="1ef27-146">Click View pegging tree.</span></span>
-    * <span data-ttu-id="1ef27-147">Lägg märke till att en kanban med samma kvantitet som försäljningsraden skapas.</span><span class="sxs-lookup"><span data-stu-id="1ef27-147">Notice that a kanban with the same quantity as the sales line is created.</span></span> <span data-ttu-id="1ef27-148">Du kan även se materialet som behövs för att producera L0050.</span><span class="sxs-lookup"><span data-stu-id="1ef27-148">You can also see the material issues needed to produce L0050.</span></span> <span data-ttu-id="1ef27-149">Detta är det sista steget i den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="1ef27-149">This is the last step in this procedure.</span></span>  
+## <a name="verify-that-kanban-is-created"></a><span data-ttu-id="0266a-144">Kontrollera att kanban skapas</span><span class="sxs-lookup"><span data-stu-id="0266a-144">Verify that kanban is created</span></span>
+1. <span data-ttu-id="0266a-145">Klicka på Produkt och leverans.</span><span class="sxs-lookup"><span data-stu-id="0266a-145">Click Product and supply.</span></span>
+2. <span data-ttu-id="0266a-146">Klicka på Visa pegging-träd.</span><span class="sxs-lookup"><span data-stu-id="0266a-146">Click View pegging tree.</span></span>
+    * <span data-ttu-id="0266a-147">Lägg märke till att en kanban med samma kvantitet som försäljningsraden skapas.</span><span class="sxs-lookup"><span data-stu-id="0266a-147">Notice that a kanban with the same quantity as the sales line is created.</span></span> <span data-ttu-id="0266a-148">Du kan även se materialet som behövs för att producera L0050.</span><span class="sxs-lookup"><span data-stu-id="0266a-148">You can also see the material issues needed to produce L0050.</span></span> <span data-ttu-id="0266a-149">Detta är det sista steget i den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="0266a-149">This is the last step in this procedure.</span></span>  
 

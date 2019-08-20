@@ -10,39 +10,39 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetChangeGroup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 32f1daa6de6034d123b1f2cf732059759f6c10ae
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3f980161428fa0aa5a0b9afbe8afc96eb3cb5a3d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555207"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1840059"
 ---
-# <a name="change-a-fixed-asset-group"></a><span data-ttu-id="1d259-103">Ändra en anläggningstillgångsgrupp</span><span class="sxs-lookup"><span data-stu-id="1d259-103">Change a fixed asset group</span></span>
+# <a name="change-a-fixed-asset-group"></a><span data-ttu-id="d07c3-103">Ändra en anläggningstillgångsgrupp</span><span class="sxs-lookup"><span data-stu-id="d07c3-103">Change a fixed asset group</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1d259-104">Anläggningstillgångar bör tilldelas till korrekt anläggningstillgångsgrupp.</span><span class="sxs-lookup"><span data-stu-id="1d259-104">Fixed assets should be assigned to the correct fixed assets group.</span></span> <span data-ttu-id="1d259-105">Anläggningstillgångsgruppen används när du:</span><span class="sxs-lookup"><span data-stu-id="1d259-105">The fixed assets group is used when you:</span></span>
+<span data-ttu-id="d07c3-104">Anläggningstillgångar bör tilldelas till korrekt anläggningstillgångsgrupp.</span><span class="sxs-lookup"><span data-stu-id="d07c3-104">Fixed assets should be assigned to the correct fixed assets group.</span></span> <span data-ttu-id="d07c3-105">Anläggningstillgångsgruppen används när du:</span><span class="sxs-lookup"><span data-stu-id="d07c3-105">The fixed assets group is used when you:</span></span>
 
- - <span data-ttu-id="1d259-106">Skapa förfrågningar och rapporter</span><span class="sxs-lookup"><span data-stu-id="1d259-106">Create inquiries and reports</span></span>
+ - <span data-ttu-id="d07c3-106">Skapa förfrågningar och rapporter</span><span class="sxs-lookup"><span data-stu-id="d07c3-106">Create inquiries and reports</span></span>
 
- - <span data-ttu-id="1d259-107">Konfigurera nya anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="1d259-107">Set up new fixed assets</span></span>
+ - <span data-ttu-id="d07c3-107">Konfigurera nya anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="d07c3-107">Set up new fixed assets</span></span>
 
- - <span data-ttu-id="1d259-108">Integrerar redovisning och bokför transaktioner för anläggningstillgångar till lämpliga redovisningskonton.</span><span class="sxs-lookup"><span data-stu-id="1d259-108">Integrate ledgers and post fixed asset transactions to the appropriate ledger accounts</span></span>
+ - <span data-ttu-id="d07c3-108">Integrerar redovisning och bokför transaktioner för anläggningstillgångar till lämpliga redovisningskonton.</span><span class="sxs-lookup"><span data-stu-id="d07c3-108">Integrate ledgers and post fixed asset transactions to the appropriate ledger accounts</span></span>
 
-<span data-ttu-id="1d259-109">Den här guiden använder demoföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="1d259-109">This guide uses the USMF demo company.</span></span>
+<span data-ttu-id="d07c3-109">Den här guiden använder demoföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="d07c3-109">This guide uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="1d259-110">Gå till anläggningstillgångar > anläggningstillgångar > Fasta tillgångar.</span><span class="sxs-lookup"><span data-stu-id="1d259-110">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
-2. <span data-ttu-id="1d259-111">Välj den anläggningstillgång som du vill byta anläggningstillgångsgrupp på.</span><span class="sxs-lookup"><span data-stu-id="1d259-111">Select the fixed asset you would like to change the fixed asset group on.</span></span>
-3. <span data-ttu-id="1d259-112">Klicka på Change fixed asset group.</span><span class="sxs-lookup"><span data-stu-id="1d259-112">Click Change fixed asset group.</span></span>
-4. <span data-ttu-id="1d259-113">Ange eller välj ett värde i fältet New group.</span><span class="sxs-lookup"><span data-stu-id="1d259-113">In the New group field, enter or select a value.</span></span>
-5. <span data-ttu-id="1d259-114">Välj det här alternativet för att tilldela ett anläggningstillgångsnummer till den valda anläggningstillgången.</span><span class="sxs-lookup"><span data-stu-id="1d259-114">Select this option to assign a fixed asset number to the selected fixed asset.</span></span>
-    * <span data-ttu-id="1d259-115">Fältet Fixed asset number blir tillgängligt när du väljer alternativet New fixed asset number.</span><span class="sxs-lookup"><span data-stu-id="1d259-115">The Fixed asset number field is available if you select the New fixed asset number option.</span></span>   <span data-ttu-id="1d259-116">Om automatisk numrering har ställts in för anläggningstillgångar, visar detta fält nästa tillgängliga nummer för anläggningstillgångar.</span><span class="sxs-lookup"><span data-stu-id="1d259-116">If automatic numbering is set up for fixed assets, this field shows the next available fixed asset number.</span></span> <span data-ttu-id="1d259-117">Du kan ändra numret.</span><span class="sxs-lookup"><span data-stu-id="1d259-117">You can change the number.</span></span>   <span data-ttu-id="1d259-118">Om manuell numrering har ställts in är detta fält tomt, och du måste ange ett nytt anläggningstillgångsnummer.</span><span class="sxs-lookup"><span data-stu-id="1d259-118">If manual numbering is set up, this field is blank and you must enter the new fixed asset number.</span></span>     
-6. <span data-ttu-id="1d259-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="1d259-119">Click OK.</span></span>
-7. <span data-ttu-id="1d259-120">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="1d259-120">Click Yes.</span></span>
+1. <span data-ttu-id="d07c3-110">Gå till anläggningstillgångar > anläggningstillgångar > Fasta tillgångar.</span><span class="sxs-lookup"><span data-stu-id="d07c3-110">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="d07c3-111">Välj den anläggningstillgång som du vill byta anläggningstillgångsgrupp på.</span><span class="sxs-lookup"><span data-stu-id="d07c3-111">Select the fixed asset you would like to change the fixed asset group on.</span></span>
+3. <span data-ttu-id="d07c3-112">Klicka på Change fixed asset group.</span><span class="sxs-lookup"><span data-stu-id="d07c3-112">Click Change fixed asset group.</span></span>
+4. <span data-ttu-id="d07c3-113">Ange eller välj ett värde i fältet New group.</span><span class="sxs-lookup"><span data-stu-id="d07c3-113">In the New group field, enter or select a value.</span></span>
+5. <span data-ttu-id="d07c3-114">Välj det här alternativet för att tilldela ett anläggningstillgångsnummer till den valda anläggningstillgången.</span><span class="sxs-lookup"><span data-stu-id="d07c3-114">Select this option to assign a fixed asset number to the selected fixed asset.</span></span>
+    * <span data-ttu-id="d07c3-115">Fältet Fixed asset number blir tillgängligt när du väljer alternativet New fixed asset number.</span><span class="sxs-lookup"><span data-stu-id="d07c3-115">The Fixed asset number field is available if you select the New fixed asset number option.</span></span>   <span data-ttu-id="d07c3-116">Om automatisk numrering har ställts in för anläggningstillgångar, visar detta fält nästa tillgängliga nummer för anläggningstillgångar.</span><span class="sxs-lookup"><span data-stu-id="d07c3-116">If automatic numbering is set up for fixed assets, this field shows the next available fixed asset number.</span></span> <span data-ttu-id="d07c3-117">Du kan ändra numret.</span><span class="sxs-lookup"><span data-stu-id="d07c3-117">You can change the number.</span></span>   <span data-ttu-id="d07c3-118">Om manuell numrering har ställts in är detta fält tomt, och du måste ange ett nytt anläggningstillgångsnummer.</span><span class="sxs-lookup"><span data-stu-id="d07c3-118">If manual numbering is set up, this field is blank and you must enter the new fixed asset number.</span></span>     
+6. <span data-ttu-id="d07c3-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d07c3-119">Click OK.</span></span>
+7. <span data-ttu-id="d07c3-120">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="d07c3-120">Click Yes.</span></span>
 

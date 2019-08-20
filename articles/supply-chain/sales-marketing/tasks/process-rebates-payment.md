@@ -9,45 +9,45 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2d97a59ae782af0a3d5ab71903961ef244a8e62
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5a05565d220c53d0f860a2c0569622b55c4021d6
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570726"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1833892"
 ---
-# <a name="process-rebates-for-payment"></a><span data-ttu-id="a2461-103">Bearbeta rabatter för betalning</span><span class="sxs-lookup"><span data-stu-id="a2461-103">Process rebates for payment</span></span>
+# <a name="process-rebates-for-payment"></a><span data-ttu-id="a3e93-103">Bearbeta rabatter för betalning</span><span class="sxs-lookup"><span data-stu-id="a3e93-103">Process rebates for payment</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a2461-104">I den här proceduren visas hur du konverterar godkända och bearbetade kundrabatter till kreditfakturor.</span><span class="sxs-lookup"><span data-stu-id="a2461-104">This procedure demonstrates how to convert approved and processed customer rebates to credit notes.</span></span> <span data-ttu-id="a2461-105">Du kan använda den här guiden i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="a2461-105">You can use this guide in the USMF demo company.</span></span> <span data-ttu-id="a2461-106">Förhandsvillkoret för den här guiden är att ha ett eller flera rabattanspråk som har statusen Markera.</span><span class="sxs-lookup"><span data-stu-id="a2461-106">The precondition for this guide is to have one or more rebate claims which have a status of Mark.</span></span> <span data-ttu-id="a2461-107">Om du använder USMF ska du köra guiden "Generera och bearbeta kundrabatter" innan du startar den här guiden.</span><span class="sxs-lookup"><span data-stu-id="a2461-107">If you’re using USMF you should run the "Generate and process customer rebates" guide before you start this guide.</span></span>
+<span data-ttu-id="a3e93-104">I den här proceduren visas hur du konverterar godkända och bearbetade kundrabatter till kreditfakturor.</span><span class="sxs-lookup"><span data-stu-id="a3e93-104">This procedure demonstrates how to convert approved and processed customer rebates to credit notes.</span></span> <span data-ttu-id="a3e93-105">Du kan använda den här guiden i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="a3e93-105">You can use this guide in the USMF demo company.</span></span> <span data-ttu-id="a3e93-106">Förhandsvillkoret för den här guiden är att ha ett eller flera rabattanspråk som har statusen Markera.</span><span class="sxs-lookup"><span data-stu-id="a3e93-106">The precondition for this guide is to have one or more rebate claims which have a status of Mark.</span></span> <span data-ttu-id="a3e93-107">Om du använder USMF ska du köra guiden "Generera och bearbeta kundrabatter" innan du startar den här guiden.</span><span class="sxs-lookup"><span data-stu-id="a3e93-107">If you’re using USMF you should run the "Generate and process customer rebates" guide before you start this guide.</span></span>
 
 
-## <a name="convert-rebate-claims-to-credit-note"></a><span data-ttu-id="a2461-108">Konvertera rabattanspråk till kreditfaktura</span><span class="sxs-lookup"><span data-stu-id="a2461-108">Convert rebate claims to credit note</span></span>
-1. <span data-ttu-id="a2461-109">Gå till Alla kunder.</span><span class="sxs-lookup"><span data-stu-id="a2461-109">Go to All customers.</span></span>
-2. <span data-ttu-id="a2461-110">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="a2461-110">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="a2461-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a2461-111">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="a2461-112">Klicka på Inkasso i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a2461-112">On the Action Pane, click Collect.</span></span>
-5. <span data-ttu-id="a2461-113">Klicka på Kvitta transaktioner.</span><span class="sxs-lookup"><span data-stu-id="a2461-113">Click Settle transactions.</span></span>
-6. <span data-ttu-id="a2461-114">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="a2461-114">Click Functions.</span></span>
-7. <span data-ttu-id="a2461-115">Klicka på Rabattprogram.</span><span class="sxs-lookup"><span data-stu-id="a2461-115">Click Rebate program.</span></span>
-    * <span data-ttu-id="a2461-116">På sidan Rabatt visas de rabattanspråk som du har bearbetat i workbenchen för kundrabatten och som har statusen "Markera".</span><span class="sxs-lookup"><span data-stu-id="a2461-116">The Rebate page lists the rebate claims that you have processed in the customer rebate workbench and that are in status Mark.</span></span>    
-8. <span data-ttu-id="a2461-117">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="a2461-117">Click Edit.</span></span>
-    * <span data-ttu-id="a2461-118">Markera fältet Markera för de anspråk som du vill inkludera i kreditfakturan.</span><span class="sxs-lookup"><span data-stu-id="a2461-118">Set checkmarks in the Mark field for the claims that you want to include into credit note.</span></span>   
-9. <span data-ttu-id="a2461-119">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="a2461-119">Click Functions.</span></span>
-10. <span data-ttu-id="a2461-120">Klicka på Skapa kreditfaktura.</span><span class="sxs-lookup"><span data-stu-id="a2461-120">Click Create credit note.</span></span>
-    * <span data-ttu-id="a2461-121">Ett meddelande visas för att informera dig om att en journal har bokförts (detta är den journal för kundreskontraförbrukning som har angetts på sidan Parametrar för kundreskontra).</span><span class="sxs-lookup"><span data-stu-id="a2461-121">A message appears to inform you that a journal has been posted (This is the Accounts receivable consumption journal, as specified in the Accounts receivable parameters page).</span></span> <span data-ttu-id="a2461-122">Detta gör att real skuld (kredit) belopp som skall flyttas till kunden.</span><span class="sxs-lookup"><span data-stu-id="a2461-122">This causes the real liability (credit) amount to be moved to the customer balance.</span></span> <span data-ttu-id="a2461-123">Det innebär att kundens konto har krediterats och att periodiseringskontot för rabatt har debiterats.</span><span class="sxs-lookup"><span data-stu-id="a2461-123">This means that the customer’s account has been credited, and the Rebate accrual account has been debited.</span></span>  
-11. <span data-ttu-id="a2461-124">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a2461-124">Close the page.</span></span>
-12. <span data-ttu-id="a2461-125">Klicka på Avbryt.</span><span class="sxs-lookup"><span data-stu-id="a2461-125">Click Cancel.</span></span>
-    * <span data-ttu-id="a2461-126">Detta uppdaterar sidan, så att du kan se uppdateringarna.</span><span class="sxs-lookup"><span data-stu-id="a2461-126">This refreshes the page so that you can see the updates.</span></span>  
-13. <span data-ttu-id="a2461-127">Klicka på Inkasso i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a2461-127">On the Action Pane, click Collect.</span></span>
-14. <span data-ttu-id="a2461-128">Klicka på Kvitta transaktioner.</span><span class="sxs-lookup"><span data-stu-id="a2461-128">Click Settle transactions.</span></span>
-    * <span data-ttu-id="a2461-129">Observera att en transaktion för negativt belopp som motsvarar det totala rabattbeloppet utan fakturareferens har lagts till kundbalansen.</span><span class="sxs-lookup"><span data-stu-id="a2461-129">Note that a transaction for negative amount, representing the total rebate amount, without invoice reference has been added to the customer balance.</span></span>   
-15. <span data-ttu-id="a2461-130">Klicka på Avbryt.</span><span class="sxs-lookup"><span data-stu-id="a2461-130">Click Cancel.</span></span>
+## <a name="convert-rebate-claims-to-credit-note"></a><span data-ttu-id="a3e93-108">Konvertera rabattanspråk till kreditfaktura</span><span class="sxs-lookup"><span data-stu-id="a3e93-108">Convert rebate claims to credit note</span></span>
+1. <span data-ttu-id="a3e93-109">Gå till Alla kunder.</span><span class="sxs-lookup"><span data-stu-id="a3e93-109">Go to All customers.</span></span>
+2. <span data-ttu-id="a3e93-110">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="a3e93-110">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="a3e93-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a3e93-111">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="a3e93-112">Klicka på Inkasso i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a3e93-112">On the Action Pane, click Collect.</span></span>
+5. <span data-ttu-id="a3e93-113">Klicka på Kvitta transaktioner.</span><span class="sxs-lookup"><span data-stu-id="a3e93-113">Click Settle transactions.</span></span>
+6. <span data-ttu-id="a3e93-114">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="a3e93-114">Click Functions.</span></span>
+7. <span data-ttu-id="a3e93-115">Klicka på Rabattprogram.</span><span class="sxs-lookup"><span data-stu-id="a3e93-115">Click Rebate program.</span></span>
+    * <span data-ttu-id="a3e93-116">På sidan Rabatt visas de rabattanspråk som du har bearbetat i workbenchen för kundrabatten och som har statusen "Markera".</span><span class="sxs-lookup"><span data-stu-id="a3e93-116">The Rebate page lists the rebate claims that you have processed in the customer rebate workbench and that are in status Mark.</span></span>    
+8. <span data-ttu-id="a3e93-117">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="a3e93-117">Click Edit.</span></span>
+    * <span data-ttu-id="a3e93-118">Markera fältet Markera för de anspråk som du vill inkludera i kreditfakturan.</span><span class="sxs-lookup"><span data-stu-id="a3e93-118">Set checkmarks in the Mark field for the claims that you want to include into credit note.</span></span>   
+9. <span data-ttu-id="a3e93-119">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="a3e93-119">Click Functions.</span></span>
+10. <span data-ttu-id="a3e93-120">Klicka på Skapa kreditfaktura.</span><span class="sxs-lookup"><span data-stu-id="a3e93-120">Click Create credit note.</span></span>
+    * <span data-ttu-id="a3e93-121">Ett meddelande visas för att informera dig om att en journal har bokförts (detta är den journal för kundreskontraförbrukning som har angetts på sidan Parametrar för kundreskontra).</span><span class="sxs-lookup"><span data-stu-id="a3e93-121">A message appears to inform you that a journal has been posted (This is the Accounts receivable consumption journal, as specified in the Accounts receivable parameters page).</span></span> <span data-ttu-id="a3e93-122">Detta gör att real skuld (kredit) belopp som skall flyttas till kunden.</span><span class="sxs-lookup"><span data-stu-id="a3e93-122">This causes the real liability (credit) amount to be moved to the customer balance.</span></span> <span data-ttu-id="a3e93-123">Det innebär att kundens konto har krediterats och att periodiseringskontot för rabatt har debiterats.</span><span class="sxs-lookup"><span data-stu-id="a3e93-123">This means that the customer’s account has been credited, and the Rebate accrual account has been debited.</span></span>  
+11. <span data-ttu-id="a3e93-124">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a3e93-124">Close the page.</span></span>
+12. <span data-ttu-id="a3e93-125">Klicka på Avbryt.</span><span class="sxs-lookup"><span data-stu-id="a3e93-125">Click Cancel.</span></span>
+    * <span data-ttu-id="a3e93-126">Detta uppdaterar sidan, så att du kan se uppdateringarna.</span><span class="sxs-lookup"><span data-stu-id="a3e93-126">This refreshes the page so that you can see the updates.</span></span>  
+13. <span data-ttu-id="a3e93-127">Klicka på Inkasso i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a3e93-127">On the Action Pane, click Collect.</span></span>
+14. <span data-ttu-id="a3e93-128">Klicka på Kvitta transaktioner.</span><span class="sxs-lookup"><span data-stu-id="a3e93-128">Click Settle transactions.</span></span>
+    * <span data-ttu-id="a3e93-129">Observera att en transaktion för negativt belopp som motsvarar det totala rabattbeloppet utan fakturareferens har lagts till kundbalansen.</span><span class="sxs-lookup"><span data-stu-id="a3e93-129">Note that a transaction for negative amount, representing the total rebate amount, without invoice reference has been added to the customer balance.</span></span>   
+15. <span data-ttu-id="a3e93-130">Klicka på Avbryt.</span><span class="sxs-lookup"><span data-stu-id="a3e93-130">Click Cancel.</span></span>
 
