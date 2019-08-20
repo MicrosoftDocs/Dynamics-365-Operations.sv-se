@@ -3,25 +3,25 @@ title: Hantera måttenhet
 description: I den här proceduren visas hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning och definierar konverteringsregler för relaterade enheter.
 author: sorenva
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2018
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, UnitOfMeasure, UnitOfMeasureReportingTranslation, UnitOfMeasureTranslation, UnitOfMeasureConversion, UnitOfMeasureConversionEditOrCreate, UnitOfMeasureLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e208b7f1faab77f2b97ff7b440a228656684fca
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 042a7495d55fb9d884771972cfc18e5ddb25330d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567663"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844331"
 ---
 # <a name="manage-unit-of-measure"></a>Hantera måttenhet
 
@@ -29,46 +29,37 @@ ms.locfileid: "1567663"
 
 I den här proceduren visas hur du definierar en måttenhet, anger översättningar för enheten och dess beskrivning och definierar konverteringsregler för relaterade enheter. Du kan gå igenom den här proceduren med hjälp av demodata eller använda egna data.
 
-1. Gå till Underhåll av frisläppt produkt.
-2. Klicka på Enheter.
+1. Gå till **Navigeringsfönster > Moduler > Produktinformationshantering > Underhåll av frisläppt produkt**.
+2. Klicka på **Enheter**.
 
 ## <a name="create-a-unit-of-measure"></a>Skapa en måttenhet
-1. Klicka på Ny.
-2. Skriv ett värde i fältet Enhet.
-    * Ange ID eller symbolen som ska användas när du refererar till måttenheten.  
-3. Ange ett värde i fältet Beskrivning.
-    * Ange ett beskrivande namn för måttenheten i systemspråket.  
-4. Välj ett alternativ i fältet Enhetsklass.
-    * Enhetsklassen definierar vilken logisk gruppering, till exempel område, massa eller kvantitet som måttenheten ingår i.  
-5. Ange ett nummer i fältet Decimalprecision.
-    * Ange antalet decimaler som den konverterade måttenheten måste avrundas till när en beräkning slutförs för måttenheten.  
-6. Klicka på Spara.
+1. Klicka på **Ny**.
+2. Fältet **Enhet** anger du ett värde. Ange ID eller symbolen som ska användas när du refererar till måttenheten.  
+3. I fältet **Beskrivning** anger du ett värde. Ange ett beskrivande namn för måttenheten i systemspråket.  
+4. Välj ett alternativ i fältet **Enhetsklass**. Enhetsklassen definierar vilken logisk gruppering, till exempel område, massa eller kvantitet som måttenheten ingår i.  
+5. Ange ett nummer i fältet **Decimalprecision**. Ange antalet decimaler som den konverterade måttenheten måste avrundas till när en beräkning slutförs för måttenheten.  
+6. Klicka på **Spara**.
 
 ## <a name="define-unit-translations"></a>Definiera enhetsöversättningar
-1. Klicka på Enhetstexter.
-2. Klicka på Ny.
-    * Använd enhettext om du vill skapa en översättning av ID:t eller en symbol som representerar måttenheten för användning på externa dokument i kund - eller leverantörsspecifika språk.  
-3. Ange eller välj ett värde i fältet Språk.
-4. Skriv ett värde i fältet Text.
-5. Klicka på Spara.
+1. Klicka på **Enhetstexter** i **åtgärdsfönstret**.
+2. Klicka på **Ny**. Använd enhettext om du vill skapa en översättning av ID:t eller en symbol som representerar måttenheten för användning på externa dokument i kund - eller leverantörsspecifika språk.  
+3. Ange eller välj ett värde i fältet **Språk**.
+4. Skriv ett värde i fältet **Text**.
+5. Klicka på **Spara**.
 6. Stäng sidan.
-7. Klicka på Översatta enhetsbeskrivningar.
-8. Klicka på Ny.
-    * Definiera språkspecifika beskrivningar för måttenheten.  
-9. Ange eller välj ett värde i fältet Språk.
-10. Ange ett värde i fältet Beskrivning.
-11. Klicka på Spara.
+7. Klicka på **Översatta enhetsbeskrivningar** i **åtgärdsfönstret**.
+8. Klicka på **Ny**. Definiera språkspecifika beskrivningar för måttenheten.  
+9. Ange eller välj ett värde i fältet **Språk**.
+10. I fältet **Beskrivning** anger du ett värde.
+11. Klicka på **Spara**.
 12. Stäng sidan.
 
 ## <a name="define-unit-conversion-rules"></a>Definiera enhetskonverteringsregler
-1. Klicka på Enhetskonverteringar.
-    * Definiera regler för att konvertera måttenheten till och från andra enheter i den valda enhetsklassen.  
-2. Klicka på Nytt om du vill öppna dialogrutan.
-3. Ange ett nummer i fältet Faktor.
-    * Konverteringsfaktor mellan Från enhet och Till enhet. Till exempel är konverteringsfaktorn från centimeter till meter 100, eftersom det går 100 centimeter på en meter.  
-4. Ange eller välj ett värde i fältet Till enhet.
-5. Markera ett alternativ i fältet Avrundning.
-    * Definiera hur det konverterade värdet ska avrundas.  
-6. Klicka på OK.
+1. Klicka på **Enhetskonversationer** i **åtgärdsfönstret**. Definiera regler för att konvertera måttenheten till och från andra enheter i den valda enhetsklassen.  
+2. Klicka på **Nytt** om du vill öppna dialogrutan.
+3. Ange ett nummer i fältet **Faktor**. Konverteringsfaktor mellan Från enhet och Till enhet. Till exempel är konverteringsfaktorn från centimeter till meter 100, eftersom det går 100 centimeter på en meter.  
+4. Ange eller välj ett värde i fältet **Till enhet**.
+5. Markera ett alternativ i fältet **Avrundning**. Definiera hur det konverterade värdet ska avrundas.  
+6. Klicka på **OK**.
 7. Stäng sidan.
 

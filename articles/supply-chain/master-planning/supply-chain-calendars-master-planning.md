@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 266eec2bb870be270b7796b35903a402e014c67c
-ms.sourcegitcommit: 1f211ac6bd384fd8a2b5352104baf264d88f39b0
+ms.openlocfilehash: ca473de65135ddddea12ddc72e902056cc7b1db7
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538736"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845322"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendrar och huvudplanering
 
@@ -93,7 +93,7 @@ För att ange datum då en kund kan acceptera leveranser kan du tilldela en inle
 
 Observera att det går bara att inkludera en kalender per kund. Om du vill inkludera en kalender för en annan adress för en kund måste du skapa en kund per adress och tilldela deras respektive kalender. 
 
-Det begärda inleveransdatumet på försäljningsorderraderna påverkas av kundkalendern och kontrollmetoden för leveransdatum. Du kan läsa mer om hur det tidigaste leveransdatumet beräknas i [Orderlöfte](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Det begärda inleveransdatumet på försäljningsorderraderna påverkas av kundkalendern och kontrollmetoden för leveransdatum. Du kan läsa mer om hur det tidigaste leveransdatumet beräknas i [Orderlöfte](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveranskalender för en bestämd juridisk person
 Om du vill ange de datum då en juridisk person kan leverera varor kan du ställa in en leveranskalender under **Organisationsadministration > organisationer > juridiska personer**. Välj den juridiska personen och lägg till kalendern på fliken **Utländsk handel och logistik** i fältet **Leveranskalender**. Leveranskalendern fungerar som standard för alla kalendrar i lagerstället i den juridiska personen. 

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 560a5346e33e1b98a7513b6d7c033fe35458f63a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570982"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834160"
 ---
 # <a name="budget-planning-overview"></a>Översikt över budgetplanering
 
@@ -154,6 +154,8 @@ För exempelschemat kanske du vill skapa kolumner för försäljning, kontrakt, 
 [![Kolumner](./media/columns.png)](./media/columns.png) 
 
 Du kan också ange om respektive layoutelement (kolumn) ska gå att redigera och om det finns tillgängligt i alla kalkylbladsmallar som skapas för layouten. För exempelschemat i layouten som används för uppskattningsfasen är prognoskolumnerna redigerbara, men kolumnerna för försäljning och kontrakt är skrivskyddade.
+
+[!Note] Som standard kommer du att vara begränsad till 36 kolumner om du inte utökar budgeteringsplaneringen i stegen [Utöka budgetplaneringslayouten](./extending-budget-planning-layout.md).
 
 ### <a name="templates"></a>Mallar
 

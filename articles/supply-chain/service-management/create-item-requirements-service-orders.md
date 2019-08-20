@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5a730ae945af15c7bd4020c734bac971d8186e2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dc65393f74c6daa008e072cbe3745235fbfd896b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553425"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743335"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>Skapa artikelbehov för serviceorder 
 
@@ -44,7 +44,7 @@ Artikelbehov för serviceorder bearbetas via ett projekt. För att kunna skapa e
 
 3.  På **Åtgärdsfönster**, på fliken **Varuutförsel**, klicka på **Artikelbehov**.
 
-4.  I formuläret **Artikelbehov** ange information för krävd artikel. Mer information om ett specifikt fält finns i [Artikelbehov (formulär)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\)).
+4.  I formuläret **Artikelbehov** ange information för krävd artikel. Mer information om ett specifikt fält finns i [Artikelbehov (formulär)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Skapa ett artikelbehov för ett serviceavtal
 

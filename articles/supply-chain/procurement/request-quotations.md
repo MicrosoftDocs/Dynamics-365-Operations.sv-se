@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6a904529dccbe392793d0d108335b623bb1ed8b2
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572012"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742553"
 ---
 # <a name="requests-for-quotation-rfqs"></a>Anbudsförfrågningar (RFQ)
 
@@ -48,7 +48,7 @@ Du kan skapa ett anbudsförfrågansärende från planerade order, från en inkö
 
 När du förbereder anbudsförfrågansärende och lägger till leverantörer väljer du **Sskicka** (**Sskicka och publicera** för offentliga sektorn) på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
 
-Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Microsoft Dynamics 365 for Finance and Operations. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
+Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Microsoft Dynamics 365 for Finance and Operations. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
 Om du måste ändra en anbudsförfrågan när du har skickat den, kan du skicka anbudsförfrågan igen till leverantörer när du är klar med ändringen av två åtgärder: skapa och färdigställ.+
 
@@ -179,7 +179,7 @@ Om du konfigurerar ändringsprocessen till att vara mer restriktiv måste du inn
 
 Om du konfigurerar ändringsprocessen så att den blir mindre restriktiv behöver du inte välja **Skapa** innan du kan ändra fälten på ett anbudsförfrågansärende som redan har skickats. Du måste dock manuellt lägga till ett ändringsmeddelande på anbudsförfrågan och skicka ärendet igen. Tänk på att denna metod endast kan användas om inget svar (bud) har redigerats. Om du har angett ett svar och det befinner sig status **mottagen** är knappen **skicka** inte tillgänglig. I det här fallet måste du välja **skapa** och **slutför** såsom du måste göra i den mer restriktiva processen. Svaret återställs sedan till att återspegla ändringarna i anbudsförfrågansärendet.
 
-Om leverantörer använder gränssnittet för leverantörssamarbete måste du alltid använda ändringsprocessen för att meddela leverantörer om ändringar av anbudsförfrågansärendet. Denna process hjälper till att förhindrar situationen där leverantörer lägger bud på ett inaktuellt anbudsförfrågansärende när deras bud pågår. För mer information om leverantörssamarbetet, se [Leverantörssamarbeten med externa leverantörer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Om leverantörer använder gränssnittet för leverantörssamarbete måste du alltid använda ändringsprocessen för att meddela leverantörer om ändringar av anbudsförfrågansärendet. Denna process hjälper till att förhindrar situationen där leverantörer lägger bud på ett inaktuellt anbudsförfrågansärende när deras bud pågår. För mer information om leverantörssamarbetet, se [Leverantörssamarbeten med externa leverantörer](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Om du vill bjuda in ytterligare leverantörer till att lämna bud, och inga ändringar har gjorts i anbudsförfrågansärendet kan du använda knappen **skicka**. De leverantörer som du lade till visas på sidan **skicka** och kommer att ta emot e-postinbjudan.
 

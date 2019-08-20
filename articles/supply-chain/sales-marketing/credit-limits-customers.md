@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 37e860a969d527a334af7524c70e5ea15be7801e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551824"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742388"
 ---
 # <a name="credit-limits-for-customers"></a>Kreditgränser för kunder
 
@@ -93,7 +93,7 @@ Använd formuläret **Parametrar för kundreskontra** för att ange vilken infor
 
 **Var används information om kundens återstående kredit?**
 
-Information om kundens saldo och återstående kredit beräknas och sparas när du skapar en ögonblicksbild av åldersfördelningen, och visas i formuläret **Samlingar**. De belopp som visas i formuläret **Samlingar** kanske inte innehåller alla transaktionsaktiviteter tills en ny ögonblicksbild av åldersfördelningen skapas. Mer information finns i [Inkasso och kredit i kundreskontra](https://technet.microsoft.com/en-us/library/hh209221.aspx).
+Information om kundens saldo och återstående kredit beräknas och sparas när du skapar en ögonblicksbild av åldersfördelningen, och visas i formuläret **Samlingar**. De belopp som visas i formuläret **Samlingar** kanske inte innehåller alla transaktionsaktiviteter tills en ny ögonblicksbild av åldersfördelningen skapas. Mer information finns i [Inkasso och kredit i kundreskontra](https://technet.microsoft.com/library/hh209221.aspx).
 
 Information om kundens saldo och återstående kredit beräknas beroende på dokumenten som väljs när försäljningsorder, kundens fakturor och följesedlar ska uppdateras. Om beloppet för det dokument som du arbetar med orsakar att kreditgränsen överskrids, visas ett meddelande.
 

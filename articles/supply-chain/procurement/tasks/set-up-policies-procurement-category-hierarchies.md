@@ -3,25 +3,25 @@ title: Ställ in policyer för hierarkier för anskaffningskategorier
 description: Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1fdf357466de12bd0188fc43cd266c67af762c7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 230794eacd5e9911496dd3826f08126cc21494cb
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569924"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844187"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Ställ in policyer för hierarkier för anskaffningskategorier
 
@@ -31,31 +31,24 @@ Använd den här proceduren för att ställa in regler för att beställa produk
 
 
 ## <a name="find-the-procurement-policy"></a>Hitta anskaffningpolicyn
-1. Gå till anskaffning och källa > Inställningar > Policyer > Inköpspolicyer.
-2. Klicka på länken för anskaffningspolicy USMF.
-    * Detta är policyn som du vill lägga till en regel till. Den måste vara en aktiv policy.  
+1. I navigeringsfönstret går du till **moduler > anskaffning och källa > inställningar > principer > inköpspolicyer**.
+2. Klicka på länken för anskaffningspolicy USMF. Detta är policyn som du vill lägga till en regel till. Den måste vara en aktiv policy.  
 
 ## <a name="create-a-category-access-rule"></a>Skapa en kategoriåtkomstregel
-1. Välj Policyregel för kategoriåtkomst.
-    * Om knappen Skapa policyregel tonasned är det på grund av att det redan finns en aktiv policyregel för Kategoriåtkomst. Kontrollera fälten Giltighet och Utgångsdatum för att bestämma vilket den är, sedan väljer du den och klickar på Dra tillbaka policyregel. Om knappen Skapa policyregel är tillgänglig behöver du inte att göra någonting.  
-2. Klicka på Skapa policyregel.
-3. Ange datum och tid i fältet Giltighetsdatum.
-    * Tiden får inte överlappa med en annan regel som redan är aktiv.  
-    * Välj en kategori som regeln ska gälla för. Gör en notering av vilken kategori detta är – du behöver den senare. När du väljer en kategori kommer alla dess överordnade kategorier också att läggas till i listan för Valda kategorier.  
-    * Om du vill att regeln ska gälla alla underkategorier för den valda kategorin, markerar du kryssrutan Inkludera underkategorier.  
-4. Klicka på Lägg till.
-    * Om du ställer in alternativet Inkludera överordnad regel kommer policyregeln som du definierar för en överordnad kategori också att tilldelas till dess underordnade kategorier, om ingen policyregel har definierats för de underordnade kategorierna.  
-5. Klicka på OK.
+1. Expandera snabbfliken **Policyregler**.
+2. I listan **Policyregeltyp** väljer du **policyregel för kategoriåtkomst**. Om knappen **Skapa policyregel** tonas ned är det på grund av att det redan finns en aktiv policyregel för Kategoriåtkomst. Kontrollera fälten **Giltighet** och **Utgångsdatum** för att bestämma vilket den är, sedan väljer du den och klickar på **Dra tillbaka policyregel**. Om knappen **Skapa policyregel** är tillgänglig behöver du inte att göra någonting.  
+3. Klicka på **Skapa regel för policyn.**
+4. I fältet **Gäller från** anger du datum och tid. Tiden får inte överlappa med en annan regel som redan är aktiv.  
+5. Välj en kategori som regeln ska gälla för. Gör en notering av vilken kategori detta är – du behöver den senare. När du väljer en kategori kommer alla dess överordnade kategorier också att läggas till i listan för Valda kategorier. Om du vill att regeln ska gälla alla underkategorier för den valda kategorin, markerar du kryssrutan **Inkludera underkategorier**.
+6. Klicka på högerpilen för att lägga till listan **valda kategorier**.  
+4. Klicka på **OK**. Om du ställer in alternativet **Inkludera överordnad regel** kommer policyregeln som du definierar för en överordnad kategori också att tilldelas till dess underordnade kategorier, om ingen policyregel har definierats för de underordnade kategorierna.
 
 ## <a name="create-a-category-policy-rule"></a>Skapa en kategoripolicyregel
-1. Välj Policyregel för kategoriåtkomst
-    * Om knappen Skapa policyregel är nedtonad väljer du den aktiva policyregeln och klickar sedan på Dra tillbaka policyregel.  
-2. Klicka på Skapa policyregel.
-3. Ange datum och tid i fältet Giltighetsdatum.
-4. Klicka på Lägg till.
-5. Markera samma kategori som du använde för kategoriåtkomstregeln.
-6. Välj ett alternativ i fältet Leverantörsurval.
-    * Välj en regel för att kontrollera vilken typ av leverantörer som kan väljas för kategorin, när rekvisitioner skapas.  
-7. Klicka på Stäng.
-    * De policyregler som du har definierat har varit för rekvisitioner av typen Förbrukning. Om du vill definiera policyer för rekvisitioner av typen Återanskaffning, ska du skapa en regel för Policyregeltypen som kallas "Åtkomstpolicyregel för återanskaffningskategori".  
+1. I listan **Policyregeltyp** väljer du **policyregel för kategori**. Om knappen **Skapa policyregel** är nedtonad väljer du den aktiva policyregeln och klickar sedan på **Dra tillbaka policyregel**.  
+2. Klicka på **Skapa regel för policyn.**
+3. I fältet **Gäller från** anger du datum och tid.
+4. Klicka på **Lägg till**.
+5. I fältet **kategori** välj samma kategori som du använde för **kategoriåtkomstregel**.
+6. I fältet **Leverantörsurval** väljer du ett alternativ. Välj en regel för att kontrollera vilken typ av leverantörer som kan väljas för kategorin, när rekvisitioner skapas.  
+7. Klicka på **Stäng**. De policyregler som du har definierat har varit för rekvisitioner av typen Förbrukning. Om du vill definiera policyer för rekvisitioner av typen Återanskaffning, ska du skapa en regel för Policyregeltypen som kallas "Åtkomstpolicyregel för återanskaffningskategori".  
 

@@ -1,5 +1,5 @@
 ---
-title: Publicera journalrader och dokument från Microsoft Excel
+title: Publicera journalrader och dokument från Excel
 description: I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
 author: kweekley
 manager: AnnBe
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 62213
 ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36eed913e658433b9200043163aad38521381be2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e83f468a3b6265050734e23db780b722c1f08f61
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561047"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1846881"
 ---
-# <a name="publish-journal-lines-and-documents-from-excel"></a>Publicera journalrader och dokument från Microsoft Excel
+# <a name="publish-journal-lines-and-documents-from-excel"></a>Publicera journalrader och dokument från Excel
 
 [!include [banner](../includes/banner.md)]
 

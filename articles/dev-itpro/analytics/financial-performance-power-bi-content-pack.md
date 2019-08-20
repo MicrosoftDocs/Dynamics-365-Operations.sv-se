@@ -9,7 +9,7 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35db2b51274afa6dae4cb5f75b4ba5390b167a49
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553962"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849597"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Innehållspaket för ekonomiska resultat för PowerBI.com
 
@@ -34,7 +34,7 @@ ms.locfileid: "1553962"
 Det här avsnittet beskriver PowerBI.com-lösning för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa lösningen.
 
 ## <a name="main-account-setup"></a>Huvudkontoinställningar
-Konfigurationen av huvudkonton är viktig eftersom organisationer vill att skuld- och intäktsbelopp ska anges som positiva belopp i rapporter. Huvudkontotypen måste anges som **Skuld** eller **Intäkt** för att huvudkontona ska anges som positiva belopp. När dessa kontotyper används, kommer rapporteringen via Power BI att vända på tecknen och ange beloppen som positiva.
+Konfigurationen av huvudkonton är viktig eftersom organisationer vill att skuld- och intäktsbelopp ska anges som positiva belopp i rapporter. Huvudkontotypen måste anges som **Skuld** eller **Intäkt** för att huvudkontona ska anges som positiva belopp. När dessa kontotyper används, kommer rapporteringen via Power BI att vända på tecknen och ange beloppen som positiva.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Instrumentpanelen och rapporterna som ingår i PowerBI.com-lösning
 Instrumentpanelen innehåller summerade datarutor baserade på underliggande rapporter. Varje ruta innehåller sammanfattad information för innevarande år för alla företag i en organisation. Här följer några exempel på paneler:
@@ -70,7 +70,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 | Utgiftsanalys            | Totala utgifter, faktiska utgifter i jämförelse med totala budgeterade utgifter efter juridisk person, faktiska och budgeterade totala utgifter efter kvartal, totala utgifter efter kontokategori och kvot för verksamhetsutgifter |
 | Fakturerad intäktsanalys     | Total kundreskontra, totala kundreskontra efter juridisk person, totala kundreskontra efter kvartal och saldon för kundreskontra-konton<blockquote>[!NOTE] Informationen innehåller inga ingående saldon för redovisningskonton för kundreskontra. Den visar summan av nya transaktioner som bokförs under kundreskontra.</blockquote> |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Följande enheter användes till grund för PowerBI.com-lösningen för **ekonomiska resultat**

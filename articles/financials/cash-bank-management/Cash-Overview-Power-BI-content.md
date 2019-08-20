@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702805"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842699"
 ---
 # <a name="cash-overview-power-bi-content"></a>Kassaöversikt Power BI-innehåll
 
@@ -40,7 +40,7 @@ Följande inställningar måste slutföras för att data ska kunna visas i **kas
 1. Gå till **systemadministrations > inställningar > systemparametrar** för att ställa in **Systemvaluta** och **Systemets valutakurs**.
 2. Gå till **redovisning > Inställningar > redovisning** om du vill ange **redovisningsvaluta** och **valutakurstyp**.
 2. Definiera valutakurser mellan transaktionsvalutor och redovisningsvaluta, redovisningsvaluta och systemvaluta samt redovisningsvaluta och bankvalutor. Det gör du genom att gå till **redovisning > valutor > valutakurser**.
-3. Konfigurera och kör kassaflödesprognoser. Mer information om hur du ställer in prognoser för kassaflöden finns i <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+3. Konfigurera och kör kassaflödesprognoser. Mer information om hur du ställer in prognoser för kassaflöden finns i <a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
 ">Kassaflödesprognoser</a>. 
 4. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **LedgerCovLiquidityMeasurement**.
 

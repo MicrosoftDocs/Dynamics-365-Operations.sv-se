@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624822"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742643"
 ---
 # <a name="retail-peripherals"></a>Butikskringutrustning
 
@@ -192,7 +192,7 @@ Du kan ange IP-adresser för nätverkets kringutrustning på två ställen. Om M
 
 #### <a name="modern-pos-for-android"></a>Modern POS för Android
 
-Fr.o.m. Dynamics 365 for Retail version 8.1.3 innehåller Modern POS Android-program innehåller en inbyggd IPC-maskinvarustation. Maskinvarustationen stöder kommunikation med nätverksskrivare och betalningsanslutningar. För mer information, besök [Artikeln appen Hybrid för Android dokument](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+Fr.o.m. Dynamics 365 for Retail version 8.1.3 innehåller Modern POS Android-program innehåller en inbyggd IPC-maskinvarustation. Maskinvarustationen stöder kommunikation med nätverksskrivare och betalningsanslutningar. För mer information, besök [Artikeln appen Hybrid för Android dokument](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS och Modern POS för iOS
 
@@ -541,7 +541,7 @@ Den här konfigurationen är de vanligaste konfigurationen för traditionella, f
 
 4. Klicka på **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
 5. Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
-6. Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
+6. Välj distributionsschema **1070** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 7. Installera och aktivera Modern POS för Windows.
 8. Starta Modern POS för Windows och börja använda ansluten kringutrustning.
 

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
-ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
+ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624321"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849342"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -59,19 +59,22 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      2019 april          |   10.0.1      |    Ryssland     |Deklaration för transportskatt ändras från 2019  |
 |      2019 april            |   10.0.1      | Ungern      |  Ungern: online-fakturering v. 1.1 2019 på Microsoft Dynamics 365 for Finance and Operations  |
 |      2019 maj            |   10.0.2      | Brasilien      |   SPED ECD Layout 7   |
-|      Väntande            |   10.0.3      | Brasilien      |   NF-e ny NT 2018.005 - v.1.20   |
-|      Väntande            |   10.0.3      | Brasilien      |   SPED ECD Layout 7   |
-|      Väntande            |   10.0.3      | Brasilien      |   SPED ECF - Layout 5 för 2019   |
-|      Väntande            |   10.0.3      | Litauen    |   i.SAF-rapporten mlåter användare ange systemets momskoder i samband med juridiska skattekoder    |
-|      Väntande            |   10.0.3      | Polen     |   SAF fakturor (JPK_FA) v. 2 från 1Jul2019  |
-|      Väntande            |   10.0.3      | Brasilien   |   ICMS för skattedokument aktivera tabell 5.2   |
-|      Väntande            |   10.0.3      | Brasilien    |   NF-e dekret 54.308/18 (RS)   |
-  | Väntande            |   10.0.4      | Brasilien    |   Inkommande skattedokument 66   |
-   | Väntande            |   10.0.4      | Brasilien    |   NF-e och NFC-e - Lösning 13/2019 och förordning SUCIEF 55/2019-RJ - nya villkor för att undanta kodutdata i NF-e.   |
-   | Väntande            |   10.0.4      | Indien   |   Visning av "Platsen för leverans" och "Status" i GST-momsfakturan  |
-   | Väntande            |   10.0.4      | Mexiko   |  DIOT-deklaration från tredje part – ändringar i layout 2019   |
-   | Väntande            |   10.0.4      | Brasilien    |   NF-e ICMS-ST - förordning CAT 42/18 för SP-status CAT 42/18
-   | Väntande            |   10.0.4      | Brasilien    |   NF-e dekret 54.308/18 - RS NF   |
+|      2019 juni            |   10.0.3      | Brasilien      |   NF-e ny NT 2018.005 - v.1.20   |
+|      2019 juni            |   10.0.3      | Brasilien      |   SPED ECD Layout 7   |
+|      2019 juni            |   10.0.3      | Brasilien      |   SPED ECF - Layout 5 för 2019   |
+|      2019 juni            |   10.0.3      | Litauen    |   i.SAF-rapporten mlåter användare ange systemets momskoder i samband med juridiska skattekoder    |
+|      2019 juni            |   10.0.3      | Polen     |   SAF fakturor (JPK_FA) v. 2 från 1Jul2019  |
+|      2019 juni            |   10.0.3      | Brasilien   |   ICMS för skattedokument aktivera tabell 5.2   |
+|      2019 juni            |   10.0.3      | Brasilien    |   NF-e dekret 54.308/18 (RS)   |
+  | Juli 2019            |   10.0.4      | Brasilien    |   Inkommande skattedokument 66   |
+   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e och NFC-e - Lösning 13/2019 och förordning SUCIEF 55/2019-RJ - nya villkor för att undanta kodutdata i NF-e.   |
+   | Juli 2019            |   10.0.4      | Indien   |   Visning av "Platsen för leverans" och "Status" i GST-momsfakturan  |
+   | Juli 2019            |   10.0.4      | Mexiko   |  DIOT-deklaration från tredje part – ändringar i layout 2019   |
+   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e ICMS-ST - förordning CAT 42/18 för SP-status CAT 42/18
+   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e dekret 54.308/18 - RS NF   |
+       | Väntande            |   10.0.5      | Brasilien    |   Praktisk vägledning om Sped-bidrag 1.31. ny vägledning   |
+         | Väntande            |   10.0.5      | Brasilien    |   En ny version av tekniska anmärkningar för NF-e: NT 2019.001 version 1.00   |
+          | Väntande            |   10.0.5      | Spanien    |   Valideringsregler ändras från 1 oktober 2019   |
    
 
 
