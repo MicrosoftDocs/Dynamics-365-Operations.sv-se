@@ -10,43 +10,43 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b589d64a4446420164175b41f435cf48daac01a9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b70ad94014587ba8e55735192dbe0ab2e4adf4ee
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570063"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849001"
 ---
-# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="7546b-103">Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat</span><span class="sxs-lookup"><span data-stu-id="7546b-103">Create and export vendor payments using ISO20022 payment format</span></span>
+# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="36a93-103">Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat</span><span class="sxs-lookup"><span data-stu-id="36a93-103">Create and export vendor payments using ISO20022 payment format</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="7546b-104">Det här avsnittet förklarar hur du kan skapa betalningsrader i leverantörbetalningsjournalen och generera en leverantörbetalningsfil med ett ISO2022-kreditöverföringsexempel.</span><span class="sxs-lookup"><span data-stu-id="7546b-104">This topic explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span>
+<span data-ttu-id="36a93-104">Det här avsnittet förklarar hur du kan skapa betalningsrader i leverantörbetalningsjournalen och generera en leverantörbetalningsfil med ett ISO2022-kreditöverföringsexempel.</span><span class="sxs-lookup"><span data-stu-id="36a93-104">This topic explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span>
 
-<span data-ttu-id="7546b-105">Detta är den femte proceduren av fem som illustrerar leverantörbetalningsprocessen med hjälp av elektroniska rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="7546b-105">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="7546b-106">Använd demonstrationsdataföretaget DEMF för att slutföra det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="7546b-106">Use the DEMF demo data to complete this example.</span></span>
+<span data-ttu-id="36a93-105">Detta är den femte proceduren av fem som illustrerar leverantörbetalningsprocessen med hjälp av elektroniska rapporteringskonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="36a93-105">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="36a93-106">Använd demonstrationsdataföretaget DEMF för att slutföra det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="36a93-106">Use the DEMF demo data to complete this example.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7546b-107">Exempel</span><span class="sxs-lookup"><span data-stu-id="7546b-107">Example</span></span>
+## <a name="example"></a><span data-ttu-id="36a93-107">Exempel</span><span class="sxs-lookup"><span data-stu-id="36a93-107">Example</span></span>
 
-1.  <span data-ttu-id="7546b-108">Gå till **Leverantörsreskontra > Betalningar > Betalningsjournal.**</span><span class="sxs-lookup"><span data-stu-id="7546b-108">Go to **Accounts payable > Payments > Payment journal**.</span></span>
-2.  <span data-ttu-id="7546b-109">Klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="7546b-109">Click **New**.</span></span>
-3.  <span data-ttu-id="7546b-110">I fältet **Namn**anger eller väljer du ett värde.</span><span class="sxs-lookup"><span data-stu-id="7546b-110">In the **Name** field, enter or select a value.</span></span>
-4.  <span data-ttu-id="7546b-111">Klicka på **Rader > Betalningsförslag > Skapa betalningsförslag**.</span><span class="sxs-lookup"><span data-stu-id="7546b-111">Click **Lines > Payment proposal > Create payment proposal**.</span></span>
-5.  <span data-ttu-id="7546b-112">Expandera avsnittet **Poster som ska ingå**.</span><span class="sxs-lookup"><span data-stu-id="7546b-112">Expand the **Records to include** section.</span></span>
-6.  <span data-ttu-id="7546b-113">Klicka på **Filter**.</span><span class="sxs-lookup"><span data-stu-id="7546b-113">Click **Filter**.</span></span>
-7.  <span data-ttu-id="7546b-114">I listan markerar du raden för **leverantörsregister** och **fältet för leverantörskonto**.</span><span class="sxs-lookup"><span data-stu-id="7546b-114">In the list, select the row for **Vendors table** and **Vendor account field**.</span></span>
-8.  <span data-ttu-id="7546b-115">I fältet **Kriterier** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="7546b-115">In the **Criteria** field, enter or select a value.</span></span> <span data-ttu-id="7546b-116">Du kan använda vissa kriterier för urval av leverantörstransaktioner för betalning ‒ för detta exempel, använd DE-001 som leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="7546b-116">You can apply any criteria for selecting vendor transactions to pay, for this example, use DE-001 as a vendor account.</span></span>
-12. <span data-ttu-id="7546b-117">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="7546b-117">Click **OK**.</span></span>
-13. <span data-ttu-id="7546b-118">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="7546b-118">Click **OK**.</span></span>
-14. <span data-ttu-id="7546b-119">Klicka på **Skapa betalningar.**</span><span class="sxs-lookup"><span data-stu-id="7546b-119">Click **Create payments**.</span></span>
-15. <span data-ttu-id="7546b-120">Skapa en ISO20022-betalningsfil</span><span class="sxs-lookup"><span data-stu-id="7546b-120">Generate an ISO20022 payment file.</span></span>
-    1.  <span data-ttu-id="7546b-121">Klicka på **Generera betalningar**</span><span class="sxs-lookup"><span data-stu-id="7546b-121">Click **Generate payments**.</span></span>
-    2.  <span data-ttu-id="7546b-122">I fältet **Betalningsmetod** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="7546b-122">In the **Method of payment** field, enter or select a value.</span></span>
-    3.  <span data-ttu-id="7546b-123">I fältet **Filnamn** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="7546b-123">In the **File name** field, type a value.</span></span> <span data-ttu-id="7546b-124">I det här exemplet på grund av betalningar i EUR blir den genererade filen SEPA-kompatibel.</span><span class="sxs-lookup"><span data-stu-id="7546b-124">For this example, because of the EUR payment, the generated file will be SEPA compliant.</span></span> <span data-ttu-id="7546b-125">ISO20022 kreditöverföring samt andra leverantörsbetalningsformat kan också användas för att generera betalningar i andra valutor.</span><span class="sxs-lookup"><span data-stu-id="7546b-125">ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.</span></span>
-    4.  <span data-ttu-id="7546b-126">I fältet **Bankkonto** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="7546b-126">In the **Bank account** field, enter or select a value.</span></span>
+1.  <span data-ttu-id="36a93-108">Gå till **Leverantörsreskontra > Betalningar > Betalningsjournal.**</span><span class="sxs-lookup"><span data-stu-id="36a93-108">Go to **Accounts payable > Payments > Payment journal**.</span></span>
+2.  <span data-ttu-id="36a93-109">Klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="36a93-109">Click **New**.</span></span>
+3.  <span data-ttu-id="36a93-110">I fältet **Namn**anger eller väljer du ett värde.</span><span class="sxs-lookup"><span data-stu-id="36a93-110">In the **Name** field, enter or select a value.</span></span>
+4.  <span data-ttu-id="36a93-111">Klicka på **Rader > Betalningsförslag > Skapa betalningsförslag**.</span><span class="sxs-lookup"><span data-stu-id="36a93-111">Click **Lines > Payment proposal > Create payment proposal**.</span></span>
+5.  <span data-ttu-id="36a93-112">Expandera avsnittet **Poster som ska ingå**.</span><span class="sxs-lookup"><span data-stu-id="36a93-112">Expand the **Records to include** section.</span></span>
+6.  <span data-ttu-id="36a93-113">Klicka på **Filter**.</span><span class="sxs-lookup"><span data-stu-id="36a93-113">Click **Filter**.</span></span>
+7.  <span data-ttu-id="36a93-114">I listan markerar du raden för **leverantörsregister** och **fältet för leverantörskonto**.</span><span class="sxs-lookup"><span data-stu-id="36a93-114">In the list, select the row for **Vendors table** and **Vendor account field**.</span></span>
+8.  <span data-ttu-id="36a93-115">I fältet **Kriterier** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="36a93-115">In the **Criteria** field, enter or select a value.</span></span> <span data-ttu-id="36a93-116">Du kan använda vissa kriterier för urval av leverantörstransaktioner för betalning ‒ för detta exempel, använd DE-001 som leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="36a93-116">You can apply any criteria for selecting vendor transactions to pay, for this example, use DE-001 as a vendor account.</span></span>
+12. <span data-ttu-id="36a93-117">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="36a93-117">Click **OK**.</span></span>
+13. <span data-ttu-id="36a93-118">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="36a93-118">Click **OK**.</span></span>
+14. <span data-ttu-id="36a93-119">Klicka på **Skapa betalningar.**</span><span class="sxs-lookup"><span data-stu-id="36a93-119">Click **Create payments**.</span></span>
+15. <span data-ttu-id="36a93-120">Skapa en ISO20022-betalningsfil</span><span class="sxs-lookup"><span data-stu-id="36a93-120">Generate an ISO20022 payment file.</span></span>
+    1.  <span data-ttu-id="36a93-121">Klicka på **Generera betalningar**</span><span class="sxs-lookup"><span data-stu-id="36a93-121">Click **Generate payments**.</span></span>
+    2.  <span data-ttu-id="36a93-122">I fältet **Betalningsmetod** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="36a93-122">In the **Method of payment** field, enter or select a value.</span></span>
+    3.  <span data-ttu-id="36a93-123">I fältet **Filnamn** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="36a93-123">In the **File name** field, type a value.</span></span> <span data-ttu-id="36a93-124">I det här exemplet på grund av betalningar i EUR blir den genererade filen SEPA-kompatibel.</span><span class="sxs-lookup"><span data-stu-id="36a93-124">For this example, because of the EUR payment, the generated file will be SEPA compliant.</span></span> <span data-ttu-id="36a93-125">ISO20022 kreditöverföring samt andra leverantörsbetalningsformat kan också användas för att generera betalningar i andra valutor.</span><span class="sxs-lookup"><span data-stu-id="36a93-125">ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.</span></span>
+    4.  <span data-ttu-id="36a93-126">I fältet **Bankkonto** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="36a93-126">In the **Bank account** field, enter or select a value.</span></span>
 

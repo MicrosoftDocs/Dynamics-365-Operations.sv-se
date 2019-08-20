@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96fb8bd2ce7fed6962563773ad63a7a48943e1ca
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566516"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743206"
 ---
-# <a name="set-up-disposition-codes"></a><span data-ttu-id="1e0ac-103">Ställ in dispositionskoder</span><span class="sxs-lookup"><span data-stu-id="1e0ac-103">Set up disposition codes</span></span> 
+# <a name="set-up-disposition-codes"></a><span data-ttu-id="9e610-103">Ställ in dispositionskoder</span><span class="sxs-lookup"><span data-stu-id="9e610-103">Set up disposition codes</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="1e0ac-104">Du kan du ställa in dispositionskoder för att ange hur man arbetar med en artikel som returneras av en kund.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-104">You can set up disposition codes to specify how to process an item that is returned by a customer.</span></span> <span data-ttu-id="1e0ac-105">Skapa en dispositionskod med namnet **Reparera och returnera** om du vill ange att den returnerade artikeln ska repareras och sedan ska returneras till kunden, till exempel.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-105">For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer.</span></span> <span data-ttu-id="1e0ac-106">Mer information om dispositionskoder som normalt används för artiklar som returneras av kunder hittar du i [Ange hur returnerade artiklar ska avyttras](specify-how-to-dispose-of-returned-items.md).</span><span class="sxs-lookup"><span data-stu-id="1e0ac-106">For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).</span></span>
+<span data-ttu-id="9e610-104">Du kan du ställa in dispositionskoder för att ange hur man arbetar med en artikel som returneras av en kund.</span><span class="sxs-lookup"><span data-stu-id="9e610-104">You can set up disposition codes to specify how to process an item that is returned by a customer.</span></span> <span data-ttu-id="9e610-105">Skapa en dispositionskod med namnet **Reparera och returnera** om du vill ange att den returnerade artikeln ska repareras och sedan ska returneras till kunden, till exempel.</span><span class="sxs-lookup"><span data-stu-id="9e610-105">For example, create a disposition code named **Repair and return** to indicate that the returned item will be repaired and then returned to the customer.</span></span> <span data-ttu-id="9e610-106">Mer information om dispositionskoder som normalt används för artiklar som returneras av kunder hittar du i [Ange hur returnerade artiklar ska avyttras](specify-how-to-dispose-of-returned-items.md).</span><span class="sxs-lookup"><span data-stu-id="9e610-106">For more examples of disposition codes that are typically used for items that are returned by customers, see [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md).</span></span>
 
-<span data-ttu-id="1e0ac-107">Du kan även ange en orsakskod för att förklara varför en artikel har returnerats.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-107">You can also set up a reason code to help explain why an item was returned.</span></span> <span data-ttu-id="1e0ac-108">Mer information om orsakskoder finns [skapa returorsakskod](set-up-return-reason-code.md).</span><span class="sxs-lookup"><span data-stu-id="1e0ac-108">For more information about reason codes, see [Set up return reason code](set-up-return-reason-code.md).</span></span>
+<span data-ttu-id="9e610-107">Du kan även ange en orsakskod för att förklara varför en artikel har returnerats.</span><span class="sxs-lookup"><span data-stu-id="9e610-107">You can also set up a reason code to help explain why an item was returned.</span></span> <span data-ttu-id="9e610-108">Mer information om orsakskoder finns [skapa returorsakskod](set-up-return-reason-code.md).</span><span class="sxs-lookup"><span data-stu-id="9e610-108">For more information about reason codes, see [Set up return reason code](set-up-return-reason-code.md).</span></span>
 
-1.  <span data-ttu-id="1e0ac-109">Klicka på noden **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Returer** \> **Dispositionskoder**.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-109">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.</span></span>
+1.  <span data-ttu-id="9e610-109">Klicka på noden **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Returer** \> **Dispositionskoder**.</span><span class="sxs-lookup"><span data-stu-id="9e610-109">Click **Sales and marketing** \> **Setup** \> **Sales orders** \> **Returns** \> **Disposition codes**.</span></span>
 
-2.  <span data-ttu-id="1e0ac-110">Klicka på **Ny** eller tryck på CTRL+N om du vill skapa en ny dispositionskod.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-110">Click **New** or press CTRL+N to create a new disposition code.</span></span>
+2.  <span data-ttu-id="9e610-110">Klicka på **Ny** eller tryck på CTRL+N om du vill skapa en ny dispositionskod.</span><span class="sxs-lookup"><span data-stu-id="9e610-110">Click **New** or press CTRL+N to create a new disposition code.</span></span>
 
-3.  <span data-ttu-id="1e0ac-111">Ange ett unikt beskrivande namn, välj en åtgärd och ange en beskrivning för dispositionskoden.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-111">Enter a unique, descriptive name, select an action, and enter a description for the disposition code.</span></span>
+3.  <span data-ttu-id="9e610-111">Ange ett unikt beskrivande namn, välj en åtgärd och ange en beskrivning för dispositionskoden.</span><span class="sxs-lookup"><span data-stu-id="9e610-111">Enter a unique, descriptive name, select an action, and enter a description for the disposition code.</span></span>
 
-4.  <span data-ttu-id="1e0ac-112">Om du vill koppla ett eller flera tillägg till den här dispositionskoden klickar du på knappen **Debiteringar** för att öppna formuläret **Ställ in avgifter**.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-112">If you want to associate any customer charges with this disposition code, click the **Charges** button to open the **Set up charges** form.</span></span>
+4.  <span data-ttu-id="9e610-112">Om du vill koppla ett eller flera tillägg till den här dispositionskoden klickar du på knappen **Debiteringar** för att öppna formuläret **Ställ in avgifter**.</span><span class="sxs-lookup"><span data-stu-id="9e610-112">If you want to associate any customer charges with this disposition code, click the **Charges** button to open the **Set up charges** form.</span></span>
 
-5.  <span data-ttu-id="1e0ac-113">Om du vill definiera externa koder som matchar företagets egna dispositionskoder klickar du på knappen **Externa koder** för att öppna formuläret **Externa koder**.</span><span class="sxs-lookup"><span data-stu-id="1e0ac-113">If you want to define any external codes to match with the company's own disposition codes, click the **External codes** button to open the **External codes** form.</span></span>
+5.  <span data-ttu-id="9e610-113">Om du vill definiera externa koder som matchar företagets egna dispositionskoder klickar du på knappen **Externa koder** för att öppna formuläret **Externa koder**.</span><span class="sxs-lookup"><span data-stu-id="9e610-113">If you want to define any external codes to match with the company's own disposition codes, click the **External codes** button to open the **External codes** form.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1e0ac-114">Se även</span><span class="sxs-lookup"><span data-stu-id="1e0ac-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9e610-114">Se även</span><span class="sxs-lookup"><span data-stu-id="9e610-114">See also</span></span>
 
-[<span data-ttu-id="1e0ac-115">Dispositionskoder och returorsakskoder</span><span class="sxs-lookup"><span data-stu-id="1e0ac-115">Disposition codes and return reason codes</span></span>](disposition-and-return-reason-codes.md)
+[<span data-ttu-id="9e610-115">Dispositionskoder och returorsakskoder</span><span class="sxs-lookup"><span data-stu-id="9e610-115">Disposition codes and return reason codes</span></span>](disposition-and-return-reason-codes.md)
 
-<span data-ttu-id="1e0ac-116">[Dispositionskoder (formulär)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="1e0ac-116">[Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))</span></span>
+<span data-ttu-id="9e610-116">[Dispositionskoder (formulär)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9e610-116">[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span></span>
 
-<span data-ttu-id="1e0ac-117">[Automatiska avgifter (formulär)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="1e0ac-117">[Auto charges (form)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))</span></span>
+<span data-ttu-id="9e610-117">[Automatiska avgifter (formulär)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9e610-117">[Auto charges (form)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))</span></span>
 
-<span data-ttu-id="1e0ac-118">[Externa koder (formulär)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="1e0ac-118">[External codes (form)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))</span></span>
+<span data-ttu-id="9e610-118">[Externa koder (formulär)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="9e610-118">[External codes (form)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))</span></span>
 
   
 
