@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e31994ea3cd73dcc749a02ce2cd0815be191a567
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554631"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742411"
 ---
 # <a name="prospect-to-cash"></a>Potentiell kund till kontanter
 
@@ -81,4 +81,4 @@ Potentiell kund till kontanter-integrering stöds på följande versioner:
 Om du vill använda lösningen Potentiell kund till kontanter måste du installera följande komponenter:
 
 - Dynamics 365 for Sales version 1612 (DB 8.2.1.207) (8.2.1.207) online eller senare
-- Lösningen Potentiell kund till kontanter för Dynamics 365 for Sales, version 1.15.0.0 eller senare. Lösningen finns att hämta från AppSource. [Hämta Dynamics 365, potentiell kund till kontanter](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+- Lösningen Potentiell kund till kontanter för Dynamics 365 for Sales, version 1.15.0.0 eller senare. Lösningen finns att hämta från AppSource. [Hämta Dynamics 365, potentiell kund till kontanter](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).

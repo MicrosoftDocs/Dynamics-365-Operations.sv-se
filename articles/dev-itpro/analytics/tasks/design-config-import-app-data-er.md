@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 23004930d2377a3d647435b53b6809cd500f44ac
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551493"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741365"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>Utforma ER-konfigurationer för att tolka inkommande dokument
 
@@ -30,7 +30,7 @@ Denna procedur visar hur du utformar ER-konfigurationer (elektronisk rapporterin
 
 Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. 
 
-Stegen kan utföras med hjälp av valfri datauppsättning. Innan du börjar, hämta och spara de filer som anges i avsnittet ”Tolka inkommande dokument för att uppdatera programdata” (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Filerna är: EFSTA, model.xml, EFSTA, format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Stegen kan utföras med hjälp av valfri datauppsättning. Innan du börjar, hämta och spara de filer som anges i avsnittet ”Tolka inkommande dokument för att uppdatera programdata” (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Filerna är: EFSTA, model.xml, EFSTA, format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
     * Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.  

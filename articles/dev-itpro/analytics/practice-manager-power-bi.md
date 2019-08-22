@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c526bc42595c20024016d0d7da78b8638b0daa4b
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551681"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850107"
 ---
 # <a name="practice-manager-power-bi-content"></a>Praxischef Power BI-innehåll
 
@@ -34,7 +34,7 @@ Det här avsnittet beskriver vad som ingår i **praxischef** Microsoft Power BI-
 
 **Praxischef** Power BI-innehåll har skapats för praxischefer och projektledare. Det tillhandahåller viktiga mätvärden som är relaterade till de projekt som organisationen med. Instrumentpanelen ger en översikt över projekt och tillhörande kunder. Ett rapportnivåfilter kan användas för rapporter till specifika juridiska personer. Detta Power BI-innehåll hämtar data från sammanlagda mått för projektredovisning.
 
-Power BIPower BI-innehållet för **Praxischef** innehåller fem rapportsidor: en översiktssida och fyra sidor som ger information om projektkostnader, intäkter, hantering av upparbetat värde samt timmätvärden som är fördelade över flera olika dimensioner.
+Innehållet för **Praxischef** Power BI innehåller fem rapportsidor: en översiktssida och fyra sidor som ger information om projektkostnader, intäkter, hantering av upparbetat värde samt timmätvärden som är fördelade över flera olika dimensioner.
 
 Alla belopp i innehållet visas i systemvalutan. Du kan ange systemvalutan på sidan **Systemparametrar**.
 
@@ -54,7 +54,7 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 | EVM               | Index för kostnad och schemaprestanda efter projekt |
 | Timmar             | <ul><li>Faktiska fakturerbara utnyttjade timmar kontra faktiska fakturerbara ej fakturerbara timmar kontra budgeterade timmar</li><li>Faktiska fakturerbara utnyttjade timmar kontra faktiska fakturerbara ej fakturerbara timmar efter projekt</li><li>Faktiska fakturerbara utnyttjade timmar kontra faktiska fakturerbara ej fakturerbara timmar efter resurs</li><li>Kvot för faktiska fakturerbara timmar efter projekt</li><li>Kvot för faktiska fakturerbara timmar efter resurs</li></ul> |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
@@ -62,7 +62,7 @@ Följande data används för att fylla i rapportsidorna i Power BI-innehållet *
 
 Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive enhet.
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>Enhet: ProjectAccountingCube\_ActualHourUtilization
+### <a name="entity-projectaccountingcube_actualhourutilization"></a>Enhet: ProjectAccountingCube\_ActualHourUtilization
 **Datakälla:** ProjEmplTrans
 
 | Sammanlagda huvudmått      | Fält                              | beskrivning |
@@ -70,7 +70,7 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Faktiska fakturerbara utnyttjade timmar | Sum(ActualUtilizationBillableRate) | Summan av faktiska fakturerbara utnyttjade timmar. |
 | Faktiska fakturerbara ej fakturerbara timmar   | Sum(ActualBurdenBillableRate)      | Summan av de faktiska omkostnaderna. |
 
-### <a name="entity-projectaccountingcubeactuals"></a>Enhet: ProjectAccountingCube\_Actuals
+### <a name="entity-projectaccountingcube_actuals"></a>Enhet: ProjectAccountingCube\_Actuals
 **Datakälla:** ProjTransPosting
 
 | Sammanlagda huvudmått | Fält              | beskrivning |
@@ -78,14 +78,14 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Faktisk intäkt            | Sum(ActualRevenue) | Summan av bokförda intäkter för alla transaktioner. |
 | Faktisk kostnad               | Sum(ActualCost)    | Summan av bokförda kostnader för alla transaktionstyper. |
 
-### <a name="entity-projectaccountingcubecustomer"></a>Enhet: ProjectAccountingCube\_Customer
+### <a name="entity-projectaccountingcube_customer"></a>Enhet: ProjectAccountingCube\_Customer
 **Datakälla:** CustTable
 
 | Sammanlagda huvudmått | Fält                                             | beskrivning |
 |---------------------------|---------------------------------------------------|-------------|
 | Antal projekt        | COUNTA(ProjectAccountingCube\_Projects\[PROJEKT\]) | Antal tillgängliga projekt. |
 
-### <a name="entity-projectaccountingcubeforecasts"></a>Enhet: ProjectAccountingCube\_Forecasts
+### <a name="entity-projectaccountingcube_forecasts"></a>Enhet: ProjectAccountingCube\_Forecasts
 **Datakälla:** ProjTransBudget
 
 | Sammanlagda huvudmått | Fält                  | beskrivning |
@@ -94,14 +94,14 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Budgeterad intäkt            | Sum(BudgetRevenue)     | Summan av upplupen prognos/fakturerad intäkt. |
 | Budgeterad bruttomarginal       | Sum(BudgetGrossMargin) | Skillnaden mellan summan av den totala prognosticerade intäkten och summan av den totala prognoskostnaden. |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Enhet: ProjectAccountingCube\_ProjectPlanCostsView
+### <a name="entity-projectaccountingcube_projectplancostsview"></a>Enhet: ProjectAccountingCube\_ProjectPlanCostsView
 **Datakälla:** Projekt
 
 | Sammanlagda huvudmått | Fält                    | beskrivning |
 |---------------------------|--------------------------|-------------|
 | Planerad kostnad              | Sum(SumOfTotalCostPrice) | Total självkostnad i uppskattningar för alla projekttransaktionstyper med planerade uppgifter. |
 
-### <a name="entity-projectaccountingcubeprojects"></a>Enhet: ProjectAccountingCube\_Projects
+### <a name="entity-projectaccountingcube_projects"></a>Enhet: ProjectAccountingCube\_Projects
 **Datakälla:** Projekt
 
 | Sammanlagda huvudmått    | Fält | beskrivning |
@@ -112,7 +112,7 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 | Kvot för faktiska fakturerbara timmar  | ProjectAccountingCube\_Projects\[Totala faktiska fakturerbara utnyttjade projekttimmar\] ÷ (ProjectAccountingCube\_Projects\[Totala faktiska fakturerbara utnyttjade projekttimmar\] + ProjectAccountingCube\_Projects\[Projektets totala faktiska fakturerbara ej fakturerbara timmar\]) | Totala faktiska fakturerbara timmar, baserat på utnyttjad timmar och ej fakturerbara timmar. |
 | Intjänat värde                 | ProjectAccountingCube\_Projects\[total planerad projektkostnad\] × ProjectAccountingCube\_Projects\[procentandel av slutfört arbete\] | Planerad totalkostnad multiplicerad med procentandelen slutfört arbete. |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhet: ProjectAccountingCube\_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcube_totalestimatedcosts"></a>Enhet: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datakälla:** ProjTable
 
 | Sammanlagda huvudmått       | Fält               | beskrivning |

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbcdaa50a8f13247c13c1885cdb4ab7f5f39a47
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bbe1ccc90b215c35f44835b1307977c18927bd7e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552240"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743327"
 ---
 # <a name="create-service-orders-manually"></a>Skapa en serviceorder manuellt    
 
@@ -100,5 +100,5 @@ Du kan skapa en serviceorder från formuläret **försäljningsorder** genom att
 
 [Skapa serviceorder automatiskt](create-service-orders-automatically.md)
 
-[Skapa serviceorder (klassformulär)](https://technet.microsoft.com/en-us/library/aa553901\(v=ax.60\)) 
+[Skapa serviceorder (klassformulär)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 

@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625882"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849519"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -215,12 +215,12 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 | TODAY () | Returnerar aktuellt datum och aktuell tid för Finance and Operations-servern som ett datumvärde. | |
 | NULLDATE () | Returnerar date-värdet **null**. | |
 | NULLDATETIME () | Returnerar värdet för datum/tid som **noll**. | |
-| DATETIMEFORMAT (datetime, format) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet. (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-serverprogrammet, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet. |
-| DATETIMEFORMAT (datetime, format, culture) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "s", "sv")** returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som **"2015-12-24"** baserat på den valda svenska kulturen. |
+| DATETIMEFORMAT (datetime, format) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet. (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-serverprogrammet, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet. |
+| DATETIMEFORMAT (datetime, format, culture) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och [kulturen](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "s", "sv")** returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som **"2015-12-24"** baserat på den valda svenska kulturen. |
 | SESSIONTODAY () | Returnera aktuellt datum för Finance and Operations-sessionen som ett datumvärde. | |
 | SESSIONNOW () | Returnera aktuellt datum och aktuell tid för Finance and Operations-sessionen som ett värde datum/tid. | |
 | DATEFORMAT (datum, format) | Returnera en sträng som representerar det definierade datumet i det angivna formatet. | **DATEFORMAT (SESSIONTODAY () "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet. |
-| DATEFORMAT (datum, format, kultur) | Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på den valda tyska kulturen. |
+| DATEFORMAT (datum, format, kultur) | Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på den valda tyska kulturen. |
 | DAYOFYEAR (datum) | Returnera en heltalsrepresentation av antalet dagar mellan 1 januari och det angivna datumet. | **DAYOFYEAR (DATEVALUE (”01-03-2016”, ”dd-MM-åååå”))** returnerar **61**. **DAYOFYEAR (DATEVALUE (”01-01-2016”, ”dd-MM-åååå”))** returnerar **1**. |
 | DAGAR (datum 1, datum 2) | Returnera antalet dagar mellan första och andra angivna datum. Returnerar ett positivt värde när det första datumet är senare än det andra, returnerar **0** (noll) när det första datumet är lika med det andra, annars ett negativt värde när det första datumet är tidigare än det andra datumet. | **DAYS (TODAY (), DATUMVÄRDE (DATETIMEFORMAT (ADDDAYS(NOW() 1), ”yyyyMMdd”), ”yyyyMMdd”))** returnerar **-1**. |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (number, format)</td>
-<td>Returnera en sträng som representerar det specificerade numret i det angivna formatet. (Information om format som stöds finns i <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> och <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">anpassade</a>.) Den kontext som denna funktion körs i avgör den kultur som används för att formatera tal.</td>
+<td>Returnera en sträng som representerar det specificerade numret i det angivna formatet. (Information om format som stöds finns i <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">standard</a> och <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">anpassade</a>.) Den kontext som denna funktion körs i avgör den kultur som används för att formatera tal.</td>
 <td>För kulturen EN-US returnerar <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returnerar <strong>&quot;10&quot;</strong>.</td>
 </tr>
 <tr>
 <td>NUMBERFORMAT (number, format, kultur)</td>
-<td>Returnera en sträng för det definierade nummer enligt angivet format och given kultur. (Om du vill ha mer information om format som stöds, se <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">Standard</a> och <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">Anpassat</a>.)</td>
+<td>Returnera en sträng för det definierade nummer enligt angivet format och given kultur. (Om du vill ha mer information om format som stöds, se <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">Standard</a> och <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">Anpassat</a>.)</td>
 <td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> returnerar <strong>3,33</strong> medan <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> returnerar <strong>3.33</strong>.</td>
 </tr>
 <tr>

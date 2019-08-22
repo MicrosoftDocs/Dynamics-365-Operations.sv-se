@@ -3,7 +3,7 @@ title: Översikt över funktionshantering
 description: I det här avsnittet beskrivs funktionen funktionshantering och hur du kan använda den.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632063"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862948"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Funktioner läggs till och uppdateras i alla versioner av Microsoft Dynamics 365 for Finance and Operations. Funktionshanteringen är en arbetsyta där du kan visa en lista med funktioner som har levererats i varje utgåva. Nya funktionen är avstängda som standard. Du kan använda arbetsytan för att aktivera dem och visa dokumentationen för dem.
 
@@ -38,7 +39,7 @@ Du kan öppna arbetsytan **funktionshantering** genom att välja lämplig panel 
 Funktionslistan inkluderar följande information:
 
 - **Funktionens namn** – en beskrivning av funktionen som har lagts till.
-- **Aktiverad status** – en symbol anger om en funktion har aktiverats (bockmarkering), inte aktiveras (tom), har tidsplanerats för att aktiveras (klocka) eller är obligatorisk aktiverad (lås). Inställningen som visas här används för alla juridiska personer. Observera att även om en funktion har aktiverats, styrs den fortfarande av säkerhet. Funktionen är därför bara tillgänglig för användare som har åtkomst till den, baserat på deras säkerhetsroll. Det är också bara tillgängligt för juridiska personer som användaren har till gång till.
+- **Aktiverad status** – en symbol anger om en funktion har aktiverats (bockmarkering), inte aktiveras (tom), har tidsplanerats för att aktiveras (klocka) eller är obligatorisk aktiverad (lås) kräver uppmärksamhet innan du aktiverar den (varning) eller så kan den inte aktiveras (X). Inställningen som visas används för alla juridiska personer. Observera att även om en funktion har aktiverats, styrs den fortfarande av säkerhet. Funktionen är därför bara tillgänglig för användare som har åtkomst till den, baserat på deras säkerhetsroll. Det är också bara tillgängligt för juridiska personer som användaren har till gång till.
 - **Aktivera datum** – det datum då funktionen aktiverades eller är tidsplanerad att aktiveras.
 - **Funktionen tillagd** – det datum då funktionen lades till i din miljö. Detta datum anges automatiskt när du uppdaterar miljön under de månatliga versionscyklerna.
 - **Modul** – den modul som påverkas av den nya funktionen.
@@ -59,6 +60,10 @@ Om en funktion inte har aktiverats visas knappen **Aktivera nu** i informationsf
 - Välj den funktion som du vill aktivera och välj sedan **aktivera nu** i informationsfönstret. Funktionen är aktiverad.
 
 Vissa funktioner kan inte inaktiveras när du har aktiverat dem. Om funktionen som du försöker aktivera inte kan inaktiveras får du en varning. I det här läget kan du välja **Avbryt** om du vill avbryta åtgärden och lämna funktionen inaktiverad. Om du däremot väljer **aktivera** och aktiverar funktionen kommer du inte att kunna inaktivera den senare.
+
+Vissa funktioner visar ett meddelande som ger ytterligare information innan du aktiverar dem. Dessa funktioner indikeras med en gul varningssymbol. Du bör läsa ytterligare information noggrant för att bättre förstå vad som kommer att hända när funktionen är aktiverad. Du kan dock fortfarande välja **aktivera** för att aktivera funktionen.
+
+Vissa funktioner visar ett meddelande om att funktionen inte kan aktiveras förrän en åtgärd har vidtagits. Dessa funktioner indikeras med en röd X-symbol. Du måste vidta de åtgärder som beskrivs i beskrivningen innan funktionen är aktiverad. Om du till exempel inte kan använda en funktion förrän en konfigurationsnyckel har inaktiverats måste du först inaktivera konfigurationsnyckeln och sedan återgå till funktionshantering för att aktivera funktionen.
 
 När funktionen är aktiverad visas ett meddelande under länken **Mer information** i informationsfönstret. Det här meddelandet anger att funktionen har aktiverats eller anger det framtida datum när funktionen är tidsplanerad att aktiveras. Det visas varje gång du väljer funktionen i funktionslistan.
 
@@ -84,12 +89,28 @@ När funktionen är inaktiverad visas ett meddelande under länken **Mer informa
 
 Ibland levereras en kritisk funktion som måste aktiveras automatiskt när du gör en uppdatering. De här funktionerna aktiveras automatiskt på det datum som anges i fältet **aktivera datum**. För dessa funktioner visas ett meddelande under länken **Mer information** i informationsfönstret. Det här meddelandet anger att funktionen har aktiverats eller anger det framtida datum när funktionen kommer att aktiveras. Det visas varje gång du väljer funktionen i funktionslistan.
 
+## <a name="enable-all-features"></a>Aktivera alla funktioner
+
+Som standard är alla funktioner som läggs till i miljön inaktiverade. Du kan aktivera alla funktioner genom att välja knappen **Aktivera alla**. 
+
+När du väljer **aktivera alla**visas ett alternativ där du behöver ange följande information:
+- En lista över alla funktioner som kräver bekräftelse innan de kan aktiveras. Om du vill aktivera funktionerna i listan väljer du **Ja** för knappen **Aktivera funktioner som kräver bekräftelse**.
+- En lista över alla funktioner som inte kan aktiveras visas. Dessa funktioner kommer inte att aktiveras.
+
+Alla funktioner som kan aktiveras kommer att aktiveras. Om en funktion redan är schemalagd för att aktiveras i framtiden kommer schemat inte att ändras. 
+
 ## <a name="turn-on-all-features-automatically"></a>Aktivera alla funktioner automatiskt
 
 Som standard är alla funktioner som läggs till i miljön inaktiverade, såvida de inte är obligatoriska funktioner. Om du vill aktivera alla nya funktioner automatiskt kan du dock ändra vad som händer när nya funktioner läggs till genom att använda listrutan under arbetsytans rubrik.
 
 - Markera **alla nya funktioner aktiveras som standard** för att automatiskt aktivera alla nya funktioner när de läggs till i miljön.
 - Markera **alla nya funktioner inaktiveras som standard** för att automatiskt inaktivera alla nya funktioner när de läggs till i miljön.
+
+När du aktiverar alla funktioner automatiskt, kommer det att aktivera alla funktioner som skulle vara aktiverade när du klickar på knappen **aktivera alla**. Det kommer inte att aktivera funktioner som kräver bekräftelse eller funktioner som inte kan aktiveras förrän en åtgärd vidtas.
+
+## <a name="check-for-updates"></a>Sök efter uppdateringar
+
+Funktioner läggs till i din miljö efter varje uppdatering. Du kan dock manuellt söka efter uppdateringar genom att klicka på knappen **Sök efter uppdateringar**. Alla funktioner som har lagts till i systemet efter att uppdateringen kommer att läggas till i listan över funktionerna. Till exempel, om en funktion i förhandsversion är aktiverad efter en frisläppning kan du söka efter uppdateringar och funktionen kommer att läggas till i din lista.
 
 ## <a name="assigning-roles"></a>Tilldela roller
 

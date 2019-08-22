@@ -1,9 +1,9 @@
 ---
 title: Visa arbetsflödeshistorik
-description: Använd följande steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande.
+description: Det här avsnittet beskriver steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande.
 author: jasongre
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,34 +16,34 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a40fe377322e2d64b751f6cace3eda20736cd321
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 16c6594161f1fecd36183a6b8f2c798f52d70a9c
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560462"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1738798"
 ---
 # <a name="view-workflow-history"></a>Visa arbetsflödeshistorik
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Använd följande steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+Det här avsnittet beskriver steg för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 
-1. Gå till Allmänt > Förfrågningar > Arbetsflöde > Arbetsflödeshistorik.
-    * Använd det här formuläret för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande.  
-    * Instans-ID är identifieringskoden för det arbetsflödesinstansen där dokumentet bearbetas eller har bearbetats.  
-    * Statusen utgörs av dokumentets arbetsflödessatus.  
-    * ID för arbetsflöde är identifieringskoden för det arbetsflöde där dokumentet bearbetas eller har bearbetats.  
-    * Dokumentets ID är dokumentets identifieringskod.  
-    * Dokumenttypen är den typ av dokument som har skickats in för bearbetning.  
-    * Arbetsflödet är namnet på det arbetsflöde där dokumenten bearbetas eller har bearbetats.  
-    * Versionen är versionsnumret på det arbetsflöde där dokumentet bearbetas eller har bearbetats.  
-    * Datum och tid för "Skapades den" är det datum och den tidpunkt då dokumentet skickades.  
-    * Förfluten tid är den tid som har förflutit sedan dokumentet skickades.  
-    * Knappen Återuppta låter dig fortsätta arbetsflödesprocessen för det valda dokumentet.  
-    * Med knappen Återkalla kan du återkalla det markerade dokumentet så att det inte behandlas.   
-2. Klicka på länken på den valda raden i listan.
-    * Kontrollera att avsnittet för Arbetsuppgift expanderas.    I det här avsnittet kan du visa arbetsuppgifter som är kopplade till det valda dokumentet. En uppgift kan till exempel behöva slutföras, eller också kanske dokumentet måste godkännas.  
-    * Knappen Överlåta öppnar en dialogruta där du kan tilldela en arbetsuppgift till en annan användare.  
-    * Kontrollera att informationsavsnittet för spårning expanderas.    I det här avsnittet kan du visa arbetsflödeshistoriken för det valda dokumentet.  
+1. Gå till **Navigeringsfönstret > Moduler > Allmänt > Förfrågningar > Arbetsflöde > Arbetsflödeshistorik**.
+    - Använd det här formuläret för att visa statusvärdet för ett dokument som har skickats till arbetsflödessystemet för bearbetning och godkännande.  
+    - **Instans-ID** är identifieringskoden för det arbetsflödesinstansen där dokumentet bearbetas eller har bearbetats.  
+    - **Statusen** utgörs av dokumentets arbetsflödestatus.  
+    - **ID för arbetsflöde** är identifieringskoden för det arbetsflöde där dokumentet bearbetas eller har bearbetats.  
+    - **Dokumentet** är dokumentets identifieringskod.  
+    - **Dokumenttypen** är den typ av dokument som har skickats in för bearbetning.  
+    - **Arbetsflödet** är namnet på det arbetsflöde där dokumenten bearbetas eller har bearbetats.  
+    - **Versionen** är versionsnumret på det arbetsflöde där dokumentet bearbetas eller har bearbetats.  
+    - **Skapat datum och tid** är det datum och den tidpunkt då dokumentet skickades.  
+    - **Förfluten tid** är den tid som har förflutit sedan dokumentet skickades.  
+    - Knappen **Återuppta** låter dig fortsätta arbetsflödesprocessen för det valda dokumentet.  
+    - Med knappen **Återkalla** kan du återkalla det markerade dokumentet så att det inte behandlas.   
+2. Klicka på länken på önskad rad i listan.
+    - Kontrollera att avsnittet för **Arbetsuppgifter** expanderas. I det här avsnittet kan du visa arbetsuppgifter som är kopplade till det valda dokumentet. En uppgift kan till exempel behöva slutföras, eller också kanske dokumentet måste godkännas.  
+    - Knappen **Tilldela om** öppnar en dialogruta där du kan tilldela en arbetsuppgift till en annan användare.  
+    - Kontrollera att avsnittet **Spårningsuppgifter** expanderas. I det här avsnittet kan du visa arbetsflödeshistoriken för det valda dokumentet.  
 

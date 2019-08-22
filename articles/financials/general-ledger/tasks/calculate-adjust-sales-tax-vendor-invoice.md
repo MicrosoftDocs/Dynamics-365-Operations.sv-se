@@ -1,52 +1,46 @@
 ---
 title: Beräkna och justera moms på en leverantörsfaktura
-description: Om det ursprungliga källdokumentet visar andra momsbelopp än dem som beräknas kan du justera dessa belopp, innan du bokför dem.
+description: I det här avsnittet beskriver hur du justerar momsen på en leverantörsfaktura Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 803c038d907b68a3c72a83a3e035c4e08b8a8661
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 684529087d5348c9e02310f812f8aa6f64c6655f
+ms.sourcegitcommit: 016832198c306e8329ad21b5254e7d1cdff74c2f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545181"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862624"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Beräkna och justera moms på en leverantörsfaktura
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Om det ursprungliga källdokumentet visar andra momsbelopp än dem som beräknas kan du justera dessa belopp, innan du bokför dem. I den här uppgiften används demonstrationsföretaget DEMF.
+I det här avsnittet beskriver hur du justerar momsen på en leverantörsfaktura Dynamics 365 for Finance and Operations. Om det ursprungliga källdokumentet visar andra momsbelopp än dem som beräknas kan du justera dessa belopp, innan du bokför dem. I den här uppgiften används demonstrationsföretaget DEMF.
 
-1. Gå till Leverantörsreskontra > Fakturor > Fakturajournal.
-2. Klicka på Ny.
-3. Markera vald rad i listan.
-4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.
-5. Klicka på länken på den valda raden i listan.
-6. Klicka på Rader.
-7. Markera vald rad i listan.
-8. Ange önskade värden i fältet Konto.
-9. Ange ett värde i fältet Faktura.
-10. Välj ett tal i fältet Kredit.
-11. Ange önskade värden i fältet Motkonto.
-12. Klicka på Moms.
-13. Ange ett tal i fältet Totalt faktiskt momsbelopp.
-14. Klicka på OK.
-15. Klicka på Spara.
-16. Klicka på Moms.
-17. På justeringsfliken kan momsbeloppen justeras per momskod.
-18. Klicka på Återställ utfall till beräknade belopp.
-19. Klicka på OK.
-20. Klicka på Spara.
+1. I navigeringsfönstret går du till **Moduler > Leverantörsreskontra > Fakturor > Fakturajournal**.
+2. Välj **Ny**.
+3. I fältet **Namn** i den nya raden väljer du ett alternativ i listrutemenyn.
+4. Klicka på **Rader** i åtgärdsfönstret.
+5. Ange önskade värden i fältet **Konto**.
+6. Ange ett värde i fältet **Faktura**.
+7. I fältet **Kredit** väljer du ett tal.
+8. Ange önskade värden i fältet **Motkonto**.
+9. Välj **Moms**.
+10. Ange ett tal i fältet **Totalt faktiskt momsbelopp**.
+11. På fliken **justering** kan momsbeloppen justeras per momskod.
+12. Välj **Återställ utfall till beräknade belopp**.
+13. Välj **OK**.
+14. Välj **Spara**.
 

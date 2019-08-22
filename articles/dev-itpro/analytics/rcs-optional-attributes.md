@@ -1,5 +1,5 @@
 ---
-title: Förbered programspecifika metadata för RCS och ER
+title: Importera filer i XML-format med valfria attribut
 description: Det här avsnittet innehåller information om hur du utformar ER-format, som anger XML-attribut för tolkning av inkommande elektroniska dokument i XML-format.
 author: NickSelin
 manager: AnnBe
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a6fc1e54444584895aa75ae91d39143f27e34d8
-ms.sourcegitcommit: d0fa7eb2166a30314205e7f70bbeaff6fbd5fb55
+ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726585"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1850005"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Förbered programspecifika metadata för RCS och ER
+# <a name="import-files-in-xml-format-with-optional-attributes"></a>Importera filer i XML-format med valfria attribut
 
 Du kan utforma elektronisk rapportering (ER)-format som tolkar inkommande elektroniska dokument dokument i XML-format. Vissa attribut för XML-element kan anges i designat ER-format som valfritt. Det gör att du kan hantera inkommande filer med och utan sådana XML-attribut korrekt. Du kan sedan använda innehållet från dessa filer till att uppdatera programdata.
 
@@ -97,7 +97,7 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 5.  Klicka på **Spara**.
 6.  Klicka på **Designer**.
 7.  Expandera **format** i trädet.
-8.  I trädet expandera **format\root: XML-element(root)**.
+8.  I trädet expandera **format\root: XML Element(root)**.
 9.  I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
 10. Klicka på **Bind**.
 11. I trädet expanderar du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.

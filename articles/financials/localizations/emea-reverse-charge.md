@@ -1,26 +1,26 @@
 ---
 title: Omvänd moms
-description: Det här avsnittet beskriver hur du ställer in omvänd moms (VAT) för europeiska länder och Saudiarabien.
+description: Det här avsnittet beskriver hur du ställer in omvänd moms (VAT) för europeiska länder, Saudiarabien och Singapore.
 author: epodkolz
 manager: AnnBe
-ms.date: 04/05/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571177"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852429"
 ---
 # <a name="reverse-charge-vat"></a>Omvänd moms
 
@@ -28,7 +28,7 @@ ms.locfileid: "1571177"
 [!include [banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för Saudiarabien och europeiska länder.
+Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för Saudiarabien, Singapore och europeiska länder.
 
 Omvänd moms är ett skatteschema som har ansvaret för redovisning och rapportering av moms från säljaren till köparen av varor eller tjänster. Därför rapporterar mottagaren av varor eller tjänster både utgående moms (i rollen som säljare) och ingående moms (i rollen som inköpare) i deras momsrapport.
 

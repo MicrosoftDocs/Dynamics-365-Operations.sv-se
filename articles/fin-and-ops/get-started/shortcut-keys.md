@@ -3,7 +3,7 @@ title: Kortkommandon
 description: Följande kortkommandon gäller i hela Dynamics 365 for Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561843"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780068"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
@@ -138,9 +138,13 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Lägg till ett antal rader i den valda uppsättningen<blockquote>[!NOTE] Den här genvägen gäller endast flervalsscenarier.</blockquote>         | Skift+Klick                     |
 | Gå till nästa/föregående sida med data.                                                                                   | Page Up / Page Down             |
 | Skapa en ny rad längst ned i rutnätet                                                                             | Nedåtpil (från sista raden)  |
-| Markera eller rensa alla rader                                                                                               | Ctrl+Skift+M                    |
 | Flytta till första posten                                                                                               | Ctrl+start                       |
 | Flytta till den sista posten                                                                                                | Ctrl+End                        |
+| Markera eller rensa alla rader                                                                                               | Ctrl+Skift+M                    |
+| Flytta till den första markerade raden                                                                                           | Alt+Shift+M, F                    |
+| Flytta till nästa markerade rad                                                                                            | Alt+Shift+M, L                    |
+| Flytta till föregående markerad rad                                                                                        | Alt+Shift+M, P                    |
+| Flytta till den sista markerade raden                                                                                           | Alt+Shift+M, N                    |
 | Utför standardåtgärd i ett rutnät<blockquote>[!NOTE] Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar.</blockquote> | Ange                           |
 | Växla fokus mellan den markerade raden och rubrikraden                                                               | Alt+Skift+H                     |
 | Gör den aktuella kolumnen större/mindre (med fokus i rubrikraden)                                                  | Högerpil/vänsterpil        |

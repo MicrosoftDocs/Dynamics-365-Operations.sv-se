@@ -3,25 +3,25 @@ title: Skapa en produktklassificeringshierarki
 description: I den här proceduren visas hur du skapar en ny kategorihierarki och tilldelar en typ av artikelkodhierarki.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb49f5f3f8a5a788cb4c6d1be69534ba808e3675
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: faf43eb15283ffd7e36ad38728f166884dddcd85
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568430"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1844835"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Skapa en produktklassificeringshierarki
 
@@ -31,39 +31,38 @@ I den här proceduren visas hur du skapar en ny kategorihierarki och tilldelar e
 
 
 ## <a name="create-the-new-category-hierarchy"></a>Skapa den nya kategorihierarkin
-1. Gå till Produktinformationshantering > Inställningar > Kategorier och attribut > Kategorihierarkier.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Namn.
-4. Ange ett värde i fältet Beskrivning.
-5. Klicka på Skapa.
+1. Gå till **Navigeringsfönster > Moduler > Produktinformationshantering > Inställningar > Kategorier och attribut > Kategorihierarkier**.
+2. Klicka på **Ny**.
+3. Skriv ett värde i fältet **Namn**.
+4. I fältet **Beskrivning** anger du ett värde.
+5. Klicka på **Skapa**.
 
 ## <a name="build-the-hierarchy"></a>Skapa hierarkin
-1. Klicka på Ny kategorinod.
-2. Skriv ett värde i fältet Namn.
-3. Skriv ett värde i fältet Kod.
-4. Skriv ett värde i fältet Eget namn.
-5. Klicka på Ny kategorinod.
-6. Skriv ett värde i fältet Namn.
-7. Skriv ett värde i fältet Kod.
-8. Skriv ett värde i fältet Eget namn.
-9. Klicka på Ny kategorinod.
-10. Skriv ett värde i fältet Namn.
-11. Skriv ett värde i fältet Kod.
-12. Skriv ett värde i fältet Eget namn.
-13. Klicka på Ny kategorinod.
-14. Skriv ett värde i fältet Namn.
-15. Skriv ett värde i fältet Kod.
-16. Skriv ett värde i fältet Eget namn.
+1. Klicka på kategorinoden **Ny**.
+2. Skriv ett värde i fältet **Namn**.
+3. Skriv ett värde i fältet **Kod**.
+4. Skriv ett värde i fältet **Eget namn**.
+5. Klicka på kategorinoden **Ny**.
+6. Skriv ett värde i fältet **Namn**.
+7. Skriv ett värde i fältet **Kod**.
+8. Skriv ett värde i fältet **Eget namn**.
+9. Klicka på kategorinoden **Ny**.
+10. Skriv ett värde i fältet **Namn**.
+11. Skriv ett värde i fältet **Kod**.
+12. Skriv ett värde i fältet **Eget namn**.
+13. Klicka på kategorinoden **Ny**.
+14. Skriv ett värde i fältet **Namn**.
+15. Skriv ett värde i fältet **Kod**.
+16. Skriv ett värde i fältet **Eget namn**.
 17. Stäng sidan.
 
 ## <a name="classify-the-hierarchy"></a>Klassificera hierarkin
 1. Hitta och markera önskad post i listan.
-2. Klicka på Kategorihierarki i åtgärdsfönstret.
-3. Klicka på Associera hierarkityp.
-4. Klicka på Ny.
-5. Välj ett alternativ i fältet Kategorihierarkityp.
-    * Välj kategorihierarkitypen för artikelkoden för produktklassificering.  
-6. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kategorihierarki.
+2. Klicka på **Kategorihierarki** i **åtgärdsfönstret**.
+3. Klicka på **Associera hierarkityp**.
+4. Klicka på **Ny**.
+5. Välj ett alternativ i fältet **Kategorihierarkityp**. Välj **kategorihierarkitypen för artikelkoden för produktklassificering**.  
+6. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Kategorihierarki**.
 7. Hitta och markera önskad post i listan.
 8. Klicka på länken på den valda raden i listan.
 9. Stäng sidan.

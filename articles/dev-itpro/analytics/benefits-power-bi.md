@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e704c27d7cea658be6fa06cc078488b0d5a3b0dc
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548776"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848505"
 ---
 # <a name="benefits-power-bi-content"></a>Förmåner Power BI-innehåll
 
@@ -30,7 +30,7 @@ ms.locfileid: "1548776"
 Det här avsnittet beskriver **Förmåner** Microsoft Power BI-innehållet. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
-Power BI-innehåll för **Förmåner** Power BI visas i arbetsytan **Förmånshantering** om du använder någon av följande produkter:
+Innehåll för **Förmåner** Power BI visas i arbetsytan **Förmånshantering** om du använder någon av följande produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
@@ -43,7 +43,7 @@ Rapporter som ingår i **Förmåner** Power BI-innehållet har både diagram och
 | Översikt över förmånsanmälan | De mesta och minst anmälda planerna, anmäland per medarbetargrupp och valda förmånsplanalternativ |
 | Anställningsförmåner           | Anmälan till medarbetare efter valt förmån                                                        |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI, se [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Följande data används för att fylla i rapporterna i **Förmåner** Power BI-innehållet. Denna tabell visar enheterna som innehållet baserades på.

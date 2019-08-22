@@ -3,25 +3,25 @@ title: Registrera en leverantörsfaktura i fakturajournalen
 description: Den här uppgifthandboken visar hur du registrerar leverantörsfakturor som inte är kopplade till inköpsorder.
 author: abruer
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace, LedgerJournalTable, LedgerJournalTransVendInvoice
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 775f3764d34cecbfc071ff7420d32c7832b42308
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 97dd03a96389ab22e441acd0af1ad35852570be4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556371"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1837022"
 ---
 # <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>Registrera en leverantörsfaktura i fakturajournalen
 
@@ -29,22 +29,21 @@ ms.locfileid: "1556371"
 
 Den här uppgifthandboken visar hur du registrerar leverantörsfakturor som inte är kopplade till inköpsorder. Exempel på den här typen av faktura omfattar utgifter för förrådsartiklar och tjänster.  I den här registreringen används demonstrationsföretaget USMF.
 
-1. Gå till Leverantörsreskontra > Arbetsytor > Leverantörsfakturaregistrering.
-2. Klicka på Ny fakturajournal.
-3. Klicka på Ny.
-4. Ange journalnamnet eller klicka på den nedrullningsbara knappen i fältet Namn för att öppna sökningen.
-5. Ange ett värde i fältet Beskrivning.
-6. Klicka på Rader.
-    * Ange bokföringsdatum som ska uppdatera redovisningen i datumfältet.  
-7. Ange leverantörskontot i fältet Konto.
-8. Ange fakturanumret i fältet Faktura.
-9. Skriv ett värde i fältet Beskrivning.
-10. Välj ett tal i fältet Kredit.
-11. Ange kontnumret eller klicka på den nedrullningsbara knappen i motkontofältet för att öppna sökningen.
-    * Momsgruppen får sin standard från leverantörskontot.  
-    * Artikelmomsgruppen får sin standard från huvudkontot som anges i motkontofältet.  
-    * Förfallodatumet beräknas utifrån betalningsvillkoren.  
-    * Kassarabatt får sin standard från leverantörskontot.  
-12. Klicka på Bokför.
+1. Gå till **Navigeringsfönster > Moduler > Leverantörsreskontra > Arbetsytor > Leverantörsfakturapost**.
+2. Klicka på **Ny fakturajournal** i **Åtgärdsfönstret**.
+3. Klicka på **Ny**.
+4. Ange journalnamnet eller klicka på den nedrullningsbara knappen i fältet **Namn** för att öppna sökningen.
+5. I fältet **Beskrivning** anger du ett värde.
+6. Klicka på **Rader** i **åtgärdsfönstret**. Ange bokföringsdatum som ska uppdatera redovisningen i fältet **Datum**.  
+7. Ange **leverantörskontot** i fältet **Konto**.
+8. Ange fakturanumret i fältet **Faktura**.
+9. I fältet **Beskrivning** anger du ett värde.
+10. I fältet **Kredit** väljer du ett tal.
+11. Ange kontonumret  eller klicka på den nedrullningsbara knappen i fältet **motkonto** för att öppna sökningen.
+    * **Momsgruppen** får sin standard från leverantörskontot.  
+    * **Artikelmomsgruppen** får sin standard från huvudkontot som anges i fältet **motkonto**.  
+    * **Förfallodatumet** beräknas utifrån betalningsvillkoren.  
+    * **Kassarabatt** får sin standard från leverantörskontot.  
+12. Klicka på **Bokför**.
 13. Stäng sidan.
 
