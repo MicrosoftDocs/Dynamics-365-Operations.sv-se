@@ -26,12 +26,13 @@
       href: retail-support.md
     - name: Frågor och svar om tjänstuppdateringar för en version
       href: ../fin-and-ops/get-started/one-version.md
-- name: Förstå implementeringens livscykel
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Livscykelhantering för implementering
   items:
+    - name: Livscykelhantering för implementering – startsida
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
-    - name: Introduktion
+    - name: Integration
       href: ../fin-and-ops/imp-lifecycle/onboard.md
     - name: Förbereda publicering
       href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md
@@ -121,7 +122,7 @@
       href: ../financials/general-ledger/indirect-taxes-overview.md
     - name: Momsberäkningsmetoder i fältet Ursprung
       href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
-    - name: ' Momstilldelning och åsidosättningar'
+    - name: Momstilldelning och åsidosättningar
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
     - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
@@ -165,6 +166,8 @@
       href: retail-hardware-station-configuration-installation.md
     - name: Tid och närvaro i Retail
       href: retail-time-attendance.md
+    - name: Skapa och ändra öppettider
+      href: dev-itpro/store-hours.md
 - name: Modern kassa (MPOS) och molnbaserad kassa
   items:
     - name: Välj mellan MPOS och molnbaserad kassa
@@ -317,8 +320,10 @@
       href: create-manage-attributes.md
     - name: Ställa in butiksprodukter
       href: set-up-retail-products.md
-    - name: Hantera produktkategorier och produkter för Retail
+    - name: Hantera produktkategorier och produkter för butik
       href: category-management-product-creation.md
+    - name: Ändra sorteringsordning för marknadsföringsenheter
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: Produktdimensioner
       href: ../supply-chain/pim/product-dimensions.md
     - name: Ställa in streckkoder
@@ -471,11 +476,11 @@
       href: tasks/define-channel-attributes.md
     - name: Definiera kontinuitetstidsplaner
       href: tasks/define-continuity-schedules.md
-    - name: ' Definiera bonusprogram'
+    - name: Definiera bonusprogram
       href: tasks/define-loyalty-programs.md
-    - name: ' Definiera förmånsbelöningspoäng'
+    - name: Definiera förmånsbelöningspoäng
       href: tasks/define-loyalty-reward-points.md
-    - name: ' Definiera förmånsscheman'
+    - name: Definiera förmånsscheman
       href: tasks/define-loyalty-schemes.md
     - name: Utforma relationerna mellan organisationsenheter
       href: tasks/design-relationships-between-organizational-units.md
@@ -500,8 +505,9 @@
     - name: Konfigurera butiksmedarbetare
       href: tasks/worker.md
 - name: Utveckling och administration av Retail
-  href: dev-itpro/dev-retail-home-page.md
   items:
+    - name: Retail för IT-personal och utvecklare
+      href: dev-itpro/dev-retail-home-page.md
     - name: Arkitektur
       items:
         - name: Retail-komponenter
@@ -598,6 +604,8 @@
           href: dev-itpro/view-pos-extension-package-details.md
     - name: Hardware Station och utbyggbarhet
       href: dev-itpro/hardware-station-extensibility.md
+    - name: Integrera POS med ny maskinvaruenhet
+      href: dev-itpro/hardware-device-extension.md
     - name: Utbyggbarhet för Retail Server
       items:
         - name: Utöka en Retail Server OData-styrenhet
@@ -655,8 +663,9 @@
         - name: Aktivera skydd mot dubbelbetalning för betalningskoppling
           href: dev-itpro/duplicate-payment-protection.md
     - name: SDK för Retail
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: SDK för Retail-arkitektur
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Kommande ändringar i SDK för Retail
           href: dev-itpro/UpcomingSDKChanges.md
         - name: Sammanfoga versionssystem för Retail och Finance and Operations
@@ -667,9 +676,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Exempel på SDK för Retail
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Tilläggspunkter för följesedlar
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Tilläggspunkter för följesedlar
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Tillägg för kanaldatabas
           href: dev-itpro/channel-db-extensions.md
         - name: Aktivera anpassad CDX-synkronisering via tillägg

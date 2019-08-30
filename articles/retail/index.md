@@ -3,7 +3,7 @@ title: Välkommen till Dynamics 365 for Retail
 description: Startsida för Dynamics 365 for Retail
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bc1c74ab6940fe0f7ed2e541edad0bce657faeb5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572183"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874937"
 ---
 # <a name="welcome-to-dynamics-365-for-retail"></a>Välkommen till Dynamics 365 for Retail
 
@@ -38,7 +38,7 @@ Välj ett funktionsområde som du vill veta mer om i det vänstra fönstret.
 
 ## <a name="channel-management"></a>Kanalhantering
 
-När du konfigurerar Retail-miljön ska du definiera och konfigurera dina butiker. Det kan vara fysiska butiker, onlinebutiker eller kundtjänster.
+När du ställer in Retail bestämmer du hur du definierar och konfigurerar dina butiker, som kan vara fysiska, online eller kundtjänst.
 
 Varje butik kan ha egna betalningsmetoder, leveransmetoder, prisgrupper, intäkts- och utgiftskonton, kassor och personal. När du har skapat butiken skapar du ett sortiment produkter som du vill att butiken ska föra. Det går även att definiera butiksspecifika priser och rabatter som gäller för produkter som finns i butiken.
 
