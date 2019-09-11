@@ -1,9 +1,9 @@
 ---
 title: Skapa periodiseringsscheman
-description: Den här uppgiften leder dig genom stegen för att skapa ett periodiseringsschema.
+description: Det här avsnittet innehåller information om hur du skapar periodiseringsschema.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,30 +16,28 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0ae55000a5cf1593d057d940dc3dbbf9e5cb3f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e8f8cf8546187ae1c65d4966887e1c5842dff431
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834905"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867569"
 ---
-# <a name="create-accrual-schemes"></a><span data-ttu-id="1e776-103">Skapa periodiseringsscheman</span><span class="sxs-lookup"><span data-stu-id="1e776-103">Create accrual schemes</span></span>
+# <a name="create-accrual-schemes"></a><span data-ttu-id="954c4-103">Skapa periodiseringsscheman</span><span class="sxs-lookup"><span data-stu-id="954c4-103">Create accrual schemes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="1e776-104">Den här uppgiften leder dig genom stegen för att skapa ett periodiseringsschema.</span><span class="sxs-lookup"><span data-stu-id="1e776-104">This task guide steps through creating an accrual scheme.</span></span> <span data-ttu-id="1e776-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="1e776-105">This task uses the USMF demo company.</span></span>
+<span data-ttu-id="954c4-104">Det här avsnittet innehåller information om hur du skapar periodiseringsschema.</span><span class="sxs-lookup"><span data-stu-id="954c4-104">This topic explains how to create an accrual scheme.</span></span> <span data-ttu-id="954c4-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="954c4-105">This task uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="1e776-106">Gå till Redovisning > Journalkonfigurering > Periodiseringsscheman.</span><span class="sxs-lookup"><span data-stu-id="1e776-106">Go to General ledger > Journal setup > Accrual schemes.</span></span>
-2. <span data-ttu-id="1e776-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="1e776-107">Click New.</span></span>
-3. <span data-ttu-id="1e776-108">Skriv ett värde i fältet Identifiering av periodisering.</span><span class="sxs-lookup"><span data-stu-id="1e776-108">In the Accrual identification field, type a value.</span></span>
-4. <span data-ttu-id="1e776-109">Skriv ett värde i fältet Beskrivning av periodiseringsschema.</span><span class="sxs-lookup"><span data-stu-id="1e776-109">In the Description of accrual scheme field, type a value.</span></span>
-5. <span data-ttu-id="1e776-110">Ange önskade värden i fältet Debet.</span><span class="sxs-lookup"><span data-stu-id="1e776-110">In the Debit field, specify the desired values.</span></span>
-    * <span data-ttu-id="1e776-111">Det definierade huvudkontot ersätter debethuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.</span><span class="sxs-lookup"><span data-stu-id="1e776-111">The main account defined will replace the debit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
-6. <span data-ttu-id="1e776-112">Ange önskade värden i fältet Kredit.</span><span class="sxs-lookup"><span data-stu-id="1e776-112">In the Credit field, specify the desired values.</span></span>
-    * <span data-ttu-id="1e776-113">Det definierade huvudkontot ersätter kredithuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.</span><span class="sxs-lookup"><span data-stu-id="1e776-113">The main account defined will replace the credit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
-7. <span data-ttu-id="1e776-114">I fältet Verifikation väljer du hur du vill att verifikationen ska fastställas när transaktionerna bokförs.</span><span class="sxs-lookup"><span data-stu-id="1e776-114">In the Voucher field, select how you want the voucher determined when the transactions are posted.</span></span>
-8. <span data-ttu-id="1e776-115">I fältet Beskrivning skriver du ett värde som beskriver vilka transaktioner som ska bokföras.</span><span class="sxs-lookup"><span data-stu-id="1e776-115">In the Description field, type a value to describe the transactions that will be posted.</span></span>
-9. <span data-ttu-id="1e776-116">Välj hur ofta transaktionerna ska ske i fältet Periodfrekvens.</span><span class="sxs-lookup"><span data-stu-id="1e776-116">In the Period frequency field, select how often the transactions should occur.</span></span>
-10. <span data-ttu-id="1e776-117">Ange ett värde i fältet Antal förekomster per period.</span><span class="sxs-lookup"><span data-stu-id="1e776-117">In the Number of occurrences by period field, enter a number.</span></span>
-11. <span data-ttu-id="1e776-118">I fältet Bokför transaktioner väljer du när transaktionerna ska bokföras, till exempel varje månad.</span><span class="sxs-lookup"><span data-stu-id="1e776-118">In the Post transactions field, select when the transactions should be posted, such as Monthly.</span></span>
+1. <span data-ttu-id="954c4-106">Gå till **Navigeringsfönstret > Moduler > Redovisning > Journalkonfiguration > Periodiseringsscheman**.</span><span class="sxs-lookup"><span data-stu-id="954c4-106">Go to **Navigation pane > Modules > General ledger > Journal setup > Accrual schemes**.</span></span>
+2. <span data-ttu-id="954c4-107">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="954c4-107">Select **New**.</span></span>
+3. <span data-ttu-id="954c4-108">Skriv ett värde i fältet **Identifiering av periodisering**.</span><span class="sxs-lookup"><span data-stu-id="954c4-108">In the **Accrual identification** field, type a value.</span></span>
+4. <span data-ttu-id="954c4-109">Skriv ett värde i fältet **Beskrivning av periodiseringsschema**.</span><span class="sxs-lookup"><span data-stu-id="954c4-109">In the **Description of accrual scheme** field, type a value.</span></span>
+5. <span data-ttu-id="954c4-110">Ange önskade värden i fältet **Debet**.</span><span class="sxs-lookup"><span data-stu-id="954c4-110">In the **Debit** field, specify the desired values.</span></span> <span data-ttu-id="954c4-111">Det definierade huvudkontot ersätter debethuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.</span><span class="sxs-lookup"><span data-stu-id="954c4-111">The main account defined will replace the debit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
+6. <span data-ttu-id="954c4-112">Ange önskade värden i fältet **Kredit**.</span><span class="sxs-lookup"><span data-stu-id="954c4-112">In the **Credit** field, specify the desired values.</span></span> <span data-ttu-id="954c4-113">Det definierade huvudkontot ersätter kredithuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.</span><span class="sxs-lookup"><span data-stu-id="954c4-113">The main account defined will replace the credit main account on the journal voucher line and it will also be used for the reversal of the deferral based on the ledger accrual transactions.</span></span>  
+7. <span data-ttu-id="954c4-114">I fältet **Verifikation** väljer du hur du vill att verifikationen ska fastställas när transaktionerna bokförs.</span><span class="sxs-lookup"><span data-stu-id="954c4-114">In the **Voucher** field, select how you want the voucher determined when the transactions are posted.</span></span>
+8. <span data-ttu-id="954c4-115">I fältet **Beskrivning** skriver du ett värde som beskriver vilka transaktioner som ska bokföras.</span><span class="sxs-lookup"><span data-stu-id="954c4-115">In the **Description** field, type a value to describe the transactions that will be posted.</span></span>
+9. <span data-ttu-id="954c4-116">Välj hur ofta transaktionerna ska ske i fältet **Periodfrekvens**.</span><span class="sxs-lookup"><span data-stu-id="954c4-116">In the **Period frequency** field, select how often the transactions should occur.</span></span>
+10. <span data-ttu-id="954c4-117">Ange ett värde i fältet **Antal förekomster per period**.</span><span class="sxs-lookup"><span data-stu-id="954c4-117">In the **Number of occurrences by period** field, enter a number.</span></span>
+11. <span data-ttu-id="954c4-118">I fältet **Bokför transaktioner** väljer du när transaktionerna ska bokföras, till exempel **Varje månad**.</span><span class="sxs-lookup"><span data-stu-id="954c4-118">In the **Post transactions** field, select when the transactions should be posted, such as **Monthly**.</span></span>
 

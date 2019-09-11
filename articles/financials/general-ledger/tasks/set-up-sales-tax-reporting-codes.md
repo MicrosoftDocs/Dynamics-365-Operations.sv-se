@@ -3,7 +3,7 @@ title: Ställ in momsrapporteringskoder
 description: Momsrapportkoderna refererar till ett fältnummer i momsrapporten.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,26 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 830a3465944b32cc17feee60e3cbc5ad0a4dc9d7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 4751256858da417ec9bb1b7d9ccd16fb6bef1cac
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834785"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916101"
 ---
-# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="46ceb-103">Ställ in momsrapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="46ceb-103">Set up sales tax reporting codes</span></span>
+# <a name="set-up-sales-tax-reporting-codes"></a><span data-ttu-id="067ff-103">Ställ in momsrapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="067ff-103">Set up sales tax reporting codes</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="46ceb-104">Momsrapportkoderna refererar till ett fältnummer i momsrapporten.</span><span class="sxs-lookup"><span data-stu-id="46ceb-104">The Sales tax reporting codes refer to a field number on a sales tax report.</span></span> <span data-ttu-id="46ceb-105">Dessa används för landsspecifika rapportlayouter och rapporten Momsbetalning per kod om du vill skriva ut momsbelopp för en kvittningsperiod som summeras per rapporteringskod.</span><span class="sxs-lookup"><span data-stu-id="46ceb-105">They are used on country specific report layouts and the Sales tax payment by code report to print sales tax amounts for a settlement period summarized per reporting code.</span></span> <span data-ttu-id="46ceb-106">När du har skapat momsrapporteringskoder kan du referera till dem på rapportinställningssnabbflikarna på momskodsidan.</span><span class="sxs-lookup"><span data-stu-id="46ceb-106">After you create Sales tax reporting codes, you can refer to them on the Report setup FastTabs in the Sales tax code page.</span></span> 
+<span data-ttu-id="067ff-104">Momsrapportkoderna refererar till ett fältnummer i momsrapporten.</span><span class="sxs-lookup"><span data-stu-id="067ff-104">The Sales tax reporting codes refer to a field number on a sales tax report.</span></span> <span data-ttu-id="067ff-105">Dessa används för landsspecifika rapportlayouter och rapporten Momsbetalning per kod om du vill skriva ut momsbelopp för en kvittningsperiod som summeras per rapporteringskod.</span><span class="sxs-lookup"><span data-stu-id="067ff-105">They are used on country specific report layouts and the Sales tax payment by code report to print sales tax amounts for a settlement period summarized per reporting code.</span></span> <span data-ttu-id="067ff-106">När du har skapat momsrapporteringskoder kan du referera till dem på rapportinställningssnabbflikarna på momskodsidan.</span><span class="sxs-lookup"><span data-stu-id="067ff-106">After you create Sales tax reporting codes, you can refer to them on the Report setup FastTabs in the Sales tax code page.</span></span> 
 
-<span data-ttu-id="46ceb-107">I den här registreringen används demonstrationsföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="46ceb-107">This recording uses the DEMF demo company.</span></span>
+<span data-ttu-id="067ff-107">I den här registreringen används demonstrationsföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="067ff-107">This recording uses the DEMF demo company.</span></span>
 
-
-
-1. <span data-ttu-id="46ceb-108">Gå till Moms > Inställningar > Moms > Momsrapporteringskoder.</span><span class="sxs-lookup"><span data-stu-id="46ceb-108">Go to Tax > Setup > Sales tax > Sales tax reporting codes.</span></span>
-2. <span data-ttu-id="46ceb-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="46ceb-109">Click New.</span></span>
-3. <span data-ttu-id="46ceb-110">Välj den rapportlayout som rapporteringskoden tillhör.</span><span class="sxs-lookup"><span data-stu-id="46ceb-110">Select the report layout that the reporting code belongs to.</span></span>
-    * <span data-ttu-id="46ceb-111">Denna layout används för att filtrera de tillgängliga rapportkoderna för en momskod.</span><span class="sxs-lookup"><span data-stu-id="46ceb-111">This layout is used to filter the available reporting codes for a Sales tax code.</span></span> <span data-ttu-id="46ceb-112">Varje momskod tillhör en kvittningsperiod som tillhör en skattemyndighet, som använder en rapportlayout.</span><span class="sxs-lookup"><span data-stu-id="46ceb-112">Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.</span></span>  
-4. <span data-ttu-id="46ceb-113">Ange ett fältnummer som refererar till ett fält i en momsrapport.</span><span class="sxs-lookup"><span data-stu-id="46ceb-113">Enter a number that refers to a field on a sales tax report.</span></span>
-5. <span data-ttu-id="46ceb-114">Ange en beskrivning som ska visas på rapporter i rapporttextfältet.</span><span class="sxs-lookup"><span data-stu-id="46ceb-114">In the Report text field, enter a description to display on reports.</span></span>
-6. <span data-ttu-id="46ceb-115">Ange en beskrivning för internt bruk i fältet Kort beskrivning.</span><span class="sxs-lookup"><span data-stu-id="46ceb-115">In the Brief description field, enter a description for internal purposes.</span></span>
-7. <span data-ttu-id="46ceb-116">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="46ceb-116">Click Save.</span></span>
+1. <span data-ttu-id="067ff-108">I **Navigeringsfönster**, gå till **Skatt > Inställningar > Moms > Momsrapporteringskoder**.</span><span class="sxs-lookup"><span data-stu-id="067ff-108">In the **Navigation pane**, go to **Tax > Setup > Sales tax > Sales tax reporting codes**.</span></span>
+2. <span data-ttu-id="067ff-109">Klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="067ff-109">Click **New**.</span></span>
+3. <span data-ttu-id="067ff-110">Välj den rapportlayout som rapporteringskoden tillhör.</span><span class="sxs-lookup"><span data-stu-id="067ff-110">Select the report layout that the reporting code belongs to.</span></span> <span data-ttu-id="067ff-111">Denna layout används för att filtrera de tillgängliga rapportkoderna för en momskod.</span><span class="sxs-lookup"><span data-stu-id="067ff-111">This layout is used to filter the available reporting codes for a Sales tax code.</span></span> <span data-ttu-id="067ff-112">Varje momskod tillhör en kvittningsperiod som tillhör en skattemyndighet, som använder en rapportlayout.</span><span class="sxs-lookup"><span data-stu-id="067ff-112">Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.</span></span>  
+4. <span data-ttu-id="067ff-113">Ange ett nummer i fältet **Rapporteringskod**.</span><span class="sxs-lookup"><span data-stu-id="067ff-113">In the **Reporting code** field, enter a number.</span></span>
+5. <span data-ttu-id="067ff-114">Ange en beskrivning som ska visas på rapporter i fältet **Rapporttext**.</span><span class="sxs-lookup"><span data-stu-id="067ff-114">In the **Report text** field, enter a description to display on reports.</span></span>
+6. <span data-ttu-id="067ff-115">Ange en beskrivning för internt bruk i fältet **Kort beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="067ff-115">In the **Brief description** field, enter a description for internal purposes.</span></span>
+7. <span data-ttu-id="067ff-116">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="067ff-116">Click **Save**.</span></span>
 

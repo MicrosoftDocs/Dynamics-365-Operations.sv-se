@@ -1,9 +1,9 @@
 ---
-title: Ändra datumet för sessionen
-description: Som standard används aktuellt datum vid registrering och bokföring av journalposter eller källdokument.
+title: Ändra datumet för en session
+description: I det här avsnittet beskrivs hur du ändrar datumet för en session i Dynamics 365 for Finance and Operations.
 author: pvillads
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d27a4d36ff8c8192d2342cd97f29c556540d00b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 81b45f71cda7c682e7a9dee241e483890a80d487
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545634"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867381"
 ---
-# <a name="change-the-date-for-the-session"></a><span data-ttu-id="28922-103">Ändra datumet för sessionen</span><span class="sxs-lookup"><span data-stu-id="28922-103">Change the date for the session</span></span>
+# <a name="change-the-date-for-a-session"></a><span data-ttu-id="ac85b-103">Ändra datumet för en session</span><span class="sxs-lookup"><span data-stu-id="ac85b-103">Change the date for a session</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="28922-104">Som standard används aktuellt datum vid registrering och bokföring av journalposter eller källdokument.</span><span class="sxs-lookup"><span data-stu-id="28922-104">By default, the current date is used when entering and posting journal entries or source documents.</span></span> <span data-ttu-id="28922-105">Du kan ändra det datum som används för din aktuella session.</span><span class="sxs-lookup"><span data-stu-id="28922-105">You can change the date that is used for your current session.</span></span> <span data-ttu-id="28922-106">Använd denna funktion för att antedatera journalposter eller källdokument vid behov.</span><span class="sxs-lookup"><span data-stu-id="28922-106">Use this feature to back-date journal entries or source documents, as necessary.</span></span>
+<span data-ttu-id="ac85b-104">I det här avsnittet beskrivs hur du ändrar datumet för en session i Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="ac85b-104">This topic explains how to change the date for a session in Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="ac85b-105">Som standard används aktuellt datum vid registrering och bokföring av journalposter eller källdokument.</span><span class="sxs-lookup"><span data-stu-id="ac85b-105">By default, the current date is used when entering and posting journal entries or source documents.</span></span> <span data-ttu-id="ac85b-106">Du kan ändra det datum som används för din aktuella session.</span><span class="sxs-lookup"><span data-stu-id="ac85b-106">You can change the date that is used for your current session.</span></span> <span data-ttu-id="ac85b-107">Använd denna funktion för att antedatera journalposter eller källdokument vid behov.</span><span class="sxs-lookup"><span data-stu-id="ac85b-107">Use this feature to back-date journal entries or source documents, as necessary.</span></span>
 
-1. <span data-ttu-id="28922-107">Gå till Allmänt > Allmänt > Sessionsdatum och -tid.</span><span class="sxs-lookup"><span data-stu-id="28922-107">Go to Common > Common > Session date and time.</span></span>
-2. <span data-ttu-id="28922-108">Ange ett datum i fältet Datum.</span><span class="sxs-lookup"><span data-stu-id="28922-108">In the Date field, enter a date.</span></span>
-3. <span data-ttu-id="28922-109">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="28922-109">Click OK.</span></span>
+1. <span data-ttu-id="ac85b-108">I navigeringsfönstret, gå till **Moduler > Allmänt > Allmänt > Sessionsdatum och -tid**.</span><span class="sxs-lookup"><span data-stu-id="ac85b-108">In the navigation pane, go to **Modules > Common > Common > Session date and time**.</span></span>
+2. <span data-ttu-id="ac85b-109">Ange ett datum i fältet **Datum.**</span><span class="sxs-lookup"><span data-stu-id="ac85b-109">In the **Date** field, enter a date.</span></span>
+3. <span data-ttu-id="ac85b-110">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="ac85b-110">Select **OK**.</span></span>
 

@@ -1,9 +1,9 @@
 ---
 title: Definiera granskningspolicyer för källdokument
-description: I den här proceduren visar vi hur du ställer in och kör granskningsprincipregler.
+description: I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregler.
 author: ryansandness
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,80 +16,75 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17b712f07a0ffe6874eb6d98b47ced96f5a54483
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a6b0fa28d778a4d9fa1f718b1d50bf1dce00be00
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846497"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914851"
 ---
-# <a name="define-audit-policies-for-source-documents"></a><span data-ttu-id="a24d4-103">Definiera granskningspolicyer för källdokument</span><span class="sxs-lookup"><span data-stu-id="a24d4-103">Define audit policies for source documents</span></span>
+# <a name="define-audit-policies-for-source-documents"></a><span data-ttu-id="1e526-103">Definiera granskningspolicyer för källdokument</span><span class="sxs-lookup"><span data-stu-id="1e526-103">Define audit policies for source documents</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="a24d4-104">I den här proceduren visar vi hur du ställer in och kör granskningsprincipregler.</span><span class="sxs-lookup"><span data-stu-id="a24d4-104">This procedure shows how to set up and run audit policy rules.</span></span> <span data-ttu-id="a24d4-105">I exemplet används utgiftsrapporter av typen hotellutgift.</span><span class="sxs-lookup"><span data-stu-id="a24d4-105">The example uses expense reports with the hotel expense type.</span></span> <span data-ttu-id="a24d4-106">I den här proceduren används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="a24d4-106">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="a24d4-107">Revisorrollen har rätt behörighet för att utföra dessa uppgifter.</span><span class="sxs-lookup"><span data-stu-id="a24d4-107">The auditor role contains the correct permissions in order to perform these tasks.</span></span>
+<span data-ttu-id="1e526-104">I det här avsnittet visar vi hur du ställer in och kör granskningspolicyregler.</span><span class="sxs-lookup"><span data-stu-id="1e526-104">This topic explains how to set up and run audit policy rules.</span></span> <span data-ttu-id="1e526-105">I exemplet används utgiftsrapporter av typen hotellutgift.</span><span class="sxs-lookup"><span data-stu-id="1e526-105">The example uses expense reports with the hotel expense type.</span></span> <span data-ttu-id="1e526-106">I den här proceduren används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="1e526-106">This procedure uses the USMF demo company.</span></span> <span data-ttu-id="1e526-107">Revisorrollen har rätt behörighet för att utföra dessa uppgifter.</span><span class="sxs-lookup"><span data-stu-id="1e526-107">The auditor role contains the correct permissions in order to perform these tasks.</span></span>
 
-1. <span data-ttu-id="a24d4-108">Gå till Revision > Inställningar > Policyregeltyp.</span><span class="sxs-lookup"><span data-stu-id="a24d4-108">Go to Audit workbench > Setup > Policy rule type.</span></span>
-2. <span data-ttu-id="a24d4-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a24d4-109">Click New.</span></span>
-3. <span data-ttu-id="a24d4-110">I fältet Regelnamn, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="a24d4-110">In the Rule name field, type a value.</span></span>
-4. <span data-ttu-id="a24d4-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="a24d4-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="a24d4-112">I frågenamnfältet, välj raden Utgiftsrapport</span><span class="sxs-lookup"><span data-stu-id="a24d4-112">In the Query name field, select Expense report line</span></span>
-6. <span data-ttu-id="a24d4-113">Välj Sammansättning i frågetypsfältet</span><span class="sxs-lookup"><span data-stu-id="a24d4-113">In the query type field, select Aggregate</span></span>
-7. <span data-ttu-id="a24d4-114">Välj Juridisk person i fältet Juridisk person</span><span class="sxs-lookup"><span data-stu-id="a24d4-114">In the Legal entity field, select Legal entity</span></span>
-8. <span data-ttu-id="a24d4-115">Välj Datum och tid för ändring i dokumentdatumreferensfältet</span><span class="sxs-lookup"><span data-stu-id="a24d4-115">In the Document date reference field, select Modified date and time</span></span>
-9. <span data-ttu-id="a24d4-116">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a24d4-116">Click Save.</span></span>
-10. <span data-ttu-id="a24d4-117">Gå till revision workbench > Installation > Revision policy.</span><span class="sxs-lookup"><span data-stu-id="a24d4-117">Go to Audit workbench > Setup > Audit policies.</span></span>
-11. <span data-ttu-id="a24d4-118">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a24d4-118">Click New.</span></span>
-12. <span data-ttu-id="a24d4-119">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="a24d4-119">In the Name field, type a value.</span></span>
-13. <span data-ttu-id="a24d4-120">Expandera avsnittet Policyorganisationer.</span><span class="sxs-lookup"><span data-stu-id="a24d4-120">Expand the Policy organizations section.</span></span>
-14. <span data-ttu-id="a24d4-121">Välj det ”Contoso Entertainment System USA" i trädet..</span><span class="sxs-lookup"><span data-stu-id="a24d4-121">In the tree, select 'Contoso Entertainment System USA'.</span></span>
-15. <span data-ttu-id="a24d4-122">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a24d4-122">Click Add.</span></span>
-16. <span data-ttu-id="a24d4-123">Välj ”Contoso Consulting USA" i trädet.</span><span class="sxs-lookup"><span data-stu-id="a24d4-123">In the tree, select 'Contoso Consulting USA'.</span></span>
-17. <span data-ttu-id="a24d4-124">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a24d4-124">Click Add.</span></span>
-18. <span data-ttu-id="a24d4-125">Välj ”Contoso Retail USA" i trädet.</span><span class="sxs-lookup"><span data-stu-id="a24d4-125">In the tree, select 'Contoso Retail USA'.</span></span>
-19. <span data-ttu-id="a24d4-126">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a24d4-126">Click Add.</span></span>
-20. <span data-ttu-id="a24d4-127">Komprimera avsnittet Policyorganisationer.</span><span class="sxs-lookup"><span data-stu-id="a24d4-127">Collapse the Policy organizations section.</span></span>
-21. <span data-ttu-id="a24d4-128">Expandera avsnittet Policyregler.</span><span class="sxs-lookup"><span data-stu-id="a24d4-128">Expand the Policy rules section.</span></span>
-22. <span data-ttu-id="a24d4-129">I listan söker du efter och väljer den policyregel som tidigare har skapats.</span><span class="sxs-lookup"><span data-stu-id="a24d4-129">In the list, find and select the Policy Rule that was created previously.</span></span>
-23. <span data-ttu-id="a24d4-130">Klicka på Skapa policyregel.</span><span class="sxs-lookup"><span data-stu-id="a24d4-130">Click Create policy rule.</span></span>
-24. <span data-ttu-id="a24d4-131">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="a24d4-131">In the Effective date field, enter a date and time.</span></span>
-25. <span data-ttu-id="a24d4-132">Klicka på Filter.</span><span class="sxs-lookup"><span data-stu-id="a24d4-132">Click Filter.</span></span>
-26. <span data-ttu-id="a24d4-133">Markera raden för utgiftskategori i listan och ange Hotell</span><span class="sxs-lookup"><span data-stu-id="a24d4-133">In the list, select the row for Expense category, and set the details to Hotel</span></span>
-27. <span data-ttu-id="a24d4-134">Ange eller välj ett värde i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="a24d4-134">In the Criteria field, enter or select a value.</span></span>
-28. <span data-ttu-id="a24d4-135">Klicka på fliken Sammansättning.</span><span class="sxs-lookup"><span data-stu-id="a24d4-135">Click the Aggregate tab.</span></span>
-29. <span data-ttu-id="a24d4-136">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a24d4-136">Click Add.</span></span>
-30. <span data-ttu-id="a24d4-137">Välj ett fältvärde för transaktionsbelopp</span><span class="sxs-lookup"><span data-stu-id="a24d4-137">In the list, select a field value of Transaction amount</span></span>
-31. <span data-ttu-id="a24d4-138">Ange eller välj ett värde i fältet Fält.</span><span class="sxs-lookup"><span data-stu-id="a24d4-138">In the Field field, enter or select a value.</span></span>
-32. <span data-ttu-id="a24d4-139">Välj ”Summa” i fältet AggregateFunction.</span><span class="sxs-lookup"><span data-stu-id="a24d4-139">In the AggregateFunction field, select 'Sum'.</span></span>
-33. <span data-ttu-id="a24d4-140">Klicka på fliken Gruppera efter.</span><span class="sxs-lookup"><span data-stu-id="a24d4-140">Click the Group by tab.</span></span>
-34. <span data-ttu-id="a24d4-141">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a24d4-141">Click Add.</span></span>
-35. <span data-ttu-id="a24d4-142">I listan väljer du ett värde av anställd</span><span class="sxs-lookup"><span data-stu-id="a24d4-142">In the list, select a value of Employee</span></span> 
-36. <span data-ttu-id="a24d4-143">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a24d4-143">Click Add.</span></span>
-37. <span data-ttu-id="a24d4-144">Välj ett värde för Utgiftskategori i listan</span><span class="sxs-lookup"><span data-stu-id="a24d4-144">In the list, select a value of Expense category</span></span>
-38. <span data-ttu-id="a24d4-145">Ange eller välj ett värde i fältet Fält.</span><span class="sxs-lookup"><span data-stu-id="a24d4-145">In the Field field, enter or select a value.</span></span>
-39. <span data-ttu-id="a24d4-146">Klicka på fliken Har.</span><span class="sxs-lookup"><span data-stu-id="a24d4-146">Click the Having tab.</span></span>
-40. <span data-ttu-id="a24d4-147">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a24d4-147">Click Add.</span></span>
-41. <span data-ttu-id="a24d4-148">Välj transaktionsbelopp</span><span class="sxs-lookup"><span data-stu-id="a24d4-148">Select Transaction amount</span></span>
-42. <span data-ttu-id="a24d4-149">Ange eller välj ett värde i fältet Fält.</span><span class="sxs-lookup"><span data-stu-id="a24d4-149">In the Field field, enter or select a value.</span></span>
-43. <span data-ttu-id="a24d4-150">Välj ”Summa” i fältet AggregateFunction.</span><span class="sxs-lookup"><span data-stu-id="a24d4-150">In the AggregateFunction field, select 'Sum'.</span></span>
-44. <span data-ttu-id="a24d4-151">I fältet skriver du ">2000".</span><span class="sxs-lookup"><span data-stu-id="a24d4-151">In the Criteria field, type '>2000'.</span></span>
-45. <span data-ttu-id="a24d4-152">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="a24d4-152">Click OK.</span></span>
-46. <span data-ttu-id="a24d4-153">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="a24d4-153">Click Test.</span></span>
-47. <span data-ttu-id="a24d4-154">I fältet Startdatum för dokumenturval, ange datum och tid.</span><span class="sxs-lookup"><span data-stu-id="a24d4-154">In the Document selection starting date field, enter a date and time.</span></span>
-48. <span data-ttu-id="a24d4-155">I fältet Slutdatum för dokumenturval, ange datum och tid.</span><span class="sxs-lookup"><span data-stu-id="a24d4-155">In the Document selection ending date field, enter a date and time.</span></span>
-49. <span data-ttu-id="a24d4-156">Klicka på Kör test.</span><span class="sxs-lookup"><span data-stu-id="a24d4-156">Click Run test.</span></span>
-50. <span data-ttu-id="a24d4-157">Klicka på Granskningspolicy i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="a24d4-157">On the Action Pane, click Audit policy.</span></span>
-51. <span data-ttu-id="a24d4-158">Klicka på ytterligare alternativ.</span><span class="sxs-lookup"><span data-stu-id="a24d4-158">Click Additional options.</span></span>
-52. <span data-ttu-id="a24d4-159">Ange datum och tid i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="a24d4-159">In the Starting date field, enter a date and time.</span></span>
-53. <span data-ttu-id="a24d4-160">I fältet Slutdatum, ange datum och tid.</span><span class="sxs-lookup"><span data-stu-id="a24d4-160">In the Ending date field, enter a date and time.</span></span>
-54. <span data-ttu-id="a24d4-161">Klicka på Batch.</span><span class="sxs-lookup"><span data-stu-id="a24d4-161">Click Batch.</span></span>
-55. <span data-ttu-id="a24d4-162">Expandera avsnittet Kör i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="a24d4-162">Expand the Run in the background section.</span></span>
-56. <span data-ttu-id="a24d4-163">Välj Ja i fältet Batchbearbetning.</span><span class="sxs-lookup"><span data-stu-id="a24d4-163">Select Yes in the Batch processing field.</span></span>
-57. <span data-ttu-id="a24d4-164">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="a24d4-164">Click OK.</span></span>
-58. <span data-ttu-id="a24d4-165">Gå till revision workbench > revision.</span><span class="sxs-lookup"><span data-stu-id="a24d4-165">Go to Audit workbench > Audit cases.</span></span>
-59. <span data-ttu-id="a24d4-166">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="a24d4-166">In the list, find and select the desired record.</span></span>
-60. <span data-ttu-id="a24d4-167">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a24d4-167">In the list, click the link in the selected row.</span></span>
-61. <span data-ttu-id="a24d4-168">Expandera avsnittet Associationer.</span><span class="sxs-lookup"><span data-stu-id="a24d4-168">Expand the Associations section.</span></span>
-62. <span data-ttu-id="a24d4-169">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="a24d4-169">In the list, find and select the desired record.</span></span>
-63. <span data-ttu-id="a24d4-170">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="a24d4-170">In the list, click the link in the selected row.</span></span>
+1. <span data-ttu-id="1e526-108">I navigeringsfönstret går du till **Moduler > Revision > Inställningar > Policyregeltyp**.</span><span class="sxs-lookup"><span data-stu-id="1e526-108">In the navigation pane, go to **Modules > Audit workbench > Setup > Policy rule type**.</span></span>
+2. <span data-ttu-id="1e526-109">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="1e526-109">Select **New**.</span></span>
+3. <span data-ttu-id="1e526-110">Skriv ett värde i fältet **Regelnamn**.</span><span class="sxs-lookup"><span data-stu-id="1e526-110">In the **Rule name** field, type a value.</span></span>
+4. <span data-ttu-id="1e526-111">I fältet **Beskrivning** anger du ett värde.</span><span class="sxs-lookup"><span data-stu-id="1e526-111">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="1e526-112">I fältet **Frågenamn** väljer du **Utgiftsrapportrad**</span><span class="sxs-lookup"><span data-stu-id="1e526-112">In the **Query name** field, select **Expense report line**</span></span>
+6. <span data-ttu-id="1e526-113">I fältet **Frågetyp** väljer du **Sammansättning**</span><span class="sxs-lookup"><span data-stu-id="1e526-113">In the **query type** field, select **Aggregate**</span></span>
+7. <span data-ttu-id="1e526-114">I fältet **Juridiskt person** väljer du **Juridisk person**</span><span class="sxs-lookup"><span data-stu-id="1e526-114">In the **Legal entity** field, select **Legal entity**</span></span>
+8. <span data-ttu-id="1e526-115">I fältet **Dokumentdatumreferens** väljer du **Datum och tid för ändring**</span><span class="sxs-lookup"><span data-stu-id="1e526-115">In the **Document date reference** field, select **Modified date and time**</span></span>
+9. <span data-ttu-id="1e526-116">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="1e526-116">Select **Save**.</span></span>
+10. <span data-ttu-id="1e526-117">I navigeringsfönstret går du till **Moduler > Revision > Inställningar > Granskningspolicyer**.</span><span class="sxs-lookup"><span data-stu-id="1e526-117">In the navigation pane, go to **Modules > Audit workbench > Setup > Audit policies**.</span></span>
+11. <span data-ttu-id="1e526-118">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="1e526-118">Select **New**.</span></span>
+12. <span data-ttu-id="1e526-119">Skriv ett värde i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="1e526-119">In the **Name** field, type a value.</span></span>
+13. <span data-ttu-id="1e526-120">Expandera avsnittet **Policyorganisationer**.</span><span class="sxs-lookup"><span data-stu-id="1e526-120">Expand the **Policy organizations** section.</span></span>
+14. <span data-ttu-id="1e526-121">Välj **Contoso Entertainment System USA** i trädet och välj **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1e526-121">In the tree, select **Contoso Entertainment System USA**, then select **Add**.</span></span>
+15. <span data-ttu-id="1e526-122">Välj **Contoso Consulting USA** i trädet och välj **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1e526-122">In the tree, select **Contoso Consulting USA**, then select **Add**.</span></span>
+16. <span data-ttu-id="1e526-123">Välj **Contoso Retail USA** i trädet och välj **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1e526-123">In the tree, select **Contoso Retail USA**, then select **Add**.</span></span>
+17. <span data-ttu-id="1e526-124">Komprimera avsnittet **Policyorganisationer**.</span><span class="sxs-lookup"><span data-stu-id="1e526-124">Collapse the **Policy organizations** section.</span></span>
+18. <span data-ttu-id="1e526-125">Expandera avsnittet **Policyregler**.</span><span class="sxs-lookup"><span data-stu-id="1e526-125">Expand the **Policy rules** section.</span></span>
+19. <span data-ttu-id="1e526-126">I listan söker du efter och väljer den policyregel som tidigare har skapats.</span><span class="sxs-lookup"><span data-stu-id="1e526-126">In the list, find and select the Policy Rule that was created previously.</span></span>
+20. <span data-ttu-id="1e526-127">Välj **Skapa policyregel**.</span><span class="sxs-lookup"><span data-stu-id="1e526-127">Select **Create policy rule**.</span></span>
+21. <span data-ttu-id="1e526-128">I fältet **Gäller från** anger du datum och tid.</span><span class="sxs-lookup"><span data-stu-id="1e526-128">In the **Effective date** field, enter a date and time.</span></span>
+22. <span data-ttu-id="1e526-129">Välj **filter**.</span><span class="sxs-lookup"><span data-stu-id="1e526-129">Select **Filter**.</span></span>
+23. <span data-ttu-id="1e526-130">Välj raden för **Utgiftskategori** i listan och ställ in detaljerna till **Hotell**.</span><span class="sxs-lookup"><span data-stu-id="1e526-130">In the list, select the row for **Expense category**, and set the details to **Hotel**.</span></span>
+24. <span data-ttu-id="1e526-131">I fältet **Kriterier** anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="1e526-131">In the **Criteria** field, enter or select a value.</span></span>
+25. <span data-ttu-id="1e526-132">Välj fliken **Sammansättning**.</span><span class="sxs-lookup"><span data-stu-id="1e526-132">Select the **Aggregate** tab.</span></span>
+26. <span data-ttu-id="1e526-133">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1e526-133">Select **Add**.</span></span>
+27. <span data-ttu-id="1e526-134">Välj fältvärdet **Transaktionsbelopp** i listan.</span><span class="sxs-lookup"><span data-stu-id="1e526-134">In the list, select a field value of **Transaction amount**.</span></span>
+28. <span data-ttu-id="1e526-135">Ange eller välj ett värde i fältet **Fält**.</span><span class="sxs-lookup"><span data-stu-id="1e526-135">In the **Field** field, enter or select a value.</span></span>
+29. <span data-ttu-id="1e526-136">I fältet **AggregateFunction** väljer du **Sum**.</span><span class="sxs-lookup"><span data-stu-id="1e526-136">In the **AggregateFunction** field, select **Sum**.</span></span>
+30. <span data-ttu-id="1e526-137">Välj fliken **Gruppera efter**.</span><span class="sxs-lookup"><span data-stu-id="1e526-137">Select the **Group by** tab.</span></span>
+31. <span data-ttu-id="1e526-138">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1e526-138">Select **Add**.</span></span>
+32. <span data-ttu-id="1e526-139">Välj värdet **Medarbetare** i listan.</span><span class="sxs-lookup"><span data-stu-id="1e526-139">In the list, select a value of **Employee** .</span></span>
+33. <span data-ttu-id="1e526-140">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1e526-140">Select **Add**.</span></span>
+34. <span data-ttu-id="1e526-141">Välj värdet **Utgiftskategori** i listan.</span><span class="sxs-lookup"><span data-stu-id="1e526-141">In the list, select a value of **Expense category**.</span></span>
+35. <span data-ttu-id="1e526-142">Ange eller välj ett värde i fältet **Fält**.</span><span class="sxs-lookup"><span data-stu-id="1e526-142">In the **Field** field, enter or select a value.</span></span>
+36. <span data-ttu-id="1e526-143">Välj fliken **Har**.</span><span class="sxs-lookup"><span data-stu-id="1e526-143">Select the **Having** tab.</span></span>
+37. <span data-ttu-id="1e526-144">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1e526-144">Select **Add**.</span></span>
+38. <span data-ttu-id="1e526-145">Välj **Transaktionsbelopp**.</span><span class="sxs-lookup"><span data-stu-id="1e526-145">Select **Transaction amount**.</span></span>
+39. <span data-ttu-id="1e526-146">Ange eller välj ett värde i fältet **Fält**.</span><span class="sxs-lookup"><span data-stu-id="1e526-146">In the **Field** field, enter or select a value.</span></span>
+40. <span data-ttu-id="1e526-147">I fältet **AggregateFunction** väljer du **Sum**.</span><span class="sxs-lookup"><span data-stu-id="1e526-147">In the **AggregateFunction** field, select **Sum**.</span></span>
+41. <span data-ttu-id="1e526-148">I fältet **Kriterier** skriver du `>2000`.</span><span class="sxs-lookup"><span data-stu-id="1e526-148">In the **Criteria** field, type `>2000`.</span></span>
+42. <span data-ttu-id="1e526-149">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="1e526-149">Select **OK**.</span></span>
+43. <span data-ttu-id="1e526-150">Välj **Test**.</span><span class="sxs-lookup"><span data-stu-id="1e526-150">Select **Test**.</span></span>
+44. <span data-ttu-id="1e526-151">I fältet **Startdatum för dokumenturval**, ange datum och tid.</span><span class="sxs-lookup"><span data-stu-id="1e526-151">In the **Document selection starting date** field, enter a date and time.</span></span>
+45. <span data-ttu-id="1e526-152">I fältet **Slutdatum för dokumenturval**, ange datum och tid.</span><span class="sxs-lookup"><span data-stu-id="1e526-152">In the **Document selection ending date** field, enter a date and time.</span></span>
+46. <span data-ttu-id="1e526-153">Välj **Kör test**.</span><span class="sxs-lookup"><span data-stu-id="1e526-153">Select **Run test**.</span></span>
+47. <span data-ttu-id="1e526-154">I åtgärdsfönstret, välj **Granskningspolicy**.</span><span class="sxs-lookup"><span data-stu-id="1e526-154">On the Action Pane, select **Audit policy**.</span></span>
+48. <span data-ttu-id="1e526-155">Välj **Ytterligare alternativ**.</span><span class="sxs-lookup"><span data-stu-id="1e526-155">Select **Additional options**.</span></span>
+49. <span data-ttu-id="1e526-156">I fältet **Startdatum**, ange datum och tid.</span><span class="sxs-lookup"><span data-stu-id="1e526-156">In the **Starting date** field, enter a date and time.</span></span>
+50. <span data-ttu-id="1e526-157">I fältet **Slutdatum**, ange datum och tid.</span><span class="sxs-lookup"><span data-stu-id="1e526-157">In the **Ending date** field, enter a date and time.</span></span>
+51. <span data-ttu-id="1e526-158">Välj **Batch**.</span><span class="sxs-lookup"><span data-stu-id="1e526-158">Select **Batch**.</span></span>
+52. <span data-ttu-id="1e526-159">Expandera avsnittet **Kör i bakgrunden**.</span><span class="sxs-lookup"><span data-stu-id="1e526-159">Expand the **Run in the background** section.</span></span>
+53. <span data-ttu-id="1e526-160">Välj **Ja** i fältet **Batchbearbetning**.</span><span class="sxs-lookup"><span data-stu-id="1e526-160">Select **Yes** in the **Batch processing** field.</span></span>
+54. <span data-ttu-id="1e526-161">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="1e526-161">Select **OK**.</span></span>
+55. <span data-ttu-id="1e526-162">I navigeringsfönstret går du till **Moduler > Revision > Granskningsärenden**.</span><span class="sxs-lookup"><span data-stu-id="1e526-162">In the navigation pane, go to **Modules > Audit workbench > Audit cases**.</span></span>
+56. <span data-ttu-id="1e526-163">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="1e526-163">In the list, find and select the desired record.</span></span>
+57. <span data-ttu-id="1e526-164">Expandera avsnittet **Associationer**.</span><span class="sxs-lookup"><span data-stu-id="1e526-164">Expand the **Associations** section.</span></span>
+58. <span data-ttu-id="1e526-165">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="1e526-165">In the list, find and select the desired record.</span></span>
 
