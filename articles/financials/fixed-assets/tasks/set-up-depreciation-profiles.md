@@ -3,7 +3,7 @@ title: Ställ in och skapa avskrivningsprofiler
 description: Avskrivningsprofiler bestämmer typ och frekvens av avskrivning för en tillgång.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8879e61b872e36ddff9bf9c85efe54085f7a62c1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: cdfcf62615faa76a6bd1f00bd947ef04e23613df
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839843"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916217"
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Ställ in och skapa avskrivningsprofiler
 
@@ -31,13 +31,12 @@ Avskrivningsprofiler bestämmer typ och frekvens av avskrivning för en tillgån
 
 
 ## <a name="create-a-depreciation-profile"></a>Skapa en avskrivningsprofil
-1. Gå till anläggningstillgångar > Installation > Avskrivningar profiler.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Avskrivningsprofil.
-4. Skriv ett värde i fältet Namn.
-5. Markera ett alternativ i fältet Metod.
-    * Om du väljer degressiv avskrivning, måste du ange procentvärdet i procentsatsfältet.  
-6. Markera ett alternativ i fältet Avskrivningsår.
-7. Markera ett alternativ i fältet Periodfrekvens.
+1. I navigeringsfönstret går du till **Moduler > Anläggningstillgångar > Inställningar > Avskrivningsprofiler**.
+2. Klicka på **Ny**.
+3. Skriv ett värde i fältet **Avskrivningsprofil**.
+4. Skriv ett värde i fältet **Namn**.
+5. Markera ett alternativ i fältet **Metod**. Om du väljer degressiv avskrivning, måste du ange procentvärdet i fältet **Procent**.  
+6. Välj ett alternativ i fältet **Avskrivningsår**.
+7. Välj ett alternativ i fältet **Periodfrekvens**.
 8. Stäng formuläret.
 

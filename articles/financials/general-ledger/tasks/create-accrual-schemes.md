@@ -1,9 +1,9 @@
 ---
 title: Skapa periodiseringsscheman
-description: Den här uppgiften leder dig genom stegen för att skapa ett periodiseringsschema.
+description: Det här avsnittet innehåller information om hur du skapar periodiseringsschema.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,30 +16,28 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0ae55000a5cf1593d057d940dc3dbbf9e5cb3f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e8f8cf8546187ae1c65d4966887e1c5842dff431
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834905"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867569"
 ---
 # <a name="create-accrual-schemes"></a>Skapa periodiseringsscheman
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Den här uppgiften leder dig genom stegen för att skapa ett periodiseringsschema. I den här uppgiften används demonstrationsföretaget USMF.
+Det här avsnittet innehåller information om hur du skapar periodiseringsschema. I den här uppgiften används demonstrationsföretaget USMF.
 
-1. Gå till Redovisning > Journalkonfigurering > Periodiseringsscheman.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Identifiering av periodisering.
-4. Skriv ett värde i fältet Beskrivning av periodiseringsschema.
-5. Ange önskade värden i fältet Debet.
-    * Det definierade huvudkontot ersätter debethuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.  
-6. Ange önskade värden i fältet Kredit.
-    * Det definierade huvudkontot ersätter kredithuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.  
-7. I fältet Verifikation väljer du hur du vill att verifikationen ska fastställas när transaktionerna bokförs.
-8. I fältet Beskrivning skriver du ett värde som beskriver vilka transaktioner som ska bokföras.
-9. Välj hur ofta transaktionerna ska ske i fältet Periodfrekvens.
-10. Ange ett värde i fältet Antal förekomster per period.
-11. I fältet Bokför transaktioner väljer du när transaktionerna ska bokföras, till exempel varje månad.
+1. Gå till **Navigeringsfönstret > Moduler > Redovisning > Journalkonfiguration > Periodiseringsscheman**.
+2. Välj **Ny**.
+3. Skriv ett värde i fältet **Identifiering av periodisering**.
+4. Skriv ett värde i fältet **Beskrivning av periodiseringsschema**.
+5. Ange önskade värden i fältet **Debet**. Det definierade huvudkontot ersätter debethuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.  
+6. Ange önskade värden i fältet **Kredit**. Det definierade huvudkontot ersätter kredithuvudkontot på journalverifikationsraden och det används också för återföringen av uppskjutandet baserat på periodiseringstransaktionerna.  
+7. I fältet **Verifikation** väljer du hur du vill att verifikationen ska fastställas när transaktionerna bokförs.
+8. I fältet **Beskrivning** skriver du ett värde som beskriver vilka transaktioner som ska bokföras.
+9. Välj hur ofta transaktionerna ska ske i fältet **Periodfrekvens**.
+10. Ange ett värde i fältet **Antal förekomster per period**.
+11. I fältet **Bokför transaktioner** väljer du när transaktionerna ska bokföras, till exempel **Varje månad**.
 

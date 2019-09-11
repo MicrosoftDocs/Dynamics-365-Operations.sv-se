@@ -3,7 +3,7 @@ title: Skapa avancerade regler för journaler
 description: Den här proceduren går igenom hur du kan skapa avancerade regler för journaler.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ec0db1bc5018649acaca05c71a510880b415777
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3eb34ac419aeab3663a8931d022abf7bcbfddd37
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846689"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916166"
 ---
 # <a name="create-advanced-rules-for-journals"></a>Skapa avancerade regler för journaler
 
@@ -31,30 +31,30 @@ Den här proceduren går igenom hur du kan skapa avancerade regler för journale
 
 
 ## <a name="set-up-journal-control"></a>Ställ in journalkontroll
-1. Gå till Redovisning > Journalkonfigurering > Journalnamn.
+1. I **Navigeringsfönstret**, gå till **Moduler > Redovisning > Journalkonfiguration > Journalnamn**.
 2. Hitta och markera önskad post i listan.
-3. Klicka på Journalkontroll.
-4. Klicka på Lägg till.
-5. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Företagskonton.
+3. Klicka på **Journalkontroll** i **Åtgärdsfönstret**.
+4. På snabbfliken **Vilka kontotyper kan bokföras**, klicka på **Lägg till**.
+5. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Företagskonton**.
 6. Hitta och markera önskad post i listan.
 7. Klicka på länken på den valda raden i listan.
-8. Klicka på Lägg till.
-9. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kontostruktur.
+8. På snabbfliken **Vilka segmentvärden är giltiga för den här journalen** klicka på **Lägg till**.
+9. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Kontostruktur**.
 10. Hitta och markera önskad post i listan.
 11. Klicka på länken på den valda raden i listan.
-12. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Segment.
+12. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Segment**.
 13. Klicka på länken på den valda raden i listan.
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Från-värde.
+14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Från-värde**.
 15. Hitta och markera önskad post i listan.
 16. Klicka på länken på den valda raden i listan.
-17. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Till-värde.
+17. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Till-värde**.
 18. Hitta och markera önskad post i listan.
 19. Klicka på länken på den valda raden i listan.
 
 ## <a name="set-up-posting-restrictions"></a>Konfigurera bokföringsrestriktioner
 1. Stäng sidan.
-2. Klicka på Bokföringsrestriktioner.
-3. Välj Efter användargrupp i Hur vill du ställa in bokföringsrestriktioner.
+2. Klicka på **Bokföringsrestriktioner**.
+3. Välj Efter användargrupp i fältet **Hur vill du ställa in bokföringsrestriktioner**.
 4. Markera gruppen du vill tillåta bokföring för när det gäller journalnamnet i trädet.
-5. Klicka på OK.
+5. Klicka på **OK**.
 

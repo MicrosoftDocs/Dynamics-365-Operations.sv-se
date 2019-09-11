@@ -3,7 +3,7 @@ title: Skapa kontostrukturer
 description: Den här uppgiften leder dig genom stegen för att skapa en kontostruktur.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2183f88356fc8094781af147bf079c4e53ffb2b4
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8b100d5da6ec26dc386c0c6cb0793245531eb0d8
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846713"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916240"
 ---
 # <a name="create-account-structures"></a>Skapa kontostrukturer
 
@@ -29,56 +29,35 @@ ms.locfileid: "1846713"
 
 Den här uppgiften leder dig genom stegen för att skapa en kontostruktur. Demoföretaget USMF används i stegen.
 
-1. Gå till Redovisning > Kontoplan > Strukturer > Konfigurera kontostrukturer.
-2. Klicka på Nytt om du vill öppna dialogrutan.
-3. Ange ett namn som beskriver syftet med kontostrukturen i fältet Kontostruktur.
-4. Ange en beskrivning för att ange syftet med kontostrukturen i fältet Beskrivning.
-5. Klicka på Skapa.
-6. Klicka på Lägg till segment.
+1. Gå till **Navigeringsfönster > Moduler > Redovisning > Kontoplaner > Strukturer > Konfigurera kontostrukturer**.
+2. Klicka på **Ny** i **åtgärdsfönstret** för att öppna dialogrutan.
+3. Ange ett namn som beskriver syftet med kontostrukturen i fältet **Kontostruktur**.
+4. Ange en beskrivning för att ange syftet med kontostrukturen i fältet **Beskrivning**.
+5. Klicka på **Skapa**.
+6. Klicka på **Lägg till segment** i **Segment och tillåtna värden**.
 7. I listan Dimensioner väljer du den dimension du vill lägga till i kontostrukturen.
-8. Klicka på Lägg till segment.
-9. Klicka på Lägg till segment.
-10. I listan Dimensioner väljer du den dimension du vill lägga till i kontostrukturen.
-11. Klicka på Lägg till segment.
-12. Klicka på Lägg till segment.
-13. I listan Dimensioner väljer du den dimension du vill lägga till i kontostrukturen.
-14. Klicka på Lägg till segment.
-15. I rutnätet väljer du segmentet för att redigera de tillåtna värdena.
-    * Klicka till exempel i Huvudkonto.  
-16. Välj ett alternativ i fältet Operator, t.ex. är mellan och inkluderar.
-17. Ange ett värde i fältet Värde.
-    * Exempelvis 600000.  
-18. Skriv ett värde i fältet via.
-    * Exempelvis 699999.  
-19. Klicka på Verkställ.
-20. I rutnätet väljer du segmentet för att redigera de tillåtna värdena.
-    * Till exempel Avdelning.  
-21. Välj ett alternativ i fältet Operator, t.ex. är mellan och inkluderar.
-22. Ange ett värde i fältet Värde.
-    * Exempelvis 022.  
-23. Skriv ett värde i fältet via.
-    * Exempelvis 031.  
-24. Klicka på Lägg till nya kriterier.
-25. Välj ett alternativ i fältet Operator, t.ex. är mellan och inkluderar.
-26. Ange ett värde i fältet Värde.
-    * Exempelvis 033.  
-27. Skriv ett värde i fältet via.
-    * Exempelvis 034.  
-28. Klicka på Verkställ.
-29. I rutnätet väljer du segmentet för att redigera de tillåtna värdena.
-    * Till exempel Kostnadsställe  
-30. Skriv ett värde i fältet CostCenter.
-    * Till exempel 007..021.  
-31. Klicka på Lägg till.
-32. Ange ett värde i fältet MainAccount.
-    * Till exempel 600000..699999  
-33. I rutnätet väljer du segmentet för att redigera de tillåtna värdena.
-    * Till exempel Avdelning.  
-34. Ange ett värde i fältet Avdelning.
-    * Exempelvis 032.  
-35. Skriv ett värde i fältet CostCenter.
-    * Exempelvis 086.  
-36. Klicka på Validera.
-37. Klicka på Aktivera.
-38. Klicka på Aktivera.
+8. Klicka på **Lägg till segment** i slutet av listan.
+9. Upprepa steg 6 till 9 efter behov.
+10. I avsnittet **Information om tillåtna värden** väljer du segmentet för att redigera de tillåtna värdena.
+    Klicka till exempel i fältet **Huvudkonto**.  
+11. Välj ett alternativ i fältet **Operator**, till exempel ligger mellan eller inkluderar.
+12. Ange ett värde i fältet **Värde**. Exempelvis 600000.  
+13. Skriv ett värde i fältet **via**. Exempelvis 699999.  
+14. Klicka på **Använd** i avsnittet **Information om tillåtna värden**.
+15. Upprepa steg 10 till 15 efter behov.  
+16. Klicka på **Lägg till nya kriterier** i avsnittet **Information om tillåtna värden**.
+17. Välj ett alternativ i fältet Operator, t.ex. är mellan och inkluderar.
+18. Ange ett värde i fältet **Värde**. Exempelvis 033.  
+19. Skriv ett värde i fältet **via**. Exempelvis 034.  
+20. Klicka på **Använd**.
+21. I rutnätet väljer du segmentet för att redigera de tillåtna värdena. Till exempel Kostnadsställe  
+22. Skriv ett värde i fältet **CostCenter**. Till exempel 007..021.  
+23. Klicka på **Lägg till** i **Segment och tillåtna värden**.
+24. Ange ett värde i fältet **MainAccount**. Till exempel 600000..699999  
+25. I rutnätet väljer du segmentet för att redigera de tillåtna värdena. Till exempel Avdelning.  
+26. Ange ett värde i fältet Avdelning. Exempelvis 032.  
+27. Skriv ett värde i fältet CostCenter. Exempelvis 086.  
+28. Klicka på **Validera** i **åtgärdsfönstret**.
+29. Klicka på **Aktivera** i **åtgärdsfönstret**.
+30. Klicka på **Aktivera**.
 

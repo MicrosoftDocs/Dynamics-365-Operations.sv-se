@@ -3,7 +3,7 @@ title: Skapa en driftenhet
 description: En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef03329cfe477256cfbe1dde1dc18df52137286f
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755579"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874913"
 ---
 # <a name="create-an-operating-unit"></a>Skapa en driftenhet
 
@@ -40,5 +40,5 @@ En driftenhet är en organisation som används för skilja kontrollen av ekonomi
     + Ange adressinformation, till exempel gatunamn och nummer, postnummer och ort. Klicka på **Lägg till** för att ange en ny adresspost eller klicka på Redigera om du vill ändra en befintlig adresspost.   
     + Expandera avsnittet **Kontaktinformation**, om det behövs.  
     + Ange information om kommunikationsmetoder, till exempel e-postadresser, webbadresser (URL:er) och telefonnummer. Klicka på Ny om du vill ange en ny kommunikationspost. Klicka på **Fler alternativ > Avancerat** om du vill ändra en befintlig post.   
-6. Klicka på **Spara**.
-
+6. Alternativt kan du ändra **Driftenhetsnummer** om det behövs. Observera att detta nummer är ett unikt ID för motsvarande **Part**-post och kan inte vara samma som någon annan driftenhet.
+7. Välj **Spara**.

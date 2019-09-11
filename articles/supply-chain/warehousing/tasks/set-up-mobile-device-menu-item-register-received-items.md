@@ -1,9 +1,9 @@
 ---
 title: Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
-description: Denna uppgift är avsedd för inställningar av ett menykommando för mobila enheter.
+description: Detta avsnitt är avsett för inställningar av ett menyalternativ för mobila enheter.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,51 +17,46 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd6c40324555ae16de3192c91cf64d03d44b5ad4
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 599a533c90b0346637221fecc78ddd688410fb3c
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847161"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914755"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denna uppgift är avsedd för inställningar av ett menykommando för mobila enheter. Menykommandot används för registrering av inleverans av artiklar som har beställts via inköpsorder. 
+Detta avsnitt är avsett för inställningar av ett menyalternativ för mobila enheter. Menykommandot används för registrering av inleverans av artiklar som har beställts via inköpsorder. 
 
 Du kan använda den här guiden i demonstrationsföretaget USMF. Den här proceduren är avsedd för lagerchefen.
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Skapa ett menykommando för mobila enheter
-1. Gå till Lagerstyrning > Inställningar > Mobil enhet > Menyalternativ på mobil enhet.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Menyalternativ.
-    * Detta är den unika identifieraren för det här menykommandot för mobil enhet. Du kan exempelvis skriva Min IO-registrering.  
-4. Ange ett värde i fältet Titel.
-    * Detta är en rubrik som visas för användaren på den mobila enheten. Du kan exempelvis skriva IO-registrering.  
-5. Välj Arbete i fältet Läge.
-    * Registrering av lagerbehållning som tagits emot för en inköpsorderrad skapar arbetsuppgift för flyttning av artiklar från inleveransområdet till lagret. Arbetsuppgiften skapas inte förrän artiklarna registreras.  Därför ska värdet värdet på Använd befintligt arbete vara Nej.  
-6. Utöka eller komprimera avsnittet Allmänt.
-7. Markera Inleverans av inköpsorderartikel i fältet Process för att skapa arbete.
-    * En inköpsorderrad måste identifieras som unik om lagerbehållning ska kunna registreras på lagerstället. I detta scenario registrerar den mobila enheten inköpsordernumret och artikelnumret, och denna gör att systemet kan identifiera inköpsordern. En inlagringsuppgift skapas och kan väljas av en annan medarbetare.    Genereringsmetoden för arbetsuppgiften du väljer avgör vilka fält som är tillgängliga på snabbfliken Allmänt.  
-    * Om du väljer alternativet Använd standarddata aktiveras knappen Standarddata. Här kan du välja fält som ska innehålla uppgifter som en medarbetare vanligtvis behöver i det dagliga arbetet, så att värdena visas på den mobila enheten.  
-    * Parametern för id-nummer fungerar tillsammans med enhetsekvensgruppen som är kopplad till artikeln som inlevereras. Du kan ange om inleveranser av mindre än eller fler än en lastpall ska grupperas under ett id-nummer eller delas upp på flera nummer.  
-    * Om du markerar alternativet för generering av id-nummer, skapas ett unikt id-nummer på grundval av nummerserievalet.   
-    * Du kan välja mallen som ska användas när arbetsuppgiften skapas. Om du till exempel registrerar en artikel för en inköpsorder genereras den inlagrade arbetsuppgiften baserat på arbetsmallen. Om du inte väljer någon arbetsmall här, tilldelas en mall baserat på frågevillkoren som associeras med mallarna.  
-    * Om dispositionskoder visas på den mobila enheten, kan medarbetare utvärdera statusen eller kvaliteten på artiklarna och välja lämplig kod. Reglerna för dispositionskoden bestämmer om artiklarna ska vara tillgängliga för andra lagerprocesser. Reglerna avgör också vilket platsdirektiv som används för arbetsuppgiften som skapas.   
-    * Om du väljer alternativet Batchdispositionskoder, kan medarbetare utvärdena utvärdera statusen eller kvaliteten på en batch och välja lämplig kod.  Reglerna på batchdispositionskoden bestämmer om batchen ska vara tillgängliga för andra lagerprocesser.  
-    * Om du väljer Skriv ut etiketter, skrivs ett id-nummer ut automatiskt när artiklarna tas emot.  
-8. Klicka på Spara.
-9. Stäng sidan.
+1. I navigeringsfönstret, gå till **Moduler > Lagerstyrning > Inställningar > Mobil enhet > Menyalternativ på mobil enhet**.
+2. Välj **Ny**.
+3. Ange ett värde i fältet **Menyalternativnamn**. Detta är den unika identifieraren för det här menykommandot för mobil enhet. Du kan exempelvis skriva `My PO registration`.  
+4. Ange ett värde i fältet **Rubrik**. Detta är en rubrik som visas för användaren på den mobila enheten. Du kan exempelvis skriva `PO registration`.  
+5. Välj **Arbete** i fältet **Läge**. Registrering av lagerbehållning som tagits emot för en inköpsorderrad skapar arbetsuppgift för flyttning av artiklar från inleveransområdet till lagret. Arbetsuppgiften skapas inte förrän artiklarna registreras. Därför ska du lämna alternativet **Använd befintligt arbete** inställt på **Nej**.
+6. I fältet **Process för att skapa arbete** i avsnittet **Allmänt** väljer du **Inleverans av inköpsorderartikel**.
+    - En inköpsorderrad måste identifieras som unik om lagerbehållning ska kunna registreras på lagerstället. I detta scenario registrerar den mobila enheten inköpsordernumret och artikelnumret, och denna gör att systemet kan identifiera inköpsordern. En inlagringsuppgift skapas och kan väljas av en annan medarbetare. Genereringsmetoden för arbetsuppgiften du väljer avgör vilka fält som är tillgängliga på snabbfliken **Allmänt**.  
+    - Om du väljer alternativet **Använd standarddata** aktiveras knappen **Standarddata**. Här kan du välja fält som ska innehålla uppgifter som en medarbetare vanligtvis behöver i det dagliga arbetet, så att värdena visas på den mobila enheten.  
+    - Parametern för **gruppering av id-nummer** fungerar tillsammans med enhetsekvensgruppen som är tilldelad till artikeln som inlevereras. Du kan ange om inleveranser av mindre än eller fler än en lastpall ska grupperas under ett id-nummer eller delas upp på flera nummer.  
+    - Om du väljer alternativet **Generera id-nummer** skapas ett unikt id-nummer på grundval av nummerserievalet.  
+    - Du kan välja mallen som ska användas när arbetsuppgiften skapas. Om du till exempel registrerar en artikel för en inköpsorder genereras den inlagrade arbetsuppgiften baserat på arbetsmallen. Om du inte väljer någon arbetsmall här, tilldelas en mall baserat på frågevillkoren som associeras med mallarna.  
+    - Om dispositionskoder visas på den mobila enheten, kan medarbetare utvärdera statusen eller kvaliteten på artiklarna och välja lämplig kod. Reglerna för dispositionskoden bestämmer om artiklarna ska vara tillgängliga för andra lagerprocesser. Reglerna avgör också vilket platsdirektiv som används för arbetsuppgiften som skapas.   
+    - Om du väljer alternativet  **Batchdispositionskoder**, kan medarbetare utvärdera statusen eller kvaliteten på en batch och välja lämplig kod. Reglerna på batchdispositionskoden bestämmer om batchen ska vara tillgängliga för andra lagerprocesser.  
+    - Om du väljer **Skriv ut etiketter**, skrivs ett id-nummer ut automatiskt när artiklarna tas emot.  
+7. Välj **Spara**.
+8. Stäng sidan.
 
 ## <a name="add-the-menu-item-to-a-mobile-device-menu"></a>Lägg till menykommandot på en meny för mobila enheter
-1. Gå till Lagerstyrning > Inställningar > Mobil enhet > Meny på mobil enhet.
-2. Använd snabbfiltret för att filtrera på fältet Namn med värdet inkommande.
-3. Klicka på Redigera.
-4. I trädet markerar du ett alternativ som lyder ungefär så här: Välj menyalternativet du skapade tidigare i trädet för menyn Tillgänglig och artikelträdet.
-    * Välj menykommandot som du skapade tidigare.  
-5. Klicka på pilen som pekar åt höger.
-6. Klicka på Spara.
+1. I navigeringsfönstret, gå till **Moduler > Lagerstyrning > Inställningar > Mobil enhet > Meny på mobil enhet**.
+2. Använd **snabbfiltret** för att filtrera på fältet **Namn** med värdet `inbound`.
+3. Välj **Redigera**.
+4. I trädet Tillgängliga menyer och artiklar ska du välja menyartikeln som du skapade tidigare.
+5. Välj pilen som pekar åt höger.
+6. Välj **Spara**.
 7. Stäng sidan.
 

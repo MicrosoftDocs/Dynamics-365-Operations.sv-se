@@ -1,9 +1,9 @@
 ---
 title: Skapa ett nytt inköpsavtal
-description: I den här proceduren får du hjälp med att skapa ett inköpsavtal.
+description: I den här avsnittet får du hjälp med att skapa ett inköpsavtal.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,72 +16,59 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df74eaad51fc4ef28caf96e4bcdc7b03f7e6ec3b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec792ca27bf0245ff25e59cfe28122f17caec7fc
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836380"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866860"
 ---
 # <a name="create-a-purchase-agreement"></a>Skapa ett nytt inköpsavtal
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren får du hjälp med att skapa ett inköpsavtal. Detta görs normalt av en inköpschef. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Du måste ha ställt in klassificeringar av inköpsavtal innan du börjar. När du har skapat ett avtal kan du använda det när du skapar en IO. Villkoren för inköpsavtalet kopieras då till huvudet och till alla rader i den ordning som påverkas av avtalet.
+I den här avsnittet får du hjälp med att skapa ett inköpsavtal. Detta görs normalt av en inköpschef. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Du måste ha ställt in klassificeringar av inköpsavtal innan du börjar. När du har skapat ett avtal kan du använda det när du skapar en IO. Villkoren för inköpsavtalet kopieras då till huvudet och till alla rader i den ordning som påverkas av avtalet.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Skapa ett nytt inköpsavtal
-1. Gå till Anskaffning och källa > Inköpsavtal > Inköpsavtal.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.
-4. Hitta och markera önskad post i listan.
-5. Klicka på länken på den valda raden i listan.
-6. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Klassificering av inköpsavtal.
-7. Hitta och markera önskad post i listan.
-8. Klicka på länken på den valda raden i listan.
-9. Expandera avsnittet Allmänt.
-10. Ange ett datum i fältet Utgångsdatum.
-    * Det här utgångsdatumet ska vara standard för alla utfästelserader och bestämmer hur länge varje specifik utfästelse är giltig.  
-11. Ange ett namn på inköpsavtalet i fältet Dokumenttitel.
-    * Lämna fältet Standardutfästelse angett till Utfästelse för produktkvantitet (eller ändra det om det inte är inställt på denna).  
-    * Standardutfästelsevärdet bestämmer alternativen på avtalsraderna. Om du behöver en ny utfästelsetyp när du skapar avtalsraderna måste du ändra standardutfästelsen i rubriken.  Det finns 4 typer av utfästelser: Produktkvantitetsutfästelse - för en viss kvantitet av en produkt; Produktvärdeutfästelse - för ett visst valutabelopp av en produkt; Värdeutfästelse för produktkategori - för ett visst valutabelopp i en anskaffningskategori där beloppet kan användas för en katalogartikel eller en artikel som inte finns i någon katalog; Värdeutfästelse - för ett visst valutabelopp som kan uppfyllas av vilken produkt som helst eller med valfri anskaffningskategori.  
-12. Klicka på OK.
+1. Gå till **Navigeringsfönster > Moduler > Anskaffning och källa > Inköpsavtal > Inköpsavtal**.
+2. Klicka på **Ny**.
+3. I fältet **Leverantörskonto** väljer du den nedrullningsbara menyn och välj raden för önskad post.
+4. I fältet **Klassificering av inköpsavtal** väljer du den nedrullningsbara menyn och välj raden för önskad post.
+5. Expandera **Allmänt** snabbflik.
+6. Ange ett datum i fältet **Utgångsdatum**.
+
+    - Det här utgångsdatumet ska vara standard för alla utfästelserader och bestämmer hur länge varje specifik utfästelse är giltig.  
+
+7. Ange ett namn på inköpsavtalet i fältet **Dokumenttitel**.
+
+    - Lämna fältet **Standardutfästelse** angett till **Utfästelse för produktkvantitet** (eller ändra det om det inte är inställt på denna).  
+    - Standardutfästelsevärdet bestämmer alternativen på avtalsraderna. Om du behöver en ny utfästelsetyp när du skapar avtalsraderna måste du ändra standardutfästelsen i rubriken. Det finns fyra typer av utfästelser: **Produktkvantitetsutfästelse** - för en viss kvantitet av en produkt; **Produktvärdeutfästelse** - för ett visst valutabelopp av en produkt; **Värdeutfästelse för produktkategori** - för ett visst valutabelopp i en anskaffningskategori där beloppet kan användas för en katalogartikel eller en artikel som inte finns i någon katalog; **Värdeutfästelse** - för ett visst valutabelopp som kan uppfyllas av vilken produkt som helst eller med valfri anskaffningskategori.  
+
+8. Välj **OK**.
 
 ## <a name="add-a-commitment"></a>Lägg till en utfästelse
-1. Klicka på Lägg till rad.
-2. Markera vald rad i listan.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.
-4. Välj den produkt som du vill lägga till en utfästelse för.
-5. Klicka på länken på den valda raden i listan.
-6. Ange ett tal i fältet Kvantitet.
-    * Detta är den totala kvantitet som du har avtalat att köpa från leverantören.  
-7. Ange ett tal i fältet Enhetspris.
-8. Expandera avsnittet Radinformation.
-9. Ställ in alternativet Max framtvingas till Ja.
-    * Alternativet Max framtvingas begränsar användningen av utfästelsen. Du kan bara köpa upp till den kvantitet som har angetts i fältet Kvantitet för raden.  
-10. Komprimera avsnittet Raddetalj.
+1. Välj **Markera rad**.
+2. I fältet **Artikelnummer** välj önskad post i den nedrullningsbara menyn.
+3. Ange ett nummer i fältet **Kvantitet**. Detta är den totala kvantitet som du har avtalat att köpa från leverantören.  
+4. Ange ett tal i fältet **Enhetspris**.
+5. Visa avsnittet **Raddetaljer**.
+6. Ställ in alternativet **Max framtvingas** till **Ja**. Alternativet **Max framtvingas** begränsar användningen av utfästelsen. Du kan bara köpa upp till den kvantitet som har angetts i fältet **Kvantitet** för raden.  
 
 ## <a name="add-header-conditions"></a>Lägg till huvudvillkor
-1. Klicka på Alternativ i åtgärdsfönstret.
-2. Klicka på Ändra vy.
-3. Klicka på Huvudvy.
-4. Expandera villkorsavsnittet.
-5. I fältet Betalningsmetod, öppna sökningen genom att klicka på den nedrullningsbara knappen.
-    * Betalningsvillkoren från leverantörskontot visas här som standard.       
-6. Hitta och markera önskad post i listan.
-7. Klicka på länken på den valda raden i listan.
-8. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leveranssätt.
-9. Klicka på länken på den valda raden i listan.
-10. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leveransvillkor.
-11. Klicka på länken på den valda raden i listan.
+1. Välj **Alternativ** i åtgärdsfönstret.
+2. Välj **Byt visning**.
+3. Välj **Huvudvy**.
+4. Expandera avsnittet **Villkor**.
+5. I fältet **Betalningsmetod** väljer du önskad post i den nedrullningsbara menyn. Betalningsvillkoren från leverantörskontot visas här som standard.  
+6. I fältet **Leveranssätt** väljer du önskad post i den nedrullningsbara menyn.
+7. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Leveransvillkor**.
 
 ## <a name="confirm-and-activate-the-agreement"></a>Bekräfta och aktivera avtalet
-1. Klicka på Inköpsavtal i åtgärdsfönstret.
-2. Klicka på Bekräftelse.
-    * Ange alternativet Markera avtal som giltigt till Ja.  
-3. Klicka på OK.
-4. Klicka på Inköpsavtal i åtgärdsfönstret.
-5. Klicka på Bekräftelser av inköpsavtal.
-    * Med alternativet Förhandsgranska/Skriv ut kan du generera ett dokument för inköpsavtalet som du sedan kan skriva ut eller skicka till leverantören. Om du uppdaterar avtalet senare och bekräftar det på nytt visas båda versionerna här.  
+1. Klicka på **Inköpsavtal** i åtgärdsfönstret.
+2. VäljSelect **Bekräftelse**. Ange alternativet **Markera avtal som giltigt** till **Ja**.  
+3. Välj **OK**.
+4. Klicka på **Inköpsavtal** i åtgärdsfönstret.
+5. Välj **Bekräftelser av inköpsavtal**. Med alternativet **Förhandsgranska/Skriv ut** kan du generera ett dokument för inköpsavtalet som du sedan kan skriva ut eller skicka till leverantören. Om du uppdaterar avtalet senare och bekräftar det på nytt visas båda versionerna här.  
 6. Stäng sidan.
 

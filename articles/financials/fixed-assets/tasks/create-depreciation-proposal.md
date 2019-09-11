@@ -1,9 +1,9 @@
 ---
-title: Skapa avskrivningsförslag
-description: Den här proceduren beskriver hur avskrivningsbatchförslag fungerar och förklarar hur man föreslår avskrivning för anläggningstillgångar.
+title: Skapa ett avskrivningsförslag
+description: Det här avsnittet beskriver hur avskrivningsbatchförslag fungerar och förklarar hur man föreslår avskrivning för anläggningstillgångar.
 author: abruer
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,34 +16,35 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07146adfe1ead2b6e06e3c323963f8c012381b76
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 90c24e9d89c055ea95ca5f25cd85ef4042476a90
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1840011"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867617"
 ---
-# <a name="create-depreciation-proposal"></a>Skapa avskrivningsförslag
+# <a name="create-a-depreciation-proposal"></a>Skapa ett avskrivningsförslag
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren beskriver hur avskrivningsbatchförslag fungerar och förklarar hur man föreslår avskrivning för anläggningstillgångar. I denna uppgift används USMF-demonstrationföretaget och revisorrollen.
+Det här avsnittet beskriver hur avskrivningsbatchförslag fungerar och förklarar hur man föreslår avskrivning för anläggningstillgångar. I denna uppgift används USMF-demonstrationföretaget och revisorrollen.
 
 
-## <a name="create-depreciation-proposal"></a>Skapa avskrivningsförslag
-1. Gå till Anläggningstillgångar > Journalposter > Skapa avskrivningsförslag.
-2. I fältet Journalnamn, öppna sökningen genom att klicka på den nedrullningsbara knappen.
-3. Klicka på länken på den valda raden i listan.
-4. Ange ett datum i fältet Till datum.
-    * Markera alternativet Summera avskrivning för att summera månadsvisa avskrivningar till en journalrad.  
-    * Till exempel om värdet för Till-datum är 31 mars 2015 skapas följande beskrivning: ”avskrivning sedan 31 januari 31 2015”. Datumfältet på de föreslagna journalraderna ställs sedan in till 31:a mars 2015.  
-    * Avskrivningsförslaget kan filtreras per tillgång, tillgångsgrupp eller andra kriterier med hjälp av filteralternativet.  
-    * När du använder formuläret Skapa förvärvs- eller avskrivningsförslag för anläggningstillgångar, kan du ange avskrivning i batchar. Detta rekommenderas för större förslag som kräver mer systemresurser. Om du väljer batchalternativet, kan du fortfarande använda slutföra andra uppgifter under den tidsperioden. När du föreslår avskrivning på detta sätt, beräknas avskrivningen för värdemodeller för anläggningstillgångar.  
-5. Kicka på Skapa journal.
+## <a name="create-a-depreciation-proposal"></a>Skapa ett avskrivningsförslag
+1. I navigeringsfönstret går du till **Moduler > Anläggningstillgångar > Journalposter > Skapa avskrivningsförslag**.
+2. I fältet **Journalnamn** väljer du ett alternativ i den nedrullningsbara menyn.
+3. I fältet **Till-datum**, anger du ett datum.
+
+    - Välj alternativet **Summera avskrivning** för att summera månadsvisa avskrivningar till en journalrad.  
+    - Till exempel om värdet för Till-datum är 31 mars 2015 skapas följande beskrivning: ”avskrivning sedan 31 januari 31 2015”. Fältet **Datum** på de föreslagna journalraderna ställs sedan in till 31 mars 2015.  
+    - Avskrivningsförslaget kan filtreras per tillgång, tillgångsgrupp eller andra kriterier med hjälp av alternativet **Filter**.  
+    - När du använder formuläret **Skapa förvärvs- eller avskrivningsförslag för anläggningstillgångar**, kan du ange avskrivning i batchar. Detta rekommenderas för större förslag som kräver mer systemresurser. Om du väljer batchalternativet, kan du fortfarande använda slutföra andra uppgifter under den tidsperioden. När du föreslår avskrivning på detta sätt, beräknas avskrivningen för värdemodeller för anläggningstillgångar.  
+
+4. Välj **Skapa journal**.
 
 ## <a name="review-depreciation-entries"></a>Granska avskrivningposter
-1. Gå till Anläggningstillgångar > Journalposter > Journal för anläggningstillgångar.
+1. I navigeringsfönstret går du till **Moduler > Anläggningstillgångar > Journalposter > Journal för anläggningstillgångar**.
 2. Hitta och markera önskad post i listan.
-3. Klicka på Rader.
-4. Klicka på Bokför.
+3. Markera **rader**
+4. Vald **bokföring**
 

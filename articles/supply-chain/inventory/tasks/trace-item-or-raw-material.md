@@ -3,7 +3,7 @@ title: Spåra en artikel eller råmaterial
 description: I den här proceduren visas hur du använder artikelspårning för att identifiera var artiklar eller råmaterial har använts eller används.
 author: pjacobse
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44f87834a1ffb587299ae9092f13ee9f7c19f658
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fe0fd9a7c27efb71f15cca9d3a0341b550bf9698
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845243"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916691"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Spåra en artikel eller råmaterial
 
@@ -32,27 +32,31 @@ I den här proceduren visas hur du använder artikelspårning för att identifie
 
 
 ## <a name="trace-an-item-backwards-using-a-known-batch-number"></a>Spåra en artikel bakåt med ett känt batchnummer
-1. Gå till Lagerhantering > Förfrågningar och rapporter > Spårningsdimensioner > Artikelspårning.
-2. Välj P9100 i fältet Artikelnummer.
+1. I **navigeringsfönstret**, gå till **Moduler > Lagerhantering > Förfrågningar och rapporter > Spårningsdimensioner > Artikelspårning**.
+2. Välj P9100 i fältet **Artikelnummer**.
 3. Klicka på länken på den valda raden i listan.
-4. Välj Bakåt i fältet Framåt eller bakåt.
-5. Välj Batch number as-12-344-01 i fältet Batchnummer.
+4. Välj Bakåt i fältet **Framåt eller bakåt.**
+5. I fältet **Batchnummer**, välj "as-12-344-01".
 6. Klicka på länken på den valda raden i listan.
-7. Klicka på OK.
+7. Klicka på **OK**.
 
 ## <a name="identify-an-item-trace-it-forward-and-make-an-analysis"></a>Identifiera en artikel, spåra den framåt och gör en analys
-    * Den övre noden i trädet representerar lagerbehållningen för den valda artikeln och batchen. Du behöver expandera noderna i trädstrukturen för att hitta artikeln som framåtspårningen ska köras på.   
+
+Den övre noden i trädet representerar lagerbehållningen för den valda artikeln och batchen. Du behöver expandera noderna i trädstrukturen för att hitta artikeln som framåtspårningen ska köras på.   
 1. Expandera ”noder som beskrivs nedan och välj sedan den senaste noden” i trädet.
-    * Visa: "P9100 / 1 / 10 / as-12-344-01 ● 2 keg ● 7,00 gal \P9100 ● Plockad ● Försäljningsorder 000072 ● 12/22/2015  ● -1 keg ● -4,00 gal ● Site=1, Lagerställe=10, Batchnummer=as-12-344-01 \P9100 ● Produktion B-000050 ● 12/9/2015● 7 keg ● 27,00 gal ● Site=1, Lagerställe=10, Batchnummer=as-12-344-01 ● Samprodukter: P9101" och sedan väljer du den noden.     
+    
+    Visa: "P9100 / 1 / 10 / as-12-344-01 ● 2 keg ● 7,00 gal \P9100 ● Plockad ● Försäljningsorder 000072 ● 12/22/2015  ● -1 keg ● -4,00 gal ● Site=1, Lagerställe=10, Batchnummer=as-12-344-01 \P9100 ● Produktion B-000050 ● 12/9/2015● 7 keg ● 27,00 gal ● Site=1, Lagerställe=10, Batchnummer=as-12-344-01 ● Samprodukter: P9101" och sedan väljer du den noden.     
 2. Expandera ”noden som beskrivs nedan och välj sedan den noden” i trädet.
-    * Med start från noden som du just har markerat visar du "M9103 ● Produktionsrad B-000050 ● 12/9/2015  ● -160,00 lb ● Storlek=70, Färg=OK, Site=1, Lagerställe=10, Batchnummer=App01" och sedan väljer du den noden.  
-3. Klicka på Spåra från nod.
-4. Klicka på Framåt.
-5. Klicka på Spårning i åtgärdsfönstret.
-    * Det finns flera spårningsalternativ som ger information om kunder som har påverkats av artikeln som du spårar och de försäljningsorder som är relaterade till artikeln och som inte har levererats.   
-6. Klicka på Kunder.
+    
+    Med start från noden som du just har markerat visar du "M9103 ● Produktionsrad B-000050 ● 12/9/2015  ● -160,00 lb ● Storlek=70, Färg=OK, Site=1, Lagerställe=10, Batchnummer=App01" och sedan väljer du den noden.  
+3. Klicka på **Spåra från nod.**
+4. Klicka på **Framåt.**
+5. Klicka på **Spårning** i **åtgärdsfönstret**.
+    
+    Det finns flera spårningsalternativ som ger information om kunder som har påverkats av artikeln som du spårar och de försäljningsorder som är relaterade till artikeln och som inte har levererats.   
+6. Klicka på **Kunder.**
 7. Stäng sidan.
-8. Klicka på Spårning i åtgärdsfönstret.
-9. Klicka på Levererade försäljningsorder.
+8. Klicka på **Spårning** i **åtgärdsfönstret**.
+9. Klicka på **Levererade försäljningsorder.**
 10. Stäng sidan.
 

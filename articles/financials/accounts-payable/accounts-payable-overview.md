@@ -1,9 +1,9 @@
 ---
-title: Konfigurera leverantörsreskontra
+title: Konfigurera leverantörsreskontra – översikt
 description: Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs.
 author: abruer
 manager: AnnBe
-ms.date: 08/08/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8642b27f222ed080539e63b0608a52aefbe64e8
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ce2caf8df871ee8f577b3a1af9d71244a1dc4694
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837480"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865000"
 ---
-# <a name="configure-accounts-payable"></a>Konfigurera leverantörsreskontra
+# <a name="configure-accounts-payable-overview"></a>Konfigurera leverantörsreskontra – översikt
 
 [!include [banner](../includes/banner.md)]
 

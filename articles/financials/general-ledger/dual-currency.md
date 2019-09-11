@@ -3,7 +3,7 @@ title: Dubbel valuta
 description: Det här avsnittet innehåller information om dubbel valuta där rapporteringsvalutan används som en andra redovisningsvaluta för Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839415"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867521"
 ---
 # <a name="dual-currency"></a>Dubbel valuta
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Funktion som infördes i Microsoft Dynamics 365 for Finance and Operations version 8.1 (oktober 2018) gör det möjligt att återanvända rapporteringsvalutan och använda den som en andra redovisningsvaluta. Den här funktionen kallas ibland för *dubbel valuta*. Ändringarna för dubbel valuta kan inte inaktiveras via en konfigurationsnyckel eller parameter. Eftersom rapporteringsvalutan används som en andra redovisningsvaluta, har sättet att beräkna rapporteringsvaluta i bokföringslogiken ändrats.
 
-Dessutom har olika moduler förbättrats för att spåra, rapportera och använda rapporteringsvaluta i olika processer. Modulerna som påverkas omfattar **redovisning**, **ekonomisk rapportering**, **leverantörsreskontra**, **kundreskontra**, **kontanter och bankhantering** och **anläggningstillgångar**. Efter en uppgradering måste du utföra specifika steg för kassa- och bankhantering och anläggningstillgångar. Därför bör du se till att läsa relevanta sektioner i det här avsnittet.
+Dessutom har flera moduler förbättrats för att spåra, rapportera och använda rapporteringsvaluta i olika processer. Modulerna som påverkas är:
+
+- Redovisning 
+- Ekonomisk rapportering 
+- Leverantörsreskontra
+- Kundreskontra 
+- Kassa- och bankhantering 
+- Anläggningstillgångar 
+- Konsolideringar
+
+Efter en uppgradering måste du utföra specifika steg för kassa- och bankhantering och anläggningstillgångar. Därför bör du se till att läsa och förstå relevanta sektioner i det här avsnittet.
 
 ## <a name="posting-process"></a>Bokföringsprocess
 
@@ -75,8 +86,9 @@ Följande moduler använder rapporteringsvaluta som en andra redovisningsvaluta:
 - [Kundreskontra](#accounts-payable-and-accounts-receivable)
 - [Kassa- och bankhantering](#cash-and-bank-management)
 - [Anläggningstillgångar](#fixed-assets)
+- [Konsolideringar](#consolidations)
 
-### <a name="general-ledger"></a>Huvudbok
+### <a name="general-ledger"></a>Redovisning
 
 Om en rapportvaluta har definierats i redovisningen, kommer redovisningen redan att spåra rapporteringsbeloppen i varje redovisningstransaktion. Dessa belopp konverteras nu från transaktionsvalutabelopp.
 
@@ -124,6 +136,8 @@ Tidigare spårade inte modulen **Anläggningstillgångar** alla belopp i rapport
 Dessutom har större ändringar gjorts i avskrivningsprocessen. Ändringarna kräver åtgärder från användaren efter en uppgradering. Det är viktigt att du läser och förstår följande ändringar även om du ännu inte använder anläggningstillgångar.
 
 - Hur avskrivningsprocessen bestämmer rapporteringsvalutan har ändrats. Följande scenario jämför hur tidigare avskrivning bestämde rapporteringsvalutabeloppet och hur det avgör rapporteringsvalutabeloppet nu.
+
+
 
     **Avskrivningsscenario**
 
@@ -186,3 +200,13 @@ Dessutom har större ändringar gjorts i avskrivningsprocessen. Ändringarna kr�
     - Om transaktionstypen för avskrivning anges i journalen för anläggningstillgångar visas rapporteringsvalutabeloppen i de nya kolumnerna. Dessa belopp kan ändras.
     - Om redovisningsvalutan och rapporteringsvalutan i redovisningen överensstämmer kommer beloppen att synkroniseras. Om du ändrar beloppet **kredit** kommer **kredit i rapporteringsvaluta** att ändras automatiskt så att den matchar.
     - Om alla andra transaktionstyper anges i journalen för anläggningstillgångar kommer beloppen **debet i rapporteringsvaluta** och **kredit i rapporteringsvaluta** aldrig att visas varken före eller efter bokföring. Redovisningsvaluta och rapporteringsvalutabelopp finns kvar i verifikationen som bokförs till redovisningen.
+    
+### <a name="consolidations"></a>Konsolideringar
+    
+Funktioner som introducerades i Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (oktober 2019) aktiverar funktionalitet via funktionshantering för förbättrad flexibilitet för konsolidering och dubbel valuta. Om du vill aktivera den här funktionen går du till arbetsytan **Funktionshantering** och väljer **Aktivera funktionen dubbel valuta i funktioner för dubbla valutor redovisningskonsolidering**.
+
+I redovisningskonsolidering har ett nytt alternativ lagts till för att konsolidera redovisnings- eller rapportvalutabeloppen från källföretagen. Om redovisnings- eller rapporteringsvalutan är samma som redovisnings- eller rapporteringsvalutan i konsolideringsföretaget kopieras beloppen direkt i stället för översatt.
+
+-  Du kan nu välja om redovisningsvalutan eller rapportvalutan från källföretaget ska användas som transaktionsvaluta i konsolideringsföretaget.
+
+- Redovisnings- eller rapportvalutabeloppen från källföretaget kopieras direkt till redovisnings- eller rapporteringsvalutabeloppen i konsolideringsföretaget om någon av valutorna är samma. Redovisnings- och rapportvalutabeloppen i konsolideringsföretaget beräknas med valutakursen om ingen av valutorna är samma.

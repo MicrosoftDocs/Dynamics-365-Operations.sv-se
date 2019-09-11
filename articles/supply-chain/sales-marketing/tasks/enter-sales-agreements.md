@@ -1,9 +1,9 @@
 ---
 title: Ange försäljningsavtal
-description: I den här proceduren visas hur du skapar en försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter.
+description: I det här avsnittet visas hur du skapar en försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,53 +17,43 @@ ms.search.industry: Service industries
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c415faaf68fda677f08305dce0ed3f2ed32ee050
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7699f426c102b4ae2610db0851ddd127e514b652
+ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834110"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1871039"
 ---
 # <a name="enter-sales-agreements"></a>Ange försäljningsavtal
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du skapar en försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
+I det här avsnittet visas hur du skapar en försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 
 
 ## <a name="set-up-sales-agreement-header"></a>Ställ in försäljningsavtalshuvudet
-1. Gå till försäljning och marknadsföring > Försäljning avtal > försäljningsavtal.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kundkonto.
-4. Hitta och markera önskad post i listan.
-5. Klicka på länken på den valda raden i listan.
-6. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Klassificering av försäljningsavtal.
-7. Klicka på länken på den valda raden i listan.
-8. Expandera avsnittet Allmänt.
-9. I fältet Standardutfästelse, välj Utfästelse för produktvärde.
-    * En utfästelsetyp är ett obligatoriskt kriterium som du måste tilldela till avtalet för att definiera hur avtalskontraktet uppfylls. De fyra fördefinierade typer kan du ställa in kundens åtagande mål, uttryckt som en kvantitet eller ett värde. Kvantitetutfästelsetypen kan endast tillämpas på en specifik produkt, men de hierarkibaserade typerna kan användas för både försäljning och icke-specifika produkter.  
-10. I fältet Utgångsdatum, ange datumet till ett framtida datum när du vill att avtalet ska upphöra.
-11. Klicka på OK.
+1. I navigeringsfönstret, gå till **Moduler > Försäljning och marknadsföring > Försäljningsavtal > Försäljningsavtal**.
+2. Välj **Ny**.
+3. I fältet **Kundkonto** välj önskad post i den nedrullningsbara menyn.
+4. I fältet **Klassificering av försäljningsavtal** välj önskad post i den nedrullningsbara menyn.
+5. Expandera den **allmänna** delen.
+6. I fältet **Standardutfästelse**, välj **Utfästelse för produktvärde**. En utfästelsetyp är ett obligatoriskt kriterium som du måste tilldela till avtalet för att definiera hur avtalskontraktet uppfylls. De fyra fördefinierade typer kan du ställa in kundens åtagande mål, uttryckt som en kvantitet eller ett värde. Kvantitetutfästelsetypen kan endast tillämpas på en specifik produkt, men de hierarkibaserade typerna kan användas för både försäljning och icke-specifika produkter.  
+7. I fältet **Utgångsdatum**, ange datumet till ett framtida datum när du vill att avtalet ska upphöra.
+8. Välj **OK**.
 
 ## <a name="set-up-product-value-commitment-lines"></a>Ställ in utfästelserader för produktvärde
-1. Klicka på Lägg till rad.
-2. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.
-3. Hitta och markera önskad post i listan.
-4. Klicka på länken på den valda raden i listan.
-    * Typen av åtagande som du har valt för avtalet påverkar den typ av information som du kan ange för avtalsraderna. För exempelvis en värde-baserade avtal måste du ange det totala nettobeloppet (i den överenskomna valuta) för vilken kunden förbinder sig att köpa varor från dig. I det här exemplet är fälten Kvantitet och Enhet på raden inte tillgängliga eftersom du skapar ett avtal för att kunden om att köpa för ett visst värde av en produkt.   
-5. I fältet Nettobelopp, ange penningbeloppet som kunden har åtagit sig att köpa för.
-6. I fältet Rabatt i procent, ange en procentsats som ska användas för kundens försäljningsorderrader, som är kopplade till detta avtal.
-7. Expandera avsnittet Radinformation.
-8. Välj Ja i fältet Max framtvingas.
-    * Om du väljer Max framtvingas innebär att det totala beloppet för alla försäljningsorderrader som använder utfästelsens särskilda priser, rabatter och/eller betalningsvillkor inte får överstiga beloppet som anges på utfästelsen.  
-    * Minsta och högsta frisläppningsbeloppen anger ett värdeintervall som måste säljas på varje försäljningsorder som använder det valda avtalet.   
-9. Expandera huvudavsnittet Försäljningsavtal.
-    * Om inte avtalets status anges till Giltighet kan försäljningsorder inte kopplas till avtalet och kan därför inte bidra till uppfyllandet av avtalet. Du kan ändra status manuellt i detta skede. Emellertid ändras statusen normalt när du bekräftar avtalet för kunden.  
-10. Klicka på Försäljningsavtal i åtgärdsfönstret.
-11. Klicka på Bekräftelse.
-    * Kontrollera att Ja är valt för alternativet Markera avtal som giltigt.  
-12. Välj Ja i fältet Skriv ut rapport.
-13. Klicka på OK.
-14. Stäng sidan.
-    * Avtalet är nu effektivt och du kan börja att länka kundens order till avtalet för att motboka mot det utfästa målet.  
+1. Välj **Markera rad**.
+2. I fältet **Artikelnummer** välj önskad post i den nedrullningsbara menyn. Typen av åtagande som du har valt för avtalet påverkar den typ av information som du kan ange för avtalsraderna. För exempelvis en värde-baserade avtal måste du ange det totala nettobeloppet (i den överenskomna valuta) för vilken kunden förbinder sig att köpa varor från dig. I det här exemplet är fälten **Kvantitet** och **Enhet** på raden inte tillgängliga eftersom du skapar ett avtal för att kunden om att köpa för ett visst värde av en produkt.   
+3. I fältet **Nettobelopp**, ange penningbeloppet som kunden har åtagit sig att köpa för.
+4. I fältet **Rabatt i procent**, ange en procentsats som ska användas för kundens försäljningsorderrader, som är kopplade till detta avtal.
+5. Visa avsnittet **Raddetaljer**.
+6. Välj **Ja** i fältet **Max framtvingas**.
+    - Om du väljer **Max framtvingas** innebär att det totala beloppet för alla försäljningsorderrader som använder utfästelsens särskilda priser, rabatter och/eller betalningsvillkor inte får överstiga beloppet som anges på utfästelsen.  
+    - Minsta och högsta frisläppningsbeloppen anger ett värdeintervall som måste säljas på varje försäljningsorder som använder det valda avtalet.   
+7. Expandera avsnittet **Försäljningsavtalshuvud**. Om inte status för avtalet är **Giltig**, beställningar kan inte associeras med avtalet och kan därför inte bidra till uppfyllandet av avtalet. Du kan ändra status manuellt i detta skede. Emellertid ändras statusen normalt när du bekräftar avtalet för kunden.  
+8. Välj **Försäljningsavtal** i åtgärdsfönstret.
+9. VäljSelect **Bekräftelse**. Se till att alternativet **Markera avtal som giltigt** har inställningen **Ja**.  
+10. Välj **Ja** i fältet **Skriv ut rapport**.
+11. Välj **OK**.
+12. Stäng sidan. Avtalet är nu giltigt. Du kan börja att länka kundens order till avtalet för att motboka mot det utfästa målet.  
 

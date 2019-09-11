@@ -1,9 +1,9 @@
 ---
 title: Klassificera en produkt med hjälp av kategorihierarkier
-description: Använd kategorihierarkier för att klassificera produkter för export, anskaffning, försäljning eller andra syften.
+description: I det här avsnittet beskrivs hur du klassificerar en produkt med hjälp av kategorihierarkier.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/26/2016
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59c74ff34fde9064c54f8e6e6c4717df83680fae
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f0d3a69de8999d106818e187f8ffe6181e90aea0
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568683"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866962"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klassificera en produkt med hjälp av kategorihierarkier
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Använd kategorihierarkier för att klassificera produkter för export, anskaffning, försäljning eller andra syften. Denna uppgift utförs vanligtvis av en produktchef. Exemplet använder produktnumret M0009 i demonstrationdataföretaget USMF.
+I det här avsnittet beskrivs hur du klassificerar en produkt med hjälp av kategorihierarkier. Använd kategorihierarkier för att klassificera produkter för export, anskaffning, försäljning eller andra syften. Denna uppgift utförs vanligtvis av en produktchef. Exemplet använder produktnumret M0009 i demonstrationdataföretaget USMF.
 
-1. Klicka på Underhåll av frisläppt produkt.
-2. Klicka på All released products.
+1. Välj **Underhåll av frisläppt produkt**.
+2. Välj **Alla frisläppta produkter**.
 3. Hitta och markera önskad post i listan.
-4. Klicka på Produkt i åtgärdsfönstret.
-5. Klicka på Produktkategorier.
-6. Klicka på Ny.
-7. I fältet Kategorihierarki, ange eller välj ett värde.
-8. I fältet Kategori, ange eller välj ett värde.
-9. Klicka på Ny.
-10. I fältet Kategorihierarki, ange eller välj ett värde.
-11. I fältet Kategori, ange eller välj ett värde.
+4. Välj **Produkt** i åtgärdsfönstret.
+5. Välj **Produktkategorier**.
+6. Välj **Ny**.
+7. I fältet **Kategorihierarki**, ange eller välj ett värde.
+8. I fältet **Kategori**, ange eller välj ett värde.
+9. Välj **Ny**.
+10. I fältet **Kategorihierarki**, ange eller välj ett värde.
+11. I fältet **Kategori**, ange eller välj ett värde.
 12. Stäng sidan.
 

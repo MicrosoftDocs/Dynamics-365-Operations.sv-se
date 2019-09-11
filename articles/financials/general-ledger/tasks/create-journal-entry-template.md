@@ -3,7 +3,7 @@ title: Skapa en journalpost med en mall
 description: Bokförda journalverifikationer kan sparas som verifikationsmallar och tillämpas vid en ny bokföringsorder.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1a3fb750e04fb134fc9ac38d9a47201803566113
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: babbc5ee067743d368680970556f8e5d3d8585f0
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846641"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916170"
 ---
 # <a name="create-a-journal-entry-using-template"></a>Skapa en journalpost med en mall
 
@@ -29,38 +29,37 @@ ms.locfileid: "1846641"
 
 Bokförda journalverifikationer kan sparas som verifikationsmallar och tillämpas vid en ny bokföringsorder. I den här proceduren används demonstrationsföretaget USMF.
 
-1. Redovisning > Journalposter > Allmänna journaler. Klicka på Ny.
-    * I den här proceduren börjar vi med att skapa och bokföra en journal verifikation, men alla tidigare bokförd bokföringsorder kan sparas som en mall.  
-2. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.
-3. Hitta och markera önskad post i listan.
-4. Klicka på länken på den valda raden i listan.
-5. Klicka på Rader.
-6. Ange ett konto för kontotypen.
-7. Ange ett värde i fältet Beskrivning.
-8. Ange ett belopp i fältet Debet.
-9. Klicka på Ny.
-10. Ange ett annat konto för kontotypen.
-11. Ange ett värde i fältet Beskrivning.
-12. Ange ett belopp i fältet Debet.
-13. Klicka på Ny.
-14. Ange önskade värden i fältet Konto.
-15. Skriv ett värde i fältet Beskrivning.
-16. Ange ett belopp i krediteringsfältet för att balansera verifikationen.
-17. Klicka på Bokför.
-18. Klicka på Funktioner.
-19. Klicka på Spara verifikationsmall.
-20. I den här proceduren förutsätts det en procentmalltyp. Klicka på OK.
-    * • Procent: Beloppen i verifikationen konverteras till procentsatsfaktorer, vilket innebär att alla belopp, används när verifikationsmallen har valts.  • Belopp: De möjligt att beloppen ska lagras och kommer att användas.  
-21. Klicka på Allmänna journaler.
-22. Klicka på Ny.
-23. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.
+1. Gå till **Navigeringsfönstret > Moduler > Redovisning > Journalposter > Allmänna journaler**.
+2. Klicka på **Nytt** i **Åtgärdsfönstret**. I den här proceduren börjar vi med att skapa och bokföra en journal verifikation, men alla tidigare bokförd bokföringsorder kan sparas som en mall.  
+3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Namn**.
+4. Hitta och markera önskad post i listan.
+5. Klicka på länken på den valda raden i listan.
+6. Klicka på **Rader**.
+7. I fältet **Kontotyp**, skriv ett värde.
+8. I fältet **Beskrivning** anger du ett värde.
+9. Ange ett värde i fältet **Debet**.
+10. Klicka på **Ny**.
+11. I fältet **Kontotyp**, skriv ett värde.
+12. I fältet **Beskrivning** anger du ett värde.
+13. Ange ett värde i fältet **Debet**.
+14. Klicka på **Ny**.
+14. Ange önskade värden i fältet **Konto**.
+15. I fältet **Beskrivning** anger du ett värde.
+16. Ange ett värde för att balansera verifikationen i fältet **Kredit**.
+17. Klicka på **Bokför** i **åtgärdsfönstret**.
+18. Klicka på **Funktioner**.
+19. Klicka på mallen **Spara verifikation**.
+20. I den här proceduren förutsätts typen **Procentmall**. Klicka på OK.
+    - Procent: Beloppen i verifikationen konverteras till procentsatsfaktorer, vilket innebär att alla belopp som kan användas när verifikationsmallen har valts.
+    - Belopp: De möjligt att beloppen lagras och kommer att användas.  
+21. Klicka på **Allmänna journaler**.
+22. Klicka på **Ny**.
+23. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Namn**.
 24. Klicka på länken på den valda raden i listan.
-25. Klicka på Rader.
-26. Klicka på Funktioner.
-27. Klicka på Välj verifikationsmall.
-28. Sök efter mallen som du skapade tidigare. Klicka på OK.
-    * Du kan behöva klicka på föregående steget och sedan välja korrekt mallen, om annan mallar finns.  
-29. Ange det belopp som ska användas för verifikationen i beloppsfältet.
-    * Beloppsfältet visas bara om verifikationsmallen är av typen Procent.  
-30. Klicka på OK.
+25. Klicka på **Rader**.
+26. Klicka på **Funktioner**.
+27. Klicka på **Välj verifikationsmall**.
+28. Sök efter mallen som du skapade tidigare. Klicka på **OK**. Du kan behöva klicka på  **Föregående steg** och sedan välja korrekt mallen, om annan mallar finns.  
+29. Ange det belopp som ska användas för verifikationen i fältet **Belopp**. Fältet **Belopp** visas bara om verifikationsmallen är av typen Procent.  
+30. Klicka på **OK**.
 

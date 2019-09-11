@@ -1,6 +1,6 @@
 ---
 title: Felsökningsguide för dataintegrering
-description: Det här avsnittet innehåller felsökningsinformation om dataintegrering mellan Microsoft Dynamics 365 for Finance and Operations och Common Data Service.
+description: Det här avsnittet innehåller felsökningsinformation för dataintegrering mellan Microsoft Dynamics 365 for Finance and Operations och Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,50 +19,56 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ca62a6b3aa64ec2383ee3ded3b7bbf4650a41166
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 5e71729dafd2ad85a01b055363d1c7056b5558b2
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797285"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873115"
 ---
 # <a name="troubleshooting-guide-for-data-integration"></a>Felsökningsguide för dataintegrering
 
-## <a name="enable-plugin-trace-in-common-data-service-and-check-the-dual-write-plugin-error-details"></a>Möjliggöra plugin-spårning i Common Data Service och kontrollera den dubbelriktade skrivning plugin-feldetaljer
+## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Möjliggöra plugin-spårningsloggar i Common Data Service och inspektera de dubbelriktade skrivning plugin-feldetaljerna
 
-Om du står inför ett problem eller ett fel med synkronisering av dubbelriktad skrivning kan du inspektera felen i spårningsloggen:
+[!include [banner](../includes/banner.md)]
 
-1. Innan du kan inspektera felen måste du aktivera plugin-spårning med hjälp av instruktionerna i [registrera plugin-program](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) för att aktivera spårning av plugin-spårning. Nu kan du inspektera felen.
-2. Logga in på Dynamics 365 for Sales.
-3. Klicka på inställningsikonen (ett kugghjul) och välj **avancerade inställningar**.
-4. I menyn **inställningar** väljer du **anpassning > spårningslogg för plugin-program**.
-5. Klicka på typnamnet **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** för att vVisa felinformationen.
+[!include [preview](../includes/preview-banner.md)]
 
-## <a name="check-dual-write-synchronization-errors-in-finance-and-operations"></a>Kontrollera synkroniseringsfel med dubbelriktade skrivningar i Finance and Operations
+Om det uppstår ett problem eller fel under en synkronisering med dubbelriktad skrivning följer du stegen nedan för att granska felen i spårningsloggen.
 
-Du kan kontrollera felen under testningen genom att följa dessa steg:
+1. Innan du kan undersöka felen måste du aktivera spårningsloggar för plugin-program. Instruktioner finns i avsnittet "Visa spårningsloggar" i [Självstudier: Skriv och registrera ett plugin-program](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
 
-+ Logga in på LifeCycle Services (LCS).
-+ Öppna LCS-projektet som du valde att utföra testning av dubbelriktad skrivning.
-+ Gå till molnstyrda miljöer.
-+ Fjärrskrivbord till Finance and Operations VM med lokalt konto som visas i LCS.
-+ Öppna händelsevisningsprogrammet. 
-+ Navigera till **program- och tjänstloggar > Microsoft > Dynamics > AX-DualWriteSync > Drift**. Felen och detaljerna visas.
+    Nu kan du inspektera felen.
 
-## <a name="how-to-unlink-and-link-another-common-data-service-environment-from-finance-and-operations"></a>Ta bort länken till och länka en annan Common Data Service-miljö från Finance and Operations
+2. Logga in på Microsoft Dynamics 365 for Sales.
+3. Välj knappen **Inställningar** (växelsymbolen) och sedan **Avancerade inställningar**.
+4. På menyn **Inställningar** väljer du **Anpassning \> spårningslogg för plugin-program**.
+5. Välj **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** som typnamn för att visa felinformationen.
 
-Du kan uppdatera länkarna genom att följa dessa steg:
+## <a name="inspect-dual-write-synchronization-errors-in-finance-and-operations"></a>Inspektera synkroniseringsfel med dubbelriktade skrivningar i Finance and Operations
 
-+ Navigera till Finance and Operations-miljön.
-+ Öppna datahantering.
-+ Klicka på **Länkatill CDS för appar**.
-+ Markera alla mappningar som körs och klicka på **stoppa**. 
-+ Markera alla mappningar och klicka på **ta bort**.
+Följ dessa steg för att inspektera fel under testningen.
+
+1. Logga in på Microsoft Dynamics Lifecycle Services (LCS).
+2. Öppna LCS-projektet som du vill dubbelriktad skrivtestning för.
+3. Välj **Molnstyrda miljöer**.
+4. Gör en fjärrskrivbordsanslutning till den virtuella datorn (VM) för Dynamics 365 for Finance and Operations med hjälp av ett lokalt konto som visas i LCS.
+5. Öppna händelsevisningsprogrammet. 
+6. Gå till **Program- och tjänstloggar \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**. Felen och detaljerna visas.
+
+## <a name="unlink-one-common-data-service-environment-from-finance-and-operations-and-link-another-environment"></a>Ta bort länken till en Common Data Service-miljö från Finance and Operations och länka en annan miljö
+
+Följ dessa steg om för att uppdatera länkar.
+
+1. Gå till Finance and Operations-miljön.
+2. Öppna datahantering.
+3. Välj **Länka till CDS för appar**.
+4. Välj alla mappningar som körs och välj sedan **Stopp**.
+5. Välj alla mappningarna och välj sedan **Ta bort**.
 
     > [!NOTE]
-    > Alternativet **ta bort** visas inte om mallen **CustomerV3-konto** har valts. Avmarkera om det behövs. **CustomerV3-konto** är en äldre etablerad mall och fungerar med lösningen potentiell kund till kontanter. Eftersom den släpps globalt visas den under alla mallar.
+    > Alternativet **Ta bort** är inte tillgängligt om mallen **CustomerV3-konto** har valts. Ta bort valet av den här mallen om det behövs. **CustomerV3-konto** är en äldre etablerad mall och fungerar med lösningen potentiell kund till kontanter. Eftersom den släpps globalt visas den under alla mallar.
 
-+ Klicka på **Ta bort länk till miljö**.
-+ Klicka på **ja** för bekräftelse.
-+ Följ stegen i [installationsguiden](https://aka.ms/dualwrite-docs) om du vill länka den nya miljön.
-
+6. Välj **Ta bort länk till miljö**.
+7. Välj **Ja** för att bekräfta åtgärden.
+8. Följ stegen i [installationsguiden](https://aka.ms/dualwrite-docs) om du vill länka den nya miljön.

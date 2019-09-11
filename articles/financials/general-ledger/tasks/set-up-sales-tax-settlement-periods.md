@@ -1,6 +1,6 @@
 ---
 title: Ställ in momskvittningsperioder
-description: Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms.
+description: Det här avsnittet innehåller information om hur du ställer in momskvittningsperioder i Dynamics 365 for Finance and Operations.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/05/2019
@@ -16,50 +16,38 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6fb8488335579ed463d4db235b991e97c39d6f4d
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862998"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867425"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ställ in momskvittningsperioder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms. En kvittningprocess kan köras för en kvittningsperiod för ett specifikt datumintervall. Alla momskoder som är kopplade till kvittningsperioden kvittas. Beroende på inställningen av den relaterade skattemyndigheten bokförs skatteskulden antingen till en leverantör eller ett redovisningskonto.
-
-
+Det här avsnittet innehåller information om hur du ställer in momskvittningsperioder i Dynamics 365 for Finance and Operations. Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms. En kvittningprocess kan köras för en kvittningsperiod för ett specifikt datumintervall. Alla momskoder som är kopplade till kvittningsperioden kvittas. Beroende på inställningen av den relaterade skattemyndigheten bokförs skatteskulden antingen till en leverantör eller ett redovisningskonto.
 
 I den här uppgiften används demonstrationsföretaget USMF.
 
-
-
-1. Gå till Moms > Indirekt moms > Moms > Momskvittningsperioder.
-2. Klicka på Ny.
-3. I fältet Kvittningsperiod, ange ett värde.
-4. Ange ett värde i fältet Beskrivning.
-5. I fältet Myndighet väljer du skattekontoret som tar emot rapporter och betalningar som skapats för kvittningsperioden.
+1. I navigeringsfönstret går du till **Moduler > Skatt > Indirekta skatter > Moms > Momskvittningsperioder.**
+2. Välj **Ny**.
+3. Ange ett värde i fältet **Kvittningsperiod**.
+4. I fältet **Beskrivning** anger du ett värde.
+5. I fältet **Myndighet** väljer du skattekontoret som tar emot rapporter och betalningar som skapats för kvittningsperioden.
 6. Hitta och markera önskad post i listan.
-7. Klicka på länken på den valda raden i listan.
-8. I fältet Betalningsvillkor, öppna sökningen genom att klicka på den nedrullningsbara knappen.
-    * Den relaterade skattemyndigheten kan ställas in som en leverantör och vid momskvittningen skapas en öppen leverantörsfaktura. Förfallodatumet för den öppna leverantörsfakturan definieras i betalningsvillkoren.  
-9. Hitta och markera önskad post i listan.
-10. Klicka på länken på den valda raden i listan.
-11. Välj en typ av kvittningsperiodintervall.
-12. Ange antalet periodintervallenheter per period. Till exempel har ett kvartal 3 månader.
-13. Markera eller avmarkera kryssrutan Använd batchbearbetning för momskvittning.
-    * Kvittningprocessen för kvittningsperioden kan behandlas som batchjobb i bakgrunden. Detta rekommenderas för ett stort antal momstransaktioner inom ett periodintervall.  
+7. I fältet **Betalningsvillkor** väljer du önskad post i den nedrullningsbara menyn. Den relaterade skattemyndigheten kan ställas in som en leverantör och vid momskvittningen skapas en öppen leverantörsfaktura. Förfallodatumet för den öppna leverantörsfakturan definieras i betalningsvillkoren.  
+8. Välj en typ av kvittningsperiodintervall.
+9. Ange antalet periodintervallenheter per period. Till exempel har ett kvartal 3 månader.
+10. Markera eller avmarkera kryssrutan **Använd batchbearbetning för momskvittning**. Kvittningprocessen för kvittningsperioden kan behandlas som batchjobb i bakgrunden. Detta rekommenderas för ett stort antal momstransaktioner inom ett periodintervall.  
     > [!NOTE]
     > För närvarande stöds detta inte i Österrike, Belgien, Spanien, Italien, Japan och Nederländerna.
-14. Markera eller avmarkera kryssrutan Förhindra att motbokade momstransaktioner genereras.
-    * Som standard genereras motbokade momstransaktioner under kvittningsprocessen som kan orsaka prestandaproblem om det finns ett stort antal momstransaktioner inom ett periodintervall. Markera denna kryssruta för att förhindra att motbokade momstransaktioner genereras.
-15. Expandera periodintervallfliken.
-16. Klicka på Lägg till.
-17. Markera vald rad i listan.
-18. Ange ett datum i fältet Från datum.
-19. Ange ett datum i fältet Till datum.
-20. Klicka på Nytt periodintervall.
-    * När det första periodintervallet har angetts, kan nya perioder skapas automatiskt. Du kan komma tillbaka och lägga till nya periodintervall som krävs.  
-21. Stäng sidan.
+11. Markera eller avmarkera kryssrutan **Förhindra att motbokade momstransaktioner genereras**. Som standard genereras motbokade momstransaktioner under kvittningsprocessen som kan orsaka prestandaproblem om det finns ett stort antal momstransaktioner inom ett periodintervall. Markera denna kryssruta för att förhindra att motbokade momstransaktioner genereras.
+12. Expandera fliken **Periodintervall**.
+13. Markera **Lägg till**.
+14. Ange ett datum i fältet **Från-datum** på den nya raden.
+15. I fältet **Till-datum**, anger du ett datum.
+16. Välj **Nytt periodintervall**. När det första periodintervallet har angetts, kan nya perioder skapas automatiskt. Du kan komma tillbaka och lägga till nya periodintervall som krävs.  
+17. Stäng sidan.
 
