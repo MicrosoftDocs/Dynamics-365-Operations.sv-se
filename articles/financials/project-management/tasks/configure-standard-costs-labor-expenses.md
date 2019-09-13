@@ -1,9 +1,9 @@
 ---
 title: Konfigurera standardkostnader för arbetskraft och utgifter
-description: Den här proceduren visar hur du ställer in standardkostnader för arbete och utgifter för ett projekt.
+description: Det här avsnittet visar hur du ställer in standardkostnader för arbete och utgifter för ett projekt.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,46 +17,40 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b76956e9b1ce1a1e977aaa7c4974e73754e0d261
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 60ab8eb94d4a8a0fb2c1e732ec7b25bfd5e7611e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845908"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867736"
 ---
 # <a name="configure-standard-costs-for-labor-and-expenses"></a>Konfigurera standardkostnader för arbetskraft och utgifter
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du ställer in standardkostnader för arbete och utgifter för ett projekt. I den här uppgiften används datauppsättningen USSI.
+Det här avsnittet visar hur du ställer in standardkostnader för arbete och utgifter för ett projekt. I den här uppgiften används datauppsättningen USSI.
 
-1. Klicka på Projekthantering och redovisning > Inställningar > Priser > Självkostnadspris (timme).
-2. Klicka på Ny.
-3. Ange ett datum i fältet Giltighetsdatum.
-4. Ange ett värde i fältet Cost price.
-    * Du kan ställa in ett standardsjälvkostnadspris för projektkategorin, eller också kan du ställa in ett självkostnadspris efter medarbetarnummer, projektnummer, kategori, datum eller någon kombination av dessa. Det självkostnadspris som används är det mest detaljerade.  
-5. Klicka på Spara.
-6. Stäng sidan.
-7. Klicka på Projekthantering och redovisning > Inställningar > Priser > Försäljningspris (timme).
-8. Klicka på Ny.
-9. Ange ett datum i fältet Giltighetsdatum.
-10. Välj ett alternativ i fältet Gäller för.
-11. Ange ett nummer i fältet Pris.
-    * Du kan ställa in ett standardförsäljningspris för timtransaktioner eller för en projektkategori. Du kan också ställa in försäljningspriser efter medarbetarnummer, projektnummer, kategori, transaktionsdatum eller valfri kombination av dessa. Det verkliga försäljningspriset, som används när en medarbetare registrerar en transaktion i timjournalen, är försäljningspriset med den högsta detaljnivån. Om till exempel både ett allmänt försäljningspris och ett medarbetarspecifikt försäljningspris har angivits, används automatiskt det medarbetarspecifika försäljningspriset.  
-12. Klicka på Spara.
-13. Stäng sidan.
-14. Klicka på Projekthantering och redovisning > Inställningar > Priser > Självkostnadspris (utgift).
-15. Klicka på Ny.
-16. Ange ett datum i fältet Giltighetsdatum.
-17. Ange ett värde i fältet Cost price.
-    * Flera fält kan fyllas i, men detta är det som krävs för att spara posten.  
-18. Klicka på Spara.
-19. Stäng sidan.
-20. Gå till Projekthantering och redovisning > Inställningar > Priser > Försäljningspris (utgift).
-21. Klicka på Ny.
-22. Ange ett datum i fältet Giltighetsdatum.
-23. Välj ett alternativ i fältet Gäller för.
-24. Ange ett nummer i fältet Pris.
-    * Det verkliga försäljningspriset, som används när en medarbetare registrerar transaktionerna i en utgiftsjournal, är försäljningspriset med den högsta detaljnivån. Om till exempel både ett allmänt försäljningspris och ett medarbetarspecifikt försäljningspris har angivits, används det medarbetarspecifika försäljningspriset.  
-25. Klicka på Spara.
+1. I navigeringsfönstret, gå till **Moduler > Projekthantering och redovisning > Inställningar > Priser > Självkostnad (timme)**.
+2. Välj **Ny**.
+3. Ange ett datum i fältet **Giltighetsdatum**.
+4. Ange ett värde i fältet **Självkostnad**. Du kan ställa in ett standardsjälvkostnadspris för projektkategorin, eller också kan du ställa in ett självkostnadspris efter medarbetarnummer, projektnummer, kategori, datum eller någon kombination av dessa. Det självkostnadspris som används är det mest detaljerade.  
+5. Välj **Spara**.
+6. I navigeringsfönstret, gå till **Moduler > Projekthantering och redovisning > Inställningar > Priser > Försäljningspris (timme)**.
+7. Välj **Ny**.
+8. Ange ett datum i fältet **Giltighetsdatum**.
+9. Välj ett alternativ i fältet **Gäller för**.
+10. Ange ett nummer i fältet **Pris**. Du kan ställa in ett standardförsäljningspris för timtransaktioner eller för en projektkategori. Du kan också ställa in försäljningspriser efter medarbetarnummer, projektnummer, kategori, transaktionsdatum eller valfri kombination av dessa. Det verkliga försäljningspriset, som används när en medarbetare registrerar en transaktion i timjournalen, är försäljningspriset med den högsta detaljnivån. Om till exempel både ett allmänt försäljningspris och ett medarbetarspecifikt försäljningspris har angivits, används automatiskt det medarbetarspecifika försäljningspriset.  
+11. Välj **Spara**.
+12. Stäng sidan.
+13. I navigeringsfönstret, gå till **Moduler > Projekthantering och redovisning > Inställningar > Priser > Självkostnad (utgift)**.
+14. Välj **Ny**.
+15. Ange ett datum i fältet **Giltighetsdatum**.
+16. Ange ett värde i fältet **Självkostnad**. Flera fält kan fyllas i, men detta är det som krävs för att spara posten.  
+17. Välj **Spara**.
+18. I navigeringsfönstret, gå till **Moduler > Projekthantering och redovisning > Inställningar > Priser > Försäljningspris (utgift)**.
+19. Välj **Ny**.
+20. Ange ett datum i fältet **Giltighetsdatum**.
+21. Välj ett alternativ i fältet **Gäller för**.
+22. Ange ett nummer i fältet **Pris**. Det verkliga försäljningspriset, som används när en medarbetare registrerar transaktionerna i en utgiftsjournal, är försäljningspriset med den högsta detaljnivån. Om till exempel både ett allmänt försäljningspris och ett medarbetarspecifikt försäljningspris har angivits, används det medarbetarspecifika försäljningspriset.  
+23. Välj **Spara**.
 

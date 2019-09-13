@@ -2,8 +2,8 @@
 title: Formeldesigner i elektronisk rapportering (ER)
 description: Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849519"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864304"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -113,6 +113,33 @@ ER-formeldesignern kan även användas för att skapa ett filnamn för ett skapa
 - Ett uttryck möjliggör (genom att returnera **TRUE**) processen för att skapa en fil för batchar som innehåller minst en post.
 
 [![Filkontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Kontroll av dokumentinnehåll
+
+Du kan använda ER-formuldesigner för att konfigurera uttryck som styr vilka data som ska placeras i genererade elektroniska dokument vid körning. Till exempel kan uttryck aktivera eller inaktivera utdata från specifika element av formatet, beroende på bearbetade data och konfigurerad logik. Uttrycket kan anges för ett enskilt formatelement i fältet **Aktiverad** på fliken **Mappning** på sidan **Operations designer**, eftersom ett logiskt villkor returnerar det **booleska** värdet:
+
+-   När **Sant** returneras körs aktuellt formatelement.
+-   När **Falskt** returneras hoppas aktuellt formatelement över.
+
+Följande bild visar uttryck av den här typen (versionen, **11.12.11** för formatetkonfigurationen **ISO20022 kreditöverföring (NO)** från Microsoft är ett exempel.) **XMLHeader**-formatkomponenten är konfigurerad för att beskriva strukturen för kreditöverföringsmeddelandet, enligt ISO 20022 XML-meddelandestandarder. Formatkomponenten **XMLHeader/dokument/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/ Ustrd** är konfigurerad för att lägga till det genererade meddelandet, XML-elementet **Ustrd** och lägga remitteringsinformationen i en ostrukturerat format som text i följande XML-element:
+
+-   **PaymentNotes**-komponenten används för att skapa texten i betalningsanteckningarna.
+-   **DelimitedSequence**-komponenten genererar kommaavgränsade fakturanummer som används för att kvitta den aktuella kreditöverföringen.
+
+[![Operations designer](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> **PaymentNotes**- och **DelimitedSequence**-komponenterna märks med hjälp av ett frågetecken. Detta innebär att användningen av båda komponenterna är villkorlig, baserat på följande kriterier:
+
+-   Definierad för **PaymentNotes**-komponenten, uttrycket **@.PaymentsNotes< >""** aktiverar (genom att returnera **TRUE**) populationen till XML-elementet **Ustrd**, texten för betalningsanteckningar när den här texten för den aktuella kreditöverföringen inte är tom.
+
+[![Operations designer](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   Definierad för **DelimitedSequence**-komponenten, aktiverar **@.PaymentsNotes=""**-uttryck (genom att returnera **TRUE**) populationen till XML-elementet **Ustrd**, avgränsade med komma fakturanummer som används för att kvitta den aktuella kreditöverföringen när texten för betalningsnoteringar om kreditöverföringen är tom.
+
+[![Operations designer](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Baserat på den här inställningen innehåller det genererade meddelandet för varje gäldenär, XML-elementet **Ustrd**, antingen texten på betalningsanteckningar eller, om sådan text är tom, text som avgränsas med komma fakturanummer som används för att kvitta betalningen.
 
 ### <a name="basic-syntax"></a>Grundläggande syntax
 

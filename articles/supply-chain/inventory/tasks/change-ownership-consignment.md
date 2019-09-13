@@ -3,7 +3,7 @@ title: Ändra ägarskapet för försändelselagret baserat på produktionsbegär
 description: I den här proceduren visas hur du ändrar ägaren till försändelselagret, från leverantören till din juridiska person, om det finns en efterfrågan på lagret i produktionen.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9587d39801ad39649aa5fa3ff682cdeab411516e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 1cf45e838afcb55e15175811f4d38be07d7a484d
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838809"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874887"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Ändra ägarskapet för försändelselagret baserat på produktionsbegäran
 
@@ -30,6 +30,8 @@ ms.locfileid: "1838809"
 
 I den här proceduren visas hur du ändrar ägaren till försändelselagret, från leverantören till din juridiska person, om det finns en efterfrågan på lagret i produktionen. Den här ändringen i ägarskap görs genom att skapa och bokföra en ändringsjournal för lagerägarskap. Ändringsjournalraderna för ägarskap kan skapas manuellt eller, som visas i denna registrering, baseras på befintliga produktionsbegäran. Vanligtvis utför en produktionslagerarbetsledare denna uppgift. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Om du använder dina egna data, kontrollera då att du har följande förutsättningar: ett journalnamn för lager som har skapats för lageräganderättsändring, fysiskt registrerade leverantörsägda behållningsartiklar, samt en eller flera produktionsorderrader för materialet. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations, version 1611.
 
+> [!NOTE]
+> Utgående försändelseprocesser stöds inte omedelbart och automatisk ägarskapsjournalbearbetning stöds inte.
 
 ## <a name="create-an-inventory-ownership-journal"></a>Skapa en journal över lagerägarskap
 1. Gå till Lagerhantering > Journalposter > Artiklar > Lagerägarskapsändring.

@@ -3,7 +3,7 @@ title: Ställa in enskilda nummerserier
 description: Detta avsnitt förklarar hur man ställer in enskilda nummerserier.
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738891"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886610"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Ställa in enskilda nummerserier
 
@@ -33,7 +33,7 @@ Detta avsnitt förklarar hur man ställer in enskilda nummerserier. Nummerserier
 2. Välj **nummerserier**
 3. Skriv ett värde i fältet **Nummerseriekod**.
 4. Skriv ett värde i fältet **Namn**.
-5. Välj ett omfång för nummerserien och de valda omfångvärdena från listrutan på snabbfliken **Områdesparametrar**. Omfånget definierar vilka organisationer använder nummerserien. Dessutom kan nummerserier som har ett annat omfång än **Delad** ha segment som motsvarar deras omfång. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Mer information om omfång finns i hjälpavsnittet [Översikt över nummerserier](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+5. Välj ett omfång för nummerserien och de valda omfångvärdena från listrutan på snabbfliken **Områdesparametrar**. Omfånget definierar vilka organisationer använder nummerserien. Dessutom kan nummerserier som har ett annat omfång än **Delad** ha segment som motsvarar deras omfång. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Mer information om omfång finns i hjälpavsnittet [Översikt över nummerserier](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
 6. Expandera avsnittet **Segment**.
     - Definiera formatet för nummerserien genom att lägga till, ta bort och ordna om segment.  
     - Nummerserier för alla områden kan innehålla *Konstanta segment* och *Alfanumeriska segment*. Konstanta segment innehåller en uppsättning alfanumeriska tecken som inte ändras. Använd den här segmenttypen om du vill lägga till ett bindestreck eller andra avgränsare mellan nummerseriesegment. Alfanumeriska segment innehåller en kombination av nummertecken (#) och et-tecken (&). Dessa representerar bokstäver och siffror som ökar varje gång som ett nummer i serien används. Använd ett nummertecken (#) om du vill ange att öka nummer och en et-tecken (&) om du vill ange att öka bokstäver. Med formatet `#####_2014` skapas till exempel serien `00001_2014`, `00002_2014`, osv. Minst ett alfanumeriskt segment måste vara närvarande. Omfångsegment som till exempel företag eller juridisk person, är inte obligatoriska. Men om du inte inkluderar omfångsegment i formatet, genereras ändå nummer för den valda referensen per omfång.  

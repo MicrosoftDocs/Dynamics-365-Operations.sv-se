@@ -1,9 +1,9 @@
 ---
 title: Visa bokförda momstransaktioner
-description: Du kan visa bokförda momstransaktioner från olika sidor beroende på vad du behöver visa.
+description: I det här avsnittet beskrivs några sätt att visa bokförda momstransaktioner.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,36 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c5668c1cd4325f557d83a2291c8139f65c4d170e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5a2ff8b46d20fa012cbce817ae4e95b4799149ec
+ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846209"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "1870878"
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Visa bokförda momstransaktioner
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan visa bokförda momstransaktioner från olika sidor beroende på vad du behöver visa. I den här uppgiften används demonstrationsföretaget USMF.
+I det här avsnittet beskrivs några sätt att visa bokförda momstransaktioner. Du kan visa bokförda momstransaktioner från olika sidor beroende på vad du behöver visa. I den här uppgiften används demonstrationsföretaget USMF.
 
-1. Gå till > Förfrågningar och rapporter > Momsförfrågningar > Bokför moms.
-2. Klicka på Visa filter.
+# <a name="posted-sales-tax-page"></a>Sidan Bokförd moms
+
+1. I navigeringsfönstret går du till **Moduler > Skatt > Förfrågningar och rapporter > Momsförfrågningar > Bokförd moms.**
+2. Välj **Visa filter** om du vill begränsa vyn till specifika transaktioner.
 3. Stäng sidan.
-4. Gå till Moms > Indirekt moms > Moms > Momskvittningsperioder.
-5. Expandera avsnittet Periodintervall.
-6. Välj intervallet som du är intresserad av.
-7. Visa bokförda momstransaktioner för det valda kvittningsperiodintervallet.
-8. Du kan ytterligare filtrera listan med bokförda momstransaktioner.
-9. Stäng sidan.
-10. Gå till Skatt > Indirekta skatter > Moms > Momskoder.
-11. Klicka på Momskod i åtgärdsfönstret.
-12. Klicka på Bokförd moms.
+
+# <a name="sales-tax-settlement-periods-page"></a>Sidan Momskvittningsperioder
+
+1. I navigeringsfönstret går du till **Moduler > Skatt > Indirekta skatter > Moms > Momskvittningsperioder.**
+2. Expandera avsnittet **Periodintervall**.
+3. Välj intervallet som du är intresserad av.
+4. Du kan ytterligare filtrera listan med bokförda momstransaktioner.
+5. Stäng sidan.
+
+# <a name="sales-tax-codes-page"></a>Sidan Momskoder
+
+1. I navigeringsfönster, gå till **Moduler > Skatt > Indirekt moms > Moms > Momskoder**.
+2. Välj **Momskod** i åtgärdsfönstret.
+3. Välj **Bokförd moms**.
 

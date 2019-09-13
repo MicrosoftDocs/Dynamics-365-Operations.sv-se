@@ -1,9 +1,9 @@
 ---
-title: Organisationer och organisationshierarkier
+title: Organisationer och organisationshierarkier – översikt
 description: En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
 author: sericks007
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e35abeef2ef79dd994fac7d0ee0578591427b595
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545843"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864778"
 ---
-# <a name="organizations-and-organizational-hierarchies"></a>Organisationer och organisationshierarkier
+# <a name="organizations-and-organizational-hierarchies-overview"></a>Organisationer och organisationshierarkier – översikt
 
 [!include [banner](../includes/banner.md)]
 

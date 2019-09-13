@@ -19,50 +19,55 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b74bc2d3133af7e87663a4e6bafb8780e0a6a66f
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 1473c3bad55734d5f83ee3e4c1654921b872f3bb
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797308"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873138"
 ---
-# <a name="execution-order-for-initial-sychronization-of-finance-and-operations-and-common-data-service"></a>Exekveringsorder för initial synkronisering av Finance and Operations och Common Data Service
+# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-and-common-data-service"></a>Exekveringsorder för initial synkronisering av Finance and Operations och Common Data Service
 
-Innan du använder dataintegrering måste du skapa de ursprungliga data som krävs för kunder, leverantörer och kontakter. Om du till exempel vill skapa en ny artikel för **leverantörsgrupp** och ange dess **betalningsvillkor** som **Net30**, innan du försöker skapa artikeln **leverantörsgrupp** se till att **Net30** finns i både Finance and Operations och Common Data Service. (I framtiden kommer vi att släppa en funktion för dubbel skrivplattform som kallas **initial synkronisering**. Den kommer att göra en engångsdatasynkronisering mellan Finance and Operations och Common Data Service som en del av dubbel skriv-installationen.)
+[!include [banner](../includes/banner.md)]
 
-Tips: vi släpper en dubbel-skriv-karta för alla referensdata inklusive **betalningsvillkor** (betalningsvillkor). Om du redan har de ursprungliga data i ett system kan en liten uppdateringsåtgärd på en post utlösa dubbel-skriv på posten. 
+[!include [preview](../includes/preview-banner.md)]
 
-Du måste följa följande prioritetsordning och kontrollera att de ursprungliga data är tillgängliga på både Finance and Operations och Common Data Service.   
+Innan du använder dataintegrering måste du skapa de ursprungliga data som krävs för kunder, leverantörer och kontakter. Du vill till exempel skapa en ny **leverantörsgruppartikel** och ange värdet för **betalningsvillkor** till **Net30.** I det här fallet måste du, innan du försöker skapa **leverantörsgruppsartikeln**, se till **Net30** finns i både Microsoft Dynamics 365 for Finance and Operations och Common Data Service. (I framtiden kommer Microsoft att släppa en funktion för dubbelriktad skrivning som kallas initial synkronisering. Den kommer att göra en engångsdatasynkronisering mellan Finance and Operations och Common Data Service som en del av inställningen dubbelriktad skrivning.)
+
+> [!TIP]
+> Microsoft släpper en karta för dubbelriktad skrivning för alla referensdata, inklusive **Betalningsvillkor** (betalningsvillkor). Om du redan har de ursprungliga data i ett system kan en liten uppdateringsåtgärd på en post utlösa dubbel-skriv på posten.
+
+Du måste följa följande prioritetsordning och kontrollera att de ursprungliga data är tillgängliga i både Finance and Operations och Common Data Service.
 
 ## <a name="vendor"></a>Leverantör
 
-Orderutförande för leverantör är:
+Här är ordningsföljden för entiteten **Leverantör**:
 
-```
-Vendor Group
-    Terms of payment
-        Payment day & lines
-        Payment schedule
-Vendor payment method
-```
+1. Leverantörsgrupp
+
+    1. Betalningsvillkor
+
+        1. Betalningsdag och rader
+        2. Betalningsplan
+
+2. Betalningsmetod för leverantör
 
 ## <a name="customer-organization"></a>Kund (organisation)
 
-Orderutförande för kund är:
+Här är ordningsföljden för entiteten **Kund**:
 
-```
-Customer Group
-    Terms of payment
-        Payment day & lines
-        Payment 
-Customer payment method
-```
+1. Kundgrupp
+
+    1. Betalningsvillkor
+
+        1. Betalningsdag och rader
+        2. Betalning 
+
+2. Kundbetalningsmetod
 
 ## <a name="contact-person"></a>Kontakt (person)
 
-Orderutförande för kontakt är:
+Här är ordningsföljden för entiteten **Kontakt**:
 
-```
-Customer
-Vendor               
-```
+1. Kund
+2. Leverantör

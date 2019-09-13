@@ -1,9 +1,9 @@
 ---
 title: Avyttra en anläggningstillgång med hjälp av en fritextfaktura
-description: Denna procedur visar hur du anskaffar en anläggningstillgång med hjälp av anskaffningsförslaget i anläggningstillgångsjournalen.
+description: Detta avsnitt beskriver hur du anskaffar en anläggningstillgång med hjälp av anskaffningsförslaget i anläggningstillgångsjournalen.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,29 +16,28 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26446df21a3b55abcdd5f163ae84f8e35d853965
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 179a6e45d57baf810068cb5c14aed670ebb94706
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847001"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914663"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Avyttra en anläggningstillgång med hjälp av en fritextfaktura
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du avyttrar en anläggningstillgång med hjälp av formuläret Fritextfaktura.
+Det här avsnittet förklarar hur du avyttrar en anläggningstillgång med hjälp av fritextfaktura.
 
-1. Gå till Kundreskontra > Fakturor > Alla fritextfakturor.
-2. Klicka på Ny.
-3. I fältet Kundkonto, ange eller välj ett värde.
-4. Validera standardfakturadatum och redigera om det är tillämpligt.
-5. Validera återstående standardhuvudfält, t.ex. Valuta och redigera om det är tillämpligt.
-6. Ange en beskrivning av fakturaraden.
-7. Ange eller välj huvudkontot för fakturarraden.
-8. Validera standardmomsgrupp och artikelmomsgrupp.
-9. Ange Enhetspris eller Belopp för försäljning av anläggningstillgången.
-10. Klicka på radinformation.  
-11. Välj numret på anläggningstillgången som ska säljas.
-12. Klicka på Bokför.
+1. I navigeringsfönstret går du till **Moduler > Kundreskontra > Fakturor > Alla fritextfakturor**.
+2. Välj **Ny**.
+3. Ange eller välj ett värde i fältet **Kundkonto**.
+4. Validera **standardfakturadatum** och redigera om det är tillämpligt.
+5. Validera återstående standardhuvudfält, t.ex. **Valuta** och redigera om det är tillämpligt.
+6. I avsnittet **Fakturarader**, validera fälten **Beskrivning** och **Huvudkonto**.
+7. Validera fälten för **standardmomsgrupp** och **artikelmomsgrupp**.
+8. Ange **Enhetspris** eller **Belopp** för försäljning av anläggningstillgången.
+9. Välj avsnittet **Raddetaljer**.  
+10. Ange eller välj ett värde i fältet **Anläggningstillgång**.
+11. Vald **bokföring** 
 

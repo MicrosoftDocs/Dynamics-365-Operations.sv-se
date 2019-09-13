@@ -3,7 +3,7 @@ title: Regeluppdateringar
 description: Det här avsnittet innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: a9d107fa57bdc2edf2dc1a69081e02b3c4321551
+ms.sourcegitcommit: b7f70ee1e54c65c19e1d33c76d2428f9c6c05c66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849342"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "1918475"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -51,30 +51,32 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      2019 april          |   10.0.1      |    Europa     |E-fakturering – Leverantörers fakturor importeras från PEPPOL BIS 3-format         |
 |      2019 april          |   10.0.1      |   Tyskland     |E-fakturering – kunders fakturor exporteras i xRechnung 1.1-format         |
 |      2019 april          |   10.0.1      |    Storbritannien     |[Ändringar i överföring av momsrapport (gör moms digital)](emea-gbr-mtd-vat-integration.md)    |    
-|      2019 april          |   10.0.1      |    Brasilien     |NF-e ny NT 2018.005         |
 |      2019 april          |   10.0.1      |    Ryssland     |[Momsdeklarationsformat ändras från 2019](rus-VAT-declaration.md) |
 |      2019 april          |   10.0.1      |    Ryssland     |Momsdeklarationsformat ändras från 2019 (försäljnings- och inköpsböcker) |
 |      2019 april          |   10.0.1      |    Ryssland     |Deklaration för markvärdesskatt ändras från 2018 |
 |      2019 april          |   10.0.1      |    Ryssland     |[Deklaration för fastighetsskatt ändras från 2019](rus-assessed-tax-declaration.md)|
 |      2019 april          |   10.0.1      |    Ryssland     |Deklaration för transportskatt ändras från 2019  |
-|      2019 april            |   10.0.1      | Ungern      |  Ungern: online-fakturering v. 1.1 2019 på Microsoft Dynamics 365 for Finance and Operations  |
-|      2019 maj            |   10.0.2      | Brasilien      |   SPED ECD Layout 7   |
-|      2019 juni            |   10.0.3      | Brasilien      |   NF-e ny NT 2018.005 - v.1.20   |
-|      2019 juni            |   10.0.3      | Brasilien      |   SPED ECD Layout 7   |
+|      2019 april          |   10.0.1      |    Litauen     |i.SAF-rapporten mlåter användare ange systemets momskoder i samband med juridiska skattekoder  |
+|      2019 april          |   10.0.1      | Ungern      |  Ungern: online-fakturering v. 1.1 2019  |
+|      2019 april          |   10.0.1      | Japan      |  2019 japansk kalender era-ändring  |
+|      2019 april          |   10.0.1/10.0.2/10.0.3      | Indien      |  IEC-nummerformatändring  |
+|      2019 juni           |   10.0.1HF/10.0.2HF/10.0.3      | Brasilien      |   NF-e ny NT 2018.005 - v.1.20   |
+|      2019 juni           |   10.0.1HF/10.0.2HF/10.0.3      | Brasilien      |   SPED ECD Layout 7   |
+|      2019 juni           |   10.0.1HF/10.0.2HF/10.0.3HF/10.0.4      | Brasilien    |   NF-e dekret 54.308/18 (RS)   |
+|      Juli 2019           |   10.0.1HF/10.0.2HF/10.0.3HF/10.0.4      | Brasilien    |   NF-e och NFC-e - Lösning 13/2019 och förordning SUCIEF 55/2019-RJ - nya villkor för att undanta kodutdata i NF-e.   |
+|      2019 juni           |   10.0.2     | Italien      |   "Ny Spesometro" (Esterometro) för att stödja fildelning genom filvolym och gränser för antal poster   |
+ | Augusti 2019            |   10.0.2HF/10.0.3HF/10.0.4HF/10.0.5      | Brasilien    |   En ny version av tekniska anmärkningar för NF-e: NT 2019.001 version 1.00   |
+|      Juli 2019            |   10.0.3/10.0.4      | Indien   |   Visning av "Platsen för leverans" och "Status" i GST-momsfaktura  | Juli 2019            |   10.0.2HF/10.0.3HF/10.0.4HF/10.0.5HF/10.0.6      | Brasilien    |   NF-e ICMS-ST - förordning CAT 42/18 för SP-status CAT 42/18   |
 |      2019 juni            |   10.0.3      | Brasilien      |   SPED ECF - Layout 5 för 2019   |
-|      2019 juni            |   10.0.3      | Litauen    |   i.SAF-rapporten mlåter användare ange systemets momskoder i samband med juridiska skattekoder    |
 |      2019 juni            |   10.0.3      | Polen     |   SAF fakturor (JPK_FA) v. 2 från 1Jul2019  |
 |      2019 juni            |   10.0.3      | Brasilien   |   ICMS för skattedokument aktivera tabell 5.2   |
-|      2019 juni            |   10.0.3      | Brasilien    |   NF-e dekret 54.308/18 (RS)   |
+|      2019 juni            |   10.0.3      | Indien    |   Justering av moms i tullvaluta i växel istället för att göra i transaktionsvalutan  |
   | Juli 2019            |   10.0.4      | Brasilien    |   Inkommande skattedokument 66   |
-   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e och NFC-e - Lösning 13/2019 och förordning SUCIEF 55/2019-RJ - nya villkor för att undanta kodutdata i NF-e.   |
-   | Juli 2019            |   10.0.4      | Indien   |   Visning av "Platsen för leverans" och "Status" i GST-momsfakturan  |
-   | Juli 2019            |   10.0.4      | Mexiko   |  DIOT-deklaration från tredje part – ändringar i layout 2019   |
-   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e ICMS-ST - förordning CAT 42/18 för SP-status CAT 42/18
-   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e dekret 54.308/18 - RS NF   |
-       | Väntande            |   10.0.5      | Brasilien    |   Praktisk vägledning om Sped-bidrag 1.31. ny vägledning   |
-         | Väntande            |   10.0.5      | Brasilien    |   En ny version av tekniska anmärkningar för NF-e: NT 2019.001 version 1.00   |
-          | Väntande            |   10.0.5      | Spanien    |   Valideringsregler ändras från 1 oktober 2019   |
+  | Juli 2019            |   10.0.4      | Mexiko   |  DIOT-deklaration från tredje part – ändringar i layout 2019   |  
+  | Augusti 2019            |   10.0.5      | Brasilien    |   Teknisk vägledning om Sped-bidrag 1.31. ny vägledning   | 
+  | Augusti 2019            |   10.0.5      | Spanien    |   Valideringsregler ändras från 1 oktober 2019   |
+  | Augusti 2019          |   10.0.5      | Mexiko    |   CFDI 3.3 - Informationen om IEPS-momstransaktioner i XML ska vara valfri beroende på kundprofilen |
+  |      Augusti 2019           |   10.0.5      | Storbritannien    |   Information om de digitala bedrägeriskyddsparametrarna för DCR-moms för ursprunglig enhet  |
    
 
 

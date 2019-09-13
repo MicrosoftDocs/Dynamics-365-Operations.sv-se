@@ -1,9 +1,9 @@
 ---
 title: Ställ in attributbaserad prissättning för konfigurerbara produkter
-description: I den här proceduren visas hur du ställer in attributbaserad prissättning.
+description: I det här avsnittet visas hur du ställer in attributbaserad prissättning.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,46 +16,39 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba84fa4de660d16b266763fff5b0b794ed327c81
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 534e9c9332c107afebd814cf2090ecbdf0ec6459
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844211"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914709"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Ställ in attributbaserad prissättning för konfigurerbara produkter
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du ställer in attributbaserad prissättning. Som en förutsättning måste du ha en modell för produktkonfiguration som har en eller flera komponenter och attribut. Detta exempel använder produktmodellen High End Speaker i demonstrationsföretaget USMF. Vanligtvis använder en produktchef denna procedur.
+I det här avsnittet visas hur du ställer in attributbaserad prissättning. Som en förutsättning måste du ha en modell för produktkonfiguration som har en eller flera komponenter och attribut. Detta exempel använder produktmodellen High End Speaker i demonstrationsföretaget USMF. Vanligtvis använder en produktchef denna procedur.
 
 
 ## <a name="create-a-new-price-model"></a>Skapa en ny prismodell
-1. Klicka på Definition av produktvariantmodell.
-2. Klicka på Modeller för produktkonfiguration.
-3. Välj raden High End Speaker i listan, men inte klicka på länken för namn.
-4. Klicka på Modell i åtgärdsfönstret.
-5. Klicka på Price models.
-6. Klicka på Ny.
-7. Ange ett värde i fältet Price model name.
-    * Använd ett namn som gör modellen enkel att identifiera.  
-8. Ange ett värde i fältet Beskrivning.
-9. Klicka på Spara.
+1. Välj **Definition av produktvariantmodell** på startsidan.
+2. Välj **Modeller för produktkonfiguration** i avsnitet **Länkar**.
+3. Välj raden **High End Speaker** i listan, men välj inte länken för namn.
+4. Klicka på **Modell** i åtgärdsfönstret.
+5. Välj **Prismodeller**.
+6. Välj **Ny**.
+7. Ange ett värde i fältet **Prismodellnamn**. Använd ett namn som gör modellen enkel att identifiera.  
+8. I fältet **Beskrivning** anger du ett värde.
+9. Välj **Spara**.
 
 ## <a name="add-price-elements"></a>Lägg till priselement
-1. Klicka på Redigera.
-    * Varje komponent i en produktmodell kan ha ett grundpriselement och ett valfritt antal prisuttrycksregler. Du kan också lägga till priser i olika valutor.  
-2. Ange ett värde i fältet Base price expression.
-    * Ange till exempel 100.   Ett grundprisuttryck kan utgöras av ett numeriskt värde eller bestå av en aritmetisk beräkning som gäller ett eller flera attribut.  
-3. Klicka på Lägg till.
-4. Ange "Rosewood" i namnfältet.
-    * Namnet för prisuttrycket hjälper till att identifiera det som priselementet representerar. I detta exempel skapar vi ett priselement för alternativet med rosenträfinish på högtalarkabinettet.  
-5. Klicka på Edit condition.
-    * Ett prisvillkor hjälper till att säkerställa att ett prisuttryckselement ingår i försäljningspriset endast om en specifik attributkombination förekommer.  
-6. I fältet ConstraintBody anger du "CabinetFinish=="Rosewood"".
-7. Klicka på OK.
-8. Ange ett värde i fältet Expression.
-    * Ange till exempel 50.  
+1. Välj **Redigera**. Varje komponent i en produktmodell kan ha ett grundpriselement och ett valfritt antal prisuttrycksregler. Du kan också lägga till priser i olika valutor.  
+2. Ange ett värde i fältet **Grundprisuttryck**. Ange till exempel 100. Ett grundprisuttryck kan utgöras av ett numeriskt värde eller bestå av en aritmetisk beräkning som gäller ett eller flera attribut.  
+3. Markera **Lägg till**.
+4. I fältet **Namn** skriver du `Rosewood`. Namnet för prisuttrycket hjälper till att identifiera det som priselementet representerar. I detta exempel skapar vi ett priselement för alternativet med rosenträfinish på högtalarkabinettet.  
+5. Välj **Redigeringsvillkor**. Ett prisvillkor hjälper till att säkerställa att ett prisuttryckselement ingår i försäljningspriset endast om en specifik attributkombination förekommer.  
+6. Ange `CabinetFinish=="Rosewood"` i fältet **ConstraintBody**.
+7. Välj **OK**.
+8. Ange ett värde i fältet **Uttryck**. Ange till exempel `50`. 
 9. Stäng sidan.
-10. Stäng sidan.
 

@@ -1,5 +1,5 @@
 ---
-title: Startsidan Redovisning och ekonomisk rapportering
+title: Redovisning och ekonomisk rapportering – översikt
 description: Använd redovisningen när du vill definiera och hantera den juridiska personens ekonomiska poster.
 author: ShylaThompson
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee8597dfbb8b86ff770516ac8787fb07f1d4cbd5
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e50c09d37f34f60b4453ce6bc7df6497dbc070a
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839145"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865739"
 ---
-# <a name="general-ledger"></a>Huvudbok 
+# <a name="general-ledger-overview"></a>Huvudbok – översikt
 
 [!include [banner](../includes/banner.md)]
 

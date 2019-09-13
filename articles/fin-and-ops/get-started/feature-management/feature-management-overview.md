@@ -3,7 +3,7 @@ title: Översikt över funktionshantering
 description: I det här avsnittet beskrivs funktionen funktionshantering och hur du kan använda den.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862948"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887121"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -103,8 +103,9 @@ Alla funktioner som kan aktiveras kommer att aktiveras. Om en funktion redan är
 
 Som standard är alla funktioner som läggs till i miljön inaktiverade, såvida de inte är obligatoriska funktioner. Om du vill aktivera alla nya funktioner automatiskt kan du dock ändra vad som händer när nya funktioner läggs till genom att använda listrutan under arbetsytans rubrik.
 
-- Markera **alla nya funktioner aktiveras som standard** för att automatiskt aktivera alla nya funktioner när de läggs till i miljön.
-- Markera **alla nya funktioner inaktiveras som standard** för att automatiskt inaktivera alla nya funktioner när de läggs till i miljön.
+- Välj **Alla nya funktioner aktiveras som standard** för att automatiskt aktivera alla nya funktioner när de läggs till i miljön.
+- Välj **Aktivera inte nya funktioner som standard** för att stänga av alla nya funktioner när de läggs till i miljön.
+
 
 När du aktiverar alla funktioner automatiskt, kommer det att aktivera alla funktioner som skulle vara aktiverade när du klickar på knappen **aktivera alla**. Det kommer inte att aktivera funktioner som kräver bekräftelse eller funktioner som inte kan aktiveras förrän en åtgärd vidtas.
 

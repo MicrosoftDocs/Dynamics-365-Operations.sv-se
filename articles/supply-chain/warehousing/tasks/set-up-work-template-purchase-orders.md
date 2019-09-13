@@ -1,9 +1,9 @@
 ---
 title: Ställ in en arbetsmall för inköpsorder
-description: I den här proceduren fokuseras på inställningarna av en enkel arbetsmall som ska användas när mottagna artiklar inlagras.
+description: I det här avsnittet beskrivs hur du ställer in en enkel arbetsmall som ska användas när mottagna artiklar inlagras.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,57 +17,47 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16a8b2d80e6d5445d57c171ddb4456dd8db5ecde
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 227a6865df826caf8ce154f9c44ebe082acd76a5
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847049"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916756"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Ställ in en arbetsmall för inköpsorder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren fokuseras på inställningarna av en enkel arbetsmall som ska användas när mottagna artiklar inlagras. Arbetsmallar bestämmer instruktionsuppsättning som visas för lagerställearbetaren på en mobil enhet när artiklar flyttas från inleveransområdet. Du kan använda den här proceduren med uppgifterna i demonstrationsföretaget USMF. Innan du startar guiden skapar du ett arbetspool-id. I det här exemplet används arbetspool-id:t Inkommande. Den här proceduren är avsedd för lagerchefen.
+I det här avsnittet beskrivs hur du ställer in en enkel arbetsmall som ska användas när mottagna artiklar inlagras. Arbetsmallar bestämmer instruktionsuppsättning som visas för lagerställearbetaren på en mobil enhet när artiklar flyttas från inleveransområdet. Du kan använda den här proceduren med uppgifterna i demonstrationsföretaget USMF. Innan du startar guiden skapar du ett arbetspool-id. I det här exemplet används arbetspool-id:t Inkommande. Den här proceduren är avsedd för lagerchefen.
 
-1. Gå till Lagerstyrning > Inställningar > Arbete > Arbetsmallar.
-2. Välj Inköpsorder i fältet Typ av arbetsorder.
+1. I navigeringsfönstret, gå till **Moduler > Lagerstyrning > Inställningar > Arbete > Arbetsmallar**.
+2. Välj **Inköpsorder** i fältet **Typ av arbetsorder**.
 
 ## <a name="create-a-work-template-header"></a>Skapa ett arbetsmallshuvud
-1. Klicka på Ny.
-2. Ange ett nummer i fältet Sekvensnummer.
-    * I den här sekvensen utvärderas arbetsmallen. Du kan ändra sekvensen vid behov.  
-3. Skriv ett värde i fältet Arbetsmall.
-    * Detta är den unika identifieraren för mallen.  
-4. Skriv ett värde i fältet Beskrivning av arbetsmall.
-    * Alternativet Giltig markeras inte förrän du har fyllt i all information som krävs av mallen och klickat på Spara.  
-    * En arbetsorder av typen Inköpsorder kan inte bearbetas automatiskt, så lämna alternativet Bearbeta automatiskt med värdet Nej.  
-5. Skriv ett värde i fältet ID för arbetspool.
-    * Id:n för arbetspooler gör att du kan strukturera arbetsuppgifter i grupper. Det värde som du som anges här är det förvalda värdet för alla arbetsuppgifter som skapas med den här mallen.  
-6. Ange 1 i fältet Arbetsprioritet.
-    * Detta indikerar värdet för arbetsuppgiften och värdet du anger här är standardinställningen för alla arbetsuppgifter som skapas med hjälp av den här mallen.  
-7. Klicka på Spara.
-    * Du måste spara arbetsmallhuvudet för att knappen Redigera fråga ska bli tillgänglig.  
+1. Välj **Ny**.
+2. Ange ett nummer i fältet **Sekvensnummer**. I den här sekvensen utvärderas arbetsmallen. Du kan ändra sekvensen vid behov.  
+3. Skriv ett värde i fältet **Arbetsmall.** Detta är den unika identifieraren för mallen.  
+4. Skriv ett värde i fältet **Beskrivning av arbetsmall.**
+    - Alternativet **Giltig** markeras inte förrän du har fyllt i all information som krävs av mallen och valt **Spara**.  
+    - En arbetsorder av typen **Inköpsorder** kan inte bearbetas automatiskt, så lämna alternativet **Bearbeta automatiskt** med värdet **Nej**.  
+5. Skriv ett värde i fältet **ID för arbetspool.** Id:n för arbetspooler gör att du kan strukturera arbetsuppgifter i grupper. Det värde som du som anges här är det förvalda värdet för alla arbetsuppgifter som skapas med den här mallen.  
+6. Ange `1` i fältet **Arbetsprioritet**. Detta indikerar värdet för arbetsuppgiften och värdet du anger här är standardinställningen för alla arbetsuppgifter som skapas med hjälp av den här mallen.  
+7. Välj **Spara**. Du måste spara arbetsmallhuvudet för att knappen **Redigera fråga** ska bli tillgänglig.  
 
 ## <a name="set-up-the-query-for-the-work-template"></a>Ställa in frågan för arbetsmallen
-1. Klicka på Redigera fråga.
-    * Vi anger en begränsning som innebär att mallen bara kan användas på ett specifikt lagerställe.  
-2. Klicka på Lägg till.
-3. Markera vald rad i listan.
-4. Skriv lagerställe i fältet Fält.
-5. Ange ett värde i fältet Kriterier.
-6. Klicka på OK.
-7. Klicka på Ja.
+1. Välj **Redigera fråga**. Vi anger en begränsning som innebär att mallen bara kan användas på ett specifikt lagerställe.  
+2. Markera **Lägg till**.
+3. I fältet **Fält** för den nya raden, ange `warehouse`.
+4. I fältet **Kriterier** skriver du ett värde.
+5. Välj **OK**.
+6. Välj **Ja**.
 
 ## <a name="set-work-template-details"></a>Ställa in arbetsmallinformation
-1. Klicka på Ny.
-2. Välj Välj i fältet Arbetstyp.
-3. Skriv inköp i fältet Arbetsklass-ID.
-    * Arbetsklassen att du som anges här är standardinställningen i alla arbetsrader av typen Välj som skapas med den här mallen. Arbetsklassen kan inte ersättas av arbetsorderraderna. Arbetsklasser används för att begränsa och/eller styra typen arbetsorderrader som en lagerställemedarbetare kan behandla på en mobil enhet.  
-4. Klicka på Ny.
-5. Välj Placera i fältet Arbetstyp.
-6. Skriv ett värde i fältet Arbetsklass-ID.
-    * Instruktionerna för plock och plats är en uppsättning. Varje plock/platsuppsättning måste ha samma arbetsklass. Använda samma arbetsklass som du gjorde i plockinstruktionen.  
-7. Klicka på Spara.
-    * Observera att kryssrutan Giltig nu är markerad.  
+1. Välj **Ny**.
+2. I fältet **Arbetstyp**, välj **Välj**.
+3. I fältet **Arbetsklass-ID**, skriv `purchase`. Arbetsklassen att du som anges här är standardinställningen i alla arbetsrader av typen Välj som skapas med den här mallen. Arbetsklassen kan inte ersättas av arbetsorderraderna. Arbetsklasser används för att begränsa och/eller styra typen arbetsorderrader som en lagerställemedarbetare kan behandla på en mobil enhet.  
+4. Välj **Ny**.
+5. Välj **Placera** i fältet **Arbetstyp**.
+6. Ange ett värde i fältet **Arbetsklass-ID**. Instruktionerna för plock och plats är en uppsättning. Varje plock/platsuppsättning måste ha samma arbetsklass. Använda samma arbetsklass som du gjorde i plockinstruktionen.  
+7. Välj **Spara**. Observera att kryssrutan **Giltig** nu är markerad.  
 

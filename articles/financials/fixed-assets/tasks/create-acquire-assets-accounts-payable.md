@@ -3,7 +3,7 @@ title: Skapa och anskaffa tillgångar från leverantörsreskontra
 description: Den här uppgifthandboken går igenom skapande och anskaffning av en anläggningstillgång med inköpsprocessen.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2626877c907994d03cdae960c8501a858ca214bd
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 025639e6e5bdc6b95e9c496f11f29ed8ec8d388c
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1840035"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914686"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Skapa och anskaffa tillgångar från leverantörsreskontra
 
@@ -31,31 +31,28 @@ Den här uppgifthandboken går igenom skapande och anskaffning av en anläggning
 
 
 ## <a name="set-fixed-assets-parameters"></a>Ange parametrar för anläggningstillgångar
-1. Gå till Anläggningstillgångar > Inställning > Parametrar för anläggningstillgångar.
-2. Utöka eller komprimera avsnittet Inköpsorder.
-3. Markera kryssrutan Tillåt förvärv av tillgångar från inköp.
-4. Markera kryssrutan Skapa tillgång under bokföring av produktinleverans eller faktura.
+1. I **navigeringsfönstret** går du till **Moduler > Anläggningstillgångar > Inställningar > Parametrar för anläggningstillgångar**.
+2. Expandera snabbfliken **Inköpsorder**.
+3. Markera kryssrutan **Tillåt förvärv av tillgångar från inköp.**
+4. Markera kryssrutan **Skapa tillgång under bokföring av produktinleverans eller faktura**.
 
 ## <a name="create-a-new-vendor-invoice"></a>Skapa en ny leverantörsfaktura
-1. Gå till Leverantörsreskontra > Arbetsytor > Leverantörsfakturaregistrering.
-2. Klicka på Ny leverantörsfaktura.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Fakturakonto.
+1. I **Navigeringsfönster**, gå till **Moduler > Leverantörsreskontra > Arbetsytor > Leverantörsfakturapost**.
+2. Klicka på **Ny leverantörsfaktura.**
+3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Fakturakonto**.
 4. Klicka på länken på den valda raden i listan.
-5. Ange ett värde i fältet Antal.
-6. Ange ett datum i fältet Bokföringsdatum.
-7. Klicka på Lägg till rad.
-8. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.
-    * Antingen icke-lagerförda artiklar eller anskaffningkategorier kan användas för anskaffning av anläggningstillgångar.  
+5. I fältet **Antal**, skriv ett värde.
+6. Ange ett datum i fältet **Bokföringsdatum.**
+7. Klicka på **Lägg till rad**.
+8. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Artikelnummer**. Antingen icke-lagerförda artiklar eller anskaffningkategorier kan användas för anskaffning av anläggningstillgångar.  
 9. Klicka på länken på den valda raden i listan.
-10. Ange ett tal i fältet Kvantitet.
-    * En fakturarad skapar bara en anläggningstillgång, oberoende av kvantitet.  Fakturakvantitetsfältet överförs till anläggningstillgångskvantiteten.  
-11. Ange ett tal i fältet Enhetspris.
-12. Expandera eller dölj avsnittet Raddetaljer.
-13. Klicka på anläggningstillgångsfliken.
-14. Markera kryssrutan Skapa en ny anläggningstillgång.
-15. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Anläggningstillgångsgrupp.
+10. Ange ett nummer i fältet **Kvantitet**. En fakturarad skapar bara en anläggningstillgång, oberoende av kvantitet. Fakturakvantitetsfältet överförs till anläggningstillgångskvantiteten.  
+11. Ange ett tal i fältet **Enhetspris**.
+12. Visa snabbfliken **Radinformation**.
+13. Klicka på fliken **Anläggningstillgångar**.
+14. Markera kryssrutan **Skapa en ny anläggningstillgång.**
+15. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Anläggningstillgångsgrupp**.
 16. Välj den anläggningstillgångsgrupp som ska användas när du skapar den nya anläggningstillgången i listan.
 17. Klicka på länken på den valda raden i listan.
-18. Klicka på Bokför.
-    * Anläggningstillgången skapas och förvärvas när fakturan bokförs.  
+18. Klicka på **Bokför**. Anläggningstillgången skapas och förvärvas när fakturan bokförs.  
 

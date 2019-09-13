@@ -1,9 +1,9 @@
 ---
 title: ER Skapa en formatkonfiguration (november 2016)
-description: I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en formatkonfiguration för elektronisk rapportering (ER).
+description: Det här avsnittet förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en formatkonfiguration för elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1fd41b1724eb2e0405c0e7a7e0ff0aea4a945e0
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544781"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866812"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Skapa en formatkonfiguration (november 2016)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en formatkonfiguration för elektronisk rapportering (ER). Den här formatkonfiguration definierar formatet för elektroniska dokument som används för att bearbeta betalningar. I det här exemplet ska du skapa en konfigurering för exempelföretaget, Litware, Inc. För att slutföra dessa steg måste du först avsluta stegen i proceduren "Mappa modellen till utvalda datakällor".
+Det här avsnittet förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en formatkonfiguration för elektronisk rapportering (ER). Den här formatkonfiguration definierar formatet för elektroniska dokument som används för att bearbeta betalningar. I det här exemplet ska du skapa en konfigurering för exempelföretaget, Litware, Inc. För att slutföra dessa steg måste du först avsluta stegen i proceduren "Mappa modellen till utvalda datakällor".
 
 
 ## <a name="create-a-new-format-configuration"></a>Skapa en ny formatkonfiguration

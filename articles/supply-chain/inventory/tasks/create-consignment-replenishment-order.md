@@ -1,9 +1,9 @@
 ---
-title: Skapa en ny order för försändelseåteranskaffning
-description: I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försändelse, där du kan följa den förväntade leveransen från en leverantör till ditt försändelselager.
+title: Skapa en ny order för lagerpåfyllnad för försändelse
+description: I det här avsnittet visas hur du skapar en lagerpåfyllnadsorder för försändelse, där du kan följa den förväntade leveransen från en leverantör till ditt försändelselager.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,58 +17,48 @@ ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cf2e8f742fee2dedaac72902d207af0081700ca
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f426dbf00eace23da2f26eb50dd9675fe22ed445
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845556"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914811"
 ---
-# <a name="create-a-consignment-replenishment-order"></a>Skapa en ny order för försändelseåteranskaffning
+# <a name="create-a-consignment-replenishment-order"></a>Skapa en ny order för lagerpåfyllnad för försändelse
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försändelse, där du kan följa den förväntade leveransen från en leverantör till ditt försändelselager. Den visar även hur du registrerar en inleverans av produkter, så att försändelselagret är registrerat som lagerbehållning som ägs av leverantören. Denna procedur görs normalt av ett anskaffningsproffs. Du kan använda den här guiden i demonstrationsföretaget USMF. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations, version 1611.
-
-
-
+I det här avsnittet visas hur du skapar en lagerpåfyllnadsorder för försändelse, där du kan följa den förväntade leveransen från en leverantör till ditt försändelselager. Den visar även hur du registrerar en inleverans av produkter, så att försändelselagret är registrerat som lagerbehållning som ägs av leverantören. Denna procedur görs normalt av ett anskaffningsproffs. Du kan använda den här guiden i demonstrationsföretaget USMF. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations, version 1611.
 
 ## <a name="create-a-consignment-replenishment-order"></a>Skapa en ny order för lagerpåfyllnad för försändelse
-1. Gå till Anskaffning och källa > Försändelse > Order för försändelseåteranskaffning.
-2. Klicka på Ny.
-3. Ange leverantör US-104 i Vendor account.
-    * Du måste välja en leverantör som har registrerats som en ägare i sida för lagerägare.  
-4. Klicka på OK.
-5. Klicka på Lägg till rad.
-6. I fältet Item number anger du M9211CI.
-    * Du måste välja en artikel som har ställts in för försändelselager.  
-7. Ange ett tal i fältet Kvantitet.
-8. Ange ett datum i fältet Requested delivery date.
-    * Begärda och bekräftade datum används av MRP-motorn för varornas förväntade ankomst.  
-9. I fältet Bekräftat leveransdatum, ange ett datum.
-10. Expandera avsnittet Radinformation.
-11. Klicka på fliken Lagerdimensioner.
-12. Uppdatera sidan om du vill visa ägaren i fältet Inventory dimensions owner.
-    * Leverantören US-104 anges nu som ägare.  
+1. I navigeringsfönstret, gå till **Moduler > Anskaffning och källa > Försändelse > Order för försändelseåteranskaffning**.
+2. Välj **Ny**.
+3. I fältet **Leverantörskonto** väljer du leverantör **US-104** (du måste välja en leverantör som är registrerad som en ägare på sidan **lagerägare**). 
+4. Välj **OK**.
+5. Välj **Markera rad**.
+6. I fältet **Artikelnummer** anger du `M9211CI` (du måste välja en artikel som har ställts in för försändelselager).
+7. Ange ett nummer i fältet **Kvantitet**.
+8. Ange ett datum i fältet **Begärt leveransdatum**. Begärda och bekräftade datum används av MRP-motorn för varornas förväntade ankomst.  
+9. Ange ett datum i fältet **Bekräftat leveransdatum.**
+10. Visa avsnittet **Raddetaljer**.
+11. Välj fliken **Lagerdimensioner**.
+12. Uppdatera sidan om du vill visa ägaren i fältet **Ägare till lagerdimensioner**. Leverantören US-104 anges nu som ägare.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Kontrollera statusen för lagertransaktion
-1. Klicka på Lager.
-2. Klicka på Transaktioner.
-3. Markera vald rad i listan.
-    * Observera att fältet Receipt anges som Ordered.  
+1. Välj **Lager**.
+2. Markera **transaktioner**
+3. På den önskade raden, observera att fältet **Inleverans** anges som **Beställt**.  
 4. Stäng sidan.
 
 ## <a name="receive-items"></a>Ta emot artiklar
-1. Klicka på Produktinleverans.
-2. Ange ett värde i fältet External product receipt.
-3. Ange ett värde som är lägre än det som visas i fältet Quantity. 
-4. Klicka på OK.
+1. Välj **produktinleverans**
+2. Ange ett värde i fältet **Extern produktinleverans**.
+3. Ange ett värde som är lägre än det som visas i fältet **Kvantitet**. 
+4. Välj **OK**.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontrollera behållningslagret
-1. Klicka på Lager.
-2. Klicka på On-hand.
-3. Klicka på Overview.
-    * Artiklarna som har inlevererats som ett försändelselager ägt av leverantören finns tillgängliga i lager. Återstående kvantitet i lagerpåfyllnadsordern för försändelse anges i fältet Ordered in total.  
+1. Välj **Lager**.
+2. Välj **Behållning**.
+3. Välj **Översikt**. Artiklarna som har inlevererats som ett försändelselager ägt av leverantören finns tillgängliga i lager. Återstående kvantitet i lagerpåfyllnadsordern för försändelse anges i fältet **Totalt beställt**.  
 4. Stäng sidan.
-5. Klicka på Stäng.
 

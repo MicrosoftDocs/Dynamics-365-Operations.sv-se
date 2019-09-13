@@ -3,7 +3,7 @@ title: Överför fysiskt lager i lagerstället
 description: I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverföringsjournal för att kunna lagret registrera förflyttningen av en artikel från en plats till en annan på samma lagerställe.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7344bfa3be0d7345d3ac68202c7bc26bcac8ebb9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845267"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916586"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Överför fysiskt lager i lagerstället
 
@@ -32,40 +32,30 @@ I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverförin
 
 
 ## <a name="create-an-inventory-transfer-journal"></a>Skapa en lageröverföringsjournal
-1. Gå till Överför.
-2. Klicka på Ny.
-3. Ange eller välj ett värde i fältet Namn.
-4. Klicka på OK.
-    * Det finns alternativ för att ange från- och tilldimensioner för varje journalrad. Dessa är nödvändiga för den här journaltypen. Du kan överföra artiklar till platser med olika regler. I det här exemplet överför vi en artikel inom samma lagerställe, från en id-nummerstyrd plats till en plats som inte är id-nummerstyrd.   
+1. I **navigeringsfönstret**, gå till **Lagerhantering > Journalposter > Artiklar > Överför**.
+2. Klicka på **Ny**.
+3. I fältet **Namn**anger eller väljer du ett värde.
+4. Klicka på **OK**. Det finns alternativ för att ange från- och tilldimensioner för varje journalrad. Dessa är nödvändiga för den här journaltypen. Du kan överföra artiklar till platser med olika regler. I det här exemplet överför vi en artikel inom samma lagerställe, från en id-nummerstyrd plats till en plats som inte är id-nummerstyrd.   
 
 ## <a name="create-journal-lines"></a>Skapa journalrader
-1. Klicka på Ny.
-2. Ange eller välj ett värde i fältet Artikelnummer.
-    * Om du använder USMF kan du välja A0001.  
-3. Ange eller välj ett värde i fältet Från site.
-    * Om du använder USMF kan du välja 2.  
-4. Ange eller välj ett värde i fältet Till site.
-    * Om du använder USMF kan du välja 2.  
-5. Ange eller välj ett värde i fältet Från lagerställe.
-    * Om du använder USMF kan du välja 24.  
-6. Ange eller välj ett värde i fältet Till lagerställe.
-    * Om du använder USMF kan du välja 24.  
-7. Ange eller välj ett värde i fältet för Från plats.
-    * Om du använder USMF kan du välja FL-001.  
-8. Ange eller välj ett värde i fältet Till plats.
-    * Om du använder USMF kan du välja BULK-001.  
-9. Ange ett tal i fältet Kvantitet.
-10. Klicka på fliken Lagerdimensioner.
-11. Ange eller välj ett värde i fältet ID-nummer.
-    * Om du använder USMF kan du välja 24.  
-12. Klicka på Spara.
+1. På snabbfliken **Journalrader** klickar du på **Ny**.
+2. I fältet **artikelnummer** anger du eller väljer ett värde. Om du använder USMF kan du välja A0001.  
+3. Ange eller välj ett värde i fältet **Från site.** Om du använder USMF kan du välja 2.  
+4. Ange eller välj ett värde i fältet **Till site.** Om du använder USMF kan du välja 2.  
+5. Ange eller välj ett värde i fältet **Från lagerställe.** Om du använder USMF kan du välja 24.  
+6. Ange eller välj ett värde i fältet **Till lagerställe.** Om du använder USMF kan du välja 24.  
+7. Ange eller välj ett värde i fältet **Från plats.** Om du använder USMF kan du välja FL-001.  
+8. Ange eller välj ett värde i fältet **Till plats.** Om du använder USMF kan du välja BULK-001.  
+9. Ange ett nummer i fältet **Kvantitet**.
+10. På snabbfliken **Radinformation**, klicka på fliken **Lagerdimensioner**.
+11. Ange eller välj ett värde i **Från lagerdimensioner**, i fältet **ID-nummer**. Om du använder USMF kan du välja 24.  
+12. Klicka på **Spara**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Bokföra lageröverföringsjournalen
-1. Klicka på Bokför.
-2. Klicka på OK.
+1. Klicka på **Bokför** i **åtgärdsfönstret**.
+2. Klicka på **OK**.
 
 ## <a name="view-inventory-transactions"></a>Visa lagertransaktioner
-1. Klicka på Lager.
-2. Klicka på Transaktioner.
-    * Här kan du se de transaktioner som skapades när du bokförde din journal.  
+1. Klicka på **Lager**.
+2. Klicka på **Transaktioner.** Här kan du se de transaktioner som skapades när du bokförde din journal.  
 

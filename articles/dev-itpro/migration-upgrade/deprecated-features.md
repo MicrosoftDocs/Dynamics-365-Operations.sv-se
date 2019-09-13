@@ -3,7 +3,7 @@ title: Borttagna och inaktuella funktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 4aad4f2cf42b72256b5c4727bfd145d16af033ed
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863393"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867111"
 ---
 # <a name="removed-or-deprecated-features"></a>Borttagna och inaktuella funktioner
 
@@ -157,6 +157,17 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Inaktuell - Varningen blir ett kompileringsfel i en kommande plattformsuppdatering 26. |
+
+## <a name="dynamics-365-for-finance-and-operations-1000-with-platform-update-24"></a>Dynamics 365 for Finance and Operations 10.0.0 med plattformsuppdatering 24
+
+### <a name="renaming-released-products"></a>Ändra namn på frisläppta produkter 
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | När du använder funktionen **Byt namn på primär nyckel** för att ändra ItemId för en frisläppt produkt, uppdateras endast direkta referenser till sekundärnycklar. Alla andra referenser till den frisläppta produkten, t.ex. från produktionsorder, behåller det gamla ItemId. Detta kan leda till inkonsekventa data som kommer att blockera affärsprocesser. |
+| **Ersatt av en annan funktion?**   | Nr. |
+| **Produktområden som påverkas**         | Produktinformationshantering |
+| **Distribueringsalternativ**              | Allt  |
+| **Status**                         | Tas bort från Dynamics 365 for Finance and Operations 10.0.0 med plattformsuppdatering 24. I undantagsfall, t.ex. för att återställa från ett tidigare namn på primärnyckeln för en frisläppt produkt, är det möjligt att begära att Microsoft tillfälligt tar bort denna begränsning i åtgärden Byt namn på primär nyckel för frisläppta produkter. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 med plattformsuppdatering 23

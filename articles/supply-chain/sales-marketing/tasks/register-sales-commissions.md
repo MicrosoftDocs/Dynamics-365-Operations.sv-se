@@ -1,9 +1,9 @@
 ---
 title: Registrera försäljningsprovisioner
-description: I den här proceduren visas hur försäljningsprovisioner beräknas och registreras.
+description: I det här avsnittet beskrivs hur försäljningsprovision beräknas och registreras.
 author: omulvad
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,61 +16,58 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4c0e63923d0cb9a4a2c2bed87cfb72edfb0d2741
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: db27255c74c55b10680594ad23424253e4c3f79e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833916"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867063"
 ---
 # <a name="register-sales-commissions"></a>Registrera försäljningsprovisioner
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur försäljningsprovisioner beräknas och registreras. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Innan du startar guiden kör du guiden ”Ställ in regler för försäljningsprovision” för att vara säker på att alla nödvändiga inställningar för provisionsberäkningen har gjorts.
+I det här avsnittet beskrivs hur försäljningsprovision beräknas och registreras. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Innan du startar guiden kör du guiden ”Ställ in regler för försäljningsprovision” för att vara säker på att alla nödvändiga inställningar för provisionsberäkningen har gjorts.
 
 Skriv upp kundnumren och artikelnumret du har valt för provisionsprocessen, och använd dem när du ska skapa en försäljningsorder i den här guiden.
 
 
 ## <a name="invoice-a-sales-order-that-qualifies-a-salesperson-for-a-commission"></a>Fakturera en försäljningsorder som kvalificerar en säljare för provision
-1. Gå till försäljning och marknadsföring > beställningar > Alla beställningar.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kundkonto.
-4. Hitta och markera önskad post i listan.
-5. Klicka på länken på den valda raden i listan.
-6. Klicka på OK.
-7. Klicka på Alternativ i åtgärdsfönstret.
-8. Klicka på Ändra vy.
-9. Klicka på Huvudvy.
-10. Expandera avsnittet Inställningar.
-    * Värdet i försäljningsgruppfältet representerar en grupp med en eller flera säljare som har kopplats till det. Människorna i gruppen är de som ska få provision när ordern är fakturerad enligt fördefinierade frekvenser och distribution.   Värdet kopieras från kund-kort, men du kan ändra det om du vill.  Försäljningsgruppen finns också kopieras till kundorderraden. Du kan ändra den, så att den kan skilja sig från den i huvudet och/eller mellan raderna.  
-    * Värdet i provisiongruppsfältet representerar en grupp som du har skapat för en eller flera kunder med syftet att spåra provisioner.   Värdet kopieras från kund-kort, men du kan ändra det om du vill.   
-11. Klicka på Alternativ i åtgärdsfönstret.
-12. Klicka på Ändra vy.
-13. Klicka på Radvy.
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.
-15. Välj den artikel som du har ställt in för provisioner i listan. 
-16. Ange ett tal i fältet Kvantitet.
-    * Observera radens nettobelopp. Det representerar försäljningsintäkten, som i det här exemplet är grunden för provisionsberäkningen.  
-17. Klicka på Spara.
-18. Klicka på Faktura i åtgärdsfönstret.
-19. Klicka på Faktura.
-20. Expandera avsnittet Parametrar.
-21. Välj Alla i fältet Kvantitet.
-22. Välj Ja i fältet Bokför.
-23. Klicka på OK.
-24. Klicka på OK.
-    * Den kan ta minut eller så att bokföra transaktionen. Tillåt processen att slutföras och stäng inte sidan.  
+1. I navigeringsfönstret, gå till **Moduler > Försäljning och marknadsföring > Försäljningsorder > Alla försäljningsorder**.
+2. Välj **Ny**.
+3. I fältet **Kundkonto** välj önskad post i den nedrullningsbara menyn.
+4. Välj **OK**.
+5. Välj **Alternativ** i åtgärdsfönstret.
+6. Välj **Byt visning**.
+7. Välj **Huvudvy**.
+8. Expandera avsnittet **Inställningar**.
+
+    - Värdet i fältet **Försäljningsgrupp** representerar en grupp med en eller flera säljare som det tilldelats. Människorna i gruppen är de som ska få provision när ordern är fakturerad enligt fördefinierade frekvenser och distribution.   
+    - Värdet kopieras från kund-kort, men du kan ändra det om du vill.  
+    - Försäljningsgruppen finns också kopieras till kundorderraden. Du kan ändra den, så att den kan skilja sig från den i huvudet och/eller mellan raderna.  
+    - Värdet i fältet **Provisionsgrupp** representerar en grupp som du har skapat för en eller flera kunder i syfte att spåra provisioner.   
+    - Värdet kopieras från kund-kort, men du kan ändra det om du vill.   
+
+9. Välj **Alternativ** i åtgärdsfönstret.
+10. Välj **Byt visning**.
+11. Välj **Radvy**.
+12. I den nedrullningsbara menyn i fältet **Artikelnummer** väljer du den artikel som du har ställt in för provisioner. 
+13. Ange ett nummer i fältet **Kvantitet**. Observera radens nettobelopp. Det representerar försäljningsintäkten, som i det här exemplet är grunden för provisionsberäkningen.  
+14. Välj **Spara**.
+15. Välj **Faktura** i åtgärdsfönstret.
+16. Välj **Faktura**.
+17. Expandera avsnittet **Parametrar**.
+18. I fältet **Kvantitet**, välj **Alla**.
+19. Välj **Ja** i fältet **Bokför**.
+20. Välj **OK** och välj **OK** i nästa ruta. Den kan ta minut eller så att bokföra transaktionen. Tillåt processen att slutföras och stäng inte sidan.  
 
 ## <a name="review-the-registered-sales-commissions"></a>Granska de registrerade försäljningsprovisionerna
-1. Klicka på Faktura i åtgärdsfönstret.
-2. Klicka på Faktura.
-3. Klicka på Faktura i åtgärdsfönstret.
-4. Klicka på Provisionstransaktioner.
-    * På fliken Översikt visas raderna med provisionsbeloppen som är betalning till säljare som är kopplade till den fakturerade försäljningsordern. Vi tar en titt på detaljerna.     
-    * Om du använde guiden ”Ställ in regler för försäljningsprovision” när du ställde in försäljningsprovisionsgruppen, finns det två säljare som får provision och provisionen fördelas lika mellan dem.  
-    * I det här exemplet beräknas provisionens totala belopp som procent av försäljningsintäkten (nettobeloppet på orderraden).   
-5. Stäng sidan.
-6. Klicka på Verifikation.
-    * Du kan granska de verifikationstransaktionerna för provisionsbeloppen som har bokförts på de fördefinierade kontona för provisionsutgiften och provisionsskulden.  
+1. I åtgärdsfönstret väljer du **Faktura**, och sedan **Faktura**.
+2. I åtgärdsfönstret väljer du **Faktura**, och sedan **Provisionstransaktioner**.
+
+    - Fliken **Översikt** visar rader som representerar provisionsbelopp som betalas till säljarna som är associerade med fakturerad försäljningsorder. Vi tar en titt på detaljerna.  
+    - Om du använde guiden ”Ställ in regler för försäljningsprovision” när du ställde in gruppen **Provisionsförsäljning**, finns det två säljare som får provision och provisionen fördelas lika mellan dem.  
+    - I det här exemplet beräknas provisionens totala belopp som procent av försäljningsintäkten (nettobeloppet på orderraden).  
+3. Stäng sidan.
+4. Välj **Verifikation**. Du kan granska de verifikationstransaktionerna för provisionsbeloppen som har bokförts på de fördefinierade kontona för provisionsutgiften och provisionsskulden.  
 
