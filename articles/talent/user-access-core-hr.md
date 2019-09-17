@@ -17,32 +17,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ece6a81c54ef1421284fc79ab82ed3e31a972255
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6fc27a4c137fef2f8d204d90366c316389da08e6
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519134"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741738"
 ---
-# <a name="user-can-access-core-hr-but-not-the-onboard-or-attract-app"></a><span data-ttu-id="fe7bb-103">Användarna kan komma åt Core HR men inte appen Onboard eller Attract</span><span class="sxs-lookup"><span data-stu-id="fe7bb-103">User can access Core HR but not the Onboard or Attract app</span></span>
+# <a name="user-can-access-core-hr-but-not-the-onboard-or-attract-app"></a><span data-ttu-id="09376-103">Användarna kan komma åt Core HR men inte appen Onboard eller Attract</span><span class="sxs-lookup"><span data-stu-id="09376-103">User can access Core HR but not the Onboard or Attract app</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="fe7bb-104">**Miljöinformation**</span><span class="sxs-lookup"><span data-stu-id="fe7bb-104">**Environment details**</span></span>
+<span data-ttu-id="09376-104">**Miljöinformation**</span><span class="sxs-lookup"><span data-stu-id="09376-104">**Environment details**</span></span>
 
-- <span data-ttu-id="fe7bb-105">Microsoft Dynamics Lifecycle Services (LCS)-distributionen gjordes av användare A.</span><span class="sxs-lookup"><span data-stu-id="fe7bb-105">The Microsoft Dynamics Lifecycle Services (LCS) deployment was done by user A.</span></span>
-- <span data-ttu-id="fe7bb-106">Användare A lade till användare B som användare av Dynamics 365 for Talent Core HR.</span><span class="sxs-lookup"><span data-stu-id="fe7bb-106">User A added user B as a user to Microsoft Dynamics 365 for Talent Core HR.</span></span>
+- <span data-ttu-id="09376-105">Microsoft Dynamics Lifecycle Services (LCS)-distributionen gjordes av användare A.</span><span class="sxs-lookup"><span data-stu-id="09376-105">The Microsoft Dynamics Lifecycle Services (LCS) deployment was done by user A.</span></span>
+- <span data-ttu-id="09376-106">Användare A lade till användare B som användare av Dynamics 365 for Talent Core HR.</span><span class="sxs-lookup"><span data-stu-id="09376-106">User A added user B as a user to Microsoft Dynamics 365 for Talent Core HR.</span></span>
 
-<span data-ttu-id="fe7bb-107">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="fe7bb-107">**Issue**</span></span>
+<span data-ttu-id="09376-107">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="09376-107">**Issue**</span></span>
 
-<span data-ttu-id="fe7bb-108">Användare B kan komma åt Core HR, men inte Talent: Attract eller Talent: appen Onboard.</span><span class="sxs-lookup"><span data-stu-id="fe7bb-108">User B can access Core HR, but can't access the Talent: Attract or Talent: Onboard app.</span></span> <span data-ttu-id="fe7bb-109">När användaren försöker gå till **Upplevelsappar** tas den till en utvärderingsversion istället.</span><span class="sxs-lookup"><span data-stu-id="fe7bb-109">When the user tries to go to **Experience apps**, he or she is taken to a trial environment instead.</span></span>
+<span data-ttu-id="09376-108">Användare B kan komma åt Core HR, men inte Talent: Attract eller Talent: appen Onboard.</span><span class="sxs-lookup"><span data-stu-id="09376-108">User B can access Core HR, but can't access the Talent: Attract or Talent: Onboard app.</span></span> <span data-ttu-id="09376-109">När användaren försöker gå till **Upplevelsappar** tas den till en utvärderingsversion istället.</span><span class="sxs-lookup"><span data-stu-id="09376-109">When the user tries to go to **Experience apps**, he or she is taken to a trial environment instead.</span></span>
 
-<span data-ttu-id="fe7bb-110">**Lösning**</span><span class="sxs-lookup"><span data-stu-id="fe7bb-110">**Solution**</span></span>
+<span data-ttu-id="09376-110">**Lösning**</span><span class="sxs-lookup"><span data-stu-id="09376-110">**Solution**</span></span>
 
-<span data-ttu-id="fe7bb-111">Användare B måste tilldelas behörighet för att visa den Microsoft PowerApps-miljö som användaren skapat under etableringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="fe7bb-111">User B must be assigned the rights to view the Microsoft PowerApps environment that user A created during the provisioning process.</span></span>
+<span data-ttu-id="09376-111">Användare B måste tilldelas behörighet för att visa den Microsoft PowerApps-miljö som användaren skapat under etableringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="09376-111">User B must be assigned the rights to view the Microsoft PowerApps environment that user A created during the provisioning process.</span></span>
 
-<span data-ttu-id="fe7bb-112">Information finns i avsnittet ”beviljar behörighet för miljön” i [Etablera Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="fe7bb-112">For information, see the "Granting access to the environment" section in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
+<span data-ttu-id="09376-112">Information finns i avsnittet ”beviljar behörighet för miljön” i [Etablera Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span><span class="sxs-lookup"><span data-stu-id="09376-112">For information, see the "Granting access to the environment" section in [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).</span></span>
 
-<span data-ttu-id="fe7bb-113">**Långsiktig lösning**</span><span class="sxs-lookup"><span data-stu-id="fe7bb-113">**Long-term solution**</span></span>
+<span data-ttu-id="09376-113">**Långsiktig lösning**</span><span class="sxs-lookup"><span data-stu-id="09376-113">**Long-term solution**</span></span>
 
-<span data-ttu-id="fe7bb-114">Microsoft överväger att automatiskt tilldela rätt behörigheter till Onboard och Attract när en användare läggs till Core HR.</span><span class="sxs-lookup"><span data-stu-id="fe7bb-114">Microsoft is considering automatically assigning the appropriate rights to Onboard and Attract when a user is added to Core HR.</span></span>
+<span data-ttu-id="09376-114">Microsoft överväger att automatiskt tilldela rätt behörigheter till Onboard och Attract när en användare läggs till Core HR.</span><span class="sxs-lookup"><span data-stu-id="09376-114">Microsoft is considering automatically assigning the appropriate rights to Onboard and Attract when a user is added to Core HR.</span></span>
