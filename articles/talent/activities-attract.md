@@ -1,9 +1,9 @@
 ---
-title: Aktiviteter i processerna
-description: Det här avsnittet innehåller information om olika typer av aktiviteter som kan användas i anställningsprocesserna.
+title: Aktiviteter i processerna i Microsoft Dynamics 365 for Talent - Attract
+description: Det här avsnittet innehåller information om olika typer av aktiviteter som kan användas i anställningsprocesserna i Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c975b95e4195c795ec4c816b1f3a50461715feea
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519156"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739734"
 ---
-# <a name="activities-in-the-hiring-processes"></a>Aktiviteter i anställningsprocesserna
+# <a name="activities-in-hiring-processes"></a>Aktiviteter i anställningsprocesser
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,6 +37,9 @@ Aktiviteter kan läggas till som en del av anställningsprocessen i Microsoft Dy
 ## <a name="prospect-activity"></a>Potentiella kandidaters aktivitet
 
 Potentiella kandidaters aktivitet styr om potentiella kandidater kan läggas till ett jobb. Som standard kan potentiella kandidaters läggas till ett jobb. Om du vill inaktivera Potentiella kandidaters aktivitet, ange alternativet **Aktivera potentiella kandidater** till **Av**. När Potentiella kandidaters aktivitet aktiveras kan anställande chefer lägga till och visa potentiella kandidater och fliken **Potentiella kandidater** visas på jobbet.
+
+> [!NOTE]
+> Om du vill att kandidater ska kunna läggas till ett jobb från LinkedIn måste du ange alternativet **aktivera potentiella kunder** till **på**.
 
 ## <a name="application-activity"></a>Ansökningsaktivitet
 

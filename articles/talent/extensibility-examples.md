@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577805"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781452"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utöka Talent genom att använda PowerApps och Microsoft Flow- exempelscenarier
 
@@ -101,24 +101,15 @@ Den här mallen kan utökas så att den kan användas för vissa situationer som
 
 För att hämta mallen **Flöde – SharePoint Integration**, gå till [Flöde – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) på Microsoft Download Center.
 
-## <a name="admin-console-to-manage-talent-pools"></a>Administrationskonsol för hantering av talangpooler
+## <a name="referral-app"></a>Appen Hänvisning
+Du kan använda appen Hänvisning för att lägga till kandidater till en delad talangpool. Hänvisaren kan ange **förnamn**, **efternamn**, **e-postadress** och **Linkedln-adress** när han eller hon skickar en kandidat. Kandidatens metadata för källan fylls sedan i med hänvisarens information.
 
-När du aktiverar integrering med LinkedIn skapar Attract automatiskt en LinkedIn-talangpool automatiskt. När en rekryterare utbyter InMail med en rekrytering via LinkedIn skapar Attract en profil för rekryteringen och rekryteringen blir medlem i den LinkedIn talangpoolen. Denna PowerApps-app är användbar för att ordna om kandidater i talangpooler utifrån färdighet.
+Du kan bädda in den här appen i Självbetjäning för medarbetare (ESS) för att skicka referenser eller använda den som en hyperlänk i företagsportalen och köra den som en fristående app.
 
-Kör den här PowerApps-appen som en administrationskonsol när du vill utföra följande uppgifter:
-
-- Lista kandidater i en talangpool
-- Lägg till och ta bort kandidater från en talangpool
-- Flytta kandidater från en talangpool till en annan
-- Ta reda på om kandidater redan ingår i en talangpool innan du flyttar dem
-- Kontrollera kompetenserna hos kandidater innan du flyttar dem till andra talangpooler
-
-Det här PowerApps-appen använder många-till-många-relationer, så du kan använda den som en mall för andra scenarier där du behöver extrahera poster som har många-till-många-relationer.
-
-Om du vill hämta **Administrationskonsol för hantering av talangpooler**, gå till [Administrationskonsol för hantering av talangpooler](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) på Microsoft Download Center.
+Hämta **Appen Hänvisning** genom att gå till [Dynamics 365 for Talent utbyggbarhetslösning: appen Hänvisning](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importera den här appen och anpassa den om du vill lägga till fler funktioner.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Appen Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Migrera mellan innehavare och program](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Migrera mellan innehavare och program](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

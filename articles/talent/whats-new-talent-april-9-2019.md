@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519095"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856434"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Vad är nytt och ändrat i Dynamics 365 for Talent (9 april 2019)
 
@@ -37,10 +37,10 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Talen
 I Attract och Onboard loggas problem av slutanvändare genom funktionen rapportera ett problem skapar nu automatiskt supportfrågor i kundens LCS-projekt. Administratörer kan sedan sortera problemen och skicka dem till Microsoft när det behövs. Detta stämmer överens med hur Core HR hanterar supportfrågor för slutanvändaren.
 
 ### <a name="relevance-search"></a>Relevanssökning
-I talangpooler kan nu du söka efter särskilda kvalifikationer, namn eller utbildningsbakgrund i kandidatens hela databas. Du behöver inte längre ange vilken del av kandidatens profil som du vill genomsöka. Attract söker hela profilen och markerar alla matchningar som hittades. Attract söker även alla dokument som är tillgängliga för en kandidat och rangordnar intelligent sökresultaten. Dessutom kan du filtrera resultaten efter källa eller om de är en silvermedaljör. Mer information finns i [Sök och visa kandidatprofiler](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+I talangpooler kan nu du söka efter särskilda kvalifikationer, namn eller utbildningsbakgrund i kandidatens hela databas. Du behöver inte längre ange vilken del av kandidatens profil som du vill genomsöka. Attract söker hela profilen och markerar alla matchningar som hittades. Attract söker även alla dokument som är tillgängliga för en kandidat och rangordnar intelligent sökresultaten. Dessutom kan du filtrera resultaten efter källa eller om de är en silvermedaljör. Mer information finns i [Sök och visa kandidatprofiler](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Rekommendation av potentiell kandidat
-Attract kan hjälpa till att kickstarta källa för ett jobb när du aktiverar den genom att göra intelligenta kandidatrekommendationer från organisationens kandidatdatabas. Rekommendationerna omfattar de kompetenser och utbildningsinformation som identifierades vid sökning efter relevanta potentiella kandidater. Rekommendationerna visas på fliken **potentiella kandidater** under ett jobb om du aktiverar det under jobbets anställningsprocess. Mer information i [Rekommendation av potentiell kandidat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract kan hjälpa till att kickstarta källa för ett jobb när du aktiverar den genom att göra intelligenta kandidatrekommendationer från organisationens kandidatdatabas. Rekommendationerna omfattar de kompetenser och utbildningsinformation som identifierades vid sökning efter relevanta potentiella kandidater. Rekommendationerna visas på fliken **potentiella kandidater** under ett jobb om du aktiverar det under jobbets anställningsprocess. Mer information i [Rekommendation av potentiell kandidat](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Intervjuarens tillgänglighetstatus
 Intervjuplaneraren kommer snart att kunna visa status **Ej på kontoret, arbetar någon annan stans** för intervjuare för att hjälpa tidsplanera tider som fungerar bättre för intervjuare.

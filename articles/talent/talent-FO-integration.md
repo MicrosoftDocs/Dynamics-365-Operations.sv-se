@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617353"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742732"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Dynamics 365 for Talent till Dynamics 365 for Finance and Operations-integrering av frågor och svar
 
@@ -38,7 +38,7 @@ För Attract och Onboard, är all data inbyggd i Common Data Service.
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jag skapa en ny mappning utan att använda mallarna?
 
-Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integration. Mer information om projekt, mallar och dataintegration (DI) finns i [integrera data i Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+Mallar är startpunkten. Du kan skapa en egen mall, men det behövs alltid en mall när du skapar ett projekt för integration. Mer information om projekt, mallar och dataintegration (DI) finns i [integrera data i Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Kan jag mappa ekonomiska dimensioner för överföring mellan Talent och Finance and Operations?
 
@@ -133,7 +133,7 @@ Integrering med Finance and Operations är en tvåstegsprocess. Kontrollera för
 
 Om data inte visas som förväntat i Common Data Service, kontrollerar du att enheten stöds i integrationen. Om du vill inkludera ytterligare information i Common Data Service krävs en ändring på Microsoft-sidan.
 
-Om enheten stöds och data som finns på Common Data Service, verifiera att mappningen är korrekt i dataintegrerare. Om integratormappningen ser bra ut, verifiera att datahanteringsjobb har körts. Fel kan uppstå vid körning av batch-jobb. Mer information om hur du använder datahantering finns i [Datahantering](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Om enheten stöds och data som finns på Common Data Service, verifiera att mappningen är korrekt i dataintegrerare. Om integratormappningen ser bra ut, verifiera att datahanteringsjobb har körts. Fel kan uppstå vid körning av batch-jobb. Mer information om hur du använder datahantering finns i [Datahantering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Adresser för mina medarbetare är felaktiga när jag har importerat dem till Finance and Operations. Vad ska jag göra?
 
@@ -145,7 +145,7 @@ Under implementering av Talent, verifiera att nummerserier inte är desamma i Ta
 
 Se till att du väljer Dynamics 365 for Finance and Operations (för närvarande i förhandsgranskning) och Common Data Service när du skapar anslutningarna.
 
-## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Vid synkronisering av anställningar får jag felet ”CompanyInfo_FK finns inte” eller ”värdet 12/31/2154 11:59:59 pm i fältet Slutdatum för anställning saknas i den relaterade tabellen Anställning. Vad ska jag göra?
+## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Vid synkronisering av anställningar får jag felet ”CompanyInfo_FK finns inte” eller ”värdet 12/31/2154 11:59:59 pm i fältet Slutdatum för anställning saknas i den relaterade tabellen Anställning. Vad ska jag göra?
 
 Se till att du mappar till rätt juridiska personer. Synkronisering av juridisk person ingår inte i standardmallen, så det är normalt att varje juridisk person som finns i Talent och Common Data Service även finns i Finance and Operations.
 Se också till att du väljer rätt juridiska personer för associerad anslutningsinställning.
@@ -160,12 +160,12 @@ Uppdatera datatabellerna i Finance and Operations genom att gå till **datahante
 
 - Dataintegrerare (DI): 
 
-  - [Integrera data i Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrera data i Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [dataintegrerare felhantering och felsökning](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [dataintegrerare felhantering och felsökning](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Svara på DSR-förfrågningar för systemgenererade loggar i PowerApps Microsoft Flow och Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Svara på DSR-förfrågningar för systemgenererade loggar i PowerApps Microsoft Flow och Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Datahantering
 
-  - [Datahantering](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Datahantering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

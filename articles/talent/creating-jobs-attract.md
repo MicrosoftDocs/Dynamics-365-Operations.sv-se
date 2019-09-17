@@ -3,7 +3,7 @@ title: Skapa, godkänn och bokföra jobb i Attract
 description: Det här avsnittet beskriver delarna av ett jobb i Attract. Här förklaras också hur du skapar ett jobb.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
+ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519106"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "1773276"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Skapa, godkänn och bokföra jobb i Attract
+# <a name="create-a-job"></a>Skapa ett jobb
 
 [!include [banner](includes/banner.md)]
 
@@ -81,33 +81,6 @@ Mer information om jobbpubliceringar finns i [Funktionen för karriärwebbplats 
 > [!NOTE]
 > Funktionen jobbpublicering är bara tillgänglig för tillägget omfattande anställning. för Attract.
 
-### <a name="posting-jobs-to-linkedin"></a>Publicera jobb på LinkedIn 
-
-Innan du publicerar ett jobb från Attract till LinkedIn, måste administratören lägga till LinkedIn företags-ID och LinkedIn företagsnamn i **administrationsinställningar**. LinkedIn företags-ID krävs för att jobb som publiceras från Attract mappas till rätt företagssida.
-
-Ditt LinkedIn företags-ID är en sträng med nummer som unikt identifierar ditt företag inom LinkedIn. Mer information om hur du hittar LinkedIn företags-ID finns på [LinkedIn-webbplatsen](https://aka.ms/findID).
-
-För att uppdatera LinkedIn-företaget markerar du  **administratörscenter** på menyn **inställningar** (växel-symbol) och väljer sedan fliken **LinkedIn-integration** . Under avsnittet **Anslut till LinkedIn** anger du LinkedIn företagsnamn och företag-ID och sparar inställningarna.
-
-> [!NOTE]
-> Det finns fyra viktiga saker att komma ihåg om processen för jobbpubliceringar i LinkedIn.
-> 1. Jobb som har publicerats på LinkedIn publiceras som ”begränsad listor”-jobb. Begränsade listor-jobb kan inte erbjudas på LinkedIn-webbplatsen. Om du vill erbjuda begränsade listor-jobb som har publicerats i LinkedIn från Attract ska du arbeta med LinkedIn att tillåta ”Jobbförpackning”. Se länkarna nedan och kontakta LinkedIn support för mer information.
->
->    [Begränsade listor jämfört med Premium-jobbplatser för jobbförpackning](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Vanliga frågor om jobbförpackning](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. När du publicerar jobb på LinkedIn skickar Attract Microsoft 365 organisationsnamn mot jobbet. LinkedIn kopplar jobben i ett företag på LinkedIn-sidan utifrån det organisationsnamn som överförs. Kontrollera att Microsoft 365 organisationsnamn matchar företagsnamnet på LinkedIn om ditt jobb listas mot fel företag på LinkedIn.  
->
->    [Ändra adresskontakt m.m.](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    Kontakta LinkedIn support om du får problem efter detta steg. 
-> 
-> 1. Jobb som har publicerats på LinkedIn visas på den publicerade LinkedIn-webbplatsen. Det finns ingen testmiljö för att publicera jobb till LinkedIn. 
->
-> 1. Det kan ta upp till 24 timmar för jobb som publicerats på LinkedIn att visas för alla kandidater i LinkedIn, på grund av det aktuella batchjobbet för LinkedIn publiceringsprocess.
-
-
 ## <a name="activate"></a>Aktivera
 
 När ett jobb har aktiverats kan det publiceras och potentiella kandidater och sökanden kan läggas till. Alternativet att lägga till potentiella kandidater till ett jobb anges i aktiviteten potentiell kandidat i anställningsprocessen.
@@ -142,7 +115,7 @@ Om en användare redigerar jobbet när det är godkänt, men inte aktiverat åte
 Personer som är angivna som godkännare meddelas i Attract och ett e-postmeddelande för att informera dem om att de har en artikel att godkänna.  I e-postmeddelandet kan godkännare klicka på länken för att öppna jobbet, granska informationen och antingen godkänna eller avvisa. När projektets status anges som **godkänd** eller **avvisad** meddelas avsändaren i Attract och de tar emot ett e-postmeddelande. Dessutom får godkännare ett e-postmeddelande med påminnelse om de inte har svarat på en begäran om godkännande inom 24 timmar.
 
 > [!NOTE]
-> Du kan skapa anpassade e-postmallar för e-post för godkännande. Mer information [Skapa och hantera e-postmallar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
+> Du kan skapa anpassade e-postmallar för e-post för godkännande. Mer information [Skapa och hantera e-postmallar](https://docs.microsoft.com/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Skapa ett jobb
 

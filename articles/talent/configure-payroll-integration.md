@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702828"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742930"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Konfigurera löneintegration mellan Talent och Dayforce
 
@@ -52,8 +52,8 @@ När integreringen aktiveras skapas dataexportpaket och filer, och frekvensen an
 
 Mer information om Azure-lagringskonton och anslutningssträngar för Azure-lagring, se följande Azure-avsnitt:
 
-- [Om Azure-lagringskonton](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurera anslutningssträngar för Azure-lagring](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [Om Azure-lagringskonton](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurera anslutningssträngar för Azure-lagring](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Teknisk information när löneintegration har aktiverats
 
@@ -123,10 +123,10 @@ Dayforce skapar följande avdrag baserat på den löneeffekt som definieras i f�
 
 Mer information om hur du definierar och hanterar ett förmånsprogram finns i följande avsnitt:
 
-- [Utveckla ett förmånsprogram för medarbetare](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Skapa en ny förmån](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definiera förmånsberättiganderegler och policyer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Registrera och ta bort förmåner för arbetare](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Utveckla ett förmånsprogram för medarbetare](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Skapa en ny förmån](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definiera förmånsberättiganderegler och policyer](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Registrera och ta bort förmåner för arbetare](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensation 
 
@@ -136,20 +136,20 @@ Dayforce använder kompensationsinformation för att beräkna en medarbetares ti
 
 Mer information om att kompensationsplaner finns i följande avsnitt:
 
-- [Skapa planer för fast kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Skapa planer för variabel kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Utveckla struktur och planer för lön/kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Bearbeta kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Definiera kompensationsprocessen och beräkna resultat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Registrera en medarbetare i en fast kompensationsplan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Registrera en medarbetare i en variabel kompensationsplan](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Skapa planer för fast kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Skapa planer för variabel kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Utveckla struktur och planer för lön/kompensation](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Bearbeta kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Definiera kompensationsprocessen och beräkna resultat](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Registrera en medarbetare i en fast kompensationsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Registrera en medarbetare i en variabel kompensationsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Jobb 
 
 Ett jobb är den samling uppgifter och ansvarsområden som avkrävs en person som utför ett jobb. Mer information finns i följande avsnitt:
 
-- [Installera komponenter för ett jobb](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Definiera nya jobb](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Installera komponenter för ett jobb](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Definiera nya jobb](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Befattningar
 
@@ -173,8 +173,8 @@ Om flera befattningar på samma avdelning är associerade med samma jobb konsoli
 
 Mer information finns i följande avsnitt:
 
-- [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Ställ in befattningar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Ställ in befattningar](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Avdelningar
 
@@ -182,8 +182,8 @@ En avdelning är en driftenhet som representerar en kategori eller verksamhetsom
 
 Mer information finns i följande avsnitt:
 
-- [Skapa en avdelning och associera den med avdelningshierarkin](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definiera nya avdelningar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Skapa en avdelning och associera den med avdelningshierarkin](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definiera nya avdelningar](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Lönecykler och löneperioder
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 865baedd66eb6d87d7c2ddef1b552cc831345842
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3d02db8fefb0f00925f862cee8c2cec707f849d9
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519153"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741735"
 ---
 # <a name="run-the-compensation-process"></a>Kör kompensationsprocessen
 
@@ -42,10 +42,10 @@ Här är dokumentationen för kompensation:
 
 - Inställning:
 
-    - [Kompensationsplaner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/compensation-plans)
-    - [Skapa planer för fast kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-    - [Skapa planer för variabel kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+    - [Kompensationsplaner](https://docs.microsoft.com/dynamics365/unified-operations/talent/compensation-plans)
+    - [Skapa planer för fast kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+    - [Skapa planer för variabel kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
 
 - Process:
 
-    - [Bearbeta kompensation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
+    - [Bearbeta kompensation](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)

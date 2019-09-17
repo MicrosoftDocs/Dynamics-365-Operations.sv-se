@@ -1,6 +1,6 @@
 ---
-title: Få insikter om anställningsprocessen med analysrapporter
-description: Det här ämnet beskriver de analytiska rapporterna för Attract
+title: Använda analysrapporter i Microsoft Dynamics 365 for Talent - Attract
+description: Det här ämnet beskriver analysrapporterna för insikter om anställningsprocessen i Microsoft Dynamics 365 for Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516570"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742901"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>Få insikter om anställningsprocessen med analysrapporter
+# <a name="use-analytic-reports"></a>Använd analysrapporter
 
 Analytiska rapporter i Attract ger en OOTB-lösning (färdigkonfigurerade) för anställning av processinsikter. Tillgängliga funktioner omfattar:
 
@@ -81,8 +81,8 @@ Jobbanalys-rapporter visar data för det valda jobbet. Analysnav rapporterar sam
 
 ## <a name="cross-filter"></a>Korsfilter
 
-En av de fantastiska funktionerna i Power BI är hur alla visuella element på en rapportsida är sammankopplade. Om du markerar en datapunkt på något av de visuella elementen, är alla andra visuella element på sidan som innehåller data ändringar baserade på den markeringen. Läs mer och se ett exempel på [hur visuella element korsfiltrerar varandra i en Power BI-rapport.](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions)
+En av de fantastiska funktionerna i Power BI är hur alla visuella element på en rapportsida är sammankopplade. Om du markerar en datapunkt på något av de visuella elementen, är alla andra visuella element på sidan som innehåller data ändringar baserade på den markeringen. Läs mer och se ett exempel på [hur visuella element korsfiltrerar varandra i en Power BI-rapport.](https://docs.microsoft.com/power-bi/consumer/end-user-interactions)
 
 ## <a name="export-to-excel"></a>Exportera till Excel
 
-Om du vill visa rapportdata i Excel kan du klicka på alternativmenyn (tre punkter) på en bild och välja **Exportera underliggande data**. Exporterade data exporteras som filtrerade och respekterar användarbehörigheterna för att Attract. Mer information finns i [exportera data från visualiseringar](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data)
+Om du vill visa rapportdata i Excel kan du klicka på alternativmenyn (tre punkter) på en bild och välja **Exportera underliggande data**. Exporterade data exporteras som filtrerade och respekterar användarbehörigheterna för att Attract. Mer information finns i [exportera data från visualiseringar](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data)
