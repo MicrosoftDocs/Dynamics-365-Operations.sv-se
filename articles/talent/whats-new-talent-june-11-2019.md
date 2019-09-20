@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 42b9541b152d2a6daa1dbf95ecf30a2f51eb36f3
-ms.sourcegitcommit: 31a918d357a7182f3870713a9c4455bd5c44cd58
+ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "1634490"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741636"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (11 juni 2019)
 
@@ -76,9 +76,9 @@ Entiteten Uppgiftsgrupp har lagts till.
 
 ### <a name="preview-features-will-be-enabled-only-in-sandbox-environments"></a>Funktionerna för förhandsgranskning aktiveras bara i begränsade miljöer
 
-Mer information om hur du ändringar publiceras finns i [Etablera Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Mer information om hur du ändringar publiceras finns i [Etablera Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
-När du etablerar en ny instans av Talent kan du ange om instanstypen är produktion eller begränsat läge. Med instanstypen Begränsat läge kan tidig test av nya funktioner göras. Alla befintliga Talent-instanser kommer att uppdateras till instanstypen **produktion**. Om du vill uppdatera en av dina befintliga förekomster till instanstypen **Begränsat läge** kontaktar du [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) för att initiera ändringsbegäran.
+När du etablerar en ny instans av Talent kan du ange om instanstypen är produktion eller begränsat läge. Med instanstypen Begränsat läge kan tidig test av nya funktioner göras. Alla befintliga Talent-instanser kommer att uppdateras till instanstypen **produktion**. Om du vill uppdatera en av dina befintliga förekomster till instanstypen **Begränsat läge** kontaktar du [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) för att initiera ändringsbegäran.
 
 ### <a name="restrict-the-leave-types-in-time-off-requests"></a>Begränsa tjänstledighetstyperna i ledighetsansökningar
 

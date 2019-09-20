@@ -1,6 +1,6 @@
 ---
-title: Källkandidater med talangpooler
-description: Det här avsnittet beskriver hur du skapar och konfigurerar talangpooler i Attract.
+title: Skaffa kandidater med talangpooler i Microsoft Dynamics 365 for Talent - Attract
+description: Det här avsnittet beskriver hur du skapar och konfigurerar talangpooler i Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711304"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741877"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Källkandidater med talangpooler
+# <a name="source-candidates-with-talent-pools"></a>Skaffa kandidater med talangpooler
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Följ instruktionerna nedan för att skapa och dela en talangpool.
 ## <a name="search-and-view-candidate-profiles"></a>Söka och visa kandidatprofiler
 
 > [!NOTE] 
-> Den här funktionen är för närvarande i förhandsgranskning. Om du vill prova den måste du [aktivera den i Attract administrationsinställningar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> Den här funktionen är för närvarande i förhandsgranskning. Om du vill prova den måste du [aktivera den i Attract administrationsinställningar](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature). 
 
 Talangpooler låter dig visa kandidaters profil, LinkedIn-information, relaterade dokument och ansökningshistorik. Du kan söka igenom hela databasen över alla kandidater till någon talangpool, inklusive stängda och aktiva sökande.
 
@@ -116,7 +116,7 @@ Alla användare har en gemensam vy över kandidatprofiler. Fliken **profil** vis
 
     Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i programmet med Microsoft Office 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
 
-- Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn Recruiter-anslutning måste skapas. Mer information finns i [Anskaffning med LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn Recruiter-anslutning måste skapas. Mer information finns i [Anskaffning med LinkedIn Recruiter](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Endast kandidater kan uppdatera färdigheter, utbildningshistorik och arbetserfarenhet.

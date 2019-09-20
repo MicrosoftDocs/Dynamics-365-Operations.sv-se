@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: ebc82ada31d2803800358cd9aecfe389ada8f0dc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2cfa180f992a4f7a9b2e21e0fb3e0845c7546c94
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519150"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742735"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Spåra källor för kandidatprofiler och ansökningar 
+# <a name="track-candidate-sources"></a>Spåra kandidatkällor
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationsinställningar** i Attract. En framtida version kommer att tillhandahålla källspårningsrapporter. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+> Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationsinställningar** i Attract. En framtida version kommer att tillhandahålla källspårningsrapporter. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 När det gäller kandidater för ett jobb, spårar Attract automatiskt källan till sina ansökningar och ger dig värdefull information som hjälper dig att följa upp dina rekryteringsmål. Rekryterare och anställande chefer kan också välja en ansökningskälla medan de manuellt lägger till en kandidat till ett jobb eller en talangpool.
 
 Du kan visa ansökningskällan i ansökningsaktivitetsinformationen under fliken **aktivitet** samt i ansökningshistoriken under **profil** i talangpooler. Du hittar en kandidats profilkälla i kandidatens information under fliken **profil** i både ansökningar och i talangpooler.
 
 > [!NOTE] 
-> Du hittar processmallar i [tillägget för omfattande anställning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> Du hittar processmallar i [tillägget för omfattande anställning](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 
 ## <a name="pre-configured-sources"></a>Förkonfigurerade källor
 
@@ -93,7 +93,7 @@ Standardkällistan innehåller gemensamma ansökningskällor. Vissa källtyper s
 
 ## <a name="customize-the-source-list"></a>Anpassa källistan 
 
-Du kan utöka källistan till att inkludera ytterligare ansökningskällor. Om du vill anpassa listan följer du instruktionerna i [utöka alternativuppsättningar i Attract](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Redigera entiteten **TalentSource** till att inkludera ytterligare källor. 
+Du kan utöka källistan till att inkludera ytterligare ansökningskällor. Om du vill anpassa listan följer du instruktionerna i [utöka alternativuppsättningar i Attract](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Redigera entiteten **TalentSource** till att inkludera ytterligare källor. 
 
 För att undvika att negativ påverkan av användargränssnittet ska du inte redigera eller ta bort enum-värdet **TalentCategory** (inte namn) för följande:
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519157"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741900"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (5 mars 2019)
 
@@ -43,10 +43,10 @@ I Attract finns flera fält som består av alternativuppsättningar i Common Dat
 ## <a name="changes-in-onboarding"></a>Ändringar i Onboard
 
 ### <a name="private-preview-for-onboard-teams"></a>Privat förhandsgranskning för Onboard-team
-Nu kan du enkelt dela och samarbeta på mallar i hela organisationen. Mer information finns i [dela regelverk inom företaget med Onboard-teams](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Nu kan du enkelt dela och samarbeta på mallar i hela organisationen. Mer information finns i [dela regelverk inom företaget med Onboard-teams](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>Privat förhandsgranskning för tilldelade platshållare
-Du kan utöka dina mallar genom att tilldela aktiviteter till roller i stället för individer. Roller tilldelas sedan individer när guiden skapas. Mer information finns i [Förenkla guideadministration genom att tilldela aktiviteter till roller](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+Du kan utöka dina mallar genom att tilldela aktiviteter till roller i stället för individer. Roller tilldelas sedan individer när guiden skapas. Mer information finns i [Förenkla guideadministration genom att tilldela aktiviteter till roller](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>Ändringar i Core HR
 **Skapa 8.1.2178**
@@ -71,7 +71,7 @@ Med denna ändring, när du begär ändringar i befintliga befattningar, kommer 
 Den här versionen innehåller andra mindre felkorrigeringar.
 
 ### <a name="upgrade-to-common-data-service"></a>Uppgradera till Common Data Service
-Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -79,4 +79,4 @@ Tidsgränser för uppgradering till Common Data Service för appar närmar sig s
 I många organisationer kan kompensations- och förmånsansvariga bara komma åt vissa kompensationsposter, t.ex. poster för chefer eller regionsbaserade anställda. Med den här ändringen kan du hantera och underhålla kompensationsplaner för olika medarbetare i organisationen. Fasta och variabla planer kan tilldelas säkerhetsroller som bestämmer åtkomsten till planer och medarbetardata relaterade till planerna, till exempel lön eller bonusposter. Endast roller med viss åtkomst ska kunna bearbeta kompensation för dessa anställda.
 
 ###  <a name="platform-update-24"></a>Plattform update 24
-Ytterligare information om plattformsuppdatering 24 finns i [Nyheter eller ändringar i Finance and Operations plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Ytterligare information om plattformsuppdatering 24 finns i [Nyheter eller ändringar i Finance and Operations plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

@@ -1,9 +1,9 @@
 ---
-title: Skapa en bra integreringsupplevelse
-description: När integreringen utförs på ett bra sätt, ger den nya medarbetare en känsla av samhörighet i sin nya organisation.
+title: Kom igång med Onboard
+description: Det här avsnittet hjälper dig att komma igång med Microsoft Dynamics 365 for Talent - Onboard. Ombord hjälper dina nyanställda att få en stark start genom att ge dem en guide som tar dem smidigt genom integreringsprocessen.
 author: andreabichsel
 manager: ''
-ms.date: 11/14/2017
+ms.date: 06/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -16,77 +16,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 805f74a0cf618254b7d5fb9a1195dc75832dc0ca
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6526f320be7d18af92406149633b3e15d0be2291
+ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519085"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "1731223"
 ---
-# <a name="create-an-engaging-onboarding-experience"></a>Skapa en bra integreringsupplevelse
+# <a name="get-started-with-onboard"></a>Kom igång med Onboard
 
 [!include [banner](includes/banner.md)]
 
-Om integreringen sker på ett effektivt sätt hjälper den nya medarbetare att arbeta mer effektivt, samtidigt som de även får en känsla av att de har hittat rätt i sin nya roll. Integreringen kan hjälpa nya medarbetare att förstå sina nya roller snabbare och bättre än de annars hade gjort, och de får dessutom ett försprång i fråga om att skapa relationer som kan hjälpa dem att lyckas. Omvänt kan en ineffektiv integreringsupplevelse få medarbetaren att känna tvivel över sitt beslut att gå med i din organisation. En undersökning som genomförts av Gartner år 2014 fann att nästan en tredjedel av de 1 005 svarande som lämnat ett jobb under de första sex månaderna gjorde detta efter de riktlinjer man fick från ledningen var oklara, utbildningen ineffektiv, eller på grund av att man inte lyckades skapa effektiva relationer i sin nya miljö.
+Med hjälp av Microsoft Dynamics 365 for Talent: Onboard kan du hjälpa dina nya medarbetare att prestera mer effektivt och få en känsla av tillhörighet i sina nya roller. En effektiv integreringsprocess hjälper nyanställda att förstå sina nya roller. Det ger dem också ett försprång i upprättandet av värdefulla relationer som kommer att bidra till att säkerställa deras framgång.
 
-## <a name="have-an-onboarding-program-in-place"></a>Ha ett integreringsprogram på plats
-Det är viktigt att förstå hur och var du kan förbättra din integreringsprocess. Följande frågor kan hjälpa dig att analysera och förbättra din integreringsprocess på ett systematiskt sätt.
+Med Onboard kan du snabbt skapa en integrationsguiden som välkomnar dina nyanställda och gör dem entusiastiska över att gå med i organisationen.
 
-- Vilken avgångskvot har du?
-- Lyckas dina nya medarbetare slutföra samtliga sina erforderliga integreringsuppgifter?
-- Hur lång tid tar det för en ny medarbetare att öka sin effektivitet?
-- Hur bedömer nya medarbetare sin tillfredsställelse?
+[![Integrationsguide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)
 
-Vänta inte tills medarbetarens första arbetsdag med att inleda integreringen. Integreringen bör starta när den nya medarbetaren har ett startdatum. Detta kallas ofta "för-integrering". Här har du chansen att hålla nyanställda nöjda med sitt val att ansluta sig till ditt företag, skapa relationer och visa upp företagets kultur och värden.
+Information om hur du skaffar och använder appen Onboard finns i följande avsnitt:
 
-En av de viktigaste integreringsaktiviteterna är att förbereda nyanställda inför deras första arbetsdag. Detta kan vara en nervös tid för dem. Minska stressen genom att skapa en checklista och agenda inför första arbetsdagen.
+- [Hämta Onboard‑appen](./onboard-get-app.md)
+- [Skapa en integrationsguide](./onboard-create-guide.md)
+- [Skapa en mall för integrationsguide](./onboard-create-template.md)
+- [Redigera integrationsguider och mallar](./onboard-edit-guides-templates.md)
+- [Dela innehåll med andra deltagare](./onboard-share-template.md)
+- [Visa status för uppgifter och integration av medarbetare](./onboard-view-status.md)
+- [Skapa anställningsteam i Onboard](./onboard-create-team.md)
 
-### <a name="what-to-include-in-a-checklist"></a>Vad som ska ingå i en checklista
+## <a name="see-also"></a>Se även
 
-- Vad som ska tas med, till exempel fotolegitimation och bankuppgifter.
-- Klädkod (om företaget har en sådan).
-- Vägbeskrivning till kontoret.
-- Namnet på en kontaktperson, eller ännu bättre en rekryteringskompis.
-- Alla företagshandböcker eller -policyer som de bör läsa.
-
-**Bonus**
-
-- Skicka dem lite företagsprylar, exempelvis en t-shirt eller en mugg.
-- Skicka videomeddelanden där teamet välkomnar dem till företaget.
-- Inkludera ett personligt välkomnande från VD eller annan chef.
-- Gör den första dagen speciell.
-
-Låt inte en nyanställd ifrågasätta sitt eget beslut att ansluta sig till ditt företag genom att göra ett dåligt intryck första dagen.
-
-## <a name="create-a-good-first-impression"></a>Gör ett gott första intryck
-
-Skapa en agenda för dagen och dela den med en den nyanställde. Fokusera inte bra på det praktiska. Se till att ha roligt, presentera dem för folk och visa dem runt på kontoret. Håll övriga medarbetare uppdaterade. Meddela dem att någon ny kommer att ansluta till företaget. Utelämna inte medarbetarna på IT-, löne- och andra administrativa avdelningar. Se till att nyanställda har allt de behöver för att komma igång. Detta inkluderar en arbetsyta, dator och autentiseringsuppgifter, programvaror och verktyg. Fokusera på relationer i stället för på pappersarbete.
-
-Relationer är nyckeln till att få nyanställda att komma igång på allvar. Ännu viktigare är att de skapar en känsla av gemenskap och tillhörighet inom ditt företag.
-
-- Hitta en expert eller en mästare inom ditt företag och utse denne till integreringskompis.
-- Sammanför nyanställda med jobbrelaterade gemenskaper (communities) eller intressegrupper. Detta är ett bra sätt att hitta coacher eller mentorer.
-- Dela gruppmedlemmarnas profiler (helst i förväg) för att skynda på kommunikation, kunskapsutbyte och nätverkande.
-- Glöm inte bort sociala grupper och händelser som anknyter till din anställdes personliga mål.
-
-## <a name="provide-training"></a>Erbjud utbildning
-
-Ge dina nyanställning det självförtroende och de verktyg som de behöver för att lyckas. Detta börjar med att tydligt definiera deras ansvar och ange dina förväntningar på hur detta ska uppnås. Skapa sedan en utbildningsplan som fokuserar på de färdigheter som de behöver för att uppfylla dina förväntningar. Fokusera inte bara på efterlevnadsbaserad utbildning.
-
-## <a name="set-clear-milestones"></a>Ange tydliga milstolpar
-
-Ange tydliga kontrollpunkter och feedback-loopar mellan dig och din nyanställda. Skapa så stora möjligheter att ingripa och korrigera kursen som möjligt. Du vill kunna ta tag i saker innan de växer till problem, eller till och med leder till avgång.
-
-Tidsplanera ett personligt möte med den nya medarbetaren innan dennes första vecka är slut. Detta är en bra tidpunkt att diskutera förväntningar, arbetsstilar och karriärutveckling.
-
-Definiera 30-, 60- och 90-dagarsmål för dina senaste teammedlemmar. När målen har angetts måste du regelbundet se efter hur deras framsteg utvecklas mot dessa mål.
-
-## <a name="measure-and-optimize"></a>Mäta och optimera
-
-När du inför ett nytt integreringsprogram, var särskilt noggrann med följande: 
-
-- Förbättras avgångskvoten?
-- Ökar tillfredsställelsen bland nyanställda? 
-
-Mät dessa uppgifter och gör små förbättringar i samband med varje nyanställning.
-
+- [Prova eller köp appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
+- [Nyheter](./whats-new.md)
+- [Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support](./talent-support.md)

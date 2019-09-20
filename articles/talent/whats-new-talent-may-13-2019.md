@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: dac453ee83492655b6681b9784af4712bf39fc2a
-ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.openlocfilehash: ffeeb3e2f5279a84c4c060b04fe46836b778f6c5
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1591512"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856458"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-13-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (13 maj 2019)
 
@@ -47,7 +47,7 @@ Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Onboard
 
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Ange instanstyp vid etablering av Talent
 
-När du etablerar en ny instans av Talent kan du ange om instanstypen är **Produktion** eller **Begränsat läge**, vilket gör det möjligt att testa nya funktioner tidigt. Alla befintliga Talent-instanser kommer att uppdateras till instanstypen **produktion**. Om du vill uppdatera en av dina befintliga förekomster till instanstypen **Begränsat läge** kontaktar du [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) för att initiera ändringsbegäran.
+När du etablerar en ny instans av Talent kan du ange om instanstypen är **Produktion** eller **Begränsat läge**, vilket gör det möjligt att testa nya funktioner tidigt. Alla befintliga Talent-instanser kommer att uppdateras till instanstypen **produktion**. Om du vill uppdatera en av dina befintliga förekomster till instanstypen **Begränsat läge** kontaktar du [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) för att initiera ändringsbegäran.
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service enhetsstöd för anpassade fält
 

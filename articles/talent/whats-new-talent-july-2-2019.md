@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 32eb177da53ffa4cf8ecdc73a93e88f30778f69c
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 7c474b0ba40db238db33cfa45ddde55cd0724a9b
+ms.sourcegitcommit: f5556189a80ad9f23f1af3333837eae034ddb247
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729802"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1791986"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-july-02-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (02 juli 2019)
 
@@ -37,13 +37,18 @@ Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365
 
 Du kan nu konfigurera e-postinställningar så att e-postmeddelanden till kandidater, deltagare, rekryterare och anställningshanterare skickas från företagets konto för e-posttjänst. Mer information finns i [ansluta ett konto för e-posttjänsten](./attract-configure-email-settings.md#connect-an-email-service-account).
 
-#### <a name="offer-email-templates"></a>Erbjud e-postmallar 
+### <a name="offer-email-templates"></a>Erbjud e-postmallar 
 
 Du kan nu konfigurera din organisations e-postmallar för alla faser under förberedelse, godkännande och godkännande. Användarna kan antingen använda standard mallen eller anpassa den innan de skickar e-post. Om du vill ha mer information, se [Konfigurera inställningar för e-postmall](./attract-configure-email-settings.md#configure-email-template-settings).
 
 ### <a name="candidate-consent-on-application"></a>Godkännande av kandidat för ansökan
 
 Du kan nu aktivera länken villkor för din organisation. När den här inställningen är aktiverad måste de sökande godkänna villkoren innan de skickar sina jobbansökningar. 
+
+### <a name="coming-soon-in-attract"></a>Kommer snart i Attract
+#### <a name="job-approvals-appear-on-the-home-page"></a>Jobbgodkännanden visas på startsidan
+
+Godkännanden visas i avsnittet **Godkännanden** på instrumentpanelen. Godkännare kan granska godkännanden under **tilldelade dig**, som visar jobb-ID, jobbtitel, andra godkännare och datum när jobbet tilldelades. Användare som skickar ett jobb för godkännande kan granska sina jobb under **Begärdaav dig** vilket visar de godkännare som fortfarande måste godkänna det överförda jobbet.
 
 ## <a name="changes-in-onboard"></a>Ändringar i Onboard
 

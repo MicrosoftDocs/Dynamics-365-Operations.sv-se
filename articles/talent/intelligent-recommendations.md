@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620630"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741762"
 ---
 # <a name="intelligent-recommendations"></a>Intelligenta rekommendationer
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620630"
 Maskininlärning kan hjälpa rekryterare och personalchefer att snabbt identifiera de bästa kandidaterna för en befattning. Den kan också hjälpa potentiella kandidater att hitta en befattning som passar deras profil och intressen. När dessa funktioner används och feedback ges förbättras rekommendationer.
 
 > [!NOTE] 
-> - Funktionerna för intelligent rekommendation finns endast med [tillägget för omfattande anställning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> - Funktionerna för intelligent rekommendation finns endast med [tillägget för omfattande anställning](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 > - Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationscenter** i Attract. Ange **Kandidatrekommendation**, **Jobbrekommendation** och **Rekommendation av potentiell kandidat** till **på**. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](./access-preview-feature.md). 
 
 

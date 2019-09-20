@@ -1,6 +1,6 @@
 ---
-title: Funktionen för karriärwebbplats i Attract
-description: Det här avsnittet innehåller en översikt över funktionen för kandidatorienterad karriärwebbplats i Attract.
+title: Ställ in din karriärwebbplats i Microsoft Dynamics 365 for Talent - Attract
+description: Det här avsnittet innehåller en översikt över funktionen för kandidatorienterad karriärwebbplats i Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
-ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
+ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
+ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "1729713"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "1739781"
 ---
-# <a name="career-site-functionality-in-attract"></a>Funktionen för karriärwebbplats i Attract
+# <a name="set-up-your-career-site"></a>Ställ in din karriärwebbplats
 
 [!include[banner](../includes/banner.md)]
 
@@ -131,7 +131,7 @@ Du kan göra det enkelt för kandidater att ansöka om din befattningar genom at
 1. Logga in på Attract som en administratör.
 2. Välj knappen **inställningar** (växelsymbol) i det övre högra hörnet på sidan och välj sedan **administratörscenter**.
 3. Välj fliken **LinkedIn-integration** och anslut sedan till ett LinkedIn Recruiter-konto.
-4. I avsnittet **LinkedIn Recruiter System Connect integration** väljer du **aktiverad** för inställningen **Ansök med LinkedIn**.
+4. I avsnittet **LinkedIn Recruiter System Connectintegration** väljer du **aktiverad** för inställningen **Ansök med LinkedIn**.
 
 När du har aktiverat inställningen kan kandidater ansöka med hjälp av deras befintliga LinkedIn profildata. När kandidater ansöker genom att välja knappen **Ansök med LinkedIn** ombeds de att autentisera med LinkedIn om de inte redan är inloggade. Efter de har autentiserats ersätter deras LinkedIn-profil eventuella befintliga profildata som visas på ansökningssidan. Kandidater kan redigera informationen som behövs och sedan skicka in sin ansökan. Om en kandidat navigerar bort från sidan utan att ansöka om jobbet, uppdateras deras profildata inte i Attract.
 

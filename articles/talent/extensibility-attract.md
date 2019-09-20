@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505874"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795230"
 ---
 # <a name="extensibility-in-attract"></a>Utbyggbarhet i Attract
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 for Talent byggs ovanpå Common Data Service-plattformen 
 
 ## <a name="extending-option-sets-in-attract"></a>Utökade alternativuppsättningar i Attract
 
-En **alternativuppsättning** (plocklista) är en typ av fält som kan inkluderas i en enhet. Den definierar en uppsättning med alternativ. När en alternativuppsättning visas i ett formulär används en nedrullningsbar listkontroll.  I Attract finns flera fält som består av alternativuppsättningar.  Vi börjar introducera förmågan att utöka alternativuppsättningar, från och med fältet Avvisningsorsak, fältet Anställningstyp och fältet Tjänsteåldertyp.   Dessutom kan du lägga till lokaliserade visningsetiketter för de alternativ som du lägger till. Mer information finns i [Anpassa etiketter för alternativuppsättningar](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+En **alternativuppsättning** (plocklista) är en typ av fält som kan inkluderas i en enhet. Den definierar en uppsättning med alternativ. När en alternativuppsättning visas i ett formulär används en nedrullningsbar listkontroll.  I Attract finns flera fält som består av alternativuppsättningar.  Vi börjar introducera förmågan att utöka alternativuppsättningar, från och med fältet Avvisningsorsak, fältet Anställningstyp och fältet Tjänsteåldertyp.   Dessutom kan du lägga till lokaliserade visningsetiketter för de alternativ som du lägger till. Mer information finns i [Anpassa etiketter för alternativuppsättningar](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Jobbpublicering till LinkedIn-funktionen kräver användning av fälten **Anställningstyp** och **Tjänsteåldertyp** på sidan **Projektdetaljer**. Standardvärden i dessa fält stöds av LinkedIn och visas när jobbet har publicerats. Om du publicerar jobb på LinkedIn och du ändrar befintliga alternativuppsättningsvärden i fälten, kommer jobbet fortfarande publiceras och LinkedIn visar inte de anpassade värdena för **Anställningstyp** och **Tjänsteåldertyp**.  
@@ -62,15 +62,15 @@ Eftersom all data från Attract finns i Common Data Service kan du använda verk
 
 Du kan använda PowerApps för att enkelt skapa appar som ansluter dig till dina Attract-data och som använder uttryck såsom uttryck i Microsoft Excel för att lägga till logik. Appar som du skapar genom att använda PowerApps kan köras på webben och på Apple iOS- och Google Android-enheter.
 
-Exempelvis kan du göra universitetskarriärmässor enklare för rekryterare genom att skapa en enkel app där du skannar in meritförteckningarna, och matar kandidater till en plats i Attract. Alternativt kan du bygga ett program som hjälper till att uppfylla ditt företags krav på efterlevnad. Mer information om PowerApps och hur man skapar appar finns i integrera data i [Integrera data i Common Data Service](https://docs.microsoft.com/en-us/powerapps).
+Exempelvis kan du göra universitetskarriärmässor enklare för rekryterare genom att skapa en enkel app där du skannar in meritförteckningarna, och matar kandidater till en plats i Attract. Alternativt kan du bygga ett program som hjälper till att uppfylla ditt företags krav på efterlevnad. Mer information om PowerApps och hur man skapar appar finns i integrera data i [Integrera data i Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Du kan använda Microsoft Flow till att skapa automatiska arbetsflöden som körs ovanpå Attract-data. Du kan enkelt ansluta till hundratals populära appar och tjänster utan att behöva skriva kod. Du kan automatisera olika åtgärder genom att skapa flöden som samverkar med Attract jobb-, kandidat- och sökandeentiteter i Common Data Service. Till exempel när en kandidat godkänner ett erbjudande, kan ett meddelande skickas till ett integrationsteam eller nyheterna kan meddelas på Twitter. Mer information om flöden finns i [Microsoft Flow dokumentation](https://docs.microsoft.com/en-us/flow/).
+Du kan använda Microsoft Flow till att skapa automatiska arbetsflöden som körs ovanpå Attract-data. Du kan enkelt ansluta till hundratals populära appar och tjänster utan att behöva skriva kod. Du kan automatisera olika åtgärder genom att skapa flöden som samverkar med Attract jobb-, kandidat- och sökandeentiteter i Common Data Service. Till exempel när en kandidat godkänner ett erbjudande, kan ett meddelande skickas till ett integrationsteam eller nyheterna kan meddelas på Twitter. Mer information om flöden finns i [Microsoft Flow dokumentation](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
-Power BI låter dig skapa och visa anpassade rapporter och instrumentpaneler som ger dig bättre inblick i Attract-data. Mer information om Power BI och hur du skapar interaktiva rapporter och instrumentpaneler finns i [Power BI-dokumentationen](https://docs.microsoft.com/en-us/power-bi/).
+Power BI låter dig skapa och visa anpassade rapporter och instrumentpaneler som ger dig bättre inblick i Attract-data. Mer information om Power BI och hur du skapar interaktiva rapporter och instrumentpaneler finns i [Power BI-dokumentationen](https://docs.microsoft.com/power-bi/).
 
 ### <a name="custom-activities"></a>Anpassade aktiviteter 
 
