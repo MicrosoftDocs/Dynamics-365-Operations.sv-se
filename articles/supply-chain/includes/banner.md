@@ -1,2 +1,2 @@
-
-
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations licensieras nu som Dynamics 365 Finance och Dynamics 365 Supply Chain Management. Mer information om de här licensändringarna finns i [Uppdatering av licensen för Dynamics 365](https://docs.microsoft.com/dynamics365/licensing/update). 

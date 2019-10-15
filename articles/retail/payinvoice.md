@@ -1,6 +1,6 @@
 ---
 title: Ordna scenarier för fakturabetalning
-description: Detta ämne beskriver hur man konfigurerar Dynamics 365 for Retail så att det stöder olika scenarier som gäller fakturabetalningar.
+description: Detta ämne beskriver hur man konfigurerar Dynamics 365 Retail så att det stöder olika scenarier som gäller fakturabetalningar.
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb9101843396e489e4d7b63879e9df35e52fe64
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564980"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018023"
 ---
 # <a name="set-up-pay-invoice-scenarios"></a>Ordna scenarier för fakturabetalning
 
 [!include [banner](includes/banner.md)]
 
-Funktionen Betala fakturan i Dynamics 365 for Retail har utökats och stöder nu detta:
+Funktionen Betala fakturan i Dynamics 365 Retail har utökats och stöder nu detta:
 
 - Betalning av flera försäljningsorderfakturor i samma kassatransaktion.
 - De typer av kundfakturor som går att betala är fritextfakturor, projektbaserade fakturor och kreditfakturor.

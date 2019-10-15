@@ -1,6 +1,6 @@
 ---
 title: Konfigurera och behandla ett utbyte för en returorder
-description: I detta avsnitt beskriver vi hur du konfigurerar ett utbyte för en returorder i Microsoft Dynamics 365 for Retail.
+description: I detta avsnitt beskriver vi hur du konfigurerar ett utbyte för en returorder i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ce327a918159771df0acab276b1169d2ad77825
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561397"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025389"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurera och behandla ett utbyte för en returorder
 
 [!include [banner](includes/banner.md)]
 
-I tidigare versioner av Microsoft Dynamics 365 for Retail behandlades returer mot en kundorder genom att returorderdokumentet i Retail Headquarters användes. Returorderdokumentet går dock att använda för att enbart behandla produkter som returneras. De returnerade produkterna anges med en negativ kvantitet på returorderraderna. Försäljningar anges med en positiv kvantitet. Returorderdokumentet stöder emellertid inte positiva kvantiteter. Tidigare versioner av Retail stödde på grund av denna begränsning inte scenarier där produktbyten gjordes med hjälp av returorderdokumentet.
+I tidigare versioner av Dynamics 365 Retail behandlades returer mot en kundorder genom att returorderdokumentet i Retail Headquarters användes. Returorderdokumentet går dock att använda för att enbart behandla produkter som returneras. De returnerade produkterna anges med en negativ kvantitet på returorderraderna. Försäljningar anges med en positiv kvantitet. Returorderdokumentet stöder emellertid inte positiva kvantiteter. Tidigare versioner av Retail stödde på grund av denna begränsning inte scenarier där produktbyten gjordes med hjälp av returorderdokumentet.
 
 Denna funktion har dock lagts till så att det ska gå att byta ut produkter på returorder. Retail använder nu försäljningsorderdokumentet i stället för returorderdokumentet för att bearbeta dessa typer av transaktioner.
 

@@ -1,6 +1,6 @@
 ---
 title: Kostnadskonfiguration för fördelad orderhantering (DOM)
-description: I detta avsnitt beskrivs kostnadskonfigurationen för fördelad orderhantering (DOM) i Microsoft Dynamics 365 for Retail.
+description: I detta avsnitt beskrivs kostnadskonfigurationen för fördelad orderhantering (DOM) i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606789"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019449"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Kostnadskonfiguration för fördelad orderhantering (DOM)
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606789"
 
 Organisationer tar med flera kostnadskomponenter i beräkningen för att avgöra vilken plats som är bäst att uppfylla ordern från. Några av dessa kostnadskomponenter är leveranskostnad, hanteringskostnad och förpackningskostnad. Genom en kombination av dessa kostnader beräknas vilken plats som ska användas för uppfyllelse.
 
-När den första iterationen av fördelad orderhantering (DOM) i Microsoft Dynamics 365 for Retail optimerade tilldelningen av order för uppfyllelseplatser togs bara avståndet in i beräkningen. Även om avståndet kan korreleras mot kostnad, är det inte detsamma som kostnad. En leverans till nästa dag natten kostar till exempel mer än en tredagarsleverans eller sjudagarsleverans med samma avstånd.
+När den första iterationen av fördelad orderhantering (DOM) i Dynamics 365 Retail optimerade tilldelningen av order för uppfyllelseplatser togs bara avståndet in i beräkningen. Även om avståndet kan korreleras mot kostnad, är det inte detsamma som kostnad. En leverans till nästa dag natten kostar till exempel mer än en tredagarsleverans eller sjudagarsleverans med samma avstånd.
 
 Med funktionen för kostnadskonfiguration kan återförsäljare definiera och konfigurera ytterligare kostnadskomponenter som ska beräknas och tas hänsyn till när den bästa platsen att uppfylla orderrader fastställs.
 

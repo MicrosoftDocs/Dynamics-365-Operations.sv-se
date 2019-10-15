@@ -1,9 +1,9 @@
 ---
-title: Startsidan Hantering av underleverantörer
-description: Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations.
-author: ShylaThompson
+title: Hjälp resurser för Supply Chain Management
+description: Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för funktionerna i Supply Chain Management.
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557602"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278334"
 ---
-# <a name="supply-chain-management-home-page"></a>Startsidan Hantering av underleverantörer
+# <a name="help-resources-for-supply-chain-management"></a>Hjälp resurser för Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations. 
+Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser i Dynamics 365 Supply Chain Management. 
 
 ## <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 Öppna <a href="https://roadmap.dynamics.com/">översikten till Dynamics 365</a> för att visa vilka nya funktioner som lanseras och nya funktioner under utveckling. 
@@ -38,6 +38,7 @@ Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser fö
 
 Välj ett funktionsområde för att läsa mer om det.
 
+- [Tillgångshantering](asset-management/index.md)
 - [Kostnadsredovisning](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Kostnadshantering](cost-management/cost-management-home-page.md)  
 - [Lagerhantering](inventory/inventory-home-page.md)
@@ -46,9 +47,13 @@ Välj ett funktionsområde för att läsa mer om det.
 - [Produktinformationshantering](pim/product-information.md)
 - [Produktionskontroll](production-control/production-process-overview.md)
 - [Försäljning och marknadsföring](sales-marketing/overview-sales-marketing.md)
-- [Tjänstehantering](service-management/service-management-home-page.md)
+- [Servicehantering](service-management/service-management-home-page.md)
 - [Transporthantering](transportation/transportation-management-overview.md)
-- [Lagerstyrning](warehousing/warehouse-configuration.md)
+- [Hantering av distributionslager](warehousing/warehouse-configuration.md)
+
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+
+Mer information om Dynamics 365 Finance finns på sidan [Hjälpresurser för Dynamics 365 Finance](../finance/index.md).
 
 ## <a name="videos"></a>Videoklipp
 
@@ -113,6 +118,6 @@ Det finns många avsnitt om tillverkning och hantering av underleverantörer i <
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Rörligheten på lagerstället underlättas av Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
-Mer information om utbildning för Microsoft Dynamics 365 for Finance and Operations finns i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> utbildningsportalen för Microsoft Dynamics</a>. (CustomerSource-konto krävs) 
+Mer information om utbildning för Dynamics 365 finns i <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">utbildningsportalen för Microsoft Dynamics</a>. (CustomerSource-konto krävs) 
 
 

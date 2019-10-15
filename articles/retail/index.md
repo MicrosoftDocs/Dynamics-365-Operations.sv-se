@@ -1,6 +1,6 @@
 ---
-title: Välkommen till Dynamics 365 for Retail
-description: Startsida för Dynamics 365 for Retail
+title: Hjälpresurser för Dynamics 365 Retail
+description: Startsida för Dynamics 365 Retail
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -18,23 +18,26 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874937"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278116"
 ---
-# <a name="welcome-to-dynamics-365-for-retail"></a>Välkommen till Dynamics 365 for Retail
+# <a name="help-resources-for-dynamics-365-retail"></a>Hjälpresurser för Dynamics 365 Retail
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail är en komplett lösning för enhetlig handel i alla kanaler. Den omfattar försäljning, mobilitet, intelligence och produktivitet som hjälper detaljhandlare och arbetare att uppnå mer i molnet och på mobila enheter. Retail har ett omfattande stöd för en mängd olika affärsprocesser, till exempel funktioner för hantering av marknadsföring, lager och kanaler. Den ger också en integrerad kundupplevelse i alla beröringspunkter.
-
-> [!NOTE]
-> Dynamics 365 for Retail är nära besläktat med Dynamics 365 for Finance and Operations och Dynamics 365 for Talent. Samma funktioner kan visas i alla tre produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Microsoft Dynamics 365 for Retail; i avsnitt som främst berör huvudprodukten (Finance and Operations) blir produktnamnet Microsoft Dynamics 365 for Finance and Operations. I avsnitt som huvudsakligen berör personalfrågor blir produktnamnet Dynamics 365 for Talent.
+Microsoft Dynamics 365 Retail är en komplett lösning för enhetlig handel i alla kanaler. Den omfattar försäljning, mobilitet, intelligence och produktivitet som hjälper detaljhandlare och arbetare att uppnå mer i molnet och på mobila enheter. Retail har ett omfattande stöd för en mängd olika affärsprocesser, till exempel funktioner för hantering av marknadsföring, lager och kanaler. Den ger också en integrerad kundupplevelse i alla beröringspunkter.
 
 Välj ett funktionsområde som du vill veta mer om i det vänstra fönstret.
+
+## <a name="dynamics-365-commerce-preview"></a>Dynamics 365 Commerce (förhandsversion)
+
+Dynamics 365 Commerce – som bygger på de beprövade funktionerna i Dynamics 365 Retail – är en omfattande lösning i flera kanaler där backoffice, butik, kundtjänst och digitala upplevelser samordnas. Commerce är nu tillgänglig för kunder som är berättigade till en förhandsversion. Befintliga Dynamics 365 Retail-kunder kan uppdatera till Commerce när lösningen blir allmänt tillgänglig.
+
+Mer information om Dynamics 365 Commerce finns på sidan [Hjälpresurser för Dynamics 365 Commerce](../commerce/index.md).
 
 ## <a name="channel-management"></a>Kanalhantering
 
@@ -78,8 +81,8 @@ Du måste konfigurera flera komponenter för att definiera relationer mellan en 
 
 Om du har blivit ombedd att anpassa din miljö eller om du ansvarar för att distribuera och underhålla systemet, måste du läsa det specifika innehållet för utvecklare och systemadministratörer som gäller särskilt för Retail, förutom det mer allmänna innehållet.
 
-- [Dynamics 365 for Retail för IT-personal och utvecklare](dev-itpro/dev-retail-home-page.md)
-- [Utveckling och administration för Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail för IT-personal och utvecklare](dev-itpro/dev-retail-home-page.md)
+- [Utveckling och administration för Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
