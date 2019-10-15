@@ -1,0 +1,1620 @@
+- name: Utveckling och administration för Finance and Operations
+  href: ../../dev-itpro/index.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Nyheter och ändringar
+  items:
+    - name: Förhandsgranskningsfunktioner i Platform update 30 (november 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 29 (oktober 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-29.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 28 (juli 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-28.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 27 (juni 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-27.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 26 (maj 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-26.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 25 (april 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-25.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 24 (mars 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-24.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 23 (januari 2019)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-23.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 22 (december 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-22.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 21 (november 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-21.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 20 (september 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-20.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Platform update 15 (mars 2018)
+      href: ../../fin-and-ops/get-started/whats-new-platform-update-15.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Affärshändelser
+  items:
+    - name: Översikt över affärshändelser
+      href: ../../dev-itpro/business-events/home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Affärshändelser i program
+      href: ../../dev-itpro/business-events/app-business-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Affärshändelser i arbetsflöde
+      href: ../../dev-itpro/business-events/business-events-workflow.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Notifierar som affärshändelser
+      href: ../../dev-itpro/business-events/alerts-business-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Affärshändelser i Microsoft Flow
+      href: ../../dev-itpro/business-events/business-events-flow.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utvecklardokumentationen för affärshändelser
+      href: ../../dev-itpro/business-events/business-events-dev-doc.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Felsöka affärshändelser
+      href: ../../dev-itpro/business-events/troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Använd ärenden för affärshändelser
+      href: ../../dev-itpro/business-events/potential-use-cases.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Självstudier
+      items:
+        - name: Affärshändelser och Microsoft Flow
+          href: ../../dev-itpro/business-events/how-to/how-to-flow.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Affärshändelser och Azure Event Grid
+          href: ../../dev-itpro/business-events/how-to/how-to-eventgrid.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Affärshändelser och Azure Service Bus
+          href: ../../dev-itpro/business-events/how-to/how-to-servicebus.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Affärshändelser och arbetsflödesgodkännanden
+          href: ../../dev-itpro/business-events/how-to/how-to-workflow.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Affärshändelser och Microsoft Forms Pro
+          href: ../../dev-itpro/business-events/how-to/FormsPro.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Affärshändelser och Azure Event Hubs
+          href: ../../dev-itpro/business-events/how-to/event-hub.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Kontinuerlig leverans
+  items:
+    - name: Kontinuerlig leverans – startsida
+      href: ../../dev-itpro/dev-tools/continuous-delivery-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Frågor och svar om utveckling och kontinuerlig leverans
+      href: ../../dev-itpro/dev-tools/continuous-delivery-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Exkludera testpaket från skapandet
+      href: ../../dev-itpro/dev-tools/exclude-test-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Hantera tredjepartsmodeller och körningspaket med hjälp av källkontroll
+      href: ../../dev-itpro/dev-tools/manage-runtime-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Uppdatera modellversioner i automatiskt skapande
+      href: ../../dev-itpro/dev-tools/version-models-build.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Dataintegration
+  items:
+    - name: Välja en strategi för dataintegrering (importera/exportera)
+      href: ../../dev-itpro/data-entities/integration-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'API:er för dataintegration'
+      items:
+        - name: REST API för datahanteringspaket
+          href: ../../dev-itpro/data-entities/data-management-api.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tjänsteslutpunkter
+          items:
+            - name: Översikt över tjänsteslutpunkter
+              href: ../../dev-itpro/data-entities/services-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Felsökning av tjänstautentisering
+              href: ../../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: OData
+          href: ../../dev-itpro/data-entities/odata.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Utveckling av anpassade tjänster
+          href: ../../dev-itpro/data-entities/custom-services.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Återkommande integrationer
+          href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Testtjänster som använder verktyg från tredje part
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Koppling till Finance and Operations
+      href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utveckling för integration
+      items:
+        - name: Dataintegrering med datatabeller
+          items:
+            - name: Översikt över dataintegrering med datatabeller
+              href: ../../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utveckla en tabell för migrering av data
+              href: ../../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utveckla sammansatta datatabeller
+              href: ../../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Konfigurera delning ekonomiska data mellan företag
+              href: ../../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Skapa postmallar för att förenkla datainmatning
+              href: ../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Skapa poster med postmallar
+              href: ../../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dataintegrering med Common Data Service
+          items:
+            - name: Översikt över dataintegrering med Common Data Service
+              href: ../../dev-itpro/data-entities/data-integration-cds.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Synkron, dubbelriktad integrering'
+              items:
+                - name: Dataintegrering nästan i realtid
+                  href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Organisationshierarki för Common Data Service
+                  href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Företagskoncept i Common Data Service
+                  href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Integrerad kundmaster
+                  href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Enhetlig produktupplevelse
+                  href: ../../dev-itpro/data-entities/dual-write-product.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Integrerad leverantörsmaster
+                  href: ../../dev-itpro/data-entities/dual-write-vendor.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Integrerade platser och lagerställen
+                  href: ../../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Initial synkronisering
+                  href: ../../dev-itpro/data-entities/dual-write-initial.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Felsökning av dataintegrering
+                  href: ../../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Asynkron, enkelriktad integrering'
+              items:
+                - name: Konfigurera ett scenario för potentiell kund till pengar
+                  items:
+                    - name: Prospekt till kontanter
+                      href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
+                      href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
+                      href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
+                      href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
+                      href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Konfigurera integration med Field Service
+                  items:
+                    - name: Konfigurera integration med Field Service – översikt
+                      href: ../../supply-chain/sales-marketing/field-service.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera produkter i Finance and Operations till produkter i Field Service
+                      href: ../../supply-chain/sales-marketing/field-service-product.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/field-service-work-order.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
+                      href: ../../supply-chain/sales-marketing/field-service-invoice.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera lageröverföringar och justeringar från Field Service till Finance and Operations
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera information om lagernivåer från Finance and Operations till Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera produkter med lagerenhet från Finance and Operations till Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera projektlista från Finance and Operations till Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-project-list.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera lagerställen från Finance and Operations till Field Service
+                      href: ../../supply-chain/sales-marketing/synchronize-warehouse.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera arbetsorder med projekt från Field Service till Finance and Operations
+                      href: ../../supply-chain/sales-marketing/synchronize-work-orders.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Konfigurera Project Service Automation-integration
+                  items:
+                    - name: Översikt över Project Service Automation
+                      href: ../../financials/project-management/PSA-integration.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Parametrar för Project Service Automation-integration
+                      href: ../../financials/project-management/PSA-parameters.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera projektkontrakt och projekt
+                      href: ../../financials/project-management/project-contracts-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera projektuppgifter
+                      href: ../../financials/project-management/project-tasks-template.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera utgiftskategorier för projekt
+                      href: ../../financials/project-management/project-categories-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera projektuppskattningar med projektprognoser
+                      href: ../../financials/project-management/project-estimates-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+                    - name: Synkronisera projektutfall med projektets integrationsjournal
+                      href: ../../financials/project-management/project-actuals-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Konsumera externa webbtjänster
+      href: ../../dev-itpro/data-entities/consume-external-web-service.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Elektroniska meddelanden
+      href: ../../financials/general-ledger/electronic-messaging.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Datahantering
+  items:
+    - name: Översikt över datahantering
+      href: ../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Datatabeller
+      items:
+        - name: Översikt över datatabeller
+          href: ../../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurationsdataprojekt
+          href: ../../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kopiera konfigurationsdata mellan företag eller juridiska personer
+          items:
+            - name: Kopiera konfigurationsdata – översikt
+              href: ../../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Konfigurationsdatapaket
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Konfigurationsdatapaket (endast utgåvan från juli 2017)
+              href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Gör Enhetslagring tillgängligt som en Data Lake
+              href: ../../dev-itpro/data-entities/entity-store-data-lake.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurationsdatamallar
+          href: ../../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Spåra ändringar av en enhet
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Söka efter information om standarddatatabeller
+          href: ../../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Datamallar med flera kalkylblad
+          href: ../../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Aktivera ändringsspårning för enheter
+          href: ../../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurationsnycklar och datatabeller
+          href: ../../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurationsdatapaket
+          href: ../../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Jobb för import och export av data
+      items:
+        - name: Översikt över jobb för import och export av data
+          href: ../../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+          href: ../../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utveckling för datatabeller
+      items:
+        - name: Designprinciper och metodtips för datatabeller
+          href: ../../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa nya datatabeller
+          href: ../../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Egenskaper för datatabell
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa beräknade kolumner och virtuella fält
+          href: ../../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Korsföretagsbeteende
+          href: ../../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Hantera lands-/regionkoder
+          href: ../../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Arvmönster
+          href: ../../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Guideregler för datatabell
+          href: ../../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Metadataegenskaper
+          href: ../../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Valideringar, standarder och omappade fält'
+          href: ../../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Säkerhet och datatabeller
+          href: ../../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Använda testverktyg i tjänster från tredje part
+          href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
+          href: ../../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Ta med din egen databas
+      href: ../../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Automatiserad uppdatering av Enhetslagring
+      href: ../../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Automatisering av datauppgift
+      href: ../../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Arbetsyta - checklista för datavalidering
+      href: ../../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Felbeskrivningar för datahantering
+      href: ../../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Database movement-operationer
+  items:
+    - name: Översikt
+      href: ../../dev-itpro/database/dbmovement-operations.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Snabbstartsguider
+      items:
+        - name: Uppdatera databas
+          href: ../../dev-itpro/database/database-refresh.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Exportera en databas
+          href: ../../dev-itpro/database/export-database.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Importera en databas
+          href: ../../dev-itpro/database/import-database.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Återställning av databas till tidpunkt
+          href: ../../dev-itpro/database/database-point-in-time-restore.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Självstudier
+      items:
+        - name: Uppdatera för utbildningssyften
+          href: ../../dev-itpro/database/dbmovement-scenario-general-refresh.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Felsöka en kopia av produktionsdatabasen
+          href: ../../dev-itpro/database/dbmovement-scenario-debugdiag.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Exportera en kopia av standarddatabasen för användaracceptanstest (UAT)
+          href: ../../dev-itpro/database/dbmovement-scenario-exportuat.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Golden-konfigurationskampanj
+          href: ../../dev-itpro/database/dbmovement-scenario-goldenconfig.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Destruktivt test
+          href: ../../dev-itpro/database/dbmovement-scenario-destructivetests.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Demodata
+  items:
+    - name: Demonstrationsdata – översikt
+      href: ../../fin-and-ops/get-started/demo-data.md?toc=/dynamics365/unified-operations/financials/toc.json?toc=/dev-itpro/toc.json
+    - name: Generera demodata med datapaket
+      href: ../../dev-itpro/data-entities/generate-demo-data-packages.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Distribution
+  items:
+    - name: Distribuera demonstrationsmiljöer
+      href: ../../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Molndistribution
+      items:
+        - name: Molndistribution – översikt
+          href: ../../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Självbetjäning för distribution
+          items:
+            - name: Självbetjäning för distribution – översikt
+              href: ../../dev-itpro/deployment/infrastructure-stack.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Distribuera en ny miljö
+              href: ../../dev-itpro/deployment/deployenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Frågor och svar om distribution
+              href: ../../dev-itpro/deployment/deploymentFAQ.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kända problem med självbetjäningsdistribution
+              href: ../../dev-itpro/deployment/known-issues-new-deployment-experience.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Underhållsåtgärder för distributioner
+              href: ../../dev-itpro/deployment/maintenanceoperationsguide-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uppdatera en miljö
+              href: ../../dev-itpro/deployment/updateenvironment-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Felsöka miljöer som distribuerats med självbetjäningsdistribution
+              href: ../../dev-itpro/deployment/troubleshoot-newinfrastructure.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Slutför integration av Azure Resource Manager
+          href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Azure ExpressRoute och Finance and Operations
+          href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Arkitektur för Finance and Operations
+          href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tillämpa uppdateringar i molnmiljöer
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Installera uppdateringar och tillägg för molnstyrda kanalkomponenter i Retail
+          href: ../../dev-itpro/deployment/Update-retail-channel.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Initiera Retail Cloud Scale Unit
+          href: ../../dev-itpro/deployment/Initialize-Retail-Channels.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Datahemvist för Retail
+          href: ../../dev-itpro/deployment/retail-data-residency.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lokal distribution
+      items:
+        - name: Lokal distribution – startsida
+          href: ../../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lokal distribution – översikt
+          href: ../../dev-itpro/deployment/on-premises-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Planera och förbereda för lokala distributioner
+          href: ../../dev-itpro/deployment/plan-onprem-deployment.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Storlekskrav för maskinvara
+          href: ../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dynamics365/unified-operations/financials/toc.json?toc=/dev-itpro/toc.json
+        - name: Konfigurera lokala projekt
+          href: ../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurera och distribuera lokala miljöer
+          items:
+            - name: Ställ in och distribuera lokala miljöer – startsida
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-environments.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Distribuera lokala miljöer på (Platform update 12 och senare)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu12.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Distribuera lokala miljöer (Platform update 8 och 11)
+              href: ../../dev-itpro/deployment/setup-deploy-on-premises-pu8-pu11.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö
+              href: ../../dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Utveckla och distribuera anpassade modeller i lokala miljöer
+          href: ../../dev-itpro/deployment/develop-deploy-custom-models-on-premises.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: PowerBI.com integrering med lokala miljöer
+          href: ../../dev-itpro/analytics/entity-store-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurera omvända proxyservrar för lokala miljöer
+          href: ../../dev-itpro/deployment/onprem-reverseproxy.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uppdatera en lokal distribution
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lokal diagnostik
+          href: ../../dev-itpro/deployment/on-premises-diagnostics.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Distribuera om lokala distributioner
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lokal agent
+          items:
+            - name: AD FS Office 365-kompatibilitet
+              href: ../../dev-itpro/deployment/onprem-adfscompatibility.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Skripts för lokal agent för för-distribution och efter-distribution
+              href: ../../dev-itpro/lifecycle-services/pre-post-scripts.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uppdatera den lokala agenten
+              href: ../../dev-itpro/lifecycle-services/update-local-agent.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurera om miljöer
+          href: ../../dev-itpro/lifecycle-services/reconfigure-environment.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Internetanslutning för klient
+          href: ../../dev-itpro/user-interface/client-disconnected.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Felsöka lokala distributioner
+          href: ../../dev-itpro/deployment/troubleshoot-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Certifikatrotation
+          href: ../../dev-itpro/deployment/certificate-rotation-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Distribuera anpassad kod
+      items:
+        - name: Skapa modellpaket som kan distribueras
+          href: ../../dev-itpro/deployment/create-apply-deployable-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Installera distribuerbara paket från kommandoraden
+          href: ../../dev-itpro/deployment/install-deployable-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Avinstallera ett paket
+          href: ../../dev-itpro/deployment/uninstall-deployable-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Felsöka problem med paketprogram
+          href: ../../dev-itpro/deployment/deployable-package-troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Ta fram och anpassa
+  items:
+    - name: Ta fram och anpassa – startsida
+      href: ../../dev-itpro/dev-tools/developer-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Programstack och serverarkitektur
+      href: ../../dev-itpro/dev-tools/application-stack-server-architecture.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Hämta utvärderingskopior
+      href: ../../dev-itpro/dev-tools/get-evaluation-copy.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Registrera abonnemang på förhandsversioner
+      href: ../../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Distribuera och få tillgång till utvecklingsmiljöer
+      items:
+        - name: Utvecklingsmiljöer
+          href: ../../dev-itpro/dev-tools/access-instances.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurera enskilda utvecklingsmiljöer
+          href: ../../dev-itpro/dev-tools/configure-developer-vm.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa nya användare på utvecklingsdatorer
+          href: ../../dev-itpro/dev-tools/enable-development-machine.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Frågor och svar om hur du utvecklar och skapar virtuella maskiner som inte tillåter administratörsåtkomst
+          href: ../../dev-itpro/sysadmin/VMs-no-admin-access.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Byta namn på lokala miljöer för att komma åt Azure DevOps
+          href: ../../dev-itpro/migration-upgrade/vso-machine-renaming.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Systemkrav för utveckling
+          href: ../../dev-itpro/dev-tools/development-system-requirements.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'Versionskontroll, metadatasökning och navigering'
+      href: ../../dev-itpro/dev-tools/version-control-metadata-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Hantering av vagnpark – exempelprogram
+      items:
+        - name: Slutpunkt till slutpunkt-scenario för exempelprogrammet Hantering av vagnpark
+          href: ../../dev-itpro/dev-tools/fleet-management-sample.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Hantering av vagnpark – exempelprogram
+          href: ../../dev-itpro/dev-tools/introduction-fleet-management-sample.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Visual Studio-verktyg
+      items:
+        - name: Utvecklingsverktyg
+          href: ../../dev-itpro/dev-tools/development-tools-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Utvecklingsverktyg – självstudier
+          href: ../../dev-itpro/dev-tools/introduction-visual-studio.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Programkontroll
+          items:
+            - name: Installera BaseX för Programkontroll
+              href: ../../dev-itpro/dev-tools/install-basex.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Programutforskaren
+          href: ../../dev-itpro/dev-tools/application-explorer.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa och felsöka projekt
+          href: ../../dev-itpro/dev-tools/build-debug-project.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Versionsoperationer
+          href: ../../dev-itpro/dev-tools/build-operations.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kodredigerare – funktioner
+          href: ../../dev-itpro/dev-tools/code-editor.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa modeller och datamodellelement
+          items:
+            - name: Skapa modeller och datamodellelement – översikt
+              href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Riktlinjer för namngivning av tillägg
+              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Inaktivera modellanpassning och avskrivningsfunktioner
+              href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Rapport med anpassningsanalys
+          href: ../../dev-itpro/dev-tools/customization-analysis-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Elementdesigners
+          href: ../../dev-itpro/dev-tools/element-designers.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kommandon för att fastställa användning av element
+          href: ../../dev-itpro/dev-tools/element-usage.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Exportera och importera modeller
+          href: ../../dev-itpro/dev-tools/models-export-import.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Metadatasökning i Visual Studio
+          href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Modeller och paket
+          href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Projekttypen Finance and Operations
+          href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Verktygstillägg för Visual Studio
+          href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uppdatera utvecklingsverktygen för Visual Studio
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'X++, programmeringsspråk'
+      items:
+        - name: X++ och felsökningsfunktioner
+          href: ../../dev-itpro/dev-tools/new-x-debugger-features.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Felsöka kod av typen X++
+          href: ../../dev-itpro/dev-tools/debug-xpp.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: EventHandlerResult-klasser i scenarier med begäran eller svar
+          href: ../../dev-itpro/dev-tools/event-handler-result-class.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Skriva affärslogik med källkod av typen C# och X++'
+          href: ../../dev-itpro/dev-tools/write-business-logic.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ändringar i X++ och kompileraren för X++
+          href: ../../dev-itpro/dev-tools/programming-language-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'LINQ-provider för C#'
+          href: ../../dev-itpro/dev-tools/linq-provider-c.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skriva regelverksregler
+          href: ../../dev-itpro/dev-tools/author-best-practice-rules.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Egenskaper för Programutforskaren
+          href: ../../dev-itpro/dev-ref/application-explorer-aot-properties.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Språkreferens för X++
+          items:
+            - name: Språkreferens för X++ – översikt
+              href: ../../dev-itpro/dev-ref/xpp-language-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Variabler och datatyper
+              items:
+                - name: Variabler
+                  href: ../../dev-itpro/dev-ref/xpp-variables-data-types.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Primitiva datatyper
+                  href: ../../dev-itpro/dev-ref/xpp-data-primitive.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Sammansatta datatyper
+                  href: ../../dev-itpro/dev-ref/xpp-data-composite.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Samlingsklasser
+                  href: ../../dev-itpro/dev-ref/xpp-data-collection.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Utökade datatyper
+                  href: ../../dev-itpro/dev-ref/xpp-data-edt.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Uttryck, loopar och undantagshantering'
+              items:
+                - name: 'Kommentarer, användning och utskrift'
+                  href: ../../dev-itpro/dev-ref/xpp-statements-loops.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Villkorssatser
+                  href: ../../dev-itpro/dev-ref/xpp-conditional.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Loopa utdrag
+                  href: ../../dev-itpro/dev-ref/xpp-loops.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Hantering av undantag
+                  href: ../../dev-itpro/dev-ref/xpp-exceptions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Fel vid anslutning till SQL, X++-undantag'
+              href: ../../dev-itpro/dev-ref/sql-connection-error.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Operatorer för X++
+              href: ../../dev-itpro/dev-ref/xpp-operators.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Operatorernas rangordning för X++
+              href: ../../dev-itpro/dev-ref/xpp-operator-precedence.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Klasser och metoder för X++
+              items:
+                - name: Klasser och metoder
+                  href: ../../dev-itpro/dev-ref/xpp-classes-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Arv
+                  href: ../../dev-itpro/dev-ref/xpp-inheritance.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Statiska klassmedlemmar
+                  href: ../../dev-itpro/dev-ref/xpp-static-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Gränssnitt
+                  href: ../../dev-itpro/dev-ref/xpp-interfaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Bibliotek
+                  href: ../../dev-itpro/dev-ref/xpp-library-objects.md?toc=/dynamics365/unified-operations/financials/toc.json
+                - name: Händelser
+                  href: ../../dev-itpro/dev-ref/xpp-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Dataval och manipulering för X++
+              href: ../../dev-itpro/dev-ref/xpp-data-query.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Dataåtkomst med SysDa API
+              href: ../../dev-itpro/dev-ref/sysda.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Makron för X++
+              href: ../../dev-itpro/dev-ref/xpp-macros.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Attributklasser för X++
+              href: ../../dev-itpro/dev-ref/xpp-attribute-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Jämförelse mellan X++ och C#'
+              href: ../../dev-itpro/dev-ref/xpp-cs-comparison.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Syntax för X++
+              href: ../../dev-itpro/dev-ref/xpp-syntax.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'API-, klass- och registerreferens'
+      items:
+        - name: 'API-, klass- och registerresurser'
+          href: ../../dev-itpro/dev-ref/api-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kompileringsfunktioner för X++
+          href: ../../dev-itpro/dev-ref/xpp-compile-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Exekveringsfunktioner för X++
+          items:
+            - name: Exekveringsfunktionsresurser för X++
+              href: ../../dev-itpro/dev-ref/xpp-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Affärsexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-business-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Behållarexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-container-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Konverteringsexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-conversion-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Datumexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-date-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Matematikexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-math-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Reflektionsexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-reflection-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sessionsexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-session-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Strängexekveringsfunktioner för X++
+              href: ../../dev-itpro/dev-ref/xpp-string-run-time-functions.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Systemregister
+          href: ../../dev-itpro/dev-ref/system-tables.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Systemklasser
+          items:
+            - name: A-klasser
+              href: ../../dev-itpro/dev-ref/a-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: B-klasser
+              href: ../../dev-itpro/dev-ref/b-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: C-klasser
+              href: ../../dev-itpro/dev-ref/c-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: D-klasser
+              href: ../../dev-itpro/dev-ref/d-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: E-klasser
+              href: ../../dev-itpro/dev-ref/e-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FieldBinding to FormBuildAnimateControl)
+              href: ../../dev-itpro/dev-ref/fieldbinding-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
+              href: ../../dev-itpro/dev-ref/formbuildbuttoncontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormBuildFilterPaneControl to FormBuildRealControl)
+              href: ../../dev-itpro/dev-ref/formbuildfilterpanecontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormBuildReferenceControl to FormButtonSeparatorControl)
+              href: ../../dev-itpro/dev-ref/formbuildreferencecontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormChangeTracker to FormControlEventArgs)
+              href: ../../dev-itpro/dev-ref/formchangetracker-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormDataObject to FormFastTabHeaderControl)
+              href: ../../dev-itpro/dev-ref/formdataobject-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormFastTabSummarySeparator to FormGridControl)
+              href: ../../dev-itpro/dev-ref/formfasttabsummaryseparator-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormGroupControl till FormIntControl)
+              href: ../../dev-itpro/dev-ref/formgroupcontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormListBoxControl till FormNotifyEventArgs)
+              href: ../../dev-itpro/dev-ref/formlistboxcontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormObject till FormRealControl)
+              href: ../../dev-itpro/dev-ref/formobject-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormReferenceControl to FormStringControl)
+              href: ../../dev-itpro/dev-ref/formreferencecontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: F-klasser (FormTabControl to FormWindowControl)
+              href: ../../dev-itpro/dev-ref/formtabcontrol-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: G-klasser
+              href: ../../dev-itpro/dev-ref/g-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: H-klasser
+              href: ../../dev-itpro/dev-ref/h-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: I-klasser
+              href: ../../dev-itpro/dev-ref/i-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: J-klasser
+              href: ../../dev-itpro/dev-ref/j-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: K-klasser
+              href: ../../dev-itpro/dev-ref/k-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: L-klasser
+              href: ../../dev-itpro/dev-ref/l-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: M-klasser
+              href: ../../dev-itpro/dev-ref/m-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: N-klasser
+              href: ../../dev-itpro/dev-ref/n-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: O-klasser
+              href: ../../dev-itpro/dev-ref/o-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: P-klasser
+              href: ../../dev-itpro/dev-ref/p-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Q-klasser
+              href: ../../dev-itpro/dev-ref/q-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: R-klasser
+              href: ../../dev-itpro/dev-ref/r-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: S-klasser
+              href: ../../dev-itpro/dev-ref/s-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: T-klasser
+              href: ../../dev-itpro/dev-ref/t-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: U-klasser
+              href: ../../dev-itpro/dev-ref/u-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: V-klasser
+              href: ../../dev-itpro/dev-ref/v-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: W-klasser
+              href: ../../dev-itpro/dev-ref/w-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: X-klasser
+              href: ../../dev-itpro/dev-ref/x-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utbyggbarhet
+      items:
+        - name: Startsida för utbyggbarhet
+          href: ../../dev-itpro/extensibility/extensibility-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Introduktion och komma igång
+          items:
+            - name: Plan för programs utbyggbarhet
+              href: ../../dev-itpro/extensibility/extensibility-roadmap.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Begäranden om utbyggbarhet
+              href: ../../dev-itpro/extensibility/extensibility-requests.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Frågor och svar om utbyggbarhet
+              href: ../../dev-itpro/extensibility/app-sealing-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Migrera från överlägg till tillägg
+              href: ../../dev-itpro/extensibility/migrate-overlayer-extension.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Anpassa modellelement med tillägg (självstudiekurs)
+              href: ../../dev-itpro/extensibility/customize-model-elements-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Anpassa med tillägg och överlägg
+              href: ../../dev-itpro/extensibility/customization-overlayering-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Nyheter
+          items:
+            - name: Nyheter och ändringar för utbyggbarhet
+              href: ../../dev-itpro/extensibility/extensibility-new.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 10.0.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-3.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 10.0.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-2.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 10.0.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-10-1.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 10.0
+              href: ../../dev-itpro/extensibility/extensibility-changes-10.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.1.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-813.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.1.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-812.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.1.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-811.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-81.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.0.4
+              href: ../../dev-itpro/extensibility/extensibility-changes-804.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.0.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-803.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.0.2
+              href: ../../dev-itpro/extensibility/extensibility-changes-802.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet version 8.0.1
+              href: ../../dev-itpro/extensibility/extensibility-changes-801.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet i version 8.0
+              href: ../../dev-itpro/extensibility/changes-80.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet i version 7.3
+              href: ../../dev-itpro/extensibility/extensibility-changes-73.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av utbyggbarhet juli 2017
+              href: ../../dev-itpro/extensibility/changes-july-2017.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Grunder
+          items:
+            - name: Inkräktande anpassningar
+              href: ../../dev-itpro/extensibility/intrusive-customizations.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Modell för klasstillägg
+              href: ../../dev-itpro/extensibility/class-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Klasstillägg via metodradbyte och beslutskedja
+              href: ../../dev-itpro/extensibility/method-wrapping-coc.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Riktlinjer för namngivning av tillägg
+              href: ../../dev-itpro/extensibility/naming-guidelines-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Släppa på modellbegränsningar för att omstrukturera överlägg till tillägg
+              href: ../../dev-itpro/extensibility/refactoring-over-layering.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa tillägg
+          items:
+            - name: Lägga till värden i enums
+              href: ../../dev-itpro/extensibility/add-enum-value.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändra utökade datatyper
+              href: ../../dev-itpro/extensibility/modify-edt.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Registrera underklasser för fabriksmetoder
+              href: ../../dev-itpro/extensibility/register-subclass-factory-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Svara med EventHandlerResult
+              href: ../../dev-itpro/extensibility/respond-event-handler-result.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utöka klassen RunBase
+              href: ../../dev-itpro/extensibility/extend-runbase-class.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Anpassa programstart med ombud
+              href: ../../dev-itpro/extensibility/startup-customizations.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändra befintliga fält i ett register
+              href: ../../dev-itpro/extensibility/modify-existing-field.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lägga till fält i register
+              href: ../../dev-itpro/extensibility/add-field-extension.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lägga till index i register
+              href: ../../dev-itpro/extensibility/add-index.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lägga till relationer i register
+              href: ../../dev-itpro/extensibility/add-relation.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändra registeregenskaper
+              href: ../../dev-itpro/extensibility/modify-properties.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lägga till metoder i register
+              href: ../../dev-itpro/extensibility/add-method-table.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utföra verksamhetsåtgärder under registerposters livscykel
+              href: ../../dev-itpro/extensibility/subscribe-table-events.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lägga till datakällor i formulär
+              href: ../../dev-itpro/extensibility/add-datasource.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändra formulärrubrik
+              href: ../../dev-itpro/extensibility/change-caption-form.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändra egenskaper för formulärkontroll
+              href: ../../dev-itpro/extensibility/modify-control-properties.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utöka nummerseriers omfattning
+              href: ../../dev-itpro/extensibility/extend-number-sequence-scope.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Lägga till nya lagerdimensioner
+              href: ../../dev-itpro/extensibility/inventory-dimensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utbyggbarhet för pris och rabatt
+              href: ../../dev-itpro/extensibility/pricing-app73.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tillägg för registermappning
+              href: ../../dev-itpro/extensibility/map-extensions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utöka registermappningar som används som gränssnitt
+              href: ../../dev-itpro/extensibility/maps-as-interfaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utöka registermappningar som används för versionshantering
+              href: ../../dev-itpro/extensibility/maps-with-versioning.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utöka antalet decimaler för valda datatyper
+              href: ../../dev-itpro/extensibility/decimal-point-precision.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa utbyggbara lösningar
+          items:
+            - name: Skriva utbyggbar kod
+              href: ../../dev-itpro/extensibility/writing-extensible-code.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Klasser
+              href: ../../dev-itpro/extensibility/extensible-classes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Metoder
+              href: ../../dev-itpro/extensibility/extensible-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Formulär
+              href: ../../dev-itpro/extensibility/extensible-forms.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utökade datatyper
+              href: ../../dev-itpro/extensibility/extensible-edts.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Utbyggbara enums
+              href: ../../dev-itpro/extensibility/extensible-enums.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ombud
+              href: ../../dev-itpro/extensibility/extensible-code-delegates.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Register
+              href: ../../dev-itpro/extensibility/extensible-tables.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Attribut för utökningsbarhet för metoder
+              href: ../../dev-itpro/extensibility/extensibility-attributes.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Dela upp ändringar
+              href: ../../dev-itpro/extensibility/breaking-changes.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Prestanda
+      items:
+        - name: Börja spåra med Trace parser
+          href: ../../dev-itpro/perf-test/trace-trace-tutorial.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Enanvändartestning med Uppgiftsinspelaren och Performance SDK
+          href: ../../dev-itpro/perf-test/single-user-test-perf-sdk.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Fleranvändartestning med Performance SDK och en lokal testkontrollant
+          href: ../../dev-itpro/perf-test/multi-user-testing-local-test-controller.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Fleranvändartestning med Performance SDK och Azure DevOps
+          href: ../../dev-itpro/perf-test/multi-user-testing-perfsdk-azuredevops.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Felsökningsguide för enanvändartestning eller fleranvändartestning med Performance SDK
+          href: ../../dev-itpro/perf-test/troubleshoot-perf-sdk-user-testing.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Performance SDK och fleranvändartestning i lokala miljöer
+          href: ../../dev-itpro/perf-test/perfsdk-tutorial-lbd.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Diagnostisera problem och analysera prestanda med Trace parser
+          href: ../../dev-itpro/perf-test/trace-parser.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Prestandatimer
+          href: ../../dev-itpro/perf-test/performance-timer.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Teststöd i Visual Studio
+      items:
+        - name: Testning och valideringar
+          href: ../../dev-itpro/perf-test/testing-validation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Testa projekt i Visual Studio
+          href: ../../dev-itpro/perf-test/testing-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Distribuera miljöer som har stöd för kontinuerlig bygg- och testautomatisering
+          href: ../../dev-itpro/perf-test/continuous-build-test-automation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: SysTest-filtrering med hjälp av klass- och metodattribut
+          href: ../../dev-itpro/perf-test/systest-filtering.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Bibliotek för acceptanstest
+          items:
+            - name: Resurser i biblioteket för acceptanstester
+              href: ../../dev-itpro/perf-test/acceptance-test-library.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Navigeringsbegrepp
+              href: ../../dev-itpro/perf-test/concepts-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Metoder för testdata
+              href: ../../dev-itpro/perf-test/test-data-methods.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Enheter i biblioteket för acceptanstester
+              href: ../../dev-itpro/perf-test/concepts-entities.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kommandon i biblioteket för acceptanstester
+              href: ../../dev-itpro/perf-test/concepts-commands.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Skapare i biblioteket för acceptanstester
+              href: ../../dev-itpro/perf-test/concepts-creators.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Frågor i biblioteket för acceptanstester
+              href: ../../dev-itpro/perf-test/concepts-queries.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Specifikationsklasser
+              href: ../../dev-itpro/perf-test/concepts-specifications.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kodgenerering i biblioteket för acceptanstester
+              href: ../../dev-itpro/perf-test/code-generation-wizard.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Regelverk för biblioteket för acceptanstester
+              href: ../../dev-itpro/perf-test/atl-best-practices.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Vanliga frågor
+              href: ../../dev-itpro/perf-test/atl-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Gäller från
+      href: ../../dev-itpro/dev-tools/date-effectivity.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: ISV-licensiering
+      href: ../../dev-itpro/dev-tools/isv-licensing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lokal ISV-licensiering
+      href: ../../dev-itpro/dev-tools/isv-licensing-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Allmänna dataskyddsförordningen (GDPR)
+  items:
+    - name: Allmänna dataskyddsförordningen – översikt
+      href: ../../dev-itpro/gdpr/gdpr-guide.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Svara på GDPR dataförfrågningar
+      items:
+        - name: Resurser för att svara på GDPR dataförfrågningar
+          href: ../../dev-itpro/gdpr/gdpr-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tillgångsklassificeringar
+          href: ../../dev-itpro/gdpr/gdpr-asset-classification-values.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Rapport för personsökning
+          href: ../../dev-itpro/gdpr/gdpr-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Utöka rapporten för personsökning
+          href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Hantera åtkomst till känsliga data
+          href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Svara på begäranden om personuppgifter med hjälp av Talent
+          href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Svara på begäranden om personuppgifter i AX 2012
+          href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Databegäranden enligt GDPR för LCS
+          href: ../../dev-itpro/gdpr/gdpr-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Lifecycle Services
+  items:
+    - name: Resurser för Lifecycle Services
+      items:
+        - name: Resurser för Lifecycle Services
+          href: ../../dev-itpro/lifecycle-services/lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: LCS för kunder
+          href: ../../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: LCS för partner
+          href: ../../dev-itpro/lifecycle-services/getting-started-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Nyheter
+          href: ../../dev-itpro/lifecycle-services/whats-new-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kända problem
+          href: ../../dev-itpro/lifecycle-services/known-issues.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Användarhandbok för Lifecycle Services
+      href: ../../dev-itpro/lifecycle-services/lcs-user-guide.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Prenumerationsberäkning
+      href: ../../dev-itpro/lifecycle-services/subscription-estimator.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Konfigurera säkerhet
+      href: ../../dev-itpro/lifecycle-services/configure-lcs-security.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Problemsökning
+      href: ../../dev-itpro/lifecycle-services/issue-search-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Konfigurationshanteraren
+      items:
+        - name: Konfigurationshanterare – översikt
+          href: ../../dev-itpro/lifecycle-services/configuration-manager-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ställ in konfigurationshanterare
+          href: ../../dev-itpro/lifecycle-services/set-up-configuration-manager-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Konfigurera tjänsten för koduppgradering
+      href: ../../dev-itpro/lifecycle-services/configure-execute-code-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Skapa eller uppdatera metoder
+      href: ../../dev-itpro/lifecycle-services/create-methodology.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Affärsprocessmodelleraren
+      href: ../../dev-itpro/lifecycle-services/bpm-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Affärsprocessbibliotek i affärsprocessmodelleraren
+      href: ../../dev-itpro/lifecycle-services/business-process-libraries-business-process-modeler.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: 'Skapa, redigera och bläddra i affärsprocessmodellerarens bibliotek'
+      href: ../../dev-itpro/lifecycle-services/creating-editing-browsing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Slutföra uppgifter i affärsprocessmodelleraren
+      href: ../../dev-itpro/lifecycle-services/complete-tasks-bpm.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Arbeta med aktivitetsdiagram i BPM-bibliotek
+      href: ../../dev-itpro/lifecycle-services/using-activity-diagrams.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Synkronisera BPM-bibliotek med Azure DevOps
+      href: ../../dev-itpro/lifecycle-services/synchronize-bpm-vsts.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Skapa bibliotek med acceptanstest genom att använda uppgiftsguider och BPM
+      href: ../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Flödesscheman i affärsprocessmodelleraren
+      href: ../../dev-itpro/lifecycle-services/flowcharts-business-process-modeler.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Överföra anpassade affärsprocesser till affärsprocessmodelleraren
+      href: ../../dev-itpro/lifecycle-services/upload-business-processes-bpm-task-recorder.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Övervakning och diagnostik
+      href: ../../dev-itpro/lifecycle-services/monitoring-diagnostics.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Starta om miljötjänster
+      href: ../../dev-itpro/lifecycle-services/restart-environment-services.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Rapportera ett produktionsavbrott
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Spåra användares inloggningar
+      href: ../../dev-itpro/lifecycle-services/user-logins.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Tillgångsbibliotek
+      href: ../../dev-itpro/lifecycle-services/asset-library.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Felsökning av prestandaproblem med hjälp av verktyg i LCS
+      href: ../../dev-itpro/lifecycle-services/performancetroubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Handbok för frågor
+      href: ../../dev-itpro/lifecycle-services/querycookbook.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Microsoft Dynamics 365 Translation Service
+      items:
+        - name: Dynamics 365 Translation Service – översikt
+          href: ../../dev-itpro/lifecycle-services/translation-service-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Översätt användargränssnittsfiler
+          href: ../../dev-itpro/lifecycle-services/use-translation-service.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Översätta dokumentationsfiler
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-ua.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Filer för översättningsminne
+          href: ../../dev-itpro/lifecycle-services/use-translation-service-tm.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Mobilplattform
+  items:
+    - name: Mobila plattformsresurser
+      href: ../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kom igång
+      items:
+        - name: Kom igång med mobilplattformen
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-getting-started.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Överväganden vid arkitektur och design
+          href: ../../dev-itpro/mobile-apps/platform/mobile-platform-architecture.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Affärslogikhändelser
+          href: ../../dev-itpro/mobile-apps/platform/business-logic-events-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Riktlinjer för siddesign
+          href: ../../dev-itpro/mobile-apps/platform/page-design-guidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Riktlinjer för åtgärdsdesign
+          href: ../../dev-itpro/mobile-apps/platform/action-design-guidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Krav för formulärdesign
+          href: ../../dev-itpro/mobile-apps/platform/form-design-requirements.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Vanliga uppgifter
+      items:
+        - name: Konfigurera arbetsytor genom att använda klassen SysAppWorkspace
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/mobile-workspace-configuration.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Göra fält på mobilappars sidor klickbara
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-workspace-field-clickable.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Visa antal i fält
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/display-count-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skydda mobila arbetsytor
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/secure-mobile-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lokalisera mobila arbetsytor
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/localize-workspaces-on-server.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Göra fält obligatoriska genom att använda klasser för arbetsytor
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/make-field-mandatory.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utvecklingsreferens för servern
+      items:
+        - name: 'Utveckling på servern (API:er för arbetsytan X++)'
+          href: ../../dev-itpro/mobile-apps/platform/mobile-workspace-server-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utvecklingsreferens för klienten
+      items:
+        - name: 'Design-API:er för klienten'
+          href: ../../dev-itpro/mobile-apps/platform/scenarios/client-api-design-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Klient-API:er'
+          items:
+            - name: Klientens API – startsida
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/client-apis-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uppräkning för PageState
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/enums/view-model-ipage-pagestate.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Programmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-application.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Periodiseringsmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/defer.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Händelsemodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Kontrollmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Behållaremodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Fältmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Modul för filöverföring
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-fileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Gruppmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-group-igroup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Hyperlänkmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-hyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Bildmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-image-iimage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Inmatningsmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Listmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-list-ilist.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sökningsmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-ilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Flervalssökningsmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sidmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-ipage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Pagelink-modul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Delmodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Tjänstemodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/services-business-logic-services.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Värdemodul
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Programtyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ApplicationMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'AsyncService, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-iasyncservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'CacheService, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-icacheservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'CompleteEventArgs, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-icompleteeventargs.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ContainerControl, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ContainerControlDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontroldesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ContainerControlMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-container-icontainercontrol-icontainercontrolmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ControlMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'DataService, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Deferred, typ<T>'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/defer-ideferred.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'Design, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'EventHook, typ<T>'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Fälttyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'FieldDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'FieldMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifieldmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'FileUploader, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploader.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'FileUploaderDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploaderdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'FileUploaderMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-fileuploader-ifileuploader-ifileuploadermetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'GenericValue, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'getDataSource, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Grupptyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'GroupDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'GroupMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'HyperLink, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'HyperLinkDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'HyperLinkMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Bildtyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ImageDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ImageMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagemetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'InputControl, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrol.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'InputControlDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'InputControlMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Listtyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ListDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ListMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uppslagstyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'LookupDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'LookupMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'MetadataService, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-imetadataservice.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'MultiLookup, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookup.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'MultiLookupDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'MultiLookupMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-imultilookup-imultilookupmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'NavigationArgs, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'NumberSequenceConfig, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Sidtyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageData, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageLink, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelink.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageLinkDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageLinkMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-pagelink-ipagelink-ipagelinkmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagemetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageOptions, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipageoptions.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageSubmitArgs, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PageTarget, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Deltyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PartDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'PartMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Radtyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Värdetyp
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ValueDesign, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: 'ValueMetadata, typ'
+              href: ../../dev-itpro/mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Regression Suite Automation Tool
+  items:
+    - name: Regression Suite Automation Tool – översikt
+      href: ../../dev-itpro/perf-test/rsat/rsat-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Installation och konfiguration
+      href: ../../dev-itpro/perf-test/rsat/rsat-install-configure.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
+      href: ../../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kör testfall
+      href: ../../dev-itpro/perf-test/rsat/rsat-run.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Validera förväntade värden
+      href: ../../dev-itpro/perf-test/rsat/rsat-validate-expected.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kedja testfall
+      href: ../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Härledda testfall
+      href: ../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Göra självstudier med Regression Suite Automation Tool
+      href: ../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Regelverk
+      href: ../../dev-itpro/perf-test/rsat/rsat-best-practices.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Felsökning
+      href: ../../dev-itpro/perf-test/rsat/rsat-troubleshooting.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Släpp lösningar med hjälp av Lifecycle Services
+  items:
+    - name: Utveckla och släppa
+      href: ../../dev-itpro/lcs-solutions/lcs-solutions-app-source.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Mellanlagra och publicera
+      href: ../../dev-itpro/lcs-solutions/marketing-content-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lägga till metoder
+      href: ../../dev-itpro/lcs-solutions/methodologies-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Konfigurera bibliotek för affärsprocessmodelleraren
+      href: ../../dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Migrera kod
+      href: ../../dev-itpro/lcs-solutions/code-migration-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Validera program
+      href: ../../dev-itpro/lcs-solutions/app-validation-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Bearbeta och använda datapaket
+      href: ../../dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Säkerhetskopiera lösningsdatabaser
+      href: ../../dev-itpro/lcs-solutions/database-backup-lcs-solutions.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lokaliserings- och regelfunktioner
+      items:
+        - name: Globaliseringsresurser
+          href: ../../dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Klassificering av lokaliseringsfunktioner
+          href: ../../dev-itpro/lcs-solutions/classify-localization-features.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Använd sammanhang för land/region
+          href: ../../dev-itpro/lcs-solutions/apply-country-context.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Information om regelcertifiering i funktionstitlar
+          href: ../../dev-itpro/lcs-solutions/regulatory-certifications.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Regeluppdateringar
+          href: ../../dev-itpro/lcs-solutions/regulatory-watch-communication.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Separation av lokaliseringsmodeller
+          href: ../../dev-itpro/lcs-solutions/separate-localization-models.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skicka regleringsnotifieringar
+          href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Support
+  items:
+    - name: Få hjälp med Finance and Operations och Lifecycle Services
+      href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Översikt över Dynamics 365-support
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+    - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
+      href: ../../dev-itpro/lifecycle-services/21vianet-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Logga ett Premier-supportärende
+      href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Skicka begäranden till serviceteknikerteamet för Dynamics
+      href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Konfigurera teknisk support för Finance and Operations
+      href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Vanliga frågor och svar om fönster för planerat underhåll
+      href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Molnåtgärder och underhåll
+      href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Hantera upplevelser av support för Finance and Operations
+      href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Systemadministration
+  items:
+    - name: Systemadministration – startsida
+      href: ../../dev-itpro/sysadmin/system-administration-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Lägg till länkar till juridiska villkor och sekretesspolicy
+      href: ../../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Rapport med licenskoder och konfigurationsnycklar
+      href: ../../dev-itpro/sysadmin/license-codes-configuration-keys-report.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Datadelning mellan företag
+      href: ../../dev-itpro/sysadmin/cross-company-data-sharing.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Underhållsläge
+      href: ../../dev-itpro/sysadmin/maintenance-mode.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Förkonfigurerade systemkonton
+      href: ../../dev-itpro/sysadmin/pre-configured-system-accounts.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Exportera B2B-användare till Azure AD
+      href: ../../dev-itpro/sysadmin/implement-b2b.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Säkerhet
+      items:
+        - name: Rollbaserad säkerhet
+          href: ../../dev-itpro/sysadmin/role-based-security.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Säkerhetsarkitektur
+          href: ../../dev-itpro/sysadmin/security-architecture.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ange tidsgräns för inaktiv session
+          href: ../../dev-itpro/sysadmin/session-idle-timeout.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Färdiga säkerhetsrapporter
+          href: ../../dev-itpro/sysadmin/security-reports.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa nya användare
+          href: ../../dev-itpro/sysadmin/tasks/create-new-users.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Massimportera användare
+          href: ../../dev-itpro/sysadmin/tasks/import-bulk-users.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ställa in ansvarsfördelning
+          href: ../../dev-itpro/sysadmin/tasks/set-up-segregation-duties.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Identifiera och lösa konflikter vid ansvarsfördelning
+          href: ../../dev-itpro/sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tilldela användare till säkerhetsroller
+          href: ../../dev-itpro/sysadmin/tasks/assign-users-security-roles.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Batchbearbetning
+      items:
+        - name: Batchbearbetning – översikt
+          href: ../../dev-itpro/sysadmin/batch-processing-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Batchbearbetning och batchservrar
+          href: ../../dev-itpro/sysadmin/batch-server-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa batchjobb
+          href: ../../dev-itpro/sysadmin/tasks/create-batch-job.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kopiera ett batchjobb
+          href: ../../dev-itpro/sysadmin/copy-batch-job.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Aktiva batchperioder
+          href: ../../dev-itpro/sysadmin/activeperiod.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Säkerhetsroll för batchhanterare
+          href: ../../dev-itpro/sysadmin/runby.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Batchjobbet ska hantera defragmentering av SQL-index
+          href: ../../dev-itpro/sysadmin/batch-job-SQL-defragmentation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurera batchnotifieringar
+          href: ../../dev-itpro/sysadmin/alerts.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Utökade batchformulär
+          href: ../../dev-itpro/sysadmin/enhanced-forms.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Rensa batchhistorik
+          href: ../../dev-itpro/sysadmin/batch-history-cleanup.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Avbryt körning av batchjobb
+          href: ../../dev-itpro/sysadmin/batch-abort.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Rådgivning om optimering
+      items:
+        - name: Rådgivning om optimering – översikt
+          href: ../../dev-itpro/sysadmin/optimization-advisor-overview.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa regler för rådgivning om optimering
+          href: ../../dev-itpro/sysadmin/create-rules-optimization-advisor.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Rapportera ett produktionsavbrott
+      href: ../../dev-itpro/lifecycle-services/report-production-outage.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: 'Uppgraderingar, uppdateringar och snabbkorrigeringar'
+  items:
+    - name: 'Resurser för uppgraderingar, uppdateringar och snabbkorrigeringar'
+      href: ../../dev-itpro/migration-upgrade/upgrade-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Uppgradera från AX 2012
+      items:
+        - name: Uppgradera från AX 2012 till Finance and Operations
+          href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
+          href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
+          href: ../../dev-itpro/migration-upgrade/analyze-code-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Distribuera en demonstrationsmiljö för analys
+          href: ../../dev-itpro/migration-upgrade/analysis-sandbox.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Datauppgradering i utvecklingsmiljöer
+          href: ../../dev-itpro/migration-upgrade/data-upgrade-2012.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Checklista för föruppgradering för datauppgradering
+          href: ../../dev-itpro/migration-upgrade/prepare-data-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Datauppgradering i begränsade lägen
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Övergångstest
+          href: ../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Uppgifter efter uppgradering
+          href: ../../dev-itpro/migration-upgrade/app-validation-process.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Funktionstest har genomförts
+          href: ../../dev-itpro/migration-upgrade/upgrade-functional-validation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Förbered publicering
+          href: ../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2012-uppgradering – Publicera
+          href: ../../dev-itpro/migration-upgrade/2012-upgrade-cutover.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Ändringar som påverkar uppgradering från AX 2012
+          items:
+            - name: Gör kontoplansavgränsare unika
+              href: ../../dev-itpro/migration-upgrade/chart-accounts-delimiter-unique.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uppgradera journaler med enstaka verifikationer och valutaomvärderingar
+              href: ../../dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Datamodell för tidsplanering av projektresurser
+              href: ../../dev-itpro/migration-upgrade/data-model-changes-resource-management.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Ändringar av arbetsflödets delsystem
+              href: ../../dev-itpro/migration-upgrade/workflow-subsystem.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Aggregerade modeller används i stället för kuber för analys
+              href: ../../dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Migrera uppgraderade försäljningskuber till enhetslagringen
+              href: ../../dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Uppgradera budgetplanering
+              href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Flytta data från AX 2009
+      items:
+        - name: Migrera data från AX 2009 till Finance and Operations
+          href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2009-migrering – installera verktyg för datamigrering
+          href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2009-migrering – Generera kartor
+          href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2009-migrering – skapa mallar
+          href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2009-migrering – skapa grupper för migrering
+          href: ../../dev-itpro/migration-upgrade/create-definition.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2009-migrering - exportera paket
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-export-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: AX 2009-migrering - importera paket
+          href: ../../dev-itpro/migration-upgrade/ax2009-upgrade-import-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Migrering och uppgradering av kod
+      items:
+        - name: Migrering och uppgradering av kod – startsida
+          href: ../../dev-itpro/migration-upgrade/code-migration-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Förbered för att migrera kod
+          href: ../../dev-itpro/migration-upgrade/prepare-migration.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Konfigurera Azure DevOps-mappning
+          href: ../../dev-itpro/migration-upgrade/configure-vso-solution.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delning av modell
+          href: ../../dev-itpro/dev-tools/model-split.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Lös beroenden mellan modeller med hjälp av ombud
+          href: ../../dev-itpro/migration-upgrade/delegates-migration.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Uppgradera till den senaste uppdateringen (moln)
+      items:
+        - name: Process för att flytta till den senaste uppdateringen
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-update.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sökvägar till en version
+          items:
+            - name: Självbetjäningsuppgradering till den senaste versionen
+              href: ../../dev-itpro/migration-upgrade/self-service-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+            - name: Återskapa och uppdatera till den senaste versionen
+              href: ../../dev-itpro/migration-upgrade/appupdate-80-81.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Livscykelpolicy och molnbaserade versioner av programmet
+          href: ../../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Använd den senaste plattformsuppdateringen för miljöer
+          href: ../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uppgradera data i utvecklings- eller demonstrationsmiljöer
+          href: ../../dev-itpro/migration-upgrade/upgrade-data-to-latest-update.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uppdatera utvecklingsverktyg
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Planera och förbereda för att kompilera koden med den senaste uppdateringen
+          href: ../../dev-itpro/migration-upgrade/compile-considerations.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Uppgradera till den senaste uppdateringen (lokal)
+      items:
+        - name: Uppdatera lokala distributioner
+          href: ../../dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Distribuera om en lokal distribution
+          href: ../../dev-itpro/deployment/redeploy-on-prem.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uppgradering på plats för lokal version av 7.x till 8.1
+          href: ../../dev-itpro/migration-upgrade/on-prem-upgrade.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Snabbkorrigeringar
+      items:
+        - name: Få uppdateringar från Lifecycle Services
+          href: ../../dev-itpro/migration-upgrade/download-hotfix-lcs.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Tillämpa uppdateringar i molnmiljöer
+          href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Installera snabbkorrigeringar av metadata i utvecklingsmiljöer
+          href: ../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Korrigera Reporting Services i enskilda miljöer
+          href: ../../dev-itpro/migration-upgrade/patch-reporting-service-environment.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Uppdatera utvecklingsverktyg för Visual Studio
+          href: ../../dev-itpro/dev-tools/update-development-tools.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utfasningar
+      items:
+        - name: Borttagna och utfasade funktioner
+          href: ../../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Avskrivning av metoder och metadataelement
+          href: ../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Utfasade API:er'
+          href: ../../dev-itpro/migration-upgrade/deprecated-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+- name: Utveckling av användargränssnitt
+  items:
+    - name: Utveckling av användargränssnitt – startsida
+      href: ../../dev-itpro/user-interface/user-interface-development-home-page.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Självstudier
+      items:
+        - name: Skapa formuläret Avgiftstyp för hyrestillfälle
+          href: ../../dev-itpro/user-interface/build-rental-charge-type-form.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa formuläret Kund
+          href: ../../dev-itpro/user-interface/build-customer-form.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa navigering
+          href: ../../dev-itpro/user-interface/build-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa arbetsytor
+          href: ../../dev-itpro/user-interface/build-workspace.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Formulär
+      items:
+        - name: Navigeringsbegrepp
+          href: ../../dev-itpro/user-interface/page-navigation.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sidlayout i webbklienten
+          href: ../../dev-itpro/user-interface/page-layout.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dynamics symbolteckensnitt
+          href: ../../dev-itpro/user-interface/symbol-font.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sparade vyer
+          href: ../../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa formulär som fullt ut utnyttjar sparade vyer
+          href: ../../dev-itpro/user-interface/understanding-saved-views.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Testa formulär som använder egna mönster
+          href: ../../dev-itpro/user-interface/testing-forms-custom-patterns.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Skapa delbara, säkrade URL:er (djuplänkar)'
+          href: ../../dev-itpro/user-interface/create-deep-links.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Hjälpmedel i formulär, produkter och kontroller'
+          href: ../../dev-itpro/user-interface/enable-accessibility.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Anpassa fältbeskrivningar
+          href: ../../dev-itpro/user-interface/customize-field-help.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Kontroller
+      items:
+        - name: Åtgärdskontroller
+          href: ../../dev-itpro/user-interface/action-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Storlek på indatakontroller och rutnätskolumner
+          href: ../../dev-itpro/user-interface/sizing-input-controls-grid-columns.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Stöd för kryssrutor i trädkontroller
+          href: ../../dev-itpro/user-interface/check-box-tree-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Filtreringsalternativ
+          href: ../../dev-itpro/user-interface/filtering.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: PowerApps Värdkontroll
+          href: ../../dev-itpro/user-interface/powerapps-host-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Fönsterhantering
+      items:
+        - name: Migrera kod för snabbmeny
+          href: ../../dev-itpro/migration-upgrade/code-migration-context-menus.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Migrera logik för dubbelklickning med mus
+          href: ../../dev-itpro/migration-upgrade/code-migration-double-click.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sammanhangsberoende datainmatning för sökningar
+          href: ../../dev-itpro/user-interface/contextual-data-entry-lookups.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: HierarchyViewer-kontroll
+          href: ../../dev-itpro/user-interface/hierarchy-viewer-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Sökningskontroller
+          href: ../../dev-itpro/user-interface/lookups-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kontroller för filuppladdning
+          href: ../../dev-itpro/user-interface/file-upload-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Systemdefinierade knappar
+          href: ../../dev-itpro/user-interface/system-defined-buttons.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Bilder på en sida eller i ett rutnät
+          href: ../../dev-itpro/user-interface/images-form-grid.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Teckensnitts- och bakgrundsfärger för indata-, register- och rutnätskontroller'
+          href: ../../dev-itpro/user-interface/specify-color-font-background-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Stöd för språk som skrivs från höger till vänster och text i båda riktningarna
+          href: ../../dev-itpro/user-interface/bidirectional-support.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa ikoner för paneler i arbetsytan
+          href: ../../dev-itpro/user-interface/create-icons-workspace-tiles.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Offentliga JavaScript-API:er för utbyggbara kontroller'
+          href: ../../dev-itpro/user-interface/public-javascript-apis.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Checklista för kontroll
+          href: ../../dev-itpro/user-interface/control-checklist.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Meddelanden
+      items:
+        - name: Bildtexter för funktioner
+          href: ../../dev-itpro/user-interface/feature-callouts.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Dialogrutor för skjutreglage och meddelanderutor
+          href: ../../dev-itpro/user-interface/slider-messagebox.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'API för meddelandecenter, meddelandefält och meddelandeinformation'
+          href: ../../dev-itpro/user-interface/messaging-api-center-bar-details.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: 'Vanliga frågor om meddelandecenter, meddelandefält och meddelandeinformation'
+          href: ../../dev-itpro/user-interface/messaging-user.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Riktlinjer för formulärmönster
+      items:
+        - name: Formulärmönster för migrerade formulär
+          href: ../../dev-itpro/user-interface/select-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärformat och -mönster
+          href: ../../dev-itpro/user-interface/form-styles-patterns.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Visual Studio-tillägg som stöder formulärmönster
+          href: ../../dev-itpro/user-interface/form-pattern-add-ins.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Formulärmönster
+      items:
+        - name: Riktlinjer för allmänna formulär
+          href: ../../dev-itpro/user-interface/general-form-guidelines.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Information om mönster i huvudformulär
+          href: ../../dev-itpro/user-interface/details-master-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Information om mönster i transaktionsformulär
+          href: ../../dev-itpro/user-interface/details-transaction-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för formulärdelen avsnittslista
+          href: ../../dev-itpro/user-interface/section-list-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för listsida
+          href: ../../dev-itpro/user-interface/list-page-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för enkla detaljer
+          href: ../../dev-itpro/user-interface/simple-details-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för enkel lista och detaljer
+          href: ../../dev-itpro/user-interface/simple-list-details-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för enkel lista
+          href: ../../dev-itpro/user-interface/simple-list-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för innehållsförteckning
+          href: ../../dev-itpro/user-interface/table-of-contents-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för dubbel uppgift
+          href: ../../dev-itpro/user-interface/task-double-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för enkel uppgift
+          href: ../../dev-itpro/user-interface/task-single-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för guide
+          href: ../../dev-itpro/user-interface/wizard-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för arbetsyta
+          href: ../../dev-itpro/user-interface/workspace-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Sekundära formulärmönster
+      items:
+        - name: Formulärmönster för avancerat urval
+          href: ../../dev-itpro/user-interface/advanced-selection-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för dialogruta
+          href: ../../dev-itpro/user-interface/dialog-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för listruta
+          href: ../../dev-itpro/user-interface/drop-dialog-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för sökning
+          href: ../../dev-itpro/user-interface/lookup-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för faktabox
+          href: ../../dev-itpro/user-interface/factbox-form-patterns.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Delmönster
+      items:
+        - name: Delmönster för anpassad filtergrupp
+          href: ../../dev-itpro/user-interface/custom-filter-group-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för dimensionspostkontroll
+          href: ../../dev-itpro/financial/dimension-entry-control-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för dimensionsuttrycksverktyg
+          href: ../../dev-itpro/financial/dimension-expression-builder-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för fält och fältgrupper
+          href: ../../dev-itpro/user-interface/fields-field-groups-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för filter och verktygsfältet
+          href: ../../dev-itpro/user-interface/filters-toolbar-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för fyllningstext
+          href: ../../dev-itpro/user-interface/fill-text-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för vågräta fält och knappgrupper
+          href: ../../dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för förhandsgranskning av bild
+          href: ../../dev-itpro/user-interface/image-preview-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för listpanel
+          href: ../../dev-itpro/user-interface/list-panel-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för kapslad enkel lista och detaljer
+          href: ../../dev-itpro/user-interface/nested-simple-list-details-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Formulärmönster för avsnittet diagram
+          href: ../../dev-itpro/user-interface/section-chart-form-pattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för Power BI-avsnittet
+          href: ../../dev-itpro/user-interface/section-powerbi-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för avsnittet relaterade länkar
+          href: ../../dev-itpro/user-interface/section-related-links-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för avsnittet staplade diagram
+          href: ../../dev-itpro/user-interface/section-stacked-chart-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för avsnittet tabbad lista
+          href: ../../dev-itpro/user-interface/section-tabbed-list-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för avsnittet paneler
+          href: ../../dev-itpro/user-interface/section-tiles-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för tabellfält
+          href: ../../dev-itpro/user-interface/tabular-fields-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för verktygsfält och fält
+          href: ../../dev-itpro/user-interface/toolbar-fields-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för verktygsfält och lista
+          href: ../../dev-itpro/user-interface/toolbar-list-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Delmönster för filtergrupp på arbetsytesida
+          href: ../../dev-itpro/user-interface/workspace-filter-group-subpattern.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Utbyggbarhet för kontroll
+      items:
+        - name: Skapa utbyggbara kontroller
+          href: ../../dev-itpro/user-interface/build-extensible-control.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Kortkommandon för utbyggbara kontroller
+          href: ../../dev-itpro/user-interface/keyboard-shortcuts-controls.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Programmeringsreferens för utbyggbar kontroll
+          href: ../../dev-itpro/user-interface/extensible-control-programming-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Utbyggbarhet för kontroll
+          href: ../../dev-itpro/user-interface/control-extensibility.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa lokaliseringsbara etiketter
+          href: ../../dev-itpro/user-interface/create-localizable-labels-client.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Layoutriktlinjer för utbyggbar kontroll
+          href: ../../dev-itpro/user-interface/extensible-controls-layout.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Bestäm vilken text som Uppgiftsinspelare skapar för en kontroll
+          href: ../../dev-itpro/user-interface/task-recorder-control-text.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Skapa arbetsytor
+      items:
+        - name: Skapa driftarbetsytor
+          href: ../../dev-itpro/user-interface/build-workspaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Cachelagring av panel och lista för arbetsytor
+          href: ../../dev-itpro/user-interface/tile-list-caching-workspaces.md?toc=/dynamics365/unified-operations/financials/toc.json
+    - name: Uppgiftsinspelare
+      items:
+        - name: Uppgiftsinspelarresurser
+          href: ../../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Snabbreferens för uppgiftsinspelare
+          href: ../../dev-itpro/user-interface/task-recorder-quick-reference.md?toc=/dynamics365/unified-operations/financials/toc.json
+        - name: Skapa dokumentation eller utbildning med uppgiftsinspelning
+          href: ../../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/financials/toc.json

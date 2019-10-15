@@ -1,0 +1,1661 @@
+- name: Dynamics 365 Commerce (förhandsversion)
+  items:
+    - name: Dynamics 365 Commerce (förhandsversion)
+      items:
+        - name: Dynamics 365 Commerce (förhandsversion)
+          href: index.md
+        - name: Kom igång
+          items:
+            - name: Innan du köper
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
+            - name: Registrera abonnemang på förhandsversioner
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/commerce/toc.json
+            - name: Tjänstuppdateringar för en version
+              items:
+                - name: Översikt över tjänstuppdateringar för en version
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Frågor och svar om tjänstuppdateringar för en version
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/commerce/toc.json
+                - name: Livscykelpolicy för programmet – moln
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
+                - name: Livscykelpolicy för programmet – lokal
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/commerce/toc.json
+                - name: Tillgänglighet för tjänsteuppdatering
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
+                - name: Tillämpa uppdateringar i molnmiljöer
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera tjänstuppdateringar
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Pausa tjänstuppdateringar
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Få meddelanden om tjänstuppdateringar
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
+                - name: Automatisering av datauppgift
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
+                - name: Leverera ISV-lösningar med en version
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa och automatisera användaracceptanstest
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
+            - name: Distribuera en demonstrationsmiljö
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/commerce/toc.json
+            - name: Konfigurera en utvärderingsmiljö för e-handel
+              href: provisioning-guide.md
+            - name: Att tänka på vid distribuering
+              items:
+                - name: Distribueringsalternativ
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/commerce/toc.json
+                - name: Molndistribution
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Systemkrav för molndistributioner
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/commerce/toc.json
+                - name: Lokal distribution
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/commerce/toc.json
+                - name: Systemkrav för lokala distributioner
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
+                - name: Köp Finance + Operations (lokal)
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations‑appar som drivs av 21Vianet i Kina
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations‑appar i Frankrike
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
+            - name: Nyheter och ändringar
+              items:
+                - name: Nyheter och ändringar på startsidan för Retail
+                  href: ../retail/get-started/whats-new.md
+                - name: Förhandsfunktioner i Retail 10.0.6
+                  href: ../retail/get-started/whats-new-10-0-6.md
+                - name: Retail 10.0.5
+                  href: ../retail/get-started/whats-new-10-0-5.md
+                - name: Nyheter och ändringar i Finance and Operations
+                  items:
+                    - name: Nyheter och ändringar på hemsidan för Finance and Operations
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+                    - name: Förhandsgranska funktioner i Finance and Operations‑appar version 10.0.6 (november 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/commerce/toc.json
+                    - name: Finance and Operations‑appar version 10.0.5 (oktober 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/commerce/toc.json
+                    - name: Finance and Operations 10.0.4 (juli 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Finance and Operations, Enterprise edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/commerce/toc.json
+                - name: Borttagna och utfasade funktioner
+                  items:
+                    - name: Borttagna eller föråldrade funktioner i Finance and Operations
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                - name: AX 2012-funktioner som har senarelagts
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
+                - name: Funktioner som ännu inte har implementerats i lokala distributioner
+                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/commerce/toc.json
+                - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/commerce/toc.json
+            - name: Dokumentationsresurser
+              items:
+                - name: Hjälpsystem
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Ansluta hjälpsystemet
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
+                - name: Ansluta en anpassad hjälpwebbplats
+                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: Visa och exportera fältbeskrivningar
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
+                - name: Uppgiftsinspelare
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa dokumentation eller utbildning med Uppgiftsinspelare
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
+                - name: Videoklipp
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
+                - name: Ordlista
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
+            - name: Utbildningskatalog
+              items:
+                - name: Hemsida för utbildningskatalog
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                - name: Företagets beslutsfattare
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                - name: Företagsanvändare
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                - name: Projektledare för distribution
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                - name: Administratörer
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvecklare
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                - name: Försäljning och marknadsföring för partners
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                - name: Funktionskonsulter
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                - name: Lösningsarkitekter
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+            - name: Utforska användargränssnittet
+              items:
+                - name: Användargränssnittselement
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/commerce/toc.json
+                - name: Hjälpmedelsfunktioner
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/commerce/toc.json
+                - name: Översikt över funktionshantering
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Frågor och svar för klient
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Åtgärdssökning
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/commerce/toc.json
+                - name: Avancerad filtrerings- och frågesyntax
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera och filtrera arbetsytor
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/commerce/toc.json
+                - name: Visa sidor sida vid sida med funktionen Öppna i nytt fönster
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/commerce/toc.json
+                - name: Kortkommandon
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/commerce/toc.json
+                - name: Ändra banderoller eller logotyper för juridiska personer
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/commerce/toc.json
+                - name: Navigeringsökning
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/commerce/toc.json
+                - name: Anpassa användarupplevelsen
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
+                - name: Sparade vyer
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa och arbeta med anpassade fält
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
+                - name: Bädda in PowerApps‑appar
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                - name: Hitta information med hjälp av sökningar
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
+                - name: Ändra datumet för en session
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/commerce/toc.json
+                - name: Ställa in en användares prioriterade tidszon
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
+                - name: Förstå Lifecycle Services
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+            - name: Livscykelhantering för implementering
+              items:
+                - name: Livscykelhantering för implementering – startsida
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                - name: Arkitektur för Finance and Operations-appar
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Integrera ett implementeringsprojekt
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                - name: Miljöplanering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                - name: Förbereda publicering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                - name: Frågor och svar om publicering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Skicka en serviceförfrågan
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klienter'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytta miljöer mellan datacenter
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytta licenser mellan avtalstyper
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klienter
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klient
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementera Finance and Operations Retail-projekt
+                  href: ../retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Ställa in nya miljöer, Azure DevOps och avdelningar för Retail-projekt'
+                  href: ../retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Uppdatera kod och miljöer för Retail-projekt
+                  href: ../retail/dev-itpro/updating-environments.md
+                - name: Problem med testning och prestanda
+                  href: ../retail/dev-itpro/retail-implementation-testing-performance.md
+        - name: Inställning och hantering av kanaler
+          items:
+            - name: Kärnkonfiguration av flera kanaler
+              items:
+                - name: Initiera startdata i nya Retail-miljöer
+                  href: ../retail/enable-configure-retail-functionality.md
+                - name: Konfigurera och installera Retail Hardware Station
+                  href: ../retail/retail-hardware-station-configuration-installation.md
+                - name: Infokoder och infokodgrupper
+                  href: ../retail/info-codes-retail.md
+            - name: Kanalhantering för butik
+              items:
+                - name: Ställ in återförsäljarkanaler
+                  href: ../retail/define-maintain-retail-channels.md
+                - name: Skapa och ändra öppettider
+                  href: ../retail/dev-itpro/store-hours.md
+                - name: Konfigurera och installera Retail Hardware Station
+                  href: ../retail/retail-hardware-station-configuration-installation.md
+            - name: Kanalhantering för online
+              items:
+                - name: Ställa in onlinebutiker
+                  href: ../retail/online-stores.md
+                - name: Guidad visning av hemsidan
+                  href: quick-tour-home-page.md
+                - name: Guidad visning av sidan med produktinformation
+                  href: quick-tour-pdp.md
+                - name: Guidad visning av kundvagn och kassa
+                  href: quick-tour-cart-checkout.md
+                - name: Guidad visning av kontohantering
+                  href: quick-tour-account-management.md
+                - name: Skapa en näthandelsplats
+                  items:
+                    - name: Översikt över onlinebutik
+                      href: online-store-overview.md
+                    - name: Skapa en näthandelsplats
+                      href: create-ecommerce-site.md
+                    - name: Distribuera en ny näthandelsplats
+                      href: deploy-ecommerce-site.md
+                    - name: Associera en online-webbplats med en kanal
+                      href: associate-site-online-store.md
+                    - name: Konfigurera ditt domännamn
+                      href: configure-your-domain-name.md
+                    - name: Aktivera platsbaserad butiksdetektering
+                      href: enable-store-detection.md
+                - name: Hantera din webbplats
+                  items:
+                    - name: Hantera användare och roller
+                      href: manage-ecommerce-users-roles.md
+                    - name: Lägga till skriptkod på webbsidor för att stödja telemetri
+                      href: add-telemetry.md
+                    - name: Språkinformation för sökmotoroptimering (SEO) för din webbplats
+                      href: search-engine-optimization-considerations.md
+                - name: Lägg till och hantera innehåll på din webbplats
+                  items:
+                    - name: Sätt att lägga till innehåll
+                      href: add-manage-content.md
+                    - name: Sidelement
+                      href: page-elements-overview.md
+                    - name: Dokumentera tillstånd och livscykel
+                      href: document-states-overview.md
+                - name: Anpassa din webbplats och lägg till butiksdetaljer
+                  items:
+                    - name: Lägg till en logotyp
+                      href: add-logo.md
+                    - name: Välj ett tema för webbplatsen
+                      href: select-site-theme.md
+                    - name: Lägg till en favicon
+                      href: add-favicon.md
+                    - name: Lägg till ett välkomstmeddelande
+                      href: add-welcome-message.md
+                    - name: Lägg till copyrightmeddelande
+                      href: add-copyright-notice.md
+                    - name: Lägg till språk
+                      href: add-languages-to-site.md
+                - name: Sidor
+                  items:
+                    - name: Välj sidlayouter
+                      href: select-page-layouts.md
+                    - name: Hantera SEO-metadata
+                      href: manage-seo-metadata.md
+                    - name: Utöka en produktsida
+                      href: enrich-product-page.md
+                - name: Moduler
+                  items:
+                    - name: Arbeta med moduler
+                      href: work-with-modules.md
+                - name: Fragment
+                  items:
+                    - name: Arbeta med fragment
+                      href: work-with-fragments.md
+                - name: Mallar och layouter
+                  items:
+                    - name: Översikt över mallar och layouter
+                      href: templates-layouts-overview.md
+                    - name: Mallar
+                      items:
+                        - name: Arbeta med mallar
+                          href: work-with-templates.md
+                    - name: Layouter
+                      items:
+                        - name: Arbeta med förinställda layouter
+                          href: work-with-layouts.md
+                - name: Webbplatsnavigering
+                  items:
+                    - name: Anpassa webbplatsnavigeringen
+                      href: customize-site-navigation.md
+                    - name: Skapa URL för webbsida
+                      href: create-page-URL.md
+                - name: Startpaket
+                  items:
+                    - name: Översikt över startpaket
+                      href: starter-kit-overview.md
+                    - name: Sidan Kontohantering
+                      href: account-management.md
+                    - name: Lägg till notifieringsmodul
+                      href: add-alert.md
+                    - name: Lägg till en inköpsruta
+                      href: add-buy-box.md
+                    - name: Lägg till karusellmodul
+                      href: add-carousel.md
+                    - name: Lägg till vagnmodul
+                      href: add-cart-module.md
+                    - name: Lägg till kassamodul
+                      href: add-checkout-module.md
+                    - name: Lägg till behållarmodul
+                      href: add-container-module.md
+                    - name: Lägg till modul för innehållsplacering
+                      href: add-content-placement-modules.md
+                    - name: Lägg till en innehållsrik blockmodul
+                      href: add-content-rich-block.md
+                    - name: Lägg till funktionsmodul
+                      href: add-feature-module.md
+                    - name: Skapa en sidfotsmodul
+                      href: author-footer-module.md
+                    - name: Skapa en sidhuvudmodul
+                      href: author-header-module.md
+                    - name: Lägg till heromodul
+                      href: add-hero-module.md
+                    - name: Skapa en modul för orderbekräftelse
+                      href: order-confirmation-module.md
+                    - name: Lägg till en videospelar-modul
+                      href: add-video-player.md
+                - name: Rapportering
+                  items:
+                    - name: Generera kanalrapporter online
+                      href: generate-reports.md
+                - name: Felhantering
+                  items:
+                    - name: Bygg anpassade svarssidor för felstatuskod 4xx/5xx
+                      href: build-pages-400-500-errors.md
+            - name: Hantering av kundtjänstkanal
+              items:
+                - name: Försäljningsfunktioner för kundtjänst
+                  href: ../retail/call-center-functionality.md
+                - name: Ställa in kundtjänstkanaler
+                  href: ../retail/set-up-order-processing-options.md
+                - name: Kundtjänstkataloger
+                  href: ../retail/call-center-catalogs.md
+                - name: Konfigurera leveranslägen och avgifter
+                  href: ../retail/configure-call-center-delivery.md
+                - name: Ställa in och arbeta med bedrägerivarningar
+                  href: ../retail/set-up-fraud-alerts.md
+                - name: Ställa in kontinuitetsprogram för kundtjänster
+                  href: ../retail/set-up-continuity-program.md
+                - name: Konfigurera och arbeta med orderspärrar för kundtjänst
+                  href: ../retail/work-with-order-holds.md
+        - name: Konfiguration av flera kanaler
+          items:
+            - name: Produkter och marknadsföring
+              items:
+                - name: Översikt över produktinformation
+                  href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
+                - name: Butikshierarkier
+                  href: ../retail/retail-hierarchies.md
+                - name: Attribut och attributsgrupper
+                  href: ../retail/attribute-attributegroups-lifecycle.md
+                - name: Skapa och hantera attribut
+                  href: ../retail/create-manage-attributes.md
+                - name: Ställa in butiksprodukter
+                  href: ../retail/set-up-retail-products.md
+                - name: Hantera produktkategorier och produkter för butik
+                  href: ../retail/category-management-product-creation.md
+                - name: Produktdimensioner
+                  href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json
+                - name: Sortimenthantering
+                  href: ../retail/assortments.md
+                - name: Ställa in sortiment
+                  href: ../retail/set-up-assortments.md
+                - name: Ställa in streckkoder
+                  href: ../retail/set-up-bar-codes.md
+                - name: Ställa in streckkodsmasker
+                  href: ../retail/set-up-bar-code-masks.md
+                - name: Ändra sorteringsordning för marknadsföringsenheter
+                  href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md
+            - name: Prissättning och rabatter
+              items:
+                - name: Butiksrabatter
+                  href: ../retail/retail-discounts-overview.md
+                - name: Prishantering för butiksförsäljning
+                  href: ../retail/price-management.md
+                - name: Prisjusteringar och rabatter
+                  href: ../retail/price-adjustments-discounts.md
+                - name: Använda flera Retail-rabatter på en produkt
+                  href: ../retail/Apply-multiple-retail-discounts.md
+                - name: Bestämma den optimala kombinationen av överlappande rabatter
+                  href: ../retail/optimal-combination-overlapping-discounts.md
+                - name: Definiera kanalspecifika rabatter
+                  href: ../retail/define-channel-specific-discounts.md
+                - name: Alternativ för att förhindra rabatter för butiksprodukter
+                  href: ../retail/prevent-discounts.md
+                - name: Översikt av transportrabatter
+                  href: ../retail/retail-shipping-discount.md
+                - name: Ställa in kuponger för butiksförsäljning
+                  href: ../retail/retail-coupons.md
+                - name: Prisrapporter för Retail
+                  href: ../retail/price-report.md
+            - name: Förmåner
+              items:
+                - name: Lojalitetsöversikt
+                  href: ../retail/set-up-customer-loyalty-program.md
+            - name: Betalningar
+              items:
+                - name: Betalningsmetoder
+                  href: ../retail/payment-methods.md
+                - name: Betalningsmetoder i kundcenter
+                  href: ../retail/work-with-payments.md
+                - name: 'Inställning, auktorisering och registrering av kreditkort'
+                  href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera kontantvalörer för kassan
+                  href: ../retail/cash-denominations.md
+                - name: Konfigurera kreditkortsbearbetning
+                  href: ../retail/tasks/configure-credit-card-processing.md
+                - name: Dynamics 365-betalningskoppling för Adyen
+                  href: ../retail/dev-itpro/adyen-connector.md
+                - name: Spara betalningsinstrument online med Adyen-kopplingen
+                  href: ../retail/dev-itpro/adyen-connector-listPI.md
+                - name: Ordna scenarier för fakturabetalning
+                  href: ../retail/payinvoice.md
+                - name: Förebygga dubblettbetalningar
+                  href: ../retail/duplicate-payment-protection.md
+                - name: Översikt över betalningar i flera kanaler
+                  href: ../retail/omni-channel-payments.md
+                - name: Vanliga frågor om betalningar
+                  href: ../retail/dev-itpro/payments-retail.md
+            - name: Avancerade automatiska avgifter
+              items:
+                - name: Konfigurera och använda avancerade automatiska avgifter
+                  href: ../retail/omni-auto-charges.md
+                - name: Fördela huvudtillägg proportionellt på matchande försäljningsrader
+                  href: ../retail/pro-rate-charges-matching-lines.md
+            - name: Moms
+              items:
+                - name: Momsöversikt
+                  href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Momsberäkningsmetoder i fältet Ursprung
+                  href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
+                - name: Momstilldelning och åsidosättningar
+                  href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
+                - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
+                  href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+            - name: Inköpsorder
+              items:
+                - name: Översikt av inköpsorder
+                  href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa inköpsorder
+                  href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+                - name: Produktinleverans mot inköpsorder
+                  href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+                - name: Godkänn och bekräfta inköpsorder
+                  href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+                - name: Mobil arbetsyta för inköpsordergodkännande
+                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+            - name: Lager
+              items:
+                - name: Hantering av butikslager
+                  href: ../retail/work-with-store-inventory.md
+                - name: Registrera serienummer i försäljningsprocessen
+                  href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                - name: Lagerjournaler
+                  href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/commerce/toc.json
+                - name: Lagermärkesinventering
+                  href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/commerce/toc.json
+                - name: FIFO med fysiskt värde och markering
+                  href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
+                - name: LIFO-datum med fysiskt värde och markering
+                  href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
+                - name: LIFO med fysiskt värde och markering
+                  href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
+                - name: Datum för viktat medelvärde
+                  href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/commerce/toc.json
+                - name: Viktat genomsnitt med fysiskt värde och markering
+                  href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
+                - name: Karantänorder
+                  href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/commerce/toc.json
+                - name: Löpande genomsnittlig självkostnad
+                  href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/commerce/toc.json
+                - name: Spåra löpande genomsnittlig kostnad per lagerdimension
+                  href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/commerce/toc.json
+            - name: Uppgifter
+              items:
+                - name: Butiksutdrag
+                  href: ../retail/retail-statements.md
+                - name: Konsekvenskontroll av butikstransaktion
+                  href: ../retail/valid-checker.md
+                - name: 'Skapa, beräkna och bokföra utdrag för en butik'
+                  href: ../retail/tasks/create-calculate-post-statement-retail-store.md
+                - name: Förbättringar av funktionen för bokföring av utdrag
+                  href: ../retail/statement-posting-EOD.md
+                - name: Förbättrad hantering av batchspårade artiklar
+                  href: ../retail/batch.md
+                - name: Konfigurera Butiksparametrar som berör butiksutdrag
+                  href: ../retail/tasks/parameter-configurations-retail-statements.md
+                - name: Konfigurera betalningsmetodinställningar som berör butiksutdrag
+                  href: ../retail/tasks/payment-configurations-retail-statements.md
+                - name: Konfigurera och köra ett jobb för att beräkna utdrag
+                  href: ../retail/tasks/run-job-calculate-statements.md
+                - name: Konfigurera och köra ett jobb för att bokföra utdrag
+                  href: ../retail/tasks/run-job-post-statements.md
+                - name: Konfigurera butiksinställningar som berör butiksutdrag
+                  href: ../retail/tasks/store-configurations-retail-statements.md
+            - name: Fördelad orderhantering (DOM)
+              items:
+                - name: Översikt över fördelad orderhantering (DOM)
+                  href: ../retail/dom.md
+                - name: Kostnadskonfiguration
+                  href: ../retail/cost.md
+            - name: Orderuppfyllelse och bearbetning
+              items:
+                - name: Orderuppfyllelse i butik
+                  href: ../retail/Order-fulfillment-overview.md
+                - name: Ställa in orderuppfyllelse för butiker
+                  href: ../retail/Order-fulfillment-POS-setup.md
+                - name: Visa ordermeddelanden i kassan
+                  href: ../retail/Notifications-POS.md
+            - name: Returer
+              items:
+                - name: Länkade återbetalningar
+                  href: ../retail/dev-itpro/linked-refunds.md
+                - name: Sälja och returnera produkter som inte ingår i en butiks sortiment
+                  href: ../retail/sell-return-outside-assortments.md
+                - name: Konfigurera och behandla ett utbyte för en returorder
+                  href: ../retail/orderexchanges.md
+                - name: Begränsa betalningsmetoder för returer utan kvitto
+                  href: ../retail/payment-methods-restrictions.md
+                - name: 'Returnera artiklar för flera kunder, order och fakturor'
+                  href: ../retail/multireturn.md
+        - name: Modern kassa (MPOS) och molnbaserad kassa
+          items:
+            - name: Välj mellan MPOS och molnbaserad kassa
+              href: ../retail/MPOS-or-CPOS.md
+            - name: Kassaåtgärder online och offline
+              href: ../retail/pos-operations.md
+            - name: Enhetsaktivering av en anpassad Retail MPOS
+              href: ../retail/dev-itpro/retail-POS-activation-changes.md
+            - name: Demodataskärmlayouter i MPOS och molnbaserad kassa
+              href: ../retail/demo-data.md
+            - name: Produkt- och kundsökning i kassan
+              href: ../retail/POS-search-improvements.md
+            - name: Söka efter produkter och produktvarianter under orderregistrering
+              href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
+            - name: Förbättringar av likviditetsstyrning
+              href: ../retail/cash-mgmt.md
+            - name: Lagersökning i kassan
+              href: ../retail/product-variants-POS.md
+            - name: Pausa och återuppta transaktioner i kassan
+              href: ../retail/pos-suspend-recall-transactions.md
+            - name: Offlinefunktioner för kassa
+              href: ../retail/pos-offline-functionality.md
+            - name: Hantering av skift och kassalåda
+              href: ../retail/shift-drawer-management.md
+            - name: Lösa in presentkortets saldo
+              href: ../retail/dev-itpro/gift-card-cash-out.md
+            - name: Leverera beställningar från en annan butik
+              href: ../retail/charge-send.md
+            - name: Uppgiftsinspelare och hjälp för MPOS och molnbaserad kassa
+              href: ../retail/task-recorder-retail-pos.md
+            - name: Kringutrustning
+              items:
+                - name: Butikskringutrustning
+                  href: ../retail/retail-peripherals-overview.md
+                - name: Kringutrustningssimulator för butiker
+                  href: ../retail/dev-itpro/retail-peripheral-simulator.md
+                - name: Ansluta kringutrustning till kassan
+                  href: ../retail/define-maintain-channel-clients-registers-hw-stations.md
+            - name: Skärmlayouter
+              items:
+                - name: Demonstrationsdataskärmens layout i MPOS/CPOS
+                  href: ../retail/demo-data.md
+                - name: Skärmlayouter för kassan
+                  href: ../retail/pos-screen-layouts.md
+                - name: Installera Retail POS-layoutdesignern
+                  href: ../retail/install-pos-layout-designer.md
+                - name: Välja meddelandeinställningar
+                  href: ../retail/Notifications-POS.md
+                - name: Inställningar för kassaprogram och användarspråk
+                  href: ../retail/pos-application-user-language-settings.md
+                - name: Ställa in och hantera bilder för MPOS
+                  href: ../retail/set-up-manage-images-retail-mpos.md
+                - name: Klientbilder i kassan
+                  href: ../retail/pos-image.md
+            - name: Kundorder
+              items:
+                - name: Kundorder i MPOS
+                  href: ../retail/customer-orders-overview.md
+                - name: Kombinerade kundorder
+                  href: ../retail/hybrid-customer-orders.md
+            - name: Försäljare
+              items:
+                - name: Spåra provisioner i kassan med hjälp av försäljningsgrupper
+                  href: ../retail/pos-sales-groups-track-commissions.md
+            - name: Enhetsaktivering
+              items:
+                - name: 'Konfigurera, installera och aktivera MOPS'
+                  href: ../retail/retail-modern-pos-device-activation.md
+                - name: Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa
+                  href: ../retail/extended-logon.md
+                - name: Hantera Retail-aktiveringskonton och validera enheter
+                  href: ../retail/set-up-activation-accounts-validate-devices-hq.md
+            - name: Kvitton
+              items:
+                - name: Ställa in och utforma kvittoformat
+                  href: ../retail/receipt-templates-printing.md
+                - name: Skicka e-postkvitton från MPOS
+                  href: ../retail/email-receipts.md
+        - name: Betyg och recensioner
+          items:
+            - name: Översikt över omdömen och recensioner
+              href: ratings-reviews-overview.md
+            - name: Välj att använda omdömen och recensioner
+              href: opt-in-ratings-reviews.md
+            - name: Hantera omdömen och recensioner
+              href: manage-reviews.md
+            - name: Konfigurera omdömen och recensioner
+              href: configure-ratings-reviews.md
+            - name: Synkronisera produktklassificeringar i Dynamics 365 Retail
+              href: sync-product-ratings.md
+        - name: Produktrekommendationer
+          items:
+            - name: Översikt av produktrekommendationer
+              href: product-recommendations.md
+            - name: Lägg till listor över produktrekommendationer på e‑handelssidor
+              href: add-reco-list-to-page.md
+            - name: Aktivera produktrekommendationer
+              href: enable-product-recommendations.md
+            - name: Skapa granskade listor över produktrekommendationer
+              href: create-editorial-recommendation-lists.md
+            - name: Hantera AI-ML-baserade produktrekommendationsresultat
+              href: modify-product-recommendation-results.md
+            - name: Hämta produktrekommendationer med hjälp av demodata
+              href: product-recommendations-demo-data.md
+            - name: Vanliga frågor om produktrekommendationer
+              href: faq-recommendations.md
+            - name: Kassaupplevelser
+              items:
+                - name: Produktrekommendationer i kassan
+                  href: ../retail/product.md
+                - name: Lägga till en rekommendationskontroll i kassaenheter
+                  href: ../retail/add-recommendations-control-pos-screen.md
+        - name: Övervakning och analys
+          items:
+            - name: Övervaka försäljningsresultat och marginaler
+              href: ../retail/monitor-sales-margin-performance.md
+            - name: Analysera försäljningstrender och försäljningsmönster
+              href: ../retail/analyze-sales-trends-patterns.md
+            - name: Utvärdera försäljningsresultat per produkt
+              href: ../retail/sales-performance-products.md
+            - name: Utvärdera lönsamhet för kunder och produkter
+              href: ../retail/assess-customer-product-profitability.md
+            - name: Analysera butiksresultat
+              href: ../retail/store-performance-information.md
+            - name: 'Ställa in Recency-, frekvens- och penninganalys (RFM)'
+              href: ../retail/set-up-rfm-analysis.md
+        - name: Lokaliserings- och regelfunktioner
+          items:
+            - name: Översikt över räkenskapsintegration för butikskanal
+              href: ../retail/localizations/fiscal-integration-for-retail-channel.md
+            - name: Ställ in räkenskapsintegration för butikskanal
+              href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Österrike
+              items:
+                - name: Exempel på skatteregistreringstjänsten för Österrike
+                  href: ../retail/localizations/emea-aut-fi-sample.md
+            - name: Östeuropa
+              items:
+                - name: Förskottsfakturor för Retail i Östeuropa
+                  href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md
+                - name: Hantering av handkassa for Retail i Östeuropa
+                  href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md
+                - name: Kundfakturor och returförsäljningsorder för Retail i östeuropeiska länder
+                  href: ../retail/localizations/emea-eeu-retail-invoices.md
+                - name: 'Riktlinjer för distribution av kassaapparater i Tjeckien, Ungern och Polen'
+                  href: ../retail/localizations/emea-eeu-deployment.md
+                - name: Exempel på integrering av kvittoskrivare för Polen
+                  href: ../retail/localizations/emea-pol-fpi-sample.md
+                - name: Exempel på skatteregistreringstjänsten för Tjeckien
+                  href: ../retail/localizations/emea-cze-fi-sample.md
+            - name: Frankrike
+              items:
+                - name: Funktioner för kassaapparat
+                  href: ../retail/localizations/emea-fra-cash-registers.md
+                - name: Riktlinjer för distribution av kassaapparater
+                  href: ../retail/localizations/emea-fra-deployment.md
+            - name: Indien
+              items:
+                - name: Integrering av moms (GST) för varor och tjänster för kassaapparater
+                  href: ../retail/localizations/apac-ind-cash-registers.md
+                - name: Riktlinjer för distribution av kassaapparater
+                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md
+                - name: Stöd för uppgradering och N-1 för Indien
+                  href: ../retail/localizations/apac-ind-n-1-for-india.md
+            - name: Italien
+              items:
+                - name: Exempel på integrering av kvittoskrivare för Italien
+                  href: ../retail/localizations/emea-ita-fpi-sample.md
+            - name: Mexiko
+              items:
+                - name: Globala CFDI e-fakturor för Mexiko
+                  href: ../finance/localizations/latam-mex-global-cfdi-3-3.md
+            - name: Norge
+              items:
+                - name: Funktioner för kassaapparat
+                  href: ../retail/localizations/emea-nor-cash-registers.md
+                - name: Riktlinjer för distribution av kassaapparater
+                  href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md
+            - name: Sverige
+              items:
+                - name: Funktioner för kassaapparat
+                  href: ../retail/localizations/emea-swe-cash-registers.md
+                - name: Exempel för Retail POS-integration med styrenheter
+                  href: ../retail/localizations/retail-sdk-control-unit-sample.md
+        - name: Retail-uppgifter
+          items:
+            - name: Skapa kanalspecifika handelsavtal
+              href: ../retail/tasks/base-price-trade-agreements.md
+            - name: Skapa handelsavtal med hjälp av kategoriprissättningsregler
+              href: ../retail/tasks/category-pricing-rules-trade-agreements.md
+            - name: Konfigurera funktionsprofiler för säljare
+              href: ../retail/tasks/configure-functionality-profile-sales-representative.md
+            - name: Skapa enheter och associera dem med register
+              href: ../retail/tasks/create-associate-device.md
+            - name: Skapa maskinvarustationer
+              href: ../retail/tasks/create-associate-hardware-station.md
+            - name: Skapa kassaregister
+              href: ../retail/tasks/create-associate-registers.md
+            - name: Skapa kundtjänstorder
+              href: ../retail/tasks/create-call-center-orders.md
+            - name: Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
+              href: ../retail/tasks/create-financial-dimensions-pos.md
+            - name: Skapa ekonomiska dimensioner för butikskanaler och konfigurera dimensionsvärden för butiker
+              href: ../retail/tasks/create-financial-dimensions-retail-channels.md
+            - name: Skapa kassabehörighetsgrupper
+              href: ../retail/tasks/create-pos-permission-groups.md
+            - name: Skapa visuella kassaprofiler
+              href: ../retail/tasks/create-pos-visual-profile-2016-02.md
+            - name: Skapa produktförpackningar för inköpsorder
+              href: ../retail/tasks/create-product-packages-purchase-orders.md
+            - name: Skapa kundtjänstkanaler och definiera kanalattribut
+              href: ../retail/tasks/define-call-center-channel-channel-attributes.md
+            - name: Definiera kanalattribut
+              href: ../retail/tasks/define-channel-attributes.md
+            - name: Definiera kontinuitetstidsplaner
+              href: ../retail/tasks/define-continuity-schedules.md
+            - name: Definiera bonusprogram
+              href: ../retail/tasks/define-loyalty-programs.md
+            - name: Definiera förmånsbelöningspoäng
+              href: ../retail/tasks/define-loyalty-reward-points.md
+            - name: Definiera förmånsscheman
+              href: ../retail/tasks/define-loyalty-schemes.md
+            - name: Utforma relationerna mellan organisationsenheter
+              href: ../retail/tasks/design-relationships-between-organizational-units.md
+            - name: Hantera sortiment
+              href: ../retail/tasks/manage-assortments-2016-11.md
+            - name: Ladda ned maskinvarustationer via självbetjäning
+              href: ../retail/tasks/perform-self-service-download-hardware-station.md
+            - name: Bokföra online-försäljningar och -betalningar
+              href: ../retail/tasks/posting-online-sales-payments.md
+            - name: Bearbeta justeringar av förmånsbelöningspoäng
+              href: ../retail/tasks/process-loyalty-reward-point-adjustments.md
+            - name: Överföra produkter från distributionscenter till butiker via centraliserad distribution
+              href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md
+            - name: Ställa in regler och parametrar för direktleverans och centraliserad distribution
+              href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+            - name: Sälja kontinuitetsprogram och bearbeta försäljningsorder
+              href: ../retail/tasks/use-continuity-program.md
+            - name: Konfigurera butiksmedarbetare
+              href: ../retail/tasks/worker.md
+        - name: Intelligence
+          items:
+            - name: Intelligence – startsida
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
+            - name: Åtkomst till information och rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
+            - name: Power BI-innehåll
+              items:
+                - name: Power BI-innehåll – startsida
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
+                - name: Utfall kontra budget
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Förmåner
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Kassaöversikt
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
+                - name: Ekonomichef – översikt
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Kompensation
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Kompensation och förmåner
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Kostnadsredovisningsanalys
+                  items:
+                    - name: Power BI-innehåll för kostnadsredovisningsanalys
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ställa in säkerhet för kostnadsredovisningsanalys Power BI-innehåll
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Kostnadshantering
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Hantering av kredit och inkasso
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                - name: Medarbetarkompetenser och utveckling
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Medarbetarutveckling
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/commerce/toc.json
+                - name: Utläggshantering Power BI - innehåll
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Finansiellt resultat
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Ekonomiska insikter
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
+                - name: Hantering av anläggningstillgångar
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                - name: Inlärning
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Organisationsutbildning
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Praxischef
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Produktionsprestanda
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Inköps- och utgiftsanalys
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
+                - name: Rekrytering
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Retail Channel Performance
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+                - name: Försäljnings- och lönsamhetsresultat
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
+                - name: Leverantörsbetalningar
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                - name: Resultat för lagerställe
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
+                - name: Personalmätningar
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+            - name: Rapportera och skriva ut dokument
+              items:
+                - name: Dokumentrapporteringstjänster – översikt
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera SSRS för lokala distributioner
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Skriver ut
+                  items:
+                    - name: Dokumentetutskrift – översikt
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
+                    - name: Installera dokumentflödesagenten för att aktivera nätverksutskrift
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
+                    - name: Uppgradera Dokumentflödesagenten
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                    - name: Installera nätverksskrivare i lokala miljöer
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Skapa, publicera och skriva ut dokument i lokala distributioner'
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
+                    - name: Köra Dokumentflödesagenten som en Windows-tjänst
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
+                - name: Hjälp med att förhindra att tidsgränsen för långvariga rapporter löper ut
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/commerce/toc.json
+                - name: Tillgängliga SQL Server Reporting Services-rapporter
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa rapporteringslösningar
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/commerce/toc.json
+                - name: Installera rapportformgivningsmallar
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/commerce/toc.json
+                - name: Anpassa App Suite-rapporter med tillägg
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/commerce/toc.json
+                - name: Utöka programsvitens rapportdatauppsättningar
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/commerce/toc.json
+                - name: Utöka rapportmenyobjekt för att omdirigera användares navigering
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa anpassade utformningar för affärsdokument
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/commerce/toc.json
+                - name: Förhandsgranska PDF-dokument med ett inbäddat visningsprogram
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/commerce/toc.json
+            - name: Elektronisk rapportering
+              items:
+                - name: Översikt över elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurationer
+                  items:
+                    - name: Skapa konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
+                    - name: Förbered komponenter i den elektroniska rapporteringslösningen
+                      items:
+                        - name: Utforma domänspecifik datamodell
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/commerce/toc.json
+                        - name: Förbered programspecifika metadata
+                          items:
+                            - name: (ER) Förbered program-metadata som ska användas i RCS
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/commerce/toc.json
+                            - name: (RCS) Tillgå programmets metadata med hjälp av ER-konfiguration
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/commerce/toc.json
+                            - name: (RCS) Tillgå programmets metadata med hjälp av anslutna program
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/commerce/toc.json
+                        - name: Definiera modellmappningar och välja datakällor
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/commerce/toc.json
+                        - name: Mappa datamodell till utvalda datakällor
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/commerce/toc.json
+                        - name: Skapa en formatkonfiguration
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/commerce/toc.json
+                        - name: Mappa de skapade formatkomponenterna till datamodellelement
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Testa den förberedda ER‑lösningen i målprogrammet
+                      items:
+                        - name: (ER) Importera konfigurationer från RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                        - name: Generera elektroniska dokument för betalningar med en formatkonfiguration
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
+                    - name: Uppgradera formatet genom att implementera en ny basversion för formatet
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/commerce/toc.json
+                - name: Formeldesigner i elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/commerce/toc.json
+                - name: Hantera ER-modellmappning i separata ER-konfigurationer
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
+                - name: Välj datamodelldefinitioner när du skapar format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
+                - name: Generera rapporter genom att lägga till innehåll som råa XML-data
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
+                - name: (ER) Korsföretags datakällor i elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Utforma ER-format för att skapa utgående elektroniska dokument i olika format
+                  items:
+                    - name: (ER) Utforma en konfiguration för rapportgenerering i OPENXML-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: (ER) Utforma konfigurationer för att generera rapporter i Word-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Utforma konfigurationer för att fylla i PDF-mallar
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/commerce/toc.json
+                - name: Bädda in bilder och former
+                  items:
+                    - name: (ER) Bädda in bilder och former i dokument som du skapar
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Exempel på hur du bäddar in bilder och figurer
+                      items:
+                        - name: Utforma konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/commerce/toc.json
+                        - name: Granska konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
+                        - name: Skapa rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+                - name: Ändra format för elektronisk rapportering genom att tillämpa mallar från Excel igen
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
+                - name: Definiera ER‑konfigurationers beroende av andra komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
+                - name: Designa en ER-lösning för att använda ekonomiska dimensioner
+                  items:
+                    - name: Utforma datamodeller som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/commerce/toc.json
+                    - name: Mappa modeller som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/commerce/toc.json
+                    - name: Utforma rapporter som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
+                    - name: Köra rapporter som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
+                - name: Utforma ER-format för inventering och summering genom att använda information från genererad utmatning
+                  items:
+                    - name: Skapa format för att utföra inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera format för att utföra inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
+                    - name: Använda beräkningar för att skapa utdata för inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
+                    - name: Köra format för att utföra inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
+                - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
+                  items:
+                    - name: Utforma format att dynamiskt lägga till kolumner i Excel-rapporter som horisontellt expanderbara intervall
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
+                    - name: Kör format som dynamiskt lägger till kolumner till rapporter från Excel som horisontellt expanderbara intervall
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
+                - name: Använd dokumenthanteringsfiler i formatutdata
+                  items:
+                    - name: Förbered datamodeller för att använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/commerce/toc.json
+                    - name: Utöka datamodeller att använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skapa format som ska använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/commerce/toc.json
+                    - name: Köra format som ska använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ändra och köra format som ska använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
+                - name: Uppdatera programdata med elektronisk rapportering
+                  items:
+                    - name: Generera elektroniska dokument och uppdatera programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera konfigurationer för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Utforma konfigurationer för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ändra modeller och mappningar för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ändra format för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skapa dokument som omfattar programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/commerce/toc.json
+                - name: Importera data från inkommande filer med hjälp av ER-lösningar
+                  items:
+                    - name: Tolka inkommande dokument i olika format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera dataimport från manuellt markerade filer
+                      items:
+                        - name: Skapa konfigurationer för att importera data från en extern XML‑fil
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera dataimport i batchläge från filer i SharePoint
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera filer i XML‑format
+                      items:
+                        - name: Importera filer i XML-format med valfria attribut
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurera ER‑format så att filer i XML-format importeras med valfria attribut
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Stöd parameteranrop till ER-datakällor för beräknad fälttyp
+                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/commerce/toc.json
+                - name: Livscykel för konfiguration
+                  items:
+                    - name: Hantera livscykeln för konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ladda upp konfigurationer till Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera konfigurationer från Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ladda ned konfigurationer från Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importera konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Hämta ER-konfigurationer från RCS-databasen
+                      items:
+                        - name: Hämta konfigurationer från ER-databasen för RCS‑typen
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                        - name: Importera konfigurationer från RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Använd elektroniska rapporteringslösningar i Finance and Operations
+                  items:
+                    - name: Konfigurera ramverket
+                      items:
+                        - name: Konfigurera ramverket för elektronisk rapportering
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
+                        - name: Säkerhetskopiera och återställa ER-mallar
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
+                        - name: Skapa konfigurationsleverantörer och markera dem som aktiva
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Destinationer
+                      items:
+                        - name: Översikt över destinationer
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurera destinationer
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Validera genererade rapporter automatiskt
+                      items:
+                        - name: Spåra genererade rapportresultat och jämför dem med baslinjevärden
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commerce/toc.json
+                        - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
+                        - name: Automatisera testning med elektronisk rapportering
+                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
+                    - name: Automatisera affärsprocesser med hjälp av elektroniska rapporteringskonfigurationer
+                      items:
+                        - name: Konfigurera elektronisk rapportering för att hämta data till Power BI
+                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
+                        - name: Generera utskrivbara formulär för fritextfakturor (FTI)
+                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
+                    - name: Spåra körning av ER-format för att felsöka prestandaproblem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Hantering av affärsdokument – översikt
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
+                - name: API för ER‑ramverk
+                  items:
+                    - name: Utöka listan med funktioner för elektronisk rapportering
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/commerce/toc.json
+                    - name: 'Ändringar av API:et för ramverket för elektronisk rapportering för Application update 7.3'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
+                    - name: Ange anpassad lagringsplats för skapade dokument
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
+            - name: Inbäddade analyslösningar
+              items:
+                - name: Inbäddad Power BI i arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/commerce/toc.json
+                - name: Power BI Embedded-integration
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/commerce/toc.json
+                - name: Anpassa inbäddade rapporter i analytiska arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
+            - name: Anpassningsalternativ med PowerBI.com
+              items:
+                - name: Funktioner och tjänster som är tillgängliga via Power BI-integration
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
+                - name: Fästa Power BI-rapporter vid arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
+                - name: Välj analysarbetsytor från PowerBI.com
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
+            - name: Verktyg för att skapa och bygga ut lösningar
+              items:
+                - name: 'Analys, aggregerade mått och KPI-modellering'
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa analytiska rapporter med Power BI Desktop
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
+                - name: Modellera och aggregera data
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
+                - name: Lägga till ekonomiska dimensioner i aggregerade mått
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
+                - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
+                - name: Hjälp för säkra analytiska arbetsytor och rapporter med Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/commerce/toc.json
+            - name: Hanteringsverktyg för privilegierade användare
+              items:
+                - name: Power BI-integration med enhetslagring
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
+                - name: Lösa problem efter underhålla av enhetslagring
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                - name: Konfigurera Power BI-integration för arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
+                - name: Ta med din egen databas
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
+        - name: Mobilapp
+          items:
+            - name: Startsida för mobilapp
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
+            - name: Mobila arbetsytor
+              items:
+                - name: Tillgängliga mobila arbetsytor
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/commerce/toc.json
+                - name: Tillgångshantering
+                  href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
+                - name: Företagskatalog
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Kostnadskontroll
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Utläggshantering
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Lagerbehållning
+                  href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Fakturagodkännanden
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Mitt team
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Project för mobila appar – Översikt
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Post för projekttid
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
+                - name: Project Timesheet
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/commerce/toc.json
+                - name: Godkännande av inköpsorder
+                  href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Försäljningsorder
+                  href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+                - name: Leverantörssamarbete
+                  href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+            - name: Publicera mobila arbetsytor
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+        - name: Office-integrering
+          items:
+            - name: Office-integrering – översikt
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/commerce/toc.json
+            - name: Office-integrering – självstudier
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
+            - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
+            - name: Skapa Öppna i Excel-upplevelse
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
+            - name: Lägga till mallar på menyn Öppna rader i Excel
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
+            - name: Anpassa dialogrutan Öppna på Microsoft Office-menyn
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
+            - name: Konfigurera och skicka e-post
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: Utveckla e-postmiljöer
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
+            - name: Felsöka Office-integrering
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/commerce/toc.json
+        - name: Organisationsadministration
+          items:
+            - name: Organisationsadministration – startsida
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/commerce/toc.json
+            - name: Nummerserier
+              items:
+                - name: Nummerserier – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Ställa in enskilda nummerserier
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/commerce/toc.json
+                - name: Ställa in nummerserier med hjälp av en guide
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/commerce/toc.json
+            - name: Organisationer och organisationshierarkier
+              items:
+                - name: Organisationer och organisationshierarkier – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json
+                - name: Planera en organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa en organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa juridiska personer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa driftenheter
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
+            - name: Global adressbok
+              items:
+                - name: Översikt över global adressbok
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Planera för den globala adressboken och andra adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera den globala adressboken
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Vanliga frågor och svar om adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/commerce/toc.json
+            - name: Arbetsflödessystem
+              items:
+                - name: Arbetsflödessystem – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Arbetsflödessystemets arkitektur
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/commerce/toc.json
+                - name: Arbetsflödeselement
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/commerce/toc.json
+                - name: Arbetsflödesåtgärder
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa arbetsflöden
+                  items:
+                    - name: Skapa arbetsflöden – översikt
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera arbetsflödesegenskaper
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera manuella uppgifter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera automatiska uppgifter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera godkännandeprocesser
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera godkännandesteg
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera manuella beslut
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera villkorliga beslut
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera parallella aktiviteter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera parallella grenar
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera arbetsflöden för radartiklar
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera batchjobbet Meddelandebehandling i arbetsflöde som kritiskt
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/commerce/toc.json
+                - name: Delegera arbetsuppgifter i ett arbetsflöde
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/commerce/toc.json
+                - name: Visa arbetsflödeshistorik
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurera systemet för att skicka arbetsflödesrelaterad e-post till användare
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/commerce/toc.json
+                - name: Arbetsflödestyper
+                  items:
+                    - name: Skapar en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/commerce/toc.json
+                    - name: Checklista för arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skapa en arbetsflödeskategori
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skapa en fråga för en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skapa en ny arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skapa en arbetsflödesdokumentklass
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skapa en SubmitToWorkflow-klass
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Associera en arbetsflödesdokumentklass med en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
+                - name: Rapport för arbetsflödestyper
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
+                - name: Vanliga frågor om arbetsflöde
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/commerce/toc.json
+            - name: Notifieringar
+              items:
+                - name: Notifieringar – översikt
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa notifieringsregler
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/commerce/toc.json
+                - name: Batchbearbetning av notifieringar
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/commerce/toc.json
+                - name: Kundnotifieringar via e-postmeddelande
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/commerce/toc.json
+            - name: Elektroniska signaturer
+              items:
+                - name: Elektroniska underskrifter – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Ställa in elektroniska signaturer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/commerce/toc.json
+            - name: Ärendehantering
+              items:
+                - name: Översikt över ärendehantering
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Planera säkerhet, processer och kategorier för ärenden'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/commerce/toc.json
+            - name: Postmallar
+              items:
+                - name: Postmallar – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/commerce/toc.json
+                - name: Skapa en postmall
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/commerce/toc.json
+                - name: Använda en postmall för att skapa en ny post
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/commerce/toc.json
+            - name: Konfigurera dokumenthantering
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/commerce/toc.json
+            - name: Konfigurera och skicka e-post
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: Datum-/tidsdata och tidszoner
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
+        - name: Utbyggbarhet
+          items:
+            - name: Utbyggbarhet för onlinekanal
+              href: e-commerce-extensibility/overview.md
+              items:
+                - name: Kom igång
+                  items:
+                    - name: Systemkrav
+                      href: e-commerce-extensibility/system-requirements.md
+                    - name: Konfigurera en utvecklingsmiljö
+                      href: e-commerce-extensibility/setup-dev-environment.md
+                - name: Plattformsöversikt
+                  items:
+                    - name: Arkitekturöversikt
+                      href: e-commerce-extensibility/architectural-overview.md
+                    - name: Onlinekomponenter
+                      href: e-commerce-extensibility/ecommerce-components.md
+                    - name: Kommandoreferens för CLI
+                      href: e-commerce-extensibility/cli-command-reference.md
+                - name: En moduls uppbyggnad
+                  items:
+                    - name: Definitionsfil för modul
+                      href: e-commerce-extensibility/module-definition-file.md
+                    - name: Modulvyfil
+                      href: e-commerce-extensibility/module-view-file.md
+                    - name: Moduldatafil
+                      href: e-commerce-extensibility/module-data-file.md
+                    - name: Modulmodellfil
+                      href: e-commerce-extensibility/module-mock-file.md
+                    - name: Modultestfil
+                      href: e-commerce-extensibility/module-test-file.md
+                    - name: Modul props.autogenerated.ts fil
+                      href: e-commerce-extensibility/module-autogenerated.file.md
+                - name: Utveckla moduler
+                  items:
+                    - name: Skapa ny modul
+                      href: e-commerce-extensibility/create-new-module.md
+                    - name: Klona en startpaketsmodul
+                      href: e-commerce-extensibility/clone-starter-module.md
+                    - name: Lägg till konfigurationsfält för modul
+                      href: e-commerce-extensibility/add-module-config-fields.md
+                    - name: Förhandsgranska och felsöka moduler
+                      href: e-commerce-extensibility/test-module.md
+                    - name: Debug-moduler
+                      href: e-commerce-extensibility/debug-modules.md
+                    - name: Testa moduler med hjälp av modeller
+                      href: e-commerce-extensibility/test-module-mock.md
+                    - name: Testa moduler med hjälp av modeller av sidor
+                      href: e-commerce-extensibility/test-page-mock.md
+                    - name: Behållaremoduler
+                      href: e-commerce-extensibility/container-modules.md
+                    - name: Skapa en modul för layoutbehållare
+                      href: e-commerce-extensibility/create-layout-container.md
+                    - name: Skapa en modul för sidobehållare
+                      href: e-commerce-extensibility/create-page-containers.md
+                - name: Avsnitt för avancerad modul
+                  items:
+                    - name: Modulglobalisering
+                      href: e-commerce-extensibility/globalize-modules.md
+                    - name: Objekt för egenskapsbegäran
+                      href: e-commerce-extensibility/request-properties-object.md
+                    - name: Appinställningar
+                      href: e-commerce-extensibility/app-settings.md
+                    - name: Utöka en moduldefinition
+                      href: e-commerce-extensibility/extend-module-definition.md
+                    - name: Arbeta med cookies
+                      href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Lokalisera en modul
+                      href: e-commerce-extensibility/localize-module.md
+                - name: Utveckla dataåtgärder
+                  items:
+                    - name: Översikt över dataåtgärder
+                      href: e-commerce-extensibility/data-actions.md
+                    - name: Testa dataåtgärder med modeller
+                      href: e-commerce-extensibility/test-data-action-mocks.md
+                    - name: Dataåtgärder vid sidhämtning
+                      href: e-commerce-extensibility/page-load-data-action.md
+                    - name: Händelsebaserade dataåtgärder
+                      href: e-commerce-extensibility/event-based-data-actions.md
+                    - name: Grundläggande dataåtgärder
+                      href: e-commerce-extensibility/core-data-actions.md
+                - name: Avancerade dataåtgärdsavsnitt
+                  items:
+                    - name: Kedja dataåtgärder
+                      href: e-commerce-extensibility/chain-data-actions.md
+                    - name: Batcha dataåtgärder
+                      href: e-commerce-extensibility/batch-data-actions.md
+                    - name: Observerbara dataåtgärder
+                      href: e-commerce-extensibility/create-observable-data-action.md
+                    - name: Dela tillstånd mellan moduler
+                      href: e-commerce-extensibility/share-state-across-modules.md
+                - name: Utveckla teman
+                  items:
+                    - name: Översikt över teman
+                      href: e-commerce-extensibility/theming.md
+                    - name: Skapa ett tema
+                      href: e-commerce-extensibility/create-theme.md
+                    - name: Konfigurera temainställningar
+                      href: e-commerce-extensibility/configure-theme-settings.md
+                - name: Mata in skript
+                  items:
+                    - name: Skriptinmatare
+                      href: e-commerce-extensibility/script-injector.md
+                - name: Telemetri och analyser
+                  items:
+                    - name: Telemetrilogg
+                      href: e-commerce-extensibility/telemetry-logger.md
+                - name: Distribution och underhåll
+                  items:
+                    - name: Paketera konfigurationer och distribuera dem till en online-miljö
+                      href: e-commerce-extensibility/package-deploy.md
+                    - name: Uppdateringar av SDK och kärnbibliotek
+                      href: e-commerce-extensibility/sdk-updates.md
+            - name: Utveckling av Retail
+              items:
+                - name: Översikt över utveckling och administration av Retail
+                  href: ../retail/dev-itpro/dev-retail-home-page.md
+                - name: Arkitektur
+                  items:
+                    - name: Retail-komponenter
+                      href: ../retail/retail-components.md
+                    - name: Arkitektur för Retail Server
+                      href: ../retail/dev-itpro/retail-server-architecture.md
+                    - name: Välj en butikstopologi
+                      href: ../retail/dev-itpro/retail-in-store-topology.md
+                    - name: Commerce Data Exchange och kanalkommunikation för Retail
+                      href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Retail Modern POS arkitektur
+                      href: ../retail/dev-itpro/retail-modern-pos-architecture.md
+                    - name: Publiceringsarkitektur för onlinebutik
+                      href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md
+                    - name: Innehåll för Retail Channel Performance Power BI
+                      href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+                    - name: PA-DSS-certifiering (Payment Application Data Security Standards)
+                      href: ../retail/dev-itpro/PA-DSS-Certification.md
+                    - name: Butiksfunktioner i lokala distributioner
+                      href: ../retail/retail-onprem.md
+                - name: Distribution och snabbkorrigeringar
+                  items:
+                    - name: Retail Store Scale Unit
+                      href: ../retail/dev-itpro/retail-store-system-begin.md
+                    - name: Konfigurera och installera Retail Store Scale Unit
+                      href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md
+                    - name: Retail Modern POS-konfiguration och -installation
+                      href: ../retail/retail-modern-pos-device-activation.md
+                    - name: Hantera Retail-konton och enheter från huvudkontoret
+                      href: ../retail/set-up-activation-accounts-validate-devices-hq.md
+                    - name: Enhetsaktivering för Retail POS
+                      href: ../retail/dev-itpro/retail-device-activation.md
+                    - name: Hjälp att skydda molnbaserad kassa i delade miljöer
+                      href: ../retail/dev-itpro/secure-retail-cloud-pos.md
+                    - name: Konfiguration och installation av Retail Hardware Station
+                      href: ../retail/retail-hardware-station-configuration-installation.md
+                    - name: Massdistribution av självbetjäningskomponenter för Retail
+                      href: ../retail/dev-itpro/retail-mass-deployment.md
+                    - name: Retail-komponenthändelser för diagnostik och felsökning
+                      href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+                    - name: Använd ett paket som kan distribueras
+                      href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Uppgraderings- och N-1-stöd
+                  items:
+                    - name: Uppgraderings- och N-1-stöd för Retail
+                      href: ../retail/dev-itpro/overview-upgrade-n-minus1.md
+                    - name: 'Installation, konfiguration och övergång för fasindelad lansering (N-1)'
+                      href: ../retail/dev-itpro/n-1-installation-configuration.md
+                    - name: Uppgradera kanaltillägget för Retail till senaste SDK för Retail
+                      href: ../retail/dev-itpro/retailSDK-update.md
+                - name: Riktlinjer för implementering
+                  items:
+                    - name: Riktlinjer för implementering av enhetshantering
+                      href: ../retail/implementation-considerations-devices.md
+                - name: Miljökonfiguration
+                  items:
+                    - name: Lägg till länkar till organisationens juridiska villkor och sekretesspolicy
+                      href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
+                    - name: Hantera Bing-kartor
+                      href: ../retail/dev-itpro/manage-bing-maps.md
+                - name: Lokalisera resurser för Retail-tillägg och etikettfiler
+                  href: ../retail/dev-itpro/extension-resource-localization.md
+                - name: Utbyggbarhet för kassa
+                  items:
+                    - name: Skärmlayouter för Retail POS
+                      href: ../retail/pos-screen-layouts.md
+                    - name: Öppna webbadressen i kassan
+                      href: ../retail/Open-URL-in-POS.md
+                    - name: Installera layoutdesignern för kassa
+                      href: ../retail/install-pos-layout-designer.md
+                    - name: Retail Modern POS i offlineläge
+                      href: ../retail/dev-itpro/retail-modern-pos-offline.md
+                    - name: Utöka vyn med dubbla bildskärmar för kassan
+                      href: ../retail/dev-itpro/pos-dual-display-extension.md
+                    - name: 'Retail Modern POS och molnbaserad kassa, utbyggbarhet för utlösare'
+                      href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md
+                    - name: Lägga till anpassade kontroller i kassavyer
+                      href: ../retail/dev-itpro/pos-custom-control.md
+                    - name: Lägga till kassaåtgärder i kassalayouter med hjälp av knappsatsdesigner
+                      href: ../retail/dev-itpro/add-POS-operations.md
+                    - name: 'API:er för Retail POS'
+                      href: ../retail/dev-itpro/POS-APIs.md
+                    - name: Tillägg för kassabetalning
+                      href: ../retail/dev-itpro/pos-payment-extension.md
+                    - name: Stöd för externa presentkort
+                      href: ../retail/dev-itpro/gift-card.md
+                    - name: Skapa och använda profilering i appen Retail Experience
+                      href: ../retail/dev-itpro/create-retail-experience-app.md
+                    - name: Konfigurera appen POS Hybrid i Android och iOS
+                      href: ../retail/dev-itpro/hybridApp.md
+                    - name: Åsidosätt kassans begärandehanterare
+                      href: ../retail/dev-itpro/pos-handler.md
+                    - name: Visa information om kassatilläggspaket
+                      href: ../retail/dev-itpro/view-pos-extension-package-details.md
+                    - name: Testinspelare och Regression Suite Automation Tool för Retail Cloud POS
+                      href: ../retail/dev-itpro/pos-rsat.md
+                - name: Hardware Station och utbyggbarhet
+                  href: ../retail/dev-itpro/hardware-station-extensibility.md
+                - name: Integrera kassan med ny maskinvaruenhet
+                  href: ../retail/dev-itpro/hardware-device-extension.md
+                - name: Utbyggbarhet för Retail Server
+                  items:
+                    - name: Utöka en Retail Server OData-styrenhet
+                      href: ../retail/dev-itpro/extend-retail-server-odata-controller.md
+                    - name: Skapa en styrenhet för webb-API för Retail Server
+                      href: ../retail/dev-itpro/odata-controllers-api.md
+                    - name: 'API:er för Retail Server-kund och -konsument'
+                      href: ../retail/dev-itpro/retail-server-customer-consumer-api.md
+                    - name: Utöka standardstyrenheten för Retail Server-metadata
+                      href: ../retail/dev-itpro/extend-metadata.md
+                    - name: Anropa CRT-tjänsten i offlineläge
+                      href: ../retail/dev-itpro/call-crt-service-offline.md
+                    - name: Skapa nytt tillägg för Retail Server
+                      href: ../retail/dev-itpro/retail-server-extension.md
+                - name: Utbyggbarhet av Commerce Runtime (CRT)
+                  items:
+                    - name: CRT-arkitektur och konfiguration
+                      href: ../retail/dev-itpro/commerce-runtime-overview.md
+                    - name: CRT-tjänster
+                      href: ../retail/dev-itpro/crt-services.md
+                    - name: Utbyggbarhet för CRT och Retail Server
+                      href: ../retail/dev-itpro/commerce-runtime-extensibility.md
+                    - name: Lägga till kundpreferensdata i kanaldatabaser
+                      href: ../retail/dev-itpro/add-customer-preference-channel.md
+                    - name: Hantera hemligheter för butikskanaler
+                      href: ../retail/dev-itpro/manage-secrets.md
+                    - name: Lägga till egenskaper i försäljningsorder
+                      href: ../retail/dev-itpro/add-properties-sales-order.md
+                    - name: Utbyggbarhet och utlösare för CRT
+                      href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md
+                    - name: Spärra transaktioner med utlösare
+                      href: ../retail/dev-itpro/trigger-example-blocking-transaction.md
+                    - name: Implementera en returpolicy med utlösare
+                      href: ../retail/dev-itpro/trigger-example-return-policy.md
+                - name: Utbyggbarhet för e-handel
+                  items:
+                    - name: Konfigurera onlinebutiker
+                      href: ../retail/dev-itpro/configure-online-store.md
+                    - name: Konfigurera autentiseringsproviders
+                      href: ../retail/dev-itpro/configure-authentication-providers.md
+                    - name: E-handelsplattform
+                      href: ../retail/dev-itpro/ecommerce-platform.md
+                    - name: SDK för e-handelsplattform
+                      href: ../retail/dev-itpro/ecommerce-platform-sdk.md
+                - name: Utbyggbarhet för betalningskoppling
+                  items:
+                    - name: Skapa en betalningsintegrering för en betalningsterminal
+                      href: ../retail/dev-itpro/end-to-end-payment-extension.md
+                    - name: Implementera en betalningskoppling och betalningsenhet (vitbok)
+                      href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
+                    - name: Distribuera betalningskopplingar
+                      href: ../retail/dev-itpro/deploy-payment-connector.md
+                    - name: Skapa anpassade lokaliserade felmeddelanden för betalningsterminalstillägg
+                      href: ../retail/dev-itpro/payment-custom-error-messages.md
+                    - name: Skapa Windows-installationsprogram för betalningskopplingar
+                      href: ../retail/dev-itpro/create-windows-installer-payment-connector.md
+                    - name: Bruk av betalningsdata
+                      href: ../retail/payment-connector-data-fields.md
+                    - name: Aktivera skydd mot dubbelbetalning för betalningskoppling
+                      href: ../retail/dev-itpro/duplicate-payment-protection.md
+                - name: SDK för Retail
+                  items:
+                    - name: SDK för Retail-arkitektur
+                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md
+                    - name: Kommande ändringar i SDK för Retail
+                      href: ../retail/dev-itpro/UpcomingSDKChanges.md
+                    - name: Sammanfoga versionssystem för Retail och Finance and Operations
+                      href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                    - name: 'Exempel på utbyggbarhet: SDK för Retail'
+                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+                    - name: Skapa paket som kan distribueras till butik
+                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md
+                    - name: Exempel på SDK för Retail
+                      href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md
+                    - name: Tilläggspunkter för följesedlar
+                      href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md
+                    - name: Tillägg för kanaldatabas
+                      href: ../retail/dev-itpro/channel-db-extensions.md
+                    - name: Aktivera anpassad CDX-synkronisering via tillägg
+                      href: ../retail/dev-itpro/cdx-extensibility.md
+                    - name: Lägga till anpassade fält i kassans summapanel
+                      href: ../retail/dev-itpro/custom-field-pos-totals.md
+                    - name: Definiera och ställa in orderattribut
+                      href: ../retail/dev-itpro/order-attributes.md
+                    - name: Kundattribut
+                      href: ../retail/dev-itpro/customer-attributes.md
+                    - name: 'Retail Typescript- och C#-proxyservrar'
+                      href: ../retail/dev-itpro/typescript-proxy-retail-pos.md
+                    - name: Kör Retail POS-exemplen
+                      href: ../retail/dev-itpro/pos-run-samples.md
+                    - name: Utöka kassavyer för att lägga till egna kolumner och knappar i appfältet
+                      href: ../retail/dev-itpro/pos-view-extension.md
+                    - name: Lägga till egna kontroller på transaktionssidor för Retail Modern POS
+                      href: ../retail/dev-itpro/pos-custom-transaction.md
+                    - name: Lägga till egna kolumner i ett transaktionsrutnät för kassa
+                      href: ../retail/dev-itpro/pos-custom-transaction-column.md
+                    - name: 'Anropa API:er eller åtgärder för kassa från kassatillägg'
+                      href: ../retail/dev-itpro/pos-api-extension.md
+                    - name: 'Retail Modern POS, utlösare och utskrifter'
+                      href: ../retail/dev-itpro/pos-trigger-printing.md
+                    - name: Lägga till anpassade kontroller i designerbaserade vyer (ej skärm) för kassa
+                      href: ../retail/dev-itpro/pos-control-non-screen.md
+                    - name: Utveckling i molnbaserade utvecklingsmiljöer utan administratörsåtkomst
+                      href: ../retail/dev-itpro/cloud-dev-box.md
+                    - name: Visa anpassade meddelanden i kassan
+                      href: ../retail/dev-itpro/extend-pos-notification.md
+                    - name: Signera MPOS med certifikat för kodsignering
+                      href: ../retail/dev-itpro/pos-app-signing-certificate.md
+                - name: Commerce Runtime
+                  items:
+                    - name: Lojalitetstillägg
+                      href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md
+    - name: Finance and Operations‑appar för utveckling och administration
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Retail
+      href: ../retail/index.md
