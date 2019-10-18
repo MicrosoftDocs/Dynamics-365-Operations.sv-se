@@ -1,6 +1,6 @@
 ---
 title: Översikt över räkenskapsintegration för butikskanaler
-description: Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Dynamics 365 Retail.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516248"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025417"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Översikt över räkenskapsintegration för butikskanaler
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516248"
 
 ## <a name="introduction"></a>Introduktion
 
-Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Microsoft Dynamics 365 for Retail. Räkenskapsintegration omfattar integration med olika räkenskapsenheter och tjänster som underlättar för räkenskapsregistrering av butiksförsäljning i enlighet med lokala skattelagar som syftar till förhindrande av skattebedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegration är:
+Det här avsnittet innehåller en översikt över funktioner för räkenskapsintegration som är tillgängliga i Dynamics 365 Retail. Räkenskapsintegration omfattar integration med olika räkenskapsenheter och tjänster som underlättar för räkenskapsregistrering av butiksförsäljning i enlighet med lokala skattelagar som syftar till förhindrande av skattebedrägeri inom detaljhandel. Typiska scenarier som kan omfatta räkenskapsintegration är:
 
 - Registrera en räkenskapsårets enhet som är ansluten till Retail inköpstillfället (PO), till exempel en kvittoskrivare detaljhandelsförsäljning och skriva ut en kvittoskrivare för kunden.
 - Skicka säkert information som är relaterad till försäljning och returer som slutförs i Retail POS till en extern webbtjänst som drivs av skattemyndigheten.
 - Hjälpa till att garantera oföränderlighet av försäljningstransaktionsdata via digitala signaturer.
 
-Räkenskapsintegreringen i Retail är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integration mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegration som stöder grundläggande butiksscenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegration består av flera tillägg av Retail-komponenter och ingår i Retail programutvecklingskit (SDK). För information om exempel på räkenskapsintegration som finns i Retail SDK, se [exempel på räkenskapsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Information om hur du installerar och använder Retail SDK finns i [översikt över Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Räkenskapsintegreringen är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integration mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegration som stöder grundläggande butiksscenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegration består av flera tillägg av Retail-komponenter och ingår i programutvecklingskit (SDK). Mer information om exempel på räkenskapsintegration finns i [Exempel på räkenskapsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Information om hur du installerar och använder Retail SDK finns i [översikt över Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Stöd för andra scenarier som inte stöds av exempel på räkenskapsintegration, för att integrera Retail POS med andra räkenskapsprodukter eller tjänster och täcka kraven i andra länder eller regioner, måste du utöka ett befintligt exempel på räkenskapsintegration eller skapa ett nytt prov med ett befintligt prov som exempel.
 
@@ -132,7 +132,7 @@ Funktionen räkenskapsintegration stöder generering av rapporter vid dagens slu
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Exempel på räkenskapsintegration i Retail SDK
 
-Följande exempel på räkenskapsintegration är tillgängliga i Retail SDK som publiceras med Retail:
+Följande exempel på räkenskapsintegration är tillgängliga i Retail SDK:
 
 - [Exempel på integrering av kvittoskrivare för Italien](emea-ita-fpi-sample.md)
 - [Exempel på integrering av kvittoskrivare för Polen](emea-pol-fpi-sample.md)

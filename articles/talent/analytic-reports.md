@@ -1,6 +1,6 @@
 ---
-title: Använda analysrapporter i Microsoft Dynamics 365 for Talent - Attract
-description: Det här ämnet beskriver analysrapporterna för insikter om anställningsprocessen i Microsoft Dynamics 365 for Talent - Attract
+title: Använda analysrapporter i Microsoft Dynamics 365 Talent - Attract
+description: Det här ämnet beskriver analysrapporterna för insikter om anställningsprocessen i Microsoft Dynamics 365 Talent - Attract
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: be62fe9a5021cfa83a465d316b182c0a154c0c50
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742901"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010025"
 ---
 # <a name="use-analytic-reports"></a>Använd analysrapporter
 
-Analytiska rapporter i Attract ger en OOTB-lösning (färdigkonfigurerade) för anställning av processinsikter. Tillgängliga funktioner omfattar:
+Analytiska rapporter i Microsoft Dynamics 365 Talent: Attract ger en OOTB-lösning (färdigkonfigurerade) för anställning av processinsikter. Tillgängliga funktioner omfattar:
 
 - **Jobbanalys:** Klicka på **Analys** inom ett jobb för mätvärden på jobbets sökande.
 - **Analysnav:** Klicka  **Analys** på analys när du vill navigera till vänster om aggregerade mått över jobb.

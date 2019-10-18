@@ -19,18 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606905"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023646"
 ---
 # <a name="attributes-and-attribute-groups"></a>Attribut och attributgrupper
 
 [!include [banner](includes/banner.md)]
 
-*Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). I Microsoft Dynamics 365 for Finance and Operations, attribut som kan förknippas med olika retail enheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
+*Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). Attribut som kan förknippas med olika Retail-enheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
+
 
 En normal TV-produkt kan till exempel ha följande attribut.
 
@@ -53,7 +54,7 @@ En normal TV-produkt kan till exempel ha följande attribut.
 
 ## <a name="attributes-and-attribute-types"></a>Attribut och attributtyper
 
-Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data som kan anges för ett visst attribut. Finance and Operations stöder för närvarande följande attributtyper:
+Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data som kan anges för ett visst attribut. Följande attributtyper stöds:
 
 - **Valuta** – Denna attributtyp stöder ett valutavärde. Detta kan avgränsas (dvs, det kan stödja ett värdeintervall), eller det kan lämnas öppet.
 - **DatumTid** -– Denna typ stödjer datum- och tidsvärden. Den kan begränsas eller lämnas öppen.
@@ -63,9 +64,9 @@ Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data
 - **Boolesk** – Denna typ stöder ett binärt värde (**sant** eller **falskt**).
 - **Referens** – denna typ refererar till andra attribut.
 
-### <a name="set-up-attribute-types-in-finance-and-operations"></a>Ställ in attributtyper i Finance and Operations
+### <a name="set-up-attribute-types"></a>Ställ in attributtyper
 
-1. Logga in på Finance and Operations backoffice-klient som marknadsföringschef (butik).
+1. Logga in på backoffice-klienten som marknadsföringschef (butik).
 2. Gå till **Produktinformationshantering** &gt; **Inställningar** &gt; **Kategorier och attribut** &gt; **Attributtyper**.
 3. Skapa två attributtyper i typen **Text**, ange alternativet **fast lista** till **Ja** och lägg sedan till en lista över värden:
 
@@ -74,7 +75,7 @@ Attribut baseras på *attributtyper*. Attributtypen identifierar den typ av data
 
 ![Attributtyper](media/AttributeType.png)
 
-### <a name="set-up-an-attribute-in-finance-and-operations"></a>Ställ in en attributtyp i Finance and Operations
+### <a name="set-up-an-attribute"></a>Ställ in attribut
 
 1. Logga in på backoffice-klienten som marknadsföringschef (butik).
 2. Gå till **Produktinformationshantering** &gt; **Inställningar** &gt; **Kategorier och attribut** &gt; **Attribut**.
@@ -101,13 +102,13 @@ Nedan följer de återstående alternativen för attributmetadata på sidan **At
 - Ignorera skiftläge och format
 - Slutför matchning
 
-De här alternativen var ursprungligen avsedda till att förbättra sökfunktionen för onlinebutiken. Även om Finance and Operations inte inkluderar skyltfönster online, inkluderar den eCommerce Publishing Software Development Kit (SDK). Kunderna kan använda denna SDK för att lägga in produkter i ett valfritt sökindex. Även om produktdata importeras bör kunder ändå kunna skilja mellan sökbar data, data som kan efterfrågas och så vidare. På så sätt kan de skapa ett optimalt index för att se till att de bara indexerar attribut som *enligt deras mening* bör indexeras.
+De här alternativen var ursprungligen avsedda till att förbättra sökfunktionen för onlinebutiken. Även om Retail inte inkluderar skyltfönster online, inkluderar den eCommerce Publishing Software Development Kit (SDK). Kunderna kan använda denna SDK för att lägga in produkter i ett valfritt sökindex. Även om produktdata importeras bör kunder ändå kunna skilja mellan sökbar data, data som kan efterfrågas och så vidare. På så sätt kan de skapa ett optimalt index för att se till att de bara indexerar attribut som *enligt deras mening* bör indexeras.
 
 Information om syftet med dessa återstående alternativ finns i [Översikt över sökschemat i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Filterinställningar för attribut
 
-Filterinställningar för attribut låter dig definiera hur filter för attribut visas i butikskassa. För att få tillgång till filterinställningar för ett attribut, på sidan **attribut** i Finance and Operations, välj attributet och i åtgärdsfönstret markerar du **filterinställningar**.
+Filterinställningar för attribut låter dig definiera hur filter för attribut visas i butikskassa. För att få tillgång till filterinställningar för ett attribut, på sidan **attribut**, välj attributet och i åtgärdsfönstret markerar du **filterinställningar**.
 
 Sidan **Visningsinställningar för filter** innehåller följande fält:
 
@@ -233,7 +234,7 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
     - Kanalproduktattribut
 
     > [!NOTE]
-    > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
+    > Om delad produktmedia och delade produktattribut skapas gäller de för alla återförsäljarprodukter.
 
 ![Katalogens produktattributgrupper](media/CatalogProdAttrValues.png)
 
@@ -255,4 +256,4 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
     - Kanalproduktattribut
 
     > [!NOTE]
-    > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
+    > Om delad produktmedia och delade produktattribut skapas gäller de för alla återförsäljarprodukter.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519107"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008394"
 ---
 # <a name="formalize-business-processes"></a>Formalisera affärsprocesser
 
@@ -43,7 +43,7 @@ En processägare kan definieras för varje affärsprocess. Processägaren kommer
 En processägare kan inte skapa nya affärsprocesser eller affärsprocessmallar eller ta bort aktiva processer eller affärsprocessmallar.
 
 ## <a name="tasks"></a>Uppgifter
-En affärsprocess består ofta av flera uppgifter. Vissa uppgifter, till exempel en granskning av interna kursutbud, kan slutföras i Microsoft Dynamics 365 for Talent[?]. I det här fallet välj sett alternativ i fältet **aktivitetslänk**. Andra uppgifter kan omfatta granska eller komplettera sidor på en webbplats. I det här fallet väljs **URL** i fältet **aktivitetslänk** och webbadressen kan anges. Du kan ange URL:er för både externa och interna webbplatser i det här fältet. Du kan också skapa uppgifter för aktiviteter som du slutför manuellt, till exempel granska tillgänglighet av alla strukturer. I detta fall krävs inte en uppgiftslänk. Denna flexibilitet låter dig spåra flera typer av uppgifter i en omfattande process.
+En affärsprocess består ofta av flera uppgifter. Vissa uppgifter, till exempel en granskning av interna kursutbud, kan slutföras i Microsoft Dynamics 365 Talent. I det här fallet välj sett alternativ i fältet **aktivitetslänk**. Andra uppgifter kan omfatta granska eller komplettera sidor på en webbplats. I det här fallet väljs **URL** i fältet **aktivitetslänk** och webbadressen kan anges. Du kan ange URL:er för både externa och interna webbplatser i det här fältet. Du kan också skapa uppgifter för aktiviteter som du slutför manuellt, till exempel granska tillgänglighet av alla strukturer. I detta fall krävs inte en uppgiftslänk. Denna flexibilitet låter dig spåra flera typer av uppgifter i en omfattande process.
 
 Uppgifter kan tilldelas till en särskild arbetare eller till en befattning. Exempelvis ska en chef över kompensationer och förmåner alltid vara den person som utför en granskning av försäkringspremier. När du skapar denna uppgift, välj **Befattning** i fältet **Uppgiftstyp** och välj sedan **Chef över kompensationer och förmåner** i listan **Befattning** När processen startar tilldelas uppgiften till den anställde som har befattningen **chef över kompensationer och förmåner**. Du kan också tilldela en uppgift till en särskild **arbetare** i fältet **Tilldelningstyp** och sedan välja rätt person.
 

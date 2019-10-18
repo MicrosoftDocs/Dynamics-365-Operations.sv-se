@@ -1,6 +1,6 @@
 ---
 title: Konfigurera programfältnamn i lagerstyrningsprogrammet
-description: Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Finance and Operations.
+description: Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 Supply Chain Management.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,24 +19,24 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0162014189ed6bffb17e6718a67eecfd55c334a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548939"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251095"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurera programfältnamn i lagerstyrningsprogrammet
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Finance and Operations. 
+Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 Supply Chain Management. 
 
-**Obs!** Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Finance and Operations - Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i lagerställets program, samt hur dessa används i Finance and Operations - Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Finance and Operations - Lagerstyrning, finns i kursen [Installera och konfigurera Finance and Operations - Lagerstyrning](install-configure-warehousing-app.md).
+**Obs!** Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i lagerställets program, samt hur dessa används i Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Lagerstyrning, finns i kursen [Installera och konfigurera Lagerstyrning](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurera fältnamn i lagerställets program
 
-När du använder Finance and Operations – Lagerstyrning på din mobila enhet kan du konfigurera hur metadata ska visas på enheten på sidan **Fältnamn i lagerställeprogram**. Välj **Skapa standardinställning** i ett nytt företag i Finance and Operations för att skapa alla fältnamn som ska användas i lagerställets arbetsflöden för mobila enheter, och tilldela dem sedan ett föredraget inmatningsläge och en föredragen inmatningstyp. När du har genererat alla fältnamn väljer du in följande inmatningsalternativ.
+När du använder Lagerstyrning på din mobila enhet kan du konfigurera hur metadata ska visas på enheten på sidan **Fältnamn i lagerställeprogram**. Välj **Skapa standardinställning** i ett nytt företag för att skapa alla fältnamn som ska användas i lagerställets arbetsflöden för mobila enheter, och tilldela dem sedan ett föredraget inmatningsläge och en föredragen inmatningstyp. När du har genererat alla fältnamn väljer du in följande inmatningsalternativ.
 
 <table>
 <colgroup>
@@ -69,7 +69,7 @@ När du använder Finance and Operations – Lagerstyrning på din mobila enhet 
 
 ## <a name="configure-warehouse-app-field-priority"></a>Konfigurera prioriteringsordningen för lagerställets programfält
 
-På sidan **Fältprioritet för lagerställeprogram** kan du ange fältnamn i olika prioriteringsgrupper. Detta gör det möjligt att bestämma vilken information som ska visas på huvuduppgiftssidan när lagerarbetare utför åtgärder med programmet. Om du klickar på **Skapa standardinställning** skapas en standarduppsättning prioriterade grupper. Det går att skapa så många prioriteringsgrupper som krävs, men endast tre prioriteringsgrupper visas på uppgiftssidan. När Finance and Operations skickar metadata till programmet, kommer det att tilldela varje fält en relativ prioritet beroende på dess prioriteringsgrupp, och programmet kommer att visa de första tre prioriteringsgrupperna i metadatan på uppgiftssidan. Överflödig metadata visas på en ytterligare informationssida. Tabellen nedan visar ett exempel på fem prioriteringsgrupper.
+På sidan **Fältprioritet för lagerställeprogram** kan du ange fältnamn i olika prioriteringsgrupper. Detta gör det möjligt att bestämma vilken information som ska visas på huvuduppgiftssidan när lagerarbetare utför åtgärder med programmet. Om du klickar på **Skapa standardinställning** skapas en standarduppsättning prioriterade grupper. Det går att skapa så många prioriteringsgrupper som krävs, men endast tre prioriteringsgrupper visas på uppgiftssidan. När systemet skickar metadata till programmet, kommer det att tilldela varje fält en relativ prioritet beroende på dess prioriteringsgrupp, och programmet kommer att visa de första tre prioriteringsgrupperna i metadatan på uppgiftssidan. Överflödig metadata visas på en ytterligare informationssida. Tabellen nedan visar ett exempel på fem prioriteringsgrupper.
 
 <table>
 <colgroup>
@@ -143,6 +143,3 @@ Baserat på fältprioriteringen i lagerställets program som anges i tabellen ov
 --------
 
 [Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations – Lagerhållning](install-configure-warehousing-app.md)
-
-
-

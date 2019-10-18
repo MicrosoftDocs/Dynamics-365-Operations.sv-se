@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506113"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009455"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Ställ in företagsspecifika personalparametrar
 
@@ -34,7 +34,7 @@ Inställningarna för vissa HR-parametrar delas av alla företag, medan inställ
 Två sidor används för att ställa mänskliga resurser (HR) parametrar. För parametrar som delas mellan företag, kan du använda de **mänskliga resurserna delas parametrar sidan** . För parametrar som är företagsspecifika (med andra ord inställningar tillämpas på ett enda företag) kan du använda den **mänskliga resursen parametrar sidan** . På **mänskliga resurser parametrar sidan** , inställningarna är uppdelade i sex flikar:
 
 -   Allmänt
--   Rekrytering - detta ingår inte i Dynamics 365 for Talent
+-   Rekrytering - detta ingår inte i Dynamics 365 Talent
 -   Kompensation
 -   Nummersekvenser
 -   Familj och medicinska lämnar Act (fmla)
@@ -49,7 +49,7 @@ Inställningarna på fliken **Kompensation** anger om användare måste bekräft
 ### <a name="previously-released-functionality"></a>Tidigare utgivna funktioner
 Inställningarna på **fliken sekvensen** avgör de sekvenser som används för att automatiskt tilldela ID-nummer för objekt i mänskliga resurser, såsom applikationer, ingen registrering, ersättning process resultat, fallnummer, kurser och kurs dagordningar. För att bibehålla nummersekvensreferenser och koder, använd listsidan **Nummersekvenser** (klicka på **Organisationsadministration** &gt; **Nummersekvenser** &gt; **Nummersekvenser**).
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Om du använder Dynamics 365 for Talent
+### <a name="if-youre-using-dynamics-365-talent"></a>Om du använder Dynamics 365 Talent
 Inställningarna på **fliken sekvensen** avgör de sekvenser som används för att automatiskt tilldela ID-nummer för objekt i mänskliga resurser, såsom applikationer, ingen registrering, ersättning process resultat, fallnummer, kurser och kurs dagordningar. För att bibehålla nummersekvensreferenser och koder, använd listsidan **Nummersekvenser** (klicka på **Systemadministration** &gt; **Länkflik** &gt; **Nummersekvenser** &gt; **Nummersekvenser**). 
 
 Inställningar på **fliken FMLA** ange hur många timmar som en anställd måste arbeta för att vara berättigade till fmla förmåner, längden på anställningen som krävs för berättigande och anställningsdatum som används för att bestämma längden på anställningen. Inställningarna även definiera antalet FMLA-timmar som de anställda har rätt till och FMLA lämnar kalendern som används för att beräkna hur många FMLA timmar anställda har använt. Det **FMLA-** fliken är endast tillgänglig för företag i Förenta staterna. 

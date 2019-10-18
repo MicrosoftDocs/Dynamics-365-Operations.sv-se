@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553448"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249550"
 ---
 # <a name="inventory-journals"></a>Lagerjournaler.
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553448"
 
 Det här ämnet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner.
 
-Lagerjournalerna i Microsoft Dynamics 365 for Finance and Operations används för att bokföra fysiska lagertransaktioner av olika typer, till exempel bokföringen av inleveranser och utleveranser, lagerrörelser, genereringen av strukturlistor (BOM) och avstämningen av fysiskt lager. Alla dessa lagerjournaler används på liknande sätt, men de delas in i olika typer.
+Lagerjournalerna i Supply Chain Management används för att bokföra fysiska lagertransaktioner av olika typer, till exempel bokföringen av inleveranser och utleveranser, lagerrörelser, genereringen av strukturlistor (BOM) och avstämningen av fysiskt lager. Alla dessa lagerjournaler används på liknande sätt, men de delas in i olika typer.
 
 ## <a name="types-of-inventory-journals"></a>Typer av lagerjournaler
 Följande typer av lagerjournal finns:
@@ -68,7 +68,7 @@ När du rapporterar en strukturlista som färdig kan du skapa en strukturlistejo
 
 ### <a name="item-arrival"></a>Artikelinförsel
 
-Du kan använda artikelinförseljournalen för att registrera inleveransen av artiklar (exempelvis från inköpsorder). En artikelinförseljournal kan skapas som en del av införselhanteringen från sidan **Införselöversikt** eller så kan du manuellt skapa en journalpost från sidan **Artikelinförsel**. Om du aktiverar journalnamnet för artikelinförsel för att söka efter plockplatser, söker Finance and Operations efter en plats för mottagna artiklar och genererar, om det finns plats, platsdestinationer för de inkommande artiklarna.
+Du kan använda artikelinförseljournalen för att registrera inleveransen av artiklar (exempelvis från inköpsorder). En artikelinförseljournal kan skapas som en del av införselhanteringen från sidan **Införselöversikt** eller så kan du manuellt skapa en journalpost från sidan **Artikelinförsel**. Om du aktiverar journalnamnet för artikelinförsel för att söka efter plockplatser, söker Supply Chain Management efter en plats för mottagna artiklar och genererar, om det finns plats, platsdestinationer för de inkommande artiklarna.
 
 ### <a name="production-input"></a>Produktionsinleverans
 
@@ -103,7 +103,7 @@ Dataenheter stöder följande typer av integrationsscenarier:
 Mer information finns i [Dataenheter](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Alla lagerjournaler är inte OData-aktiverade, därför kan du inte använda Excel-dataanslutning för att hämta data som publiceras, uppdateras och importeras tillbaka till Dynamics 365 for Finance and Operations. 
+> Alla lagerjournaler är inte OData-aktiverade, därför kan du inte använda Excel-dataanslutning för att hämta data som publiceras, uppdateras och importeras tillbaka till Supply Chain Management. 
 
 En annan skillnad mellan journaldataenheter är möjligheten att använda sammansatta enheter som innehåller både rubrik- och radinformation. För närvarande kan du använda de sammansatta enheterna för:
 -   Lagerjusteringsjournal

@@ -1,6 +1,6 @@
 ---
-title: Synkronisera konton direkt från Sales till kunder i Finance and Operations
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera konton från Microsoft Dynamics 365 for Sales till Microsoft Dynamics 365 for Finance and Operations.
+title: Synkronisera konton direkt från Sales till kunder i Supply Chain Management
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera kontakter från Dynamics 365 Sales till Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 036389a1a52fdf15b73ab90c0a37108871a1a15e
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 4624f7e31c6dca616ff4ee824453b8971c1865e7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743358"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249898"
 ---
-# <a name="synchronize-accounts-directly-from-sales-to-customers-in-finance-and-operations"></a>Synkronisera konton direkt från Sales till kunder i Finance and Operations
+# <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisera konton direkt från Sales till kunder i Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera direkt från Microsoft Dynamics 365 for Sales till Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera konton direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
-Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Finance and Operations och Sales.  Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Finance and Operations och Sales. Följande bild visar hur data synkroniseras mellan Finance and Operations och Sales.
+Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales.  Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
 [![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,7 +45,7 @@ Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering f
 
 För att gå till tillgängliga mallar, öppna [PowerApps administratörscenter](https://preview.admin.powerapps.com/dataintegration). Välj **projekt** och i det övre högra hörnet väljer du **nytt projekt** för att välja allmänna mallar.
 
-Följande mallar och underliggande uppgifter används för att synkronisera konton från Sales till Finance and Operations:
+Följande mall och underliggande uppgift används för att synkronisera konton från Sales till Supply Chain Management:
 
 - **Namnet på mallen i dataintegrering:** konton (Sales till Fin and Ops) - Direkt
 - **Namnet på aktiviteten i projektet:** Konton - Kunder
@@ -54,13 +54,13 @@ Inga synkroniseringsuppgifter krävs innan synkroniseringen av konto/kund kan ut
 
 ## <a name="entity-set"></a>Ange entiteten
 
-| Försäljning    | Finance and Operations |
+| Försäljning    | Hantering av underleverantörer |
 |----------|------------------------|
 | Konton | Kunder V2           |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
-Konton hanteras i Sales och synkroniseras till Finance and Operations som kunder. Egenskapen **hanteras externt** på dessa kunder anges till **Ja** för att spåra kunder som kommer från Sales. Den här informationen används vid fakturering för att filtrera fakturor som ska synkroniseras med Sales.
+Konton hanteras i Sales och synkroniseras med Supply Chain Management som kunder. Egenskapen **hanteras externt** på dessa kunder anges till **Ja** för att spåra kunder som kommer från Sales. Den här informationen används vid fakturering för att filtrera fakturor som ska synkroniseras med Sales.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
@@ -72,21 +72,21 @@ När integrationslösningen för Sales används kommer ett uppgraderingsskript a
 
 ## <a name="preconditions-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
-- Mappningen **CustomerGroupId** måste uppdateras till ett giltigt värde i Finance and Operations. Du kan ange ett standardvärde eller du kan ange värdet genom att använda en värdemappning.
+- Mappningen **CustomerGroupId** måste uppdateras till ett giltigt värde i Supply Chain Management. Du kan ange ett standardvärde eller du kan ange värdet genom att använda en värdemappning.
 
     Standardmallvärdet är **10**.
 
-- Genom att lägga till följande mappningar kan du minska antalet manuella uppdateringar som krävs för Finance and Operations. Du kan använda ett standardvärde eller värdekarta från, till exempel **Land/Region** eller **ort**.
+- Genom att lägga till följande mappningar kan du minska antalet manuella uppdateringar som krävs för Supply Chain Management. Du kan använda ett standardvärde eller värdekarta från, till exempel **Land/Region** eller **ort**.
 
-    - **SiteId** – en plats måste anges för att skapa offerter och försäljningsorderrader i Finance and Operations. En standardplats kan tas antingen från produkten eller från kunden från orderrubriken.
+    - **SiteId** – en plats måste anges för att skapa offerter och försäljningsorderrader i Supply Chain Management. En standardplats kan tas antingen från produkten eller från kunden från orderrubriken.
 
         Standardmallvärdet är **1**.
 
-    - **WarehouseId** – ett lagerställe måste anges för att skapa offerter och försäljningsorderrader i Finance and Operations. Ett standardlager kan tas antingen från produkten eller från kunden från orderrubriken i Finance and Operations.
+    - **WarehouseId** – ett lagerställe måste anges för att skapa offerter och försäljningsorderrader i Supply Chain Management. Ett standardlager kan tas antingen från produkten eller från kunden från orderrubriken i Supply Chain Management.
 
         Standardmallvärdet är **13**.
 
-    - **LanguageId** – ett språk måste anges för att skapa offerter och försäljningsorder i Finance and Operations. Som standard används språk från orderrubriken från kunden.
+    - **LanguageId** – ett språk plats måste anges för att skapa offerter och försäljningsorder i Supply Chain Management. Som standard används språk från orderrubriken från kunden.
 
         Standardmallvärdet är **en-us**.
 
@@ -98,20 +98,20 @@ När integrationslösningen för Sales används kommer ett uppgraderingsskript a
 I följande illustrationer visas ett exempel på en mallmappning i dataintegrering. 
 
 > [!NOTE]
-> Mappningen visar vilken fältinformation som kommer att synkroniseras från Sales till Finance and Operations.
+> Mappningen visar vilken fältinformation som kommer att synkroniseras från Sales till Supply Chain Management.
 
 ![Mallmappning i dataintegrering](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
 
-[Potentiell kund till kontanter](prospect-to-cash.md)
+[Prospekt till kontanter](prospect-to-cash.md)
 
-[Synkronisera konton direkt från Sales till kunder i Finance and Operations](accounts-template-mapping-direct.md)
+[Synkronisera konton direkt från Sales till kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations](contacts-template-mapping-direct.md)
+[Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synkronisera huvuden och rader i försäljningsorder direkt från Finance and Operations till Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synkronisera försäljningsorderrubrik och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-order-template-mapping-direct-two-ways.md)
 
-[Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales](sales-invoice-template-mapping-direct.md)
+[Synkronisera huvuden och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-invoice-template-mapping-direct.md)
 

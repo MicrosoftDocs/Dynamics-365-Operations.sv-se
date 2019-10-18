@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595621"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249407"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Ställ in en extern katalog för PunchOut eProcurement
 
@@ -37,12 +37,12 @@ Om du vill ställa in kommunikationen måste din leverantör tillhandahålla upp
 
 ## <a name="setting-up-an-external-catalog"></a>Ställa in en extern katalog
 
-Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrekvisition som ska omdirigeras till en extern webbplats för val av produkter. Produkter som medarbetaren väljer från den externa katalogen returneras till Dynamics 365 for Finance and Operations med aktuell prisinformation och härifrån kan de läggas till på inköpsrekvisitionen. Syftet är inte att göra det möjligt för medarbetare att göra en beställning på den externa webbplatsen. När du ställer in den externa katalogen måste du kontrollera att syftet med den site det går att komma åt via den externa katalogen är att samla in offertinformation, inte att lägga riktiga order.
+Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrekvisition som ska omdirigeras till en extern webbplats för val av produkter. Produkter som medarbetaren väljer från den externa katalogen returneras med aktuell prisinformation och härifrån kan de läggas till på inköpsrekvisitionen. Syftet är inte att göra det möjligt för medarbetare att göra en beställning på den externa webbplatsen. När du ställer in den externa katalogen måste du kontrollera att syftet med den site det går att komma åt via den externa katalogen är att samla in offertinformation, inte att lägga riktiga order.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Om du vill ställa in en extern leverantörskatalog måste du göra följande:
 
 1. Ställa in en kategorihierarki för anskaffning. För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Registrera leverantören i Finance and Operations. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i [Hantera leverantörssamarbetesanvändare.](manage-vendor-collaboration-users.md) Information om hur du tilldelar leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+2. Registrera leverantören i Supply Chain Management. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer finns i [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md). Information om hur du tilldelar leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 3. Kontrollera att måttenheterna och valutan som leverantören använder har ställts in. Information om hur du skapar en måttenhet finns i [Hantera måttenheter](../pim/tasks/manage-unit-measure.md).
 4. Konfigurera den externa leverantörskatalogen med hjälp av kraven för webbplatsen för din externa leverantörskatalog. Mer information om den här uppgiften finns i [Konfigurera externa leverantörskatalogen](#configure-the-external-vendor-catalog).
 5. Testa leverantörens externa katalogkonfigurationer för att bekräfta att inställningarna är korrekta och att du kan komma åt leverantörens externa katalog. Använd åtgärden **Validera inställningar** för att validera meddelandet om begäran om inställning som du har definierat. Det här meddelandet ska åstadkomma att leverantörens externa katalogwebbplats öppnas i ett webbläsarfönster. Vid validering kan du inte beställa artiklar och tjänster från leverantören. Om du vill beställa artiklar och tjänster måste du använda leverantörens katalog från en inköpsrekvisition.
@@ -90,11 +90,11 @@ Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfr�
 Mer information om cXML-protokollet finns på: [cXML.org webbsida](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Retroaktivt meddelande
-Det retroaktiva meddelandet är det meddelande som tas emot från leverantören när användaren checkar ut från den externa webbplatsen och återgår till Finance and Operations. Retroaktiva meddelanden kan inte konfigureras. Meddelandena är baserade på cXML-protokolldefinitionen. Här finns all information som kan ingå i det retroaktiva meddelandet som tas emot på en rekvisitionsrad:
+Det retroaktiva meddelandet är det meddelande som tas emot från leverantören när användaren checkar ut från den externa webbplatsen och återgår till Supply Chain Management. Retroaktiva meddelanden kan inte konfigureras. Meddelandena är baserade på cXML-protokolldefinitionen. Här finns all information som kan ingå i det retroaktiva meddelandet som tas emot på en rekvisitionsrad.
 
-| Meddelande mottaget från leverantör | Kopierad till rekvisitionsraden i Finance and Operations|
+| Meddelande mottaget från leverantör | Kopierad till rekvisitionsraden|
 |------------------------------|----------------------------------------------------------|
-|< ItemIn quantity=”” > |Kvantitet|
+|< ItemIn quantity=”” > |Antal|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Externt artikel-ID|
 |< ItemDetail>< UnitPrice >< Money currency=”” >| Valuta|
 |< ItemDetail >< UnitPrice >< Money >< /Money >| Pris per enhet|

@@ -1,6 +1,6 @@
 ---
-title: Skapa en integrationsmall med hjälp av Dynamics 365 for Talent - Onboard
-description: I det här avsnittet beskriver hur du använder Dynamics 365 for Talent - Onboard-appen för att skapa en mall för en integrationsmall för dina nyanställda. Denna uppgift är ett viktigt första steg i en HR-strategi (HCM) för anställningsdag till pension.
+title: Skapa en integrationsmall med hjälp av Dynamics 365 Talent - Onboard
+description: I det här avsnittet beskriver hur du använder Dynamics 365 Talent - Onboard-appen för att skapa en mall för en integrationsmall för dina nyanställda. Denna uppgift är ett viktigt första steg i en HR-strategi (HCM) för anställningsdag till pension.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731650"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009887"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Skapa en integrationsmall med hjälp av Dynamics 365 for Talent: Onboard
+# <a name="create-an-onboarding-template"></a>Skapa en mall för integrationsguide
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard tillhandahåller olika mallar som kan hjälpa dig att skapa en integrationsguide så snabbt som möjligt. Du kan använda en eller flera av dessa mallar, eller så kan du skapa egna mallar. Onboard innehåller exempeltext som du kan använda när du skapar egna mallar. Därför är processen lätt även om du börjar från början.
+Microsoft Dynamics 365 Talent: Onboard tillhandahåller olika mallar som kan hjälpa dig att skapa en integrationsguide så snabbt som möjligt. Du kan använda en eller flera av dessa mallar, eller så kan du skapa egna mallar. Onboard innehåller exempeltext som du kan använda när du skapar egna mallar. Därför är processen lätt även om du börjar från början.
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>Skapa en integrationsmall från en befintlig mall
 

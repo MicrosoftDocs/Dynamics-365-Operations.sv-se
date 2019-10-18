@@ -1,6 +1,6 @@
 ---
 title: Produkt- och kundsökning i kassan (POS)
-description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625652"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023702"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i kassan (POS)
 
@@ -99,7 +99,10 @@ Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fäl
 
 ![Kundens sökgenvägar](./media/SearchShortcutsPOS.png "Kundens sökgenvägar")
 
-Om du vill ange sökvillkor som genvägar måste administratören öppna sidan **Butiksparametrar** i Microsoft Dynamics 365 for Finance and Operations och sedan på fliken **Sökvillkor för kassa** väljer du de kriterier som ska visas som genvägar.
+
+
+Om du vill ange sökvillkor som genvägar måste administratören öppna sidan **Butiksparametrar** i Microsoft Dynamics 365 Retail och sedan på fliken **Sökvillkor för kassa** väljer du de kriterier som ska visas som genvägar.
+
 
 ![Konfigurera sökgenvägar](./media/ConfigureShortcutsAX.png "Konfigurera sökgenvägar")
 
@@ -111,6 +114,6 @@ Fältet **visningsordning** anger den ordning som genvägarna visas i kassan. Kr
 > [!NOTE]
 > En anpassad egenskap som läggs till enum påverkar inte den standardinställda kundsökalgoritmen. Med andra ord söker inte kundens sökalgoritm i den anpassade egenskapen. Användare kan endast använda en anpassad egenskap för sökningar om den anpassade egenskapen läggs till som en genväg, eller om standardsökalgoritmen åsidosätts.
 
-I en kommande version av Microsoft Dynamics 365 for Retail kan återförsäljare ställa in standardsökläget för kunder i kassan för att **söka igenom alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). En nytt alternativ för **standardsökläget för kunder** är tillgängligt i funktionsprofilen för kassan. Ställ in den på **på** för att ange att standardsökläget **söka igenom alla butiker**. Varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
+I en kommande version av Retail kan återförsäljare ställa in standardsökläget för kunder i kassan för att **söka igenom alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). En nytt alternativ för **standardsökläget för kunder** är tillgängligt i funktionsprofilen för kassan. Ställ in den på **på** för att ange att standardsökläget **söka igenom alla butiker**. Varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
 
 För att förhindra att oväntade prestandaproblem döljs den här konfigurationen bakom en förhandsversionsflagga som kallas **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Om du därför vill visa inställningen **standardsökläget för kunder** för kund i användargränssnittet måste återförsäljaren skapa ett acceptanstestet för användare (UAT) och produktionsmiljön. När ärendet har tagits emot arbetar teknikteamet tillsammans med återförsäljaren för att säkerställa att återförsäljaren testar i sina miljöer för icke-produktion för att bedöma prestanda och implementera eventuella optimeringar som krävs.

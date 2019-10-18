@@ -1,6 +1,6 @@
 ---
 title: Tids- och närvarohantering i Retail
-description: Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i detaljhandel i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i detaljhandel i Dynamics 365 Retail.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d541de550df41b7d4616492960bd4f2aae46d45e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567963"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024993"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Tids- och närvarohantering i Retail
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i detaljhandel i Microsoft Dynamics 365 for Retail.
+Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i detaljhandel i Dynamics 365 Retail.
 
 ## <a name="manage-worker-setup-and-scheduling"></a>Hantera inställningar för arbetare och schemaläggning
 
@@ -125,7 +125,7 @@ På POS:
 
 ## <a name="process-and-manage-time-registrations"></a>Bearbeta och hantera tidsregistreringar
 
-En Dynamics 365 for Retail-användare följer arbetsgången för att beräkna, godkänna och överföra tidsregistreringar till lönesystemet.
+En Retail-användare följer arbetsgången för att beräkna, godkänna och överföra tidsregistreringar till lönesystemet.
 
 ### <a name="primary-operations"></a>Primära verksamheter
 

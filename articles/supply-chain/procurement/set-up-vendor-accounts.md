@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547685"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249412"
 ---
 # <a name="set-up-vendor-accounts"></a>Skapa leverantörskonton
 
@@ -60,13 +60,13 @@ Du kan lagra kontakter för en leverantör. Dessa kontakter kan sedan användas 
 
 Om du vill lägga till leverantörer klickar du på sidan **Alla leverantörer** på fliken **Leverantör** i gruppen **Inställningar** och klickar på **Kontakter** &gt; **Lägg till kontakter**.  
 
-Du kan skapa leverantörskontakter från noll. Alternativt kan du också kopiera information från en annan person som redan är registrerad i Microsoft Dynamics 365 for Finance and Operations och redigera den information som du behöver.  
+Du kan skapa leverantörskontakter från noll. Alternativt kan du också kopiera information från en annan person som redan är registrerad i Supply Chain Management och redigera den information som du behöver.  
 
 **Obs!** Att lägga till en kontakt för en leverantör är inte samma sak som att lägga till kontaktinformation för den leverantören. Även om du kan lägga till allmän kontaktinformation för en leverantör kanske du också har flera specifika personer som är kontakter i det företaget, och som alla har sin egen kontaktinformation.  
 
 Du kan inte ta bort en post för kontaktperson om ett dokument refererar till kontakten. I stället kan du avaktivera kontakten.  
 
-Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft Office 365. Du måste dock först ställa in synkronisering mellan Finance and Operations och Office 365 i både Microsoft Exchange Server-synkroniseringen och Microsoft Outlook-installationsguiden.
+Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft Office 365. Du måste dock först ställa in synkronisering mellan Supply Chain Management och Office 365 i både Microsoft Exchange Server-synkroniseringen och Microsoft Outlook-installationsguiden.
 
 ## <a name="vendors-in-different-legal-entities"></a>Leverantörer i olika juridiska personer
 Om en leverantör registreras för endast en juridisk person inom din organisation, och andra juridiska personer måste registrera samma leverantör, kan du använda sidan **Lägg till leverantör till en annan juridisk person** för att konfigurera leverantören i syfte att göra affärer med en annan juridisk person. Du måste välja en leverantörsgrupp, en valuta och en undantagsstatus för leverantören i den valda juridiska personen.  

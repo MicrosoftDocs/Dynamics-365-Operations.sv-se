@@ -1,6 +1,6 @@
 ---
-title: Få support för Dynamics 365 for Retail
-description: Det här avsnittet beskriver hur du får hjälp med Microsoft Dynamics 365 for Retail.
+title: Få support för Dynamics 365 Retail
+description: Den här artikeln beskriver hur du får hjälp med Microsoft Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577854"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025016"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Få support för Dynamics 365 for Retail
+# <a name="get-support-for-dynamics-365-retail"></a>Få support för Dynamics 365 Retail
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du får hjälp med Dynamics 365 for Retail.
+Det här avsnittet beskriver hur du får hjälp med Dynamics 365 Retail.
 
 ## <a name="contact-support"></a>Kontakta supporten
 
@@ -48,7 +48,7 @@ Om du vill ha stöd för Retail, använd modulen i följande tabell. Resurserna 
 <tbody>
 <tr>
 <td>Fråga communityn.</td>
-<td>Gå till communitysidan <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> om du vill få hjälp med frågor från Dynamics community.</td>
+<td>Gå till communitysidan <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> om du vill få hjälp med frågor från Dynamics community.</td>
 </tr>
 <tr>
 <td>Använd verktyget Problemsökning.</td>
@@ -74,7 +74,7 @@ Om du vill ha stöd för Retail, använd modulen i följande tabell. Resurserna 
 Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSource, e-learning, sök, kunskapsbasen, filhämtning och sid- eller systemfel finns på <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">webbplatssupport</a>.</td>
 </tr>
 <tr>
-<td>Få hjälp med frågor om Retail eller Finance and Operations-licenser.</td>
+<td>Få hjälp med frågor om licenser.</td>
 <td>Kontakta din partner eller storkundsåterförsäljare (LAR) eller Microsoft-försäljare.</td>
 </tr>
 <tr>

@@ -3,7 +3,7 @@ title: Disponeringsinställningar
 description: Det här ämnet ger information om de disponeringsinställningar som huvudplaneringen använder för att beräkna artikelbehov.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538904"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998981"
 ---
 # <a name="coverage-settings"></a>Disponeringsinställningar
 
@@ -49,6 +49,19 @@ Du kan ange disponeringsinställningar på flera sätt:
 - Ange disponeringsinställningar för en dimensionsgrupp.
 
     Gå till **Produktinformationshantering &gt; Produkter &gt; Frisläppta produkter**. På sidan **Frisläppt produktdetalj** på snabbfliken **Allmänt** i avsnittet **Administration** klickar du på länken i fältet **Lagringsdimensionsgrupp**. På fältet **Lagringsdimensionsgrupper** markerar du fältet **Disponera per dimension** om du vill skapa disponeringsinställningar för en dimension i lagringsdimensiongruppen. Fält **Disponera per dimension** måste väljas för alla produktdimensioner, t.ex. konfiguration, färg, storlek och stil.
+
+
+## <a name="coverage-codes"></a>Täckningskoder
+
+Huvudplanering kan konfigureras till att använda olika återanskaffningsmetoder. Återanskaffningsmetoderna eller partistorleksmetoderna är de tekniker som används i systemet för att fastställa partistorleken för inköpta eller producerade artiklar. 
+
+Varje återanskaffningsmetod tilldelas en av följande täckningskoder:
+
+- **Manuell** - Metoden för partistorlek där systemet inte föreslår inköps-, överförings- eller tillverkningsorder för artikeln. Planeraren för artikeln ansvarar för att skapa de nödvändiga orderna för påfyllnaden av artikeln.
+- **Per behov** - Den partistorleksmetod i vilken systemet skapar en planerad inköps-, överförings- eller produktionsorder per behov för artikeln. Detta används vanligtvis för dyra artiklar med återkommande efterfrågan.  
+- **Per period** - den partistorleksmetod som kombinerar hela efter frågan för en period till en order för artikeln. Ordern planeras under den första dagen i perioden och dess kvantitet uppfyller nettokraven under den fastställda perioden. Perioden inleds med det första efter frågan av artikeln och täcker den definierade tiden i tid. Nästa period kommer att inledas med nästa behov av artikeln.
+- **Minsta/högsta** - den partistorleksmetod som innehåller påfyllningen av lagret upp till en viss nivå när den förutsagda behållningen är under ett tröskelvärde. Kvantiteten för påfyllnaden är differensen mellan den högsta nivån och den förutsagda behållningsnivån.
+
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

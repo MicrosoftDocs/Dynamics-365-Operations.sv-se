@@ -1,6 +1,6 @@
 ---
 title: Säkerhets- och rollhantering i Attract
-description: Det här avsnittet innehåller information om rollsäkerhet i Microsoft Dynamics 365 for Talent - Attract.
+description: Det här avsnittet innehåller information om rollsäkerhet i Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3f804b5f79b813cf504c3deb4a95e678c6fcbf87
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ad94a7511afef0c68fb8f2a70402babb80b0f9ad
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739850"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024216"
 ---
 # <a name="set-user-permissions"></a>Ställ in användarbehörigheter
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract använder rollbaserad säkerhet. Med andra ord ges inte åtkomst till enskilda användare, utan till de säkerhetsroller som har tilldelats användare. En användare som har tilldelats en säkerhetsroll har åtkomst till den uppsättning behörigheter som associeras med rollen.
+Microsoft Dynamics 365 Talent: Attract använder rollbaserad säkerhet. Med andra ord ges inte åtkomst till enskilda användare, utan till de säkerhetsroller som har tilldelats användare. En användare som har tilldelats en säkerhetsroll har åtkomst till den uppsättning behörigheter som associeras med rollen.
 
 Attract innehåller fem grundläggande användarroller:
 
@@ -52,7 +52,7 @@ Följande avsnitt innehåller en högnivåbeskrivning av varje roll. Tabellerna 
 
 ## <a name="administrator"></a>Administratör
 
-Användare som tilldelats administratörsrollen kan komma åt och ändra alla data i Attract. Administratörer kan skapa, läsa, uppdatera och ta bort data. De har även tillgång till administratörscentret där de kan konfigurera Attract-programmet och konfigurera användarinformation. Vi rekommenderar att minst en person tilldelas rollen Administratör. Som standard är miljöadministratör i Microsoft PowerApps inställd som en administratör i Attract. Om du har registrerat dig för en utvärderingsversion av Attract tilldelas rollen Systemadministratör automatiskt till dig. För närvarande måste användare som har rollen Administratör också ha rollen rekryterare eller rollen anställande chef för att kunna skapa jobb.
+Användare som tilldelats administratörsrollen kan komma åt och ändra alla data i Attract. Administratörer kan skapa, läsa, uppdatera och ta bort data. De har även tillgång till administratörscentret där de kan konfigurera Attract och konfigurera användarinformation. Vi rekommenderar att minst en person tilldelas rollen Administratör. Som standard är miljöadministratör i Microsoft PowerApps inställd som en administratör i Attract. Om du har registrerat dig för en utvärderingsversion av Attract tilldelas rollen Systemadministratör automatiskt till dig. För närvarande måste användare som har rollen Administratör också ha rollen rekryterare eller rollen anställande chef för att kunna skapa jobb.
 
 ## <a name="hiring-manager"></a>Anställande chef
 

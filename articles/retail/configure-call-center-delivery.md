@@ -1,6 +1,6 @@
 ---
 title: Konfigurera leveranssätt och avgifter för kundtjänst
-description: Det här avsnittet beskriver hur du ställer in leveranssätten och avgifter för en kundtjänstorder i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet beskriver hur du ställer in leveranssätten och avgifter för en kundtjänstorder i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2571b4ffd6c13dbf755ef2dfa93b757822890d96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b67a1d91e41e1a4c21e0e877c06812dededbe731
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553609"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019501"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurera leveranssätt och avgifter för kundtjänst
 
 [!INCLUDE [banner](includes/banner.md)]
 
-När en försäljningsorder placeras i Microsoft Dynamics 365 for Retail, om den person som registrerade försäljningsordern är länkad till en kundtjänstkanal används logik och regler för att validera leveranssätt och beräkna avgifter för ordern.
+När en försäljningsorder placeras i Dynamics 365 Retail, om den person som registrerade försäljningsordern är länkad till en kundtjänstkanal används logik och regler för att validera leveranssätt och beräkna avgifter för ordern.
 
 Du kan välja ett leveranssätt för försäljningsorderrubriken och försäljningsorderrader när du skapar en försäljningsorder. Som standard används det leveranssätt som du valde på rubriken för alla försäljningsorderrader. Du kan åsidosätta standardläge för leverans på individuella försäljningsrader enligt behov. Du kan också definiera ett leveranssätt för en kundpost. Sedan när beställningar skapas för kunden, används det leveranssätt som standard på försäljningsorderrubriken.
 

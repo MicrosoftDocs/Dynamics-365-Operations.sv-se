@@ -17,22 +17,22 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed7faab1869393bd56142aa25fbf86b7d893a152
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e42810d2cc920fbbfb4b56fbd94124925f544ce5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834017"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023382"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Microsoft Dynamics 365 for Retail. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
+Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Dynamics 365 Retail. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
 
 - Vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner som ett alternativ för att förhindra försäljning och returer från att slås samman i ett butikskvitto
 - Sverige-specifika funktioner, t.ex. ytterligare räknare i dagliga kassarapporter
-- Ett exempel för att integrera kassa i Dynamics 365 for Retail med Sverige-specifika kvittoskrivarenheter som kallas kontrollenheter.
+- Ett exempel för att integrera Retail POS med Sverige-specifika kvittoskrivarenheter som kallas kontrollenheter.
 
 ## <a name="overview-of-cash-register-functionality-for-sweden"></a>Översikt över kassaapparatfunktioner för Sverige
 
@@ -69,7 +69,7 @@ Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod*
 Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenhet som kallas kontrollenheter. Det antas att en enhet är fysiskt ansluten till maskinvarustationerna som kassan är kopplad till. Provet implementeras i källkoden för kassan, maskinvarustationen och Commerce Runtime-tillägg och är tillgänglig i Retail software development kit (SDK). Provet innehåller följande funktioner:
 
 - Försäljning, returer och kvittokopior registreras automatiskt i en kontrollenhet som är ansluten till maskinvarustationen som är kopplad till kassan.
-- Kontrollkoden och tillverkningsnumret för kontrollenheten för en registrerad transaktion fångas in från kontrollenheten och sparas i transaktionen. (Denna data kallas också _räkenskapsdata_.) Räkenskapsdata kan visas sdian **Butikstransaktioner** i Retail.
+- Kontrollkoden och tillverkningsnumret för kontrollenheten för en registrerad transaktion fångas in från kontrollenheten och sparas i transaktionen. (Denna data kallas också _räkenskapsdata_.) Räkenskapsdata kan visas sdian **Butikstransaktioner**.
 - Anpassade fält för kontrollkoden och tillverkningsnumret för kontrollenheten kan läggas till ett kvittoformat så att du kan skriva ut räkenskapsdata för transaktionen på ett kvitto.
 - Räkenskapsdata för en transaktion skrivs ut på kanalrapporten **elektronisk journal (Sverige)**.
 - Om ett fel inträffar vid registrering av en transaktion i styrenheten förblir räkenskapsdata för transaktionen tomt. I det här fallet går det inte att starta en ny transaktion och det går inte att stänga det aktuella skiftet. Operatören ombeds att försöka registrera den oregistrerade transaktionen igen i styrenheten. Om det andra försöket misslyckas hoppar operatören över registreringen, under förutsättning att han eller hon har en särskild behörighet. Om operatören hoppar över registreringen av en transaktion i styrenheten, sparas informationen om händelsen i transaktionen i stället för räkenskapsdata.
@@ -81,9 +81,9 @@ Mer information om styrenhetens integrationsprov finns i [Guiden för provanvän
 
 ## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
-Det här avsnittet beskriver inställningar för Retails som avser och rekommenderas för Sverige. Mer information om hur du ställer in Retail finns i [Microsoft Dynamics 365 for Retail-dokumentation](../index.md).
+Det här avsnittet beskriver inställningar som avser och rekommenderas för Sverige. Mer information om hur du ställer in Retail finns i [Microsoft Dynamics 365 for Retail-dokumentation](../index.md).
 
-Om du vill använda Sverige-specifika funktioner för Retail måste du utföra följande uppgifter:
+Om du vill använda Sverige-specifika funktioner måste du utföra följande uppgifter:
 
 - Ange fältet **land/region** till **SWE** (Sverige) i den primära adressen för den juridiska personen.
 - Ange fältet **ISO-kod** till **SE** (Sverige) i funktionsprofil för kassa för alla butiker som finns i Sverige.
@@ -104,7 +104,9 @@ Du måste ange följande allmänna inställningar för Sverige.
     - Artikelmomsgrupper
     - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
 
-    Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
+
+    Mer information om hur du ställer in och använder moms finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 2. På sidan **Alla butiker** uppdaterar du butiksinformation. Du måste speciellt ställa in följande parametrar:
 

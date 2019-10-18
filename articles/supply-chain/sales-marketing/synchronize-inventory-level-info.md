@@ -1,6 +1,6 @@
 ---
-title: Synkronisera information om lagernivåer från Finance and Operations till Field Service
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+title: Synkronisera information om lagerjusteringar från Supply Chain Management till Field Service
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 05/07/2019
@@ -19,37 +19,37 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b56eb545f87c31ef30d6a897f48539068583486
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: eefbfd1f8d7aa73cbb3330433b08efd889232818
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843443"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251211"
 ---
-# <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Synkronisera information om lagernivåer från Finance and Operations till Field Service 
+# <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synkronisera information om lagerjusteringar från Supply Chain Management till Field Service 
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera information om lagernivåer från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 
-[![Synkronisering av affärsprocesser mellan Finance and Operations och Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
-Följande mall och underliggande uppgifter används för att synkronisera lagerhållningsnivåer från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+Följande mall och underliggande uppgifter används för att synkronisera lagerhållningsnivåer från Supply Chain Management till Field Service.
 
 **Mall i dataintegrering**
-- Produktlager (Fin and Ops till Field Service)
+- Produktlager (Supply Chain Management till Field Service)
   
 **Uppgift i dataintegreringsprojektet**
 - Produktlager
 
 Följande synkroniseringsuppgifter krävs före synkronisering av lagernivåer kan uppstå:
-- Lagerställen (Fin and Ops till Field Service) 
-- Field Service-produkter med lagerenhet (Fin and Ops till Sales) 
+- Lagerställen (Supply Chain Management till Field Service) 
+- Field Service produkter med lagerenhet (Supply Chain Management till Sales) 
 
 ## <a name="entity-set"></a>Ange entiteten
 
-| Field Service                      | Finance and Operations                 |
+| Field Service                      | Hantering av underleverantörer                |
 |------------------------------------|----------------------------------------|
 | msdynce_externalproductinventories | CDS lagerbehållning enligt lagerställe     |
 
@@ -61,17 +61,17 @@ Information om lagernivåer från Finance and Operations till Field Service för
 
 Informationen registreras per frisläppt produkt för varje lagerställe och synkroniseras utifrån ändringsspårning när lagernivån ändras.
 
-I Field Service skapar integreringslösningen lagerjournaler för delta, för att få nivåer i Field Service att matcha nivåer i Finance and Operations.
+I Field Service skapar integreringslösningen lagerjournaler för delta, för att få nivåer i Field Service att matcha nivåer i Supply Chain Management.
 
-Finance and Operations kommer att fungera som mall för lagernivåer. Därför är det viktigt att ställa in integration för arbetsorder, överföringar och justeringar från Field Service till Finance and Operations om den funktionen används i Field Service samt synkronisering av lagernivåerna från Finance and Operations.
+Supply Chain Management kommer att fungera som mall för lagernivåer. Därför är det viktigt att ställa in integration för arbetsorder, överföringar och justeringar från Field Service till Supply Chain Management om den funktionen används i Field Service samt synkronisering av lagernivåerna från Supply Chain Management.
 
-Produkter och lagerställen där lagernivåer hanteras från Finance and Operations kan styras med avancerad fråga och filtrering (Power Query).
+Produkter och lagerställen där lagernivåer hanteras från Supply Chain Management kan styras med avancerad fråga och filtrering (Power Query).
 
 > [!NOTE]
-> Det går att skapa flera lagerställen i Field Service (med **Hanteras externt = Nej**) och mappa dem till ett enda lager i Finance and Operations med avancerad fråga och filtreringsfunktioner Detta används när du vill att Field Service ska hantera detaljerad lagernivå och bara skicka uppdateringar till Finance and Operations. I detta fall kommer Field Service inte att få uppdateringar av lagernivåer från Finance and Operations. För ytterligare information, se [Synkronisera lagerjusteringar från Field Service till Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) och [Synkronisera arbetsorder i Field Service till försäljningsorder som är kopplade till projekt i Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Det går att skapa flera lagerställen i Field Service (med **Hanteras externt = Nej**) och mappa dem till ett enda lager i Supply Chain Management med avancerad fråga och filtreringsfunktioner Detta används när du vill att Field Service ska hantera detaljerad lagernivå och bara skicka uppdateringar till Supply Chain Management. I detta fall kommer Field Service inte att få uppdateringar av lagernivåer från Supply Chain Management. För ytterligare information, se [Synkronisera lagerjusteringar från Field Service till Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) och [Synkronisera arbetsorder i Field Service till försäljningsorder som är kopplade till projekt i Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>CRM-lösning för Field Service
-Entiteten **Externt produktlager** är en ny entitet som endast används för stöd i integrationen. Den här entiteten tar emot värdena för lagernivåer från Finance and Operations i integrationen och omvandlar sedan dessa värden till manuella lagerjournaler, som sedan ändrar lagerprodukterna på lagret.
+Entiteten **Externt produktlager** är en ny entitet som endast används för stöd i integrationen. Den här entiteten tar emot värdena för lagernivåer från Supply Chain Management i integrationen och omvandlar sedan dessa värden till manuella lagerjournaler, som sedan ändrar lagerprodukterna på lagret.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
@@ -84,10 +84,10 @@ För att projektet ska fungera måste du se till att integrationsnyckeln uppdate
       - msdynce_warehouseid (dist.lager-ID)
       
 ### <a name="data-integration-project"></a>Dataintegreringsprojektet
-Du kan tillämpa filter med avancerad fråga och filtrering för att kontrollera att bara önskade produkter och lagerställen skickar information om lagernivåer från Finance and Operations till Field Service.
+Du kan tillämpa filter med avancerad fråga och filtrering för att kontrollera att bara önskade produkter och lagerställen skickar information om lagernivåer från Supply Chain Management till Field Service.
 
 ## <a name="template-mapping-in-data-integration"></a>Mallmappning i dataintegrering
 
-### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Produktlager (Fin and Ops till Field Service): Produktlager
+### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktlager (Supply Chain Management till Field Service): Produktlager
 
 [![Mallmappning i dataintegrering](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

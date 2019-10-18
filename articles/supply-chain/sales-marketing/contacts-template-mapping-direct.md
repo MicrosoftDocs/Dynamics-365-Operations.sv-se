@@ -1,6 +1,6 @@
 ---
-title: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
-description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) från Microsoft Dynamics 365 for Sales, till Microsoft Dynamics 365 for Finance and Operations.
+title: Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
+description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,25 +19,25 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: fbc75702c9db1e877addc4605dcb444c344dfa5c
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 7d3a4602a3d8462666dfcb26b97a4f652891f7bc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742457"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249990"
 ---
-# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
+# <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) direkt från Microsoft Dynamics 365 for Sales, till Microsoft Dynamics 365 for Finance and Operations.
+I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera entiteterna Kontakt (kontakter) och Kontakt (kunder) direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
-Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Finance and Operations och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Finance and Operations och Sales. Följande bild visar hur data synkroniseras mellan Finance and Operations och Sales.
+Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
 [![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -45,47 +45,47 @@ Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering f
 
 För att gå till tillgängliga mallar, öppna [PowerApps administratörscenter](https://preview.admin.powerapps.com/dataintegration). Välj **projekt** och i det övre högra hörnet väljer du **nytt projekt** för att välja allmänna mallar.
 
-Följande mallar och underliggande uppgifter används för att synkronisera entiteterna kontakt (kontakter) i Sales och entiteterna kontakt (kunder) i Finance and Operations:
+Följande mallar och underliggande uppgifter används för att synkronisera entiteterna kontakt (kontakter) i Sales och entiteterna kontakt (kunder) i Supply Chain Management.
 
-- **Namn på mallar i dataintegrering:**
+- **Namn på mallar i dataintegrering**
 
-    - Kontakter (Sales till Fin and Ops) - Direkt
-    - Kontakter till kund (Sales till Fin and Ops) - Direkt
+    - Kontakter (Sales till Supply Chain Management) - direkt
+    - Kontakter till kunder (Sales till Supply Chain Management) - direkt
 
-- **Namnen på uppgifterna i dataintegreringsprojektet:**
+- **Namnen på uppgifterna i dataintegreringsprojektet**
 
     - Kontakter
     - ContactToCustomer
 
-Följande synkroniseringsuppgift krävs före kontaktsynkronisering: konton (Sales till Fin and Ops)
+Följande synkroniseringsuppgift krävs före kontaktsynkronisering: konton (Sales till Supply Chain Management)
 
 ## <a name="entity-sets"></a>Entitetsuppsättningar
 
-| Försäljning    | Finance and Operations |
+| Försäljning    | Hantering av underleverantörer |
 |----------|------------------------|
 | Kontakter | CDS-kontakter           |
 | Kontakter | Kunder V2           |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
-Kontakter hanteras i Sales och synkroniseras till Finance and Operations.
+Kontakter hanteras i Sales och synkroniseras med Supply Chain Management.
 
-En kontakt i Sales kan antingen bli en kontakt eller enkund i Finance and Operations. För att ta reda på om en kontakt i Sales ska synkroniseras mot Finance and Operations som en kontakt eller en kund, tittar systemet på följande egenskaper för en kontakt i Sales:
+En kontakt i Sales kan antingen bli en kontakt eller en kund i Supply Chain Management. För att ta reda på om en kontakt i Sales ska synkroniseras mot Supply Chain Management som en kontakt eller en kund, tittar systemet på följande egenskaper för en kontakt i Sales:
 
-- **Synkronisering till en kund i Finance and Operations:** kontakter där **är aktiv kund** anges till **Ja**
-- **Synkronisering till en kontakt i Finance and Operations:** kontakter där **är aktiv kund** anges till **nr** och **företag** (överordnat konto/kontakt) leder till ett konto (inte en kontakt)
+- **Synkronisering till en kund i Supply Chain Management:** kontakter där **är aktiv kund** anges till **Ja**
+- **Synkronisering till en kontakt i Supply Chain Management:** kontakter där **är aktiv kund** anges till **nr** och **företag** (överordnat konto/kontakt) leder till ett konto (inte en kontakt)
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
-Ett nytt fält för **är aktiv kund** har lagts till kontakten. Det här fältet används för att urskilja kontakter vars försäljningsaktivitet och kontakter som inte har en försäljningsaktivitet. **Är aktiv kund** anges till **Ja** endast för kontakter som har relaterade offerter, order eller fakturor. Endast dessa kontakter synkroniseras till Finance and Operations som kunder.
+Ett nytt fält för **är aktiv kund** har lagts till kontakten. Det här fältet används för att urskilja kontakter vars försäljningsaktivitet och kontakter som inte har en försäljningsaktivitet. **Är aktiv kund** anges till **Ja** endast för kontakter som har relaterade offerter, order eller fakturor. Endast dessa kontakter synkroniseras till Supply Chain Management som kunder.
 
-Ett nytt fält för **IsCompanyAnAccount** har lagts till kontakten. Det här fältet indikerar om en kontakt är kopplad till ett företag (överordnat konto/kontakt) av typen **konto**. Denna information används för att identifiera kontakter som ska synkroniseras mot Finance and Operations som kontakter.
+Ett nytt fält för **IsCompanyAnAccount** har lagts till kontakten. Det här fältet indikerar om en kontakt är kopplad till ett företag (överordnat konto/kontakt) av typen **konto**. Denna information används för att identifiera kontakter som ska synkroniseras mot Supply Chain Management som kontakter.
 
 Ett nytt fält för **kontaktnummer** har lagts till kontakten för att garantera en naturlig och unik nyckel för integration. När en ny kontakt skapas kommer **kontaktnummer**-värde genereras automatiskt med hjälp av en nummerserie. Värdet består av **CON** följt av en ökande nummerserie och sedan ett suffix på sex tecken. Här är ett exempel: **CON-01000-BVRCPS**
 
 När integrationslösningen för Sales används, anger ett uppgraderingsskript fältet **kontaktnummer** för befintliga kontakter med nummerserien som beskrivits tidigare. Uppgraderingsskriptet anger också fältet **är aktiv kund** till **Ja** för alla kontakter som har försäljningsaktivitet.
 
-## <a name="in-finance-and-operations"></a>I Finance and Operations
+## <a name="in-supply-chain-management"></a>I Supply Chain Management
 
 Kontakter är märkta med egenskapen **IsContactPersonExternallyMaintained**. Den här egenskapen anger att en kontakt hanteras externt. I det här fallet underhålls externt underhållna kontakter i Sales.
 
@@ -93,21 +93,21 @@ Kontakter är märkta med egenskapen **IsContactPersonExternallyMaintained**. De
 
 ### <a name="contact-to-customer"></a>Kontakt till kund
 
-- **Kundgrupp** krävs i Finance and Operations. För att undvika problem med synkronisering kan du ange ett standardvärde i mappningen. Detta standardvärde används sedan om fältet lämnas tomt i Sales.
+- **CustomerGroup** krävs i Supply Chain Management. För att undvika problem med synkronisering kan du ange ett standardvärde i mappningen. Detta standardvärde används sedan om fältet lämnas tomt i Sales.
 
     Standardmallvärdet är **10**.
 
-- Genom att lägga till följande mappningar kan du minska antalet manuella uppdateringar som krävs för Finance and Operations. Du kan använda ett standardvärde eller värdekarta från, till exempel **Land/Region** eller **ort**.
+- Genom att lägga till följande mappningar kan du minska antalet manuella uppdateringar som krävs för Supply Chain Management. Du kan använda ett standardvärde eller värdekarta från, till exempel **Land/Region** eller **ort**.
 
-    - **SiteId** - en standardplats kan också definieras på produkter i Finance and Operations. En plats måste anges för att skapa offerter och försäljningsorder i Finance and Operations.
+    - **SiteId** - en standardplats kan också definieras på produkter i Supply Chain Management. En plats måste anges för att skapa offerter och försäljningsorder i Supply Chain Management.
 
         Ett mallvärde för **SiteId** är inte definierad.
 
-    - **WarehouseId** - ett standardlagerställe kan också definieras på produkter i Finance and Operations. Ett lagerställe måste anges för att skapa offerter och försäljningsorder i Finance and Operations.
+    - **WarehouseId** - ett standardlagerställe kan också definieras på produkter i Supply Chain Management. Ett lagerställe måste anges för att skapa offerter och försäljningsorder i Supply Chain Management.
 
         Ett mallvärde för **WarehouseId** är inte definierad.
 
-    - **LanguageId** – ett språk måste anges för att skapa offerter och försäljningsorder i Finance and Operations.
+    - **LanguageId** – ett språk plats måste anges för att skapa offerter och försäljningsorder i Supply Chain Management.
     
         Standardmallvärdet är **en-us**.
 
@@ -116,7 +116,7 @@ Kontakter är märkta med egenskapen **IsContactPersonExternallyMaintained**. De
 I följande illustrationer visas ett exempel på en mallmappning i dataintegrering. 
 
 > [!NOTE]
-> Mappningen visar vilken fältinformation som kommer att synkroniseras från Sales till Finance and Operations.
+> Mappningen visar vilken fältinformation som kommer att synkroniseras från Sales till Supply Chain Management.
 
 ### <a name="contact-to-contact"></a>Kontakt till kontakt
 
@@ -129,14 +129,14 @@ I följande illustrationer visas ett exempel på en mallmappning i dataintegreri
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Potentiell kund till kontanter](prospect-to-cash.md)
+[Prospekt till kontanter](prospect-to-cash.md)
 
-[Synkronisera konton direkt från Sales till kunder i Finance and Operations](accounts-template-mapping-direct.md)
+[Synkronisera konton direkt från Sales till kunder i Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synkronisera produkter direkt från Finance and Operations till produkter i Sales](products-template-mapping-direct.md)
+[Synkronisera produkter direkt från Supply Chain Management till produkter i Sales](products-template-mapping-direct.md)
 
-[Synkronisera huvuden och rader i försäljningsorder direkt från Finance and Operations till Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synkronisera försäljningsorderrubrik och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-order-template-mapping-direct-two-ways.md)
 
-[Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales](sales-invoice-template-mapping-direct.md)
+[Synkronisera huvuden och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-invoice-template-mapping-direct.md)
 
 

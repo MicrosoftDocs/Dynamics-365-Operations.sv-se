@@ -1,6 +1,6 @@
 ---
 title: Skapa en platsprofil
-description: Det här avsnittet innehåller information om hur du skapar en platsprofil i Dynamics 365 for Finance and Operations.
+description: Det här avsnittet innehåller information om hur du skapar en platsprofil i Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/29/2019
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46aa1001c21ae39c158062444303ca02c0f41a45
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 36bad7424ac247b8fd9a819928837de619e9e258
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866989"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026795"
 ---
 # <a name="create-a-location-profile"></a>Skapa en platsprofil
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Det här avsnittet innehåller information om hur du skapar en platsprofil i Dynamics 365 for Finance and Operations. Varje plats på lagerstället måste ha en platsprofil associerad som beskriver egenskaperna för platsen, till exempel om blandade artiklar tillåts för platsen. I den här proceduren skapar vi en profil för en plats som inte kräver kontroll av registreringsskylt. Vi ska aktivera blandade artiklar och blandad lagerstatus, samt tillåta rullande inventering. Du kan använda den här proceduren i demonstrationsdataföretaget USMF.
+Det här avsnittet innehåller information om hur du skapar en platsprofil i Dynamics 365 Supply Chain Management. Varje plats på lagerstället måste ha en platsprofil associerad som beskriver egenskaperna för platsen, till exempel om blandade artiklar tillåts för platsen. I den här proceduren skapar vi en profil för en plats som inte kräver kontroll av registreringsskylt. Vi ska aktivera blandade artiklar och blandad lagerstatus, samt tillåta rullande inventering. Du kan använda den här proceduren i demonstrationsdataföretaget USMF.
 
 
 1. I navigeringsfönstret, gå till **Moduler > Lagerstyrning > Inställningar > Lagerställe > Platsprofiler**.

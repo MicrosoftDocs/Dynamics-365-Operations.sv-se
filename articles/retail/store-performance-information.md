@@ -1,6 +1,6 @@
 ---
 title: Analysera butikernas resultat
-description: Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Retail-data.
+description: Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Dynamics 365 Retail-data.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b2ea6ad2e3d9589face06cd5f950973209c17d41
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569273"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017792"
 ---
 # <a name="analyze-store-performance"></a>Analysera butiksresultat
 
 [!include [banner](includes/banner.md)]
 
-Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Retail-data.
+Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Dynamics 365 Retail-data.
 
-Som en del av Dynamics 365 for Retail, användare kan studera store prestanda i realtid på olika nivåer i organisationshierarkin under en vald period genom att öppna **Kanalsammanfattning**-rapport från någon av följande platser:
+Som en del av Retail, användare kan studera store prestanda i realtid på olika nivåer i organisationshierarkin under en vald period genom att öppna **Kanalsammanfattning**-rapport från någon av följande platser:
 
 - Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**
 - Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**

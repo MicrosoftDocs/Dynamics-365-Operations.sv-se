@@ -1,6 +1,6 @@
 ---
-title: Integrering med Microsoft Dynamics 365 for Field Service - översikt
-description: Det här ämnet innehåller en översikt över integrering med Microsoft Dynamics 365 for Field Service.
+title: Integration med Microsoft Dynamics 365 Field Service - översikt
+description: Det här ämnet innehåller en översikt över integrering med Microsoft Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,60 +19,60 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 22abe83f06b7fc57c73fb82ccafc4b426667e7c6
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865218"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249852"
 ---
-# <a name="integration-with-microsoft-dynamics-365-for-field-service-overview"></a>Integrering med Microsoft Dynamics 365 for Field Service - översikt
+# <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Integration med Microsoft Dynamics 365 Field Service - översikt
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations aktiverar synkronisering av affärsprocesser mellan Finance and Operations och Microsoft Dynamics 365 for Field Service. Integrationsscenarierna konfigureras med hjälp av utbyggbara datamallar och Common Data Service (CDS) för att aktivera synkroniseringen av affärsprocesser.
+Supply Chain Management tillåter synkronisering av affärsprocesser mellan Dynamics 365 Supply Chain Management och Dynamics 365 Field Service. Integrationsscenarierna konfigureras med hjälp av utbyggbara datamallar och Common Data Service för att aktivera synkroniseringen av affärsprocesser.
 Standardmallar kan användas för att skapa anpassade integrationsprojekt där ytterligare standardiserade och anpassade fält och även entiteter kan mappas för att justera integrationen och uppfylla affärsbehov. 
 
 Integration av katalogtjänst i Field Service bygger vidare på befintliga funktioner för potentiell kund till pengar.
 
-![Synkronisering av affärsprocesser mellan Finance and Operations och Field Service](./media/field-service-integration.png)
+![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service](./media/field-service-integration.png)
 
-Den första fasen av integrationen mellan Field Service och Finance and Operations fokuserar på arbetsorder och avtal i Field Service som ska faktureras i Finance and Operations. Flödet som stöds startar i Field Service där information från arbetsorder synkroniseras till Finance and Operations som försäljningsorder. i Finance and Operations faktureras försäljningsorder för att generera fakturadokument. Dessutom synkroniseras informationen från avtalsfakturor för Field Service till Finance and Operations. Microsoft Dynamics 365-dataintegratören synkroniserar data med hjälp av anpassningsbara projekt. Standardmallar kan användas för att skapa anpassade integrationsprojekt där ytterligare standardiserade och anpassade fält och även entiteter kan mappas för att justera integrationen och uppfylla särskilda krav.
+Den första fasen av integrationen mellan Field Service och Supply Chain Management fokuserar på arbetsorder och avtal i Field Service som ska faktureras i Supply Chain Management. Flödet som stöds startar i Field Service där information från arbetsorder synkroniseras till Supply Chain Management som försäljningsorder. I Supply Chain Management faktureras försäljningsorder för generering av fakturadokument. Dessutom synkroniseras informationen från avtalsfakturor för Field Service till Supply Chain Management. Microsoft Dynamics 365-dataintegratören synkroniserar data med hjälp av anpassningsbara projekt. Standardmallar kan användas för att skapa anpassade integrationsprojekt där ytterligare standardiserade och anpassade fält och även entiteter kan mappas för att justera integrationen och uppfylla särskilda krav.
 
-Den första fasen av integrationen mellan Field Service och Finance and Operation tillåter synkronisering av följande artiklar:
+Den första fasen av integrationen mellan Field Service och Supply Chain Management tillåter synkronisering av följande artiklar:
 
-- [Produkter i Finance and Operations till produkter i Field Service som innehåller information om produkttyp](field-service-product.md)
-- [Arbetsorder i Field Service till försäljningsorder i Finance and Operations](field-service-work-order.md)
-- [Fakturor i Field Service till fritextfakturor i Finance and Operations](field-service-invoice.md)
+- [Produkter i Supply Chain Management till produkter i Field Service som innehåller information om produkttyp](field-service-product.md)
+- [Arbetsorder i Field Service till försäljningsorder i Supply Chain Management](field-service-work-order.md)
+- [Fakturor i Field Service till fritextfakturor i Supply Chain Management](field-service-invoice.md)
 
-Titta på den korta YouTube-videon om du vill se ett exempel på hur du synkroniserar en arbetsorder mellan Field Service och Finance and Operations [Så här synkroniserar du en arbetsorder med integration med Microsoft Dynamics 365](https://www.youtube.com/watch?v=46ylO7raZAo).
+Titta på den korta YouTube-videon om du vill se ett exempel på hur du synkroniserar en arbetsorder mellan Field Service och Supply Chain Management [Så här synkroniserar du en arbetsorder med integration med Microsoft Dynamics 365](https://www.youtube.com/watch?v=46ylO7raZAo).
 
-## <a name="integration-with-microsoft-dynamics-365-for-field-service-including-inventory-and-project-information"></a>Integration med Microsoft Dynamics 365 for Field Service, till exempel lager- och projektinformation
+## <a name="integration-with-field-service-including-inventory-and-project-information"></a>Integration med Field Service, till exempel lager- och projektinformation
 
-Ytterligare funktioner i den här andra fasen fokuserar på att ge fälttekniker insikt om vilken lagerinformation som från Finance and Operations som tillåter dem att uppdatera lagernivåer och göra materialöverföringar. Dessutom får företag som utför installation och underhåll av sålda varor bättre kontroll och insyn i den fullständiga försäljnings- och serviceprocessen med integrering från projekt.
+Ytterligare funktioner i den här andra fasen fokuserar på att ge fälttekniker insikt om vilken lagerinformation som från Supply Chain Management som tillåter dem att uppdatera lagernivåer och göra materialöverföringar. Dessutom får företag som utför installation och underhåll av sålda varor bättre kontroll och insyn i den fullständiga försäljnings- och serviceprocessen med integrering från projekt.
 
 ### <a name="functionality-includes-integration-of"></a>Funktionen inkluderar integrering av:
 - Lagerställeinformation
 - Information om lagerbehållning
 - Lageröverföringar
 - Lagerjusteringar
-- Dynamics 365 for Finance and Operations projekt som är anslutna med Dynamics 365 for Field Service arbetsorder
-- Dynamics 365 for Field Service arbetsorder med länk till Dynamics 365 for Finance and Operations projekt använder detta projektnummer för att Dynamics 365 for Finance and Operations försäljningsorder ska kunna fakturera från projektet. 
+- Supply Chain Management-projekt kopplade till Dynamics 365 Field Service arbetsorder
+- Dynamics 365 Field Service arbetsorder med länk till Supply Chain Management-projekt använder detta projektnummer för att försäljningsorder ska kunna fakturera från projektet. 
 
-![Synkronisering av affärsprocesser mellan Finance and Operations och Field Service](./media/FSv2overview.png)
+![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service](./media/FSv2overview.png)
 
-### <a name="the-second-phase-of-the-integration-between-field-service-and-finance-and-operations-enables-synchronization-with-the-following-templates"></a>Den andra fasen av integrationen mellan Field Service och Finance and Operations tillåter synkronisering med följande mallar:
-- Lagerställen (Fin and Ops till Field Service) - lagerställen från Finance and Operations till Field Service [avancerad fråga] 
-- Produktlager (Fin and Ops till Field Service) - information om lagernivåer från Finance and Operations till Field Service [avancerad fråga] 
-- Lagerjustering (Field Service till Fin and Ops) - lagerjusteringar från Field Service till Finance and Operations [avancerad fråga] 
-- Lageröverföringar (Field Service till Fin and Ops) - Lageröverföringar från Field Service till Finance and Operations [avancerad fråga] 
-- Projekt (Fin and Ops till Field Service) - projektlista från Finance and Operations till Field Service 
-- Arbetsorder med projekt (Field Service till Fin and Ops) - arbetsorder i Field Service till försäljningsorder i Finance and Operations, med stöd för projekt [avancerad fråga] 
-- Field Service-produkter med lagerenhet (Fin and Ops till Sales) - Finance and Operations "Säljbara frisläppta produkter" till Sales "produkter" för Field Service, inklusive lagerenhet 
+### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Den andra fasen av integrationen mellan Field Service och Supply Chain Management tillåter synkronisering med följande mallar:
+- Lagerställen (Supply Chain Management till Field Service) - Lagerställen från Supply Chain Management till Field Service [avancerad fråga] 
+- Produktlager (Supply Chain Management till Field Service) - Information om lagernivåer från Supply Chain Management till Field Service [avancerad fråga] 
+- Lagerjustering (Field Service till Supply Chain Management) - Lagerjusteringar från Field Service till Supply Chain Management [avancerad fråga] 
+- Lageröverföringar (Field Service till Supply Chain Management) - Lageröverföringar från Field Service till Supply Chain Management [avancerad fråga] 
+- Projekt (Supply Chain Management till Field Service) - Projektlista från Supply Chain Management till Field Service 
+- Arbetsorder med projekt (Field Service till Supply Chain Management) - arbetsorder i Field Service till försäljningsorder i Supply Chain Management, med stöd för projekt [avancerad fråga] 
+- Field Service-produkter med lagerenhet (Supply Chain Management till Sales) - Supply Chain Management "Säljbara frisläppta produkter" till Sales "produkter" för Field Service, inklusive lagerenhet 
 
 ## <a name="system-requirements"></a>Systemkrav
 
-### <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
+### <a name="system-requirements-for-supply-chain-management"></a>System krav för hantering av Supply Chain Management
 Field Service-integration stöder följande versioner:
 
 - Dynamics 365 for Finance and Operations version 8.1.2 (december 2018) släpptes i december 2018 och har programversionsnummer 8.1.195 med plattformsuppdatering 22 (7.0.5095). 
@@ -80,6 +80,6 @@ Field Service-integration stöder följande versioner:
 ### <a name="system-requirements-for-field-service"></a>Systemkrav för Field Service
 Om du vill använda integrationslösningen för Field Service måste du installera följande komponenter:
 
-- Field Service for Dynamics 365 (version 8.2.0.286) eller en senare version på Dynamics 365 9.1.x - utgiven i november 2018
+- Field Service (version 8.2.0.286) eller en senare version på Dynamics 365 9.1.x - utgiven i november 2018
 - Lösningen Potentiell kund till kontanter (P2C) för Dynamics 365, version 1.15.0.1 eller senare. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Lösningen "Field Service integrering, projekt och lager" för Dynamics 365, version 2.0.0.0 eller en senare version. Lösningen finns att hämta från [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).

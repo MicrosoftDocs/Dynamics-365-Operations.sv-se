@@ -1,6 +1,6 @@
 ---
-title: Funktioner och möjligheter i Microsoft Dynamics 365 for Talent - Attract
-description: Här beskrivs funktionerna som Microsoft Dynamics 365 for Talent - Attract tillhandahåller för att hantera processen med att anställa nya användare.
+title: Funktioner och möjligheter i Microsoft Dynamics 365 Talent - Attract
+description: Här beskrivs funktionerna som Microsoft Dynamics 365 Talent - Attract tillhandahåller för att hantera processen med att anställa nya användare.
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/30/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e22cddcd1845cc06f5948bcc062d044995c1cbd
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: dd16ad19fc6b64912dda77d1bc479ef642418594
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739620"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008534"
 ---
 # <a name="attract-features-and-capabilities"></a>Funktioner och möjligheter i Attract
 

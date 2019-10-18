@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561281"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249435"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobil arbetsyta för inköpsordergodkännande
 
@@ -35,13 +35,13 @@ Detta avsnitt innehåller information om den mobila arbetsytan **Godkännande av
 ## <a name="overview"></a>Översikt 
 Inköpsorder som kräver godkännande genomgår en arbetsflöde för godkännande. Arbetsflödet kan innehålla olika steg som kräver att en eller fler personer utför åtgärder. Exempelvis kanske en person behöva slutföra en aktivitet eller godkänna inköpsordern. 
 
-Med hjälp av den mobila arbetsytan **Godkännande av inköpsorder** kan du lätt visa och svara på inköpsorder från din mobila enhet. På den här arbetsytan kan du utföra samma arbetsflödesåtgärder som du kan utföra från webbklienten Microsoft Dynamics 365 for Finance and Operations.
+Med hjälp av den mobila arbetsytan **Godkännande av inköpsorder** kan du lätt visa och svara på inköpsorder från din mobila enhet. På den här arbetsytan kan du utföra samma arbetsflödesåtgärder som du kan utföra från webbklienten.
 
 ## <a name="prerequisites"></a>Förutsättningar
-Förutsättningarna varierar beroende på vilken version av Finance and Operations som har distribuerats inom organisationen.
+Förutsättningarna varierar beroende på vilken version av Supply Chain Management som har distribuerats inom organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations 
-Om Microsoft Dynamics 365 for Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Godkännande av inköpsorder**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Förutsättningar om du använder Supply Chain Management 
+Om Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Godkännande av inköpsorder**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdateringen 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
@@ -75,7 +75,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Hämta och installera mobilappen Microsoft Dynamics 365 for Unified Operations Mobile:
+Hämta och installera mobilappen Finance and Operations:
 
 - [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 - [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

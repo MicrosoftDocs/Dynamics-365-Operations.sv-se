@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00d7457b13e6633c9285a1fc43b8f6dd60dae9ae
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 555098a7d11cb0b4c0f90357ff260598e80108f5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836542"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017930"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Fastställa den optimala kombinationen av överlappande rabatter
 
@@ -32,7 +32,7 @@ ms.locfileid: "1836542"
 
 När rabatterna överlappar måste du fastställ vilken kombination av överlappande rabatter som ger det lägsta transaktionssumman eller den högsta rabattsumman. När rabattbeloppet varierar beroende på priset på de produkter som köps, så som den vanliga butiksrabatten "Köp 1, få 1 X procent rabatt" (BOGO), blir processen en fråga om kombinatorisk optimering.
 
-Den här artikeln avser Microsoft Dynamics AX 2012 R3 KB 3105973 (utgiven 2 november 2015) eller senare och till Microsoft Dynamics 365 for Retail. För att fastställa kombinationen av överlappande rabatter som ska tillämpas vid rätt tidpunkt har vi introducerat en metod för att använda överlappande rabatter. Den nya metoden kallas **marginalvärderankning**. Marginalvärderankning används när den tid som krävs för att utvärdera möjliga kombinationer av överlappande rabatter överskrider ett tröskelvärde som kan konfigureras på sidan **Butiksparametrar**. I metoden marginalvärderankning beräknas ett värde för varje överlappande rabatt genom att använda rabattvärdet på de delade produkterna. Överlappande rabatter tillämpas sedan från det högsta relativa värdet till det lägsta relativa värdet. Mer information om den nya metoden finns i avsnittet "Marginalvärde" nedan. Marginalvärderankning används inte när rabattbeloppen för en produkt inte påverkas av en annan produkt i transaktionen. Denna metod används exempelvis inte för två enkla rabatter, eller för en enkel rabatt och en enda produktkvantitetsrabatt.
+Den här artikeln avser Microsoft Dynamics AX 2012 R3 KB 3105973 (utgiven 2 november 2015) eller senare och till Dynamics 365 Retail. För att fastställa kombinationen av överlappande rabatter som ska tillämpas vid rätt tidpunkt har vi introducerat en metod för att använda överlappande rabatter. Den nya metoden kallas **marginalvärderankning**. Marginalvärderankning används när den tid som krävs för att utvärdera möjliga kombinationer av överlappande rabatter överskrider ett tröskelvärde som kan konfigureras på sidan **Butiksparametrar**. I metoden marginalvärderankning beräknas ett värde för varje överlappande rabatt genom att använda rabattvärdet på de delade produkterna. Överlappande rabatter tillämpas sedan från det högsta relativa värdet till det lägsta relativa värdet. Mer information om den nya metoden finns i avsnittet "Marginalvärde" nedan. Marginalvärderankning används inte när rabattbeloppen för en produkt inte påverkas av en annan produkt i transaktionen. Denna metod används exempelvis inte för två enkla rabatter, eller för en enkel rabatt och en enda produktkvantitetsrabatt.
 
 ## <a name="discount-examples"></a>Exempel på rabatter
 

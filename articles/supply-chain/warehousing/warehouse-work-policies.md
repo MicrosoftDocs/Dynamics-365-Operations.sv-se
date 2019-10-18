@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 7476cf797685feb4c50e3cefef4c53ca37b82dff
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865122"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251418"
 ---
 # <a name="warehouse-work-policies-overview"></a>Policyer för lagerarbete – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Policyer för lagerställearbete i Microsoft Dynamics 365 for Finance and Operations styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.
+Policyer för lagerställearbete styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.
 
 Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen. Du kan ställa in arbetspolicyn genom att använda en kombination av **arbetsordertyper**, en **lagerplats** samt en **produkt** Exempelvis rapporteras produkt L0101 som färdig till utleveransplats 001. Den färdiga varan förbrukas senare i en annan produktionsorder på utleveransplats 001. I det här fallet kan du ställa in en arbetspolicy för att förhindra arbete för inlagring av färdiga varor skapas när du rapporterar produkt L0101 som färdig till utleveransplats 001. Arbetspolicyn är en enskild enhet som kan beskrivas genom följande information:
 

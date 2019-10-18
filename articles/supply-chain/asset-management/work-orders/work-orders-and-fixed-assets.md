@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f03b7fa073c4e5338b7b5681ba7b8c9fe00a657b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875897"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250839"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbetsorder och anläggningstillgångar
 
@@ -33,7 +33,7 @@ ms.locfileid: "1875897"
 [!include [banner](../../includes/preview-banner.md)]
 
 
-I Tillgångshantering kan tillgångar relateras till anläggningstillgångar och du kan skapa arbetsorder för dessa tillgångar. Om du använder den här funktionen kan du få en fullständig översikt över anläggningstillgångar, relaterade investeringsprojekt och de kostnader som registrerats för investeringsprojekt i modulen **Projekthantering och redovisning** och modulen **Anläggningstillgångar** i Dynamics 365 for Finance and Operations.
+I Tillgångshantering kan tillgångar relateras till anläggningstillgångar och du kan skapa arbetsorder för dessa tillgångar. Om du använder den här funktionen kan du få en fullständig översikt över anläggningstillgångar, relaterade investeringsprojekt och de kostnader som registrerats för investeringsprojekt i modulen **Projekthantering och redovisning** och modulen **Anläggningstillgångar**.
 
 >[!NOTE]
 >Fältet **Anläggningstillgångsnummer** fylls bara i på arbetsorderns jobbprojekt om typen "investering" väljs som projekttyp för arbetsorders jobbprojekt.

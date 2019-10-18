@@ -3,7 +3,7 @@ title: Underhåll planerade order
 description: Detta avsnitt innehåller information om hur du hanterar planerade order. Det beskriver hur du kan uppdatera statusen för planerade order, bekräfta dem och filtrera för planerade order som har samma status som en vald planerad order.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 10/02/2018
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf578d98abc4825c5607ec031da6ab6737c3183a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
+ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560382"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "1993450"
 ---
 # <a name="maintain-planned-orders"></a>Underhåll planerade order
 
@@ -32,19 +32,32 @@ ms.locfileid: "1560382"
 
 Detta avsnitt innehåller information om hur du hanterar planerade order. Det beskriver hur du kan uppdatera statusen för planerade order, bekräfta dem och filtrera för planerade order som har samma status som en vald planerad order.
 
-Du kan hantera planerade order från arbetsytan **Huvudplanering**, listan **Planerad order** eller listorna **Planerade produktionsorder**, **Planerade inköpsorder**och **Planerad överföring**. Du kan använda fältet **Status** för att följa dina framsteg. Följande värden används:
+Du kan hantera planerade order från arbetsytan **Huvudplanering**, listan **Planerad order** eller listorna **Planerade produktionsorder**, **Planerade inköpsorder**och **Planerad överföring**. 
+
+## <a name="planned-order-status"></a>Status på planerad order
+Du kan använda fältet **Status** för att följa dina framsteg. Följande värden används:
 
 -   När huvudplaneringen genererar planerade order, har planerade order statusen **Obearbetad**.
 -   Om du väljer att inte bekräfta en planerad order kan du ge den statusen **Slutförd**.
--   När du väljer att inte bekräfta en planerad order kan du ge den statusen **Godkänd**. Denna status betyder att du godkänner att den planerade ordern kan bekräftas, men att den ännu inte är bekräftad.
+-   Om du vill bekräfta en planerad order kan du ändra statusen till **godkänd**. Planerade order med status **godkänd** respekteras i huvudplaneringen, så att de inte ändras eller tas bort. 
 
-**Obs!** En godkänd planerad order överförs i sitt aktuella tillstånd till nästa huvudplaneringsberäkning. Bekräfta planerade order genom att klicka på **Bekräfta**. Följande planerade order kan bekräftas:
+## <a name="firming-planned-orders"></a>Bekräfta planerade order 
+Genom att bekräfta planerade order skapas verkliga order. Dessa är också kända som *frisläppta* eller *öppna order*. När en planerad order är bekräftad flyttas den till den relevanta modulens orderavsnitt.
 
--   Planerade order som har valts .
--   Flera planerade order.
--   Planerade order som har genererats vid en nedbrytning från sidan **Nedbrytning**. Klicka på **Planerade order** och välj den planerade ordern och klicka sedan på **Bekräfta**.
+Du kan välja två bekräftelsealternativ på sidan **planerade order**:
 
-När en planerad order är bekräftad flyttas den till den relevanta modulens orderavsnitt. 
+-   **Bekräfta** – detta kommer att bekräfta en eller flera valda planerade order.
+-   **Bekräfta alla** – bekräfta alla planerade order i filtret. Med **bekräfta allt** behöver du inte välja den planerade ordern, alla bekräftas inom filtret. Det här alternativet kan vara användbart om du bekräftar ett stort antal planerade order.
+
+> [!NOTE]
+> Du kan spåra en planerad order som bekräftats genom att **Bekräftelsehistorik** under **Planerade orderformulär > Visa > Bekräftelsehistorik**.
+
+## <a name="parallelize-firming"></a>Parallell bekräftelse
+Om du planerar att bekräfta många order samtidigt kan körningstiden och prestandan öka under tiden för parallellt av körningen. Det här alternativet är tillgängligt när du bekräftar flera planerade order med antingen **bekräfta** eller **bekräfta alla**. Följande parametrar är tillgängliga:
+
+-   **Parallelliseringsbekräftelse** – om **ja** kommer bekräftelseprocessen att vara parallell med antalet trådar som definierats i **antal trådar**.
+-   **Antal trådar** – styr antalet trådar som används för att parallellisera bekräftelseprocessen. Parametern visas endast om **Parallelliseringsbekräftelse** anges till **Ja**.
+
 
 <a name="additional-resources"></a>Ytterligare resurser
 --------

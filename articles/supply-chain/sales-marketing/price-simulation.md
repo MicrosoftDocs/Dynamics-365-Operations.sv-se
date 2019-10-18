@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554654"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251361"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -51,7 +51,7 @@ Var försiktig när du kör prissimuleringar på offerter som har rabatter så a
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typer av rabatter i handelsavtal
 
-Handelsavtalen i Microsoft Dynamics 365 for Finance and Operations kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
+Handelsavtalen i Supply Chain Management kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
 
 -   **Försäljningspris** – Olika försäljningspriser kan anges för artiklar. När offertrader skapas söker programmet efter rätt försäljningspris för en artikel och överför det till offertraderna. Därför påverkar ett handelsavtal som har den här typen av rabatt inte prissimuleringen. Försäljningspriset som används på offertraden återspeglar handelsavtalet.
 -   **Radrabatt** – Särskilda rabatter anges för artiklar, beroende på den beställda kvantiteten. Radbelopp reduceras normalt med radrabatten innan en prissimulering körs. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.

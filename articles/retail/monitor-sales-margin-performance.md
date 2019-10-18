@@ -1,6 +1,6 @@
 ---
 title: Övervaka resultat för försäljning och marginaler
-description: Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.
+description: Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46ecefdd15a3a208588aaf630571764047464cdb
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555660"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018074"
 ---
 # <a name="monitor-sales-and-margin-performance"></a>Övervaka försäljningsresultat och marginaler
 
 [!include [banner](includes/banner.md)]
 
-Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.
+Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Dynamics 365 Retail.
 
-Som en del av Dynamics 365 for Retail kan användare övervaka prestanda för försäljning och marginaler i realtid i andra nivåer för organisationshierarkin för följande dimensioner:
+Som en del av Retail kan användare övervaka prestanda för försäljning och marginaler i realtid i andra nivåer för organisationshierarkin för följande dimensioner:
 
 - Produkter
 - Kategorier

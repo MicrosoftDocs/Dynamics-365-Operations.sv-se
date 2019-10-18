@@ -1,6 +1,6 @@
 ---
-title: Nyheter och ändringar i Dynamics 365 for Talent (27 februari 2019)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+title: Nyheter och ändringar i Dynamics 365 Talent (27 februari 2019)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519108"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024009"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (27 februari 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (27 februari 2019)
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ändringar i Attract
 
@@ -77,9 +77,9 @@ Den här versionen innehåller andra mindre felkorrigeringar.
 
 I många organisationer kan kompensationer och förmåner chefer bara har tillgång till specifika kompensationsposter. Posterna kan vara för chefer eller nationella medarbetare. Den här ändringen låter personalen (HR) hantera och underhålla kompensationsplaner för olika medarbetare i organisationen. Säkerhetsroller som kan tilldelas fasta och variabla planer bestämmer åtkomsten till dessa planer och medarbetardata som är relaterade till dem (till exempel löneinformation och bonusposter). Endast roller med angiven åtkomst ska kunna bearbeta kompensation för dessa anställda.
 
-### <a name="platform-update-24"></a>Plattform update 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Plattformsuppdatering 24 för Finance and Operations
 
-Mer information om Microsoft Dynamics 365 for Finance and Operations plattformsuppdatering 24 (mars 2019) finns i [Förhandsgranskningsfunktioner i Finance and Operations plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Mer information om plattformsuppdatering 24 för Microsoft Dynamics 365 Finance and Operations plattformsuppdatering 24 (mars 2019) finns i [Förhandsgranskningsfunktioner i Finance and Operations plattformsuppdatering 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Gör medarbetarens fasta kompensation tillgänglig för framtida befattningstilldelningar
 
@@ -87,10 +87,10 @@ Detta gäller för medarbetare som ansluter sig till en organisation med startda
 
 ## <a name="known-issues"></a>Kända problem
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Ändringar i Core HR-integrationsmall (Talent Common Data Service till Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Ändringar i Core HR-integrationsmall (Talent Common Data Service till Finance)
 Mallen för Core HR har uppdaterats till en ”avancerad frågemall”. Därför blir avancerad fråga som standard tillgänglig för projekt som har skapats med hjälp av den här mallen. Dessutom visas alla standardmappningsfunktioner bara i redigeraren för avancerad fråga. (Standardmappningsfunktioner visas som ”FN” i mappningarna.)
 
-Mer information om mappningsfel finns i [Nyheter eller ändringar i Dynamics 365 for Talent Core HR (14 december 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Mer information om mappningsfel finns i [Nyheter eller ändringar i Dynamics 365 Talent: Core HR (14 december 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 Om du vill använda den nya mallen skapar du ett nytt projekt och väljer den nya Talent integrationsmallen.
 

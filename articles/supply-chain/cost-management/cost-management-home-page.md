@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd94ae4c5ea855139fd1c41060de7db455ffab06
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557665"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249642"
 ---
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
@@ -69,5 +69,5 @@ Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](
 Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm). En del av inläggen skrevs för den föregående versionen av kostnadshantering, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
 #### <a name="task-guides"></a>Uppgiftsguider
-Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
+Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
 

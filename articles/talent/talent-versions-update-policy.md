@@ -1,6 +1,6 @@
 ---
 title: Systemkrav och uppdateringspolicy för Talent
-description: Det här avsnittet beskrivs kraven för Dynamics 365 for Talent. Det beskriver även uppdateringspolicyn.
+description: Det här avsnittet beskrivs kraven för Dynamics 365 Talent. Det beskriver även uppdateringspolicyn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/02/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6c881bf25e7145228ccf7ef73a7ef3637c115a49
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741785"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024170"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systemkrav och uppdateringspolicy för Talent
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs kraven för Microsoft Dynamics 365 for Talent, inklusive Attract, Onboard och Core HR. Det visar också de länder och regioner där Talent finns tillgänglig, plus information om språk och lokalisering av Talent data. Dessutom ger det här här avsnittet uppdateringsprincipen för Talent.
+I det här avsnittet beskrivs kraven för Microsoft Dynamics 365 Talent, inklusive Attract, Onboard och Core HR. Det visar också de länder och regioner där Talent finns tillgänglig, plus information om språk och lokalisering av Talent data. Dessutom ger det här här avsnittet uppdateringsprincipen för Talent.
 
 ## <a name="supported-web-browsers"></a>Webbläsare som stöds
 
-Webbprogrammet Microsoft Dynamics 365 for Talent går att köra i följande webbläsare som körs på de angivna operativsystemen: 
+Microsoft Dynamics 365 Talent går att köra i följande webbläsare som körs på de angivna operativsystemen: 
 
 *   Microsoft Edge (den senaste tillgängliga versionen) på Windows 10
 *   Internet Explorer 11 på Windows 10, Windows 8.1 eller Windows 7
@@ -46,11 +46,11 @@ Gå till programtillverkarens startsida för att hitta den senaste versionen fö
 > * Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edgeoch Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
 > * Om du vill förhandsgranska PDF-filer, bör du använda moderna webbläsare som t.ex. Microsoft Edge (senaste tillgängliga versionen) på Windows 10 eller Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC.
 >   Nätverkskrav
-> * Dynamics 365 for Talent har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre. Denna svarstid är svarstiden från en webbläsarklient till Microsoft Azure datacenter som är värd för Dynamics 365 for Talent. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
-> * Bandbreddskrav för Dynamics 365 for Talent beror på ditt scenario. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps).
+> * Dynamics 365 Talent har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre. Denna svarstid är svarstiden från en webbläsarklient till Microsoft Azure datacenter som är värd för Talent. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
+> * Bandbreddskrav för Talent beror på ditt scenario. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps).
 > 
 > [!WARNING]
-> Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Använd en testversion av Dynamics 365 for Talent för kunder som är bekymrade över bandbreddskraven.
+> Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Använd en testversion av Talent för kunder som är bekymrade över bandbreddskraven.
 
 ## <a name="supported-microsoft-office-applications"></a>Microsoft Office-program som stöds
 
@@ -68,6 +68,6 @@ Om du är en utvecklare som vill skapa lands- eller regionsspecifika anpassninga
 
 ## <a name="update-policy"></a>Uppdatera policy
 
-Microsoft Dynamics 365 for Talent hanteras som ett molnbaserad erbjudande. Uppdateringar för Dynamics 365 for Talent är kontinuerlig och tillämpas automatiskt av Microsoft.
+Talent hanteras som ett molnbaserad erbjudande. Talent-uppdateringar är kontinuerliga och tillämpas automatiskt av Microsoft.
 
-Uppdateringar släpps regelbundet, uppdateringar sker för alla nätverk. Dynamics 365 for Talent stöds enligt [Microsoft Support Lifecycle policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som ger konsekventa och förutsägbara riktlinjer för tillgängligheten av produktsupport.
+Uppdateringar släpps regelbundet, uppdateringar sker för alla nätverk. Talent stöds enligt [Microsoft Support Lifecycle-policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som ger konsekventa och förutsägbara riktlinjer för tillgängligheten av produktsupport.

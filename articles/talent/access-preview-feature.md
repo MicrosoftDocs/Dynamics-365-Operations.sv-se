@@ -1,6 +1,6 @@
 ---
-title: Få åtkomst till förhandsfunktioner i Microsoft Dynamics 365 for Talent
-description: Det här avsnittet beskriver hur en administratör kan aktivera funktionen förhandsgranska i Microsoft Dynamics 365 for Talent och visar funktionerna som är aktiverade för förhandsgranskning.
+title: Få åtkomst till förhandsfunktioner i Microsoft Dynamics 365 Talent
+description: Det här avsnittet beskriver hur en administratör kan aktivera funktionen förhandsgranska i Microsoft Dynamics 365 Talent och visar funktionerna som är aktiverade för förhandsgranskning.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739597"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008712"
 ---
 # <a name="manage-preview-features"></a>Hantera förhandsgranskningsfunktion
 
 [!include[banner](../includes/banner.md)]
 
-Som en del av vår kontinuerliga distribution av HR-hanteringsfunktioner (HCM) för Microsoft Dynamics 365 for Talent, vill vi att kunder får nya funktioner så snart som möjligt. Administratörer kan se och använda funktioner för förhandsgranskning i datormiljön. Dessa funktioner kan snart allmänt tillgänglig och har genomgått omfattande testning. Vi söker bara en slutlig runda av feedback från kunder och validering innan vi gör dem allmänt tillgångliga.
+Som en del av vår kontinuerliga distribution av HR-hanteringsfunktioner (HCM) för Microsoft Dynamics 365 Talent, vill vi att kunder får nya funktioner så snart som möjligt. Administratörer kan se och använda funktioner för förhandsgranskning i datormiljön. Dessa funktioner kan snart allmänt tillgänglig och har genomgått omfattande testning. Vi söker bara en slutlig runda av feedback från kunder och validering innan vi gör dem allmänt tillgångliga.
 
-Det här avsnittet beskriver hur du kan aktivera funktionen Förhandsgranska och visar funktionerna som är aktiverade för förhandsgranskning. Den här listan uppdateras funktioner släpps till normala tillgänglighet och nya funktioner som ges ut om du vill förhandsgranska. Ingen anmälan görs när nya funktioner publiceras för att förhandsgranska. Användare börjar bara se funktionerna. Mer information om nya funktioner i Talent, se [Nyheter och ändringar in Dynamics 365 for Talent](./whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](https://docs.microsoft.com/business-applications-release-notes).
+Det här avsnittet beskriver hur du kan aktivera funktionen Förhandsgranska och visar funktionerna som är aktiverade för förhandsgranskning. Den här listan uppdateras funktioner släpps till normala tillgänglighet och nya funktioner som ges ut om du vill förhandsgranska. Ingen anmälan görs när nya funktioner publiceras för att förhandsgranska. Användare börjar bara se funktionerna. Mer information om nya funktioner i Talent, se [Nyheter och ändringar in Dynamics 365 Talent](./whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Aktivera eller inaktivera funktioner för förhandsgranskning
 
@@ -40,9 +40,9 @@ För att du ska kunna använda funktionerna för förhandsgranskning måste du f
 > [!IMPORTANT]
 > När du aktiverar inställningen **förhandsgranskningsfunktioner** kan du aktivera förhandsgranskning för alla användare i organisationen i denna miljö. När du inaktiverar inställningen, inaktiveras förhandsgranskningsfunktioner och gör dem otillgängliga för användarna. Förhandsgranskningsfunktioner har begränsad funktionalitet i Talent. De använder färre sekretess- och säkerhetsfunktioner och de ingår inte i Talent servicenivåavtal (SLA). Du bör inte använda funktioner för förhandsgranskning för att behandla personuppgifter (d.v.s. all information som kan identifiera dig) eller bearbeta andra data som omfattas av lagar och andra efterföljandekrav.
 
-### <a name="attract"></a>Attrahera
+### <a name="attract"></a>Attract
 
-1. Logga in på Microsoft Dynamics 365 for Talent: Attract.
+1. Logga in på Microsoft Dynamics 365 Talent: Attract.
 2. I menyn **inställningar** (växel-symbol) i det övre högra hörnet väljer du **administrationscenter**.
 3. På fliken **Funktionshantering** väljer du alternativet bredvid **Förhandsgranskningsfunktioner** så att det blir blått och visar **På**.
 
@@ -69,11 +69,11 @@ För att du ska kunna använda funktionerna för förhandsgranskning måste du f
 
 ### <a name="onboard"></a>Integrera
 
-Inga förhandsfunktioner är för närvarande tillgängliga för Microsoft Dynamics 365 for Talent: Onboard.
+Inga förhandsfunktioner är för närvarande tillgängliga för Microsoft Dynamics 365 Talent: Onboard.
 
 ## <a name="features-that-are-currently-in-preview"></a>Funktioner som är i förhandsgranskning nu.
 
-### <a name="attract"></a>Attrahera
+### <a name="attract"></a>Attract
 
 - [Kandidatrekommendation](./intelligent-recommendations.md#candidate-recommendations) – om det finns fler än tio kandidater kandidater som har meritförteckningar eller fullständiga profiler kommer de kandidater som bäst uppfyller jobbkraven att visas i avsnittet **Sökande att beakta** på det jobbets sida.
 - [Jobbrekommendation](./intelligent-recommendations.md#job-recommendations) – om fler än tio jobb publiceras på din karriärwebbplats ger Attract jobbrekommendationer till potentiella kunder.

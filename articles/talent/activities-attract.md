@@ -1,6 +1,6 @@
 ---
-title: Aktiviteter i processerna i Microsoft Dynamics 365 for Talent - Attract
-description: Det här avsnittet innehåller information om olika typer av aktiviteter som kan användas i anställningsprocesserna i Microsoft Dynamics 365 for Talent - Attract.
+title: Aktiviteter i processerna i Microsoft Dynamics 365 Talent - Attract
+description: Det här avsnittet innehåller information om olika typer av aktiviteter som kan användas i anställningsprocesserna i Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 2e40250bb801f6222d16400b2698e5b0df47a404
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739734"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008718"
 ---
 # <a name="activities-in-hiring-processes"></a>Aktiviteter i anställningsprocesser
 
 [!include[banner](../includes/banner.md)]
 
-Aktiviteter kan läggas till som en del av anställningsprocessen i Microsoft Dynamics 365 for Talent: Attract. Aktiviteter kan läggas till en processmall eller kan läggas till direkt till anställningsprocessen i jobbet. När ett jobb har definierats måste en processmall markeras och de aktiviteter som ingår i mallen tillämpas på jobbet. Standardmallen används om en mall inte markerats. Anställningsprocessen kan också ändras för jobbet efter att mallen tillämpas.
+Aktiviteter kan läggas till som en del av anställningsprocessen i Microsoft Dynamics 365 Talent: Attract. Aktiviteter kan läggas till en processmall eller kan läggas till direkt till anställningsprocessen i jobbet. När ett jobb har definierats måste en processmall markeras och de aktiviteter som ingår i mallen tillämpas på jobbet. Standardmallen används om en mall inte markerats. Anställningsprocessen kan också ändras för jobbet efter att mallen tillämpas.
 
 > [!NOTE] 
 > Processmallar finns i tillägget omfattande anställning. För mer information, se [Omfattande tilläggsfunktioner för rekrytering](./attract-comprehensive-hiring.md).
@@ -53,7 +53,7 @@ Den här aktiviteten har tre komponenter: kandidatens begäran om tillgänglighe
 
 PowerApps-aktiviteten låter dig bädda in en Microsoft PowerApps-app i din anställningsprocess. Appen kan krävas för alla sökande, endast interna sökande, endast externa sökande eller ingen sökande. Om appen har markerats som obligatorisk måste den slutföras innan fasen kan gå vidare. För att anses vara klar måste fältet **JobApplicationStatus** ställas in på **Slutförd**. Det här fältet finns i entiteten JobApplicationActivity så att PowerApps-appar måste uppdatera fältet innan fasen kan avancera. Om appen inte är markerad enligt vad som krävs, är aktiviteten ett valfritt steg och fasen kan gå vidare även om appen inte är slutförd.
 
-Om du vill spara PowerApps-aktiviteten till anställningsprocessen måste du ange ett PowerApps-ID. PowerApps-ID finns i [PowerApps](https://web.powerapps.com), välj **appar** och välj sedan **information**.
+Om du vill spara PowerApps-aktiviteten till anställningsprocessen måste du ange ett PowerApps-ID. För att hitta PowerApps-ID, gå till [PowerApps](https://web.powerapps.com), välj **Appar** och välj sedan **Information**.
 
 Som standard är PowerApps-aktiviteten tillgänglig för anställande chef, rekryteraren och deras ombud. Om du väljer alternativet **Tillåt lägga till deltagare för den här aktiviteten** kan ytterligare deltagare från anställningsteamet läggas till en ansökning som använder PowerApps-aktiviteten. Till exempel har en organisation skapat en PowerApps-app som är ett bibliotek med intervjufrågor för tekniska roller. Organisationen anställer nu nya programutvecklare och har lagt till PowerApps-aktiviteten till anställningsprocessen för rollen Programutvecklare. Om alternativet **Tillåt lägga till deltagare för den här aktiviteten** är valt, kan en rekryterarens eller anställande chef som tittar på en ansökande för rollen som programutvecklare lägga till intervjuare till PowerApps-aktiviteten. Dessa personer kan sedan visa appen med intervjufrågorna.
 

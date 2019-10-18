@@ -1,6 +1,6 @@
 ---
 title: Förbättringar av kassahantering
-description: I detta avsnitt beskrivs förbättringar av kassahantering i kassa för Dynamics 365 for Retail.
+description: I detta avsnitt beskrivs förbättringar av kassahantering i kassa för Dynamics 365 Retail.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019541"
 ---
 # <a name="cash-management-improvements"></a>Förbättringar av kassahantering
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630063"
 
 Kassahantering är en nyckelfunktion för återförsäljare i fysiska butiker. Återförsäljare vill att deras butiker ska ha system som kan hjälpa dem att ge dig en fullständig spårning av kontanter och dess rörelse i de olika kassorna och kassörerna i en butik. De måste kunna stämma av mot eventuella skillnader och fastställa ansvarsområden.
 
-Microsoft Dynamics 365 for Retail har kontanthanteringskapacitet i sitt kassaprogram (POS). I tidigare versioner av Retail än version 10.0.3 är kassahanteringsfunktionen emellertid inte tillräckligt stabil för att ge en fullständig spårning av kassaflödesrörelser i butiker. Även om återförsäljare kan stämma av kassan för en butik, kan de inte exakt fastställa ansvarsskyldigheten i händelse av en kassaavvikelse.
 
-I Microsoft Dynamics 365 for Retail version 10.0.3 och senare får detaljhandlare spårning för kassahantering. Som en del av den här spårbarheten kan detaljhandlare definiera kassaskåp, göra tvåsidiga kassatransaktioner och stämma av kassahanteringstransaktioner.
+Microsoft Dynamics 365 Retail har kontanthanteringskapacitet i sitt kassaprogram (POS). I tidigare versioner av Retail än version 10.0.3 är kassahanteringsfunktionen emellertid inte tillräckligt stabil för att ge en fullständig spårning av kassaflödesrörelser i butiker. Även om återförsäljare kan stämma av kassan för en butik, kan de inte exakt fastställa ansvarsskyldigheten i händelse av en kassaavvikelse.
+
+
+I Retail version 10.0.3 och senare får detaljhandlare spårning för kassahantering. Som en del av den här spårbarheten kan detaljhandlare definiera kassaskåp, göra tvåsidiga kassatransaktioner och stämma av kassahanteringstransaktioner.
 
 ## <a name="set-up-traceability-and-define-safes"></a>Ställa in spårbarhet och definiera kassaskåp
 

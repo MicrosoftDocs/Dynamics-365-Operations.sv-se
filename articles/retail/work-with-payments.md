@@ -1,6 +1,6 @@
 ---
 title: Betalningsmetoder i kundcenter
-description: Det här avsnittet beskriver olika betalningsmetoder som du kan använda i en kundtjänst i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet beskriver olika betalningsmetoder som du kan använda i en kundtjänst i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 551a3cc9c0def1c67ab930dbff7cd1c0d296bd21
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571529"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018238"
 ---
 # <a name="payment-methods-in-call-centers"></a>Betalningsmetoder i kundcenter
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for Retail innehåller konfigurationen av kundtjänst en inställning som heter **Aktivera slutförande av order**. Den här inställningen hjälper till att garantera att alla order som användare av kanalen skapar endast släpps till orderbearbetning om de har en förauktoriserad betalning inom godkända toleranser. Om inställningen **Aktivera slutförande av order** är aktiv, kan kundtjänstanvändarna ange betalningar mot försäljningsorder för kunder genom att använda kundtjänsts funktioner för betalningsprocess. Om inställningen är inaktiverad kan kundtjänstanvändare inte använda kundtjänsts funktioner för betalningsprocessen, men de kan fortfarande använda förskottsbetalningar på försäljningsorder med hjälp av standardfunktionen för Kundreskontra.
+I Dynamics 365 Retail innehåller konfigurationen av kundtjänst en inställning som heter **Aktivera slutförande av order**. Den här inställningen hjälper till att garantera att alla order som användare av kanalen skapar endast släpps till orderbearbetning om de har en förauktoriserad betalning inom godkända toleranser. Om inställningen **Aktivera slutförande av order** är aktiv, kan kundtjänstanvändarna ange betalningar mot försäljningsorder för kunder genom att använda kundtjänsts funktioner för betalningsprocess. Om inställningen är inaktiverad kan kundtjänstanvändare inte använda kundtjänsts funktioner för betalningsprocessen, men de kan fortfarande använda förskottsbetalningar på försäljningsorder med hjälp av standardfunktionen för Kundreskontra.
 
 Som en del av kanalkonfigurationen kan ett företag definiera de betalningsmetoder som ska tillåtas för en kundtjänstkanal. Kundtjänstkanalen använder samma betalningsmetoder som har definierats för butikskanalerna.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865290"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248853"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Anbudsförfrågningar (RFQ) – översikt
 
@@ -48,16 +48,13 @@ Du kan skapa ett anbudsförfrågansärende från planerade order, från en inkö
 
 När du förbereder anbudsförfrågansärende och lägger till leverantörer väljer du **Sskicka** (**Sskicka och publicera** för offentliga sektorn) på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
 
-Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Microsoft Dynamics 365 for Finance and Operations. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
+Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om systemet är inställt för leverantörssamarbete kan leverantörer ange bud direkt i Supply Chain Management. För mer information, se [Leverantörssamarbeten med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) och [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
 Om du måste ändra en anbudsförfrågan när du har skickat den, kan du skicka anbudsförfrågan igen till leverantörer när du är klar med ändringen av två åtgärder: skapa och färdigställ.+
 
 När du tar emot bud via e-post kan du hantera desssa bud från sidan **Anbudsförfrågningar**.
 
 Om en andra iteration av ett svar från en leverantör krävs, välj **Retur** på sidan **Anbudsförfrågan**. Returåtgärden skapar en ny journal och en rapport som ska skrivas ut, arkiveras och skickas enligt dina inställningar för utskrift.
-
-> [!NOTE]
-> Namn på sidan **Anbudsförfrågan** har ändrats. I tidigare versioner av Dynamics 365 for Finance and Operations, kallas den här sidan **Begär svar på anbudsförfrågan**.
 
 Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer anbudsförfrågan att ha en poängpanel där du kan ange poängen. Det totala resultatet visas på anbudsförfrågan när du jämför svar på sidan **Jämför svar**. På sidan **Jämför svar** kan du jämföra andra svarsinformation som t.ex. radpris, leveransdatum och totalpris.
 

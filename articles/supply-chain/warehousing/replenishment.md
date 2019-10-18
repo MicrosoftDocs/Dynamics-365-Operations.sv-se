@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f740ab481b8663ecc29169eee1ead5ff23bb3f5
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866147"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251487"
 ---
 # <a name="replenishment-overview"></a>Lagerpåfyllnad – översikt
 
@@ -55,7 +55,7 @@ Lagerpåfyllnadsbegäran stöds för försäljningsorder, överföringsorder, pr
 ## <a name="minmax-replenishment"></a>Minsta/största lagerpåfyllnad
 I Minsta/största lagerpåfyllnad fylls lagret på så att behållningen ligger inom de gränser för minsta och största lager som har markerats. Denna process sker som regel en gång varje dag i syfte att säkerställa att samtliga plockplatser fylls maximalt innan plocket inleds. 
 
-Minimi- och maximinivåerna ställs in i en lagerpåfyllnadsmall. Många av de andra inställningarna i mallen liknar inställningarna i mallarna som används i Lagerpåfyllnad baserad på efterfrågan. Mallen ska innehålla en rad för varje artikel och plats. När du kör lagerpåfyllnad med hjälp av batchjobbet utvärderar Microsoft Dynamics 365 for Finance and Operations om påfyllnad krävs, i den sekvens raderna är ordnad i. 
+Minimi- och maximinivåerna ställs in i en lagerpåfyllnadsmall. Många av de andra inställningarna i mallen liknar inställningarna i mallarna som används i Lagerpåfyllnad baserad på efterfrågan. Mallen ska innehålla en rad för varje artikel och plats. När du kör lagerpåfyllnad med hjälp av batchjobbet utvärderar systemet om påfyllnad krävs, i den sekvens raderna är ordnad i. 
 
 Observera att strategin Minsta/största lagerpåfyllnad inte kan fylla på en tom plats om inte platsen är markerad som fast lagerplats för artikeln. Om platsen som måste fyllas på inte är fast, kan systemet inte avgöra vilken vara som ska fyllas på. Därför krävs åtminstone en viss lagerbehållning innan lagerpåfyllnad utförs.
 

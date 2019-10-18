@@ -1,6 +1,6 @@
 ---
-title: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations - Lagerhållning
-description: Det här avsnittet beskriver hur du ställer in Dynamics 365 for Finance and Operations – Lagerhållning för att skanna streckkoder med en kamera på en mobil enhet.
+title: Skanna streckkoder med hjälp av en kamera i Dynamics 365 Supply Chain Management - Lagerhållningsappen
+description: Det här avsnittet beskriver hur du ställer in Dynamics 365 Supply Chain Management – Lagerhållningsappen för att skanna streckkoder med en kamera på en mobil enhet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,26 +17,26 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742944"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251481"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations - Lagerhållning
+# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Skanna streckkoder med hjälp av en kamera i Dynamics 365 Supply Chain Management - Lagerhållningsappen
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du ställer in Dynamics 365 for Finance and Operations – Lagerhållning för att skanna streckkoder med en kamera på en mobil enhet. 
+Det här avsnittet beskriver hur du ställer in Dynamics 365 Supply Chain Management – Lagerhållningsappen för att skanna streckkoder med en kamera på en mobil enhet. 
 
-## <a name="prerequisites"></a>Krav
-Om du vill använda den här funktionen måste du ha version 1.2.0.0 av Warehousing installerat och enheten måste ha en kamera. När du öppnar programmet, efter att ha uppdaterat, uppmanas du att tillåta appen Dynamics 365 for Finance and Operations – Lagerhållning för att använda kameran. Om enheten inte har någon kamera visas inte frågan och du kan inte använda en kamera som skanner. 
+## <a name="prerequisites"></a>Förutsättningar
+Om du vill använda den här funktionen måste du ha version 1.2.0.0 av Lagerhållningsappen installerat och enheten måste ha en kamera. När du öppnar programmet, efter att ha uppdaterat, uppmanas du att tillåta appen att använda kameran. Om enheten inte har någon kamera visas inte frågan och du kan inte använda en kamera som skanner. 
 
 ## <a name="setup"></a>Inställningar
 Du kan välja om kameran ska användas för skanning av streckkoder i visningsinställningar i programmet Warehousing. Om du aktiverar **använda kameran som skanner** kan du använda kameran på alla inmatningsfält med inmatningsläget **skanning**. 
 
-För att bestämma att ett indatafält ska vara skanningsbart, på sidan **Namnordning för lagerställeapp** i Dynamics 365 for Finance and Operations anger du **önskat inmatningsläge** till **Skanning**. När det här alternativet väljs kan en kamera användas för skanning i appen Warehousing. Information om hur du konfigurerar app fältnamn i Warehousing finns i [konfigurera app fältnamn i Warehousing app](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+För att bestämma att ett indatafält ska vara skanningsbart, på sidan **Namnordning för lagerställeapp** anger du **önskat inmatningsläge** till **Skanning**. När det här alternativet väljs kan en kamera användas för skanning i appen Warehousing. Information om hur du konfigurerar app fältnamn i Warehousing finns i [konfigurera app fältnamn i Warehousing app](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Streckkodsformat som stöds
 De vanligaste formaten för streckkod stöds, inklusive kod 128, kod 39, kod 93, EAN-8, EAN-13, UPC-E, UPC-A och QR-koder. 

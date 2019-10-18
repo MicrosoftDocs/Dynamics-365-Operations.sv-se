@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 5c54e5fccd7ddc5f8f024e692bb46f4140134578
-ms.sourcegitcommit: 282f05635a7b933fe9bdda7a8187f322ed5ede17
+ms.openlocfilehash: a9a26450be97f655df8bc5983e4718341d40a2d6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755407"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009910"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definiera och hantera ett förmånsprogram
 
@@ -51,7 +51,7 @@ För varje typ av förmån som till exempel syn- eller tandvård kan en organisa
 [![förmånsbild](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Berättigande
-Många faktorer bestämmer berättigande för arbetaren för olika typer av förmåner som en arbetsgivare erbjuder. När du skapar en förmån i Microsoft Talent kan du ange den typ av berättigande som gäller för den förmånen. 
+Många faktorer bestämmer berättigande för arbetaren för olika typer av förmåner som en arbetsgivare erbjuder. När du skapar en förmån i Dynamics 365 Talent kan du ange den typ av berättigande som gäller för den förmånen. 
 
 Du kan göra en förmån tillgänglig för alla arbetare. Vissa företag erbjuder till exempel parkeringstillstånd för alla medarbetare som en löneförmån. När du skapar den här förmånen, förmån du ställer in berättigande till **Alla arbetare är berättigade**. 
 

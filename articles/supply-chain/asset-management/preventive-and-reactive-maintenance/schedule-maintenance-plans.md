@@ -3,7 +3,7 @@ title: Schemalägg underhållsplaner
 description: I det här avsnittet beskrivs schemaläggning av underhållsplaner i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875899"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922055"
 ---
 # <a name="schedule-maintenance-plans"></a>Schemalägg underhållsplaner
 
@@ -49,11 +49,11 @@ Vid planering av förebyggande underhåll skapas kalenderposter på tillgångar 
 
 - När det gäller tidsplanering av underhållsplaner på funktionsplatser: Om du uppdaterar inställningarna för tillgångstyper, tillverkare och modeller på underhållsplaner på snabbfliken **Alla funktionsplatser** > **Underhållsplaner** när du har planerat underhållsplaner, kommer befintliga underhållsschemaposter som är relaterade till funktionsplatsen att raderas automatiskt. Om du vill skapa nya kalenderposter, som motsvarar den uppdaterade underhållsplaninställningen på den funktionsplatsen, måste du köra ett nytt schema för underhållsplanen för den funktionsplatsen. Läs mer om inställningarna av tillgångstyper, tillverkare och modeller på funktionsplatser i [Skapa funktionsplatser](../functional-locations/create-functional-locations.md).
 
->*Exempel:* Du vill skapa en underhållsplan för en specifik funktionsplats, vilket innebär att alla tillgångar som ställs in på den funktionsplatsen vid en given tidpunkt inkluderas när du planerar underhållsplanen. I så fall skapar du en underhållsplan och väljer en viss funktionsplats, men du lägger INTE till några objekt i underhållsplanen. Resultatet blir att när du planerar underhållsplanen skapas underhållsschemarader för alla till gångar som är relaterade till funktionsplatsen vid den tidpunkten.
+>*Exempel:* Du vill skapa en underhållsplan för en specifik funktionsplats, vilket innebär att alla tillgångar som ställs in på den funktionsplatsen vid en given tidpunkt inkluderas när du planerar underhållsplanen. I så fall skapar du en underhållsplan och väljer en viss funktionsplats, men du lägger INTE till några tillgångar i underhållsplanen. Resultatet blir att när du planerar underhållsplanen skapas underhållsschemarader för alla till gångar som är relaterade till funktionsplatsen vid den tidpunkten.
 
 - Om du gör ändringar i tillgångstyper, tillverkare och modeller i **Tillgångstyper** påverkar dessa ändringar bara nya tillgångar som använder den uppdaterade tillgångstypen. Läs mer om inställning av tillgångstyp i [Tillgångstyper](../setup-for-objects/object-types.md).  
 
-5. Klicka på **OK** för att påbörja genereringen av underhållsschemaposter för tillgångar. De genererade posterna visas på listsidan **Alla underhållsscheman**.
+5. Klicka på **OK** för att påbörja genereringen av underhållsschemaposter för tillgångar. De genererade posterna visas på listsidan **Alla underhållsscheman**. Följande illustration visar ett exempel på dialogrutan **Schemalägg underhållsplaner**.
 
 ![Figur 1](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ I exemplen som beskrivs här visas att alla räknarregistreringar som görs på 
 ![Figur 3](media/11-preventive-maintenance.png)
 
 ![Figur 4](media/12-preventive-maintenance.png)
+

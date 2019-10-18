@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74e7c36fb912f35252d6e40d17477ac2962cbc23
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558815"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026991"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 
@@ -31,7 +31,7 @@ ms.locfileid: "1558815"
 
 Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 
-De instruktioner som lagerarbetare på en mobil enhet bestäms av arbete mallar som du ställer in i Microsoft Dynamics 365 for Finance and Operations för att definiera de olika lager och uppgifter. Arbetsmallar avgör hur arbetet utförs för varje lager. Genom att koppla en lagerplats direktiv att arbeta mallar, du kan bidra till att garantera att arbetet sker i särskilda fysiska områden i lager.
+De instruktioner som lagerarbetare på en mobil enhet bestäms av arbete mallar som du ställer in i Dynamics 365 Supply Chain Management för att definiera de olika lager och uppgifter. Arbetsmallar avgör hur arbetet utförs för varje lager. Genom att koppla en lagerplats direktiv att arbeta mallar, du kan bidra till att garantera att arbetet sker i särskilda fysiska områden i lager.
 
 ## <a name="work-templates"></a>Arbetsmallar
 **Arbetsmallar** sidan låter dig definiera arbeten som måste utföras i lagret. Typiskt, warehouse arbeten består av ett par åtgärder: en lagerarbetare plockar upp lagersaldot på en plats och sedan lägger de plockade lager ned på en annan plats. 

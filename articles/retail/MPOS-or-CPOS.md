@@ -1,6 +1,6 @@
 ---
 title: Välj mellan Retail Modern POS (MPOS) och molnbaserad kassa
-description: Det här avsnittet beskriver viktiga skillnader mellan Retail Modern POS och molnbaserad kassa. Här beskrivs också olika faktorer som återförsäljare som implementerar Microsoft Dynamics 365 for Retail bör överväga i syfte att hjälpa dem göra det bästa valet för just deras behov.
+description: Det här avsnittet beskriver viktiga skillnader mellan Retail Modern POS och molnbaserad kassa. Här beskrivs också olika faktorer som återförsäljare som implementerar Dynamics 365 Retail bör överväga i syfte att hjälpa dem göra det bästa valet för just deras behov.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 69cf6d2b7a9bb09a848f2a0c870f5e7e59c61e91
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557024"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025919"
 ---
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Välj mellan Retail Modern POS (MPOS) och molnbaserad kassa
 
 [!include [banner](includes/banner.md)]
 
-Detta avsnitt ger implementerarna ytterligare bakgrund, tips och riktlinjer för de faktorer som bör de överväga när de distribuerar Microsoft Dynamics 365 for Retail. Genom att granska och följa dessa riktlinjer som ett led i distributionsprocessen kan implementerare undvika problem som kan påverka användarnas tillfredsställelse eller prestanda.
+Detta avsnitt ger implementerarna ytterligare bakgrund, tips och riktlinjer för de faktorer som bör de överväga när de distribuerar Dynamics 365 Retail. Genom att granska och följa dessa riktlinjer som ett led i distributionsprocessen kan implementerare undvika problem som kan påverka användarnas tillfredsställelse eller prestanda.
 
 ## <a name="insights"></a>Insikter
 

@@ -1,6 +1,6 @@
 ---
 title: Strömlinjeformad medarbetarinmatning och navigering
-description: Dataregistrering för arbetare i Dynamics 365 for Talent har förbättrats för att möjliggöra snabbregistrering för alla medarbetare, tidigare, aktiva eller framtida. En förenklad/konsoliderad navigeringsmodell har uppdaterats för att snabbt hitta relaterad information och visa och göra nödvändiga uppdateringar.
+description: Dataregistrering för arbetare i Dynamics 365 Talent har förbättrats för att möjliggöra snabbregistrering för alla medarbetare, tidigare, aktiva eller framtida. En förenklad/konsoliderad navigeringsmodell har uppdaterats för att snabbt hitta relaterad information och visa och göra nödvändiga uppdateringar.
 author: andreabichsel
 manager: AnnBe
 ms.date: 08/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: be0253ffc4396f36050ef02c51a20d378e44473d
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918223"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009432"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Strömlinjeformad medarbetarinmatning och navigering
 
 [!include [banner](includes/banner.md)]
 
-Dynamics 365 for Talent gör det möjligt att registrera medarbetar- och anställningsdata effektivt. Du kan snabbt uppdatera information om arbetshistorik för tidigare, aktiva och framtida medarbetare och leverantörer.
+Dynamics 365 Talent gör det möjligt att registrera medarbetar- och anställningsdata effektivt. Du kan snabbt uppdatera information om arbetshistorik för tidigare, aktiva och framtida medarbetare och leverantörer.
 
 Du kan också aktivera en förenklad navigeringsupplevelse om du snabbt vill hitta relaterad information och göra nödvändiga ändringar. Den här funktionen är nu tillgänglig i miljöer med begränsat läge. Om du vill aktivera den här funktionen navigerar du till **Systemadministration > Länkar > Inställningar > Systemparametrar > Förhandsfunktioner**. Välj **Förbättrade arbetarformulär och navigering**. Detta aktiverar dessa ändringar för alla användare. Du kan stänga av det här alternativet när du vill.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fea28da19c0aa1e9083091d0693404e0d8cb173c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c1aaae7a276d098587b5b9c73e433694e3a6f9bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554355"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248933"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Produktinleverans mot inköpsorder
 
@@ -52,7 +52,7 @@ Du kan skapa inköpsorderrader där alternativet **Ny anläggningstillgång** ä
 
 Du kan välja flera order och bearbeta inleverans på alla order tillsammans. Denna metod används inte ofta, men du kanske vill använda den om en leverantör har slagit ihop leveranserna till dig i en enda last. Det finns en funktion för att göra samlingsuppdateringar vid produktinleverans av inköp. Du kan bokföra en enstaka följesedel från leverantören för mer än en inköpsorder med hjälp av samlingsuppdateringar.  
 
-Inköpsorder kan skapas från en försäljningsorder om alternativet **Direktleverans** har valts. När du använder direktleverans tas produkterna inte emot på lagerstället utan skickas direkt från leverantören till kunden. I detta fall registreras vanligtvis inleveransen direkt på inköpsordern. Inleveransen kan utföras automatiskt, till exempel genom elektroniskt datautbyte (EDI) med leverantören. Om inköpsordern är en koncernintern inköpsorder är det även möjligt att låta Microsoft Dynamics 365 for Finance and Operations automatisera inleveransen av den koncerninterna försäljningsordern vid leverans. När du använder direktleverans redovisas produkterna fortfarande som en lagertillgång, även om de inte anländer fysiskt till lagerstället. När produktinleveransen registreras på inköpsordern uppdateras därför försäljningsordern automatiskt med en följesedel så att den totala förändringen i lagret är lika med 0 (noll). Vid direktleveranser bör du inte kräva förregistrering. Om du använder lagerställen som är aktiverade för lagerstyrning kan du kringgå kravet på registrering av ID-numret genom att ange ett virtuellt lagerställe. Du specificerar det här lagerstället i fältet **Lagerställe för direktleverans** på produkten. 
+Inköpsorder kan skapas från en försäljningsorder om alternativet **Direktleverans** har valts. När du använder direktleverans tas produkterna inte emot på lagerstället utan skickas direkt från leverantören till kunden. I detta fall registreras vanligtvis inleveransen direkt på inköpsordern. Inleveransen kan utföras automatiskt, till exempel genom elektroniskt datautbyte (EDI) med leverantören. Om inköpsordern är en koncernintern inköpsorder är det även möjligt att låta Supply Chain Management automatisera inleveransen av den koncerninterna försäljningsordern vid leverans. När du använder direktleverans redovisas produkterna fortfarande som en lagertillgång, även om de inte anländer fysiskt till lagerstället. När produktinleveransen registreras på inköpsordern uppdateras därför försäljningsordern automatiskt med en följesedel så att den totala förändringen i lagret är lika med 0 (noll). Vid direktleveranser bör du inte kräva förregistrering. Om du använder lagerställen som är aktiverade för lagerstyrning kan du kringgå kravet på registrering av ID-numret genom att ange ett virtuellt lagerställe. Du specificerar det här lagerstället i fältet **Lagerställe för direktleverans** på produkten. 
 
 När produktinleveransen har bearbetats på inköpsordern ändras inköpsorderns status till **Mottagen** för att visa att fakturan för ordern kan bearbetas. Du kan granska uppgifter om produkter som redan har tagits emot med hjälp av sidan **Produktinleveransjournaler**.  
 

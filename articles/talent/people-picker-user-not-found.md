@@ -1,6 +1,6 @@
 ---
 title: Användaren hittades inte i personväljaren i Attract eller Onboard
-description: Det här avsnittet beskriver hur användare i företagets innehavare inte visas i personväljaren i Dynamics 365 for Talent Attract eller Onboard-program.
+description: Det här avsnittet beskriver hur användare i företagets innehavare inte visas i personväljaren i Dynamics 365 Talent - Attract eller Onboard-program.
 author: andreabichsel
 manager: AnnBe
 ms.date: 01/22/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 2a3c83fcc3f48aa235ffb2db2dc492b34a306c4c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742759"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024208"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory-användare som inte finns i personväljaren
 
@@ -30,11 +30,11 @@ ms.locfileid: "1742759"
 
 ## <a name="issue"></a>Utleverans
 
-Vissa giltiga användare i Microsoft Azure Active Directory (Azure AD) för innehavare visas inte när du söker efter namn i personväljaren i Dynamics 365 for Talent Attract eller Onboard-program.
+Vissa giltiga användare i Microsoft Azure Active Directory (Azure AD) för innehavare visas inte när du söker efter namn i personväljaren i Dynamics 365 Talent: Attract eller Dynamics 365 Talent: Onboard.
 
 ## <a name="cause"></a>Orsak
 
-Vissa användartyper stöds inte i Attract och Onboard-program. Kontrollera att användaren inte är en Azure AD Business to Business (B2B) gästanvändare. ”Användartyp”-information finns i bladet Azure Active Directory på Azure portalen.
+Vissa användartyper stöds inte i Attract och Onboard. Kontrollera att användaren inte är en Azure AD Business to Business (B2B) gästanvändare. ”Användartyp”-information finns i bladet Azure Active Directory på Azure portalen.
 
 Mer information om Azure B2B finns i [vad är gästanvändaråtkomst i Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 

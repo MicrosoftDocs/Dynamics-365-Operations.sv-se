@@ -1,6 +1,6 @@
 ---
 title: Öppna URL i kassan
-description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Retail.
 author: AamirAllaq
 manager: AnnBe
 ms.date: 01/28/2019
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 729caf9fad9097a3ecbf7d546c8f8a96f67aec92
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 406dad1709dc837f7f87817241d7062f6b08d8fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845700"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025896"
 ---
 # <a name="open-url-in-pos"></a>Öppna webbadressen i kassan
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver hur du konfigurerar en knapp i Butikskassa (PO) för att öppna en URL. Den här funktionen kräver inte en kodanpassning och kan konfigureras av en person i en roll som inte är utvecklare. Den här funktionen är tillgänglig som en del av den Dynamics 365 for Finance and Operations version 8.1.3 versionen (build 8.1.227.10014) och senare. 
+Det här avsnittet beskriver hur du konfigurerar en knapp i Butikskassa (PO) för att öppna en URL. Den här funktionen kräver inte en kodanpassning och kan konfigureras av en person i en roll som inte är utvecklare. 
 
 Den här funktionen används för att konfigurera en knapp i kassan med hjälp av knappen rutnätsdesigner för att öppna en URL. För närvarande stöds detta följande konfigurationer:
 

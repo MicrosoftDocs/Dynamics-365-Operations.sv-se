@@ -1,6 +1,6 @@
 ---
 title: Sortimenthantering
-description: Det här avsnittet beskriver de grundläggande begreppen för sortimenthantering i Microsoft Dynamics 365 for Retail och ger överväganden för genomförande av projektet.
+description: Det här avsnittet beskriver de grundläggande begreppen för sortimenthantering i Dynamics 365 Retail och ger överväganden för genomförande av projektet.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4652641be0a1edaac919d36c7f127cd62c355a57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558838"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025850"
 ---
 # <a name="assortment-management"></a>Sortimenthantering
 
@@ -28,7 +28,7 @@ ms.locfileid: "1558838"
 
 ## <a name="overview"></a>Översikt
 
-Microsoft Dynamics 365 for Retail ger *sortiment* som gör att du kan hantera produkttillgänglighet genom olika kanaler. Sortiment avgör vilka produkter som är tillgängliga i vissa butiker och under en viss period.
+Dynamics 365 Retail ger *sortiment* som gör att du kan hantera produkttillgänglighet genom olika kanaler. Sortiment avgör vilka produkter som är tillgängliga i vissa butiker och under en viss period.
 
 I Butik är ett sortiment en katalog med en eller flera kanaler (eller grupper av kanaler när organisationshierarkier används) till en eller flera produkter (eller grupper av produkter när kategorihierarkier används).
 

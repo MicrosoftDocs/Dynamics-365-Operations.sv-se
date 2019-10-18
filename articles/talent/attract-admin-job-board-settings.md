@@ -1,6 +1,6 @@
 ---
-title: Aktivera Broadbean-integrering i Microsoft Dynamics 365 for Talent - Attract
-description: I det här avsnittet beskriver hur du konfigurerar Microsoft Dynamics 365 for Talent - Attract för att publicera jobb på externa jobbtavlor som t.ex. Broadbean.
+title: Aktivera Broadbean-integrering i Microsoft Dynamics 365 Talent - Attract
+description: I det här avsnittet beskriver hur du konfigurerar Microsoft Dynamics 365 Talent - Attract för att publicera jobb på externa jobbtavlor som t.ex. Broadbean.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2334c2bd0edccf3000f8d91651afafd4619ad0b8
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 808f91fb4b68ba9b5cee54d86423d23232df23a4
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739689"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008603"
 ---
 # <a name="enable-broadbean-integration"></a>Aktivera Broadbean-integration
 
 [!include[banner](../includes/banner.md)]
 
-Du vill få dina lediga befattningar framför så många kvalificerade kandidater som möjligt. Rekryteringswebbplatser som Broadbean hjälper dig att uppnå det här målet. Microsoft Dynamics 365 for Talent: Attract låter dig nu publicera jobb på Broadbean och Microsoft tillhandahåller ständigt nya erbjudanden inom detta område.
+Du vill få dina lediga befattningar framför så många kvalificerade kandidater som möjligt. Rekryteringswebbplatser som Broadbean hjälper dig att uppnå det här målet. Microsoft Dynamics 365 Talent: Attract låter dig nu publicera jobb på Broadbean och Microsoft tillhandahåller ständigt nya erbjudanden inom detta område.
 
 > [!NOTE]
 > - Om du vill skicka jobb till externa platser måste du ha [tillägget för omfattande anställning](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).

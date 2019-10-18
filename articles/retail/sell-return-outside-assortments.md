@@ -1,6 +1,6 @@
 ---
 title: Sälj och returnera produkter som inte ingår i sortimentet för en butik
-description: Med Dynamics 365 for Retail kan du sälja och returnera produkter utanför sortiment.
+description: Med Dynamics 365 Retail kan du sälja och returnera produkter utanför sortiment.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567928"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024958"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Sälj och returnera produkter som inte ingår i sortimentet för en butik
 
@@ -37,7 +37,7 @@ Här följer några vanliga scenarier:
 + En återförsäljare saluför inte specialprodukter i butiken eller har dem inte i lager i butiken som kunden besökte, men produkterna finns i andra butiker. Butiksbiträdet kan hjälpa kunden genom att söka eller leta efter produkterna i andra butiker, lägga till dem i kundvagnen och slutföra utcheckningen genom att välja en leveransmetod.
 + En återförsäljare har många butiker i och runt en viss ort eller ett visst postnummer och vill inte tvinga kunder att returnera produkter till samma butik som de köpts in i. I stället kan kunderna returnera sina produkter i valfri butik.
 
-Dessa vanliga scenarier är tillgängliga för återförsäljare som använder Dynamics 365 for Retail. Med Retail kan du:
+Dessa vanliga scenarier är tillgängliga för återförsäljare som använder Retail. Med Retail kan du:
 
 + Söka eller bläddra bland produkter i andra butiker.
 + Söka eller bläddra i alla frisläppta produkter.

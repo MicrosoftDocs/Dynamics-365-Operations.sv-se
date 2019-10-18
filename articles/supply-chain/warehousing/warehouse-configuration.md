@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471ab164d7bd2e85f5192c082a905f3c30de3d2b
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866099"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026726"
 ---
 # <a name="warehouse-configuration-overview"></a>Konfiguration av lagerställe – översikt
 
@@ -34,7 +34,7 @@ Det här avsnittet innehåller information om hur du konfigurerar ett lagerstäl
 **Anm.:** Den här artikeln gäller funktioner i modulen **Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
 
 ## <a name="warehouse-layout"></a>Layout för lagerställe
-Lagerhanteringssystemet i Microsoft Dynamics 365 for Finance and Operations ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå optimal lagereffektivitet.
+Lagerhanteringssystemet i Finance and Operations ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå optimal lagereffektivitet.
 
 -   Du kan fastställa högprioriterade och lågprioriterade lagerområden för optimal placering av varor.
 -   Du kan dela upp till lagerstället i zoner som tar hänsyn till olika lagringsbehov, till exempel temperaturkrav eller olika omsättningshastigheter för artiklar.

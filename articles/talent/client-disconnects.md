@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 885e2d743cd2b01588546327840508f6f7e95958
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6d174a8acac3863fb6d9f9431c6bc777cb717470
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519081"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008185"
 ---
 # <a name="talent-client-disconnects"></a>Talent-klienten kopplas från
 
@@ -47,7 +47,7 @@ Det här problemet uppstår ofta när användare befinner sig i implementeringss
 
 **Webbläsartyper:** Google Chrome, Internet Explorer och Microsoft Edge
 
-Microsoft Dynamics 365 for Talent-plattformen kopplar från användare när två olika sessioner öppnas samtidigt för samma användare och samma webbläsartyp. (T.ex. användare A visar både miljö 1 och miljö 2 i Chrome.) Det spelar ingen roll om användarna öppnar olika webbläsarfönster eller olika flikar. Om samma användarautentisering används för att logga in på både miljö 1 och miljö 2 samtidigt och i samma webbläsartyp, kopplar Talent från en av sessionerna.
+Microsoft Dynamics 365 Talent kopplar från användare när två olika sessioner öppnas samtidigt för samma användare och samma webbläsartyp. (T.ex. användare A visar både miljö 1 och miljö 2 i Chrome.) Det spelar ingen roll om användarna öppnar olika webbläsarfönster eller olika flikar. Om samma användarautentisering används för att logga in på både miljö 1 och miljö 2 samtidigt och i samma webbläsartyp, kopplar Talent från en av sessionerna.
 
 **Lösning**
 

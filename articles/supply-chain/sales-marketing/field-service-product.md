@@ -1,6 +1,6 @@
 ---
-title: Synkronisera produkter från Finance and Operations till produkter i Field Service
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+title: Synkronisera produkter i Supply Chain Management till produkter i Field Service
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/09/2018
@@ -19,34 +19,34 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 06d7ff272ecb79abded3c3d3ade1f6bc0ef1f095
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f5f6d41f3e65a3cf5b8c7c96f54b1c8c6cdfaefb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742365"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249783"
 ---
-# <a name="synchronize-products-in-finance-and-operations-to-products-in-field-service"></a>Synkronisera produkter i Finance and Operations till produkter i Field Service
+# <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Synkronisera produkter i Supply Chain Management till produkter i Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera produkter från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 
-Mallen **Fältserviceprodukter (Fin and Ops till Field Service)** som används baseras på mallen **Produkter (Field Service till Sales) – direkt** från potentiell kund till kontanter. Mer information finns i [Produkter (Fin and Ops till Sales) – direkt](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
+Mallen **Fältserviceprodukter (Supply Chain Management till Field Service)** som används baseras på mallen **Produkter (Supply Chain Management till Sales) – direkt** från potentiell kund till kontanter. Mer information finns i [Produkter (Supply Chain Management till Sales) – direkt](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/products-template-mapping-direct).
 
-Det här ämnet beskriver bara skillnaden mellan mallarna **Fältserviceprodukter (Fin and Ops till Field Service)** och **Produkter (Field Service till Sales) – direkt**.
+Det här ämnet beskriver bara skillnaden mellan mallarna **Fältserviceprodukter (Supply Chain Management till Field Service)** och **Produkter (Supply Chain Management till Sales) – direkt**.
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
 **Namnet på mallen i dataintegreringen**
 
-- Fältserviceprodukter (Fin and Ops till Field Service)
+- Field Service-produkter (Supply Chain Management till Field Service).
 
-**Namnen på uppgiften i dataintegreringsprojektet:**
+**Namnen på uppgiften i dataintegreringsprojektet**
 
 - Produkter - produkter
 
-Mallen **Fältserviceprodukter (Fin and Ops till Field Service)** som används inkluderar en mappning som inte inkluderades i mallen **Produkter (Field Service till Sales) – direkt**. Den här mappningen säkerställer att det fältservicespecifika fältet **Produkttyp för service** är korrekt inställt.
+Mallen **Fältserviceprodukter (Supply Chain Management till Field Service)** inkluderar en mappning som inte inkluderas i mallen **Produkter (Supply Chain Management till Sales) – direkt**. Den här mappningen säkerställer att det fältservicespecifika fältet **Produkttyp för service** är korrekt inställt.
 
 ```
 FIELDSERVICEPRODUCTTYPE        Fn        msdyn_fieldserciveproducttype
@@ -60,7 +60,7 @@ nonInventory  :  690970001
 service       :  690970002 
 ```
 
-I Finance and Operations beräknas värdet för **Produkttyp för fältservice** på dataentiteten **Säljbara frisläppta produkter** på följande sätt:
+I Supply Chain Management beräknas värdet för **Produkttyp för fältservice** på dataentiteten **Säljbara frisläppta produkter** på följande sätt:
 
 - **Lager:** produkttyp = produkt- och modellgrupp, produkt i lager = True
 - **Ej lagerartikel:** produkttyp = produkt- och modellgrupp, produkt i lager = False
@@ -70,6 +70,6 @@ I Finance and Operations beräknas värdet för **Produkttyp för fältservice**
 
 I följande illustrationer visas en mallmappning i dataintegrering.
 
-### <a name="field-service-products-fin-and-ops-to-field-service-products---products"></a>Fältserviceprodukter (Fin and Ops till Field Service): Produkter - Produkter
+### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service-produkter (Supply Chain Management till Field Service): produkter - produkter.
 
 [![Mallmappning i dataintegrering](./media/FSProduct.png)](./media/FSProduct.png)

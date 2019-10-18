@@ -1,9 +1,9 @@
 ---
 title: Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter
 description: Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 for Retail.
-author: ashishmsft
+author: bebeale
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 10/01/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606859"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278139"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> Vi tar bort den nuvarande versionen av tjänsten produktrekommendation eftersom vi designar om funktionen med en bättre algoritm och nya butiksorienterade funktioner. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
-Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 for Retail.
+Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 Retail. Mer information om produktrekommendationer finns i [produktrekommendationerna i kassadokumentationen.](product.md)
 
-Du kan visa produktrekommendationer på din kassaenhet när du använder Microsoft Dynamics 365 for Retail. *Rekommendationer* är artiklar som dina kunder kan vara intresserade av baserat på sina tidigare inköp, artiklar i sina önskelistor samt artiklar som andra kunder köpt online och i fysiska butiker. Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionsskärmen med skärmlayoutdesignern.
+
+Du kan visa produktrekommendationer på din kassaenhet när du använder Microsoft Dynamics 365 Retail. Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionsskärmen med skärmlayoutdesignern. 
 
 ## <a name="open-layout-designer"></a>Öppna layoutdesignern
 
@@ -45,6 +44,7 @@ Du kan visa produktrekommendationer på din kassaenhet när du använder Microso
 4. Klicka på **Layoutdesigner**.
 5. Följ instruktionerna för att starta layoutdesignern. När du uppmanas ange dina autentiseringsuppgifter, ange då samma autentiseringsuppgifter som användes när layoutdesignern startades från sidan **Skärmlayouter**.
 6. När du loggar in visas en sida som liknar den nedanstående. Layouten är olika beroende på de anpassningar som gjorts för din butik.
+
 
     [![Layoutdesigner](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
@@ -57,7 +57,9 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 ### <a name="make-recommendations-always-visible"></a>Gör så att rekommendationer alltid visas
 
+
 1. Minska höjden på detaljområdet för transaktionsrader så att denna är samma höjd som hos kundpanelen till vänster.
+
 
     [![Höjden på detaljområdet för transaktionsrader har reducerats](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
@@ -65,15 +67,18 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
     [![Rekommendationskontroll som läggs till i layouten](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
+
 3. Klick på **X** för att spara och stänga layoutdesignern.
 4. I Dynamics 365 for Retail, gå till **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
-5. I listan väljer du  **1090 Registers**.
+5. I listan väljer du **1090 Registers**.
 6. Klicka på **Kör nu**.
+
 
 ### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Lägg till en rekommendationsflik i knappsatsen till höger på skärmen
 
 1. Högerklicka i det tomma utrymmet under den sista fliken på knappsatsen till höger på sidan.
-2. Klicka på **anpassa**.
+
+2. Klicka på **anpassa**.
 
     [![Anpassning - dialogrutan flikkontroll](./media/pic-5.png)](./media/pic-5.png)
 
@@ -85,12 +90,14 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 6. I fältet **Etikett** anger du ett namn för rekommendationsfliken. Skriv till exempel ”Rekommenderade produkter”.
 7. I fältet **Bild** väljer du den bild du vill visa i fliken.
-8. Klicka på **OK**. Den nya fliken visas i knappsatsen.
+8. Klicka på **OK**. Den nya fliken visas i knappsatsen.
 9. Klick på **X** för att spara och stänga layoutdesignern.
 10. I Dynamics 365 for Retail, gå till **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
-11. I listan väljer du  **1090 Registers**.
+11. I listan väljer du **1090 Registers**.
 12. Klicka på **Kör nu**.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över anpassade produktrekommendationer](personalized-product-recommendations.md)
+[produktrekommendationer i kassa](product.md)
+
+[översikt över produktrekommendationer](../commerce/product-recommendations.md)

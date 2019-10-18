@@ -1,6 +1,6 @@
 ---
 title: Säljfunktion för kundtjänst
-description: Det här avsnittet innehåller en översikt över funktionen för callcenterförsäljning i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet innehåller en översikt över funktionen för callcenterförsäljning i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/03/2018
@@ -19,26 +19,28 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8b78762ce70b318e1f77e1e49ffaa7b72f01667f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549490"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025781"
 ---
 # <a name="call-center-sales-functionality"></a>Försäljningsfunktioner för kundtjänst
 
 [!include [banner](includes/banner.md)]
 
-I Dynamics 365 for Retail, är kundtjänst en typ av butikskanal som kan definieras i programmet. Definiera en viss kanal för dina kundtjänstenheter låter systemet koppla specifika datastandarder och orderhantering är som standard försäljningsorder som har skapats av en användare av kundtjänst.
+
+I Dynamics 365 Retail, är kundtjänst en typ av butikskanal som kan definieras i programmet. Definiera en viss kanal för dina kundtjänstenheter låter systemet koppla specifika datastandarder och orderhantering är som standard försäljningsorder som har skapats av en användare av kundtjänst.
 
 Kundtjänst omfattar avancerat butikspris och erbjudanden, kataloger, presentkort, bonusprogram och kuponger. Kundtjänstorder utnyttjas också av kassaprogrammet för att ge stöd för scenarier för orderuppfyllelse mellan kanaler.
 
-Det är viktigt att komma ihåg att medan modulen för kundtjänst kan användas inom andra branscher utanför Retail, har den aktuella versionen av kundtjänstprogrammet för Dynamics 365 for Retail inte optimerats för användning i B2B-orderbehandlingsscenarier och scenarier där order har ett stort antal försäljningsrader. Vi rekommenderar att användare som vill använda kundtjänstfunktioner för orderhantering utanför normal transaktionsbearbetning direkt till konsument, ta tillräcklig tid för att testa och verifiera att kundtjänstfunktionerna uppfyller funktionella och prestandabehov.
+Det är viktigt att komma ihåg att medan modulen för kundtjänst kan användas inom andra branscher utanför Retail, har den aktuella versionen av kundtjänstprogrammet för Retail inte optimerats för användning i B2B-orderbehandlingsscenarier och scenarier där order har ett stort antal försäljningsrader. Vi rekommenderar att användare som vill använda kundtjänstfunktioner för orderhantering utanför normal transaktionsbearbetning direkt till konsument, ta tillräcklig tid för att testa och verifiera att kundtjänstfunktionerna uppfyller funktionella och prestandabehov.
 
 Förutom att stödja skapande av order ger kundtjänstmodulen även ett användarvänligt kundtjänstprogram som gör det enklare för användare att hitta kundkonton och granska alla relaterade kundorderdata och attribut. Skärmen för kundtjänst har utformats så att användare snabbt får tillgång till orderrelaterade data för att besvara vanliga orderrelaterade frågor som tagits emot från kunder.
 
-Den här sidan innehåller länkar till relevanta handlingar som är relaterade till installation, konfiguration och funktionell användning av kundtjänstfunktionerna i Dynamics 365 for Retail.
+Den här sidan innehåller länkar till relevanta handlingar som är relaterade till installation, konfiguration och funktionell användning av kundtjänstfunktionerna i Retail.
+
 
 ## <a name="configure-the-call-center"></a>Konfigurera kundtjänst.
 

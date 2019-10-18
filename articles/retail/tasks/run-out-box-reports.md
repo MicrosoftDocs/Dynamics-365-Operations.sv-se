@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afd4509bc9bdff345e48a590a12cc84ae25aebb8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550080"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018446"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Skapa och köra färdiga rapporter
 
@@ -43,7 +43,7 @@ Det demonstrationsdataföretag som används för att skapa den här registrering
 5. Ange ett datum i fältet Till datum.
 6. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kanal.
 7. I trädet, välj Contoso Retail\Contoso Retail USA\Central\Houston.
-    * Här visas standardbutiksorganisationshierarkin för butiksrapporteringsyfte.   Gå till Organisationsadministration > Organisationer > Syften för organisationshierarki, välj Butiksrapportering och under Tilldelade hierarkier, kontrollera det hierarkinamn för vilket standardkolumnen är markerad.      Som en del av demodata (som används för registreringen av den här uppgiften) bör du märka att Butiker efter region är standardorganisationshierarki för syftet med butiksrapportering.     
+    * Här visas standardbutiksorganisationshierarkin för butiksrapporteringsyfte.   Gå till Organisationsadministration > Organisationer > Syften för organisationshierarki, välj Butiksrapportering och under Tilldelade hierarkier, kontrollera det hierarkinamn för vilket standardkolumnen är markerad. Som en del av demodata (som används för registreringen av den här uppgiften) bör du märka att Butiker efter region är standardorganisationshierarki för syftet med butiksrapportering.     
 8. Klicka på OK.
 9. Markera ett alternativ i fältet Visa.
 10. Markera ett alternativ i fältet Efter.
@@ -55,7 +55,7 @@ Det demonstrationsdataföretag som används för att skapa den här registrering
 3. Ange ett datum i fältet Till datum.
 4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kanal.
 5. I trädet, välj Contoso Retail\Contoso Retail USA\West\Seattle.
-    * Här visas standardbutiksorganisationshierarkin för butiksrapporteringsyfte.   Gå till Organisationsadministration > Organisationer > Syften för organisationshierarki, välj Butiksrapportering och under Tilldelade hierarkier, kontrollera det hierarkinamn för vilket standardkolumnen är markerad.      Som en del av demodata (som används för registreringen av den här uppgiften) bör du märka att Butiker efter region är standardorganisationshierarki för syftet med butiksrapportering.     
+    * Här visas standardbutiksorganisationshierarkin för butiksrapporteringsyfte.   Gå till Organisationsadministration > Organisationer > Syften för organisationshierarki, välj Butiksrapportering och under Tilldelade hierarkier, kontrollera det hierarkinamn för vilket standardkolumnen är markerad. Som en del av demodata (som används för registreringen av den här uppgiften) bör du märka att Butiker efter region är standardorganisationshierarki för syftet med butiksrapportering.     
 6. Klicka på OK.
 7. Klicka på OK.
 

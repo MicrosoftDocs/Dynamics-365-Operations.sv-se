@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 484bac74ccb498f0b006458f5e6d8fb0e9461a8f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: be4dbadaeac747953af44236156453edc596fcd5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556084"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018122"
 ---
 # <a name="backflush-costing"></a>Kostnadskalkylering med automatisk lageravräkning
 
@@ -61,11 +61,11 @@ För produkter som tillhandahålls av ett produktionsflöde ska strukturlisteber
 
 ### <a name="calculation-that-is-based-on-the-production-flow"></a>Beräkning som baseras på produktionsflöde.
 
-Lean manufacturing för Microsoft Dynamics 365 for Finance and Operations är oberoende av flöden. Kostnadsberäkningen för produkter som tillhandahålls från ett produktionsflöde kan baseras på själva produktionsflödet. Innan beräkningen kan göras måste en kanban-regel skapas som levererar produkten utanför produktionsflödet. Om en produkt kan läsas in från flera produktionsflöden på samma plats på beräkningsdatumet, kan du välja produktionsflödet för strukturlisteberäkningen. På sidan **Standardproduktionsflöde** kan du konfigurera ett standardproduktionsflöde för varje artikel. Om det inte finns flera kanban-regler för samma produkt i samma produktionsflöde som är aktivt på beräkningsdatumet markerar beräkningen den första kanban-regeln som är aktiv för beräkningen.
+Lean manufacturing för Dynamics 365 Supply Chain Management är oberoende av flöden. Kostnadsberäkningen för produkter som tillhandahålls från ett produktionsflöde kan baseras på själva produktionsflödet. Innan beräkningen kan göras måste en kanban-regel skapas som levererar produkten utanför produktionsflödet. Om en produkt kan läsas in från flera produktionsflöden på samma plats på beräkningsdatumet, kan du välja produktionsflödet för strukturlisteberäkningen. På sidan **Standardproduktionsflöde** kan du konfigurera ett standardproduktionsflöde för varje artikel. Om det inte finns flera kanban-regler för samma produkt i samma produktionsflöde som är aktivt på beräkningsdatumet markerar beräkningen den första kanban-regeln som är aktiv för beräkningen.
 
 ### <a name="calculation-that-is-based-on-the-route"></a>Beräkningen baseras på flödet.
 
-Beräkning som baseras på ett flöde är en giltig beräkning som baseras på ett produktionsflöde. Däremot en beräkning som baseras på ett flöde använder inte funktionerna kostnadsredovisning för Lean manufacturing. Flödet bör använda resursbehov för resursgrupper. För att undvika systematiska avvikelser bör det också använda samma arbetsgrupper eller åtminstone samma kostnadskategorier. Återigen bör du undvika kostnadskategorier för inställning och kvantitet. De hjälper inte till att beräkna kostnaden i en mer detaljerad uppdelning än för bakåtavräkning av kostnad i Lean manufacturing. För att avgöra vilket alternativ (produktionsflöde eller flöde) som bör användas för att beräkna kostnaden bör kostnadsuppdelningens resultat beaktas. Versionen som kommer närmast utgångspunkten och ger generellt färre avvikelser är ett bra alternativ. I en Lean manufacturing-miljö där en produkt levereras av ett enda produktionsflöde och en enda kanban-regel, är förmodligen beräkningen som baseras på produktionsflödet mer exakt. För en produkt som levereras av en Lean manufacturing och produktionsorder på samma plats och kan ha flera produktionsflöden eller flera kanban-regler i samma flöde kan vara mer exakt om den är baserad på en flödesversion som skapats speciellt för kostnadsberäkningen, inte för produktionen. Beräkningen av produktionsflödet måste användas för att beräkna produkter som innefattar legotillverkning. I Microsoft Dynamics 365 for Finance and Operations använder kostnadsmodeller för legotillverkning via tillverkningsorder och underleverantörer i Lean manufacturing två olika sätt. Lean manufacturing introducerar en ny typ av kostnadsgrupp, **direktutkontraktering**, för att beräkna legotillverkningstjänster.
+Beräkning som baseras på ett flöde är en giltig beräkning som baseras på ett produktionsflöde. Däremot en beräkning som baseras på ett flöde använder inte funktionerna kostnadsredovisning för Lean manufacturing. Flödet bör använda resursbehov för resursgrupper. För att undvika systematiska avvikelser bör det också använda samma arbetsgrupper eller åtminstone samma kostnadskategorier. Återigen bör du undvika kostnadskategorier för inställning och kvantitet. De hjälper inte till att beräkna kostnaden i en mer detaljerad uppdelning än för bakåtavräkning av kostnad i Lean manufacturing. För att avgöra vilket alternativ (produktionsflöde eller flöde) som bör användas för att beräkna kostnaden bör kostnadsuppdelningens resultat beaktas. Versionen som kommer närmast utgångspunkten och ger generellt färre avvikelser är ett bra alternativ. I en Lean manufacturing-miljö där en produkt levereras av ett enda produktionsflöde och en enda kanban-regel, är förmodligen beräkningen som baseras på produktionsflödet mer exakt. För en produkt som levereras av en Lean manufacturing och produktionsorder på samma plats och kan ha flera produktionsflöden eller flera kanban-regler i samma flöde kan vara mer exakt om den är baserad på en flödesversion som skapats speciellt för kostnadsberäkningen, inte för produktionen. Beräkningen av produktionsflödet måste användas för att beräkna produkter som innefattar legotillverkning. Kostnadsmodeller för legotillverkning via tillverkningsorder och underleverantörer i Lean manufacturing använder två olika sätt. Lean manufacturing introducerar en ny typ av kostnadsgrupp, **direktutkontraktering**, för att beräkna legotillverkningstjänster.
 
 ## <a name="material-consumption"></a>Materialförbrukning
 När material förbrukas från lagret till PIA läggs kostnaden för material till i PIA enligt dess faktiska standardkostnad för en kostnadsgrupp. Den här åtgärden uppstår under följande förutsättningar:
@@ -82,7 +82,7 @@ Produkterna inlevereras från produktionsflödet under följande förhållanden:
 Produkterna som inlevereras från produktionsflödet dras från PIA.
 
 ## <a name="products-in-wip"></a>Produkter i PIA 
-PIA-modellen för Lean manufacturing i Microsoft Dynamics 365 for Finance and Operations låter dig använda den enhetsstatus för kanban-hantering för att hantera material, halvfabrikat och färdiga produkter som ingår i PIA.
+PIA-modellen för Lean manufacturing låter dig använda den enhetsstatus för kanban-hantering för att hantera material, halvfabrikat och färdiga produkter som ingår i PIA.
 
 -   **Tilldelad** - kanban kan ha förbrukat materialet som redovisas i PIA.
 -   **Mottagna** - om kanban refererar till senaste aktiviteten där **uppdatering av lager vid inleverans** anges till **nej**, representerar det en fullständig materialhanteringsenhet av en produkt eller en halvfärdig produkt som inte är registrerad till lagret.

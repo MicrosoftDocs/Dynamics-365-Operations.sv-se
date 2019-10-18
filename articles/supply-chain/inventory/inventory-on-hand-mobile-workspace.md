@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 68b285ba78a9bd654e7bfcfe8d4c6b0207346eab
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845604"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249527"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobil arbetsyta för inventering av lagerbehållning
 
@@ -31,7 +31,7 @@ ms.locfileid: "1845604"
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **Lagerbehållning**. Denna arbetsyta ger dig insyn i reserverat och lagerbehållning, när som helst och var som helst.
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Operations.
 
 ## <a name="overview"></a>Översikt
 Normalt har företag flera in- och flera utleveranser av lager varje dag. Dessa transporter ändrar konstant tillgänglig lagerstatus. Den mobila arbetsytan för **Lagerbehållning** låter dig se tillgänglig lagerstatus för hela företaget, vilket ger dig den senaste informationen om lagerdata på valfri mobil enhet. Oavsett om du arbetar i på lagerstället, inom inköp, försäljning, tillverkning, administration eller har andra roller, kan du använda datan för tillgängligt lager när som helst och var som helst. 
@@ -58,11 +58,11 @@ Närmare bestämt erbjuder den mobila arbetsytan följande funktioner:
 ## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations 
-Om Microsoft Dynamics 365 for Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Tillgängligt lager**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-finance-and-operations"></a>Förutsättningar om du använder Finance and Operations 
+Om Supply Chain Management används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Lagerbehållning**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdateringen 3 eller senare
-Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
+### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>Förutsättningar om du använder plattformsuppdatering 3 eller senare 
+Om plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
 <thead>
@@ -96,7 +96,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
-Hämta och installera mobilappen Dynamics 365 for Unified Operations:
+Hämta och installera mobilappen Finance and Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

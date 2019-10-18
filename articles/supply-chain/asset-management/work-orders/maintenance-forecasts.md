@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a416bbb79be3f25998d3c0da8d231d0df808685
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875906"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024509"
 ---
 # <a name="maintenance-forecasts"></a>Underhållsprognoser
 
@@ -104,7 +104,7 @@ Det finns tre sätt att lägga till artiklar i en underhållsprognos för arbets
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk uppdatering av arbetsorderprognoser
 
-I Tillgångshantering kan du automatiskt uppdatera alla ändringar av arbetsorderprognoser för timkostnader, artikelkostnader och utgifter som har uppdaterats i andra moduler i Dynamics 365 for Finance and Operations. Detta görs för att se till att de senaste självkostnaderna alltid används i dina arbetsorderprognoser. Det går också att göra liknande uppdateringar för [prognoser för underhållsjobbtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+I Tillgångshantering kan du automatiskt uppdatera alla ändringar av arbetsorderprognoser för timkostnader, artikelkostnader och utgifter som har uppdaterats i andra moduler. Detta görs för att se till att de senaste självkostnaderna alltid används i dina arbetsorderprognoser. Det går också att göra liknande uppdateringar för [prognoser för underhållsjobbtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Klicka på **Tillgångshantering** > **Periodiskt** > **Prognos** > **Uppdatera arbetsorderprognos**.
 

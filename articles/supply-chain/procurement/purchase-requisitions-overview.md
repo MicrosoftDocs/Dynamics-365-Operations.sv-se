@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572035"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248896"
 ---
 # <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
 
@@ -38,7 +38,7 @@ När en inköpsrekvisition har godkänts kan den användas för att skapa inköp
 ## <a name="creating-purchase-requisitions"></a>Skapa inköpsrekvisitioner
 Du kan skapa en inköpsrekvisition på sidan **Mina inköpsrekvisitioner** och väljer de artiklar och tjänster som du behöver. Du kan välja artiklar från en anskaffningskatalog som din organisation har skapat, eller så kan du begära, artiklar som inte finns i en katalog, genom att välja en anskaffningskategori och ange produktdetaljerna.  
 
-Innan en inköpsrekvisition kan skickas för granskning måste arbetsflödet konfigureras i Microsoft Dynamics 365 for Finance and Operations. Du använder ett arbetsflöde för att flytta en inköpsrekvisition genom granskningsprocessen, från den ursprungliga statusen **Utkast** till den slutliga statusen **godkänd**.
+Innan en inköpsrekvisition kan skickas för granskning måste arbetsflödet konfigureras. Du använder ett arbetsflöde för att flytta en inköpsrekvisition genom granskningsprocessen, från den ursprungliga statusen **Utkast** till den slutliga statusen **godkänd**.
 
 ### <a name="purchase-requisition-statuses"></a>Status för inköpsrekvisitioner
 
@@ -141,7 +141,7 @@ I anskaffningspolicyerna kan du kontrollera rekvisitionssyftena som är tillgän
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Rekvisitioner med förbrukningssyfte
 
-En rekvisition med förbrukningssyfte representerar en efterfrågan på artiklar eller tjänster som ska användas internt i organisationen. En begäran som har skapats av den här sortens rekvisition uppfylls alltid av en inköpsorder. Om Microsoft Dynamics 365 for Finance and Operations ställs in på att skapa inköpsorder automatiskt, skapas inköpsorder när inköpsrekvisitionen godkänns.
+En rekvisition med förbrukningssyfte representerar en efterfrågan på artiklar eller tjänster som ska användas internt i organisationen. En begäran som har skapats av den här sortens rekvisition uppfylls alltid av en inköpsorder. Om Supply Chain Management ställs in på att automatiskt skapa inköpsorder, skapas inköpsorder när inköpsrekvisitionen godkänns.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Rekvisitioner som har ett syfte med påfyllnad
 

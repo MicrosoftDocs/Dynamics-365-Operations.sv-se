@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 03e090633276cd264ad03f561ddb425a9816357e
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847515"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024647"
 ---
 # <a name="create-maintenance-requests"></a>Skapa underhållsbegäranden
 
@@ -41,7 +41,7 @@ Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till 
 2. Välj **Ny**.
 3. I dialogrutan **Skapa begäran** i fältet **underhållsbegärantyp** väljer du typ av underhållsbegäran. En standardtyp föreslås.
 4. I fältet **beskrivning** anger du ett namn eller en rubrik som kortfattat beskriver underhållsbegäran.
-5. I fälten **funktionsplats** och **tillgång** väljer du en funktionsplats eller en tillgång, eller en kombination av en funktionsplats och en tillgång, som du behöver. Du kan skapa en underhållsbegäran utan att välja en tillgång och tillgången kan läggas till underhållbegäran senare. Om underhållsarbetaren som är inloggad på Microsoft Dynamics 365 for Finance and Operations är relaterad till en resurs som är relaterad till en tillgång, ställs fältet **tillgång** in automatiskt.
+5. I fälten **funktionsplats** och **tillgång** väljer du en funktionsplats eller en tillgång, eller en kombination av en funktionsplats och en tillgång, som du behöver. Du kan skapa en underhållsbegäran utan att välja en tillgång och tillgången kan läggas till underhållbegäran senare. Om underhållsarbetaren som är inloggad på är relaterad till en resurs som är relaterad till en tillgång, ställs fältet **tillgång** in automatiskt.
 
     Om en underhållsbegäran redan är kopplad till den valda tillgången, visas ett meddelandefält överst i dialogrutan **skapa begäran** för att meddela dig om ID för den befintliga underhållsbegäran. Ett meddelandefält meddelar dig också om tillgången täcks av ett garantiavtal.
 

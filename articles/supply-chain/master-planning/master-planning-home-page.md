@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543593"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250701"
 ---
 # <a name="master-planning-home-page"></a>Startsida för Huvudplanering
 
@@ -74,7 +74,7 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 Du hittar åsikter, nyheter och annan information om huvudplanering och andra lösningar i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management i Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Uppgiftsguider
-Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen **Hjälp** på valfri sida för att få åtkomst till uppgiftsguiderna.
+Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen **Hjälp** på valfri sida för att få åtkomst till uppgiftsguiderna.
 
 ### <a name="webinars"></a>Webbseminarier
 [Använd Azure-maskininlärning för efterfrågeprognosticering](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

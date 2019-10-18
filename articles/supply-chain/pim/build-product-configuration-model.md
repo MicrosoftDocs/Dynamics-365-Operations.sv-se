@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50aa1df7a169e71d3e2e477bd1515d70cedccab
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865386"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249504"
 ---
 # <a name="product-configuration-overview"></a>Produktkonfiguration – översikt
 
@@ -60,6 +60,9 @@ En produktkonfiguration modellen består av en eller flera komponenter som är s
 
 Varje komponent har ett eller flera attribut som identifierar dess egenskaper. Attributen är vad användarna välja under konfigurationsprocessen. Attribut styra både inter-komponenten och intra-komponent kundrelationer genom införande i begränsningar eller beräkningar. Genom villkor som tillämpas på BOM linjer, attributen kan användas för att avgöra vilka fysiska artiklar konfigurerad produkt kommer att bestå av. Dessutom kan ett attribut kan styra egenskaperna för en bom med en kartläggning. Liknande funktioner finns för rutten verksamhet både vad gäller integration och egenskapsinställningar.
 
+>[!NOTE]
+> När du skapar attributtyper bör du undvika att skapa ett högt nummer med värden för attributtypdomänen. Om du gör det kan det leda till att produktkonfiguratorn går långsammare. 
+
 ### <a name="expression-constraints"></a>Uttrycksbegränsningar
 
 Användning av en begränsningsbaserad produktkonfiguration modell innebär att vissa begränsningar när användaren väljer värden för olika attribut. Sådana begränsningar kan genomföras som uttryck begränsningar med hjälp av optimering Modeling Language (9,0 ml). Alternativt kan en begränsning kan genomföras i form av en tabell.
@@ -70,7 +73,7 @@ Registerbegränsningar kan vara antingen användardefinierade eller systemdefini
 
 En användardefinierad tabell begränsning är byggd av användaren. Användaren väljer en kombination av attribut som representerar tabellens kolumner och sedan in värdena från domäner på valt attribut typer att bilda rader i tabellen.  
 
-En systemdefinierad tabellbegränsning definieras genom att välja som Microsoft Dynamics 365 for Finance and Operations-tabell som ska användas som referens och sedan välja fält från tabellen att bilda kolumnerna i tvång. Raderna i tabellbegränsning är rader av inance and Operations-tabellen som finns vid konfigurering.  
+En systemdefinierad tabellbegränsning definieras genom att välja som -tabell som ska användas som referens och sedan välja fält från tabellen att bilda kolumnerna i tvång. Raderna i tabellbegränsning är rader av inance and Operations-tabellen som finns vid konfigurering.  
 
 En tabellbegränsning ingår i en produktkonfiguration modell genom att referera till tabellbegränsningsdefinitionen och mappa relevanta attribut i modellen till kolumnerna i tabellen.
 

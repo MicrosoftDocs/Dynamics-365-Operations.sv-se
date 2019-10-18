@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10c8b548f2e295bf344459370ab6eecd577a0efb
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 5d55dfe26cd298372701aeb98a6aafc49977f381
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866003"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248641"
 ---
 # <a name="sales-and-marketing-overview"></a>Försäljning och marknadsföring – översikt
 
@@ -41,7 +41,7 @@ Inom försäljning och marknadsföring kan de första interaktionerna som du har
 
 ### <a name="campaigns"></a>Kampanjer
 
-En kampanj riktar sig till kontakter för prospekt, leads, affärstillfällen och kunder som har valt att delta i kampanjen. I Microsoft Dynamics 365 for Finance and Operations kan du skapa flera olika typer av kampanjer såsom telemarketing, E-postutskick och E-postkampanjer för att maximera din kundpotential. När kampanjen pågår och du får positiva svar kan du inleda försäljningsprocessen med de mottagare som har svarat positivt på kampanjen.
+En kampanj riktar sig till kontakter för prospekt, leads, affärstillfällen och kunder som har valt att delta i kampanjen. I Supply Chain Management kan du skapa flera olika typer av kampanjer såsom telemarketing, E-postutskick och E-postkampanjer för att maximera din kundpotential. När kampanjen pågår och du får positiva svar kan du inleda försäljningsprocessen med de mottagare som har svarat positivt på kampanjen.
 
 ## <a name="sales"></a>Försäljning
 Du kan använda försäljningsfunktionen för att skapa offerter, mer- och korsförsäljning till nya och befintliga kunder, försäljningsorder och kundfakturor. Följande processflöde visar affärsprocessen för försäljning. [![Affärsprocess för försäljning](./media/sales01.jpg)](./media/sales01.jpg)

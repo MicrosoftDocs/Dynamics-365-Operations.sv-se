@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d238bb31537a21f46c252fbee400fe61901e650
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: dfd62a18d6b4cfc8c41d9025a8fc5deb8768ed3f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790539"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250931"
 ---
 # <a name="maintenance-requests"></a>Begäran om underhåll
 
@@ -31,7 +31,7 @@ ms.locfileid: "1790539"
 
 [!include [banner](../../includes/preview-banner.md)]
 
-Du kan ställa in olika typer av begäranden som ska användas i ditt företag. Begäran om underhåll är en typ. Begäran om underhåll används för att begära att en arbetsorder krävs för ett visst jobb. En begäran om underhåll kan skapas av alla användare som har åtkomst till funktionen tillgångshantering i Microsoft Dynamics 365 for Finance and Operations. En planerare eller chef kan sedan bestämma om en begäran om underhåll ska konverteras till en arbetsorder eller om den ska slutföra sin egen livscykel.
+Du kan ställa in olika typer av begäranden som ska användas i ditt företag. Begäran om underhåll är en typ. Begäran om underhåll används för att begära att en arbetsorder krävs för ett visst jobb. En begäran om underhåll kan skapas av alla användare som har åtkomst till funktionen tillgångshantering. En planerare eller chef kan sedan bestämma om en begäran om underhåll ska konverteras till en arbetsorder eller om den ska slutföra sin egen livscykel.
 
 ## <a name="view-maintenance-requests"></a>Visa begäran om underhåll
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7c7d1fcaaeef7a01b43886e4d69458dbd942439
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556885"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250724"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Gör manuella justeringar på baslinjeprognosen
 
@@ -71,7 +71,7 @@ Du kan öppna **Demand forecast sidan detaljer för** att se mer information om 
 **Anteckningar:**
 
 -   De konfidensintervall som visas i **Prognosdelen** av sidan representerar skillnaden mellan konfidensintervall övre gräns och konfidensintervallet undre gräns. För att se värdena för de övre och nedre gränserna, hovra över diagrammet i den **historiska efterfrågan och prognos grafiskt** .
--   Om du använder tjänsten Microsoft Azure för Finance and Operations-efterfrågeprognoser, kan du ange vilken förtroendenivå som den genererade prognosen ska ha. Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att efterfrågan faller utanför konfidensintervallet.
+-   Om du använder tjänsten Microsoft Azure Machine Learning-efterfrågeprognoser, kan du ange vilken förtroendenivå som den genererade prognosen ska ha. Ett konfidensintervall består av ett antal värden som fungerar som goda prognoser för efterfrågan. En 95-procentig konfidensnivå procenttal indikerar att det finns en 5-procentig risk att efterfrågan faller utanför konfidensintervallet.
 
 Du kan också göra manuella justeringar av prognosen på **efterfrågan sidan detaljer** genom att ändra värdena i **prognosen** raden i **prognos** .
 
