@@ -1,6 +1,6 @@
 ---
 title: Analysera butikernas resultat
-description: Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Retail-data.
+description: Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Dynamics 365 Retail-data.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c975c021b6db49d1e25fd036f4955c7223e438ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b2ea6ad2e3d9589face06cd5f950973209c17d41
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569273"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017792"
 ---
-# <a name="analyze-store-performance"></a><span data-ttu-id="fa5a9-103">Analysera butiksresultat</span><span class="sxs-lookup"><span data-stu-id="fa5a9-103">Analyze store performance</span></span>
+# <a name="analyze-store-performance"></a><span data-ttu-id="39f5b-103">Analysera butiksresultat</span><span class="sxs-lookup"><span data-stu-id="39f5b-103">Analyze store performance</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="fa5a9-104">Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Retail-data.</span><span class="sxs-lookup"><span data-stu-id="fa5a9-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Retail data.</span></span>
+<span data-ttu-id="39f5b-104">Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Dynamics 365 Retail-data.</span><span class="sxs-lookup"><span data-stu-id="39f5b-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Dynamics 365 Retail data.</span></span>
 
-<span data-ttu-id="fa5a9-105">Som en del av Dynamics 365 for Retail, användare kan studera store prestanda i realtid på olika nivåer i organisationshierarkin under en vald period genom att öppna **Kanalsammanfattning**-rapport från någon av följande platser:</span><span class="sxs-lookup"><span data-stu-id="fa5a9-105">As part of Dynamics 365 for Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
+<span data-ttu-id="39f5b-105">Som en del av Retail, användare kan studera store prestanda i realtid på olika nivåer i organisationshierarkin under en vald period genom att öppna **Kanalsammanfattning**-rapport från någon av följande platser:</span><span class="sxs-lookup"><span data-stu-id="39f5b-105">As part of Retail, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:</span></span>
 
-- <span data-ttu-id="fa5a9-106">Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**</span><span class="sxs-lookup"><span data-stu-id="fa5a9-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="fa5a9-107">Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**</span><span class="sxs-lookup"><span data-stu-id="fa5a9-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
-- <span data-ttu-id="fa5a9-108">Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalöversiktsrapport**</span><span class="sxs-lookup"><span data-stu-id="fa5a9-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="39f5b-106">Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**</span><span class="sxs-lookup"><span data-stu-id="39f5b-106">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="39f5b-107">Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalöversiktsrapport**</span><span class="sxs-lookup"><span data-stu-id="39f5b-107">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel summary report**</span></span>
+- <span data-ttu-id="39f5b-108">Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalöversiktsrapport**</span><span class="sxs-lookup"><span data-stu-id="39f5b-108">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel summary report**</span></span>
 
-<span data-ttu-id="fa5a9-109">Denna rapport ger en ögonblicksbild av följande sammanfattningar som en del av affären prestanda:</span><span class="sxs-lookup"><span data-stu-id="fa5a9-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
+<span data-ttu-id="39f5b-109">Denna rapport ger en ögonblicksbild av följande sammanfattningar som en del av affären prestanda:</span><span class="sxs-lookup"><span data-stu-id="39f5b-109">This report provides a snapshot of following summaries as part of store performance:</span></span>
 
-- <span data-ttu-id="fa5a9-110">Sammanfattning av bruttoförsäljning</span><span class="sxs-lookup"><span data-stu-id="fa5a9-110">Gross sales summary</span></span>
-- <span data-ttu-id="fa5a9-111">Översikt över betalningsmedelstyp</span><span class="sxs-lookup"><span data-stu-id="fa5a9-111">Tender type summary</span></span>
-- <span data-ttu-id="fa5a9-112">Momssammanfattning</span><span class="sxs-lookup"><span data-stu-id="fa5a9-112">Tax summary</span></span>
-- <span data-ttu-id="fa5a9-113">Priset åsidosätter sammanfattning</span><span class="sxs-lookup"><span data-stu-id="fa5a9-113">Price overrides summary</span></span>
-- <span data-ttu-id="fa5a9-114">Rabatter sammanfattning</span><span class="sxs-lookup"><span data-stu-id="fa5a9-114">Discounts summary</span></span>
+- <span data-ttu-id="39f5b-110">Sammanfattning av bruttoförsäljning</span><span class="sxs-lookup"><span data-stu-id="39f5b-110">Gross sales summary</span></span>
+- <span data-ttu-id="39f5b-111">Översikt över betalningsmedelstyp</span><span class="sxs-lookup"><span data-stu-id="39f5b-111">Tender type summary</span></span>
+- <span data-ttu-id="39f5b-112">Momssammanfattning</span><span class="sxs-lookup"><span data-stu-id="39f5b-112">Tax summary</span></span>
+- <span data-ttu-id="39f5b-113">Priset åsidosätter sammanfattning</span><span class="sxs-lookup"><span data-stu-id="39f5b-113">Price overrides summary</span></span>
+- <span data-ttu-id="39f5b-114">Rabatter sammanfattning</span><span class="sxs-lookup"><span data-stu-id="39f5b-114">Discounts summary</span></span>

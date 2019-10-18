@@ -1,0 +1,91 @@
+---
+title: Valutaomvärdering i ett konsolideringsföretag
+description: Detta avsnitt beskriver hur du omvärderar valuta i ett konsolideringsföretag.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/02/2018
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: LedgerExchAdjHist
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.custom: 62183
+ms.assetid: 2762baaf-0c10-4ff7-8713-c506d6c29b98
+ms.search.region: Global
+ms.author: hminzner
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9b7f0a18910cbaed382971e47eb688c075e7e6a5
+ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "2179930"
+---
+# <a name="currency-revaluation-in-a-consolidation-company"></a><span data-ttu-id="01d72-103">Valutaomvärdering i ett konsolideringsföretag</span><span class="sxs-lookup"><span data-stu-id="01d72-103">Currency revaluation in a consolidation company</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="01d72-104">När du konsolidera data från en redovisningsvaluta till en annan måste du fortfarande köra valutaomvärdering om det sker en förändring i valutakurser, så att ditt konto saldo är korrekt omvärderas.</span><span class="sxs-lookup"><span data-stu-id="01d72-104">When you consolidate data from one accounting currency to another, you must still run currency revaluation if there is a change in exchange rates, so that your account balances  are correctly revalued.</span></span> <span data-ttu-id="01d72-105">När du ursprungligen konsolidera data, använd **valutakursdifferens** flik för att välja den första växelkurser för översättning under konsolideringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="01d72-105">When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates to for translation during the consolidation process.</span></span> <span data-ttu-id="01d72-106">Efter en ny valutakurs registreras (t.ex. i nästa månad), du måste omvärdera den kontosaldon.</span><span class="sxs-lookup"><span data-stu-id="01d72-106">After a new exchange rate is entered (for example, in the next month), you must revalue the account balances.</span></span> <span data-ttu-id="01d72-107">Den orealiserade vinster eller förluster som sedan uppdateras baserat på den nya växelkursen och datum.</span><span class="sxs-lookup"><span data-stu-id="01d72-107">The unrealized gains or losses are then updated accordingly, based on the new exchange rate and date.</span></span> <span data-ttu-id="01d72-108">Följande exempel illustrerar bokföringsposter som skapas under processen.</span><span class="sxs-lookup"><span data-stu-id="01d72-108">The following example illustrates the accounting entries that are created during the process.</span></span>
+
+## <a name="company-setup"></a><span data-ttu-id="01d72-109">Företagsinställningar</span><span class="sxs-lookup"><span data-stu-id="01d72-109">Company setup</span></span>
+-   <span data-ttu-id="01d72-110">**Källa/driftbolaget (USMF)** – US dollar (USD) används som redovisning och rapportering valuta.</span><span class="sxs-lookup"><span data-stu-id="01d72-110">**Source/operating company (USMF)** – US dollars (USD) are used as the accounting and reporting currency.</span></span>
+-   <span data-ttu-id="01d72-111">**Koncernens bolag (CON)** – EURO (EUR) används som redovisning och rapportering valuta.</span><span class="sxs-lookup"><span data-stu-id="01d72-111">**Consolidated company (CON)** – Euros (EUR) are used as the accounting and reporting currency.</span></span>
+    -   <span data-ttu-id="01d72-112">**Vinsten** – reskontra 801500</span><span class="sxs-lookup"><span data-stu-id="01d72-112">**Realized gain**– Ledger account 801500</span></span>
+    -   <span data-ttu-id="01d72-113">**Förlusten** – reskontra 801600</span><span class="sxs-lookup"><span data-stu-id="01d72-113">**Realized loss** – Ledger account 801600</span></span>
+    -   <span data-ttu-id="01d72-114">**Orealiserad vinst** – reskontra 801600</span><span class="sxs-lookup"><span data-stu-id="01d72-114">**Unrealized gain** – Ledger account 801600</span></span>
+    -   <span data-ttu-id="01d72-115">**Orealiserad förlust** – reskontra 801400</span><span class="sxs-lookup"><span data-stu-id="01d72-115">**Unrealized loss** – Ledger account 801400</span></span>
+
+## <a name="original-transactions"></a><span data-ttu-id="01d72-116">Ursprungliga transaktioner</span><span class="sxs-lookup"><span data-stu-id="01d72-116">Original transactions</span></span>
+### <a name="cash-receipt-transactions-in-usmf"></a><span data-ttu-id="01d72-117">Kontantkvitto transaktioner i USMF</span><span class="sxs-lookup"><span data-stu-id="01d72-117">Cash receipt transactions in USMF</span></span>
+
+| <span data-ttu-id="01d72-118">Datum</span><span class="sxs-lookup"><span data-stu-id="01d72-118">Date</span></span>       | <span data-ttu-id="01d72-119">Redovisningskonto</span><span class="sxs-lookup"><span data-stu-id="01d72-119">Ledger account</span></span>               | <span data-ttu-id="01d72-120">Valuta</span><span class="sxs-lookup"><span data-stu-id="01d72-120">Currency</span></span> | <span data-ttu-id="01d72-121">Belopp</span><span class="sxs-lookup"><span data-stu-id="01d72-121">Amount</span></span> |
+|------------|------------------------------|----------|--------|
+| <span data-ttu-id="01d72-122">10/11/2015</span><span class="sxs-lookup"><span data-stu-id="01d72-122">10/11/2015</span></span> | <span data-ttu-id="01d72-123">110110 – Kassa</span><span class="sxs-lookup"><span data-stu-id="01d72-123">110110 – Cash</span></span>                | <span data-ttu-id="01d72-124">USD</span><span class="sxs-lookup"><span data-stu-id="01d72-124">USD</span></span>      | <span data-ttu-id="01d72-125">500</span><span class="sxs-lookup"><span data-stu-id="01d72-125">500</span></span>    |
+| <span data-ttu-id="01d72-126">10/11/2015</span><span class="sxs-lookup"><span data-stu-id="01d72-126">10/11/2015</span></span> | <span data-ttu-id="01d72-127">130100 – Kundfordringar</span><span class="sxs-lookup"><span data-stu-id="01d72-127">130100 – Accounts Receivable</span></span> | <span data-ttu-id="01d72-128">USD</span><span class="sxs-lookup"><span data-stu-id="01d72-128">USD</span></span>      | <span data-ttu-id="01d72-129">-500</span><span class="sxs-lookup"><span data-stu-id="01d72-129">-500</span></span>   |
+
+## <a name="exchange-rates"></a><span data-ttu-id="01d72-130">Valutakurser</span><span class="sxs-lookup"><span data-stu-id="01d72-130">Exchange rates</span></span>
+
+| <span data-ttu-id="01d72-131">Från valuta</span><span class="sxs-lookup"><span data-stu-id="01d72-131">From currency</span></span> | <span data-ttu-id="01d72-132">Till valuta</span><span class="sxs-lookup"><span data-stu-id="01d72-132">To currency</span></span> | <span data-ttu-id="01d72-133">Startdatum</span><span class="sxs-lookup"><span data-stu-id="01d72-133">Start date</span></span> | <span data-ttu-id="01d72-134">Valutakurs</span><span class="sxs-lookup"><span data-stu-id="01d72-134">Exchange rate</span></span> |
+|---------------|-------------|------------|---------------|
+| <span data-ttu-id="01d72-135">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-135">EUR</span></span>           | <span data-ttu-id="01d72-136">USD</span><span class="sxs-lookup"><span data-stu-id="01d72-136">USD</span></span>         | <span data-ttu-id="01d72-137">10/1/2015</span><span class="sxs-lookup"><span data-stu-id="01d72-137">10/1/2015</span></span>  | <span data-ttu-id="01d72-138">200</span><span class="sxs-lookup"><span data-stu-id="01d72-138">200</span></span>           |
+| <span data-ttu-id="01d72-139">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-139">EUR</span></span>           | <span data-ttu-id="01d72-140">USD</span><span class="sxs-lookup"><span data-stu-id="01d72-140">USD</span></span>         | <span data-ttu-id="01d72-141">11-01 2015</span><span class="sxs-lookup"><span data-stu-id="01d72-141">11/1/2015</span></span>  | <span data-ttu-id="01d72-142">150</span><span class="sxs-lookup"><span data-stu-id="01d72-142">150</span></span>           |
+| <span data-ttu-id="01d72-143">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-143">EUR</span></span>           | <span data-ttu-id="01d72-144">USD</span><span class="sxs-lookup"><span data-stu-id="01d72-144">USD</span></span>         | <span data-ttu-id="01d72-145">12/1/2012</span><span class="sxs-lookup"><span data-stu-id="01d72-145">12/1/2012</span></span>  | <span data-ttu-id="01d72-146">100</span><span class="sxs-lookup"><span data-stu-id="01d72-146">100</span></span>           |
+
+## <a name="perform-the-consolidation-for-october-2015"></a><span data-ttu-id="01d72-147">Utföra konsolideringen för oktober 2015</span><span class="sxs-lookup"><span data-stu-id="01d72-147">Perform the consolidation for October 2015</span></span>
+### <a name="balances-in-the-consolidation-company"></a><span data-ttu-id="01d72-148">Saldon i fältet konsolideringsföretag</span><span class="sxs-lookup"><span data-stu-id="01d72-148">Balances in the consolidation company</span></span>
+
+| <span data-ttu-id="01d72-149">Redovisningskonto</span><span class="sxs-lookup"><span data-stu-id="01d72-149">Ledger account</span></span> | <span data-ttu-id="01d72-150">Valuta</span><span class="sxs-lookup"><span data-stu-id="01d72-150">Currency</span></span> | <span data-ttu-id="01d72-151">Belopp</span><span class="sxs-lookup"><span data-stu-id="01d72-151">Amount</span></span> | <span data-ttu-id="01d72-152">Beräkning</span><span class="sxs-lookup"><span data-stu-id="01d72-152">Calculation</span></span>    |
+|----------------|----------|--------|----------------|
+| <span data-ttu-id="01d72-153">110110</span><span class="sxs-lookup"><span data-stu-id="01d72-153">110110</span></span>         | <span data-ttu-id="01d72-154">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-154">EUR</span></span>      | <span data-ttu-id="01d72-155">250</span><span class="sxs-lookup"><span data-stu-id="01d72-155">250</span></span>    | <span data-ttu-id="01d72-156">500 USD × 50 %</span><span class="sxs-lookup"><span data-stu-id="01d72-156">500 USD × 50%</span></span>  |
+| <span data-ttu-id="01d72-157">130100</span><span class="sxs-lookup"><span data-stu-id="01d72-157">130100</span></span>         | <span data-ttu-id="01d72-158">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-158">EUR</span></span>      | <span data-ttu-id="01d72-159">-250</span><span class="sxs-lookup"><span data-stu-id="01d72-159">-250</span></span>   | <span data-ttu-id="01d72-160">-500 USD × 50%</span><span class="sxs-lookup"><span data-stu-id="01d72-160">-500 USD × 50%</span></span> |
+
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-november-30-2015"></a><span data-ttu-id="01d72-161">Utföra valutaomvärdering för räkenskaper från den 1 oktober 2015, genom den 30 November, 2015</span><span class="sxs-lookup"><span data-stu-id="01d72-161">Perform currency revaluation for the accounts from October 1, 2015, through November 30, 2015</span></span>
+### <a name="balances-in-the-consolidation-company"></a><span data-ttu-id="01d72-162">Saldon i fältet konsolideringsföretag</span><span class="sxs-lookup"><span data-stu-id="01d72-162">Balances in the consolidation company</span></span>
+
+| <span data-ttu-id="01d72-163">Redovisningskonto</span><span class="sxs-lookup"><span data-stu-id="01d72-163">Ledger account</span></span> | <span data-ttu-id="01d72-164">Valuta</span><span class="sxs-lookup"><span data-stu-id="01d72-164">Currency</span></span> | <span data-ttu-id="01d72-165">Belopp</span><span class="sxs-lookup"><span data-stu-id="01d72-165">Amount</span></span>  | <span data-ttu-id="01d72-166">Beräkning</span><span class="sxs-lookup"><span data-stu-id="01d72-166">Calculation</span></span>                        |
+|----------------|----------|---------|------------------------------------|
+| <span data-ttu-id="01d72-167">110110</span><span class="sxs-lookup"><span data-stu-id="01d72-167">110110</span></span>         | <span data-ttu-id="01d72-168">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-168">EUR</span></span>      | <span data-ttu-id="01d72-169">333,33</span><span class="sxs-lookup"><span data-stu-id="01d72-169">333.33</span></span>  | <span data-ttu-id="01d72-170">Ursprungligt belopp av 500 × 66,6667 %</span><span class="sxs-lookup"><span data-stu-id="01d72-170">Original amount of 500 × 66.6667%</span></span>  |
+| <span data-ttu-id="01d72-171">130100</span><span class="sxs-lookup"><span data-stu-id="01d72-171">130100</span></span>         | <span data-ttu-id="01d72-172">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-172">EUR</span></span>      | <span data-ttu-id="01d72-173">-333,33</span><span class="sxs-lookup"><span data-stu-id="01d72-173">-333.33</span></span> | <span data-ttu-id="01d72-174">Ursprungligt belopp -500 × 66,6667 %</span><span class="sxs-lookup"><span data-stu-id="01d72-174">Original amount of -500 × 66.6667%</span></span> |
+| <span data-ttu-id="01d72-175">801400</span><span class="sxs-lookup"><span data-stu-id="01d72-175">801400</span></span>         | <span data-ttu-id="01d72-176">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-176">EUR</span></span>      | <span data-ttu-id="01d72-177">83,33</span><span class="sxs-lookup"><span data-stu-id="01d72-177">83.33</span></span>   | <span data-ttu-id="01d72-178">333,33 – 250</span><span class="sxs-lookup"><span data-stu-id="01d72-178">333.33 – 250</span></span>                       |
+| <span data-ttu-id="01d72-179">801600</span><span class="sxs-lookup"><span data-stu-id="01d72-179">801600</span></span>         | <span data-ttu-id="01d72-180">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-180">EUR</span></span>      | <span data-ttu-id="01d72-181">-83,33</span><span class="sxs-lookup"><span data-stu-id="01d72-181">-83.33</span></span>  | <span data-ttu-id="01d72-182">-333,33 – (-250)</span><span class="sxs-lookup"><span data-stu-id="01d72-182">-333.33 – (-250)</span></span>                   |
+
+<span data-ttu-id="01d72-183">Du kommer att se ytterligare transaktioner för rapportering valuta.</span><span class="sxs-lookup"><span data-stu-id="01d72-183">You will see additional transactions for the reporting currency amounts.</span></span>
+
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-december-31-2015"></a><span data-ttu-id="01d72-184">Utföra valutaomvärdering för räkenskaper från 1 oktober 2015 till 31 December 2015</span><span class="sxs-lookup"><span data-stu-id="01d72-184">Perform currency revaluation for the accounts from October 1, 2015, through December 31, 2015</span></span>
+### <a name="balances-in-the-consolidation-company"></a><span data-ttu-id="01d72-185">Saldon i fältet konsolideringsföretag</span><span class="sxs-lookup"><span data-stu-id="01d72-185">Balances in the consolidation company</span></span>
+
+| <span data-ttu-id="01d72-186">Redovisningskonto</span><span class="sxs-lookup"><span data-stu-id="01d72-186">Ledger account</span></span> | <span data-ttu-id="01d72-187">Valuta</span><span class="sxs-lookup"><span data-stu-id="01d72-187">Currency</span></span> | <span data-ttu-id="01d72-188">Belopp</span><span class="sxs-lookup"><span data-stu-id="01d72-188">Amount</span></span>  | <span data-ttu-id="01d72-189">Beräkning</span><span class="sxs-lookup"><span data-stu-id="01d72-189">Calculation</span></span>                                          |
+|----------------|----------|---------|------------------------------------------------------|
+| <span data-ttu-id="01d72-190">110110</span><span class="sxs-lookup"><span data-stu-id="01d72-190">110110</span></span>         | <span data-ttu-id="01d72-191">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-191">EUR</span></span>      | <span data-ttu-id="01d72-192">500.00</span><span class="sxs-lookup"><span data-stu-id="01d72-192">500.00</span></span>  | <span data-ttu-id="01d72-193">Ursprungligt belopp av 500 × 1</span><span class="sxs-lookup"><span data-stu-id="01d72-193">Original amount of 500 × 1</span></span>                           |
+| <span data-ttu-id="01d72-194">130100</span><span class="sxs-lookup"><span data-stu-id="01d72-194">130100</span></span>         | <span data-ttu-id="01d72-195">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-195">EUR</span></span>      | <span data-ttu-id="01d72-196">-500,00</span><span class="sxs-lookup"><span data-stu-id="01d72-196">-500.00</span></span> | <span data-ttu-id="01d72-197">Ursprungligt belopp -500 × 1</span><span class="sxs-lookup"><span data-stu-id="01d72-197">Original amount of -500 × 1</span></span>                          |
+| <span data-ttu-id="01d72-198">801400</span><span class="sxs-lookup"><span data-stu-id="01d72-198">801400</span></span>         | <span data-ttu-id="01d72-199">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-199">EUR</span></span>      | <span data-ttu-id="01d72-200">250</span><span class="sxs-lookup"><span data-stu-id="01d72-200">250</span></span>     | <span data-ttu-id="01d72-201">500 – 333,33 = 166,67 166,67 83,33 + = 250</span><span class="sxs-lookup"><span data-stu-id="01d72-201">500 – 333.33 = 166.67 166.67 + 83.33 = 250</span></span>           |
+| <span data-ttu-id="01d72-202">801600</span><span class="sxs-lookup"><span data-stu-id="01d72-202">801600</span></span>         | <span data-ttu-id="01d72-203">Euro</span><span class="sxs-lookup"><span data-stu-id="01d72-203">EUR</span></span>      | <span data-ttu-id="01d72-204">-250</span><span class="sxs-lookup"><span data-stu-id="01d72-204">-250</span></span>    | <span data-ttu-id="01d72-205">-500 – (-333,33) = -166,67 -166,67 + (-83,33) = -250</span><span class="sxs-lookup"><span data-stu-id="01d72-205">-500 – (-333.33) = -166.67 -166.67 + (-83.33) = -250</span></span> |
+
+
+
+
+
