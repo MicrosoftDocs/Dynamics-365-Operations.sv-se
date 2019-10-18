@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556453"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017907"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Hantering av skift och kassalåda
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556453"
 
 Det här avsnittet beskriver hur du ställer in och använder shift i butikskassor.
 
-I Microsoft Dynamics 365 for Retail beskriver termen *skift* kassatransaktionsdata och aktiviteter mellan två tidpunkter. För varje skift jämförs belopp som förväntas mot det belopp som har räknats och deklareras.
+I Dynamics 365 Retail beskriver termen *skift* kassatransaktionsdata och aktiviteter mellan två tidpunkter. För varje skift jämförs belopp som förväntas mot det belopp som har räknats och deklareras.
 
 Vanligtvis öppnas skift i början av arbetsdagen. Då deklarerar en användare startbeloppet som kassalådan innehåller. Försäljningstransaktioner ska sedan genomföras under dagen. Slutligen räknas kassalådan i slutet av dagen och de avslutande beloppen deklareras. Skiftet har avslutats och en Z-rapport skapas. Z-rapport anger om det finns något över- eller underskott.
 
@@ -69,7 +69,7 @@ För delade skift som ska användas i en butik måste kassalådan ha konfigurera
 
 ## <a name="shift-and-drawer-operations"></a>Åtgärder av kassalåda och skift
 
-Olika åtgärder kan utföras för att ändra status för ett skift eller för att öka eller minska penningbeloppet i kassalådan. Det här avsnittet beskriver dessa skiftoperationer för Microsoft Dynamics 365 for Retail Modern POS och Cloud POS.
+Olika åtgärder kan utföras för att ändra status för ett skift eller för att öka eller minska penningbeloppet i kassalådan. Det här avsnittet beskriver dessa skiftoperationer för Retail Modern POS och Cloud POS.
 
 ### <a name="open-shift"></a>Öppna skift
 

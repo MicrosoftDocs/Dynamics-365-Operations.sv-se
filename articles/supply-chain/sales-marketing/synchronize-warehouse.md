@@ -1,6 +1,6 @@
 ---
-title: Synkronisera lagerställen från Finance and Operations till Field Service
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+title: Synkronisera lagerställen från Supply Chain Management till Field Service
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -19,41 +19,41 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ae99624076eecda2969961d0361d1adf42c6c5f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835680"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251188"
 ---
-# <a name="synchronize-warehouses-from-finance-and-operations-to-field-service"></a>Synkronisera lagerställen från Finance and Operations till Field Service
+# <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synkronisera lagerställen från Supply Chain Management till Field Service
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera lagerställen från Dynamics 365 Supply Chain Management till Dynamics 365 Field Service.
 
-[![Synkronisering av affärsprocesser mellan Finance and Operations och Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synkronisering av affärsprocesser mellan Supply Chain Management och Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
-Följande mall och underliggande uppgifter används för att köra synkronisering av lagerställen från Microsoft Dynamics 365 for Finance and Operations till Microsoft Dynamics 365 for Field Service.
+Följande mall och underliggande uppgifter används för att köra synkronisering av lagerställen från Supply Chain Management till Field Service.
 
 **Mall i dataintegrering**
-- Lagerställen (Fin and Ops till Field Service)
+- Lagerställen (Supply Chain Management till Field Service)
 
 **Uppgift i dataintegreringsprojektet**
 - Lagerställe
 
 ## <a name="entity-set"></a>Ange entiteten
-| Field Service    | Finance and Operations                 |
+| Field Service    | Hantering av underleverantörer                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Lagerställen                             |
 
 ## <a name="entity-flow"></a>Flöde för entitet
-Lagerställen som har skapats och underhålls i Finance and Operations kan synkroniseras till Field Service via ett Common Data Service (CDS) dataintegreringsprojekt. De lagerställen som du vill synkronisera till Field Service kan kontrolleras med avancerad fråga och filtrering i projektet. Lagerställen som ska synkroniseras från Finance and Operations skapas i Field Service med fältet **Underhålls externt** anges till **Ja** och posten är skrivskyddad.
+Lagerställen som har skapats och underhålls i Supply Chain Management kan synkroniseras till Field Service via ett Common Data Service (CDS) dataintegreringsprojekt. De lagerställen som du vill synkronisera till Field Service kan kontrolleras med avancerad fråga och filtrering i projektet. Lagerställen som ska synkroniseras från Supply Chain Management skapas i Field Service med fältet **Underhålls externt** anges till **Ja** och posten är skrivskyddad.
 
 ## <a name="field-service-crm-solution"></a>CRM-lösning för Field Service
-För att stödja integrationen mellan Field Service och Finance and Operations krävs ytterligare funktioner från Field Service CRM-lösning. I lösningen har fältet **Hanteras externt** har lagts till i enheten **Lagerställe (msdyn_warehouses)**. Det här fältet hjälper till att identifiera om lagerstället ska hanteras från Finance and Operations eller om det bara finns i Field Service. Inställningarna för detta fält är:
-- **Ja** – Lagerstället kommer från Finance and Operations och kan inte redigeras i Sales.
+För att stödja integrationen mellan Field Service och Finance and Operations krävs ytterligare funktioner från Field Service CRM-lösning. I lösningen har fältet **Hanteras externt** har lagts till i enheten **Lagerställe (msdyn_warehouses)**. Det här fältet hjälper till att identifiera om lagerstället ska hanteras från Supply Chain Management eller om det bara finns i Field Service. Inställningarna för detta fält är:
+- **Ja** – Lagerstället kommer från Supply Chain Management och kan inte redigeras i Sales.
 - **Nej** – Lagerstället angavs direkt i Field Service och underhålls här.
 
 Fältet **Hanteras externt** hjälper till att styra synkroniseringen av lagernivåer, justeringar, överföring och användning av arbetsorder. Endast lagerställen med **Hanteras externt** som anges till **Ja** kan användas för att synkronisera direkt till samma lagerställe i det andra systemet. 
@@ -63,7 +63,7 @@ Fältet **Hanteras externt** hjälper till att styra synkroniseringen av lagerni
 
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 ### <a name="data-integration-project"></a>Dataintegreringsprojektet
-Se till att uppdatera avancerad fråga och filtrering på projektet före synkroniseringen av lagerställen för att bara inkludera de lagerställen som du vill flytta från Finance and Operations till Field Service. Observera att du behöver lagerstället i Field Service för att använda det på arbetsorder, justeringar och överföringar.  
+Se till att uppdatera avancerad fråga och filtrering på projektet före synkroniseringen av lagerställen för att bara inkludera de lagerställen som du vill flytta från Supply Chain Management till Field Service. Observera att du behöver lagerstället i Field Service för att använda det på arbetsorder, justeringar och överföringar.  
 
 Kontrollera att **integreringsnyckel** finns i **msdyn_warehouses** genom att:
 1. Gå till dataintegration.
@@ -76,6 +76,6 @@ Kontrollera att **integreringsnyckel** finns i **msdyn_warehouses** genom att:
 
 I följande illustrationer visas en mallmappning i dataintegrering.
 
-### <a name="warehouses-fin-and-ops-to-field-service-warehouse"></a>Lagerställen (Fin and Ops till Field Service): Lagerställe
+### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagerställen (Supply Chain Management till Field Service): lagerställe
 
 [![Mallmappning i dataintegrering](./media/Warehouse1.png)](./media/Warehouse1.png)

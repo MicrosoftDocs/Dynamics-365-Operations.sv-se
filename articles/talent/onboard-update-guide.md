@@ -1,6 +1,6 @@
 ---
-title: Uppdatera integrationsguider i Dynamics 365 for Talent - Onboard
-description: I det här avsnittet beskrivs hur du uppdaterar introduktionsguider i Microsoft Dynamics 365 for Talent - Onboard och hur du trycker på ändringar i befintliga guider.
+title: Uppdatera integrationsguider i Dynamics 365 Talent - Onboard
+description: I det här avsnittet beskrivs hur du uppdaterar introduktionsguider i Microsoft Dynamics 365 Talent - Onboard och hur du trycker på ändringar i befintliga guider.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731649"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010739"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Uppdatera integrationsguider i Dynamics 365 for Talent: Onboard
+# <a name="update-onboarding-guides"></a>Uppdatera integrationsguider
 
 [!include [banner](includes/banner.md)]
 
-Om du måste göra ändringar i integrationsguiderna i Microsoft Dynamics 365 for Talent: Onboard kan du uppdatera dem och skicka ändringarna, även om du redan har skickat guiderna. Du har två alternativ för att uppdatera en integrationsguide:
+Om du måste göra ändringar i integrationsguiderna i Microsoft Dynamics 365 Talent: Onboard kan du uppdatera dem och skicka ändringarna, även om du redan har skickat guiderna. Du har två alternativ för att uppdatera en integrationsguide:
 
 - Redigera integrationsguiden direkt och spara ändringarna.
 - Redigera integrationsmallen och skicka sedan ändringarna till alla integrationsguider som har skapats från den.

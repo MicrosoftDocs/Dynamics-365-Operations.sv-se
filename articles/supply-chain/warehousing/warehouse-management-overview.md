@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c900ef715b62484c1fb6576b7f0c97cdea4e4284
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865146"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251072"
 ---
-# <a name="warehouse-management-overview"></a>Översikt över lagerstyrning
+# <a name="warehouse-management-overview"></a>Lagerstyrning – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Lagerstyrningsmodulen för Dynamics 365 for Finance and Operations låter dig hantera lagerprocesser för tillverknings-, distributions- och detaljhandelsföretag. Denna modul har ett stort antal funktioner som stöder lagerlokalen på en optimal nivå och utan avbrott. Lagerhanteringen är helt integrerad med andra affärsprocesser i Finance and Operations, till exempel transport, tillverkning, kvalitetskontroll, inköp, överföringar, försäljning och returer.
+Lagerstyrningsmodulen låter dig hantera lagerprocesser på tillverknings-, distributions- och detaljhandelsföretag. Denna modul har ett stort antal funktioner som stöder lagerlokalen på en optimal nivå och utan avbrott. Lagerhanteringen är helt integrerad med andra affärsprocesser, till exempel transport, tillverkning, kvalitetskontroll, inköp, överföringar, försäljning och returer.
 
 ## <a name="get-started"></a>Kom igång
 För att kunna arbeta med lagerhanteringen måste du konfigurera de allmänna lagerparametrarna, så att dessa stöder ditt företags affärsprocesser.
