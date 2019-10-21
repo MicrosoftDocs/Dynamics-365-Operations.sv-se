@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549323"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250242"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaserad legotillverkning
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549323"
 
 Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
 
-Det finns två sätt för legotillverkning i Microsoft Dynamics 365 for Finance and Operations: tillverkningsorder och lean manufacturing. I metoden lean manufacturing modelleras legotillverkningsarbetet som en tjänst som hör till en aktivitet för ett produktionsflöde. En speciell typ av kostnadsgruppstyp som heter **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av en strukturlista (BOM). Kostnadsredovisning av legotillverkning är helt integrerat i kostnadsredovisningen för lean manufacturing.
+Det finns två sätt för legotillverkning i Microsoft Dynamics 365 Supply Chain Management: tillverkningsorder och lean manufacturing. I metoden lean manufacturing modelleras legotillverkningsarbetet som en tjänst som hör till en aktivitet för ett produktionsflöde. En speciell typ av kostnadsgruppstyp som heter **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av en strukturlista (BOM). Kostnadsredovisning av legotillverkning är helt integrerat i kostnadsredovisningen för lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produktionsflöden som rör underleverantörer
 Den grundläggande principen för ett produktionsflöde ändras inte när aktiviteter är uppdelade på underleverantörer. Materialet flödar fortfarande mellan olika platser, processaktiviteter omvandlar material till produkter och överföringsaktiviteter flyttar material eller produkter från en plats till en annan. Du kan utforma platser och arbetsgrupper som leverantörhanterade genom att tilldela leverantörskontot till ett lager eller en resurs i en resursgrupp.  
@@ -102,7 +102,7 @@ Många betraktar transport som ickeproduktivt och menar att det inte tillför n�
 
 Verksamhetsbaserad legotillverkning inom lean manufacturing gör att du kan integrera speditörer och transporteleverantörer som flyttar material och produkter mellan platser för ett produktionsflöde. Du kan tilldela smittbärare eller leverantören av modellvariabler en överföringsaktivitet. Aktiviteter/överföringsjobbet baseras på ett avtal för tjänster och inköp, och du kan skapa inköpsorder och rekommendationer för inleverans, baserat på de faktiska överföringsjobben. Denna funktion är densamma som funktionerna för processaktiviteter för legotillverkning.  
 
-Därför stöder Finance and Operations numera strukturlisteberäkning som innehåller transporttjänster, skapandet av relaterade inköpsorder, integrerad inleveransregistrering samt integrering av transporttjänstkostnader i kostnaderna för produktionsflödet.
+Supply Chain Management stöder numera strukturlisteberäkning som innehåller transporttjänster, skapandet av relaterade inköpsorder, integrerad inleveransregistrering samt integrering av transporttjänstkostnader i kostnaderna för produktionsflödet.
 
 
 

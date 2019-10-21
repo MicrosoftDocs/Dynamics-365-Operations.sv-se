@@ -1,0 +1,2396 @@
+- name: Dynamics 365 Supply Chain Management
+  items:
+    - name: Dynamics 365 Supply Chain Management
+      items:
+        - name: Dynamics 365 Supply Chain Management
+          href: index.md
+        - name: Kom igång
+          items:
+            - name: Innan du köper
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Registrera abonnemang på förhandsversioner
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tjänstuppdateringar för en version
+              items:
+                - name: Översikt över tjänstuppdateringar för en version
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Frågor och svar om tjänstuppdateringar för en version
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Livscykelpolicy för programmet – moln
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Livscykelpolicy för programmet – lokal
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tillgänglighet för tjänsteuppdatering
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tillämpa uppdateringar i molnmiljöer
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera tjänstuppdateringar
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Pausa tjänstuppdateringar
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Få meddelanden om tjänstuppdateringar
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Automatisering av datauppgift
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Leverera ISV-lösningar med en version
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa och automatisera användaracceptanstest
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Distribuera en demonstrationsmiljö
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Att tänka på vid distribuering
+              items:
+                - name: Distribueringsalternativ
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Molndistribution
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systemkrav för molndistributioner
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lokal distribution
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systemkrav för lokala distributioner
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Köp Finance + Operations (lokal)
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera lagerhållning för lokala distributioner
+                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations‑appar som drivs av 21Vianet i Kina
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations‑appar i Frankrike
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nyheter och ändringar
+              items:
+                - name: Nyheter och ändringar – startsida
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+                - name: Förhandsgranska funktioner i Finance and Operations‑appar version 10.0.6 (november 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations‑appar version 10.0.5 (oktober 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations 10.0.4 (juli 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Finance and Operations, Enterprise edition 7.3'
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Borttagna och utfasade funktioner
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: AX 2012-funktioner som har senarelagts
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funktioner som ännu inte har implementerats i lokala distributioner
+                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dokumentationsresurser
+              items:
+                - name: Hjälpsystem
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ansluta hjälpsystemet
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ansluta en anpassad hjälpwebbplats
+                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Visa och exportera fältbeskrivningar
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Uppgiftsinspelare
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa dokumentation eller utbildning med Uppgiftsinspelare
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Videoklipp
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ordlista
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Utbildningskatalog
+              items:
+                - name: Hemsida för utbildningskatalog
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Företagets beslutsfattare
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Företagsanvändare
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Projektledare för distribution
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Administratörer
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utvecklare
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Försäljning och marknadsföring för partners
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funktionskonsulter
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lösningsarkitekter
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Utforska användargränssnittet
+              items:
+                - name: Användargränssnittselement
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hjälpmedelsfunktioner
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Översikt över funktionshantering
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Frågor och svar för klient
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Åtgärdssökning
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Avancerad filtrerings- och frågesyntax
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera och filtrera arbetsytor
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Visa sidor sida vid sida med funktionen Öppna i nytt fönster
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kortkommandon
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ändra banderoller eller logotyper för juridiska personer
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Navigeringsökning
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anpassa användarupplevelsen
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Sparade vyer
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa och arbeta med anpassade fält
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bädda in PowerApps‑appar
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hitta information med hjälp av sökningar
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ändra datumet för en session
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ställa in en användares prioriterade tidszon
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Förstå Lifecycle Services
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/supply-chain/toc.json
+            - name: Livscykelhantering för implementering
+              items:
+                - name: Livscykelhantering för implementering – startsida
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arkitektur för Finance and Operations-appar
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Integrera ett implementeringsprojekt
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Miljöplanering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Förbereda publicering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Frågor och svar om publicering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skicka en serviceförfrågan
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klienter'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytta miljöer mellan datacenter
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytta licenser mellan avtalstyper
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klienter
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klient
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globalisering
+          items:
+            - name: Globaliseringsresurser
+              href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Regeluppdateringar
+              href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Ryssland
+              items:
+                - name: Ryssland – översikt
+                  href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lager
+                  items:
+                    - name: Varor på väg från leverantör
+                      href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Tillgångshantering
+          items:
+            - name: Översikt av tillgångshantering
+              href: asset-management/index.md
+              items:
+                - name: Funktionsplatser och tillgångar
+                  href: asset-management/overview/functional-locations-and-objects.md
+                - name: Tillgångar och arbetsorder
+                  href: asset-management/overview/objects-and-work-orders.md
+            - name: Inställning för funktionsplatser
+              items:
+                - name: Livscykelstadier för funktionsplats
+                  href: asset-management/setup-for-functional-locations/functional-location-stages.md
+                - name: Underhåll av attributtyper
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
+                - name: Funktionsplatstyper
+                  href: asset-management/setup-for-functional-locations/specification-types.md
+            - name: Funktionsplatser
+              items:
+                - name: Introduktion till funktionsplatser
+                  href: asset-management/functional-locations/introduction-to-functional-locations.md
+                - name: Skapa funktionsplatser
+                  href: asset-management/functional-locations/create-functional-locations.md
+                - name: Installera tillgångar på funktionsplatser
+                  href: asset-management/functional-locations/install-objects-on-functional-locations.md
+            - name: Inställning för tillgångar
+              items:
+                - name: Tillgångstyper
+                  href: asset-management/setup-for-objects/object-types.md
+                - name: Villkorsutvärdering
+                  href: asset-management/setup-for-objects/condition-assessment.md
+                - name: Tillgångstillverkare och modell
+                  href: asset-management/setup-for-objects/product-and-model.md
+                - name: Räknare
+                  href: asset-management/setup-for-objects/counters.md
+                - name: Parametrar för tillgångshantering
+                  href: asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+                - name: Tillgångs livscykeltillstånd
+                  href: asset-management/setup-for-objects/object-stages.md
+                - name: Tillgångs tjänstenivå
+                  href: asset-management/setup-for-objects/object-priorities.md
+                - name: Kritiskt för tillgång
+                  href: asset-management/setup-for-objects/object-criticalities.md
+                - name: Tillgångsdokument
+                  href: asset-management/setup-for-objects/object-documents.md
+                - name: Underhållsarbetare och arbetargrupper
+                  href: asset-management/setup-for-objects/workers-and-worker-groups.md
+            - name: Tillgångar
+              items:
+                - name: Introduktion till tillgångar
+                  href: asset-management/objects/introduction-to-objects.md
+                - name: Skapa en tillgång
+                  href: asset-management/objects/create-an-object.md
+                - name: Flernivåtillgångar
+                  href: asset-management/objects/multi-level-objects.md
+                - name: 'Flytta, ersätt och installera tillgångar'
+                  href: asset-management/objects/move-replace-and-install-objects.md
+                - name: Skapa tillgångar baserade på inköpsorder
+                  href: asset-management/objects/create-objects-based-on-purchase-orders.md
+                - name: Tillgångsstruktur
+                  href: /asset-management/objects/object-bom.md
+                - name: Historik för tillgångshändelse
+                  href: asset-management/objects/object-timeline.md
+                - name: Tillgångsvy
+                  href: asset-management/objects/object-view.md
+                - name: Översikt av tillgångsattribut
+                  href: asset-management/objects/object-specification-overview.md
+            - name: Inställning för underhållsbegäran
+              items:
+                - name: Underhållsbegäranden
+                  href: asset-management/setup-for-maintenance-requests/requests.md
+                - name: Underhållsbegärans livscykeltillstånd
+                  href: asset-management/setup-for-maintenance-requests/request-stages.md
+                - name: Typer av underhållsbegäran
+                  href: asset-management/setup-for-maintenance-requests/request-types.md
+                - name: Ansvariga underhållsarbetare
+                  href: asset-management/setup-for-maintenance-requests/responsible-workers.md
+            - name: Hantera underhållsbegäranden
+              items:
+                - name: Underhållsbegäranden
+                  href: asset-management/manage-maintenance-requests/maintenance-request-overview.md
+                - name: Skapa en underhållsbegäran
+                  href: asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+                - name: Skapa en arbetsorder från en underhållsbegäran
+                  href: asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+                - name: Tillgångslån
+                  href: asset-management/manage-maintenance-requests/asset-loan.md
+                - name: Ankommande och avgående tillgångar
+                  href: asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+                - name: Underhållsbegäransrapporter
+                  href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
+            - name: Inställningar för arbetsorder
+              items:
+                - name: 'Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor'
+                  href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+                - name: Livscykeltillstånd för arbetsorder
+                  href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+                - name: Typer av arbetsorder
+                  href: asset-management/setup-for-work-orders/work-order-types.md
+                - name: Projektinställningar för arbetsorder
+                  href: asset-management/setup-for-work-orders/work-order-project-setup.md
+                - name: Servicenivå och beskrivning
+                  href: asset-management/setup-for-work-orders/service-level-and-description.md
+                - name: Schemalagt utförande
+                  href: asset-management/setup-for-work-orders/scheduled-execution.md
+                - name: Felhantering
+                  href: asset-management/setup-for-work-orders/fault-management.md
+            - name: Arbetsorder
+              items:
+                - name: Introduktion till arbetsorder
+                  href: asset-management/work-orders/introduction-to-work-orders.md
+                - name: Manuellt skapade arbetsorder
+                  href: asset-management/work-orders/manually-created-workorders.md
+                - name: Underhållsprognoser
+                  href: asset-management/work-orders/maintenance-forecasts.md
+                - name: Anskaffning
+                  href: asset-management/work-orders/procurement.md
+                - name: Manuell uppdatering av tillgångsräknare
+                  href: asset-management/work-orders/manual-update-of-asset-counters.md
+                - name: Automatisk uppdatering av tillgångsräknare
+                  href: asset-management/work-orders/automatic-update-of-asset-counters.md
+                - name: Underhållschecklistor
+                  href: asset-management/work-orders/maintenance-checklists.md
+                - name: Underhållsstopp
+                  href: asset-management/work-orders/maintenance-downtime.md
+                - name: Lägg till fel i arbetsorder
+                  href: asset-management/work-orders/add-fault-to-work-order.md
+                - name: Arbetsorderrapport
+                  href: asset-management/work-orders/work-order-report.md
+                - name: Arbetsorderpooler
+                  href: asset-management/work-orders/work-order-pools.md
+                - name: Underhållsjobb för aktiva arbetsorder
+                  href: asset-management/work-orders/active-work-order-jobs-overview.md
+                - name: Arbetsorder och anläggningstillgångar
+                  href: asset-management/work-orders/work-orders-and-fixed-assets.md
+            - name: Integration med projekthantering och redovisning
+              items:
+                - name: 'Prognoser, arbetsorder och projekt'
+                  href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Förebyggande och reaktivt underhåll
+              items:
+                - name: Översikt över förebyggande underhåll
+                  href: asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+                - name: Underhållsplaner
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+                - name: Schemalägg underhållsplaner
+                  href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+                - name: Underhållsomgångar
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+                - name: Underhållsschema
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+                - name: Kostnad för underhållsschema
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+                - name: Skapa arbetsorder
+                  href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+                - name: Underhållsstopp
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+            - name: Kapacitetsplanering
+              items:
+                - name: Beräkna kapacitetsbeläggning
+                  href: asset-management/capacity-planning/calculate-capacity-load.md
+                - name: Beräkna artikelprognos
+                  href: asset-management/capacity-planning/calculate-item-forecast.md
+            - name: Schemaläggning av arbetsorder
+              items:
+                - name: Underhållsarbetares kalender och planering
+                  href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+                - name: Prioriterade underhållsarbetare
+                  href: asset-management/work-order-scheduling/preferred-maintenance-workers.md
+                - name: Schemalägg arbetsorder
+                  href: asset-management/work-order-scheduling/schedule-work-orders.md
+                - name: Skicka arbetsorder
+                  href: asset-management/work-order-scheduling/dispatch-work-order.md
+                - name: Planera arbetsorder på specifikt datum och tid
+                  href: asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+                - name: Schemalagda arbetsorder för underhållsjobb
+                  href: asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+                - name: Beräkna kapacitetsbeläggning på schemalagda arbetsorder
+                  href: asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+            - name: Förbrukning
+              items:
+                - name: Registrera förbrukning
+                  href: asset-management/consumption/register-consumption.md
+                - name: Skapa förbrukningsrapporter
+                  href: asset-management/consumption/create-consumption-reports.md
+            - name: Garanti
+              items:
+                - name: Garantiavtal
+                  href: asset-management/warranty/warranty-agreement.md
+                - name: Garanti på tillgångar och tillgångstyper
+                  href: asset-management/warranty/warranty-on-assets-and-asset-types.md
+            - name: Underhållsbudgetar
+              items:
+                - name: Underhållsbudgetar
+                  href: asset-management/maintenance-budgets/create-maintenance-budget.md
+                - name: Uppdatera underhållsbudgetar
+                  href: asset-management/maintenance-budgets/update-maintenance-budget.md
+            - name: Styrning och rapportering
+              items:
+                - name: Kostnads- och datumkontroll
+                  href: asset-management/controlling-and-reporting/cost-and-date-control.md
+                - name: Arbetstidskontroll
+                  href: asset-management/controlling-and-reporting/work-hour-control.md
+                - name: Kostnadskontroll för tillgångsfel
+                  href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
+                - name: Felanalys för tillgång
+                  href: asset-management/controlling-and-reporting/asset-fault-analysis.md
+                - name: 'KPI:er för tillgång'
+                  href: asset-management/controlling-and-reporting/asset-kpis.md
+                - name: Artikeln har använts
+                  href: asset-management/controlling-and-reporting/item-where-used.md
+                - name: Underhållsstatus
+                  href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Mobil arbetsyta för tillgångshantering
+              href: asset-management/asset-management-mobile-workspace.md
+        - name: Datahantering
+          items:
+            - name: Målenheter
+              href: asset-management/data-management/target-entities.md
+        - name: Kostnadsredovisning
+          items:
+            - name: Startsida för Kostnadsredovisning
+              href: ../finance/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Terminologi för kostnadsredovisning
+              href: ../finance/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 'Räkenskapskalendrar, räkenskapsår och perioder'
+              href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Ekonomiska dimensioner
+              href: ../finance/general-ledger/financial-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Ekonomiska dimensioner och bokföring
+              href: ../finance/general-ledger/Default-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Lägga till ekonomiska dimensioner i arbetsyta för ekonomichef
+              href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa kontostrukturer
+              href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Budgetöversikt
+              href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa dimensioner och importera dimensionsmedlemmar
+              href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimensioner för kostnadselement
+              href: ../finance/cost-accounting/cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa kostnadselement
+              href: ../finance/cost-accounting/tasks/create-cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostnadsobjektdimensioner
+              href: ../finance/cost-accounting/cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa kostnadsobjekt
+              href: ../finance/cost-accounting/tasks/create-cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar
+              href: ../finance/cost-accounting/map-cost-elements-dimension-members.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mappa dimension för kostnadselement
+              href: ../finance/cost-accounting/tasks/map-cost-element-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimensionshierarki
+              href: ../finance/cost-accounting/dimension-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa en organisationsrapporthierarki
+              href: ../finance/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Åtkomsträttigheter för en kostnadsobjektcontroller
+              href: ../finance/cost-accounting/access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurera åtkomsträttigheter för en kostnadsobjektcontroller
+              href: ../finance/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Definiera kostnadsstyrenheter
+              href: ../finance/cost-accounting/tasks/define-cost-control-units.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa en redovisning för kostnadsredovisning
+              href: ../finance/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar
+              href: ../finance/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Allokeringsunderlag
+              href: ../finance/cost-accounting/allocation-bases.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa och tilldela en kostnadsallokeringspolicy till en kostnadsstyrenhet
+              href: ../finance/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa och tilldela en kostnadsbeteendepolicy till en kostnadsstyrenhet
+              href: ../finance/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa och tilldela en kostnadsfördelningspolicy till en kostnadsstyrenhet
+              href: ../finance/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa en policy för samlade kostnader
+              href: ../finance/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Hantera en datakälla för huvudbok för kostnadsredovisning
+              href: ../finance/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Bearbeta och spåra källdata
+              href: ../finance/cost-accounting/tasks/process-trace-source-data.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Beräkning av indirekta kostnader
+              href: ../finance/cost-accounting/overhead-calculation.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Policy för samlade kostnader och omkostnadsberäkning
+              href: ../finance/cost-accounting/cost-rollup.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurera arbetsytan för kostnadsstyrning
+              href: ../finance/cost-accounting/cost-control-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurera parametrar för arbetsytan för kostnadskontroll
+              href: ../finance/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Information om säkerhet med åtkomstlistor och RLS i Microsoft Power BI
+              href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Använda innehållspaket för Microsoft Power BI-rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Använda arbetsytan för kostnadsstyrning för mobilappen Finance and Operations
+              href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Kostnadshantering
+          items:
+            - name: Kostnadshantering – startsida
+              href: cost-management/cost-management-home-page.md
+            - name: Krav för standardkostnader
+              items:
+                - name: Krav för översikt över standardkostnader
+                  href: cost-management/prerequisites-standard-costs.md
+                - name: Standardkostnadskonvertering – översikt
+                  href: cost-management/standard-cost-conversion-overview.md
+                - name: Förutsättning för en standardkostnadskonvertering
+                  href: cost-management/prerequisites-standard-cost-conversion.md
+                - name: Hantera uppdateringar av standardkostnad
+                  href: cost-management/manage-standard-cost-updates.md
+                - name: Begränsningar för kostnadsversioner för standardkostnader
+                  href: cost-management/restrictions-costing-versions-standard-costs.md
+                - name: Information som används i strukturlisteberäkningar med standardkostnader
+                  href: cost-management/information-used-bom-calculations-standard-costs.md
+                - name: Uppdatera standardkostnader i en tillverkningsmiljö
+                  href: cost-management/update-standard-costs-manufacturing-environment.md
+                - name: Uppdatera standardkostnader för en ny tillverkad artikel
+                  href: cost-management/update-standard-costs-new-manufactured-item.md
+                - name: Uppdatera standardkostnader i en icke-tillverkningsmiljö
+                  href: cost-management/update-standard-costs-non-manufacturing-environment.md
+                - name: Förbereda underhåll av standardkostnader för tillverkade artiklar
+                  href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+            - name: Kostnadsversioner
+              items:
+                - name: Översikt över kostnadsversioner
+                  href: cost-management/costing-versions.md
+                - name: Kostnadsredovisningar
+                  href: cost-management/costing-sheets.md
+                - name: Simulera kostnadsändringar med hjälp av en kostnadsversion för planerade kostnader
+                  href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+            - name: Lagerredovisning
+              items:
+                - name: Kostnadsobjekt
+                  href: cost-management/cost-object.md
+                - name: Visa saldo för kostnadsobjekt
+                  href: cost-management/tasks/view-cost-object-balance.md
+                - name: Visa lagerutdrag och KPI efter kostnadsobjekt
+                  href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+                - name: Kostnadsposter
+                  href: cost-management/cost-entries.md
+                - name: Visa kostnadsposter för ett kostnadsobjekt
+                  href: cost-management/tasks/view-cost-entries-cost-object.md
+                - name: Kostnadsgrupper
+                  href: cost-management/cost-groups.md
+                - name: FIFO med fysiskt värde och markering
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: Inkludera fysiskt värde
+                  href: cost-management/include-physical-value.md
+                - name: Lagerobjektvärden
+                  href: cost-management/physical-quantity.md
+                - name: LIFO-datum med fysiskt värde och markering
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO med fysiskt värde och markering
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Rörligt genomsnitt
+                  href: cost-management/moving-average.md
+                - name: Fysiska och finansiella uppdateringar
+                  href: cost-management/physical-financial-updates.md
+                - name: Löpande genomsnittlig självkostnad
+                  href: cost-management/running-average-cost-price.md
+                - name: Spåra löpande genomsnittlig kostnad per lagerdimension
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: Datum för viktat medelvärde
+                  href: cost-management/weighted-average-date.md
+                - name: Viktat genomsnitt med fysiskt värde och markering
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Lagerstängning
+                  href: cost-management/inventory-close.md
+                - name: Justera kostnadsvärden för lagerbehållning
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+            - name: Tillverkningsredovisning
+              items:
+                - name: Strukturlisteberäkningar
+                  href: cost-management/bom-calculations.md
+                - name: Beräkningsgrupper för strukturlista
+                  href: cost-management/bom-calculation-groups.md
+                - name: Kostnadskalkylering med automatisk lageravräkning
+                  href: cost-management/backflush-costing.md
+                - name: Gemensamma källor till produktionsavvikelser
+                  href: cost-management/common-sources-of-production-variances.md
+                - name: Kostnadskategorier som används i produktionsflöde
+                  href: cost-management/cost-categories-used-production-routings.md
+                - name: Kostnadskategorier som används i produktionskontroll och projekthanteringsredovisning
+                  href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+                - name: Visa avgifter för en tillverkad artikel
+                  href: cost-management/charges-manufactured-item.md
+                - name: Kostnadsanalys av produktionsorder
+                  href: cost-management/production-order-cost-analysis.md
+                - name: Kostnadsuppskattning av produktionsorder
+                  href: /cost-management/production-order-cost-estimation.md
+                - name: Visa aktuell PIA-status för en produktionsorder
+                  href: cost-management/tasks/view-current-wip-status-production-order.md
+                - name: 'Jämföra aktiva, uppskattade och faktiska kostnader på en produktionsorder'
+                  href: cost-management/tasks/compare-active-estimated-realized-costs.md
+                - name: Produktionsbokföring
+                  href: cost-management/production-posting.md
+                - name: Ställ in produkter som tillverkas eller anskaffas
+                  href: cost-management/manufactured-items-treated-as-purchased-items.md
+                - name: Metod för total kostnadsallokering
+                  href: cost-management/methodology-total-cost-allocation.md
+                - name: Periodisera konstanta kostnader för en tillverkad artikel
+                  href: cost-management/amortize-constant-costs-manufactured-item.md
+            - name: Power BI-innehållspaket för kostnadshantering
+              href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Intelligence
+          items:
+            - name: Intelligence – startsida
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Åtkomst till information och rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Power BI-innehåll
+              items:
+                - name: Power BI-innehåll – startsida
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utfall kontra budget
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Förmåner
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kassaöversikt
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ekonomichef – översikt
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompensation
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompensation och förmåner
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostnadsredovisningsanalys
+                  items:
+                    - name: Power BI-innehåll för kostnadsredovisningsanalys
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ställa in säkerhet för kostnadsredovisningsanalys Power BI-innehåll
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostnadshantering
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hantering av kredit och inkasso
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                - name: Medarbetarkompetenser och utveckling
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Medarbetarutveckling
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utläggshantering Power BI - innehåll
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finansiellt resultat
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ekonomiska insikter
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hantering av anläggningstillgångar
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                - name: Inlärning
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Organisationsutbildning
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Praxischef
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Produktionsprestanda
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Inköps- och utgiftsanalys
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rekrytering
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Retail Channel Performance
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Försäljnings- och lönsamhetsresultat
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Leverantörsbetalningar
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                - name: Resultat för lagerställe
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Personalmätningar
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rapportera och skriva ut dokument
+              items:
+                - name: Dokumentrapporteringstjänster – översikt
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera SSRS för lokala distributioner
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skriver ut
+                  items:
+                    - name: Dokumentetutskrift – översikt
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Installera dokumentflödesagenten för att aktivera nätverksutskrift
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Uppgradera Dokumentflödesagenten
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                    - name: Installera nätverksskrivare i lokala miljöer
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Skapa, publicera och skriva ut dokument i lokala distributioner'
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Köra Dokumentflödesagenten som en Windows-tjänst
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hjälp med att förhindra att tidsgränsen för långvariga rapporter löper ut
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tillgängliga SQL Server Reporting Services-rapporter
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa rapporteringslösningar
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Installera rapportformgivningsmallar
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anpassa App Suite-rapporter med tillägg
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utöka programsvitens rapportdatauppsättningar
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utöka rapportmenyobjekt för att omdirigera användares navigering
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa anpassade utformningar för affärsdokument
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Förhandsgranska PDF-dokument med ett inbäddat visningsprogram
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektronisk rapportering
+              items:
+                - name: Översikt över elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurationer
+                  items:
+                    - name: Skapa konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Förbered komponenter i den elektroniska rapporteringslösningen
+                      items:
+                        - name: Utforma domänspecifik datamodell
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Förbered programspecifika metadata
+                          items:
+                            - name: (ER) Förbered program-metadata som ska användas i RCS
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Tillgå programmets metadata med hjälp av ER-konfiguration
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Tillgå programmets metadata med hjälp av anslutna program
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Definiera modellmappningar och välja datakällor
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Mappa datamodell till utvalda datakällor
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Skapa en formatkonfiguration
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Mappa de skapade formatkomponenterna till datamodellelement
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Testa den förberedda ER‑lösningen i målprogrammet
+                      items:
+                        - name: (ER) Importera konfigurationer från RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generera elektroniska dokument för betalningar med en formatkonfiguration
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Uppgradera formatet genom att implementera en ny basversion för formatet
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Formeldesigner i elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hantera ER-modellmappning i separata ER-konfigurationer
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Välj datamodelldefinitioner när du skapar format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Generera rapporter genom att lägga till innehåll som råa XML-data
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                - name: (ER) Korsföretags datakällor i elektronisk rapportering
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utforma ER-format för att skapa utgående elektroniska dokument i olika format
+                  items:
+                    - name: (ER) Utforma en konfiguration för rapportgenerering i OPENXML-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: (ER) Utforma konfigurationer för att generera rapporter i Word-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utforma konfigurationer för att fylla i PDF-mallar
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bädda in bilder och former
+                  items:
+                    - name: (ER) Bädda in bilder och former i dokument som du skapar
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Exempel på hur du bäddar in bilder och figurer
+                      items:
+                        - name: Utforma konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Granska konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Skapa rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ändra format för elektronisk rapportering genom att tillämpa mallar från Excel igen
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Definiera ER‑konfigurationers beroende av andra komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Designa en ER-lösning för att använda ekonomiska dimensioner
+                  items:
+                    - name: Utforma datamodeller som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Mappa modeller som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utforma rapporter som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Köra rapporter som använder ekonomiska dimensioner som datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utforma ER-format för inventering och summering genom att använda information från genererad utmatning
+                  items:
+                    - name: Skapa format för att utföra inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera format för att utföra inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Använda beräkningar för att skapa utdata för inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Köra format för att utföra inventering och summering
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
+                  items:
+                    - name: Utforma format att dynamiskt lägga till kolumner i Excel-rapporter som horisontellt expanderbara intervall
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kör format som dynamiskt lägger till kolumner till rapporter från Excel som horisontellt expanderbara intervall
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Använd dokumenthanteringsfiler i formatutdata
+                  items:
+                    - name: Förbered datamodeller för att använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utöka datamodeller att använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skapa format som ska använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Köra format som ska använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ändra och köra format som ska använda dokumenthanteringsfiler i ER‑utdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Uppdatera programdata med elektronisk rapportering
+                  items:
+                    - name: Generera elektroniska dokument och uppdatera programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importera konfigurationer för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Utforma konfigurationer för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ändra modeller och mappningar för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ändra format för att skapa dokument med programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skapa dokument som omfattar programdata
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Importera data från inkommande filer med hjälp av ER-lösningar
+                  items:
+                    - name: Tolka inkommande dokument i olika format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera dataimport från manuellt markerade filer
+                      items:
+                        - name: Skapa konfigurationer för att importera data från en extern XML‑fil
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera dataimport i batchläge från filer i SharePoint
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importera filer i XML‑format
+                      items:
+                        - name: Importera filer i XML-format med valfria attribut
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurera ER‑format så att filer i XML-format importeras med valfria attribut
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Stöd parameteranrop till ER-datakällor för beräknad fälttyp
+                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Livscykel för konfiguration
+                  items:
+                    - name: Hantera livscykeln för konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ladda upp konfigurationer till Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importera konfigurationer från Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ladda ned konfigurationer från Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importera konfigurationer
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Hämta ER-konfigurationer från RCS-databasen
+                      items:
+                        - name: Hämta konfigurationer från ER-databasen för RCS‑typen
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importera konfigurationer från RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Använd elektroniska rapporteringslösningar i Finance and Operations
+                  items:
+                    - name: Konfigurera ramverket
+                      items:
+                        - name: Konfigurera ramverket för elektronisk rapportering
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Säkerhetskopiera och återställa ER-mallar
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Skapa konfigurationsleverantörer och markera dem som aktiva
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Destinationer
+                      items:
+                        - name: Översikt över destinationer
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurera destinationer
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Validera genererade rapporter automatiskt
+                      items:
+                        - name: Spåra genererade rapportresultat och jämför dem med baslinjevärden
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Automatisera testning med elektronisk rapportering
+                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Automatisera affärsprocesser med hjälp av elektroniska rapporteringskonfigurationer
+                      items:
+                        - name: Konfigurera elektronisk rapportering för att hämta data till Power BI
+                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generera utskrivbara formulär för fritextfakturor (FTI)
+                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Spåra körning av ER-format för att felsöka prestandaproblem
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Hantering av affärsdokument – översikt
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                - name: API för ER‑ramverk
+                  items:
+                    - name: Utöka listan med funktioner för elektronisk rapportering
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Ändringar av API:et för ramverket för elektronisk rapportering för Application update 7.3'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ange anpassad lagringsplats för skapade dokument
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Inbäddade analyslösningar
+              items:
+                - name: Inbäddad Power BI i arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI Embedded-integration
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anpassa inbäddade rapporter i analytiska arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Anpassningsalternativ med PowerBI.com
+              items:
+                - name: Funktioner och tjänster som är tillgängliga via Power BI-integration
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Fästa Power BI-rapporter vid arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Välj analysarbetsytor från PowerBI.com
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Verktyg för att skapa och bygga ut lösningar
+              items:
+                - name: 'Analys, aggregerade mått och KPI-modellering'
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa analytiska rapporter med Power BI Desktop
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Modellera och aggregera data
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lägga till ekonomiska dimensioner i aggregerade mått
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hjälp för säkra analytiska arbetsytor och rapporter med Power BI Embedded
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Hanteringsverktyg för privilegierade användare
+              items:
+                - name: Power BI-integration med enhetslagring
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lösa problem efter underhålla av enhetslagring
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                - name: Konfigurera Power BI-integration för arbetsytor
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ta med din egen databas
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Lagerhantering
+          items:
+            - name: Lagerhantering – översikt
+              href: inventory/inventory-home-page.md
+            - name: Införsel
+              items:
+                - name: Införsel – översikt
+                  href: inventory/arrival-overview.md
+                - name: Ställ in en översiktsprofil för artikelinförsel
+                  href: inventory/tasks/set-up-item-arrival-overview-profile.md
+            - name: Kvalitetshantering
+              items:
+                - name: Kvalitetshantering – översikt
+                  href: inventory/enable-quality-management.md
+                - name: Kvalitetshanteringsprocesser
+                  href: inventory/quality-management-processes.md
+                - name: Avvikelsehantering
+                  href: inventory/enable-nonconformance-management.md
+                - name: Ställ in förutsättningar för hantering
+                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
+                - name: Skapa och bearbeta en överensstämmelse
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Karantänorder
+                  href: inventory/quarantine-orders.md
+                - name: Ställ in kvalitetsorder
+                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Kontrollera kvaliteten på varor
+                  href: inventory/tasks/inspect-quality-goods.md
+                - name: Lagerspärr
+                  href: inventory/inventory-blocking.md
+                - name: Skapa och underhålla lagerspärr
+                  href: inventory/tasks/create-maintain-inventory-blocking.md
+            - name: Lageråtgärder
+              items:
+                - name: Lagerjournaler
+                  href: inventory/inventory-journals.md
+                - name: Lagerplatser
+                  href: inventory/inventory-locations.md
+                - name: Lagerstatus
+                  href: inventory/inventory-statuses.md
+                - name: Skapa en ny layout för lagerställe
+                  href: inventory/tasks/create-new-warehouse-layout.md
+                - name: Underhåll streckkodstyper
+                  href: inventory/tasks/maintain-barcode-types.md
+                - name: Kontrollera lagertillgängligheten
+                  href: inventory/tasks/check-availability-stock.md
+                - name: Initiera lagernivåer i lagerstället
+                  href: inventory/tasks/initialize-stock-levels-warehouse.md
+                - name: Överför fysiskt lager i lagerstället
+                  href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
+                - name: Justera lagernivåer i lagerstället (grundläggande lagerstyrning)
+                  href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
+                - name: Lagermärkesinventering
+                  href: inventory/inventory-tag-counting.md
+                - name: Inventering i ett lagerställe
+                  href: inventory/tasks/count-inventory-warehouse.md
+                - name: Definiera lagerberäkningsprocesser
+                  href: inventory/tasks/define-inventory-counting-processes.md
+                - name: Ställ in försändelse
+                  href: inventory/consignment.md
+                - name: Ändra ägarskapet för försändelselagret baserat på produktionsbegäran
+                  href: inventory/tasks/change-ownership-consignment.md
+                - name: Skapa en ny order för lagerpåfyllnad för försändelse
+                  href: inventory/tasks/create-consignment-replenishment-order.md
+                - name: Övervaka försändelselagret med hjälp av leverantörssamarbete
+                  href: inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
+                - name: 'Spåra artiklar och råmaterial i lager, produktion och försäljning'
+                  href: inventory/trace-items-raw-materials-inventory-production-sales.md
+                - name: Spåra en artikel eller råmaterial
+                  href: inventory/tasks/trace-item-or-raw-material.md
+                - name: Sammanfoga lagerbatch
+                  href: inventory/merge-inventory-batches.md
+                - name: Korrekt information om lagerspårning
+                  href: inventory/tasks/correct-inventory-tracking-information.md
+                - name: Registrera serienummer i försäljningsprocessen
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Mobil arbetsyta för inventering av lagerbehållning
+                  href: inventory/inventory-on-hand-mobile-workspace.md
+            - name: Utgående process
+              items:
+                - name: Utgående process – översikt
+                  href: inventory/outbound-process.md
+                - name: Reservera lagerkvantiteter
+                  href: inventory/reserve-inventory-quantities.md
+                - name: Reservera samma batch för en försäljningsorder
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+            - name: Lagerkontroll
+              items:
+                - name: Lagerstängning
+                  href: cost-management/inventory-close.md
+                - name: Löpande genomsnittlig självkostnad
+                  href: cost-management/running-average-cost-price.md
+                - name: Justera kostnadsvärde för lagerbehållning
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Spåra löpande genomsnittlig kostnad per lagerdimension
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Huvudplanering
+          items:
+            - name: Huvudplanering – startsida
+              href: master-planning/master-planning-home-page.md
+            - name: Huvudplaner
+              items:
+                - name: Huvudplaner – översikt
+                  href: master-planning/master-plans.md
+                - name: Ställ in huvudplaner
+                  href: master-planning/master-planning-setup.md
+                - name: Inställningsguide för huvudplanering
+                  href: master-planning/master-planning-setup-wizard.md
+                - name: Disponeringsinställningar
+                  href: master-planning/coverage-settings.md
+                - name: Definiera disponeringsregler för artiklar
+                  href: master-planning/tasks/define-coverage-rules-items.md
+                - name: Generera en begränsad plan
+                  href: master-planning/tasks/constrained-plan.md
+                - name: Skapa en materialplan för samprodukter
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Underhåll planerade order
+                  href: master-planning/maintain-planned-orders.md
+                - name: Säkerhet för artiklar i lageruppfyllelse
+                  href: master-planning/safety-stock-replenishment.md
+                - name: Fördröjningar
+                  href: master-planning/delays.md
+                - name: Använd spårning för nedbrytning
+                  href: master-planning/trace-explosion.md
+                - name: Åtgärdsmeddelanden
+                  href: master-planning/action-messages.md
+                - name: Övervaka en huvudplaneringskörning
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: Skapa en tidsplan för en plats
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Skapa en plan för en plats
+                  href: master-planning/tasks/create-plan-site.md
+                - name: Kalendrar och huvudplanering
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Förbättra huvudplaneringens prestanda
+                  href: master-planning/master-planning-performance.md
+                - name: Huvudplaner och funktioner för flera webbplatser
+                  items:
+                    - name: Huvudplanering och multisitefunktioner – översikt
+                      href: master-planning/master-plan-multisite-functionality.md
+                    - name: 'Huvudplanering för täckning av plats, lagerställe obligatoriskt'
+                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                    - name: 'Huvudplanering för täckning av plats, lagerställe inte obligatoriskt'
+                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                    - name: 'Huvudplanering för plats och lagerställe, lagerställe obligatoriskt'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                    - name: 'Huvudplanering för plats och lagerställe, lagerställe inte obligatoriskt'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                    - name: Avgör strukturlisteversion
+                      href: master-planning/master-plan-bom-version-determined.md
+                    - name: Nedbrytning av strukturlisteversion
+                      href: master-planning/master-plan-explosion-bom-version.md
+                - name: Negativa dagar och dynamiska negativa dagar
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Skapa en koncernintern plan
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: Visa utgående planerad koncernintern efterfrågan
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Samarbeta med interna kunder i leveranskedjan
+                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+            - name: Efterfrågeprognosticering
+              items:
+                - name: Efterfrågeprognosticering – översikt
+                  href: master-planning/introduction-demand-forecasting.md
+                - name: Inställning av efterfrågeprognosticering
+                  href: master-planning/demand-forecasting-setup.md
+                - name: Importera historiska data för efterfrågeprognoser
+                  href: master-planning/import-historical-data.md
+                - name: Generera en statistisk baslinjeprognos
+                  href: master-planning/generate-statistical-baseline-forecast.md
+                - name: Utför manuell justering i baslinjeprognosen
+                  href: master-planning/manual-adjustments-baseline-forecast.md
+                - name: Auktorisera en justerad efterfrågeprognos
+                  href: master-planning/authorize-adjusted-forecast.md
+                - name: Övervaka prognosens exakthet
+                  href: master-planning/monitor-forecast-accuracy.md
+                - name: Ta bort avskilda från historiska transaktionsdata när du beräknar en efterfrågeprognos
+                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                - name: Reduceringsnycklar
+                  href: master-planning/reduction-keys.md
+                - name: Skapa en baslinjeprognos
+                  href: master-planning/tasks/create-baseline-forecast.md
+                - name: Ändra en efterfrågeprognos manuellt
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Mobilapp
+          items:
+            - name: Startsida för mobilapp
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mobila arbetsytor
+              items:
+                - name: Tillgängliga mobila arbetsytor
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tillgångshantering
+                  href: asset-management/asset-management-mobile-workspace.md
+                - name: Företagskatalog
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostnadskontroll
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Utläggshantering
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lagerbehållning
+                  href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Fakturagodkännanden
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mitt team
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Project för mobila appar – Översikt
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Post för projekttid
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Project Timesheet
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Godkännande av inköpsorder
+                  href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Försäljningsorder
+                  href: sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Leverantörssamarbete
+                  href: procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Publicera mobila arbetsytor
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Office-integrering
+          items:
+            - name: Office-integrering – översikt
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Office-integrering – självstudier
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa Öppna i Excel-upplevelse
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Lägga till mallar på menyn Öppna rader i Excel
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Anpassa dialogrutan Öppna på Microsoft Office-menyn
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurera och skicka e-post
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Utveckla e-postmiljöer
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Felsöka Office-integrering
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Organisationsadministration
+          items:
+            - name: Organisationsadministration – startsida
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nummerserier
+              items:
+                - name: Nummerserier – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ställa in enskilda nummerserier
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ställa in nummerserier med hjälp av en guide
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Organisationer och organisationshierarkier
+              items:
+                - name: Organisationer och organisationshierarkier – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Planera en organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa en organisationshierarki
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa juridiska personer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa driftenheter
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Global adressbok
+              items:
+                - name: Översikt över global adressbok
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Planera för den globala adressboken och andra adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera den globala adressboken
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vanliga frågor och svar om adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera adressböcker
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Arbetsflödessystem
+              items:
+                - name: Arbetsflödessystem – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbetsflödessystemets arkitektur
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbetsflödeselement
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbetsflödesåtgärder
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa arbetsflöden
+                  items:
+                    - name: Skapa arbetsflöden – översikt
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera arbetsflödesegenskaper
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera manuella uppgifter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera automatiska uppgifter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera godkännandeprocesser
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera godkännandesteg
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera manuella beslut
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera villkorliga beslut
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera parallella aktiviteter
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera parallella grenar
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurera arbetsflöden för radartiklar
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera batchjobbet Meddelandebehandling i arbetsflöde som kritiskt
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Delegera arbetsuppgifter i ett arbetsflöde
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Visa arbetsflödeshistorik
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera systemet för att skicka arbetsflödesrelaterad e-post till användare
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbetsflödestyper
+                  items:
+                    - name: Skapar en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Checklista för arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skapa en arbetsflödeskategori
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skapa en fråga för en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skapa en ny arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skapa en arbetsflödesdokumentklass
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Skapa en SubmitToWorkflow-klass
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Associera en arbetsflödesdokumentklass med en arbetsflödestyp
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rapport för arbetsflödestyper
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vanliga frågor om arbetsflöde
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Notifieringar
+              items:
+                - name: Notifieringar – översikt
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa notifieringsregler
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Batchbearbetning av notifieringar
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kundnotifieringar via e-postmeddelande
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektroniska signaturer
+              items:
+                - name: Elektroniska underskrifter – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ställa in elektroniska signaturer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Ärendehantering
+              items:
+                - name: Översikt över ärendehantering
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Planera säkerhet, processer och kategorier för ärenden'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Postmallar
+              items:
+                - name: Postmallar – översikt
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Skapa en postmall
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Använda en postmall för att skapa en ny post
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurera dokumenthantering
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurera och skicka e-post
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Datum-/tidsdata och tidszoner
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Anskaffning och källa
+          items:
+            - name: Anskaffning och inköp – översikt
+              href: procurement/procurement-sourcing-overview.md
+            - name: Anskaffnings- och källarbetsflöden
+              href: procurement/procurement-sourcing-workflows.md
+            - name: Anskaffningskataloger
+              items:
+                - name: Anskaffningskataloger – översikt
+                  href: procurement/procurement-catalogs.md
+                - name: Skapa en anskaffningskatalog
+                  href: procurement/tasks/create-procurement-catalog.md
+                - name: Ställ in en anskaffningskategorihierarki
+                  href: procurement/tasks/set-up-procurement-category-hierarchy.md
+            - name: Inköpsrekvisitioner
+              items:
+                - name: Inköpsrekvisitioner – översikt
+                  href: procurement/purchase-requisitions-overview.md
+                - name: Arbetsflöde för inköpsrekvisitioner
+                  href: procurement/purchase-requisitions-workflow.md
+            - name: Anbudsförfrågningar (RFQ)
+              items:
+                - name: Anbudsförfrågningar (RFQ) – översikt
+                  href: procurement/request-quotations.md
+                - name: Skapa en anbudsförfrågan
+                  href: procurement/tasks/create-request-quotation.md
+                - name: Skapa en rekvisition som använder en anbudsförfrågan
+                  href: procurement/tasks/create-requisition-uses-rfq.md
+                - name: Skapa en poängmetod för anbudsförfrågan
+                  href: procurement/tasks/create-scoring-method-rfqs.md
+                - name: Skapa begäranstyper och poängvillkor för anbudsförfrågningar
+                  href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+                - name: Ange och jämför anbudsförfråganbud och tilldela kontrakt
+                  href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+            - name: Inköpsorder
+              items:
+                - name: Översikt av inköpsorder
+                  href: procurement/purchase-order-overview.md
+                - name: Godkänn och bekräfta inköpsorder
+                  href: procurement/purchase-order-approval-confirmation.md
+                - name: Mobil arbetsyta för inköpsordergodkännande
+                  href: procurement/purchase-order-mobile-workspace.md
+                - name: Registrera inleverans av varor på en inköpsorder
+                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+            - name: Skapande av inköpsorder
+              items:
+                - name: Skapa inköpsorder manuellt
+                  href: procurement/purchase-order-creation.md
+                - name: Skapa en inköpsorder
+                  href: procurement/tasks/create-purchase-order.md
+                - name: Skapa en inköpsorder med en leveransplan
+                  href: procurement/tasks/create-purchase-order-delivery-schedule.md
+                - name: Skapa en inköpsorder för en engångsleverantör
+                  href: procurement/tasks/create-purchase-order-one-time-supplier.md
+                - name: Skapa en inköpsfrisläppningsorder när inköpsordern skapas
+                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+                - name: Skapa en inköpsfrisläppningsorder från ett inköpsavtal
+                  href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
+                - name: Skapa en inköpsreturorder
+                  href: procurement/tasks/create-purchase-return-order.md
+                - name: Skapa projektinköpsorder
+                  href: procurement/tasks/create-project-purchase-order.md
+                - name: Skapa en upprepad inköpsorder
+                  href: procurement/tasks/create-repeat-purchase-order.md
+                - name: Skapa en rekvisition för förbrukning
+                  href: procurement/tasks/create-requisition-consumption.md
+            - name: Priser och rabatter
+              items:
+                - name: Inköpsavtal
+                  href: procurement/purchase-agreements.md
+                - name: Skapa ett nytt inköpsavtal
+                  href: procurement/tasks/create-purchase-agreement.md
+                - name: Leverantörsrabatter
+                  href: procurement/vendor-rebates.md
+            - name: Inköpspolicyer
+              items:
+                - name: Inköpspolicyer – översikt
+                  href: procurement/purchase-policies.md
+                - name: Skapa inköpspolicyer
+                  href: procurement/tasks/create-purchasing-policies.md
+                - name: Ställ in policyer för anskaffningskategorihierarkier
+                  href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Produktinleveranser och fakturering
+              items:
+                - name: Produktinleverans mot inköpsorder
+                  href: procurement/product-receipt-against-purchase-orders.md
+                - name: Översikt över leverantörsfakturor
+                  href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Leverantörshantering och samarbete
+              items:
+                - name: Skapa och underhåll leverantörssamarbete
+                  href: procurement/set-up-maintain-vendor-collaboration.md
+                - name: Hantera användare av leverantörssamarbete
+                  href: procurement/manage-vendor-collaboration-users.md
+                - name: Ställ in leverantörskonton
+                  href: procurement/set-up-vendor-accounts.md
+                - name: Skapa ett leverantörskonto
+                  href: procurement/tasks/create-vendor-account.md
+                - name: Skapa ett leverantörsbankkonto
+                  href: procurement/tasks/create-vendor-bank-account.md
+                - name: Bokföringsprofiler för leverantörer
+                  href: ../finance/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurationer för leverantörsförfrågan
+                  href: procurement/vendor-request-configurations.md
+                - name: Integration av leverantör
+                  href: procurement/vendor-onboarding.md
+                - name: Leverantörssamarbete med externa leverantörer
+                  href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Leverantörssamarbete med kunder
+                  href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: Importera leverantörskataloger
+                  href: procurement/vendor-catalogs-import.md
+                - name: Ställ in en extern katalog för PunchOut eProcurement
+                  href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Använd externa kataloger för PunchOut eProcurement
+                  href: procurement/use-external-catalogs-for-punchout.md
+                - name: Mobil arbetsyta för leverantörssamarbete
+                  href: procurement/vendor-collaboration-mobile-workspace.md
+                - name: Godkänn leverantörer för specifika anskaffningskategorier
+                  href: procurement/tasks/approve-vendors-specific-procurement-categories.md
+                - name: Godkänn leverantörer för specifika produkter
+                  href: procurement/tasks/approve-vendors-specific-products.md
+                - name: Sök efter leverantörer
+                  href: procurement/tasks/search-vendors.md
+                - name: Ställ in behörigheter för att beställa produkter för någon annans räkning
+                  href: procurement/tasks/set-up-permissions-ordering-products.md
+            - name: Uppgifter för anskaffning och källa
+              items:
+                - name: Ställ in information om projektresurs
+                  href: procurement/tasks/set-up-project-resource-information.md
+                - name: Skicka och godkänn projektbudgetar
+                  href: procurement/tasks/submit-approve-project-budget.md
+                - name: Skicka och godkänn ändringar av projektbudget
+                  href: procurement/tasks/submit-approve-project-budget-revision.md
+        - name: Produktinformationshantering
+          items:
+            - name: Översikt över produktinformation
+              href: pim/product-information.md
+            - name: Produktinformation
+              items:
+                - name: Produktidentifierare
+                  href: pim/product-identifiers.md
+                - name: Skapa en produktklassificeringshierarki
+                  href: pim/tasks/create-hierarchy-product-classification.md
+                - name: Klassificera en produkt med hjälp av kategorihierarkier
+                  href: pim/tasks/classify-product-category-hierarchies.md
+                - name: Nomenklatur för produktnummer
+                  href: pim/product-variant-identification-nomenclature.md
+                - name: Skapa en produktnummernomenklatur för fördefinierade produktvarianter
+                  href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
+                - name: Skapa en produktnummernomenklatur för konfigurerade produktvarianter
+                  href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
+                - name: Skapa en ny produkt
+                  href: pim/tasks/create-new-product.md
+                - name: Skapa en produktmall
+                  href: pim/tasks/create-product-master.md
+                - name: Skapa fördefinierade produktvarianter
+                  href: pim/tasks/create-predefined-product-variants.md
+                - name: Måttenhetskonvertering per produktvariant
+                  href: pim/uom-conversion-per-product-variant.md
+                - name: Skapa en frisläppt produkt för ett enskilt företag
+                  href: pim/tasks/create-released-product-single-company.md
+                - name: Produktens livscykeltillstånd
+                  items:
+                    - name: Produktens livscykeltillstånd – översikt
+                      href: pim/product-lifecycle.md
+                    - name: Skapa ett nytt livscykeltillstånd för produkt
+                      href: pim/tasks/new-product-lifecycle-state.md
+                    - name: Skapa ett standardlivscykeltillstånd för produkt
+                      href: pim/tasks/default-product-lifecycle-state.md
+                    - name: Tilldela ett produktlivscykeltillstånd för en frisläppt produktmall
+                      href: pim/tasks/product-lifecycle-state-released-product-master.md
+                    - name: Tilldela ett produktlivscykeltillstånd för en frisläppt produkt
+                      href: pim/tasks/product-lifecycle-state-released-product.md
+                    - name: Sök efter inaktuella produktvarianter
+                      href: pim/tasks/obsolete-product-variants.md
+                    - name: Exkludera produkter från huvudplanering
+                      href: pim/tasks/exclude-products-master-planning.md
+                - name: Skapa en streckkod för en produkt
+                  href: pim/tasks/create-bar-code-product.md
+                - name: Ange GTIN-koden för en produkt
+                  href: pim/tasks/enter-gtin-code-product.md
+                - name: Skapa batchattribut för en produkt
+                  href: pim/tasks/create-batch-attributes-product.md
+                - name: Lägg till en bild till en produkt
+                  href: pim/tasks/add-image-product.md
+                - name: Vanliga frågor och svar om översättning av produktinformation
+                  href: pim/translations-product-related-information.md
+                - name: Sök efter produkt under orderregistreringen
+                  href: pim/search-products-product-variants.md
+                - name: Standardorderinställningar för dimensioner och produktvarianter
+                  href: production-control/default-order-settings.md
+                - name: Strukturlistor och formler
+                  href: production-control/bill-of-material-bom.md
+                - name: Använda strukturlistedesignern
+                  href: production-control/bom-designer-functionality.md
+                - name: Använda formeldesignern
+                  href: production-control/formula-designer.md
+                - name: Lägg till variantprodukter i inköpsorder med hjälp av variantvikter
+                  href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
+                - name: Skapa en försäljningsorder för en konfigurerbar produkt
+                  href: pim/tasks/create-sales-order-configurable-product.md
+                - name: Skapa urvalskriterier för försäljningspris
+                  href: pim/tasks/create-sales-price-selection-criteria.md
+                - name: Ställ in attributbaserad prissättning för konfigurerbara produkter
+                  href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
+                - name: Strukturlisteberäkningar
+                  href: cost-management/bom-calculations.md
+            - name: Produktkonfiguration
+              items:
+                - name: Produktkonfiguration – översikt
+                  href: pim/build-product-configuration-model.md
+                - name: Skapa en dimensionsbaserad konfiguration
+                  items:
+                    - name: Dimensionsbaserad produktkonfiguration – översikt
+                      href: pim/dimension-based-product-configuration.md
+                    - name: Produktdimension
+                      href: pim/product-dimensions.md
+                    - name: Skapa en dimensionsbaserad produktmall
+                      href: pim/tasks/create-dimension-based-product-master.md
+                    - name: Frisläpp en dimensionsbaserad produktmall
+                      href: pim/tasks/release-dimension-based-product-master.md
+                    - name: Slutför grundläggande inställningar för en frisläppt produktmall
+                      href: pim/tasks/complete-basic-setup-released-product-master.md
+                    - name: Definiera konfigurationsgrupper
+                      href: pim/tasks/define-configuration-groups.md
+                    - name: Skapa en strukturlista för en dimensionsbaserad produktmall
+                      href: pim/tasks/create-bill-materials-dimension-based-product-master.md
+                    - name: Definiera konfigurationsflöden
+                      href: pim/tasks/define-configuration-route.md
+                    - name: Skapa konfigurationsregler
+                      href: pim/tasks/create-configuration-rules.md
+                    - name: Skapa dimensionsbaserade konfigurationer
+                      href: pim/tasks/create-dimension-based-configurations.md
+                - name: Skapa en begränsningsbaserad konfiguration
+                  items:
+                    - name: Ställ in produktkonfigurationsmodell
+                      href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Vanliga frågor om beräkning för produktkonfigurationsmodell
+                      href: pim/calculate-product-configuration-models.md
+                    - name: Konfigurationsregel
+                      href: pim/configuration-rules.md
+                    - name: Uttrycksbegränsning och tabellbegränsning
+                      href: pim/expression-constraints-table-constraints-product-configuration-models.md
+                    - name: Lösarstrategi för produktkonfiguration
+                      href: pim/solver-strategy-product-configuration.md
+                    - name: Återanvänd produktkonfiguration
+                      href: pim/reuse-product-configurations.md
+                    - name: Systemdefinierad och användardefinierad registerbegränsning
+                      href: pim/system-defined-user-defined-table-constraints.md
+                    - name: Skapa produktmodellkomponenter
+                      href: pim/tasks/create-product-model-components.md
+                    - name: Skapa en produktkonfigurationsmodell
+                      href: pim/tasks/create-product-configuration-model.md
+                    - name: Lägg till en uttrycksbegränsning i en produktkonfigurationsmodell
+                      href: pim/tasks/add-expression-constraint-product-configuration-model.md
+                    - name: Lägg till en beräkning i en produktkonfigurationsmodell
+                      href: pim/tasks/add-calculation-product-configuration-model.md
+                    - name: Underhåll strukturlista för produktkonfigurationsmodell
+                      href: pim/tasks/maintain-bom-product-configuration-model.md
+                    - name: Underhåll ett flöde för en produktmodell
+                      href: pim/tasks/maintain-route-product-model.md
+                    - name: Godkänn en produktkonfigurationsmodell
+                      href: pim/tasks/approve-product-configuration-model.md
+                    - name: Överför data för produktmodeller
+                      href: pim/tasks/transfer-data-product-models.md
+        - name: Produktionskontroll
+          items:
+            - name: Produktionsprocess – översikt
+              href: production-control/production-process-overview.md
+            - name: 'Blandad planering: Kombinera diskret-, process- och lean-anskaffning'
+              href: production-control/mixed-mode-plan.md
+            - name: Hantera legotillverkningsarbetsuppgift i produktion
+              href: production-control/manage-subcontract-work-production.md
+            - name: Diskret tillverkning
+              items:
+                - name: Underhåll produktionshuvuddata
+                  items:
+                    - name: Inställningskrav för produktion
+                      href: production-control/production-set-up-requirements.md
+                    - name: Strukturlistor och formler
+                      href: production-control/bill-of-material-bom.md
+                    - name: Funktionen Strukturlistedesigner
+                      href: production-control/bom-designer-functionality.md
+                    - name: Fiktiva artiklar
+                      href: production-control/phantom-items.md
+                    - name: Strukturlisteberäkningar
+                      href: cost-management/bom-calculations.md
+                    - name: Hantera måttenhet
+                      href: pim/tasks/manage-unit-measure.md
+                    - name: Produktionsparametrar i Tillverkningskörning
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Verksamhetsresurser
+                      href: production-control/operations-resources.md
+                    - name: Skapa en verksamhetsresurs
+                      href: production-control/tasks/create-operations-resource.md
+                    - name: Resurskunskaper
+                      href: production-control/resource-capabilities.md
+                    - name: Definiera resurskunskaper
+                      href: production-control/tasks/define-resource-capabilities.md
+                    - name: Flöden och operationer
+                      href: production-control/routes-operations.md
+                    - name: Policyer för lagerarbete
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Skapa planeringsegenskaper för arbetstider
+                      href: production-control/tasks/create-working-time-scheduling-properties.md
+                    - name: Skapa arbetstidsmallar
+                      href: production-control/tasks/create-working-time-templates.md
+                    - name: Definiera diskret tillverkningsresursgrupp
+                      href: production-control/tasks/define-discrete-manufacturing-resource-group.md
+                    - name: Lägg till en befintlig aktivitet i en produktionsflödesversion
+                      href: production-control/tasks/add-existing-activity-production-flow-version.md
+                    - name: Inaktivera en produktionsflödesversion
+                      href: production-control/tasks/deactivate-production-flow-version.md
+                    - name: Definiera ett utgångsdatum för en produktionsflödesversion
+                      href: production-control/tasks/define-expiry-date-production-flow-version.md
+                    - name: Definiera produktionsflödesmodeller
+                      href: production-control/tasks/define-production-flow-models.md
+                - name: Tidsplanera produktionsoperationer
+                  items:
+                    - name: Grovplanering
+                      href: production-control/operations-scheduling.md
+                    - name: Finplanering
+                      href: production-control/job-scheduling.md
+                    - name: Gantt-diagram för jobbplanering
+                      href: production-control/visual-scheduling-production.md
+                    - name: Alternativ för grovplanering
+                      href: production-control/operation-scheduling-options.md
+                    - name: Tidsplanera en produktionsorder med operationer och jobbplanering
+                      href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
+                - name: Köra produktionsjobb
+                  items:
+                    - name: Hantera livscykel för produktionsorder
+                      items:
+                        - name: Livscykel för produktionsorder – översikt
+                          href: production-control/create-production-orders.md
+                        - name: Skapa en produktionsorder
+                          href: production-control/tasks/create-production-order.md
+                        - name: Uppskatta en produktionsorder
+                          href: production-control/tasks/estimate-production-order.md
+                        - name: Tidsplanera en produktionsorder
+                          href: production-control/tasks/schedule-production-order.md
+                        - name: Frisläpp en produktionsorder
+                          href: production-control/tasks/release-production-order.md
+                        - name: Starta en produktionsorder
+                          href: production-control/tasks/start-production-order.md
+                        - name: Rapportera en produktionsorder som slutförd
+                          href: production-control/tasks/report-production-order-finished.md
+                        - name: Avsluta en produktionsorder
+                          href: production-control/tasks/end-production-order.md
+                    - name: Frisläpp produktionsorder
+                      href: production-control/release-production-orders.md
+                    - name: Rapportera produktionsorder som slutförda
+                      href: production-control/report-production-orders-as-finished.md
+                    - name: Rapportera som färdig till en plats som styrs av registreringsskylt
+                      href: production-control/report-finished-job-device.md
+                    - name: Återför produktionsorderstatus
+                      href: production-control/reverse-production-order-status.md
+                    - name: Insyn i materialundantag
+                      href: production-control/improved-visibility-into-material-exceptions.md
+                    - name: Frisläpp strukturliste- och formelrader till lagerstället
+                      href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
+                    - name: Registrera materialförbrukning med en mobil enhet
+                      href: production-control/register-material-consumption-hand-held-device.md
+                    - name: Styr råmaterialförbrukning med avräkningsprinciper
+                      href: production-control/flushing-principles.md
+                    - name: Direktleverans från produktionsorder till utlastningsplatser
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Ställ in produktionsutleveransplats för färdiga varor
+                      href: production-control/production-output-location.md
+                    - name: Rapportera strukturlistor som slutförda
+                      href: production-control/report-boms-as-finished.md
+                    - name: Rapportera som färdig till en plats som styrs av ID-nummer
+                      href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
+                    - name: Rapportera framsteg på en mobil jobbenhet
+                      href: production-control/tasks/report-progress-mobile-job-device.md
+                    - name: Använd säkerhetslagerjournalen för att uppdatera minimumdisponering
+                      href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
+                    - name: Materialersättning i tillverkning
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrering för tillverkningskörning
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Produktionsåterrapportering
+                      href: production-control/production-feedback.md
+                    - name: Aktivera löneprocessen för tid och närvaro
+                      href: production-control/tasks/payroll-process-time-attendance.md
+                    - name: Konfigurera en arbetare med den mobila jobbenheten
+                      href: production-control/tasks/worker-mobile-job-device.md
+                - name: Hantera ekonomi i produktionen
+                  items:
+                    - name: Fördela tid till jobb i en jobbunt
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Beräkna materialförbrukning
+                      href: production-control/consumption.md
+                    - name: Produktionsbokföring
+                      href: cost-management/production-posting.md
+                - name: Tid- och närvaroregistrering
+                  items:
+                    - name: Tid- och närvaroregistrering – översikt
+                      href: production-control/time-attendance-registrations.md
+                    - name: Lön baserat på registreringar
+                      href: production-control/pay-based-on-registrations.md
+                    - name: Frånvaroregistrering i Tid och närvaro
+                      href: production-control/absence-registration-in-time-and-attendance.md
+                    - name: Flexgrupper
+                      href: production-control/time-attendance-flex-groups.md
+            - name: Lean manufacturing
+              items:
+                - name: Lean manufacturing – översikt
+                  href: production-control/lean-manufacturing-overview.md
+                - name: Aktivitetsbaserad legotillverkning
+                  href: production-control/activity-based-subcontracting.md
+                - name: Underhåll produktionshuvuddata
+                  items:
+                    - name: Skapa en lean-organisation
+                      href: production-control/lean-manufacturing-modeling-lean-organization.md
+                    - name: Verksamhetsresurser
+                      href: production-control/operations-resources.md
+                    - name: Definiera arbetsgrupper för lean manufacturing
+                      href: production-control/tasks/define-lean-manufacturing-work-cells.md
+                    - name: Definiera resurssnåla schemagrupper
+                      href: production-control/tasks/define-lean-schedule-groups.md
+                - name: Tidsplanera kanban-jobb
+                  items:
+                    - name: Visuell tidsplanering för lean manufacturing
+                      href: production-control/visual-scheduling-lean-manufacturing.md
+                    - name: Kanban-jobbplanering för lean manufacturing
+                      href: production-control/lean-manufacturing-kanban-job-scheduling.md
+                    - name: Finplanering
+                      href: production-control/job-scheduling.md
+                - name: Kör kanban-jobb
+                  items:
+                    - name: Stöd för kanban-överföringstavla för streckkodsskannrar
+                      href: production-control/kanban-transfer-board-support-barcode-scanner.md
+                    - name: Produktionsåterrapportering
+                      href: production-control/production-feedback.md
+                    - name: Skapa en produktionsflödesversion
+                      href: production-control/tasks/create-production-flow-version.md
+                    - name: Skapa processaktiviteter för lean manufacturing
+                      href: production-control/tasks/create-process-activities-lean-manufacturing.md
+                    - name: Skapa överföringsaktiviteter för lean manufacturing
+                      href: production-control/tasks/create-transfer-activities-lean-manufacturing.md
+                    - name: Validera produktionsflöde och version
+                      href: production-control/tasks/validate-production-flow-version.md
+                    - name: Aktivera en produktionsflödesversion
+                      href: production-control/tasks/activate-production-flow-version.md
+                    - name: 'Skapa aktivitetsrelation: Efterträdare'
+                      href: production-control/tasks/create-activity-relation-successor.md
+                    - name: Lägg till en föregångare i en produktionsflödesaktivitet
+                      href: production-control/tasks/add-predecessor-production-flow-activity.md
+                    - name: Skapa en värdeström
+                      href: production-control/tasks/create-value-stream.md
+                    - name: Lean-pegging från försäljningsorder
+                      href: production-control/tasks/lean-pegging-sales-orders.md
+                    - name: Skapa en arbetsgrupp för legotillverkning för lean manufacturing
+                      href: production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md
+                    - name: Lägg till en beräkning av kanban-kvantitet i en kanban-regel
+                      href: production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md
+                    - name: Beräkna förslag till kanban-kvantitet
+                      href: production-control/tasks/calculate-kanban-quantity-suggestions.md
+                    - name: Ändra kanban-regel för ett processjobb
+                      href: production-control/tasks/change-kanban-rules-process-job.md
+                    - name: Skapa en kanban-regel för strukturlistehändelse
+                      href: production-control/tasks/create-bom-line-event-kanban-rule.md
+                    - name: Skapa en kanban-regel för fast kvantitet för tillverkning
+                      href: production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md
+                    - name: Skapa en kanban-regel med en kanban-radhändelse
+                      href: production-control/tasks/create-kanban-rule-kanban-line-event.md
+                    - name: Skapa en kanban-regel med en minsta lagerhändelse
+                      href: production-control/tasks/create-kanban-rule-minimum-stock-event.md
+                    - name: Skapa en kanban-regel för flera aktiviteter
+                      href: production-control/tasks/create-kanban-rule-multiple-activities.md
+                    - name: Skapa en ny kanban-regel genom att duplicera en befintlig kanban-regel
+                      href: production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md
+                    - name: Skapa en kanban-regel för ersättning
+                      href: production-control/tasks/create-replacement-kanban-rule.md
+                    - name: Skapa en kanban-regel för försäljningshändelse
+                      href: production-control/tasks/create-sales-event-kanban-rule.md
+                    - name: Skapa en kanban-regel för uttag
+                      href: production-control/tasks/create-withdrawal-kanban-rule.md
+                    - name: Kör kanban-processjobb
+                      href: production-control/tasks/execute-kanban-process-jobs.md
+                    - name: Flytta tidsplanerade kanban-jobb
+                      href: production-control/tasks/move-scheduled-kanban-jobs.md
+                    - name: Förbered ett kanban-processjobb när material är tillgängliga för arbetsgruppen
+                      href: production-control/tasks/prepare-kanban-job-materials.md
+                    - name: Förbered ett kanban-processjobb när material är inte tillgängliga för arbetsgruppen
+                      href: production-control/tasks/prepare-process-kanban-job-materials-not-available.md
+                    - name: Ta bort ett kanban-jobb från tidsplanen
+                      href: production-control/tasks/remove-kanban-job-schedule.md
+                    - name: Återställ kanban-jobbstatus
+                      href: production-control/tasks/revert-kanban-job-status.md
+                    - name: Tidsplanera kanban-jobb
+                      href: production-control/tasks/schedule-kanban-jobs.md
+                    - name: Överför material med kanban-jobb
+                      href: production-control/tasks/transfer-materials-kanban-jobs.md
+                    - name: Uppdatera kanban-status
+                      href: production-control/tasks/update-kanban-status.md
+            - name: Processtillverkning
+              items:
+                - name: Underhåll produktionshuvuddata
+                  items:
+                    - name: Strukturlistor och formler
+                      href: production-control/bill-of-material-bom.md
+                    - name: Formler och formelversioner
+                      href: production-control/formulas-versions.md
+                    - name: Verksamhetsresurser
+                      href: production-control/operations-resources.md
+                    - name: Resurskunskaper
+                      href: production-control/resource-capabilities.md
+                    - name: Batchattribut
+                      href: production-control/batch-attributes.md
+                    - name: Batchbalansering
+                      href: production-control/batch-balancing.md
+                    - name: Produktbearbetning med faktisk/nominell vikt
+                      href: warehousing/catch-weight-processing.md
+                    - name: Kopiera en formel
+                      href: production-control/tasks/copy-formula.md
+                    - name: Kopiera samprodukter från en befintlig formelversion
+                      href: production-control/tasks/copy-co-products-existing-formula-version.md
+                    - name: Skapa en formel genom att kopiera från en befintlig formel
+                      href: production-control/tasks/create-formula-copying-existing-formula.md
+                    - name: Produktionsparametrar i Tillverkningskörning
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Inställningskrav för produktion
+                      href: production-control/production-set-up-requirements.md
+                - name: Tidsplanera produktionsoperationer
+                  items:
+                    - name: Grovplanering
+                      href: production-control/operations-scheduling.md
+                    - name: Alternativ för grovplanering
+                      href: production-control/operation-scheduling-options.md
+                    - name: Finplanering
+                      href: production-control/job-scheduling.md
+                - name: Köra produktionsjobb
+                  items:
+                    - name: Konsoliderade batchorder
+                      href: production-control/consolidated-batch-orders.md
+                    - name: Batchorderlivscykel för början till start
+                      href: production-control/tasks/batch-order-lifecycle-start.md
+                    - name: Ordningsföljd för produktionsjobb för processtillverkning
+                      href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
+                    - name: Materialersättning i tillverkning
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrering för tillverkningskörning
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Produktionsåterrapportering
+                      href: production-control/production-feedback.md
+                    - name: Tid- och närvaroregistrering
+                      href: production-control/time-attendance-registrations.md
+                - name: Hantera ekonomi i produktionen
+                  items:
+                    - name: Fördela tid till jobb i en jobbunt
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Beräkna materialförbrukning
+                      href: production-control/consumption.md
+                    - name: Produktionsbokföring
+                      href: cost-management/production-posting.md
+        - name: Försäljning och marknadsföring
+          items:
+            - name: Försäljning och marknadsföring – översikt
+              href: sales-marketing/overview-sales-marketing.md
+            - name: Försäljningsorder
+              items:
+                - name: Orderlöfte
+                  href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Deadlines för orderregistrering
+                  href: sales-marketing/order-entry-deadlines.md
+                - name: Leveransalternativ
+                  href: sales-marketing/delivery-alternatives.md
+                - name: Direktleveranser
+                  href: sales-marketing/direct-deliveries.md
+                - name: Leveransplaner
+                  href: sales-marketing/delivery-schedules.md
+                - name: Skapa en leveransplan
+                  href: sales-marketing/tasks/create-delivery-schedule.md
+                - name: Serienummer i försäljningsprocessen
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Reservation från samma batch
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+                - name: Mobil arbetsyta för försäljningsorder
+                  href: sales-marketing/sales-orders-mobile-workspace.md
+                - name: Leverera order som direktleveranser
+                  href: sales-marketing/tasks/ship-orders-direct-deliveries.md
+                - name: Leverera försäljningsorder utan lagerhållning
+                  href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Skapa en inköpsorder från en försäljningsorder
+                  href: sales-marketing/tasks/create-purchase-order-sales-order.md
+                - name: Skapa försäljningsorder
+                  href: sales-marketing/tasks/create-sales-orders.md
+                - name: Hantera orderspärrar
+                  href: sales-marketing/tasks/manage-order-holds.md
+                - name: Bekräfta försäljningsorder
+                  href: sales-marketing/tasks/confirm-sales-orders.md
+            - name: Försäljningsavtal
+              items:
+                - name: Försäljningsavtal – översikt
+                  href: sales-marketing/sales-agreements.md
+                - name: Ange försäljningsavtal
+                  href: sales-marketing/tasks/enter-sales-agreements.md
+                - name: Uppfyll försäljningsavtal
+                  href: sales-marketing/tasks/fulfill-sales-agreements.md
+                - name: Generera och bearbeta kundrabatter
+                  href: sales-marketing/tasks/process-customer-rebates.md
+                - name: Bearbeta rabatter för betalning
+                  href: sales-marketing/tasks/process-rebates-payment.md
+                - name: Slå upp tillämpliga priser och rabatter
+                  href: sales-marketing/tasks/look-up-applicable-prices-discounts.md
+            - name: Försäljningsofferter
+              items:
+                - name: Prissimulering
+                  href: sales-marketing/price-simulation.md
+                - name: Masskapa försäljningsofferter
+                  href: sales-marketing/tasks/mass-sales-quotations.md
+                - name: Skapa och redigera försäljningsofferter
+                  href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Returer
+              items:
+                - name: Försäljningsreturer
+                  href: warehousing/sales-returns.md
+            - name: Provision
+              items:
+                - name: Registrera försäljningsprovisioner
+                  href: sales-marketing/tasks/register-sales-commissions.md
+                - name: Ställa in regler för försäljningsprovision
+                  href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Handelsavdrag
+              href: sales-marketing/trade-allowance.md
+            - name: Skapa ett nytt handelsavtal
+              href: sales-marketing/tasks/create-new-trade-agreement.md
+        - name: Tjänsthantering
+          items:
+            - name: Tjänsthantering – översikt
+              href: service-management/service-management-home-page.md
+            - name: Ställ in kundtjänst
+              items:
+                - name: Ställ in serviceavtal
+                  items:
+                    - name: Serviceavtal – översikt
+                      href: service-management/service-agreement-groups.md
+                    - name: Skapa serviceavtal
+                      href: service-management/create-service-agreements.md
+                    - name: Serviceintervall
+                      href: service-management/service-intervals.md
+                    - name: Ställ in serviceintervall
+                      href: service-management/set-up-service-intervals.md
+                    - name: Tidsfönster
+                      href: service-management/time-windows.md
+                    - name: Skapa tidsfönster
+                      href: service-management/create-time-windows.md
+                    - name: Skapa en servicemallgrupp
+                      href: service-management/create-service-template-group.md
+                - name: Ställ in serviceuppgifter
+                  items:
+                    - name: Serviceuppgifter – översikt
+                      href: service-management/service-tasks.md
+                    - name: Skapa serviceuppgiftsrelationer
+                      href: service-management/create-service-task-relations.md
+                - name: Ställ in serviceobjekt
+                  items:
+                    - name: Serviceobjekt – översikt
+                      href: service-management/service-objects.md
+                    - name: Skapa serviceobjekt
+                      href: service-management/create-service-task-relations.md
+                    - name: Koppla lagerartiklar till serviceobjekt
+                      href: service-management/attach-inventory-items-service-objects.md
+                    - name: Serviceobjektgrupper
+                      href: service-management/service-object-groups.md
+                    - name: Ställ in mall för att representera objekt hos kunden
+                      href: service-management/set-up-template-to-represent-objects-at-customer-site.md
+                    - name: Serviceobjektrelationer
+                      href: service-management/service-object-relations.md
+                    - name: Skapa serviceobjektrelationer
+                      href: service-management/create-service-object-relations.md
+                    - name: Strukturlistemallar
+                      href: service-management/template-boms.md
+                    - name: Skapa en strukturlistemall
+                      href: service-management/create-template-bom.md
+                    - name: Koppla mallar till serviceobjekt
+                      href: service-management/attach-templates-service-objects.md
+                - name: Definiera orsakskoder för serviceorder
+                  items:
+                    - name: Orsakskoder för serviceorder
+                      href: service-management/reason-codes-service-orders.md
+                    - name: Stadier för serviceorder
+                      href: service-management/service-order-stages.md
+                    - name: Ställ in stadier för serviceorder
+                      href: service-management/set-up-service-order-stages.md
+                    - name: Skapa orsakskoder
+                      href: service-management/create-reason-codes.md
+                - name: Ställ in serviceavtal och serviceabonnemang
+                  items:
+                    - name: Servicenivåavtal – översikt
+                      href: service-management/service-level-agreements.md
+                    - name: Abonnemangsförsäljningspriser
+                      href: service-management/subscription-sales-prices.md
+                    - name: Abonnemangsgrupper
+                      href: service-management/subscription-groups.md
+                    - name: Ställ in abonnemangsgrupper
+                      href: service-management/set-up-subscription-groups.md
+                    - name: Använd orsakskoder för stadium
+                      href: service-management/use-stage-reason-codes.md
+                    - name: Integration för serviceavtal och projekt
+                      href: service-management/integration-service-agreements-projects.md
+                - name: Ställa in reparationshantering
+                  href: service-management/repair-management.md
+                - name: Ange inställningar för kundreturer
+                  items:
+                    - name: Kundreturer – översikt
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Ställ in dispositionskoder
+                      href: service-management/set-up-disposition-codes.md
+                    - name: Ställ in returorsakskoder
+                      href: service-management/set-up-return-reason-code.md
+                    - name: Ange hur returnerade artiklar ska avyttras
+                      href: service-management/specify-how-to-dispose-of-returned-items.md
+            - name: Arbeta med kundtjänst
+              items:
+                - name: Arbeta med kundtjänst – översikt
+                  href: service-management/working-with-customer-service.md
+                - name: Fullfölj serviceavtal
+                  items:
+                    - name: Fullfölj serviceavtal – översikt
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Ta fram och upprätta avtal
+                      items:
+                        - name: Ta fram och upprätta avtal – översikt
+                          href: service-management/service-agreements.md
+                        - name: Skapa serviceavtal
+                          href: service-management/create-service-agreements.md
+                        - name: Serviceabonnemang
+                          href: service-management/service-subscriptions.md
+                        - name: Servicemallar
+                          href: service-management/service-template.md
+                        - name: Kopiera servicemallsrader
+                          href: service-management/copy-service-template-lines.md
+                    - name: Ändra stadium för serviceorder
+                      href: service-management/change-service-order-stage.md
+                    - name: Uppdatera och utvärdera avtal
+                      items:
+                        - name: Hantera strukturlistemallar på objektrelationer
+                          href: service-management/manage-template-boms-on-object-relations.md
+                        - name: Ta bort en servicestrukturlista
+                          href: service-management/delete-service-bom.md
+                        - name: Indexerade försäljningspriser
+                          href: service-management/indexed-sales-prices.md
+                        - name: Minska antalet dagar på abonnemangsavgifter
+                          href: service-management/reduce-the-days-on-subscription-fees.md
+                        - name: Exempel på avdragsdagar
+                          href: service-management/reduction-days-example.md
+                        - name: Uppdatera och indexera abonnemangsförsäljningspriser
+                          href: service-management/update-and-index-subscription-sales-prices.md
+                - name: Hantera kundförfrågningar
+                  items:
+                    - name: Fullfölj serviceavtal – översikt
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Registrering av start- och stopptid för en serviceorder
+                      href: service-management/start-and-stop-time-recording-on-a-service-order.md
+                    - name: Visa starttid och tidslängd för en serviceorder
+                      href: service-management/view-the-start-time-and-duration-of-a-service-order.md
+                    - name: Visa orsakskoder för stadium
+                      href: service-management/view-stage-reason-codes.md
+                    - name: Visa efterlevnad av servicenivåavtal
+                      href: service-management/view-compliance-with-service-level-agreements.md
+                - name: Auktorisera returer från kunder
+                  items:
+                    - name: Dispositionskoder och returorsakskoder
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Retursjälvkostnad och returparti-ID
+                      href: service-management/return-cost-price-and-return-lot-id.md
+                    - name: Annullera en returorder
+                      href: service-management/cancel-return-order.md
+                    - name: Skapa en artikelersättningsorder
+                      href: service-management/create-item-replacement-order.md
+                    - name: Ta bort en returorder
+                      href: service-management/delete-return-order.md
+                    - name: Skicka vidare returnerade artiklar för inspektion
+                      href: service-management/pass-returned-items-on-to-inspection.md
+                    - name: Bokför införseljournalen för returnerade produkter
+                      href: service-management/post-arrival-journal-for-returned-products.md
+                    - name: Ta emot delleveranser med returnerade artiklar
+                      href: service-management/receive-partial-deliveries-returned-items.md
+                    - name: Inleverera returnerade artiklar
+                      href: service-management/receiving-returned-items.md
+                    - name: Registrera inleverans av returnerade artiklar
+                      href: service-management/register-the-receipt-of-returned-items.md
+                    - name: Föra returnerade artiklar genom inspektionen
+                      href: service-management/take-returned-items-through-inspection.md
+                    - name: Följesedelsuppdateringar för returer
+                      href: service-management/packing-slip-updates-returns.md
+                    - name: Utföra fakturauppdateringar för returer
+                      href: service-management/perform-invoice-updates-for-returns.md
+                - name: Leverera tjänster
+                  items:
+                    - name: Planera och allokera serviceorder
+                      items:
+                        - name: Serviceorder
+                          href: service-management/service-orders.md
+                        - name: Skapa serviceorder automatiskt
+                          href: service-management/auto-create-service-orders.md
+                        - name: Samband mellan servicestatus och förloppsfält
+                          href: service-management/service-status-and-progress-field-interaction.md
+                        - name: Skapa serviceorder automatiskt
+                          href: service-management/create-service-orders-automatically.md
+                        - name: Skapa artikelbehov för serviceorder
+                          href: service-management/create-item-requirements-service-orders.md
+                        - name: Artikelbehov för serviceorder
+                          href: service-management/service-order-item-requirements.md
+                        - name: Översikt över arbetsflöde för abonnemang
+                          href: service-management/subscription-workflow-overview.md
+                        - name: Kombinera serviceorder
+                          href: service-management/combine-service-orders.md
+                        - name: Skapa serviceabonnemang från en abonnemangsgrupp
+                          href: service-management/create-service-subscriptions-from-subscription-group.md
+                        - name: Projekt kopplat till serviceavtal
+                          href: service-management/project-attached-to-service-agreement.md
+                        - name: Skapa serviceprenumerationer från ett projekt
+                          href: service-management/create-service-subscriptions-from-project.md
+                    - name: Skicka ut serviceorderaktiviteter
+                      items:
+                        - name: Serviceaktiviteter
+                          href: service-management/service-activities.md
+                        - name: Utförseltavla
+                          href: service-management/dispatch-board.md
+                        - name: Ställa in serviceaktivitetstyper
+                          href: service-management/set-up-service-activity-types.md
+                        - name: Ställa in en prioriterad tekniker
+                          href: service-management/set-up-preferred-technician.md
+                        - name: Ställ in serviceteam
+                          href: service-management/set-up-dispatch-teams.md
+                        - name: Prioritera serviceorder
+                          href: service-management/prioritize-service-orders.md
+                        - name: Visa status för serviceorder
+                          href: service-management/view-the-status-of-service-orders.md
+                        - name: Övervaka serviceaktiviteter
+                          href: service-management/monitor-service-activities.md
+                        - name: Tilldela om aktiviteter
+                          href: service-management/reassign-activities.md
+                        - name: Återföra ändringar på en utförseltavla
+                          href: service-management/reverse-changes-in-a-dispatch-board.md
+                        - name: Visa ej skickade serviceorder
+                          href: service-management/view-undispatched-service-orders.md
+                        - name: Ändra en servicestrukturlista
+                          href: service-management/modify-service-bom.md
+                    - name: Leverera service
+                      items:
+                        - name: Kreditera abonnemangstransaktioner
+                          href: service-management/credit-subscription-transactions.md
+                        - name: Skapa transaktioner för abonnemangsavgifter
+                          href: service-management/create-subscription-fee-transactions.md
+                        - name: Periodisera abonnemang
+                          href: service-management/accruing-subscriptions.md
+                        - name: Flytta serviceorderrader
+                          href: service-management/move-service-order-lines.md
+                        - name: Avbryt serviceorder
+                          href: service-management/cancel-service-orders.md
+                        - name: Skapa serviceorder manuellt
+                          href: service-management/create-service-orders-manually.md
+                        - name: Periodisera abonnemangsintäkt
+                          href: service-management/accrue-subscription-revenue.md
+                        - name: Ta bort serviceorder
+                          href: service-management/delete-service-orders.md
+                        - name: Fakturera abonnemangstransaktioner
+                          href: service-management/invoice-subscription-transactions.md
+        - name: Transporthantering
+          items:
+            - name: Transporthantering – översikt
+              href: transportation/transportation-management-overview.md
+            - name: Transporthanteringsmotorer
+              href: transportation/transportation-management-engines.md
+            - name: Skapa en ny transporthanteringsmotor
+              href: transportation/create-new-transportation-management-engine.md
+            - name: Associera ett bränsleindex med ett transportföretag som ett tillägg
+              href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: Skapa en fraktsedel
+              href: transportation/create-bill-of-lading.md
+            - name: Planera frakttransportrutter
+              href: transportation/plan-freight-transportation-routes-multiple-stops.md
+            - name: Planera beläggning med hjälp av navkonsolidering
+              items:
+                - name: Planera beläggning med hjälp av navkonsolidering – översikt
+                  href: transportation/plan-loads-hub-consolidation.md
+                - name: Planera beläggning och utleveranser med workbench för lastplanering
+                  href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+            - name: Inkludera behållarens vikt och volym vid lastning
+              href: transportation/include-container-weight-volume-on-load.md
+            - name: Stäm av fraktsedel manuellt
+              href: transportation/tasks/reconcile-freight-manually.md
+            - name: Stäm av frakt
+              href: transportation/reconcile-freight-transportation-management.md
+            - name: Registrera en förares incheckning och utcheckning för ett möte
+              href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: Ställ in bränsleindex för transportföretag
+              href: transportation/tasks/set-up-carrier-fuel-index.md
+            - name: Ställ in ett transportanbud
+              href: transportation/tasks/set-up-transportation-tender.md
+            - name: Ställ in tilläggstilldelningar
+              href: transportation/tasks/set-up-accessorial-assignments.md
+            - name: Skapa en tidpunkt för en beläggning
+              href: transportation/tasks/set-up-appointment-load.md
+            - name: Ställ in automatisk fraktavstämning
+              href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+            - name: Ställ in hubbens tilläggsavgifter och tilläggsmallar
+              href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+            - name: Ställ in tariffhuvuden
+              href: transportation/tasks/set-up-rate-masters.md
+            - name: Konfigurera transportföretag
+              href: transportation/tasks/set-up-shipping-carriers.md
+            - name: Ställ in transportbegränsningar för en artikel
+              href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Lagerstyrning
+          items:
+            - name: Lagerstyrning – översikt
+              href: warehousing/warehouse-management-overview.md
+            - name: Konfiguration av lagerställe
+              items:
+                - name: Konfiguration av lagerställe – översikt
+                  href: warehousing/warehouse-configuration.md
+                - name: Konfigurera ett lagerställe med hjälp av konfigurationsmall
+                  href: inventory/warehouse-template.md
+                - name: Styr arbetsuppgifter genom att använda arbetsmallar och platsdirektiv
+                  href: warehousing/control-warehouse-location-directives.md
+                - name: Koder för påfyllnadssteg
+                  href: warehousing/wave-step-codes.md
+                - name: Konfigurera påfyllnadsbearbetning
+                  href: warehousing/tasks/configure-wave-processing.md
+                - name: Uppdatera försändelser automatiskt
+                  href: warehousing/auto-update-shipment.md
+                - name: Skapa en platsprofil
+                  href: warehousing/tasks/create-location-profile.md
+                - name: Konfigurera platser i ett WMS-aktiverat lagerställe
+                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                - name: Tidsplanera beläggningsutnyttjande
+                  href: warehousing/schedule-load-utilization.md
+                - name: Tidsplanera kapacitet för lagerställe
+                  href: warehousing/schedule-workload-capacity.md
+                - name: Ställ in dispositionskoder
+                  href: warehousing/tasks/set-up-dispositions-codes.md
+                - name: Måttenhet och lagerpolicyer
+                  href: warehousing/unit-measure-stocking-policies.md
+                - name: Power BI-innehåll för lagerställe
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                - name: Systemgruppering i en öppen arbetslista
+                  href: warehousing/system-group-on-open-work-list.md
+                - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Stöd för streckkod för mobil
+                  href: warehousing/mobile-barcode-support.md
+                - name: Ställ in lagerställe för överföringsorder
+                  href: warehousing/transfer-orders-warehouse.md
+            - name: Policyer för lagerarbete
+              items:
+                - name: Policyer för lagerarbete – översikt
+                  href: warehousing/warehouse-work-policies.md
+                - name: Ställ in policyer för lagerarbete
+                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                - name: Lagerrörelse med tillhörande arbete i Lagerstyrning
+                  href: warehousing/move-inventory-associated-work.md
+                - name: Skapa en arbetsklass
+                  href: warehousing/tasks/create-work-class.md
+                - name: Hantera lagerställearbetare
+                  href: warehousing/manage-warehouse-workers.md
+                - name: Uppskjuten bearbetning av lagerhållningsarbete
+                  href: warehousing/deferred-put.md
+            - name: Delvis frisläppning och delleverans
+              items:
+                - name: Delleverans av en transportlast
+                  href: warehousing/partial-shipping-of-transport-loads.md
+                - name: Frisläppning i batch av delvis reserverade överföringsorder
+                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+            - name: Plockning och packning
+              items:
+                - name: Ställa in klusterplockning
+                  href: warehousing/set-up-cluster-picking.md
+                - name: Definiera skapande av behållare
+                  href: warehousing/tasks/set-up-containerization.md
+                - name: Bekräftelse av batch och ID-nummer
+                  href: warehousing/batch-and-license-plate-confirmation.md
+                - name: Aktivera utskrift av ID-nummer
+                  href: warehousing/tasks/license-plate-label-printing.md
+                - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Enhetsplockningsbekräftelse
+                  href: warehousing/piece-picking-confirmation.md
+                - name: Förpackningsmaterial och avgifter
+                  href: warehousing/pack-materials-packing-material-fees.md
+                - name: Ställ in manuell förpackning (enbart februari och maj 2016)
+                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                - name: Skapa omallokering av artiklar för kort plockning
+                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+            - name: Lagerinventering
+              items:
+                - name: Orsakskoder för lagerinventering
+                  href: warehousing/reason-codes-for-counting-journals.md
+                - name: Spärra lager
+                  href: inventory/inventory-blocking.md
+                - name: Rullande inventering
+                  href: warehousing/cycle-counting.md
+                - name: Definiera rullande inventering
+                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                - name: Rullande inventering av del av platser
+                  href: warehousing/partial-location-cycle-counting.md
+                - name: Definiera rullande inventering av del av platser
+                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Lagerjournal
+                  href: inventory/inventory-journals.md
+                - name: Lagerplats
+                  href: inventory/inventory-locations.md
+                - name: Lagerstatus
+                  href: inventory/inventory-statuses.md
+                - name: Lagermärkesinventering
+                  href: inventory/inventory-tag-counting.md
+            - name: Lagerpåfyllnad
+              items:
+                - name: Lagerpåfyllnad – översikt
+                  href: warehousing/replenishment.md
+                - name: Omedelbar lagerpåfyllnad
+                  href: warehousing/immediate-replenishment.md
+                - name: Lagerpåfyllnad med uttags-kanbans
+                  href: warehousing/material-replenishment-withdrawal-kanban.md
+                - name: Ställ in en min-max-process för lagerpåfyllnad
+                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                - name: Ställ in en arbetsmall för inköpsorder
+                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Installera och konfigurera lagerstyrningsappen
+              items:
+                - name: Installera och konfigurera – översikt
+                  href: warehousing/install-configure-warehousing-app.md
+                - name: Konfigurera fältnamn i lagerstyrningsapp
+                  href: warehousing/configure-app-field-names-priorities-warehouse.md
+                - name: Ställ in mobila enheter för lagerarbete
+                  href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
+                  href: warehousing/tasks/set-up-mobile-device-menu.md
+                - name: Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
+                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                - name: Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
+                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                - name: Inleverans av blandat ID-nummer på en mobil enhet
+                  href: warehousing/mixed-license-plate-receiving.md
+                - name: Konfigurera visning av äldre batchar inom lagerstället på en mobil enhet
+                  href: warehousing/display-older-batches-within-warehouses.md
+                - name: Plocka den äldsta batchen på en mobil enhet
+                  href: warehousing/pick-oldest-batch.md
+                - name: Processguideram
+                  href: warehousing/process-guide-framework.md
+            - name: Uppgradering och migrering
+              items:
+                - name: Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations
+                  href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Inleveranser för registrering och artikelinförsel
+              items:
+                - name: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Direktleverera produkter från det mottagande lagerstället till butiker
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Ställ in en arbetsmall för inköpsorder
+        - name: Utveckling av Supply Chain Management
+          items:
+            - name: Guide för utveckling av Gantt-kontroll
+              href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Skapa en ny transporthanteringsmotor
+              href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+    - name: Finance and Operations‑appar för utveckling och administration
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Finance
+      href: ../finance/index.md
+    - name: Dynamics 365 Retail
+      href: ../retail/index.md

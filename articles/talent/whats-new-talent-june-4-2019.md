@@ -1,6 +1,6 @@
 ---
-title: Nyheter och ändringar i Dynamics 365 for Talent (4 juni 2019)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+title: Nyheter och ändringar i Dynamics 365 Talent (4 juni 2019)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/04/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e19e5d3f1cb2305e5a4153de3e4d0e8f4c7d31ac
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 32b168eca210b1371db129c05f7035237eb35c38
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856339"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008994"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-4-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (4 juni 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-4-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (4 juni 2019)
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ändringar i Attract
 
-Den här versionen inkluderar felkorrigeringar för Dynamics 365 for Talent: Attract.
+Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Attract.
 
 ## <a name="coming-soon-in-attract"></a>Kommer snart i Attract
 
@@ -43,7 +43,7 @@ Godkännanden visas i avsnittet **Godkännanden** på instrumentpanelen. Godkän
 
 ## <a name="changes-in-onboard"></a>Ändringar i Onboard
 
-Den här versionen inkluderar felkorrigeringar för Dynamics 365 for Talent: Onboard.
+Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Ändringar i Core HR
 

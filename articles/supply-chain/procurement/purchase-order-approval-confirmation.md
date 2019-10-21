@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58ff596314d348a465ba6ee23369f09e74d580eb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572706"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248895"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkänn och bekräfta inköpsorder
 
@@ -39,7 +39,7 @@ När du har skapat en inköpsorder (IO) kan den behöva genomgå en godkännande
 ## <a name="approval-of-purchase-orders"></a>Godkänna inköpsorder
 Inköpsorder som inte använder ändringshantering har statusen **Godkänd** så fort den har skapats medan inköpsorder som använder ändringshantering har statusen **Utkast** när den skapas. En inköpsorder som har skapats via en bekräftelse av en planerad order från huvudplaneringen får alltid statusen **Godkänd**, oberoende av inställningarna för ändringshanteringen. En inköpsorder kan bara skapa lagertransaktioner när den har statusen **Godkänd**. Av den anledningen visas inte lagret som tillgängligt för reservation eller märkning förrän ordern har accepterats.  
 
-Du kan aktivera ändringshantering för inköpsorder genom att ställa in alternativet **Aktivera ändringshantering** på sidan **Anskaffnings- och källparametrar**. När ändringshantering är aktiverad måste inköpsorder genomgå ett godkännandearbetsflöde efter att de har slutförts. Microsoft Dynamics 365 for Finance and Operations har en redigerare för arbetsflödesprocesser i vilken du kan definiera ett arbetsflöde som representerar din godkännandeprocess. Arbetsflödet kan omfatta regler för automatiskt godkännande, regler som fastställer vem som ska godkänna särskilda inköpsorder och regler för att påskynda ett arbetsflöde som har väntat på ett godkännande under en längre tid. Du kan aktivera processen för ändringshantering för alla leverantörer eller för vissa leverantörer. Du kan även ställa in processen så att den kan åsidosättas för enskilda inköpsorder.  
+Du kan aktivera ändringshantering för inköpsorder genom att ställa in alternativet **Aktivera ändringshantering** på sidan **Anskaffnings- och källparametrar**. När ändringshantering är aktiverad måste inköpsorder genomgå ett godkännandearbetsflöde efter att de har slutförts. Supply Chain Management har en redigerare för arbetsflödesprocesser i vilken du kan definiera ett arbetsflöde som representerar din godkännandeprocess. Arbetsflödet kan omfatta regler för automatiskt godkännande, regler som fastställer vem som ska godkänna särskilda inköpsorder och regler för att påskynda ett arbetsflöde som har väntat på ett godkännande under en längre tid. Du kan aktivera processen för ändringshantering för alla leverantörer eller för vissa leverantörer. Du kan även ställa in processen så att den kan åsidosättas för enskilda inköpsorder.  
 
 När ändringshantering är aktiverad genomgår inköpsorder sex godkännandestatusar, från **Utkast** till **Slutförd**. När en order har godkänts måste användaren som vill ändra den använda åtgärden **Begär ändring**.
 
@@ -55,7 +55,7 @@ När ändringshantering är aktiverad genomgår inköpsorder sex godkännandesta
 ## <a name="confirming-purchase-orders"></a>Bekräfta inköpsorder
 Inköpsorder som har godkännandestatusen **Godkänd** kan genomgår ytterligare steg innan de bekräftas. Du kan exempelvis behöva skicka en förfrågan om inköp till leverantören och fråga om priser, rabatter eller leveransdatum. Du kan då ange statusen på inköpsordern till **Under extern granskning** med hjälp av åtgärden **Inköpsförfrågan**.  
 
-Leverantörer som har ställts in för att använda Leverantörsportalen kan granska order via portalen och godkänna eller avvisa dem. Under granskningsprocessen har inköpsordern statusen **Under extern granskning**. Leverantörsportalen kan konfigureras så att en bekräftelse från leverantören automatiskt bekräftar ordern i Finance and Operations. Du kan även bekräfta en inköpsorder manuellt efter att du har mottagit en bekräftelse från leverantören. Om en leverantör avvisar en inköpsorder kommer avvisandet att åtföljas av orsaken till avvisandet och förslag om ändringar. I det här fallet förblir statusen för inköpsordern **Under extern granskning**.  
+Leverantörer som har ställts in för att använda Leverantörsportalen kan granska order via portalen och godkänna eller avvisa dem. Under granskningsprocessen har inköpsordern statusen **Under extern granskning**. Leverantörsportalen kan konfigureras så att en bekräftelse från leverantören automatiskt bekräftar ordern i Supply Chain Management. Du kan även bekräfta en inköpsorder manuellt efter att du har mottagit en bekräftelse från leverantören. Om en leverantör avvisar en inköpsorder kommer avvisandet att åtföljas av orsaken till avvisandet och förslag om ändringar. I det här fallet förblir statusen för inköpsordern **Under extern granskning**.  
 
 Det finns även ett alternativ för att generera en proformabekräftelse för en order innan den faktiska bekräftelsen har bearbetats. Det här alternativet skapar enbart en rapport som du kan dela med leverantören. Det skapar ingen journalinformation.  
 

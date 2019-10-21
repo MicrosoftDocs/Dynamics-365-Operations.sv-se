@@ -1,6 +1,6 @@
 ---
-title: Nyheter och ändringar i Dynamics 365 for Talent (26 mars 2019)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+title: Nyheter och ändringar i Dynamics 365 Talent (26 mars 2019)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741577"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023894"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (26 mars 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (26 mars 2019)
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Talent.
+Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ändringar i Attract
 
@@ -53,7 +53,7 @@ Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Onboard
 
 ### <a name="custom-field-support-available-for-select-entities-in-common-data-service"></a>Anpassat fältstöd är tillgängligt för utvalda entiteter i Common Data Service 
 
-Följande Common Data Service entiteter stöder nu kundfälten som skapats i Dynamics 365 for Talent:
+Följande Common Data Service-entiteter stöder nu kundfälten som skapats i Talent:
 
 - Arbetare
 - Etniskt ursprung
@@ -72,10 +72,10 @@ Förutom denna ändring visar nu anställningshistoriksidan medarbetarposter i k
 I den här versionen visas nu fasta kompensationsplaner vid begränsning av användare av företag i säkerhet. Alla säkerhetsinställningar kommer att hedras och fasta planer kommer att visas för de företag som användaren har behörigheter att få åtkomst till. 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>Kan inte ta bort jobbposter med Öppna i Excel-alternativ i Talent
-Med den här versionen kan du nu ta bort jobbposter med alternativet **öppna i Excel** i Dynamics 365 for Talent.
+Med den här versionen kan du nu ta bort jobbposter med alternativet **öppna i Excel** i Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Uppgradera till Common Data Service
-Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps-administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>I förhandsgranskning
 
@@ -93,7 +93,7 @@ Organisationer kan kräva att orsakskoder anges för specifika tjänstledighetst
 I många organisationer kan kompensations- och förmånsansvariga endast ha tillgång till vissa kompensationsposter. Posterna kan vara för chefer eller nationella medarbetare. Med den här ändringen kan personalavdelningen hantera och underhålla kompensationsplaner för olika medarbetargrupper i organisationen. Du ska tilldela säkerhetsroller till fasta och variabla planer som bestämmer åtkomsten till planer och medarbetardata relaterade till planerna, till exempel lön eller bonusposter. Endast roller med åtkomst kan bearbeta kompensation för dessa anställda.
 
 ###  <a name="email-support-for-alerts"></a>E-support för notifieringar
-Med plattformsuppdatering 25 kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse. 
+Med plattformsuppdatering 25 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Dubblettkontroll av medarbetare: användargränssnittsändringar
 Med denna ändring detekteras dubbletter när du anger namnfält och status visar antalet dubbletter som hittades. Du kan välja den angivna länken för att öppna en ny sida för att bedöma om du ska använda de identifierade träffarna. Dublettformuläret öppnas inte automatiskt för att undvika att inmatningen avbryts.

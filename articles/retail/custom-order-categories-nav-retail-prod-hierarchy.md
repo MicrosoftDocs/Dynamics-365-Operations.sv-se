@@ -1,7 +1,7 @@
 ---
 title: Ändra sorteringsordning för marknadsföringsenheter
-description: I det här avsnittet beskrivs begreppen för att styra visningsordningen för olika marknadsföringsrelaterade entiteter i Microsoft Dynamics 365 for Retail.
-author: ashishharchwani
+description: I det här avsnittet beskrivs begreppen för att styra visningsordningen för olika marknadsföringsrelaterade entiteter i Dynamics 365 Retail.
+author: josaw1
 manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
@@ -18,16 +18,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2be3c1198ac6fff851be1bead2f0995202f1f0e7
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c159ff869d6c504fdebbef1fa68115a410c81d85
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866171"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019426"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Ändra sorteringsordning för marknadsföringsenheter
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla detaljhandelskanaler. Olika funktioner kan hjälpa kunder att enkelt hitta produkter. De kan till exempel bläddra bland kategorier, söka och filtrera.
@@ -38,7 +38,7 @@ I det här avsnittet beskrivs begreppen för att styra visningsordningen för ol
 
 Stödet för sortering av olika marknadsföringsrelaterade entiteter har förbättrats. Det här stödet är nu bättre justerat med befintliga kundscenarier som tidigare krävde tillägg från implementeringspartners.
 
-I tidigare versioner av Microsoft Dynamics 365 for Retail version 10.0.5 var sorteringsordningen för kategorier i navigeringsvyn alfabetisk. Med den nya anpassade sorteringsordningen kan du konfigurera sorteringsordningen för olika marknadsföringsrelaterade enheter för alla slutanvändarklienter. Dessa klienter inkluderar huvudkontor (HQ) och kundtjänster.
+I tidigare versioner av Retail än version 10.0.5 var sorteringsordningen för kategorier i navigeringsvyn alfabetisk. Med den nya anpassade sorteringsordningen kan du konfigurera sorteringsordningen för olika marknadsföringsrelaterade enheter för alla slutanvändarklienter. Dessa klienter inkluderar huvudkontor (HQ) och kundtjänster.
 
 ## <a name="configure-the-display-order-for-categories-in-the-retail-product-hierarchy"></a>Konfigurera visningsordningen för kategorier i butiksprodukthierarki
 

@@ -1,6 +1,6 @@
 ---
 title: Fiktiva artiklar
-description: Det här avsnittet beskrivs i detalj, hur radtypen fiktiv kan användas för rader i en strukturlista (BOM) och en formel i Microsoft Dynamics 365 for Finance and Operations.
+description: Det här avsnittet beskrivs i detalj, hur radtypen fiktiv kan användas för rader i en strukturlista (BOM) och en formel i Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f01a0321740365c23cbc117be42c0a5137960af7
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7c39b0ac2eb8a2293c828fee23ed6a78cb5fe2c9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843899"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250030"
 ---
 # <a name="phantom-items"></a>Fiktiva artiklar
 
@@ -51,7 +51,7 @@ I den här strukturen kan du se att det inte finns några delar F och G och de m
 
 Till skillnad från teknikstrukturlistan som hade två operationsblad har tillverkningsstrukturlistan endast ett operationsblad. Förpackningsoperationen som var kopplad till del G har också utökats och ingår nu i operationsbladet för produkt H. Sammansättningen av den elektriska enheten är den första operationen. Denna order passar bra, eftersom enheten används i nästa operation som är maskinsammansättningen. Den sista operationen är förpackningsoperationen som förbrukar två förpackningsmaterial (C och D).
 
-I Microsoft Dynamics 365 for Finance and Operations övergången mellan teknikstrukturlistan och tillverkningsstrukturlistan har aktiverats via radtypen Fiktiv strukturlista. Såsom begreppet ”fiktiv” anger, har delar F och G försvunnit under övergångsperioden mellan de två typerna av strukturlista. I det här exemplet används radtypen Fiktiv till strukturlisteraderna för delar F och G i teknikstrukturlistan. När en produktions- eller batchorder skapas kopieras teknikstrukturlista till produktions- eller batchordern. Sedan när ordern beräknas, sker övergången från teknikstrukturlistan till tillverkningsstrukturlistan enligt föregående illustrationer. Från operationsbladet i den andra bilden inmatas förpackningsmaterialen C och D för operationen. 
+Övergången mellan teknikstrukturlistan och tillverkningsstrukturlistan har aktiverats via radtypen Fiktiv strukturlista. Såsom begreppet ”fiktiv” anger, har delar F och G försvunnit under övergångsperioden mellan de två typerna av strukturlista. I det här exemplet används radtypen Fiktiv till strukturlisteraderna för delar F och G i teknikstrukturlistan. När en produktions- eller batchorder skapas kopieras teknikstrukturlista till produktions- eller batchordern. Sedan när ordern beräknas, sker övergången från teknikstrukturlistan till tillverkningsstrukturlistan enligt föregående illustrationer. Från operationsbladet i den andra bilden inmatas förpackningsmaterialen C och D för operationen. 
 
 ## <a name="multilevel-phantom-bom-structures"></a>Fiktiva artikelstrukturlistor på flera nivåer
 Radtypen Fiktiv kan användas i strukturlistor på flera nivåer, vilket visas i följande illustration. I den här illustrationen (a) är strukturlistan för produkt G och (b) flödesbladet för delar E och produkt G. 

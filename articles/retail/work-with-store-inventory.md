@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606813"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024693"
 ---
 # <a name="store-inventory-management"></a>Hantering av butikslager
 
 [!include [banner](includes/banner.md)]
 
-När du arbetar med lager i Dynamics 365 for Retail och använder kassaprogrammet är det viktigt att komma ihåg att kassan ger begränsat stöd för lagerdimensioner och vissa lagerartikeltyper.
+När du arbetar med lager i Dynamics 365 Retail och använder kassaprogrammet är det viktigt att komma ihåg att kassan ger begränsat stöd för lagerdimensioner och vissa lagerartikeltyper.
 
 Kassalösningen stöder inte följande artikelkonfigurationer:
 
@@ -56,7 +56,7 @@ Kassalösning ger begränsat stöd för följande dimensioner. Begränsat stöd 
 
 ## <a name="purchase-orders"></a>Inköpsorder
 
-Inköpsorder skapas på huvudkontoret. Om ett lagerställe ingår i inköpsorderrubriken kan ordern tas emot i butiken med hjälp av Modern POS (MOPS) eller Cloud POS i Microsoft Dynamics 365 for Retail via åtgärden **plocka/ta emot**. När de kvantiteter som har inlevererats i butiken har angetts i fältet **Inleverera nu** i kassan inköpsorderdokumentet, kan de sparas lokalt eller på ett dedikerat sätt. Om dessa data sparas lokalt påverkas inte lagerinventeringen. Spara bör endast ske om användaren inte är redo att skicka kvittot till huvudkontor och behöver bara ett sätt att tillfälligt lagra den tidigare inmatade **Inleverera nu**-data. Detta sparar informationen för Inleverera nu lokalt i användarens kanaldatabas. När dokumentet har bearbetats med alternativet **Utfäst** skickas data **Ta emot nu** till huvudkontor och inleveransen för inköpsordern bokförs. 
+Inköpsorder skapas på huvudkontoret. Om ett lagerställe ingår i inköpsorderrubriken kan ordern tas emot i butiken med hjälp av Modern POS (MOPS) eller Cloud POS i via åtgärden **plocka/ta emot**. När de kvantiteter som har inlevererats i butiken har angetts i fältet **Inleverera nu** i kassan inköpsorderdokumentet, kan de sparas lokalt eller på ett dedikerat sätt. Om dessa data sparas lokalt påverkas inte lagerinventeringen. Spara bör endast ske om användaren inte är redo att skicka kvittot till huvudkontor och behöver bara ett sätt att tillfälligt lagra den tidigare inmatade **Inleverera nu**-data. Detta sparar informationen för Inleverera nu lokalt i användarens kanaldatabas. När dokumentet har bearbetats med alternativet **Utfäst** skickas data **Ta emot nu** till huvudkontor och inleveransen för inköpsordern bokförs. 
 
 ## <a name="transfer-orders"></a>Överföringsorder
 

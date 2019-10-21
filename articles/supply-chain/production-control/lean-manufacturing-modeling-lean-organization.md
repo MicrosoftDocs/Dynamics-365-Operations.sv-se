@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40664936382f5edcb3c1680aa4af245bdef539a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560150"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250239"
 ---
 # <a name="modeling-a-lean-organization"></a>Utforma en smidig organisation
 
@@ -39,7 +39,7 @@ I produktionsscenarier baserade på produktionsorder tilldelas material till en 
 
 Lean manufacturing stöder kanban-lagerpåfyllnad och storlager för tillverknings- och lagerpåfyllnad för att minska de leveransledtider och överskottslager mellan resurser som orsakas av batchproduktion. De här funktionerna stör vanligtvis produktionen av delvis oberoende kanban-cykler. Lagerpåfyllnad av en kanban för en halvfärdig produkt utlöses inte längre av en order för en färdig produkt. 
 
-Aktivitetsbaserade produktionsflöden utgör nu en grund för lean manufacturing och används för att återupprätta ett produktions- och kostnadssammanhang för de olika kanban-scenarier som föreslås i Microsoft Dynamics 365 for Finance and Operations. Alla kanbankort regler se här fördefinierade struktur. Den aktivitetsbaserade modellen stöder installationen av ett stort antal scenarier. Den här modellen försvårar dock inte arbetet för medarbetarna i butiken eftersom alla scenarier använder samma aktivitetsbaserade användargränssnittet.
+Aktivitetsbaserade produktionsflöden utgör nu en grund för lean manufacturing och används för att återupprätta ett produktions- och kostnadssammanhang för de olika kanban-scenarier som föreslås. Alla kanbankort regler se här fördefinierade struktur. Den aktivitetsbaserade modellen stöder installationen av ett stort antal scenarier. Den här modellen försvårar dock inte arbetet för medarbetarna i butiken eftersom alla scenarier använder samma aktivitetsbaserade användargränssnittet.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halvfabrikat (icke-BOM-nivåer)
 Lean manufacturing integrerar kanban för inventerade och halvfärdiga produkter inom ett och samma ramverk och ger därför en enhetlig användarupplevelse för samtliga fall. Tack vare denna arkitektur behöver inga ytterligare strukturlistenivåer längre införas för att kanban ska kunna användas för halvfärdiga produkter. Arkitektur bidrar även till att minska lagertransaktionerna till ett minimum.
@@ -50,7 +50,7 @@ Minskningen av batchstorlekar till det ideala tillståndet för ett engångsflö
 ## <a name="value-streams-and-value-stream-mapping"></a>Värdeströmmar och mappning av värdeström
 Arkitekturen i lean manufacturing är inspirerad av fem lean-principer som utformades av Womack och Jones: kundnytta, värdeström, flöde, hämtning och perfektion. En godkänd metod för att implementera lean manufacturing-lösningar i den fysiska världen för tillverkningen är mappning av värdeströmmen (VSM). Den här metoden introducerades av Rother och Shook i deras publikation "Att lära sig att se" på Lean Manufacturing-institutet. 
 
-En framtida värdeström kan modelleras i Finance and Operations som en produktionsflödesversion. Alla processer av värdet stream är modellerade som bearbetar verksamheter. Rörelser eller överföringar kan modelleras som överföringsaktiviteter om överföringsstatusen måste vara registrerad eller om en integrering med lagerplockning eller konsoliderade leveranser krävs. 
+En framtida värdeström kan modelleras som en produktionsflödesversion. Alla processer av värdet stream är modellerade som bearbetar verksamheter. Rörelser eller överföringar kan modelleras som överföringsaktiviteter om överföringsstatusen måste vara registrerad eller om en integrering med lagerplockning eller konsoliderade leveranser krävs. 
 
 Värdetströmmen i sig modelleras som en driftenhet. Värdeströmmen kan därför användas som en ekonomisk dimension.
 

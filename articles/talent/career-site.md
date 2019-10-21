@@ -1,6 +1,6 @@
 ---
-title: Ställ in din karriärwebbplats i Microsoft Dynamics 365 for Talent - Attract
-description: Det här avsnittet innehåller en översikt över funktionen för kandidatorienterad karriärwebbplats i Microsoft Dynamics 365 for Talent - Attract.
+title: Ställ in din karriärwebbplats i Microsoft Dynamics 365 Talent - Attract
+description: Det här avsnittet innehåller en översikt över funktionen för kandidatorienterad karriärwebbplats i Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739781"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026289"
 ---
 # <a name="set-up-your-career-site"></a>Ställ in din karriärwebbplats
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över funktionen för kandidatorienterad karriärwebbplats i Microsoft Dynamics 365 for Talent: Attract. Den förklarar även hur du ställer in denna funktion.
+Det här avsnittet innehåller en översikt över funktionen för kandidatorienterad karriärwebbplats i Microsoft Dynamics 365 Talent: Attract. Den förklarar även hur du ställer in denna funktion.
 
 Attract ger en karriärwebbplats för olika miljöer i en klientorganisation. Om till exempel ett företag har en utvecklingsmiljö och en testmiljö kan en karriärwebbplats för utvecklingsmiljön tilldelas utvecklingsmiljön och en annan karriärwebbplats tilldelas testmiljön. Varje karriärwebbplats är helt isolerad och har en egen autentiseringsmekanism. Jobb och kandidatprofiler delas inte mellan karriärwebbplatser.
 
@@ -62,7 +62,7 @@ Följande lista innehåller vanliga URL för karriärwebbplatser och hur du komm
 
 -   **Karriärwebbplatsens startside-URL** - för att visa startsidan för karriärwebbplatsen, logga in i Attract som administratör och välj **administratörscenter** på menyn **inställningar** -och välj sedan fliken **Hantera karriärwebbplats**.
 
--   **Svars-URL för individuell jobbpublicering** - När du [publicerar ett externt jobb](Creating-jobs-Attract.md#postings) för första gången, kan du kopiera länken **Använd** från Attract-programmet. URL-adressen för den här länken är i följande format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Svars-URL för individuell jobbpublicering** - När du [publicerar ett externt jobb](Creating-jobs-Attract.md#postings) för första gången, kan du kopiera länken **Använd** från Attract. URL-adressen för den här länken är i följande format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **Individuell jobbpublicerings-URL** - URL för jobbpubliceringen är en delsträng av svars-URL. Den består av allt upp genom jobbnumret. Därför är jobbpublicerings-URL:en för de föregående svars-URL [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
 

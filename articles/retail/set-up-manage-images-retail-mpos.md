@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c256569135a00ea98a5c059b9dd12a07a000ee6a
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606951"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024854"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Ställa in och hantera bilder för Retail Modern POS (MPOS)
 
@@ -34,19 +34,19 @@ Den här artikeln beskriver stegen som ingår i hur du ställer in och hanterar 
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Ställa in mediebaserad URL och definiera mediamallar för att ställa in format för bild-URL
 
-Bilder som visas i Retail Modern POS (MOPS) måste finnas utanför externt Microsoft Dynamics 365 for Retail. Normalt lagras de i ett innehållshanteringssystem, innehållsleveransnätverk (CDN) eller en mediaserver. MPOS hämtar och visar då bilderna för lämpliga enheter, till exempel produkter och kataloger, genom att få åtkomst till mål-URL. Om du vill hämta dessa externt värdbaserade bilder kräver MPOS korrekt URL-format för bilderna. Du kan konfigurera obligatoriskt URL-format för bilderna genom att ställa in värdet **Mediabas-URL** i kanalprofilen och använda funktionen **Definiera mediamall** för varje enhet. Du kan även skriva över det vanliga URL-formatet för en undergrupp av enheter, genom att använda funktionen **Redigera i Excel**.
+Bilder som visas i Retail Modern POS (MOPS) måste finnas utanför Retail. Normalt lagras de i ett innehållshanteringssystem, innehållsleveransnätverk (CDN) eller en mediaserver. MPOS hämtar och visar då bilderna för lämpliga enheter, till exempel produkter och kataloger, genom att få åtkomst till mål-URL. Om du vill hämta dessa externt värdbaserade bilder kräver MPOS korrekt URL-format för bilderna. Du kan konfigurera obligatoriskt URL-format för bilderna genom att ställa in värdet **Mediabas-URL** i kanalprofilen och använda funktionen **Definiera mediamall** för varje enhet. Du kan även skriva över det vanliga URL-formatet för en undergrupp av enheter, genom att använda funktionen **Redigera i Excel**.
 
 > [!IMPORTANT]
-> I den aktuella versionen av Dynamics 365 for Retail kan du inte längre ställa in URL-formatet genom att använda **Bild**-attributet-XML för MPOS i attributgruppen **Standard** för enheter. Om du har kunskaper om Microsoft Dynamics AX 2012 R3 och använder den aktuella versionen av Dynamics 365 for Retail, se till att du använder alltid den nya **Definiera mediamallen** funktionen för att ställa in bilder. Använd inte eller ändra **Bild**-attributet i **Standard**-attributgruppen för enheter, inklusive produkter. De ändringar du gör direkt i **Standard**-attributgruppen för bilder kommer inte reflekteras. Detta alternativ kommer avaktiveras i en kommande version.
+> I den aktuella versionen av Retail kan du inte längre ställa in URL-formatet genom att använda **Bild**-attributet-XML för MPOS i attributgruppen **Standard** för enheter. Om du har kunskaper om Microsoft Dynamics AX 2012 R3 och använder den aktuella versionen av Dynamics 365 Retail, se till att du använder alltid den nya **Definiera mediamallen** funktionen för att ställa in bilder. Använd inte eller ändra **Bild**-attributet i **Standard**-attributgruppen för enheter, inklusive produkter. De ändringar du gör direkt i **Standard**-attributgruppen för bilder kommer inte reflekteras. Detta alternativ kommer avaktiveras i en kommande version.
 
 I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa procedurer hjälper dig att garantera att rätt bildmålsökväg anges obetingat för alla katalogbilder som använder en gemensam sökväg. Till exempel, om du har ställt in en mediaserver eller en CDN externt, och vill att bilderna att visas i MPOS för en viss butik, **Definiera mediamallen**-funktionen hjälper dig ställa in sökvägen, där MPOS kan slås upp, och att hämta bilderna.
 
 > [!NOTE]
-> I detta demonstrationsdataexempel distribueras mediaservern på Retail Server. Du kan dock ha den någonstans utanför Dynamics 365 for Retail
+> I detta demonstrationsdataexempel distribueras mediaservern på Retail Server. Du kan dock ha den någonstans utanför Dynamics 365 for Retail.
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Ställ in mediebas-URL för en kanal
 
-1. Öppna Dynamics 365 for Retail HQ portal.
+1. Öppna Retail HQ portal.
 2. Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kanalprofiler**.
 
     [![Navigering](./media/channel-profile1.png)](./media/channel-profile1.png)
@@ -62,7 +62,7 @@ I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa
 3. På **Mediesökväg** snabbfliken anger du den återstående sökvägen till bildplatsen. Mediesökvägen stöder **LanguageID** som en variabel. För demodatan kan du exempelvis skapa en mapp kallad **Katalogen** för alla katalogbilder under URL:en för mediabas för din mediaserver (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`.) Du kan sedan ha en mapp för varje språk, till exempel en-US eller fr-FR och kopiering lämpliga bilderna under varje mapp. Om du inte har olika bilder för olika språk, kan du utesluta **LanguageID** variabeln i din mappstruktur, och peka direkt till katalogmappen, som innehåller katalogbilder.
 
     > [!NOTE]
-    > Den aktuella versionen av Dynamics 365 for Retail stöder **{LanguageId}** token för katalog-, produkt- och kategorienheter. (**{LanguageID}** token stöds inte för kund- och arbetarenheter, enligt den befintliga standard som har varit gällande sedan Microsoft Dynamics AX 6.x.)
+    > Den aktuella versionen av Retail stöder **{LanguageId}**-token för katalog-, produkt- och kategorienheter. (**{LanguageID}** token stöds inte för kund- och arbetarenheter, enligt den befintliga standard som har varit gällande sedan Microsoft Dynamics AX 6.x.)
 
 4. För bilder, filnamnformatet är hårdkodat till katalognamnet och kan inte ändras. Byt namn på dina bilder, så att de har rätt katalognamn, för att garantera att MPOS hanterar dem korrekt.
 5. I **Filtillägg** fältet, välj det förväntade filnamnstillägget, beroende på vilken typ av bilder som du har. Till exempel för demodata har katalogbilder ställts in .jpg filtillägget. (Bildfiler byter också namn så att de har katalognamn).
@@ -118,7 +118,7 @@ Som du lärde dig i det föregående avsnittet, stöder mediamallen för en viss
     [![Generera bid-URL:r för snabbfliken Excel efter att Generera har valts](./media/excel2.png)](./media/excel2.png)
 
     > [!NOTE]
-    > De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Dynamics 365 for Retail, och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
+    > De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Retail och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
 
 5. Klicka på **Redigera i Excel**.
 6. Klicka på **Aktivera redigeringen** när du uppmanas, efter att Microsoft Excel kalkylbladet har öppnats.

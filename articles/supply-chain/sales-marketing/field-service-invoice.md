@@ -1,6 +1,6 @@
 ---
-title: Synkronisera avtalsfakturor i Field Service till fristextfakturor i Finance and Operations
-description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Microsoft Dynamics 365 for Field Service till fritextfakturor i Microsoft Dynamics 365 for Finance and Operations.
+title: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Supply Chain Management
+description: Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Dynamics 365 Field Service till fritextfakturor i Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
@@ -19,46 +19,46 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 55301ba39dd28fbae5b6c21b1da3c3d9cf6afd8a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ca0014dc8bc1c70670a3cf85527eee0ef44865f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560177"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249875"
 ---
-# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-finance-and-operations"></a>Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
+# <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkronisera avtalsfakturor i Field Service till fritextfakturor i Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Microsoft Dynamics 365 for Field Service till fritextfakturor i Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet beskriver de mallar och underliggande uppgifter som används för att synkronisera avtalsfakturor i Dynamics 365 Field Service till fritextfakturor i Dynamics 365 Supply Chain Management.
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
-Följande mall och underliggande uppgifter används för att köra synkronisering av avtalsfakturor från Field Service till fritextfakturor i Finance and Operations.
+Följande mall och underliggande uppgifter används för att köra synkronisering av avtalsfakturor från Field Service till fritextfakturor i Supply Chain Management.
 
 **Namnet på mallen i dataintegreringen**
 
-- Avtalsfakturor (Field Service till Fin and Ops)
+- Avtalsfakturor (Field Service till Supply Chain Management)
 
-**Namnen på uppgifterna i dataintegreringsprojektet:**
+**Namnen på uppgifterna i dataintegreringsprojektet**
 
 - Fakturarubriker
 - Fakturarader
 
 Följande synkroniseringsuppgifter krävs före synkronisering av avtalsfakturor kan uppstå:
 
-- Konton (Sales till Fin and Ops) - Direkt
+- Konton (Sales till Supply Chain Management) – Direkt
 
 ## <a name="entity-set"></a>Ange entiteten
 
-| Field Service  | Finance and Operations                 |
+| Field Service  | Hantering av underleverantörer                 |
 |----------------|----------------------------------------|
 | fakturor       | Fakturahuvuden i fritext för CDS-kund |
 | fakturainformation | Fakturarader i fritext för CDS-kund   |
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
-Fakturor som har skapats från ett avtal i Field Service kan synkroniseras till Finance and Operations via ett Common Data Service (CDS) dataintegreringsprojekt. Uppdateringar till dessa fakturor synkroniseras till fritextfakturor i Finance and Operations om redovisningsstatus för fritextfakturor är **pågående**. Efter fritextfakturorna bokförs i Finance and Operations och redovisningsstatus uppdateras till **slutförd**, kan du inte längre synkronisera uppdateringar från Field Service.
+Fakturor som har skapats från ett avtal i Field Service kan synkroniseras till Supply Chain Management via ett Common Data Service dataintegreringsprojekt. Uppdateringar till dessa fakturor synkroniseras till fritextfakturor i Supply Chain Management om redovisningsstatus för fritextfakturor är **pågående**. Efter fritextfakturorna bokförs i Supply Chain Management och redovisningsstatus uppdateras till **slutförd**, kan du inte längre synkronisera uppdateringar från Field Service.
 
 ## <a name="field-service-crm-solution"></a>CRM-lösning för Field Service
 
@@ -66,18 +66,18 @@ Fältet **Har rader med avtalsursprung** har lagts till i entiteten **Faktura**.
 
 Fältet **Har rader med avtalsursprung** har lagts till i entiteten **Fakturarad**. Det här fältet hjälper till att garantera att endast de fakturarader som skapas från ett avtal är synkroniserade. Värdet är **sant** om fakturaraden kommer från ett avtal.
 
-**Fakturadatum** är ett obligatoriskt fält i Finance and Operations. Därför måste fältet ha ett värde i Field Service innan synkroniseringen sker. Följande logik måste läggas till för att uppfylla detta krav:
+**Fakturadatum** är ett obligatoriskt fält i Supply Chain Management. Därför måste fältet ha ett värde i Field Service innan synkroniseringen sker. Följande logik måste läggas till för att uppfylla detta krav:
 
 - Om fältet **Fakturadatum** är tomt på entiteten **Faktura** (om den inte har något värde), anges det aktuella datumet när en fakturarad som härrör från en överenskommelse läggs till.
 - Användaren kan ändra fältet **Fakturadatum**. Men när användaren försöker spara en faktura som härrör från ett avtal får han eller hon ett affärsprocessfel om fältet **Fakturadatum** är tomt på fakturan.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
-### <a name="in-finance-and-operations"></a>I Finance and Operations
+### <a name="in-supply-chain-management"></a>I Supply Chain Management
 
-Ett fakturafakturaursprung måste ställas in för integrationen för att särskilja fritextfakturor i Finance and Operations som skapas från avtalsfakturor i Field Service. När en faktura har ett fakturaursprung i typen **Integration avtal/faktura** visas fältet **Externt fakturanummer** på rubriken för **Försäljningsfaktura**.
+Ett fakturafakturaursprung måste ställas in för integrationen för att särskilja fritextfakturor i Supply Chain Management som skapas från avtalsfakturor i Field Service. När en faktura har ett fakturaursprung i typen **Integration avtal/faktura** visas fältet **Externt fakturanummer** på rubriken för **Försäljningsfaktura**.
 
-Förutom att visas på fakturarubriken, kan information **Externt fakturanummer** användas för att garantera att fakturor som skapas från avtalsfakturor för Field Service filtreras bort under synkroniseringen av fakturan från Finance and Operations till Field Service.
+Förutom att visas på fakturarubriken, kan information **Externt fakturanummer** användas för att garantera att fakturor som skapas från avtalsfakturor för Field Service filtreras bort under synkroniseringen av fakturan från Supply Chain Management till Field Service.
 
 1. Gå till **Kundreskontra** \> **Inställningar** \> **Ursprungskoder för faktura**.
 2. Välj **Ny** för att skapa ett nytt fakturaursprung.
@@ -91,7 +91,7 @@ Förutom att visas på fakturarubriken, kan information **Externt fakturanummer*
 
 Uppgift: **Fakturarader**  
 
-Se till att standardvärdet för Finance and Operations-fältet **Visningsvärde för huvudkonto** uppdateras så att det matchar det önskade värdet.
+Se till att standardvärdet för Supply Chain Management-fältet **Visningsvärde för huvudkonto** uppdateras så att det matchar det önskade värdet.
 
 Standardmallvärdet är **401100**.
 
@@ -99,10 +99,10 @@ Standardmallvärdet är **401100**.
 
 I följande illustrationer visas en mallmappning i dataintegrering.
 
-### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-headers"></a>Avtalsfakturor (Field Service till Fin and Ops): Fakturarubriker
+### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Avtalsfakturor (Field Service till Supply Chain Management): Fakturarubriker
 
 [![Mallmappning i dataintegrering](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
-### <a name="agreement-invoices-field-service-to-fin-and-ops-invoice-lines"></a>Avtalsfakturor (Field Service till Fin and Ops): Fakturarubrikrader
+### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Avtalsfakturor (Field Service till Supply Chain Management): Fakturarader
 
 [![Mallmappning i dataintegrering](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)

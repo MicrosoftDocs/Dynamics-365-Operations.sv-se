@@ -18,19 +18,19 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017884"
 ---
 # <a name="import-vendor-catalogs"></a>Importera leverantörskataloger
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Import av leverantörskataloger
 
-I Microsoft Dynamics 365 for Finance and Operations kan inköpare skapa och underhålla kataloger som anställda i företaget kan använda när de beställer artiklar och tjänster för intern användning. Om du vill skapa en anskaffningskatalog kan du lägga till artiklar och tjänster som du vill göra tillgänglig för anställda, antingen genom att importera produktkatalogdata eller genom att manuellt lägga till produktkatalogdata till produktmallen. 
+I Dynamics 365 Supply Chain Management kan inköpare skapa och underhålla kataloger som anställda i företaget kan använda när de beställer artiklar och tjänster för intern användning. Om du vill skapa en anskaffningskatalog kan du lägga till artiklar och tjänster som du vill göra tillgänglig för anställda, antingen genom att importera produktkatalogdata eller genom att manuellt lägga till produktkatalogdata till produktmallen. 
 
 Du kan överföra katalogdata som skickas av en leverantör från Microsoft Dynamics 365-klienten.
 
@@ -52,7 +52,7 @@ Om du vill importera leverantörskatalogdata måste du utföra följande uppgift
 
 6.  Överför CMR-filen.
 
-7.  Granska, godkänn eller avvisa produkterna i leverantörskatalogen. Produkter som mappas automatiskt till anskaffningskategorier i Dynamics 365 for Finance and Operations. 
+7.  Granska, godkänn eller avvisa produkterna i leverantörskatalogen. Produkter som mappas automatiskt till anskaffningskategorier. 
     
 Godkända produkter läggs till i produktmallen och frisläpps för de valda juridiska personer. Endast godkända produkter kan läggas till anskaffningskatalogen.
 

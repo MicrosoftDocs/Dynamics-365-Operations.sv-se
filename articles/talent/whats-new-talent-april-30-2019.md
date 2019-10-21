@@ -1,6 +1,6 @@
 ---
-title: Vad är nytt och ändrat i Dynamics 365 for Talent (30 april 2019)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+title: Vad är nytt och ändrat i Dynamics 365 Talent (30 april 2019)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/30/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 112146ac46193e37b33bf429dc5a359f8cfaca94
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 38158948dbcf8966edf49bcce5b1e5da7eddb8dc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505385"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026054"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-30-2019"></a>Vad är nytt och ändrat i Dynamics 365 for Talent (30 april 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-30-2019"></a>Vad är nytt och ändrat i Dynamics 365 Talent (30 april 2019)
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ändringar i Attract
 
@@ -100,4 +100,4 @@ Möjligheten att spåra arbetstiden och förstå hur tiden är beräknad hjälpe
 
 ### <a name="email-support-for-alerts"></a>E-support för notifieringar
 
-Med plattformsuppdatering 26 kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse.
+I plattformsuppdatering 26 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse.

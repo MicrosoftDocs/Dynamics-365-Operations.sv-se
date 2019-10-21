@@ -1,6 +1,6 @@
 ---
-title: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
-description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Microsoft Dynamics 365 for Sales till Microsoft Dynamics 365 for Finance and Operations.
+title: Synkronisera försäljningsoffertrubriker och rader direkt från Sales till Supply Chain Management
+description: I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743381"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251257"
 ---
-# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
+# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synkronisera försäljningsoffertrubriker och rader direkt från Sales till Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Microsoft Dynamics 365 for Sales till Microsoft Dynamics 365 for Finance and Operations.
+I det här ämnet diskuteras mallarna och de underliggande uppgifterna som används för att synkronisera försäljningsoffertrubriker och rader direkt från Dynamics 365 Sales till Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
 > Innan du kan använda lösningen Potentiell kund till kontanter ska du bekanta dig med [integrera data i Common Data Service för appar](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflöden i Potentiell kund till kontanter
 
-Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Finance and Operations och Sales. Potentiell kund till pengar-mallarna med funktion för dataintegrering möjliggör ett dataflöde för konton, produkter, kontakter, produkter, försäljningskvoter, försäljningsorder samt försäljningsfakturor Finance and Operations och Sales. Följande bild visar hur data synkroniseras mellan Finance and Operations och Sales.
+Lösningen Potentiell kund till kontanter använder funktionen Dataintegrering för att synkronisera data mellan instanser av Supply Chain Management och Sales. Potentiell kund till kontanter-mallarna med funktionen för dataintegrering möjliggör ett flöde av konto-, produkt-, försäljningskvots-, försäljningsorder- samt försäljningsfakturadata mellan Supply Chain Management och Sales. Följande bild visar hur data synkroniseras mellan Supply Chain Management och Sales.
 
 [![Dataflöden i Potentiell kund till kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Mall och uppgifter
 
-Följande mallar och underliggande uppgifter används för att synkronisera huvuden och rader direkt i försäljningsofferter från Sales till Finance and Operations:
+Följande mallar och underliggande uppgifter används för att synkronisera huvuden och rader direkt i försäljningsofferter från Supply Chain Management:
 
-- **Namnet på mallen i dataintegrering:** försäljningsofferter (Sales till Fin and Ops) - Direkt
+- **Namnet på mallen i dataintegrering:** försäljningsofferter (Sales till Supply Chain Management) - Direkt
 - **Namnen på uppgifterna i dataintegreringsprojektet:**
 
     - QuoteHeader
@@ -53,9 +53,9 @@ Följande mallar och underliggande uppgifter används för att synkronisera huvu
 
 Följande synkroniseringsuppgifter krävs före synkronisering av huvuden och rader i försäljningsofferter kan uppstå:
 
-- Produkter (Fin and Ops till Sales) - Direkt
-- Konton (Sales till Fin and Ops) - Direkt (vid behov)
-- Kontakter till kunder (Sales till Fin and Ops) - Direkt (vid behov)
+- Produkter (Supply Chain Management till Sales) - direkt
+- Konton (Sales till Supply Chain Management)-direkt (om den används)
+- Kontakter till kunder (Sales till Supply Chain Management) - direkt (om den används)
 
 ## <a name="entity-set"></a>Ange entiteten
 
@@ -66,7 +66,7 @@ Följande synkroniseringsuppgifter krävs före synkronisering av huvuden och ra
 
 ## <a name="entity-flow"></a>Flöde för entitet
 
-Försäljningsofferter skapas i Sales och synkroniseras till Finance and Operations.
+Försäljningsofferter skapas i Sales och synkroniseras med Supply Chain Management.
 
 Försäljningsofferter från Sales synkroniseras endast om följande villkor är uppfyllda:
 
@@ -75,13 +75,13 @@ Försäljningsofferter från Sales synkroniseras endast om följande villkor är
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Lösningen potentiell kund till kontanter för Sales
 
-Fältet **Har endast externt hanterade produkter** har lagts till entiteten **Offert** för att konstant spåra om försäljningsofferten helt består av externt underhållna produkter. Om en försäljningsoffert endast har externt underhållna produkter, underhålls produkter i Finance and Operations. Detta beteende hjälper till att garantera att du inte försöker synkronisera försäljningsoffertraderna med produkter som är okända för Finance and Operations.
+Fältet **Har endast externt hanterade produkter** har lagts till entiteten **Offert** för att konstant spåra om försäljningsofferten helt består av externt underhållna produkter. Om en försäljningsoffert endast har externt underhållna produkter, underhålls produkter i Supply Chain Management. Detta beteende hjälper till att garantera att du inte försöker synkronisera försäljningsoffertraderna med produkter som är okända för Supply Chain Management.
 
 Alla offertprodukter på försäljningsofferten uppdateras med informationen **Har endast externt hanterade produkter** från försäljningsofferthuvudet. Den här informationen finns i fältet **Offerten har endast externt hanterade produkter** på entiteten **Offertdetaljer**.
 
-En rabatt kan läggas till i offertprodukten och synkroniseras med Finance and Operations. Fälten **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Finance and Operations. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen underhålls fälten **pris**, **rabatt**, **tillägg**, och **moms** i Finance and Operations.
+En rabatt kan läggas till i offertprodukten och synkroniseras med Supply Chain Management. Fälten **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Supply Chain Management. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen underhålls fälten **pris**, **rabatt**, **tillägg**, och **moms** i Supply Chain Management.
 
-I Sales gör lösningen följande fält skrivskyddade, eftersom värdena inte ska synkroniseras till Finance and Operations:
+I Sales gör lösningen följande fält skrivskyddade, eftersom värdena inte ska synkroniseras till Supply Chain Management.
 
 - Skrivskyddade fält på försäljningsoffertens huvud: **Rabatt %**, **Rabatt** och **Fraktbelopp**
 - Skrivskyddade fält på offertprodukter: **moms**
@@ -111,20 +111,20 @@ Innan försäljningsofferter synkroniseras är det viktigt att du uppdaterar fö
 
 #### <a name="quoteline"></a>QuoteLine
 
-- Kontrollera att nödvändig värdemappning finns för **Säljenhetssymbol** i Finance and Operations.
+- Kontrollera att nödvändig värdemappning finns för **Säljenhetssymbol** i Supply Chain Management.
 - Kontrollera att nödvändiga enheter definieras i Sales.
 
     En värdemall som har en värdemappning definieras för **oumid.name** till **Säljenhetssymbol**.
 
-- Valfritt: Du kan lägga till följande mappningar för att garantera att försäljningsoffertraderna importeras till Finance and Operations om det inte finns någon standardinformation från varken kunden eller produkten:
+- Valfritt: Du kan lägga till följande mappningar för att garantera att försäljningsoffertraderna importeras till Supply Chain Management om det inte finns någon standardinformation från varken kunden eller produkten:
 
-    - **SiteId** – en plats måste anges för att skapa offerter och försäljningsorderrader i Finance and Operations. Det finns inget standrdmallvärde för **SiteId**.
-    - **WarehouseId** – ett lagerställe måste anges för att skapa offerter och försäljningsorderrader i Finance and Operations. Det finns inget standrdmallvärde för **WarehouseId**.
+    - **SiteId** – en plats måste anges för att skapa offerter och försäljningsorderrader i Supply Chain Management. Det finns inget standrdmallvärde för **SiteId**.
+    - **WarehouseId** – ett lagerställe måste anges för att skapa offerter och försäljningsorderrader i Supply Chain Management. Det finns inget standrdmallvärde för **WarehouseId**.
 
 ## <a name="template-mapping-in-data-integrator"></a>Mallmappning i dataintegratör
 
 > [!NOTE]
-> - Fälten **rabatt**, **tillägg**, och **moms** styrs av en komplex inställning i Finance and Operations. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen hanteras fälten **pris**, **rabatt**, **tillägg**, och **moms** av Finance and Operations.
+> - Fälten **rabatt**, **tillägg**, och **moms** styrs av en komplex inställning i Supply Chain Management. För närvarande stöder inte den här inställningen integreringsmappning. I den aktuella designen hanteras fälten **pris**, **rabatt**, **tillägg**, och **moms** av Supply Chain Management.
 > - Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och **leveransläge** tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
 
 I följande illustrationer visas ett exempel på en mallmappning i dataintegratör.

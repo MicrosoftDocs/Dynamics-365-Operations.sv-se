@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f08829bccbaea6fb70563e553f9042300b4d5ea9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: fbaa467c22656aa8d1e39d26a8233250e2bb66f8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838008"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026611"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Momstilldelning och åsidosättningar
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du tilldelar momsgrupper till butikskanaler. Den går också igenom processen att skapa en ny momsåsidosättning och tilldela den till en befintlig momsåsidosättningsgrupp. Den här uppgiften
-
-använder sig av demonstrationsföretaget USRT.
+I den här proceduren visas hur du tilldelar momsgrupper till butikskanaler. Den går också igenom processen att skapa en ny momsåsidosättning och tilldela den till en befintlig momsåsidosättningsgrupp. I proceduren används demonstrationsföretaget USRT.
 
 1. Gå till butik och handel > Kanaler > butiker > Alla butiker.
 2. Klicka på länken Butikskanal-ID för "Houston" i listan.

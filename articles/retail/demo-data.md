@@ -1,6 +1,6 @@
 ---
 title: Demodataskärmlayouter i Retail Modern POS (MPOS) och Cloud POS
-description: Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Dynamics 365 Retail.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c8d2fac82541b768f8e0a31049177bdc1262d44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570654"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019334"
 ---
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Demodataskärmlayouter i Retail Modern POS (MPOS) och Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Microsoft Dynamics 365 for Retail.
+Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Dynamics 365 Retail.
 
 ## <a name="overview"></a>Översikt
 
@@ -40,7 +40,7 @@ Exempel på de skärmlayouter som medföljer Retail demodata ger innehåll som �
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Beskrivning av en skärmlayout-ID
 
-För att hitta skärmlayouter i Retail, gå till **Butik** \> **Kanalinställning** \> **Kassainställning** \> **Kassa** \> **Skärmlayouter**.
+För att hitta skärmlayouter, gå till **Butik** \> **Kanalinställning** \> **Kassainställning** \> **Kassa** \> **Skärmlayouter**.
 
 ![Sidan skärmlayouter i Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,7 +107,7 @@ Följande tabell visar layoutstorlek för normal skärmupplösning.
 \*Dessa ytterligare layoutstorlekar är bara tillgängliga i Adventure Works och Fabrikam layouter.
 
 > [!TIP]
-> Kassan väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Retail Modern POS (MPOS) eller Retail Cloud POS (CPOS), öppna sidan **Inställningar** och titta i avsnittet **Sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet i Retail genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
+> Kassan väljer automatiskt layoutstorlekar, baserat på närmaste storleken för skärmupplösningen för det aktuella appfönstret. Öppna den layout-ID och layoutskärmupplösning som för närvarande används i Retail Modern POS (MPOS) eller Retail Cloud POS (CPOS), öppna sidan **Inställningar** och titta i avsnittet **Sessionsinformation**. Du kan också hitta den aktuella upplösningen för fönster för ditt aktuella program eller webbläsarram. När du har den här informationen hittar du källan för layoutinnehållet genom att gå till **kanalinställning** \> **kassainställningar** \> **kassa** \> **skärmlayouter**.
 
 ![Skärmlayouter och layoutlösningar/storlekar i Retail och kassa](../retail/media/demo-screen-layouts-fig-3-1.png)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9efbd9651f6a2fa57e761238c6acfe6111e986e6
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874772"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249619"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor
 
@@ -225,7 +225,7 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
 26. Om du vill ställa in bilagor på en vald rad för standardtyp av underhållsjobb väljer du **Bifoga dokument**. Bilagor som ställs in på en standardrad för underhållsjobbtyp inkluderas automatiskt på arbetsorder rader där standardraden för underhållsjobbtypen används.
 27. Välj **Ny** och välj en dokumenttyp.
 28. Överför dokumentet eller filen.
-29. Ställ in fälten på sidan **Bilagor**. Inställningen av den bifogade filen använder standardfunktionen för dokumentinställningar i Microsoft Dynamics 365 for Finance and Operations.
+29. Ställ in fälten på sidan **Bilagor**. Inställningen av den bifogade filen använder standardfunktionen för dokumentinställningar.
 30. Välj **Spara** för att spara bilagan.
 
     > [!NOTE]
@@ -261,7 +261,7 @@ När du har skapat de nödvändiga standardkombinationerna för underhållsjobbt
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatisk uppdatering av prognoser för underhållsjobbtyper
 
-I Tillgångshantering kan du automatiskt uppdatera alla ändringar av prognoser för underhållsjobbtypen för timkostnader, artikelkostnader och utgifter som har uppdaterats i andra moduler i Finance and Operations. På så sätt garanterar du alltid att du använder de senaste självkostnaderna med hjälp av prognoser för underhållsjobbtyper.
+I Tillgångshantering kan du automatiskt uppdatera alla ändringar av prognoser för underhållsjobbtypen för timkostnader, artikelkostnader och utgifter som har uppdaterats i andra moduler. På så sätt garanterar du alltid att du använder de senaste självkostnaderna med hjälp av prognoser för underhållsjobbtyper.
 
 1. Välj **Tillgångshantering** \> **Periodisk** \> **Prognos** \> **Uppdatera prognos för underhållsjobbtyp**.
 2. I dialogrutan **Uppdatera prognos för underhållsjobbtyp**, på snabbfliken **Poster som ska ingå** kan du lägga till urval för specifika underhållsjobbtyper efter behov. Välj **Filter** och välj **Välj** för att göra urvalen.

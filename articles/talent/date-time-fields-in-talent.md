@@ -1,6 +1,6 @@
 ---
-title: Arbeta med datum och tid i Microsoft Dynamics 365 for Talent
-description: Förstå vad som ska förväntas när datum- och tidsfält används i Microsoft Dynamics 365 for Talent. Få klarhet i vad du ska förvänta dig när du interagerar med datum- och tidsformulär i Dynamics 365 for Talent, en extern källa eller Common Data Service.
+title: Arbeta med datum och tid i Microsoft Dynamics 365 Talent
+description: Förstå vad som ska förväntas när datum- och tidsfält används i Microsoft Dynamics 365 Talent. Få klarhet i vad du ska förvänta dig när du interagerar med datum- och tidsformulär i Talent, en extern källa eller Common Data Service.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4c652992272ed1a5aecbb4c78f0d11f077149d1
-ms.sourcegitcommit: 46bded82aa072adfedcf443629c2adc69f512c09
+ms.openlocfilehash: 1a1d1a47bfe6bd58b1e1a0d4d46c2133f3bf48ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1791232"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2007977"
 ---
 # <a name="date-and-time-fields-in-talent"></a>Datum och tidfält i Talent
 
 [!include [banner](includes/banner.md)]
 
-**Datum- och tidsfält** är ett grundläggande begrepp i Dynamics 365 for Talent. Det är viktigt att du förstår hur du arbetar med data för **datum och tid** i ett Dynamics 365-formulär, Common Data Service och externa källor.
+**Datum- och tidsfält** är ett grundläggande begrepp i Dynamics 365 Talent. Det är viktigt att du förstår hur du arbetar med data för **datum och tid** i ett Dynamics 365-formulär, Common Data Service och externa källor.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Förstå skillnaden mellan datatyperna Datum och Datum och tidsfält
 

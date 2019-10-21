@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526025"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025182"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Allokera huvudavgifter för att matcha försäljningsrader
 
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver funktionen för gruppering av automatiska avgifter på huvudnivå och -tillägg och allokera dem till butiksförsäljningsrader. Denna funktion är tillgänglig för transaktioner som skapas i kassan i Microsoft Dynamics 365 for Retailversion 10.0.1 och försäljning som skapas i kundtjänst i Microsoft Dynamics 365 for Retail version 10.0.2.
+Det här avsnittet beskriver funktionen för gruppering av automatiska avgifter på huvudnivå och -tillägg och allokera dem till butiksförsäljningsrader. Denna funktion är tillgänglig för transaktioner som skapas i kassan i Retail version 10.0.1 och försäljning som skapas i kundtjänst i Retail version 10.0.2.
 
 Denna funktion är endast tillgänglig om funktionen [avancerade automatiska avgifter](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) har aktiverats med hjälp av alternativet på sidan **Butiksparametrar**. Förbättrade beräkningsmetoden för automatiska avgifter kan dessutom tillämpas endast till försäljningsorder för butik som skapas via detaljhandelskanaler (kassan, en kundtjänst och Dynamics näthandelsplattform).
 
 Denna nya funktion ger organisationer större flexibilitet i sättet som automatiska avgifter på huvudnivå beräknas och tillämpas på butiksförsäljningstransaktioner.
 
-I versioner av Microsoft Dynamics 365 for Retail som är tidigare än version 10.0.1 beräknas automatiska avgifter på huvudnivå som har en viss leveranssättsrelation endast när det finns en matchning med leveranssätt som definieras i försäljningsorderrubriken.
+I versioner av Retail som är tidigare än version 10.0.1 beräknas automatiska avgifter på huvudnivå som har en viss leveranssättsrelation endast när det finns en matchning med leveranssätt som definieras i försäljningsorderrubriken.
 
 Exempelvis definieras automatiska avgifter på huvudnivå **99** och leveranssätt **11**. En försäljningsorder skapas och leveranssätt **99** definieras i orderrubriken. Men vissa försäljningsrader är inställda på att levereras med hjälp av leveranssättet **11**. I det här fallet beaktas och tillämpas endast avgifter på huvudnivå som är kopplade till leveranssätt **99** på försäljningsorder.
 
-I Dynamics 365 for Retail har avgifter på huvudnivå ytterligare en funktion som gör det möjligt att definiera en [skiftindelad konfiguration skiktad tillägget](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) soregelbaserad konfigurationm baseras på ordervärdet. Till exempel om ordervärdet är mellan 50,00 $ och 200,00 $ kanske organisationen vill debitera en fraktavgift på 5,00 $. Om ordervärdet är mellan 200,01 $ och 500,00 $ kan fraktkostnaden vara 4,00 $.
+I Retail har avgifter på huvudnivå ytterligare en funktion som gör det möjligt att definiera en [skiftindelad avgiftskonfiguration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) som baseras på ordervärdet. Till exempel om ordervärdet är mellan 50,00 $ och 200,00 $ kanske organisationen vill debitera en fraktavgift på 5,00 $. Om ordervärdet är mellan 200,01 $ och 500,00 $ kan fraktkostnaden vara 4,00 $.
 
 Vissa organisationer vill ha fördelarna med skiftindelad avgiftsberäkning som medföljer avgifter på huvudnivå. I scenarier som avser blandade leveranssätt kan de också vilja se till att de avgifter som beräknas baseras på matchning med leveranssättet som har definierats på varje försäljningsrad.
 

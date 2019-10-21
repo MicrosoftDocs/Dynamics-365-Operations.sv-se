@@ -1,6 +1,6 @@
 ---
 title: Lojalitetsöversikt
-description: Det här avsnittet beskriver lojalitetsfunktioner i Microsoft Dynamics 365 for Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
+description: Det här avsnittet beskriver lojalitetsfunktioner i Dynamics 365 Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
 author: scott-tucker
 manager: AnnBe
 ms.date: 03/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 9fbb5d6db16e2e145c4970b5dd6417d9e99f78b2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863782"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250977"
 ---
 # <a name="loyalty-overview"></a>Lojalitetsöversikt
 
 [!include [banner](includes/banner.md)]
 
-Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för deras samverkan med återförsäljarens varumärke. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal. Det här avsnittet beskriver lojalitetsfunktioner i Microsoft Dynamics 365 for Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
+Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för deras samverkan med återförsäljarens varumärke. I Dynamics 365 Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal. Det här avsnittet beskriver lojalitetsfunktioner i Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
 
 Du kan ställa in bonusprogram, så att de omfattar följande alternativ.
 
@@ -42,7 +42,7 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ.
 
 ## <a name="setting-up-loyalty-programs"></a>Ställa in bonusprogram
 
-Du måste ställa in flera komponenter om du vill aktivera lojalitetsfunktionen i Dynamics 365 for Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra.
+Du måste ställa in flera komponenter om du vill aktivera lojalitetsfunktionen i Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra.
 
 ![Processflöde för bonus](./media/loyaltyprocess.gif "Lojalitetskomponenter och hur de är relaterade till varandra")
 
@@ -69,9 +69,9 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 
 | Processnamn                         | Beskrivning | Sidnamn |
 |--------------------------------------|-------------|-----------|
-| 1050 (information om förmåner)           | Kör den här processen för att skicka förmånskonfigurationsdata från Dynamics 365 for Retail till butikerna. Det är en bra idé att tidsplanera den här processen om du vill köra den ofta, så att bonusdata överförs till alla butiker. | Distributionsschema |
+| 1050 (information om förmåner)           | Kör den här processen för att skicka förmånskonfigurationsdata från Retail till butikerna. Det är en bra idé att tidsplanera den här processen om du vill köra den ofta, så att bonusdata överförs till alla butiker. | Distributionsschema |
 | Bearbeta förmånsscheman              | Kör den här processen för att associera förmånsscheman med de butikskanaler som förmånsschemat är tilldelat till. Den här processen kan schemaläggas för att köras som en batchprocess. Du måste köra den här processen, om du ändrar bonuskonfigurationsdata, till exempel bonusscheman, bonusprogram, eller bonusbelöningspoäng. | Bearbeta förmånsscheman |
-| Bearbeta förmånstransaktioner offline | Kör den här processen om du vill uppdatera förmånskort för att inkludera transaktioner som har bearbetats offline. Den här processen gäller bara om kryssrutan **Tjäna offline** markeras på sidan **Gemensamma butiksparametrar** så att belöningar kan tjänas offline. | Bearbeta förmånstransaktioner offline |
+| Bokför intjänade förmånspoäng i batchar | Kör den här processen om du vill uppdatera förmånskort för att inkludera transaktioner som har bearbetats offline. Den här processen gäller bara om kryssrutan **Bokför intjänade poäng i batchar** markeras på sidan **Gemensamma butiksparametrar** så att belöningar kan tjänas offline. | Bokför intjänade förmånspoäng i batchar |
 | Uppdatera skikt för förmånskort            | Kör den här processen för att utvärdera kundens inkomstaktivitet mot nivåreglerna för ett bonusprogram och uppdatera kundens nivåstatus. Den här processen behövs bara om du ändrar nivåreglerna i bonusprogrammen och du vill tillämpa de uppdaterade reglerna retroaktivt för förmånskort som redan har utfärdats. Den här processen kan köras som en batchprocess eller för enskilda kort. | Uppdatera skikt för förmånskort |
 
 ## <a name="loyalty-enhancements"></a>Förbättringar av bonus
@@ -89,7 +89,7 @@ Retail har nya bonusfunktioner som en del av versionen från oktober 2018. Var o
 
     ![Undantagna anknytningar](./media/Excluded-affiliations.png "Undanta anknytningar från att tjäna förmånspoäng")
     
-- Återförsäljare kan generera förmånskortnummer i kanalerna. Innan uppdateringen oktober 2018 kunde återförsäljare använda fysiska förmånskort eller generera ett förmånskort som använder unik kundinformation såsom ett telefonnummer. Om du vill aktivera automatisk generering av förmånskort butiker aktiverar du **generera förmånskortnummer** i funktionsprofilen som är kopplad till butiken. För onlinekanaler, kan återförsäljare använda IssueLoyaltyCard-API för att utfärda förmånskort till kunder. Återförsäljare kan antingen tillhandahålla ett förmånskortnummer till denna API, som används för att generera förmånskortet, eller så kommer systemet att använda förmånskortets nummerserie i Dynamics 365 for Retail. Men om nummerserien inte finns och återförsäljaren inte tillhandahåller ett förmånskortnummer när API anropas visas ett felmeddelande.
+- Återförsäljare kan generera förmånskortnummer i kanalerna. Innan uppdateringen oktober 2018 kunde återförsäljare använda fysiska förmånskort eller generera ett förmånskort som använder unik kundinformation såsom ett telefonnummer. Om du vill aktivera automatisk generering av förmånskort butiker aktiverar du **generera förmånskortnummer** i funktionsprofilen som är kopplad till butiken. För onlinekanaler, kan återförsäljare använda IssueLoyaltyCard-API för att utfärda förmånskort till kunder. Återförsäljare kan antingen tillhandahålla ett förmånskortnummer till denna API, som används för att generera förmånskortet, eller så kommer systemet att använda förmånskortets nummerserie i Retail. Men om nummerserien inte finns och återförsäljaren inte tillhandahåller ett förmånskortnummer när API anropas visas ett felmeddelande.
 
     ![Generera förmånskort](./media/Generate-loyalty-card.png "Automatiskt generera förmånskortnummer")
 
@@ -137,7 +137,7 @@ Retail har nya bonusfunktioner som en del av versionen från oktober 2018. Var o
     - Att uppnå en aktivitet har inträffat som borde belönas.
     - Belöna lämpliga punkter.
 
-    Det första steget är utanför Microsoft Dynamics 365 for Retail, t.ex. twittra om varumärke eller gilla varumärket på Facebook. När aktiviteten har identifierats kan återförsäljarna anropa ovannämnda butiksserver-API och tilldela förmånspoäng i realtid. I sådana scenarier behövs det inte några granskningssteg eftersom en aktivitet har inträffat och motsvarande punkter ska tilldelas. Det finns scenarier där återförsäljaren vill granska posterna innan tilldelning av poäng. Återförsäljaren måste till exempel konfigurera en workshop i butiken som kunderna registrerar sig för på webbplatsen för e-handel eller andra program för händelseregistrering. Endast de deltagande kunderna tjänar lojalitetspoäng. För sådana scenarier introducerar vi i version 10.0 en dataentitet med namnet **Butikens förmåner andra aktivitetstyprader**. Denna dataentitet låter återförsäljare använda Data Import/Export Framework (DIXF) eller OData-API för att registrera de aktiviteter för att tilldela kunder förmånspoäng. Dataentiteten lagrar aktiviteterna i en journal med namnet **lojalitetsrader för andra aktiviteter**, som kan användas för granskning och ändring. När data har granskats kan IT-användaren manuellt bokföra aktivitetsraderna eller köra ett jobb som heter **bearbeta annan aktivitetstyp för lojalitetsrader**, som kommer att bokföra alla ej bokförda aktivitetsrader och tilldela poäng till kunder baserat på inkomstreglerna. I fallet ovan skulle händelseregistreringen kräva OData API för att skicka kundinformation till Dynamics 365 for Retail. Men IT-användaren kan endast bokföra aktivitetsraderna för kunder som har deltagit i verkstaden och ta bort aktivitetsraderna för andra kunder. 
+    Det första steget är utanför Retail t.ex. twittra om varumärke eller gilla varumärket på Facebook. När aktiviteten har identifierats kan återförsäljarna anropa ovannämnda butiksserver-API och tilldela förmånspoäng i realtid. I sådana scenarier behövs det inte några granskningssteg eftersom en aktivitet har inträffat och motsvarande punkter ska tilldelas. Det finns scenarier där återförsäljaren vill granska posterna innan tilldelning av poäng. Återförsäljaren måste till exempel konfigurera en workshop i butiken som kunderna registrerar sig för på webbplatsen för e-handel eller andra program för händelseregistrering. Endast de deltagande kunderna tjänar lojalitetspoäng. För sådana scenarier introducerar vi i version 10.0 en dataentitet med namnet **Butikens förmåner andra aktivitetstyprader**. Denna dataentitet låter återförsäljare använda Data Import/Export Framework (DIXF) eller OData-API för att registrera de aktiviteter för att tilldela kunder förmånspoäng. Dataentiteten lagrar aktiviteterna i en journal med namnet **lojalitetsrader för andra aktiviteter**, som kan användas för granskning och ändring. När data har granskats kan IT-användaren manuellt bokföra aktivitetsraderna eller köra ett jobb som heter **bearbeta annan aktivitetstyp för lojalitetsrader**, som kommer att bokföra alla ej bokförda aktivitetsrader och tilldela poäng till kunder baserat på inkomstreglerna. I fallet ovan skulle händelseregistreringen kräva OData API för att skicka kundinformation till Dynamics 365 Retail. Men IT-användaren kan endast bokföra aktivitetsraderna för kunder som har deltagit i verkstaden och ta bort aktivitetsraderna för andra kunder. 
 
     > [!NOTE]
     > För närvarande tvingar systemet användare att ställa in en nummerserie för ”andra aktivitetstyper”, men detta blir inte ett obligatoriskt steg i framtida versioner. Om du vill ställa in en nummerserie gå till **Gemensamma butiksparametrar** \> **Nummerserier** och välj en nummerserie för **Lojalitets-ID för annan aktivitetstyp**.

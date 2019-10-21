@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773276"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008465"
 ---
 # <a name="create-a-job"></a>Skapa ett jobb
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet beskriver delarna av ett jobb i Dynamics 365 for Talent: Attract. Här förklaras också hur du skapar ett jobb.
+Det här avsnittet beskriver delarna av ett jobb i Dynamics 365 Talent: Attract. Här förklaras också hur du skapar ett jobb.
 
 ## <a name="job-creation"></a>Skapa jobb
 
@@ -74,7 +74,7 @@ Mer information om aktiviteter som kan läggas till i anställningsprocessen fin
 
 ## <a name="postings"></a>Bokföringar
 
-När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Dynamics 365 for Talent) eller LinkedIn. Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden. När ett jobb har publicerats som endast internt behöver kandidater ett AAD-konto för att visa och ansöka om jobbet. Om jobbet är offentlig kan sökanden visa och ansöka om jobb med alla autentiseringsalternativ. 
+När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Dynamics 365 Talent) eller LinkedIn. Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden. När ett jobb har publicerats som endast internt behöver kandidater ett AAD-konto för att visa och ansöka om jobbet. Om jobbet är offentlig kan sökanden visa och ansöka om jobb med alla autentiseringsalternativ. 
 
 Mer information om jobbpubliceringar finns i [Funktionen för karriärwebbplats i Attract](career-site.md).
 

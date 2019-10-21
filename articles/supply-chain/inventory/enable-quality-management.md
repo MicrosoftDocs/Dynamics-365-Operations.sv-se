@@ -1,6 +1,6 @@
 ---
 title: Översikt över kvalitetshantering
-description: Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja.
+description: Det här avsnittet beskriver hur du kan använda kvalitetshantering i Dynamics 365 Supply Chain Management för att förbättra produktens kvalitet inom din leveranskedja.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
@@ -19,24 +19,24 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557510"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249596"
 ---
 # <a name="quality-management-overview"></a>Översikt över kvalitetshantering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja.
+Det här avsnittet beskriver hur du kan använda kvalitetshantering i Dynamics 365 Supply Chain Management för att förbättra produktens kvalitet inom din leveranskedja.
 
-Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Microsoft Dynamics 365 for Finance and Operations planera uppgifter för att korrigera problem och förhindra dem från att återkomma.
+Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Finance and Operations planera uppgifter för att korrigera problem och förhindra dem från att återkomma.
 
 Förutom funktioner för att hantera avvikelser inkluderar kvalitetshantering funktioner för att spåra problem efter problemtyp (även interna problem), och för att identifiera lösningar som kortsiktiga och långsiktiga. Statistik om KPI:er (Key Performance Indicator) ger insyn i historiken över tidigare avvikelseproblem och lösningarna som användes för att korrigera dem. Du kan använda historiska data om du vill granska effektiviteten hos tidigare kvalitetsmått och bestämma lämpliga mått som ska användas i framtiden.
 
-När du ställer in en kvalitetsassociation kan Finance and Operations skapa kvalitetsorder för olika affärsprocesser, händelser och villkor. Kvalitetsassociationen kan omfatta en viss artikel, en specifik grupp artiklar eller alla artiklar.
+När du ställer in en kvalitetsassociation kan Supply Chain Management skapa kvalitetsorder för olika affärsprocesser, händelser och villkor. Kvalitetsassociationen kan omfatta en viss artikel, en specifik grupp artiklar eller alla artiklar.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Exempel på användningen av kvalitetshantering
 Kvalitetshanteringen är flexibel och kan implementeras på olika sätt för att uppfylla kraven för specifika nivåer i distributionskedjeåtgärder. Följande exempel illustrerar hur dessa funktioner kan användas:

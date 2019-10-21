@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d969fcc59af87da3921225974ebc2ae41d9fa1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572844"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251000"
 ---
 # <a name="merge-inventory-batches"></a>Sammanfoga lagerbatchar
 
@@ -89,7 +89,7 @@ Nej, du kan bara sammanslå batchar som har samma plats och lagerdimensioner fö
 Nej, du kan endast sammanslå den fullständiga kvantiteten för batchar. Batchsammanfogningsfunktionen är avsedd som en lagerfunktion, inte en produktionsfunktion.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Vad händer om batcharna har olika batchattributvärden?
-När du väljer källbatcharna som du vill kombinera i den sammanslagna batchen kommer Finance and Operations att verifiera om egenskaper eller attributvärden är samma för alla batchar. När ett attributvärde är detsamma, föreslås ett värde för den sammanslagna batchen. Du kan ändra detta värde. Attributvärden som inte är desamma lämnas tomma för den sammanslagna batchen och du kan ange dessa värden manuellt. Om batchattributtypen för attributvärdet är ett heltal eller en del, och värdena inte är identiska för alla källbatcher, kommer värdet att beräknas med hjälp av en beräkning av viktat medelvärde. Det beräknade värdet avrundas uppåt eller nedåt till närmaste steg. Om värdet är tomt för en källbatch, är batchen och dess kvantitet inte med i beräkningen. **Exempel** I följande exempel visas en viktad genomsnittsberäkning för en sammanslagen batch. Två av källbatcherna har ett tomt värde för ett batchattributtyp som är ett heltal. Följande attribut tilldelas källbatcherna.
+När du väljer källbatcharna som du vill kombinera i den sammanslagna batchen kommer Supply Chain Management att verifiera om egenskaper eller attributvärden är samma för alla batchar. När ett attributvärde är detsamma, föreslås ett värde för den sammanslagna batchen. Du kan ändra detta värde. Attributvärden som inte är desamma lämnas tomma för den sammanslagna batchen och du kan ange dessa värden manuellt. Om batchattributtypen för attributvärdet är ett heltal eller en del, och värdena inte är identiska för alla källbatcher, kommer värdet att beräknas med hjälp av en beräkning av viktat medelvärde. Det beräknade värdet avrundas uppåt eller nedåt till närmaste steg. Om värdet är tomt för en källbatch, är batchen och dess kvantitet inte med i beräkningen. **Exempel** I följande exempel visas en viktad genomsnittsberäkning för en sammanslagen batch. Två av källbatcherna har ett tomt värde för ett batchattributtyp som är ett heltal. Följande attribut tilldelas källbatcherna.
 
 | Attribut | Minimum | Stegvis | Maximal |
 |-----------|---------|-----------|---------|

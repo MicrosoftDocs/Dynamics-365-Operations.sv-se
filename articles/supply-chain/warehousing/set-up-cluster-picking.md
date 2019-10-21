@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 84b6d3c3caa09b9601701ca4ac1992b151c0b8d4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559010"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249760"
 ---
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ I det här avsnittet beskrivs hur du möjliggör för en arbetare att använda s
 
 När arbetsorder har frisläppts till lagerstället kan arbetare använda en mobil enhet för att tilldela order till ett kluster. Klustret ordnar plockningsarbetet för arbetaren. När en arbetsorder tilldelas ett kluster, måste arbetaren använda klusterplockning för att utföra plockningsarbetet för ordern. Arbetaren kan inte använda andra plockningsmetoder. Om en arbetsorder tilldelas ett kluster av misstag måste arbetaren bryta klustret och sedan återskapa det.
 
-Om det behövs kan en anställd skicka ett kluster till en annan arbetare. Detta ändrar klusterstatus till Klarat. När arbetstagaren använder en mobil enhet för att ange att plockningen och det inlagrade arbetet är slutfört måste leveransen eller lasten bekräftas i Dynamics 365 for Finance and Operations-klienten.
+Om det behövs kan en anställd skicka ett kluster till en annan arbetare. Detta ändrar klusterstatus till Klarat. När arbetstagaren använder en mobil enhet för att ange att plockningen och det inlagrade arbetet är slutfört måste leveransen eller lasten bekräftas i klienten.
 
 ## <a name="set-up-cluster-picking"></a>Ställa in klusterplockning
 

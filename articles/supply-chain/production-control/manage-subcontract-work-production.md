@@ -1,6 +1,6 @@
 ---
 title: Hantera legotillverkningsarbete i produktionen
-description: Det här avsnittet beskriver hur legotillverkningen hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
+description: Det här avsnittet beskriver hur legotillverkningen hanteras i Dynamics 365 Supply Chain Management. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569763"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023551"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Hantera legotillverkningsarbete i produktionen
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur legotillverkningen hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
+Det här avsnittet beskriver hur legotillverkningen hanteras i Dynamics 365 Supply Chain Management. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
 
 I [produktionsprocesser](production-process-overview.md) kan arbetet utföras av resurser som ägs eller förvaltas av leverantörer. Leverantörsresurser används vanligtvis för att jämna ut periodiskt överdriven efterfrågan som överskrider den tillgängliga kapaciteten hos ett företags egna resurser. Leverantören kan eventuellt också erbjuda särskilda [resurskunskaper](resource-capabilities.md) eller resurser till ett lägre pris.  
 
@@ -40,7 +40,7 @@ När legotillverkningsverksamhet eller -åtgärder används, påverkar de alla v
 
 För interna resurser tilldelas som regel en fast kostnadstariff för en period. Däremot baseras kostnaden för resurser på entreprenad på inköpspriset för den tillhörande tjänsten. Tjänsten definieras som en annan produkt, och används för att underlätta anskaffnings- och inköpsprocesser för en viss legotillverkningsoperation.  
 
-Det finns för närvarande inga uttryckliga begrepp för halvfabrikat i Microsoft Dynamics 365 for Finance and Operations. För produktionsorder som kräver mer än en åtgärd för att omvandla råmaterial till färdig vara, bokförs den färdiga varan åter i lager först i samband med den sista åtgärden. Halvfärdiga produkter som tidigare åtgärder framställer redovisas som pågående arbete (PIA), men varken bokförs eller spåras i lagret. Även om du kan dela flöden och strukturlistor i flera mindre enheter, ökar denna metod antalet varor, strukturlistor och flöden som måste hanteras.  
+Det finns för närvarande inga uttryckliga begrepp för halvfabrikat i Supply Chain Management. För produktionsorder som kräver mer än en åtgärd för att omvandla råmaterial till färdig vara, bokförs den färdiga varan åter i lager först i samband med den sista åtgärden. Halvfärdiga produkter som tidigare åtgärder framställer redovisas som pågående arbete (PIA), men varken bokförs eller spåras i lagret. Även om du kan dela flöden och strukturlistor i flera mindre enheter, ökar denna metod antalet varor, strukturlistor och flöden som måste hanteras.  
 
 Det finns två metoder för att modellera legotillverkning för produktionsverksamheten. Dessa metoder skiljer sig åt genom hur legotillverkningsprocessen kan utformas, hur halvfabrikat representeras under processen, samt hur kostnadsstyrningen hanteras.
 

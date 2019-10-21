@@ -1,6 +1,6 @@
 ---
-title: Hämta Dynamics 365 for Talent - Onboard-appen
-description: I det här avsnittet beskrivs hur du skaffar den fristående versionen av Microsoft Dynamics 365 for Talent - Onboard-appen eller versionen som innehåller tillägget för omfattande anställning.
+title: Hämta Dynamics 365 Talent - Onboard-appen
+description: I det här avsnittet beskrivs hur du skaffar den fristående versionen av Microsoft Dynamics 365 Talent - Onboard-appen eller versionen som innehåller tillägget för omfattande anställning.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,30 +16,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: e83bbd71089b145c6c99780ea9516793c5238b33
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 7bf2e421445e5ca92e995ef581bf61c7978746d2
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731651"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010785"
 ---
-# <a name="get-the-dynamics-365-for-talent-onboard-app"></a>Hämta Dynamics 365 for Talent: Onboard-appen
+# <a name="get-the-dynamics-365-talent-onboard-app"></a>Hämta Dynamics 365 Talent: Onboard-appen
 
 [!include [banner](includes/banner.md)]
 
-Du kan visa en demonstration och prova Microsoft Dynamics 365 for Talent: Onboard-appen kostnadsfritt från [Onboard produktsidan](https://dynamics.microsoft.com/talent/onboard/).
+Du kan visa en demonstration och prova Microsoft Dynamics 365 Talent: Onboard-appen kostnadsfritt från [Onboard produktsidan](https://dynamics.microsoft.com/talent/onboard/).
 
 > [!NOTE]
 > Den kostnadsfria utvärderingsversionen kräver ett e-postkonto för företag.
 
-Du kan köpa en prenumeration på Onboard som antingen en fristående app eller en del av Dynamics 365 for Talent. Talent är ett heltäckande HR-system (HCM) som inkluderar Dynamics 365 for Talent: Attract, Onboard och Core HR. Mer information om hur du köper Onboard finns på [Onboard produktsidan](https://dynamics.microsoft.com/talent/onboard/).
+Du kan köpa en prenumeration på Onboard som antingen en fristående app eller en del av Dynamics 365 Talent. Talent är ett heltäckande HR-system (HCM) som inkluderar Dynamics 365 Talent: Attract Onboard och Core HR. Mer information om hur du köper Onboard finns på [Onboard produktsidan](https://dynamics.microsoft.com/talent/onboard/).
 
 Under testperioden eller köpprocessen kommer du att ställa in din e-postadress och ditt lösenord för Microsoft 365. Var noga med att anteckna dessa värden.
 
 > [!WARNING]
 > Du kan inte migrera data från din utvärderingsversion till din betalda prenumerationsmiljö. <!--Reviewers: please verify.-->
 
-Mer information om nya funktioner i Talent, se [Nyheter och ändringar in Dynamics 365 for Talent](./whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Om du vill förhandsgranska nya funktioner i Onboard, se [åtkomstfunktioner för förhandsgranskning i Talent](./access-preview-feature.md).
+Mer information om nya funktioner i Talent, se [Nyheter och ändringar in Dynamics 365 Talent](./whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Om du vill förhandsgranska nya funktioner i Onboard, se [åtkomstfunktioner för förhandsgranskning i Talent](./access-preview-feature.md).
 
 Om du är IT-proffs och vill veta mer om hur de två versionerna av Onboard-appen etableras, se [etablering för Onboard-appen](./modular-app-tech-faq.md).
 

@@ -1,13 +1,13 @@
 ---
-title: Utöka Talent genom att använda PowerApps och Microsoft Flow- exempelscenarier
-description: Det här ämnet beskriver några exempel på tilläggsscenarier för Microsoft Dynamics 365 for Talent som använder Microsoft PowerApps och Microsoft Flow.
+title: Utöka Talent genom att använda PowerApps och Microsoft Flow - exempelscenarier
+description: Det här ämnet beskriver några exempel på tilläggsscenarier för Microsoft Dynamics 365 Talent som använder Microsoft PowerApps och Microsoft Flow.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
-ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
+ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1781452"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008069"
 ---
-# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utöka Talent genom att använda PowerApps och Microsoft Flow- exempelscenarier
+# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Utöka Talent genom att använda PowerApps och Microsoft Flow - exempelscenarier
 
-Det här ämnet beskriver några exempel på tilläggsscenarier för Microsoft Dynamics 365 for Talent som använder Microsoft PowerApps och Microsoft Flow. Du kan importera lösningspaketet som associeras med varje exempel i din PowerApps-miljö. Du kan sedan använda paketen antingen som vägledning eller som utgångspunkt för att implementera scenarier som gäller för din organisation.
+Det här ämnet beskriver några exempel på tilläggsscenarier för Microsoft Dynamics 365 Talent som använder Microsoft PowerApps och Microsoft Flow. Du kan importera lösningspaketet som associeras med varje exempel i din PowerApps-miljö. Du kan sedan använda paketen antingen som vägledning eller som utgångspunkt för att implementera scenarier som gäller för din organisation.
 
 > [!IMPORTANT]
 > Om du vill använda de mallar och program som beskrivs i det här avsnittet ”i befintligt skick” bör du testa dem och se till att de täcker alla de scenarier som avser implementeringen.
@@ -57,7 +57,7 @@ För att hämta mallen **flöde – formuläret Ansluta** och anpassad entitetss
 
 ## <a name="initiate-and-extract-parameters-passed-to-powerapps"></a>Initiera och hämta parametrar som skickades till Powerapps
 
-Mallen **starta och hämta parametrar som skickades till Powerapps** kan användas som utgångspunkt för vissa PowerApps-situationer som är specifika för Attract. Den innehåller alla standardparametrar som skickas av Attract, t.ex. **Jobbansökan**, **kandidat-ID**, och **JobID**.
+Mallen **starta och hämta parametrar som skickades till PowerApps** kan användas som utgångspunkt för vissa PowerApps-situationer som är specifika för Attract. Den innehåller alla standardparametrar som skickas av Attract, t.ex. **Jobbansökan**, **kandidat-ID**, och **JobID**.
 
 Den här mallen kan användas för att hämta kandidatens bedömningsformulär, så att en anställande chef kan visa den bedömning som en kandidat har fyllt i.
 
@@ -79,7 +79,7 @@ Mallen **Flöde – e-postmeddelanden** kan användas för e-postmeddelandescena
 
 Den här mallen kan utökas för att spåra ändringar i kandidatfasen genom hela rekryteringsprocessen och skicka meddelanden till anställningsteamet och kandidaterna.
 
-I allmänhet kan flöden för entiteter som är lagrade i Common Data Service ställas in för att skicka meddelanden om händelser som inträffar i Core HR, Attract eller Dynamics 365 Talent: Onboard.
+I allmänhet kan flöden för entiteter som är lagrade i Common Data Service ställas in för att skicka meddelanden om händelser som inträffar i Core HR, Attract eller Onboard.
 
 För att hämta mallen **Flöde – e-postmeddelanden**, gå till [Flöde – e-postmeddelanden](https://go.microsoft.com/fwlink/?linkid=2082103) på Microsoft Download Center.
 
@@ -106,7 +106,7 @@ Du kan använda appen Hänvisning för att lägga till kandidater till en delad 
 
 Du kan bädda in den här appen i Självbetjäning för medarbetare (ESS) för att skicka referenser eller använda den som en hyperlänk i företagsportalen och köra den som en fristående app.
 
-Hämta **Appen Hänvisning** genom att gå till [Dynamics 365 for Talent utbyggbarhetslösning: appen Hänvisning](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importera den här appen och anpassa den om du vill lägga till fler funktioner.
+Hämta **Appen Hänvisning** genom att gå till [Dynamics 365 Talent utbyggbarhetslösning: appen Hänvisning](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) i Microsoft Download Center. Du kan importera den här appen och anpassa den om du vill lägga till fler funktioner.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

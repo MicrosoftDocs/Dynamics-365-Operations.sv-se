@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522207"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249983"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -35,7 +35,7 @@ Det här avsnittet innehåller information om Flöden och operationer. Ett flöd
 <a name="overview"></a>Översikt
 --------
 
-Ett flöde beskriver ordningen av operationer som krävs för att producera en produkt eller produktvariant. Flödet definierar också operationsresurser som krävs, tid som krävs för att ställa in och utföra operationen och hur kostnaden ska beräknas för varje operation. Du kan använda samma flöde för att skapa flera produkter eller definiera ett unikt flöde för varje produkt eller produktvariant. Du kan också ha flera flöden för samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. den kvantitet som måste produceras. Definitionen av ett flöde i Microsoft Dynamics 365 for Finance and Operations består av fyra separata element som tillsammans beskriver produktionsprocessen:
+Ett flöde beskriver ordningen av operationer som krävs för att producera en produkt eller produktvariant. Flödet definierar också operationsresurser som krävs, tid som krävs för att ställa in och utföra operationen och hur kostnaden ska beräknas för varje operation. Du kan använda samma flöde för att skapa flera produkter eller definiera ett unikt flöde för varje produkt eller produktvariant. Du kan också ha flera flöden för samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. den kvantitet som måste produceras. Definitionen av ett flöde i Finance and Operations består av fyra separata element som tillsammans beskriver produktionsprocessen:
 
 -   **Flöde** – ett flöde som definierar strukturen i produktionsprocessen. Den definierar alltså operationernas ordning.
 -   **Operation** – en operation som identifierar ett namngivet steg i flödet, som t.ex. **sammansättning**. Samma operation kan ske på flera flöden och kan ha olika operationsnummer.
@@ -43,7 +43,7 @@ Ett flöde beskriver ordningen av operationer som krävs för att producera en p
 -   **Flödesversion** – en flödesversion som definierar flödet som används för att tillverka en produkt eller produktvariant. Flödesversioner tillåter att flöden ska återanvändas mellan produkter eller ändras med tiden. De tillåter också att olika flöden används för att tillverka samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. plats eller den kvantitet som måste produceras.
 
 ## <a name="routes"></a>Flöden
-Ett flöde beskriver ordningen av operationer som används för att producera en produkt eller produktvariant. Varje operation tilldelas ett operationsnummer och en efterföljande operation. Operationernas ordning utgör en flödesnätverk som kan representeras av ett riktat diagram med en eller flera startpunkter och en enda slutpunkt. I Finance and Operations skiljer sig flöden baserat på vilken typ av struktur. Två typer av flöden är enkla flöden och flödesnätverk. I produktionsstyrningsparametrarna kan du ange om endast enkla flöden kan användas, eller om mer komplexa flödesnätverk kan användas
+Ett flöde beskriver ordningen av operationer som används för att producera en produkt eller produktvariant. Varje operation tilldelas ett operationsnummer och en efterföljande operation. Operationernas ordning utgör en flödesnätverk som kan representeras av ett riktat diagram med en eller flera startpunkter och en enda slutpunkt. I Supply Chain Management skiljer sig flöden baserat på vilken typ av struktur. Två typer av flöden är enkla flöden och flödesnätverk. I produktionsstyrningsparametrarna kan du ange om endast enkla flöden kan användas, eller om mer komplexa flödesnätverk kan användas
 
 ### <a name="simple-routes"></a>Enkla flöden
 
@@ -51,7 +51,7 @@ Ett enkelt flöde är sekventiellt och det finns bara en startpunkt för flödet
 
 [![Enkelt flöde](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Om du bara aktiverar enkla flöden i produktionsstyrningsparametrarna genererar Finance and Operations automatiskt operationsnumren (10, 20, 30 osv.) när du definierar flödet.
+Om du bara aktiverar enkla flöden i produktionsstyrningsparametrarna genererar Supply Chain Management automatiskt operationsnumren (10, 20, 30 osv.) när du definierar flödet.
 
 ### <a name="route-networks"></a>Flödesnätverk
 
@@ -85,7 +85,7 @@ Varje flöde och formel går att godkänna och upphäva separat. Observera att o
 Om du måste hålla en logg som registrerar vem som godkänner varje flöde, kan du kräva elektroniska signaturer för flödeskännande. Användare måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
 
 ## <a name="operations"></a>Operations
-En operation är ett steg i produktionsprocessen, t.ex. I Finance and Operations har varje operation ett ID och en kort beskrivning. I följande tabell visas vanliga exempel på operationer från en maskinaffär.
+En operation är ett steg i produktionsprocessen, t.ex. Varje operation har ett ID och en kort beskrivning. I följande tabell visas vanliga exempel på operationer från en maskinaffär.
 
 | Åtgärd  | beskrivning        |
 |------------|--------------------|
@@ -126,7 +126,7 @@ Operationsrelationer ger stor flexibilitet när du definierar dina flöden. Dess
 
 ### <a name="modifying-product-specific-routes"></a>Ändra produktspecifika flöden
 
-När du öppnar sidan **Flöde** från **Frisläppt produktinformation** kommer de flödesversioner som är kopplade till den valda frisläppt produkten att visas. I detta sammanhang visar Finance and Operations de operationsrelationers funktionella egenskaper som bäst motsvarar flödesversionen för varje operation. Du ser att listan över operationer innehåller egenskaperna **Artikelkod** och **flöde śkod** från operationsrelationen. Därför kan du bestämma vilken operationsrelation som ska visas.  
+När du öppnar sidan **Flöde** från **Frisläppt produktinformation** kommer de flödesversioner som är kopplade till den valda frisläppt produkten att visas. I detta sammanhang visar Supply Chain Management de operationsrelationers funktionella egenskaper som bäst motsvarar flödesversionen för varje operation. Du ser att listan över operationer innehåller egenskaperna **Artikelkod** och **flöde śkod** från operationsrelationen. Därför kan du bestämma vilken operationsrelation som ska visas.  
 
 På sidan **flöde** kan du ändra funktionella egenskaperna för operationen, till exempel körtiden eller kostnadskategorier. Ändringarna sparas i operationsrelationen som är specifika för flödet och frisläppt produkt som hänvisas till i den aktuella flödesversionen. Om operationsrelationen som visas inte är specifik till flödet och frisläppt produkt innan ändringarna sparas, skapas en kopia av operationsrelationen. Den här kopian *är* specifik för flödet och frisläppt produkt. Ändringarna påverkar inte andra flöden eller frisläppta produkter. Kontrollera vilka operationsrelationen ändras på den **flöde** kan du titta på fälten **Artikelkod** och **flödeskod**.  
 
@@ -149,9 +149,9 @@ Om ditt företag använder standardåtgärder och om driftsparametrar är desamm
 
 ### <a name="applying-operation-relations"></a>Tillämpa operationsrelationer
 
-I vissa fall måste for Finance and Operations hitta operationens funktionella egenskaper. Exempelvis när en inköpsorder skapas måste de funktionella egenskaperna för varje operation kopieras från operationsrelationer i produktionsflödet. I sådana fall söker Finance and Operations efter de relevanta operationsrelationerna från den mest specifika kombinationen till den minst specifika.  
+I vissa fall måste for Supply Chain Management hitta operationens funktionella egenskaper. Exempelvis när en inköpsorder skapas måste de funktionella egenskaperna för varje operation kopieras från operationsrelationer i produktionsflödet. I sådana fall söker Supply Chain Management efter de relevanta operationsrelationerna från den mest specifika kombinationen till den minst specifika.  
 
-När Finance and Operations söker efter den mest relevanta operationsrelationen för en frisläppt produkt, föredras en operationsrelation som överensstämmer med artikel-ID för frisläppt produkt över en operationsrelation som matchar artikelgrupp-ID. I sin tur är en operationsrelation som överensstämmer med artikel grupp-ID att föredra över standardoperationsrelationen. Tabellen görs i följande ordning.
+När Supply Chain Management söker efter den mest relevanta operationsrelationen för en frisläppt produkt, föredras en operationsrelation som överensstämmer med artikel-ID för frisläppt produkt över en operationsrelation som matchar artikelgrupp-ID. I sin tur är en operationsrelation som överensstämmer med artikel grupp-ID att föredra över standardoperationsrelationen. Tabellen görs i följande ordning.
 
 1.  **Artikelkod**=**Tabell** och **Artikelrelation**=&lt;artikel-ID&gt;
 2.  **Artikelkod**=**Grupp** och **Artikelrelation**=&lt;artikelgrupp-ID&gt;
@@ -198,7 +198,7 @@ Beroende på ditt företags behov kanske du vill minska det arbete som krävs f�
 
 ### <a name="making-routes-independent-of-resources"></a>Göra flöden oberoende av resurser
 
-I många system måste operationresursen eller resursgruppen som ska utföra operationen anges i flödet. I Finance and Operations kan du dock definiera en uppsättning krav som en verksamhetsresurs måste uppfylla för att kunna tillämpas på operationen. Därför kan inte specifika operationsresurser eller resursgrupper som ska användas bestämmas förrän operationen schemaläggs. Denna funktion är speciellt användbar när du har många arbetare eller maskiner som kan utföra samma operation.  
+I många system måste operationresursen eller resursgruppen som ska utföra operationen anges i flödet. I Supply Chain Management kan du dock definiera en uppsättning krav som en verksamhetsresurs måste uppfylla för att kunna tillämpas på operationen. Därför kan inte specifika operationsresurser eller resursgrupper som ska användas bestämmas förrän operationen schemaläggs. Denna funktion är speciellt användbar när du har många arbetare eller maskiner som kan utföra samma operation.  
 
 Till exempel anger du att en operation kräver en operationsresurs av typen **maskin** med en **stämplings** kapacitet på 20 ton. Planeringsmotorn matchar sedan dessa krav med en specifik operationsresurs eller resursgrupp när operationen planeras. Eftersom du bara kan ange dessa krav i stället för bindning av operationen till en viss maskin, har du mycket större flexibilitet. Underhåll är dessutom lättare när resurser flyttas eller när nya resurser läggs till.  
 

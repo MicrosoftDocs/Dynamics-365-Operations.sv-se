@@ -1,6 +1,6 @@
 ---
-title: Vad är nytt och ändrat i Dynamics 365 for Talent (23 april 2019)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+title: Vad är nytt och ändrat i Dynamics 365 Talent (23 april 2019)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/23/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5ec10820761cb22cbff6229babe8a250848214b7
-ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
+ms.openlocfilehash: 1a70be88e3ab65bb0bdd844347e8ba69e4ba61a5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624591"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024124"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-23-2019"></a>Vad är nytt och ändrat i Dynamics 365 for Talent (23 april 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-23-2019"></a>Vad är nytt och ändrat i Dynamics 365 Talent (23 april 2019)
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Talent.
+Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ändringar i Attract
-Den här versionen inkluderar felkorrigeringar för Dynamics 365 for Talent: Attract.
+Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Attract.
 
 ## <a name="changes-in-onboard"></a>Ändringar i Onboard
-Den här versionen inkluderar felkorrigeringar för Dynamics 365 for Talent: Onboard.
+Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Ändringar i Core HR
 Ändringar som beskrivs i detta avsnitt gäller versionsnummer 8.1.2253. Siffror inom parenteser refererar till supportnummer i Lifecycle Services (LCS).
@@ -79,4 +79,4 @@ Med denna ändring detekteras dubbletter när du anger namnfält och status visa
 ## <a name="known-issues"></a>Kända problem
 
 ### <a name="email-support-for-alerts"></a>E-support för notifieringar
-Med plattformsuppdatering 26 kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse.
+Med plattformsuppdatering 26 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse.

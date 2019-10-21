@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568009"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025039"
 ---
 # <a name="retail-statements"></a>Butiksutdrag
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for Retail är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (PO) eller Modern POS (MOPS). Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ). De parametrar som definieras på sidorna **Butiksparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.
+I Dynamics 365 Retail är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (PO) eller Modern POS (MOPS). Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ). De parametrar som definieras på sidorna **Butiksparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.
 
 Utdragsbokföringsprocessen illustreras i följande diagram. I denna process överförs transaktioner som är registrerade i kassan till klienten, genom att Butik schemaläggare används. När klienten har tagit emot transaktionerna kan du skapa, beräkna och bokföra transaktionsutdraget för butiken.
 
@@ -85,6 +85,6 @@ Om kryssrutan **Bokför som vardag** är avmarkerad för samma butik, genereras 
 När du bokför ett utdrag, skapas fakturor för försäljningsorder och butiksförsäljning i utdraget.
 
 - Hemköpsförsäljning (cash and carry) aggregeras till en försäljningsorder och faktureras för standardkunden som har tilldelats till butiken.
-- Butiksförsäljning, för vilken en kund lades till i transaktionen i Microsoft Dynamics 365 for Retail POS genererar separata försäljningsorder och fakturor, en för varje unik kund.
+- Butiksförsäljning, för vilken en kund lades till i transaktionen i Retail POS genererar separata försäljningsorder och fakturor, en för varje unik kund.
 
 Betalningsjournaler skapas automatiskt för betalningarna i utdraget och lagret uppdateras för kassabutiken.

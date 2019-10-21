@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559170"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249806"
 ---
 # <a name="sales-returns"></a>Försäljningsreturer
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559170"
 
 Det här avsnittet innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter.
 
-Kunder kan returnera artiklar av olika skäl. Till exempel kan en artikel ha fel eller den uppfyller inte kundens förväntningar. Processen startar när en kund utfärdar en begäran att returnera en artikel. När en kunds begäran har tagits emot skapas en returorder i Microsoft Dynamics 365 for Finance and Operations.
+Kunder kan returnera artiklar av olika skäl. Till exempel kan en artikel ha fel eller den uppfyller inte kundens förväntningar. Processen startar när en kund utfärdar en begäran att returnera en artikel. När en kunds begäran har tagits emot skapas en returorder.
 
 ## <a name="return-order-process"></a>Returorderprocess
 Följande bild ger en översikt över returorderprocessen.  
@@ -281,7 +281,7 @@ Scenariot innebär två företag i samma organisation, vilket visas i följande 
 
 ![Enkel koncernintern retur](./media/SalesReturn07.png)
 
-Orderkedjan kan upprättas när en leverantörs returorder skapas i det inköpande företaget eller en kundreturorder skapas i det säljande företaget. Finance and Operations skapar motsvarande order i det andra företaget och ser till att rubrik- och radinformationen på leverantörsreturordern reflekterar inställningarna för kundens returorder. Returordern som har upprättats kan inkludera eller utesluta referensen (**Sök efter försäljningsorder**) till en befintlig kundfaktura. Följesedlar och fakturor för de två order kan behandlas separat. Du behöver inte skapa en följesedel för returordern för leverantören innan du genererar följesedeln för returordern.
+Orderkedjan kan upprättas när en leverantörs returorder skapas i det inköpande företaget eller en kundreturorder skapas i det säljande företaget. Motsvarande order skapas i det andra företaget och ser till att rubrik- och radinformationen på leverantörsreturordern reflekterar inställningarna för kundens returorder. Returordern som har upprättats kan inkludera eller utesluta referensen (**Sök efter försäljningsorder**) till en befintlig kundfaktura. Följesedlar och fakturor för de två order kan behandlas separat. Du behöver inte skapa en följesedel för returordern för leverantören innan du genererar följesedeln för returordern.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Direktleverans returnerar mellan tre parter
 

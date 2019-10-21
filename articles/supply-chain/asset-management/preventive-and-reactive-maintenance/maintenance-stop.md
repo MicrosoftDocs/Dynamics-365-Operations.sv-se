@@ -3,7 +3,7 @@ title: Underhållsstopp
 description: I det här avsnittet beskrivs underhållsstopp i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a831d56116c57b640993162473e74e5ce181f09c
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875894"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922193"
 ---
 # <a name="maintenance-downtime"></a>Underhållsstopp
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,12 +43,12 @@ När du har valt tillgångar för en underhållsstopptidsregistrering inkluderas
 
 ## <a name="maintenance-downtime-activities"></a>Aktiviteter för underhållsstopp
 
-Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** för att öppna en lista med alla aktiviteter för underhållsstopp och visa informationen relaterad till aktiviteterna. Klicka på en länk i kolumnen **Aktiviteter för underhållsstopp** om du vill öppna informationsvyn.
+Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** för att öppna en lista med alla aktiviteter för underhållsstopp och visa informationen relaterad till aktiviteterna. Klicka på en länk i kolumnen **Aktiviteter för underhållsstopp** om du vill öppna informationsvyn. Bilden nedan visar ett exempel på listan **Aktiviteter för underhållsstopp**.
 
 ![Figur 1](media/19-preventive-maintenance.png)
 
 
-## <a name="create-a-maintenance-downtime-registration"></a>Skapa en registrering av underhållsstopp
+## <a name="create-a-maintenance-downtime-activity"></a>Skapa en aktivitet för underhållsstopp
 
 1. Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhållsstopp** > **Alla aktiviteter för underhållsstopp** eller **Aktiva aktiviteter för underhållsstopp**.
 
@@ -61,9 +60,11 @@ Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhål
 
 5. På snabbfliken **Tillgångar för aktiviteter för underhållsstopp** > klicka på **Lägg till rad** om du vill lägga till tillgångar, en åt gången, för aktiviteten för underhållsstopp.
 
-6. Klicka **Spara** när alla tillgångar har lagts till.
+6. Klicka **Spara** när alla tillgångar har lagts till. Illustrationen nedan visar ett exempel på en aktivitet för underhållsstopp med relaterade tillgångar och underhållsjobb.
 
 7. Underhållsjobben för arbetsordern och öppna underhållsschemarader som är relaterade till de valda tillgångarna visas på snabbflikarna **Resulterande underhållsjobb för arbetsorder** och **Underhållsschemarader**. På snabbfliken **Allmänt** > gruppen **Arbetsorder** > fältet **Prognostimmar för underhåll** och snabbfliken **allmänt** > gruppen **Underhållsschema** > fältet **Prognostimmar för underhåll**, visas det totala antalet timmar som har prognosticerats för underhållsjobb för arbetsorder och underhållsschemarader.
+
+Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp**.
 
 ![Figur 2](media/20-preventive-maintenance.png)
 
@@ -74,7 +75,7 @@ Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhål
 
 9. I dialogen **Beräkna kapacitetsbeläggning** redigerar du start- och sluttider om det behövs, och väljer om du vill inkludera arbetsorder och underhållsscheman i beräkningen. Du kan använda fältet **Nivå** för att indikera hur detaljerad beräkningen av kapacitetsbeläggningen ska vara gällande funktionsplatser. Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla tillgångar för en funktionsplats, som väljs på aktiviteten för underhållsstopp, på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla kapacitetsbeläggningsrader på alla de funktionsplatsnivåer som de är relaterade till.
 
-10. Klicka på **OK** för att starta beräkningen. Det totala antalet timmar visas i översikten **Kapacitetsbeläggning**. På fliken **Kapacitetsbeläggning** > åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade timmar.
+10. Klicka på **OK** för att starta beräkningen. Det totala antalet timmar visas i översikten **Kapacitetsbeläggning**. På fliken **Kapacitetsbeläggning** > åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade timmar. Bilden nedan visar resultaten av en beräkning av **Kapacitetsbeläggning**.
 
 ![Figur 3](media/21-preventive-maintenance.png)
 
@@ -91,7 +92,7 @@ Klicka på **Tillgångshantering** > **Allmänt** > **Aktiviteter för underhål
 
 15. I dialogen **Beräkna artikelprognos** redigerar du start- och sluttider om det behövs, och väljer om du vill inkludera arbetsorder och underhållsscheman i beräkningen. Du kan använda fältet **Nivå** för att indikera hur detaljerad beräkningen av kapacitetsbeläggningen ska vara gällande funktionsplatser. Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla tillgångar för en funktionsplats, som väljs på aktiviteten för underhållsstopp, på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla kapacitetsbeläggningsrader på alla de funktionsplatsnivåer som de är relaterade till.
 
-16. Klicka på **OK** för att starta beräkningen. Det totala antalet artikelprognoser visas i översikten **Artikelprognos**. På fliken **Artikelprognos** > åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade artiklar.
+16. Klicka på **OK** för att starta beräkningen. Det totala antalet artikelprognoser visas i översikten **Artikelprognos**. På fliken **Artikelprognos** > åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade artiklar. Bilden nedan visar resultaten av en beräkning av **Artikelprognos**.
 
 ![Figur 4](media/22-preventive-maintenance.png)
 

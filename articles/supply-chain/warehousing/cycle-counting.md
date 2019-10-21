@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560676"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251533"
 ---
 # <a name="cycle-counting"></a>Rullande inventering
 
@@ -34,7 +34,7 @@ Den här artikeln beskriver hur du kan använda rullande inventering tillsammans
 Rullande inventering är en lagerställesprocess som du kan använda för att kontrollera lagerbehållningsartiklar. Processen för rullande inventering kan beskrivas i tre steg:
 
 1.  **Skapa arbetsuppgift för rullande inventering** – arbetsuppgift för rullande inventering kan skapas automatiskt baserat på tröskelparametrar för artiklar eller genom att använda en plan för rullande inventering. Du kan också skapa rullande inventering manuellt, med hjälp av artikeln eller lagerställeparametrar på sidan **Rullande inventeringsarbete efter artikel** efter på sidan **Rullande inventeringsarbete efter plats**.
-2.  **Bearbeta rullande inventering** – Efter att du har skapat det rullande inventeringsarbetet utför du det rullande inventeringsarbetet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Microsoft Dynamics 365 for Finance and Operations med hjälp av en mobil enhet. Alternativt kan du inventera artiklar i ett lagerställe utan att skapa rullande inventeringsarbete. Den här processen kallas för *rullande inventering av typen spot*.
+2.  **Bearbeta rullande inventering** – Efter att du har skapat det rullande inventeringsarbetet utför du det rullande inventeringsarbetet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Dynamics 365 Supply Chain Management med hjälp av en mobil enhet. Alternativt kan du inventera artiklar i ett lagerställe utan att skapa rullande inventeringsarbete. Den här processen kallas för *rullande inventering av typen spot*.
 3.  **Lösa avvikelser i det räknade värdet** – Efter en rullande inventering har alla artiklar som har avvikelser i det inventerade värdet en arbetsstatus som är **Pågående granskning** på sidan **Allt arbete**. Du kan lösa dessa skillnader på sidan **Granskning av väntande rullande inventeringsarbete**.
 
 I bilden nedan visas processen för rullande inventering. ![Bearbeta flöde rullande inventering](./media/performcyclecountinginawarehouselocation.jpg)
@@ -113,10 +113,10 @@ Du kan schemalägga planer för rullande inventering för att skapa rullande inv
 Om du vill skapa arbete för rullande inventering manuellt, kan du använda sidan **Rullande inventeringsarbete efter artikel** eller **Rullande inventeringsarbete efter plats**. Du kan ange det högsta antalet rullande inventeringar att skapa. Om till exempel lagerchefen anger ett värde på **5** skapas ett arbete för rullande inventering för fem platser även om artikeln finns på 10 olika platser. Du kan även välja ett ID för arbetspool att tilldela de skapade ID:na för arbetet med rullande inventering. När ett arbetspool-ID bearbetas för rullande inventering, bearbetas de ID:n som är tilldelade till arbetspoolen som en grupp.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Utför en rullande inventering med hjälp av en mobil enhet
-Det finns flera sätt att genomföra arbetet med rullande inventering genom att använda Microsoft Dynamics 365 for Finance and Operations på en mobil enhet:
+Det finns flera sätt att genomföra arbetet med rullande inventering genom att använda Supply Chain Management på en mobil enhet:
 
 -   **Användarstyrd** – arbetaren kan ange ett arbets-ID för rullande inventering som har statusen **Öppen**.
--   **Systemstyrd** – Finance and Operations tilldelar ett arbets-ID för rullande inventering.
+-   **Systemstyrd** – Supply Chain Management tilldelar ett arbets-ID för rullande inventering.
 -   **Gruppering av rullande inventering** – arbetstagare kan gruppera ID:n för pågående rullande inventeringar som är specifika för en viss plats, zon eller arbetspool.
 -   **Rullande inventering av typen Spot** – Arbetaren kan genom att ange en lagerplats räkna artiklar på ett lagerställe när som helst utan att skapa en arbetsuppgift för rullande inventering. Om arbetaren vill utföra rullande inventering av typen spot för en plats, anger hen plats-ID.
 

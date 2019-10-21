@@ -1,6 +1,6 @@
 ---
 title: Konsekvenskontroll av butikstransaktion
-description: I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner i Microsoft Dynamics 365 for Retail.
+description: I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790431"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018434"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
 
@@ -31,9 +31,9 @@ ms.locfileid: "1790431"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner som infördes i Microsoft Dynamics 365 for Finance and Operations version 8.1.3. Konsekvenskontrollen identifierar och isolerar inkonsekventa transaktioner innan de används i bokföringsprocessen för utdrag.
+I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner. Konsekvenskontrollen identifierar och isolerar inkonsekventa transaktioner innan de används i bokföringsprocessen för utdrag.
 
-Det går inte att bokföra utdrag i Microsoft Dynamics 365 for Retail om det finns inkonsekventa data i butikens transaktionsregister. Dataproblemet kan bero på oförutsedda problem i kassaprogrammet, eller om transaktioner har importerats felaktigt från kassasystem från tredje part. Dessa inkonsekvenser kan till exempel uppenbara sig på följande sätt: 
+Det går inte att bokföra utdrag i Retail om det finns inkonsekventa data i butikens transaktionsregister. Dataproblemet kan bero på oförutsedda problem i kassaprogrammet, eller om transaktioner har importerats felaktigt från kassasystem från tredje part. Dessa inkonsekvenser kan till exempel uppenbara sig på följande sätt: 
 
 - Transaktionssumman i huvudtabellen stämmer inte överens med transaktionssumman på raderna.
 - Radantalet i huvudtabellen stämmer inte överens med antalet rader i transaktionstabellen.

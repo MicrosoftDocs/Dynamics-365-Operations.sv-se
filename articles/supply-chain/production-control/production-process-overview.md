@@ -3,7 +3,7 @@ title: Översikt över produktionsprocess
 description: Det här ämnet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546673"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250036"
 ---
 # <a name="production-process-overview"></a>Översikt över produktionsprocess
 
@@ -36,12 +36,12 @@ Produktionen av produkter, en process som ibland också kallas produktionslivscy
 
 Modulen **Produktionskontroll** är kopplad till andra moduler, som t.ex. **Produktinformationshantering**, **Lagerhantering**, **Redovisning**, **Lagerstyrning**, **Projektredovisning**, och **Organisationsadministration**. Denna integration stödjer informationsflödet som krävs för att en artikel ska kunna färdigställas.  
 
-Produktionsprocessen påverkas vanligtvis av kostnadsredovisning och lagervärderingmetoderna som väljs för en viss produktionsprocessen. Finance and Operations stöder både faktisk kostnad (först-in-först-ut \[FIFO\]; sist in, först ut \[LIFO\]; rörligt genomsnitt, periodiskt och viktat medelvärde) och standardkostnadsmetoder. Lean manufacturing implementeras baserat på kostnadskalkylering med automatisk lageravräkningprincip.  
+Produktionsprocessen påverkas vanligtvis av kostnadsredovisning och lagervärderingmetoderna som väljs för en viss produktionsprocessen. Supply Chain Management stöder både faktisk kostnad (först-in-först-ut \[FIFO\]; sist in, först ut \[LIFO\]; rörligt genomsnitt, periodiskt och viktat medelvärde) och standardkostnadsmetoder. Lean manufacturing implementeras baserat på kostnadskalkylering med automatisk lageravräkningprincip.  
 
 Valet av de kostnadsmätningsmetoder anger även kraven för att rapportera om material- och resursförbrukning under produktionsprocessen. Normalt kräver faktiska kostnadsredovisningsmetoder exakt rapportering på jobbnivå, medan periodiska kostnadsredovisningmetoder tillåter mindre finmaskig rapportering av material- och resursförbrukning.
 
 ## <a name="mixed-mode-manufacturing"></a>Tillverkning med blandat läge
-Olika produkter och produktionstopologier kräver tillämpning av olika ordertyper. Finance and Operations kan använda olika ordertyper i ett blandat läge. Med andra ord kan alla ordertyper ske under slutpunktsprocessen för produktionen av en färdig produkt.
+Olika produkter och produktionstopologier kräver tillämpning av olika ordertyper. Supply Chain Management kan använda olika ordertyper i ett blandat läge. Med andra ord kan alla ordertyper ske under slutpunktsprocessen för produktionen av en färdig produkt.
 
 -   **Produktionsorder** – Detta är den klassiska ordertypen som producerar en specifik produkt eller produktvariant i en given kvantitet på ett visst datum. Produktionsorder baseras på strukturlistor och flöden.
 -   **Batchorder** - Denna ordertyp används för processbranscher och diskreta processer där tillverkningskonverteringen baseras på en formel, eller där samprodukter och biprodukter kan vara slutprodukter, antingen utöver eller i stället för huvudprodukten. Batchordeer använder strukturlistor och flöden av typen **Formel**.

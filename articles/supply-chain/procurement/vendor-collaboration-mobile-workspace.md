@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2c2ba1f23cc068daf20474f05519c3c6865fd183
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843875"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250266"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobil arbetsyta för leverantörssamarbete
 
@@ -30,10 +30,10 @@ ms.locfileid: "1843875"
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **Leverantörssamarbete**. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter.
 
-Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations Mobile.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Finance and Operations.
 
 ## <a name="overview"></a>Översikt 
-Mobil arbetsyta för **leverantörssamarbete** sparar information om nya inköpsorder så att de kan visa inköpsorder och sedan svara på dem i webbklienten för Microsoft Dynamics 365 for Finance and Operations. 
+Mobil arbetsyta för **leverantörssamarbete** sparar information om nya inköpsorder så att de kan visa inköpsorder och sedan svara på dem i webbklienten. 
 
 >[!NOTE]
 > Den mobila arbetsytan ska användas som ett tillägg till webbgränssnittet för leverantörssamarbete, inte som en ersättning för det. 
@@ -59,8 +59,8 @@ Med hjälp av den mobila arbetsytan **Leverantörssamarbete** kan en leverantör
 ## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar beroende på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations 
-Om Microsoft Dynamics 365 for Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Leverantörssamarbete**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Förutsättningar om du använder Supply Chain Management
+Om Supply Chain Management används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Leverantörssamarbete**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdateringen 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
@@ -104,7 +104,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 <li><a href="vendor-collaboration-work-external-vendors.md">Använd leverantörssamarbete för att arbeta med externa leverantörer</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Hantera leverantörssamarbetesanvändare</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Skapa och underhåll leverantörssamarbete</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Använd leverantörssamarbetet för att arbeta med kunder i Finance and Operations</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Använd leverantörssamarbetet för att arbeta med kunder i Supply Chain Managements</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
-Hämta och installera mobilappen Dynamics 365 for Unified Operations:
+Hämta och installera mobilappen Finance and Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

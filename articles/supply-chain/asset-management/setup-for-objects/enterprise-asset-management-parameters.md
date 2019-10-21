@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783593"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024578"
 ---
 # <a name="asset-management-parameters"></a>Parametrar för tillgångshantering
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783593"
 
 I tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in. Det här avsnittet innehåller information om hur du ställer in dem. Välj **tillgångshantering** > **inställningar** > **tillgångshanteringsparametrar** för att öppna formuläret.
 
-Knappen **Guiden Skapa data** kan användas för att automatiskt skapa inställningsdata för test eller demonstrationsdata i ett företag i Dynamics 365 for Finance and Operations. Information om hur du använder guiden finns i vitboken "ställa in testdata i datahantering".
+Knappen **Guiden Skapa data** kan användas för att automatiskt skapa inställningsdata för test eller demonstrationsdata i ett företag i Dynamics 365 Supply Chain Management. Information om hur du använder guiden finns i vitboken "ställa in testdata i datahantering".
 
 Länken **Tillgångar**
 
@@ -57,7 +57,7 @@ Länken **arbetsorder**
 - Välj "Ja" på växlingsknappen **kopieringsfel** om du automatiskt vill kopiera fel som registrerats på arbetsorder till relaterade underhållsbegäran.  
 - I fältet **nivå** definierar du den funktionsplatsnivå som infogas automatiskt på en arbetsorder om alla relaterade arbetsorderjobb refererar till samma funktionsplats. Om inte alla arbetsorderjobb relaterar till samma funktionsplats på den definierade nivån, lämnas fältet **funktionsplats** tomt på arbetsordern. Exempel: om du infogar siffran "1" i det här fältet är det den översta nivån i en funktionsplatsstruktur. Om du infogar siffran "0" i det här fältet har du inte definierat en specifik funktionsplatsnivå, endast att alla arbetsorderjobb på en arbetsorder måste relateras till samma funktionsplats för att funktionsplatsen ska läggas till i arbetsordern.  
 - Journaler som används vid bokföring av förbrukning på en arbetsorder kan väljas på snabbfliken **allmänt** i fälten **timme**, **artikel** och **utgift**.  
-- I fältet **produktensspråkkälla** väljer du vilket språk som ska användas för produktnamn i tillgångshanteringsrapporter. Du kan välja det språk som ställts in på företagskontot eller det språk som ställts in för den inloggade användaren i Dynamics 365 for Finance and Operations.  
+- I fältet **produktensspråkkälla** väljer du vilket språk som ska användas för produktnamn i tillgångshanteringsrapporter. Du kan välja det språk som ställts in på företagskontot eller det språk som ställts in för den inloggade användaren.  
 - Välj "Ja" på växlingsknappen **Uppdateringar i realtid** om du vill att ändringar automatiskt ska uppdateras till standardvärden för jobbtyp, underhållsplaner och underhållsomgångar.
 > - Om du väljer "nej" uppdateras inte ändringar av standardvärden för jobbtyp, underhållsplaner och underhållsomgångar automatiskt i tillgångshanteraren  
 > - Välj "nej" på växlingsknappen om du har stora mängder data som ska synkroniseras, till exempel många tillgångar eller funktionsplatser som ställts in på underhållsplaner eller underhållsomgångar eller ett stort antal underhållsplaner eller rundor.  
@@ -75,7 +75,7 @@ Länken **Schemaläggning av arbetsorder**
 - **Huvudplanen** relaterar till resurser i modulen **Organisationsadministration**. Om du väljer en huvudplan i det här fältet kan du se kapacitetsreservationer som är relaterade till arbetsorder i **Kapacitetsreservationer** (**Organisationsadministration** > **Resurser** > **Resurser** fliken > Välj resurs > **Resurs** > knappen **Kapacitetsreservationer**). Om du lämnar detta fält tomt, kommer du att kunna se kapacitetsbelastning relaterad till arbetsorder i **Kapacitetsbeläggning** (**Organisationsadministration** \> **Resurser** \> **Resurser** \> välj resurser \> fliken **Resurs** knappen \> **Kapacitetsbeläggning**).  
 
 >[!NOTE]
->Valet om att använda en huvudplan eller inte i modulen **tillgångshantering** och det relaterade formuläret som används för att få en översikt över kapacitetsreservationer eller kapacitetsbeläggning är Dynamics 365 for Finance and Operations-standardinställningar. Beroende på inställningarna i fältet **Huvudplan** kommer du att kunna komma åt kapacitetsinformation i antingen **kapacitetsreservationer** eller **kapacitetsbeläggning** i modulen **organisationsadministration**. Det går inte att skapa en inställning där kapacitetsreservationer visas i båda vyerna.  
+>Valet om att använda en huvudplan eller inte i modulen **tillgångshantering** och det relaterade formuläret som används för att få en översikt över kapacitetsreservationer eller kapacitetsbeläggning är standardinställningar. Beroende på inställningarna i fältet **Huvudplan** kommer du att kunna komma åt kapacitetsinformation i antingen **kapacitetsreservationer** eller **kapacitetsbeläggning** i modulen **organisationsadministration**. Det går inte att skapa en inställning där kapacitetsreservationer visas i båda vyerna.  
 
 Fälten som beskrivs i punktlistan nedan relaterar till beräknade bedömningspoäng, som används för att beräkna arbetsorderprioritet under arbetsorderplanering.
 

@@ -1,6 +1,6 @@
 ---
 title: Rapportalternativ i Talent
-description: Det här avsnittet beskriver hur du löser problemet där en kund vill anpassa rapporter i Microsoft Dynamics 365 for Talent eller skapa nya rapporter.
+description: Det här avsnittet beskriver hur du löser problemet där en kund vill anpassa rapporter i Microsoft Dynamics 365 Talent eller skapa nya rapporter.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8e7348a515b08523c15aa8f74d5616a3daf645b7
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 50342c847200d015a66c6f22007070bb26c6caef
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741808"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009362"
 ---
 # <a name="reporting-options-in-talent"></a>Rapportalternativ i Talent
 
@@ -34,7 +34,7 @@ Det här problemet gäller alla miljöer.
 
 **Symptom**
 
-Kunden vill anpassa rapporter för Microsoft Dynamics 365 for Talent eller skapa nya rapporter.
+Kunden vill anpassa rapporter för Microsoft Dynamics 365 Talent eller skapa nya rapporter.
 
 **Utleverans**
 

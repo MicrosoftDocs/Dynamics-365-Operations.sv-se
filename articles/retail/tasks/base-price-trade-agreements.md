@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916563"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017768"
 ---
 # <a name="base-price-and-trade-agreements"></a> Baspris och handelsavtal
 
@@ -56,7 +56,7 @@ Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för f
 24. Klicka på **Skapa handelsavtal**.
 25. Klicka på **Ny**.
 26. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Namn**.
-27. I listan väljer du Butik . I demonstrationsdata har journalnamnet Butik standardrelationen Pris (Försäljning). Det innebär att alla skapade nya rader får standardinställningen handelsavtal för försäljningspriset.  
+27. I listan väljer du **Butik** . I demonstrationsdata har journalnamnet **Butik** standardrelationen **Pris (Försäljning)**. Det innebär att alla skapade nya rader får standardinställningen handelsavtal för försäljningspriset.  
 28. Klicka på **Rader** i **åtgärdsfönstret**.
 29. Välj Grupp i fältet **Kontokod**.
 30. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet **Kontomarkering**.

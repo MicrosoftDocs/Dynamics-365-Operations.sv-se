@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 37378b85b90f91c74da717f0a25c1847ac0b1598
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865979"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251303"
 ---
 # <a name="sales-agreements-overview"></a>Försäljningsavtal – översikt
 
@@ -99,14 +99,14 @@ Om du har skapat (frisläppt) en försäljningsorder mot ett försäljningsavtal
 | Kvantitet                                                          | Om du anger en kvantitet som överskrider kvantiteten som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** om du vill ta bort länken till försäljningsavtalsraden och om du vill räkna om priset. Klicka på **Nej** om du vill ta bort länken till försäljningsavtalsraden och om du inte vill räkna om priset.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnera en artikel som har beställts från ett försäljningsavtal
-När en kund returnerar en produkt som har beställts från en försäljningsavtal, kan Microsoft Dynamics 365 for Finance and Operations söka efter och automatiskt uppdatera den relaterade försäljningsavtalutfästelsen för att återspeglar ändringen i kvantitet eller ett belopp. Genom att skapa en returorder som baseras på den ursprungliga försäljningsordern som är kopplad till en försäljningsavtal, upprättar du en relation mellan försäljningsavtalutfästelsen, försäljningsorderraden och returnera orderfakturan.  
+När en kund returnerar en produkt som har beställts från en försäljningsavtal, kan Supply Chain Management söka efter och automatiskt uppdatera den relaterade försäljningsavtalets utfästelse för att återspeglar ändringen i kvantitet eller ett belopp. Genom att skapa en returorder som baseras på den ursprungliga försäljningsordern som är kopplad till en försäljningsavtal, upprättar du en relation mellan försäljningsavtalutfästelsen, försäljningsorderraden och returnera orderfakturan.  
 
 Om du inte vill dra av en returnerad artikelkvantiteten från försäljningsavtalutfästelsen, kan du använda kontrollen **Ta bort länk** på sidan **Returorder** för att ta bort länken mellan returordern och försäljningsavtalutfästelsen. Om du behöver återställa länken senare, klicka på **Skapa länk**.  
 
 **Obs!** En returorder kan bara länkas till en försäljningsavtal. Om din kund returnerar mer än en produkt som har beställts från mer än ett försäljningsavtal, måste du skapa en ny returorder för varje produkt och skapa en länk till motsvarande försäljningsavtalet.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatisk sökning efter försäljningsavtal
-I vissa fall där försäljningsorder skapas indirekt, som till exempel när du skapar en kreditfaktura eller koncerninterna försäljningsorder, kan du kontrollera att Microsoft Dynamics 365 for Finance and Operations söker automatiskt efter tillämpliga försäljningsavtal.
+I vissa fall där försäljningsorder skapas indirekt, som till exempel när du skapar en kreditfaktura eller koncerninterna försäljningsorder, kan du kontrollera att systemet söker automatiskt efter tillämpliga försäljningsavtal.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Ekonomiska dimensioner i försäljningsavtal
 Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda rader i ett försäljningsavtal. Du kan ändra dimensionerna i ett avtalshuvud eller avtalsrad när som helst. I det här fallet kopieras dimensionerna automatiskt till leveranshuvudet eller leveransraden på leveransordern.

@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546728"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250227"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
 [!include [banner](../includes/banner.md)]
 
-Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 for Finance and Operations. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I det här avsnittet förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
+Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 Supply Chain Management. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I det här avsnittet förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
 
 För mer information om vad externa leverantörer kan göra i gränssnittet för leverantörssamarbeten, se [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informationen i det här avsnittet om samarbete för leverantör gäller bara för den aktuella versionen av Finance and Operations. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
+> Informationen i det här avsnittet om samarbete för leverantör gäller bara för den aktuella versionen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februari 2016) och Microsoft Dynamics AX programversion 7.0.1 (maj 2016) kan du samarbeta med leverantörer med hjälp av modulen **Leverantörsportal**. För information om modulen **Leverantörsportal**, se [Samarbeta med leverantörer genom leverantörsportalen](collaborate-vendors-vendor-portal.md).
 
 För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Om du måste lägga till meddelanden på flera språk, skapa då separata meddel
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Ange alternativen för leverantörssamarbete för en specifik leverantör
 
-En administratör konfigurerar de allmänna inställningarna för leverantörssamarbete i Finance and Operations, till exempel vilka säkerhetsroller som är tillgängliga för alla leverantörer som du samarbetar med. Det finns dock inställningar som kan skilja sig åt mellan olika leverantörskonton. Du bör konfigurera dessa inställningar.
+En administratör konfigurerar de allmänna inställningarna för leverantörssamarbete, till exempel vilka säkerhetsroller som är tillgängliga för alla leverantörer som du samarbetar med. Det finns dock inställningar som kan skilja sig åt mellan olika leverantörskonton. Du bör konfigurera dessa inställningar.
 
 - Aktivera leverantörssamarbeten.
 - Ange om leverantören ska se prisinformation.
@@ -71,7 +71,7 @@ Om du vill dela prisinformation för inköpsorder via gränssnittet för leveran
 
 ### <a name="sending-a-po-to-a-vendor"></a>Skicka en inköpsorder till en leverantör
 
-Inköpsorder förbereds i Finance and Operations. När en inköpsorder har statusen **Godkänd** skickar du den till leverantören genom att välja **Skicka för bekräftelse** på sidan **Inköpsorder**. Statusen för inköpsordern ändras sedan till **I extern granskning**. När inköpsordern har skickats kan leverantören se den på sidan **Inköpsorder för granskning** i gränssnittet leverantörssamarbete. Leverantören kan sedan acceptera eller avvisa inköpsordern eller föreslå ändringar. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka inköpsordern via e-post.
+Inköpsordrar förbereds i Supply Chain Management. När en inköpsorder har statusen **Godkänd** skickar du den till leverantören genom att välja **Skicka för bekräftelse** på sidan **Inköpsorder**. Statusen för inköpsordern ändras sedan till **I extern granskning**. När inköpsordern har skickats kan leverantören se den på sidan **Inköpsorder för granskning** i gränssnittet leverantörssamarbete. Leverantören kan sedan acceptera eller avvisa inköpsordern eller föreslå ändringar. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka inköpsordern via e-post.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Bekräftelse och godkännande av en inköpsorder av en leverantör
 
@@ -92,13 +92,13 @@ Följande tabell visar det typiska informationsutbytet, beroende på leverantör
 </thead>
 <tbody>
 <tr class="even">
-<td>Leverantören <strong>godkänner</strong> ordern och Finance and Operations är konfigurerat för att automatiskt bekräfta inköpsorder som leverantören godkänner.</td>
+<td>Leverantören <strong>godkänner</strong> ordern och Supply Chain Management är konfigurerat för att automatiskt bekräfta inköpsorder som leverantören godkänner.</td>
 <td>Statusen för ordern uppdateras till <strong>Bekräftad</strong>. Om ordern av någon anledning inte kan uppdateras, registreras leverantörens svar fortfarande som <strong>Godkänd</strong>, men statusen för inköpsordern förblir <strong>I extern granskning</strong>. 
 
 Inköpsordern som skickades till leverantören och har statusen <strong>I extern granskning</strong> uppdateras med bekräftat leveransdatum på raderna. Uppdateringen som initierar en ny version anges automatiskt till statusen <strong>Bekräftad</strong>. När inköpsordern har bekräftats visas den i gränssnittet leverantörssamarbete.</td>
 </tr>
 <tr class="odd">
-<td>Leverantören <strong>godkänner</strong> ordern men Finance and Operations är inte konfigurerat för att automatiskt bekräfta inköpsorder som leverantören godkänner.</td>
+<td>Leverantören <strong>godkänner</strong> ordern men Supply Chain Management är inte konfigurerat för att automatiskt bekräfta inköpsorder som leverantören godkänner.</td>
 <td>Säljarens svar registreras som <strong>Godkänt</strong>, men statusen för inköpsordern förblir <strong>i extern granskning</strong>.
 
 Inköpsordern som skickades till leverantören och har statusen <strong>I extern granskning</strong> uppdateras med bekräftat leveransdatum på raderna. Uppdateringen som initierar en ny version anges automatiskt till statusen <strong>I extern granskning</strong>. Du kan manuellt bekräfta inköpsordern.</td>
@@ -180,14 +180,14 @@ Tabellen nedan visar ett exempel på förändringar i status och version som en 
 
 | Åtgärd | Status och version |
 |--------|--------------------|
-| Den första versionen av inköpsordern skapas i Finance and Operations. | Statusen är **Godkänd**. |
+| Den första versionen av inköpsordern skapas i Supply Chain Management. | Statusen är **Godkänd**. |
 | Inköpsordern skickas till leverantören. | En version registreras i gränssnittet för leverantörssamarbete, och statusen ändras till **I extern granskning**. |
 | Leverantören skickar svaret **Godkänd med ändringar**. | Statusvärdet är fortfarande **I extern granskning**. |
 | Du gör några förändringar som begärs av leverantören. | Statusen ändras till **Approved**. |
 | Du skickar den nya versionen av inköpsordern till leverantören. | En ny version registreras i gränssnittet för leverantörssamarbete, och statusen ändras till **I extern granskning**. |
 | Leverantören godkänner den nya versionen av inköpsordern. | Statusvärdet är fortfarande **I extern granskning** såvida inte leverantörskontot har konfigurerats att automatiskt ange inköpsorder till statusen **Bekräftad** när leverantören godkänner dem. |
 
-Leverantörer måste inte bekräfta en inköpsorder med hjälp av gränssnittet leverantörssamarbete. De kan också skicka ett e-postmeddelande eller kommunicera deras godkännande av en inköpsorder via andra kanaler. Du kan sedan bekräfta ordern manuellt i Finance and Operations. I det här fallet får du en varning om att ordern bekräftas, även om det inte finns något svar från leverantören. Inköpsordern visas sedan i bekräftelsehistoriken som en öppen, bekräftad order som inte har fått några svar. Leverantören har vid den här punkten inte längre möjlighet att bekräfta eller avvisa inköpsordern.
+Leverantörer måste inte bekräfta en inköpsorder med hjälp av gränssnittet leverantörssamarbete. De kan också skicka ett e-postmeddelande eller kommunicera deras godkännande av en inköpsorder via andra kanaler. Du kan manuellt bekräfta ordern. I det här fallet får du en varning om att ordern bekräftas, även om det inte finns något svar från leverantören. Inköpsordern visas sedan i bekräftelsehistoriken som en öppen, bekräftad order som inte har fått några svar. Leverantören har vid den här punkten inte längre möjlighet att bekräfta eller avvisa inköpsordern.
 
 > [!NOTE]
 > Den version av inköpsordern som är tillgänglig för andra processer i Finance and Operations är alltid den senaste versionen, även om denna version ännu inte har registrerats i gränssnittet leverantörssamarbete.
@@ -200,7 +200,7 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 
 | Åtgärd | Status och version |
 |--------|--------------------|
-| Den första versionen av inköpsordern skapas i Finance and Operations. | Statusen är **Utkast**. |
+| Den första versionen av inköpsordern skapas i Supply Chain Management. | Statusen är **Utkast**. |
 | IO:n är skickad till godkännandeprocessen. (Godkännandeprocessen är en intern process som leverantören inte är inblandad i.) | Statusvärdet ändras från **Utkast** till **Under granskning** till **Godkännande** om IO:n inte avvisas under godkännandeprocessen. Den godkända inköpsordern registreras som en version. | 
 | Inköpsordern skickas till leverantören. | Versionen registreras i gränssnittet för leverantörssamarbete, och statusen ändras till **I extern granskning**. |
 | Du kan göra några ändringar som begärts av leverantören, antingen manuellt eller genom att använda åtgärden **Bearbeta uppdatering av inköpsorder** på svaret för att uppdatera inköpsordern. | Statusen ändras tillbaka till **Utkast**. |
@@ -237,13 +237,13 @@ Det här avsnittet beskriver interaktioner mellan kunder och leverantörer vid a
 
 ## <a name="public-sector-extensions"></a>Tillägg för offentlig sektor
 
-Med de utökade funktionerna för den offentliga sektorn går det att skicka en anbudsförfrågan till leverantörer och publicera den. När du publicerar en anbudsförfrågan kan alla som begär informationen visa det arbete som omfattas av offentlighetsprincipen. Allt tillgängligt arbete återspeglas på listsidan **Öppna publicerad anbudsförfrågningar**, och annullerade, väntande eller beviljade anbudsförfrågningar kan visas på listsidan **Stängda publicerade anbudsförfrågningar**. Dessa dokument kan även visas på en plats utanför Finance and Operations genom integrationer med följande datatabeller:
+Med de utökade funktionerna för den offentliga sektorn går det att skicka en anbudsförfrågan till leverantörer och publicera den. När du publicerar en anbudsförfrågan kan alla som begär informationen visa det arbete som omfattas av offentlighetsprincipen. Allt tillgängligt arbete återspeglas på listsidan **Öppna publicerad anbudsförfrågningar**, och annullerade, väntande eller beviljade anbudsförfrågningar kan visas på listsidan **Stängda publicerade anbudsförfrågningar**. Dessa dokument kan även visas på en plats utanför Supply Chain Management genom integrationer med följande datatabeller:
 
 - Publicerade anbudsförfrågningar
 - Rad för publicerade anbudsförfrågningar
 - Huvudbilagor för publicerade anbudsförfrågningar
 
-Med dessa enheter kan personer som inte är allokerade användare i Finance and Operations, men som har åtkomst till den externa platsen, visa tillgängligt och avslutat arbete. Med de utökade funktionerna i **Skicka och publicera** kan användare som ställer in parametrar för anbudsförfråganprocessen dessutom definiera en e-postmall. När prokuristen sedan skapar anbudsförfrågan måste han eller hon välja e-postmallen för att kunna skicka den begärda informationen till leverantörerna i ärendet. 
+Med dessa enheter kan personer som inte är allokerade användare i Supply Chain Management men som har åtkomst till den externa platsen, visa tillgängligt och avslutat arbete. Med de utökade funktionerna i **Skicka och publicera** kan användare som ställer in parametrar för anbudsförfråganprocessen dessutom definiera en e-postmall. När prokuristen sedan skapar anbudsförfrågan måste han eller hon välja e-postmallen för att kunna skicka den begärda informationen till leverantörerna i ärendet. 
 
 Den användare som ställer in parametrarna för anbudsförfråganprocessen kan skapa flera e-postmallar. Dessa e-postmallar kan innehålla både statisk text och följande utbytestoken. Dessa token ersätts med sammanhangsberoende värden när ett e-postmeddelande skapas.
 

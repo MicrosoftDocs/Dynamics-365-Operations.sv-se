@@ -1,6 +1,6 @@
 ---
-title: Dela innehåll med andra deltagare i Dynamics 365 for Talent - Onboard
-description: Det här avsnittet innehåller information om hur du delar integrationsguider och mallar med andra deltagare i Microsoft Dynamics 365 for Talent - Onboard-appen.
+title: Dela innehåll med andra deltagare i Dynamics 365 Talent - Onboard
+description: Det här avsnittet innehåller information om hur du delar integrationsguider och mallar med andra deltagare i Microsoft Dynamics 365 Talent - Onboard-appen.
 author: andreabichsel
 manager: ''
 ms.date: 05/20/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8524f9ec502bed829522ab90c7c7976c2814a1b6
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: d07879ff31127788ebfee5bc8b42442a26987651
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731643"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010762"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-for-talent-onboard"></a>Dela innehåll med andra deltagare i Dynamics 365 for Talent: Onboard
+# <a name="share-content-with-other-contributors"></a>Dela innehåll med andra deltagare
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard låter dig dela integrationsguider och mallar med andra deltagare så att de kan granska dokumenten och göra ändringar.
+Microsoft Dynamics 365 Talent: Onboard låter dig dela integrationsguider och mallar med andra deltagare så att de kan granska dokumenten och göra ändringar.
 
 ## <a name="share-an-onboarding-guide-with-other-contributors"></a>Dela en integrationsguiden med andra deltagare
 

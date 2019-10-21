@@ -1,6 +1,6 @@
 ---
 title: Ställ in kanaler för kundtjänst
-description: Det här avsnittet innehåller information om hur du bearbetar order till kundtjänst med Microsoft Dynamics 365 for Retail.
+description: Det här avsnittet innehåller information om hur du bearbetar order till kundtjänst med Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549369"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024831"
 ---
 # <a name="set-up-call-center-channels"></a>Ställa in kundtjänstkanaler
 
 [!include [banner](includes/banner.md)]
 
-Ett företag kan definiera flera kundtjänstkanaler i Microsoft Dynamics 365 for Retail. Kundtjänstkanaler konfigureras i **Butik**\>**Kanaler**\>**Kundtjänst**\>**Alla kundtjänster**, och de är specifika för en juridisk person.
+Ett företag kan definiera flera kundtjänstkanaler i Dynamics 365 Retail. Kundtjänstkanaler konfigureras i **Butik**\>**Kanaler**\>**Kundtjänst**\>**Alla kundtjänster**, och de är specifika för en juridisk person.
 
 När en ny kundtjänstkanal skapas tilldelas systematiskt ett driftenhetsnummer. Eftersom kundtjänst skapas som driftenheter, kan användare koppla kundtjänstkanalen till olika Retail-funktioner, t.ex. sortiment, kataloger och specifika leveranssätt.
 
@@ -76,6 +76,8 @@ När du definierar kundstjänstkanal måste du koppla användare till kundstjän
 
 Som standard är flaggan **butiksförsäljning** i rubriken på försäljningsordern aktiverad för alla order som kundtjänstanvändaren skapar. Dessa order kan sedan utnyttja systemets butikspecifika pris- och kampanjegenskaper.
 
-Användare som inte är kopplade till ett kundtjänstkanaler använda standardorderkvantitet för funktioner i Microsoft Dynamics 365 for Finance and Operations. Order som användarna anger via försäljningsorderformuläret identifieras inte systematiskt som butiksorder. Dessutom är dessa order som dessa användare anger kanske inte föremål för några orderbearbetningsregler, butikprissättningslogik eller andra ordervalideringar som kan definieras i konfigurationen för kundtjänstkanalen eller kundtjänstsystemparametrar.
+
+Användare som inte är kopplade till ett kundtjänstkanaler använda standardorderkvantitet för funktioner i Microsoft Dynamics 365 Finance. Order som användarna anger via försäljningsorderformuläret identifieras inte systematiskt som butiksorder. Dessutom är dessa order som dessa användare anger kanske inte föremål för några orderbearbetningsregler, butikprissättningslogik eller andra ordervalideringar som kan definieras i konfigurationen för kundtjänstkanalen eller kundtjänstsystemparametrar.
+
 
 När du är klar med att konfigurera kundtjänstkanalen och definiera kanalanvändare, för att garantera önskad systemfunktion, se till att alla nödvändiga kundtjänstparametrar definieras i **butik**\>**kanalinställningar**\>**kundtjänstinställningar**\>**kundtjänstparametrar**. Se till att relaterade nummerserier definieras också.

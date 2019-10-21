@@ -1,6 +1,6 @@
 ---
-title: Publicera jobb på externa karriärwebbplatser från Attract
-description: Det här avsnittet beskriver hur du använder Dynamics 365 for Talent - Attract att publicera jobb till externa rekryteringswebbplatser
+title: Publicera jobb från Attract på externa karriärwebbplatser
+description: Det här avsnittet beskriver hur du använder Dynamics 365 Talent - Attract för att publicera jobb till externa rekryteringswebbplatser
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 919cec773d5e57e8f5429e31872db7ed658e969b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739827"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008092"
 ---
 # <a name="post-jobs-to-broadbean"></a>Publicera jobb till Broadbean
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract hjälper dig att få den talang du behöver genom att låta dig publicera dina jobb direkt från Attract till Broadbean. När du [skapar ett jobb](./creating-jobs-attract.md) behöver du bara klicka på en knapp för att placera jobbet framför alla potentiella jobbkandidater på Broadbean.
+Microsoft Dynamics 365 Talent: Attract hjälper dig att få den talang du behöver genom att låta dig publicera dina jobb direkt från Attract till Broadbean. När du [skapar ett jobb](./creating-jobs-attract.md) behöver du bara klicka på en knapp för att placera jobbet framför alla potentiella jobbkandidater på Broadbean.
 
 Publicering av jobb till Broadbean kräver en lämplig Broadbean-licens. Broadbean erbjuder olika produkter och planer. Om du vill ha mer information om Broadbean licensiering och priser [kontakta Broadbean](https://www.broadbean.com/contact-us/).
 

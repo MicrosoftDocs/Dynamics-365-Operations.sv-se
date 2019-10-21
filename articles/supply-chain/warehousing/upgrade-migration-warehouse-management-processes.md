@@ -1,5 +1,5 @@
 ---
-title: Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations
+title: Uppgradera lagerstyrning från Microsoft DynamicsAX 2012 till Supply Chain Management
 description: I det här avsnittet finns en översikt över produkt- och lagerhantering samt migreringsalternativ.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554056"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251441"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uppgradera lagerstyrning från Microsoft DynamicsAX 2012 till Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över hur du uppgraderar från Microsoft DynamicsAX 2012 R3, med modulen WMSII till Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet innehåller en översikt över hur du uppgraderar från Microsoft Dynamics AX 2012 R3, med modulen WMSII till Supply Chain Management.
 
-Finance and Operations stöder inte längre stöder äldre **WMSII**-modulen från Microsoft Dynamics AX 2012. I stället kan du använda den nya **lagerstyrningsmodulen**. I WMSII-modulen kan lagerdimensionerna för lagerställe och lastpalls-ID väljas för ekonomiskt lager, med lagerdimension för lastpalls-ID kan inte användas för ekonomiskt lager i Finance and Operations.
+Supply Chain Management stöder inte längre stöder äldre **WMSII**-modulen från Microsoft Dynamics AX 2012. I stället kan du använda den nya **lagerstyrningsmodulen**. I WMSII-modulen kan lagerdimensionerna för lagerställe och lastpalls-ID väljas för ekonomiskt lager, med lagerdimension för lastpalls-ID kan inte användas för ekonomiskt lager i Supply Chain Management.
 
 Under en uppgradering har alla produkter som hör till en lagringsdimensionsgrupp som använder lagerdimensionen för lastpalls-ID identifierats, har markerats som spärrade och har inte bearbetats för uppgradering.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Uppgradera till Finance and Operations när AX 2012 R3 WMSII används
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Uppgradera till Supply Chain Management när AX 2012 R3 WMSII används
 Efter uppgraderingen kan du däremot använda en uppsättning alternativ i formuläret **Ändra lagringsdimensionsgruppen för artiklar** för att avblockera produkter som har blockerats under uppgraderingen och sedan bearbeta transaktioner för dessa produkter.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Aktivera artiklar i Finance and Operations
-Den här ändringen krävs eftersom i Finance and Operations är spårning en del av lagerstyrningsprocesserna. För de här processerna måste alla lagerställen och deras platser associeras med en platsprofil. Om du vill använda lagerstyrningsprocesser, ska följande konfigureras:
+### <a name="enabling-items-in-supply-chain-management"></a>Aktivera artiklar i Supply Chain Management 
+Den här ändringen krävs eftersom i Supply Chain Management är spårning en del av lagerstyrningsprocesserna. För de här processerna måste alla lagerställen och deras platser associeras med en platsprofil. Om du vill använda lagerstyrningsprocesser, ska följande konfigureras:
 -   Befintliga lagerställen måste aktiveras för lagerstyrningsprocesser. 
 -   Befintliga frisläppta produkter måste associeras med en lagringsdimensionsgrupp som använder lagerstyrningsprocesser. 
 

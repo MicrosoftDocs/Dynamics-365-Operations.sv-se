@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1c90788da7ad536fb9978db18160ccf6c158033
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783589"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024550"
 ---
 # <a name="asset-documents"></a>Tillgångsdokument
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783589"
 
 I det här avsnittet beskrivs tillgångsdokument i tillgångshantering.
 
-I tillgångshantering kan du ställa in dokument så att de automatiskt är relaterade till jobbtyper, tillgångstillverkare, tillgångstyper eller tillgångar, till exempel. Den här funktionen är användbar när uppdaterade dokumentversioner släpps. I så fall behöver du bara placera det uppdaterade dokumentet på standardplatsen som du använder för Microsoft Dynamics 365 for Finance and Operations-dokumenten och bifoga dokumentet till den tillgångsdokumentpost som du har skapat. Det uppdaterade dokumentet kan sedan nås från menyalternativen **alla tillgångar**, **aktiva tillgångar**, **mina aktiva tillgångar**, **alla arbetsorder** och **aktiva arbetsorderjobb**. Processen för att bifoga dokument till en tillgångsdokumentpost använder hanteringssystemet för standarddokument i Finance and Operations.
+I tillgångshantering kan du ställa in dokument så att de automatiskt är relaterade till jobbtyper, tillgångstillverkare, tillgångstyper eller tillgångar, till exempel. Den här funktionen är användbar när uppdaterade dokumentversioner släpps. I så fall behöver du bara placera det uppdaterade dokumentet på standardplatsen som du använder för Finance and Operations-dokumenten och bifoga dokumentet till den tillgångsdokumentpost som du har skapat. Det uppdaterade dokumentet kan sedan nås från menyalternativen **alla tillgångar**, **aktiva tillgångar**, **mina aktiva tillgångar**, **alla arbetsorder** och **aktiva arbetsorderjobb**. Processen för att bifoga dokument till en tillgångsdokumentpost använder hanteringssystemet för standarddokument.
 
 **Exempel 1:** ett dokument som är relaterat till en jobbtyp kan beskriva en procedur för den jobbtypen.
 
@@ -48,5 +48,5 @@ I tillgångshantering kan du ställa in dokument så att de automatiskt är rela
     > [!NOTE]
     > När systemet söker efter dokument som ska relateras till en tillgång eller en arbetsorder går tillgångshanteraren igenom alla tillgångsdokumentposter för att kontrollera om det finns en möjlig matchning. Den kontrollerar alltid den mest specifika kombinationen först. Med andra ord söker tillgångshantering först efter en matchning för fältet **jobbehov**. Om ingen matchning hittas söker den efter en matchning för fältet **jobbtypvariant** och så vidare. Om ingen matchning hittas söker den efter en matchning för fältet **jobbtyp** och så vidare. Som du kan se i layouten på sidan **tillgångsdokument** innebär detta att, för att hitta den mest specifika kombinationen, kontrollerar tillgångshantering varje post från höger till vänster för en matchning. Flera dokument kan vara relaterade till en tillgång eller en arbetsorder. Du kan redigera servicenivån på en underhållsbegäran eller en arbetsorder som du behöver.
 
-4. Välj **bilagor**. Standardsidan **dokumenthantering** i Finance and Operations visas.
+4. Välj **bilagor**. Standardsidan **dokumenthantering** visas.
 5. Ställ in de dokument eller noteringar som ska kopplas till tillgångsdokumentposten. När du bifogar dokument visar fältet **bilagor** antalet dokument som är relaterade till posten.

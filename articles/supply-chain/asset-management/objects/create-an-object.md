@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783601"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250908"
 ---
 # <a name="create-an-asset"></a>Skapa en tillgång
 
@@ -63,12 +63,12 @@ Fälten **servicenivå** och **allvarlighetsgrad** relaterar till arbetsorder so
 
 ## <a name="asset"></a>Tillgång
 
-Du kan välja en **resurs** för tillgången. Resursvalet avgör vilken kalender som används för schemaläggning av arbetsorder. Resursval används ofta för anläggningstillgångar. I Dynamics 365 for Finance and Operations, ställsresurser och resursgrupper in i **organisationsadministration** > **resurser** > **resursgrupper** eller **resurser**.
+Du kan välja en **resurs** för tillgången. Resursvalet avgör vilken kalender som används för schemaläggning av arbetsorder. Resursval används ofta för anläggningstillgångar. Resurser och resursgrupper ställs in i **organisationsadministration** > **resurser** > **resursgrupper** eller **resurser**.
 
 I fältet **anläggningstillgångsnummer** kan du välja en anläggningstillgång som ska relateras till tillgången. Detta är relevant om din tillgång är relaterad till ett investeringsprojekt.
 
 - Om tillgången är kopplad till en anläggningstillgång kan du skapa en arbetsordertyp som ska användas för arbetsorder som är relaterade till ett investeringsprojekt. 
-- Information om anläggningstillgångar för en tillgång är relaterad till modulen **anläggningstillgångar** i Dynamics 365 for Finance and Operations. Detta innebär att du **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** kan du få en översikt över tillgångshanteringsprojekt som kan relateras till en anläggningstillgång genom att välja tillgången i listan och visa innehållet i fönstret **Relaterad information** avsnittet > **associerade projekt**.
+- Information om anläggningstillgångar för en tillgång är relaterad till modulen **anläggningstillgångar** i Dynamics 365 Supply Chain Management. Detta innebär att du **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** kan du få en översikt över tillgångshanteringsprojekt som kan relateras till en anläggningstillgång genom att välja tillgången i listan och visa innehållet i fönstret **Relaterad information** avsnittet > **associerade projekt**.
 
 
 ## <a name="details"></a>Detaljer

@@ -1,6 +1,6 @@
 ---
-title: Ställa in erbjudandehantering
-description: I det här avsnittet beskrivs hur du ställer in erbjudanden i Talent.
+title: Ställ in erbjudandehantering
+description: I det här avsnittet beskrivs hur du ställer in erbjudanden i Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519111"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010854"
 ---
-# <a name="set-up-offer-management"></a>Ställa in erbjudandehantering 
+# <a name="set-up-offer-management"></a>Ställ in erbjudandehantering 
 
 [!include [banner](includes/banner.md)]
 
-När en kandidat flyttas till erbjudandefasen i Dynamics 365 for Talent: Attract, måste du se till att erbjudandena snabbt kan skapas för kandidater, godkännas efter behov och skickas ut till kandidaten. Eftersom de flesta erbjudanden är standard måste de skapas från återanvändningsbara mallar. I Attract samlas alla erbjudanden i ett erbjudandepaket som består av ett eller flera erbjudandedokument. 
+När en kandidat flyttas till erbjudandefasen i Dynamics 365 Talent: Attract måste du se till att erbjudandena snabbt kan skapas för kandidater, godkännas efter behov och skickas ut till kandidaten. Eftersom de flesta erbjudanden är standard måste de skapas från återanvändningsbara mallar. I Attract samlas alla erbjudanden i ett erbjudandepaket som består av ett eller flera erbjudandedokument. 
 
 Det här avsnittet beskriver de steg som en Attract-administratör skulle följa för att konfigurera olika erbjudandepaketmallar som en del av erbjudandehanteringen i Attract. Användare som inte har administratörsroll har inte åtkomst till dessa funktioner.
 

@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46aa4378a5b106d5717e0c841f2f7c9d6629489e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555048"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251326"
 ---
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i försäljningsprocessen
 
@@ -34,9 +34,9 @@ ms.locfileid: "1555048"
 
 Det här ämnet beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans.
 
-Många företag vill bara hämta in serienummer för uppfylla tjänste- och garantikrav och måste inte underhålla serienummer i lager från inleverans till utleverans. I dessa situationer kan Microsoft Dynamics 365 for Finance and Operations låta dig registrera serienumren på följesedlar eller fakturor när produkter säljs. Om produkter lämnas tillbaka senare kan du spåra varje produkt till en faktura för att avgöra om du har sålt produkten, och om service- eller garantiskyldigheterna gäller.
+Många företag vill bara hämta in serienummer för uppfylla tjänste- och garantikrav och måste inte underhålla serienummer i lager från inleverans till utleverans. I dessa situationer kan låta dig registrera serienumren på följesedlar eller fakturor när produkter säljs. Om produkter lämnas tillbaka senare kan du spåra varje produkt till en faktura för att avgöra om du har sålt produkten, och om service- eller garantiskyldigheterna gäller.
 
-Du måste aktivera serienummer för försäljningsprocessen med alternativet **Aktiv i försäljningsprocess** på sidan **Spårningsdimensionsgrupper**. Då inträffar följande händelser i Microsoft Dynamics 365 for Finance and Operations:
+Du måste aktivera serienummer för försäljningsprocessen med alternativet **Aktiv i försäljningsprocess** på sidan **Spårningsdimensionsgrupper**. Följande händelser inträffar i Supply Chain Management:
 -   På snabbfliken **Serienummer** markeras alternativet **Serienummerkontroll**. Om det här alternativet är markerat, måste du registrera ett serienummer för varje artikel på följesedeln eller fakturan.
 -   Alla val i spårningsdimensionsgruppen för serienummer är avmarkerade, utom alternativet **Tom utleverans tillåten**. Du kan markera alternativet **Tom utleverans tillåten** om du vill åsidosätta serienummerkontrollen och tillåta produkter och packas faktureras, utan att registrera serienummer.
 

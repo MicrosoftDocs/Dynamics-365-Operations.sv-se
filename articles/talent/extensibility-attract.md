@@ -1,6 +1,6 @@
 ---
 title: Utbyggbarhet i Attract
-description: Det här avsnittet beskriver hur du kan utöka Microsoft Dynamics 365 for Talent - Attract-appen med Microsoft Power-plattformen.
+description: Det här avsnittet beskriver hur du kan utöka Microsoft Dynamics 365 Talent - Attract med Microsoft Power-plattformen.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795230"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026243"
 ---
 # <a name="extensibility-in-attract"></a>Utbyggbarhet i Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent byggs ovanpå Common Data Service-plattformen och kan utökas på olika sätt med hjälp av Microsoft Power Platform och funktionerna som Common Data Service ger. Därför kan du konfigurera och anpassa systemet med hjälp av Microsoft PowerApps och Microsoft Flow. Du kan också få ytterligare analys om personer genom att använda Microsoft Power BI. Dessutom gör nya anpassade aktiviteter, till exempel PowerApps och webbinnehåll (iframe), anställningsprocessen mer anpassningsbar än någonsin. Genom att använda dessa nya aktiviteter kan du skräddarsy anställningsprocessen till dina affärsbehov och processer och kan se till att både anställningsteam och sökande har en smidig och anpassad upplevelse.
+Microsoft Dynamics 365 Talent byggs ovanpå Common Data Service och kan utökas på olika sätt med hjälp av Microsoft Power Platform och funktionerna som Common Data Service ger. Därför kan du konfigurera och anpassa systemet med hjälp av Microsoft PowerApps och Microsoft Flow. Du kan också få ytterligare analys om personer genom att använda Microsoft Power BI. Dessutom gör nya anpassade aktiviteter, till exempel PowerApps webbinnehåll (iframe), anställningsprocessen mer anpassningsbar än någonsin. Genom att använda dessa nya aktiviteter kan du skräddarsy anställningsprocessen till dina affärsbehov och processer och kan se till att både anställningsteam och sökande har en smidig och anpassad upplevelse.
 
 ## <a name="extending-option-sets-in-attract"></a>Utökade alternativuppsättningar i Attract
 
@@ -40,7 +40,7 @@ En **alternativuppsättning** (plocklista) är en typ av fält som kan inkludera
 
 Nedan visas stegen för att uppdatera fälten **Orsak till avvisning** med värden som är specifika för ditt företag.  
 
-1. För att utöka alternativuppsättningen **orsak till avvisning**, gå till [webbplatsen för PowerApps administration.](https://admin.powerapps.com)
+1. För att utöka alternativuppsättningen **orsak till avvisning**, gå till [webbplatsen för PowerApps administration](https://admin.powerapps.com).
 2. Du kanske uppmanas att logga in på ditt konto. Ange dina autentiseringsuppgifter för användar-ID och lösenord som du använder för att logga in på Dynamics 365 och/eller Office 365 och klicka sedan på **nästa**.
 3. På fliken **miljöer** väljer du miljön som du vill hantera och dubbelklicka för att komma till fliken **information**.
 4. På fliken **information** väljer du **Dynamics 365 administrationscenter**.
@@ -54,7 +54,7 @@ Nedan visas stegen för att uppdatera fälten **Orsak till avvisning** med värd
 12. Välj **Spara**.
 13. Välj **publicera** överst på sidan.
 
-## <a name="take-advantage-of-the-microsoft-power-platform"></a>Utnyttja Microsoft Power platform 
+## <a name="take-advantage-of-the-microsoft-power-platform"></a>Utnyttja Microsoft Power Platform 
 
 Eftersom all data från Attract finns i Common Data Service kan du använda verktyg från Microsoft Power Platform för att inkludera unika affärsbehov i Attract.
 

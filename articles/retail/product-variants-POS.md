@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 609f5f13f3af4a7621fe7ee152800dac4d68a9fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572059"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025159"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersökning i kassan
 
@@ -52,7 +52,7 @@ Kvantiteterna **Reserverat** och **Beställt** visas också för varje plats.
 Listan över platser innehåller två typer av enheter:
 
 - **Butiker** – Listab visar butiker som konfigureras med hjälp av butikslokaliserargruppen för den aktuella butiken i Butik administration.
-- **Distributionscenter** – olika typer av distributionscenter (till exempel lagerställen) kan konfigureras i Microsoft Dynamics 365 for Retail. I listan visas dock endast lagertillgänglighetsinformation för distributionscenter av standardtypen **Standard**.
+- **Distributionscenter** – olika typer av distributionscenter (till exempel lagerställen) kan konfigureras i Retail. I listan visas dock endast lagertillgänglighetsinformation för distributionscenter av standardtypen **Standard**.
 
     > [!NOTE]
     > Lagertillgänglighetsinformation visas inte för lagerställe av typerna **transport**, **karantän** och **varor på väg** för kassan.

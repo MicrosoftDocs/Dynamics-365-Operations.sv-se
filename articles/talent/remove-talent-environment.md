@@ -1,6 +1,6 @@
 ---
 title: Ta bort Talent-miljöer
-description: I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 for Talent.
+description: I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 904c8eb1254a65e1627c33f14488a1a8e12f7c2b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519123"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010625"
 ---
 # <a name="remove-talent-environments"></a>Ta bort Talent-miljöer
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 for Talent.
+I det här avsnittet får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Ta bort en testkörningsmiljö
 
 Talent testkörning etableras med en 60 dagars giltighetspolicy. Ägare av testkörningsmiljöer kan emellertid välja sina testmiljöer tidigt genom att utföra följande steg. 
 
-1. Gå till [PowerApps Admin center](https://admin.businessplatform.microsoft.com/).
+1. Gå till [PowerApps administrationscenter](https://admin.businessplatform.microsoft.com/).
 2. Välj **Miljö**.
 3. Välj testkörningsmiljö som har ett namnmönster ungefär så här: TestDrive - alias@domain
 4. Välj **Ta bort** och bekräfta beslutet. 
@@ -52,7 +52,7 @@ Eftersom en enda Talent-miljö ”ingår” i en enda PowerApps-miljö, finns de
 
 För att ta bort hela PowerApps-miljön, inklusive Talent och tillhörande program och flöden:
 
-1. Gå till [PowerApps Admin center](https://admin.businessplatform.microsoft.com/).
+1. Gå till [PowerApps administrationscenter](https://admin.businessplatform.microsoft.com/).
 2. Välj **Miljö**.
 3. Välj miljön som ska tas bort.
 4. Välj **Ta bort** och bekräfta beslutet. 

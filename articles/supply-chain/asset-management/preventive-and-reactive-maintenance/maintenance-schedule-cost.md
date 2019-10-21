@@ -3,7 +3,7 @@ title: Kostnad för underhållsschema
 description: I det här avsnittet beskrivs underhållsschemakostnad i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71b958839a914d90a86a0dcd16a09285ca6dcfa4
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b2f53a4a64b06efc9269c607bfe1fc3a41c90cdd
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875893"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922078"
 ---
 # <a name="maintenance-schedule-cost"></a>Kostnad för underhållsschema
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 I Tillgångshantering kan du beräkna budgetkostnader för rader i underhållsscheman. Detta är användbart om du vill få en översikt över förväntade kostnader, t.ex. kostnader som rör planerade förebyggande underhållsjobb för nästa år. Beräkningarna baseras på befintliga underhållsschemarader av typen "Underhållsplaner" och "Underhållsomgångar" och "Underhållsbegäranden".
 
@@ -48,10 +46,11 @@ I Tillgångshantering kan du beräkna budgetkostnader för rader i underhållssc
 
 5. Klicka på **OK** för att starta kostnadsberäkningen.
 
-6. På fliken **Kostnad för underhållsschema** > i **Gruppera efter...**-åtgärdsfönstergrupperna, klickar du på relevanta knappar om du vill visa den obligatoriska detaljnivån för kostnadsberäkningen De valda knapparna för åtgärdsfönstergrupper markeras i blått. Klicka på en knapp för att aktivera och inaktivera den.
+6. På fliken **Kostnad för underhållsschema** > i **Gruppera efter...**-åtgärdsfönstergrupperna, klickar du på relevanta knappar om du vill visa den obligatoriska detaljnivån för kostnadsberäkningen De valda knapparna i åtgärdsfönstergruppen markeras. Klicka på en knapp för att aktivera och inaktivera den.
 
 7. Klicka på knappen **Beräkna kostnad** om du vill göra en ny kostnadsberäkning.
 
+Bilden nedan visar resultaten av en kostnadsberäkning för underhållsscheman.
 
 ![Figur 1](media/17-preventive-maintenance.png)
 

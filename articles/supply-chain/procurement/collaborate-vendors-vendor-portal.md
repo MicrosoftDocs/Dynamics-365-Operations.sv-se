@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555166"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248990"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer genom leverantörsportalen
 
@@ -31,7 +31,7 @@ ms.locfileid: "1555166"
 
 Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 och maj 2016.
 
-Informationen i det här avsnittet gäller bara Dynamics AX-versionerna från februari 2016 och maj 2016. Funktionen för leverantörsportal har ersatts med utökade funktioner för leverantörsamarbeten i Dynamics 365 for Operations, version 1611. För mer information om det nya leverantörssamarbetet, se [Använda leverantörssamarbeten för att arbeta med externa leverantörer](vendor-collaboration-work-external-vendors.md).  
+Informationen i det här avsnittet gäller bara Dynamics AX-versionerna från februari 2016 och maj 2016. För mer information om det nya leverantörssamarbetet, se [Använda leverantörssamarbeten för att arbeta med externa leverantörer](vendor-collaboration-work-external-vendors.md).  
 
 Leverantörsportalen vänder sig till leverantörer som inte har elektroniskt datautbyte (EDI) med Microsoft Dynamics AX för utbyte av inköpsorderinformation (IO). Portalen gör att inköpsagenter kan skicka en inköpsorder till leverantören och sedan få ett bekräftat eller avvisat svar direkt i Dynamics AX.  
 

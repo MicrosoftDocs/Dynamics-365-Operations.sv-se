@@ -1,6 +1,6 @@
 ---
 title: Verksamhet för online- och offlinekassor (POS)
-description: Det här avsnittet innehåller information om kassaoperation i Microsoft Dynamics 365 for Retail. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge.
+description: Det här avsnittet innehåller information om kassaoperation i Dynamics 365 Retail. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge.
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625675"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025320"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
 [!include [banner](includes/banner.md)]
 
-De flesta åtgärder som användaren vidtar i kassan anses vara operationer. Operationer konfigureras och hanteras i formuläret i Microsoft Dynamics 365 for Retail backoffice. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
+De flesta åtgärder som användaren vidtar i kassan anses vara operationer. Operationer konfigureras och hanteras i formuläret i Dynamics 365 Retail backoffice. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
 
-Följande tabell innehåller information om de åtgärder som är tillgängliga i Retail Modern POSoch molnbaserad kassa för Dynamics 365 for Retail. Tabellen aner också var i programmet som operationerna kan anropas och om de är tillgängliga när kassan är i offlineläge.
+Följande tabell innehåller information om de åtgärder som är tillgängliga i Retail Modern POS och Cloud POS. Tabellen aner också var i programmet som operationerna kan anropas och om de är tillgängliga när kassan är i offlineläge.
 
-Vissa åtgärder är inte tillgängliga i Retail Modern POSeller molnbaserad kassa för Dynamics 365 for Retail. Vissa av dessa åtgärder är antingen språkspecifika åtgärder som kräver ytterligare tillägg och konfiguration. Övriga är funktioner Microsoft Dynamics AX 2012 som inte stöds för närvarande.
+Vissa åtgärder är inte tillgängliga i eller molnbaserad kassa för Retail Modern POS eller Cloud POS. Vissa av dessa åtgärder är antingen språkspecifika åtgärder som kräver ytterligare tillägg och konfiguration. Övriga är funktioner Microsoft Dynamics AX 2012 som inte stöds för närvarande.
 
 Följande kolumner anger var operationerna kan startas:
 
@@ -42,7 +42,7 @@ Följande kolumner anger var operationerna kan startas:
 - **Välkomstskärmen** – operationen kan startas från kassaknappsatser som har konfigurerats på kassavälkomstskärmen.
 
 > [!NOTE]
-> Åtgärderna i listan nedan gäller den senaste versionen av Dynamics 365 for Retail. Vissa operationer kan ha ändrats eller kanske inte är tillgängliga i tidigare versioner.
+> Åtgärderna i listan nedan gäller den senaste versionen av Retail. Vissa operationer kan ha ändrats eller kanske inte är tillgängliga i tidigare versioner.
 
 | ID | Åtgärd | beskrivning | Knappsats | Transaktionsskärm | Välkomstskärm | Tillgänglig offline | Språkspecifik  |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

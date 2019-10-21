@@ -1,6 +1,6 @@
 ---
-title: Skapa och skicka en integrationsguide genom att använda Dynamics 365 for Talent - Onboard
-description: Det här avsnittet beskriver hur du använder Microsoft Dynamics 365 for Talent - Onboard-appen för att skapa integrationsguide för dina nyanställda. Denna uppgift är ett viktigt första steg i en HR-strategi (HCM) för anställningsdag till pension.
+title: Skapa och skicka en integrationsguide genom att använda Dynamics 365 Talent - Onboard
+description: Det här avsnittet beskriver hur du använder Microsoft Dynamics 365 Talent - Onboard-appen för att skapa integrationsguide för dina nyanställda. Denna uppgift är ett viktigt första steg i en HR-strategi (HCM) för anställningsdag till pension.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731652"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009864"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Skapa och skicka en integrationsguide genom att använda Dynamics 365 for Talent: Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Skapa och skicka en integrationsguide.
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard låter dig skapa integrationsguider från mallar som du själv har skapat, från mallar som är tillgängliga i ett galleri eller från grunden.
+Microsoft Dynamics 365 Talent: Onboard låter dig skapa integrationsguider från mallar som du själv har skapat, från mallar som är tillgängliga i ett galleri eller från grunden.
 
 När du har skapat en integrationsguiden kan du skicka den till en ny anställning. Du kan också skicka den till flera nyanställda som du anger i en Microsoft Excel-fil som du hämtar från Onboard-appen.
 

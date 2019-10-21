@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 2762179a13ff9bbcb4001f3a9aba443c4aa00f9f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519122"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024251"
 ---
 # <a name="questionnaires"></a>Enkäter
 
@@ -31,7 +31,7 @@ ms.locfileid: "1519122"
 
 Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten. 
 
-Du kan anpassa en enkät så att den passar dina specifika krav genom att använda olika funktioner som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations. Nedan följer några exempel på hur enkäter kan användas:
+Du kan anpassa en enkät så att den passar dina specifika krav genom att använda olika funktioner som är tillgängliga i Microsoft Dynamics 365 Finance. Nedan följer några exempel på hur enkäter kan användas:
 
 -   Testa medarbetares och sökandes professionella färdigheter.
 -   Utvärdera om kursdeltagare lärde sig kursmaterialet.

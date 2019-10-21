@@ -1,6 +1,6 @@
 ---
-title: Konfigurera e-postinställningar i Microsoft Dynamics 365 for Talent - Attract
-description: I det här avsnittet beskrivs hur du konfigurerar inställningar för e-post som skickas av Microsoft Dynamcis 365 för Talent - Attract.
+title: Konfigurera e-postinställningar i Microsoft Dynamics 365 Talent - Attract
+description: I det här avsnittet beskrivs hur du konfigurerar inställningar för e-post som skickas av Microsoft Dynamcis 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: c891a36f01d36774bd921475fa5995d207cd2d51
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739505"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008672"
 ---
 # <a name="configure-email-settings"></a>Konfigurera e-postinställningar
 
 [!include[banner](../includes/banner.md)]
 
-Ditt varumärke etablerar förtroende och hjälper dig att skapa en relation med kandidater innan de ens kan användas för dina befattningar. Positiv varumärkesuppfattning attraherar de bästa talangerna och ökar lojaliteten för befintliga medarbetare. Microsoft Dynamics 365 for Talent: Med Attract kan du konfigurera e-postmeddelanden så att de avspeglar företagets varumärke. Därför kan du ge en konsekvent upplevelse för jobbsökande när de fortskrider genom ansökningsprocessen.
+Ditt varumärke etablerar förtroende och hjälper dig att skapa en relation med kandidater innan de ens kan användas för dina befattningar. Positiv varumärkesuppfattning attraherar de bästa talangerna och ökar lojaliteten för befintliga medarbetare. Microsoft Dynamics 365 Talent: Attract låter dig konfigurera e-postmeddelanden så att de avspeglar företagets varumärke. Därför kan du ge en konsekvent upplevelse för jobbsökande när de fortskrider genom ansökningsprocessen.
 
 Med Attract kan du utföra följande åtgärder:
 

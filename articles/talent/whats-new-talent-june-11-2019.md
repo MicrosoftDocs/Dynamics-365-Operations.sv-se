@@ -1,6 +1,6 @@
 ---
-title: Nyheter och ändringar i Dynamics 365 for Talent (11 juni 2019)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+title: Nyheter och ändringar i Dynamics 365 Talent (11 juni 2019)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b06dc0556bd1461573cd56abed602d72333a3f39
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741636"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023940"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Nyheter och ändringar i Dynamics 365 for Talent (11 juni 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (11 juni 2019)
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ändringar i Attract
 
 ### <a name="search-engine-optimization-for-job-posts"></a>Sökmotoroptimering för jobbpubliceringar
 
-När du har aktiverat **sökmotoroptimering** i Dynamics 365 for Talent: administrationscentret för Attract, Attract informerar din Google-indexeringens API för att crawla webbsidan när du aktiverar och publicerar ett nytt jobb eller uppdaterar ett befintligt jobb. På så sätt kommer jobbet att visas i säkresultaten för Google och andra sökmotorer.
+När du har aktiverat **sökmotoroptimering** i Dynamics 365 Talent: Attract administrationscenter, Attract informerar din Google-indexeringens API för att crawla webbsidan när du aktiverar och publicerar ett nytt jobb eller uppdaterar ett befintligt jobb. På så sätt kommer jobbet att visas i säkresultaten för Google och andra sökmotorer.
 
 På samma sätt informerar Attract indexerings-API varje gång du tar bort publiceringen av ett jobb så att det ej bokförda jobbet slutar att visas i sökresultaten.
 
@@ -50,15 +50,15 @@ Godkännanden visas i avsnittet **Godkännanden** på instrumentpanelen. Godkän
 
 ## <a name="changes-in-onboard"></a>Ändringar i Onboard
 
-Den här versionen inkluderar felkorrigeringar för Dynamics 365 for Talent: Onboard.
+Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Ändringar i Core HR
 
 Ändringar som beskrivs i detta avsnitt gäller versionsnummer 8.1.2337.
 
-### <a name="platform-update-27"></a>Plattform update 27
+### <a name="platform-update-27-for-finance-and-operations"></a>Plattformsuppdatering 27 för Finance and Operations
 
-Ytterligare information om plattformsuppdatering 27 finns i [Förhandsgranskningsfunktioner i Dynamics 365 for Finance and Operations plattformsuppdatering 27 (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Ytterligare information om plattformsuppdatering 27 för Finance and Operations finns i [Förhandsgranskningsfunktioner i Dynamics 365 Finance and Operations plattformsuppdatering 27 (juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Funktionshanteringsarbetsyta i Talent
 

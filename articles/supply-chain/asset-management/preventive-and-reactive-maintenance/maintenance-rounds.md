@@ -3,7 +3,7 @@ title: Underhållsomgångar
 description: I det här avsnittet beskrivs underhållsomgångar i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875900"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922032"
 ---
 # <a name="maintenance-rounds"></a>Underhållsomgångar
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 In **Tillgångshantering** kan du skapa underhållsomgångar för olika tillgångar, där du måste utföra en liknande uppgift med jämna mellanrum. Exempelvis smörjmedelsjobb eller säkerhetsinspektionsjobb som måste utföras på ett antal maskiner inom samma intervall. Första steget är att skapa en underhållsomgång, inklusive tillgångar som kräver samma typ av underhållsjobb. Därefter schemalägger du underhållsomgångarna. När du har avslutat schemat för underhållsomgångar kan du se alla jobbposter som är relaterade till omgången i **Alla underhållsscheman** och **Öppna rader för underhållsschema**.
 
@@ -83,6 +81,8 @@ In **Tillgångshantering** kan du skapa underhållsomgångar för olika tillgån
 >[!NOTE]
 >Fälten **Tillgångar** och **Rader** i gruppen **Information** på snabbfliken **Sidhuvud** visar det totala antalet tillgångar och rader som är relaterade till den valda underhållsomgången.
 
+Bilden nedan visar och exempel på en underhållsrunda som innehåller tre tillgångar.
+
 ![Figur 1](media/13-preventive-maintenance.png)
 
 
@@ -106,6 +106,8 @@ När du har ställt in en underhållsomgång kör du ett schemajobb för att tid
 6. Klicka på **OK**.
 
 7. Du kan nu se underhållsomgångsjobben i **Tillgångshantering** > **Allmänt** > **Underhållsschema** > **Alla underhållsscheman** eller **Öppna rader för underhållsschema**. Om schemalagda omgångar är kopplade till en pool för arbetsorder visas även underhållsschemarader i **Öppna pooler för underhållsschema**. Underhållsschemarader som skapas från en omgång av har referenstypen "Underhållsomgångar".
+
+De två bilderna nedan visar ett schemajobb i dialogrutan **Schemalägg underhållsomgångar** och de rader för underhållsschema som skapats i **Alla underhållsscheman** baserat på det schemajobbet.
 
 ![Figur 2](media/14-preventive-maintenance.png)
 

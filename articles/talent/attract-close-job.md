@@ -1,6 +1,6 @@
 ---
-title: Stäng ett jobb i Microsoft Dynamics för Talent 0 Attract
-description: Det här avsnittet förklarar hur du stänger ett jobb i Microsoft Dynamics 365 for Talent - Attract.
+title: Stäng ett jobb i Microsoft Dynamics Talent - Attract
+description: Det här avsnittet förklarar hur du stänger ett jobb i Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/10/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2010-07-10
 ms.dyn365.ops.version: Talent 2019 Wave 1 update
-ms.openlocfilehash: ec1b4d1fcd02bad329030b37a491b52a7c9c0a30
-ms.sourcegitcommit: 42589141431a5f357804b7e9ea9c781d594ef09d
+ms.openlocfilehash: 632db42b12d0a442b8e1f35dbc784d252ffde399
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773550"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008626"
 ---
 # <a name="close-a-job"></a>Stäng ett jobb
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 for Talent: Attract, kan du stänga ett jobb som antingen **Jobb annullerat** eller **Befattningen har tillsatts**. Du kan annullera ett jobb när som helst.
+I Microsoft Dynamics 365 Talent: Attract kan du stänga ett jobb som antingen **Jobb annullerat** eller **Befattningen har tillsatts**. Du kan annullera ett jobb när som helst.
 
 Om du vill ange att befattningen har tillsatts i måste en kandidat ha accepterat ett erbjudande för jobbet.
 

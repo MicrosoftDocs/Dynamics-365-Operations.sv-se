@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570398"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248944"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
@@ -78,7 +78,7 @@ När ett inköpsavtal bekräftas lagras den aktuella versionen av inköpsavtalet
 När du skapar en inköpsorder kan du tillämpa ett inköpsavtal på den. Information från villkoren för avtalet, till exempel betalningsvillkoren, leveransvillkor och leveransadress, kopieras då till sidhuvudet i inköpsordern. Om inköpsordern innehåller en eller flera rader för produkter eller kategorier som omfattas av inköpsavtalet används priser och rabatter från inköpsavtalet för dessa rader. Beloppet eller kvantiteten på orderraden bidrar till uppfyllandet av utfästelsen i inköpsavtalet. Samma inköpsorder kan inkludera både rader som inte hör till ett inköpsavtal och rader som har en utfästelse för ett inköpsavtal.  
 
 Du kan bara välja ett inköpsavtal när du skapar en inköpsorder. Du kan inte välja ett inköpsavtal efter att inköpsordern har skapats.  
-I vissa fall där inköpsorder skapas indirekt kan du kontrollera om Finance and Operations automatiskt ska söka efter tillämpliga inköpsavtal. Du kan till exempel göra det när du kopplar automatiskt bekräftade inköpsorder eller skapar inköpsorder som baseras på försäljningsorder.
+I vissa fall där inköpsorder skapas indirekt kan du kontrollera om Supply Chain Management automatiskt ska söka efter tillämpliga inköpsavtal. Du kan till exempel göra det när du kopplar automatiskt bekräftade inköpsorder eller skapar inköpsorder som baseras på försäljningsorder.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Inköpsavtal och koncernintern handel
 Koncerninterna handelsrelationer kan skapas mellan leverantörskonton och kundkonton som finns i olika juridiska personer. När en försäljnings- eller inköpsorder skapas för en av parterna skapas en koncernintern orderkedja. I orderkedjan skapas försäljningsordern och inköpsordern i de motsvarande juridiska personerna.  

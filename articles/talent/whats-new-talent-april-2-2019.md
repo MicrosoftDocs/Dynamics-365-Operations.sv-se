@@ -1,6 +1,6 @@
 ---
-title: Vad är nytt och ändrat i Dynamics 365 for Talent (2 april 2019)
-description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 for Talent.
+title: Vad är nytt och ändrat i Dynamics 365 Talent (2 april 2019)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/02/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795254"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026088"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Vad är nytt och ändrat i Dynamics 365 for Talent (2 april 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Vad är nytt och ändrat i Dynamics 365 Talent (2 april 2019)
 
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 for Talent.
+Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 
 ## <a name="changes-in-attract"></a>Ändringar i Attract
 
@@ -56,14 +56,14 @@ I Attract och Onboard loggas problem av slutanvändare genom funktionen rapporte
 ## <a name="changes-in-core-hr"></a>Ändringar i Core HR
 Ändringar som beskrivs i detta avsnitt gäller versionsnummer 8.1.2216.
 
-### <a name="platform-update-25"></a>Plattform update 25
-Visa mer information om plattformsuppdatering 25 finns i [Förhandsgranskningsfunktioner i Dynamics 365 for Finance and Operations plattformsuppdatering 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>Plattformsuppdatering 25 för Finance and Operations
+Ytterligare information om plattformsuppdatering 25 för Finance and Operations finns i [Förhandsgranskningsfunktioner i Dynamics 365 for Finance and Operations plattformsuppdatering 25 (april 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Avancerad kompensationssäkerhet (fasta och rörliga)
 I många organisationer kan kompensations- och förmånsansvariga endast ha tillgång till vissa kompensationsposter. Dessa kan inkludera poster för chefer eller nationella medarbetare. Denna ändring ger personalavdelningen möjlighet att hantera och underhålla kompensationsplaner för olika medarbetargrupper i organisationen. Du kan tilldela säkerhetsroller till fasta och variabla planer. Dessa säkerhetsroller avgör åtkomst till planer och relaterade medarbetardata, till exempel lön- eller bonusposter så att endast de rollerna kan bearbeta kompensation för medarbetargrupper.
 
 ### <a name="upgrade-to-common-data-service"></a>Uppgradera till Common Data Service
-Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps-administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>I förhandsgranskning
 
@@ -79,4 +79,4 @@ Organisationer kan kräva orsakskoder för specifika tjänstledighetstyper när 
 Med denna ändring detekteras dubbletter när du anger namnfält och status visar antalet dubbletter som hittades. Du kan välja den angivna länken för att öppna en ny sida för att bedöma om du ska använda de identifierade träffarna. Dublettformuläret öppnas inte automatiskt för att undvika att inmatningen avbryts.
 
 ###  <a name="email-support-for-alerts"></a>E-support för notifieringar
-Med plattformsuppdatering 25 kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse. 
+Med plattformsuppdatering 25 för Finance and Operations kan användare skapa notifieringsregler som automatiskt levererar e-postmeddelanden till kontakter när de utlöses av en händelse. 

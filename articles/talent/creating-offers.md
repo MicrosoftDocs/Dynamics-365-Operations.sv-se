@@ -1,6 +1,6 @@
 ---
 title: Skapa, godkänna och signera erbjudanden
-description: Det här avsnittet beskriver hur du skapar, godkänner och registrerar ett erbjudande för en sökande med Dynamics 365 for Talent.
+description: Det här avsnittet beskriver hur du skapar, godkänner och registrerar ett erbjudande för en sökande med Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8c5f95f1d3be22a73cc42cb3667b793490f2a136
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: b9ccd22e218137637cc0bbde0d4ad19a28591731
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739643"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008115"
 ---
 # <a name="create-approve-and-sign-offers"></a>Skapa, godkänna och signera erbjudanden
 
@@ -110,7 +110,7 @@ Det finns flera åtgärder du kan vidta innan du skickar erbjudanden till kandid
 Om Adobe Sign valdes som den föredragna metoden för e-signering måste skapare av erbjudandet ansluta Adobe Sign-licensen i det här steget. 
 
 ### <a name="docusign"></a>DocuSign
-Om DocuSign valdes som den föredragna metoden för e-signering måste skapare av erbjudandet ansluta DocuSign-licensen. När du har loggat in ansluts standardkontot och behörigheter som är kopplade till användarens DocuSign-profil till Talent Attract. 
+Om DocuSign valdes som den föredragna metoden för e-signering måste skapare av erbjudandet ansluta DocuSign-licensen. När du har loggat in ansluts standardkontot och behörigheter som är kopplade till användarens DocuSign-profil till Talent: Attract. 
 
 -  Du kan visa och redigera e-postmallen efter behov.
 

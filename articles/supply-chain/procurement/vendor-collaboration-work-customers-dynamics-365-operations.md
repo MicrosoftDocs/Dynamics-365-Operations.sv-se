@@ -1,6 +1,6 @@
 ---
 title: Leverantörssamarbete med kunder
-description: I det här avsnittet beskrivs hur du kan använda leverantörssamarbete i Microsoft Dynamics 365 for Finance and Operations för att arbeta med inköpsorder och övervaka försändelselager.
+description: I det här avsnittet beskrivs hur du kan använda leverantörssamarbete för att arbeta med inköpsorder och övervaka försändelselager.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567594"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250157"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 for Finance and Operations. Leverantörer kan utföra en rad olika affärsprocesser från följande arbetsytor:
+I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverantörer kan utföra en rad olika affärsprocesser från följande arbetsytor:
 
 - **Bekräftelse av inköpsorder** – Övervaka och svara på inköpsorder.
 - **Budgivning av leverantör** – Visa anbudsförfrågningar och svara på dem genom att lämna anbud.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 00ce4a31c0b0f466911658c79f6e32788273c127
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834012"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1994920"
 ---
 # <a name="manage-order-holds"></a>Hantera orderspärrar
 
@@ -33,45 +33,40 @@ Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina 
 
 
 ## <a name="set-up-order-holds"></a>Ställ in orderspärrar
-1. Gå till Försäljning och marknadsföring > Inställningar > Försäljningsorder > Koder för spärrade order.
-2. Klicka på Ny.
-3. Ange ett värde i fältet Spärra.
-    * Skriv till exempel "Ring tillbaka".  
-4. Ange ett värde i fältet Beskrivning.
-    * Till exempel spärrad order som inväntar att kunden ringer tillbaka.  
-    * Du kan också markera kryssrutan Ta bort reservationer för att ta bort alla fysiska reservationer från ordern när spärrkoden läggs till.  
-5. Klicka på Spara.
+1. Gå till **Navigeringsfönster > Moduler > Försäljning och marknadsföring > Inställningar > Försäljningsorder > Koder för spärrad order**.
+2. Klicka på **Ny**.
+3. Ange ett värde i fältet **Spärrkod**. Skriv till exempel "Ring tillbaka".  
+4. I fältet **Beskrivning** anger du ett värde.
+    - Till exempel spärrad order som inväntar att kunden ringer tillbaka.  
+    - Du kan också markera kryssrutan **Ta bort reservationer** för att ta bort alla fysiska reservationer från ordern när spärrkoden läggs till.  
+5. Klicka på **Spara**.
 
 ## <a name="place-order-on-hold"></a>Spärra order
-1. Gå till försäljning och marknadsföring > beställningar > Alla beställningar.
-2. Klicka på Ny.
-3. I fältet Kundkonto, ange eller välj ett värde.
-4. Klicka på OK.
-5. Ange eller välj ett värde i fältet Artikelnummer.
-6. Ange ett tal i fältet Kvantitet.
-7. Klicka på Försäljningsorder i åtgärdsfönstret.
-8. Klicka på Spärrade order.
-9. Klicka på Ny.
-10. Välj den kod som du har skapat i föregående underaktivitet i kodfältet Spärrkod.
-11. Klicka på Spara.
+1. Gå till **Navigeringsfönster > Moduler > Försäljning och marknadsföring > Försäljningsorder > Alla försäljningsorder**.
+2. Klicka på **Ny**.
+3. Ange eller välj ett värde i fältet **Kundkonto**.
+4. Klicka på **OK**.
+5. I fältet **artikelnummer** anger du eller väljer ett värde.
+6. Ange ett nummer i fältet **Kvantitet**.
+7. I **åtgärdsrutan**, klicka på **Försäljningsorder**.
+8. Klicka på **Spärrade order**.
+9. Klicka på **Ny**.
+10. Välj den kod som du har skapat i föregående underaktivitet i kodfältet **Spärrkod**.
+11. Klicka på **Spara**.
 12. Stäng sidan.
-13. Gå till försäljning och marknadsföring > beställningar > Alla beställningar.
-14. Markera vald rad i listan.
-    * För spärrade order markeras fälten "Behandla inte" och "Spärrad".    
-15. Klicka på Plocka och packa i åtgärdsfönstret.
+13. Gå till **försäljning och marknadsföring > beställningar > alla försäljningsorder**.
+14. Markera vald rad i listan. För spärrade order markeras fälten "Behandla inte" och "Spärrad".
+15. I åtgärdsrutan, klicka **Plocka och packa**.
 
 ## <a name="manage-order-holds"></a>Hantera orderspärrar
-1. Gå till Försäljning och marknadsföring > Försäljningsorder > Öppna order > Spärrade order.
-    * Sidfunktionerna för spärrad order fungerar som en arbetsyta, där du kan få en översikt över alla aktuella och bearbetade spärrningar och hantera dem samt tillhörande försäljningsorder.      
+1. Gå till **Försäljning och marknadsföring > Försäljningsorder > Öppna order > Spärrade order**. Sidfunktionerna för **spärrad order** fungerar som en arbetsyta, där du kan få en översikt över alla aktuella och bearbetade spärrningar och hantera dem samt tillhörande försäljningsorder.     
 2. Markera vald rad i listan.
-3. Klicka på Frisläpp spärr i åtgärdsfönstret.
-4. Klicka på Frisläpp.
-5. Avmarkera vald rad i listan.
-    * Fältet Checka ut till anger nu ditt användar-ID.   
-6. Klicka på Rensa frisläpp.
-7. Klicka på Rensa spärr i åtgärdsfönstret.
-    * När du vill ta bort spärren och tillåta att ordern går vidare till nästa steg, måste du rensa spärren. Du kan köra åtgärden Rensa spärrar om ordern inte kräver några ändringar. Om ordern måste uppdateras kan du emellertid använda åtgärden Rensa och ändra när du rensar en spärr.      
-    * Åtgärden Rensa och skicka in gäller endast när du använder kundtjänstfunktionerna.  
-8. Klicka på Rensa spärrar.
-    * Spärren har nu tagits bort från ordern och från listan över aktiva spärrningar. Ändra värdet i fältet Visa för att visa samtliga spärrningar eller deras underuppsättningar enligt en viss status.     
+3. Klicka på **Frisläpp spärr** i **åtgärdsfönstret**.
+4. Klicka på **Frisläpp**.
+5. Avmarkera vald rad i listan. Fältet **Frisläpp till** anger nu ditt användar-ID.   
+6. Klicka på **Rensa frisläpp**.
+7. Klicka på **Rensa spärr** i **åtgärdsfönstret**.
+    - När du vill ta bort spärren och tillåta att ordern går vidare till nästa steg, måste du rensa spärren. Du kan köra åtgärden Rensa spärrar om ordern inte kräver några ändringar. Om ordern måste uppdateras kan du emellertid använda åtgärden Rensa och ändra när du rensar en spärr.      
+    - Åtgärden **Rensa och skicka in** gäller endast när du använder kundtjänstfunktionerna.  
+8. Klicka på **Rensa spärrar**. Spärren har nu tagits bort från ordern och från listan över aktiva spärrningar. Ändra värdet i fältet Visa för att visa samtliga spärrningar eller deras underuppsättningar enligt en viss status.     
 

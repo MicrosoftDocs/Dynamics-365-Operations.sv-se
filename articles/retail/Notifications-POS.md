@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577990"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023715"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Visa ordermeddelanden i kassan (POS)
 
 [!include [banner](includes/banner.md)]
 
-I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten ger en enda applikation där medarbetare kan utföra alla dessa uppgifter och många andra. Eftersom olika aktiviteter måste utföras under dagen kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i kassan hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. I Microsoft Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden konfigureras för kassaoperationer.
+I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten ger en enda applikation där medarbetare kan utföra alla dessa uppgifter och många andra. Eftersom olika aktiviteter måste utföras under dagen kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i kassan hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. I Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden konfigureras för kassaoperationer.
+
 
 Systemet kan för närvarande endast visa meddelanden för orderuppföljningsåtgärder. Men eftersom ramverket är utformat till att vara utbyggbart kommer utvecklare så småningom kunna skriva en meddelandehanterare för alla åtgärder och visa meddelanden för den åtgärden i kassan.
 
@@ -68,7 +69,8 @@ Följande bild visar inställningarna för levande innehåll i knappsatsen för 
 
 ![Inställningar för levande innehåll i knappsatsen för designern](./media/ButtonGridDesigner.png "Inställningar för levande innehåll i knappsatsen för designern")
 
-Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rätt skärmlayout håller på att uppdateras. Om du vill ta reda på vilken skärmlayout som används i POS väljer du ikonen **Inställningar** i övre högra hörnet och noterar **Skärmlayout-ID** och **Layoutupplösning.** Nu använder du Edge-webbläsaren, gå till sidan **skärmlayout** i Dynamics 365 for Finance and Operations, leta reda på **bildskärms-ID** och **Layoutupplösning** som identifieras ovan och markera kryssrutan **Aktivera live-innehåll**. Gå **Butik \> Butikens IT \> Distributionsschema** och kör 1090-jobbet (journaler) för att synkronisera layoutändringar.
+Om du vill visa meddelanderäkningen på en knapp måste du kontrollera att rätt skärmlayout håller på att uppdateras. Om du vill ta reda på vilken skärmlayout som används i POS väljer du ikonen **Inställningar** i övre högra hörnet och noterar **Skärmlayout-ID** och **Layoutupplösning.** Nu använder du Edge-webbläsaren, gå till sidan **skärmlayout**, leta reda på **bildskärms-ID** och **Layoutupplösning** som identifieras ovan och markera kryssrutan **Aktivera live-innehåll**. Gå **Butik \> Butikens IT \> Distributionsschema** och kör 1090-jobbet (journaler) för att synkronisera layoutändringar.
+
 
 ![Hitta den skärmlayout som används av kassan](./media/Choose_screen_layout.png "Hitta skärmlayouten ")
 

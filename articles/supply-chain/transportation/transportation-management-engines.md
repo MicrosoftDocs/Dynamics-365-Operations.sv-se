@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40539d649d3ee43fea8dc71f608dd6281d1c0e39
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554009"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251694"
 ---
 # <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
@@ -31,15 +31,15 @@ ms.locfileid: "1554009"
 
 Transporthanteringsmotorer definierar logiken som används för att generera och bearbeta transporttariffer i Transporthantering. 
 
-En transporthanteringsmotor beräknar uppgifter, till exempel transportföretagets tariff. Motorsystemet låter dig ändra beräkningsstrategier vid körning baserat på data i Microsoft Dynamics 365 for Finance and Operations. En transporthanteringsmotor liknar ett plugin-program som hör till ett visst transportkontrakt.
+En transporthanteringsmotor beräknar uppgifter, till exempel transportföretagets tariff. Motorsystemet låter dig ändra beräkningsstrategier vid körning baserat på data i Supply Chain Management. En transporthanteringsmotor liknar ett plugin-program som hör till ett visst transportkontrakt.
 
 ## <a name="what-engines-are-available"></a>Vilka motorer tillgängliga?
-Följande tabell visar de transporthanteringsmotorer som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations.
+Följande tabell visar de transporthanteringsmotorer som är tillgängliga.
 
-| Transporthanteringsmotor | beskrivning                                                                                                                                                                                                                                                                                                                 |
+| Transporthanteringsmotor | Beskrivning                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Tariffmotor**                  | Beräknar tariffer.                                                                                                                                                                                                                                                                                                           |
-| **Allmän motor**               | Enkla hjälpmotorer som används av andra motorer och som inte behöver data från Microsoft Dynamics 365 for Finance and Operations, till exempel en fördelningmotor. Fördelningsmotorer används för att minska de slutgiltiga kostnaderna för transport till vissa order och rader som baseras på dimensioner, till exempel volym och vikt. |
+| **Allmän motor**               | Enkla hjälpmotorer som används av andra motorer och som inte behöver data från Supply Chain Management, till exempel en fördelningsmotor. Fördelningsmotorer används för att minska de slutgiltiga kostnaderna för transport till vissa order och rader som baseras på dimensioner, till exempel volym och vikt. |
 | **Milkostnadsmotor**               | Beräknar transportavståndet.                                                                                                                                                                                                                                                                                     |
 | **Transporttidsmotor**          | Beräknar den tid det tar att resa från start till mål.                                                                                                                                                                                                                                       |
 | **Zonmotor**                  | Beräknar zon baserat på aktuell adress och beräknar antalet zoner som måste passeras för att resa från adress A till adress B.                                                                                                                                                                    |
@@ -62,23 +62,23 @@ I de flesta fall kan du klicka på knappen **Parametrar** i transporthanteringsm
 |          Parameter           |                                                                                  Beskrivning                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>RateBaseAssigner</em>   | Den .NET-typ som tolkar tariffbastilldelningsdata för ett visst schema. Syntaxen av parametervärdet består av två segment avgränsade med ett vertikalstreck ( |
-|  <em>MileageEngineCode</em>  |                       Koden för milkostnadsmotor som identifierar milkostnadmotorposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
-| <em>ApportionmentEngine</em> |                        Koden för allmän motor som identifierar fördelningsmotorn i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+|  <em>MileageEngineCode</em>  |                       Koden för milkostnadsmotor som identifierar milkostnad motorposten i databasen.                        |
+| <em>ApportionmentEngine</em> |                        Koden för allmän motor som identifierar fördelningsmotorn i databasen.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hur används metadata i transportledningsmotorer?
 ----------------------------------------------------------
 
-Transporthanteringsmotorer, som utgår från data som anges i Dynamics 365 for Finance and Operations kan använda olika datascheman. Transporthanteringssystemet möjliggör för olika transportledningsmotorer att använda samma allmänna register i den fysiska databasen. Om du vill vara säker på att den körtiden för tolkningen av motordata är korrekt, kan du definiera metadata för databasregistren. Detta minskar kostnaden för att skapa nya transporthanteringsmotorer eftersom ytterligare register- och formulärstrukturer inte krävs i Operations.
+Transporthanteringsmotorer, som utgår från data som anges i Supply Chain Management kan använda olika datascheman. Transporthanteringssystemet möjliggör för olika transportledningsmotorer att använda samma allmänna register i den fysiska databasen. Om du vill vara säker på att den körtiden för tolkningen av motordata är korrekt, kan du definiera metadata för databasregistren. Detta minskar kostnaden för att skapa nya transporthanteringsmotorer eftersom ytterligare register- och formulärstrukturer inte krävs i Operations.
 
 ## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Vad användas som sökningsdata i tariffberäkningar?
-De data som du använder när du beräknar tariffer i Microsoft Dynamics 365 for Finance and Operations kontrolleras av metadatakonfigurationen. Om du till exempel vill söka efter tariffer baserat på postnummer, måste du ställa in metadata baserat på uppslagningtypen för ett postnummer.
+De data som du använder när du beräknar tariffer kontrolleras av metadatakonfigurationen. Om du till exempel vill söka efter tariffer baserat på postnummer, måste du ställa in metadata baserat på uppslagningtypen för ett postnummer.
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Kräver alla motorkonfigurationer metadata?
 Nej, transporthanteringsmotorer som används för att hämta data som krävs för tariffberäkningen från externa system behöver inte metadata. Tariffdata för dessa motorer kan hämtas från externa transportföretags system, vanligen via en webbtjänst. Du kan till exempel använda en milkostnadsmotor som kan hämta data direkt från Bing-kartor, så att du inte behöver metadata för denna motor.
 
 | **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| De transportledningsmotorer som levereras med Finance and Operations är beroende av data som hämtas från programmet. Motorer som ansluter till externa system inkluderas inte i Operations. Med den motorbaserade utvidgningsmodellen kan du dock bygga tillägg med hjälp av Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools. |
+| De transportledningsmotorer som levereras med Supply Chain Management är beroende av data som hämtas från programmet. Motorer som ansluter till externa system inkluderas inte i Operations. Med den motorbaserade utvidgningsmodellen kan du dock bygga tillägg med hjälp av Visual Studio Tools. |
 
 ## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Hur kan jag konfigurera metadata för en transportledningsmotor?
 Metadata för transporthanteringsmotorer konfigureras olika för olika typer av motorer.
@@ -99,8 +99,3 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | 3        | Destination – från postnummer | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 4        | Destination – till postnummer   | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 5        | Destinationsland           | Uppdrag | Sträng    | Land/region |           |
-
-
-
-
-

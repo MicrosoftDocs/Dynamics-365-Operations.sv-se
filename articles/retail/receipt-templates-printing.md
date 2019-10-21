@@ -1,6 +1,6 @@
 ---
 title: Ställ in och designa inleveransformat
-description: Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. Microsoft Dynamics 365 for Retail inkludera finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
+description: Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. Dynamics 365 Retail inkludera finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 13249e1b109586b2c520a1be30c47ac4393abe49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: eb85752b53d0d48f07bfed9423637cb6c646ab61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553078"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025135"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Ställ in och designa inleveransformat
 
 [!include [banner](includes/banner.md)]
 
-Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. Microsoft Dynamics 365 for Retail inkludera finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
+Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. Dynamics 365 Retail finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
 
 > [!IMPORTANT]
 > Du måste ställa in formulärlayouter och kvittoprofiler om du vill skriva ut kvitton och andra dokument från Retail Modern POS och Cloud POS. Du kan inkludera flera formulärlayouter i en kvittoprofil. Du kan sedan tilldela mottagandet profil till en skrivare genom att modifiera hårdvara profil.
@@ -55,7 +55,7 @@ Använd den grafiska layoutdesignern för att grafiskt skapa layouten för formu
 2. På **kvittot format** väljer du en form layout och klicka sedan **Designer**.
 3. Klicka på **Kör** för att starta installationen av Retail designer värd.
 4. Om anmälan bar som visas längst ner i Internet Explorer klicka på **Öppna** att starta installationen av etta-klickar designer. (Meddelandefältet kan visas på en annan plats i andra webbläsare.) Förloppsindikatorn visar förloppet för installationen.
-5. När installationen är klar, skriv din Dynamics 365 for Retail användarnamn och lösenord och klicka sedan på **Logga in** för att starta designer.
+5. När installationen är klar, skriv ditt Retail användarnamn och lösenord och klicka sedan på **Logga in** för att starta designer.
 6. Efter dina inloggningsuppgifter är validerade och designern börjar, du kan börja utforma mottagandet format eller ändra ett befintligt format.
 7. För att skapa delar av formuläret, välj **sidhuvud**, **linjerna**, eller **sidfotssektion** och sedan dra ett element från den delen av arbetsytan. De flesta element innehåller variabler som fylls automatiskt med data från databasen. Andra element, till exempel **Text**, kan du skriva ut egen text på kvittot.
 
