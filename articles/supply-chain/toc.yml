@@ -42,6 +42,8 @@
               items:
                 - name: Distribueringsalternativ
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Jämförelse mellan funktioner i molnet och lokalt
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Molndistribution
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemkrav för molndistributioner
@@ -50,7 +52,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemkrav för lokala distributioner
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Köp Finance + Operations (lokal)
+                - name: Köp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera lagerhållning för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Nyheter och ändringar
               items:
-                - name: Nyheter och ändringar – startsida
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Förhandsgranska funktioner i Finance and Operations‑appar version 10.0.6 (november 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations‑appar version 10.0.5 (oktober 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations 10.0.4 (juli 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, Enterprise edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Förhandsgranskningsfunktioner i Supply Chain Management version 10.0.7 (2019)
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management 10.0.6 (November 2019)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: Nyheter och ändringar i tidigare versioner
+                  items:
+                    - name: Nyheter och ändringar på hemsidan för Finance and Operations
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations‑appar version 10.0.5 (oktober 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Finance and Operations 10.0.4 (juli 2019)
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, Enterprise edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Borttagna och utfasade funktioner
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: AX 2012-funktioner som har senarelagts
@@ -1687,8 +1693,6 @@
                       href: production-control/register-material-consumption-hand-held-device.md
                     - name: Styr råmaterialförbrukning med avräkningsprinciper
                       href: production-control/flushing-principles.md
-                    - name: Direktleverans från produktionsorder till utlastningsplatser
-                      href: production-control/cross-docking-opportunities.md
                     - name: Ställ in produktionsutleveransplats för färdiga varor
                       href: production-control/production-output-location.md
                     - name: Rapportera strukturlistor som slutförda
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: Uppskjuten bearbetning av lagerhållningsarbete
                   href: warehousing/deferred-put.md
+            - name: Direktleverans
+              items:
+                - name: Direktleverans från produktionsorder till utlastningsplatser
+                  href: production-control/cross-docking-opportunities.md
+                - name: Automatisk frisläppning av direktleverans
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: Delvis frisläppning och delleverans
               items:
                 - name: Delleverans av en transportlast
@@ -2311,6 +2321,8 @@
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                 - name: Skapa omallokering av artiklar för kort plockning
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                - name: Avbryt lagerarbete för undantagshantering
+                  href: warehousing/cancel-warehouse-work.md
             - name: Lagerinventering
               items:
                 - name: Orsakskoder för lagerinventering

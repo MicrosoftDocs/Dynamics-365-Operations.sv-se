@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ff513d2e2d2968e531e4515c45abdc470b384123
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184104"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570343"
 ---
 # <a name="revenue-recognition-setup"></a>Inställning för intäktsredovisning
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 En ny modul för **intäktsredovisning** har lagts till, inklusive menyartiklar för alla inställningar som krävs. I det här avsnittet beskrivs inställningsalternativen och deras konsekvenser.
+
+> [!NOTE]
+> Intäktsredovisningsfunktionen kan inte slås på via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att slå på den.
 
 Modulen för **intäktsredovisning** har följande inställningsalternativ:
 
