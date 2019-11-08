@@ -3,7 +3,7 @@ title: Arbetsorder och anläggningstillgångar
 description: Det här avsnittet innehåller förklaringar av arbetsorder och anläggningstillgångar i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,53 +16,52 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c87a2b94692e279a9c2f35dc38ac87bfd9bf7d27
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250839"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626234"
 ---
-# <a name="work-orders-and-fixed-assets"></a><span data-ttu-id="dd230-103">Arbetsorder och anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="dd230-103">Work orders and fixed assets</span></span>
-
+# <a name="work-orders-and-fixed-assets"></a><span data-ttu-id="daa36-103">Arbetsorder och anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="daa36-103">Work orders and fixed assets</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-
-<span data-ttu-id="dd230-104">I Tillgångshantering kan tillgångar relateras till anläggningstillgångar och du kan skapa arbetsorder för dessa tillgångar.</span><span class="sxs-lookup"><span data-stu-id="dd230-104">In Asset Management, assets can be related to fixed assets, and you can create work orders for those assets.</span></span> <span data-ttu-id="dd230-105">Om du använder den här funktionen kan du få en fullständig översikt över anläggningstillgångar, relaterade investeringsprojekt och de kostnader som registrerats för investeringsprojekt i modulen **Projekthantering och redovisning** och modulen **Anläggningstillgångar**.</span><span class="sxs-lookup"><span data-stu-id="dd230-105">If you use this functionality, you can get a complete overview of fixed assets, related investment projects, and the costs registered on the investment projects in the **Project management and accounting** module and the **Fixed assets** module.</span></span>
+<span data-ttu-id="daa36-104">I Tillgångshantering kan tillgångar relateras till anläggningstillgångar och du kan skapa arbetsorder för dessa tillgångar.</span><span class="sxs-lookup"><span data-stu-id="daa36-104">In Asset Management, assets can be related to fixed assets, and you can create work orders for those assets.</span></span> <span data-ttu-id="daa36-105">Om du använder den här funktionen kan du få en fullständig översikt över anläggningstillgångar, relaterade investeringsprojekt och de kostnader som registrerats för investeringsprojekt i modulen **Projekthantering och redovisning** och moduler i **Anläggningstillgångar** i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="daa36-105">If you use this functionality, you can get a complete overview of fixed assets, related investment projects, and the costs that are registered on the investment projects in the **Project management and accounting** and **Fixed assets** modules in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="dd230-106">Fältet **Anläggningstillgångsnummer** fylls bara i på arbetsorderns jobbprojekt om typen "investering" väljs som projekttyp för arbetsorders jobbprojekt.</span><span class="sxs-lookup"><span data-stu-id="dd230-106">The **Fixed asset number** field is only filled out on the work order job project if type "Investment" is selected as the project type on the work order job project.</span></span>
+><span data-ttu-id="daa36-106">Fältet **Anläggningstillgångsnummer** på arbetsorderns jobbprojekt anges endast om **investering** väljs som projekttyp för arbetsorders jobbprojekt.</span><span class="sxs-lookup"><span data-stu-id="daa36-106">The **Fixed asset number** field on the work order job project is set only if **Investment** is selected as the project type on the work order job project.</span></span>
+
+<span data-ttu-id="daa36-107">I bilden nedan visas relationen mellan ett investeringsprojekt i **projektlednings- och redovisningsmodulen** och ett jobbprojekt för arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="daa36-107">The illustration below shows the relation between an investment project in the **Project management and accounting** module and a work order job project.</span></span>
 
 ![Figur 1](media/24-work-orders.png)
 
-<span data-ttu-id="dd230-108">Följande procedur beskriver relationen mellan tillgångar, arbetsorder, jobbprojekt för arbetsorder och anläggningstillgångar.</span><span class="sxs-lookup"><span data-stu-id="dd230-108">The following procedure describes the relation between assets, work orders, work order job projects, and fixed assets.</span></span>
+<span data-ttu-id="daa36-109">Följande procedur beskriver relationen mellan tillgångar, arbetsorder, jobbprojekt för arbetsorder och anläggningstillgångar.</span><span class="sxs-lookup"><span data-stu-id="daa36-109">The following procedure describes the relation between assets, work orders, work order job projects, and fixed assets.</span></span>
 
-1. <span data-ttu-id="dd230-109">Du skapar en tillgång som du kopplar till en anläggningstill gång, som du ser i bilden nedan.</span><span class="sxs-lookup"><span data-stu-id="dd230-109">You create an asset that you relate to a fixed asset, as shown in the figure below.</span></span>
+1. <span data-ttu-id="daa36-110">Du skapar en tillgång som du kopplar till en anläggningstillgång.</span><span class="sxs-lookup"><span data-stu-id="daa36-110">You create an asset that you relate to a fixed asset.</span></span>
 
 ![Figur 2](media/25-work-orders.png)
 
-2. <span data-ttu-id="dd230-111">När du ställer in arbetsordertyper (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper**) skapar du en arbetsordertyp för hantering av investeringar.</span><span class="sxs-lookup"><span data-stu-id="dd230-111">When you set up work order types (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments.</span></span> <span data-ttu-id="dd230-112">Se även [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).</span><span class="sxs-lookup"><span data-stu-id="dd230-112">See also [Work order types](../setup-for-work-orders/work-order-types.md).</span></span>
+2. <span data-ttu-id="daa36-112">När du ställer in arbetsordertyper på sidan **Arbetsorderordertyper** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Arbetsordertyper**) skapar du en arbetsordertyp för hantering av investeringar.</span><span class="sxs-lookup"><span data-stu-id="daa36-112">When you set up work order types on the **Work order types** page (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments.</span></span> <span data-ttu-id="daa36-113">Se även [Arbetsordertyper](../setup-for-work-orders/work-order-types.md).</span><span class="sxs-lookup"><span data-stu-id="daa36-113">See also [Work order types](../setup-for-work-orders/work-order-types.md).</span></span>
 
 ![Figur 3](media/26-work-orders.png)
 
-3. <span data-ttu-id="dd230-114">När du ställer in projektgrupper för arbetsorder (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Projektinställning** > **Projektgrupp**-länk), skapas en relation mellan arbetsordertypen som används för investeringar och projektetgruppen som skapas för investeringar i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Inställningar** > **Bokför** > **Projektgrupper**).</span><span class="sxs-lookup"><span data-stu-id="dd230-114">When you set up work order project groups (**Asset management** > **Setup** > **Work orders** > **Project setup** > **Project group** link), you create a relation between the work order type used for investments and the project group created for investments in the **Project management and accounting** module (**Project management and accounting** > **Setup** > **Posting** > **Project groups**).</span></span>
+3. <span data-ttu-id="daa36-115">När du ställer in projektgrupper för arbetsorder i fliken **Projektgrupp** på sidan **Projektinställningar för arbetsorder** (**Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Projktinställningar**) skapas en relation mellan arbetsordertypen som används för investeringar och projektgruppen som skapas för investeringar på sidan **Projektgrupper** i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Inställningar** > **Bokföring** > **Projektgrupper**).</span><span class="sxs-lookup"><span data-stu-id="daa36-115">When you set up work order project groups on the **Project group** tab of the **Work order project setup** page (**Asset management** > **Setup** > **Work orders** > **Project setup**), you create a relation between the work order type that is used for investments and the project group that was created for investments on the **Project groups** page in the **Project management and accounting** module (**Project management and accounting** > **Setup** > **Posting** > **Project groups**).</span></span>
 
 ![Figur 4](media/27-work-orders.png)
 
-4. <span data-ttu-id="dd230-116">När du skapar en arbetsorder som hör till ett anläggningstillgångsobjekt väljer du den arbetsordertyp som används för att hantera investeringar, t. ex. "investeringar".</span><span class="sxs-lookup"><span data-stu-id="dd230-116">When you create a work order that relates to a fixed asset object, you select the work order type used for handling investments, for example, "Investment".</span></span>
+4. <span data-ttu-id="daa36-117">När du skapar en arbetsorder som är relaterad till en anläggningstillgång väljer du den arbetsordertyp som brukar användas för att hantera investeringar, t.ex. **investeringar**.</span><span class="sxs-lookup"><span data-stu-id="daa36-117">When you create a work order that is related to a fixed asset, you select the work order type that is used to handle investments, such as **Investment**.</span></span>
 
-5. <span data-ttu-id="dd230-117">När arbetsordern skapas visas den relaterade arbetsordertypen i **Alla arbetsorder.**</span><span class="sxs-lookup"><span data-stu-id="dd230-117">When the work order is created, the related work order type is shown in **All work orders**.</span></span>
+5. <span data-ttu-id="daa36-118">När arbetsordern skapas visas den relaterade arbetsordertypen på sidan **Alla arbetsorder.**</span><span class="sxs-lookup"><span data-stu-id="daa36-118">When the work order is created, the related work order type is shown on the **All work orders** page.</span></span>
 
 ![Figur 5](media/28-work-orders.png)
 
-6. <span data-ttu-id="dd230-119">När arbetsordern skapas, skapas projektet som hör till arbetsordern i **Projekthantering och redovisning** > **Alla projekt**.</span><span class="sxs-lookup"><span data-stu-id="dd230-119">When the work order is created, the project related to the work order is created in **Project management and accounting** > **All projects**.</span></span> <span data-ttu-id="dd230-120">Du kan se projektrelaterad information genom att klicka på **Projekt-ID**-länken på arbetsordern (i **Tillgångshantering**, öppna arbetsordern i informationsvyn > snabbfliken **Radinformation** > fliken **Allmänt**  > fältet **Projekt-ID**).</span><span class="sxs-lookup"><span data-stu-id="dd230-120">You can see project-related information by clicking the **Project ID** link on the work order (in **Asset management**, open the work order in Details view > **Line details** FastTab > **General** tab > **Project ID** field).</span></span>
+6. <span data-ttu-id="daa36-120">När arbetsordern skapas kommer projektet som är relaterat till arbetsordern på sidan **Alla projekt** skapas i modulen **Projekthantering och redovisning** (**Projekthantering och redovisning** > **Projekt** > **Alla projekt**).</span><span class="sxs-lookup"><span data-stu-id="daa36-120">When the work order is created, the project that is related to the work order is created on the **All projects** page in the **Project management and accounting** module (**Project management and accounting** > **Projects** > **All projects**).</span></span> <span data-ttu-id="daa36-121">För att visa projektrelaterad information, välj länken i fältet **Projekt-ID** på fliken **Allmänt** på snabbfliken **Raddetaljer** i detaljvyn för sidan **Alla arbetsorder** i modulen **Tillgångshantering** (**Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder**).</span><span class="sxs-lookup"><span data-stu-id="daa36-121">To view project-related information, select the link in the **Project ID** field on the **General** tab on the **Line details** FastTab in the details view of the **All work orders** page in the **Asset management** module (**Asset management** > **Commom** > **Work orders** > **All work orders**).</span></span>
 
 ![Figur 6](media/29-work-orders.png)
 
-7. <span data-ttu-id="dd230-122">I **Anläggningstillgångar** visas en översikt över de projekt som är kopplade till en anläggningstillgång (**Anläggningstillgångar** > **Anläggningstillgångar** > **Anläggningstillgångar** > klicka på anläggningstillgången i fältet **Anläggningstillgångens nummer** > visa innehållet i fönstret **Relaterad information** > avsnittet **Associerade projekt**).</span><span class="sxs-lookup"><span data-stu-id="dd230-122">In **Fixed assets**, you are able to see an overview of the projects associated with a fixed asset (**Fixed assets** > **Fixed assets** > **Fixed assets** > click on the fixed asset in the **Fixed asset number** field > view the contents in the **Related information** pane > **Associated projects** section).</span></span>
+7. <span data-ttu-id="daa36-123">Om du vill visa en översikt över de projekt som är kopplade till en anläggningstillgång **anläggningstillgångar** > **anläggningstillgångar** > **anläggningstillgångar** och sedan i fältet **anläggningstillgångsnummer**, välj länken för anläggningstillgången för att öppna detaljvyn.</span><span class="sxs-lookup"><span data-stu-id="daa36-123">To see an overview of the projects associated with a fixed asset, select **Fixed assets** > **Fixed assets** > **Fixed assets**, and then, in the **Fixed asset number** field, select the link for the fixed asset to open the details view.</span></span> <span data-ttu-id="daa36-124">Expandera fönstret **relaterad information** till höger på sidan och välj snabbfliken **associerade projekt**.</span><span class="sxs-lookup"><span data-stu-id="daa36-124">Expand the **Related information** pane on the right side of the page, and select the **Associated projects** FastTab.</span></span>
 
