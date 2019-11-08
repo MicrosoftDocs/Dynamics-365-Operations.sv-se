@@ -17,18 +17,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 33e5993f57a8c0248ac2e314f91cc40a2b355858
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249435"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653474"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobil arbetsyta för inköpsordergodkännande
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Detta avsnitt innehåller information om den mobila arbetsytan **Godkännande av inköpsorder**. På den här arbetsytan kan du visa inköpsorder och reagera på dem genom att utföra åtgärder. Du kan exempelvis godkänna eller avvisa en inköpsorder.
  
@@ -41,7 +39,7 @@ Med hjälp av den mobila arbetsytan **Godkännande av inköpsorder** kan du lät
 Förutsättningarna varierar beroende på vilken version av Supply Chain Management som har distribuerats inom organisationen.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Förutsättningar om du använder Supply Chain Management 
-Om Finance and Operations används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Godkännande av inköpsorder**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Om Supply Chain Management används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Godkännande av inköpsorder**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdateringen 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 

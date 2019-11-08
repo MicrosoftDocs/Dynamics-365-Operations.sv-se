@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 82f65293679591f278e0e3b79c112ba36debc3bb
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: da737cedfcd678a835e85a2b82a05394d771f8cc
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2277953"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652274"
 ---
 # <a name="calculate-capacity-load"></a>Beräkna kapacitetsbeläggning
 
 [!include [banner](../../includes/banner.md)]
 
 
-I Tillgångshantering kan du beräkna kapacitetsbeläggningen på
+I Tillgångshantering kan du beräkna kapacitetsbeläggningen på:
 
 - rader för underhållsschema  
 - arbetsorder som ännu inte har planerats  
@@ -46,15 +46,17 @@ Detta är användbart om du vill få en översikt över förväntad kapacitetsbe
 
 4. Välj "Ja" på växlingsknappen **Inkludera arbetsorder** om du vill inkludera arbetsorderjobb i beräkningen.
 
-5. Du kan använda fältet **Nivå** för att indikera hur detaljerad beräkningen av kapacitetsbeläggningsrader ska vara gällande funktionsplatser. Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla underhållsschemarader och arbetsorder för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla underhållsschemarader och alla arbetsorder på de funktionsplatsnivåer som de är relaterade till.
+5. Du kan använda fältet **Nivå** för att indikera hur detaljerad beräkningen av kapacitetsbeläggningsrader ska vara gällande funktionsplatser. 
+
+    Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla underhållsschemarader och arbetsorder för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. 
+    
+    Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla underhållsschemarader och alla arbetsorder på de funktionsplatsnivåer som de är relaterade till.
 
 6. Klicka på **OK** för att starta beräkningen.
 
-7. I **Gruppera efter...**-åtgärdsfönstergrupper klickar du på de relevanta knapparna för att visa den obligatoriska detaljnivån för beräkningen. De valda knapparna för åtgärdsfönstergrupper markeras i blått. Klicka på en knapp för att aktivera och inaktivera den.
+7. I **Gruppera efter...**-grupper klickar du på de relevanta knapparna för att visa den obligatoriska detaljnivån för beräkningen. I bildrutan nedan markeras de valda knapparna **Gruppera efter** med blå färg. Klicka på en knapp för att aktivera och inaktivera den.
 
-Bilden nedan visar en ett exempel på gränssnittet.
-
-![Figur 1](media/01-capacity-planning.png)
+    ![Figur 1](media/01-capacity-planning.png)
 
 >[!NOTE]
 >Om du bara vill fokusera på kapacitetsplanering för schemalagda arbetsorder läser du i [Beräkna kapacitetsbeläggning på schemalagda arbetsorder](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).

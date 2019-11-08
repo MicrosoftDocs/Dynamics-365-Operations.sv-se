@@ -1,6 +1,6 @@
 ---
 title: Aktivera fördröjd momsberäkning i journal
-description: Det här avsnittet innehåller information om hur du använder funktionen **Aktivera fördröjd momsberäkning i journal** för att förbättra momsberäkningsresultatet när volymen för journalrader är mycket stor.
+description: Det här ämnet förklarar hur du aktiverar funktionen Fördröjd momsberäkning för att förbättra resultat för momsberäkningar när antalet journalrader är mycket stort.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179928"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623531"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a>Aktivera fördröjd momsberäkning i journal
+# <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivera fördröjd momsberäkning i journal
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Det här avsnittet innehåller information om hur du använder funktionen **Aktivera fördröjd momsberäkning i journal** för att förbättra momsberäkningsresultatet när volymen för journalrader är mycket stor.
+I det här avsnittet beskrivs hur du kan fördröja momsberäkning för journaler. Den här funktionen ger bättre prestanda vid momsberäkningar när det finns många journalrader.
 
-Aktuellt momsberäkningsbeteende i journalen aktiveras realtid när en användare uppdaterar fält som är relaterade till moms, t.ex. momsgrupp eller artikelmomsgrupp. Alla uppdateringar på journalradnivå kommer att omberäkna skattebelopp på alla journalrader. Den hjälper användaren att visa det beräknade momsbeloppet i realtid, men det kan också leda till prestandaproblem om volymen på journalraderna är mycket stor.
+Som standard beräknas momsbelopp på journalrader när momsrelaterade fält uppdateras. Dessa fält inkluderar fält för momsgrupper och artikelmomsgrupper. Alla uppdateringar av en journalrad gör att momsbeloppen räknas om för alla journalrader. Även om beteendet hjälper användare att se momsbelopp som beräknats i realtid, kan det också påverka prestandan om antalet journalrader är mycket stort.
 
-Den här funktionen är ett alternativ till att fördröja momsberäkningen för att lösa prestandaproblem. Om den här funktionen är aktiverad kommer momsbeloppet endast att beräknas när användaren klickar på kommandot "moms" eller bokför journalen.
+Med funktionen för fördröjd momsberäkning kan du fördröja momsberäkningen för journaler och därmed lösa prestandaproblem. Om den här funktionen är aktiverad kommer beloppen endast att beräknas när användaren klickar på **Moms** eller bokför journalen.
 
-Användaren kan aktivera/inaktivera parametern på tre nivåer:
-- Efter juridisk person
-- Per journalnamn
-- Per journalrubrik
+Du kan fördröja beräkningen av moms på tre nivåer:
 
-Systemet kommer att ta parametervärdet för journalrubriken som slutgiltigt. Parametervärde i journalrubriken hämtas som standard från journalnamnet. Journal namnets parametervärde visas som standard från redovisningsparametern när journalnamnet skapas.
+- Juridisk person
+- Journalnamn
+- Journalrubrik
 
-Fälten "faktiskt momsbelopp" och "beräknat momsbelopp" för journalen döljs om den här parametern aktiveras. Syftet är inte att förväxla användaren eftersom värdet i dessa två fält alltid kommer att visa 0 innan en användare utlöser momsberäkningen.
+Systemet ger företräde åt inställningen för journalrubriken. Som standard hämtas den här inställningen från journalnamnet. Som standard hämtas inställningen för journalnamn från inställningen på sidan **redovisningsparametrar** när journalnamnet skapas. I följande avsnitt beskrivs hur du aktiverar fördröjd momsberäkning för juridiska personer, journalnamn och journalrubriker.
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a>Aktivera fördröjd momsberäkning per juridisk person
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a>Aktivera fördröjd momsberäkning på nivån juridisk person
 
-1. Gå till **Redovisning > Redovisningsinställning > Redovisningsparametrar**.
-2. Klicka på **Moms**.
-3. Under snabbfliken **allmän** hittar du parameter **fördröjd momsberäkning**, aktivera/inaktivera den
+1. Gå till **Redovisning \> Redovisningsinställning \> Allmänna redovisningsparametrar**.
+2. På fliken **Moms** på snabbfliken **Allmänt**, ange alternativet **"fördröjd momsberäkning** som **Ja**.
 
-![](media/delayed-tax-calculation-gl.png)
+![Bild på allmänna huvudboksparametrar](media/delayed-tax-calculation-gl.png)
 
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Aktivera fördröjd momsberäkning på nivån journalnamn
 
+1. Gå till **Redovisning \> Journalkonfiguration \> Journalnamn**.
+2. På snabbfliken **Allmänt** i avsnittet **Moms** anger du alternativet **fördröjd momsberäkning** till **Ja**.
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a>Aktivera fördröjd momsberäkning per journalnamn
+![Bild på journalnamn](media/delayed-tax-calculation-journal-name.png)
 
-1. Gå till **Redovisning > Journalkonfigurering > Journalnamn**.
-2. Under snabbfliken **allmän** hittar du parameter **fördröjd momsberäkning**, aktivera/inaktivera den
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Aktivera fördröjd momsberäkning på nivån journalrubrik
 
-![](media/delayed-tax-calculation-journal-name.png)
-
-## <a name="enable-delayed-tax-calculation-by-journal"></a>Aktivera fördröjd momsberäkning per journal
-
-1. Gå till **Redovisning > Journalposter > Allmänna journaler**.
-2. Klicka på **Ny**.
+1. Gå till **Redovisning \> Journalposter \> Allmänna journaler**.
+2. Välj **Ny**.
 3. Välj ett journalnamn.
-4. Klicka på **Inställningar**.
-5. Hitta parameter **fördröjd momsberäkning**, aktivera/inaktivera den
+4. På fliken **inställningar** ställer du in alternativet **fördröjd momsberäkning** till **ja**.
 
-![](media/delayed-tax-calculation-journal-header.png)
+![Bild på allmän journalsida](media/delayed-tax-calculation-journal-header.png)

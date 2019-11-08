@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f8e0e98cf1a953355515f9145483aed8cbaa2ad2
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249504"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653658"
 ---
 # <a name="product-configuration-overview"></a>Produktkonfiguration – översikt
 
@@ -73,7 +73,7 @@ Registerbegränsningar kan vara antingen användardefinierade eller systemdefini
 
 En användardefinierad tabell begränsning är byggd av användaren. Användaren väljer en kombination av attribut som representerar tabellens kolumner och sedan in värdena från domäner på valt attribut typer att bilda rader i tabellen.  
 
-En systemdefinierad tabellbegränsning definieras genom att välja som -tabell som ska användas som referens och sedan välja fält från tabellen att bilda kolumnerna i tvång. Raderna i tabellbegränsning är rader av inance and Operations-tabellen som finns vid konfigurering.  
+En systemdefinierad tabellbegränsning definieras genom att välja som -tabell som ska användas som referens och sedan välja fält från tabellen att bilda kolumnerna i tvång. Raderna i tabellbegränsning är rader av Supply Chain Management tabell som finns vid konfigurering.  
 
 En tabellbegränsning ingår i en produktkonfiguration modell genom att referera till tabellbegränsningsdefinitionen och mappa relevanta attribut i modellen till kolumnerna i tabellen.
 

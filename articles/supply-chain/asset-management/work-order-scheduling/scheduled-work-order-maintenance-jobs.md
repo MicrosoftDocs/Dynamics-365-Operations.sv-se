@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b3cc32d6ff263967c1ee843702c28968219ac33
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: d9f1cd6d22fd17505c3a4ece8a881629b00694d2
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887192"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652090"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Schemalagda underhållsjobb för arbetsorder
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Sidan **Schemalagda arbetsorder för underhållsjobb** används för att få en översikt över de arbetsorder som har tilldelats till en resurs. Arbetsorder med resurstyper "Personal", "Verktyg" och "Maskin" visas i listan. Listan kan användas för att få en översikt över arbetsorder som har tilldelats en viss resurs. Du kan också använda den för att snabbt hitta en arbetsorder som har tilldelats en underhållsarbetare som t.ex. sjukanmälde sig den här morgonen och sedan snabbt allokera en annan underhållsarbetare till jobbet.
+Sidan **Schemalagda arbetsorder för underhållsjobb** visar en översikt över de arbetsorder som har tilldelats till en resurs. Arbetsorder med resurstyper "Personal", "Verktyg" och "Maskin" visas. Om till exempel en underhållsarbetare sjukanmäler sig kan du använda den här sidan för att snabbt hitta arbetsorder som tilldelats arbetaren och sedan tilldela en annan underhållsarbetare till jobbet.
 
 ## <a name="view-scheduled-work-order-maintenance-jobs"></a>Visa schemalagda arbetsorder för underhållsjobb
 
@@ -39,9 +39,9 @@ Sidan **Schemalagda arbetsorder för underhållsjobb** används för att få en 
 
 2. Du kan sortera listan, till exempel efter underhållsarbetare. Du kan också använda filtret om du vill begränsa listan till att visa arbetsorder som har allokerats till en viss resurs eller underhållsarbetare.
 
-3. Du kan se anteckningar på arbetsordern och vid behov lägga till nya anteckningar genom att välja arbetsorderjobbet i listan och klicka på **Anteckningar**.
+3. Du kan se anteckningar på arbetsordern och vid behov lägga till nya anteckningar genom att välja arbetsorderjobbet och klicka på **Anteckningar**.
 
-4. Om du vill allokera en underhållsarbetare till en arbetsorder väljer du arbetsordern i listan och klickar på **Arbetsorder**.
+4. Om du vill allokera en underhållsarbetare till en arbetsorder väljer du arbetsordern och klickar på **Arbetsorder**.
 
 5. Sidan **Arbetsorder** öppnas. Klicka **Skicka ut** för att tidsplanera arbetsordern till en viss underhållsarbetare.
 

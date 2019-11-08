@@ -3,7 +3,7 @@ title: Introduktion till arbetsorder
 description: Det här avsnittet innehåller en översikt över arbetsorder i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,61 +16,66 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9483c50a15fca566b1f5e089297795bbbe09c042
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: b8340d3f4fd98e02e372fd5ac68f1ae107819304
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875911"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626418"
 ---
 # <a name="introduction-to-work-orders"></a>Introduktion till arbetsorder
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Arbetsorder används för att hantera, ange nödvändig information för och registrera förbrukning för underhållsjobb. En arbetsorder kan innehålla ett eller flera arbetsorderjobb, och en eller flera till gångar kan kopplas till en arbetsorder. Varje arbetsorderrad definierar ett underhållsjobb som har tidsplanerats för till gången.
 
-Arbetsorder kan skapas automatiskt eller manuellt:
+Arbetsorder används för att hantera underhållsjobb, ange nödvändig information för dem och registrera förbrukning. Varje arbetsorder kan innehålla ett eller flera arbetsorderjobb, och en eller flera till gångar kan kopplas till varje en arbetsorder. Varje arbetsorderjobb definierar ett underhållsjobb som har tidsplanerats för till gången.
 
-- Automatiskt med hjälp av formuläret **Schemalägg underhållsplaner**, för kalenderbaserade underhållsplaner inställda på "Autoskapa".  
+Arbetsorder kan skapas på följande sätt:
 
-- Automatiskt med hjälp av formuläret **Schemalägg underhållsomgångar**, för underhållsomgångar inställda på "Autoskapa".  
+- För kalenderbaserade underhållsplaner där inställningen "Autoskapa" är aktiverad automatiskt med [Schemalägg underhållsplaner](../preventive-and-reactive-maintenance/schedule-maintenance-plans.md).
 
-- Skapa från underhållsschema, som kan vara förebyggande underhållsjobb eller underhållsbegäranden.  
+- För underhållsomgångar där inställningen "Autoskapa" är aktiverad automatiskt med [Schemalägg underhållsomgångar](../preventive-and-reactive-maintenance/maintenance-rounds.md).
 
-- Skapa en arbetsorder manuellt.  
+- För förebyggande underhållsjobb eller underhållsbegäranden, från [underhållsschema](../preventive-and-reactive-maintenance/maintenance-schedule.md).
 
-- Skapa en arbetsorder från **Alla underhållsbegäranden** eller **Aktiva underhållsbegäranden** eller **Mina underhållsbegäranden för funktionsplats**.
+- Manuellt
+
+- Från sidan **Alla underhållsbegäranden**, **Aktiva underhållsbegäranden** eller **Mina underhållsbegäranden för funktionsplats**.
 
 >[!NOTE]
 >Arbetsorderjobb relaterade till samma tillgång är relaterade till samma projekt-ID.
 
 ## <a name="all-work-orders"></a>Alla arbetsorder
 
-Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** för att öppna listan. **Alla arbetsorder** innehåller en lista över alla arbetsorder och visar en del av informationen som hör till en arbetsorder.
+Välj **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** för att öppna listsidan **Alla arbetsorder**. Den här sidan visar alla arbetsorder och en del av den information som är relaterad till varje.
+
+I bilden nedan visas ett exempel på listsidan **Alla arbetsorder**.
 
 ![Figur 1](media/01-work-orders.png)
 
-- Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Aktiva arbetsorder** för att visa en lista med aktiva arbetsorder.
+Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Aktiva arbetsorder** för att visa en lista med aktiva arbetsorder. 
 
-- Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Mina underhållsjobb för arbetsorder för funktionsplats** om du vill visa en lista med arbetsorderjobb som innehåller tillgångar som är installerade på funktionsplatser du är relaterad till som en arbetare (ställs in i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md)).
+Om du vill visa en lista med arbetsorderjobb som innehåller tillgångar som är installerade på funktionella platser som du är relaterad till som arbetare väljer du **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Mina underhållsjobb för arbetsorder för funktionsplats**. Relationen mellan arbetare och funktionella platser ställs in på sidan **arbetare**. Mer information finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
-- I listan **Alla arbetsorder** (rutnätsvy) klickar du på en länk i kolumnen **Arbetsorder** för att visa informationsvyn för den valda posten. Klicka på knappen **Redigera** om du vill öppna för redigering.  
+Här följer några exempel på hur du kan använd sidan **Alla arbetsorder**:
+
+- I rutnätsvyn, välj en länk i kolumnen **Arbetsorder** för att visa informationsvyn för den valda posten. Du kan sedan välja **redigera** om du vill öppna posten för redigering.
 
 - I informationsvyn visas detaljerad information som är relaterad till arbetsordern.  
 
-- I informationsvyn väljer du länken **Rader** om du vill se jobb information om arbetsorder eller välj länken **Sidhuvud** om du vill visa information om arbetsorder.  
+- I informationsvyn väljer du fliken **Rader** om du vill visa information om arbetsorderjobb eller välj fliken **Huvud** om du vill visa information om arbetsorder.  
 
-- Det lodräta fönstret **Relaterad information** till höger på skärmen innehåller ytterligare information som är relaterad till arbetsordern. Expandera fönstret om du vill visa relaterad information för den valda arbetsordern.  
+- Expandera fönstret **relaterad information** till höger på sidan om du vill visa mer information som är relaterad till den valda arbetsordern.
 
+I bilden nedan visas ett exempel på informationsvyn **Alla arbetsorder**.
 
 ![Figur 2](media/02-work-orders.png)
 
 
-Knapparna i åtgärdsfönstret är ordnade på flikar i åtgärdsfönstret. Här följer en kort beskrivning av knapparna för hantering av företagstillgångar:
+Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskrivs kortfattat knappar som är relaterade till tillgångshantering:
 
 
 
@@ -82,20 +87,20 @@ Knapparna i åtgärdsfönstret är ordnade på flikar i åtgärdsfönstret. Här
 | Arbetsorderpool                 | Lägg till den markerade arbetsordern i en arbetsorderpool eller ta bort från en arbetsorderpool.                                                                                                                                                                                           |
 | Justera                          | Justera information om förväntad start och slut, servicenivå, ansvarig underhållsarbetare eller ansvarig underhållsarbetargrupp på valda arbetsorder.                                                                                                                                     |
 | Relaterad arbetsorder              | Skapa en ny arbetsorder relaterad till det valda arbetsorderjobbet. Detta är användbart om du vill registrera primära och sekundära arbetsorder.                                                                                                                              |
-| Kopiera arbetsorder                 | Skapa en ny arbetsorder utifrån en befintlig arbetsorder.                                                                                                                                                                                                                |
-| Händelsehistorik                   | Se registreringshistorik för arbetsordern.                                                                                                                                                                                                                |
-| Anteckningar om underhållsjobb på arbetsorder                           | Skapa en beskrivning, eller infoga anteckningar eller kommentarer, på en arbetsorder. Börja med att klicka på knappen **Lägg till tidsstämpel** om du vill lägga till ditt användarnamn och en tidstämpel i anteckningen. Anteckningar visas i formuläret **Arbetsorder** > snabbfliken **Radinformation** > fliken **Beskrivning**. |
-| Verktyg                           | Skapa en lista med verktyg som krävs för en arbetsorder. Verktyg är inställda som resurser i **Organisationsadministration** > **Allmänt** > **Resurser** > **Resurser**.                                                                                                      |
+| Kopiera arbetsorder                 | Skapa en ny arbetsorder utifrån en befintlig arbetsorder.                                                                                                                                                                                                               |
+| Händelsehistorik                   | Visa registreringshistoriken för arbetsordern.                                                                                                                                                                                                                |
+| Anteckningar om underhållsjobb på arbetsorder                           | Skapa en beskrivning för en arbetsorder eller infoga anteckningar eller kommentarer om den. Välj först **Lägg till tidsstämpel** om du vill lägga till ditt användarnamn och en tidstämpel i anteckningen. Noteringar visas på fliken **Beskrivning** på snabbfliken **radinformation** på sidan **arbetsorder**.         |
+| Verktyg                           | Skapa en lista med verktyg som krävs för en arbetsorder. Verktyg är inställda som resurser i **Organisationsadministration** > **Resurser** > **Resurser**.                                                                                                      |
 | Underhållschecklista           | Visa checklista för den till gång som är kopplad till arbetsordern.                                                                                                                                                                                                              |
-| Tillgångsfel                     | Visa eller registrera felinformation om en tillgång som ska användas för felhantering.                                                                                                                                                                                        |
+| Tillgångsfel                     | Visa eller registrera felinformation för en tillgång. Denna information används för felhantering.                                                                                                                                                                                      |
 | Underhållsstopp            | Ange underhållsstopp för en arbetsorder.                                                                                                                                                                                                                               |
 | Villkorsutvärdering            | Registrera tillståndsbedömningsmått på en arbetsorder.                                                                                                                                                                                                             |
 | Tillgångsräknare                 | Skapa eller visa räknarregistreringar för tillgången.                                                                                                                                                                                                                     |
 | Prognos                        | Visa eller skapa prognoser för en arbetsorder.                                                                                                                                                                                                                               |
 | Journaler                        | Visa eller skapa arbetsorderjournaler. Journalrader kan kopieras från prognoser.                                                                                                                                                                                         |
 | Projekttransaktioner            | Visa alla bokförda transaktioner som är relaterade till arbetsorder som skapats för tillgången.                                                                                                                                                                                             |
-| Uppdatera arbetsorderns tillstånd                | Uppdatera livscykeltillstånd för arbetsorder.                                                                                                                                                                                                                                                |
-| Logg för livscykeltillstånd                       | Logg som visar livscykeltillstånden för den valda arbetsordern.                                                                                                                                                                                                                   |
+| Uppdatera arbetsorderns tillstånd           | Uppdatera livscykeltillstånd för arbetsorder.                                                                                                                                                                                                                                                |
+| Logg för livscykeltillstånd                      | Visa en logg som visar livscykeltillstånden för den valda arbetsorder.                                                                                                                                                                                                                   |
 | Tillgångsdokument                | Visa en lista över dokument som är kopplade till tillgångar relaterade till en arbetsorder. Dessa dokument ställs in i **Tillgångshantering** > **Inställningar** > **Tillgångsdokument**.                                                                                                 |
 | Tidsplanera                        | Tidsplanera valda arbetsorder.                                                                                                                                                                                                                                      |
 | Skicka ut            | Tidsplanera den valda arbetsordern för en arbetare.                                                                                                                                                                                                                        |
@@ -109,8 +114,8 @@ Knapparna i åtgärdsfönstret är ordnade på flikar i åtgärdsfönstret. Här
 | Arbetsorderförbrukning          | Skriv ut förbrukningsrapport.                                                                                                                                                                                                                                               |
 
 
-Knapparna på fliken **Arbetsorder** > gruppen **Projekt** relaterar till funktionerna i modulen **Projekthantering och redovisning** beträffande prognoser, journaler och fakturering.
+Knapparna på fliken **Projekt** på fliken **Arbetsorder** i åtgärdsfönstret är relaterat till funktionaliteten för prognoser, tidskrifter och fakturering i modulen **Projekthantering och redovisning**.
 
 >[!NOTE]
->Prognoser som har skapats för en arbetsorder kan inkluderas när du kör huvudplaneringen genom att använda den prognosmodell som valts i formuläret **Parametrar för tillgångshantering**.
+>Om du vill inkludera prognoser som har skapats i en arbetsordning när du kör huvudplanering använder du den prognosmodell som är vald på sidan **Parametrar för tillgångshantering**.
 

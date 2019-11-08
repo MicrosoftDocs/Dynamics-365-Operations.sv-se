@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42631e8a5ac03eda65bf0f6ede03fa40a5ed2c4e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250770"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653543"
 ---
 # <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
@@ -49,11 +49,11 @@ Tre stora teman genomförs i behovsprognoser:
 
 -   **Modularitet** – Behovsprognoser är modulär och enkel att konfigurera. Du kan aktivera och avaktivera funktionen genom att ändra konfigurationen på **Handel** &gt; **Lagerprognos** &gt; **Efterfrågeprognosticering**.
 -   **Återanvändning av Microsoft-stapeln** – Microsoft lanserade plattformen för maskininlärning i februari 2015. Med maskininlärning, som nu ingår i Microsoft Cortana Analytics Suite, kan du snabbt och enkelt skapa försök förutsägbara analysexperiment, till exempel experiment för efterfrågeuppskattning, genom att använda R-algoritmer eller programmeringsspråket Python och ett enkelt gränssnitt för dra och släpp.
-    -   Du kan hämta behovsprognoser experiment, ändra dem för att uppfylla dina affärsbehov, publicerar dem som en webbtjänst på Azure, och använda dem för att skapa prognoser. Experimenten är tillgängliga för nedladdning om du har köpt en Finance and Operations-prenumeration för en produktionsplanerare som användare på företagsnivå.
-    -   Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos automatiskt integreras med Finance and Operations, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Experiment från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/) kan därför inte användas lika enkelt som experimenten för efterfrågeprognosticering för Finance and Operations. Du måste modifiera koden för experimenten så att de använder programmeringsgränssnittet (API) för Finance and Operations-program.
+    -   Du kan hämta behovsprognoser experiment, ändra dem för att uppfylla dina affärsbehov, publicerar dem som en webbtjänst på Azure, och använda dem för att skapa prognoser. Experimenten är tillgängliga för nedladdning om du har köpt en Supply Chain Management-prenumeration för en produktionsplanerare som användare på företagsnivå.
+    -   Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos automatiskt integreras med Supply Chain Management, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Experiment från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/) kan därför inte användas lika enkelt som experimenten för efterfrågeprognosticering för Finance and Operations. Du måste modifiera koden för experimenten så att de använder programmeringsgränssnittet (API) för Finance and Operations-program.
     -   Du kan skapar dina egna experiment i Microsoft Azure Machine Learning Studio, publicerar dem som tjänster på Azure, och använda dem för att skapa prognoser.
     -   Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. För mer information om maskinen lärande prissättning, se [Machine Learning Studio prissättning](https://aka.ms/machine-learning-price-info).
--   **Prognostiserad minskning vid någon frikoppling** – Efterfrågeprognosticering i Finance and Operations bygger på denna funktion, som låter dig prognosticera såväl beroende som oberoende behov hos någon frikoppling.
+-   **Prognostiserad minskning vid någon frikoppling** – Behovsprognoser bygger på denna funktionalitet, vilket låter dig prognosen både beroende och oberoende behov hos någon frikoppling.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Grundflöde i behovsprognoser
 Följande diagram visar grundflöde i behovsprognoser. 
@@ -64,7 +64,7 @@ Generering av efterfrågeprognos startar i Supply Chain Management. Historiska t
 
 Om du använder behovsprognoser Machine Learning experiment, de söker en bästa passning mellan fem tidsserier prognosmetoder för att beräkna en baslinje för prognosen. Parametrarna för dessa prognosticeringsmetoder hanteras i Supply Chain Management. 
 
-Prognoser, historiska data och alla eventuella ändringar som gjorts i efterfrågeprognoserna i föregående versioner finns sedan tillgängliga i Finance and Operations. 
+Prognoser, historiska data och alla eventuella ändringar som gjorts i efterfrågeprognoserna i föregående versioner finns sedan tillgängliga i Supply Chain Management. 
 
 Du kan använda Supply Chain Management för att visualisera och modifiera baslinjeprognoserna. Manuella justeringar måste attesteras innan de prognoser som kan användas för planering.
 

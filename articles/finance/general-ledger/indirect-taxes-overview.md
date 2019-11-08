@@ -3,7 +3,7 @@ title: Momsöversikt
 description: Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2741eb51f93f2f0b627dd8676629077b6df0f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186473"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666840"
 ---
 # <a name="sales-tax-overview"></a>Momsöversikt
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 
@@ -94,5 +92,8 @@ Du skulle normalt behöva betala in 2 500 till skattemyndigheten när fakturan 
 
 Om du emellertid använder villkorsmoms kvittar du med skattemyndigheten när du får betalningen från kunden den 30 juli.
 
+### <a name="postdated-check"></a>Efterdaterad check
+
+Om du använder den efterdaterade checken som betalningsmetod när betalningen skapas, töms inte bankkontot. I vissa länder blir momsen "realiserad" skuld när betalningen avmarkerar banken, vilket innebär att den efterdaterade checken kvittas. Du kan aktivera det genom att välja **realisera den villkorliga momsen när efterdaterade checkar hämtas** i **kontanter och bankhantering > inställningar > parametrar för kassa-och bankhantering > efterdaterade checkar**.
 
 Mer information finns i [Ställ in källskatt](tasks/set-up-withholding-tax.md).

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2cff84f8f6c42fd064258b8ca53e24acc8059977
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c17a0240c29dad58c958ab1ce844ee5d8384bd1f
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175632"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658939"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ställ in momskvittningsperioder
 
@@ -42,7 +42,7 @@ I den här uppgiften används demonstrationsföretaget USMF.
 9. Ange antalet periodintervallenheter per period. Till exempel har ett kvartal 3 månader.
 10. Markera eller avmarkera kryssrutan **Använd batchbearbetning för momskvittning**. Kvittningprocessen för kvittningsperioden kan behandlas som batchjobb i bakgrunden. Detta rekommenderas för ett stort antal momstransaktioner inom ett periodintervall.  
     > [!NOTE]
-    > För närvarande stöds detta inte i Österrike, Belgien, Spanien, Italien, Japan och Nederländerna.
+    > För närvarande stöds detta inte i Spanien, Japan och Nederländerna.
 11. Markera eller avmarkera kryssrutan **Förhindra att motbokade momstransaktioner genereras**. Som standard genereras motbokade momstransaktioner under kvittningsprocessen som kan orsaka prestandaproblem om det finns ett stort antal momstransaktioner inom ett periodintervall. Markera denna kryssruta för att förhindra att motbokade momstransaktioner genereras.
 12. Expandera fliken **Periodintervall**.
 13. Markera **Lägg till**.

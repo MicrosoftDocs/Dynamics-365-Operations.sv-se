@@ -3,7 +3,7 @@ title: Installationsguide för huvudplanering
 description: Det här ämnet beskriver olika viktiga strategier och parametrar som används för att ställa in huvudplaneringen.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 0310ac55d35421d8ad9080739fc5a393660ce520
-ms.sourcegitcommit: 261dc882710f29303b14f9be8a26d71d85d25345
+ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
+ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "1999544"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "2635136"
 ---
 # <a name="master-planning-setup-wizard"></a>Installationsguide för huvudplanering
 
 [!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en guide för **Installationsguide för huvudplanering**. Det förklarar hur parameterförslag beräknas och ger också exempel som visar hur olika företag ställer in huvudplanering, baserat på deras affärsbehov.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+
+[Inställningsguide för huvudplanering i Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (visas ovan) ingår i [Finance and Operations spellista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som finns tillgänglig på YouTube.
+
 
 ## <a name="specific-requirements-of-your-company"></a>Specifika krav för ditt företag
 

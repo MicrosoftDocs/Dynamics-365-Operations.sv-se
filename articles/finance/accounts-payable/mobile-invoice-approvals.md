@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 956c866a6b39e2a81f085910e00d2bfe8683829c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180040"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658654"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobila fakturagodkännanden
 
@@ -138,13 +138,19 @@ Som en allmän vägledning, när du arbetar med mobildesignern, se till att du "
 
 Den första mobilsidan som du bör utforma är en lista med fakturor som har tilldelats till användaren för granskning. Använd sidan **VendMobileInvoiceAssignedToMeListPage** när du designar den här mobilsidan. Innan du slutför den här proceduren, kontrollera att minst en leverantörsfaktura har tilldelats till dig för granskning, och att fakturaraden har två fördelningar. Den här inställningen uppfyller kraven i det här scenariot.
 
-1.  Ersätt menyalternativets namn i URL:en med **VendMobileInvoiceAssignedToMeListPage** för att öppna mobilversionen av listsidan **Pågående leverantörsfakturor som tilldelats mig** i modulen **Leverantörsreskontra**. Beroende på hur många fakturor som du har i systemet tilldelade till dig, visas dessa fakturor på den här sidan. Om du vill hitta en specifik faktura kan du använda filtret till vänster. Men i det här exemplet kräver vi inte en viss faktura. Vi behöver bara en faktura som tilldelats dig som gör att du kan utforma mobilsidan. De nya sidor som är tillgängliga har utformats specifikt för utveckling av mobila scenarier för leverantörsfakturan. Därför måste du använda dessa sidor. URL:en bör likna följande URL och när du har angett den måste sidan som visas i illustrationen visas: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Väntande leverantörsfakturor som har tilldelats mig](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  Ersätt menyalternativets namn i URL:en med **VendMobileInvoiceAssignedToMeListPage** för att öppna mobilversionen av listsidan **Pågående leverantörsfakturor som tilldelats mig** i modulen **Leverantörsreskontra**. Beroende på hur många fakturor som du har i systemet tilldelade till dig, visas dessa fakturor på den här sidan. Om du vill hitta en specifik faktura kan du använda filtret till vänster. Men i det här exemplet kräver vi inte en viss faktura. Vi behöver bara en faktura som tilldelats dig som gör att du kan utforma mobilsidan. De nya sidor som är tillgängliga har utformats specifikt för utveckling av mobila scenarier för leverantörsfakturan. Därför måste du använda dessa sidor. URL:en bör likna följande URL och när du har angett den måste sidan som visas i illustrationen visas: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
+
+    [![Sidan Pågående leverantörsfakturor tilldelade mig](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    
 2.  Klicka på knappen **Inställningar** (kugghjul) i det övre högra hörnet på sidan och klicka sedan på **Mobilapp**
 3.  Välj din arbetsyta och klicka på **Redigera**
 4.  Klicka på **Lägg till sida** för att skapa den första mobilsidan.
 5.  Ange ett namn, till exempel **Mina leverantörsfakturor**, och en beskrivning, till exempel **Leverantörsfakturor som tilldelats mig för granskning**.
 6.  Klicka på **Klart**.
-7.  I mobila designern, på fliken **Fält** klickar du på **Välj fält**. Kolumnerna på listsidan måste likna följande illustration. [![Kolumner på sidan Väntande leverantörsfakturor som har tilldelats mig](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+7.  I mobila designern, på fliken **Fält** klickar du på **Välj fält**. Kolumnerna på listsidan måste likna följande illustration. 
+
+    [![Kolumner på sidan Väntande leverantörsfakturor som har tilldelats mig](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    
 8.  Lägg till de kolumner som krävs från listsidan som måste visas för användare på mobilsidan. Den ordning som du lägger till i är den ordning i vilken fälten visas för slutanvändaren. Det enda sättet att ändra ordningen på fälten blir genom att välja alla fält igen. Utifrån kraven i det här scenariot krävs följande åtta fält. Men vissa användare kanske anser att åtta fält är för mycket information på en mobil enhet. Därför visar vi bara de viktigaste fälten i vyn med mobillistan. De återstående fälten visas i detaljvyn som vi utformar senare. Nu lägger vi till följande fält. Klicka på plustecknet (**+**) i dessa kolumner för att lägga till på mobilsidan.
     - Leverantörsnamn
     - Fakturatotal
@@ -152,8 +158,10 @@ Den första mobilsidan som du bör utforma är en lista med fakturor som har til
     - Fakturanummer
     - Fakturadatum
 
-    När fält läggs till måste mobilsidan likna följande illustration. 
-    [![Sidan när fält har lagts till](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+  När fält läggs till måste mobilsidan likna följande illustration. 
+    
+   [![Sidan när fält har lagts till](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+
 9.  Du måste även lägga till följande kolumner nu, så att vi kan aktivera arbetsflödesåtgärder senare.
     - Visa Slutför uppgift
     - Visa Delegera uppgift
@@ -169,16 +177,26 @@ Den första mobilsidan som du bör utforma är en lista med fakturor som har til
 
 ### <a name="vendor-invoice-details"></a>Detaljer om leverantörsfaktura
 
-Använd sidan **VendMobileInvoiceHeaderDetails** när du designar sidan med fakturadetaljer för mobil. Observera att beroende på antalet fakturor som du har i systemet visar den här sidan den äldsta fakturan (faktura som först skapades). Om du vill hitta en specifik faktura kan du använda filtret till vänster. Men i det här exemplet kräver vi inte en viss faktura. Vi behöver bara vissa fakturadata så att vi kan utforma mobilsidan. [![Sida för arbetsflöde](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+Använd sidan **VendMobileInvoiceHeaderDetails** när du designar sidan med fakturadetaljer för mobil. Observera att beroende på antalet fakturor som du har i systemet visar den här sidan den äldsta fakturan (faktura som först skapades). Om du vill hitta en specifik faktura kan du använda filtret till vänster. Men i det här exemplet kräver vi inte en viss faktura. Vi behöver bara vissa fakturadata så att vi kan utforma mobilsidan. 
+
+[![Sida för arbetsflöde](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. I URL:en ersätter du namnet på menyalternativet med **VendMobileInvoiceHeaderDetails** för att öppna formuläret
+
 2. Öppna mobildesignern med knappen **Inställningar** (kugghjul).
+
 3. Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan.
+
 4. Välj sidan **Mina leverantörsfakturor** som du skapade tidigare och klicka sedan på **Redigera**.
+
 5. På fliken **Fält** klickar du på kolumnrubriken **Rutnät**.
+
 6. Klicka på **Egenskaper &gt;Lägg till sida**. **Anmärkning:** När du klickar på rubriken **Rutnät** och lägger till en sida, etableras relationen med detaljsidan automatiskt.
+
 7. Ange en sidrubrik, till exempel **Fakturadetaljer**, och en beskrivning, till exempel **Visa fakturahuvud och raddetaljer**.
+
 8. Klicka på **Välj fält**. Observera att den ordning som du lägger till i är den ordning i vilken fälten visas för slutanvändaren. Det enda sättet att ändra ordningen på fälten blir genom att välja alla fält igen. 
+
 9. Lägg till följande fält från huvudet, baserat på förutsättningarna för det här scenariot:
    - Leverantörsnamn
    - Fakturatotal
@@ -197,9 +215,13 @@ Använd sidan **VendMobileInvoiceHeaderDetails** när du designar sidan med fakt
     - 1099-belopp
 
 11. När alla fält från de två föregående stegen har lagts till, klickar du på **Klart**. Sidan måste likna följande illustration.
+    
     [![Sidan när fält har lagts till](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+
 12. Klicka på **Klart** för att avsluta redigeringsläge.
+
 13. Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+
 14. Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
 ### <a name="workflow-actions"></a>Arbetsflödesåtgärder
@@ -295,12 +317,19 @@ För att lägga till arbetsflödesåtgärder, använd sidan **VendMobileInvoiceH
 ### <a name="vendor-invoice-attachments"></a>Leverantörsfakturabilagor
 
 1. Klicka på knappen **Inställningar** (kugghjul) i det övre högra hörnet på sidan och klicka sedan på **Mobilapp**
+
 2. Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan.
+
 3. Välj sidan <strong>Fakturadetaljer** som du skapade tidigare och klicka sedan på **Redigera</strong>.
+
 4. Ange alternativet **Dokumenthantering** till **Ja** enligt nedan. **Anmärkning:** Om det inte finns några inga krav på att visa bifogade filer på den mobila enheten kan du lämna detta alternativ inställt på **Nej**, vilket är standardinställningen.
+   
    ![Dokumenthantering](./media/docmanagement-216x300.png)
+
 5. Klicka på **Klart** för att avsluta redigeringsläge.
+
 6. Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+
 7. Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
 ### <a name="vendor-invoice-line-distributions"></a>Fördelningar av leverantörsfakturarader
@@ -311,12 +340,19 @@ Kraven i det här scenariot bekräftar att endast det endast ska finnas fördeln
 > Att känna till kraven hjälper oss att avgöra vilken sida som ska användas och hur exakt mobila upplevelsen ska optimeras för användaren när vi utformar scenariot. I det andra scenariot utnyttjas en annan sida för att visa fördelningar, eftersom kraven är olika krav för det scenariot.
 
 1.  Ersätt namnet på menyalternativet i URL-adressen precis som du gjorde tidigare. Sidan som visas bör likna illustrationen.
+
 [![Sida med alla distributioner](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+
 2.  Öppna mobildesignern med knappen **Inställningar** (kugghjul).
+
 3.  Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan. **Anmärkning:** Du ser att två nya sidor har skapats automatiskt. Dessa sidor skapas i systemet eftersom du aktiverade dokumenthantering i föregående avsnitt. Du kan ignorera dessa nya sidor.
+
 4.  Klicka på **Lägg till sida**.
+
 5.  Ange en sidrubrik som **Visa redovisning**, och en beskrivning, t.ex **Visa redovisning för fakturan**.
+
 6.  Klicka på **Klart**.
+
 7.  På fliken **Fält** klickar du på **Välj fält**. Välj följande fält från fördelningssidan och klicka sedan på **Klart**:
     1.  Belopp
     2.  Valuta
@@ -324,8 +360,11 @@ Kraven i det här scenariot bekräftar att endast det endast ska finnas fördeln
 
     > [!NOTE] 
     > Vi valde inte kolumnen **Beskrivning** i rutnätet för fördelningar, eftersom kraven i det här scenariot har bekräftat att det utökade priset är de enda belopp som det finns fördelningar för. Därför behöver användaren inte något ytterligare fält för att fastställa beloppstypen som fördelningen gäller. Men i nästa scenario **ska** vi använda den här informationen, kraven för det scenariot anger att andra beloppstyper har fördelningar (till exempel moms).
+
 8.  Klicka på **Klart** för att avsluta redigeringsläge.
+
 9.  Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+
 10. Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
 > [!NOTE] 

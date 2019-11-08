@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887238"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652159"
 ---
 # <a name="schedule-work-orders"></a>Schemalägg arbetsorder
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Det här avsnittet innehåller förklaringar av hur du tidsplanerar arbetsorder i Tillgångshantering. Det antal timmar som krävs för en arbetsorder definieras av summan av prognostiserade timmar för arbetsorderjobb minus bokförda timmar. Om det krävs mer tid måste prognosen på arbetsordern justeras i enlighet med detta. I **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder** kan du visa eller redigera prognoser för en arbetsorder genom att välja arbetsordern och klicka på **Prognos** på fliken **Arbetsorder**. När du har skapat och uppskattat en arbetsorder är nästa steg att fördela de underhållsarbetare och verktyg som krävs för att slutföra arbetsorderna.
+Det här avsnittet innehåller förklaringar av hur du tidsplanerar arbetsorder i Tillgångshantering. 
+
+Det antal timmar som krävs för en arbetsorder definieras av summan av prognostiserade timmar minus bokförda timmar. Om det krävs mer tid måste prognosen justeras i enlighet med detta. I **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder** kan du visa eller redigera prognoser för en arbetsorder genom att välja arbetsordern och klicka på **Prognos** på fliken **Arbetsorder**. När du har skapat och uppskattat en arbetsorder är nästa steg att fördela de underhållsarbetare och verktyg som krävs för att slutföra arbetsorderna.
 
 Endast arbetsorder med ett livscykeltillstånd för arbetsorder som tillåter planering kan tidsplaneras. Tillåt tidsplanering ställs in i **Tillgångshantering** > **Inställningar** > **Arbetsorder** > **Livscykeltillstånd** >  fliken **Allmänt** > växlingsknappen **Tillåt tidsplanering**.
 
@@ -43,8 +45,8 @@ Endast arbetsorder med ett livscykeltillstånd för arbetsorder som tillåter pl
 
 4. I dialogrutan **Schemalägg arbetsorder** kan du lägga till alternativ för förväntat startdatum och servicenivå, om det behövs. Om tids planeringsprocessen ska ta hänsyn till kapacitetsbegränsningar för resurser som redan har schemalagts för andra jobb, kontrollera att växlingsknapparna **Tillgång**, **Verktyg** och **Arbetare** är inställda på "Ja".
 
->[!NOTE]
->Om du ställer in växlingsknapparna **Tillgång**, **Verktyg** och **Arbetare** till "Nej" kommer befintliga reservationer att ignoreras. I informationsloggen visas en lista över överlappande arbetsorderscheman, och du kan klicka på meddelandena för att öppna en arbetsorder och omplanera om det behövs.
+    [!NOTE]
+    Om du ställer in växlingsknapparna **Tillgång**, **Verktyg** och **Arbetare** till "Nej" kommer befintliga reservationer att ignoreras. I informationsloggen visas en lista över överlappande arbetsorderscheman, och du kan klicka på meddelandena för att öppna en arbetsorder och omplanera om det behövs.
 
 5. Om du vill visa detaljerad information om tidsplaneringsprocessen väljer du "Ja"på växlingsknappen **Utförligt**. Det innebär att detaljerad information om de beräknade poängen på arbetsorder och underhållsarbetare visas i informationsloggen.
 
@@ -114,5 +116,7 @@ Bedömningspoängen för att beräkna vilka underhållsarbetare som ska arbeta m
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>Kompetenser som används i tidsplanering för arbetsorder
 
-Kompetenser och intygs krav kan ställas in för underhållsjobbtyper (**Tillgångshantering** > **Inställningar** > **Jobb** > **Underhållsjobbtyper**) och yrkesgrenar för underhållsjobb (**Tillgångshantering** > **Inställningar** > **Jobb** > **Yrkesgren för underhållsjobb**). Underhållsjobbtyper och yrkesgrenar för underhållsjobb väljs på arbetsorderjobb. Om kompetenser eller intyg har valts för en underhållsjobbtyp eller yrkesgren för underhållsjobb, och den underhållsjobbtypen eller yrkesgrenen för underhållsjobb används för ett arbetsorderjobb, planeras endast underhållsarbetare med matchande kompetenser och intyg för arbete på arbetsordern.
+Kompetenser och intygs krav kan ställas in för underhållsjobbtyper (**Tillgångshantering** > **Inställningar** > **Jobb** > **Underhållsjobbtyper**) och yrkesgrenar för underhållsjobb (**Tillgångshantering** > **Inställningar** > **Jobb** > **Yrkesgren för underhållsjobb**). 
+
+Underhållsjobbtyper och yrkesgrenar för underhållsjobb väljs på arbetsorderjobb. Om kompetenser eller intyg har valts för en underhållsjobbtyp eller yrkesgren för underhållsjobb, och den underhållsjobbtypen eller yrkesgrenen för underhållsjobb används för ett arbetsorderjobb, planeras endast underhållsarbetare med matchande kompetenser och intyg för arbete på arbetsordern.
 

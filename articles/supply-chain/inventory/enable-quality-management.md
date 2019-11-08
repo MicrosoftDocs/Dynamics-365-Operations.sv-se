@@ -3,7 +3,7 @@ title: Översikt över kvalitetshantering
 description: Det här avsnittet beskriver hur du kan använda kvalitetshantering i Dynamics 365 Supply Chain Management för att förbättra produktens kvalitet inom din leveranskedja.
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249596"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653566"
 ---
 # <a name="quality-management-overview"></a>Översikt över kvalitetshantering
 
@@ -32,7 +32,7 @@ ms.locfileid: "2249596"
 
 Det här avsnittet beskriver hur du kan använda kvalitetshantering i Dynamics 365 Supply Chain Management för att förbättra produktens kvalitet inom din leveranskedja.
 
-Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Finance and Operations planera uppgifter för att korrigera problem och förhindra dem från att återkomma.
+Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Supply Chain Management planera uppgifter för att korrigera problem och förhindra dem från att återkomma.
 
 Förutom funktioner för att hantera avvikelser inkluderar kvalitetshantering funktioner för att spåra problem efter problemtyp (även interna problem), och för att identifiera lösningar som kortsiktiga och långsiktiga. Statistik om KPI:er (Key Performance Indicator) ger insyn i historiken över tidigare avvikelseproblem och lösningarna som användes för att korrigera dem. Du kan använda historiska data om du vill granska effektiviteten hos tidigare kvalitetsmått och bestämma lämpliga mått som ska användas i framtiden.
 
@@ -290,6 +290,256 @@ Följande register innehåller mer information om hur kvalitetsorder kan generer
 <td></td>
 <td></td>
 <td>En kvalitetsorder måste skapas manuellt för en artikels lagerkvantitet. Fysisk lagerbehållning krävs.</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="quality-order-auto-generation-examples"></a>Exempel på automatiska genereringar av kvalitetsorder
+
+### <a name="purchasing"></a>Inköp
+
+I inköp, om du ställer in fältet **händelsetyp** till **produktinleverans** och fältet **körning** till **efter** på sidan **kvalitetsassociationer**, får du följande resultat: 
+
+- Om alternativet **per uppdaterad kvantitet** är inställt på **Ja**, genereras en kvalitetsorder för varje inleverans mot inköpsordern, baserat på inlevererad kvantitet och inställningar i artikelsampling. Varje gång en kvantitet inlevereras mot inköpsordern genereras nya kvalitetsorder utifrån den nylevererade kvantiteten.
+- Om alternativet **per uppdaterad kvantitet** är inställt på **Nej**, genereras en kvalitetsorder för första inleveransen mot inköpsordern, baserat på inlevererad kvantitet. Dessutom skapas en eller flera kvalitetsorder utifrån den återstående kvantiteten, beroende på spårningsdimensionerna. Kvalitetsorder genereras inte för efterföljande inleveranser mot inköpsordern.
+
+<table>
+<tbody>
+<tr>
+<th>Kvantitetsspecifikation</th>
+<th>Per uppdaterad kvantitet</th>
+<th>Per spårningsdimension</th>
+<th>Resultat</th>
+</tr>
+<tr>
+<td>Procent: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>
+<p>Orderkvantitet: 100</p>
+<ol>
+<li>Rapportera som slutförd för 30
+<ul>
+<li>Kvalitetsorder #1 för 3 (10 % av 30)</li>
+</ul>
+</li>
+<li>Rapportera som slutförd för 70
+<ul>
+<li>Kvalitetsorder #2 för 7 (10 % av det resterande orderkvantiteten, vilket är lika med 70 i det här fallet)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast kvantitet: 1</td>
+<td>Nej</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>Orderkvantitet: 100
+<ol>
+<li>Rapportera som slutförd för 30
+<ul>
+<li>Kvalitetsorder #1 skapas för 1 (för den första kvantiteten som rapporteras som färdig, som har ett fast värde på 1).</li>
+<li>Inga fler kvalitetsorder skapas med den resterande kvantiteten.</li>
+</ul>
+</li>
+<li>Rapportera som slutförd för 10
+<ul>
+<li>Inga kvalitetsorder skapas.</li>
+</ul>
+</li>
+<li>Rapportera som slutförd för 60
+<ul>
+<li>Inga kvalitetsorder skapas.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast kvantitet: 1</td>
+<td>Ja</td>
+<td>
+<p>Batch-nummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Orderkvantitet: 10</p>
+<ol>
+<li>Rapportera som slutförd för 3
+<ul>
+<li>Kvalitetsorder #1 för 1 av batch #b1, seriell #s1</li>
+<li>Kvalitetsorder #2 för 1 av batch #b2, seriell #s2</li>
+<li>Kvalitetsorder #3 för 1 av batch #b3, seriell #s3</li>
+</ul>
+</li>
+<li>Rapportera som slutförd för 2
+<ul>
+<li>Kvalitetsorder #4 för 1 av batch #b4, seriell #s4</li>
+<li>Kvalitetsorder #5 för 1 av batch #b5, seriell #s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Obs!</strong> batchen kan återanvändas.</p>
+</td>
+</tr>
+<tr>
+<td>Fast kvantitet: 2</td>
+<td>Nej</td>
+<td>
+<p>Batch-nummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Orderkvantitet: 10</p>
+<ol>
+<li>Rapportera som slutförd för 4
+<ul>
+<li>Kvalitetsorder #1 för 1 av batch #b1, seriell #s1.</li>
+<li>Kvalitetsorder #2 för 1 av batch #b2, seriell #s2.</li>
+<li>Kvalitetsorder #3 för 1 av batch #b3, seriell #s3.</li>
+<li>Kvalitetsorder #4 för 1 av batch #b4, seriell #s4.</li>
+<li>Inga fler kvalitetsorder skapas med den resterande kvantiteten.</li>
+</ul>
+</li>
+<li>Rapport som slutförd för 6
+<ul>
+<li>Inga kvalitetsorder skapas.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+### <a name="production"></a>Produktion
+
+I produktion, om du ställer in fältet **händelsetyp** till **Rapportera som slutförd** och fältet **körning** till **efter** på sidan **kvalitetsassociationer**, får du följande resultat:
+
+- Om alternativet **per uppdaterad kvantitet** är inställt på **Ja**, genereras en kvalitetsorder för varje slutförd kvantitet och inställningar i artikelsampling. Varje gång en kvantitet rapporteras som slutförd mot produktionsorden genereras nya kvalitetsorder utifrån den nyligen avslutade kvantiteten. Denna generations logik är förenlig med inköp.
+- Om alternativet **Per uppdaterad kvantitet** anges till **Nej**, genereras en kvalitetsorder första gången som en kvantitet rapporteras som färdig, baserat på den färdiga kvantiteten. Dessutom skapas en eller flera kvalitetsorder utifrån den återstående kvantiteten, beroende på spårningsdimensionerna av artikelsampling. Kvalitetsorder genereras inte för senare färdiga kvantiteter.
+
+<table>
+<tbody>
+<tr>
+<th>Kvantitetsspecifikation</th>
+<th>Per uppdaterad kvantitet</th>
+<th>Per spårningsdimension</th>
+<th>Resultat</th>
+</tr>
+<tr>
+<td>Procent: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>
+<p>Orderkvantitet: 100</p>
+<ol>
+<li>Rapportera som slutförd för 30
+<ul>
+<li>Kvalitetsorder #1 för 3 (10 % av 30)</li>
+</ul>
+</li>
+<li>Rapportera som slutförd för 70
+<ul>
+<li>Kvalitetsorder #2 för 7 (10 % av det resterande orderkvantiteten, vilket är lika med 70 i det här fallet)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast kvantitet: 1</td>
+<td>Nej</td>
+<td>
+<p>Batchnummer: Nej</p>
+<p>Serienummer: Nej</p>
+</td>
+<td>Orderkvantitet: 100
+<ol>
+<li>Rapportera som slutförd för 30
+<ul>
+<li>Kvalitetsorder #1 för 1 (för den första kvantiteten som rapporteras som färdig, som har ett fast värde på 1)</li>
+<li>Kvalitetsorder #2 för 1 (för den återstående kvantiteten som fortfarande har ett fast värde på 1)</li>
+</ul>
+</li>
+<li>Rapportera som slutförd för 10
+<ul>
+<li>Inga kvalitetsorder skapas.</li>
+</ul>
+</li>
+<li>Rapportera som slutförd för 60
+<ul>
+<li>Inga kvalitetsorder skapas.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fast kvantitet: 1</td>
+<td>Ja</td>
+<td>
+<p>Batch-nummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Orderkvantitet: 10</p>
+<ol>
+<li>Rapportera som färdig till 3:1 #b1, #s1; 1 för #b2, #s2; och 1 för #b3, #s3
+<ul>
+<li>Kvalitetsorder #1 för 1 av batch #b1, seriell #s1</li>
+<li>Kvalitetsorder #2 för 1 av batch #b2, seriell #s2</li>
+<li>Kvalitetsorder #3 för 1 av batch #b3, seriell #s3</li>
+</ul>
+</li>
+<li>Rapportera som färdig för 2:1 #b4, #s4; och 1 för #b5, #s5
+<ul>
+<li>Kvalitetsorder #4 för 1 av batch #b4, seriell #s4</li>
+<li>Kvalitetsorder #5 för 1 av batch #b5, seriell #s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Obs!</strong> batchen kan återanvändas.</p>
+</td>
+</tr>
+<tr>
+<td>Fast kvantitet: 2</td>
+<td>Nej</td>
+<td>
+<p>Batch-nummer: Ja</p>
+<p>Serienummer: Ja</p>
+</td>
+<td>
+<p>Orderkvantitet: 10</p>
+<ol>
+<li>Rapportera som färdig till 4: 1 för #b1, #s1; 1 för #b2, #s2; 1 för #b3, #s3; och 1 för #b4, #s4
+<ul>
+<li>Kvalitetsorder #1 för 1 av batch #b1, seriell #s1</li>
+<li>Kvalitetsorder #2 för 1 av batch #b2, seriell #s2</li>
+<li>Kvalitetsorder #3 för 1 av batch #b3, seriell #s3</li>
+<li>Kvalitetsorder #4 för 1 av batch #b4, seriell #s4</li>
+</ul>
+<ul>
+<li>Kvalitetsorder #5 för 2, utan referens till ett batch- och ett serienummer</li>
+</ul>
+</li>
+<li>Rapportera som färdig till 6: 1 för #b5, #s5; 1 för #b6, #s6; 1 för #b7, #s7; 1 för #b8, #s8; 1 för #b9, #s9; och 1 för #b10, #s10
+<ul>
+<li>Inga kvalitetsorder skapas.</li>
+</ul>
+</li>
+</ol>
+</td>
 </tr>
 </tbody>
 </table>

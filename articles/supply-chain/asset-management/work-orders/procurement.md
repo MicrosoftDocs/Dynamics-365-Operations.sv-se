@@ -3,7 +3,7 @@ title: Anskaffning
 description: I det här avsnittet beskrivs anskaffning i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,66 +16,67 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1678dbe2432e4be46aebb40a12e73dfd695c3e77
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: ec14f645af5dfdb3e840624e4cec95c46cfbbc25
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875901"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626441"
 ---
 # <a name="procurement"></a>Anskaffning
 
-
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 I Tillgångshantering kan du få en översikt över inköpsrekvisitioner och inköpsorder relaterade till arbetsorder. Det går också att skapa en inköpsorder eller en inköpsrekvisition från en arbetsorder.
 
-I listan **Inköpsrekvisition för arbetsorder** (**Tillgångshantering** > **Allmänt** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visas en lista över inköpsrekvisitioner som är relaterade till arbetsorder.
+På listsidan **Inköpsrekvisition för arbetsorder** (**Tillgångshantering** > **Allmänt** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visas en lista över inköpsrekvisitioner som är relaterade till arbetsorder. När du väljer ett jobb för arbetsorder på den här sidan kan du använda knapparna i gruppen **Visa** i åtgärdsfönstret **Inköpsrekvisition för arbetsorder** för att utföra olika åtgärder:
 
-- Välj ett arbetsorderjobb i listan **Inköpsrekvisition för arbetsorder** och klicka på knappen **Inköpsrekvisition** för att öppna den relaterade inköpsrekvisitionen.  
-- Välj ett arbetsorderjobb i listan **Inköpsrekvisition för arbetsorder** och klicka på knappen **Arbetsorder** för att öppna den relaterade arbetsordern.  
-- Välj ett arbetsorderjobb i listan **Inköpsrekvisition för arbetsorder** och klicka på knappen **Artikel där den används** om du vill få en översikt över var artikeln på den valda raden används i Tillgångshantering, i relation till tillgångar, standardvärden för underhållsjobbtyper, reservdelar och arbetsorder. 
+- Om du vill öppna den relaterade inköpsrekvisitionen, välj **inköpsrekvisition**. 
+- Om du vill öppna en relaterad arbetsorder väljer du **arbetsorder**.
+- Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
+
+I bilden nedan visas ett exempel på listsidan **Inköpsrekvisition för arbetsorder**.
 
 ![Figur 1](media/08-work-orders.png)
 
 
-I listan **Inköpsrekvisition för arbetsorder** (**Hantering av företagstillgångar** > **Allmänt** > **Anskaffning** > **Arbetsorderinköp**) visas en lista över inköpsorder som är relaterade till arbetsorder.
+På listsidan **Inköp för arbetsorder** (**Tillgångshantering** > **Allmänt** > **Anskaffning** > **Inköpsrekvisition för arbetsorder**) visas en lista över inköpsorder som är relaterade till arbetsorder. När du väljer ett jobb för arbetsorder på den här sidan kan du använda knapparna i gruppen **Visa** på fliken i åtgärdsfönstret **Inköpsrekvisition för arbetsorder** för att utföra olika åtgärder:
 
-- Välj ett arbetsorderjobb i listan **Inköpsrekvisition för arbetsorder** och klicka på knappen **Inköpsorder** för att öppna den relaterade inköpsordern.  
-- Välj ett arbetsorderjobb i listan **Arbetsorderinköp** och klicka på knappen **Arbetsorder** för att öppna den relaterade arbetsordern.  
-- Välj ett arbetsorderjobb i inköpslistan **Arbetsorder** och klicka på knappen **Artikel där den används** om du vill få en översikt över var artikeln på den valda raden används i Tillgångshantering, i relation till tillgångar, standardvärden för underhållsjobbtyper, reservdelar och arbetsorder. 
+- Om du vill öppna en relaterad inköpsorder väljer du **inköpsorder**. 
+- Om du vill öppna en relaterad arbetsorder väljer du **arbetsorder**.
+- Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
+
+I bilden nedan visas ett exempel på listsidan **Inköp för arbetsorder**.
 
 ![Figur 2](media/09-work-orders.png)
 
 
-I de listor som visas ovan placeras en ikon för kontroll av leveransdatum till höger på varje rad. Om ikonen visar ett utropstecken i en röd cirkel, innebär det att leveransen på den relaterade inköpsrekvisitionen eller inköpsordern kan vara försenad.
+På listsidan **Inköp för arbetsorder** och **Inköpsrekvisition för arbetsorder** visas en symbol som är relaterad till kontrollen av leveransdatum till höger på varje rad. Om symbolen är ett utropstecken i en röd cirkel, innebär det att leveransen av den relaterade inköpsordern eller inköpsrekvisitionen kan vara försenad.
 
-På en inköpsrekvisition finns det datum som används för att beräkna möjlig försening i formuläret **Inköpsrekvisitioner** > snabbfliken **Inköpsrekvisitionshuvud** > fältet **Begärt datum**. Detta datum jämförs med det tillgängliga datumet på arbetsordern eller arbetsorderjobbet på samma sätt som inköpsorderdatumet.
+För en inköpsorder används det datum som är relaterat till inköpsorderraden för att beräkna en möjlig försening. Om du vill visa datumet väljer du inköpsorderraden på sidan **inköpsorder**. Datumet visas på fliken **Bekräftat leveransdatum** på fliken **Inställningar** på snabbfliken **Radinformation**. Om fältet **Bekräftat leveransdatum** inte har angetts används datumet i fältet **Leveransdatum** på snabbfliken **Inköpsorderrubrik** används för beräkningen. Ett av dessa datum jämförs med det tillgängliga datumet på arbetsordern eller arbetsorderjobbet i följande ordning:
 
-På en inköpsorder är det datum som används för att beräkna möjlig försening det datum som är relaterat till inköpsorderraden, som visas i formuläret **Inköpsorder** > välj inköpsorderrad snabbfliken **Radinformation** > fliken **Inställningar** > fältet **Bekräftat leveransdatum**. Om fältet inte är ifyllt används datumet i fältet **Leveransdatum** på snabbfliken **Inköpsorderhuvud**. Ett av dessa datum jämförs med det tillgängliga datumet på arbetsordern eller arbetsorderjobbet i följande ordning:
+1. Faktiskt startdatum på arbetsordern  
 
-- Faktiskt startdatum på arbetsordern, eller  
+2. Tidsplanerat startdatum för det relaterade arbetsorderjobbet 
 
-- Tidsplanerat startdatum för det relaterade arbetsorderjobbet, eller  
+3. Tidsplanerat startdatum på arbetsordern 
 
-- Tidsplanerat startdatum på arbetsordern, eller  
+4. Förväntat startdatum på arbetsordern, eller 
 
-- Förväntat startdatum på arbetsordern, eller  
+För en inköpsrekvisition används datumet i fältet **Begärt datum** på snabbfliken **Inköpsrekvisitionshuvud** på sidan **Inköpsrekvisitioner** för att beräkna en möjlig försening. Datumet i detta fält jämförs med det tillgängliga datumet på arbetsordern eller arbetsorderjobbet på samma order som används för inköpsorderdatumet.
 
 
-## <a name="create-purchase-order-from-a-work-order"></a>Skapa inköpsorder från en arbetsorder
+## <a name="create-a-purchase-order-from-a-work-order"></a>Skapa en inköpsorder från en arbetsorder
 
-I **Alla arbetsorder** väljer du ett arbetsorderjobb och skapar en relaterad inköpsorder eller inköpsrekvisition. Detta görs för att säkerställa projektrelationer mellan inköpsordern eller inköpsrekvisitionen och arbetsordern.
+På listsidan **Alla arbetsorder** kan du välja ett arbetsorderjobb och skapar sedan en relaterad inköpsorder eller relaterad inköpsrekvisition. Detta hjälper dig att säkerställa att projektrelationer finns mellan inköpsordern eller inköpsrekvisitionen och arbetsordern.
 
 1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
-2. Markera i listan **Alla arbetsorder** eller **Aktiva arbetsorder** den arbetsorder som du vill skapa en inköpsorder för och klicka på **Redigera**.
+2. Markera arbetsordern som du vill skapa en inköpsorder för och välj sedan **redigera**.
 
-3. I formuläret **Arbetsorder** > snabbfliken **Underhållsjobb för arbetsorder** väljer du det arbetsorderjobb som du vill skapa inköpsordern för.
+3. På snabbfliken **Underhållsjobb för arbetsorder**, välj arbetsorderjobb att skapa arbetsordern för.
 
 4. Klicka på **Artikeluppgifter** > **Inköpsorder från arbetsorderjobb**.
 
@@ -84,17 +85,18 @@ I **Alla arbetsorder** väljer du ett arbetsorderjobb och skapar en relaterad in
 6. Skapa inköpsordern.
 
 >[!NOTE]
->Att skapa en inköpsrekvisition är nästan identiskt med att skapa en inköpsorder. Den enda skillnaden är att i proceduren ovan klickar du på **Artikeluppgifter** > **Inköpsrekvisition från arbetsorderjobb** i steg 2.
+>Gör på samma sätt för att skapa en relaterad inköpsrekvisition. Du kan dock välja **Artikeluppgifter** > **Inköpsrekvisition från arbetsorderjobb** i steg 4.
+
 
 ## <a name="project-relation-between-work-order-and-purchase-order-or-purchase-requisition"></a>Projektrelation mellan arbetsorder och inköpsorder eller inköpsrekvisition
 
-En inköpsorderrad eller inköpsrekvisitionsrad är relaterad till ett arbetsorderjobb via arbetsorderprojekt och det relaterade projektaktivitetsnumret. När du skapar en inköpsorder eller inköpsrekvisition från ett arbetsorderjobb är det relaterade projektaktivitetsnumret obligatoriskt. Projektaktivitetsnumret infogas automatiskt på en inköpsorder eller inköpsrekvisition om motsvarande arbetsorder innehåller arbetsorderjobb som alla använder samma typ av underhållsjobb. Om arbetsorderjobben innehåller olika underhållsjobbtyper måste projektaktivitetsnumret infogas manuellt.
+En inköpsorderrad eller inköpsrekvisitionsrad är relaterad till ett arbetsorderjobb via arbetsorderprojekt och det relaterade projektaktivitetsnumret. När du skapar en inköpsorder eller inköpsrekvisition från ett arbetsorderjobb är det relaterade projektaktivitetsnumret obligatoriskt. Projektaktivitetsnumret infogas automatiskt på en inköpsorder eller inköpsrekvisition om motsvarande arbetsorder innehåller arbetsorderjobb som alla använder samma typ av underhållsjobb. Om arbetsorderjobb har olika underhållsjobbtyper måste du manuellt ange projektaktivitetsnumret på inköpsorder eller inköpsrekvisition.
 
-Om du vill visa eller infoga aktivitetsnumret som hör till en inköpsorderrad öppnar du **Arbetsorderinköp** > väljer inköpsorderposten > klickar på inköpsorder i kolumnen **Inköpsorder** > snabbfliken **Radinformation** > fliken **Projekt** > fältet **Aktivitetsnummer**.
+Om du vill visa eller ange aktivitetsnumret som hör till en inköpsorderrad, välj listsidan **Inköp för arbetsorder**, välj arbetsorderposten och välj sedan i kolumnen **inköpsorder** länken för inköpsordern. Du hittar fältet **aktivitetsnummer** på fliken **projekt** på snabbfliken **radinformation**.
 
+Illustrationen nedan visar ett exempel på sidan **Inköpsorder** med fokus på **aktivitetsnummer**.
 
 ![Figur 3](media/10-work-orders.png)
 
-
-På samma sätt, om du vill visa eller infoga aktivitetsnumret som hör till en inköpsrekvisitionsrad för arbetsorder öppnar du **Inköpsrekvisition för arbetsorder** > väljer inköpsrekvisitionsposten > klickar på inköpsrekvisitionen i kolumnen **Inköpsrekvisition** > snabbfliken **Radinformation** > fliken **Projekt** > fältet **Aktivitetsnummer**.
+På samma sätt, för att visa eller ange det aktivitetsnummer som är relaterat till en rekvisitionsrad för arbetsorder på listsidan **Inköpsrekvisition för arbetsorder** välj inköpsrekvisitionsposten och sedan i kolumnen **inköpsrekvisition** väljer du länken för inköpsrekvisitionen. Du hittar fältet **aktivitetsnummer** på fliken **projekt** på snabbfliken **radinformation**.
 

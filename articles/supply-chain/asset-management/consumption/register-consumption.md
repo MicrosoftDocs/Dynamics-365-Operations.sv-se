@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024670"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653333"
 ---
 # <a name="register-consumption"></a>Registrera förbrukning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 När ett underhållsjobb har slutförts på en arbetsorder är nästa steg att göra förbrukningsregistreringar och bokföra journalerna. Du kan göra registreringar av följande förbrukningstyper: timmar, artiklar och utgifter. De olika förbrukningstyperna registreras och bokförs på **Arbetsorderjournaler**. Journalinställningarna i **Tillgångshantering** används för att skapa och bokföra separata journaler för timmar, artiklar och utgifter i modulen **Projekthantering och redovisning**.
 
-Du kanske kan lägga till eller ta bort prognosrader på en arbetsorder. Inställningen av en livscykeltillstånd för arbetsorder, den relaterade projekttypen och de fasregler som gäller för projekttypen bestämmer om du kan lägga till eller redigera journalrader. Läs mer om livscykeltillstånd för arbetsorder och relaterade projektfaser i [Integration med projekthantering och redovisning](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+I vissa fall kanske kan lägga till eller ta bort prognosrader på en arbetsorder. Inställningen av en livscykeltillstånd för arbetsorder, den relaterade projekttypen och de fasregler som gäller för projekttypen bestämmer om du kan lägga till eller redigera journalrader. Läs mer om livscykeltillstånd för arbetsorder och relaterade projektfaser i [Integration med projekthantering och redovisning](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Det är möjligt att ställa in automatisk bokföring av journaler i ett livscykeltillstånd för arbetsorder. Mer information finns i [Livscykeltillstånd för arbetsorder](../setup-for-work-orders/work-order-lifecycle-states.md).
@@ -50,10 +50,10 @@ Du kanske kan lägga till eller ta bort prognosrader på en arbetsorder. Instäl
 
 6. Klicka på **Bokför journaler** för att bokföra journalraderna.
 
-7. När du har bokfört förbrukningsjournalerna kan du uppdatera livscykeltillståndet för arbetsorder, till exempel till "avslutad", för att ange att arbetsordern har slutförts.
+7. När du har bokfört förbrukningsjournalerna kan du uppdatera livscykelstadiet för arbetsorder. Om du till exempel vill ange att arbetsordern har slutförts, kan du uppdatera livscykel stadiet till "avslutad".
 
-- I fältet **Visa** som placerades högst upp på sidan **Arbetsorderjournaler** väljer du vilka journalrader som ska visas: alla, inte bokförda eller bokförda. Bokförda journaler är markerade i kryssrutan **Bokförd**.  
-- När artikelrader skapas i arbetsorderjournalen överförs automatiskt produktdimensioner och spårningsdimensioner som är relaterade till artikeln till journalraden.  
+    - I fältet **Visa** som placerades högst upp på sidan **Arbetsorderjournaler** väljer du vilka journalrader som ska visas: **alla**, **inte bokförda** eller **bokförda**. Bokförda journaler är markerade i kryssrutan **Bokförd**.  
+    - När artikelrader skapas i arbetsorderjournalen överförs automatiskt produktdimensioner och spårningsdimensioner som är relaterade till artikeln till journalraden.  
 
 På bilden nedan visas ett exempel på tim- och artikelregistreringar i en arbetsorder i **Arbetsorderjournaler**.
 
@@ -76,7 +76,7 @@ Om en arbetsorder innehåller flera jobb för arbetsorder kan du registrera arbe
 
 6. Infoga antal arbetstimmar som ska delas i fältet **Timmar**.
 
-![Figur 2](media/02-consumption.png)
+    ![Figur 2](media/02-consumption.png)
 
 7. Klicka på **OK**.
 
@@ -88,10 +88,10 @@ Om en arbetsorder innehåller flera jobb för arbetsorder kan du registrera arbe
 
 När du gör förbrukningsregistreringar läggs ekonomiska dimensioner som hör till de olika registreringstyperna till i registreringarna i en specifik sekvens. 
 
-*Tim- och utgiftsregistrering:* Först läggs ekonomiska dimensioner från journalhuvudet till, om det finns några. Därefter läggs ekonomiska dimensioner från det relaterade arbetsorderprojektet till. Slutligen läggs ekonomiska dimensioner från resursen (arbetaren) till.
+- *Tim- och utgiftsregistrering:* Först läggs ekonomiska dimensioner från journalhuvudet till, om det finns några. Därefter läggs ekonomiska dimensioner från det relaterade arbetsorderprojektet till. Slutligen läggs ekonomiska dimensioner från resursen (arbetaren) till.
 
-*Artikelregistreringar:* Först läggs ekonomiska dimensioner från journalhuvudet till, om det finns några. Därefter läggs ekonomiska dimensioner från det relaterade arbetsorderprojektet till. Därefter läggs ekonomiska dimensioner från webbplatsen till. Slutligen läggs ekonomiska dimensioner från artikeln till.
+- *Artikelregistreringar:* Först läggs ekonomiska dimensioner från journalhuvudet till, om det finns några. Därefter läggs ekonomiska dimensioner från det relaterade arbetsorderprojektet till. Därefter läggs ekonomiska dimensioner från webbplatsen till. Slutligen läggs ekonomiska dimensioner från artikeln till.
 
 >[!NOTE]
->För alla tre registreringstyperna valideras kombinationen av ekonomisk dimension, och ogiltiga kombinationer görs tomma. Detta är standard inställningar i Finance and Operations.
+>För alla tre registreringstyperna valideras kombinationen av ekonomisk dimension, och ogiltiga kombinationer görs tomma. Detta är standard inställningar med andra Finance and Operations-appar.
 

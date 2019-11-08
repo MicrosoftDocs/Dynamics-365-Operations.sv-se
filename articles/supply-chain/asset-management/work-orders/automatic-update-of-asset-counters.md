@@ -3,7 +3,7 @@ title: Automatisk uppdatering av tillgångsräknare
 description: Det här avsnittet beskriver automatisk uppdatering av tillgångsräknare i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,32 +16,28 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 97e6912cd37d6f82d8bf022141f04645a3364ee1
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875910"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626188"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk uppdatering av tillgångsräknare
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+Mer information om manuell registrering av tillgångsräknare finns i [Manuell uppdatering av tillgångsräknare](../work-orders/manual-update-of-asset-counters.md). Mer information om hur du ställer in tillgångsräknare finns i [räknare](../setup-for-objects/counters.md).
 
-I föregående avsnitt beskrivs manuell registrering av tillgångsräknare. Inställning av tillgångsräknare beskrivs i [Räknare](../setup-for-objects/counters.md).
+Räknarvärden kan också uppdateras automatiskt från produktionsregistreringar, baserat på produktionstimmar eller produktionskvantitet (det vill säga den kvantitet som produceras). Uppdateringen görs på sidan **uppdatera tillgångsräknare**. Du kan uppdatera en eller flera tillgångar genom att konfigurera en parameter, **Från datum**. Den här parametern anger startdatum för produktionsregistreringar (produktionstimmar eller produktionskvantiteter). Med andra ord anges det datum då räknarens värden ska uppdateras.
 
-Räknarvärden kan också uppdateras automatiskt från produktionsregistreringar, baserat på produktionstimmar eller produktionskvantitet. Detta görs i **Uppdatera tillgångsräknare**. Du kan uppdatera en eller flera tillgångar genom att infoga en parameter, **Från datum**. Den här parametern anger startdatum för produktionsregistreringar (timmar eller kvantitet producerad), dvs. startdatumet som räknarvärden ska uppdateras från.
+Alla tillgångar som är relaterade till en resurs *och* har tillgångsräknare, som har ställts in för uppdatering baserad på produktionstimmar eller produktionskvantitet tas med i en automatisk uppdatering. Nya räknarvärden kommer att skapas.
 
-Alla tillgångar som är relaterade till en resurs *och* har tillgångsräknare, som har ställts in för uppdatering baserad på producerad kvantitet eller produktionstimmar, tas med i en automatisk uppdatering och nya räknarvärden skapas.
+För räknare som baseras på produktionskvantiteten inkluderar antalet både den godkända kvantiteten och den felkvantitet som är registrerad. Om enheten som används för registrering av produktionskvantitet skiljer sig från den som används på räknaren, konverteras kvantiteten så att den motsvarar räknarenheten.
 
-För räknare som baseras på produktionskvantitet, ingår godkänd kvantitet och felregistrerad kvantitet i beräkningen. Om enheten som används för registrering av producerad kvantitet skiljer sig från den enhet som används på räknaren, konverteras kvantiteten till räknarenheten.
-
-Som nämnts ovan kan automatiska räknare uppdateras från produktionsregistreringar. Därför måste den tillgång som du vill uppdatera räknare automatiskt för vara relaterad till en resurs (dator). Följande beskrivningar ger en översikt över inställning och bearbetning av produktionsorder (i modulen **Produktionskontroll**), som används som grund för automatisk uppdatering av räknare på en till gång i modulen **Tillgångshantering**.
-
-När producerade kvantiteter eller produktionstimmar har registrerats för resursen kan du uppdatera de relaterade räknarna för tillgångar.
+Som nämnts ovan kan automatiska räknare uppdateras från produktionsregistreringar. Därför måste den tillgång som du vill uppdatera räknare automatiskt för vara relaterad till en resurs (dator). När producerade kvantiteter eller produktionstimmar har registrerats för resursen kan du uppdatera de relaterade räknarna för tillgångar.
 
 1. Klicka på **Tillgångshantering** > **Periodisk** > **Tillgångar** > **Uppdatera tillgångsräknare**.
 
@@ -50,18 +46,27 @@ När producerade kvantiteter eller produktionstimmar har registrerats för resur
 >[!NOTE]
 >Datumet i det här fältet är "pågående arbete"-datumet från **Flödestransaktioner** (**Produktionskontroll** > **Förfrågningar och rapporter** > **Produktion** > **Flödestransaktioner** >  fältet **Fysiskt datum**).
 
-3. Om du vill välja vissa tillgångar, tillgångstyper eller resurser för den automatiska uppdateringen klickar du på **Filter** på snabbfliken **Poster som ska ingå** och gör de relevanta valen.
+3. På snabbfliken **Poster som ska ingå** kan du välja specifika tillgångar, tillgångstyper eller resurser för den automatiska uppdateringen. Välj **filter**och gör relevanta val.
 
 4. På snabbfliken **Kör i bakgrunden** kan du ställa in den automatiska uppdateringen som ett batchjobb, efter behov.
 
+Bilden nedan visar ett exempel på dialogrutan **Uppdatera tillgångsräknare**.
+
 ![Figur 1](media/12-work-orders.png)
 
-5. Klicka på **OK**. När uppdateringen av tillgångsräknaren är färdig kan du se de räknarregistreringar relaterade till tillgången i **Tillgångsräknare** (**Tillgångshantering** > **Allmänt** > **Tillgångar** > **Alla tillgångar** > välj tillgång > knappen **Räknare**).
+5. Välj **OK**. 
 
-I **Tillgångsräknarsummor** kan du få en översikt över den senaste registreringen som gjorts för alla räknartyper för alla tillgångar. Klicka på **Tillgångshantering** > **Förfrågningar** > **Tillgångar** > **Sammanlagt värde för tillgång**. Vyn liknar **Tillgångsräknare**, men du kan inte lägga till eller redigera registreringar i **Sammanlagt värde för tillgång**. Den är endast för översikt.
+När uppdateringen av tillgångsräknaren har genomförts kan du visa de räknarregistreringar som är relaterade till tillgången på sidan **Tillgångsräknare**. Välj **Tillgångshantering** > **Allmänt** > **Tillgångar** > **Alla tillgångar**, välj tillgången och sedan i åtgärdsfönstret på fliken **Tillgång** i gruppen **Förebyggande** väljer du **Räknare**.
+
+På sidan **Sammanlagt värde för tillgång** kan du få en översikt över den senaste registreringen som gjorts för alla räknartyper för alla tillgångar. Klicka på **Tillgångshantering** > **Förfrågningar** > **Tillgångar** > **Sammanlagt värde för tillgång**. Den här sidan liknar sidan **Tillgångsräknare**, men du kan inte lägga till eller redigera registreringar. Den är endast för översikt.
+
+Bilden nedan visar ett exempel på sidan **Sammanlagt värde för tillgång**.
 
 ![Figur 2](media/13-work-orders.png)
 
+Observera följande:
 
-- Det går fortfarande att skapa manuella räknarvärderegistreringar för räknartyper som uppdateras automatiskt. Mer information finns i avsnittet "Manuell uppdatering av tillgångsräknare".
-- Du kan ställa in räknare som är relaterade till en annan räknare, vilket innebär att när en räknare uppdateras, uppdateras relaterade räknare automatiskt samtidigt. Information om hur du ställer in relaterade räknare finns i [Räknare](../setup-for-objects/counters.md).
+- Du kan fortfarande skapa manuella räknarvärderegistreringar för räknartyper som uppdateras automatiskt. Mer information finns i  [Manuell uppdatering av tillgångsräknare](../work-orders/manual-update-of-asset-counters.md).
+
+- Du kan ställa in räknare som är relaterade till en annan räknare. I detta fall uppdateras relaterade räknare automatiskt samtidigt när en räknare uppdateras. Mer information om hur du ställer in relaterade räknare finns i [räknare](../setup-for-objects/counters.md).
+

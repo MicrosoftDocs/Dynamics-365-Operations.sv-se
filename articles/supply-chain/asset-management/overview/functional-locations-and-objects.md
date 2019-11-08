@@ -18,32 +18,32 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5271b673d758608cae8e43d72b7e75b259d5f142
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e3a42d36fd137aa780886276a4235f1b8f3a3680
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024624"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653357"
 ---
 # <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Det här avsnittet beskriver funktionsplats och tillgångar i tillgångshantering. Tillgångshantering är en avancerad modul för hantering av tillgångar och underhållsjobb i Dynamics 365 Supply Chain Management.
 
 ## <a name="overview"></a>Översikt
 
-Tillgångshantering integreras sömlöst med flera moduler i Finance and Operations. Följande illustration visar gränssnitten med andra moduler.
+Tillgångshantering integreras sömlöst med flera moduler med andra Finance and Operations-appar. Följande illustration visar gränssnitten med andra moduler.
 
-![Figur 1](media/01-overview-image.png)
+![Diagram som visar tillgångshanterings gränssnitt med andra moduler](media/01-overview-image.png)
 
 Med tillgångshantering kan du effektivt hantera och utföra alla uppgifter som är relaterade till hantering och underhåll av många typer av utrustning i företaget. Denna utrustning omfattar maskiner, produktionsutrustning och fordon. Tillgångshantering stödjer även lösningar inom många branscher.
 
 Följande illustration visar en översikt över de viktigaste funktionerna som täcks av tillgångshantering.
 
-![Figur 2](media/02-overview-image.png)
+![Diagram som visar huvudfunktionerna i tillgångshantering](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Funktionsplatser och tillgångar
 
@@ -53,8 +53,8 @@ Tillgångskostnader följer alltid placeringen av tillgången. Med andra ord, om
 
 Hur du bygger din hierarki av funktionsplatser beror på ditt företags krav på underhåll av intern utrustning eller service av kundutrustning. Följande bild visar ett exempel på funktionsplatser som är baserade på geografiska platser.
 
-![Figur 3](media/03-overview-image.png)
+![Diagram som visar funktionella platser baserat på geografiska platser](media/03-overview-image.png)
 
 Följande bild visar ett exempel på funktionsplatser som är baserade på kunder.
 
-![Figur 4](media/04-overview-image.png)
+![Diagram som visar funktionella platser baserat på kunder](media/04-overview-image.png)

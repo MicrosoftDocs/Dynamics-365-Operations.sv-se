@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f86f6475e5226443f5e4d43fb91acafe2afdbb9
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: aa2d50a976af7ee7dde5335f94336b995fdc2d11
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887398"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652067"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Underhållsarbetares kalender och planering
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-När du planerar arbetsorder skapar du ett schema för underhållsarbetare, verktyg och tillgångar. För att planering av underhållsarbetare ska kunna genomföras måste en kalender ställas in för varje underhållsarbetare. Underhållsarbetare som är relaterade till en resurs och arbetstidskalendrar ställs in för resurser. Du ställer in den resurs och kalender som är relaterad till en **Tillgångshantering** > **Inställningar** > **Arbetare** > **Arbetare**, vilket beskrivs i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).
+När du planerar arbetsorder skapar du ett schema för underhållsarbetare, verktyg och tillgångar. För att planering av underhållsarbetare ska kunna genomföras måste en kalender ställas in för varje underhållsarbetare. Underhållsarbetare som är relaterade till en resurs och arbetstidskalendrar ställs in för resurser. Du ställer in den resurs och kalender i **Tillgångshantering** > **Inställningar** > **Arbetare** > **Arbetare**, vilket beskrivs i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).
 
 På bilden nedan visas ett exempel på en underhållsarbetare som är relaterad till en resurs som använder arbetstidskalendern "Produktion".
 

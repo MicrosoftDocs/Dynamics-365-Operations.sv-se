@@ -1,6 +1,6 @@
 ---
 title: Transporthanteringsöversikt
-description: Det här avsnittet innehåller en översikt över funktionen för transporthantering i Finance and Operations.
+description: Det här avsnittet innehåller en översikt över funktionen för transporthantering i Supply Chain Management.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d976ec4d3c294f0ce8e9732b21b9a429f1e47315
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: fa59a8e6e4744c776ec0e1dc84b1f004dbd796f6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2027071"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653589"
 ---
 # <a name="transportation-management-overview"></a>Transporthantering – översikt
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över funktionen för transporthantering i Finance and Operations.
+Det här avsnittet innehåller en översikt över funktionen för transporthantering i Supply Chain Management.
 
 Transporthantering låter dig använda företagets transporter och även identifiera leverantörs- och ruttlösningar för ingående och utgående order. Du kan till exempel identifiera det snabbaste flödet eller den minst kostsamma tariffen för en leverans. I tabellen nedan beskrivs de huvudsakliga scenarierna för att använda Transporthantering.
 
@@ -67,23 +67,23 @@ Transporthantering låter dig använda företagets transporter och även identif
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-finance-and-operations"></a>Planera transport i Finance and Operations
+## <a name="planning-transportation-in-supply-chain-management"></a>Planera transporter i Supply Chain Management
 I transporthantering, transportplaneringen baseras antingen på order eller på försändelserna som skapas baserat på dessa order. Försändelserna alltid finns någon gång i tiden men krävs inte för transportplanering. Överföringsorder är en del av det utgående scenariot och kan planeras tillsammans med försäljningsorder. 
 
 ![Lastuttag](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Ingående transport
-När du beställer artiklar från en leverantör och artiklarna måste levereras till ditt lagerställe, kanske du vill ordna själva transporten av artiklarna. Du kan använda Finance and Operations för att planera transporten och inleveransen av den ingående lasten. I bilden nedan visas affärsprocessflödet för planering av transport för en inkommande beläggning. 
+När du beställer artiklar från en leverantör och artiklarna måste levereras till ditt lagerställe, kanske du vill ordna själva transporten av artiklarna. Du kan använda Supply Chain Management för att planera transporten och inleveransen av den ingående lasten. I bilden nedan visas affärsprocessflödet för planering av transport för en inkommande beläggning. 
 
 ![Affärsprocessflöde för transport av inkommande last](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Utgående transport
-Du kan planera och bearbeta en utgående last för att skicka vissa artiklar från ett företags lager till en kund. Du kan använda Finance and Operations för att planera transporten och leveransen av den utgående lasten. I bilden nedan visas affärsprocessflödet för planering och bearbetning av utgående beläggningar för leverans. 
+Du kan planera och bearbeta en utgående last för att skicka vissa artiklar från ett företags lager till en kund. Du kan använda Supply Chain Management för att planera transporten och leveransen av en utgående last. I bilden nedan visas affärsprocessflödet för planering och bearbetning av utgående beläggningar för leverans. 
 
 ![Planera och bearbeta utgående laster](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Lastuppbyggnad
-Finance and Operations innehåller en lastuppbyggnadsstrategi med namnet Volymbaserad lastuppbyggnadsstrategi. Denna strategi låter dig använda de angivna maximivärdena som specificerats för höjd och vikt i lastmallen eller så kan du åsidosätta inställningarna genom att ange nya värden. För att använda denna strategi, välj den i fältet **Lastuppbyggnadsstrategi** på snabbfliken **Inställningar** på sidan **Workbench för lastuppbyggnad**. Dessutom kan du lägga till dina egna uppbyggnadsstrategier genom att skapa en ny klass i programobjektträdet.
+Supply Chain Management innehåller en lastuppbyggnadsstrategi med namnet Volymbaserad lastuppbyggnadsstrategi. Denna strategi låter dig använda de angivna maximivärdena som specificerats för höjd och vikt i lastmallen eller så kan du åsidosätta inställningarna genom att ange nya värden. För att använda denna strategi, välj den i fältet **Lastuppbyggnadsstrategi** på snabbfliken **Inställningar** på sidan **Workbench för lastuppbyggnad**. Dessutom kan du lägga till dina egna uppbyggnadsstrategier genom att skapa en ny klass i programobjektträdet.
 
 
 

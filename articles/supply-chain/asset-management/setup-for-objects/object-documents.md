@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b791fd3e060c4f4ecdb1ca599a6041d421db74
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 5b830d835d99122a8c0572481f4c229c37d97d0c
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024550"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653261"
 ---
 # <a name="asset-documents"></a>Tillgångsdokument
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I det här avsnittet beskrivs tillgångsdokument i tillgångshantering.
 
-I tillgångshantering kan du ställa in dokument så att de automatiskt är relaterade till jobbtyper, tillgångstillverkare, tillgångstyper eller tillgångar, till exempel. Den här funktionen är användbar när uppdaterade dokumentversioner släpps. I så fall behöver du bara placera det uppdaterade dokumentet på standardplatsen som du använder för Finance and Operations-dokumenten och bifoga dokumentet till den tillgångsdokumentpost som du har skapat. Det uppdaterade dokumentet kan sedan nås från menyalternativen **alla tillgångar**, **aktiva tillgångar**, **mina aktiva tillgångar**, **alla arbetsorder** och **aktiva arbetsorderjobb**. Processen för att bifoga dokument till en tillgångsdokumentpost använder hanteringssystemet för standarddokument.
+I tillgångshantering kan du ställa in dokument så att de automatiskt är relaterade till jobbtyper, tillgångstillverkare, tillgångstyper eller tillgångar, till exempel. Den här funktionen är användbar när uppdaterade dokumentversioner släpps. I så fall behöver du bara placera det uppdaterade dokumentet på standardplatsen som du använder för Supply Chain Management-dokumenten och bifoga dokumentet till den tillgångsdokumentpost som du har skapat. Det uppdaterade dokumentet kan sedan nås från menyalternativen **alla tillgångar**, **aktiva tillgångar**, **mina aktiva tillgångar**, **alla arbetsorder** och **aktiva arbetsorderjobb**. Processen för att bifoga dokument till en tillgångsdokumentpost använder hanteringssystemet för standarddokument.
 
 **Exempel 1:** ett dokument som är relaterat till en jobbtyp kan beskriva en procedur för den jobbtypen.
 

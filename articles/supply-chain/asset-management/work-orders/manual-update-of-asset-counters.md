@@ -3,7 +3,7 @@ title: Manuell uppdatering av tillgångsräknare
 description: Det här avsnittet beskriver manuell uppdatering av tillgångsräknare i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,47 +16,51 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7c5ec288404c18b00f9dcd0e66f50744d0aa2f
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 3072ab204b53b16988d2973b28a697041cb84c27
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875905"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626151"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuell uppdatering av tillgångsräknare
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Räknare används för att skapa registreringar för en tillgång angående t.ex. antal timmar i drift eller antalet producerade kvantiteter.
+Räknare används för att skapa registreringar för en tillgång, t.ex. registreringar om antalet timmar som tillgången har varit i drift eller den kvantitet som har producerats.
 
-Om den valda räknartypen för en räknare är inställd på att ärva räknarvärden (**Tillgångshantering** > **Inställningar** > **Tillgångstyper** > **Räknare** >  snabbfliken **Allmänt** > växlingsknappen **Ärv värden för tillgångsräknare** inställd på "Ja"), och när du sedan skapar en ny räknarrad av den typen, uppdateras alla underordnade tillgångar som använder samma räknartyp automatiskt.
+Den räknartyp som valts för en räknare kan vara inställd på att ärva räknarvärden. Med andra ord ställs alternativet **Ärv värden för tillgångsräknare** på **Ja** på snabbfliken **allmänt** på sidan **räknare** (**Tillgångshantering** > **Inställningar** > **Tillgångstyper** > **Räknare**). När du i detta fall skapar en ny räknarrad av den typen, uppdateras alla underordnade tillgångar som använder samma räknartyp automatiskt.
 
-I **Alla tillgångar** kan du skapa tim- eller kvantitetsräknarregistreringar för en tillgång, baserat på dina avläsningar av tillgången.
+På sidan I **Alla tillgångar** kan du skapa tim- eller kvantitetsräknarregistreringar för en tillgång, baserat på dina avläsningar av tillgången.
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Tillgångar** > **Alla tillgångar**.
+1. Välj **Tillgångshantering** > **Allmänt** > **Tillgångar** > **Alla tillgångar**.
 
-2. Välj tillgång i listan och klicka på **Räknare**. I formuläret **Tillgångsräknare** visas en lista över alla tidigare räknarregistreringar för den valda tillgången.
+2. Välj tillgången och sedan, i åtgärdsfönstret på fliken **Tillgång** i gruppen **Förebyggande** väljer du **Räknare**. Sidan **Tillgångsräknare** visas en lista över alla tidigare räknarregistreringar som har gjorts för den valda tillgången.
 
-3. Klicka på **Ny** om du vill skapa en ny registrering. Tillgångens ID infogas automatiskt.
+3. Skapa en ny registrering genom att välja **Nytt**. Tillgångs-ID anges automatiskt i fältet **Tillgång**.
 
-4. Välj relevant räknare i fältet **Räknare**. Endast räknare som hör till den tillgångstyp som valts i tillgången är tillgängliga. Den relaterade enheten infogas automatiskt i fältet **Enhet**.
+4. Välj relevant räknare i fältet **Räknare**. Endast räknare som hör till den tillgångstyp som valts i tillgången är tillgängliga för val. Den relaterade enheten anges automatiskt i fältet **Enhet**.
 
-5. Välj datum och tid för räknarregistreringen.
+5. I fältet **Registrerad** välj datum och tid för räknaregistreringen.
 
-6. I fältet **Värde** anger du numret sedan den senaste räknarregistreringen eller, i fältet **Sammanlagt värde**, infogar du det totala antalet.
+6. I fältet **värde** anger du numret sedan den senaste räknarregistreringen. I fältet **aggregerad värde** kan du också ange det totala inventeringsnumret.
 
-- Om du installerar en ny räknare för en tillgång fysiskt måste du registrera ändringen i tillgången i **Tillgångsräknare**. Sedan måste du skapa två registreringsrader med identiska tidsstämplar, och på raden för den nya räknaren markerar du kryssrutan **Återställ räknare**. När du skapar de två registreringsraderna måste den första raden vara för den räknare som du ersätter. I fältet **Summor** är den totala räknarsumman summan av alla registrerade värden på den räknartypen.  
+Observera följande:
+
+- Om du installerar en ny räknare för en tillgång fysiskt måste du registrera ändringen i tillgången på sidan **Tillgångsräknare**. Sedan måste du skapa två registreringsrader som har identiska tidsstämplar. Den första raden måste vara för den räknare som du ersätter. På raden som är relaterad till den nya räknaren markerar du kryssrutan **Återställ räknare**. I fältet **Summor** är den totala räknarsumman summan av alla registrerade värden på den räknartypen.
+
 - Om kryssrutan **Återställ räknare** har markerats för en tillgång med en underhållsplan med intervalltypen "En gång från..." eller "När...nås" är räknaren fortfarande aktiv på den nya räknarraden, eftersom du skapar en separat räknarrad och börjar om med en ny räknare.
+
+Bilden nedan visar ett exempel på sidan **Tillgångsräknare**.
 
 ![Figur 1](media/11-work-orders.png)
 
-
-Om du behöver göra räknarregistreringar för flera tillgångar kan du utföra dem i **Tillgångshantering** > **Förfrågningar** > **Tillgångar** > **Tillgångsräknare**.
+På sidan **Tillgångsräknare** (**Tillgångshantering** > **Förfrågningar** > **Tillgångar** > **Tillgångsräknare**) kan du göra räknarregistreringar på flera tillgångar samtidigt, efter behov.
 
 >[!NOTE]
->Du kan ställa in ett intervall för att definiera avvikelser i manuella räknarregistreringar, och vilken typ av meddelande som ska visas om registreringarna ligger utanför det definierade intervallet. Information om hur du ställer in räknare finns i avsnittet [Räknare](../setup-for-objects/counters.md).
+>Du kan ställa in ett intervall för att definiera avvikelser i manuella räknarregistreringar. Du kan även ange vilken typ av meddelande som visas om registreringarna ligger utanför det definierade intervallet. Mer information om hur du ställer in räknare finns i [räknare](../setup-for-objects/counters.md).
+

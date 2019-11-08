@@ -3,7 +3,7 @@ title: Projektfakturering
 description: Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d91f6b1ccc3254e2c04d24c5f9bf2014c64e50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180039"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658630"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
@@ -55,6 +55,9 @@ Fakturaförslag kan skapas för följande transaktioner:
 -   Belopp som undandras av kunderna på föregående projektfakturor.
 -   Kreditfakturor
 -   Belopp som en kund betalar dig innan ett projekt har startats
+
+> [!NOTE]
+> Med funktionen **Aktivera sortering per resurs under skapande av projektfakturaförslag** kan projektrevisorn sortera de projekttransaktioner som är tillgängliga för fakturering av resursen när ett nytt projektfakturaförslag skapas. Rutnätet som visar de tillgängliga projekt transaktionerna har ett separat fält för resurs-ID och resurs, så att användaren kan filtrera och sortera efter resursnamnet. Den här funktionen är inaktiverad som standard och kan aktiveras i **arbetsytor > funktionshantering**. Kontakta systemadministratören om du vill ha hjälp med att aktivera den här funktionen.
 
 Du kan du skapa avgiftstransaktioner i ett fakturaförslag. Du kan också ändra försäljningspriset på tim-, utgifts-, artikel- och avgiftstransaktioner. När du bokför ett fakturaförslag kommer de uppdaterade priserna och transaktionerna att läggas till i projektrapporter och transaktionshistoriken. 
 
