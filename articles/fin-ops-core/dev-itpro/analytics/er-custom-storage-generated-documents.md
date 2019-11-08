@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a1c41cd4440eaf70f720bfd64884e6ef4662f87a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181483"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569094"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Ange en anpassad lagringsplats för skapade dokument
 
@@ -56,7 +56,7 @@ I den aktuella topologin [skapa ett nytt ER-format](tasks/er-format-configuratio
 
 Om du vill ange hur dokument som ett ER-format genereras skickas, måste du konfigurera [ER-destinationer](electronic-reporting-destinations.md). I varje ER-destination som konfigureras för att lagra genererade dokument som filer måste du ange en dokumenttyp för ramverket för dokumenthantering. Olika typer av dokumenttyper kan användas för att skicka dokument som ger upphov till olika ER-format.
 
-1. Lägg till en ny [dokumenttyp](../../fin-and-ops/organization-administration/configure-document-management.md) för ER-formatet som du har skapat eller tidigare importerat. I bilden nedan är dokumenttypen **FileX**.
+1. Lägg till en ny [dokumenttyp](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) för ER-formatet som du har skapat eller tidigare importerat. I bilden nedan är dokumenttypen **FileX**.
 2. Inkludera ett specifikt nyckelord i dess namn för att skilja den här dokumenttypen från andra typer av dokument. I bilden nedan är namnet exempelvis **(LOKAL) mapp**.
 3. I fältet **klass** anger du **bifoga fil**.
 4. I fältet **grupp** anger du **fil**.

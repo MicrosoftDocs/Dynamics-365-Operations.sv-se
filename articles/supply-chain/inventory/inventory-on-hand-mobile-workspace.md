@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f4f6de139d0399263fa19507d63e9521f489dcbd
+ms.sourcegitcommit: 38ce9f4ef499ad208f2fbbc51bc21b12c67dfa16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249527"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2574809"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobil arbetsyta för inventering av lagerbehållning
 
@@ -56,9 +56,9 @@ Närmare bestämt erbjuder den mobila arbetsytan följande funktioner:
     -   Genom fysiskt disponibelt (den här vyn representerar tillgänglig mängd utan reservationer.)
 
 ## <a name="prerequisites"></a>Förutsättningar
-Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
+Förutsättningarna varierar baserat på vilken version av Supply Chain Management som har distribuerats inom organisationen.
 
-### <a name="prerequisites-if-you-use-finance-and-operations"></a>Förutsättningar om du använder Finance and Operations 
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Förutsättningar om du använder Supply Chain Management
 Om Supply Chain Management används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Lagerbehållning**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>Förutsättningar om du använder plattformsuppdatering 3 eller senare 

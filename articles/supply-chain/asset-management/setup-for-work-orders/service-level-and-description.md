@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e645c25208f55b1032bc7f7c181c72db7a2f265
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 7dd577c930c6cc17da6baee30d3558656de01a09
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874657"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569833"
 ---
 # <a name="service-level-and-description"></a>Servicenivå och beskrivning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 När du skapar en arbetsorder kanske du vill definiera servicenivåerna för den och lägga till en allmän beskrivning i den. Du kan skapa servicenivåer för arbetsorder på sidan **Servicenivåer för arbetsorder** och beskrivningar på sidan **Arbetsorderbeskrivning**.
 
@@ -48,7 +48,7 @@ När du skapar en arbetsorder kanske du vill definiera servicenivåerna för den
 8. Om du vill ange en sluttid för arbetsordern, utöver slutdatumet, ställer du in alternativet **Ange sluttid** till **Ja**. Ange sluttiden i fältet **Sluttid**. Om du ställer in alternativet till **Nej**, används den aktuella tiden på dagen.
 9. Välj **Spara**.
 
-![Figur 1](media/19-setup-for-work-orders.png)
+![Sidan Servicenivå för arbetsorder](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Skapa en beskrivning
 

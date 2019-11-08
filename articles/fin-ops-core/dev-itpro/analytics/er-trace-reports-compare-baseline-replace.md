@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181345"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578228"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Förbättringar i spårning av resultaten från genererade ER-rapporter och jämföra dem med baslinjevärden
 
@@ -71,9 +71,6 @@ Baslinjen har lagts till för det valda formatet **Format för att lära ER-basl
 5. I fältet **Ange Id** anger du **1**.
 6. Ställ in alternativet **gör baslinjefiler** till **Ja**.
 7. Välj **OK**.
-
-    ![Dialogrutan elektroniska rapportparametrar](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Skärmbild av dialogrutan elektroniska rapportparametrar")
-
 8. Välj **baslinjer**.
 
     ![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
@@ -140,9 +137,6 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 
 1. På sidan **konfigurationer** på snabbfliken **ersättningar**, välj **välj komponenter**.
 2. I trädet formatkomponenter expanderar du **Utdata**, expanderar **Utdata\\dokument** och markerar sedan kryssrutan **Utdata\\dokument\\ProcessingDateTime**.
-
-    ![Dialogrutan välj komponenter](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Skärmbild av dialogrutan välj komponenter")
-
 3. Välj **OK**.
 
 ![Sidan Baslinjer med elektroniskt rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skärmbild av sidan Baslinjer med elektroniskt rapporteringsformat")
@@ -162,19 +156,14 @@ Genom att ställa in specifika ER-parametrar kan du utelämna meddelanden som va
 1. På sidan **Konfigurationer** i åtgärdsfönstret, på fliken **Konfigurationer** markerar du **Använd parametrar**.
 2. Ange alternativet **Undertryck baslinjevarningar** till **Ja** och välj sedan **OK**.
 
-![Dialogrutan användarparametrar](media/GER-BaselineSample-ERUserParameters1.png "Skärmbild av ialogrutan användarparametrar")
-
 ### <a name="review-the-generated-baseline-file"></a>Granska den skapade baslinjefilen.
 
 1. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Konfigurationer**.
 2. Välj **baslinjer**.
 3. Välj **bilagor**.
-
-    ![Sidan Bilagor](media/GER-BaselineSample-AttachedBaselineFile.PNG "Skärmbild av sidan Bilagor")
-
     > [!NOTE]
     > Den genererade filen innehåller bearbetningsdatumet och tidstexten (**"#"**) från bindningen som konfigurerats i den tillagda baslinjeregeln, inte från formatets bindning.
-
+    
 4. Stäng sidan **Bilagor**.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Kör det utformade ER-formatet och granska loggen för att analysera resultaten

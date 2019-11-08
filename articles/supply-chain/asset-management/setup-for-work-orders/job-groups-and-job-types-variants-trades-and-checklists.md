@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6cb53322b9bdaaa06c6040d8244b7e2ea05336ca
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249619"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571011"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 En tillgångstyp är kopplad till varje tillgång. Tillgångstyper definierar jobbtyperna för underhåll (och därmed underhållsjobben) som kan utföras på tillgångar. När du skapar en arbetsorder måste du välja en underhållsjobbtyp. Du kan bara välja de typer av underhållsjobb som är relaterade till inställningarna för den tillgångstyp som används för tillgången.
 
@@ -59,7 +59,7 @@ Först ställer du in kategorier av underhållsjobbtyp, varianterna av underhål
 
     När du har relaterat kategorier av underhållsjobbtyper till underhållsjobbtyper visar fältet **Jobbtyper** antalet underhållsjobbtyper som är relaterade till den här kategorin för underhållsjobbtyp.
 
-![Figur 1](media/01-setup-for-work-orders.png)
+![Sidan kategori för typ av underhållsjobb](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>Skapa en variant av underhållsjobbtyp
 
@@ -73,7 +73,7 @@ Först ställer du in kategorier av underhållsjobbtyp, varianterna av underhål
 
     På snabbfliken **Detaljer** visar fältet **Jobbtyper** antalet underhållsjobbtyper som har lagts till i denna variant av underhållsjobbtyp.
 
-![Figur 2](media/02-setup-for-work-orders.png)
+![Sidan varianter för typ av underhållsjobb](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>Skapa en yrkesgren för underhållsjobb
 
@@ -94,7 +94,7 @@ Först ställer du in kategorier av underhållsjobbtyp, varianterna av underhål
 
     På snabbfliken **Detaljer** visar fältet **Intyg** antalet intyg som har lagts till i denna yrkesgren för underhållsjobb.
 
-![Figur 3](media/03-setup-for-work-orders.png)
+![Sidan yrkesgren för underhållsjobb](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>Skapa en variabel för underhållschecklista
 
@@ -115,7 +115,7 @@ När du skapar rader för underhållschecklista i standardtypen av underhållsjo
 6. I fältet **Värde** anger du en relaterad beskrivning.
 7. Välj ett resultat för raden i fältet **Resultat**.
 
-![Figur 4](media/04-setup-for-work-orders.png)
+![Sidan variabel för underhållschecklista](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>Skapa en mall för underhållschecklista
 
@@ -144,7 +144,7 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
 
     På snabbfliken **Detaljer** visar fältet **Kontroller** det totala antalet checklisterader i mallen. Numret inkluderar de kapslade raderna i en befintlig mall som du har refererat till i mallen.
 
-![Figur 5](media/05-setup-for-work-orders.png)
+![Sidan mallar för underhållschecklista](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>Skapa en underhållsjobbtyp
 
@@ -167,7 +167,7 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
 
 11. På snabbfliken **Anläggningstyper** kan du lägga till tillgångstyper till underhållsjobbtypen.
 
-![Figur 6](media/06-setup-for-work-orders.png)
+![Sidan typer för underhållsjobb](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>Skapa standardrader för underhållsjobbtyp och relaterade prognoser, underhållschecklistor, verktyg, beskrivningar och bilagor
 
@@ -236,7 +236,7 @@ Mallar för underhållschecklistor kan användas som en gemensam uppsättning up
 31. Om du vill kopiera en standardtyp av underhållsjobb till en annan standardtyp av underhållsjobb markerar du standardraden för underhållsjobbtyp som du vill kopiera en annan inställning till, väljer **Kopiera inställning** och väljer sedan den standardtyp av underhållsjobb som du vill kopiera.
 32. Om du vill visa en lista över tillgångar, underhållsplaner eller underhållsomgångar som för tillfället använder en standardrad för underhållsjobbtyp markerar du raden och väljer **Används av**.
 
-![Figur 7](media/07-setup-for-work-orders.png)
+![Sidan standard för typ av underhållsjobb](media/07-setup-for-work-orders.png)
 
 När systemet väljer den standardtyp av underhållsjobb som ska användas på en arbetsorderrad, baseras valet på tillgången och inställningen för relaterad tillgångstyp. Tillgångshantering går igenom de standardposter för underhållsjobbtyp som är relaterade till den underhållsjobbtyp som är relaterade till tillgångstypen för att kontrollera om en möjlig matchning finns. Den kontrollerar alltid den mest specifika kombinationen först. Med andra ord, för att hitta den mest specifika kombinationen kontrollerar Tillgångshantering först om det finns en möjlig matchning för fältet **Yrkesgren**. Om ingen matchning hittas söker den efter en matchning för fältet **underhållsjobbtypvariant** och så vidare. Om det inte finns någon matchning söker programmet efter en matchning för fältet **Underhållsjobbtyp**, och så vidare (**Yrkesgren**, sedan **Variant av underhållsjobbtyp**, sedan **Underhållsjobbtyp**, sedan **Tillgång**, sedan **Modell**, sedan **Tillverkare** och sedan **Tillgångstyp**). Om det inte finns någon matchning används den standardpost där endast underhållsjobbtypen väljs.
 
@@ -257,7 +257,7 @@ När du har skapat de nödvändiga standardkombinationerna för underhållsjobbt
 4. Välj en kombination av underhållsjobbtyper för att se den relaterade inställningen för underhållschecklistor, prognoser och verktyg. Avsnittet **Detaljer** på snabbfliken **Standardvärden för underhållsjobbtyp** visar antalet relaterade underhållschecklistor, prognostiserade timmar, artiklar och så vidare, som är relaterade till den valda kombinationen av underhållsjobbtyp.
 5. Om du vill visa information om den valda underhållsjobbtypen väljer du **Underhållsjobbtyper**.
 
-![Figur 8](media/08-setup-for-work-orders.png)
+![Sidan underhållsjobbtyper för tillgång](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatisk uppdatering av prognoser för underhållsjobbtyper
 

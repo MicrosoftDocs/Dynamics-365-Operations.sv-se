@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7621ca961288af81966e0ac883c6525f89960654
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179998"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553150"
 ---
 # <a name="cash-overview-power-bi-content"></a>Kassaöversikt Power BI-innehåll
 
@@ -40,15 +40,14 @@ Följande inställningar måste slutföras för att data ska kunna visas i **kas
 1. Gå till **systemadministrations > inställningar > systemparametrar** för att ställa in **Systemvaluta** och **Systemets valutakurs**.
 2. Gå till **redovisning > Inställningar > redovisning** om du vill ange **redovisningsvaluta** och **valutakurstyp**.
 2. Definiera valutakurser mellan transaktionsvalutor och redovisningsvaluta, redovisningsvaluta och systemvaluta samt redovisningsvaluta och bankvalutor. Det gör du genom att gå till **redovisning > valutor > valutakurser**.
-3. Konfigurera och kör kassaflödesprognoser. Mer information om hur du ställer in prognoser för kassaflöden finns i <a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
-">Kassaflödesprognoser</a>. 
+3. Konfigurera och kör kassaflödesprognoser. Mer information om hur du ställer in prognoser för kassaflöden finns i [Kassaflödesprognoser](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
 4. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **LedgerCovLiquidityMeasurement**.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 
 Rapporter från **Kassaöversikt** Power BI-innehåll visas i arbetsytorna **Kassaöversikt** och **Bankhantering**.
 
-Om du vill visa kassaflödesprognoser med data måste du först köra prognosberäkningsprocessen genom att använda funktionen **beräkna kassaflödesprognoser** i området för kassa- och bankhantering.  Detta måste fyllas i för varje företag som ingår i prognosen.  Sedan måste du uppdatera det sammanlagda måttet LedgerCovLiquidityMeasurement på sidan **Enhetslagring**.  
+Om du vill visa kassaflödesprognoser med data måste du först köra prognosberäkningsprocessen genom att använda funktionen **beräkna kassaflödesprognoser** i området för kassa- och bankhantering. Detta måste fyllas i för varje företag som ingår i prognosen.  Sedan måste du uppdatera det sammanlagda måttet LedgerCovLiquidityMeasurement på sidan **Enhetslagring**.  
 
 I demonstrationssyfte kan du lägga till demodata för kassaflödesprognoser med sidan **generera data** från demodatamodulen.  Det här skriptet infogar data i kassaflödesprognostabeller för att snabbt fylla i information som behövs för rapporter.  Denna modul är endast tillgänglig om du använder en demodatapaketmodell i miljön. 
 

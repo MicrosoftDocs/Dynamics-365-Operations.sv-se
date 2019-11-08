@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0e6306698d351d33cae627e3741ad9a2eb6d893
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 30145a56de4f7e3dce039968791d2fc9b960077f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783613"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571540"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytta, ersätt och installera tillgångar
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Det här avsnittet förklarar hur du flyttar, ersätter och installerar tillgångar i tillgångshantering. Du kan skapa enskilda tillgångar som inte har några relationer till andra tillgångar eller du kan skapa en tillgångsstruktur som innehåller en överordnad tillgång (tillgång på översta nivån) och relaterade underordnade tillgångar (undertillgångar). I tillgångshantering finns tre metoder för att flytta och ändra platsen för en tillgång:
 

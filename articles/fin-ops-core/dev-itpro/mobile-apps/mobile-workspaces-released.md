@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d3a2de4aa1a49eaef43fca385033dd2bab4c9849
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 9af92ea64b98581b02c2ed1797332281dccc74b3
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2277976"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553031"
 ---
 # <a name="available-mobile-workspaces"></a>Tillgängliga mobila arbetsytor
 
@@ -34,11 +34,11 @@ Detta avsnitt visar de mobila arbetsytor som är tillgängliga för användning 
 |[Företagskatalog](company-directory-mobile-workspace.md)| Låter dig visa och kontakta andra medarbetare i din organisation.| 2017 juni |    
 |[Mitt team](manager-self-service-mobile-workspace.md)| Du kan visa dina underställda och utökade personal, samt även skicka beröm som berör personer i din rapporteringskedja.|2017 juni |     
 |[Godkännande av faktura](invoice-approval-mobile-workspace.md)| Innehåller en lista med fakturor som har tilldelats till dig via arbetsflödet för leverantörsfakturahuvud.| 2017 juni   |
-| [Utläggshantering](../../financials/expense-management/expense-management-mobile-workspace.md) | Du kan hämta och överföra ett kvitto så att du kan bifoga dessa till en senare utgiftsrapport. Den mobila arbetsytan låter även dig snabbt skapa en utgiftsrad med en kopplad inleverans. | 2017 april |
-| [Godkännande av inköpsorder](../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Visa och svara på inköpsorder med åtgärder såsom "godkänn" eller "avvisa". | 2017 april |
-| [Post för projekttid](../../financials/project-management/project-time-entry-mobile-workspace.md) | Du kan ange och spara tid för ett projekt genom att använda din mobila enhet. | 2017 mars |
-| [Kostnadskontroll](../../financials/cost-accounting/cost-controlling-mobile-workspace.md)     | Chefer för kostnadsställen kan se kostnadsställets effektivitet.                                                                                               |  2017 januari        |
-| [Lagerbehållning ](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få insyn i reserverades och tillgängliga lager.                                                                                                    |   2017 januari       |
-| [Försäljningsorder](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Håll dig uppdaterad om dina försäljningsorder.                                                                                                                          |  2017 januari                  |
-| [Leverantörssamarbete](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Leverantörer kan hållas uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter. |2017 januari    |
-| [Tillgångshantering](../../supply-chain/procurement/asset-management-mobile-workspace.md) | På den här arbetsytan kan användare visa och skapa underhållsbegäran och arbetsorder. Användarna kan också visa de tilldelade arbetsorderjobben i en kalender eller listvy. Tillgångar och funktionella platser kan också visas och sökas efter. |2019 oktober    |
+| [Utläggshantering](../../../finance/expense-management/expense-management-mobile-workspace.md) | Du kan hämta och överföra ett kvitto så att du kan bifoga dessa till en senare utgiftsrapport. Den mobila arbetsytan låter även dig snabbt skapa en utgiftsrad med en kopplad inleverans. | 2017 april |
+| [Godkännande av inköpsorder](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Visa och svara på inköpsorder med åtgärder såsom "godkänn" eller "avvisa". | 2017 april |
+| [Post för projekttid](../../../finance/project-management/project-time-entry-mobile-workspace.md) | Du kan ange och spara tid för ett projekt genom att använda din mobila enhet. | 2017 mars |
+| [Kostnadskontroll](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | Chefer för kostnadsställen kan se kostnadsställets effektivitet.                                                                                               |  2017 januari        |
+| [Lagerbehållning ](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få insyn i reserverades och tillgängliga lager.                                                                                                    |   2017 januari       |
+| [Försäljningsorder](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Håll dig uppdaterad om dina försäljningsorder.                                                                                                                          |  2017 januari                  |
+| [Leverantörssamarbete](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Leverantörer kan hållas uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter. |2017 januari    |
+| [Tillgångshantering](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | På den här arbetsytan kan användare visa och skapa underhållsbegäran och arbetsorder. Användarna kan också visa de tilldelade arbetsorderjobben i en kalender eller listvy. Tillgångar och funktionella platser kan också visas och sökas efter. |2019 oktober    |

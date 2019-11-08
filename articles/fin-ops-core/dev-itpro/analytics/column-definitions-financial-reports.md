@@ -3,7 +3,7 @@ title: Kolumndefinitioner i ekonomiska rapporter
 description: Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent eller ett byggblock som definierar innehållet i kolumner i en rapport. Precis som raddefinitioner kan grundläggande kolumndefinitioner användas för flera rapporter.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 76de08290058d43fbd1b4c0670db55ebcfbb8494
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 54e7d517e704b7162f3e091330a246386f0203ea
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174315"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572651"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -170,7 +170,7 @@ Du kan använda dialogrutan **Kolumnrubrik** för att lägga till, ändra och ta
 
 ### <a name="create-an-automatically-generated-header"></a>Skapa en automatiskt skapad rubrik
 
-Rapportutformaren kan skapa kolumnrubriker automatiskt baserat på autotextkoder. Autotextkoder är variabler som uppdateras varje gång som en rapport skapas. Alla kolumnrubriker kan innehålla dessa koder för att ange rapportinformation som kan variera, t.ex. datum eller periodnummer. Därför kan du använda en kolumndefinition för flera rapportdefinitioner, tidsperioder och rapportträd. Eftersom autotextkoder hänvisar till kalenderinformationen från detaljraderna i kolumndefinitionen, stöds de endast för kolumnerna **CALC** och **FD**. Sättet som en autotextkod visas i kolumnrubriken inverkar på hur den informationen visas i rapporten. I dialogrutan **Kolumnrubrik** visas autotextkoderna när gemener och versaler blandas. Därför visas texten i rapporten när gemener och versaler blandas. Till exempel i ett vanligt kalenderår är **@CalMonthLong** månad **7** **juli**. Om namnet på månaden ska visas med versaler (till exempel **JULI**) skriver du autotextkoden med versaler i fältet **Rubriktext**. Skriv till exempel **@CALMONTHLONG**. Du kan blanda koder och text. Till exempel anger du följande rubriktext: **Period @FiscalPeriod-@FiscalYear från @StartDate till @EndDate**. Rapportrubriken som skapas liknar följande text: **Period 1-02 från 01/01/02 till 01/31/02**.
+Rapportutformaren kan skapa kolumnrubriker automatiskt baserat på autotextkoder. Autotextkoder är variabler som uppdateras varje gång som en rapport skapas. Alla kolumnrubriker kan innehålla dessa koder för att ange rapportinformation som kan variera, t.ex. datum eller periodnummer. Därför kan du använda en kolumndefinition för flera rapportdefinitioner, tidsperioder och rapportträd. Eftersom autotextkoder hänvisar till kalenderinformationen från detaljraderna i kolumndefinitionen, stöds de endast för kolumnerna **CALC** och **FD**. Sättet som en autotextkod visas i kolumnrubriken inverkar på hur den informationen visas i rapporten. I dialogrutan **Kolumnrubrik** visas autotextkoderna när gemener och versaler blandas. Därför visas texten i rapporten när gemener och versaler blandas. För ett standardkalenderår **\@CalMonthLong** visas till exempel månad **7** till **Juli**. Om namnet på månaden ska visas med versaler (till exempel **JULI**) skriver du autotextkoden med versaler i fältet **Rubriktext**. Skriv till exempel **\@CALMONTHLONG**. Du kan blanda koder och text. Till exempel anger du följande rubriktext: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. Rapportrubriken som skapas liknar följande text: **Period 1-02 från 01/01/02 till 01/31/02**.
 
 > [!NOTE]
 > Formatet för en del av texten, till exempel det långa datumformatet, beror på dina regionala inställningar på servern. För att ändra dessa inställningar, klicka på knappen **Starta**, klicka på **Kontrollpanelen** och klicka sedan på **Region och språk**. Följande tabeller listar de tillgängliga autotextalternativen för kolumnrubriker.

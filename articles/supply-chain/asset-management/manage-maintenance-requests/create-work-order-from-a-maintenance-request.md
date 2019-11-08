@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f7af87f359cfe3a606c8be857dd905bfef75e97
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: c42f259a57675c3dbac829d6d671e91982ef9011
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847469"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571701"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Skapa arbetsorder från underhållsbegäran
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 När du har skapat underhållsbegäran kan du enkelt konvertera dem till arbetsorder. I det här avsnittet beskrivs det snabbaste sättet att arbeta med underhållsbegäran, uppdatera flera underhållsbegäran samtidigt och sedan skapa en arbetsorder för flera underhållsbegäran samtidigt. På sidan **aktiva underhållsbegäran** eller **underhållsbegäran för min funktionella plats** kan du också arbeta med en underhållsbegäran i taget och konvertera en underhållsbegäran till en arbetsorder.
@@ -53,5 +53,5 @@ När du har skapat underhållsbegäran kan du enkelt konvertera dem till arbetso
 
 6. Välj **tillgångshantering** \> **allmänt** \> **arbetsorder** \> **alla arbetsorder** och öppna den nya arbetsordern.
 
-    ![Figur 1](media/05-manage-maintenance-requests.png)
+    ![Öppna ny arbetsorder](media/05-manage-maintenance-requests.png)
 

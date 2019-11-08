@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 29f9975d8270b3f79d0aac0c62609b4a9c71ae89
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 322e3ac6f7c37fffdd4d59ed86bccec10559f4b9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874634"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569787"
 ---
 # <a name="work-order-project-setup"></a>Projektinställningar för arbetsorder
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I modulen **Tillgångshantering** krävs en projektrelation för varje arbetsorderjobb. Projektet som är kopplat till ett arbetsorderjobb gör det möjligt att spåra kostnader för olika projekt som är relaterade till Tillgångshantering, t.ex. interna underhållsprojekt, servicehanteringsprojekt och investeringsprojekt. 
 
@@ -72,7 +72,7 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 
     Som standard är startdatumet det datum då du lägger till arbetsorderprojektet på sidan. Det styrs av fältet **Giltig från**, som är dolt som standard. Om du vill visa fältet **Giltig från** väljer du **Visa** \> **Allt**. Du kan sedan använda fältet **Giltig från** tillsammans med fältet **Slutdatum** för att ange en begränsad giltighetsperiod för arbetsorderprojektet.
 
-    ![Figur 1](media/17-setup-for-work-orders.png)
+    ![Sidan Projektinställningar för arbetsorder](media/17-setup-for-work-orders.png)
 
 6. På fliken **Projektgrupp** väljer du **Lägg till**.
 7. I fältet **arbetsordertyp** väljer du en arbetsorder.
@@ -80,7 +80,7 @@ Inställningen möjliggör fullständig integration med modulen **Projekthanteri
 9. I fältet **Projektgrupp** väljer du den projektgrupp som ska vara relaterad till arbetsordertypen. En arbetsordertyp med namnet **Förebyggande underhåll** kan till exempel associeras med en projektgrupp som har namnet **Förebyggande underh** eller **Internt**. Alternativt kan en arbetsordertyp **Investering** som används för arbetsorder som är relaterade till investeringar och anläggningstillgångar associeras med en projektgrupp med namnet **Investera** eller **Investering**.
 10. Välj **Spara**.
 
-![Figur 2](media/18-setup-for-work-orders.png)
+![Sidan Projektinställningar för arbetsorder, Lägg till arbetsorder](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Varje gång en arbetsorderrad skapas söker Tillgångshantering efter en projektgrupp som ska relateras till jobbprojektet för arbetsordern. Sökningen baseras på inställningarna som beskrivs i det här avsnittet. Varje projektgrupp har en relaterad projekttyp. Projekt grupper som har projekttypen **Tid och material** eller **Fastpris** är endast giltiga för tillgångar som är relaterade till ett kundkonto.

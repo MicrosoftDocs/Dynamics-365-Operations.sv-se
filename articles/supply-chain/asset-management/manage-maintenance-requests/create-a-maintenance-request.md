@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024647"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571931"
 ---
 # <a name="create-maintenance-requests"></a>Skapa underhållsbegäranden
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Underhållsbegäran kan användas om underhållsarbetare eller produktionsarbetare upptäcker att utrustning behöver repareras, men reparationsjobbet inte kan utföras direkt.
 
@@ -55,7 +55,7 @@ Avsnittet **aktiva underhållsbegäran** i rutan **relaterad information** till 
 11. I fältet **noteringar** anger du eventuella ytterligare noteringar som krävs.
 12. Välj **OK**.
 
-![Figur 1](media/03-manage-maintenance-requests.png)
+![Skapa underhållsbegäran](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Efterföljande behandling av underhållsbegäran
 
@@ -70,7 +70,7 @@ I informationsvyn kan du uppdatera olika information. Nedan följer några exemp
 - Välj en typ av underhållsjobb och, om denna information är relevant, en relaterad underhållsjobbvariant och en jobbhandel.
 - Ange geografiska koordinater i fälten **latitud** och **longitud**. Alla koordinater som läggs till i en underhållsbegäran överförs automatiskt till en relaterad arbetsorder. 
 
-![Figur 2](media/04-manage-maintenance-requests.png)
+![Uppdatera underhållsbegäran](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Om du väljer en tillgång när du skapar en underhållsbegäran kan du lägga till ett fel till tillgången. När underhållsbegäran har skapats kan du lägga till fler fel, som du behöver. Om du vill lägga till fel väljer du **tillgångsfel** på sidan **alla underhållsbegäran**.

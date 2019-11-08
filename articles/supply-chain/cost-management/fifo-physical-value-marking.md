@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c24ce4dab179f439521c22e196b0b190821bc60f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 735f2d3d2f95185e886321c043cebcb6692fe8b1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561420"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570850"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysiskt värde och markering
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Först in, först ut (FIFO) är en lagermodell där de första (äldsta) inleveranserna utlevereras först. Ekonomiskt uppdaterade utleveranser från lagret kvittas mot de första ekonomiskt uppdaterade inleveranserna i lagret baserat på lagertransaktionens ekonomiska datum. 
 
@@ -54,7 +52,9 @@ I det här exemplet markeras inte artikelmodellgruppen till att inkludera fysisk
 -   5b. Lagrets ekonomiska utleverans för kvantiteten 1 till en självkostnad på 200,00 kronor vardera (löpande medelvärde eller ekonomiskt uppdaterade transaktioner).
 -   6. 7. Lagerstängningen utförs. Baserat på FIFO-metoden kvittas den första ekonomiskt uppdaterade utleveransen mot den första ekonomiskt uppdaterade inleveransen. En justering på 100,00 kronor görs av utleveranstransaktionen.
 
-Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. ![FIFO utan Inkludera fysiskt värde](./media/fifowithoutincludephysicalvalue.gif) 
+Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. 
+
+![FIFO utan Inkludera fysiskt värde](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -84,7 +84,9 @@ Om kryssrutan **Inkludera fysiskt värde** markeras för en artikel på sidan **
 -   6a. Lagrets fysiska utleverans för kvantiteten 1 till självkostnaden 212,50 kronor vardera.
 -   7. 7. Lagerstängningen utförs. Baserat på FIFO-metoden kommer den första ekonomiska utleveranstransaktionen att justeras eller kvittas mot den första uppdaterade inleveransen, antingen ekonomisk eller fysisk.
 
-Transaktion 5b kvittas mot inleveranstransaktion 1b. En negativ justering på 112,50 kronor görs på den här utleveranstransaktionen. Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. ![FIFO med Inkludera fysiskt värde](./media/fifowithincludephysicalvalue.gif) 
+Transaktion 5b kvittas mot inleveranstransaktion 1b. En negativ justering på 112,50 kronor görs på den här utleveranstransaktionen. Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. 
+
+![FIFO med Inkludera fysiskt värde](./media/fifowithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -114,7 +116,9 @@ Märkning är en process som gör det möjligt att länka, eller markera, en utl
 -   6a. Lagrets fysiska utleverans för kvantiteten 1 till självkostnaden 212,50 kronor vardera.
 -   7. 7. Lagerstängningen utförs. Eftersom de ekonomiskt uppdaterade FIFO-transaktionerna länkas till en befintlig inleverans kvittas dessa transaktioner mot varandra och ingen justerings görs.
 
-Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen nedan visas hur den här serien med transaktioner påverkas av FIFO-lagermodellen när länkning mellan utleverans och inleverans används. ![FIFO med Markering](./media/fifowithmarking.gif) 
+Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen nedan visas hur den här serien med transaktioner påverkas av FIFO-lagermodellen när länkning mellan utleverans och inleverans används. 
+
+![FIFO med Markering](./media/fifowithmarking.gif) 
 
 **Förklaringar till bilden**
 

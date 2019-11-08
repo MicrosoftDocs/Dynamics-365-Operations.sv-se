@@ -1,6 +1,6 @@
 ---
 title: Installera och konfigurera lagerstyrningsappen - översikt
-description: Det här avsnittet beskriver hur du installerar och konfigurerar Dynamics 365 Supply Chain Management - appen Lagerställe.
+description: Det här avsnittet beskriver hur du installerar och konfigurerar Dynamics 365 for Finance and Operations - appen Lagerställe.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251510"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548978"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Installera och konfigurera lagerstyrningsappen - översikt
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251510"
 > Det här ämnet beskriver hur man konfigurerar lagerstyrning för molndistribution. Om du letar efter hur du konfigurerar lagerstyrning för lokal distribution kan du läsa på denna länk om [lokal distribution](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-Det här avsnittet beskriver hur du installerar och konfigurerar Dynamics 365 Supply Chain Management - appen Lagerställe.
+Det här avsnittet beskriver hur du installerar och konfigurerar Dynamics 365 for Finance and Operations - appen Lagerställe.
 
 Appen Lagerställe finns i Google Play och i Windows Store. För den senaste versionen av Dynamics 365 Supply Chain Management erbjuds det här programmet som en fristående komponent, vilket innebär att det kan köras separat på enheter som används för lageruppgifter. För att kunna använda programmet måste du hämta programmet på samtliga enheter och konfigurera det att ansluta till din Supply Chain Management-miljö. Det här avsnittet beskriver hur du installerar programmet på dina enheter. Det förklarar också hur du konfigurerar programmet för anslutning till din Supply Chain Management-miljö.
 

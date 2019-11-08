@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5f1860907e3cc3c4830cc385771d5924c609ea6
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 0734416eccf149330b390cce897d2c254f6c698b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847538"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571632"
 ---
 # <a name="maintenance-request-reports"></a>Rapporter om underhållsbegäran
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I tillgångshantering kan du generera två rapporter som är relaterade till underhållsbegäran. En rapport visar detaljer och den andra rapporten innehåller en lista som kan användas för planering och uppföljning.
 
@@ -44,7 +44,7 @@ Rapporten **Information om underhållsbegäran** visar olika information som är
 
 Följande illustration visar ett exempel på rapporten **information om underhållsbegärandetyper**.
 
-![Figur 1](media/09-manage-maintenance-requests.png)
+![Rapporten Information om underhållsbegäran](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Skapa en rapport om lista för underhållsbegäran
 
@@ -57,4 +57,4 @@ Rapporten **lista för underhållsbegäran** visar en lista över alla underhål
 
 Följande illustration visar ett exempel på rapporten **lista för underhållsbegäran** för alla aktiva underhållsbegäran.
 
-![Figur 2](media/10-manage-maintenance-requests.png)
+![Rapport om lista för underhållsbegäran](media/10-manage-maintenance-requests.png)

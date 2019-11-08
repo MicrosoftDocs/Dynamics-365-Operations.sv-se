@@ -3,7 +3,7 @@ title: Rapportträddefinitioner i ekonomiska rapporter
 description: Den här artikeln innehåller information om rapportdefinitioner. En rapportträdsdefinition är en rapportkomponent eller ett byggblock som bidrar till att definiera strukturen och hierarkin i din organisation.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181828"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564177"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
@@ -50,7 +50,7 @@ En rapportträddefinition innehåller de kolumner som beskrivs i följande tabel
 
 | Rapportträdkolumn | Beskrivning |
 |-----------------------|-------------|
-| Företag               | Företagsnamn för rapportenheten. Värdet **@ANY** som endast brukar tilldelas sammanfattningsnivån, gör det möjligt att använda rapportträdet för alla företag. Alla underordnade grenar har ett tilldelat företag. |
+| Företag               | Företagsnamn för rapportenheten. Värdet **\@ANY** som endast brukar tilldelas sammanfattningsnivån, gör det möjligt att använda rapportträdet för alla företag. Alla underordnade grenar har ett tilldelat företag. |
 | Enhetsnamn             | Den kod som identifierar den här rapportenheten i det grafiska rapportträdet. Se till att upprätta ett unikt kodsystem som är konsekvent och som är enkelt för användarna att förstå. |
 | Enhetsbeskrivning      | Rapportenhetsrubriken visas i rapportens sidhuvudet eller sidfoten om du anger **UnitDesc** som kod i fliken **Sidhuvud och Sidfot** på rapportdefinitionen. Rubriken visas i rapportradbeskrivningen om du anger **UnitDesc** i cellen **Beskrivning** på raddefinitionen . |
 | Dimensioner            | En rapportenhet om du vill ställa ut information direkt från ekonomiska data. Den definierar den logiska placeringen och längderna för kontot och de relaterade segmenten. Varje rapportenhetsrad måste ha en dimension i den här kolumnen. Du kan också placera en dimension på en rad för en summeringsenhet (till exempel för utgifter som är direkt kopplade till enheten). Om du anger en dimension på en rad för en summeringsenhet ska konton som används i överordnade enheter inte användas i underordnade. I annat fall kan belopp dubbleras. |

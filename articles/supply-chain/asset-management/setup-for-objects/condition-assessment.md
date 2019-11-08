@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5294325f67f0484b39194b5bd9784a2e612001a4
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 05d1a38ab8de406a1615c474ffe39d231335fb67
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783592"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570063"
 ---
 # <a name="condition-assessment"></a>Villkorsutvärdering
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Det här avsnittet beskriver hur du skapar en mall för villkorsutvärdering och registrering på en tillgång i tillgångshantering. Villkorsutvärdering utförs med jämna mellanrum och det primära målet är att skapa och underhålla villkorsdata för tillgångar. Sett ur ett förebyggande underhållsperspektiv är det viktigt att övervaka viktig information som aktuellt tillstånd och återstående livslängd. Dessutom, om du utför villkorsutvärdering med jämna mellanrum, kommer du att kunna övervaka och jämföra förhållandena på maskinen i din fabrik.
 

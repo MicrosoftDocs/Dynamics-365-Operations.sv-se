@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba85b63abc11c9f32023e8499a02728dfc86bd1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188267"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578205"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Ställa in importprocessen för avancerad bankavstämning
 
@@ -36,7 +36,7 @@ Inställningen för import av bankutdrag varierar beroende på formatet på det 
 ## <a name="set-time-zone-preference"></a>Ställ in förinställd tidszon
 När du konfigurerar importinställningarna för bankutdraget kan det vara viktigt att ta hänsyn till tidszonen för datum- och tidsdata i de bankutdragsdokument som ska importeras. Standardvärdet är att alla datum- och tidsvärden redan finns i UTC-tid (Coordinated Universal Time) och att ingen tidszonkonvertering kommer att användas när du importerar data. 
 
-Det finns ett tillgängligt alternativ för att ange en tidszon som ska användas för import av data. Det här alternativet är tillgängligt i fältet **Förinställd tidszon** på varje sida för **information om källdataformat** snabbfliken **(arbetsyta för datahantering > konfigurera datakällor > välja ett dataformat > nationella inställningar**). Den här tidszonsinställningen kommer att gälla för all import som använder detta källdataformat. Du kan skapa så många datakällformat som du behöver för att importera data från flera tidszoner. Tids zons inställningen bör vara den lokala tidszonen för datum- och tidsdata i importfilen. Tids zons inställningen bör vara den lokala tidszonen för datum- och tidsdata i importfilen. 
+Det finns ett tillgängligt alternativ för att ange en tidszon som ska användas för import av data. Det här alternativet är tillgängligt i fältet **Förinställd tidszon** på varje sida för **information om källdataformat** snabbfliken **(arbetsyta för datahantering > konfigurera datakällor > välja ett dataformat > nationella inställningar**). Den här tidszonsinställningen kommer att gälla för all import som använder detta källdataformat. Du kan skapa så många datakällformat som du behöver för att importera data från flera tidszoner.  
 
 Den här tidszonen kanske inte är densamma som användarens eller företagets tidszon, så du bör klargöra vilken tidszon som datum- och tidsinformationen använder. Vi rekommenderar att du tar hänsyn till följande punkter när du anger en tidszonsinställning. 
 

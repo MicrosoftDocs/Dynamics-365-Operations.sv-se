@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b3ccbb7eed643abf613f8b75ae78854246d20f6d
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024578"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569894"
 ---
 # <a name="asset-management-parameters"></a>Parametrar för tillgångshantering
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I tillgångshantering måste allmänna parametrar som hänför sig till tillgångar, arbetsorder och schemaläggning av arbetsorder ställas in. Det här avsnittet innehåller information om hur du ställer in dem. Välj **tillgångshantering** > **inställningar** > **tillgångshanteringsparametrar** för att öppna formuläret.
 

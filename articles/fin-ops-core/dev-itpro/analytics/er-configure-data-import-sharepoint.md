@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181529"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564947"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurera dataimport från SharePoint
 
@@ -62,9 +62,9 @@ Spela upp uppgiftsguiden **ER data från en Microsoft Excel-fil** som är en del
 > Format för import av leverantörstransaktioner väljs som standardvärde för modellmappning. Därför om du kör en modellmappning av **1099-betalningsmodell** och den modellmappningen är av typen **till målet** kör modellmappningen det här formatet för att importera data från externa filer. Den använder sedan den data för att uppdatera programregister.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurera åtkomst till SharePoint för lagring av filer
-Om du vill lagra elektroniska rapportfiler på en SharePoint-plats, måste du konfigurera åtkomst till SharePoint Server-instansen som används av det aktuella företaget. I det här exemplet är USMF företaget. Instruktioner finns i [Konfigurera SharePoint-lagring](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Om du vill lagra elektroniska rapportfiler på en SharePoint-plats, måste du konfigurera åtkomst till SharePoint Server-instansen som används av det aktuella företaget. I det här exemplet är USMF företaget. Instruktioner finns i [Konfigurera SharePoint-lagring](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Följ instruktionerna i [Konfigurera SharePoint-lagring](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+1. Följ instruktionerna i [Konfigurera SharePoint-lagring](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 2. Öppna den konfigurerade SharePoint-siten.
 3. Skapa följande mappar där inkommande elektroniska rapportfiler kan lagras:
 
@@ -80,7 +80,7 @@ Om du vill lagra elektroniska rapportfiler på en SharePoint-plats, måste du ko
     - Mapp för filer med fel - den här mappen är för filer som misslyckades med import.
 
 4. Gå till **Organisationsadministration > Dokumenthantering > Dokumenttyper**.
-5. Skapa följande dokumenttyper som ska användas för att komma åt SharePoint-mappar som du har skapat. Instruktioner finns i [Konfigurera dokumenttyper](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Skapa följande dokumenttyper som ska användas för att komma åt SharePoint-mappar som du har skapat. Instruktioner finns i [Konfigurera dokumenttyper](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Dokumenttyp       | Grupp              | Plats      | SharePoint-mapp      |
 |--------------------|--------------------|---------------|------------------------|
