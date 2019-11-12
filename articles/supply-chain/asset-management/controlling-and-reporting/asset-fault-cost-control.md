@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2fe75c327cdc2bdd76173430ed551895f5941c7b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 3c34180ad99db29147587bb002aaa6badc918717
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918313"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652251"
 ---
 # <a name="asset-fault-cost-control"></a>Kostnadskontroll för tillgångsfel
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-I Tillgångshantering kan du beräkna kostnader för tillgångsfelregistreringar att få en översikt över de faktiska kostnaderna jämfört med för fel. Faktiska kostnader baseras på bokförda transaktioner. Datumet är feldatumet då symptomen registrerades.
+I Tillgångshantering kan du beräkna kostnader för tillgångsfelregistreringar att få en översikt över de faktiska kostnaderna jämfört. Faktiska kostnader baseras på bokförda transaktioner. Datumet är feldatumet då symptomen registrerades.
 
 1. Klicka på **Tillgångshantering** > **Förfrågningar** > **Tillgångsfel** > **Kostnadskontroll för tillgångsfel**.
 
@@ -39,20 +39,26 @@ I Tillgångshantering kan du beräkna kostnader för tillgångsfelregistreringar
 
 4. Välj "Ja" på växlingsknappen **Hoppa över noll** om du inte vill visa resultat som innehåller kostnaden noll.
 
-5. Du kan använda fältet **Nivå** för att indikera hur detaljerad kostnadskontrollraderna ska vara gällande funktionsplatser. Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla kostnadskontrollrader för tillgångsfel för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla kostnadskontrollrader för tillgångsfel på alla funktionsplatsnivåer som de är relaterade till.
+5. Du kan använda fältet **Nivå** för att indikera hur detaljerad kostnadskontrollraderna ska vara gällande funktionsplatser. 
+
+    Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla kostnadskontrollrader för tillgångsfel för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. 
+    
+    Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla kostnadskontrollrader för tillgångsfel på alla funktionsplatsnivåer som de är relaterade till.
 
 6. Om du vill begränsa sökningen kan du välja specifika tillgångar, feldatum och felorsaker på snabbfliken **Poster som ska ingå**.
 
 7. Klicka på **OK** för att starta beräkningen.
 
-8. I **Gruppera efter...**-åtgärdsfönstergrupper klickar du på de relevanta knapparna för att visa den obligatoriska detaljnivån för beräkningen. De valda knapparna i åtgärdsfönstret markeras. Klicka på en knapp för att aktivera och inaktivera den.
+8. Klicka på knapparna **Gruppera efter...** för att visa den obligatoriska detaljnivån för beräkningen. De valda knapparna **Gruppera efter** markeras. Klicka på en knapp för att aktivera och inaktivera den.
 
-I bilden nedan visas ett exempel på en kostnadskontrollberäkning för tillgångsfel.
+## <a name="example"></a>Exempel
 
-![Figur 1](media/05-controlling-and-reporting.png)
+Det här exemplet visar en kostnadskontrollberäkning för tillgångsfel.
 
-Information om hur ställer in fel finns i avsnittet [Felhantering](../setup-for-work-orders/fault-management.md).
+- I fältet **Ursprunglig budget** visas budgetkostnader från arbetsorderprognosen. 
+- I fältet **Faktisk kostnad** visas bokförda kostnader för arbetsorder. 
+- I fältet **Utfästa kostnader** visas det totala kostnaderna som ditt företag är förpliktigat att utföra i relation till arbetsorder.
 
->[!NOTE]
->I fältet **Ursprunglig budget** visas budgetkostnader från arbetsorderprognosen. I fältet **Faktisk kostnad** visas bokförda kostnader för arbetsorder. I fältet **Utfästa kostnader** visas det totala kostnaderna som ditt företag är förpliktigat att utföra i relation till arbetsorder.
+    ![Figur 1](media/05-controlling-and-reporting.png)
 
+För information om hur du ställer in fel, se avsnittet [Felhantering](../setup-for-work-orders/fault-management.md).

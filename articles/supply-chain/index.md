@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278334"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653704"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Hjälp resurser för Supply Chain Management
 
@@ -39,7 +39,7 @@ Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser i D
 Välj ett funktionsområde för att läsa mer om det.
 
 - [Tillgångshantering](asset-management/index.md)
-- [Kostnadsredovisning](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Kostnadsredovisning](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Kostnadshantering](cost-management/cost-management-home-page.md)  
 - [Lagerhantering](inventory/inventory-home-page.md)
 - [Huvudplanering](master-planning/master-planning-home-page.md)
@@ -109,7 +109,7 @@ Dessa inspelningar från teknikkonferenser handlar om produktfunktionerna i den 
 -  [Transporthantering i nya Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Bloggar
-Det finns många avsnitt om tillverkning och hantering av underleverantörer i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen Dynamics AX Manufacturing R&D</a> och <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">teambloggen Supply Chain Management in Dynamics AX R&D</a>. De flesta av inläggen skrevs för den föregående versionen av Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen. 
+Det finns många avsnitt om tillverkning och hantering av underleverantörer i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen Dynamics AX Manufacturing R&D</a> och <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">teambloggen Supply Chain Management in Dynamics AX R&D</a>. De flesta av inläggen skrevs för den föregående versionen, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen. 
 
 ## <a name="white-papers"></a>Dokumentation
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiska övningar för kostnadsredovisning</a> 

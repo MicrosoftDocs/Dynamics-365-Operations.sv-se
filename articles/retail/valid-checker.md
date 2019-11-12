@@ -3,7 +3,7 @@ title: Konsekvenskontroll av butikstransaktion
 description: I det här avsnittet beskrivs funktionen för konsekvenskontroll av butikstransaktioner i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b956565ac15b3d7b638cedaadc20923ee87b9c61
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018434"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622607"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsekvenskontroll av butikstransaktion
 
@@ -59,7 +59,10 @@ Batchprocessen **Validera butikstransaktioner** kontrollerar att butikens transa
 - **Presentkortsartikel** – Det går inte att returnera presentkortsartiklar i Retail. Saldot på ett presentkort kan dock betalas ut kontant. En presentkortsartikel som bearbetas som en returrad i stället för en utbetalningsrad gör att utdragsbokföringsprocessen misslyckas. Valideringsprocessen för presentkortsartiklar garanterar att de enda returraderna för presentkortsartiklar i butikstransaktionsregistren utgörs av rader för kontantutbetalning av presentkort.
 - **Negativt pris** – Validerar att det inte finns några negativa pristransaktionsrader.
 - **Artikel och variant** – Validerar att artiklar och varianter på transaktionsraderna finns i artikel- och varianthuvudfilen.
-- **Skattebelopp** – Validerar att skatteposterna stämmer med skattebeloppen på raderna. 
+- **Momsbelopp** – Validerar att skatteposterna stämmer med skattebeloppen på raderna.
+- **Serienummer** – Validerar att serienumret finns på transaktionsraderna för artiklar som kontrolleras med serienummer.
+- **Förtecken** – Validerar att förtecknet på kvantiteten och nettobeloppet är detsamma i alla transaktionsrader.
+- **Affärsdatum** – Validerar att de finansiella perioderna för alla affärsdatum för detaljhandelstransaktionerna är öppna.
 
 ## <a name="set-up-the-consistency-checker"></a>Ställ in konsekvenskontrollen
 

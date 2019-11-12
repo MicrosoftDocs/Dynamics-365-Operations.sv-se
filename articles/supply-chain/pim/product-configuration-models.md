@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 883337979201b3059b301b7aebf9952a70016989
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7eed6ca8236afa0e28cc4945757424c995f053d7
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250632"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653635"
 ---
 # <a name="product-configuration-models-overview"></a>Översikt över produktkonfigurationsmodeller
 
@@ -118,7 +118,7 @@ Om attributtypen är <strong>Booleskt</strong>, <strong>Heltal</strong> med ett 
 </tr>
 </tbody>
 </table>
-En systemdefinierad registerbegränsning representerar en koppling mellan en attributtyp och ett fält i ett Finance and Operations-register. Systemdefinierade registerbegränsningar kopplar dynamiskt attributtypen till fältet. Länken gör att attributet i en produktkonfigurationsmodell återspeglar data i fältet i Supply Chain Management-registret.</td>
+En systemdefinierad registerbegränsning representerar en koppling mellan en attributtyp och ett fält i ett Supply Chain Management-register. Systemdefinierade registerbegränsningar kopplar dynamiskt attributtypen till fältet. Länken gör att attributet i en produktkonfigurationsmodell återspeglar data i fältet i Supply Chain Management-registret.</td>
 </tr>
 <tr class="odd">
 <td>Beräkningar</td>

@@ -1,6 +1,6 @@
 ---
-title: Skanna streckkoder med hjälp av en kamera i Dynamics 365 Supply Chain Management - Lagerhållningsappen
-description: Det här avsnittet beskriver hur du ställer in Dynamics 365 Supply Chain Management – Lagerhållningsappen för att skanna streckkoder med en kamera på en mobil enhet.
+title: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations - Lagerhållningsappen
+description: Det här avsnittet beskriver hur du ställer in Dynamics 365 for Finance and Operations – Lagerhållningsappen för att skanna streckkoder med en kamera på en mobil enhet.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58cf27a250778d68bdffa1eefa5e939276e467fc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251481"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578159"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Skanna streckkoder med hjälp av en kamera i Dynamics 365 Supply Chain Management - Lagerhållningsappen
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du ställer in Dynamics 365 Supply Chain Management – Lagerhållningsappen för att skanna streckkoder med en kamera på en mobil enhet. 
+Det här avsnittet beskriver hur du ställer in Dynamics 365 for Finance and Operations – Lagerhållningsappen för att skanna streckkoder med en kamera på en mobil enhet. 
 
 ## <a name="prerequisites"></a>Förutsättningar
 Om du vill använda den här funktionen måste du ha version 1.2.0.0 av Lagerhållningsappen installerat och enheten måste ha en kamera. När du öppnar programmet, efter att ha uppdaterat, uppmanas du att tillåta appen att använda kameran. Om enheten inte har någon kamera visas inte frågan och du kan inte använda en kamera som skanner. 
@@ -49,7 +49,7 @@ Sidan för kamera initieras på varje sida där inmatningsfält har indataläge 
 
 | Sidan Task and details | Kamerasida | 
 | :---------------------: | :--------------------: |
-| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
+| ![Sidan Kameraskanning exempelinformationssida](./media/camera-scanning-example-task-detail-page50.png)          | ![Kameraskanning exempel, kamerasida mindre](./media/camera-scanning-example-camera-page50.png)          |
 
 När du klickar på knappen kamera på kamerasidan visas den nedtonad under identifiering av en streckkod. Om en streckkod inte identifieras inom 5 sekunder inaktiveras processen och kameraknappen blir tillgänglig igen. Du kommer sedan att kunna försöka skanna streckkoden igen.
 

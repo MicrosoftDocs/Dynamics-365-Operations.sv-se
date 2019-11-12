@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783605"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571080"
 ---
-# <a name="asset-criticalities"></a>Allvarlighetsgrad för tillgång
+# <a name="asset-criticality-types"></a>Allvarlighetsgradtyper för tillgång
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Det här avsnittet beskriver allvarlighetsgradtyper för tillgång i tillgångshantering. Tillgångarnas allvarlighetsgrad är relaterad till tillgångar och överförs till arbetsorder. Det går inte att ändra på en arbetsorder. Tillgångens allvarlighetsgrad används för att beräkna allvarlighetsgrad för arbetsorder vid schemaläggning av arbetsorder. Med andra ord används den för att beräkna i vilken utsträckning ett underhållsjobb på en tillgång påverkar produktionsschemat och produktiviteten i företaget. Mer information om den inställning som är relaterad till beräkningen av bedömningspoäng för arbetsorderplanering finns i [i parametrar för tillgångshantering](../setup-for-objects/enterprise-asset-management-parameters.md).
 
@@ -43,7 +43,7 @@ Om du vill ställa in allvarlighetsgrad kan du först skapa allvarlighetsgradtyp
 4. Ange ett namn för allvarlighetsgradtypen i fältet **Namn**.
 5. Ange en faktor i fältet **Faktor**. Den här faktorn används under beräkningen av arbetsorderplanering för att fastställa den allvarlighetsgradpost som ska användas. (Den post som har den högsta faktorn används alltid.) Den här inställningen är relevant om, som visas i följande illustration, allvarlighetsgradrader skapas som har samma allvarlighetsgradvärde.
 
-    ![Figur 1](media/23-setup-for-objects.png)
+    ![Sidan Typer av allvarlighetsgrad](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Ställ in allvarlighetsgrad för tillgång
 

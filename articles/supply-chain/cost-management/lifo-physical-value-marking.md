@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565706"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569281"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysiskt värde och markering
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Sist in, först ut (LIFO) är en lagermodell där de senast (nyaste) anskaffade inleveranserna utlevereras först. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen. 
 
@@ -56,7 +54,9 @@ I det här exemplet markeras inte artikelmodellgruppen till att inkludera fysisk
 -   5b. Lagrets ekonomiska utleverans för kvantiteten 1 till en självkostnad på 200,00 kronor vardera (löpande medelvärde eller ekonomiskt uppdaterade transaktioner).
 -   6. 7. Lagerstängningen utförs. Baserat på LIFO-metoden kvittas den sista ekonomiskt uppdaterade utleveransen mot den sista ekonomiskt uppdaterade inleveransen. En justering på 100,00 kronor görs av utleveranstransaktionen.
 
-Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna på 150,00 kronor. Följande illustration visar effekten av LIFO-lagermodellen på den här serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. ![LIFO utan Inkludera fysiskt värde](./media/lifowithoutincludephysicalvalue.gif) 
+Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna på 150,00 kronor. Följande illustration visar effekten av LIFO-lagermodellen på den här serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. 
+
+![LIFO utan Inkludera fysiskt värde](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -90,7 +90,9 @@ Illustrationen som följer visar dessa transaktioner:
 
 Transaktion 6a justeras mot inleveranstransaktion 4b. Systemet kvittar inte dessa transaktioner eftersom inleveransen uppdateras fysiskt men inte ekonomiskt. I stället bokförs en justering på 87,50 kronor på den fysiska utleveranstransaktionen. Transaktion 5b justeras efter den fysiska inleveranstransaktionen 3a. Systemet kvittar inte dessa transaktioner eftersom ingen av dem är ekonomiskt uppdaterad. I stället görs bara en justering på -37,50 kronor i utleveranstransaktionen. Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 20,00 USD. 
 
-I illustrationen visas effekten av den LIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. ![LIFO med Inkludera fysiskt värde](./media/lifowithincludephysicalvalue.gif) 
+I illustrationen visas effekten av den LIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. 
+
+![LIFO med Inkludera fysiskt värde](./media/lifowithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
 
@@ -132,7 +134,9 @@ Illustrationen som följer visar dessa transaktioner:
 
 Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. 
 
-I illustrationen nedan visas hur den här serien med transaktioner påverkas av LIFO-lagermodellen när länkning mellan utleverans och inleverans används. ![LIFO med Markering](./media/lifowithmarking.gif) 
+I illustrationen nedan visas hur den här serien med transaktioner påverkas av LIFO-lagermodellen när länkning mellan utleverans och inleverans används. 
+
+![LIFO med Markering](./media/lifowithmarking.gif) 
 
 **Förklaringar till bilden**
 
@@ -146,7 +150,4 @@ I illustrationen nedan visas hur den här serien med transaktioner påverkas av 
 - Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 - Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 - Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
-
-
-
 

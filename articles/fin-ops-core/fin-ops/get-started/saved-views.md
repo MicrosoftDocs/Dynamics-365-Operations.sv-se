@@ -3,7 +3,7 @@ title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 4b1bd7b869b68f82ce8056ac9f87a0d3bdce4102
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2f76c4e50649d3eda951940a2186348c29474dc6
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190889"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658677"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -37,9 +37,11 @@ Med traditionell anpassning kan användarna bara ha en enda uppsättning anpassn
 
 -    Vyer som skapats för vissa sidtyper kan också inkludera användardefinierade filter eller sorteringar, som gör att användarna snabbt kan komma tillbaka till ofta filtrerade datauppsättningar. Mer information finns i avsnittet [Vilka sidor stöder vyer](saved-views.md#what-pages-support-views) för mer information. 
 
--    Vyer kan publiceras i säkerhetsroller, vilket innebär att alla användare med den rollen kan komma åt och använda den vyn, oavsett användarens möjlighet att anpassa. Med den här publiceringsfunktionen kan företag definiera företags standardvyer som är optimerade för deras verksamhet. Mer information finns i avsnittet [Hantera anpassningar på en befattningsnivå med vyer](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
+-    Vyer kan publiceras till användare i specifika säkerhetsroller och specifika juridiska personer. Därför kan alla användare som har en angiven roll i en angiven juridisk person komma åt och använda den vyn, även om användaren kanske inte kan anpassa den. Med den här publiceringsfunktionen kan företag definiera företags standardvyer som är optimerade för deras verksamhet. Mer information finns i avsnittet [Hantera anpassningar på en befattningsnivå med vyer](saved-views.md#managing-personalizations-at-an-organizational-level-with-views).
 
 -    Till skillnad från traditionell anpassning sparas inte vyer automatiskt när en användare utför explicita anpassningar eller filtrerar en lista. Det krävs explicita sparanden för att skapa en vy före eller efter att de ändringar som är associerade med vyn har gjorts och för att se till att definitioner inte oavsiktligt ändras av filter eller anpassningar som inte är avsedda för långsiktig användning.  
+
+-    Vyer kan läggas till i arbetsytor som paneler, listor eller länkar. Därför kan en filtrerad datauppsättning placeras på en arbetsyta och användarna kan associera en uppsättning anpassningar som är relevanta för den datauppsättningen med panel eller länk.
 
 ## <a name="switching-between-views"></a>Växla mellan vyer
 När vyer har aktiverats för en miljö kommer alla sidor som har stöd för vyer att innehålla en komprimerad vyväljarkontroll längst upp i formuläret som visar namnet på den aktuella vyn.  
@@ -52,9 +54,9 @@ Det finns två storleksvariationer i vyväljaren:
  
 Om du klickar på vyns namn öppnas vyväljaren och visar listan över tillgängliga vyer för den här sidan.
 
--    **Klassiskt läge**: Den klassiska vyn är sidans färdigkonfigurerade vy utan några uttryckliga anpassningar som används.  
+-    **Standardvy**: Vyn **Standard** (tidigare kallad **klassisk** vy) är sidans färdigkonfigurerade vy, där inga uttryckliga anpassningar tillämpas.
 -    **Personliga vyer**: vyerna utan hänglås representerar dina personliga vyer. Detta är vyer som du har skapat eller som en administratör har gett dig.  
--    **Låsta vyer**: vissa vyer (som den klassiska vyn och alla vyer som har publicerats i din roll) har ett hänglås bredvid dem i vyväljaren, vilket indikerar att du inte kan redigera dessa vyer. Implicita anpassningar som avspeglar sidanvändningen sparas automatiskt, till exempel för att ändra bredden på en rutnätskolumn eller för att expandera eller komprimera en snabbflik. Du kan dock göra en personlig vy baserat på en låst vy med åtgärden **Spara en kopia** om du har anpassningsprivilegier.
+-    **Låsta vyer**: vissa vyer (t.ex. vyn **Standard** och alla vyer som publiceras till din roll) har symbolen för hänglås intill dem i vyväljaren. Den här symbolen visar att du inte kan redigera dessa vyer. Implicita anpassningar som återspeglar sid användningen sparas dock automatiskt. De här implicita anpassningarna inkluderar en ändring av bredden på en rutnätskolumn, eller en utvidgning eller komprimering av en snabbflik. Du kan dock använda åtgärden **Spara som** för att göra en personlig vy baserat på en låst vy om du har anpassningsprivilegier.
 -    **Nya vyer**: publicerade vyer som inte har öppnats ännu är avgränsade med en gnista till vänster om vyns namn.  
 
 Om du vill växla till en annan vy öppnar du först vyväljaren och väljer sedan den vy som du vill läsa in. 
@@ -69,7 +71,7 @@ Om du vill spara ändringarna följer du stegen nedan.
 2.  Så här ändrar du den befintliga vyn:
      1. Välj **Spara**. Observera att den här åtgärden inte kan aktiveras för låsta vyer. 
 3.  För att skapa en ny vy:
-     1.    Välj **Spara en kopia**. 
+     1.    Välj **Spara som**. 
      2.    Ange ett vynamn och en beskrivning (tillval).
      3.    Välj **Spara**.
 
@@ -81,9 +83,9 @@ Om du vill ändra standardvyn för en sida ska du följa de här stegen:
 2.  Välj ett vynamn för att öppna vyväljaren. 
 3.  Välj **mer** och sedan **fäst som standard**.  
 
-När du skapar en ny vy (med hjälp av åtgärden **Spara en kopia**), kan du också göra den nya vyn till standardvy genom att ange alternativet **fäst som standard** innan du sparar vyn.  
+När du skapar en ny vy (med hjälp av åtgärden **Spara som**), kan du också göra den nya vyn till standardvy genom att ange alternativet **fäst som standard** innan du sparar vyn.
 
-Observera att i vissa fall körs inte frågan som är kopplad till standardvyn första gången du navigerar till en sida. Om du till exempel navigerar genom en panel till en sida, körs panelens fråga oavsett vilken fråga som är kopplad till standardvyn. Om du navigerar till en sida vars klassiskat vy redan har en definierad fråga kommer den ursprungliga frågan att köras ursprungligen i stället för standardvyfrågan. När detta inträffar får du ett meddelande om att ett informationsmeddelande visas när vyn läses in. När du byter vy efter det att sidan har lästs in ska vyfrågan köras som förväntat.
+Observera att i vissa fall körs inte frågan som är kopplad till standardvyn första gången du navigerar till en sida. Om du till exempel navigerar genom en panel till en sida, körs panelens fråga oavsett vilken fråga som är kopplad till standardvyn. Om du navigerar till en sida vars klassiska vy redan har en definierad fråga kommer den ursprungliga frågan att köras ursprungligen i stället för standardvyfrågan. När detta inträffar får du ett meddelande om att ett informationsmeddelande visas när vyn läses in. När du byter vy efter det att sidan har lästs in ska vyfrågan köras som förväntat.
 
 ## <a name="managing-personal-views"></a>Hantera personliga vyer 
 I dialogrutan **Hantera mina vyer** får du grundläggande underhållsfunktioner för dina personliga vyer och ordningen på vyer i vyväljaren. Du öppnar den här sidan genom att klicka på vyns namn för att öppna vyväljarens listruta, välj **Mer** och välj sedan **hantera mina vyer**.  
@@ -97,24 +99,27 @@ För en lista med tillgängliga vyer för sidan är följande åtgärder tillgä
 Ändringar som görs i den här dialogrutan börjar gälla när du har valt knappen **Spara**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Hantera anpassningar på organisationsnivå med vyer
-Om du vill förstå förbättringarna i hantera anpassningar på organisationsnivå bör du först se hur hanteringen av anpassning som har utförts före vyer.  
+Det här avsnittet innehåller information om hur du förstår hur sparade vyer hjälper dig att förbättra hanteringen av anpassningar på befattningsnivå, i det här avsnittet beskrivs hur anpassningshanteringen fungerade innan vyer var tillgängliga.
 
 Utan vyer kan administratörer tillämpa en uppsättning anpassningar för en sida för en användare eller en grupp användare via sidan Anpassning. Om dessa användare har anpassningsbehörigheter används anpassningarna på den sidan. Det går dock inte att hindra användarna från att ytterligare anpassa sidan, vilket innebar att organisationen inte kunde garantera att användarna hade ett konsekvent användargränssnitt. Om någon av dessa användare inte har några anpassningsrättigheter laddades inte de anpassningar som de har fått av en administratör. Vidare, om nya användare har anställts i en organisation, måste administratörerna manuellt läsa in en uppsättning anpassningar för användaren. Ingen automatisk mekanism för att ange en viss uppsättning anpassningar bör vara tillgänglig för användare i den rollen.
 
-Med funktionen sparade vyer blir det betydligt enklare att administrera anpassningar, främst på grund av möjligheten att publicera vyer till säkerhetsroller. När en vy har har publiceras kan alla användare med den rollen kan komma åt och använda den vyn, oavsett användarens möjlighet att anpassa. Även om varje användare har en kopia av den publicerade vyn där sidanvändning (implicita anpassningar) används automatiskt kan inga användare spara uttryckliga anpassningar eller uppdateringar av frågan i den publicerade vyn (vilket innebär att publicerade vyer låses). Dessutom, om nya användare ges en roll som vyn har publicerats på, visas automatiskt de vyer som associeras med deras roller utan någon åtgärd från administratören. Om en användare ändrar roller i en organisation kommer de vyer som har associerats med deras gamla roll inte längre att vara tillgängliga för dem, utan att administratören vidtar någon åtgärd. Uppdateringar av en publicerad vy kan enkelt distribueras till användare genom att publicera vyn på rätt säkerhetsroller.
+Med funktionen sparade vyer blir det betydligt enklare att administrera anpassningar, främst på grund av möjligheten att publicera vyer till grupper av användare. När en vy har publicerats kan alla användare som har en av de definierade säkerhetsrollerna och som finns i de angivna juridiska personerna komma åt och använda vyn, även om användaren kanske inte kan anpassa den. Även om varje användare har en kopia av den publicerade vyn där sidanvändning (implicita anpassningar) används automatiskt kan inga användare spara uttryckliga anpassningar eller uppdateringar av frågan i den publicerade vyn. (Publicerade vyer är med andra ord låsta.) Om nya användare ges roller i juridiska personer som vyerna publicerats på, visas dessutom automatiskt de vyer som associeras med deras roller och juridiska enheter. Ingen ytterligare åtgärd krävs av administratören. Detta gäller även om användare ändrar roller i en organisation eller har åtkomst till olika juridiska personer, kanske de inte längre kan komma åt de vyer som tidigare har publicerats på dem. Ingen ytterligare åtgärd krävs av administratören.
+
+Uppdateringar av en publicerad vy kan enkelt distribueras till användare genom att publicera vyn på rätt säkerhetsroller och juridiska personer.
 
 Med den här publiceringsfunktionen kan företag definiera företags standardvyer som är optimerade för deras verksamhet, riktade mot användare i specifika säkerhetsroller.  
 
 ## <a name="publishing-views"></a>Publicerande vyer
-Under publiceringsprocessen kan vyer tilldelas till en eller flera säkerhetsroller, vilket innebär att alla användare med den rollen kan komma åt och använda den vyn, även om de inte kan redigera vyn. För närvarande har endast systemadministratörer behörighet till åtgärden **publicering** på vyväljarens rullgardinsmeny, men en ny säkerhetsroll blir tillgänglig i en framtida uppdatering för att ge publiceringsrättigheter till andra betrodda användare.  
+Under publiceringsprocessen kan vyer tilldelas till en eller flera säkerhetsroller för en eller flera juridiska personer. Därför kan alla användare som har åtkomst till en juridisk person och som har tilldelats en av dessa roller komma åt och använda vyerna, även om de inte kan redigera dem. Systemadministratörer har åtkomst till åtgärden **publicering** på vyväljarens rullgardinsmeny. Andra betrodda användare i organisationen kan emellertid också ges åtkomst att visa publicering via administratörsrollen **sparade vyer**.
 
 Gör så här om du vill publicera en vy: 
 1.  Skapa och spara en personlig kopia av vyn som du vill publicera. 
 2.  Med den vyn som nu laddas, välj vynamnet för att öppna vyväljarens rullgardinsmeny. 
 3.  Välj knappen **Mer** och välj sedan **Publicera**. Dialogrutan Publicera öppnas.  
-4.  Ange ett vynamn och en beskrivning (tillval) för vyn. Det här är det namn som de användare som får den här vyn visas i vyväljaren. Observera att inga dubblettnamn för publicerade vyer tillåts för en sida, även om listan över roller som de tillämpas på skiljer sig åt.  
-5.  Lägg till de säkerhetsroller som motsvarar de användare som kommer att få vyn.  
-6.  Markera **Publicera**.
+4.  Ange ett vynamn och en beskrivning (tillval) för vyn. Det namn du anger är det namn som de användare som får den här vyn visas i vyväljaren. Namnen på publicerade vyer för en sida måste vara unika. Inga dubblettnamn tillåts även om listan över roller eller juridiska personer som vyerna tillämpas på skiljer sig åt.
+5.  Lägg till de säkerhetsroller som motsvarar de användare som inriktas mot denna vy.
+6. Lägg till de juridiska personer som den här vyn ska vara tillgänglig för. 
+7.  Markera **Publicera**.
 
 Observera att i vissa miljöer kan det ta en stund (upp till en timme) innan användarna ser den publicerade vyn.
 
@@ -136,13 +141,13 @@ Om ändringarna i den publicerade vyn innefattar ändring av anpassningar eller 
 4.  Publicera vyn med det ursprungliga namnet. 
 
 ## <a name="managing-published-views"></a>Hantera publicerade vyer
-På samma sätt som hantring av personliga vyer ger dialogrutan **Hantera mina vyer** användare med publiceringsprivilegier grundläggande underhållsmöjligheter över den sidans publicerade vyer (förutom de egna personliga vyerna). Du öppnar den här sidan genom att klicka på vyns namn för att öppna vyväljarens listruta, välj **Mer** och välj sedan **hantera mina vyer**.
+På samma sätt som hantering av personliga vyer ger dialogrutan **Hantera mina vyer** användare med publiceringsprivilegier grundläggande underhållsmöjligheter över den sidans publicerade vyer (förutom de egna personliga vyerna). Du öppnar den här sidan genom att klicka på vyns namn för att öppna vyväljarens listruta, välj **Mer** och välj sedan **hantera mina vyer**.
 
 Medan alla användare ser fliken **mina vyer** med deras personliga vyer ser även användare med publiceringsprivilegier fliken **publicerad** som visar alla publicerade vyer för den sidan. Eftersom det kan finnas flera användare som publicerar vyer är det viktigt att du kan hantera den fullständiga listan med publicerade vyer, oavsett om du var den användare som faktiskt publicerade vyn.
 
 För en lista med alla publicerade vyer för sidan är följande åtgärder tillgängliga. 
 
--    **Publicera**: Använd åtgärden **publicera** om du vill publicera en vy på nytt med ändrade publiceringsparametrar (namn, beskrivning, säkerhetsroller).  
+-    **Publicera**: Använd åtgärden **publicera** om du vill publicera en vy på nytt efter att publiceringsparametrar (namn, beskrivning, säkerhetsroller eller juridiska personer) ändras.
 -    **Ta bort**: Använd åtgärden **Ta bort** för att ta bort en publicerad vy permanent. Den här åtgärden tar bort vyn för alla användare i systemet.  
  
 Ändringar som görs i den här dialogrutan börjar gälla när du har valt knappen **Spara**.
@@ -161,7 +166,9 @@ Följ stegen nedan om du vill aktivera sparade vyer medan funktionen är i förh
 
 4.  **Aktivera funktionen**: Leta upp funktionen **Sparade vyer** i listan över funktioner och välj **Aktivera nu** i informationsfönstret.
 
-Alla efterföljande användarsessioner börjar med att sparade vyer aktiveras.  
+Alla efterföljande användarsessioner börjar med att sparade vyer aktiveras.
+
+Sparade vyer kan bara användas i nivå 1-miljöer (utv/test) och nivå 2-miljöer (sandbox) för att kunna ge ytterligare tester och designändringar. En förhandsgranskning av sparade vyer kommer att vara tillgänglig i produktionsmiljöer i framtida versioner.
 
 Observera att om anpassningar inaktiveras för miljön inaktiveras vyer även om du följer stegen ovan. Detta beror på att vyerna bygger på under systemet för anpassning.
 
@@ -172,7 +179,7 @@ När vyer aktiveras sparas alla befintliga anpassningar för en användare och e
 Vyer är tillgängliga på de flesta men inte alla sidor. Vyer är för närvarande tillgängliga på alla helskärmssidor utom för instrumentpaneler och arbetsytor. Icke helskärmssidor, som omfattar dialogrutor, nedrullningsbara dialogrutor, uppslag, utökade förhandsgranskningar, stöder för närvarande inte vyer. Visa stöd för fler sidtyper, t.ex. arbetsytor och dialogrutor, kan komma att överväga för framtida uppdateringar.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Vem har tillåtelse att publicera vyer?
-För närvarande är systemadministratörer de enda användare som har behörighet att publicera vyer.  En ny säkerhetsroll är planerad i en framtida uppdatering, vilket ger kunderna större flexibilitet för vem som kan publicera dem.  
+Endast systemadministratörer och användare som har tilldelats administratörrollen **Sparade vyer** har behörighet att publicera vyer. 
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Varför kan jag inte spara filter med den här vyn? 
 Det finns några anledningar till varför ett filter kanske inte visas för att spara med en vy: 
@@ -181,7 +188,7 @@ Det finns några anledningar till varför ett filter kanske inte visas för att 
 
 - Om vyn är standardvy och navigeringssökvägen till sidan innehåller en fråga, vyns fråga kanske inte tillämpas från början. De två primära scenarierna för detta är: 
      - Om du navigerar från en panel till en sida, körs frågan oavsett vilken fråga som är kopplad till standardvyn. 
-     - Om du navigerar till en sida och den startpuunkten inkluderar en fråga kommer den ursprungliga frågan att köras ursprungligen i stället för standardvyfrågan. 
+     - Om du navigerar till en sida och den startpunkten inkluderar en fråga kommer den ursprungliga frågan att köras ursprungligen i stället för standardvyfrågan. 
      
   Du bör få en avisering när detta inträffar av ett informationsmeddelande när vyn läses in. Du kan också bekräfta genom att växla till den här vyn efter att sidan har lästs in, eftersom det gör att vyfrågan körs oavsett.  
 

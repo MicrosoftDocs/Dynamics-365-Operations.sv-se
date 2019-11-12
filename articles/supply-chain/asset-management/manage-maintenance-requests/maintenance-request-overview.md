@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 56d4abee451e6e22b9b9cc2fd36a13648202e7df
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: b19a92924d73847d9d2c09cd0ed111a9cbfdccbf
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847446"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571655"
 ---
 # <a name="maintenance-requests"></a>Underhållsbegäranden
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Underhållsbegäran är anteckningar eller deklarationer som skapas för att meddela en chef eller planerare att en tillgång kan kräva ett underhålls- eller reparationsjobb, men utan att skapa en arbetsorder. Om innehållet i en underhållsbegäran anses vara giltigt, kan en arbetsorder skapas baserat på underhållsbegäran.
 
@@ -45,7 +45,7 @@ Underhållsbegäran kan skapas för alla tillgångar i tillgångshantering. Olik
 
 Om du vill visa underhållsbegäran, välj **tillgångshantering** \> **allmänt** \> **underhållsbegäran** \> **alla underhållsbegäran**, **aktiva underhållsbegäran** eller **mina underhållsbegäran för funktionsplats**. Varje listsida visar en del av den information som är relaterad till en underhållsbegäran.
 
-![Figur 1](media/01-manage-maintenance-requests.png)
+![Visa underhållsbegäranden](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Använd listsidan **mina underhållsbegäran för funktionsplats** för att visa en lista över underhållsbegäran som innehåller antingen funktionsplatser som du är relaterad till som en anställd eller tillgångar som är installerade på funktionsplatser som du relaterade till som arbetstagare. (Information om hur du ställer in funktionsplatser på underhållsarbetare finns i [Underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md).)
@@ -54,7 +54,7 @@ Om du vill visa underhållsbegäran, välj **tillgångshantering** \> **allmänt
 
 Om du vill öppna detaljvyn för en post väljer du listsidan **Alla underhållsbegäran** i rutnätsvyn och väljer en länk i kolumnen **Underhållsbegäran**.
 
-![Figur 2](media/02-manage-maintenance-requests.png)
+![Visa information om begäran av katalogunderhåll](media/02-manage-maintenance-requests.png)
 
 Knapparna i åtgärdsfönstret är ordnade på flikar. I följande tabell beskrivs kortfattat knappar som är relaterade till tillgångshantering.
 

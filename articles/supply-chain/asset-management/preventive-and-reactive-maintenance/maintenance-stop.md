@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 4a7c57452b2f639b1f1b76bc79959c620c58ace1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922193"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571310"
 ---
 # <a name="maintenance-downtime"></a>Underhållsstopp
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Underhållsstopp används för att få en översikt över den kapacitet som krävs för att utföra underhållsjobb på specifika tillgångar under en angiven period. Du kan till exempel skapa en registrering av underhållsstopp för produktionsrad 10 i produktionshall 29-A på produktionsplatsen 02. Registreringen av underhållsstopp har en start- och sluttid som anger den period under vilken tillgångarna relaterade till underhållsstoppet inte är tillgängliga för produktion.
 

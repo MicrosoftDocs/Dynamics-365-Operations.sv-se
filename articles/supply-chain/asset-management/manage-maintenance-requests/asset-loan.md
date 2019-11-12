@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8680241b1300aceda3280893982a1eff3d2e09e0
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 9a365fb5b1e0126b9de56bcc84a14f2352208d4f
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847492"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571724"
 ---
 # <a name="asset-loans"></a>Tillgångslån
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Om ditt företag tar emot tillgångar för reparations- eller underhållsjobb från antingen interna platser eller kunder, och om du tillfälligt lånar tillgångar till dessa platser eller kunder, kan tillgångshantering spåra tillgångslånen.
 
@@ -47,7 +47,7 @@ Om ditt företag tar emot tillgångar för reparations- eller underhållsjobb fr
 
 Om du vill visa en lista över alla tillgångar som du har lånat till andra platser eller kunder väljer du **tillgångshantering** \> **allmänt** \> **tillgångslån** \> **alla tillgångslån**. Om kryssrutan **avslutad** markeras för en tillgång har tillgången registrerats som returnerad till ditt företag.
 
-![Figur 1](media/06-manage-maintenance-requests.png)
+![Hantera underhållsbegäranden](media/06-manage-maintenance-requests.png)
 
 På sidan **aktiva tillgångslån** kan du visa en lista över alla lånetillgångar som ännu inte har returnerats till ditt företag.
 

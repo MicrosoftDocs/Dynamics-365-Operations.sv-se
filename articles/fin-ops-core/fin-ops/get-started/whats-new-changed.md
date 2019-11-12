@@ -1,9 +1,9 @@
 ---
-title: Nyheter och ändringar – startsida
+title: Nyheter och ändringar på hemsidan för Finance and Operations
 description: Den här sidan hänvisar dig till teman som kan hjälpa dig att få kunskap om de nya funktionerna i de senaste Finance and Operations-apparna.
 author: josaw1
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c2dd8093102f92391cd782cda77afb17a3560010
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7559ef3aa3ce816d375f263ff4a4e0cf3d632249
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249307"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658723"
 ---
-# <a name="whats-new-or-changed-home-page"></a>Nyheter och ändringar – startsida
+# <a name="whats-new-or-changed-in-finance-and-operations-home-page"></a>Nyheter och ändringar på hemsidan för Finance and Operations
 [!include [banner](../includes/banner.md)]
 
-Den här sidan hänvisar dig till teman som kan hjälpa dig att få kunskap om de nya funktionerna i de senaste Finance and Operations-apparna.
+Från och med oktober 2019 är den här sidan inte längre underhållen. Informationen i det här avsnittet visar var du hittar funktions information för Finance and Operations-program som släpptes före den 2019 oktober.
 
 Om du vill ha information om hur du uppgraderar till den senaste versionen, se [Process för uppgradering den senaste uppdateringen](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
@@ -49,13 +49,6 @@ Tabellen innehåller viktiga versioner av programmet. För månatliga molnbasera
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>10.0.6</td>
-<td>10.0.234</td>
-<td>November 2019</td>
-<td><a href="whats-new-changed-10-0-6.md">Förhandsfunktioner i Dynamics 365 for Finance and Operations version 10.0.6 (november 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.5</td>
@@ -183,13 +176,6 @@ Tabellen innehåller viktiga versioner av programmet. För månatliga molnbasera
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>Plattform update 30</td>
-<td>7.0.5407</td>
-<td>November 2019</td>
-<td><a href="whats-new-platform-update-30.md">förhandsgranskningsfunktioner i Dynamics 365 for Finance and Operations-plattformsuppdatering 30 (november 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattform update 29</td>

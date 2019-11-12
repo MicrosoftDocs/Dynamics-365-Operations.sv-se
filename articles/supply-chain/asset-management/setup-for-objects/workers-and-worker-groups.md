@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c85fc24cdf0b3cd1a188ccf0f477ffbfa5fab960
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f0a8fcf26da02bd42f6ee45687c585091e3b945e
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783590"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570988"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Underhållsarbetare och arbetargrupper
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I det här avsnittet beskrivs hur du ställer in underhållsarbetare och arbetargrupper i tillgångshantering. I tillgångshantering kan du ansluta underhållsarbetare till funktionsplatser. (Mer information om funktionsplatser finns i [skapa funktionsplatser](../functional-locations/create-functional-locations.md).) Den här funktionen kan vara användbar om du till exempel schemalägger ett underhållsjobb på en dator som finns i funktionsplats 01 och du vill allokera underhållsarbetare från samma plats för att utföra jobbet.
 

@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6ecdece43b9d609e70e385dc5c3ec70b82f582ab
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249983"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653681"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -35,7 +35,7 @@ Det här avsnittet innehåller information om Flöden och operationer. Ett flöd
 <a name="overview"></a>Översikt
 --------
 
-Ett flöde beskriver ordningen av operationer som krävs för att producera en produkt eller produktvariant. Flödet definierar också operationsresurser som krävs, tid som krävs för att ställa in och utföra operationen och hur kostnaden ska beräknas för varje operation. Du kan använda samma flöde för att skapa flera produkter eller definiera ett unikt flöde för varje produkt eller produktvariant. Du kan också ha flera flöden för samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. den kvantitet som måste produceras. Definitionen av ett flöde i Finance and Operations består av fyra separata element som tillsammans beskriver produktionsprocessen:
+Ett flöde beskriver ordningen av operationer som krävs för att producera en produkt eller produktvariant. Flödet definierar också operationsresurser som krävs, tid som krävs för att ställa in och utföra operationen och hur kostnaden ska beräknas för varje operation. Du kan använda samma flöde för att skapa flera produkter eller definiera ett unikt flöde för varje produkt eller produktvariant. Du kan också ha flera flöden för samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. den kvantitet som måste produceras. Definitionen av ett flöde i Supply Chain Management består av fyra separata element som tillsammans beskriver produktionsprocessen:
 
 -   **Flöde** – ett flöde som definierar strukturen i produktionsprocessen. Den definierar alltså operationernas ordning.
 -   **Operation** – en operation som identifierar ett namngivet steg i flödet, som t.ex. **sammansättning**. Samma operation kan ske på flera flöden och kan ha olika operationsnummer.

@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 69d06ff649f4453df22d55062b43bcc8d4ecd763
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: f531f51d7f42f88e4da2d046e61313e9ada2b259
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874726"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569810"
 ---
 # <a name="work-order-lifecycle-states"></a>Livscykeltillstånd för arbetsorder
 
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Arbetsorderns livscykeltillstånd definierar de tillstånd som en arbetsorder kan gå igenom. Exempel: **Skapad**, **Schemalagd**, **Pågående** och **Avslutad**. Livscykeltillstånd för arbetsorder kan uppdateras manuellt på en arbetsorder eller uppdateras automatiskt (t.ex. under arbetsorderplaneringen).
 
@@ -38,7 +38,7 @@ De livscykeltillstånd för arbetsorder som krävs för dina arbetsorder måste 
 
 I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsplan** på snabbfliken **Allmänt** på sidan **Livscykeltillstånd för arbetsorder** (**Tillgångshantering** \> **Inställning** \> **Arbetsorder** \> **Livscykeltillstånd**).
 
-![Figur 1](media/09-setup-for-work-orders.png)
+![Sidan Livscykeltillstånd för arbetsorder](media/09-setup-for-work-orders.png)
 
 | Namn på alternativ                   | Beskrivning |
 |-------------------------------|-------------|
@@ -96,7 +96,7 @@ I följande tabell beskrivs alternativen i avsnitten **Arbetsorder** och **Tidsp
     - Om alternativet **Underhållsstopp** är inställt på **Ja** för livscykeltillståndet som en arbetsorder uppdateras till görs en validering av underhållsstopp på tillgången som hör till arbetsordern. Om registrering av ett underhållsstopp har gjorts, men det inte finns någon **Avslutat** registrering, visas ett meddelande när arbetsordern uppdateras till detta livscykeltillstånd.
     - Om standardprojektsinställningarna inte innehåller alla faser som du behöver för inställningarna för Tillgångshantering kan du ställa in användardefinierade projektfaser på fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**. I bilden nedan visas fliken **Projektfas** på sidan **Parametrar för projekthantering och redovisning**.
 
-    ![Figur 2](media/10-setup-for-work-orders.png)
+    ![Sidan Ställ in projektfaser för olika projekttyper](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Om livscykeltillståndet som du uppdaterar en arbetsorder till är inaktivt, raderas automatiskt journaler som är relaterade till arbetsordern, men som ännu inte har bokförts. Detta är ett sätt att garantera automatisk rensning av oanvända data. (Ett livscykeltillstånd är inaktivt om alternativet **Aktivt** för det har inställningen **Nej** på snabbfliken **Allmänt** på sidan **Livscykeltillstånd för arbetsorder**.)
@@ -114,7 +114,7 @@ Anledningen till att använda typer är att när en typ har definierats på till
 
 Följande illustration visar relationen mellan arbetsordertyper, livscykelmodeller och livscykeltillstånd.
 
-![Figur 3](media/11-setup-for-work-orders.png)
+![Sidan arbetsordertyp jämfört med sidan Livscykelmodeller för arbetsorder](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Livscykelmodeller för arbetsorder
 
@@ -138,4 +138,4 @@ När du har skapat de livscykeltillstånd för arbetsorder som krävs för dina 
 8. I fältet **Ej tidsplanerat livscykeltillstånd** väljer du det livscykeltillstånd som alltid ska väljas för en arbetsorder om tidsplanering för arbetsorder tas bort.
 9. Spara arbetsorderns livscykelmodell.
 
-![Figur 4](media/15-setup-for-work-orders.png)
+![Sidan Livscykelmodeller för arbetsorder](media/15-setup-for-work-orders.png)

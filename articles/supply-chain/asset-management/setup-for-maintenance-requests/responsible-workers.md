@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 432a235668bbd969f497003a98b7f66390e5308f
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 63f436ffd01ac56bb4bc0021e226dad46d7c3377
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790540"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569925"
 ---
 # <a name="responsible-maintenance-workers"></a>Ansvariga underhållsarbetare
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Ansvariga underhållsarbetare kan relateras till tillgångstyper, tillgångar, funktionsplatser, kategorier för underhållsjobbtyper, underhållsjobbtyper, underhållsjobbtypvarianter och handel. De kan användas på arbetsorder och underhållsbegäranden för att indikera en preferens för underhållsarbetare som ska ansvara för en arbetsorder. (Dessa underhållsarbetare är dock inte nödvändigtvis samma arbetstagare som är schemalagda för att utföra arbetsordern.) Användning av den här funktionen är valfri. Det kan till exempel användas för att välja ansvariga arbetare eller arbetargrupper för specifika arbetstyper eller arbetsområden.
 
@@ -53,4 +53,4 @@ Innan du kan ställa in ansvariga underhållsarbetare måste du ställa in arbet
 
 Följande illustration visar ett exempel på sidan **Ansvariga underhållsarbetare**.
 
-![Figur 1](media/08-setup-for-requests.png)
+![Sidan Ansvariga underhållsarbetare](media/08-setup-for-requests.png)

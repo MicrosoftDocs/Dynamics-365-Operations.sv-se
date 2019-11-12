@@ -19,18 +19,16 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 46aa4378a5b106d5717e0c841f2f7c9d6629489e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d655015a2048bb8e7d85d8ea3679b8b2506caf10
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251326"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2572116"
 ---
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i försäljningsprocessen
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Det här ämnet beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans.
 

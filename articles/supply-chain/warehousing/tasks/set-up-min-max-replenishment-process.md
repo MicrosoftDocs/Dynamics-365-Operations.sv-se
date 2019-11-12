@@ -3,7 +3,7 @@ title: Ställ in en min-max-process för lagerpåfyllnad
 description: Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin.
 author: perlynne
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef3c33125850662cfb0dfba6e6349ce32ceda0af
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
+ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924457"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559199"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Ställ in en min-max-process för lagerpåfyllnad
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin. När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen. Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb. Dessa uppgifter utförs vanligtvis av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena i anteckningar eller så kan du köra det på dina egna data. Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiveras för Lagerstyrningsprocesser.
+Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin. När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen. Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb. Dessa uppgifter utförs vanligtvis av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena nedan eller så kan du köra det på dina egna data. Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiveras för Lagerstyrningsprocesser.
 
 
 ## <a name="create-a-fixed-picking-location"></a>Skapa en fast plockplats

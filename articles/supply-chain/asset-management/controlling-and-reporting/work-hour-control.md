@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 916e7b8d5d494dbae0659504957f7f0798a6834b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1a59b4bbf1a4612cea1ba3bd536ba4b018fc621f
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918382"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652343"
 ---
 # <a name="work-hour-control"></a>Arbetstidskontroll
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I Tillgångshantering kan du beräkna timmar för att få en översikt över de faktiska timmarna jämfört med budgeterade timmar för tillgångar, funktionsplatser och arbetsorder. Faktiska timmar baseras på bokförda transaktioner.
 
@@ -47,7 +47,11 @@ De beräkningar som görs för tillgångar, funktionsplatser och arbetsorder är
 
 5. Välj "Ja" på växlingsknappen **Hoppa över noll** om du inte vill visa resultat som innehåller noll timmar.
 
-6. Du kan använda fältet **Nivå** för att indikera hur detaljerad timkontrollraderna ska vara gällande funktionsplatser. Om du till exempel infogar siffran "1" i fältet och har en funktionsplatshierarki med flera nivåer, visas alla timkontrollrader för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla timkontrollrader på alla de funktionsplatsnivåer som de är relaterade till.
+6. Du kan använda fältet **Nivå** för att indikera hur detaljerad timkontrollraderna ska vara gällande funktionsplatser. 
+
+    Om du till exempel infogar siffran "1" i fältet och har en funktionsplatshierarki med flera nivåer, visas alla timkontrollrader för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. 
+    
+    Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla timkontrollrader på alla de funktionsplatsnivåer som de är relaterade till.
 
 7. Välj "Ja" på växlingsknappen **Inkludera undertillgångar** om du vill visa kostnader som är relaterade till undertillgångar som separata rader.
 
@@ -55,14 +59,18 @@ De beräkningar som görs för tillgångar, funktionsplatser och arbetsorder är
 
 9. Klicka på **OK** för att starta beräkningen.
 
-10. I åtgärdsfönstergrupperna **Gruppera efter...** på sidan **Timkontroll för tillgång** klickar du på relevanta knappar om du vill visa den obligatoriska detaljnivån för beräkningen. De valda knapparna i åtgärdsfönstret markeras. Klicka på en knapp för att aktivera och inaktivera den.
+10. På sidan **Timkontroll för tillgång**, välj knapparna **Gruppera efter** för att visa den obligatoriska detaljnivån för beräkningen. De valda knapparna **Gruppera efter** markeras. Klicka på en knapp för att aktivera och inaktivera den.
 
-I bilden nedan visas ett exempel på ett beräkningsresultat i **Timkontroll för tillgång**.
+## <a name="example"></a>Exempel
 
-![Figur 1](media/04-controlling-and-reporting.png)
+I skärmbilden nedan visas ett exempel på ett beräkningsresultat i **Timkontroll för tillgång**.
+
+- I fältet **Ursprunglig budget** visas budgettimmar från arbetsorderprognosen. 
+- I fältet **Faktiska timmar** visas bokförda timmar på arbetsorder. 
+- I fältet **Utfäst tid** visas det totala antalet timmar som ditt företag är förpliktigat att utföra i relation till arbetsorder.
+
+![Exempel på beräkning av timkontroll för tillgång](media/04-controlling-and-reporting.png)
 
 Ett annat sätt att göra en timberäkning är att använda flera tillgångar i **Alla tillgångar** eller **Aktiva tillgångar**. Klicka sedan på knappen **Timkontroll** på snabbfliken **Allmänt**. De valda tillgångarna infogas automatiskt i fältet **Tillgång** på snabbfliken **Poster som ska ingå**. Klicka på **OK** i dialogrutan **Timkontroll för tillgång** och beräkningen för de valda tillgångarna visas. Samma procedur kan utföras för funktionsplatser i **Alla funktionsplatser** eller **Aktiva funktionsplatser**, och för arbetsorder i **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
->[!NOTE]
->I fältet **Ursprunglig budget** visas budgettimmar från arbetsorderprognosen. I fältet **Faktiska timmar** visas bokförda timmar på arbetsorder. I fältet **Utfäst tid** visas det totala antalet timmar som ditt företag är förpliktigat att utföra i relation till arbetsorder.
 

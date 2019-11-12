@@ -3,7 +3,7 @@ title: Återför journalbokföring
 description: I det här avsnittet beskrivs funktioner som gör att du kan återföra verifikationer från en verifikationstransaktionslista eller från ekonomiska journaler.
 author: MikeFalkner
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,51 +18,56 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a5456e60f1f3cee5f83ac7f725f7e01ba5bd7a1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: bc2ff30ef5d08759af700d683c207b0f5ed65d5b
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248595"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658985"
 ---
 # <a name="reverse-journal-posting"></a>Återför journalbokföring
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-I det här avsnittet beskrivs Dynamics 365 Finance-funktioner i Microsoft som gör att du kan återföra en hel journal eller återföra en eller flera verifikationer från verifikationstransaktionslistan oavsett ursprung. 
+I det här avsnittet beskrivs Microsoft Dynamics 365 Finance-funktioner som gör att du kan återföra en hel journal eller återföra en eller flera verifikationer från verifikationstransaktionslistan oavsett ursprung. 
 
 ## <a name="reversing-journals"></a>Återföra journaler
 
 Du kan återföra journalrader individuellt. Med en omvänd journalbokföring kan du även återföra en hel redovisningsjournal. För att återföra en journal: 
-- Öppna redovisningsjournalen och filtrera på bokförda journaler
-- Klicka på menyn Återför högst upp på sidan.
+
+- Öppna redovisningsjournalen och filtrera på bokförda journaler.
+- Klicka på menyn **Återför** högst upp på sidan.
 - Det totala antalet verifikationer och verifikationsrader samt det totala beloppet för raderna som återförts visas.
-- Välj Ja om du vill använda de befintliga transaktionsdatumen eller Nej om du vill ange ett nytt. I vissa fall kan perioden för den ursprungliga transaktionen stängas och du vill ange ett nytt transaktionsdatum för återföringen.
-- Om du har valt nej anger du ett transaktionsdatum för återföringen. 
-- Ange en kommentar som du vill lägga till i återföringstransaktionen
-- Klicka på knappen Återför.
+- Välj **Ja** om du vill använda de befintliga transaktionsdatumen eller **Nej** om du vill ange ett nytt. I vissa fall kan perioden för den ursprungliga transaktionen stängas och du måste ange ett nytt transaktionsdatum för återföringen.
+- Om du har valt **nej** anger du ett transaktionsdatum för återföringen. 
+- Ange en kommentar som du vill lägga till i återföringstransaktionen.
+- Välj knappen **Återför**.
 
 Transaktionerna kommer att återföras. 
 
-Om antalet verifikationsrader överstiger 100 rader, kommer återföringsprocessen att köras med batch-processen. Du kan granska resultatet av återföringen genom att visa kommentarerna i batch-jobbet som kördes. Alla fel kommer att anges i historiken för batchjobb.
+Om antalet verifikationer innehåller mer än 100 rader, kommer återföringsprocessen att köras med batch-processen. Du kan granska resultatet genom att visa kommentarerna i batch-jobbet. Alla transaktioner som inte kunde återföras visas i historiken för batchjobbet.
 
-Om antalet verifikationsrader är 100 rader eller färre, kommer återföringsprocessen att köras omedelbart. Resultaten visas i en dialogruta som visar en verifikation som inte kan återföras och orsaken till varför den inte kunde återföras. Klicka på Ok för att stänga dialogrutan
+Om verifikationen innehåller fler än 100 rader eller färre, kommer återföringsprocessen att köras omedelbart. Resultaten visas i en dialogruta som visar en verifikation som inte kan återföras och orsaken till varför den inte kunde återföras. Välj **OK** för att stänga dialogrutan.
 
 ## <a name="reversing-vouchers-from-the-voucher-transaction-list"></a>Återför verifikationer från listan med verifikationstransaktioner. 
 
 Du kan även återföra verifikationer från **transaktionslistan för verifikationer** i alla redovisningstransaktioner. Dessutom kan du återföra fler än en verifikation åt gången. 
 
 Så här återför du en eller flera verifikationer: 
-- Klicka på menyn Återför högst upp på sidan.
+
+- Klicka på menyn **Återför** högst upp på sidan.
 - Det totala antalet verifikationer och verifikationsrader samt det totala beloppet för raderna som återförts visas.
-- Välj Ja om du vill använda de befintliga transaktionsdatumen eller Nej om du vill ange ett nytt. I vissa fall kan perioden för den ursprungliga transaktionen stängas och du vill ange ett nytt transaktionsdatum för återföringen.
-- Om du har valt nej anger du ett transaktionsdatum för återföringen. 
-- Ange en kommentar som du vill lägga till i återföringstransaktionen
-- Klicka på knappen Återför.
+- Välj **Ja** om du vill använda de befintliga transaktionsdatumen eller **Nej** om du vill ange ett nytt. I vissa fall kan perioden för den ursprungliga transaktionen stängas och du måste ange ett nytt transaktionsdatum för att återföra den.
+- Om du har valt **nej** anger du ett transaktionsdatum för återföringen. 
+- Ange en kommentar som beskriver återföringstransaktionen.
+- Välj knappen **Återför**.
 
 Transaktionerna kommer att återföras. 
 
-Om antalet verifikationsrader överstiger 100 rader, kommer återföringsprocessen att köras med batch-processen. Du kan granska resultatet av återföringen genom att visa kommentarerna i batch-jobbet som kördes. Alla fel kommer att anges i historiken för batchjobb.
+Om det finns fler än 100 verifikationsrader, kommer återföringsprocessen att köras med batch-processen. Du kan granska resultatet genom att visa kommentarerna i batch-jobbet. Alla transaktioner som inte kunde återföras antecknas i historiken för batchjobbet.
 
-Om antalet verifikationsrader är 100 rader eller färre, kommer återföringsprocessen att köras omedelbart. Resultaten visas i en dialogruta som visar en verifikation som inte kan återföras och orsaken till varför den inte kunde återföras. Klicka på Ok för att stänga dialogrutan
+Om antalet verifikationsrader är 100 rader eller färre, kommer återföringsprocessen att köras omedelbart. Resultaten visas i en dialogruta som visar en verifikation som inte kan återföras och orsaken till varför. Välj **OK** för att stänga dialogrutan.
+
+Transaktioner kan bara återföras om de uppfyller affärsreglerna för att återföra dem. Leverantörsbetalningar kan inte återföras med funktionen som beskrivs i det här avsnittet. Leverantörsbetalningar måste återföras genom att följa stegen i [återför en leverantörsbetalning](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 

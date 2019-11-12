@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2c748fd230796643f1ed6279743da532e7cb320
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 99f76c684150f154404cbb241daacb7a8d05f7f9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874818"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571770"
 ---
 # <a name="create-maintenance-budgets"></a>Skapa underhållsbudgetar
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 
@@ -53,7 +53,7 @@ Underhållsbudgetar baseras på kostnadstyperna som används i Tillgångshanteri
     > [!NOTE]
     > När du har godkänt en underhållsbudget kan du inte räkna om eller justera de relaterade raderna på sidan **Budgetrader för underhåll** om du inte först tar bort godkännandet. Om du vill ta bort godkännandet av en underhållsbudget väljer du den på sidan **Underhållsbudgetar** och väljer sedan **Godkänn**. Välj sedan **OK** i dialogrutan **Godkänn budget**.
 
-![Figur 1](media/01-maintenance-budgets.png)
+![Underhållsbudgetar](media/01-maintenance-budgets.png)
 
 Du kan också skapa en ny underhållsbudget genom att kopiera en befintlig budget. På sidan **Underhållsbudgetar** väljer du först budgeten som ska kopieras och sedan **Kopiera**. Den här metoden är användbar om du till exempel har skapat en budget för en månad och vill kopiera den till andra månader.
 

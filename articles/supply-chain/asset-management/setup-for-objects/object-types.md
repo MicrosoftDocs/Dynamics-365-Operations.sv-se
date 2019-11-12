@@ -3,35 +3,35 @@ title: tillgångstyper
 description: Det här avsnittet beskriver hur du skapar tillgångstyper i tillgångshantering. Det beskriver också de element som är relaterade till tillgångstyper.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 288dac77f9d999012ec930ef2bca5c0921c2955f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: a19b8c40dd7d48b2d78723c4411f1699819c4026
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783606"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626095"
 ---
 # <a name="asset-types"></a>tillgångstyper
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Det här ämnet förklarar hur du skapar tillgångstyper. Det beskriver också de element som är relaterade till tillgångstyper. tillgångstyper används som allmänna kategorier för tillgångar. Exempel är CNC-maskiner, mätutrustning och lastbilsmotorer. tillgångstyper används för att hantera jobbtyper (underhållsuppgifter), livscykeltillstånd för tillgångar, tillgångsmått, tillgångsattribut, mallar för villkorsbedömning och tillgångsmodeller som kan väljas för en tillgång. Du måste ange tillgångstyp när du skapar en tillgång.
+
+Det här ämnet förklarar hur du skapar tillgångstyper. Det beskriver också de element som är relaterade till tillgångstyper. tillgångstyper används som allmänna kategorier för tillgångar. Exempel är CNC-maskiner, mätutrustning och lastbilsmotorer. tillgångstyper används för att hantera underhållsjobbtyper (underhållsuppgifter), livscykeltillstånd för tillgångar, räknare, tillgångsattribut, mallar för villkorsbedömning och tillgångsmodeller som kan väljas för en tillgång. Du måste ange tillgångstyp när du skapar en tillgång.
 
 För varje tillgångstyp kan variationer av tillgångstypinställningarna skapas. Om du till exempel har en tillgångstyp som heter **lastbilar** kan du skapa varianter av den tillgångstypen för olika tillgångstillverkare och tillgångsmodeller. För varje tillgångstypinställning kan du lägga till nödvändiga reservdelar och underhållsplaner.
 
@@ -39,35 +39,35 @@ Först ställer du in de nödvändiga tillgångstyperna. Därefter skapar du de 
 
 ## <a name="create-an-asset-type"></a>Skapa en tillgångstyp
 
-1. Välj **tillgångshantering** \> **inställningar** \> **tillgångstyper** \> **tillgångstyper**.
+1. Välj **tillgångshantering** > **inställningar** > **tillgångstyper** > **tillgångstyper**.
 2. Välj **ny** om du vill skapa en tillgångstyp.
 3. I fältet **tillgångstyp** anger du tillgångstyp-ID.
 4. Ange sedan ett namn i fältet **Namn**.
 5. I fältet **livscykelmodell för tillgång** väljer du en modell för tillgångslivscykel. Mer information om livscykeltillstånd för tillgångar och livscykelmodeller finns i [livscykeltillstånd för tillgångar](object-stages.md).
 6. Ange alternativet **total** till **ja** om summerade nyckeltal (KPI) ska beräknas för tillgångar som har denna tillgångstyp.
 7. Välj **Spara**.
-8. På snabbfliken **jobbtyper** väljer du de jobbtyper som ska relateras till tillgångstypen:
+8. På snabbfliken **Underhållsjobbtyper** väljer du de underhållsjobbtyper som ska relateras till tillgångstypen.
 
-    - Om du vill välja en jobbtyp markerar du fältet **Återstående jobbtyper** och väljer sedan högerpilknappen ![högerpilknappen](media/29-setup-for-objects.png) för att flytta den till avsnittet **Valda jobbtyper**.
-    - Om du vill välja alla tillgängliga jobbtyper väljer du ![pilen vidarebefordra alla](media/30-setup-for-objects.png). Alla jobbtyper överförs från fältet **återstående jobbtyper** till fältet **valda jobbtyper**.
-    - Om du vill avbryta valet av jobbtyp markerar du fältet **Valda jobbtyper** och väljer sedan vänsterpil knappen ![vänsterpil knappen](media/31-setup-for-objects.png) för att flytta den till fältet **Återstående jobbtyper**.
+    - Om du vill välja en underhållsjobbtyp väljer du den i fältet **återstående underhållsjobbtyper** och väljer sedan högerpilen ![högerpilen](media/29-setup-for-objects.png) för att flytta den till avsnittet **valda underhållsjobbtyper**.
+    - Om du vill välja alla tillgängliga underhållsjobbtyper väljer du ![pilen vidarebefordra alla](media/30-setup-for-objects.png). Alla underhållsjobbtyper överförs från fältet **återstående underhållsjobbtyper** till fältet **valda underhållsjobbtyper**.
+    - Om du vill avbryta valet av underhållsjobbtyp markerar du fältet **Valda underhållsjobbtyper** och väljer sedan vänsterpil knappen ![vänsterpil knappen](media/31-setup-for-objects.png) för att flytta den till fältet **Återstående underhållsjobbtyper**.
 
-9. Du kan också välja tillgångsmått som ska vara relaterade till tillgångstypen. På snabbfliken **tillgångsmått** gör du dina val med hjälp av metoderna som beskrivs för jobbtyper i steg 8. Mer information om inställning av tillgångsmått finns i [underhållstillgångsmått](counters.md).
-10. Du kan också välja attributtyper som ska vara relaterade till tillgångstypen. På snabbfliken **attributtyper** gör du dina val med hjälp av metoderna som beskrivs för jobbtyper i steg 8. Om du vill skapa den önskade sekvensen av attributtyper väljer du en attributtyp de **valda attributtyper** och använder sedan uppåtpil och nedåtpil för att flytta den. Sekvensen av attributtyper visas på tillgångar som använder den här tillgångstypen. Mer information om tillgångsattribut finns i [underhåll attributtyper](../setup-for-functional-locations/specification-types.md).
+9. Du kan också välja räknare som ska vara relaterade till tillgångstypen. På snabbfliken **räknare** gör du dina val med hjälp av metoderna som beskrivs för underhållsjobbtyper i steg 8. Mer information om hur du ställer in räknare finns i [räknare](counters.md).
+10. Du kan också välja attributtyper som ska vara relaterade till tillgångstypen. På snabbfliken **attributtyper** gör du dina val med hjälp av metoderna som beskrivs för underhållsjobbtyper i steg 8. Om du vill skapa den önskade sekvensen av attributtyper väljer du en attributtyp de **valda attributtyper** och använder sedan uppåtpil och nedåtpil för att flytta den. Sekvensen av attributtyper visas på tillgångar som använder den här tillgångstypen. Mer information om tillgångsattribut finns i [underhåll attributtyper](../setup-for-functional-locations/specification-types.md).
 
     > [!NOTE]
     > När du lägger till nya attributtyper på snabbfliken **attributtyper** uppdateras befintliga tillgångar automatiskt med den informationen.
 
-11. Du kan också välja de tillståndsbedömningsmallar som ska vara relaterade till tillgångstypen. På snabbfliken **Tillståndsbedömningar** gör du dina val med hjälp av metoderna som beskrivs för jobbtyper i steg 8. Mer information om villkorbedömningsmallar och registreringar finns i [villkorsbedömning](../setup-for-objects/condition-assessment.md).
+11. Du kan också välja de tillståndsbedömningsmallar som ska vara relaterade till tillgångstypen. På snabbfliken **Tillståndsbedömningar** gör du dina val med hjälp av metoderna som beskrivs för underhållsjobbtyper i steg 8. Mer information om villkorbedömningsmallar och registreringar finns i [villkorsbedömning](../setup-for-objects/condition-assessment.md).
 12. Snabbfliken **tillgångsmodell** visar alla kombinationer av tillgångstillverkare och -modeller som har ställts in för den valda tillgångstypen. Om du vill se kombinationerna uppdelade efter tillverkare väljer **Tillgångsmodell** för att öppna sidan **Tillgångsmodell**.
 
     På sidan **Tillgångsmodell** kan du lägga till tillgångsmodell – tillgångstyprelationer. Dessutom på sidan **tillgångstyper** kan du lägga till tillgångstillverkare – tillgångsmodell relationer direkt till en tillgångstyp. Slutligen, på sidan **tillgångsmodell** (**tillgångshantering** \> **inställningar** \> **tillgångar** \> **tillgångsmodell**), kan du skapa en ny tillgångstillverkare – tillgångsmodell – tillgångstyprelationer. Det finns därför tre sätt att ställa in och redigera tillgångstillverkare – tillgångsmodell – tillgångstyprelationer. Alla tillgängliga kombinationer visas från olika perspektiv, och du kan välja önskad ingångspunkt när du arbetar med installationen.
 
 > [!NOTE]
-> - Om du väljer tillgångsmått för en tillgångstyp, uppdateras valen automatiskt på sidan **tillgångsmått** (**tillgångshanterings** \> **inställningar** \> **tillgångar** \> **tillgångstyp** \> **tillgångsmått**).
-> - Fälten i avsnittet **Detaljer** på snabbfliken **allmänt** visar antalet jobbtyper, tillgångsmått, attribut och så vidare som ställs in för den valda tillgångstypen.
+> - Om du väljer räknare för en tillgångstyp uppdateras valen automatiskt på sidan **räknare** (**tillgångshantering** > **inställningar** > **tillgångar** > **tillgångstyper** > **räknare**).
+> - Fälten i avsnittet **Detaljer** på snabbfliken **allmänt** visar antalet jobbtyper, underhållsjobbtyper, räknare, attribut och så vidare som ställs in för den valda tillgångstypen.
 
-Arbetsorder som skapas manuellt är vanligtvis relaterade till avhjälpande underhåll, medan arbetsorder som skapas automatiskt är relaterade till förebyggande underhåll. När du skapar arbetsorder manuellt kan endast de jobbtyper som har valts på snabbfliken **jobbtyper** på sidan **tillgångstyper** användas. Automatiskt skapade arbetsorder kan dock använda alla jobbtyper som du skapar på sidan **jobbtyper** (**tillgångshantering** \> **inställning** \> **jobb** \> **jobbtyper**).
+Arbetsorder som skapas manuellt är vanligtvis relaterade till avhjälpande underhåll, medan arbetsorder som skapas automatiskt är relaterade till förebyggande underhåll. När du skapar arbetsorder manuellt kan endast de underhållsjobbtyper som har valts på snabbfliken **underhållsjobbtyper** på sidan **tillgångstyper** användas. Automatiskt skapade arbetsorder kan dock använda alla underhållsjobbtyper som du skapar på sidan **underhållsjobbtyper** (**tillgångshantering** \> **inställning** \> **jobb** \> **underhållsjobbtyper**).
 
 ## <a name="create-asset-type-setup-lines"></a>Skapa inställningsrader för tillgångstyp
 

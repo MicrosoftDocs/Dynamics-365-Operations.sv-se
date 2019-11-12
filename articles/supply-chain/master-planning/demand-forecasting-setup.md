@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249587"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653521"
 ---
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
@@ -72,7 +72,7 @@ Supply Chain Management använder en webbtjänst för maskininlärning för att 
 
 **Obs!** Azure-lagringskontonamn och nyckeln behövs bara om du använder ett anpassat lagringskonto. Om du använder den lokala versionen måste du ha ett anpassat lagringskonto på Azure, detta så att maskininlärningstjänsten kan få åtkomst till historiska data. 
 
-För att skapa efterfrågeförutsägelser kan du använda din egen service genom att använda Machine Learning Studio eller Supply Chain Management behovsprognoser för efterfrågeprognoser. Instruktioner för att implementera experiment för efterfrågeprognosticering som en webbtjänst finns i Finance and Operations På **behovsprognosparametrar** sidan, klicka på **Azure Machine Learning** fliken.
+För att skapa efterfrågeförutsägelser kan du använda din egen service genom att använda Machine Learning Studio eller Supply Chain Management behovsprognoser för efterfrågeprognoser. Instruktioner för att implementera experiment för efterfrågeprognosticering som en webbtjänst finns i Supply Chain Management. På **behovsprognosparametrar** sidan, klicka på **Azure Machine Learning** fliken.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Inställningar för maskininlärningstjänst för behovsprognoser
 Gå till **Huvudplanering** &gt; **Inställningar** &gt; **Efterfrågeprognosticering** &gt; **Algoritmparametrar för prognos** om du vill visa de parametrar som kan konfigureras för tjänst för efterfrågeprognosticering. Sidan **Algoritmparametrar för prognoser** visas standardvärden för parametrar. Du kan skriva över dessa parametrar på sidan **Parametrar för efterfrågeprognosticering**. På **fliken Allmänt om du** vill skriva över parametrar globalt, eller använda **posten fördelningsnycklar för** att skriva över parametrar per punkt fördelningsnyckel. Parametrar som är över för en fördelningsnyckel som endast påverkar prognosen för de objekt som associeras med objektet fördelningsnyckel.

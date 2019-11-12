@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03e200a5b5679d6e68592fbdba2354ae9f7f1b75
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179923"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570250"
 ---
 # <a name="general-journal-processing"></a>Hantering av allmänna journaler
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det här avsnittet innehåller en beskrivning av de funktioner som kan underlätta processen för allmänna journaler och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026726"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653428"
 ---
 # <a name="warehouse-configuration-overview"></a>Konfiguration av lagerställe – översikt
 
@@ -34,7 +34,7 @@ Det här avsnittet innehåller information om hur du konfigurerar ett lagerstäl
 **Anm.:** Den här artikeln gäller funktioner i modulen **Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
 
 ## <a name="warehouse-layout"></a>Layout för lagerställe
-Lagerhanteringssystemet i Finance and Operations ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå optimal lagereffektivitet.
+Lagerhanteringssystemet i Supply Chain Management ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå optimal lagereffektivitet.
 
 -   Du kan fastställa högprioriterade och lågprioriterade lagerområden för optimal placering av varor.
 -   Du kan dela upp till lagerstället i zoner som tar hänsyn till olika lagringsbehov, till exempel temperaturkrav eller olika omsättningshastigheter för artiklar.
@@ -42,7 +42,7 @@ Lagerhanteringssystemet i Finance and Operations ger flexibla sätt att definier
 -   Du kan gruppera platser genom att använda inställningar för begränsning för fysisk lagring.
 -   Du kan kontrollera hur artiklar lagras och plockas, baserat på frågedefinierade regler.
 
-Om du vill använda lagerstyrning i Finance and Operations måste du skapa ett lagerställe och aktivera funktionen för mer avancerade eller specialiserade lagerstyrningsaktiviteter. Välj alternativet **Använd lagerstyrningsprocesser** på sidan **Lagerställen**.
+Om du vill använda lagerstyrning i Supply Chain Management måste du skapa ett lagerställe och aktivera funktionen för mer avancerade eller specialiserade lagerstyrningsaktiviteter. Välj alternativet **Använd lagerstyrningsprocesser** på sidan **Lagerställen**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zongrupper, zoner, platstyper och platser
 
@@ -54,7 +54,7 @@ Som en del av processen för att aktivera en lagerställelayout måste du defini
 -   **Platstyper** – En logisk eller fysisk gruppering av lagerplatser. Du kan till exempel skapa en platstyp för alla byggnadsställningsplatser. Obligatoriska inställningar på sidan **Parametrar för lagerstyrning** kör processen att definiera mellanlagringsplatstyper och den slutgiltiga leveransplatstypen.
 -   **Platser** – Den lägsta nivån i platsinformationen. Platser används för att spåra var lagerbehållningen lagras och plockas på ett lagerställe.
 
-Enheterna som du skapar för att definiera din lagerställelayout som används i frågorna som du angav i arbetsmallar för att köra arbetsordrar på lagerstället. När du definierar zonerna, platstyperna och så vidare, beakta därför hur andra områden på lagerstället används för olika processer. Beakta även faktorer såsom de fysiska egenskaperna för ett visst område. Det kan exempelvis vara områden där du kan använda endast en viss typ av gaffeltruck. Eller om företaget har både produktions- och färdiga varor i samma anläggning, kanske du vill skapa ett enda lagerställe i Finance and Operations men sedan separera de här två operationerna genom att skapa två zongrupper. Ge enheterna beskrivande namn så att de är lätta att känna igen när du använder dem i mallfrågor.
+Enheterna som du skapar för att definiera din lagerställelayout som används i frågorna som du angav i arbetsmallar för att köra arbetsordrar på lagerstället. När du definierar zonerna, platstyperna och så vidare, beakta därför hur andra områden på lagerstället används för olika processer. Beakta även faktorer såsom de fysiska egenskaperna för ett visst område. Det kan exempelvis vara områden där du kan använda endast en viss typ av gaffeltruck. Eller om företaget har både produktions- och färdiga varor i samma anläggning, kanske du vill skapa ett enda lagerställe i Supply Chain Management men sedan separera de här två operationerna genom att skapa två zongrupper. Ge enheterna beskrivande namn så att de är lätta att känna igen när du använder dem i mallfrågor.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Lagringsbegränsningsplatser, platsprofiler och fasta plockplatser
 

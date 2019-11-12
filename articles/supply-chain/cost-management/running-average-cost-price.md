@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e14f38baaef32c72761594147feca8d08651a050
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7957b2a9cb24dcc61e3113bfd3cc3b1fa1e6d0a6
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547708"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569258"
 ---
 # <a name="running-average-cost-price"></a>Löpande genomsnittlig självkostnad
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Lagerstängningsprocessen kvittar utleveranstransaktioner mot inleveranstransaktioner baserat på den lagervärderingsmetod som har valts i artikelns artikelmodellgrupp. Innan en lagerstängning körs beräknar systemet en löpande genomsnittlig självkostnad som i de flesta fall används för bokföring av utleveranstransaktioner.
 
@@ -49,7 +47,7 @@ Följande tabell visar när systemet bokför lagertransaktioner med den löpande
 
 \* Täljare = (fysiskt belopp + ekonomiskt belopp) \*\* nämnare = (fysisk kvantitet + ekonomisk kvantitet) 
 
-**Obs!** Om alternativet **Inkludera fysiskt värde** inte markeras för en artikel använder Dynamics AX 0 (noll) för både fysiskt belopp och den fysiska kvantiteten. Information om det här alternativet finns i [Inkludera fysiskt värde](include-physical-value.md).
+**Obs!** Om alternativet **Inkludera fysiskt värde** inte markeras för en artikel använder systemet 0 (noll) för både fysiskt belopp och den fysiska kvantiteten. Information om det här alternativet finns i [Inkludera fysiskt värde](include-physical-value.md).
 
 ## <a name="avoiding-pricing-amplification"></a>Undvika prissättningsförstärkning
 Vid sällsynta tillfällen prissätter systemet flera uttag innan det finns tillräckligt många inleveranser att basera ett pris på. I det här scenariot kan uppskattningarna av genomsnittlig självkostnad blåsas upp alltför mycket. Det finns dock steg du kan vidta för att undvika prissättningsförstärkning eller begränsa dess effekter när det inträffar. **Scenario** Följande transaktioner görs för en artikel som du har valt **Inkludera fysiskt värde** för:
@@ -58,7 +56,7 @@ Vid sällsynta tillfällen prissätter systemet flera uttag innan det finns till
 2.  Du utlevererar ekonomiskt en kvantitet på 200.
 3.  Du tar fysiskt emot en kvantitet av 101 om vardera 2 020,00 kronor.
 
-När du undersöker den uppskattade löpande genomsnittliga självkostnaden för artikeln, räknar du med en självkostnad på 15,1 kronor vardera. I stället upptäcker du en uppskattade löpande genomsnittskostnad på 1 020,00 kronor, baserat på följande formel: Beräknat pris = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 ÷ 1 = 102 Den här prissättningsförstärkningen inträffar eftersom när 200 artiklar utlevereras ekonomiskt i steg 2, Dynamics AX måste prissätta 100 av artiklarna, innan den har några motsvarande inleveransen. Situationen orsakar negativt lager. Systemet beräknar sedan enhetspriset 10,00 kronor, som vi kan förvänta. När motsvarande 100 inleveranser ankommer har de enhetspriset 20,00 kronor vardera. 
+När du undersöker den uppskattade löpande genomsnittliga självkostnaden för artikeln, räknar du med en självkostnad på 15,1 kronor vardera. I stället upptäcker du en uppskattade löpande genomsnittskostnad på 1 020,00 kronor, baserat på följande formel: Beräknat pris = \[202 + (-100)\] ÷ \[101 + (-100)\] = 102 ÷ 1 = 102 Den här prissättningsförstärkningen inträffar eftersom när 200 artiklar utlevereras ekonomiskt i steg 2, måste systemet prissätta 100 av artiklarna, innan den har några motsvarande inleveransen. Situationen orsakar negativt lager. Systemet beräknar sedan enhetspriset 10,00 kronor, som vi kan förvänta. När motsvarande 100 inleveranser ankommer har de enhetspriset 20,00 kronor vardera. 
 
 **Obs!** Trots att utleveranserna leder till ett negativt lager, är lagret positivt när utleveranspriset beräknas. Därför används den löpande genomsnittliga självkostnaden istället för priset i artikelns huvudpost. I det här läget har systemet en lagervärdesförskjutning på 1 000,00 SEK. Även om förskjutningen bygger på 100 enheter, där det finns en enhetsförskjutning på 10,00 kronor vardera, har vi nu bara en enhet i lagret. Därför tilldelas förskjutningen på 1 000,00 kr till denna enda enhet. Resultatet blir den alltför uppblåsta uppskattade självkostnaden. 
 

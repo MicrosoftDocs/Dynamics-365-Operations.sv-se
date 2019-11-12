@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 694835d20e3401aaeb22aa19082a2cd0e3a0163a
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010716"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622728"
 ---
-# <a name="create-a-process-template"></a>Skapa en processmall
+# <a name="create-a-process-template-in-attract"></a>Skapa en processmall i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ Endast administratörer kan ange standardmallen. Standardmallen används om en m
 
 ## <a name="create-a-process-template"></a>Skapa en processmall
 
-Administratörer, rekryterare och anställningschefer kan skapa processmallar. En processmall består av *faser* och *aktiviteter*. Faser grupperar en eller flera aktiviteter. Som standard har varje processmall aktiviteterna potentiell kandidat, ansökan och erbjudanden. Faserna som innehåller dessa aktiviteter kan döpas om. Du kan lägga till fler faser genom att markera **+ Ny fas**. Du kan ta aktiviteter till en fas antingen genom att dra dem till lämplig fas eller genom att dubbelklicka på dem i aktivitetslistan.
+Administratörer, rekryterare och anställningschefer kan skapa processmallar. En processmall består av *faser* och *aktiviteter*. Faser grupperar en eller flera aktiviteter. Som standard har varje processmall aktiviteterna potentiell kandidat, ansökan och erbjudanden. Faserna som innehåller dessa aktiviteter kan döpas om. Du kan lägga till fler faser genom att markera **+ Ny fas**. Du kan lägga till aktiviteter till en fas antingen genom att dra dem till lämplig fas eller genom att dubbelklicka på dem i aktivitetslistan.
 
 > [!NOTE]
 > Fasnamn visas för kandidater på sidan **Ansökningsstatus**. Du bör tänka på detta när du väljer namn för faser.

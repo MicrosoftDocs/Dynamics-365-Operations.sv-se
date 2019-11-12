@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f0a5e4c01b34b2adb8e7e0af967af2c2562b4d87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f7d2cfb8e58221004ae5662aae3850adc577dc88
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176098"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570320"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Intäktsredovisning på försäljningsorder
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Intäktsredovisningsfunktionen kan ännu inte slås på via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att slå på den.
+> Intäktsredovisningsfunktionen kan inte slås på via funktionshantering. För närvarande måste du använda konfigurationsnycklar för att slå på den.
 
 I det här avsnittet beskrivs de grundläggande funktionerna för intäktsredovisning på försäljningsorder och fakturor. Intäktsredovisning kan användas för en försäljningsorder och motsvarande faktura som skapas från försäljningsordern. Försäljningsordern kan även skapas via ett tids- och materialprojekt.
 

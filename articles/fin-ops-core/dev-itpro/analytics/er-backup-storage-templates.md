@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248710"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553101"
 ---
 # <a name="backup-storage-of-er-templates"></a>Säkerhetslagring av ER-mallar
 
@@ -33,7 +33,7 @@ ms.locfileid: "2248710"
 
 Varje konfigurerat format kan publiceras som en del av en ER-lösning. Varje återställnings lösning kan exporteras från en instans av Finance and Operations och importeras till en annan instans.
 
-ER-ramverket använder [ramverket för dokumenthanterings](../../fin-and-ops/organization-administration/configure-document-management.md) för att behålla de mallar som krävs för den aktuella Finance and Operations-instansen. Beroende på inställningarna för ER-ramverk kan du välja Microsoft Azure blob-lagring eller en Microsoft SharePoint-mapp som den fysiska primära lagringsplatsen för mallar. (Mer information finns i [konfigurera om ER-ramverket](electronic-reporting-er-configure-parameters.md).) DocuValue-registret innehåller en enskild post för varje mall. I varje post lagrar fältet **AccessInformation** sökvägen till mallfilen som finns på den konfigurerade lagringsplatsen.
+ER-ramverket använder [ramverket för dokumenthanterings](../../fin-ops/organization-administration/configure-document-management.md) för att behålla de mallar som krävs för den aktuella Finance and Operations-instansen. Beroende på inställningarna för ER-ramverk kan du välja Microsoft Azure blob-lagring eller en Microsoft SharePoint-mapp som den fysiska primära lagringsplatsen för mallar. (Mer information finns i [konfigurera om ER-ramverket](electronic-reporting-er-configure-parameters.md).) DocuValue-registret innehåller en enskild post för varje mall. I varje post lagrar fältet **AccessInformation** sökvägen till mallfilen som finns på den konfigurerade lagringsplatsen.
 
 När du hanterar dina Finance and Operations-instanser kanske du bestämmer dig för att flytta den aktuella instansen till en annan plats. Du kan till exempel migrera produktionsinstansen till en ny miljö för begränsat läge. Om du konfigurerade ER-ramverket för att lagra mallar i blob-lagring, refererar DocuValue-registret i den nya miljön för begränsat läge till instansen av blob-lagring i produktionsmiljön. Den här instansen kan dock inte nås från miljön för begränsat läge eftersom migreringsprocessen inte stöder migrering av artefakter i blob-lagring. Om du försöker köra ett ER-format som använder en mall för att generera affärsdokument, uppstår ett undantag och du meddelas om den saknade mallen. Du kan också använda återställningsverktyget för att ta bort och sedan åter importera konfigurationen för ER-format som innehåller mallen. Eftersom det kan finnas flera ER-format-konfigurationer, kan den här processen ta lång tid.
 

@@ -3,7 +3,7 @@ title: Underhållsprognoser
 description: I det här avsnittet beskrivs underhållsprognoser i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,34 +16,33 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a1596b283c3eaffca25ff7f03c722a2bcce109fb
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024509"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626303"
 ---
 # <a name="maintenance-forecasts"></a>Underhållsprognoser
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
 När du skapar en arbetsorder skapar du arbetsorderjobb med relaterade tillgångar och underhållsjobbtyper. När du väljer en underhållsjobbtyp som innehåller underhållsprognoser, kopieras prognoserna automatiskt till arbetsordern.
 
-Du kanske kan lägga till eller ta bort prognosrader på en arbetsorder. Inställningen av ett livscykeltillstånd för arbetsorder, den relaterade projekttypen och de fasregler som gäller för projekttypen bestämmer om du kan lägga till eller redigera prognosrader. 
+Du kanske kan lägga till prognosrader till en arbetsorder eller ta bort dem från en arbetsorder. Inställningen av en livscykeltillstånd för arbetsorder, den relaterade projekttypen och de fasregler som gäller för projekttypen bestämmer om du kan lägga till eller redigera prognosrader. Mer information om livscykeltillstånd för arbetsorder och relaterade projektfaser finns i [Prognoser, arbetsorder och projekt](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
-2. Välj arbetsorder i listan och klicka på **Prognos**. I **Underhållsprognos för arbetsorder** visas prognosrader från den typ av underhållsjobb som valts i arbetsorderjobbet.
+2. Välj arbetsorder i listan och sedan i åtgärdsfönstret på fliken > **Arbetsorder** > i gruppen **Projekt** väljer du **Prognos**. På sidan **Underhållsprognos för arbetsorder** visas prognosrader från den typ av underhållsjobb som valts i arbetsorderjobbet.
 
 
-## <a name="add-hours-forecast-to-a-work-order"></a>Lägga till timprognos i en arbetsorder
+## <a name="add-an-hours-forecast-to-a-work-order"></a>Lägga till timprognos i en arbetsorder
 
-1. Välj det arbetsorderjobb som du vill lägga till en prognos för.
+1. På sidan **Underhållsprognos för arbetsorder** väljer du arbetsorder jobbet som du vill lägga till en prognos i.
 
 2. På snabbfliken **Timmar**, klicka på **Lägg till** för att skapa en ny rad.
 
@@ -51,69 +50,77 @@ Du kanske kan lägga till eller ta bort prognosrader på en arbetsorder. Instäl
 
 4. Infoga antal prognostiserade timmar i fältet **Timmar**.
 
-5. I fältet **Radegenskap** väljer du den kostnadstyp som ska användas på raden.
+5. I fältet **Radegenskap** väljer du den typ av tillägg som ska användas på raden.
 
 
-## <a name="add-items-forecast-to-a-work-order"></a>Lägga till artikelprognos i en arbetsorder
+## <a name="add-an-items-forecast-to-a-work-order"></a>Lägga till artikelprognos i en arbetsorder
 
-Det finns tre sätt att lägga till artiklar i en underhållsprognos för arbetsorder: du kan skapa rader för artiklar (reservdelar) som inte ingår i reservdelslistan eller tillgångsstrukturen, du kan välja reservdelar från listan med godkända reservdelar, och du kan välja artiklar från tillgångsstrukturen.
+Det finns tre sätt att lägga till artiklar i en underhållsprognos för arbetsorder. Du kan skapa rader för artiklar (reservdelar) som inte ingår i reservdelslistan eller tillgångsstrukturen, du kan välja reservdelar från listan med godkända reservdelar, och du kan välja artiklar från tillgångsstrukturen.
 
-1. Välj det arbetsorderjobb som du vill lägga till en prognos för.
+- På sidan **Underhållsprognos för arbetsorder** väljer du arbetsorder jobbet som du vill lägga till en prognos i.
 
-2. Välj på snabbfliken **Artiklar**.
+- På snabbfliken **artiklar** lägg till artiklar i underhållsprognosen med hjälp av lämplig metod.
 
-3. Klicka på **Lägg till** om du vill skapa en ny rad för en reservdel som inte finns med i reservdelslistan eller tillgångsstrukturlistan.
+För att skapa en ny rad för en reservdel som inte finns med i reservdelslistan eller tillgångsstrukturlistan, följ dessa steg.
 
-4. Välj artikeln i fältet **Artikelnummer**.
+1. Markera **Lägg till**.
+2. Välj en artikel i fältet **Artikelnummer**.
+3. I fältet **Försäljningskvantitet** anger du kvantiteten.
+4. Välj måttenhet för kvantiteten i fältet **Enhet**.
+5. I fälten **Självkostnad** och **Valuta** anger du lämpliga värden.
+6. I fältet **radegenskap** väljer du en rad egenskap.
+7. Om du vill ändra listan över de dimensioner som visas på artikelraderna väljer du **Lager** > **Visa dimensioner**, väljer dimensioner och anger sedan alternativet **Spara inställningar** till **Ja**.
 
-5. Infoga kvantitet i fältet **Försäljningskvantitet** och välj en kvantitetsenhet i fältet **Enhet**.
+Så här lägger du till en reservdel från en godkänd reservdelslista:
 
-6. Infoga självkostnad och valuta i de relevanta fälten och välj en **Radegenskap**.
+1. Välj **Lägg till reservdelar**.
+2. Välj reservdelen och redigera den relaterade informationen som du behöver.
+3. Välj **OK**.
 
-7. Om du vill ändra listan över de dimensioner som visas på artikelraderna klickar du på **Lager** > **Visa dimensioner**, väljer dimensioner och väljer sedan "Ja" på växlingsknappen **Spara inställningar** .
+Gör så här om du vill lägga till en artikel från tillgångsstrukturen:
 
-8. Om du vill lägga till en godkänd reservdel i underhållsprognosen klickar du på **Lägg till reservdelar**, väljer reservdelen, redigerar relaterad informationen om det behövs och klickar på **OK**.
+1. Välj **Lägg till strukturlisteartiklar**.
+2. Välj artikeln och redigera den relaterade informationen som du behöver.
+3. Välj **OK**.
 
-9. Om du vill lägga till tillgångsstrukturartiklar i prognosen klickar du på **Lägg till strukturlisteartiklar**, väljer den aktuella artikeln, redigerar relaterad information klickar på **OK**.
-
-10. Klicka på **Artikel där den används** om du vill få en översikt över var artikeln på den valda raden används i Tillgångshantering, i relation till tillgångar, standardvärden för underhållsjobbtyper, reservdelar och arbetsorder. 
+Om du vill få en översikt som visar var artikeln på den valda raden används, i relation till tillgångar, underhållsjobbtypstandarder, reservdelar och arbetsorder i tillgångshantering väljer du **artikel där den används**. Mer information om översikten finns i [Artikel där den används](../controlling-and-reporting/item-where-used.md).
 
 
+## <a name="add-an-expense-forecast-to-a-work-order"></a>Lägga till utgiftsprognos i en arbetsorder
 
-## <a name="add-expense-forecast-to-a-work-order"></a>Lägga till utgiftsprognos i en arbetsorder
+1. På sidan **Underhållsprognos för arbetsorder** väljer du arbetsorder jobbet som du vill lägga till en prognos i.
 
-1. I det här avsnittet beskrivs hur du lägger till en utgiftsprognos till en arbetsorder. På vänstra sidan av formuläret väljer du det arbetsorderjobb som du vill lägga till en prognos för.
+2. På snabbfliken **Utgift**, klicka på **Lägg till** för att skapa en rad.
 
-2. Välj snabbfliken **Utgift**.
+3. Välj en kategori i fältet **Kategori**.
 
-3. Klicka på **Lägg till** om du vill skapa en ny rad.
+4. I fältet **Kvantitet** anger du kvantiteten.
 
-4. Välj en kategori i fältet **Kategori**.
+5. I fälten **självkostnad**, **försäljningsvaluta** och **försäljningspris** anger du lämpliga värden.
 
-5. I fältet **Kvantitet** anger du kvantiteten.
-
-6. Infoga självkostnad, försäljningsvaluta och försäljningspris i de relevanta fälten.
-
-7. I fältet **Radegenskap** väljer du den kostnadstyp som ska användas på raden.
+6. I fältet **Radegenskap** väljer du den typ av tillägg som ska användas på raden.
 
 >[!NOTE]
->På snabbfliken **Underhållsprognossummor** visas en översikt över antalet rader som har skapats på varje flik, för det valda arbetsorderjobbet och för arbetsordern. Du kan också visa en summa för prognostiserad arbetstid för arbetsorderjobbet och för arbetsordern.
+>Snabbfliken **Underhållsprognossummor** visar en översikt över antalet rader som har skapats för det valda arbetsorderjobbet och för arbetsordern på varje snabbfliken. Den visar också visa en summa för prognostiserad arbetstid för arbetsorderjobbet och för arbetsordern.
+
+I bilden nedan visas ett exempel på sidan **Underhållsprognos för arbetsorder**.
 
 ![Figur 1](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk uppdatering av arbetsorderprognoser
 
-I Tillgångshantering kan du automatiskt uppdatera alla ändringar av arbetsorderprognoser för timkostnader, artikelkostnader och utgifter som har uppdaterats i andra moduler. Detta görs för att se till att de senaste självkostnaderna alltid används i dina arbetsorderprognoser. Det går också att göra liknande uppdateringar för [prognoser för underhållsjobbtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+Om timkostnader, artikelkostnader och utgifter uppdateras i andra moduler i Microsoft Dynamics 365 for Finance and Operations kan arbetsorderprognoser i Tillgångshantering uppdateras automatiskt för att återspegla dessa förändringar. Denna kunskap hjälper till att garantera att de senaste självkostnaderna alltid används i dina arbetsorderprognoser. Du kan också göra liknande uppdateringar för [prognoser för underhållsjobbtyper](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Klicka på **Tillgångshantering** > **Periodiskt** > **Prognos** > **Uppdatera arbetsorderprognos**.
 
-2. I den nedrullningsbara dialogrutan **Uppdatera arbetsorderprognos** kan du lägga till urval för specifika arbetsorder eller arbetsorderjobb om det behövs. Klicka på **Filter** för att göra urvalen.
+2. I dialogrutan **Uppdatera arbetsorderprognos** på snabbfliken **Poster som ska ingå** kan du lägga till urval för specifika arbetsorder eller arbetsorderjobb om det behövs. Välj **filter** och gör relevanta val.
 
 3. På snabbfliken **Kör i bakgrunden** kan du ställa in den automatiska uppdateringen som ett batchjobb, efter behov.
 
-4. Klicka på **OK** för att starta progonosuppdateringen.
+4. Starta prognosuppdateringen genom att välja **OK**.
 
+
+I bilden nedan visas ett exempel på sidan dialogrutan **Uppdatera arbetsorderprognos**.
 
 ![Figur 2](media/07-work-orders.png)
-

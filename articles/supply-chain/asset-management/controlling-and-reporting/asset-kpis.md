@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4fc32d337be1f71932555fcb062a8d05c9ca9bda
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1aee14c869d84bef38a738bfe78fd09ee7f82d94
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918428"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652389"
 ---
 # <a name="asset-kpis"></a>KPI:er för tillgång
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I tillgångshantering kan du beräkna olika nyckeltal (KPI:er, Key Performance Indicators) för tillgångar och tillgångstyper. Du använder KPI:er för att få en översikt över prestanda för tillgångar i relation till exempelvis driftstid, driftstopp, reparationstid och genomsnittstid mellan misslyckande (MTBF, Mean Time Between Failure).
 
@@ -85,7 +85,7 @@ I tabellen nedan finns en beskrivning av fälten på sidan **KPI:er för tillgå
 
 Bilden nedan visar en skärmbild av en KPI-beräkning för fyra till gångar.
 
-![Figur 1](media/11-controlling-and-reporting.png)
+![Skärmbild av en KPI-beräkning för fyra tillgångar](media/11-controlling-and-reporting.png)
 
 - Du kan välja flera till gångar i **Alla tillgångar** och klicka på knappen **KPI:er för tillgång** på fliken **Allmänt**. Klicka sedan på **OK** i dialogrutan **Beräkna KPI:er för tillgång** för att beräkna KPI:er för de valda tillgångarna.  
 - Resultat från en KPI-beräkning kan eventuellt inte inkludera [registreringar av underhållsstopp](../work-orders/maintenance-downtime.md), beroende på de orsakskoder för underhåll som ställs in och används. 

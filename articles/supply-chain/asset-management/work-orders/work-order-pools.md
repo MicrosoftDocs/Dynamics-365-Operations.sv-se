@@ -3,7 +3,7 @@ title: Arbetsorderpooler
 description: I det här avsnittet beskrivs hur du arbetar med arbetsorderpooler i Tillgångshantering.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,95 +16,96 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 069fa02073808fd7bbaac9bc1603e49ce4d450eb
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 161244cb4451ddc7b13b579fd02e828a61adeea4
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875904"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626372"
 ---
 # <a name="work-order-pools"></a>Arbetsorderpooler
 
-
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
+Du kan använda arbetsorderpooler för att gruppera arbetsorder som har något gemensamt. Här följer några exempel på vad du kan skapa arbetsorderpooler för:
+
+- Arbetslag, t.ex. underhållslag A eller underhållslag B  
+
+- Yrkesfärdigheter, t.ex. elektriker eller rörmokare  
+
+- Fysiska platser  
+
+- Tidsscheman, t.ex. veckor eller andra perioder  
+
+När du behöver kan du placera en arbetsorder i flera arbetsorderpooler.
 
 
-Du kan använda arbetsorderpooler för att gruppera arbetsorder som har något gemensamt. Du kan till exempel skapa pooler för arbetsorder för
+## <a name="create-a-work-order-pool"></a>Skapa en arbetsorderpool
 
-- arbetslag, t.ex. underhållslag A, underhållslag B  
-
-- yrkesfärdigheter, t ex. elektriker eller rörmokare  
-
-- fysiska platser  
-
-- tidsscheman, t. ex. veckor eller andra perioder  
-
-
-Vid behov kan en arbetsorder placeras i flera av arbetsorderpoolerna.
-
-
-## <a name="create-work-order-pool"></a>Skapa arbetsorderpool
-
-I **Alla arbetsorderpooler** eller **Aktiva arbetsorderpooler** kan du få en översikt över dina arbetsorderpooler och skapa nya pooler.
+På listsidan **Alla arbetsorderpooler** eller **Aktiva arbetsorderpooler** kan du få en översikt över dina arbetsorderpooler och skapa nya pooler.
 
 1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorderpooler** > **Alla arbetsorderpooler** eller **Aktiva arbetsorderpooler**.
 
-2. Klicka på **Ny**.
+2. Välj **Ny**.
 
-3. Infoga ett ID för arbetsorderpool i fältet **Pool** och ett namn i fältet **Namn**.
+3. I fältet **Pool** anger du ett ID för arbetsorderpoolen.
 
-4. Välj "Ja" på växlingsknappen **Aktiv** om du vill ange att arbetsorderpoolen är aktiv.
+4. Ange sedan ett namn i fältet **Namn**.
 
-5. Välj "Ja" på växlingsknappen **Ta bort arbetsorderrelationer** om du vill att arbetsorder automatiskt ska tas bort från arbetsorderpoolen.
+5. Ange alternativet **Aktiv** till **Ja** om du vill ange att arbetsorderpoolen är aktiv.
 
-6. I fältet **Ta bort livscykeltillstånd** väljer du arbetsorderns livscykeltillstånd. Livscykeltillståndet för arbetsordern för att slutföra en arbetsorder kan t.ex. ställas in för att automatiskt ta bort relationer till arbetsorderpooler.
+6. Ange alternativet **Ta bort arbetsorderrelationer** till **Ja** om du vill att arbetsorder automatiskt ska tas bort från arbetsorderpoolen.
 
-7. Du kan börja lägga till arbetsorder till din arbetsorderpool omedelbart. På snabbfliken **Arbetsorder** klickar du på **Lägg till rad**.
+7. I fältet **Ta bort livscykeltillstånd** väljer du arbetsorderns livscykeltillstånd. Livscykeltillståndet för arbetsordern för att slutföra en arbetsorder kan t.ex. ställas in för att automatiskt ta bort relationer till arbetsorderpooler.
 
-8. Välj en arbetsorder i fältet **Arbetsorder**. Det relaterade fälten uppdateras automatiskt.
+    Du kan börja lägga till arbetsorder till din arbetsorderpool omedelbart.
 
-9. Upprepa steg 7-8 om du vill lägga till fler arbetsorder.
+8. På snabbfliken **Arbetsorder** klickar du på **Lägg till rad**.
 
-10. I fältet **Sorteringsordning** kan du ange om arbetsorder ska utföras i en viss ordning. Infoga nummer 1, 2, 3 och så vidare för att ange en specifik sekvens för de valda arbetsorderna.
+9. Välj en arbetsorder i fältet **Arbetsorder**. Det relaterade fälten uppdateras automatiskt.
 
-11. Klicka på knappen **Arbetsorder** om du vill visa en lista över alla arbetsorder som ingår i arbetsorderpoolen.
+10. Upprepa steg 8 till och med 9 om du vill lägga till fler arbetsorder.
 
-12. Klicka på knappen **Kapacitetsbeläggning** för att öppna **Kapacitetsbeläggning** för att beräkna och visa kapacitetsbeläggning för underhållsschema, ej tidsplanerade arbetsorder och tidsplanerade arbetsorder.
+11. Om de arbetsorder som du la till ska utföras i en specifik ordning kan du i fältet **sorteringsordning** kan du ange siffrorna **1**, **2**, **3** osv för att ange den ordningen.
 
-13. Klicka på knappen **Artikelprognos** om du öppna **Artikelprognos** för att beräkna och visa prognoser för artiklar (reservdelar och andra nödvändiga artiklar) relaterade till ett underhållsschema, ej tidsplanerade arbetsorder och tidsplanerade arbetsorder.
+12. Om du vill visa en lista med alla arbetsorder som har inkluderats i arbetsordern går du till åtgärdsfönstret på fliken **Arbetsorderpool** i gruppen **Visa arbetsorderpoolrelaterad** och välj **arbetsorder** för att öppna listsidan **alla arbetsorder**.
 
-14. Klicka på knappen **Inköpsrekvisition för arbetsorder** för att öppna listan **Inköpsrekvisition för arbetsorder** och visa en lista med inköpsrekvisitioner relaterade till arbetsorderna i arbetsorderpoolen.
+13. För att beräkna och visa kapacitetsbelastning för underhållsschemat, ej tidsplanerade arbetsorder och tidsplanerade arbetsordrar, i åtgärdsfönstret, på fliken **Arbetsorderpool** i gruppen **Visa arbetsorderpoolrelaterad**, välj **Artikelprognoser** för att öppna dialogrutan **Beräkna artikelprognoser**.
 
-15. Klicka på knappen **Arbetsorderinköp** för att öppna listan **Arbetsorderinköp** och visa en lista med inköpsorder relaterade till arbetsorderna i arbetsorderpoolen.
+14. För att beräkna och visa prognoser för artiklar (reservdelar och andra obligatoriska artiklar) som är relaterade till underhållsschema, ej tidsplanerade arbetsorder och tidsplanerade arbetsordrar, i åtgärdsfönstret, på **Arbetsorderpool** i gruppen **Visa arbetsorderpoolrelaterad**, välj **Artikelprognoser** för att öppna **Beräkna artikelprognoser**.
+
+15. För att se en lista över inköpskrav som är relaterade till arbetsordrarna i arbetsorderpoolen, i åtgärdsfönstret, på **Arbetsorderpool** i gruppen **Anskaffning**, välj **Inköp för arbetsorder** för att öppna listsidan **Inköp för arbetsorder**.
+
+16. För att se en lista över inköpskrav som är relaterade till arbetsordrarna i arbetsorderpoolen, i åtgärdsfönstret, på**Arbetsorderpool** i gruppen **Anskaffning**, välj **Inköpsrekvisition för arbetsorder** för att öppna listsidan **Inköpsrekvisition för arbetsorder**.
 
 >[!NOTE]
->När en arbetsorderpool inte längre är relevant för din arbetsplanering ställer du in kryssrutan **Aktiv** för den poolen till "Nej" i listvyn **Arbetsorderpool**.
+>När en arbetsorderpool inte längre är relevant för din arbetsplanering ställer du in alternativet **Aktiv** för den poolen till **Nej** i listvyn på sidan **Arbetsorderpool**.
 
-Markera kryssrutan **Ta bort arbetsorderrelationer** om du vill ta bort alla arbetsorderrader, t.ex. för att skapa en tom pool som du senare kan använda för andra arbetsorder. Kom ihåg att avmarkera **Ta bort arbetsorderrelationer** om du vill använda arbetsorderpoolen för att skapa nya arbetsorderrelationer senare.
+Om du vill radera alla arbetsorderrader anger du alternativet **Ta bort arbetsorderrelationer** till **Ja**. Det här alternativet är användbart om du t.ex. vill skapa en tom pool som du kan använda senare för andra arbetsorder. När du är redo att använda arbetsorderpoolen för att skapa nya arbetsordrelationer senare, kom ihåg att ställa in alternativet **Ta bort arbetsorderrelationer** till **Nej**.
 
+I bilden nedan visas ett exempel på listsidan **Arbetsorderpool**.
 
 ![Figur 1](media/22-work-orders.png)
 
 
-## <a name="add-work-order-to-a-work-order-pool"></a>Lägga till arbetsorder i en arbetsorderpool
+## <a name="add-a-work-order-to-a-work-order-pool"></a>Lägga till en arbetsorder i en arbetsorderpool
 
-Som beskrivs i avsnittet ovan kan du lägga till arbetsorder till en arbetsorderpool när du skapar poolen. Du kan också lägga till en arbetsorder till en arbetsorderpool från en listorna **Alla arbetsorder**.
+Som beskrivs i avsnittet ovan kan du lägga till arbetsorder till en arbetsorderpool när du skapar poolen. Du kan också lägga till arbetsorder till en arbetsorderpool på listsidan **Alla arbetsorder** eller **Aktiva arbetsorder**.
 
-1. Klicka på **Tillgångshantering** > **Allmänt** > **Arbetsorder** > **Alla arbetsorder** eller **Aktiva arbetsorder**.
+1. Välj arbetsorder och sedan i åtgärdsfönstret på fliken **Arbetsorder** i gruppen **Underhåll** väljer du **Arbetsorderpool**.
 
 2. Välj arbetsorder i listan och klicka på **Arbetsorderpool**.
 
-3. Välj "Lägg till" i fältet **Lägg till/ta bort**.
+3. I dialogrutan **Underhåll arbetsorderpool** i fältet **Lägg till/ta bort** väljer du **Lägg till**.
 
 4. Välj arbetsorderpoolen i fältet **Pool**.
 
-5. Klicka på **OK**.
+5. Välj **OK**.
 
-6. När du har lagt till en arbetsorder i en arbetsorderpool, och vill placera arbetsordern i en viss serie i poolen: öppna en av listsidorna för arbetsorderpooler, välj poolen och klicka på **Redigera** och justera sorteringsordningen för arbetsorderna som ingår i poolen i formuläret **Arbetsorderpool** > snabbfliken **Arbetsorder** > fältet **Sorteringsordning**.
+6. Om du vill placera arbetsordern som du la till i en viss ordning i arbetsorderpoolen, på listsidan **Alla arbetsorderpooler** eller **Aktiva arbetsorderpooler** väljer du poolen och väljer sedan **redigera**. På sidan **Arbetsorderpool** på snabbfliken **Arbetsorder** kan du använda fältet **Sorteringsorder** för att justera sorteringsordningen för de arbetsorder som ingår i poolen.
 
-Om du vill ta bort den valda arbetsordern från en arbetsorderpool väljer du "Ta bort" i steg 3.
+Om du vill ta bort en arbetsorder från en arbetsorderpool, upprepa dessa steg men välj **Ta bort** i steg 3.
 

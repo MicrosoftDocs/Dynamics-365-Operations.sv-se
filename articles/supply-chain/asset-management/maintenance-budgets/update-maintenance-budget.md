@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 486782968816cc585d9cf2d753f32e82f85e4f7e
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 8f3b771319eeb602a371500fdc69c68f88afe341
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874795"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571747"
 ---
 # <a name="update-maintenance-budgets"></a>Uppdatera underhållsbudgetar
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 På sidan **Budgetrader för underhåll** visas alla budgetrader som har skapats för den budget som valts på sidan **Underhållsbudgetar**. (Mer information finns i [skapa underhållsbudgetar](create-maintenance-budget.md).) Du kan omberäkna och justera underhållsbudgetrader tills underhållsbudgeten har godkänts. När budgetperioden har passerat och kostnaderna har bokförts i Tillgångshantering kan du också uppdatera budgetraderna med faktiska kostnader.
 

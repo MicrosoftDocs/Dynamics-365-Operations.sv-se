@@ -18,37 +18,45 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7c9330cc7b3a8839d94c8945418548033254786b
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 43772903f6845409cb33c7f2a13a049a3e9aa208
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918451"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652412"
 ---
 # <a name="asset-fault-analysis"></a>Felanalys för tillgång
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 I Tillgångshantering kan du analysera tillgångsfelregistrerings för att få en översikt över det totala antalet fel som registrerats under en viss period. Felregistreringar kan analyseras från olika perspektiv, till exempel med fokus på tillgångar, tillgångstyper, funktionsplatser, felsymptom eller feltyper.
 
 1. Klicka på **Tillgångshantering** > **Förfrågningar** > **Tillgångsfel** > **Felanalys för tillgång**.
 
-2. I dialogrutan **Beräkning av tillgångsfelanalys** kan du använda fältet **Nivå** för att indikera hur detaljerad du vill att tillgångsfelraderna ska vara avseende funktionsplatser. Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla tillgångsfelrader för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla tillgångsfelrader på alla den funktionsplatsnivå som de är relaterade till.
+2. I dialogrutan **Beräkning av tillgångsfelanalys** kan du använda fältet **Nivå** för att indikera hur detaljerad du vill att tillgångsfelraderna ska vara avseende funktionsplatser. 
+
+    Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla tillgångsfelrader för en funktionsplats på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. 
+        
+    Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla tillgångsfelrader på alla den funktionsplatsnivå som de är relaterade till.
 
 3. Om du vill begränsa sökningen kan du välja specifika tillgångar, feldatum, felorsaker och felåtgärder på snabbfliken **Poster som ska ingå**.
 
 4. Klicka på **OK** för att starta beräkningen.
 
-5. På fliken **Tillgångsfelanalys**, klicka på en eller flera knappar på åtgärdsfönstergrupperna **Gruppera efter...** för att visa detaljnivån som du vill se. Aktiverade knappar är markerade. Aktivera eller inaktivera knappar genom att klicka på dem.
+5. På fliken **Tillgångsfelanalys**, klicka på en eller flera knappar för **Gruppera efter...** för att visa detaljnivån som du vill se. Aktiverade knappar är markerade. Aktivera eller inaktivera knappar genom att klicka på dem.
 
 6. Klicka på **Uppdatera beräkningar** om du vill visa dina val på skärmen. 
 
 >[!NOTE]
->Varje gång du aktiverar eller inaktiverar knappar i åtgärdsfönstergrupperna **Gruppera efter...**, kom ihåg att klicka på knappen **Uppdatera beräkningar** när du har ändrat valen. Detta är nödvändigt eftersom en stor mängd data bearbetas när du räknar om en felsannolikhet.
+>Varje gång du aktiverar eller inaktiverar en knapp för **Gruppera efter**, kom ihåg att klicka på knappen **Uppdatera beräkning**. Detta är nödvändigt eftersom en stor mängd data bearbetas när du räknar om en felsannolikhet.
 
-Det finns många sätt att analysera felregistreringar. Nedan visas exempel på fem skärmbilder av hur olika dataval ger olika typer av information. Du kommer att se hur olika val ger bättre insikt och detaljrikedom när du analyserar felregistreringar på tillgångar.
+## <a name="examples"></a>Exempel
+
+Det finns många sätt att analysera felregistreringar. Det här avsnittet har fem exempel på hur olika data ger bättre insikt och detaljrikedom när du analyserar felregistreringar på tillgångar.
+
+### <a name="group-by-symptoms"></a>Gruppera efter symptom
 
 I skärmbilden nedan är bara knappen **Symptom** markerad.
 
@@ -57,6 +65,7 @@ I skärmbilden nedan är bara knappen **Symptom** markerad.
 
 ![Figur 1](media/06-controlling-and-reporting.png)
 
+### <a name="group-by-symptoms-and-time-period"></a>Gruppera efter symptom och tidsperiod
 
 I bilden nedan läggs **år** och **månad** till för att visa hur du kan visa felregistreringar under en vald period.
 
@@ -65,9 +74,13 @@ I bilden nedan läggs **år** och **månad** till för att visa hur du kan visa 
 
 ![Figur 2](media/07-controlling-and-reporting.png)
 
+### <a name="group-by-multiple-symptoms-and-assets"></a>Gruppera efter flera symptom och tillgångar
 
-- Kombinationen av till gångar och en tillgångstyp används som grund för beräkningarna som visas i på de tre bilderna nedan, vilket ökar detaljnivån.  
-- I allmänhet innehåller knapparna i grupperna **Gruppera efter datum**, **Gruppera efter tillgång**, **Gruppera efter funktionsplats** samt knappen **Fel** (fel-ID) perioder eller tillgångsrelationer. Knapparna **Symptom**, **Område**, **Typ**, **Orsak** och **Åtgärd** är kategoriseringar som används vid felhantering för att analysera registreringar av tillgångsfel och hitta problemområden.  
+Kombinationen av till gångar och en tillgångstyp används som grund för beräkningarna som visas i på de tre bilderna nedan, vilket ökar detaljnivån.  
+
+I allmänhet innehåller knapparna i grupperna **Gruppera efter datum**, **Gruppera efter tillgång**, **Gruppera efter funktionsplats** samt knappen **Fel** (fel-ID) perioder eller tillgångsrelationer. Knapparna **Symptom**, **Område**, **Typ**, **Orsak** och **Åtgärd** är kategoriseringar som används vid felhantering för att analysera registreringar av tillgångsfel och hitta problemområden.  
+
+**Gruppera efter symptom, tillgång och tillgångstyp**
 
 På skärmbilden nedan har **Tillgång** och **Tillgångstyp** lagts till för att ge mer detaljerad information om felregistreringar.
 
@@ -76,6 +89,7 @@ På skärmbilden nedan har **Tillgång** och **Tillgångstyp** lagts till för a
 
 ![Figur 3](media/08-controlling-and-reporting.png)
 
+**Gruppera efter två symptom, tillgång och tillgångstyp**
 
 På skärmbilden nedan har **Område** lagts till i **Symptom**, **Tillgång** och **Tillgångstyp** för att ge fler detaljer om felregistreringar.
 
@@ -83,6 +97,7 @@ På skärmbilden nedan har **Område** lagts till i **Symptom**, **Tillgång** o
 
 ![Figur 4](media/09-controlling-and-reporting.png)
 
+**Gruppera efter tre symptom, tillgång och tillgångstyp**
 
 I skärmbilden nedan läggs **Typ** till, och den mest detaljerade beräkningen i det här exemplet visas.
  

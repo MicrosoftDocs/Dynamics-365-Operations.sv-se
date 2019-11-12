@@ -3,7 +3,7 @@ title: Fördelad orderhantering (DOM)
 description: I detta avsnitt beskrivs funktionen fördelad orderhantering (DOM) i Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023429"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578494"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -94,6 +94,7 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
         - **Uppfyll partiella rader?** – Om detta alternativ har värdet **Ja** får DOM uppfylla en partiell kvantitet på orderrader. Denna partiella uppfyllelse uppnås genom att orderraden delas.
         - **Uppfyll order från enbart en plats?** – Om detta alternativ har värdet **Ja** ser DOM till att alla rader på ordern uppfylls från samma plats.
 
+
         I följande tabell förklaras beteendet när en kombination av dessa parametrar har angetts.
 
         |      | Uppfyll partiella order | Uppfyll partiella rader | Uppfyll order från enbart en plats | Beskrivning |
@@ -110,19 +111,22 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
 
         \* Om **Uppfyll partiella order** har värdet **Nej** anses **Uppfyll partiella rader** alltid ha värdet **Nej**, oavsett av vilket värde det faktiskt har.
 
-    - **Platsregel för offline-uppfyllelse** – Med denna regel kan organisationen ange att en plats eller en grupp med platser är offline eller inte tillgänglig för DOM, så att order inte kan tilldelas dit för uppfyllelse.
+> [!NOTE]
+> I Retail version 10.0.5 har parametern **Uppfyll order från enbart en plats** ändrats till **Maximalt antal uppfyllelseplatser**. I stället för att låta en användare konfigurera om ordrar kan uppfyllas från enbart en plats eller från så många platser som möjligt, kan användarna nu ange om uppfyllelse kan ske från en bestämd uppsättning platser (upp till 5) eller från så många platser som möjligt. Detta ger mer flexibilitet när det gäller antalet platser som ordern kan uppfyllas från.
+
+   - **Platsregel för offline-uppfyllelse** – Med denna regel kan organisationen ange att en plats eller en grupp med platser är offline eller inte tillgänglig för DOM, så att order inte kan tilldelas till dessa platser för uppfyllelse.
     - **Regel för högsta antal avvisningar** – Med denna regel kan organisationen ange ett tröskelvärde för avvisningar. När tröskelvärdet har nåtts märker DOM-processorn en order eller orderrad som ett undantag och utesluter den från ytterligare behandling.
 
         När orderrader har tilldelats en plats kan platsen avvisa en tilldelad orderrad eftersom den kanske inte kan uppfylla den raden av någon anledning. Avvisade rader märks som undantag och återförs till poolen för bearbetning i nästa körning. Under nästa körning försöker DOM tilldela en annan plats den avvisade raden. Den nya platsen kan också avvisa den tilldelade orderraden. Denna tilldelnings- och avvisningscykel kan löpa flera varv. När antalet avvisningar når upp till det angivna tröskelvärdet märker DOM orderraden som ett permanent undantag och plockar inte raden för tilldelning igen. DOM tar bara upp orderraden för tilldelningen igen om en användare återställer dess status manuellt.
 
-    - **Regel för längsta avstånd** – Med denna regel kan organisationen ange det maximala avstånd som en plats eller grupp med platser får finnas på för att uppfylla ordern. Om överlappande maximala avståndsregler har angetts för en plats använder DOM det minsta maximala avstånd som har angetts för den platsen.
+   - **Regel för längsta avstånd** – Med denna regel kan organisationen ange det maximala avstånd som en plats eller grupp med platser får finnas på för att uppfylla ordern. Om överlappande maximala avståndsregler har angetts för en plats använder DOM det minsta maximala avstånd som har angetts för den platsen.
     - **Regel för maximalt antal order** – Med denna regel kan organisationen ange det maximala antalet order som en plats eller grupp med platser kan bearbeta under en dag. Om det maximala antalet order har tilldelats en plats under en dag tilldelar DOM inte fler order dit under resten av dagen.
 
-    Här följer några gemensamma attribut som går att ange för de föregående regeltyperna:
+   Här följer några gemensamma attribut som går att ange för de föregående regeltyperna:
 
-    - **Startdatum** och **Slutdatum** – Varje regel kan fås att gälla mellan vissa datum med hjälp av dessa fält.
-    - **Inaktiverad** – Bara de regler som har värdet **Nej** i detta fält tas med i en DOM-körning.
-    - **Fast begränsning** – Det går att ange en regel som en fast begränsning eller inte. Varje DOM-körning genomlöper två iterationer. Under det första varvet behandlas varje regel som en regel med fast begränsning, oavsett fältinställningen. Med andra ord tillämpas alla regler. Det enda undantaget är regeln **Platsprioritet**. Under den andra iterationen tas regler som inte hade angetts som fasta begränsningsregler bort, och order eller orderrader som inte hade tilldelats platser när alla reglerna hade tillämpats tilldelas platser.
+   - **Startdatum** och **Slutdatum** – Varje regel kan fås att gälla mellan vissa datum med hjälp av dessa fält.
+   - **Inaktiverad** – Bara de regler som har värdet **Nej** i detta fält tas med i en DOM-körning.
+   - **Fast begränsning** – Det går att ange en regel som en fast begränsning eller inte. Varje DOM-körning genomlöper två iterationer. Under det första varvet behandlas varje regel som en regel med fast begränsning, oavsett fältinställningen. Med andra ord tillämpas alla regler. Det enda undantaget är regeln **Platsprioritet**. Under den andra iterationen tas regler som inte hade angetts som fasta begränsningsregler bort, och order eller orderrader som inte hade tilldelats platser när alla reglerna hade tillämpats tilldelas platser.
 
 10. Uppfyllelseprofiler används för att gruppera ett antal regler, juridiska personer, ursprung till försäljningsorder och leveranssätt. Varje DOM-körning gäller en specifik uppfyllelseprofil. På så sätt kan organisationen ange och köra vissa regler för ett antal juridiska personer på order med specifika försäljningsorderursprung och leveranssätt. Om olika regler måste köras för olika typer av försäljningsorderursprung eller leveranssätt kan uppfyllelseprofiler alltså definieras enligt detta. Så här ställs uppfyllelseprofiler in:  
 
