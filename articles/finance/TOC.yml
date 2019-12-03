@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Registrera abonnemang på förhandsversioner
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: Kundbetalningsinsikter (förhandsversion)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Tjänstuppdateringar för en version
               items:
                 - name: Översikt över tjänstuppdateringar för en version
@@ -2239,6 +2241,8 @@
                       href: localizations/rus-currency-sale-purchase.md
                     - name: Handkassa
                       href: localizations/emea-petty-cash.md
+                    - name: Kontanter – Lokala primära formulär och enade rapporter
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: Moms
                   items:
                     - name: Lokalt specifik bokföring av utgående moms
@@ -2255,6 +2259,8 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Hantering av förskottsbetalningar
                       href: localizations/rus-prepayments-management.md
+                    - name: Återställning av ingående moms
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: Anläggningstillgångar
                   items:
                     - name: Hantera anläggningstillgångar
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: Allokering av tillägg i proportion till vikt och volym
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: Tillägg för tredje part
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: Lager
+                  items:
+                    - name: Varor på väg från leverantör
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: Tulldeklarationsnummer
+                      href: localizations/rus-custom-declaration-number.md
                 - name: Rapportering
                   items:
                     - name: Ekonomisk rapportering
@@ -2335,6 +2349,8 @@
                       href: localizations/rus-officials.md
                     - name: Företagsdivisioner
                       href: localizations/rus-company-divisions.md
+                    - name: Ryska adressformat och importera från FIAS
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: Uppskjutna
                   items:
                     - name: Ställ in uppskjutande
@@ -2679,7 +2695,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Skriver ut
                   items:
-                    - name: Dokumentetutskrift – översikt
+                    - name: Dokumentutskrift – översikt
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Installera dokumentflödesagenten för att aktivera nätverksutskrift
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Importera konfigurationer från RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Självstudier
+                  items:
+                    - name: Använd kopplingsdatakällor för att hämta data från flera programtabeller i ER-modellmappningar (elektronisk rapportering)
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Använd elektroniska rapporteringslösningar i Finance and Operations
                   items:
                     - name: Konfigurera ramverket
@@ -2903,6 +2925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Hantering av affärsdokument – översikt
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Lägga till nya fält i en affärsdokumentmall i Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: API för ER‑ramverk
                   items:
                     - name: Utöka listan med funktioner för elektronisk rapportering

@@ -19,12 +19,12 @@ ms.search.industry: Public sector
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5493c46183e7b599e82153f5b3ac36c81faa4955
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f850b28c4d6ed6ce13438f4de87ef0c04065c7f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174706"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770243"
 ---
 # <a name="public-sector-home-page"></a>Startsida för offentlig sektor
 
@@ -42,13 +42,13 @@ Med funktionen Offentlig sektor blir det enklare att följa reglerna, förordnin
 
   Mer information finns i följande avsnitt:
 
-- [Planera för funktionen Offentlig sektor](plan-public-sector-functionality.md)
-- [Leverantörsreskontra i offentlig sektor](accounts-payable-public-sector.md)
-- [Kundreskontra i offentlig sektor](accounts-receivable-public-sector.md)
-- [Budgetering i offentlig sektor](budgeting-public-sector.md)
+- [Plan för funktioner för offentlig sektor](plan-public-sector-functionality.md)
+- [Leverantörsreskontra i offentlig sektor – översikt](accounts-payable-public-sector.md)
+- [Kundreskontra i offentlig sektor – översikt](accounts-receivable-public-sector.md)
+- [Budgetering i offentlig sektor – översikt](budgeting-public-sector.md)
 - [Anläggningstillgångar i offentlig sektor](fixed-asset-public-sector.md)
-- [Funktioner för franska föreskrifter](../localizations/emea-fra-public-sector-accounting.md)
-- [Redovisning i offentlig sektor](general-ledger-public-sector.md)
+- [Redovisning för offentliga sektorn i Frankrike](../localizations/emea-fra-public-sector-accounting.md)
+- [Redovisning i offentlig sektor – översikt](general-ledger-public-sector.md)
 - [Anskaffning och källor i offentlig sektor](procurement-sourcing-public-sector.md)
 - [Säkerhetsroller i offentlig sektor](security-roles-public-sector.md)
 
@@ -70,7 +70,7 @@ I följande tabell finns information om sambandet mellan den här konfigurations
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Planera för funktionen Offentlig sektor](plan-public-sector-functionality.md)
+[Plan för funktioner för offentlig sektor](plan-public-sector-functionality.md)
 
 
 

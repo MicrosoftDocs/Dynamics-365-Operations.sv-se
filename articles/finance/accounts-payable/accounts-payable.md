@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658746"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772247"
 ---
 # <a name="accounts-payable-home-page"></a>Startsida för Leverantörsreskontra
 
@@ -41,7 +41,7 @@ Det går att registrera leverantörsfakturor manuellt eller ta emot dem elektron
 
 Ställa in leverantörsgrupper, leverantörer, bokföringsprofiler, olika betalningsalternativ och parametrar angående leverantörer, avgifter, leveranser och destinationer, skuldsedlar och andra typer av leverantörsreskontrainformation. 
 
-[Konfigurera leverantörsreskontra](accounts-payable-overview.md)
+[Konfigurera leverantörsreskontra – översikt](accounts-payable-overview.md)
 
 [Redovisningsfördelningar och poster i reskontrajournal för leverantörsfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -51,17 +51,17 @@ Ställa in leverantörsgrupper, leverantörer, bokföringsprofiler, olika betaln
 
 Använd Leverantörsreskontra för att spåra fakturor och utgående utgifter till leverantörer.
 
-[Fakturamatchning för leverantörsreskontra](accounts-payable-invoice-matching.md)
+[Fakturamatchning för leverantörsreskontra – översikt](accounts-payable-invoice-matching.md)
 
 [Bokföringsprofiler för leverantörer](vendor-posting-profiles.md)
 
 [Konfigurera validering av fakturamatchning för leverantörsreskontra](tasks/set-up-accounts-payable-invoice-matching-validation.md)
 
-[Trevägsmatchningspolicyer](three-way-matching-policies.md)
+[Policyer för trevägsmatchning](three-way-matching-policies.md)
 
 [Fakturamatchning och koncerninterna inköpsorder](invoice-matching-intercompany-purchase-orders.md)
 
-[Åtgärda avvikelser under matchning av fakturasummor](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Åtgärda avvikelser under matchning av fakturasummor – översikt](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Standardmotkonton för leverantörsfakturajournaler och fakturagodkännandejournaler](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,11 +93,11 @@ Tilldela en systemdefinierad betalningstyp, till exempel check, elektronisk beta
 
 [Ta en kassarabatt utanför kassarabattperioden](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Elektronisk rapportering för leverantörscheckar](electronic-reporting-sample-vendor-checks.md)
+[Exempel på elektronisk rapportering för leverantörscheckar](electronic-reporting-sample-vendor-checks.md)
 
 [Återför en leverantörsbetalning](reverse-vendor-payment.md)
 
-[Översikt över förskottsfakturor och förskottsbetalningar](prepayments-invoices-vs-prepayments.md)
+[Förskottsfakturor kontra förskottsbetalningar](prepayments-invoices-vs-prepayments.md)
 
 [Centraliserade leverantörsreskontrabetalningar](centralized-payments-accounts-payable.md)
 
@@ -107,13 +107,13 @@ I följande avsnitt finns information om kvittningar. Kvittning är en process d
 
 [Konfigurera kvittning](../cash-bank-management/configure-settlement.md)
 
-[Kvitta en leverantörsdelbetalning före rabattdatumet](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Kvitta en leverantörsdelbetalning som har rabatter på leverantörskreditfakturor](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Kvitta en leverantörsdelbetalning som har flera rabattperioder](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Kvitta en leverantörsdelbetalning eller slutlig betalning före rabatt](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Kvitta en leverantörsdelbetalning med hela slutbetalningen före rabattdatumet](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [En verifikation med flera kund- eller leverantörsposter](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ I följande avsnitt finns information om kvittningar. Kvittning är en process d
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till Viktig information om [Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner som är planerade. 
+Gå till [utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner som är planerade. 
 
 #### <a name="blogs"></a>Bloggar
 

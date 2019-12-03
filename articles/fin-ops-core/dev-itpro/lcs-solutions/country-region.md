@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 058adaef91a7b30e25bea603625116e97009cf55
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 795e9f5b843ba8e50dc091949c9732b8b033355e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537034"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812098"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
@@ -45,10 +45,10 @@ Det här avsnittet innehåller listor över resurser som kan hjälpa dig att gö
 
 ### <a name="developing-localized-solutions"></a>Utveckla lokaliserade lösningar
 Följande resurser innehåller anvisningar och information som hjälper utvecklare och ISV:er som skapar lands-/regionspecifika anpassningar eller skapar en lösning för ett land Microsoft inte stöder.
--   [Separata lokaliseringsmodeller](separate-localization-models.md)
+-   [Separation av lokaliseringsmodeller](separate-localization-models.md)
 -   [Använd sammanhang för land/region](apply-country-context.md)
--   [Regelcertifieringar](regulatory-certifications.md)
--   [Klassificera lokaliseringsfunktioner](classify-localization-features.md)
+-   [Information om regelcertifiering i funktionstitlar](regulatory-certifications.md)
+-   [Klassificering av lokaliseringsfunktioner](classify-localization-features.md)
 -   [Landskoder - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
 ### <a name="regulatory-updates-and-communication"></a>Regeluppdateringar och kommunikation
@@ -57,36 +57,36 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 #### <a name="regulatory-updates"></a>Regeluppdateringar
 -   [Regeluppdateringar](../../../finance/localizations/regulatory-updates.md)
 -   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (uppdateras en gång i veckan)
--   [LCS-problemsökning](../lifecycle-services/issue-search-lcs.md) (uppdateras dagligen)
+-   [Problemsökning i Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (uppdateras dagligen)
 
 #### <a name="communication-and-alerts"></a>Kommunikation och notifieringar
--   [Regelbevakning och meddelanden om regeluppdatering](regulatory-watch-communication.md)
--   [Informera Microsoft om regelnotifieringar för land/region och spåra status för regelfunktioner](submit-localization-alerts.md)
+-   [Regelbevakning och kommunikation av regeluppdateringar](regulatory-watch-communication.md)
+-   [Skicka notifieringar om lands-/regionspecifika regelfunktioner](submit-localization-alerts.md)
 
-#### <a name="dynamics-365-release-notes"></a>Viktig information om Dynamics 365
-[Viktig information om Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
+#### <a name="dynamics-365-release-plans"></a>Utgivningsplaner för Dynamics 365
+[Utgivningsplaner för Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Nyheter i Finance and Operations-apparna
-Listan [Nyheter](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.
+Listan [Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 Verktyget Elektronisk rapportering (ER) gör det möjligt att konfigurera elektroniska dokumentformat i enligt rättsliga krav i olika länder/regioner. Med ER går det att hantera formaten under deras livscykel. Mer information finns i följande ämnen:
--   [Översikt över elektronisk rapportering](../analytics/general-electronic-reporting.md)
--   [Hantera livscykeln för konfiguration av elektronisk rapportering](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
--   [Skapa en konfiguration för elektronisk rapportering](../analytics/electronic-reporting-configuration.md)
--   [Utöka listan med funktioner för elektronisk rapportering](../analytics/general-electronic-reporting-formulas-list-extension.md)
--   [Destinationer för elektronisk rapportering](../analytics/electronic-reporting-destinations.md)
+-   [Översikt över elektronisk rapportering (ER)](../analytics/general-electronic-reporting.md)
+-   [Hantera livscykeln för konfiguration av elektronisk rapportering (ER)](../analytics/general-electronic-reporting-manage-configuration-lifecycle.md)
+-   [Skapa konfigurationer för elektronisk rapportering (ER)](../analytics/electronic-reporting-configuration.md)
+-   [Utöka listan med funktioner för elektronisk rapportering (ER)](../analytics/general-electronic-reporting-formulas-list-extension.md)
+-   [Destinationer för elektronisk rapportering (ER)](../analytics/electronic-reporting-destinations.md)
 -   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Importera konfigurationer för elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
--   [Konfigurera elektronisk rapportering för att hämta data till Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [Skapa elektroniska dokument och uppdatera programdata med hjälp av verktyget Elektronisk rapportering](../analytics/generate-electronic-documents-update-application-data.md)
+-   [Importera konfigurationer för elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
+-   [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Generera elektroniska dokument och uppdatera programdata genom att använda ER](../analytics/generate-electronic-documents-update-application-data.md)
 
 ### <a name="task-guides"></a>Uppgiftsguider
 Uppgiftsguider finns i produktens hjälpfönster och ger en guidad genomgång av viktiga affärsprocesser. Det går att öppna en uppgiftsguide och läsa stegen i en affärsprocess eller spela upp en uppgiftsguide för att gå igenom en affärsprocess och ange data.
 
 Du hittar uppgiftsguiderna genom att navigera till en sida i appen och klicka på Hjälp. Uppgiftsguider som använder sidan visas i hjälpfönstret. Det går även att använda hjälpfönstret till att söka efter uppgiftsguider efter rubrik.
 
-Mer information finns i [Uppgiftsguider](../../fin-ops/get-started/help-overview.md#task-guides).
+Mer information finns i [hjälpsystemet](../../fin-ops/get-started/help-overview.md#task-guides).
 
 
 ### <a name="countryregion-specific-help-content"></a>Lands-/regionspecifikt hjälpinnehåll
