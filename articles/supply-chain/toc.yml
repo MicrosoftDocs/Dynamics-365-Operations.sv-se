@@ -571,6 +571,8 @@
                   href: cost-management/inventory-close.md
                 - name: Justera kostnadsvärden för lagerbehållning
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Åldersfördelningsrapport för lager
+                  href: cost-management/inventory-aging-report-storage.md
             - name: Tillverkningsredovisning
               items:
                 - name: Strukturlisteberäkningar
@@ -679,7 +681,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skriver ut
                   items:
-                    - name: Dokumentetutskrift – översikt
+                    - name: Dokumentutskrift – översikt
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Installera dokumentflödesagenten för att aktivera nätverksutskrift
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
@@ -868,7 +870,13 @@
                         - name: Hämta konfigurationer från ER-databasen för RCS‑typen
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Importera konfigurationer från RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Självstudier
+                      items:
+                        - name: Använd kopplingsdatakällor för att hämta data från flera programtabeller i ER-modellmappningar (elektronisk rapportering)
+                          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Använd elektroniska rapporteringslösningar i Finance and Operations
                   items:
                     - name: Konfigurera ramverket
@@ -903,6 +911,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Hantering av affärsdokument – översikt
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Lägga till nya fält i en affärsdokumentmall i Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                 - name: API för ER‑ramverk
                   items:
                     - name: Utöka listan med funktioner för elektronisk rapportering
@@ -1051,6 +1061,22 @@
           items:
             - name: Huvudplanering – startsida
               href: master-planning/master-planning-home-page.md
+            - name: Planeringsoptimering
+              items:
+                - name: Planeringsoptimering – översikt
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Kom igång med planeringsoptimering
+                  href: master-planning/planning-optimization/get-started.md
+                - name: Bristanalys för planeringsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Använda filter på en plan
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Visa planhistorik och planeringsloggar
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Automatisk bekräftelse med planeringsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Avbryta ett planeringsjobb
+                  href: master-planning/planning-optimization/cancel-planning-job.md
             - name: Huvudplaner
               items:
                 - name: Huvudplaner – översikt

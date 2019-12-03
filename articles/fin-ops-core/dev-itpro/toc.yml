@@ -2,6 +2,8 @@
   items:
     - name: Utveckling och administration för Finance and Operations‑appar
       items:
+        - name: Dokumentation för appen Finance and Operations
+          href: ../fin-ops/index.md
         - name: Utveckling och administration för Finance and Operations‑appar
           href: index.md
         - name: Nyheter och ändringar
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Organisationshierarki för Common Data Service
                           href: data-entities/dual-write-organization.md
-                        - name: Företagskoncept i Common Data Service
-                          href: data-entities/dual-write-company.md
-                        - name: Integrerad kundmaster
+                        - name: Företagsintegrering
+                          items:
+                            - name: Företagskoncept i Common Data Service
+                              href: data-entities/dual-write-company.md
+                            - name: Starta med företagsdata
+                              href: data-entities/dual-write-bootstrap.md
+                        - name: Integrerat kundhuvud
                           href: data-entities/dual-write-customer.md
+                        - name: Integrerad redovisning
+                          href: data-entities/dual-write-ledger.md
                         - name: Enhetlig produktupplevelse
                           href: data-entities/dual-write-product.md
-                        - name: Integrerad leverantörsmaster
-                          href: data-entities/dual-write-vendor.md
+                        - name: Leverantörsintegration
+                          items:
+                            - name: Integrerat leverantörshuvud
+                              href: data-entities/dual-write-vendor.md
+                            - name: Växla mellan leverantörsdesigner
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: Integrerade platser och lagerställen
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Integrerat skattehuvud
+                          href: data-entities/dual-write-tax.md
                         - name: Initial synkronisering
                           href: data-entities/dual-write-initial.md
                         - name: Felsökning av dataintegrering
@@ -312,7 +326,7 @@
                   href: database/api/dbmovement-api-overview.md
                 - name: Versioner och support
                   href: database/api/dbmovement-api-versioning-support.md
-                - name: Äkthetsbevisning
+                - name: Autentisering
                   href: database/api/dbmovement-api-authentication.md
                 - name: Begränsning
                   href: database/api/dbmovement-api-throttling.md
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Felsöka lokala distributioner
                   href: deployment/troubleshoot-on-prem.md
+                - name: Skript för problemlösning i lokala miljöer
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Certifikatrotation
                   href: deployment/certificate-rotation-on-prem.md
             - name: Distribuera anpassad kod
@@ -1024,7 +1040,7 @@
                       href: mobile-apps/platform/client-apis/modules/event-ievent.md
                     - name: Kontrollmodul
                       href: mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md
-                    - name: Behållaremodul
+                    - name: Behållarmodul
                       href: mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md
                     - name: Fältmodul
                       href: mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md
