@@ -17,52 +17,52 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-09-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 1e9d237817024800ad9880ec58db3505ac1c493f
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a053c9094151f4e12e4aadc533dd272258779540
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2027094"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832592"
 ---
-# <a name="optimize-performance-with-auto-cleanup-tasks"></a><span data-ttu-id="ff843-103">Optimera prestanda med automatiska rensningsuppgifter</span><span class="sxs-lookup"><span data-stu-id="ff843-103">Optimize performance with auto cleanup tasks</span></span>
+# <a name="optimize-performance-with-auto-cleanup-tasks"></a><span data-ttu-id="a495a-103">Optimera prestanda med automatiska rensningsuppgifter</span><span class="sxs-lookup"><span data-stu-id="a495a-103">Optimize performance with auto cleanup tasks</span></span>
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="ff843-104">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="ff843-104">**Issue**</span></span>
+<span data-ttu-id="a495a-104">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="a495a-104">**Issue**</span></span>
 
-<span data-ttu-id="ff843-105">Microsoft Dynamics 365 Talent kan uppleva prestandaproblem om historiken för batchjobb blir för stor.</span><span class="sxs-lookup"><span data-stu-id="ff843-105">Microsoft Dynamics 365 Talent can experience performance issues if the batch job history grows too large.</span></span>
+<span data-ttu-id="a495a-105">Microsoft Dynamics 365 Talent kan uppleva prestandaproblem om historiken för batchjobb blir för stor.</span><span class="sxs-lookup"><span data-stu-id="a495a-105">Microsoft Dynamics 365 Talent can experience performance issues if the batch job history grows too large.</span></span>
 
-<span data-ttu-id="ff843-106">**Orsak**</span><span class="sxs-lookup"><span data-stu-id="ff843-106">**Cause**</span></span>
+<span data-ttu-id="a495a-106">**Orsak**</span><span class="sxs-lookup"><span data-stu-id="a495a-106">**Cause**</span></span>
 
-<span data-ttu-id="ff843-107">Batchjobb som körs ofta kan leda till en hållbar tillväxt av historiken för batchjobb.</span><span class="sxs-lookup"><span data-stu-id="ff843-107">Batch jobs that run frequently can lead to unsustainable growth of the batch job history.</span></span> <span data-ttu-id="ff843-108">Detta kan leda till prestandaproblem.</span><span class="sxs-lookup"><span data-stu-id="ff843-108">This can cause performance issues.</span></span> 
+<span data-ttu-id="a495a-107">Batchjobb som körs ofta kan leda till en hållbar tillväxt av historiken för batchjobb.</span><span class="sxs-lookup"><span data-stu-id="a495a-107">Batch jobs that run frequently can lead to unsustainable growth of the batch job history.</span></span> <span data-ttu-id="a495a-108">Detta kan leda till prestandaproblem.</span><span class="sxs-lookup"><span data-stu-id="a495a-108">This can cause performance issues.</span></span> 
 
-<span data-ttu-id="ff843-109">**Upplösning**</span><span class="sxs-lookup"><span data-stu-id="ff843-109">**Resolution**</span></span>
+<span data-ttu-id="a495a-109">**Upplösning**</span><span class="sxs-lookup"><span data-stu-id="a495a-109">**Resolution**</span></span>
 
-<span data-ttu-id="ff843-110">Schemalägg en automatisk uppgift för att rensa historiken för batchjobb.</span><span class="sxs-lookup"><span data-stu-id="ff843-110">Schedule an automatic task to clean up your batch job history.</span></span> <span data-ttu-id="ff843-111">Vi rekommenderar att du anger att aktiviteten ska köras varje vecka, men du kan behöva göra en rensning mer eller mindre ofta, beroende på din miljö.</span><span class="sxs-lookup"><span data-stu-id="ff843-111">We recommend setting up the task to run weekly, but you might need to run the cleanup more or less frequently, depending on your environment.</span></span> <span data-ttu-id="ff843-112">Följande procedur innehåller våra rekommenderade inställningar, men du kan ändra dem efter dina behov.</span><span class="sxs-lookup"><span data-stu-id="ff843-112">The following procedure contains our recommended settings, but you can change these according to your needs.</span></span>
+<span data-ttu-id="a495a-110">Schemalägg en automatisk uppgift för att rensa historiken för batchjobb.</span><span class="sxs-lookup"><span data-stu-id="a495a-110">Schedule an automatic task to clean up your batch job history.</span></span> <span data-ttu-id="a495a-111">Vi rekommenderar att du anger att aktiviteten ska köras varje vecka, men du kan behöva göra en rensning mer eller mindre ofta, beroende på din miljö.</span><span class="sxs-lookup"><span data-stu-id="a495a-111">We recommend setting up the task to run weekly, but you might need to run the cleanup more or less frequently, depending on your environment.</span></span> <span data-ttu-id="a495a-112">Följande procedur innehåller våra rekommenderade inställningar, men du kan ändra dem efter dina behov.</span><span class="sxs-lookup"><span data-stu-id="a495a-112">The following procedure contains our recommended settings, but you can change these according to your needs.</span></span>
 
-1. <span data-ttu-id="ff843-113">Välj **systemadministration** i Talent.</span><span class="sxs-lookup"><span data-stu-id="ff843-113">In Talent, select **System administration**.</span></span>
+1. <span data-ttu-id="a495a-113">Välj **systemadministration** i Talent.</span><span class="sxs-lookup"><span data-stu-id="a495a-113">In Talent, select **System administration**.</span></span>
 
-2. <span data-ttu-id="ff843-114">I fätet **Sök**, ange **Rensa historik för batchjobb**.</span><span class="sxs-lookup"><span data-stu-id="ff843-114">In the **Search** bar, enter **Batch job history clean-up**.</span></span>
+2. <span data-ttu-id="a495a-114">I fätet **Sök**, ange **Rensa historik för batchjobb**.</span><span class="sxs-lookup"><span data-stu-id="a495a-114">In the **Search** bar, enter **Batch job history clean-up**.</span></span>
 
    ![Sök efter rensa historik för batchjobb](media/talent-batch-history-cleanup-search-bar.png)
 
-3. <span data-ttu-id="ff843-116">I **Historikgränser (dagar)**, ange **30**.</span><span class="sxs-lookup"><span data-stu-id="ff843-116">In **History limit (days)**, enter **30**.</span></span>
+3. <span data-ttu-id="a495a-116">I **Historikgränser (dagar)**, ange **30**.</span><span class="sxs-lookup"><span data-stu-id="a495a-116">In **History limit (days)**, enter **30**.</span></span>
 
    ![Ange historikgräns till 30](media/talent-batch-history-cleanup-history-limit.png)
 
-4. <span data-ttu-id="ff843-118">Välj **kör i bakgrunden** och välj sedan **återkommande**.</span><span class="sxs-lookup"><span data-stu-id="ff843-118">Select **Run in the background** and then select **Recurrence**.</span></span>
+4. <span data-ttu-id="a495a-118">Välj **kör i bakgrunden** och välj sedan **återkommande**.</span><span class="sxs-lookup"><span data-stu-id="a495a-118">Select **Run in the background** and then select **Recurrence**.</span></span>
 
    ![Ange upprepning](media/talent-batch-history-cleanup-recurrence.png)
 
-5. <span data-ttu-id="ff843-120">Under **definiera återkommande**, ange **Startdatum** och **Starttid** vid ledighet eller helg och välj sedan **INGET SLUTDATUM**.</span><span class="sxs-lookup"><span data-stu-id="ff843-120">Under **Define recurrence**, set the **Start date** and **Start time** to occur during off-hours or the weekend, and then select **NO END DATE**.</span></span> 
+5. <span data-ttu-id="a495a-120">Under **definiera återkommande**, ange **Startdatum** och **Starttid** vid ledighet eller helg och välj sedan **INGET SLUTDATUM**.</span><span class="sxs-lookup"><span data-stu-id="a495a-120">Under **Define recurrence**, set the **Start date** and **Start time** to occur during off-hours or the weekend, and then select **NO END DATE**.</span></span> 
 
    ![Definiera återkommande startdatum och tid](media/talent-batch-history-cleanup-define-recurrence.png)
 
-6. <span data-ttu-id="ff843-122">Under **ÅTERKOMMANDE MÖNSTER**, välj **dagar** och ange **UPPREPA EFTER ANGIVET INTERVALL** till **7**.</span><span class="sxs-lookup"><span data-stu-id="ff843-122">Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.</span></span>
+6. <span data-ttu-id="a495a-122">Under **ÅTERKOMMANDE MÖNSTER**, välj **dagar** och ange **UPPREPA EFTER ANGIVET INTERVALL** till **7**.</span><span class="sxs-lookup"><span data-stu-id="a495a-122">Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.</span></span>
 
    ![Ställ in rensning för att upprepa veckovis](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
-7. <span data-ttu-id="ff843-124">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="ff843-124">Select **OK**.</span></span>
+7. <span data-ttu-id="a495a-124">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="a495a-124">Select **OK**.</span></span>
 
-8. <span data-ttu-id="ff843-125">Ändra övriga parametrar under **kör i bakgrunden** om det behövs och välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="ff843-125">Change any other parameters under **Run in the background** as necessary, and then select **OK**.</span></span>
+8. <span data-ttu-id="a495a-125">Ändra övriga parametrar under **kör i bakgrunden** om det behövs och välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="a495a-125">Change any other parameters under **Run in the background** as necessary, and then select **OK**.</span></span>
 

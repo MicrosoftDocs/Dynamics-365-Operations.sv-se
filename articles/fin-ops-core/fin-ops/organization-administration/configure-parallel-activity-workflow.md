@@ -17,40 +17,40 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11b541c3e159b2c38e4dd2fa9f2ad08e4c1e4500
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 14b4410a0bd177159817cd5116a5a0d959992ad5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180058"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812419"
 ---
-# <a name="configure-parallel-activities-in-a-workflow"></a><span data-ttu-id="2345b-103">Konfigurera parallella aktiviteter i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="2345b-103">Configure parallel activities in a workflow</span></span>
+# <a name="configure-parallel-activities-in-a-workflow"></a><span data-ttu-id="2a0ea-103">Konfigurera parallella aktiviteter i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="2a0ea-103">Configure parallel activities in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="2345b-104">Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera en parallell aktivitet.</span><span class="sxs-lookup"><span data-stu-id="2345b-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
+<span data-ttu-id="2a0ea-104">Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera en parallell aktivitet.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-104">To configure a parallel activity, complete the following procedures in the workflow editor.</span></span>
 
-<span data-ttu-id="2345b-105">En parallellt aktivitet består av arbetsflödesförgreningar som körs samtidigt.</span><span class="sxs-lookup"><span data-stu-id="2345b-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
+<span data-ttu-id="2a0ea-105">En parallellt aktivitet består av arbetsflödesförgreningar som körs samtidigt.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-105">A parallel activity consists of workflow branches that run at the same time.</span></span>
 
-## <a name="name-a-parallel-activity"></a><span data-ttu-id="2345b-106">Namnge en parallell aktivitet</span><span class="sxs-lookup"><span data-stu-id="2345b-106">Name a parallel activity</span></span>
+## <a name="name-a-parallel-activity"></a><span data-ttu-id="2a0ea-106">Namnge en parallell aktivitet</span><span class="sxs-lookup"><span data-stu-id="2a0ea-106">Name a parallel activity</span></span>
 
-<span data-ttu-id="2345b-107">Följ dessa steg när du vill ange ett namn för en parallell aktivitet.</span><span class="sxs-lookup"><span data-stu-id="2345b-107">Follow these steps to enter a name for a parallel activity.</span></span>
+<span data-ttu-id="2a0ea-107">Följ dessa steg när du vill ange ett namn för en parallell aktivitet.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-107">Follow these steps to enter a name for a parallel activity.</span></span>
 
-1. <span data-ttu-id="2345b-108">Högerklicka den parallella aktiviteten och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="2345b-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
-2. <span data-ttu-id="2345b-109">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="2345b-109">In the left pane, click **Basic Settings**.</span></span>
-3. <span data-ttu-id="2345b-110">Ange ett unikt namn för den parallella aktiviteten i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="2345b-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
-4. <span data-ttu-id="2345b-111">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="2345b-111">Click **Close**.</span></span>
+1. <span data-ttu-id="2a0ea-108">Högerklicka den parallella aktiviteten och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-108">Right-click the parallel activity, and then click **Properties** to open the **Properties** form.</span></span>
+2. <span data-ttu-id="2a0ea-109">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-109">In the left pane, click **Basic Settings**.</span></span>
+3. <span data-ttu-id="2a0ea-110">Ange ett unikt namn för den parallella aktiviteten i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-110">In the **Name** field, enter a unique name for the parallel activity.</span></span>
+4. <span data-ttu-id="2a0ea-111">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-111">Click **Close**.</span></span>
 
-## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="2345b-112">Konfigurera förgreningarna i en parallell aktivitet</span><span class="sxs-lookup"><span data-stu-id="2345b-112">Configure the branches of a parallel activity</span></span>
+## <a name="configure-the-branches-of-a-parallel-activity"></a><span data-ttu-id="2a0ea-112">Konfigurera förgreningarna i en parallell aktivitet</span><span class="sxs-lookup"><span data-stu-id="2a0ea-112">Configure the branches of a parallel activity</span></span>
 
-<span data-ttu-id="2345b-113">Gör på följande sätt när du vill lägga till och konfigurera förgreningarna i denna parallella aktivitet.</span><span class="sxs-lookup"><span data-stu-id="2345b-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
+<span data-ttu-id="2a0ea-113">Gör på följande sätt när du vill lägga till och konfigurera förgreningarna i denna parallella aktivitet.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-113">Follow these steps to add and configure the branches of this parallel activity.</span></span>
 
-1. <span data-ttu-id="2345b-114">Dubbelklicka på den parallella aktiviteten för att visa förgreningarna för den parallella aktiviteten.</span><span class="sxs-lookup"><span data-stu-id="2345b-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
-2. <span data-ttu-id="2345b-115">Dra elementet **Avdelning** från området **Arbetsflödeselement** till en infogningspunkt på duken om du vill lägga till en förgrening.</span><span class="sxs-lookup"><span data-stu-id="2345b-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="2345b-116">Följande bild visar en infogningspunkt.</span><span class="sxs-lookup"><span data-stu-id="2345b-116">The following figure shows an insertion point.</span></span>
+1. <span data-ttu-id="2a0ea-114">Dubbelklicka på den parallella aktiviteten för att visa förgreningarna för den parallella aktiviteten.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-114">Double-click the parallel activity to display the branches of the parallel activity.</span></span>
+2. <span data-ttu-id="2a0ea-115">Dra elementet **Avdelning** från området **Arbetsflödeselement** till en infogningspunkt på duken om du vill lägga till en förgrening.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-115">To add a branch, drag the **Branch** element from the **Workflow elements** area to an insertion point on the canvas.</span></span> <span data-ttu-id="2a0ea-116">Följande bild visar en infogningspunkt.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-116">The following figure shows an insertion point.</span></span>
 
     ![Infogningspunkt](./media/workflow_insertionpoint.gif)
 
     > [!NOTE]
-    > <span data-ttu-id="2345b-118">Ordningen för förgreningarna är oviktig eftersom alla förgreningar i en parallell aktivitet körs samtidigt.</span><span class="sxs-lookup"><span data-stu-id="2345b-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span>
+    > <span data-ttu-id="2a0ea-118">Ordningen för förgreningarna är oviktig eftersom alla förgreningar i en parallell aktivitet körs samtidigt.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-118">The order of the branches is not important because all the branches of a parallel activity run at the same time.</span></span>
 
-3. <span data-ttu-id="2345b-119">Se [Konfigurera en parallell gren](configure-parallel-branch-workflow.md) för att konfigurera respektive förgrening.</span><span class="sxs-lookup"><span data-stu-id="2345b-119">To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).</span></span>
+3. <span data-ttu-id="2a0ea-119">Se [Konfigurera en parallella grenar i ett arbetsflöde](configure-parallel-branch-workflow.md) för att konfigurera respektive förgrening.</span><span class="sxs-lookup"><span data-stu-id="2a0ea-119">To configure each branch, see [Configure parallel branches in a workflow](configure-parallel-branch-workflow.md).</span></span>

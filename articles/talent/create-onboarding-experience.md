@@ -16,36 +16,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008138"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813947"
 ---
-# <a name="get-started-with-onboard"></a><span data-ttu-id="0941a-104">Kom igång med Onboard</span><span class="sxs-lookup"><span data-stu-id="0941a-104">Get started with Onboard</span></span>
+# <a name="get-started-with-onboard"></a><span data-ttu-id="ebc10-104">Kom igång med Onboard</span><span class="sxs-lookup"><span data-stu-id="ebc10-104">Get started with Onboard</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="0941a-105">Med hjälp av Microsoft Dynamics 365 Talent: Onboard kan du hjälpa dina nya medarbetare att prestera mer effektivt och få en känsla av tillhörighet i sina nya roller.</span><span class="sxs-lookup"><span data-stu-id="0941a-105">By using Microsoft Dynamics 365 Talent: Onboard, you can help your new employees perform more effectively and gain a sense of belonging in their new roles.</span></span> <span data-ttu-id="0941a-106">En effektiv integreringsprocess hjälper nyanställda att förstå sina nya roller.</span><span class="sxs-lookup"><span data-stu-id="0941a-106">An effective onboarding process helps new hires understand their new roles.</span></span> <span data-ttu-id="0941a-107">Det ger dem också ett försprång i upprättandet av värdefulla relationer som kommer att bidra till att säkerställa deras framgång.</span><span class="sxs-lookup"><span data-stu-id="0941a-107">It also gives them a head start in establishing valuable relationships that will help ensure their success.</span></span>
+<span data-ttu-id="ebc10-105">Med hjälp av Microsoft Dynamics 365 Talent: Onboard kan du hjälpa dina nya medarbetare att prestera mer effektivt och få en känsla av tillhörighet i sina nya roller.</span><span class="sxs-lookup"><span data-stu-id="ebc10-105">By using Microsoft Dynamics 365 Talent: Onboard, you can help your new employees perform more effectively and gain a sense of belonging in their new roles.</span></span> <span data-ttu-id="ebc10-106">En effektiv integreringsprocess hjälper nyanställda att förstå sina nya roller.</span><span class="sxs-lookup"><span data-stu-id="ebc10-106">An effective onboarding process helps new hires understand their new roles.</span></span> <span data-ttu-id="ebc10-107">Det ger dem också ett försprång i upprättandet av värdefulla relationer som kommer att bidra till att säkerställa deras framgång.</span><span class="sxs-lookup"><span data-stu-id="ebc10-107">It also gives them a head start in establishing valuable relationships that will help ensure their success.</span></span>
 
-<span data-ttu-id="0941a-108">Med Onboard kan du snabbt skapa en integrationsguiden som välkomnar dina nyanställda och gör dem entusiastiska över att gå med i organisationen.</span><span class="sxs-lookup"><span data-stu-id="0941a-108">Onboard lets you quickly create an onboarding guide that will welcome your new hires and make them excited about joining your organization.</span></span>
+<span data-ttu-id="ebc10-108">Med Onboard kan du snabbt skapa en integrationsguiden som välkomnar dina nyanställda och gör dem entusiastiska över att gå med i organisationen.</span><span class="sxs-lookup"><span data-stu-id="ebc10-108">Onboard lets you quickly create an onboarding guide that will welcome your new hires and make them excited about joining your organization.</span></span>
 
-<span data-ttu-id="0941a-109">[![Integrationsguide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)</span><span class="sxs-lookup"><span data-stu-id="0941a-109">[![Onboarding guide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)</span></span>
+<span data-ttu-id="ebc10-109">[![Integrationsguide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)</span><span class="sxs-lookup"><span data-stu-id="ebc10-109">[![Onboarding guide](./media/onboard-onboarding-guide.png)](./media/onboard-onboarding-guide.png)</span></span>
 
-<span data-ttu-id="0941a-110">Information om hur du skaffar och använder appen Onboard finns i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="0941a-110">To learn how to get and use the Onboard app, see the following topics:</span></span>
+<span data-ttu-id="ebc10-110">Information om hur du skaffar och använder appen Onboard finns i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="ebc10-110">To learn how to get and use the Onboard app, see the following topics:</span></span>
 
-- [<span data-ttu-id="0941a-111">Hämta Onboard‑appen</span><span class="sxs-lookup"><span data-stu-id="0941a-111">Get the Onboard app</span></span>](./onboard-get-app.md)
-- [<span data-ttu-id="0941a-112">Skapa en integrationsguide</span><span class="sxs-lookup"><span data-stu-id="0941a-112">Create an onboarding guide</span></span>](./onboard-create-guide.md)
-- [<span data-ttu-id="0941a-113">Skapa en mall för integrationsguide</span><span class="sxs-lookup"><span data-stu-id="0941a-113">Create an onboarding template</span></span>](./onboard-create-template.md)
-- [<span data-ttu-id="0941a-114">Redigera integrationsguider och mallar</span><span class="sxs-lookup"><span data-stu-id="0941a-114">Edit onboarding guides and templates</span></span>](./onboard-edit-guides-templates.md)
-- [<span data-ttu-id="0941a-115">Dela innehåll med andra deltagare</span><span class="sxs-lookup"><span data-stu-id="0941a-115">Share content with other contributors</span></span>](./onboard-share-template.md)
-- [<span data-ttu-id="0941a-116">Visa status för uppgifter och integration av medarbetare</span><span class="sxs-lookup"><span data-stu-id="0941a-116">View the status of tasks and onboarding employees</span></span>](./onboard-view-status.md)
-- [<span data-ttu-id="0941a-117">Skapa anställningsteam i Onboard</span><span class="sxs-lookup"><span data-stu-id="0941a-117">Create hiring teams in Onboard</span></span>](./onboard-create-team.md)
+- [<span data-ttu-id="ebc10-111">Hämta Dynamics 365 Talent - Onboard-appen</span><span class="sxs-lookup"><span data-stu-id="ebc10-111">Get the Dynamics 365 Talent - Onboard app</span></span>](./onboard-get-app.md)
+- [<span data-ttu-id="ebc10-112">Skapa och skicka en integrationsguide genom att använda Dynamics 365 Talent - Onboard</span><span class="sxs-lookup"><span data-stu-id="ebc10-112">Create and send an onboarding guide by using Dynamics 365 Talent - Onboard</span></span>](./onboard-create-guide.md)
+- [<span data-ttu-id="ebc10-113">Skapa en integrationsmall med hjälp av Dynamics 365 Talent - Onboard</span><span class="sxs-lookup"><span data-stu-id="ebc10-113">Create an onboarding template by using Dynamics 365 Talent - Onboard</span></span>](./onboard-create-template.md)
+- [<span data-ttu-id="ebc10-114">Redigera integrationsguider och mallar i Dynamics 365 Talent - Onboard</span><span class="sxs-lookup"><span data-stu-id="ebc10-114">Edit onboarding guides and templates in Dynamics 365 Talent - Onboard</span></span>](./onboard-edit-guides-templates.md)
+- [<span data-ttu-id="ebc10-115">Dela innehåll med andra deltagare i Dynamics 365 Talent - Onboard</span><span class="sxs-lookup"><span data-stu-id="ebc10-115">Share content with other contributors in Dynamics 365 Talent - Onboard</span></span>](./onboard-share-template.md)
+- [<span data-ttu-id="ebc10-116">Visa status för integration av medarbetare och dina uppgifter</span><span class="sxs-lookup"><span data-stu-id="ebc10-116">View the status of onboarding employees and your taskss</span></span>](./onboard-view-status.md)
+- [<span data-ttu-id="ebc10-117">Skapa ett anställningsteam genom att använda Dynamics 365 Talent - Onboard</span><span class="sxs-lookup"><span data-stu-id="ebc10-117">Create a hiring team by using Dynamics 365 Talent - Onboard</span></span>](./onboard-create-team.md)
 
-## <a name="see-also"></a><span data-ttu-id="0941a-118">Se även</span><span class="sxs-lookup"><span data-stu-id="0941a-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ebc10-118">Se även</span><span class="sxs-lookup"><span data-stu-id="ebc10-118">See also</span></span>
 
-- [<span data-ttu-id="0941a-119">Prova eller köp appen Onboard</span><span class="sxs-lookup"><span data-stu-id="0941a-119">Try or buy the Onboard app</span></span>](https://dynamics.microsoft.com/talent/onboard/)
-- [<span data-ttu-id="0941a-120">Nyheter</span><span class="sxs-lookup"><span data-stu-id="0941a-120">What's new</span></span>](./whats-new.md)
-- [<span data-ttu-id="0941a-121">Viktig information</span><span class="sxs-lookup"><span data-stu-id="0941a-121">Release notes</span></span>](https://docs.microsoft.com/business-applications-release-notes/index)
-- [<span data-ttu-id="0941a-122">Få support</span><span class="sxs-lookup"><span data-stu-id="0941a-122">Get support</span></span>](./talent-support.md)
+- [<span data-ttu-id="ebc10-119">Prova eller köp appen Onboard</span><span class="sxs-lookup"><span data-stu-id="ebc10-119">Try or buy the Onboard app</span></span>](https://dynamics.microsoft.com/talent/onboard/)
+- [<span data-ttu-id="ebc10-120">Nyheter och ändringar i Dynamics 365 Talent</span><span class="sxs-lookup"><span data-stu-id="ebc10-120">What's new or changed in Dynamics 365 Talent</span></span>](./whats-new.md)
+- [<span data-ttu-id="ebc10-121">Utgivningsplaner</span><span class="sxs-lookup"><span data-stu-id="ebc10-121">Release plans</span></span>](https://docs.microsoft.com/business-applications-release-notes/index)
+- [<span data-ttu-id="ebc10-122">Få support för Microsoft Dynamics 365 Talent</span><span class="sxs-lookup"><span data-stu-id="ebc10-122">Get support for Microsoft Dynamics 365 Talent</span></span>](./talent-support.md)
