@@ -19,112 +19,60 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a12ab249129dce24cdca5e29d737fa9f68c0eac
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: 9efc63c385c31a6d8848d016c1a8689460908dcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572459"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769670"
 ---
-# <a name="organization-hierarchy-in-common-data-service"></a><span data-ttu-id="38ab7-103">Organisationshierarki i Common Data Service</span><span class="sxs-lookup"><span data-stu-id="38ab7-103">Organization hierarchy in Common Data Service</span></span>
+# <a name="organization-hierarchy-in-common-data-service"></a><span data-ttu-id="99d97-103">Organisationshierarki i Common Data Service</span><span class="sxs-lookup"><span data-stu-id="99d97-103">Organization hierarchy in Common Data Service</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
+<span data-ttu-id="99d97-104">Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett grundläggande begrepp och systeminställningarna börjar med konfigurationen av en organisationshierarki.</span><span class="sxs-lookup"><span data-stu-id="99d97-104">Because Dynamics 365 Finance is a financial system, *organization* is a core concept, and system setup starts with the configuration of an organization hierarchy.</span></span> <span data-ttu-id="99d97-105">Affärsekonomi kan sedan spåras på organisationsnivå och även på alla nivåer i organisationshierarkin.</span><span class="sxs-lookup"><span data-stu-id="99d97-105">Business financials can then be tracked at the organization level and also at any level in the organization hierarchy.</span></span>
 
-<span data-ttu-id="38ab7-104">Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett grundläggande begrepp och systeminställningarna börjar med konfigurationen av en organisationshierarki.</span><span class="sxs-lookup"><span data-stu-id="38ab7-104">Because Dynamics 365 Finance is a financial system, *organization* is a core concept, and system setup starts with the configuration of an organization hierarchy.</span></span> <span data-ttu-id="38ab7-105">Affärsekonomi kan sedan spåras på organisationsnivå och även på alla nivåer i organisationshierarkin.</span><span class="sxs-lookup"><span data-stu-id="38ab7-105">Business financials can then be tracked at the organization level and also at any level in the organization hierarchy.</span></span>
+<span data-ttu-id="99d97-106">Även om Common Data Service inte har begreppet av en organisationshierarki, har den några lösa begrepp, till exempel totala försäljningsintäkter.</span><span class="sxs-lookup"><span data-stu-id="99d97-106">Although Common Data Service doesn't have the concept of an organization hierarchy, it does have a few loose concepts, such as total sales revenue.</span></span> <span data-ttu-id="99d97-107">Som en del av Common Data Service-integrationen läggs organisationshierarkins datastruktur till i Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="99d97-107">As part of Common Data Service integration, the organization hierarchy data structure is added to Common Data Service.</span></span>
 
-<span data-ttu-id="38ab7-106">Även om Common Data Service inte har begreppet av en organisationshierarki, har den några lösa begrepp, till exempel totala försäljningsintäkter.</span><span class="sxs-lookup"><span data-stu-id="38ab7-106">Although Common Data Service doesn't have the concept of an organization hierarchy, it does have a few loose concepts, such as total sales revenue.</span></span> <span data-ttu-id="38ab7-107">Som en del av Common Data Service-integrationen läggs organisationshierarkins datastruktur till i Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="38ab7-107">As part of Common Data Service integration, the organization hierarchy data structure is added to Common Data Service.</span></span>
+## <a name="data-flow"></a><span data-ttu-id="99d97-108">Dataflöde</span><span class="sxs-lookup"><span data-stu-id="99d97-108">Data flow</span></span>
 
-## <a name="data-flow"></a><span data-ttu-id="38ab7-108">Dataflöde</span><span class="sxs-lookup"><span data-stu-id="38ab7-108">Data flow</span></span>
-
-<span data-ttu-id="38ab7-109">Ett affärsekosystem som består av Finance and Operations-appar och Common Data Service kommer att fortsätta att ha en organisationshierarki.</span><span class="sxs-lookup"><span data-stu-id="38ab7-109">A business ecosystem that consists of Finance and Operations apps and Common Data Service will continue to have an organization hierarchy.</span></span> <span data-ttu-id="38ab7-110">Organisationshierarkin bygger på Finance and Operations-appar, men den exponeras i Common Data Service för information och utbyggbarhet.</span><span class="sxs-lookup"><span data-stu-id="38ab7-110">This organization hierarchy is built on Finance and Operations apps, but it's exposed in Common Data Service for informational and extensibility purposes.</span></span> <span data-ttu-id="38ab7-111">Följande illustration visar organisationshierarkiinformation som exponeras i Common Data Service som ett enkelriktat dataflöde från Finance and Operations-appar till Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="38ab7-111">The following illustration shows the organization hierarchy information that is exposed in Common Data Service as a one-way data flow from Finance and Operations apps to Common Data Service.</span></span>
+<span data-ttu-id="99d97-109">Ett affärsekosystem som består av Finance and Operations-appar och Common Data Service kommer att fortsätta att ha en organisationshierarki.</span><span class="sxs-lookup"><span data-stu-id="99d97-109">A business ecosystem that consists of Finance and Operations apps and Common Data Service will continue to have an organization hierarchy.</span></span> <span data-ttu-id="99d97-110">Organisationshierarkin bygger på Finance and Operations-appar, men den exponeras i Common Data Service för information och utbyggbarhet.</span><span class="sxs-lookup"><span data-stu-id="99d97-110">This organization hierarchy is built on Finance and Operations apps, but it's exposed in Common Data Service for informational and extensibility purposes.</span></span> <span data-ttu-id="99d97-111">Följande illustration visar organisationshierarkiinformation som exponeras i Common Data Service som ett enkelriktat dataflöde från Finance and Operations-appar till Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="99d97-111">The following illustration shows the organization hierarchy information that is exposed in Common Data Service as a one-way data flow from Finance and Operations apps to Common Data Service.</span></span>
 
 ![Arkitekturbild](media/dual-write-data-flow.png)
 
-## <a name="templates"></a><span data-ttu-id="38ab7-113">Mallar</span><span class="sxs-lookup"><span data-stu-id="38ab7-113">Templates</span></span>
+## <a name="templates"></a><span data-ttu-id="99d97-113">Mallar</span><span class="sxs-lookup"><span data-stu-id="99d97-113">Templates</span></span>
 
-<span data-ttu-id="38ab7-114">Organisationshierarkin entitetskartor är tillgängliga för enkelriktad synkronisering av data från Finance and Operations-appar till Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="38ab7-114">Organization hierarchy entity maps are available for one-way synchronization of data from Finance and Operations apps to Common Data Service.</span></span>
+<span data-ttu-id="99d97-114">Organisationshierarkin entitetskartor är tillgängliga för enkelriktad synkronisering av data från Finance and Operations-appar till Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="99d97-114">Organization hierarchy entity maps are available for one-way synchronization of data from Finance and Operations apps to Common Data Service.</span></span>
+
+## <a name="templates"></a><span data-ttu-id="99d97-115">Mallar</span><span class="sxs-lookup"><span data-stu-id="99d97-115">Templates</span></span>
+
+<span data-ttu-id="99d97-116">Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner.</span><span class="sxs-lookup"><span data-stu-id="99d97-116">Product information contains all the information related to the product and its definition, such as the product dimensions or the tracking and storage dimensions.</span></span> <span data-ttu-id="99d97-117">Som framgår av följande tabell skapas en samling med enhetsmappningar för synkronisering av produkter och relaterad information.</span><span class="sxs-lookup"><span data-stu-id="99d97-117">As the following table shows, a collection of entity maps is created to sync products and related information.</span></span>
+
+<span data-ttu-id="99d97-118">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="99d97-118">Finance and Operations</span></span> | <span data-ttu-id="99d97-119">Andra Dynamics 365-appar</span><span class="sxs-lookup"><span data-stu-id="99d97-119">Other Dynamics 365 apps</span></span> | <span data-ttu-id="99d97-120">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="99d97-120">Description</span></span>
+-----------------------|--------------------------------|---
+<span data-ttu-id="99d97-121">Syften för organisationshierarki</span><span class="sxs-lookup"><span data-stu-id="99d97-121">Organization hierarchy purposes</span></span> | <span data-ttu-id="99d97-122">msdyn_internalorganizationhierarchypurposes</span><span class="sxs-lookup"><span data-stu-id="99d97-122">msdyn_internalorganizationhierarchypurposes</span></span> | <span data-ttu-id="99d97-123">Den här mallen innehåller en enkelriktad synkronisering av entiteten syfte för organisationshierarki.</span><span class="sxs-lookup"><span data-stu-id="99d97-123">This template provides one-way synchronization of the Organization Hierarchy Purpose entity.</span></span>
+<span data-ttu-id="99d97-124">Typ av organisationshierarki</span><span class="sxs-lookup"><span data-stu-id="99d97-124">Organization hierarchy type</span></span> | <span data-ttu-id="99d97-125">msdyn_internalorganizationhierarchytypes</span><span class="sxs-lookup"><span data-stu-id="99d97-125">msdyn_internalorganizationhierarchytypes</span></span> | <span data-ttu-id="99d97-126">Den här mallen innehåller en enkelriktad synkronisering av entiteten typ för organisationshierarki.</span><span class="sxs-lookup"><span data-stu-id="99d97-126">This template provides one-way synchronization of the Organization Hierarchy Type entity.</span></span>
+<span data-ttu-id="99d97-127">Organisationshierarki - publicerad</span><span class="sxs-lookup"><span data-stu-id="99d97-127">Organization hierarchy - published</span></span> | <span data-ttu-id="99d97-128">msdyn_internalorganizationhierarchies</span><span class="sxs-lookup"><span data-stu-id="99d97-128">msdyn_internalorganizationhierarchies</span></span> | <span data-ttu-id="99d97-129">Den här mallen innehåller en enkelriktad synkronisering av entiteten publicerad för organisationshierarki.</span><span class="sxs-lookup"><span data-stu-id="99d97-129">This template provides one-way synchronization of the Organization Hierarchy Published entity.</span></span>
+<span data-ttu-id="99d97-130">Driftenhet</span><span class="sxs-lookup"><span data-stu-id="99d97-130">Operating unit</span></span> | <span data-ttu-id="99d97-131">msdyn_internalorganizations</span><span class="sxs-lookup"><span data-stu-id="99d97-131">msdyn_internalorganizations</span></span> | 
+<span data-ttu-id="99d97-132">Juridiska personer</span><span class="sxs-lookup"><span data-stu-id="99d97-132">Legal entities</span></span> | <span data-ttu-id="99d97-133">msdyn_internalorganizations</span><span class="sxs-lookup"><span data-stu-id="99d97-133">msdyn_internalorganizations</span></span> | 
+<span data-ttu-id="99d97-134">Juridiska personer</span><span class="sxs-lookup"><span data-stu-id="99d97-134">Legal entities</span></span> | <span data-ttu-id="99d97-135">cdm_companies</span><span class="sxs-lookup"><span data-stu-id="99d97-135">cdm_companies</span></span> | <span data-ttu-id="99d97-136">Tillhandahåller dubbelriktad synkronisering av information om den juridiska personen (företag).</span><span class="sxs-lookup"><span data-stu-id="99d97-136">Provides bidirectional synchronization of legal entity (company) information.</span></span>
+
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
-## <a name="internal-organization-hierarchy-purpose"></a><span data-ttu-id="38ab7-115">Internt syfte för organisationshierarki</span><span class="sxs-lookup"><span data-stu-id="38ab7-115">Internal Organization Hierarchy Purpose</span></span>
+[!include [Organization hierarchy purposes](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 
-<span data-ttu-id="38ab7-116">Den här mallen ger enkelriktad synkronisering av organisationshierarkin syftesentitet från Finance and Operations till andra Dynamics 365-appar.</span><span class="sxs-lookup"><span data-stu-id="38ab7-116">This template provides one-way synchronization of the Organization Hierarchy Purpose entity from Finance and Operations to other Dynamics 365 apps.</span></span>
+[!include [Organization hierarchy type](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
-<!-- ![architecture image](media/dual-write-purpose.png) -->
+[!include [Organization hierarchy - published](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
-<span data-ttu-id="38ab7-117">Källfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-117">Source field</span></span> | <span data-ttu-id="38ab7-118">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="38ab7-118">Map type</span></span> | <span data-ttu-id="38ab7-119">Målfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-119">Destination field</span></span>
----|---|---
-<span data-ttu-id="38ab7-120">HIERARCHYTYPE</span><span class="sxs-lookup"><span data-stu-id="38ab7-120">HIERARCHYTYPE</span></span> | \> | <span data-ttu-id="38ab7-121">msdyn\_hierarchypurposetypename</span><span class="sxs-lookup"><span data-stu-id="38ab7-121">msdyn\_hierarchypurposetypename</span></span>
-<span data-ttu-id="38ab7-122">HIERARCHYTYPE</span><span class="sxs-lookup"><span data-stu-id="38ab7-122">HIERARCHYTYPE</span></span> | \> | <span data-ttu-id="38ab7-123">msdyn\_hierarchytype.msdyn\_name</span><span class="sxs-lookup"><span data-stu-id="38ab7-123">msdyn\_hierarchytype.msdyn\_name</span></span>
-<span data-ttu-id="38ab7-124">HIERARCHYPURPOSE</span><span class="sxs-lookup"><span data-stu-id="38ab7-124">HIERARCHYPURPOSE</span></span> | \>\> | <span data-ttu-id="38ab7-125">msdyn\_hierarchypurpose</span><span class="sxs-lookup"><span data-stu-id="38ab7-125">msdyn\_hierarchypurpose</span></span>
-<span data-ttu-id="38ab7-126">IMMUTABLE</span><span class="sxs-lookup"><span data-stu-id="38ab7-126">IMMUTABLE</span></span> | \>\> | <span data-ttu-id="38ab7-127">msdyn\_immutable</span><span class="sxs-lookup"><span data-stu-id="38ab7-127">msdyn\_immutable</span></span>
-<span data-ttu-id="38ab7-128">SETASDEFAULT</span><span class="sxs-lookup"><span data-stu-id="38ab7-128">SETASDEFAULT</span></span> | \>\> | <span data-ttu-id="38ab7-129">msdyn\_setasdefault</span><span class="sxs-lookup"><span data-stu-id="38ab7-129">msdyn\_setasdefault</span></span>
+## <a name="internal-organization"></a><span data-ttu-id="99d97-137">Intern organisation</span><span class="sxs-lookup"><span data-stu-id="99d97-137">Internal Organization</span></span>
 
-## <a name="internal-organization-hierarchy-type"></a><span data-ttu-id="38ab7-130">Intern typ av organisationshierarki</span><span class="sxs-lookup"><span data-stu-id="38ab7-130">Internal Organization Hierarchy Type</span></span>
+<span data-ttu-id="99d97-138">Intern organisationsinformation i Common Data Service kommer från två entiteter **driftenhet** och **juridiska personer**.</span><span class="sxs-lookup"><span data-stu-id="99d97-138">Internal organization information in Common Data Service comes from two entities, **operating unit** and **legal entities**.</span></span>
 
-<span data-ttu-id="38ab7-131">Den här mallen ger enkelriktad synkronisering av organisationshierarkin typentitet från Finance and Operations till andra Dynamics 365-appar.</span><span class="sxs-lookup"><span data-stu-id="38ab7-131">Tihs template provides one-way synchronization of the Organization Hierarchy Type entity from Finance and Operations to other Dynamics 365 apps.</span></span>
+[!include [Operating unit](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
-<!-- ![architecture image](media/dual-write-type.png) -->
+[!include [Legal entities](dual-write/LegalEntities-msdyn-internalorganizations.md)]
 
-<span data-ttu-id="38ab7-132">Källfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-132">Source field</span></span> | <span data-ttu-id="38ab7-133">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="38ab7-133">Map type</span></span> | <span data-ttu-id="38ab7-134">Målfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-134">Destination field</span></span>
----|---|---
-<span data-ttu-id="38ab7-135">NAMN</span><span class="sxs-lookup"><span data-stu-id="38ab7-135">NAME</span></span> | \> | <span data-ttu-id="38ab7-136">msdyn\_name</span><span class="sxs-lookup"><span data-stu-id="38ab7-136">msdyn\_name</span></span>
+[!include [Legal entities](dual-write/LegalEntities-Companies.md)]
 
-## <a name="internal-organization-hierarchy"></a><span data-ttu-id="38ab7-137">Intern organisationshierarki</span><span class="sxs-lookup"><span data-stu-id="38ab7-137">Internal Organization Hierarchy</span></span>
-
-<span data-ttu-id="38ab7-138">Den här mallen ger enkelriktad synkronisering av organisationshierarkin publicerad entitet från Finance and Operations till andra Dynamics 365-appar.</span><span class="sxs-lookup"><span data-stu-id="38ab7-138">This template provides one-way synchronization of the Organization Hierarchy Published entity from Finance and Operations to other Dynamics 365 apps.</span></span>
-
-<!-- ![architecture image](media/dual-write-organization.png) -->
-
-<span data-ttu-id="38ab7-139">Källfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-139">Source field</span></span> | <span data-ttu-id="38ab7-140">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="38ab7-140">Map type</span></span> | <span data-ttu-id="38ab7-141">Målfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-141">Destination field</span></span>
----|---|---
-<span data-ttu-id="38ab7-142">VALIDTO</span><span class="sxs-lookup"><span data-stu-id="38ab7-142">VALIDTO</span></span> | \> | <span data-ttu-id="38ab7-143">msdyn\_validto</span><span class="sxs-lookup"><span data-stu-id="38ab7-143">msdyn\_validto</span></span>
-<span data-ttu-id="38ab7-144">VALIDFROM</span><span class="sxs-lookup"><span data-stu-id="38ab7-144">VALIDFROM</span></span> | \> | <span data-ttu-id="38ab7-145">msdyn\_validfrom</span><span class="sxs-lookup"><span data-stu-id="38ab7-145">msdyn\_validfrom</span></span>
-<span data-ttu-id="38ab7-146">HIERARCHYTYPE</span><span class="sxs-lookup"><span data-stu-id="38ab7-146">HIERARCHYTYPE</span></span> | \> | <span data-ttu-id="38ab7-147">msdyn\_hierarchytypename</span><span class="sxs-lookup"><span data-stu-id="38ab7-147">msdyn\_hierarchytypename</span></span>
-<span data-ttu-id="38ab7-148">PARENTORGANIZATIONPARTYNUMBER</span><span class="sxs-lookup"><span data-stu-id="38ab7-148">PARENTORGANIZATIONPARTYNUMBER</span></span> | \> | <span data-ttu-id="38ab7-149">msdyn\_parentpartyid</span><span class="sxs-lookup"><span data-stu-id="38ab7-149">msdyn\_parentpartyid</span></span>
-<span data-ttu-id="38ab7-150">CHILDORGANIZATIONPARTYNUMBER</span><span class="sxs-lookup"><span data-stu-id="38ab7-150">CHILDORGANIZATIONPARTYNUMBER</span></span> | \> | <span data-ttu-id="38ab7-151">msdyn\_childpartyid</span><span class="sxs-lookup"><span data-stu-id="38ab7-151">msdyn\_childpartyid</span></span>
-<span data-ttu-id="38ab7-152">HIERARCHYTYPE</span><span class="sxs-lookup"><span data-stu-id="38ab7-152">HIERARCHYTYPE</span></span> | \> | <span data-ttu-id="38ab7-153">msdyn\_hierarchytypeid.msdyn\_name</span><span class="sxs-lookup"><span data-stu-id="38ab7-153">msdyn\_hierarchytypeid.msdyn\_name</span></span>
-<span data-ttu-id="38ab7-154">CHILDORGANIZATIONPARTYNUMBER</span><span class="sxs-lookup"><span data-stu-id="38ab7-154">CHILDORGANIZATIONPARTYNUMBER</span></span> | \> | <span data-ttu-id="38ab7-155">msdyn\_childid.msdyn\_partynumber</span><span class="sxs-lookup"><span data-stu-id="38ab7-155">msdyn\_childid.msdyn\_partynumber</span></span>
-<span data-ttu-id="38ab7-156">PARENTORGANIZATIONPARTYNUMBER</span><span class="sxs-lookup"><span data-stu-id="38ab7-156">PARENTORGANIZATIONPARTYNUMBER</span></span> | \> | <span data-ttu-id="38ab7-157">msdyn\_parentid.msdyn\_partynumber</span><span class="sxs-lookup"><span data-stu-id="38ab7-157">msdyn\_parentid.msdyn\_partynumber</span></span>
-
-## <a name="internal-organization"></a><span data-ttu-id="38ab7-158">Intern organisation</span><span class="sxs-lookup"><span data-stu-id="38ab7-158">Internal Organization</span></span>
-
-<span data-ttu-id="38ab7-159">Intern organisationsinformation i Common Data Service kommer från två entiteter **driftenhet** och **juridiska personer**.</span><span class="sxs-lookup"><span data-stu-id="38ab7-159">Internal organization information in Common Data Service comes from two entities, **operating unit** and **legal entities**.</span></span>
-
-<!-- ![architecture image](media/dual-write-operating-unit.png) -->
-
-<!-- ![architecture image](media/dual-write-legal-entities.png) -->
-
-### <a name="operating-unit"></a><span data-ttu-id="38ab7-160">Driftenhet</span><span class="sxs-lookup"><span data-stu-id="38ab7-160">Operating unit</span></span>
-
-<span data-ttu-id="38ab7-161">Källfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-161">Source field</span></span> | <span data-ttu-id="38ab7-162">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="38ab7-162">Map type</span></span> | <span data-ttu-id="38ab7-163">Målfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-163">Destination field</span></span>
----|---|---
-<span data-ttu-id="38ab7-164">LANGUAGEID</span><span class="sxs-lookup"><span data-stu-id="38ab7-164">LANGUAGEID</span></span> | \> | <span data-ttu-id="38ab7-165">msdyn\_languageid</span><span class="sxs-lookup"><span data-stu-id="38ab7-165">msdyn\_languageid</span></span>
-<span data-ttu-id="38ab7-166">NAMEALIAS</span><span class="sxs-lookup"><span data-stu-id="38ab7-166">NAMEALIAS</span></span> | \> | <span data-ttu-id="38ab7-167">msdyn\_namnalias</span><span class="sxs-lookup"><span data-stu-id="38ab7-167">msdyn\_namealias</span></span>
-<span data-ttu-id="38ab7-168">NAMN</span><span class="sxs-lookup"><span data-stu-id="38ab7-168">NAME</span></span> | \> | <span data-ttu-id="38ab7-169">msdyn\_name</span><span class="sxs-lookup"><span data-stu-id="38ab7-169">msdyn\_name</span></span>
-<span data-ttu-id="38ab7-170">PARTYNUMBER</span><span class="sxs-lookup"><span data-stu-id="38ab7-170">PARTYNUMBER</span></span> | \> | <span data-ttu-id="38ab7-171">msdyn\_partynumber</span><span class="sxs-lookup"><span data-stu-id="38ab7-171">msdyn\_partynumber</span></span>
-<span data-ttu-id="38ab7-172">OPERATINGUNITTYPE</span><span class="sxs-lookup"><span data-stu-id="38ab7-172">OPERATINGUNITTYPE</span></span> | \>\> | <span data-ttu-id="38ab7-173">msdyn\_type</span><span class="sxs-lookup"><span data-stu-id="38ab7-173">msdyn\_type</span></span>
-
-### <a name="legal-entity"></a><span data-ttu-id="38ab7-174">Juridisk person</span><span class="sxs-lookup"><span data-stu-id="38ab7-174">Legal entity</span></span>
-
-<span data-ttu-id="38ab7-175">Källfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-175">Source field</span></span> | <span data-ttu-id="38ab7-176">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="38ab7-176">Map type</span></span> | <span data-ttu-id="38ab7-177">Målfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-177">Destination field</span></span>
----|---|---
-<span data-ttu-id="38ab7-178">NAMEALIAS</span><span class="sxs-lookup"><span data-stu-id="38ab7-178">NAMEALIAS</span></span> | \> | <span data-ttu-id="38ab7-179">msdyn\_namnalias</span><span class="sxs-lookup"><span data-stu-id="38ab7-179">msdyn\_namealias</span></span>
-<span data-ttu-id="38ab7-180">LANGUAGEID</span><span class="sxs-lookup"><span data-stu-id="38ab7-180">LANGUAGEID</span></span> | \> | <span data-ttu-id="38ab7-181">msdyn\_languageid</span><span class="sxs-lookup"><span data-stu-id="38ab7-181">msdyn\_languageid</span></span>
-<span data-ttu-id="38ab7-182">NAMN</span><span class="sxs-lookup"><span data-stu-id="38ab7-182">NAME</span></span> | \> | <span data-ttu-id="38ab7-183">msdyn\_name</span><span class="sxs-lookup"><span data-stu-id="38ab7-183">msdyn\_name</span></span>
-<span data-ttu-id="38ab7-184">PARTYNUMBER</span><span class="sxs-lookup"><span data-stu-id="38ab7-184">PARTYNUMBER</span></span> | \> | <span data-ttu-id="38ab7-185">msdyn\_partynumber</span><span class="sxs-lookup"><span data-stu-id="38ab7-185">msdyn\_partynumber</span></span>
-<span data-ttu-id="38ab7-186">ingen</span><span class="sxs-lookup"><span data-stu-id="38ab7-186">none</span></span> | \>\> | <span data-ttu-id="38ab7-187">msdyn\_type</span><span class="sxs-lookup"><span data-stu-id="38ab7-187">msdyn\_type</span></span>
-<span data-ttu-id="38ab7-188">LEGALENTITYID</span><span class="sxs-lookup"><span data-stu-id="38ab7-188">LEGALENTITYID</span></span> | \> | <span data-ttu-id="38ab7-189">msdyn\_companycode</span><span class="sxs-lookup"><span data-stu-id="38ab7-189">msdyn\_companycode</span></span>
-
-## <a name="company"></a><span data-ttu-id="38ab7-190">Företag</span><span class="sxs-lookup"><span data-stu-id="38ab7-190">Company</span></span>
-
-<span data-ttu-id="38ab7-191">Ger dubbelriktad synkronisering av information om juridisk person (företag) mellan Finance and Operations och andra Dynamics 365-appar.</span><span class="sxs-lookup"><span data-stu-id="38ab7-191">Provides bidirectional synchronization of legal entity (company) information between Finance and Operations and other Dynamics 365 apps.</span></span>
-
-<!-- ![architecture image](media/dual-write-company.png) -->
-
-<span data-ttu-id="38ab7-192">Källfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-192">Source field</span></span> | <span data-ttu-id="38ab7-193">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="38ab7-193">Map type</span></span> | <span data-ttu-id="38ab7-194">Målfält</span><span class="sxs-lookup"><span data-stu-id="38ab7-194">Destination field</span></span>
----|---|---
-<span data-ttu-id="38ab7-195">NAMN</span><span class="sxs-lookup"><span data-stu-id="38ab7-195">NAME</span></span> | = | <span data-ttu-id="38ab7-196">cdm\_name</span><span class="sxs-lookup"><span data-stu-id="38ab7-196">cdm\_name</span></span>
-<span data-ttu-id="38ab7-197">LEGALENTITYID</span><span class="sxs-lookup"><span data-stu-id="38ab7-197">LEGALENTITYID</span></span> | = | <span data-ttu-id="38ab7-198">cdm\_companycode</span><span class="sxs-lookup"><span data-stu-id="38ab7-198">cdm\_companycode</span></span>
