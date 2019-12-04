@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251095"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814983"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurera programfältnamn i lagerstyrningsprogrammet
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251095"
 
 Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 Supply Chain Management. 
 
-**Obs!** Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i lagerställets program, samt hur dessa används i Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Lagerstyrning, finns i kursen [Installera och konfigurera Lagerstyrning](install-configure-warehousing-app.md).
+> [!NOTE]
+> Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i lagerställets program, samt hur dessa används i Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Lagerstyrning, finns i kursen [Installera och konfigurera lagerstyrningsappen - översikt](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurera fältnamn i lagerställets program
 
@@ -142,4 +143,4 @@ Baserat på fältprioriteringen i lagerställets program som anges i tabellen ov
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations – Lagerhållning](install-configure-warehousing-app.md)
+[Installera och konfigurera lagerstyrningsappen - översikt](install-configure-warehousing-app.md)

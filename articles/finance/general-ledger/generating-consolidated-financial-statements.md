@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179922"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770699"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generera konsoliderade bokslut
 
@@ -41,19 +41,19 @@ Den enklaste metoden för att konsolidera data med hjälp av ekonomisk rapporter
 
 Följande bild visar hur du kan använda rapporteringsträdsdefinitioner i ekonomisk rapportering för att identifiera varje företag som du ska konsolidera.
 
-![Rapporteringsträddefinitioner](./media/reporting-tree-definition.png "Rapporteringsträddefinitioner")
+![Rapportträddefinition](./media/reporting-tree-definition.png "Rapportträddefinition")
 
 Som den konsoliderade rapporten i följande illustration visar, när du använder rapporteringsträdet tillsammans med en rapportdefinition kan du se varje företag separat. Konsoliderade belopp visas på sammanfattningsnivån.
 
-![Konsolidera belopp sammanfattningsnivå](./media/consolidate-amount-summary-level.png "Konsolidera belopp sammanfattningsnivå")
+![Sammanfattningsnivå för konsolideringsbelopp](./media/consolidate-amount-summary-level.png "Sammanfattningsnivå för konsolideringsbelopp")
 
 Du kan också skapa rapporteringsträd på flera nivåer som innehåller så många nivåer som behövs. Följande bild visar rapporteringsträdsdefinitioner på flera nivåer med översikter av världsomspännande region.
 
-![Rapporteringsträdsdefinitioner på flera nivåer med översikt per region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Rapporteringsträdsdefinitioner på flera nivåer med översikt per region")
+![Träddefinition i flera nivåer med uppföljning efter region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Träddefinition i flera nivåer med uppföljning efter region")
 
 Följande bild visar rapporteringsträdsdefinitioner på flera nivåer med översikter per funktion.
 
-![Rapporteringsträdsdefinitioner på flera nivåer med översikt per funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Rapporteringsträdsdefinitioner på flera nivåer med översikt per funktion")
+![Träddefinition i flera nivåer med uppföljning efter funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Träddefinition i flera nivåer med uppföljning efter funktion")
 
 ### <a name="viewing-companies-side-by-side"></a>Visa företag sida vid sida
 Många kunder föredrar rapporter där företagen visas sida vid sida och där en kolumn visar den konsoliderade summan. Det här formatet är lätt att uppnå när du har skapat rapporteringsträdet. Nedan följer högnivåsteg för att visa företag sida vid sida på konsoliderade bokslut.
@@ -64,19 +64,19 @@ Många kunder föredrar rapporter där företagen visas sida vid sida och där e
 
 Följande bild visar en kolumndefinition i formatet sida vid sida.
 
-![Kolumndefinition i formatet sida vid sida](./media/column-definition-side-by-side-format.png "Kolumndefinition i formatet sida vid sida")
+![Kolumndefinition i ett format som ligger sida vid sida](./media/column-definition-side-by-side-format.png "Kolumndefinition i ett format som ligger sida vid sida")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolideringar som använder organisationsstrukturer som skapas från juridiska personer
 Organisationshierarkier med dimensioner eller juridiska personer som dynamiskt skapar rapportträdsdefinitioner i ekonomiska rapporter. Ett enkelt sätt att förenkla konsolideringar är att lägga till en organisationshierarki i rapporten i ekonomisk rapportering. Baserat på rapportdatumet väljer ekonomisk rapportering organisationshierarkin på eller före giltighetsdatumet enligt följande bild.
 
-![Dynamiskt skapa rapportträdsdefinition](./media/dynamically-create-reporting-tree-definitions.png "Dynamiskt skapa rapportträdsdefinition")
+![Dynamiskt skapa rapportträddefinition](./media/dynamically-create-reporting-tree-definitions.png "Dynamiskt skapa rapportträddefinition")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolideringar som involverar elimineringar
 Elimineringstransaktioner är en vanlig del av konsolideringsprocessen. I det här exemplet tas fem konton bort under konsolideringen: 142600, 211400, 401420, 401180 och 510820. Företag kan ställa in sina koncerninterna konton på olika sätt. Vissa företag ställer t.ex. in den sista siffran på 9 om kontot används i koncerninterna transaktioner. Oavsett vilken metod, om du känner till det koncerninterna konton, kan du visa elimineringar på de konsoliderade bokslut.
 
 Följande bild visar en kolumndefinition för en konsoliderad resultaträkning. Tre koncerninterna resultatkonton definieras med hjälp av dimensionsfiltret för varje företag. Kolumn D innehåller konton för eliminering endast för USMF-företagets och kolumn E innehåller elimineringar endast för DEMF-företaget. Både kolumn D och E är inställda så att de **inte** skrivs ut i bokslutet.
 
-![Kolumndefinition för konsoliderad resultaträkning](./media/column-definition-consolidated-income-statement.png "Kolumndefinition för konsoliderad resultaträkning")
+![Resultatrapport för konsoliderade kolumndefinitioner](./media/column-definition-consolidated-income-statement.png "Resultatrapport för konsoliderade kolumndefinitioner")
 
 När rapporten genereras beräknas elimineringsbeloppen i kolumn F, G och H och de summeras i kolumn I. Kolumn J visar konsoliderade belopp. Dessa konsolideringsbelopp är exklusive elimineringar för USMF-, USRT- och DEMF-företag.
 
@@ -85,7 +85,7 @@ När rapporten genereras beräknas elimineringsbeloppen i kolumn F, G och H och 
 
 Följande illustration visar konsoliderad rapport.
 
-![Konsoliderad rapport resultaträkning](./media/consolidated-report-income-statement.png "Konsoliderad rapport resultaträkning")
+![Inkomstutdrag för konsoliderad rapport](./media/consolidated-report-income-statement.png "Inkomstutdrag för konsoliderad rapport")
 
 Om du använder konton, dimensioner eller båda kan du med, ekonomisk rapportering filtrera ut elimineringsposter med dimensionsfiltreringsmöjligheterna.
 
@@ -98,13 +98,13 @@ I rapportträdsdefinitionen, ange procentandelen av ägarskap i kolumnen **samma
 > [!NOTE]
 > Du kan använda denna ägarskapsprocentandel för rapporteringsenheten, inte bara på företagsnivå. 
 
-![Använda procentsatsen i rapportträddefinition](./media/Using-reporting-tree-definition-percentage.png "Använda procentsatsen i rapportträddefinition")
+![Använda procent för rapportträdsdefinition](./media/Using-reporting-tree-definition-percentage.png "Använda procent för rapportträdsdefinition")
 
 När rapporten skapas, visar Contoso Tyskland-rapporten 100 procent av det totala försäljningsbeloppet och 80 procent av beloppet ska fördelas och slås samman med den konsoliderade nivån för försäljning.
 
 Om du äger mindre än 1 procent av ett företag kan du markera kryssrutan **Tillåt sammanslagning lägre än 1%** på fliken **ytterligare alternativ** på sidan **rapportinställningar** enligt följande illustration. I det här fallet behandlas värden i kolumnen **sammanslagning %** i rapportträdet som mindre än 1 procent. Om du till exempel anger **.8**, kommer 0,8 procent slås samman upp till den konsoliderade nivån, inte 80 procent. Alternativt kan du uppnå samma resultat genom att lämna kryssrutan **Tillåt sammanslagning lägre än 1%** tom och ange **,008** i kolumnen **sammanslagning %**.
 
-![Alternativ för rapportinställning](./media/reporting-setting-options.png "Alternativ för rapportinställning")
+![Alternativ för rapporteringsinställning](./media/reporting-setting-options.png "Alternativ för rapporteringsinställning")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Visa ägarskap som en separat rad i den konsoliderade rapporten
 Ett annat alternativ för minoritetsränta är att visa 100 procent av dotterbolaget för varje rad på rapporten men subtrahera den icke-bestämmande räntan från nettoresultatet.
@@ -125,11 +125,11 @@ Flera länkar till ekonomiska dimensioner kan läggas till varje rad i raddefini
 > [!TIP]
 > Mer information om cellen **Länk till Ekonomiska dimensioner** finns i Ange länk till ekonomiska dimensioner.
 
-![Ange kontons första länk till ekonomiska dimensioner](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Ange kontons första länk till ekonomiska dimensioner")
+![Ange den första länken för konton till ekonomiska dimensioner](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Ange den första länken för konton till ekonomiska dimensioner")
 
 Du kan använda rapportträd för att definiera vilken länk till ekonomiska dimensioner från raddefinitionen som används för varje företag. Välj raddefinitionen i kolumn E och välj sedan lämplig radlänk i kolumn F, vilket visas i följande illustration.
 
-![Raddefinitionen länka ekonomiska dimensioner används](./media/link-financial-dimensions-row-definition-used.png "Raddefinitionen länka ekonomiska dimensioner används")
+![Länka använda definitioner för ekonomisk dimensionsrad](./media/link-financial-dimensions-row-definition-used.png "Länka använda definitioner för ekonomisk dimensionsrad")
 
 > [!TIP]
 > När du skapar länkar till ekonomiska dimensioner, använd beskrivningen för att identifiera de företag som varje länk gäller för. På så sätt kan du enklare välja rätt företag när du skapar ett rapportträd. I kolumndefinitionen kan du i fältet **rapporteringsenhet** begränsa varje kolumn till en enhet i rapportträdet så att du kan se informationen sida vid sida. Om du inte anger ett visst företag för en kolumn, visas konsoliderade data för alla företag.
@@ -149,11 +149,11 @@ När du utformar kolumndefinitionen för flera företag som har olika räkenskap
 
 I följande exempel anges USMF-företaget i fältet **företagsnamn** i rapportdefinitionen. Därför ska USMF-företagets räkenskapskalender användas som räkenskapsårets baskalender. I det här exemplet när en rapport har genererats för 30 juni 2018 använder USMF-företaget BASE-perioden som definieras som period 12 i rapportdefinitionen. INMF-företag använder BASE-6, d.v.s. period 6. Båda kolumnerna innehåller data för juni 2018.
 
-![Rapportens basperiod](./media/report-base-period.png "Rapportens basperiod")
+![Rapportbasperiod](./media/report-base-period.png "Rapportbasperiod")
 
 I följande illustration visas alternativen i rapportdefinitionen som låter dig välja om periodnumret eller periodens slutdatum används för konsolideringen.
 
-![Alternativ för periodnummer för rapportdefinition](./media/options-report-definition-period-number.png "Alternativ för periodnummer för rapportdefinition")
+![Periodnummer för alternativrapport](./media/options-report-definition-period-number.png "Periodnummer för alternativrapport")
 
 ## <a name="business-unit-consolidations"></a>Konsolideringar av affärsenhet
 Det här avsnittet har fokuserat på rapportträdsdefinitioner och organisationshierarkier i ekonomisk rapportering för konsolidering. Du kan också använda rapportträdet för att skapa konsolideringsrapporter för affärsenhet såsom rapporter om internationell försäljning eller operationer. Dessa rapporter är obligatoriska. För att skapa dem, markera ett företag och en dimension för varje enhet som du vill konsolidera på. I bilden nedan utförs exempelvis uppföljning av affärsenhet genom att upprepa varje företag i kolumnen **företag** (kolumn A) och identifierar en grupp av avdelningsdimensionsvärden per företag i kolumnen **dimensioner** (kolumn D).
@@ -171,7 +171,7 @@ På huvudkontot måste fälten **Valutakurstyp för ekonomisk rapportering** och
 - I fältet **Valutakurstyp för ekonomisk rapportering** välj den valutakurstyp som innehåller de valutor och växelkurser som gäller för kontot. Den här tabellen med valutor och valutakurser tillämpas på verkliga data i redovisning.
 - I fältet **Valutaregistreringstyp**, välj metoden som används för att beräkna kontots valutakurs. Denna valutametod används för både faktiska och budgetdata i ekonomisk rapportering.
 
-![Ekonomisk rapportering huvudkonton](./media/Financial-reporting-main-accounts.png "Ekonomisk rapportering huvudkonton")
+![Huvudkonton för ekonomisk rapportering](./media/Financial-reporting-main-accounts.png "Huvudkonton för ekonomisk rapportering")
 
 För budget, budgetkontroll och budgetplaneringsdata definieras växelkurstyp på sidan **redovisning**. Den tabellen används för att hämta valutakurser och valutakonverteringstyp som tilldelas kontot som kommer att användas.
 
@@ -202,11 +202,11 @@ Justeringen av valutakonvertering (CTA) är skillnaden mellan de kurser som anv�
 
 - Använd sidan **Avrundningsjusteringar** i raddefinitionen som visas i följande bild.
 
-    ![Avrundningsjustering för justering av valutakonvertering](./media/Currency-translation-adjustment-rounding-adjustments.png "Avrundningsjustering för justering av valutakonvertering")
+    ![Avrundningsjustering för valutaregistrering](./media/Currency-translation-adjustment-rounding-adjustments.png "Avrundningsjustering för valutaregistrering")
 
     När du anger den rad som ska visa avrundningsjusteringen (CTA), raden för summa tillgångar, summa skulder och kapital och det tröskelvärde du är bekväm med, kommer ekonomisk rapportering beräkna skillnaden och placera den på önskad rad. En rad som heter **avrundningsjustering** skapas och visas vid detaljgranskning, enligt följande illustration.
 
-    ![Detaljgranskning av avrundningsjustering](./media/rounding-adjustment-drill-down.png "Detaljgranskning av avrundningsjustering")
+    ![Öka detaljnivån för avrundningsjustering](./media/rounding-adjustment-drill-down.png "Öka detaljnivån för avrundningsjustering")
 
 - Placera alla konton i ett intervall från tillgångar som utgifter. I följande illustration visas att skillnaden kommer att vara samma som avrundningsjustering (CTA). Du kan därför använda den som en kontrollera total och kontrollera att sidan för avrundningsjustering inte innehåller några kontosaldon som har missats.
 
@@ -221,6 +221,6 @@ För att få korrekt konverterade belopp när valutor används, använder ekonom
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
+Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
 
-Information om hur du anger information om onlinekonsolideringar finns i [konsolidera online](./consolidate-online.md).
+Information om hur du anger information om onlinekonsolideringar finns i [Online ekonomisk konsolidering](./consolidate-online.md).

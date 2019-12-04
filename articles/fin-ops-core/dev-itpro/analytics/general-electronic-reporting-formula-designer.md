@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43700d68587cebfb4f897c8a5b619dd4771cc439
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e55ab83302cc75b1a9d9d3e4f06d2258697b31fc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181322"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771224"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -773,9 +773,9 @@ När du har definierat dessa datakällor kan du använda ett uttryck såsom <str
 
 ### <a name="functions-list-extension"></a>Utöka funktionslista
 
-ER stöder utökning av listfunktioner som används i ER-uttryck. Vissa tekniska insatser krävs. Om du vill ha mer information, se [Utöka listan över elektroniska rapporteringfunktioner](general-electronic-reporting-formulas-list-extension.md).
+ER stöder utökning av listfunktioner som används i ER-uttryck. Vissa tekniska insatser krävs. Om du vill ha mer information, se [Utöka listan över elektroniska rapporteringfunktioner (ER)](general-electronic-reporting-formulas-list-extension.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Översikt över elektronisk rapportering](general-electronic-reporting.md)
+- [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Utöka listan över elektronisk rapportering (ER)](general-electronic-reporting-formulas-list-extension.md)

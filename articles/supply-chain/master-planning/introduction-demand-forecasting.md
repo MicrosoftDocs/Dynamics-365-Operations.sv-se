@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653543"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815167"
 ---
 # <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
@@ -78,13 +78,13 @@ Efterfrågan prognostisera är ett verktyg som hjälper kunder inom tillverkning
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 
-[Gör manuella justeringar till den ursprungliga prognosen](manual-adjustments-baseline-forecast.md)
+[Gör manuella justeringar på baslinjeprognosen](manual-adjustments-baseline-forecast.md)
 
-[Auktorisering av den justerade prognosen](authorize-adjusted-forecast.md)
+[Auktorisera en justerad efterfrågeprognos](authorize-adjusted-forecast.md)
 
-[Övervaka prognosprecision](monitor-forecast-accuracy.md)
+[Övervaka prognosens exakthet](monitor-forecast-accuracy.md)
 
-[Ta bort avskilda från historiska transaktionsdata vid beräkning av en efterfrågeprognos](remove-historical-outliers-calculating-demand-forecast.md)
+[Ta bort avskilda från historiska transaktionsdata när du beräknar en efterfrågeprognos](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Utöka funktionen prognos för efterfrågan](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 

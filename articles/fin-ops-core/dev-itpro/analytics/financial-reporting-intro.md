@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e9fe8f78121428770e6516159f5eceb6976c4c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181805"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771152"
 ---
 # <a name="financial-reporting"></a>Ekonomisk rapportering
 
@@ -47,14 +47,14 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 | Komponent        | Funktioner | Ytterligare information |
 |------------------|-----------|------------------------|
 | Report Designer  | Skapa rapportbyggnadsblock som kan kombineras för att definiera och skapa en rapport. Rapportguiden leder mindre erfarna användare genom designprocessen. Avancerade användare kan skapa nya rapportbyggnadsblock eller ändra befintliga byggnadsblock så att de uppfyller deras krav. | |
-| Rapportscheman | Tidsplanera en enstaka rapport eller en rapportgrupp så att den skapas regelbundet. | [Skapa ekonomisk rapport](generate-financial-report.md) |
+| Rapportscheman | Tidsplanera en enstaka rapport eller en rapportgrupp så att den skapas regelbundet. | [Generera ekonomiska rapporter](generate-financial-report.md) |
 
 ## <a name="features"></a>Funktioner
 <table>
 <thead>
 <tr>
 <th>Funktion</th>
-<th>beskrivning</th>
+<th>Beskrivning</th>
 </tr>
 </thead>
 <tbody>
@@ -96,4 +96,4 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 </table>
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Skapa en ekonomisk rapport](generate-financial-report.md)
+[Generera ekonomiska rapporter](generate-financial-report.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571264"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812224"
 ---
 # <a name="functional-location-types"></a>Funktionsplatstyper
 
@@ -56,7 +56,7 @@ Standardfunktionsplatstypen som endast ska användas för en standardfunktionspl
 3. Infoga ett funktionsplatstyp-ID i fältet **funktionsplatstyp** och ett namn i fältet **namn**.
 4. Välj en livscykelmodell i fältet **Livscykelmodell för funktionsplats**. Referera till [livscykeltillstånd för funktionsplats](../setup-for-functional-locations/functional-location-stages.md) för mer information om livscykeltillstånd och livscykelmodeller för funktionsplats.
 5. Välj "Ja" på växlingsknappen **flera tillgångar** om det ska vara möjligt att installera flera tillgångar på en funktionsplats med den här funktionsplatstypen. Om du väljer "nej" kan du bara installera *en* tillgång på en funktionsplats med den här funktionsplatstypen.
-6. Välj "Ja" på växlingsknappen **Uppdatera tillgångsdimension** om du vill att tillgångar som är installerade på en funktionsplats av den här typen automatiskt ska använda de ekonomiska dimensionerna som är relaterade till den funktionsplatsen. Det innebär att om du ändrar ekonomiska dimensioner i formuläret [funktionsplats](../functional-locations/create-functional-locations.md) och funktionsplatsen använder en funktionsplatstyp med den här växlingsknappen inställd på "Ja", uppdateras ekonomiska dimensioner automatiskt på alla tillgångar installerad på den funktionsplatsen.
+6. Välj "Ja" på växlingsknappen **Uppdatera tillgångsdimension** om du vill att tillgångar som är installerade på en funktionsplats av den här typen automatiskt ska använda de ekonomiska dimensionerna som är relaterade till den funktionsplatsen. Det innebär att om du ändrar ekonomiska dimensioner i formuläret [Skapa funktionsplatser](../functional-locations/create-functional-locations.md) och funktionsplatsen använder en funktionsplatstyp med den här växlingsknappen inställd på "Ja", uppdateras ekonomiska dimensioner automatiskt på alla tillgångar installerad på den funktionsplatsen.
 7. Fältet **tillgångstyp** används om du vill skapa *en* tillgång automatiskt för funktionsplatsen med samma ID och namn som den funktionsplatsen som du skapar. Detta kan till exempel vara relevant om du skapar en statisk funktionsplatsen, till exempel en byggnad eller en pipeline. I så fall väljer du den tillgångstyp som du vill använda för den automatiskt skapade tillgången. Kom ihåg att om du gör ett val i det här fältet måste växlingsknappen **Flera tillgångar** vara inställd på "nej".
 8. På snabbfliken **tillgångstyper** väljer du de tillgångstyper som ska relateras till funktionsplatstypen: Välj **Lägg till rad** och välj tillgångstypen. Om du lägger till tillgångstyper här kan endast tillgångar som använder dessa tillgångstyper installeras på en funktionsplats med den här funktionsplatstypen. Om inga tillgångstyper har valts på snabbfliken **tillgångstyper** kan alla tillgångstyper vara installerade.
 9. På snabbfliken **underhållsplaner** väljer du de underhållsplaner som automatiskt ska ställas in på nya funktionsplatser med den här funktionsplatstypen. Välj **Lägg till rad** och välj underhållsplaner. Om du lägger till underhållsplaner här kan endast dessa planer användas på en funktionsplats med den här funktionsplatstypen.

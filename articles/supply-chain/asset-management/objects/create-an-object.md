@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571609"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811859"
 ---
 # <a name="create-an-asset"></a>Skapa en tillgång
 
@@ -36,15 +36,15 @@ Det här avsnittet beskriver hur du skapar en tillgång i tillgångshantering.
 1. Klicka på **tillgångshantering** > **allmänt** > **tillgångar** > **alla tillgångar** eller **aktiva tillgångar**.
 2. Klicka på knappen **Nytt**.
 3. I dialogrutan **skapa tillgångar** infogar du data om **tillgången** (tillgångs-ID) och tillgångens namn. Välj datum och tid för tillgången i fältet **Giltighet**. Från och med det datumet kan du installera tillgången på en funktionsplats samt flytta och ersätta tillgången i en tillgångsstruktur.
-4. Välj tillgångstyp för tillgången (obligatoriskt fält) i fältet **tillgångstyp**. Om det behövs väljer du **tillgångstillverkare** och **tillgångsmodell** för tillgången. Om endast en produkt har ställts in, väljs den produkten automatiskt i fältet **tillgångstillverkare**. De val som är tillgängliga **tillgångstillverkare** och **tillgångsmodell** beror på inställningarna i [tillverkare och modell](../setup-for-objects/product-and-model.md).
+4. Välj tillgångstyp för tillgången (obligatoriskt fält) i fältet **tillgångstyp**. Om det behövs väljer du **tillgångstillverkare** och **tillgångsmodell** för tillgången. Om endast en produkt har ställts in, väljs den produkten automatiskt i fältet **tillgångstillverkare**. De val som är tillgängliga **tillgångstillverkare** och **tillgångsmodell** beror på inställningarna i [Tillgångstillverkare och-modeller](../setup-for-objects/product-and-model.md).
 5. I gruppen **överordnad tillgång** är fältet **tillgång** tomt som standard. Om det behövs kan du välja en överordnad tillgång och sedan fylls alla fält i gruppen **överordnad tillgång** i automatiskt.
 >[!NOTE]  
->När du väljer en överordnad tillgång är två eller tre flikar tillgängliga: fliken **mina tillgångar** innehåller tillgångar som är relaterade till de funktionsplatser som du (underhållsarbetaren som är inloggad på systemet) kan allokeras till. Om inga funktionsplatser ställs in för en underhållsarbetare i formuläret [underhållsarbetare](../setup-for-objects/workers-and-worker-groups.md) kommer fliken **mina tillgångar** inte att visas. Fliken **aktiva tillgångar** innehåller en lista över alla tillgångar med livscykelstatus "aktiv". Fliken **tillgångsvisning** visar en trädvy över funktionsplatser och tillgångar som är installerade på dessa platser.
+>När du väljer en överordnad tillgång är två eller tre flikar tillgängliga: fliken **mina tillgångar** innehåller tillgångar som är relaterade till de funktionsplatser som du (underhållsarbetaren som är inloggad på systemet) kan allokeras till. Om inga funktionsplatser ställs in för en underhållsarbetare i formuläret [underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md) kommer fliken **mina tillgångar** inte att visas. Fliken **aktiva tillgångar** innehåller en lista över alla tillgångar med livscykelstatus "aktiv". Fliken **tillgångsvisning** visar en trädvy över funktionsplatser och tillgångar som är installerade på dessa platser.
 
 6. Den standardfunktionsplats som du har ställt in föreslås för tillgången i gruppen **tillgång** > fältet **> funktionsplats**. Välj en annan funktionsplats om det behövs.
 
 >[!NOTE]
->När du har skapat en tillgång kan du installera den på en annan funktionsplats, om det behövs. Endast tillgångar på högsta nivån (tillgångar utan en aktuell överordnad tillgång) kan installeras på en funktionsplats. Det innebär att du installerar den översta nivån samt eventuella underordnade tillgångar på den valda funktionsplatsen. Läs mer om att installera tillgångar på funktionsplatser i [funktionsplatser](../functional-locations/introduction-to-functional-locations.md).
+>När du har skapat en tillgång kan du installera den på en annan funktionsplats, om det behövs. Endast tillgångar på högsta nivån (tillgångar utan en aktuell överordnad tillgång) kan installeras på en funktionsplats. Det innebär att du installerar den översta nivån samt eventuella underordnade tillgångar på den valda funktionsplatsen. Läs mer om att installera tillgångar på funktionsplatser i [Introduktion till funktionsplatser](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klicka på **OK**.
 8. Välj tillgången i listan **alla tillgångar** och klicka på knappen **redigera** för att lägga till ytterligare information till tillgången.
@@ -53,13 +53,13 @@ Det här avsnittet beskriver hur du skapar en tillgång i tillgångshantering.
 
 Den funktionsplats som tillgången är relaterad till visas i fältet **funktionsplats**. Om tillgången är en överordnad tillgång visas antalet underordnade som är relaterade till tillgången i fältet **underordnade**. Om tillgången är en underordnad tillgång till en befintlig tillgång visas ID för den överordnade tillgången i fältet **överordnad**.
 
-Du kan redigera information om **tillgångstillverkare** och **tillgångsmodell** som används för att hantera reservdelar, alternativa reservdelar och standardvärden för jobbtyp. Se [tillgångstillverkare och modell](../setup-for-objects/product-and-model.md) för mer information. Du kan också lägga till information om **Modellår** och **serienummer** om det behövs.
+Du kan redigera information om **tillgångstillverkare** och **tillgångsmodell** som används för att hantera reservdelar, alternativa reservdelar och standardvärden för jobbtyp. Se [tillgångstillverkare och modeller](../setup-for-objects/product-and-model.md) för mer information. Du kan också lägga till information om **Modellår** och **serienummer** om det behövs.
 
 **Aktuellt livscykeltillstånd** används för att definiera om tillgången är aktiv eller inaktiv. När du skapar en tillgång är scenen alltid inställd på den första etappen i tillgångsfasgruppen. När du är redo att aktivera en tillgång klickar du på **uppdatera tillgångsstatus**och väljer det livscykeltillstånd som du har definierat som "tillgång aktiv" och klickar på **OK**.
 
 **Obs!** när en tillgång är inställd på "inaktiv", är det inte längre möjligt att skapa arbetsorder för tillgången. Du kan inte heller schemalägga förebyggande underhållsjobb för en inaktiv tillgång.
 
-Fälten **servicenivå** och **allvarlighetsgrad** relaterar till arbetsorder som skapats för tillgången. Fälten visar siffrorna **servicenivå** och **allvarlighetsgrad** som beräknats för den aktuella inställningen för tillgången. Referera till [tillgångsservicenivåer](../setup-for-objects/object-priorities.md) och [Kritiskt för tillgång](../setup-for-objects/object-criticalities.md) när det gäller inställning av dessa värden.
+Fälten **servicenivå** och **allvarlighetsgrad** relaterar till arbetsorder som skapats för tillgången. Fälten visar siffrorna **servicenivå** och **allvarlighetsgrad** som beräknats för den aktuella inställningen för tillgången. Referera till [tillgångsservicenivåer](../setup-for-objects/object-priorities.md) och [Allvarlighetsgradtyper för tillgång](../setup-for-objects/object-criticalities.md) när det gäller inställning av dessa värden.
 
 ## <a name="asset"></a>Tillgång
 

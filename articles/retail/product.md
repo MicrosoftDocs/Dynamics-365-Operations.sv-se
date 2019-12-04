@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278400"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811127"
 ---
 # <a name="product-recommendations-on-pos"></a>Produktrekommendationer i kassa
 
@@ -40,13 +40,13 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
 
 1. På sidan **Produktdetaljer**:
 
-    - • Om en butiksmedarbetare besöker en sida **Produktdetaljer** när han eller hon tittar på föregående transaktioner via olika kanaler, föreslår rekommendationstjänsten ytterligare artiklar som kan köpas tillsammans.
+    - Om en butiksmedarbetare besöker en sida **Produktdetaljer** när han eller hon tittar på föregående transaktioner via olika kanaler, föreslår rekommendationstjänsten ytterligare artiklar som kan köpas tillsammans.
 
     [![Rekommendationer på sidan produktinformation](./media/proddetails.png)](./media/proddetails.png)
 
 2. På sidan **Transaktion**:
 
-    - • I rekommendationsmotorn föreslås objekt baserat på hela listan över artiklar i korgen som ofta köps ihop.
+    - I rekommendationsmotorn föreslås objekt baserat på hela listan över artiklar i korgen som ofta köps ihop.
 
     > [!NOTE]
     > För att kunna visa rekommendationer på sidan **Transaktion** måste återförsäljaren uppdatera skärmlayouten i Dynamics 365 for Retail. Kontrollen **Rekommendationer** måste tas bort på sidan **Transaktion**.
@@ -69,10 +69,12 @@ Så här ställs produktrekommendationer in:
 
 - Gå till **Butiksparametrar** \> **Rekommendationslistor** \> **Inaktivera produktrekommendationer** och kör **Globalt konfigurationsjobb \[9999\]**. 
 - Om du har lagt till **rekommendationskontroll** till din transaktionsskärm med **Layoutdesigner för skärm**, ta även bort den.
-- Om du har fler frågor läser du [Vanliga frågor om rekommendationer](../commerce/faq-recommendations.md) för mer information.
+- Om du har fler frågor läser du [Vanliga frågor om produktrekommendationer](../commerce/faq-recommendations.md) för mer information.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Lägg till en rekommendationskontroll på transaktionssidan på en kassaenhet](add-recommendations-control-pos-screen.md)
-[Produktrekommendationer - översikt](../commerce/product-recommendations.md)
+[Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter](add-recommendations-control-pos-screen.md)
+
+[Översikt av produktrekommendationer](../commerce/product-recommendations.md)
+
 [Aktivera produktrekommendationer](../commerce/enable-product-recommendations.md) 

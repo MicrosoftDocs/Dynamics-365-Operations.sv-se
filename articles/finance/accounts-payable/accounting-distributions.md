@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f7d98d7ab9b375bfeb8784596753ca956f96e36
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189739"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772270"
 ---
 # <a name="accounting-distributions"></a>Redovisningsfördelningar
 
@@ -55,6 +55,6 @@ De allmänna redovisningsfördelningsfunktionerna innehåller följande alternat
 -   **Visa fördelningar** – Visa redovisningsfördelningarna för alla rader och penningbelopp i dokumentet. Du kan inte ändra redovisningsfördelningarna från den här vyn.
 
 
-Mer information finns i [Redovisningsfördelningar och redovisningsjournalposter för fritextfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+Mer information finns i [Redovisningsfördelningar och redovisningsjournalposter för leverantörsfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
 
 

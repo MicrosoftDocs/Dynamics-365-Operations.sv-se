@@ -1,6 +1,6 @@
 ---
-title: Publicera jobb från Attract på externa karriärwebbplatser
-description: Det här avsnittet beskriver hur du använder Dynamics 365 Talent - Attract för att publicera jobb till externa rekryteringswebbplatser
+title: Publicera jobb på Broadbean från Attract
+description: Det här avsnittet beskriver hur du använder Dynamics 365 Talent - Attract för att publicera jobb till Broadbean.
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 2c822a1f799144bb9240fc0cbdeb6c5441e278af
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 41fa057606887069a9ea0f1f2178eeaff59f33ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551413"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832680"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a>Publicera jobb från Attract på externa karriärwebbplatser
+# <a name="post-jobs-to-broadbean-from-attract"></a>Publicera jobb på Broadbean från Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract hjälper dig att få den talang du behöver genom att låta dig publicera dina jobb direkt från Attract till Broadbean. När du [skapar ett jobb](./creating-jobs-attract.md) behöver du bara klicka på en knapp för att placera jobbet framför alla potentiella jobbkandidater på Broadbean.
 
 Publicering av jobb till Broadbean kräver en lämplig Broadbean-licens. Broadbean erbjuder olika produkter och planer. Om du vill ha mer information om Broadbean licensiering och priser [kontakta Broadbean](https://www.broadbean.com/contact-us/).
 
-Om du är en administratör som behöver mer information om hur du konfigurerar Broadbean-integrering med Attract, se [Ange inställningar för externa jobbtavlor](./attract-admin-job-board-settings.md).
+Om du är administratör och behöver mer information om hur du konfigurerar Broadbean-integrationen med Attract, se [konfigurera integration med Broadbean för Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md).
 
 ## <a name="post-jobs-to-broadbean"></a>Publicera jobb till Broadbean
 
@@ -74,7 +74,7 @@ Du kan uppdatera en Broadbean jobbpublicering på två sätt.
 2. I avsnittet **bokföringar** väljer du knappen **uppdatera publicering** som motsvarar Broadbean.
 3. Redigera publiceringen i Broadbean-fönstret.
 
-–eller–
+    –eller–
 
 1. I Attract öppnar du det jobb som du vill visa i Broadbean.
 2. I avsnittet **publiceringar** väljer du ellips-knappen (**...**) som motsvarar Broadbean och markerar sedan **visa**.
@@ -99,6 +99,6 @@ Om du har problem med att publicera ett jobb i Broadbean kan du försöka med f�
 
 ## <a name="see-also"></a>Se även
 
-[Skapa jobb](./creating-jobs-attract.md)
+[Skapa, godkänna och bokföra jobb i Attract](./creating-jobs-attract.md)
 
-[Ange inställningar för externa jobbtavlor](./attract-admin-job-board-settings.md)
+[Aktivera Broadbean-integrering i Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)

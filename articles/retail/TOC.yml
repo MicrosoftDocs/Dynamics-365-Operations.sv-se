@@ -276,7 +276,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/retail/toc.json
                 - name: Skriver ut
                   items:
-                    - name: Dokumentetutskrift – översikt
+                    - name: Dokumentutskrift – översikt
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/retail/toc.json
                     - name: Installera dokumentflödesagenten för att aktivera nätverksutskrift
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/retail/toc.json
@@ -818,7 +818,7 @@
               href: ../supply-chain/production-control/default-order-settings.md?toc=/dynamics365/retail/toc.json
             - name: Söka efter produkter och produktvarianter under orderregistrering
               href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/retail/toc.json
-            - name: Prisrapporter för Retail
+            - name: Prisrapporter för butik
               href: price-report.md
             - name: Generera och köra färdiga rapporter
               href: tasks/run-out-box-reports.md
@@ -848,8 +848,10 @@
               href: tasks/retail-price-adjustments.md
         - name: Förmåner
           items:
-            - name: Lojalitetsöversikt
+            - name: Förmånsöversikt
               href: set-up-customer-loyalty-program.md
+            - name: Översikt över kundhantering
+              href: clienteling-overview.md
         - name: Betalningar
           items:
             - name: Betalningsmetoder
@@ -926,7 +928,7 @@
               href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/retail/toc.json
             - name: Spåra löpande genomsnittlig kostnad per lagerdimension
               href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/retail/toc.json
-        - name: Uppgifter
+        - name: Utdrag
           items:
             - name: Butiksutdrag
               href: retail-statements.md
@@ -980,9 +982,9 @@
               href: payment-methods-restrictions.md
             - name: 'Returnera artiklar för flera kunder, order och fakturor'
               href: multireturn.md
-        - name: Modern kassa (MPOS) och molnbaserad kassa
+        - name: Modern Point of Sale (MPOS) och Cloud POS
           items:
-            - name: Välj mellan MPOS och molnbaserad kassa
+            - name: Välj mellan MPOS och Cloud POS
               href: MPOS-or-CPOS.md
             - name: Kassaåtgärder online och offline
               href: pos-operations.md
@@ -1264,15 +1266,13 @@
               items:
                 - name: Skärmlayouter för Retail POS
                   href: pos-screen-layouts.md
-                - name: Öppna webbadressen i kassan
+                - name: Öppna URL i kassan
                   href: Open-URL-in-POS.md
                 - name: Installera layoutdesignern för kassa
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS i offlineläge
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: Utöka vyn med dubbla bildskärmar för kassan
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: 'Retail Modern POS och molnbaserad kassa, utbyggbarhet för utlösare'
+                - name: 'Retail Modern POS och Cloud POS, utbyggbarhet för utlösare'
                   href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Lägga till anpassade kontroller i kassavyer
                   href: dev-itpro/pos-custom-control.md
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Implementera en returpolicy med utlösare
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: Logga tilläggshändelser i Application Insights
+                  href: dev-itpro/commerce-application-insights.md
             - name: Utbyggbarhet för e-handel
               items:
                 - name: Konfigurera onlinebutiker

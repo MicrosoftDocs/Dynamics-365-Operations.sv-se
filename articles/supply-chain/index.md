@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 4926cd63aa360c7e08a0a435f7609017f02cb229
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653704"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814431"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Hjälp resurser för Supply Chain Management
 
@@ -53,7 +53,7 @@ Välj ett funktionsområde för att läsa mer om det.
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-Mer information om Dynamics 365 Finance finns på sidan [Hjälpresurser för Dynamics 365 Finance](../finance/index.md).
+Mer information om Dynamics 365 Finance finns på sidan [Ekonomistyrning – startsida](../finance/index.md).
 
 ## <a name="videos"></a>Videoklipp
 

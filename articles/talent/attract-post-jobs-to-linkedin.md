@@ -1,5 +1,5 @@
 ---
-title: Publicera jobb på LinkedIn från Microsoft Dynamics 365 Talent - Attract
+title: Publicera jobb på LinkedIn från Attract
 description: Det här avsnittet beskriver hur du använder Dynamics 365 Talent - Attract för att publicera jobb till LinkedIn.
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551505"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833017"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Publicera jobb på LinkedIn från Microsoft Dynamics 365 Talent - Attract
+# <a name="post-jobs-to-linkedin-from-attract"></a>Publicera jobb på LinkedIn från Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 LinkedIn är världens största online professionella nätverk, vilket ger dig till gång till världens främsta talanger. Microsoft Dynamics 365 Talent: Attract hjälper dig att få den talang du behöver genom att låta dig publicera dina jobb direkt från Attract till LinkedIn.
 
@@ -46,7 +46,7 @@ I följande tabell visas de åtgärder som du kan utföra på LinkedIn, beroende
 
 Mer information om användarroller i Attract finns i [Säkerhets- och rollhantering i Attract](./security-attract.md).
 
-Om du är administratör och behöver mer information om hur du konfigurerar LinkedIn-integrationen med Attract, se [konfigurera integration med LinkedIn](./attract-admin-linkedin.md).
+Om du är administratör och behöver mer information om hur du konfigurerar LinkedIn-integrationen med Attract, se [konfigurera integration med LinkedIn för Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 Jobb som har publicerats på LinkedIn visas på den publicerade LinkedIn-webbplatsen. LinkedIn har inte testmiljö för att publicera jobb. Se därför till att du inte publicerar några testjobb av misstag.
 
@@ -67,15 +67,15 @@ När intresserade kandidater väljer **Visa** bredvid din lista, ser de fullstä
 
 Alla jobbinlägg som görs med Attract är begränsade listor. Mer information om begränsade listor på LinkedIn finns i [begränsade listor och Premium jobbplatser för jobbpaketering](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Om du har problem med att publicera jobb till LinkedIn, se [Felsöka publiceringsjobb till LinkedIn](./attract-troubleshoot-linkedin.md).
+Om du har problem med att logga in eller publicera jobb på LinkedIn, se [Felsök integration med LinkedIn och Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Se även
 
-[Vanliga frågor LinkedIn](./attract-linkedin-faq.md)
+[Vanliga frågor Attract-integration med LinkedIn](./attract-linkedin-faq.md)
 
-[Konfigurera integration med LinkedIn](./attract-admin-linkedin.md)
+[Konfigurera integration med LinkedIn för Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Skapa jobb](./creating-jobs-attract.md)
+[Skapa, godkänna och bokföra jobb i Attract](./creating-jobs-attract.md)
 
 [Hitta kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 

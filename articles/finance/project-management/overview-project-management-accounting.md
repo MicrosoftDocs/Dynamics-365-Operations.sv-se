@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d461b85f89eff63c8747fb17b3ee34ebfeb2218
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 79e12f39589f9cf3f4b1515fa3ab10bb10ffb97f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185645"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770369"
 ---
 # <a name="project-management-and-accounting-overview"></a>Projekthantering och redovisning – översikt
 
@@ -72,7 +72,7 @@ Mer information om projektavtal finns i [Projektavtal](project-contracts.md).
 
 Graden av information i en WBS beror på noggrannhetsnivån som krävs i uppskattningarna och spårningsnivån som krävs för dessa uppskattningar. Projekt som har mycket låg tolerans för förseningar i tid eller kostnad kräver vanligtvis en mer detaljerad arbetsstruktur och även noggrann spårning av arbetsförloppet och kostnader mot strukturen. 
 
-Mer information finns i [Uppdelade arbetsstrukturer](work-breakdown-structures.md).
+Mer information finns i [Översikt över uppdelade arbetsstrukturer](work-breakdown-structures.md).
 
 ### <a name="create-project-forecasts-and-budgets"></a>Skapa projektprognoser och projektbudgetar
 
@@ -134,7 +134,7 @@ Under projektutförandet registrerar gruppmedlemmarna eller projektledarna arbe
 
 En uppdelad arbetsstruktur är en beskrivning av det arbete som ska utföras i ett projekt. Arbetsstrukturen är en hierarki av uppgifter. Den representerar inte bara arbetet i uppgiften, utan också uppgiftens omfattning, kostnad och tidslängd. 
 
-Mer information finns i [Uppdelade arbetsstrukturer](work-breakdown-structures.md).
+Mer information finns i [Översikt över uppdelade arbetsstrukturer](work-breakdown-structures.md).
 
 ### <a name="manage-project-forecasts-and-budgets"></a>Hantera projektbudgetar och projektprognoser
 

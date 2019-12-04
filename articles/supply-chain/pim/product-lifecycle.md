@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865338"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813556"
 ---
 # <a name="product-lifecycle-state-overview"></a>Produktens livscykeltillstånd – översikt
 
@@ -107,9 +107,9 @@ Använd följande kriterier för att välja och uppdatera frisläppta produkter 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
--  [Skapa ett nytt produktlivscykeltillstånd (Uppgiftsguide)](tasks/new-product-lifecycle-state.md)
--  [Skapa ett standardiserat produktlivscykeltillstånd (Uppgiftsguide)](tasks/default-product-lifecycle-state.md)
--  [Tilldela ett produktlivscykeltillstånd för en frisläppt produktmall (uppgiftsguide)](tasks/product-lifecycle-state-released-product-master.md)
--  [Associera ett produktlivscykeltillstånd till en frisläppt produkt (Uppgiftsguide)](tasks/product-lifecycle-state-released-product.md)
--  [Sök efter inaktuella produktvarianter och tilldela ett produktlivscykeltillstånd (Uppgiftsguide)](tasks/obsolete-product-variants.md)
--  [Skapa ett produktlivscykeltillstånd för att utesluta produkter från huvudplanering (Uppgiftsguide)](tasks/exclude-products-master-planning.md)
+-  [Skapa ett nytt livscykeltillstånd för produkt](tasks/new-product-lifecycle-state.md)
+-  [Skapa ett standardlivscykeltillstånd för produkt](tasks/default-product-lifecycle-state.md)
+-  [Tilldela ett produktlivscykeltillstånd för en frisläppt produktmall](tasks/product-lifecycle-state-released-product-master.md)
+-  [Tilldela ett produktlivscykeltillstånd för en frisläppt produkt](tasks/product-lifecycle-state-released-product.md)
+-  [Söka efter föråldrade produktvarianter och tilldela ett produktlivscykeltillstånd](tasks/obsolete-product-variants.md)
+-  [Skapa ett produktlivscykeltillstånd för att utesluta produkter från huvudplanering](tasks/exclude-products-master-planning.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184081"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772661"
 ---
 # <a name="budgeting-home-page"></a>Startsidan Budgetering
 
@@ -42,12 +42,12 @@ Processerna för såväl långsiktig strategisk planering som årlig budgetplane
 
 Slutligen: Väl utvecklade organisationer kan skapa en organisationskultur där medarbetare utbildas om organisationens mål och följer dessa mål genom olika policyer, t.ex. "Överväg internetkonferenser istället för resor." Appen omfattar ett ramverk för budgetkontroll som låter företagets ledning välja antingen hård styrning (som förhindrar bokföringar som skulle överskrida budgeten) eller mjuk styrning (där användarna varnas att de kommer att överskrida tillgängliga budgetmedel, men själva kan bestämma hur de vill fortsätta). Slutligen går det även att använda löpande prognoser. En rullande prognos är en jämförelse av budgeten och de verkliga siffrorna och används för att definiera hur bra företaget går i förhållande till budgeten. En rullande prognos kan också identifiera tendenser. Finance and Operations stöder rullande prognoser genom ett budgetplandokument som första planeringsaktivitet. Rullande prognoser kan utföras parallellt med planeringen för nästkommande budgetcykel.
 
--   [Grundläggande budgetering: Översikt och konfiguration](basic-budgeting-overview-configuration.md)
--   [Budgetkontroll: Översikt och konfiguration](budget-control-overview-configuration.md)
--   [Budgetplanering: Översikt och konfiguration](budget-planning-overview-configuration.md)
+-   [Budgetöversikt](basic-budgeting-overview-configuration.md)
+-   [Översikt över budgetkontroll](budget-control-overview-configuration.md)
+-   [Översikt över budgetplanering](budget-planning-overview-configuration.md)
 -   [Befattningsprognos](position-forecasting.md)
 -   [Motiveringsdokument för budgetplanering](budget-planning-justification-docs.md)
--   [Microsoft Excel-mallar för budgetplanering](budget-planning-excel-templates.md)
+-   [Budgetplaneringsmallar för Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budgeteringsverktyg
 [![Budgeteringsverktyg](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 

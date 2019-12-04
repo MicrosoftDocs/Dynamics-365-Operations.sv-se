@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 074132af2111debee4bea894b559744b4470454d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78b3b20ed56cbb6404f5526e90fdcefcaec9bf3f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179975"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771971"
 ---
 # <a name="cost-accounting-home-page"></a>Startsida för Kostnadsredovisning
 
@@ -39,17 +39,17 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 
 |      |   |
 |------|---|
-|  [Konfigurera grundläggande enheter (e-utbildning)](https://mbspartner.microsoft.com/Home) (kräver CustomerSource-konto)  |[Skapa dimensioner](cost-elements.md)  |
-|  [Skapa en dimensionshierarki](dimension-hierarchy.md)  |[Skapa basinställningar](./tasks/define-cost-control-units.md)| 
-| [Definiera en allokeringsbas](allocation-bases.md)|[Definiera policy](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [Datakälla och dataleverantör](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Datakälla och dataleverantör](./tasks/process-trace-source-data.md)     | 
-|[Beräkning av indirekta kostnader](overhead-calculation.md)  | [Analyser och rapportering](cost-control-workspace.md)   |
+|  [Konfigurera grundläggande enheter (e-utbildning)](https://mbspartner.microsoft.com/Home) (kräver CustomerSource-konto)  |[Dimensioner för kostnadselement](cost-elements.md)  |
+|  [Dimensionshierarki](dimension-hierarchy.md)  |[Definiera kostnadsstyrenheter](./tasks/define-cost-control-units.md)| 
+| [Allokeringsunderlag](allocation-bases.md)|[Skapa och tilldela en kostnadsallokeringspolicy till en kostnadsstyrenhet](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Hantera en datakälla för huvudbok för kostnadsredovisning](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Bearbeta och spåra källdata](./tasks/process-trace-source-data.md)     | 
+|[Beräkning av indirekta kostnader](overhead-calculation.md)  | [Arbetsyta för kostnadskontroll](cost-control-workspace.md)   |
 
 ## <a name="get-started-videosbr"></a>Komma igång-videor<br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
 | [Kom igång med Kostnadsredovisning](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobil arbetsyta för kostnadsredovisning](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Använd Excel för kostnadsredovisningsanalys](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+
 
 

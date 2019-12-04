@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: efaa837ef39d8e0daf561fe385f22ed7b0acd305
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552053"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814845"
 ---
 # <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Skapa ett anställningsteam genom att använda Dynamics 365 Talent - Onboard
 
@@ -72,6 +72,6 @@ I Microsoft Dynamics 365 Talent: Onboard kan du skapa anställningsteam. Du kan 
 ### <a name="see-also"></a>Se även
 
 - [Prova eller köp appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheter](./whats-new.md)
-- [Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheter och ändringar i Dynamics 365 Talent](./whats-new.md)
+- [Utgivningsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support för Microsoft Dynamics 365 Talent](./talent-support.md)

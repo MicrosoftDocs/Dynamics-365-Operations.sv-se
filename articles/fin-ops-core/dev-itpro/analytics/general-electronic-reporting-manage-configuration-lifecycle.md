@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6206b3a1ac298af98e4b69b6800b9a493658c4ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecaeb80f3cda2ee24533ed263df63cc10c5ffc65
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181299"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771106"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Hantera livscykeln för konfiguration av elektronisk rapportering (ER)
 
@@ -33,7 +33,7 @@ Den här avsnittet beskriver hur du hanterar livscykeln för elektronisk rapport
 
 ## <a name="overview"></a>Översikt
 
-Elektronisk rapportering (ER) är en motor som stöder lagstadgade behov och landsspecifika elektroniska dokument. I allmänhet förutsätter ER en förmåga att utföra följande uppgifter för ett enstaka elektroniskt dokument. Mer information finns i [översikt för elektronisk rapportering](general-electronic-reporting.md).
+Elektronisk rapportering (ER) är en motor som stöder lagstadgade behov och landsspecifika elektroniska dokument. I allmänhet förutsätter ER en förmåga att utföra följande uppgifter för ett enstaka elektroniskt dokument. Mer information finns i [översikt för (ER) elektronisk rapportering](general-electronic-reporting.md).
 
 - Designa en mall för ett elektroniskt dokument:
 
@@ -87,4 +87,4 @@ ER-konfigurationer som utformas i utvecklingsmiljön kan överföras till testmi
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över elektronisk rapportering](general-electronic-reporting.md)
+[Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)

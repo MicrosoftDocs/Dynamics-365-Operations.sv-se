@@ -1,5 +1,5 @@
 ---
-title: Konfigurera företagsinformation i Microsoft Dynamics 365 Talent - Attract
+title: Konfigurera företagsinformation i Attract
 description: I det här avsnittet beskrivs hur du konfigurerar företagsinformation och profilering för Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551614"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833264"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Konfigurera företagsinformation i Microsoft Dynamics 365 Talent - Attract
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Konfigurera företagsinformation i Attract
+
+[!include [banner](includes/banner.md)]
 
 Administratörscenter i Microsoft Dynamics 365 Talent: Attract innehåller konfigurationsinställningar, integrationsalternativ och inställningsalternativ för Attract program.
 
@@ -48,11 +49,11 @@ När nya funktioner läggs till kan de bli tillgängliga i en förhandsversion. 
 
 ## <a name="template-management"></a>Mallhantering
 
-A processmall innehåller de aktiviteter som ska ingå i anställningsprocessen för ett jobb. Din organisation kan tillåta att alla teammedlemmar eller bara administratörer kan skapa anställningsprocessmallar. För att låta teammedlemmar skapa sina egna anställningsprocessmallar aktiverar du funktionen Mallhantering. Mer information om processmallar finns i [processmallar i Attract](./process-templates-attract.md).
+A processmall innehåller de aktiviteter som ska ingå i anställningsprocessen för ett jobb. Din organisation kan tillåta att alla teammedlemmar eller bara administratörer kan skapa anställningsprocessmallar. För att låta teammedlemmar skapa sina egna anställningsprocessmallar aktiverar du funktionen Mallhantering. Mer information om processmallar finns i [Skapa en processmall i Attract](./process-templates-attract.md).
 
 ## <a name="email-template-settings"></a>Inställningar för e-postmall
 
-Organisationer kan skapa e-postmallar för olika scenarier. Du kan välja en rubrikbild som ska inkluderas i e-postmallar. Det valda sidhuvudet visas sedan i alla e-postmallar. Du kan lägga till en länk till företagets sekretesspolicy och användningsvillkor för kommunikation i sidfotmallen. Mer information finns i [E-postmallar i Attract](./email-templates.md).
+Organisationer kan skapa e-postmallar för olika scenarier. Du kan välja en rubrikbild som ska inkluderas i e-postmallar. Det valda sidhuvudet visas sedan i alla e-postmallar. Du kan lägga till en länk till företagets sekretesspolicy och användningsvillkor för kommunikation i sidfotmallen. Mer information finns i [E-postmallar](./email-templates.md).
 
 ## <a name="offer-process"></a>Erbjudandeprocess
 

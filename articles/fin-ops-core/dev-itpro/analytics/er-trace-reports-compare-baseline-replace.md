@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: 45c0e3b569ca733ae3b70187633d2e84db5ecd87
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578228"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771176"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Förbättringar i spårning av resultaten från genererade ER-rapporter och jämföra dem med baslinjevärden
 
@@ -113,14 +113,14 @@ Om du vill slutföra stegen i det här exemplet måste du först slutföra stege
 13. Välj **spara**och välj sedan **test**.
 14. Välj **test** igen om du vill testa om det konfigurerade uttrycket.
 
-    ![Sidan formeldesigner](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Skärmbild av sidan formeldesigner")
+    ![Sidan Formeldesigner](media/GER-BaselineSample-DefineProcessingDTExpression.PNG "Skärmbild av sidan Formeldesigner")
 
     > [!NOTE]
     > På fliken **testresultat** visas att det konfigurerade uttrycket returnerar ett annat datum- och tidsvärde när det anropas.
 
 15. Stäng sidan **Formeldesigner** och välj sedan **Spara**.
 
-    ![Sidan formatdesigner](media/GER-BaselineSample-FormatMappingDesign2.PNG "Skärmbild av sidan formatdesigner")
+    ![Formatdesignersida](media/GER-BaselineSample-FormatMappingDesign2.PNG "Skärmbild av sidan Formatdesigner")
 
 16. Stäng sidan **Formatdesigner**.
 
@@ -206,5 +206,5 @@ Om du vill importera baslinjeinställningar från en XML-fil som är lagrad på 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Spåra skapade rapportresultat och jämföra dem med baslinjevärden](er-trace-reports-compare-baseline.md)
-- [Uppgiftsregistrering](../user-interface/task-recorder.md)
+- [Spåra genererade rapportresultat och jämför dem med baslinjevärden](er-trace-reports-compare-baseline.md)
+- [Uppgiftsinspelarresurser](../user-interface/task-recorder.md)

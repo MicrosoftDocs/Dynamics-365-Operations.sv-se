@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d33625b94e7611a256c389a6de4692ae8f4ff2a7
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: da451c63c23444da564307505d38699faf9df19a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572482"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771005"
 ---
 # <a name="integrated-vendor-master"></a>Integrerat leverantörshuvud
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Termen *leverantör* hänvisar till en leverantörsorganisation eller en enskild firma som är en del av leveranskedjeprocessen och som levererar varor för verksamheten. Även om *leverantören* är ett etablerat koncept i Finance and Operations-appar finns inget annat leverantörskoncept i Dynamics 365-appar. I stället överbelastar vissa företag kontoentiteten för att lagra både kundinformation och leverantörsinformation. Andra företag använder ett anpassat leverantörskoncept. Common Data Service-integrationen stöder båda dessa konstruktioner. Därför kan du aktivera någon av konstruktionerna, beroende på ditt affärsscenario.
 
@@ -52,166 +50,24 @@ Leverantörens kontaktinformation liknar kundens kontaktinformation. Bakom kulis
 
 Leverantörsdata innehåller all information om leverantören, till exempel leverantörsgruppen, adresser, kontaktinformation, betalningsprofil och fakturaprofil. En samling entitetsmappningar fungerar tillsammans under leverantörsdatainteraktion, som visas i följande tabell.
 
-Finance and Operations-appar  | Andra Dynamics 365-appar
-------------------------|---------------------------------
-Leverantör V2               | Konto
-Leverantör V2               | Msdyn\_vendors
-CDS-kontakter V2         | Kontakt
-Leverantörsgrupper           | Msdyn\_vendorgroups
-Betalningsmetod för leverantör   | Msdyn\_vendorpaymentmethods
-Betalningsplan        | Msdyn\_paymentschedules
-Betalningsplan        | Msdyn\_paymentschedulelines
-Betalningsdag – CDS         | Msdyn\_paymentdays
-Betalningsdagsrader – CDS   | Msdyn\_paymentdaylines
-Betalningsvillkor        | Msdyn\_paymentterms
-Namnaffix            | Msdyn\_nameaffixes
+Finance and Operations-appar | Andra Dynamics 365-appar         | Beskrivning
+----------------------------|---------------------------------|------------
+Leverantör V2               | Konto | Företag som använder kontoentiteten för att lagra leverantörsinformation kan fortsätta att använda den på samma sätt. De kan också dra nytta av de explicita leverantörsfunktioner som kommer på grund av Finance and Operations-appintegrering.
+Leverantör V2               | Msdyn\_vendors | Företag som använder en anpassad lösning för leverantörer kan dra nytta av det färdiga leverantörskoncept som introduceras i Common Data Service på grund av Finance and Operations-appintegrering. 
+Leverantörsgrupper | msdyn_vendorgroups | Den här mallen synkroniserar leverantörsgruppinformation.
+Betalningsmetod för leverantör | msdyn_vendorpaymentmethods | Den här mallen synkroniserar information om leverantörsbetalningsmetod.
+CDS-kontakter V2             | kontakter                        | Mallen [Kontakter](dual-write-customer.md#cds-contacts-v2-to-contacts) synkroniserar all primär, sekundär och tertiär kontaktinformation för både kunder och leverantörer.
+Betalningsplanrader      | msdyn_paymentschedulelines      | Mallen [betalningsplanrader](dual-write-customer.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synkroniserar referensdata för kunder och leverantörer.
+Betalningsplan            | msdyn_paymentschedules          | Mallen [betalningsplaner](dual-write-customer.md#payment-schedule-to-msdyn_paymentschedules) synkroniserar referensdata för betalningsplaner för både kunder och leverantörer.
+Betalningsdagsrader – CDS V2    | msdyn_paymentdaylines           | Mallen [betalningsdagsrader](dual-write-customer.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synkroniserar referensdata för betalningsdagsrader för kunder och leverantörer.
+Betalningsdagar – CDS            | msdyn_paymentdays               | Mallen [betalningsdagar](dual-write-customer.md#payment-days-cds-to-msdyn_paymentdays) synkroniserar referensdata för betalningsdagar för både kunder och leverantörer.
+Betalningsvillkor            | msdyn_paymentterms              | Mallen [betalningsvillkor](dual-write-customer.md#terms-of-payment-to-msdyn_paymentterms) synkroniserar referensdata för betalningsvillkor för både kunder och leverantörer.
+Namnaffix                | msdyn_nameaffixes               | Mallen [namnaffix](dual-write-customer.md#name-affixes-to-msdyn_nameaffixes) synkroniserar referensdata för namnaffix för både kunder och leverantörer.
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [symbols](../includes/dual-write-symbols.md)]
 
-## <a name="vendor-v2-and-account"></a>Leverantör V2 och konto 
+[!include [Vendors](dual-write/VendorsV2-msdyn-vendors.md)]
 
-Företag som använder kontoentiteten för att lagra leverantörsinformation kan fortsätta att använda den på samma sätt. De kan också dra nytta av de explicita leverantörsfunktioner som kommer på grund av Finance and Operations-appintegrering.
+[!include [Vendor groups](dual-write/VendVendorGroup-msdyn-vendorgroups.md)]
 
-## <a name="vendor-v2-and-msdyn_vendors"></a>Leverantör V2 och Msdyn\_leverantörer
-
-Företag som använder en anpassad lösning för leverantörer kan dra nytta av det färdiga leverantörskoncept som introduceras i Common Data Service på grund av Finance and Operations-appintegrering. 
-
-<!-- ![vendor mappings](media/dual-write-vendors-1.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-2.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-3.png) -->
-
-Källfält | Mappningstyp | Målfält
----|---|---
-VENDORACCOUNTNUMBER | = | msdyn\_vendoraccountnumber
-VENDORGROUPID | = | msdyn\_vendorgroupid.msdyn\_vendorgroup
-VENDORORGANIZATIONNAME | = | msdyn\_name
-VENDORPARTYTYPE | \>\< | msdyn\_isperson
-PERSONFIRSTNAME | = | msdyn\_firstname
-PERSONLASTNAME | = | msdyn\_lastname
-CREDITLIMIT | = | msdyn\_vendorcreditlimit
-ISFOREIGNENTITY | \>\< | msdyn\_isforeignentity
-ISONETIMEVENDOR | \>\< | msdyn\_isonetimevendor
-ADDRESSBUILDINGCOMPLIMENT | = | msdyn\_addressbuildingcompliment
-PERSONCHILDRENNAMES | = | msdyn\_childrennames
-ADDRESSCITY | = | msdyn\_addresscity
-ADDRESSCOUNTRYREGIONID | = | msdyn\_addresscountryregionid
-ADDRESSCOUNTRYREGIONISOCODE | = | msdyn\_addresscountryregionisocode
-ADDRESSCOUNTYID | = | msdyn\_addresscountyid
-CREDITRATING | = | msdyn\_creditrating
-ADDRESSDESCRIPTION | = | msdyn\_addressdescription
-ADDRESSDISTRICTNAME | = | msdyn\_addressdistrictname
-DUNSNUMBER | = | msdyn\_dunsnumber
-ETHNICORIGINID | = | msdyn\_ethnicorigin
-FORMATTEDPRIMARYADDRESS | = | msdyn\_formattedprimaryaddress
-PERSONHOBBIES | = | msdyn\_hobbies
-PERSONINITIALS | = | msdyn\_initials
-LANGUAGEID | = | msdyn\_languageid
-PERSONLASTNAMEPREFIX | = | msdyn\_lastnameprefix
-PERSONMIDDLENAME | = | msdyn\_middlename
-ORGANIZATIONNUMBER | = | msdyn\_organizationnumber
-OURACCOUNTNUMBER | = | msdyn\_ourvendoraccountnumber
-PAYMENTID | = | msdyn\_paymentid
-PERSONPHONETICFIRSTNAME | = | msdyn\_phoneticfirstname
-PERSONPHONETICMIDDLENAME | = | msdyn\_phoneticmiddlename
-PERSONPHONETICLASTNAME | = | msdyn\_phoneticlastname
-ORGANIZATIONPHONETICNAME | = | msdyn\_organizationphoneticname
-ADDRESSPOSTBOX | = | msdyn\_addresspostbox
-PRIMARYURL | = | msdyn\_primarycontacturl
-PRIMARYEMAILADDRESS | = | msdyn\_primaryemailaddress
-PRIMARYEMAILADDRESSDESCRIPTION | = | msdyn\_primaryemailaddressdescription
-PRIMARYFACEBOOK | = | msdyn\_primaryfacebook
-PRIMARYFACEBOOKDESCRIPTION | = | msdyn\_primaryfacebookdescription
-PRIMARYFAXNUMBER | = | msdyn\_primaryfaxnumber
-PRIMARYFAXNUMBERDESCRIPTION | = | msdyn\_primaryfaxnumberdescription
-PRIMARYFAXNUMBEREXTENSION | = | msdyn\_primaryfaxnumberextension
-PRIMARYLINKEDIN | = | msdyn\_primarylinkedin
-PRIMARYLINKEDINDESCRIPTION | = | msdyn\_primarylinkedindescription
-PRIMARYPHONENUMBER | = | msdyn\_pimaryphonenumber
-PRIMARYPHONENUMBERDESCRIPTION | = | msdyn\_primaryphonenumberdescription
-PRIMARYPHONENUMBEREXTENSION | = | msdyn\_primaryphonenumberextension
-PRIMARYTELEX | = | msdyn\_primarytelex
-PRIMARYTELEXDESCRIPTION | = | msdyn\_primarytelexdescription
-PRIMARYTWITTER | = | msdyn\_primarytwitter
-PRIMARYTWITTERDESCRIPTION | = | msdyn\_primarytwitterdescription
-PRIMARYURLDESCRIPTION | = | msdyn\_primaryurldescription
-PERSONPROFESSIONALSUFFIX | = | msdyn\_professionalsuffix
-PERSONPROFESSIONALTITLE | = | msdyn\_professionatitle
-ADDRESSSTATEID | = | msdyn\_addressstateid
-ADDRESSSTREET | = | msdyn\_addressstreet
-ADDRESSSTREETNUMBER | = | msdyn\_addressstreetnumber
-VENDORKNOWNASNAME | = | msdyn\_vendorknownasname
-ADDRESSZIPCODE | = | msdyn\_addresszipcode
-DEFAULTPAYMENTDAYNAME | = | msdyn\_defaultpaymentdayname.msdyn\_name
-DEFAULTPAYMENTSCHEDULENAME | = | msdyn\_paymentschedule.msdyn\_name
-DEFAULTPAYMENTTERMSNAME | = | msdyn\_paymentterms.msdyn\_name
-HASONLYTAKENBIDS | \>\< | msdyn\_hasonlytakenbids
-ISMINORITYOWNED | \>\< | msdyn\_isminorityowned
-ISVENDORLOCALLYOWNED | \>\< | msdyn\_isvendorlocallyowned
-ISSERVICEVETERANOWNED | \>\< | msdyn\_isserviceveteranowned
-ISOWNERDISABLED | \>\< | msdyn\_ownerisdisabled
-ISWOMANOWNER | \>\< | msdyn\_womanowner
-PERSONANNIVERSARYDAY | = | msdyn\_personanniversaryday
-PERSONANNIVERSARYYEAR | = | msdyn\_anniversaryyear
-PERSONBIRTHDAY | = | msdyn\_birthday
-PERSONBIRTHYEAR | = | msdyn\_birthyear
-ORGANIZATIONEMPLOYEEAMOUNT | = | msdyn\_numberofemployees
-VENDORHOLDRELEASEDATE | = | msdyn\_vendoronholdreleasedate
-VENDORPARTYNUMBER | = | msdyn\_vendorpartynumber
-ADDRESSLOCATIONID | = | msdyn\_addresslocationid
-PERSONANNIVERSARYMONTH | = | msdyn\_vendorpersonanniversarymonth
-PERSONBIRTHMONTH | = | msdyn\_vendorpersonbirthmonth
-PERSONMARITALSTATUS | \>\< | msdyn\_maritalstatus
-ADDRESSLATITUDE | \>\> | msdyn\_addresslatitude
-ADDRESSLONGITUDE | \>\> | msdyn\_addresslongitude
-ONHOLDSTATUS | \>\< | msdyn\_onholdstatus
-CURRENCYCODE | = | msdyn\_currencycode.isocurrencycode
-ISVENDORLOCATEDINHUBZONE | \>\< | msdyn\_isvendorlocatedinhubzone
-DEFAULTVENDORPAYMENTMETHODNAME | = | msdyn\_vendorpaymentmethod.msdyn\_name
-INVOICEVENDORACCOUNTNUMBER | = | msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber
-PERSONGENDER | \>\< | msdyn\_gender
-AREPRICESINCLUDINGSALESTAX | \>\< | msdyn\_priceincludessalestax
-SALESTAXGROUPCODE | = | msdyn\_taxgroup.msdyn\_name
-VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
-
-## <a name="contacts"></a>Kontakter
-
-Den här mallen synkroniserar all primär, sekundär och tertiär kontaktinformation för både kunder och leverantörer, mellan Finance and Operations-appar och Dynamics 365-appar. Information om entitetsmappningen finns i [integrerat kundhuvud](dual-write-customer.md#contacts).
-
-## <a name="vendor-groups"></a>Leverantörsgrupper
-
-Den här mallen synkroniserar leverantörsgruppinformation mellan Finance and Operations-appar och Dynamics 365-appar.
-
-<!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
-
-Källfält | Mappningstyp | Målfält
----|---|---
-DEFAULTPAYMENTTERMNAME | = | msdyn\_paymentterms.msdyn\_name
-BESKRIVNING | = | msdyn\_description
-VENDORGROUPID | = | msdyn\_vendorgroup
-CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_name
-
-### <a name="vendor-payment-method"></a>Betalningsmetod för leverantör
-
-Den här mallen synkroniserar information om leverantörsbetalningsmetod mellan Finance and Operations-appar och Dynamics 365-appar.
-
-<!-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
-
-Källfält | Mappningstyp | Målfält
----|---|---
-NAMN | = | msdyn\_name
-BESKRIVNING | = | msdyn\_description
-SUMBYPERIOD | \>\< | msdyn\_sumbyperiod
-DISCOUNTGRACEPERIODDAYS | = | msdyn\_discountgraceperioddays
-PAYMENTSTATUS | \>\< | msdyn\_paymentstatus
-ALLOWPAYMENTCOPIES | \>\< | msdyn\_allowpaymentcopies
-PAYMENTTYPE | \>\< | msdyn\_paymenttype
-LASTFILENUMBER | = | msdyn\_lastfilenumber
-LASTFILENUMBERTODAY | = | msdyn\_lastfilenumbertoday
-ACCOUNTTYPE | \>\< | msdyn\_accounttype
-BRIDGINGPOSTINGENABLED | \>\< | msdyn\_bridgingposting
-ENABLEPOSTDATEDCHECKCLEARINGPOSTING | \>\< | msdyn\_postdatedcheckclearingposting
-PROMISSORYNOTEDRAFTTYPE | \>\< | msdyn\_promissorynotedrafttype
-DIRECTDEBIT | \>\< | msdyn\_directdebit
-
+[!include [Vendor payment methods](dual-write/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]

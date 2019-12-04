@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 54e7d517e704b7162f3e091330a246386f0203ea
-ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
+ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2572651"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771551"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -598,6 +598,6 @@ Du kan dela beloppet i en kolumn med ett specifik antalet perioder. Till exempel
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Rapportdefinitioner i ekonomiska rapporter](row-definitions-financial-reporting.md)
+[Rapportdefinitioner i designer för ekonomiska rapporter](row-definitions-financial-reporting.md)
 
 [Avancerade formateringsalternativ i ekonomiska rapporter](advanced-formatting-options-financial-reporting.md)

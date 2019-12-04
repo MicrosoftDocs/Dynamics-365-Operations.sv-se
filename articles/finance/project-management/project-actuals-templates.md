@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0aeaa1ee4c35ca42a5382b3c7ff3519cba52996c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 302ac0f456dd8a24dc02948ee657e359f5a9c844
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250540"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770345"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synkronisera projektets verkliga värden från Project Service Automation direkt till projektets integrationsjournal för bokföring i Finance and Operations
 
@@ -50,7 +50,7 @@ Följande bild visar hur data synkroniseras mellan Project Service Automation oc
 
 ### <a name="template-and-tasks"></a>Mall och uppgifter
 
-För att få åtkomst till tillgängliga mallar väljer du i administratörscentret för Microsoft PowerApps **Projekt** och sedan i det övre högra hörnet **Ny projekt** för att välja offentliga mallar.
+För att få åtkomst till tillgängliga mallar väljer du i administratörscentret för Microsoft Power Apps **Projekt** och sedan i det övre högra hörnet **Ny projekt** för att välja offentliga mallar.
 
 Följande mall och underliggande uppgifter används för att synkronisera projektets faktiska värden från Project Service Automation till Finance:
 

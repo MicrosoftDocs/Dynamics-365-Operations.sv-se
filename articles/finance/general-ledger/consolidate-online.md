@@ -16,25 +16,25 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: eadf0af285213a972cac83d7b6fc6a47317b21bb
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 86be6d4cc0af3f2fd92523d4ecd3825f2383fc48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551667"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770745"
 ---
 # <a name="online-financial-consolidations"></a>Online ekonomisk konsolidering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver online ekonomiska konsolideringar i redovisning. Innan du läser det här avsnittet bör du läsa avsnittet [finansiell konsolidering och valutaomräkning](financial-consolidations-currency-translation.md).
+Det här avsnittet beskriver online ekonomiska konsolideringar i redovisning. Innan du läser det här avsnittet bör du läsa avsnittet [finansiell konsolidering och valutaomräkning - översikt](financial-consolidations-currency-translation.md).
 
 När du har slutfört inställningarna kan du ange detaljerna för konsolideringen på sidan **konsolidera [Online]**. När du är klar kan du klicka på **OK** eller **Batch** för att bearbeta konsolideringen.
 
 ## <a name="criteria"></a>Kriterier
 I fliken **kriterier** på sidan **konsolidera [Online]** kan du definiera kontona, perioder och vilken typ av data som ska konsolideras.
 
-![Fliken kriterier](./media/criteria-consolidate-online.png "Fliken kriterier")
+![Fliken Kriterier](./media/criteria-consolidate-online.png "Fliken Kriterier")
 
 Här följer en förklaring av de olika fälten på den här fliken:
 
@@ -69,7 +69,7 @@ På fliken **Juridiska personer** definierar du de förtag som ska tas med i kon
 
 ![Fliken Juridiska personer](./media/legal-entities-cons.png "Fliken Juridiska personer")
 
-![Konton för automatiska transaktioner](./media/accounts-for-automatic-cons.png "Konton för automatiska transaktioner")
+![Sidan Konton för automatiska transaktioner](./media/accounts-for-automatic-cons.png "Sidan Konton för automatiska transaktioner")
 
 ## <a name="elimination"></a>Eliminering
 På fliken **eliminering** finns det tre alternativ för att bearbeta elimineringar:
@@ -89,10 +89,10 @@ På fliken **valutaomräkning** definierar du juridisk person, konto och valutak
 - **Transaktionsdatum** – datumet för varje transaktion som ska användas för att välja en valutakurs. Det här alternativet används oftast för anläggningstillgångar och kallas ofta historisk kurs. Du kan inte förhandsgranska kursen eftersom det kommer att vara många kurser för olika transaktioner i kontointervallet.
 - **Användardefinierad kurs** – När du har valt detta alternativ kan du ange valutakursen som du vill använda. Det här alternativet kan vara användbart för genomsnittliga växelkurser, eller om du konsoliderar mot en fast valutakurs.
 
-![Fliken Valutaöversättning](./media/currency-translation-cons-online.png "Fliken Valutaöversättning")
+![Fliken Valutaregistrering](./media/currency-translation-cons-online.png "Fliken Valutaregistrering")
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
+Mer information om konsolidering och valutaöversättning finns i det överordnade avsnittet i det här avsnittet [Översikt över ekonomisk konsolidering och valutaomräkning](./financial-consolidations-currency-translation.md).
 
 För information om scenarier där du kan skapa konsoliderade bokslut, se [skapa konsoliderade bokslut](./generating-consolidated-financial-statements.md).

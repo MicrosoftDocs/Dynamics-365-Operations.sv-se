@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182840"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769957"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Importera filer i XML-format med valfria attribut
 
 Du kan utforma elektronisk rapportering (ER)-format som tolkar inkommande elektroniska dokument dokument i XML-format. Vissa attribut för XML-element kan anges i designat ER-format som valfritt. Det gör att du kan hantera inkommande filer med och utan sådana XML-attribut korrekt. Du kan sedan använda innehållet från dessa filer till att uppdatera programdata.
 
-Om du vill veta mer om den här funktionen följer du anvisningarna i avsnittet [RCS importerar filer i XML-format med valfria attribut](tasks/import-files-xml-format-optional-attributes.md) som ingår i affärsprocessen 7.5.4.3 Hämta/utveckla IT-/lösningskomponenter (10677). Du kan hämta dne här uppgiftsguiden och kopplade exempelfiler från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
+Om du vill veta mer om den här funktionen följer du anvisningarna i avsnittet [(RCS) importerar filer i XML-format med valfria attribut](tasks/import-files-xml-format-optional-attributes.md) som ingår i affärsprocessen 7.5.4.3 Hämta/utveckla IT-/lösningskomponenter (10677). Du kan hämta dne här uppgiftsguiden och kopplade exempelfiler från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 
 | Beskrivning av innehåll       | Fil                                                         |
@@ -36,10 +36,10 @@ Om du vill veta mer om den här funktionen följer du anvisningarna i avsnittet 
 | Uppgiften guide                | RCS Importera filer i XML-format med valfria attribut.axtr |
 
 
-I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa ER-formatkonfiguration att importera filer i XML-format med valfria attribut. För att slutföra dessa steg måste du först slutföra stegen i proceduren [Skapa en konfigurationsleverantör och välj den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md). Innan du börjar hämtar du filen IncomingDocumentToLearnHowToHandleOptionalAttributes.xml från Microsoft Download Center och sparar den lokalt https://go.microsoft.com/fwlink/?linkid=874684.
+I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa ER-formatkonfiguration att importera filer i XML-format med valfria attribut. För att slutföra dessa steg måste du först slutföra stegen i proceduren [Skapa en konfigurationsleverantörer och välj de som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md) Innan du börjar hämtar du filen IncomingDocumentToLearnHowToHandleOptionalAttributes.xml från Microsoft Download Center och sparar den lokalt https://go.microsoft.com/fwlink/?linkid=874684.
 
 1. Gå till **Organisationsadministration** > **Arbetsytor** > **Elektronisk rapportering**.
-2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i avsnittet [Skapa en konfigurationsleverantör och välj den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i ämnet [Skapa konfigurationsleverantörer och välj dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Klicka på **Rapporteringskonfiguration**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Skapa en ny datamodellskonfiguration

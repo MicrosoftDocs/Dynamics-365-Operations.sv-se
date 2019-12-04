@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
-ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
+ms.openlocfilehash: 10d894bb65031741a5ec8365f7f8db76b58ab334
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578494"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2693122"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -39,7 +39,7 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
 
 ![Livscykel för försäljningsorder i samband med DOM](./media/flow.png "Livscykel för försäljningsorder i samband med DOM")
 
-## <a name="set-up-dom"></a>Ställa in DOM
+## <a name="set-up-dom"></a>Ställ in DOM
 
 1. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**.
 2. Expandera noden **Retail** på fliken **Konfigurationsnycklar** och markera kryssrutan **Fördelad orderhantering**.
@@ -112,7 +112,7 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
         \* Om **Uppfyll partiella order** har värdet **Nej** anses **Uppfyll partiella rader** alltid ha värdet **Nej**, oavsett av vilket värde det faktiskt har.
 
 > [!NOTE]
-> I Retail version 10.0.5 har parametern **Uppfyll order från enbart en plats** ändrats till **Maximalt antal uppfyllelseplatser**. I stället för att låta en användare konfigurera om ordrar kan uppfyllas från enbart en plats eller från så många platser som möjligt, kan användarna nu ange om uppfyllelse kan ske från en bestämd uppsättning platser (upp till 5) eller från så många platser som möjligt. Detta ger mer flexibilitet när det gäller antalet platser som ordern kan uppfyllas från.
+> I Retail version 10.0.5 har parametern **Uppfyll order från enbart en plats** ändrats till **Maximalt antal uppfyllelseplatser**. I stället för att låta en användare konfigurera om order kan uppfyllas från enbart en plats eller från så många platser som möjligt, kan användarna nu ange om uppfyllelse kan ske från en bestämd uppsättning platser (upp till 5) eller från så många platser som möjligt. Detta ger mer flexibilitet när det gäller antalet platser som ordern kan uppfyllas från.
 
    - **Platsregel för offline-uppfyllelse** – Med denna regel kan organisationen ange att en plats eller en grupp med platser är offline eller inte tillgänglig för DOM, så att order inte kan tilldelas till dessa platser för uppfyllelse.
     - **Regel för högsta antal avvisningar** – Med denna regel kan organisationen ange ett tröskelvärde för avvisningar. När tröskelvärdet har nåtts märker DOM-processorn en order eller orderrad som ett undantag och utesluter den från ytterligare behandling.
@@ -179,7 +179,7 @@ Vid bearbetningen beaktar DOM ordern och orderraderna enligt beskrivningen här:
 
 När DOM har tillämpat reglerna, lagerbegränsningarna och optimeringarna väljer DOM platsen som är närmast kundens leveransadress.
 
-![Säljorderkriterier](./media/ordercriteria.png "Säljorderkriterier")
+![Villkor för försäljningsorder](./media/ordercriteria.png "Villkor för försäljningsorder")
 
 ## <a name="results-of-dom-runs"></a>Resultat av DOM-körningar
 

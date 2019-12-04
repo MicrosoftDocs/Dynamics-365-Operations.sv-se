@@ -3,7 +3,7 @@ title: Tilldela användare till säkerhetsroller
 description: Om du vill komma åt Finance and Operations-appar måste användarna ha tilldelats säkerhetsroller.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180977"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2808006"
 ---
 # <a name="assign-users-to-security-roles"></a>Tilldela användare till säkerhetsroller
 
@@ -37,6 +37,9 @@ För att kunna använda något annat än vanliga funktioner måste användarna t
 5. Klicka på länken på den valda raden i listan **Namn på medlemskapsregel**.
 6. Klicka på **Redigera fråga**. Redigera frågan, om det behövs.  
 7. Klicka på **OK**.
+8. Klicka på **Kör automatisk rolltilldelning**.
+9. Gå till **Navigeringsfönstret > Moduler > Systemadministration > Användare > Användare** (helst på en separat flik i webbläsaren).
+10. Granska roller tilldelade olika användare för att bekräfta att rolltilldelningsfrågan var korrekt. Justera och kör om om det behövs.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Exkludera användare från automatisk rolltilldelning
 1. Stäng sidan.

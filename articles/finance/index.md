@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 5b5ed05e9c53b17632e94e913f7f3663676c3e91
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570135"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770584"
 ---
 # <a name="financial-management-home-page"></a>Startsidan Ekonomisk styrning
 
@@ -44,8 +44,8 @@ Välj ett funktionsområde för att läsa mer om det.
         - [Utläggshantering](expense-management/expense-management.md)
         - [Ekonomisk rapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
-        - [Redovisning](general-ledger/general-ledger.md) 
-        - [Projekthantering](project-management/overview-project-management-accounting.md)
+        - [Redovisning och ekonomisk rapportering](general-ledger/general-ledger.md) 
+        - [Projekthantering och redovisning](project-management/overview-project-management-accounting.md)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -72,5 +72,5 @@ Regleringar för land/region påverkar momsinställningarna och andra områden i
 
 ### <a name="additional-content"></a>Ytterligare innehåll
 
-Funktionerna för hantering av leveranskedjan omfattar delar av procure-to-pay-processen som inkluderar rekvisition, beställning, mottagning, fakturering och betalning för de varor och tjänster som dina organisation köper. Se hemsidan för [!Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) för information om möjligheterna att hantera inköp, lager och tillverkning. 
+Funktionerna för hantering av leveranskedjan omfattar delar av procure-to-pay-processen som inkluderar rekvisition, beställning, mottagning, fakturering och betalning för de varor och tjänster som dina organisation köper. På [startsidan för Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) för information om möjligheterna att hantera inköp, lager och tillverkning. 
 

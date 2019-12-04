@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191257"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812636"
 ---
 # <a name="before-you-buy"></a>Innan du köper
 
@@ -41,8 +41,8 @@ Följande beaktanden skall vidtas om du väljer ett lokalt distributionsalternat
 
 - Krav på efterlevnad och regler som inte är tillgängliga i molncertifikat
 - Frånkopplad affärsprocess med återkommande Internetanslutning för åtkomst av Microsoft Dynamics Lifecycle Services (LCS) för livscykelhantering av program
-- [Funktioner som inte har implementerats vid lokala distributioner](features-not-implemented-on-prem.md)
-- [Minsta infrastrukturkrav](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [Funktioner som ännu inte har implementerats i lokala distributioner](features-not-implemented-on-prem.md)
+- [Systemkrav för lokala distributioner](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > Lokala distributioner av Microsoft Dynamics 365 for Finance and Operations stöds inte i alla offentliga molnbaserade infrastrukturer, inklusive Azure.
@@ -78,7 +78,7 @@ En Microsoft molnbaserad lösningsleverantör kan samarbeta med dig för att fö
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Köp via en Dynamics-partner (lokal)
 
-Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köpa Dynamics 365 for Finance and Operations (lokalt)](purchase-on-premises.md)
+Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köpa Finance and Operations (on-premises)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Välj ditt stödalternativ
 
@@ -91,7 +91,7 @@ Mer information:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Steg fyra: Lär dig om FastTrack och planera distributionen
 
-Microsoft FastTrack för Dynamics 365 är vår lyckade kundtjänst som är utformad för att hjälpa dig att flytta till Dynamics 365 smidigt och säkert, och ger dig företagsvärde snabbare. När du deltar i programmet FastTrack får du vägledning och metodtips hur du planerar för lyckade installationer. Du får också lära dig att aktivera nya användare och expandera funktioner – allt i din egen takt. Dessutom får du tillgång till Microsofts tekniska resurser som åtagit sig att göra datoranvändningen med Dynamics 365 lyckad. Mer information: [Översikt över Microsoft FastTrack för Dynamics 365](fasttrack-dynamics-365-overview.md)
+Microsoft FastTrack för Dynamics 365 är vår lyckade kundtjänst som är utformad för att hjälpa dig att flytta till Dynamics 365 smidigt och säkert, och ger dig företagsvärde snabbare. När du deltar i programmet FastTrack får du vägledning och metodtips hur du planerar för lyckade installationer. Du får också lära dig att aktivera nya användare och expandera funktioner – allt i din egen takt. Dessutom får du tillgång till Microsofts tekniska resurser som åtagit sig att göra datoranvändningen med Dynamics 365 lyckad. Mer information: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Om du uppgraderar från Dynamics AX 2012 eller migrerar från AX 2009
 

@@ -1,9 +1,9 @@
 ---
-title: Registrera serienummer i försäljningsprocessen
+title: Arbeta med serialiserade artiklar
 description: Det här ämnet beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans.
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d655015a2048bb8e7d85d8ea3679b8b2506caf10
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: d37d308eab1d29cd014599a3f812b1ee1ca49ea1
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572116"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2695039"
 ---
-# <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i försäljningsprocessen
+# <a name="working-with-serialized-items"></a>Arbeta med serialiserade artiklar
 
 [!include [banner](../includes/banner.md)]
 

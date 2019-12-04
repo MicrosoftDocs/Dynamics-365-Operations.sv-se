@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a27f5ecdb4d4903ac0b76c5682ea7f9ab0d8c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2176096"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772592"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startsidan för kassa- och bankhantering
 
@@ -49,36 +49,36 @@ Dessa instrument inkluderar insättningskvitton, checkar, växlar och skuldsedla
 ### <a name="bank-reconciliation"></a>Bankavstämning
 
 -   [Översikt över avancerad bankavstämning](advanced-bank-reconciliation-overview.md)
--   [Konfigurera avancerad bankavstämning](configure-advanced-bank-reconciliation.md)
--   [Ställ in avancerad import av bankavstämning](set-up-advanced-bank-reconciliation-import-process.md)
--   [Stämma av bankutdrag med hjälp av avancerad bankavstämning](reconcile-bank-statements-advanced-bank-reconciliation.md)
+-   [Inställningsprocess för avancerad bankavstämning](configure-advanced-bank-reconciliation.md)
+-   [Ställ in import av avancerad bankavstämning](set-up-advanced-bank-reconciliation-import-process.md)
+-   [Stäm av bankutdrag med hjälp av avancerad bankavstämning](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [Ställa in matchningsregler för bankavstämning](set-up-bank-reconciliation-matching-rules.md)
 
 
 ## <a name="accounts-payable-payments-and-settlements"></a>Leverantörsreskontrabetalningar och -kvittningar
 -   [Centraliserade leverantörsreskontrabetalningar](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Skapa leverantörsfakturor med ett betalningsförslag](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Skapa leverantörsbetalningar med ett betalningsförslag](../accounts-payable/create-vendor-payments-payment-proposal.md)
 -   [Återför en leverantörsbetalning](../accounts-payable/reverse-vendor-payment.md)
 -   [Leverantörsbetalningar för ett delbelopp](../accounts-payable/vendor-payments-partial-amount.md)
--   [Översikt över förskottsfakturor och förskottsbetalningar](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Scenario: Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning före rabattdatumet](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Scenario: Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Kvitta en leverantörsdelbetalning som har rabatter på leverantörkreditfakturor](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Scenario: Kvitta en leverantörsdelbetalning som har flera rabattperioder](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Scenario: Ta en rabatt som är högre än den beräknade rabatten för en leverantörsbetalning](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Scenario: Ta en kassarabatt utanför kassarabattperioden](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [Förskottsfakturor kontra förskottsbetalningar](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Kvitta en leverantörsdelbetalning med hela slutbetalningen före rabattdatumet](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Kvitta en leverantörsdelbetalning som har rabatter på leverantörskreditfakturor](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Kvitta en leverantörsdelbetalning som har flera rabattperioder](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Ta en rabatt som är högre än den beräknade rabatten för en leverantörsbetalning](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Ta en kassarabatt utanför kassarabattperioden](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Kundreskontrabetalningar och -kvittningar
 -   [Centraliserade kundreskontrabetalningar](../accounts-receivable/centralized-payments-accounts-receivable.md)
 -   [Kundbetalningar för ett delbelopp](../accounts-receivable/customer-payments-partial-amount.md)
 -   [Återbetala kunder](../accounts-receivable/reimburse-customers.md)
--   [Scenario: Automatisk kvittning och prioritering](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Scenario: Hantera kassarabatt för överbetalningar](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Scenario: Kvitta en kundbetalning före rabattdatumet med en slutbetalning före rabattdatumet](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Scenario: Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Scenario: Kvitta en kunddelbetalning som har rabatter på kreditfakturor](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Scenario: Kvitta en kunddelbetalning som har flera rabattperioder](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Scenario: Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Automatisk kvittning och prioritering](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Hantera kassarabatt för överbetalningar](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Kvitta en kunddelbetalning med hela slutbetalningen före rabattdatumet](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Kvitta en kunddelbetalning som har rabatter på kreditfakturor](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Kvitta en kunddelbetalning som har flera rabattperioder](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 
@@ -86,7 +86,7 @@ Dessa instrument inkluderar insättningskvitton, checkar, växlar och skuldsedla
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till Viktig information om [Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
+Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
 
 #### <a name="blogs"></a>Bloggar
 

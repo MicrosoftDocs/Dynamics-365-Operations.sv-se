@@ -1,6 +1,6 @@
 ---
-title: Intelligenta rekommendationer
-description: Det här avsnittet beskriver hur du kan använda maskininlärning för att ge rekommendationer för jobb och jobbsökande.
+title: Intelligenta rekommendationer i Attract
+description: Det här avsnittet beskriver hur du kan använda maskininlärning för att ge rekommendationer för jobb och jobbsökande i Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741762"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832801"
 ---
-# <a name="intelligent-recommendations"></a>Intelligenta rekommendationer
+# <a name="intelligent-recommendations-in-attract"></a>Intelligenta rekommendationer i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Maskininlärning kan hjälpa rekryterare och personalchefer att snabbt identifiera de bästa kandidaterna för en befattning. Den kan också hjälpa potentiella kandidater att hitta en befattning som passar deras profil och intressen. När dessa funktioner används och feedback ges förbättras rekommendationer.
 
 > [!NOTE] 
 > - Funktionerna för intelligent rekommendation finns endast med [tillägget för omfattande anställning](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationscenter** i Attract. Ange **Kandidatrekommendation**, **Jobbrekommendation** och **Rekommendation av potentiell kandidat** till **på**. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](./access-preview-feature.md). 
+> - Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationscenter** i Attract. Ange **Kandidatrekommendation**, **Jobbrekommendation** och **Rekommendation av potentiell kandidat** till **på**. Mer information finns i [Få åtkomst till förhandsfunktioner i Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Kandidatrekommendationer

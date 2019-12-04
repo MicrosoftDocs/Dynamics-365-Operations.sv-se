@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 8d94cf24040e5f653bc053f2df0a45e1afa23adc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6405b6a680f31c62e16f3bb707ec0a4ccdad3d23
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519140"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813924"
 ---
 # <a name="design-questionnaires"></a>Utforma enkäter
 
@@ -110,7 +110,8 @@ Svarsgrupper och svar är komponenter som utgör det huvudsakliga informationsma
 
 Samma svarsgrupp kan användas för fler frågor i samma enkät och den kan också användas i flera enkäter. 
 
-**Anm.** Om du ändrar svarstext i svarsgrupper som redan har använts i ifyllda enkäter kan bli data svåra att utvärdera och enkätresultat gäller kanske inte längre. Om du måste ändra en svarsgrupp, bör du vill skapa en ny svarsgrupp i stället för att ändra en befintlig. Du kan inte radera svarsgrupper som har kopplats till en fråga eller ett svar eller som har besvarats.
+> [!NOTE]
+> Om du ändrar svarstext i svarsgrupper som redan har använts i ifyllda enkäter kan bli data svåra att utvärdera och enkätresultat gäller kanske inte längre. Om du måste ändra en svarsgrupp, bör du vill skapa en ny svarsgrupp i stället för att ändra en befintlig. Du kan inte radera svarsgrupper som har kopplats till en fråga eller ett svar eller som har besvarats.
 
 ### <a name="questions"></a>Frågor
 
@@ -118,12 +119,16 @@ En enkät måste innehålla frågor. Frågor kan vara antingen öppna eller stä
 
 -   Svaren för öppna frågor kontrolleras inte och svarande kan skriva in sina svar.
 -   Stänga frågor kräver en lista med fördefinierade svarsalternativ och frågorna kan struktureras för att tillåta att svaranden väljer flera svar. Frågor bör utformas för att få fram specifik information från en svarande och måste vara länkade till en svarsgrupp som innehåller svarsalternativen för varje stängd fråga. 
-     -  **Anm.:** Innan du kan skapa stängda frågor måste du skapa svarsgrupper och svar.
+
+    > [!NOTE]
+    > Innan du kan skapa stängda frågor måste du skapa svarsgrupper och svar.
 
 Frågor kan grupperas i en villkorsstyrd frågehierarki så att sekundära frågor beror på svaren som den svarande valde för föregående fråga. Du kan skriva frågorna först och sedan flytta ordna dem till en hierarki senare.
 
 ## <a name="setting-up-questionnaires"></a>Ställa in enkäter
-**Anm.:** Innan du kan ställa in en enkät måste du skapa frågor, svar och förutsättningar. 
+
+> [!NOTE]
+> Innan du kan ställa in en enkät måste du skapa frågor, svar och förutsättningar. 
 
 För varje enkät kan du ange följande information:
 
@@ -159,7 +164,8 @@ På sidan **Enkäter** kan du utföra följande uppgifter:
 -   Radera och lägga till frågor.
 -   Göra ändringar i resultgrupperna och sekvensnummer. 
 
-**Varning:** Var försiktig när du ändrar enkäter som redan har besvarats. Ändringar kan minska noggrannheten i statistiken och gör dem till dålig grund för utvärdering. Överväg att hellre skapa en ny fråga istället för att ändra en fråga som redan har besvarats.
+> [!CAUTION]
+> Var försiktig när du ändrar enkäter som redan har besvarats. Ändringar kan minska noggrannheten i statistiken och gör dem till dålig grund för utvärdering. Överväg att hellre skapa en ny fråga istället för att ändra en fråga som redan har besvarats.
 
 I en enkät kan du inte ta bort följande typer av frågor:
 
@@ -177,7 +183,8 @@ En resultatgrupp används för att beräkna poäng och kategorisera resultaten f
 -   Skapa statistik för varje resultatgrupp som hjälper dig att analysera resultaten.
 -   Skriv ut en rapport som visar resultat för varje resultatgrupp och valfria poäng/texter som baseras på poäng som erhållits i varje resultatgrupp.
 
-**Anm.:** Innan du kan ställa in resultatgrupper måste du utföra följande uppgifter:
+> [!NOTE]
+> Innan du kan ställa in resultatgrupper måste du utföra följande uppgifter:
 
 -   Skapa stängda frågor. För stängd fråga måste ange indatatypen på sidan **Frågor** vara **Kryssruta**, **Alternativknapp** eller **Kombinationsruta**.
 -   Definiera poäng för svaren i svarsgrupperna som är tilldelade till varje fråga.
@@ -187,7 +194,8 @@ Bifoga frågor till en enkät genom att använda resultatgrupper, genom att för
 
 Du kan ställa in resultatgrupper för att bedöma hur många poäng som en svarande har i varje kategori. När en enkät har slutförts kan du visa hur många poäng som har uppnåtts för varje resultatgrupp. 
 
-**Tips:** Om du vill utvärdera en enkät genom att använda poäng men inte separata kategorier, kan du lägga till alla frågor i en enskild resultatgrupp. 
+> [!TIP]
+> Om du vill utvärdera en enkät genom att använda poäng men inte separata kategorier, kan du lägga till alla frågor i en enskild resultatgrupp. 
 
 För varje resultatgrupp kan du även skapa en eller flera poängbaserade meddelanden som svarande får när de har fyllt i en enkät. Texten som visas kan variera beroende på poängen som en svarande får i en resultatgrupp. Använd poängbaserade meddelanden genom att definiera poängintervall och en beskrivning av varje intervall. När en svarande uppnår en poäng i ett speciellt intervall inkluderas texten för det intervallet i resultatrapporten. 
 
@@ -213,13 +221,15 @@ Följande tabell visar de poängbaserade meddelanden som du definierar i resulta
 
 Du kan ställa in poängintervall och texter för varje resultatgrupp i en enkät. Texter som motsvarar respektive svarandes poäng visas för varje resultatgrupp. 
 
-**Anm.:** Du kan ändra intervall och texter. Om en enkät har fyllts i kan dock ändringar orsaka skillnader mellan föregående och nya resultatrapporter.
+> [!NOTE]
+> Du kan ändra intervall och texter. Om en enkät har fyllts i kan dock ändringar orsaka skillnader mellan föregående och nya resultatrapporter.
 
 ### <a name="conditional-question-hierarchies"></a>Hierarkier med villkorsfrågor
 
 Hierarkier med villkorsfrågor är valfria när du skapar en enkät. 
 
-**Anm.:** Innan du kan skapa en hierarki för villkorsfrågor måste du koppla frågor som har tilldelade svarsgrupper till enkäten. 
+> [!NOTE]
+> Innan du kan skapa en hierarki för villkorsfrågor måste du koppla frågor som har tilldelade svarsgrupper till enkäten. 
 
 Villkorsfrågor gör det möjligt att skapa en frågehierarki i en enkät och skapa en ordningsföljd för hur frågorna presenteras beroende på hur svaret den svarande valde för varje fråga. Genom att på detta sätt basera frågesekvensen på svaren kan du ändra enkäten medan den svarande svarar på den.
 
@@ -232,9 +242,9 @@ Alternativt kan du skapa en enkät så att om den svarande väljer Svar A på fr
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Använda enkäter](questionnaires.md)
+[Enkäter](questionnaires.md)
 
-[Distribuera och slutföra enkäter](distribute-questionnaires.md)
+[Skicka ut och schemalägg enkäter](distribute-questionnaires.md)
 
-[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+[Visa och utvärdera resultaten av enkäter](evaluate-questionnaire-results.md)
 

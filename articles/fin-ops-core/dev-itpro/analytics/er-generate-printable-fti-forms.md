@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181437"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771293"
 ---
 # <a name="generate-printable-fti-forms"></a>Skapa utskrivbara FTI-formulär
 
@@ -41,7 +41,7 @@ Förutom den redan befintliga möjligheten att skapa utskrivbara formulär genom
 Som en del av en anpassad lösning för utskrivbara FTI-formulär måste du skapa en uppsättning ER-konfigurationer.
 
 ### <a name="configure-the-er-data-model"></a>Konfigurera ER-datamodellen
-Programmet måste innehålla den ER-datamodellkonfiguration som innehåller en datamodell som beskriver företagsdomänen för kundfakturering. Som ett krav måste vara namnet på datamodellen vara **Kundfakturering**. För information om hur du utformar ER-datamodeller, se [Designa en domänspecifik datamodell för elektronisk rapportering (ER)](tasks/er-design-domain-specific-data-model-2016-11.md).
+Programmet måste innehålla den ER-datamodellkonfiguration som innehåller en datamodell som beskriver företagsdomänen för kundfakturering. Som ett krav måste vara namnet på datamodellen vara **Kundfakturering**. För information om hur du utformar ER-datamodeller, se [ER Designa en domänspecifik datamodell](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### <a name="configure-the-er-model-mapping"></a>Konfigurera mappningen för ER-datamodellen
 Ditt program måste innehålla ER-modellmappningen för datamodellen Kundfakturering. Modellmappningen kan vara antingen ER-datamodellkonfigurationen eller konfigurationen för ER-modellmappningen. Namnet på modellmappningens rotbeskrivning måste emellertid vara **Fritextfaktura**.
@@ -62,7 +62,7 @@ Mappningen måste innehålla följande datakällor:
 
 Information om programintegration med ER-ramverket finns i klassen **ERUtskrHantRapportformatPrenumerant** (integreringsmodellen för ER-programsviten) i programmets källkod.
 
-För mer information om utformningen av ER-modellmappningarna, se [Definiera modellmappning och välj datakällor för elektronisk rapporter (ER)](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+För mer information om utformningen av ER-modellmappningarna, se [Definiera ER-modellmappningar och välj datakällor för dem](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### <a name="configure-the-er-format"></a>Konfigurera ER-formatet
 I din programinstans behöver du den ER-formatkonfiguration som ska användas för att generera FTI-formulär. 
@@ -70,7 +70,7 @@ I din programinstans behöver du den ER-formatkonfiguration som ska användas f�
 > [!NOTE]
 > Denna formatkonfiguration måste skapas för datamodellen Kundfakturering och måste använda den modellmappning som har rotbeskrivningen **Fritextfaktura**.
 
-Information om hur du konfigurerar-ER format finns i [Skapa en formatkonfiguration för elektronisk rapportering (ER)](tasks/er-format-configuration-2016-11.md). Information om hur du utformar ER-format för att skapa rapporter i OpenXML-format finns i [Designa en konfiguration för att generera rapporter i OpenXML-format för elektronisk rapportering (ER)](tasks/er-design-reports-openxml-2016-11.md).
+Information om hur du konfigurerar-ER format finns i [ER Skapa en formatkonfiguration (november 2016)](tasks/er-format-configuration-2016-11.md). Information om hur du utformar ER-format för att skapa rapporter i OpenXML-format finns i [ER Designa en konfiguration för att generera rapporter i OPENXML-format (november 2016)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="configure-print-management"></a>Konfigurera utskriftshantering
 Om du vill generera FTI-formulär genom att använda ER-ramverket kan du tilldela ER-format på samma sätt som du tilldelar SSRS-rapporter. Om du vill associera ER_format med samtliga FTI för kundreskontra, gå till **Kundreskontra** \> **Inställningar** \> **Formulär** \> **Formulärinställningar** \> **Allmänt** \> **Utskriftshantering** \> **Fritextfaktura** \> **Original**. Följ dessa steg om du vill koppla ER-formatet till en viss kund eller faktura.
@@ -224,4 +224,4 @@ Uttrycket **Emailing.TxtToUse.Body** för provformatet konfigureras för följan
 ![E-postadress](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Översikt över elektronisk rapportering](general-electronic-reporting.md)
+[Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251372"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814085"
 ---
 # <a name="prospect-to-cash"></a>Prospekt till kontanter
 
@@ -36,12 +36,12 @@ För mer information om integration av funktionen potentiell kund till kontanter
 
 I den aktuella versionen innehåller lösningen Potentiell kund till pengar följande typer av direktsynkronisering:
 
-- [Underhåll konton i Sales och synkronisera dem direkt från Sales till Supply Chain Management](accounts-template-mapping-direct.md)
-- [Underhåll produkter i Supply Chain Management och synkronisera dem direkt till Sales](products-template-mapping-direct.md)
-- [Behåll kontakter i Sales och synkronisera dem direkt till kontakter i Supply Chain Management](contacts-template-mapping-direct.md)
-- [Synkronisera försäljningsofferter direkt från Sales till Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
+- [Synkronisera konton direkt från Sales till kunder i Supply Chain Management](accounts-template-mapping-direct.md)
+- [Synkronisera produkter direkt från Supply Chain Management till produkter i Sales](products-template-mapping-direct.md)
+- [Synkronisera kontakter direkt från Sales till kontakter i Supply Chain Management](contacts-template-mapping-direct.md)
+- [Synkronisera försäljningsoffertrubriker och rader direkt från Sales till Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
 - [Synkronisering av försäljningsorder direkt mellan Sales och Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-- [Synkronisera försäljningsfaktura direkt från Supply Chain Management till Sales](sales-invoice-template-mapping-direct.md)
+- [Synkronisera huvuden och rader i försäljningsfakturor direkt från Supply Chain Management till Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>System krav för hantering av Supply Chain Management
 Potentiell kund till kontanter-integrering stöds på följande versioner:

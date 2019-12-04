@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552960"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812774"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Välkommen till Dynamics 365 Talent
 
@@ -52,11 +52,11 @@ Utforska Dynamics 365 Talent genom att titta videon [Hur du kommer igång med Dy
 
 När du arbetar med Talent bestämmer du hur organisationen struktureras med hjälp av element, till exempel avdelningar, jobb och befattningar. De är de grundläggande elementen som konfigureras. Enskilda medarbetare tilldelas till befattningar som är associerade med jobb.
 
--   [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](departments-jobs-positions.md)
--   [Ställa in företagsspecifika personalparametrar](set-up-company-specific-hr-parameters.md)
+-   [Organisera personalen efter avdelningar, jobb och befattningar](departments-jobs-positions.md)
+-   [Ställ in företagsspecifika personalparametrar](set-up-company-specific-hr-parameters.md)
 -   [Ställa in personalparametrar hos juridiska personer](set-up-hr-parameters-across-legal-entities.md) 
 -   [Vanliga frågor och svar om personalåtgärder](personnel-actions-faq.md)
--   [Översikt över tjänstledighet och frånvaro](leave-absence-overview.md)
+-   [Hantering av tjänstledighet och frånvaro](leave-absence-overview.md)
 -   [Hur du använder Dynamics 365 Talent: Tjänstledighet och frånvaro (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Hur du hanterar personal i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,8 +64,8 @@ När du arbetar med Talent bestämmer du hur organisationen struktureras med hj�
 
 I Talent ingår Attract som hjälper dig att identifiera, intervjua och anställa kandidater som har den kompetens din organisation behöver. När du går vidare från rekrytering till anställning får du med appen Onboard hjälp att introducera nyanställda i organisationen genom att ställa upp korrekta förväntningar, tillhandahålla information de behöver för att komma igång, sätta dem i kontakt med kolleger och skapa bra förutsättningar för dem i deras nya roller.  
 
-- [Översikt över Attract](attract-overview.md)
-- [Översikt över Onboard](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent – Funktioner och möjligheter i Attract](attract-overview.md)
+- [Kom igång med Onboard](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Behålla och motivera medarbetare
 
@@ -81,18 +81,18 @@ Du kan skapa planer som effektivt och rättvist hanterar såväl kompensation so
 
 För att hjälpa personalen att uppnå karriärsmålen samtidigt som vi tillhandahåller viktiga affärsbehov kan du ställa in mål, skapa prestationsgranskning och spåra feedback. För att hjälpa anställda att skaffa nödvändiga kompetenser, kan du ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en instruktör till en kurs eller anmäler någon till en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
 
--   [Prestandahantering](performance-management-overview.md)
--   [Justera personalens kompetenser och affärsbehov](skills.md)
--   [Administrera utbildning genom kurser](courses.md)
+-   [Prestationshantering](performance-management-overview.md)
+-   [Anpassa personalens kompetens efter affärsbehov](skills.md)
+-   [Skapa utbildningar](courses.md)
 -   [Hur du hanterar medarbetarnas utveckling i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Skapa och underhålla förmåner
 
 Utöver att kompensera din personal i form av löner och bonusar går det att utforma ett förmånsprogram där exempelvis sjuk- eller pensionsförsäkring ingår. Det går även att hantera förmåner såsom låneprogram, där företaget lånar ut objekt såsom datorer eller telefoner till sina anställda.
 
--   [Hantera ett förmånsprogram](manage-benefit-program.md)
+-   [Definiera och hantera ett förmånsprogram](manage-benefit-program.md)
 -   [Policyer för förmånsberättigande](benefit-eligibility-policies.md)
--   [Hantera artiklar utlånade till arbetare](loan-items.md)
+-   [Hantera artiklar som lånas ut till medarbetare](loan-items.md)
 -   [Hur du hanterar medarbetarnas förmåner i Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
@@ -107,6 +107,6 @@ Med Talent går det att upprätthålla en säker arbetsmiljö som överensstämm
 Det går att utforma och dela ut enkäter för att samla in information används för olika ändamål. Funktionen Enkät gör det möjligt att utforma och skapa enkäter. När en enkät är klar går den att distribuera till alla eller till en viss svarsgrupp. När de svarande lämnar in svaren går resultaten att granska och analysera.
 
 -   [Enkäter](questionnaires.md)
--   [Utforma en enkät](design-questionnaires.md)
--   [Distribuera och slutföra en enkät](distribute-questionnaires.md)
--   [Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+-   [Utforma enkäter](design-questionnaires.md)
+-   [Skicka ut och schemalägg enkäter](distribute-questionnaires.md)
+-   [Visa och utvärdera resultaten av enkäter](evaluate-questionnaire-results.md)
