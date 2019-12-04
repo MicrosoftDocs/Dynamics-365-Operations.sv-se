@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025063"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811203"
 ---
 # <a name="retail-peripherals"></a>Butikskringutrustning
 
@@ -35,11 +35,17 @@ Det här avsnittet förklarar koncepten som är relaterade till kringutrustning 
 
 ### <a name="pos-registers"></a>Kassaregister
 
-Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaapparat**. Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av kassan. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning i butik som ska användas i kassan, butiken som kassan har mappats till och den visuella upplevelsen när användare loggar in på den kassan.
+Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaapparat**. 
+
+Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av kassan. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning i butik som ska användas i kassan, butiken som kassan har mappats till och den visuella upplevelsen när användare loggar in på den kassan.
 
 ### <a name="devices"></a>Enheter
 
-Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Enheter**. En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till ett kassaregister. När en enhet skapas är den mappad till ett kassaregister. Enhetsentiteten spårar information om när ett kassaregister aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. Enheter som kan mappas till följande programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone Retail Modern POS - Android och Retail Modern POS – iOS.
+Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Enheter**. 
+
+En enhet är en entitet som representerar en fysisk instans av en enhet som är mappad till ett kassaregister. När en enhet skapas är den mappad till ett kassaregister. Enhetsentiteten spårar information om när ett kassaregister aktiveras, vilken typ av klient som används och programpaketet som har distribuerats till en viss enhet. 
+
+Enheter som kan mappas till följande programtyper: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone Retail Modern POS - Android och Retail Modern POS – iOS.
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ Kringutrustning för kassa är enheter som uttryckligen har stöd för kassafunk
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigering: Klicka på **Butik** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. Markera en butik och klicka på snabbfliken **Maskinvarustationer**. Inställningen **Maskinvarustation** är en inställning på kanalnivå som används för att definiera instanser där logiken för kringutrustning i butik ska distribueras. Inställningen på kanalnivå används för att bestämma egenskaperna hos maskinvarustationen. Den används också för att lista maskinvarustationer som är tillgängliga för en Modern POS-instans i en viss butik. Maskinvarustationen ingår i Modern POS-programmet för Windows. Maskinvarustationen kan också distribueras separat som ett fristående Microsoft Internet Information Services-program (IIS). I detta fall får du åtkomst till det via ett nätverk.
+Navigering: Klicka på **Butik** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. 
+
+Markera en butik och klicka på snabbfliken **Maskinvarustationer**. Inställningen **Maskinvarustation** är en inställning på kanalnivå som används för att definiera instanser där logiken för kringutrustning i butik ska distribueras. Inställningen på kanalnivå används för att bestämma egenskaperna hos maskinvarustationen. Den används också för att lista maskinvarustationer som är tillgängliga för en Modern POS-instans i en viss butik. Maskinvarustationen ingår i Modern POS-programmet för Windows. Maskinvarustationen kan också distribueras separat som ett fristående Microsoft Internet Information Services-program (IIS). I detta fall får du åtkomst till det via ett nätverk.
 
 ### <a name="hardware-profile"></a>Maskinvaruprofil
 
-Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**. Maskinvaruprofilen är en lista över enheter som är konfigurerade för ett kassaregister eller en maskinvarustation. Maskinvaruprofilen kan mappas direkt till ett kassaregister eller till en maskinvarustation.
+Navigering: Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**. 
+
+Maskinvaruprofilen är en lista över enheter som är konfigurerade för ett kassaregister eller en maskinvarustation. Maskinvaruprofilen kan mappas direkt till ett kassaregister eller till en maskinvarustation.
 
 ## <a name="devices-classes"></a>Enhetsklasser
 Kringutrustning för kassa är vanligtvis uppdelade i klasser. Det här avsnittet beskriver och ger en översikt över enheterna som stödjer Modern POS.
@@ -206,7 +216,7 @@ För mer information se [Konfiguration och installation av Retail hardware stati
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS för Windows-installation och konfiguration
 
-Mer information om [Retail Modern POS inställning och konfiguration finns i](retail-modern-pos-device-activation.md).
+För information, se [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS inställning och konfiguration av enheter
 
@@ -523,7 +533,7 @@ Nätverkskringutrustning kan användas direkt via maskinvarustationen som ingår
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguration för scenarier som stöds
 
-Mer information om hur du skapar maskinvaruprofiler finns i [definiera och underhålla kanalklienter såsom register och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md).
+Mer information om hur du skapar maskinvaruprofiler finns i [ansluta kringutrustning till kassan (POS)](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
 > För Retail version 1611, maskinvarustationprofilen används inte längre. Attribut som du tidigare skapat i maskinvaruprofilstation ingår nu i själva maskinvarustationen.
@@ -567,7 +577,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som har en 
 5. Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 6. Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 7. Installation av maskinvarustation. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
-8. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns si [Retail Modern POS konfiguration och installation](retail-modern-pos-device-activation.md).
+8. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns i [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9. Logga in i Modern POS och markera **Utföra en åtgärd som inte är en lådåtgärd**.
 10. Starta åtgärden **hantera maskinvarustationer**.
 11. Klicka på **Hantera**.
@@ -596,7 +606,7 @@ Den här konfigurationen kan användas för alla Modern POS-klienter som delar m
 6. Välj distributionsschema **1090** för att synkronisera den nya maskinvaruprofilen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 7. Välj distributionsschema **1040** för att synkronisera den nya maskinvarustationen till butiken. Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 8. Installera maskinvarustationen på varje värddator som du angav i steg 2 och 3. Mer information om hur du installerar maskinvarustationen finns [Konfiguration och installation av Retail hardware station](retail-hardware-station-configuration-installation.md).
-9. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns si [Retail Modern POS konfiguration och installation](retail-modern-pos-device-activation.md).
+9. Installera och aktivera Modern POS. Mer information om hur du installerar Modern POS finns i [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Logga in i Modern POS och markera **Utföra en åtgärd som inte är en lådåtgärd**.
 11. Starta åtgärden **hantera maskinvarustationer**.
 12. Klicka på **Hantera**.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653612"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815305"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
@@ -218,7 +218,7 @@ Om du använder försändelselager, kan leverantörerna använda gränssnittet f
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>Arbeta med anbudsförfrågningar när du använder leverantörssamarbete
 
-Det här avsnittet beskriver interaktioner mellan kunder och leverantörer vid anbudsförfråganprocessen. Här förklaras också hur information skickas till leverantörerna. En grundläggande översikt över stödet för anbudsförfråganprocessen finns i [Anbudsförfrågningar](request-quotations.md).
+Det här avsnittet beskriver interaktioner mellan kunder och leverantörer vid anbudsförfråganprocessen. Här förklaras också hur information skickas till leverantörerna. En grundläggande översikt över stödet för anbudsförfråganprocessen finns i [Anbudsförfrågningar (RFQ) - översikt](request-quotations.md).
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>Alternativ, bilagor, ändringar och returer
 

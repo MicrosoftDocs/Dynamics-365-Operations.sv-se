@@ -1,5 +1,5 @@
 ---
-title: Vilken version av Microsoft Dynamics 365 Talent - Attract
+title: Välj en version av Attract
 description: Det här avsnittet innehåller information om funktionerna i olika versioner av Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 54f206aed196be5bbfa0de5b632f20519c2680ea
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 701ce0d710c20deb793534581c276edf02426a4b
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550446"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833171"
 ---
-# <a name="which-version-of-microsoft-dynamics-365-talent---attract"></a>Vilken version av Microsoft Dynamics 365 Talent - Attract
+# <a name="choose-a-version-of-attract"></a>Välj en version av Attract
 
-[!include[banner](../includes/banner.md)]
+[[!include [banner](includes/banner.md)]
 
 Versionen av Microsoft Dynamics 365 Talent: Attract som är rätt för dig beror på organisationens storlek och behov. Grundversionen av Attract innehåller en uppsättning funktioner som vänder sig till mindre arbetsgrupper eller organisationer där den anställande chefen är den primära användaren. Du kan börja använda grundversionen av Attract med en eller flera licenser.
 

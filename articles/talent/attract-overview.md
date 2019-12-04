@@ -1,5 +1,5 @@
 ---
-title: Funktioner och möjligheter i Microsoft Dynamics 365 Talent - Attract
+title: Funktioner och möjligheter i Attract
 description: Här beskrivs funktionerna som Microsoft Dynamics 365 Talent - Attract tillhandahåller för att hantera processen med att anställa nya användare.
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552081"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833079"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Funktioner och möjligheter i Microsoft Dynamics 365 Talent - Attract
+# <a name="attract-features-and-capabilities"></a>Funktioner och möjligheter i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Attract innehåller en fördefinierad rekryteringsprocess som har fyra grundläg
 Så fort de har lagts till i ett jobb får kandidaterna ett e-postmeddelande som inkluderar en länk för att hämta webbappen. Appen ger information om jobbet och används för att kommunicera med rekryteringsteamet. De sökande kan även använda det för att registrera sin tillgänglighet för intervjuer.
 
 ## <a name="analytic-reports"></a>Analysrapporter
-Anställningsgrupper kan använda mätvärden för anställningsprocess för ett enskilt jobb eller aggregeras för all ajobb med [analysrapport u Attract](analytic-reports.md). Den här funktionen är i [förhandsgranskning](access-preview-feature.md) för kunder emd [Tillägget för omfattande anställning](attract-comprehensive-hiring.md).
+Anställningsgrupper kan använda mätvärden för anställningsprocess för ett enskilt jobb eller aggregeras för all ajobb med [analysrapport u Attract](analytic-reports.md). Den här funktionen är för närvarande i [förhandsversion](access-preview-feature.md) för kunder med [Vilken version av Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).

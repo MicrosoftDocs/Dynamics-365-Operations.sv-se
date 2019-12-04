@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658700"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812003"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Borttagna eller föråldrade funktioner för Finance and Operations
 
@@ -348,7 +348,7 @@ Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa 
 | **Status**                         |Borttagen från den 15 februari 2018. Detta påverkar kunder som kör Dynamics 365 for Operations 1611 och senare.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Utökning av listan över elektronisk rapportering (ER)
-Möjligheten att införa anpassade funktioner som ska användas i ER uttrycksverktyget (mer information finns i [utöka listan med elektroniska rapportfunktioner](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) stöds inte längre. På grund av förändringar av ER API:er, blev API:n för att anropa inbyggda funktioner från ER uttrycksverktyget intern och kan inte längre utökas.
+Möjligheten att införa anpassade funktioner som ska användas i ER uttrycksverktyget (mer information finns i [utöka listan med elektroniska rapportfunktioner (ER)](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) stöds inte längre. På grund av förändringar av ER API:er, blev API:n för att anropa inbyggda funktioner från ER uttrycksverktyget intern och kan inte längre utökas.
 
 |   |  |
 |------------|--------------------|
@@ -474,7 +474,7 @@ Warehouse mobile devices portalen (WMDP) är en fristående komponent som är av
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Dubblettfunktion.       |
-| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations - Lagerhållning](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Ersatt av en annan funktion?**   | Ja. Den här funktionen har ersatts av Finance and Operations - lagring. Mer information om inställningar, och förutsättningar finns i [Installera och konfigurera lagerstyrningsappen - översikt](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Produktområden som påverkas**         | Lager- och transporthantering     |
 | **Distribueringsalternativ**              | Warehouse mobile devices portalen (WMDP) är en fristående komponent som är avsedd för eget lokal distribution.               |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q4 2019.   |
@@ -1244,7 +1244,7 @@ Product Builder användes för att dynamiskt konfigurera artiklar från en förs
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Product Builder exponerade X++-kod till slutanvändare och stöds inte i den aktuella versionen av Dynamics AX. Den har tagits bort för att undvika dubbelt underhållsarbete med överlappande, ansenliga kodbaser.  |
-| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [skapa en modell för produktkonfiguration](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Ersatt av en annan funktion?**   | Ja. Begränsningsbaserad konfiguration infördes i Dynamics AX 2012 där avskrivningen av Product Builder i kommande versioner har tillkännagivits. Den begränsningsbaserade konfigurationstekniken väljs på produktmallarna för att möjliggöra konfigurationen. Mer information finns i [Produktkonfiguration - översikt](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Produktområden som påverkas**         | Produktinformationshantering, Försäljning och marknadsföring  |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.      |
 

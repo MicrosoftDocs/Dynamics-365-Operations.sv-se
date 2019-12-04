@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577910"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811175"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Ställ in räkenskapsintegration för butikskanaler
 
@@ -210,7 +210,7 @@ Alternativ för felhantering som finns tillgängliga i räkenskapsintegration st
 
 För att aktivera räkenskapsrapporter X/Z att köras från kassan, bör du lägga till nya knappar i kassalayouten.
 
-- På sidan **knapprutnät**, följer du instruktionerna i [lägga till knappen anpassad åtgärd till kassalayouten i Butik administration](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) för att installera designern och uppdatera en kassalayout.
+- På sidan **knapprutnät**, följer du instruktionerna i [lägga till kassaåtgärder till kassalayouter med knappsatsdesigner](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) för att installera designern och uppdatera en kassalayout.
 
     1. Välj layout som ska uppdateras. 
     2. Lägg till en ny knapp och ange knappegenskapen **Skriv ut skatt X**.
@@ -221,7 +221,7 @@ För att aktivera räkenskapsrapporter X/Z att köras från kassan, bör du läg
 
 Om du vill aktivera manuell körning av en senarelagd räkenskapsregistrering bör du lägga till en ny knapp till en kassalayout.
 
-- På sidan **knapprutnät**, följer du instruktionerna i [lägga till knappen anpassad åtgärd till kassalayouten i Butik administration](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) för att installera designern och uppdatera en kassalayout.
+- På sidan **knapprutnät**, följer du instruktionerna i [lägga till kassaåtgärder till kassalayouter med knappsatsdesigner](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) för att installera designern och uppdatera en kassalayout.
 
     1. Välj layout som ska uppdateras.
     2. Lägg till en ny knapp och ange knappegenskapen **Slutför räkenskapsregistreringsprocess**.

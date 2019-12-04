@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
+ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553197"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "2810709"
 ---
 # <a name="one-voucher"></a>En verifikation
 
@@ -83,6 +83,9 @@ Utifrån samtal med våra kunder har Microsoft samlat följande lista med scenar
 
 Följande scenarier kan endast uppnås genom att använda funktionen för en verifikation. Om din organisation har något av dessa scenarier, måste du aktivera flera transaktioner som ska registreras på en verifikation genom att ändra inställningen av parametern **tillåta flera transaktioner i en verifikation** på sidan **allmänna redovisningsparametrar**. Dessa funktionella luckor fylls med andra funktioner i senare versioner.
 
+> [!Note]
+> [I följande scenarier måste fältet **Tillåt flera transaktioner inom en verifikation** anges till Ja på snabbfliken **Allmänt** på sidan **Allmänna huvudboksparametrar**.]
+
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Bokför kund- eller leverantörsbetalningar i sammanfattningsformulär till ett bankkonto
 
 **Scenario** En organisation kommunicerar en lista med leverantörer och belopp till dess bank och banken använder den här listan för att betala leverantörerna på organisationens vägnar. Banken skickar summan av betalningarna som ett enda uttag på bankkontot.
@@ -120,6 +123,9 @@ Följande transaktioner för anläggningstillgångar kan också skapa flera tran
 - En tillgång delas upp.
 - En parameter för att beräkna avskrivning vid avyttring aktiveras och sedan avyttras tillgången.
 - En tillgångs servicedatum infaller före anskaffningsdatumet. Dörför bokförs en avskrivningsjustering.
+
+> [!Note]
+> När du registrerar transaktioner ska du se till att alla transaktionerna gäller för samma anläggningstillgång. Verifikationen bokförs inte om den innehåller fler än en anläggningstillgång, även om fältet **Ny verifikation** anges till bara Ett verifikationsnummer på sidan **Journalnamn** i redovisningen. Om du inkluderar fler än en anläggningstillgång i verifikationen kan meddelandet **Den kan bara finnas en transaktion för anläggningstillgång per verifikation** och du kan inte bokföra verifikationen.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Växlar och skuldsedlar
 Växlar och skuldsedlar kräver att en verifikation används eftersom transaktionerna flyttar Kundreskontra/Leverantörsreskontra från ett redovisningskonto till ett annat baserat på betalningens status.

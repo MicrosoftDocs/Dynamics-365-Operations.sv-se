@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: ''
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
-ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
+ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652627"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824530"
 ---
-# <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
+# <a name="business-document-management-overview"></a>Hantering av affärsdokument – översikt
 
-Affärsanvändare använder [ER-ramverket (Electronic Reporting)](general-electronic-reporting.md) för att konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Användare kan också definiera dataflödet för att ange vilka programdata som placeras i genererade dokument. I ER-ramverket genereras utgående dokument i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument) med hjälp av fördefinierade mallar. Mallarna fylls med data som krävs i enlighet med konfigurerat dataflöde när de dokument som krävs skapas. Varje konfigurerat format kan publiceras som en del av en ER-lösning för att generera specifika utgående dokument. Detta representeras av en ER-formatkonfiguration som kan innehålla mallar som du kan använda för att generera olika utgående dokument. Företagsanvändare kan använda det här ramverket för att hantera nödvändiga affärsdokument.
+Affärsanvändare använder [Översikt över Elektronisk rapportering (ER)](general-electronic-reporting.md) för att konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Användare kan också definiera dataflödet för att ange vilka programdata som placeras i genererade dokument. I ER-ramverket genereras utgående dokument i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument) med hjälp av fördefinierade mallar. Mallarna fylls med data som krävs i enlighet med konfigurerat dataflöde när de dokument som krävs skapas. Varje konfigurerat format kan publiceras som en del av en ER-lösning för att generera specifika utgående dokument. Detta representeras av en ER-formatkonfiguration som kan innehålla mallar som du kan använda för att generera olika utgående dokument. Företagsanvändare kan använda det här ramverket för att hantera nödvändiga affärsdokument.
 
 **Hanteringen av affärsdokument** bygger vidare på ER-ramverket och gör det möjligt för affärsanvändare att redigera affärsdokumentmallar genom att använda Microsoft Office 365-tjänst eller lämpligt Microsoft Office-skrivbordprogram. Ändringar i dokumenten kan inkludera ändring av affärsdokumentdesign och att lägga till platshållare för ytterligare data utan källkodsändringar och nya distributioner. Det krävs ingen kunskap om ER-ramverk för uppdatering av mallar för affärsdokument.
 
@@ -58,21 +59,17 @@ Följande rapporter, med Excel-baserade mallar, är tillgängliga i den allmänn
 
 Fler rapporter kommer att bli tillgängliga. Särskilda meddelanden om ytterligare rapporter kommer att skickas separat. 
 
-En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# <a name="example-enable-configure-and-use-business-document-management"></a>Exempel: Aktivera, konfigurera och använda affärsdokumenthantering
-
-Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
 
 ## <a name="configure-er-parameters"></a>Konfigurera ER-parametrar
 
-Eftersom hanteringen av affärsdokument skapas ovanpå ER-ramverket måste du konfigurera ER-parametrarna för att kunna börja arbeta med hantering av affärsdokument. Om du vill göra detta måste du ställa in ER-parametrarna enligt beskrivningen i [Konfigurera ER-ramverket](electronic-reporting-er-configure-parameters.md). Du måste också lägga till en ny konfigurationsleverantör enligt beskrivningen i [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+Eftersom hanteringen av affärsdokument skapas ovanpå ER-ramverket måste du konfigurera ER-parametrarna för att kunna börja arbeta med hantering av affärsdokument. Om du vill göra detta måste du ställa in ER-parametrarna enligt beskrivningen i [Konfigurera ER-ramverket (elektronisk rapportering)](electronic-reporting-er-configure-parameters.md). Du måste också lägga till en ny konfigurationsleverantör enligt beskrivningen i [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ![ER-arbetsyta](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>Importera ER-lösningar
 
-Du måste importera ER-konfigurationer som innehåller mallar för affärsdokument till den aktuella instansen. Hämta följande filer och spara lokalt för att slutföra den här proceduren.
+Exempel på ER-konfigurationer används i exemplet på denna procedur. Du måste importera till den aktuella instansen av Dynamics 365 Finance ER-konfigurationer som innehåller de affärsdokumentmallar som kan redigeras med hjälp av hantering av affärsdokument. Hämta följande filer och spara lokalt för att slutföra den här proceduren.
 
 **Exempel på ER-kundfaktureringslösning**
 
@@ -105,7 +102,13 @@ Använd följande procedur för att importera varje fil. Importera konfiguration
 
 ![Sidan ER-konfigurationer](./media/BDM-Overview-ERSolutions.png)
 
+
+Du kan också importera de officiellt publicerade ER-formatkonfigurationerna från Microsoft Dynamics Lifecycle Service (LCS). Om du till exempel vill utföra den här proceduren kan du importera den senaste versionen av ER-formatkonfigurationen **Fritextfaktura (Excel)**. De motsvarande konfigurationerna för ER-datamodell och ER-modellmappning kommer att importeras automatiskt.
+
+![Innehållssida för LCS delade tillgångsbibliotek](./media/BDM-Overview-SharedAssetLibrary.png)
+
 Mer information om att importera ER-konfigurationer finns i [Hantera livscykeln för konfiguration av elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## <a name="enable-business-document-management"></a>Aktivera hantering av affärsdokument
 
@@ -118,9 +121,12 @@ Använd följande procedur om du vill aktivera funktionen för hantering av aff�
 3. Välj **Aktivera nu** om du vill aktivera den valda funktionen.
 4. Uppdatera sidan för att komma åt den nya funktionen.
 
+>[!NOTE]
+> Du måste också aktivera **Office-liknande gränssnittsupplevelser för hantering av affärsdokument** när du använder nytt gränssnitt för hantering av affärsdokument
+
 ![Arbetsytan Funktionshantering](./media/BDM-Overview-FMEnabling.png)
 
-Mer information om hur du aktiverar nya funktioner finns i [Översikt över funktionshantering](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Mer information om hur du aktiverar nya funktioner finns i [Översikt över funktionshantering](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="configure-parameters"></a>Konfigurera parametrar
 
@@ -137,7 +143,7 @@ För den här dokumenttypen måste följande attributvärden väljas.
 | Grupp               | Fil                  |
 | Plats            | SharePoint            |
 
-Information om hur du ställer in de obligatoriska parametrarna för dokumenthantering och dokumenttyper finns i [Konfigurera dokumenthantering](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+Information om hur du ställer in de obligatoriska parametrarna för dokumenthantering och dokumenttyper finns i [Konfigurera dokumenthantering](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Ställ in dokumenttyp för dokumenthantering](./media/BDM-Overview-DMSetting.png)
 
@@ -179,21 +185,21 @@ Använd följande procedur om du ställa in behörigheter för åtkomst till han
 1. Logga in som en användare med åtkomst till sidan **Konfigurerare för åtkomstbehörigheter**.
 2. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Hantering av affärsdokument** \> **Hantera åtkomstbehörigheter**.
 
-Titta på det meddelande som informerar dig om att användning av åtkomstbehörigheterna för hantering av affärsdokument för närvarande inte är aktiverade.
+    Titta på det meddelande som informerar dig om att användning av åtkomstbehörigheterna för hantering av affärsdokument för närvarande inte är aktiverade.
 
-![Sidan Konfigurerare av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Sidan Konfigurerare av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess1.png)
 
-Med den här inställningen kan alla användare som tilldelats en säkerhetsroll som konfigurerats för att utföra uppdraget **Hantera affärsdokumentmallar** (AOT-namn **ERBDManageTemplates**) öppna arbetsytan för affärsdokumenthantering och kan redigera alla mallar som finns.
+    Med den här inställningen kan alla användare som tilldelats en säkerhetsroll som konfigurerats för att utföra uppdraget **Hantera affärsdokumentmallar** (AOT-namn **ERBDManageTemplates**) öppna arbetsytan för affärsdokumenthantering och kan redigera alla mallar som finns.
 
-Följande bild visar vad som finns på arbetsytan för affärsdokumenthantering för användare som tilldelats rollen **Kundreskontraansvarig**. Med den aktuella inställningen för åtkomstbehörigheter kan användaren redigera mallar för affärsdokument från olika funktionsområden inklusive fakturering, lagstadgad rapportering och betalningar.
+    Följande bild visar vad som finns på arbetsytan för affärsdokumenthantering för användare som tilldelats rollen **Kundreskontraansvarig**. Med den aktuella inställningen för åtkomstbehörigheter kan användaren redigera mallar för affärsdokument från olika funktionsområden inklusive fakturering, lagstadgad rapportering och betalningar.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. På sidan **Konfigurerare för åtkomstbehörigheter**, välj **Inställning för åtkomstbehörighet**.
 4. I dialogrutan **Inställningar av åtkomstbehörigheter för att redigera mallar**, aktivera alternativet **Använd konfigurerade åtkomstbehörigheter**.
 5. Välj **OK** för att bekräfta att åtkomstbehörigheter för affärsdokumenthantering har aktiverats.
 
-![Sidan Konfiguration av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Sidan Konfiguration av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Välj **Lägg till** om du vill ange en ny affärsroll för vilken behörigheter för åtkomst till mallar för affärsdokumenthantering måste konfigureras.
 7. I dialogrutan **Säkerhetsroller**, välj först rollen **Kundreskontraansvarig** och sedan **OK** för att bekräfta rollvalet.
@@ -201,11 +207,11 @@ Följande bild visar vad som finns på arbetsytan för affärsdokumenthantering 
 9. I fältet **Taggtyp**, välj **Funktionsområdet** och välj **Fakturera** i fältet **ID**.
 10. Välj **Spara** om du vill lagra konfigurerade åtkomstbehörigheter för den valda rollen.
 
-  Den aktuella inställningen betyder att för alla användare som tilldelats rollen **Kundreskontraansvarig** och utför uppdraget **Hantera affärsdokumentmallar** (AOT-namn **ERBDManageTemplates**), kommer konfigurationsmallar för ER-format som har värdet **Faktura** för **Funktionsområde**-taggen att vara tillgängliga för redigering på arbetsytan för affärsdokumenthantering.
+    Den aktuella inställningen betyder att för alla användare som tilldelats rollen **Kundreskontraansvarig** och utför uppdraget **Hantera affärsdokumentmallar** (AOT-namn **ERBDManageTemplates**), kommer konfigurationsmallar för ER-format som har värdet **Faktura** för **Funktionsområde**-taggen att vara tillgängliga för redigering på arbetsytan för affärsdokumenthantering.
 
 11. Växla fönstret **Relaterad information** från den högra sidan av den aktuella sidan. I fönstret **Relaterad information** visas hur de konfigurerade åtkomstbehörigheterna kommer att användas, inklusive vilka ER-konfigurationsmallar som kommer att vara tillgängliga för användare som tilldelats rollen **Kundreskontraansvarig**.
 
-![Sidan Konfiguration av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Sidan Konfiguration av åtkomstbehörigheter för hantering av affärsdokument](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. På fliken **Åtkomstbehörigheter per konfigurationer**, välj alternativet **Lägg till**.
 13. I dialogrutan **Välj konfiguration**, markera ER-formatkonfigurationen **Intrastat-rapport**.
@@ -252,21 +258,31 @@ Alternativet **Redigera mall** är tillgängligt för den valda mallen. Det här
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Initiera redigeringsmallar som ägs av andra leverantörer
 
-1. På arbetsytan för hantering av affärsdokument väljer du mallen **FTI-rapport för kund (GER)** i listan.
-2. Välj fliken **Detaljer**.
+1. Markera **Nytt dokument** i arbetsytan Hantering av affärsdokument.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate3.png)
+![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template1.png)
 
-Alternativet **Nytt dokument** är tillgängligt för den valda mallen. Det här alternativet är alltid tillgängligt för en mall i en ER-formatkonfiguration som tillhandahålla av en annan leverantör (**Microsoft** i det här exemplet). När **Nytt dokument** har valts kommer en ny mall att vara tillgänglig för redigering. Den redigerade mallen kommer sedan att lagras i en ny konfiguration för ER-format som skapas automatiskt.
+2. Välj eller öppna dokumentet som du vill använda som mall.
+
+![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template2.png)
+
+3. Klicka på **Skapa dokument**
+4. Ändra fältet **Namn**, andra namnet på den redigerbara mallen om det behövs. Texten kommer att användas som namn på den konfiguration för ER-format som skapas automatiskt. Lägg märke till att utkastversionen av den här konfigurationen (**Kopia av FTI-rapport för kund (GER)**) som kommer att innehålla den redigerade mallen automatiskt markeras för att köra det här ER-formatet för den aktuella användaren. På samma gång används den icke ändrade ursprungliga mallen från baskonfigurationen för ER-format för att köra det här ER-formatet för andra användare.
+5. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
+6. I fältet **Kommentar** ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
+7. Välj **OK** för att bekräfta starten av redigeringsprocessen.
+
+![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template3.png)
+
+Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-formatkonfiguration som tillhandahålla av en annan leverantör (Microsoft i det här exemplet). När du klickar på **Nytt dokument** visas alla mallar som ägs av aktuella och andra leverantörer. När du har valt mallen kommer den att öppnas för redigering. Den redigerade mallen kommer sedan att lagras i en ny konfiguration för ER-format som skapas automatiskt.
 
 ### <a name="start-editing-a-template"></a>Börja redigera en mall
 
-1. Välj **Nytt dokument** från den valda mallen.
-2. Ändra fältet **Namn**, andra namnet på den redigerbara mallen om det behövs. Texten kommer att användas som namn på den konfiguration för ER-format som skapas automatiskt. Lägg märke till att utkastversionen av den här konfigurationen (**Kopia av FTI-rapport för kund (GER)**) som kommer att innehålla den redigerade mallen automatiskt markeras för att köra det här ER-formatet för den aktuella användaren. På samma gång används den icke ändrade ursprungliga mallen från baskonfigurationen för ER-format för att köra det här ER-formatet för andra användare.
-3. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
-4. I fältet **Kommentar** ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
+1. Välj **Redigera dokument** från den valda mallen.
+2. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
+3. I fältet **Kommentar** ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate4.png)
+    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template4.png)
 
 5. Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
@@ -285,15 +301,15 @@ Sidan **BDM-mallredigerare** öppnas. Den valda mallen blir tillgänglig för re
 1. Välj alternativet **Öppna i skrivbordsprogram** om du vill ändra mallen med hjälp av funktionerna i Office-skrivbordsprogrammet (Excel i det här exemplet). Den redigerbara mallen kopieras från det permanenta lagringsutrymmet till den tillfälliga lagring som har konfigurerats i affärsdokumentparametrarna som en SharePoint-mapp.
 2. Bekräfta att du vill öppna mallen från den temporära lagringsplatsen i Office-skrivbordsprogrammet Excel.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingLayout3.png)
+    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingLayout3.png)
 
 3. Ändra mallen. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet genom att uppdatera färg från **Svart** till **Blå**.
 
-![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout4.png)
+    ![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout4.png)
 
 4. Välj **Spara** i Excel-skrivbordsprogrammet för att lagra malländringarna i den tillfälliga lagringen.
 
-![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout5.png)
+    ![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout5.png)
 
 5. Stäng Excel-skrivbordsprogrammet.
 6. Välj **Synkronisera lagrad kopia** om du vill synkronisera den tillfälliga mallagringen till den permanenta mallagringen.
@@ -307,7 +323,7 @@ Sidan **BDM-mallredigerare** öppnas. Den valda mallen blir tillgänglig för re
 2. Välj **Visa format** om du vill visa den aktuella strukturen för formatet från baskonfigurationen av ER-format som måste justeras med den redigerbara mallen. 
 3. Välj **Dölj format** för att stänga fönstret.
 
-![Sidan BDM-mallredigerare](./media/BDM-Overview-EditingTemplate6.png)
+    ![Sidan BDM-mallredigerare](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Stäng sidan **BDM-mallredigerare**.
 
@@ -323,7 +339,7 @@ Den uppdaterade mallen visas på fliken **Mall**. Observera att statusen för de
 4. Välj nivån **Modul - Kundreskontra** \> **Dokument** \> **Fritextfaktura** \> **Ursprungsdokument** för att ange omfånget med fakturor för bearbetning.
 5. I fältet **Rapportformat**, välj ER-formatet **Kopia av FTI-rapport för kund (GER)** för den angivna dokumentnivån.
 
-![Sidan Inställning för utskriftshantering](./media/BDM-Overview-TestRun1.png)
+    ![Sidan Inställning för utskriftshantering](./media/BDM-Overview-TestRun1.png)
 
 6. Tryck på **Esc** för att stänga den aktuella sidan.
 7. Välj **Skriv ut** och klicka sedan på **Markerade**.
@@ -340,9 +356,9 @@ Den modifierade mallen används för att generera fritextfakturarapporten för d
 3. Om det behövs ändrar du namnet på den andra revisionen i fältet **Namn** och baserar det på den för tillfället aktiva första versionen.
 4. Vid behov, i fältet **Kommentar**, ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-AddRevision.png)
+    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-AddRevision.png)
 
-Du har skapat en ny version av din mall som har lagrats i den permanenta mallens lagringsutrymme. Nu kan du fortsätta att redigera mallen för den andra versionen som är markerad som aktiv för tillfället.
+    Du har skapat en ny version av din mall som har lagrats i den permanenta mallens lagringsutrymme. Nu kan du fortsätta att redigera mallen för den andra versionen som är markerad som aktiv för tillfället.
 
 5. Välj den första versionen och välj sedan **Ställ in aktiv**. Du kan välja en annan version som aktiv om du när som helst vill återgå till den versionen av mallen.
 6. Välj den andra versionen och välj sedan **Ta bort**.
@@ -370,7 +386,7 @@ När du redigerar mallen från ett ER-format som ägs av den aktuella aktiva lev
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 
-#### <a name="i-selected-new-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jag valde **Nytt dokument**, men i stället för att öppna **BDM-mallredigeraren** i Finance and Operations har jag skickats till Office 365-webbsidan.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jag valde **Redigera dokument**, men i stället för att öppna **BDM-mallredigeraren** i Finance and Operations har jag skickats till Office 365-webbsidan.
 Detta är ett känt problem i Office 365 omdirigeringen. Detta inträffar när du loggar in i Office 365 på första gången. Du löser det här problemet genom att välja knappen **Bakåt** i webbläsaren för att gå tillbaka.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jag förstår hur man redigerar en mall med hjälp Office 365 i den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag göra detta med Office-skrivbordsprogrammet?
@@ -386,12 +402,12 @@ Troligen loggade du in på den aktuella instansen av appen i Azure AD-domänen s
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över elektronisk rapportering](general-electronic-reporting.md)
+[Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-[Utforma en konfiguration för rapportgenerering i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md)
+[ER Skapa en konfiguration för rapportgenerering i OPENXML-format (november 2016)](tasks/er-design-reports-openxml-2016-11.md)
 
 [Utforma ER-konfigurationer för rapportgenerering i Word-format](tasks/er-design-configuration-word-2016-11.md)
 
 [Bädda in bilder och former i dokument som du skapar med ER](electronic-reporting-embed-images-shapes.md)
 
-[Konfigurera elektronisk rapportering för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)

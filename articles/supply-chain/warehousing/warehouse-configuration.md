@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: aa503f2ce3ae8ff6b221ea1d26a1c62d0ba37646
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653428"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814914"
 ---
 # <a name="warehouse-configuration-overview"></a>Konfiguration av lagerställe – översikt
 
@@ -31,7 +31,8 @@ ms.locfileid: "2653428"
 
 Det här avsnittet innehåller information om hur du konfigurerar ett lagerställe. Det inkluderar information om att aktivera ett lagerställes layout och lagerställeprocesser.
 
-**Anm.:** Den här artikeln gäller funktioner i modulen **Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
+> [!NOTE]
+> Den här artikeln gäller funktioner i modulen **Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
 
 ## <a name="warehouse-layout"></a>Layout för lagerställe
 Lagerhanteringssystemet i Supply Chain Management ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå optimal lagereffektivitet.
@@ -114,7 +115,7 @@ Gör det enklare och snabbare att definiera åtgärder som är knutna till varje
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Konfigurera platser på ett WMS-aktiverat lagerställe (uppgiftsguiden)](tasks/configure-locations-wms-enabled-warehouse.md)
+[Konfigurera platser i ett WMS-aktiverat lagerställe](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

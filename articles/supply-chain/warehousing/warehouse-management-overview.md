@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f50b950b8588f2b17611889e0cb0eeb6da359886
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251072"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813027"
 ---
 # <a name="warehouse-management-overview"></a>Lagerstyrning – översikt
 
@@ -36,7 +36,7 @@ För att kunna arbeta med lagerhanteringen måste du konfigurera de allmänna la
 
 Du måste konfigurera komponenter för in- och utgående arbetsflöden för lagerprocesser i enlighet med dina affärskrav. De viktigaste komponenterna som du måste konfigurera är vågmallar, arbetsmallar, arbetspooler och platsdirektiv.
 
-- [Konfiguration av lagerställe](warehouse-configuration.md)
+- [Konfiguration av lagerställe – översikt](warehouse-configuration.md)
 - [Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](control-warehouse-location-directives.md)
 - [Ställ in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
 - [Ställ in ett platsdirektiv för inlagring av inköpsorder](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174200"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771527"
 ---
 # <a name="cost-management-power-bi-content"></a>Kostnadshantering Power BI-innehåll
 
@@ -37,7 +37,7 @@ Microsoft Power BI-innehållet **Kostnadshantering** riktar sig till lagerredovi
 > [!NOTE]
 > **Kostnadshantering** Power BI-iinehåll som beskrivs i detta avsnitt gäller Dynamics 365 Finance and Operations 8.0.
 > 
-> Power BI-innehållspaketet **Kostnadshantering** som finns tillgänglig på webbplatsen för AppSource har tagits bort. Mer information om denna borttagning finns i [Power BI innehållspaket finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Power BI-innehållspaketet **Kostnadshantering** som finns tillgänglig på webbplatsen för AppSource har tagits bort. Mer information om avskrivningen finns i [Borttagna eller utfasade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Detta Power BI-innehållet ger ett kategoriserat format som hjälper dig att övervaka prestanda för lager och visualisera hur kostnadsflödet går mellan dem. Du kan få ledarskapsinsikt som t.ex. omsättningshastighet, antalet dagar som lager finns, exakthet och ”ABC-klassificeringen” på din föredragna aggregerade nivå (företag, artikel, artikelgrupp eller site) Informationen som görs tillgänglig kan också användas som ett detaljerat komplement till bokslutet.
 

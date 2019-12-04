@@ -17,12 +17,12 @@ ms.search.region: Sweden
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0ebe42dd7d9464154f8c83ef858a4ee84a0c131e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11bec2fe4d8ae2b755ab47b91f0700dba70aa8ee
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183946"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773401"
 ---
 # <a name="import-payment-formats-for-sweden"></a>Importformat för betalning för Sverige
 
@@ -41,7 +41,7 @@ Filimporter via BankGirot MAX och BankGirot OCR låter dig importera kundbetalni
 4. I dialogrutan väljer du betalningsmetoden och bläddrar sedan till platsen för filen som ska importeras.
 
    > [!NOTE]
-   >  Innan du kan slutföra detta steg måste du redan ha importerat konfigurationerna från Lifecycle Services (LCS) och ställt in betalningsmetoderna. Mer information finns i [Filformat för betalningsmetod](emea-select-file-formats-for-the-method-of-payments.md).
+   >  Innan du kan slutföra detta steg måste du redan ha importerat konfigurationerna från Lifecycle Services (LCS) och ställt in betalningsmetoderna. Mer information finns i [Filformat för betalningsmetoder](emea-select-file-formats-for-the-method-of-payments.md).
 
 När du har importerat betalningsfilen bör journalrader skapas för den valda journalen, och markeras för kvittning mot kundfakturor.
 
@@ -53,7 +53,7 @@ Bankgirot Autogiro returnerar format för autogiro-betalningsformatet med samma 
 3. I dialogrutan väljer du relaterad betalningsmetod och bläddrar sedan till platsen för filen som ska importeras. 
 
    > [!NOTE]
-   >  Innan du kan slutföra detta steg måste du redan ha importerat konfigurationerna från Lifecycle Services (LCS) och ställt in betalningsmetoderna. Mer information finns i [Filformat för betalningsmetod](emea-select-file-formats-for-the-method-of-payments.md).
+   >  Innan du kan slutföra detta steg måste du redan ha importerat konfigurationerna från Lifecycle Services (LCS) och ställt in betalningsmetoderna. Mer information finns i [Filformat för betalningsmetoder](emea-select-file-formats-for-the-method-of-payments.md).
 
 När du har importerat returfilen bör betalningarna uppdateras till statusen **Godkänd**.
 
