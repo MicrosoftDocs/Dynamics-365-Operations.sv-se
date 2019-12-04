@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a12ab249129dce24cdca5e29d737fa9f68c0eac
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: 9efc63c385c31a6d8848d016c1a8689460908dcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572459"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769670"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisationshierarki i Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett grundläggande begrepp och systeminställningarna börjar med konfigurationen av en organisationshierarki. Affärsekonomi kan sedan spåras på organisationsnivå och även på alla nivåer i organisationshierarkin.
 
@@ -46,85 +44,35 @@ Ett affärsekosystem som består av Finance and Operations-appar och Common Data
 
 Organisationshierarkin entitetskartor är tillgängliga för enkelriktad synkronisering av data från Finance and Operations-appar till Common Data Service.
 
+## <a name="templates"></a>Mallar
+
+Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med enhetsmappningar för synkronisering av produkter och relaterad information.
+
+Finance and Operations | Andra Dynamics 365-appar | Beskrivning
+-----------------------|--------------------------------|---
+Syften för organisationshierarki | msdyn_internalorganizationhierarchypurposes | Den här mallen innehåller en enkelriktad synkronisering av entiteten syfte för organisationshierarki.
+Typ av organisationshierarki | msdyn_internalorganizationhierarchytypes | Den här mallen innehåller en enkelriktad synkronisering av entiteten typ för organisationshierarki.
+Organisationshierarki - publicerad | msdyn_internalorganizationhierarchies | Den här mallen innehåller en enkelriktad synkronisering av entiteten publicerad för organisationshierarki.
+Driftenhet | msdyn_internalorganizations | 
+Juridiska personer | msdyn_internalorganizations | 
+Juridiska personer | cdm_companies | Tillhandahåller dubbelriktad synkronisering av information om den juridiska personen (företag).
+
+
 [!include [banner](../includes/dual-write-symbols.md)]
 
-## <a name="internal-organization-hierarchy-purpose"></a>Internt syfte för organisationshierarki
+[!include [Organization hierarchy purposes](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 
-Den här mallen ger enkelriktad synkronisering av organisationshierarkin syftesentitet från Finance and Operations till andra Dynamics 365-appar.
+[!include [Organization hierarchy type](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
-<!-- ![architecture image](media/dual-write-purpose.png) -->
-
-Källfält | Mappningstyp | Målfält
----|---|---
-HIERARCHYTYPE | \> | msdyn\_hierarchypurposetypename
-HIERARCHYTYPE | \> | msdyn\_hierarchytype.msdyn\_name
-HIERARCHYPURPOSE | \>\> | msdyn\_hierarchypurpose
-IMMUTABLE | \>\> | msdyn\_immutable
-SETASDEFAULT | \>\> | msdyn\_setasdefault
-
-## <a name="internal-organization-hierarchy-type"></a>Intern typ av organisationshierarki
-
-Den här mallen ger enkelriktad synkronisering av organisationshierarkin typentitet från Finance and Operations till andra Dynamics 365-appar.
-
-<!-- ![architecture image](media/dual-write-type.png) -->
-
-Källfält | Mappningstyp | Målfält
----|---|---
-NAMN | \> | msdyn\_name
-
-## <a name="internal-organization-hierarchy"></a>Intern organisationshierarki
-
-Den här mallen ger enkelriktad synkronisering av organisationshierarkin publicerad entitet från Finance and Operations till andra Dynamics 365-appar.
-
-<!-- ![architecture image](media/dual-write-organization.png) -->
-
-Källfält | Mappningstyp | Målfält
----|---|---
-VALIDTO | \> | msdyn\_validto
-VALIDFROM | \> | msdyn\_validfrom
-HIERARCHYTYPE | \> | msdyn\_hierarchytypename
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentpartyid
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
-HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
+[!include [Organization hierarchy - published](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 ## <a name="internal-organization"></a>Intern organisation
 
 Intern organisationsinformation i Common Data Service kommer från två entiteter **driftenhet** och **juridiska personer**.
 
-<!-- ![architecture image](media/dual-write-operating-unit.png) -->
+[!include [Operating unit](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
-<!-- ![architecture image](media/dual-write-legal-entities.png) -->
+[!include [Legal entities](dual-write/LegalEntities-msdyn-internalorganizations.md)]
 
-### <a name="operating-unit"></a>Driftenhet
+[!include [Legal entities](dual-write/LegalEntities-Companies.md)]
 
-Källfält | Mappningstyp | Målfält
----|---|---
-LANGUAGEID | \> | msdyn\_languageid
-NAMEALIAS | \> | msdyn\_namnalias
-NAMN | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-OPERATINGUNITTYPE | \>\> | msdyn\_type
-
-### <a name="legal-entity"></a>Juridisk person
-
-Källfält | Mappningstyp | Målfält
----|---|---
-NAMEALIAS | \> | msdyn\_namnalias
-LANGUAGEID | \> | msdyn\_languageid
-NAMN | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-ingen | \>\> | msdyn\_type
-LEGALENTITYID | \> | msdyn\_companycode
-
-## <a name="company"></a>Företag
-
-Ger dubbelriktad synkronisering av information om juridisk person (företag) mellan Finance and Operations och andra Dynamics 365-appar.
-
-<!-- ![architecture image](media/dual-write-company.png) -->
-
-Källfält | Mappningstyp | Målfält
----|---|---
-NAMN | = | cdm\_name
-LEGALENTITYID | = | cdm\_companycode

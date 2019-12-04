@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
-ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
+ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2666840"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770676"
 ---
 # <a name="sales-tax-overview"></a>Momsöversikt
 
@@ -38,7 +38,7 @@ Ramverket för moms stöder många typer av indirekta skatter, till exempel moms
 
 Följande diagram visar de enheterna för skatteinställning och hur de hör ihop.
 
-[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram som visar översikt över enheter för momsinställningar](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 För varje momstyp som ett företag redovisar redovisa måste en momskod anges. En momskod lagrar skattesatserna och beräkningsregler för moms. 
 

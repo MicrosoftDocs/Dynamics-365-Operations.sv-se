@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187922"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770860"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Skapa dimensioner och importera dimensionsmedlemmar
 
@@ -44,11 +44,10 @@ Följande diagram illustrerar de dimensioner som används inom kostnadsredovisni
 När datan väl har importerats till kostnadsredovisningen kan du använda den för att skapa olika perspektiv som ger insikter till chefer på alla organisationsnivåer. Mer information om hur du skapar dimensioner och importerar dimensionsmedlemmar finns i följande avsnitt: 
 
 -  [Dimensioner för kostnadselement](cost-elements.md)
--  [Skapa kostnadselement (uppgiftsguide)](./tasks/create-cost-elements.md)
+-  [Skapa kostnadselement](./tasks/create-cost-elements.md)
 -  [Kostnadsobjektdimensioner](cost-objects.md)
--  [Skapa kostnadselement (uppgiftsguide)](./tasks/create-cost-objects.md)
 -  [Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar](map-cost-elements-dimension-members.md)
--  [Mappa dimension för kostnadselement (uppgiftsguide)](./tasks/map-cost-element-dimension.md)
+-  [Mappa dimension för kostnadselement](./tasks/map-cost-element-dimension.md)
 -  [Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar](statistical-measure-provider-template.md)
 
 

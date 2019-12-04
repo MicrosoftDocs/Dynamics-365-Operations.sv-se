@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c5d07cb9fbb32a2d9b8be11179dbba00ee73d28b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b5fbe5ffa74953588a2357948319f5cf21f7ad36
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184587"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769771"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Resultat för lagerställe Power BI-innehåll
 
@@ -78,7 +78,7 @@ Power BI-innehållet för **Prestanda för lagerställe** innehåller ofta en ra
 | Leveransprestanda        | Levererat per site/lagerställe              | Den procentandel som levererades tidigt, i tid eller sent per site eller lagerställe. |
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Förstå datamodellen och beräkningar
-Följande data används för att fylla i rapportsidorna Power BI-innehållet **Lagerställeprestanda**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna Power BI-innehållet **Lagerställeprestanda**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Följande sammanlagda huvudmått används till grund för innehållet:
 

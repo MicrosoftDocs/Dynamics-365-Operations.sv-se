@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550094"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771339"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Stödparameteranrop till ER-datakällor för typen beräknat fält
 
@@ -75,21 +75,21 @@ I det här exemplet skapar du en konfiguration för exempelföretaget, Litware, 
 3. Välj **Designer**.
 4. Välj **Designer**.  
    
-Den här ER-modellmappningen har utformats för att göra följande:
+    Den här ER-modellmappningen har utformats för att göra följande:
 
-- Hämta listan över momskoder **(moms** datakälla) som finns i **TaxTable**-registret.
-- Hämta listan över momstransaktioner **(Trans** datakälla) som finns i **TaxTrans**-registret.
+    - Hämta listan över momskoder **(moms** datakälla) som finns i **TaxTable**-registret.
+    - Hämta listan över momstransaktioner **(Trans** datakälla) som finns i **TaxTrans**-registret.
     
-    - Gruppera listan över hämtade transaktioner (**Gr** datakälla) efter momskod.
-    - Beräkna för grupperade transaktioner efter aggregerade värden per momskod:
+        - Gruppera listan över hämtade transaktioner (**Gr** datakälla) efter momskod.
+        - Beräkna för grupperade transaktioner efter aggregerade värden per momskod:
 
-        - Summa av basvärde för moms.
-        - Summa av momsvärden.
-        - Lägsta värde för tillämpad momssats.
+            - Summa av basvärde för moms.
+            - Summa av momsvärden.
+            - Lägsta värde för tillämpad momssats.
 
-Modellmappningen i den här konfigurationen implementerar basdatamodellen för alla ER-format som skapas för den här modellen och körs i Finance and Operations. Detta innebär att innehållet i datakällorna **Moms** och **Gr** visas för ER-format, t.ex. abstrakta datakällor.
+    Modellmappningen i den här konfigurationen implementerar basdatamodellen för alla ER-format som skapas för den här modellen och körs i Finance and Operations. Detta innebär att innehållet i datakällorna **Moms** och **Gr** visas för ER-format, t.ex. abstrakta datakällor.
 
-  ![Sidan modellmappningsdesigner med datakällorna Moms och Gr](media/er-calculated-field-type-01.png)
+    ![Sidan modellmappningsdesigner med datakällorna Moms och Gr](media/er-calculated-field-type-01.png)
 
 5.  Stäng sidan **modellmappningsdesigner**.
 6.  Stäng sidan **modellmappning**.
@@ -100,25 +100,25 @@ Modellmappningen i den här konfigurationen implementerar basdatamodellen för a
 2. Välj **Format för att lära dig parameteranrop**.
 3. Välj **Designer**. Det här ER-formatet har utformats för att göra följande:
 
-  - Generera en skattedeklaration i XML-format.
-  - Lägga fram följande beskattningsnivåer i momsrapporten: vanlig, reducerad och ingen.
-  - Presentera flera detaljer för varje beskattningsnivå, med olika antal detaljer på varje nivå.
+    - Generera en skattedeklaration i XML-format.
+    - Lägga fram följande beskattningsnivåer i momsrapporten: vanlig, reducerad och ingen.
+    - Presentera flera detaljer för varje beskattningsnivå, med olika antal detaljer på varje nivå.
 
-  ![Formatdesignersida](media/er-calculated-field-type-02.png)
+    ![Formatdesignersida](media/er-calculated-field-type-02.png)
 
 4. Välj **mappning**.
 5. Expandera artiklarna **Modell**, **Data** och **Sammanfattning**. 
 
-   Den beräknade fältet **Model.Data.Summary.Level** innehåller det uttryck som returnerar koden för beskattningsnivån (**normal**, **reducerad**, **ingen,** eller **annan**) som ett textvärde för alla momskoder som kan hämtas från datakällan **Model.Data.Summary** vid körningstillfället.
+    Den beräknade fältet **Model.Data.Summary.Level** innehåller det uttryck som returnerar koden för beskattningsnivån (**normal**, **reducerad**, **ingen,** eller **annan**) som ett textvärde för alla momskoder som kan hämtas från datakällan **Model.Data.Summary** vid körningstillfället.
 
-  ![Sidan Formatera designer med information om datamodellen Modell för att lära sig parameteranrop](media/er-calculated-field-type-03.png)
+    ![Sidan Formatera designer med information om datamodellen Modell för att lära sig parameteranrop](media/er-calculated-field-type-03.png)
 
 6. Expandera **Modell**. **Data2**-objektet.
 7. Expandera **Modell**. **Data2.Summary2**-objektet.
    
-   Datakällan **Modell**.**Data2.Summary2** har konfigurerats för att gruppera datakällan **Model.Data.Summary**  transaktionsdetaljer per beskattningsnivå (returneras av **Model.Data.Summary.Level** beräknat fält) och beräkna aggregeringar.
+    Datakällan **Modell**.**Data2.Summary2** har konfigurerats för att gruppera datakällan **Model.Data.Summary**  transaktionsdetaljer per beskattningsnivå (returneras av **Model.Data.Summary.Level** beräknat fält) och beräkna aggregeringar.
 
-  ![Sidan Formatera designer med information om datakällan Model.Data2.Summary2 data source](media/er-calculated-field-type-04.png)
+    ![Sidan Formatera designer med information om datakällan Model.Data2.Summary2 data source](media/er-calculated-field-type-04.png)
 
 8. Granska beräknade fält **Modell**.**Data2.Level1**, **Modell**.**Data2.Level2** och **Modell**.**Data2.Level3.** De här beräknade fälten används för att filtrera **Modell**. **Data2. Summary2**-postlista och returnerar endast poster som representerar en viss beskattningsnivå.
 9. Stäng sidan **Formatdesigner**.
@@ -309,7 +309,7 @@ När ett parametiserat beräknat fält returnerar en post måste du stödja bind
 Du kan köra de ursprungliga och de förbättrade ER-formaten för att säkerställa att konfigurerade parameterbaserade beräknade fält fungerar som de ska.
 
 ### <a name="import-er-configurations"></a>Importera ER-konfigurationer
-Du kan importera granskade konfigurationer från RCS med hjälp av ER-databasen för **RCS**-typen. Om du redan gick igenom stegen i avsnittet [Importera konfigurationer för elektronisk rapportering från Regulatory Configuration Services](rcs-download-configurations.md), använder du den konfigurerade återställningsdatabasen för att importera konfigurationer som beskrivs tidigare i det här avsnittet till din miljö. Annars följer du dessa steg:
+Du kan importera granskade konfigurationer från RCS med hjälp av ER-databasen för **RCS**-typen. Om du redan gick igenom stegen i avsnittet [Importera konfigurationer för elektronisk rapportering (ER) från Regulatory Configuration Services (RCS)](rcs-download-configurations.md), använder du den konfigurerade återställningsdatabasen för att importera konfigurationer som beskrivs tidigare i det här avsnittet till din miljö. Annars följer du dessa steg:
 
 1. Markera företaget **DEMF** och välj sedan **elektronisk rapportering** på standardinstrumentpanelen.
 2. Välj **rapporteringskonfigurationer**.
@@ -339,4 +339,4 @@ Du kan importera granskade konfigurationer från RCS med hjälp av ER-databasen 
 8. Jämför innehållet i de genererade utflödena.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
+[Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)

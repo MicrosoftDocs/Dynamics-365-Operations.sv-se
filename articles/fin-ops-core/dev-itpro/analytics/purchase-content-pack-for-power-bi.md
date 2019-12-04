@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d25bacc2ec1f8e13376b96e188b099a184f7f8c6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2d31aaf14f6399baca8531707864c48cd2d56ac2
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569142"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769981"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Inköps- och utgiftsanalys för Power BI-innehåll
 
@@ -128,9 +128,9 @@ Den här sidan visar inköp i år och förra året och tillväxt efter upphandli
 
 
 ## <a name="data-model-and-entities"></a>Datamodell och enheter
-Följande data används för att fylla i rapportsidorna i Power BI-innehållet **Inköps- och utgiftsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna i Power BI-innehållet **Inköps- och utgiftsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
-De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i inköpskuben i Microsoft Dynamics AX 2012 och Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i Enhetslagring måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i Enhetslagring i [Översikt över Power BI-integrering med Enhetslagring](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått är tillgängliga direkt från fakturaradenheten och används som grund för innehållet.
+De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i inköpskuben i Microsoft Dynamics AX 2012 och Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i Enhetslagring måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i Enhetslagring i [Power BI-integrering med Enhetslagring](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått är tillgängliga direkt från fakturaradenheten och används som grund för innehållet.
 
 | Enhet        | Sammanlagda huvudmått | Datakälla                                 | Fält              | beskrivning                            |
 |---------------|----------------------------|---------------------------------------------|--------------------|----------------------------------------|

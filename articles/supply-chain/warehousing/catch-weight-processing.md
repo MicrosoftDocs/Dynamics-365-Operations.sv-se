@@ -3,7 +3,7 @@ title: Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887145"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696649"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
@@ -181,7 +181,7 @@ Funktionerna för taggar för faktisk/nominell vikt stöds för närvarande bara
 - När bearbetning av lagerstatus ändras via appen lagerställe.
 - När lagerställeöverföring görs via appen lagerställe.
 - Vid bearbetning av justering in och ut via appen lagerställe.
-- När plockningsarbete bearbetas för försäljnings- och överföringsorder. (Observera att taggar för faktisk/nominell vikt inte kan registreras för plockning av produktionskomponent).
+- När plockningsarbete bearbetas för försäljnings-, överförings- och produktionsrader.
 - När plockade kvantiteter minskas från lastrader, oavsett om behållare används.
 - När produkter som är förpackade i behållare på en förpackningsstation.
 - När behållare öppnas på nytt.

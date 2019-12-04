@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6c045f82f3288dba193721dd80c90e68750af9a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 954e0669c3d24bcc20fe667c22b7dcc367aba1e7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179980"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770814"
 ---
 # <a name="overhead-calculation"></a>Beräkning av indirekta kostnader
 
@@ -1411,7 +1411,7 @@ I Affärsredovisning bokförs en kostnad på 10 000,00 för Electricitet på et
 </table>
 
 > [!NOTE]
-> Det här avsnittet visar hur ett primärt kostnadselement 10001 Elektricitet flödar genom kostnadsobjekten. Därför tilldelas denna indirekta kostnad till den lägsta nivån i organisationen. Med andra ord bär kostnadsobjekten på den lägsta nivån kostnaden. Om du behöver ett visuellt flöde mellan kostnadsobjekten, kan du använda policyregler för kostnadssummeringen för att visualisera flödet av kostnaden. Mer information finns i [Samlade kostnader](cost-rollup.md).
+> Det här avsnittet visar hur ett primärt kostnadselement 10001 Elektricitet flödar genom kostnadsobjekten. Därför tilldelas denna indirekta kostnad till den lägsta nivån i organisationen. Med andra ord bär kostnadsobjekten på den lägsta nivån kostnaden. Om du behöver ett visuellt flöde mellan kostnadsobjekten, kan du använda policyregler för kostnadssummeringen för att visualisera flödet av kostnaden. Mer information finns i [Policy för samlade kostnader och omkostnadsberäkning](cost-rollup.md).
 
 
 

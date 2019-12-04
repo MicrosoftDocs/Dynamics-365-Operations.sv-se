@@ -1,9 +1,9 @@
 ---
-title: Skapa onlinebutiker
-description: Den här artikeln innehåller information om onlinebutiker för detaljhandel och hur du ställer in dem i Dynamics 365 Retail.
+title: Ställ in en onlinebutikskanal
+description: Den här artikeln innehåller information om onlinebutikskanaler för detaljhandel och hur du ställer in dem i Dynamics 365 Retail.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02402269a6976ff856e703cc8e94fbf0758ea771
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e7932879aac6ea4054f6c35de99f11c2662dd472
+ms.sourcegitcommit: 595a4ec63a32bd5d4321126bda7cf72a75a930a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017976"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "2688819"
 ---
-# <a name="set-up-online-stores"></a>Ställa in onlinebutiker
+# <a name="set-up-an-online-store-channel"></a>Ställ in en onlinebutikskanal
 
 [!include [banner](includes/banner.md)]
 
-Den här artikeln innehåller information om onlinebutiker för detaljhandel och hur du ställer in dem i Dynamics 365 Retail.
+Den här artikeln innehåller information om onlinebutikskanaler för detaljhandel och hur du ställer in dem i Dynamics 365 Retail.
 
 Retail stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). En onlinebutik ger en återförsäljare onlinenärvaro så att deras kunder kan köpa produkter från deras onlinebutik såväl som från deras fysiska butik. Om kunder köper produkter från onlinebutiken kan dessa produkter levereras till sig eller så kan kunden hämta produkterna från en lokal butik. Du skapar en onlinebutik på Retail-klienten. Denna onlinebutik publiceras sedan till en tredje parts onlinebutik som har integrerats med Retail. Tredje parts onlinebutik fungerar som skyltfönstret (användargränssnitt) för onlinebutiken och får du ett urval av kundhanteringsystem (CMS) och UI-kapaciteter. Flera integrationer av den här typen är tillgängliga. De egenskaper som du definierar för onlinebutiken styr hur onlinebutiken fungerar. Till exempel definierar du navigeringskategorihierarkin i Retail och tilldelar den till onlinebutiken. När du publicerar onlinebutiken i en tredje parts onlinebutik kommer navigeringskategorihierarkin att visas i butikens onlineversion. Shoppare använder navigeringskategorihierarkin för att bläddra i onlinebutiken och för att söka efter produkter. Om du vill skapa onlinebutiken måste du ställa in de komponenter som aktiverar transaktioner som ska bearbetas för butiken. Till exempel måste du lägga till sortiment, tillämpa attribut och ställa in betalningsmetoder och leveranssätt. Du kan också ange priser, rabatter, kampanjer, handelsavtal och sändningstermer som är specifika för storen online. När du har publicerat onlinebutiken på tredje partens onlinebutik kan du skapa butiksproduktkataloger för onlinebutiken. Produkterna i katalogen blir produktlistor i onlinebutiken. När en shoppare köper produkter från onlinebutiken, synkroniseras och uppdateras tillgängligt lager i klienten. Försäljningsorder skapas för inköpen och skickas till klienten för orderbehandling och bearbetning.
 

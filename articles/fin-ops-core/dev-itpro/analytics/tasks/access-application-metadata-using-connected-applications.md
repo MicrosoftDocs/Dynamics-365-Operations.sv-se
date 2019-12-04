@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a476163ba6f66ab60ed8bfea6198d02f13ac5136
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182725"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769888"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få åtkomst till programmets metadata med hjälp av anslutna program
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg förklaras hur en användare av Regulatory configuration service (RCS) i rollen Systemadministratör eller Utvecklare av elektronisk rapportering kan utforma en ny modellmappning för elektronisk rapportering (ER) genom att använda metadata i Finance and Operations-programmet. Programdata kan nås online genom att använda det RCS-anslutna programmet. Exempel på ER-modellmappning kommer att konfigureras för åtkomst till utländska handelstransaktioner. För att slutföra dessa steg måste du i RCS först slutföra stegen i ämnet [Skapa en konfigurationsleverantör och välj den som aktiv](er-configuration-provider-mark-it-active-2016-11.md) Om du inte har slutfört stegen i ämnet [Få åtkomst till programdata genom att använda ER-konfiguration](access-application-metadata-er-configuration.md), gå till [Exeempelsidan för Elektronisk rapportering](https://go.microsoft.com/fwlink/?linkid=862266) för att hämta och spara följande ER-konfigurationer: Utländsk handel metadata.xml; Utländsk handel model.xml; Utländsk handel mapping.xml och slutför sedan stegen i proceduren.
+I följande steg förklaras hur en användare av Regulatory configuration service (RCS) i rollen Systemadministratör eller Utvecklare av elektronisk rapportering kan utforma en ny modellmappning för elektronisk rapportering (ER) genom att använda metadata i Finance and Operations-programmet. Programdata kan nås online genom att använda det RCS-anslutna programmet. Exempel på ER-modellmappning kommer att konfigureras för åtkomst till utländska handelstransaktioner. För att slutföra dessa steg i RCS måste du först slutföra stegen i ämnet [Skapa en konfigurationsleverantörer och välj de som aktiva](er-configuration-provider-mark-it-active-2016-11.md) Om du inte har slutfört stegen i ämnet [Få åtkomst till programdata genom att använda ER-konfiguration](access-application-metadata-er-configuration.md), gå till [Exeempelsidan för Elektronisk rapportering](https://go.microsoft.com/fwlink/?linkid=862266) för att hämta och spara följande ER-konfigurationer: Utländsk handel metadata.xml; Utländsk handel model.xml; Utländsk handel mapping.xml och slutför sedan stegen i proceduren.
 
 ## <a name="prerequisites"></a>Förutsättningar
 1. Gå till **Alla arbetsytor** > **Elektronisk rapportering**. 
-2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren[ Skapa en konfigurationsleverantör och välj den som aktiv.](er-configuration-provider-mark-it-active-2016-11.md) 
+2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren [Skapa konfigurationsleverantörer och välj dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md). 
 
 ## <a name="get-required-er-configurations"></a>Skapa nödvändiga ER-konfigurationer
 1. Klicka på **Rapporteringskonfiguration**. 
-2. Om du redan har slutfört stegen i proceduren [(RCS) Få åtkomst till programdata genom att använda ER-konfiguration](access-application-metadata-er-configuration.md) har du redan alla ER-konfigurationer (metadata för utländsk handel, modell- och mappningskonfiguration) i den aktuella RCS-instansresursen. Du kan hoppa över resten av stegen i den här underaktivitet. 
+2. Om du redan har slutfört stegen i proceduren [Få åtkomst till programdata genom att använda ER-konfiguration](access-application-metadata-er-configuration.md) har du redan alla ER-konfigurationer (metadata för utländsk handel, modell- och mappningskonfiguration) i den aktuella RCS-instansresursen. Du kan hoppa över resten av stegen i den här underaktivitet. 
 3. Klicka på **Byt**. 
 4. Klicka på **Läs in från XML-fil**. 
 5. Klicka på **Bläddra** och välj filen **Utländsk handel metadata.xml**. 
@@ -72,8 +72,8 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 4. I trädet väljer du **Utländsk handelsmodell\Utländsk handelsmappning**. 
 5. Expandera avsnittet **Förutsättningar**. 
 
-> [!NOTE]
-> Denna mappning refererar till konfigurationen för metadata. Programdata från denna konfiguration kommer att erbjudas när modellmappningen kommer att vara konstruerad. 
+    > [!NOTE]
+    > Denna mappning refererar till konfigurationen för metadata. Programdata från denna konfiguration kommer att erbjudas när modellmappningen kommer att vara konstruerad. 
 
 6. Klicka på **Designer**. 
 7. Klicka på **Designer**. 
@@ -81,8 +81,8 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 9. Klicka på **Lägg till rot**. 
 10. Ange eller välj ett värde i fältet **Register**. 
 
-> [!NOTE]
-> Denna mappning refererar till konfigurationen för metadata. Programdata från denna konfiguration kommer att erbjudas när modellmappningen kommer att vara konstruerad. 
+    > [!NOTE]
+    > Denna mappning refererar till konfigurationen för metadata. Programdata från denna konfiguration kommer att erbjudas när modellmappningen kommer att vara konstruerad. 
 
 11. Klicka på **Avbryt**. 
 12. Stäng sidan. 
@@ -92,8 +92,8 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 1. Klicka på **Redigera**. 
 2. Välj **MyConnectedApp**-program. 
 
-> [!NOTE]
-> För närvarande refererar denna mappning till metadata för det markerade anslutna programmet. När samma mappning refererar till metadatakonfigurationen och det anslutna programmet samtidigt, används metadata för det anslutna programmet. 
+    > [!NOTE]
+    > För närvarande refererar denna mappning till metadata för det markerade anslutna programmet. När samma mappning refererar till metadatakonfigurationen och det anslutna programmet samtidigt, används metadata för det anslutna programmet. 
 
 3. Klicka på **Designer**. 
 4. Klicka på **Designer**. 
@@ -101,14 +101,14 @@ I följande steg förklaras hur en användare av Regulatory configuration servic
 6. Klicka på **Lägg till rot**. 
 7. Ange eller välj ett värde i fältet **Register**. 
 
-> [!NOTE]
-> Fler än två programtabeller erbjöds nu eftersom mappningen använder alla metadata för det anslutna program som har tilldelats för det. 
+    > [!NOTE]
+    > Fler än två programtabeller erbjöds nu eftersom mappningen använder alla metadata för det anslutna program som har tilldelats för det. 
 
 8. Klicka på **Avbryt**. 
 9. Klicka på **Validera.** 
 
-> [!NOTE]
-> Vi har bundit element i datamodellen med objekt av datakällor som beskrivs genom att använda information om metadata för det anslutna program som har tilldelats den här mappningen. 
+    > [!NOTE]
+    > Vi har bundit element i datamodellen med objekt av datakällor som beskrivs genom att använda information om metadata för det anslutna program som har tilldelats den här mappningen. 
 
 10. Stäng sidan. 
 11. Stäng sidan. 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 480253d1401c567e27f636f8a2b19fa3937e89e5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653214"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770394"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -82,11 +82,11 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      2019 april          |   10.0.1      | Ungern      |  Ungern: online-fakturering v. 1.1 2019  |
 |      2019 april          |   10.0.1      | Japan      |  2019 japansk kalender era-ändring  |
 |      2019 april          |   10.0.1      |    Ryssland     |Deklaration för markvärdesskatt ändras från 2018 |
-|      2019 april          |   10.0.1      |    Ryssland     |[Deklaration för fastighetsskatt ändras från 2019](rus-assessed-tax-declaration.md)|
+|      2019 april          |   10.0.1      |    Ryssland     |[Preliminär momsdeklaration](rus-assessed-tax-declaration.md)|
 |      2019 april          |   10.0.1      |    Ryssland     |Deklaration för transportskatt ändras från 2019  |
-|      2019 april          |   10.0.1      |    Ryssland     |[Momsdeklarationsformat ändras från 2019](rus-VAT-declaration.md) |
+|      2019 april          |   10.0.1      |    Ryssland     |[Momsdeklaration](rus-VAT-declaration.md) |
 |      2019 april          |   10.0.1      |    Ryssland     |Momsdeklarationsformat ändras från 2019 (försäljnings- och inköpsböcker) |
-|      2019 april          |   10.0.1      |    Storbritannien     |[Ändringar i överföring av momsrapport (gör moms digital)](emea-gbr-mtd-vat-integration.md)    |    
+|      2019 april          |   10.0.1      |    Storbritannien     |[Förbered Finance and Operations för integration med MTD för moms](emea-gbr-mtd-vat-integration.md)    |    
 |      2019 mars          |   10.0.0      |    Österrike   |   Ändringar i Kammerumlage 2019 (inköpsavgift)    |
 |      2019 mars          |   10.0.0      |    Brasilien    |     SPED EFD bidrag - Layout 004 och 005  |
 |      2019 mars          |   10.0.0      |    Malaysia     |Malaysia ersätter GST med SST försäljnings- och tjänsteskatt        |

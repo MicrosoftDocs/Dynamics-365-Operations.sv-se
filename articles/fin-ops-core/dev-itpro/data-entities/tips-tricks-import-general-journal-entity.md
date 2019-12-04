@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167afa70bfa35b966081709f1587d61d401d318f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184357"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769620"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
 
@@ -57,7 +57,7 @@ Följande avsnitt innehåller en beskrivning av effekten av dessa inställningar
 
 ### <a name="voucher-number"></a>Verifikationsnummer
 
-- Om du använder inställningen **Uppsättningsbaserad bearbetning** för enheten Allmän journal måste verifikationsnumret anges i den importerade filen. Varje transaktion i den allmänna journalen tilldelas det verifikationsnummer som tillhandahålls i den importerade filen även om verifikationen inte är balanserad. Om du vill använda uppsättningsbaserad bearbetning men även vill använda det nummerserie som har definierats för verifikationsnummer finns det en snabbkorrigering för i februariutgåvan 2016. Snabbkorrigeringsnumret är 3170316 och kan hämtas från Lifestyle services (LCS). Mer information hittar du i [Hämta snabbkorrigeringar från Lifestyle Services](../migration-upgrade/download-hotfix-lcs.md).
+- Om du använder inställningen **Uppsättningsbaserad bearbetning** för enheten Allmän journal måste verifikationsnumret anges i den importerade filen. Varje transaktion i den allmänna journalen tilldelas det verifikationsnummer som tillhandahålls i den importerade filen även om verifikationen inte är balanserad. Om du vill använda uppsättningsbaserad bearbetning men även vill använda det nummerserie som har definierats för verifikationsnummer finns det en snabbkorrigering för i februariutgåvan 2016. Snabbkorrigeringsnumret är 3170316 och kan hämtas från Lifestyle services (LCS). Mer information hittar du i [Hämta uppdateringar från Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 
     - Om du vill aktivera den här funktionen på journalnamnet som används för importer, ställ in **Nummerallokering vid bokföring** på **Ja**.
     - Ett verifikationsnummer måste fortfarande definieras i den importerade filen. Detta nummer är dock temporärt och skrivs över av verifikationsnumret när journalen bokförs. Du måste kontrollera att raderna i journalen är korrekt grupperade efter temporära verifikationsnummer. Till exempel under bokföring hittas tre rader som har ett tillfälligt verifikationsnummer 1. Det tillfälliga verifikationsnumret för alla tre rader skrivs över av nästa nummer i nummerserien. Om dessa tre rader inte är balanserade poster bokförs inte verifikationen. Om det dessutom finns rader som har det temporära verifikationsnumret 2 skrivs det här numret över med nästa verifikationsnummer i nummerserien och så vidare.

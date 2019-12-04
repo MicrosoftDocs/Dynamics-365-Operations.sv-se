@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74750397dc344d74c018c27114357d3d05b95b7e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550117"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771270"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Förbered programspecifika metadata för RCS och ER
 
@@ -43,7 +43,7 @@ För det här exemplet vill du använda RCS för att utforma en ER-lösning för
 > I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litware, Inc. Dessa steg kan utföras i något företag.
 
 1. Gå till **Organisationsadministration \> Arbetsytor \> Elektronisk rapportering**.
-2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren[ Skapa en konfigurationsleverantör och välj den som aktiv.](tasks/er-configuration-provider-mark-it-active-2016-11.md) 
+2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra proceduren [Skapa konfigurationsleverantörer och välj dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
 3. Välj **Metadatakonfiguration**.
 4. Välj **Skapa konfiguration**.
 5. Ange ett namn i listrutan i fältet **namn**. I det här exemplet anger du **metadata för utländsk handel**.
@@ -54,14 +54,14 @@ För det här exemplet vill du använda RCS för att utforma en ER-lösning för
     > [!NOTE]
     > Du kan välja alla metadata för antingen hela programmet eller valda modeller eller moduler. I ba fall ska du tänka på att följande metadata kommer att läggas till automatiskt i det här fallet: register över poster, uppräkningar och utökade datatypern (ETD:er). Om det behövs ytterligare typer av metadata måste de läggas till manuellt.
 
-Du måste lägga till vissa metadata relaterade till externa handelstransaktioner pch markera metadataelement manuellt.
+    Du måste lägga till vissa metadata relaterade till externa handelstransaktioner pch markera metadataelement manuellt.
 
 9. Välj **Lägg till datakälla \> Tabellregister**.
 10. Filtrera på ett värde för **Intrastat** i fältet **namn**.
 11. Väljtabellregister **Intrastat**.
 12. Välj **OK**.
 
-Du måste lägga till metadatainformation om Intrastat-tabellen med poster.
+    Du måste lägga till metadatainformation om Intrastat-tabellen med poster.
 
 13. I trädet väljer du **Tabellregister Intrastat \> \>Relationer \> IntrastatCommodity (Tabellregister EcoResCategory)**.
 14. Välj **Lägg till metadata**.
@@ -95,11 +95,11 @@ Följande procedur visar hur en RCS.användare som har rollen **Systemadministra
 
 Innan du kan slutföra proceduren, måste du först slutföra följande procedurer:
 
-- [Skapa en konfigurationsleverantör och välj den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md)
+- [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 - [Förbered programdata att användas i RCS](#prepare-application-metadata-that-can-be-used-in-rcs)
 
 1. Gå till **Alla arbetsytor \> Elektronisk rapportering**.
-2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren[ Skapa en konfigurationsleverantör och välj den som aktiv.](tasks/er-configuration-provider-mark-it-active-2016-11.md) 
+2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra proceduren [Skapa konfigurationsleverantörer och välj dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md). 
 3. Importera ER-metadatakonfigurationen som innehåller metadata från programmet som är konfigurerat att generera elektroniska dokument för domäner för utländsk handel. Du har skapat den här ER-konfigurationen av metadata och exporterat den som en XML-fil i proceduren [Förbereda programmetadata som kan användas i RCS](#prepare-application-metadata-that-can-be-used-in-rcs) tidigare i det här avsnittet.
 
     1. Välj **Metadatakonfiguration**.
@@ -201,7 +201,7 @@ När du behöver utöka den befintliga uppsättningen metadata kan du göra det 
 
 Följande procedur visar hur en RCS.användare som har rollen **Systemadministratör** eller **Utvecklare av elektronisk rapportering** kan designa en ny ER-modellmappning genom att använda metadata från programmet. Programdata kan nås online genom att använda det RCS-anslutna programmet. Exempel på ER-modellmappning kommer att konfigureras för åtkomst till utländska handelstransaktioner.
 
-För att slutföra den här proceduren måste du först slutföra stegen i proceduren [ER Skapa en konfigurationsleverantör och markera den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md) i RCS. Om du inte har slutfört proceduren [Få åtkomst till programdata genom att använda ER-konfiguration](#access-application-metadata-by-using-an-er-configuration), gå till sidan [Elektroniska rapporteringsguider för Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) för att hämta och spara följande ER-konfigurationsfiler i förväg och spara dem lokalt; **Utländsk handel metadata.xml**, **Utländsk handel model.xml**; **Utländsk handel mapping.xml** och slutför sedan stegen i proceduren.
+För att slutföra den här proceduren måste du först slutföra stegen i proceduren [Skapa konfigurationsleverantörer och markera dem som aktiva](tasks/er-configuration-provider-mark-it-active-2016-11.md) i RCS. Om du inte har slutfört proceduren [Få åtkomst till programdata genom att använda ER-konfiguration](#access-application-metadata-by-using-an-er-configuration), gå till sidan [Elektroniska rapporteringsguider för Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) för att hämta och spara följande ER-konfigurationsfiler i förväg och spara dem lokalt; **Utländsk handel metadata.xml**, **Utländsk handel model.xml**; **Utländsk handel mapping.xml** och slutför sedan stegen i proceduren.
 
 
 ### <a name="get-required-er-configurations"></a>Skapa nödvändiga ER-konfigurationer
