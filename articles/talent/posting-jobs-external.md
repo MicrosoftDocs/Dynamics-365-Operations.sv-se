@@ -1,6 +1,6 @@
 ---
-title: Publicera jobb från Attract på externa karriärwebbplatser
-description: Det här avsnittet beskriver hur du använder Dynamics 365 Talent - Attract för att publicera jobb till externa rekryteringswebbplatser
+title: Publicera jobb på Broadbean från Attract
+description: Det här avsnittet beskriver hur du använder Dynamics 365 Talent - Attract för att publicera jobb till Broadbean.
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,88 +17,88 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 2c822a1f799144bb9240fc0cbdeb6c5441e278af
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 41fa057606887069a9ea0f1f2178eeaff59f33ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551413"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832680"
 ---
-# <a name="post-jobs-to-external-career-sites-from-attract"></a><span data-ttu-id="8f81a-103">Publicera jobb från Attract på externa karriärwebbplatser</span><span class="sxs-lookup"><span data-stu-id="8f81a-103">Post jobs to external career sites from Attract</span></span>
+# <a name="post-jobs-to-broadbean-from-attract"></a><span data-ttu-id="77e63-103">Publicera jobb på Broadbean från Attract</span><span class="sxs-lookup"><span data-stu-id="77e63-103">Post jobs to Broadbean from Attract</span></span>
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-<span data-ttu-id="8f81a-104">Microsoft Dynamics 365 Talent: Attract hjälper dig att få den talang du behöver genom att låta dig publicera dina jobb direkt från Attract till Broadbean.</span><span class="sxs-lookup"><span data-stu-id="8f81a-104">Microsoft Dynamics 365 Talent: Attract helps you get the talent you need by letting you post your jobs directly from Attract to Broadbean.</span></span> <span data-ttu-id="8f81a-105">När du [skapar ett jobb](./creating-jobs-attract.md) behöver du bara klicka på en knapp för att placera jobbet framför alla potentiella jobbkandidater på Broadbean.</span><span class="sxs-lookup"><span data-stu-id="8f81a-105">After you [create a job](./creating-jobs-attract.md), all you have to do is click a button to put your job in front of all the potential job candidates on Broadbean.</span></span>
+<span data-ttu-id="77e63-104">Microsoft Dynamics 365 Talent: Attract hjälper dig att få den talang du behöver genom att låta dig publicera dina jobb direkt från Attract till Broadbean.</span><span class="sxs-lookup"><span data-stu-id="77e63-104">Microsoft Dynamics 365 Talent: Attract helps you get the talent you need by letting you post your jobs directly from Attract to Broadbean.</span></span> <span data-ttu-id="77e63-105">När du [skapar ett jobb](./creating-jobs-attract.md) behöver du bara klicka på en knapp för att placera jobbet framför alla potentiella jobbkandidater på Broadbean.</span><span class="sxs-lookup"><span data-stu-id="77e63-105">After you [create a job](./creating-jobs-attract.md), all you have to do is click a button to put your job in front of all the potential job candidates on Broadbean.</span></span>
 
-<span data-ttu-id="8f81a-106">Publicering av jobb till Broadbean kräver en lämplig Broadbean-licens.</span><span class="sxs-lookup"><span data-stu-id="8f81a-106">Posting jobs to Broadbean requires an appropriate Broadbean license.</span></span> <span data-ttu-id="8f81a-107">Broadbean erbjuder olika produkter och planer.</span><span class="sxs-lookup"><span data-stu-id="8f81a-107">Broadbean offers various products and plans.</span></span> <span data-ttu-id="8f81a-108">Om du vill ha mer information om Broadbean licensiering och priser [kontakta Broadbean](https://www.broadbean.com/contact-us/).</span><span class="sxs-lookup"><span data-stu-id="8f81a-108">For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).</span></span>
+<span data-ttu-id="77e63-106">Publicering av jobb till Broadbean kräver en lämplig Broadbean-licens.</span><span class="sxs-lookup"><span data-stu-id="77e63-106">Posting jobs to Broadbean requires an appropriate Broadbean license.</span></span> <span data-ttu-id="77e63-107">Broadbean erbjuder olika produkter och planer.</span><span class="sxs-lookup"><span data-stu-id="77e63-107">Broadbean offers various products and plans.</span></span> <span data-ttu-id="77e63-108">Om du vill ha mer information om Broadbean licensiering och priser [kontakta Broadbean](https://www.broadbean.com/contact-us/).</span><span class="sxs-lookup"><span data-stu-id="77e63-108">For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).</span></span>
 
-<span data-ttu-id="8f81a-109">Om du är en administratör som behöver mer information om hur du konfigurerar Broadbean-integrering med Attract, se [Ange inställningar för externa jobbtavlor](./attract-admin-job-board-settings.md).</span><span class="sxs-lookup"><span data-stu-id="8f81a-109">If you're an admin who needs more information about how to configure Broadbean integration with Attract, see [Enter settings for external job boards](./attract-admin-job-board-settings.md).</span></span>
+<span data-ttu-id="77e63-109">Om du är administratör och behöver mer information om hur du konfigurerar Broadbean-integrationen med Attract, se [konfigurera integration med Broadbean för Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md).</span><span class="sxs-lookup"><span data-stu-id="77e63-109">If you're an admin who needs more information about how to configure Broadbean integration with Attract, see [Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md).</span></span>
 
-## <a name="post-jobs-to-broadbean"></a><span data-ttu-id="8f81a-110">Publicera jobb till Broadbean</span><span class="sxs-lookup"><span data-stu-id="8f81a-110">Post jobs to Broadbean</span></span>
+## <a name="post-jobs-to-broadbean"></a><span data-ttu-id="77e63-110">Publicera jobb till Broadbean</span><span class="sxs-lookup"><span data-stu-id="77e63-110">Post jobs to Broadbean</span></span>
 
-<span data-ttu-id="8f81a-111">När Broadbean har aktiverats kan rekryterare och administratörer publicera ett jobb på den.</span><span class="sxs-lookup"><span data-stu-id="8f81a-111">After Broadbean has been turned on, recruiters and admins can post a job to it.</span></span> <span data-ttu-id="8f81a-112">Du måste ha en svars-URL för jobbet.</span><span class="sxs-lookup"><span data-stu-id="8f81a-112">You must have an apply URL for the job.</span></span>
+<span data-ttu-id="77e63-111">När Broadbean har aktiverats kan rekryterare och administratörer publicera ett jobb på den.</span><span class="sxs-lookup"><span data-stu-id="77e63-111">After Broadbean has been turned on, recruiters and admins can post a job to it.</span></span> <span data-ttu-id="77e63-112">Du måste ha en svars-URL för jobbet.</span><span class="sxs-lookup"><span data-stu-id="77e63-112">You must have an apply URL for the job.</span></span>
 
-1. <span data-ttu-id="8f81a-113">I Attract öppnar du det jobb som du vill publicera i Broadbean.</span><span class="sxs-lookup"><span data-stu-id="8f81a-113">In Attract, open the job that you want to post to Broadbean.</span></span>
-2. <span data-ttu-id="8f81a-114">I avsnittet **bokföringar** väljer du knappen **bokför nu** som motsvarar Broadbean.</span><span class="sxs-lookup"><span data-stu-id="8f81a-114">In the **Postings** section, select the **Post Now** button that corresponds to Broadbean.</span></span>
-3. <span data-ttu-id="8f81a-115">Följ anvisningarna i Broadbean-fönstret.</span><span class="sxs-lookup"><span data-stu-id="8f81a-115">Follow the instructions in the Broadbean window.</span></span>
+1. <span data-ttu-id="77e63-113">I Attract öppnar du det jobb som du vill publicera i Broadbean.</span><span class="sxs-lookup"><span data-stu-id="77e63-113">In Attract, open the job that you want to post to Broadbean.</span></span>
+2. <span data-ttu-id="77e63-114">I avsnittet **bokföringar** väljer du knappen **bokför nu** som motsvarar Broadbean.</span><span class="sxs-lookup"><span data-stu-id="77e63-114">In the **Postings** section, select the **Post Now** button that corresponds to Broadbean.</span></span>
+3. <span data-ttu-id="77e63-115">Följ anvisningarna i Broadbean-fönstret.</span><span class="sxs-lookup"><span data-stu-id="77e63-115">Follow the instructions in the Broadbean window.</span></span>
 
-<span data-ttu-id="8f81a-116">Attract skickar följande information till Broadbean:</span><span class="sxs-lookup"><span data-stu-id="8f81a-116">Attract passes the following information to Broadbean:</span></span>
+<span data-ttu-id="77e63-116">Attract skickar följande information till Broadbean:</span><span class="sxs-lookup"><span data-stu-id="77e63-116">Attract passes the following information to Broadbean:</span></span>
 
-- <span data-ttu-id="8f81a-117">ID för begäran</span><span class="sxs-lookup"><span data-stu-id="8f81a-117">Request ID</span></span>
-- <span data-ttu-id="8f81a-118">Jobbtitel</span><span class="sxs-lookup"><span data-stu-id="8f81a-118">Job title</span></span>
-- <span data-ttu-id="8f81a-119">Jobbeskrivning</span><span class="sxs-lookup"><span data-stu-id="8f81a-119">Job description</span></span>
-- <span data-ttu-id="8f81a-120">Plats för jobbet</span><span class="sxs-lookup"><span data-stu-id="8f81a-120">Job location</span></span>
-- <span data-ttu-id="8f81a-121">Svars-URL</span><span class="sxs-lookup"><span data-stu-id="8f81a-121">Apply URL</span></span>
-- <span data-ttu-id="8f81a-122">Rekryteringsinformation</span><span class="sxs-lookup"><span data-stu-id="8f81a-122">Recruiter information</span></span>
+- <span data-ttu-id="77e63-117">ID för begäran</span><span class="sxs-lookup"><span data-stu-id="77e63-117">Request ID</span></span>
+- <span data-ttu-id="77e63-118">Jobbtitel</span><span class="sxs-lookup"><span data-stu-id="77e63-118">Job title</span></span>
+- <span data-ttu-id="77e63-119">Jobbeskrivning</span><span class="sxs-lookup"><span data-stu-id="77e63-119">Job description</span></span>
+- <span data-ttu-id="77e63-120">Plats för jobbet</span><span class="sxs-lookup"><span data-stu-id="77e63-120">Job location</span></span>
+- <span data-ttu-id="77e63-121">Svars-URL</span><span class="sxs-lookup"><span data-stu-id="77e63-121">Apply URL</span></span>
+- <span data-ttu-id="77e63-122">Rekryteringsinformation</span><span class="sxs-lookup"><span data-stu-id="77e63-122">Recruiter information</span></span>
 
-<span data-ttu-id="8f81a-123">Efter att Broadbean slutför publiceringen visar avsnittet **Publiceringar** av jobbet i Attract Broadbean status som **publicerad**.</span><span class="sxs-lookup"><span data-stu-id="8f81a-123">After Broadbean successfully completes the posting, the **Postings** section of the job in Attract shows the Broadbean status as **Posted**.</span></span>
+<span data-ttu-id="77e63-123">Efter att Broadbean slutför publiceringen visar avsnittet **Publiceringar** av jobbet i Attract Broadbean status som **publicerad**.</span><span class="sxs-lookup"><span data-stu-id="77e63-123">After Broadbean successfully completes the posting, the **Postings** section of the job in Attract shows the Broadbean status as **Posted**.</span></span>
 
 > [!NOTE]
-> - <span data-ttu-id="8f81a-124">Broadbean kräver fältet **bransch**.</span><span class="sxs-lookup"><span data-stu-id="8f81a-124">Broadbean requires the **Industry** field.</span></span> <span data-ttu-id="8f81a-125">För närvarande är detta fält som standard inställt på **IT**.</span><span class="sxs-lookup"><span data-stu-id="8f81a-125">Currently, this field is set to **IT** by default.</span></span> <span data-ttu-id="8f81a-126">Du kan emellertid ändra värdet till rätt branschen i fönstret för Broadbean jobbpublicering.</span><span class="sxs-lookup"><span data-stu-id="8f81a-126">However, you can change the value to the correct industry in the window for Broadbean job posting.</span></span>
-> - <span data-ttu-id="8f81a-127">Det tar en stund för Broadbean att slutföra publicering av jobbet till alla jobbtavlor som du har valt.</span><span class="sxs-lookup"><span data-stu-id="8f81a-127">It takes some time for Broadbean to finish posting your job to all the job boards that you selected.</span></span> <span data-ttu-id="8f81a-128">Därför kan finnas det en fördröjning innan Attract ger en statusuppdatering för jobbet.</span><span class="sxs-lookup"><span data-stu-id="8f81a-128">Therefore, there might be a slight delay before Attract provides a status update for the job.</span></span>
+> - <span data-ttu-id="77e63-124">Broadbean kräver fältet **bransch**.</span><span class="sxs-lookup"><span data-stu-id="77e63-124">Broadbean requires the **Industry** field.</span></span> <span data-ttu-id="77e63-125">För närvarande är detta fält som standard inställt på **IT**.</span><span class="sxs-lookup"><span data-stu-id="77e63-125">Currently, this field is set to **IT** by default.</span></span> <span data-ttu-id="77e63-126">Du kan emellertid ändra värdet till rätt branschen i fönstret för Broadbean jobbpublicering.</span><span class="sxs-lookup"><span data-stu-id="77e63-126">However, you can change the value to the correct industry in the window for Broadbean job posting.</span></span>
+> - <span data-ttu-id="77e63-127">Det tar en stund för Broadbean att slutföra publicering av jobbet till alla jobbtavlor som du har valt.</span><span class="sxs-lookup"><span data-stu-id="77e63-127">It takes some time for Broadbean to finish posting your job to all the job boards that you selected.</span></span> <span data-ttu-id="77e63-128">Därför kan finnas det en fördröjning innan Attract ger en statusuppdatering för jobbet.</span><span class="sxs-lookup"><span data-stu-id="77e63-128">Therefore, there might be a slight delay before Attract provides a status update for the job.</span></span>
 
-### <a name="view-a-broadbean-job-posting"></a><span data-ttu-id="8f81a-129">Visa en Broadbean jobbpublicering</span><span class="sxs-lookup"><span data-stu-id="8f81a-129">View a Broadbean job posting</span></span>
+### <a name="view-a-broadbean-job-posting"></a><span data-ttu-id="77e63-129">Visa en Broadbean jobbpublicering</span><span class="sxs-lookup"><span data-stu-id="77e63-129">View a Broadbean job posting</span></span>
 
-<span data-ttu-id="8f81a-130">När du har publicerat ett jobb till Broadbean kan du visa det från Attract.</span><span class="sxs-lookup"><span data-stu-id="8f81a-130">After you post a job to Broadbean, you can view it from Attract.</span></span>
+<span data-ttu-id="77e63-130">När du har publicerat ett jobb till Broadbean kan du visa det från Attract.</span><span class="sxs-lookup"><span data-stu-id="77e63-130">After you post a job to Broadbean, you can view it from Attract.</span></span>
 
-1. <span data-ttu-id="8f81a-131">I Attract öppnar du det jobb som du vill visa i Broadbean.</span><span class="sxs-lookup"><span data-stu-id="8f81a-131">In Attract, open the job that you want to view on Broadbean.</span></span>
-2. <span data-ttu-id="8f81a-132">På fliken **publiceringar** väljer du ellips-knappen (**...**) som motsvarar Broadbean och markerar sedan **visa**.</span><span class="sxs-lookup"><span data-stu-id="8f81a-132">On the **Postings** tab, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.</span></span>
+1. <span data-ttu-id="77e63-131">I Attract öppnar du det jobb som du vill visa i Broadbean.</span><span class="sxs-lookup"><span data-stu-id="77e63-131">In Attract, open the job that you want to view on Broadbean.</span></span>
+2. <span data-ttu-id="77e63-132">På fliken **publiceringar** väljer du ellips-knappen (**...**) som motsvarar Broadbean och markerar sedan **visa**.</span><span class="sxs-lookup"><span data-stu-id="77e63-132">On the **Postings** tab, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.</span></span>
 
-<span data-ttu-id="8f81a-133">Broadbean jobbpublicering visas i ett nytt fönster.</span><span class="sxs-lookup"><span data-stu-id="8f81a-133">The Broadbean job posting appears in a new window.</span></span>
+<span data-ttu-id="77e63-133">Broadbean jobbpublicering visas i ett nytt fönster.</span><span class="sxs-lookup"><span data-stu-id="77e63-133">The Broadbean job posting appears in a new window.</span></span>
 
-### <a name="update-a-broadbean-job-posting"></a><span data-ttu-id="8f81a-134">Uppdatera en Broadbean jobbpublicering</span><span class="sxs-lookup"><span data-stu-id="8f81a-134">Update a Broadbean job posting</span></span>
+### <a name="update-a-broadbean-job-posting"></a><span data-ttu-id="77e63-134">Uppdatera en Broadbean jobbpublicering</span><span class="sxs-lookup"><span data-stu-id="77e63-134">Update a Broadbean job posting</span></span>
 
-<span data-ttu-id="8f81a-135">Du kan uppdatera en Broadbean jobbpublicering på två sätt.</span><span class="sxs-lookup"><span data-stu-id="8f81a-135">You can update a Broadbean job posting in two ways.</span></span>
+<span data-ttu-id="77e63-135">Du kan uppdatera en Broadbean jobbpublicering på två sätt.</span><span class="sxs-lookup"><span data-stu-id="77e63-135">You can update a Broadbean job posting in two ways.</span></span>
 
-1. <span data-ttu-id="8f81a-136">I Attract öppnar du det jobb som du vill uppdatera.</span><span class="sxs-lookup"><span data-stu-id="8f81a-136">In Attract, open the job that you want to update.</span></span>
-2. <span data-ttu-id="8f81a-137">I avsnittet **bokföringar** väljer du knappen **uppdatera publicering** som motsvarar Broadbean.</span><span class="sxs-lookup"><span data-stu-id="8f81a-137">In the **Postings** section, select the **Update Post** button that corresponds to Broadbean.</span></span>
-3. <span data-ttu-id="8f81a-138">Redigera publiceringen i Broadbean-fönstret.</span><span class="sxs-lookup"><span data-stu-id="8f81a-138">Edit the posting in the Broadbean window.</span></span>
+1. <span data-ttu-id="77e63-136">I Attract öppnar du det jobb som du vill uppdatera.</span><span class="sxs-lookup"><span data-stu-id="77e63-136">In Attract, open the job that you want to update.</span></span>
+2. <span data-ttu-id="77e63-137">I avsnittet **bokföringar** väljer du knappen **uppdatera publicering** som motsvarar Broadbean.</span><span class="sxs-lookup"><span data-stu-id="77e63-137">In the **Postings** section, select the **Update Post** button that corresponds to Broadbean.</span></span>
+3. <span data-ttu-id="77e63-138">Redigera publiceringen i Broadbean-fönstret.</span><span class="sxs-lookup"><span data-stu-id="77e63-138">Edit the posting in the Broadbean window.</span></span>
 
-<span data-ttu-id="8f81a-139">–eller–</span><span class="sxs-lookup"><span data-stu-id="8f81a-139">–or–</span></span>
+    <span data-ttu-id="77e63-139">–eller–</span><span class="sxs-lookup"><span data-stu-id="77e63-139">–or–</span></span>
 
-1. <span data-ttu-id="8f81a-140">I Attract öppnar du det jobb som du vill visa i Broadbean.</span><span class="sxs-lookup"><span data-stu-id="8f81a-140">In Attract, open the job that you want to view on Broadbean.</span></span>
-2. <span data-ttu-id="8f81a-141">I avsnittet **publiceringar** väljer du ellips-knappen (**...**) som motsvarar Broadbean och markerar sedan **visa**.</span><span class="sxs-lookup"><span data-stu-id="8f81a-141">In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.</span></span>
-3. <span data-ttu-id="8f81a-142">Redigera informationen för projektet i Broadbean-fönstret och publicera sedan jobbet igen.</span><span class="sxs-lookup"><span data-stu-id="8f81a-142">In the Broadbean window, edit the job details, and then repost the job.</span></span> <span data-ttu-id="8f81a-143">Jobbdetaljer i Attract ändras inte.</span><span class="sxs-lookup"><span data-stu-id="8f81a-143">The job details in Attract aren't changed.</span></span>
+1. <span data-ttu-id="77e63-140">I Attract öppnar du det jobb som du vill visa i Broadbean.</span><span class="sxs-lookup"><span data-stu-id="77e63-140">In Attract, open the job that you want to view on Broadbean.</span></span>
+2. <span data-ttu-id="77e63-141">I avsnittet **publiceringar** väljer du ellips-knappen (**...**) som motsvarar Broadbean och markerar sedan **visa**.</span><span class="sxs-lookup"><span data-stu-id="77e63-141">In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.</span></span>
+3. <span data-ttu-id="77e63-142">Redigera informationen för projektet i Broadbean-fönstret och publicera sedan jobbet igen.</span><span class="sxs-lookup"><span data-stu-id="77e63-142">In the Broadbean window, edit the job details, and then repost the job.</span></span> <span data-ttu-id="77e63-143">Jobbdetaljer i Attract ändras inte.</span><span class="sxs-lookup"><span data-stu-id="77e63-143">The job details in Attract aren't changed.</span></span>
 
-### <a name="remove-a-broadbean-job-posting"></a><span data-ttu-id="8f81a-144">Ta bort en Broadbean jobbpublicering</span><span class="sxs-lookup"><span data-stu-id="8f81a-144">Remove a Broadbean job posting</span></span>
+### <a name="remove-a-broadbean-job-posting"></a><span data-ttu-id="77e63-144">Ta bort en Broadbean jobbpublicering</span><span class="sxs-lookup"><span data-stu-id="77e63-144">Remove a Broadbean job posting</span></span>
 
-<span data-ttu-id="8f81a-145">Du kan ta bort en jobbpublicering från Broadbean som du behöver.</span><span class="sxs-lookup"><span data-stu-id="8f81a-145">You can remove a job posting from Broadbean as you require.</span></span>
+<span data-ttu-id="77e63-145">Du kan ta bort en jobbpublicering från Broadbean som du behöver.</span><span class="sxs-lookup"><span data-stu-id="77e63-145">You can remove a job posting from Broadbean as you require.</span></span>
 
-1. <span data-ttu-id="8f81a-146">I Attract öppnar du det jobb som du vill ta bort.</span><span class="sxs-lookup"><span data-stu-id="8f81a-146">In Attract, open the job that you want to remove.</span></span>
-2. <span data-ttu-id="8f81a-147">I avsnittet **publiceringar** väljer du ellips-knappen (**...**) som motsvarar Broadbean och markerar sedan **ta bort publicering**.</span><span class="sxs-lookup"><span data-stu-id="8f81a-147">In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **Remove Post**.</span></span>
+1. <span data-ttu-id="77e63-146">I Attract öppnar du det jobb som du vill ta bort.</span><span class="sxs-lookup"><span data-stu-id="77e63-146">In Attract, open the job that you want to remove.</span></span>
+2. <span data-ttu-id="77e63-147">I avsnittet **publiceringar** väljer du ellips-knappen (**...**) som motsvarar Broadbean och markerar sedan **ta bort publicering**.</span><span class="sxs-lookup"><span data-stu-id="77e63-147">In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **Remove Post**.</span></span>
 
-<span data-ttu-id="8f81a-148">När Broadbean tar bort jobbet har Broadbean-artikeln i Attract en **Publicera nu**-knapp.</span><span class="sxs-lookup"><span data-stu-id="8f81a-148">After Broadbean removes the job, the Broadbean item in Attract has a **Post Now** button.</span></span> <span data-ttu-id="8f81a-149">Förekomsten av den här knappen anger att jobbet har tagits bort och kan publiceras igen.</span><span class="sxs-lookup"><span data-stu-id="8f81a-149">The presence of this button indicates that the job has been removed and can be posted again.</span></span>
+<span data-ttu-id="77e63-148">När Broadbean tar bort jobbet har Broadbean-artikeln i Attract en **Publicera nu**-knapp.</span><span class="sxs-lookup"><span data-stu-id="77e63-148">After Broadbean removes the job, the Broadbean item in Attract has a **Post Now** button.</span></span> <span data-ttu-id="77e63-149">Förekomsten av den här knappen anger att jobbet har tagits bort och kan publiceras igen.</span><span class="sxs-lookup"><span data-stu-id="77e63-149">The presence of this button indicates that the job has been removed and can be posted again.</span></span>
 
-### <a name="troubleshoot-job-posting-to-broadbean"></a><span data-ttu-id="8f81a-150">Felsökning av jobbpublicering i Broadbean</span><span class="sxs-lookup"><span data-stu-id="8f81a-150">Troubleshoot job posting to Broadbean</span></span>
+### <a name="troubleshoot-job-posting-to-broadbean"></a><span data-ttu-id="77e63-150">Felsökning av jobbpublicering i Broadbean</span><span class="sxs-lookup"><span data-stu-id="77e63-150">Troubleshoot job posting to Broadbean</span></span>
 
-<span data-ttu-id="8f81a-151">Om du har problem med att publicera ett jobb i Broadbean kan du försöka med följande steg.</span><span class="sxs-lookup"><span data-stu-id="8f81a-151">If you're having trouble posting a job to Broadbean, try these steps.</span></span>
+<span data-ttu-id="77e63-151">Om du har problem med att publicera ett jobb i Broadbean kan du försöka med följande steg.</span><span class="sxs-lookup"><span data-stu-id="77e63-151">If you're having trouble posting a job to Broadbean, try these steps.</span></span>
 
-1. <span data-ttu-id="8f81a-152">Kontrollera att autentiseringsuppgifterna för Broadbean som du angav i Attract är korrekta.</span><span class="sxs-lookup"><span data-stu-id="8f81a-152">Verify that the Broadbean credentials that you entered in Attract are valid and correct.</span></span>
-2. <span data-ttu-id="8f81a-153">Om autentiseringsuppgifterna är korrekta kan du kontakta [Broadbean-support](https://www.broadbean.com/resources/support/).</span><span class="sxs-lookup"><span data-stu-id="8f81a-153">If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).</span></span>
-3. <span data-ttu-id="8f81a-154">Om problemet kvarstår kontaktar du [Microsoft support](./talent-support.md).</span><span class="sxs-lookup"><span data-stu-id="8f81a-154">If the issue persists, contact [Microsoft support](./talent-support.md).</span></span>
+1. <span data-ttu-id="77e63-152">Kontrollera att autentiseringsuppgifterna för Broadbean som du angav i Attract är korrekta.</span><span class="sxs-lookup"><span data-stu-id="77e63-152">Verify that the Broadbean credentials that you entered in Attract are valid and correct.</span></span>
+2. <span data-ttu-id="77e63-153">Om autentiseringsuppgifterna är korrekta kan du kontakta [Broadbean-support](https://www.broadbean.com/resources/support/).</span><span class="sxs-lookup"><span data-stu-id="77e63-153">If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).</span></span>
+3. <span data-ttu-id="77e63-154">Om problemet kvarstår kontaktar du [Microsoft support](./talent-support.md).</span><span class="sxs-lookup"><span data-stu-id="77e63-154">If the issue persists, contact [Microsoft support](./talent-support.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8f81a-155">Se även</span><span class="sxs-lookup"><span data-stu-id="8f81a-155">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="77e63-155">Se även</span><span class="sxs-lookup"><span data-stu-id="77e63-155">See also</span></span>
 
-[<span data-ttu-id="8f81a-156">Skapa jobb</span><span class="sxs-lookup"><span data-stu-id="8f81a-156">Create jobs</span></span>](./creating-jobs-attract.md)
+[<span data-ttu-id="77e63-156">Skapa, godkänna och bokföra jobb i Attract</span><span class="sxs-lookup"><span data-stu-id="77e63-156">Create, approve, and post jobs in Attract</span></span>](./creating-jobs-attract.md)
 
-[<span data-ttu-id="8f81a-157">Ange inställningar för externa jobbtavlor</span><span class="sxs-lookup"><span data-stu-id="8f81a-157">Enter settings for external job boards</span></span>](./attract-admin-job-board-settings.md)
+[<span data-ttu-id="77e63-157">Aktivera Broadbean-integrering i Microsoft Dynamics 365 Talent - Attract</span><span class="sxs-lookup"><span data-stu-id="77e63-157">Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract</span></span>](./attract-admin-job-board-settings.md)
