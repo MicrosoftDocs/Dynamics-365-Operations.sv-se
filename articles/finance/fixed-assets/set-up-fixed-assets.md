@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eef9d8c58d19b05901035f4c679ee7d9902819
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179944"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771930"
 ---
 # <a name="set-up-fixed-assets"></a>Ställ in anläggningstillgångar
 
@@ -51,7 +51,7 @@ När du har ställt in avskrivningsprofiler måste du skapa de nödvändiga böc
 
 En primär avskrivningsprofil tilldelas varje bok. Böcker har också en alternativ eller profil för avskrivningsomställning, om denna profiltyp kan användas. För att automatiskt inkludera förteckningar över anläggningstillgångar i avskrivningskörningar måste du aktivera alternativet **Beräkna avskrivning** . Om detta alternativ inte aktiveras för en tillgång, hoppar avskrivningsförslaget över tillgången.
 
-Du kan också ställa in härledda böcker. De angivna härledda transaktionerna bokförs som en exakt kopia av den primära transaktionen mot de härledda böckerna. Därför ställs härledda transaktioner vanligtvis in för anskaffningar och avyttringar, inte för avskrivningstransaktioner. Mer information finns i [Ställ in böcker](tasks/set-up-value-models.md).
+Du kan också ställa in härledda böcker. De angivna härledda transaktionerna bokförs som en exakt kopia av den primära transaktionen mot de härledda böckerna. Därför ställs härledda transaktioner vanligtvis in för anskaffningar och avyttringar, inte för avskrivningstransaktioner. Mer information finns i [Ställ in värdemodeller](tasks/set-up-value-models.md).
 
 ## <a name="fixed-asset-posting-profiles"></a>Bokföringsprofiler för anläggningstillgångar
 

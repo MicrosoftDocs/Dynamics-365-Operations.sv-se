@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179995"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772638"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Avancerad inställningsprocess för bankavstämning
 
@@ -31,7 +31,7 @@ ms.locfileid: "2179995"
 
 Med hjälp av Avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 Finance. Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning.  
 
-Det finns ett antal delar som måste ställas in innan du använder funktionen för avancerad bankavstämning. Mer information om hur du ställer in import av bankutdrag finns i [Ställa in importprocessen för bankutdrag](set-up-advanced-bank-reconciliation-import-process.md).  Kraven för konfigurering av avstämningsprocessen beskrivs nedan.
+Det finns ett antal delar som måste ställas in innan du använder funktionen för avancerad bankavstämning. Mer information om hur du ställer in import av bankutdrag finns i [Ställa in importprocessen för avancerad bankavstämning](set-up-advanced-bank-reconciliation-import-process.md).  Kraven för konfigurering av avstämningsprocessen beskrivs nedan.
 
 ## <a name="transaction-codes"></a>Transaktionskoder
 Transaktionskoder kan användas som en del av matchningsreglerna för bankavstämning. Transaktionskoder hjälper till att matcha endast samma transaktionstyper mellan Finance och bankutdraget. För att kunna utföra den här typen av matchning, måste du först definiera de transaktionstyper som används för banktransaktioner från Finance och sedan mappa dessa typer med de transaktionskoder som används av banken. Transaktionstyper för banktransaktioner definieras på sidan **Banktransaktionstyp**. Det är också här som du definierar det huvudkonto som ska användas för bokföringar associerade med transaktionstypen. 

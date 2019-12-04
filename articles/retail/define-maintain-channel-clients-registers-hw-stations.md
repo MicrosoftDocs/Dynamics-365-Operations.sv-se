@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019403"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811250"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Ansluta kringutrustning till kassan (POS)
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019403"
 Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
 
 > [!NOTE]
-> Särskilda installationsanvisningar hittar du i [Konfiguration och installation av Retail Hardware Station](retail-hardware-station-configuration-installation.md) och [Självservice hämtning/installation av Retail Modern POS och Cloud POS](retail-modern-pos-device-activation.md).
+> Specifika installationsinstruktioner finns i [Konfigurera och installera Retail hardware station](retail-hardware-station-configuration-installation.md) och [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Nyckelkomponenter
 
@@ -139,7 +139,7 @@ Funktionsprofilen ställs in på butiksnivån. Denna används för att ange inst
 
 - Snabbfliken **Infokoder**:
 
-    - Alla aspekter av hur infokoder hanteras i kassan. Mer information finns i [Infokoder](info-codes-retail.md).
+    - Alla aspekter av hur infokoder hanteras i kassan. För mer information, se [Infokoder och infokodgrupper](info-codes-retail.md).
 
 - Snabbfliken **Kvittonumrering**:
 

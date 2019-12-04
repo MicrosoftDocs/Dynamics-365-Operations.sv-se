@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 9cc45a3ed468541fc0a5c8e80e745854148165e4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 86d81d60fcbc77375f3b8c525e8c084e3a3d8a99
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026088"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773703"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Vad är nytt och ändrat i Dynamics 365 Talent (2 april 2019)
 
@@ -63,7 +63,7 @@ Ytterligare information om plattformsuppdatering 25 för Finance and Operations 
 I många organisationer kan kompensations- och förmånsansvariga endast ha tillgång till vissa kompensationsposter. Dessa kan inkludera poster för chefer eller nationella medarbetare. Denna ändring ger personalavdelningen möjlighet att hantera och underhålla kompensationsplaner för olika medarbetargrupper i organisationen. Du kan tilldela säkerhetsroller till fasta och variabla planer. Dessa säkerhetsroller avgör åtkomst till planer och relaterade medarbetardata, till exempel lön- eller bonusposter så att endast de rollerna kan bearbeta kompensation för medarbetargrupper.
 
 ### <a name="upgrade-to-common-data-service"></a>Uppgradera till Common Data Service
-Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps-administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på Microsoft Power Apps-administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>I förhandsgranskning
 

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e42810d2cc920fbbfb4b56fbd94124925f544ce5
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: aa81c5310c7a2876aed61a48b7736e3c72d08641
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023382"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811862"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
@@ -38,7 +38,7 @@ Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sv
 
 ### <a name="common-pos-features"></a>Vanliga kassafunktioner
 
-Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Microsoft Dynamics 365 for Retail-dokumentation](../index.md).
+Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Hjälpresurser för Dynamics 365 Retail](../index.md).
 
 Dessutom har följande kassafunktioner som implementerades för Sverige gjorts tillgängliga för kunder i alla länder eller regioner:
 
@@ -77,11 +77,11 @@ Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvi
 > [!NOTE]
 > För närvarande stöder inte styrenhetens integrationsprov kundorder. Men ett prov som stöder kundorder kommer att bli tillgängligt senare.
 
-Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](./retail-sdk-control-unit-sample.md).
+Mer information om styrenhetens integrationsprov finns i [Exempel för Retail POS-integration med styrenheter för Sverige](./retail-sdk-control-unit-sample.md).
 
 ## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
-Det här avsnittet beskriver inställningar som avser och rekommenderas för Sverige. Mer information om hur du ställer in Retail finns i [Microsoft Dynamics 365 for Retail-dokumentation](../index.md).
+Det här avsnittet beskriver inställningar som avser och rekommenderas för Sverige. Mer information om hur du ställer in ett standardlagerställe för butiker finns i [Hjälpresurser för Dynamics 365 Retail](../index.md).
 
 Om du vill använda Sverige-specifika funktioner måste du utföra följande uppgifter:
 

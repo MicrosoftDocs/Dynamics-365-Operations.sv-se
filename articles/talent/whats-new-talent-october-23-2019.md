@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-10-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 94243f83121a1306d8f9ae9be23d24e5c9b63a2d
-ms.sourcegitcommit: 07e109dec176a93eff0df8a37ba5d875f212e9f1
+ms.openlocfilehash: 66419d9093cff68aa6109b22ab57bcb46ac6c718
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "2662675"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772906"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-october-23-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (23 oktober 2019)
 
@@ -47,7 +47,7 @@ Mer information finns i [Nyheter och ändringar i plattformsuppdatering 30 för 
 
 ### <a name="remove-benefits-open-enrollment-preview-feature"></a>Ta bort funktionen för öppna anmälan i förhandsversionen
 
-I samverkan med vårt meddelande i blogginlägget Strategiska investeringar i Core HR-systemet för att effektivisera verksamheten tar Microsoft bort funktionen för öppna anmälan i den allmänna förhandsversionen 18 oktober 2019. I stället kommer nya funktioner att publiceras i framtiden. Produktionsanvändning av funktionen för öppna anmälan som för närvarande ingår i den allmänna förhandsgranskningen stöds inte.
+I samverkan med vårt meddelande i blogginlägget [Strategiska investeringar i det grundläggande HR-systemet för att effektivisera verksamheten](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence) tar Microsoft bort funktionen för öppna anmälan i den allmänna förhandsversionen 18 oktober 2019. I stället kommer nya funktioner att publiceras i framtiden. Produktionsanvändning av funktionen för öppna anmälan som för närvarande ingår i den allmänna förhandsgranskningen stöds inte.
 
 ### <a name="error-while-selecting-the-countryregion-on-the-worker-form-a-second-time-350294"></a>Ett fel uppstod när landet/regionen i formuläret Arbetare skulle väljas en andra gång (350294)
 
@@ -69,7 +69,7 @@ Med den här veckans version kan du lägga till ett nytt listvärde i ett befint
 
 Med den här versionen öppnas bara de valda medarbetarnas anställningsvillkor i Excel. All företagssäkerhet används också.
 
-### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service---324178"></a>Associationen mellan entiteten arbetskalendersemester och entiteten arbetskalender saknas i Common Data Service - (324178)
+### <a name="the-association-between-the-work-calendar-holiday-entity-and-the-work-calendar-entity-is-missing-in-common-data-service-324178"></a>Associationen mellan entiteten arbetskalendersemester och entiteten arbetskalender saknas i Common Data Service (324178)
 
 Den här relationen har lagts till med versionen. Den här ändringen gör att arbetsdagar för en medarbetare kan visas i PowerApps. 
 

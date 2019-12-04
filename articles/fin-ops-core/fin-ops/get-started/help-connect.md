@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537865"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812590"
 ---
 # <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
 
@@ -54,7 +54,7 @@ Gå till sidan **Systemparametrar** och följ dessa steg:
 > [!IMPORTANT]
 > Första gången du öppnar fliken **Hjälp** måste du ansluta till Lifecycle Services. Se till att klicka på länken i mitten av formuläret, vänta på anslutningen, stäng dialogrutan och klicka sedan på **OK** för att komma till sidan **Systemparametrar**.
 >
-> [![Ansluta till LCS](./media/connect-to-lcs-crop-1024x365.png "Ansluta till LCS")](./media/connect-to-lcs-crop.png)
+> [![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS")](./media/connect-to-lcs-crop.png)
 
 1. Välj Lifecycle Services-projektet att ansluta till.
 2. Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.
@@ -80,7 +80,7 @@ Du kan använda uppgiftsguiderna för att skapa anpassad hjälp eller ansluta en
 
 Du kan skapa anpassad hjälp för Finance and Operations, Supply Chain Management samt Retail genom att skapa uppgiftsinspelningar som speglar din implementering och spara dessa i ett bibliotek för LCS-arbetsprocesser. Du kan inte skapa anpassade uppgiftsguider för Talent.
 
-För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i avsnittet [Skapa en uppgiftsregistrering att använda som dokumentation eller utbildning](../../dev-itpro/user-interface/task-recorder.md).
+För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i [Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Ansluta en anpassad webbplats
 
@@ -91,8 +91,8 @@ Microsoft tillhandahåller en vitbok och exempelkod som beskriver hur du skapar 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Hjälp – översikt](help-overview.md)
+[Hjälpsystem](help-overview.md)
 
-[Uppgiftsregistreringsöversikt](../../dev-itpro/user-interface/task-recorder.md)
+[Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md)
 
-[Skapa en uppgiftsinspelning som ska användas som dokumentation eller utbildning](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Skapa dokumentation eller utbildning med Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder-training-docs.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2a5da707069966ea0dac282b2a0b2074ec5a41ff
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571011"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812247"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier av underhållsjobbtyp och underhållsjobbtyper, varianter av underhållsjobb, yrkesgrenar för underhållsjobb och underhållschecklistor
 
@@ -33,7 +33,7 @@ ms.locfileid: "2571011"
 
 En tillgångstyp är kopplad till varje tillgång. Tillgångstyper definierar jobbtyperna för underhåll (och därmed underhållsjobben) som kan utföras på tillgångar. När du skapar en arbetsorder måste du välja en underhållsjobbtyp. Du kan bara välja de typer av underhållsjobb som är relaterade till inställningarna för den tillgångstyp som används för tillgången.
 
-En grafisk översikt över till gångar och underhållsjobbtyper, och deras koppling till arbetsorder, finns i [Tillgångar och arbetsorder](../overview/functional-locations-and-objects.md).
+En grafisk översikt över till gångar och underhållsjobbtyper, och deras koppling till arbetsorder, finns i [Funktionsplatser och tillgångar](../overview/functional-locations-and-objects.md).
 
 Varianter av typer av underhållsjobb kan ställas in för en underhållsjobbtyp. Varianter av underhållsjobbtyper definierar varianter av en jobbtyp, t.ex. storlekar (liten, medelstor eller stor), perioder (veckovis, varannan vecka, en månad eller tre månader) och konfigurationer (låg standard, flexibel eller hög prestanda).
 

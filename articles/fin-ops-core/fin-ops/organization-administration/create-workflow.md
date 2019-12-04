@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190107"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811319"
 ---
 # <a name="create-workflows-overview"></a>Skapa arbetsflöden – översikt
 
@@ -54,21 +54,21 @@ Använd följande steg när du vill konfigurera egenskaperna för arbetsflödet.
 
 1. Klicka på arbetsytan för att försäkra dig om att inget arbetsflödeselement är markerat.
 2. Klicka på **Properties** för att öppna sidan **Properties** för arbetsflödet.
-3. Följ procedurerna i ämnet [Konfigurera egenskaper för ett arbetsflöde](configure-workflow-properties.md).
+3. Följ procedurerna i ämnet [Konfigurera egenskaper för arbetsflöde](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurera elementen i arbetsflödet
 
 Konfigurera varje element som du har dragit till arbetsytan. För information om hur du konfigurerar respektive arbetsflödeselement, se följande ämnen:
 
-- [Konfigurera en manuell uppgift](configure-manual-task-workflow.md)
-- [Konfigurera en automatisk uppgift](configure-automated-task-workflow.md)
-- [Konfigurera en godkännandeprocess](configure-approval-process-workflow.md)
-- [Konfigurera ett godkännandesteg](configure-approval-step-workflow.md)
-- [Konfigurera ett manuellt beslut](configure-manual-decision-workflow.md)
-- [Konfigurera ett villkorligt beslut](configure-conditional-decision-workflow.md)
-- [Konfigurera en parallell aktivitet](configure-parallel-activity-workflow.md)
+- [Konfigurera manuella uppgifter i ett arbetsflöde](configure-manual-task-workflow.md)
+- [Konfigurera automatiska uppgifter i ett arbetsflöde](configure-automated-task-workflow.md)
+- [Konfigurera godkännandeprocesser i ett arbetsflöde](configure-approval-process-workflow.md)
+- [Konfigurera godkännandesteg i ett arbetsflöde](configure-approval-step-workflow.md)
+- [Konfigurera manuella beslut i ett arbetsflöde](configure-manual-decision-workflow.md)
+- [Konfigurera villkorsbeslut i ett arbetsflöde](configure-conditional-decision-workflow.md)
+- [Konfigurera parallella grenar i ett arbetsflöde](configure-parallel-activity-workflow.md)
 - [Konfigurera en parallell gren](configure-parallel-branch-workflow.md)
-- [Konfigurera ett arbetsflöde för radartiklar](configure-line-item-workflow.md)
+- [Konfigurera arbetsflöden för radartiklar](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>Lösa eventuella fel eller varningar
 

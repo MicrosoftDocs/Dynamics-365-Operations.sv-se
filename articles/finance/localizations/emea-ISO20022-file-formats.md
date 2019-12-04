@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ef97d30ca2d8a9c27ce656c82d2a415682ce075
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551230"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773438"
 ---
 # <a name="import-iso20022-files"></a>Importera ISO20022-filer
 
@@ -49,7 +49,7 @@ Du måste slutföra följande förutsättningar för att importera bankmeddeland
 
     - I fältet **kundbetalningar, kontolängder** anger du längden på kundkoden som används för automatisk identifiering av kunden eller ISR-referenser.
     - Se till att kundnummer och fakturanummer (nummerserier) endast innehåller siffror. De får inte innehålla några andra tecken. Fakturanumret får inte ha inledande nollor.
-    - Ange ESR, BESR och organisationsnummer för juridiska personens bankkonto. Mer information finns i [äldre ESR-funktion](emea-che-esr-customer-payments-import.md), eftersom det krävs liknande inställningar.
+    - Ange ESR, BESR och organisationsnummer för juridiska personens bankkonto. Mer information finns i [Import av ESR-kundbetalningar](emea-che-esr-customer-payments-import.md), eftersom det krävs liknande inställningar.
     
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importera filen camt.054 kreditavi till kundbetalningsjournalen
 1. På sidan **Rader i kundbetalningsjournal** klickar du på **funktioner** > **Importera betalningar**.

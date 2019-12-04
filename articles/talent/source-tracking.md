@@ -1,5 +1,5 @@
 ---
-title: Spåra källor för kandidatprofiler och ansökningar
+title: Spåra kandidatkällor i Attract
 description: Det här avsnittet innehåller information om att spåra källan för kandidatprofiler och ansökningar.
 author: hachandr
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 5b368e97a716cd1ce4f668c2a97326877a2d3dff
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 8860f508eebc377042c4e101eeb08a14a737ba0c
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551897"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832681"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Spåra källor för kandidatprofiler och ansökningar
+# <a name="track-candidate-sources-in-attract"></a>Spåra kandidatkällor i Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
 > Funktionen som beskrivs i det här avsnittet är en del av förhandsversionen. Funktionen och dess innehåll kan ändras. Om du vill använda den här funktionen ber du en administratör att aktivera den med hjälp av **administrationsinställningar** i Attract. En framtida version kommer att tillhandahålla källspårningsrapporter. Mer information finns i [Få åtkomst till förhandsfunktioner i Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

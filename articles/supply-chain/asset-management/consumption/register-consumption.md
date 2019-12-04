@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653333"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812270"
 ---
 # <a name="register-consumption"></a>Registrera förbrukning
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653333"
 
 När ett underhållsjobb har slutförts på en arbetsorder är nästa steg att göra förbrukningsregistreringar och bokföra journalerna. Du kan göra registreringar av följande förbrukningstyper: timmar, artiklar och utgifter. De olika förbrukningstyperna registreras och bokförs på **Arbetsorderjournaler**. Journalinställningarna i **Tillgångshantering** används för att skapa och bokföra separata journaler för timmar, artiklar och utgifter i modulen **Projekthantering och redovisning**.
 
-I vissa fall kanske kan lägga till eller ta bort prognosrader på en arbetsorder. Inställningen av en livscykeltillstånd för arbetsorder, den relaterade projekttypen och de fasregler som gäller för projekttypen bestämmer om du kan lägga till eller redigera journalrader. Läs mer om livscykeltillstånd för arbetsorder och relaterade projektfaser i [Integration med projekthantering och redovisning](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+I vissa fall kanske kan lägga till eller ta bort prognosrader på en arbetsorder. Inställningen av en livscykeltillstånd för arbetsorder, den relaterade projekttypen och de fasregler som gäller för projekttypen bestämmer om du kan lägga till eller redigera journalrader. Mer information om livscykeltillstånd för arbetsorder och relaterade projektfaser finns i [Prognoser, arbetsorder och projekt](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Det är möjligt att ställa in automatisk bokföring av journaler i ett livscykeltillstånd för arbetsorder. Mer information finns i [Livscykeltillstånd för arbetsorder](../setup-for-work-orders/work-order-lifecycle-states.md).

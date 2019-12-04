@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 242e9fd5fd4b22f3081367cf33ff18ff5e4174a5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026266"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814753"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Schemalägg och skicka ut enkäter
 
@@ -54,7 +54,8 @@ På sidan **Enkäter** klickar du på **Användarrättigheter** för att tilldel
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planerade svarsomgångar i en enkät
 Planerade svarsomgångar är enkäter som du har utformat för och valt svarande till. 
 
-> **Anm.:** Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät. 
+> [!NOTE]
+>   Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät. 
 
 På sidan **Planerad svarsomgång** kan du skapa en planerad svarsomgång för en enskild medarbetare. Listan på sidan visar alla planerade enkäter. 
 
@@ -108,12 +109,14 @@ Om du använder en planerad svarsomgång måste du meddela personen direkt, till
 
 Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten. Ange e-posttexten på fliken **E-postadress för självbetjäning för medarbetare**. När schemat har startats klickar du på **Funktioner** &gt; **Skicka e-post** för att skapa och skicka mailet till mottagarna. De svarande kan sedan logga in på webbplatsen och fylla i enkäten. 
 
-> **Anm.:** Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.
+> [!NOTE]
+>   Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Avsluta en tidsplanerad enkät
 Du kan avsluta en tidsplanerad enkät när alla svaranden har avslutat sina tilldelade svarsomgångar. När planerad enkät slutförs kan du inte kopiera inställningarna till en ny tidsplan. 
 
-> **Anm.:** Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**. Sedan kan du avsluta tidsplanen.
+> [!NOTE]
+>   Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**. Sedan kan du avsluta tidsplanen.
 
 ## <a name="completing-questionnaires"></a>Fylla i enkäter
 När du har utformat och har fördelat en enkät kan den besvaras av valda svarande. Du kan fylla i de tillgängliga frågeformulären från två platser:
@@ -128,8 +131,8 @@ Enkäter kan göras tillgängliga för vissa användare eller grupper av använd
 
 [Utforma enkäter](design-questionnaires.md)
 
-[Använda enkäter](questionnaires.md)
+[Enkäter](questionnaires.md)
 
-[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+[Visa och utvärdera resultaten av enkäter](evaluate-questionnaire-results.md)
 
 

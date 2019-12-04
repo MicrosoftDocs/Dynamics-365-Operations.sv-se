@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c07f303b72f286c33979181fca1592b47efa1303
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 625e2c6a6b385c69d33ec4325a462310a37f1eed
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571241"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812201"
 ---
 # <a name="maintenance-attribute-types"></a>Underhåll av attributtyper
 
@@ -34,8 +34,8 @@ ms.locfileid: "2571241"
 Det här avsnittet beskriver hur du skapar attributtyper i tillgångshantering. Attribut används för att beskriva egenskaperna för olika element. Du kan ställa in attribut på följande element:
 
 - [Funktionsplatstyper](../setup-for-functional-locations/functional-location-types.md)
-- [Funktionsplatser](../functional-locations/create-functional-locations.md)
-- [tillgångstyper](../setup-for-objects/object-types.md)
+- [Skapa funktionsplatser](../functional-locations/create-functional-locations.md)
+- [Tillgångstyper](../setup-for-objects/object-types.md)
 - Tillgångar
 
 Attributen som du kan ställa in varierar beroende på elementet. För en funktionsplats kan du till exempel ställa in attribut för konfigurationen och den fysiska storleken på platsen. För en tillgångstyp eller en tillgång kan du ställa in attribut för motorvolym, energiförbrukning och maximal lastkapacitet under olika förhållanden.

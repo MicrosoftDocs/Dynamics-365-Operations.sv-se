@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d7ec95b230c5ea17f208bc1288c10fce15631a5d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251533"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813073"
 ---
 # <a name="cycle-counting"></a>Rullande inventering
 
@@ -136,7 +136,7 @@ En avvikelse för rullande inventering inträffar i följande scenarier om alter
 Du kan justera avvikelser i det beräknade värdet och sedan acceptera det beräknade värdet på sidan **Granskning av väntande rullande inventering**. Du kan verifiera det modifierade antalet för artikelkvantiteten på sidan **Behållning efter plats**. Värdet från den rullande inventeringen åsidosätts om skillnaden inte kan godkännas.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Konfigurera mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
+[Ställ in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
 
 
 

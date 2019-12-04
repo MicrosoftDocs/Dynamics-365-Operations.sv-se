@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: a85f804344abec37d85e1ce15f064c8a0b901546
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743206"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813119"
 ---
 # <a name="set-up-disposition-codes"></a>Ställ in dispositionskoder 
 
@@ -32,7 +32,7 @@ ms.locfileid: "1743206"
 
 Du kan du ställa in dispositionskoder för att ange hur man arbetar med en artikel som returneras av en kund. Skapa en dispositionskod med namnet **Reparera och returnera** om du vill ange att den returnerade artikeln ska repareras och sedan ska returneras till kunden, till exempel. Mer information om dispositionskoder som normalt används för artiklar som returneras av kunder hittar du i [Ange hur returnerade artiklar ska avyttras](specify-how-to-dispose-of-returned-items.md).
 
-Du kan även ange en orsakskod för att förklara varför en artikel har returnerats. Mer information om orsakskoder finns [skapa returorsakskod](set-up-return-reason-code.md).
+Du kan även ange en orsakskod för att förklara varför en artikel har returnerats. Mer information om orsakskoder finns [skapa returorsakskoder](set-up-return-reason-code.md).
 
 1.  Klicka på noden **Försäljning och marknadsföring** \> **Inställningar** \> **Försäljningsorder** \> **Returer** \> **Dispositionskoder**.
 
@@ -46,7 +46,7 @@ Du kan även ange en orsakskod för att förklara varför en artikel har returne
 
 ## <a name="see-also"></a>Se även
 
-[Dispositionskoder och returorsakskoder](disposition-and-return-reason-codes.md)
+[Kundreturer – översikt](disposition-and-return-reason-codes.md)
 
 [Dispositionskoder (formulär)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

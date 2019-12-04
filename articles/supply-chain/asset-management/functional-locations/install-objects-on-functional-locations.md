@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c585bce468f87a32204893ea20ce6954e92b0e38
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8619c6cde484c41ec01e96eb4626366f1955b5d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571816"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811836"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installera tillgångar på funktionsplatser
 
@@ -31,7 +31,7 @@ ms.locfileid: "2571816"
 
  
 
-När du har skapat funktionsplatsstrukturer är nästa steg att installera tillgångar på relevanta funktionsplatser. I det här avsnittet beskrivs hur du installerar tillgångar på dessa funktionsplatser i Tillgångshantering. Information om hur du skapar en tillgång finns i [Tillgångar](../objects/introduction-to-objects.md).
+När du har skapat funktionsplatsstrukturer är nästa steg att installera tillgångar på relevanta funktionsplatser. I det här avsnittet beskrivs hur du installerar tillgångar på dessa funktionsplatser i Tillgångshantering. Information om hur du skapar en tillgång finns i [Introduktion till tillgångar](../objects/introduction-to-objects.md).
 
 Om du har skapat en tillgångsstruktur måste hela tillgångsstrukturen installeras på en funktionsplats. Därför kan endast överordnade tillgångar (tillgångar på toppnivå som inte har någon överordnad tillgång) väljas på en funktionsplats. Alla relaterade underordnade tillgångar (undertillgångar) kommer också att installeras på funktionsplatsen. När du installerar tillgångar på en funktionsplats, kan de ekonomiska dimensionerna för den funktionsplatsen automatiskt överföras till dem, beroende på inställningarna på den funktionsplatstyp som valts för den funktionsplatsen. För mer information om hur du ställer in funktionsplatstyper finns i [funktionsplatstyper](../setup-for-functional-locations/functional-location-types.md).
 

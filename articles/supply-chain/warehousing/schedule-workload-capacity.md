@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d5d878b0fe4e6b65aa2439d7ef7312eda1895823
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559052"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814937"
 ---
 # <a name="schedule-workload-capacity"></a>Tidsplanera kapacitet för lagerställe
 
@@ -30,7 +30,7 @@ ms.locfileid: "1559052"
 
 Du kan tidsplanera arbetsbördakapacitet för lagerställen och även förutse de aktuella och framtida arbetsbördorna för arbetarna i enskilda lagerställen. Du kan förutse arbetsbelastningen för hela lagerstället, eller så kan du förutse arbetsbelastningen separat för inkommande och utgående arbetsbelastningar.
 
-Om du förutser arbetsbelastningen som tillverkats för valda huvudplaneringdata, måste lagerställen vara tillgängliga för de valda lagerställen. För mer information se [Huvudplaner](../master-planning/master-plans.md).
+Om du förutser arbetsbelastningen som tillverkats för valda huvudplaneringdata, måste lagerställen vara tillgängliga för de valda lagerställen. För mer information se [Översikt över huvudplaner](../master-planning/master-plans.md).
 
 ## <a name="schedule-and-view-workloads-for-a-warehouse"></a>Tidsplanera och visa arbetsbördor för ett lagerställe
 

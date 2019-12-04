@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008138"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813947"
 ---
 # <a name="get-started-with-onboard"></a>Kom igång med Onboard
 
@@ -35,17 +35,17 @@ Med Onboard kan du snabbt skapa en integrationsguiden som välkomnar dina nyanst
 
 Information om hur du skaffar och använder appen Onboard finns i följande avsnitt:
 
-- [Hämta Onboard‑appen](./onboard-get-app.md)
-- [Skapa en integrationsguide](./onboard-create-guide.md)
-- [Skapa en mall för integrationsguide](./onboard-create-template.md)
-- [Redigera integrationsguider och mallar](./onboard-edit-guides-templates.md)
-- [Dela innehåll med andra deltagare](./onboard-share-template.md)
-- [Visa status för uppgifter och integration av medarbetare](./onboard-view-status.md)
-- [Skapa anställningsteam i Onboard](./onboard-create-team.md)
+- [Hämta Dynamics 365 Talent - Onboard-appen](./onboard-get-app.md)
+- [Skapa och skicka en integrationsguide genom att använda Dynamics 365 Talent - Onboard](./onboard-create-guide.md)
+- [Skapa en integrationsmall med hjälp av Dynamics 365 Talent - Onboard](./onboard-create-template.md)
+- [Redigera integrationsguider och mallar i Dynamics 365 Talent - Onboard](./onboard-edit-guides-templates.md)
+- [Dela innehåll med andra deltagare i Dynamics 365 Talent - Onboard](./onboard-share-template.md)
+- [Visa status för integration av medarbetare och dina uppgifter](./onboard-view-status.md)
+- [Skapa ett anställningsteam genom att använda Dynamics 365 Talent - Onboard](./onboard-create-team.md)
 
 ## <a name="see-also"></a>Se även
 
 - [Prova eller köp appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheter](./whats-new.md)
-- [Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheter och ändringar i Dynamics 365 Talent](./whats-new.md)
+- [Utgivningsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support för Microsoft Dynamics 365 Talent](./talent-support.md)

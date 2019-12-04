@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
-ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
+ms.openlocfilehash: df0bc9ff2405cc2f370ea777a70e005a1ff338a0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2548978"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814960"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Installera och konfigurera lagerstyrningsappen - översikt
 
@@ -62,15 +62,32 @@ Om du vill att programmet ska interagera med en viss Supply Chain Management-ser
 
 1.  I en webbläsare går du till <https://portal.azure.com>.
 2.  Ange namn och lösenord för den användare som har tillgång till Azure-abonnemanget.
-3.  I Azure Portal, i vänster navigeringsfönster, klicka på **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-active-directory-example](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+3.  I Azure Portal, i vänstra navigeringsfönstret, klicka på **Azure Active Directory**.
+
+    [![WMA-01-active-directory-exempel](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png)
+
 4.  Säkerställ att instansen för Active Directory är den som används av Supply Chain Management.
-5.  I listan klickar du på **App registreringar**. [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+5.  I listan klickar du på **App registreringar**. 
+
+    [![WMA-02-active-directory-app-registrations](./media/WMA-02-active-directory-app-registrations.png)](./media/WMA-02-active-directory-app-registrations.png)
+
 6.  I det övre fönstret klickar du på **ny registrering**. Guiden **Registrera en programguide** startar.
-7.  Ange ett namn på programmet och välj **endast konton i denna organisationskatalog**. Klicka på **Registrera**.  [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
-8.  Din nya programregistrering kommer att öppnas. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+7.  Ange ett namn på programmet och välj **endast konton i denna organisationskatalog**. Klicka på **Registrera**.  
+
+    [![WMA-03-active-directory-add-application](./media/WMA-03-active-directory-add-application.png)](./media/WMA-03-active-directory-add-application.png)
+
+8.  Din nya programregistrering kommer att öppnas. 
+
+    [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
+
 9.  Kom ihåg **Application ID** du kommer att behöva det senare. **Application ID** kommer senare att kallas **Client ID**.
-10. Klicka på **certifikat och hemligheter** i fönstret **hantera**. Klicka på **ny klienthemlighet**. [![WMA-05-Active-Directory-Create-Key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
-11. Skapa en nyckel genom att ange en nyckelbeskrivning och en varaktighet i avsnittet **lösenord**. Klicka på **lägg till** och kopiera nyckeln. Den här nyckeln kommer senare att betecknas som **Klienthemlighet**. [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
+10. Klicka på **certifikat och hemligheter** i fönstret **hantera**. Klicka på **ny klienthemlighet**. 
+
+    [![WMA-05-Active-Directory-Create-Key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
+
+11. Skapa en nyckel genom att ange en nyckelbeskrivning och en varaktighet i avsnittet **lösenord**. Klicka på **lägg till** och kopiera nyckeln. Den här nyckeln kommer senare att betecknas som **Klienthemlighet**. 
+
+    [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Skapa och konfigurera ett användarkonto i Supply Chain Management
 Om du vill aktivera Supply Chain Management för ditt Azure AD-program, måste du slutföra följande konfigurationssteg:
@@ -78,28 +95,47 @@ Om du vill aktivera Supply Chain Management för ditt Azure AD-program, måste d
 1.  Skapa en användare som motsvarar autentiseringsuppgifterna för lagerstyrningsprogrammet.
     1.  Gå till **Systemadministration** &gt; **Vanlig** &gt; **Användare**.
     2.  Skapa en ny användare.
-    3.  Tilldela den mobila enhetsanvändaren på lagret enligt följande skärmbild. [![wh-09-lägg-till-säkerhetsroll-för-användare](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
+    3.  Tilldela den mobila enhetsanvändaren på lagret enligt följande skärmbild. 
+    
+        [![wh-09-lägg-till-säkerhetsroll-för-användare](./media/wh-09-add-user-security-role.png)](./media/wh-09-add-user-security-role.png)
 
 2.  Koppla ditt Azure Active Directory-program till användaren av lagerstyrningsprogrammet.
     1.  I Supply Chain Management, navigera till **Systemadministration** &gt; **Inställningar** &gt; **Azure Active Directory-program**.
     2.  Skapa en ny rad.
-    3.  Ange det **Klient-ID** (som erhölls i det senaste avsnittet), namnge det och välj den användare som skapades tidigare. Vi rekommenderar att du märker samtliga dina enheter, så att du kan enkelt ta bort deras åtkomst till Supply Chain Management från denna sida om de skulle gå förlorade. [![wh-10-ad-programformulär](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
+    3.  Ange det **Klient-ID** (som erhölls i det senaste avsnittet), namnge det och välj den användare som skapades tidigare. Vi rekommenderar att du märker samtliga dina enheter, så att du kan enkelt ta bort deras åtkomst till Supply Chain Management från denna sida om de skulle gå förlorade. 
+    
+        [![wh-10-ad-programformulär](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
 ## <a name="configure-the-application"></a>Konfigurera programmet
 Du måste konfigurera programmet på enheten för att ansluta till Supply Chain Management-servern via Azure AD-programmet. Det gör du genom att utföra följande steg:
 
 1.  I programmet går du till **Anslutningsinställningar**.
-2.  Rensa fältet **Demoläge**. <br>[![Wh-11-Inställningar för programanslutning-demoläge](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+2.  Rensa fältet **Demoläge**. <br>
+
+    [![Wh-11-Inställningar för programanslutning-demoläge](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+
 3.  Ange följande information: 
     + **Klient-ID för Azure Active-katalog** - Klient-ID erhålls i steg 9 i "Skapa ett webbtjänstprogram i Active Directory". 
     + **Klienthemlighet för Azure Active-katalog** - Klienthemligheten erhålls i steg 11 i "Skapa ett webbtjänstprogram i Active Directory". 
-    + **Azure Active directory resource** - Azure AD Directory-resurs beskriver rot-webbadressen (URL) för Supply Chain Management. **Obs!** Avsluta inte detta fält med ett snedstreck (/). 
-    + **Azure Active-kataloginnehavare** - Azure AD-kataloginnehavare som används med Supply Chain Management-servern: `https://login.windows.net/your-AD-tenant-ID`. Exempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
-    <br>**Obs!** Avsluta inte detta fält med ett snedstreck (/). 
-    + **Företag** - Ange den juridiska person i Supply Chain Management som du vill att programmet ansluter till. <br>[![wh-12-inställningar-för-programanslutningar](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
-4.  Välj knappen **Tillbaka** i programmets övre vänstra hörn. Programmet kommer nu att ansluta till din Supply Chain Management-server, och inloggningsskärmen för lagermedarbetaren visas. <br>[![wh-13-inloggningsskärm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+    + **Azure Active directory resource** - Azure AD Directory-resurs beskriver rot-webbadressen (URL) för Supply Chain Management. 
+    
+        > [!NOTE]
+        > Avsluta inte detta fält med ett snedstreck (/). 
 
-Mer information om hur du ställer in  aååen Lagerhållning till att skanna streckkoder på en mobil enhet med hjälp av en kamera finns i [skanna streckkoder med hjälp av en kamera i  Dynamics 365 for Finance and Operations – Lagerhållning](scan-bar-codes-using-a-camera.md)
+    + **Azure Active-kataloginnehavare** - Azure AD-kataloginnehavare som används med Supply Chain Management-servern: `https://login.windows.net/your-AD-tenant-ID`. Till exempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
+    
+        > [!NOTE]
+        > Avsluta inte detta fält med ett snedstreck (/). 
+    
+    + **Företag** - Ange den juridiska person i Supply Chain Management som du vill att programmet ansluter till. <br>
+    
+    [![wh-12-inställningar-för-programanslutningar](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+
+4.  Välj knappen **Tillbaka** i programmets övre vänstra hörn. Programmet kommer nu att ansluta till din Supply Chain Management-server, och inloggningsskärmen för lagermedarbetaren visas.
+
+    [![wh-13-inloggningsskärm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+Mer information om hur du ställer in  aååen Lagerhållning till att skanna streckkoder på en mobil enhet med hjälp av en kamera finns i [skanna streckkoder med hjälp av en kamera i  Dynamics 365 for Finance and Operations – Lagerhållning-app](scan-bar-codes-using-a-camera.md)
 
 ## <a name="remove-access-for-a-device"></a>Ta bort åtkomsten för en enhet
 Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten till Supply Chain Management för enheten. Följande steg beskriver den rekommenderade processen när du tar bort åtkomst.

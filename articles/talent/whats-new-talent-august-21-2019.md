@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024078"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814500"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (20 augusti 2019)
 
@@ -35,7 +35,7 @@ Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Förenklad användningsupplevelse för kandidater 
 
-Nu finns en förenklad användningsupplevelse för kandidater tillgänglig i allmän förhandsgranskning. När de har aktiverats kan kandidater ansöka om ett jobb med deras meritförteckning **Ansök med LinkedIn** (om aktiverad) eller använda det befintliga ansökningsformuläret. Med dessa ändringar kan kandidater snabbt skicka sin jobbansökning med minimum av fält som behöver manuella indata. Information om hur du aktiverar den här funktionen finns i [Aktivera eller inaktivera förhandsgranskningsfunktioner](./access-preview-feature.md#enable-or-disable-preview-features).
+Nu finns en förenklad användningsupplevelse för kandidater tillgänglig i allmän förhandsgranskning. När de har aktiverats kan kandidater ansöka om ett jobb med deras meritförteckning **Ansök med LinkedIn** (om aktiverad) eller använda det befintliga ansökningsformuläret. Med dessa ändringar kan kandidater snabbt skicka sin jobbansökning med minimum av fält som behöver manuella indata. Information om hur du aktiverar den här funktionen finns i [Få åtkomst till förhandsfunktioner i Microsoft Dynamics 365 Talent](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Visa avvisande kommentarer som en del av programaktiviteten
 

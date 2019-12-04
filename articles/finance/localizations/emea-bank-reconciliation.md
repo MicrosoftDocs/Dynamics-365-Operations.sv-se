@@ -17,12 +17,12 @@ ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c2ad9c8daf40750839ed7b16fb529e0de35d19a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3fbdefce85fbd7aee228cdcb58f29007478c1485
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175237"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772877"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankutdrag och betalningsavstämning för EU
 
@@ -46,14 +46,14 @@ Förutom ett bankutdrag kan banker även tillhandahålla specifika meddelanden s
 
 ### <a name="import-formats"></a>Importformat
 
--   ISO 20022 [camt.054](emea-ISO20022-file-formats.md)-bankmeddelande
+-   [ISO 20022 camt.054](emea-ISO20022-file-formats.md) bankmeddelande
 -   [Nettoimportformat](emea-nor-nets-import-format.md) - Komplexa funktioner för norska betalningsformat
--   Import av [ESR-kundbetalningar](emea-che-esr-customer-payments-import.md)
+-   [Import av ESR-kundbetalningar](emea-che-esr-customer-payments-import.md) 
 -   Importera betalningsformat för Sverige - BankGirot Max och BankGirot OCR-format
 
 ### <a name="return-formats"></a>Returformat
 
--   ISO 20022 [pain.002](emea-ISO20022-file-formats.md)-rapport för betalningsstatus
+-   [ISO 20022 pain.002](emea-ISO20022-file-formats.md)-rapport för betalningsstatus
 -   (DNK) BetalingsserviceBasis-returformat – Returformat för kundexportformatet Betalingsservice
 -   [Importera betalningsformat för Sverige](emea-swe-payment-formats-import.md) - Bankgirot Autogiro returnerar
 -   (SVERIGE) BankGirot retur – Returformat för leverantörsbetalningar som motsvarar exportformatet Bankgirot

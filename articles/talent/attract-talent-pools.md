@@ -1,5 +1,5 @@
 ---
-title: Skaffa kandidater med talangpooler i Microsoft Dynamics 365 Talent - Attract
+title: Skaffa kandidater med talangpooler i Attract
 description: Det här avsnittet beskriver hur du skapar och konfigurerar talangpooler i Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 454ba987eef924d520af17e8b9ae694fe9b82ec2
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ea10ccd5e4b1f1ffbb8f736e886240e223a4eeb3
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551128"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833033"
 ---
-# <a name="source-candidates-with-talent-pools-in-microsoft-dynamics-365-talent---attract"></a>Skaffa kandidater med talangpooler i Microsoft Dynamics 365 Talent - Attract
+# <a name="source-candidates-with-talent-pools-in-attract"></a>Skaffa kandidater med talangpooler i Attract
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Rekryterare och anställande chefer kan ordna sina kandidater med funktionen talangpooler i Attract. Talangpooler kan hjälpa dig att hålla reda på och kommunicera med kandidater som söker jobb i ditt företag.
 
@@ -116,7 +115,7 @@ Alla användare har en gemensam vy över kandidatprofiler. Fliken **profil** vis
 
     Om du vill visa ett dokument markerar du dokumentnamnet i dokumentlistan. Du kan visa Microsoft Word-dokument i programmet med Microsoft Office 365. Du kan också hämta dokument på den lokala datorn med hjälp av alternativet **hämta** för varje dokument.
 
-- Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn Recruiter-anslutning måste skapas. Mer information finns i [Anskaffning med LinkedIn Recruiter](./attract-linkedin-recruiter.md).
+- Fliken **LinkedIn** visar kandidatens LinkedIn-information. Om du vill använda den här fliken måste du ansluta ditt LinkedIn-konto i användarinställningarna och din miljös LinkedIn Recruiter-anslutning måste skapas. Mer information finns i [Hitta kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Endast kandidater kan uppdatera färdigheter, utbildningshistorik och arbetserfarenhet.

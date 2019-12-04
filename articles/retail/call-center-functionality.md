@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 902db94164b35077a876c8041c038af36561a634
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2e44770af4a30f539e56d38b21c897cacd2707e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025781"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812349"
 ---
 # <a name="call-center-sales-functionality"></a>Försäljningsfunktioner för kundtjänst
 
@@ -44,17 +44,17 @@ Den här sidan innehåller länkar till relevanta handlingar som är relaterade 
 
 ## <a name="configure-the-call-center"></a>Konfigurera kundtjänst.
 
-[Ställ in alternativ för orderbearbetning](set-up-order-processing-options.md)
+[Ställa in kundtjänstkanaler](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurera orderbearbetning
 
-[Ställ in bedrägerivarningar](set-up-fraud-alerts.md)
+[Ställa in och arbeta med bedrägerivarningar för kundtjänst](set-up-fraud-alerts.md)
 
-[Manuella orderspärrar](work-with-order-holds.md)
+[Konfigurera och arbeta med orderspärrar för kundtjänst](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurera betalningsbearbetning
 
-[Betalningsmetoder i ett kundcenter](work-with-payments.md)
+[Betalningsmetoder i kundcenter](work-with-payments.md)
 
 ## <a name="configure-delivery-modes"></a>Konfigurera leveranslägen
 
@@ -64,8 +64,8 @@ Den här sidan innehåller länkar till relevanta handlingar som är relaterade 
 
 [Kundtjänstkataloger](call-center-catalogs.md)
 
-[Ställa in RFM-analys](set-up-rfm-analysis.md)
+[Ställa in Recency-, frekvens- och penninganalys (RFM)](set-up-rfm-analysis.md)
 
 ## <a name="configure-continuity-programs"></a>Konfigurera kontinuitetsprogram
 
-[Ställ in ett kontinuitetsprogram för en kundtjänst](set-up-continuity-program.md)
+[Ställa in kontinuitetsprogram för kundtjänster](set-up-continuity-program.md)

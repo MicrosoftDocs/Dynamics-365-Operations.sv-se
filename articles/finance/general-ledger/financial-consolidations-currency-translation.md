@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186611"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771855"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
@@ -84,14 +84,14 @@ Det första alternativet är att använda huvudkonton från källföretag. I det
 
 Det andra alternativet är att ange ett standardkonto för konsolideringen på sidan **huvudkonton**. Kontot mappas sedan till konsolideringskontot. Det här alternativet kan vara användbart när du har olika kontoplaner eller måste mappa till ett diagram som definieras av huvudkontoret.
 
-![Standardkonsolideringskonto anges på sidan Huvudkonton](./media/main-accounts.png "Standardkonsolideringskonto anges på sidan Huvudkonton")
+![Standard konsolideringskonto som angetts på sidan huvudkonto](./media/main-accounts.png "Standard konsolideringskonto som angetts på sidan huvudkonto")
 
 Det tredje alternativet är att använda konsolideringskontogrupper. Du kan definiera så många konsolideringskontogrupper som du behöver. Sedan på sidan **Ytterligare konsolideringskonton** kan du bara mappa huvudkontot från kontoplanen på det konto som du vill ha för den gruppen.
 
-![Mappning på sidan Ytterligare konsolideringskonton](./media/additional-consolidation-accounts.png "Mappning på sidan Ytterligare konsolideringskonton")
+![Mappning på sidan ytterligare konsolideringskonton](./media/additional-consolidation-accounts.png "Mappning på sidan ytterligare konsolideringskonton")
 
 ## <a name="consolidating-online"></a>Onlinekonsolidering
-Information om hur du anger information om onlinekonsolideringar finns i [konsolidera online](./consolidate-online.md).
+Information om hur du anger information om onlinekonsolideringar finns i [Online ekonomisk konsolidering](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Hantera konsolideringstransaktioner
 Om du vill visa resultaten av konsolideringen har du flera alternativ:

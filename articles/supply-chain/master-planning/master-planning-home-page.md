@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250701"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814271"
 ---
 # <a name="master-planning-home-page"></a>Startsida för Huvudplanering
 
@@ -39,9 +39,9 @@ Huvudplaneringen använder denna information för att beräkna behoven och skapa
 
 Det finns tre processer för huvudplanering:
 
--  **Huvudplanering** - Huvudplanen beräknar nettobehoven. Den är baserad på aktuella, faktiska order och gör det möjligt för företag att styra lagerpåfyllningen på kortfristig, daglig basis. En annan term som beskriver den är det *nettobehovsplan*. Mer information finns i [Huvudplanering](master-plans.md). 
+-  **Huvudplanering** - Huvudplanen beräknar nettobehoven. Den är baserad på aktuella, faktiska order och gör det möjligt för företag att styra lagerpåfyllningen på kortfristig, daglig basis. En annan term som beskriver den är det *nettobehovsplan*. För mer information se [Översikt över huvudplaner](master-plans.md). 
 
--  **Prognosplanering** -Prognosschemat beräknar bruttobehoven. Den baseras på framtida prognoser och gör det möjligt att genomföra långsiktig planering av material och kapacitet. Mer information finns i [Prognosplanering](introduction-demand-forecasting.md). 
+-  **Prognosplanering** -Prognosschemat beräknar bruttobehoven. Den baseras på framtida prognoser och gör det möjligt att genomföra långsiktig planering av material och kapacitet. Mer information finns i [Översikt över efterfrågeprognosticering](introduction-demand-forecasting.md). 
 
 -  **Koncernintern huvudplanering** -Den koncerninterna huvudplanen beräknar nettobehov över juridiska personer. Den sammanför tillgång och efterfrågan mellan företag inte bara för kortfristig, konkret tillgång och efterfrågan utan även för långsiktig, planerad (dvs. ännu inte bekräftad) tillgång och efterfrågan. Mer information finns i [Koncernintern huvudplanering](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (kräver CustomerSource-konto). 
 
@@ -57,13 +57,13 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 
 ## <a name="quick-links"></a>Snabblänkar
 
-- [Huvudplaner](master-plans.md)  
+- [Huvudplaner – översikt](master-plans.md)  
 - [Generera en begränsad plan](./tasks/constrained-plan.md)
 - [Skapa en materialplan för samprodukter](./tasks/create-material-plan-co-products.md)
-- [Huvudplanering och multisitefunktioner](master-plan-multisite-functionality.md)
+- [Huvudplanering och multisitefunktioner – översikt](master-plan-multisite-functionality.md)
 - [Skapa en koncernintern plan](./tasks/create-intercompany-plan.md)
-- [Översikt för efterfrågeprognosticering](introduction-demand-forecasting.md)
-- [Reduceringsnycklar](reduction-keys.md)
+- [Efterfrågeprognosticering – översikt](introduction-demand-forecasting.md)
+- [Prognosreduceringnycklar](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Ytterligare resurser
 

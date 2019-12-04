@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175037"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773655"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementera anpassade fält för Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS och Android
 
@@ -321,13 +321,9 @@ Nedan visas en skärmdump från mobilappen för användare som tittar på en tid
 
 ![Kommandot Visa mer information](media/show-more.png)
 
-
-
 Nedan visas en skärmdump från mobilappen med avsnittet "Mer" på en tidrapport. Ett anpassat fält med namnet "utnyttjandegrad för den här tidrapporten (ett beräknat anpassat fält) har lagts till i avsnittet tidrapportrubrik. Ett skrivskyddat värde på "0,667" har ställts in för det anpassade fältet.
 
 ![Avsnittet Mer](media/more-section.jpg)
-
-
 
 ### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a>Utöka TSTimesheetTable-tabellen så att den har ett anpassat fält
 

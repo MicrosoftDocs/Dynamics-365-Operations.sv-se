@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547111"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813603"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Frågor och Svar - Beräkningar för produktkonfigurationsmodeller
 
@@ -37,7 +37,7 @@ Beräkningar kan användas för aritmetiska eller logiska operationer. De komple
 ## <a name="what-is-a-calculation"></a>Vad är en beräkning?
 En beräkning är ett element som du kan använda i en produktkonfigurationsmodell. Beräkningar kompletterar begränsningar genom att du kan använda decimaltal till beräkna värden med decimaltal när du konfigurerar en produkt. Vidare har beräkningar en större uppsättning tillgängliga operatorer än begränsningar.  
 
-Likt en begränsning associeras en beräkning med en viss komponent i en modell för produktkonfiguration, och den kan inte återanvändas av eller delas med en annan komponent. En viktig skillnad mellan beräkningar och begränsningar är att beräkningar är absolut nödvändiga (enkelriktade), medan begränsningar är deklarativa (dubbelriktade). Mer information om begränsningar finns i [Uttrycksbegränsningar och registerbegränsningar](expression-constraints-table-constraints-product-configuration-models.md).  
+Likt en begränsning associeras en beräkning med en viss komponent i en modell för produktkonfiguration, och den kan inte återanvändas av eller delas med en annan komponent. En viktig skillnad mellan beräkningar och begränsningar är att beräkningar är absolut nödvändiga (enkelriktade), medan begränsningar är deklarativa (dubbelriktade). Mer information om begränsningar finns i [Uttrycksbegränsningar och registerbegränsningar i modeller för produktkonfiguration](expression-constraints-table-constraints-product-configuration-models.md).  
 
 En beräkning består av ett målattribut och ett beräkningsuttryck.
 
@@ -88,7 +88,7 @@ Nr. De värden du anger när du konfigurerar en produkt är de värden som anvä
 Om du tar bort ett invärde i en beräkning, tas värdet för målattributet också bort.
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>Varför jag får ett felmeddelande om att min modell utgör en motsättning?
-Detta meddelande visas när en beräkning innehåller ett fel eller om en motsättning förekommer i en eller flera begränsningar. Mer information om motsägelser i begränsningar finns i [Uttrycksbegränsningar och registerbegränsningar](expression-constraints-table-constraints-product-configuration-models.md). Nedan följer några situationer där det kan uppstå fel i beräkningar:
+Detta meddelande visas när en beräkning innehåller ett fel eller om en motsättning förekommer i en eller flera begränsningar. Mer information om motsägelser finns i [Uttrycksbegränsningar och registerbegränsningar i modeller för produktkonfiguration](expression-constraints-table-constraints-product-configuration-models.md). Nedan följer några situationer där det kan uppstå fel i beräkningar:
 
 -   Ett värde delas med 0 (noll).
 -   Det finns en konflikt mellan följande två element:

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 616d3f5560d18c7fdd8a092c3fbca0fde44be069
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570435"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772178"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
@@ -101,7 +101,7 @@ På sidan **Arbetsflödeshistorik** för leverantörsfakturor kan du återställ
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Ställ in leverantörsfakturapolicyer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [Mata in fakturadata i leverantörsreskontra genom att använda en leverantörsfaktura](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Huvudfakturadata i AP-system med hjälp av leverantörsfakturan](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Mata in fakturadata i leverantörsreskontra genom att använda en godkänd journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Mata in fakturadata i LR-systemet genom att använda fakturapool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Registrera en leverantörsfaktura i fakturajournalen](tasks/record-vendor-invoice-invoice-journal.md)

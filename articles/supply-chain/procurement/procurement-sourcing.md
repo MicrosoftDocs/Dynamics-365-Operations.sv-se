@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 461c89a220ec75f3f693da6f52291ebb498e7a05
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cce822f76323b6ce514d3793ce19f0160957e7a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558229"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813398"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startsidan för Anskaffning och källa
 
@@ -36,19 +36,19 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Översikt över inköpsrekvisition](purchase-requisitions-overview.md)
 -   [Skapa en rekvisition för förbrukning](tasks/create-requisition-consumption.md)
 -   [Skapa en rekvisition som använder en anbudsförfrågan](tasks/create-requisition-uses-rfq.md)
--   [Ställ in behörigheter att beställa produkter för någon annans räkning](tasks/set-up-permissions-ordering-products.md)
+-   [Ställ in behörigheter för att beställa produkter för någon annans räkning](tasks/set-up-permissions-ordering-products.md)
 
 ## <a name="requests-for-quotation"></a>Anbudsförfrågningar
--   [Anbudsförfrågningar](request-quotations.md)
+-   [Anbudsförfrågningar (RFQ) – översikt](request-quotations.md)
 -   [Skapa en anbudsförfrågan](tasks/create-request-quotation.md)
 -   [Ange och jämför anbudsförfråganbud och tilldela kontrakt](tasks/enter-compare-rfq-bids-award-contracts.md)
 -   [Skapa en poängmetod för anbudsförfrågan](tasks/create-scoring-method-rfqs.md)
--   [Skapa begäranstyper och göra poängvillkor för anbudsförfrågan](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
+-   [Skapa begäranstyper och poängvillkor för anbudsförfrågningar](tasks/create-solicitation-types-scoring-criteria-rfqs.md)
 
 ## <a name="vendor-management-and-collaboration"></a>Leverantörshantering och samarbete
--   [Konfigurera leverantörskonton](set-up-vendor-accounts.md)
+-   [Ställ in leverantörskonton](set-up-vendor-accounts.md)
 -   [Skapa ett leverantörskonto](tasks/create-vendor-account.md)
--   [Skapa ett nytt leverantörsbankkonto](tasks/create-vendor-bank-account.md)
+-   [Skapa ett leverantörsbankkonto](tasks/create-vendor-bank-account.md)
 -   [Sök efter leverantörer](tasks/search-vendors.md)
 -   [Godkänna leverantörer för specifika produkter](tasks/approve-vendors-specific-products.md)
 -   [Leverantörssamarbete med externa leverantörer](vendor-collaboration-work-external-vendors.md)
@@ -58,21 +58,21 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Inkommande demonstrationsskript för försändelselager för Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(vitbok)
 -   [Övervaka försändelselagret med hjälp av leverantörssamarbete](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Samarbeta med leverantörer genom att använda leverantörsportalen](collaborate-vendors-vendor-portal.md)  (endast Dynamics AX-versioner från februari 2016 och maj 2016)
--   [Säkerhetskonfiguration för användare av leverantörsportalen](configure-security-vendor-portal-users.md) (endast Finance and Operations-versioner från februari 2016 och maj 2016)
--   [Mobil arbetsyta för leverantörssamarbete för Microsoft Dynamics 365 for Finance and Operations-app](vendor-collaboration-mobile-workspace.md)
+-   [Användarsäkerhet för leverantörsportalen](configure-security-vendor-portal-users.md) (endast Finance and Operations-versioner från februari 2016 och maj 2016)
+-   [Mobil arbetsyta för leverantörssamarbete](vendor-collaboration-mobile-workspace.md)
 
 ## <a name="procurement-product-management"></a>Hantering av anskaffningsprodukt
--   [Anskaffningskataloger](procurement-catalogs.md)
--   [Skapa en anskaffningskatalog](tasks/create-procurement-catalog.md)
+-   [Anskaffningskataloger – översikt](procurement-catalogs.md)
+-   [Skapa inköpsorder](tasks/create-procurement-catalog.md)
 -   [Importera leverantörskataloger](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blogginlägg)
 -   [Ställ in en anskaffningskategorihierarki](tasks/set-up-procurement-category-hierarchy.md)
 -   [Ställ in policyer för hierarkier för anskaffningskategorier](tasks/set-up-policies-procurement-category-hierarchies.md)
 -   [Godkänn leverantörer för specifika anskaffningkategorier](tasks/approve-vendors-specific-procurement-categories.md)
 
 ## <a name="procurement"></a>Anskaffning
--   [Översikt över inköpsorder](purchase-order-overview.md)
+-   [Översikt av inköpsorder](purchase-order-overview.md)
 -   [Skapande av inköpsorder](purchase-order-creation.md)
--   [Godkänna och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
+-   [Godkänn och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
 -   [Skapa en inköpsorder](tasks/create-purchase-order.md)
 -   [Skapa en upprepad inköpsorder](tasks/create-repeat-purchase-order.md)
 -   [Skapa en inköpsorder från en försäljningsorder](../sales-marketing/tasks/create-purchase-order-sales-order.md)
@@ -99,11 +99,8 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Registrera inleverans av varor på en inköpsorder](tasks/record-receipt-goods-purchase-order.md)
 -   [Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
 -   [Definiera affärsprocessarbetsflöden för inköpsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (vitbok)
--   [Inköpspolicyer](purchase-policies.md)
+-   [Inköpspolicyer – översikt](purchase-policies.md)
 -   [Skapa inköpspolicyer](tasks/create-purchasing-policies.md)
-
-
-
 
 
 

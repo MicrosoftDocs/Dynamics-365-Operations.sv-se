@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191418"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811980"
 ---
 # <a name="optimization-advisor-overview"></a>Rådgivning om optimering – översikt
 
@@ -38,7 +38,7 @@ Felaktig konfiguration och inställning av en modul kan allvarligt påverka till
 
 Arbetsytan **Optimerings-advisor** är ett verktyg som låter privilegierade användare, affärsanalytiker, funktionskonsulter och IT-supportfunktioner identifiera problem i modulkonfiguration och affärsdata. Optimerings-advisor föreslår metodtips för modulkonfigurationen och identifierar affärsdata som är inaktuell eller felaktig.
 
-Optimerings-advisor kör regelbundet en uppsättning metodregler. En standarduppsättning regler finns, men användare kan också skapa regler som är specifika för deras anpassningar, lösningar från oberoende programvaruleverantörer (ISV) och affärsdata. Mer information om hur du skapar regler finns i [Skapa nya regler](./create-rules-optimization-advisor.md).
+Optimerings-advisor kör regelbundet en uppsättning metodregler. En standarduppsättning regler finns, men användare kan också skapa regler som är specifika för deras anpassningar, lösningar från oberoende programvaruleverantörer (ISV) och affärsdata. Mer information om hur du skapar regler finns i [Skapa regler för Rådgivning om optimering](./create-rules-optimization-advisor.md).
 
 När ett brott mot en regel upptäcks skapas en optimeringsmöjlighet och visas på arbetsytan **Optimerings-advisor**. En användare kan vidta lämpliga korrigeringsåtgärder direkt från arbetsytan **Optimerings-advisor**.
 
@@ -92,6 +92,6 @@ Markera affärsmöjligheten som skapades av regeln om du vill inaktivera utvärd
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Skapa nya regler](./create-rules-optimization-advisor.md)
+[Skapa regler för rådgivning om optimering](./create-rules-optimization-advisor.md)
 
 [Optimerings-advisor i Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

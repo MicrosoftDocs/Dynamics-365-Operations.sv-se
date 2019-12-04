@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 21ff82df71e352ca176aa1635a5ffb478bbcaf0e
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 0fc9877fdca2d2f85f4f9609616d8d21ab7b5174
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536834"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771597"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innehåll för kostnadsredovisningsanalys
 
@@ -40,7 +40,7 @@ Innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera k
 
 Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
-Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet för **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
+Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet för **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsanalyser i Power BI-innehåll](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
@@ -74,7 +74,7 @@ Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsät
 |                                  | Faktisk kostnad efter medlemsnamn för kostnadsobjektdimension samt medlemsnamn för kostnadselemetdimension                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Följande data används för att fylla i rapportsidorna Power BI-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+Följande data används för att fylla i rapportsidorna Power BI-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Följande sammanlagda huvudmått används till grund för innehållet:
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 80b1f8aeabfd033f393463f4be5a61447377f2d9
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 1a86936d756d8375761ce50c9d9bf33dc638dfad
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009316"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772929"
 ---
 # <a name="user-can-access-core-hr-but-not-onboard-or-attract"></a>Användarna kan komma åt Core HR men inte Onboard eller Attract
 
@@ -39,7 +39,7 @@ Användare B kan komma åt Core HR, men inte Talent: Attract eller Talent: appen
 
 **Lösning**
 
-Användare B måste tilldelas behörighet för att visa den Microsoft PowerApps-miljö som användaren skapat under etableringsprocessen.
+Användare B måste tilldelas behörighet för att visa den Microsoft Power Apps-miljö som användaren skapat under etableringsprocessen.
 
 Information finns i avsnittet ”beviljar behörighet för miljön” i [Etablera Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 

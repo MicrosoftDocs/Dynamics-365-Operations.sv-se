@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658820"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812659"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Skapa dokumentation eller utbildning med uppgiftsinspelning
 
@@ -84,7 +84,7 @@ Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
 [![Anteckningskommentarens utseende i uppgiftsguiden](./media/screen4.png)](./media/screen4.png)
 
--   **Informationssteg**: Kommentarer som skapas genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsregistrering** &lt; **Lägg till informationssteg** visas som ett numrerat steg där du infogar det, även om ingen åtgärd registrerades i UI. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför appen eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
+-   **Informationssteg**: Dessa anteckningar skapas genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsregistrering** &lt; **steget Lägg till information.** Informationssteg visas som ett numrerat steg vid den tidpunkt som du infogar det, även om ingen åtgärd rapporterades i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför appen eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
 
 **Avgör hur långa registreringen ska vara**
 
@@ -97,7 +97,7 @@ Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 **Bestäm var i användargränssnittet du startar en inspelning**. Sidan som visas när du börjar spela in en uppgiftsinspelning påverkar vilka sidor uppgiftsguiden visar. Om du exempelvis vill att din uppgiftsinspelning ska visas i listan i hjälpfönstret när användaren klickar på Hjälp på sidan Redovisningsparametrar måste du starta inspelningen på sidan Redovisningsparametrar. **Spara registreringar som .axtr-filer** När du har skapat eller redigerat en uppgiftsregistrering får du flera alternativ för att hämta eller spara registreringen. Du kan hämta filen som en uppgiftsregistreringspaket (.axtr), hämta den som en rå registreringsfil (.xml), hämta den som ett Word-dokument eller spara filen i ett LCS-bibliotek. Det är en bra idé att alltid uppgiftsregistreringar som en uppgiftsregistreringspaketfil (.axtr). Detta gör det lättare att underhålla filen enklare om procedurer eller kommentarer måste ändras senare. Om du vill hämta filen som ett Word-dokument, spara den även uppgiftsregistreringspaketfil.
 
 ## <a name="create-your-task-recording"></a>Skapa en uppgiftsregistrering
-Detaljerad information finns i [Så här skapar du en uppgiftsregistrering](task-recorder.md).
+Detaljerad information finns i [Uppgiftsinspelarresurser](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiera och anpassa Microsofts uppgiftsregistreringar
 Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda dem för egen hjälpdokumentation eller eget utbildningsmaterial. Hämta en Microsoft uppgiftsregistrering genom att följa dessa steg:
@@ -120,9 +120,9 @@ Om du vill visa dina egna anpassade uppgiftsregistrering i hjälpfönstret så a
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Hjälp – översikt](../../fin-ops/get-started/help-overview.md)
+[Hjälpsystem](../../fin-ops/get-started/help-overview.md)
 
-[Anslut hjälp](../../fin-ops/get-started/help-connect.md)
+[Ansluta hjälpsystemet](../../fin-ops/get-started/help-connect.md)
 
 [Uppgiftsinspelare](task-recorder.md)
 

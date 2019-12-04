@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c7675ca0ef2f2477d510c956e63d824a5e6b0980
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180093"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812542"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Nya eller uppdaterade uppgiftsguider (augusti 2016)
 
@@ -32,7 +32,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguider i (augusti 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX
 
-APQC Unified Library (augusti 2016 - alla språk) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX -plattformsuppdatering 2 (augusti 2016), programuppdateringen Dynamics AX maj 2016 samt Microsoft Dynamics AX februari 2016-utgåvan. Mer information om dessa utgåvor finns i [Vad är nytt eller ändrat](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
+APQC Unified Library (augusti 2016 - alla språk) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX -plattformsuppdatering 2 (augusti 2016), programuppdateringen Dynamics AX maj 2016 samt Microsoft Dynamics AX februari 2016-utgåvan. Mer information om dessa versioner finns i [nyheter och ändringar på startsidan för Finance and Operations](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Hjälp-system](help-overview.md).
 
 ### <a name="data-access"></a>Dataåtkomst
 
@@ -95,7 +95,7 @@ APQC Unified Library (augusti 2016 - alla språk) innehåller de uppgiftsguider 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
+[Nya uppgiftguider (februari 2016)](new-task-guides-available-february-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 

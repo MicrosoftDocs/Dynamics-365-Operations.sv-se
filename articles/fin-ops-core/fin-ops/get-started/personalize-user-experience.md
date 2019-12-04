@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 124609041163bbcaf1b86a6964fa3f56fcd8f755
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: d3cf2b82470887ee617704b72e47a53d299911e3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658770"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811541"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -112,15 +112,12 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 
 - Använd verktyget **Välj** för att välja och öppna ett elements egenskaper. Om du vill använda det här verktyget väljer du knappen **Välj** i verktygsfältet och väljer sedan det önskade elementet. Elementets egenskapsfönster visas och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element som kan anpassas på den sidan. Observera att vissa anpassningsegenskaper kanske inte är tillgängliga i vissa fall. Exempelvis kan du inte låsa ett fält som krävs.
 - Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Om du vill använda det här verktyget väljer du knappen **Dölj** i verktygsfältet och väljer sedan det element som ska döljas. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra ett element synligt genom att markera det. Om du vill se hur sidan ser ut när elementen är dolda, växlar du till ett annat anpassningsverktyg.
-
-    Du kan dölja obligatoriska fält och avsnitt som innehåller obligatoriska fält. Detta låter dig skapa en förenklad upplevelse där obligatoriska fält inte visas om de har standardvärden som fylls i av affärslogik. Dolda obligatoriska fält blir tillfälligt synliga om de är tomma när en användare försöker spara sidan.
-
-- Använd verktyget **Lägg till ett fält** för att lägga till ett fält till din sida. När du använder det här verktyget kan du bara lägga till fält som är en del av siddefinitionen. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns [anpassade fält](user-defined-fields.md). När du har valt knappen **Lägg till ett fält** på verktygsfältet måste du först välja den grupp eller det område där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till den valda gruppen eller området. Välj ett eller flera fält i dialogrutan och välj sedan **Infoga**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
+- Använd verktyget **Lägg till ett fält** för att lägga till ett fält till din sida. När du använder det här verktyget kan du bara lägga till fält som är en del av siddefinitionen. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns i [Skapa och arbeta med anpassade fält](user-defined-fields.md). När du har valt knappen **Lägg till ett fält** på verktygsfältet måste du först välja den grupp eller det område där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till den valda gruppen eller området. Välj ett eller flera fält i dialogrutan och välj sedan **Infoga**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
 - Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. Observera att du inte kan flytta ett element utanför dess överordnade grupp. Om du vill använda det här verktyget väljer du knappen **Flytta** i verktygsfältet och väljer sedan det element som ska flyttas. När du markerar ett element kommer appen att bestämma platser som elementet kan flyttas till. Dessa platser kallas *släppzoner*. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
 - Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer knappen **Hoppa över** på verktygsfältet kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan ta bort eller lägga till fält interaktivt i tabbsekvensen.
 - Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från den genom att markera fälten.
 - Använd verktyget **Låsa** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer knappen **Låsa** på verktygsfältet kommer alla element som för närvarande icke är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
-- Använd knappen **Lägg till PowerApp** under infoga i ett program som har skapats med hjälp av Microsoft PowerApps på sidan. För detaljerad information om hur du bäddar in en PowerApps-app på en sida finns i [bädda in PowerApps](embed-power-apps.md).
+- Använd knappen **Lägg till PowerApp** under infoga i ett program som har skapats med hjälp av Microsoft PowerApps på sidan. För detaljerad information om hur du bäddar in en PowerApps-app på en sida finns i [bädda in PowerApps-appar](embed-power-apps.md).
 - Använd verktyget **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Det finns ingen ångra-åtgärd. Använd därför endast detta verktyg om du är säker på att du vill återställa sidan.
 - Använd verktyget **Importera** för att ladda en anpassning från en fil som du eller någon annan tidigare skapade. När du importerar anpassningar för en sida kan du välja om de ska läggas till i eller ersätta alla befintliga anpassningar för sidan. Det finns ingen ångra-åtgärd. När du har importerat anpassningar måste du därför manuellt rensa eller ångra de ändringar som du inte vill ha.
 - Använd verktyget **exportera** om du vill spara dina anpassningar för sidan till en fil. Du kan sedan dela dina anpassningar med andra användare. Användarna behöver bara importera filen med dina anpassningar för sidan.

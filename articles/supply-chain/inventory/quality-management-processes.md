@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 544721af404775a6d8b65628848caa84ceaebe30
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572798"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813851"
 ---
 # <a name="quality-management-processes"></a>Kvalitetshanteringsprocesser
 
@@ -90,14 +90,14 @@ Det är en bra idé att definiera en unik dokumenttyp för avvikelser på sidan 
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Aktivera kvalitetshantering](enable-quality-management.md)
+[Kvalitetshantering – översikt](enable-quality-management.md)
 
-[Aktivera avvikelsehantering](enable-nonconformance-management.md)
+[Avvikelsehantering](enable-nonconformance-management.md)
 
 [Lagerspärr](inventory-blocking.md)
 
 [Karantänorder](quarantine-orders.md)
 
-[Ställa in kvalitetsorder (uppgiftsguide)](tasks/set-up-quality-orders.md)
+[Ställ in kvalitetsorder](tasks/set-up-quality-orders.md)
 
-[Kontrollera kvaliteten på varor (uppgiftsguide)](tasks/inspect-quality-goods.md)
+[Kontrollera kvaliteten på varor](tasks/inspect-quality-goods.md)

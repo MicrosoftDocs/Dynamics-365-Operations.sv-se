@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190015"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812373"
 ---
 # <a name="workflow-system-overview"></a>Arbetsflödessystem – översikt
 
@@ -57,18 +57,18 @@ Det finns flera fördelar med att använda arbetsflödessystemet i organisatione
 
 ## <a name="workflow-content"></a>Arbetsflödesinnehåll
 
-+ [Arbetsflödesarkitektur](workflow-system-architecture.md)
++ [Arbetsflödessystemets arkitektur](workflow-system-architecture.md)
 + [Arbetsflödeselement](workflow-elements.md)
-+ [Arbetsflödesåtgärder](workflow-actions.md)
-+ [Skapa ett arbetsflöde](create-workflow.md)
++ [Åtgärder i godkännandeprocesser i ett arbetsflöde](workflow-actions.md)
++ [Skapa arbetsflöden – översikt](create-workflow.md)
 + [Konfigurera arbetsflödesegenskaper](configure-workflow-properties.md)
-+ [Konfigurera en manuell uppgift i ett arbetsflöde](configure-manual-task-workflow.md)
-+ [Konfigurera en automatisk uppgift i ett arbetsflöde](configure-automated-task-workflow.md)
-+ [Konfigurera en godkännandeprocess i ett arbetsflöde](configure-approval-process-workflow.md)
-+ [Konfigurera ett godkännandesteg i ett arbetsflöde](configure-approval-step-workflow.md)
-+ [Konfigurera ett manuellt beslut i ett arbetsflöde](configure-manual-decision-workflow.md)
-+ [Konfigurera ett villkorsbeslut i ett arbetsflöde](configure-conditional-decision-workflow.md)
-+ [Konfigurera en parallell aktivitet i ett arbetsflöde](configure-parallel-activity-workflow.md)
-+ [Konfigurera en parallell gren i ett arbetsflöde](configure-parallel-branch-workflow.md)
-+ [Konfigurera ett arbetsflöde för radartiklar](configure-line-item-workflow.md)
++ [Konfigurera manuella uppgifter i ett arbetsflöde](configure-manual-task-workflow.md)
++ [Konfigurera automatiska uppgifter i ett arbetsflöde](configure-automated-task-workflow.md)
++ [Konfigurera godkännandeprocesser i ett arbetsflöde](configure-approval-process-workflow.md)
++ [Konfigurera godkännandesteg i ett arbetsflöde](configure-approval-step-workflow.md)
++ [Konfigurera manuella beslut i ett arbetsflöde](configure-manual-decision-workflow.md)
++ [Konfigurera villkorsbeslut i ett arbetsflöde](configure-conditional-decision-workflow.md)
++ [Konfigurera parallella aktiviteter i ett arbetsflöde](configure-parallel-activity-workflow.md)
++ [Konfigurera parallella grenar i ett arbetsflöde](configure-parallel-branch-workflow.md)
++ [Konfigurera arbetsflöden för radartiklar](configure-line-item-workflow.md)
 + [Vanliga frågor om arbetsflöde](workflow-FAQ.md)

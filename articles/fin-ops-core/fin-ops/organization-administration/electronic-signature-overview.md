@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2e5144517a880c41cf04998ed53a826a75ecefb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3d1d8952324bb16bcfa6a8b42fc4f157edb75cf1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180057"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811337"
 ---
 # <a name="electronic-signatures-overview"></a>Elektroniska underskrifter – översikt
 
@@ -44,7 +44,7 @@ Elektroniska signaturer är ett juridiskt krav för flera reglerade branscher so
 
 Du kan använda elektroniska signaturer för kritiska affärsprocesser. Vissa processer har inbyggda funktioner för elektronisk signatur. Du kan även skapa anpassade signaturkrav för alla databastabeller och fält.
 
-Elektroniska signaturer har en inbyggd funktion för digital signatur. Alla användare som signerar dokument måste få ett giltigt kryptografiskt certifikat. När ett dokument signeras verifieras den privata nyckeln som är associerad med certifikatet. Information om elektroniska signaturer registreras i en logg för att tillhandahålla ett redovisningsspår. För att ställa in elektroniska signaturer, se [Ställ in elektroniska signaturer (uppgiftsguide)](tasks/set-up-electronic-signatures.md).
+Elektroniska signaturer har en inbyggd funktion för digital signatur. Alla användare som signerar dokument måste få ett giltigt kryptografiskt certifikat. När ett dokument signeras verifieras den privata nyckeln som är associerad med certifikatet. Information om elektroniska signaturer registreras i en logg för att tillhandahålla ett redovisningsspår. Om du vill ställa in elektroniska signaturer, se [Ställ in elektroniska signaturer](tasks/set-up-electronic-signatures.md).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Användare som behöver åtkomst till elektroniska signaturer
 

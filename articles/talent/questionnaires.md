@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024251"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814615"
 ---
 # <a name="questionnaires"></a>Enkäter
 
@@ -44,8 +44,8 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 | Avsnitt| beskrivning|
 |------|------------|
 | [Utforma en enkät](design-questionnaires.md)  | Den här artikeln ger information om hur du utformar en enkät. Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät. |
-| [Distribuera och slutföra en enkät](distribute-questionnaires.md)  | Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter.                                                                       |
-| [Visa och utvärdera resultaten för en enkät](evaluate-questionnaire-results.md) | Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter.                                                                                        |
+| [Skicka ut och schemalägg enkäter](distribute-questionnaires.md)  | Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter.                                                                       |
+| [Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md) | Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter.                                                                                        |
 
 
 
@@ -54,7 +54,7 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 
 [Utforma enkäter](design-questionnaires.md)
 
-[Distribuera och slutföra enkäter](distribute-questionnaires.md)
+[Skicka ut och schemalägg enkäter](distribute-questionnaires.md)
 
-[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+[Visa och utvärdera resultaten av enkäter](evaluate-questionnaire-results.md)
 

@@ -3,7 +3,7 @@ title: Underhåll planerade order
 description: Detta avsnitt innehåller information om hur du hanterar planerade order. Det beskriver hur du kan uppdatera statusen för planerade order, bekräfta dem och filtrera för planerade order som har samma status som en vald planerad order.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
-ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
+ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "1993450"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813786"
 ---
 # <a name="maintain-planned-orders"></a>Underhåll planerade order
 
@@ -39,7 +39,7 @@ Du kan använda fältet **Status** för att följa dina framsteg. Följande vär
 
 -   När huvudplaneringen genererar planerade order, har planerade order statusen **Obearbetad**.
 -   Om du väljer att inte bekräfta en planerad order kan du ge den statusen **Slutförd**.
--   Om du vill bekräfta en planerad order kan du ändra statusen till **godkänd**. Planerade order med status **godkänd** respekteras i huvudplaneringen, så att de inte ändras eller tas bort. 
+-   Om du vill bekräfta en planerad order kan du ändra statusen till **godkänd**. Planerade order med status **godkänd** respekteras i huvudplaneringen, så att de inte ändras eller tas bort under en senare huvudplaneringskörning. 
 
 ## <a name="firming-planned-orders"></a>Bekräfta planerade order 
 Genom att bekräfta planerade order skapas verkliga order. Dessa är också kända som *frisläppta* eller *öppna order*. När en planerad order är bekräftad flyttas den till den relevanta modulens orderavsnitt.
@@ -62,7 +62,7 @@ Om du planerar att bekräfta många order samtidigt kan körningstiden och prest
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Huvudplaner](master-plans.md)
+[Huvudplaner – översikt](master-plans.md)
 
 
 
