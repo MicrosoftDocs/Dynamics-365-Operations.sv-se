@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569094"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771408"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Ange en anpassad lagringsplats för skapade dokument
 
@@ -54,7 +54,7 @@ I den aktuella topologin [skapa ett nytt ER-format](tasks/er-format-configuratio
 
 ## <a name="create-a-new-document-type"></a>Skapa en ny dokumenttyp
 
-Om du vill ange hur dokument som ett ER-format genereras skickas, måste du konfigurera [ER-destinationer](electronic-reporting-destinations.md). I varje ER-destination som konfigureras för att lagra genererade dokument som filer måste du ange en dokumenttyp för ramverket för dokumenthantering. Olika typer av dokumenttyper kan användas för att skicka dokument som ger upphov till olika ER-format.
+Om du vill ange hur dokument som ett ER-format genereras skickas, måste du konfigurera [Elektronisk rapportering (ER)-destinationer](electronic-reporting-destinations.md). I varje ER-destination som konfigureras för att lagra genererade dokument som filer måste du ange en dokumenttyp för ramverket för dokumenthantering. Olika typer av dokumenttyper kan användas för att skicka dokument som ger upphov till olika ER-format.
 
 1. Lägg till en ny [dokumenttyp](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) för ER-formatet som du har skapat eller tidigare importerat. I bilden nedan är dokumenttypen **FileX**.
 2. Inkludera ett specifikt nyckelord i dess namn för att skilja den här dokumenttypen från andra typer av dokument. I bilden nedan är namnet exempelvis **(LOKAL) mapp**.
@@ -173,5 +173,5 @@ Händelsen **AttachingFile()** utlöses när följande ER-destinationer bearbeta
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Destinationer för elektronisk rapportering](electronic-reporting-destinations.md)
+- [Destinationer för elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startsida för utbyggbarhet](../extensibility/extensibility-home-page.md)

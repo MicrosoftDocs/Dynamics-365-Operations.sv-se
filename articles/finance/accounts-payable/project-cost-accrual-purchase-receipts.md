@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9200b0e4bc3862abdb3ecacb6539f7ba0d619b2f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a930b4921a29d5ce561ce0e958733f0c3261b81
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189624"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772201"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Periodisering av projektkostnad på inköpsinleveranser
 
@@ -40,21 +40,20 @@ Contoso Consulting har påbörjat ett nytt molndistributionsprojekt. En inköpso
 Upplupen kostnad måste registreras på både ekonomisk nivå och projektnivå för rapportering. Den ekonomiska uppdateringen av produktinleveransen spåras för artikeln och upphandlingskategorier. 
 
 För artiklar, på sidan **Parametrar för leverantörsreskontra**, anger du alternativet **Bokför produktinleveranser i redovisningen**.
-[![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+[![Sida för parametrar för leverantörsreskontra](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
 För upphandlingskategorier, på sidan **Kategoripolicyregel**, väljer du **Inköp**-principer och väljer sedan **Periodisera inköpskostnad vid inleverans** för varje anskaffningskategori.
-[![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+[![Sida för kategoripolicyregel](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
 Kontona **Inköpsomkostnad, ej fakturerad** och **Inköp, periodisering** i **Inställningar för bokföring** kommer att användas när verifikationer som är relaterade till produktinleveransen bokförs.
-[![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
 Med samma scenariot ska vi titta på hur bokföring av en produktinleverans påverkar redovisningen och projektinformationen. 
 
 **Steg 1:** Skapa och bekräfta en ny inköpsorder för att projektet för att registrera inköp av en dator för $1500 och installationstjänster för $150.
-[![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+[![Skapa ny inköpsorder](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 När inköpsordern har bekräftats skapas transaktioner för utfästa kostnader för projektet. 
-[![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Skapade transaktioner](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
 > Transaktionerna för de utfästa kostnaderna har fältet **Transaktionsursprung** inställt på **Inköpsorder**. Skapa och bekräfta en inköpsorder skapar inte transaktioner för ett projekt. 
@@ -62,23 +61,23 @@ När inköpsordern har bekräftats skapas transaktioner för utfästa kostnader 
 **Steg 2:** Varor och tjänster levereras och en produktinleverans registreras. 
 
 Bokför en produktinleverans skapar och bokför en verifikation i redovisningen. Verifikationen debiterar inköpsutgiften, ofakturerat konto och krediterar kontot för inköpsperiodiseringen. 
-[![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
+[![Verifikationstransaktioner](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
 > Bokför en produktinleverans använder bokföringsinställningar för anskaffningskategorier och produkter, inte bokföringsinställningarna för projektkategorier. För att korrekt återspegla den ekonomiska effekten av inköpsperiodiseringar, måste denna inställning justeras. 
 
 Du kan mappa anskaffningskategorier till projektkategorier på sidan **Anskaffningskategori**.
-[![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
+[![Sidan anskaffningskategori](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **Steg 3:** Skapa ett utkast till leverantörsfaktura. 
 
 Bokföringen av en produktinleverans påverkar inte projektinformationen. Som tillfällig lösning kan du generera du ett utkast till leverantörsfaktura direkt när inleveransen har bokförts. Gå till sidan **Inköpsorder** &gt; **fliken Faktura** &gt; **Generera** &gt; **Faktura**. Då skapas ett väntande fakturadokumentet som uppdaterar projektinformation. 
 
 När ett utkast till leverantörsfaktura skapas genereras pågående projekttransaktioner. 
-[![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+[![Pågående projekttransaktioner](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 På sidan **Utfästa kostnader** stängs poster som skapats i steg 1 och nya poster skapas för att återspegla kostnadsåtaganden från den väntande leverantörsfakturan. Fältet **Transaktionsursprung** för den utfästa kostnaden ställs in på **Leverantörsfaktura**.
-[![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Sidan Utfästa kostnader](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 Leverantörsfakturan förblir väntande tills den faktiska leverantörsfakturan anländer.
 

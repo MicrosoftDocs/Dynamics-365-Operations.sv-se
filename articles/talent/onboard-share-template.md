@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551459"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812843"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Dela innehåll med andra deltagare i Dynamics 365 Talent - Onboard
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Talent: Onboard låter dig dela integrationsguider och ma
 
 3. Under **Mottagare**, om mottagarna ska kunna revidera mallen, ställ in alternativet **kan dessa personer göra redigeringar?** till **på**. Om mottagarna ska meddelas via e-post som du har delat mallen med dem, anger du alternativet **skicka e-postmeddelande** till **på**.
 
-    [Ställa in åtkomst-och e-postinställningar för en mall](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Ange åtkomst- och e-postinställningar för en mall](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Ange ett namn eller en e-postadress och välj önskad mottagare i den nedrullningsbara listan.
 5. På fliken **hantera åtkomst** kan du granska eller ändra vad mottagarna kan göra med mallen. Om du vill ändra en mottagares åtkomst väljer du **Kan visa**, **Kan redigera** eller **Ta bort**, efter behov.
@@ -68,6 +68,6 @@ Microsoft Dynamics 365 Talent: Onboard låter dig dela integrationsguider och ma
 ### <a name="see-also"></a>Se även
 
 - [Prova eller köp appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheter](./whats-new.md)
-- [Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheter och ändringar i Dynamics 365 Talent](./whats-new.md)
+- [Utgivningsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support för Microsoft Dynamics 365 Talent](./talent-support.md)

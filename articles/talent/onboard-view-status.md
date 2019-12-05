@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe6da4599940a0b7812dc9d3f66157715c45f62d
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009841"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814730"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Visa status för integration av medarbetare och dina uppgifter
 
@@ -54,6 +54,6 @@ Microsoft Dynamics 365 Talent: Onboard låter dig visa de framsteg som dina nyan
 ### <a name="see-also"></a>Se även
 
 - [Prova eller köp appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheter](./whats-new.md)
-- [Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheter och ändringar i Dynamics 365 Talent](./whats-new.md)
+- [Utgivningsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support för Microsoft Dynamics 365 Talent](./talent-support.md)

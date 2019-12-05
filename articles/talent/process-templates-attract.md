@@ -1,6 +1,6 @@
 ---
-title: Skapa en processmall i Attract
-description: Det här avsnittet ger information om hur du skapar processmallar i Attract.
+title: Skapa en anställningsprocess i Attract
+description: Det här avsnittet ger information om hur du skapar anställningsprocessmallar i Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622728"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832568"
 ---
-# <a name="create-a-process-template-in-attract"></a>Skapa en processmall i Attract
+# <a name="create-a-hiring-process-template-in-attract"></a>Skapa en anställningsprocess i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ Administratörer, rekryterare och anställningschefer kan skapa processmallar. E
 > [!NOTE]
 > Fasnamn visas för kandidater på sidan **Ansökningsstatus**. Du bör tänka på detta när du väljer namn för faser.
 
-FÖr mer information om aktiviteter, se [Aktiviteter vid anställningsprocess i Attract](./activities-attract.md).
+FÖr mer information om aktiviteter, se [Aktiviteter vid anställningsprocesser](./activities-attract.md).
 
 Följ dessa steg om du vill skapa en mall för anställningsprocesser.
 

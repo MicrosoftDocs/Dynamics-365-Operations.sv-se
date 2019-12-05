@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34a1a2cec9f86932fe2de9f3886059621903b262
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: cea228e04632bd61f60771b09481241df5d16bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578182"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813717"
 ---
 # <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Huvudplanering för täckning av site och lagerställe, lagerställe inte obligatorisk
 
@@ -51,15 +51,15 @@ Följande figur illustrerar hur huvudplaneringen fortskrider. Parametrarna som r
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Huvudplanering och multisitefunktioner](master-plan-multisite-functionality.md)
+[Huvudplanering och multisitefunktioner – översikt](master-plan-multisite-functionality.md)
 
-[Huvudplanering - täckning av site och lagerställe, lagerställe obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Huvudplanering för täckning av plats, lagerställe obligatoriskt](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Huvudplanering - platstäckning, lagerställe obligatoriskt](master-plan-site-coverage-warehouse-mandatory.md)
+[Huvudplanering för plats och lagerställe, lagerställe obligatoriskt](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Huvudplanering - täckning av site, lagerställe ej obligatoriskt](master-plan-site-coverage-warehouse-not-mandatory.md)
+[Huvudplanering för plats och lagerställe, lagerställe inte obligatoriskt](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Huvudplanering - hur strukturlisteversionen bestäms](master-plan-bom-version-determined.md)
+[Avgör strukturlisteversion](master-plan-bom-version-determined.md)
 
 
 

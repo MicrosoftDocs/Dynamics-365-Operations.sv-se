@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39328c73fe3dd101e32ec04d895483335184ae7
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627661"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811492"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Dynamics AX 7.0 (februari 2016)
 
@@ -322,7 +322,7 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 <tr>
 <td>Komma åt guidad procedurbaserad hjälp (uppgiftsguider) och begreppsbaserade avsnitt genom att klicka på <strong>Hjälp</strong>.</td>
 <td>AX 2012-hjälpsystemet pekar på HTML-avsnitt som lagras på en lokal webbserver. Kunder och partner kan skapa sin egen hjälp.</td>
-<td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från webbsidan för Microsoft-dokument. For more information, see <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX Hjälp - Komma igång</a> och <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Ny uppgiftsguide tillgänglig (februari 2016)</a>.</td>
+<td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från webbsidan för Microsoft-dokument. Mer information finns i <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">hjälpsystem</a> och <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">nya uppgiftsguider (februari 2016)</a>.</td>
 <td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Det här avsnittet låter dig skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste tekniska informationen.</td>
 </tr>
 </tbody>
@@ -1031,6 +1031,6 @@ Inga nya funktioner har lagts till.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Nyheter eller ändringar](whats-new-changed.md)
+[Nyheter och ändringar på hemsidan för Finance and Operations](whats-new-changed.md)
 
-[Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
+[Nya uppgiftguider (februari 2016)](new-task-guides-available-february-2016.md)

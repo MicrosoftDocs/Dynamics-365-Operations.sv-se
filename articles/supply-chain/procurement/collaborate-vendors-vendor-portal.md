@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248990"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813533"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer genom leverantörsportalen
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248990"
 
 Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 och maj 2016.
 
-Informationen i det här avsnittet gäller bara Dynamics AX-versionerna från februari 2016 och maj 2016. För mer information om det nya leverantörssamarbetet, se [Använda leverantörssamarbeten för att arbeta med externa leverantörer](vendor-collaboration-work-external-vendors.md).  
+Informationen i det här avsnittet gäller bara Dynamics AX-versionerna från februari 2016 och maj 2016. För mer information om det nya leverantörssamarbetet, se [Leverantörssamarbeten med externa leverantörer](vendor-collaboration-work-external-vendors.md).  
 
 Leverantörsportalen vänder sig till leverantörer som inte har elektroniskt datautbyte (EDI) med Microsoft Dynamics AX för utbyte av inköpsorderinformation (IO). Portalen gör att inköpsagenter kan skicka en inköpsorder till leverantören och sedan få ett bekräftat eller avvisat svar direkt i Dynamics AX.  
 
@@ -98,9 +98,9 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Konfigurering av säkerhet för leverantörssamarbetesanvändare](configure-security-vendor-portal-users.md)
+[Användarsäkerhet för leverantörportal](configure-security-vendor-portal-users.md)
 
-[Faktureringsarbetsyta för leverantörssamarbeten](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 

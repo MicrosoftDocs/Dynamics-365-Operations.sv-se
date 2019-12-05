@@ -1,5 +1,5 @@
 ---
-title: Skaffa kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract
+title: Skaffa kandidater med LinkedIn Recruiter i Attract
 description: Använd den LinkedIn-integration som ges av Microsoft Dynamics 365 Talent - Attract för att hitta jobbkandidater via LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe
@@ -19,15 +19,16 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8f2e95e74bbc8d78ed5d970f29b61150a45c6740
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e05b902d745c26c08d1bac133991f51fd58c3e93
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551574"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833056"
 ---
-# <a name="source-candidates-with-linkedin-recruiter-in-microsoft-dynamics-365-talent---attract"></a>Skaffa kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract
-[!include[banner](../includes/banner.md)]
+# <a name="source-candidates-with-linkedin-recruiter-in-attract"></a>Skaffa kandidater med LinkedIn Recruiter i Attract
+
+[!include [banner](includes/banner.md)]
 
 LinkedIn är världens största online professionella nätverk, vilket ger dig till gång till världens främsta talanger. Microsoft Dynamics 365 Talent: Attract gör att du kan hitta kandidater direkt från LinkedIn. Därför är det enklare än någonsin att hitta talanger som du behöver för att fylla dina öppna befattningar. När du har ställt in din anslutning med LinkedIn genom Attract kan du visa potentiella LinkedIn-kandidater för dina befattningar och exportera dem till Attract med bara ett klick.
 
@@ -100,12 +101,12 @@ Om kandidater är överens om att dela sin LinkedIn-profil med en användare i d
 
 ## <a name="see-also"></a>Se även
 
-[Vanliga frågor LinkedIn](./attract-linkedin-faq.md)
+[Vanliga frågor Attract-integration med LinkedIn](./attract-linkedin-faq.md)
 
-[Konfigurera integration med LinkedIn](./attract-admin-linkedin.md)
+[Konfigurera integration med LinkedIn för Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Skapa jobb](./creating-jobs-attract.md)
+[Skapa, godkänna och bokföra jobb i Attract](./creating-jobs-attract.md)
 
-[Publicera jobb på LinkedIn från Attract](./attract-post-jobs-to-linkedin.md)
+[Publicera jobb på LinkedIn från Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Felsöka integration med LinkedIn](./attract-troubleshoot-linkedin.md)
+[Felsöka integrering med LinkedIn och Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2becf8213cfa46e2c0cf0c553f0b5e503dfc3704
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570250"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771832"
 ---
 # <a name="general-journal-processing"></a>Hantering av allmänna journaler
 
@@ -85,9 +85,9 @@ Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
 Redovisningsstrukturer och avancerade regler strukturer är oerhört viktiga för att garantera att de data som krävs för ekonomisk rapportering och uppföljning av prestationer är fångade under allmän journal bearbetning och all dokumentation. Redovisningsstrukturer och avancerade regler strukturer kan du skräddarsy data entry-upplevelse. Du kan registrera data endast för finansiella mått som är relevanta i varje situation, och kan också genomdriva kravet på att obligatorisk och korrekt data alltid finnas fångat.
 
 Mer information finns i följande avsnitt:
-- [Planering: Kontoplan](plan-chart-of-accounts.md) 
+- [Planera kontoplanen](plan-chart-of-accounts.md) 
 - [Skapa avancerade regler för journaler](tasks/create-advanced-rules-journals.md)
-- [Skapa en post i en redovisningsjournal med hjälp av en mall](tasks/create-journal-entry-template.md)
+- [Skapa en journalpost med en mall](tasks/create-journal-entry-template.md)
 - [Skapa och validera journaler](tasks/create-validate-journals.md)
 - [Bokför periodiska journaler](tasks/post-periodic-journals.md)
 - [Bearbeta journal för redovisningsallokering](tasks/process-ledger-allocation-journal.md)

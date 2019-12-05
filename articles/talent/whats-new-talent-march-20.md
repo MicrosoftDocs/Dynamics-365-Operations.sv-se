@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026019"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812705"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (20 mars 2019)
 
@@ -43,7 +43,7 @@ Den här funktionen aktiverar sökmotorernas sökrobotar så att de når och ind
 Om en kandidat har glömt de sociala autentiseringsuppgifter som användes för att ansöka om ett ledigt jobb när de öppnade en länk som har sparats eller skickats via e-post till dem, ser de nu ett tips med leverantörsnamn och användarnamn (döljs). Detta hjälper dem att använda rätt autentiseringsuppgifter för att komma åt jobbansökningarna.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Hjälp interna kandidater att utforska interna jobb
-Ett problem har åtgärdats där externa kandidater kunde se namnet på rekryteraren eller anställande chef för ett jobb. Nu ser endast interna kandidater anställningsteamets medlemmar för ett jobb. Det är också enklare för interna kandidater att visa och ansöka om endast jobb jobb. När en kandidat försöker använda länken för att visa eller lägga till ett endast internt jobb tvingas de att autentisera med Azure Active Directory inloggningsuppgifter. Interna kandidater har också möjlighet att kontakta anställningsteamets medlemmarna för att uttrycka intresse eller veta mer om jobbet. Den här funktionen är tillgänglig för alla jobb för endast interna kandidater. Mer information finns i [Funktionen för karriärwebbplats i Attract](./career-site.md).
+Ett problem har åtgärdats där externa kandidater kunde se namnet på rekryteraren eller anställande chef för ett jobb. Nu ser endast interna kandidater anställningsteamets medlemmar för ett jobb. Det är också enklare för interna kandidater att visa och ansöka om endast jobb jobb. När en kandidat försöker använda länken för att visa eller lägga till ett endast internt jobb tvingas de att autentisera med Azure Active Directory inloggningsuppgifter. Interna kandidater har också möjlighet att kontakta anställningsteamets medlemmarna för att uttrycka intresse eller veta mer om jobbet. Den här funktionen är tillgänglig för alla jobb för endast interna kandidater. Mer information finns i [Ställa in din karriärwebbplats i Microsoft Dynamics 365 Talent - Attract](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Dela ut silvermedaljörer för att tilldela sökande med högt värde för framtida befattningar
 Rekryterare och anställande chefer har ofta en löpande förteckning över de sökande som passar bra för befattningen men kunde inte utöka erbjudanden eftersom befattningen redan var tillsatt. Sådana sökande kallas silvermedaljörer och är värdefulla men kan ändå minska den tid det tar för att anställa nästa gång en liknande befattning blir ledig. Attract tillåter nu att rekryterare och anställande chefer utser silvermedaljörer i listan över sökande om sökanden har avancerat till steget Erbjudandet. Silvermedaljörens utnämning visas i listan över sökande för jobbet, men även i vyn för talangpoolen när dessa sökande tillhör någon av rekryterarens eller anställande chefernas pooler. Dessutom visas utnmäningen i jobbhistoriken som en del av talangpoolprofilen för en sökande. Du kan förhandsgranska den här funktionen genom att låta en administratör aktivera den med hjälp av [Funktionshantering i administratörscenter](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

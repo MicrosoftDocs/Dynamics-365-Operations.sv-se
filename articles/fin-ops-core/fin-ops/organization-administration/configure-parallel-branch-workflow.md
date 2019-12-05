@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2339c6f901a3ef39ad4f9586b2f391b966a3df98
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2058eaac77282946559cae11fcec8152658fc96b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190153"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811367"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Konfigurera parallella grenar i ett arbetsflöde
 
@@ -46,8 +46,8 @@ Följ dessa steg när du vill ange ett namn för en parallell gren.
 Gör på följande sätt när du vill designa och konfigurera elementen för en parallell gren.
 
 1. Dubbelklicka på den parallella grenen.
-2. Dra arbetsflödeselement till arbetsytan och konfigurera sedan elementen, på samma sätt som du skapar vilket annat arbetsflöde som helst. Mer information finns i [Skapa ett arbetsflöde](create-workflow.md).
+2. Dra arbetsflödeselement till arbetsytan och konfigurera sedan elementen, på samma sätt som du skapar vilket annat arbetsflöde som helst. Mer information finns i [Översikt över skapa arbetsflöden](create-workflow.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Skapa ett arbetsflöde](create-workflow.md)
+[Skapa arbetsflöden – översikt](create-workflow.md)

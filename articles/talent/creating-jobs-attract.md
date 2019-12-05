@@ -1,5 +1,5 @@
 ---
-title: Skapa, godkänn och bokföra jobb i Attract
+title: Skapa ett jobb i Attract
 description: Det här avsnittet beskriver delarna av ett jobb i Attract. Här förklaras också hur du skapar ett jobb.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551082"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832941"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Skapa, godkänna och bokföra jobb i Attract
+# <a name="create-a-job-in-attract"></a>Skapa ett jobb i Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Om befattningshantering är aktiverat på administratörscenter är **uppdatera 
 > [!NOTE]
 > Befattningshantering finns i tillägget omfattande anställning.
 
-Beroende på inställningarna i anställningsprocessens erbjudandeaktivitet, kan ett befattningsnummer användas två gånger i ett erbjudande. Mer information finns i [Anställningsprocess](./activities-attract.md).
+Beroende på inställningarna i anställningsprocessens erbjudandeaktivitet, kan ett befattningsnummer användas två gånger i ett erbjudande. Mer information finns i [Aktiviteter i anställningsprocesser](./activities-attract.md).
 
 Attract innehåller en standarduppsättning med **Kompetenser**. Dessa kompetenser visas som förslag medan du skriver. Du kan lägga till flera kompetenser genom att ange den nya kompetenstexten i fältet och tryck på Retur.
 
@@ -67,7 +67,7 @@ Anställningsteamet kan uppdateras när jobbet har aktiverats.
 
 Standardinformation om anställningsprocessen baseras på processmallen som valdes när jobbet skapades. Om en specifik mall inte markerades vid den tiden används standardmallen. När du definierar anställningsprocessen kan du lägga till eller ta bort olika faser utom faserna potentiell kandidat, ansökning och erbjudande. Även om fasen potentiell kandidat inte kan tas bort, kan den vara avstängd. Inom varje fas kan du lägga till eller ta bort en eller flera fördefinierade aktiviteter.
 
-Mer information om aktiviteter som kan läggas till i anställningsprocessen finns i [Anställningsprocessaktiviteter i Attract](./activities-attract.md).
+Mer information om aktiviteter som kan läggas till i anställningsprocessen finns i [Aktiviteter i anställningsprocesser](./activities-attract.md).
 
 > [!NOTE]
 > Processen för anställning kan inte uppdateras när jobbet har aktiverats.
@@ -76,7 +76,7 @@ Mer information om aktiviteter som kan läggas till i anställningsprocessen fin
 
 När ett jobb har aktiverats kan det publiceras. Endast rekryterare och administratörer kan publicera jobb. Jobbet kan publiceras antingen till Talent Careers (en karriärwebbplats för Dynamics 365 Talent) eller LinkedIn. Attract-teamet arbetar kontinuerligt med att samarbeta med en sammanslutning av arbetstavlor. Listan utvidgas över tiden. När ett jobb har publicerats som endast internt behöver kandidater ett AAD-konto för att visa och ansöka om jobbet. Om jobbet är offentlig kan sökanden visa och ansöka om jobb med alla autentiseringsalternativ. 
 
-Mer information om jobbpubliceringar finns i [Funktionen för karriärwebbplats i Attract](career-site.md).
+Mer information om jobbpubliceringar finns i [Ställa in din karriärwebbplats i Microsoft Dynamics 365 Talent - Attract](career-site.md).
 
 > [!NOTE]
 > Funktionen jobbpublicering är bara tillgänglig för tillägget omfattande anställning. för Attract.
@@ -90,7 +90,7 @@ När ett jobb har aktiverats kan det publiceras och potentiella kandidater och s
 
 ## <a name="prospects-and-applicants"></a>Potentiella kandidater och sökande
 
-Alternativet att lägga till potentiella kandidater till ett jobb anges i [aktiviteten potentiell kandidat](./activities-attract.md#prospect-activity) i anställningsprocessen. Det här alternativet ska ställas in innan du aktiverar jobbet. När ett jobb har aktiverats kan potentiella kandidater och sökanden läggas till.
+Alternativet att lägga till potentiella kandidater till ett jobb anges i [Aktiviteter i anställningsprocesser](./activities-attract.md#prospect-activity) i anställningsprocessen. Det här alternativet ska ställas in innan du aktiverar jobbet. När ett jobb har aktiverats kan potentiella kandidater och sökanden läggas till.
 
 ## <a name="approvals"></a>Godkännanden
 

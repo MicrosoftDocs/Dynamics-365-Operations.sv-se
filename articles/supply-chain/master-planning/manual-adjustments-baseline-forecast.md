@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250724"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815144"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Gör manuella justeringar på baslinjeprognosen
 
@@ -66,7 +66,7 @@ Du kan öppna **Demand forecast sidan detaljer för** att se mer information om 
 -   Den nya efterfrågan prognostiserade värden och de belopp de har justerats manuellt.
 -   Konfidensintervallet för prognostiserade värden.
 -   Den prognosmodell som använts för att generera prognos. Om du tittar på aggregerade data, du skar ser en förteckning av alla de metoder som användes för samtliga aggregerade tidsserier.
--   Den inre modellen noggrannhet (MAPE). För mer information om prognosprecision, se [övervakning prognosprecision](monitor-forecast-accuracy.md).
+-   Den inre modellen noggrannhet (MAPE). För mer information om prognosprecision, se [Övervaka prognosprecision](monitor-forecast-accuracy.md).
 
 **Anteckningar:**
 
@@ -78,7 +78,7 @@ Du kan också göra manuella justeringar av prognosen på **efterfrågan sidan d
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Övervaka prognosprecision](monitor-forecast-accuracy.md)
+[Övervaka prognosens exakthet](monitor-forecast-accuracy.md)
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 

@@ -16,12 +16,12 @@ ms.search.region: Sweden
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce15efbfdfab10327491be02a55f9a2da449dd16
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2113498b12997a9f8cee5106d2d61a89fc5699c4
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183944"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773476"
 ---
 # <a name="sweden-overview"></a>Sverige – översikt
 
@@ -31,4 +31,4 @@ Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.
 
 - [Exportera ekonomisk information för revisorer i Sverige](emea-swe-sie-standard-report.md)
 - [Importera betalningsformat](emea-swe-payment-formats-import.md)
-- [Kassaapparater](../../retail/localizations/emea-swe-cash-registers.md)
+- [Funktioner för kassaapparat](../../retail/localizations/emea-swe-cash-registers.md)

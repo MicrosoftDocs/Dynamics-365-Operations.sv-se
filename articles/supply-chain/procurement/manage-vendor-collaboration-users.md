@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 50ce332673e130dace38f596020973d37c34b566
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248967"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813510"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Hantera leverantörssamarbetesanvändare
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248967"
 
 I det här avsnittet beskrivs hur du kan begära reservation av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter. 
 
-Lleverantörssamarbetesgränssnittet i Dynamics 365 Supply Chain Management visar information om inköpsorder, fakturor och försändelselager till externa leverantörer. Du kan skapa nya lleverantörssamarbeteskontakter och begära att nya användare reserveras om du arbetar som en extern leverantör med säkerhetsrollen **Leverantörs-admin (extern)** eller liknande behörigheter. Du kan också utföra dessa uppgifter om du arbetar professionellt inom anskaffning. I det här avsnittet avser denna roll en yrkesperson inom anskaffning som arbetar inom det företag som äger Supply Chain Management-instansen. Mer information om hur du använder leverantörssamarbete om du använder en extern leverantör finns i [Leverantör med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Lleverantörssamarbetesgränssnittet i Dynamics 365 Supply Chain Management visar information om inköpsorder, fakturor och försändelselager till externa leverantörer. Du kan skapa nya lleverantörssamarbeteskontakter och begära att nya användare reserveras om du arbetar som en extern leverantör med säkerhetsrollen **Leverantörs-admin (extern)** eller liknande behörigheter. Du kan också utföra dessa uppgifter om du arbetar professionellt inom anskaffning. I det här avsnittet avser denna roll en yrkesperson inom anskaffning som arbetar inom det företag som äger Supply Chain Management-instansen. Mer information om hur du använder leverantörssamarbete om du använder en extern leverantör finns i [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Mer information om hur du använder leverantörssamarbete om du är inköpsspecialist, se [Leverantörssamarbete med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 

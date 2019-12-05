@@ -3,7 +3,7 @@ title: Uppskjuten bearbetning av lagerhållningsarbete
 description: I det här avsnittet beskrivs de funktioner som gör att uppskjuten bearbetning av lagerställets arbetsplaceringsoperationer är tillgängliga i Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026955"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815798"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Uppskjuten bearbetning av lagerhållningsarbete
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026955"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 I det här avsnittet beskrivs de funktioner som gör att uppskjuten bearbetning av placeringsoperationer för lagerställearbete i Dynamics 365 Supply Chain Management.
-
 
 Funktionen uppskjuten bearbetning låter lagerarbetare fortsätta att göra annat arbete medan placeringsoperationen bearbetas i bakgrunden. Uppskjuten bearbetning är användbart när många arbetsrader måste bearbetas och arbetaren kan låta det arbetet bearbetas asynkront. Det är också användbart när servern kan ha ad hoc- eller oplanerade ökningar i bearbetningstiden, och den ökade bearbetningstiden kan påverka användarens produktivitet.
 
@@ -50,6 +49,8 @@ Policyer konfigureras på sidan **arbetsbearbetningspolicyer**. Följande regist
 | Arbetsprocessmetod          | Den metod som används för att bearbeta arbetsraden Om metoden är inställd på **omedelbar**, liknar beteendet det beteende när inga policyer för bearbetning av arbetsprocesser används för att bearbeta raden. Om metoden har ställts in på **uppskjuten**, används uppskjuten bearbetning som använder batchramverket. |
 | Tröskelvärde för uppskjuten bearbetning   | Värdet **0** (noll) innebär att det inte finns något tröskelvärde. I det här fallet används uppskjuten bearbetning om den kan användas. Om den specifika beräkningen av tröskelvärde ligger under tröskelvärdet används metoden omedelbar. I annat fall används den uppskjutna metoden om den kan användas. För försäljnings- och överföringsrelaterat arbete beräknas tröskelvärdet som antalet associerade källastrader som bearbetas för arbetet. För lagerpåfyllnadsarbete beräknas tröskelvärdet som antalet arbetsrader som fylls på av arbetet. Genom att ange ett tröskelvärde på till exempel **5** för försäljning, kommer mindre arbeten som har färre än fem inledande källastrader inte att använda uppskjuten bearbetning, men större arbeten kommer att använda den. Tröskelvärdet har endast effekt om arbetsbearbetningsmetoden har ställts in på **uppskjuten**. |
 | Batchgrupp för uppskjuten bearbetning |Den batchgrupp som används för bearbetning. |
+
+För uppskjuten bearbetning kan följande arbetsordertyper användas: försäljningsorder, problem med överföringsorder och påfyllning.
 
 ## <a name="assigning-the-work-creation-policy"></a>Tilldela policyn för skapande av arbete
 
@@ -99,7 +100,7 @@ Det finns flera scenarier där uppskjuten placeringsbearbetning inte tillämpas 
 - Manuell komplettering av arbetet används.
 - Arbetet slutförs med hjälp av automatisk komplettering.
 - Granskningsmallar används.
-- Arbetet använder behållare.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>Övervaka uppskjutna bearbetningsuppgifter från arbetsytan utgående arbetsövervakning
 

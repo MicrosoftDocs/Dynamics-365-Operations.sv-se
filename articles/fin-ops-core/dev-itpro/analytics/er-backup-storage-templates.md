@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553101"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771431"
 ---
 # <a name="backup-storage-of-er-templates"></a>Säkerhetslagring av ER-mallar
 
 [!include [banner](../includes/banner.md)]
 
-[ER-ramverket (Electronic Reporting)](general-electronic-reporting.md) gör att affärsanvändare kan konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Konfigurerade ER-format kan använda fördefinierade mallar för att skapa utgående dokument i olika format, t.ex. Microsoft Excel arbetsböcker, Microsoft Word dokument eller PDF-dokument. Mallarna fylls i med data som det konfigurerade dataflöde för genererade dokument kräver.
+[Elektronisk rapportering (ER) - översikt](general-electronic-reporting.md) gör att affärsanvändare kan konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Konfigurerade ER-format kan använda fördefinierade mallar för att skapa utgående dokument i olika format, t.ex. Microsoft Excel arbetsböcker, Microsoft Word dokument eller PDF-dokument. Mallarna fylls i med data som det konfigurerade dataflöde för genererade dokument kräver.
 
 Varje konfigurerat format kan publiceras som en del av en ER-lösning. Varje återställnings lösning kan exporteras från en instans av Finance and Operations och importeras till en annan instans.
 
-ER-ramverket använder [ramverket för dokumenthanterings](../../fin-ops/organization-administration/configure-document-management.md) för att behålla de mallar som krävs för den aktuella Finance and Operations-instansen. Beroende på inställningarna för ER-ramverk kan du välja Microsoft Azure blob-lagring eller en Microsoft SharePoint-mapp som den fysiska primära lagringsplatsen för mallar. (Mer information finns i [konfigurera om ER-ramverket](electronic-reporting-er-configure-parameters.md).) DocuValue-registret innehåller en enskild post för varje mall. I varje post lagrar fältet **AccessInformation** sökvägen till mallfilen som finns på den konfigurerade lagringsplatsen.
+ER-ramverket använder [Konfigurera dokumenthantering](../../fin-ops/organization-administration/configure-document-management.md) för att behålla de mallar som krävs för den aktuella Finance and Operations-instansen. Beroende på inställningarna för ER-ramverk kan du välja Microsoft Azure blob-lagring eller en Microsoft SharePoint-mapp som den fysiska primära lagringsplatsen för mallar. (Mer information finns i [konfigurera om ER-ramverket (Elektronisk rapportering)](electronic-reporting-er-configure-parameters.md).) DocuValue-registret innehåller en enskild post för varje mall. I varje post lagrar fältet **AccessInformation** sökvägen till mallfilen som finns på den konfigurerade lagringsplatsen.
 
 När du hanterar dina Finance and Operations-instanser kanske du bestämmer dig för att flytta den aktuella instansen till en annan plats. Du kan till exempel migrera produktionsinstansen till en ny miljö för begränsat läge. Om du konfigurerade ER-ramverket för att lagra mallar i blob-lagring, refererar DocuValue-registret i den nya miljön för begränsat läge till instansen av blob-lagring i produktionsmiljön. Den här instansen kan dock inte nås från miljön för begränsat läge eftersom migreringsprocessen inte stöder migrering av artefakter i blob-lagring. Om du försöker köra ett ER-format som använder en mall för att generera affärsdokument, uppstår ett undantag och du meddelas om den saknade mallen. Du kan också använda återställningsverktyget för att ta bort och sedan åter importera konfigurationen för ER-format som innehåller mallen. Eftersom det kan finnas flera ER-format-konfigurationer, kan den här processen ta lång tid.
 
@@ -94,6 +94,6 @@ I Finance and Operations version 10.0.5 är säkerhetslagring av funktionen ER-m
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över elektronisk rapportering](general-electronic-reporting.md)
+[Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-[Konfigurera ramverket för elektronisk rapportering](electronic-reporting-er-configure-parameters.md)
+[Konfigurera ramverket för elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)

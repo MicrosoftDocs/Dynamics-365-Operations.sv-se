@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 005b04bd4c3476356f30ba8e97564f83307a64c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626188"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811765"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk uppdatering av tillgångsräknare
 
@@ -43,16 +43,16 @@ Som nämnts ovan kan automatiska räknare uppdateras från produktionsregistreri
 
 2. Välj startdatum för den automatiska uppdateringen i fältet **Från datum**.
 
->[!NOTE]
->Datumet i det här fältet är "pågående arbete"-datumet från **Flödestransaktioner** (**Produktionskontroll** > **Förfrågningar och rapporter** > **Produktion** > **Flödestransaktioner** >  fältet **Fysiskt datum**).
+    >[!NOTE]
+    >Datumet i det här fältet är "pågående arbete"-datumet från **Flödestransaktioner** (**Produktionskontroll** > **Förfrågningar och rapporter** > **Produktion** > **Flödestransaktioner** >  fältet **Fysiskt datum**).
 
 3. På snabbfliken **Poster som ska ingå** kan du välja specifika tillgångar, tillgångstyper eller resurser för den automatiska uppdateringen. Välj **filter**och gör relevanta val.
 
 4. På snabbfliken **Kör i bakgrunden** kan du ställa in den automatiska uppdateringen som ett batchjobb, efter behov.
 
-Bilden nedan visar ett exempel på dialogrutan **Uppdatera tillgångsräknare**.
+    Bilden nedan visar ett exempel på dialogrutan **Uppdatera tillgångsräknare**.
 
-![Figur 1](media/12-work-orders.png)
+    ![Figur 1](media/12-work-orders.png)
 
 5. Välj **OK**. 
 

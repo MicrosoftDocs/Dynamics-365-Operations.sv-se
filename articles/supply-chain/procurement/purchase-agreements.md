@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248944"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813372"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Det här avsnittet innehåller information om inköpsavtal. Ett inköpsavtal är ett kontrakt som ålägger en organisation att köpa en angiven kvantitet eller ett visst belopp via flera framtida inköpsorder. I utbyte mot detta åtagande får köparen särskilda priser och rabatter. 
 
@@ -80,6 +81,9 @@ När du skapar en inköpsorder kan du tillämpa ett inköpsavtal på den. Inform
 Du kan bara välja ett inköpsavtal när du skapar en inköpsorder. Du kan inte välja ett inköpsavtal efter att inköpsordern har skapats.  
 I vissa fall där inköpsorder skapas indirekt kan du kontrollera om Supply Chain Management automatiskt ska söka efter tillämpliga inköpsavtal. Du kan till exempel göra det när du kopplar automatiskt bekräftade inköpsorder eller skapar inköpsorder som baseras på försäljningsorder.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Matchningspolicy för inköpsavtal
+Du kan definiera en radmatchningspolicy i inköpsavtalets rubrik. Den här radmatchningspolicyn respekterar policyn för parametrar på leverantörsreskontra när fältet **Tillåt åsidosättning av matchningspolicy** på sidan **Parametrar för leverantörsreskontra** (på snabbfliken **Pris- och kvantitetsmatchning**) anges till **Högre än företagspolicy**. Dokument som refererar till inköpsavtalet kommer att använda radmatchningspolicyn som definieras på inköpsavtalshuvudet om inget annat har definierats för motsvarande artikel, artikel och leverantör, eller kategoriinköpspolicy.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Inköpsavtal och koncernintern handel
 Koncerninterna handelsrelationer kan skapas mellan leverantörskonton och kundkonton som finns i olika juridiska personer. När en försäljnings- eller inköpsorder skapas för en av parterna skapas en koncernintern orderkedja. I orderkedjan skapas försäljningsordern och inköpsordern i de motsvarande juridiska personerna.  
 
@@ -93,9 +97,9 @@ Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda r
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Skapa ett inköpsavtal (uppgiftsguide)](tasks/create-purchase-agreement.md)
+[Skapa ett nytt inköpsavtal](tasks/create-purchase-agreement.md)
 
-[Skapa en inköpsfrisläppningsorder från ett inköpsavtal (uppgiftsguide)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Skapa en inköpsfrisläppningsorder från ett inköpsavtal](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

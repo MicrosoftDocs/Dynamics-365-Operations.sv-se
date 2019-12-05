@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 956af80a8ab2f454d9f523d3c74dda754ef0f793
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 7f0cc1c7ec1234b7eedaade0ffadb66965ed2121
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009387"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772998"
 ---
 # <a name="talent-doesnt-appear-among-the-microsoft-dynamics-365-apps-common-data-service-10"></a>Talent visas inte bland Microsoft Dynamics 365-appar (Common Data Service 1.0)
 
@@ -34,9 +34,9 @@ Kunden finns inte i Microsoft Dynamics 365 Talent-app bland Microsoft Dynamics36
 
 **Upplösning**
 
-Användaren måste läggas till rollen Environment Maker för miljön i Microsoft PowerApps.
+Användaren måste läggas till rollen Environment Maker för miljön i Microsoft Power Apps.
 
-1. Administratörsanvändare med en licens för PowerApps Plan 2 måste öppna den i [PowerApps administrationsportal](https://preview.admin.powerapps.com/).
+1. Administratörsanvändare med en licens för Power Apps Plan 2 måste öppna den i [Power Apps administrationsportal](https://preview.admin.powerapps.com/).
 2. Välj **Miljöer** och välj rätt miljön för Talent.
 3. På fliken **Säkerhet** på fliken **Miljöroller**, välj **Environment Maker**.
 

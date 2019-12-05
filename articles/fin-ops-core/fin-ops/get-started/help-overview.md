@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537842"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811682"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
@@ -82,7 +82,7 @@ Mer information finns i vår [deltagarguide](https://docs.microsoft.com/en-us/co
 
 En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgift eller en affärsprocess. Du kan öppna (spela upp) en uppgiftsguide via fönstret Hjälp. När du först klickar på en uppgiftsguide visar fönstret Hjälp steg för steg-instruktionerna för uppgiften. Nu finns det lokaliserade uppgiftsguider.
 
-Microsoft levererade uppgiftsguidebibliotek för frisläppningar under december 2017 för Dynamics 365 for Finance and Operations. Avsnittet [Komma åt uppgiftsguider från hjälpfönstret](help-overview.md#accessing-task-guides-from-the-help-pane) beskriver hur du hittar rätt uppgiftsguider för just din produkt.
+Microsoft levererade uppgiftsguidebibliotek för frisläppningar under december 2017 för Dynamics 365 for Finance and Operations. Avsnittet [Hjälpsystem](help-overview.md#accessing-task-guides-from-the-help-pane) beskriver hur du hittar rätt uppgiftsguider för just din produkt.
 
 ![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
@@ -144,13 +144,12 @@ När en systemadministratör har slutfört dessa steg kan du öppna fönstret Hj
 
 Du kan skapa hjälp för användarna genom att skapa en anpassad uppgiftsgudie eller ansluta din webbplats till hjälpfönstret. Mer information finns i:
 
-- [Skapa en uppgiftsinspelning som ska användas som dokumentation eller utbildning](../../dev-itpro/user-interface/task-recorder.md)
+- [Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md).
 - [Skapa anpassad hjälp (vitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-- [Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder.md)
-- [Skapa dokumentation eller utbildning med uppgiftsregistreringar](../../dev-itpro/user-interface/task-recorder.md)
+- [Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md)
 
 I följande register visas våra webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
 

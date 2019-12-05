@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c40877bc6557a81adc5c1b8d10afbbd26322b200
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3677db634366ecfe6a26f2f5e01532ce5a087593
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249950"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815259"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frisläpp strukturliste- och formelrader till lagerstället
 
@@ -31,7 +31,7 @@ ms.locfileid: "2249950"
 Det här avsnittet beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret. När du frisläpper en strukturlista eller formelrad till lagret fastställer systemet först om material redan finns på platsen för produktionsinleverans i fabriken där materialet ska förbrukas i produktionsprocessen.
 
 - Om materialet är tillgängligt på platsen för produktionsinleverans hämtas det från den platsen omedelbart efter att signal ges för frisläppning av material till lagret.
-- Om materialet är inte tillgänglig på platsen för produktionsinleverans indikerar materialfrisläppningen att materialet måste flyttas från platserna i lagerstället till platsen för produktionsinleverans. Materialet flyttas via lagerställearbete för plockning av råmaterial. Därför måste lagerprocesser för råmaterialplockning vara konfigurerad. Mer information finns i [Lagerpåfyllnad](../warehousing/replenishment.md) och [Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](../warehousing/control-warehouse-location-directives.md).
+- Om materialet är inte tillgänglig på platsen för produktionsinleverans indikerar materialfrisläppningen att materialet måste flyttas från platserna i lagerstället till platsen för produktionsinleverans. Materialet flyttas via lagerställearbete för plockning av råmaterial. Därför måste lagerprocesser för råmaterialplockning vara konfigurerad. Mer information finns i [Översikt över lagerpåfyllnad](../warehousing/replenishment.md) och [Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv](../warehousing/control-warehouse-location-directives.md).
 
 ## <a name="methods-for-releasing-bom-and-formula-lines"></a>Metoder för att frisläppa strukturlista och formelrader
 

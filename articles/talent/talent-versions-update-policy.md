@@ -1,9 +1,9 @@
 ---
-title: Systemkrav och uppdateringspolicy för Talent
-description: Det här avsnittet beskrivs kraven för Dynamics 365 Talent. Det beskriver även uppdateringspolicyn.
+title: Talent systemkrav
+description: Det här avsnittet beskrivs kraven för Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b8bf44fc76be968b0b04fd894c39b4c19fd374ce
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0bd7d7051dd01834f306e165af55d740192b99e0
+ms.sourcegitcommit: caeb24027831efccbc316ff8e7f9e62b42010d65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024170"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2818489"
 ---
-# <a name="talent-system-requirements-and-update-policy"></a>Systemkrav och uppdateringspolicy för Talent
+# <a name="talent-system-requirements"></a>Talent systemkrav
 
 [!include [banner](includes/banner.md)]
 
@@ -46,7 +46,7 @@ Gå till programtillverkarens startsida för att hitta den senaste versionen fö
 > * Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edgeoch Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
 > * Om du vill förhandsgranska PDF-filer, bör du använda moderna webbläsare som t.ex. Microsoft Edge (senaste tillgängliga versionen) på Windows 10 eller Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC.
 >   Nätverkskrav
-> * Dynamics 365 Talent har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre. Denna svarstid är svarstiden från en webbläsarklient till Microsoft Azure datacenter som är värd för Talent. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
+> * Dynamics 365 Talent har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre. Denna svarstid är svarstiden från en webbläsarklient till Microsoft Azure datacenter som är värd för Talent. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](https://www.azurespeed.com "Azure fördröjningstest").
 > * Bandbreddskrav för Talent beror på ditt scenario. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps).
 > 
 > [!WARNING]
@@ -54,7 +54,7 @@ Gå till programtillverkarens startsida för att hitta den senaste versionen fö
 
 ## <a name="supported-microsoft-office-applications"></a>Microsoft Office-program som stöds
 
-* För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. För mer information om versionskrav läs [felsökning av Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md "felsökning av Office-integrering+").
+* För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. Mer information om kraven på version finns i [felsökning av Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md "Felsöka Office-integrering").
 * Om du vill visa dokument som har skapats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.
 
 ## <a name="regional-availability-languages-and-localization"></a>Lokal tillgänglighet, språk och lokalisering
@@ -66,8 +66,3 @@ Du kan hämta en PDF-fil för de länder, regioner och språk som Talent stöder
 
 Om du är en utvecklare som vill skapa lands- eller regionsspecifika anpassningar eller skapa en lösning för ett land eller en region som inte stöds av Microsoft, se [globaliseringsfunktionen.](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
 
-## <a name="update-policy"></a>Uppdatera policy
-
-Talent hanteras som ett molnbaserad erbjudande. Talent-uppdateringar är kontinuerliga och tillämpas automatiskt av Microsoft.
-
-Uppdateringar släpps regelbundet, uppdateringar sker för alla nätverk. Talent stöds enligt [Microsoft Support Lifecycle-policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), som ger konsekventa och förutsägbara riktlinjer för tillgängligheten av produktsupport.

@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184541"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772447"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Företagskoncept i Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 I Finance and Operations är begreppet av ett *företag* både en laglig konstruktion och en affärskonstruktion. Det är också en säkerhets- och synlighetsgräns för data. Användare arbetar alltid inom ramen för ett enda företag, och de flesta av uppgifterna är sorterade efter företag.
 
@@ -60,12 +58,14 @@ Som föregående illustration visar är denna 1:1-mappning mellan affärsenhet, 
 
 Ett sista ämne att diskutera är hur dubbelriktadskrivning avgör vilket ägargrupp det ska tilldela poster till. Det här beteendet styrs av fältet **standardägargrupp** i CDM \_-företagsposten. När en CDM \_-företagspost är aktiverad för dubbelriktad skrivning skapar ett plugin-program automatiskt den associerade affärsenheten och ägargruppen (om den inte redan finns) och anger fältet **standardägargrupp**. Administratören kan ändra det här fältet till ett annat värde. Men administratören kan inte rensa fältet så länge entiteten är aktiverad för dubbelriktad skrivning.
 
+> [!div class="mx-imgBorder"]
 ![Fält för standardägargrupp](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Företagsstrimling och initiering
 
 Common Data Service-integrering ger företagsparitet genom att använda en företagsidentifierare för strimla data. Som framgår av följande illustration utökas alla företagsspecifika entiteter så att de har en många-till-en-relation (N:1) med CDM \_-företagsentiteten.
 
+> [!div class="mx-imgBorder"]
 ![N:1-relation mellan en företagsspecifik entitet och entiteten cdm_Company](media/dual-write-bootstrapping.png)
 
 + För poster blir värdet skrivskyddat när ett företag har lagts till och sparats. Därför bör användare se till att de väljer rätt företag.

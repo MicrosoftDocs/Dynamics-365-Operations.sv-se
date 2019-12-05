@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 76c62f3a503ff2a8c93143390fc91ef81fbf7d0f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b44fc116f1dcaa1275b2262487ef9114bce639c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250471"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773864"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synkronisera projektkontrakt och projekt direkt från Project Service Automation till Finance and Operations
 
@@ -42,11 +42,11 @@ Automatisering av integrationslösningen Project Service Automation till Finance
 
 Följande bild visar hur data synkroniseras mellan Project Service Automation och Finance.
 
-[![Dataflöde för integration av Project Service Automation med Finance](./media/ProjectsAndContractsFlow.JPG)](./media/ProjectsAndContractsFlow.JPG)
+[![Dataflöde för integration av Project Service Automation med Finance](./media/ProjectsAndContractsFlow_upd.JPG)](./media/ProjectsAndContractsFlow.JPG)
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
-För att få åtkomst till tillgängliga mallar väljer du i administratörscentret för Microsoft PowerApps **Projekt** och sedan i det övre högra hörnet **Ny projekt** för att välja offentliga mallar.
+För att få åtkomst till tillgängliga mallar väljer du i administratörscentret för Microsoft Power Apps **Projekt** och sedan i det övre högra hörnet **Ny projekt** för att välja offentliga mallar.
 
 Följande mall och underliggande uppgift används för att synkronisera projektkontrakt och proojekt från Project Service Automation till Finance:
 

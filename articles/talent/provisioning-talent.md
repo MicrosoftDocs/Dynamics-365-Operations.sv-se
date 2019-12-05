@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026151"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773067"
 ---
 # <a name="provision-talent"></a>Etablera Talent
 
@@ -49,12 +49,12 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 1. I LCS-projektet väljer du fliken **App-hantering for Talent**.
 2. Ange om detta är ett begränsat läge eller produktionsinstans av Talent. Funktionerna för förhandsgranskning kan finnas tillgängliga i begränsade instanser för att möjliggöra tidig återrapportering och testning. 
     > [!NOTE]
-    > Instanstypen Talent är separat från instanstypen för PowerApps-miljön, som du anger i PowerApps-administrationscentret.
+    > Instanstypen Talent är separat från instanstypen för Microsoft Power Apps-miljön, som du anger i Power Apps-administrationscentret.
 3. Markera alternativet **Inkludera demodata** om du vill att din miljö med samma demodatauppsättning används i Talent testkörning. Detta är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer.  Observera att du måste välja det här alternativet vid den första implementeringen. Du kan inte uppdatera en befintlig distribution senare.
-4. Talent etableras alltid i en Microsoft PowerApps-miljö, detta i syfte att möjliggöra PowerApps-integrering och utbyggnad. Läs avsnittet ”Välja en PowerApps-miljö” i det här ämnet innan du fortsätter. Om du inte redan har en PowerApps-miljö, välj hantera miljöer i LCS eller gå till PowerApps administrationscenter. Följ stegen för att [skapa en PowerApps-miljö](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Talent etableras alltid i en Microsoft Power Apps-miljö, detta i syfte att möjliggöra Power Apps-integrering och utbyggnad. Läs avsnittet ”Välja en Power Apps-miljö” i det här ämnet innan du fortsätter. Om du inte redan har en Power Apps-miljö, välj hantera miljöer i LCS eller gå till Power Apps administrationscenter. Följ stegen för att [skapa en Power Apps-miljö](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
-    > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en PowerApps P2-licens. Om din organisation inte har en licens för PowerApps P2 kan du skaffa en från din CSP eller Prissättningssidan för [PowerApps](https://powerapps.microsoft.com/pricing/).
+    > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en Power Apps P2-licens. Om din organisation inte har en licens för Power Apps P2 kan du skaffa en från din CSP eller Prissättningssidan för [Power Apps](https://powerapps.microsoft.com/pricing/).
 
 5. Välj den miljö som du vill konfigurera Talent på.
 6. Välj **Ja** för att acceptera villkoren och börja implementeringen.
@@ -68,19 +68,19 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 
     > Eftersom bara två LCS-miljöer tillåts tillsammans med Talent-abonnemanget kan du även försöka utnyttja den kostnadsfria 60-dagars [utvärderingsmiljön för Talent](https://dynamics.microsoft.com/talent/overview/). Även om utvärderingsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för personalfrågor. Utvärderingsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. De är inte avsedda att användas som produktionsmiljöer. Observera att alla data i miljön tas bort och kan inte återställas när utvärderingstiden upphör att gälla efter 60 dagar. Du kan registrera dig för en ny utvärderingsmiljö när den befintliga miljön har gått ut.
 
-## <a name="select-a-powerapps-environment"></a>Välj en PowerApps-miljö
+## <a name="select-a-power-apps-environment"></a>Välj en Power Apps-miljö
 
-Integreringen mellan Talent och PowerApps-miljöer låter dig integrera och utöka användningen av Talent-data med verktyg för PowerApps. Att förstå syftet med PowerApps-miljöer kan inte bara hjälpa dig att skapa appar för att utöka Talent, utan kommer även hjälpa dig att välja rätt miljö vid tillhandahållande av Talent. Mer information om PowerApps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [Vi presenterar PowerApps-miljöer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
+Integreringen mellan Talent och Power Apps-miljöer låter dig integrera och utöka användningen av Talent-data med verktyg för Power Apps. Att förstå syftet med Power Apps-miljöer kan inte bara hjälpa dig att skapa appar för att utöka Talent, utan kommer även hjälpa dig att välja rätt miljö vid tillhandahållande av Talent. Mer information om Power Apps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [Vi presenterar Power Apps-miljöer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
-Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska användas för att distribuera Talent: 
+Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som ska användas för att distribuera Talent: 
 
-1. I LCS, välj **Hantera miljöer** eller gå direkt till PowerApps Administratörscenter, där du kan visa befintliga miljöer och skapa nya miljöer.
-2. En enskild Talent-miljö mappas till en enda PowerApps-miljö.
-3. En PowerApps-miljö "innehåller" Talent-programmet tillsammans med motsvarande PowerApps, Flow och Common Data Service-program. Om PowerApps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Talent-miljö kan du tillhandahålla antingen en **Utvärderingsversion**- eller **Produktion**-miljö. Välj typ av miljö baserat på hur miljön kommer att användas. 
-4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Vi rekommenderar att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en PowerApps-miljö.
-5. Följande PowerApps-miljöer kan inte användas för Talent och filtreras i urvalslistan i LCS:
+1. I LCS, välj **Hantera miljöer** eller gå direkt till Power Apps Administratörscenter, där du kan visa befintliga miljöer och skapa nya miljöer.
+2. En enskild Talent-miljö mappas till en enda Power Apps-miljö.
+3. En Power Apps-miljö "innehåller" Talent-programmet tillsammans med motsvarande Power Apps, Power Automate och Common Data Service-program. Om Power Apps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Talent-miljö kan du tillhandahålla antingen en **Utvärderingsversion**- eller **Produktion**-miljö. Välj typ av miljö baserat på hur miljön kommer att användas. 
+4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Vi rekommenderar att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en Power Apps-miljö.
+5. Följande Power Apps-miljöer kan inte användas för Talent och filtreras i urvalslistan i LCS:
  
-    - **Standardinställda PowerApps-miljöer** - Även om varje innehavare konfigureras automatiskt med en standardmiljö för PowerApps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till PowerApps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med PowerApps eller Flow.
+    - **Standardinställda Power Apps-miljöer** - Även om varje innehavare konfigureras automatiskt med en standardmiljö för Power Apps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till Power Apps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med Power Apps eller Power Automate.
    
     - **Testmiljöer** Dessa miljöer skapas med ett förfallodatum och upphör att gälla efter den tiden vilket kan orsaka att miljön och alla Talent-instanser som den innehåller tas bort automatiskt.
    

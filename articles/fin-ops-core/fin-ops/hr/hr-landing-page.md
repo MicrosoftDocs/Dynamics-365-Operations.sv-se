@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: f701a61a718469023dfa57c160229108afeb421c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553173"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812446"
 ---
 # <a name="human-resources-overview"></a>Personal – översikt
 
@@ -45,15 +45,15 @@ Personal går att använda till att slutföra följande uppgifter:
 
 När du arbetar med personal bestämmer du hur organisationen struktureras med hjälp av element, till exempel avdelningar, jobb och befattningar. De är de grundläggande elementen som konfigureras under Personal. Enskilda medarbetare tilldelas till befattningar som är associerade med jobb.
 
-- [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](../../../talent/departments-jobs-positions.md)
-- [Ställa in företagsspecifika personalparametrar](../../../talent/set-up-company-specific-hr-parameters.md)
-- [Ställa in personalparametrar bland juridiska personer](../../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Organisera personalen efter avdelningar, jobb och befattningar](../../../talent/departments-jobs-positions.md)
+- [Ställ in företagsspecifika personalparametrar](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Ställ in personalparametrar bland juridiska personer](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekrytera, anställa och motivera medarbetare
 
 Rekryteringsprojekt hanterar innehåll som används i annonser om lediga befattningar och hjälper dig att hantera jobbansökningar. Det går att använda till att följa upp svar på jobbannonser för ett visst rekryteringsprojekt eller specifika sökande och uppdatera status för lediga befattningar. Det år även att anställa enstaka sökande eller hantera "massanställningsprojekt" som gör det lättare att anställa flera arbetare för att täcka säsongsbetonade behov.
 
-- [Hantera en rekryteringsprocess](manage-recruiting-process.md)
+- [Hantera rekryteringsprocesser](manage-recruiting-process.md)
 - [Massanställningsprojekt](mass-hire-projects.md) 
 
 När du har anställt personal kan du skapa planer som effektivt och rättvist hanterar såväl kompensation som objekt, såsom datorer eller telefoner som organisationen förser personalen med. Det går att skapa fasta och variabla kompensationsplaner samt definiera regler som använder kompensationsplanen som uppfyller villkoren för planen.
@@ -67,30 +67,30 @@ När du har anställt personal kan du skapa planer som effektivt och rättvist h
 För att hjälpa personalen att uppnå karriärsmålen samtidigt som vi tillhandahåller viktiga affärsbehov kan du ställa in mål, skapa prestationsgranskning och spåra feedback. För att hjälpa anställda att skaffa nödvändiga kompetenser, kan du ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en instruktör till en kurs eller anmäler någon till en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
 
 - [Prestandahantering](../../../talent/performance-management-overview.md)
-- [Justera personalens kompetenser och affärsbehov](../../../talent/skills.md)
-- [Administrera utbildning genom kurser](../../../talent/courses.md)
+- [Anpassa personalens kompetens efter affärsbehov](../../../talent/skills.md)
+- [Skapa utbildningar](../../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Skapa och underhålla förmåner
 
 Utöver att kompensera din personal i form av löner och bonusar går det att utforma ett förmånsprogram där exempelvis sjuk- eller pensionsförsäkring ingår. Det går även att hantera förmåner såsom låneprogram, där företaget lånar ut objekt såsom datorer eller telefoner till sina anställda.
 
-- [Hantera ett förmånsprogram](../../../talent/manage-benefit-program.md)
+- [Definiera och hantera ett förmånsprogram](../../../talent/manage-benefit-program.md)
 - [Policyer för förmånsberättigande](../../../talent/benefit-eligibility-policies.md)
-- [Hantera artiklar utlånade till arbetare](../../../talent/loan-items.md)
+- [Hantera artiklar som lånas ut till medarbetare](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
 
 Microsoft Dynamics AX kan hjälpa dig att upprätthålla en säker arbetsmiljö som överensstämmer med gällande lagar, inklusive Americans with Disabilities Act eller INS-lagstiftning. Det går till exempel att hantera de fysiska kraven för specifika jobb samt spåra förfrågningar för anpassningar som hjälper organisationen att optimera arbetsstyrkans kompetenser.
 
-- [Verifiering av I–9-anställningsformulär](localizations/noam-usa-form-i-9-verification.md)
-- [Efterleva Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
-- [Spåra ledig tid för FMLA](localizations/noam-usa-track-time-for-fmla.md)
+- [Verifiering av I-9-formulär](localizations/noam-usa-form-i-9-verification.md)
+- [Efterleva Americans with Disabilities Act (ADA)](localizations/noam-usa-comply-ada.md)
+- [Spåra ledig tid för FMLA (Family and Medical Leave Act)](localizations/noam-usa-track-time-for-fmla.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Samla information med enkäter
 
 Det går att utforma och dela ut enkäter för att samla in information används för olika ändamål. Funktionen Enkät gör det möjligt att utforma och skapa enkäter. När en enkät är klar går den att distribuera till alla eller till en viss svarsgrupp. När de svarande lämnar in svaren går resultaten att granska och analysera.
 
 - [Enkäter](../../../talent/questionnaires.md)
-- [Utforma en enkät](../../../talent/design-questionnaires.md)
-- [Distribuera och slutföra en enkät](../../../talent/distribute-questionnaires.md)
-- [Visa och utvärdera resultaten av en enkät](../../../talent/evaluate-questionnaire-results.md)
+- [Utforma enkäter](../../../talent/design-questionnaires.md)
+- [Skicka ut och schemalägg enkäter](../../../talent/distribute-questionnaires.md)
+- [Visa och utvärdera resultaten av enkäter](../../../talent/evaluate-questionnaire-results.md)

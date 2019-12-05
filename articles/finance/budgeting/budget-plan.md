@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a59ff16555bfcb55d2f21c09675e7ae0637bca8f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188612"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772155"
 ---
 # <a name="budget-planning"></a>Budgetplanering
 
@@ -60,25 +60,23 @@ Julia använder följande Excel-mall för att förbereda budgeten:
 ## <a name="exercise-1-configuration"></a>Övning 1: Konfiguration
 
 ### <a name="task-1-create-organizational-hierarchy"></a>**Uppgift 1: Skapa en organisationshierarki**
-Eftersom all budgetbearbetning bara görs på finansavdelningen, skapar Julia en mycket enkel hierarki som bara består av finansavdelningen. 1.1. Navigera till organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier) och klickar på knappen Nytt
+Eftersom all budgetbearbetning bara görs på finansavdelningen, skapar Julia en mycket enkel hierarki som bara består av finansavdelningen. 
 
-![Organisationshierarki](./media/screenshot3.png) 
+1.1. Navigera till organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier) och klickar på knappen Nytt
 
-1.2. Ange namnet på organisationshierarkin och klicka på knappen Tilldela syfte
+![Organisationshierarkier](./media/screenshot3.png) 
 
-[![Namn](./media/screenshot4.png)](./media/screenshot4.png) 
+1.2. Ange namnet på organisationshierarkin i namnrutan och klicka på Tilldela syfte.
 
-1.3. Välj Budgetplaneringssyfte, klicka på knappen Lägg till och tilldela den nyligen skapade organisationshierarkin: 
+1.3. Välj Budgetplaneringssyfte, klicka på knappen Lägg till och tilldela den nyligen skapade organisationshierarkin. 
 
 [![Tilldela syfte](./media/screenshot5.png)](./media/screenshot5.png)
 
 1.4. Upprepa steget ovan för säkerhetssyftet. Stäng formuläret när du är klar.
 
-[![Säkerhetsorg](./media/screenshot6.png)](./media/screenshot6.png)
-
 1.5. I formuläret Organisationshierarkier klickar du på knappen Visa. Klicka på Redigera i hierarkidesignern och skapa en hierarki genom att klicka på knappen Infoga.
 
-[![Infoga](./media/screenshot7.png)](./media/screenshot7.png) 
+[![Skriv in](./media/screenshot7.png)](./media/screenshot7.png) 
 
 1.6. Välj finansavdelningen för budgethierarkin. 
 
@@ -86,7 +84,7 @@ Eftersom all budgetbearbetning bara görs på finansavdelningen, skapar Julia en
 
 1.7. När du är klar klickar du på knappen Publicera och stäng. Välj 1/1/2015 som giltighetsdatum för hierarkipublicering.
 
-[![Giltighetsdatum](./media/screenshot9.png)](./media/screenshot9.png)
+[![Gäller från](./media/screenshot9.png)](./media/screenshot9.png)
 
 ### <a name="task-2-configure-user-security"></a>Uppgift 2: Konfigurera användarsäkerhet
 Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfigurera åtkomst till budgetplandata. Julia måste ge åtkomst till finansbudgetplaner till sig själv. 
@@ -96,17 +94,17 @@ Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfig
 
 2.2. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. Navigera till fliken Parametrar och ställ in säkerhetsmodellen på Baserat på säkerhetsorganisationer. 
 
-[![Parametrar](./media/screenshot11.png)](./media/screenshot11.png) 
+[![Parameters](./media/screenshot11.png)](./media/screenshot11.png) 
 
 2.3. Navigera till Systemadministration &gt; Användare &gt; Användare. Ange administratörsanvändaren (Julia Funderburk) rollen som Budgetchef. 
 
 [![Budgetchef](./media/screenshot12.png)](./media/screenshot12.png) 
 
-2.4. Välj användarroll och klicka på Tilldela organisationer 
+2.4. Välj användarroll och klicka på Tilldela organisationer. 
 
-[![Tilldela org](./media/screenshot13.png)](./media/screenshot13.png)
+[![Tilldela organisationer](./media/screenshot13.png)](./media/screenshot13.png)
 
-2.5. Välj Ge tillgång till vissa organisationer. Välj organisationshierarkin som skapades i det första steget. Välj finansnoden och klicka på knappen Bevilja med underordnad knapp 
+2.5. Välj Ge tillgång till vissa organisationer. Välj organisationshierarkin som skapades i det första steget. Välj finansnoden och klicka på knappen Bevilja med underordnad knapp. 
 
 ***Viktigt!*** *Se till att du är i kontexten för den juridiska personen DEMF när du genomför den här uppgiften, eftersom organisationssäkerhet tilldelas efter juridisk person* 
 
@@ -122,31 +120,23 @@ Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfig
 ### <a name="task-4-create-budget-plan-columns"></a>Uppgift 4: Skapa budgetplankolumner
 Budgetplankolumner är antingen monetära eller kvantitetsbaserade och kan användas i budgetplandokumentlayouten. I vårt exempel måste du skapa en kolumn för utfall föregående år och tolv kolumner som ska representera varje månad i ett budgeterat år. Kolumner kan skapas antingen genom att klicka på knappen Lägg till och sedan ange värden eller med hjälp av Datatabell. I den här övningen ska vi använda datatabellen för att fylla i värdena. 
 
-4.1. Öppna sidan Kolumner under Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. Klicka på Office-knappen överst till höger i formuläret och välj Kolumner (ofiltrerade) 
+4.1. Öppna sidan Kolumner under Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. Klicka på Office-knappen överst till höger i formuläret och välj Kolumner (ofiltrerade). 
 
 [![Ofiltrerade kolumner](./media/screenshot16.png)](./media/screenshot16.png) 
 
-4.2. En Excel-arbetsbok öppnas som ska användas för att fylla i värdena. Om du uppmanas aktiverar du redigering och förtroende för den här appen 
+4.2. Systemet öppnar en Excel-arbetsbok som ska användas för att fylla i värdena. Om du uppmanas aktiverar du redigering och förtroende för den här appen. 
 
-[![Aktivera redigering](./media/screenshot18.png)](./media/screenshot18.png) 
-
-[![Lita på den här appen](./media/screenshot17.png)](./media/screenshot17.png)
-
-4.3. Vi behöver fler kolumner att fylla i värdena i. Klicka på Design i höger sidfönster om du vill lägga till kolumnerna i rutnätet: 
+4.3. Vi behöver fler kolumner att fylla i värdena i. Klicka på Design i höger sidfönster om du vill lägga till kolumnerna i rutnätet. 
 
 [![Design](./media/screenshot19.png)](./media/screenshot19.png) 
 
-4.4. Klicka på den lilla pennknappen bredvid PlanColumns för att se kolumner som går att lägga till i rutnätet 
+4.4. Klicka på den lilla pennknappen bredvid PlanColumns för att se kolumner som går att lägga till i rutnätet. 
 
 [![Redigera](./media/screenshot20.png)](./media/screenshot20.png) 
 
-4.5. Dubbelklicka på varje tillgängligt fält för att lägga till dem i rutan för valda fält och klicka på Uppdatera 
+4.5. Dubbelklicka på varje tillgängligt fält för att lägga till dem i rutan för valda fält och klicka på Uppdatera. 
 
-![Uppdatera](./media/screenshot21.png)](./Media/screenshot21.png) 
-
-4.6. Lägg till alla kolumner som ska skapas i Excel-tabell. Använd autofyllfunktionen i Excel om du vill lägga till raderna snabbt. Kontrollera att raderna läggs till som en del av tabellen (när du rullar vertikalt kan du se kolumnrubrikerna överst i rutnätet) 
-
-[![Autofyll](./media/screenshot22.png)](./media/screenshot22.png) 
+4.6. Lägg till alla kolumner som ska skapas i Excel-tabell. Använd autofyllfunktionen i Excel om du vill lägga till raderna snabbt. Kontrollera att raderna läggs till som en del av tabellen (när du rullar vertikalt kan du se kolumnrubrikerna överst i rutnätet). 
 
 4.7. Gå tillbaka till appen och uppdatera sidan. Publicerade värden visas. 
 
@@ -170,7 +160,8 @@ Baserat på layoutdefinitionen av budgetplanen kan vi skapa en Excel-mall som sk
 *Obs: Se till att välja "Spara som" och välj den plats där mallen ska sparas, om du vill redigera. Om användaren väljer "Öppna" i dialogrutan utan att spara, behålls inte ändringar som gjorts i filen när filen stängs.* 
 [![Mallvy](./media/screenshot25.png)](./media/screenshot25.png) 
 
-5.3. &lt; Valfritt steg&gt; Ändra Excel-mallen för att göra den mer användarvänlig – lägg till formler för summor, rubrikfält, formatering osv. Spara ändringarna och skicka filen till budgetplanlayouten genom att klicka på Layout &gt; Överför [![Överför](./media/screenshot26.png)](./media/screenshot26.png)
+5.3. &lt;Valfritt steg&gt; Ändra Excel-mallen för att göra den mer användarvänlig – lägg till formler för summor, rubrikfält, formatering osv. Spara ändringarna och skicka filen till budgetplanlayouten genom att klicka på Layout &gt;Överför. 
+
 
 ### <a name="task-6-create-a-budget-planning-process"></a>Uppgift 6: Skapa en budgetplaneringsprocess
 Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar alla inställningar ovan för att börja registrera budgetplaner. Budgetplaneringsprocessen definiera vilka budgeteringsorganisationer, arbetsflöden, layouter och mallar som ska användas för att skapa budgetplaner. 
@@ -189,7 +180,7 @@ Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar a
 
 [![Alternativa layouter](./media/screenshot27.png)](./media/screenshot27.png) 
 
-6.2. Välj Åtgärder &gt; Aktivera för att aktivera budgetplaneringsarbetsflödet  
+6.2. Välj Åtgärder &gt; Aktivera för att aktivera budgetplaneringsarbetsflödet. 
 
 [![Aktivera](./media/screenshot28.png)](./media/screenshot28.png)
 
@@ -198,24 +189,22 @@ Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar a
 ### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Uppgift 7: Skapa initiala data för budgetplan från redovisning
 7.1. Navigera till Budgetering &gt; Periodisk &gt; Skapa budgetplan från huvudbok. Fyll i de periodiska processparametrarna och klicka på Skapa. 
 
-[![Skapa](./media/screenshot29.png)](./media/screenshot29.png) 
-
 7.2. Navigera till Budgetering &gt; Budgetplaner för att hitta en budgetplan som har skapats av genereringsprocessen. 
 
 [![Budgetplan](./media/screenshot30.png)](./media/screenshot30.png) 
 
-7.3. Öppna dokumentdetaljer genom att klicka på hyperlänken för dokumentnummer. Budgetplanen visas enligt definitionen i layouten som skapades i den här övningen 
+7.3. Öppna dokumentdetaljer genom att klicka på hyperlänken för dokumentnummer. Budgetplanen visas enligt definitionen i layouten som skapades i den här övningen. 
 
 [![Budgetplandokument](./media/screenshot31.png)](./media/screenshot31.png)
 
 ### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Uppgift 8: Skapa innevarande års budget baserad på utfall för tidigare år
 Allokeringsmetoder kan användas i budgetplaner för att enkelt kopiera information för budgetplaner från ett scenario till ett annat eller fördela dem över perioder eller allokera till dimensioner. Vi använder allokeringar för att skapa innevarande års budget från tidigare års utfall. 
 
-8.1. Välj alla rader i rutnätet i budgetplandokumentet och klicka på knappen för allokering av budget 
+8.1. Välj alla rader i rutnätet i budgetplandokumentet och klicka på knappen för allokering av budget. 
 
 [![Alla rader](./media/screenshot32.png)](./media/screenshot32.png) 
 
-8.2. Välj allokeringsmetod, Periodnyckel, käll- och målscenarier och klicka på Allokera 
+8.2. Välj allokeringsmetod, Periodnyckel, käll- och målscenarier och klicka på Allokera. 
 
 [![Allokera](./media/screenshot33.png)](./media/screenshot33.png)
 
@@ -224,15 +213,11 @@ De faktiska beloppen för föregående kopieras till budgeten för aktuellt år 
 [![Försäljningskurva](./media/screenshot34.png)](./media/screenshot34.png)
 
 ### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Uppgift 9: Justera budgetplandokumentet med hjälp av Excel och slutför dokumentet
-9.1. Klicka på knappen för kalkylbladet för att öppna dokumentinnehållet i Excel
-
-[![Excel](./media/screenshot35.png)](./media/screenshot35.png)
+9.1. Klicka på knappen för kalkylbladet för att öppna dokumentinnehållet i Excel.
 
 9.2. När Excel öppnas justerar du siffrorna i budgetplandokumentet och klickar på knappen Publicera.
 
-[![Publicera](./media/screenshot36.png)](./media/screenshot36.png)
-
-9.3. Gå tillbaka till budgetplandokument. Klicka på Arbetsflöde &gt; Skicka för att godkänna dokumentet automatiskt
+9.3. Gå tillbaka till budgetplandokument. Klicka på Arbetsflöde &gt; Skicka för att godkänna dokumentet automatiskt.
 
 [![Automatiskt godkänd](./media/screenshot37.png)](./media/screenshot37.png) 
 
@@ -242,21 +227,21 @@ När arbetsflödet har slutförts, ändras steget för budgetplandokument till G
 
 ### <a name="auto-approve-workflow-configuration"></a>Konfiguration för automatiskt godkännande arbetsflöde
 
-A. Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgeteringsarbetsflöden Skapa ett nytt arbetsflöde med hjälp av mallen Budgetplaneringsarbetsflöden:
+A. Budgetering &gt; inställningar &gt; budgetplanering &gt; budgetarbetsflöden. Skapa ett nytt arbetsflöde med hjälp av mallen arbetsflöden för budgetplanering:
 
 [![Skapa ett nytt arbetsflöde](./media/screenshot39.png)](./media/screenshot39.png)
 
-Arbetsflödet innehåller endast en aktivitet – Fasövergångsbudgetplan 
+Arbetsflödet innehåller endast en aktivitet – Fasövergångsbudgetplan. 
 
 [![Fasövergångsbudgetplan](./media/screenshot40.png)](./media/screenshot40.png) 
 
 Spara och aktivera arbetsflödet. 
 
-B. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. Skapa 2 faser i fliken Faser – Inledande och Skickad 
+B. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. Skapa 2 faser i fliken Faser – Inledande och Skickad. 
 
 [![Ursprungliga och överförda](./media/screenshot41.png)](./media/screenshot41.png)
 
-C. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. I fliken Arbetsflödesfaser kopplar du arbetsflödet Automatiskt godkänd som skapades i steg A till faserna Inledande och Skickad 
+C. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. I fliken Arbetsflödesfaser kopplar du arbetsflödet Automatiskt godkänd som skapades i steg A till faserna Inledande och Skickad.
 
 [![Budgetering och budgetplanering](./media/screenshot42.png)](./media/screenshot42.png)  
 

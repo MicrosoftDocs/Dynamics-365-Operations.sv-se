@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 448fceccb507bec5b60b686043a303c1997a9ac0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 0b0be541416d2e4be78da223ec8e95c195d90bbc
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742689"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832665"
 ---
 # <a name="track-changes-in-recruiting-data"></a>Spåra ändringar i rekryteringsdata
+
+[!include [banner](includes/banner.md)]
 
 Du kan nu spåra de ändringar som har gjorts för kandidater, jobberbjudanden och jobbansökningar genom att använda granskningsprocess. Detta är användbart för rapporter och regelefterlevnadskrav.
 
@@ -31,7 +33,7 @@ Du kan visa spårade data i Power BI genom att använda OData-kopplingen. Mer in
 ## <a name="track-changes"></a>Spåra ändringar
 Gör så här om du vill ställa in spårning av ändringar i dina rekryteringsdata:
 
-1. I [PowerApps](https://web.powerapps.com), välj lämplig miljö.
+1. I [Power Apps](https://web.powerapps.com), välj lämplig miljö.
 
 2. Välj **inställningar** (kugghjulsikonen), välj **avancerade anpassningar** och välj sedan **resurser** under **utvecklingsresurser**. 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023894"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812751"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (26 mars 2019)
 
@@ -75,11 +75,11 @@ I den här versionen visas nu fasta kompensationsplaner vid begränsning av anv�
 Med den här versionen kan du nu ta bort jobbposter med alternativet **öppna i Excel** i Talent.
 
 ### <a name="upgrade-to-common-data-service"></a>Uppgradera till Common Data Service
-Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på PowerApps-administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Tidsgränser för uppgradering till Common Data Service för appar närmar sig snabbt. Logga in på Power Apps-administrationscenter för att avgöra om databasen måste uppgraderas. Mer information om deadlines och nödvändiga instruktioner för uppgradering finns i [uppgradera till Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>I förhandsgranskning
 
-För information om hur du aktiverar funktioner för förhandsgranskning finns i [Få åtkomst till förhandsfunktioner i Talent](./access-preview-feature.md).
+För information om hur du aktiverar funktioner för förhandsgranskning finns i [Få åtkomst till förhandsfunktioner i Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>Tillåt att orsakskoder anges på tjänstledighetstyper
 Organisationer kanske behöver ytterligare information relaterad till ledighetsbegäranden. Om du vill ha den här informationen måste medarbetare inkludera en orsakskod på deras ledighetsbegäran. Med den här versionen kan du kan nu ange orsakskoder som är associerade med en viss ledighetstyp och aktivera medarbetare att välja en orsakskod för deras ledighetsbegäranden.

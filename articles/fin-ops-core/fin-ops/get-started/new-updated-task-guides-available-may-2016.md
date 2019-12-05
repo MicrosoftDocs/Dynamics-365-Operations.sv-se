@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7134dc49c0e767d3bc4dc32e4feeb0e83a168e86
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 930c744ff2a28451d4267f060867b4b6474d45e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190935"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811588"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>Nya eller uppdaterade uppgiftsguider (maj 2016)
 
@@ -32,7 +32,7 @@ Artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguider i (maj 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX
 
-(Maj 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX maj 2016 uppdatering och Microsoft Dynamics AX februari 2016. Lokaliserade versioner av uppgiftsguider som frisläpptes i (februari 2016) APQC Unified Library är tillgängliga i det här biblioteket. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
+(Maj 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX maj 2016 uppdatering och Microsoft Dynamics AX februari 2016. Lokaliserade versioner av uppgiftsguider som frisläpptes i (februari 2016) APQC Unified Library är tillgängliga i det här biblioteket. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Hjälp-system](help-overview.md).
 
 > [!NOTE]
 > En asterisk (\*) bredvid rubriken för en affärsprocessmodellerare (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX maj 2016 uppdateringen och inte stöds i tidigare versioner av Microsoft Dynamics AX.
@@ -185,11 +185,11 @@ Artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft
 | Ställa in skapande av behållare                                         | Globalt         |
 | Ställa in manuell förpackning                                           | Globalt         |
 | Ställ in transportbegränsningar för en artikel                   | Globalt         |
-| \*Ställ in policyer för lagerarbete                                 | Globalt         |
+| \*Ställ in policyer för lagerarbete                                | Globalt         |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
+[Nya uppgiftguider (februari 2016)](new-task-guides-available-february-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519154"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813993"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Visa och utvärdera resultaten av enkäter
 
@@ -57,7 +57,8 @@ På sidan **Svar** kan du visa information om svar, poäng, den svarandes svar i
 -   **Svarsrapport** – Rapporten visar de svaren som svarande valde för varje fråga i enkäten.
 -   **Felaktiga svar** – Den här rapporten visar information om felaktiga svar som den svarade markerade.
 
-**Notering:** Rapporten **Resultat** är endast tillgänglig om du använder resultatgrupper i enkäten och om du har valt **Resultatsida** på sidan **Enkäter**. Rapporten **Svar** och rapporten **Felaktiga svar** är tillgängliga om du markerade **Svarsrapport** på sidan **Enkäter**.
+> [!NOTE]
+> Rapporten **Resultat** är endast tillgänglig om du använder resultatgrupper i enkäten och om du har valt **Resultatsida** på sidan **Enkäter**. Rapporten **Svar** och rapporten **Felaktiga svar** är tillgängliga om du markerade **Svarsrapport** på sidan **Enkäter**.
 
 ## <a name="questionnaire-statistics"></a>Enkätstatistik
 Du kan använda enkätstatistik om du vill analysera resultaten i en ifylld enkät baserat på beräkningar som du definierar. Om du vill definiera beräkningar måste du utföra följande uppgifter:
@@ -77,7 +78,7 @@ Inställningar som du definierar sparas så att du kan använda den för att reg
 
 [Utforma enkäter](design-questionnaires.md)
 
-[Använda enkäter](questionnaires.md)
+[Enkäter](questionnaires.md)
 
-[Distribuera och slutföra enkäter](distribute-questionnaires.md)
+[Skicka ut och schemalägg enkäter](distribute-questionnaires.md)
 

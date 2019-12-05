@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: b031fd95d2e7fc8405ad96139779091e00bb4d46
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 42065f3d6b7ae9e7ad99b26c7692e41f8c36934d
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551482"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832987"
 ---
 # <a name="troubleshoot-integration-with-linkedin-and-microsoft-dynamics-365-talent---attract"></a>Felsöka integrering med LinkedIn och Microsoft Dynamics 365 Talent - Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Använd följande information för att felsöka problem som du kanske har när du försöker bokföra jobb till LinkedIn från Microsoft Dynamics 365 Talent: Attract.
 
@@ -42,18 +42,18 @@ Om du har problem med att logga in på LinkedIn från Attract kan du försöka m
 
 Om jobbet inte visas på LinkedIn efter 24 timmar gör du så här:
 
-1. Se till att ditt LinkedIn företags-ID mappas till din LinkedIn företagssida och att det anges korrekt i administrationscentret för Attract. Mer information om hur du ändrar LinkedIn-inställningar i administrationscentret finns i [ställa in integrering med LinkedIn](attract-admin-linkedin.md). För mer information om LinkedIn företags-ID:n, se [associera ditt LinkedIn företags-ID med LinkedIn jobbtavla - Vanliga frågor](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Se till att ditt LinkedIn företags-ID mappas till din LinkedIn företagssida och att det anges korrekt i administrationscentret för Attract. Mer information om hur du ändrar LinkedIn-inställningar i administrationscentret finns i [ställa in integrering med LinkedIn för Microsoft Dynamics 365 Talent - Attract](attract-admin-linkedin.md). För mer information om LinkedIn företags-ID:n, se [associera ditt LinkedIn företags-ID med LinkedIn jobbtavla - Vanliga frågor](https://www.linkedin.com/help/linkedin/answer/98972).
 2. Kontrollera att adressen är fullständig genom att granska jobbinformationen på LinkedIn. För att kunna publicera ett jobb måste LinkedIn ha minst ort och land eller region för jobbet.
 3. Kontrollera att jobbet inte duplicerar ett annat jobb som har publicerats på LinkedIn. LinkedIn publicerar inte jobb som är dubbletter av antingen LinkedIn Premium jobbplatser eller begränsade listor från en annan källa. Kontrollera att en annan person i företaget inte redan har publicerat jobbet manuellt.
 
 ## <a name="see-also"></a>Se även
 
-[Vanliga frågor LinkedIn](./attract-linkedin-faq.md)
+[Vanliga frågor Attract-integration med LinkedIn](./attract-linkedin-faq.md)
 
-[Publicera jobb på LinkedIn från Attract](./attract-post-jobs-to-linkedin.md)
+[Publicera jobb på LinkedIn från Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Hitta kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Skaffa kandidater med LinkedIn Recruiter i Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Skapa jobb](./creating-jobs-attract.md)
+[Skapa, godkänna och bokföra jobb i Attract](./creating-jobs-attract.md)
 
-[Felsöka integration med LinkedIn](./attract-troubleshoot-linkedin.md)
+[Felsöka integrering med LinkedIn och Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

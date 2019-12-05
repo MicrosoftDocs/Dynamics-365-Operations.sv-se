@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 92ef83bc1783b00a4d7d9739ca1c17e863c7ff44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8be4e225507a18a92d642ff0f3a6ca3d0ff68564
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185277"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772545"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Tolka inkommande dokument i JSON-format
 
@@ -46,7 +46,7 @@ Innan du slutför ER skapar du en formatkonfiguration för att importera data fr
 - JSON-matriser kan bara innehålla kapslade element för ett objekts egenskapselement.
 - JSON-matriser kan bara innehålla JSON-objekt. De får inte innehålla direkta strängar/numeriska värden och kapslade matriser. Element i dessa matriser tolkas i angiven ordning, eftersom de anges i formatet. Sammansatta inställningar för varje JSON-objekt kommer att beaktas.
 
-Du måste dessutom fylla i uppgiftsguiden [ER Skapa erforderliga konfigurationer för att importera data från en extern fil för elektronisk rapportering](tasks/er-required-configurations-import-data.md) om du inte redan har fyllt i den. Hämta följande fil för att slutföra uppgiftsguiden.
+Du måste dessutom fylla i uppgiftsguiden [ER Skapa erforderliga konfigurationer för att importera data från en extern fil](tasks/er-required-configurations-import-data.md) om du inte redan har fyllt i den. Hämta följande fil för att slutföra uppgiftsguiden.
 
 | Namn                  | Filnamn |
 |------------------------|-----------|

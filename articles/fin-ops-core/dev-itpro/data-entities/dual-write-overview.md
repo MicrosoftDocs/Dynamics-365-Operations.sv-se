@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550867"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772397"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Dataintegrering nästan i realtid med Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 I den nuvarande digitala världen använder företags ekosystem Microsoft Dynamics 365-appar som helhet. Eftersom data från personer, kunder, åtgärder och sakernas Internet (IoT)-enheter flödar till en källa finns det en möjlighet för digitala feedbackloopar. För att uppnå den här upplevelsen är integration mellan Finance and Operations-appar och andra Dynamics 365-program viktigt. Vissa appar byggs ovanpå Common Data Service. Integrering mellan Finance and Operations-appdata med Common Data Service låter andra program kommunicera konsekvent och flytande med Finance and Operations.
 
@@ -38,13 +36,16 @@ Finance and Operations-appar och Common Data Service tillhandahåller datasynkro
 
 ![Diagram över arkitekturöversikt](media/dual-write-overview.jpg)
 
-Följande värdepropositioner är tillgängliga för kunder:
+Följande värdepropositioner är tillgängliga:
 
 + [Organisationshierarki i Common Data Service](dual-write-organization.md)
 + [Företagskoncept i Common Data Service](dual-write-company.md)
 + [Integrerat kundhuvud](dual-write-customer.md)
++ [Integrerad redovisning](dual-write-ledger.md)
++ [Enhetlig produktupplevelse](dual-write-product.md)
 + [Integrerat leverantörshuvud](dual-write-vendor.md)
-+ Enhetlig produktmall
++ [Integrerade platser och lagerställen](dual-write-sites-and-warehouses.md)
++ [Integrerad huvudskatt](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Systemkrav
 

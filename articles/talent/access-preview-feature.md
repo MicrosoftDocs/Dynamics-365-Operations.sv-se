@@ -1,5 +1,5 @@
 ---
-title: Få åtkomst till förhandsfunktioner i Microsoft Dynamics 365 Talent
+title: Hantera funktioner
 description: Det här avsnittet beskriver hur en administratör kan aktivera funktionen förhandsgranska i Microsoft Dynamics 365 Talent och visar funktionerna som är aktiverade för förhandsgranskning.
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551620"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833310"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Få åtkomst till förhandsfunktioner i Microsoft Dynamics 365 Talent
+# <a name="manage-features"></a>Hantera funktioner
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Som en del av vår kontinuerliga distribution av HR-hanteringsfunktioner (HCM) för Microsoft Dynamics 365 Talent, vill vi att kunder får nya funktioner så snart som möjligt. Administratörer kan se och använda funktioner för förhandsgranskning i datormiljön. Dessa funktioner kan snart allmänt tillgänglig och har genomgått omfattande testning. Vi söker bara en slutlig runda av feedback från kunder och validering innan vi gör dem allmänt tillgångliga.
 
@@ -117,6 +117,6 @@ Se till att inte inkludera personuppgifter (all information som kan identifiera 
 ## <a name="see-also"></a>Se även
 
 - [Prova eller köp Talent-appar](https://dynamics.microsoft.com/talent/overview/)
-- [Nyheter](./whats-new.md)
-- [Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support för Talent](./talent-support.md)
+- [Nyheter och ändringar i Dynamics 365 Talent](./whats-new.md)
+- [Utgivningsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support för Microsoft Dynamics 365 Talent](./talent-support.md)

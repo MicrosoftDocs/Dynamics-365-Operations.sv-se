@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626257"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811764"
 ---
 # <a name="manually-created-work-orders"></a>Manuellt skapade arbetsorder
 
@@ -70,7 +70,7 @@ Observera följande:
 
 - I informationsvyn på listsidan **Alla arbetsorder** kan du lägga till flera tillgångar i en arbetsorder genom att lägga till rader på snabbfliken **Underhållsjobb för arbetsorder**. För en tillgång kan du bara välja de typer av underhållsjobb som är definierade för den tillgångstyp som valts för tillgången.  
 
-- Om du ändrar en tillgångs tjänstenivån eller allvarlighetsgrad är den här tillgången på arbetsorder, tjänstenivå eller allvarlighetsgrad på allvarlighetsgraden på arbetsordern i enlighet med detta. Mer information om tjänstenivåer och allvarlighetsgrad finns i [Tillgångs tjänstenivå](../setup-for-objects/object-priorities.md) och [Kritiskt för tillgång](../setup-for-objects/object-criticalities.md).
+- Om du ändrar en tillgångs tjänstenivån eller allvarlighetsgrad är den här tillgången på arbetsorder, tjänstenivå eller allvarlighetsgrad på allvarlighetsgraden på arbetsordern i enlighet med detta. Mer information om tjänstenivåer och allvarlighetsgrad finns i [Tillgångs tjänstenivå](../setup-for-objects/object-priorities.md) och [Allvarlighetsgradtyper för tillgång](../setup-for-objects/object-criticalities.md).
 
 - Allvarlighetsgraden på en arbetsorder beräknas om varje gång en arbetsorderjobb läggs till eller tas bort från arbetsordern.
 

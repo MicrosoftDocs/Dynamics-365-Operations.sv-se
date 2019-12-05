@@ -3,7 +3,7 @@ title: Avancerad MT940-import för bankavstämning - uppgradering för sammansat
 description: Ett sekvensnummer måste läggas till bankutdragimportenheten för att stödja MT940-formatet.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88eb5b3c408d36620ab550b29d2e5a3278d25d8a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 91100c3e3c33462e5b19ca239a784cdb720210ab
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188474"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772017"
 ---
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avancerad MT940-import för bankavstämning - uppgradering för sammansatt dataenhet
 

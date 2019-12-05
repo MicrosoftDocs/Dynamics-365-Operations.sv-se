@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 28ed12bd8cf2df7c25e14a25465cad1229676cfd
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5849de38962967f0614ff7afd40296c0f12ff476
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551989"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812866"
 ---
 # <a name="get-the-dynamics-365-talent---onboard-app"></a>Hämta Dynamics 365 Talent - Onboard-appen
 
@@ -39,9 +39,9 @@ Under testperioden eller köpprocessen kommer du att ställa in din e-postadress
 > [!WARNING]
 > Du kan inte migrera data från din utvärderingsversion till din betalda prenumerationsmiljö. <!--Reviewers: please verify.-->
 
-Mer information om nya funktioner i Talent, se [Nyheter och ändringar in Dynamics 365 Talent](./whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Om du vill förhandsgranska nya funktioner i Onboard, se [åtkomstfunktioner för förhandsgranskning i Talent](./access-preview-feature.md).
+Mer information om nya funktioner i Talent, se [Nyheter och ändringar in Dynamics 365 Talent](./whats-new.md) och [Viktig information om Dynamics 365 och Power Platform](https://docs.microsoft.com/business-applications-release-notes/index). Om du vill förhandsgranska nya funktioner i Onboard, se [åtkomstfunktioner för förhandsgranskning i Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
-Om du är IT-proffs och vill veta mer om hur de två versionerna av Onboard-appen etableras, se [etablering för Onboard-appen](./modular-app-tech-faq.md).
+Om du är IT-proffs och vill veta mer om hur de två versionerna av Onboard-appen etableras, se etablering för Onboard-appen [etablering för Dynamics 365 Talent - Onboard-appen](./modular-app-tech-faq.md).
 
 ## <a name="get-started-with-onboard"></a>Kom igång med Onboard
 
@@ -89,6 +89,6 @@ Om du accepterade standarddomännamnet när du registrerade dig med Onboard kan 
 ### <a name="see-also"></a>Se även
 
 - [Prova eller köp appen Onboard](https://dynamics.microsoft.com/talent/onboard/)
-- [Nyheter](./whats-new.md)
-- [Viktig information](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Få support](./talent-support.md)
+- [Nyheter och ändringar i Dynamics 365 Talent](./whats-new.md)
+- [Utgivningsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Få support för Microsoft Dynamics 365 Talent](./talent-support.md)
