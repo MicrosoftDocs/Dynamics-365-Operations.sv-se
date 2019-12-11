@@ -1,0 +1,128 @@
+---
+title: Arbeta med fragment
+description: I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
+author: v-chgri
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.search.region: Global
+ms.search.industry: retail
+ms.author: phinneyridge
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: d92b9077f8584bfa0710bbaacbc7caa3220baa4a
+ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2698106"
+---
+# <a name="work-with-fragments"></a>Arbeta med fragment 
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Översikt
+
+Fragment gör det möjligt att använda en central redigeringsupplevelse för modulkonfigurationer som måste återanvändas på hela din webbplats. Sidhuvuden, sidfötter och banderoller är ofta konfigurerade som fragment, eftersom de delas på många sidor. Du kan betrakta fragment som miniatyrer av webbsidor som kan infogas på andra sidor på webbplatsen. Fragment har sin egen livscykel. Det innebär att de skapas, refereras, uppdateras och tas bort som oberoende enheter i redigeringsverktygen.
+
+När fragment har konfigurerats kan de användas där moduler kan användas i webbplatsstrukturen. Det går att referera till fragment på sidor, i layouter, i mallar och i andra fragment.
+
+> [!NOTE]
+> Fragment kan kapslas upp till sju nivåer djup inuti andra fragment.
+
+Om du till exempel vill marknadsföra en säsongshändelse på många sidor på webbplatsen kan du använda ett fragment. Det första steget i processen med att skapa ett nytt fragment är att välja vilken typ av modul du vill starta från. I det här exemplet kan du skapa avsnittet från en fokusmodul.
+
+> [!NOTE]
+> Fragment kan skapas med alla typer av moduler.
+
+Du kan sedan konfigurera fokusfragment med ditt specifika säljinnehåll. Du kan också lokalisera den efter behov. Det nya fristående fokusfragmentet kan sedan förbrukas som en förkonfigurerad modul på hela din webbplats. Du kan enkelt lägga till det i mallar, specifika sidor eller till andra fragment som kan innehålla fokusmoduler.
+
+Alla platser där fragmenten läggs till är referenser till det centrala fokusfragment som du har skapat. Om du publicerar ändringar i avsnittet visas dessa direkt på alla platser där fragmentet refereras på webbplatsen. Därför utgör fragmenten ett kraftfullt och effektivt sätt att återanvända och centralt hantera konfigurationer på en webbplats. Genom att effektivt använda dem kan du öka flexibiliteten och minska den kostnad som är kopplad till hantering av webbplatsens innehåll.
+
+Följande bild visar hur fragment kan användas för att centralisera redigering av konfigurationer för delade moduler på en e-handelsplats.
+
+![EN bild visar hur fragment kan användas för att centralisera redigering av konfigurationer för delade moduler på en e-handelsplats.](./media/fragment-figure1.png)
+
+## <a name="create-a-fragment"></a>Skapa ett fragment
+
+Du kan antingen skapa ett nytt fragment eller spara en befintlig modul som ett fragment.
+
+### <a name="create-a-new-fragment"></a>Skapa ett nytt fragment.
+
+Gör så här om du vill skapa ett nytt fragment.
+
+1. I navigeringsfönstret till vänster, välj **fragment**.
+1. Välj **Nytt sidfragment**. En dialogruta visas med alla tillgängliga modultyper. Som tidigare nämnts kan fragment skapas från alla typer av moduler.
+1. Välj en modultyp för fragmentet och välj sedan **OK**.
+
+    > [!TIP]
+    > Genom att välja en generisk behållarmodultyp får du den mest flexibla när du måste uppdatera och konfigurera fragmentet senare.
+
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Spara en befintlig modulkonfiguration som ett fragment
+
+Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart fragment följer du stegen nedan.
+
+1. Öppna en sida eller mall som innehåller modulen som du vill konvertera till ett fragment.
+1. Markera ellipsknappen (**...**) bredvid namnet på den modul som du vill ta bort i dispositionsrutan till vänster och markera sedan **Spara som fragment**. En dialogruta visas.
+1. Ange ett namn och metadata för fragmentet.
+1. Välj **OK** om du vill spara modulens konfiguration som ett fragment som kan läggas till på andra sidor.
+
+## <a name="add-remove-or-edit-fragments-on-a-page"></a>Lägga till, ta bort eller redigera fragment på en sida
+
+I följande procedurer beskrivs hur du lägger till, tar bort och redigerar fragment.
+
+### <a name="add-a-fragment"></a>Lägg till ett fragment
+
+Om du vill lägga till ett fragment till en sida gör du följande.
+
+1. I dispositionsrutan till vänster väljer du en behållare eller en plats som underordnade moduler kan läggas till i.
+1. Markera knappen med punkter bredvid namnet på behållaren eller platsen och välj sedan **Lägg till fragment**. En dialogruta visas.
+
+    > [!NOTE]
+    > Om en behållare eller en plats inte stöder nya underordnade moduler är alternativet **Lägg till fragment** inte tillgängligt.
+
+1. Sök efter och markera ett fragment som ska läggas till i dialogrutan. Om det inte finns några tillgängliga fragment kanske du först måste skapa ett fragment från en modultyp som den valda behållaren eller platsen stöder.
+1. Klicka på **OK** om du vill lägga till det valda fragmentet i den valda behållaren eller platsen på sidan.
+
+> [!NOTE]
+> Modulerna som är tillåtna i en behållare eller plats definieras av sidans mall eller modulernas egna definitioner.
+
+### <a name="remove-a-fragment"></a>Ta bort ett fragment
+
+För att ta bort ett fragment från en plats eller behållare på en sida, följ dessa steg.
+
+1. Markera ellipsknappen bredvid namnet på det fragment som du vill ta bort i dispositionsrutan till vänster och markera sedan knappen papperskorgen.
+1. När du uppmanas att bekräfta att du vill ta bort fragmentet väljer du **OK**.
+
+> [!NOTE]
+> När du tar bort ett fragment från en sida tar du bara bort referensen till det från den sidan. Du tar **inte** bort fragmentet från webbplatsen. Om du vill ta bort fragment från platsen måste du använda användargränssnittet för fragmentkontrollen. Du kan bara ta bort fragment från en plats om de inte är refererade till några sidor, mallar eller andra fragment.
+
+### <a name="edit-a-fragment"></a>Redigera ett fragment
+
+Om du vill redigera fragment måste du använda gränssnittet för fragmentredigeraren. Denna begränsning är av design. Den garanterar att författare inte förvirrar processen att redigera modulerna för en viss sida med processen för att redigera fragment som kan delas på många sidor.
+
+Gör så här om du vill redigera ett fragment.
+
+1. I navigeringsfönstret till vänster, välj **fragment**.
+1. Under **Fragment**, välj det fragment du redigera.
+1. Redigera fragmentets modulegenskaper och struktur efter behov. Processen ser ut som om du redigerar modulerna i vyn sidredigerare.
+
+Du kan också redigera ett fragment genom att markera det på en sida, i en mall eller i ett överordnat fragment, och sedan välja **redigera fragment** i egenskapsrutan till höger.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Översikt över mallar och layouter](templates-layouts-overview.md)
+
+[Arbeta med mallar](work-with-templates.md)
+
+[Arbeta med förinställda layouter](work-with-layouts.md)
