@@ -1,1 +1,2 @@
-
+> [!IMPORTANT]
+> <span data-ttu-id="ac14b-101">Dynamics 365 Talent: Attract- och Onboard-appar dras tillbaka.</span><span class="sxs-lookup"><span data-stu-id="ac14b-101">Dynamics 365 Talent: Attract and Onboard apps are being retired.</span></span> <span data-ttu-id="ac14b-102">Läs mer på [Ta Dynamics 365 Talent: Attract- och Onboard-appar ur bruk](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).</span><span class="sxs-lookup"><span data-stu-id="ac14b-102">Learn more at [Retiring Dynamics 365 Talent: Attract and Onboard apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps).</span></span>
