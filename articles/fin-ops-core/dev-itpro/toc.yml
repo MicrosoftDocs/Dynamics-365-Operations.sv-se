@@ -8,7 +8,9 @@
           href: index.md
         - name: Nyheter och ändringar
           items:
-            - name: Förhandsgranskningsfunktioner i Platform update 31 (Januari 2020)
+            - name: Förhandsgranskningsfunktioner i Platform update 32 (februari 2020)
+              href: get-started/whats-new-platform-update-32.md
+            - name: Platform update 31 (januari 2020)
               href: get-started/whats-new-platform-update-31.md
             - name: Platform update 30 (november 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -34,6 +36,10 @@
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
             - name: Platform update 15 (mars 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Nyheter och ändringar i tidigare versioner
+              items:
+                - name: Nyheter och ändringar på hemsidan för Finance and Operations
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Affärshändelser
           items:
             - name: Översikt över affärshändelser
@@ -408,9 +414,9 @@
                       href: deployment/deploy-retail-onprem.md
                 - name: Utveckla och distribuera anpassade modeller i lokala miljöer
                   href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: PowerBI.com integrering med lokala miljöer
+                - name: PowerBI.com-integrering med lokala miljöer
                   href: analytics/entity-store-on-prem.md
-                - name: Konfigurera omvända proxyservrar för lokala miljöer
+                - name: Konfigurera proxyservrar för lokala miljöer
                   href: deployment/onprem-reverseproxy.md
                 - name: Uppdatera en lokal distribution
                   href: deployment/apply-updates-on-premises.md
@@ -926,6 +932,8 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Kända problem
                   href: lifecycle-services/known-issues.md
+                - name: Borttagna eller föråldrade funktioner i Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Användarhandbok för Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Prenumerationsberäkning

@@ -8,6 +8,12 @@
         - name: Nyheter och ändringar i Talent
           href: whats-new.md
           items:
+            - name: 17 december 2019
+              href: whats-new-talent-december-17-2019.md
+            - name: 12 december 2019
+              href: whats-new-talent-december-12-2019.md
+            - name: 3 december 2019
+              href: whats-new-talent-december-3-2019.md
             - name: 19 november 2019
               href: whats-new-talent-november-19-2019.md
             - name: 12 november 2019
@@ -26,16 +32,16 @@
               href: whats-new-talent-september-17-2019.md
             - name: 10 september 2019
               href: whats-new-talent-september-12-2019.md
-            - name: 27 augusti 2019
-              href: whats-new-talent-august-28-2019.md
-            - name: 22 augusti 2019
-              href: whats-new-talent-august-21-2019.md
-            - name: 13 augusti 2019
-              href: whats-new-talent-august-15-2019.md
-            - name: 6 augusti 2019
-              href: whats-new-talent-august-7-2019.md
             - name: Nyhetsarkiv 2019
               items:
+                - name: 27 augusti 2019
+                  href: whats-new-talent-august-28-2019.md
+                - name: 22 augusti 2019
+                  href: whats-new-talent-august-21-2019.md
+                - name: 13 augusti 2019
+                  href: whats-new-talent-august-15-2019.md
+                - name: 6 augusti 2019
+                  href: whats-new-talent-august-7-2019.md
                 - name: 30 juli 2019
                   href: whats-new-talent-july-31-2019.md
                 - name: 23 juli 2019
@@ -128,38 +134,34 @@
           href: talent-versions-update-policy.md
         - name: Talent-uppdateringar
           href: talent-updates.md
-        - name: Reservering för Talent
+        - name: Etablera Talent
           href: provisioning-talent.md
         - name: Kopiera en Core HR-instans
           href: hr-copy-instance.md
         - name: Ta bort Talent-miljöer
           href: remove-talent-environment.md
-        - name: Reservering för appen Onboard
+        - name: Hantera funktioner
+          href: access-preview-feature.md
+        - name: Etablera Onboard
           href: modular-app-tech-faq.md
-        - name: Bädda in PowerApps‑appar
+        - name: Bädda in Power Apps‑appar
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR och Common Data Service
+        - name: Core HR-enheter i Common Data Service
           href: CoreHREntities.md
         - name: Få support för Talent
           href: talent-support.md
     - name: Bemanna organisationen med Attract
       items:
-        - name: Vilken version av Attract?
+        - name: Välja en version av Attract
           href: attract-comprehensive-hiring.md
         - name: Funktioner och möjligheter i Attract
           href: attract-overview.md
-        - name: Vanliga frågor
-          items:
-            - name: Vanliga frågor om LinkedIn-integration
-              href: attract-linkedin-faq.md
         - name: Konfigurera systeminställningar
           items:
             - name: Konfigurera företagsinformation
               href: admin-settings-attract.md
             - name: Ställ in användarbehörigheter
               href: security-attract.md
-            - name: Hantera funktioner
-              href: access-preview-feature.md
             - name: Ställ in din karriärwebbplats
               href: career-site.md
             - name: Aktivera Broadbean-integration
@@ -168,15 +170,17 @@
               href: attract-configure-email-settings.md
             - name: Ställ in LinkedIn-integration
               href: attract-admin-linkedin.md
+            - name: Vanliga frågor om LinkedIn-integration
+              href: attract-linkedin-faq.md
         - name: Skapa en anställningsprocess
           items:
-            - name: Skapa en processmall
+            - name: Skapa en mall för anställningsprocess
               href: process-templates-attract.md
-            - name: Aktiviteter i anställningsprocesser
+            - name: Lägga till aktiviteter till en anställningsprocess
               href: activities-attract.md
-            - name: E-postmallar
+            - name: Skapa e-postmallar
               href: email-templates.md
-            - name: Använd analysrapporter
+            - name: Använda analysrapporter
               href: analytic-reports.md
         - name: Skapa och publicera jobb
           items:
@@ -197,14 +201,14 @@
             - name: Spåra kandidatkällor
               href: source-tracking.md
             - name: Intelligenta rekommendationer
-              href: Intelligent-Recommendations.md
-        - name: Ställ in intervjuer
+              href: intelligent-recommendations.md
+        - name: Ställa in intervjuer
           items:
-            - name: Tidsplanering av och feedback för intervjuer
+            - name: Schemalägga intervjuer
               href: interview-scheduling-feedback.md
         - name: Ge ett erbjudande
           items:
-            - name: Ställ in erbjudandehantering
+            - name: Ställa in erbjudandehantering
               href: offer-setup.md
             - name: 'Skapa, godkänna och signera erbjudanden'
               href: creating-offers.md
@@ -433,7 +437,7 @@
       items:
         - name: Inbäddad Power BI i arbetsytor
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Utöka Talent genom att använda PowerApps och Microsoft Flow - exempelscenarier
+        - name: Utöka Talent med Power Apps och Power Automate
           href: extensibility-examples.md
         - name: Mobilapp
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Mobil arbetsyta för mitt team
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Publicera mobila arbetsytor
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Spåra ändringar i rekryteringsdata
           href: process-auditing.md
         - name: Utbyggbarhet i Attract
