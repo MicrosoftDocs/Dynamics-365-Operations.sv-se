@@ -3,7 +3,7 @@ title: Rapportera som färdig till en ID-nummertyrd plats från jobbkortenheten
 description: I det här avsnittet beskrivs processen för att slutföra färdiga produkter i en tillverkningsorder till lagret när en registreringsskylt kontrollerar platsen.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2019-09-06
 ms.dyn365.ops.version: AX 10.0.6
-ms.openlocfilehash: cb809e596fd6bf3030bcee460838798435512b95
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 63073035941cd2ef343c65364536fe76a9b71430
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572139"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935132"
 ---
 [!include [banner](../includes/banner.md)]
 
@@ -32,4 +32,10 @@ ms.locfileid: "2572139"
 
 Processen som kallas rapportera som färdig slutför färdiga produkter i en tillverkningsorder till lagret. Om den färdiga produkten är aktiverad för de avancerade lagerprocesserna rapporteras produkten som färdig till en plats som kallas för produktionsutleveransplats. Information om hur du ställer in produktionsutleveransplats finns i [Plats för produktionsutleverans](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/production-output-location)plats för produktions utmatning.
 
-Du måste välja ett befintligt ID-nummer för att slutföra uppgiften. Om produktionsutleveransplatsen har ställts in för spårning via registreringskylten måste ett ID-nummer inkluderas vid rapportering av produktionsutleveransplatsen när den är färdig. Fältet **Registreringsskylt** visas i **Rapportera förlopp** på sidan **Jobbkortenhet**. Fältet visas bara i meddelandet **rapportförlopp** när du rapporterar om den senaste operationen för tillverkningsordern. Fältet visas endast om artikeln för tillverkningsordern är aktiverad för lagerstyrningsprocesserna. 
+Om produktionens utgångsplats styrs av registreringsskylt, måste en registreringsskylt tillhandahållas vid rapportering som färdigt. Fältet **Registreringsskylt** visas i **Rapportera förlopp** på sidan **Jobbkortenhet**. Fältet visas bara på frågan **rapportstatus** när du rapporterar om den senaste operationen i produktionsordern och artikeln för tillverkningsordern är aktiverad för lagerstyrningsprocesserna. 
+
+Det finns två alternativ för att tillhandahålla registreringsskylten
+- Användaren väljer en befintlig registreringsskylt i fältet registreringsskylt.
+- Registreringsskylten genereras automatiskt från en nummerserie och fallerar till fältet registreringsskylt.
+
+Alternativet att låta registreringsskylten genereras automatiskt konfigureras genom att välja alternativet **Generera registreringsskylt** på sidan **konfigurera jobbkort för enheter**.

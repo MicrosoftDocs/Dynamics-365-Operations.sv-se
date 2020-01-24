@@ -3,7 +3,7 @@ title: Produktens livscykeltillstånd – översikt
 description: Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813556"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934850"
 ---
 # <a name="product-lifecycle-state-overview"></a>Produktens livscykeltillstånd – översikt
 
@@ -74,11 +74,7 @@ Detaljerad information om hur du använder produktlivscykeltillstånd för att u
 
 ## <a name="default-migration-import-and-export"></a>Standardmigrering, import och export 
 
-Produktlivscykeltillstånd stöds inte av datatabeller och livscykeltillståndet kan inte anges till ett variabelläge via de frisläppta produktdatatabellerna.
-
--  Vid migration från tidigare frisläppningar är livscykeltillståndet för alla produkter och produktvarianter tomt.  
--  När du importerar frisläppta produkter via en datatabell, används standard livscykeltillståndet när de skapas.  
--  När du importerar frisläppta produktvarianter via en datatabell, importeras livscykeltillstånd för den frisläppta produktmallen.   
+Produktlivscykeltillstånd stöds av datatabeller och livscykeltillståndet kan anges till ett variabelläge via antingen de frisläppta produktdataentiteten eller de frisläppta variantdataentiteten.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Söka efter föråldrade produkter och produktvarianter 
 

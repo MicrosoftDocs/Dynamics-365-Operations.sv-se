@@ -3,7 +3,7 @@ title: Förbättra huvudplaneringens prestanda
 description: I det här avsnittet beskrivs olika alternativ som kan hjälpa dig att förbättra prestandan vid huvudplanering och felsökning av problem.
 author: t-benebo
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: f0d075bbcc8a6671054f227a13c75ca7fb1e954f
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 7e8c1d7ee51eb6e335554a01fd050bd80f2a070d
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1631553"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915234"
 ---
 # <a name="improve-master-planning-performance"></a>Förbättra huvudplaneringens prestanda
 
@@ -35,18 +35,18 @@ I det här avsnittet beskrivs olika alternativ som kan hjälpa dig att förbätt
 
 Det här avsnittet är avsett för systemadministratörer eller IT-användare som har möjlighet att felsöka. Den är också avsedd för produktion eller leveransplanering, eftersom den innehåller information om parametrar som hör till affärsplaneringskrav. 
 
-## <a name="parameters-that-are-related-to-master-planning-performance"></a>Parametrar som är relaterade till huvudplaneringsresultat
+## <a name="parameters-related-to-master-planning-performance"></a>Parametrar som är relaterade till huvudplaneringsresultat
 
 Olika parametrar påverkar huvudplaneringens körtid och bör beaktas.
 
 ### <a name="number-of-threads"></a>Antal trådar
 
-Parametern **antal trådar** gör att du kan justera huvudplaneringsprocessen så att den fungerar bättre på den specifika datauppsättningen. Det anger det totala antalet trådar som ska användas för att köra huvudplaneringen. Den orsakar parallellisering av huvudplaneringskörningen och den här parallelliseringen hjälper till att minska körtiden. 
+Parametern **antal trådar** gör att du kan justera huvudplaneringsprocessen så att den fungerar bättre på den specifika datauppsättningen. Denna parameter anger det totala antalet trådar som ska användas för att köra huvudplaneringen. Den orsakar parallellisering av huvudplaneringskörningen som hjälper till att minska körtiden. 
 
 Du kan ställa in parametern **antal trådar** i dialogrutan **huvudplaneringskörning**. Öppna den här dialogrutan genom att gå **Huvudplanering \> Huvudplanering \> Kör \> Huvudplanering**, eller välj **Kör** i arbetsytan **Huvudplanering**. Om du vill fastställa det bästa värdet för den här parametern måste du förlita dig på en försöks- och misstagsprocess. Du kan dock använda följande formler för att beräkna ett startvärde:
 
-- **Om din bransch är tillverkning:** antal trådar = antal planerade order ÷ 1 000
-- **Annars:** antal trådar = antal artiklar ÷ 1 000
+- **Om din bransch är tillverkning:** (antal trådar) = (antal planerade order ÷ 1 000)
+- **Annars:** (antal trådar) = (antal artiklar ÷ 1 000)
 
 Antalet stödprocesser som används under huvudplaneringen måste vara mindre än eller lika med det maximala antalet trådar som tillåts på batchservern. Om antalet stödprocesser överstiger antalet trådar på batchservern, fungerar inte de extra trådarna som de ska.
 
@@ -59,7 +59,7 @@ Genom att ändra inställningen **antalet uppgifter i aktivitetsbunt** (dvs. bun
 
 Du kan ange parametern **antalet uppgifter i aktivitetsbunt** i avsnittet **prestanda** på fliken **allmänt** på sidan **huvudplaneringsparametrar** (**huvudplanering \> inställning \> huvudplaneringsparametrar**). Det bästa värdet för den här parametern beror på dina data. Därför rekommenderar vi att du börjar med värdet **1** och använder en försöks- och misstagsprocess för att avgöra vilket värde som är bäst för din inställning.
 
-I allmänhet rekommenderar vi att du ökar antalet uppgifter när antalet artiklar är mycket stort (i hundratusental). Annars bör du minska antalet uppgifter. För följande specifika branscher bör följande punkter beaktas:
+I allmänhet rekommenderar vi att du ökar antalet uppgifter när antalet artiklar är mycket stort (i hundratusental). Annars bör du minska antalet uppgifter. För följande specifika branscher bör följande rekommendationer beaktas:
 
 - I detaljhandels- och distributionsbranschen, där det finns många oberoende artiklar, använder du många hjälpprogram, eftersom det inte finns något samband mellan artiklarna. 
 - I tillverkningsindustrin, där det finns många strukturlistor och delade del komponenter, använder du färre stödprocesser, eftersom beroenden mellan artiklar kan orsaka väntetider.
@@ -87,7 +87,7 @@ Parametern **antal eller order i bekräftelsebunt** anger det totala antalet ord
 
 Du kan ange parametern **antal eller order i bekräftelsebunt** i avsnittet **prestanda** på fliken **allmänt** på sidan **huvudplaneringsparametrar** (**huvudplanering \> inställning \> huvudplaneringsparametrar**). Parallellisering för autobekräftelseprocessen baseras på de order som måste behandlas tillsammans. Om denna parameter är inställd på **50**, till exempel, hämtar varje tråd eller batchuppgiften 50 order åt gången och bearbetar dem tillsammans. Vi rekommenderar att du använder en försöks- och misstagsprocessen för att hitta det bästa värdet. Du kan dock använda följande formler för att beräkna ett startvärde:
 
-Antal order per bunt = antal efter efterfrågeobjekt ÷ antalet trådar
+(Antal order per bunt) = (antal efter efterfrågeobjekt ÷ antalet trådar)
 
 > [!NOTE]
 > Om du anger parametern **Antal order i bekräftelsebunten** till **0** (noll), görs ingen parallellisering av autobekräftelsen. Hela processen körs på en enskild batchuppgift och har en kumulativ körtid. Därför kommer körningstiden för huvudplaneringen att öka. Därför rekommenderar vi att du ställer in den här parametern på ett värde som är större än **0** (noll).
@@ -98,7 +98,7 @@ Tidsgränser anger hur långt beräkningen och andra krav måste beräknas i huv
 
 ### <a name="actions"></a>Åtgärder
 
-I tidsgränsen kan du även hitta parametern för **åtgärdsmeddelande**. Beräkningen av åtgärdsmeddelanden gör att en tid körs längre för huvudplaneringen. Om åtgärdsmeddelanden inte analyseras och tillämpas regelbundet (varje dag, vecka o.s.v.) bör du överväga att inaktivera beräkningen under huvudplaneringskörningen. Du inaktiverar beräkningen på sidan **huvudplaner** (**huvudplanering \> inställningar \> planer \> huvudplaner**), ställ in tidsgränsen **åtgärdsmeddelanden** till **0** (noll) för huvudplanen som du kör. Kontrollera också att inställningen **åtgärdsmeddelande** är inaktiverad för alla disponeringsgrupper.
+I tidsgränsen kan du även hitta parametern för **åtgärdsmeddelande**. Beräkningen av åtgärdsmeddelanden gör att en tid körs längre för huvudplaneringen. Om åtgärdsmeddelanden inte analyseras och tillämpas regelbundet (varje dag, vecka o.s.v.) bör du överväga att inaktivera beräkningen under huvudplaneringskörningen. Du inaktiverar beräkningen på sidan **Huvudplaner** ange (**Huvudplanering \> Inställningar \> Planer \> Huvudplaner**), ange tidsgräns för **Åtgärdsmeddelanden** till **0** (noll). Kontrollera också att inställningen **åtgärdsmeddelande** är inaktiverad för alla disponeringsgrupper.
 
 ### <a name="futures"></a>Leveransplaner
 
@@ -119,7 +119,7 @@ Om du vill granska huvudplaneringskörningarna i systemet följer du ett av dess
 
 När du granskar sessionskatalogen bör du tänka på följande:
 
-- **Uppdateringen** bör inte ta lång tid (i allmänhet bör den ta upp till 30 minuter). Det är dock en enkel tråd.
+- **Uppdateringen** bör inte ta lång tid (i allmänhet bör den ta upp till 30 minuter), det är dock en enkel tråd.
 - **Kopieringsplanen** ska inte ta lång tid (det bör dröja ungefär en minut).
 - **Automatisk bekräftelse** tar vanligtvis cirka 30 minuter. Det kan dock ta upp till flera timmar, beroende på antalet order och artiklarnas komplexitet.
 - **Automatisk bekräftelse** ska ta kortare tid än **täckningen**.
@@ -129,6 +129,28 @@ När du granskar sessionskatalogen bör du tänka på följande:
 ## <a name="filtering-of-items"></a>Filtrering av artiklar
 
 Filter som används i dialogrutan **huvudplaneringskörning** påverkar tidslängden på huvudplaneringskörningen. Gå till **Huvudplanering \> Huvudplanering \> Kör \> Huvudplanering**, eller välj **Kör** i arbetsytan **Huvudplanering**. Om du vill undanta objekt från körningen rekommenderar vi att du filtrerar fram artikelns livscykeltillstånd (inte med hjälp av artikelnummer). När du filtrerar efter livscykel steg tar uppdaterings processen kortare tid än när du filtrerar efter artikelnummer.
+
+## <a name="automatically-filter-by-items-with-direct-demand"></a>Filtrera automatiskt efter artiklar med direkt efterfrågan
+
+Om du vill förbättra körningstiden för huvudplaneringen kan du välja att bara inkludera artiklar med direkt efterfrågan. Det här filtret kan bara användas för en fullständig huvudplaneringskörning utan att några andra filter används i fältet **poster som ska inkluderas**. En huvudplaneringskörning med filter ignorerar inställningen filtrera **automatiskt efter objekt med direkt efterfrågan**.
+
+Fältet **filtrera automatiskt efter artiklar med direkt efterfrågan** finns på sidan **Huvudplaneringsparametrar** och kan användas med inställningar för både för förbearbetning och efterbearbetning.
+
+### <a name="pre-processing"></a>Förbearbetning
+Parametern **Förbearbetning: filtrera automatiskt efter objekt med direkta behov** säkerställer att förbearbetningsfasen i huvudplaneringen endast innehåller artiklar som uppfyller minst ett av följande villkor:
+  - Artikeln har en förväntad inleverans eller utleverans, till exempel en inköpsorder, försäljningsorder, offert, överföringsorder eller produktionsorder. 
+  - Artikeln har artikeldisponering med säkerhetslager (minsta lagerbehållning).
+  - Prognosticerad efterfrågan efter idag finns för artikeln.
+  - Prognosticerad leverans efter idag finns för artikeln.
+  - Artikeln innehåller alla kontinuitetsrader från callcentermodulen som ännu inte har skapats.
+
+> [!NOTE]
+> En artikel som har fysiskt tillgänglig lagerbehållning kommer inte att visa en behovstransaktion eftersom det inte finns någon efterfrågan på artikeln.
+
+### <a name="post-processing"></a>Efterbearbetar
+Alternativet **Efterbearbetning: filtrera automatiskt efter objekt med direkt efterfrågan** är endast relevant om du anger **Strukturlisteversionskrav** i dina disponeringsgrupper. Annars behöver du inte aktivera parametern. 
+
+Innan disponeringssteget börjar, finns det ett steg före täckning under vilka artiklar med disponeringsinställningen **Strukturlisteversionskrav** aktiverad kommer att bearbetas om. Detta görs för att säkerställa att artiklar från den begärda strukturlisteversionen planeras. Artiklar som anses ha efterfrågan under förbehandlingen har inte längre någon efterfrågan och bör därför uteslutas från planeringskörningen.
 
 ## <a name="performance-checklist-summary"></a>Sammanfattning av prestandachecklista
 

@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: caa449feba22c5804799b5317a8e29c139cc440e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179925"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915187"
 ---
 # <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering och hur du använder finansiella rapporteringsfunktioner. Den innehåller även en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 
@@ -79,6 +81,18 @@ Funktionerna för ekonomisk rapportering är tillgängliga för användare som h
 | Visa ekonomiska rapporter                | Granska finansiellt resultat          | Ingen tilldelad                                                                   |
 
 När en användare har lagts till eller om en roll ändras får användaren åtkomst till ekonomisk rapportering inom några minuter. **Obs!** Rollen sysadmin läggs till i alla roller inom ekonomisk rapportering.
+
+## <a name="report-deletions-and-expirations"></a>Rapportborttagningar och förfallodatum
+Användare som skapar en rapport kan ta bort sina egna rapporter. Användare med programbehörigheten **Underhåll säkerhet för ekonomiska rapporter** kan ta bort andras rapporter. 
+
+Från och med 10.0.7 frisläppning har begreppet utgångsdatum införts. En ny obligatorisk funktion kommer att aktiveras i arbetsytan funktionshantering. Den här funktionen innehåller följande ändringar:
+* Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras
+* Alla befintliga rapporter från innan funktionen installerades kommer att ges en förfalloperiod på 90 dagar. Datumet kan visas som tomt under en kort tidsperiod tills den ekonomiska rapporteringstjänsten körs, en rapport genereras och tjänsten utför uppdateringen till befintliga rapporter med ett tomt förfallodatum. 
+* Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning - 
+  * Ett förfallodatum på 90 dagar
+  * Ett alternativ för att ange att rapporten aldrig ska upphöra att gälla
+
+När ett förfallodatum som 90 dagar väljs, beviljar det 90 dagar från idag, vilket är annorlunda än de 90 dagar från det ursprungliga genereringsdatumet som angetts under rapportgenerering. 
 
 ## <a name="default-reports"></a>Standardrapporter
 Ekonomisk rapportering innehåller 22 standardrapporter. Varje rapport använder standardkategorierna för huvudkonton. Du kan använda dessa rapporter som de är eller som utgångspunkt för din ekonomiska rapportering. Utöver de traditionella boksluten, som till exempel resultaträkning och balansräkning, inkluderar dessa standardrapporter rapporter som visar andra typer av ekonomiska rapporter som du kan skapa. 

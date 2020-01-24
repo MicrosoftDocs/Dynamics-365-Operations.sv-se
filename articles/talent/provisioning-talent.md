@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b705304788f47e4a5d2a9f1b2bf42a065428ea0f
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773067"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898143"
 ---
 # <a name="provision-talent"></a>Etablera Talent
-
-[!include [banner](includes/banner.md)]
 
 I det här avsnittet får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 Talent. Det här avsnittet förutsätter att du har köpt Talent via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). Om du har en befintlig Microsoft Dynamics 365-licens som redan innehåller tjänsteplanen for Talent och du inte kan utföra stegen i det här avsnittet, kontakta då supporten.
 

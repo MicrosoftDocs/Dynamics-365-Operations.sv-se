@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824530"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933918"
 ---
-# <a name="business-document-management-overview"></a>Hantering av affärsdokument – översikt
+# <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
-Affärsanvändare använder [Översikt över Elektronisk rapportering (ER)](general-electronic-reporting.md) för att konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Användare kan också definiera dataflödet för att ange vilka programdata som placeras i genererade dokument. I ER-ramverket genereras utgående dokument i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument) med hjälp av fördefinierade mallar. Mallarna fylls med data som krävs i enlighet med konfigurerat dataflöde när de dokument som krävs skapas. Varje konfigurerat format kan publiceras som en del av en ER-lösning för att generera specifika utgående dokument. Detta representeras av en ER-formatkonfiguration som kan innehålla mallar som du kan använda för att generera olika utgående dokument. Företagsanvändare kan använda det här ramverket för att hantera nödvändiga affärsdokument.
+Affärsanvändare använder ramverket [elektronisk rapportering (ER)](general-electronic-reporting.md) för att konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Användare kan också definiera dataflödet för att ange vilka programdata som placeras i genererade dokument. I ER-ramverket genereras utgående dokument i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument) med hjälp av fördefinierade mallar. Mallarna fylls med data som krävs i enlighet med konfigurerat dataflöde när de dokument som krävs skapas. Varje konfigurerat format kan publiceras som en del av en ER-lösning för att generera specifika utgående dokument. Detta representeras av en ER-formatkonfiguration som kan innehålla mallar som du kan använda för att generera olika utgående dokument. Företagsanvändare kan använda det här ramverket för att hantera nödvändiga affärsdokument.
 
 **Hanteringen av affärsdokument** bygger vidare på ER-ramverket och gör det möjligt för affärsanvändare att redigera affärsdokumentmallar genom att använda Microsoft Office 365-tjänst eller lämpligt Microsoft Office-skrivbordprogram. Ändringar i dokumenten kan inkludera ändring av affärsdokumentdesign och att lägga till platshållare för ytterligare data utan källkodsändringar och nya distributioner. Det krävs ingen kunskap om ER-ramverk för uppdatering av mallar för affärsdokument.
 
@@ -59,7 +59,7 @@ Följande rapporter, med Excel-baserade mallar, är tillgängliga i den allmänn
 
 Fler rapporter kommer att bli tillgängliga. Särskilda meddelanden om ytterligare rapporter kommer att skickas separat. 
 
-En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
+En fullständig lista över alla rapporter planerade för oktober 2019-utgåvan finns i [Konfigurerbar affärsdokumentrapportering i Word och Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Om du vill veta mer om den här funktionen fyller du i exemplet i det här avsnittet.
 
 ## <a name="configure-er-parameters"></a>Konfigurera ER-parametrar
 

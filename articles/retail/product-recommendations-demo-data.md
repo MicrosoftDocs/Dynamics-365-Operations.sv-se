@@ -3,7 +3,7 @@ title: Demodata för produktrekommendationer i flera kanaler
 description: Det här dokumentet syftar till att ge vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2226461"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872336"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Demodata för produktrekommendationer i flera kanaler
 
 Det här dokumentet syftar till att ge vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
 
-Produktrekommendationer i flera kanaler innehåller en uppsättning av redaktionellt granskade eller programmässigt genererade listor över produkter i en ordnad lista. Dessa listor kan användas i flera situationer, beroende på vad som behövs i verksamheten. Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt.](product-recommendaitons-overview.md)
+Produktrekommendationer i flera kanaler innehåller en uppsättning av redaktionellt granskade eller programmässigt genererade listor över produkter i en ordnad lista. Dessa listor kan användas i flera situationer, beroende på vad som behövs i verksamheten. Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt.](../commerce/product-recommendations.md)
 
 För att produktrekommendationer på nivåer 2 och högre beräknas Dynamics-miljöer automatiskt baserat på kunddata.
 Att använda demodata för produktrekommendationer inaktiverar inte någon produktrekommendationslösning som redan har etablerats i miljön och kostnader som är förknippade med användningen.
@@ -68,6 +68,6 @@ Tillägget innehåller en datafil som heter RecoMockDataset.csv, vilket gör att
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över produktrekommendationer](product-recommendations-overview.md)
+[Översikt över produktrekommendationer](../commerce/product-recommendations.md)
 
-[Miljöplanering](environment-planning.md)
+[Miljöplanering](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

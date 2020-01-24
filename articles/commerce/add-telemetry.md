@@ -3,7 +3,7 @@ title: Lägga till skriptkod på webbsidor för att stödja telemetri
 description: I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a5f82426d87cd2e0faa0195a841899bb03f9df08
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 79d0e11946f3c6f4704d3a726d33de0378eb53bd
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697346"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914549"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
 
@@ -64,7 +64,9 @@ När du har skapat ett fragment för skriptkoden kan det återanvändas på alla
 
 [Välj ett tema för webbplatsen](select-site-theme.md)
 
-[Lägg till en favicon](add-favicon.md)
+[Arbeta med CSS åsidosättningsfiler](css-override-files.md)
+
+[Lägg till en favoritikon](add-favicon.md)
 
 [Lägg till ett välkomstmeddelande](add-welcome-message.md)
 

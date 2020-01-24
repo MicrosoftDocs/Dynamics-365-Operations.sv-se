@@ -3,7 +3,7 @@ title: Enhetlig produktupplevelse
 description: I det här avsnittet beskrivs integreringen av produktinformation mellan Finance and Operations-appar och Common Data Service.
 author: t-benebo
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7df9097feeb9566705f50f8a62809aa79dc10cd7
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769739"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914781"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
@@ -52,7 +52,7 @@ Produktinformationen innehåller all information som är relaterad till produkte
 
 Finance and Operations | Andra Dynamics 365-appar | Beskrivning
 -----------------------|--------------------------------|---
-Frisläppta produkter V2 | msdyn\_sharedproductdetails | Entiteten **msdyn\_sharedproductdetails** innehåller fälten från Finance and Operations-appar som definierar produkten och som innehåller produktens ekonomi- och hanteringsinformation. Tabellen nedan visar mappningarna.
+Frisläppta produkter V2 | msdyn\_sharedproductdetails | Entiteten **msdyn\_sharedproductdetails** innehåller fälten från Finance and Operations-appar som definierar produkten och som innehåller produktens ekonomi- och hanteringsinformation. 
 Common Data Service frisläppta specifika produkter | Produkt | Entiteten **Produkt** innehåller de fält som definierar produkten. Den omfattar enskilda produkter (produkter med undertypprodukt) och produktvarianter. Tabellen nedan visar mappningarna.
 Produktnummer med identifierad streckkod | msdyn\_productbarcodes | Produktstreckkoder används för att identifiera produkter på ett unikt vis.
 Standardorderinställningar | msdyn\_productdefaultordersettings
@@ -74,7 +74,7 @@ Enhetskonverteringar | msdyn_ unitofmeasureconversions
 Produktspecifik måttenhetskonvertering | msdyn_productspecificunitofmeasureconversion
 Produktkategorier | msdyn_productcategories | Var och en av produktkategorierna och informationen om dess struktur och egenskaper finns i entiteten produktkategori. 
 Produktkategorihierarkier | msdyn_productcategoryhierarhies | Du använder produktvarianter när du kategoriserar eller grupperar produkter. Hierarkierna för kategorier är tillgängliga i Common Data Service genom att använda entiteten produktkategorihierarki. 
-Produktkategorihierarkiroller | msdyn_productcategoryhierarchies | Produkthierarkier kan användas för olika roller i D365 Finance and Operations. De specificerar vilken kategori som används i varje roll som entiteten produktkategori används med följande mappningar. 
+Produktkategorihierarkiroller | msdyn_productcategoryhierarchies | Produkthierarkier kan användas för olika roller i D365 Finance and Operations. De specificerar vilken kategori som används i varje roll som entiteten produktkategori används. 
 Produktkategoritilldelningar | msdyn_productcategoryassignments | Så här tilldelar du en produkt till en kategori där entiteten produktkategoritilldelningar kan användas.
 
 ## <a name="integration-of-products"></a>Integrering av produkter

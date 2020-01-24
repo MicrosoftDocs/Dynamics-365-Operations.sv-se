@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7a988f533757cc3f8555fcf4fb724a22a5b014f8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 8f73c034563fb1cc6b05091b4c47e2a788d1a8b6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770468"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945546"
 ---
 # <a name="configure-your-domain-name"></a>Konfigurera ditt domännamn
 
@@ -43,16 +43,16 @@ Om du vill koppla nya domäner till din e-handelsmiljö efter initieringen av e-
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över onlinebutik](online-store-overview.md)
-
-[Skapa en näthandelsplats](create-ecommerce-site.md)
-
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
 
+[Skapa en e-handelsplats](create-ecommerce-site.md)
+
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
+
+[Hantera robots.txt-filer](manage-robots-txt-files.md)
+
+[Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
 
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
-
-[Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)

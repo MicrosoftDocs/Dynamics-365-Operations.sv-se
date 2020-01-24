@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812889"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897132"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Redigera integrationsguider och mallar i Dynamics 365 Talent - Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Redigera integrationsguider och mallar
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Så här flyttar du dina ändringar:
 1. På fliken **aktiviteter** drar du objekt från höger till redigeringsområdet.
 2. Om du vill organisera guiden i avsnitt drar du objektet **Nya avsnitt** till redigeringsområdet och anger ett namn och en valfri beskrivning av avsnittet.
 
-    ![[Lägga till ett nytt avsnitt i en integrationsguide eller mall](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Lägga till ett nytt avsnitt i en introduktionsguide eller mall](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Om du vill lägga till aktiviteter för den nya anställningen drar du objektet **Ny aktivitet** till redigeringsområdet och anger ett namn och en beskrivning för aktiviteten.
 
-    ![[Lägga till en ny aktivitet i en integrationsguide eller mall](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Lägga till ett nytt aktivitet i en introduktionsguide eller mall](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Lägga till omfattande innehåll i din integrationsguide:
 
@@ -129,7 +129,7 @@ Så här flyttar du dina ändringar:
     - Om du vill lägga till ett Microsoft Forms-formulär, dra **Microsoft Forms**-objektet till redigeringsområdet, ange ett namn och beskrivning för aktiviteten, ange URL-adressen för Microsoft Forms-formuläret och ange storleken på skärmområdet.
     - Om du vill lägga till en iframe som innehåller webbinnehåll, dra **Webbinnehåll (iframe)**-objektet till redigeringsområdet, ange ett namn och beskrivning för aktiviteten, ange URL-adressen för webbinnehållet och ange storleken på skärmområdet.
 
-    ![[Lägga till omfattande innehåll i en integrationsguide eller mall](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Lägga till omfattande innehåll till en introduktionsguide eller mall](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Valfritt: tilldela aktiviteten till en specifik person eller roll i området till höger om varje aktivitet, Lägg till ett förfallodatum och en kontaktperson och tilldela en kategorifärg. När du tilldelar en aktivitet till en person eller roll skapas en uppgift för varje enskild person. Den här uppgiften visas på menyn **aktiviteter** i Onboard.
 
@@ -148,7 +148,7 @@ Du kan lägga till kontaktpersoner som kan hjälpa din nya anställning att lyck
 1. På fliken **Kontakter**, välj **Ny kontakt**.
 2. I dialogrutan **Lägg till teammedlemmar**, ange kontaktpersonens namn eller e-postadress, ange en kort beskrivning som förklarar hur kontaktpersonen kan hjälpa den nya anställningen och välj sedan **Lägg till**. 
 
-    ![[Lägga till kontakter i en integrationsguide eller mall](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Lägga till kontakter till en introduktionsguide eller mall](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Du kan också välja en eller flera kontakter under **förslag**.
 
@@ -169,7 +169,7 @@ Du kan lägga till användbara filer, kartor och länkar till avsnittet **resurs
     - Om du vill lägga till en länk väljer väljer du fliken**Länk** och anger ett namn och en adress för länken och väljer sedan **Lägg till**.
     - Om du vill lägga till en karta väljer väljer du fliken **karta** och anger ett namn och en adress för kartan och väljer sedan **Lägg till**. Onboard kommer att innehålla en karta över den adress som du anger.
 
-    ![[Lägga till en resurs i en integrationsguide eller mall](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Lägga till en resurs i en introduktionsguide eller mall](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Spara arbetet genom att klicka på **Spara**.
 

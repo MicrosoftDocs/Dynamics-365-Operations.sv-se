@@ -3,7 +3,7 @@ title: Ställ in erbjudandehantering i Attract
 description: I det här avsnittet beskrivs hur du ställer in erbjudanden i Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832732"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890565"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Ställ in erbjudandehantering i Attract
 
@@ -45,9 +45,11 @@ Erbjudandedata utgör den minsta enheten inne i erbjudandepaketmallen. Ett typis
 
     >[!NOTE]
     > På sidan **erbjudandedata** finns avsnitten **kandidatdetaljer** och **jobbdetaljer**. Attract ger några platshållare för erbjudandedata från början.
-    
+    > 
     > Det finns avsnitt på sidan för att ordna olika platshållare för erbjudandedata i logiska grupper. Dessa avsnitt kan hjälpa dig med underhåll av erbjudandedata och ifyllning av data under processen för skapande av erbjudandet.
-
+    > 
+    > Om du vill skapa en lista över värden för en platshållare överför du ett Excel-kalkylblad som har en kolumn med platshållaren som kolumnrubrik och listan över alternativ i raderna under. Om samma platshållare refereras i en annan dataregeluppsättning, se till att de har en gemensam uppsättning värden.
+    
 1.  För att skapa ett nytt erbjudandedataavsnitt, klicka på **Lägg till ett avsnitt** och ange ett unikt namn för avsnittet.
 
 1.  Lägg till platshållare för erbjudandedata till ett visst avsnitt genom att klicka på **Lägg till erbjudandedata** och ange ett unikt namn för platshållaren.

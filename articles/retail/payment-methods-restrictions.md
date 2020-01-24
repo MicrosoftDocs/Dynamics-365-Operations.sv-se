@@ -3,7 +3,7 @@ title: Begränsa betalningsmetoder för returer utan kvitto
 description: Det här avsnittet beskriver hur vissa betalningstyper kan begränsas för återbetalning om returer görs utan ett kvitto.
 author: rapraj
 manager: AnnBe
-ms.date: 013/05/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: 6e2c32aae06ce7bbdde30809d7a197f43b856af1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 22e675fd9b7ee33c89f52ac4c8c15807580b86a7
+ms.sourcegitcommit: b806f0c94d703bec39680fead827733361d47045
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564365"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935862"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begränsa betalningsmetoder för returer utan kvitto
 
@@ -41,7 +41,7 @@ Om du vill ställa in betalsätten måste du göra följande.
 3. Ställ in betalningsmetoder för butiken. Associera betalningsmetoderna med varje butiker och ange sedan de butiksspecifika inställningarna för varje betalningsmetod.
 4. Ställ in kortbetalningsmetoder för butiker. Slutför kortinställningarna för alla kortbetalningsmetoder som butiken godtar.
 
-![Butiksinställningar](media/NoReceiptReturns1.png "Butiksinställningar") 
+![Inställning av butik](media/NoReceiptReturns1.png "Inställning av butik") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begränsa betalningsmetoder för returer utan kvitto
@@ -57,7 +57,7 @@ När **Begränsa betalningsmetoder för returer** anges till **Ja**, tillåter i
 > [!NOTE]
 > När kassören väljer en betalningsmetod som är begränsad till bidrag utan ett kvitto, visas ett meddelande för att kontrollera godtagbara betalningsmetoder.
 
-![Godtagbara betalningsmetoder](media/NoReceiptReturns4.png "Godtagbara betalningsmetoder") 
+![Godkända betalningsmetoder](media/NoReceiptReturns4.png "Godkända betalningsmetoder") 
 
 Om en transaktion har en retur med kvitto och en retur utan kvitto, upprätthålls begränsningsvillkoren inte eftersom transaktionen kommer att returnera arbetsflödet med ett kvitto. 
 

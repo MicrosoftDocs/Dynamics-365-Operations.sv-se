@@ -3,7 +3,7 @@ title: Ställa in anpassade sidor för användarinloggningar
 description: I det här avsnittet beskrivs hur du skapar anpassade sidor i Microsoft Dynamics 365 Commerce som hanterar anpassade inloggningsuppgifter för användare av Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer).
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697576"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945569"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Ställa in anpassade sidor för användarinloggningar
 
@@ -136,11 +136,11 @@ För att uppdatera policyn "Registrera och logga in" med anpassad sidinformation
 1. I policyn **Registrera och logga in** som du konfigurerade tidigare, i navigeringsfönstret, välj **Sidlayouter**.
 1. Välj layouten **Enhetlig sida för registrera och logga in**.
 1. Ställ in alternativet **Använd anpassat sidinnehåll** till **ja**.
-1. I fältet **Anpassad sid-URI** ange fullständig inloggnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange till exempel **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. I fältet **Anpassad sid-URI** ange fullständig inloggnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange exempelvis ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. I fältet **Version av sidlayout (förhandsgranskning)**, välj **1.2.0**.
 1. Välj layouten **sida för registrering av lokalt konto**.
 1. Ställ in alternativet **Använd anpassat sidinnehåll** till **ja**.
-1. I fältet **Anpassad sid-URI** ange fullständig inloggnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange till exempel **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. I fältet **Anpassad sid-URI** ange fullständig inloggnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange exempelvis ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. I fältet **Version av sidlayout (förhandsgranskning)**, välj **1.2.0**.
 1. I avsnittet **Användarattribut** följ dessa steg:
 
@@ -156,7 +156,7 @@ För att uppdatera policyn "Profilredigering" med anpassad sidinformation, följ
 1. I policyn **Profilredigering** som du konfigurerade tidigare, i navigeringsfönstret, välj **Sidlayouter**.
 1. Välj layouten **Profilredigeringssida**.
 1. Ställ in alternativet **Använd anpassat sidinnehåll** till **ja**.
-1. I fältet **Anpassad sid-URI** ange fullständig inloggnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange till exempel **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. I fältet **Anpassad sid-URI** ange fullständig profil redigerings-URL. Inkludera suffixet **?preloadscripts=true**. Ange exempelvis ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. I fältet **Version av sidlayout (förhandsgranskning)**, välj **1.2.0**.
 1. I avsnittet **Användarattribut** följ dessa steg:
 
@@ -170,12 +170,14 @@ För att uppdatera policyn "Lösenordsåterställning" med anpassad sidinformati
 1. I policyn **Lösenordsåterställning** som du konfigurerade tidigare, i navigeringsfönstret, välj **Sidlayouter**.
 1. Välj layouten **Ny lösenordssida**.
 1. Ställ in alternativet **Använd anpassat sidinnehåll** till **ja**.
-1. I fältet **Anpassad sid-URI** ange fullständig inloggnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange till exempel **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. I fältet **Anpassad sid-URI** ange fullständig lösenordsåterställnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange exempelvis ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. I fältet **Version av sidlayout (förhandsgranskning)**, välj **1.2.0**.
 1. Välj layouten **sida för kontoverifiering**.
 1. Ställ in alternativet **Använd anpassat sidinnehåll** till **ja**.
-1. I fältet **Anpassad sid-URI** ange fullständig inloggnings-URL. Inkludera suffixet **?preloadscripts=true**. Ange till exempel **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. I fältet **Anpassad sid-URI** ange fullständig lösenordsåterställning verifierings-URL. Inkludera suffixet **?preloadscripts=true**. Ange exempelvis ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. I fältet **Version av sidlayout (förhandsgranskning)**, välj **1.2.0**.
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Anpassa standardtextsträngar för etiketter och beskrivningar
 
@@ -193,15 +195,15 @@ När du har uppdaterat global.json-filen och publicerat ändringarna, visas den 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över onlinebutik](online-store-overview.md)
-
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Konfigurera ditt domännamn](configure-your-domain-name.md)
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
 
+[Skapa en e-handelsplats](create-ecommerce-site.md)
+
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
 
-[Konfigurera ditt domännamn](configure-your-domain-name.md)
+[Hantera robots.txt-filer](manage-robots-txt-files.md)
 
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 

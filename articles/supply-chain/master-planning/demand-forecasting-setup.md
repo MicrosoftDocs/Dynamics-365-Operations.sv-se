@@ -3,7 +3,7 @@ title: Behovsprognoser inställning
 description: Detta avsnitt beskriver de uppgifter som du måste utföra för att förbereda behovsprognoser.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813809"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935501"
 ---
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
@@ -63,7 +63,7 @@ Du kan när som helst lägga prognosen dimensioner till listan av dimensioner so
 
 Inte alla objekt beter sig på samma sätt från en behovsprognoser perspektiv. Liknande poster kan grupperas i en fördelningsnyckel och parametrar såsom transaktionstyper och prognosmetod inställningar kan anges per post fördelningsnyckel. Klicka på **alternativet fördelningsnycklar** i den vänstra rutan i **behovsprognoser parametrar sidan**. 
 
-Supply Chain Management använder en webbtjänst för maskininlärning för att generera prognosen. För att ansluta till tjänsten måste du tillhandahålla följande information när du loggar in på Microsoft Azure Machine Learning Studio:
+Supply Chain Management använder en webbtjänst för maskininlärning för att generera prognosen. För att ansluta till tjänsten måste du tillhandahålla följande information när du loggar in på Microsoft Azure Machine Learning Studio (klassisk):
 
 -   Web Service API (application programming interface)
 -   Webbtjänstens slutpunktsadress
@@ -71,7 +71,7 @@ Supply Chain Management använder en webbtjänst för maskininlärning för att 
 -   Azure Storage kontonyckel
 
 > [!NOTE]
-> Azure-lagringskontonamn och nyckeln behövs bara om du använder ett anpassat lagringskonto. Om du använder den lokala versionen måste du ha ett anpassat lagringskonto på Azure, detta så att maskininlärningstjänsten kan få åtkomst till historiska data. 
+> Azure-lagringskontonamn och nyckeln behövs bara om du använder ett anpassat lagringskonto. Om du använder den lokala versionen måste du ha ett anpassat lagringskonto på Azure, detta så att maskininlärning kan få åtkomst till historiska data. 
 
 För att skapa efterfrågeförutsägelser kan du använda din egen service genom att använda Machine Learning Studio eller Supply Chain Management behovsprognoser för efterfrågeprognoser. Instruktioner för att implementera experiment för efterfrågeprognosticering som en webbtjänst finns i Supply Chain Management. På **behovsprognosparametrar** sidan, klicka på **Azure Machine Learning** fliken.
 

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: a9a26450be97f655df8bc5983e4718341d40a2d6
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 49901445f39a2e1c9541e5482d1b4c96550003a6
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009910"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898606"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definiera och hantera ett förmånsprogram
-
-[!include [banner](includes/banner.md)]
 
 Personal innehåller en uppsättning av verktyg som kan användas för att ställa in och underhålla förmåner, avdrag och arbetares kompensationsplaner som en organisation ger eller bearbetar för dess arbetare. Denna artikel innehåller information om hur du ställer in och hanterar förmåner.
 

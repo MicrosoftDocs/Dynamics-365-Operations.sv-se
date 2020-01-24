@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814638"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898258"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Skapa och skicka en integrationsguide genom att använda Dynamics 365 Talent - Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Skapa och skicka en integrationsguide.
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ När du har skapat en integrationsguiden kan du skicka den till en ny anställni
 
 5. I fönstret **Skapa en guide** under **Vem introducerar du** anger du den nyanställdas namn eller e-postadressen. Om den nyanställda inte finns i systemet ännu väljer du **Lägg till nu** och anger medarbetarens information.
 
-    ![[Ange information för integrationsguiden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Ange information för introduktionsguiden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. Under **När börjar de** väljer du ett startdatum.
 7. Om integrationsguiden ska skickas automatiskt till den nyanställa på ett visst datum, se till att alternativet **Schemalägg ett automatiskt utskicksdatum** är aktiverat och välj sedan automatiskt utskicksdatum. Om du vill skicka guiden omedelbart stänger du av alternativet **Schemalägg ett automatiskt utskicksdatum**.
@@ -92,7 +92,7 @@ Du behöver inte alltid skapa en guide från en mall. Om du vill kan du skapa en
 1. På den vänstra menyn väljer du **guider** och klickar sedan på knappen **Lägg till** (plus tecknet \[**+**\]).
 2. I fönstret **Skapa en guide** under **Vem introducerar du** anger du den nyanställdas namn eller e-postadressen. Om den nyanställda inte finns i systemet ännu väljer du **Lägg till nu** och anger medarbetarens information.
 
-    ![[Ange information för integrationsguiden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Ange information för introduktionsguiden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. Under **När börjar de** väljer du ett startdatum.
 4. Om integrationsguiden ska skickas automatiskt till den nyanställa på ett visst datum, se till att alternativet **Schemalägg ett automatiskt utskicksdatum** är aktiverat och välj sedan automatiskt utskicksdatum. Om du vill skicka guiden omedelbart stänger du av alternativet **Schemalägg ett automatiskt utskicksdatum**.
@@ -105,7 +105,7 @@ Du kan spara en integrationsguiden som en mall. På det här sättet kan du spar
 1. Välj **guider** i menyn till vänster.
 2. Välj knappen **Mer** (ellipsen \[**...**\]) för den guide som du vill skapa en mall från och välj **Spara som mall**.
 
-    ![[Spara en integrationsguiden som mall](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[Spara en integrationsguiden som en mall](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. I fönstret **Spara som en ny mall** anger du ett namn för din nya mall och väljer sedan **Spara**.
 

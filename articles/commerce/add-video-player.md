@@ -3,7 +3,7 @@ title: Modul för videospelare
 description: Det här avsnittet handlar om moduler för videospelare och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32504351f712c83ba8f593c17d2e51c532374311
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1c78583f39dbacdc7b38e89c33e67ae23731bf8a
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785339"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885911"
 ---
 # <a name="video-player-module"></a>Modul för videospelare
 
@@ -57,6 +57,8 @@ Modulen för omgivande videospelare har stöd för korta informationsvideoklipp.
 ## <a name="video-player-module"></a>Modul för videospelare
 
 Videospelaren kan användas för att visa videofilmer på en näthandelsplats. Den har stöd för alla uppspelningsfunktioner, till exempel spela upp, pausa, fullstorleksläge och dold textning. Videospelarmodulen stöder också anpassning av textning för att möta Microsofts tillgänglighetsstandarder. Du kan till exempel anpassa teckenstorleken och bakgrundsfärgen.
+
+Videospelarmodulen stöder också sekundära ljudspår. När en video laddas upp kan även ett sekundärt ljudspår laddas upp. Videospelarmodulen kan sedan spela upp det sekundära ljudspåret om en användare väljer det.
 
 ### <a name="examples-of-video-player-modules-in-e-commerce"></a>Exempel på moduler i videopelare i e-handel
 

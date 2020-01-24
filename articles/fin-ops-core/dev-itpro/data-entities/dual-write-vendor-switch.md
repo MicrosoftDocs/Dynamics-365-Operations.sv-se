@@ -1,6 +1,6 @@
 ---
-title: Växla mellan leverantörsdesign
-description: ''
+title: Växla mellan leverantörsdesigner
+description: I det här avsnittet beskrivs hur du växlar mellan integreringen av leverantörsdata mellan Finance and Operations-appar och Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 4e97ff0b0e6195b5e3703e15a0bb0de7644ef8d1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 204d788e72e79e7acf744d24cbeacb0f9b47da7d
+ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772374"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902735"
 ---
-# <a name="switch-between-vendor-designs"></a>Växla mellan leverantörsdesign
+# <a name="switch-between-vendor-designs"></a>Växla mellan leverantörsdesigner
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "2772374"
 
 Om du använder Dynamics 365-appar för leverantörshantering och vill isolera leverantörsinformation från kunder kan du använda denna grundläggande leverantörsdesign.  
 
-![Grundläggande leverantörsflöde](media/dual-write-switch-1.png)
+![Grundläggande leverantörsflöde](media/dual-write-vendor-data-flow.png)
  
 Om du vill använda andra Dynamics 365-appar för leverantörshantering och vill fortsätta använda entiteten **Konto** för att lagra leverantörsinformationen kan du använda denna leverantörsdesignen. I den här designen lagras utökad leverantörsinformation, t.ex. spärrstatus för leverantör och leverantörsprofilen lagras i entiteten **leverantörer** i Common Data Service. 
 
-![Utökat leveranstörsflöde](media/dual-write-switch-2.png)
+![Utökat leveranstörsflöde](media/dual-write-vendor-detail.jpg)
  
 Följ stegen nedan för att använda den utökade leverantörsdesignen: 
  
@@ -60,5 +60,5 @@ Följ stegen nedan för att använda den utökade leverantörsdesignen:
     4. Du kan konfigurera arbetsflödena som arbetsflöden i realtid eller i bakgrunden baserat på dina krav. 
         > [!div class="mx-imgBorder"]
         > ![Konvertera till ett arbetsflöde i bakgrunden](media/dual-write-switch-8.png)
-    5. Aktivera de arbetsflöden som du skapade på entiteterna **konto** och **leverantör** för att börja använda Customer Engagement-entiteten **Konto** för lagring av leverantörsinformation. 
+    5. Aktivera de arbetsflöden som du skapade på entiteterna **konto** och **leverantör** för att börja använda entiteten **Konto** för lagring av leverantörsinformation. 
  

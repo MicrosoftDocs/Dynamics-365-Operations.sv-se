@@ -1,0 +1,74 @@
+---
+title: ROUND ER-funktion
+description: Det här avsnittet innehåller information om hur funktionen ROUND elektronisk rapportering (ER) används.
+author: NickSelin
+manager: kfend
+ms.date: 12/17/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-platform
+ms.technology: ''
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+audience: Application User, IT Pro
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.region: Global
+ms.author: nselin
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c9384d5975e4a25d18ff741f87431daa4b0bbd7e
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2917084"
+---
+# <a name="ROUND">ROUND ER-funktion</a>
+
+[!include [banner](../includes/banner.md)]
+
+`ROUND`-funktionen returnerar det specificerade numret som verkligt *värde* efter det avrundats till det angivna antalet decimaler.
+
+## <a name="syntax"></a>Syntax
+
+```
+ROUND (number, decimals)
+```
+
+## <a name="arguments"></a>Argument
+
+`number`: *Realtaltal*
+
+Ett numeriskt värde som måste avrundas.
+
+`decimals`: *Heltal*
+
+Ett numeriskt värde som representerar antalet decimaler.
+
+## <a name="return-values"></a>Returvärden
+
+*Realtal*
+
+Det resulterande numeriska värdet.
+
+## <a name="usage-notes"></a>Användningsanteckningar
+
+Om värdet för `decimals`-argument är större än 0 (noll) avrundas det specificerade numret till det angivna antalet decimaler.
+
+Om värdet för argumentet `decimals` är **0** (noll) avrundas det specificerade numret till det angivna antalet decimaler.
+
+Om värdet för argumentet `decimals` är mindre än 0 (noll) avrundas det specificerade numret till vänster om decimaltecknet.
+
+## <a name="example-1"></a>Exempel 1
+
+`ROUND (1200.767, 2)` avrundar till två decimaler och returnerar **1200.77**.
+
+## <a name="example-2"></a>Exempel 2
+
+`ROUND (1200.767, -3)` avrundar till närmaste multipel av 1 000 och returnerar **1000**.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Matematiska funktioner](er-functions-category-mathematical.md)

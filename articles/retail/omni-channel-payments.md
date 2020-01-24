@@ -3,7 +3,7 @@ title: Översikt över betalningar i flera kanaler
 description: Det här ämnet innehåller en översikt betalningar i flera kanaler i Dynamics 365 Retail.
 author: rubendel
 manager: AnnBe
-ms.date: 05/12/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: b16b0cedaa2b908d2707eb7076f82f3513d00b62
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e20662eb9b8530edf2ebe6c1e7ce07ad18aba286
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017584"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2854022"
 ---
 # <a name="omni-channel-payments-overview"></a>Översikt över betalningar i flera kanaler
 
@@ -58,7 +58,7 @@ Betalningar i flera kanaler som beskrivs i det här avsnittet har getts ut som e
 
 #### <a name="card-present-and-card-not-present-connectors"></a>Anslutningar "Kortet är tillgängligt" och "kortet är tillgängligt"
 
-Betalnings-SDK bygger på två uppsättningar API (application programming interfaces). en första uppsättningen med API:er **iPaymentProcessor**. Det används för att implementera "Kortet är tillgängligt" betalningsanslutningar om kan användas i samtalsgrupper och med Microsoft Dynamics näthandelsplattformen. För mer information om gränssnittet **iPaymentProcessor**, se [Implementera en betalningsanslutningar och betalningsenhet](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) vitbok, som täcker betalningar. 
+Betalnings-SDK bygger på två uppsättningar API (application programming interfaces). en första uppsättningen med API:er **iPaymentProcessor**. Det används för att implementera "Kortet är tillgängligt" betalningsanslutningar om kan användas i samtalsgrupper och med Microsoft Dynamics näthandelsplattformen. För mer information om gränssnittet **iPaymentProcessor**, se [Implementera en betalningsanslutningar och betalningsenhet](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf) vitbok, som täcker betalningar. 
 
 Den första uppsättningen med API:er **iNamedRequestHandler**. Den stöder implementering av "Kortet är tillgängligt" betalningsintegration som använder en betalningsterminal. Fär mer information om gränssnittet **iNamedRequestHandler** se [skapa en betalningsintegration för en betalningsterminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
 

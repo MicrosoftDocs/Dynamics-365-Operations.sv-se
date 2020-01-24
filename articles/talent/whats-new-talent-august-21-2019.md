@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 94c782bf4fc28f2d2f34a101c3c96467ce0766f7
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814500"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897820"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (20 augusti 2019)
-
-[!include [banner](includes/banner.md)]
 
 Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Talent.
 

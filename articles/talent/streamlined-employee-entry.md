@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009432"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915211"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Strömlinjeformad medarbetarinmatning och navigering
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent gör det möjligt att registrera medarbetar- och anställningsdata effektivt. Du kan snabbt uppdatera information om arbetshistorik för tidigare, aktiva och framtida medarbetare och leverantörer.
 
-Du kan också aktivera en förenklad navigeringsupplevelse om du snabbt vill hitta relaterad information och göra nödvändiga ändringar. Den här funktionen är nu tillgänglig i miljöer med begränsat läge. Om du vill aktivera den här funktionen navigerar du till **Systemadministration > Länkar > Inställningar > Systemparametrar > Förhandsfunktioner**. Välj **Förbättrade arbetarformulär och navigering**. Detta aktiverar dessa ändringar för alla användare. Du kan stänga av det här alternativet när du vill.
+Du kan också aktivera en förenklad navigeringsupplevelse om du snabbt vill hitta relaterad information och göra nödvändiga ändringar. Den här funktionen är nu tillgänglig i alla miljöer med begränsat läge. Om du vill aktivera funktionen navigerar du till **Systemadministration > funktionshantering > ny > strömlinjeformad medarbetarpost > aktivera**. Detta aktiverar dessa ändringar för alla användare. Du kan stänga av det här alternativet när du vill.
 
 ## <a name="view-options"></a>Visningsalternativ
 

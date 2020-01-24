@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7e32f408e5c68a3422906347981c6fc4a4579daf
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812317"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915257"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Översikt över räkenskapsintegration för butikskanaler
 
@@ -138,9 +138,14 @@ Följande exempel på räkenskapsintegration är tillgängliga i Retail SDK:
 - [Exempel på integrering av kvittoskrivare för Polen](emea-pol-fpi-sample.md)
 - [Exempel på skatteregistreringstjänsten för Österrike](emea-aut-fi-sample.md)
 - [Exempel på skatteregistreringstjänsten för Tjeckien](emea-cze-fi-sample.md)
+- [Exempel på integration av kontrollenhet för Sverige](./emea-swe-fi-sample.md)
 
 Följande funktioner för räkenskapsintegration finns också i Retail SDK men för närvarande utnyttjar inte i ramverket för räkenskapsintegration. Migrering av den här funktionen till ramverket för räkenskapsintegration planeras för senare uppdateringar.
 
-- [Kassaapparatfunktioner för Frankrike](emea-fra-cash-registers.md)
-- [Kassaapparatfunktioner för Norge](emea-nor-cash-registers.md)
-- [Exempel för Retail POS-integration med styrenheter för Sverige](./retail-sdk-control-unit-sample.md)
+
+- [Digital signatur i Frankrike](emea-fra-cash-registers.md)
+- [Digital signatur för Norge](emea-nor-cash-registers.md)
+
+Följande tidigare funktioner för räkenskapsintegrering som är tillgängliga i Retail SDK använder inte ramverket för räkenskapsintegration och kommer att föråldras i senare uppdateringar:
+
+- [Exempel på integration av kontrollenhet för Sverige (äldre)](./retail-sdk-control-unit-sample.md)
