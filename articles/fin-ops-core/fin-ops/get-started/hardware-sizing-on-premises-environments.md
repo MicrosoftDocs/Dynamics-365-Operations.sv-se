@@ -1,9 +1,9 @@
 ---
 title: Krav för beräkning av maskinvara för lokala miljöer
 description: Detta ämne listar krav för beräkning av maskinvara för lokala miljöer
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812567"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870274"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav för beräkning av maskinvara för lokala miljöer
 
@@ -137,7 +137,7 @@ En SSRS-nod kan användas för normal tillgänglighet. Övervaka din SSRS-nod me
 
 ## <a name="environment-orchestrator"></a>Orchestrator-miljö
 
-Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad kommunikation med LCS. Denna tjänst används som primär Service Fabric-tjänst och kräver minst tre virtuella maskiner. Denna tjänst är samlokaliserad med Service Fabric-orchestrationtjänsterna. Detta bör beräknas till toppbelastning för klustret. Mer information finns i [Kapacitetsplanering för Service Fabric-kluster](/azure/service-fabric/service-fabric-cluster-capacity).
+Orchestrator-tjänsten är en tjänst som hanterar distributionen och relaterad kommunikation med LCS. Denna tjänst används som primär Service Fabric-tjänst och kräver minst tre virtuella maskiner. Denna tjänst är samlokaliserad med Service Fabric-orchestrationtjänsterna. Detta bör beräknas till toppbelastning för klustret. För mer information, se [planera och förbereda ditt fristående kluster med Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering och överabonnemang
 

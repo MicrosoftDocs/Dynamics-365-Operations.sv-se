@@ -18,17 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 968167f735cfa05ef17348ce1d55a184e355fbad
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 10b0f1625ba843dcce56f70a66342fdd5af6b0f1
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519120"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898396"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisera arbetsstyrkan med hjälp av avdelningar, jobb och befattningar
-
-[!include [banner](includes/banner.md)]
-
 
 Avdelningar, jobb och befattningar är organisationselement som underhålls i Personal. Det här avsnittet beskriver begreppsmässig information om dessa element. 
 

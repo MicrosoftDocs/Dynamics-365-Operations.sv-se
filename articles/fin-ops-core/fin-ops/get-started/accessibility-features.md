@@ -3,7 +3,7 @@ title: Hjälpmedelsfunktioner
 description: Det här avsnittet beskriver de funktioner som hjälper användare med olika handikapp.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/10/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7cc63320a3ba055a0c18ab59447f34a86bc0dc87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8ec4ee4654bdf306e179dcac5bf246df7f2b8cf7
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180862"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872452"
 ---
 # <a name="accessibility-features"></a>Hjälpmedelsfunktioner
 
@@ -40,7 +40,7 @@ För de flesta användare omfattar daglig systemanvändning en stor mängd data 
 
 Alla sidor som nås via menyn Navigeringsfönster (menyn längst till vänster) är även tillgänglig via rutan **Sök**. Tryck på Alt+G för att flytta fokus till rutan **Sök** och ange sedan sidan namn eller beskrivning.
 
-![”Bankkonton” som anges i Sökrutan](media/6d08b0be32808221023e2aa92d69fd70.png "\"Bank accounts\" entered in the Search box")
+![”Bankkonton” angivet i sökrutan](media/6d08b0be32808221023e2aa92d69fd70.png "”bankkonton” angivet i sökrutan")
 
 Mer information finns i [Navigeringssökning](navigation-search.md).
 
@@ -55,7 +55,7 @@ Varje åtgärd som finns på en sida kan nås från tangentbordet via fliksekven
 
 Du ska köra åtgärden **Meddelandelogg för e-post** som visas i gruppen **E-postmeddelande** på fliken **Försäljningsorder** i åtgärdsfönstret.
 
-![Meddelandeloggs-åtgärd för e-post i åtgärdsfönstret](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "\"Meddelandeloggs-åtgärd för e-post i åtgärdsfönstret")
+![Meddelandeloggåtgärd för e-post i åtgärdsfönstret](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg ""Meddelandeloggåtgärd" för e-post i åtgärdsfönstret")
 
 Ett alternativ är att använda tangentbordet. Tryck på Ctrl+F6 för att flytta fokus till åtgärdsfönstret och tryck sedan på Tabb flera gånger för att bläddra igenom alla flikar och åtgärder tills åtgärden **Meddelandelogg för e-post** är i fokus.
 
@@ -65,11 +65,11 @@ Du kan emellertid också köra åtgärden mer direkt. Tryck på Ctrl + apostrof 
 
 I sökrutan skriver du ord som beskriver åtgärden. Åtgärden görs tillgänglig för dig och du kan köra den direkt. Genom att exempelvis skriva **e-post**, **medde** (en del av ett ord) eller **logg** kan du ”hoppa” till funktionen för meddelandelogg för e-post.
 
-![”E-post” som anges i Sökrutan](media/image4.png "\"E-post\" som anges i Sökrutan")
+![”E-post” angivet i sökrutan](media/image4.png "”w-post” angivet i sökrutan")
 
-![”Meddelande” som anges i Sökrutan](media/image5.png "\"Meddelande\" som anges i Sökrutan")
+![”Medde” angivet i sökrutan](media/image5.png "”medde” angivet i sökrutan")
 
-![”Logg” som anges i Sökrutan](media/image6.png "\"Logg\" som anges i Sökrutan")
+![”Logg” angivet i sökrutan](media/image6.png "”logg” angivet i sökrutan")
 
 När du är klar trycker du på Ctrl + apostrof igen för att återföra fokus till det fält som du arbetade med innan du körde åtgärdssökningen.
 
@@ -81,7 +81,7 @@ Vid vardaglig systemanvändning krävs inte alla fält för att utföra vanliga 
 
 Du upptäcker emellertid kanske att vissa fält som du ofta använder för att utföra uppgifter som inte finns med i den förvalda fliksekvensen. Om du använder Windows skärmläsare kan du då använda tangentbordskommandon i Windows skärmläsare för att nå dessa fält och granska innehållet. Alternativt kan du aktivera alternativet **Utökad fliksekvens** på sidan **Alternativ**. Det här alternativet inkluderar samtliga redigerbara och skrivskyddade fält i fliksekvensen. Du kan sedan använda sidoanpassningen för att skapa en anpassad fliksekvens och utelämna fält som inte behöver ingå i fliksekvensen. Mer information om anpassning finns i [Anpassa användarupplevelsen](personalize-user-experience.md).
 
-![Alternativet ”Utökad tabbsekvens”](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Alternativet ”Utökad tabbsekvens")
+!["Utökade alternativ för tabbsekvens"](media/8c0f12bbb3f26032997ef0ba95d89b6a.png ""Utökade alternativ för tabbsekvens"")
 
 ## <a name="form-patterns"></a>Formulärmönster
 
@@ -92,6 +92,8 @@ Mer information om formulärmönster finns i [Formulärformat och -mönster](../
 ## <a name="responsive-layout"></a>Responsiv layout
 
 Produkten är avsedd att fungera på olika enheter och med olika formulärfaktorer, från de minsta skärmarna till stora skärmar som har den högsta upplösningen. Vår responsiva layoutmotor låter användare zooma in till en förstoringsnivå på 200 procent (eller, i vissa fall, mer än 200 procent).
+
+På smartphones och andra små skärmar, kontrollerna och formulärlayouten kommer att dynamiskt anpassa för att säkerställa att kärndata gynnas. Dessa responsiva beteenden kan också innefatta att minska antalet kolumner i grupper och flikar till en enda kolumn, dölja gränssnittselement och komprimera åtgärdsfönstret.
 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Riktlinjer för att hjälpa utvecklare och kunder att inkorporera tillgänglighetstänk i sina anpassningar
 

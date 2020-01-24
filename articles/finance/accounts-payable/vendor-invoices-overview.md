@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9708c37f10cd08e6b98167fe24d9ae0380c3dac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
+ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772178"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2890337"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
@@ -76,7 +76,7 @@ När du bokför fakturan uppdateras kvantiteten **Fakturarest** för varje artik
 
 Det här alternativet förutsätter det att minst en produktinleverans har bokförts för inköpsordern. Leverantörsfakturan baseras på dessa produktinleveranser och återspeglar kvantiteterna från dem. Den ekonomiska informationen för fakturan baseras på informationen som registreras när du bokför fakturan.
 
-Mer information finns i [Registrera leverantörsfakturan och matcha mot mottagen kvantitet](../accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md)
+Mer information finns i [Registrera leverantörsfakturan och matcha mot mottagen kvantitet](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md)
 
 ## <a name="working-with-multiple-invoices"></a>Arbeta med flera fakturor
 
