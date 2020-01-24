@@ -3,7 +3,7 @@ title: Lägga till skriptkod på webbsidor för att stödja telemetri
 description: I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,58 +17,60 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a5f82426d87cd2e0faa0195a841899bb03f9df08
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 79d0e11946f3c6f4704d3a726d33de0378eb53bd
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697346"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914549"
 ---
-# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="0c7e3-103">Lägga till skriptkod på webbsidor för att stödja telemetri</span><span class="sxs-lookup"><span data-stu-id="0c7e3-103">Add script code to site pages to support telemetry</span></span>
+# <a name="add-script-code-to-site-pages-to-support-telemetry"></a><span data-ttu-id="6e33d-103">Lägga till skriptkod på webbsidor för att stödja telemetri</span><span class="sxs-lookup"><span data-stu-id="6e33d-103">Add script code to site pages to support telemetry</span></span>
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="0c7e3-104">I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
+<span data-ttu-id="6e33d-104">I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.</span><span class="sxs-lookup"><span data-stu-id="6e33d-104">This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="0c7e3-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="0c7e3-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="6e33d-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="6e33d-105">Overview</span></span>
 
-<span data-ttu-id="0c7e3-106">Webbanalys är ett viktigt verktyg när du vill förstå hur dina kunder samverkar med din webbplats och fatta beslut som hjälper dig att optimera upplevelsen för maximal konvertering.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="0c7e3-107">Det finns många webbanalyspaket som hjälper dig att uppnå dessa mål, t.ex. Google Analytics, Clicky, Moz Analytics och KISSMetrics.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="0c7e3-108">De flesta webbanalyspaketen kräver att du lägger till klientskriptkod i elementet **\<head\>** för HTML på alla sidor på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="0c7e3-109">Instruktionerna i det här avsnittet gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
-
-## <a name="create-a-reusable-fragment-for-your-script-code"></a><span data-ttu-id="0c7e3-110">Skapa ett återanvändbart fragment för skriptkoden</span><span class="sxs-lookup"><span data-stu-id="0c7e3-110">Create a reusable fragment for your script code</span></span>
-
-<span data-ttu-id="0c7e3-111">När du har skapat ett fragment för skriptkoden kan det återanvändas på alla sidor på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-111">After you create a fragment for your script code, it can be reused across all pages on your site.</span></span>
-
-1. <span data-ttu-id="0c7e3-112">Gå till **fragment \> fragment för ny sida**.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-112">Go to **Fragments \> New page fragment**.</span></span>
-2. <span data-ttu-id="0c7e3-113">Välj **Externt skript**, ange ett namn på fragmentet och klicka sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-113">Select **External Script**, enter a name for the fragment, and then select **OK**.</span></span>
-3. <span data-ttu-id="0c7e3-114">I fragmenthierarkin väljer du underordnad modul för **skriptinmatare** för det fragment du just skapade.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-114">In the fragment hierarchy, select the **script injector** module child of the fragment that you just created.</span></span>
-4. <span data-ttu-id="0c7e3-115">Lägg till klientskript i egenskapsrutan till höger och ange andra konfigurations alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-115">In the property pane on the right, add your client-side script, and set other configuration options as you require.</span></span>
-
-## <a name="add-the-fragment-to-templates"></a><span data-ttu-id="0c7e3-116">Lägg till avsnittet i mallarna</span><span class="sxs-lookup"><span data-stu-id="0c7e3-116">Add the fragment to templates</span></span>
-
-1. <span data-ttu-id="0c7e3-117">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-117">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
-2. <span data-ttu-id="0c7e3-118">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-118">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
-3. <span data-ttu-id="0c7e3-119">Markera knappen med punkter (**...**) för platsen **HTML-huvud** och välj sedan **Lägg till fragment**.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-119">Select the ellipsis button (**...**) for the **HTML Head** slot, and then select **Add fragment**.</span></span>
-4. <span data-ttu-id="0c7e3-120">Markera det fragment som du har skapat för skriptkoden.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-120">Select the fragment that you created for your script code.</span></span>
-5. <span data-ttu-id="0c7e3-121">Spara mallen och checka in den.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-121">Save the template, and check it in.</span></span>
+<span data-ttu-id="6e33d-106">Webbanalys är ett viktigt verktyg när du vill förstå hur dina kunder samverkar med din webbplats och fatta beslut som hjälper dig att optimera upplevelsen för maximal konvertering.</span><span class="sxs-lookup"><span data-stu-id="6e33d-106">Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion.</span></span> <span data-ttu-id="6e33d-107">Det finns många webbanalyspaket som hjälper dig att uppnå dessa mål, t.ex. Google Analytics, Clicky, Moz Analytics och KISSMetrics.</span><span class="sxs-lookup"><span data-stu-id="6e33d-107">Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics.</span></span> <span data-ttu-id="6e33d-108">De flesta webbanalyspaketen kräver att du lägger till klientskriptkod i elementet **\<head\>** för HTML på alla sidor på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6e33d-108">Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="0c7e3-122">När du är klar måste du publicera fragmentet och huvudmallen.</span><span class="sxs-lookup"><span data-stu-id="0c7e3-122">After you've finished, you must publish the fragment and the master template.</span></span> 
+> <span data-ttu-id="6e33d-109">Instruktionerna i det här avsnittet gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.</span><span class="sxs-lookup"><span data-stu-id="6e33d-109">The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0c7e3-123">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="0c7e3-123">Additional resources</span></span>
+## <a name="create-a-reusable-fragment-for-your-script-code"></a><span data-ttu-id="6e33d-110">Skapa ett återanvändbart fragment för skriptkoden</span><span class="sxs-lookup"><span data-stu-id="6e33d-110">Create a reusable fragment for your script code</span></span>
 
-[<span data-ttu-id="0c7e3-124">Lägg till en logotyp</span><span class="sxs-lookup"><span data-stu-id="0c7e3-124">Add a logo</span></span>](add-logo.md)
+<span data-ttu-id="6e33d-111">När du har skapat ett fragment för skriptkoden kan det återanvändas på alla sidor på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="6e33d-111">After you create a fragment for your script code, it can be reused across all pages on your site.</span></span>
 
-[<span data-ttu-id="0c7e3-125">Välj ett tema för webbplatsen</span><span class="sxs-lookup"><span data-stu-id="0c7e3-125">Select a site theme</span></span>](select-site-theme.md)
+1. <span data-ttu-id="6e33d-112">Gå till **fragment \> fragment för ny sida**.</span><span class="sxs-lookup"><span data-stu-id="6e33d-112">Go to **Fragments \> New page fragment**.</span></span>
+2. <span data-ttu-id="6e33d-113">Välj **Externt skript**, ange ett namn på fragmentet och klicka sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="6e33d-113">Select **External Script**, enter a name for the fragment, and then select **OK**.</span></span>
+3. <span data-ttu-id="6e33d-114">I fragmenthierarkin väljer du underordnad modul för **skriptinmatare** för det fragment du just skapade.</span><span class="sxs-lookup"><span data-stu-id="6e33d-114">In the fragment hierarchy, select the **script injector** module child of the fragment that you just created.</span></span>
+4. <span data-ttu-id="6e33d-115">Lägg till klientskript i egenskapsrutan till höger och ange andra konfigurations alternativ som du behöver.</span><span class="sxs-lookup"><span data-stu-id="6e33d-115">In the property pane on the right, add your client-side script, and set other configuration options as you require.</span></span>
 
-[<span data-ttu-id="0c7e3-126">Lägg till en favicon</span><span class="sxs-lookup"><span data-stu-id="0c7e3-126">Add a favicon</span></span>](add-favicon.md)
+## <a name="add-the-fragment-to-templates"></a><span data-ttu-id="6e33d-116">Lägg till avsnittet i mallarna</span><span class="sxs-lookup"><span data-stu-id="6e33d-116">Add the fragment to templates</span></span>
 
-[<span data-ttu-id="0c7e3-127">Lägg till ett välkomstmeddelande</span><span class="sxs-lookup"><span data-stu-id="0c7e3-127">Add a welcome message</span></span>](add-welcome-message.md)
+1. <span data-ttu-id="6e33d-117">Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.</span><span class="sxs-lookup"><span data-stu-id="6e33d-117">Go to **Templates**, and open the template for the pages that you want to add your script code to.</span></span>
+2. <span data-ttu-id="6e33d-118">I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.</span><span class="sxs-lookup"><span data-stu-id="6e33d-118">In the left pane, expand the template hierarchy to show the **HTML Head** slot.</span></span>
+3. <span data-ttu-id="6e33d-119">Markera knappen med punkter (**...**) för platsen **HTML-huvud** och välj sedan **Lägg till fragment**.</span><span class="sxs-lookup"><span data-stu-id="6e33d-119">Select the ellipsis button (**...**) for the **HTML Head** slot, and then select **Add fragment**.</span></span>
+4. <span data-ttu-id="6e33d-120">Markera det fragment som du har skapat för skriptkoden.</span><span class="sxs-lookup"><span data-stu-id="6e33d-120">Select the fragment that you created for your script code.</span></span>
+5. <span data-ttu-id="6e33d-121">Spara mallen och checka in den.</span><span class="sxs-lookup"><span data-stu-id="6e33d-121">Save the template, and check it in.</span></span>
 
-[<span data-ttu-id="0c7e3-128">Lägg till copyrightmeddelande</span><span class="sxs-lookup"><span data-stu-id="0c7e3-128">Add a copyright notice</span></span>](add-copyright-notice.md)
+> [!NOTE]
+> <span data-ttu-id="6e33d-122">När du är klar måste du publicera fragmentet och huvudmallen.</span><span class="sxs-lookup"><span data-stu-id="6e33d-122">After you've finished, you must publish the fragment and the master template.</span></span> 
 
-[<span data-ttu-id="0c7e3-129">Lägg till språk på din webbplats</span><span class="sxs-lookup"><span data-stu-id="0c7e3-129">Add languages to your site</span></span>](add-languages-to-site.md)
+## <a name="additional-resources"></a><span data-ttu-id="6e33d-123">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="6e33d-123">Additional resources</span></span>
+
+[<span data-ttu-id="6e33d-124">Lägg till en logotyp</span><span class="sxs-lookup"><span data-stu-id="6e33d-124">Add a logo</span></span>](add-logo.md)
+
+[<span data-ttu-id="6e33d-125">Välj ett tema för webbplatsen</span><span class="sxs-lookup"><span data-stu-id="6e33d-125">Select a site theme</span></span>](select-site-theme.md)
+
+[<span data-ttu-id="6e33d-126">Arbeta med CSS åsidosättningsfiler</span><span class="sxs-lookup"><span data-stu-id="6e33d-126">Work with CSS override files</span></span>](css-override-files.md)
+
+[<span data-ttu-id="6e33d-127">Lägg till en favoritikon</span><span class="sxs-lookup"><span data-stu-id="6e33d-127">Add a favicon</span></span>](add-favicon.md)
+
+[<span data-ttu-id="6e33d-128">Lägg till ett välkomstmeddelande</span><span class="sxs-lookup"><span data-stu-id="6e33d-128">Add a welcome message</span></span>](add-welcome-message.md)
+
+[<span data-ttu-id="6e33d-129">Lägg till copyrightmeddelande</span><span class="sxs-lookup"><span data-stu-id="6e33d-129">Add a copyright notice</span></span>](add-copyright-notice.md)
+
+[<span data-ttu-id="6e33d-130">Lägg till språk på din webbplats</span><span class="sxs-lookup"><span data-stu-id="6e33d-130">Add languages to your site</span></span>](add-languages-to-site.md)
 
