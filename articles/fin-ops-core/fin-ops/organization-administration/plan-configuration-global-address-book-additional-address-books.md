@@ -3,7 +3,7 @@ title: Planera för att ställa in den globala adressboken och andra adressböck
 description: Det här avsnittet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a99284b2773e7c9d473357356c69a39f23c92d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89c6e71e5f537f0f9309eca1025c8e74cdce6716
+ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190038"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883421"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planera för den globala adressboken och andra adressböcker
 
@@ -35,7 +35,7 @@ Det här avsnittet innehåller en beskrivning av övervägandena och besluten so
 
 Innan du börjar att arbeta med den globala adressboken måste du bestämma standardvärdena för den. Dessa standardvärden används sedan för eventuella ytterligare adressböcker som du skapar.
 
-**Beslut:**
+**Beslut**
 
 - Med vilken sekvens visas namnen för partposter av typen **Person**? En sekvens ar till exempel förnamn, mellannamn och efternamn.
 - Ska partposter tas bort från adressboken när rollposten tas bort? Om till exempel en kundpost raderas, ska även partposten raderas?
@@ -58,11 +58,3 @@ När du har skapat den globala adressboken, kan du skapa ytterligare adressböck
 **Beslut:**
 
 - Hur många ytterligare adressböcker ska du skapa?
-
-### <a name="address-book-security"></a>Adressbokssäkerhet
-
-Du kan skapa adressböcker när som helst och du kan även ange säkerhetsparametrar för adressböckerna när som helst. Du måste inte att ange säkerhetsprivilegier för en adressbok, men om du inte gör det kan alla anställda i organisationen den visa alla partposter i den adressboken. Du kan ange säkerhetsprivilegier för partposter med adressböcker. Säkerhetsprivilegier baseras på team. Det här garanterar att endast anställda som tilldelas till en grupp har åtkomst till en adressbok kan visa partposterna i den adressboken. Du måste du välja team som har åtkomst till varje adressbok. För varje adressbok kan du ange säkerhetsprivilegier som tillåter eller förhindrar åtkomst för specifika team. Om du beviljar ett team åtkomst till en adressbok kan alla medlemmarna i teamet visa posterna i den adressboken. Om du inte beviljar ett team åtkomst till en adressbok kan inga medlemmar i teamet visa posterna eller innehållet i den adressboken.
-
-**Beslut:**
-
-- Vilka team ska ha åtkomst till varje ny adressbok som du skapar?

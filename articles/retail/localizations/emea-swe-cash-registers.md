@@ -3,7 +3,7 @@ title: Kassaapparatfunktioner för Sverige
 description: Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 06/22/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: aa81c5310c7a2876aed61a48b7736e3c72d08641
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7dcd5a17e428a3e6c464918be0dc7df515b50991
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811862"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915309"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
@@ -66,18 +66,18 @@ Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod*
 
 ### <a name="integration-of-retail-pos-with-control-units"></a>Integrering med kontrollenheter i Retail POS
 
-Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenhet som kallas kontrollenheter. Det antas att en enhet är fysiskt ansluten till maskinvarustationerna som kassan är kopplad till. Provet implementeras i källkoden för kassan, maskinvarustationen och Commerce Runtime-tillägg och är tillgänglig i Retail software development kit (SDK). Provet innehåller följande funktioner:
 
-- Försäljning, returer och kvittokopior registreras automatiskt i en kontrollenhet som är ansluten till maskinvarustationen som är kopplad till kassan.
-- Kontrollkoden och tillverkningsnumret för kontrollenheten för en registrerad transaktion fångas in från kontrollenheten och sparas i transaktionen. (Denna data kallas också _räkenskapsdata_.) Räkenskapsdata kan visas sdian **Butikstransaktioner**.
-- Anpassade fält för kontrollkoden och tillverkningsnumret för kontrollenheten kan läggas till ett kvittoformat så att du kan skriva ut räkenskapsdata för transaktionen på ett kvitto.
-- Räkenskapsdata för en transaktion skrivs ut på kanalrapporten **elektronisk journal (Sverige)**.
-- Om ett fel inträffar vid registrering av en transaktion i styrenheten förblir räkenskapsdata för transaktionen tomt. I det här fallet går det inte att starta en ny transaktion och det går inte att stänga det aktuella skiftet. Operatören ombeds att försöka registrera den oregistrerade transaktionen igen i styrenheten. Om det andra försöket misslyckas hoppar operatören över registreringen, under förutsättning att han eller hon har en särskild behörighet. Om operatören hoppar över registreringen av en transaktion i styrenheten, sparas informationen om händelsen i transaktionen i stället för räkenskapsdata.
+   # <a name="retail-1006-and-earliertabretail-10-0-6"></a>[Retail 10.0.6 och tidigare](#tab/retail-10-0-6)
 
-> [!NOTE]
-> För närvarande stöder inte styrenhetens integrationsprov kundorder. Men ett prov som stöder kundorder kommer att bli tillgängligt senare.
+  Mer information om integrationen med styrenheter som är tillgängliga i återförsäljarversioner till och med Retail 10.0.6 finns i [exempel för Retail POS-integrering med styrenheter för Sverige (äldre).](./retail-sdk-control-unit-sample.md#overview-of-integration-with-control-units) 
 
-Mer information om styrenhetens integrationsprov finns i [Exempel för Retail POS-integration med styrenheter för Sverige](./retail-sdk-control-unit-sample.md).
+
+   # <a name="retail-1007-and-latertabretail-10-0-7"></a>[Retail 10.0.7 och senare](#tab/retail-10-0-7)
+
+  Mer information om styrenhetens integrationsprov finns i [Exempel på integration av kontrollenhet för Sverige](./emea-swe-fi-sample.md).
+
+---
+
 
 ## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
@@ -103,7 +103,6 @@ Du måste ange följande allmänna inställningar för Sverige.
     - Momsgrupper
     - Artikelmomsgrupper
     - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
-
 
     Mer information om hur du ställer in och använder moms finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
 
@@ -148,44 +147,15 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 ### <a name="control-unitspecific-settings"></a>Styrenhet - specifika inställningar
 
-Du måste du ange följande inställningar för att aktivera [integrationsprovet](./retail-sdk-control-unit-sample.md) så att Retail POS är integrerat med kontrollenheter för Sverige.
+   # <a name="retail-1006-and-earliertabretail-10-0-6"></a>[Retail 10.0.6 och tidigare](#tab/retail-10-0-6)
 
-1. Skapa räkenskapsregisterkonfigurationer och tilldela dem till maskinvaruprofiler:
+  Mer information om inställning och konfiguration av integrationen med styrenheter som är tillgängliga i återförsäljarversioner till och med Retail 10.0.6 finns i [exempel för Retail POS-integrering med styrenheter för Sverige (äldre).](./retail-sdk-control-unit-sample.md#setting-up-integration-with-control-units) 
 
-    1. På sidan **Räkenskapsregisterkonfigurationer** skapar du en ny konfigurationspost för räkenskapsregister. Ange namnet och beskrivningen på konfigurationen.
-    2. Fyll i konfigurationens innehåll. För detta prov är en konfiguration en XML-fil som skapar mappningen mellan momskoder och en styrenhets momsgrupper. Du kan koppla upp till fyra momskoder. I följande exempel på en konfiguration, **VAT10** och **VAT20** representerar momskoder som måste mappas.
+   # <a name="retail-1007-and-latertabretail-10-0-7"></a>[Retail 10.0.7 och senare](#tab/retail-10-0-7)
 
-        ``` xml
-        <UnitConfiguration>
-            <TaxMapping>
-                <Tax taxCode="VAT10" controlUnitTaxId="1"/>
-                <Tax taxCode="VAT20" controlUnitTaxId="2"/>
-            </TaxMapping>
-        </UnitConfiguration>
-        ```
+  Mer information om inställning och konfiguration av styrenhetens integrationsprov finns i [Exempel på integration av kontrollenhet för Sverige](./emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
-        Du kan också exportera en provkonfiguration genom att klicka på **Exportera provkonfiguration** i åtgärdsfönstret.
+---
 
-    3. På sidan **maskinvaruprofiler** markerar du maskinvaruprofilen på den maskinvarustation som kassan är sammankopplad med och kontrollenheten som den är ansluten till. På snabbfliken **räkenskapsregister** anger du följande fält:
+    
 
-        - I fältet **räkenskapsregister** väljer du **tredje parts drivrutin**.
-        - I fältet **konfiguration**, markerar du namnet på räkenskapsregisterkonfigurationen som du har skapat.
-
-2. Konfigurera anpassade fält för kvittolayouter så att kontrollkoden och tillverkningsnumret för kontrollenheten skrivs ut på kvittona:
-
-    1. På sidan **Språktext** kan du lägga till två poster efter texten i fältet för anpassad kvittolayout. Ange språk-ID för rubrikerna i de motsvarande fälten (t.ex. **sv-se**), text-ID (exempelvis **900001** och **900002**), och texten (exempelvis **kontrollkod** och **kontroll-ID för enheten**).
-    2. På sidan **Anpassade fält** kan du lägga till två poster för fältet för anpassad kvittolayout. I fältet **Typ**, välj **Kvitto**. Ange namn och beskrivningar för fälten för anpassad kvittolayout:
-
-        - Kontrollkod:
-
-            - **Namn:** **FiscalRegisterControlCode**
-            - **Beskrivning av text-ID:** text-ID som du angav för kodfältet kontrollen (**900001** i föregående exempel)
-
-        - Tillverkningsnummer för kontrollenheten:
-
-            - **Namn:** **FiscalRegisterId**
-            - **Beskrivning av text-ID:** text-ID som du angav för fältet kontrollenhets-ID (**900002** i föregående exempel)
-
-    3. För försäljningskvittoformat, kvittorformatdesignern i avsnittet **sidfot** på kvittolayouten, lägger du till fälten för de angivna rubrikerna (**kontrollkod** och **kontrollenhets-ID** i föregående exempel).
-
-3. Uppdatera kassabehörighetsgrupper och enskilda behörighetsinställningar för arbetare i butiken. Om du vill tillåta att arbetare som tilldelats behörighetsgruppen hoppar över räkenskapsregister markerar du kryssrutan **Tillåt hoppa över räkenskapsregister**.

@@ -46,7 +46,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: Molndistribution
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-                - name: Systemkrav för molndistributioner
+                - name: Systemkrav för Retail-klientkomponenter
                   href: get-started/system-requirements.md
                 - name: Lokal distribution
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
@@ -58,24 +58,18 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/retail/toc.json
                 - name: Finance and Operations‑appar som drivs av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/retail/toc.json
-                - name: Finance and Operations‑appar i Frankrike
+                - name: Finance and Operations-appar i Frankrike
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Nyheter och ändringar
               items:
-                - name: Förhandsfunktioner i Retail version 10.0.7
+                - name: Retail version 10.0.7
                   href: get-started/whats-new-10-0-7.md
                 - name: Retail version 10.0.6
                   href: get-started/whats-new-10-0-6.md
-                - name: Retail version 10.0.5
-                  href: get-started/whats-new-10-0-5.md
                 - name: Nyheter och ändringar i tidigare versioner
                   items:
                     - name: Nyheter och ändringar på hemsidan för Finance and Operations
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations‑appar version 10.0.5 (oktober 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-                    - name: Finance and Operations 10.0.4 (juli 2019)
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: 'Finance and Operations, Enterprise edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: Borttagna och utfasade funktioner
@@ -788,10 +782,8 @@
               href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
             - name: Butikshierarkier
               href: retail-hierarchies.md
-            - name: Attribut och attributsgrupper
+            - name: Hantera attribut och attributsgrupper
               href: attribute-attributegroups-lifecycle.md
-            - name: Skapa och hantera attribut
-              href: create-manage-attributes.md
             - name: Ställa in butiksprodukter
               href: set-up-retail-products.md
             - name: Skapa en produkt
@@ -1146,7 +1138,9 @@
               items:
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-swe-cash-registers.md
-                - name: Exempel för Retail POS-integration med styrenheter
+                - name: Exempel på integration av kontrollenhet för Sverige
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Exempel för Retail POS-integration med styrenheter (äldre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Retail-uppgifter
           items:

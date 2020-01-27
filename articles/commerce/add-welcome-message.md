@@ -3,7 +3,7 @@ title: Lägg till ett välkomstmeddelande
 description: I det här avsnittet beskrivs hur du lägger till ett välkomstmeddelande på Microsoft Dynamics 365 Commerce-webbplatsen.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25a4e91646916b03c8a138fc713577f429ab633c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 4e9deeeaf491b77700ba0833e429f05d376a4392
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697392"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914526"
 ---
 # <a name="add-a-welcome-message"></a>Lägg till ett välkomstmeddelande
 
@@ -61,7 +61,9 @@ Välkomstmeddelandet visas nu överst på varje webbplatssida där det valda rub
 
 [Välj ett tema för webbplatsen](select-site-theme.md)
 
-[Lägg till en favicon](add-favicon.md)
+[Arbeta med CSS åsidosättningsfiler](css-override-files.md)
+
+[Lägg till en favoritikon](add-favicon.md)
 
 [Lägg till copyrightmeddelande](add-copyright-notice.md)
 

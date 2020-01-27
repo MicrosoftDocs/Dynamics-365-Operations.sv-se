@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b6be53e9a2065373ca37c2791568a8161823803f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 86e74086a5a74c7af5f2572d1a653a1658d729c0
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772420"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853869"
 ---
-## <a name="integrated-tax"></a>Integrerad moms
+# <a name="integrated-tax"></a>Integrerad moms
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Momsinställningsdata definierar inställningen för både indirekta skatter (GS
 
 Momsdata inkluderar en samling entitetsmappningar som fungerar tillsammans under kunddatainteraktion, som visas i följande tabell.
 
-Finance and Operations   | Customer Engagement-program
+Finance and Operations   | Andra Dynamics 365-appar
 -------------------------|---------------------------------
 Skattekoder                  | msdyn\_taxcodes.md
 Skattegrupper               | msdyn\_taxgroups.md

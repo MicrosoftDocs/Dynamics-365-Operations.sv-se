@@ -3,7 +3,7 @@ title: Ställ in kanaler för kundtjänst
 description: Det här avsnittet innehåller information om hur du bearbetar order till kundtjänst med Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 04/16/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4ebe25f91cd4228537254dc0b7891c8584981775
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024831"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934710"
 ---
 # <a name="set-up-call-center-channels"></a>Ställa in kundtjänstkanaler
 
@@ -81,3 +81,6 @@ Användare som inte är kopplade till ett kundtjänstkanaler använda standardor
 
 
 När du är klar med att konfigurera kundtjänstkanalen och definiera kanalanvändare, för att garantera önskad systemfunktion, se till att alla nödvändiga kundtjänstparametrar definieras i **butik**\>**kanalinställningar**\>**kundtjänstinställningar**\>**kundtjänstparametrar**. Se till att relaterade nummerserier definieras också.
+
+> [!NOTE]
+> Om du använder kundtjänstfunktionen måste konfigurationsnyckeln **Flera leveransadresser** till aktiveras. Den här konfigurationsnyckeln finns i den konfigurationsnyckel för **handel** under **Systemadministration**\> **Konfiguration** \> **Licenskonfiguration**. Detta krävs på grund av kundtjänstfunktione som utför olika valideringar baserat på leveransadressen som konfigurerats på försäljningsorderradnivå. 

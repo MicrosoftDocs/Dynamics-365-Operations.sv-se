@@ -3,7 +3,7 @@ title: Anpassa webbplatsnavigeringen
 description: I det här avsnittet beskrivs hur du skapar en anpassad onlinemapp för navigering för att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8e1efb4a7484bd4626886c0f9aa40c3e4dfe304a
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 642cb5c145dec68631eb9ab27d926ba8ab75c59b
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697484"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914920"
 ---
 # <a name="customize-site-navigation"></a>Anpassa webbplatsnavigeringen
 
@@ -108,3 +108,5 @@ Om du vill lägga till anpassade navigeringsalternativ på navigeringsmenyn föl
 [Arbeta med moduler](work-with-modules.md)
 
 [Skapa URL för webbsida](create-page-url.md)
+
+[Arbeta med publiceringsgrupper](publish-groups.md)

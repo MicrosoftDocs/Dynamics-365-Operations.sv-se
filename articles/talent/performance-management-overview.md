@@ -3,7 +3,7 @@ title: Prestandahantering
 description: Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590515"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921160"
 ---
 # <a name="performance-management"></a>Prestandahantering
-
-[!include [banner](includes/banner.md)]
 
 Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna.  
 
@@ -91,6 +89,8 @@ För mer detaljerade granskningar kan du lägga till aktiva och slutförda mål 
 Du kan också använda avsnittet **Kompetenser** om du vill diskutera, granska och bedöma medarbetarens kompetenser. Du kan lägga till så många kompetenser som du behöver och du kan välja om kompetensen ska bedömas. 
 
 Du kan skapa nya granskningar som baseras på mallar som du har skapat. Du kan till exempel ha en mall för personliga möten, utvecklingsplaner och periodiska granskningar. Du kan välja mallen när du skapar en ny granskning.
+
+Om du vill skriva ut recensioner väljer du knappen **skriv ut granskning**. Om du inte ser knappen på sidan **Granska** kontrollerar du att du har aktiverat funktionen i arbetsytan **funktionshantering**. Mer information om hur du aktiverar Funktionshantering finns i [Översikt över funktionshantering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Komponenter som kan ingå i prestationsgranskningar
 Du kan inkludera flera olika typer av information i prestationsgranskningar. Bland annat granskningsinformation, mått, aktiviteter, bedömningar, godkännanden och bifogade filer.

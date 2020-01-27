@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 91b154a2379d6f0bdf8bea322c99be9e1c1925c9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b0bcef9673970ad921f6ca5c6715b7086bcd8c4b
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519126"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898166"
 ---
 # <a name="personnel-actions-faq"></a>Vanliga frågor och svar om personalåtgärder
-
-[!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder. Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter. Exempel på uppgifter som kan kräva personalåtgärder är när du skapar nya befattningar, ändrar befintliga befattningsvärden, anställer nya arbetstagare, överför arbetstagare, ändrar arbetstagares kompensation, ändrar befattningstilldelningar eller säger upp arbetstagare.
 

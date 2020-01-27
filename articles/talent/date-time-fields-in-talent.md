@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: abd215243cbda68ba3f57b5fa41054a10745d11f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5f5bb3432ba3e57a4ef08dfa3c25cb61705efc33
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551036"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898768"
 ---
 # <a name="work-with-date-and-time-in-microsoft-dynamics-365-talent"></a>Arbeta med datum och tid i Microsoft Dynamics 365 Talent
-
-[!include [banner](includes/banner.md)]
 
 **Datum- och tidsfält** är ett grundläggande begrepp i Dynamics 365 Talent. Det är viktigt att du förstår hur du arbetar med data för **datum och tid** i ett Dynamics 365-formulär, Common Data Service och externa källor.
 

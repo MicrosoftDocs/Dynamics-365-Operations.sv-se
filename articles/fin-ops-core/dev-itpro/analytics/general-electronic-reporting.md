@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771083"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933942"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -51,12 +51,12 @@ ER-motorn har följande funktioner:
 
 ER stöder två typer av komponenter: **Datamodell** och **Format**.
 
-#### <a name="data-model-components"></a>Datamodellkomponenter
+#### <a name="data-model-and-model-mapping-components"></a>Komponenter för datamodell och datamodellmappning
 
 En datamodellskomponent är en abstrakt representation av en datastruktur. Den används för att beskriva domänen för ett visst affärsområde tillräckligt detaljerat för att uppfylla rapporteringskraven för domänen. En datamodellkomponent för omfattar följande delar:
 
-- En datamodell som en uppsättning domänspecifika affärsenheter och en hierarkiskt strukturerad definition av relationer mellan dem.
-- En modellmappning som länkar valda programdatakällor till enskilda element i en datamodell som vid körning specificerar dataflödet och reglerna för population av affärsdata till datamodellkomponenten.
+- <a name="DataModelComponent"></a>En datamodell som en uppsättning domänspecifika affärsenheter och en hierarkiskt strukturerad definition av relationer mellan dem.
+- <a name="ModelMappingComponent"></a>En modellmappning som länkar valda programdatakällor till enskilda element i en datamodell som vid körning specificerar dataflödet och reglerna för population av affärsdata till datamodellkomponenten.
 
 En affärsenhet av datamodellen representeras som en behållare (post). Affärsenhetsegenskaper återges som dataobjekt (fält). Varje dataobjekt har ett unikt namn, en unik etikett, en unik beskrivning och ett unikt värde. Värdet på respektive dataobjekt kan vara utformat så att det tolkas som en sträng, ett heltal, ett realtal, ett datum, en uppräkning, ett booleskt värde och så vidare. Dessutom kan det vara en annan post eller lista över poster.
 
@@ -81,7 +81,7 @@ En modellmappning som har stöd för inkommande elektroniska dokument har följa
 
 En datamodellskomponent har utformats för respektive företagsdomän som ska användas som en enhetlig datakälla för rapportering som isolerar rapporterna från den fysiska implementeringen av datakällor för Finance and Operations. Den representerar domänspecifika affärsbegrepp och -funktioner i ett formulär som utgör ett rapporteringsformulärs ursprungliga konstruktion och vidare underhåll effektivare.
 
-#### <a name="format-components-for-outgoing-electronic-documents"></a>Formatkomponenter för utgående elektroniska dokument
+#### <a name="FormatComponentOutbound"></a>Formatkomponenter för utgående elektroniska dokument
 
 En formatkomponent är schemat för de rapporteringsutdata som skapas vid körning. Ett schema består av följande element:
 
@@ -107,7 +107,7 @@ Följande bild visar hur datan flödar för dessa format.
 
 Du måste identifiera mappningen av formatkonfigurationen för att kunna köra en enskild ER formatkonfiguration och skapa utgående elektroniska dokument.
 
-#### <a name="format-components-for-incoming-electronic-documents"></a>Formatkomponenter för inkommande elektroniska dokument
+#### <a name="FormatComponentInbound"></a>Formatkomponenter för inkommande elektroniska dokument
 En formatkomponent är schemat för de inkommande dokument som importeras vid körning. Ett schema består av följande element:
 
 - Ett format som definierar strukturen och innehållet i de inkommande elektroniska dokument som innehåller data som importeras vid körning. En formatkomponent används för att tolka ett inkommande dokument i olika format, till exempel text och XML.
@@ -144,7 +144,7 @@ ER-komponentversionerna har giltighetsdatum. Du kan ange **Gäller från**-datum
 
 Olika versioner av en dataformatkomponent kan ha olika inställningar för ISO-lands-/regionskoder.
 
-#### <a name="configuration"></a>Konfiguration
+#### <a name="Configuration"></a>Konfiguration
 
 En ER-konfiguration är omslaget (wrappern) för en viss ER-komponent. Komponenten kan antingen vara en datamodellskomponent eller en formatkomponent. En konfiguration kan omfatta olika versioner av en ER-komponent. Varje konfiguration markeras som ägda av en viss konfigurationsleverantör. **Utkast**-versionen av en komponent i en konfiguration kan redigeras om ägaren av en konfiguration har valts som en aktiv leverantör i ER-inställningarna i programmet.
 
@@ -154,13 +154,13 @@ Formatkonfigurationen som skapas innehåller en formatkomponent. Datamodellkompo
 
 En ER-konfiguration delas av programföretag.
 
-#### <a name="provider"></a>Leverantör
+#### <a name="Provider"></a>Leverantör
 
 ER-leverantören är partens identifierare som används för att indikera författare (ägare) av varje ER-konfiguration. Med hjälp av ER kan du hantera listan över konfigurationsleverantörer. Formatkonfigurationer som släpps för elektroniska dokument som en del av Finance and Operations-lösningen markeras som ägda av **Microsoft**-konfigurationsleverantören.
 
 För information om hur du registrerar en ny ER-leverantör, kör uppgiftsguiden **ER skapa en konfigurationstjänst och markera den som aktiv** (ingår i affärsprocessen **7.5.4.3 Införskaffa/utveckla IT-tjänst/-lösningskomponenter (10677)**).
 
-#### <a name="repository"></a>Databas
+#### <a name="Repository"></a>Databas
 
 En ER-databas lagrar ER-konfigurationer. Följande typer av ER-databaser stöds för närvarande: 
 

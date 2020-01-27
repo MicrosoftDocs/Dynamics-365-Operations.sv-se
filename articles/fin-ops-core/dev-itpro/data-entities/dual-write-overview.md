@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 072564446b74318ffc8e8e6ad4fd16f4421e7854
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772397"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853916"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Dataintegrering nästan i realtid med Common Data Service
 
@@ -59,7 +59,7 @@ Synkrona, dubbelriktad, dataflöden nästan i realtid kräver följande versione
 Följ dessa steg för att ställa in integrationen mellan med Finance and Operations-appar och Common Data Service.
     
 1. För installationen av dubbelriktad skrivningssystemet, se [stegvis guiden](https://aka.ms/dualwrite-docs) om att tillkännage förhandsgranskning av dubbelriktad skrivning.
-2. Hämta och installera lösningen från gruppen [Finance and Operations, Common Data Service, och Customer Engagement-iIntegration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer. Paketet innehåller fem lösningar:
+2. Ladda ned och installera lösningen från [Fin Ops och CD/CE-integration via dubbelriktad](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096)Yammer-gruppen. Paketet innehåller fem lösningar:
 
     + Dynamics365Company
     + CurrencyExchangeRates

@@ -3,7 +3,7 @@ title: Välj ett tema för webbplatsen
 description: I det här avsnittet beskrivs hur du ställer in eller ändrar webbplatstema i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ee56f1b135c71194f5e7c4b2a8f47a82294ea81
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: bcee3a3f29df316dff04cf22acbda7f968778c93
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698129"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914758"
 ---
 # <a name="select-a-site-theme"></a>Välj ett tema för webbplatsen
 
@@ -53,7 +53,9 @@ Gör så här för att välja det tema som ska användas på webbplatsen:
 
 [Lägg till en logotyp](add-logo.md)
 
-[Lägg till en favicon](add-favicon.md)
+[Arbeta med CSS åsidosättningsfiler](css-override-files.md)
+
+[Lägg till en favoritikon](add-favicon.md)
 
 [Lägg till ett välkomstmeddelande](add-welcome-message.md)
 

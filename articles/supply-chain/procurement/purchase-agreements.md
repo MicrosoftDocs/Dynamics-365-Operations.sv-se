@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813372"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902442"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
@@ -36,7 +36,14 @@ Inköpsavtal kan gälla för en viss kvantitet av en produkt, ett specifikt valu
 
 På sidan **Inköpsavtal** kan du skapa, tillämpa och följa upp inköpsavtal som finns mellan din organisation och leverantörerna. Efter att du har skapat ett inköpsavtal kan du till exempel beställa direkt från det. Varje inköpsavtal har en giltighetstid som definieras av personen som skapar inköpsavtalet. Inköpets leveransdatum måste ligga inom valideringsperiodens giltighetsdatum.  
 
-När du har skapat ett inköpsavtal måste du aktivera det innan det börjar gälla. Aktivera ett inköpsavtal genom att ställa in alternativet **Markera avtal som giltigt** på **Ja**.
+När du har skapat ett inköpsavtal måste du aktivera det innan det börjar gälla. Aktivera ett inköpsavtal genom att ställa in alternativet **Markera avtal som giltigt** på **Ja**. 
+
+Om du vill förhindra att ditt inköpsavtal används och bekräftas markerar du avtalsstatusen som **stängd**. Du kan fortfarande uppdatera statusen till **effektiv** när som helst efter att du har gjort den här ändringen.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Ansvarsfulla arbetstagare på inköpsavtal
+
+Du kan identifiera en primär ansvarig arbetstagare och sekundär ansvarig arbetare på inköpsavtal klassificering. Dessa värden kommer att ärvas av det resulterande inköpsavtalet. Du behöver inte lägga till ansvariga arbetstagare till inköpsavtalet och de kan ändras direkt på basis av varje ärende på själva inköpsavtalet. Du kan inte ange en sekundär ansvarig arbetare utan en primär ansvarig arbetare, även om du inte behöver ha en sekundär ansvarig arbetare. Du kan inte ange samma arbetsprocesser som både den primära och sekundära ansvariga arbetaren. 
+
 
 ## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett inköpsavtal är en utfästelse att köpa något. Du kan använda rader från flera inköpsorder för att uppfylla utfästelsen. Det finns fyra typer av utfästelser:

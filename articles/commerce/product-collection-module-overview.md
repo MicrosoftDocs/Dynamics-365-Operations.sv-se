@@ -3,7 +3,7 @@ title: Produktsamlingsmoduler
 description: Det här ämnet innehåller en översikt över produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 44f78b55b8e67b7358be75aa63c40a0147507e26
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
+ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785477"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2943273"
 ---
-# <a name="product-collection-modules"></a>Produktsamlingsmoduler  
+# <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -37,18 +37,19 @@ Produktidentifiering är ett primärt verktyg som återförsäljare använder f�
 
 Produktsamlingsmoduler representerar fysiska produkter och tjänster på webbplatsen. En produktsamlingsmodul är vanligtvis länkad till en informationssida där kunder kan köpa en produkt eller tjänst, eller få mer information om den. 
 
-Källorna för produktsamlingar kan vara listor av tre typer:
+Källorna för produktsamlingar kan vara listor av följande fyra typer:
 
 - Redaktionella listor med produkter som definieras manuellt i Dynamics 365 Retail som relaterade produkter för en produkt eller produktlistor
 - Algoritmiska listor, till exempel listor över nya, bästsäljande eller trendbaserade produkter
 - Rekommendationslistor som baseras på maskininlärning
+- Anpassningslistor som stöder anpassade resultat för en kund. Kunder måste vara inloggade på e-handelsplatsen för att se anpassade resultat. Gästanvändare ser inte anpassade resultat. Kunder kan välja bort anpassning från sidan [sidan kontohantering](account-management.md).
 
 Följande bild visar de olika typer av produktsamlingar som används på en näthandelsplats.
 
 ![Exempel på olika typer av produktsamlingar på en näthandelsplats](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Använd alltid moduler för att visa en grupp med produkter av liknande typ eller tema.
+> Använd alltid moduler för att visa en grupp med produkter av liknande typ.
 
 ## <a name="product-collection-modules-and-types"></a>Produktsamlingsmoduler och typer
 
@@ -56,15 +57,15 @@ I följande tabell beskrivs olika typer av moduler för produktsamlingar i Dynam
 
 | Produktsamlingsmodul  | Typ | Beskrivning |
 |----------------------------|------|-------------|
-| Kategoribläddring            | Redaktionellt | Den här typen av produktsamlingsmodul använder den navigeringskategorihierarki som en återförsäljare skapat för en detaljhandelskanal för att visa ett sökflöde för produkter som erbjuds i en viss webbplatskategori. |
-| Sökresultat             | Sökfråga | Den här typen av produktsamlingsmodul visar en lista över produkter som bäst matchar sökfrågan som kunden har angett. |
-| Relaterade produkter           | Redaktionellt | Den här typen av produktsamlingsmodul visar en lista över produkter som en inköpschef har konfigurerat som relaterade produkter i butik, för den relationstyp som författaren har valt. |
-| Granskade produktlistor      | Redaktionellt | I den här typen av produktsamlingsmodul visas anpassade listor som varor och redigerare har skapat i Retail. |
-| Nya                        | Algoritmiska | Den här typen av produktsamlingsmodul visar en lista över de senaste produkterna som har varit utvalda för kanaler och kataloger. |
-| Bästsäljare               | Algoritmiska | Den här typen av produktsamlingsmodul visar en lista över produkter som rangordnas med det högsta antalet försäljningar. |
-| Trend                   | Algoritmiska | Den här typen av produktsamlingsmodul visar en lista över de produkter som har bäst prestanda för en viss period. |
-| Ofta köpta tillsammans | Artificiell intelligens/maskininlärning | Denna typ av produktsamlingsmodul använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera relaterade artiklar som ofta köps tillsammans med en viss produkt. |
-| Andra gillar också           | Artificiell intelligens/maskininlärning | Denna typ av produktsamlingsmodul använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera relaterade till en viss produkt. |
+| Kategori                   | Kategori | I den här modulen visas en lista över produkter i en kategori, enligt definitionen i den navigeringskategorihierarki som återförsäljaren skapade för en butikskanal. |
+| Relaterade produkter           | Redaktionellt | Den här modulen visar en lista över produkter som en inköpschef har konfigurerat som relaterade produkter i butik, för den relationstyp som författaren har valt. |
+| Granskade produktlistor      | Redaktionellt | Den här modulen visar anpassade listor som produkter och redigerare har skapat i Retail. |
+| Nya                        | Algoritmiska | Den här modulen visar en lista över de senaste produkterna som har varit utvalda för kanaler och kataloger. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
+| Bästsäljare               | Algoritmiska | Den här modulen visar en lista över produkter som rangordnas med det högsta antalet försäljningar. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
+| Trend                   | Algoritmiska | Den här modulen visar en lista över produkter som är mest presterande för en viss period. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
+| Ofta köpta tillsammans | Artificiell intelligens/maskininlärning | Den här modulen använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera relaterade artiklar som ofta köps tillsammans med en viss produkt. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
+| Andra gillar också           | Artificiell intelligens/maskininlärning | Den här modulen använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera artiklar som är relaterade till en viss produkt. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
+| Val för dig              | Artificiell intelligens/maskininlärning | Den här modulen använder maskininlärning för att analysera inköpsmönster för den inloggade användaren och tillhandahålla anpassade rekommendationer som baseras på dessa inköpsmönster. För en gästanvändare kommer den här listan att döljas. |
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Lägga till en modul för produktsamling på en kategorisida
 
@@ -74,7 +75,8 @@ För att lägga till en modul för produktsamling på en kategorisida, följ des
 1. I siddispositionen väljer du platsen **Undersidfot**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul**, välj **Behållare** och klicka sedan på **OK**.
 1. I behållarmodulen väljer du ellipsknappen och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj **Produktsamling** och klicka sedan på **OK**.
+1. I dialogrutan **Lägg till modul**, välj **Produktsamling** och klicka sedan på **OK**.  
+![Exempel på produktsamlingsmodul för flödesguide](./media/productCollectionModule.png)
 1. Konfigurera inställningar genom att välja en lämplig datakälla och indata för produktsamlingen.
 1. Välj **Lägg till en produktlista** i egenskapsrutan för modulen produktsamling.
 1. I dialogrutan **Välj konfiguration av produktlista** väljer du typ av lista, anger antalet artiklar och väljer eventuella andra alternativ som är tillgängliga för listtypen. Mer information om dessa listtyper finns i följande tabell. 
@@ -82,15 +84,16 @@ För att lägga till en modul för produktsamling på en kategorisida, följ des
 1. Spara sidan och checka in den.
 
 I följande tabell visas de listtyper som är tillgängliga för val i dialogrutan **Välj konfiguration för produktlista**.
-   
-| Typ                       | Beskrivning | Allmän praxis | Kontext som kan härledas från sidans kontext | En kontext som författaren kan åsidosätta sidans kontext med |
-|----------------------------|-------------|------------------|-------------------------------------|-----------------------------------------------|
-| Produkter efter kategori       | En lista med produkter som tillhör en given kategori. Den här kategorin bestäms antingen från sidkontexten eller det sammanhang som författaren tillhandahåller. | Utöka kategorisida, startsida, kassasida och kundvagnssida och produktsidor | Kategori | Kategori fastställd av författare |
-| Relaterade produkter           | En lista över produkter som en inköpschef har konfigurerat som relaterade produkter i Retail för relationstypen. | Produktsida, kassasida och kundvagnssida, önskelistsida och kundkontosida | Produkt, relationstyp (obligatorisk)  | Produkt, relationstyp |
-| Modererad                    | En anpassad lista som produkter och redigerare har skapat i Retail. | Utöka kategorisida, startsida, kassasida och kundvagnssida och produktsidor | Inte aktuellt | Listplockare |
-| Algoritmiska                | <ul><li>**Ny** – en lista över de senaste produkterna som har varit utvalda för kanaler och kataloger.</li><li>**Bästsäljande** – en lista över produkter som rangordnas med det högsta antalet försäljningar.</li><li>**Trender** – en lista över produkter som är mest presterande för en viss period.</li></ul> | Startsida, utöka kategorisida och kassasida och kundvagnssida | Kategori | Kategori fastställd av författare |
-| Ofta köpta tillsammans | En lista som använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera relaterade artiklar som ofta köps tillsammans med en viss produkt. | Produktsidor, och kassa- och kundvagnssidor | Produkt, kundvagn | Inkludera kundvagn |
-| Andra gillar också           | En lista som använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera artiklar som är relaterade till en viss produkt. | Produktsidor, och kassa- och kundvagnssidor | Produkt, kundvagn | Inte aktuellt |
+
+| Typ                       | Beskrivning | Användning | Sidkontext | Specifik kontext | Anpassning |
+|----------------------------|-------------|-------|--------------|------------------|-----------------|
+| Produkter efter kategori       | En lista med produkter som tillhör en given kategori. Den här kategorin bestäms antingen från sidkontexten eller det sammanhang som författaren tillhandahåller. | Den här typen av lista kan användas på alla sidor (till exempel en startsida, kategorisida, marknadsföringssida eller produktinformationssida \[PDP\]) för att marknadsföra en viss kategori av produkter. | Kategori från sidans kontext, där den är tillgänglig (till exempel en kategorisida) | Författaren kan ge en specifik kategori som kontext för listan. | Inte aktuellt |
+| Relaterade produkter           | En lista över produkter som en inköpschef har konfigurerat som relaterade produkter för relationstypen i Retail. | Den här typen av lista används främst på PDP, men den kan användas på alla sidor om en överordnad produkt tillhandahålls. | Produkt från sidan, relationstyp (obligatoriskt) | Produkten kan väljas i väljaren och relationstypen används. | Inte aktuellt |
+| Modererad                    | En anpassad lista som produkter och redigerare har skapat i Retail. | Utöka kategorisida, startsida, kassasida och kundvagnssida och produktsidor | Inte aktuellt | Inte aktuellt | Inte aktuellt |
+| Algoritmiska                | <ul><li>**Ny** – en lista över de senaste produkterna som har varit utvalda för kanaler och kataloger.</li><li>**Bästsäljande** – en lista över produkter som rangordnas med det högsta antalet försäljningar.</li><li>**Trender** – en lista över produkter som är mest presterande för en viss period.</li></ul> | Startsida, utöka kategorisida och kassasida och kundvagnssida | Kategori från sidans kontext (till exempel en kategorisida) | Den kategori som bestäms av webbplatsens författare | Stöds |
+| Ofta köpta tillsammans | En lista som använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera relaterade artiklar som ofta köps tillsammans med en viss produkt. | Den här typen av lista gäller endast för kundvagnssidan. | Kundvagn | Inte aktuellt | Stöds |
+| Andra gillar också           | En lista som använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera artiklar som är relaterade till en viss produkt. | Den här typen av lista används på PDP för att visa produkter som andra kunder har köpt. | Produktkontext från sidan | Den produkt som etableras av webbplatsens författare | Stöds |
+| Val för dig              | En lista som använder maskininlärning för att fastställa kundpreferenser. | Den här typen av lista kan användas på alla sidor. | Inte aktuellt| Inte aktuellt | Stöds | 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
@@ -102,7 +105,8 @@ I följande tabell visas de listtyper som är tillgängliga för val i dialogrut
 
 [Modul för innehållsplacering](add-content-placement-modules.md)
 
-[Behållaremodul](add-container-module.md)
+[Behållarmodul](add-container-module.md)
 
 [Modul för inköpsruta](add-buy-box.md)
 
+[Översikt av produktrekommendationer](product-recommendations.md)

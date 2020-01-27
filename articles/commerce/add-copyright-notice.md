@@ -3,7 +3,7 @@ title: Lägg till copyrightmeddelande
 description: I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelsplats.
 author: psimolin
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39135a2eca25336097ee9eddf06dc6709c102571
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696955"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914591"
 ---
 # <a name="add-a-copyright-notice"></a>Lägg till copyrightmeddelande
 
@@ -66,7 +66,9 @@ Sidfoten som innehåller copyrightinformationen visas automatiskt längst ner p�
 
 [Välj ett tema för webbplatsen](select-site-theme.md)
 
-[Lägg till en favicon](add-favicon.md)
+[Arbeta med CSS åsidosättningsfiler](css-override-files.md)
+
+[Lägg till en favoritikon](add-favicon.md)
 
 [Lägg till ett välkomstmeddelande](add-welcome-message.md)
 

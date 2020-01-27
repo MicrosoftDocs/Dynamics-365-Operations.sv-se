@@ -3,12 +3,12 @@ title: Måttenhetskonvertering per produktvariant
 description: Det här avsnittet beskriver hur måttenhetskonvertering kan ställas in på produktvarianter.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249458"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935109"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måttenhetskonvertering per produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 Det här avsnittet beskriver hur måttenhetskonvertering kan ställas in på produktvarianter. Den innehåller ett exempel på inställningarna.
 
 Den här funktionen gör det möjligt för företag att definiera olika enhetskonverteringar mellan varianter av samma produkt. Följande exempel används i det här avsnittet. Ett företag säljer t-shirts i storlek Small, Medium, Large och Extra large. T-shirten definieras som en produkt och de olika storlekarna definieras som varianter av produkten. T-shirts förpackas i lådor och det kan finnas fem T-shirts i en låda, med undantag för Extra large som endast kan fyra T-shirts. Företaget vill spåra olika varianter av T-shirts i enheten **enheter** men säljer T-shirts i enheten **lådor**. Konverteringen mellan lagerenheten och försäljningsenheten är 1 låda = 5 enheter utom varianten Extra large där konverteringen är 1 låda = 4 enheter.
-
-## <a name="setup"></a>Konfigurera
-
-Du kan konfigurera parametrar för att använda funktionen för produkter som har aktiverats för **alla processer** eller bara för produkter som aktiveras för **lagerprocesser** med hjälp av alternativet **Aktivera måttenhetskonverteringar** på sidan **Produktinformationsparametrar**.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurera en produkt för enhetskonvertering per variant
 
 Produktvarianter kan bara skapas för produkter av **undertypen Produkt**: **produktmall**. Mer information finns i [Skapa en produktmall](tasks/create-product-master.md).
 
 Funktionen är inte aktiverad för produkter som har ställts in för faktisk/nominell vikt-processer. 
-
-När du skapar en produktmall aktiverar du måttenhetskonvertering med hjälp av alternativet **Aktivera måttenhetskonverteringar** på sidan **produktinformation**.
 
 När produktmallen med frisläppta produktvarianter skapas kan enhetskonverteringar per varianter ställas in. Du hittar alternativet för att öppna sidan enhetskonvertering i samband med en produkt eller en produktvariant på följande sidor.
 

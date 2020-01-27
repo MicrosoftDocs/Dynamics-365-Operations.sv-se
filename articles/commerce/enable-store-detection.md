@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a542d6987280451910b4ff3bcfb3a109a0e028c6
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: c5fb59a9798e2cddfb75b71235ee7754e54b0e28
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697622"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945791"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivera platsbaserad butiksdetektering
 
@@ -50,16 +50,16 @@ Aktivera platsbaserad butiks identifiering i näthandelsbutiken genom att följa
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över onlinebutik](online-store-overview.md)
-
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Konfigurera ditt domännamn](configure-your-domain-name.md)
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
 
+[Skapa en e-handelsplats](create-ecommerce-site.md)
+
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
 
-[Konfigurera ditt domännamn](configure-your-domain-name.md)
-
-[Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
+[Hantera robots.txt-filer](manage-robots-txt-files.md)
 
 [Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
+
+[Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)

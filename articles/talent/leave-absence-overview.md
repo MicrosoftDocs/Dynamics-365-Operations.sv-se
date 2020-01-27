@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebfaeb0696d7200ddf3c715f96a259b91db08e7a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3376a9aec5c0003e9cc7c076c4d221a697df61ce
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1519102"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898304"
 ---
 # <a name="leave-and-absence-management"></a>Hantering av tjänstledighet och frånvaro
-
-[!include [banner](includes/banner.md)]
 
 Modulen **Tjänstledighet- och frånvarohantering** erbjuder ett flexibelt ramverk för att definiera processen av frånvarohantering. Tjänstledighets- och frånvaroplaner kan skapas för att avgöra hur medarbetare ackumulerar eller beviljas ledighet. När medarbetarna är anmälda till en plan, kan de skicka in ledighetsansökningar till cheferna för godkännande. Med ledighetsuppföljning kan både chefer på första nivån och personalchefer se hur mycket ledig tid som tagits ut, och hur mycket som finns kvar.  
 

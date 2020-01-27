@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0fad51fcb092c95103356f17618a647dd166b95
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 62d3c168967bd680b3ded56e627730324f2a5ec6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697373"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945592"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Associera en näthandelsplats med en onlinekanal
 
@@ -40,16 +40,16 @@ När du har skapat webbplatsen kan du kontrollera att den är kopplad till onlin
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över onlinebutik](online-store-overview.md)
-
-[Skapa en näthandelsplats](create-ecommerce-site.md)
+[Konfigurera ditt domännamn](configure-your-domain-name.md)
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
 
-[Konfigurera ditt domännamn](configure-your-domain-name.md)
+[Skapa en e-handelsplats](create-ecommerce-site.md)
+
+[Hantera robots.txt-filer](manage-robots-txt-files.md)
+
+[Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
 
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)
-
-[Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)

@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 2a245891e2e3e8c0eae4f28d0932776c3ee976dc
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 0f4d2b8e5f78c5815c5ad7e5eae0d13ad7d15c12
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832825"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898699"
 ---
 # <a name="formalize-business-processes"></a>Formalisera affärsprocesser
-
-[!include [banner](includes/banner.md)]
 
 Funktionen affärsprocess låter dig skapa affärsprocessmallar för processer som behöver slutföras inom organisationen. Exempelvis slutför ditt företag en årligen återkommande personalgranskning (HR). I det här fallet kan du skapa en mall som spårar uppgifter som revisionen består av. Den här mallen kan hjälpa till att garantera att alla uppgifter utförs varje gång revisionen utförs. Dessutom om uppgifterna som måste slutföras i en viss ordning kan mallen garantera att de görs i rätt ordning.
 

@@ -3,7 +3,7 @@ title: Bädda in Power Apps
 description: Det här avsnittet beskriver hur du bäddar in Power Apps till klienten för att utöka produktens funktionalitet.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824503"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870251"
 ---
 # <a name="embed-microsoft-power-apps"></a>Bädda in Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Följande instruktioner visar hur du bäddar in en PowerApp i webbklienten.
 
     - Fältet **Namn** indikerar texten som visas för knappen eller fliken som innehåller inbäddade PowerApp. Du kanske ofta vill upprepa namnet på PowerApp i det här fältet.
     - **Program-ID** är GUID för PowerApp som du vill bädda in. För att hämta det här värdet hittar du PowerApp på [web.powerapps.com](https://web.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Uppgifter**.
-    - För **Mata in data för PowerApp**, kan du även välja fältet som innehåller de data som du vill skicka till PowerApp som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga en PowerApp som använder data från Finance and Operations-appar](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps) för information om hur PowerApp kan komma åt data som skickas från Finance and Operations-appar.
+    - För **Mata in data för PowerApp**, kan du även välja fältet som innehåller de data som du vill skicka till PowerApp som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga en PowerApp som använder data från Finance and Operations-appar](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) för information om hur PowerApp kan komma åt data som skickas från Finance and Operations-appar.
     - Välj **Programstorlek** som matchar typen av PowerApp som du bäddar in. Välj **Tunn** för Power Apps som har skapats för mobila enheter och **Omfattande** för Power Apps som skapats för surfplattor. Detta säkerställer att en tillräcklig mängd utrymme avsätts för inbäddade PowerApp.
     - Snabbfliken **Juridiska personer** innehåller möjligheten att välja vilka juridiska personer som PowerApp är tillgänglig för. Standard är att visa PowerApp för alla juridiska personer.
 
@@ -101,7 +101,7 @@ Gör så här om du vill redigera en inbäddad PowerApp konfiguration:
 
 När en PowerApp har inbäddats på en sida finns det två sätt att ta bort den vid behov:
 
-- Gå till fönstret **Redigera en PowerApp** med instruktioner från sektionen [redigera en inbäddad PowerApp](#editing-an-embedded-powerapp) tidigare i det här avsnittet. Bekräfta att fönstret visar information om inbäddade PowerApp som du vill ta bort och klicka på knappen **Ta bort**.
+- Gå till fönstret **Redigera en PowerApp** med instruktioner från sektionen [redigera en inbäddad PowerApp](#editing-an-embedded-power-app) tidigare i det här avsnittet. Bekräfta att fönstret visar information om inbäddade PowerApp som du vill ta bort och klicka på knappen **Ta bort**.
 - Eftersom en inbäddad PowerApp sparas som anpassningsdata, kommer rensning av sidans anpassningar också att ta bort eventuella inbäddade Power Apps på sidan. Observera att rensa sidans anpassning är permanent och kan inte ångras. Ta bort dina anpassningar på en sida genom att markera **Alternativ** och sedan klicka på **anpassa formuläret**. Under menyn **hantera** väljer du knappen **radera**. När du har uppdaterat din webbläsare raderas alla tidigare anpassningar för den här sidan. Se[Anpassa användarupplevelsen](personalize-user-experience.md) för mer information om hur man optimerar sidor med hjälp av personalisering.
 
 ## <a name="appendix"></a>Bilaga

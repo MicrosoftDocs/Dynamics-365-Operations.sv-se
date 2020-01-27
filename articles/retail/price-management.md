@@ -3,7 +3,7 @@ title: Hantering av försäljningspris (butik)
 description: Det här avsnittet beskriver begreppen för att skapa och hantera försäljningspriser i Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025228"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934781"
 ---
 # <a name="retail-sales-price-management"></a>Prishantering för Retail-försäljning
 
@@ -221,11 +221,11 @@ En enda prissättningsmotor används för att beräkna detaljhandelspriserna i a
 
 Butiksprissättning fungerar med butiksenheter istället för icke-butiksenheter. Särskilt utformad för att ställa in priser per butik, inte per lagerställe.
 
-Butiksprissättningsmotorn stöder inte följande prissättningsfunktioner:
+Butiksprissättningsmotorn **stöder inte** följande prissättningsfunktioner:
 
-- Ange pris genom att använda dimensionerna för plats och lager
-- Attributbaserat prissättning
-- Leverantörsrabatt genomströmning
+- Det går inte att ange priser efter plats eller plats och lagringsdimensioner för lagerställe. Om du bara anger platsdimensionen på handelsavtalen ignoreras webbplatsen av butiksprissättningen och handelsavtalet tillämpas på alla webbplatser. Om du anger både webbplats och lagerställe är beteendet odefinierat/oprövat eftersom det förväntas att återförsäljare använder butikspris grupperna för att kontrollera priserna för varje butik/lagerställe.
+- Attributbaserad prissättning stöds inte.
+- Leverantörsrabattens genomströmning stöds inte.
 
 Dessutom, **endast** butiksprissättningsmotorn stöder följande prissättningsfunktioner:
 
