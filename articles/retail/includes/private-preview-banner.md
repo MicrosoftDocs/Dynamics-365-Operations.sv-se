@@ -1,2 +1,0 @@
- [!IMPORTANT]
-> <span data-ttu-id="9a970-101">Funktionen som beskrivs i det här avsnittet är tillgänglig för användarna som en del av en privat förhandsversion.</span><span class="sxs-lookup"><span data-stu-id="9a970-101">Functionality noted in this topic is available to targeted users as part of a private preview release.</span></span> <span data-ttu-id="9a970-102">Funktionen och dess innehåll kan ändras.</span><span class="sxs-lookup"><span data-stu-id="9a970-102">The content and the functionality are subject to change.</span></span> 
