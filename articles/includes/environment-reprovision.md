@@ -1,7 +1,7 @@
-När du kopierar en databas mellan olika miljöer måste du köra miljöetableringsverktyget igen innan den kopierade databasen fungerar helt och hållet och alla Retail-komponenter är uppdaterade.
+När du kopierar en databas mellan olika miljöer måste du köra miljöetableringsverktyget igen innan den kopierade databasen fungerar helt och hållet och alla Commerce-komponenter är uppdaterade.
 
 > [!IMPORTANT]
-> Vi rekommenderar att du kör den här proceduren oavsett om du använder Retail-komponenter eller inte, eftersom Retail-funktionerna ingår i alla miljöer. 
+> Vi rekommenderar att du kör den här proceduren oavsett om du använder Commerce-komponenter eller inte, eftersom Commerce-funktionerna ingår i alla miljöer. 
 
 Innan du fortsätter måste du se till att följande förutsättningar är uppfyllda:
 1. Om du uppgraderar till juliversionen 2017 (även kallad 7.2) 7.2.11792.56024 installerar du följande X++-snabbkorrigeringar för appar i målmiljön innan du kör datauppgraderingen i den miljön. Detta förhindrar att olika fel uppstår under datauppgraderingen:

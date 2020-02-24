@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Den här funktionen är tillgänglig som en allmän förhandsgranskning i sandbox- eller testmiljöer. Den är inte tillgänglig i produktionsmiljöer. Funktionen och dess innehåll kan ändras. Mer information om förhandsfunktioner finns i [Hantera funktioner](../hr-admin-manage-features.md).

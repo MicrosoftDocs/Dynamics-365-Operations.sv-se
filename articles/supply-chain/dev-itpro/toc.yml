@@ -92,7 +92,7 @@
           href: ../../dev-itpro/data-entities/recurring-integrations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Testtjänster som använder verktyg från tredje part
           href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Koppling till Finance and Operations
+    - name: Finance and Operations-koppling
       href: ../../dev-itpro/data-entities/fin-ops-connector.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Utveckling för integration
       items:
@@ -120,7 +120,7 @@
                   href: ../../dev-itpro/data-entities/dual-write-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Organisationshierarki för Common Data Service
                   href: ../../dev-itpro/data-entities/dual-write-organization.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                - name: Företagskoncept i Common Data Service
+                - name: Företagskoncept i Common Data Services
                   href: ../../dev-itpro/data-entities/dual-write-company.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                 - name: Integrerad kundmaster
                   href: ../../dev-itpro/data-entities/dual-write-customer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -138,13 +138,13 @@
               items:
                 - name: Konfigurera ett scenario för potentiell kund till pengar
                   items:
-                    - name: Prospekt till kontanter
+                    - name: Potentiell kund till kontanter
                       href: ../../supply-chain/sales-marketing/prospect-to-cash.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
                       href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
                       href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-                    - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
+                    - name: Synkronisera kontakter direkt från Sales till kontakter eller kunder i Finance and Operations
                       href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
                     - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
                       href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -332,7 +332,7 @@
           href: ../../dev-itpro/deployment/arm-onboarding.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Azure ExpressRoute och Finance and Operations
           href: ../../dev-itpro/deployment/expressroute.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Arkitektur för Finance and Operations
+        - name: Finance and Operations-arkitektur
           href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Tillämpa uppdateringar i molnmiljöer
           href: ../../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -472,7 +472,7 @@
           href: ../../dev-itpro/dev-tools/metadata-search-visual-studio.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Modeller och paket
           href: ../../dev-itpro/dev-tools/models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Projekttypen Finance and Operations
+        - name: Finance and Operations-projekttyp
           href: ../../dev-itpro/dev-tools/projects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Verktygstillägg för Visual Studio
           href: ../../dev-itpro/dev-tools/developer-tools-add-ins.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -862,7 +862,7 @@
           href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Hantera åtkomst till känsliga data
           href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Svara på begäranden om personuppgifter med hjälp av Talent
+        - name: Svara på begäranden om personuppgifter med hjälp av Human Resources
           href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Svara på begäranden om personuppgifter i AX 2012
           href: ../../dev-itpro/gdpr/gdpr-ax2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -996,7 +996,7 @@
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/event-ievent.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Kontrollmodul
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-basecontrol-icontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Behållaremodul
+            - name: Behållarmodul
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-container-icontainercontrol.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Fältmodul
               href: ../../dev-itpro/mobile-apps/platform/client-apis/modules/view-model-control-field-ifield.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1206,7 +1206,7 @@
           href: ../../dev-itpro/lcs-solutions/submit-localization-alerts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Support
   items:
-    - name: Få hjälp med Finance and Operations och Lifecycle Services
+    - name: Få support för Finance and Operations och Lifecycle Services
       href: ../../dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Översikt över Dynamics 365-support
       href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/retail/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
@@ -1216,13 +1216,13 @@
       href: ../../dev-itpro/lifecycle-services/premier-support.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Skicka begäranden till serviceteknikerteamet för Dynamics
       href: ../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Konfigurera teknisk support för Finance and Operations
+    - name: Ställa in teknisk support för Finance and Operations
       href: ../../dev-itpro/lifecycle-services/support-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Vanliga frågor och svar om fönster för planerat underhåll
       href: ../../dev-itpro/lifecycle-services/planned-maintenance-window-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Molnåtgärder och underhåll
       href: ../../dev-itpro/lifecycle-services/cloud-operations-servicing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Hantera upplevelser av support för Finance and Operations
+    - name: Hantera Finance and Operations-supportupplevelser
       href: ../../dev-itpro/lifecycle-services/cloud-powered-support-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Systemadministration
   items:
@@ -1300,9 +1300,9 @@
       items:
         - name: Uppgradera från AX 2012 till Finance and Operations
           href: ../../dev-itpro/migration-upgrade/upgrade-overview-2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
+        - name: AX 2012-uppgradering – planera med verktyget Uppgraderingsanalys
           href: ../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
+        - name: AX 2012-uppgradering – beräkna insatsen med tjänsten Koduppgradering
           href: ../../dev-itpro/migration-upgrade/analyze-code-upgrade.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: AX 2012-uppgradering – Distribuera en demonstrationsmiljö för analys
           href: ../../dev-itpro/migration-upgrade/analysis-sandbox.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -1340,11 +1340,11 @@
               href: ../../dev-itpro/migration-upgrade/upgrade-budget-planning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Flytta data från AX 2009
       items:
-        - name: Migrera data från AX 2009 till Finance and Operations
+        - name: Flytta data från AX 2009 till Finance and Operations
           href: ../../dev-itpro/migration-upgrade/data-migration-tool.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: AX 2009-migrering – installera verktyg för datamigrering
           href: ../../dev-itpro/migration-upgrade/install-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: AX 2009-migrering – Generera kartor
+        - name: AX 2009-migrering – generera kartor
           href: ../../dev-itpro/migration-upgrade/generate-maps.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: AX 2009-migrering – skapa mallar
           href: ../../dev-itpro/migration-upgrade/create-package-templates-dmt.md?toc=/dynamics365/unified-operations/supply-chain/toc.json

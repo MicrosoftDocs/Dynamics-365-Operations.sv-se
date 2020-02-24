@@ -1,45 +1,57 @@
-- name: Utveckling och administration för Finance and Operations‑appar
+- name: Utveckling och administration för Finance and Operations-appar
   items:
-    - name: Utveckling och administration för Finance and Operations‑appar
+    - name: Utveckling och administration för Finance and Operations-appar
       items:
-        - name: Dokumentation för appen Finance and Operations
+        - name: Finance and Operations-programdokumentation
           href: ../fin-ops/index.md
-        - name: Utveckling och administration för Finance and Operations‑appar
+        - name: Utveckling och administration för Finance and Operations-appar
           href: index.md
         - name: Nyheter och ändringar
           items:
-            - name: Förhandsgranskningsfunktioner i Platform update 32 (februari 2020)
-              href: get-started/whats-new-platform-update-32.md
-            - name: Platform update 31 (januari 2020)
-              href: get-started/whats-new-platform-update-31.md
-            - name: Platform update 30 (november 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-30.md
-            - name: Platform update 29 (oktober 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-29.md
-            - name: Platform update 28 (juli 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-28.md
-            - name: Platform update 27 (juni 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-27.md
-            - name: Platform update 26 (maj 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-26.md
-            - name: Platform update 25 (april 2019)
-              href: ../fin-ops/get-started/whats-new-platform-25.md
-            - name: Platform update 24 (mars 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-24.md
-            - name: Platform update 23 (januari 2019)
-              href: ../fin-ops/get-started/whats-new-platform-update-23.md
-            - name: Platform update 22 (december 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-22.md
-            - name: Platform update 21 (november 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-21.md
-            - name: Platform update 20 (september 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-20.md
-            - name: Platform update 15 (mars 2018)
-              href: ../fin-ops/get-started/whats-new-platform-update-15.md
-            - name: Nyheter och ändringar i tidigare versioner
+            - name: Nyheter och ändringar i Finance and Operations-appar
+              href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Nyheter och ändringar i Platform updates
               items:
-                - name: Nyheter och ändringar på hemsidan för Finance and Operations
-                  href: ../fin-ops/get-started/whats-new-changed.md
+                - name: Nyheter och ändringar på startsidan för Platform updates
+                  href: get-started/whats-new-home-page.md
+                - name: Platform update 33 (april 2020)
+                  href: get-started/whats-new-platform-update-33.md
+                - name: Platform update 32 (februari 2020)
+                  href: get-started/whats-new-platform-update-32.md
+                - name: Platform update 31 (januari 2020)
+                  href: get-started/whats-new-platform-update-31.md
+                - name: Platform update 30 (november 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
+                - name: Platform update 29 (oktober 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
+                - name: Platform update 28 (juli 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
+                - name: Platform update 27 (juni 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
+                - name: Platform update 26 (maj 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
+                - name: Platform update 25 (april 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-25.md
+                - name: Platform update 24 (mars 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
+                - name: Platform update 23 (januari 2019)
+                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
+                - name: Platform update 22 (december 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
+                - name: Platform update 21 (november 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
+                - name: Platform update 20 (september 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
+                - name: Platform update 15 (mars 2018)
+                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Borttagna och utfasade funktioner
+              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: AX 2012-funktioner som har senarelagts
+              href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Funktioner som ännu inte har implementerats i lokala distributioner
+              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+            - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+              href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Affärshändelser
           items:
             - name: Översikt över affärshändelser
@@ -108,7 +120,7 @@
                   href: data-entities/recurring-integrations.md
                 - name: Testtjänster som använder verktyg från tredje part
                   href: data-entities/third-party-service-test.md
-            - name: Koppling till Finance and Operations
+            - name: Finance and Operations-koppling
               href: data-entities/fin-ops-connector.md
             - name: Utveckling för integration
               items:
@@ -133,46 +145,46 @@
                     - name: 'Synkron, dubbelriktad integrering'
                       items:
                         - name: Dataintegrering nästan i realtid
-                          href: data-entities/dual-write-overview.md
+                          href: data-entities/dual-write/dual-write-overview.md
                         - name: Organisationshierarki för Common Data Service
-                          href: data-entities/dual-write-organization.md
+                          href: data-entities/dual-write/organization-mapping.md
                         - name: Företagsintegrering
                           items:
-                            - name: Företagskoncept i Common Data Service
-                              href: data-entities/dual-write-company.md
+                            - name: Företagskoncept i Common Data Services
+                              href: data-entities/dual-write/company-data.md
                             - name: Starta med företagsdata
-                              href: data-entities/dual-write-bootstrap.md
-                        - name: Integrerat kundhuvud
-                          href: data-entities/dual-write-customer.md
+                              href: data-entities/dual-write/bootstrap-company-data.md
+                        - name: Integrerad kundmaster
+                          href: data-entities/dual-write/customer-mapping.md
                         - name: Integrerad redovisning
-                          href: data-entities/dual-write-ledger.md
+                          href: data-entities/dual-write/ledger-mapping.md
                         - name: Enhetlig produktupplevelse
-                          href: data-entities/dual-write-product.md
+                          href: data-entities/dual-write/product-mapping.md
                         - name: Leverantörsintegration
                           items:
                             - name: Integrerat leverantörshuvud
-                              href: data-entities/dual-write-vendor.md
+                              href: data-entities/dual-write/vendor-mapping.md
                             - name: Växla mellan leverantörsdesigner
-                              href: data-entities/dual-write-vendor-switch.md
+                              href: data-entities/dual-write/vendor-switch.md
                         - name: Integrerade platser och lagerställen
-                          href: data-entities/dual-write-sites-and-warehouses.md
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
                         - name: Integrerat skattehuvud
-                          href: data-entities/dual-write-tax.md
+                          href: data-entities/dual-write/tax-mapping.md
                         - name: Initial synkronisering
-                          href: data-entities/dual-write-initial.md
+                          href: data-entities/dual-write/initial-sync.md
                         - name: Felsökning av dataintegrering
-                          href: data-entities/dual-write-troubleshooting.md
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                     - name: 'Asynkron, enkelriktad integrering'
                       items:
                         - name: Konfigurera ett scenario för potentiell kund till pengar
                           items:
-                            - name: Prospekt till kontanter
+                            - name: Potentiell kund till kontanter
                               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
                             - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
                               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
                             - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
                               href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                            - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
+                            - name: Synkronisera kontakter direkt från Sales till kontakter eller kunder i Finance and Operations
                               href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
                             - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
                               href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
@@ -380,7 +392,7 @@
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute och Finance and Operations
                   href: deployment/expressroute.md
-                - name: Arkitektur för Finance and Operations
+                - name: Finance and Operations-arkitektur
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: deployment/apply-deployable-package-system.md
@@ -522,7 +534,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller och paket
                   href: dev-tools/models.md
-                - name: Projekttypen Finance and Operations
+                - name: Finance and Operations-projekttyp
                   href: dev-tools/projects.md
                 - name: Verktygstillägg för Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -912,7 +924,7 @@
                   href: gdpr/gdpr-extend-person-search-report.md
                 - name: Hantera åtkomst till känsliga data
                   href: gdpr/gdpr-auditing-sensitive-data.md
-                - name: Svara på begäranden om personuppgifter med hjälp av Talent
+                - name: Svara på begäranden om personuppgifter med hjälp av Human Resources
                   href: gdpr/respond-dsr-request-talent.md
                 - name: Svara på begäranden om personuppgifter i AX 2012
                   href: gdpr/gdpr-ax2012.md
@@ -1258,7 +1270,7 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Support
           items:
-            - name: Få hjälp med Finance and Operations och Lifecycle Services
+            - name: Få support för Finance and Operations och Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Översikt över Dynamics 365-support
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
@@ -1266,13 +1278,13 @@
               href: lifecycle-services/21vianet-support.md
             - name: Skicka begäranden till serviceteknikerteamet för Dynamics
               href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-            - name: Konfigurera teknisk support för Finance and Operations
+            - name: Ställa in teknisk support för Finance and Operations
               href: lifecycle-services/support-experience.md
             - name: Vanliga frågor och svar om fönster för planerat underhåll
               href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Molnåtgärder och underhåll
               href: lifecycle-services/cloud-operations-servicing.md
-            - name: Hantera upplevelser av support för Finance and Operations
+            - name: Hantera Finance and Operations-supportupplevelser
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Systemadministration
           items:
@@ -1350,9 +1362,9 @@
               items:
                 - name: Uppgradera från AX 2012 till Finance and Operations
                   href: migration-upgrade/upgrade-overview-2012.md
-                - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
+                - name: AX 2012-uppgradering – planera med verktyget Uppgraderingsanalys
                   href: migration-upgrade/upgrade-analyzer-tool.md
-                - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
+                - name: AX 2012-uppgradering – beräkna insatsen med tjänsten Koduppgradering
                   href: migration-upgrade/analyze-code-upgrade.md
                 - name: AX 2012-uppgradering – Distribuera en demonstrationsmiljö för analys
                   href: migration-upgrade/analysis-sandbox.md
@@ -1390,11 +1402,11 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Flytta data från AX 2009
               items:
-                - name: Migrera data från AX 2009 till Finance and Operations
+                - name: Flytta data från AX 2009 till Finance and Operations
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009-migrering – installera verktyg för datamigrering
                   href: migration-upgrade/install-dmt.md
-                - name: AX 2009-migrering – Generera kartor
+                - name: AX 2009-migrering – generera kartor
                   href: migration-upgrade/generate-maps.md
                 - name: AX 2009-migrering – skapa mallar
                   href: migration-upgrade/create-package-templates-dmt.md
@@ -1672,5 +1684,7 @@
       href: ../../supply-chain/index.md
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../../retail/index.md
+      href: ../../commerce/index.md
