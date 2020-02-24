@@ -1,0 +1,8 @@
+## <a name="fiscal-calendar-integration-entity-to-msdyn_fiscalcalendars"></a><span data-ttu-id="c777d-101">Integreringsenhet för räkenskapskalender till msdyn_fiscalcalendaryears</span><span class="sxs-lookup"><span data-stu-id="c777d-101">Fiscal calendar integration entity to msdyn_fiscalcalendars</span></span>
+
+<span data-ttu-id="c777d-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="c777d-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="c777d-103">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="c777d-103">Finance and Operations field</span></span> | <span data-ttu-id="c777d-104">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="c777d-104">Map type</span></span> | <span data-ttu-id="c777d-105">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="c777d-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="c777d-106">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="c777d-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="c777d-107">CALENDARID</span><span class="sxs-lookup"><span data-stu-id="c777d-107">CALENDARID</span></span> | = | <span data-ttu-id="c777d-108">msdyn_calendar</span><span class="sxs-lookup"><span data-stu-id="c777d-108">msdyn_calendar</span></span> | 
+<span data-ttu-id="c777d-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="c777d-109">DESCRIPTION</span></span> | = | <span data-ttu-id="c777d-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="c777d-110">msdyn_description</span></span> | 

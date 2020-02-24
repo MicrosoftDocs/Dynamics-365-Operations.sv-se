@@ -1,0 +1,12 @@
+## <a name="currencies-to-transactioncurrencies"></a><span data-ttu-id="d114d-101">Valutor till transactioncurrencies</span><span class="sxs-lookup"><span data-stu-id="d114d-101">Currencies to transactioncurrencies</span></span>
+
+<span data-ttu-id="d114d-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="d114d-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="d114d-103">Källfilter: ((CURRENCYCODE != "999"))</span><span class="sxs-lookup"><span data-stu-id="d114d-103">Source filter: ((CURRENCYCODE != "999"))</span></span>
+
+<span data-ttu-id="d114d-104">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="d114d-104">Finance and Operations field</span></span> | <span data-ttu-id="d114d-105">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="d114d-105">Map type</span></span> | <span data-ttu-id="d114d-106">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="d114d-106">Other Dynamics 365 field</span></span> | <span data-ttu-id="d114d-107">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="d114d-107">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="d114d-108">CURRENCYCODE</span><span class="sxs-lookup"><span data-stu-id="d114d-108">CURRENCYCODE</span></span> | = | <span data-ttu-id="d114d-109">isocurrencycode</span><span class="sxs-lookup"><span data-stu-id="d114d-109">isocurrencycode</span></span> | 
+<span data-ttu-id="d114d-110">NAME</span><span class="sxs-lookup"><span data-stu-id="d114d-110">NAME</span></span> | = | <span data-ttu-id="d114d-111">currencyname</span><span class="sxs-lookup"><span data-stu-id="d114d-111">currencyname</span></span> | 
+<span data-ttu-id="d114d-112">SYMBOL</span><span class="sxs-lookup"><span data-stu-id="d114d-112">SYMBOL</span></span> | = | <span data-ttu-id="d114d-113">currencysymbol</span><span class="sxs-lookup"><span data-stu-id="d114d-113">currencysymbol</span></span> | 
+<span data-ttu-id="d114d-114">none</span><span class="sxs-lookup"><span data-stu-id="d114d-114">none</span></span> | >> | <span data-ttu-id="d114d-115">exchangerate</span><span class="sxs-lookup"><span data-stu-id="d114d-115">exchangerate</span></span> | <span data-ttu-id="d114d-116">1</span><span class="sxs-lookup"><span data-stu-id="d114d-116">1</span></span>

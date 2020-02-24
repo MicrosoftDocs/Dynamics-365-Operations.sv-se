@@ -1,0 +1,7 @@
+## <a name="organization-hierarchy-type-to-msdyn_internalorganizationhierarchytypes"></a><span data-ttu-id="e5fcd-101">Organisationshierarkityp till msdyn_internalorganizationhierarchytypes</span><span class="sxs-lookup"><span data-stu-id="e5fcd-101">Organization hierarchy type to msdyn_internalorganizationhierarchytypes</span></span>
+
+<span data-ttu-id="e5fcd-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="e5fcd-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="e5fcd-103">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="e5fcd-103">Finance and Operations field</span></span> | <span data-ttu-id="e5fcd-104">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="e5fcd-104">Map type</span></span> | <span data-ttu-id="e5fcd-105">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="e5fcd-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="e5fcd-106">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="e5fcd-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="e5fcd-107">NAME</span><span class="sxs-lookup"><span data-stu-id="e5fcd-107">NAME</span></span> | > | <span data-ttu-id="e5fcd-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="e5fcd-108">msdyn_name</span></span> | 

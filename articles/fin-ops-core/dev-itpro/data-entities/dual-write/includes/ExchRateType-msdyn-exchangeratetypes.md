@@ -1,0 +1,8 @@
+## <a name="exchange-rate-type-to-msdyn_exchangeratetypes"></a><span data-ttu-id="f6aa1-101">Valutakurstyp till msdyn_exchangeratetypes</span><span class="sxs-lookup"><span data-stu-id="f6aa1-101">Exchange rate type to msdyn_exchangeratetypes</span></span>
+
+<span data-ttu-id="f6aa1-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="f6aa1-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="f6aa1-103">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="f6aa1-103">Finance and Operations field</span></span> | <span data-ttu-id="f6aa1-104">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="f6aa1-104">Map type</span></span> | <span data-ttu-id="f6aa1-105">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="f6aa1-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="f6aa1-106">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="f6aa1-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="f6aa1-107">NAMN</span><span class="sxs-lookup"><span data-stu-id="f6aa1-107">NAME</span></span> | = | <span data-ttu-id="f6aa1-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="f6aa1-108">msdyn_name</span></span> | 
+<span data-ttu-id="f6aa1-109">BESKRIVNING</span><span class="sxs-lookup"><span data-stu-id="f6aa1-109">DESCRIPTION</span></span> | = | <span data-ttu-id="f6aa1-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="f6aa1-110">msdyn_description</span></span> | 

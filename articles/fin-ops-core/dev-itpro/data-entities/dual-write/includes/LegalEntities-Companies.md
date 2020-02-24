@@ -1,0 +1,8 @@
+## <a name="legal-entities-to-cdm_companies"></a><span data-ttu-id="e1581-101">Juridiska personer till cdm_companies</span><span class="sxs-lookup"><span data-stu-id="e1581-101">Legal entities to cdm_companies</span></span>
+
+<span data-ttu-id="e1581-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="e1581-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="e1581-103">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="e1581-103">Finance and Operations field</span></span> | <span data-ttu-id="e1581-104">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="e1581-104">Map type</span></span> | <span data-ttu-id="e1581-105">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="e1581-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="e1581-106">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="e1581-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="e1581-107">NAME</span><span class="sxs-lookup"><span data-stu-id="e1581-107">NAME</span></span> | = | <span data-ttu-id="e1581-108">cdm_name</span><span class="sxs-lookup"><span data-stu-id="e1581-108">cdm_name</span></span> | 
+<span data-ttu-id="e1581-109">LEGALENTITYID</span><span class="sxs-lookup"><span data-stu-id="e1581-109">LEGALENTITYID</span></span> | = | <span data-ttu-id="e1581-110">cdm_companycode</span><span class="sxs-lookup"><span data-stu-id="e1581-110">cdm_companycode</span></span> | 

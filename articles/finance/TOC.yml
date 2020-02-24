@@ -58,22 +58,24 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera lagerhållning för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations‑appar som drivs av 21Vianet i Kina
+                - name: Finance and Operations-appar som drivs av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
                 - name: Finance and Operations-appar i Frankrike
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Nyheter och ändringar
               items:
-                - name: Finance version 10.0.7 (januari 2020)
-                  href: get-started/whats-new-changed-10-0-7.md
-                - name: Finance version 10.0.6 (november 2019)
-                  href: get-started/whats-new-finance-10-0-6.md
-                - name: Nyheter och ändringar i tidigare versioner
+                - name: Nyheter och ändringar i Finance and Operations-appar
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+                - name: Nyheter och ändringar i Finance
                   items:
-                    - name: Nyheter och ändringar på hemsidan för Finance and Operations
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Finance and Operations, Enterprise edition 7.3'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
+                    - name: Nyheter och ändringar på startsidan för Finance
+                      href: get-started/whats-new-home-page.md
+                    - name: Finance version 10.0.9 (april 2020)
+                      href: get-started/whats-new-changed-10-0-9.md
+                    - name: Finance version 10.0.8 (februari 2020)
+                      href: get-started/whats-new-changed-10-0-8.md
+                    - name: Finance version 10.0.7 (januari 2020)
+                      href: get-started/whats-new-changed-10-0-7.md
                 - name: Borttagna och utfasade funktioner
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
                 - name: AX 2012-funktioner som har senarelagts
@@ -204,6 +206,8 @@
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
                 - name: Mata in fakturadata i LR-systemet genom att använda fakturapool
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+                - name: Kopiera leverantörer genom att använda delade nummerserier
+                  href: accounts-payable/vendor-copy.md
                 - name: Registrera en leverantörsfaktura i fakturajournalen
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
             - name: Granska fakturor och nyckeldata i leverantörsreskontra
@@ -264,7 +268,7 @@
                   href: cash-bank-management/tasks/vendor-payment-overview.md
                 - name: Arbetsyta för leverantörsbetalningar
                   href: accounts-payable/vendor-payments-workspace.md
-                - name: Ange en växlingskurs
+                - name: Ange växlingskursen
                   href: accounts-payable/specify-cross-rate.md
                 - name: Definiera leverantörsbetalningsavgifter
                   href: accounts-payable/tasks/define-vendor-payment-fees.md
@@ -272,9 +276,9 @@
                   href: accounts-payable/tasks/define-vendor-payment-terms.md
                 - name: Skapa leverantörsbetalningar genom att använda ett betalningsförslag
                   href: accounts-payable/create-vendor-payments-payment-proposal.md
-                - name: Återför en leverantörsbetalning
+                - name: Återföra en leverantörsbetalning
                   href: accounts-payable/reverse-vendor-payment.md
-                - name: Elektronisk rapportering för leverantörscheckar
+                - name: Exempel på elektronisk rapportering för leverantörscheckar
                   href: accounts-payable/electronic-reporting-sample-vendor-checks.md
                 - name: Översikt över förskottsfakturor och förskottsbetalningar
                   href: accounts-payable/prepayments-invoices-vs-prepayments.md
@@ -300,6 +304,18 @@
           items:
             - name: Startsida för Kundreskontra
               href: accounts-receivable/accounts-receivable.md
+            - name: Upprätta villkor för kundbetalningar
+              href: general-ledger/tasks/establish-customer-payment-terms.md
+            - name: Upprätta en betalningsmetod för kund
+              href: accounts-receivable/tasks/establish-customer-method-payment.md
+            - name: Upprätta avgifter för kundbetalning
+              href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Kundbokföringsprofiler
+              href: accounts-receivable/customer-posting-profiles.md
+            - name: Kopiera kunder genom att använda delade nummerserier
+              href: accounts-receivable/copy-customer.md
+            - name: Kundarbetsflöde
+              href: accounts-receivable/customer-workflow.md
             - name: Kredit och inkasso i kundreskontra
               href: accounts-receivable/collections-credit-accounts-receivable.md
             - name: Konfigurera kundreskontra och kredit och inkasso
@@ -324,66 +340,52 @@
               href: accounts-receivable/customer-posting-profiles.md
             - name: Översikt över SEPA-autogiro
               href: accounts-receivable/sepa-direct-debit-overview.md
-            - name: SEPA Autogiromedgivande
+            - name: Ställa in SEPA Autogiromedgivande
               href: accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Inställning, auktorisering och registrering av kreditkort'
               href: accounts-receivable/credit-card-authorizations.md
             - name: Skapa en fritextfaktura
               href: accounts-receivable/create-free-text-invoice-new.md
+            - name: Redovisningsfördelningar och poster i redovisningsjournaler för fritextfakturor
+              href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Skapa en mall för fritextfaktura
               href: accounts-receivable/create-free-text-invoice-template-new.md
             - name: Korrigera en fritextfaktura
               href: accounts-receivable/correct-free-text-invoice.md
             - name: Tilldela en mall för fritextfaktura till en kund
               href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+            - name: Ställa in och bearbeta återkommande fakturor
+              href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Generera och bokför återkommande fritextfakturor
               href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
             - name: Skapa fakturor för försäljningsorder
               href: accounts-receivable/tasks/create-sales-order-invoices.md
-            - name: Ställa in räntesatser för en räntekod
-              href: accounts-receivable/set-up-interest-rates-interest-code.md
-            - name: 'Efterskänk, återställ eller återför ränteavgifter'
-              href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
-            - name: Beräkna ränta
-              href: accounts-receivable/tasks/process-interest.md
             - name: Skapa en kundfaktura
               href: accounts-receivable/configure-customer-invoices.md
-            - name: Sätt in kundbetalningar
-              href: accounts-receivable/tasks/deposit-customer-payments.md
-            - name: Upprätta villkor för kundbetalningar
-              href: general-ledger/tasks/establish-customer-payment-terms.md
-            - name: Upprätta en betalningsmetod för kund
-              href: accounts-receivable/tasks/establish-customer-method-payment.md
-            - name: Upprätta avgifter för kundbetalning
-              href: accounts-receivable/tasks/establish-customer-payment-fees.md
-            - name: Ställ in växlar
+            - name: Listsida för kundtransaktioner
+              href: accounts-receivable/customer-transactions-list-page.md
+            - name: Ställa in växlar
               href: accounts-receivable/set-up-bills-exchange.md
-            - name: Stäng kundreskontra
+            - name: Stänga kundreskontra
               href: accounts-receivable/close-accounts-receivable.md
-            - name: Skapa in en kravbrevsserie
-              href: accounts-receivable/tasks/create-collection-letter-sequence.md
-            - name: Bearbeta kravbrev
-              href: accounts-receivable/tasks/process-collection-letters.md
-            - name: Skapa ett autogiromedgivande för en kund
-              href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-            - name: Skapa en räntekod med ett intervall
-              href: accounts-receivable/tasks/create-interest-code-range.md
-            - name: Skapa en avskrivningsjournal för en kund
-              href: accounts-receivable/tasks/create-write-off-journal-customer.md
-            - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
-              href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-            - name: Kopiera kunder genom att använda delade nummerserier
-              href: accounts-receivable/copy-customer.md
-            - name: Kundarbetsflöde
-              href: accounts-receivable/customer-workflow.md
             - name: Betalningar och kvittningar
               items:
+                - name: Översikt över intäktsredovisning
+                  href: accounts-receivable/revenue-recognition-overview.md
                 - name: Översikt över kundbetalning
                   href: cash-bank-management/tasks/customer-payment-overview.md
-                - name: Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder
-                  href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Centraliserade kundreskontrabetalningar
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
+                - name: Sätt in kundbetalningar
+                  href: accounts-receivable/tasks/deposit-customer-payments.md
+                - name: Översikt över SEPA-autogiro
+                  href: accounts-receivable/sepa-direct-debit-overview.md
+                - name: SEPA Autogiromedgivande
+                  href: accounts-receivable/sepa-direct-debit-mandate.md
+                - name: Skapa ett autogiromedgivande för en kund
+                  href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+                - name: Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder
+                  href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Kvitta en kunddelbetalning eller slutlig betalning före rabatt
                   href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
                 - name: Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
@@ -396,8 +398,48 @@
                   href: accounts-receivable/reimburse-customers.md
                 - name: Kundbetalningar för ett delbelopp
                   href: accounts-receivable/customer-payments-partial-amount.md
-                - name: Listsida för kundtransaktioner
-                  href: accounts-receivable/customer-transactions-list-page.md
+            - name: Kredit och inkasso
+              items:
+                - name: Kredit och inkasso – översikt
+                  href: accounts-receivable/cm-credit-and-collections-overview.md
+                - name: Inställning för kredithantering
+                  href: accounts-receivable/cm-credit-mgmt-setup.md
+                - name: Information om inställning för kredithantering
+                  href: accounts-receivable/cm-setup-information.md
+                - name: Lägga till information om kredithantering för en kund
+                  href: accounts-receivable/cm-add-credit-mgmt-information-customer.md
+                - name: Kreditgrupper för kund
+                  href: accounts-receivable/cm-customer-credit-groups.md
+                - name: Kreditgränsjusteringar
+                  href: accounts-receivable/cm-credit-limit-adjustments.md
+                - name: Kreditspärrar för försäljningsorder
+                  href: accounts-receivable/cm-sales-order-credit-holds.md
+                - name: Periodiska kredithanteringsuppgifter
+                  href: accounts-receivable/cm-periodic-tasks.md
+                - name: Nyckelkoncept för inkassohantering
+                  href: accounts-receivable/cm-collections-concepts.md
+                - name: Konfigurera kundreskontra och kredit och inkasso
+                  href: accounts-receivable/accounts-receivables-set-up-overview.md
+                - name: Ställa in kredit och inkasso
+                  href: accounts-receivable/set-up-collections.md
+            - name: Ställa in räntesatser för en räntekod
+              href: accounts-receivable/set-up-interest-rates-interest-code.md
+            - name: Skapa en räntekod med ett intervall
+              href: accounts-receivable/tasks/create-interest-code-range.md
+            - name: 'Efterskänka, återställa eller återföra ränteavgifter'
+              href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
+            - name: Beräkna ränta
+              href: accounts-receivable/tasks/process-interest.md
+            - name: Granska inkasseringsinformation
+              href: accounts-receivable/tasks/review-collections-information.md
+            - name: Skapa in en kravbrevsserie
+              href: accounts-receivable/tasks/create-collection-letter-sequence.md
+            - name: Bearbeta kravbrev
+              href: accounts-receivable/tasks/process-collection-letters.md
+            - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
+              href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Skapa en avskrivningsjournal för en kund
+              href: accounts-receivable/tasks/create-write-off-journal-customer.md
         - name: Budgetering
           items:
             - name: Startsidan Budgetering
@@ -416,6 +458,8 @@
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
             - name: Budgetplaneringsmallar för Excel
               href: budgeting/budget-planning-excel-templates.md
+            - name: Utöka budgetplaneringens layout
+              href: budgeting/extending-budget-planning-layout.md
             - name: Felsökning av befattningsbudgetering
               href: budgeting/position-budgeting-set-up-issues.md
             - name: Budgetplanering
@@ -452,9 +496,9 @@
               href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
             - name: Remburser och importinkasso
               href: cash-bank-management/letters-of-credit-import-collections.md
-            - name: Exportera en remburs
+            - name: Exportera remburs
               href: cash-bank-management/tasks/export-letter-credit.md
-            - name: Importera en remburs
+            - name: Importera remburs
               href: cash-bank-management/tasks/import-letter-credit.md
             - name: Garantier
               href: cash-bank-management/letters-of-guarantee.md
@@ -482,19 +526,19 @@
               href: accounts-payable/prepayments-invoices-vs-prepayments.md
             - name: Hantera kassarabatter för överbetalningar
               href: cash-bank-management/cash-discount-handling-overpayments.md
-            - name: Ställ in centraliserade leverantörsbetalningar
+            - name: Ställa in centraliserade betalningar
               href: cash-bank-management/set-up-centralized-payments.md
             - name: Automatisk kvittning och prioritering
               href: accounts-receivable/automatic-settlement-prioritization.md
-            - name: Enkel bankavstämning
+            - name: Stämma av ett bankkonto
               href: cash-bank-management/reconcile-bank-account.md
             - name: Avancerad bankavstämning
               items:
-                - name: Inställningsuppgifter för avancerad bankavstämning
+                - name: Inställningsprocess för avancerad bankavstämning
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Ställ in import av avancerad bankavstämning
+                - name: Ställa in import av avancerad bankavstämning
                   href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
-                - name: Ställ in matchningsregler för bankavstämning
+                - name: Ställa in matchningsregler för bankavstämning
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Stäm av bankutdrag med hjälp av avancerad bankavstämning
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
@@ -598,6 +642,10 @@
               href: expense-management/expense-workflows.md
             - name: Arbetsflöde för utgiftshantering
               href: expense-management/expense-workflow.md
+            - name: Hantera delegering av utgifter
+              href: expense-management/manage-expense-delegation.md
+            - name: Bearbetning av utgiftskvitto
+              href: expense-management/expense-receipt-processing.md
             - name: Importera och underhålla kreditkortstransaktioner
               href: expense-management/import-credit-card.md
             - name: Fördelningar på en utgiftsrapport
@@ -790,7 +838,7 @@
                   href: general-ledger/process-allocations.md
                 - name: Ekonomiska dimensioner
                   href: general-ledger/financial-dimensions.md
-                - name: Konsolideringskontogrupper och konton
+                - name: Konsolideringskontogrupper och ytterligare konsolideringskonton
                   href: budgeting/consolidation-account-groups-consolidation-accounts.md
                 - name: Översikt över konsolidering och eliminering
                   href: budgeting/consolidation-elimination-overview.md
@@ -830,6 +878,8 @@
                   href: general-ledger/tasks/create-journal-entry-template.md
                 - name: Skapa periodiseringtransaktioner i redovisningen
                   href: general-ledger/tasks/create-ledger-accrual-transactions.md
+                - name: Överföring av delredovisning till redovisning
+                  href: general-ledger/subledger-transfer.md
                 - name: Publicera journalrader och dokument från Excel
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Visa poster i redovisningsjournal och transaktioner
@@ -916,7 +966,7 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Konfigurera standardkostnader för arbetskraft och utgifter
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
-            - name: Inköpsinleveranser för periodisering av projektkostnader
+            - name: Periodisering av projektkostnader på inköpskvitton
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Projektfakturering
               href: accounts-payable/project-invoicing.md
@@ -962,6 +1012,8 @@
               href: public-sector/forecast-positions.md
             - name: Prognospositionsrapporter inom offentlig sektor
               href: public-sector/forecast-position-reports.md
+            - name: Ställa in och köra förfrågan om kassaposition
+              href: public-sector/cash-position-inquiry-setup.md
             - name: Leverantörsreskontra i offentlig sektor
               items:
                 - name: Leverantörsreskontra i offentlig sektor – översikt
@@ -1068,6 +1120,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Komponenter i ekonomisk rapport
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Valutafunktioner i ekonomisk rapportering
+              href: general-ledger/financial-reporting-currency-capability.md
             - name: Ekonomiska rapporter för balansräkning
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Generera ekonomiska rapporter
@@ -1242,6 +1296,8 @@
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: SPED-skatt 2020 – kompletterande information om ICMS-ST för SPED-skattelayout 014
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
+                - name: SPED-skatt – layout 014
+                  href: localizations/latam-bra-sped-fiscal-layout-014.md
                 - name: Parametrar för juridiska personer
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Ställa in parametrar för juridisk person
@@ -1328,7 +1384,7 @@
               items:
                 - name: Kina – översikt
                   href: localizations/china.md
-                - name: Finance and Operations drivs av 21Vianet i Kina
+                - name: Finance and Operations – drivs av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Jämförelse av strukturlista
                   href: localizations/apac-chn-bom-comparison.md
@@ -1554,6 +1610,8 @@
                   href: localizations/emea-tax-directives.md
                 - name: Uppdatera hur belopp visas i rapporter och dokument
                   href: localizations/emea-amount-printing-forms.md
+                - name: Använda räkenskapsdata från ett fakturakonto
+                  href: localizations/use-fiscal-data-from-invoice-account.md
                 - name: Mervärdesskatt (moms)
                   items:
                     - name: Skapa moms-ID
@@ -1911,10 +1969,16 @@
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Avancerad noteringshantering
                   href: localizations/emea-ita-exil-structured-notes.md
+                - name: Avsiktsbrev – fakturera vanliga exportörer
+                  href: localizations/emea-ita-exil-intent-letter.md
                 - name: Momsfaktura för fraktfria varor
                   href: localizations/emea-ita-exil-goods-for-free.md
                 - name: Förbättrad förfrågan om debet- eller kreditkvittningar
                   href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+                - name: Allmänna redovisningssimuleringar (Italien)
+                  href: localizations/emea-ita-exil-general-ledger-simulations.md
+                - name: Unik certifiering
+                  href: localizations/emea-ita-exil-unique-certification.md
             - name: Japan
               items:
                 - name: Japan – översikt
@@ -2099,6 +2163,8 @@
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: Momsutdragsinformation
                   href: localizations/emea-ltu-vat-statement-details.md
+                - name: i.SAF-rapportering för Litauen
+                  href: localizations/emea-ltu-isaf.md
             - name: Malaysia
               items:
                 - name: Malaysia – översikt
@@ -2231,6 +2297,10 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Redovisningsöversättning
                       href: localizations/rus-ledger-translation-procedure.md
+                    - name: Rapporter med omsättnings- och saldoutdrag
+                      href: localizations/rus-turnover-balance-statement-reports.md
+                    - name: Rapporter om kontoaktivitet
+                      href: localizations/rus-account-activity-reports.md
                 - name: Förskottsmottagare
                   items:
                     - name: Förskottsmottagare i Ryssland – översikt
@@ -2339,12 +2409,26 @@
                       href: localizations/rus-miscellaneous-charges.md
                     - name: Tillägg för tredje part
                       href: localizations/rus-third-party-misc-charges.md
+                    - name: Avtal
+                      items:
+                        - name: Avtal – översikt
+                          href: localizations/rus-agreements.md
+                        - name: Ställa in och skapa avtal
+                          href: localizations/rus-set-up-and-create-agreements.md
+                        - name: Registrera transaktioner med referens till avtal
+                          href: localizations/rus-register-transactions-with-reference-to-agreements.md
+                        - name: Förfrågningar och rapporter med avtal
+                          href: localizations/rus-inquiries-reports-agreements.md
                 - name: Lager
                   items:
                     - name: Varor på väg från leverantör
                       href: localizations/rus-goods-transit-vendor.md
                     - name: Tulldeklarationsnummer
                       href: localizations/rus-custom-declaration-number.md
+                    - name: Lagerkostnadsstruktur
+                      href: localizations/rus-inventory-cost-structure.md
+                    - name: Lagerjusteringsguide
+                      href: localizations/rus-inventory-adjustment-wizard.md
                 - name: Rapportering
                   items:
                     - name: Ekonomisk rapportering
@@ -2359,6 +2443,8 @@
                       href: localizations/rus-transport-tax-declaration.md
                     - name: Deklaration för markvärdesmoms
                       href: localizations/rus-land-tax-declaration.md
+                    - name: Vinstskattdeklaration
+                      href: localizations/rus-profit-tax-declaration.md
                 - name: Organisationsadministration
                   items:
                     - name: Momsregistreringsinformation som berör adress
@@ -2457,6 +2543,10 @@
                   href: localizations/apac-tha-unrealized-vat.md
                 - name: Källskatt
                   href: localizations/apac-tha-withholding-tax.md
+            - name: Förenade Arabemiraten (UAE)
+              items:
+                - name: Ställa in och rapportera mervärdesskatt (moms)
+                  href: localizations/uae-vat-setup-reporting.md
             - name: Storbritannien
               items:
                 - name: Storbritannien – översikt
@@ -2489,51 +2579,59 @@
           items:
             - name: Personal – översikt
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Utveckla en personalstrategi
+            - name: Ställa in personal
               items:
-                - name: Skapa mål
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-goal.md
-                - name: 'Organisera arbetsstyrkan med avdelningar, jobb och befattningar'
-                  href: ../talent/departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Ställ in jobbkomponenter
-                  href: ../talent/create-job.md?toc=/dynamics365/finance/toc.json
-                - name: Definiera nya avdelningar
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-new-departments.md
-                - name: Definiera nya jobb
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-new-jobs.md
-                - name: Skapa en avdelning och associera den med avdelningshierarkin
-                  href: ../talent/create-department-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa kalendrar och generera arbetstider
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-calendar-working-times.md
-                - name: Ställa in personalparametrar för juridiska personer
-                  href: ../talent/set-up-hr-parameters-across-legal-entities.md?toc=/dynamics365/finance/toc.json
-                - name: Ställa in företagsspecifika personalparametrar
-                  href: ../talent/set-up-company-specific-hr-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurera personalparametrar
+                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurera delade personalparametrar
+                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
+                - name: Ställa in arbetsflöden för personal
+                  href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
+                - name: Förstå Datum- och tid-fält
+                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
+            - name: Hantera personal
+              items:
+                - name: Organisera personalen
+                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Ställa in komponenter för ett jobb
+                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Definiera avdelningar
+                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
+                - name: Lägga till en avdelning i en hierarki
+                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
+                - name: Definiera jobb
+                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa en arbetstidskalender
+                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
                 - name: Vanliga frågor och svar om personalåtgärder
-                  href: ../talent/personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Använd arbetsflöde för att hantera medarbetarinformation
-                  href: ../talent/workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: Ändra rapporteringsrelationer för befattningar
-                  href: ../fin-ops-core/fin-ops/hr/tasks/modify-reporting-relationships-position.md
-                - name: Godkänna poster för ansökningsinkorg
-                  href: ../fin-ops-core/fin-ops/hr/tasks/approve-application-inbox-records.md
+                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
+                - name: Använda arbetsflöden för att hantera medarbetarinformation
+                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
+                - name: Ändra rapporteringsrelationer för en befattning
+                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
                 - name: Ange arbetarinformation
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-worker-information.md
+                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
                 - name: Låna ut artiklar till arbetare
-                  href: ../fin-ops-core/fin-ops/hr/tasks/loan-item-worker.md
+                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
                 - name: Skapa låneartiklar
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-loan-items.md
-                - name: Hantera artiklar utlånade till arbetare
-                  href: ../talent/loan-items.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
+                - name: Hantera låneartiklar
+                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
                 - name: Utveckla en successionsplan
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-succession-plan.md
+                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
                 - name: Ange projekttidrapporter
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-project-timesheets.md
-                - name: Hantera e-postmallar
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-email-templates.md
-                - name: Hantera frånvaro
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-leave-absence.md
-            - name: Rekrytering
+                  href: ../human-resources/hr-personnel-enter-project-timesheets.md?toc=/dynamics365/finance/toc.json
+                - name: Massanställningsprojekt
+                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa ett massanställningsprojekt
+                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
+                - name: Ställa in befattningar
+                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
+                - name: Ställa in information om skador och sjukdomar
+                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+                - name: Underhålla information om medarbetares skador och sjukdomar
+                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
+            - name: Rekrytera kandidater
               items:
                 - name: Hantera rekryteringsprocesser
                   href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
@@ -2545,7 +2643,7 @@
                   href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
                 - name: Utveckla och öppna jobbrekvisitioner
                   href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Ställ in befattningar
+                - name: Ställa in befattningar
                   href: ../fin-ops-core/fin-ops/hr/tasks/set-up-positions.md
                 - name: Anställa kandidater via rekrytering
                   href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
@@ -2553,76 +2651,80 @@
                   href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
                 - name: Identifiera och distribuera kandidaturvalsverktyg
                   href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Motivera medarbetare
+            - name: Ställ in kompensationsplaner
               items:
-                - name: Kompensationsplaner
-                  href: ../talent/compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa planer för fast kompensation
-                  href: ../talent/create-fixed-compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa planer för variabel kompensation
-                  href: ../talent/create-variable-compensation-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Definiera kompensationsprocesser och beräkna resultat
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-compensation-process-calculate-results.md
-                - name: Bearbeta kompensation
-                  href: ../talent/process-compensation.md?toc=/dynamics365/finance/toc.json
+                - name: Översikt över kompensationsplaner
+                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Ställa in kompensationsrutnät
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-compensation-grids.md
-                - name: Utveckla strukturer och planer för lön/kompensation
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-salary-compensation-structure-plan.md
-                - name: Lägga till information i din resultatjournal och skicka beröm
-                  href: ../fin-ops-core/fin-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md
+                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
+                - name: Utveckla en struktur och plan för kompensation
+                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa planer för fast kompensation
+                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa planer för variabel kompensation
+                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
                 - name: Registrera medarbetare i en fast kompensationsplan
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-employee-fixed-compensation-plan.md
+                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
                 - name: Registrera medarbetare i en variabel kompensationsplan
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-employee-variable-compensation-plan.md
-                - name: Skapa resultatöversyner
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-performance-review.md
-            - name: Utveckla och utbilda medarbetare
+                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
+                - name: Definiera kompensationsprocessen och beräkna resultat
+                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
+                - name: Bearbeta kompensationsplaner
+                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
+            - name: Hantera förmåner
+              items:
+                - name: Definiera och hantera ett förmånsprogram
+                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
+                - name: Policyer för förmånsberättigande
+                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
+                - name: Process för förmånsberättigande
+                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
+                - name: Definiera förmånsberättiganderegler och policyer
+                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
+                - name: Utveckla ett förmånsprogram för medarbetare
+                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa nya förmåner
+                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
+                - name: Anmäl arbetare till förmåner
+                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
+                - name: Hantera utgångsdatum för förmån
+                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
+                - name: Generera ACA-rapporter
+                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Utveckla medarbetare
               items:
                 - name: Översikt över prestationshantering
-                  href: ../talent/performance-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Anpassa personalens kompetenser efter affärsbehov
-                  href: ../talent/skills.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
+                - name: Anpassa personalens kompetenser
+                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
+                - name: Lägga till i din resultatjournal
+                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa ett mål
+                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa en resultatöversyn
+                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
+            - name: Skapa kurser
+              items:
                 - name: Skapa utbildningar
-                  href: ../talent/courses.md?toc=/dynamics365/finance/toc.json
-            - name: Skapa och underhålla förmåner
-              items:
-                - name: Hantera ett förmånsprogram
-                  href: ../talent/manage-benefit-program.md?toc=/dynamics365/finance/toc.json
-                - name: Policyer för förmånsberättigande
-                  href: ../talent/benefit-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-                - name: Process för förmånsberättigande
-                  href: ../fin-ops-core/fin-ops/hr/tasks/benefit-eligibility-process.md
-                - name: Definiera förmånsberättiganderegler och policyer
-                  href: ../fin-ops-core/fin-ops/hr/tasks/define-benefit-eligibility-rules-policies.md
-                - name: Utveckla ett förmånsprogram för medarbetare
-                  href: ../fin-ops-core/fin-ops/hr/tasks/deliver-employee-benefits-program.md
-                - name: Skapa nya förmåner
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-new-benefit.md
-                - name: Registrera arbetare för förmåner och ta bort förmåner från arbetare
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enroll-remove-benefits-workers.md
-                - name: Hantera utgångsdatum för förmån
-                  href: ../fin-ops-core/fin-ops/hr/tasks/manage-benefit-expiration-dates.md
-            - name: Samla in information med enkäter
-              items:
-                - name: Enkäter
-                  href: ../talent/questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Utforma en enkät
-                  href: ../talent/design-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Distribuera och slutföra en enkät
-                  href: ../talent/distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
+                - name: Enkätöversikt
+                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Utforma enkäter
+                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
+                - name: Skicka ut och schemalägga enkäter
+                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
                 - name: Distribuera enkäter med hjälp av tidsplanering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/distribute-questionnaires-scheduling.md
-                - name: Utvärdera resultaten av en enkät
-                  href: ../talent/evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
+                - name: Visa enkätresultat
+                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
                 - name: Analysera enkätresultat
-                  href: ../fin-ops-core/fin-ops/hr/tasks/analyze-questionnaire-results.md
-                - name: Skapa öppna frågor
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-open-ended-question.md
-                - name: Skapa stängda frågor
-                  href: ../fin-ops-core/fin-ops/hr/tasks/create-closed-ended-question.md
-                - name: Skapa frågor beroende av svaret på den föregående frågan
-                  href: ../fin-ops-core/fin-ops/hr/tasks/make-question-dependent-answer-previous-question.md
+                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa en öppen fråga
+                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa en stängd avslutad fråga
+                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa en beroende fråga
+                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
             - name: Arbetsplatssäkerhet och efterlevnad (USA)
               items:
                 - name: Verifiering av I-9-formulär
@@ -2631,14 +2733,10 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
                 - name: Ställa in dokumenttyper för 1-9-formulär
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-                - name: Efterleva Americans with Disabilities Act
+                - name: Uppfyll Americans with Disabilities Act
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
                 - name: Hantera arbetstagarnas logi
                   href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
-                - name: Ställa in information om skador och sjukdomar
-                  href: ../fin-ops-core/fin-ops/hr/tasks/set-up-injury-illness-information.md
-                - name: Underhålla information om medarbetares skador och sjukdomar
-                  href: ../fin-ops-core/fin-ops/hr/tasks/maintain-employee-injury-illness-information.md
         - name: Intelligence
           items:
             - name: Intelligence – startsida
@@ -2653,7 +2751,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: Förmåner
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Kassaöversikt
+                - name: Kassaöversikt Power BI-innehåll
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
                 - name: Ekonomichef – översikt
                   href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/finance/toc.json
@@ -2779,8 +2877,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
                     - name: Uppgradera formatet genom att implementera en ny basversion för formatet
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json
-                - name: Formeldesigner i elektronisk rapportering
-                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                - name: Formeldesigners i elektronisk rapportering
+                  items:
+                    - name: Receptdesigner
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+                    - name: Avancerad formeldesigner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
                 - name: Formelspråk och formelfunktioner
                   items:
                     - name: Formelspråk
@@ -2895,10 +2997,10 @@
                           items:
                             - name: Funktioner för poster
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?toc=/dynamics365/finance/toc.json
-                            - name: NullContainer
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
                             - name: EmptyRecord
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-emptyrecord.md?toc=/dynamics365/finance/toc.json
+                            - name: NullContainer
+                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?toc=/dynamics365/finance/toc.json
                         - name: Text
                           items:
                             - name: Textfunktioner
@@ -2973,8 +3075,6 @@
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/finance/toc.json
                             - name: FA_Balance
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/finance/toc.json
-                            - name: CH_Bank_Mod_10
-                              href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-chbankmode10.md?toc=/dynamics365/finance/toc.json
                             - name: FA_Sum
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/finance/toc.json
                             - name: GetCurrentCompany
@@ -2995,37 +3095,37 @@
                           items:
                             - name: Funktioner för typkonvertering
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?toc=/dynamics365/finance/toc.json
-                            - name: Int64Value
+                            - name: 'Typ: Int64Value'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-int64value.md?toc=/dynamics365/finance/toc.json
-                            - name: IntValue
+                            - name: 'Typ: IntValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-intvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: NumberValue
+                            - name: 'Typ: NumberValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
-                            - name: Value
+                            - name: 'Typ: Value'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Datum och tid-kategori: DateTimeValue'
+                            - name: 'Datum och tid: DateTimeValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Datum och tid-kategori: DateToDateTime'
+                            - name: 'Datum och tid: DateToDateTime'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Datum och tid-kategori: DateValue'
+                            - name: 'Datum och tid: DateValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listkategori: List'
+                            - name: 'Lista: List'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listkategori: ListOfFields'
+                            - name: 'List: ListOfFields'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listkategori: Split'
+                            - name: 'List: Split'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Listkategori: StringJoin'
+                            - name: 'List: StringJoin'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Textkategori: Char'
+                            - name: 'Text: Char'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Textkategori: GuidValue'
+                            - name: 'Text: GuidValue'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Textkategori: NumberFormat'
+                            - name: 'Text: NumberFormat'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Textkategori: QrCode'
+                            - name: 'Text: QrCode'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
-                            - name: 'Textkategori: Text'
+                            - name: 'Text: Text'
                               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
                 - name: Hantera ER-modellmappning i separata ER-konfigurationer
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -3151,7 +3251,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
                 - name: Självstudier
                   items:
-                    - name: Använd kopplingsdatakällor för att hämta data från flera programtabeller i ER-modellmappningar (elektronisk rapportering)
+                    - name: Använd JOIN-datakällor för att hämta data från flera programregister
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
                     - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
@@ -3159,6 +3259,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
                     - name: Ställa in parametrarna för ett ER-format per juridisk person
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+                    - name: Periodisera körning av element i ER-format
+                      items:
+                        - name: Periodisera körning av ett sekvenselement
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                        - name: Periodisera körning av ett XML-element
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
                 - name: Använd elektroniska rapporteringslösningar i Finance and Operations
                   items:
                     - name: Konfigurera ramverket
@@ -3173,11 +3279,27 @@
                       items:
                         - name: Översikt över destinationer
                           href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
+                        - name: Destinationstyper
+                          items:
+                            - name: Arkivdestination
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                            - name: E-postdestination
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                            - name: Fildestination
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                            - name: Power BI-destination
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                            - name: Skrivardestination
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                            - name: Skärmdestination
+                              href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
                         - name: Konfigurera destinationer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Ställa in en referens till ett ER-format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Validera genererade rapporter automatiskt
                       items:
-                        - name: Spåra genererade rapportresultat och jämför dem med baslinjevärden
+                        - name: Spåra genererade rapportresultat och jämföra dem med baslinjevärden
                           href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
                         - name: Förbättringar i spårningsresultat av genererade ER-rapporter och jämförelser med originalvärden
                           href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
@@ -3195,9 +3317,11 @@
                       items:
                         - name: Hantering av affärsdokument – översikt
                           href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                        - name: Nytta användargränssnitt för dokument vid affärsdokumenthantering
+                          href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
                         - name: Lägga till nya fält i en affärsdokumentmall i Microsoft Excel
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
-                - name: API för ER‑ramverk
+                - name: API för ER-ramverk
                   items:
                     - name: Utöka listan med funktioner för elektronisk rapportering
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
@@ -3557,9 +3681,11 @@
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Kvitta transaktioner med CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Finance and Operations‑appar för utveckling och administration
+    - name: Utveckling och administration av Finance and Operations-appar
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
+    - name: Dynamics 365 Commerce
+      href: ../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../retail/index.md
+      href: ../commerce/index.md

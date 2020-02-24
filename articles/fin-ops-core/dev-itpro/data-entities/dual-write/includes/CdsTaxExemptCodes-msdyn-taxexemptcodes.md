@@ -1,0 +1,8 @@
+## <a name="sales-tax-exempt-code-entity-cds-to-msdyn_taxexemptcodes"></a><span data-ttu-id="8bd48-101">Momsbefrielsekods enhets-CDS till msdyn_taxexemptcodes</span><span class="sxs-lookup"><span data-stu-id="8bd48-101">Sales tax exempt code entity CDS to msdyn_taxexemptcodes</span></span>
+
+<span data-ttu-id="8bd48-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="8bd48-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="8bd48-103">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="8bd48-103">Finance and Operations field</span></span> | <span data-ttu-id="8bd48-104">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="8bd48-104">Map type</span></span> | <span data-ttu-id="8bd48-105">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="8bd48-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="8bd48-106">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="8bd48-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="8bd48-107">NAMN</span><span class="sxs-lookup"><span data-stu-id="8bd48-107">NAME</span></span> | = | <span data-ttu-id="8bd48-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="8bd48-108">msdyn_name</span></span> | 
+<span data-ttu-id="8bd48-109">BESKRIVNING</span><span class="sxs-lookup"><span data-stu-id="8bd48-109">DESCRIPTION</span></span> | = | <span data-ttu-id="8bd48-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="8bd48-110">msdyn_description</span></span> | 

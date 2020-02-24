@@ -1,0 +1,8 @@
+## <a name="withholding-tax-groups-to-msdyn_withholdingtaxgroups"></a><span data-ttu-id="0ab71-101">Källskattegrupper till msdyn_withholdingtaxgroups</span><span class="sxs-lookup"><span data-stu-id="0ab71-101">Withholding tax groups to msdyn_withholdingtaxgroups</span></span>
+
+<span data-ttu-id="0ab71-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="0ab71-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="0ab71-103">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="0ab71-103">Finance and Operations field</span></span> | <span data-ttu-id="0ab71-104">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="0ab71-104">Map type</span></span> | <span data-ttu-id="0ab71-105">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="0ab71-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="0ab71-106">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="0ab71-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="0ab71-107">WITHHOLDINGTAXGROUPCODE</span><span class="sxs-lookup"><span data-stu-id="0ab71-107">WITHHOLDINGTAXGROUPCODE</span></span> | = | <span data-ttu-id="0ab71-108">msdyn_name</span><span class="sxs-lookup"><span data-stu-id="0ab71-108">msdyn_name</span></span> | 
+<span data-ttu-id="0ab71-109">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="0ab71-109">DESCRIPTION</span></span> | = | <span data-ttu-id="0ab71-110">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="0ab71-110">msdyn_description</span></span> | 

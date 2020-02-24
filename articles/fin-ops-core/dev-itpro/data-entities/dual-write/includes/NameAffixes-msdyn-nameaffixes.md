@@ -1,0 +1,9 @@
+## <a name="name-affixes-to-msdyn_nameaffixes"></a><span data-ttu-id="1f733-101">Namnaffix till msdyn_nameaffixes</span><span class="sxs-lookup"><span data-stu-id="1f733-101">Name affixes to msdyn_nameaffixes</span></span>
+
+<span data-ttu-id="1f733-102">Den här mallen synkroniserar data mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="1f733-102">This template synchronizes data between Finance and Operations apps and Common Data Service.</span></span>
+
+<span data-ttu-id="1f733-103">Finance and Operations-fält</span><span class="sxs-lookup"><span data-stu-id="1f733-103">Finance and Operations field</span></span> | <span data-ttu-id="1f733-104">Mappningstyp</span><span class="sxs-lookup"><span data-stu-id="1f733-104">Map type</span></span> | <span data-ttu-id="1f733-105">Övriga Dynamics 365-fält</span><span class="sxs-lookup"><span data-stu-id="1f733-105">Other Dynamics 365 field</span></span> | <span data-ttu-id="1f733-106">Standardvärde</span><span class="sxs-lookup"><span data-stu-id="1f733-106">Default value</span></span>
+---|---|---|---
+<span data-ttu-id="1f733-107">AFFIX</span><span class="sxs-lookup"><span data-stu-id="1f733-107">AFFIX</span></span> | = | <span data-ttu-id="1f733-108">msdyn_affix</span><span class="sxs-lookup"><span data-stu-id="1f733-108">msdyn_affix</span></span> | 
+<span data-ttu-id="1f733-109">TYPE</span><span class="sxs-lookup"><span data-stu-id="1f733-109">TYPE</span></span> | >< | <span data-ttu-id="1f733-110">msdyn_affixtype</span><span class="sxs-lookup"><span data-stu-id="1f733-110">msdyn_affixtype</span></span> | 
+<span data-ttu-id="1f733-111">DESCRIPTION</span><span class="sxs-lookup"><span data-stu-id="1f733-111">DESCRIPTION</span></span> | = | <span data-ttu-id="1f733-112">msdyn_description</span><span class="sxs-lookup"><span data-stu-id="1f733-112">msdyn_description</span></span> | 
