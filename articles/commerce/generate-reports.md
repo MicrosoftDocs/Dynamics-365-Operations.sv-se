@@ -1,6 +1,6 @@
 ---
 title: Generera kanalrapporter online
-description: Det här ämnet beskriver hur du genererar rapporter för din onlinekanal i Microsoft Dynamics 365 Retail.
+description: Det här ämnet beskriver hur du genererar rapporter för din onlinekanal i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77737c134df8f3ba598fe9026fa7c01ca9976733
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: fd40aabdf40e0f2bb257b914326df5595a0e6945
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698060"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003014"
 ---
 # <a name="generate-online-channel-reports"></a>Generera kanalrapporter online
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Det här ämnet beskriver hur du genererar rapporter för din onlinekanal i Microsoft Dynamics 365 Retail.
+Det här ämnet beskriver hur du genererar rapporter för din onlinekanal i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-Du kan generera och Visa flera rapporter i Retail för att se hur din kanal är online.
+Du kan generera och Visa flera rapporter i Handel för att se hur din kanal är online.
 
 ## <a name="channel-summary-report"></a>Kanalöversikt - rapport
 
@@ -46,7 +46,7 @@ I rapporten **kanalsammanfattning** visas en sammanfattning av följande transak
 
 För att generera **Kanalsammanfattning** följ dessa steg.
 
-1. Gå till **Butik \> Frågor och rapporter \> Försäljningsrapporter \> Kanalöversiktsrapport**.
+1. Gå till **Butik och handel \> Frågor och rapporter \> Försäljningsrapporter \> Kanalöversiktsrapport**.
 1. I fältet **Från datum** anger du ett datum.
 1. I fältet **Till-datum**, anger du ett datum.
 1. I fältet **kanal** väljer du onlinekanal.
@@ -58,7 +58,7 @@ Rapporten **Kanalförsäljning per år** visar en jämförelse av försäljning 
 
 För att generera **Kanalförsäljning per år** följ dessa steg.
 
-1. Gå till **Butik \> Frågor och rapporter \> Försäljningsrapporter \> Rapporten Kanalförsäljning per år**.
+1. Gå till **Butik och handel \> Frågor och rapporter \> Försäljningsrapporter \> Kanalförsäljning per år - rapport**.
 1. I fältet **Från kalenderår** anger du ett år.
 1. I fältet **Till kalenderår** anger du ett år.
 1. I fältet **kanal** väljer du onlinekanal.
@@ -70,7 +70,7 @@ Rapporten **Kanalförsäljning per timme** visar försäljningsmetrik per timme 
 
 För att generera **Kanalförsäljning per timme** följ dessa steg.
 
-1. Gå till **Butik \> Frågor och rapporter \> Försäljningsrapporter \> Rapporten Kanalförsäljning per timme**.
+1. Gå till **Butik och handel \> Frågor och rapporter \> Försäljningsrapporter \> Kanalförsäljning per timme - rapport**.
 1. I fältet **Från datum** anger du ett datum.
 1. I fältet **Till-datum**, anger du ett datum.
 1. I fältet **kanal** väljer du onlinekanal.
@@ -82,7 +82,7 @@ Rapporten **De främsta kunderna** visar försäljningsmått för de *N* främst
 
 För att generera rapporten **De främsta kunderna** följ dessa steg.
 
-1. Gå till **Butik \> Frågor och rapporter \> Försäljningsrapporter \> Rapporten De främsta kunderna**.
+1. Gå till **Butik och handel \> Frågor och rapporter \> Försäljningsrapporter \> Främsta kunderna - rapport**.
 1. I fältet **Från datum** anger du ett datum.
 1. I fältet **Till-datum**, anger du ett datum.
 1. I fältet **kanal** väljer du onlinekanal.
@@ -94,7 +94,7 @@ Rapporten **topprabatter** visar försäljningsmått för de *N* rabatter för e
 
 För att generera rapporten **Topprabatter** följ dessa steg.
 
-1. Gå till **Butik \> Frågor och rapporter \> Försäljningsrapporter \> Rapporten topprabatter**.
+1. Gå till **Butik och handel \> Frågor och rapporter \> Försäljningsrapporter \> Rapport över topprabatter**.
 1. I fältet **Från datum** anger du ett datum.
 1. I fältet **Till-datum**, anger du ett datum.
 1. I fältet **kanal** väljer du onlinekanal.
@@ -106,7 +106,7 @@ Rapporten **topprodukter** visar försäljningsmått för de *N* produkter för 
 
 För att generera rapporten **Topprodukter** följ dessa steg.
 
-1. Gå till **Butik \> Frågor och rapporter \> Försäljningsrapporter \> Rapporten topprodukter**.
+1. Gå till **Butik och handel \> Frågor och rapporter \> Försäljningsrapporter \> Rapport över topprodukter**.
 1. I fältet **Från datum** anger du ett datum.
 1. I fältet **Till-datum**, anger du ett datum.
 1. I fältet **kanal** väljer du onlinekanal.
@@ -118,7 +118,7 @@ Rapporten **kategoriförsäljning** visas försäljningsstatistik över en vald 
 
 För att generera rapporten **Kategoriförsäljning** följ dessa steg.
 
-1. Gå till **Butik \> Förfrågningar och rapporter \> Försäljningsrapporter \> Kategoriförsäljning – rapport**.
+1. Gå till **Butik och handel \> Förfrågningar och rapporter \> Försäljningsrapporter \> Kategoriförsäljning – rapport**.
 1. I fältet **Från datum** anger du ett datum.
 1. I fältet **Till-datum**, anger du ett datum.
 1. I fältet **kanal** väljer du onlinekanal.
@@ -126,11 +126,11 @@ För att generera rapporten **Kategoriförsäljning** följ dessa steg.
 
 ## <a name="organization-sales-report"></a>Organisationsförsäljning - rapport
 
-Rapporten **organisationsförsäljning** visar dina butikers resultat efter organisationsenhet. Den här rapporten inkluderar försäljningskvantitet och belopp per butik och vinst marginalen för varje butik. Organisationsenheten baseras på standardhierarkin för rapporter.
+Rapporten **organisationsförsäljning** visar dina resultat efter organisationsenhet. Den här rapporten inkluderar försäljningskvantitet och belopp per butik och vinst marginalen för varje butik. Organisationsenheten baseras på standardhierarkin för rapporter.
 
 För att generera rapporten **Organisationsförsäljning** följ dessa steg.
 
-1. Gå till **Butik \> Förfrågningar och rapporter \> Försäljningsrapporter \> Organisationsförsäljning – rapport**.
+1. Gå till **Butik och handel \> Förfrågningar och rapporter \> Försäljningsrapporter \> Organisationsförsäljning – rapport**.
 1. I fältet **Från datum** anger du ett datum.
 1. I fältet **Till-datum**, anger du ett datum.
 1. Välj **OK**.

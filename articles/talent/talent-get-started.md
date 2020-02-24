@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c3a2881ede53e4adfba775b9bb23071468c8f602
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024262"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006527"
 ---
 # <a name="get-started-with-talent"></a>Kom igång med Talent
 
@@ -31,7 +31,7 @@ ms.locfileid: "2024262"
 I Microsoft Dynamics 365 Talent är det enkelt att ändra användargränssnittet och ange alternativ som gör programmet enklare för dina behov. Det här avsnittet innehåller länkar till avsnitt med information om hur du anpassar användargränssnittet enligt dina önskemål. Avsnittet innehåller också länkar till information som hjälper dig att hitta information i systemet effektivt och korrekt. 
 
 > [!NOTE] 
-> Följande produkter är nära relaterade: Dynamics 365 Finance, Dynamics 365 Retail och Dynamics 365 Talent. Samma funktioner kan visas i alla tre produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 Talent. I avsnitt som huvudsakligen berör kärnprodukter blir produktnamnet Dynamics 365 Finance. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
+> Följande produkter är nära relaterade: Dynamics 365 Finance, Dynamics 365 Commerce och Dynamics 365 Talent. Samma funktioner kan visas i alla tre produkter. I avsnitt som huvudsakligen berör Handel blir produktnamnet därför Dynamics 365 Commerce; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 Talent. I avsnitt som huvudsakligen berör kärnprodukter blir produktnamnet Dynamics 365 Finance. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
 
 ## <a name="personalizing-talent"></a>Anpassa Talent 
 Följande avsnitt beskriver hur du ställer in många funktioner som gör det enklare för dig att få arbetet gjort i tid i Talent. 

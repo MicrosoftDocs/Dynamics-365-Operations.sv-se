@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835602"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025838"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå upp tillämpliga priser och rabatter
 
@@ -49,7 +49,7 @@ I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt 
 10. Stäng sidan.
 
 ## <a name="find-the-applicable-discount"></a>Sök efter den tillämpliga rabatten
-    * Kontrollera att kundens konto innehåller kundnummer US-001    
+Kontrollera att kundens konto innehåller kundnummer US-001    
 1. Skriv "T0012" i fältet Artikelnummer.
     * Kontrollera att fältet Kvantitet har värdet 1.  
     * Följande prissättningsdetaljer som visas för produkten T0012, kommer från ett eller flera handelsavtal: Enhetspriset är 10,00 SEK och rabattprocenten är 5.  

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934896"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004029"
 ---
 # <a name="product-identifiers"></a>Produktidentifierare 
 
@@ -88,7 +88,7 @@ På sidan **Externa artikelbeskrivningar** kan du koppla kundens eller leverant�
 | beskrivning | Det namn som kunden har kopplat med artikeln | Det namn som leverantören har kopplat med artikeln |
 | Extern artikeltext | Kundens artikelbeskrivning | Leverantörens artikelbeskrivning |
 
-Du kan skapa grupper med kunder eller leverantörer som förenklar underhållet av extern produktinformation om många kunder eller leverantörer använder samma artikelnummer (som t.ex. gäller för en inköpsförening eller butiksgrupp).
+Du kan skapa grupper med kunder eller leverantörer som förenklar underhållet av extern produktinformation om många kunder eller leverantörer använder samma artikelnummer (som t.ex. gäller för en inköpsförening eller handelsgrupp).
 
 - För kundgrupper, gå till **Försäljning**&gt;**Inställningar**&gt;**Artiklar**&gt;**Extern artikelbeskrivning** för att skapa och hantera grupper och tillhörande artikelnummer. Koppla kunder till en grupp genom att gå till **Kundreskontra**&gt;**Kunder**&gt;**Alla kunder** och sedan till på snabbfliken **Standardvärden för försäljningsorder** anger du ett värde i fältet **Artikel - kundgrupp**.
 - För leverantörsgrupper, gå till **Anskaffning och källa** &gt; **Inställningar** &gt; **Extern artikelbeskrivningsgrupp** för att skapa och hantera grupper och tillhörande artikelnummer. Koppla leverantörer till en grupp genom att gå till **Leverantörsreskontra**&gt;**Leverantörer**&gt;**Alla leverantörer** och sedan till på snabbfliken **Standardvärden för inköpsorder** anger du ett värde i fältet **Artikel - leverantörsgrupp**.

@@ -3,7 +3,7 @@ title: Distribuera en ny klientorganisation för e-handel
 description: I det här avsnittet beskrivs hur du distribuerar en ny näthandelsinnehavare med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945523"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001793"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuera en ny klientorganisation för e-handel
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du distribuerar en ny näthandelsplats med hjälp av Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="overview"></a>Översikt
-    
+
 Microsoft Dynamics Lifecycle Services (LCS) är en molnbaserad samarbetsyta som partners och kunder kan använda för att hantera sina projekt och miljöer, visa den senaste informationen om Microsoft Dynamics produkter och funktioner samt skapa, spåra och bläddra i supporthändelser. Funktionerna för hantering av e-handel integreras i LCS.
 
 Mer information om LCS finns i [användarhandboken för Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ När du har samlat in den information som krävs följer du stegen nedan för at
 1. Fyll i önskad information på nästa sida och skicka sedan in formuläret. Du kommer tillbaka till fliken **e-handel** där du bör se att initieringen har startats.
 1. Om du vill visa initieringsstatusen **uppdatera** du eller återgår till fliken **e-handel** senare.
     
-När e-handel initieras från LCS, etablerar systemet flera komponenter som krävs för e-handel och kopplar dem till miljön. När etableringen har slutförts, på fliken **e-handel** på sidan **Butikshantering** uppdateras för att avspegla etableringen. På sidan visas de senaste anpassningsdistributionerna och status för alla andra pågående distributioner. Den innehåller också länkar till webbplatsen för e-handel och platshanteringsverktyg för e-handel (redigeringsverktyget).
+När e-handel initieras från LCS, etablerar systemet flera komponenter som krävs för e-handel och kopplar dem till miljön. När etableringen har slutförts, på fliken **e-handel** på sidan **Butikshantering** uppdateras för att avspegla etableringen. På sidan visas de senaste anpassningsdistributionerna och status för alla andra pågående distributioner. Den innehåller också länkar till webbplatsen för e-handel och webbplatsskaparen för e-handel där webbplatser har redigerats.
 
-## <a name="access-the-authoring-environment"></a>Åtkomst till redigeringsmiljön.
+## <a name="access-site-builder"></a>Få åtkomst till webbplatsskaparen
 
-Om du vill komma åt redigeringsmiljön går du till fliken **e-handel** på sidan **butikshantering**. Där hittar du länkar till din e-handelsplats och verktyget för webbplatshantering.
+Du öppnar webbplatsskaparen genom att gå till fliken **e-handel** på sidan **butikshantering** i LCS och väljer länken **Hanteringsverktyg för näthandelsplats**. Landningssidan för webbplatsskaparen visar en vy på klientorganisationsnivå. Från den här sidan kan du:
+
+- Ändra inställningarna för klientorganisationsnivå.
+- Navigera till en webbplats som du har skapat och ha behörighet att visa den. 
+- Åtkomst till granskningsfunktioner, t.ex. av redigering och rapportering.
+- Skapa en ny anläggning. Mer information om hur du skapar en ny webbplats finns i [Skapa en e-handelsplats](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

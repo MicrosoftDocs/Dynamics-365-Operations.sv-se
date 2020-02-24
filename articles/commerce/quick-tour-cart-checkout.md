@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697852"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002945"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>Översikt över sidor för kundvagn och kassa
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över sidor för kundvagn och kassa i Microsoft Dynamics 365 Commerce.
@@ -65,11 +65,11 @@ Huvuddelen av kassasidan är där all orderinformation samlas in. Informationen 
 
 ### <a name="shipping-address"></a>Leveransadress
 
-En leveransadress måste anges om artiklar måste levereras. Formatet på leveransadresser för varje språkversion kan konfigureras i Dynamics 365 Retail. Om till exempel artiklarna ska levereras till USA måste leveransadressen innehålla gatuadress, region och postnummer. En del grundläggande verifiering sker för leverans adressfält, t.ex. validering av alfanumeriska tecken, maximal längd och siffror. Även om giltigheten för själva adressen inte har verifierats kan den här verifieringen utföras med hjälp av anpassade tjänster från tredje part.
+En leveransadress måste anges om artiklar måste levereras. Formatet på leveransadresser för varje språkversion kan konfigureras i Dynamics 365 Commerce. Om till exempel artiklarna ska levereras till USA måste leveransadressen innehålla gatuadress, region och postnummer. En del grundläggande verifiering sker för leverans adressfält, t.ex. validering av alfanumeriska tecken, maximal längd och siffror. Även om giltigheten för själva adressen inte har verifierats kan den här verifieringen utföras med hjälp av anpassade tjänster från tredje part.
 
 Leveransadressen används för alla artiklar i vagnen som alternativet "leverera" har valts för. Om du använder det kassaflöde som finns i online startpaketet kan enskilda kundvagnsartiklar inte levereras till olika adresser. Om du behöver den här funktionen kan den implementeras genom anpassningar av modulerna för utcheckning.
 
-När leveransadressen har angetts visas de leveransmetoder som är tillgängliga från Dynamics 365 Commerce onlinebutiken. Leveransmetoderna och adresserna som stöds kan konfigureras i butik.
+När leveransadressen har angetts visas de leveransmetoder som är tillgängliga från Dynamics 365 Commerce onlinebutiken. Leveransmetoderna och adresserna som stöds kan konfigureras i handel.
 
 ### <a name="payment"></a>Betalning
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: adfb8ffce3f91c0e8e8b996c284414f5ddc1baf1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562540"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004075"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Spåra artiklar och råmaterial i lager, produktion och försäljning
 
@@ -44,7 +44,7 @@ Artikelspårning är ett Business Intelligence-verktyg (BI) som ger insyn i käl
 -   Utforska var en artikel eller ett råmaterial har förbrukats i produktionen av en annan artikel.
 
 ## <a name="what-can-i-trace-and-are-there-any-limitations"></a>Vad kan jag spåra, och finns det några begränsningar?
-Du kan spåra historiska lagertransaktioner för artiklar och råmaterial som baseras på ett artikelnummer och en spårningsdimension, till exempel ett serienummer, ett batchnummer eller ett leverantörsbatchnummer. Du kan spåra en artikel eller ett råmaterial endast om det har en spårningsdimension tilldelad. Eftersom spårningen baseras på lagertransaktioner finns det vissa begränsningar vid spårning av artiklar. Det finns till exempel begränsningar som är relaterade till transaktioner för projekt, anläggningstillgångar och butiker. Samprodukter visas i spårningsdetaljerna, men biprodukter inkluderas inte. Spårning inkluderar alla lagerställetransaktioner från en plats till en annan. Därför kan användarna uppleva mängden information som överväldigande. Spårning visas för en juridisk person i taget. Det finns inga resurser mellan företagen i en koncernintern kontext. Du måste starta ett nytt spår för varje företag där en artikel inlevereras eller utfärdas.
+Du kan spåra historiska lagertransaktioner för artiklar och råmaterial som baseras på ett artikelnummer och en spårningsdimension, till exempel ett serienummer, ett batchnummer eller ett leverantörsbatchnummer. Du kan spåra en artikel eller ett råmaterial endast om det har en spårningsdimension tilldelad. Eftersom spårningen baseras på lagertransaktioner finns det vissa begränsningar vid spårning av artiklar. Det finns till exempel begränsningar som är relaterade till transaktioner för projekt, anläggningstillgångar och handel. Samprodukter visas i spårningsdetaljerna, men biprodukter inkluderas inte. Spårning inkluderar alla lagerställetransaktioner från en plats till en annan. Därför kan användarna uppleva mängden information som överväldigande. Spårning visas för en juridisk person i taget. Det finns inga resurser mellan företagen i en koncernintern kontext. Du måste starta ett nytt spår för varje företag där en artikel inlevereras eller utfärdas.
 
 ## <a name="what-criteria-can-i-specify-for-an-item-trace"></a>Vilka kriterier kan jag ange för en artikelspårning?
 Villkoren som behövs för en artikelspårning är artikelnumret, en spårningsdimension (t.ex. ett batchnummer eller serienummer) samt riktningen. I följande tabell beskrivs de villkor som du kan använda i en artikelspårning.

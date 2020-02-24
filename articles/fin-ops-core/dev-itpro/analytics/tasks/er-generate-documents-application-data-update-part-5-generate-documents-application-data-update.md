@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d95feb3395c36f9cf8a23770dc3173377067d9b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184886"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026073"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Skapa dokument som omfattar programdata
 
@@ -58,7 +58,7 @@ Den här proceduren har skapats för användare med rollen Systemadministratör 
 6. Klicka på OK.
 
 ## <a name="review-er-format-executions-results"></a>Granska resultatet från körningen av ER-formatet
-    * Granska den genererade XML-filen.  
+Granska den genererade XML-filen.  
 1. Stäng sidan.
 2. Gå till Moms > Deklarationer > Utländsk handel > Intrastat.
     * Öppna detta formulär som innehåller Intrastat-transaktionerna som har inkluderats i det genererade elektroniska dokumentet.  

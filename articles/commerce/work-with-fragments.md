@@ -3,7 +3,7 @@ title: Arbeta med fragment
 description: I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 32482538b2913e6585257bcf7a1cbe780d3cdd30
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914710"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026050"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
@@ -57,25 +57,34 @@ Följande bild visar hur fragment kan användas för att centralisera redigering
 
 Du kan antingen skapa ett nytt fragment eller spara en befintlig modul som ett fragment.
 
+### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Spara en befintlig modulkonfiguration som ett fragment
+
+Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart fragment följer du stegen nedan.
+
+1. Öppna en sida eller mall som innehåller modulen som du vill konvertera till ett fragment.
+1. Markera ellipsknappen i dispositionsrutan till vänster (**...**) bredvid modulens namn. 
+1. Välj **dela som fragment**. 
+1. En dialogruta visas. Ange ett namn och metadata för fragmentet.
+1. Välj **OK** om du vill spara modulens konfiguration som ett fragment som kan läggas till på andra sidor.
+
+Följande bild visar hur du sparar en moduls konfiguration som ett fragment.
+
+![En skärmbild av hur du sparar en modulkonfiguration som ett fragment](./media/save-as-fragment.png)
+
 ### <a name="create-a-new-fragment"></a>Skapa ett nytt fragment.
 
 Gör så här om du vill skapa ett nytt fragment.
 
 1. I navigeringsfönstret till vänster, välj **fragment**.
 1. Välj **Nytt sidfragment**. En dialogruta visas med alla tillgängliga modultyper. Som tidigare nämnts kan fragment skapas från alla typer av moduler.
-1. Välj en modultyp för fragmentet och välj sedan **OK**.
+1. Välj en modultyp för fragmentet.
 
-    > [!TIP]
-    > Genom att välja en generisk behållarmodultyp får du den mest flexibla när du måste uppdatera och konfigurera fragmentet senare.
+I följande bild visas var du kan skapa ett nytt fragment.
 
-### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Spara en befintlig modulkonfiguration som ett fragment
+![En skärmbild av var du ska skapa ett nytt fragment](./media/fragment-nav-menu.png)
 
-Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart fragment följer du stegen nedan.
-
-1. Öppna en sida eller mall som innehåller modulen som du vill konvertera till ett fragment.
-1. Markera ellipsknappen (**...**) bredvid namnet på den modul som du vill ta bort i dispositionsrutan till vänster och markera sedan **Spara som fragment**. En dialogruta visas.
-1. Ange ett namn och metadata för fragmentet.
-1. Välj **OK** om du vill spara modulens konfiguration som ett fragment som kan läggas till på andra sidor.
+> [!TIP]
+> Genom att välja en generisk behållarmodultyp får du den mest flexibla när du måste uppdatera och konfigurera fragmentet senare.
 
 ## <a name="add-remove-or-edit-fragments-on-a-page"></a>Lägga till, ta bort eller redigera fragment på en sida
 
@@ -88,11 +97,15 @@ Om du vill lägga till ett fragment till en sida gör du följande.
 1. I dispositionsrutan till vänster väljer du en behållare eller en plats som underordnade moduler kan läggas till i.
 1. Markera knappen med punkter bredvid namnet på behållaren eller platsen och välj sedan **Lägg till fragment**. En dialogruta visas.
 
+    ![En skärmbild av hur man lägger till ett befintligt fragment på en plats eller en behållare](./media/add-fragment.png)
+ 
     > [!NOTE]
     > Om en behållare eller en plats inte stöder nya underordnade moduler är alternativet **Lägg till fragment** inte tillgängligt.
-
+    
 1. Sök efter och markera ett fragment som ska läggas till i dialogrutan. Om det inte finns några tillgängliga fragment kanske du först måste skapa ett fragment från en modultyp som den valda behållaren eller platsen stöder.
-1. Klicka på **OK** om du vill lägga till det valda fragmentet i den valda behållaren eller platsen på sidan.
+1. Välj önskat fragment om du vill lägga till behållaren eller platsen på sidan.
+
+    ![En skärmdump av spärrat fönster för fragmentväljare](./media/fragment-picker.png)
 
 > [!NOTE]
 > Modulerna som är tillåtna i en behållare eller plats definieras av sidans mall eller modulernas egna definitioner.

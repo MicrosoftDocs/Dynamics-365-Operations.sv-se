@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d805c39b77d653eaa9935751ae89012c98b930d2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914851"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002692"
 ---
 # <a name="templates-and-layouts-overview"></a>Översikt över mallar och layouter
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Mallar är grundläggande element i Microsoft Dynamics 365 Commerce sidmodell. Om målet är att maximera effektiviteten och kontinuiteten för arbetsflöden för webbplatsredigering är det viktigt att du lär dig hur du kan dra nytta av mallarna för webbplatsen. Tidiga beslut om mallstrukturlistan är viktiga och kan märkbart påverka kostnader och rörlighet för dagliga, säsongsmässiga och platsbaserade varumärkesuppdateringar. Välstrukturerade mallar har även andra fördelar. De kan till exempel hjälpa till att förbättra SEO-poängen (Search Engine Optimization) för hela webbplatsen och minska antalet fel.

@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent
+ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5a96955b72fcc5b0e2975f4bb1e619062be33e20
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 445a2872dcd0e4d3aca9a50c7539fdabb0ed7818
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248767"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005596"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobila arbetsytan för företagskatalog
 
@@ -53,11 +53,11 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 <tr class="odd">
 <td>Någon av följande produkter måste distribueras i organisationen:
 <ul><li>En Finance and Operations-app</li>
-<li>Microsoft Dynamics 365 Talent</li>
+<li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemadministratör</td>
-<td>Om du inte redan använder Finance and Operations-appen i din organisation, se <a href="../deployment/deploy-demo-environment.md"> Distribuera en demomiljö</a>. Om du inte redan använder Talent i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://www.microsoft.com/dynamics365/talent">webbsidan Talent</a>.
+<td>Om du inte &#39;redan har en Finance and Operations-app i din organisation, se <a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö</a>. Om du inte redan använder Personal i din organisation kan systemadministratören komma åt en utvärderingsversion från <a href="https://dynamics.microsoft.com/human-resources/overview/">webbsidan Personal</a>.
 </td>
 </tr>
 <tr class="even">
@@ -69,7 +69,7 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Hämta och installera mobilappen Finance and Operations:
+Hämta och installera mobilappen Finance and Operations.
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

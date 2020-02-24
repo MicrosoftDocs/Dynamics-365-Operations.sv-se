@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184748"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026250"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Mappa komponenter för det skapade till datamodellelement (november 2016)
 
@@ -98,7 +98,7 @@ I följande procedur beskrivs hur en användare med roll som systemadministratö
 2. Stäng sidan.
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>Ändra status för den aktuella versionen av formatkonfigurationen
-    * I följande steg ändrar du status för formatkonfigurationen från Utkast till Slutförd för att göra den tillgänglig för genereringen av betalningsdokument.  
+I följande steg ändrar du status för formatkonfigurationen från Utkast till Slutförd för att göra den tillgänglig för genereringen av betalningsdokument.  
 1. Klicka på Ändra status.
 2. Klicka på Slutför.
 3. Ange ett värde i fältet Beskrivning.
@@ -108,7 +108,7 @@ I följande procedur beskrivs hur en användare med roll som systemadministratö
     * Observera att konfigurationen sparas som slutförd version 1.1: version 1 av formatet, vilket baseras på version 1 av datamodellen.  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>Definiera giltighetsdatumet för slutförd version av formatet
-    * Varje formatversion kan konfigureras som tillgänglig för användning med start från ett visst datum. När mer än en formatversion är aktiv på att visst datum, kommer det senaste formatet (utifrån versionsnumret) att väljas för användning. Värdet för sessionsdatumet används för ett korrekt versionsurval.  
+Varje formatversion kan konfigureras som tillgänglig för användning med start från ett visst datum. När mer än en formatversion är aktiv på att visst datum, kommer det senaste formatet (utifrån versionsnumret) att väljas för användning. Värdet för sessionsdatumet används för ett korrekt versionsurval.  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>Begränsa åtkomsten till det skapade formatet från företag
 1. Visa eller dölj avsnittet om ISO-koder för land/region.

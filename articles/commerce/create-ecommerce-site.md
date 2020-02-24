@@ -1,9 +1,9 @@
 ---
-title: Skapa en näthandelsplats
-description: I det här avsnittet beskrivs de uppgifter som är kopplade till skapandet av en ny e-handelswebbplats i Dynamics 365 Commerce.
+title: Skapa en e-handelsplats
+description: I det här avsnittet beskrivs de steg och den information som krävs för att skapa en ny e-handelswebbplats i Dynamics 365 Commerce webbplatsskaparen.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,29 +19,31 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945845"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002023"
 ---
-# <a name="create-an-e-commerce-site"></a>Skapa en näthandelsplats
+# <a name="create-an-e-commerce-site"></a>Skapa en e-handelsplats
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs de uppgifter som är kopplade till skapandet av en ny e-handelswebbplats i Dynamics 365 Commerce.
+I det här avsnittet beskrivs de steg och den information som krävs för att skapa en ny e-handelswebbplats i Dynamics 365 Commerce webbplatsskaparen.
 
-## <a name="overview"></a>Översikt
+Innan du börjar utveckla din näthandelsplats måste du först skapa en ny webbplats i webbplatsskaparen. 
 
-Innan du börjar utveckla din näthandelsplats måste du först skapa en ny webbplats i webbplatsredigeringsmiljön. Innan du kan skapa en ny plats måste minst en onlinebutik skapas i Dynamics 365 Retail. 
+
+Innan du börjar utveckla din näthandelsplats måste du först skapa en ny webbplats i webbplatsredigeringsmiljön. Innan du kan skapa en ny plats måste minst en onlinebutik skapas i Handel. 
+
 
 ## <a name="set-up-your-site"></a>Ställ in din webbplats
 
 Gör följande om du vill ställa in din webbplats.
 
-1. Välj länken för webbplatsredigeringsmiljön i LCS (Microsoft Lifecycle Services). 
+1. Öppna miljön för webbplatsskaparen. Du hittar en länk till webbplatsskaparen i Microsoft Lifecycle Services (LCS) på sidan miljöfunktioner för Handel.
 1. På startsidan för webbplatsredigeringsmiljön, välj **Ny webbplats**.
 1. Ange följande information i dialogrutan **Ny webbplats**.
 

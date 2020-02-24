@@ -1,9 +1,9 @@
 ---
-title: Etablera en förhandsversionsmiljö för Commerce
+title: Etablera en Dynamics 365 Commerce förhandsversionsmiljö
 description: Det här avsnittet förklarar hur du etablerar en förhandsversionsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,28 +18,28 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b77d2cbbc100aeae5dcd53ddbe69ff2e4435da13
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934758"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024646"
 ---
-# <a name="provision-a-commerce-preview-environment"></a>Etablera en förhandsversionsmiljö för Commerce
+# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Etablera en Dynamics 365 Commerce förhandsversionsmiljö
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet förklarar hur du etablerar en förhandsversionsmiljö för Microsoft Dynamics 365 Commerce.
+Det här avsnittet förklarar hur du etablerar en förhandsversionsmiljö för Dynamics 365 Commerce.
 
-Innan du börjar rekommenderar vi att du åtminstone läser igenom hela ämnet för att få en uppfattning om vad processen medför och vad ämnet innehåller.
+Innan du börjar rekommenderar vi att du tar en snabbgenomgång genom det här avsnittet för att få en uppfattning om vad processen kräver.
 
 > [!NOTE]
-> Obs! Om du inte har beviljats åtkomst till förhandsgranskning för Dynamics 365 Commerce kan du begära förhandsgranskningsåtkomst [Commerce-webbplats](https://aka.ms/Dynamics365CommerceWebsite).
+> Om du inte har beviljats åtkomst till förhandsgranskning för Dynamics 365 Commerce kan du begära förhandsgranskningsåtkomst från [Dynamics 365 Commerce webbplats](https://aka.ms/Dynamics365CommerceWebsite).
 
 ## <a name="overview"></a>Översikt
 
-För att kunna etablera din förhandsversionsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Retail Cloud Scale Unit (RCSU) har även del specifika parametrar som du måste använda för att kunna etablera e-handel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg som du måste utföra och de parametrar som du måste använda.
+För att kunna etablera din förhandsversionsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och skalningsenhet för handel (CSU) har även del specifika parametrar som du måste använda för att kunna etablera e-handel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
 
 När du har tillhandahållit din förhandsversionsmiljö för Commerce måste du slutföra några steg efter etablering för att förbereda den. Vissa steg är valfria, beroende på vilka delar av systemet du vill utvärdera. Du kan alltid slutföra de valfria stegen senare.
 
@@ -52,69 +52,21 @@ Om du har frågor om etableringsstegen eller om du stöter på problem ska du ta
 Följande förutsättningar måste vara på plats innan du kan etablera din förhandsversionsmiljö för Commerce:
 
 - Du har åtkomst till Microsoft Dynamics Lifecycle Services-portal (LCS).
+- Du är en befintlig Microsoft Dynamics 365-partner eller kund och kan skapa ett Dynamics 365 Commerce-projekt.
 - Du har accepterats i Dynamics 365 Commerce förhandsgranskningsprogrammet.
-- Du har de behörigheter som krävs för att skapa ett **projekt för potentiell försäljning** eller **migrera, skapa lösningar och lära dig**.
+- Du har de behörigheter som krävs för att skapa ett projekt för **Migrera, skapa lösningar och lär dig**.
 - Du är rollen **Miljöhanterare** eller **Projektägare** i projektet där du ska etablera miljön
 - Du har administratörsåtkomst till din Microsoft Azure-prenumeration eller kontakta en prenumerationsadministratör som kan slutföra de två steg som kräver administratörsbehörighet för din räkning
 - Du har ditt Azure Active Directory (Azure AD) innehavar-ID tillgängligt.
 - Du har skapat en Azure AD-säkerhetsgrupp som kan användas som en systemadministratörsgrupp för e-handel och du har dess ID tillgängligt.
 - Du har skapat en Azure AD-säkerhetsgrupp som kan användas som gruppen moderator för omdömen och recensioner och du har dess ID tillgängligt. (Den här säkerhetsgruppen kan vara samma som administratörsgruppen för e-handelssystem.)
 
-### <a name="find-your-azure-ad-tenant-id"></a>Hitta ditt Azure AD innehavar-ID
-
-Ditt Azure AD innehavar-ID är en globalt unik identifierare (GUID) som liknar det här exemplet: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-the-azure-portal"></a>Hitta ditt Azure AD innehavar-ID med hjälp av Azure-portal
-
-1. Logga in på [Azure-portal](https://portal.azure.com/).
-1. Kontrollera att du har valt rätt katalog.
-1. I menyn till vänster, välj **Azure Active Directory**.
-1. Under **egenskaper** under **egenskaper**. Ditt Azure AD innehavar-ID visas under **katalog-ID**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-openid-connect-metadata"></a>Hitta ditt Azure AD innehavar-ID med hjälp av OpenID Connect metadata
-
-Skapa en OpenID URL genom ersätta **\{YOUR\_DOMAIN\}** med din domän, t.ex. `microsoft.com`. Till exempel, `https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration` kommer att bli `https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration`.
-
-1. Gå till den OpenID-URL som innehåller din domän.
-
-    Du hittar ditt Azure AD innehavar-ID i flera egenskapsvärden.
-
-1. Hitta **authorization\_endpoint** och extrahera GUID som visas omedelbart efter `login.microsoftonline.com/`.
-
-### <a name="find-your-azure-ad-security-group-id"></a>Hitta ditt Azure AD säkerhetsgrupp-ID
-
-ID för din Azure AD säkerhetsgrupp är ett GUID som liknar det här exemplet: **436ea7f5-ee6c-40c1-9f08-825c5811066a**.
-
-Den här proceduren förutsätter att du är medlem i gruppen som du försöker hitta ID för.
-
-1. Öppna [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer#).
-1. Välj **Logga in med Microsoft** och logga in med dina autentiseringsuppgifter.
-1. Till vänster väljer du **Visa fler exempel**.
-1. Aktivera **grupper** från högra fönstret.
-1. Stäng den högra rutan.
-1. Klicka på **Alla grupper jag tillhör**.
-1. I fältet **Förhandsgranskning av svar** hitta din grupp Säkerhetsgrupp-ID visas under den egenskapen **ID**.
-
 ## <a name="provision-your-commerce-preview-environment"></a>Etablera en förhandsversionsmiljö för Commerce
 
 Dessa procedurer förklarar hur du etablerar en förhandsversionsmiljö för Commerce. När du har slutfört dem kommer förhandsversionsmiljö för Commerce att vara redo för konfigurering. Alla aktiviteter som beskrivs här utförs i LCS-portalen.
 
 > [!IMPORTANT]
-> Förhandsgranskningsåtkomsten är knuten till LCS-kontot och organisationen som du angav i förhandsgranskningsprogrammet. Du måste använda samma konto för att etablera förhandsversionsmiljö för Commerce. Om du måste använda ett annat LCS-konto eller en innehavare för förhandsversionsmiljö för Commerce måste du ange dessa uppgifter för Microsoft. Kontaktinformation finns i avsnittet [Förhandsversionsmiljö för Commerce](#commerce-preview-environment-support) senare i det här ämnet.
-
-### <a name="grant-access-to-e-commerce-applications"></a>Bevilja åtkomst till e-handelsprogram
-
-> [!IMPORTANT]
-> Den person som loggar in måste vara en Azure AD innehavaradministratören som har Azure AD klient-ID. Om det här steget inte har slutförts, kommer resterande etableringssteg att misslyckas.
-
-Gör så här om du vill auktorisera e-handelsprogram åtkomst till din Azure-prenumeration.
-
-1. Montera en URL i följande format:
-
-    `https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345`
-
-1. Kopiera och klistra in URL:en i din webbläsare eller textredigerare och **\{AAD\_TENANT\_ID\}** med ditt Azure AD innehavar-ID. Öppna sedan URL:en.
-1. I dialogrutan Azure AD-inloggning, logga in och bekräfta att du vill bevilja **Dynamics 365 Commerce (förhandsversion)** åtkomst till din prenumeration. Du omdirigeras till en sida som anger om åtgärden har lyckats.
+> Förhandsgranskningsåtkomsten är knuten till LCS-kontot och organisationen som du angav i förhandsgranskningsprogrammet för Handel. Du måste använda samma konto för att etablera förhandsversionsmiljö för Commerce. Om du måste använda ett annat LCS-konto eller en innehavare för förhandsversionsmiljö för Commerce måste du ange dessa uppgifter för Microsoft. Kontaktinformation finns i avsnittet [Förhandsversionsmiljö för Commerce](#commerce-preview-environment-support) senare i det här ämnet.
 
 ### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Bekräfta att förhandsgranskningsfunktioner är tillgängliga och aktiverade i LCS
 
@@ -210,12 +162,12 @@ Följande illustration visar de åtgärder som måste vidtas på sidan LCS **til
 Följ dessa steg för att distribuera miljön.
 
 > [!NOTE]
-> Du kanske inte behöver slutföra steg 6, 7 och/eller 8, eftersom sidor som har ett enda alternativ hoppas över. När du är i vyn **Miljöparametrar** bekräfta att texten **Dynamics 365 Commerce (förhandsversion) - Demo (10.0.6 med plattformsuppdatering 30)** visas direkt ovanför fältet **Miljönamn**. Se illustrationen som visas efter steg 8.
+> Du kanske inte behöver slutföra steg 6, 7 och/eller 8, eftersom sidor som har ett enda alternativ hoppas över. När du är i vyn **Miljöparametrar** bekräfta att texten **Dynamics 365 Commerce - Demo (10.0.* x* med plattformsuppdatering *xx*)** visas direkt ovan fältet **Miljönamn**. För mer information, se illustrationen som visas efter steg 8.
 
 1. På huvudmenyn väljer du miljön **Molnstyrda miljöer**.
 1. Klicka på **Lägg till** om du vill lägga till en miljö.
-1. I fältet **Programversion**, välj **10.0.6**.
-1. I fältet **plattformsversion**, väljer du **plattformsuppdatering 30**.
+1. I fältet **Programversion** väljer du den mest aktuella versionen. Om du har ett specifikt behov av att välja en annan programversion än den senaste versionen ska du inte välja en version före **10.0.8**.
+1. I fältet **plattformsversion** använder du den plattformsversion som väljs automatiskt för den valda programversionen. 
 
     ![Välj program- och plattformsversioner](./media/project1.png)
 
@@ -224,7 +176,7 @@ Följ dessa steg för att distribuera miljön.
 
     ![Välja miljötopologi 1](./media/project2.png)
 
-1. Välj **Dynamics 365 Commerce (förhandsversion) - Demo** som miljötopologi. Om du konfigurerade en enda Azure-koppling tidigare kommer den att användas i den här miljön. Om du har konfigurerat flera Azure-kopplingar kan du välja vilken koppling som: **Östra USA**, **Östra USA 2**, **Västra USA** eller **Västra USA 2**. (För bästa slutpunkt till slutpunkt-prestanda rekommenderar vi att du väljer **Västra USA 2**.)
+1. Välj **Dynamics 365 Commerce - Demo** som miljötopologi. Om du konfigurerade en enda Azure-koppling tidigare kommer den att användas i den här miljön. Om du har konfigurerat flera Azure-kopplingar kan du välja vilken koppling som: **Östra USA**, **Östra USA 2**, **Västra USA** eller **Västra USA 2**. (För bästa slutpunkt till slutpunkt-prestanda rekommenderar vi att du väljer **Västra USA 2**.)
 
     ![Välja miljötopologi 2](./media/project3.png)
 
@@ -241,39 +193,38 @@ Följ dessa steg för att distribuera miljön.
 
 1. Innan du fortsätter bör du kontrollera att miljöstatus är **distribuerad**.
 
-### <a name="initialize-rcsu"></a>Initiera RCSU
+### <a name="initialize-the-commerce-scale-unit-csu"></a>Initiera skalningsenhet för handel (CSU)
 
-Gör så här om du vill initiera en RCSU.
+Gör så här om du vill initiera en CSU.
 
 1. Välj din miljö i listan **Molnstyrda miljöer**.
 1. Välj i miljövyn till höger **Fullständig information**. Vyn miljöinformation visas.
 1. Under **Miljöfunktioner**, välj **hantera**.
-1. På fliken **Butik**, välj **Initiera**. Parametervyn RCSU-initiering visas.
+1. På fliken **Handel**, välj **Initiera**. Parametervyn CSU-initiering visas.
 1. I fältet **Region**, väljer du antingen **östra US**, **östra US 2**, **västra US** eller **västra US 2**.
-1. I fältet **version** väljer du **ange en version** i listan och anger sedan **9.16.19262.5** i fältet som visas. Var noga med att ange den exakta versionen som anges här. I annat fall måste du uppdatera RCSU till rätt version senare.
+1. I fältet **version** väljer du **ange en version** i listan och anger sedan **9.18.20014.4** i fältet som visas. Var noga med att ange den exakta versionen som anges här. I annat fall måste du uppdatera RCSU till rätt version senare.
 1. Aktivera alternativet **Använd tillägg**.
 1. Från listan över tillägg, välj **Handelsförhandsgranskning demobastillägg**.
 1. Välj **initiera**.
-1. På sidan för distributions bekräftelse, när du har kontrollerat att informationen är korrekt, klickar du på **Ja**. Du återgår till vyn **Butikshantering** med fliken **Butik** är vald. Din RCSU har ställts i kö för etablering.
-1. Innan du fortsätter bör du kontrollera att status för din RCSU är **Lyckades**. Initieringen tar ungefär två till fem timmar.
+1. På sidan för distributions bekräftelse, när du har kontrollerat att informationen är korrekt, klickar du på **Ja**. Vyn **Hantering av handel** visas igen, där fliken **Handel** väljs. Din CSU har ställts i kö för etablering.
+1. Innan du fortsätter bör du kontrollera att status för din CSU är **Lyckades**. Initieringen tar ungefär två till fem timmar.
 
 ### <a name="initialize-e-commerce"></a>Initiera e-handelsplattform
 
 Gör så här om du vill initiera e-handel.
 
-1. Granska medgivande för förhandsversion på fliken **e-handel (förhandsversion)** -handel (förhandsversion) och välj sedan **inställningar**.
+1. Granska medgivande för förhandsversion på fliken **e-handel** och välj sedan **inställningar**.
 1. I fältet **E-handelsinnehavarens namn**, ange ett namn. Tänk dock på att det här namnet kommer att visas i några av webbadresserna som pekar på din e-handelsinstans.
-1. I fältet **Namn på Retail Cloud Scale Unit** välj din RCSU i listan. (Listan bör bara ha ett alternativ.)
+1. I fältet **Namn på skalningsenhet för handel** välj din CSU i listan. (Listan bör bara ha ett alternativ.)
 
     Fältet **e-handelsgeografi** ställs in automatiskt och värdet kan inte ändras.
 
 1. Klicka på **Nästa** när du vill fortsätta.
 1. I fältet **Värdnamn som stöds** ange en giltig domän, t.ex. `www.fabrikam.com`.
-1.  I fältet **AAD säkerhetsgrupp för systemadministration**, ange de första bokstäverna i namnet på säkerhetsgruppen du vill använda. Välj ikonen förstoringsglas för att visa sökresultaten. Välj en säkerhetsgrupp i listan.
-2.  I fältet **AAD-säkerhetsgruppen för moderator för omdömen och recensioner**, ange de första bokstäverna i namnet på säkerhetsgruppen du vill använda. Välj ikonen förstoringsglas för att visa sökresultaten. Välj en säkerhetsgrupp i listan.
+1.  I fältet **AAD säkerhetsgrupp för systemadministration**, ange de första bokstäverna i namnet på säkerhetsgruppen du vill använda. Välj ikonen förstoringsglas för att visa sökresultaten. Välj korrekt säkerhetsgrupp i listan.
+2.  I fältet **AAD-säkerhetsgruppen för moderator för omdömen och recensioner**, ange de första bokstäverna i namnet på säkerhetsgruppen du vill använda. Välj ikonen förstoringsglas för att visa sökresultaten. Välj korrekt säkerhetsgrupp i listan.
 1. Lämna alternativet **tjänsten aktivera klassificering** aktiverat.
-1. Om du redan har slutfört Microsoft Azure Active Directory (Azure AD) medgivandesteget enligt beskrivningen i avsnittet "bevilja åtkomst till e-handelsprogram" markerar du kryssrutan för att bekräfta ditt medgivande. Om du ännu inte har slutfört det här steget måste du göra det innan du fortsätter med initieringen. Markera länken i texten bredvid kryssrutan för att öppna dialogrutan medgivande och slutför steget.
-1. Välj **initiera**. Du återgår till vyn **Butikshantering** med fliken **e-handel (förhandsgranskning)** väljs. Initieringen av e-handel har påbörjats.
+1. Välj **initiera**. Vyn **Hantering av handel** visas igen, där fliken **e-handel** väljs. Initieringen av e-handel har påbörjats.
 1. Innan du fortsätter väntar du tills initieringsstatus för e-handel är **initialisering har slutförts**.
 1. Under **länkar** längst ned till höger, anteckna webbadresserna för följande länkar:
 
@@ -292,13 +243,13 @@ För att fortsätta processen med att tillhandahålla och konfigurera din förha
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Förhandsversionsmiljö för Commerce – översikt](cpe-overview.md)
+[Dynamics 365 Commerce förhandsversionsmiljö – översikt](cpe-overview.md)
 
-[Konfigurera en förhandsversionsmiljö för Commerce](cpe-post-provisioning.md)
+[Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurera valfria funktioner för en förhandsversionsmiljö för Commerce](cpe-optional-features.md)
+[Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Förhandsversionsmiljö för Commerce – vanliga frågor och svar](cpe-faq.md)
+[Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -308,4 +259,3 @@ För att fortsätta processen med att tillhandahålla och konfigurera din förha
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Hjälpresurser för Dynamics 365 Retail](../retail/index.md)

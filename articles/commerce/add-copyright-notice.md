@@ -3,7 +3,7 @@ title: Lägg till copyrightmeddelande
 description: I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelsplats.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914591"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025492"
 ---
 # <a name="add-a-copyright-notice"></a>Lägg till copyrightmeddelande
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelsplats.
@@ -48,8 +48,8 @@ Om du vill lägga till copyrightinformation längst ned på varje sida som anvä
 1. I navigeringsfönstret väljer du ellipsknappen (**...**) bredvid **sidfot** och väljer sedan **Lägg till modul**.
 1. I dialogrutan, välj **Sidfotskategori** och väljer sedan **OK**.
 1. I navigeringsfönstret väljer du ellipsknappen bredvid **sidfotskategori** och väljer sedan **Lägg till modul**.
-1. I dialogrutan, välj **innehållsrikt blockobjekt** och väljer sedan **OK**.
-1. I navigeringsfönstret, välj **innehållsrika blockobjekt**.
+1. I dialogrutan, välj **Textblock** och väljer sedan **OK**.
+1. Välj **textblock** i navigeringsfönstret.
 1. I det här egenskapsfönstret till höger, i fältet **stycke** lägger du till ditt copyright-meddelande. Ange till exempel **(C) Fabrikam 2019**.
 1. Välj **Spara**, välj **Checka in** och sedan **Publicera**.
 1. Gå till **mallar**, markera mallen och välj sedan **Checka ut**.

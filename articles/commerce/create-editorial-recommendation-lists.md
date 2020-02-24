@@ -19,16 +19,15 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d075635b7b986cc854550d15f7e941a9ea9cf72
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770423"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024943"
 ---
 # <a name="create-curated-product-recommendation-lists"></a>Skapa granskade listor över produktrekommendationer
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här ämnet förklarar hur inköpare kan skapa och hantera manuella produktlistor för Microsoft Dynamics 365 Commerce-kunder.
@@ -39,7 +38,7 @@ Granskade listor är samlingar med enskilt innehåll som skapas och granskas av 
 
 Följ de här stegen om du vill skapa en granskad produktrekommendationslista.
 
-1. Gå till **Butik** &gt; **Produktrekommendationer** &gt; **Rekommendationslistor**.
+1. Gå till **Butik och handel &gt; Produktrekommendationer &gt; Rekommendationslistor**.
 1. Välj **Ny**.
 1. I fältet **List-ID** anger du ett värde.
 1. I fältet **Listnamn** anger du ett värde.
@@ -60,3 +59,5 @@ Följ de här stegen om du vill skapa en granskad produktrekommendationslista.
 [Aktivera produktrekommendationer](enable-product-recommendations.md)
 
 [Lägg till produktrekommendationer på sidor](add-reco-list-to-page.md)
+
+[Översikt över produktsamlingsmodul](product-collection-module-overview.md)

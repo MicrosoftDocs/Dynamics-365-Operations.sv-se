@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 642cb5c145dec68631eb9ab27d926ba8ab75c59b
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914920"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001839"
 ---
 # <a name="customize-site-navigation"></a>Anpassa webbplatsnavigeringen
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du skapar en anpassad onlinemapp för navigering för att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
@@ -35,11 +35,11 @@ I det här avsnittet beskrivs hur du skapar en anpassad onlinemapp för navigeri
 
 Nätbutiker gör vanligtvis att kunderna hittar och bläddrar igenom produkter genom att navigera genom produktkategorier. Den här funktionen tillhandahålls vanligtvis med flikar högst upp på sidan eller genom ett navigeringsfält till vänster. I Dynamics 365 Commerce kan du skapa och hantera den hierarkiska strukturen för kategorinavigeringen och de produkter som ingår i de olika kategorierna.
 
-## <a name="create-a-retail-channel-navigation-hierarchy"></a>Skapa en navigeringshierarki för butikskanal
+## <a name="create-a-channel-navigation-hierarchy"></a>Skapa en navigeringshierarki för kanal
 
-Följ stegen nedan om du vill skapa en navigeringshierarki för butikskanaler.
+Följ stegen nedan om du vill skapa en navigeringshierarki för kanaler.
 
-1. Gå till **Butik \> Produkter och kategorier \> Kategori- och produkthantering**.
+1. Gå till **Butik och handel \> Produkter och kategorier \> Kategori- och produkthantering**.
 1. Markera **kategorihierarkier** och välj sedan **Ny**.
 1. Namn på hierarkin.
 
@@ -57,28 +57,28 @@ De kategorier som du definierar visas som standard i alfabetisk ordning på webb
 
 ## <a name="assign-a-category-hierarchy-type"></a>Tilldela en kategorihierarkityp
 
-1. Gå till **Butik \> Produkter och kategorier \> Kategori- och produkthantering**.
+1. Gå till **Butik och handel \> Produkter och kategorier \> Kategori- och produkthantering**.
 1. Välj **kategorihierarkier**.
 1. I åtgärdsfönstret, på fliken **kategorihierarki** i gruppen **Inställning** markerar du **Associera hierarki**.
 1. Välj **Ny**.
-1. I fältet **Kategorihierarkityp**, välj **Navigeringshierarki för butikskanal**.
+1. I fältet **Kategorihierarkityp**, välj **Navigeringshierarki för kanal**.
 1. I fältet **kategorihierarki** väljer du den hierarki för kanalnavigering som du skapade tidigare.
 
 ## <a name="publish-new-or-updated-navigation-hierarchies"></a>Publicera nya eller uppdaterade navigeringsnoder
 
 Gör så här om du vill att din navigeringsnoden ska vara tillgänglig för din nätbutik:
 
-1. Gå till **Butik \> Kanalinställningar \> Kanalkategorier och produktattribut**.
+1. Gå till **Butik och handel \> Kanalinställningar \> Kanalkategorier och produktattribut**.
 1. I trädet till vänster väljer du onlinebutiken.
 1. Välj **Publicera kanaluppdateringar**.
-1. Gå till **Butik \> Butik-IT \> Distributionsschema**.
+1. Gå till **Butik och handel \> Butik och handel-IT \> Distributionsschema**.
 1. I listan söker du och väljer **Jobb 1040**.
 1. Välj **kör nu**.
 1. Upprepa steg 5 och 6 för jobben 1070 och 1150.
 
 ## <a name="show-categories-on-your-site"></a>Visa kategorier på din webbplats
 
-Om du vill visa kategorihierarkin i din nätbutik måste du lägga till modulen för navigeringsmenyn på lämplig plats i en mall eller i ett fragment. Modulen navigeringsmeny visar sedan webbhierarkin, förutsatt att du har publicerat din butikshierarki på den kanal som webbplatsen är bunden till.
+Om du vill visa kategorihierarkin i din nätbutik måste du lägga till modulen för navigeringsmenyn på lämplig plats i en mall eller i ett fragment. Modulen navigeringsmeny visar sedan webbhierarkin, förutsatt att du har publicerat din hierarki på den kanal som webbplatsen är bunden till.
 
 > [!NOTE]
 > Med modulen navigeringsmeny som ingår i butikens startpaket kan användarna bara navigera till kategorier som inte har underkategorier. Om dina kunder ska kunna navigera till kategorier som har underkategorier måste du anpassa modulen för navigeringsmenyn.

@@ -1,9 +1,9 @@
 ---
 title: Innan du köper
-description: Stegvisa instruktioner som ska användas när du funderar på att köpa Dynamics 365 for Finance and Operations.
-author: kfend
+description: Stegvisa instruktioner som ska användas när du funderar på att köpa Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce.
+author: ShellyBakke
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -13,39 +13,39 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4619a359a352d702526c576d97b666439d71ed96
+ms.sourcegitcommit: 6aceca43c53c4dde46954c0b6b855d488eb44ed2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812636"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027734"
 ---
 # <a name="before-you-buy"></a>Innan du köper
 
 [!include [banner](../includes/banner.md)]
 
-Ny till Dynamics 365 for Finance and Operations? Vi har samlat ihop en steg-för-steg-guide om du fortfarande utvärderar Finance and Operations eller är redo för att göra ett inköp.
+Ny för Dynamics 365 Finance, Dynamics 365 Supply Chain Management, eller Dynamics 365 Commerce? Vi har samlat ihop en steg-för-steg-guide om du fortfarande utvärderar eller är redo för att göra ett inköp.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Steg ett: Prova Finance and Operations gratis under 30 dagar
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Steg ett: testa Finance and Operations kostnadsfritt i 30 dagar
 
-Du kan prova Dynamics 365 for Finance and Operations i 30 dagar genom en enkel e-postregistrering. Provversionen av Finance and Operations innehåller en Komma igång-guide med steg-för-steg-instruktioner som låter dig visa specifika scenarier i praktiken. Produkten är tillgänglig att utforska och utöva scenarier, men kan inte anpassas. Demodata ingår för att underlätta användningen av produkten och för att upplevelsen ska bli mer beskrivande. En påminnelse i e-postmeddelandet skickas 3 dagar innan testperioden går ut. Hämta information på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Du kan prova en 30 dagars provversion av Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce genom en enkel e-postregistrering. Provversionen av Finance and Operations-appar innehåller en Komma igång-guide med steg-för-steg-instruktioner som låter dig visa specifika scenarier i praktiken. Produkten är tillgänglig att utforska och utöva scenarier, men kan inte anpassas. Demodata ingår för att underlätta användningen av produkten och för att upplevelsen ska bli mer beskrivande. En påminnelse i e-postmeddelandet skickas 3 dagar innan testperioden går ut. Hämta information på [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Steg två: Välj ett distributionsalternativ.
 
-Nu kan du distribuera Microsoft Dynamics 365 for Finance and Operations i molnet eller lokalt. Molndistributioner erbjuder en ERP-tjänst som hanteras fullt ut av Microsoft, medan lokala distributioner installeras lokalt i kundens datacenter.
+Nu kan du distribuera Finance and Operations-appar i molnet eller lokalt. Molndistributioner erbjuder en ERP-tjänst som hanteras fullt ut av Microsoft, medan lokala distributioner installeras lokalt i kundens datacenter.
 
 Följande beaktanden skall vidtas om du väljer ett lokalt distributionsalternativ:
 
-- Krav på efterlevnad och regler som inte är tillgängliga i molncertifikat
-- Frånkopplad affärsprocess med återkommande Internetanslutning för åtkomst av Microsoft Dynamics Lifecycle Services (LCS) för livscykelhantering av program
-- [Funktioner som ännu inte har implementerats i lokala distributioner](features-not-implemented-on-prem.md)
-- [Systemkrav för lokala distributioner](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- Krav på efterlevnad och regler som inte är tillgängliga i molncertifikat.
+- Frånkopplad affärsprocess med återkommande Internetanslutning för åtkomst av Microsoft Dynamics Lifecycle Services (LCS) för livscykelhantering av program.
+- [Funktioner som ännu inte har implementerats i lokala distributioner](features-not-implemented-on-prem.md).
+- [Systemkrav för lokala distributioner](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> Lokala distributioner av Microsoft Dynamics 365 for Finance and Operations stöds inte i alla offentliga molnbaserade infrastrukturer, inklusive Azure.
+> Lokala distributioner av Microsoft Azure stöds inte i alla offentliga molnbaserade infrastrukturer.
 
 Mer information finns i [Distributionsalternativ](../../dev-itpro/deployment/choose-deployment-type.md)
 
@@ -53,45 +53,43 @@ Mer information finns i [Distributionsalternativ](../../dev-itpro/deployment/cho
 
 Om du vill utforska prenumerationsalternativ, gå till [Dynamics 365](https://www.microsoft.com/dynamics365/pricing) prissättningssida. Den här sidan innehåller flera olika planer för att passa ditt företags behov.
 
-Det finns många sätt att köpa en prenumeration för Dynamics 365 for Finance and Operations:
+Det finns många sätt att köpa en prenumeration:
 
-- Köp via en partner och använd volymlicensiering (molnbaserad eller lokal)
-- Köp via en molnbaserad lösningsleverantör (endast moln)
-- Köp via en partner från Dynamics prislista (endast lokal)
+- Köp via en molnbaserad lösningsleverantör (endast moln).
+- Köp via en partner och använd volymlicensiering (molnbaserad eller lokal).
+- Köp via en partner från Dynamics prislista (endast lokal).
 
-Det finns två sätt att köpa en prenumeration för en lokal distribution
+### <a name="buy-through-a-cloud-solution-provider-cloud-only"></a>Köp via en molnbaserad lösningsleverantör (endast moln)
 
-### <a name="buy-through-volume-licensing"></a>Köp via volymlicensiering
+En Microsoft molnbaserad lösningsleverantör kan samarbeta med dig för att förstå behoven i ditt företag eller din organisation. Använd [Microsoft Partner Center-portalen](https://partnercenter.microsoft.com/partner/home) för att hitta en partner som passar dig bäst.
+
+### <a name="buy-through-a-dynamics-partner-on-premises"></a>Köp via en Dynamics-partner (lokal)
+
+Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köpa Finance and Operations (on-premises)](purchase-on-premises.md).
+
+### <a name="buy-through-volume-licensing-cloud-or-on-premises"></a>Köp via volymlicensiering (molnbaserad eller lokal)
 
 Om din organisation har 250 eller fler Dynamics 365-användare kanske du är intereserad av ett [volymlicensavtal](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-I volymlicensiering finns Finance and Operations med:
+I volym licenser är Finance and Operations-program tillgängliga via:
 
 - Enterprise-avtal
 - Enterprise-avtalsabonnemang
 - Registrering för utbildningslösningar (under Campus- och School-avtal)
 - Microsoft Products and Services Agreement (MPSA)
 
-### <a name="buy-through-a-cloud-solution-provider-cloud-only"></a>Köp via en molnbaserad lösningsleverantör (endast moln)
-
-En Microsoft molnbaserad lösningsleverantör kan samarbeta med dig för att förstå behoven i ditt företag eller din organisation. [Använd Microsoft Partner Center-portalen för att hitta en partner som passar dig bäst](https://partnercenter.microsoft.com/partner/home).
-
-### <a name="buy-through-a-dynamics-partner-on-premises"></a>Köp via en Dynamics-partner (lokal)
-
-Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köpa Finance and Operations (on-premises)](purchase-on-premises.md)
-
 ### <a name="choose-your-support-option"></a>Välj ditt stödalternativ
 
 Microsoft tillhandahåller flexibelt branschledande stöd, tjänster och resurser som gör det möjligt för användarna att snabbt lösa tekniska frågor och maximera avkastningen på investeringen av Dynamics 365. Välj en plan som bäst uppfyller ditt företags behov.
 
-Mer information:
+För ytterligare resurser, se:
 
 - [Dynamics 365 stöd](https://www.microsoft.com/dynamics365/support)
 - [Snabbstartsguide för Microsoft Dynamics stödförmåner för molnbaserad tjänst](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Steg fyra: Lär dig om FastTrack och planera distributionen
 
-Microsoft FastTrack för Dynamics 365 är vår lyckade kundtjänst som är utformad för att hjälpa dig att flytta till Dynamics 365 smidigt och säkert, och ger dig företagsvärde snabbare. När du deltar i programmet FastTrack får du vägledning och metodtips hur du planerar för lyckade installationer. Du får också lära dig att aktivera nya användare och expandera funktioner – allt i din egen takt. Dessutom får du tillgång till Microsofts tekniska resurser som åtagit sig att göra datoranvändningen med Dynamics 365 lyckad. Mer information: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
+Microsoft FastTrack för Dynamics 365 är vår lyckade kundtjänst som är utformad för att hjälpa dig att flytta till Dynamics 365 smidigt och säkert, och ger dig företagsvärde snabbare. När du deltar i programmet FastTrack får du vägledning och metodtips hur du planerar för lyckade installationer. Du får också lära dig att aktivera nya användare och expandera funktioner – allt i din egen takt. Dessutom får du tillgång till Microsofts tekniska resurser som åtagit sig att göra datoranvändningen med Dynamics 365 lyckad. Mer information: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Om du uppgraderar från Dynamics AX 2012 eller migrerar från AX 2009
 

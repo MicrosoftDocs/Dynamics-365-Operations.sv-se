@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635136"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031077"
 ---
 # <a name="master-planning-setup-wizard"></a>Installationsguide för huvudplanering
 
@@ -32,9 +32,9 @@ ms.locfileid: "2635136"
 
 Det här avsnittet innehåller en guide för **Installationsguide för huvudplanering**. Det förklarar hur parameterförslag beräknas och ger också exempel som visar hur olika företag ställer in huvudplanering, baserat på deras affärsbehov.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-[Inställningsguide för huvudplanering i Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (visas ovan) ingår i [Finance and Operations spellista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som finns tillgänglig på YouTube.
+[Inställningsguide för huvudplanering i Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (visas ovan) ingår i [Finance and Operations spellista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som finns på YouTube.
 
 
 ## <a name="specific-requirements-of-your-company"></a>Specifika krav för ditt företag
@@ -184,7 +184,7 @@ I guiden anges följande värden för Contoso tillverkare:
 Contoso återförsäljare är ett distributionsföretag inom modebranschen. Den använder huvudplanering för att beräkna när inköpsorder ska placeras, baserat på den prognostiserade försäljningen. Här är några av dess egenskaper:
 
 - Contoso återförsäljare använder en efterfrågeprognos för att förutsäga försäljning. Inköpsorder kommer att planeras enligt prognosen.
-- I butiker används rekvisitioner för påfyllnad.
+- Butiker används rekvisitioner för påfyllnad.
 - Produktionstiden från huvudlagerställe till varje butik är ungefär två veckor för alla artiklar.
 
 I guiden anges följande värden för Contoso återförsäljare:

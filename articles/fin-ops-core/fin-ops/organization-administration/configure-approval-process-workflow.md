@@ -3,7 +3,7 @@ title: Konfigurera godkännandeprocesser i ett arbetsflöde
 description: Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811391"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983774"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurera godkännandeprocesser i ett arbetsflöde
 
@@ -138,11 +138,12 @@ Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, 
 
 ## <a name="specify-a-final-approver"></a>Ange den slutliga godkännaren
 
-Du kan eventuellt tilldela en slutlig godkännare för situationer där godkännaren är den person, som skickade in dokumentet för godkännande. Följ dessa steg för att ange en slutlig godkännare.
+Du kan ange en slutlig godkännare för scenarier där godkännaren är den person som skickade dokumentet för godkännande och "Tillåt inte godkännande av avsändare" används. Följ dessa steg för att ange en slutlig godkännare.
 
-1. Klicka på **Avancerade inställningar** i det vänstra fönstret.
-2. Markera rutan **Använd slutlig godkännare**.
-3. I listan ska du välja en användare som slutlig godkännare.
+1. I arbetsflödesredigeraren och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper** om du vill godkänna en godkännandeprocess.
+2. Klicka på **Avancerade inställningar** i det vänstra fönstret.
+3. Markera rutan **Använd slutlig godkännare**.
+4. I listan ska du välja en användare som slutlig godkännare.
 
 ## <a name="set-a-time-limit"></a>Ange en tidsgräns
 

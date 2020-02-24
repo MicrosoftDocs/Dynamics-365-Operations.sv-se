@@ -1,6 +1,6 @@
 ---
 title: Momstilldelning och åsidosättningar
-description: I den här proceduren visas hur du tilldelar momsgrupper till butikskanaler.
+description: I den här proceduren visas hur du tilldelar momsgrupper till handelskanaler.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,21 +16,21 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fbaa467c22656aa8d1e39d26a8233250e2bb66f8
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 40723d35c1914f6cec6aa361a6c38100d1667cb6
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026611"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003637"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Momstilldelning och åsidosättningar
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du tilldelar momsgrupper till butikskanaler. Den går också igenom processen att skapa en ny momsåsidosättning och tilldela den till en befintlig momsåsidosättningsgrupp. I proceduren används demonstrationsföretaget USRT.
+I den här proceduren visas hur du tilldelar momsgrupper till handelskanaler. Den går också igenom processen att skapa en ny momsåsidosättning och tilldela den till en befintlig momsåsidosättningsgrupp. I proceduren används demonstrationsföretaget USRT.
 
-1. Gå till butik och handel > Kanaler > butiker > Alla butiker.
-2. Klicka på länken Butikskanal-ID för "Houston" i listan.
+1. Gå till Butik och handel > Kanaler > Butiker >Alla butiker.
+2. Klicka på länken kanal-ID för "Houston" i listan.
 3. Klicka på Redigera.
     * Fältet "Momsgrupp" innehåller listan med momsgrupper för det aktuella företaget. Den aktuella tilldelade gruppen är en allmän ”Texas”-momsgrupp. Det finns även momsgrupper för ”Washington” och ”Washington King County”. Momsgrupper kan inkludera tillämpliga skatter för flera kommuner.  
     * I fältet moms ”Åsidosätt moms" kan momsåsidosättgrupper mappas till kanalen. Momsåsidosättgrupper kan användas till att gruppera momsåsidosättningsgrupper som arbetar för flera butiker. Snarare än att manuellt tilldela en momsåsidosättning i taget kan gruppen skapas och tilldelas direkt till kanalerna om du vill spara tid.  
@@ -43,8 +43,8 @@ I den här proceduren visas hur du tilldelar momsgrupper till butikskanaler. Den
 10. Ange status till "Aktivera".
 11. Visa eller dölj avsnittet Åsidosättning.
 12. Välj ett alternativ i fältet Typ.
-    * Artikelmomsgrupper kan användas för att åsidosätta moms för specifika artiklar som tillhör gruppen. Till exempel beskattas livsmedel vanligtvis annorlunda än fysiska varor och har troligen sin egen momsgrupp.     Momsgrupper är grupper av moms som gäller för en viss kanal. Om en kanal till exempel säljer både till butik och mellan företag kan olika artikelmomsgrupper användas. All tillämplig moms mappas till momsgruppen.  
-    * Nu kan du välja ”Från”- och ”Till”-moms eller ”Från momsgrupp" och "Till momsgrupp" för att skapa din momsåsidosättning.    Fältet "Från" anger den moms eller momsgrupp som ska åsidosättas. Åsidosätta efter Artikelmomsgrupp ger olika alternativ än att åsidosätta efter momsgrupp.    Momsåsidosättning kan ställas in för att åsidosätta moms på hela transaktioner eller på särskilda rader i transaktionen.  
+    * Artikelmomsgrupper kan användas för att åsidosätta moms för specifika artiklar som tillhör gruppen. Till exempel beskattas livsmedel vanligtvis annorlunda än fysiska varor och har troligen sin egen momsgrupp. Momsgrupper är grupper av moms som gäller för en viss kanal. Om en kanal till exempel säljer både till butik och mellan företag kan olika artikelmomsgrupper användas. All tillämplig moms mappas till momsgruppen.  
+    * Nu kan du välja ”Från”- och ”Till”-moms eller ”Från momsgrupp" och "Till momsgrupp" för att skapa din momsåsidosättning. Fältet "Från" anger den moms eller momsgrupp som ska åsidosättas. Åsidosätta efter Artikelmomsgrupp ger olika alternativ än att åsidosätta efter momsgrupp. Momsåsidosättning kan ställas in för att åsidosätta moms på hela transaktioner eller på särskilda rader i transaktionen.  
 13. Klicka på Spara.
 14. Stäng sidan.
 15. Gå till Butik och handel > Kanalinställning > Moms > Momsåsidosättningsgrupper.

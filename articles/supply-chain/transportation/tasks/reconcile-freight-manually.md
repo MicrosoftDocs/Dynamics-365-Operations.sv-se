@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843251"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026324"
 ---
 # <a name="reconcile-freight-manually"></a>Stäm av fraktsedel manuellt
 
@@ -37,7 +37,7 @@ I den här proceduren visas hur du stämmer av frakt manuellt. Detta görs norma
 3. Välj beläggningen som har beläggningen ID 00006 i listan.
 
 ## <a name="create-a-carrier-invoice"></a>Skapa en transportföretagsfaktura
-    * Om du stämmer av frakten manuellt och inte får transportfakturor automatiskt, kan du skapa en faktura baserat på frakträkningen.  
+Om du stämmer av frakten manuellt och inte får transportfakturor automatiskt, kan du skapa en faktura baserat på frakträkningen.  
 1. Klicka på Relaterad information.
 2. Klicka på Freight bill details.
 3. Klicka på Generate freight bill invoice.
@@ -45,7 +45,7 @@ I den här proceduren visas hur du stämmer av frakt manuellt. Detta görs norma
 5. Klicka på OK.
 
 ## <a name="reconcile-the-invoice"></a>Stäm av fakturan
-    * När du stämmer av en transportföretagsfaktura och en frakträkning görs detta rad för rad.  
+När du stämmer av en transportföretagsfaktura och en frakträkning görs detta rad för rad.  
 1. Klicka på Match freight bills and invoices.
 2. Expandera avsnittet Invoice details.
 3. Expandera avsnittet Unmatched freight bill details.

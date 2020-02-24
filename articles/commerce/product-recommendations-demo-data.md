@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af8a30e69d9ed143e045950efdcece207f6da14c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697945"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003244"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>Hämta produktrekommendationer med hjälp av demodata
 Det här dokumentet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
@@ -39,7 +39,7 @@ Produktrekommendationer på nivå 1 baseras bara på de statiska demodata som la
 För att aktivera produktrekommendationer demonstrationsdatum måste du distribuera Dynamics 365 Commerce förhandsgranskningsdemo för respektive miljö. Då aktiveras demonstrationsdata för produktrekommendationer automatiskt.
 
 ## <a name="default-demo-data"></a>Standarddemodata
-Varje enskild miljö innehåller en förinstallerad uppsättning med demodata för produktrekommendationer som lagras i den kommaseparerade filen "reco_demo_data. csv", som finns i Retail Server.
+Varje enskild miljö innehåller en förinstallerad uppsättning med demodata för produktrekommendationer som lagras i den kommaseparerade filen "reco_demo_data. csv", som finns i skalningsenhet för handel.
 
 Dessa data struktureras längs följande kolumner.
 

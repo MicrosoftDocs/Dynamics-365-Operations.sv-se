@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 29c13e729223a98d7f45244c5a796bca6e3baaf3
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550843"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026144"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Använd dokumenthanteringsfiler i formatutmatningar (Del 1 - Förbered datamodellen)
 
@@ -61,7 +61,7 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 11. Välj "Customer invoice model" i trädet.
 
 ## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a>Skapa den härledda modellen så att denna stöder åtkomst till dokumenthanteringsfilerna.
-    * Du kan skapa en egen konfiguration av kundfakturamodellen baserat på den konfiguration som tillhandahålls av Microsoft. Du använder den här konfigurationen för att implementera åtkomst till dokumenthanteringsfilerna och göra dem tillgängliga för elektroniska dokument som du skapar baserat på denna modell.  
+Du kan skapa en egen konfiguration av kundfakturamodellen baserat på den konfiguration som tillhandahålls av Microsoft. Du använder den här konfigurationen för att implementera åtkomst till dokumenthanteringsfilerna och göra dem tillgängliga för elektroniska dokument som du skapar baserat på denna modell.  
 1. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
 2. Ange "Derive from Name: Customer invoice model, Microsoft" i fältet New.
 3. Ange "Customer invoice model (custom)" i namnfältet.

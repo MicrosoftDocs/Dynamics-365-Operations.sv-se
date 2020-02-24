@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df158e80bd1c11832376678a631a9e0e162534ad
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b09efeb6b5d8bd2ea452dbf7a9ddaeec2ab75c92
+ms.sourcegitcommit: 0455a024185f79ecb82df61e6d994bd71dee5c10
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915727"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "2974302"
 ---
 # <a name="FORMAT">Funktionen FORMAT ER</a>
 
@@ -96,7 +96,7 @@ Om samma rapport bearbetas för **Litware-butikskunden** den 17 december 2015, i
 >[!NOTE]
 > Följande syntax tillämpas i ER-formler för etiketter:
 >
-> - **För etiketter från resurser i Microsoft Dynamics 365 Finance-app:** **@X**, där **X** är etikett ID i programobjektträdet (AOT)
+> - **För etiketter från resurser i Microsoft Dynamics 365 Finance-app:** **\@X**, där **X** är etikett-ID i programobjektträdet (AOT)
 > - **För etiketter i ER-konfigurationer:** **@"GER_LABEL:X"**, där **X** är etikett-ID i ER-konfiguration
 
 ## <a name="additional-resources"></a>Ytterligare resurser

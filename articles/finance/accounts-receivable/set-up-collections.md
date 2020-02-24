@@ -1,5 +1,5 @@
 ---
-title: Konfigurera kredit och inkasso
+title: Ställ in inkasseringar
 description: Denna artikel förklarar hur du ställer in samlingsfunktionen.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,18 +18,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed075484f79d7ef7d0d4e6d62d037bb3e9cc96f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
+ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180013"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013173"
 ---
-# <a name="set-up-credit-and-collections"></a>Konfigurera kredit och inkasso
+# <a name="set-up-collections"></a>Ställ in inkasseringar
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel förklarar hur du ställer in samlingsfunktionen.
+Denna artikel förklarar hur du ställer in samlingsfunktionen. Du måste slutföra vissa inställningssteg när du använder inkassofunktionen. Det finns också några valfria funktioner, inklusive kundpooler och inkassoteam. 
+
+- Definitioner för åldersfördelningsperiod
+- Ögonblicksbilder av åldersfördelningen
+- Journalnamn
+- Orsakskod för avskrivningstransaktioner
+- Inkassohandläggare
+- Avskrivningskonto
+- NSF-information (otillräckliga medel)
+- Outlook-inställningar för de som använder sidan **Inkasso**
+- E-postadresser
+
+Dessa punkter beskrivs mer detaljerat under resten av det här avsnittet. 
 
 <a name="set-up-aging-period-definitions"></a>Ställ in definitioner för åldersfördelningsperioder
 -------------------------------
@@ -46,7 +58,7 @@ Du kan ställa in kundpooler som representerar kundgrupper. Du kan använda kund
 Om flera personer i din organisation gör samlingsarbete kan du ställa in en samlingsteam. Du kan välja teamet på sidan **Parametrar för kundreskontra**. Om du inte skapar ett inkassoteam skapas ett team automatiskt när du ställer in inkassohandläggare på sidan **Inkassohandläggare**.
 
 ## <a name="set-up-a-collections-case-category"></a>Ställa in en samlingsfallkategori
-Om du vill ordna inkassoarbetet genom att använda fall kan du ställa in en fallkategori med kategoritypen för **Inkasso**. Den här inställningen krävs endast om du vill använda inkassofunktionen på sidan **Inkasso**.
+Om du vill ordna inkassoarbetet genom att använda fall kan du ställa in en fallkategori med kategoritypen för **Inkasso**. Detta krävs endast om du vill använda inkassofunktionen på sidan **Inkasso**.
 
 ## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Ställa in journalnamn (kvittning, avskrivning och NSF)
 Ställ in journalnamnen som används när transaktionerna bearbetas på sidan **Inkasso**. Detta omfattar att kvitta en transaktion, att skriva av en transaktion och att bearbeta en betalning med otillräckliga medel (NSF).
@@ -78,7 +90,10 @@ Uppdatera bankkonton så att de har korrekt journal när NSF-betalningar identif
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Ställa in Outlook-inställningar för användare av sidan Inkasso
 Innan anställda kan skapa aktiviteter eller skicka e-postmeddelanden med hjälp av sidan **Inkasso** måste du verifiera att konfigurationsnyckeln **Microsoft Outlook-synkronisering** har valts och att Outlook-synkronisering har ställts in för dessa arbetare.
 
-## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Ställ in inställningar för e-post och adress frö samlingskundkontakter
+## <a name="set-up-email-and-addresses"></a>Ställa in e-post och adresser
+Du kan använda e-post för att kommunicera med både kunder och säljare om inkassoproblem för att skicka e-postmeddelanden från sidan **Inkasso**. 
+
+### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Ställ in inställningar för e-post och adress frö samlingskundkontakter
 Ställ in e-postadresser för kundkontakter om du vill skicka e-postmeddelanden till dessa kontakter från sidan **Inkasso** . Inkassokontakten används som standardkontakten på sidan **Inkasso**. Du kan ställa in en utdragadress för kunden om utdrag ska ha en annan adress än den primära adressen. 
 
 På snabbfliken **Kredit och inkasso** för en kund, i fältet **Kontaktperson vid krav**, väljer du den person i kundorganisationen som arbetar med inkassohandläggaren. Den här personen används som standardkontakt på sidan **Inkasso** och e-postmeddelande skickas till honom eller henne. 
@@ -86,7 +101,7 @@ På snabbfliken **Kredit och inkasso** för en kund, i fältet **Kontaktperson v
 > [!NOTE] 
 > Om en inkassokontakt inte angetts för en kund används den primära kontakten för kunden. Om en primär kontakt inte anges skickas e-postmeddelanden till den första adressen som är angiven på sidan **Kontakter**.
 
-## <a name="set-up-email-settings-for-salespeople"></a>Ställ in e-postinställningar för försäljare
+### <a name="set-up-email-settings-for-salespeople"></a>Ställ in e-postinställningar för försäljare
 Ställ in e-postadresser för försäljare om du vill skicka e-postmeddelanden till försäljare från sidan **Inkasso**. Ställ in en e-postadress för var försäljare i varje provisionssäljgrupp. Försäljaren som har alternativet **Kontakt** valt är standardsäljaren som e-postmeddelanden skickas till. 
 
 Om en säljare inte har angetts används den primära säljaren för kundorganisationen. Om en primär försäljare inte anges skickas e-postmeddelanden till den första försäljaren på sidan.

@@ -3,7 +3,7 @@ title: Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026991"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028038"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 
@@ -152,7 +152,7 @@ Markera om du vill använda batchstrategier för artiklarna som är batchaktiver
 ### <a name="strategy"></a>Strategi
 
 -   **Konsolidera** - Denna strategi används för konsolidering av artiklar på en viss plats när andra artiklar redan är tillgängliga. Detta fungerar bara med placeringstypen för platsdirektiv. Vanliga inställningar för placering är att konsolidera på den första åtgärdsraden och sedan på andra försöket placera utan konsolidering. Konsolidera varor gör senare plockning effektivare.
--   **Matcha förpackningskvantitet** - Denna strategi används för att verifiera att en plockplats har den angivna kvantiteten. Detta fungerar bara för platsdirektiv av typen Plocka. 
+-   **Matcha förpackningskvantitet** – den här strategin hittar en plats som innehåller en registreringsskylt med exakt den kvantitet som krävs. Den kan inte användas för platser som inte styrs av en registreringsskylt. Denna strategi fungerar bara för platsdirektiv av plockarbetstyper.
 -   **FEFO-batchreservation** - Denna strategi används när lagret lokaliseras med hjälp av en batch för utgångsdatum och allokeras för batchreservation. Du kan bara använda denna strategi för batchen aktiverade artiklar. Detta fungerar bara för platsdirektiv av plockarbetstyper. 
 -   **Avrunda uppåt till full reg.skylt** - Denna strategi används för att summera lagerkvantiteten för att matcha den registreringsskyltskvantitet som tilldelas artiklarna som ska plockas. Du kan bara använda den här strategin för typ av lagerpåfyllnad för platsdirektiv av typen Plocka. 
 -   **Tom plats utan inkommande arbetsuppgifter** - Denna strategi används för att söka tomma platser. Platsen anses vara tom om den inte har något fysiskt lager och inget förväntat inkommande arbete. Denna strategi används endast för platsdirektivet Plockningstyp. 

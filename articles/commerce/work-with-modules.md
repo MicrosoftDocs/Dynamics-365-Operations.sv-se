@@ -3,7 +3,7 @@ title: Arbeta med moduler
 description: I det här avsnittet beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c4161e7a40cdbbb40292a6ce9acab58347460bd
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914804"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025889"
 ---
 # <a name="work-with-modules"></a>Arbeta med moduler
 
 I det här avsnittet beskrivs hur och när du ska använda moduler i Microsoft Dynamics 365 Commerce.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Översikt
@@ -99,12 +99,10 @@ I följande procedurer beskrivs hur du konfigurerar innehåll och behållarmodul
 
 Om du vill konfigurera en innehållsmodul på en sida följer du stegen nedan.
 
-1. I dispositionsfönstret till vänster väljer du en innehållsmodultyp (t.ex. **innehåll**, **fokus** eller **banderoll**).
-1. I egenskapsrutan till höger expanderar du de kapslade kontrollerna genom att markera rubrikerna och ange önskade kontrollvärden.
-1. Om egenskapsfönstret har ett avsnitt för **datakonfiguration**, markerar du det för att expandera det. Gå annars till steg 5.
-1. Om det finns en knapp för att **Lägga till datakälla** markerar du den och markerar sedan de innehållsobjekt som ska läggas till.
-1. Ange inställningar för alla nödvändiga eller önskade modulkontroller.
-1. Välj **Spara**.
+1. I dispositionsfönstret till vänster expanderar du trädet och väljer en innehållsmodul (t.ex. **innehåll**, **fokus** eller **banderoll**).
+1. Leta reda på modulens innehålls- och inställningskontroller i rutan egenskaper till höger.
+1. Ange egenskaper för önskade modulkontroller.
+1. Välj **Spara** i kommandofältet. Då uppdateras även arbetsytan med förhandsgranskning.
 
 ### <a name="configure-a-container-module"></a>Konfigurera en behållarmodul
 
@@ -112,7 +110,7 @@ Om du vill konfigurera en behållarmodul på en sida följer du stegen nedan.
 
 1. Välj en behållarmodul på sidan (t.ex. en karusell eller en flytande behållarmodul).
 1. I egenskapsrutan till höger expanderar du de kapslade kontrollerna genom att markera rubrikerna och ange önskade kontrollvärden.
-1. I dispositionsfönstret till vänster väljer du ellipsknappen bredvid namnet på antingen behållaren eller valfri plats i behållaren och välj sedan **Lägg till modul**. Lägg sedan till underordnade moduler i den valda behållaren. Mer information finns i proceduren [Lägg till en modul](#add-a-module) tidigare i det här avsnittet.
+1. I dispositionsfönstret till vänster väljer du ellipsknappen bredvid namnet på antingen behållaren eller valfri plats i behållaren och välj sedan **Lägg till modul**. Lägg sedan till underordnade moduler i den valda behållaren. Mer information finns i avsnitt [Arbeta med moduler modul](#add-a-module) tidigare i det här avsnittet.
 1. Om det finns flera underordnade moduler på samma nivå i en överordnad behållare kan du ändra deras visningsordning i den överordnade behållaren. Välj ellipsknappen för en modul och använd sedan knapparna uppåtpil och nedåtpil.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
@@ -126,8 +124,6 @@ Om du vill konfigurera en behållarmodul på en sida följer du stegen nedan.
 [Arbeta med fragment](work-with-fragments.md)
 
 [Lägg till en behållarmodul på en sida](add-container-module.md)
-
-[Lägg till modul för innehållsplacering till en sida](add-content-placement-modules.md)
 
 [Arbeta med publiceringsgrupper](publish-groups.md)
 

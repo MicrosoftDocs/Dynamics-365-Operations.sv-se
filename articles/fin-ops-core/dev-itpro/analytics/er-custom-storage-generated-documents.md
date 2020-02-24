@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 45a2335d7a661ddc1d8907c56ae8193387f44e26
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771408"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030876"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Ange en anpassad lagringsplats för skapade dokument
 
@@ -56,7 +56,7 @@ I den aktuella topologin [skapa ett nytt ER-format](tasks/er-format-configuratio
 
 Om du vill ange hur dokument som ett ER-format genereras skickas, måste du konfigurera [Elektronisk rapportering (ER)-destinationer](electronic-reporting-destinations.md). I varje ER-destination som konfigureras för att lagra genererade dokument som filer måste du ange en dokumenttyp för ramverket för dokumenthantering. Olika typer av dokumenttyper kan användas för att skicka dokument som ger upphov till olika ER-format.
 
-1. Lägg till en ny [dokumenttyp](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) för ER-formatet som du har skapat eller tidigare importerat. I bilden nedan är dokumenttypen **FileX**.
+1. Lägg till en ny [dokumenttyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) för ER-formatet som du har skapat eller tidigare importerat. I bilden nedan är dokumenttypen **FileX**.
 2. Inkludera ett specifikt nyckelord i dess namn för att skilja den här dokumenttypen från andra typer av dokument. I bilden nedan är namnet exempelvis **(LOKAL) mapp**.
 3. I fältet **klass** anger du **bifoga fil**.
 4. I fältet **grupp** anger du **fil**.
@@ -70,7 +70,7 @@ Om du vill ange hur dokument som ett ER-format genereras skickas, måste du konf
 
 Granska koden för metoden **insertFile()** för klassen **ERDocuManagement**. Observera att händelsen **AttachingFile()** utlöses medan den genererade filen bifogas till en post.
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -131,7 +131,7 @@ Händelsen **AttachingFile()** utlöses när följande ER-destinationer bearbeta
     1. Lagra genererade filer i en mapp i det lokala filsystemet på servern som kör tjänsten Application Object Server (AOS).
     2. Lagra endast dessa genererade filer när nya dokumenttypen (till exempel typen **FileX** som har nyckelordet ”(LOKAL)” i namnet) används när en fil som är kopplad till posten i loggen ER-körningens jobblogg.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815352"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003663"
 ---
 # <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
 
@@ -81,7 +81,7 @@ Den övergripande statusen på inköpsrekvisitionen bestäms av statusen på ink
 <li><strong>Under granskning</strong> – Inköpsrekvisitionsraderna har skickats in för granskning. När arbetsflödesprocessen har avslutats för en inköpsrekvisitionsrad, förblir status för den raden <strong>Under granskning</strong> tills alla återstående inköpsrekvisitionsrader har granskats.</li>
 <li><strong>Avvisad</strong> – En inköpsrekvisitionsrad har avvisats. Inköpsrekvisitionsrader som har avvisats kan ändras och skickas in igen.</li>
 </ul>
-Om du skickar tillbaka en inköpsrekvisitionsrad som har avvisats, startar granskningen om för alla rader i inköpsrekvisitionen som fortfarande är under granskning. <strong>Obs!</strong> Du kan sedan återkalla en inköpsrekvisition som redan har skickats in. När du återkallar en inköpsrekvisition, återkallas alla andra inköpsrekvisitionsrader också. Inköpsrekvisitionrader, som har återkallats, kan tas bort.</td>
+Om du skickar tillbaka en inköpsrekvisitionsrad som har avvisats, startar granskningen om för alla rader i inköpsrekvisitionen som fortfarande är under granskning. </br><strong>Obs!</strong> Du kan sedan återkalla en inköpsrekvisition som redan har skickats in. När du återkallar en inköpsrekvisition, återkallas alla andra inköpsrekvisitionsrader också. Inköpsrekvisitionrader, som har återkallats, kan tas bort.</td>
 </tr>
 <tr class="odd">
 <td>Avvisad</td>
@@ -109,7 +109,7 @@ Om du skickar tillbaka en inköpsrekvisitionsrad som har avvisats, startar grans
 <tr class="odd">
 <td>Annullerad</td>
 <td>Annullerad</td>
-<td>Inköpsrekvisitionen och alla inköpsrekvisitionsrader har avbrutits. <strong>Obs!</strong> Om du inte längre behöver en artikel på en inköpsrekvisitionsrad, måste du avbryta inköpsrekvisitionsraden om den redan har godkänts. Endats inköpsrekvisitionsrader, som har godkänts kan avbrytas. Om alla inköpsrekvisitionsrader är under granskning har inköpsrekvisitionen statusvärdet. <strong>Under granskning</strong> Du får återkalla inköpsrekvisitionen och ta bort den lämpliga inköpsrekvisitionsraden.</td>
+<td>Inköpsrekvisitionen och alla inköpsrekvisitionsrader har avbrutits.</br> <strong>Obs!</strong> Om du inte längre behöver en artikel på en inköpsrekvisitionsrad, måste du avbryta inköpsrekvisitionsraden om den redan har godkänts. Endats inköpsrekvisitionsrader, som har godkänts kan avbrytas. Om alla inköpsrekvisitionsrader är under granskning har inköpsrekvisitionen statusvärdet. <strong>Under granskning</strong> Du får återkalla inköpsrekvisitionen och ta bort den lämpliga inköpsrekvisitionsraden.</td>
 </tr>
 <tr class="even">
 <td>Stängt</td>
@@ -156,7 +156,8 @@ I vissa fall måste du starta en anbudsförfrågan (RFQ)-process för att identi
 
 Du kan spärra en inköpsrekvisition genom att välja kryssrutan **Spärrad** på sidan **Information om inköpsrekvisition**. Bearbetningen av inköpsrekvisitionen kan fortsätta först när du har tagit bort spärren genom att avmarkera kryssrutan.  
 
-**Obs!** I eProcurement kan anbudsförfrågan för din inköpsrekvisition tillåta leverantörer lägga till alternativrader. I detta fall kommer din inköpsrekvisition att återspegla godkända alternativ.
+> [!NOTE]
+> I eProcurement kan anbudsförfrågan för din inköpsrekvisition tillåta leverantörer lägga till alternativrader. I detta fall kommer din inköpsrekvisition att återspegla godkända alternativ.
 
 ## <a name="demand-consolidation"></a>Efterfråganskonsolidering
 Genom att konsolidera inköpsrekvisitionsrader från flera inköpsrekvisitioner kan du öka din förhandlingskraft hos leverantörerna och få bättre priser, lägre leverans- och hanteringskostnader och lägre omkostnader.  
@@ -172,7 +173,8 @@ En konsolideringsmöjlighet är en uppsättning inköpsrekvisitionsrader som gru
 
 När du har lagt till rekvisitionsrader i konsolideringsmöjligheten och gör de ändringar som du vill, kan du skapa en inköpsorder för konsoliderade inköpsrekvisitionsrader.  
 
-**Obs!** De ändringar som du gör på en inköpsrekvisitionsrad på sidan **Konsolidering i inköpsrekvisition** visas även i inköpsordern som du skapar. I inköpsrekvisitionen förblir raden oförändrad, så att dess historik bevaras.  
+> [!NOTE]
+> De ändringar som du gör på en inköpsrekvisitionsrad på sidan **Konsolidering i inköpsrekvisition** visas även i inköpsordern som du skapar. I inköpsrekvisitionen förblir raden oförändrad, så att dess historik bevaras.  
 
 Om du vill skapa en inköpsorder för inköpsrekvisitionsrader som inte är valbara för efterfrågekonsolidering eller som inte väljs för en konsolideringsmöjlighet, måste du bearbeta raderna manuellt.
 

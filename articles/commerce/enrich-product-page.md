@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9c0f329d21cdda5c36a39a8c602d5925b720f52
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: d4c495fc6dfe4aa6561a1bb703253ef8ec71dc13
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945753"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003087"
 ---
 # <a name="enrich-a-product-page"></a>Utöka en produktsida
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kan berika en produkt i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-Som standard använder webbplatsen en allmän sida för att visa produktdata. Den här sidan innehåller grundläggande information om produkten och de kontroller som krävs för att sälja den. Du kan dock komplettera den information som kommer från detaljhandelsservern med ytterligare bilder eller text för en viss produkt. Denna process kallas för att hantera produktsidan.
+Som standard använder webbplatsen en allmän sida för att visa produktdata. Den här sidan innehåller grundläggande information om produkten och de kontroller som krävs för att sälja den. Du kan dock komplettera den information som kommer från skalningsenhet för handel med ytterligare bilder eller text för en viss produkt. Denna process kallas för att hantera produktsidan.
 
-I många fall vill du använda särskilda ytterligare innehåll för dina produkter. När du går till **detaljhandel** i utvecklingsverktyget visas en lista med produkter från den kanal som har tilldelats till webbplatsen. I den här listan visar kolumnen **berikad** om produktsidan för en produkt har berikats. Om en bockmarkering visas i kolumnen finns en berikad produktsida för produkten. Om ingen bockmarkering visas används produktens standardproduktsida och innehåll. Du kan förhandsgranska både de berikade och icke-berikade produktsidorna genom att markera produktnamnet i listan.
+I många fall vill du använda särskilda ytterligare innehåll för dina produkter. När du går till **Butik och handel** i utvecklingsverktyget visas en lista med produkter från den kanal som har tilldelats till webbplatsen. I den här listan visar kolumnen **berikad** om produktsidan för en produkt har berikats. Om en bockmarkering visas i kolumnen finns en berikad produktsida för produkten. Om ingen bockmarkering visas används produktens standardproduktsida och innehåll. Du kan förhandsgranska både de berikade och icke-berikade produktsidorna genom att markera produktnamnet i listan.
 
 ## <a name="enrich-a-product-page"></a>Utöka en produktsida
 
