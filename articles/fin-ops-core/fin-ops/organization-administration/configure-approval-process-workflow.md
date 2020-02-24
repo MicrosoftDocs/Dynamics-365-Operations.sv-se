@@ -3,7 +3,7 @@ title: Konfigurera godkännandeprocesser i ett arbetsflöde
 description: Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,169 +17,170 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811391"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983774"
 ---
-# <a name="configure-approval-processes-in-a-workflow"></a><span data-ttu-id="1d757-103">Konfigurera godkännandeprocesser i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="1d757-103">Configure approval processes in a workflow</span></span>
+# <a name="configure-approval-processes-in-a-workflow"></a><span data-ttu-id="735fd-103">Konfigurera godkännandeprocesser i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="735fd-103">Configure approval processes in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1d757-104">Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.</span><span class="sxs-lookup"><span data-stu-id="1d757-104">Use the following procedure to configure the properties of the approval process.</span></span>
+<span data-ttu-id="735fd-104">Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.</span><span class="sxs-lookup"><span data-stu-id="735fd-104">Use the following procedure to configure the properties of the approval process.</span></span>
 
-<span data-ttu-id="1d757-105">Högerklicka godkännandesteget i arbetsflödesredigeraren och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper** om du vill godkänna en godkännandeprocess.</span><span class="sxs-lookup"><span data-stu-id="1d757-105">To configure an approval process, in the workflow editor, right-click the approval element, and then click **Properties** to open the **Properties** form.</span></span>
+<span data-ttu-id="735fd-105">Högerklicka godkännandesteget i arbetsflödesredigeraren och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper** om du vill godkänna en godkännandeprocess.</span><span class="sxs-lookup"><span data-stu-id="735fd-105">To configure an approval process, in the workflow editor, right-click the approval element, and then click **Properties** to open the **Properties** form.</span></span>
 
-## <a name="name-the-approval-process"></a><span data-ttu-id="1d757-106">Namnge godkännandeprocessen</span><span class="sxs-lookup"><span data-stu-id="1d757-106">Name the approval process</span></span>
+## <a name="name-the-approval-process"></a><span data-ttu-id="735fd-106">Namnge godkännandeprocessen</span><span class="sxs-lookup"><span data-stu-id="735fd-106">Name the approval process</span></span>
 
-<span data-ttu-id="1d757-107">Följ dessa steg om du vill ange ett namn för godkännandeprocessen.</span><span class="sxs-lookup"><span data-stu-id="1d757-107">Follow these steps to enter a name for the approval process.</span></span>
+<span data-ttu-id="735fd-107">Följ dessa steg om du vill ange ett namn för godkännandeprocessen.</span><span class="sxs-lookup"><span data-stu-id="735fd-107">Follow these steps to enter a name for the approval process.</span></span>
 
-1. <span data-ttu-id="1d757-108">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="1d757-108">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="1d757-109">Ange ett unikt namn för godkännandeprocessen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="1d757-109">In the **Name** field, enter a unique name for the approval process.</span></span>
+1. <span data-ttu-id="735fd-108">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="735fd-108">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="735fd-109">Ange ett unikt namn för godkännandeprocessen i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="735fd-109">In the **Name** field, enter a unique name for the approval process.</span></span>
 
-## <a name="specify-when-the-system-automatically-acts-on-the-document"></a><span data-ttu-id="1d757-110">Ange när systemet ska agera automatiskt på dokumentet</span><span class="sxs-lookup"><span data-stu-id="1d757-110">Specify when the system automatically acts on the document</span></span>
+## <a name="specify-when-the-system-automatically-acts-on-the-document"></a><span data-ttu-id="735fd-110">Ange när systemet ska agera automatiskt på dokumentet</span><span class="sxs-lookup"><span data-stu-id="735fd-110">Specify when the system automatically acts on the document</span></span>
 
-<span data-ttu-id="1d757-111">Du kan konfigurera systemet att vidta automatiska åtgärder för dokumentet om vissa villkor uppfylls.</span><span class="sxs-lookup"><span data-stu-id="1d757-111">You can configure the system to automatically act on the document if specific conditions are met.</span></span> <span data-ttu-id="1d757-112">Systemet kan till exempel godkänna utgiftsrapporter med totala belopp som understiger 1 000 kronor.</span><span class="sxs-lookup"><span data-stu-id="1d757-112">For example, the system can approve expense reports that have total amounts that are less than USD 100.</span></span> <span data-ttu-id="1d757-113">Följ dessa steg för att ange när systemet vidtar en åtgärd för dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-113">Follow these steps to specify when the system acts on the document.</span></span>
+<span data-ttu-id="735fd-111">Du kan konfigurera systemet att vidta automatiska åtgärder för dokumentet om vissa villkor uppfylls.</span><span class="sxs-lookup"><span data-stu-id="735fd-111">You can configure the system to automatically act on the document if specific conditions are met.</span></span> <span data-ttu-id="735fd-112">Systemet kan till exempel godkänna utgiftsrapporter med totala belopp som understiger 1 000 kronor.</span><span class="sxs-lookup"><span data-stu-id="735fd-112">For example, the system can approve expense reports that have total amounts that are less than USD 100.</span></span> <span data-ttu-id="735fd-113">Följ dessa steg för att ange när systemet vidtar en åtgärd för dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-113">Follow these steps to specify when the system acts on the document.</span></span>
 
-1. <span data-ttu-id="1d757-114">Klicka på **Automatiska åtgärder** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="1d757-114">In the left pane, click **Automatic actions**.</span></span>
-2. <span data-ttu-id="1d757-115">Markera kryssrutan **Aktivera automatiska åtgärder**.</span><span class="sxs-lookup"><span data-stu-id="1d757-115">Select the **Enable automatic actions** check box.</span></span>
-3. <span data-ttu-id="1d757-116">Klicka på **Lägg till villkor**.</span><span class="sxs-lookup"><span data-stu-id="1d757-116">Click **Add condition**.</span></span>
-4. <span data-ttu-id="1d757-117">Ange ett villkor.</span><span class="sxs-lookup"><span data-stu-id="1d757-117">Enter a condition.</span></span>
-5. <span data-ttu-id="1d757-118">Ange vid behov ytterligare villkor.</span><span class="sxs-lookup"><span data-stu-id="1d757-118">Enter additional conditions, if necessary.</span></span>
-6. <span data-ttu-id="1d757-119">Slutför följande steg för att bekräfta att de villkor som du har angett har ställts in korrekt:</span><span class="sxs-lookup"><span data-stu-id="1d757-119">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+1. <span data-ttu-id="735fd-114">Klicka på **Automatiska åtgärder** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="735fd-114">In the left pane, click **Automatic actions**.</span></span>
+2. <span data-ttu-id="735fd-115">Markera kryssrutan **Aktivera automatiska åtgärder**.</span><span class="sxs-lookup"><span data-stu-id="735fd-115">Select the **Enable automatic actions** check box.</span></span>
+3. <span data-ttu-id="735fd-116">Klicka på **Lägg till villkor**.</span><span class="sxs-lookup"><span data-stu-id="735fd-116">Click **Add condition**.</span></span>
+4. <span data-ttu-id="735fd-117">Ange ett villkor.</span><span class="sxs-lookup"><span data-stu-id="735fd-117">Enter a condition.</span></span>
+5. <span data-ttu-id="735fd-118">Ange vid behov ytterligare villkor.</span><span class="sxs-lookup"><span data-stu-id="735fd-118">Enter additional conditions, if necessary.</span></span>
+6. <span data-ttu-id="735fd-119">Slutför följande steg för att bekräfta att de villkor som du har angett har ställts in korrekt:</span><span class="sxs-lookup"><span data-stu-id="735fd-119">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
 
-    1. <span data-ttu-id="1d757-120">Klicka på **Testa** för att öppna formuläret **Testa arbetsflödesvillkor**.</span><span class="sxs-lookup"><span data-stu-id="1d757-120">Click **Test** to open the **Test workflow condition** form.</span></span>
-    2. <span data-ttu-id="1d757-121">Markera en post i området **Validera villkor** i formuläret.</span><span class="sxs-lookup"><span data-stu-id="1d757-121">Select a record in the **Validate condition** area of the form.</span></span>
-    3. <span data-ttu-id="1d757-122">Klicka på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="1d757-122">Click **Test**.</span></span> <span data-ttu-id="1d757-123">Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.</span><span class="sxs-lookup"><span data-stu-id="1d757-123">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
-    4. <span data-ttu-id="1d757-124">Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="1d757-124">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
+    1. <span data-ttu-id="735fd-120">Klicka på **Testa** för att öppna formuläret **Testa arbetsflödesvillkor**.</span><span class="sxs-lookup"><span data-stu-id="735fd-120">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2. <span data-ttu-id="735fd-121">Markera en post i området **Validera villkor** i formuläret.</span><span class="sxs-lookup"><span data-stu-id="735fd-121">Select a record in the **Validate condition** area of the form.</span></span>
+    3. <span data-ttu-id="735fd-122">Klicka på **Ja**.</span><span class="sxs-lookup"><span data-stu-id="735fd-122">Click **Test**.</span></span> <span data-ttu-id="735fd-123">Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.</span><span class="sxs-lookup"><span data-stu-id="735fd-123">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4. <span data-ttu-id="735fd-124">Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="735fd-124">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
 
-7. <span data-ttu-id="1d757-125">I listan **Automatisk slutförandeåtgärd** väljer du den åtgärd som systemet ska vidta för dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-125">In the **Auto complete action** list, select the action that the system should take on the document.</span></span>
+7. <span data-ttu-id="735fd-125">I listan **Automatisk slutförandeåtgärd** väljer du den åtgärd som systemet ska vidta för dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-125">In the **Auto complete action** list, select the action that the system should take on the document.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="1d757-126">Ange när meddelanden ska skickas</span><span class="sxs-lookup"><span data-stu-id="1d757-126">Specify when notifications are sent</span></span>
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="735fd-126">Ange när meddelanden ska skickas</span><span class="sxs-lookup"><span data-stu-id="735fd-126">Specify when notifications are sent</span></span>
 
-<span data-ttu-id="1d757-127">Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, delegerats eller eskalerats, eller när en ändring har begärts.</span><span class="sxs-lookup"><span data-stu-id="1d757-127">You can send notifications to people when a document has been approved, rejected, delegated, or escalated, or when a change has been requested.</span></span> <span data-ttu-id="1d757-128">Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.</span><span class="sxs-lookup"><span data-stu-id="1d757-128">Follow these steps to specify when notifications are sent, and who the notifications are sent to.</span></span>
+<span data-ttu-id="735fd-127">Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, delegerats eller eskalerats, eller när en ändring har begärts.</span><span class="sxs-lookup"><span data-stu-id="735fd-127">You can send notifications to people when a document has been approved, rejected, delegated, or escalated, or when a change has been requested.</span></span> <span data-ttu-id="735fd-128">Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.</span><span class="sxs-lookup"><span data-stu-id="735fd-128">Follow these steps to specify when notifications are sent, and who the notifications are sent to.</span></span>
 
-1. <span data-ttu-id="1d757-129">Klicka på **Meddelanden** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="1d757-129">In the left pane, click **Notifications**.</span></span>
-2. <span data-ttu-id="1d757-130">Markera kryssrutan bredvid händelserna för att skicka meddelanden för:</span><span class="sxs-lookup"><span data-stu-id="1d757-130">Select the check box next to the events to send notifications for:</span></span>
+1. <span data-ttu-id="735fd-129">Klicka på **Meddelanden** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="735fd-129">In the left pane, click **Notifications**.</span></span>
+2. <span data-ttu-id="735fd-130">Markera kryssrutan bredvid händelserna för att skicka meddelanden för:</span><span class="sxs-lookup"><span data-stu-id="735fd-130">Select the check box next to the events to send notifications for:</span></span>
 
-    - <span data-ttu-id="1d757-131">**Delegera** – När ett dokument har tilldelats till en annan användare för godkännande.</span><span class="sxs-lookup"><span data-stu-id="1d757-131">**Delegate** – When a document has been assigned to another user for approval.</span></span>
-    - <span data-ttu-id="1d757-132">**Eskalera** – När den tilldelade användaren inte har agerat på ett dokument vid angiven tidpunkt.</span><span class="sxs-lookup"><span data-stu-id="1d757-132">**Escalate** – When the assigned user has not acted on a document in the allotted time.</span></span>
-    - <span data-ttu-id="1d757-133">**Godkänn** – När ett dokument har godkänts.</span><span class="sxs-lookup"><span data-stu-id="1d757-133">**Approve** – When a document has been approved.</span></span>
-    - <span data-ttu-id="1d757-134">**Avvisa** – När ett dokument har avvisats.</span><span class="sxs-lookup"><span data-stu-id="1d757-134">**Reject** – When a document has been rejected.</span></span>
-    - <span data-ttu-id="1d757-135">**Begär ändring** – När den tilldelade användaren har begärt en ändring av ett dokument som skickats in.</span><span class="sxs-lookup"><span data-stu-id="1d757-135">**Request change** – When the assigned user has requested a change to a document that was submitted.</span></span>
+    - <span data-ttu-id="735fd-131">**Delegera** – När ett dokument har tilldelats till en annan användare för godkännande.</span><span class="sxs-lookup"><span data-stu-id="735fd-131">**Delegate** – When a document has been assigned to another user for approval.</span></span>
+    - <span data-ttu-id="735fd-132">**Eskalera** – När den tilldelade användaren inte har agerat på ett dokument vid angiven tidpunkt.</span><span class="sxs-lookup"><span data-stu-id="735fd-132">**Escalate** – When the assigned user has not acted on a document in the allotted time.</span></span>
+    - <span data-ttu-id="735fd-133">**Godkänn** – När ett dokument har godkänts.</span><span class="sxs-lookup"><span data-stu-id="735fd-133">**Approve** – When a document has been approved.</span></span>
+    - <span data-ttu-id="735fd-134">**Avvisa** – När ett dokument har avvisats.</span><span class="sxs-lookup"><span data-stu-id="735fd-134">**Reject** – When a document has been rejected.</span></span>
+    - <span data-ttu-id="735fd-135">**Begär ändring** – När den tilldelade användaren har begärt en ändring av ett dokument som skickats in.</span><span class="sxs-lookup"><span data-stu-id="735fd-135">**Request change** – When the assigned user has requested a change to a document that was submitted.</span></span>
 
-3. <span data-ttu-id="1d757-136">Välj raden för en händelse som du valde i steg 2.</span><span class="sxs-lookup"><span data-stu-id="1d757-136">Select the row for an event that you selected in step 2.</span></span>
-4. <span data-ttu-id="1d757-137">Klicka på fliken **Meddelandetext**.</span><span class="sxs-lookup"><span data-stu-id="1d757-137">Click the **Notification text** tab.</span></span>
-5. <span data-ttu-id="1d757-138">Ange meddelandetexten i textrutan.</span><span class="sxs-lookup"><span data-stu-id="1d757-138">In the text box, enter the text for the notification.</span></span>
-6. <span data-ttu-id="1d757-139">Om du vill göra texten mer personlig kan du även infoga platshållare som ersätts med lämplig information när de visas för användarna.</span><span class="sxs-lookup"><span data-stu-id="1d757-139">To personalize the text, you can insert placeholders, which are replaced with the appropriate data when they are displayed to users.</span></span> <span data-ttu-id="1d757-140">Följ dessa steg när du vill infoga en platshållare:</span><span class="sxs-lookup"><span data-stu-id="1d757-140">To insert a placeholder, follow these steps:</span></span>
+3. <span data-ttu-id="735fd-136">Välj raden för en händelse som du valde i steg 2.</span><span class="sxs-lookup"><span data-stu-id="735fd-136">Select the row for an event that you selected in step 2.</span></span>
+4. <span data-ttu-id="735fd-137">Klicka på fliken **Meddelandetext**.</span><span class="sxs-lookup"><span data-stu-id="735fd-137">Click the **Notification text** tab.</span></span>
+5. <span data-ttu-id="735fd-138">Ange meddelandetexten i textrutan.</span><span class="sxs-lookup"><span data-stu-id="735fd-138">In the text box, enter the text for the notification.</span></span>
+6. <span data-ttu-id="735fd-139">Om du vill göra texten mer personlig kan du även infoga platshållare som ersätts med lämplig information när de visas för användarna.</span><span class="sxs-lookup"><span data-stu-id="735fd-139">To personalize the text, you can insert placeholders, which are replaced with the appropriate data when they are displayed to users.</span></span> <span data-ttu-id="735fd-140">Följ dessa steg när du vill infoga en platshållare:</span><span class="sxs-lookup"><span data-stu-id="735fd-140">To insert a placeholder, follow these steps:</span></span>
 
-    1. <span data-ttu-id="1d757-141">Klicka på den plats i textrutan där platshållaren ska visas.</span><span class="sxs-lookup"><span data-stu-id="1d757-141">Click in the text box at the location where the placeholder should appear.</span></span>
-    2. <span data-ttu-id="1d757-142">Klicka på **Infoga platshållare**.</span><span class="sxs-lookup"><span data-stu-id="1d757-142">Click **Insert placeholder**.</span></span>
-    3. <span data-ttu-id="1d757-143">Välj önskad platshållare i listan som visas.</span><span class="sxs-lookup"><span data-stu-id="1d757-143">In the list that is displayed, select the placeholder to insert.</span></span>
-    4. <span data-ttu-id="1d757-144">Klicka på **Infoga**.</span><span class="sxs-lookup"><span data-stu-id="1d757-144">Click **Insert**.</span></span>
+    1. <span data-ttu-id="735fd-141">Klicka på den plats i textrutan där platshållaren ska visas.</span><span class="sxs-lookup"><span data-stu-id="735fd-141">Click in the text box at the location where the placeholder should appear.</span></span>
+    2. <span data-ttu-id="735fd-142">Klicka på **Infoga platshållare**.</span><span class="sxs-lookup"><span data-stu-id="735fd-142">Click **Insert placeholder**.</span></span>
+    3. <span data-ttu-id="735fd-143">Välj önskad platshållare i listan som visas.</span><span class="sxs-lookup"><span data-stu-id="735fd-143">In the list that is displayed, select the placeholder to insert.</span></span>
+    4. <span data-ttu-id="735fd-144">Klicka på **Infoga**.</span><span class="sxs-lookup"><span data-stu-id="735fd-144">Click **Insert**.</span></span>
 
-7. <span data-ttu-id="1d757-145">Klicka på **Översättningar** för att lägga till översättningar av meddelandet.</span><span class="sxs-lookup"><span data-stu-id="1d757-145">To add translations of the notification, click **Translations**.</span></span> <span data-ttu-id="1d757-146">Följ dessa steg i formuläret som visas:</span><span class="sxs-lookup"><span data-stu-id="1d757-146">In the form that is displayed, follow these steps:</span></span>
+7. <span data-ttu-id="735fd-145">Klicka på **Översättningar** för att lägga till översättningar av meddelandet.</span><span class="sxs-lookup"><span data-stu-id="735fd-145">To add translations of the notification, click **Translations**.</span></span> <span data-ttu-id="735fd-146">Följ dessa steg i formuläret som visas:</span><span class="sxs-lookup"><span data-stu-id="735fd-146">In the form that is displayed, follow these steps:</span></span>
 
-    1. <span data-ttu-id="1d757-147">Klicka på **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="1d757-147">Click **Add**.</span></span>
-    2. <span data-ttu-id="1d757-148">I listan som visas väljer du det språk som du skriver texten i.</span><span class="sxs-lookup"><span data-stu-id="1d757-148">In the list that is displayed, select the language in which you will enter the text.</span></span>
-    3. <span data-ttu-id="1d757-149">I textrutan **Översatt text** anger du texten.</span><span class="sxs-lookup"><span data-stu-id="1d757-149">In the **Translated text** text box, enter the text.</span></span>
-    4. <span data-ttu-id="1d757-150">Om du vill anpassa texten kan du infoga platshållare.</span><span class="sxs-lookup"><span data-stu-id="1d757-150">To personalize the text, insert placeholders.</span></span>
-    5. <span data-ttu-id="1d757-151">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="1d757-151">Click **Close**.</span></span>
+    1. <span data-ttu-id="735fd-147">Klicka på **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="735fd-147">Click **Add**.</span></span>
+    2. <span data-ttu-id="735fd-148">I listan som visas väljer du det språk som du skriver texten i.</span><span class="sxs-lookup"><span data-stu-id="735fd-148">In the list that is displayed, select the language in which you will enter the text.</span></span>
+    3. <span data-ttu-id="735fd-149">I textrutan **Översatt text** anger du texten.</span><span class="sxs-lookup"><span data-stu-id="735fd-149">In the **Translated text** text box, enter the text.</span></span>
+    4. <span data-ttu-id="735fd-150">Om du vill anpassa texten kan du infoga platshållare.</span><span class="sxs-lookup"><span data-stu-id="735fd-150">To personalize the text, insert placeholders.</span></span>
+    5. <span data-ttu-id="735fd-151">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="735fd-151">Click **Close**.</span></span>
 
-8. <span data-ttu-id="1d757-152">Klicka på fliken **Recipient**.</span><span class="sxs-lookup"><span data-stu-id="1d757-152">Click the **Recipient** tab.</span></span>
-9. <span data-ttu-id="1d757-153">Ange till vem som meddelandena ska skickas.</span><span class="sxs-lookup"><span data-stu-id="1d757-153">Specify who the notifications are sent to.</span></span> <span data-ttu-id="1d757-154">I följande register väljer du ett av alternativen, och följer sedan de ytterligare stegen för detta alternativ innan du går vidare till steg 10.</span><span class="sxs-lookup"><span data-stu-id="1d757-154">Select one of the options in the following table, and then follow the additional steps for the option before you go to step 10.</span></span>
+8. <span data-ttu-id="735fd-152">Klicka på fliken **Recipient**.</span><span class="sxs-lookup"><span data-stu-id="735fd-152">Click the **Recipient** tab.</span></span>
+9. <span data-ttu-id="735fd-153">Ange till vem som meddelandena ska skickas.</span><span class="sxs-lookup"><span data-stu-id="735fd-153">Specify who the notifications are sent to.</span></span> <span data-ttu-id="735fd-154">I följande register väljer du ett av alternativen, och följer sedan de ytterligare stegen för detta alternativ innan du går vidare till steg 10.</span><span class="sxs-lookup"><span data-stu-id="735fd-154">Select one of the options in the following table, and then follow the additional steps for the option before you go to step 10.</span></span>
 
     <table>
     <thead>
     <tr>
-    <th><span data-ttu-id="1d757-155">Alternativ</span><span class="sxs-lookup"><span data-stu-id="1d757-155">Option</span></span></th>
-    <th><span data-ttu-id="1d757-156">Meddelandemottagare</span><span class="sxs-lookup"><span data-stu-id="1d757-156">Notification recipients</span></span></th>
-    <th><span data-ttu-id="1d757-157">Ytterligare steg</span><span class="sxs-lookup"><span data-stu-id="1d757-157">Additional steps</span></span></th>
+    <th><span data-ttu-id="735fd-155">Alternativ</span><span class="sxs-lookup"><span data-stu-id="735fd-155">Option</span></span></th>
+    <th><span data-ttu-id="735fd-156">Meddelandemottagare</span><span class="sxs-lookup"><span data-stu-id="735fd-156">Notification recipients</span></span></th>
+    <th><span data-ttu-id="735fd-157">Ytterligare steg</span><span class="sxs-lookup"><span data-stu-id="735fd-157">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr>
-    <td><span data-ttu-id="1d757-158"><strong>Deltagare</strong></span><span class="sxs-lookup"><span data-stu-id="1d757-158"><strong>Participant</strong></span></span></td>
-    <td><span data-ttu-id="1d757-159">Användare som tilldelas en specifik grupp eller roll</span><span class="sxs-lookup"><span data-stu-id="1d757-159">Users who are assigned to a specific group or role</span></span></td>
+    <td><span data-ttu-id="735fd-158"><strong>Deltagare</strong></span><span class="sxs-lookup"><span data-stu-id="735fd-158"><strong>Participant</strong></span></span></td>
+    <td><span data-ttu-id="735fd-159">Användare som tilldelas en specifik grupp eller roll</span><span class="sxs-lookup"><span data-stu-id="735fd-159">Users who are assigned to a specific group or role</span></span></td>
     <td>
     <ol>
-    <li><span data-ttu-id="1d757-160">Klicka på fliken <strong>Role based</strong>när du har markerat <strong>Participant</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d757-160">After you select <strong>Participant</strong>, click the <strong>Role based</strong> tab.</span></span></li>
-    <li><span data-ttu-id="1d757-161">Välj den grupp- eller rolltyp som du vill skicka meddelanden till i listan <strong>Typ of participant</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d757-161">In the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
-    <li><span data-ttu-id="1d757-162">Välj den grupp eller roll som du vill skicka meddelanden till i listan <strong>Deltagare</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d757-162">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="735fd-160">Klicka på fliken <strong>Role based</strong>när du har markerat <strong>Participant</strong>.</span><span class="sxs-lookup"><span data-stu-id="735fd-160">After you select <strong>Participant</strong>, click the <strong>Role based</strong> tab.</span></span></li>
+    <li><span data-ttu-id="735fd-161">Välj den grupp- eller rolltyp som du vill skicka meddelanden till i listan <strong>Typ of participant</strong>.</span><span class="sxs-lookup"><span data-stu-id="735fd-161">In the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="735fd-162">Välj den grupp eller roll som du vill skicka meddelanden till i listan <strong>Deltagare</strong>.</span><span class="sxs-lookup"><span data-stu-id="735fd-162">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol>
     </td>
     </tr>
     <tr>
-    <td><span data-ttu-id="1d757-163"><strong>Användare av arbetsflöde</strong></span><span class="sxs-lookup"><span data-stu-id="1d757-163"><strong>Workflow user</strong></span></span></td>
-    <td><span data-ttu-id="1d757-164">Användare som deltar i det aktuella arbetsflödet</span><span class="sxs-lookup"><span data-stu-id="1d757-164">Users who participate in the current workflow</span></span></td>
+    <td><span data-ttu-id="735fd-163"><strong>Användare av arbetsflöde</strong></span><span class="sxs-lookup"><span data-stu-id="735fd-163"><strong>Workflow user</strong></span></span></td>
+    <td><span data-ttu-id="735fd-164">Användare som deltar i det aktuella arbetsflödet</span><span class="sxs-lookup"><span data-stu-id="735fd-164">Users who participate in the current workflow</span></span></td>
     <td>
     <ol>
-    <li><span data-ttu-id="1d757-165">Klicka på fliken <strong>Arbetsflödesanvändar</strong> när du har valt <strong>Arbetsflödesanvändar</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d757-165">After you select <strong>Workflow user</strong>, click the <strong>Workflow user</strong> tab.</span></span></li>
-    <li><span data-ttu-id="1d757-166">Välj en användare som deltar i arbetsflödet i listan <strong>Arbetsflödesanvändar</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d757-166">In the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
+    <li><span data-ttu-id="735fd-165">Klicka på fliken <strong>Arbetsflödesanvändar</strong> när du har valt <strong>Arbetsflödesanvändar</strong>.</span><span class="sxs-lookup"><span data-stu-id="735fd-165">After you select <strong>Workflow user</strong>, click the <strong>Workflow user</strong> tab.</span></span></li>
+    <li><span data-ttu-id="735fd-166">Välj en användare som deltar i arbetsflödet i listan <strong>Arbetsflödesanvändar</strong>.</span><span class="sxs-lookup"><span data-stu-id="735fd-166">In the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ol>
     </td>
     </tr>
     <tr>
-    <td><span data-ttu-id="1d757-167"><strong>Användare</strong></span><span class="sxs-lookup"><span data-stu-id="1d757-167"><strong>User</strong></span></span></td>
-    <td><span data-ttu-id="1d757-168">Specifika användare</span><span class="sxs-lookup"><span data-stu-id="1d757-168">Specific users</span></span></td>
+    <td><span data-ttu-id="735fd-167"><strong>Användare</strong></span><span class="sxs-lookup"><span data-stu-id="735fd-167"><strong>User</strong></span></span></td>
+    <td><span data-ttu-id="735fd-168">Specifika användare</span><span class="sxs-lookup"><span data-stu-id="735fd-168">Specific users</span></span></td>
     <td>
     <ol>
-    <li><span data-ttu-id="1d757-169">Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</span><span class="sxs-lookup"><span data-stu-id="1d757-169">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
-    <li><span data-ttu-id="1d757-170">Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>:.</span><span class="sxs-lookup"><span data-stu-id="1d757-170">Select the users to send notifications to, and then move these users to the <strong>Selected users</strong> list.</span></span></li>
+    <li><span data-ttu-id="735fd-169">Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</span><span class="sxs-lookup"><span data-stu-id="735fd-169">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="735fd-170">Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>:.</span><span class="sxs-lookup"><span data-stu-id="735fd-170">Select the users to send notifications to, and then move these users to the <strong>Selected users</strong> list.</span></span></li>
     </ol>
     </td>
     </tr>
     </tbody>
     </table>
 
-10. <span data-ttu-id="1d757-171">Upprepa stegen 3 till och med 9 för varje enskild händelse som du valde i steg 2.</span><span class="sxs-lookup"><span data-stu-id="1d757-171">Repeat steps 3 through 9 for each event that you selected in step 2.</span></span>
+10. <span data-ttu-id="735fd-171">Upprepa stegen 3 till och med 9 för varje enskild händelse som du valde i steg 2.</span><span class="sxs-lookup"><span data-stu-id="735fd-171">Repeat steps 3 through 9 for each event that you selected in step 2.</span></span>
 
-## <a name="specify-a-final-approver"></a><span data-ttu-id="1d757-172">Ange den slutliga godkännaren</span><span class="sxs-lookup"><span data-stu-id="1d757-172">Specify a final approver</span></span>
+## <a name="specify-a-final-approver"></a><span data-ttu-id="735fd-172">Ange den slutliga godkännaren</span><span class="sxs-lookup"><span data-stu-id="735fd-172">Specify a final approver</span></span>
 
-<span data-ttu-id="1d757-173">Du kan eventuellt tilldela en slutlig godkännare för situationer där godkännaren är den person, som skickade in dokumentet för godkännande.</span><span class="sxs-lookup"><span data-stu-id="1d757-173">You may want to designate a final approver for scenarios where the approver is the person who submitted the document for approval.</span></span> <span data-ttu-id="1d757-174">Följ dessa steg för att ange en slutlig godkännare.</span><span class="sxs-lookup"><span data-stu-id="1d757-174">Follow these steps to specify a final approver.</span></span>
+<span data-ttu-id="735fd-173">Du kan ange en slutlig godkännare för scenarier där godkännaren är den person som skickade dokumentet för godkännande och "Tillåt inte godkännande av avsändare" används.</span><span class="sxs-lookup"><span data-stu-id="735fd-173">You can designate a final approver for scenarios where the approver is the person who submitted the document for approval and the "disallow approval by submitter" is being used.</span></span> <span data-ttu-id="735fd-174">Följ dessa steg för att ange en slutlig godkännare.</span><span class="sxs-lookup"><span data-stu-id="735fd-174">Follow these steps to specify a final approver.</span></span>
 
-1. <span data-ttu-id="1d757-175">Klicka på **Avancerade inställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="1d757-175">In the left pane, click **Advanced settings**.</span></span>
-2. <span data-ttu-id="1d757-176">Markera rutan **Använd slutlig godkännare**.</span><span class="sxs-lookup"><span data-stu-id="1d757-176">Select the **Use final approver** check box.</span></span>
-3. <span data-ttu-id="1d757-177">I listan ska du välja en användare som slutlig godkännare.</span><span class="sxs-lookup"><span data-stu-id="1d757-177">In the list, select the user to be the final approver.</span></span>
+1. <span data-ttu-id="735fd-175">I arbetsflödesredigeraren och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper** om du vill godkänna en godkännandeprocess.</span><span class="sxs-lookup"><span data-stu-id="735fd-175">In the workflow editor, right-click the approval element, and then select **Properties** to open the **Properties** form.</span></span>
+2. <span data-ttu-id="735fd-176">Klicka på **Avancerade inställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="735fd-176">In the left pane, click **Advanced settings**.</span></span>
+3. <span data-ttu-id="735fd-177">Markera rutan **Använd slutlig godkännare**.</span><span class="sxs-lookup"><span data-stu-id="735fd-177">Select the **Use final approver** check box.</span></span>
+4. <span data-ttu-id="735fd-178">I listan ska du välja en användare som slutlig godkännare.</span><span class="sxs-lookup"><span data-stu-id="735fd-178">In the list, select a user to be the final approver.</span></span>
 
-## <a name="set-a-time-limit"></a><span data-ttu-id="1d757-178">Ange en tidsgräns</span><span class="sxs-lookup"><span data-stu-id="1d757-178">Set a time limit</span></span>
+## <a name="set-a-time-limit"></a><span data-ttu-id="735fd-179">Ange en tidsgräns</span><span class="sxs-lookup"><span data-stu-id="735fd-179">Set a time limit</span></span>
 
-<span data-ttu-id="1d757-179">Följ dessa steg om den manuella processen måste slutföras inom en viss tid.</span><span class="sxs-lookup"><span data-stu-id="1d757-179">Follow these steps if the approval process must be completed in a specific time.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="1d757-180">De alternativ som du väljer i dessa steg åsidosätter alternativen som du valde i områdena **Assignment** och **Escalation** för respektive godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="1d757-180">The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step.</span></span>
-
-1. <span data-ttu-id="1d757-181">Klicka på **Avancerade inställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="1d757-181">In the left pane, click **Advanced settings**.</span></span>
-2. <span data-ttu-id="1d757-182">Markera kryssrutan för **elementet** **Ställ in en tidsgräns för arbetsflöden**.</span><span class="sxs-lookup"><span data-stu-id="1d757-182">Select the **Set a time limit for the workflow** **element** check box.</span></span>
-3. <span data-ttu-id="1d757-183">Ange när godkännandeprocessen måste vara slutförd i fältet **Duration**.</span><span class="sxs-lookup"><span data-stu-id="1d757-183">In the **Duration** field, specify when the approval process must be completed.</span></span> <span data-ttu-id="1d757-184">Välj ett av följande alternativ:</span><span class="sxs-lookup"><span data-stu-id="1d757-184">Select one of the following options:</span></span>
-
-    - <span data-ttu-id="1d757-185">**Timmar** – Ange det antal timmar inom vilket godkännandeprocessen senast måste ha slutförts.</span><span class="sxs-lookup"><span data-stu-id="1d757-185">**Hours** – Enter the number of hours in which the approval process must be completed.</span></span> <span data-ttu-id="1d757-186">Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.</span><span class="sxs-lookup"><span data-stu-id="1d757-186">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
-    - <span data-ttu-id="1d757-187">**Dagar** – Ange det antal dagar inom vilket godkännandeprocessen senast måste ha slutförts.</span><span class="sxs-lookup"><span data-stu-id="1d757-187">**Days** – Enter the number of days in which the approval process must be completed.</span></span> <span data-ttu-id="1d757-188">Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.</span><span class="sxs-lookup"><span data-stu-id="1d757-188">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
-    - <span data-ttu-id="1d757-189">**Weeks** – Ange det antal veckor inom vilket godkännandeprocessen senast måste ha slutförts.</span><span class="sxs-lookup"><span data-stu-id="1d757-189">**Weeks** – Enter the number of weeks in which the approval process must be completed.</span></span>
-    - <span data-ttu-id="1d757-190">**Months –** – Välj dag och vecka då godkännandeprocessen senast måste vara slutförd.</span><span class="sxs-lookup"><span data-stu-id="1d757-190">**Months** – Select the day and week by which the approval process must be completed.</span></span> <span data-ttu-id="1d757-191">Du kanske till exempel vill att godkännandeprocessen ska ha slutförts senast på fredagen i den tredje veckan i månaden.</span><span class="sxs-lookup"><span data-stu-id="1d757-191">For example, you may want the approval process to be completed by Friday of the third week of the month.</span></span>
-    - <span data-ttu-id="1d757-192">**År** – Välj dag, vecka och månad då godkännandeprocessen senast måste vara slutförd.</span><span class="sxs-lookup"><span data-stu-id="1d757-192">**Years** – Select the day, week, and month by which the approval process must be completed.</span></span> <span data-ttu-id="1d757-193">Du kanske till exempel vill att godkännandeprocessen ska ha slutförts senast på fredagen i den tredje veckan i december.</span><span class="sxs-lookup"><span data-stu-id="1d757-193">For example, you may want the approval process to be completed by Friday of the third week of December.</span></span>
-
-4. <span data-ttu-id="1d757-194">Om tidsgränsen överskrids, utför systemet åtgärden i dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-194">If the time limit is exceeded, the system acts on the document.</span></span> <span data-ttu-id="1d757-195">I listan **Åtgärd** väljer du den åtgärd som ska vidtas i systemet.</span><span class="sxs-lookup"><span data-stu-id="1d757-195">In the **Action** list, select the action that the system should take.</span></span>
-
-## <a name="specify-which-actions-are-available-to-the-user"></a><span data-ttu-id="1d757-196">Ange vilka åtgärder som är tillgängliga för användaren</span><span class="sxs-lookup"><span data-stu-id="1d757-196">Specify which actions are available to the user</span></span>
-
-<span data-ttu-id="1d757-197">När ett dokument tilldelas en användare för godkännande, måste användaren vidta åtgärder för dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-197">When a document is assigned to a user for approval, the user must act on the document.</span></span> <span data-ttu-id="1d757-198">Följ dessa steg för att ange vilka åtgärder som användaren kan vidta för det inskickade dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-198">Follows these steps to specify which actions the user can take on the document that was submitted.</span></span>
-
-1. <span data-ttu-id="1d757-199">Klicka på **Avancerade inställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="1d757-199">In the left pane, click **Advanced settings**.</span></span>
-2. <span data-ttu-id="1d757-200">Markera kryssrutan **Godkänn** om du vill att användaren ska kunna godkänna dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-200">Select the **Approve** check box if the user can approve the document.</span></span>
-3. <span data-ttu-id="1d757-201">Markera kryssrutan **Avvisa** om du vill att användaren ska kunna avvisa dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-201">Select the **Reject** check box the user can reject the document.</span></span>
-4. <span data-ttu-id="1d757-202">Markerakrysstura **Begär ändring** om du vill att användaren ska kunna begära ändringar i dokumentet.</span><span class="sxs-lookup"><span data-stu-id="1d757-202">Select the **Request change** check box the user can request changes to the document.</span></span>
-5. <span data-ttu-id="1d757-203">Markera kryssrutan **Delegera** om du vill att användaren ska kunna tilldela dokument till andra användare för godkännande.</span><span class="sxs-lookup"><span data-stu-id="1d757-203">Select the **Delegate** check box if the user can assign the document to another user for approval.</span></span>
+<span data-ttu-id="735fd-180">Följ dessa steg om den manuella processen måste slutföras inom en viss tid.</span><span class="sxs-lookup"><span data-stu-id="735fd-180">Follow these steps if the approval process must be completed in a specific time.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1d757-204">**Kryssrutan Aktivera åtgärder från arbetslistan i Enterprise Portal** stöds inte längre.</span><span class="sxs-lookup"><span data-stu-id="1d757-204">The **Enable actions from the work list in Enterprise Portal** check box has been deprecated.</span></span>
+> <span data-ttu-id="735fd-181">De alternativ som du väljer i dessa steg åsidosätter alternativen som du valde i områdena **Assignment** och **Escalation** för respektive godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="735fd-181">The options that you select in these steps override the options that you selected in the **Assignment** and **Escalation** areas of each approval step.</span></span>
 
-## <a name="configure-the-approval-steps"></a><span data-ttu-id="1d757-205">Konfigurera godkännandestegen</span><span class="sxs-lookup"><span data-stu-id="1d757-205">Configure the approval steps</span></span>
+1. <span data-ttu-id="735fd-182">Klicka på **Avancerade inställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="735fd-182">In the left pane, click **Advanced settings**.</span></span>
+2. <span data-ttu-id="735fd-183">Markera kryssrutan för **elementet** **Ställ in en tidsgräns för arbetsflöden**.</span><span class="sxs-lookup"><span data-stu-id="735fd-183">Select the **Set a time limit for the workflow** **element** check box.</span></span>
+3. <span data-ttu-id="735fd-184">Ange när godkännandeprocessen måste vara slutförd i fältet **Duration**.</span><span class="sxs-lookup"><span data-stu-id="735fd-184">In the **Duration** field, specify when the approval process must be completed.</span></span> <span data-ttu-id="735fd-185">Välj ett av följande alternativ:</span><span class="sxs-lookup"><span data-stu-id="735fd-185">Select one of the following options:</span></span>
 
-<span data-ttu-id="1d757-206">En godkännandeprocess består av godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="1d757-206">An approval process consists of approval steps.</span></span> <span data-ttu-id="1d757-207">Slutför följande procedur för att lägga till steg i godkännandeprocessen och konfigurera stegen.</span><span class="sxs-lookup"><span data-stu-id="1d757-207">Complete the following procedure to add steps the approval process and configure the steps.</span></span>
+    - <span data-ttu-id="735fd-186">**Timmar** – Ange det antal timmar inom vilket godkännandeprocessen senast måste ha slutförts.</span><span class="sxs-lookup"><span data-stu-id="735fd-186">**Hours** – Enter the number of hours in which the approval process must be completed.</span></span> <span data-ttu-id="735fd-187">Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.</span><span class="sxs-lookup"><span data-stu-id="735fd-187">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    - <span data-ttu-id="735fd-188">**Dagar** – Ange det antal dagar inom vilket godkännandeprocessen senast måste ha slutförts.</span><span class="sxs-lookup"><span data-stu-id="735fd-188">**Days** – Enter the number of days in which the approval process must be completed.</span></span> <span data-ttu-id="735fd-189">Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.</span><span class="sxs-lookup"><span data-stu-id="735fd-189">Then select the calendar that your organization uses, and enter information about your organization's work week.</span></span>
+    - <span data-ttu-id="735fd-190">**Weeks** – Ange det antal veckor inom vilket godkännandeprocessen senast måste ha slutförts.</span><span class="sxs-lookup"><span data-stu-id="735fd-190">**Weeks** – Enter the number of weeks in which the approval process must be completed.</span></span>
+    - <span data-ttu-id="735fd-191">**Months –** – Välj dag och vecka då godkännandeprocessen senast måste vara slutförd.</span><span class="sxs-lookup"><span data-stu-id="735fd-191">**Months** – Select the day and week by which the approval process must be completed.</span></span> <span data-ttu-id="735fd-192">Du kanske till exempel vill att godkännandeprocessen ska ha slutförts senast på fredagen i den tredje veckan i månaden.</span><span class="sxs-lookup"><span data-stu-id="735fd-192">For example, you may want the approval process to be completed by Friday of the third week of the month.</span></span>
+    - <span data-ttu-id="735fd-193">**År** – Välj dag, vecka och månad då godkännandeprocessen senast måste vara slutförd.</span><span class="sxs-lookup"><span data-stu-id="735fd-193">**Years** – Select the day, week, and month by which the approval process must be completed.</span></span> <span data-ttu-id="735fd-194">Du kanske till exempel vill att godkännandeprocessen ska ha slutförts senast på fredagen i den tredje veckan i december.</span><span class="sxs-lookup"><span data-stu-id="735fd-194">For example, you may want the approval process to be completed by Friday of the third week of December.</span></span>
 
-1. <span data-ttu-id="1d757-208">Dubbelklicka på godkännandeprocessen i arbetsflödesredigeraren.</span><span class="sxs-lookup"><span data-stu-id="1d757-208">In the workflow editor, double-click the approval process.</span></span> <span data-ttu-id="1d757-209">Arbetsflödesredigeraren visar stegen för godkännandeprocessen.</span><span class="sxs-lookup"><span data-stu-id="1d757-209">The workflow editor displays the steps of the approval process.</span></span>
-2. <span data-ttu-id="1d757-210">Dra steget från området **Arbetsflödeselement** till arbetsytan för att lägga till ett godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="1d757-210">To add an approval step, drag the step from the **Workflow elements** area to the canvas.</span></span>
-3. <span data-ttu-id="1d757-211">Se [Konfigurera godkännandesteg i ett arbetsflöde](configure-approval-step-workflow.md) för att konfigurera ett godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="1d757-211">To configure an approval step, see [Configure approval steps in a workflow](configure-approval-step-workflow.md).</span></span>
+4. <span data-ttu-id="735fd-195">Om tidsgränsen överskrids, utför systemet åtgärden i dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-195">If the time limit is exceeded, the system acts on the document.</span></span> <span data-ttu-id="735fd-196">I listan **Åtgärd** väljer du den åtgärd som ska vidtas i systemet.</span><span class="sxs-lookup"><span data-stu-id="735fd-196">In the **Action** list, select the action that the system should take.</span></span>
+
+## <a name="specify-which-actions-are-available-to-the-user"></a><span data-ttu-id="735fd-197">Ange vilka åtgärder som är tillgängliga för användaren</span><span class="sxs-lookup"><span data-stu-id="735fd-197">Specify which actions are available to the user</span></span>
+
+<span data-ttu-id="735fd-198">När ett dokument tilldelas en användare för godkännande, måste användaren vidta åtgärder för dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-198">When a document is assigned to a user for approval, the user must act on the document.</span></span> <span data-ttu-id="735fd-199">Följ dessa steg för att ange vilka åtgärder som användaren kan vidta för det inskickade dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-199">Follows these steps to specify which actions the user can take on the document that was submitted.</span></span>
+
+1. <span data-ttu-id="735fd-200">Klicka på **Avancerade inställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="735fd-200">In the left pane, click **Advanced settings**.</span></span>
+2. <span data-ttu-id="735fd-201">Markera kryssrutan **Godkänn** om du vill att användaren ska kunna godkänna dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-201">Select the **Approve** check box if the user can approve the document.</span></span>
+3. <span data-ttu-id="735fd-202">Markera kryssrutan **Avvisa** om du vill att användaren ska kunna avvisa dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-202">Select the **Reject** check box the user can reject the document.</span></span>
+4. <span data-ttu-id="735fd-203">Markerakrysstura **Begär ändring** om du vill att användaren ska kunna begära ändringar i dokumentet.</span><span class="sxs-lookup"><span data-stu-id="735fd-203">Select the **Request change** check box the user can request changes to the document.</span></span>
+5. <span data-ttu-id="735fd-204">Markera kryssrutan **Delegera** om du vill att användaren ska kunna tilldela dokument till andra användare för godkännande.</span><span class="sxs-lookup"><span data-stu-id="735fd-204">Select the **Delegate** check box if the user can assign the document to another user for approval.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="735fd-205">**Kryssrutan Aktivera åtgärder från arbetslistan i Enterprise Portal** stöds inte längre.</span><span class="sxs-lookup"><span data-stu-id="735fd-205">The **Enable actions from the work list in Enterprise Portal** check box has been deprecated.</span></span>
+
+## <a name="configure-the-approval-steps"></a><span data-ttu-id="735fd-206">Konfigurera godkännandestegen</span><span class="sxs-lookup"><span data-stu-id="735fd-206">Configure the approval steps</span></span>
+
+<span data-ttu-id="735fd-207">En godkännandeprocess består av godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="735fd-207">An approval process consists of approval steps.</span></span> <span data-ttu-id="735fd-208">Slutför följande procedur för att lägga till steg i godkännandeprocessen och konfigurera stegen.</span><span class="sxs-lookup"><span data-stu-id="735fd-208">Complete the following procedure to add steps the approval process and configure the steps.</span></span>
+
+1. <span data-ttu-id="735fd-209">Dubbelklicka på godkännandeprocessen i arbetsflödesredigeraren.</span><span class="sxs-lookup"><span data-stu-id="735fd-209">In the workflow editor, double-click the approval process.</span></span> <span data-ttu-id="735fd-210">Arbetsflödesredigeraren visar stegen för godkännandeprocessen.</span><span class="sxs-lookup"><span data-stu-id="735fd-210">The workflow editor displays the steps of the approval process.</span></span>
+2. <span data-ttu-id="735fd-211">Dra steget från området **Arbetsflödeselement** till arbetsytan för att lägga till ett godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="735fd-211">To add an approval step, drag the step from the **Workflow elements** area to the canvas.</span></span>
+3. <span data-ttu-id="735fd-212">Se [Konfigurera godkännandesteg i ett arbetsflöde](configure-approval-step-workflow.md) för att konfigurera ett godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="735fd-212">To configure an approval step, see [Configure approval steps in a workflow](configure-approval-step-workflow.md).</span></span>
