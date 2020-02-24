@@ -1,0 +1,90 @@
+---
+title: Butiksutdrag
+description: Det här avsnittet beskriver hur rapporter skapas och bokförs.
+author: ashishmsft
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+ms.search.form: RetailParameters
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: 85183
+ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: asharchw
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: Retail July 2017 update
+ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3024095"
+---
+# <a name="retail-statements"></a><span data-ttu-id="5a85e-103">Butiksutdrag</span><span class="sxs-lookup"><span data-stu-id="5a85e-103">Retail statements</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="5a85e-104">I Dynamics 365 Commerce är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (PO) eller Modern POS (MOPS).</span><span class="sxs-lookup"><span data-stu-id="5a85e-104">In Dynamics 365 Commerce, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS).</span></span> <span data-ttu-id="5a85e-105">Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ).</span><span class="sxs-lookup"><span data-stu-id="5a85e-105">The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client.</span></span> <span data-ttu-id="5a85e-106">De parametrar som definieras på sidorna **Handelsparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.</span><span class="sxs-lookup"><span data-stu-id="5a85e-106">The parameters that are defined on the **Commerce parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.</span></span>
+
+<span data-ttu-id="5a85e-107">Utdragsbokföringsprocessen illustreras i följande diagram.</span><span class="sxs-lookup"><span data-stu-id="5a85e-107">The following illustration shows the statement posting process.</span></span> <span data-ttu-id="5a85e-108">I denna process överförs transaktioner som är registrerade i kassan till klienten, genom att Handel schemaläggare används.</span><span class="sxs-lookup"><span data-stu-id="5a85e-108">In this process, transactions that are recorded in the POS are transmitted to the client by using the Commerce scheduler.</span></span> <span data-ttu-id="5a85e-109">När klienten har tagit emot transaktionerna kan du skapa, beräkna och bokföra transaktionsutdraget för butiken.</span><span class="sxs-lookup"><span data-stu-id="5a85e-109">After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.</span></span>
+
+<span data-ttu-id="5a85e-110">[![utdragbokföringsprocessen](./media/retail-statements.png)](./media/retail-statements.png)</span><span class="sxs-lookup"><span data-stu-id="5a85e-110">[![Statement posting process](./media/retail-statements.png)](./media/retail-statements.png)</span></span>
+
+## <a name="creating-and-posting-statements"></a><span data-ttu-id="5a85e-111">Skapa och bokföra utdrag</span><span class="sxs-lookup"><span data-stu-id="5a85e-111">Creating and posting statements</span></span>
+
+<span data-ttu-id="5a85e-112">Du kan skapa ett utdrag manuellt, eller genom att använda de Batch processer, ställer du in så att den körs periodvis under dagen.</span><span class="sxs-lookup"><span data-stu-id="5a85e-112">You can create a statement manually or by using batch processes that you set up to run periodically throughout the day.</span></span> <span data-ttu-id="5a85e-113">I båda fallen används följande steg för att skapa och bokföra utdrag.</span><span class="sxs-lookup"><span data-stu-id="5a85e-113">In both cases, the following steps are used to create and post statements.</span></span>
+
+### <a name="create-the-statement"></a><span data-ttu-id="5a85e-114">Skapa utdraget</span><span class="sxs-lookup"><span data-stu-id="5a85e-114">Create the statement</span></span>
+
+<span data-ttu-id="5a85e-115">Det här steget identifierar den butik som utdraget skapas manuellt för.</span><span class="sxs-lookup"><span data-stu-id="5a85e-115">This step identifies the store that the statement is manually created for.</span></span> <span data-ttu-id="5a85e-116">Om du konfigurerar en batchprocess, kan du automatiskt skapa utdrag för alla butiker som baseras på en tidsplan som du definierar.</span><span class="sxs-lookup"><span data-stu-id="5a85e-116">If you configure a batch process, you can automatically create statements for all stores, based on a schedule that you define.</span></span>
+
+### <a name="calculate-the-statement"></a><span data-ttu-id="5a85e-117">Beräkna utdraget</span><span class="sxs-lookup"><span data-stu-id="5a85e-117">Calculate the statement</span></span>
+
+<span data-ttu-id="5a85e-118">I det här steget väljs transaktionsraderna utifrån villkor som definieras för varje butik i på sidorna **Handelsparametrar** och **Butiker**.</span><span class="sxs-lookup"><span data-stu-id="5a85e-118">In this step, the transaction lines are selected based on criteria that are defined for each store on the **Commerce parameters** and **Stores** pages.</span></span> <span data-ttu-id="5a85e-119">På dessa sidor definierar du villkoren och anger hur transaktionerna beräknas.</span><span class="sxs-lookup"><span data-stu-id="5a85e-119">On these pages, you define the criteria and specify how the transactions are calculated.</span></span> <span data-ttu-id="5a85e-120">Om du vill visa en lista över de transaktioner som är inkluderade i utdraget, innan du beräknar utdraget, använder du **Transaktioner**.</span><span class="sxs-lookup"><span data-stu-id="5a85e-120">To view a list of the transactions that are included in the statement before you calculate the statement, use the **Transactions** page.</span></span>
+
+<span data-ttu-id="5a85e-121">En utdragsberäkning använder kassaavstämningar från kassor som beräknat belopp.</span><span class="sxs-lookup"><span data-stu-id="5a85e-121">Statement calculation uses tender declarations from the registers as the counted amount.</span></span> <span data-ttu-id="5a85e-122">Alternativt kan du ange det räknade beloppet manuellt.</span><span class="sxs-lookup"><span data-stu-id="5a85e-122">Alternatively, you can enter the counted amount manually.</span></span> <span data-ttu-id="5a85e-123">Utdraget visar skillnaden mellan försäljningsbeloppet för transaktionerna och det verkliga beräknade beloppet i alla betalningsmetoder.</span><span class="sxs-lookup"><span data-stu-id="5a85e-123">The statement shows the difference between the sales amount for the transactions and the actual counted amount in all payment methods.</span></span> <span data-ttu-id="5a85e-124">Utdraget bokförs endast om avvikelsen är mindre än den maximalt tillåtna för butiken.</span><span class="sxs-lookup"><span data-stu-id="5a85e-124">The statement is posted only if this difference is less than the maximum posting difference that is defined for the store.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="5a85e-125">Beräkningsprocessen för utdraget använder den globala nummerserien.</span><span class="sxs-lookup"><span data-stu-id="5a85e-125">The statement calculation process uses the global number sequence.</span></span>
+
+<span data-ttu-id="5a85e-126">När du beräknar ett utdrag inkluderar beräkningen följande uppgifter:</span><span class="sxs-lookup"><span data-stu-id="5a85e-126">When you calculate a statement, the calculation includes the following tasks:</span></span>
+
+- <span data-ttu-id="5a85e-127">Markera transaktioner som inte är inkluderade i en tidigare utdragsberäkning för det valda datumintervallet.</span><span class="sxs-lookup"><span data-stu-id="5a85e-127">For the selected date range, mark transactions that weren't included in a previous statement calculation.</span></span>
+- <span data-ttu-id="5a85e-128">Beräkna totalbelopp som avstämts i valda transaktioner.</span><span class="sxs-lookup"><span data-stu-id="5a85e-128">Calculate the total amounts that were tendered in the selected transactions.</span></span> <span data-ttu-id="5a85e-129">Resultaten visas på utdragsrader, beroende på utdragsmetoden:</span><span class="sxs-lookup"><span data-stu-id="5a85e-129">The results are shown on the statement lines, depending on the statement method:</span></span>
+
+    - <span data-ttu-id="5a85e-130">Om utdragsmetoden är **Totalt** skapas en rad för varje betalningsmetod i de valda transaktionerna.</span><span class="sxs-lookup"><span data-stu-id="5a85e-130">If the statement method is **Total**, a line is created for each payment method in the selected transactions.</span></span>
+    - <span data-ttu-id="5a85e-131">Om utdragsmetoden är **Personal** skapas en rad för varje betalningsmetod i de transaktioner som har gjorts av den valda personalmedlemmen.</span><span class="sxs-lookup"><span data-stu-id="5a85e-131">If the statement method is **Staff**, a line is created for each payment method in transactions that were performed by the selected staff member.</span></span>
+    - <span data-ttu-id="5a85e-132">Om utdragsmetoden är **Kassaterminal** skapas en rad för varje betalningsmetod i de transaktioner som har gjorts på den valda kassan.</span><span class="sxs-lookup"><span data-stu-id="5a85e-132">If the statement method is **POS terminal**, a line is created for each payment method in transactions that were performed on the selected register.</span></span>
+    - <span data-ttu-id="5a85e-133">Om utdragsmetoden är **Skift** skapas en rad för varje betalningsmetod i de transaktioner som har gjorts under ett skift.</span><span class="sxs-lookup"><span data-stu-id="5a85e-133">If the statement method is **Shift**, a line is created for each payment method in transactions that were performed during a shift.</span></span>
+
+<span data-ttu-id="5a85e-134">Om kryssrutan **Dela upp efter utdragsmetod** är markerad på sidan **butiker** skapas ett separat uttryck baserat på värdet som valts på fliken **utdragsmetod**.</span><span class="sxs-lookup"><span data-stu-id="5a85e-134">If the **Split by Statement method** check box is selected on the **Stores** page, a separate statement is created based on the value that is selected in the **Statement method** field.</span></span>
+
+<span data-ttu-id="5a85e-135">Om din butiks öppettider förlängdes till efter midnatt, kan du konfigurera utdragsbokföring som baseras på slutet av arbetsdagen i stället för slutet av kalenderdagen.</span><span class="sxs-lookup"><span data-stu-id="5a85e-135">If your store's operating hours extend past midnight, you can configure statement posting so that it's based on the end of the business day instead of the end of the calendar day.</span></span>
+
+<span data-ttu-id="5a85e-136">På sidan **Butiker** på snabbfliken **Utdrag/stängning** i fältet **Slut på vardagen** anger du den tidpunkt då den senaste transaktionen måste registreras för att inkluderas i arbetsdagens utdrag.</span><span class="sxs-lookup"><span data-stu-id="5a85e-136">On the **Stores** page, on the **Statement/closing** FastTab, in the **End of business day** field, enter the time that the last transaction must be recorded to be included in the business day's statement.</span></span> <span data-ttu-id="5a85e-137">Markera kryssrutan **Bokför som vardag** för att bokföra transaktionerna på samma vardag.</span><span class="sxs-lookup"><span data-stu-id="5a85e-137">Select the **Post as business day** check box to post the transactions within the same business day.</span></span> <span data-ttu-id="5a85e-138">När utdraget bokförs kan transaktionerna som registreras inom samma arbetsdag inkluderas på samma försäljningsorder, även om de infaller före och efter midnatt.</span><span class="sxs-lookup"><span data-stu-id="5a85e-138">When the statement is posted, transactions that are recorded within the same business day can be included on the same sales order, even if some transactions occur before midnight and other transactions occur after midnight.</span></span>
+
+#### <a name="example-post-a-statement-for-a-business-day-that-extends-over-two-calendar-days"></a><span data-ttu-id="5a85e-139">Exempel: Bokföra ett utdrag för en arbetsdag som sträcker sig över två kalenderdagar</span><span class="sxs-lookup"><span data-stu-id="5a85e-139">Example: Post a statement for a business day that extends over two calendar days</span></span>
+
+<span data-ttu-id="5a85e-140">En butik har öppet mellan kl 08:00 och 03:00 och kryssrutan **Bokför som vardag** är markerad i butikens konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="5a85e-140">A store is open between 8:00 AM and 3:00 AM, and the **Post as business day** check box is selected in the store's configuration.</span></span> <span data-ttu-id="5a85e-141">Den 31 maj registrerar butiken transaktioner mellan kl 08:00 och midnatt.</span><span class="sxs-lookup"><span data-stu-id="5a85e-141">On May 31, the store records transactions between 8:00 AM and midnight.</span></span> <span data-ttu-id="5a85e-142">Butiken registrerar även transaktioner mellan kl 00:01 och 03:00 den 1 juni.</span><span class="sxs-lookup"><span data-stu-id="5a85e-142">The store also records transactions between 12:01 AM and 3:00 AM on June 1.</span></span>
+
+<span data-ttu-id="5a85e-143">När butiken bokför sitt utdrag för slutet av arbetsdagen, skapas en försäljningsorder som omfattar alla transaktioner som har registrerats under öppettider mellan kl 08:00 och 03:00 även om transaktionerna inträffade de två dagarna 31 maj och 1 juni.</span><span class="sxs-lookup"><span data-stu-id="5a85e-143">When the store posts its statement for the close of the business day, the sales order that is generated includes all transactions that were recorded between the business hours of 8:00 AM and 3:00 AM, even though the transactions occurred on two days, May 31 and June 1.</span></span>
+
+<span data-ttu-id="5a85e-144">Om kryssrutan **Bokför som vardag** är avmarkerad för samma butik, genereras separata försäljningsorder när butiken bokför sitt utdrag vid slutet av arbetsdagen.</span><span class="sxs-lookup"><span data-stu-id="5a85e-144">If the **Post as business day** check box is cleared for the same store, separate sales orders are generated when the store posts its statement for the close of the business day.</span></span> <span data-ttu-id="5a85e-145">En försäljningsorder innehåller transaktionerna som har registrerats för öppettider mellan kl 08:00 och midnatt den 31 maj, och den andra försäljningsordern inkluderar transaktioner som har registrerats affärstiderna mellan kl 00:01 och 03:00 den 1 juni.</span><span class="sxs-lookup"><span data-stu-id="5a85e-145">One sales order includes the transactions that were recorded between the business hours of 8:00 AM and midnight on May 31, and the second sales order includes the transactions that were recorded between the business hours of 12:01 AM and 3:00 AM on June 1.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="5a85e-146">Innan du kan skapa utdrag måste du stänga skiften i utdragsperioden.</span><span class="sxs-lookup"><span data-stu-id="5a85e-146">Before you can create statements, you should close the shifts in the statement period.</span></span>
+
+### <a name="post-the-statement"></a><span data-ttu-id="5a85e-147">Bokför utdraget</span><span class="sxs-lookup"><span data-stu-id="5a85e-147">Post the statement</span></span>
+
+<span data-ttu-id="5a85e-148">När du bokför ett utdrag, skapas fakturor för försäljningsorder och försäljning i utdraget.</span><span class="sxs-lookup"><span data-stu-id="5a85e-148">When you post a statement, sales orders and invoices are created for the sales in the statement.</span></span>
+
+- <span data-ttu-id="5a85e-149">Hemköpsförsäljning (cash and carry) aggregeras till en försäljningsorder och faktureras för standardkunden som har tilldelats till butiken.</span><span class="sxs-lookup"><span data-stu-id="5a85e-149">Cash and carry sales are aggregated onto one sales order, and are invoiced for the default customer who is assigned to the store.</span></span>
+- <span data-ttu-id="5a85e-150">Försäljning, för vilken en kund lades till i transaktionen i kassan genererar separata försäljningsorder och fakturor, en för varje unik kund.</span><span class="sxs-lookup"><span data-stu-id="5a85e-150">Sales for which a customer was added to the transaction in POS generate separate sales orders and invoices, one for each unique customer.</span></span>
+
+<span data-ttu-id="5a85e-151">Betalningsjournaler skapas automatiskt för betalningarna i utdraget och lagret uppdateras för kassabutiken.</span><span class="sxs-lookup"><span data-stu-id="5a85e-151">Payment journals are automatically created for the payments in the statement, and the inventory is updated for the POS store.</span></span>
