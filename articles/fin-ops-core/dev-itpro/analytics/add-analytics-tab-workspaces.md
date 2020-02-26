@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771643"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025864"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Lägg till analyser i arbetsytor genom att använda Power BI Embedded
 
@@ -111,7 +111,7 @@ Så här lägger du till affärslogik som initierar rapportvisningskontrollen so
 2. Tryck på F7 för att komma åt koden bakom koddefinitionen.
 3. Lägg till följande X++-kod:
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -156,7 +156,7 @@ Du har nu slutfört uppgiften att lägga till inbäddad affärslogik för att in
 Det här avsnittet innehåller information om den hjälpklass som används för att bädda in en Power BI-rapport (.pbix resurs) i formulärgruppkontroll.
 
 #### <a name="syntax"></a>Syntax
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,

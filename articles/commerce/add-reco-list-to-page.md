@@ -3,7 +3,7 @@ title: Lägg till produktrekommendationer på sidor
 description: I det här avsnittet beskrivs hur du lägger till en lista över produktrekommendationer på en e-handelssida.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,26 +19,26 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4f2b1e9768b34d341adb3c11e475daa7a1d1882f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5c71c1cf91b1913f44546f40620aff358cf256b2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770515"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001310"
 ---
-# <a name="add-product-recommendation-lists-to-e-commerce-pages"></a>Lägg till listor över produktrekommendationer på e‑handelssidor
+# <a name="add-recommendation-lists-to-a-site"></a>Lägga till rekommendationslistor på en webbplats
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du lägger till en lista över produktrekommendationer på en e-handelssida.
 
-1. Från en befintlig redigeringssida för e-handel, välj **Lägg till modul**.
+1. Från en befintlig sida för webbplatsskapare för e-handel, välj **Lägg till modul**.
 2. Sök efter modulen **produktsamling**.
 3. I modulguiden väljer du listan som ska läggas till på sidan.
 4. Spara ändringarna.
 
-Mer information om vilka typer av listor som du kan lägga till på en sida finns i [översikt över produktrekommendationer](product-recommendations.md).
+Mer information om vilka typer av listor som du kan lägga till på en sida finns i [översikt över produktsamlingsmodul](product-collection-module-overview.md).
 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
@@ -50,3 +50,5 @@ Mer information om vilka typer av listor som du kan lägga till på en sida finn
 [Skapa granskade listor över produktrekommendationer](create-editorial-recommendation-lists.md)
 
 [Hantera AI-ML-baserade produktrekommendationsresultat](modify-product-recommendation-results.md)
+
+[Översikt över produktsamlingsmodul](product-collection-module-overview.md)

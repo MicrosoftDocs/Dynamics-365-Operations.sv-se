@@ -3,7 +3,7 @@ title: Skapa leverantörskonton
 description: I det här avsnittet beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249412"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012455"
 ---
 # <a name="set-up-vendor-accounts"></a>Skapa leverantörskonton
 
@@ -88,7 +88,7 @@ Du kan spärra en leverantör för olika transaktionstyper. Följande alternativ
 -   **Faktura** – Inga fakturor kan publiceras för leverantören.
 -   **Alla** – Leverantören har spärrats för alla transaktionstyper. Dessa transaktionstyper inkluderar inköpsrekvisitioner, fakturor och betalningar.
 -   **Betalning** – Inga betalningar kan skapas för leverantören.
--   **Rekvisition** – Endast inköpsrekvisitioner kan skapas. Inga övriga transaktioner kan skapas.
+-   **Rekvisition** – inköpsrekvisitioner kan inte skapas för leverantören och rekvisitionsrader som redan har skapats innan leverantören spärrades kan inte konverteras till en inköpsorder. Rekvisitionsrader för leverantören kommer att annulleras om din policy ställs in automatiskt för att skapa inköpsorder.
 -   **Aldrig** – Leverantören spärras aldrig för inaktivitet.
 
 När du spärrar en leverantör kan du också ange en orsak och ett datum då spärrstatusen avslutas. Om du inte anger något slutdatum, varar leverantörens spärrade status på obestämd tid.

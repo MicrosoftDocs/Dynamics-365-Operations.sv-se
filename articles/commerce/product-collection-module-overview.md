@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
-ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
+ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2943273"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025958"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
@@ -39,7 +39,7 @@ Produktsamlingsmoduler representerar fysiska produkter och tjänster på webbpla
 
 Källorna för produktsamlingar kan vara listor av följande fyra typer:
 
-- Redaktionella listor med produkter som definieras manuellt i Dynamics 365 Retail som relaterade produkter för en produkt eller produktlistor
+- Redaktionella listor med produkter som definieras manuellt i Dynamics 365 Commerce som relaterade produkter för en produkt eller produktlistor
 - Algoritmiska listor, till exempel listor över nya, bästsäljande eller trendbaserade produkter
 - Rekommendationslistor som baseras på maskininlärning
 - Anpassningslistor som stöder anpassade resultat för en kund. Kunder måste vara inloggade på e-handelsplatsen för att se anpassade resultat. Gästanvändare ser inte anpassade resultat. Kunder kan välja bort anpassning från sidan [sidan kontohantering](account-management.md).
@@ -57,9 +57,10 @@ I följande tabell beskrivs olika typer av moduler för produktsamlingar i Dynam
 
 | Produktsamlingsmodul  | Typ | Beskrivning |
 |----------------------------|------|-------------|
-| Kategori                   | Kategori | I den här modulen visas en lista över produkter i en kategori, enligt definitionen i den navigeringskategorihierarki som återförsäljaren skapade för en butikskanal. |
-| Relaterade produkter           | Redaktionellt | Den här modulen visar en lista över produkter som en inköpschef har konfigurerat som relaterade produkter i butik, för den relationstyp som författaren har valt. |
-| Granskade produktlistor      | Redaktionellt | Den här modulen visar anpassade listor som produkter och redigerare har skapat i Retail. |
+| Kategori                   | Kategori | I den här modulen visas en lista över produkter i en kategori, enligt definitionen i den navigeringskategorihierarki som återförsäljaren skapade för en kanal. |
+| Relaterade produkter           | Redaktionellt | Den här modulen visar en lista över produkter som en inköpschef har konfigurerat som relaterade produkter i handel, för den relationstyp som författaren har valt. |
+| Sökresultat             | Sökfråga | Den här typen av produktsamlingsmodul visar en lista över produkter som bäst matchar sökfrågan som kunden har angett. |
+| Granskade produktlistor      | Redaktionellt | Den här modulen visar anpassade listor som produkter och redigerare har skapat i Handel. |
 | Nya                        | Algoritmiska | Den här modulen visar en lista över de senaste produkterna som har varit utvalda för kanaler och kataloger. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
 | Bästsäljare               | Algoritmiska | Den här modulen visar en lista över produkter som rangordnas med det högsta antalet försäljningar. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
 | Trend                   | Algoritmiska | Den här modulen visar en lista över produkter som är mest presterande för en viss period. Den här listan kan visa anpassade resultat för en inloggad användare om webbplatsförfattaren väljer det alternativet. |
@@ -76,7 +77,6 @@ För att lägga till en modul för produktsamling på en kategorisida, följ des
 1. I dialogrutan **Lägg till modul**, välj **Behållare** och klicka sedan på **OK**.
 1. I behållarmodulen väljer du ellipsknappen och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul**, välj **Produktsamling** och klicka sedan på **OK**.  
-![Exempel på produktsamlingsmodul för flödesguide](./media/productCollectionModule.png)
 1. Konfigurera inställningar genom att välja en lämplig datakälla och indata för produktsamlingen.
 1. Välj **Lägg till en produktlista** i egenskapsrutan för modulen produktsamling.
 1. I dialogrutan **Välj konfiguration av produktlista** väljer du typ av lista, anger antalet artiklar och väljer eventuella andra alternativ som är tillgängliga för listtypen. Mer information om dessa listtyper finns i följande tabell. 
@@ -88,8 +88,8 @@ I följande tabell visas de listtyper som är tillgängliga för val i dialogrut
 | Typ                       | Beskrivning | Användning | Sidkontext | Specifik kontext | Anpassning |
 |----------------------------|-------------|-------|--------------|------------------|-----------------|
 | Produkter efter kategori       | En lista med produkter som tillhör en given kategori. Den här kategorin bestäms antingen från sidkontexten eller det sammanhang som författaren tillhandahåller. | Den här typen av lista kan användas på alla sidor (till exempel en startsida, kategorisida, marknadsföringssida eller produktinformationssida \[PDP\]) för att marknadsföra en viss kategori av produkter. | Kategori från sidans kontext, där den är tillgänglig (till exempel en kategorisida) | Författaren kan ge en specifik kategori som kontext för listan. | Inte aktuellt |
-| Relaterade produkter           | En lista över produkter som en inköpschef har konfigurerat som relaterade produkter för relationstypen i Retail. | Den här typen av lista används främst på PDP, men den kan användas på alla sidor om en överordnad produkt tillhandahålls. | Produkt från sidan, relationstyp (obligatoriskt) | Produkten kan väljas i väljaren och relationstypen används. | Inte aktuellt |
-| Modererad                    | En anpassad lista som produkter och redigerare har skapat i Retail. | Utöka kategorisida, startsida, kassasida och kundvagnssida och produktsidor | Inte aktuellt | Inte aktuellt | Inte aktuellt |
+| Relaterade produkter           | En lista över produkter som en inköpschef har konfigurerat som relaterade produkter för relationstypen i Handel. | Den här typen av lista används främst på PDP, men den kan användas på alla sidor om en överordnad produkt tillhandahålls. | Produkt från sidan, relationstyp (obligatoriskt) | Produkten kan väljas i väljaren och relationstypen används. | Inte aktuellt |
+| Modererad                    | En anpassad lista som produkter och redigerare har skapat i Handel. | Utöka kategorisida, startsida, kassasida och kundvagnssida och produktsidor | Inte aktuellt | Inte aktuellt | Inte aktuellt |
 | Algoritmiska                | <ul><li>**Ny** – en lista över de senaste produkterna som har varit utvalda för kanaler och kataloger.</li><li>**Bästsäljande** – en lista över produkter som rangordnas med det högsta antalet försäljningar.</li><li>**Trender** – en lista över produkter som är mest presterande för en viss period.</li></ul> | Startsida, utöka kategorisida och kassasida och kundvagnssida | Kategori från sidans kontext (till exempel en kategorisida) | Den kategori som bestäms av webbplatsens författare | Stöds |
 | Ofta köpta tillsammans | En lista som använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera relaterade artiklar som ofta köps tillsammans med en viss produkt. | Den här typen av lista gäller endast för kundvagnssidan. | Kundvagn | Inte aktuellt | Stöds |
 | Andra gillar också           | En lista som använder maskininlärning för att analysera konsumenters inköpsmönster och rekommendera artiklar som är relaterade till en viss produkt. | Den här typen av lista används på PDP för att visa produkter som andra kunder har köpt. | Produktkontext från sidan | Den produkt som etableras av webbplatsens författare | Stöds |
@@ -97,13 +97,11 @@ I följande tabell visas de listtyper som är tillgängliga för val i dialogrut
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över startpaket](starter-kit-overview.md)
+[Startpaket – översikt](starter-kit-overview.md)
 
 [Karusellmodul](add-carousel.md)
 
 [Innehållsrik blockmodul](add-content-rich-block.md)
-
-[Modul för innehållsplacering](add-content-placement-modules.md)
 
 [Behållarmodul](add-container-module.md)
 

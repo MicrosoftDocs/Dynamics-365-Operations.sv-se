@@ -3,7 +3,7 @@ title: Hantera omdömen och recensioner
 description: I det här avsnittet beskrivs hur du hanterar värderingar och recensioner med hjälp av Microsoft Dynamics 365 Commerce klassificeringar och recensioner.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9becdce5ae36ac637043b9d0febfbbff2392aa9
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: a7fa2ae3124a0a68b3890987c5dce2730e5c2183
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698036"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027252"
 ---
 # <a name="manage-ratings-and-reviews"></a>Hantera omdömen och recensioner
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du hanterar värderingar och recensioner med hjälp av Microsoft Dynamics 365 Commerce klassificeringar och recensioner.
@@ -39,6 +38,16 @@ Dynamics 365 Commerce använder Microsoft Azure kognitiva tjänster för att aut
 - Moderera granskningar genom att svara på dem eller ta bort dem.
 - Ta bort en kunds recensioner på kundens begäran.
 - Massimport av omdömen och granskningsdata för alla produkter i en Microsoft Power BI-mall, så att trender för omdömen och recensioner kan analyseras.
+
+## <a name="access-ratings-and-reviews-moderation-features"></a>Åtkomstklassificering och granskning av redigeringsfunktioner
+
+Om du vill få åtkomst till klassificeringsfunktioner och recensioner av redigeringsfunktionerna i verktyget för webbplatshantering i e-handel följer du stegen nedan.
+
+1. Logga in på [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
+1. Öppna det projekt som innehåller den miljö där du vill initiera e-handel.
+1. Välj miljön avsnittet **miljöer**.
+1. Under **Miljöfunktioner**, välj **Butik – hantera**.
+1. På fliken **e-handel** under **länkar** väljer du **Hanteringsverktyg för näthandelsplats**.
 
 ## <a name="read-a-review"></a>Läs en recension 
 

@@ -3,7 +3,7 @@ title: Behållaremodul
 description: Det här avsnittet handlar om behållarmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 22a09b61fbe3bd1cca96011d3fb81a12ef1bc844
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697070"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025538"
 ---
 # <a name="container-module"></a>Behållaremodul
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om behållarmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-En behållarmodul är en modul som är värd för andra moduler inne i den. Det är den mest allmänna behållaren som används i Dynamics 365 Commerce. Det primära syftet med en behållare är att definiera, via de egenskaper som är inställda för den, layouten för modulerna inne i den. Dessa moduler kan till exempel visas sida vid sida i en layout med två kolumner, tre kolumner, fyra kolumner och sex kolumner. De kan också begränsas till behållarens bredd, eller så att de fyller skärmen. En rubrik kan också läggas till i varje behållarmodul.
+En behållarmodul är en modul som är värd för andra moduler inne i den. Det primära syftet med en behållare är att definiera, via de egenskaper som är inställda för den, layouten för modulerna som den innehåller. Dessa moduler kan till exempel visas sida vid sida i en layout med två kolumner, tre kolumner, fyra kolumner och sex kolumner. De kan också begränsas till behållarens bredd, eller så att de fyller skärmen. En rubrik kan också läggas till i varje behållarmodul.
 
-Det finns tre standard typer av behållarmoduler: behållare, behållare med 2 platser och behållare med 3 platser. Moduler av valfri typ av modul kan placeras i dessa behållare. Det finns också särskilda typer av moduler för behållare, t.ex. karusell, innehållsrika block, innehållsplacering, korg, utcheckning, inköpsruta, sidhuvud och sidfot. Dessa behållare har särskilda syfte och endast specifika typer av moduler som stöds kan placeras inuti dem.
+Tre behållarmoduler stöds: behållare, behållare med 2 platser och behållare med 3 platser. Moduler av valfri typ kan placeras i dessa behållare. 
 
-Vi rekommenderar att du placerar moduler inuti en behållare så att de kan begränsas till behållarens bredd.
+> [!NOTE] 
+> Vi rekommenderar att du alltid placerar moduler inuti en behållarmodul så att de kan begränsas till behållarens bredd.
 
 ## <a name="examples-of-container-modules-in-e-commerce"></a>Exempel på behållarmoduler i e-handel
 
@@ -98,30 +99,27 @@ Ytterligare egenskaper kan användas för att optimera layouten för olika visni
 
 Om du vill lägga till en modul för behållarspelare på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa en sidmall som har namnet **behållarmall**.
-1. Lägg till platsen **Huvud** på standardsida, lägg till en behållarmodul.
-1. I behållarmodulen, lägg till en funktionsmodul.
-1. Checka in mallen och publicera den.
+1. Skapa en sidmall som har namnet **behållarmall**. 
+1. I facket **Brödtext**, lägg till en **standardsida**-modul.
+1. Avsluta redigeringen i mallen och publicera den.
 1. Använd den behållarmall som du just skapade för att skapa en sida med namnet **behållarsida**.
 1. Lägg till platsen **Huvud** på ny sida, lägg till en behållarmodul.
-1. I egenskapsrutan för behållarmodulen anger du egenskapen **antalet kolumner** till **1** och egenskapen **bredd** till **passa behållare**.
-1. I behållarmodulen, lägg till en funktionsmodul.
-1. Konfigurera en rubrik i egenskapsfönstret för funktionsmodulen.
+1. I egenskapsrutan för behållarmodulen anger du egenskapen **antalet kolumner** till **1** och egenskapen **bredd** till **fyll behållare**.
+1. I behållarmodulen, lägg till ett innehållsblockmodul.
+1. Konfigurera rubrik, bild och layout i egenskapsfönstret för innehållsblockmodulen.
 1. Spara och förhandsgranska sidan. Du bör se en modul som får plats inom samma bredd som behållarmodulen.
 1. I behållarmodulens egenskapsfönster, ändra värdet för **Antal kolumner** till **3**.
-1. Lägg till två fler funktionsmoduler till behållarmodulen.
-1. Spara och förhandsgranska sidan. Nu ska du se tre funktionsmoduler som visas sida vid sida.
-1. När du har uppnått layouten du vill ha, checkar du in sidan och publicerar den.
+1. Lägg till två fler innehållsblockmoduler till behållarmodulen.
+1. Spara och förhandsgranska sidan. Nu ska du se tre innehållsblockmoduler som visas sida vid sida.
+1. När du har uppnått layouten du vill ha, avslutar du redigeringen av sidan och publicerar den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över startpaket](starter-kit-overview.md)
+[Startpaket – översikt](starter-kit-overview.md)
 
 [Karusellmodul](add-carousel.md)
 
-[Innehållsrik blockmodul](add-content-rich-block.md)
-
-[Modul för innehållsplacering](add-content-placement-modules.md)
+[Textblockmodul](add-content-rich-block.md)
 
 [Modul för inköpsruta](add-buy-box.md)
 

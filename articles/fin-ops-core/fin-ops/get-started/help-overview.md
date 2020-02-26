@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811682"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005713"
 ---
 # <a name="help-system"></a>Hjälpsystem
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811682"
 Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet. Hjälpsystemet är gemensamt för följande produkter:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 Du kommer åt hjälpen via hjälpfönstret i alla produkter du använder. 
 
@@ -42,7 +42,7 @@ Du kommer åt hjälpen via hjälpfönstret i alla produkter du använder.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
 
-Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) är den primära produktinformationkällan för programmen som anges ovan. Webbplatsen erbjuder följande funktioner:
+Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) är den primära produktinformationkällan för programmen som anges ovan. Webbplatsen erbjuder följande funktioner:
 
 - **Åtkomst till det senaste innehållet**– Webbplatsen ger oss ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Därför hjälper den till att säkerställa att du har tillgång till den senaste tekniska informationen.
 - **Innehåll skrivet av experter**– Webbplatsen ger en större mängd produktdokumentation som kan förbättras av community-medlemmar både inom och utanför Microsoft.
@@ -73,7 +73,7 @@ Du kan delta i och redigera den dokumentation. För att börja klickar du på kn
 
 Videon [Hur du bidrar till dokumentationen för Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) video (som visas ovan) ingår i kanalen Microsoft Dynamics 365 på YouTube.
 
-Mer information finns i vår [deltagarguide](https://docs.microsoft.com/en-us/contribute).
+Mer information finns i vår [deltagarguide](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > Vi godkänner endast bidrag till vår engelska hjälpdel just nu.
@@ -106,12 +106,12 @@ För att nå hjälpavsnittet klickar du antingen på ikonen **Hjälp** (**?**) o
 I Hjälp-fönstret kan du öppna inlägg som gäller för klienten. När du först öppnar hjälpfönstret och klickar på fliken **Hjälp** ser du de artiklar som gäller för den sida du för närvarande använder. Om inga artiklar hittas kan du ange nyckelord för att begränsa sökningen. När du klickar på en artikel i fönstret Hjälp öppnas en ny flik i webbläsaren som visar artikeln.
 
 > [!IMPORTANT]
-> Det här avsnittet gäller inte för Dynamics 365 Talent. Hjälpsystemet för Talent ansluts automatiskt till uppgiftsguider för produkten. Du skapa heller inte skapa anpassade uppgiftsguider för Talent.
+> Det här avsnittet gäller inte för Dynamics 365 Human Resources. Hjälpsystemet för Personal ansluts automatiskt till uppgiftsguider för produkten. Du skapa heller inte skapa anpassade uppgiftsguider för Personal.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Öppna uppgiftsguider via hjälpfönstret
 
-Innan du kan få åtkomst till uppgiftsguiderna via hjälpfönstret måste en systemadministratör öppna sidan **Systemparametrar** i Finance, Supply Chain Managment och Retail och konfigurera vissa inställningar.
+Innan du kan få åtkomst till uppgiftsguiderna via hjälpfönstret måste en systemadministratör öppna sidan **Systemparametrar** i Finance, Supply Chain Managment och Handel och konfigurera vissa inställningar.
 
 > [!NOTE]
 > - Du måste vara inloggad på ett konto som samma innehavare som den som appen distribuerar för att konfigurera Hjälp.

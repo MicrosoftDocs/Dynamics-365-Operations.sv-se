@@ -3,7 +3,7 @@ title: Översikt över startpaket
 description: Det här ämnet innehåller en översikt över Microsoft Dynamics 365 Commerce startpaket.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73af7fc8845fe08bc4aa014abe4d8c6dcf7ccb7d
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785270"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025912"
 ---
 # <a name="starter-kit-overview"></a>Översikt över startpaket
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över Microsoft Dynamics 365 Commerce startpaket.
@@ -43,7 +43,7 @@ Teman kan användas i moduler i startpaket för att ändra utseende och känsla.
 Följande typer av moduler finns i startpaketet:
 
 - **Behållarmodul** – en behållarmodul är en enkel modul som fungerar som värd för andra moduler. Den styr layouten för modulerna som finns inuti.
-- **Marknadsföringsmoduler** – marknadsföringsmoduler omfattar fokus-, funktions-, innehållsplacerings-, innehållsrika block-, videospelar- och karusellmoduler. Alla dessa moduler kan användas för att presentera innehåll. De kan placeras på vilken sida som helst och styrs av data från innehållshanteringssystemet (CMS).
+- **Marknadsföringsmoduler** – marknadsföringsmoduler omfattar innehållsblock-, textblock-, videospelar- och karusellmoduler. Alla dessa moduler kan användas för att presentera innehåll. De kan placeras på vilken sida som helst och styrs av data från innehållshanteringssystemet (CMS).
 - **Modulerna sidhuvud och sidfot** – modulerna sidhuvud och sidfot visas i sidhuvudet och sidfoten på alla webbplatssidor. Dessa moduler kan konfigureras efter behov via egenskaper.
 - **Sökmoduler** – produkter kan identifieras med hjälp av sökmodulen i rubriken. Sökresultat visas på sidan med sökresultat. Produkter kan också upptäckas på kategorisidor, som är dedikerade sidor för varje kategori som stöds i kanalens navigeringshierarki. Dessutom kan förfiningsmoduler användas för att ytterligare filtrera resultat på sökresultat och kategorisidor.
 - **Moduler för produktinformationssida** – produktinformationssidor använder flera moduler för att visa produktinformation. I modulen inköpsruta kan kunderna visa produkter och lägga till dem i vagnen. Andra moduler som till exempel modulen tekniska specifikationer visar produktinformation. Modulen värderingar och recensioner kan användas för att visa och ge recensioner.

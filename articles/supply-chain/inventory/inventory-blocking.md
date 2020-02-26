@@ -3,7 +3,7 @@ title: Lagerspärr
 description: Det här avsnittet ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Supply Chain Management. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1a870936619d07db01d5a8fe83b3fab73693187
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814385"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971497"
 ---
 # <a name="inventory-blocking"></a>Lagerspärr
 
@@ -43,6 +43,9 @@ Du kan spärra en kvantitet för en artikel, genom att skapa en transaktion på 
 
 ## <a name="blocking-items-by-creating-a-quality-order"></a>Spärra artiklar genom att skapa en kvalitetsorder
 Du kan ange artiklar som måste kontrolleras, genom att skapa en kvalitetsorder på sidan **Kvalitetsorder**. När du skapar en kvalitetsorder, spärras kvantiteten för en artikel som du anger. Samplingsplanen som är kopplad till n kvalitetsorder kontrollerar bara kvantiteten av artiklarna som måste kontrolleras, inte kvantiteten som har spärrats. Oavsett vilken kvantitet som skickas på inspektion, är den kvantitet som spärras den kvantitet av artikeln som anges på kvalitetsordern.
+
+> [!NOTE]
+> Att använda både batchens utgångsdatum och spärr av lagerstatusfunktioner stöds inte av huvudplaneringen. Detta kan resultera i dubbel uteslutning av lagerbehållning, som kan inträffa under huvudplaneringen. Vi rekommenderar att du använder koder för batchdispositionskod, i stället för lagerstatus, för spärr av utgångna batchar.
 
 ## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Spärra artiklar med en process som genererar en kvalitetsorder
 Om en kvalitetsprocess anger att en artikel måste inspekteras kommer en kvantitet av artikeln att spärras automatiskt. Så när en kvalitetsorder genereras automatiskt kontrollerar den artikelsamplingsprovsplan som hör till kvalitetsordern både kvantiteten av artiklar som är spärrade och kvantiteten som ska kontrolleras. Om alternativet **Fullständig spärr** på sidan **Artikelsampling** har markerats är den fullständiga kvantiteten på till exempel en inköpsorderrad spärrad under inspektion oavsett artikelsamplingskvantiteten.

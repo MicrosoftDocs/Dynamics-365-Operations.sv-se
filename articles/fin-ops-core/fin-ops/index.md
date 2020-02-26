@@ -1,6 +1,6 @@
 ---
-title: Dokumentation för appen Finance and Operations
-description: Dokumentation för Finance and Operations-apparna.
+title: Finance and Operations-programdokumentation
+description: Dokumentation för Finance and Operations-appar.
 author: robinarh
 manager: AnnBe
 ms.date: 07/25/2019
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770929"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005550"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentation för appen Finance and Operations
+# <a name="finance-and-operations-application-documentation"></a>Finance and Operations-programdokumentation
 
 [!include [banner](includes/banner.md)]
 
 Lär dig hur du drar nytta av Finance and Operations-apparna i ditt företag. Använd resurserna i det här avsnittet för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs. 
 
-Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Retail och Talent. 
+Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Commerce och Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -84,9 +84,9 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Retail oc
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Funktioner för nationella föreskrifter</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Personal</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Förmåner</a></p>
-<p><a href="../../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
-<p><a href="../../talent/questionnaires.md">Enkät</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Förmåner</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Enkäter</a></p>
 <p><a href="hr/manage-recruiting-process.md">Rekrytering</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">Lön, USA</a></p>
 
@@ -129,16 +129,17 @@ Mycket av innehållet gäller även relaterade produkter: Dynamics 365 Retail oc
 </td>
 <td>
 <h3>Relaterade produkter</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Kundtjänst</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Inställning och hantering av kanaler</p>
 <p><a href="../../retail/retail-peripherals-overview.md">MPOS och molnbaserad kassa</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Utveckling och administration av Retail</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Utveckling och administration av Commerce</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Förmåner</a></p>
-<p><a href="../../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
-<p><a href="../../talent/questionnaires.md">Enkät</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Administratörsguide</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Utvecklarguide</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Användarhandbok</a></p>
+
 
 </td>
 </tr>

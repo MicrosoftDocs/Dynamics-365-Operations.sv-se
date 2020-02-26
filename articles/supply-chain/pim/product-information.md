@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bdbff802ca85f7cc568efb8a1aacaf6f8fb2874a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570758"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004006"
 ---
 # <a name="product-information-overview"></a>Översikt över produktinformation
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570758"
 
 Det här avsnittet innehåller information om hur du hanterar produktinformation. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna. 
 
-Produktinformation är den viktigaste delen i leveranskedjor och butiksapplikationer inom alla branscher. Det avser processer och tekniker som fokuserar på att centralt hantera information om produkter (t.ex. över distributionskedjor). Det är viktigt att gemensamma produktdefinitioner, dokumentation, attribut och identifierare används. I de olika modulerna för en företagslösning krävs produktspecifik information och konfiguration för att hantera de affärsprocesser som rör specifika produkter, produktfamiljer och produktkategorier.
+Produktinformation är den viktigaste delen i leveranskedjor och handelsapplikationer inom alla branscher. Det avser processer och tekniker som fokuserar på att centralt hantera information om produkter (t.ex. över distributionskedjor). Det är viktigt att gemensamma produktdefinitioner, dokumentation, attribut och identifierare används. I de olika modulerna för en företagslösning krävs produktspecifik information och konfiguration för att hantera de affärsprocesser som rör specifika produkter, produktfamiljer och produktkategorier.
 
 ## <a name="product-definition"></a>Produktdefinition
 

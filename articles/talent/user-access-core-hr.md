@@ -1,6 +1,6 @@
 ---
-title: Användarna kan komma åt Core HR men inte Onboard eller Attract
-description: Det här avsnittet beskriver hur du löser problem där en användare kan komma åt Dynamics 365 Talent - Core HR, men inte Attract eller Onboard.
+title: Användarna kan komma åt Personal men inte Onboard eller Attract
+description: Det här avsnittet beskriver hur du löser problem där en användare kan komma åt Microsoft Dynamics 365 Talent - Personal, men inte Attract eller Onboard.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1a86936d756d8375761ce50c9d9bf33dc638dfad
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 6c384d9a7100982eabd201d910e1bea14355dc1f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772929"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006320"
 ---
-# <a name="user-can-access-core-hr-but-not-onboard-or-attract"></a>Användarna kan komma åt Core HR men inte Onboard eller Attract
+# <a name="user-can-access-human-resources-but-not-onboard-or-attract"></a>Användarna kan komma åt Personal men inte Onboard eller Attract
 
 [!include [banner](includes/banner.md)]
 
 **Miljöinformation**
 
 - Microsoft Dynamics Lifecycle Services (LCS)-distributionen gjordes av användare A.
-- Användare A lade till användare B som användare av Dynamics 365 Talent: Core HR.
+- Användare A lade till användare B som användare av Dynamics 365 Human Resources.
 
 **Utleverans**
 
-Användare B kan komma åt Core HR, men inte Talent: Attract eller Talent: appen Onboard. När användaren försöker gå till **Upplevelsappar** tas den till en utvärderingsversion istället.
+Användare B kan komma åt Personal, men inte Talent: Attract eller Talent: appen Onboard. När användaren försöker gå till **Upplevelsappar** tas den till en utvärderingsversion istället.
 
 **Lösning**
 
@@ -45,4 +45,4 @@ Information finns i avsnittet ”beviljar behörighet för miljön” i [Etabler
 
 **Långsiktig lösning**
 
-Microsoft överväger att automatiskt tilldela rätt behörigheter till Onboard och Attract när en användare läggs till Core HR.
+Microsoft överväger att automatiskt tilldela rätt behörigheter till Onboard och Attract när en användare läggs till Personal.

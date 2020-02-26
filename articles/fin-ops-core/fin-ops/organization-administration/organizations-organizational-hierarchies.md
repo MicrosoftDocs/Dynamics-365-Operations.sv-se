@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fc9064f0386fe7c0f4093fc30587be4baa259eb0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812396"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003689"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Organisationer och organisationshierarkier – översikt
 
@@ -47,7 +47,7 @@ Ett företag är en sorts juridisk person. För närvarande är företag den end
 
 En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag. Personer i en driftenhet har en skyldighet att maximera användningen av knappa resurser, att förbättra processer och att redovisa deras resultat.
 
-Typerna av driftenheter innehåller kostnadsställen, affärsenheter, värdeströmmar, avdelningar och butikskanaler. I följande tabell finns mer information om varje typ av driftenhet.
+Typerna av driftenheter innehåller kostnadsställen, affärsenheter, värdeströmmar, avdelningar och handelskanaler. I följande tabell finns mer information om varje typ av driftenhet.
 
 | Typ av driftenhet | Beskrivning | Syfte |
 |---------------------|-------------|---------|
@@ -55,7 +55,7 @@ Typerna av driftenheter innehåller kostnadsställen, affärsenheter, värdestr�
 | Affärsenhet       | En halvautonom driftenhet som skapas för att uppfylla strategiska affärsmål. | Används för den ekonomiska rapporteringen som baseras på de branscher eller produktserier som organisationen använder oberoende av juridiska personer. |
 | Värdeström        | En driftenhet som kontrollerar ett eller flera produktionsflöden. | Används vanligtvis i lean manufacturing för att kontrollera de aktiviteter och flöden som krävs för att tillhandahålla en produkt eller tjänst till kunderna. |
 | Avdelning          | En driftenhet som representerar en kategori eller en funktionell del av en organisation som utför en viss uppgift, till exempel försäljning eller redovisning. | Används för att rapportera om funktionsområden. En avdelning kan ha ansvar för vinster och förluster och kan bestå av en grupp av kostnadsställen. |
-| Butikskanal      | En driftenhet som representerar en fysisk butik, en onlinebutik eller en onlinemarknadsplats. | Används för hantering och den driftskontrollen av en eller flera butiker inom eller mellan juridiska personer. |
+| Handelskanal      | En driftenhet som representerar en fysisk butik, en onlinebutik eller en onlinemarknadsplats. | Används för hantering och den driftskontrollen av en eller flera butiker inom eller mellan juridiska personer. |
 
 ### <a name="teams"></a>Team
 

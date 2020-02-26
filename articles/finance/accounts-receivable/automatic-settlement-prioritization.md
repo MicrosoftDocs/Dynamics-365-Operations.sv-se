@@ -3,7 +3,7 @@ title: Automatisk kvittning och prioritering
 description: Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73a4403ec3265d9ab68c5cd906965a1c28ca7352
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b596557e80035e8d62d01f156a6678c75e4ae573
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189233"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000057"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk kvittning och prioritering
 
@@ -76,8 +76,8 @@ Om det inte finns någon användardefinierad kvittningsprioritet, markeras autom
 |---------------|------------|---------|--------------------------------|------------------|---------|----------|
 | Faktura 1     | 2015/08/15  | 10001   | 100,00                         | 100,00           | 0,00    | USD      |
 | Faktura 2     | 2015/09/01   | 10002   | 250.00                         | 250.00           | 0,00    | USD      |
-| Faktura 3     | 2015/10/15 |         | 500.00                         | 350,00           | 150,00  | USD      |
-| Räntefaktura | 2015/10/15 |         | 7,00                           | 0,00             | 0,00    | USD      |
+| Faktura 3     | 2015/10/15 |         | 500.00                         | 350.00           | 150.00  | USD      |
+| Räntefaktura | 2015/10/15 |         | 7.00                           | 0,00             | 7.00    | USD      |
 
 
 

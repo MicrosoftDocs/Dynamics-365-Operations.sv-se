@@ -1,0 +1,51 @@
+---
+title: Integrerade platser och lagerställen
+description: I det här avsnittet beskrivs integreringen av webbplats- och lagerställedata mellan Finance and Operations och Common Data Service.
+author: t-benebo
+manager: AnnBe
+ms.date: 10/09/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User, IT Pro
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: ''
+ms.author: benebotg
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2019-08-15
+ms.openlocfilehash: 0f5ed58ad50df49250aa4c001401ff52d460dfa6
+ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3020015"
+---
+# <a name="integrated-sites-and-warehouses"></a>Integrerade platser och lagerställen
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
+
+I det här avsnittet beskrivs integreringen av webbplats- och lagerställedata mellan Finance and Operations och Common Data Service. Driftplatser och driftlagerställen är vanliga koncept i en Supply Chain Management-app. De används för att modellera leveranskedjan för ditt företag.
+
+## <a name="templates"></a>Mallar
+
+Med integrationen med Common Data Service finns dessa begrepp och all tillhörande information i Common Data Service med dataenheterna för platser och lagerställen i följande tabell.
+
+Finance and Operations-appar | Andra Dynamics 365-appar | Beskrivning
+--------------------------|---------------------------|---
+Webbplatser | msdyn_operationalsites | 
+Lagerställen | msdyn_warehouses | 
+
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [operational sites](includes/InventOperationalSiteEntity-msdyn-operationalsite.md)]
+
+[!include [warehouses](includes/InventWarehouseEntity-msdyn-warehouse.md)]
+

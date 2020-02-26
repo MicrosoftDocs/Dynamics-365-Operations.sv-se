@@ -1,5 +1,5 @@
 ---
-title: Förhandsversionsmiljö för Commerce – vanliga frågor och svar
+title: Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö
 description: Det här avsnittet innehåller vanliga frågor och svar om förhandsversionsmiljön för Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,15 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 53e593931850d6b8b22bb756d5828f742416aa4d
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906103"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024762"
 ---
-# <a name="commerce-preview-environment-faq"></a>Förhandsversionsmiljö för Commerce – vanliga frågor och svar
+# <a name="dynamics-365-commerce-preview-environment-faq"></a>Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller vanliga frågor och svar om förhandsversionsmiljön för Microsoft Dynamics 365 Commerce.
@@ -83,10 +82,10 @@ Om du får problem när du försöker komma åt Yammer-gruppen kan du kontakta M
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Förhandsversionsmiljö för Commerce – översikt](cpe-overview.md)
+[Dynamics 365 Commerce förhandsversionsmiljö – översikt](cpe-overview.md)
 
-[Etablera en förhandsversionsmiljö för Commerce](provisioning-guide.md)
+[Etablera en Dynamics 365 Commerce förhandsversionsmiljö](provisioning-guide.md)
 
-[Konfigurera en förhandsversionsmiljö för Commerce](cpe-post-provisioning.md)
+[Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-post-provisioning.md)
 
-[Konfigurera valfria funktioner för en förhandsversionsmiljö för Commerce](cpe-optional-features.md)
+[Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-optional-features.md)

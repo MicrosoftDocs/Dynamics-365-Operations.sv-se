@@ -1,5 +1,5 @@
 ---
-title: Konfigurera en förhandsversionsmiljö för Commerce
+title: Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce
 description: Detta ämne förklarar hur du konfigurerar förhandsversionsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f19d03f3f2f5a9f6f7ba08b682277e4e3b764d10
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906149"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024716"
 ---
-# <a name="configure-a-commerce-preview-environment"></a>Konfigurera en förhandsversionsmiljö för Commerce
+# <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Detta ämne förklarar hur du konfigurerar förhandsversionsmiljö för Microsoft Dynamics 365 Commerce efter att den är etablerad.
@@ -142,13 +142,13 @@ För att konfigurera valfria funktioner för Commerce efter att du har konfigure
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Förhandsversionsmiljö för Commerce – översikt](cpe-overview.md)
+[Dynamics 365 Commerce förhandsversionsmiljö – översikt](cpe-overview.md)
 
-[Etablera en förhandsversionsmiljö för Commerce](provisioning-guide.md)
+[Etablera en Dynamics 365 Commerce förhandsversionsmiljö](provisioning-guide.md)
 
-[Konfigurera valfria funktioner för en förhandsversionsmiljö för Commerce](cpe-optional-features.md)
+[Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-optional-features.md)
 
-[Förhandsversionsmiljö för Commerce – vanliga frågor och svar](cpe-faq.md)
+[Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -157,5 +157,3 @@ För att konfigurera valfria funktioner för Commerce efter att du har konfigure
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce webbplatsen](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Hjälpresurser för Dynamics 365 Retail](../retail/index.md)

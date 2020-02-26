@@ -3,7 +3,7 @@ title: Översikt över hantering av affärsdokument
 description: Det här avsnittet innehåller information om hur du använder funktionen för hantering av affärsdokument i ER-ramverket.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933918"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957377"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -122,7 +122,7 @@ Använd följande procedur om du vill aktivera funktionen för hantering av aff�
 4. Uppdatera sidan för att komma åt den nya funktionen.
 
 >[!NOTE]
-> Du måste också aktivera **Office-liknande gränssnittsupplevelser för hantering av affärsdokument** när du använder nytt gränssnitt för hantering av affärsdokument
+> Mer information om hur du använder det nya användargränssnittet för hanteringen av affärsdokument finns i: [Nytt användargränssnitt för hanteringen av affärsdokument](er-business-document-management-new-template-ui.md).
 
 ![Arbetsytan Funktionshantering](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ Information om hur du ställer in de obligatoriska parametrarna för dokumenthan
 
 ![Ställ in dokumenttyp för dokumenthantering](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>Ställa in parametrar
+### <a name="SetupBdmParameters">Ställa in parametrar</a>
 
 Grundläggande inställningar för affärsdokumenthantering kan ställas in på sidan **Parametrar för affärsdokument**. Endast vissa användare har åtkomst till sidan. Dessa innefattar:
 
@@ -166,6 +166,9 @@ Använd följande procedur om du vill ställa in de grundläggande parametrarna 
 ![Ställ in parametrar för hantering av affärsdokument](./media/BDM-Overview-BDMSetting.png)
 
 Den valda dokumenttypen är företagsspecifik och används när användaren arbetar med affärsdokumenthantering i det företag för vilket den valda dokumenttypen konfigurerats. När användaren arbetar med affärsdokumenthantering i ett annat företag används samma dokumenttyp om ingen har konfigurerats för det här företaget. När en dokumenttyp har konfigurerats kommer den att användas istället för den som har valts i fältet **SharePoint-dokumenttyp**.
+
+> [!NOTE]
+> Parametern **SharePoint dokument typ** definierar en SharePoint-mapp som tillfällig lagringsplats för mallar som kan redigeras med antingen Microsoft Excel eller Word. Du måste ställa in den här parametern om du tänker använda de här Office-programmen för att redigera mallar. Mer information finns i [Redigera en mall i Office skrivbordsprogrammet](#EditInOfficeDesktopApp). Du kan behålla den här parametern tom om du planerar att ändra mallen genom att endast använda funktionen i Office 365. Mer information finns i [Redigera en mall i Office 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurera åtkomstbehörigheter
 
@@ -258,23 +261,18 @@ Alternativet **Redigera mall** är tillgängligt för den valda mallen. Det här
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Initiera redigeringsmallar som ägs av andra leverantörer
 
-1. Markera **Nytt dokument** i arbetsytan Hantering av affärsdokument.
+1. Markera det dokument som du vill använda som mall i arbetsyta för hantering av affärsdokument.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template1.png)
+![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Välj eller öppna dokumentet som du vill använda som mall.
+3. Välj **Nytt dokument** och i fältet **Rubrik** ändra titeln på den redigerbara mallen om det behövs. Texten kommer att användas som namn på den konfiguration för ER-format som skapas automatiskt. Lägg märke till att utkastversionen av den här konfigurationen (**Kopia av FTI-rapport för kund (GER)**) som kommer att innehålla den redigerade mallen automatiskt markeras för att köra det här ER-formatet för den aktuella användaren. På samma gång används den icke ändrade ursprungliga mallen från baskonfigurationen för ER-format för att köra det här ER-formatet för andra användare.
+4. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
+5. I fältet **Kommentar** ändrar du kommentaren för automatiskt skapade versionen av den redigerbara mallen.
+6. Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template2.png)
+![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Klicka på **Skapa dokument**
-4. Ändra fältet **Namn**, andra namnet på den redigerbara mallen om det behövs. Texten kommer att användas som namn på den konfiguration för ER-format som skapas automatiskt. Lägg märke till att utkastversionen av den här konfigurationen (**Kopia av FTI-rapport för kund (GER)**) som kommer att innehålla den redigerade mallen automatiskt markeras för att köra det här ER-formatet för den aktuella användaren. På samma gång används den icke ändrade ursprungliga mallen från baskonfigurationen för ER-format för att köra det här ER-formatet för andra användare.
-5. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
-6. I fältet **Kommentar** ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
-7. Välj **OK** för att bekräfta starten av redigeringsprocessen.
-
-![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template3.png)
-
-Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-formatkonfiguration som tillhandahålla av en annan leverantör (Microsoft i det här exemplet). När du klickar på **Nytt dokument** visas alla mallar som ägs av aktuella och andra leverantörer. När du har valt mallen kommer den att öppnas för redigering. Den redigerade mallen kommer sedan att lagras i en ny konfiguration för ER-format som skapas automatiskt.
+Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-formatkonfiguration som tillhandahålla av en aktuell och en annan leverantör (Microsoft i det här exemplet) som inte har någon ändring. Den redigerade mallen kommer sedan att lagras i en ny konfiguration för ER-format som skapas automatiskt.
 
 ### <a name="start-editing-a-template"></a>Börja redigera en mall
 
@@ -282,7 +280,7 @@ Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-for
 2. I fältet **Namn** ändrar du namnet på den första revisionen av den redigerbara mallen som ska skapas automatiskt.
 3. I fältet **Kommentar** ändrar du anmärkningen för automatiskt skapade versionen av den redigerbara mallen.
 
-    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM_overview_new_template4.png)
+    ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
@@ -290,13 +288,16 @@ Sidan **BDM-mallredigerare** öppnas. Den valda mallen blir tillgänglig för re
 
 ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Redigera en mall i Office 365
+### <a name="EditInOffice365">Redigera en mall i Office 365</a>
 
-Ändra mallen med hjälp av funktionerna i Office 365. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet från **Vanligt** till **Fetstil** i Office Online. Dessa ändringar sparas automatiskt för den redigerbara mallen som lagras i den primära mallens lagringsutrymme (som standard Azure blob-lagringen) som har konfigurerats för ER-ramverket.
+Du kan inte ändra mall med Office 365. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet från **Vanligt** till **Fetstil** i Office Online. Dessa ändringar sparas automatiskt för den redigerbara mallen som lagras i den primära mallens lagringsutrymme (som standard Azure blob-lagringen). Detta är konfigurerat för ER-ramverket.
 
 ![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Redigera en mall i Office-skrivbordsprogrammet
+### <a name="EditInOfficeDesktopApp">Redigera en mall i Office-skrivbordsprogrammet</a>
+
+> [!NOTE]
+> Den här funktionen är endast tillgänglig om parametern **SharePoint dokumenttyp** är korrekt konfigurerad. Mer information finns i [Konfigurera parametrar](#SetupBdmParameters).
 
 1. Välj alternativet **Öppna i skrivbordsprogram** om du vill ändra mallen med hjälp av funktionerna i Office-skrivbordsprogrammet (Excel i det här exemplet). Den redigerbara mallen kopieras från det permanenta lagringsutrymmet till den tillfälliga lagring som har konfigurerats i affärsdokumentparametrarna som en SharePoint-mapp.
 2. Bekräfta att du vill öppna mallen från den temporära lagringsplatsen i Office-skrivbordsprogrammet Excel.
@@ -386,7 +387,7 @@ När du redigerar mallen från ett ER-format som ägs av den aktuella aktiva lev
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jag valde **Redigera dokument**, men i stället för att öppna **BDM-mallredigeraren** i Finance and Operations har jag skickats till Office 365-webbsidan.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jag valde **Redigera dokument**, men i stället för att öppna sidan **BDM-mallredigeraren** i Finance and Operations, har jag skickats till Office 365 webbsidan.
 Detta är ett känt problem i Office 365 omdirigeringen. Detta inträffar när du loggar in i Office 365 på första gången. Du löser det här problemet genom att välja knappen **Bakåt** i webbläsaren för att gå tillbaka.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jag förstår hur man redigerar en mall med hjälp Office 365 i den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag göra detta med Office-skrivbordsprogrammet?
@@ -411,3 +412,4 @@ Troligen loggade du in på den aktuella instansen av appen i Azure AD-domänen s
 [Bädda in bilder och former i dokument som du skapar med ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

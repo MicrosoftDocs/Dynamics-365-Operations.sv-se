@@ -3,7 +3,7 @@ title: Välj att använda omdömen och recensioner
 description: Det här avsnittet innehåller information om hur du väljer att använda värderingar och recensioner på din Microsoft Dynamics 365 Commerce-webbplats.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10e3c33af232fa46df09a103b2e73eae09a909eb
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: eda7fbaeea8d3c1a07f7b43cafe44886d149a211
+ms.sourcegitcommit: 1e6c8163da5818196769eb278afb3a2335d0cbe3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697990"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027275"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Välj att använda omdömen och recensioner
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du väljer att använda värderingar och recensioner på din Microsoft Dynamics 365 Commerce-webbplats.
@@ -36,7 +35,7 @@ Det här avsnittet innehåller information om hur du väljer att använda värde
 
 Klassificerings- och granskningslösningen är en flerkanalslösning som du kan göra tillgänglig i Dynamics 365 Commerce genom att använda Microsoft Dynamics Lifecycle Services (LCS). LCS är en administrationsportal som används av detaljhandlare för att hantera sina miljöer från etablering till avställning.
 
-Om du vill använda klassificeringen och granska lösningen på din näthandelsplats måste du först anmäla den.
+Om du vill använda klassificeringen och granska lösningen på din handelswebbplats, måste du välja om du vill ha omdömen och recensioner under distributionen av din e-handelswebbplats på Dynamics 365 Commerce.
 
 ## <a name="opt-in-to-use-ratings-and-reviews"></a>Välj att använda omdömen och recensioner
 
@@ -51,6 +50,9 @@ Om du vill använda värderingar och recensioner på webbplatsen följer du steg
 
 1. Slutför initieringsprocessen för e-handel.
 
+> [!NOTE] 
+> Om du är en befintlig Dynamics 365 Commerce-kund som redan har distribuerat en e-handelsplats utan att ha valt värderingar och recensioner och nu vill använda omdömen och recensioner från Dynamics 365 Commerce-paketet, måste du skicka en serviceförfrågan. Mer information om hur du skickar en serviceförfrågan finns i [skicka bearbeta serviceförfrågningar](../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json). 
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över omdömen och recensioner](ratings-reviews-overview.md)
@@ -60,3 +62,5 @@ Om du vill använda värderingar och recensioner på webbplatsen följer du steg
 [Konfigurera omdömen och recensioner](configure-ratings-reviews.md)
 
 [Synkronisera produktklassificeringar i Dynamics 365 Retail](sync-product-ratings.md)
+
+

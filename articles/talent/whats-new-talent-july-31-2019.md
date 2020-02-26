@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 311042caf6a391a06c7e2d8c4c2c2f6e1f855437
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899045"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006297"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Nyheter och ändringar i Dynamics 365 Talent (30 juli 2019)
 
@@ -41,7 +41,7 @@ Den här versionen inkluderar felkorrigeringar för Dynamics 365 Talent: Onboard
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Regionsstöd för Kanada och Sydostasien
 
-Vi är glada att kunna tillkännage att regionerna Kanada och Sydostasien kommer att vara tillgängliga för Talent den 1 augusti 2019. Med den här ändringen kan du skapa miljöer i de kanadensiska och asiatiska regionerna, och all Talent-data kommer att enbart behållas inom dessa platser. Du kan skapa en miljö i dessa nya regioner genom att markera platsen i dialogrutan Ny miljö och använda den miljön för att konfigurera Talent i LCS enligt beskrivningen i [Konfigurera Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Vi är glada att kunna tillkännage att regionerna Kanada och Sydostasien kommer att vara tillgängliga för Talent den 1 augusti 2019. Med den här ändringen kan du skapa miljöer i de kanadensiska och asiatiska regionerna, och all Talent-data kommer att enbart behållas inom dessa platser. Du kan skapa en miljö i dessa nya regioner genom att markera platsen i dialogrutan Ny miljö och använda den miljön för att konfigurera Talent i LCS enligt beskrivningen i [Konfigurera Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Datamigrering av befintliga projekt från andra områden till kanadensiska och asiatiska regioner stöds inte. Endast nya projekt kan etableras för de nya regioner som stöds.
 

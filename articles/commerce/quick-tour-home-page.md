@@ -3,7 +3,7 @@ title: Översikt över startsidan
 description: Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fb42c9aa2e2ef1d620b310e9d30dbae5f84c788
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698290"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025981"
 ---
 # <a name="overview-of-the-home-page"></a>Översikt över startsidan
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
@@ -45,19 +45,19 @@ I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampa
 
 - **Fokus** – vanligtvis visar det första objektet högst upp i huvudavsnittet en eller flera "fokus"-bilder som markerar nya produkter och erbjudanden i butiken. Om det finns flera fokusbilder finns de i en karusellmodul så att användarna kan bläddra i dem.
 
-    Följande illustration visar ett exempel på en startsida där det första objektet i huvudavsnittet är en fokusmodul med namnet **ny införsel**.
+    Följande illustration visar ett exempel på en startsida där det första objektet i huvudavsnittet är en fokuslayout av innehållsblockmodul som kallas ny införsel.
 
     ![Exempel på en fokusmodul](./media/Hero.PNG)
 
-- **Funktion** – en funktionsmodul används för att marknadsföra produkter eller erbjudanden genom att använda en kombination av bilder och text. Funktionsmoduler kan användas oberoende av varandra, eller också kan de finnas i en karusellmodul.
+- **Funktion** – en funktionslayout av innehållsblockmodul används för att marknadsföra produkter eller erbjudanden genom att använda en kombination av bilder och text. Funktionslayouter kan användas oberoende av varandra, eller också kan de finnas i en karusellmodul.
 
-    Följande illustration visar ett exempel på funktionsmoduler på en startsida.
+    Följande illustration visar ett exempel på funktionslayouter av innehållsblockmodul på en startsida.
 
     ![Exempel på funktionsmoduler](./media/Feature.PNG)
 
-- **Innehållsplacering** – en modul för innehållsplacering används för att presentera flera produkter eller kategorier med produkter genom att använda en kombination av bilder och text i en layout med flera kolumner. I illustrationen av en startsida som visas tidigare i det här avsnittet används en modul för layouten med tre kolumner för objekten **Handla kvinna**, **Handla man** och **Handla tillbehör**.
+- **Panel** – en panellayout för innehållsblockmodul används för att presentera flera produkter eller kategorier med produkter genom att använda en kombination av bilder och text i en layout med flera kolumner. I illustrationen av en startsida som visas tidigare i det här avsnittet används en panellayout med tre kolumner som återger objekten **Handla kvinna**, **Handla man** och **Handla tillbehör**.
 - **Videospelare** – en videospelarmodul kan användas för att presentera videoinnehåll på startsidan. En illustration av en startsida som finns tidigare i det här avsnittet innehåller en videospelarmodul.
-- **RTF-block** – en innehållsrik blockmodul kan användas för att visa text innehåll på startsidan i en layout med en kolumn eller flera kolumner.
+- **Textblock** – en innehållsrik blockmodul kan användas för att visa text innehåll på startsidan i en layout med en kolumn eller flera kolumner.
 - **Produktrekommendationer** – moduler för produktrekommendationer används för att visa listor som **ny**, **trend** och **bästsäljande** på startsidan. Dessa listor visar en demonstration av produkter som bygger på köptrender, och de kan genereras med algoritm eller granskas manuellt. De hjälper kunderna att snabbt upptäcka de populära produkterna och sedan fortsätta att handla.
 
     Följande illustration visar ett exempel på moduler för produktrekommendationer på en startsida.

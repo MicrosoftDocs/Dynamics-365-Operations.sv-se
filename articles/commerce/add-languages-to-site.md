@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914641"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001425"
 ---
 # <a name="add-languages-to-your-site"></a>Lägg till språk på din webbplats
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs hur du lägger till stöd för ytterligare språk till en Microsoft Dynamics 365 Commerce-webbplats.
 
 ## <a name="overview"></a>Översikt
 
-Du kan lokalisera webbplatsen till valfritt språk som Dynamics 365 Commerce stöder. (Listan över språk som stöds visas senare i det här avsnittet.) Om du vill lägga till ett språk på webbplatsen måste du först lägga till det i en onlinebutik som är bunden till din webbplats.
+Du kan lokalisera webbplatsen till valfritt språk som Handel stöder. (Listan över språk som stöds visas senare i det här avsnittet.) Om du vill lägga till ett språk på webbplatsen måste du först lägga till det i en onlinebutik som är bunden till din webbplats.
 
 ## <a name="add-a-language-to-an-online-store"></a>Lägg till ett språk i onlinebutiken
 
 Om du vill lägga till ett språk i en onlinebutik.
 
-1. Öppna Dynamics 365 Retail-miljön för platsen.
-1. Gå till **Butik \> Kanaler \> Onlinebutiker** för att komma åt listan över onlinebutiker som har konfigurerats för din miljö. Alternativt kan du ange **onlinebutiker** som sökterm.
+1. Öppna Dynamics 365 Commerce-miljön för platsen.
+1. Gå till **Butik och handel \> Kanaler \> Onlinebutiker** för att komma åt listan över onlinebutiker som har konfigurerats för din miljö. Alternativt kan du ange **onlinebutiker** som sökterm.
 1. Välj onlinebutik för att lägga till språk.
 1. På snabbfliken **Språk** väljer du **Lägg till**.
 1. I fältet **språk** lägger du till språket.

@@ -3,7 +3,7 @@ title: Centraliserade betalningar för kundreskontra
 description: Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste samma transaktion inte finns med i flera juridiska personer. Den här artikeln ger exempel som visar hur bokföringen av centraliserade betalningar hanteras i olika scenarier.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59942fadb0fb702c59c95f75359f1a3036e4668f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180022"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000103"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Centraliserade betalningar för kundreskontra
 
@@ -88,8 +88,8 @@ Fabrikam tar emot en betalning på 580,00 för Fabrikam-kundkonto 4000, Northwin
 
 | Konto                             | Debetbelopp | Kreditbelopp |
 |-------------------------------------|--------------|---------------|
-| Kundreskontra (Fabrikam East) | 600,00       |               |
-| Försäljning (Fabrikam East)               |              | 600,00        |
+| Kundreskontra (Fabrikam East) | 580.00       |               |
+| Försäljning (Fabrikam East)               |              | 580.00        |
 
 ### <a name="payment-is-received-and-posted-in-fabrikam-for-fabrikam-customer-4000"></a>Betalning tas emot och bokförs i Fabrikam för Fabrikam-kund 4000
 

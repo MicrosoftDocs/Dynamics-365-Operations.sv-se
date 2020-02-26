@@ -1,6 +1,6 @@
 ---
 title: Ansluta hjälpsystemet
-description: Det här avsnittet innehåller en beskrivning av komponenterna i hjälpsystemet för Finance and Operations och ger en översikt över hur du kopplar dem och en sammanfattning av hur du skapar anpassad hjälp.
+description: Det här avsnittet innehåller en beskrivning av komponenterna i hjälpsystemet för Finance and Operations-appar och ger en översikt över hur du kopplar dem och en sammanfattning av hur du skapar anpassad hjälp.
 author: margoc
 manager: AnnBe
 ms.date: 10/02/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812590"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006182"
 ---
 # <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs komponenterna i hjälpsystemet för Finance and Operations-appar, till exempel Dynamics 365 Finance, Supply Chain Management, Retail och Talent. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp.
+I det här avsnittet beskrivs komponenterna i hjälpsystemet för Finance and Operations-appar, till exempel Dynamics 365 Finance, Supply Chain Management, Handel och Personal. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp.
 
 ## <a name="help-architecture"></a>Hjälparkitektur
 
@@ -43,7 +43,7 @@ Följande bild visar delarna i hjälpsystemet. Produktens interna hjälpsystem h
 ## <a name="connecting-the-help-system"></a>Ansluta hjälpsystemet
 
 > [!NOTE]
-> Fliken **uppgiftsguide** finns för närvarande inte i Dynamics 365 Talent eller Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns också på webbplatsen docs.microsoft.com för både Retail och Talent.
+> Fliken **uppgiftsguide** finns för närvarande inte i Dynamics 365 Human Resources eller Handel. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Personal täcker fortsatt basfunktionerna. Procedurhjälp finns också på webbplatsen docs.microsoft.com för både Personal och Handel.
 
 Med hjälp av sidan **Systemparametrar** ansluter systemadministratörer delar av hjälpsystemet för en implementering
 
@@ -64,7 +64,7 @@ När du har slutfört dessa steg kan du öppna fönstret **Hjälp** och klicka p
 
 ### <a name="showing-translated-task-guides"></a>Visa översatta uppgiftsguider
 
-Översätta uppgiftsguider medföljde i för första gången i APQC Unified Library i maj 2016, samt i Komma igång-biblioteket. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Finance and Operations-appar, se då till att du är ansluten till maj-biblioteket. Språket i uppgiftsguiden styrs av varje användare via språkinställningarna under **Alternativ** &gt; **Inställningar**.
+Översätta uppgiftsguider medföljde i för första gången i APQC Unified Library i maj 2016, samt i Komma igång-biblioteket. I Finance and Operations-appar om du vill se hjälpen för den lokaliserade uppgiftsguiden ska du kontrollera att du är ansluten till May-biblioteket. Språket i uppgiftsguiden styrs av varje användare via språkinställningarna under **Alternativ** &gt; **Inställningar**.
 
 > [!NOTE]
 > Även om många uppgiftsguider har översatts visas inte de översatta uppgiftsguiderna för närvarande i klienten. Dessutom är enbart de uppgiftsguider som släpptes i februari 2016 tillgängliga i översättningen i maj-biblioteket. Vi kommer att släppa ett uppdaterat bibliotek med fler översättningar.
@@ -78,7 +78,7 @@ Du kan använda uppgiftsguiderna för att skapa anpassad hjälp eller ansluta en
 
 ### <a name="create-custom-help-with-task-guides"></a>Skapa anpassad hjälp med uppgiftsguider
 
-Du kan skapa anpassad hjälp för Finance and Operations, Supply Chain Management samt Retail genom att skapa uppgiftsinspelningar som speglar din implementering och spara dessa i ett bibliotek för LCS-arbetsprocesser. Du kan inte skapa anpassade uppgiftsguider för Talent.
+Du kan skapa anpassad hjälp för Finance and Operations, Supply Chain Management samt Handel genom att skapa uppgiftsinspelningar som speglar din implementering och spara dessa i ett bibliotek för LCS-arbetsprocesser. Du kan inte anpassade uppgiftsguider för Personal.
 
 För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i [Uppgiftsinspelarresurser](../../dev-itpro/user-interface/task-recorder.md).
 
@@ -86,7 +86,7 @@ För partners, om du främjar ett bibliotek som ett företagsbibliotek och inklu
 
 Microsoft tillhandahåller en vitbok och exempelkod som beskriver hur du skapar och ansluter en anpassad hjälpwebbplats till hjälpfönstret. Mer information finns i:
 
-- [Skapa egen hjälp för Finance and Operations-appar (vitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Skapa anpassad hjälp för Finance and Operations-appar (vitbok)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Anpassad hjälp GitHub-databasen](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## <a name="additional-resources"></a>Ytterligare resurser

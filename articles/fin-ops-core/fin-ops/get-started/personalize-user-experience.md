@@ -3,7 +3,7 @@ title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935475"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029372"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -59,7 +59,8 @@ När du använder appen sparas många av dina val för att underlätta för dig 
 
 Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som lagrar deras aktuella synliga tillstånd.
 
-- **Rutnätskolumner:** - Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Appen lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan med det rutnätet.
+- **Bredd på rutnätskolumner** - Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Appen lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan med det rutnätet.
+- **Summa för rutnätskolumner** – (endast tillgängligt när den nya rutnätskontrollen är aktiverad) du kan bestämma om en summa ska visas längst ned i en numerisk kolumn i ett rutnät och om rutnätssidfoten ska visas. Programmet lagrar dessa data så att dessa inställningar sparas nästa gång du öppnar sidan. Mer information finns i avsnittet [rutnätsfunktioner](grid-capabilities.md). 
 - **Snabbflikar** - Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Appen lagrar information om snabbflikar som du har utökat och komprimerat. Nästa gång du öppnar sidan kommer samma snabbflikar att visas eller döljs, utifrån din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en snabbflik eftersom appen inte behöver hämta informationen för snabbflikar förrän de expanderas. Såsom beskrivs senare i det här avsnittet kan du också ändra ordning på snabbflikarna på en sida.
 - **Faktarutor** – vissa sidor har rutan **relaterad information** som visar skrivskyddad information som är relaterad till sidans aktuella ämne. Varje avsnitt i rutan **relaterad information** kallas en *faktabox*. Du kan utöka eller komprimera rutan **relaterad information** och du kan också visa eller dölja enskilda faktarutor. Appen lagrar dessa inställningar. Nästa gång du öppnar sidan kommer rutan **relaterad information** och de enskilda faktarutorna antingen utökas eller komprimeras baserat på din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en faktabox eftersom appen inte behöver hämta informationen för faktaboxar förrän de expanderas.
 - **Åtgärdsfönster** – Ett *åtgärdsfönstret* visas längst upp på de flesta sidor. Åtgärdsfönstret innehåller knappar för många av de åtgärder som du kan utföra på den aktuella sidan. Knapparna ordnas ofta på flikarna. Du kan öppna hela åtgärdsfönstret och du kan konfigurera den så att den komprimeras som standard. Nästa gång du öppnar sidan kommer åtgärdsfönstret antingen att visas eller döljas, utifrån din senaste interaktion med sidan. Om du har öppnat åtgärdsfönstret visas den sista fliken som du använde.
@@ -95,7 +96,7 @@ Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket 
 
 Om du vill göra flera ändringar på en sida eller göra ändringar som inte är tillgängliga genom andra metoder (till exempel ändra ordning på element), kan du använda verktygsfältet **anpassning**. För att öppna verktygsfältet **anpassning**, följ något av dessa steg:
 
-- Välj **anpassa det här formuläret** i ett elements egenskapsfönster.
+- Välj **anpassa den här sidan** i ett elements egenskapsfönster.
 - Välj **anpassa den här sidan** i gruppen **Anpassa** på fliken **Alternativ** på en sidas åtgärdsfönster.
 - Välj knappen **inställningar** (kugghjulssymbolen) i navigeringsfältet och välj sedan **anpassa**.
 
@@ -116,7 +117,8 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 - Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer knappen **Hoppa över** på verktygsfältet kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan ta bort eller lägga till fält interaktivt i tabbsekvensen.
 - Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från den genom att markera fälten.
 - Använd verktyget **Låsa** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer knappen **Låsa** på verktygsfältet kommer alla element som för närvarande icke är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
-- Använd knappen **Lägg till PowerApp** under infoga i ett program som har skapats med hjälp av Microsoft PowerApps på sidan. För detaljerad information om hur du bäddar in en PowerApps-app på en sida finns i [bädda in PowerApps-appar](embed-power-apps.md).
+- Använd knappen **Lägg till en app från Power Apps** under infoga i ett program som har skapats med hjälp av Microsoft Power Apps på sidan. För detaljerad information om hur du bäddar in en app från Power Apps på en sida finns i [Bädda in appar från Power Apps](embed-power-apps.md). Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad.  
+- Använd knappen **Lägg till en app** för att bädda in en app, antingen en skapad från Microsoft Power Apps eller en tredje part på sidan. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är aktiverad. 
 - Använd verktyget **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Det finns ingen ångra-åtgärd. Använd därför endast detta verktyg om du är säker på att du vill återställa sidan.
 - Använd verktyget **Importera** för att ladda en anpassning från en fil som du eller någon annan tidigare skapade. När du importerar anpassningar för en sida kan du välja om de ska läggas till i eller ersätta alla befintliga anpassningar för sidan. Det finns ingen ångra-åtgärd. När du har importerat anpassningar måste du därför manuellt rensa eller ångra de ändringar som du inte vill ha.
 - Använd verktyget **exportera** om du vill spara dina anpassningar för sidan till en fil. Du kan sedan dela dina anpassningar med andra användare. Användarna behöver bara importera filen med dina anpassningar för sidan.
@@ -152,7 +154,7 @@ Instrumentpanelen är ofta den första sida som du ser när du öppnar appen. Du
 För att anpassa instrumentpanelen högerklickar du på en kakel och väljer sedan **anpassa** för att öppna panelens egenskapsfönster.
 
 - Om du vill dölja eller byta namn på den valda färgen kan du ändra direkt i egenskapsfönstret.
-- Om du vill omorganisera arbetsytans paneler, välj i egenskapsfönstret **Anpassa det här formuläret** för att öppna verktygsfältet **Anpassning**. Du kan sedan använda verktyget **Flytta** för att arrangera om panelerna som du vill.
+- Om du vill omorganisera arbetsytans paneler, välj i egenskapsfönstret **Anpassa den här sidan** för att öppna verktygsfältet **Anpassning**. Du kan sedan använda verktyget **Flytta** för att arrangera om panelerna som du vill.
 - Om du vill lägga till en ny panel i arbetsytans egenskapsfönster, välj **lägg till en arbetsyta**. En ny panel i arbetsytan skapas längst ned på instrumentpanelen. Du kan byta namn på denna nya arbetsytapanel som helst. Du kan också lägga till listor, rutor och länkar till arbetsytan enligt avsnittet [Lägga till listor, rubriker eller länkar till arbetsytor](#adding-a-tile-list-or-link-to-a-workspace) i det här ämnet.
 
 ## <a name="administration-of-personalizations"></a>Administration av anpassning

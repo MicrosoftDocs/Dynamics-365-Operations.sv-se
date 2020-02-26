@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770057"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024989"
 ---
 # <a name="product-recommendations-overview"></a>Översikt av produktrekommendationer
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce kan användas för att visa produktrekommendationer på webbplatsen för e-handel och kassaenheten (POS). Produktrekommendationer är artiklar som en kund kan vara intresserad av. Rekommendationerna bygger på de övriga kundernas inköpstrender i online- och fysiska butiker.
@@ -45,6 +44,7 @@ Produktrekommendationer är tillgängliga för följande scenarier:
 - **På valfri butikssida för bläddring eller landnings sida i e-handel:** Om kunder eller butikspartner besöker en butikssida kan rekommendationsmotorn föreslå produkter i listorna **Ny**. **Bästsäljande** och **Trend**.
 - **På sidan produktinformation:** om kunder eller säljare besöker en sida med **produktinformation** föreslår rekommendationsmotorn ytterligare artiklar som troligen kommer att köpas. Dessa objekt visas i listan **människor gillar också**.
 - **På transaktionssidan eller på utcheckningssidan:** rekommendationsmotorn föreslår artiklar, baserat på den fullständiga listan med artiklar i varukorgen. Dessa objekt visas i listan över **Köps ofta ihop**.
+- **Personliga rekommendationer:** inköpare kan ge de inloggade kunderna en anpassad **plockning för dig**, förutom nya funktioner som gör att befintliga listscenarier kan anpassas baserat på den kunden. Mer information finns i funktionen dokumentation: [aktivera personligt anpassade rekommendationer.](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>Rekommendationstjänst
 
@@ -56,6 +56,10 @@ Produktrekommendationer använder rekommendationerna för maskininlärningstekni
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Aktivera produktrekommendationer](enable-product-recommendations.md)
+
+[Aktivera anpassade rekommendationer](personalized-recommendations.md)
+
+[Översikt över produktsamlingsmodul](product-collection-module-overview.md)
 
 [Skapa granskade listor över produktrekommendationer](create-editorial-recommendation-lists.md)
 
