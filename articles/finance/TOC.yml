@@ -150,6 +150,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/finance/toc.json
                 - name: Sparade vyer
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
+                - name: Rutnätsmöjligheter
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
                 - name: Bädda in PowerApps‑appar
@@ -940,6 +942,8 @@
                   href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
                 - name: Ställ in momsrapporteringskoder
                   href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                - name: Stöd för moms på dubbel valuta
+                  href: general-ledger/dual-currency-for-tax.md
                 - name: Momsspecifikation per redovisningstransaktionsrapport
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
                 - name: Ställ in momskvittningsperioder
@@ -1102,6 +1106,8 @@
                   href: public-sector/interest-distribution.md
             - name: Anskaffning och källor i offentlig sektor
               href: public-sector/procurement-sourcing-public-sector.md
+            - name: 'Beräkna leveransdatum för en rad, baserat på produktionstiden'
+              href: public-sector/po-delivery-date.md
             - name: Säkerhetsroller i offentlig sektor
               href: public-sector/security-roles-public-sector.md
             - name: Medel i offentlig sektor
@@ -1298,6 +1304,8 @@
                   href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
                 - name: SPED-skatt – layout 014
                   href: localizations/latam-bra-sped-fiscal-layout-014.md
+                - name: Ställ in SPED EFD-tillägg
+                  href: localizations/latam-bra-sped-contributions.md
                 - name: Parametrar för juridiska personer
                   href: localizations/latam-bra-legal-entity-parameters.md
                 - name: Ställa in parametrar för juridisk person
@@ -2807,9 +2815,11 @@
               items:
                 - name: Dokumentrapporteringstjänster – översikt
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/finance/toc.json
+                - name: Teckensnitt som stöds
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera SSRS för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Skriver ut
+                - name: Utskrift
                   items:
                     - name: Dokumentutskrift – översikt
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/finance/toc.json
@@ -3686,6 +3696,4 @@
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

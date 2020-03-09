@@ -45,7 +45,11 @@
                 - name: Platform update 15 (mars 2018)
                   href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Borttagna och utfasade funktioner
-              href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+              items:
+                - name: Borttagna och utfasade funktioner för Platform
+                  href: get-started/removed-deprecated-features-platform-updates.md
+                - name: Borttagna eller utfasade funktioner i tidigare versioner
+                  href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: AX 2012-funktioner som har senarelagts
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Funktioner som ännu inte har implementerats i lokala distributioner
@@ -144,7 +148,9 @@
                       href: data-entities/data-integration-cds.md
                     - name: 'Synkron, dubbelriktad integrering'
                       items:
-                        - name: Dataintegrering nästan i realtid
+                        - name: Startsida för dubbelriktad skrivning
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Översikt över dubbelriktad skrivning
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Organisationshierarki för Common Data Service
                           href: data-entities/dual-write/organization-mapping.md
@@ -940,11 +946,11 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS för partner
                   href: lifecycle-services/getting-started-lcs.md
-                - name: Nyheter
+                - name: Nyheter och ändringar i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Kända problem
                   href: lifecycle-services/known-issues.md
-                - name: Borttagna eller föråldrade funktioner i Lifecycle Services (LCS)
+                - name: Borttagna eller utfasade funktioner i Lifecycle Services (LCS)
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Användarhandbok för Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
@@ -1685,6 +1691,4 @@
     - name: Dynamics 365 Finance
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../../commerce/index.md
