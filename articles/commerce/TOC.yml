@@ -166,6 +166,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: Sparade vyer
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                - name: Rutnätsmöjligheter
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Bädda in PowerApps‑appar
@@ -188,7 +190,7 @@
                   href: dev-itpro/retail-server-architecture.md
                 - name: Välja en butikstopologi
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchange och kanalkommunikation för Commerce
+                - name: Commerce Data Exchange och kommunikation för butikskanaler
                   href: dev-itpro/define-retail-channel-communications-cdx.md
                 - name: Arkitektur för Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
@@ -198,7 +200,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: PA-DSS-certifiering (Payment Application Data Security Standards)
                   href: dev-itpro/PA-DSS-Certification.md
-                - name: Commerce-funktioner i lokala distributioner
+                - name: Handelsmöjligheter i lokala distributioner
                   href: retail-onprem.md
             - name: Distribution och snabbkorrigeringar
               items:
@@ -438,8 +440,6 @@
                   href: configure-call-center-delivery.md
                 - name: Ställa in och arbeta med bedrägerivarningar
                   href: set-up-fraud-alerts.md
-                - name: Ställa in kontinuitetsprogram för kundtjänster
-                  href: set-up-continuity-program.md
             - name: Ytterligare kanalkonfiguration
               items:
                 - name: Lägga till en kanal i en organisationshierarki
@@ -448,8 +448,14 @@
                   items:
                     - name: Konfigurera och använda avancerade automatiska avgifter
                       href: omni-auto-charges.md
-                    - name: Fördela huvudtillägg proportionellt på matchande försäljningsrader
+                    - name: Allokera huvudavgifter för att matcha försäljningsrader
                       href: pro-rate-charges-matching-lines.md
+                - name: Hantera kontinuitetsprogram
+                  items:
+                    - name: Ställa in kontinuitetsprogram för kundtjänster
+                      href: set-up-continuity-program.md
+                    - name: Definiera kontinuitetstidsplaner
+                      href: tasks/define-continuity-schedules.md
                 - name: Butikshantering
                   items:
                     - name: Skapa och ändra öppettider
@@ -460,8 +466,6 @@
                   items:
                     - name: Konfigurera och arbeta med orderspärrar för kundtjänst
                       href: work-with-order-holds.md
-                    - name: Definiera kontinuitetstidsplaner
-                      href: tasks/define-continuity-schedules.md
                 - name: Betalningar
                   items:
                     - name: Betalningsmetoder
@@ -478,6 +482,8 @@
                       href: dev-itpro/adyen-connector.md
                     - name: Spara betalningsinstrument online med Adyen-kopplingen
                       href: dev-itpro/adyen-connector-listpi.md
+                    - name: Sömlös offline-switch för att åtgärda presentkort och kreditnotor
+                      href: dev-itpro/seamless-offline-improvements.md
                     - name: Ordna scenarier för fakturabetalning
                       href: payinvoice.md
                     - name: Förebygga dubblettbetalningar
@@ -494,9 +500,9 @@
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Ställa in butiksprodukter
                   href: set-up-retail-products.md
-                - name: Produkthierarki (butik)
+                - name: Produkthierarki
                   items:
-                    - name: Butikshierarkier
+                    - name: Commerce-hierarkier
                       href: retail-hierarchies.md
                     - name: Skapa en ny produkthierarki
                       href: create-product-hierarchy.md
@@ -624,6 +630,12 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Ställa in regler och parametrar för direktleverans och centraliserad distribution
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                    - name: Inkommande lageråtgärder i kassan
+                      href: pos-inbound-inventory-operation.md
+                    - name: Utgående lageråtgärder i kassan
+                      href: pos-outbound-inventory-operation.md
+                    - name: Beräkna lagertillgänglighet för butikskanaler
+                      href: calculated-inventory-retail-channels.md
                 - name: Inköpsorder
                   items:
                     - name: Översikt av inköpsorder
@@ -726,7 +738,19 @@
               href: tasks/store-configurations-retail-statements.md
             - name: Bokföring av försäljningar och betalningar online
               href: tasks/posting-online-sales-payments.md
-        - name: Hantera din näthandelsplats
+        - name: Hantera uppgifter för arbetare
+          items:
+            - name: Översikt över uppgiftshantering
+              href: task-mgmt-overview.md
+            - name: Konfigurera uppgiftshantering
+              href: task-mgmt-configure.md
+            - name: Skapa uppgiftslistor och lägga till uppgifter
+              href: task-mgmt-create-lists.md
+            - name: Tilldela butiker eller medarbetare uppgiftslistor
+              href: task-mgmt-assign-lists.md
+            - name: Uppgiftshantering i kassan
+              href: task-mgmt-pos.md
+        - name: Hantera din e-handelsplats
           items:
             - name: Översikt över onlinebutik
               href: online-store-overview.md
@@ -880,6 +904,8 @@
                   items:
                     - name: Modul för inköpsruta
                       href: add-buy-box.md
+                    - name: Moduler för omdömen och recensioner
+                      href: ratings-reviews-modules.md
                 - name: Inköpsmoduler
                   items:
                     - name: Kundvagnsmodul
@@ -1056,9 +1082,11 @@
               items:
                 - name: Dokumentrapporteringstjänster – översikt
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Teckensnitt som stöds
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera SSRS för lokala distributioner
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: Skriver ut
+                - name: Utskrift
                   items:
                     - name: Dokumentutskrift – översikt
                       href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
@@ -1834,8 +1862,6 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Förhandsgranska och felsöka moduler
                       href: e-commerce-extensibility/test-module.md
-                    - name: Debug-moduler
-                      href: e-commerce-extensibility/debug-modules.md
                     - name: Testa moduler med hjälp av modeller
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Testa moduler med hjälp av modeller av sidor
@@ -1972,10 +1998,12 @@
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Lägga till anpassade kontroller i designerbaserade vyer (ej skärm) för kassa
                   href: dev-itpro/pos-control-non-screen.md
-                - name: Köra kassaexemplen
+                - name: Kör kassaexemplen
                   href: dev-itpro/pos-run-samples.md
                 - name: Riktlinjer för implementering av enhetshantering
                   href: implementation-considerations-devices.md
+                - name: Kassavy för händelser och hanterare av kundvagn
+                  href: dev-itpro/cart-view-handlers.md
             - name: Utbyggbarhet för Hardware Station
               items:
                 - name: Hardware Station och utbyggbarhet
@@ -2032,6 +2060,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Logga tilläggshändelser i Application Insights
                   href: dev-itpro/commerce-application-insights.md
+                - name: 'Skapa async Commerce (CRT)-API:er i din affärslogik'
+                  href: dev-itpro/async-commerce-extension.md
             - name: Utbyggbarhet för betalningskoppling
               items:
                 - name: Skapa en betalningsintegrering för en betalningsterminal
@@ -2046,8 +2076,10 @@
                   href: dev-itpro/create-windows-installer-payment-connector.md
                 - name: Bruk av betalningsdata
                   href: payment-connector-data-fields.md
-                - name: Aktivera skydd mot dubbelbetalning för betalningskoppling
+                - name: Aktivera skydd mot dubbelbetalning för betalningsanslutning
                   href: dev-itpro/duplicate-payment-protection.md
+                - name: Skapa betalningspaket för programutforskaren i Service Fabric-distributioner
+                  href: dev-itpro/payment-connector-package.md
             - name: Utbyggbarhet för e-handel från tredje part
               items:
                 - name: Konfigurera onlinebutiker
@@ -2060,8 +2092,6 @@
               href: dev-itpro/extension-resource-localization.md
     - name: Utveckling och administration av Finance and Operations-appar
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Retail
-      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management
