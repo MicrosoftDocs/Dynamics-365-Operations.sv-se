@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 27066cd860d78743d5ae7c851876eb62fe019245
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e14949b871534868c42d2b26a116e10ff9f05179
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181000"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3082006"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Skapa regler för Optimization advisor
 
@@ -36,7 +36,7 @@ A *regel* är en kontroll av programdata. Om villkoret som regeln beräknar uppf
 
 Så här skapar du en ny regel för **Optimization advisor**. Lägg till en ny klass som utökar den abstrakta klassen **SelfHealingRule** och implementera gränssnittet **IDiagnosticsRule** som dekoreras med attributet **DiagnosticRule**. Klassen måste också ha en metod som dekoreras med attributet **DiagnosticsRuleSubscription**. Enligt praxis görs detta i metoden **opportunityTitle**, som beskrivs senare. Denna nya klass kan läggas till en anpassad modell med ett beroende av modellen **SelfHealingRules**. I följande exempel kallas den regel som implementeras **RFQTitleSelfHealingRule**.
 
-```
+```xpp
 [DiagnosticsRule] 
 public final class RFQTitleSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule 
 { 
@@ -46,7 +46,7 @@ public final class RFQTitleSelfHealingRule extends SelfHealingRule implements ID
 
 Den abstrakta klassen **SelfHealingRule** har metoder som måste implementeras i ärvda klasser. Kärnan är **utvärderingsmetoden** som returnerar en lista över de affärsmöjligheter som har identifierats av regeln. Affärsmöjligheter kan vara per juridisk person eller kan gälla för hela systemet.
 
-```
+```xpp
 protected List evaluate() 
 { 
     List results = new List(Types::Record); 
@@ -82,7 +82,7 @@ Affärsmöjligheter kan också vara mellan företag. I detta fall behövs inte l
 
 Följande kod visar metoden **findRFQCasesWithEmptyTitle** som returnerar ID för de anbudsförfrågor som har tomma titlar.
 
-```
+```xpp
 private container findRFQCasesWithEmptyTitle() 
 { 
     container result; 
@@ -115,7 +115,7 @@ Den rubrik som returneras av **opportunityTitle** visas i kolumnen **Optimerings
 
 Nedan finns ett exempel på implementering. Råa strängar används för enkel hantering, men en korrekt implementering kräver etiketter. 
 
-```
+```xpp
 [DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
                              'Assign titles to Request for Quotation cases', 
                              DiagnosticsRunFrequency::Daily,  
@@ -128,7 +128,7 @@ public str opportunityTitle()
 
 Beskrivningen som returneras av **opportunityDetails** visas i det sidofönster som visar mer information om affärsmöjligheten. Detta tar argumentet **SelfHealingOpportunity**, som är fältet **Data** och som kan användas för att ge mer information om affärsmöjligheten. I exemplet returnerar metoden ID på de anbudsförfrågor som har en tom rubrik. 
 
-```
+```xpp
 public str opportunityDetails(SelfHealingOpportunity _opportunity) 
 { 
     str details = ''; 
@@ -153,7 +153,7 @@ De två återstående abstrakta metoder att implementera är **provideHealingAct
 
 **provideHealingAction** returnerar ett sant värde om en självläkande åtgärd tillhandahålls, annars returneras ett falskt värde. Om ett sant värde returneras måste metoden **performAction** implementeras, annars uppstår ett fel. Metoden **performAction** tar argumentet **SelfHealingOpportunity** i vilken data kan användas för åtgärden. I exemplet öppnar åtgärden **PurchRFQCaseTableListPage** för manuell korrigering. 
 
-```
+```xpp
 public boolean providesHealingAction() 
 { 
     return true; 
@@ -172,7 +172,7 @@ Beroende på specifik regel, kan det vara möjligt att anta en automatisk åtgä
 > [!NOTE]
 > Menyalternativet måste vara ett åtgärdsalternativ för säkerhet för att fungera korrekt. Andra typer av menyalternativ, som **visa menyalternativ** kommer inte att fungera.
 
-```
+```xpp
 public MenuName securityMenuItem() 
 { 
     return menuItemActionStr(PurchRFQCaseTitleAction); 
@@ -181,7 +181,7 @@ public MenuName securityMenuItem()
 
 När regeln har kompilerats körs följande jobb för att se den i användargränssnittet (UI).
 
-```
+```xpp
 class ScanNewRulesJob 
 {         
     public static void main(Args _args) 
@@ -197,7 +197,7 @@ Regeln visas i formuläret **diagnostikregel validering** från **systemadminist
 
 Följande exempel är ett kodstycke med basen för en regel som inkluderar alla metoder och attribut som behövs. Det hjälper dig att komma igång med att skriva nya regler. Etiketter och åtgärdsalternativ som används i exemplet är endast i demonstrationssyfte.
 
-```
+```xpp
 [DiagnosticsRuleAttribute]
 public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
 {

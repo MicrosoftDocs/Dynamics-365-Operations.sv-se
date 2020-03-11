@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251165"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057789"
 ---
 # <a name="trade-allowance-management"></a>Hantering av handelsavdrag
 
@@ -77,9 +77,9 @@ När fonddefinitionen är på plats, är nästa steg i kampanjplaneringen att re
 
 Handelsavdragsavtal registreras på sidan **Handelsavdragsavtal**. För att öppna sidan **Handelsavdragsavtal**, välj **Försäljning och marknadsföring**\>**Handelsavdrag**\>**Handelsavdragsavtal**.
 
-![Sidan Handelsavdragsavtal](./media/trade-allowance-management-agreements-page.png "Sidan Handelsavdragsavtal")
+![Sidan avtal om handelsavdrag](./media/trade-allowance-management-agreements-page.png "Sidan avtal om handelsavdrag")
 
-#### <a name="header"></a>Huvud
+#### <a name="header"></a>Siduvud
 
 Välj **Rubrik** för att växla till rubrikvyn.
 

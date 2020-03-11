@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 51d344d7b7a792d0cdf3eeb7f5c6e1a9b2b8bf19
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024024"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057947"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Ansluta kringutrustning till kassan (POS)
 
@@ -43,7 +43,7 @@ Flera komponenter används för att definiera relationerna mellan en butik, kass
 
 Navigering: klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassor**.
 
-Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av kassan. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning i butik som ska användas i kassan, butiken som kassan har mappats till, samt den visuella upplevelsen när användaren loggar in på den kassan.
+Kassaregistret är en enhet som används för att definiera egenskaperna hos en viss instans av kassan. Dessa egenskaper omfattar maskinvaruprofil eller inställningar för kringutrustning som ska användas i kassan, butiken som kassan har mappats till och den visuella upplevelsen när användare loggar in på den kassan.
 
 ### <a name="devices"></a>Enheter
 
@@ -67,7 +67,7 @@ En maskinvaruprofil identifierar den maskinvara som är ansluten till ett kassar
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigering: Klicka på **Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. Markera en butik och klicka på snabbfliken **Maskinvarustationer**.
+Navigering: Klicka på **Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**. Markera en butik och klicka på snabbfliken **Maskinvarustationer**.
 
 En station för maskinvara är en instans av affärslogiken som ligger till grund för kringutrustningen för kassan. En maskinvarustation installeras automatiskt tillsammans med MPOS. Alternativt kan maskinvarustationen installeras som en fristående komponent och sedan kommas åt via MPOS eller Cloud POS via en webbtjänst. Maskinvarustationen måste definieras på kanalnivå.
 
@@ -87,7 +87,7 @@ Anslut MPOS till kassans kringutrustning i ett traditionellt, fast kassascenario
 
 När du har tilldelat maskinvaruprofilen ska du synkronisera ändringar i kanaldatabasen med hjälp av distributionsschemat **Kassor**. Du hittar distributionsscheman om du går till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**. 
 
-Ställ därefter in en "lokal" maskinvarustation på kanalen. Klicka på **Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker** och välj en butik. 
+Ställ därefter in en "lokal" maskinvarustation på kanalen. Klicka på **Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker** och välj en butik. 
 
 Välj sedan snabbfliken **Maskinvarustationer** och klicka på **Lägg till** för att lägga till en maskinvarustation. Ange en beskrivning, ange **localhost** som värdnamn och synkronisera sedan ändringarna till kanalen med hjälp av distributionsschemat **Kanalkonfiguration**. Du hittar distributionsscheman om du går till **Butik och handel** &gt; **Butik och handel-IT** &gt; **Distributionsschema**. 
 
@@ -104,7 +104,7 @@ Gå sedan till MPOS och använd åtgärden **Välj maskinvarustation** och marke
 
 I det här scenariot delas en fristående maskinvarustation mellan MPOS- och Cloud POS-klienter. Det här scenariot kräver att du skapar en maskinvarustationsprofil för att du ska kunna specificera vilket hämtningsbart paket, vilken port och vilken maskinvaruprofil maskinvarustationen använder. Du hittar maskinvarustationsprofilen genom att gå till **Butik och handel** &gt; **Kanalinställning** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvarustationens profiler**. 
 
-När du har skapat maskinvarustationsprofilen, navigera till den specifika butikskanalen (**Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**) och lägg till en ny maskinvarustation. Mappa den nya maskinvarustationen till maskinvarustationsprofilen som skapades tidigare. 
+När du har skapat maskinvarustationsprofilen, navigera till den specifika kanalen (**Retail och Commerce** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**) och lägg till en ny maskinvarustation. Mappa den nya maskinvarustationen till maskinvarustationsprofilen som skapades tidigare. 
 
 Tillhandahåll sedan en beskrivning som hjälper kassören att identifiera maskinvarustationen. I fältet **Värdnamn** anger du värdmaskinens URL i följande format: `https://<MachineName:Port>/HardwareStation`. (Ersätt **&lt;MachineName:Port&gt;** med det faktiska datornamnet på maskinvarustationen och den port som anges i maskinvarustationens profil.) För en fristående maskinvarustation måste du också ange terminal-ID för elektronisk betalning (EFT). Det här värdet identifierar den EFT-terminal som är ansluten till maskinvarustationen när betalningskopplingen kommunicerar med betalningsförmedlaren. 
 

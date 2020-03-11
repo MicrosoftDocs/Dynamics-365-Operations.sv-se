@@ -3,7 +3,7 @@ title: Förutsättningar för att ställa in kanaler
 description: Det här ämnet innehåller en översikt över förutsättningar för att ställa in kanaler i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002299"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081325"
 ---
 # <a name="channel-setup-prerequisites"></a>Förutsättningar för att ställa in kanaler
 
@@ -40,16 +40,16 @@ Innan du kan skapa en Dynamics 365 Commerce-kanal måste flera nödvändiga uppg
 
 ## <a name="initialization"></a>Initialisering
 
-- [Initiera startdata](../retail/enable-configure-retail-functionality.md)
+- [Initiera startdata](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>Globala förutsättningar krävs för alla kanaltyper
 
 - [Definiera och konfigurera din juridiska organisationens struktur](channels-legal-entities.md) 
 - [Konfigurera din organisationshierarki](channels-org-hierarchies.md)
 - [Ställ in ett lagerställen](channels-setup-warehouse.md)
-- [Konfigurera moms](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Konfigurera moms](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [Ange en meddelandeprofil för e-post](email-notification-profiles.md)
-- [Ställa in nummerserier](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Ställa in nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Ställa in en standardkund och adressbok](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,23 +57,21 @@ Innan du kan skapa en Dynamics 365 Commerce-kanal måste flera nödvändiga uppg
 
 ## <a name="retail-channel-prerequisites"></a>Förutsättningar för butikskanaler
 
-- [Infokoder och infokodgrupper](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Infokoder och infokodgrupper](info-codes-retail.md)
 - [Konfigurera en butiksfunktionsprofil](retail-functionality-profile.md)
 - [Konfigurera en medarbetaradressbok](new-address-book.md)
-- [Ställ in en skärmlayout](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Konfigurera en maskinvarustation](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Ställ in en skärmlayout](pos-screen-layouts.md)
+- [Konfigurera en maskinvarustation](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>Förutsättningar för kundtjänstkanal
 
 - Parametrar för kundtjänst
-- Återbetalningsmetoder för kundtjänst
-- Hyrestyper
-- Betalningstjänster
-- Koder för spärrad order
+- [Kundtjänstorder och återbetalningsmetoder](work-with-payments.md)
+- [Leveranssätt och avgifter för kundtjänst](configure-call-center-delivery.md)
 
-## <a name="online-channel-prerequisites"></a>Förutsättningar för onlinekanaler
+## <a name="online-channel-prerequisites"></a>Förutsättningar för onlinekanal
 
-- [Skapa en online funktionsprofil](online-functionality-profile.md)
+- [Skapa en onlinefunktionsprofil](online-functionality-profile.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

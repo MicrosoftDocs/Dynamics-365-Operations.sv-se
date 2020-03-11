@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024716"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057727"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce
 
@@ -35,7 +35,7 @@ Detta ämne förklarar hur du konfigurerar förhandsversionsmiljö för Microsof
 
 Slutför procedurerna i det här avsnittet först när förhandsversionsmiljö för Commerce har etablerats. Information om hur du konfigurerar etablerar förhandsversionsmiljö för Commerce, se [Etablera en förhandsversionsmiljö för Commerce](provisioning-guide.md).
 
-När din förhandsversionsmiljö för Commerce har etablerats måste ytterligare konfigurationssteg för efter etableringen slutföras innan du kan börja utvärdera miljön. Om du vill utföra dessa steg måste du använda Microsoft Dynamics Lifecycle Services (LCS) Dynamics 365 Commerce och Dynamics 365 Retail.
+När din förhandsversionsmiljö för Commerce har etablerats måste ytterligare konfigurationssteg för efter etableringen slutföras innan du kan börja utvärdera miljön. Om du vill utföra dessa steg måste du använda Microsoft Dynamics Lifecycle Services (LCS) och Dynamics 365 Commerce.
 
 ## <a name="before-you-start"></a>Innan du börjar
 
@@ -53,7 +53,7 @@ När din förhandsversionsmiljö för Commerce har etablerats måste ytterligare
 
 Om du vill associera en anställd med din identitet i LCS, följ dessa steg.
 
-1. Använd menyn till vänster för att gå till **moduler \> butik \> anställda \> arbetare**.
+1. Använd menyn till vänster för att gå till **moduler \> Retail och Commerce \> anställda \> arbetare**.
 1. Hitta och markera följande post: **000713 - Andrew Collette** i listan.
 1. Klicka på **butik** i åtgärdsfönstret.
 1. Välj **Associera befintlig identitet**.
@@ -91,12 +91,12 @@ Följ dessa steg om du vill börja konfigurera din förhandsgranskningswebbplats
 1. Lämna värdet i fältet **sökväg** som det är.
 1. Välj **OK**. Listan över sidor på webbplatsen visas.
 
-## <a name="enable-jobs-in-retail"></a>Aktivera jobb i Retail
+## <a name="enable-jobs"></a>Aktivera jobb
 
-Gör så här om du vill aktivera jobb i Retail.
+Gör så här om du vill aktivera jobb i Commerce.
 
 1. Logga in på miljön (HQ).
-1. Gå till menyn till vänster **Butik \> Förfrågningar och rapporter \> Batch-jobb**.
+1. Gå till menyn till vänster **Retail och Commerce \> Förfrågningar och rapporter \> Batch-jobb**.
 
     De återstående stegen i den här proceduren måste slutföras för vart och ett av följande jobb:
 
@@ -112,11 +112,11 @@ Gör så här om du vill aktivera jobb i Retail.
     1. I Åtgärdsfönstret på fliken **Batchjobb** välj **Ändra status**.
     1. Välj **Väntar**och välj sedan **OK**.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Kör fullständig datasynkronisering i Retail
+### <a name="run-full-data-synchronization"></a>Kör fullständig datasynkronisering
 
-Om du vill köra fullständig datasynkronisering i Retail, följ dessa steg.
+Om du vill köra fullständig datasynkronisering i Commerce, följ dessa steg.
 
-1. Med hjälp av menyn till vänster, gå till **Moduler \> Butik \> Administrationsinställning \> Butiksschemaläggare \> Kanaldatabas**.
+1. Med hjälp av menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Butiksschemaläggare \> Kanaldatabas**.
 1. **Standard** kanalen väljs i listan till vänster. Välj den andra tillgängliga kanalen. Den här kanalen heter **scXXXXXXXXX**.
 1. I åtgärdsfönstret, välj **Fullständig datasynkronisering**.
 1. Ange **9999** som distributionsschema.

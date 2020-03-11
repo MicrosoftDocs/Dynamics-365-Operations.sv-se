@@ -3,7 +3,7 @@ title: Jämförelse mellan moln- och lokala funktioner
 description: Detta avsnitt anger vilka funktioner stöds i molnet och på plats.
 author: sericks007
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 02/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: aa60f3bc35f2bc10902da060ccacd7767bc9af8f
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: a918d9fa1ad7ed5adcbb1d056bb8cc3306507aec
+ms.sourcegitcommit: 8ff2413b6cb504d2b36fce2bb50441b2e690330e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005736"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081980"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Jämförelse mellan funktioner i molnet och lokalt
 
@@ -81,6 +81,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 |                                      | Uppgiftsregistrerare - Spara eller ladda uppgiftsregistreringar från BPM-biblioteket                         | Ja       | Nr              |
 | Support                              |                                                                                           | Ja       | Ja             |
 |                                      | Supportåtkomst via menyn Hjälp & Support                                             | Ja       | Nej              |
+|                                      | Affärshändelser                                                                           | Ja       | Ja (antingen är Internet-anslutningen obligatoriskt eller så måste anpassade slutpunkter implementeras för att skicka/ta emot affärshändelser inom intranätet)              |
 
 ## <a name="dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management 
 
@@ -147,7 +148,7 @@ Följande tabell anger appområdena. Lokalt stöd och molnstöd anges för funkt
 
 ## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-En lista över funktioner som är tillgängliga i lokal distribution finns i [Retail-funktionerna i lokala distributioner](../../../retail/retail-onprem.md).
+En lista över funktioner som är tillgängliga i lokal distribution finns i [Commerce-funktionerna i lokala distributioner](../../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 

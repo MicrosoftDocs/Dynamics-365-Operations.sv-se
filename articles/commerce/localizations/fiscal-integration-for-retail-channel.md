@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ff9d722640c86333cb1f9174c640adc2e76e9a5f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024133"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057566"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Översikt över räkenskapsintegration för handelskanaler
 
@@ -36,7 +36,7 @@ Det här avsnittet innehåller en översikt över funktioner för räkenskapsint
 - Skicka säkert information som är relaterad till försäljning och returer som slutförs i Retail POS till en extern webbtjänst som drivs av skattemyndigheten.
 - Hjälpa till att garantera oföränderlighet av försäljningstransaktionsdata via digitala signaturer.
 
-Räkenskapsintegreringen är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integration mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegration som stöder grundläggande butiksscenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegration består av flera tillägg av Handel-komponenter och ingår i programutvecklingskit (SDK). Mer information om exempel på räkenskapsintegration finns i [Exempel på räkenskapsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Information om hur du installerar och använder Retail SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Räkenskapsintegreringen är ett ramverk som utgör en gemensam lösning för ytterligare utveckling och anpassning av integration mellan Retail POS och räkenskapsenheter och tjänster. Funktionen innehåller också exempel på räkenskapsintegration som stöder grundläggande scenarier för vissa länder eller regioner, och som arbetar med specifika räkenskapsenheter och tjänster. Exempel på räkenskapsintegration består av flera tillägg av Handel-komponenter och ingår i programutvecklingskit (SDK). Mer information om exempel på räkenskapsintegration finns i [Exempel på räkenskapsintegration i Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Information om hur du installerar och använder Retail SDK finns i [Retail programutvecklingskit (SDK) arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Stöd för andra scenarier som inte stöds av exempel på räkenskapsintegration, för att integrera Retail POS med andra räkenskapsprodukter eller tjänster och täcka kraven i andra länder eller regioner, måste du utöka ett befintligt exempel på räkenskapsintegration eller skapa ett nytt prov med ett befintligt prov som exempel.
 

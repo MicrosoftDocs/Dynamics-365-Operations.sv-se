@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024739"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057750"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce
 
@@ -63,8 +63,8 @@ Om du vill utvärdera funktioner för hantering av digitala tillgångar genom at
 
 ### <a name="update-the-media-base-url"></a>Uppdatera mediebas-URL
 
-1. Logga in på Dynamics 365 Retail.
-1. Med hjälp av menyn till vänster, gå till **Moduler \> Butik \> Kanalinställning \> Kanalprofiler**.
+1. Logga in på Dynamics 365 Commerce.
+1. Med hjälp av menyn till vänster, gå till **Moduler \> Retail och Commerce \> Kanalinställning \> Kanalprofiler**.
 1. Välj **Redigera**.
 1. Under **Profilegenskaper**, ersätt värdet för egenskapen **Medieserverbas-URL** med den mediebas-URL du skapade tidigare.
 1. I listan till vänster, under kanalen **Standard** väljer du den andra kanalen.
@@ -77,7 +77,7 @@ Om du vill utvärdera funktioner för hantering av digitala tillgångar genom at
 > [!NOTE]
 > SMTP-servern eller e-posttjänsten som du anger här måste vara tillgänglig från den Azure-prenumeration du använder för miljön.
 
-1. Logga in på Retail.
+1. Logga in på Commerce.
 1. Använd menyn till vänster, gå till **Moduler \> Systemadministration \> Inställning \> E-post \> E-postparametrar**.
 1. På fliken **SMTP-inställningar** i fältet **utgående e-postserver** anger du FQDN- eller IP-adressen för SMTP-servern eller e-posttjänsten.
 1. Ange **SMTP-portnummer** anger du portnumret. (Om du inte använder Secure Sockets Layer \[SSL\], är standardportnumret **25**.)
@@ -92,7 +92,7 @@ Om du vill utvärdera funktioner för hantering av digitala tillgångar genom at
 
 För varje transaktionshändelse som du vill skicka e-post till måste du uppdatera e-postmallen med en giltig e-postadress till avsändaren.
 
-1. Logga in på Retail.
+1. Logga in på Commerce.
 1. Med hjälp av menyn till vänster, gå till **Moduler \> Organisationsadministration \> Inställning \> E-postmall för organisation**.
 1. Välj **Visa lista**.
 1. Följ dessa steg i listan för varje mall:
@@ -115,7 +115,7 @@ Du kanske vill anpassa e-postmallarna så att de använder olika bilder. Eller s
     - Hämta förpackningsordermall
 
 1. Anpassa mallarna med hjälp av en text- eller HTML-redigerare. Se listan över [token som stöds](#supported-tokens-in-the-email-template) senare i det här avsnittet.
-1. Logga in på Retail.
+1. Logga in på Commerce.
 1. Med hjälp av menyn till vänster, gå till **Moduler \> Organisationsadministration \> Inställning \> E-postmall för organisation**.
 1. Expandera listan till vänster om du vill se alla mallar.
 1. Gör så här för varje mall som du vill anpassa:

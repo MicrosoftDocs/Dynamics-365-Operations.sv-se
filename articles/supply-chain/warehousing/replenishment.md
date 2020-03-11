@@ -3,7 +3,7 @@ title: Lagerpåfyllnad – översikt
 description: Detta avsnitt beskriver de påfyllnadsstrategier som erbjuds för lager som använder funktionerna i lagerhanteringen.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251487"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076372"
 ---
 # <a name="replenishment-overview"></a>Lagerpåfyllnad – översikt
 
@@ -49,6 +49,8 @@ Platsdirektiven används för att fastställa vilket lagerställe som ska fyllas
 Utöver att skapa en mall ska du specificera vissa inställningar för lagerpåfyllnad i påfyllnadsmallen. Omgångsmallen bör innehålla ett omgångssteg för påfyllnad som endast körs om en vara inte tilldelas korrekt. Det här steget för lagerpåfyllnad använder en påfyllnadskod som fastställer vilken lagerpåfyllnadsmall som ska användas. Förutom att ha ett omgångssteg för påfyllnad måste du även se till att **Fyll på** har valts i avsnittet **Metoder** i omgångsmallen. 
 
 Sidan **Lagerpåfyllnadsmall** innehåller kryssrutan **Tillåt påfyllnadsbegäran för att använda ej reserverade kvantiteter**. Välj denna kryssruta om behovspåfyllnad ska kunna dra av icke-reserverade kvantiteter från arbete som genereras av vald påfyllnadsmall. Om du vill aktivera att mallar för begäran om lagerpåfyllnad ska använda denna logik ska du markera kryssrutan för varje befintlig lagerpåfyllnadsmall. När begäran om påfyllnad aktiveras på lagerstället dras begäran av från befintligt lagerpåfyllnadsarbete som har oreserverade kvantiteter, om arbetet härrör från mallar för lagerpåfyllnad där kryssrutan **Tillåt påfyllnadsbegäran att använda oreserverade kvantiteter** har markerats.
+
+**Påfyllningsenhet** är den minsta enhet som ska fyllas på. Måste vara ett heltal som är en multipel av enheten. Systemet kommer att avrundas upp till den högsta möjliga enheten när arbete skapas.
 
 Lagerpåfyllnadsbegäran stöds för försäljningsorder, överföringsorder, produktionsorder och kanbans. 
 

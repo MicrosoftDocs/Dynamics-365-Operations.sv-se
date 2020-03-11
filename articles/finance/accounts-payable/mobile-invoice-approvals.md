@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658654"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059438"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobila fakturagodkännanden
 
@@ -54,8 +54,8 @@ Alla organisationer orkestrerar och definierar sin affärsprocess för leverant�
     -   Hur många redovisningsfördelningar (slutligt pris, moms, avgifter, delningar, och så vidare) finns det för en fakturarad? Återigen, använd 80-20-regeln.
     -   Har fakturorna också redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?
 
-> [!NOTE]
-> Det här avsnittet förklarar inte hur du redigerar redovisningsfördelningar, eftersom den här funktionen inte stöds för närvarande för mobila scenarier.
+    > [!NOTE]
+    > Det här avsnittet förklarar inte hur du redigerar redovisningsfördelningar, eftersom den här funktionen inte stöds för närvarande för mobila scenarier.
 
 -   Vill användarna se bilagor för fakturan på enheten?
 
@@ -158,9 +158,9 @@ Den första mobilsidan som du bör utforma är en lista med fakturor som har til
     - Fakturanummer
     - Fakturadatum
 
-  När fält läggs till måste mobilsidan likna följande illustration. 
+    När fält läggs till måste mobilsidan likna följande illustration. 
     
-   [![Sidan när fält har lagts till](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Sidan när fält har lagts till](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Du måste även lägga till följande kolumner nu, så att vi kan aktivera arbetsflödesåtgärder senare.
     - Visa Slutför uppgift
@@ -247,9 +247,10 @@ För att lägga till arbetsflödesåtgärder, använd sidan **VendMobileInvoiceH
     - Den döljer de extra arbetsflödesrelaterade kolumner som vi har lade till tidigare på mobillistsidan. Vi har lagt till kolumnerna så att appen har informationen i sammanhang och kan utföra nästa steg.
     - Utifrån vilket arbetsflödessteg som är aktivt, använder den logik för att visa enbart de åtgärderna.
 
-> [!NOTE]
-> Namnet på sidorna och andra kontroller i koden måste överensstämma med namnen i arbetsytan.
+    > [!NOTE]
+    > Namnet på sidorna och andra kontroller i koden måste överensstämma med namnen i arbetsytan.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ För att lägga till arbetsflödesåtgärder, använd sidan **VendMobileInvoiceH
                  },
            };
         }
+    ```
 
 2.  Ladda upp kodfilen till arbetsytan genom att välja fliken **Logik**
 3.  Klicka på **Klart** för att avsluta redigeringsläge.
@@ -341,7 +343,7 @@ Kraven i det här scenariot bekräftar att endast det endast ska finnas fördeln
 
 1.  Ersätt namnet på menyalternativet i URL-adressen precis som du gjorde tidigare. Sidan som visas bör likna illustrationen.
 
-[![Sida med alla distributioner](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Sida med alla distributioner](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Öppna mobildesignern med knappen **Inställningar** (kugghjul).
 
@@ -367,16 +369,18 @@ Kraven i det här scenariot bekräftar att endast det endast ska finnas fördeln
 
 10. Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
-> [!NOTE] 
-> Mobilsidan **Visa redovisning** är för tillfället inte kopplad till någon av de mobilsidor som vi har utformat hittills. Eftersom användaren ska kunna navigera till sidan **Visa redovisning** sidan från sidan **Fakturadetaljer** på den mobila enheten måste vi tillhandahålla navigering från sidan **Fakturadetaljer** till sidan **Visa redovisning**. Vi fastställer den här navigeringen med hjälp av ytterligare logik via JavaScript.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Lägga till navigering till sidan Visa redovisning
+
+Mobilsidan **Visa redovisning** är för tillfället inte kopplad till någon av de mobilsidor som vi har utformat hittills. Eftersom användaren ska kunna navigera till sidan **Visa redovisning** sidan från sidan **Fakturadetaljer** på den mobila enheten måste vi tillhandahålla navigering från sidan **Fakturadetaljer** till sidan **Visa redovisning**. Vi fastställer den här navigeringen med hjälp av ytterligare logik via JavaScript.
 
 1.  Öppna den JS-fil som du skapade tidigare och lägg till de rader som markerats i koden nedan. Den här koden gör två saker:
     1.  Det hjälper till att garantera att användaren inte kan bläddra direkt från arbetsytan till sidan **Visa redovisning**.
     2.  Den etablerar en navigeringskontroll från sidan **Fakturadetaljer** till sidan **Visa redovisning**.
 
-> [!NOTE] 
-> Namnet på sidorna och andra kontroller i koden måste överensstämma med namnen i arbetsytan.
+    > [!NOTE] 
+    > Namnet på sidorna och andra kontroller i koden måste överensstämma med namnen i arbetsytan.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ Kraven i det här scenariot bekräftar att endast det endast ska finnas fördeln
                  },
            };
         }
-
+    ```
+    
 2.  Ladda upp kodfilen till arbetsytan genom att välja fliken **Logik** för att skriva över föregående kod
 3.  Klicka på **Klart** för att avsluta redigeringsläge.
 4.  Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de0981d3200c2b1d62cab7600d2382bd11dd4b20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002253"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057843"
 ---
 # <a name="cloud-powered-search-overview"></a>Översikt över molnbaserade sökningar
 
@@ -33,7 +33,7 @@ Det här ämnet ger en översikt över den molnbaserade sökningen i Microsoft D
 
 ## <a name="overview"></a>Översikt
 
-Produktidentifiering garanterar att kunder snabbt och enkelt kan hitta produkter genom att bläddra bland kategorier, söka och filtrera. Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla detaljhandelskanaler.
+Produktidentifiering garanterar att kunder snabbt och enkelt kan hitta produkter genom att bläddra bland kategorier, söka och filtrera. Återförsäljare betraktar produktidentifiering som ett primärt verktyg för kundinteraktion i alla kanaler.
 
 Kunderna är vana vid de nästan ögonblickliga svarstiderna för sökmotorer på webben, avancerade näthandelsplatser, sociala appar, automatiska förslag som visas som söktermer, inblandad navigering och markeringar. Om kunderna inte hittar produkten som de letar efter tillräckligt snabbt i en nätbutik tvekar de inte att gå vidare till en annan nätbutik.
 

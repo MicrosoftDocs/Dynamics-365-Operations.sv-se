@@ -1,9 +1,9 @@
 ---
-title: Dataintegrering nästan i realtid med Common Data Service
-description: Det här ämnet innehåller en översikt över integrering mellan Finance and Operations och Common Data Service .
+title: Översikt över dubbelriktad skrivning
+description: Det här ämnet ger en översikt över dubbelriktad skrivning. Dubbelriktad skrivning är en infrastruktur som ger nära realtids samverkan mellan Microsoft Dynamics 365 modellstyrda appar och Finance and Operations-appar.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,59 +18,91 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1c09b0c0bb695e7695acb7a8821ffb99ae1f6f06
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 12c6a39700a260c138fab67ed370f94b3aa04213
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020022"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076004"
 ---
-# <a name="near-real-time-data-integration-with-common-data-service"></a>Dataintegrering nästan i realtid med Common Data Service
+# <a name="dual-write-overview"></a>Översikt över dubbelriktad skrivning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-I den nuvarande digitala världen använder företags ekosystem Microsoft Dynamics 365-appar som helhet. Eftersom data från personer, kunder, åtgärder och sakernas Internet (IoT)-enheter flödar till en källa finns det en möjlighet för digitala feedbackloopar. För att uppnå den här upplevelsen är integration mellan Finance and Operations-appar och andra Dynamics 365-program viktigt. Vissa appar byggs ovanpå Common Data Service. Integration mellan Finance and Operations-appdata med Common Data Service låter våra andra program kommunicera konsekvent och flytande med Finance and Operations.
+## <a name="what-is-dual-write"></a>Vad är dubbelriktad skrivning?
 
-Finance and Operations-appar och Common Data Service tillhandahåller datasynkronisering nästan i realtid mellan Finance and Operations-appar och andra Dynamics 365-program via ett ramverk med dubbelriktad skrivning. Täckningen är bred och spänner över 28 ytområden av appen. Målet är att ge användarupplevelsen "en Dynamics 365" genom sömlösa dataflöden som kopplar samman affärsprocesser mellan olika program.
+Dubbelriktad skrivning är en medföljande infrastruktur som ger nära realtidssamverkan mellan Microsoft Dynamics 365 och Finance and Operations-appar. När data om kunder, produkter, personer och verksamhet går utanför programgränser, är alla avdelningar i organisationen berättigade.
 
-![Diagram över arkitekturöversikt](media/dual-write-overview.jpg)
+Dubbelriktad skrivning ger tätt kombinerad, dubbelriktad integration mellan Finance and Operations-appar och Common Data Service. Alla dataändringar i Finance and Operations-appar orsakar skrivningar till Common Data Service och alla dataändringar i Common Data Service orsakar skrivningar till Finance and Operations-appar. Det här automatiserade dataflödet ger ett integrerat användargränssnitt mellan programmen.
 
-Följande värdepropositioner är tillgängliga:
+![Datarelation mellan appar](media/dual-write-overview.jpg)
 
-+ [Organisationshierarki i Common Data Service](organization-mapping.md)
-+ [Företagskoncept i Common Data Service](company-data.md)
-+ [Integrerat kundhuvud](customer-mapping.md)
-+ [Integrerad redovisning](ledger-mapping.md)
-+ [Enhetlig produktupplevelse](product-mapping.md)
-+ [Integrerat leverantörshuvud](vendor-mapping.md)
-+ [Integrerade platser och lagerställen](sites-warehouses-mapping.md)
-+ [Integrerad huvudskatt](tax-mapping.md)
+Dubbelriktad skrivning har två aspekter: en *infrastruktur* aspekt och en *applikation* aspekt.
 
-## <a name="system-requirements"></a>Systemkrav
+### <a name="infrastructure"></a>Infrastruktur
 
-Synkrona, dubbelriktad, dataflöden nästan i realtid kräver följande versioner:
+Infrastrukturen för dubbelriktad skrivning är utökningsbar och tillförlitlig och innehåller följande huvudfunktioner:
 
-+ Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (juli 2019) med plattformsuppdatering 28 eller senare
-+ Microsoft Dynamics 365 for Customer Engagement, plattform version 9.1 (4.2) eller senare
++ Synkront och dubbelriktat dataflöde mellan program
++ Synkronisering, tillsammans med lägena spela upp, pausa och sammanfattning för att stödja systemet i online- och offline-/asynkrona lägen.
++ Möjlighet att synkronisera ursprungliga data mellan programmen
++ Konsoliderad vy över aktivitet och felloggar för dataadministratörer
++ Möjlighet att konfigurera anpassade aviseringar och tröskelvärden samt att prenumerera på meddelanden
++ Intuitivt användargränssnitt (UI) för filtrering och transformeringar
++ Möjlighet att ställa in och visa enhetsberoenden och relationer
++ Utökningsbarhet för både standard- och anpassade entiteter och kartor
++ Tillförlitlig program livscykelhantering
++ Installations upplevelse utanför lådan för nya kunder
 
-## <a name="setup-instructions"></a>Installationsanvisningar
+### <a name="application"></a>Ansökning
 
-Följ dessa steg för att ställa in integration mellan Finance and Operations-appar och Common Data Service.
-    
-1. För installationen av dubbelriktad skrivningssystemet, se [stegvis guiden](https://aka.ms/dualwrite-docs) om att tillkännage förhandsgranskning av dubbelriktad skrivning.
-2. Ladda ned och installera lösningen från [Fin Ops och CD/CE-integration via dubbelriktad](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096)Yammer-gruppen. Paketet innehåller fem lösningar:
+Dubbelriktad skrivning skapar en mappning mellan koncept i Finance and Operations-appar och koncept i modellstyrda appar i Dynamics 365. Denna integration stöder följande scenarier:
 
-    + Dynamics365Company
-    + CurrencyExchangeRates
-    + Dynamics365FinanceAndOperationsCommon
-    + Dynamics365FinanceCommon
-    + Dynamics365SupplyChainCommon
++ Integrerad kundmaster
++ Tillgång till kundförmånskort och belöningspoäng
++ Enhetlig produkthanteringsupplevelse
++ Medvetenhet över organisationshierarki
++ Integrerat leverantörshuvud
++ Åtkomst till ekonomi- och momsreferensdata
++ Prismotor upplevelse på begäran
++ Integrerad potentiell kund till pengar-upplevelse
++ Möjlighet att betjäna både interna tillgångar och kundtillgångar via fältagenter
++ Integrerat procure-to-pay-upplevelse
++ Integrerade aktiviteter och anteckningar för kunddata och dokument
++ Möjlighet att söka efter tillgänglighet för lagerbehållning och information
++ Projekt till kontanter-upplevelse
++ Möjlighet att hantera flera adresser och roller via partens begrepp
++ En källhantering för användare
++ Integrerade kanaler för återförsäljning och marknadsföring
++ Synlighet för erbjudanden och rabatter
++ Funktioner för service för begäran
++ Förenklade tjänsteåtgärder
 
-3. Följ körningsordningen för att [synkronisera inledande referensdata](initial-sync.md).
-4. Om du stöter på problem med synkronisering av dubbelriktad skrivning, se [felsökningsguiden för felsökningsguiden](dual-write-troubleshooting.md).
+## <a name="top-reasons-to-use-dual-write"></a>Främsta anledningar att använda dubbelriktad skrivning
 
-> [!IMPORTANT]
-> Du kan inte köra dubbelriktad skrivning och [potentiell kund till kontanter](../../../../supply-chain/sales-marketing/prospect-to-cash.md) sida vid sida. Om du kör lösningen potentiell kund till kontanter måste du avinstallera den. Du måste också inaktivera de mallar för dubbelriktad skrivning som ingår i lösningen potentiell kund till kontanter.
+Dubbelriktad skrivning ger dataintegrering i Microsoft Dynamics 365-program. Detta robusta ramverk länkar sig till miljöer och gör att olika affärsprogram kan fungera tillsammans. Här följer de viktigaste skälen till varför du bör använda dubbelriktad skrivning:
+
++ Dubbelriktad skrivning ger tätt sammankopplade, nära realtid och dubbelriktad integration mellan Finance and Operations-appar och modellstyrda appar i Dynamics 365. Den här integrationen gör Microsoft Dynamics 365 en enda kontaktpunkt för alla dina affärslösningar. Kunder som använder Dynamics 365 Finance och Dynamics 365 Supply Chain Management, men som inte använder Microsoft-lösningar för hantering av kundrelationer (CRM), flyttar till Dynamics 365 för sitt stöd till dubbelriktad skrivning.
++ Data från kunder, produkter, åtgärder, projekt och sakernas Internet (IoT) skickas automatiskt till Common Data Service via dubbelriktad skrivning. Denna anslutning är mycket användbar för företag som är intresserade av Microsoft Power Platform expansioner.
++ Infrastrukturen för dubbelriktad skrivning följer principen för ingen kod/ingen kod. Minsta tekniska ansträngning krävs för att utöka standardmappningarna mellan tabeller och för att inkludera anpassade kartor.
++ Dubbelriktad skrivning stöder både online-läge och offline-läge. Microsoft är det enda företaget som har stöd för online- och offline-lägen.
+
+## <a name="what-does-dual-write-mean-for-users-and-architects-of-crm-products"></a>Vad betyder dubbelriktad skrivning för användare och arkitekter av CRM-produkter?
+
+Vid dubbelriktad skrivning automatiseras dataflödet mellan Finance and Operations-appar och Common Data Service. I framtida versioner kommer begreppen i modellstyrda appar i Dynamics 365 (t.ex. kund, kontakt, offert och order) att skalas till mellan marknaden och kunder på den övre marknaden.
+
+I den första versionen hanteras den mesta av automatisering av lösningar för dubbelriktad skrivning. I framtida versioner kommer dessa lösningar att bli en del av Common Data Service. Genom att förstå de kommande ändringarna i Common Data Service, kan du spara pengar på lång sikt. Här är några av de avgörande förändringarna:
+
++ Common Data Service kommer att ha nya begrepp, t.ex. företag och part. Dessa begrepp påverkar alla program som är byggda på Common Data Service, till exempel Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service och Dynamics 365 Field Service.
++ Aktiviteter och anteckningar är enhetliga och expanderade för att stödja både C1s (användare av systemet) och C2s (kunder i systemet).
++ Här är några av de kommande ändringarna i Common Data Service:
+
+    - Den decimala datatypen ersätter datatypen pengar.
+    - Gäller från kommer att stödja tidigare, nuvarande och framtida data på samma ställe.
+    - Det kommer att bli mer stöd för valuta och valutakurser och API:n **Valutakurs** kommer att revideras.
+    - Enhetskonverteringar stöds.
+
+Mer information om kommande ändringar finns i [Data i Common Data Service – fas 1 och 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).

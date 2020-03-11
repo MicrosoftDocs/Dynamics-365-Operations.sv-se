@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 48854c15e429d51dcf30ea804eb636dee7965443
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773655"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080782"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementera anpassade fält för Microsoft Dynamics 365 Project Timesheet-mobilappen på iOS och Android
 
@@ -183,7 +183,7 @@ I följande exempel visas ett strängfält i tidsposter. Det här fältet har tv
 
 Observera att användning av **TSTimesheetCustomField::newFromMetatdata()**-metoden för att förenkla initieringen av de anpassade fältegenskaperna: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength** och **numberOfDecimals**. Du kan också ställa in dessa parametrar manuellt, som du vill.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -212,7 +212,7 @@ final class TSTimesheetSettings_Extension
 
 Metoden **buildCustomFieldListForEntry** används för att ange värden på de sparade tidrapportrader som finns i mobilappen. Den tar en TSTimesheetTrans-post som en parameter. Fält från den posten kan användas för att fylla i det anpassade fältvärdet i appen.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -250,7 +250,7 @@ Om du vill återställa ett anpassat fält till databasen i typisk användning m
 > [!NOTE]
 > I följande exempel sparas värdet **firstOption** eller **secondOption** som användaren väljer till databasen som ett råsträngvärde. Om databasfältet är ett fält av typen **fastext** kan dessa värden mappas manuellt till ett uppräkningsvärde och sedan sparas till ett uppräkningsfält i databasregistret.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -339,7 +339,7 @@ Den här koden styr bildskärmsinställningarna för fältet i appen. T.ex. styr
 
 I följande exempel visas ett beräknat värde i rubrik avsnittet i appen.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -369,7 +369,7 @@ final class TSTimesheetSettings_Extension
 Metoden **buildCustomFieldListForHeader** används för att fylla i tidrapportens rubrikdetaljer i mobilappen. Den tar en TSTimesheetTable-post som en parameter. Fält från den posten kan användas för att fylla i det anpassade fältvärdet i appen. I följande exempel läses inga värden från databasen. I stället används X++-logik för att generera ett beräknat värde som sedan visas i appen.
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

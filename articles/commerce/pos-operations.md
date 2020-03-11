@@ -3,7 +3,7 @@ title: Verksamhet för online- och offlinekassor (POS)
 description: Det här avsnittet innehåller information om kassaoperation i Dynamics 365 Commerce. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge.
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bf67c53ffd5bd530f484b60da604fd9338c964fd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024120"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081349"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
@@ -51,7 +51,9 @@ Följande kolumner anger var operationerna kan startas:
 | 135 | Lägg till anknytning från lista | Lägg till en anknytning till en transaktion i en lista. | Ja | Ja | Ja | Ja | Nr |
 | 137 | Välj en anknytning till en kund | Lägg till en anknytning till en kund på sidan **kunduppgifter**. | Nr | Nr | Nr | Ja | Nr |
 | 138 | Ta bort anknytning från kund | Ta bort en anknytning på sidan **kunduppgifter**. | Nr | Nr | Nr | Ja | Nr |
-| 643 | Lägg till kupongkod | Lägg till en kupong genom att ange dess kod i kassan. | Ja | Ja | Nr | Ja | Nr |
+| 643 | Lägg till kupongkod | Lägg till en kupong genom att ange dess kod i kassan. | Ja | Ja | Nej | Ja | Nej |
+| 141 | Lägg till huvudavgifter | Lägg till en tilläggsavgift i orderrubriken. | Ja | Ja | Nej | Nej| Nej |
+| 141 | Lägg till radavgifter | Lägga till en tilläggsavgift till en vald försäljningsrad. | Ja | Ja | Nej | Nej| Nej |
 | 117 | Lägg till förmånskort | Uppmana användaren att ange ett förmånskortnummer som ska läggas till den aktuella transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 136 | Lägg till serienummer | Den här operationen låter användaren ange ett serienummer för den aktuella produkten. | Ja | Ja | Nr | Ja | Nr |
 | 1214 | Lägg till leveransadress | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
@@ -63,7 +65,8 @@ Följande kolumner anger var operationerna kan startas:
 | 1053 | Stäng skift dolt | Ange den aktuella övergången till skift som har stängts dolt och användaren loggar ut. Ett skift som har stängts dolt är stängt för ytterligare transaktioner, men är fortfarande öppet för kassaoperationer såsom borttagning av betalningsmedel och kassaavstämning. | Ja | Ja | Ja | Nr | Nr |
 | 310 | Beräkna summa | När beräkningen är försenad initierar operationen åtgärden beräkningen för den aktuella transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 642 | Utför alla produkter | Ange leveranssätt för alla rader till **Utför**. | Ja | Ja | Nr | Ja\* | Nr |
-| 641 | Utför alla valda produkter | Ange leveranssätt för valda rader till **Utför**. | Ja | Ja | Nr | Ja\* | Nr |
+| 641 | Utför alla valda produkter | Ange leveranssätt för valda rader till **Utför**. | Ja | Ja | Nej | Ja\* | Nej |
+| 647 | Ändra leveranssätt | Ändra leveranssättet för förkonfigurerade försäljningsrader. | Ja | Ja | Nej | Nej| Nej |
 | 1215 | Ändra lösenord | Denna operation låter kassaanvändaren ändra sitt lösenord. | Ja | Ja | Ja | Nr | Nr |
 | 123 | Ändra måttenhet | Ändra måttenheten för den valda radartikeln. | Ja | Ja | Nr | Ja | Nr |
 | 639 | Rensa standardförsäljningsrepresentant på transaktion | Ta bort provisionssäljgruppen (säljare) från transaktionen. | Ja | Ja | Nr | Ja | Nr |
@@ -99,7 +102,8 @@ Följande kolumner anger var operationerna kan startas:
 | 1201 | Växelpost | Den här operationen låter användaren lägga till ytterligare pengar i den aktuella kassalådan eller skift. | Ja | Ja | Ja | Ja | Nr |
 | 1218 | Tvinga upp lås av kringutrustning | Systemet använder denna operation internt för att låsa upp kringutrustning för kassa. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 520 | Presentkortssaldo | Visa presentkortssaldo. | Ja | Ja | Nr | Nr | Nr |
-| 708 | Inaktiv enhet | Inaktivera aktuell enhet så att den inte kan användas som ett kassaregister. | Nr | Nr | Nr | Nr | Nr |
+| 708 | Inaktiv enhet | Inaktivera aktuell enhet så att den inte kan användas som ett kassaregister. | Nej | Nej | Nej | Nej | Nej |
+| 804 | Inkommande åtgärd | Komma åt funktionerna för hantering av inkommande lager. | Ja | Nej | Ja | Nej| Nej |
 | 517 | Inkomstkonton | Registrera pengar, som sätts till kassalådan för en orsak annan än en försäljning. | Ja | Ja | Ja | Ja | Nr |
 | 801 | Lagersökning | Slå upp kvantiteter för disponibelt, på ordern, och disponibelt att lova (ATP) för den aktuella butiken och andra tillgängliga platser. | Ja | Ja | Ja | Nr | Nr |
 | 122 | Fakturakommentar | Den här operationen låter användaren skriva en kommentar om den aktuella transaktionen. | Ja | Ja | Nr | Ja | Nr |
@@ -110,11 +114,13 @@ Följande kolumner anger var operationerna kan startas:
 | 301 | Radrabatt i procent | Ange en rabatt i procent för en radartikel i transaktionen. Denna operation används endast för artiklar som kan ha rabatt och bara i de angivna rabattgränserna. | Ja | Ja | Nr | Ja | Nr |
 | 703 | Lås kassa | Lås det aktuella registret så att det inte kan användas, men logga inte ut den aktuella användaren. | Nr | Nr | Nr | Ja | Nr |
 | 701 | Logga ut | Logga ut den aktuella användaren från registret. | Ja | Ja | Ja | Ja | Nr |
-| 521 | Förmånskortspoäng saldo | Visa poängsaldot på det angivna bonuskortet. | Ja | Ja | Nr | Nr | Nr |
+| 521 | Förmånskortspoäng saldo | Visa poängsaldot på det angivna bonuskortet. | Ja | Ja | Nej | Nej | Nej |
+| 142 | Hantera avgifter | Visa och hantera tillägg som tillämpas på transaktionen. | Ja | Ja | Nej | Nej| Nej |
 | 918 | Hantera skift | Visa en lista över aktiva, uppskjutna och skift som har stängts dolt. | Ja | Ja | Ja | Nr | Nr |
 | 914 | Minimera kassafönstret | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 1000 | Öppna kassalåda | Utför en "ingen försäljning"-operation och öppna den valda kassalådan. | Ja | Ja | Ja | Ja | Nr |
-| 928 | Orderuppfyllelse | Den här åtgärden låter användare plocka, packa, skicka eller återkalla order för hämtade i butik. | Ja | Ja | Ja | Nr | Nr |
+| 928 | Orderuppfyllelse | Den här åtgärden låter användare plocka, packa, skicka eller återkalla order för hämtade i butik. | Ja | Ja | Ja | Nej | Nej |
+| 805 | Utgående åtgärder | Åtkomstfunktioner för hantering av försändelser av utgående överföringsorder. | Ja | Nej | Ja | Nej| Nej |
 | 129 | Åsidosätt radproduktskatt | Åsidosätt momsen på den valda radartikeln och använd en annan angiven skatt. | Ja | Ja | Nr | Ja | Nr |
 | 130 | Åsidosätt radproduktskatt från lista | Åsidosätt momsen på den valda radartikeln och använd en skatt som användaren väljer i en lista. | Ja | Ja | Nr | Ja | Nr |
 | 127 | Åsidosätt transaktionsskatt | Åsidosätt momsen på en transaktion med en annan angiven skatt. | Ja | Ja | Nr | Ja | Nr |
@@ -146,7 +152,8 @@ Följande kolumner anger var operationerna kan startas:
 | 100 | Produktförsäljning | Lägg till en specifierad produkt i transaktionen. | Ja | Ja | Ja | Ja | Nr |
 | 108 | Produktsökning | Denna operation låter användaren söka efter en produkt genom att navigera till produktsöksidan i kassan. | Ja | Ja | Ja | Ja | Nr |
 | 633 | Utgångsdatum för offert | Den här operationen låter användaren visa eller ändra förfallodatum för en försäljningsoffert. | Ja | Ja | Nr | Ja\* | Nr |
-| 627 | Beräkna om | Beräkna om alla kundorderrader och skatter, baserat på den aktuella konfigurationen. | Ja | Ja | Nr | Ja\* | Nr |
+| 627 | Beräkna om | Beräkna om alla kundorderrader och skatter, baserat på den aktuella konfigurationen. | Ja | Ja | Nej | Ja\* | Nej |
+| 143 | Räkna om avgifter | Beräkna om de automatiska avgifter som tillämpas på ordern. | Ja | Ja | Nej | Nej| Nej |
 | 515 | Återkalla order | Den här operationen låter användaren söka efter och återkalla kundorder och försäljningsofferter. | Ja | Ja | Ja | Nr | Nr |
 | 504 | Återkalla transaktion | Den här operationen låter användaren återkalla en tidigare uppskjuten transaktion från den aktuella butiken. | Ja | Ja | Nr | Ja‡ | Nr |
 | 305 | Utnyttja förmånspoäng | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Ja |

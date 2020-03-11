@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3f2616fd98b37576625d9586a1cda29ce1b89f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024114"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057497"
 ---
 # <a name="retail-sales-price-management"></a>Prishantering för Retail-försäljning
 
@@ -43,23 +43,23 @@ Följande termer används i detta avsnitt:
 
 ## <a name="price-groups"></a>Prisgrupper
 
-Prisgrupper är den centrala delen av pris- och rabatthanteringen i Handel. Prisgrupper används för att tilldela proser och rabatter till butiksenheter (dvs kanaler, kataloger, anknytningar och bonusprogram). Eftersom prisgrupper används för alla priser och rabatter, är det viktigt att du planerar hur du använder dem innan du börjar.
+Prisgrupper är den centrala delen av pris- och rabatthanteringen i Handel. Prisgrupper används för att tilldela priser och rabatter till handelsenheter (dvs kanaler, kataloger, anknytningar och bonusprogram). Eftersom prisgrupper används för alla priser och rabatter, är det viktigt att du planerar hur du använder dem innan du börjar.
 
-En prisgrupp är i sig bara ett namn, en beskrivning och eventuellt en prissättningsprioritet. Den viktigaste punkten att komma ihåg angående prisgrupper är att de används för att hantera många-till-många-relationer som rabatter och priser med butiksenheter.
+En prisgrupp är i sig bara ett namn, en beskrivning och eventuellt en prissättningsprioritet. Den viktigaste punkten att komma ihåg angående prisgrupper är att de används för att hantera många-till-många-relationer som rabatter och priser med handelsenheter.
 
-Följande bild visar hur prisgrupper används. I den här illustrationen observera att ”prisgrupp” är bokstavligen i centrum för prissättning och rabatthantering. Butiksenheterna som du kan använda för att hantera olika priser och rabatter finns till vänster, och de faktiska pris- och rabattposterna visas till höger.
+Följande bild visar hur prisgrupper används. I den här illustrationen observera att ”prisgrupp” är bokstavligen i centrum för prissättning och rabatthantering. Handelsenheterna som du kan använda för att hantera olika priser och rabatter finns till vänster, och de faktiska pris- och rabattposterna visas till höger.
 
 ![Prisgrupper](./media/PriceGroups.png "Prisgrupper")
 
-När du skapar prisgrupper bör du inte använda en enda prisgrupp för flera typer av butiksenheter. I annat fall kan det vara svårt att avgöra varför ett särskilt pris eller en rabatt används i en transaktion.
+När du skapar prisgrupper bör du inte använda en enda prisgrupp för flera typer av handelsenheter. I annat fall kan det vara svårt att avgöra varför ett särskilt pris eller en rabatt används i en transaktion.
 
 När en röd streckad linje i bilden visas ger Handel inte stöd för huvudfunktionerna i Microsoft Dynamics 365 för en prisgrupp som anges direkt på en kund. I detta fall får du endast handelsavtal för försäljningspris. Om du vill använda kundspecifika priser rekommenderar vi att du inte anger prisgrupper direkt på kunden. Du bör i stället använda anknytningar.
 
-Följande avsnitt innehåller mer information om de butiksenheter som du kan använda när du vill ställa in olika priser när prisgrupperna används. Konfigurationen av priser och rabatter för dessa enheter är en tvåstegsprocess. Dessa steg kan göras i vilken ordning som helst. Den logiska ordningen är emellertid att först ange prisgrupperna för entiteterna eftersom det här steget är engångsinställningar som görs under genomförandet. Därefter när priser och rabatter skapas kan du ange prisgrupperna för dessa priser och rabatter separat.
+Följande avsnitt innehåller mer information om de handelsenheter som du kan använda när du vill ställa in olika priser när prisgrupperna används. Konfigurationen av priser och rabatter för dessa enheter är en tvåstegsprocess. Dessa steg kan göras i vilken ordning som helst. Den logiska ordningen är emellertid att först ange prisgrupperna för entiteterna eftersom det här steget är engångsinställningar som görs under genomförandet. Därefter när priser och rabatter skapas kan du ange prisgrupperna för dessa priser och rabatter separat.
 
 ### <a name="channels"></a>Kanaler
 
-Inom detaljhandel är det mycket vanligt att det finns olika priser i olika kanaler. Två andra faktorer som påverkar kanalspecifika priser är kostnader och lokala marknadsvillkor.
+Inom handel är det mycket vanligt att det finns olika priser i olika kanaler. Två andra faktorer som påverkar kanalspecifika priser är kostnader och lokala marknadsvillkor.
 
 - **Kostnader** – Ju längre bort en kanal är från produktkällan, desto mer kostar det att lagra en produkt. Färska produkter har exempelvis en begränsad hållbarhetstid och särskilda krav på produktionen (exempelvis växtsäsong). På vintern kostar färsk sallat sannolikt mer i norra klimat än i södra klimat. Om du anger priser för kanaler över ett stort geografiskt område vill du förmodligen ange olika priser i olika kanaler.
 - **Lokala marknadsvillkor** – En butik som har en direkt konkurrent över gatan blir mycket mer priskänslig än en butik som inte har en direkt konkurrent i närheten.
@@ -84,7 +84,7 @@ Vissa återförsäljare använder fysiska eller virtuella kataloger för att mar
 
 ### <a name="best-practices-for-price-groups"></a>Metodtips för prisgrupper
 
-Använd inte en prisgrupp för flera typer av butiksenheter. I stället använder du en uppsättning prisgrupper för kanaler, en annan uppsättning prisgrupper för anknytningar eller bonusprogram, osv. Du kan använda ett prefix eller suffix i namnet på prisgruppen för att gruppera de olika typerna av prisgrupper som du använder.
+Använd inte en prisgrupp för flera typer av enheter. I stället använder du en uppsättning prisgrupper för kanaler, en annan uppsättning prisgrupper för anknytningar eller bonusprogram, osv. Du kan använda ett prefix eller suffix i namnet på prisgruppen för att gruppera de olika typerna av prisgrupper som du använder.
 
 Undvik att ange prisgrupper direkt på en kund. Använd i stället en anknytning. På så sätt kan du tilldela alla typer av priser och rabatter till kunder, inte bara handelsavtal med försäljningspriser.
 
@@ -98,7 +98,7 @@ Om du vill använda prissättningsprioritet för priser måste du tilldela en pr
 
 Funktionen prissättningsprioritet infördes så att den stöder ett scenario där en återförsäljare vill tillämpa högre priser i en viss uppsättning butiker. En återförsäljare har t.ex. definierat nationella priser för ostkusten, men vill ha högre priser för vissa produkter i New York-butiker eftersom det kostar mer sälja vissa produkter på orten och/eller eftersom den lokala marknaden kommer att utgöra ett högre pris.
 
-Som beskrivs i avsnittet ”bästa pris” i det här avsnittet, väljer butiksprissättningsmotorn vanligtvis det lägre av två priser. Därför förhindras återförsäljaren vanligen från att använda det högre av två priser i en butik som har både ostkust och New York-prisgrupper. För att lösa problemet innan funktionen prissättningsprioritet infördes, behövde återförsäljaren definiera priser för varje produkt två gånger och inte tilldela båda prisgrupper. Alternativt kan återförsäljaren var tvungen att skapa extra prisgrupper för att isolera de produkter som har högre priser från produkter som har normala, lägre priser.
+Som beskrivs i avsnittet ”bästa pris” i det här avsnittet, väljer prissättningsmotorn vanligtvis det lägre av två priser. Därför förhindras återförsäljaren vanligen från att använda det högre av två priser i en butik som har både ostkust och New York-prisgrupper. För att lösa problemet innan funktionen prissättningsprioritet infördes, behövde återförsäljaren definiera priser för varje produkt två gånger och inte tilldela båda prisgrupper. Alternativt kan återförsäljaren var tvungen att skapa extra prisgrupper för att isolera de produkter som har högre priser från produkter som har normala, lägre priser.
 
 Funktionen prissättningsprioritet kan dock skapa prisprioritet för butikspriser som är högre än prisprioritet för nationella priser. Återförsäljaren kan även skapa prisprioritet för butikspriser och lämna nationella priser vid prissättningsprioritet 0 (noll) som standard. Båda inställningar garanterar att butikspriser alltid används innan nationella priser.
 
@@ -142,7 +142,7 @@ Den enklaste platsen att ange priset för en produkt är direkt på produkten. D
 
 Om en produkt har ett pris för alla ger grundpriset det mest effektiva sättet att hantera priset på produkten. Även om du använder handelsavtal för att ange priser kan du också ange grundpriset på en produkt. Om du inte använder en handelsavtal **alla** har du ett reservpriset som används när inga handelsavtal gäller.
 
-Om en butikskanals valuta skiljer sig från företagsvalutan, bestäms grundpriset i denna kanal med hjälp av valutakonvertering på priset som har angetts för produkten.
+Om en kanals valuta skiljer sig från företagsvalutan, bestäms grundpriset i denna kanal med hjälp av valutakonvertering på priset som har angetts för produkten.
 
 Även om prisenheten inte är vanligt scenario ger prissättningsmotorn stöd för den. Om prisenheten har tilldelats ett värde annat än **0** (noll), är pris per enhet lika med pris/prisenhet. Om priset på en produkt är $10,00 och prisenheten är 50, är priset för kvantiteten 1 $0,20 (= $10,00/50).
 
@@ -150,9 +150,9 @@ Om en butikskanals valuta skiljer sig från företagsvalutan, bestäms grundpris
 
 Du kan skapa handelsavtal för varje produkt genom att använda handelsavtalsjournalen. I Microsoft Dynamics 365 finns tre kundomfattningar för handelsavtal för försäljningspris: **tabell**, **grupp** och **alla**. Kundens omfattning bestämmer kunder som ges ett visst handelsavtal för försäljningspris.
 
-Ett handelsavtal för försäljningspris **Tabell** är för en kund som anges direkt i handelsavtalet. Detta scenario är inte ett vanligt B2C-scenario för butik. Om detta uppstår kommer prissättningsmotorn att använda handelsavtal **tabell** för att fastställa priset.
+Ett handelsavtal för försäljningspris **Tabell** är för en kund som anges direkt i handelsavtalet. Detta scenario är inte ett vanligt B2C-scenario. Om detta uppstår kommer prissättningsmotorn att använda handelsavtal **tabell** för att fastställa priset.
 
-Ett handelsavtal för prissättningen **grupp** är den typ som används oftast med butik. Utanför handel är handelsavtal för prissättningen **grupp** för en enkel kundgrupp. Men i Handel har begreppet kundgrupp utökats så att det är en mer allmän prisgrupp. En prisgrupp kan länkas till en kanal, anknytning, bonusprogram eller katalog. Detaljerad information om grupper finns i avsnittet ”prisgrupper” tidigare i det här avsnittet.
+Ett handelsavtal för prissättningen **grupp** är den typ som används oftast. Utanför handel är handelsavtal för prissättningen **grupp** för en enkel kundgrupp. Men i Handel har begreppet kundgrupp utökats så att det är en mer allmän prisgrupp. En prisgrupp kan länkas till en kanal, anknytning, bonusprogram eller katalog. Detaljerad information om grupper finns i avsnittet ”prisgrupper” tidigare i det här avsnittet.
 
 > [!NOTE]
 > Ett pris för handelsavtalet används alltid före grundpris.
@@ -211,7 +211,7 @@ Microsoft SQL Server Express används ofta för kanaldatabaser på grund av kost
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Priser som omfattar skatt jämfört med priser exklusive skatt
 
-När du anger försäljningspriser i Dynamics 365, anger du inte om prisvärdet du anger inkluderar eller exkluderar skatt. Värdet är bara priset. Men inställningen **Pris inkluderar moms** på butikskanaler låter dig konfigurera kanaler så att de inkluderar eller exkluderar skatt från priser. Inställningen är inställd på kanalen och ändra även i ett enskilt företag.
+När du anger försäljningspriser i Dynamics 365, anger du inte om prisvärdet du anger inkluderar eller exkluderar skatt. Värdet är bara priset. Men inställningen **Pris inkluderar moms** på kanaler låter dig konfigurera kanaler så att de inkluderar eller exkluderar skatt från priser. Inställningen är inställd på kanalen och ändra även i ett enskilt företag.
 
 Om du arbetar med både inkluderad och exkluderad skatt är det viktigt att du har korrekt inställda priser, eftersom totalbeloppet som kunden betalar ändras om inställningen **Pris inkluderar moms** ändras för kanalen.
 
@@ -219,15 +219,15 @@ Om du arbetar med både inkluderad och exkluderad skatt är det viktigt att du h
 
 En enda prissättningsmotor används för att beräkna priserna i alla kanaler: kundtjänst, butiker och onlinebutiker. Detta bidrar till att möjliggöra de enhetliga handelsscenarierna.
 
-Butiksprissättning fungerar med butiksenheter istället för icke-butiksenheter. Särskilt utformad för att ställa in priser per butik, inte per lagerställe.
+Prissättning fungerar med butiksenheter istället för icke-butiksenheter. Särskilt utformad för att ställa in priser per butik, inte per lagerställe.
 
-Butiksprissättningsmotorn **stöder inte** följande prissättningsfunktioner:
+Prissättningsmotorn **stöder inte** följande prissättningsfunktioner:
 
-- Det går inte att ange priser efter plats eller plats och lagringsdimensioner för lagerställe. Om du bara anger platsdimensionen på handelsavtalen ignoreras webbplatsen av butiksprissättningen och handelsavtalet tillämpas på alla webbplatser. Om du anger både webbplats och lagerställe är beteendet odefinierat/oprövat eftersom det förväntas att återförsäljare använder butikspris grupperna för att kontrollera priserna för varje butik/lagerställe.
+- Det går inte att ange priser efter plats eller plats och lagringsdimensioner för lagerställe. Om du bara anger platsdimensionen på handelsavtalen ignoreras webbplatsen av prissättningsmotorn och handelsavtalet tillämpas på alla webbplatser. Om du anger både webbplats och lagerställe är beteendet odefinierat/oprövat eftersom det förväntas att återförsäljare använder butikspris grupperna för att kontrollera priserna för varje butik/lagerställe.
 - Attributbaserad prissättning stöds inte.
 - Leverantörsrabattens genomströmning stöds inte.
 
-Dessutom, **endast** butiksprissättningsmotorn stöder följande prissättningsfunktioner:
+Dessutom, **endast** prissättningsmotorn stöder följande prissättningsfunktioner:
 
 - Priset baseras på produktdimensioner i ordning från de mest specifika variantpriset till det minst specifika variantpriset till produktmallpriset. Ett pris som anges med två produktdimensioner (till exempel färg och storlek) används innan ett pris som anges med hjälp av en enda produktdimensionen (exempelvis storlek).
 - Samma prisgrupp kan användas för att kontrollera priser och rabatter.

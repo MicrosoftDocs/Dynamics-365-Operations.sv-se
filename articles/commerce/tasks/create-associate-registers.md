@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ac5135d0606ffc9816c841637aa032826f87e28
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024070"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057192"
 ---
 # <a name="create-and-associate-registers"></a> Skapa och associera register
 
@@ -30,7 +30,7 @@ ms.locfileid: "3024070"
 
 I den här proceduren visas hur du skapar ett kassaregister (POS). I den här proceduren används demonstrationsdataföretaget USRT.
 
-1. Gå till butik och handel > kanalinställning > POS inställning > register.
+1. Gå till Butik och handel > kanalinställning > POS inställning > register.
 2. Klicka på Ny.
 3. Skriv ett ID för den nya kassan i fältet Kassanummer.
     * Register-ID:t innehåller vanligtvis koder som gör det enklare att mappa registret till butiken som det tillhör och platsen i butiken.  

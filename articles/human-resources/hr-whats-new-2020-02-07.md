@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: c6ca9877eb172794c67ac55b8dc54ed28af9576d
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029967"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076280"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (7 februari 2020)
 
@@ -68,5 +68,11 @@ En ny Common Data Service-lösning kommer snart att vara tillgänglig med följa
 | Inställningsenheter för ny variabelkompensation | **Typ av variabel kompensationsplan**</br>**Variabel kompensationsplan**</br>**Överlåtelseregler**</br>**Variabel kompensationsplannivå** |
 | Ny enhet för **Arbetarkalender anställning** | **Enheten arbetskalender** tillagd |
 | Ny enhet för **lönepositionsuppgift** | **Lönepositionsuppgift** tillagd |
-| Ny enhet för **Rubrik** | **Rubrik** tillagd. Enhet **Rubrik** tas med i synkroniseringsprocessen mellan Personal och Common Data Service, men kommer inte att refereras till från enheten **Jobbefattning** eller **Jobb**. |
+| Ny enhet för **Rubrik** | **Rubrik** tillagd. Den nya entiteten **Rubrik** kommer att inkluderas i synkroniseringsprocessen mellan personal och Common Data Service. Den kommer då inte från **Jobbefattning** eller **Jobb** enheter. |
 
+## <a name="see-also"></a>Se även
+
+[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Uppdatera process](hr-admin-setup-update-process.md)</br>
+[Hantera funktioner](hr-admin-manage-features.md)
