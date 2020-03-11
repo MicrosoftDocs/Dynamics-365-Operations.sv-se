@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d42afcf97690351763138fd9e16265aa104a6bc4
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 7813b0c6002e47aef6a8c119c72728a49584401b
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915750"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041248"
 ---
-# <span data-ttu-id="83074-103"><a name="CHAR">CHAR ER-funktion</a></span><span class="sxs-lookup"><span data-stu-id="83074-103"><a name="CHAR">CHAR ER function</a></span></span>
+# <span data-ttu-id="d8713-103"><a name="CHAR">CHAR ER-funktion</a></span><span class="sxs-lookup"><span data-stu-id="d8713-103"><a name="CHAR">CHAR ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="83074-104">`CHAR`-funktionen returnerar ett *sträng*-värde som visar ett enstaka tecken som refereras av det angivna Unicode-numret.</span><span class="sxs-lookup"><span data-stu-id="83074-104">The `CHAR` function returns a *String* value that presents a single character that is referenced by the specified Unicode number.</span></span>
+<span data-ttu-id="d8713-104">`CHAR`-funktionen returnerar ett *sträng*-värde som visar ett enstaka tecken som refereras av det angivna Unicode-numret.</span><span class="sxs-lookup"><span data-stu-id="d8713-104">The `CHAR` function returns a *String* value that presents a single character that is referenced by the specified Unicode number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="83074-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="83074-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d8713-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d8713-105">Syntax</span></span>
 
-```
+```vb
 CHAR (number)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="83074-106">Argument</span><span class="sxs-lookup"><span data-stu-id="83074-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="d8713-106">Argument</span><span class="sxs-lookup"><span data-stu-id="d8713-106">Arguments</span></span>
 
-<span data-ttu-id="83074-107">`number`: *Heltal*</span><span class="sxs-lookup"><span data-stu-id="83074-107">`number`: *Integer*</span></span>
+<span data-ttu-id="d8713-107">`number`: *Heltal*</span><span class="sxs-lookup"><span data-stu-id="d8713-107">`number`: *Integer*</span></span>
 
-<span data-ttu-id="83074-108">Ett tal som motsvarar ett förväntat enstaka tecken.</span><span class="sxs-lookup"><span data-stu-id="83074-108">A number that corresponds to an expected single character.</span></span>
+<span data-ttu-id="d8713-108">Ett tal som motsvarar ett förväntat enstaka tecken.</span><span class="sxs-lookup"><span data-stu-id="d8713-108">A number that corresponds to an expected single character.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="83074-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="83074-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="d8713-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="d8713-109">Return values</span></span>
 
-<span data-ttu-id="83074-110">*Sträng*</span><span class="sxs-lookup"><span data-stu-id="83074-110">*String*</span></span>
+<span data-ttu-id="d8713-110">*Sträng*</span><span class="sxs-lookup"><span data-stu-id="d8713-110">*String*</span></span>
 
-<span data-ttu-id="83074-111">Det resulterande textvärdet.</span><span class="sxs-lookup"><span data-stu-id="83074-111">The resulting text value.</span></span>
+<span data-ttu-id="d8713-111">Det resulterande textvärdet.</span><span class="sxs-lookup"><span data-stu-id="d8713-111">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="83074-112">Användningsanteckningar</span><span class="sxs-lookup"><span data-stu-id="83074-112">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="d8713-112">Användningsanteckningar</span><span class="sxs-lookup"><span data-stu-id="d8713-112">Usage notes</span></span>
 
-<span data-ttu-id="83074-113">Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet **FILE**.</span><span class="sxs-lookup"><span data-stu-id="83074-113">The string that this function returns depends on the encoding that is selected in the parent **FILE** format element.</span></span> <span data-ttu-id="83074-114">För listan över vilka koder som stöds se [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="83074-114">For a list of the supported encodings, see [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span></span>
+<span data-ttu-id="d8713-113">Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet **FILE**.</span><span class="sxs-lookup"><span data-stu-id="d8713-113">The string that this function returns depends on the encoding that is selected in the parent **FILE** format element.</span></span> <span data-ttu-id="d8713-114">För listan över vilka koder som stöds se [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span><span class="sxs-lookup"><span data-stu-id="d8713-114">For a list of the supported encodings, see [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).</span></span>
 
-## <a name="example"></a><span data-ttu-id="83074-115">Exempel</span><span class="sxs-lookup"><span data-stu-id="83074-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d8713-115">Exempel</span><span class="sxs-lookup"><span data-stu-id="d8713-115">Example</span></span>
 
-<span data-ttu-id="83074-116">`CHAR (255)` returnerar **"ÿ"**.</span><span class="sxs-lookup"><span data-stu-id="83074-116">`CHAR (255)` returns **"ÿ"**.</span></span>
+<span data-ttu-id="d8713-116">`CHAR (255)` returnerar **"ÿ"**.</span><span class="sxs-lookup"><span data-stu-id="d8713-116">`CHAR (255)` returns **"ÿ"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="83074-117">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="83074-117">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="d8713-117">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="d8713-117">Additional resources</span></span>
 
-[<span data-ttu-id="83074-118">Textfunktioner</span><span class="sxs-lookup"><span data-stu-id="83074-118">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="d8713-118">Textfunktioner</span><span class="sxs-lookup"><span data-stu-id="d8713-118">Text functions</span></span>](er-functions-category-text.md)

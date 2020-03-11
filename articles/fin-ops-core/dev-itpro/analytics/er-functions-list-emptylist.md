@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a60bc948ff6223b6e3acccd0ba40bf64f238aac2
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 5fb991eb9ee08aeb418313eb782dbde7fa22b763
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917406"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042192"
 ---
-# <span data-ttu-id="56484-103"><a name="EMPTYLIST">Funktionen EMPTYLIST ER</a></span><span class="sxs-lookup"><span data-stu-id="56484-103"><a name="EMPTYLIST">EMPTYLIST ER function</a></span></span>
+# <span data-ttu-id="fe98a-103"><a name="EMPTYLIST">Funktionen EMPTYLIST ER</a></span><span class="sxs-lookup"><span data-stu-id="fe98a-103"><a name="EMPTYLIST">EMPTYLIST ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="56484-104">`EMPTYLIST`-funktionen returnerar en tomt värde för *Postlista* genom att använda den definierade en lista som källa för liststrukturen.</span><span class="sxs-lookup"><span data-stu-id="56484-104">The `EMPTYLIST` function returns an empty *Record list* value by using the specified list as a source for the list structure.</span></span>
+<span data-ttu-id="fe98a-104">`EMPTYLIST`-funktionen returnerar en tomt värde för *Postlista* genom att använda den definierade en lista som källa för liststrukturen.</span><span class="sxs-lookup"><span data-stu-id="fe98a-104">The `EMPTYLIST` function returns an empty *Record list* value by using the specified list as a source for the list structure.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="56484-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="56484-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fe98a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="fe98a-105">Syntax</span></span>
 
-```
+```vb
 EMPTYLIST (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="56484-106">Argument</span><span class="sxs-lookup"><span data-stu-id="56484-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="fe98a-106">Argument</span><span class="sxs-lookup"><span data-stu-id="fe98a-106">Arguments</span></span>
 
-<span data-ttu-id="56484-107">`list`: *Post-lista*</span><span class="sxs-lookup"><span data-stu-id="56484-107">`list`: *Record list*</span></span>
+<span data-ttu-id="fe98a-107">`list`: *Post-lista*</span><span class="sxs-lookup"><span data-stu-id="fe98a-107">`list`: *Record list*</span></span>
 
-<span data-ttu-id="56484-108">Den giltiga sökvägen av en datakälla för datatypen *Postlista*.</span><span class="sxs-lookup"><span data-stu-id="56484-108">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="fe98a-108">Den giltiga sökvägen av en datakälla för datatypen *Postlista*.</span><span class="sxs-lookup"><span data-stu-id="fe98a-108">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="56484-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="56484-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="fe98a-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="fe98a-109">Return values</span></span>
 
-<span data-ttu-id="56484-110">*Post-lista*</span><span class="sxs-lookup"><span data-stu-id="56484-110">*Record list*</span></span>
+<span data-ttu-id="fe98a-110">*Post-lista*</span><span class="sxs-lookup"><span data-stu-id="fe98a-110">*Record list*</span></span>
 
-<span data-ttu-id="56484-111">Den resulterande listan med poster.</span><span class="sxs-lookup"><span data-stu-id="56484-111">The resulting list of records.</span></span>
+<span data-ttu-id="fe98a-111">Den resulterande listan med poster.</span><span class="sxs-lookup"><span data-stu-id="fe98a-111">The resulting list of records.</span></span>
 
-## <a name="example"></a><span data-ttu-id="56484-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="56484-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fe98a-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="fe98a-112">Example</span></span>
 
-<span data-ttu-id="56484-113">`EMPTYLIST (SPLIT ("abc", 1))` returnerar en ny tom lista som har samma struktur som listan som returneras från `SPLIT`-funktionen som används.</span><span class="sxs-lookup"><span data-stu-id="56484-113">`EMPTYLIST (SPLIT ("abc", 1))` returns a new empty list that has the same structure as the list that is returned by the `SPLIT` function that is used.</span></span>
+<span data-ttu-id="fe98a-113">`EMPTYLIST (SPLIT ("abc", 1))` returnerar en ny tom lista som har samma struktur som listan som returneras från `SPLIT`-funktionen som används.</span><span class="sxs-lookup"><span data-stu-id="fe98a-113">`EMPTYLIST (SPLIT ("abc", 1))` returns a new empty list that has the same structure as the list that is returned by the `SPLIT` function that is used.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="56484-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="56484-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="fe98a-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="fe98a-114">Additional resources</span></span>
 
-[<span data-ttu-id="56484-115">Lista över funktioner</span><span class="sxs-lookup"><span data-stu-id="56484-115">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="fe98a-115">Lista över funktioner</span><span class="sxs-lookup"><span data-stu-id="fe98a-115">List functions</span></span>](er-functions-category-list.md)

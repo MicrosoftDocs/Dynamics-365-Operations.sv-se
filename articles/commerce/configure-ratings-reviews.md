@@ -3,7 +3,7 @@ title: Konfigurera omdömen och recensioner
 description: I det här avsnittet beskrivs hur du konfigurerar din e-handelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,137 +17,81 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0aac4b680590a95f465d33950f2933c4a4582e54
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002207"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071576"
 ---
-# <a name="configure-ratings-and-reviews"></a><span data-ttu-id="78525-103">Konfigurera omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="78525-103">Configure ratings and reviews</span></span>
-
+# <a name="configure-ratings-and-reviews"></a><span data-ttu-id="42173-103">Konfigurera omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="42173-103">Configure ratings and reviews</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="78525-104">I det här avsnittet beskrivs hur du konfigurerar din e-handelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="78525-104">This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="42173-104">I det här avsnittet beskrivs hur du konfigurerar din e-handelsplats så att du kan visa kundomdömen och recensioner i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="42173-104">This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="78525-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="78525-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="42173-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="42173-105">Overview</span></span>
 
-<span data-ttu-id="78525-106">Omdömen och recensioner på webbplatser för näthandel hjälper kunder lära sig mer om produkter innan de fattar ett inköpsbeslut, genom att visa vad andra kunder tycker om dessa produkter.</span><span class="sxs-lookup"><span data-stu-id="78525-106">Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, by showing them what other customers think about those products.</span></span> <span data-ttu-id="78525-107">För näthandelsplatser är omdömen och recensioner också en mekanism för att samla in kundernas feedback om produkter.</span><span class="sxs-lookup"><span data-stu-id="78525-107">For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products.</span></span> 
+<span data-ttu-id="42173-106">Omdömen och recensioner på webbplatser för näthandel hjälper kunder lära sig mer om produkter innan de fattar ett inköpsbeslut, genom att visa vad andra kunder tycker om dessa produkter.</span><span class="sxs-lookup"><span data-stu-id="42173-106">Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision by showing them what other customers think about those products.</span></span> <span data-ttu-id="42173-107">För näthandelsplatser är omdömen och recensioner också en mekanism för att samla in kundernas feedback om produkter.</span><span class="sxs-lookup"><span data-stu-id="42173-107">For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products.</span></span> 
 
-<span data-ttu-id="78525-108">Omdömen visas på produktlistsidor, kategorilistsidor, sökresultatsidor och andra webbplatssidor.</span><span class="sxs-lookup"><span data-stu-id="78525-108">Ratings are shown on product list pages, category list pages, search results pages, and other site pages.</span></span> <span data-ttu-id="78525-109">Omdömeshistogram och produktrecensioner visas på produktinformationssidor (PDP).</span><span class="sxs-lookup"><span data-stu-id="78525-109">Ratings histograms and product reviews are shown on product details pages (PDPs).</span></span> <span data-ttu-id="78525-110">Knappen **Skriv ett omdöme** låter kunder skicka in omdömen och recensioner om en produkt.</span><span class="sxs-lookup"><span data-stu-id="78525-110">A **Write a review** button lets customers submit ratings and reviews for a product.</span></span>
+## <a name="configure-a-site-to-show-ratings-and-reviews"></a><span data-ttu-id="42173-108">Konfigurera en webbplats att visa omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="42173-108">Configure a site to show ratings and reviews</span></span>
 
-## <a name="ratings-and-reviews-modules-on-pdps"></a><span data-ttu-id="78525-111">Moduler för omdömen och recensioner på PDP</span><span class="sxs-lookup"><span data-stu-id="78525-111">Ratings and reviews modules on PDPs</span></span> 
+<span data-ttu-id="42173-109">Konfigurationsvärden för omdömen och recensioner, till exempel innehavar-ID, granska textlängd och granska rubriklängd, konfigureras på webbplatsnivå.</span><span class="sxs-lookup"><span data-stu-id="42173-109">Configuration values for ratings and reviews, such as the tenant ID, review text length, and review title length, are configured at the site level.</span></span> 
 
-<span data-ttu-id="78525-112">Tre moduler visar sammanfattningen av omdömen och recensioner i PDP:</span><span class="sxs-lookup"><span data-stu-id="78525-112">Three modules show the ratings and reviews summary on PDPs:</span></span>
+<span data-ttu-id="42173-110">Konfigurera en webbplats för visning av värderingar och recensioner enligt följande instruktioner.</span><span class="sxs-lookup"><span data-stu-id="42173-110">To configure a site to show ratings and reviews, follow these steps.</span></span> 
 
-- <span data-ttu-id="78525-113">Modulen skriv recension</span><span class="sxs-lookup"><span data-stu-id="78525-113">Write review module</span></span>
-- <span data-ttu-id="78525-114">Modulen produktrecensionslista</span><span class="sxs-lookup"><span data-stu-id="78525-114">Product reviews list module</span></span>
-- <span data-ttu-id="78525-115">Modul för omdömeshistogram</span><span class="sxs-lookup"><span data-stu-id="78525-115">Ratings histogram module</span></span>
- 
-<span data-ttu-id="78525-116">I bilden nedan visas hur modulerna omdömen och recensioner ser ut på ett PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-116">The following illustration shows what the ratings and reviews modules look like on a PDP.</span></span>
+1. <span data-ttu-id="42173-111">Gå till **Start \> Webbplatser**.</span><span class="sxs-lookup"><span data-stu-id="42173-111">Go to **Home \> Sites**.</span></span>
+1. <span data-ttu-id="42173-112">Välj namnet på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="42173-112">Select the name of your site.</span></span> 
+1. <span data-ttu-id="42173-113">Gå till **Webbplatsinställningar \> Tillägg**.</span><span class="sxs-lookup"><span data-stu-id="42173-113">Go to **Site settings \> Extensions**.</span></span> 
+1. <span data-ttu-id="42173-114">I fältet **granska textens maxlängd** anger du det maximala antalet tecken som ska granska text kan ha (t.ex. **1000**).</span><span class="sxs-lookup"><span data-stu-id="42173-114">In the **Review text max length** field, enter the maximum number of characters that review text can have (for example, **1000**).</span></span> 
+1. <span data-ttu-id="42173-115">I fältet **granska rubrikens maxlängd** anger du det maximala antalet tecken som ska granska rubriker kan ha (t.ex. **55**).</span><span class="sxs-lookup"><span data-stu-id="42173-115">In the **Review title max length** field, enter the maximum number of characters that review titles can have (for example, **55**).</span></span> 
+1. <span data-ttu-id="42173-116">Välj **Spara och publicera**.</span><span class="sxs-lookup"><span data-stu-id="42173-116">Select **Save and Publish**.</span></span> 
 
-![Moduler för omdömen och recensioner på en PDP](media/rnr-eCommerce-pdp-reviews-modules_design.png)
-
-> [!TIP] 
-> <span data-ttu-id="78525-118">Information om hur du optimerar mallar och layouter i PDP så att du kan dela med dig av konfigurationerna för omdömen och recensioner av moduler mellan flera PDP på din näthandelsplats finns på [Översikt över mallar och layouter](templates-layouts-overview.md).</span><span class="sxs-lookup"><span data-stu-id="78525-118">For information about how to optimize PDP templates and layouts so that you can share the configurations for ratings and reviews modules among multiple PDPs on your e-Commerce site, see [Templates and layouts overview](templates-layouts-overview.md).</span></span>
-
-<span data-ttu-id="78525-119">Följande illustration visar hur dialogrutan **Lägg till modul** presenterar moduler för omdömen och recensioner i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="78525-119">The following illustration shows how the **Add module** dialog box presents ratings and reviews modules in Dynamics 365 Commerce.</span></span>
-
-![Dialogrutan Lägg till modul](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
-
-### <a name="write-review-module"></a><span data-ttu-id="78525-121">Modulen skriv recension</span><span class="sxs-lookup"><span data-stu-id="78525-121">Write review module</span></span>
-
-<span data-ttu-id="78525-122">Modulen skriv recension inkluderar knappen **Skriv en recension**, där användarna kan logga in, tilldela ett omdöme och skriva en recension av en produkt.</span><span class="sxs-lookup"><span data-stu-id="78525-122">The write review module includes a **Write a review** button that lets users sign in, assign a rating, and write a review of a product.</span></span> <span data-ttu-id="78525-123">Med hjälp av modulen kan du också redigera ett omdöme eller granska de som tidigare har skickat in dem.</span><span class="sxs-lookup"><span data-stu-id="78525-123">This module also lets users edit a rating or review that they previously submitted.</span></span> <span data-ttu-id="78525-124">Den här modulen visas normalt ovanför modulerna omdömeshistogram och produktrecensioner i en PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-124">This module typically appears above the ratings histogram and product reviews list modules on a PDP.</span></span>
-
-<span data-ttu-id="78525-125">Bilden nedan visar dialog rutan **Skriv en recension** som visas när en kund väljer **skriva en recension**.</span><span class="sxs-lookup"><span data-stu-id="78525-125">The following illustration shows the **Write a review** dialog box that appears when a customer selects **Write a review**.</span></span> <span data-ttu-id="78525-126">Kunden kan använda den här dialogrutan för att skicka ett omdöme och en recension.</span><span class="sxs-lookup"><span data-stu-id="78525-126">The customer can use this dialog box to submit a rating and a review.</span></span>
-
-![Dialogrutan Skriv en recension](media/rnr-eCommerce-write-review-module.png)
-
-<span data-ttu-id="78525-128">I följande tabell visas den egenskap för modulen skriv recension som måste konfigureras i utvecklingsverktyget.</span><span class="sxs-lookup"><span data-stu-id="78525-128">The following table shows the write review module property that needs to be configured in the authoring tool.</span></span>
-
-| <span data-ttu-id="78525-129">Egenskapsnamn</span><span class="sxs-lookup"><span data-stu-id="78525-129">Property name</span></span> | <span data-ttu-id="78525-130">Värde</span><span class="sxs-lookup"><span data-stu-id="78525-130">Value</span></span>        | <span data-ttu-id="78525-131">Egenskapsbeskrivning</span><span class="sxs-lookup"><span data-stu-id="78525-131">Property description</span></span>                 |
-|---------------|--------------|--------------------------------------|
-| <span data-ttu-id="78525-132">Namn</span><span class="sxs-lookup"><span data-stu-id="78525-132">Name</span></span>          | <span data-ttu-id="78525-133">Skriv recension</span><span class="sxs-lookup"><span data-stu-id="78525-133">Write review</span></span> | <span data-ttu-id="78525-134">Namnet på modulen för skriv en recension.</span><span class="sxs-lookup"><span data-stu-id="78525-134">The name of the write review module.</span></span> |
-
-### <a name="ratings-histogram-module"></a><span data-ttu-id="78525-135">Modul för omdömeshistogram</span><span class="sxs-lookup"><span data-stu-id="78525-135">Ratings histogram module</span></span>
-
-<span data-ttu-id="78525-136">Modulen omdömeshistogram visar ett histogram med omdömet.</span><span class="sxs-lookup"><span data-stu-id="78525-136">The ratings histogram module shows a ratings histogram.</span></span> <span data-ttu-id="78525-137">Den här modulen visas normalt mellan modulen skriv recension och produktrecensionslistan på ett PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-137">This module typically appears between the write review module and the product reviews list module on a PDP.</span></span>
-
-<span data-ttu-id="78525-138">Modulen omdömeshistogram kräver ingen konfiguration.</span><span class="sxs-lookup"><span data-stu-id="78525-138">The ratings histogram module requires no configuration.</span></span> <span data-ttu-id="78525-139">Du behöver bara lägga till modulen i PDP-mallen.</span><span class="sxs-lookup"><span data-stu-id="78525-139">You just have to add the module in the PDP template.</span></span> 
-
-<span data-ttu-id="78525-140">Följande illustrationer visar hur en PDP-mall ser ut i Dynamics 365 Commerce när moduler för omdömen och recensioner konfigureras för visning på PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-140">The following illustrations shows what a PDP template looks like in Dynamics 365 Commerce when ratings and reviews modules are configured for display on PDPs.</span></span>
-
-![PDP-mall när omdömen och recensioner konfigureras för visning på PDP](media/rnr-eCommerce-pdp-reviews-modules.png)
-
-### <a name="product-reviews-list-module"></a><span data-ttu-id="78525-142">Modulen produktrecensionslista</span><span class="sxs-lookup"><span data-stu-id="78525-142">Product reviews list module</span></span>
-
-<span data-ttu-id="78525-143">I modulen produktrecensionslista visas en lista med produktrecensioner tillsammans med alternativen sortera, filtrera och sidbrytning.</span><span class="sxs-lookup"><span data-stu-id="78525-143">The product reviews list module shows a list of product reviews together with sort, filter, and pagination options.</span></span> <span data-ttu-id="78525-144">Den här modulen visas normalt efter modulen för omdömeshistogram på ett PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-144">This module typically appears after the ratings histogram module on a PDP.</span></span>
-
-<span data-ttu-id="78525-145">I följande tabell visas de egenskaper för modulen produktrecensionslista som måste konfigureras i utvecklingsverktyget.</span><span class="sxs-lookup"><span data-stu-id="78525-145">The following table shows the product reviews list module properties that need to be configured in the authoring tool.</span></span>
-
-| <span data-ttu-id="78525-146">Egenskapsnamn</span><span class="sxs-lookup"><span data-stu-id="78525-146">Property name</span></span>              | <span data-ttu-id="78525-147">Värde</span><span class="sxs-lookup"><span data-stu-id="78525-147">Value</span></span> | <span data-ttu-id="78525-148">Egenskapsbeskrivning</span><span class="sxs-lookup"><span data-stu-id="78525-148">Property description</span></span> |
-|----------------------------|-------| ---------------------|
-| <span data-ttu-id="78525-149">Recensioner som visas på varje sida</span><span class="sxs-lookup"><span data-stu-id="78525-149">Reviews shown on each page</span></span> | <span data-ttu-id="78525-150">10</span><span class="sxs-lookup"><span data-stu-id="78525-150">10</span></span>    | <span data-ttu-id="78525-151">Antalet recensioner som ska visas i taget på ett PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-151">The number of reviews that should be shown at a time on a PDP.</span></span> <span data-ttu-id="78525-152">Knapparna **Nästa** och **föregående** inkluderas så att användarna kan förflytta sig genom sidorna i recensioner.</span><span class="sxs-lookup"><span data-stu-id="78525-152">**Next** and **Previous** buttons are included, so that users can move through the pages of reviews.</span></span> |
-
-#### <a name="ratings-histogram--summary-view"></a><span data-ttu-id="78525-153">Omdömeshistogram – sammanfattningsvy</span><span class="sxs-lookup"><span data-stu-id="78525-153">Ratings histogram – Summary view</span></span>
-
-<span data-ttu-id="78525-154">Modulen produktrecensionslista innehåller en plats där du kan lägga till en modul för ett omdöme i histogram.</span><span class="sxs-lookup"><span data-stu-id="78525-154">The product reviews list module includes a slot where you can add a ratings histogram module.</span></span> <span data-ttu-id="78525-155">Följande illustration visar hur du kan lägga till en modul för omdömeshistogram i modulen produktrecensionslista i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="78525-155">The following illustration shows how you can add a ratings histogram module in the product reviews list module in Dynamics 365 Commerce.</span></span>
-
-![Lägga till modulen omdömeshistogram i modulen produktrecensionslista](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
-
-## <a name="configure-a-site-to-show-ratings-and-reviews"></a><span data-ttu-id="78525-157">Konfigurera en webbplats att visa omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="78525-157">Configure a site to show ratings and reviews</span></span>
-
-<span data-ttu-id="78525-158">Konfigurationsvärden för omdömen och recensioner, till exempel innehavar-ID, granska textlängd och granska rubriklängd, konfigureras på webbplatsnivå.</span><span class="sxs-lookup"><span data-stu-id="78525-158">Configuration values for ratings and reviews, such as the tenant ID, review text length, and review title length, are configured at the site level.</span></span> 
-
-<span data-ttu-id="78525-159">Konfigurera en webbplats för visning av värderingar och recensioner enligt följande instruktioner.</span><span class="sxs-lookup"><span data-stu-id="78525-159">To configure a site to show ratings and reviews, follow these steps.</span></span> 
-
-1. <span data-ttu-id="78525-160">Gå till **Start \> Webbplatser**.</span><span class="sxs-lookup"><span data-stu-id="78525-160">Go to **Home \> Sites**.</span></span>
-1. <span data-ttu-id="78525-161">Välj namnet på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="78525-161">Select the name of your site.</span></span> 
-1. <span data-ttu-id="78525-162">Gå till **Webbplatshantering \> Utbyggbarhet**.</span><span class="sxs-lookup"><span data-stu-id="78525-162">Go to **Site management \> Extensibility**.</span></span> 
-1. <span data-ttu-id="78525-163">I fältet **granska textens maxlängd** anger du det maximala antalet tecken som ska granska text kan ha (t.ex. **1000**).</span><span class="sxs-lookup"><span data-stu-id="78525-163">In the **Review Text Max Length** field, enter the maximum number of characters that review text can have (for example, **1000**).</span></span> 
-1. <span data-ttu-id="78525-164">I fältet **granska rubrikens maxlängd** anger du det maximala antalet tecken som ska granska rubriker kan ha (t.ex. **55**).</span><span class="sxs-lookup"><span data-stu-id="78525-164">In the **Review Title Max Length** field, enter the maximum number of characters that review titles can have (for example, **55**).</span></span> 
-1. <span data-ttu-id="78525-165">Välj **Spara och publicera**.</span><span class="sxs-lookup"><span data-stu-id="78525-165">Select **Save and Publish**.</span></span> 
-
-<span data-ttu-id="78525-166">Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="78525-166">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="42173-117">Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="42173-117">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
 
 ![Konfigurera en webbplats att visa omdömen och recensioner](media/rnr-eCommerce-site-appsettings.png)
 
-## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a><span data-ttu-id="78525-168">Länka en produktvärdering till avsnittet recensioner i ett PDP</span><span class="sxs-lookup"><span data-stu-id="78525-168">Link a product rating to the Reviews section of a PDP</span></span>
+## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a><span data-ttu-id="42173-119">Länka en produktvärdering till avsnittet recensioner i ett PDP</span><span class="sxs-lookup"><span data-stu-id="42173-119">Link a product rating to the Reviews section of a PDP</span></span>
 
-<span data-ttu-id="78525-169">En produktvärdering visas under produktrubriken högst upp i PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-169">A product rating is shown below the product title at the top of PDP.</span></span> <span data-ttu-id="78525-170">Produktvärderingen kan konfigureras så att den länkas till avsnittet **recensioner** i samma PDP.</span><span class="sxs-lookup"><span data-stu-id="78525-170">The product rating can be configured so that it's linked to the **Reviews** section of the same PDP.</span></span> 
+<span data-ttu-id="42173-120">En produktvärdering visas under produktrubriken högst upp i PDP.</span><span class="sxs-lookup"><span data-stu-id="42173-120">A product rating is shown below the product title at the top of PDP.</span></span> <span data-ttu-id="42173-121">Produktvärderingen kan konfigureras så att den länkas till avsnittet **recensioner** i samma PDP.</span><span class="sxs-lookup"><span data-stu-id="42173-121">The product rating can be configured so that it's linked to the **Reviews** section of the same PDP.</span></span> 
 
-<span data-ttu-id="78525-171">Om du vill länka en produktvärdering avsnittet **recensioner** i PDP följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="78525-171">To link a product rating to the **Reviews** section of the PDP, follow these steps.</span></span>
+<span data-ttu-id="42173-122">Om du vill länka en produktvärdering avsnittet **recensioner** i PDP följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="42173-122">To link a product rating to the **Reviews** section of the PDP, follow these steps.</span></span>
 
-1. <span data-ttu-id="78525-172">Öppna PDP-mallen.</span><span class="sxs-lookup"><span data-stu-id="78525-172">Open the PDP template.</span></span> 
-1. <span data-ttu-id="78525-173">Gå till **Inställningar för behållarmodulen inköpsruta**.</span><span class="sxs-lookup"><span data-stu-id="78525-173">Go to **Buy box container module settings**.</span></span>
-1. <span data-ttu-id="78525-174">Under **inköpsruta**, välj **produktvärderingar** och sedan väljer du kryssrutan **Länka klicka till modulen för fullständig recension**.</span><span class="sxs-lookup"><span data-stu-id="78525-174">Under **Buy box**, select **Product ratings**, and then select the **Link the click to full reviews module** check box.</span></span>
+1. <span data-ttu-id="42173-123">Öppna PDP-mallen.</span><span class="sxs-lookup"><span data-stu-id="42173-123">Open the PDP template.</span></span> 
+1. <span data-ttu-id="42173-124">Gå till **Inställningar för behållarmodulen inköpsruta**.</span><span class="sxs-lookup"><span data-stu-id="42173-124">Go to **Buy box container module settings**.</span></span>
+1. <span data-ttu-id="42173-125">Under **inköpsruta**, välj **produktvärderingar** och sedan väljer du kryssrutan **Länka klicka till modulen för fullständig recension**.</span><span class="sxs-lookup"><span data-stu-id="42173-125">Under **Buy box**, select **Product ratings**, and then select the **Link the click to full reviews module** check box.</span></span>
 
-<span data-ttu-id="78525-175">Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="78525-175">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="42173-126">Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="42173-126">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
 
 ![Länka en produktvärdering till avsnittet recensioner i ett PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
 
-## <a name="configure-the-link-for-the-privacy-and-policy-page"></a><span data-ttu-id="78525-177">Konfigurera länken till sidan sekretess och policy</span><span class="sxs-lookup"><span data-stu-id="78525-177">Configure the link for the privacy and policy page</span></span>
+## <a name="configure-the-link-for-the-privacy-and-policy-page"></a><span data-ttu-id="42173-128">Konfigurera länken till sidan sekretess och policy</span><span class="sxs-lookup"><span data-stu-id="42173-128">Configure the link for the privacy and policy page</span></span>
 
-<span data-ttu-id="78525-178">Konfigurera länken till sidan sekretess och policy genom att följa dessa steg.</span><span class="sxs-lookup"><span data-stu-id="78525-178">To configure the link for the privacy and policy page, follow these steps.</span></span>
+<span data-ttu-id="42173-129">Konfigurera länken till sidan sekretess och policy genom att följa dessa steg.</span><span class="sxs-lookup"><span data-stu-id="42173-129">To configure the link for the privacy and policy page, follow these steps.</span></span>
 
-1. <span data-ttu-id="78525-179">Gå till **Start \> Webbplatser**.</span><span class="sxs-lookup"><span data-stu-id="78525-179">Go to **Home \> Sites**.</span></span>
-1. <span data-ttu-id="78525-180">Välj namnet på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="78525-180">Select the name of your site.</span></span> 
-1. <span data-ttu-id="78525-181">Gå till **Webbplatshantering \> Utbyggbarhet**</span><span class="sxs-lookup"><span data-stu-id="78525-181">Go to **Site management \> Extensibility**</span></span>
-1. <span data-ttu-id="78525-182">På sidan **Flöden**, under **RNR sekretess och policy**, välj **Lägg till en länk**.</span><span class="sxs-lookup"><span data-stu-id="78525-182">On the **Routes** tab, under **RNR Privacy and Policy**, select **Add a link**.</span></span> <span data-ttu-id="78525-183">Om en länk redan har angivits och du vill ersätta den markerar du länken.</span><span class="sxs-lookup"><span data-stu-id="78525-183">If a link is already entered, and you want to replace it, select the link.</span></span> 
-1. <span data-ttu-id="78525-184">I dialogrutan **Lägg till en länk** väljer du länken för sidan om sekretess och policy och välj sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="78525-184">In the **Add a link** dialog box, select the link for the privacy and policy page, and then select **OK**.</span></span> 
-1. <span data-ttu-id="78525-185">Välj **Spara och publicera**.</span><span class="sxs-lookup"><span data-stu-id="78525-185">Select **Save and Publish**.</span></span> 
+1. <span data-ttu-id="42173-130">Gå till **Start \> Webbplatser**.</span><span class="sxs-lookup"><span data-stu-id="42173-130">Go to **Home \> Sites**.</span></span>
+1. <span data-ttu-id="42173-131">Välj namnet på webbplatsen.</span><span class="sxs-lookup"><span data-stu-id="42173-131">Select the name of your site.</span></span> 
+1. <span data-ttu-id="42173-132">Gå till **Webbplatsinställningar \> Tillägg**.</span><span class="sxs-lookup"><span data-stu-id="42173-132">Go to **Site settings \> Extensions**.</span></span>
+1. <span data-ttu-id="42173-133">På sidan **Flöden**, under **RNR sekretess och policy**, välj **Lägg till en länk**.</span><span class="sxs-lookup"><span data-stu-id="42173-133">On the **Routes** tab, under **RNR Privacy and Policy**, select **Add a link**.</span></span> <span data-ttu-id="42173-134">Om en länk redan har angivits och du vill ersätta den markerar du länken.</span><span class="sxs-lookup"><span data-stu-id="42173-134">If a link is already entered, and you want to replace it, select the link.</span></span> 
+1. <span data-ttu-id="42173-135">I dialogrutan **Lägg till en länk** väljer du länken för sidan om sekretess och policy och välj sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="42173-135">In the **Add a link** dialog box, select the link for the privacy and policy page, and then select **OK**.</span></span> 
+1. <span data-ttu-id="42173-136">Välj **Spara och publicera**.</span><span class="sxs-lookup"><span data-stu-id="42173-136">Select **Save and Publish**.</span></span> 
 
-<span data-ttu-id="78525-186">Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="78525-186">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="42173-137">Följande bild visar hur den här konfigurationen ser ut i Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="42173-137">The following illustration shows what this configuration looks like in Dynamics 365 Commerce.</span></span>
 
 ![Konfigurera länken till sidan sekretess och policy](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
-## <a name="additional-resources"></a><span data-ttu-id="78525-188">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="78525-188">Additional resources</span></span>
+## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a><span data-ttu-id="42173-139">Konfigurera klassificeringar och recensioner av moduler på produktinformationssidor</span><span class="sxs-lookup"><span data-stu-id="42173-139">Configure ratings and reviews modules on product details pages</span></span>
 
-[<span data-ttu-id="78525-189">Översikt över omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="78525-189">Ratings and reviews overview</span></span>](ratings-reviews-overview.md)
+<span data-ttu-id="42173-140">Information om hur du konfigurerar modulen värderingar och recensioner på produktinformationssidor finns [Moduler för omdömen och moduler](ratings-reviews-modules.md).</span><span class="sxs-lookup"><span data-stu-id="42173-140">For information on configuring ratings and reviews modules on product details pages, see [Ratings and reviews modules](ratings-reviews-modules.md).</span></span>
 
-[<span data-ttu-id="78525-190">Välj att använda omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="78525-190">Opt in to use ratings and reviews</span></span>](opt-in-ratings-reviews.md)
+## <a name="additional-resources"></a><span data-ttu-id="42173-141">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="42173-141">Additional resources</span></span>
 
-[<span data-ttu-id="78525-191">Hantera omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="78525-191">Manage ratings and reviews</span></span>](manage-reviews.md)
+[<span data-ttu-id="42173-142">Översikt över omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="42173-142">Ratings and reviews overview</span></span>](ratings-reviews-overview.md)
 
-[<span data-ttu-id="78525-192">Synkronisera produktklassificeringar i Dynamics 365 Retail</span><span class="sxs-lookup"><span data-stu-id="78525-192">Sync product ratings in Dynamics 365 Retail</span></span>](sync-product-ratings.md)
+[<span data-ttu-id="42173-143">Välj att använda omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="42173-143">Opt in to use ratings and reviews</span></span>](opt-in-ratings-reviews.md)
+
+[<span data-ttu-id="42173-144">Hantera omdömen och recensioner</span><span class="sxs-lookup"><span data-stu-id="42173-144">Manage ratings and reviews</span></span>](manage-reviews.md)
+
+[<span data-ttu-id="42173-145">Konfigurera klassificeringar och recensioner av moduler på produktinformationssidor</span><span class="sxs-lookup"><span data-stu-id="42173-145">Configure ratings and reviews modules on product details pages</span></span>](ratings-reviews-modules.md)
+
+[<span data-ttu-id="42173-146">Synkronisera produktklassificeringar i Dynamics 365 Retail</span><span class="sxs-lookup"><span data-stu-id="42173-146">Sync product ratings in Dynamics 365 Retail</span></span>](sync-product-ratings.md)
