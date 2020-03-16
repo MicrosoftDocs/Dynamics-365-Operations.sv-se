@@ -3,7 +3,7 @@ title: Annullera ett planeringsjobb
 description: I det här avsnittet beskrivs hur du avbryter ett aktivt planeringsjobb där funktionerna för planeringsoptimering används.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a2d90f04985fdd66ca83582ee676100fffb26981
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 18c5c7b8030fc6adbc548dab750e4f454aebc867
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774056"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076361"
 ---
+# <a name="cancel-a-planning-job"></a>Avbryta ett planeringsjobb
+
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-# <a name="cancel-a-planning-job"></a>Annullera ett planeringsjobb
+I Microsoft Dynamics 365 Supply Chain Management kan du avbryta ett aktivt planeringsjobb där funktionerna för planeringsoptimering används. När du väljer **Avbryt** i dialogrutan när ett planeringsoptimeringsjobb utlöses direkt från användargränssnittet (inte i bakgrunden) avbryts inte jobbet planeringsoptimering. Även om du får en varning om att "åtgärden har avbrutits", måste du ändå använda följande steg för att avbryta ett planeringsjobb med planeringsoptimering.
 
-I Microsoft Dynamics 365 Supply Chain Management kan du avbryta ett aktivt planeringsjobb där funktionerna för planeringsoptimering används.
 
-Om du vill avbryta ett aktivt planeringsjobb följer du stegen nedan.
+Om du vill avbryta ett aktivt planeringsjobb följer du stegen nedan. 
 
 > [!NOTE]
 > Endast aktiva jobb kan annulleras.
@@ -49,9 +50,9 @@ Jobbstatus kommer att vara **annullerar** tills planeringsoptimeringstjänsten b
 > [!NOTE]
 > Om du vill se statusändringar måste du uppdatera sidan genom att välja **uppdatera**.
 
-## <a name="related-resources"></a>Relaterade resurser
+## <a name="additional-resources"></a>Ytterligare resurser
 
-[Rådgivning om optimering – översikt](planning-optimization-overview.md)
+[Planeringsoptimering – översikt](planning-optimization-overview.md)
 
 [Kom igång med planeringsoptimering](get-started.md)
 

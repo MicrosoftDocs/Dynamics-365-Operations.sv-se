@@ -456,8 +456,6 @@
           items:
             - name: Skapa modeller och datamodellelement – översikt
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Riktlinjer för namngivning av tillägg
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
             - name: Inaktivera modellanpassning och avskrivningsfunktioner
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Rapport med anpassningsanalys

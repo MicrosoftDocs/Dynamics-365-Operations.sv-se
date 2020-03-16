@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026144"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042837"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER Använd dokumenthanteringsfiler i formatutmatningar (Del 1 - Förbered datamodellen)
 
@@ -36,10 +36,14 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Få åtkomst till listan med konfigurationer som tillhandahålls av Microsoft
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-    * Kontrollera att ”Litware Inc."-leverantören är tillgänglig och markerats som aktiv.  
+
+    Kontrollera att ”Litware Inc."-leverantören är tillgänglig och markerats som aktiv.  
+
 2. Välj Litware, Inc. leverantör.
 3. Klicka på Databaser.
-    * Om en databas av typen "Operations resources" redan finns, hoppa då över återstående steg för den aktuella underuppgiften.  
+
+    Om en databas av typen "Operations resources" redan finns, hoppa då över återstående steg för den aktuella underuppgiften.  
+
 4. Klicka på Lägg till för att öppna dialogrutan.
 5. Ange "Operations resources" i fältet Configuration repository type.
 6. Klicka på Skapa en databas.
@@ -51,9 +55,13 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 3. Klicka på Visa filter.
 4. Klicka på Öppna.
 5. Välj "Customer invoice model" i trädet.
-    * Välj modellkonfigurationen "Customer invoice model" för att importera den.  
+
+    Välj modellkonfigurationen "Customer invoice model" för att importera den.  
+
 6. Klicka på Importera.
-    * Klicka på Import for version 1 för den valda konfigurationen.  
+
+    Klicka på Import for version 1 för den valda konfigurationen.  
+
 7. Klicka på Ja.
 8. Stäng sidan.
 9. Stäng sidan.
@@ -65,6 +73,5 @@ Du kan skapa en egen konfiguration av kundfakturamodellen baserat på den konfig
 1. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
 2. Ange "Derive from Name: Customer invoice model, Microsoft" i fältet New.
 3. Ange "Customer invoice model (custom)" i namnfältet.
-    * Fakturamodell för kund (anpassad)  
 4. Klicka på Skapa konfiguration.
 

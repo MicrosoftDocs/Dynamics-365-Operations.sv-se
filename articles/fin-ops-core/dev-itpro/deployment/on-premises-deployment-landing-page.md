@@ -1,9 +1,9 @@
 ---
 title: Lokal distribution – startsida
 description: Det här avsnittet innehåller information och länkar till innehåll om lokal distribution.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
+ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770956"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3090599"
 ---
 # <a name="on-premises-deployment-home-page"></a>Lokal distribution – startsida
 
@@ -51,16 +51,16 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 - [Importera konfigurationer för (ER) elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Skapa, publicera och skriva ut dokument i lokala distributioner](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurera proxyservrar för lokala miljöer](onprem-reverseproxy.md)
-- [Konfigurera teknisk support för Finance and Operations-appar](../lifecycle-services/support-experience.md)
+- [Ställa in teknisk support för Finance and Operations-appar](../lifecycle-services/support-experience.md)
 - [Internetanslutning för klient](../user-interface/client-disconnected.md)
 - [Uppdatera lokala distributioner](apply-updates-on-premises.md)
 - [Omdistribuera lokala miljöer](redeploy-on-prem.md)
 
-## <a name="retail"></a>Retail
-- [Retail-funktionerna som finns i lokala distributioner](../../../retail/retail-onprem.md)
+## <a name="commerce"></a>Commerce
+- [Commerce-funktioner som finns i lokala distributioner](../../../retail/retail-onprem.md)
 - [Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö](deploy-retail-onprem.md)
-- [Konfigurera, installera och aktivera Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [Konfigurera och installera Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Konfigurera, installera och aktivera Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
+- [Konfigurera och installera Commerce Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Uppgradera
 - [Uppgraderingsprocessen för lokala miljöer](../migration-upgrade/on-prem-upgrade.md)
@@ -71,6 +71,6 @@ Du kan distribuera Dynamics 365 Finance + Operations (lokal). När du väljer en
 - [Certifikatrotation](certificate-rotation-on-prem.md)
 - [Lokal diagnostik](on-premises-diagnostics.md)
 - [Funktioner som ännu inte har implementerats i lokala distributioner](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Borttagna eller föråldrade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Borttagna och utfasade funktioner för Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Livscykelpolicy och lokala versioner av programmet](../migration-upgrade/on-prem-version-update-policy.md)
  

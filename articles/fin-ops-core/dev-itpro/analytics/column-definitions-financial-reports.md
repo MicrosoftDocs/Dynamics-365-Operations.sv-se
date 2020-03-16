@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771551"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070770"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
@@ -120,11 +120,11 @@ Följande register beskriver kolumnbegränsningskoderna.
 | ADJ                     | Begränsa beloppen i kolumnen till periodjusteringsbelopp, om dessa belopp är tillgängliga. |
 | XAD                     | Begränsa beloppen i kolumnen så att periodjusteringsbelopp exkluderas. |
 | PT                      | Begränsa beloppen i kolumnen, så att endast bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga. |
-| UPT                     | Begränsa beloppen i kolumnen, så att endast ej bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga.<p><strong>Obs!</strong> Alla dataleverantörer stödjer inte ej bokförda transaktioner. Mer information finns i <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>dataintegrationsguide</a> för ditt Microsoft Dynamics ERP-system.</p> |
+| UPT                     | Begränsa beloppen i kolumnen, så att endast ej bokförda transaktioner inkluderas, om dessa transaktioner är tillgängliga.<p><strong>Obs!</strong> Alla dataleverantörer stödjer inte ej bokförda transaktioner. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Begränsa en kolumn i en rapportenhet
 
-1. Öppna den kolumndefinition som ska ändras i Report Designer.
+1. Öppna kolumndefinitionen för att ändra den i Report Designer.
 2. Dubbelklicka på cellen **Rapportenhet** för kolumnen för att begränsa.
 3. I diaglogrutan **Val av rapporteringsenhet**, i listan **Rapporteringsträd**, välj ett träd.
 4. Expandera eller dölj listan över enheter, välj en rapportenhet och klicka sedan på **OK**.

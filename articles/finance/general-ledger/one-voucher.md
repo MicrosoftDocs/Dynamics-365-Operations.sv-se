@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810709"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058027"
 ---
 # <a name="one-voucher"></a>En verifikation
 
@@ -156,7 +156,7 @@ Organisationer vill ofta bokföra i redovisningen i sammanfattningsform för att
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Kvitta flera ej bokförda betalningar till samma faktura
 
-Det här scenariot finns vanligtvis i butiksorganisationer där användare kan använda flera betalningsmetoder för inköp. I det här scenariot måste organisationen kunna registrera flera ej bokförda betalningar och kvitta dem mot den valda kundfakturan.
+Det här scenariot finns vanligtvis i organisationer där användare kan använda flera betalningsmetoder för inköp. I det här scenariot måste organisationen kunna registrera flera ej bokförda betalningar och kvitta dem mot den valda kundfakturan.
 
 En ny funktion lades till i Microsoft Dynamics 365 for Operations version 1611 (november 2016) som tillåter flera ej bokförda betalningar att kvittas mot en enda faktura. +Flera kundbetalningar måste inte längre tas upp i en enda verifikation.
 

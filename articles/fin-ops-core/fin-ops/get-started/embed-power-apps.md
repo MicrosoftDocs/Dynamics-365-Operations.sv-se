@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017738"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042952"
 ---
 # <a name="embed-microsoft-power-apps"></a>Bädda in Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Följande instruktioner visar hur du bäddar in en en app från Power Apps i web
 
     - Fältet **Namn** indikerar texten som visas för knappen eller fliken som innehåller inbäddade appen. Du kanske ofta vill upprepa namnet på appen i det här fältet.
     - **Program-ID** är GUID för appen som du vill bädda in. För att hämta det här värdet hittar du appen på [web.powerapps.com](https://web.powerapps.com) och letar sedan upp den i fältet **Program-ID** under **Uppgifter**.
-    - För **Mata in kontext för appen**, kan du även välja fältet som innehåller de data som du vill skicka till appen som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga appar som använder data från Finance and Operations-appar](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) för information om hur appen kan komma åt data som skickas från Finance and Operations-appar.
+    - För **Mata in kontext för appen**, kan du även välja fältet som innehåller de data som du vill skicka till appen som indata. Se avsnittet längre fram i det här ämnet med namnet [Bygga appar som använder data från Finance and Operations-appar](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) för information om hur appen kan komma åt data som skickas från Finance and Operations-appar.
     - Välj **Programstorlek** som matchar typen av app som du bäddar in. Välj **Tunn** för appar som har skapats för mobila enheter och **Omfattande** för appar som skapats för surfplattor. Detta säkerställer att en tillräcklig mängd utrymme avsätts för inbäddade appen.
     - Snabbfliken **Juridiska personer** innehåller möjligheten att välja vilka juridiska personer som appen är tillgänglig för. Standard är att visa appen för alla juridiska personer. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad. 
 
@@ -76,7 +76,7 @@ En viktig del i skapandet av en app från Power Apps som bäddas in i en Finance
 
 Exempelvis i appens OnStart-funktion kan du ange indata från Finance and Operations-appar till en variabel så här:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Gör så här om du vill redigera en inbäddad appkonfiguration:
 
 När en app har inbäddats på en sida finns det två sätt att ta bort den vid behov:
 
-- Gå till fönstret **Redigera en app** med instruktioner från sektionen [redigera en inbäddad app](#editing-an-embedded-power-app) tidigare i det här avsnittet. Bekräfta att fönstret visar information om inbäddade appen som du vill ta bort och klicka på knappen **Ta bort**.
+- Gå till fönstret **Redigera en app** med instruktioner från sektionen [redigera en inbäddad app](#editing-an-embedded-app) tidigare i det här avsnittet. Bekräfta att fönstret visar information om inbäddade appen som du vill ta bort och klicka på knappen **Ta bort**.
 - Eftersom en inbäddad app sparas som anpassningsdata, kommer rensning av sidans anpassningar också att ta bort eventuella inbäddade appen på sidan. Observera att rensa sidans anpassning är permanent och kan inte ångras. Ta bort dina anpassningar på en sida genom att markera **Alternativ** och sedan **Anpassa denna sida** och sedan på knappen **Avmarkera**. När du har uppdaterat din webbläsare raderas alla tidigare anpassningar för den här sidan. Se[Anpassa användarupplevelsen](personalize-user-experience.md) för mer information om hur man optimerar sidor med hjälp av personalisering.
 
 ## <a name="appendix"></a>Bilaga
@@ -115,7 +115,7 @@ Som standard kan användare bädda in appar på sidan under menyknappen Power Ap
 
 I följande exempel visas en ny klass för dessa två metoder som behövs för att konfigurera där appar kan bäddas in.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension

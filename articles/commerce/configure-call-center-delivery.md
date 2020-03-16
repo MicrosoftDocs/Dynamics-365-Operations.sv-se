@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024028"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057820"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurera leveranssätt och avgifter för kundtjänst
 
@@ -66,7 +66,7 @@ Avgifter kan konfigureras så att de tillämpas för ett visst leveranssätt, en
 
 I avsnittet **rader** kan du definiera en eller flera avgifter med valuta, enligt behov. Avgifter måste kopplas till en avgiftskod som definierar ekonomiska bokföringsreglerna för avgiften. Fältet **kategori** används för att definiera hur kostnader ska beräknas. Till exempel om kunder ska debiteras ett schablonbelopp på 9,95 $ för att ha en order som levererats från ett visst leveranssätt, använda kategorin **fast**. Om företaget beslutar att debitera kunder procent av orderns totala summa för att täcka leveransavgifterna, använd kategorin **Procent**. Den verkliga avgiften till kunder som har definierats i fältet **Avgiftsvärde**.
 
-Detaljhandelsföretag konfigurerar ofta skiftindelade avgifter. I detta fall baseras det belopp som kunden ska betala för leveransen på ordervärdet. Om du vill konfigurera skiftindelade avgifter fyller du i fältet **Från belopp** och **Till belopp** förutom att definiera själva avgiften i fältet **Avgiftsvärde**. Exempelvis för order som har ett värde som är mindre än 50 $ debiterar en återförsäljare avgifter på 5,95 $ för markleverans. Order som har ett värde som är lika med eller större än 50 $, men mindre än 100 $, återförsäljaren debiterar 7,95 $. Order som har ett värde som är lika med eller större än 100 $, ger återförsäljaren gratis leverans. Följande bild visar konfigurationen av dessa avgifter.
+Företag konfigurerar ofta skiftindelade avgifter. I detta fall baseras det belopp som kunden ska betala för leveransen på ordervärdet. Om du vill konfigurera skiftindelade avgifter fyller du i fältet **Från belopp** och **Till belopp** förutom att definiera själva avgiften i fältet **Avgiftsvärde**. Exempelvis för order som har ett värde som är mindre än 50 $ debiterar en återförsäljare avgifter på 5,95 $ för markleverans. Order som har ett värde som är lika med eller större än 50 $, men mindre än 100 $, återförsäljaren debiterar 7,95 $. Order som har ett värde som är lika med eller större än 100 $, ger återförsäljaren gratis leverans. Följande bild visar konfigurationen av dessa avgifter.
 
 ![Exempel på fasta skiftindelade avgifter](media/fixedtieredcharges.png)
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024023"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057924"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definiera och underhålla butikskanaler
 
@@ -47,9 +47,9 @@ Du måste slutföra följande uppgifter innan du kan ställa in en butik:
 3. Ställa in nummerserier för butiker, butiksutdrag och utdragverifikationer.
 4. Konfigurera parametrar för Handel.
 5. Ställa in betalningsmetoder som butiken godkänner.
-6. Om du vill bearbeta kreditkortstransaktioner i butikskassorna kan du också ställa in betalningstjänster.
+6. Om du vill bearbeta kreditkortstransaktioner i kassorna kan du också ställa in betalningstjänster.
 7. Ställa in momsgrupper.
-8. Ställ in butiksprodukter. Som en del av den här uppgiften ställer du även in produkthierarkier, produktvarianter och produktsortiment.
+8. Ställ in produkter. Som en del av den här uppgiften ställer du även in produkthierarkier, produktvarianter och produktsortiment.
 9. Ställa in produktprisgrupper.
 10. Ställ in produktprissättning. Som en del av den här uppgiften ställer du också in prisjusteringar, rabatter och rabattperioder.
 11. Ställa in anställda.
@@ -87,5 +87,5 @@ När du har angett information för butiken slutför du dessa uppgifter för att
 Handel använder organisationshierarkier för att strukturera kanaler. Organisationshierarkier representerar relationerna mellan organisationer som utgör ett företag. När du ställer in butiker kan du lägga till dem till en organisationshierarki. Butikerna delar sedan data som används för sortiment, lagerpåfyllnad och rapportering.
 
 > [!NOTE]
-> Om du vill använda butiksförsäljning funktioner, måste konfigurationsnyckeln **Flera leveransadresser** till aktiveras. Den här konfigurationsnyckeln finns i den konfigurationsnyckel för **handel** under **Systemadministration**\> **Konfiguration** \> **Licenskonfiguration**. Detta krävs på grund av butiksfunktionen som utför olika valideringar baserat på leveransadressen som konfigurerats på försäljningsorderradnivå.
+> Om du vill använda Commerce säljfunktioner, måste konfigurationsnyckeln **Flera leveransadresser** till aktiveras. Den här konfigurationsnyckeln finns i den konfigurationsnyckel för **handel** under **Systemadministration**\> **Konfiguration** \> **Licenskonfiguration**. Detta krävs på grund av olika valideringar baserat på leveransadressen som konfigurerats på försäljningsorderradnivå.
 

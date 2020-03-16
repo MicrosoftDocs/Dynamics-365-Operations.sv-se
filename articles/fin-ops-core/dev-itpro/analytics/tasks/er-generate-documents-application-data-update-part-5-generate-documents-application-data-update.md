@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026073"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042860"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Skapa dokument som omfattar programdata
 
@@ -40,10 +40,14 @@ Den här proceduren har skapats för användare med rollen Systemadministratör 
 ## <a name="set-up-foreign-trade-parameters"></a>Konfigurera utländska handelsparametrar
 1. Gå till Moms > Inställningar > Utländsk handel > Utländska handelsparametrar.
 2. Klicka på fliken Nummersekvenser.
-    * För att kunna arkivera information om Intrastat-rapporteringen måste vi identifiera poster för varje arkiv vi skapar. För detta måste en särskild nummerserie konfigureras.  
+
+    För att kunna arkivera information om Intrastat-rapporteringen måste vi identifiera poster för varje arkiv vi skapar. För detta måste en särskild nummerserie konfigureras.  
+
 3. Välj referensen Arkiv-ID - Intrastat.
 4. Skriv ett värde i fältet Nummerseriekod.
-    * Ange eller välj värdet Fore_2 i fältet Nummerseriekod.  
+
+    Ange eller välj värdet Fore_2 i fältet Nummerseriekod.  
+
 5. ResolveChanges nummerseriekoden.
 6. Klicka på Spara.
 7. Stäng sidan.
@@ -54,18 +58,23 @@ Den här proceduren har skapats för användare med rollen Systemadministratör 
 3. Välj Intrastat Intrastat (model)\Intrastat (format) i trädet.
 4. Klicka på Kör.
 5. Skriv "intrastat2.xml" i fältet Ange filnamn.
-    * intrastat2.xml  
 6. Klicka på OK.
 
 ## <a name="review-er-format-executions-results"></a>Granska resultatet från körningen av ER-formatet
-Granska den genererade XML-filen.  
+Granska den skapade XML-filen.  
 1. Stäng sidan.
 2. Gå till Moms > Deklarationer > Utländsk handel > Intrastat.
-    * Öppna detta formulär som innehåller Intrastat-transaktionerna som har inkluderats i det genererade elektroniska dokumentet.  
+
+    Öppna detta formulär som innehåller Intrastat-transaktionerna som har inkluderats i det genererade elektroniska dokumentet.  
+
 3. Klicka på Intrastat-arkiv.
-    * Eftersom det ER-formatet nu innehåller inställningarna för uppdatering av programdata, har informationen om den slutförda Intrastat-rapporteringen arkiverats. I det här formuläret visas rubrikposten för det skapade arkivet.  
+
+    Eftersom det ER-formatet nu innehåller inställningarna för uppdatering av programdata, har informationen om den slutförda Intrastat-rapporteringen arkiverats. I det här formuläret visas rubrikposten för det skapade arkivet.  
+
 4. Klicka på Detaljer.
-    * I det här formuläret visas detaljerna för det skapade arkivet.  
+
+    I det här formuläret visas detaljerna för det skapade arkivet.  
+
 5. Stäng sidan.
 6. Stäng sidan.
 7. Stäng sidan.

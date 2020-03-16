@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d8158f676a005f683d71f503c0a0eb3e50635e2a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4fe97e3e2f8265c1dc67a4052f45125b693c7218
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003405"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057543"
 ---
 # <a name="create-new-address-book"></a>Skapa en ny adressbok
 
@@ -52,8 +52,8 @@ Följande bild visar hur en adressbok för medarbetare skapas för en butik.
 
 [Infokoder och infokodgrupper](info-codes-retail.md)           
 
-[Funktionsprofil för butik](retail-functionality-profile.md)   
+[Skapa en Retail-funktionsprofil](retail-functionality-profile.md)      
 
-[Översikt över skärmlayout](pos-screen-layouts.md)       
+[Layoutöversikt för skärm](pos-screen-layouts.md)       
 
 [Konfigurera och installera Retail Hardware Station](retail-hardware-station-configuration-installation.md)  

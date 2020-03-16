@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015405"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057680"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredit spärrar för försäljningsorder
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ Försäljningsorder som har tvingats att spärras kan inte bearbetas med arbetsf
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>Frisläppa order som har lagts till i listan över kredithantering med en tvingad kreditspärr
 Försäljningsorder med en påtvingad spärrorsak kan inte frisläppas automatiskt. Om försäljningsordern har spärrats och du har använt en process som automatiskt släpper försäljningsorder, visas försäljningsordern som **Klar att frisläppas** och finns kvar i spärrlistan. Du måste använda menyn **frisläpp** för att frisläppa ordern.
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>Fritextfakturor, butiksorder och stöd för projektfakturor i kredithantering 
-Kredithantering kan endast användas för försäljningsorder. Fritextfakturor, butiksplatsen för försäljningsorder och kundtjänstorder använder de tillfälliga kreditgränser och försäkringar/garantier som du lägger till för att justera kreditgränsen. De kommer inte att använda spärrningsreglerna och de kommer inte att placeras i spärrlistan om det finns ett problem med kreditgränsen.
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>Fritextfakturor, order och stöd för projektfakturor i kredithantering 
+Kredithantering kan endast användas för försäljningsorder. Fritextfakturor, kassaorder och kundtjänstorder använder de tillfälliga kreditgränser och försäkringar/garantier som du lägger till för att justera kreditgränsen. De kommer inte att använda spärrningsreglerna och de kommer inte att placeras i spärrlistan om det finns ett problem med kreditgränsen.
 
 Det finns inget stöd för projektfakturor i kredithantering.

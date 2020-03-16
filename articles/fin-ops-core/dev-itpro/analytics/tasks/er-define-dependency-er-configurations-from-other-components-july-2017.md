@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026120"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042929"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera beroendet av ER-konfigurationer för andra komponenter
 
@@ -47,7 +47,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 5. Klicka på Ny.
 6. Välj produktförutsättningskomponenten.
 7. Välj Microsoft Dynamics 365 for Operations (1611).
-8. I fältet Version, skriv '[7.1.1541.3036,8)'.
+8. Skriv "[7.1.1541.3036,8)" i fältet Version.
     * [7.1.1541.3036,8)  
     * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Sample data redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Finance and Operations, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
 9. Klicka på Spara.
@@ -60,7 +60,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 16. Klicka på Ny.
 17. Välj produktförutsättningskomponenten.
 18. Välj Microsoft Dynamics AX 7.0 RTW.
-19. I fältet Version, skriv '[7.0.1265.3015,7.1)'.
+19. Skriv "[7.0.1265.3015,7.1)" i fältet Version.
     * [7.0.1265.3015,7.1)  
     * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Sample data redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.   
 20. Klicka på Spara.
@@ -140,4 +140,3 @@ Vi ska ta bort de skapade konfigurationerna från systemet och hämta tillbaka d
 26. Expandera Sample data model i trädet.
     * Observera att modellkonfigurationen Sample mapping har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Sample mapping har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Sample mapping (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
     * Om du loggar in till Finance and Operations, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Sample mapping (alternative) medan konfigurationen Sample mapping hoppas över.  
-

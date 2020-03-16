@@ -1,6 +1,6 @@
 ---
-title: Skapa en butiksfunktionsprofil
-description: I det här avsnittet beskrivs hur du skapar en butiksfunktionsprofil online i Microsoft Dynamics 365 Commerce.
+title: Skapa en Retail-funktionsprofil
+description: I det här avsnittet beskrivs hur du skapar en funktionsprofil online i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002853"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057358"
 ---
-# <a name="create-a-retail-functionality-profile"></a>Skapa en butiksfunktionsprofil
+# <a name="create-a-retail-functionality-profile"></a>Skapa en Retail-funktionsprofil
 
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du skapar en butiksfunktionsprofil online i Microsoft Dynamics 365 Commerce.
+I det här avsnittet beskrivs hur du skapar en funktionsprofil online i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-Butiksfunktionsprofilen online innehåller olika inställningar som används för onlinekanaler. Varje butikskanal måste ange en butiksfunktionsprofil online.
+Handelsfunktionsprofilen online innehåller olika inställningar som används för onlinekanaler. Varje kanal måste ange en funktionsprofil online.
 
-## <a name="create-a-retail-functionality-profile"></a>Skapa en butiksfunktionsprofil
+## <a name="create-a-functionality-profile"></a>Skapa en funktionsprofil
 
-Följ dessa steg för att skapa en ny butiksfunktionsprofil.
+Följ dessa steg för att skapa en ny funktionsprofil.
 
 1. I navigeringsfönstret, gå till **Moduler \> Kanalinställningar \> Kassaprofiler \> Funktionsprofiler**.
 1. Klicka på **Ny** i åtgärdsfönstret.
@@ -51,9 +51,9 @@ Följ dessa steg för att skapa en ny butiksfunktionsprofil.
 1. I avsnittet **Informationskoder** ändrar du inställningar efter behov.
 1. I avsnittet **Kvittonumrering** ändrar du inställningar efter behov. 
   
-I bilden nedan visas ett exempel på butiksfunktionsprofil online.
+I bilden nedan visas ett exempel på funktionsprofil.
   
-![Exempel på butiksfunktionsprofiler online](media/retail-functionality-profile.png)
+![Exempel på funktionsprofil](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

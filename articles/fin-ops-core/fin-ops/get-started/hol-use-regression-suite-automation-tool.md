@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 026d1d743b5150f152ef70aa642dcf6841a4e398
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025814"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070830"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Använda självstudie för Regression Suite Automation Tool
 
@@ -217,15 +217,15 @@ Följande bild visar affärsprocesser för det här scenariot i RSAT.
 
 ## <a name="advanced-scripting"></a>Avancerade skript
 
-### <a name="command-line"></a>Kommandorad
+### <a name="cli"></a>CLI
 
-RSAT kan anropas från fönstret **kommandotolk**.
+RSAT kan anropas från fönstret **kommandotolk** eller **PowerShell**.
 
 > [!NOTE]
 > Kontrollera att miljövariabeln **TestRoot** anges till RSAT installationens sökväg. (I Microsoft Windows, öppna **kontrollkontroll**, välj **Systemoch säkerhet \> System \> Avancerade systeminställningar** och välj sedan **miljövariabler**.)
 
-1. Öppna ett **kommandotolk**-fönster som en adminstratör.
-2. Kör verktyget från installationskatalogen.
+1. Öppna ett **kommandotolk** eller **PowerShell** som admin.
+2. Navigera till installationskatalogen för RSAT.
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
@@ -242,22 +242,273 @@ RSAT kan anropas från fönstret **kommandotolk**.
         Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Path to\file.settings" command
 
     Available commands:
-        list
-        listtestsuite suite_name
-        download test_case_id output_dir
-        generate test_case_id output_dir
-        generatederived parent_test_case_id test_plan_id test_suite_id
-        generatetestonly test_case_id output_dir
-        edit excel_file
-        playback excel_file
-        playbackmany excel_file1 [excel_file2 [.. excel_fileN]]
-        playbackbyid test_case_id1 [test_case_id2 [.. test_case_idN]]
-        playbacksuite suite_name
-        clear
-        help
+        ?
         about
+        cls
+        download
+        edit
+        generate
+        generatederived
+        generatetestonly
+        generatetestsuite
+        help
+        list
+        listtestplans
+        listtestsuite
+        listtestsuitenames
+        playback
+        playbackbyid
+        playbackmany
+        playbacksuite
         quit
+        upload
+        uploadrecording
+        usage
     ```
+
+#### <a name=""></a>? 
+Visar hjälp om alla tillgängliga kommandon och deras parametrar.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
+
+##### <a name="optional-parameters"></a>Valfria parametrar
+
+**``command``**
+
+
+Där ``[command]`` är ett av de kommandon som anges nedan.
+
+
+#### <a name="about"></a>om
+Visar den aktuella versionen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
+
+#### <a name="cls"></a>cls
+Rensar skärmen.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
+
+
+#### <a name="download"></a>hämta
+Hämtar bifogade filer för det angivna testfallet till utdatafilen. Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``test_case_id``** Representerar ID för testärende.  
+**``output_dir``** Representerar katalogen för utdata. Katalogen måste finnas.
+
+##### <a name="examples"></a>Exempel
+
+``download 123 c:\temp\rsat``   
+``download 765 c:\rsat\last``
+
+
+#### <a name="edit"></a>redigera
+Gör att du kan öppna parameter filen i Excel-programmet och redigera den.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``excel_file``** Måste innehålla en fullständig sökväg till en befintlig Excel-fil.
+
+##### <a name="examples"></a>Exempel
+``edit c:\RSAT\TestCase_123_Base.xlsx``  
+``edit e:\temp\TestCase_456_Base.xlsx``
+
+
+#### <a name="generate"></a>skapa
+Skapar test körnings- och parametervärden för det angivna testärendet i utdatapanelen.
+Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``test_case_id``** Representerar ID för testärende.  
+**``output_dir``** Representerar katalogen för utdata. Katalogen måste finnas.
+
+##### <a name="examples"></a>Exempel
+``generate 123 c:\temp\rsat``  
+``generate 765 c:\rsat\last``
+
+
+#### <a name="generatederived"></a>generatederived
+Genererar ett nytt testärende som härletts från det angivna testärendet. Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``parent_test_case_id``** Representerar överordnat ID för testärende.  
+**``test_plan_id``** Representerar ID för testplan.  
+**``test_suite_id``** Representerar ID för testpaketet.
+
+##### <a name="examples"></a>Exempel
+``generatederived 123 8901 678``
+
+
+#### <a name="generatetestonly"></a>generatetestonly
+Skapar endast test körningsfil för det angivna testärendet i utdatapanelen. Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``test_case_id``** Representerar ID för testärende.  
+**``output_dir``** Representerar katalogen för utdata. Katalogen måste finnas.
+
+##### <a name="examples"></a>Exempel
+``generatetestonly 123 c:\temp\rsat``  
+``generatetestonly 765 c:\rsat\last``
+
+
+#### <a name="generatetestsuite"></a>generatetestsuite
+Genererar alla testärenden för det angivna paketet i utdatakatalogen.
+Du kan använda ``listtestsuitenames`` kommandot för att hämta alla tillgängliga testpaket. Använd valfritt värde kolumnen som en **test_suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``test_suite_name``** Representerar testpaketets namn.  
+**``output_dir``** Representerar katalogen för utdata. Katalogen måste finnas.
+
+##### <a name="examples"></a>Exempel
+``generatetestsuite Tests c:\temp\rsat``   
+``generatetestsuite Purchase c:\rsat\last``
+
+
+#### <a name="help"></a>hjälp
+Är identisk med [?](####?) kommando
+
+
+#### <a name="list"></a>listan
+Visar alla tillgängliga testärenden.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
+
+
+#### <a name="listtestplans"></a>listtestplans
+Visar alla tillgängliga testplaner.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
+
+
+#### <a name="listtestsuite"></a>listtestsuite
+Visar testärenden för angivet testpaket. Du kan använda ``listtestsuitenames`` kommandot för att hämta alla tillgängliga testpaket. Använd valfritt värde från första kolumnen som en **suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``suite_name``** Namn på önskat paket.
+
+##### <a name="examples"></a>Exempel
+``listtestsuite "sample suite name"``  
+``listtestsuite NameOfTheSuite``
+
+
+#### <a name="listtestsuitenames"></a>listtestsuitenames
+Visar alla tillgängliga testpaket.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
+
+
+#### <a name="playback"></a>playback
+Spelar upp ett testärende med hjälp av en Excel-fil.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``excel_file``** En fullständig sökväg till Excel-filen. Filen måste finnas. 
+
+##### <a name="examples"></a>Exempel
+``
+playback c:\RSAT\TestCaseParameters\sample1.xlsx
+playback e:\temp\test.xlsx
+``
+
+
+#### <a name="playbackbyid"></a>playbackbyid
+Spelar upp flera testärenden samtidigt.
+Du kan använda ``list`` kommandot för att hämta alla tillgängliga testärenden. Använd valfritt värde från den första kolumnen som en **test_case_id** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``test_case_id1``** ID för befintliga testärenden.  
+**``test_case_id2``** ID för befintliga testärenden.  
+**``test_case_idN``** ID för befintliga testärenden.  
+
+##### <a name="examples"></a>Exempel
+``playbackbyid 878``  
+``playbackbyid 2345 667 135``
+
+
+#### <a name="playbackmany"></a>playbackmany
+Spelar upp många testärenden samtidigt, med Excel-filer.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``excel_file1``** Fullständig sökväg till Excel-filen. Filen måste finnas.  
+**``excel_file2``** Fullständig sökväg till Excel-filen. Filen måste finnas.  
+**``excel_fileN``** Fullständig sökväg till Excel-filen. Filen måste finnas.  
+
+##### <a name="examples"></a>Exempel
+``playbackmany c:\RSAT\TestCaseParameters\param1.xlsx``  
+``playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx``
+
+
+#### <a name="playbacksuite"></a>playbacksuite
+Spelar upp alla testärende från angiven testpaket. Du kan använda ``listtestsuitenames`` kommandot för att hämta alla tillgängliga testpaket. Använd valfritt värde från första kolumnen som en **suite_name** parameter.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``suite_name``** Namn på önskat paket.
+
+##### <a name="examples"></a>Exempel
+``playbacksuite suiteName``  
+``playbacksuite sample_suite``
+
+
+#### <a name="quit"></a>avsluta
+Stänger programmet.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
+
+
+#### <a name="upload"></a>överför
+Överför alla filer som hör till de angivna testpaketen eller testärenden.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+
+#### <a name="required-parameters"></a>Obligatoriska parametrar
+**``suite_name``** Alla filer som hör till de angivna testpaketen kommer att laddas upp.
+**``testcase_id``** Alla filer hör till de angivna testärenden kommer att laddas upp.
+
+##### <a name="examples"></a>Exempel
+``upload sample_suite``  
+``upload 123``  
+``upload 123 456``
+
+
+#### <a name="uploadrecording"></a>uploadrecording
+Överför endast registreringsfil som hör till de angivna testärenden.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+
+##### <a name="required-parameters"></a>Obligatoriska parametrar
+**``testcase_id``** Registreringsfil som hör till de angivna testärenden kommer att överföras.
+
+##### <a name="examples"></a>Exempel
+``uploadrecording 123``  
+``uploadrecording 123 456``
+
+
+#### <a name="usage"></a>användning
+Visar två sätt att anropa det här programmet: ett som använder en standardinställningsfil, ett annat som en inställningsfil.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-exempel
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015402"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071670"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
@@ -38,8 +38,8 @@ Det finns fyra snabbflikar där du kan ändra parametrarna som styr kredithanter
 - Ange alternativet **Tillåt redigering av försäljningsordervärden efter att orderspärren frisläppts** till **Ja** om du vill att bokföringsreglerna ska kontrolleras igen om försäljningsorderns värde (utökat pris) har ändrats sedan försäljningsordern släpptes från den spärrade listan. .
 - I fältet **orsaker till annullerade order** väljer du den frisläppningsorsak som kommer att användas som standard när en försäljningsorder som hade kredithanteringsspärr annulleras.
 - Ange alternativet **Kontrollera kundkreditgruppernas kreditgräns** till **JA** för att kontrollera kreditgränsen för en kundkreditgrupp när kunden på en försäljningsorder tillhör en kundkreditgrupp. Kreditgränsen för gruppen kommer att kontrolleras och om det behövs, kontrolleras kreditgränsen för kunden.
-- Ange alternativet **Kontrollera kreditgräns när betalningsvillkoren ökas** till **Ja** för att kontrollera betalningsvillkoren rankning för att avgöra om betalningsvillkoren i försäljningsordern skiljer sig från betalningsvillkoren på försäljningsorder. Om de nya betalningsvillkoren har en högre rangordning än de ursprungliga betalningsvillkoren placeras ordern i en kredithanteringsspärr.
-- Ange alternativet **Kontrollera kreditgränsen när kvittningsrabatt höjs** till **Ja** för att kontrollera kvittningsrabattens rangordningar för att avgöra om kassarabatten på försäljningsordern skiljer sig från kassarabatten på försäljningsorder. Om den nya kassarabatten har en högre rangordning än den ursprungliga kassarabatten placeras ordern i en kredithanteringsspärr.
+- Ange alternativet **Kontrollera kreditgräns när betalningsvillkoren ökas** till **Ja** för att kontrollera betalningsvillkoren rankning för att avgöra om betalningsvillkoren i försäljningsordern skiljer sig från standardbetalningsvillkoren för kunden. Om de nya betalningsvillkoren har en högre rangordning än de ursprungliga betalningsvillkoren placeras ordern i en kredithanteringsspärr.
+- Ange alternativet **Kontrollera kreditgränsen när kvittningsrabatt höjs** till **Ja** för att kontrollera kvittningsrabattens rangordningar för att avgöra om kassarabatten på försäljningsordern skiljer sig från standardkassarabatten för kunden. Om den nya kassarabatten har en högre rangordning än den ursprungliga kassarabatten placeras ordern i en kredithanteringsspärr.
 - I fältet **orsak för frisläppning av ändrade order** väljer du den frisläppningsorsak som ska användas som standard när ändrade order automatiskt släpps från kredithanteringsspärren.
 - Ange alternativet **ignorera kreditgräns för förfallen spärregel när förfallodatum är tomt** till **Ja** om du vill kontrollera beteendet för regeln **Kreditgränsen förfallen**. Ställ in alternativet på **Nej** om du vill blockera en order när utgångsdatumet är tomt.
 - I lagerstyrning kan inläsningar skapas när försäljningsorder registreras. Ställ in alternativet **Ta bort spärrade lastrader** till **Nej** att lämna försäljningsorderrader på lasten när en försäljningsorder är i kreditspärr. Lasten kan inte behandlas när försäljningsordern är spärrad. Ställ in alternativet till **Ja** för att ta bort försäljningsorderrader från lasten när en försäljningsorder är i kreditspärr. Lasten kan sedan bearbetas.

@@ -18,25 +18,36 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9ae80dd92fdb0ec4b33c2e42d4b6ec264aaf62de
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: f36aba8a68ea8cc261423f79db00e175df1cf349
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010669"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075958"
 ---
-# <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Personal
+# <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Human Resources
 
-Varje vecka tillhandahåller vi en ny lansering för Microsoft Dynamics personal. Artiklarna i det här avsnittet beskriver ändringarna som görs varje vecka.
+Varje vecka tillhandahåller vi en ny lansering för Microsoft Dynamics 365 Human Resources. Artiklarna i det här avsnittet beskriver ändringarna som görs varje vecka.
 
-Mer information om kommande funktioner eller uppdateringsprocessen för personal finns i följande avsnitt:
+Mer information om kommande funktioner eller uppdateringsprocessen för personal finns i följande artiklar:
 
 - [Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
-- [Uppdateringsprocess](hr-admin-setup-update-process.md)
+- [Uppdatera process](hr-admin-setup-update-process.md)
 
 - [Hantera funktioner](hr-admin-manage-features.md)
 
-## <a name="whats-new-weekly-releases"></a>Nyheter för veckovisa utgivningar
+## <a name="human-resources-weekly-releases"></a>Veckovisa utgåvor av Personal
 
+Information om vad som är nytt eller ändrat i varje veckovisa utgåva av Personal finns i följande artiklar:
+
+[18 februari 2020](hr-whats-new-2020-02-18.md)</br>
+[12 februari 2020](hr-whats-new-2020-02-12.md)</br>
+[7 februari 2020](hr-whats-new-2020-02-07.md)</br>
 [3 februari 2020](hr-whats-new-2020-02-03.md)
+
+## <a name="see-also"></a>Se även
+
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Uppdatera process](hr-admin-setup-update-process.md)</br>
+[Hantera funktioner](hr-admin-manage-features.md)

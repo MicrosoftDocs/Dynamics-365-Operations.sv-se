@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a52e8f65e7e2a8d90ddf5efa47c07d6995ef645d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
+ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020017"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3081161"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
@@ -109,7 +109,7 @@ Observera att synkroniseringen av produkter sker från Finance and Operations-ap
 
 Produktdimensioner är egenskaper som identifierar en produktvariant. De fyra produktdimensionerna (färg, storlek, stil och konfiguration) mappas också till Common Data Service för att definiera produktvarianter. Följande bild visar datamodellen för produktdimensionsfärgen. Samma modell används i storlekar, stilar och konfigurationer. 
 
-![Datamodell för produkter](media/dual-write-product-2.PNG)
+![Datamodell för produkter](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +145,7 @@ Standardorderinställningar definierar site och lagerställe som artiklar kommer
 
 Måttenheterna och deras respektive konverteringar är tillgängliga i Common Data Service enligt datamodellen som visas i diagrammet.
 
-![Datamodell för produkter](media/dual-write-product-3.PNG)
+![Datamodell för produkter](media/dual-write-product-three.png)
 
 Måttenhetens koncept integreras mellan Finance and Operations-appar och andra Dynamics 365-appar. För varje enhetsklass i en Finance and Operations-app skapas en enhetsgrupp i en Dynamics 365-app som innehåller de enheter som tillhör enhetsklassen. En standardbasenhet skapas också för varje enhetsgrupp. 
 
@@ -205,13 +205,13 @@ För att unikt identifiera produkter mellan Dynamics 365 for Finance and Operati
 
 För en annan Dynamics 365 appanvändare identifieras produkten i användargränssnittet med **msdyn_productnumber** (observera att fältets etikett är **produktnummer**). I produktformuläret visas både företaget och msydn_productnumber. Den unika nyckeln för en produkt visas dock inte i fältet (productNumber). 
 
-Observera att om program byggs ovanpå Common Data Service bör särskild uppmärksamhet ägnas åt att använda (productNumber), det vill säga det unika produkt-ID:t, integrationsnyckeln och inte msdyn_productnumber, eftersom det senaste inte är unikt. 
+Om du skapar appar i Common Data Service ska du vara uppmärksam på att använda **productnumber** (det unika produkt-ID) som integrationsnyckel. Använd inte **msdyn_productnumber**, eftersom det inte är unikt. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Initial synkronisering av produkter och migrering av data från Common Data Service till Finance and Operations
 
 ### <a name="initial-synchronization-of-products"></a>Initial synkronisering av produkter 
 
-När dubbelriktat är aktiverat synkroniseras produkter från Dynamics 365 Finance and Operations till Common Data Service och andra Dynamics 365-appar. Observera att produkter som skapats i Common Data Service och andra Dynamics 365-appar före dubbelriktning inte kommer att uppdateras eller matchas med produktdata från Finance and Operations.
+När dubbelriktat är aktiverat synkroniseras produkter från Finance and Operations-appar till Common Data Service och andra modellstyrda appar i Dynamics 365. Produkter som skapats i Common Data Service och andra Dynamics 365-appar före dubbelriktning frisläpptes kommer inte att uppdateras eller matchas med produktdata från Finance and Operations.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Matchande produktdata från Finance and Operations och andra Dynamics 365-appar
 

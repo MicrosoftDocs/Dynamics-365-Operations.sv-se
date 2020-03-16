@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024084"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057219"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Ställa in och arbeta med bedrägerivarningar för kundtjänst
 
@@ -54,6 +54,7 @@ Använd slutligen fältet **bedrägerikommentarstyp** för att ange dokumenttype
 Systemet hänvisar till två typer av bedrägerikriterier för att avgöra om en order ska spärras för bedrägerigranskning:
 
 - **Statiska bedrägeridata** använder ett specifikt värde, till exempel ett telefonnummer som har placerats i en lista över spärrade nummer eller en e-postadress har flaggats eftersom den har använts för tidigare falsk transaktioner. Konfigurera statiska bedrägeridata genom att gå till **Butik och handel** \> **kanal** \> **kundtjänstinställningar** \> **bedrägeri** \> **statiska bedrägeridata**. På sidan **statiska bedrägeridata** kan du lägga till kriterier för bedrägeri manuellt eller genom dataimport. Poängen är kopplade till falsk information. Om funktionen bedrägerikontroll ska aktiveras kommer varje försäljningsorder som anges att jämföras med statiska data. Om det finns data i kundens faktureringsadress eller leveransadress som är kopplad till orderrubriken eller om det finns data i leveransadresser som är kopplade till alla rader på försäljningsordern läggs alla unika matchningar ihop och jämförs med värdet **lägsta poäng** för att bestämma om ordern ska spärras eller inte.
+
 - **Regler för bedrägeri** består av användardefinierade variabler och de villkor som har definierats för dessa variabler. Du kan skapa regler genom att gå till **Butik och handel** \> **kanalinställningar** \> **kundtjänstinställningar** \> **bedrägeri** \> **regler**. Bedrägeriregler låter ett företag konfigurera en mer komplex regeluppsättning och kan innehålla **AND** eller **OR** -satser och utvärdera flera villkor. Till exempel vill en användare att alla order för kunder som tillhör en viss kundgrupp och som beställde en viss produkt ska spärras för att bedrägerigranskning. I detta fall definieras villkoren för att validera kund och produkter på sidan **regler** sida och ett AND-villkor används. En order spärras sedan bara om båda villkoren har uppfyllts och om poängvärdet som tilldelas denna regel överstiger poängvärdet för alla andra regler som ordern matchar orsakar orderns totala bedrägeripoäng att överstiga värdet **lägsta poäng** som definieras på sidan **parametrar för kundtjänst**.
 
 > [!NOTE]
