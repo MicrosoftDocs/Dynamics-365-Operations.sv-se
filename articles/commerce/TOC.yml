@@ -18,10 +18,12 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/commerce/toc.json
                 - name: Livscykelpolicy för programmet – lokal
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/commerce/toc.json
-                - name: Tillgänglighet för tjänsteuppdatering
+                - name: Tillgänglighet för tjänstuppdatering
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Uppdatera lokala distributioner
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera tjänstuppdateringar
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Pausa tjänstuppdateringar
@@ -84,12 +86,12 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce version 10.0.10 (maj 2020)
+                      href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce version 10.0.9 (april 2020)
                       href: get-started/whats-new-10-0-9.md
                     - name: Commerce version 10.0.8 (februari 2020)
                       href: get-started/whats-new-10-0-8.md
-                    - name: Retail version 10.0.7 (januari 2020)
-                      href: get-started/whats-new-10-0-7.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Finance and Operations
@@ -214,7 +216,7 @@
                   href: set-up-activation-accounts-validate-devices-hq.md
                 - name: Enhetsaktivering för kassa
                   href: dev-itpro/retail-device-activation.md
-                - name: Hjälp att skydda molnbaserad kassa i delade miljöer
+                - name: Hjälp att skydda Cloud POS i delade miljöer
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfiguration och installation av Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
@@ -336,7 +338,9 @@
                       href: pos-operations.md
                     - name: Enhetsaktivering av en anpassad Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Demodataskärmlayouter i MPOS och molnbaserad kassa
+                    - name: Aktivera Azure Active Directory-autentisering för kassainloggning
+                      href: aad-pos-logon.md
+                    - name: Demodataskärmlayouter i MPOS och Cloud POS
                       href: demo-data.md
                     - name: Produkt- och kundsökning i kassan
                       href: POS-search-improvements.md
@@ -358,7 +362,7 @@
                       href: charge-send.md
                     - name: Dölj leveranslägen utan transportföretag från dialogrutan kassaförsändelse
                       href: hide-non-carrier-modes.md
-                    - name: Uppgiftsinspelare och hjälp för MPOS och molnbaserad kassa
+                    - name: Uppgiftsinspelare och hjälp för MPOS och Cloud POS
                       href: task-recorder-retail-pos.md
                     - name: Maskinvarukringutrustning
                       items:
@@ -368,6 +372,8 @@
                           href: dev-itpro/retail-peripheral-simulator.md
                         - name: Ansluta kringutrustning till kassan
                           href: define-maintain-channel-clients-registers-hw-stations.md
+                        - name: Hälsokontroll för kringutrustning och tjänster för kassan
+                          href: pos-healthcheck.md
                     - name: Skärmlayouter
                       items:
                         - name: Demonstrationsdataskärmens layout i MPOS/CPOS
@@ -398,7 +404,7 @@
                       items:
                         - name: 'Konfigurera, installera och aktivera MOPS'
                           href: retail-modern-pos-device-activation.md
-                        - name: Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa
+                        - name: Ställa in utökad inloggningsfunktion för MPOS och Cloud POS
                           href: extended-logon.md
                         - name: Hantera aktiveringskonton och validera enheter
                           href: set-up-activation-accounts-validate-devices-hq.md
@@ -518,7 +524,7 @@
                       href: create-variant-group.md
                 - name: Skapa en ny produkt
                   items:
-                    - name: Skapa en ny produktöversikt
+                    - name: Skapa en ny produkt i Commerce
                       href: create-new-product.md
                     - name: Hantera produktkategorier och produkter
                       href: category-management-product-creation.md
@@ -570,6 +576,8 @@
                   href: retail-shipping-discount.md
                 - name: Ställa in kuponger
                   href: retail-coupons.md
+                - name: Visa rabatter i kassan
+                  href: discounts-pos.md
                 - name: Prisrapporter
                   href: price-report.md
                 - name: Skapa kanalspecifika handelsavtal
@@ -582,8 +590,6 @@
                   href: product-recommendations.md
                 - name: Aktivera ADLS i en Dynamics 365 Commerce-miljö
                   href: enable-ADLS-environment.md
-                - name: Lägga till listor över produktrekommendationer på näthandelssidor
-                  href: add-reco-list-to-page.md
                 - name: Aktivera produktrekommendationer
                   href: enable-product-recommendations.md
                 - name: Anpassade rekommendationer
@@ -592,20 +598,22 @@
                       href: personalized-recommendations.md
                     - name: Avanmäl anpassade rekommendationer
                       href: personalization-gdpr.md
-                - name: Skapa granskade listor över produktrekommendationer
-                  href: create-editorial-recommendation-lists.md
-                - name: Hantera AI-ML-baserade produktrekommendationsresultat
+                - name: Lägga till rekommendationslistor på en näthandelsplats
+                  href: add-reco-list-to-page.md
+                - name: Kassaupplevelser
+                  items:
+                    - name: Lägg till produktrekommendationer i kassan
+                      href: product.md
+                    - name: Lägg till rekommendationer på transaktionsskärmen
+                      href: add-recommendations-control-pos-screen.md
+                - name: Justera AI-ML-baserade produktrekommendationsresultat
                   href: modify-product-recommendation-results.md
-                - name: Hämta produktrekommendationer med hjälp av demodata
+                - name: Skapa granskade produktrekommendationer manuellt
+                  href: create-editorial-recommendation-lists.md
+                - name: Skapa produktrekommendationer med hjälp av demodata
                   href: product-recommendations-demo-data.md
                 - name: Vanliga frågor om produktrekommendationer
                   href: faq-recommendations.md
-                - name: Kassaupplevelser
-                  items:
-                    - name: Produktrekommendationer i kassan
-                      href: product.md
-                    - name: Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter
-                      href: add-recommendations-control-pos-screen.md
             - name: Betyg och recensioner
               items:
                 - name: Översikt över omdömen och recensioner
@@ -656,6 +664,8 @@
               items:
                 - name: Skapa en kundtjänstorder
                   href: tasks/create-call-center-orders.md
+                - name: Ändra Leveranssätt i kassan
+                  href: POS-change-delivery-mode.md
             - name: Fördelad orderhantering
               items:
                 - name: Översikt över fördelad orderhantering (DOM)
@@ -768,9 +778,15 @@
                   href: associate-site-online-store.md
                 - name: Hantera robots.txt-filer
                   href: manage-robots-txt-files.md
+                - name: Överför URL-omdirigeringar i bulk
+                  href: upload-bulk-redirects.md
+                - name: Ställa in en B2C-klientorganisation i Commerce
+                  href: set-up-B2C-tenant.md
                 - name: Ställa in anpassade sidor för användarinloggningar
                   href: custom-pages-user-logins.md
-                - name: Lägga till stöd för ett innehållsleveransnätverk (CDN)
+                - name: Konfigurera flera B2C-klientinnehavare i en Commerce-miljö
+                  href: configure-multi-B2C-tenants.md
+                - name: Lägga till stöd för nätverk för innehållsleverans (CDN)
                   href: add-cdn-support.md
                 - name: Aktivera platsbaserad butiksdetektering
                   href: enable-store-detection.md
@@ -864,11 +880,25 @@
                       href: customize-site-navigation.md
                     - name: Skapa URL för webbsida
                       href: create-page-URL.md
-            - name: Göra din webbplats kompatibel
+            - name: Hantera digitala tillgångar
+              items:
+                - name: Översikt av digital tillgångshantering
+                  href: dam-overview.md
+                - name: Överför bilder
+                  href: dam-upload-images.md
+                - name: Överför video
+                  href: dam-upload-video.md
+                - name: Överför andra filer än bilder och videor
+                  href: dam-upload-files.md
+                - name: Beskär bilder
+                  href: dam-crop-images.md
+                - name: Anpassa bildens fokuspunkter
+                  href: dam-custom-focal-point.md
+            - name: Gör din webbplats kompatibel
               items:
                 - name: Regelefterlevnad – översikt
                   href: compliance-overview.md
-                - name: Hjälpmedelsfunktioner
+                - name: Hjälpmedelsfunktioner och möjligheter
                   href: accessibility.md
                 - name: Cookie-kompatibilitet
                   href: cookie-compliance.md
@@ -1828,6 +1858,8 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurera en fil för utvecklingsmiljö (.env)
                       href: e-commerce-extensibility/configure-env-file.md
+                    - name: Ställ in Azure DevOps koddelning och skapa en versionspipeline
+                      href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Plattformsöversikt
                   items:
                     - name: Arkitekturöversikt
@@ -1912,6 +1944,10 @@
                       href: e-commerce-extensibility/create-observable-data-action.md
                     - name: Dela tillstånd mellan moduler
                       href: e-commerce-extensibility/share-state-across-modules.md
+                    - name: Dataåtgärdsåsidosättningar
+                      href: e-commerce-extensibility/data-action-overrides.md
+                    - name: Dataåtgärdshookar
+                      href: e-commerce-extensibility/data-action-hooks.md
                 - name: Utveckla teman
                   items:
                     - name: Översikt över teman
@@ -1958,7 +1994,7 @@
                   href: install-pos-layout-designer.md
                 - name: Utöka vyn med dubbla bildskärmar för kassan
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: 'Modern POS och molnbaserad kassa, utbyggbarhet för utlösare'
+                - name: 'Modern POS och Cloud POS, utbyggbarhet för utlösare'
                   href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Lägga till anpassade kontroller i kassavyer
                   href: dev-itpro/pos-custom-control.md
@@ -2062,6 +2098,8 @@
                   href: dev-itpro/commerce-application-insights.md
                 - name: 'Skapa async Commerce (CRT)-API:er i din affärslogik'
                   href: dev-itpro/async-commerce-extension.md
+                - name: Förutökade kolumner i kanaldatabasen
+                  href: dev-itpro/extended-columns.md
             - name: Utbyggbarhet för betalningskoppling
               items:
                 - name: Skapa en betalningsintegrering för en betalningsterminal
