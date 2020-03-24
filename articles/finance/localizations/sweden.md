@@ -16,19 +16,20 @@ ms.search.region: Sweden
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2113498b12997a9f8cee5106d2d61a89fc5699c4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ce6af48208d3de3d46d2b8e406bbdf104070b5ca
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773476"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127941"
 ---
-# <a name="sweden-overview"></a><span data-ttu-id="83f55-103">Sverige – översikt</span><span class="sxs-lookup"><span data-stu-id="83f55-103">Sweden overview</span></span>
+# <a name="sweden-overview"></a><span data-ttu-id="5a9a8-103">Sverige – översikt</span><span class="sxs-lookup"><span data-stu-id="5a9a8-103">Sweden overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="83f55-104">Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.</span><span class="sxs-lookup"><span data-stu-id="83f55-104">This topic provides links to documentation resources for Sweden.</span></span> 
+<span data-ttu-id="5a9a8-104">Det här avsnittet innehåller länkar till dokumentationsresurser för Sverige.</span><span class="sxs-lookup"><span data-stu-id="5a9a8-104">This topic provides links to documentation resources for Sweden.</span></span> 
 
-- [<span data-ttu-id="83f55-105">Exportera ekonomisk information för revisorer i Sverige</span><span class="sxs-lookup"><span data-stu-id="83f55-105">Export financial information for auditors in Sweden</span></span>](emea-swe-sie-standard-report.md)
-- [<span data-ttu-id="83f55-106">Importera betalningsformat</span><span class="sxs-lookup"><span data-stu-id="83f55-106">Import payment formats</span></span>](emea-swe-payment-formats-import.md)
-- [<span data-ttu-id="83f55-107">Funktioner för kassaapparat</span><span class="sxs-lookup"><span data-stu-id="83f55-107">Cash register functionality</span></span>](../../retail/localizations/emea-swe-cash-registers.md)
+- [<span data-ttu-id="5a9a8-105">Exportera ekonomisk information för revisorer i Sverige</span><span class="sxs-lookup"><span data-stu-id="5a9a8-105">Export financial information for auditors in Sweden</span></span>](emea-swe-sie-standard-report.md)
+- [<span data-ttu-id="5a9a8-106">Importera betalningsformat</span><span class="sxs-lookup"><span data-stu-id="5a9a8-106">Import payment formats</span></span>](emea-swe-payment-formats-import.md)
+- [<span data-ttu-id="5a9a8-107">Funktioner för kassaapparat</span><span class="sxs-lookup"><span data-stu-id="5a9a8-107">Cash register functionality</span></span>](../../retail/localizations/emea-swe-cash-registers.md)
+- [<span data-ttu-id="5a9a8-108">Momsbetalningsrapport för Sverige</span><span class="sxs-lookup"><span data-stu-id="5a9a8-108">Sales tax payment report for Sweden</span></span>](emea-swe-sales-tax-payment-report-sweden.md)
