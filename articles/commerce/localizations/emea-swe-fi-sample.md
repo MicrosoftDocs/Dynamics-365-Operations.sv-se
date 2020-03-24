@@ -1,7 +1,7 @@
 ---
 title: Exempel på integration av kontrollenhet för Sverige
 description: I det här avsnittet finns en översikt över exemplet på räkenskapsintegration för Sverige.
-author: ''
+author: sepism
 manager: annbe
 ms.date: 10/08/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 49760ef1c5f32fbff83840f1f76f716cf9ec5a57
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 41333f8c0ec77a591d372c5b0654585d05872a5c
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004723"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124348"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Exempel på integration av kontrollenhet för Sverige
 
@@ -33,7 +33,7 @@ ms.locfileid: "3004723"
 
 ## <a name="introduction"></a>Introduktion
 
-Retail-funktionen för Sverige inkluderar ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenhet som kallas *kontrollenheter*. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Det antas att en enhet är fysiskt ansluten till maskinvarustationerna som kassan är kopplad till. Som exempel använder det här exemplet programmeringsgränssnittet (API) för [Cleancash-typen A](https://www.retailinnovation.se/produkter)-styrenhet av Retail innovation HTT AB. Version 1.1.4 av CleanCash-API används.
+Commerce-funktionen för Sverige inkluderar ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenhet som kallas *kontrollenheter*. Det här exemplet utökar [funktionen räkenskapsintegrering](fiscal-integration-for-retail-channel.md). Det antas att en enhet är fysiskt ansluten till maskinvarustationerna som kassan är kopplad till. Som exempel använder det här exemplet programmeringsgränssnittet (API) för [Cleancash-typen A](https://www.retailinnovation.se/produkter)-styrenhet av Retail innovation HTT AB. Version 1.1.4 av CleanCash-API används.
 
 Exemplet tillhandahålls i form av källkod och är en del av Retail Software Development Kit (SDK).
 
@@ -66,7 +66,7 @@ Här följer en förklaring av detta format:
 
 - *1* och *2* är enhetsspecifika momskoder.
 - Ett semikolon (;) används som avgränsare.
-- *kod1* och *kod2* är momskoder som har konfigurerat i Retail Headquarters.
+- *kod1* och *kod2* är momskoder som har konfigurerat i Administration.
 
 Styrenheter stöder upp till fyra olika momskoder. Därför kan momskodmappningen ställas in på det sätt som visas här:
 
@@ -118,7 +118,7 @@ Mer information om hur du arbetar med kvittoformat finns i [Kvittomallar och uts
 
 ### <a name="configure-fiscal-integration"></a>Konfigurera räkenskapsintegration
 
-Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställa in räkenskapsintegration för butikskanaler](setting-up-fiscal-integration-for-retail-channel.md):
+Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställa in räkenskapsintegration för Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md):
 
 - [Ställa in process för räkenskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Var noga med att notera inställningarna för den process för räkenskapsregistrering som är [specifika för det här kontrollenhetens integrering av prov](#set-up-the-registration-process).
 - [Ange inställningar för felhantering](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
@@ -126,7 +126,7 @@ Slutför konfigurationsstegen för räkenskapsintegration som beskrivs i [ställ
 
 ## <a name="deployment-guidelines-for-cash-registers-for-sweden"></a>Riktlinjer för distribution av kassaapparater för Sverige
 
-Det här avsnittet fungerar som en distributionsguide som visar hur du aktiverar lokalisering av Microsoft Dynamics 365 Retail för Sverige. Lokaliseringen är en del av Retail SDK. Information om hur du installerar och använder Retail SDK finns i [dokumentation för Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Det här avsnittet fungerar som en distributionsguide som visar hur du aktiverar lokalisering av Microsoft Dynamics 365 Commerce för Sverige. Lokaliseringen är en del av Retail SDK. Information om hur du installerar och använder Retail SDK finns i [dokumentation för Retail SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Det här exemplet består av tillägg för Commerce Runtime (CRT), kassa och Hardware Station. Om du vill köra det här exemplet måste du ändra och bygga CRT och Hardware Station-projekt. Vi rekommenderar att du använder en icke-modifierad Retail SDK för att göra de ändringar som beskrivs i det här avsnittet. Vi rekommenderar också att du använder ett källkontrollsystem, till exempel Microsoft Azure DevOps, där inga filer har ändrats ännu.
 
@@ -142,12 +142,12 @@ CRT tilläggskomponenter inkluderas i CRT-exemplen. För att slutföra följande
 2. I mappen **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** hitta sammansättningsfilen **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
 3. Kopiera sammansättningsfilen till CRT-tilläggsmappen:
 
-    - **Retail Server:** kopiera sammansättningen till mappen **\\bin\\ext** under Microsoft Internet Information Services (IIS) Retail Server webbplatsen.
+    - **Commerce Scale Unit:** kopiera sammansättningen till mappen **\\bin\\ext** under Microsoft Internet Information Services (IIS) Commerce Scale Unit-webbplatsen.
     - **Lokal CRT på Modern POS:** kopiera sammansättningen till mappen **\\ext** under den lokala platsen för CRT Client Broker.
 
 4. Hitta konfigurationsfilen för tillägget för CRT:
 
-    - **Retail Server:** Filen kallas **commerceruntime.ext.config** och finns i mappen **bin\\ext** under IIS Retail Server webbplatsen.
+    - **Commerce Scale Unit:** Filen kallas **commerceruntime.ext.config** och finns i mappen **bin\\ext** under IIS Commerce Scale Unit-webbplatsen.
     - **Lokal CRT på Modern POS:** filen heter **CommerceRuntime.MPOSOffline.Ext.config** och det är under den lokala platsen för CRT-klienten Broker.
 
 5. Registrera CRT-ändringen i konfigurationsfilen för tillägget.
@@ -160,7 +160,7 @@ CRT tilläggskomponenter inkluderas i CRT-exemplen. För att slutföra följande
 
 1. Hitta konfigurationsfilen för tillägget för CRT:
 
-    - **Retail Server:** Filen kallas **commerceruntime.ext.config** och finns i mappen **bin\\ext** under IIS Retail Server webbplatsen.
+    - **Commerce Scale Unit:** Filen kallas **commerceruntime.ext.config** och finns i mappen **bin\\ext** under IIS Commerce Scale Unit-webbplatsen.
     - **Lokal CRT på Modern POS:** filen heter **CommerceRuntime.MPOSOffline.Ext.config** och det är under den lokala platsen för CRT-klienten Broker.
 
 2. Registrera CRT-ändringen i konfigurationsfilen för tillägget.
@@ -241,22 +241,22 @@ Tilläggskomponenterna för Hardware Station ingår i Hardware Station exemplen.
 
 ### <a name="set-up-the-registration-process"></a>Ställa in registrationsprocessen
 
-Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in Retail Headquarters. Mer information finns [Ställ in en räkenskapsregistreringsprocess](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Om du vill aktivera registreringsprocessen, följ dessa steg för att ställa in Administration. Mer information finns [Ställ in en räkenskapsregistreringsprocess](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Öppna **Butik \> Administrationsinställning \> Parametrar \> Delade butiksparametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegration** till **Ja**.
-2. Gå till **Butik \> Kanalinställningar \> Räkenskapsintegration \> Räkenskapskopplingar** och läs in kopplingskonfigurationen. Filens plats är **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml**.
-3. Gå till **Butik \> Kanalinställningar \> Räkenskapsintegration \> Leverantörer av skattedokument** och läs in konfigurationens dokumentleverantör. Filens plats är **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml**.
-4. Gå till **Butik \> Kanalinställning \> Räkenskapsintegration \> Funktionsprofiler för koppling**. Skapa en ny funktionsprofil för koppling och välj dokumentleverantören och kopplingen som du laddade tidigare. Uppdatera datamappningsinställningarna efter behov.
-5. Gå till **Retail \> Kanalinställning \> Räkenskapsintegration \> Tekniska profiler för koppling**. Skapa en ny teknisk profil för koppling och välj kopplingen som du laddade tidigare. Uppdatera kopplingsinställningarna efter behov.
-6. Gå till **Butik \> Kanalinställning \> Räkenskapsintegration \> Grupper för skattekoppling**. Skapa en ny grupp för räkenskapskoppling för den funktionsprofil för koppling som du skapade tidigare.
-7. Gå till **Butik \> Kanalinställning \> Räkenskapsintegration \> Processer för räkenskapsregistrering**. Skapa en ny räkenskapsregistrering, skapa ett steg för räkenskapsregistrering och välj den grupp för räkenskapskoppling som du skapade tidigare.
-8. Gå till **Butik \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**. Välj en funktionsprofil som är kopplad till butiken där registreringsprocessen ska aktiveras. På snabbfliken **Process för räkenskapsregistrering**, välj räkenskapsregistreringsprocessen som du skapade tidigare.
-9. Gå till **Butik \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Maskinvaruprofiler**. Välj en maskinvaruprofil som är länkad till den Hardware Station som styrenheten ska anslutas till. På snabbfliken **Kringutrustning för räkenskaper**, välj teknisk profil för koppling som du skapade tidigare.
-10. Öppna distributionstidsplanen (**Retail \> Retail IT \> Distributionsschema**) och välj jobb **1070** och **1090** för att överföra data till kanaldatabasen.
+1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> Delade parametrar**. På fliken **allmänt** anger du alternativet **Aktivera räkenskapsintegration** till **Ja**.
+2. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Räkenskapskopplingar** och läs in kopplingskonfigurationen. Filens plats är **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml**.
+3. Gå till **Retail och Commerce \> Kanalinställningar \> Räkenskapsintegration \> Leverantörer av skattedokument** och läs in konfigurationens dokumentleverantör. Filens plats är **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml**.
+4. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Funktionsprofiler för koppling**. Skapa en ny funktionsprofil för koppling och välj dokumentleverantören och kopplingen som du laddade tidigare. Uppdatera datamappningsinställningarna efter behov.
+5. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Tekniska profiler för koppling**. Skapa en ny teknisk profil för koppling och välj kopplingen som du laddade tidigare. Uppdatera kopplingsinställningarna efter behov.
+6. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Grupper för skattekoppling**. Skapa en ny grupp för räkenskapskoppling för den funktionsprofil för koppling som du skapade tidigare.
+7. Gå till **Retail och Commerce \> Kanalinställning \> Räkenskapsintegration \> Processer för räkenskapsregistrering**. Skapa en ny räkenskapsregistrering, skapa ett steg för räkenskapsregistrering och välj den grupp för räkenskapskoppling som du skapade tidigare.
+8. Gå till **Butik och handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**. Välj en funktionsprofil som är kopplad till butiken där registreringsprocessen ska aktiveras. På snabbfliken **Process för räkenskapsregistrering**, välj räkenskapsregistreringsprocessen som du skapade tidigare.
+9. Gåt ill **Retail och Commerce \> Kanalinställningar \> Kassainställning \> Kassaprofiler \> Maskinvaruprofiler**. Välj en maskinvaruprofil som är länkad till den Hardware Station som styrenheten ska anslutas till. På snabbfliken **Kringutrustning för räkenskaper**, välj teknisk profil för koppling som du skapade tidigare.
+10. Öppna distributionstidsplanen (**Retail och Commerce \> Retail och Commerce-IT \> Distributionsschema**) och välj jobb **1070** och **1090** för att överföra data till kanaldatabasen.
 
 ### <a name="production-environment"></a>Produktionsmiljö
 
-Föregående procedur aktiverar tilläggen som är komponenter i exemplet på skatteregistreringstjänsten. Förutom att slutföra proceduren måste du följa dessa steg för att skapa distribuerbara paket som innehåller butikskomponenter och för att tillämpa dessa paket i en produktionsmiljö.
+Föregående procedur aktiverar tilläggen som är komponenter i exemplet på skatteregistreringstjänsten. Förutom att slutföra proceduren måste du följa dessa steg för att skapa distribuerbara paket som innehåller Commerce-komponenter och för att tillämpa dessa paket i en produktionsmiljö.
 
 1. Gör följande ändringar i paketkonfigurationsfilerna under mappen **RetailSdk\\Assets**:
 
@@ -300,7 +300,7 @@ Föregående procedur aktiverar tilläggen som är komponenter i exemplet på sk
     ```
 
 4. Starta MSBuild-Kommandotolken för Visual Studio-verktyget och **kör MSBuild** under mappen Retail SDK för att skapa distribuerbara paket.
-5. Tillämpa paketen via Microsoft Dynamics Lifecycle Services (LCS) eller manuellt. Mer information finns [i skapa butiksdistribuerbara paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+5. Tillämpa paketen via Microsoft Dynamics Lifecycle Services (LCS) eller manuellt. Mer information finns i [skapa distribuerbara paket](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ## <a name="design-of-the-extensions"></a>Design av tilläggen
 
@@ -316,7 +316,7 @@ Mer information om design av lösningen av räkenskapsintegration finns i [Proce
     
 Det finns en enda **DocumentProviderCleanCash**-begärandehanterare för dokumentprovidern. Den här hanteraren används för att generera skattedokument för räkenskapsregistreringstjänst.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Retail Headquarters.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på dokumentprovidern för koppling som anges i Administration.
 
 Kopplingen stöder följande begäranden:
 
@@ -325,7 +325,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Inställningar
 
-Konfigurationsfilen **DocumentProviderFiscalCleanCashSample** finns i mappen **konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Retail Headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen **DocumentProviderFiscalCleanCashSample** finns i mappen **konfiguration** för tilläggsprojektet. Syftet med den här filen är att aktivera inställningar för dokumentprovidern som ska konfigureras från Administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
 
 - Mappning av momskoder
 
@@ -339,7 +339,7 @@ Hardware Station-tillägget **HardwareStation.Extension.CleanCashSample**. Den a
 
 **Cleancashhandler** begäranhanteraren är startpunkten för hantering av begäranden till räkenskapsregistreringstjänst.
 
-Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Retail Headquarters.
+Den här hanteraren ärvs från gränssnittet **INamedRequestHandler**. Metoden **HandlerName** är ansvarig för att returnera namnet på hanteraren. Hanterarens namn ska matcha namnet på räkenskapskopplingsnamn som anges i Administration.
 
 Kopplingen stöder följande begäranden:
 
@@ -349,7 +349,7 @@ Kopplingen stöder följande begäranden:
 
 #### <a name="configuration"></a>Inställningar
 
-Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Retail Headquarters. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
+Konfigurationsfilen finns i mappen **konfiguration** för tilläggsprojektet. Syftet med filen är att aktivera inställningar för räkenskapskoppling som ska konfigureras från Administration. Filformatet justeras med kraven för konfiguration av räkenskapsintegration. Följande inställningar är tillagda:
 
 - **Anslutningssträng** – inställningarna för kontrollenhetens anslutning.
 - **Tidsgräns** – hur länge, i millisekunder, som drivrutinen väntar på ett svar från räkenskapsregistreringstjänst.
@@ -360,14 +360,14 @@ Om du använder det tidigare [exemplet för POS-integrering med styrenheter för
 
 ### <a name="migration-process"></a>Migreringsprocess
 
-Migreringen från det tidigare integrationsprovet till det aktuella styrenhetens integrationsprov bör baseras på konceptet med en gradvis uppdatering. Med andra ord bör alla Retail Headquarters och Retail Server-komponenter redan uppdateras innan du börjar uppdatera POS och komponenter för Hardware Station.
+Migreringen från det tidigare integrationsprovet till det aktuella styrenhetens integrationsprov bör baseras på konceptet med en gradvis uppdatering. Med andra ord bör alla Administration och Commerce Scale Unit-komponenter redan uppdateras innan du börjar uppdatera POS och komponenter för Hardware Station.
 
 För att förhindra en situation där en händelse eller transaktion undertecknas två gånger (det vill säga den är undertecknad av både den tidigare tillägget och den nuvarande tillägget), eller där den inte kan undertecknas på grund av den saknade konfigurationen, rekommenderar vi att du stänger av alla POS- och Hardware Station-enheter som använder det tidigare exemplet och uppdaterar dem samtidigt. Den här samtidiga uppdateringen kan göras, till exempel i butik för butik genom att uppdatera butikens funktionsprofil och Hardware Station maskinvaruprofil.
 
 Migreringsprocessen bör bestå av följande steg.
 
-1. Uppdatera Retail Headquarters-komponenterna.
-1. Uppdatera Retail Server-komponenterna och aktivera tilläggen för det aktuella exemplet.
+1. Uppdatera Administration-komponenterna.
+1. Uppdatera Commerce Scale Unit-komponenterna och aktivera tilläggen för det aktuella exemplet.
 1. Kontrollera att alla offlinetransaktioner synkroniseras från MPOS-enheter som har aktiverats offline.
 1. Stäng av alla enheter som använder komponenterna i det tidigare exemplet.
 1. Slutföra alla inställningsuppgifter som beskrivs i avsnittet [ställa in integrationen med kontrollenheter](#setting-up-the-integration-with-control-units).
@@ -384,12 +384,12 @@ Migreringsprocessen bör bestå av följande steg.
 2. I mappen **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** hitta sammansättningsfilen **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll**.
 3. Kopiera sammansättningsfilen till CRT-tilläggsmappen:
 
-    - **Retail Server:** kopiera sammansättningen till mappen **\\bin\\ext** under IIS Retail Server webbplatsen.
+    - **Commerce Scale Unit:** kopiera sammansättningen till mappen **\\bin\\ext** under IIS Commerce Scale Unit-webbplatsen.
     - **Lokal CRT på Modern POS:** kopiera sammansättningen till mappen **\\ext** under den lokala platsen för CRT Client Broker.
 
 4. Hitta konfigurationsfilen för tillägget för CRT:
 
-    - **Retail Server:** Filen kallas **CommerceRuntime.ext.config** och finns i mappen **bin\\ext** under IIS Retail Server webbplatsen.
+    - **Commerce Scale Unit:** Filen kallas **CommerceRuntime.ext.config** och finns i mappen **bin\\ext** under IIS Commerce Scale Unit-webbplatsen.
     - **Lokal CRT på Modern POS:** Filen heter **CommerceRuntime.MPOSOffline.Ext.config** och den är i mappar **bin\\ext** under den lokala platsen för CRT-klienten Broker.
 
     > [!WARNING]

@@ -3,7 +3,7 @@ title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017714"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100318"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -71,7 +71,7 @@ Om du vill spara ändringarna följer du stegen nedan.
 2.  Så här ändrar du den befintliga vyn:
      1. Välj **Spara**. Observera att den här åtgärden inte kan aktiveras för låsta vyer. 
 3.  För att skapa en ny vy:
-     1.    Välj **Spara som...**. 
+     1.    Välj **Spara som**. 
      2.    Ange ett vynamn och en beskrivning (tillval).
      3.    Välj **Spara**.
 
@@ -83,9 +83,9 @@ Om du vill ändra standardvyn för en sida ska du följa de här stegen:
 2.  Välj ett vynamn för att öppna vyväljaren. 
 3.  Välj **mer** och sedan **fäst som standard**.  
 
-När du skapar en ny vy (med hjälp av åtgärden **Spara som...**), kan du också göra den nya vyn till standardvy genom att ange alternativet **fäst som standard** innan du sparar vyn.
+När du skapar en ny vy (med hjälp av åtgärden **Spara som**), kan du också göra den nya vyn till standardvy genom att ange alternativet **fäst som standard** innan du sparar vyn.
 
-Observera att i vissa fall körs inte frågan som är kopplad till standardvyn första gången du navigerar till en sida. Om du till exempel navigerar genom en panel till en sida, körs panelens fråga oavsett vilken fråga som är kopplad till standardvyn. Om du navigerar till en sida vars klassiska vy redan har en definierad fråga kommer den ursprungliga frågan att köras ursprungligen i stället för standardvyfrågan. När detta inträffar får du ett meddelande om att ett informationsmeddelande visas när vyn läses in. När du byter vy efter det att sidan har lästs in ska vyfrågan köras som förväntat.
+Observera att i vissa fall körs inte frågan som är kopplad till standardvyn första gången du navigerar till en sida. Om du till exempel navigerar genom en panel till en sida, körs panelens fråga oavsett vilken fråga som är kopplad till standardvyn. Om du navigerar till en sida vars standard vy redan har en definierad fråga kommer den ursprungliga frågan att köras i stället för standardvyfrågan. När detta inträffar får du ett meddelande om att ett informationsmeddelande visas när vyn läses in. När du byter vy efter det att sidan har lästs in ska vyfrågan köras som förväntat. Från och med version 10.0.10 plattformsuppdatering 34 kommer informationsmeddelandet att innehålla en inbäddad åtgärd som tillåter att du läser in standardvisningens fråga direkt.
 
 ## <a name="managing-personal-views"></a>Hantera personliga vyer 
 I dialogrutan **Hantera mina vyer** får du grundläggande underhållsfunktioner för dina personliga vyer och ordningen på vyer i vyväljaren. Du öppnar den här sidan genom att klicka på vyns namn för att öppna vyväljarens listruta, välj **Mer** och välj sedan **hantera mina vyer**.  

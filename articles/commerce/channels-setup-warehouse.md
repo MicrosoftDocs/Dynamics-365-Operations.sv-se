@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057866"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113769"
 ---
 # <a name="warehouse-set-up"></a>Inställning av lagerställe
 
@@ -33,7 +33,7 @@ I det här avsnittet beskrivs hur du ställer in ett lagerställe som ska använ
 
 ## <a name="overview"></a>Översikt
 
-Varje handelskanal kräver ett konfigurerat lagerställe för att det ska associeras med det. Följande procedurer ger den minsta konfiguration som krävs för att ställa in ett lager ställe för en handelskanal. Mer information om inställningar för lagerställen finns i [Lagerstyrning – översikt](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
+Varje handelskanal kräver ett konfigurerat lagerställe för att det ska associeras med det. Följande procedurer ger den minsta konfiguration som krävs för att ställa in ett lager ställe för en handelskanal. Mer information om inställningar för lagerställen finns i [Lagerstyrning – översikt](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="configure-a-warehouse-site"></a>Konfigurera en lagerställeplats
 
@@ -131,7 +131,7 @@ Följande bild visar information om ett konfigurerat lagerställe.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Lagerstyrning – översikt](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Lagerstyrning – översikt](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Översikt över kanaler](channels-overview.md)
 

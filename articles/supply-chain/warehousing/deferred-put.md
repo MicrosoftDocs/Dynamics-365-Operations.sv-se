@@ -16,18 +16,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
-ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
+ms.openlocfilehash: 470b1d947c3ead862dad8f5d40fb14e45ecc71a6
+ms.sourcegitcommit: 4398fdf783b8557029284bf95ce95d389fcf4162
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2815798"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100217"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Uppskjuten bearbetning av lagerhållningsarbete
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pivate-preview-banner.md)]
 
 I det här avsnittet beskrivs de funktioner som gör att uppskjuten bearbetning av placeringsoperationer för lagerställearbete i Dynamics 365 Supply Chain Management.
 

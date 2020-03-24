@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 9e5d90eaf1815bbe54b0bea40d92a0a993a23b75
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057624"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113815"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Ange en meddelandeprofil för e-post
 
@@ -35,7 +35,7 @@ I det här avsnittet beskrivs hur du skapar en meddelandeprofil för e-post i Mi
 
 Innan du skapar kanaler ska du ställa in en profil så att e-postmeddelanden kan skickas ut för olika händelser, t.ex. skapa order, orderleveransstatus och betalningsfel.
 
-För ytterligare information om e-postkonfiguration, se [konfigurera och skicka e-post](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+För ytterligare information om e-postkonfiguration, se [konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="create-an-email-notification-profile"></a>Skapa en meddelandeprofil för e-post
 
@@ -84,7 +84,7 @@ I bilden nedan visas några exempel på Inställningar för meddelande för hän
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Konfigurera och skicka e-post](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email)
+[Konfigurera och skicka e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json)
 
 [Översikt över kanaler](channels-overview.md)
 

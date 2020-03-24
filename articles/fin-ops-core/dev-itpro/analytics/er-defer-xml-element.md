@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: e9f6161186d04b690ee560dac7ee12974d070506
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015395"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120888"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Skjut upp körningen av XML-element i ER-format
 
@@ -47,7 +47,7 @@ Alternativet **uppskjuten körning** stöds bara för XML-element som bara finns
 
 Alternativet **uppskjuten körning** stöds inte för XML-element som finns i formatelement **vanliga\\fil** när alternativet **dela fil** anges till **ja**. För mer information om hur du delar upp XML-filer, se [Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet](er-split-files.md).
 
-## <a name="Example"></a>Exempel: Skjut upp körningen av XML-element i ER-format
+## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Exempel: Skjut upp körningen av XML-element i ER-format
 
 Följande steg förklarar hur en användare i systemadministratören eller funktionell konsult för elektronisk rapportering [roll](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) kan konfigurera ett ER-format som innehåller ett XML-element där exekveringsordningen skiljer sig från ordningen i formathierarkin.
 

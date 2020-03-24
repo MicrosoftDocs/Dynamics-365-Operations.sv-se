@@ -3,7 +3,7 @@ title: Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 description: Detta avsnitt beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3014a7b22c47f99b5c57fd6acd9be8d89c6fb8ab
+ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004121"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095807"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning
 
@@ -30,10 +30,10 @@ ms.locfileid: "3004121"
 
 ## <a name="feature-exposure"></a>Funktionen exponering
 
-Om du vill använda lagerstyrning för att bearbeta produkt i faktisk/nominell vikt måste du använda en licensnyckelkonfiguration för att aktivera funktionen. (Gå till **Systemadministration \> Inställningar \> Licenskonfiguration**. Klicka sedan på fliken **konfigurationsnycklar**, expandera **handel \> hantering av lager och transport** och markera kryssrutan för **faktisk/nominell vikt för lagerstället**).
+Om du vill använda lagerstyrning för att bearbeta produkt i faktisk/nominell vikt måste du använda en licensnyckelkonfiguration för att aktivera funktionen. Öppna **Systemadministration \> Inställningar \> Licenskonfiguration**. Klicka sedan på fliken **konfigurationsnycklar**, expandera **handel \> hantering av lager och transport** och markera kryssrutan för **faktisk/nominell vikt för lagerstället**.
 
 > [!NOTE]
-> Både **hantering av lager och transport** licensnyckeln för konfiguration och **Processfördelning \> faktisk/nominell vikt** måste också aktiveras. Om du vill ställa in konfigurationsnycklarna för faktisk/nominell vikt måste du också aktivera funktionen med hjälp av arbetsytan **funktionshantering**. Huvudfunktionen som måste aktiveras är **Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning**. En annan relaterad men valfri funktion som du kanske vill aktivera är **ändringar i lagerstatus för produkter för faktisk/nominell vikt**. Den här funktionen ger stöd för ändringar av lagerstatus för produkter som har aktiverats för faktisk/nominell vikt.
+> Både **hantering av lager och transport** licensnyckeln för konfiguration och **Processfördelning \> faktisk/nominell vikt** måste också aktiveras. Om du vill ställa in konfigurationsnycklarna för faktisk/nominell vikt måste du också aktivera funktionen med hjälp av arbetsytan **funktionshantering**. Huvudfunktionen som måste aktiveras är **Bearbetning av produkt i faktisk/nominell vikt med lagerstyrning**. Två relaterade funktioner som du kanske vill aktivera är **lagerstatusändringar för produkter för faktisk/nominell vikt** och **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga**.
 
 Efter att licenskonfigurationens nyckel är inaktiverad, när du skapar en frisläppt produkt, kan du välja **faktisk/nominell vikt**. Du kan också koppla frisläppt produkt till en lagringsdimension som parametern **använda processer för lagerhantering** väljs för.
 
@@ -107,6 +107,7 @@ När en artikel är en kod, spåras dessutom en parameter för **Inhämtningsmet
 **När spårning av taggar för faktisk/nominell vikt används** måste taggen alltid skapas för varje faktisk/nominell viktenhet som tas emot och varje tagg måste alltid associeras med en vikt.
 
 Till exempel **Låda** är faktisk/nominell viktenheten och du får en lastpall med åtta lådor. I det här fallet måste åtta unika taggar för faktisk/nominell vikt skapas och en vikt måste vara associerad med varje tagg. Beroende på taggen för inkommande faktisk/nominell vikt måste antingen vikten för alla åtta lådor registreras och den genomsnittliga vikten som sedan kan distribueras till varje låda eller en unik vikt registreras in för varje låda.
+När du använder funktionen **Använd befintliga koder för faktisk/nominell vikt vid rapportering av tillverkningsorder som färdiga** med processen aktiverad via en menyartikel på en mobil enhet, uppdateras lagret baserat på den befintliga informationen på fliken om faktisk/nominell vikt. Detta innebär att modulen för lagerstyrning inte ber om att fånga upp taggdata för faktisk/nominell vikt som en del av en produktions rapport som en avslutad operation.
 
 **När spårning av tagg för faktisk/nominell vikt inte används** registreras vikten för varje dimensionsuppsättning (till exempel för varje registreringsskylt och spårningsdimension). Du kan också registrera vikten in baserat på aggregerad nivå, t.ex. fem registreringsskyltar (lastpallar).
 

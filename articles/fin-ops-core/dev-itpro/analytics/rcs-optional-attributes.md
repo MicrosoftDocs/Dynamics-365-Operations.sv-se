@@ -16,14 +16,16 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 10795c90cb90961c17a4326b71ed43dc72039f2b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769957"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117435"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Importera filer i XML-format med valfria attribut
+
+[!include [banner](../includes/banner.md)]
 
 Du kan utforma elektronisk rapportering (ER)-format som tolkar inkommande elektroniska dokument dokument i XML-format. Vissa attribut för XML-element kan anges i designat ER-format som valfritt. Det gör att du kan hantera inkommande filer med och utan sådana XML-attribut korrekt. Du kan sedan använda innehållet från dessa filer till att uppdatera programdata.
 
@@ -52,17 +54,17 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 7. Klicka på **Lägg till**.
 8. Klicka på **Nytt** om du vill öppna dialogrutan.
 9. Ange "List" i fältet **Namn**.
-10. Välj **Postlista** i fältet **Artikeltyp**.
-11. Klicka på **Lägg till**.
-12. Klicka på **Nytt** om du vill öppna dialogrutan.
-13. Ange "Code" i fältet **Namn**.
-14. Välj **Sträng** i fältet **Artikeltyp**.
-15. Klicka på **Lägg till**.
-16. Klicka på **Spara**.
-17. Stäng sidan.
-18. Klicka på **Ändra status**.
-19. Klicka på **Slutför**.
-20. Klicka på **OK**.
+10.    Välj **Postlista** i fältet **Artikeltyp**.
+11.    Klicka på **Lägg till**.
+12.    Klicka på **Nytt** om du vill öppna dialogrutan.
+13.    Ange "Code" i fältet **Namn**.
+14.    Välj **Sträng** i fältet **Artikeltyp**.
+15.    Klicka på **Lägg till**.
+16.    Klicka på **Spara**.
+17.    Stäng sidan.
+18.    Klicka på **Ändra status**.
+19.    Klicka på **Slutför**.
+20.    Klicka på **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Skapa ett format för dataimport
 1. Klicka på **Skapa konfiguration** om du vill öppna dialogrutan.
@@ -81,32 +83,32 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 7. I trädet, välj **XML\Element**.
 8. Ange "document" i fältet **Namn**.
 9. Välj **Ett många** i fältet **Sammansatt**.
-10. Klicka på **OK**.
-11. Välj **root\document** i trädet.
-12. Klicka på **Lägg till** för att öppna dialogrutan.
-13. I trädet välj **XML\Attribute**.
-14. I fältet **Namn**, ange "id".
-15. Klicka på **OK**.
-16. Klicka på **Spara**.
+10.    Klicka på **OK**.
+11.    Välj **root\document** i trädet.
+12.    Klicka på **Lägg till** för att öppna dialogrutan.
+13.    I trädet välj **XML\Attribute**.
+14.    I fältet **Namn**, ange "id".
+15.    Klicka på **OK**.
+16.    Klicka på **Spara**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Utforma en formatmappning för att spara analyserad information till datamodellen
-1.  Klicka på **Mappa format till modell**.
-2.  Klicka på **Ny**.
-3.  Ange eller välj ett värde i fältet **Definition**.
-4.  Ange "Mapping" i fältet **Namn**.
-5.  Klicka på **Spara**.
-6.  Klicka på **Designer**.
-7.  Expandera **format** i trädet.
-8.  I trädet expandera **format\root: XML Element(root)**.
-9.  I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-10. Klicka på **Bind**.
-11. I trädet expanderar du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-12. I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
-13. Expandera **List = format.root.document**.
-14. Välj **List = format.root.document\Code** i trädet.
-15. Klicka på **Bind**.
-16. Klicka på **Spara**.
-17. Stäng sidan.
+1.    Klicka på **Mappa format till modell**.
+2.    Klicka på **Ny**.
+3.    Ange eller välj ett värde i fältet **Definition**.
+4.    Ange "Mapping" i fältet **Namn**.
+5.    Klicka på **Spara**.
+6.    Klicka på **Designer**.
+7.    Expandera **format** i trädet.
+8.    I trädet expandera **format\root: XML Element(root)**.
+9.    I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+10.    Klicka på **Bind**.
+11.    I trädet expanderar du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+12.    I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
+13.    Expandera **List = format.root.document**.
+14.    Välj **List = format.root.document\Code** i trädet.
+15.    Klicka på **Bind**.
+16.    Klicka på **Spara**.
+17.    Stäng sidan.
 
 ## <a name="run-format-mapping"></a>Kör mappning av format
 1. Klicka på **Kör**.

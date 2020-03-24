@@ -1,9 +1,9 @@
 ---
 title: Skapa och arbeta med anpassade fält
-description: Det här avsnittet visar hur du skapar egna fält för att anpassa programmet så att det passar verksamheten.
+description: Det här avsnittet visar hur du skapar anpassade fält via användargränssnittet för att anpassa programmet så att det passar verksamheten.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812515"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112346"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Skapa och arbeta med anpassade fält
 
 [!include [banner](../includes/banner.md)]
 
-Trots att det finns en omfattande uppsättning av färdiga fält för hantering av en mängd olika affärsprocesser, kan ibland företag ha behov av att söka ytterligare information i systemet. För att tillgodose detta behov tillåter dig att skapa egna fält för att anpassa programmet så att det passar ditt företag, förutsatt att du har behörighet till funktionen.
+Trots att det finns en omfattande uppsättning av färdiga fält för hantering av en mängd olika affärsprocesser, kan ibland företag ha behov av att söka ytterligare information i systemet. Även om programmerare kan användas för att lägga till dessa fält som tillägg i utvecklingsverktygen, tillåter funktionen anpassade fält att fält läggs till direkt från användargränssnittet, så att du kan skräddarsy programmet så att det passar ditt företag med webbläsaren.
 
-Möjligheten att lägga till egna fält finns i plattformsuppdatering 13 och senare.
+Möjligheten att lägga till egna fält finns i plattformsuppdatering 13 och senare. Endast användare med särskilda behörigheter har åtkomst till den här funktionen.
 
 Det här videoklippet visar hur enkelt det är att lägga till ett anpassat fält på en sida: [Lägga till anpassade fält](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -159,3 +159,7 @@ Av prestandaskäl och tekniska skäl kan för tillfället endast tabeller som up
 - Tabellen kan inte utöka en annan tabell.
 - Registret kan inte klassas som ett systemregister.
 - Registret kan inte vara ett tillfälligt register.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jag referera till anpassade fält från utvecklingsverktygen?  
+
+Anpassade fält kan bara hanteras via användargränssnittet och kan inte refereras via kod. 

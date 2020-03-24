@@ -3,7 +3,7 @@ title: Reservera Talent
 description: I det här avsnittet får du veta hur du skapar en ny miljö för Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/15/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: d06c0d14fb99e5544a5da05078f5b3a559f9e806
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: d7c4a8174007384370ae320b3874e104c04b71a5
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025519"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124714"
 ---
 # <a name="provision-talent"></a>Etablera Talent
 
@@ -34,17 +34,23 @@ För att komma igång måste en global administratör logga in på [Microsoft Dy
 För att hantera dina Talent-miljöer med LCS måste först skapa ett LCS-projekt.
 
 1. Logga in på [LCS](https://lcs.dynamics.com/Logon/Index) med det konto som du använder för din Talent-prenumeration.
+
 2. Klicka på plustecknet (**+**) för att skapa ett projekt.
+
 3. Välj **Microsoft Dynamics 365 Talent** som produktversion och produktnamn.
+
 4. Välj **Dynamics 365 Talent**-metoden.
-5. Markera **Skapa**.
+
+5. Markera **Skapa**. 
 
 Mer information om hur du kommer igång med Talent finns i metoden för **Talent** som du skapade i det nya projektet. När du har skapat projektet slutför du stegen nedan för att skapa din Talent-miljö.
 
 ## <a name="provision-a-talent-project"></a>Skapa ett Talent-projekt
+
 När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 
 1. I LCS-projektet väljer du fliken **App-hantering for Talent**.
+
 2. Ange om detta är ett begränsat läge eller produktionsinstans av Talent. Funktionerna för förhandsgranskning kan finnas tillgängliga i begränsade instanser för att möjliggöra tidig återrapportering och testning. 
 
     > [!NOTE]
@@ -52,13 +58,13 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 
     > [!NOTE]
     > Instanstypen Talent är separat från instanstypen för Microsoft Power Apps-miljön, som du anger i Power Apps-administrationscentret.
+
 3. Markera alternativet **Inkludera demodata** om du vill att din miljö med samma demodatauppsättning används i Talent testkörning. Detta är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer.  Observera att du måste välja det här alternativet vid den första implementeringen. Du kan inte uppdatera en befintlig distribution senare.
+
 4. Talent etableras alltid i en Microsoft Power Apps-miljö, detta i syfte att möjliggöra Power Apps-integrering och utbyggnad. Läs avsnittet ”Välja en Power Apps-miljö” i det här ämnet innan du fortsätter. Om du inte redan har en Power Apps-miljö, välj hantera miljöer i LCS eller gå till Power Apps administrationscenter. Följ stegen för att [skapa en Power Apps-miljö](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
-    > [!NOTE]
-    > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en Power Apps P2-licens. Om din organisation inte har en licens för Power Apps P2 kan du skaffa en från din CSP eller Prissättningssidan för [Power Apps](https://powerapps.microsoft.com/pricing/).
-
 5. Välj den miljö som du vill konfigurera Talent på.
+
 6. Välj **Ja** för att acceptera villkoren och börja implementeringen.
 
     Den nya miljön visas i listan över miljöer i navigeringsfönstret till vänster. Du kan emellertid inte börja att använda miljön förrän objektets implementeringsstatus uppdateras till **Implementera**. Den här processen tar normalt några minuter. Om försörjningprocessen misslyckas måste du kontakta Support.
@@ -77,9 +83,13 @@ Integreringen mellan Talent och Power Apps-miljöer låter dig integrera och ut�
 Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som ska användas för att distribuera Talent: 
 
 1. I LCS, välj **Hantera miljöer** eller gå direkt till Power Apps Administratörscenter, där du kan visa befintliga miljöer och skapa nya miljöer.
+
 2. En enskild Talent-miljö mappas till en enda Power Apps-miljö.
+
 3. En Power Apps-miljö "innehåller" Talent-programmet tillsammans med motsvarande Power Apps, Power Automate och Common Data Service-program. Om Power Apps-miljön tas bort tas även apparna bort. Vid tillhandahållande av en Talent-miljö kan du tillhandahålla antingen en **Utvärderingsversion**- eller **Produktion**-miljö. Välj typ av miljö baserat på hur miljön kommer att användas. 
+
 4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Vi rekommenderar att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en Power Apps-miljö.
+
 5. Följande Power Apps-miljöer kan inte användas för Talent och filtreras i urvalslistan i LCS:
  
     - **Standardinställda Power Apps-miljöer** - Även om varje innehavare konfigureras automatiskt med en standardmiljö för Power Apps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till Power Apps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med Power Apps eller Power Automate.
@@ -91,4 +101,5 @@ Använd följande riktlinjer när du bestämmer vilka Power Apps-miljöer som sk
 6. När du har kontrollerat den korrekta miljön kan du fortsätta med etableringsprocessen. 
  
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
+
 Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst måste du lägga till användare och tilldela dem lämpliga roller i Personal-miljön. Global administratör som har distribuerat Talent måste också starta både Attract och Onboard för att slutföra initieringen och aktivera åtkomst för andra innehavare.  Tills detta inträffar kan andra användare inte komma åt Onboard och Attract och får åtkomstfel. Mer information finns i [skapa nya användare](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela användare till säkerhetsroller](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

@@ -3,7 +3,7 @@ title: Integrationsparametrarna Project Service Automation
 description: Det här avsnittet beskriver hur du konfigurerar hur standarddata anges när du integrerar Microsoft Dynamics 365 for Project Service Automation med Microsoft Dynamics 365 Finance.
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,20 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: f7cef5384812e0dcb7d5e084ddd7668a7687a259
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cd09dad15112fd71bfd386e0072a77a4121c96e0
+ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175038"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096261"
 ---
 # <a name="project-service-automation-integration-parameters"></a>Parametrar för Project Service Automation-integration
 
 [!include[banner](../includes/banner.md)]
 
 På **Parametrar för Project Service Automation-integration** på sidan kan du konfigurera hur skrivs standarddata när du integrerar Dynamics 365 Project Service Automation med Dynamics 365 Finance. Följande fält måste konfigureras för att projekt ska kunna synkroniseras från Project Service Automation till Finance.
+
+Om du vill öppna sidan **Parametrar för Project Service Automation-integration** gå till **Projekthantering och redovisning** \> **Inställningar** \> **Parametrar för Dynamics 365 for Project Service Automation-integration**. 
 
 > [!NOTE]
 > - Projektuppgiftsintegration, utgiftstransationskategorier, uppskattningar av timme, uppskattning av utgifter och funktionslåsning är tillgängliga i version 8.0.

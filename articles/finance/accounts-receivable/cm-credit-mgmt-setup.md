@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071670"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124195"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 I det här avsnittet beskrivs alternativen som du kan använda för att konfigurera kredithantering efter företagets behov. Du börjar använda kredithanteringsfunktioner genom att ställa in parametrarna på sidan **parametrar för kredithantering** (**kredithantering \> inställningar \> parametrar för kredithantering**).
 

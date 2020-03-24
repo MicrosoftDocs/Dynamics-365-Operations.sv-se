@@ -3,7 +3,7 @@ title: Dataallokering för budgetplanering
 description: Det här avsnittet ger en beskrivning av olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 Finance och hur de kan användas.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772086"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106892"
 ---
 # <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
@@ -35,6 +35,9 @@ Du kan fördela data i en budgetplan på många sätt för att exakt att beskriv
 
 ## <a name="allocation-methods"></a>Allokeringsmetoder
 Tre allokeringsmetoder (Allokera över perioder, Allokera över dimensioner Använd allokeringsregler för redovisning kan skapa budgetplanrader som baseras på rader i samma budgetplan. Tre andra metoder (Aggregera, Distribuera och Kopiera från budgetplan) kan skapa budgetplanrader i andra budgetplaner. För alla sex allokeringmetoder anger du målscenariot. Målscenariot kan antingen vara samma som källscenariot eller skilja sig från källscenariot. Dessutom kan du ange om nya rader bifogas till budgetplanen eller om de aktuella raderna i budgetplanen ska ersättas.
+
+> [!NOTE] 
+> Ett unikt scenario ska användas för aggregering som skiljer sig från det scenario som används för distribution eller andra ändringar som har utförts i den överordnade planen.  
 
 [![Allokeringsmetoden Allokera över perioder](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Allokera över flera perioder** – En kategori för periodallokering används för att allokera budgetplanraderna från källbudgetplanscenariot över perioder i målscenariot. Källbeloppet tilldelas flera rader i målscenariot baserat på den procentsats och det datum som har anges i kategorin för periodallokering.         

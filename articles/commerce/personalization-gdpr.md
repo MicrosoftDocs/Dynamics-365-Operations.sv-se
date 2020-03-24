@@ -3,7 +3,7 @@ title: Avanmälan av anpassade rekommendationer
 description: I det här avsnittet beskrivs hur du kan låta kunderna avanmäla si från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8e7b800218f68167901d86d61ae483680a04cfab
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: a6d2388e863135c2b6d51af915b606a56f0603a8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025282"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127754"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Avanmälan av anpassade rekommendationer
 
@@ -85,12 +85,22 @@ Följande exempel visar hur en återförsäljare kan utföra uppgiften.
 
 [Översikt av produktrekommendationer](product-recommendations.md)
 
+[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
+
 [Aktivera produktrekommendationer](enable-product-recommendations.md)
 
 [Aktivera anpassade rekommendationer](personalized-recommendations.md)
 
-[Lägg till produktrekommendationer på sidor](add-reco-list-to-page.md)
+[Lägga till rekommendationslistor på en näthandelsplats](add-reco-list-to-page.md)
 
-[Lägg till rekommendationspanelen i kassaenheter](add-recommendations-control-pos-screen.md)
+[Lägg till produktrekommendationer i kassan](product.md)
 
-[Översikt över produktsamlingsmodul](product-collection-module-overview.md)
+[Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
+
+[Justera rekommendationsresultat från AI-ML](modify-product-recommendation-results.md)
+
+[Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
+
+[Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
+
+[Vanliga frågor om produktrekommendationer](faq-recommendations.md)

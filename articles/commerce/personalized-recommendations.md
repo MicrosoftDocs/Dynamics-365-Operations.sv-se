@@ -3,7 +3,7 @@ title: Aktivera anpassade produktrekommendationer
 description: I det här avsnittet beskrivs hur du gör anpassade produktrekommendationer tillgängliga för kunder i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 01/28/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b3c6140b8bd3ea15458223c0f61810421d0b2bc
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: bdb56a1f45cdea1832bd269502e534efdb207b03
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025283"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127915"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivera anpassade rekommendationer
 
@@ -110,12 +110,22 @@ Om du vill använda anpassningar för en befintlig rekommendations lista i webbp
 
 [Översikt av produktrekommendationer](product-recommendations.md)
 
+[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
+
 [Aktivera produktrekommendationer](enable-product-recommendations.md)
 
-[GDPR och produktrekommendationer](personalization-gdpr.md)
+[Avanmäl anpassade rekommendationer](personalization-gdpr.md)
 
-[Lägg till produktrekommendationer på sidor](add-reco-list-to-page.md)
+[Lägga till rekommendationslistor på en näthandelsplats](add-reco-list-to-page.md)
 
-[Lägg till rekommendationspanelen i kassaenheter](add-recommendations-control-pos-screen.md)
+[Lägg till produktrekommendationer i kassan](product.md)
 
-[Översikt över produktsamlingsmodul](product-collection-module-overview.md)
+[Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
+
+[Justera rekommendationsresultat från AI-ML](modify-product-recommendation-results.md)
+
+[Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
+
+[Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
+
+[Vanliga frågor om produktrekommendationer](faq-recommendations.md)

@@ -1,6 +1,6 @@
 ---
 title: Kopiera en instans
-description: ''
+description: Du kan använda Microsoft Dynamics Lifecycle Services (LCS) för att kopiera en Microsoft Dynamics 365 Human Resources-databas till en miljö i begränsat läge.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0bbe325edb65cad0c1912e0a6ade559e5675dc58
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: bb363369994d99f358be0c23cdaf1dbc80b644e5
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010552"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092302"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
 
@@ -68,7 +68,7 @@ Om du vill slutföra den här uppgiften kopierar du först en instans och loggar
 
 4. I åtgärdsfönstret **Kopiera en instans** välj instansen som ska skrivas över och välj sedan **Kopiera**. Vänta tills värdet på fältet **Kopieringsstatus** uppdateras till **Slutförd**.
 
-   ![[Välj instans som ska skrivas över](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Markera instansen som ska skrivas över](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Välj **Power Platform** och logga in på administrationscenter för Microsoft Power Platform.
 

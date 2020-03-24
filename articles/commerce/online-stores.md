@@ -3,7 +3,7 @@ title: Ställ in en kanal för onlinebutik
 description: Den här artikeln innehåller information om onlinebutikskanaler för detaljhandel och hur du ställer in dem i Dynamics 365 Commerce.
 author: kfend
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c427b0eba2120123a47f52029d70896be88b9ec0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b719e40720b091eec879edf332ab63db710a1ebc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024128"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096904"
 ---
 # <a name="set-up-an-online-store-channel"></a>Ställ in en kanal för onlinebutik
 
@@ -71,3 +71,27 @@ Organisationshierarkier används för att strukturera handelskanaler och för at
 När du skapar en organisationshierarki måste du tilldela ett syfte till den. Syftet anger hur hierarkin används i affärsstrukturen. Du kan skapa en organisationshierarki för dina Butiksåtgärder och användning som hierarkin för sortiment, påfyllnad och rapportering. 
 
 Alternativt kan du skapa en separat organisationshierarki för varje syfte. Du kan även skapa flera hierarkier som har samma syfte, och tilldela en separat kanal för var och en. Om du vill publicera produktkataloger i onlinebutiken, ska du åtminstone lägga till onlinebutiken i en organisationshierarki för sortiment. Produkterna i en katalog väljs från de sortiment som tilldelats till onlinebutiken. När katalogen publiceras, jämför publiceringsprocessen giltighetsdatum för sortimentet som tilldelats onlinebutiken med de produkter som ingår i katalogen för att avgöra vilka produkter som ska vara tillgängliga i onlinebutiken.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Konfigurera ditt domännamn](configure-your-domain-name.md)
+
+[Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
+
+[Skapa en e-handelsplats](create-ecommerce-site.md)
+
+[Associera en online-webbplats med en kanal](associate-site-online-store.md)
+
+[Hantera robots.txt-filer](manage-robots-txt-files.md)
+
+[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+
+[Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
+
+[Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
+
+[Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
+
+[Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
+
+[Aktivera platsbaserad butiksdetektering](enable-store-detection.md)

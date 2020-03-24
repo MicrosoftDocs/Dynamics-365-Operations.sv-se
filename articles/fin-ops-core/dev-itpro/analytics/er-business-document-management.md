@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957377"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117347"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
+
+[!include [banner](../includes/banner.md)]
 
 Affärsanvändare använder ramverket [elektronisk rapportering (ER)](general-electronic-reporting.md) för att konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Användare kan också definiera dataflödet för att ange vilka programdata som placeras i genererade dokument. I ER-ramverket genereras utgående dokument i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument) med hjälp av fördefinierade mallar. Mallarna fylls med data som krävs i enlighet med konfigurerat dataflöde när de dokument som krävs skapas. Varje konfigurerat format kan publiceras som en del av en ER-lösning för att generera specifika utgående dokument. Detta representeras av en ER-formatkonfiguration som kan innehålla mallar som du kan använda för att generera olika utgående dokument. Företagsanvändare kan använda det här ramverket för att hantera nödvändiga affärsdokument.
 
@@ -147,7 +149,7 @@ Information om hur du ställer in de obligatoriska parametrarna för dokumenthan
 
 ![Ställ in dokumenttyp för dokumenthantering](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Ställa in parametrar</a>
+### <a name=""></a><a name="SetupBdmParameters">Ställa in parametrar</a>
 
 Grundläggande inställningar för affärsdokumenthantering kan ställas in på sidan **Parametrar för affärsdokument**. Endast vissa användare har åtkomst till sidan. Dessa innefattar:
 
@@ -158,7 +160,7 @@ Använd följande procedur om du vill ställa in de grundläggande parametrarna 
 
 1. Logga in som en användare med åtkomst till sidan **Parametrar för affärsdokument**.
 2. Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Hantering av affärsdokument** \> **Parametrar för affärsdokument**.
-3.  På sidan **Parametrar för affärsdokument**, på fliken **Bilagor**, i fältet **SharePoint-dokumenttyp**, definierar du den dokumenttyp som ska användas för att tillfälligt spara mallar i Office-format när de redigeras med Office-programmen. 
+3.    På sidan **Parametrar för affärsdokument**, på fliken **Bilagor**, i fältet **SharePoint-dokumenttyp**, definierar du den dokumenttyp som ska användas för att tillfälligt spara mallar i Office-format när de redigeras med Office-programmen. 
 
 > [!NOTE]
 > Endast dokumenttyper som konfigureras med hjälp en SharePoint-plats är tillgängliga för den här parametern.
@@ -288,13 +290,13 @@ Sidan **BDM-mallredigerare** öppnas. Den valda mallen blir tillgänglig för re
 
 ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Redigera en mall i Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Redigera en mall i Office 365</a>
 
 Du kan inte ändra mall med Office 365. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet från **Vanligt** till **Fetstil** i Office Online. Dessa ändringar sparas automatiskt för den redigerbara mallen som lagras i den primära mallens lagringsutrymme (som standard Azure blob-lagringen). Detta är konfigurerat för ER-ramverket.
 
 ![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Redigera en mall i Office-skrivbordsprogrammet</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Redigera en mall i Office-skrivbordsprogrammet</a>
 
 > [!NOTE]
 > Den här funktionen är endast tillgänglig om parametern **SharePoint dokumenttyp** är korrekt konfigurerad. Mer information finns i [Konfigurera parametrar](#SetupBdmParameters).

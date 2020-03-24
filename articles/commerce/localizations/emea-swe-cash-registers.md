@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 804d2cd452033e9c00f2b89ed753c556d62d5674
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: c36e514486bd1359d655f6fce31dbac8f663afbf
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004722"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124347"
 ---
 # <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
@@ -38,7 +38,7 @@ Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sv
 
 ### <a name="common-pos-features"></a>Vanliga kassafunktioner
 
-Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Hjälpresurser för Dynamics 365 Retail](../index.md).
+Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Commerce-startsida](../index.md).
 
 Dessutom har följande kassafunktioner som implementerades för Sverige gjorts tillgängliga för kunder i alla länder eller regioner:
 
@@ -81,7 +81,7 @@ Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod*
 
 ## <a name="setting-up-commerce-for-sweden"></a>Konfigurera Handel för Sverige
 
-Det här avsnittet beskriver inställningar som avser och rekommenderas för Sverige. Mer information hittar du i [Hjälpresurser för Dynamics 365 Retail](../index.md).
+Det här avsnittet beskriver inställningar som avser och rekommenderas för Sverige. Mer information finns i [Startsida för Commerce](../index.md).
 
 Om du vill använda Sverige-specifika funktioner måste du utföra följande uppgifter:
 

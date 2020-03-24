@@ -1,6 +1,6 @@
 ---
 title: Hantering av kundkredit
-description: ''
+description: Med hjälp av hantering av kundkredit kan du hantera kreditgränser och styra flödet av försäljningsorder via bokföringsprocessen baserat på de kreditregler som du skapar.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/04/2019
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 11da8b7fb59bc8f3e2568ada27db753cc815b9c2
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 1e7d3325587d7cfc876e8f8c7b9207d44046ccd4
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015398"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124287"
 ---
 # <a name="customer-credit-management-overview"></a>Hantering av kundkredit - översikt
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Med hjälp av hantering av kundkredit kan du hantera kreditgränser och styra flödet av försäljningsorder via bokföringsprocessen baserat på de kreditregler som du skapar. 
 
