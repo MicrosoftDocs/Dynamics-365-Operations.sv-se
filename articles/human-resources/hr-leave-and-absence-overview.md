@@ -1,6 +1,6 @@
 ---
 title: Översikt
-description: ''
+description: I Dynamics 365 Human Resources ger arbetsytan **tjänstledighet och frånvaro** finns ett flexibel ramverk för att skapa nya frånvaroplaner, arbetsflöden för hantering av förfrågningar och en intuitiv sida för självbetjäningstjänster för medarbetare som ber om ledighet.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a36f6b6ba696fa926ab3d6298568dddfce43a57
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 493bc3abe82103541125914896252b2eae596b38
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010640"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091758"
 ---
 # <a name="overview"></a>Översikt
 

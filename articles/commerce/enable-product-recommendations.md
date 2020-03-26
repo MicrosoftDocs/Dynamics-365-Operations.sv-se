@@ -3,7 +3,7 @@ title: Aktivera produktrekommendationer
 description: I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras på artificiell intelligens (AI-ML) tillgängligt för Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d3f1bc2526eeacb4bd6338a0679eadd95a75989
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 879fccb063ca0b74e0f022a9edf6a15f7d1311ae
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024966"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127892"
 ---
 # <a name="enable-product-recommendations"></a>Aktivera produktrekommendationer
 
@@ -38,7 +38,7 @@ Innan du aktiverar produkten bör du notera att produktrekommendationer endast s
 
 Information om hur du aktiverar ADLS finns i [Så här aktiverar du ADLS i en Dynamics 365-miljö](enable-ADLS-environment.md).
 
-Kontrollera också att RetailSale-mätningar har aktiverats. Du får mer information om den här inställningsprocessen [här.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
+Kontrollera också att RetailSale-mätningar har aktiverats. Du får mer information om den här inställningsprocessen [här.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
 
 
 ## <a name="turn-on-recommendations"></a>Aktivera rekommendationer
@@ -70,13 +70,23 @@ Mer information om hur du tar emot anpassade rekommendationer finns i [aktivera 
 
 [Översikt av produktrekommendationer](product-recommendations.md)
 
+[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
+
 [Aktivera anpassade rekommendationer](personalized-recommendations.md)
 
-[Lägg till produktrekommendationer på sidor](add-reco-list-to-page.md)
+[Avanmäl anpassade rekommendationer](personalization-gdpr.md)
 
-[Lägg till rekommendationspanelen i kassaenheter](add-recommendations-control-pos-screen.md)
+[Lägga till rekommendationslistor på en näthandelsplats](add-reco-list-to-page.md)
 
-[Översikt över produktsamlingsmodul](product-collection-module-overview.md)
+[Lägg till produktrekommendationer i kassan](product.md)
 
-[Aktivera ADLS i Dynamics 365-miljön](enable-ADLS-environment.md)
+[Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
+
+[Justera rekommendationsresultat från AI-ML](modify-product-recommendation-results.md)
+
+[Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
+
+[Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
+
+[Vanliga frågor om produktrekommendationer](faq-recommendations.md)
 

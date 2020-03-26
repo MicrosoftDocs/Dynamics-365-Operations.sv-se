@@ -1,6 +1,6 @@
 ---
 title: Översikt
-description: ''
+description: Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om hur du ställer in personal, ställer in kompensation och fördelar för medarbetarna och hanterar personalen.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010590"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091734"
 ---
 # <a name="overview"></a>Översikt
 
@@ -33,8 +33,8 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 
 [Konfigurera personalparametrar](hr-setup-parameters.md)</br>
 [Konfigurera delade personalparametrar](hr-setup-shared-parameters.md)</br>
-[Ställa in personalarbetsflöden](hr-setup-workflows.md)</br>
-[Förstå datum och tidfält](hr-setup-date-time-fields.md)</br>
+[Ställa in arbetsflöden för personal](hr-setup-workflows.md)</br>
+[Förstå Datum- och tid-fält](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Konfigurera organisationsinställningar
 
@@ -69,7 +69,7 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 
 [Översikt över kompensationsplaner](hr-compensation-overview.md)</br>
 [Ställa in kompensationsrutnät](hr-compensation-grids.md)</br>
-[Utveckla struktur och plan för kompensation](hr-compensation-structure.md)</br>
+[Utveckla en struktur och plan för kompensation](hr-compensation-structure.md)</br>
 [Skapa planer för fast kompensation](hr-compensation-fixed-plans.md)</br>
 [Skapa planer för variabel kompensation](hr-compensation-variable-plans.md)</br>
 [Registrera medarbetare i en fast kompensationsplan](hr-compensation-enroll-employees-fixed.md)</br>
@@ -86,30 +86,30 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 [Definiera förmånsberättiganderegler och policyer](hr-benefits-define-eligibility-rules.md)</br>
 [Utveckla ett förmånsprogram för medarbetare](hr-benefits-deliver-employee-benefits-program.md)</br>
 [Skapa nya förmåner](hr-benefits-create.md)</br>
-[Anmäl medarbetare till förmåner](hr-benefits-enroll-workers.md)</br>
+[Anmäl arbetare till förmåner](hr-benefits-enroll-workers.md)</br>
 [Hantera utgångsdatum för förmån](hr-benefits-expiration-dates.md)</br>
 [Generera ACA-rapporter](hr-benefits-aca-reports.md)</br>
 
 ## <a name="manage-leave-and-absence"></a>Hantera ledighet och frånvaro
 
 [Översikt](hr-leave-and-absence-overview.md)</br>
-[Konfigurera tjänstledighets- och frånvaroparametrar](hr-leave-and-absence-parameters.md)</br>
+[Konfigurera parametrar för ledighet och frånvaro](hr-leave-and-absence-parameters.md)</br>
 [Skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)</br>
-[Skapa en ledighetsansökan till arbetsflödet](hr-leave-and-absence-workflow.md)</br>
+[Skapa ett arbetsflöde för ledighetsansökan](hr-leave-and-absence-workflow.md)</br>
 [Konfigurera typer av tjänstledighet och frånvaro](hr-leave-and-absence-types.md)</br>
 [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)</br>
 [Tilldela arbetare till en tjänstledighetsplan](hr-leave-and-absence-enroll.md)</br>
 [Periodisera planer för tjänstledighet och frånvaro](hr-leave-and-absence-accrue.md)</br>
 [Visa analys för tjänstledighet och frånvaro](hr-leave-and-absence-analytics.md)</br>
-[Hantera tjänstledighets- och frånvaroansökningar](hr-employee-self-service-manage-requests.md)</br>
-[Begär ledig tid](hr-employee-self-service-request-time-off.md)</br>
+[Hantera begäranden om ledighet och frånvaro](hr-employee-self-service-manage-requests.md)</br>
+[Begära ledig tid](hr-employee-self-service-request-time-off.md)</br>
 [Visa team- och företagskalendrar](hr-employee-self-service-calendar.md)</br>
 
 ## <a name="develop-employees"></a>Utveckla medarbetare
 
 [Översikt över prestationshantering](hr-develop-performance-management-overview.md)</br>
-[Justera personalens färdigheter](hr-develop-skills.md)</br>
-[Lägg till din resultatjournal](hr-develop-add-performance-journal.md)</br>
+[Anpassa personalens kompetenser](hr-develop-skills.md)</br>
+[Lägga till i din resultatjournal](hr-develop-add-performance-journal.md)</br>
 [Skapa ett mål](hr-develop-create-goal.md)</br>
 [Skapa en resultatöversyn](hr-develop-create-performance-review.md)</br>
 
@@ -118,13 +118,13 @@ Användarhandboken för Dynamics 365 Human Resources innehåller anvisningar om 
 [Skapa utbildningar](hr-learning-courses.md)</br>
 [Enkätöversikt](hr-learning-questionnaires.md)</br>
 [Utforma enkäter](hr-learning-design-questionnaires.md)</br>
-[Skicka ut och schemalägg enkäter](hr-learning-distribute-questionnaires.md)</br>
+[Skicka ut och schemalägga enkäter](hr-learning-distribute-questionnaires.md)</br>
 [Distribuera enkäter med hjälp av tidsplanering](hr-learning-distribute-questionnaires-scheduling.md)</br>
 [Visa enkätresultat](hr-learning-evaluate-questionnaire-results.md)</br>
 [Analysera enkätresultat](hr-learning-analyze-questionnaire-results.md)</br>
 [Skapa en öppen fråga](hr-learning-create-open-ended-question.md)</br>
-[Skapa en stängd fråga](hr-learning-create-closed-ended-question.md)</br>
-[Skapa en beroendefråga](hr-learning-depending-question.md)</br>
+[Skapa en stängd avslutad fråga](hr-learning-create-closed-ended-question.md)</br>
+[Skapa en beroende fråga](hr-learning-depending-question.md)</br>
 
 
 

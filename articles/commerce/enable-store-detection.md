@@ -3,7 +3,7 @@ title: Aktivera platsbaserad butiksdetektering
 description: I det här avsnittet beskrivs hur du aktiverar platsbaserad identifiering av lager för din Dynamics 365 Commerce-webbplats.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 304d8d2f05916295b9c6320561d6a25ff40df955
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 66ffe56f9d969c9d62ed4ff49f0848fab7e58a56
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003106"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096879"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivera platsbaserad butiksdetektering
 
@@ -54,12 +54,20 @@ Aktivera platsbaserad butiks identifiering i näthandelsbutiken genom att följa
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
 
+[Ställ in en kanal för onlinebutik](online-stores.md)
+
 [Skapa en e-handelsplats](create-ecommerce-site.md)
 
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
+[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+
+[Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
+
 [Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
+
+[Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
 
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)

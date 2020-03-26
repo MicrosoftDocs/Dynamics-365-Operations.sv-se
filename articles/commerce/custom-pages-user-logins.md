@@ -3,7 +3,7 @@ title: Ställa in anpassade sidor för användarinloggningar
 description: I det här avsnittet beskrivs hur du skapar anpassade sidor i Microsoft Dynamics 365 Commerce som hanterar anpassade inloggningsuppgifter för användare av Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer).
 author: brianshook
 manager: annbe
-ms.date: 12/05/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fe2a716d370c350c0c7e034835ff755f1ec9c6a1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 210a7d1c2b0a9a9606723b48681cca3a50fcc05b
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001959"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096807"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Ställa in anpassade sidor för användarinloggningar
 
@@ -199,11 +199,19 @@ När du har uppdaterat global.json-filen och publicerat ändringarna, visas den 
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
 
+[Ställ in en kanal för onlinebutik](online-stores.md)
+
 [Skapa en e-handelsplats](create-ecommerce-site.md)
 
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
+
+[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+
+[Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
+
+[Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
 
 [Lägga till stöd för ett innehållsleveransnätverk (CDN)](add-cdn-support.md)
 

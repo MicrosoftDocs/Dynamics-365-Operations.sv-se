@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180006"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106869"
 ---
 # <a name="process-collection-letters"></a>Bearbeta kravbrev
 
@@ -70,7 +70,11 @@ I det här avsnittet visas hur du skapar, skriver ut och bokför kravbrev. I den
     1. Välj ett alternativ i fältet **Utskriven**.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>Kontrollera kravbrev på kundnivån
-Du kan också ställa in kravbrev på kundnivån så att kravbrevskoden spåras för varje transaktion, men bearbetningen av kravbrev ska baseras på en enda kravbrevsnivå som sparats för kunden. Det enda kravbrevet innehåller alla transaktioner som har förfallit för kunden. Eftersom respitdagar nu spåras på kundnivå kommer nästa kravbrev inte att skickas förrän antalet respitdagar har passerat för nästa kravbrev i sekvensen, även om transaktioner blir försenade efter det att sista kravbrevet skickats. Det här alternativet minskar antalet kravbrev som du skickar per kund. 
+Om kravbrev ställs in på transaktionsnivå kan flera bokstäver genereras för en kund, baserat på transaktionsåldrande. Om transaktioner visas i olika brevserier skapas separata kravbrev för varje grupp av förfallna transaktioner för kunden. Därför kan en enskild kund få till exempel ett kravbrev för transaktioner som är 60 dagar och ett annat kravbrev för transaktioner som är 90 dagar. 
+
+Varje kravbrev är också kopplat till en kravbrevskod. Kravbrevskoden är kopplad till enskilda transaktioner och används för att bestämma när nästa kravbrev ska skapas för varje transaktion. Om till exempel en transaktion är mer än 30 dagar försenad, avgör kravbrevskoden att nästa kravbrev ska skickas när transaktionen blir 60 dagar för sent, om den inte betalas före. 
+
+Kravbrev kan också ställas in på kundnivå. I det här fallet spåras kravbrevskoden för varje transaktion, men bearbetningen av kravbrev ska baseras på en enda kravbrevsnivå som sparats för kunden. Det enda kravbrevet innehåller alla transaktioner som har förfallit för kunden. Eftersom respitdagar nu spåras på kundnivå kommer nästa kravbrev inte att skickas förrän antalet respitdagar har passerat för nästa kravbrev i sekvensen, även om transaktioner blir försenade efter det att sista kravbrevet skickats. Det här alternativet hjälper tilt minska antalet kravbrev som du måste skicka till varje kund.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Ställ in kund för att kontrollera kravbrev på kundnivå
 1.  Gå till **navigeringfönster > Moduler > Kredit och inkasso > Inställningar > Parametrar för kundreskontra** och välj fliken **samlingar**. 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8bef8edb46a1942d3efc325e2c437a138ad44839
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3083028"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113930"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beräkna lagertillgänglighet för butikskanaler
 
@@ -41,7 +41,7 @@ I det här avsnittet beskrivs de processer för datasynkronisering som kan köra
 Du kan använda följande API:er för att visa lagertillgänglighet för en produkt när dina kunder handlar på en näthandelsplats.
 
 - **GetEstimatedAvailability** – Använd den här API:n för att hämta lagertillgänglighet för artikeln i e-handelskanalens lager eller alla lagerställen som är kopplade till konfigurationen av uppfyllelsegruppen för näthandelskanalen. Detta API kan också användas för lagerställen i ett visst sökområde eller en viss radie, baserat på longitud- och latituddata.
-- **ProductWarehouseInventoryAvailabilities** – Använd detta API för att begära lager för en artikel från ett visst lagerställe. Du kan till exempel använda det för att visa lagerdispositionen i scenarier som innefattar orderupphämtning.
+- **GetEstimatedProductWarehouseAvailability** – Använd detta API för att begära lager för en artikel från ett visst lagerställe. Du kan till exempel använda det för att visa lagerdispositionen i scenarier som innefattar orderupphämtning.
 
 > [!NOTE]
 > Dessa API:er ersätter **GetProductAvailabilities** och **GetAvailableInventoryNearby** API:er i Dynamics 365 Retail version 10.0.7 och tidigare.

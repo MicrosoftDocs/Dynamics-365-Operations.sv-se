@@ -3,7 +3,7 @@ title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b852a73268251241cd66a07d7e4f4720706c0d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184564"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124622"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -191,8 +191,11 @@ När du schemalägger rensningsprocessen måste följande parametrar anges för 
 
 -   **Antal dagar att behålla historiken** – den här inställningen används för att kontrollera mängden körningshistorik som ska bevaras. Detta anges i antal dagar. När rensningsjobbet schemaläggs som ett återkommande batchjobb, kommer den här inställningen att fungera som ett kontinuerligt rörligt fönster och därmed alltid lämna historiken för angivet antal dagar intakt medan resten tas bort. Standardvärdet är 7 dagar.
 
--   **Antal timmar för att utföra jobbet** – beroende på hur mycket historik som ska rensas kan den totala körningstiden för rensningsjobbet kan variera från några minuter till några timmar. Eftersom rensningen av de nämnda tabellerna måste göras när det inte finns någon annan datahanteringsaktivitet i systemet, är det viktigt att se till att rensningsjobbet körs och avslutas innan affärsaktiviteten påbörjas.
+-   **Antal timmar för att utföra jobbet** – beroende på hur mycket historik som ska rensas kan den totala körningstiden för rensningsjobbet kan variera från några minuter till några timmar. Den här parametern måste anges till det antal timmar som jobbet ska köras. När rensningsjobbet har körts i det angivna antalet timmar avslutas jobbet och återupptar rensningen nästa gång det körs baserat på det återkommande schemat.
 
     En maximal körningstid kan anges genom att ange en max.gräns för antalet timmar som jobbet måste köras med den här inställningen. Rensningslogiken går igenom ett jobbkörnings-ID i taget i en kronologiskt ordnad sekvens, med äldsta först för rensning av relaterade körningshistoriken. Det slutar att plocka upp nya körnings-ID för rensning när återstående körningstid är inom de senaste 10 % av den angivna varaktigheten. I vissa fall kommer det att förväntas att rensningsjobbet kommer att fortsätta efter den angivna maxtiden. Detta beror till stor del på hur många poster som ska tas bort för det aktuella körnings-ID som startades innan tröskelvärdet på 10 % uppnåddes. Rensningen som startades måste slutföras för att säkerställa dataintegriteten, vilket innebär att rensningen fortsätter trots att den angivna gränsen överskrids. När detta är klart hämtas inte nya körnings-ID och rensningsjobbet har slutförts. Den återstående körningshistoriken som inte har rensats på grund av bristande körningstid kommer att plockas upp nästa gång som rensningsjobbet schemaläggs. Standard- och minimivärdet för den här inställningen är inställt på 2 timmar.
 
 -   **Återkommande batch** – rensningsjobbet kan köras som en engångs, manuell körning eller det kan också schemaläggas för återkommande körning i batch. Batchen kan schemaläggas med hjälp inställningarna **Kör i bakgrund**, vilket är standarduppsättningen för batch.
+
+> [!NOTE]
+> Om posterna i mellanlagringsplatserna inte rensas fullständigt bör du kontrollera att rensningsjobbet är schemalagt att köra i upprepning. Som förklaras ovan kommer jobbet att bara rensa så många körnings-ID som möjligt inom de maximalt angivna timmarna i alla rensningskörningar. Jobbet måste vara schemalagt för att kunna köras regelbundet för att alla återstående uppsamlingsfiler ska kunna rensas.

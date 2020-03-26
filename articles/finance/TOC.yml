@@ -10,8 +10,6 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Registrera abonnemang på förhandsversioner
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: Kundbetalningsinsikter (förhandsversion)
-              href: accounts-receivable/payment-insights-overview.md
             - name: Tjänstuppdateringar för en version
               items:
                 - name: Översikt över tjänstuppdateringar för en version
@@ -22,10 +20,12 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
                 - name: Livscykelpolicy för programmet – lokal
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/finance/toc.json
-                - name: Tillgänglighet för tjänsteuppdatering
+                - name: Tillgänglighet för tjänstuppdatering
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
+                - name: Uppdatera lokala distributioner
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera tjänstuppdateringar
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Pausa tjänstuppdateringar
@@ -70,20 +70,24 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance version 10.0.10 (maj 2020)
+                      href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance version 10.0.9 (april 2020)
                       href: get-started/whats-new-changed-10-0-9.md
                     - name: Finance version 10.0.8 (februari 2020)
                       href: get-started/whats-new-changed-10-0-8.md
-                    - name: Finance version 10.0.7 (januari 2020)
-                      href: get-started/whats-new-changed-10-0-7.md
-                - name: Borttagna och utfasade funktioner
+            - name: Borttagna och utfasade funktioner
+              items:
+                - name: Borttagna och utfasade funktioner i Dynamics 365 Finance
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Borttagna eller utfasade funktioner i tidigare versioner
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-                - name: AX 2012-funktioner som har senarelagts
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-                - name: Funktioner som ännu inte har implementerats i lokala distributioner
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+            - name: AX 2012-funktioner som har senarelagts
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: Funktioner som ännu inte har implementerats i lokala distributioner
+              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+            - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsresurser
               items:
                 - name: Hjälpsystem
@@ -312,6 +316,8 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Upprätta avgifter för kundbetalning
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Kundbetalningsinsikter (förhandsversion)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Kundbokföringsprofiler
               href: accounts-receivable/customer-posting-profiles.md
             - name: Kopiera kunder genom att använda delade nummerserier
@@ -1794,6 +1800,8 @@
                           href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
                         - name: Definiera HSN‑koder och koder för tjänsteredovisning
                           href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
+                        - name: Skapa momssatstyp
+                          href: localizations/apac-ind-GST-create-tax-rate-type.md
                         - name: Skapa huvudkonton för bokföringstypen GST (moms)
                           href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
                         - name: Skapa en momskvittningsperiod
@@ -1918,21 +1926,22 @@
                       href: localizations/apac-ind-GST-tax-returns.md
                     - name: Momsfråga
                       href: localizations/apac-ind-GST-tax-inquiry.md
-                - name: Skattemotor
+                - name: Momsmotor
                   items:
-                    - name: Skattemotor – översikt
+                    - name: Momsmotor – översikt
                       href: general-ledger/tax-engine.md
-                      items:
-                        - name: Skapa momskomponenter
-                          href: localizations/tax-engine-create-tax-component.md
-                        - name: Importera konfigurering
-                          href: general-ledger/tax-engine-import-configuration.md
-                        - name: Tillämplighet för skattemotor
-                          href: general-ledger/tax-engine-applicability.md
-                        - name: Integrering av skattemotor
-                          href: general-ledger/tax-engine-integration.md
-                        - name: Bygg ut skattemotorn
-                          href: general-ledger/extend-tax-engine-configurations.md
+                    - name: Importera konfigurering
+                      href: general-ledger/tax-engine-import-configuration.md
+                    - name: Avancerad formeldesigner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                    - name: Tillämplighet för momsmotor
+                      href: general-ledger/tax-engine-applicability.md
+                    - name: Skapa momskomponenter
+                      href: localizations/tax-engine-create-tax-component.md
+                    - name: Integrering av momsmotor
+                      href: general-ledger/tax-engine-integration.md
+                    - name: Bygg ut momsmotorn
+                      href: general-ledger/extend-tax-engine-configurations.md
                 - name: Vanliga frågor och svar om tröskelvärden för moms
                   href: localizations/apac-ind-tax-thresholds.md
                 - name: Lageröverföringar
@@ -2357,50 +2366,56 @@
                       href: localizations/rus-incoming-VAT-restoring.md
                 - name: Anläggningstillgångar
                   items:
-                    - name: Hantera anläggningstillgångar
-                      href: localizations/rus-fixed-assets.md
                     - name: Anläggningstillgångar – översikt
-                      hfre: localizations/rus-fixed-assets-overview.md
+                      href: localizations/rus-fixed-assets-overview.md
                     - name: Ställa in anläggningstillgångar
-                      href: localizations/rus-set-up-fixed-assets.md
-                    - name: Anskaffa anläggningstillgångar och att omsätta dem
-                      href: localizations/rus-fixed-asset-acquisition.md
-                    - name: Registrera anskaffningar av anläggningstillgångar
-                      href: localizations/rus-register-acquisition.md
-                    - name: Skapa och bokför budgetjournaler för anskaffning av anläggningstillgångar
-                      href: localizations/rus-post-budget-fixed-asset-acquisition.md
-                    - name: Skapa ett lån på anläggningstillgångar och en retur från lånetransaktion
-                      href: localizations/rus-fixed-asset-leasing.md
-                    - name: Inventering av anläggningstillgångar
-                      href: localizations/rus-fixed-assets-counting.md
-                    - name: Valutaomräkning för anläggningstillgångar
-                      href: localizations/rus-fixed-asset-currency-revaluation.md
-                    - name: Underhåll anläggningstillgångar
-                      href: localizations/rus-maintain-fixed-assets.md
-                    - name: Omräkna kostnad och avskrivning för anläggningstillgång
-                      href: localizations/rus-fixed-assets-revaluation.md
-                    - name: Delvis demontering (försäljning) av anläggningstillgång
-                      href: localizations/rus-fixed-assets-disassembly.md
-                    - name: 'Sälj, avyttra och skriv av tillgångar'
-                      href: localizations/rus-sell-dispose-write-off-fixed-assets.md
-                    - name: Konfigurera platser och numrering för anläggningstillgångar
-                      href: localizations/rus-fixed-assets-locations-numbering.md
-                    - name: Ställ in avskrivning
-                      href: localizations/rus-depreciation-setup.md
-                    - name: Avskrivningsmetoder
-                      href: localizations/rus-depreciation-methods.md
-                    - name: Avskrivningsbonus
-                      href: localizations/rus-bonus-depreciation.md
-                    - name: Beräkna avskrivning
-                      href: localizations/rus-depreciation-calculation.md
-                    - name: Överför fasta anläggningstillgångar
-                      href: localizations/rus-fixed-asset-transfer.md
-                    - name: Enhetliga utskriftsformulär för anläggningstillgångar
-                      href: localizations/printing-forms-fixed-assets.md
-                    - name: Redovisning av arbetskläder/särskild utrustning (Ryssland)
-                      href: localizations/rus-working-clothes-instruments-accounting.md
-                    - name: NVFA (Not Valuable Fixed Assets) (Ryssland)
-                      href: localizations/rus-not-valuable-assets.md
+                      items:
+                        - name: Ställa in anläggningstillgångar
+                          href: localizations/rus-set-up-fixed-assets.md
+                        - name: Ställ in avskrivning
+                          href: localizations/rus-depreciation-setup.md
+                        - name: Avskrivningsmetoder
+                          href: localizations/rus-depreciation-methods.md
+                        - name: Avskrivningsbonus
+                          href: localizations/rus-bonus-depreciation.md
+                        - name: Konfigurera platser och numrering för anläggningstillgångar
+                          href: localizations/rus-fixed-assets-locations-numbering.md
+                    - name: Arbeta med anläggningstillgångar
+                      items:
+                        - name: Skapa anläggningstillgångar
+                          href: localizations/rus-fixed-assets.md
+                        - name: Registrera anskaffningar av anläggningstillgångar
+                          href: localizations/rus-register-acquisition.md
+                        - name: Anskaffa anläggningstillgångar och sätta dem i drift
+                          href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Beräkna avskrivning
+                          href: localizations/rus-depreciation-calculation.md
+                        - name: Delvis demontering (försäljning) av anläggningstillgång
+                          href: localizations/rus-fixed-assets-disassembly.md
+                        - name: 'Sälja, avyttra och skriva av tillgångar'
+                          href: localizations/rus-sell-dispose-write-off-fixed-assets.md
+                        - name: Skapa ett lån på anläggningstillgångar och en retur från lånetransaktion
+                          href: localizations/rus-fixed-asset-leasing.md
+                        - name: Underhåll anläggningstillgångar
+                          href: localizations/rus-maintain-fixed-assets.md
+                        - name: Inventering av anläggningstillgångar
+                          href: localizations/rus-fixed-assets-counting.md
+                        - name: Valutaomräkning för anläggningstillgångar
+                          href: localizations/rus-fixed-asset-currency-revaluation.md
+                        - name: Omräkna kostnad och avskrivning för anläggningstillgång
+                          href: localizations/rus-fixed-assets-revaluation.md
+                        - name: Skapa och bokför budgetjournaler för anskaffning av anläggningstillgångar
+                          href: localizations/rus-post-budget-fixed-asset-acquisition.md
+                        - name: Överför fasta anläggningstillgångar
+                          href: localizations/rus-fixed-asset-transfer.md
+                    - name: Anläggningstillgångar utan värde och arbetskläder
+                      items:
+                        - name: NVFA (Not Valuable Fixed Assets) (Ryssland)
+                          href: localizations/rus-not-valuable-assets.md
+                        - name: Redovisning av arbetskläder/särskild utrustning (Ryssland)
+                          href: localizations/rus-working-clothes-instruments-accounting.md
+                        - name: Enhetliga utskriftsformulär för anläggningstillgångar
+                          href: localizations/printing-forms-fixed-assets.md
                 - name: Leverantörsreskontra och kundreskontra
                   items:
                     - name: Kreditfakturakorrigeringar (Ryssland)
@@ -2427,6 +2442,14 @@
                           href: localizations/rus-register-transactions-with-reference-to-agreements.md
                         - name: Förfrågningar och rapporter med avtal
                           href: localizations/rus-inquiries-reports-agreements.md
+                    - name: Transaktioner via mellanhand
+                      items:
+                        - name: Transaktioner via mellanhand – översikt
+                          href: localizations/rus-transactions-through-intermediary.md
+                        - name: Inköp på provision
+                          href: localizations/rus-purchases-on-commission.md
+                        - name: Försäljning på provision
+                          href: localizations/rus-sales-on-commission.md
                 - name: Lager
                   items:
                     - name: Varor på väg från leverantör
@@ -2533,6 +2556,8 @@
                   href: localizations/emea-swe-sie-standard-report.md
                 - name: Importera betalningsformat
                   href: localizations/emea-swe-payment-formats-import.md
+                - name: Momsbetalningsrapport för Sverige
+                  href: localizations/emea-swe-sales-tax-payment-report-sweden.md
             - name: Schweiz
               items:
                 - name: Schweiz – översikt
@@ -2561,20 +2586,24 @@
                   href: localizations/united-kingdom.md
                 - name: Konstruktionsbranschschema
                   href: localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Skapa en kredit för kvittningsrabatt
-                  href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: Skapa en inköpsorder som omfattar artiklar med återfört tillägg
-                  href: localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: Skapa en försäljningsorder som omfattar artiklar med återfört tillägg
-                  href: localizations/tasks/gb-00002-sales-order.md
-                - name: Ställa in artikelmomsgrupper för återfört tillägg
-                  href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 'Ställa in artikelgrupper, regler och parametrar för återfört tillägg'
-                  href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: Ställa in momsgrupper för återfört tillägg
-                  href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: Omvänd debitering
+                  items:
+                    - name: Skapa en kredit för kvittningsrabatt
+                      href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
+                    - name: Skapa en inköpsorder som omfattar artiklar med återfört tillägg
+                      href: localizations/tasks/purchase-order-reverse-charge-vat.md
+                    - name: Skapa en försäljningsorder som omfattar artiklar med återfört tillägg
+                      href: localizations/tasks/gb-00002-sales-order.md
+                    - name: Ställa in artikelmomsgrupper för återfört tillägg
+                      href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+                    - name: 'Ställa in artikelgrupper, regler och parametrar för återfört tillägg'
+                      href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+                    - name: Ställa in momsgrupper för återfört tillägg
+                      href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
                 - name: Göra skatt digitalt för moms
                   href: localizations/emea-gbr-mtd-vat-integration.md
+                - name: Rapport för statistik över betalningspraxis
+                  href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
               items:
                 - name: USA – översikt
@@ -3141,6 +3170,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Välj datamodelldefinitioner när du skapar format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                - name: Förbättrade filtreringsalternativ för att hitta konfigurationer i den globala databasen
+                  href: ../finance/localizations/enhanced-filtering-global-repo.md
                 - name: Generera rapporter genom att lägga till innehåll som råa XML-data
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                 - name: (ER) Korsföretags datakällor i elektronisk rapportering

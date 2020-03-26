@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform update 34 (maj 2020)
+                  href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
                 - name: Platform update 32 (februari 2020)
@@ -146,41 +148,67 @@
                   items:
                     - name: Översikt över dataintegrering med Common Data Service
                       href: data-entities/data-integration-cds.md
-                    - name: 'Synkron, dubbelriktad integrering'
+                    - name: Integration med dubbelriktad skrivning
                       items:
                         - name: Startsida för dubbelriktad skrivning
                           href: data-entities/dual-write/dual-write-home-page.md
                         - name: Översikt över dubbelriktad skrivning
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: Organisationshierarki för Common Data Service
-                          href: data-entities/dual-write/organization-mapping.md
-                        - name: Företagsintegrering
+                        - name: Inställning av dubbelriktad skrivning
                           items:
-                            - name: Företagskoncept i Common Data Services
-                              href: data-entities/dual-write/company-data.md
-                            - name: Starta med företagsdata
-                              href: data-entities/dual-write/bootstrap-company-data.md
-                        - name: Integrerad kundmaster
-                          href: data-entities/dual-write/customer-mapping.md
-                        - name: Integrerad redovisning
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: Enhetlig produktupplevelse
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: Leverantörsintegration
+                            - name: Systemkrav för dubbelriktad skrivning
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: Scenarier som stöds för inställning av dubbelriktad skrivning
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Inställning av dubbelriktad skrivning från Lifecycle Services
+                              href: data-entities/dual-write/lcs-setup.md
+                        - name: Mappa koncept mellan appar
                           items:
-                            - name: Integrerat leverantörshuvud
-                              href: data-entities/dual-write/vendor-mapping.md
-                            - name: Växla mellan leverantörsdesigner
-                              href: data-entities/dual-write/vendor-switch.md
-                        - name: Integrerade platser och lagerställen
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                        - name: Integrerat skattehuvud
-                          href: data-entities/dual-write/tax-mapping.md
-                        - name: Initial synkronisering
-                          href: data-entities/dual-write/initial-sync.md
-                        - name: Felsökning av dataintegrering
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: 'Asynkron, enkelriktad integrering'
+                            - name: Organisationshierarki för Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Företagsintegrering
+                              items:
+                                - name: Företagskoncept i Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Starta med företagsdata
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Integrerad kundmaster
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Produktintegration
+                              items:
+                                - name: Enhetlig produktupplevelse
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Integrerade platser och lagerställen
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Ekonomi- och momsdata
+                              items:
+                                - name: Åtkomst till ekonomi- och momsreferensdata
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Integrerad redovisning
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Integrerad momsmaster
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Leverantörsintegration
+                              items:
+                                - name: Integrerat leverantörshuvud
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Växla mellan leverantörsdesigner
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Potentiell kund till kontanter med dubbelriktad skrivning
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Interna tillgångar för service
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Integrerad arbetare, jobb och befattning'
+                              href: data-entities/dual-write/integrated-hr.md
+                        - name: Stöd för dubbelriktad skrivning
+                          items:
+                            - name: Stöd för Field Service- och Project Service Automation-lösningar
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Initial synkronisering
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Felsökning av dataintegrering
+                              href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integrering med Power Platform dataintegrerare
                       items:
                         - name: Konfigurera ett scenario för potentiell kund till pengar
                           items:
@@ -332,6 +360,8 @@
                   href: database/import-database.md
                 - name: Återställning av databas till tidpunkt
                   href: database/database-point-in-time-restore.md
+                - name: Tidpunktsåterställning av produktionsdatabasen till ett begränsat läge
+                  href: database/database-pitr-prod-sandbox.md
             - name: Självstudier
               items:
                 - name: Uppdatera för utbildningssyften
@@ -430,6 +460,8 @@
                       href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö
                       href: deployment/deploy-retail-onprem.md
+                    - name: Återanvänd samma AD FS-instans för flera miljöer
+                      href: deployment/onprem-reuseadfs.md
                 - name: Utveckla och distribuera anpassade modeller i lokala miljöer
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-integrering med lokala miljöer
@@ -970,24 +1002,34 @@
               href: lifecycle-services/configure-execute-code-upgrade.md
             - name: Skapa eller uppdatera metoder
               href: lifecycle-services/create-methodology.md
-            - name: Affärsprocessmodelleraren
-              href: lifecycle-services/bpm-overview.md
-            - name: Affärsprocessbibliotek i affärsprocessmodelleraren
-              href: lifecycle-services/business-process-libraries-business-process-modeler.md
-            - name: 'Skapa, redigera och bläddra i affärsprocessmodellerarens bibliotek'
-              href: lifecycle-services/creating-editing-browsing.md
-            - name: Slutföra uppgifter i affärsprocessmodelleraren
-              href: lifecycle-services/complete-tasks-bpm.md
-            - name: Arbeta med aktivitetsdiagram i BPM-bibliotek
-              href: lifecycle-services/using-activity-diagrams.md
-            - name: Synkronisera BPM-bibliotek med Azure DevOps
-              href: lifecycle-services/synchronize-bpm-vsts.md
-            - name: Skapa bibliotek med acceptanstest genom att använda uppgiftsguider och BPM
-              href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-            - name: Flödesscheman i affärsprocessmodelleraren
-              href: lifecycle-services/flowcharts-business-process-modeler.md
-            - name: Överföra anpassade affärsprocesser till affärsprocessmodelleraren
-              href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Affärsprocessmodelleraren (BPM)
+              items:
+                - name: Affärsprocessmodelleraren (BPM) – översikt
+                  href: lifecycle-services/bpm-overview.md
+                - name: Affärsprocessbibliotek i affärsprocessmodelleraren
+                  href: lifecycle-services/business-process-libraries-business-process-modeler.md
+                - name: 'Skapa, redigera och bläddra i affärsprocessmodellerarens bibliotek'
+                  href: lifecycle-services/creating-editing-browsing.md
+                - name: Slutföra uppgifter i affärsprocessmodelleraren
+                  href: lifecycle-services/complete-tasks-bpm.md
+                - name: Arbeta med aktivitetsdiagram i BPM-bibliotek
+                  href: lifecycle-services/using-activity-diagrams.md
+                - name: Synkronisera BPM-bibliotek med Azure DevOps
+                  href: lifecycle-services/synchronize-bpm-vsts.md
+                - name: Skapa bibliotek med acceptanstest genom att använda uppgiftsguider och BPM
+                  href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
+                - name: Flödesscheman i affärsprocessmodelleraren
+                  href: lifecycle-services/flowcharts-business-process-modeler.md
+                - name: Överföra anpassade affärsprocesser till affärsprocessmodelleraren
+                  href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
+            - name: Tjänstbegäranden
+              items:
+                - name: Molnåtgärder och underhåll
+                  href: lifecycle-services/cloud-operations-servicing.md
+                - name: Skicka tjänstbegäranden till serviceteknikerteamet för Dynamics
+                  href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
+                - name: Vanliga frågor och svar om fönster för planerat underhåll
+                  href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Övervakning och diagnostik
               href: lifecycle-services/monitoring-diagnostics.md
             - name: Starta om miljötjänster
@@ -1282,14 +1324,8 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Få support för Finance and Operations som drivs av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Skicka begäranden till serviceteknikerteamet för Dynamics
-              href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
             - name: Ställa in teknisk support för Finance and Operations
               href: lifecycle-services/support-experience.md
-            - name: Vanliga frågor och svar om fönster för planerat underhåll
-              href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: Molnåtgärder och underhåll
-              href: lifecycle-services/cloud-operations-servicing.md
             - name: Hantera Finance and Operations-supportupplevelser
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Systemadministration

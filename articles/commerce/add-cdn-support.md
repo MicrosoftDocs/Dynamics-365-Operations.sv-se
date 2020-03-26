@@ -3,7 +3,7 @@ title: Lägga till stöd för ett innehållsleveransnätverk (CDN)
 description: I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk (CDN) på Microsoft Dynamics 365 Commerce-miljön.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bf5a0da2803f985e6c0c04dd9916977397173d11
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 23ac9d8844c2a8ae20bd316c40078319601a3a4d
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001632"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096735"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för ett innehållsleveransnätverk (CDN)
 
@@ -144,12 +144,20 @@ Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näth
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
 
+[Ställ in en kanal för onlinebutik](online-stores.md)
+
 [Skapa en e-handelsplats](create-ecommerce-site.md)
 
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
 
 [Hantera robots.txt-filer](manage-robots-txt-files.md)
 
+[Överföring av URL-omdirigeringar i bulk](upload-bulk-redirects.md)
+
+[Ställa in en B2C-innehavare i Commerce](set-up-B2C-tenant.md)
+
 [Ställa in anpassade sidor för användarinloggningar](custom-pages-user-logins.md)
+
+[Konfigurera flera B2C-innehavare i en Commerce-miljö](configure-multi-B2C-tenants.md)
 
 [Aktivera platsbaserad butiksdetektering](enable-store-detection.md)

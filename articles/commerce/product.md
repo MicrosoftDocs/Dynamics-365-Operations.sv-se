@@ -1,9 +1,9 @@
 ---
-title: Produktrekommendationer i kassa
+title: Lägg till produktrekommendationer i kassan
 description: I det här avsnittet beskrivs användning av produktrekommendationer för en försäljningsenhet (POS).
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bfb13904b774558907b29e74158b1e0a193e17cd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 48533596c5bdc73dd8c815166e7dde0ca2f3cb4d
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057451"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127823"
 ---
-# <a name="product-recommendations-on-pos"></a>Produktrekommendationer i kassan
+# <a name="add-product-recommendations-on-pos"></a>Lägg till produktrekommendationer i kassan
 
 [!include [banner](includes/banner.md)]
 
@@ -71,8 +71,24 @@ Så här ställs produktrekommendationer in:
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter](add-recommendations-control-pos-screen.md)
+[Översikt av produktrekommendationer](product-recommendations.md)
 
-[Översikt av produktrekommendationer](../commerce/product-recommendations.md)
+[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
 
-[Aktivera produktrekommendationer](../commerce/enable-product-recommendations.md) 
+[Aktivera produktrekommendationer](enable-product-recommendations.md)
+
+[Aktivera anpassade rekommendationer](personalized-recommendations.md)
+
+[Avanmäl anpassade rekommendationer](personalization-gdpr.md)
+
+[Lägga till rekommendationslistor på en näthandelsplats](add-reco-list-to-page.md)
+
+[Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
+
+[Justera rekommendationsresultat från AI-ML](modify-product-recommendation-results.md)
+
+[Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
+
+[Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
+
+[Vanliga frågor om produktrekommendationer](faq-recommendations.md)

@@ -1,9 +1,9 @@
 ---
-title: Avancerade filtrerings- och frågesyntax
+title: Avancerad filtrerings- och frågesyntax
 description: Detta avsnitt beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn matchar i den avancerade filtrerings-/sorteringsdialogen.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931298"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112201"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avancerad filtrerings- och frågesyntax
 
@@ -122,13 +122,14 @@ Detta avsnitt beskriver filterings- och frågealternativ som är tillgängliga, 
 <td>Två raka dubbla citationstecken (<strong>""</strong>) hittar rader utan värde för den aktuella kolumnen.</td>
 </tr>
 <tr>
-<td>(<span class="code">SQL-sats</span>) (SQL-sats inom parentes)</td>
+<td>(<span class="code">Finance and Operations fråga</span>) (Finance and Operations fråga mellan parenteser)</td>
 <td>Matchar en definierad fråga</td>
-<td>Skriv in en fråga som en SQL-sats inom parentes.</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td>Skriv en fråga som ett SQL-uttryck inom parenteser med hjälp av Finance and Operations frågespråk.</td>
+  <td><strong><span class="code">((AccountNum SOM "US *") && (DirPartyTable.Name SOM "Cont*"))</span></strong><br><br> 
+       Exempel på syntax för ett filtervillkor för ett fält från rotdatakällan och ett fält från en annan datakälla (för sidan Alla kunder)</td>
 </tr>
 <tr>
-<td>T</td>
+<td>V</td>
 <td>Dagens datum</td>
 <td>Skriv in <strong>T</strong>.</td>
 <td><strong>T</strong> matchar dagens datum.</td>

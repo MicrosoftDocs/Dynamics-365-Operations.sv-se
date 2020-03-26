@@ -3,7 +3,7 @@ title: Åtgärdssökning
 description: I artikeln beskrivs funktionen åtgärdssökning. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d01247aa356625cb759306e5ead2afd3cdeb840f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bd4d81f010149c762dac0f4e6fa912c2e2cef072
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191326"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112178"
 ---
 # <a name="action-search"></a>Åtgärdssökning
 
@@ -69,6 +69,9 @@ Exempelvis du maskinskrev **tot** i **sökfältet** och granskar nu resultat lis
 I föregående exempel visade åtgärdsökningen resultat från det vanliga åtgärdsfönstret överst på sidan. Men action sök visar också resultaten från synligt verktygsfält som finns på andra ställen på sidan. Låt oss till exempel säga att du söker efter knappen **Lagerbehållning** som finns på snabbfliken **Försäljningsorderrader**. I det här fallet kommer knappsökvägen i resultatlistan (**Försäljningsorderrader** &gt; **Lager** &gt; **Visa**) att informera dig om att den här knappen finns under rubriken **Visa** på menyknappen **Lager** på snabbfliken **Försäljningsorderrader**.
 
 [![lagerbehållning](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+
+> [!NOTE]
+> Det finns vissa knappar som inte visas vid åtgärdssökning. Dessa inkluderar nedrullningsbara dialogknappar och knappar från underformulär. 
 
 ## <a name="action-search-vs-navigation-search"></a>Åtgärd söka vs. navigation sökningen
 

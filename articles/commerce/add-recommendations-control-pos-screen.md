@@ -1,9 +1,9 @@
 ---
-title: Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter
+title: Lägg till rekommendationer på transaktionsskärmen
 description: Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024020"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127685"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Lägg till en rekommendationskontroll på transaktionsskärmen på kassaenheter
+# <a name="add-recommendations-to-the-transaction-screen"></a>Lägg till rekommendationer på transaktionsskärmen
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Produktrekommendationer i kassan](product.md)
+[Översikt av produktrekommendationer](product-recommendations.md)
 
-[Översikt av produktrekommendationer](../commerce/product-recommendations.md)
+[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
+
+[Aktivera produktrekommendationer](enable-product-recommendations.md)
+
+[Aktivera anpassade rekommendationer](personalized-recommendations.md)
+
+[Avanmäl anpassade rekommendationer](personalization-gdpr.md)
+
+[Lägga till rekommendationslistor på en näthandelsplats](add-reco-list-to-page.md)
+
+[Lägg till produktrekommendationer i kassan](product.md)
+
+[Justera rekommendationsresultat från AI-ML](modify-product-recommendation-results.md)
+
+[Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
+
+[Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
+
+[Vanliga frågor om produktrekommendationer](faq-recommendations.md)

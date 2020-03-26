@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890337"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133906"
 ---
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Det här ämnet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster.
 
@@ -66,6 +67,16 @@ Du kan lägga till en rad som inte fanns i inköpsordern till leverantörsfaktur
 
 Organisationen kan använda arbetsflöden för att hantera granskningen för leverantörsfakturor. Arbetsflödesgranskningen kan krävas för fakturahuvudet, fakturaraden eller båda. Arbetsflödeskontrollerna används för sidhuvudet eller raden beroende på var fokus ligger innan du väljer kontrollen. Istället för knappen **Bokför** ser du knappen **Skicka** som skickar leverantörsfakturan över granskningen.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Förhindra att faktura skickas till arbetsflödet 
+
+Nedan kan du på flera sätt förhindra att en faktura skickas till ett arbetsflöde.
+
+- **Fakturatotal och den registrerade totalen är inte lika.** Den person som skickade fakturan får en notifiering om att summorna inte är lika utformade så att de kan korrigera saldona innan fakturan skickas vidare till arbetsflödet. Den här funktionen är tillgänglig om parametern **förbjuden överföring till arbetsflödet när faktura summan och den registrerade faktura summan inte lika** på sidan **funktionshantering** är aktiverad. 
+
+- **Fakturan innehåller icke-allokerade tillägg.** Den person som skickade fakturan får en notifiering om att fakturan innehåller icke-allokerade tillägg så att de kan korrigera fakturan innan den skickas vidare till arbetsflödet. Den här funktionen är tillgänglig om parametern **förbjuden överföring där det finns icke-allokerade tillägg på en leverantörsfaktura** på sidan **funktionshantering** är aktiverad.
+
+- **Fakturan innehåller samma fakturanummer som en annan bokförd faktura.** Den person som skickade fakturan får en notifiering om att fakturan med ett duplicerat nummer hittades och de kan korrigera den innan den skickas vidare till arbetsflödet. Den här notifieringen visas när parametern Leverantörsreskontra med etiketten **Kontrollera använt fakturanummer** anges till **Avvisa dubblett**. Den här funktionen är tillgänglig om parametern **Förbud att skicka till arbetsflöde när fakturanumret redan finns på en bokförd faktura och ditt system inte är inställt för att acceptera duplicerade fakturanummer** på sidan **funktionshantering** aktiveras.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Matcha leverantörsfakturor mot produktinleveranser
 
 Du kan ange och spara information för leverantörsfakturor, och du kan matcha fakturarader mot produktinleveransrader. Det går även att matcha delkvantiteter på en rad.
@@ -77,6 +88,16 @@ När du bokför fakturan uppdateras kvantiteten **Fakturarest** för varje artik
 Det här alternativet förutsätter det att minst en produktinleverans har bokförts för inköpsordern. Leverantörsfakturan baseras på dessa produktinleveranser och återspeglar kvantiteterna från dem. Den ekonomiska informationen för fakturan baseras på informationen som registreras när du bokför fakturan.
 
 Mer information finns i [Registrera leverantörsfakturan och matcha mot mottagen kvantitet](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md)
+
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Konfigurera en automatisk uppgift för ett arbetsflöde för leverantörsfakturor så här bokför du leverantörsfakturan med ett batch-jobb
+
+Du kan lägga till en automatisk bokföringsuppgift i arbetsflödet för leverantörsfakturor så att fakturor bearbetas i en batch. Om du bokför fakturor i en batch kan arbetsflödesprocessen fortsätta utan att behöva vänta på att bokföringen ska slutföras, vilket förbättrar övergripande prestanda för alla uppgifter som skickas till arbetsflödet.
+
+Om du vill bokföra en leverantörsfaktura i en batch, på sidan **funktionshantering**, aktivera parametern **Batch-bokföring av leverantörsfaktura**. Arbetsflöden för leverantörsfakturor konfigureras genom att gå till **Leverantörsreskontra > Inställningar > Leverantörsreskontra**.
+
+Du kan se uppgiften **bokföra leverantörsfakturan med ett batch-jobb** i arbetsflödesredigeraren oavsett om funktionsparametern **Batch-bokföring av leverantörsfaktura** är aktiverad. Om funktionsparametern inte är aktiverad kommer en faktura som innehåller **Bokför leverantörsfakturan med en batch-uppgift** inte att bearbeta i arbetsflödet förrän parametern har aktiverats. Uppgiften **Bokför leverantörsfakturan med hjälp av en batch** får inte användas i samma arbetsflöde som automatiska uppgiften **Bokför leverantörsfakturor**. Dessutom bör uppgiften **Bokför leverantörsfakturan med hjälp av en batch** bör vara det sista elementet i arbetsflödeskonfigurationen.
+
+Du kan ange antalet fakturor som ska inkluderas i batchen och antalet timmar att vänta innan en batch omplaneras, genom att gå till **leverantörsreskontra > inställningarna > parametrar för leverantörsreskontra > faktura > arbetsflöde för faktura**. 
 
 ## <a name="working-with-multiple-invoices"></a>Arbeta med flera fakturor
 

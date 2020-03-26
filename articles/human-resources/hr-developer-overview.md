@@ -1,6 +1,6 @@
 ---
 title: Översikt
-description: ''
+description: Den här utvecklarhandboken innehåller en API och anpassade fältreferenser. Den innehåller också information om integrering med andra program.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 995de90aa7c83b5aad35d935fe021706cf48ec4c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e67882c47ad37805c6f6ce8051fb58363c4bcdcf
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010594"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092001"
 ---
 # <a name="overview"></a>Översikt
 
@@ -43,7 +43,7 @@ Den här utvecklarhandboken innehåller en API och anpassade fältreferenser. De
   - [Konfigurera integration med Finance](hr-admin-integration-finance.md)
   - [Konfigurera integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Skapa en app för återkommande dataexport](hr-admin-integration-recurring-data-export.md)
-  - Integrera med Office
+  - Integration med Office
     - [Office-integrering – självstudier](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Uppdatera enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Skapa Öppna i Excel-upplevelse](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)

@@ -1,9 +1,9 @@
 ---
-title: Hämta produktrekommendationer med hjälp av demodata
+title: Skapa rekommendationer med demodata
 description: Det här dokumentet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,17 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2e790d78b4d5216822ffda3a3895feb674876bd8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042790"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127846"
 ---
-# <a name="get-product-recommendations-using-demo-data"></a>Hämta produktrekommendationer med hjälp av demodata
+# <a name="create-recommendations-with-demo-data"></a>Skapa rekommendationer med demodata
+
+[!include [banner](includes/banner.md)]
+
 Det här dokumentet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
 
 Produktrekommendationer i flera kanaler innehåller en uppsättning av redaktionellt granskade eller programmässigt genererade listor över produkter i en ordnad lista. Dessa listor kan användas i flera situationer, beroende på vad som behövs i verksamheten. Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt](product-recommendations.md).
@@ -39,7 +42,7 @@ Produktrekommendationer på nivå 1 baseras bara på de statiska demodata som la
 För att aktivera produktrekommendationer demonstrationsdatum måste du distribuera Dynamics 365 Commerce förhandsgranskningsdemo för respektive miljö. Då aktiveras demonstrationsdata för produktrekommendationer automatiskt.
 
 ## <a name="default-demo-data"></a>Standarddemodata
-Varje enskild miljö innehåller en förinstallerad uppsättning med demodata för produktrekommendationer som lagras i den kommaseparerade filen "reco_demo_data. csv", som finns i skalningsenhet för handel.
+Varje enskild miljö innehåller en förinstallerad uppsättning med demodata för produktrekommendationer som lagras i den kommaseparerade filen "reco_demo_data. csv", som finns i Commerce Scale Unit.
 
 Dessa data struktureras längs följande kolumner.
 
@@ -67,4 +70,22 @@ Tillägget innehåller en datafil som heter RecoMockDataset.csv, vilket gör att
 
 [Översikt av produktrekommendationer](product-recommendations.md)
 
-[Miljöplanering](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
+
+[Aktivera produktrekommendationer](enable-product-recommendations.md)
+
+[Aktivera anpassade rekommendationer](personalized-recommendations.md)
+
+[Avanmäl anpassade rekommendationer](personalization-gdpr.md)
+
+[Lägga till rekommendationslistor på en näthandelsplats](add-reco-list-to-page.md)
+
+[Lägg till produktrekommendationer i kassan](product.md)
+
+[Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
+
+[Justera rekommendationsresultat från AI-ML](modify-product-recommendation-results.md)
+
+[Skapa granskade rekommendationer manuellt](create-editorial-recommendation-lists.md)
+
+[Vanliga frågor om produktrekommendationer](faq-recommendations.md)

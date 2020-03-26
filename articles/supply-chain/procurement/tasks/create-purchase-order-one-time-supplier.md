@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26c62aa72a7919c780bb709b185b48c97066c538
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e2fa54ff598bb6a09bbcc483995a6e1a3f4286b3
+ms.sourcegitcommit: 16612a632aad9d390f8d80d3fc1f766585b2911e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836322"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3098086"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Skapa en inköpsorder för en engångsleverantör
 
@@ -37,5 +37,5 @@ Den här proceduren visar hur du skapar en inköpsorder för en engångsleverant
     * Ett leverantörskonto skapas automatiskt och tilldelas inköpsordern. Leverantörskontot är baserat på mallen som visas på fliken Allmänt på sidan Parametrar för leverantörsreskontra.  
 4. Ange ett namn för leverantören i fältet Namn.
 5. Klicka på OK.
-    * Inköpsordern kan nu slutföras och bearbetas som alla andra order. Det finns inga särskilda resursegenskaper som är relaterade till hur detta ska göras. Fakturan tar hänsyn en transaktion som förfaller på leverantörskontot som skapades med ordern och betalningen bearbetas därefter. När detta är slutfört kan leverantörskontot tas bort. Detta görs normalt av leverantörsreskontraavdelningen.  
+    * Inköpsordern kan nu slutföras och bearbetas som alla andra order. Det finns inga särskilda resursegenskaper som är relaterade till hur detta ska göras. Fakturan tar hänsyn en transaktion som förfaller på leverantörskontot som skapades med ordern och betalningen bearbetas därefter.
 
