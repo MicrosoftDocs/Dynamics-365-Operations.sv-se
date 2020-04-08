@@ -660,7 +660,7 @@
               href: expense-management/expense-report-distributions.md
             - name: Koncerninterna utgifter
               href: expense-management/intercompany-expense.md
-            - name: Utgiftspolicy
+            - name: Definiera utgiftspolicyer
               href: expense-management/travel-expense-policies.md
             - name: Visa en utgiftsrapport
               href: expense-management/view-expense-report.md
@@ -984,6 +984,8 @@
               href: project-management/project-contracts.md
             - name: Projektprognoser och projektbudgetar
               href: project-management/project-forecasts-budgets.md
+            - name: Överför projektbudgetar vid räkenskapsårets slut
+              href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: Projektförsäljningsorder
               href: project-management/project-sales-orders.md
             - name: Inköpsorder för ett projekt
@@ -1646,6 +1648,12 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: Visa transaktioner på kvittning
                   href: localizations/emea-transactions-settlement-form.md
+            - name: Finland
+              items:
+                - name: Finland – översikt
+                  href: localizations/finland.md
+                - name: Momsbetalningsrapport för Finland
+                  href: localizations/emea-fin-sales-tax-payment-report-finland.md
             - name: Frankrike
               items:
                 - name: Frankrike – översikt
@@ -1696,6 +1704,8 @@
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: Uppdatera betalningsmetod för kund
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: DAS-2-rapport
+                  href: localizations/emea-fra-das2-report.md
             - name: Tyskland
               items:
                 - name: Tyskland – översikt
@@ -1992,10 +2002,16 @@
                   href: localizations/emea-ita-exil-goods-for-free.md
                 - name: Förbättrad förfrågan om debet- eller kreditkvittningar
                   href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+                - name: Provisionskvittning för betalningar
+                  href: localizations/emea-ita-exil-commission-settlement.md
                 - name: Allmänna redovisningssimuleringar (Italien)
                   href: localizations/emea-ita-exil-general-ledger-simulations.md
+                - name: Konfigurerbara bokföringsprofiler för banker och remissatyper
+                  href: localizations/emea-ita-exil-bank-remittance.md
                 - name: Unik certifiering
                   href: localizations/emea-ita-exil-unique-certification.md
+                - name: Import av utställda växlar
+                  href: localizations/emea-ita-exil-protest-boe.md
             - name: Japan
               items:
                 - name: Japan – översikt
@@ -2460,6 +2476,8 @@
                       href: localizations/rus-inventory-cost-structure.md
                     - name: Lagerjusteringsguide
                       href: localizations/rus-inventory-adjustment-wizard.md
+                    - name: Lagerrapporter
+                      href: localizations/rus-inventory-reports.md
                 - name: Rapportering
                   items:
                     - name: Ekonomisk rapportering

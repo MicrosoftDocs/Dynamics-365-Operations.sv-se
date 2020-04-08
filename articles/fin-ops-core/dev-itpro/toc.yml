@@ -162,24 +162,52 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Inställning av dubbelriktad skrivning från Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
+                            - name: Initial synkronisering
+                              href: data-entities/dual-write/initial-sync.md
+                            - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
+                              items:
+                                - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: Systemkrav och förutsättningar
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: Använda guiden för dubbelriktad skrivning för att länka dina miljöer
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: Aktivera enhetsmappning för dubbelriktad skrivning
+                                  href: data-entities/dual-write/enable-entity-map.md
+                        - name: Hantera dubbelriktad skrivning
+                          items:
+                            - name: Anpassa enhets- och fältmappningar
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: Felhantering och varningsaviseringar
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: Livscykelhantering för program
+                              href: data-entities/dual-write/app-lifecycle-management.md
                         - name: Mappa koncept mellan appar
                           items:
-                            - name: Organisationshierarki för Common Data Service
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Företagsintegrering
-                              items:
-                                - name: Företagskoncept i Common Data Services
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Starta med företagsdata
-                                  href: data-entities/dual-write/bootstrap-company-data.md
                             - name: Integrerad kundmaster
                               href: data-entities/dual-write/customer-mapping.md
+                            - name: Leverantörsintegration
+                              items:
+                                - name: Integrerat leverantörshuvud
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Växla mellan leverantörsdesigner
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Kundförmånskort och belöningspoäng
+                              href: data-entities/dual-write/loyalty-mapping.md
                             - name: Produktintegration
                               items:
                                 - name: Enhetlig produktupplevelse
                                   href: data-entities/dual-write/product-mapping.md
                                 - name: Integrerade platser och lagerställen
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Företagsintegrering
+                              items:
+                                - name: Företagskoncept i Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Starta med företagsdata
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Organisationshierarki för Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
                             - name: Ekonomi- och momsdata
                               items:
                                 - name: Åtkomst till ekonomi- och momsreferensdata
@@ -188,12 +216,8 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integrerad momsmaster
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Leverantörsintegration
-                              items:
-                                - name: Integrerat leverantörshuvud
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Växla mellan leverantörsdesigner
-                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Synkronisera med Dynamics 365 Supply Chain Management prissättningsmotor på begäran
+                              href: data-entities/dual-write/pricing-engine.md
                             - name: Potentiell kund till kontanter med dubbelriktad skrivning
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
                             - name: Interna tillgångar för service
@@ -204,11 +228,25 @@
                           items:
                             - name: Stöd för Field Service- och Project Service Automation-lösningar
                               href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Initial synkronisering
-                              href: data-entities/dual-write/initial-sync.md
-                            - name: Felsökning av dataintegrering
-                              href: data-entities/dual-write/dual-write-troubleshooting.md
-                    - name: Integrering med Power Platform dataintegrerare
+                            - name: Felsökning
+                              items:
+                                - name: Kontrollera att dubbelriktad skrivning är konfigurerat i Finance and Operations-appar och Common Data Service
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: Felsöka problem under första installationen
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: Felsöka problem under första synkroniseringen
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: Felsöka problem med modulen för dubbelriktad skrivning i Finance and Operations-appar
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: Felsöka problem med livesynkronisering
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: Felsöka problem som rör lösningsmedvetande
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: Felsöka problem som rör uppgraderingar av Finance and Operations-appar
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: Allmän felsökning
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                    - name: Integration med Power Platform
                       items:
                         - name: Konfigurera ett scenario för potentiell kund till pengar
                           items:
@@ -392,6 +430,8 @@
                       href: database/api/v1/reference-list-backups.md
                     - name: Skapa uppdatering av databas
                       href: database/api/v1/reference-create-refresh.md
+                    - name: Skapa en databasexport
+                      href: database/api/v1/reference-create-export.md
                     - name: Hämta aktivitetsstatus för åtgärd
                       href: database/api/v1/reference-get-status.md
         - name: Demodata
@@ -1032,6 +1072,8 @@
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Övervakning och diagnostik
               href: lifecycle-services/monitoring-diagnostics.md
+            - name: Effektanalysrapport
+              href: lifecycle-services/impact-analysis-report.md
             - name: Starta om miljötjänster
               href: lifecycle-services/restart-environment-services.md
             - name: Rapportera ett produktionsavbrott
@@ -1396,6 +1438,10 @@
                   href: sysadmin/create-rules-optimization-advisor.md
             - name: Rapportera ett produktionsavbrott
               href: lifecycle-services/report-production-outage.md
+            - name: Konfigurera och hantera databasloggning
+              href: sysadmin/configure-manage-database-log.md
+            - name: Skapa cacheminne för OData-metadata när AOS startar
+              href: sysadmin/odata-warmup.md
         - name: 'Uppgraderingar, uppdateringar och snabbkorrigeringar'
           items:
             - name: 'Resurser för uppgraderingar, uppdateringar och snabbkorrigeringar'
