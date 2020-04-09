@@ -15,83 +15,83 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5684c710b8e167a4a39f106eb3c0fd77e3011dbd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 02c87d25db447c82fd00042a37c040c52fa366a9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187853"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144459"
 ---
-# <a name="create-an-organization-report-hierarchy"></a><span data-ttu-id="f0d6a-103">Skapa en organisationsrapporthierarki</span><span class="sxs-lookup"><span data-stu-id="f0d6a-103">Create an organization report hierarchy</span></span>
+# <a name="create-an-organization-report-hierarchy"></a><span data-ttu-id="a7de5-103">Skapa en organisationsrapporthierarki</span><span class="sxs-lookup"><span data-stu-id="a7de5-103">Create an organization report hierarchy</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f0d6a-104">Använd den här proceduren för att skapa en rapporthierarki för organisationsrapportering.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-104">Use this procedure to create a report hierarchy for organization reporting.</span></span> <span data-ttu-id="f0d6a-105">Syftet med den här inspelningen är att guida dig genom dimensionshierarkin så att du kan fortsätta tills hela organisationens rapportstruktur har skapats.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-105">The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created.</span></span> <span data-ttu-id="f0d6a-106">I den här inspelningen används demonstrationsföretaget USP2.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-106">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="a7de5-104">Använd den här proceduren för att skapa en rapporthierarki för organisationsrapportering.</span><span class="sxs-lookup"><span data-stu-id="a7de5-104">Use this procedure to create a report hierarchy for organization reporting.</span></span> <span data-ttu-id="a7de5-105">Syftet med den här inspelningen är att guida dig genom dimensionshierarkin så att du kan fortsätta tills hela organisationens rapportstruktur har skapats.</span><span class="sxs-lookup"><span data-stu-id="a7de5-105">The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created.</span></span> <span data-ttu-id="a7de5-106">I den här inspelningen används demonstrationsföretaget USP2.</span><span class="sxs-lookup"><span data-stu-id="a7de5-106">This recording uses the USP2 demo data company.</span></span>
 
-1. <span data-ttu-id="f0d6a-107">Gå till Kostnadsredovisning > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-107">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="f0d6a-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-108">Click New.</span></span>
-3. <span data-ttu-id="f0d6a-109">Välj Hierarki för dimensionsklassificering i fältet HierarchyTypeComboBox.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-109">In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.</span></span>
-    * <span data-ttu-id="f0d6a-110">Välj Hierarki för dimensionsklassificering.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-110">Select Dimension classification hierarchy.</span></span> <span data-ttu-id="f0d6a-111">Typen Hierarki för dimensionsklassificering används för att definiera regler för rapporteringsändamål.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-111">The Dimension classification hierarchy type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="f0d6a-112">Den stöder alla dimensioner, till exempel kostnadsobjekt, kostnadselement och statistiska dimensioner.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-112">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span>  
-4. <span data-ttu-id="f0d6a-113">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-113">Click Create.</span></span>
-5. <span data-ttu-id="f0d6a-114">Skriv "Oganization USP2" i namnfältet för dimensionshierarki.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-114">In the Dimension hierarchy name field, type 'Oganization USP2'.</span></span>
-6. <span data-ttu-id="f0d6a-115">Ange eller välj ett värde i fältet Dimension.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-115">In the Dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="f0d6a-116">Välj Kostnadsställen.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-116">Select Cost centers.</span></span>  
-7. <span data-ttu-id="f0d6a-117">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-117">Click Save.</span></span>
-8. <span data-ttu-id="f0d6a-118">Klicka p Visa hierarki</span><span class="sxs-lookup"><span data-stu-id="f0d6a-118">Click View hierarchy.</span></span>
-9. <span data-ttu-id="f0d6a-119">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-119">Click New.</span></span>
-10. <span data-ttu-id="f0d6a-120">Skriv "CEO" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-120">In the Node name field, type 'CEO'.</span></span>
-11. <span data-ttu-id="f0d6a-121">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-121">Click Save.</span></span>
-12. <span data-ttu-id="f0d6a-122">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-122">Click New.</span></span>
-13. <span data-ttu-id="f0d6a-123">Skriv "CEO cost centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-123">In the Node name field, type 'CEO cost centers'.</span></span>
-14. <span data-ttu-id="f0d6a-124">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-124">Click Save.</span></span>
-15. <span data-ttu-id="f0d6a-125">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-125">Click New.</span></span>
-16. <span data-ttu-id="f0d6a-126">Skriv "Region East" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-126">In the Node name field, type 'Region East'.</span></span>
-17. <span data-ttu-id="f0d6a-127">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-127">Click Save.</span></span>
-18. <span data-ttu-id="f0d6a-128">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-128">Click New.</span></span>
-19. <span data-ttu-id="f0d6a-129">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-129">In the list, mark the selected row.</span></span>
-20. <span data-ttu-id="f0d6a-130">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-130">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="f0d6a-131">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-131">Select the dimension member that corresponds to the node.</span></span>  
-21. <span data-ttu-id="f0d6a-132">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-132">Click Save.</span></span>
-22. <span data-ttu-id="f0d6a-133">Välj Oganization USP2\CEO\CEO cost centers i trädet.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-133">In the tree, select 'Oganization USP2\CEO\CEO cost centers'.</span></span>
-23. <span data-ttu-id="f0d6a-134">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-134">Click New.</span></span>
-24. <span data-ttu-id="f0d6a-135">Skriv "Region West" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-135">In the Node name field, type 'Region West'.</span></span>
-25. <span data-ttu-id="f0d6a-136">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-136">Click Save.</span></span>
-26. <span data-ttu-id="f0d6a-137">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-137">Click New.</span></span>
-27. <span data-ttu-id="f0d6a-138">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-138">In the list, mark the selected row.</span></span>
-28. <span data-ttu-id="f0d6a-139">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-139">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="f0d6a-140">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-140">Select the dimension member that corresponds to the node.</span></span>  
-29. <span data-ttu-id="f0d6a-141">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-141">Click Save.</span></span>
-30. <span data-ttu-id="f0d6a-142">Välj Oganization USP2\CEO i trädet.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-142">In the tree, select 'Oganization USP2\CEO'.</span></span>
-31. <span data-ttu-id="f0d6a-143">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-143">Click New.</span></span>
-32. <span data-ttu-id="f0d6a-144">Skriv "CFO cost centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-144">In the Node name field, type 'CFO cost centers'.</span></span>
-33. <span data-ttu-id="f0d6a-145">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-145">Click Save.</span></span>
-34. <span data-ttu-id="f0d6a-146">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-146">Click New.</span></span>
-35. <span data-ttu-id="f0d6a-147">Skriv "Marketing campa" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-147">In the Node name field, type 'Marketing campa'.</span></span>
-36. <span data-ttu-id="f0d6a-148">Skriv "Marketing campaign" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-148">In the Node name field, type 'Marketing campaign'.</span></span>
-37. <span data-ttu-id="f0d6a-149">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-149">Click Save.</span></span>
-38. <span data-ttu-id="f0d6a-150">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-150">Click New.</span></span>
-39. <span data-ttu-id="f0d6a-151">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-151">In the list, mark the selected row.</span></span>
-40. <span data-ttu-id="f0d6a-152">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-152">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="f0d6a-153">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-153">Select the dimension member that corresponds to the node.</span></span>  
-41. <span data-ttu-id="f0d6a-154">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-154">Click Save.</span></span>
-42. <span data-ttu-id="f0d6a-155">I trädet väljer du "Organisation USP2\CEO\CFO kostnadsställen".</span><span class="sxs-lookup"><span data-stu-id="f0d6a-155">In the tree, select 'Organization USP2\CEO\CFO cost centers'.</span></span>
-43. <span data-ttu-id="f0d6a-156">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-156">Click New.</span></span>
-44. <span data-ttu-id="f0d6a-157">Skriv "Trade shows" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-157">In the Node name field, type 'Trade shows'.</span></span>
-45. <span data-ttu-id="f0d6a-158">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-158">Click Save.</span></span>
-46. <span data-ttu-id="f0d6a-159">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-159">Click New.</span></span>
-47. <span data-ttu-id="f0d6a-160">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-160">In the list, mark the selected row.</span></span>
-48. <span data-ttu-id="f0d6a-161">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-161">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="f0d6a-162">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-162">Select the dimension member that corresponds to the node.</span></span>  
-49. <span data-ttu-id="f0d6a-163">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-163">Click Save.</span></span>
-50. <span data-ttu-id="f0d6a-164">Välj Oganization USP2\CEO i trädet.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-164">In the tree, select 'Oganization USP2\CEO'.</span></span>
-51. <span data-ttu-id="f0d6a-165">Skriv "CIO cost centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-165">In the Node name field, type 'CIO cost centers'.</span></span>
-52. <span data-ttu-id="f0d6a-166">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-166">Click Save.</span></span>
-53. <span data-ttu-id="f0d6a-167">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-167">Click New.</span></span>
-54. <span data-ttu-id="f0d6a-168">Skriv "Call centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-168">In the Node name field, type 'Call centers'.</span></span>
-55. <span data-ttu-id="f0d6a-169">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-169">Click Save.</span></span>
-56. <span data-ttu-id="f0d6a-170">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-170">Click New.</span></span>
-57. <span data-ttu-id="f0d6a-171">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-171">In the list, mark the selected row.</span></span>
-58. <span data-ttu-id="f0d6a-172">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-172">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="f0d6a-173">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-173">Select the dimension member that corresponds to the node.</span></span>  
-59. <span data-ttu-id="f0d6a-174">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="f0d6a-174">Click Save.</span></span>
+1. <span data-ttu-id="a7de5-107">Gå till Kostnadsredovisning > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="a7de5-107">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="a7de5-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-108">Click New.</span></span>
+3. <span data-ttu-id="a7de5-109">Välj Hierarki för dimensionsklassificering i fältet HierarchyTypeComboBox.</span><span class="sxs-lookup"><span data-stu-id="a7de5-109">In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.</span></span>
+    * <span data-ttu-id="a7de5-110">Välj Hierarki för dimensionsklassificering.</span><span class="sxs-lookup"><span data-stu-id="a7de5-110">Select Dimension classification hierarchy.</span></span> <span data-ttu-id="a7de5-111">Typen Hierarki för dimensionsklassificering används för att definiera regler för rapporteringsändamål.</span><span class="sxs-lookup"><span data-stu-id="a7de5-111">The Dimension classification hierarchy type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="a7de5-112">Den stöder alla dimensioner, till exempel kostnadsobjekt, kostnadselement och statistiska dimensioner.</span><span class="sxs-lookup"><span data-stu-id="a7de5-112">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span>  
+4. <span data-ttu-id="a7de5-113">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="a7de5-113">Click Create.</span></span>
+5. <span data-ttu-id="a7de5-114">Skriv "Oganization USP2" i namnfältet för dimensionshierarki.</span><span class="sxs-lookup"><span data-stu-id="a7de5-114">In the Dimension hierarchy name field, type 'Oganization USP2'.</span></span>
+6. <span data-ttu-id="a7de5-115">Ange eller välj ett värde i fältet Dimension.</span><span class="sxs-lookup"><span data-stu-id="a7de5-115">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="a7de5-116">Välj Kostnadsställen.</span><span class="sxs-lookup"><span data-stu-id="a7de5-116">Select Cost centers.</span></span>  
+7. <span data-ttu-id="a7de5-117">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-117">Click Save.</span></span>
+8. <span data-ttu-id="a7de5-118">Klicka p Visa hierarki</span><span class="sxs-lookup"><span data-stu-id="a7de5-118">Click View hierarchy.</span></span>
+9. <span data-ttu-id="a7de5-119">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-119">Click New.</span></span>
+10. <span data-ttu-id="a7de5-120">Skriv "CEO" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-120">In the Node name field, type 'CEO'.</span></span>
+11. <span data-ttu-id="a7de5-121">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-121">Click Save.</span></span>
+12. <span data-ttu-id="a7de5-122">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-122">Click New.</span></span>
+13. <span data-ttu-id="a7de5-123">Skriv "CEO cost centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-123">In the Node name field, type 'CEO cost centers'.</span></span>
+14. <span data-ttu-id="a7de5-124">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-124">Click Save.</span></span>
+15. <span data-ttu-id="a7de5-125">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-125">Click New.</span></span>
+16. <span data-ttu-id="a7de5-126">Skriv "Region East" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-126">In the Node name field, type 'Region East'.</span></span>
+17. <span data-ttu-id="a7de5-127">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-127">Click Save.</span></span>
+18. <span data-ttu-id="a7de5-128">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-128">Click New.</span></span>
+19. <span data-ttu-id="a7de5-129">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="a7de5-129">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="a7de5-130">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="a7de5-130">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="a7de5-131">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="a7de5-131">Select the dimension member that corresponds to the node.</span></span>  
+21. <span data-ttu-id="a7de5-132">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-132">Click Save.</span></span>
+22. <span data-ttu-id="a7de5-133">Välj Oganization USP2\CEO\CEO cost centers i trädet.</span><span class="sxs-lookup"><span data-stu-id="a7de5-133">In the tree, select 'Oganization USP2\CEO\CEO cost centers'.</span></span>
+23. <span data-ttu-id="a7de5-134">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-134">Click New.</span></span>
+24. <span data-ttu-id="a7de5-135">Skriv "Region West" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-135">In the Node name field, type 'Region West'.</span></span>
+25. <span data-ttu-id="a7de5-136">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-136">Click Save.</span></span>
+26. <span data-ttu-id="a7de5-137">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-137">Click New.</span></span>
+27. <span data-ttu-id="a7de5-138">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="a7de5-138">In the list, mark the selected row.</span></span>
+28. <span data-ttu-id="a7de5-139">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="a7de5-139">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="a7de5-140">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="a7de5-140">Select the dimension member that corresponds to the node.</span></span>  
+29. <span data-ttu-id="a7de5-141">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-141">Click Save.</span></span>
+30. <span data-ttu-id="a7de5-142">Välj Oganization USP2\CEO i trädet.</span><span class="sxs-lookup"><span data-stu-id="a7de5-142">In the tree, select 'Oganization USP2\CEO'.</span></span>
+31. <span data-ttu-id="a7de5-143">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-143">Click New.</span></span>
+32. <span data-ttu-id="a7de5-144">Skriv "CFO cost centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-144">In the Node name field, type 'CFO cost centers'.</span></span>
+33. <span data-ttu-id="a7de5-145">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-145">Click Save.</span></span>
+34. <span data-ttu-id="a7de5-146">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-146">Click New.</span></span>
+35. <span data-ttu-id="a7de5-147">Skriv "Marketing campa" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-147">In the Node name field, type 'Marketing campa'.</span></span>
+36. <span data-ttu-id="a7de5-148">Skriv "Marketing campaign" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-148">In the Node name field, type 'Marketing campaign'.</span></span>
+37. <span data-ttu-id="a7de5-149">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-149">Click Save.</span></span>
+38. <span data-ttu-id="a7de5-150">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-150">Click New.</span></span>
+39. <span data-ttu-id="a7de5-151">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="a7de5-151">In the list, mark the selected row.</span></span>
+40. <span data-ttu-id="a7de5-152">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="a7de5-152">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="a7de5-153">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="a7de5-153">Select the dimension member that corresponds to the node.</span></span>  
+41. <span data-ttu-id="a7de5-154">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-154">Click Save.</span></span>
+42. <span data-ttu-id="a7de5-155">I trädet väljer du "Organisation USP2\CEO\CFO kostnadsställen".</span><span class="sxs-lookup"><span data-stu-id="a7de5-155">In the tree, select 'Organization USP2\CEO\CFO cost centers'.</span></span>
+43. <span data-ttu-id="a7de5-156">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-156">Click New.</span></span>
+44. <span data-ttu-id="a7de5-157">Skriv "Trade shows" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-157">In the Node name field, type 'Trade shows'.</span></span>
+45. <span data-ttu-id="a7de5-158">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-158">Click Save.</span></span>
+46. <span data-ttu-id="a7de5-159">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-159">Click New.</span></span>
+47. <span data-ttu-id="a7de5-160">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="a7de5-160">In the list, mark the selected row.</span></span>
+48. <span data-ttu-id="a7de5-161">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="a7de5-161">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="a7de5-162">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="a7de5-162">Select the dimension member that corresponds to the node.</span></span>  
+49. <span data-ttu-id="a7de5-163">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-163">Click Save.</span></span>
+50. <span data-ttu-id="a7de5-164">Välj Oganization USP2\CEO i trädet.</span><span class="sxs-lookup"><span data-stu-id="a7de5-164">In the tree, select 'Oganization USP2\CEO'.</span></span>
+51. <span data-ttu-id="a7de5-165">Skriv "CIO cost centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-165">In the Node name field, type 'CIO cost centers'.</span></span>
+52. <span data-ttu-id="a7de5-166">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-166">Click Save.</span></span>
+53. <span data-ttu-id="a7de5-167">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-167">Click New.</span></span>
+54. <span data-ttu-id="a7de5-168">Skriv "Call centers" i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="a7de5-168">In the Node name field, type 'Call centers'.</span></span>
+55. <span data-ttu-id="a7de5-169">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-169">Click Save.</span></span>
+56. <span data-ttu-id="a7de5-170">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a7de5-170">Click New.</span></span>
+57. <span data-ttu-id="a7de5-171">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="a7de5-171">In the list, mark the selected row.</span></span>
+58. <span data-ttu-id="a7de5-172">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="a7de5-172">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="a7de5-173">Välj den dimensionsmedlem som motsvarar noden.</span><span class="sxs-lookup"><span data-stu-id="a7de5-173">Select the dimension member that corresponds to the node.</span></span>  
+59. <span data-ttu-id="a7de5-174">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a7de5-174">Click Save.</span></span>
 

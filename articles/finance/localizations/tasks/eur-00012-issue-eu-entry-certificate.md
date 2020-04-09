@@ -16,75 +16,74 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 735331fd399ba9501031084e236b88c0e11bb179
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0091af30b917aab3b8c4572a72a20d8d2d5d52e2
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183941"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144393"
 ---
-# <a name="eur-00012-issue-an-eu-entry-certificate"></a><span data-ttu-id="65f9a-103">EUR-00012 Utfärda ett EU-mottagningskvitto</span><span class="sxs-lookup"><span data-stu-id="65f9a-103">EUR-00012 Issue an EU entry certificate</span></span>
+# <a name="eur-00012-issue-an-eu-entry-certificate"></a><span data-ttu-id="43f32-103">EUR-00012 Utfärda ett EU-mottagningskvitto</span><span class="sxs-lookup"><span data-stu-id="43f32-103">EUR-00012 Issue an EU entry certificate</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
+<span data-ttu-id="43f32-104">Den här proceduren beskriver hur du aktiverar ett EU-mottagningskvitto genom att konfigurera ett kundkonto som ska använda mottagningskvitton och genom att utfärda ett certifikat.</span><span class="sxs-lookup"><span data-stu-id="43f32-104">This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</span></span> <span data-ttu-id="43f32-105">Proceduren har skapats med demodataföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="43f32-105">This procedure was created using the demo data company DEMF.</span></span>
 
-<span data-ttu-id="65f9a-104">Den här proceduren beskriver hur du aktiverar ett EU-mottagningskvitto genom att konfigurera ett kundkonto som ska använda mottagningskvitton och genom att utfärda ett certifikat.</span><span class="sxs-lookup"><span data-stu-id="65f9a-104">This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</span></span> <span data-ttu-id="65f9a-105">Proceduren har skapats med demodataföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="65f9a-105">This procedure was created using the demo data company DEMF.</span></span>
 
+## <a name="enable-entry-certificate-management"></a><span data-ttu-id="43f32-106">Aktivera hantering av mottagningskvitton</span><span class="sxs-lookup"><span data-stu-id="43f32-106">Enable entry certificate management</span></span>
+1. <span data-ttu-id="43f32-107">Gå till Kundreskontra > Inställningar > Parametrar för kundreskontra.</span><span class="sxs-lookup"><span data-stu-id="43f32-107">Go to Accounts receivable > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="43f32-108">Klicka på fliken Leveranser.</span><span class="sxs-lookup"><span data-stu-id="43f32-108">Click the Shipments tab.</span></span>
+3. <span data-ttu-id="43f32-109">Expandera avsnittet Mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="43f32-109">Expand the Entry certificate section.</span></span>
+4. <span data-ttu-id="43f32-110">Välj Ja i fältet Aktivera hantering av mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="43f32-110">Select Yes in the Enable entry certificate management field.</span></span>
+5. <span data-ttu-id="43f32-111">Välj Ja i fältet Aktivera utfärdande av mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="43f32-111">Select Yes in the Enable entry certificate issuing field.</span></span>
+6. <span data-ttu-id="43f32-112">Klicka på fliken Nummersekvenser.</span><span class="sxs-lookup"><span data-stu-id="43f32-112">Click the Number sequences tab.</span></span>
+7. <span data-ttu-id="43f32-113">Leta upp och välj mottagningskvittoraden i listan.</span><span class="sxs-lookup"><span data-stu-id="43f32-113">In the list, find and select Entry certificate row.</span></span>
+8. <span data-ttu-id="43f32-114">I fältet Nummersekvenskod anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="43f32-114">In the Number sequence code field, enter or select a value.</span></span>
 
-## <a name="enable-entry-certificate-management"></a><span data-ttu-id="65f9a-106">Aktivera hantering av mottagningskvitton</span><span class="sxs-lookup"><span data-stu-id="65f9a-106">Enable entry certificate management</span></span>
-1. <span data-ttu-id="65f9a-107">Gå till Kundreskontra > Inställningar > Parametrar för kundreskontra.</span><span class="sxs-lookup"><span data-stu-id="65f9a-107">Go to Accounts receivable > Setup > Accounts receivable parameters.</span></span>
-2. <span data-ttu-id="65f9a-108">Klicka på fliken Leveranser.</span><span class="sxs-lookup"><span data-stu-id="65f9a-108">Click the Shipments tab.</span></span>
-3. <span data-ttu-id="65f9a-109">Expandera avsnittet Mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="65f9a-109">Expand the Entry certificate section.</span></span>
-4. <span data-ttu-id="65f9a-110">Välj Ja i fältet Aktivera hantering av mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="65f9a-110">Select Yes in the Enable entry certificate management field.</span></span>
-5. <span data-ttu-id="65f9a-111">Välj Ja i fältet Aktivera utfärdande av mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="65f9a-111">Select Yes in the Enable entry certificate issuing field.</span></span>
-6. <span data-ttu-id="65f9a-112">Klicka på fliken Nummersekvenser.</span><span class="sxs-lookup"><span data-stu-id="65f9a-112">Click the Number sequences tab.</span></span>
-7. <span data-ttu-id="65f9a-113">Leta upp och välj mottagningskvittoraden i listan.</span><span class="sxs-lookup"><span data-stu-id="65f9a-113">In the list, find and select Entry certificate row.</span></span>
-8. <span data-ttu-id="65f9a-114">I fältet Nummersekvenskod anger du eller väljer ett värde.</span><span class="sxs-lookup"><span data-stu-id="65f9a-114">In the Number sequence code field, enter or select a value.</span></span>
+## <a name="set-up-a-customer"></a><span data-ttu-id="43f32-115">Ställ in en kund</span><span class="sxs-lookup"><span data-stu-id="43f32-115">Set up a customer</span></span>
+1. <span data-ttu-id="43f32-116">Gå till Leverantörsreskontra > Kunder > Alla kunder.</span><span class="sxs-lookup"><span data-stu-id="43f32-116">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="43f32-117">Använd snabbfiltret för att söka efter poster.</span><span class="sxs-lookup"><span data-stu-id="43f32-117">Use the Quick Filter to find records.</span></span> <span data-ttu-id="43f32-118">Filtrera till exempel efter fältet Konto med värdet "DE-015".</span><span class="sxs-lookup"><span data-stu-id="43f32-118">For example, filter on the Account field with a value of 'DE-015'.</span></span>
+3. <span data-ttu-id="43f32-119">Öppna information om kundkontot.</span><span class="sxs-lookup"><span data-stu-id="43f32-119">Open customer account details.</span></span>
+4. <span data-ttu-id="43f32-120">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="43f32-120">Click Edit.</span></span>
+5. <span data-ttu-id="43f32-121">Expandera faktura- och leveransavsnittet.</span><span class="sxs-lookup"><span data-stu-id="43f32-121">Expand the Invoice and delivery section.</span></span>
+6. <span data-ttu-id="43f32-122">Välj Ja i fältet Mottagningskvitto krävs.</span><span class="sxs-lookup"><span data-stu-id="43f32-122">Select Yes in the Entry certificate required field.</span></span>
+7. <span data-ttu-id="43f32-123">Välj Ja i fältet Utfärda mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="43f32-123">Select Yes in the Issue entry certificate field.</span></span>
+8. <span data-ttu-id="43f32-124">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="43f32-124">Click Save.</span></span>
 
-## <a name="set-up-a-customer"></a><span data-ttu-id="65f9a-115">Ställ in en kund</span><span class="sxs-lookup"><span data-stu-id="65f9a-115">Set up a customer</span></span>
-1. <span data-ttu-id="65f9a-116">Gå till Leverantörsreskontra > Kunder > Alla kunder.</span><span class="sxs-lookup"><span data-stu-id="65f9a-116">Go to Accounts receivable > Customers > All customers.</span></span>
-2. <span data-ttu-id="65f9a-117">Använd snabbfiltret för att söka efter poster.</span><span class="sxs-lookup"><span data-stu-id="65f9a-117">Use the Quick Filter to find records.</span></span> <span data-ttu-id="65f9a-118">Filtrera till exempel efter fältet Konto med värdet "DE-015".</span><span class="sxs-lookup"><span data-stu-id="65f9a-118">For example, filter on the Account field with a value of 'DE-015'.</span></span>
-3. <span data-ttu-id="65f9a-119">Öppna information om kundkontot.</span><span class="sxs-lookup"><span data-stu-id="65f9a-119">Open customer account details.</span></span>
-4. <span data-ttu-id="65f9a-120">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="65f9a-120">Click Edit.</span></span>
-5. <span data-ttu-id="65f9a-121">Expandera faktura- och leveransavsnittet.</span><span class="sxs-lookup"><span data-stu-id="65f9a-121">Expand the Invoice and delivery section.</span></span>
-6. <span data-ttu-id="65f9a-122">Välj Ja i fältet Mottagningskvitto krävs.</span><span class="sxs-lookup"><span data-stu-id="65f9a-122">Select Yes in the Entry certificate required field.</span></span>
-7. <span data-ttu-id="65f9a-123">Välj Ja i fältet Utfärda mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="65f9a-123">Select Yes in the Issue entry certificate field.</span></span>
-8. <span data-ttu-id="65f9a-124">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="65f9a-124">Click Save.</span></span>
+## <a name="create-an-eu-entry-certificate-automatically"></a><span data-ttu-id="43f32-125">Skapa ett EU-mottagningskvitto automatiskt</span><span class="sxs-lookup"><span data-stu-id="43f32-125">Create an EU entry certificate automatically</span></span>
+1. <span data-ttu-id="43f32-126">Gå till Leverantörsreskontra > Order > Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="43f32-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="43f32-127">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="43f32-127">Click New.</span></span>
+3. <span data-ttu-id="43f32-128">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="43f32-128">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="43f32-129">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="43f32-129">Click OK.</span></span>
+5. <span data-ttu-id="43f32-130">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="43f32-130">In the Item number field, enter or select a value.</span></span>
+6. <span data-ttu-id="43f32-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="43f32-131">Click Save.</span></span>
+7. <span data-ttu-id="43f32-132">Klicka på Plocka och packa i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="43f32-132">On the Action Pane, click Pick and pack.</span></span>
+8. <span data-ttu-id="43f32-133">Klicka på Bokför följesedel.</span><span class="sxs-lookup"><span data-stu-id="43f32-133">Click Post packing slip.</span></span>
+9. <span data-ttu-id="43f32-134">Expandera avsnittet Parametrar.</span><span class="sxs-lookup"><span data-stu-id="43f32-134">Expand the Parameters section.</span></span>
+10. <span data-ttu-id="43f32-135">Välj Alla i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="43f32-135">In the Quantity field, select 'All'.</span></span>
+11. <span data-ttu-id="43f32-136">Avmarkera kryssrutan Utfärda mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="43f32-136">Clear the Issue entry certificate check box.</span></span>
+    * <span data-ttu-id="43f32-137">Ett mottagningskvitto kan utfärdas under bokföringen av följesedeln eller under orderfaktureringen.</span><span class="sxs-lookup"><span data-stu-id="43f32-137">An entry certificate can be issued during packing slip posting or during order invoicing.</span></span> <span data-ttu-id="43f32-138">Lämna kryssrutan Utfärda mottagningskvitto avmarkerad om du vill utfärda det senare.</span><span class="sxs-lookup"><span data-stu-id="43f32-138">Leave the Issue entry certificate checkbox unchecked to issue it later.</span></span>  
+12. <span data-ttu-id="43f32-139">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="43f32-139">Click OK.</span></span>
+13. <span data-ttu-id="43f32-140">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="43f32-140">Click OK.</span></span>
+14. <span data-ttu-id="43f32-141">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="43f32-141">On the Action Pane, click Invoice.</span></span>
+15. <span data-ttu-id="43f32-142">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="43f32-142">Click Invoice.</span></span>
+    * <span data-ttu-id="43f32-143">Kontrollera att kryssrutorna Mottagningskvitto krävs och Utfärda mottagningskvitto i avsnittet Översikt är markerade.</span><span class="sxs-lookup"><span data-stu-id="43f32-143">Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</span></span>  <span data-ttu-id="43f32-144">Du kan också markera kryssrutan Skriv ut mottagningskvitto om du vill tillåta att kvittot skrivs ut.</span><span class="sxs-lookup"><span data-stu-id="43f32-144">You can also select the Print entry certificate check box to allow printing of the certificate.</span></span>  
+16. <span data-ttu-id="43f32-145">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="43f32-145">Click OK.</span></span>
+17. <span data-ttu-id="43f32-146">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="43f32-146">Click OK.</span></span>
+18. <span data-ttu-id="43f32-147">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="43f32-147">On the Action Pane, click Invoice.</span></span>
+19. <span data-ttu-id="43f32-148">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="43f32-148">Click Invoice.</span></span>
+20. <span data-ttu-id="43f32-149">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="43f32-149">On the Action Pane, click Invoice.</span></span>
+21. <span data-ttu-id="43f32-150">Klicka på Visa utfärdade mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="43f32-150">Click View issued entry certificates.</span></span>
+22. <span data-ttu-id="43f32-151">Klicka på Skriv ut.</span><span class="sxs-lookup"><span data-stu-id="43f32-151">Click Print.</span></span>
+23. <span data-ttu-id="43f32-152">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="43f32-152">Close the page.</span></span>
+24. <span data-ttu-id="43f32-153">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="43f32-153">Click Change status.</span></span>
+25. <span data-ttu-id="43f32-154">Välj ett alternativ i fältet Ny status.</span><span class="sxs-lookup"><span data-stu-id="43f32-154">In the New status field, select an option.</span></span>
+26. <span data-ttu-id="43f32-155">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="43f32-155">Click OK.</span></span>
+27. <span data-ttu-id="43f32-156">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="43f32-156">Close the page.</span></span>
 
-## <a name="create-an-eu-entry-certificate-automatically"></a><span data-ttu-id="65f9a-125">Skapa ett EU-mottagningskvitto automatiskt</span><span class="sxs-lookup"><span data-stu-id="65f9a-125">Create an EU entry certificate automatically</span></span>
-1. <span data-ttu-id="65f9a-126">Gå till Leverantörsreskontra > Order > Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="65f9a-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
-2. <span data-ttu-id="65f9a-127">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="65f9a-127">Click New.</span></span>
-3. <span data-ttu-id="65f9a-128">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="65f9a-128">In the Customer account field, enter or select a value.</span></span>
-4. <span data-ttu-id="65f9a-129">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="65f9a-129">Click OK.</span></span>
-5. <span data-ttu-id="65f9a-130">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="65f9a-130">In the Item number field, enter or select a value.</span></span>
-6. <span data-ttu-id="65f9a-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="65f9a-131">Click Save.</span></span>
-7. <span data-ttu-id="65f9a-132">Klicka på Plocka och packa i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="65f9a-132">On the Action Pane, click Pick and pack.</span></span>
-8. <span data-ttu-id="65f9a-133">Klicka på Bokför följesedel.</span><span class="sxs-lookup"><span data-stu-id="65f9a-133">Click Post packing slip.</span></span>
-9. <span data-ttu-id="65f9a-134">Expandera avsnittet Parametrar.</span><span class="sxs-lookup"><span data-stu-id="65f9a-134">Expand the Parameters section.</span></span>
-10. <span data-ttu-id="65f9a-135">Välj Alla i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="65f9a-135">In the Quantity field, select 'All'.</span></span>
-11. <span data-ttu-id="65f9a-136">Avmarkera kryssrutan Utfärda mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="65f9a-136">Clear the Issue entry certificate check box.</span></span>
-    * <span data-ttu-id="65f9a-137">Ett mottagningskvitto kan utfärdas under bokföringen av följesedeln eller under orderfaktureringen.</span><span class="sxs-lookup"><span data-stu-id="65f9a-137">An entry certificate can be issued during packing slip posting or during order invoicing.</span></span> <span data-ttu-id="65f9a-138">Lämna kryssrutan Utfärda mottagningskvitto avmarkerad om du vill utfärda det senare.</span><span class="sxs-lookup"><span data-stu-id="65f9a-138">Leave the Issue entry certificate checkbox unchecked to issue it later.</span></span>  
-12. <span data-ttu-id="65f9a-139">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="65f9a-139">Click OK.</span></span>
-13. <span data-ttu-id="65f9a-140">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="65f9a-140">Click OK.</span></span>
-14. <span data-ttu-id="65f9a-141">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="65f9a-141">On the Action Pane, click Invoice.</span></span>
-15. <span data-ttu-id="65f9a-142">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="65f9a-142">Click Invoice.</span></span>
-    * <span data-ttu-id="65f9a-143">Kontrollera att kryssrutorna Mottagningskvitto krävs och Utfärda mottagningskvitto i avsnittet Översikt är markerade.</span><span class="sxs-lookup"><span data-stu-id="65f9a-143">Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</span></span>  <span data-ttu-id="65f9a-144">Du kan också markera kryssrutan Skriv ut mottagningskvitto om du vill tillåta att kvittot skrivs ut.</span><span class="sxs-lookup"><span data-stu-id="65f9a-144">You can also select the Print entry certificate check box to allow printing of the certificate.</span></span>  
-16. <span data-ttu-id="65f9a-145">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="65f9a-145">Click OK.</span></span>
-17. <span data-ttu-id="65f9a-146">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="65f9a-146">Click OK.</span></span>
-18. <span data-ttu-id="65f9a-147">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="65f9a-147">On the Action Pane, click Invoice.</span></span>
-19. <span data-ttu-id="65f9a-148">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="65f9a-148">Click Invoice.</span></span>
-20. <span data-ttu-id="65f9a-149">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="65f9a-149">On the Action Pane, click Invoice.</span></span>
-21. <span data-ttu-id="65f9a-150">Klicka på Visa utfärdade mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="65f9a-150">Click View issued entry certificates.</span></span>
-22. <span data-ttu-id="65f9a-151">Klicka på Skriv ut.</span><span class="sxs-lookup"><span data-stu-id="65f9a-151">Click Print.</span></span>
-23. <span data-ttu-id="65f9a-152">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="65f9a-152">Close the page.</span></span>
-24. <span data-ttu-id="65f9a-153">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="65f9a-153">Click Change status.</span></span>
-25. <span data-ttu-id="65f9a-154">Välj ett alternativ i fältet Ny status.</span><span class="sxs-lookup"><span data-stu-id="65f9a-154">In the New status field, select an option.</span></span>
-26. <span data-ttu-id="65f9a-155">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="65f9a-155">Click OK.</span></span>
-27. <span data-ttu-id="65f9a-156">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="65f9a-156">Close the page.</span></span>
-
-## <a name="create-an-eu-entry-certificate-manually"></a><span data-ttu-id="65f9a-157">Skapa ett EU-mottagningskvitto manuellt</span><span class="sxs-lookup"><span data-stu-id="65f9a-157">Create an EU entry certificate manually</span></span>
-1. <span data-ttu-id="65f9a-158">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="65f9a-158">On the Action Pane, click Invoice.</span></span>
-2. <span data-ttu-id="65f9a-159">Klicka på Skapa mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="65f9a-159">Click Create entry certificate.</span></span>
-3. <span data-ttu-id="65f9a-160">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="65f9a-160">Click OK.</span></span>
-4. <span data-ttu-id="65f9a-161">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="65f9a-161">On the Action Pane, click Invoice.</span></span>
-5. <span data-ttu-id="65f9a-162">Klicka på Visa utfärdade mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="65f9a-162">Click View issued entry certificates.</span></span>
+## <a name="create-an-eu-entry-certificate-manually"></a><span data-ttu-id="43f32-157">Skapa ett EU-mottagningskvitto manuellt</span><span class="sxs-lookup"><span data-stu-id="43f32-157">Create an EU entry certificate manually</span></span>
+1. <span data-ttu-id="43f32-158">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="43f32-158">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="43f32-159">Klicka på Skapa mottagningskvitto.</span><span class="sxs-lookup"><span data-stu-id="43f32-159">Click Create entry certificate.</span></span>
+3. <span data-ttu-id="43f32-160">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="43f32-160">Click OK.</span></span>
+4. <span data-ttu-id="43f32-161">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="43f32-161">On the Action Pane, click Invoice.</span></span>
+5. <span data-ttu-id="43f32-162">Klicka på Visa utfärdade mottagningskvitton.</span><span class="sxs-lookup"><span data-stu-id="43f32-162">Click View issued entry certificates.</span></span>
 

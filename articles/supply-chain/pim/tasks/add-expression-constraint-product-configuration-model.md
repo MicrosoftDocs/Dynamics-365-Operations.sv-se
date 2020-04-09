@@ -16,38 +16,38 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f67d912b3349d4b5dd861b97533a7722a2b02fa4
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5ac010b96892450c8d37bb08f967ecf4491b4b5
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845147"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148019"
 ---
-# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="e8497-103">Lägg till en uttrycksbegränsning i en produktkonfigurationsmodell</span><span class="sxs-lookup"><span data-stu-id="e8497-103">Add an expression constraint to a product configuration model</span></span>
+# <a name="add-an-expression-constraint-to-a-product-configuration-model"></a><span data-ttu-id="01c3b-103">Lägg till en uttrycksbegränsning i en produktkonfigurationsmodell</span><span class="sxs-lookup"><span data-stu-id="01c3b-103">Add an expression constraint to a product configuration model</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e8497-104">I den här proceduren visas hur du kan lägga till ett nytt begränsningsuttryck i en modell för produktkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="e8497-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="e8497-105">Här visas hur du kan bestämma att hörnskyddet måste användas på en högtalare om användaren har valt ett frontgaller i metall.</span><span class="sxs-lookup"><span data-stu-id="e8497-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="e8497-106">Proceduren använder högtalarkomponenten i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="e8497-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
+<span data-ttu-id="01c3b-104">I den här proceduren visas hur du kan lägga till ett nytt begränsningsuttryck i en modell för produktkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="01c3b-104">This procedure shows how you can add a new constraint expression to a product configuration model.</span></span> <span data-ttu-id="01c3b-105">Här visas hur du kan bestämma att hörnskyddet måste användas på en högtalare om användaren har valt ett frontgaller i metall.</span><span class="sxs-lookup"><span data-stu-id="01c3b-105">It shows how you can mandate that corner protection must be applied to a speaker if the user has selected a front grill in metal.</span></span> <span data-ttu-id="01c3b-106">Proceduren använder högtalarkomponenten i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="01c3b-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="create-an-expression-constraint"></a><span data-ttu-id="e8497-107">Skapa en uttrycksbegränsning</span><span class="sxs-lookup"><span data-stu-id="e8497-107">Create an expression constraint</span></span>
-1. <span data-ttu-id="e8497-108">Klicka på Definition av produktvariantmodell.</span><span class="sxs-lookup"><span data-stu-id="e8497-108">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="e8497-109">Klicka på Modeller för produktkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="e8497-109">Click Product configuration models.</span></span>
-3. <span data-ttu-id="e8497-110">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="e8497-110">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="e8497-111">I det här exemplet används den avancerade högtalarmodellen.</span><span class="sxs-lookup"><span data-stu-id="e8497-111">This example uses the high end speaker model.</span></span>  
-4. <span data-ttu-id="e8497-112">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="e8497-112">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="e8497-113">Expandera avsnittet Begränsningar.</span><span class="sxs-lookup"><span data-stu-id="e8497-113">Expand the Constraints section.</span></span>
-6. <span data-ttu-id="e8497-114">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="e8497-114">Click Add.</span></span>
-7. <span data-ttu-id="e8497-115">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="e8497-115">Click Create.</span></span>
-8. <span data-ttu-id="e8497-116">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="e8497-116">In the Name field, type a value.</span></span>
+## <a name="create-an-expression-constraint"></a><span data-ttu-id="01c3b-107">Skapa en uttrycksbegränsning</span><span class="sxs-lookup"><span data-stu-id="01c3b-107">Create an expression constraint</span></span>
+1. <span data-ttu-id="01c3b-108">Klicka på Definition av produktvariantmodell.</span><span class="sxs-lookup"><span data-stu-id="01c3b-108">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="01c3b-109">Klicka på Modeller för produktkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="01c3b-109">Click Product configuration models.</span></span>
+3. <span data-ttu-id="01c3b-110">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="01c3b-110">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="01c3b-111">I det här exemplet används den avancerade högtalarmodellen.</span><span class="sxs-lookup"><span data-stu-id="01c3b-111">This example uses the high end speaker model.</span></span>  
+4. <span data-ttu-id="01c3b-112">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="01c3b-112">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="01c3b-113">Expandera avsnittet Begränsningar.</span><span class="sxs-lookup"><span data-stu-id="01c3b-113">Expand the Constraints section.</span></span>
+6. <span data-ttu-id="01c3b-114">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="01c3b-114">Click Add.</span></span>
+7. <span data-ttu-id="01c3b-115">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="01c3b-115">Click Create.</span></span>
+8. <span data-ttu-id="01c3b-116">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="01c3b-116">In the Name field, type a value.</span></span>
 
-## <a name="enter-expression"></a><span data-ttu-id="e8497-117">Skriv uttryck</span><span class="sxs-lookup"><span data-stu-id="e8497-117">Enter expression</span></span>
-1. <span data-ttu-id="e8497-118">Klicka på Redigera uttryck.</span><span class="sxs-lookup"><span data-stu-id="e8497-118">Click Edit expression.</span></span>
-    * <span data-ttu-id="e8497-119">Om du låser upp användargränssnittet i uppgiften som registrerar i detta skede, kan du använda IntelliSense och listan över symboler för att skapa begränsningsuttrycket.</span><span class="sxs-lookup"><span data-stu-id="e8497-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
-2. <span data-ttu-id="e8497-120">I fältet ConstraintBody anger du Implies[FrontGrill=="Metal", CornerProtection].</span><span class="sxs-lookup"><span data-stu-id="e8497-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
-    * <span data-ttu-id="e8497-121">Uttryckslogiken betyder: om frontgallret är av metall, måste hörnskyddsalternativet markeras.</span><span class="sxs-lookup"><span data-stu-id="e8497-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
-3. <span data-ttu-id="e8497-122">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="e8497-122">Click Validate.</span></span>
-    * <span data-ttu-id="e8497-123">Verifierafunktionen körs igenom begränsningsuttrycket och söker efter syntaxfel.</span><span class="sxs-lookup"><span data-stu-id="e8497-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
-4. <span data-ttu-id="e8497-124">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="e8497-124">Click Close.</span></span>
-5. <span data-ttu-id="e8497-125">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e8497-125">Click OK.</span></span>
+## <a name="enter-expression"></a><span data-ttu-id="01c3b-117">Skriv uttryck</span><span class="sxs-lookup"><span data-stu-id="01c3b-117">Enter expression</span></span>
+1. <span data-ttu-id="01c3b-118">Klicka på Redigera uttryck.</span><span class="sxs-lookup"><span data-stu-id="01c3b-118">Click Edit expression.</span></span>
+    * <span data-ttu-id="01c3b-119">Om du låser upp användargränssnittet i uppgiften som registrerar i detta skede, kan du använda IntelliSense och listan över symboler för att skapa begränsningsuttrycket.</span><span class="sxs-lookup"><span data-stu-id="01c3b-119">If you unlock the user interface in the task recording at this stage, you can use IntelliSense and the list of symbols to build the constraint expression .</span></span>  
+2. <span data-ttu-id="01c3b-120">I fältet ConstraintBody anger du Implies[FrontGrill=="Metal", CornerProtection].</span><span class="sxs-lookup"><span data-stu-id="01c3b-120">In the ConstraintBody field, enter 'Implies[FrontGrill=="Metal", CornerProtection] '.</span></span>
+    * <span data-ttu-id="01c3b-121">Uttryckslogiken betyder: om frontgallret är av metall, måste hörnskyddsalternativet markeras.</span><span class="sxs-lookup"><span data-stu-id="01c3b-121">This expression logic states: If the Front grill is  metal, then the corner protection option must be selected.</span></span>  
+3. <span data-ttu-id="01c3b-122">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="01c3b-122">Click Validate.</span></span>
+    * <span data-ttu-id="01c3b-123">Verifierafunktionen körs igenom begränsningsuttrycket och söker efter syntaxfel.</span><span class="sxs-lookup"><span data-stu-id="01c3b-123">The validate function runs through the constraint expression and checks for syntax errors.</span></span>  
+4. <span data-ttu-id="01c3b-124">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="01c3b-124">Click Close.</span></span>
+5. <span data-ttu-id="01c3b-125">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="01c3b-125">Click OK.</span></span>
 

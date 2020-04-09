@@ -16,79 +16,79 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24eba0402caefb611a212db19cdb8feafa7c1fee
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: dd56ad01b00dfd0fe67f2d8eb36fb2bd39e04f1c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550750"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142605"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-2---extend-data-model"></a><span data-ttu-id="39006-103">ER Använd dokumenthanteringsfiler i formatutmatningar (Del 2 - Utöka datamodellen)</span><span class="sxs-lookup"><span data-stu-id="39006-103">ER Use Document Management files in format outputs (Part 2 - Extend data model)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-2---extend-data-model"></a><span data-ttu-id="ff981-103">ER Använd dokumenthanteringsfiler i formatutmatningar (Del 2 - Utöka datamodellen)</span><span class="sxs-lookup"><span data-stu-id="ff981-103">ER Use Document Management files in format outputs (Part 2 - Extend data model)</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="39006-104">I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar.</span><span class="sxs-lookup"><span data-stu-id="39006-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="39006-105">Dessa steg kan utföras på valfritt företag.</span><span class="sxs-lookup"><span data-stu-id="39006-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="ff981-104">I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar.</span><span class="sxs-lookup"><span data-stu-id="ff981-104">The following steps explain how a user assigned to the System Administrator or Electronic Reporting Developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="ff981-105">Dessa steg kan utföras på valfritt företag.</span><span class="sxs-lookup"><span data-stu-id="ff981-105">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="39006-106">För att slutföra dessa steg måste du först avsluta stegen i uppgiftsguiden "ER Use Document Management files in format outputs (Part 1: Prepare data model)".</span><span class="sxs-lookup"><span data-stu-id="39006-106">To complete these steps, you must first complete the steps in the “ER Use Document Management files in format outputs (Part 1: Prepare data model)” task guide.</span></span>
+<span data-ttu-id="ff981-106">För att slutföra dessa steg måste du först avsluta stegen i uppgiftsguiden "ER Use Document Management files in format outputs (Part 1: Prepare data model)".</span><span class="sxs-lookup"><span data-stu-id="ff981-106">To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 1: Prepare data model)" task guide.</span></span>
 
-<span data-ttu-id="39006-107">Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="39006-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="ff981-107">Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="ff981-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a><span data-ttu-id="39006-108">Utöka datamodellen för att presentera dokumenthanteringsfilerna i den</span><span class="sxs-lookup"><span data-stu-id="39006-108">Extend data model to present the Document Management files in it</span></span>
-1. <span data-ttu-id="39006-109">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="39006-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="39006-110">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="39006-110">Click Reporting configurations.</span></span>
-3. <span data-ttu-id="39006-111">Expandera "Customer invoice model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-111">In the tree, expand 'Customer invoice model'.</span></span>
-4. <span data-ttu-id="39006-112">Välj "Customer invoice model\Customer invoice model (custom)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-5. <span data-ttu-id="39006-113">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="39006-113">Click Designer.</span></span>
-6. <span data-ttu-id="39006-114">Välj "Customer invoice(InvoiceCustomer)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-114">In the tree, select 'Customer invoice(InvoiceCustomer)'.</span></span>
-    * <span data-ttu-id="39006-115">Vi vill utöka den här datamodell till blottan i den vissa filer som har kopplats till en försäljningsorder, som gäller bearbeta en faktura elektroniskt.</span><span class="sxs-lookup"><span data-stu-id="39006-115">We will extend this data model to expose in it any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
-7. <span data-ttu-id="39006-116">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="39006-116">Click New to open the drop dialog.</span></span>
-8. <span data-ttu-id="39006-117">Ange "Invoice attachments" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="39006-117">In the Name field, type 'Invoice attachments'.</span></span>
-    * <span data-ttu-id="39006-118">Fakturabilagor</span><span class="sxs-lookup"><span data-stu-id="39006-118">Invoice attachments</span></span>  
-9. <span data-ttu-id="39006-119">Välj "Postlista" i fältet Artikeltyp.</span><span class="sxs-lookup"><span data-stu-id="39006-119">In the Item type field, select 'Record list'.</span></span>
-10. <span data-ttu-id="39006-120">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="39006-120">Click Add.</span></span>
-11. <span data-ttu-id="39006-121">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="39006-121">Click New to open the drop dialog.</span></span>
-12. <span data-ttu-id="39006-122">Ange "File content" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="39006-122">In the Name field, type 'File content'.</span></span>
-    * <span data-ttu-id="39006-123">Filinnehåll</span><span class="sxs-lookup"><span data-stu-id="39006-123">File content</span></span>  
-13. <span data-ttu-id="39006-124">Välj "Container" i fältet Item type.</span><span class="sxs-lookup"><span data-stu-id="39006-124">In the Item type field, select 'Container'.</span></span>
-14. <span data-ttu-id="39006-125">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="39006-125">Click Add.</span></span>
-15. <span data-ttu-id="39006-126">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="39006-126">Click New to open the drop dialog.</span></span>
-16. <span data-ttu-id="39006-127">Ange "File name" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="39006-127">In the Name field, type 'File name'.</span></span>
-    * <span data-ttu-id="39006-128">Filnamn</span><span class="sxs-lookup"><span data-stu-id="39006-128">File name</span></span>  
-17. <span data-ttu-id="39006-129">Välj "Sträng" i fältet Artikeltyp.</span><span class="sxs-lookup"><span data-stu-id="39006-129">In the Item type field, select 'String'.</span></span>
-18. <span data-ttu-id="39006-130">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="39006-130">Click Add.</span></span>
+## <a name="extend-data-model-to-present-the-document-management-files-in-it"></a><span data-ttu-id="ff981-108">Utöka datamodellen för att presentera dokumenthanteringsfilerna i den</span><span class="sxs-lookup"><span data-stu-id="ff981-108">Extend data model to present the Document Management files in it</span></span>
+1. <span data-ttu-id="ff981-109">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="ff981-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="ff981-110">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="ff981-110">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="ff981-111">Expandera "Customer invoice model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-111">In the tree, expand 'Customer invoice model'.</span></span>
+4. <span data-ttu-id="ff981-112">Välj "Customer invoice model\Customer invoice model (custom)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-112">In the tree, select 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+5. <span data-ttu-id="ff981-113">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="ff981-113">Click Designer.</span></span>
+6. <span data-ttu-id="ff981-114">Välj "Customer invoice(InvoiceCustomer)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-114">In the tree, select 'Customer invoice(InvoiceCustomer)'.</span></span>
+    * <span data-ttu-id="ff981-115">Vi vill utöka den här datamodell till blottan i den vissa filer som har kopplats till en försäljningsorder, som gäller bearbeta en faktura elektroniskt.</span><span class="sxs-lookup"><span data-stu-id="ff981-115">We will extend this data model to expose in it any files that have been attached to a sales order that is related to an electronically processing invoice.</span></span>  
+7. <span data-ttu-id="ff981-116">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="ff981-116">Click New to open the drop dialog.</span></span>
+8. <span data-ttu-id="ff981-117">Ange "Invoice attachments" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="ff981-117">In the Name field, type 'Invoice attachments'.</span></span>
+    * <span data-ttu-id="ff981-118">Fakturabilagor</span><span class="sxs-lookup"><span data-stu-id="ff981-118">Invoice attachments</span></span>  
+9. <span data-ttu-id="ff981-119">Välj "Postlista" i fältet Artikeltyp.</span><span class="sxs-lookup"><span data-stu-id="ff981-119">In the Item type field, select 'Record list'.</span></span>
+10. <span data-ttu-id="ff981-120">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="ff981-120">Click Add.</span></span>
+11. <span data-ttu-id="ff981-121">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="ff981-121">Click New to open the drop dialog.</span></span>
+12. <span data-ttu-id="ff981-122">Ange "File content" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="ff981-122">In the Name field, type 'File content'.</span></span>
+    * <span data-ttu-id="ff981-123">Filinnehåll</span><span class="sxs-lookup"><span data-stu-id="ff981-123">File content</span></span>  
+13. <span data-ttu-id="ff981-124">Välj "Container" i fältet Item type.</span><span class="sxs-lookup"><span data-stu-id="ff981-124">In the Item type field, select 'Container'.</span></span>
+14. <span data-ttu-id="ff981-125">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="ff981-125">Click Add.</span></span>
+15. <span data-ttu-id="ff981-126">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="ff981-126">Click New to open the drop dialog.</span></span>
+16. <span data-ttu-id="ff981-127">Ange "File name" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="ff981-127">In the Name field, type 'File name'.</span></span>
+    * <span data-ttu-id="ff981-128">Filnamn</span><span class="sxs-lookup"><span data-stu-id="ff981-128">File name</span></span>  
+17. <span data-ttu-id="ff981-129">Välj "Sträng" i fältet Artikeltyp.</span><span class="sxs-lookup"><span data-stu-id="ff981-129">In the Item type field, select 'String'.</span></span>
+18. <span data-ttu-id="ff981-130">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="ff981-130">Click Add.</span></span>
 
-## <a name="map-new-data-model-elements-to-data-sources"></a><span data-ttu-id="39006-131">Mappa nya datamodellelement till datakällor</span><span class="sxs-lookup"><span data-stu-id="39006-131">Map new data model elements to data sources</span></span>
-1. <span data-ttu-id="39006-132">Klicka på Mappa modell till datakälla.</span><span class="sxs-lookup"><span data-stu-id="39006-132">Click Map model to datasource.</span></span>
-2. <span data-ttu-id="39006-133">Använd snabbfiltret (Quick Filter) för att filtrera fältet Definition med värdet "InvoiceCustomer".</span><span class="sxs-lookup"><span data-stu-id="39006-133">Use the Quick Filter to filter on the Definition field with a value of 'InvoiceCustomer'.</span></span>
-    * <span data-ttu-id="39006-134">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="39006-134">InvoiceCustomer</span></span>  
-    * <span data-ttu-id="39006-135">Vi skapar nya modellelement till lämpliga datakällor.</span><span class="sxs-lookup"><span data-stu-id="39006-135">We will map new model elements to appropriate data sources.</span></span>  
-3. <span data-ttu-id="39006-136">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="39006-136">Click Designer.</span></span>
-4. <span data-ttu-id="39006-137">Välj "Invoice attachments" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-137">In the tree, select 'Invoice attachments'.</span></span>
-5. <span data-ttu-id="39006-138">Expandera "Invoice attachments" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-138">In the tree, expand 'Invoice attachments'.</span></span>
-6. <span data-ttu-id="39006-139">Välj "Invoice attachments\File name" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-139">In the tree, select 'Invoice attachments\File name'.</span></span>
-7. <span data-ttu-id="39006-140">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="39006-140">Click Edit.</span></span>
-8. <span data-ttu-id="39006-141">Ange "CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()" i fromelfältet.</span><span class="sxs-lookup"><span data-stu-id="39006-141">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()''.</span></span>
-    * <span data-ttu-id="39006-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span><span class="sxs-lookup"><span data-stu-id="39006-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span></span>  
-9. <span data-ttu-id="39006-143">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="39006-143">Click Save.</span></span>
-10. <span data-ttu-id="39006-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="39006-144">Close the page.</span></span>
-11. <span data-ttu-id="39006-145">Välj "Invoice attachments\File content" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-145">In the tree, select 'Invoice attachments\File content'.</span></span>
-12. <span data-ttu-id="39006-146">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="39006-146">Click Edit.</span></span>
-13. <span data-ttu-id="39006-147">Ange 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'' i formelfältet.</span><span class="sxs-lookup"><span data-stu-id="39006-147">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()''.</span></span>
-    * <span data-ttu-id="39006-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span><span class="sxs-lookup"><span data-stu-id="39006-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span></span>  
-14. <span data-ttu-id="39006-149">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="39006-149">Click Save.</span></span>
-15. <span data-ttu-id="39006-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="39006-150">Close the page.</span></span>
-16. <span data-ttu-id="39006-151">Välj "Invoice attachments" i trädet.</span><span class="sxs-lookup"><span data-stu-id="39006-151">In the tree, select 'Invoice attachments'.</span></span>
-17. <span data-ttu-id="39006-152">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="39006-152">Click Edit.</span></span>
-18. <span data-ttu-id="39006-153">Ange 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'' i formelfältet.</span><span class="sxs-lookup"><span data-stu-id="39006-153">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents''.</span></span>
-    * <span data-ttu-id="39006-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span><span class="sxs-lookup"><span data-stu-id="39006-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span></span>  
-19. <span data-ttu-id="39006-155">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="39006-155">Click Save.</span></span>
-20. <span data-ttu-id="39006-156">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="39006-156">Close the page.</span></span>
-21. <span data-ttu-id="39006-157">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="39006-157">Click Save.</span></span>
-22. <span data-ttu-id="39006-158">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="39006-158">Close the page.</span></span>
-23. <span data-ttu-id="39006-159">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="39006-159">Close the page.</span></span>
-24. <span data-ttu-id="39006-160">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="39006-160">Close the page.</span></span>
-25. <span data-ttu-id="39006-161">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="39006-161">Click Change status.</span></span>
-26. <span data-ttu-id="39006-162">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="39006-162">Click Complete.</span></span>
-27. <span data-ttu-id="39006-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="39006-163">Click OK.</span></span>
+## <a name="map-new-data-model-elements-to-data-sources"></a><span data-ttu-id="ff981-131">Mappa nya datamodellelement till datakällor</span><span class="sxs-lookup"><span data-stu-id="ff981-131">Map new data model elements to data sources</span></span>
+1. <span data-ttu-id="ff981-132">Klicka på Mappa modell till datakälla.</span><span class="sxs-lookup"><span data-stu-id="ff981-132">Click Map model to datasource.</span></span>
+2. <span data-ttu-id="ff981-133">Använd snabbfiltret (Quick Filter) för att filtrera fältet Definition med värdet "InvoiceCustomer".</span><span class="sxs-lookup"><span data-stu-id="ff981-133">Use the Quick Filter to filter on the Definition field with a value of 'InvoiceCustomer'.</span></span>
+    * <span data-ttu-id="ff981-134">InvoiceCustomer</span><span class="sxs-lookup"><span data-stu-id="ff981-134">InvoiceCustomer</span></span>  
+    * <span data-ttu-id="ff981-135">Vi skapar nya modellelement till lämpliga datakällor.</span><span class="sxs-lookup"><span data-stu-id="ff981-135">We will map new model elements to appropriate data sources.</span></span>  
+3. <span data-ttu-id="ff981-136">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="ff981-136">Click Designer.</span></span>
+4. <span data-ttu-id="ff981-137">Välj "Invoice attachments" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-137">In the tree, select 'Invoice attachments'.</span></span>
+5. <span data-ttu-id="ff981-138">Expandera "Invoice attachments" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-138">In the tree, expand 'Invoice attachments'.</span></span>
+6. <span data-ttu-id="ff981-139">Välj "Invoice attachments\File name" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-139">In the tree, select 'Invoice attachments\File name'.</span></span>
+7. <span data-ttu-id="ff981-140">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="ff981-140">Click Edit.</span></span>
+8. <span data-ttu-id="ff981-141">Ange "CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()" i fromelfältet.</span><span class="sxs-lookup"><span data-stu-id="ff981-141">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()''.</span></span>
+    * <span data-ttu-id="ff981-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span><span class="sxs-lookup"><span data-stu-id="ff981-142">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'originalFileName()'</span></span>  
+9. <span data-ttu-id="ff981-143">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ff981-143">Click Save.</span></span>
+10. <span data-ttu-id="ff981-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ff981-144">Close the page.</span></span>
+11. <span data-ttu-id="ff981-145">Välj "Invoice attachments\File content" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-145">In the tree, select 'Invoice attachments\File content'.</span></span>
+12. <span data-ttu-id="ff981-146">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="ff981-146">Click Edit.</span></span>
+13. <span data-ttu-id="ff981-147">Ange 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'' i formelfältet.</span><span class="sxs-lookup"><span data-stu-id="ff981-147">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()''.</span></span>
+    * <span data-ttu-id="ff981-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span><span class="sxs-lookup"><span data-stu-id="ff981-148">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'.'getFileContentAsContainer()'</span></span>  
+14. <span data-ttu-id="ff981-149">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ff981-149">Click Save.</span></span>
+15. <span data-ttu-id="ff981-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ff981-150">Close the page.</span></span>
+16. <span data-ttu-id="ff981-151">Välj "Invoice attachments" i trädet.</span><span class="sxs-lookup"><span data-stu-id="ff981-151">In the tree, select 'Invoice attachments'.</span></span>
+17. <span data-ttu-id="ff981-152">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="ff981-152">Click Edit.</span></span>
+18. <span data-ttu-id="ff981-153">Ange 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'' i formelfältet.</span><span class="sxs-lookup"><span data-stu-id="ff981-153">In the Formula field, enter 'CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents''.</span></span>
+    * <span data-ttu-id="ff981-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span><span class="sxs-lookup"><span data-stu-id="ff981-154">CustInvoiceJour.'>Relations'.SalesTable.'<Relations'.'<Documents'</span></span>  
+19. <span data-ttu-id="ff981-155">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ff981-155">Click Save.</span></span>
+20. <span data-ttu-id="ff981-156">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ff981-156">Close the page.</span></span>
+21. <span data-ttu-id="ff981-157">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ff981-157">Click Save.</span></span>
+22. <span data-ttu-id="ff981-158">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ff981-158">Close the page.</span></span>
+23. <span data-ttu-id="ff981-159">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ff981-159">Close the page.</span></span>
+24. <span data-ttu-id="ff981-160">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ff981-160">Close the page.</span></span>
+25. <span data-ttu-id="ff981-161">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="ff981-161">Click Change status.</span></span>
+26. <span data-ttu-id="ff981-162">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="ff981-162">Click Complete.</span></span>
+27. <span data-ttu-id="ff981-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="ff981-163">Click OK.</span></span>
 

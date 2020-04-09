@@ -17,26 +17,26 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c2bc7c214ac8f9f6cbdc1ea3385b59f275dc6c9
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 47c87f47e200c06d750a713b1adafe18955478db
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845628"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150497"
 ---
-# <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a><span data-ttu-id="94f4c-103">Jämföra aktiva, uppskattade och faktiska kostnader på en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="94f4c-103">Compare active, estimated, and realized costs on a production order</span></span>
+# <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a><span data-ttu-id="b666b-103">Jämföra aktiva, uppskattade och faktiska kostnader på en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="b666b-103">Compare active, estimated, and realized costs on a production order</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="94f4c-104">I den här proceduren visas hur du visar orsaker till höga produktionsavvikelser för en produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="94f4c-104">This procedure shows how to view reasons for high production variance for a production order.</span></span> <span data-ttu-id="94f4c-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="94f4c-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="94f4c-106">Den här proceduren är avsedd för kostnadscontrollern.</span><span class="sxs-lookup"><span data-stu-id="94f4c-106">This procedure is intended for the cost controller.</span></span>
+<span data-ttu-id="b666b-104">I den här proceduren visas hur du visar orsaker till höga produktionsavvikelser för en produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="b666b-104">This procedure shows how to view reasons for high production variance for a production order.</span></span> <span data-ttu-id="b666b-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="b666b-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b666b-106">Den här proceduren är avsedd för kostnadscontrollern.</span><span class="sxs-lookup"><span data-stu-id="b666b-106">This procedure is intended for the cost controller.</span></span>
 
-1. <span data-ttu-id="94f4c-107">Klicka på Kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="94f4c-107">Click Cost administration.</span></span>
-2. <span data-ttu-id="94f4c-108">Ange eller välj ett värde i fältet Datum.</span><span class="sxs-lookup"><span data-stu-id="94f4c-108">In the Date field, enter or select a value.</span></span>
-    * <span data-ttu-id="94f4c-109">I den här proceduren används räkenskapsår 2012.</span><span class="sxs-lookup"><span data-stu-id="94f4c-109">This procedure uses the fiscal year 2012.</span></span> <span data-ttu-id="94f4c-110">Ange Från-datum till 1 januari 2012 och Till-datum till 31 december 2012.</span><span class="sxs-lookup"><span data-stu-id="94f4c-110">You can set From date to January 1, 2012 and To date to December 31, 2012.</span></span>  
-3. <span data-ttu-id="94f4c-111">Klicka på fliken Höga produktionsavvikelser.</span><span class="sxs-lookup"><span data-stu-id="94f4c-111">Click the High production variances tab.</span></span>
-4. <span data-ttu-id="94f4c-112">Klicka för att följa länken i fältet Produktion.</span><span class="sxs-lookup"><span data-stu-id="94f4c-112">Click to follow the link in the Production field.</span></span>
-    * <span data-ttu-id="94f4c-113">Klicka på P000116 för att följa länken i fältet Produktion.</span><span class="sxs-lookup"><span data-stu-id="94f4c-113">Click P000116 to follow the link in the Production field.</span></span>  
-5. <span data-ttu-id="94f4c-114">Klicka på Hantera kostnader i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="94f4c-114">On the Action Pane, click Manage costs.</span></span>
-6. <span data-ttu-id="94f4c-115">Klicka på Visa kostnadsjämförelse.</span><span class="sxs-lookup"><span data-stu-id="94f4c-115">Click View cost comparison.</span></span>
-7. <span data-ttu-id="94f4c-116">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="94f4c-116">Click Close.</span></span>
+1. <span data-ttu-id="b666b-107">Klicka på Kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="b666b-107">Click Cost administration.</span></span>
+2. <span data-ttu-id="b666b-108">Ange eller välj ett värde i fältet Datum.</span><span class="sxs-lookup"><span data-stu-id="b666b-108">In the Date field, enter or select a value.</span></span>
+    * <span data-ttu-id="b666b-109">I den här proceduren används räkenskapsår 2012.</span><span class="sxs-lookup"><span data-stu-id="b666b-109">This procedure uses the fiscal year 2012.</span></span> <span data-ttu-id="b666b-110">Ange Från-datum till 1 januari 2012 och Till-datum till 31 december 2012.</span><span class="sxs-lookup"><span data-stu-id="b666b-110">You can set From date to January 1, 2012 and To date to December 31, 2012.</span></span>  
+3. <span data-ttu-id="b666b-111">Klicka på fliken Höga produktionsavvikelser.</span><span class="sxs-lookup"><span data-stu-id="b666b-111">Click the High production variances tab.</span></span>
+4. <span data-ttu-id="b666b-112">Klicka för att följa länken i fältet Produktion.</span><span class="sxs-lookup"><span data-stu-id="b666b-112">Click to follow the link in the Production field.</span></span>
+    * <span data-ttu-id="b666b-113">Klicka på P000116 för att följa länken i fältet Produktion.</span><span class="sxs-lookup"><span data-stu-id="b666b-113">Click P000116 to follow the link in the Production field.</span></span>  
+5. <span data-ttu-id="b666b-114">Klicka på Hantera kostnader i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="b666b-114">On the Action Pane, click Manage costs.</span></span>
+6. <span data-ttu-id="b666b-115">Klicka på Visa kostnadsjämförelse.</span><span class="sxs-lookup"><span data-stu-id="b666b-115">Click View cost comparison.</span></span>
+7. <span data-ttu-id="b666b-116">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="b666b-116">Click Close.</span></span>
 

@@ -16,32 +16,32 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ad1399d8ca96b9fdc5d316b6d9de8d9e04af55e8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 212227afb21ac1a20d29c33b40f6c44561da14fe
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144363"
 ---
-# <a name="create-and-validate-journals"></a><span data-ttu-id="917d8-103">Skapa och validera journaler</span><span class="sxs-lookup"><span data-stu-id="917d8-103">Create and validate journals</span></span>
+# <a name="create-and-validate-journals"></a><span data-ttu-id="855a9-103">Skapa och validera journaler</span><span class="sxs-lookup"><span data-stu-id="855a9-103">Create and validate journals</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="917d8-104">Den här uppgiften skapar och verifierar journaler och journalrader.</span><span class="sxs-lookup"><span data-stu-id="917d8-104">This task guide creates and validates journals and journal lines.</span></span> <span data-ttu-id="917d8-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="917d8-105">This tasks uses the USMF demo company.</span></span>  
+<span data-ttu-id="855a9-104">Den här uppgiften skapar och verifierar journaler och journalrader.</span><span class="sxs-lookup"><span data-stu-id="855a9-104">This task guide creates and validates journals and journal lines.</span></span> <span data-ttu-id="855a9-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="855a9-105">This tasks uses the USMF demo company.</span></span>  
 
 
 
-1. <span data-ttu-id="917d8-106">Gå till Redovisning > Journalposter > Allmänna journaler.</span><span class="sxs-lookup"><span data-stu-id="917d8-106">Go to General ledger > Journal entries > General journals.</span></span>
-2. <span data-ttu-id="917d8-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="917d8-107">Click New.</span></span>
-3. <span data-ttu-id="917d8-108">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="917d8-108">In the Name field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="917d8-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="917d8-109">In the list, find and select the desired record.</span></span>
-5. <span data-ttu-id="917d8-110">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="917d8-110">Click Lines.</span></span>
-6. <span data-ttu-id="917d8-111">I kontofältet anger du ett lämpligt konto baserat på kontotyp.</span><span class="sxs-lookup"><span data-stu-id="917d8-111">In the Account field enter an appropriate account based on the Account type.</span></span>
-7. <span data-ttu-id="917d8-112">Skriv ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="917d8-112">In the Description field, type a value.</span></span>
-8. <span data-ttu-id="917d8-113">Ange ett belopp för kontot i antingen Debet eller Kredit.</span><span class="sxs-lookup"><span data-stu-id="917d8-113">Enter an amount for the Account in either Debit or Credit.</span></span> <span data-ttu-id="917d8-114">Den här uppgiften förutsätter ett debetbelopp.</span><span class="sxs-lookup"><span data-stu-id="917d8-114">This task guide is assuming a debit amount.</span></span>
-9. <span data-ttu-id="917d8-115">I fältet Motkonto anger du ett lämpligt konto baserat på typen Motkonto.</span><span class="sxs-lookup"><span data-stu-id="917d8-115">In the Offset account field enter an appropriate account based on the Offset account type.</span></span>
-10. <span data-ttu-id="917d8-116">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="917d8-116">Click Validate.</span></span>
-11. <span data-ttu-id="917d8-117">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="917d8-117">Click Validate.</span></span>
-12. <span data-ttu-id="917d8-118">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="917d8-118">Click Post.</span></span>
-13. <span data-ttu-id="917d8-119">Klicka på Verifikation.</span><span class="sxs-lookup"><span data-stu-id="917d8-119">Click Voucher.</span></span>
+1. <span data-ttu-id="855a9-106">Gå till Redovisning > Journalposter > Allmänna journaler.</span><span class="sxs-lookup"><span data-stu-id="855a9-106">Go to General ledger > Journal entries > General journals.</span></span>
+2. <span data-ttu-id="855a9-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="855a9-107">Click New.</span></span>
+3. <span data-ttu-id="855a9-108">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="855a9-108">In the Name field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="855a9-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="855a9-109">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="855a9-110">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="855a9-110">Click Lines.</span></span>
+6. <span data-ttu-id="855a9-111">I kontofältet anger du ett lämpligt konto baserat på kontotyp.</span><span class="sxs-lookup"><span data-stu-id="855a9-111">In the Account field enter an appropriate account based on the Account type.</span></span>
+7. <span data-ttu-id="855a9-112">Skriv ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="855a9-112">In the Description field, type a value.</span></span>
+8. <span data-ttu-id="855a9-113">Ange ett belopp för kontot i antingen Debet eller Kredit.</span><span class="sxs-lookup"><span data-stu-id="855a9-113">Enter an amount for the Account in either Debit or Credit.</span></span> <span data-ttu-id="855a9-114">Den här uppgiften förutsätter ett debetbelopp.</span><span class="sxs-lookup"><span data-stu-id="855a9-114">This task guide is assuming a debit amount.</span></span>
+9. <span data-ttu-id="855a9-115">I fältet Motkonto anger du ett lämpligt konto baserat på typen Motkonto.</span><span class="sxs-lookup"><span data-stu-id="855a9-115">In the Offset account field enter an appropriate account based on the Offset account type.</span></span>
+10. <span data-ttu-id="855a9-116">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="855a9-116">Click Validate.</span></span>
+11. <span data-ttu-id="855a9-117">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="855a9-117">Click Validate.</span></span>
+12. <span data-ttu-id="855a9-118">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="855a9-118">Click Post.</span></span>
+13. <span data-ttu-id="855a9-119">Klicka på Verifikation.</span><span class="sxs-lookup"><span data-stu-id="855a9-119">Click Voucher.</span></span>
 

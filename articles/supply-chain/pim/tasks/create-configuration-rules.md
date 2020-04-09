@@ -16,42 +16,42 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f15c0328e391d81c4c977f974553ae9135b207c
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5758b2903cd0a269f3e03e44b618c26e8b2310
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844907"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147881"
 ---
-# <a name="create-configuration-rules"></a><span data-ttu-id="18c28-103">Skapa konfigurationsregler</span><span class="sxs-lookup"><span data-stu-id="18c28-103">Create configuration rules</span></span>
+# <a name="create-configuration-rules"></a><span data-ttu-id="9d2e6-103">Skapa konfigurationsregler</span><span class="sxs-lookup"><span data-stu-id="9d2e6-103">Create configuration rules</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="18c28-104">Den här proceduren skapar konfigurationsregler som kan användas för dimensionsbaserad konfiguration för att framtvinga eller förhindra vissa kombinationer av strukturlisterader.</span><span class="sxs-lookup"><span data-stu-id="18c28-104">This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines.</span></span> <span data-ttu-id="18c28-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="18c28-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="18c28-106">Detta är den första proceduren utav sju som förklarar hur du ställer upp kombinationer för dimensionsbaserad konfiguration.</span><span class="sxs-lookup"><span data-stu-id="18c28-106">This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
+<span data-ttu-id="9d2e6-104">Den här proceduren skapar konfigurationsregler som kan användas för dimensionsbaserad konfiguration för att framtvinga eller förhindra vissa kombinationer av strukturlisterader.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-104">This procedure creates configuration rules that can be used for dimension-based configuration to enforce or prevent certain combinations of BOM lines.</span></span> <span data-ttu-id="9d2e6-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9d2e6-106">Detta är den första proceduren utav sju som förklarar hur du ställer upp kombinationer för dimensionsbaserad konfiguration.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-106">This is the seventh procedure out of eight that explains how to build combinations for dimension-based configuration.</span></span>
 
-1. <span data-ttu-id="18c28-107">Gå till Produktinformationshantering > Strukturlistor och formler > Strukturlistor.</span><span class="sxs-lookup"><span data-stu-id="18c28-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
-2. <span data-ttu-id="18c28-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="18c28-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="18c28-109">Hitta och välj strukturlistan för den dimensionsbaserade konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="18c28-109">Find and select the BOM for the dimension-based configuration.</span></span>  
-3. <span data-ttu-id="18c28-110">Klicka på Alternativ i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="18c28-110">On the Action Pane, click Options.</span></span>
-4. <span data-ttu-id="18c28-111">Klicka på Ändra vy.</span><span class="sxs-lookup"><span data-stu-id="18c28-111">Click Change view.</span></span>
-5. <span data-ttu-id="18c28-112">Klicka på Huvudvy.</span><span class="sxs-lookup"><span data-stu-id="18c28-112">Click Header view.</span></span>
-    * <span data-ttu-id="18c28-113">Öppna huvudvyn för åtkomst till snabbfliken Konfigurationsflöde.</span><span class="sxs-lookup"><span data-stu-id="18c28-113">Open the header view to access the Configuration route FastTab.</span></span>  
-6. <span data-ttu-id="18c28-114">Visa eller dölj avsnittet Konfigureringsflöde.</span><span class="sxs-lookup"><span data-stu-id="18c28-114">Expand or collapse the Configuration route section.</span></span>
-    * <span data-ttu-id="18c28-115">Snabbfliken Konfigurationsflöde måste vara i det expanderade läget.</span><span class="sxs-lookup"><span data-stu-id="18c28-115">The Configuration route FastTab must be in the expanded mode.</span></span>  
-7. <span data-ttu-id="18c28-116">Klicka på konfigurationsregler.</span><span class="sxs-lookup"><span data-stu-id="18c28-116">Click Configuration rules.</span></span>
-8. <span data-ttu-id="18c28-117">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="18c28-117">Click New.</span></span>
-9. <span data-ttu-id="18c28-118">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="18c28-118">In the list, mark the selected row.</span></span>
-10. <span data-ttu-id="18c28-119">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="18c28-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="18c28-120">Artiklarna i den aktuella konfigurationsgruppen visas.</span><span class="sxs-lookup"><span data-stu-id="18c28-120">The items in the current configuration group are displayed.</span></span> <span data-ttu-id="18c28-121">Välj den som representerar villkoret i regeln.</span><span class="sxs-lookup"><span data-stu-id="18c28-121">Select the one that represents the condition in the rule.</span></span>  
-11. <span data-ttu-id="18c28-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="18c28-122">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="18c28-123">Markera ett alternativ i fältet Metod.</span><span class="sxs-lookup"><span data-stu-id="18c28-123">In the Method field, select an option.</span></span>
-    * <span data-ttu-id="18c28-124">Det går att framtvinga antingen en markering eller en avmarkering av en artikel från en annan konfigurationsgrupp.</span><span class="sxs-lookup"><span data-stu-id="18c28-124">It is possible to enforce either a selection or a deselection of an item from another configuration group.</span></span>  
-13. <span data-ttu-id="18c28-125">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Härledd grupp.</span><span class="sxs-lookup"><span data-stu-id="18c28-125">In the Derived group field, click the drop-down button to open the lookup.</span></span>
-14. <span data-ttu-id="18c28-126">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="18c28-126">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="18c28-127">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="18c28-127">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="18c28-128">Markera den valda konfigurationsgruppen.</span><span class="sxs-lookup"><span data-stu-id="18c28-128">Select the desired configuration group.</span></span>  
-16. <span data-ttu-id="18c28-129">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Härlett artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="18c28-129">In the Derived item number field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="18c28-130">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="18c28-130">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="18c28-131">Välj det artikelnummer som ska markeras eller avmarkeras beroende på vilken metod som har valts.</span><span class="sxs-lookup"><span data-stu-id="18c28-131">Select the item number that will be either selected or deselected depending on the chosen method.</span></span>  
-18. <span data-ttu-id="18c28-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="18c28-132">Close the page.</span></span>
+1. <span data-ttu-id="9d2e6-107">Gå till Produktinformationshantering > Strukturlistor och formler > Strukturlistor.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-107">Go to Product information management > Bills of materials and formulas > Bills of materials.</span></span>
+2. <span data-ttu-id="9d2e6-108">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="9d2e6-109">Hitta och välj strukturlistan för den dimensionsbaserade konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-109">Find and select the BOM for the dimension-based configuration.</span></span>  
+3. <span data-ttu-id="9d2e6-110">Klicka på Alternativ i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-110">On the Action Pane, click Options.</span></span>
+4. <span data-ttu-id="9d2e6-111">Klicka på Ändra vy.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-111">Click Change view.</span></span>
+5. <span data-ttu-id="9d2e6-112">Klicka på Huvudvy.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-112">Click Header view.</span></span>
+    * <span data-ttu-id="9d2e6-113">Öppna huvudvyn för åtkomst till snabbfliken Konfigurationsflöde.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-113">Open the header view to access the Configuration route FastTab.</span></span>  
+6. <span data-ttu-id="9d2e6-114">Visa eller dölj avsnittet Konfigureringsflöde.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-114">Expand or collapse the Configuration route section.</span></span>
+    * <span data-ttu-id="9d2e6-115">Snabbfliken Konfigurationsflöde måste vara i det expanderade läget.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-115">The Configuration route FastTab must be in the expanded mode.</span></span>  
+7. <span data-ttu-id="9d2e6-116">Klicka på konfigurationsregler.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-116">Click Configuration rules.</span></span>
+8. <span data-ttu-id="9d2e6-117">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-117">Click New.</span></span>
+9. <span data-ttu-id="9d2e6-118">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-118">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="9d2e6-119">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-119">In the Item number field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="9d2e6-120">Artiklarna i den aktuella konfigurationsgruppen visas.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-120">The items in the current configuration group are displayed.</span></span> <span data-ttu-id="9d2e6-121">Välj den som representerar villkoret i regeln.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-121">Select the one that represents the condition in the rule.</span></span>  
+11. <span data-ttu-id="9d2e6-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-122">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="9d2e6-123">Markera ett alternativ i fältet Metod.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-123">In the Method field, select an option.</span></span>
+    * <span data-ttu-id="9d2e6-124">Det går att framtvinga antingen en markering eller en avmarkering av en artikel från en annan konfigurationsgrupp.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-124">It is possible to enforce either a selection or a deselection of an item from another configuration group.</span></span>  
+13. <span data-ttu-id="9d2e6-125">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Härledd grupp.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-125">In the Derived group field, click the drop-down button to open the lookup.</span></span>
+14. <span data-ttu-id="9d2e6-126">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-126">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="9d2e6-127">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-127">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="9d2e6-128">Markera den valda konfigurationsgruppen.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-128">Select the desired configuration group.</span></span>  
+16. <span data-ttu-id="9d2e6-129">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Härlett artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-129">In the Derived item number field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="9d2e6-130">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="9d2e6-131">Välj det artikelnummer som ska markeras eller avmarkeras beroende på vilken metod som har valts.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-131">Select the item number that will be either selected or deselected depending on the chosen method.</span></span>  
+18. <span data-ttu-id="9d2e6-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="9d2e6-132">Close the page.</span></span>
 

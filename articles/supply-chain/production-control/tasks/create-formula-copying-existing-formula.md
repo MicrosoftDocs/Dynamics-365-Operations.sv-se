@@ -17,43 +17,43 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fbf5f12e10762e83bdf7a6c67a436ac906d0f7e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 1dad2cc4a47e24d6cdd68edd4b3d391428d28320
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837864"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147076"
 ---
-# <a name="create-a-formula-by-copying-from-an-existing-formula"></a><span data-ttu-id="24275-103">Skapa en formel genom att kopiera från en befintlig formel</span><span class="sxs-lookup"><span data-stu-id="24275-103">Create a formula by copying from an existing formula</span></span>
+# <a name="create-a-formula-by-copying-from-an-existing-formula"></a><span data-ttu-id="2d270-103">Skapa en formel genom att kopiera från en befintlig formel</span><span class="sxs-lookup"><span data-stu-id="2d270-103">Create a formula by copying from an existing formula</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="24275-104">I den här proceduren visas hur du skapar snabbt en ny formel genom att kopiera från en befintlig formel.</span><span class="sxs-lookup"><span data-stu-id="24275-104">This procedure shows how to quickly create a new formula by copying from an existing formula.</span></span> <span data-ttu-id="24275-105">Du kan använda demonstrationsdataföretagen USMF, USP2 eller USPI om du vill skapa den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="24275-105">You can use the demo data companies USMF, USP2, or USPI to create this procedure.</span></span>
+<span data-ttu-id="2d270-104">I den här proceduren visas hur du skapar snabbt en ny formel genom att kopiera från en befintlig formel.</span><span class="sxs-lookup"><span data-stu-id="2d270-104">This procedure shows how to quickly create a new formula by copying from an existing formula.</span></span> <span data-ttu-id="2d270-105">Du kan använda demonstrationsdataföretagen USMF, USP2 eller USPI om du vill skapa den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="2d270-105">You can use the demo data companies USMF, USP2, or USPI to create this procedure.</span></span>
 
 
-## <a name="create-a-new-formula"></a><span data-ttu-id="24275-106">Skapa en ny formel</span><span class="sxs-lookup"><span data-stu-id="24275-106">Create a new formula</span></span>
-1. <span data-ttu-id="24275-107">Gå till Formler.</span><span class="sxs-lookup"><span data-stu-id="24275-107">Go to Formulas.</span></span>
-2. <span data-ttu-id="24275-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="24275-108">Click New.</span></span>
-3. <span data-ttu-id="24275-109">Skriv ett värde i fältet Formel.</span><span class="sxs-lookup"><span data-stu-id="24275-109">In the Formula field, type a value.</span></span>
-4. <span data-ttu-id="24275-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="24275-110">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="24275-111">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="24275-111">In the Site field, enter or select a value.</span></span>
-6. <span data-ttu-id="24275-112">Ange eller välj ett värde i fältet Artikelgrupp.</span><span class="sxs-lookup"><span data-stu-id="24275-112">In the Item group field, enter or select a value.</span></span>
-7. <span data-ttu-id="24275-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="24275-113">Click Save.</span></span>
+## <a name="create-a-new-formula"></a><span data-ttu-id="2d270-106">Skapa en ny formel</span><span class="sxs-lookup"><span data-stu-id="2d270-106">Create a new formula</span></span>
+1. <span data-ttu-id="2d270-107">Gå till Formler.</span><span class="sxs-lookup"><span data-stu-id="2d270-107">Go to Formulas.</span></span>
+2. <span data-ttu-id="2d270-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2d270-108">Click New.</span></span>
+3. <span data-ttu-id="2d270-109">Skriv ett värde i fältet Formel.</span><span class="sxs-lookup"><span data-stu-id="2d270-109">In the Formula field, type a value.</span></span>
+4. <span data-ttu-id="2d270-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="2d270-110">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="2d270-111">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="2d270-111">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="2d270-112">Ange eller välj ett värde i fältet Artikelgrupp.</span><span class="sxs-lookup"><span data-stu-id="2d270-112">In the Item group field, enter or select a value.</span></span>
+7. <span data-ttu-id="2d270-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2d270-113">Click Save.</span></span>
 
-## <a name="copy-from-an-existing-formula"></a><span data-ttu-id="24275-114">Kopiera från en befintlig formel</span><span class="sxs-lookup"><span data-stu-id="24275-114">Copy from an existing formula</span></span>
-1. <span data-ttu-id="24275-115">Klicka på Kopiera.</span><span class="sxs-lookup"><span data-stu-id="24275-115">Click Copy.</span></span>
-2. <span data-ttu-id="24275-116">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="24275-116">In the Item number field, enter or select a value.</span></span>
-3. <span data-ttu-id="24275-117">I fältet Formelversion, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="24275-117">In the Formula version field, enter or select a value.</span></span>
-4. <span data-ttu-id="24275-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="24275-118">Click OK.</span></span>
+## <a name="copy-from-an-existing-formula"></a><span data-ttu-id="2d270-114">Kopiera från en befintlig formel</span><span class="sxs-lookup"><span data-stu-id="2d270-114">Copy from an existing formula</span></span>
+1. <span data-ttu-id="2d270-115">Klicka på Kopiera.</span><span class="sxs-lookup"><span data-stu-id="2d270-115">Click Copy.</span></span>
+2. <span data-ttu-id="2d270-116">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="2d270-116">In the Item number field, enter or select a value.</span></span>
+3. <span data-ttu-id="2d270-117">I fältet Formelversion, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="2d270-117">In the Formula version field, enter or select a value.</span></span>
+4. <span data-ttu-id="2d270-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2d270-118">Click OK.</span></span>
 
-## <a name="revise-the-copied-formula"></a><span data-ttu-id="24275-119">Ändra den kopierade formeln</span><span class="sxs-lookup"><span data-stu-id="24275-119">Revise the copied formula</span></span>
-1. <span data-ttu-id="24275-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="24275-120">In the list, find and select the desired record.</span></span>
-2. <span data-ttu-id="24275-121">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="24275-121">Click Delete.</span></span>
-3. <span data-ttu-id="24275-122">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="24275-122">Click Yes.</span></span>
+## <a name="revise-the-copied-formula"></a><span data-ttu-id="2d270-119">Ändra den kopierade formeln</span><span class="sxs-lookup"><span data-stu-id="2d270-119">Revise the copied formula</span></span>
+1. <span data-ttu-id="2d270-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="2d270-120">In the list, find and select the desired record.</span></span>
+2. <span data-ttu-id="2d270-121">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="2d270-121">Click Delete.</span></span>
+3. <span data-ttu-id="2d270-122">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="2d270-122">Click Yes.</span></span>
 
-## <a name="approve-formula"></a><span data-ttu-id="24275-123">Godkänn recept</span><span class="sxs-lookup"><span data-stu-id="24275-123">Approve formula</span></span>
-1. <span data-ttu-id="24275-124">Klicka på Godkänn recept.</span><span class="sxs-lookup"><span data-stu-id="24275-124">Click Approve formula.</span></span>
-2. <span data-ttu-id="24275-125">Ange eller välj ett värde i fältet Godkänd.</span><span class="sxs-lookup"><span data-stu-id="24275-125">In the Approved by field, enter or select a value.</span></span>
-3. <span data-ttu-id="24275-126">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="24275-126">Click OK.</span></span>
-4. <span data-ttu-id="24275-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="24275-127">Close the page.</span></span>
+## <a name="approve-formula"></a><span data-ttu-id="2d270-123">Godkänn recept</span><span class="sxs-lookup"><span data-stu-id="2d270-123">Approve formula</span></span>
+1. <span data-ttu-id="2d270-124">Klicka på Godkänn recept.</span><span class="sxs-lookup"><span data-stu-id="2d270-124">Click Approve formula.</span></span>
+2. <span data-ttu-id="2d270-125">Ange eller välj ett värde i fältet Godkänd.</span><span class="sxs-lookup"><span data-stu-id="2d270-125">In the Approved by field, enter or select a value.</span></span>
+3. <span data-ttu-id="2d270-126">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2d270-126">Click OK.</span></span>
+4. <span data-ttu-id="2d270-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2d270-127">Close the page.</span></span>
 
