@@ -3,7 +3,7 @@ title: Produktidentifierare
 description: Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata.
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
-ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
+ms.openlocfilehash: 0aa8baf5802ccdd9a502e2a7d291a76fc4afe932
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095627"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172035"
 ---
-# <a name="product-identifiers"></a>Produktidentifierare 
+# <a name="product-identifiers"></a>Produktidentifierare
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,6 +53,9 @@ Dessutom kan en produktvariant inte identifieras unikt med ett artikelnummer. De
 Många sidor har fortfarande artikelnummer och produktdimensioner som primära identifierare. Produktnummer kan dock användas för sökningar. Vid **Försäljning och marknadsföring**&gt;**Inställningar**&gt;**Sök**&gt;**Söka parametrar** kan du ändra sökuppslag så att den använder produktnummer i stället för artikelnummer som primär sökstrategi. Om du ställer in alternativet **Aktivera sökning för produktsökning** till **Ja**, kommer sökningen inte bara att visa produktmallar utan även produktvarianter. Mer information finns i [Sök efter produkter och produktvarianter under orderregistrering](search-products-product-variants.md)
 
 Dessutom kommer du att kunna söka och filtrera på produktnummer, produktnamn och beskrivning och produktdimensionens ID för produktvarianten. När du väljer en variant kommer tillhörande artikelnummer och alla produktdimensioner att väljas. Därför kan du lättare hitta och välja rätt variant. Den här inställningen rekommenderas starkt om du använder produktvarianter och unika produktnummer som primära identifierare för produkter. Det enda undantaget kan vara modebranschen där affärsprocesserna kräver att du väljer originalet innan du väljer en variant. Du bör noggrant utvärdera det här alternativet innan du implementerar numreringssystemet.
+
+> [!NOTE]
+> Det går inte att ändra artikelnumret för en produkt när det finns en eller flera transaktioner för produkten.
 
 ## <a name="product-name-and-description"></a>Produktnamn och beskrivning
 
@@ -123,7 +126,7 @@ Det finns tyvärr ingen standardfunktion där du kan söka efter produkter efter
 | Produker V2 | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Beroende på inställningarna för enheten och nummerserien för produktnumret kan produktnummer skapas automatiskt vid tidpunkten för importen. |
 | Produktvarianter | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning | Beroende på vilken mall för produktnomenklatur kan produktnummer skapas automatiskt vid tidpunkten för importen. Men du kan importera alla unika produktnummer och det produktnumret behöver inte ha strukturen som mallen för produktnomenklatur. |
 | Produktöversättningar | Produktnamn, produktbeskrivning | Produktnamn, produktbeskrivning | Den här entiteten skriver över alla språk. Observera att när det primära språket för namnet eller beskrivningen av en juridisk person skrivs över, ändras namn och beskrivning för produkten. |
-| Frisläppta produkter V2 | Artikelnummer, produktnummer, namn på artikelsökning| Artikelnummer, produktnummer, namn på artikelsökning, namn på produktsökning, produktnamn | Den här entiteten kan vara svår när nummerserier används när du skapar nya frisläppta produkter. Både nummerserien **Artikelnummer** och nummerserien **Produktnummer** påverkar. Men nummerserien **Artikelnummer** är per juridisk person, medan nummerserien **Produktnummer** är global. Därför rekommenderar vi inte att du använder nummerserien **Artikelnummer** när du distribuerar nya frisläppta produkter. Det är självklart att när enheten används för att frisläppa en befintlig produkt måste produktnumret anges i enheten. Mer information finns i avsnittet ”Produkt- och artikelnummerserier” i det här avsnittet. |
+| Frisläppt produktgenerering version2 | Artikelnummer, produktnummer, namn på artikelsökning| Artikelnummer, produktnummer, namn på artikelsökning, namn på produktsökning, produktnamn | Den här entiteten kan vara svår när nummerserier används när du skapar nya frisläppta produkter. Både nummerserien **Artikelnummer** och nummerserien **Produktnummer** påverkar. Men nummerserien **Artikelnummer** är per juridisk person, medan nummerserien **Produktnummer** är global. Därför rekommenderar vi inte att du använder nummerserien **Artikelnummer** när du distribuerar nya frisläppta produkter. Det är självklart att när enheten används för att frisläppa en befintlig produkt måste produktnumret anges i enheten. Mer information finns i avsnittet ”Produkt- och artikelnummerserier” i det här avsnittet. |
 | Frisläppta produktvarianter | Artikelnummer, produktdimensioner, produktnummer | Produktnummer, produktsökningsnamn, produktnamn, produktbeskrivning, produktdimensioner | Liksom entiteten **Produktvarianter** kan den här entiteten kan användas för att skapa nya produkter som antingen följa mallen för produktnomenklatur eller egna produktnummer för varianten. |
 | Extern artikelbeskrivning för kunder | Kundens artikelnummer, kundens artikelnamn, kundbeskrivning, kundkonto | Kundens artikelnummer, kundens artikelnamn, kundbeskrivning, kundkonto | En grupp med kunder (exempelvis en köparförening) kan samlas i en grupp med hjälp av entiteten **Kundgrupper för extern artikelbeskrivning**. |
 | Extern artikelbeskrivning för säljare | Leverantörens artikelnummer, leverantörens artikelnamn, leverantörsbeskrivning, leverantörskonto | Leverantörens artikelnummer, leverantörens artikelnamn, leverantörsbeskrivning, leverantörskonto | En grupp med leverantörer (exempelvis en säljarförening eller branschorganisation) kan samlas i en grupp med hjälp av entiteten **Leverantörsgrupper för extern artikelbeskrivning**. |
@@ -144,7 +147,7 @@ Du kan definiera två olika nummerserier:
 > [!NOTE]
 > Du bör använda artikelnumret som en separat identifierare bara när du migrerar andra juridiska enheter från olika källor som hade olika nummersystem. Du bör alltid försöka använda ett produkt-ID som är unikt inom alla juridiska personer. Därför bör du ange alternativet **Manuell** till **Ja** för nummerserien **Artikelnummer**. På detta sätt följer artikelnumret produktnumret när det skapas. Om Supply Chain Management inte är ledande system för nya produktnummer kan du ange alternativet **Manuell** till **Ja** för både nummerserier **Artikelnummer** och **Produktnummer**.
 
-När du använder entiteten **Frisläppt produkt V2** för att skapa produkter kan flera inställningar påverka hur nummerserierna används för att skapa artikelnumret och produktnumret:
+När du använder entiteten **Frisläppt produktgenerering V2** för att skapa produkter kan flera inställningar påverka hur nummerserierna används för att skapa artikelnumret och produktnumret:
 
 - Inställningarna av nummerserien **Produktnummer**
 - Inställningarna av nummerserien **Artikelnummer**
@@ -155,9 +158,9 @@ Följande tabell ger en översikt över resultaten av import och manuellt skapan
 
 | Nummerserien Produktnummer | Nummerserien Artikelnummer | Mappning av artikelnummer. | Mappning av produktnumret. | Resultat av entitetsimport | Resultat av manuellt skapande | Slutsats |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Manuell = Nej | Manuell = Nej | Ingen mappning | Ingen mappning | Produktnummer använder nummerserien **Produktnummer**. Artikelnummer använder nummerserien **Artikelnummer**. | Produktnummer använder nummerserien **Produktnummer**. Artikelnummer använder nummerserien **Artikelnummer**. | Dessa inställningar kan användas om du vill ha ett annat värde för produkter och artiklar. Vi rekommenderar emellertid inte att du använder olika nummer för artiklar och produkter. |
-| Manuell = Nej | Manuell = Ja | Autogenerera | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Artikelnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Dessa inställningar rekommenderas inte. Import och manuellt skapande fungerar annorlunda. |
-| Manuell = Nej | Manuell = Ja | Ingen mappning | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Dessa inställningar rekommenderas om produkter ska ha konsekvent automatisk numrering, oavsett om import eller manuellt skapande används. |
+| Manuell = Nej | Manuell = Nej | Ingen mappning | Ingen mappning | Produktnummer använder nummerserien **Produktnummer**. Artikelnummer använder nummerserien **Artikelnummer**. | Produktnummer använder nummerserien **Produktnummer**. Artikelnummer använder nummerserien **Artikelnummer**. | Med den här konfigurationen följer produktnumren följer produktnummerserien och artikelnumren följer artikelnummerserien. Den här konfigurationen fungerar dock inte om det finns fler än en artikel (rad) att importera. |
+| Manuell = Nej | Manuell = Ja | Autogenerera | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Artikelnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer följer produktnummersekvensen. Detta är den rekommenderade metoden för att importera bulkprodukter till dataentiteten Frisläppt produktgenerering V2. |
+| Manuell = Nej | Manuell = Ja | Ingen mappning | Ingen mappning | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer använder nummer serien **Produktnummer**. | Både produktnummer och artikelnummer använder produktnummersekvensen. Den här konfigurationen fungerar dock inte om det finns fler än en artikel (rad) att importera. |
 | Manuell = Ja | Inte tillämpligt | Inte tillämpligt | Autogenerera | Du får följande felmeddelande: ”Nummerserien kan inte identifieras”. | Enligt nummerserien **Artikelnummer** | Den här inställningen stöds inte för import. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identifierare för produktenhet (exportera alla produktidentifierare)

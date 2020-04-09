@@ -19,18 +19,17 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 6ce6c4e85ac1ef27060b53f43732f095a4efe9e7
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020024"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172933"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Vanliga frågor om initiering med företagsdata
  
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 ## <a name="why-do-i-need-bootstrapping"></a>Varför måste jag använda initiering? 
 Du kanske har en befintlig Common Data Service eller annan Dynamics 365-appinstans med affärsdata och du vill aktivera dubbelriktad anslutning mot den. I detta fall måste du initiera Common Data Service eller andra Dynamics 365-appdata med företagsinformation innan du aktiverar dubbelriktad anslutning.  

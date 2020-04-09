@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 65b1d1a232558efbe05e83d51706a78b12439e47
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 524ae7b3062893ed07170227ea9b8908cd5858e1
+ms.sourcegitcommit: 1fb34abfe3382bc00237a2c00184fe201c12229f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124149"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151307"
 ---
 # <a name="credit-management-setup"></a>Inställning för kredithantering 
 
@@ -40,13 +40,17 @@ Gå till **Kredit och inkasso \> Inställningar \> Arbetsflöde för kredithante
 
 Du kan spärra en försäljningsorder om betalningsvillkoren på ordern inte matchar standard betalningsvillkoren för kunden. Men ibland kan betalningsvillkoren skilja sig åt men du vill inte vänta med att spärra ordern. Du kan rangordna betalningsvillkor så att vissa av dem får samma rangordning, medan andra har en högre eller lägre rangordning.
 
-Om rangordningarna för betalningsvillkor är aktiva, spärras försäljningsordern om betalningsvillkoren för ordern har en högre rangordning än standard betalningsvillkoren för kunden.
+Om rangordningarna för betalningsvillkor är aktiva och om betalningsvillkoren för ordern har en högre rangordning än standard betalningsvillkoren för kunden kommer försäljningsordern att spärras.
+
+För att ställa in rangordning av betalningsvillkoren gå till **Kredit och inkasso \> Inställningar \> Inställningar för kredithantering \>Rangordna betalningsvillkoren**  
 
 ### <a name="ranking-settlement-discounts"></a>Rangordna kvittningsrabatter
 
 Du kan spärra en försäljningsorder om kassarabatten på ordern inte matchar standard kassarabatten för kunden. Men ibland kan kassarabatten skilja sig åt men du vill inte vänta med att spärra ordern. Du kan rangordna kassarabatten så att vissa av dem får samma rangordning, medan andra har en högre eller lägre rangordning.
 
-Om rangordningarna för kassarabatter är aktiva, spärras försäljningsordern om kassarabatten för ordern har en högre rangordning än standard kassarabatten för kunden.
+Om rangordningarna för kassarabatter är aktiva och kassarabatten för ordern har en högre rangordning än standard kassarabatten för kunden kommer försäljningsordern att spärras.
+
+För att ställa in rangordning av betalningsvillkoren gå till **Kredit och inkasso \> Inställningar \> Inställningar för kredithantering \>Rangordna kvittningsrabatter**  
 
 ## <a name="reasons"></a>Orsaker
 
@@ -56,7 +60,7 @@ Flera typer av orsaker används vid kredithantering:
 - Frisläppningsorsaker tilldelas en order när den frigörs från spärrning.
 - Statusorsaker anger varför en kontostatus har tilldelats en kund.
 
-Du kan ställa in orsaken på sidan **kredithanteringsorsaker** (**kredithantering \> inställningar \> kredithantering \> kredithanteringsorsaker**).
+Du kan ställa in orsaken på sidan **kredithanteringsorsaker** (**kredit och inkasso \> inställningar \> kredithantering \> inställning för kredithantering**).
 
 1. I fältet **Orsakstyp** välj typ av orsak: **spärr**, **frisläppning** eller **status**.
 2. I fältet **Orsak** anger du ett namn för orsaken.
@@ -66,7 +70,7 @@ Du kan ställa in orsaken på sidan **kredithanteringsorsaker** (**kredithanteri
 
 Kredithanteringsgrupper används för att identifiera kunder eller kundgrupper som har samma egenskaper för kredithantering. Kredithanteringsgrupper kan till exempel användas för att bestämma spärr- och exkluderingsreglerna för kredithantering för kunder.
 
-Du kan skapa kredithanteringsgrupper på sidan **kredithanteringsgrupper** (**kredithantering \> inställningar > gruppinställning \> kredithanteringsgrupper**).
+Du kan skapa kredithanteringsgrupper på sidan **kredithanteringsgrupper** (**kredit och inkasso \> inställningar > inställning för kredithantering \> kredithanteringsgrupper**).
 
 1. Klicka på **Nytt** för att skapa en ny rad.
 2. Ange ID för gruppen. ID kan ha upp till tecken.
@@ -78,7 +82,7 @@ Kredithanteringsgruppen tilldelas till en kund på snabbfliken **kredit och inka
 
 Du kan skapa kontostatusar för att identifiera ett kundkontos kreditposition. Du kan definiera en status och dess inverkan på fakturerings- och leveransspärrprocesserna. Kontostatus kan också användas för att bestämma spärrningsregler för en kund.
 
-Du kan skapa kontostatus på sidan **kontostatus** (**kredithantering \> inställningar > gruppinställningar \> kontostatus**).
+Du kan skapa kontostatus på sidan **kontostatus** (**kredit och inkasso \> inställningar > inställning för kredithantering \> kontostatus**).
 
 1. Lägg till en kontostatus och ange en beskrivning som representerar kreditställningen för en kund. Använd till exempel **Normal** om du vill ange att en kund är på en bra position och att öppna order är beroende av standardbearbetning för kredithantering.
 2. I fälten **fakturering** och **leverans spärrad** väljer du den typ av spärr som ska göras för kunder med denna kontostatus. Du kan spärra all bearbetning, spärra fakturabearbetning eller inte spärra bearbetning när kreditgränsreglerna tillämpas.
@@ -87,7 +91,7 @@ Du kan skapa kontostatus på sidan **kontostatus** (**kredithantering \> instäl
 
 Du kan ställa in poänggrupper för att definiera riskfaktorer och kriterier som används för att mäta dem. När information om en kund tillämpas på en resultatgrupp beräknas en poäng för varje riskfaktor och används för att placera kunden i en riskgrupp. Riskgruppen kan användas för att identifiera kreditvärdighet och för att beräkna automatiska kreditgränser.
 
-Du kan skapa poänggrupper på sidan **poänggrupper** (**kredithantering \> inställningar \> riskinställnings \> poänggrupper**).
+Du kan skapa poänggrupper på sidan **poänggrupper** (**kredit och inkasso \> inställningar \> inställning för kredithantering \> risk \> poänggrupper**).
 
 1. Skapa en poänggrupp och ange ett namn för den.
 2. Ange en beskrivning för att ytterligare beskriva poänggruppen.
@@ -108,11 +112,11 @@ Du kan skapa poänggrupper på sidan **poänggrupper** (**kredithantering \> ins
     1. I fältet **värde** anger du det användardefinierade värde som ska tillhandahållas av kundinformationen.
     2. I fältet **Poäng** anger du poängen som ska tilldelas när värdet som anges finns i intervallet "från"/"till".
 
-## <a name="risk-assessments"></a>Riskbedömningar
+## <a name="risk-classification"></a>Riskklassificering
 
 Du kan definiera riskbedömningar som kan tilldelas till kunder, baserat på deras riskpoäng. Riskpoängen beräknas genom att kundinformationen jämförs med kundinformationen för varje resultatgrupp. Poängen summeras och totala poängen jämförs med värdena i riskgruppinställningarna för att identifiera den riskgrupp som kunden tillhör. Riskgruppens poäng används sedan för att definiera spärr- och exkluderingsregler för kredithantering för kunden.
 
-Du kan ställa in riskgrupper på sidan **Riskbedömningar** (**kredithantering \> inställningar \> riskinställningar \> riskbedömningar**).
+Du kan ställa in riskgrupper på sidan **Riskbedömningar** (**kredit och inkasso \> inställningar \> inställning för kredithantering \> risk \> riskklassificering**).
 
 1. Ange ett risk grupps-ID.
 2. Ange en beskrivning för att ytterligare förklara riskgruppen.
@@ -121,7 +125,7 @@ Du kan ställa in riskgrupper på sidan **Riskbedömningar** (**kredithantering 
 
 ## <a name="guaranteeinsurance-types"></a>Garanti-/försäkringstyper
 
-Du kan ställa in garanti-/försäkringstyper på sidan **garanti/försäkringstyper** (**kredithantering \> inställningar \> garanti/försäkringsinställningar \> garanti/försäkringstyper**).
+Du kan ställa in garanti-/försäkringstyper på sidan **garanti/försäkringstyper** (**kredit och inkasso \> inställningar \> inställning för kredithantering \> försäkring och garantier \> försäkrings- och garantityper**).
 
 1. Ange en garanti eller försäkringstyp som identifierar namn på borgenär eller försäkringsagent.
 2. Ange en beskrivning som beskriver borgenär/försäkringsagent.
@@ -130,14 +134,14 @@ Du kan ställa in garanti-/försäkringstyper på sidan **garanti/försäkringst
 
 Täckningstyper kan användas för att ytterligare klassificera försäkringsbrev. De kan inte användas med garantier.
 
-Du kan lägga till täckningstyper på sidan **Täckningstyper** (**kredithantering \> inställningar \> garanti/försäkringsinställning \> täckningstyper**).
+Du kan lägga till täckningstyper på sidan **Täckningstyper** (**kredit och inkasso \> inställningar \> inställning för kredithantering \> försäkring och garantier \> täckningstyper**).
 
 1. Ange en täckningstyp som identifierar den typ av täckning som ska läggas till som försäkring eller garanti.
 2. Ange en beskrivning av täckningstypen.
 
 ## <a name="automatic-credit-limits"></a>Automatiska kreditgränser
 
-Du kan skapa kriterier för automatiska kreditgränser på sidan **automatiska kreditgränser** (**kredithantering \> inställningar \> riskinställningar \> automatiska kreditgränser**).
+Du kan skapa kriterier för automatiska kreditgränser på sidan **automatiska kreditgränser** (**kredit och inkasso \> inställningar \> inställning för kredithantering \> risk \> automatiska kreditgränser**).
 
 1. Välj en riskgrupp som den automatiska kreditgränsen ska tilldelas till.
 2. Välj valuta för den automatiska kreditgränsen. Du kan skapa flera automatiska kreditgränser i olika valutor för samma riskgrupp.

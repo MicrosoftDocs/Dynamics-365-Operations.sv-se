@@ -3,7 +3,7 @@ title: Utökad formatssökning för elektroniskt rapportering (ER)
 description: I det här avsnittet beskrivs hur en ER-formatreferens kan ställas in i ER-formatsökning när det format som krävs lagras i den globala databasen.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/24/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: c72335d7d83934146f827ef0bb568b79a585a7a5
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 28bdd02c25db27536a489f9e8ab2a91a5ca0f09c
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138870"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillåt användare att ställa in en ER-formatreferens som frågar ett format från den globala databasen
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Du kan använda [ramverket för Elektronisk rapportering](general-electronic-reporting.md) (ER) för att konfigurera [format](general-electronic-reporting.md#FormatComponentOutbound) för utgående dokument i enlighet med de lagliga kraven i olika länder/regioner. Du kan också använda ER-ramverket för att konfigurerra [format](general-electronic-reporting.md#FormatComponentInbound) för att analysera inkommande dokument och använda informationen från dessa dokument för att lägga till eller uppdatera applikationsdata. Varje format kan användas i din Dynamics 365 Finance-instans för att hantera inkommande eller utgående affärsdokument som en del av en viss affärsprocess. 
 

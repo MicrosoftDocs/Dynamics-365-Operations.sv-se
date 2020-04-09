@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fbf7cc33d12fb54d2ff02acc46ba2e284b2a2b3f
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020018"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173164"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisationshierarki i Common Data Service
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Eftersom Dynamics 365 Finance är ett finansiellt system är *organisation* ett grundläggande begrepp och systeminställningarna börjar med konfigurationen av en organisationshierarki. Affärsekonomi kan sedan spåras på organisationsnivå och även på alla nivåer i organisationshierarkin.
 
@@ -50,7 +50,7 @@ Organisationshierarkin entitetskartor är tillgängliga för enkelriktad synkron
 
 Produktinformationen innehåller all information som är relaterad till produkten och dess definition, t.ex. produktdimensioner eller spårnings- och lagringsdimensioner. Som framgår av följande tabell skapas en samling med enhetsmappningar för synkronisering av produkter och relaterad information.
 
-Finance and Operations | Andra Dynamics 365-appar | Beskrivning
+Finance and Operations-appar | Andra Dynamics 365-appar | beskrivning
 -----------------------|--------------------------------|---
 Syften för organisationshierarki | msdyn_internalorganizationhierarchypurposes | Den här mallen innehåller en enkelriktad synkronisering av entiteten syfte för organisationshierarki.
 Typ av organisationshierarki | msdyn_internalorganizationhierarchytypes | Den här mallen innehåller en enkelriktad synkronisering av entiteten typ för organisationshierarki.

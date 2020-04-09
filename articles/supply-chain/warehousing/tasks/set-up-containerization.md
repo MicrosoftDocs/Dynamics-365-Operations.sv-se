@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ba435ee145a8516391d7864bdfe338b0f3862f49
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f9dbf62e1c518b0cd77da693127588a04f17d622
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847217"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148272"
 ---
 # <a name="set-up-containerization"></a>Definiera skapande av behållare
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här avsnittet beskriver hur du automatiserar skapandet av behållare för last Lagerstyrning. Automatiskt skapande av behållare skapar behållare och plockarbetet för leveranser när en påfyllnad bearbetas och arbetsrader kan delas i kvantiteter som passar behållarna. Detta hjälper lagerarbetare att plocka artiklarna direkt till den valda behållaren. Jämfört med den manuella förpackningsprocessen automatiseras uppgifter som till exempel att skapa behållare, tilldela artiklar och stänga behållare av systemet. I den här proceduren används USMF-demonstrationsföretaget och utförs av en lagerchef.
 

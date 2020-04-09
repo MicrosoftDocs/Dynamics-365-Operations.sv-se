@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d785b321037645837dbcbaf28c8ede9b8e97b79
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 20188438a4ca623fc926e6c373fb002f148c3df4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550612"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142488"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2---configure-computations"></a>ER Konfigurera format för att utföra inventering och summering (Del 2 - Konfigurera beräkningar)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan skapad textutmatning. Dessa steg kan utföras på valfritt företag.
 
@@ -95,24 +95,24 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
     * Räkna raderna i denna sekvens. Resultaten kommer att användas med namnet "block" separat för olika riktningar. Värdet ”Import” kommer att användas för eventuella Intrastat-transaktioner. Värdet ”Export” kommer att användas för eventuella Intrastat-transaktioner för utförslar. Betrakta detta som ett virtuellt Excel-kalkylblad. För varje transaktion fylls en rad i, där den första kolumnen ”block” fylls i med värdena ”Import ”respektive ”Export”.  
 42. Expandera "Intrastat\Data: Sequence" i trädet.
 43. Välj "Intrastat\Data: Sequence\Arrivals?" i trädet.
-44. Klicka på knappen Edit för fältet "Collected data key name".
-    * Räkna raderna i denna sekvens. Resultatet kommer att memoreras med hjälp av namnet "record".  
+44. Klicka på knappen Edit för fältet "Insamlat datanyckelnamn".
+    * Räkna raderna i denna sekvens. Klicka på knappen Edit för fältet "Insamlat datanyckelvärde".  
 45. Välj "$RecName" i trädet.
 46. Klicka på Lägg till datakälla.
 47. Klicka på Spara.
 48. Stäng sidan.
-49. Klicka på knappen Edit för fältet Collected data key value".
+49. Klicka på knappen Redigera för fältet Insamlat datanyckelvärde.
 50. Ange "Intrastat.CommodityRecord.CommodityCode" i formelfältet.
 51. Klicka på Spara.
 52. Stäng sidan.
-    * Räkna raderna i denna sekvens. Resultaten kommer att användas med namnet "record" separat för olika varukoder. Betrakta detta som ett virtuellt Excel-kalkylblad. För varje transaktion kommer en rad att fyllas i på följande sätt: Det första kolumn-"blocket" fylls i med värdena ”Import" respektive "Export”, och den andra block-"posten" med varans kodvärde.  
+    * Räkna raderna i denna sekvens. Resultaten kommer att användas med namnet "post" separat för olika varukoder. Betrakta detta som ett virtuellt Excel-kalkylblad. För varje transaktion kommer en rad att fyllas i på följande sätt: Det första kolumn-"blocket" fylls i med värdena ”Import" respektive "Export”, och den andra block-"posten" med varans kodvärde.  
 53. Välj "Intrastat\Data: Sequence\Dispatches?" i trädet.
 54. Klicka på knappen Edit för fältet "Collected data key name"
 55. Välj "$RecName" i trädet.
 56. Klicka på Lägg till datakälla.
 57. Klicka på Spara.
 58. Stäng sidan.
-59. Klicka på knappen Edit för fältet "Collected data key value".
+59. Klicka på knappen Edit för fältet "Insamlat datanyckelvärde".
 60. Ange "Intrastat.CommodityRecord.CommodityCode" i formelfältet.
 61. Klicka på Spara.
 62. Stäng sidan.
@@ -121,18 +121,18 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 65. Klicka på fliken Format.
 66. Välj "Intrastat\Data\Dispatches\Record\Invoice amount EUR" i trädet.
 67. Klicka på fliken Mappning.
-68. Klicka på knappen Edit för fältet "Collected data key name".
+68. Klicka på knappen Edit för fältet "Insamlat datanyckelnamn".
 69. Välj "$InvName" i trädet.
 70. Klicka på Lägg till datakälla.
 71. Klicka på Spara.
 72. Stäng sidan.
-    * Sammanfatta de fakturerade beloppvärdena för rader i denna sekvens. Resultaten kommer att användas med namnet "InvoicedAmountEUR" separat för olika Intrastat-riktningar och varukoder. Betrakta detta som en virtuell skapelse i ett Excel-kalkylblad. För varje transaktion fylls en rad i, där den första kolumnen ”block” fylls i med värdena ”Import ”respektive ”Export”. Det andra blocket ”record” fylls i med varans kodvärde, och den tredje kolumnen " InvoicedAmountEUR ”fylls i med fakturabeloppets värde.  
+    * Sammanfatta de fakturerade beloppvärdena för rader i denna sekvens. Resultaten kommer att användas med namnet "InvoicedAmountEUR" separat för olika Intrastat-riktningar och varukoder. Betrakta detta som en virtuell skapelse i ett Excel-kalkylblad. För varje transaktion fylls en rad i, där den första kolumnen ”block” fylls i med värdena ”Import ”respektive ”Export”. Det andra blocket ”post” fylls i med varans kodvärde, och den tredje kolumnen "InvoicedAmountEUR" fylls i med fakturabeloppets värde.  
 73. Expandera "Intrastat\Data\Arrivals?" i trädet.
 74. Expandera "Intrastat\Data\Arrivals?\Record =  Intrastat.CommodityRecord" i trädet.
 75. Klicka på fliken Format.
 76. Välj "Intrastat\Data\Arrivals\Record\Invoice amount EUR" i trädet.
 77. Klicka på fliken Mappning.
-78. Klicka på knappen Edit för fältet "Collected data key name".
+78. Klicka på knappen Edit för fältet "Insamlat datanyckelnamn".
 79. Välj "$InvName" i trädet.
 80. Klicka på Lägg till datakälla.
 81. Klicka på Spara.

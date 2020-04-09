@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 249fde6f7bba5d6e0bc6cfde62fd792dee3f1301
-ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
+ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/09/2020
-ms.locfileid: "3112520"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172818"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+
 
 Ett viktigt mål för de flesta företag är att konvertera potentiell kund till kontanter och sedan underhålla en pågående affärsrelation med kunderna. I Microsoft Dynamics 365-appar processen potentiell kund till pengar via arbetsflöden för offerter eller orderbearbetning och ekonomierna stäms av och redovisas. Integrering av potentiell kund till pengar med dubbel skrivning skapar ett arbetsflöde som tar en offert och en order som har sitt ursprung i antingen Dynamics 365 Sales eller Dynamics 365 Supply Chain Management och gör offerten och ordern tillgängliga i båda apparna.
 

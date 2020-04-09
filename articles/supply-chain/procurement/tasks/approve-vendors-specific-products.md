@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 815d968b37cf285544799735fdd3f00f0c7ebffb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d09a7388377899b7cfb11ba744232d06aa2c4db6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838176"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149813"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkänn leverantörer för specifika produkter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du godkänner leverantörer för specifika produkter. På så sätt kan du kontrollera vilka leverantörer som kan användas när produkten läggs till en inköpsorder. Du kan använda den här proceduren i demonstrationsföretaget USMF eller med dina egna data. Uppgiften utförs vanligtvis av en inköpschef.
 

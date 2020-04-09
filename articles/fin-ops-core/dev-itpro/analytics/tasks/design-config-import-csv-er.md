@@ -1,6 +1,6 @@
 ---
 title: Utforma ER-konfigurationer för att importera data från externa CSV-filer
-description: Använd den här guiden för att designa ER-konfigurationer för elektronisk rapportering som importerar data till Finance and Operations-programmet från en extern fil i CSV-format.
+description: Använd den här guiden för att designa ER-konfigurationer för elektronisk rapportering som importerar data till programmet Finance and Operations från en extern fil i CSV-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cf27590d80bbaf7749a0b6e69adc63ddcf4f9380
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c8511b83a5d327f6a1d5c9ace091eae9e546307b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185162"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142277"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Utforma ER-konfigurationer för att importera data från externa CSV-filer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Använd den här guiden för att designa ER-konfigurationer för elektronisk rapportering som importerar data till programmet från en extern fil i CSV-format. I den här proceduren skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra stegen måste du först slutföra stegen i proceduren ”ER skapa en konfigurationsleverantör” och markera den som aktiv. 
 
@@ -77,7 +77,7 @@ Du måste också hämta och spara följande filer lokalt: (https://go.microsoft.
     * Elementen Root\Line\Types\Record av typen SEQUENCE, har konfigurerats för att parsa transaktionsraderna. Observera att teckenalternativet Anpassad avgränsare har konfigurerats som ett komma. Detta innebär att ett kommatecken används som avgränsare i ett fält för den här raden i parsingfilen.   
     * Lägg märke till att flera kapslade element av olika datatyper har lagts till för elementet Root\Line\Types\Record för parsing av transaktionsrader som avgränsade fält. Observera att alternativet ”Offertprogram” har konfigurerats som "Inget". Detta innebär att alla fält av den här typen i parsingfilen ska betraktas som det inte har några bifogade tecken.   
 9. Välj "File\Root: Sequence\Line: Sequence 1..* \Types: Case\Record: Sequence 1..1 (,)\TransactionDate: DateTime" i trädet.
-    * Exempelvis elementen Root\Line\Types\Record\TransactionDate av typen DATETIME har konfigurerats för att få transaktionens datum och tid från parsingfilen i formatet M/D/ÅÅÅÅ.   
+    * Exempelvis elementen Root\Line\Types\Record\TransactionDate av typen DATETIME har konfigurerats för att få transaktionens datum och tid från parsingfilen i formatet M/d/åååå.   
 10. Välj "Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Record: Sequence 1..1 (,)\CountryCode: String 0..1 " " i trädet.
     * Observera att alementet Root\Line\Types\Record\CountryCode av typen STRING har konfigurerats med alternativet Noll ett i fältet "Sammansatt". Den här inställningen anser värdet av CountryCode-fältet i analyseringsraden som valfritt.   
 11. Välj "Incoming: File\Root: Sequence\Line: Sequence 1..* \Types: Case\Record: Sequence 1..1 (,)\Remark: Sequence 1..1 (,)" i trädet
@@ -102,7 +102,7 @@ Du måste också hämta och spara följande filer lokalt: (https://go.microsoft.
     * Observera att obligatoriska och valfria formatetelement, till exempel TransactionDate och CountryCode, ser annorlunda ut i komponenten fördefinierat format datakälla.   
 12. Expandera Transactions= = '$both''.
     * Observera att elementen i det format som definierar strukturen i den importerade filen är bundna av elementen i datamodellen. Utifrån dessa bindningar kan innehållet i den importerade CSV-filen lagras i den befintliga datamodellen vid körning. Ta hänsyn till bindningen för nations/regions-elementet. För transaktionselement i den importerade filen utan specificerad landskod kommer standardkoden "USA" att användas i datamodellen.   
-13. Ange "Visa detaljerad information".
+13. Ange "Visa detaljerad information" som PÅ.
 14. Klicka på fliken Valideringar.
 15. Klicka på Sök.
 16. Ange "Vend" i fältet Sök.

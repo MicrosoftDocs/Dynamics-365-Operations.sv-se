@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b70ad94014587ba8e55735192dbe0ab2e4adf4ee
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ff8a2858bfa96eb1d4b0afa1e48ebd1b578a4431
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185829"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143134"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Det här avsnittet förklarar hur du kan skapa betalningsrader i leverantörbetalningsjournalen och generera en leverantörbetalningsfil med ett ISO2022-kreditöverföringsexempel.
 
@@ -33,20 +33,20 @@ Detta är den femte proceduren av fem som illustrerar leverantörbetalningsproce
 
 ## <a name="example"></a>Exempel
 
-1.  Gå till **Leverantörsreskontra > Betalningar > Betalningsjournal.**
-2.  Klicka på **Ny**.
-3.  I fältet **Namn**anger eller väljer du ett värde.
-4.  Klicka på **Rader > Betalningsförslag > Skapa betalningsförslag**.
-5.  Expandera avsnittet **Poster som ska ingå**.
-6.  Klicka på **Filter**.
-7.  I listan markerar du raden för **leverantörsregister** och **fältet för leverantörskonto**.
-8.  I fältet **Kriterier** anger du eller väljer ett värde. Du kan använda vissa kriterier för urval av leverantörstransaktioner för betalning ‒ för detta exempel, använd DE-001 som leverantörskonto.
-12. Klicka på **OK**.
-13. Klicka på **OK**.
-14. Klicka på **Skapa betalningar.**
+1.    Gå till **Leverantörsreskontra > Betalningar > Betalningsjournal.**
+2.    Klicka på **Ny**.
+3.    I fältet **Namn**anger eller väljer du ett värde.
+4.    Klicka på **Rader > Betalningsförslag > Skapa betalningsförslag**.
+5.    Expandera avsnittet **Poster som ska ingå**.
+6.    Klicka på **Filter**.
+7.    I listan markerar du raden för **leverantörsregister** och **fältet för leverantörskonto**.
+8.    I fältet **Kriterier** anger du eller väljer ett värde. Du kan använda vissa kriterier för urval av leverantörstransaktioner för betalning ‒ för detta exempel, använd DE-001 som leverantörskonto.
+12.    Klicka på **OK**.
+13.    Klicka på **OK**.
+14.    Klicka på **Skapa betalningar.**
 15. Skapa en ISO20022-betalningsfil
-    1.  Klicka på **Generera betalningar**
-    2.  I fältet **Betalningsmetod** anger du eller väljer ett värde.
-    3.  I fältet **Filnamn** anger du eller väljer ett värde. I det här exemplet på grund av betalningar i EUR blir den genererade filen SEPA-kompatibel. ISO20022 kreditöverföring samt andra leverantörsbetalningsformat kan också användas för att generera betalningar i andra valutor.
-    4.  I fältet **Bankkonto** anger du eller väljer ett värde.
+    1.    Klicka på **Generera betalningar**
+    2.    I fältet **Betalningsmetod** anger du eller väljer ett värde.
+    3.    I fältet **Filnamn** anger du eller väljer ett värde. I det här exemplet på grund av betalningar i EUR blir den genererade filen SEPA-kompatibel. ISO20022 kreditöverföring samt andra leverantörsbetalningsformat kan också användas för att generera betalningar i andra valutor.
+    4.    I fältet **Bankkonto** anger du eller väljer ett värde.
 

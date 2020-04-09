@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4671e1df3bc86361736b5882d67e6b160b4c5644
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c843f3b504d8390b26fdc94dd747a73de75df6a9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175043"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143468"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Skapa betalningsblankettformat för projektfakturor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Företag bifogar ofta betalningsblanketter till fakturor för att hjälpa kunder och ange en betalningsreferens för bokföring och kvittning. Betalningsblanketten kan användas för projekt - eller tjänstfakturor, kravbrev, räntefakturor och kontoutdrag, utöver försäljningsfakturor och fritextfakturor. Om du vill bearbeta betalningsblanketter, ställ först in betalningsmottagarens identifieringsnummer och formaten för den bifogade betalningsblanketten.
 

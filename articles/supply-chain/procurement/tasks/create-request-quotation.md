@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e35dbc489608c0aa3bfb13db5ae237f854612b1
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 954bfe3972e46eac803681a5a09e85661999f1d6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844139"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149675"
 ---
 # <a name="create-a-request-for-quotation"></a>Skapa en anbudsförfrågan
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Den här proceduren visar hur du skapar en anbudsförfrågan. Detta görs normalt av en inköpsagent. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Du måste ha ställt in begäranstyper innan du börjar. När du har slutfört den här uppgiften och du har skapat och har skickat en anbudsförfrågan kan du sedan ange svarstyper per leverantör, jämföra dem och tilldela kontraktet.
 

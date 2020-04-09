@@ -16,69 +16,69 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f34302a32b2e06f281dc93d6df160b88ffac7123
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: fc28e9a2170929c6cd8daafd7eae54713cec36ff
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769795"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143210"
 ---
 # <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a>(RCS) Importera filer i XML-format med valfria attribut
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa ER-formatkonfiguration att importera filer i XML-format med valfria attribut. För att slutföra dessa steg måste du först slutföra stegen i proceduren "Skapa en konfigurationsleverantör och välj den som aktiv”. Innan du börjar hämtar du filen IncomingDocumentToLearnHowToHandleOptionalAttributes.xml från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) och sparar den lokalt.
+I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa ER-formatkonfiguration att importera filer i XML-format med valfria attribut. För att slutföra dessa steg måste du först slutföra stegen i proceduren "Create a configuration provider and mark it as active”. Innan du börjar hämtar du filen IncomingDocumentToLearnHowToHandleOptionalAttributes.xml från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) och sparar den lokalt.
 
-1.  Gå till **Alla arbetsytor** > **Elektronisk rapportering**.
-2.  Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren [Skapa konfigurationsleverantörer och välj dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md).
-3.  Klicka på **Rapporteringskonfiguration**.
+1.    Gå till **Alla arbetsytor** > **Elektronisk rapportering**.
+2.    Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren [Skapa konfigurationsleverantörer och välj dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md).
+3.    Klicka på **Rapporteringskonfiguration**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Skapa en ny datamodellskonfiguration
-1.  Klicka på **Skapa konfiguration** om du vill öppna dialogrutan.
-2.  I fältet **Namn** skriver du "Model to import xml file".
-3.  Klicka på **Skapa konfiguration**.
-4.  Klicka på **Designer**.
-5.  Klicka på **Nytt** om du vill öppna dialogrutan.
-6.  Ange "Root" i fältet **Namn**.
-7.  Klicka på **Lägg till**.
-8.  Klicka på **Nytt** om du vill öppna dialogrutan.
-9.  Ange "List" i fältet **Namn**.
-10. Välj **Postlista** i fältet **Artikeltyp**.
-11. Klicka på **Lägg till**.
-12. Klicka på **Nytt** om du vill öppna dialogrutan.
-13. Ange "Code" i fältet **Namn**.
-14. Välj **Sträng** i fältet **Artikeltyp**.
-15. Klicka på **Lägg till**.
-16. Klicka på **Spara**.
-17. Stäng sidan.
-18. Klicka på **Ändra status**.
-19. Klicka på **Slutför**.
-20. Klicka på **OK**.
+1.    Klicka på **Skapa konfiguration** om du vill öppna dialogrutan.
+2.    I fältet **Namn** skriver du "Model to import xml file".
+3.    Klicka på **Skapa konfiguration**.
+4.    Klicka på **Designer**.
+5.    Klicka på **Nytt** om du vill öppna dialogrutan.
+6.    Ange "Root" i fältet **Namn**.
+7.    Klicka på **Lägg till**.
+8.    Klicka på **Nytt** om du vill öppna dialogrutan.
+9.    Ange "List" i fältet **Namn**.
+10.    Välj **Postlista** i fältet **Artikeltyp**.
+11.    Klicka på **Lägg till**.
+12.    Klicka på **Nytt** om du vill öppna dialogrutan.
+13.    Ange "Code" i fältet **Namn**.
+14.    Välj **Sträng** i fältet **Artikeltyp**.
+15.    Klicka på **Lägg till**.
+16.    Klicka på **Spara**.
+17.    Stäng sidan.
+18.    Klicka på **Ändra status**.
+19.    Klicka på **Slutför**.
+20.    Klicka på **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Skapa ett format för dataimport
-1.  Klicka på **Skapa konfiguration** om du vill öppna dialogrutan.
-2.  Ange "Format based on data model Model to import xml file" i fältet **Ny**.
-3.  I fältet **Namn** skriver du "Format för att importera xml-fil".
-4.  Välj **Ja** i fältet **Stöder dataimport**.
-5.  Klicka på **Skapa konfiguration**.
+1.    Klicka på **Skapa konfiguration** om du vill öppna dialogrutan.
+2.    Ange "Format based on data model Model to import xml file" i fältet **Ny**.
+3.    I fältet **Namn** skriver du "Format för att importera xml-fil".
+4.    Välj **Ja** i fältet **Stöder dataimport**.
+5.    Klicka på **Skapa konfiguration**.
 
 ## <a name="design-a-format-to-parse-incoming-file-in-xml-format"></a>Utforma ett format för att tolka inkommande filer i XML-format
-1.  Klicka på **Designer**.
-2.  Klicka på **Lägg till rot** för att öppna dialogrutan.
-3.  I trädet, välj **XML\Element**.
-4.  Ange "root" i fältet **Namn**.
-5.  Klicka på **OK**.
-6.  Klicka på **Lägg till** för att öppna dialogrutan.
-7.  I trädet, välj **XML\Element**.
-8.  Ange "document" i fältet **Namn**.
-9.  Välj **Ett många** i fältet **Sammansatt**.
-10. Klicka på **OK**.
-11. Välj **root\document** i trädet.
-12. Klicka på **Lägg till** för att öppna dialogrutan.
-13. I trädet välj **XML\Attribute**.
-14. I fältet **Namn**, ange "ID".
-15. Klicka på **OK**.
-16. Klicka på **Spara**.
+1.    Klicka på **Designer**.
+2.    Klicka på **Lägg till rot** för att öppna dialogrutan.
+3.    I trädet, välj **XML\Element**.
+4.    Ange "root" i fältet **Namn**.
+5.    Klicka på **OK**.
+6.    Klicka på **Lägg till** för att öppna dialogrutan.
+7.    I trädet, välj **XML\Element**.
+8.    Ange "document" i fältet **Namn**.
+9.    Välj **Ett många** i fältet **Sammansatt**.
+10.    Klicka på **OK**.
+11.    Välj **root\document** i trädet.
+12.    Klicka på **Lägg till** för att öppna dialogrutan.
+13.    I trädet välj **XML\Attribute**.
+14.    I fältet **Namn**, ange "ID".
+15.    Klicka på **OK**.
+16.    Klicka på **Spara**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Utforma en formatmappning för att spara analyserad information till datamodellen
 1. Klicka på **Mappa format till modell**.
@@ -90,15 +90,15 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 7. Klicka på **Designer**.
 8. Expandera **format** i trädet.
 9. I trädet expandera **format\root: XML Element(root)**.
-10. I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-11. Klicka på **Bind**.
-12. I trädet expanderar du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-13. I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
-14. Expandera **List = format.root.document**.
-15. Välj **List = format.root.document\Code** i trädet.
-16. Klicka på **Bind**.
-17. Klicka på **Spara**.
-18. Stäng sidan.
+10.    I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+11.    Klicka på **Bind**.
+12.    I trädet expanderar du **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+13.    I trädet väljer du **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
+14.    Expandera **List = format.root.document**.
+15.    Välj **List = format.root.document\Code** i trädet.
+16.    Klicka på **Bind**.
+17.    Klicka på **Spara**.
+18.    Stäng sidan.
  
 ## <a name="run-format-mapping"></a>Kör mappning av format
 1. Klicka på **Kör**.

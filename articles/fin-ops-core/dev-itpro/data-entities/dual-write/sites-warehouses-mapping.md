@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 0f5ed58ad50df49250aa4c001401ff52d460dfa6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 1b9181211bbb65cdfc46e63f3cee0e9f5bc9f6a4
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020015"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173072"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integrerade platser och lagerställen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 I det här avsnittet beskrivs integreringen av webbplats- och lagerställedata mellan Finance and Operations och Common Data Service. Driftplatser och driftlagerställen är vanliga koncept i en Supply Chain Management-app. De används för att modellera leveranskedjan för ditt företag.
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd51fa667fd48b7bab64c3566b616631c6f9bcd1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: df8552aab5f1566dccf0b905c2d5db372671ec09
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249642"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144121"
 ---
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
@@ -32,12 +32,13 @@ ms.locfileid: "2249642"
 
 Med [kostnadshantering (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du hantera värdering och redovisning av råmaterial, färdiga varor, delvis färdiga varor och tillgångar i pågående arbete. Det är processen för att definiera, hantera och rapportera [lagerredovisning](cost-object.md) och [tillverkningsredovisning](bom-calculations.md).
 
-Du kan definiera kostnadsprinciper inom följande områden: 
--  [Fördefinierad kostnad](costing-versions.md)
--  [Lagerredovisning](cost-object.md)
--  [Tillverkningsredovisning](bom-calculations.md)
--  [Indirekt kostnadsredovisning](costing-sheets.md)
--  [Redovisningsintegrering](production-order-cost-analysis.md)
+Du kan definiera kostnadsprinciper inom följande områden:
+
+- [Fördefinierad kostnad](costing-versions.md)
+- [Lagerredovisning](cost-object.md)
+- [Tillverkningsredovisning](bom-calculations.md)
+- [Indirekt kostnadsredovisning](costing-sheets.md)
+- [Redovisningsintegrering](production-order-cost-analysis.md)
 
 Exempelvis kan du definiera vilka modeller för lagervärdering, t ex [FIFO](fifo-physical-value-marking.md), [viktat medelvärde](weighted-average-physical-value-marking.md), [standardkostnad](prerequisites-standard-costs.md), eller [rörligt genomsnitt](moving-average.md) som ska tillämpas på produkter i [artikelmodellgrupp](../inventory/reserve-inventory-quantities.md) vid redovisning av lager.
 
@@ -51,23 +52,16 @@ Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling. 
+Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling.
 
 #### <a name="white-paper"></a>Dokumentation
-[BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) beskriver hur man ställer upp ett kostnadsredovisningsblad med material och tillverkning och hur inställningar påverkar resultat från strukturlisteberäkningar. För att bättre förstå ämnena tillhandahålls konkreta scenarier och data som visar effekten av olika inställningar och konfigurationer. Vi tror inte att du kommer att använda alla de här scenarierna eftersom dokumentet inte innehåller tillräckligt med information för att konfigurera dem. Men om du har grundläggande kunskaper kan du ändå försöka öppna (spela upp) uppgiftsguiderna som beskrivs nedan i den ordning de presenteras. Använd den kunskap som du har fått från det här dokumentet för att analysera strukturlisteberäkningar. 
 
--  [Skapa en färdig produkt](tasks/create-finished-product-2016-02.md)
--  [Skapa en halvfärdig produkt](tasks/create-semi-finished-product-2016-02.md)
--  [Skapa råmaterial](tasks/create-raw-materials-2016-02.md)
--  [Skapa strukturlistor](tasks/create-boms-2016-02.md)
--  [Skapa rutter](tasks/create-routes-2016-02.md)
--  [Beräkna en strukturlista med en enda nivå (februari 2016)](tasks/calculate-bom-single-level-structure-2016-02.md)
--  [Beräkna en strukturlista genom att använda en enda nivå (februari 2016)](tasks/calculate-bom-multilevel-structure-2016-02.md)
-
+[BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) beskriver hur man ställer upp ett kostnadsredovisningsblad med material och tillverkning och hur inställningar påverkar resultat från strukturlisteberäkningar. För att bättre förstå ämnena tillhandahålls konkreta scenarier och data som visar effekten av olika inställningar och konfigurationer.
 
 #### <a name="blogs"></a>Bloggar
+
 Du hittar åsikter, nyheter och annan information om kostnadshantering i [teambloggen Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg) och [teambloggen Supply Chain Management in Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm). En del av inläggen skrevs för den föregående versionen av kostnadshantering, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen.
 
 #### <a name="task-guides"></a>Uppgiftsguider
-Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
 
+Mer hjälp är tillgänglig som uppgiftsguider. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.

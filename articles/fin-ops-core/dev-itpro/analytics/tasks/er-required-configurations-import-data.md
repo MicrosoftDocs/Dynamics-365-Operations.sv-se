@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48a327fc5033a7478d2ae5e401ffdce6e4546ad0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042883"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143325"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Skapa erforderliga konfigurationer för att importera data från en extern fil
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet från en extern fil. I det här exemplet skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra stegen måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv. Stegen kan utföras med hjälp av datauppsättningen USMF. Du måste också hämta och spara följande filer lokalt med hjälp av länkar från ämnet för översikt av elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet från en extern fil. I det här exemplet skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra stegen måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv." Stegen kan utföras med hjälp av datauppsättningen USMF. Du måste också hämta och spara följande filer lokalt med hjälp av länkar från ämnet för översikt av elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
 ER ger företagsanvändare möjlighet att konfigurera importen av externa datafiler till tabeller i antingen XML- eller TXT-format. Först måste en abstrakt datamodell och en konfiguration av en ER-datamodell skapas med syfte att representera de data som du importerar. Därefter måste du definiera strukturen för den fil som du importerar och den metod som du använder för att porta datan från filen till den abstrakta datamodellen. ER-formatkonfigurationen som mappar till utformad datamodell måste skapas för den abstrakta datamodellen. Därefter måste modellkonfiguration utökas med en mappning som beskriver hur den importerade datan bevaras som data för en abstrakt datamodell, samt hur den används för att uppdatera tabellerna.  Modellkonfigurationen för ER-data måste läggas till en ny modellmappning som beskriver hur datamodellen är kopplad till programmodellens mål.  
 
@@ -36,7 +36,7 @@ I följande scenario visas importmöjligheterna för ER-dataimport. Detta inklud
 ## <a name="add-a-new-er-model-configuration"></a>Lägg till en ny konfiguration för ER-modell
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
 
-    Kontrollera att konfigurationsleverantören för exempelföretaget Litware, Inc. är tillgängligt och markerats som aktivt. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i proceduren "Skapa en konfigurationsleverantör och välj den som aktiv”.    
+    Kontrollera att konfigurationsleverantören för exempelföretaget Litware, Inc. är tillgängligt och markerats som aktivt. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i proceduren "Skapa en konfigurationsleverantör och välj den som aktiv”.   
 
 2. Klicka på Reporting configurations.
 

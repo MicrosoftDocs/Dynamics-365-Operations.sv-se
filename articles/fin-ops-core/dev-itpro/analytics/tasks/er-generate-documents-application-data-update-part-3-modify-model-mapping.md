@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5df6128228b9ff620c606c550c5eb7a6039b915
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a4546de2c5c1773aadce0ec084ee7058ff2ae153
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182311"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141889"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Ändra modeller och mappningar för att skapa dokument som omfattar programdata
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Skapa dokument med uppdatering av programdata (Del 2: Skapa konfigurationer)". 
 

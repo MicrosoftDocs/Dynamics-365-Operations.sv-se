@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 468a2637f4a5b2b7ff3514c92c52fb26b9231bc4
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: e06fdda7d2d73c3fe4a4b9ee5bd44e6ef857b8d5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042929"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142276"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiera beroendet av ER-konfigurationer för andra komponenter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -33,23 +33,23 @@ I den här proceduren beskrivs hur du skapar en konfiguration för elektronisk r
 Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Dessa steg kan utföras i alla företag, eftersom ER-konfigurationer delas mellan företag. 
 
 1. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
-    * Kontrollera att konfigurationsträdet innehåller konfigurationen Sample data model och underordnade objekt. I annat fall genomför du stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer och startar den här guiden igen.   
+    * Kontrollera att konfigurationsträdet innehåller konfigurationen Exempel på datamodell och underordnade objekt. I annat fall genomför du stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer och startar den här guiden igen.   
 
 ## <a name="define-the-dependency-of-er-configurations-from-other-components"></a>Definiera beroendet av ER-konfigurationer från andra komponenter
 1. Expandera Sample data model i trädet.
 2. Välj Sample data model\Sample mapping i trädet.
-    * Vi har valt utkastversionen av modellmappningskonfigurationen Sample mapping. Vi ska nu definiera beroendet från andra programvarukomponenter. Det här steget anses vara en förutsättning för att styra hämtningen av den här konfigurationens version från en ER- databas och ytterligare användning av den här versionen.   
+    * Vi har valt utkastversionen av modellmappningskonfigurationen Exempelmappning. Vi ska nu definiera beroendet från andra programvarukomponenter. Det här steget anses vara en förutsättning för att styra hämtningen av den här konfigurationens version från en ER-databas och ytterligare användning av den här versionen.   
 3. Expandera avsnittet Förutsättningar.
-    * Observera att gruppen för implementeringsförutsättningar har lagts till automatiskt i det stadiet. Den här gruppen innehåller den nödvändiga komponent som refererar till den datamodellkonfigurationen och har flaggan Implementering aktiverad. Den här flaggan innebär modellmappningskonfigurationen Sample mapping tar hänsyn till implementeringen av datamodellen Sample data model. Den här komponenten tvingar ER att hämta mappningskonfigurationen Sample mapping från en ER-databas när modellkonfigurationen Sample data model hämtas.   
+    * Observera att gruppen för implementeringsförutsättningar har lagts till automatiskt i det stadiet. Den här gruppen innehåller den nödvändiga komponent som refererar till den datamodellkonfigurationen och har flaggan Implementering aktiverad. Den här flaggan innebär modellmappningskonfigurationen Exempelmappning tar hänsyn till implementeringen av datamodellen Exempeldatamodell. Den här komponenten tvingar ER att hämta mappningskonfigurationen Exempelmappning från en ER-databas när modellkonfigurationen Exempeldatamodell hämtas.   
 4. Klicka på Redigera.
     * Du kan ange ett enstaka beroende av den aktuella versionen av en konfiguration från en programvarukomponent med definitionen för komponenttypen, och antingen versionen av komponenten eller flera olika versioner av komponenten.  
-    * Önskade beroenden kan grupperas. När grupptypen Alla väljs, anses beroendevillkoret för den här gruppen vara uppfyllt när varje beroendevillkor från den här gruppen och den underordnade gruppen uppfylls. När grupptypen En väljs, anses beroendevillkoret för den här gruppen vara uppfyllt när minst ett beroendevillkor från den här gruppen uppfylls.   
+    * Önskade beroenden kan grupperas. När grupptypen Alla väljs, anses beroendevillkoret för den här gruppen vara uppfyllt när varje beroendevillkor från den här gruppen och den underordnade gruppen uppfylls. När grupptypen En av väljs, anses beroendevillkoret för den här gruppen vara uppfyllt när minst ett beroendevillkor från den här gruppen uppfylls.   
 5. Klicka på Ny.
 6. Välj produktförutsättningskomponenten.
 7. Välj Microsoft Dynamics 365 for Operations (1611).
 8. Skriv "[7.1.1541.3036,8)" i fältet Version.
     * [7.1.1541.3036,8)  
-    * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Sample data redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Finance and Operations, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
+    * När den här konfigurationen har hämtats från en ER-databas utvärderas de beroenden som du anger. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Finance and Operations, versionen måste vara 7.1.1541.3036 eller senare och den får inte vara senare än huvudversion 8.   
 9. Klicka på Spara.
 10. Stäng sidan.
 11. Klicka på Ändra status.
@@ -62,7 +62,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
 18. Välj Microsoft Dynamics AX 7.0 RTW.
 19. Skriv "[7.0.1265.3015,7.1)" i fältet Version.
     * [7.0.1265.3015,7.1)  
-    * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Sample data redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.   
+    * Beroendena utvärderas när den här konfigurationen har hämtats från en ER-databas. Den här konfigurationsversionen hämtas från ER-databasen när version 1 av konfigurationen Exempeldatamodell redan finns på plats eller har hämtats i förväg. Om den hämtas i förväg måste detta genomföras i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, versionen måste vara 7.0.1265.3015 eller senare och den får inte vara senare än delversion 1.   
 20. Klicka på Spara.
 21. Stäng sidan.
 22. Klicka på Ändra status.
@@ -138,5 +138,5 @@ Vi ska ta bort de skapade konfigurationerna från systemet och hämta tillbaka d
 24. Stäng sidan.
 25. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
 26. Expandera Sample data model i trädet.
-    * Observera att modellkonfigurationen Sample mapping har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Sample mapping har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Sample mapping (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
-    * Om du loggar in till Finance and Operations, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Sample mapping (alternative) medan konfigurationen Sample mapping hoppas över.  
+    * Observera att modellkonfigurationen Exempelmappning har hämtats tillsammans med den valda datamodellkonfigurationen. De två filerna hämtas tillsammans eftersom Exempelmappning har definierats till att implementera den valda datamodellen, och eftersom den gäller för appen. Konfigurationen Exempelmappning (alternative) har inte hämtats eftersom villkoret för programversionen inte är uppfyllt.   
+    * Om du loggar in till Finance and Operations, registrerar samma leverantör, öppnar LCS-projektet och hämtar samma datamodellkonfiguration, hämtas konfigurationen Exempelmappning (alternativ) medan konfigurationen Exempelmappning hoppas över.  

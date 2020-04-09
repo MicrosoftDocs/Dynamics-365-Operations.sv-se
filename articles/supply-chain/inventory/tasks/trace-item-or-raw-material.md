@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe0fd9a7c27efb71f15cca9d3a0341b550bf9698
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ba64093dfe9ca28108456641ad17b5eda23d7f49
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916691"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148226"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Spåra en artikel eller råmaterial
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du använder artikelspårning för att identifiera var artiklar eller råmaterial har använts eller används. Med den här proceduren kan identifiera en artikel, spåra den tillbaka till källan och sedan spåra framåt igenom produktionen och försäljningen av den färdiga produkten. Processen kan användas för att undersöka berörda kunder, försäljningsorder och annat. I proceduren används demonstrationsföretag USP2.
 

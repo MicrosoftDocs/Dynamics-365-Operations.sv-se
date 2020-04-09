@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed4fa28039c9320998f6524c9c9edb0a0301b7b0
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: 545f1c15888bcd0b46e1028f58cbe3a274846c92
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1866836"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146041"
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivera utskrift av ID-nummer
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I det här avsnittet visar vi hur du aktiverar automatisk utskrift av ett EAN-kollinummer (SSCC) efter den sista artikeln som plockas från lagret i arbetsprocessen för försäljningsplocklistan. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Om du kör med dina egna data måste du ha en nummerserie som har ställts in för ID-nummer. Du måste konfigurera en etikettskrivare innan du börjar med den här uppgiften. Gå till Organisationsadministration > Inställningar > Nätverksskrivare. I åtgärdsfönstret klickar du på Alternativ och sedan på knappen Hämta installationsprogram för dokumentflödesagent. Kör installationsprogrammet och kontrollera att du har en nätverkskrivare som är inställd på Aktiv innan du fortsätter med proceduren.
 

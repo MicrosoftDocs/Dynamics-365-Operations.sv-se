@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40a0638662cbace147aeb24bd20d3ae34a0c1670
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 01b797aa97e73cbe112c37a1efcd1e759730bc24
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837684"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149123"
 ---
 # <a name="define-discrete-manufacturing-resource-group"></a>Definiera diskret tillverkningsresursgrupp
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 En resursgrupp är en uppsättning verksamhetsresurser som normalt motsvarar den fysiska organisationen av arbetsgrupper som definieras av gula rader i produktionen. I den här proceduren visas definitionen av en resursgrupp för användning i diskret produktion. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 

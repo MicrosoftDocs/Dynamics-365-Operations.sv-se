@@ -3,7 +3,7 @@ title: Skapa dokumentation eller utbildning med uppgiftsinspelning
 description: Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar uppgiftsinspelningar och hur du anpassar Microsoft uppgiftsguider och inkluderar dem i din Hjälp.
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 927f6475e60b5b93aac0e0c2840cb0b4fc7f0ac8
+ms.sourcegitcommit: 61f9e15c5791d27db392d0a90cd781aa8e5baa6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006205"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3164568"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Skapa dokumentation eller utbildning med uppgiftsinspelning
 
@@ -40,8 +40,6 @@ Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, h
 Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtgärder som du utför i produktanvändargränssnittet (UI). När du använder uppgiftsregistrering spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
 
 -   **Uppgiftsregistrering kan spelas upp som uppgiftsguider.** Uppgiftsguider är en integrerad del av Hjälp-upplevelsen. En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en affärsprocess. Användaren uppmanas avsluta varje steg med en prompt ("eller bubbla") som animerar i UI och pekar på UI-elementet som användaren ska interagera med. "Bubblan" innehåller även information om hur du interagerar med element som till exempel "Klicka här" eller "I det här fältet anger du ett värde". En uppgiftsguide körs mot användarens aktuella datauppsättning och informationen som anges sparas i användarens miljö.
--   **Uppgiftsregistreringar kan visas som processteg i hjälpfönstret.** Du kan använda hjälpfönstret om du vill söka efter och visa uppgiftsregistreringar. Du kan öppna hjälpfönstret genom att klicka på ikonen **?** i det övre navigeringsfältet eller så kan du använda tangentkombinationen  **Ctrl + Skift +?**. Läsa stegen för en uppgiftsregistrering i hjälpfönstret eller så kan du välja om du vill spela in som en uppgiftsguide för hjälp i UI.
--   **Uppgiftsregistreringar kan sparas i BPM.** Du kan spara dina uppgiftsinspelningar på en rad i en hierarki i ett BPM-bibliotek i Lifecycle Services (LCS). En lista över steg och en affärsflödesplan skapas från inspelningen. Uppgiftsinspelningar som sparats i ett BPM-bibliotek kan visas som hjälp.
 -   **Uppgiftsregistreringar kan sparas som Word-dokument.** På så sätt kan du enkelt producera utskrivbara utbildningsguider.
 
 Du kan skapa egna uppgiftsregistreringar, spela upp uppgiftsregistreringar som tillhandahålls av Microsoft eller ändra Microsofts uppgiftsregistrering för att återspegla konfigurationen. För mer information om Uppgiftsinspelare, se [Uppgiftsinspelare](task-recorder.md).
@@ -114,8 +112,7 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 10. När registreringen har spelat till slutet, klicka på **Stoppa** i uppgiftsregistreringsfältet överst på skärmen.
 11. Välj hur du vill spara uppgiftsregistreringen.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Inkludera dina uppgiftsregistreringar i hjälpfönstret
-Om du vill visa dina egna anpassade uppgiftsregistrering i hjälpfönstret så att de kan spelas upp som uppgiftsguider eller visas som text, måste du spara dina uppgiftsregistreringar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar på ditt BPM bibliotek. Mer information finns i [Ansluta hjälpsystemet](../../fin-ops/get-started/help-connect.md).
+
 
 <a name="additional-resources"></a>Ytterligare resurser
 --------

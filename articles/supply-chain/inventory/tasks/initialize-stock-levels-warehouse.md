@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbd6dc6c2e5b7c1abe6e19f00a5df285e0147a92
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 3f922620c7aeeafd8560316239875c1ec5486191
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845411"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145696"
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>Initiera lagernivåer i lagerstället
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Den här proceduren visar hur du kan uppdatera lagerbehållningen manuellt genom att använda en journal för lagerrörelse. (Det går också att uppdatera lagerbehållningen genom att importera transaktioner i dataenheter.) Du kan köra den här guiden i demonstrationsdataföretaget USMF där alla förutsättningar som journalnamn, artikelinställningar, bokföringsprofiler och konton är tillgängliga. Guiden föreslår specifika värden för artikeln och dimensioner som används. Om du väljer en annan artikel kan du behöva ange värden för olika dimensioner.
 

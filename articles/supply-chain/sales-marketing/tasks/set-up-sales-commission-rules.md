@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: d9036b5cbad10af725aaaf5d1d9498687c3a1d58
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995223"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146432"
 ---
 # <a name="set-up-sales-commission-rules"></a>Ställ in regler för försäljningsprovision
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas om hur du ställer in och aktiverar försäljningsprovisionsberäkning och knipning. Proceduren visas hur du skapar både kund- och artikelprovisionsgrupper, och hur du sedan kopplar en vald kund och produkt till respektive grupp. Grupperna används sedan i inställningarna för provisionsberäkningen för att skapa en kombination av kund, artikel och en säljare som måste matchas med försäljningsordern som berättigar säljaren till provision. Det är valfritt att skapa kund- och artikelprovisionsgrupper, eftersom beräkningen av provision också kan göras för en enskild kund eller artikel. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5c89d27eb8b587e8936258aae3ec1fee4574ccfb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 70fe3bb707f2f204cda92ec979fe9fe1a3b96bac
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180931"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143614"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifiera och lösa konflikter vid ansvarsfördelning
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Det här avsnittet förklarar hur du identifierar och löser konflikter vid ansvarsfördelning. Du kan ställa in regler för att separera uppgifter som måste utföras av andra användare. Detta koncept kallas ansvarsfördelning. När definitionen av en säkerhetsroll eller rolltilldelningarna av en användare bryter mot reglerna loggas konflikten. Alla konflikter måste lösas av administratören. Slutför proceduren nedan för att identifiera och lösa konflikter. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

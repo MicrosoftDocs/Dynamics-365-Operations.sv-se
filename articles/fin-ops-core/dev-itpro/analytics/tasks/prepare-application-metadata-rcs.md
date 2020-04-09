@@ -16,68 +16,68 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e3a33eefca98e14ed0435f8f1a7a9f90a69498ee
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3d091cd835cfcb7164f83259b69e3bc1d7c09dc4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182173"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143164"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Förbered programdata att användas i RCS
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Följande steg i det här avsnittet förklarar hur användare i rollen i systemadministratör eller utvecklare av ekonomiska rapporter kan skapa en ny konfiguration av elektronisk rapporterings (ER) konfiguration som innehåller metadata för -program för att utforma konfigurationer av ER-modellmappning i Regulatory Configuration Service (RCS). Den här konfigurationen används för att utforma ett exempel på en konfiguration av ER-modellmappning för åtkomst till utländska handelstransaktioner. I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litware, Inc. Dessa steg kan utföras i något företag. För att slutföra dessa steg måste du först slutföra stegen i ämnet [Skapa en konfigurationsleverantörer och välj de som aktiva](er-configuration-provider-mark-it-active-2016-11.md)
 
 ## <a name="prerequisites"></a>Förutsättningar
-1.  Gå till **Organisationsadministration** > **Arbetsytor** > **Elektronisk rapportering**. 
-2.  Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren [Skapa konfigurationsleverantörer och välj dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md). 
-3.  Klicka på **Metadatakonfiguration**. 
-4.  Anta att RCS kommer att användas för att utforma en ER-lösning för ett Finance and Operation-program som genererar elektroniska dokument som innehåller information från affärsdomänen för utländsk handel. Om du vill ange mappningen mellan ER-datamodellen och källorna till de data som krävs måste du i RCS få till gång till metadata för Finance and Operation-programmet. Som en del av utformningen av ER-lösning konfigurerar du därför en ny konfiguration av ER-metadata som innehåller alla metadata som för närvarande krävs för att generera ER-rapporter för vald affärsdomän. 
+1.    Gå till **Organisationsadministration** > **Arbetsytor** > **Elektronisk rapportering**. 
+2.    Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som **aktiv** och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren [Skapa konfigurationsleverantörer och välj dem som aktiva](er-configuration-provider-mark-it-active-2016-11.md). 
+3.    Klicka på **Metadatakonfiguration**. 
+4.    Anta att RCS kommer att användas för att utforma en ER-lösning för ett Finance and Operation-program som genererar elektroniska dokument som innehåller information från affärsdomänen för utländsk handel. Om du vill ange mappningen mellan ER-datamodellen och källorna till de data som krävs måste du i RCS få till gång till metadata för Finance and Operation-programmet. Som en del av utformningen av ER-lösning konfigurerar du därför en ny konfiguration av ER-metadata som innehåller alla metadata som för närvarande krävs för att generera ER-rapporter för vald affärsdomän. 
 
 ## <a name="add-metadata-configuration"></a>Lägg till metadatakonfiguration 
-1.  Klicka på **Skapa konfiguration** om du vill öppna dialogrutan. 
-2.  Ange metadata för utländsk handel i fältet **Namn**. 
-3.  Klicka på **Skapa konfiguration**. 
-4.  Klicka på **Designer**. 
-5.  Klicka på **Lägg till**. 
+1.    Klicka på **Skapa konfiguration** om du vill öppna dialogrutan. 
+2.    Ange metadata för utländsk handel i fältet **Namn**. 
+3.    Klicka på **Skapa konfiguration**. 
+4.    Klicka på **Designer**. 
+5.    Klicka på **Lägg till**. 
   
 > [!NOTE]
 > Du kan välja alla metadata för hela programmet eller valda modeller eller valda moduler. Tänk på att följande metadata kommer att läggas till automatiskt i det här fallet: register över poster, uppräkningar och utökade datatyper. Om det behövs ytterligare typer av metadata måste de läggas till manuellt. 
  
 Det finns vissa externa handelstransaktioner relaterade till metadata genom att markera metadataelement manuellt. 
   
-6.  Klicka på **Lägg till datakälla**. 
-7.  Klicka på **Tabellregister**. 
-8.  Använd snabbfiltret för att filtrera på fältet **Namn** med värdet Intrastat. 
-9.  Väljtabellregister **Intrastat**. 
-10. Klicka på **OK**.
+6.    Klicka på **Lägg till datakälla**. 
+7.    Klicka på **Tabellregister**. 
+8.    Använd snabbfiltret för att filtrera på fältet **Namn** med värdet Intrastat. 
+9.    Väljtabellregister **Intrastat**. 
+10.    Klicka på **OK**.
   
 Vi har lagt till metadatainformation om Intrastat-tabellen med poster. 
   
-11. I trädet expanderar du **Tabellregister Intrastat**\>**Relationer**. 
-12. I trädet väljer du **Tabellregistr Intrastat**\>**Relations\IntrastatCommodity (Tabellregister EcoResCategory)**.   
-13. Klicka på **Lägg till metadata**. 
+11.    I trädet expanderar du **Tabellregister Intrastat**\>**Relationer**. 
+12.    I trädet väljer du **Tabellregistr Intrastat**\>**Relations\IntrastatCommodity (Tabellregister EcoResCategory)**.     
+13.    Klicka på **Lägg till metadata**. 
   
 > [!NOTE]
 > Du måste lägga till metadata för obligatoriska relationer för det valda register med poster manuellt. 
   
-16. Klicka på **Lägg till datakälla**. 
-17. Klicka **uppräkning**. 
-18. Använd snabbfiltret för att filtrera på fältet **Namn** med värdet IntrastatDirection. 
-19. Välj posten **IntrastatDirection enumeration**. 
-20. Klicka på **OK**. 
-21. Klicka på **Spara**.  
-22. Stäng sidan. 
+16.    Klicka på **Lägg till datakälla**. 
+17.    Klicka **uppräkning**. 
+18.    Använd snabbfiltret för att filtrera på fältet **Namn** med värdet IntrastatDirection. 
+19.    Välj posten **IntrastatDirection enumeration**. 
+20.    Klicka på **OK**. 
+21.    Klicka på **Spara**.  
+22.    Stäng sidan. 
   
 ## <a name="complete-the-draft-version-of-metadata-configuration"></a>Fyll i utkastet av konfigurationen av metadata
-1.  Klicka på **Ändra status**. 
-2.  Klicka på **Slutför**. 
-3.  Klicka på **OK**. 
-4.  Väljden slutförda versionen **1**. 
+1.    Klicka på **Ändra status**. 
+2.    Klicka på **Slutför**. 
+3.    Klicka på **OK**. 
+4.    Väljden slutförda versionen **1**. 
   
 ## <a name="export-the-completed-version-of-metadata-configuration-from-application-as-xml-file"></a>Exportera den slutförda versionen av metadata-konfigurationen från programmet som XML-fil
-1.  Klicka på **Byt**. 
-2.  Klicka på **Exportera som XML-fil**. 
-3.  Klicka på **OK**. 
+1.    Klicka på **Byt**. 
+2.    Klicka på **Exportera som XML-fil**. 
+3.    Klicka på **OK**. 
     
 Den skapade konfigurationen av ER-metadata har sparats som en XML-fil som kan importeras till RCS och användas som källa för information om metadata för den utländska handelsdomänen. Utifrån den här informationen kan vi ange mappningen mellan programdata och ER-datamodell.

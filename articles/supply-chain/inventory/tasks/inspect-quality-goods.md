@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10acb9aadfeb11ede1d66dd525ace7b70db3bd1c
-ms.sourcegitcommit: fbaccf72df82e6b6927f0c9f0d35af0ca3ecbc2d
+ms.openlocfilehash: 75fbfbb7b993b528e96d247dafa2bdfe20837987
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1855696"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145627"
 ---
 # <a name="inspect-the-quality-of-goods"></a>Kontrollera kvaliteten på varor
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du bearbetar en kvalitetsorder. Du kan köra den här handboken i demonstrationsdataföretaget USMF. Innan du startar den här exempelproceduren måste du bekräfta inköpsorder ”000016” och bokföra en produktinleverans. Då skapas en kvalitetsorder automatiskt. Kvalitets-inspektioner utförs vanligtvis av en kvalitetsansvarig.
 

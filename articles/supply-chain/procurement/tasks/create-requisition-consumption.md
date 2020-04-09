@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2948282d8b40f7d34ffbae072a195cf954ab6e2
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 6ca44b4793f61d1067b9e0740b9a447d3a2363c2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738914"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147398"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Skapa en rekvisition för förbrukning
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Det här avsnittet beskriver processen för att skapa en rekvisition. Den visar olika metoder för att söka efter produkter i din anskaffningskatalog och hur du lägger till en produkt som inte finns i din katalog. Innan du startar den här proceduren måste du ha en inköpspolicy inställd med Förbrukning som standardinställningstyp för rekvisitionen. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data. Proceduren kan bara utföras av en användarprofil som har ställts in som arbetare. Uppgiften utförs vanligtvis av en medarbetare. Den säkerhetsroll som **medarbetaren** använder gör det möjligt för dig att utföra uppgifterna. Om du använder USMF kan du även logga in som **Alicia**.
 

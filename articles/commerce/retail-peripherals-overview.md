@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124415"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154190"
 ---
 # <a name="peripherals"></a>Kringutrustning
 
@@ -158,7 +158,7 @@ Nätverkets adresserbara kassalådor, kvittoskrivare och betalningsterminaler ka
 
 ### <a name="dedicated"></a>Dedikerad
 
-Modern POS-klienter för Windows och Android inkluderar **dedikerade** eller inbyggda maskinvarustationer. Dessa klienter kan kommunicera direkt med kringutrustning med hjälp av affärslogik som är inbyggd i programmen. Android-appen har endast stöd för nätverksenheter. Mer information om kringutrustningsstöd för Android finns på [konfigurera en POS Hybrid-app för Android och iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp)-artikel.
+Modern POS-klienter för Windows och Android inkluderar **dedikerade** eller inbyggda maskinvarustationer. Dessa klienter kan kommunicera direkt med kringutrustning med hjälp av affärslogik som är inbyggd i programmen. Android-appen har endast stöd för nätverksenheter. Mer information om kringutrustningsstöd för Android finns på [konfigurera en POS Hybrid-app för Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)-artikel.
 
 Om du vill använda dedikerad maskinvarustationen tilldelar du en maskinvaruprofil till en kassa som kommer att använda Modern POS för Android-program. Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassan ska användas i. Starta Modern POS i icke-användarläge och använd funktionen **hantera maskinvarustationer** för att aktivera maskinvarustationens kapacitet. Den dedikerade maskinvarustationens aktiveras som standard. Därefter kan du logga ut från Modern POS och sedan logga in igen och öppna en skift och kringutrustning som har konfigurerats i maskinvaruprofilen kan användas. 
 
@@ -199,7 +199,7 @@ För information, se [Konfigurera, installera och aktivera Modern POS (MPOS)](re
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Modern POS för Android och iOS-installation och konfiguration
 
-För information, se [Ange POS Hybrid-app på Android och iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+För information, se [Ange POS Hybrid-app på Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS inställning och konfiguration av enheter
 
@@ -494,7 +494,7 @@ Den här konfigurationen är de vanligaste konfigurationen för traditionella, f
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS för Android med en IPC maskinvarustation (inbyggt)
 
-**Nytt för 10.0.8** Epson nätverksskrivare och kassalådor som är anslutna till dessa skrivare via DK-porten stöds nu för Modern POS Android-appen. Mer information finns på [Konfigurera POS Hybrid-app på Android och iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp)-artikel.
+**Nytt för 10.0.8** Epson nätverksskrivare och kassalådor som är anslutna till dessa skrivare via DK-porten stöds nu för Modern POS Android-appen. Mer information finns på [Konfigurera POS Hybrid-app på Android och iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)-artikel.
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alla Modern POS-klienter som har en utfäst "delad" IIS maskinvarustation
 
