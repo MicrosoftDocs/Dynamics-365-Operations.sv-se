@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d586f4cc92e7533cabb8810ce5a42a37e6ba9ff1
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: 743cb2677696727ac2730fec2c11954d150f4cfa
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995200"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147375"
 ---
 # <a name="create-a-purchase-return-order"></a>Skapa en inköpsreturorder
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åtgärden Kreditfaktura om du vill kopiera rader från ett leverantörsfakturadokument till en ny inköpsorder. Den visar också hur du bekräftar ordern och bearbetar leveransen av varorna tillbaka till leverantören. De exempel som visas i den här proceduren kan användas i demoföretaget USMF. Denna uppgift utförs vanligtvis av en inköpsagent.
 

@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02a57e4afa5bf2170c6410d199f5125f2c8225ea
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 3e96277125710ea59758b2423f6e5831a379f8d6
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934804"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147974"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klassificera en produkt med hjälp av kategorihierarkier
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du klassificerar en produkt med hjälp av kategorihierarkier. Använd kategorihierarkier för att klassificera produkter för export, anskaffning, försäljning eller andra syften. Denna uppgift utförs vanligtvis av en produktchef. Exemplet använder produktnumret M0009 i demonstrationdataföretaget USMF.
 

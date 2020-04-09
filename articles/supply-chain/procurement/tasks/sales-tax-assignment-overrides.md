@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40723d35c1914f6cec6aa361a6c38100d1667cb6
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e8d7025db9dae57d04ee8b0f827cc13d659ad699
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003637"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161787"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a>Momstilldelning och åsidosättningar
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du tilldelar momsgrupper till handelskanaler. Den går också igenom processen att skapa en ny momsåsidosättning och tilldela den till en befintlig momsåsidosättningsgrupp. I proceduren används demonstrationsföretaget USRT.
 

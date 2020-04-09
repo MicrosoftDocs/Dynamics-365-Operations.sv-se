@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124103"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161602"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Stöd för moms på dubbel valuta
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Funktionen Dynamics 365 Finance med dubbla valutor infördes i version 8.1 (okto
 
 I tidigare versioner konverterades transaktionerna till rapportvalutan i följande ordning: 
 
-Transaktionssumman har beräknats i transaktionsvalutan > transaktionsbelopp konverterades till redovisningsvalutan > redovisningsvalutabeloppet har konverterats till rapportvalutan
+- Transaktionssumman har beräknats i transaktionsvalutan > transaktionsbelopp konverterades till redovisningsvalutan > redovisningsvalutabeloppet har konverterats till rapportvalutan
 
 När funktionen för dubbla valutor har aktiverats konverterades transaktionerna till rapportvalutan i följande ordning:
 
@@ -48,8 +48,6 @@ Som en följd av stöd för dubbla valutor finns två nya funktioner i funktions
 - Automatiskt saldo för momskvittning i rapporteringsvaluta (utgivning i version 10.0.11)
 
 Stöd till dubbel valuta för moms garanterar att moms beräknas korrekt i momsvalutan och att saldot för momskvittningen beräknas korrekt i både redovisningsvalutan och rapporteringsvalutan. 
-
-De nya funktionerna är för närvarande aktiverade för privata förhandsgranskningskunder. Om du vill aktivera funktionerna ska du göra en tjänstbegäran via motsvarande kanaler till Microsoft.
 
 ## <a name="sales-tax-conversion"></a>Momskonvertering
 

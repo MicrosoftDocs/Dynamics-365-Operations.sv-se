@@ -19,20 +19,19 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 269346d38eeb3812c352d16f9d50fbcd09307c12
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 977b74b10b4549d09a8816264f9ff603fa86e91c
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124599"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172841"
 ---
-# <a name="integrated-customer-master"></a>Integrerat kundhuvud
+# <a name="integrated-customer-master"></a>Integrerad kundmaster
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-Det är typiskt för kundposter som ska hanteras i mer än ett program. Försäljningsaktivitet kan till exempel föra in kommersiella kundposter via ett Sales-program och e-handels- eller butiksförsäljning kan ta in kundposter via en Finance and Operations-app. Oavsett var kundposten har sitt ursprung integreras den bakom kulisserna i programgränser och infrastrukturskillnader. Integrerad kundhantering hjälper till att hantera scenarier med flera hanteringar och ger en heltäckande vy av kunden till Dynamics 365 programsvit.
+Kunddata kan hanteras i fler än ett Dynamics 365-program. En kundpost kan till exempel ha sitt ursprung trots att det finns försäljningsaktiviteter i Dynamics 365 Sales (en modellstyrd app i Dynamics 365), eller så kan en post ha sitt ursprung i detaljhandelsaktivitet i Dynamics 365 Commerce (Finance and Operations-app). Oavsett var informationen kommer från kunden integreras den bakom kulisserna. Integrerad kund huvud ger dig flexibiliteten att hantera kunddata i alla Dynamics 365-program och ger en omfattande översikt över kunden över Dynamics 365-programpaketet.
 
 ## <a name="customer-data-flow"></a>Kunddataflöde
 
@@ -59,7 +58,6 @@ Kundgrupper             | msdyn_customergroups            | Den här mallen synk
 Kundbetalningsmetod     | msdyn_customerpaymentmethods    | Den här mallen synkroniserar information om kundbetalningsmetod.
 Kunder V3                | konton                        | Den här mallen synkroniserar kundhuvudinformation för kommersiella och organisatoriska kunder.
 Kunder V3                | kontakter                        | Den här mallen synkroniserar kundhuvuddata för användare och slutanvändare.
-Förmånskort                | msdyn_loyaltycards              | Den här mallen synkroniserar information om förmånskort.
 Namnaffix                | msdyn_nameaffixes               | Mallen synkroniserar referensdata för namnaffix för både kunder och leverantörer.
 Betalningsdagsrader – CDS V2    | msdyn_paymentdaylines           | Mallen synkroniserar referensdata för betalningsplanrader för både kunder och leverantörer.
 Betalningsdagar – CDS            | msdyn_paymentdays               | Mallen synkroniserar referensdata för betalningsdagar för både kunder och leverantörer.
@@ -78,8 +76,6 @@ Betalningsvillkor            | msdyn_paymentterms              | Mallen synkroni
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 

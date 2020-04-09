@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e3293caa905eacaebc757a57ec5b104629b6a8d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8557a196a3998d57baf3db63c05fc3945d52e8f4
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567686"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149905"
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Skapa ett nytt produktlivscykeltillstånd
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du skapar ett nytt livscykeltillstånd för en produkt. Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant. Produktens livscykeltillstånd definieras av användaren, vanligtvis en produktchef eller en produktmallchef. Specifika affärsprocesser, t.ex. huvudplanering kan påverkas av ett visst livscykeltillstånd.
 

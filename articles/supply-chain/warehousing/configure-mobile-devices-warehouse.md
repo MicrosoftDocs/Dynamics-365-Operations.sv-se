@@ -3,7 +3,7 @@ title: Ställ in mobila enheter för lagerarbete
 description: Det här ämnet beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813056"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161838"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Ställ in mobila enheter för lagerarbete
 
@@ -95,11 +95,11 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </tr>
 <tr>
 <td>Inleverans av registreringsskylt</td>
-<td>Ta emot en inkommande last genom att använda ID-numret.</td>
+<td>Ta emot en ingående leveransavisering (ASN) genom att använda ID-numret.</td>
 </tr>
 <tr>
-<td>Plats och mottagning för ID-nummer</td>
-<td>Ta emot och inlagra en inkommande last genom att använda ID-numret.</td>
+<td>Plats och mottagning av registreringsskylt</td>
+<td>Ta emot och inlagra en ingående leveransavisering (ASN) genom att använda ID-numret.</td>
 </tr>
 <tr>
 <td>Mottagande av lastartikel</td>
@@ -119,7 +119,7 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 <td>Registrera inleverans av en kvantitet för en artikel genom att registrera RMA-numret och inlagra artiklarna. Samma arbetare utför båda åtgärder.</td>
 </tr>
 <tr>
-<td rowspan="4">Överföringsorder</td>
+<td rowspan="6">Överföringsorder</td>
 <td>Mottagning överföringsorderartikel</td>
 <td>Registrera inleverans av en kvantitet av en artikel genom att skapa inlagrat arbete för en annan arbetare.
 
@@ -138,6 +138,14 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 <tr>
 <td>Överför orderrad inleverans och inlagring</td>
 <td>Registrera inleverans av en kvantitet av en artikel och inlagra artiklarna. Samma arbetare utför båda åtgärder.</td>
+</tr>
+<tr>
+<td>Inleverans av registreringsskylt</td>
+<td>Ta emot en ingående leveransavisering (ASN) genom att använda ID-numret.</td>
+</tr>
+<tr>
+<td>Plats och mottagning av registreringsskylt</td>
+<td>Ta emot och inlagra en ingående leveransavisering (ASN) genom att använda ID-numret.</td>
 </tr>
 <tr>
 <td rowspan="4">Produktion</td>

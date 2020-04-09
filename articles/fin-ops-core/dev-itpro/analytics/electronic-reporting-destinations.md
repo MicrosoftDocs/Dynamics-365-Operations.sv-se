@@ -3,7 +3,7 @@ title: Destinationer för elektronisk rapportering (ER)
 description: I det här avsnittet finns information om hantering av mål för elektroniska rapportering (ER), vilka typer av destinationer som stöds samt säkerhetsaspekter.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150825"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -114,7 +114,7 @@ När du har slutfört den här inställningen blir alternativet **Kör utkast** 
 
 [![Alternativet kör utkast](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Hantering av målfel
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Hantering av målfel
 
 Vanligtvis körs ett ER-format inom omfånget för en specifik affärsprocess. Leveransen av ett utgående dokument som genereras under körningen av ett ER-format måste ibland betraktas som en del av affärsprocessen. I det här fallet, om leverans av ett utgående dokument till ett konfigurerat mål inte lyckas, måste körningen av affärsprocessen avbrytas. Om du vill konfigurera önskat ER-mål väljer du alternativet **Sluta behandlingen vid misslyckande**.
 
@@ -124,7 +124,7 @@ Till exempel konfigurerar du leverantörens betalningsbearbetning så att ER-for
 
 Om du avmarkerar kryssrutan **Sluta behandlingen vid misslyckande** för komponenten **CoveringLetter** i målet kommer en betalning att anses ha behandlats framgångsrikt även om följebrevet inte levereras med e-post. Betalningens status kommer att ändras från **Ingen** till **Skickad** även om följebrevet inte kan skickas eftersom till exempel mottagarens eller avsändarens e-postadress saknas eller är felaktig.
 
-## <a name="OutputConversionToPDF"></a>Konvertera utdata till PDF
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Konvertera utdata till PDF
 
 Du kan använda konverteringsalternativet för PDF om du vill konvertera konvertera i Microsoft Office-format (Excel/Word) till PDF-format.
 
@@ -157,6 +157,19 @@ Alternativet PDF-konvertering kan bara aktiveras för filkomponenter som använd
 Om du vill aktivera PDF-konvertering för ett filmål markerar du kryssrutan **konvertera till PDF**.
 
 [![Aktivera PDF-konvertering av ett filmål](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Välj en sidorientering för PDF-konvertering</a>
+
+Om du skapar en ER-konfiguration i Excel-format och vill konvertera den till PDF-format kan du ange sidorienteringen för PDF-filen. När du markerar kryssrutan **Konvertera till PDF** för att aktivera PDF-konvertering för en fildestination som producerar en utdatafil i Excel-format, den **sidorientering** blir tillänglig **PDF-inställningar för konverteringar**. Välj önskad **sidorientering** i fältet prioriterad orientering.
+
+[![Välj en sidorientering för PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Om du vill välja PDF-sidans orientering måste du installera Microsoft Dynamics 365 Finance version 10.0.10 (maj 2020) eller senare.
+>
+> Den valda sidorienteringen tillämpas på alla ER-konfigurationer som genereras i Excel-format och sedan konverteras till PDF-format.
+>
+> Om en konverterad PDF-fil skapas från en ER-konfiguration i Word-format hämtas PDF-filens sidorientering från Word-dokumentet.
 
 ## <a name="security-considerations"></a>Säkerhetsaspekter
 
