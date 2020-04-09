@@ -17,43 +17,43 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08fddd6404bf835283adaca14ad7ceb851f5a489
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7ebae3fac556348aafa595e6e21caf9cd6b44ba4
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837648"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149031"
 ---
-# <a name="execute-kanban-process-jobs"></a><span data-ttu-id="28f1a-103">Kör kanban-processjobb</span><span class="sxs-lookup"><span data-stu-id="28f1a-103">Execute kanban process jobs</span></span>
+# <a name="execute-kanban-process-jobs"></a><span data-ttu-id="39f33-103">Kör kanban-processjobb</span><span class="sxs-lookup"><span data-stu-id="39f33-103">Execute kanban process jobs</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="28f1a-104">Den här proceduren är avsedd för att köra kanban-processjobb.</span><span class="sxs-lookup"><span data-stu-id="28f1a-104">This procedure focuses on executing kanban process jobs.</span></span> <span data-ttu-id="28f1a-105">Det första jobbet är slutfört med den förväntade kvantiteten och har inga fel.</span><span class="sxs-lookup"><span data-stu-id="28f1a-105">The first job is completed with the expected quantity and has no errors.</span></span> <span data-ttu-id="28f1a-106">Det andra jobbet slutförs med fel.</span><span class="sxs-lookup"><span data-stu-id="28f1a-106">The second job is completed with errors.</span></span> <span data-ttu-id="28f1a-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="28f1a-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="28f1a-108">Den här proceduren är avsedd för maskinoperatören.</span><span class="sxs-lookup"><span data-stu-id="28f1a-108">This procedure is intended for the machine operator.</span></span>
+<span data-ttu-id="39f33-104">Den här proceduren är avsedd för att köra kanban-processjobb.</span><span class="sxs-lookup"><span data-stu-id="39f33-104">This procedure focuses on executing kanban process jobs.</span></span> <span data-ttu-id="39f33-105">Det första jobbet är slutfört med den förväntade kvantiteten och har inga fel.</span><span class="sxs-lookup"><span data-stu-id="39f33-105">The first job is completed with the expected quantity and has no errors.</span></span> <span data-ttu-id="39f33-106">Det andra jobbet slutförs med fel.</span><span class="sxs-lookup"><span data-stu-id="39f33-106">The second job is completed with errors.</span></span> <span data-ttu-id="39f33-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="39f33-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="39f33-108">Den här proceduren är avsedd för maskinoperatören.</span><span class="sxs-lookup"><span data-stu-id="39f33-108">This procedure is intended for the machine operator.</span></span>
 
 
-## <a name="select-a-kanban-job"></a><span data-ttu-id="28f1a-109">Välj ett kanban-jobb.</span><span class="sxs-lookup"><span data-stu-id="28f1a-109">Select a kanban job</span></span>
-1. <span data-ttu-id="28f1a-110">Gå till Produktionskontroll > Kanban > Kanban-tavla för processjobb.</span><span class="sxs-lookup"><span data-stu-id="28f1a-110">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
-2. <span data-ttu-id="28f1a-111">Klicka på den nedrullningsbara knappen för att öppna uppslaget i fältet Arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="28f1a-111">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="28f1a-112">Klicka på raden med resursgrupp 1250.</span><span class="sxs-lookup"><span data-stu-id="28f1a-112">Click the row with resource group 1250.</span></span> <span data-ttu-id="28f1a-113">Detta filtrerar jobblistan så att endast jobben för arbetsgrupp 1250 visas.</span><span class="sxs-lookup"><span data-stu-id="28f1a-113">This filters the Jobs list to display only the jobs for work cell 1250.</span></span>
-    * <span data-ttu-id="28f1a-114">Markera raden som har jobbstatusen Planerad.</span><span class="sxs-lookup"><span data-stu-id="28f1a-114">Mark the row that has the Planned job status.</span></span>  
+## <a name="select-a-kanban-job"></a><span data-ttu-id="39f33-109">Välj ett kanban-jobb.</span><span class="sxs-lookup"><span data-stu-id="39f33-109">Select a kanban job</span></span>
+1. <span data-ttu-id="39f33-110">Gå till Produktionskontroll > Kanban > Kanban-tavla för processjobb.</span><span class="sxs-lookup"><span data-stu-id="39f33-110">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="39f33-111">Klicka på den nedrullningsbara knappen för att öppna uppslaget i fältet Arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="39f33-111">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="39f33-112">Klicka på raden med resursgrupp 1250.</span><span class="sxs-lookup"><span data-stu-id="39f33-112">Click the row with resource group 1250.</span></span> <span data-ttu-id="39f33-113">Detta filtrerar jobblistan så att endast jobben för arbetsgrupp 1250 visas.</span><span class="sxs-lookup"><span data-stu-id="39f33-113">This filters the Jobs list to display only the jobs for work cell 1250.</span></span>
+    * <span data-ttu-id="39f33-114">Markera raden som har jobbstatusen Planerad.</span><span class="sxs-lookup"><span data-stu-id="39f33-114">Mark the row that has the Planned job status.</span></span>  
 
-## <a name="complete-a-job-with-expected-quantity"></a><span data-ttu-id="28f1a-115">Slutför ett jobb med förväntad kvantitet</span><span class="sxs-lookup"><span data-stu-id="28f1a-115">Complete a job with expected quantity</span></span>
-1. <span data-ttu-id="28f1a-116">Visa eller dölj avsnittet Detaljer.</span><span class="sxs-lookup"><span data-stu-id="28f1a-116">Expand or collapse the Details section.</span></span>
-    * <span data-ttu-id="28f1a-117">Det här avsnittet visar viktig information om kortnummer, artikelnummer, beställd kvantitet och aktivitetsnamn.</span><span class="sxs-lookup"><span data-stu-id="28f1a-117">This section displays important information about card number, item number, quantity ordered, and activity name.</span></span>  
-2. <span data-ttu-id="28f1a-118">Visa eller dölj avsnittet Produktionsinstruktioner.</span><span class="sxs-lookup"><span data-stu-id="28f1a-118">Expand or collapse the Production instructions section.</span></span>
-    * <span data-ttu-id="28f1a-119">Det här avsnittet visar produktioninstruktioner för aktiviteten.</span><span class="sxs-lookup"><span data-stu-id="28f1a-119">This section displays production instructions for the activity.</span></span> <span data-ttu-id="28f1a-120">Instruktionerna kan vara text, bilder, ritningar och andra dokument.</span><span class="sxs-lookup"><span data-stu-id="28f1a-120">The instructions can be text, pictures, drawings, and other documents.</span></span>  
-3. <span data-ttu-id="28f1a-121">Klicka på Start.</span><span class="sxs-lookup"><span data-stu-id="28f1a-121">Click Start.</span></span>
-    * <span data-ttu-id="28f1a-122">Välj ett jobb som inte har slutförts.</span><span class="sxs-lookup"><span data-stu-id="28f1a-122">Select a job that is not completed.</span></span> <span data-ttu-id="28f1a-123">Använd statusikoner i fältet Jobbstatus för att visa jobbstatus.</span><span class="sxs-lookup"><span data-stu-id="28f1a-123">Use status icons in the Job status field to view job status.</span></span>      
-4. <span data-ttu-id="28f1a-124">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="28f1a-124">Click Complete.</span></span>
-    * <span data-ttu-id="28f1a-125">Jobbet är slutfört med den förväntade kvaliteten.</span><span class="sxs-lookup"><span data-stu-id="28f1a-125">The job is completed with the expected quality.</span></span>  
+## <a name="complete-a-job-with-expected-quantity"></a><span data-ttu-id="39f33-115">Slutför ett jobb med förväntad kvantitet</span><span class="sxs-lookup"><span data-stu-id="39f33-115">Complete a job with expected quantity</span></span>
+1. <span data-ttu-id="39f33-116">Visa eller dölj avsnittet Detaljer.</span><span class="sxs-lookup"><span data-stu-id="39f33-116">Expand or collapse the Details section.</span></span>
+    * <span data-ttu-id="39f33-117">Det här avsnittet visar viktig information om kortnummer, artikelnummer, beställd kvantitet och aktivitetsnamn.</span><span class="sxs-lookup"><span data-stu-id="39f33-117">This section displays important information about card number, item number, quantity ordered, and activity name.</span></span>  
+2. <span data-ttu-id="39f33-118">Visa eller dölj avsnittet Produktionsinstruktioner.</span><span class="sxs-lookup"><span data-stu-id="39f33-118">Expand or collapse the Production instructions section.</span></span>
+    * <span data-ttu-id="39f33-119">Det här avsnittet visar produktioninstruktioner för aktiviteten.</span><span class="sxs-lookup"><span data-stu-id="39f33-119">This section displays production instructions for the activity.</span></span> <span data-ttu-id="39f33-120">Instruktionerna kan vara text, bilder, ritningar och andra dokument.</span><span class="sxs-lookup"><span data-stu-id="39f33-120">The instructions can be text, pictures, drawings, and other documents.</span></span>  
+3. <span data-ttu-id="39f33-121">Klicka på Start.</span><span class="sxs-lookup"><span data-stu-id="39f33-121">Click Start.</span></span>
+    * <span data-ttu-id="39f33-122">Välj ett jobb som inte har slutförts.</span><span class="sxs-lookup"><span data-stu-id="39f33-122">Select a job that is not completed.</span></span> <span data-ttu-id="39f33-123">Använd statusikoner i fältet Jobbstatus för att visa jobbstatus.</span><span class="sxs-lookup"><span data-stu-id="39f33-123">Use status icons in the Job status field to view job status.</span></span>      
+4. <span data-ttu-id="39f33-124">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="39f33-124">Click Complete.</span></span>
+    * <span data-ttu-id="39f33-125">Jobbet är slutfört med den förväntade kvaliteten.</span><span class="sxs-lookup"><span data-stu-id="39f33-125">The job is completed with the expected quality.</span></span>  
 
-## <a name="complete-a-job-with-errors"></a><span data-ttu-id="28f1a-126">Slutför ett jobb med fel</span><span class="sxs-lookup"><span data-stu-id="28f1a-126">Complete a job with errors</span></span>
-1. <span data-ttu-id="28f1a-127">Klicka på Start.</span><span class="sxs-lookup"><span data-stu-id="28f1a-127">Click Start.</span></span>
-    * <span data-ttu-id="28f1a-128">När ett jobb utförs, markeras nästa jobb i listan automatiskt.</span><span class="sxs-lookup"><span data-stu-id="28f1a-128">When a job is completed, the next job on the list is selected automatically.</span></span> <span data-ttu-id="28f1a-129">Detta beror på att du inte behöver välja ett jobb innan du klickar på Start.</span><span class="sxs-lookup"><span data-stu-id="28f1a-129">This is why you don't need to select a job before you click Start.</span></span>  
-2. <span data-ttu-id="28f1a-130">I åtgärdsfönstret, klicka på Tillverka.</span><span class="sxs-lookup"><span data-stu-id="28f1a-130">On the Action Pane, click Manufacture.</span></span>
-3. <span data-ttu-id="28f1a-131">Klicka på Slutfört (detaljer).</span><span class="sxs-lookup"><span data-stu-id="28f1a-131">Click Complete (details).</span></span>
-4. <span data-ttu-id="28f1a-132">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="28f1a-132">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="28f1a-133">Ange ett nummer i fältet Felkvantitet.</span><span class="sxs-lookup"><span data-stu-id="28f1a-133">In the Error quantity field, enter a number.</span></span>
-6. <span data-ttu-id="28f1a-134">Ange ett värde i fältet Godkänd kvantitet.</span><span class="sxs-lookup"><span data-stu-id="28f1a-134">In the Good quantity field, enter a number.</span></span>
-7. <span data-ttu-id="28f1a-135">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="28f1a-135">Click OK.</span></span>
+## <a name="complete-a-job-with-errors"></a><span data-ttu-id="39f33-126">Slutför ett jobb med fel</span><span class="sxs-lookup"><span data-stu-id="39f33-126">Complete a job with errors</span></span>
+1. <span data-ttu-id="39f33-127">Klicka på Start.</span><span class="sxs-lookup"><span data-stu-id="39f33-127">Click Start.</span></span>
+    * <span data-ttu-id="39f33-128">När ett jobb utförs, markeras nästa jobb i listan automatiskt.</span><span class="sxs-lookup"><span data-stu-id="39f33-128">When a job is completed, the next job on the list is selected automatically.</span></span> <span data-ttu-id="39f33-129">Detta beror på att du inte behöver välja ett jobb innan du klickar på Start.</span><span class="sxs-lookup"><span data-stu-id="39f33-129">This is why you don't need to select a job before you click Start.</span></span>  
+2. <span data-ttu-id="39f33-130">I åtgärdsfönstret, klicka på Tillverka.</span><span class="sxs-lookup"><span data-stu-id="39f33-130">On the Action Pane, click Manufacture.</span></span>
+3. <span data-ttu-id="39f33-131">Klicka på Slutfört (detaljer).</span><span class="sxs-lookup"><span data-stu-id="39f33-131">Click Complete (details).</span></span>
+4. <span data-ttu-id="39f33-132">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="39f33-132">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="39f33-133">Ange ett nummer i fältet Felkvantitet.</span><span class="sxs-lookup"><span data-stu-id="39f33-133">In the Error quantity field, enter a number.</span></span>
+6. <span data-ttu-id="39f33-134">Ange ett värde i fältet Godkänd kvantitet.</span><span class="sxs-lookup"><span data-stu-id="39f33-134">In the Good quantity field, enter a number.</span></span>
+7. <span data-ttu-id="39f33-135">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="39f33-135">Click OK.</span></span>
 

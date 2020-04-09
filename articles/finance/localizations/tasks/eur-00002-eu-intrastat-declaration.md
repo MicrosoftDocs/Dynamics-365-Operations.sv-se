@@ -16,101 +16,101 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d7ab1d274b527bf5071900940bf53a57a88f482
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183943"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145272"
 ---
-# <a name="eur-00002-generate-an-eu-intrastat-declaration"></a><span data-ttu-id="d3120-103">EUR-00002 Skapa en Intrastat-deklaration för EU</span><span class="sxs-lookup"><span data-stu-id="d3120-103">EUR-00002 Generate an EU Intrastat declaration</span></span>
+# <a name="eur-00002-generate-an-eu-intrastat-declaration"></a><span data-ttu-id="928b9-103">EUR-00002 Skapa en Intrastat-deklaration för EU</span><span class="sxs-lookup"><span data-stu-id="928b9-103">EUR-00002 Generate an EU Intrastat declaration</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d3120-104">I den här proceduren går du igenom stegen som krävs för att exportera Intrastat-deklarationen i det elektroniska filformatet och förhandsgranska deklarationdatan i ett Excel-format.</span><span class="sxs-lookup"><span data-stu-id="d3120-104">This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</span></span> 
+<span data-ttu-id="928b9-104">I den här proceduren går du igenom stegen som krävs för att exportera Intrastat-deklarationen i det elektroniska filformatet och förhandsgranska deklarationdatan i ett Excel-format.</span><span class="sxs-lookup"><span data-stu-id="928b9-104">This procedure walks you through the steps required to export the Intrastat declaration in the electronic file format and preview the declaration data in an Excel format.</span></span> 
 
-<span data-ttu-id="d3120-105">Innan du kan slutföra proceduren, måste du överföra transaktioner till Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d3120-105">Before you can complete this procedure, you must transfer transactions to the Intrastat.</span></span> 
+<span data-ttu-id="928b9-105">Innan du kan slutföra proceduren, måste du överföra transaktioner till Intrastat.</span><span class="sxs-lookup"><span data-stu-id="928b9-105">Before you can complete this procedure, you must transfer transactions to the Intrastat.</span></span> 
 
-<span data-ttu-id="d3120-106">Proceduren har skapats med demodataföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="d3120-106">This procedure was created using the demo data company DEMF.</span></span>
+<span data-ttu-id="928b9-106">Proceduren har skapats med demodataföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="928b9-106">This procedure was created using the demo data company DEMF.</span></span>
 
 
-## <a name="import-configurations-with-settings"></a><span data-ttu-id="d3120-107">Importera konfigurationer med inställningar</span><span class="sxs-lookup"><span data-stu-id="d3120-107">Import configurations with settings</span></span>
-1. <span data-ttu-id="d3120-108">Gå till Arbetsytor > Elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="d3120-108">Go to Workspaces > Electronic reporting</span></span>
-2. <span data-ttu-id="d3120-109">Klicka på Ställ in aktiv.</span><span class="sxs-lookup"><span data-stu-id="d3120-109">Click Set active.</span></span>
-3. <span data-ttu-id="d3120-110">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="d3120-110">Click Repositories.</span></span>
-4. <span data-ttu-id="d3120-111">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="d3120-111">Click Open.</span></span>
-5. <span data-ttu-id="d3120-112">Öppna kolumnfiltret för Konfigurationsnamn.</span><span class="sxs-lookup"><span data-stu-id="d3120-112">Open Configuration name column filter.</span></span>
-6. <span data-ttu-id="d3120-113">Använd ett filter för fältet ”Konfigurationsnamn”, med värdet ”DIntrastat (DE)", med hjälp av filteroperatorn ”börjar med”.</span><span class="sxs-lookup"><span data-stu-id="d3120-113">Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="d3120-114">Du bör välja konfigurationnamnet som gäller för din juridiska persons land.</span><span class="sxs-lookup"><span data-stu-id="d3120-114">You should select the configuration name applicable for the country of your legal entity.</span></span> <span data-ttu-id="d3120-115">I den här proceduren används den tyska juridiska personen (till exempel DEMF), därför ska ”Intrastat (DE)” väljas.</span><span class="sxs-lookup"><span data-stu-id="d3120-115">This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</span></span>  
-    * <span data-ttu-id="d3120-116">Klicka på Importera och sedan på Ja.</span><span class="sxs-lookup"><span data-stu-id="d3120-116">Click Import and then click Yes.</span></span>  
-7. <span data-ttu-id="d3120-117">Öppna kolumnfiltret för Konfigurationsnamn.</span><span class="sxs-lookup"><span data-stu-id="d3120-117">Open Configuration name column filter.</span></span>
-8. <span data-ttu-id="d3120-118">Använd ett filter för fältet ”Konfigurationsnamn”, med värdet ”intrastat-rapport", med hjälp av filteroperatorn ”börjar med”.</span><span class="sxs-lookup"><span data-stu-id="d3120-118">Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</span></span>
-    * <span data-ttu-id="d3120-119">Klicka på Importera och sedan på Ja.</span><span class="sxs-lookup"><span data-stu-id="d3120-119">Click Import and then click Yes.</span></span>  
+## <a name="import-configurations-with-settings"></a><span data-ttu-id="928b9-107">Importera konfigurationer med inställningar</span><span class="sxs-lookup"><span data-stu-id="928b9-107">Import configurations with settings</span></span>
+1. <span data-ttu-id="928b9-108">Gå till Arbetsytor > Elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="928b9-108">Go to Workspaces > Electronic reporting</span></span>
+2. <span data-ttu-id="928b9-109">Klicka på Ställ in aktiv.</span><span class="sxs-lookup"><span data-stu-id="928b9-109">Click Set active.</span></span>
+3. <span data-ttu-id="928b9-110">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="928b9-110">Click Repositories.</span></span>
+4. <span data-ttu-id="928b9-111">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="928b9-111">Click Open.</span></span>
+5. <span data-ttu-id="928b9-112">Öppna kolumnfiltret för Konfigurationsnamn.</span><span class="sxs-lookup"><span data-stu-id="928b9-112">Open Configuration name column filter.</span></span>
+6. <span data-ttu-id="928b9-113">Använd ett filter för fältet ”Konfigurationsnamn”, med värdet ”DIntrastat (DE)", med hjälp av filteroperatorn ”börjar med”.</span><span class="sxs-lookup"><span data-stu-id="928b9-113">Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.</span></span>
+    * <span data-ttu-id="928b9-114">Du bör välja konfigurationnamnet som gäller för din juridiska persons land.</span><span class="sxs-lookup"><span data-stu-id="928b9-114">You should select the configuration name applicable for the country of your legal entity.</span></span> <span data-ttu-id="928b9-115">I den här proceduren används den tyska juridiska personen (till exempel DEMF), därför ska ”Intrastat (DE)” väljas.</span><span class="sxs-lookup"><span data-stu-id="928b9-115">This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.</span></span>  
+    * <span data-ttu-id="928b9-116">Klicka på Importera och sedan på Ja.</span><span class="sxs-lookup"><span data-stu-id="928b9-116">Click Import and then click Yes.</span></span>  
+7. <span data-ttu-id="928b9-117">Öppna kolumnfiltret för Konfigurationsnamn.</span><span class="sxs-lookup"><span data-stu-id="928b9-117">Open Configuration name column filter.</span></span>
+8. <span data-ttu-id="928b9-118">Använd ett filter för fältet ”Konfigurationsnamn”, med värdet ”intrastat-rapport", med hjälp av filteroperatorn ”börjar med”.</span><span class="sxs-lookup"><span data-stu-id="928b9-118">Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.</span></span>
+    * <span data-ttu-id="928b9-119">Klicka på Importera och sedan på Ja.</span><span class="sxs-lookup"><span data-stu-id="928b9-119">Click Import and then click Yes.</span></span>  
 
-## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="d3120-120">Konfigurera utländska handelsparametrar</span><span class="sxs-lookup"><span data-stu-id="d3120-120">Set up Foreign trade parameters</span></span>
-1. <span data-ttu-id="d3120-121">Gå till Moms > Inställningar > Utländsk handel > Utländska handelsparametrar.</span><span class="sxs-lookup"><span data-stu-id="d3120-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
-2. <span data-ttu-id="d3120-122">Expandera avsnittet Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="d3120-122">Expand the Electronic reporting section.</span></span>
-3. <span data-ttu-id="d3120-123">Ange eller välj ett värde Intrastat (DE) i fältet Mappning av filformat.</span><span class="sxs-lookup"><span data-stu-id="d3120-123">In the File format mapping field, enter or select a value Intrastat (DE)</span></span>
-4. <span data-ttu-id="d3120-124">Ange eller välj ett värde Intrastat-rapport i fältet Mappning av rapportformat.</span><span class="sxs-lookup"><span data-stu-id="d3120-124">In the Report format mapping field, enter or select a value Intrastat report</span></span>
-5. <span data-ttu-id="d3120-125">Expandera avsnittet Avrundningsregler.</span><span class="sxs-lookup"><span data-stu-id="d3120-125">Expand the Rounding rules section.</span></span>
-    * <span data-ttu-id="d3120-126">Du bör ställa in avrundningregler som kan användas i ditt land/din region för Intrastat-rapporteringen.</span><span class="sxs-lookup"><span data-stu-id="d3120-126">You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</span></span>  
-6. <span data-ttu-id="d3120-127">Ange ett tal i fältet Avrundningsregel.</span><span class="sxs-lookup"><span data-stu-id="d3120-127">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="d3120-128">Ange avrundningsprecision, till exempel ”0,01 ".</span><span class="sxs-lookup"><span data-stu-id="d3120-128">Enter rounding precision, for example, enter '0.01'.</span></span>  
-7. <span data-ttu-id="d3120-129">Ange ett nummer i fältet Antal decimaler för belopp.</span><span class="sxs-lookup"><span data-stu-id="d3120-129">In the Number of decimals for amount field, enter a number.</span></span>
-    * <span data-ttu-id="d3120-130">Ange t.ex. "2".</span><span class="sxs-lookup"><span data-stu-id="d3120-130">For example, enter '2'.</span></span>  
-8. <span data-ttu-id="d3120-131">Markera ett alternativ i fältet Avrundning under 1 kg.</span><span class="sxs-lookup"><span data-stu-id="d3120-131">In the Rounding below 1 kg field, select an option.</span></span>
-    * <span data-ttu-id="d3120-132">Välj t.ex. ”Avrundning till 1 kg”.</span><span class="sxs-lookup"><span data-stu-id="d3120-132">For example, select 'Rounding up to 1 kg'.</span></span>  
-9. <span data-ttu-id="d3120-133">Ange ett tal i fältet Avrundningsregel.</span><span class="sxs-lookup"><span data-stu-id="d3120-133">In the Rounding rule field, enter a number.</span></span>
-    * <span data-ttu-id="d3120-134">Ange t.ex. "1" för avrundning av vikt till heltal.</span><span class="sxs-lookup"><span data-stu-id="d3120-134">For example, enter '1' for rounding weight to the integer.</span></span>  
-10. <span data-ttu-id="d3120-135">Visa avsnittet Minimigräns.</span><span class="sxs-lookup"><span data-stu-id="d3120-135">Expand the Minimum limit section.</span></span>
-11. <span data-ttu-id="d3120-136">Ange ett nummer i fältet Vikt.</span><span class="sxs-lookup"><span data-stu-id="d3120-136">In the Weight field, enter a number.</span></span>
-    * <span data-ttu-id="d3120-137">Ange ”10” som minsta vikt.</span><span class="sxs-lookup"><span data-stu-id="d3120-137">For example, enter '10' as the minimum weight.</span></span>  
-12. <span data-ttu-id="d3120-138">I fältet Belopp, ange ett tal.</span><span class="sxs-lookup"><span data-stu-id="d3120-138">In the Amount field, enter a number.</span></span>
-    * <span data-ttu-id="d3120-139">Ange ”200” som minsta belopp.</span><span class="sxs-lookup"><span data-stu-id="d3120-139">For example, enter '200' as the minimum amount.</span></span>  
-13. <span data-ttu-id="d3120-140">Ange eller välj ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="d3120-140">In the Commodity field, enter or select a value.</span></span>
+## <a name="set-up-foreign-trade-parameters"></a><span data-ttu-id="928b9-120">Konfigurera utländska handelsparametrar</span><span class="sxs-lookup"><span data-stu-id="928b9-120">Set up Foreign trade parameters</span></span>
+1. <span data-ttu-id="928b9-121">Gå till Moms > Inställningar > Utländsk handel > Utländska handelsparametrar.</span><span class="sxs-lookup"><span data-stu-id="928b9-121">Go to Tax > Setup > Foreign trade > Foreign trade parameters</span></span>
+2. <span data-ttu-id="928b9-122">Expandera avsnittet Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="928b9-122">Expand the Electronic reporting section.</span></span>
+3. <span data-ttu-id="928b9-123">Ange eller välj ett värde Intrastat (DE) i fältet Mappning av filformat.</span><span class="sxs-lookup"><span data-stu-id="928b9-123">In the File format mapping field, enter or select a value Intrastat (DE)</span></span>
+4. <span data-ttu-id="928b9-124">Ange eller välj ett värde Intrastat-rapport i fältet Mappning av rapportformat.</span><span class="sxs-lookup"><span data-stu-id="928b9-124">In the Report format mapping field, enter or select a value Intrastat report</span></span>
+5. <span data-ttu-id="928b9-125">Expandera avsnittet Avrundningsregler.</span><span class="sxs-lookup"><span data-stu-id="928b9-125">Expand the Rounding rules section.</span></span>
+    * <span data-ttu-id="928b9-126">Du bör ställa in avrundningregler som kan användas i ditt land/din region för Intrastat-rapporteringen.</span><span class="sxs-lookup"><span data-stu-id="928b9-126">You should set up rounding rules that are applicable in your country/region for Intrastat reporting.</span></span>  
+6. <span data-ttu-id="928b9-127">Ange ett tal i fältet Avrundningsregel.</span><span class="sxs-lookup"><span data-stu-id="928b9-127">In the Rounding rule field, enter a number.</span></span>
+    * <span data-ttu-id="928b9-128">Ange avrundningsprecision, till exempel ”0,01 ".</span><span class="sxs-lookup"><span data-stu-id="928b9-128">Enter rounding precision, for example, enter '0.01'.</span></span>  
+7. <span data-ttu-id="928b9-129">Ange ett nummer i fältet Antal decimaler för belopp.</span><span class="sxs-lookup"><span data-stu-id="928b9-129">In the Number of decimals for amount field, enter a number.</span></span>
+    * <span data-ttu-id="928b9-130">Ange t.ex. "2".</span><span class="sxs-lookup"><span data-stu-id="928b9-130">For example, enter '2'.</span></span>  
+8. <span data-ttu-id="928b9-131">Markera ett alternativ i fältet Avrundning under 1 kg.</span><span class="sxs-lookup"><span data-stu-id="928b9-131">In the Rounding below 1 kg field, select an option.</span></span>
+    * <span data-ttu-id="928b9-132">Välj t.ex. ”Avrundning till 1 kg”.</span><span class="sxs-lookup"><span data-stu-id="928b9-132">For example, select 'Rounding up to 1 kg'.</span></span>  
+9. <span data-ttu-id="928b9-133">Ange ett tal i fältet Avrundningsregel.</span><span class="sxs-lookup"><span data-stu-id="928b9-133">In the Rounding rule field, enter a number.</span></span>
+    * <span data-ttu-id="928b9-134">Ange t.ex. "1" för avrundning av vikt till heltal.</span><span class="sxs-lookup"><span data-stu-id="928b9-134">For example, enter '1' for rounding weight to the integer.</span></span>  
+10. <span data-ttu-id="928b9-135">Visa avsnittet Minimigräns.</span><span class="sxs-lookup"><span data-stu-id="928b9-135">Expand the Minimum limit section.</span></span>
+11. <span data-ttu-id="928b9-136">Ange ett nummer i fältet Vikt.</span><span class="sxs-lookup"><span data-stu-id="928b9-136">In the Weight field, enter a number.</span></span>
+    * <span data-ttu-id="928b9-137">Ange ”10” som minsta vikt.</span><span class="sxs-lookup"><span data-stu-id="928b9-137">For example, enter '10' as the minimum weight.</span></span>  
+12. <span data-ttu-id="928b9-138">I fältet Belopp, ange ett tal.</span><span class="sxs-lookup"><span data-stu-id="928b9-138">In the Amount field, enter a number.</span></span>
+    * <span data-ttu-id="928b9-139">Ange ”200” som minsta belopp.</span><span class="sxs-lookup"><span data-stu-id="928b9-139">For example, enter '200' as the minimum amount.</span></span>  
+13. <span data-ttu-id="928b9-140">Ange eller välj ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="928b9-140">In the Commodity field, enter or select a value.</span></span>
 
-## <a name="set-up-compression-of-intrastat"></a><span data-ttu-id="d3120-141">Ställ in komprimering av Intrastat</span><span class="sxs-lookup"><span data-stu-id="d3120-141">Set up Compression of Intrastat</span></span>
-1. <span data-ttu-id="d3120-142">Gå till Moms > Inställningar > Utländsk handel > Komprimering av Intrastat.</span><span class="sxs-lookup"><span data-stu-id="d3120-142">Go to Tax > Setup > Foreign trade > Compression of Intrastat.</span></span>
-2. <span data-ttu-id="d3120-143">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="d3120-143">Click Remove.</span></span>
-3. <span data-ttu-id="d3120-144">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="d3120-144">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d3120-145">Du kan till exempel välja Artikel i avsnittet Tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="d3120-145">For example, select Commodity in the Available section.</span></span>  
-4. <span data-ttu-id="d3120-146">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="d3120-146">Click Add.</span></span>
+## <a name="set-up-compression-of-intrastat"></a><span data-ttu-id="928b9-141">Ställ in komprimering av Intrastat</span><span class="sxs-lookup"><span data-stu-id="928b9-141">Set up Compression of Intrastat</span></span>
+1. <span data-ttu-id="928b9-142">Gå till Moms > Inställningar > Utländsk handel > Komprimering av Intrastat.</span><span class="sxs-lookup"><span data-stu-id="928b9-142">Go to Tax > Setup > Foreign trade > Compression of Intrastat.</span></span>
+2. <span data-ttu-id="928b9-143">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="928b9-143">Click Remove.</span></span>
+3. <span data-ttu-id="928b9-144">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="928b9-144">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="928b9-145">Du kan till exempel välja Artikel i avsnittet Tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="928b9-145">For example, select Commodity in the Available section.</span></span>  
+4. <span data-ttu-id="928b9-146">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="928b9-146">Click Add.</span></span>
 
-## <a name="generate-intrastat-declaration"></a><span data-ttu-id="d3120-147">Generera en Intrastat-deklaration</span><span class="sxs-lookup"><span data-stu-id="d3120-147">Generate Intrastat declaration</span></span>
-1. <span data-ttu-id="d3120-148">Gå till Moms > Deklarationer > Utländsk handel > Intrastat</span><span class="sxs-lookup"><span data-stu-id="d3120-148">Go to Tax > Declarations > Foreign trade > Intrastat</span></span>
-2. <span data-ttu-id="d3120-149">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="d3120-149">Click Validate.</span></span>
-    * <span data-ttu-id="d3120-150">Valideringen görs i enlighet med fältet Kontrollera inställningar på sidan Utrikeshandelparameter.</span><span class="sxs-lookup"><span data-stu-id="d3120-150">The validation is done according to the Check setup field on the Foreign trade parameters page.</span></span>  
-3. <span data-ttu-id="d3120-151">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d3120-151">Click OK.</span></span>
-4. <span data-ttu-id="d3120-152">Klicka på Uppdatera.</span><span class="sxs-lookup"><span data-stu-id="d3120-152">Click Update.</span></span>
-5. <span data-ttu-id="d3120-153">Klicka på Minimigräns.</span><span class="sxs-lookup"><span data-stu-id="d3120-153">Click Minimum limit.</span></span>
-6. <span data-ttu-id="d3120-154">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="d3120-154">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="d3120-155">Ange t.ex. januari 2015.</span><span class="sxs-lookup"><span data-stu-id="d3120-155">For example, enter January 1, 2015.</span></span>  
-7. <span data-ttu-id="d3120-156">Välj Ja i fältet Komprimera.</span><span class="sxs-lookup"><span data-stu-id="d3120-156">Select Yes in the Compress field.</span></span>
-8. <span data-ttu-id="d3120-157">Ange ett datum i fältet Slutdatum.</span><span class="sxs-lookup"><span data-stu-id="d3120-157">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="d3120-158">Ange t.ex. 31 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="d3120-158">For example, enter January 31, 2015.</span></span>  
-9. <span data-ttu-id="d3120-159">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d3120-159">Click OK.</span></span>
-10. <span data-ttu-id="d3120-160">Klicka på Uppdatera.</span><span class="sxs-lookup"><span data-stu-id="d3120-160">Click Update.</span></span>
-11. <span data-ttu-id="d3120-161">Klicka på Komprimera.</span><span class="sxs-lookup"><span data-stu-id="d3120-161">Click Compress.</span></span>
-    * <span data-ttu-id="d3120-162">Denna komprimering sker enligt hur du ställer in komprimeringen av Intrastat-inställningar.</span><span class="sxs-lookup"><span data-stu-id="d3120-162">This compression happens according to how you set the Compression of intrastate settings.</span></span>  
-12. <span data-ttu-id="d3120-163">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="d3120-163">In the Start date field, enter a date.</span></span>
-    * <span data-ttu-id="d3120-164">Ange t.ex. januari 2015.</span><span class="sxs-lookup"><span data-stu-id="d3120-164">For example, enter January 1, 2015.</span></span>  
-13. <span data-ttu-id="d3120-165">Ange ett datum i fältet Slutdatum.</span><span class="sxs-lookup"><span data-stu-id="d3120-165">In the End date field, enter a date.</span></span>
-    * <span data-ttu-id="d3120-166">Ange t.ex. 31 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="d3120-166">For example, enter 31st January 2015.</span></span>  
-14. <span data-ttu-id="d3120-167">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d3120-167">Click OK.</span></span>
-15. <span data-ttu-id="d3120-168">Klicka på Uppdatera.</span><span class="sxs-lookup"><span data-stu-id="d3120-168">Click Update.</span></span>
-16. <span data-ttu-id="d3120-169">Klicka på Generera om löpnummer.</span><span class="sxs-lookup"><span data-stu-id="d3120-169">Click Regenerate sequence numbers.</span></span>
-17. <span data-ttu-id="d3120-170">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d3120-170">Click OK.</span></span>
-18. <span data-ttu-id="d3120-171">Klicka på Utdata.</span><span class="sxs-lookup"><span data-stu-id="d3120-171">Click Output.</span></span>
-19. <span data-ttu-id="d3120-172">Klicka på Rapport.</span><span class="sxs-lookup"><span data-stu-id="d3120-172">Click Report.</span></span>
-20. <span data-ttu-id="d3120-173">Ange det första datumet i rapporteringperioden i fältet Från-datum.</span><span class="sxs-lookup"><span data-stu-id="d3120-173">In the From date field, enter the first date of the reporting period.</span></span>
-    * <span data-ttu-id="d3120-174">Ange t.ex. datum till 1 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="d3120-174">For example, set the date to January 1, 2015.</span></span>  
-21. <span data-ttu-id="d3120-175">Ange ett datum i fältet Till datum.</span><span class="sxs-lookup"><span data-stu-id="d3120-175">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="d3120-176">Ange t.ex. 31 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="d3120-176">For example, enter January 31, 2015.</span></span>  
-22. <span data-ttu-id="d3120-177">Välj Ja i fältet Generera fil.</span><span class="sxs-lookup"><span data-stu-id="d3120-177">Select Yes in the Generate file field.</span></span>
-23. <span data-ttu-id="d3120-178">Ange ett värde i fältet Filnamn.</span><span class="sxs-lookup"><span data-stu-id="d3120-178">In the File name field, type a value.</span></span>
-24. <span data-ttu-id="d3120-179">Välj Ja i fältet Generera rapport.</span><span class="sxs-lookup"><span data-stu-id="d3120-179">Select Yes in the Generate report field.</span></span>
-25. <span data-ttu-id="d3120-180">Ange ett värde i fältet Rapportfilnamn.</span><span class="sxs-lookup"><span data-stu-id="d3120-180">In the Report file name field, type a value.</span></span>
-26. <span data-ttu-id="d3120-181">Markera ett alternativ i fältet Riktning.</span><span class="sxs-lookup"><span data-stu-id="d3120-181">In the Direction field, select an option.</span></span>
-    * <span data-ttu-id="d3120-182">Välj till exempel "Utförsel".</span><span class="sxs-lookup"><span data-stu-id="d3120-182">For example, select 'Dispatches'.</span></span>  
-27. <span data-ttu-id="d3120-183">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d3120-183">Click OK.</span></span>
+## <a name="generate-intrastat-declaration"></a><span data-ttu-id="928b9-147">Generera en Intrastat-deklaration</span><span class="sxs-lookup"><span data-stu-id="928b9-147">Generate Intrastat declaration</span></span>
+1. <span data-ttu-id="928b9-148">Gå till Moms > Deklarationer > Utländsk handel > Intrastat</span><span class="sxs-lookup"><span data-stu-id="928b9-148">Go to Tax > Declarations > Foreign trade > Intrastat</span></span>
+2. <span data-ttu-id="928b9-149">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="928b9-149">Click Validate.</span></span>
+    * <span data-ttu-id="928b9-150">Valideringen görs i enlighet med fältet Kontrollera inställningar på sidan Utrikeshandelparameter.</span><span class="sxs-lookup"><span data-stu-id="928b9-150">The validation is done according to the Check setup field on the Foreign trade parameters page.</span></span>  
+3. <span data-ttu-id="928b9-151">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="928b9-151">Click OK.</span></span>
+4. <span data-ttu-id="928b9-152">Klicka på Uppdatera.</span><span class="sxs-lookup"><span data-stu-id="928b9-152">Click Update.</span></span>
+5. <span data-ttu-id="928b9-153">Klicka på Minimigräns.</span><span class="sxs-lookup"><span data-stu-id="928b9-153">Click Minimum limit.</span></span>
+6. <span data-ttu-id="928b9-154">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="928b9-154">In the Start date field, enter a date.</span></span>
+    * <span data-ttu-id="928b9-155">Ange t.ex. januari 2015.</span><span class="sxs-lookup"><span data-stu-id="928b9-155">For example, enter January 1, 2015.</span></span>  
+7. <span data-ttu-id="928b9-156">Välj Ja i fältet Komprimera.</span><span class="sxs-lookup"><span data-stu-id="928b9-156">Select Yes in the Compress field.</span></span>
+8. <span data-ttu-id="928b9-157">Ange ett datum i fältet Slutdatum.</span><span class="sxs-lookup"><span data-stu-id="928b9-157">In the End date field, enter a date.</span></span>
+    * <span data-ttu-id="928b9-158">Ange t.ex. 31 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="928b9-158">For example, enter January 31, 2015.</span></span>  
+9. <span data-ttu-id="928b9-159">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="928b9-159">Click OK.</span></span>
+10. <span data-ttu-id="928b9-160">Klicka på Uppdatera.</span><span class="sxs-lookup"><span data-stu-id="928b9-160">Click Update.</span></span>
+11. <span data-ttu-id="928b9-161">Klicka på Komprimera.</span><span class="sxs-lookup"><span data-stu-id="928b9-161">Click Compress.</span></span>
+    * <span data-ttu-id="928b9-162">Denna komprimering sker enligt hur du ställer in komprimeringen av Intrastat-inställningar.</span><span class="sxs-lookup"><span data-stu-id="928b9-162">This compression happens according to how you set the Compression of intrastate settings.</span></span>  
+12. <span data-ttu-id="928b9-163">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="928b9-163">In the Start date field, enter a date.</span></span>
+    * <span data-ttu-id="928b9-164">Ange t.ex. januari 2015.</span><span class="sxs-lookup"><span data-stu-id="928b9-164">For example, enter January 1, 2015.</span></span>  
+13. <span data-ttu-id="928b9-165">Ange ett datum i fältet Slutdatum.</span><span class="sxs-lookup"><span data-stu-id="928b9-165">In the End date field, enter a date.</span></span>
+    * <span data-ttu-id="928b9-166">Ange t.ex. 31 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="928b9-166">For example, enter 31st January 2015.</span></span>  
+14. <span data-ttu-id="928b9-167">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="928b9-167">Click OK.</span></span>
+15. <span data-ttu-id="928b9-168">Klicka på Uppdatera.</span><span class="sxs-lookup"><span data-stu-id="928b9-168">Click Update.</span></span>
+16. <span data-ttu-id="928b9-169">Klicka på Generera om löpnummer.</span><span class="sxs-lookup"><span data-stu-id="928b9-169">Click Regenerate sequence numbers.</span></span>
+17. <span data-ttu-id="928b9-170">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="928b9-170">Click OK.</span></span>
+18. <span data-ttu-id="928b9-171">Klicka på Utdata.</span><span class="sxs-lookup"><span data-stu-id="928b9-171">Click Output.</span></span>
+19. <span data-ttu-id="928b9-172">Klicka på Rapport.</span><span class="sxs-lookup"><span data-stu-id="928b9-172">Click Report.</span></span>
+20. <span data-ttu-id="928b9-173">Ange det första datumet i rapporteringperioden i fältet Från-datum.</span><span class="sxs-lookup"><span data-stu-id="928b9-173">In the From date field, enter the first date of the reporting period.</span></span>
+    * <span data-ttu-id="928b9-174">Ange t.ex. datum till 1 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="928b9-174">For example, set the date to January 1, 2015.</span></span>  
+21. <span data-ttu-id="928b9-175">Ange ett datum i fältet Till datum.</span><span class="sxs-lookup"><span data-stu-id="928b9-175">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="928b9-176">Ange t.ex. 31 januari 2015.</span><span class="sxs-lookup"><span data-stu-id="928b9-176">For example, enter January 31, 2015.</span></span>  
+22. <span data-ttu-id="928b9-177">Välj Ja i fältet Generera fil.</span><span class="sxs-lookup"><span data-stu-id="928b9-177">Select Yes in the Generate file field.</span></span>
+23. <span data-ttu-id="928b9-178">Ange ett värde i fältet Filnamn.</span><span class="sxs-lookup"><span data-stu-id="928b9-178">In the File name field, type a value.</span></span>
+24. <span data-ttu-id="928b9-179">Välj Ja i fältet Generera rapport.</span><span class="sxs-lookup"><span data-stu-id="928b9-179">Select Yes in the Generate report field.</span></span>
+25. <span data-ttu-id="928b9-180">Ange ett värde i fältet Rapportfilnamn.</span><span class="sxs-lookup"><span data-stu-id="928b9-180">In the Report file name field, type a value.</span></span>
+26. <span data-ttu-id="928b9-181">Markera ett alternativ i fältet Riktning.</span><span class="sxs-lookup"><span data-stu-id="928b9-181">In the Direction field, select an option.</span></span>
+    * <span data-ttu-id="928b9-182">Välj till exempel "Utförsel".</span><span class="sxs-lookup"><span data-stu-id="928b9-182">For example, select 'Dispatches'.</span></span>  
+27. <span data-ttu-id="928b9-183">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="928b9-183">Click OK.</span></span>
 

@@ -1,9 +1,9 @@
 ---
-title: Felsökningsguide för dataintegrering
-description: Det här avsnittet innehåller felsökningsinformation för dataintegrering mellan Finance and Operations-appar och Common Data Service.
+title: Allmän felsökning
+description: Det här avsnittet innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,57 +18,98 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 87bdb72024c1c3844ff61e832a92f7edcc77c5d6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-03-16
+ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020021"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172701"
 ---
-# <a name="troubleshooting-guide-for-data-integration"></a><span data-ttu-id="e8cdf-103">Felsökningsguide för dataintegrering</span><span class="sxs-lookup"><span data-stu-id="e8cdf-103">Troubleshooting guide for data integration</span></span>
+# <a name="general-troubleshooting"></a><span data-ttu-id="3cb17-103">Allmän felsökning</span><span class="sxs-lookup"><span data-stu-id="3cb17-103">General troubleshooting</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a><span data-ttu-id="e8cdf-104">Möjliggöra plugin-spårningsloggar i Common Data Service och inspektera de dubbelriktade skrivning plugin-feldetaljerna</span><span class="sxs-lookup"><span data-stu-id="e8cdf-104">Enable plug-in trace logs in Common Data Service and inspect the dual-write plug-in error details</span></span>
 
-<span data-ttu-id="e8cdf-105">Om det uppstår ett problem eller fel under en synkronisering med dubbelriktad skrivning följer du stegen nedan för att granska felen i spårningsloggen.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-105">If you experience an issue or error during dual-write synchronization, follow these steps to inspect the errors in the trace log.</span></span>
+<span data-ttu-id="3cb17-104">Det här avsnittet innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="3cb17-104">This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Common Data Service.</span></span>
 
-1. <span data-ttu-id="e8cdf-106">Innan du kan undersöka felen måste du aktivera spårningsloggar för plugin-program.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-106">Before you can inspect the errors, you must enable plug-in trace logs.</span></span> <span data-ttu-id="e8cdf-107">Instruktioner finns i avsnittet "Visa spårningsloggar" i [Självstudier: Skriv och registrera ett plugin-program](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).</span><span class="sxs-lookup"><span data-stu-id="e8cdf-107">For instructions, see the "View trace logs" section of [Tutorial: Write and register a plug-in](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="3cb17-105">Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen.</span><span class="sxs-lookup"><span data-stu-id="3cb17-105">Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials.</span></span> <span data-ttu-id="3cb17-106">I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.</span><span class="sxs-lookup"><span data-stu-id="3cb17-106">The section for each issue explains whether a specific role or credentials are required.</span></span>
 
-    <span data-ttu-id="e8cdf-108">Nu kan du inspektera felen.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-108">You can now inspect the errors.</span></span>
+## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a><span data-ttu-id="3cb17-107">När du försöker installera paketet för dubbelriktad skrivning visas med hjälp av verktyget package deployer inga tillgängliga lösningar</span><span class="sxs-lookup"><span data-stu-id="3cb17-107">When you try to install the dual-write package by using the package deployer tool, no available solutions are shown</span></span>
 
-2. <span data-ttu-id="e8cdf-109">Logga in på Microsoft Dynamics 365 Sales.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-109">Sign in to Microsoft Dynamics 365 Sales.</span></span>
-3. <span data-ttu-id="e8cdf-110">Välj knappen **Inställningar** (växelsymbolen) och sedan **Avancerade inställningar**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-110">Select the **Settings** button (the gear symbol), and then select **Advanced Settings**.</span></span>
-4. <span data-ttu-id="e8cdf-111">På menyn **Inställningar** väljer du **Anpassning \> spårningslogg för plugin-program**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-111">On the **Settings** menu, select **Customization \> Plug-In Trace Log**.</span></span>
-5. <span data-ttu-id="e8cdf-112">Välj **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** som typnamn för att visa felinformationen.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-112">Select **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** as the type name to show the error details.</span></span>
+<span data-ttu-id="3cb17-108">Vissa versioner av verktyget package deployer är inte kompatibla med lösningspaketet för dubbelriktad skrivning.</span><span class="sxs-lookup"><span data-stu-id="3cb17-108">Some versions of the package deployer tool are incompatible with the dual-write solution package.</span></span> <span data-ttu-id="3cb17-109">Om du vill installera paketet måste du först använda [version 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) eller senare av verktyget package deployer.</span><span class="sxs-lookup"><span data-stu-id="3cb17-109">To successfully install the package, be sure to use [version 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) or later of the package deployer tool.</span></span>
 
-## <a name="inspect-dual-write-synchronization-errors"></a><span data-ttu-id="e8cdf-113">Inspektera synkroniseringsfel vid dubbelriktad skrivning</span><span class="sxs-lookup"><span data-stu-id="e8cdf-113">Inspect dual-write synchronization errors</span></span>
+<span data-ttu-id="3cb17-110">När du har installerat verktyget package deployer installerar du lösningspaketet genom att följa stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="3cb17-110">After you install the package deployer tool, install the solution package by following these steps.</span></span>
 
-<span data-ttu-id="e8cdf-114">Följ dessa steg för att inspektera fel under testningen.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-114">Follow these steps to inspect errors during testing.</span></span>
+1. <span data-ttu-id="3cb17-111">Hämta den senaste lösningspaketfilen från Yammer. com.</span><span class="sxs-lookup"><span data-stu-id="3cb17-111">Download the latest solution package file from Yammer.com.</span></span> <span data-ttu-id="3cb17-112">När paketets zip-fil har hämtats högerklickar du på den och väljer **egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-112">After the package zip file is downloaded, right-click it, and select **Properties**.</span></span> <span data-ttu-id="3cb17-113">Markera kryssrutan **Avblockera** och välj sedan **Använd**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-113">Select the **Unblock** check box, and then select **Apply**.</span></span> <span data-ttu-id="3cb17-114">Om du inte ser kryssrutan **Avblockera** är zip-filen redan avblockerad och du kan hoppa över det här steget.</span><span class="sxs-lookup"><span data-stu-id="3cb17-114">If you don't see the **Unblock** check box, the zip file is already unblocked, and you can skip this step.</span></span>
 
-1. <span data-ttu-id="e8cdf-115">Logga in på Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="e8cdf-115">Sign in to Microsoft Dynamics Lifecycle Services (LCS).</span></span>
-2. <span data-ttu-id="e8cdf-116">Öppna LCS-projektet som du vill dubbelriktad skrivtestning för.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-116">Open the LCS project to do dual-write testing for.</span></span>
-3. <span data-ttu-id="e8cdf-117">Välj **Molnstyrda miljöer**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-117">Select **Cloud-hosted environments**.</span></span>
-4. <span data-ttu-id="e8cdf-118">Gör en fjärrskrivbordsanslutning till den virtuella datorn (VM) för appen med hjälp av ett lokalt konto som visas i LCS.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-118">Make a Remote desktop connection to the application virtual machine (VM) by using local account that is shown in LCS.</span></span>
-5. <span data-ttu-id="e8cdf-119">Öppna händelsevisningsprogrammet.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-119">Open Event Viewer.</span></span> 
-6. <span data-ttu-id="e8cdf-120">Gå till **Program- och tjänstloggar \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-120">Go to **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**.</span></span> <span data-ttu-id="e8cdf-121">Felen och detaljerna visas.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-121">The errors and details are shown.</span></span>
+    ![Dialogrutan egenskaper](media/unblock_option.png)
 
-## <a name="unlink-one-common-data-service-environment-from-the-application-and-link-another-environment"></a><span data-ttu-id="e8cdf-122">Ta bort länken till en Common Data Service-miljö från appen och länka en annan miljö</span><span class="sxs-lookup"><span data-stu-id="e8cdf-122">Unlink one Common Data Service environment from the application and link another environment</span></span>
+2. <span data-ttu-id="3cb17-116">Extrahera paketets zip-fil och kopiera alla filer i mappen **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.43**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-116">Extract the package zip file, and copy all the files in the **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** folder.</span></span>
 
-<span data-ttu-id="e8cdf-123">Följ dessa steg om för att uppdatera länkar.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-123">Follow these steps to update links.</span></span>
+    ![Innehåll i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
 
-1. <span data-ttu-id="e8cdf-124">Gå till programmiljön.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-124">Go to the application environment.</span></span>
-2. <span data-ttu-id="e8cdf-125">Öppna datahantering.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-125">Open Data Management.</span></span>
-3. <span data-ttu-id="e8cdf-126">Välj **Länka till CDS för appar**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-126">Select **Link to CDS for apps**.</span></span>
-4. <span data-ttu-id="e8cdf-127">Välj alla mappningar som körs och välj sedan **Stopp**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-127">Select all the mappings that are running, and then select **Stop**.</span></span>
-5. <span data-ttu-id="e8cdf-128">Välj alla mappningarna och välj sedan **Ta bort**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-128">Select all the mappings, and then select **Delete**.</span></span>
+3. <span data-ttu-id="3cb17-118">Klistra in alla kopierade filer i mappen **Verktyg** i verktyget package deployer.</span><span class="sxs-lookup"><span data-stu-id="3cb17-118">Paste all the copied files into the **Tools** folder of the package deployer tool.</span></span> 
+4. <span data-ttu-id="3cb17-119">Kör **PackageDeployer. exe** för att välja Common Data Service-miljön och installera lösningarna.</span><span class="sxs-lookup"><span data-stu-id="3cb17-119">Run **PackageDeployer.exe** to select the Common Data Service environment and install the solutions.</span></span>
 
-    > [!NOTE]
-    > <span data-ttu-id="e8cdf-129">Alternativet **Ta bort** är inte tillgängligt om mallen **CustomerV3-konto** har valts.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-129">The **Delete** option isn't available if the **CustomerV3-Account** template is selected.</span></span> <span data-ttu-id="e8cdf-130">Ta bort valet av den här mallen om det behövs.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-130">Clear the selection of this template as required.</span></span> <span data-ttu-id="e8cdf-131">**CustomerV3-konto** är en äldre etablerad mall och fungerar med lösningen potentiell kund till kontanter.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-131">**CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution.</span></span> <span data-ttu-id="e8cdf-132">Eftersom den släpps globalt visas den under alla mallar.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-132">Because it's globally released, it appears under all templates.</span></span>
+    ![Innehåll i mappen verktyg](media/paste_copied_files.png)
 
-6. <span data-ttu-id="e8cdf-133">Välj **Ta bort länk till miljö**.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-133">Select **Unlink environment**.</span></span>
-7. <span data-ttu-id="e8cdf-134">Välj **Ja** för att bekräfta åtgärden.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-134">Select **Yes** to confirm the operation.</span></span>
-8. <span data-ttu-id="e8cdf-135">Följ stegen i [installationsguiden](https://aka.ms/dualwrite-docs) om du vill länka den nya miljön.</span><span class="sxs-lookup"><span data-stu-id="e8cdf-135">To link the new environment, follow the steps in the [installation guide](https://aka.ms/dualwrite-docs).</span></span>
+## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a><span data-ttu-id="3cb17-121">Aktivera och visa spårningslogg för plugin-program i Common Data Service för att visa felinformation</span><span class="sxs-lookup"><span data-stu-id="3cb17-121">Enable and view the plug-in trace log in Common Data Service to view error details</span></span>
+
+<span data-ttu-id="3cb17-122">**Nödvändig roll för att aktivera spårningsloggen och visa fel:** systemadministratör</span><span class="sxs-lookup"><span data-stu-id="3cb17-122">**Required role to turn on the trace log and view errors:** System admin</span></span>
+
+<span data-ttu-id="3cb17-123">Så här aktiverar du spårningslogg.</span><span class="sxs-lookup"><span data-stu-id="3cb17-123">To turn on the trace log, follow these steps.</span></span>
+
+1. <span data-ttu-id="3cb17-124">Logga in på Finance and Operations-appen, öppna sidan **inställningar** och under **System**, välj **Administration**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-124">Sign in to the Finance and Operations app, open the **Settings** page, and then, under **System**, select **Administration**.</span></span>
+2. <span data-ttu-id="3cb17-125">På sidan **Administration** väljer du **Systeminställningar**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-125">On the **Administration** page, select **System Settings**.</span></span>
+3. <span data-ttu-id="3cb17-126">På fliken **Anpassning** i fältet **Plugin-program and aktivitetsspåring för anpassat arbetsflöde**, välj **Alla** för att aktivera spårningsloggen för plugin-program.</span><span class="sxs-lookup"><span data-stu-id="3cb17-126">On the **Customization** tab, in the **Plug-in and custom workflow activity tracing** field, select **All** to enable the plug-in trace log.</span></span> <span data-ttu-id="3cb17-127">Om du bara vill logga spårningsloggar när undantag inträffar kan du istället välja **undantag**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-127">If you want to log trace logs only when exceptions occur, you can select **Exception** instead.</span></span>
+
+
+<span data-ttu-id="3cb17-128">Så här visar du spårningslogg.</span><span class="sxs-lookup"><span data-stu-id="3cb17-128">To view the trace log, follow these steps.</span></span>
+
+1. <span data-ttu-id="3cb17-129">Logga in på Finance and Operations-appen, öppna sidan **inställningar** och under **Anpassning**, välj **Spårningslogg för plugin-program**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-129">Sign in to the Finance and Operations app, open the **Settings** page, and then, under **Customization**, select **Plug-in Trace Log**.</span></span>
+2. <span data-ttu-id="3cb17-130">Sök efter spårningsloggarna där fältet **Typnamn** anges till **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-130">Find the trace logs where the **Type Name** field is set to **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.</span></span>
+3. <span data-ttu-id="3cb17-131">Dubbelklicka på ett objekt om du vill visa hela loggen och på snabbfliken **Körning**, granska texten **Meddelandeblock**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-131">Double-click an item to view the full log, and then, on the **Execution** FastTab, review the **Message Block** text.</span></span>
+
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a><span data-ttu-id="3cb17-132">Aktivera felsökningsläget för att felsöka problem med direkt synkronisering i Finance and Operations-appar</span><span class="sxs-lookup"><span data-stu-id="3cb17-132">Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps</span></span>
+
+<span data-ttu-id="3cb17-133">**Den roll som krävs för att visa felen:** systemadministratör</span><span class="sxs-lookup"><span data-stu-id="3cb17-133">**Required role to view the errors:** System admin</span></span>
+
+<span data-ttu-id="3cb17-134">Fel i dubbelriktad skrivning som har sitt ursprung i Common Data Service kan visas i Finance and Operations-appen.</span><span class="sxs-lookup"><span data-stu-id="3cb17-134">Dual-write errors that originate in Common Data Service can appear in the Finance and Operations app.</span></span> <span data-ttu-id="3cb17-135">I vissa fall är den fullständiga texten i felmeddelandet inte tillgänglig eftersom meddelandet är för långt eller innehåller personligt identifierande information (PII).</span><span class="sxs-lookup"><span data-stu-id="3cb17-135">In some cases, the full text of the error message isn't available because the message is too long or contains personally identifying information (PII).</span></span> <span data-ttu-id="3cb17-136">Du kan aktivera detaljerad loggning för fel genom att följa stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="3cb17-136">You can turn on verbose logging for errors by following these steps.</span></span>
+
+1. <span data-ttu-id="3cb17-137">Alla projektkonfigurationer i Finance and Operations-appar har en **IsDebugMode**-egenskap i entiteten **DualWriteProjectConfiguration**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-137">All project configurations in Finance and Operations apps have an **IsDebugMode** property in the **DualWriteProjectConfiguration** entity.</span></span> <span data-ttu-id="3cb17-138">Öppna entiteten **DualWriteProjectConfiguration** genom att använda Excel-tillägget.</span><span class="sxs-lookup"><span data-stu-id="3cb17-138">Open the **DualWriteProjectConfiguration** entity by using the Excel add-in.</span></span>
+
+    > [!TIP]
+    > <span data-ttu-id="3cb17-139">Ett enkelt sätt att öppna entiteten är att aktivera **design**-läget i Excel-tillägget och sedan lägga till **DualWriteProjectConfigurationEntity** i kalkylbladet.</span><span class="sxs-lookup"><span data-stu-id="3cb17-139">An easy way to open the entity is to turn on **Design** mode in the Excel add-in and then add **DualWriteProjectConfigurationEntity** to the worksheet.</span></span> <span data-ttu-id="3cb17-140">För mer information, se [Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget](../../office-integration/use-excel-add-in.md).</span><span class="sxs-lookup"><span data-stu-id="3cb17-140">For more information, see [Open entity data in Excel and update it by using the Excel add-in](../../office-integration/use-excel-add-in.md).</span></span>
+
+2. <span data-ttu-id="3cb17-141">Ställ in egenskapen **IsDebugMode** på **ja** för projektet.</span><span class="sxs-lookup"><span data-stu-id="3cb17-141">Set the **IsDebugMode** property to **Yes** for the project.</span></span>
+3. <span data-ttu-id="3cb17-142">Kör scenariot som genererar fel.</span><span class="sxs-lookup"><span data-stu-id="3cb17-142">Run the scenario that is generating errors.</span></span>
+4. <span data-ttu-id="3cb17-143">De detaljerade loggarna finns i registret DualWriteErrorLog.</span><span class="sxs-lookup"><span data-stu-id="3cb17-143">The verbose logs are available in the DualWriteErrorLog table.</span></span> <span data-ttu-id="3cb17-144">Om du vill söka efter data i en registerläsare använder du följande URL (ersätt **XXX** efter behov):</span><span class="sxs-lookup"><span data-stu-id="3cb17-144">To look up data in the table browser, use the following URL (replace **XXX** as appropriate):</span></span>
+
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a><span data-ttu-id="3cb17-145">Kontrollera synkroniseringsfel på den virtuella datorn för Finance and Operations-appen</span><span class="sxs-lookup"><span data-stu-id="3cb17-145">Check synchronization errors on the virtual machine for the Finance and Operations app</span></span>
+
+<span data-ttu-id="3cb17-146">**Den roll som krävs för att visa felen:** systemadministratör</span><span class="sxs-lookup"><span data-stu-id="3cb17-146">**Required role to view the errors:** System admin</span></span>
+
+1. <span data-ttu-id="3cb17-147">Logga in på Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="3cb17-147">Sign in to Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+2. <span data-ttu-id="3cb17-148">Öppna LCS-projektet som du valde att utföra testning av dubbelriktad skrivning för.</span><span class="sxs-lookup"><span data-stu-id="3cb17-148">Open the LCS project that you chose to do the dual-write testing for.</span></span>
+3. <span data-ttu-id="3cb17-149">Välj panelen **Molnstyrda miljöer**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-149">Select the **Cloud-hosted environments** tile.</span></span>
+4. <span data-ttu-id="3cb17-150">Logga in på den virtuella datorn (VM) för Finance and Operations-appen med hjälp av fjärrskrivbord.</span><span class="sxs-lookup"><span data-stu-id="3cb17-150">Use Remote Desktop to sign in to the virtual machine (VM) for the Finance and Operations app.</span></span> <span data-ttu-id="3cb17-151">Använd det lokala kontot som visas i LCS.</span><span class="sxs-lookup"><span data-stu-id="3cb17-151">Use the local account that is shown in LCS.</span></span>
+5. <span data-ttu-id="3cb17-152">Öppna händelsevisningsprogrammet.</span><span class="sxs-lookup"><span data-stu-id="3cb17-152">Open Event viewer.</span></span>
+6. <span data-ttu-id="3cb17-153">Välj **Program- och tjänstloggar \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-153">Select **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**.</span></span>
+7. <span data-ttu-id="3cb17-154">Granska listan över de senaste felen.</span><span class="sxs-lookup"><span data-stu-id="3cb17-154">Review the list of recent errors.</span></span>
+
+## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a><span data-ttu-id="3cb17-155">Ta bort länken och länka en annan Common Data Service-miljö från en Finance and Operations-app</span><span class="sxs-lookup"><span data-stu-id="3cb17-155">Unlink and link another Common Data Service environment from a Finance and Operations app</span></span>
+
+<span data-ttu-id="3cb17-156">**Nödvändiga autentiseringsuppgifter för ta bort länken till miljön:** Azure AD klientadministratör</span><span class="sxs-lookup"><span data-stu-id="3cb17-156">**Required credentials to unlink the environment:** Azure AD tenant admin</span></span>
+
+1. <span data-ttu-id="3cb17-157">Logga in på Finance and Operations-appen.</span><span class="sxs-lookup"><span data-stu-id="3cb17-157">Sign in to the Finance and Operations app.</span></span>
+2. <span data-ttu-id="3cb17-158">Gå till **Arbetsytor \> Datahantering** och välj panelen **Dubbelriktad skrivning**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-158">Go to **Workspaces \> Data management**, and select the **Dual Write** tile.</span></span>
+3. <span data-ttu-id="3cb17-159">Markera alla mappningar och sedan **stoppa**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-159">Select all running mappings, and then select **Stop**.</span></span>
+4. <span data-ttu-id="3cb17-160">Välj **Ta bort länk till miljö**.</span><span class="sxs-lookup"><span data-stu-id="3cb17-160">Select **Unlink environment**.</span></span>
+5. <span data-ttu-id="3cb17-161">Välj **Ja** för att bekräfta åtgärden.</span><span class="sxs-lookup"><span data-stu-id="3cb17-161">Select **Yes** to confirm the operation.</span></span>
+
+<span data-ttu-id="3cb17-162">Nu kan du länka en ny miljö.</span><span class="sxs-lookup"><span data-stu-id="3cb17-162">You can now link a new environment.</span></span>

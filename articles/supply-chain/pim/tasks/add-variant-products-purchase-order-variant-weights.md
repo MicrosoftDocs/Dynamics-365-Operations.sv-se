@@ -16,35 +16,35 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adb2300e51f8b5383eee4dea0dffe4129dc8a536
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: ae45dc0ed5332242a12efbb7f8ca37f97a244cce
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934827"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147996"
 ---
-# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="ee350-103">Lägg till variantprodukter i inköpsorder med hjälp av variantvikter</span><span class="sxs-lookup"><span data-stu-id="ee350-103">Add variant products to purchase orders using variant weights</span></span>
+# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="e6ec9-103">Lägg till variantprodukter i inköpsorder med hjälp av variantvikter</span><span class="sxs-lookup"><span data-stu-id="e6ec9-103">Add variant products to purchase orders using variant weights</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ee350-104">Den här proceduren går igenom stegen vid användning av variantvikt för att automatiskt fylla i inköpsorderrader för varje variant av en produkt.</span><span class="sxs-lookup"><span data-stu-id="ee350-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="ee350-105">När du väljer kvantiteten av produkten som du vill köpa, inköpsorderrader skapas för alla varianter av produkten med föreslagna kvantiteter som baseras på de vikter som konfigureras på produktvarianterna.</span><span class="sxs-lookup"><span data-stu-id="ee350-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="ee350-106">Den här proceduren inkluderar inte steg för att konfigurera viktvärden på produktdimensioner och produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="ee350-106">This procedure doesn’t include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="ee350-107">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="ee350-107">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="e6ec9-104">Den här proceduren går igenom stegen vid användning av variantvikt för att automatiskt fylla i inköpsorderrader för varje variant av en produkt.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="e6ec9-105">När du väljer kvantiteten av produkten som du vill köpa, inköpsorderrader skapas för alla varianter av produkten med föreslagna kvantiteter som baseras på de vikter som konfigureras på produktvarianterna.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="e6ec9-106">Den här proceduren inkluderar inte steg för att konfigurera viktvärden på produktdimensioner och produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-106">This procedure doesn't include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="e6ec9-107">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-107">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="ee350-108">Gå till leverantörsskulder > inköpsorder > Alla inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="ee350-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="ee350-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="ee350-109">Click New.</span></span>
-3. <span data-ttu-id="ee350-110">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="ee350-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="ee350-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ee350-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="ee350-112">Växla utökningen av avsnittet Allmänt.</span><span class="sxs-lookup"><span data-stu-id="ee350-112">Toggle the expansion of the General section.</span></span>
-6. <span data-ttu-id="ee350-113">Öppna sökningen genom att klicka på listruteknappen i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="ee350-113">In the Site field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="ee350-114">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ee350-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="ee350-115">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="ee350-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="ee350-116">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ee350-116">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="ee350-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ee350-117">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="ee350-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="ee350-118">Click OK.</span></span>
-12. <span data-ttu-id="ee350-119">Växla expanderingen av avsnittet Raddetaljer.</span><span class="sxs-lookup"><span data-stu-id="ee350-119">Toggle the expansion of the Line details section.</span></span>
-13. <span data-ttu-id="ee350-120">Klicka på fliken Varianter.</span><span class="sxs-lookup"><span data-stu-id="ee350-120">Click the Variants tab.</span></span>
-14. <span data-ttu-id="ee350-121">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="ee350-121">Click Add line.</span></span>
-15. <span data-ttu-id="ee350-122">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="ee350-122">In the list, mark the selected row.</span></span>
-16. <span data-ttu-id="ee350-123">Skriv 0140 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="ee350-123">In the Item number field, type '0140'.</span></span>
-17. <span data-ttu-id="ee350-124">Ställ in kvantiteten på 1000.</span><span class="sxs-lookup"><span data-stu-id="ee350-124">Set Quantity to '1000'.</span></span>
-18. <span data-ttu-id="ee350-125">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ee350-125">Click Save.</span></span>
+1. <span data-ttu-id="e6ec9-108">Gå till leverantörsskulder > inköpsorder > Alla inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="e6ec9-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-109">Click New.</span></span>
+3. <span data-ttu-id="e6ec9-110">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="e6ec9-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="e6ec9-112">Växla utökningen av avsnittet Allmänt.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-112">Toggle the expansion of the General section.</span></span>
+6. <span data-ttu-id="e6ec9-113">Öppna sökningen genom att klicka på listruteknappen i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-113">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="e6ec9-114">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="e6ec9-115">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="e6ec9-116">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="e6ec9-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="e6ec9-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-118">Click OK.</span></span>
+12. <span data-ttu-id="e6ec9-119">Växla expanderingen av avsnittet Raddetaljer.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-119">Toggle the expansion of the Line details section.</span></span>
+13. <span data-ttu-id="e6ec9-120">Klicka på fliken Varianter.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-120">Click the Variants tab.</span></span>
+14. <span data-ttu-id="e6ec9-121">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-121">Click Add line.</span></span>
+15. <span data-ttu-id="e6ec9-122">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="e6ec9-123">Skriv 0140 i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-123">In the Item number field, type '0140'.</span></span>
+17. <span data-ttu-id="e6ec9-124">Ställ in kvantiteten på 1000.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-124">Set Quantity to '1000'.</span></span>
+18. <span data-ttu-id="e6ec9-125">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="e6ec9-125">Click Save.</span></span>
 
