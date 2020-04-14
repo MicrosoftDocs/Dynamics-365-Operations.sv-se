@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 116085a71e872c13bbf2820f4408e3c7d1261d17
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: ba585a9bb1a296bbf7181530e151d737bfa22fc2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924434"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149606"
 ---
 # <a name="create-a-vendor-account"></a>Skapa ett leverantörskonto
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du skapar ett leverantörskonto och lägger till en adress och kontaktinformation. I proceduren visas inte hur du fyller i alla fält i inköpssyfte och ekonomiska syften. Läs fältbeskrivningarna om du vill veta mer om dessa fält. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Leverantörkonton skapas vanligtvis av ett anskaffningsproffs eller en kundreskontrapersonal.
 
@@ -44,7 +44,7 @@ I den här proceduren visas hur du skapar ett leverantörskonto och lägger till
 ## <a name="add-an-address"></a>Lägg till en adress
 1. Expandera avsnittet **Adresser**.
 2. Klicka på **Lägg till**.
-3. Ange eller välj ett värde i fältet **Syfte**. Du kan välja en eller flera syften. Dessa används för att välja korrekt adress för ett visst syfte. Om syftet te.x. är "Faktura" kommer den adressen att användas när du skickar fakturor.
+3. Ange eller välj ett värde i fältet **Syfte**. Du kan välja en eller flera syften. Dessa används för att välja korrekt adress för ett visst syfte. Om syftet t.ex. är "Faktura" kommer den adressen att användas när du skickar fakturor.
 4. Skriv ett värde i fältet **Namn eller beskrivning**.
 5. Ange eller välj ett värde i fältet **Land/region**. Ange adressinformationen. Landet/regionen som du har valt bestämmer vilka fält som du presenteras tillsammans med, vilket motsvarar adressformatet för landet/regionen. 
 6. Klicka på **OK**.

@@ -16,16 +16,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6eea2a905a59842b6f39c5b1e1c78ae6801b28e0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e555d6791f596850ba1ed718aa5593ee3f88bed9
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175081"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144522"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 Ange en fraktadress för en inomeuropeisk transaktion
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du anger en fraktadress för en transaktion för inomeuropeisk handel. Till exempel: Ett företag i Tyskland beställer artiklar från en leverantör med tysk företagsadress. Denna leverantör har ett lager i Italien och skickar artiklarna därifrån. Denna leverans måste visas i Intrastat. Samma förfarande gäller för kundreturer.
 Den här proceduren gäller för alla europeiska länder/regioner. Uppgiften skapades med hjälp av demonstrationsdataföretaget DEMF, med primär adress i Tyskland. Innan du kan slutföra proceduren måste du konfigurera Intrastat-rapporteringen. Proceduren är avsedd för kamrerer. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.

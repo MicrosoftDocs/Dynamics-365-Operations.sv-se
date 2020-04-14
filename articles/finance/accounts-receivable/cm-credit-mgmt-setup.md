@@ -3,7 +3,7 @@ title: Inställningar för parametrar för kredithantering
 description: I det här avsnittet beskrivs alternativen som du kan använda för att konfigurera kredithantering efter företagets behov.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ba0b047fe984f6bc164cbe137320d6bf6c13dafc
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124195"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154538"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
 [!include [banner](../includes/banner.md)]
 
-I det här avsnittet beskrivs alternativen som du kan använda för att konfigurera kredithantering efter företagets behov. Du börjar använda kredithanteringsfunktioner genom att ställa in parametrarna på sidan **parametrar för kredithantering** (**kredithantering \> inställningar \> parametrar för kredithantering**).
+I det här avsnittet beskrivs alternativen som du kan använda för att konfigurera kredithantering efter företagets behov. Du börjar använda kredithanteringsfunktioner genom att ställa in parametrarna på sidan **Parametrar för kredit och inkasso** (**kredit och inkasso \> inställningar \> parametrar för kredit och inkasso**).
 
 ## <a name="credit-parameters"></a>Kreditparametrar
 
-Det finns fyra snabbflikar där du kan ändra parametrarna som styr kredithanteringen: **kreditspärrar**, **kontrollpunkt för kredithantering**, **statistik för kredithantering** och **kreditgränser**. I följande avsnitt beskrivs de inställningar som är tillgängliga på varje snabbflik.
+Det finns fyra snabbflikar i avsnittet **Kredit** där du kan ändra parametrarna som styr kredithanteringen: **kreditspärrar**, **kontrollpunkt för kredithantering**, **statistik för kredithantering** och **kreditgränser**. I följande avsnitt beskrivs de inställningar som är tillgängliga på varje snabbflik.
 
 ### <a name="credit-holds"></a>Kreditspärrar
 

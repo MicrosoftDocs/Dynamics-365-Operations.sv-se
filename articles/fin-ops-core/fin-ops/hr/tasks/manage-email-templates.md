@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ecfa720dfa9b3ed6ee15ec68498d2a46612a9ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a911fea9e7d1009160a021e53533c0ce49efbfe
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180064"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143706"
 ---
 # <a name="manage-email-templates"></a>Hantera e-postmallar
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Du kan överföra information från organisationens databas till bokmärkena i ett nytt dokument och använda den i mallarna som hjälper dig att kommunicera på ett effektivt sätt med sökande och kandidater. Om du vill göra detta skapar du en mall som innehåller standardtext och några bokmärken där systemdata ska infogas. Du kan till exempel infoga adress- och kontaktinformation för en sökande i ett Microsoft Word-dokument som du kan använda när du kommunicerar med den sökande. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

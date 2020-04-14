@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188106"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141751"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrera och bokför en efterdaterad check för en kund
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Du kan registrera information om en efterdaterad check som tas emot från en kund. Du kan även bokföra den efterdaterade checken och generera ekonomiska transaktioner.   Slutför följande uppgifter innan du registrerar och bokför en efterdaterad check som tas emot från en kund:   • Ställ in efterdaterade checkar på sidan Kassa- och bankhantering • Ställ in en betalningsmetod för efterdaterade checkar   Rollen för den här proceduren är Kassaförvaltare. I den här proceduren används demonstrationsföretaget USMF.
+Du kan registrera information om en efterdaterad check som tas emot från en kund. Du kan även bokföra den efterdaterade checken och generera ekonomiska transaktioner.   Slutför följande uppgifter innan du registrerar och bokför en efterdaterad check som tas emot från en kund:   * Ställ in efterdaterade checkar på sidan Kassa- och bankhantering * Ställ in en betalningsmetod för efterdaterade checkar   Rollen för den här proceduren är Kassaförvaltare. I den här proceduren används demonstrationsföretaget USMF.
 
 1. Gå till Kundreskontra > Betalningar > Betalningsjournal.
 2. Klicka på Ny.

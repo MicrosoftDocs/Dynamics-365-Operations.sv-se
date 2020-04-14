@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46dc13416aa094f33879c017c1a1815fc791409d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185116"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142185"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>Definiera ER-modellmappningar och välj datakällor för dem
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan välja datakällor för en datamodell för elektronisk rapportering (ER). Datakällorna kopplas till enskilda komponenter för den valda datamodellen vid designtidpunkten och datamodellen fylls i med affärsdata vid körning. I det här exemplet ska du skapa välja datakällor för en befintlig datamodell som har skapats för exempelföretaget, Litware, Inc. För att slutföra dessa steg måste du först avsluta stegen i proceduren "Skapa en ny datamodell".
 
@@ -78,7 +78,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 17. Välj "Transaktioner\Verifikation" i trädet.
 18. Klicka på Lägg till datakälla.
 19. I formelfältet anger du "CONCATENATE(Transactions.Voucher, "-", ".
-    * Skriv [, ”, ”-] i slutet av formeln.  
+    * Skriv [ , "-", ] i slutet av formeln.  
 20. Välj "Sträng\TEXT" i trädet.
 21. Klicka på funktionen Lägg till.
 22. Välj "Transaktioner\Post-ID(RecId)" i trädet.

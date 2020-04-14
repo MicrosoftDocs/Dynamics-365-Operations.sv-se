@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7e05ebbec1ffb3e3cdd683d847ffc1d2cf817357
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e17778d0fb05a1a5f7562027dc4e7f037e95e555
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837792"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149169"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Skapa en kanban-regel för försäljningshändelse
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Den här proceduren fokuserar på inställningarna som krävs för att skapa en kanban-regel som utlöses under genereringen av försäljningsorder. Den händelsebaserade kanban-regeln fyller på behov som har sitt ursprung i försäljningsorderrader. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Proceduren är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.
 

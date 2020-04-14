@@ -3,7 +3,7 @@ title: Uppdatera process
 description: Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar för app- och plattformsändringar.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -16,14 +16,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
-ms.search.validFrom: 2020-02-03
+ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 267682f4497bacf70f93840a948d0e525dfa4aa1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 424027e82717b8636d59289b28978d6ce3c6db4d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092211"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154515"
 ---
 # <a name="update-process"></a>Uppdatera process
 
@@ -37,52 +37,39 @@ Uppdateringar släpps regelbundet för alla miljöer. Personal stöds enligt [Mi
 
 Personaluppdateringar tillämpas automatiskt på alla miljöer. I personal finns två typer av utgåvor:
 
-- **Tjänstuppdateringar**: uppdateringar varje vecka som innehåller felkorrigeringar och nya funktioner. Tjänstuppdateringar inkluderar även tillämpliga plattformsuppdateringar när de släpps. För att få en uppfattning om hur plattformsuppdateringar frisläpps, se [Tabell 3: frisläppning av plattformsuppdateringar](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Veckovisa uppdateringar ges vanligtvis på onsdagar. Mer information om veckovisa uppdateringar finns i [Nyheter eller ändringar i Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/talent/whats-new).
+- **Tjänstuppdateringar**: uppdateringar sker varannan vecka som innehåller felkorrigeringar och nya funktioner. Tjänstuppdateringar inkluderar även tillämpliga plattformsuppdateringar när de släpps. För att få en uppfattning om hur plattformsuppdateringar frisläpps, se [Tabell 3: frisläppning av plattformsuppdateringar](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Uppdateringar varannan vecka har en stegvis global introduktion över regioner. Mer information om uppdateringar varannan vecka finns i [Nyheter eller ändringar i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
-    Alla datacenter som stöds uppdateras varje vecka, om inget annat anges. Veckovisa uppdateringar börjar normalt på onsdag och slutförs på söndag. Regionerna USA, Australien, Europa, Storbritannien, Asien och Kanada ingår i varje veckas uppdateringar. 
+    Alla datacenter som stöds uppdateras varannan vecka, om inget annat anges. Regionerna USA, Australien, Europa, Storbritannien, Asien och Kanada ingår i uppdateringar varannan vecka. 
 
-- **Uppdateringar av Common Data Service-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Common Data Service. Dessa uppdateringar frisläpps på samma områden som veckovisa uppdateringar och de tar ungefär sex veckor att replikera genom alla datacenter. Uppdateringar av lösningen kan eventuellt justeras med veckovisa tjänstuppdateringar.
-
-Följande tabell visar ett exempelschema:
-
-| Vecka | Uppdateringstyp |
-| --- | --- |
-| 1 | Tjänstuppdatering (alla regioner) |
-| 2 | Tjänstuppdatering (alla regioner) + uppdatering av lösningen (vecka 1 regioner) |
-| 3 | Tjänstuppdatering (alla regioner) + uppdatering av lösningen (vecka 2 regioner) |
-| 4 | Tjänstuppdatering (alla regioner) + uppdatering av lösningen (vecka 3 regioner) |
-| 5 | Tjänstuppdatering (alla regioner) + uppdatering av lösningen (vecka 4 regioner) |
-| 6 | Tjänstuppdatering (alla regioner) + uppdatering av lösningen (vecka 5 regioner) |
-| 7 | Tjänstuppdatering (alla regioner) + uppdatering av lösningen (vecka 6 regioner) |
-| 8 | Tjänstuppdatering (alla regioner) |
+- **Uppdateringar av Common Data Service-lösning**: dessa uppdateringar sker var sjätte vecka, efter behov. De innehåller nya entiteter och ändringar i befintliga entiteter i Common Data Service. Dessa uppdateringar frisläpps på samma områden som uppdateringar varannan vecka och de tar ungefär sex veckor att replikera genom alla datacenter. Uppdateringar av lösningen kan eventuellt justeras med tjänstuppdateringar varannan vecka.
 
 > [!NOTE]
 > Lösningsuppdateringar är tillgängliga på alla datacenter när de har frisläppts. Om du inte vill vänta på att uppdateringarna ska replikeras automatiskt kan du installera dessa uppdateringar manuellt på alla miljöer i datacentret.
 
 Vid behov innehåller personal även följande typer av korrigeringar:
 
-- **Ändring (snabbkorrigering)**: felkorrigeringar som kan uppstå med eller utanför en veckovis tjänstuppdateringsversion
+- **Ändring (snabbkorrigering)**: felkorrigeringar som kan uppstå med eller utanför en tjänstuppdateringsversion varannan vecka
 
-- **Nödkorrigering**: förebyggande och återaktiva snabbkorrigeringar som är fristående, kan inkludera enbart konfigurations- eller kodändringar för att lösa problem med aktiva webbplatsen och kan komma från en veckovis uppdatering av tjänstuppdateringar
+- **Nödkorrigering**: förebyggande och återaktiva snabbkorrigeringar som är fristående, kan inkludera enbart konfigurations- eller kodändringar för att lösa problem med aktiva webbplatsen och kan komma från en uppdatering varannan vecka av tjänstuppdateringar
 
 Versioner granskas, testas och valideras i en intern miljö. När versioner har signerats distribueras de till produktion.
 
-## <a name="exceptions-in-2019"></a>Undantag i 2019
+## <a name="release-cadence-exceptions-in-2020"></a>Frisläppningstakt undantag i 2020
 
 Följande datum utgör undantag från schemat för regelbunden publicering:
 
-| Datum | Beskrivning |
+| Datum | beskrivning |
 | --- | --- |
-| Vecka för 25 november | Inga uppdateringar |
-| Vecka för 16 december | Endast mindre uppdateringar |
-| Vecka för 23 december | Inga uppdateringar |
-| Vecka för 30 december | Inga uppdateringar |
+| Vecka för 23 november | Inga uppdateringar |
+| Vecka för 14 december | Endast mindre uppdateringar |
+| Vecka för 21 december | Inga uppdateringar |
+| Vecka för 28 december | Inga uppdateringar |
 
 ## <a name="communications"></a>Kommunikationer
 
 Du kan ta reda på vad som finns i arbetet för personal och vad vi har publicerat på följande platser:
 
-- [Dynamics 365 Human Resources översikt](https://dynamics.microsoft.com/roadmap/talent/)
+- [Dynamics 365 Human Resources översikt](https://dynamics.microsoft.com/roadmap/human-resources/)
 
 - [Utgivningsplaner för Dynamics 365](https://docs.microsoft.com/dynamics365/release-plans/)
 
@@ -114,7 +101,7 @@ När du testar förhandsgranskningsfunktioner eller försöker med nya funktione
 
 ## <a name="see-also"></a>Se även
 
-- [Utgivningsplaner för Dynamics 365 och Power Platform](https://docs.microsoft.com/dynamics365/release-plans)
-- [Nyheter och ändringar i Dynamics 365 Personal](hr-admin-whats-new.md)
-- [Livscykelpolicy för programmet](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Utgivningsplaner för Dynamics 365 och Power Platform](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Nyheter och ändringar i Dynamics 365 Personal](hr-admin-whats-new.md)</br>
+[Livscykelpolicy för programmet](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 

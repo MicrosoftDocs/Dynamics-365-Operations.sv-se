@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22680a3033c1518735eb9edb4c6f22f310509aba
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4b9960c3fdf0d65be19e28dbb41913a310ae7530
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188819"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140224"
 ---
 # <a name="establish-customer-method-of-payment"></a>Upprätta en betalningsmetod för kund
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Det här avsnittet förklarar hur du skapar en metod för betalning av kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
 
@@ -43,6 +43,6 @@ Det här avsnittet förklarar hur du skapar en metod för betalning av kundbetal
 12. Ange som huvudkontot som används för interimsbokningen. Detta är huvudkontot som betalningen ska bokföras i, om tillfälligt med hjälp av överbrygga.  
 13. Använd fliken **Filformat** för att definiera inställningen för elektroniska betalningar.
 14. Använd fliken **Betalningskontroll** för att definiera fält som är obligatoriska. Om du till exempel kräver att alla betalningar med denna betalningsmetod som ska infogas, kan du välja den väljare på den här fliken.  
-15. Använd fliken **Betalningsattribut** för att definiera betalningsattribut som du vill använda för betalningsmetoden.
+15. Använd fliken **Betalningsattribut** för att definiera betalningsattribut som du vill använda för den här betalningsmetoden.
 16. Välj **Spara**.
 

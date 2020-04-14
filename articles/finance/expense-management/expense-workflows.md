@@ -1,5 +1,5 @@
 ---
-title: Konfigurera arbetsflöden för utgifter
+title: Ställ in arbetsflöden för utgiftshantering
 description: Du kan skapa ett arbetsflöde för att granska och godkänna rese- och utgiftsdokument.
 author: ShylaThompson
 manager: AnnBe
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86cadf7277fbb7e08dad4b5dc2a46e1c6ce5a888
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdd4d69cb86da12e4a265f89c021c238d00cad08
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179962"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154004"
 ---
-# <a name="set-up-workflows-for-expense"></a>Konfigurera arbetsflöden för utgifter
+# <a name="set-up-workflows-for-expense-management"></a>Ställ in arbetsflöden för utgiftshantering
 
 [!include [banner](../includes/banner.md)]
 
- Du kan skapa ett arbetsflöde för att granska och godkänna rese- och utgiftsdokument. De dokument för vilka arbetsflöden kan definieras inkluderar utgiftsrapporter, reserekvisitioner samt begäranden om förskott.
+Du kan skapa ett arbetsflöde för att granska och godkänna rese- och utgiftsdokument. De dokument för vilka arbetsflöden kan definieras inkluderar utgiftsrapporter, reserekvisitioner samt begäranden om förskott.
 
 Ett arbetsflöde representerar en affärsprocess. Det visar ett dokuments väg genom systemet och anger vem som måste genomföra en uppgift eller godkänna ett dokument. Det finns flera fördelar med att använda arbetsflödessystemet i organisationen:
 

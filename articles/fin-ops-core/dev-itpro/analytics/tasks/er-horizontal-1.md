@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550542"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142373"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Använd horisontellt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter (Del 1 - Designformat)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Följande steg beskriver hur en användare som är tilldelad rollen som systemadministratör eller elektronisk rapporteringutvecklare kan konfigurera ett elektroniskt rapporteringsformat (ER) för att skapa rapporter som OPENXML-kalkylblad (Excel), där erforderliga kolumner kan skapas dynamiskt som horisontellt expanderbara intervall. Dessa steg kan utföras på valfritt företag.
 
@@ -33,9 +33,9 @@ För att slutföra dessa steg måste du först avsluta dessa tre uppgiftsguider:
 
 "ER Skapa en konfigurationsleverantör och välj den som aktiv"
 
-"ER Använd ekonomiska dimensioner som en datakälla (Del 1: Designa datamodell)"
+"ER Använd ekonomiska dimensioner som en datakälla (Del 1 - Designa datamodell)"
 
-"ER Använd ekonomiska dimensioner som en datakälla (Del 2: Modellmappning)"
+"ER Använd ekonomiska dimensioner som en datakälla (Del 2 - Modellmappning)"
 
 Du måste också hämta och spara en lokal kopia av mallen med en exempelrapport som finns här [Sample Financial Dimensions Web Service Report](https://go.microsoft.com/fwlink/?linkid=862266).
 

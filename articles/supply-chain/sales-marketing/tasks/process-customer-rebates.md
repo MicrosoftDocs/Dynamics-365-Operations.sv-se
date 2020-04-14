@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994944"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148594"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generera och bearbeta kundrabatter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Den här proceduren visar hur du vill bearbeta kunden rabatter från krav generation till passerar dem såsom periodiseringar av kundfordringar. Den promenader dig genom ett konkret exempel för att förklara hur olika villkor för rabatten rader påverkar det slutliga belopp som skall krediteras kunden. Du behöver använda USMF demo företaget och utföra följande uppgifter innan du startar guiden: (1) Gå till kundfordringar parametrar sidan och expandera fliken priser och sedan priset på fliken Detaljer och kontrollera att aktivera prisuppgifter alternativet är inställt på Ja. (2) Gå till rabatt avtal sidan och välj kund rabatt avtal: USMF-000001. Om fältet Status för arbetsflödesgodkännande inte har angetts som Godkänt, måste du klicka på Validering i åtgärdsfönstret för att godkänna det.
 

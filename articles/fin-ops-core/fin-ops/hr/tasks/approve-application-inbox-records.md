@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28a82ea8747fcbbceb835291ad5cd3d87091a736
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a087fa63bfdf4c2340f0fe9a8bdbd9195a7b90b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190705"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144074"
 ---
 # <a name="approve-application-inbox-records"></a>Godkänn poster för ansökningsinkorg
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du granskar ansökningar som mottagits via medarbetarnas självbetjäningssidor. Förutom att granska ansökningar kan du godkänna ansökan i de rutposter som du väljer. Godkänn poster för inkorg för ansökningar representerar jobbansökningar som har skickats in till företaget för att tas i beaktande. När du har godkänt en post skapas en sökandepost för den person som skickade in ansökningen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

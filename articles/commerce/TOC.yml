@@ -454,6 +454,8 @@
                   items:
                     - name: Konfigurera och använda avancerade automatiska avgifter
                       href: omni-auto-charges.md
+                    - name: Aktivera och konfigurera automatiska avgifter efter kanal
+                      href: auto-charges-by-channel.md
                     - name: Allokera huvudavgifter för att matcha försäljningsrader
                       href: pro-rate-charges-matching-lines.md
                 - name: Hantera kontinuitetsprogram
@@ -525,7 +527,7 @@
                 - name: Skapa en ny produkt
                   items:
                     - name: Skapa en ny produkt i Commerce
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: Hantera produktkategorier och produkter
                       href: category-management-product-creation.md
                 - name: Produktattribut
@@ -598,8 +600,6 @@
                       href: personalized-recommendations.md
                     - name: Avanmäl anpassade rekommendationer
                       href: personalization-gdpr.md
-                - name: Lägga till rekommendationslistor på en näthandelsplats
-                  href: add-reco-list-to-page.md
                 - name: Kassaupplevelser
                   items:
                     - name: Lägg till produktrekommendationer i kassan
@@ -944,6 +944,8 @@
                       href: add-checkout-module.md
                     - name: Modul för orderbekräftelse
                       href: order-confirmation-module.md
+                    - name: Modul för butiksväljare
+                      href: store-selector.md
                 - name: Moduler för kontohantering
                   items:
                     - name: Sidor och moduler för kontohantering
@@ -2115,7 +2117,7 @@
                 - name: Bruk av betalningsdata
                   href: payment-connector-data-fields.md
                 - name: Aktivera skydd mot dubbelbetalning för betalningsanslutning
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Skapa betalningspaket för programutforskaren i Service Fabric-distributioner
                   href: dev-itpro/payment-connector-package.md
             - name: Utbyggbarhet för e-handel från tredje part

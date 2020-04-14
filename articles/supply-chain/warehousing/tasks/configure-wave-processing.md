@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc28149aa56302e09eb0e7be581a582f58a76416
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9c813a429d7837493663625bde341638eecfc5ee
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847361"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148571"
 ---
 # <a name="configure-wave-processing"></a>Konfigurera påfyllnadsbearbetning
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete som genereras för ett lagerställe när en påfyllnad bearbetas och om påfyllnad bearbetas manuellt eller automatiskt. Du anger villkor genom att ställa in påfyllnadsmallar och frågor som matchar en påfyllnad mot frisläppta rader i försäljningsorder, tillverkningsorder eller kanban-ordrar. Påfyllnadsbearbetning används i lagerställen som använder funktionen i modulen Lagerstyrning och inte de som använder funktionen i modulen Lagerhantering. Du kan köra den här proceduren i demonstrationsdataföretaget USMF.
 

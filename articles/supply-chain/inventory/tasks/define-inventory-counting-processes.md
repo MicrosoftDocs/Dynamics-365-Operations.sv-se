@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 016447bca53bbc7b2eb3d7ea0790837fa8035dc6
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: b4f83ae0e33520f1777cea31e2f986af1691bfa1
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867207"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145594"
 ---
 # <a name="define-inventory-counting-processes"></a>Definiera lagerberäkningsprocesser
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I det här avsnittet beskrivs konfigurationen av grundläggande lagerinventeringsprocesser genom att skapa en inventeringsgrupp och en inventeringsjournal. Det visar också om hur du aktiverar du vill beräkna principer för ett lagerställe och artikelnivå. Dessa uppgifter utförs vanligtvis av en lagerchef. Det är en förutsättning som har några befintliga frisläppning produkter och lagerställen. Om du använder ett demonstrationsdataföretag kan du köra denna procedur i USMF-företaget med en valfri lagerförd artikel.
 

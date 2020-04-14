@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aea3f08ea2d1bd584448c3033aea41eca2a0e3ce
-ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
+ms.openlocfilehash: 54c75696f7147a7a4eb7b9d984936af9c28ef501
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "1870926"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146225"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du ställer in ett enkelt platsdirektiv. I exemplet som visas skapas ett platsdirektiv som ska användas för att fastställa var du vill placera artiklar som har tagits emot för en inköpsorder. Du kan spela upp den här uppgiftsguiden med nämnda data med hjälp av demonstrationsdataföretaget USMF. Förutsättningar: Du måste skapa en dispositionskod. I den här proceduren använder vi dispositionskoden Relabel. Om du skapar ett platsdirektiv i dina egna data måste du ha ställt in avancerad lagerhantering för dina lagerställen och artiklar. Den här proceduren är avsedd för lagerchefen.
 

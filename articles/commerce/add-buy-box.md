@@ -3,7 +3,7 @@ title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025470"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154073"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -58,7 +58,7 @@ Teman kan användas för att ta bort eller ändra ordningen på produktegenskape
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler kan användas i modul för inköpsruta
 
 - **Mediegalleri** – den här modulen används för att visa bilder av en produkt på en produktinformationssida. Det kan stödja en till många bilder. Den stöder också miniatyrbilder. Miniatyrbilderna kan antingen ordnas vågrätt (som en rad under bilden) eller lodrätt (som en kolumn bredvid bilden). Modulen mediegalleri kan läggas till i platsen **media** i modulen inköpsruta. Den stöder för närvarande endast bilder. 
-- **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Butiksväljarmodulen är integrerad med geokodnings-API för Bing Maps för att konvertera platsen till en latitud och longitud. En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade butiksparametrar i Dynamics 365 Retail. Den här modulen har stöd för två egenskaper **Sökradien** och **Länk till användarvillkor**. Egenskapen **Sökradie** definierar sökradien för butiker, i mil. Om inget värde anges används standardsökradien 50 mil. Om Bing Maps eller någon extern tjänst används kan egenskapen **Länken för tjänstvillkor** användas för att skapa en länk till villkoren för tjänsten. Det krävs en länk för tjänstvillkors för Bing Maps-tjänsten. 
+- **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Mer information om den här modulen finns i [modulen Butiksväljare](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Inställningar för modul för inköpsruta
 
@@ -91,9 +91,11 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över startpaket](starter-kit-overview.md)
+[Startpaket – översikt](starter-kit-overview.md)
 
-[Behållaremodul](add-container-module.md)
+[Modul för butiksväljare](store-selector.md)
+
+[Behållarmodul](add-container-module.md)
 
 [Kundvagnsmodul](add-cart-module.md)
 

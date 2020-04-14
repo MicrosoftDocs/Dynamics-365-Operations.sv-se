@@ -3,7 +3,7 @@ title: ER-målstyp för skrivare
 description: Det här ämnet förklarar hur du konfigurerar en skrivardestination för varje MAPP- eller FIL-komponent i ett ER-format (elektronisk rapportering) som har konfigurerats för att generera utgående dokument i antingen PDF eller Microsoft Office-format (Excel\Word).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 58e067baa130458e3a8e788d978604f208140a03
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 148da191ce4ea99c237895c40ec007a1aa0cd537
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020007"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150802"
 ---
-# <a name="PrinterDestinationType"></a>Utskriftsmål
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Utskriftsmål
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,6 +64,8 @@ Den här funktionen är en förhandsgranskningsfunktion och används för använ
 
 > [!NOTE]
 > Alternativet **konvertera till PDF** måste inte vara aktiverat när du konfigurerar **skrivarmålet**. PDF-konverteringen för utskrift sker även om alternativet är inaktiverat.
+
+För att använda en specifik [sidorientering](electronic-reporting-destinations.md#SelectPdfPageOrientation) när du skriver ut ett utgående dokument i Excel-format måste du aktivera alternativet **Konvertera till PDF**. När du ställer in alternativet **Konvertera till PDF** till **Ja** blir fältet **Sidorientering** blir tillgängligt. Välj önskad **sidorientering** i fältet kan du välja sidorientering.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

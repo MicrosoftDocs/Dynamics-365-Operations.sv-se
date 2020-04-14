@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb2c316465f8c6964a562e92ce0a2233b37d38fe
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7d8b55895c9dfaf1c69cd319697f1e0da5990daf
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180908"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144097"
 ---
 # <a name="import-users-in-bulk"></a>Massimportera användare
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Den här proceduren kan användas av systemadministratörer för att importera ett stort antal användare från Azure Active Directory.
 

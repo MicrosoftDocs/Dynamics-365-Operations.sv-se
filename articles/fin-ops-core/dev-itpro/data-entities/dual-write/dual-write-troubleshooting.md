@@ -1,9 +1,9 @@
 ---
-title: Felsökningsguide för dataintegrering
-description: Det här avsnittet innehåller felsökningsinformation för dataintegrering mellan Finance and Operations-appar och Common Data Service.
+title: Allmän felsökning
+description: Det här avsnittet innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,57 +18,98 @@ ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 87bdb72024c1c3844ff61e832a92f7edcc77c5d6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.search.validFrom: 2020-03-16
+ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020021"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172701"
 ---
-# <a name="troubleshooting-guide-for-data-integration"></a>Felsökningsguide för dataintegrering
+# <a name="general-troubleshooting"></a>Allmän felsökning
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Möjliggöra plugin-spårningsloggar i Common Data Service och inspektera de dubbelriktade skrivning plugin-feldetaljerna
 
-Om det uppstår ett problem eller fel under en synkronisering med dubbelriktad skrivning följer du stegen nedan för att granska felen i spårningsloggen.
+Det här avsnittet innehåller allmän felsökningsinformation för integrering av dubbelriktad skrivning mellan Finance and Operations-appar och Common Data Service.
 
-1. Innan du kan undersöka felen måste du aktivera spårningsloggar för plugin-program. Instruktioner finns i avsnittet "Visa spårningsloggar" i [Självstudier: Skriv och registrera ett plugin-program](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
+> [!IMPORTANT]
+> Vissa av de problem som det här ämnet behandlar kan kräva antingen systemadministratörsrollen eller Microsoft Azure Active Directory (Azure AD) autentiseringsuppgifter för administratör för klientorganisationen. I avsnittet för varje problem förklaras om en viss roll eller autentiseringsuppgifter krävs.
 
-    Nu kan du inspektera felen.
+## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>När du försöker installera paketet för dubbelriktad skrivning visas med hjälp av verktyget package deployer inga tillgängliga lösningar
 
-2. Logga in på Microsoft Dynamics 365 Sales.
-3. Välj knappen **Inställningar** (växelsymbolen) och sedan **Avancerade inställningar**.
-4. På menyn **Inställningar** väljer du **Anpassning \> spårningslogg för plugin-program**.
-5. Välj **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** som typnamn för att visa felinformationen.
+Vissa versioner av verktyget package deployer är inte kompatibla med lösningspaketet för dubbelriktad skrivning. Om du vill installera paketet måste du först använda [version 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) eller senare av verktyget package deployer.
 
-## <a name="inspect-dual-write-synchronization-errors"></a>Inspektera synkroniseringsfel vid dubbelriktad skrivning
+När du har installerat verktyget package deployer installerar du lösningspaketet genom att följa stegen nedan.
 
-Följ dessa steg för att inspektera fel under testningen.
+1. Hämta den senaste lösningspaketfilen från Yammer. com. När paketets zip-fil har hämtats högerklickar du på den och väljer **egenskaper**. Markera kryssrutan **Avblockera** och välj sedan **Använd**. Om du inte ser kryssrutan **Avblockera** är zip-filen redan avblockerad och du kan hoppa över det här steget.
+
+    ![Dialogrutan egenskaper](media/unblock_option.png)
+
+2. Extrahera paketets zip-fil och kopiera alla filer i mappen **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.43**.
+
+    ![Innehåll i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
+
+3. Klistra in alla kopierade filer i mappen **Verktyg** i verktyget package deployer. 
+4. Kör **PackageDeployer. exe** för att välja Common Data Service-miljön och installera lösningarna.
+
+    ![Innehåll i mappen verktyg](media/paste_copied_files.png)
+
+## <a name="enable-and-view-the-plug-in-trace-log-in-common-data-service-to-view-error-details"></a>Aktivera och visa spårningslogg för plugin-program i Common Data Service för att visa felinformation
+
+**Nödvändig roll för att aktivera spårningsloggen och visa fel:** systemadministratör
+
+Så här aktiverar du spårningslogg.
+
+1. Logga in på Finance and Operations-appen, öppna sidan **inställningar** och under **System**, välj **Administration**.
+2. På sidan **Administration** väljer du **Systeminställningar**.
+3. På fliken **Anpassning** i fältet **Plugin-program and aktivitetsspåring för anpassat arbetsflöde**, välj **Alla** för att aktivera spårningsloggen för plugin-program. Om du bara vill logga spårningsloggar när undantag inträffar kan du istället välja **undantag**.
+
+
+Så här visar du spårningslogg.
+
+1. Logga in på Finance and Operations-appen, öppna sidan **inställningar** och under **Anpassning**, välj **Spårningslogg för plugin-program**.
+2. Sök efter spårningsloggarna där fältet **Typnamn** anges till **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+3. Dubbelklicka på ett objekt om du vill visa hela loggen och på snabbfliken **Körning**, granska texten **Meddelandeblock**.
+
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivera felsökningsläget för att felsöka problem med direkt synkronisering i Finance and Operations-appar
+
+**Den roll som krävs för att visa felen:** systemadministratör
+
+Fel i dubbelriktad skrivning som har sitt ursprung i Common Data Service kan visas i Finance and Operations-appen. I vissa fall är den fullständiga texten i felmeddelandet inte tillgänglig eftersom meddelandet är för långt eller innehåller personligt identifierande information (PII). Du kan aktivera detaljerad loggning för fel genom att följa stegen nedan.
+
+1. Alla projektkonfigurationer i Finance and Operations-appar har en **IsDebugMode**-egenskap i entiteten **DualWriteProjectConfiguration**. Öppna entiteten **DualWriteProjectConfiguration** genom att använda Excel-tillägget.
+
+    > [!TIP]
+    > Ett enkelt sätt att öppna entiteten är att aktivera **design**-läget i Excel-tillägget och sedan lägga till **DualWriteProjectConfigurationEntity** i kalkylbladet. För mer information, se [Öppna entitetsdata i Excel och uppdatera den med hjälp av Excel-tillägget](../../office-integration/use-excel-add-in.md).
+
+2. Ställ in egenskapen **IsDebugMode** på **ja** för projektet.
+3. Kör scenariot som genererar fel.
+4. De detaljerade loggarna finns i registret DualWriteErrorLog. Om du vill söka efter data i en registerläsare använder du följande URL (ersätt **XXX** efter behov):
+
+    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
+
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollera synkroniseringsfel på den virtuella datorn för Finance and Operations-appen
+
+**Den roll som krävs för att visa felen:** systemadministratör
 
 1. Logga in på Microsoft Dynamics Lifecycle Services (LCS).
-2. Öppna LCS-projektet som du vill dubbelriktad skrivtestning för.
-3. Välj **Molnstyrda miljöer**.
-4. Gör en fjärrskrivbordsanslutning till den virtuella datorn (VM) för appen med hjälp av ett lokalt konto som visas i LCS.
-5. Öppna händelsevisningsprogrammet. 
-6. Gå till **Program- och tjänstloggar \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**. Felen och detaljerna visas.
+2. Öppna LCS-projektet som du valde att utföra testning av dubbelriktad skrivning för.
+3. Välj panelen **Molnstyrda miljöer**.
+4. Logga in på den virtuella datorn (VM) för Finance and Operations-appen med hjälp av fjärrskrivbord. Använd det lokala kontot som visas i LCS.
+5. Öppna händelsevisningsprogrammet.
+6. Välj **Program- och tjänstloggar \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**.
+7. Granska listan över de senaste felen.
 
-## <a name="unlink-one-common-data-service-environment-from-the-application-and-link-another-environment"></a>Ta bort länken till en Common Data Service-miljö från appen och länka en annan miljö
+## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Ta bort länken och länka en annan Common Data Service-miljö från en Finance and Operations-app
 
-Följ dessa steg om för att uppdatera länkar.
+**Nödvändiga autentiseringsuppgifter för ta bort länken till miljön:** Azure AD klientadministratör
 
-1. Gå till programmiljön.
-2. Öppna datahantering.
-3. Välj **Länka till CDS för appar**.
-4. Välj alla mappningar som körs och välj sedan **Stopp**.
-5. Välj alla mappningarna och välj sedan **Ta bort**.
+1. Logga in på Finance and Operations-appen.
+2. Gå till **Arbetsytor \> Datahantering** och välj panelen **Dubbelriktad skrivning**.
+3. Markera alla mappningar och sedan **stoppa**.
+4. Välj **Ta bort länk till miljö**.
+5. Välj **Ja** för att bekräfta åtgärden.
 
-    > [!NOTE]
-    > Alternativet **Ta bort** är inte tillgängligt om mallen **CustomerV3-konto** har valts. Ta bort valet av den här mallen om det behövs. **CustomerV3-konto** är en äldre etablerad mall och fungerar med lösningen potentiell kund till kontanter. Eftersom den släpps globalt visas den under alla mallar.
-
-6. Välj **Ta bort länk till miljö**.
-7. Välj **Ja** för att bekräfta åtgärden.
-8. Följ stegen i [installationsguiden](https://aka.ms/dualwrite-docs) om du vill länka den nya miljön.
+Nu kan du länka en ny miljö.

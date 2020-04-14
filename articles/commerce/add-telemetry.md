@@ -3,7 +3,7 @@ title: Lägga till skriptkod på webbsidor för att stödja telemetri
 description: I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 03/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 674d00faf1b30f87a0b0062129e1b9fbff955dd4
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001287"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154096"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
-
 
 [!include [banner](includes/banner.md)]
 
@@ -38,31 +37,78 @@ Webbanalys är ett viktigt verktyg när du vill förstå hur dina kunder samverk
 > [!NOTE]
 > Instruktionerna i det här avsnittet gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.
 
-## <a name="create-a-reusable-fragment-for-your-script-code"></a>Skapa ett återanvändbart fragment för skriptkoden
+## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Skapa ett återanvändbart sidfragment för skriptkoden
 
-När du har skapat ett fragment för skriptkoden kan det återanvändas på alla sidor på webbplatsen.
+Med hjälp av ett fragment kan du återanvända en infogad eller extern skriptkod på alla sidor på din webbplats, oavsett vilken mall de använder.
 
-1. Gå till **fragment \> fragment för ny sida**.
-2. Välj **Externt skript**, ange ett namn på fragmentet och klicka sedan **OK**.
-3. I fragmenthierarkin väljer du underordnad modul för **skriptinmatare** för det fragment du just skapade.
-4. Lägg till klientskript i egenskapsrutan till höger och ange andra konfigurations alternativ som du behöver.
+### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Skapa ett återanvändbart sidfragment för den infogade skriptkoden
 
-## <a name="add-the-fragment-to-templates"></a>Lägg till avsnittet i mallarna
+Om du vill skapa ett återanvändbart sidfel för den infogade skriptoden i webbplatsskaparen följer du stegen nedan.
+
+1. Gå till **Sidfragment** och välj **nytt**.
+1. I dialogrutan **Nytt sidfragment** välj **infogat skript**.
+1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
+1. Under det sidfel som du har skapat väljer du modulen **infogat standardskript**.
+1. Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**. Konfigurera sedan andra alternativ som du behöver.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Markera **Publicera**.
+
+### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Skapa ett återanvändbart sidfragment för den externa skriptkoden
+
+Om du vill skapa ett återanvändbart sidfel för den externa skripkoden i webbplatsskaparen följer du stegen nedan.
+
+1. Gå till **Sidfragment** och välj **nytt**.
+1. I dialogrutan **Nytt sidfragment** välj **externt skript**.
+1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
+1. Under det sidfel som du har skapat väljer du modulen **externt standardskript**.
+1. I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan. Konfigurera sedan andra alternativ som du behöver.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Markera **Publicera**.
+
+## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Lägga till ett sidfragment som innehåller skriptkod i en mall
+
+Följ dessa steg för att lägga till ett sidfragment som innehåller skriptkod till en mall i webbplatsbyggaren.
 
 1. Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.
-2. I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.
-3. Markera knappen med punkter (**...**) för platsen **HTML-huvud** och välj sedan **Lägg till fragment**.
-4. Markera det fragment som du har skapat för skriptkoden.
-5. Spara mallen och checka in den.
+1. I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.
+1. I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till sidfragment**.
+1. Markera det fragment som du har skapat för skriptkoden.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Markera **Publicera**.
 
-> [!NOTE]
-> När du är klar måste du publicera fragmentet och huvudmallen. 
+## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Lägga till ett externt skript eller infogat skript direkt i en mall
+
+Om du vill infoga ett infogat eller externt skript direkt på en uppsättning sidor som kontrolleras av en enskild mall, behöver du inte skapa ett sidfel först.
+
+### <a name="add-an-inline-script-directly-to-a-template"></a>Lägga till ett infogat skript direkt i en mall
+
+Om du vill lägga till ett infogat skript direkt på en mall i webbplatsskaparen följer du stegen nedan.
+
+1. Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.
+1. I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.
+1. I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** välj **infogat skript**.
+1. Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**. Konfigurera sedan andra alternativ som du behöver.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Markera **Publicera**.
+
+### <a name="add-an-external-script-directly-to-a-template"></a>Lägga till ett externt skript direkt i en mall
+
+Om du vill lägga till ett extern skript direkt på en mall i webbplatsskaparen följer du stegen nedan.
+
+1. Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.
+1. I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.
+1. I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** välj **externt skript**.
+1. I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan. Konfigurera sedan andra alternativ som du behöver.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
+1. Markera **Publicera**.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Lägg till en logotyp](add-logo.md)
+[Lägga till en logotyp](add-logo.md)
 
-[Välj ett tema för webbplatsen](select-site-theme.md)
+[Välja ett tema för webbplatsen](select-site-theme.md)
 
 [Arbeta med CSS åsidosättningsfiler](css-override-files.md)
 
@@ -73,4 +119,3 @@ När du har skapat ett fragment för skriptkoden kan det återanvändas på alla
 [Lägg till copyrightmeddelande](add-copyright-notice.md)
 
 [Lägg till språk på din webbplats](add-languages-to-site.md)
-

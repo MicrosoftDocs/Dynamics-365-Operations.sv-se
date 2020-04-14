@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6879a45dd1fcc1ba718747aaaf0d7936c2eac49f
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: c8e0288da16829c04a9b97c0a52caa8bd27cddf8
+ms.sourcegitcommit: fde8045ea49d0cf26d5e7ac5a0da5c0d3d69d5bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087356"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166508"
 ---
 # <a name="common-data-service-entities"></a>Common Data Service-entiteter
 
@@ -87,14 +87,19 @@ Följande personalentiteter är tillgängliga i Common Data Service.
 | Befattning | cdm_jobposition |
 | Befattningstyp | cdm_positiontype |
 | Befattningstilldelning för arbetare | cdm_positionworkerassignmentmap |
+| Befattningsdimension | cdm_jobpositiondimension|
 | Jobbtyp | cdm_jobtype |
 | Språk | cdm_language |
+| Namn | cdm_title |
+
+> [!NOTE]
+> Ekonomiska dimensioner för **Befattningstyp**, **Befattningstilldelning för arbetare** och **Anställning** ger integration med Common Data Service i en riktning. Uppdateringar av ekonomiska dimensioner kan för närvarande inte synkroniseras från Common Data Service till personal. 
 
 ## <a name="leave-and-absence-entities"></a>Enheter för tjänstledighet och frånvaro
 
 | Namn | Enhet |
 | --- | --- |
-| Lämna banktransaktion | cdm_leavebanktransaction |
+| Transaktion för tjänstledighetsbank | cdm_leavebanktransaction |
 | Lämna anmälan | cdm_leaveenrollment |
 | Tjänstledighetsplan | cdm_leaveplan |
 | Begäran om tjänstledighet | cdm_leaverequest |
