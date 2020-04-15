@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6432d04aa821e76d67e2c430e514f4b9056d8228
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7e6778f61a9367399e4b71d5b2bb2459c09ba508
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180029"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143923"
 ---
 # <a name="define-vendor-payment-terms"></a>Definiera villkor för leverantörsbetalning
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du ställer in betalningsvillkor för leverantörsfakturor. I den här uppgiften används demonstrationsföretaget USMF.
 
