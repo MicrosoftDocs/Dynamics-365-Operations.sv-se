@@ -3,7 +3,7 @@ title: Bearbetning av berättigande för anmälan
 description: I den här artikeln beskrivs hur du kör bearbetning av berättigande för anmälan.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0344c48460a7d1540481e09ba106526e119de72b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 1d978982213e713e362798c49aa57e6dc8b7a862
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010545"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230026"
 ---
 # <a name="process-enrollment-eligibility"></a>Bearbetning av berättigande för anmälan
-
-[!include [banner](includes/preview-feature.md)]
 
 I den här artikeln beskrivs hur du kör bearbetning av berättigande för anmälan.
 
@@ -37,10 +35,10 @@ I den här artikeln beskrivs hur du kör bearbetning av berättigande för anmä
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Anmälningsperiod | Anmälningsperiod för att bearbeta av berättigande för anmälan. |
-   | Juridisk person | Juridisk person att bearbeta berättigande för anmälan för. |
-   | Arbetare | Arbetare att bearbeta berättigande för anmälan för. Om du lämnar det här fältet tomt bearbetas en berättigande för anmälan för alla arbetare. |
-   | Förmånsplan | Förmånsplan att bearbeta berättigande för anmälan för.
+   | **Anmälningsperiod** | Anmälningsperiod för att bearbeta av berättigande för anmälan. |
+   | **Juridisk person** | Juridisk person att bearbeta berättigande för anmälan för. |
+   | **Arbetare** | Arbetare att bearbeta berättigande för anmälan för. Om du lämnar det här fältet tomt bearbetas en berättigande för anmälan för alla arbetare. |
+   | **Förmånsplan** | Förmånsplan att bearbeta berättigande för anmälan för.
 
 3. Om du vill köra processen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
 
@@ -53,3 +51,24 @@ I den här artikeln beskrivs hur du kör bearbetning av berättigande för anmä
    4. Välj **OK**. Processen kommer att köras med de parametrar du angett.
 
 4. Välj **OK**.
+
+## <a name="view-process-results"></a>Visa processresultat
+
+I den här artikeln beskrivs hur du visar berättigande processresultat.
+
+1.  I arbetsytan **Förmånshantering** under **bearbetar**, välj **processresultat**.
+
+2.  I formuläret **processresultat** anges följande fält:
+
+   | Fält | beskrivning |
+   | --- | --- |
+   | **Process-ID** | Unikt ID för kombinationen av arbetare, juridisk person och processkörning. |
+   | **Processtyp** | Detta anger vilken process som kördes. Till exempel: Anmälan. |
+   | **Tidstämpel** | Den tidpunkt då berättigandeprocessen kördes. |
+   | **Juridisk person** | Den juridiska person som anges under anmälningsprocessen. |
+   | **Arbetare** | Arbetaren som bearbetades. |
+   | **Plan | Den förmånsplan som anmälan gjordes för. |
+   | **Berättiganderegel** | Den berättiganderegel som bearbetades. Om ett fel påträffades innan berättigandet kördes är detta tomt. Exempel: om kompensationen inte har definierats för en arbetare körs inte berättigandeprocessen och detta fält lämnas tomt. |
+   | **Resultatstatus** | Detta är berättigat eller inte berättigat. Resultatstatusen är inte giltig om medarbetaren inte uppfyller villkoren för berättiganderegler, om personen saknar nödvändig information, t.ex. lönefrekvens eller en fast kompensation, eller om det saknas information om förmånsplanen som förhindrar att arbetare registreras. |
+   | **Resultatmeddelande** | Anger varför en arbetare är berättigad till en förmånsplan eller om berättiganderegler har överförts. |
+

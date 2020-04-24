@@ -1,30 +1,30 @@
 ---
 title: Godkänn och bekräfta inköpsorder
-description: Det här avsnittet innehåller en beskrivning av de statusar en inköpsorder (IO) genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+description: Det här avsnittet innehåller en beskrivning av de statusar en inköpsorder genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder.
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813441"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3208004"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkänn och bekräfta inköpsorder
 
@@ -69,9 +69,10 @@ I vissa situationer kan du behöva ändra en inköpsorder när den har fått god
 
 Om inköpsordern skapades med hjälp av en hanteringsprocess kan du utföra ändringar genom att återkalla ordern eller, om ordern redan har godkänts, med hjälp av åtgärden **Begär ändring**. I det här fallet ändras godkännandestatusen tillbaka till **Utkast** och du kan därefter ändra ordern. När du har genomfört ändringarna kan du behöva skicka inköpsordern för godkännande igen. Du kan konfigurera vilka typer av ändringar som kräver ett omgodkännande med hjälp av policyregeln **Regel för omgodkännande av inköpsorder** på sidan **Inköpspolicyer**.
 
-Om en del av den beställda kvantiteten för en inköpsorderrad har levererats kan du inte ändra den beställda kvantiteten. Du kan dock ändra kvantiteten **Resterande leverans** på raden. Du kan sedan använda åtgärden **Slutför** för att ta bort rader och förhindra ytterligare bearbetning. 
+Om en del av den beställda kvantiteten för en inköpsorderrad har levererats kan du inte ändra den beställda kvantiteten när inköpsordern är i **Utkast**. Du kan emellertid ändra kvantiteten **Resterande leverans** på raden för den inköpsorder som har statusen **utkast**.
 
-När en order har bekräftats kan du inte längre ta bort den. Du kan dock ändra den totala kvantiteten eller den resterande kvantiteten för en order under förutsättning att kvantiteten inte har tagits emot eller fakturerats.
+När en order har bekräftats kan du inte längre ta bort den. Du kan dock ändra den totala kvantiteten eller den resterande kvantiteten för en order under förutsättning att kvantiteten inte har tagits emot eller fakturerats. Du kan sedan använda åtgärden **Slutför** för att förhindra ytterligare bearbetning. 
+
 
 ## <a name="canceling-purchase-orders"></a>Avbryter inköpsorder
 

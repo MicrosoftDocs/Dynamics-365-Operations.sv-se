@@ -3,7 +3,7 @@ title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
 manager: AnnBe
-ms.date: 03/03/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: d394f5ca84efc5beb943d349e45a3d2c9639d83c
-ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
+ms.openlocfilehash: 0072ca507301fdb880f0595a06377ff01366ca20
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095784"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260539"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -35,6 +35,28 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 > [!NOTE]
 > Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
+
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.11 för Finance and Operations-appar
+
+### <a name="field-groups-containing-invalid-field-references"></a>Fältgrupper innehåller ogiltiga fältreferenser
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Fältgrupper i definitioner av registermetadata kan innehålla fältreferenser som inte är giltiga. Om dessa fältgrupper distribueras kan de orsaka körningsfel i Financial Reporting och Microsoft SQL Server Reporting Services (SSRS). Plattformsuppdatering 23 introducerade kompileraren *varning* om att detta problem med metadata har åtgärdats. Plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar kategoriserar det här problemet som ett kompilator *fel*.<p>Gör så här om du vill åtgärda problemet.</p><ol><li>Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.</li><li>Kompilera om.</li><li>Kontrollera att eventuella fel har åtgärdats.</li></ol> |
+| **Ersatt av en annan funktion?**   | Detta kompilatorfel ersätter kompilatorvarningen permanent.  |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | **Inaktuell:** kompilatorvarningen är nu ett kompileringsfel i plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
+
+### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-licenser som skapats med hjälp av SHA1-hashing-algoritm
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Processen för att skapa oberoende program varu leverantörslicenser (ISV) har ändrats. Mer information finns i [oberoende programvaruleverantör (ISV)-licensiering](../dev-tools/isv-licensing.md#appendix-create-self-signed-certificates-for-test-purposes). |
+| **Ersatt av en annan funktion?**   | Ja. Skapa licenser med hjälp av Windows PowerShell. |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | <strong>Inaktuella:</strong> ISV-licenser som skapats med hjälp av SHA1-hashing-algoritmen. Den här algoritmen är beroende av certifikat som har skapats med verktyget MakeCert och detta verktyg är inaktuellt.<p><strong>Inaktuell:</strong> SHA1 för säkerhets- eller hashing-syfte används. SHA1 kommer att upphöra att fungera i början av 2021. Därför bör den inte längre användas.<p><strong>Borttaget</strong> : stöd för inkommande eller utgående begäran via TLS (Transport Layer Security) 1.0 och TLS 1.1. |
 
 ## <a name="platform-update-32"></a>Plattform update 32
 

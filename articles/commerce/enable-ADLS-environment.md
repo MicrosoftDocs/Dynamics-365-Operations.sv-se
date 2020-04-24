@@ -3,7 +3,7 @@ title: Aktivera ADLS i en Dynamics 365 Commerce-miljö
 description: I det här avsnittet beskrivs hur du aktiverar och testar Azure Data Lake Storage (ADLS) för en Dynamics 365 Commerce-miljö, vilket är en förutsättning för att du ska kunna aktivera produktrekommendationer.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154446"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259758"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>Aktivera ADLS i en Dynamics 365 Commerce-miljö
 
@@ -48,7 +48,8 @@ Mer information om ADLS finns i [officiell ADLS-dokumentation](https://azure.mic
   
 ## <a name="configuration-steps"></a>Konfigurationssteg
 
-I det här avsnittet beskrivs de konfigurationssteg som krävs för att aktivera ADLS i en miljö.
+I det här avsnittet beskrivs de konfigurationssteg som krävs för att aktivera ADLS i en miljö när det gäller produktrekommendationer.
+En mer ingående översikt över de steg som krävs för att aktivera ADLS finns i [Gör entitetsbutik tillgänglig som Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-adls-in-the-environment"></a>Aktivera ADLS i miljö
 
@@ -91,6 +92,8 @@ Om det inte redan är klart följer du stegen för [aktivera produktrekommendati
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
+[Gör enhetslagring tillgängligt som en Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
 [Översikt av produktrekommendationer](product-recommendations.md)
 
 [Aktivera produktrekommendationer](enable-product-recommendations.md)
@@ -110,5 +113,3 @@ Om det inte redan är klart följer du stegen för [aktivera produktrekommendati
 [Skapa rekommendationer med demodata](product-recommendations-demo-data.md)
 
 [Vanliga frågor om produktrekommendationer](faq-recommendations.md)
-
-
