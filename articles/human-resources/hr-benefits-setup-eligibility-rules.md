@@ -3,7 +3,7 @@ title: Konfigurera berättiganderegler och alternativ
 description: Ange berättiganderegler och optioner för hantering av förmåner i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010661"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229911"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurera berättiganderegler och alternativ
-
-[!include [banner](includes/preview-feature.md)]
 
 När du har konfigurerat de nödvändiga parametrarna för förmånshantering i Microsoft Dynamics 365 Human Resources kan du skapa berättiganderegler, buntar, perioder och program som du vill associera med dina förmånsplaner.
 
@@ -57,6 +55,7 @@ Medarbetarna kan välja förmånsplaner under den öppna anmälan. Om de är ol�
    | **Anställningskategori** | Medarbetarens anställningskategori om växlingsknappen **Använd anställningskategori** är inställd på **Ja**. |
    | **Använd ny anställningsregel** | Anger om en ny anställnings värde för ny anställningsperiod ska användas som en del av regeln för förmånsberättigande. |
    | **Anmälningsperiod** | Tidsperiod då den nya anställningsanmälan är tillåten. Om du även ställer in detta i parametrar har inställningen för parametrar företräde framför denna. |
+   | **Använd tidigare anställningsstatus** | Anger om en anställds tidigare anställningsstatus ska användas som en del av reglerna för förmånsberättigande. Till exempel kan du ange en behörighetsregel som avstår från en täckningsväntetid för alla anställda som har övergått från status **Slutat** till status **anställd** inom 90 dagar efter sin tidigare anställning. |
 
 4. Under **ytterligare villkor** väljer du följande alternativ och lägger till information efter behov:
 

@@ -3,7 +3,7 @@ title: Konfigurera tjänstledighets- och frånvaroparametrar
 description: Definiera personalparametrar för tjänstledighet och frånvaro i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2acb8502ebcab122a0a1ff21e9f5e23931026327
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: eb992cbfbed33f88e125d3a8b721f8815414599a
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010581"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197991"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurera tjänstledighets- och frånvaroparametrar
 
@@ -50,18 +50,25 @@ Innan du ställer in tjänstledighets- och frånvaroplan i Dynamics 365 Human Re
 
 7. Välj **Spara**.
 
-## <a name="configure-calendar-parameters"></a>Konfigurera kalenderparametrar
-
-Om du har aktiverat funktionen förhandsgranskning av kalender för tjänstledighet och frånvaro måste du konfigurera ytterligare parametrar. 
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-> [!NOTE]
-> För förhandsversionen från 3 februari 2020 är endast **väntande tjänstledighetsansökan** aktiverade.
+## <a name="view-and-change-leave-and-absence-parameters"></a>Visa och ändra parametrar för ledighet och frånvaro
 
 1. På sidan **tjänstledighet och frånvaro** välj fliken **Länkar**.
 
-2. Under **Inställningar**, välj **Personalparametrar**.
+2. Under **Inställningar**, välj **Parametrar för tjänstledighet och frånvaro**.
+
+3. Ange följande parametrar på fliken **Allmänt**:
+ 
+    - Ställ in **Enhet för tjänstledighet och frånvaro** till antingen timmar eller dagar. Om dagar kan du välja **aktivera halvdags definition** om du vill tillåta att medarbetare väljer antingen första eller andra halvan av dagen i sina ledighetsbegäran. 
+
+    - Välj **tjänstmånaders giltighetsdatum** om du vill ange när periodiseringspriser ska gälla för tjänstledighetsplaner med hjälp av tjänstmånader.
+
+    - Välj **saldoberäkning** om du vill visa saldon som visas från och med den period som ska periodiseras. Om du väljer **saldo från idag** visar saldot summan av alla periodiseringar, justeringar och begäranden från och med idag. Om du väljer **saldo för en periodiseringsperiod**, visar saldot summan av alla periodiseringar, justeringar och förfrågningar per den periodiseringsperiod som definieras av frekvensen i planen för tjänstledighet. 
+
+## <a name="configure-calendar-parameters"></a>Konfigurera kalenderparametrar
+
+1. På sidan **tjänstledighet och frånvaro** välj fliken **Länkar**.
+
+2. Under **Inställningar**, välj **Parametrar för tjänstledighet och frånvaro**.
 
 3. På fliken **Kalender** ändra kalenderinställningar och efter behov.
 

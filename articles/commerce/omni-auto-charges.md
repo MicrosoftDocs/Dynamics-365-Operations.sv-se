@@ -3,7 +3,7 @@ title: Avancerade automatiska avgifter för flera kanaler
 description: Det här avsnittet beskriver funktionerna för hantering av ytterligare avgifter för beställningar i handelskanal med hjälp av funktioner för avancerade automatiska avgifter.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024130"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175164"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
@@ -77,7 +77,7 @@ I det här avsnittet visas exempel på användningsfall som hjälper dig att fö
 
 #### <a name="use-case-scenario"></a>Använd fallstudie
 
-En återförsäljare vill automatiskt lägga till avgifter för frakt när transaktioner skapas i någon handelskanal som kräver en leverans av varor till kunden. Återförsäljaren erbjuder 2 leveransmetoder: mark och luft. Om en kund väljer markleverans och ordervärdet är mindre än $100, vill återförsäljaren debitera kunden en fraktavgift på $10,00. Om kunden väljer markleverans och ordern är över $100 debiteras kunden inte några ytterligare fraktavgifter. Om kunden väljer flygleveranssätt för alla order, oavsett deras totala värde debiteras en avgift för frakt på $20,00.
+En återförsäljare vill automatiskt lägga till avgifter för frakt när transaktioner skapas i någon handelskanal som kräver en leverans av varor till kunden. Återförsäljaren erbjuder två leveransmetoder: mark och luft. Om en kund väljer markleverans och ordervärdet är mindre än $100, vill återförsäljaren debitera kunden en fraktavgift på $10,00. Om kunden väljer markleverans och ordern är över $100 debiteras kunden inte några ytterligare fraktavgifter. Om kunden väljer flygleveranssätt för alla order, oavsett deras totala värde debiteras en avgift för frakt på $20,00.
 
 #### <a name="setup-and-configuration"></a>Installation och konfiguration
 
@@ -215,3 +215,10 @@ Vissa organisationer föredrar att vänta tills användaren är klar med att lä
 ### <a name="charges-override-reports"></a>Raporrter för avgiftsåsidosättning
 
 Om användare åsidosätter beräknade avgifter eller lägger till manuell avgift i transaktionen, kommer dessa data vara tillgängliga för granskning i rapporten **historik för avgiftsåsidosättning**. Rapporten kan nås från **butik och handel \> förfrågningar och rapporter \> historik för avgiftsåsidosättning**. Det är viktigt att komma ihåg att de data som krävs för den här rapporten importeras från kanaldatabasen i HQ genom ”P” distribution tidsplanera jobb. Information om åsidosättningar kan därför endast utföras i kassan och kanske inte är omedelbart tillgängliga i rapporten tills jobbet har överfört butikens transaktionsdata till HQ.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Aktivera och konfigurera automatiska avgifter efter kanal](auto-charges-by-channel.md)
+
+[Allokera huvudavgifter för att matcha försäljningsrader](pro-rate-charges-matching-lines.md)
+

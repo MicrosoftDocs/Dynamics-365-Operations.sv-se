@@ -3,7 +3,7 @@ title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154073"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261408"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -46,7 +46,7 @@ På en produktinformationssida är en inköpsruta uppdelad i två områden: ett 
 En modul för inköpsruta återger titel, beskrivning, pris och klassificering för en produkt. Kunden kan också välja produktvarianter med olika produktattribut, t.ex. storlek, stil och färg. När en produktvarianten väljs uppdateras andra egenskaper i inköpsrutan (t.ex. produktbeskrivning och bilder) för att avspegla informationen för varianten. 
 
 En mängd väljare tillhandahålls, så att kunder kan ange hur många artiklar som ska köpas. Den högsta kvantiteten som kan köpas kan definieras i webbplatsinställningarna.
- 
+
 Från inköpsrutan kan kunder också utföra åtgärder som att lägga till en produkt i kundvagnen, lägga till en produkt i deras önskelista och välja en plockplats. Dessa åtgärder kan utföras på en produkt eller produktvariant. Om du vill lägga till en produkt i en önskelista måste kunden vara inloggad.
 
 Teman kan användas för att ta bort eller ändra ordningen på produktegenskaper och åtgärdskontroller i inköpsrutan. 
@@ -65,7 +65,8 @@ Teman kan användas för att ta bort eller ändra ordningen på produktegenskape
 Modul för inköpsruta har tre inställningar som kan konfigureras på **Platsinställningar \> Tillägg**:
 
 - **Maximal kvantitet** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
-- **Inventering** – när värdet är inställt på **Sant** läggs en artikel till i vagnen först när modul för inköpsruta kontrollerar att den finns i lager. Den här inventeringen görs både för scenarier där artikeln ska levereras och för scenarier där den ska hämtas i butiken. Om värdet är inställt på **Falsk** görs ingen lagerkontroll innan en artikel läggs till i vagnen och ordern placeras.
+- **Inventering** – när värdet är inställt på **Sant** läggs en artikel till i vagnen först när modul för inköpsruta kontrollerar att den finns i lager. Den här inventeringen görs för scenarier där artikeln ska levereras och för scenarier där den ska hämtas i butiken. Om värdet är inställt på **Falsk** görs ingen lagerkontroll innan en artikel läggs till i vagnen och ordern placeras. Information om hur du konfigurerar lagerinställningar i backoffice finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
+
 - **Lagerkvantitet** – den här egenskapen används för att ange ett buffertnummer för lager. Lagret underhålls i realtid och när många kunder gör beställningar kan det vara svårt att underhålla en korrekt inventering. När en lagerkontroll utförs, om lagret är mindre än buffertlagret, behandlas produkten som om den ligger utanför lagret. När försäljningen går snabbt via flera kanaler, så att lager inventeringen inte fullständigt synkroniseras, finns det därför mindre risk för försäljning av en artikel som ligger utanför lagret.
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
@@ -99,6 +100,8 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 
 [Kundvagnsmodul](add-cart-module.md)
 
+[Vagnikonmodul](cart-icon-module.md)
+
 [Kassamodul](add-checkout-module.md)
 
 [Modul för orderbekräftelse](order-confirmation-module.md)
@@ -106,3 +109,5 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 [Modul för sidhuvud](author-header-module.md)
 
 [Modul för sidfot](author-footer-module.md)
+
+[Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)

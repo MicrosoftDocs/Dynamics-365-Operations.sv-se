@@ -3,7 +3,7 @@ title: Skapa förmånsplaner för arbetare
 description: Du kan skapa pensionsplaner för arbetare i Microsoft Dynamics 365 Human Resources för att välja förmånsplaner för medarbetare och för att bekräfta förmånsplanens val.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65b0ce2200a3c63a00ccd73fb26c79556aec55ad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 45b9a669d63620a15e6dc8047fed24c2db64438f
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010612"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230049"
 ---
 # <a name="create-worker-benefit-plans"></a>Skapa förmånsplaner för arbetare
-
-[!include [banner](includes/preview-feature.md)]
 
 Du kan skapa pensionsplaner för arbetare i Microsoft Dynamics 365 Human Resources för att välja förmånsplaner för medarbetare och för att bekräfta förmånsplanens val. Vanligtvis väljer medarbetare själv förmånsplaner med hjälp av medarbetarens självbetjäning och en förmånsadministratör bekräftar valen. 
 

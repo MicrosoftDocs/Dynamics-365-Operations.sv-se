@@ -2,7 +2,7 @@
 title: Översikt över kvalitetshantering
 description: Det här avsnittet beskriver hur du kan använda kvalitetshantering i Dynamics 365 Supply Chain Management för att förbättra produktens kvalitet inom din leveranskedja.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814408"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224919"
 ---
 # <a name="quality-management-overview"></a>Översikt över kvalitetshantering
 
@@ -302,122 +302,6 @@ I inköp, om du ställer in fältet **händelsetyp** till **produktinleverans** 
 
 - Om alternativet **per uppdaterad kvantitet** är inställt på **Ja**, genereras en kvalitetsorder för varje inleverans mot inköpsordern, baserat på inlevererad kvantitet och inställningar i artikelsampling. Varje gång en kvantitet inlevereras mot inköpsordern genereras nya kvalitetsorder utifrån den nylevererade kvantiteten.
 - Om alternativet **per uppdaterad kvantitet** är inställt på **Nej**, genereras en kvalitetsorder för första inleveransen mot inköpsordern, baserat på inlevererad kvantitet. Dessutom skapas en eller flera kvalitetsorder utifrån den återstående kvantiteten, beroende på spårningsdimensionerna. Kvalitetsorder genereras inte för efterföljande inleveranser mot inköpsordern.
-
-<table>
-<tbody>
-<tr>
-<th>Kvantitetsspecifikation</th>
-<th>Per uppdaterad kvantitet</th>
-<th>Per spårningsdimension</th>
-<th>Resultat</th>
-</tr>
-<tr>
-<td>Procent: 10 %</td>
-<td>Ja</td>
-<td>
-<p>Batchnummer: Nej</p>
-<p>Serienummer: Nej</p>
-</td>
-<td>
-<p>Orderkvantitet: 100</p>
-<ol>
-<li>Rapportera som slutförd för 30
-<ul>
-<li>Kvalitetsorder #1 för 3 (10 % av 30)</li>
-</ul>
-</li>
-<li>Rapportera som slutförd för 70
-<ul>
-<li>Kvalitetsorder #2 för 7 (10 % av det resterande orderkvantiteten, vilket är lika med 70 i det här fallet)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fast kvantitet: 1</td>
-<td>Nej</td>
-<td>
-<p>Batchnummer: Nej</p>
-<p>Serienummer: Nej</p>
-</td>
-<td>Orderkvantitet: 100
-<ol>
-<li>Rapportera som slutförd för 30
-<ul>
-<li>Kvalitetsorder #1 skapas för 1 (för den första kvantiteten som rapporteras som färdig, som har ett fast värde på 1).</li>
-<li>Inga fler kvalitetsorder skapas med den resterande kvantiteten.</li>
-</ul>
-</li>
-<li>Rapportera som slutförd för 10
-<ul>
-<li>Inga kvalitetsorder skapas.</li>
-</ul>
-</li>
-<li>Rapportera som slutförd för 60
-<ul>
-<li>Inga kvalitetsorder skapas.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Fast kvantitet: 1</td>
-<td>Ja</td>
-<td>
-<p>Batch-nummer: Ja</p>
-<p>Serienummer: Ja</p>
-</td>
-<td>
-<p>Orderkvantitet: 10</p>
-<ol>
-<li>Rapportera som slutförd för 3
-<ul>
-<li>Kvalitetsorder #1 för 1 av batch #b1, seriell #s1</li>
-<li>Kvalitetsorder #2 för 1 av batch #b2, seriell #s2</li>
-<li>Kvalitetsorder #3 för 1 av batch #b3, seriell #s3</li>
-</ul>
-</li>
-<li>Rapportera som slutförd för 2
-<ul>
-<li>Kvalitetsorder #4 för 1 av batch #b4, seriell #s4</li>
-<li>Kvalitetsorder #5 för 1 av batch #b5, seriell #s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Obs!</strong> batchen kan återanvändas.</p>
-</td>
-</tr>
-<tr>
-<td>Fast kvantitet: 2</td>
-<td>Nej</td>
-<td>
-<p>Batch-nummer: Ja</p>
-<p>Serienummer: Ja</p>
-</td>
-<td>
-<p>Orderkvantitet: 10</p>
-<ol>
-<li>Rapportera som slutförd för 4
-<ul>
-<li>Kvalitetsorder #1 för 1 av batch #b1, seriell #s1.</li>
-<li>Kvalitetsorder #2 för 1 av batch #b2, seriell #s2.</li>
-<li>Kvalitetsorder #3 för 1 av batch #b3, seriell #s3.</li>
-<li>Kvalitetsorder #4 för 1 av batch #b4, seriell #s4.</li>
-<li>Inga fler kvalitetsorder skapas med den resterande kvantiteten.</li>
-</ul>
-</li>
-<li>Rapport som slutförd för 6
-<ul>
-<li>Inga kvalitetsorder skapas.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### <a name="production"></a>Produktion
 

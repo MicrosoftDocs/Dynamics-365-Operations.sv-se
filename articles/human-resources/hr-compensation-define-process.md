@@ -16,16 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42fcbeaadf0e8156cd72bee4328ca612c1abbaff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 058102b369ec7ed79874017e50a06d265b96b424
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010653"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198776"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiera kompensationsprocessen och beräkna resultat
-
-
 
 Kompensationsprocesser används för att bestämma nya kompensationsbelopp och belöningar för medarbetare som har anmälts till fasta och variabla kompensationsplaner. Kompensationsprocesser kan köras för att utföra ”vad händer om"-analyser, för att kontrollera att alla ändringar och inställningarna är korrekta. Den här proceduren skapar en kompensationsprocess, kör processen och visar resultatet. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

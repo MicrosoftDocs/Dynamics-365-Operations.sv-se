@@ -3,7 +3,7 @@ title: Konfigurera arbetsflödesegenskaper
 description: I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbetsflöde.
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190130"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199446"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurera arbetsflödesegenskaper
 
@@ -75,9 +75,11 @@ Du kan tillhandahålla instruktioner till de användare som skickar dokument fö
     5. Om du vill anpassa texten kan du infoga platshållare. Se steg 3 för instruktioner om hur du anger en platshållare.
     6. Klicka på **Stäng**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Ange när detta arbetsflöde ska användas
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Ange när det här arbetsflödet används med aktiveringsvillkor
 
-Du kan skapa flera arbetsflöden utifrån samma typ. Du kan till exempel skapa ett arbetsflöde för inköpsrekvisitioner för varje land/region som du har verksamhet i, exempelvis inköpsrekvisitioner för Danmark eller inköpsrekvisitioner för Spanien. Om du har flera arbetsflöden som är baserade på samma typ, måste du ange när respektive arbetsflöde ska användas. För föregående exempel anger du följande villkor:
+Du kan skapa flera arbetsflöden utifrån samma arbetsflödestyp. Om du har flera arbetsflöden som är baserade på samma typ, måste du ange när respektive arbetsflöde ska användas med aktiveringsvillkor. Om aktiveringsvillkoren inte uppfylls används standardarbetsflödet. Om det bara finns en definierad arbetsflödeskonfiguration för en arbetsflödestyp, kommer arbetsflödeskonfigurationen att användas oavsett aktiveringsvillkoren.
+
+Du kan till exempel skapa ett arbetsflöde för inköpsrekvisitioner för varje land/region som du har verksamhet i, exempelvis inköpsrekvisitioner för Danmark eller inköpsrekvisitioner för Spanien med följande villkor.
 
 - Inköpsrekvisitioner för Danmark används när: land/region = DK:
 - Inköpsrekvisitioner för Spanien används när: land/region = ES:

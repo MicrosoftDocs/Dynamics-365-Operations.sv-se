@@ -2,15 +2,15 @@
 title: Prognosreduceringnycklar
 description: Den här ämnet ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 07/09/2019
+manager: tfehr
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11d5613f23805993b2a83d007c818c80de6a4b9b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814293"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225115"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosreduceringnycklar
 
@@ -34,7 +34,7 @@ Det här ämnet innehåller information om de olika metoder som används för at
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metoder som används för att minska prognosbehov
 
-När du inkluderar en prognos i en huvudplan kan du välja hur prognosbehoven reduceras när faktisk efterfrågan inkluderas.
+När du inkluderar en prognos i en huvudplan kan du välja hur prognosbehoven reduceras när faktisk efterfrågan inkluderas. Observera att huvudplaneringen exkluderar prognoskrav från det förflutna, vilket innebär alla prognoskrav före dagens datum.
 
 Om du vill ta med en prognos i en huvudplan och välja den metod som används för att minska prognosbehoven, gå till **huvudplanering \> inställningar \> planer \> huvudplaner**. I fältet **prognosmodell** väljer du en prognosmodell. I fältet **Metod som används för att minska prognosbehov** väljer du en metod. Följande alternativ är tillgängliga:
 

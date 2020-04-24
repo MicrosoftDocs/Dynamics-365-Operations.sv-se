@@ -3,7 +3,7 @@ title: Översikt över hantering av affärsdokument
 description: Det här avsnittet innehåller information om hur du använder funktionen för hantering av affärsdokument i ER-ramverket.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117347"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258567"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -46,7 +46,7 @@ Om du vill använda hantering av affärsdokument för att redigera mallar i Exce
 
 ## <a name="business-document-availability"></a>Affärsdokuments tillgänglighet
 
-Följande rapporter, med Excel-baserade mallar, är tillgängliga i den allmänna förhandsversionen:
+Följande rapporter, med Excel-baserade mallar, blir tillgängliga i den allmänna förhandsversionen:
 
 **Kundreskontra** (augusti 2019)
 
@@ -248,9 +248,18 @@ Använd följande procedur om du vill redigera mallar för fritextfakturor på a
 1. Logga in som en användare med åtkomst till sidan arbetsyta för hantering av affärsdokument.
 2. Öppna arbetsytan för hantering av affärsdokument.
 
+När funktionen **Office-liknande gränssnittsupplevelser för hantering av affärsdokument** är inaktiverad i arbetsytan **funktionshantering** visar huvudrutnätet i arbetsytan **Hantering av affärsdokument** följande mallar:
+
+- Mallar som ägs av din ER-konfigurationsleverantör (dvs. den leverantör som för närvarande är markerad som aktiv i arbetsytan **elektronisk rapportering**). När du har valt en av dessa mallar kan du välja **redigera mall** och starta eller fortsätta att redigera den.
+- Mallar som ägs av andra ER-konfigurationsleverantörer. När du har valt en av dessa mallar kan du välja **Nytt dokument** för att skapa en kopia av det som ägs av din ER-konfigurationsleverantör och sedan börja redigera kopian.
+
 ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingTemplate1.png)
 
 Fliken **Mall** visar innehållet i den valda mallen. Välj fliken **Detaljer** om du vill visa information om den valda mallen samt information om en ER-formatkonfiguration som den här mallen finns i. Lägg märke till att alla mallar har statusen **Publicerad** och inte innehåller någon information i kolumnen **Ändring**. Detta innebär att dessa mallar inte redigeras just nu.
+
+När funktionen **Office-liknande gränssnittsupplevelser för hantering av affärsdokument** aktiveras i arbetsytan **funktionshantering** visar rutnätet i arbetsytan **Hantering av affärsdokument** visas mallar som ägs av er ER-konfigurationsleverantör (dvs. den leverantör som för närvarande är markerad som aktiv i arbetsytan **elektronisk rapportering**). När du har valt en av dessa mallar kan du välja **redigera mall** och starta eller fortsätta att redigera den.
+
+Om du vill arbeta med mallar som ägs av andra ER-konfigurationsleverantörer väljer du **nytt dokument** för att skapa en kopia av mallen som ägs av din ER-leverantör. Du kan sedan börja redigera kopian. För mer information, se [Nytta användargränssnitt för dokument vid affärsdokumenthantering](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>Initiera redigeringsmallar som ägs av din konfigurationsleverantör
 

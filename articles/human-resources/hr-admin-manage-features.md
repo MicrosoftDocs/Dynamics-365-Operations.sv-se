@@ -3,7 +3,7 @@ title: Hantera funktioner
 description: Läs mer om hur du aktiverar och inaktiverar nya funktioner i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 84ff11e8237ce0669f7f6ac70c5b4411c5d4b466
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010569"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230210"
 ---
 # <a name="manage-features"></a>Hantera funktioner
 
@@ -50,9 +50,14 @@ För att du ska kunna använda funktionerna för förhandsgranskning måste du f
 
 3. Aktivera en förhandsgranskningsfunktion genom att markera den i listan och sedan välja **Aktivera**. Inaktivera en förhandsgranskningsfunktion genom att markera den i listan och sedan välja **inaktivera**.
 
-## <a name="preview-feature-benefits-management"></a>Förhandsgranskningsfunktion: Hantering av förmåner
+## <a name="enable-or-disable-benefits-management"></a>Aktivera eller inaktivera hantering av förmåner
 
-Hantering av förmåner får du en flexibel lösning som stöder en mängd olika förmånsalternativ, tillsammans med en lättanvänd medarbetares erfarenhet som visar dina erbjudanden. Mer information om hur du konfigurerar och använder en förmånshantering finn si [Översikt över förmånshantering](hr-benefits-management-overview.md).
+Om du vill aktivera hantering av förmåner använder du samma procedur i [Aktivera eller inaktivera förhandsgranskningsfunktioner](hr-admin-manage-features.md?enable-or-disable-preview-features).
+
+> [!IMPORTANT]
+> När du har inaktiverat hantering av förmåner i miljön **produktion** efter att du har aktivera den. Du kan dock inaktivera hantering av miljöer i **begränsat läge**.
+
+Mer information om hur du konfigurerar och använder en förmånshantering finn si [Översikt över förmånshantering](hr-benefits-management-overview.md).
 
 Förmånshantering ersätter funktioner i arbetsytan **förmåner**. När du aktiverar funktionen för förhandsgranskning av förmånshantering kan du inte längre komma åt följande formulär på arbetsytan **förmåner**:
 
@@ -65,62 +70,23 @@ Förmånshantering ersätter funktioner i arbetsytan **förmåner**. När du akt
 - **Policyer för förmånsberättigande**
 - **Berättigandehändelser**
 
-Du kan visa informationen i dessa formulär i skrivskyddat läge. Om du vill redigera informationen måste du först inaktivera förhandsgranskningsfunktioner för förmånshantering.
+Du kan visa informationen i dessa formulär i skrivskyddat läge. Om du vill redigera informationen måste du först inaktivera förmånshantering (gäller endast miljöer i **begränsat läge**).
 
-### <a name="benefits-management-known-issues"></a>Kända problem med förmånshantering
+## <a name="enable-or-disable-leave-and-absence"></a>Aktivera eller inaktivera tjänstledighet och frånvaro
 
-#### <a name="life-events"></a>Livshändelser
+Om du vill aktivera tjänstledighet och frånvaro använder du samma procedur i [Aktivera eller inaktivera förhandsgranskningsfunktioner](hr-admin-manage-features.md?enable-or-disable-preview-features).
 
-När du bearbetar livshändelser får användaren ett felmeddelande:
+> [!IMPORTANT]
+> Du kan inte inaktivera funktionen **Flera tjänstledighetstyper** i tjänstledighet och frånvaro när du har aktiverat den. Detta gäller både miljöer i **begränsat läge** och **produktion**.
 
-Täckningens startdatum måste ligga mellan *början av planperioden* och *slutet av planperioden*. 
+För mer information om förhandsgranskningsfunktioner för tjänstledighet och frånvaro, se [Förhandsgranskningsfunktioner för tjänstledighet och frånvaro](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-Livshändelsen fortsätter att bearbetas som förväntat.
-
-#### <a name="eligibility-processing"></a>Bearbetning av berättigande
-
-När du kör berättigande till förmåner som använder en 1-5X lön, % av lönen och fast belopp för försäkringsbeloppet måste datum för förmånsinformation måste ställas in på anställdas startdatum i **Anställningshistorik**, med arbetade timmar, lönefrekvens och årlig inkomst av förmånen. Om det finns en fast kompensation för arbetaren anger du under de timmar som arbetas tillsammans med lönefrekvensen och årlig inkomst av förmånen kommer att beräknas. Om medarbetaren har lön behöver du inte ange arbetade timmar. Vi rekommenderar att du först anger fast kompensation när du skapar nya medarbetare. Om du vill uppdatera informationen om förmånsposter, gå till **Arbetare > Arbetarhistorik > Information om anställning**. Justera datumet till arbetarens startdatum.
-
-#### <a name="employee-self-service"></a>Självbetjäning för medarbetare
-
-Medarbetare kan välja en plan som de inte är kvalificerade för och checka ut. En arbetare har till exempel inga beroenden, men har tillåtelse att välja en sjukvårdsplan med ett alternativ för föräldraledighet.
-
-Medarbetarbelopp beräknas inte när täckningsbeloppet uppdateras för livförsäkring. När en medarbetare till exempel erbjuds en livförsäkringsplan kan han eller hon välja upp för att $ 50 000 för täckning till en kostnad av $ 0,36 per $ 1 000 av täckning.  När medarbetaren uppdaterar täckningsbeloppet finns medarbetarens kopplade kostnad kvar på noll.
-
-För en förmånsplan som bara tillåter ett enda urval av den aktuella plantypen får användaren ett fel om de försöker att avstå från en plan efter att ha valt en plan. En användare väljer till exempel en sjukvårdsplan och placerar den i vagnen. Användaren väljer sedan **Avstå** för en annan sjukvårdsplan. Användaren får ett felmeddelande.
-
-## <a name="preview-features-in-leave-and-absence"></a>Funktioner för förhandsgranskning av tjänstledighet och frånvaro
-
-Funktioner för förhandsgranskning av tjänstledighet och frånvaro inkluderar:
-
-- **Tjänstledighets- och frånvaro-kalender** - tjänstledighets- och frånvaroparametrar flyttas från **personalparametrar** till en ny skärm som kallas **tjänstledighets- och frånvaroparametrar**. Den nya skärmen innehåller ny flik för **kalender**. Den här förhandsgranskningen aktiverar bara en del av parametrarna. Du når den nya skärmen från fliken **Länkar** i arbetsytan **ledighet och frånvaro**. Kalendern innehåller:
-  - **Företagskalender** - visar alla förfrågningar om medarbetarledighet. Personer med rollen **Personal** har åtkomst till den här kalendern från fliken **länkar** i arbetsytan **tjänstledighet och frånvaro**.
-  - **Chef teamkalender** - visar alla direktrapporters ledighetsbegäran. Chefer får åtkomst till kalendern från fliken **mitt team** i självbetjäning för medarbetare under **tjänstledighet och frånvaro**. 
-
-- **Semesterkalender för tjänstledighet och frånvaro** - tjänstledighetstyper inkluderar ett nytt alternativ för **helgdag** som används tillsammans med arbetstidskalendern. Dagar som definieras i semestrar och stängningar betecknas nu som **helgdag** när arbetsdagar skapas. När periodiseringar bearbetas görs justeringar av medarbetare som har tilldelats till kalendern för att redovisa helgdagar på en arbetsdag.
-
-- **Granskning av periodisering av tjänstledighet** - en ny skärm gör det möjligt att granska när periodiseringen har bearbetats och raderats, både av alla medarbetare och enskilda medarbetare. Du når den nya skärmen från fliken **Länkar** i arbetsytan **ledighet och frånvaro**.
-
-- **Ta bort periodisering av tjänstledighet** - du kan nu ta bort periodiseringar för specifika tjänstledighetsplaner. Du når detta nya alternativ från fliken **Länkar** i arbetsytan **ledighet och frånvaro**. För enskilda medarbetare visas det här alternativet i grupperingen **tjänstledighet och frånvaro** i medarbetarprofilen. 
-
-- **Avrundning av periodisering av tjänstledighet** - Nya alternativ för **tjänstledighetstyp** definiera vilken typ av avrundning som ska användas, plus decimalens precision för avrundningen under periodiseringsprocessen. När periodiseringar bearbetas tillämpas avrundningen och precisionen på posterna i periodiseringen. 
-
-- **Konfigurera flera tjänstledighetstyper på en enda tjänstledighetsplan** - en ny kolumn i det periodiseringsschemat för tjänstledighet där du kan definiera flera tjänstledighetstyper i en tjänstledighets- och frånvaroplan med olika periodiseringsscheman. Tidigare fältet **tjänstledighetstyp** tas bort. På medarbetarens registrering visas saldona för tjänstledighetstyperna i en tabell i stället för längst upp på skärmen.
-
-  > [!IMPORTANT]
-  > Du kan inte stänga av den här funktionen när du har aktiverat den.
-
-- **Använd en medarbetares heltidslön (FTE) för periodisering** - en ny kolumn i periodiseringsschemat för tjänstledighet gör det möjligt att använda en FTE för periodisering. När periodiseringar bearbetas använder programmet medarbetarens primära befattning och den heltid som definierats för att bestämma det proportionella periodiserade beloppet.
-
-  > [!NOTE]
-  > Den här funktionen är bara tillgänglig om du aktiverar **Konfigurera flera ledighetstyper per ledighetsplan**. 
-
-## <a name="feedback"></a>Feedback
+## <a name="send-us-feedback"></a>Skicka feedback
 
 Vi vill gärna höra om din erfarenhet av dessa förhandsfunktioner. Vi rekommenderar att du regelbundet publicerar feedback på följande webbplatser när du använder dessa eller andra funktioner.
 
 - [Gemenskap](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) – webbplatsen är ett utmärkt verktyg där användare kan diskutera fall, ställa frågor och få hjälp från andra användare.
-- Meddela oss om funktioner som du vill ska visas i produkten och även de ändringar som du tycker att vi ska göra av befintliga funktioner. Föreslå produktidéer om [personalidéer](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
+- Meddela oss om funktioner som du vill ska visas i produkten och även de ändringar som du tycker att vi ska göra av befintliga funktioner. Föreslå produktidéer om [personalidéer](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources).
     
 Inkludera inte personuppgifter (all information som kan identifiera dig) i feedback eller produktomdömen. Insamlad information kan analyseras ytterligare och den används inte för att besvara frågor under tillämplig sekretesslagstiftning. Personuppgifter som samlas in separat under programmen som ingår i den [sekretesspolicyn för Microsoft ](https://privacy.microsoft.com/privacystatement).
 

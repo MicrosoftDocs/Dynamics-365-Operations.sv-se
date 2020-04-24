@@ -3,7 +3,7 @@ title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029372"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260516"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -80,7 +80,7 @@ Några av de vanligaste och mest viktiga ändringar som kan göras till en sida 
 
 Dessutom är de vanligaste typerna av uttrycklig anpassning tillgängliga genom att högerklicka på ett element och sedan välja **anpassa**. (Observera att inte alla element på sidan kan anpassas). När du använder den här metoden för anpassning visas elementets egenskapsfönster.
 
-![Anpassa egenskaper för ett element](./media/personalization-element-properties.png)
+![Anpassa egenskaper för ett element](./media/cli-element-property-window.png)
 
 Du kan använda egenskapsfönstret för att anpassa ett element på följande sätt:
 
@@ -89,6 +89,7 @@ Du kan använda egenskapsfönstret för att anpassa ett element på följande s�
 - Inkludera informationen i sammanfattningsavsnittet på snabbfliken (om elementet på en snabbflik).
 - Hoppa över fältet så att det inte får fokus när du tabbar genom sidan.
 - Förhindra att data i fältet redigeras (för alla poster).
+- Ange ett fält som krävs för inmatning av data. Om inget värde har angetts i det här fältet kommer det att visas med en röd kantlinje och en asterisk för att ange det här läget. Det här alternativet är bara tillgängligt från början i version 10.0.11 när funktionerna [Sparade vyer](saved-views.md) och **Tilldela fält enligt önskemål med anpassning** är aktiverade.
 
 Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket element. Exempelvis egenskapsfönstret för en panel kan låta dig flytta upp den panelen till en instrumentpanel och egenskapsfönster för en instrumentpanel låter dig skapa en ny arbetsyta på den här instrumentpanelen.
 
@@ -116,6 +117,7 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 - Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. Observera att du inte kan flytta ett element utanför dess överordnade grupp. Om du vill använda det här verktyget väljer du knappen **Flytta** i verktygsfältet och väljer sedan det element som ska flyttas. När du markerar ett element kommer appen att bestämma platser som elementet kan flyttas till. Dessa platser kallas *släppzoner*. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
 - Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer knappen **Hoppa över** på verktygsfältet kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan ta bort eller lägga till fält interaktivt i tabbsekvensen.
 - Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från den genom att markera fälten.
+- Använd verktyget **Kräv** för att tilldela ett element som krävs för inmatning av data. När du väljer knappen **Kräv** på verktygsfältet kommer alla element som har anpassats för att krävas att visas i en skuggad behållare. Du kan sedan göra dem inte obligatoriska igen. Det här alternativet är bara tillgängligt i en framtida version när funktionerna [Sparade vyer](saved-views.md) och **Tilldela fält enligt önskemål med anpassning** är aktiverade.
 - Använd verktyget **Låsa** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer knappen **Låsa** på verktygsfältet kommer alla element som för närvarande icke är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
 - Använd knappen **Lägg till en app från Power Apps** under infoga i ett program som har skapats med hjälp av Microsoft Power Apps på sidan. För detaljerad information om hur du bäddar in en app från Power Apps på en sida finns i [Bädda in appar från Power Apps](embed-power-apps.md). Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad.  
 - Använd knappen **Lägg till en app** för att bädda in en app, antingen en skapad från Microsoft Power Apps eller en tredje part på sidan. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är aktiverad. 

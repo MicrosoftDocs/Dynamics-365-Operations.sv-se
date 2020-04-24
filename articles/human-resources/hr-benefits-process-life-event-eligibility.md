@@ -3,7 +3,7 @@ title: Bearbetning av berättigande för livshändelse
 description: I den här artikeln beskrivs hur du kör bearbetning av berättigande för livshändelse.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 899c49fd2946fbadf4264e9178a57fb28598c0de
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: de4c5b951f9d4b07f457ce392c310fb96ba34947
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010558"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229980"
 ---
 # <a name="process-life-event-eligibility"></a>Bearbetning av berättigande för livshändelse
-
-[!include [banner](includes/preview-feature.md)]
 
 I den här artikeln beskrivs hur du kör bearbetning av berättigande för livshändelse.
 
@@ -37,7 +35,7 @@ I den här artikeln beskrivs hur du kör bearbetning av berättigande för livsh
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Anmälningsperiod | Anmälningsperiod för bearbetning av berättigande för livshändelse. |
+   | **Anmälningsperiod** | Anmälningsperiod för bearbetning av berättigande för livshändelse. |
 
 3. Om du vill köra processen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
 

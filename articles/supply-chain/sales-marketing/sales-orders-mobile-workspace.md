@@ -2,14 +2,14 @@
 title: Mobil arbetsyta för försäljningsorder
 description: Det här avsnittet innehåller information om den mobila arbetsytan för Försäljningsorder. Arbetsytan hjälper dig att hålla dig uppdaterad om dina försäljningsorder var som helst och när som helst.
 author: Mirzaab
-manager: AnnBe
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 267134
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 2e57a410c0c7a73d8ab9e14254fe107d5e5c10db
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7e586496212c0cf5c964b434e442725fcdb25fca
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251637"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3212950"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Mobil arbetsyta för försäljningsorder
 
@@ -120,7 +120,7 @@ Om Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller se
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
-Hämta och installera mobilappen Finance and Operations:
+Hämta och installera mobilappen Finance and Operations.
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

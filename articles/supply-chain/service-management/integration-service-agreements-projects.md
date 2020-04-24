@@ -2,7 +2,7 @@
 title: Integration för serviceavtal och projekt
 description: När du arbetar med serviceavtal och serviceavtalsrader, använder du data som konfigurerats i följande områden av avsnittet Projekthantering och redovisning.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjParameters
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd2fb1f54a3decb77f019db6b2016cebdcaddb9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9a19a138cceb7db08216e1151eb92442691bc58d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571059"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3202340"
 ---
 # <a name="integration-for-service-agreements-and-projects"></a>Integration för serviceavtal och projekt 
 

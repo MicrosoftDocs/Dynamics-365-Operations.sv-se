@@ -3,7 +3,7 @@ title: Dokumentera tillstånd och livscykel
 description: I det här avsnittet beskrivs olika dokumentlägen för sidelement i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4f1c462f734b2d58843308f0f877fe18a4d9af7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002991"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261523"
 ---
 # <a name="document-states-and-lifecycle"></a>Dokumentera tillstånd och livscykel
 
@@ -37,13 +37,13 @@ I avsnittet [sidelement](page-elements-overview.md) visas olika dokumenttyper i 
 
 I följande tabell visas de möjliga dokumenttillstånden för sidelement i handel.
 
-| Dokumenttillstånd | Beskrivning |
-|---|---|
-| Utcheckad | När ett CMS-objekt är utcheckat till dig kan det inte redigeras av andra autentiserade systemanvändare. Alla ändringar du gör i objektet är bara synliga för dig. |
-| Incheckad | När ett CMS-objekt checkas in, visas alla ändringar för andra autentiserade systemanvändare och dessa användare kan sedan checka ut objektet och redigera det. Varje incheckning skapar en dokumentversionspost i historiken för artikeln. |
-| Publicerad | När ett CMS-objekt publiceras flyttas det till den aktiva platsen och kan upptäckas på Internet av icke-autentiserade externa användare. Artiklar kan bara publiceras om de har checkats in. |
-| Sparade | Ändringar som har gjorts i ett utcheckat CMS-objekt kan sparas till CMS-filen innan objektet checkas in eller publiceras. De sparade ändringarna syns inte för andra autentiserade systemanvändare förrän objektet checkas in. De visas inte för externa användare förrän objektet har publicerats. |
-| Ignorerade utcheckning | När ett utcheckat CMS-objekt ignoreras tas alla sparade ändringar bort och objektet återgår till den senaste incheckade versionen. |
+| Dokumenttillstånd      | Åtgärd för webbplatsskaparen        | beskrivning                                                  |
+| ------------------- | -------------------------- | ------------------------------------------------------------ |
+| Utcheckad         | Välj **Redigera**.           | Det tillämpliga dokumentet är utcheckat till dig. När ett dokument är i det här tillståndet kan det inte ändras av andra autentiserade systemanvändare, och alla ändringar som du gör i dokumentet visas bara för dig. |
+| Sparades               | Välj **Spara**.           | Ändringar som har gjorts i ett utcheckat dokument sparas i databasen men dokumentet har inte checkats in eller publicerats. De sparade ändringarna syns inte för andra autentiserade systemanvändare förrän författaren väljer **Avsluta redigering**. De visas inte för externa användare förrän objektet har publicerats. |
+| Ignorerade utcheckning | Välj **ignorera redigeringar**.  | Alla ändringar av det utcheckade dokumentet ignoreras och objektet återgår till den senast incheckade versionen. |
+| Incheckad          | Välj **Slutför redigering**. | Det redigerade dokumentet är incheckat. Alla ändringar är synliga för andra autentiserade systemanvändare och dessa användare kan sedan redigera dokumentet. Varje incheckning skapar en dokumentversionspost i historiken för artikeln. |
+| Publicerat           | Markera **Publicera**.        | Dokumentet publiceras och ändringarna överförs till den aktiva webbplatsen och blir synliga för externa användare. Artiklar kan bara publiceras om de har checkats in först genom att du väljer **Slutför redigering**. |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

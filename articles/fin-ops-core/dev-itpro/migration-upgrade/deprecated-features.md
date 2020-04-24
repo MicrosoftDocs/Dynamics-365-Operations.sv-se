@@ -3,7 +3,7 @@ title: Borttagna eller utfasade funktioner i tidigare versioner
 description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124576"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225138"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -263,11 +263,11 @@ Inbäddade KPI:er (Key Performance Indicators) kan utformas i Visual Studio av e
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Det är möjligt för definitioner av registermetadata att ha fältgrupper som innehåller ogiltiga fältreferenser. Det här problemet är kategoriserat som en *kompileringsvarning* i stället för ett *fel*, vilket innebär att skapande och distribution av paket som kan distribueras kan fortsätta utan att åtgärda problemet. Om distribuerad kan det orsaka körningsfel i Ekonomisk rapportering och SQL Server Reporting Services (SSRS). Åtgärda det här problemet:<br><br>1. Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.<br><br>2. Kompilera om.<br><br>3. Kontrollera att eventuella varningar eller fel åtgärdas. |
-| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i framtiden.  |
+| **Orsak till inaktuell/borttagning** | Det är möjligt för definitioner av registermetadata att ha fältgrupper som innehåller ogiltiga fältreferenser. Om distribuerad kan det orsaka körningsfel i Ekonomisk rapportering och SQL Server Reporting Services (SSRS). Det här problemet är kategoriserat som en *kompileringsvarning* i stället för ett *fel*, vilket innebär att skapande och distribution av paket som kan distribueras kan fortsätta utan att åtgärda problemet. Åtgärda det här problemet:<br><br>1. Ta bort den ogiltiga fältreferensen från tabellens fältgruppdefinition.<br><br>2. Kompilera om.<br><br>3. Kontrollera att eventuella varningar eller fel åtgärdas. |
+| **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i framtiden. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
-| **Distribueringsalternativ**              | Alla. |
-| **Status**                         | Inaktuell - varningen blir ett kompileringstidsfel i framtiden. Vi riktar för närvarande in oss på plattformsuppdatering 30. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Inaktuell - varningen blir ett kompileringstidsfel i framtiden. Denna ändring är avsedd för plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
 
 #### <a name="complete-list"></a>Fullständig lista
 Du hittar en fullständig lista över API:er som är inaktuella i [Avskrivning av metoder och metadataelement](deprecation-deletion-apis.md).

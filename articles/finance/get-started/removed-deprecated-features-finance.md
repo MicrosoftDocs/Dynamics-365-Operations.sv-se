@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127987"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175118"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Borttagna och utfasade funktioner i Dynamics 365 Finance
 
@@ -47,6 +47,18 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 | **Produktområden som påverkas**         | Ansökning |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Föråldrad: den 1 juli 2021 planerar vi att inte längre stödja SSRS-rapporter: **utgående momsregister, ingående momsregister, sammanfattande EU-momsregister – funktionsreferens PL-00014**. Excel-format exempel för standard granskningsfil med momsdeklaration (JPK_VDEK) kommer att införas i stället. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.11 utgåva
+
+### <a name="norwegian-standard-main-accounts"></a>Norska standardhuvudkonton
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Omformat  |
+| **Ersatt av en annan funktion?**   | Ja (ersatt med programspecifika parametrar för ER-format) |
+| **Produktområden som påverkas**         | Ansökning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Föråldrad: den 1 april 2021 planerar vi inte längre stöd för funktioner som är relaterade till standardhuvudkonton: referensfält, relaterad tabell, dataentitet. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Borttagna eller föråldrade funktioner i Finance 10.0.7 utgåva
 

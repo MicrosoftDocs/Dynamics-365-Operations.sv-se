@@ -3,7 +3,7 @@ title: Regeluppdateringar
 description: Det här avsnittet innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f35ab4b3ad49edfd0b68f906f44b8a2b04787f1a
-ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
+ms.openlocfilehash: 6e403e3d18aec616d0c569b16ba77eaefdf4b0ea
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3161815"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262636"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -51,8 +51,11 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      Brasilien         |   2020 januari       | 10.0.8      |   Kompletterande uppgifter för ICMS-ST    |
 |      Brasilien         |   Mars 2020 - Januari 2020       | 10.0.9, 10.0.8HF      |   SPED-skattelayout 014 |
 |      Brasilien         |   Mars 2020 - Januari 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – förordning SEF nr. 343DR   |
+|      Brasilien         |   Maj 2020 - mars 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
+|      Brasilien         |   Maj 2020 - april 2020      | 10.0.11, 10.0.10HF, 10.0.9HF, 10.0.8HF      |   Teknisk anmärkning NT2019.001 v1.40   |
 |      Frankrike         |   2020 april       | 10.0.10      |   Deklaration av juridiska avgifter till skattemyndigheter för egen företagare (DAS2)    |
 |      Frankrike         |   2020 mars       | 10.0.9      |   Fransk lokalisering: ISO 20022-format för internationell betalning och statskassaöverföring    |
+|      Ungern         |   Maj 2020 - mars 2020       | 10.0.11, 10.0.9HF, 10.0.8HF     |   Online-faktureringssystem v.2.0 på Finance and Operations    |
 |      Indien         |   2020 mars      | 10.0.9      |   Ny GSTR (ANX-1 och ANX-2) Återställ offline-verktyg    |
 |      Italien         |   2020 januari      | 10.0.8      |   Ändringar i momshantering av D.L. 119 av 23 okt 2018: Årlig momsredovisningsrapport    |
 |      Italien         |   2020 mars      | 10.0.9, 10.0.8HF      |   Retail - Hantera kundinformation i kassan |
@@ -68,6 +71,9 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      Polen          |   Mars 2020 - Januari 2020     | 10.0.9, 10.0.8HF     |   Retail - Skriva ut kundinformation i kvittoskrivare |
 |      Polen          |   Mars 2020 - Januari 2020     | 10.0.9, 10.0.8     |   SAF fakturor (JPK_FA) v.3 från 2Dec2019 |
 |      Polen          |   April 2020 - januari 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK som ersätter JPK_VAT (SAF-moms) |
+|      Polen          |   2020 maj     | 10.0.11     |   Dela AP/AR realiserade växelskillnadsbelopp till växelskillnad mellan fakturans nettovärde och momsbeloppet  |
+|      Polen          |   2020 maj     | 10.0.11     |   SAF redovisningsböcker – förbättringar av filtrering av bokföringsskikt |
+|      Polen          |   2020 maj     | 10.0.11     |   JPK_VDEK tilläggspaket I |
 |      Ryssland          |   2020 mars     | 10.0.9     |   Formatet för fastighetsskattdeklarationen för 2019 års rapportering |
 |      Ryssland          |   2020 mars     | 10.0.9     |   Formatuppdateringar för fastighetsskattdeklaration |
 |      Singapore           |   2020 januari     | 10.0.8      |   GST-returrapport |

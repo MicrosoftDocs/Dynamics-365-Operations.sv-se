@@ -3,7 +3,7 @@ title: Arbetsyta för leverantörsbetalningar
 description: Det här avsnittet innehåller information om arbetsytan för leverantörsbetalningar. Arbetsyta för leverantörsbetalningar visar information kopplad till behandling av leverantörsbetalningar.
 author: abruer
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 89ba0d68bd52413328dd583e87b09b01fd523d6f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180044"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225023"
 ---
 # <a name="vendor-payments-workspace"></a>Arbetsyta för leverantörsbetalningar
 
@@ -36,7 +36,7 @@ Följande inställningar måste slutföras för att data ska visas i **Leverant�
 1. Gå till **systemadministrations > inställningar > systemparametrar** för att ställa in **Systemvaluta** och **Systemets valutakurs**.
 2. Gå till **redovisning > Inställningar > redovisning** om du vill ange **redovisningsvaluta** och **valutakurstyp**. 
 2. Definiera valutakurser mellan transaktionsvalutor och redovisningsvaluta, redovisningsvaluta och systemvaluta. Det gör du genom att gå till **redovisning > valutor > valutakurser**.
-3. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **VendPaymentBIMeasure**. 
+3. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **VendPaymentBIMeasureV2**. 
 
 ## <a name="my-work-view"></a>Vyn Mitt arbete
 

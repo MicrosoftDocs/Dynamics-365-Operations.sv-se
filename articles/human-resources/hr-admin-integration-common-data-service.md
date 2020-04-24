@@ -1,9 +1,9 @@
 ---
 title: Konfigurera Common Data Service-integrering
-description: Du kan aktivera eller inaktivera integration mellan Common Data Service och en instans av Microsoft Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort uppföljningsdata och synkronisera om en enhet för att hjälpa till att felsöka data från de två miljöerna.
+description: Du kan aktivera eller inaktivera integration mellan Common Data Service och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort uppföljningsdata och synkronisera om en enhet för att hjälpa till att felsöka data från de två miljöerna.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,31 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 042daf3fdf7a906086af726472da050467d217e3
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 04280aa0908ed6dab86ef87b6c1843e4b4348e08
+ms.sourcegitcommit: c9657b44adb9c1a77c7c2f6ab63a58cc848974ea
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010572"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198432"
 ---
 # <a name="configure-common-data-service-integration"></a>Konfigurera Common Data Service-integrering
 
-Du kan aktivera eller inaktivera integration mellan Common Data Service och en instans av Microsoft Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort uppföljningsdata och synkronisera om en enhet för att hjälpa till att felsöka data från de två miljöerna.
+Du kan aktivera eller inaktivera integration mellan Common Data Service och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort uppföljningsdata och synkronisera om en enhet för att hjälpa till att felsöka data från de två miljöerna.
 
 När du stänger av integrationen kan användarna göra ändringar i personal eller Common Data Service, men dessa ändringar synkroniseras inte mellan de två miljöerna.
 
-Som standard är integration mellan personal och Common Data Service antingen av eller på, beroende på förekomst av demonstrationsdata i miljön:
-
-- **Av** för nya miljöer som inte innehåller demodata
-- **På** för nya miljöer som innehåller demodata
-
-Nya miljöer med demodata börjar synkronisera data när de etableras.
+Som standard inaktiveras dataintegrering mellan personal och Common Data Service.
 
 Du kanske vill inaktivera integration i följande situationer:
 
 - Du fyller i data via datahanteringsramverket och måste importera data flera gånger för att de ska få rätt status.
 
-- Det finns problem med data i personal eller Common Data Service. Om du inaktiverar integration kan du ta bort en post i en miljö utan att ta bort den i den andra. När du aktiverar integreringen igen kommer posten i miljön där den inte togs bort att synkroniseras på nytt till den miljö där den togs bort. Synkroniseringen påbörjas nästa gång batchjobbet **Common Data Service-integrering missade begärd synkronisering** körs.
+- Det finns problem med data i personal eller Common Data Service. Om du inaktiverar integration kan du ta bort en post i en miljö utan att ta bort den i den andra. När du aktiverar integreringen igen kommer posten i miljön där den inte togs bort att synkroniseras till den miljö där den togs bort. Synkroniseringen påbörjas nästa gång batchjobbet **Common Data Service-integrering missade begärd synkronisering** körs.
 
 > [!WARNING]
 > När du stänger av dataintegreringen måste du se till att du inte redigerar samma post i båda miljöerna. När du slår på integrationen igen synkroniseras posten som du senast redigerade. Om du inte gör samma ändringar i den här posten i båda miljöerna kan det därför hända att data går förlorade.
@@ -103,9 +98,17 @@ Information om hur du kör en fullständig synkronisering på entiteten efter at
 
 ## <a name="sync-an-entity-between-human-resources-and-common-data-service"></a>Synkronisera en enhet mellan personal och Common Data Service
 
-Använd den här proceduren om ändringar från Common Data Service tar för lång tid att visa ändringar i personal, eller om du måste uppdatera spårningstabellen när du har avmarkerat spårningen.
+Gör på följande sätt när:
 
-- Om du vill köra en fullständig synkronisering på en enhet mellan personal och Common Data Service väljer du enheten i **CDS-enhetsnamn-** och väljer sedan **synkronisera nu**.
+- Ändringar från Common Data Service tar för lång tid att visas i personal.
+
+- Du måste uppdatera spårningstabellen när du har avmarkerat spårningen.
+
+Så här kör du en fullständig synkronisering på en enhet mellan personal och Common Data Service:
+
+1. Välj entitet i fältet **CDS entitetsnamn**.
+
+2. Välj **Synkronisera nu**.
 
 [![Köra en fullständig synkronisering](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
