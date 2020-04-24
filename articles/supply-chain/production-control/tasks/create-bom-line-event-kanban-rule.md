@@ -2,7 +2,7 @@
 title: Skapa en kanban-regel för strukturlistehändelse
 description: Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-regel för händelse för att säkerställa leverans till produktionsstrukturlisterader i ett blandat resurssnål och klassisk produktionsmiljö.
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,76 +10,76 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fefb33d568153670dbcb92db478e33db806809fc
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: 698b7af3bc8e2146aaf86fb5e04dd123ea6d5153
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3147113"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210926"
 ---
-# <a name="create-a-bom-line-event-kanban-rule"></a><span data-ttu-id="c591d-103">Skapa en kanban-regel för strukturlistehändelse</span><span class="sxs-lookup"><span data-stu-id="c591d-103">Create a BOM line event kanban rule</span></span>
+# <a name="create-a-bom-line-event-kanban-rule"></a><span data-ttu-id="fd1d5-103">Skapa en kanban-regel för strukturlistehändelse</span><span class="sxs-lookup"><span data-stu-id="fd1d5-103">Create a BOM line event kanban rule</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c591d-104">Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-regel för händelse för att säkerställa leverans till produktionsstrukturlisterader i ett blandat resurssnål och klassisk produktionsmiljö.</span><span class="sxs-lookup"><span data-stu-id="c591d-104">This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment.</span></span> <span data-ttu-id="c591d-105">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="c591d-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="c591d-106">Den här uppgiften är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.</span><span class="sxs-lookup"><span data-stu-id="c591d-106">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product.</span></span>
+<span data-ttu-id="fd1d5-104">Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-regel för händelse för att säkerställa leverans till produktionsstrukturlisterader i ett blandat resurssnål och klassisk produktionsmiljö.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-104">This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment.</span></span> <span data-ttu-id="fd1d5-105">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="fd1d5-106">Den här uppgiften är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-106">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product.</span></span>
 
 
-## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="c591d-107">Skapa en ny kanban-regel</span><span class="sxs-lookup"><span data-stu-id="c591d-107">Create a new kanban rule</span></span>
-1. <span data-ttu-id="c591d-108">Gå till Produktionskontroll > Periodiska uppgifter > Kanban-kvantitetsberäkning > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="c591d-108">Go to Production control > Periodic tasks > Kanban quantity calculation > Kanban rules.</span></span>
-2. <span data-ttu-id="c591d-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="c591d-109">Click New.</span></span>
-3. <span data-ttu-id="c591d-110">Välj "Uttag" i fältet Typ.</span><span class="sxs-lookup"><span data-stu-id="c591d-110">In the Type field, select 'Withdrawal'.</span></span>
-    * <span data-ttu-id="c591d-111">Uttagstypen används för att skapa överföringskanban.</span><span class="sxs-lookup"><span data-stu-id="c591d-111">The Withdrawal type is used to create transfer kanbans.</span></span>  
-4. <span data-ttu-id="c591d-112">Välj Händelse i fältet för återanskaffningsstrategi.</span><span class="sxs-lookup"><span data-stu-id="c591d-112">In the Replenishment strategy field, select 'Event'.</span></span>
-    * <span data-ttu-id="c591d-113">Händelsestrategin markeras om du vill skapa överföringen av kanban baserat på en händelse.</span><span class="sxs-lookup"><span data-stu-id="c591d-113">The Event strategy is selected to create the transfer of kanbans based on an event.</span></span> <span data-ttu-id="c591d-114">Senare i uppgiftsgudien, ska vi utlösa vi den genom att beräkna en tillverkningsorder.</span><span class="sxs-lookup"><span data-stu-id="c591d-114">Later in the task guide, we will trigger it by estimating a production order.</span></span>  
-5. <span data-ttu-id="c591d-115">Ange eller välj ett värde i fältet Första planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="c591d-115">In the First plan activity field, enter or select a value.</span></span>
-    * <span data-ttu-id="c591d-116">Ange eller välj ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="c591d-116">Enter or select ReplenishSpeakerComponents.</span></span> <span data-ttu-id="c591d-117">Den här överföringsaktiviteten har mottagande lagerställe (utleverans) och plats 12, vilket innebär att material ska flyttas till plats 12 på lagerställe 12.</span><span class="sxs-lookup"><span data-stu-id="c591d-117">This transfer activity has receipt (output) warehouse and location 12, which means that material will be moved to location 12 in warehouse 12.</span></span>  
-6. <span data-ttu-id="c591d-118">Expandera avsnittet Detaljer.</span><span class="sxs-lookup"><span data-stu-id="c591d-118">Expand the Details section.</span></span>
-7. <span data-ttu-id="c591d-119">Ange eller välj M0001 värde i fältet Produkt.</span><span class="sxs-lookup"><span data-stu-id="c591d-119">In the Product field, enter or select M0001.</span></span>
-8. <span data-ttu-id="c591d-120">Expandera avsnittet Händelser.</span><span class="sxs-lookup"><span data-stu-id="c591d-120">Expand the Events section.</span></span>
-9. <span data-ttu-id="c591d-121">Välj Automatisk i fältet Strukturlistehändelse.</span><span class="sxs-lookup"><span data-stu-id="c591d-121">In the BOM line event field, select 'Automatic'.</span></span>
-    * <span data-ttu-id="c591d-122">Med fältet Strukturlisteradhändelse inställt på Automatisk kommer kanban att skapas för att uppfylla materialbehoven för tillverkningsorderns strukturlisterader.</span><span class="sxs-lookup"><span data-stu-id="c591d-122">With the BOM line event field set to Automatic, kanban will be created to fulfill material needs for production order BOM lines.</span></span>  
-10. <span data-ttu-id="c591d-123">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c591d-123">Close the page.</span></span>
+## <a name="create-a-new-kanban-rule"></a><span data-ttu-id="fd1d5-107">Skapa en ny kanban-regel</span><span class="sxs-lookup"><span data-stu-id="fd1d5-107">Create a new kanban rule</span></span>
+1. <span data-ttu-id="fd1d5-108">Gå till Produktionskontroll > Periodiska uppgifter > Kanban-kvantitetsberäkning > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-108">Go to Production control > Periodic tasks > Kanban quantity calculation > Kanban rules.</span></span>
+2. <span data-ttu-id="fd1d5-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-109">Click New.</span></span>
+3. <span data-ttu-id="fd1d5-110">Välj "Uttag" i fältet Typ.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-110">In the Type field, select 'Withdrawal'.</span></span>
+    * <span data-ttu-id="fd1d5-111">Uttagstypen används för att skapa överföringskanban.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-111">The Withdrawal type is used to create transfer kanbans.</span></span>  
+4. <span data-ttu-id="fd1d5-112">Välj Händelse i fältet för återanskaffningsstrategi.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-112">In the Replenishment strategy field, select 'Event'.</span></span>
+    * <span data-ttu-id="fd1d5-113">Händelsestrategin markeras om du vill skapa överföringen av kanban baserat på en händelse.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-113">The Event strategy is selected to create the transfer of kanbans based on an event.</span></span> <span data-ttu-id="fd1d5-114">Senare i uppgiftsgudien, ska vi utlösa vi den genom att beräkna en tillverkningsorder.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-114">Later in the task guide, we will trigger it by estimating a production order.</span></span>  
+5. <span data-ttu-id="fd1d5-115">Ange eller välj ett värde i fältet Första planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-115">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="fd1d5-116">Ange eller välj ReplenishSpeakerComponents.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-116">Enter or select ReplenishSpeakerComponents.</span></span> <span data-ttu-id="fd1d5-117">Den här överföringsaktiviteten har mottagande lagerställe (utleverans) och plats 12, vilket innebär att material ska flyttas till plats 12 på lagerställe 12.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-117">This transfer activity has receipt (output) warehouse and location 12, which means that material will be moved to location 12 in warehouse 12.</span></span>  
+6. <span data-ttu-id="fd1d5-118">Expandera avsnittet Detaljer.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-118">Expand the Details section.</span></span>
+7. <span data-ttu-id="fd1d5-119">Ange eller välj M0001 värde i fältet Produkt.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-119">In the Product field, enter or select M0001.</span></span>
+8. <span data-ttu-id="fd1d5-120">Expandera avsnittet Händelser.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-120">Expand the Events section.</span></span>
+9. <span data-ttu-id="fd1d5-121">Välj Automatisk i fältet Strukturlistehändelse.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-121">In the BOM line event field, select 'Automatic'.</span></span>
+    * <span data-ttu-id="fd1d5-122">Med fältet Strukturlisteradhändelse inställt på Automatisk kommer kanban att skapas för att uppfylla materialbehoven för tillverkningsorderns strukturlisterader.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-122">With the BOM line event field set to Automatic, kanban will be created to fulfill material needs for production order BOM lines.</span></span>  
+10. <span data-ttu-id="fd1d5-123">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-123">Close the page.</span></span>
 
-## <a name="create-and-modify-a-new-production-order"></a><span data-ttu-id="c591d-124">Skapa och ändra en ny tillverkningsorder</span><span class="sxs-lookup"><span data-stu-id="c591d-124">Create and modify a new production order</span></span>
-1. <span data-ttu-id="c591d-125">Gå till Produktionskontroll > Produktionsorder > Alla produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="c591d-125">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="c591d-126">Klicka på Ny produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="c591d-126">Click New production order.</span></span>
-3. <span data-ttu-id="c591d-127">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="c591d-127">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="c591d-128">Ange eller välj "'L0001".</span><span class="sxs-lookup"><span data-stu-id="c591d-128">Enter or select 'L0001'.</span></span> <span data-ttu-id="c591d-129">Vi använder artikel L0001, eftersom artikel M0001 ingår i strukturlistan för artikel L0001.</span><span class="sxs-lookup"><span data-stu-id="c591d-129">We use item L0001 because item M0001 is included in the BOM for item L0001.</span></span>  
-4. <span data-ttu-id="c591d-130">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="c591d-130">Click Create.</span></span>
-5. <span data-ttu-id="c591d-131">Klicka på länken på raden för L0001</span><span class="sxs-lookup"><span data-stu-id="c591d-131">In the list, click the link in the row for L0001</span></span>
-6. <span data-ttu-id="c591d-132">Klicka på Strukturlista.</span><span class="sxs-lookup"><span data-stu-id="c591d-132">Click BOM.</span></span>
-7. <span data-ttu-id="c591d-133">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c591d-133">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="c591d-134">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="c591d-134">Click Edit.</span></span>
-9. <span data-ttu-id="c591d-135">Välj "Peggad leverans" i fältet Radtyp.</span><span class="sxs-lookup"><span data-stu-id="c591d-135">In the Line type field, select 'Pegged supply'.</span></span>
-    * <span data-ttu-id="c591d-136">Peggad leverans väljs för att utlösa leveransskapelse av en kanban.</span><span class="sxs-lookup"><span data-stu-id="c591d-136">Pegged supply is selected to trigger the supply creation of a kanban.</span></span>  
-10. <span data-ttu-id="c591d-137">Välj Nej i fältet Resursförbrukning.</span><span class="sxs-lookup"><span data-stu-id="c591d-137">Select No in the Resource consumption field.</span></span>
-    * <span data-ttu-id="c591d-138">Om du avmarkerar kryssrutan för Resursförbrukning kan du ändra lagerstället.</span><span class="sxs-lookup"><span data-stu-id="c591d-138">Clearing the check box of Resource consumption lets us change the warehouse.</span></span>  
-11. <span data-ttu-id="c591d-139">Visa avsnittet Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="c591d-139">Expand the Inventory dimensions section.</span></span>
-12. <span data-ttu-id="c591d-140">Skriv "12" i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="c591d-140">In the Warehouse field, type '12'.</span></span>
-    * <span data-ttu-id="c591d-141">Lagret har är inställd på 12 eftersom det är utleveranslagerstället för uttagsaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="c591d-141">Warehouse is set to 12 because this is the output warehouse for the withdrawal activity.</span></span>  
-13. <span data-ttu-id="c591d-142">Skriv "12" i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="c591d-142">In the Location field, type '12'.</span></span>
-    * <span data-ttu-id="c591d-143">Åöatsen är inställd på 12 eftersom det är utleveransplatsen för uttagsaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="c591d-143">Location is set to 12 because this is the output location of the withdrawal activity.</span></span>  
-14. <span data-ttu-id="c591d-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c591d-144">Close the page.</span></span>
-15. <span data-ttu-id="c591d-145">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c591d-145">Close the page.</span></span>
+## <a name="create-and-modify-a-new-production-order"></a><span data-ttu-id="fd1d5-124">Skapa och ändra en ny tillverkningsorder</span><span class="sxs-lookup"><span data-stu-id="fd1d5-124">Create and modify a new production order</span></span>
+1. <span data-ttu-id="fd1d5-125">Gå till Produktionskontroll > Produktionsorder > Alla produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-125">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="fd1d5-126">Klicka på Ny produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-126">Click New production order.</span></span>
+3. <span data-ttu-id="fd1d5-127">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-127">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="fd1d5-128">Ange eller välj "'L0001".</span><span class="sxs-lookup"><span data-stu-id="fd1d5-128">Enter or select 'L0001'.</span></span> <span data-ttu-id="fd1d5-129">Vi använder artikel L0001, eftersom artikel M0001 ingår i strukturlistan för artikel L0001.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-129">We use item L0001 because item M0001 is included in the BOM for item L0001.</span></span>  
+4. <span data-ttu-id="fd1d5-130">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-130">Click Create.</span></span>
+5. <span data-ttu-id="fd1d5-131">Klicka på länken på raden för L0001</span><span class="sxs-lookup"><span data-stu-id="fd1d5-131">In the list, click the link in the row for L0001</span></span>
+6. <span data-ttu-id="fd1d5-132">Klicka på Strukturlista.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-132">Click BOM.</span></span>
+7. <span data-ttu-id="fd1d5-133">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-133">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="fd1d5-134">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-134">Click Edit.</span></span>
+9. <span data-ttu-id="fd1d5-135">Välj "Peggad leverans" i fältet Radtyp.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-135">In the Line type field, select 'Pegged supply'.</span></span>
+    * <span data-ttu-id="fd1d5-136">Peggad leverans väljs för att utlösa leveransskapelse av en kanban.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-136">Pegged supply is selected to trigger the supply creation of a kanban.</span></span>  
+10. <span data-ttu-id="fd1d5-137">Välj Nej i fältet Resursförbrukning.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-137">Select No in the Resource consumption field.</span></span>
+    * <span data-ttu-id="fd1d5-138">Om du avmarkerar kryssrutan för Resursförbrukning kan du ändra lagerstället.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-138">Clearing the check box of Resource consumption lets us change the warehouse.</span></span>  
+11. <span data-ttu-id="fd1d5-139">Visa avsnittet Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-139">Expand the Inventory dimensions section.</span></span>
+12. <span data-ttu-id="fd1d5-140">Skriv "12" i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-140">In the Warehouse field, type '12'.</span></span>
+    * <span data-ttu-id="fd1d5-141">Lagret har är inställd på 12 eftersom det är utleveranslagerstället för uttagsaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-141">Warehouse is set to 12 because this is the output warehouse for the withdrawal activity.</span></span>  
+13. <span data-ttu-id="fd1d5-142">Skriv "12" i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-142">In the Location field, type '12'.</span></span>
+    * <span data-ttu-id="fd1d5-143">Åöatsen är inställd på 12 eftersom det är utleveransplatsen för uttagsaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-143">Location is set to 12 because this is the output location of the withdrawal activity.</span></span>  
+14. <span data-ttu-id="fd1d5-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-144">Close the page.</span></span>
+15. <span data-ttu-id="fd1d5-145">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-145">Close the page.</span></span>
 
-## <a name="estimate-the-production-order-and-view-the-kanban-created"></a><span data-ttu-id="c591d-146">Beräkna tillverkningsordern och visa den skapade kanban</span><span class="sxs-lookup"><span data-stu-id="c591d-146">Estimate the production order and view the kanban created</span></span>
-1. <span data-ttu-id="c591d-147">Klicka på Uppskattning.</span><span class="sxs-lookup"><span data-stu-id="c591d-147">Click Estimate.</span></span>
-    * <span data-ttu-id="c591d-148">Beräkning av tillverkningsordern kommer att utlösa skapandet av associerade kanban för att leverera artikel M0001.</span><span class="sxs-lookup"><span data-stu-id="c591d-148">Estimating the production order will trigger the creation of the associated kanban to supply item M0001.</span></span>  
-2. <span data-ttu-id="c591d-149">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="c591d-149">Click OK.</span></span>
-3. <span data-ttu-id="c591d-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c591d-150">Close the page.</span></span>
-4. <span data-ttu-id="c591d-151">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="c591d-151">Close the page.</span></span>
-5. <span data-ttu-id="c591d-152">Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="c591d-152">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
-6. <span data-ttu-id="c591d-153">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c591d-153">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="c591d-154">Välj den kanban-regel för händelse som skapades för artikel M0001.</span><span class="sxs-lookup"><span data-stu-id="c591d-154">Select the event kanban rule created for item M0001.</span></span>  
-7. <span data-ttu-id="c591d-155">Expandera avsnittet Kanbans.</span><span class="sxs-lookup"><span data-stu-id="c591d-155">Expand the Kanbans section.</span></span>
-8. <span data-ttu-id="c591d-156">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="c591d-156">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="c591d-157">Observera de kanban som skapats för att leverera M0001 för den uppskattade tillverkningsordern.</span><span class="sxs-lookup"><span data-stu-id="c591d-157">Notice the kanban created to supply M0001 for the estimated production order.</span></span>  
-    * <span data-ttu-id="c591d-158">Detta är det sista steget!</span><span class="sxs-lookup"><span data-stu-id="c591d-158">This is the last step!</span></span>  
+## <a name="estimate-the-production-order-and-view-the-kanban-created"></a><span data-ttu-id="fd1d5-146">Beräkna tillverkningsordern och visa den skapade kanban</span><span class="sxs-lookup"><span data-stu-id="fd1d5-146">Estimate the production order and view the kanban created</span></span>
+1. <span data-ttu-id="fd1d5-147">Klicka på Uppskattning.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-147">Click Estimate.</span></span>
+    * <span data-ttu-id="fd1d5-148">Beräkning av tillverkningsordern kommer att utlösa skapandet av associerade kanban för att leverera artikel M0001.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-148">Estimating the production order will trigger the creation of the associated kanban to supply item M0001.</span></span>  
+2. <span data-ttu-id="fd1d5-149">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-149">Click OK.</span></span>
+3. <span data-ttu-id="fd1d5-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-150">Close the page.</span></span>
+4. <span data-ttu-id="fd1d5-151">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-151">Close the page.</span></span>
+5. <span data-ttu-id="fd1d5-152">Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-152">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+6. <span data-ttu-id="fd1d5-153">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-153">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="fd1d5-154">Välj den kanban-regel för händelse som skapades för artikel M0001.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-154">Select the event kanban rule created for item M0001.</span></span>  
+7. <span data-ttu-id="fd1d5-155">Expandera avsnittet Kanbans.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-155">Expand the Kanbans section.</span></span>
+8. <span data-ttu-id="fd1d5-156">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-156">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="fd1d5-157">Observera de kanban som skapats för att leverera M0001 för den uppskattade tillverkningsordern.</span><span class="sxs-lookup"><span data-stu-id="fd1d5-157">Notice the kanban created to supply M0001 for the estimated production order.</span></span>  
+    * <span data-ttu-id="fd1d5-158">Detta är det sista steget!</span><span class="sxs-lookup"><span data-stu-id="fd1d5-158">This is the last step!</span></span>  
 

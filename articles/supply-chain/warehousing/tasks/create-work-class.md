@@ -2,40 +2,40 @@
 title: Skapa en arbetsklass
 description: I den här proceduren visas hur du ställer in en arbetsklass.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6afbd9f54ef9046da10d0abc24ed545b5735a069
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: a965906bfbf6411986594ddd5c67beb426268367
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3146110"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3217113"
 ---
-# <a name="create-a-work-class"></a><span data-ttu-id="9c99d-103">Skapa en arbetsklass</span><span class="sxs-lookup"><span data-stu-id="9c99d-103">Create a work class</span></span>
+# <a name="create-a-work-class"></a><span data-ttu-id="17791-103">Skapa en arbetsklass</span><span class="sxs-lookup"><span data-stu-id="17791-103">Create a work class</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9c99d-104">I den här proceduren visas hur du ställer in en arbetsklass.</span><span class="sxs-lookup"><span data-stu-id="9c99d-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="9c99d-105">Arbetsklasser används för att styra och/eller begränsa den typ av arbetsorderrader som en lagerarbetare kan bearbeta på en mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="9c99d-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="9c99d-106">De rader som en anställd kan bearbeta bestäms från de arbetsklasser på menyobjekten för mobil enhet som lagerarbetaren har tillgång till och den arbetsklass som anges i på arbetsraderna.</span><span class="sxs-lookup"><span data-stu-id="9c99d-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="9c99d-107">Arbetsklasser kan också användas för att validera läggplatsen för en arbetsorderrad.</span><span class="sxs-lookup"><span data-stu-id="9c99d-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="9c99d-108">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="9c99d-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="9c99d-109">Den här proceduren är avsedd för lagerchefen.</span><span class="sxs-lookup"><span data-stu-id="9c99d-109">This procedure is intended for the warehouse manager.</span></span>
+<span data-ttu-id="17791-104">I den här proceduren visas hur du ställer in en arbetsklass.</span><span class="sxs-lookup"><span data-stu-id="17791-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="17791-105">Arbetsklasser används för att styra och/eller begränsa den typ av arbetsorderrader som en lagerarbetare kan bearbeta på en mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="17791-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="17791-106">De rader som en anställd kan bearbeta bestäms från de arbetsklasser på menyobjekten för mobil enhet som lagerarbetaren har tillgång till och den arbetsklass som anges i på arbetsraderna.</span><span class="sxs-lookup"><span data-stu-id="17791-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="17791-107">Arbetsklasser kan också användas för att validera läggplatsen för en arbetsorderrad.</span><span class="sxs-lookup"><span data-stu-id="17791-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="17791-108">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="17791-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="17791-109">Den här proceduren är avsedd för lagerchefen.</span><span class="sxs-lookup"><span data-stu-id="17791-109">This procedure is intended for the warehouse manager.</span></span>
 
-1. <span data-ttu-id="9c99d-110">Gå till Lagerstyrning > Inställningar > Arbete > Arbetsklasser.</span><span class="sxs-lookup"><span data-stu-id="9c99d-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
-2. <span data-ttu-id="9c99d-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="9c99d-111">Click New.</span></span>
-3. <span data-ttu-id="9c99d-112">Skriv ett värde i fältet Arbetsklass-ID.</span><span class="sxs-lookup"><span data-stu-id="9c99d-112">In the Work class ID field, type a value.</span></span>
-4. <span data-ttu-id="9c99d-113">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="9c99d-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="9c99d-114">Välj ett alternativ i fältet Arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="9c99d-114">In the Work order type field, select an option.</span></span>
-6. <span data-ttu-id="9c99d-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="9c99d-115">Click New.</span></span>
-7. <span data-ttu-id="9c99d-116">Skriv ett värde i fältet Platstyp.</span><span class="sxs-lookup"><span data-stu-id="9c99d-116">In the Location type field, type a value.</span></span>
-    * <span data-ttu-id="9c99d-117">Om du väljer en platstyp anges en begränsning på var artiklar kan placeras efter att de har plockats.</span><span class="sxs-lookup"><span data-stu-id="9c99d-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="9c99d-118">Denna inställning används när ett platsdirektiv försöker lösa platsen, eller om en lagerarbetare manuellt anger platsen för menyobjektet för mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="9c99d-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
-8. <span data-ttu-id="9c99d-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="9c99d-119">Close the page.</span></span>
+1. <span data-ttu-id="17791-110">Gå till Lagerstyrning > Inställningar > Arbete > Arbetsklasser.</span><span class="sxs-lookup"><span data-stu-id="17791-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
+2. <span data-ttu-id="17791-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="17791-111">Click New.</span></span>
+3. <span data-ttu-id="17791-112">Skriv ett värde i fältet Arbetsklass-ID.</span><span class="sxs-lookup"><span data-stu-id="17791-112">In the Work class ID field, type a value.</span></span>
+4. <span data-ttu-id="17791-113">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="17791-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="17791-114">Välj ett alternativ i fältet Arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="17791-114">In the Work order type field, select an option.</span></span>
+6. <span data-ttu-id="17791-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="17791-115">Click New.</span></span>
+7. <span data-ttu-id="17791-116">Skriv ett värde i fältet Platstyp.</span><span class="sxs-lookup"><span data-stu-id="17791-116">In the Location type field, type a value.</span></span>
+    * <span data-ttu-id="17791-117">Om du väljer en platstyp anges en begränsning på var artiklar kan placeras efter att de har plockats.</span><span class="sxs-lookup"><span data-stu-id="17791-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="17791-118">Denna inställning används när ett platsdirektiv försöker lösa platsen, eller om en lagerarbetare manuellt anger platsen för menyobjektet för mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="17791-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
+8. <span data-ttu-id="17791-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="17791-119">Close the page.</span></span>
 

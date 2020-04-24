@@ -3,7 +3,7 @@ title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,78 +16,97 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036275"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260470"
 ---
-# <a name="grid-capabilities"></a><span data-ttu-id="b88aa-104">Rutnätsmöjligheter</span><span class="sxs-lookup"><span data-stu-id="b88aa-104">Grid capabilities</span></span>
+# <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="b88aa-105">Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktioner som kan användas för att förbättra användarproduktiviteten, skapa mer intressanta vyer av dina data och få meningsfulla insikter om dina data.</span><span class="sxs-lookup"><span data-stu-id="b88aa-105">The new grid control provides a number of useful and powerful capabilities that can be used to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data.</span></span> <span data-ttu-id="b88aa-106">Den här artikeln kommer att omfatta följande funktioner:</span><span class="sxs-lookup"><span data-stu-id="b88aa-106">This article will cover the following capabilities:</span></span> 
+Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktioner som kan användas för att förbättra användarproduktiviteten, skapa mer intressanta vyer av dina data och få meningsfulla insikter om dina data. Den här artikeln kommer att omfatta följande funktioner: 
 
--  <span data-ttu-id="b88aa-107">Beräknar summor</span><span class="sxs-lookup"><span data-stu-id="b88aa-107">Calculating totals</span></span>
--  <span data-ttu-id="b88aa-108">Gruppera data</span><span class="sxs-lookup"><span data-stu-id="b88aa-108">Grouping data</span></span>
--  <span data-ttu-id="b88aa-109">Skriva före systemet</span><span class="sxs-lookup"><span data-stu-id="b88aa-109">Typing ahead of the system</span></span>
--  <span data-ttu-id="b88aa-110">Utvärdera matematikuttryck</span><span class="sxs-lookup"><span data-stu-id="b88aa-110">Evaluating math expressions</span></span> 
+-  Beräknar summor
+-  Gruppera data
+-  Skriva före systemet
+-  Utvärdera matematikuttryck 
 
-## <a name="calculating-totals"></a><span data-ttu-id="b88aa-111">Beräknar summor</span><span class="sxs-lookup"><span data-stu-id="b88aa-111">Calculating totals</span></span>
-<span data-ttu-id="b88aa-112">I Finance and Operations-appar har användare möjlighet att visa summor längst ned på numeriska kolumner i rutnät.</span><span class="sxs-lookup"><span data-stu-id="b88aa-112">In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids.</span></span> <span data-ttu-id="b88aa-113">Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="b88aa-113">These totals are shown in a footer section at the bottom of the grid.</span></span> 
+## <a name="calculating-totals"></a>Beräknar summor
+I Finance and Operations-appar har användare möjlighet att visa summor längst ned på numeriska kolumner i rutnät. Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet. 
 
-### <a name="showing-the-grid-footer"></a><span data-ttu-id="b88aa-114">Visa rutnätets sidfot</span><span class="sxs-lookup"><span data-stu-id="b88aa-114">Showing the grid footer</span></span>
-<span data-ttu-id="b88aa-115">Det finns ett sidfotsområde längst ned i alla tabell rutnät i Finance and Operations-program.</span><span class="sxs-lookup"><span data-stu-id="b88aa-115">There is a footer area at the bottom of every tabular grid in Finance and Operations apps.</span></span> <span data-ttu-id="b88aa-116">Sidfoten kan visa värdefull information som är relaterad till de data som visas i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="b88aa-116">The footer can show valuable information that is related to the data that appears in the grid.</span></span> <span data-ttu-id="b88aa-117">Här följer några exempel på denna information:</span><span class="sxs-lookup"><span data-stu-id="b88aa-117">Here are some examples of this information:</span></span>
+### <a name="showing-the-grid-footer"></a>Visa rutnätets sidfot
+Det finns ett sidfotsområde längst ned i alla tabell rutnät i Finance and Operations-program. Sidfoten kan visa värdefull information som är relaterad till de data som visas i rutnätet. Här följer några exempel på denna information:
 
-- <span data-ttu-id="b88aa-118">Antalet markerade rader i tabellen (om fler än en post har valts)</span><span class="sxs-lookup"><span data-stu-id="b88aa-118">The number of selected rows in the table (when more than one record is selected)</span></span>
-- <span data-ttu-id="b88aa-119">Total summor längst ned i konfigurerade numeriska kolumner</span><span class="sxs-lookup"><span data-stu-id="b88aa-119">Grand totals at the bottom of configured, numeric columns</span></span>
-- <span data-ttu-id="b88aa-120">Antalet rader i datauppsättning</span><span class="sxs-lookup"><span data-stu-id="b88aa-120">The number of rows in the dataset</span></span> 
+- Antalet markerade rader i tabellen (om fler än en post har valts)
+- Total summor längst ned i konfigurerade numeriska kolumner
+- Antalet rader i datauppsättning 
 
-<span data-ttu-id="b88aa-121">Den här sidfoten är som standard dold, men den är lätt att aktivera.</span><span class="sxs-lookup"><span data-stu-id="b88aa-121">This footer is hidden by default, but can be easily turned on.</span></span> <span data-ttu-id="b88aa-122">Om du vill visa sidfoten för ett rutnät högerklickar du på en kolumn rubrik i rutnätet och väljer alternativet **Visa sidfot**.</span><span class="sxs-lookup"><span data-stu-id="b88aa-122">To show the footer for a grid, right-click on a column header in the grid and select the **Show footer** option.</span></span> <span data-ttu-id="b88aa-123">När sidfoten har aktiverats för ett visst rutnät kommer denna inställning att kommas ihåg tills användaren väljer att dölja sidfoten, som du kan göra genom att högerklicka på en kolumnrubrik och välja **Dölj sidfot**.</span><span class="sxs-lookup"><span data-stu-id="b88aa-123">Once the footer has been turned on for a particular grid, that setting will be remembered until the user opts to hide the footer, which can be done by right-clicking on a column header and selecting **Hide footer**.</span></span>  <span data-ttu-id="b88aa-124">Observera placeringen av åtgärden **Visa sidfot/Dölja sidfot** förväntas ligga i en senare uppdatering.</span><span class="sxs-lookup"><span data-stu-id="b88aa-124">Note the placement of the **Show footer/Hide footer** action is expected to be re-located in a future update.</span></span> 
+Den här sidfoten är som standard dold, men den är lätt att aktivera. Om du vill visa sidfoten för ett rutnät högerklickar du på en kolumn rubrik i rutnätet och väljer alternativet **Visa sidfot**. När sidfoten har aktiverats för ett visst rutnät kommer denna inställning att kommas ihåg tills användaren väljer att dölja sidfoten, som du kan göra genom att högerklicka på en kolumnrubrik och välja **Dölj sidfot**.  Observera placeringen av åtgärden **Visa sidfot/Dölja sidfot** förväntas ligga i en senare uppdatering. 
 
-### <a name="specifying-columns-with-totals"></a><span data-ttu-id="b88aa-125">Ange kolumner med summor</span><span class="sxs-lookup"><span data-stu-id="b88aa-125">Specifying columns with totals</span></span>
-<span data-ttu-id="b88aa-126">För närvarande kommer inga kolumner att konfigureras för att visa summor som standard.</span><span class="sxs-lookup"><span data-stu-id="b88aa-126">Currently, no columns will be configured to show totals by default.</span></span> <span data-ttu-id="b88aa-127">I stället betraktas detta som en enstaka inställningsaktivitet, på samma sätt som du justerar bredden på kolumner i rutnät.</span><span class="sxs-lookup"><span data-stu-id="b88aa-127">Instead, this is considered a one-time setup activity, similar to adjusting the widths of columns in grids.</span></span> <span data-ttu-id="b88aa-128">När du har angett att du vill visa summorna för en kolumn kommer den inställningen att komma ihåg nästa gång du besöker sidan.</span><span class="sxs-lookup"><span data-stu-id="b88aa-128">Once you specify that you want to see totals for a column, that setting will be remembered the next time you visit the page.</span></span>  
+### <a name="specifying-columns-with-totals"></a>Ange kolumner med summor
+För närvarande kommer inga kolumner att konfigureras för att visa summor som standard. I stället betraktas detta som en enstaka inställningsaktivitet, på samma sätt som du justerar bredden på kolumner i rutnät. När du har angett att du vill visa summorna för en kolumn kommer den inställningen att komma ihåg nästa gång du besöker sidan.  
 
-<span data-ttu-id="b88aa-129">Du kan konfigurera en kolumn på två sätt för att visa en summa:</span><span class="sxs-lookup"><span data-stu-id="b88aa-129">There are two ways to configure a column to show a total:</span></span> 
+Du kan konfigurera en kolumn på två sätt för att visa en summa: 
 
-- <span data-ttu-id="b88aa-130">Högerklicka i kolumnen som du vill se summa för och välj sedan **Summa den här kolumnen**.</span><span class="sxs-lookup"><span data-stu-id="b88aa-130">Right-click in the column that you want to see a total for, and then select **Total this column**.</span></span> <span data-ttu-id="b88aa-131">Den här åtgärden medför att tre händelser inträffar:</span><span class="sxs-lookup"><span data-stu-id="b88aa-131">This action causes three events to occur:</span></span>
+- Högerklicka i kolumnen som du vill se summa för och välj sedan **Summa den här kolumnen**. Den här åtgärden medför att tre händelser inträffar:
 
-    1. <span data-ttu-id="b88aa-132">Sidfoten blir synlig.</span><span class="sxs-lookup"><span data-stu-id="b88aa-132">The footer becomes visible.</span></span> 
-    2. <span data-ttu-id="b88aa-133">Din preferens för att se summan för den här kolumnen sparas.</span><span class="sxs-lookup"><span data-stu-id="b88aa-133">Your preference for seeing a total for this column is saved.</span></span> 
-    3. <span data-ttu-id="b88aa-134">En beräkning av summor initieras för den här kolumnen och alla andra kolumner som du tidigare har konfigurerat för att se summor för.</span><span class="sxs-lookup"><span data-stu-id="b88aa-134">A calculation of totals is initiated for this column and any other columns that you previously configured to see totals for.</span></span> <span data-ttu-id="b88aa-135">Den tid som krävs för att visa en summa beror på storleken på den datauppsättning som du summerar.</span><span class="sxs-lookup"><span data-stu-id="b88aa-135">The time that is required to show a total depends on the size of the dataset that you're totaling.</span></span>
+    1. Sidfoten blir synlig. 
+    2. Din preferens för att se summan för den här kolumnen sparas. 
+    3. En beräkning av summor initieras för den här kolumnen och alla andra kolumner som du tidigare har konfigurerat för att se summor för. Den tid som krävs för att visa en summa beror på storleken på den datauppsättning som du summerar.
 
-- <span data-ttu-id="b88aa-136">När sidfoten är synlig väljer du **Visa summa** i sidfotsområdet längst ned i kolumnen som du vill se en total summa för.</span><span class="sxs-lookup"><span data-stu-id="b88aa-136">After the footer is visible, select **Show total** in the footer area at the bottom of the column that you want to see a total for.</span></span> <span data-ttu-id="b88aa-137">Om det inte finns några konfigurerade kolumner visas knappen **Visa summa** för alla numeriska kolumner.</span><span class="sxs-lookup"><span data-stu-id="b88aa-137">If there are no configured columns, the **Show total** button will be available for all numeric columns.</span></span> 
+- När sidfoten är synlig väljer du **Visa summa** i sidfotsområdet längst ned i kolumnen som du vill se en total summa för. Om det inte finns några konfigurerade kolumner visas knappen **Visa summa** för alla numeriska kolumner. 
 
-    <span data-ttu-id="b88aa-138">När minst en kolumn har konfigurerats för summor, kommer knapparna **Visa summa** endast att vara tillgängliga vid hovring eller fokus.</span><span class="sxs-lookup"><span data-stu-id="b88aa-138">After at least one column is configured for totals, the **Show total** buttons will be available only on hover or focus.</span></span> <span data-ttu-id="b88aa-139">Om du väljer **Visa total** sparar du bara din inställning för att se en summa i den här kolumnen, så att inställningen tillämpas vid framtida besök på sidan.</span><span class="sxs-lookup"><span data-stu-id="b88aa-139">The action of selecting **Show total** just saves your preference for seeing a total in this column, so that the preference is applied during future visits to the page.</span></span> <span data-ttu-id="b88aa-140">I sidfoten markeras det här läget med ett streck som visas i kolumnen.</span><span class="sxs-lookup"><span data-stu-id="b88aa-140">In the footer, this state is indicated by a dash that appears in the column.</span></span> <span data-ttu-id="b88aa-141">(Alternativt, om datauppsättning är tillräckligt litet visas en summa omedelbart.)</span><span class="sxs-lookup"><span data-stu-id="b88aa-141">(Alternatively, if the dataset is small enough, a total is immediately shown.)</span></span>
+    När minst en kolumn har konfigurerats för summor, kommer knapparna **Visa summa** endast att vara tillgängliga vid hovring eller fokus. Om du väljer **Visa total** sparar du bara din inställning för att se en summa i den här kolumnen, så att inställningen tillämpas vid framtida besök på sidan. I sidfoten markeras det här läget med ett streck som visas i kolumnen. (Alternativt, om datauppsättning är tillräckligt litet visas en summa omedelbart.)
 
-<span data-ttu-id="b88aa-142">Om du gör ett misstag och inte längre vill se en summa i en viss kolumn högerklickar du på kolumnen och väljer **Dölj summa** eller väljer knappen **Dölj summa** i sidfoten i den kolumnen.</span><span class="sxs-lookup"><span data-stu-id="b88aa-142">If you make a mistake and no longer want to see a total in a particular column, right-click on the column and select **Hide total** or select the **Hide total** button in the footer in that column.</span></span> <span data-ttu-id="b88aa-143">Den här inställningen kommer också att sparas för framtida besök på sidan.</span><span class="sxs-lookup"><span data-stu-id="b88aa-143">This preference will also be saved for future visits to the page.</span></span> 
+Om du gör ett misstag och inte längre vill se en summa i en viss kolumn högerklickar du på kolumnen och väljer **Dölj summa** eller väljer knappen **Dölj summa** i sidfoten i den kolumnen. Den här inställningen kommer också att sparas för framtida besök på sidan. 
 
-### <a name="calculating-totals"></a><span data-ttu-id="b88aa-144">Beräknar summor</span><span class="sxs-lookup"><span data-stu-id="b88aa-144">Calculating totals</span></span>
-<span data-ttu-id="b88aa-145">När du kommer till en sida med sidfoten synlig och kolumner som redan konfigurerats för summor kan det hända att summorna inte visas i sidfoten.</span><span class="sxs-lookup"><span data-stu-id="b88aa-145">When you come to a page with the footer visible and columns already configured for totals, totals may or may not be shown in the footer.</span></span> <span data-ttu-id="b88aa-146">Beteendet beror på storleken på datauppsättningen på sidan.</span><span class="sxs-lookup"><span data-stu-id="b88aa-146">The behavior is dependent on the size of the dataset on the page.</span></span> <span data-ttu-id="b88aa-147">Om datauppsättningen är tillräckligt liten visas summorna automatiskt tillsammans med antalet rader i datauppsättningen.</span><span class="sxs-lookup"><span data-stu-id="b88aa-147">If the dataset is sufficiently small, totals will be shown automatically, along with the number of rows in the dataset.</span></span> <span data-ttu-id="b88aa-148">Om det finns bindestreck i sidfoten under de kolumner som du har konfigurerat för summor, är datauppsättningen för stor för systemet att visa summor omedelbart och en uttrycklig åtgärd krävs för att beräkna summorna.</span><span class="sxs-lookup"><span data-stu-id="b88aa-148">If there are dashes in the footer under the columns you configured for totals, then the dataset is too large for the system to show totals immediately, and an explicit action is needed to calculate the totals.</span></span> <span data-ttu-id="b88aa-149">Det gör du genom att klicka på knappen **Beräkna** i sidfoten, eller högerklicka på en kolumn som du vill ha en summa för och välja **Summa den här kolumnen**.</span><span class="sxs-lookup"><span data-stu-id="b88aa-149">To do this, click the **Calculate** button in the footer, or right-click on a column you want a total for and select **Total this column**.</span></span>  
+### <a name="calculating-totals"></a>Beräknar summor
+När du kommer till en sida med sidfoten synlig och kolumner som redan konfigurerats för summor kan det hända att summorna inte visas i sidfoten. Beteendet beror på storleken på datauppsättningen på sidan. Om datauppsättningen är tillräckligt liten visas summorna automatiskt tillsammans med antalet rader i datauppsättningen. Om det finns bindestreck i sidfoten under de kolumner som du har konfigurerat för summor, är datauppsättningen för stor för systemet att visa summor omedelbart och en uttrycklig åtgärd krävs för att beräkna summorna. Det gör du genom att klicka på knappen **Beräkna** i sidfoten, eller högerklicka på en kolumn som du vill ha en summa för och välja **Summa den här kolumnen**.  
 
-<span data-ttu-id="b88aa-150">Om beräkningen tar för lång tid kan du avbryta operationen genom att välja knappen **Avbryt**.</span><span class="sxs-lookup"><span data-stu-id="b88aa-150">If the calculation is taking too long, you can cancel the operation by selecting the **Cancel** button.</span></span> <span data-ttu-id="b88aa-151">Ibland är datauppsättningen för stor för att beräkna summor (en begränsning som din organisation anger) och du ska istället bli meddelad om att filtrera data mer.</span><span class="sxs-lookup"><span data-stu-id="b88aa-151">Sometimes, however, the dataset will be too large to calculate totals (a limit imposed by your organization), and you will instead be notified to filter your data more.</span></span>
+Om beräkningen tar för lång tid kan du avbryta operationen genom att välja knappen **Avbryt**. Ibland är datauppsättningen för stor för att beräkna summor (en begränsning som din organisation anger) och du ska istället bli meddelad om att filtrera data mer.
 
-<span data-ttu-id="b88aa-152">Summor uppdateras automatiskt när du uppdaterar, tar bort eller skapar rader i datauppsättningen.</span><span class="sxs-lookup"><span data-stu-id="b88aa-152">Totals will update automatically as you update, delete, or create rows in the dataset.</span></span>  
+Summor uppdateras automatiskt när du uppdaterar, tar bort eller skapar rader i datauppsättningen.  
 
-## <a name="grouping-data"></a><span data-ttu-id="b88aa-153">Gruppera data</span><span class="sxs-lookup"><span data-stu-id="b88aa-153">Grouping data</span></span>
-<span data-ttu-id="b88aa-154">Företagsanvändare behöver ofta för att utföra ad hoc-analys av data.</span><span class="sxs-lookup"><span data-stu-id="b88aa-154">Business users often need to perform ad-hoc analysis of data.</span></span> <span data-ttu-id="b88aa-155">Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **gruppera** i tabellrutnät gör att användarna kan ordna sina data på intressanta sätt inom Finance and Operations-appar.</span><span class="sxs-lookup"><span data-stu-id="b88aa-155">While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping** capability in tabular grids allows users to organize their data in interesting ways within Finance and Operations apps.</span></span> <span data-ttu-id="b88aa-156">När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.</span><span class="sxs-lookup"><span data-stu-id="b88aa-156">As this feature extends the **Totals** feature, **Grouping** also allows you to get meaningful insights into the data by providing subtotals at the group level.</span></span>
+## <a name="grouping-data"></a>Gruppera data
+Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **gruppera** i tabellrutnät gör att användarna kan ordna sina data på intressanta sätt inom Finance and Operations-appar. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
 
-<span data-ttu-id="b88aa-157">Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**.</span><span class="sxs-lookup"><span data-stu-id="b88aa-157">To use this feature, right-click on the column you wish to group by, and select **Group by this column**.</span></span> <span data-ttu-id="b88aa-158">Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny grupp efter kolumn i början av rutnätet och infogar "rubrikrader" i början av varje grupp.</span><span class="sxs-lookup"><span data-stu-id="b88aa-158">This action will sort the data by the selected column, add a new Group by column to the beginning to the grid, and insert "header rows" at the beginning of each group.</span></span> <span data-ttu-id="b88aa-159">Dessa rubrikrader innehåller följande information om varje grupp:</span><span class="sxs-lookup"><span data-stu-id="b88aa-159">These header rows provide the following information about each group:</span></span> 
--  <span data-ttu-id="b88aa-160">Datavärde för gruppen</span><span class="sxs-lookup"><span data-stu-id="b88aa-160">Data value for the group</span></span> 
--  <span data-ttu-id="b88aa-161">Kolumnetikett (den här informationen är särskilt användbar när flera grupperingsnivåer stöds.)</span><span class="sxs-lookup"><span data-stu-id="b88aa-161">Column label (This information will be especially useful after multiple levels of grouping are supported.)</span></span>
--  <span data-ttu-id="b88aa-162">Antal data rader i den här gruppen</span><span class="sxs-lookup"><span data-stu-id="b88aa-162">Number of data rows in this group</span></span>
--  <span data-ttu-id="b88aa-163">Delsummor för alla kolumner som konfigurerats att visa summor</span><span class="sxs-lookup"><span data-stu-id="b88aa-163">Subtotals for any column configured to show totals</span></span>
+Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**. Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny grupp efter kolumn i början av rutnätet och infogar "rubrikrader" i början av varje grupp. Dessa rubrikrader innehåller följande information om varje grupp: 
+-  Datavärde för gruppen 
+-  Kolumnetikett (den här informationen är särskilt användbar när flera grupperingsnivåer stöds.)
+-  Antal data rader i den här gruppen
+-  Delsummor för alla kolumner som konfigurerats att visa summor
 
-<span data-ttu-id="b88aa-164">När [sparade vyer](saved-views.md) är aktiverad kan den här gruppen sparas med personlig anpassning som en del av en vy för snabbåtkomst nästa gång du besöker sidan.</span><span class="sxs-lookup"><span data-stu-id="b88aa-164">With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.</span></span>  
+När [sparade vyer](saved-views.md) är aktiverad kan den här gruppen sparas med personlig anpassning som en del av en vy för snabbåtkomst nästa gång du besöker sidan.  
 
-<span data-ttu-id="b88aa-165">Om du väljer **gruppera efter denna kolumn** i en annan kolumn, ersätts den ursprungliga grupperingen eftersom det bara går att använda en grupperingsnivå i version 10.0.9 med plattformsuppdatering 33.</span><span class="sxs-lookup"><span data-stu-id="b88aa-165">If you select **Group by this column** for a different column, the original grouping is replaced, because only one level of grouping is supported in version 10.0.9 with Platform update 33.</span></span>
+Om du väljer **gruppera efter denna kolumn** i en annan kolumn, ersätts den ursprungliga grupperingen eftersom det bara går att använda en grupperingsnivå i version 10.0.9 med plattformsuppdatering 33.
 
-<span data-ttu-id="b88aa-166">Om du vill ångra grupperingar i ett rutnät högerklickar du på grupperingskolumnen och väljer **Ta bort grupp**.</span><span class="sxs-lookup"><span data-stu-id="b88aa-166">To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.</span></span>  
+Om du vill ångra grupperingar i ett rutnät högerklickar du på grupperingskolumnen och väljer **Ta bort grupp**.  
 
 
-## <a name="evaluating-math-expressions"></a><span data-ttu-id="b88aa-167">Utvärdera matematikuttryck</span><span class="sxs-lookup"><span data-stu-id="b88aa-167">Evaluating math expressions</span></span>
-<span data-ttu-id="b88aa-168">Som en produktivitetsförstärkning kan användarna ange matematiska formler i numeriska celler i ett rutnät.</span><span class="sxs-lookup"><span data-stu-id="b88aa-168">As a productivity booster, users can enter mathematical formulas in numeric cells in a grid.</span></span> <span data-ttu-id="b88aa-169">De behöver inte utföra beräkningen i en app utanför systemet.</span><span class="sxs-lookup"><span data-stu-id="b88aa-169">They don't have to do the calculation in an app outside the system.</span></span> <span data-ttu-id="b88aa-170">Om du till exempel anger **=15\*4** och tryck sedan på **Tabb** tangenten för att flytta ut ur fältet, utvärderas uttrycket och värdet **60** för fältet sparas.</span><span class="sxs-lookup"><span data-stu-id="b88aa-170">For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.</span></span>
+## <a name="evaluating-math-expressions"></a>Utvärdera matematikuttryck
+Som en produktivitetsförstärkning kan användarna ange matematiska formler i numeriska celler i ett rutnät. De behöver inte utföra beräkningen i en app utanför systemet. Om du till exempel anger **=15\*4** och tryck sedan på **Tabb** tangenten för att flytta ut ur fältet, utvärderas uttrycket och värdet **60** för fältet sparas.
 
-<span data-ttu-id="b88aa-171">Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**).</span><span class="sxs-lookup"><span data-stu-id="b88aa-171">To make the system recognize a value as an expression, start the value with an equal sign (**=**).</span></span> <span data-ttu-id="b88aa-172">Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).</span><span class="sxs-lookup"><span data-stu-id="b88aa-172">For more details on the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).</span></span>  
+Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**). Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+
+## <a name="frequently-asked-questions"></a>Vanliga frågor
+### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hur aktiverar jag den nya rutnätskontrollen i min miljö? 
+
+**10.0.9/plattformsuppdatering 33 och senare** funktionen **ny rutnätskontroll** är tillgänglig direkt i funktionshantering i alla miljöer. Liksom andra offentliga förhandsgranskningsfunktioner är aktivering av den här funktionen i produktion är föremål för [Tilläggsavtal för användarvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/plattformsuppdatering 32 och 10.0.7/plattformsuppdatering 31** kan funktionen **ny rutnätskontroll** aktiveras i miljöer med nivå 1 (utv/test) och nivå 2 (sandbox) för att ge ytterligare tester och designändringar genom att följa stegen nedan.
+
+1.  **Aktivera flygningen**: kör följande SQL-uttryck: 
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
+
+2. **Återställ IIS** för att rensa den statiska förhandsversionscachen. 
+
+3.  **Hitta funktionen**: gå till arbetsytan **Funktionshantering**. Om **ny rutnätskontroll** inte visas i listan över alla funktioner väljer du **Sök efter uppdateringar**.   
+
+4.  **Aktivera funktionen**: Leta upp funktionen **Ny rutnätskontroll** i listan över funktioner och välj **Aktivera nu** i informationsfönstret. Observera att en uppdatering av webbläsaren krävs. 
+
+Alla efterföljande användarsessioner börjar med att aktivera nya rutnätskontrollen.
