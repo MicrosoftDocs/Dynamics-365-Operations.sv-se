@@ -2,7 +2,7 @@
 title: Integrera leverantörer
 description: Det här avsnittet beskriver processen för att integrera nya leverantörer. Det förklarar de åtgärder som krävs av olika roller under denna process.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250172"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203421"
 ---
 # <a name="onboard-vendors"></a>Integrera leverantörer
 [!include [banner](../includes/banner.md)]
@@ -48,7 +48,7 @@ Följande tabell anger de steg och roller som ingår i processen.
 | Administratör            | | | Skapa en användare i Supply Chain Management och Microsoft Azure. | | | |
 | Leverantörens kontaktperson    | | | Skicka e-post till kontaktpersonen. | Registrera leverantörsinformation. | | |
 
-Titta på den här korta YouTube om [Hur du integrerar en ny leverantör i Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+Titta på det här korta videoklippet på YouTube för en snabb demonstration av leverantörens integreringsprocess [Hur du integrerar en ny leverantör i Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importera begäran om registrering för potentiell leverantör
 

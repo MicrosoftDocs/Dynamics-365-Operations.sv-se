@@ -3,7 +3,7 @@ title: Bearbeta livshändelse
 description: Under medarbetarens livscykel i Microsoft Dynamics 365 Human Resources kan varje medarbetare stöta på olika ändringar av livshändelser.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010610"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229950"
 ---
 # <a name="process-life-events"></a>Bearbeta livshändelse
-
-[!include [banner](includes/preview-feature.md)]
 
 Under medarbetarens livscykel i Microsoft Dynamics 365 Human Resources kan varje medarbetare stöta på olika ändringar av livshändelser. Till exempel, äktenskap, nytt jobb eller beroendeändringar. Om du vill använda livshändelser måste du aktivera livshändelser i formuläret förmånsparametrar, ställa in livhändelsetyper och ställa in livshändelsealternativ för plantyper.
 
@@ -43,10 +41,10 @@ Om till exempel dagens datum är 1 februari och den 14 februari är arbetare Joh
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Anmälningsperiod | Anmälningsperiod för bearbeta livshändelse. |
-   | Juridisk person | Juridisk person för bearbeta livshändelse. |
-   | Datum för livshändelse | Systemet bearbetar alla händelser under anmälningsperioden som inträffar fram till detta datum. |
-   | Arbetare | Arbetare för bearbeta livshändelse. Om du lämnar det här fältet livshändelser bearbetas för alla arbetare. |
+   | **Anmälningsperiod** | Anmälningsperiod för bearbeta livshändelse. |
+   | **Juridisk person** | Juridisk person för bearbeta livshändelse. |
+   | **Datum för livshändelse** | Systemet bearbetar alla händelser under anmälningsperioden som inträffar fram till detta datum. |
+   | **Arbetare** | Arbetare för bearbeta livshändelse. Om du lämnar det här fältet livshändelser bearbetas för alla arbetare. |
 
 3. Om du vill köra processen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
 

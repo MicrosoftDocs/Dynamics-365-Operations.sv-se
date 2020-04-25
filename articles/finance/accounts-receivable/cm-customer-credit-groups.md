@@ -3,7 +3,7 @@ title: Kreditgrupper för kund
 description: Det här avsnittet innehåller information om kundkreditgrupper.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7121b78f3318bae9f82b2f0f951bc7bfe6c4358
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 90d75493b928bfa4edafeef7730bc272c9146192
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015401"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261267"
 ---
 # <a name="customer-credit-groups"></a>Kreditgrupper för kund
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Du kan definiera grupper av kunder som har samma kreditgräns. Den individuella kreditgränsen som definieras på kundfakturakontot beaktas också.
+Du kan definiera grupper av kunder som har en delad kreditgräns. Den individuella kreditgränsen som definieras på kundfakturakontot beaktas också.
 
 Medlemmar i en kundkreditgrupp kan väljas från olika juridiska personer. När du lägger till en kund i listan med kunder i kundkreditgruppen ändras utgångsdatumet för kreditgränsen för varje kund till utgångsdatumet som tilldelas gruppen.
 

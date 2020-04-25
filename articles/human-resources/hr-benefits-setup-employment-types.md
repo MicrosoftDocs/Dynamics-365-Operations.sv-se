@@ -3,7 +3,7 @@ title: Ställa in anställningstyper
 description: Anställningstyper kan anges i Dynamics 365 Human Resources för att stämma överens med dina arbetare.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 89a6045bebbb67251ee4a65dab71ce5771acc2af
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: dc9e9c2c948d654904041faa72110cc245308e64
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092624"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229727"
 ---
 # <a name="set-up-employment-types"></a>Ställa in anställningstyper
 
-[!include [banner](includes/preview-feature.md)]
-
 Ställ in medarbetartyper i Dynamics 365 Human Resources för att stämma överens med dina arbetare.
 
-1. I arbetsytan **Förmånshantering** under **inställningar**, välj **Anställningstyper**.
+1. I arbetsytan **Personalhantering** under **inställningar**, välj **Anställningstyper**.
 
 2. Välj **Ny**.
 
@@ -39,7 +37,7 @@ Ställ in medarbetartyper i Dynamics 365 Human Resources för att stämma övere
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Anställningstyp | Unik identifiering av anställningstypen. |
-   | Beskrivning | En beskrivning av anställningstyp. |
+   | **Anställningstyp** | Unik identifiering av anställningstypen. |
+   | **Beskrivning** | En beskrivning av anställningstyp. |
 
 4. Välj **Spara**. 

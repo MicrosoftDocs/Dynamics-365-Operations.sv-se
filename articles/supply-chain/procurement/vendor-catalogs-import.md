@@ -2,7 +2,7 @@
 title: Importera leverantörskataloger
 description: Det här ämnet beskriver hur du importerar leverantörskatalogdata.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 35b8e2a87708c88b12c5c7605a7977712a35a0f4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017884"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207392"
 ---
 # <a name="import-vendor-catalogs"></a>Importera leverantörskataloger
 [!include[banner](../includes/banner.md)]
@@ -35,17 +35,16 @@ I Dynamics 365 Supply Chain Management kan inköpare skapa och underhålla katal
 Du kan överföra katalogdata som skickas av en leverantör från Microsoft Dynamics 365-klienten.
 
 Den produktdata som en leverantör skickar till dig i form av en CMR-fil (Catalog Maintenance Request) måste vara i XML-format. CMR-filen ska innehålla information om de produkter som leverantören tillhandahåller till ditt företag.
-
+''''
 ## <a name="import-vendor-catalog-data"></a>Importera leverantörskatalogdata
-
-Om du vill importera leverantörskatalogdata måste du utföra följande uppgifter:
+'' Om du vill importera leverantörskatalogdata måste du utföra följande uppgifter:
 
 1.  Ställ in ett projekt i arbetsytan Datahantering när du har definierat dina datamappningsregler. Välj **Datahantering** och markera **Konfigurera roller för dataprojekt**. 
-
+    ''
 2.  Ställ in en anskaffningskategorihierarki och tilldela dina leverantörer till anskaffningskategorier. Om du använder artikelkoder, lägg till artikelkoder till anskaffningskategorierna. För information om hur du ställer in en anskaffningskategorihierarki, se [Ställ in en anskaffningskategorihierarki](../procurement/tasks/set-up-procurement-category-hierarchy.md).
-
+    ''
 3.  Konfigurera leverantören för katalogimport Markera en leverantör och välj sedan **Anskaffning** > **Ställ in** > **Konfigurera leverantör för katalogimport**.
-
+''''
 4.  Konfigurera arbetsflöde för katalogimport. Skapa en mall för CMR-fil och dela den med leverantören.
 
 5.  Välj **Anskaffning och källa**\>**Gemensam**\>**Kataloger**\>**Leverantörskataloger** om du vill skapa en leverantörskatalog. CMR-filen (Catalog Maintenance Request) som du får från leverantören grupperas i katalogen. 

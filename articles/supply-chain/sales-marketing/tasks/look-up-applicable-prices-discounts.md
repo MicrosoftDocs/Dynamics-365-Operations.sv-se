@@ -2,29 +2,29 @@
 title: Slå upp tillämpliga priser och rabatter
 description: I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt som för närvarande är giltig för en viss kund, utan att skapa en försäljningsorder.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 4ea4c7db203d0b47c59b241c9d89c69c71cf6cb1
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025838"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3211938"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå upp tillämpliga priser och rabatter
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt som för närvarande är giltig för en viss kund, utan att skapa en försäljningsorder. I proceduren går vi igenom ett visst exempel och du måste följa exemplet med hjälp av USMF-demonstrationsföretaget för att välja de nödvändiga värdena.
 

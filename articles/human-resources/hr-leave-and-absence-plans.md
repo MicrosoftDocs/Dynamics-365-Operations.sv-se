@@ -3,7 +3,7 @@ title: Skapa en plan för tjänstledighet och frånvaro
 description: Skapa frånvaroplaner i Dynamics 365 Human Resources för olika typer av tjänstledighet.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087310"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197369"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Skapa en plan för tjänstledighet och frånvaro
 
@@ -42,6 +42,11 @@ Du kan också skapa befattningsfria förmåner, t.ex. förmånstimmar som endast
 1. På sidan **Tjänstledighet och frånvaro** klickar du på **Skapa ny plan**.
 
 2. Under **information**, ange **namn**, **startdatum**, **beskrivning** och **tjänstledighetstyp** för planen.
+
+Om funktionen **Konfigurera flera tjänstledighetstyper för en enskild tjänstledighets- och frånvaroplan** är aktiverad konfigureras tjänstledighetstyper i **Periodiseringsschema** istället under **Detaljer**. För varje post i registret för periodiseringsschema kan du ange en tjänstledighetstyp.
+
+ > [!IMPORTANT]
+   > När du har aktiverat den här funktionen kan du inte inaktivera den.
 
 3. Definiera periodiseringar på fliken **Periodiseringar**. Avskrivningar bestämmer när och hur ofta en medarbetare tilldelas ledighet. I det här steget definierar du principer för när periodiseringar ska tilldelas och policyer om att lämna ersättningar för allokeringen.
 
@@ -95,8 +100,8 @@ Du kan också skapa befattningsfria förmåner, t.ex. förmånstimmar som endast
    Nivåerna kan skapas så att ledig tid beviljas baserat på olika nivåer.
 
    Om du har timanställda kan du tilldela ledig tid baserat på antalet arbetstimmar i stället för anställningstid i organisationen. Data för arbetade timmar lagras vanligtvis i ett system för tid och närvaro. Du kan importera regelbundna och övertidstimmar som har utförts från tids- och närvarosystemet och använda dem som grund för en medarbetares belöning.
-
-   1. Välj ett alternativ i listrutan **periodiseringstyp**:
+   
+    1. Välj ett alternativ i listrutan **periodiseringstyp**:
 
       - **Månaders tjänst** - basera periodiseringsschemat på tjänstemånader.
 
@@ -117,6 +122,13 @@ Du kan också skapa befattningsfria förmåner, t.ex. förmånstimmar som endast
       - **Maximal överföring** - Periodiseringsprocessen kommer att justera ledighetssaldon som överstiger det maximalt överförda saldot på startdatumet.
 
       - **Beviljad mängd** - Det initiala antalet timmar eller dagar som medarbetaren har beviljats när de först registrerar sig i ledighetsplanen. Mängden periodiseras inte för varje periodiseringsperiod.
+      
+Om funktionen **Konfigurera flera tjänstledighetstyper för en enskild tjänstledighets- och frånvaroplan** är aktiverad, väljer du ett alternativ från typen **tjänstledighetstyp**. 
+
+   > [!IMPORTANT]
+   > När du har aktiverat den här funktionen kan du inte inaktivera den.
+
+Om funktionen **Använd Heltidslön** är aktiverad använder personal den heltidslön (FTE) som definierats för befattningen för att proportionellt fördela medarbetarens periodisering. Om till exempel heltid är 0,5 och periodiseringen är 10, kommer medarbetaren att periodisera 5. Du kan bara använda den här funktionen om du aktiverar flera tjänstledighetstyper.  
 
 5. Välj **Spara**.
 
@@ -357,19 +369,6 @@ Prognostiserat saldo (30) = periodiserad mängd (10x1) + aktuellt saldo (40) –
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1,00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
-
-## <a name="configure-preview-features"></a>Konfigurera förhandsfunktioner
-
-Om du har aktiverat förhandsfunktioner för tjänstledighet och frånvaro, måste du också konfigurera inställningarna för dem.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Förhandsfunktion: Konfigurera flera tjänstledighetstyper för en enskild tjänstledighets- och frånvaroplan**. För varje post i registret för periodiseringsschema kan du ange en tjänstledighetstyp.
-
-   > [!IMPORTANT]
-   > När du har aktiverat den här funktionen kan du inte inaktivera den.
-
-2. **Förhandsfunktion: Använd Heltidslön**. Om du aktiverar den här förhandsfunktionen använder personal heltidslön (FTE) som definierats för befattningen för allokera medarbetarens periodisering. Om till exempel heltid är 0,5 och periodiseringen är 10, kommer medarbetaren att periodisera 5. Du kan bara använda den här funktionen om du aktiverar flera tjänstledighetstyper.
 
 ## <a name="see-also"></a>Se även
 

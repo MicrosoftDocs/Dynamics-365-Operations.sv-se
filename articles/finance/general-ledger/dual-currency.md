@@ -16,17 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 580f0c885373006cb9cd955a61c41704a2ac9a94
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186703"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3249021"
 ---
 # <a name="dual-currency"></a>Dubbel valuta
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Funktion som infördes i Microsoft Dynamics 365 for Finance and Operations version 8.1 (oktober 2018) gör det möjligt att återanvända rapporteringsvalutan och använda den som en andra redovisningsvaluta. Den här funktionen kallas ibland för *dubbel valuta*. Ändringarna för dubbel valuta kan inte inaktiveras via en konfigurationsnyckel eller parameter. Eftersom rapporteringsvalutan används som en andra redovisningsvaluta, har sättet att beräkna rapporteringsvaluta i bokföringslogiken ändrats.
 

@@ -3,7 +3,7 @@ title: Ställa in betalningsfrekvenser
 description: Microsoft Dynamics 365 Human Resources använder lönefrekvenser för att beräkna årliga inkomsten av förmånen, avgör vilket förmånsbelopp en medarbetare betalar varje betalningsperiod och definierar hur ofta betalningar görs till providers.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b786485ab53dcdb3b7e5ff02562f674a7f8e6eae
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 74ff97550ee5b47a28ff9815528677b6e685e25b
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092601"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229750"
 ---
 # <a name="set-up-payment-frequencies"></a>Ställa in betalningsfrekvenser
-
-[!include [banner](includes/preview-feature.md)]
 
 Microsoft Dynamics 365 Human Resources använder lönefrekvenser för att beräkna årliga inkomsten av förmånen, avgör vilket förmånsbelopp en medarbetare betalar varje betalningsperiod och definierar hur ofta betalningar görs till providers.
 
@@ -43,17 +41,18 @@ Fälten konverteringsfaktorer identifierar konverteringsfaktorn från lönefrekv
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Lönefrekvens | Ett unikt namn för lönefrekvensen. |
-   | Beskrivning | Beskrivning av lönefrekvensen. |
-   | Period | Den lämpliga period som bäst matchar förmånsleverantörens och medarbetarens lönefrekvens. Periodlistan består av standardbetalningsperioderna. |
-   | Antal betalningsperioder | Antalet löneperioder som anger hur ofta förmånsleverantören eller medarbetarna betalas. Detta belopp kommer att användas för att beräkna medarbetarens årliga förmånsbelopp. |
-   | Årskonverteringsfaktor | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/1 år) = 12 |
-   | Halvårskonverteringsfaktor | Den halvårliga konverteringsfaktorn för betalningsfrekvensen. Den halvårlig konverteringsfaktorn för månadsvis lönefrekvens är t.ex. </br></br>(12 månadsbetalningar/2 gånger per år) = 6 |
-   | Kvartalskonverteringsfaktor | Den kvartalsvisa konverteringsfaktorn för betalningsfrekvensen. Den halvårlig konverteringsfaktorn för kvartalsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/4 kvartal) = 3 |
-   | Månadskonverteringsfaktor | Den månatliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/12 månader) = 1 |
-   | Halvmånadskonverteringsfaktor | Den halvmånadsvisa konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för halvmånadsvis lönefrekvens är t.ex. </br></br>(12 månadsbetalningar/24 (2x en månad)) = 0,5 | 
-   | Tvåveckorskonverteringsfaktor | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/26 veckor) = 0,461538 |
-   | Veckokonverteringsfaktor | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/52 veckor) = 0,230769 |
-   | Dagskonverteringsfaktor | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/365 dagar) = 0,032877 |
+   | **Lönefrekvens** | Ett unikt namn för lönefrekvensen. |
+   | **Beskrivning** | Beskrivning av lönefrekvensen. |
+   | **Period** | Den lämpliga period som bäst matchar förmånsleverantörens och medarbetarens lönefrekvens. Periodlistan består av standardbetalningsperioderna. |
+   | **Antal betalningsperioder** | Antalet löneperioder som anger hur ofta förmånsleverantören eller medarbetarna betalas. Detta belopp kommer att användas för att beräkna medarbetarens årliga förmånsbelopp. |
+   | **Årskonverteringsfaktor** | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/1 år) = 12 |
+   | **Halvårskonverteringsfaktor** | Den halvårliga konverteringsfaktorn för betalningsfrekvensen. Den halvårlig konverteringsfaktorn för månadsvis lönefrekvens är t.ex. </br></br>(12 månadsbetalningar/2 gånger per år) = 6 |
+   | **Kvartalskonverteringsfaktor** | Den kvartalsvisa konverteringsfaktorn för betalningsfrekvensen. Den halvårlig konverteringsfaktorn för kvartalsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/4 kvartal) = 3 |
+   | **Månadskonverteringsfaktor** | Den månatliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/12 månader) = 1 |
+   | **Halvmånadskonverteringsfaktor** | Den halvmånadsvisa konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för halvmånadsvis lönefrekvens är t.ex. </br></br>(12 månadsbetalningar/24 (2x en månad)) = 0,5 | 
+   | **Tvåveckorskonverteringsfaktor** | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/26 veckor) = 0,461538 |
+   | **Veckokonverteringsfaktor** | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/52 veckor) = 0,230769 |
+   | **Dagskonverteringsfaktor** | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/365 dagar) = 0,032877 |
+   | **Timkonverteringsfaktor** | Den årliga konverteringsfaktorn för betalningsfrekvensen. Den årliga konverteringsfaktorn för månadsvis lönefrekvens är t.ex.: </br></br>(12 månadsbetalningar/2080 timmar) = 0,005769
 
 4. Välj **Spara**. 

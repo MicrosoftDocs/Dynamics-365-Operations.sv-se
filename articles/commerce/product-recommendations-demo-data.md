@@ -1,9 +1,9 @@
 ---
 title: Skapa rekommendationer med demodata
-description: Det här dokumentet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
+description: Det här ämnet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/20
+ms.date: 03/30/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 59cb5e5c9b59ff2127149e3e47b6c30c9c938a27
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
+ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154259"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175559"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Skapa rekommendationer med demodata
 
 [!include [banner](includes/banner.md)]
 
-Det här dokumentet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
+Det här ämnet ger vägledning om hur du kan utnyttja produktrekommendationer i flera kanaler i en nivå 1 enskilda miljöer med hjälp av i förväg ifyllda, anpassningsbara demodata.
 
 Produktrekommendationer i flera kanaler innehåller en uppsättning av redaktionellt granskade eller programmässigt genererade listor över produkter i en ordnad lista. Dessa listor kan användas i flera situationer, beroende på vad som behövs i verksamheten. Mer information om produktrekommendationslistor finns i [produktrekommendationer - översikt](product-recommendations.md).
 
@@ -46,12 +46,13 @@ Varje enskild miljö innehåller en förinstallerad uppsättning med demodata f�
 
 Dessa data struktureras längs följande kolumner.
 
-| Kolumnnamn         | Obligatoriskt          | Beskrivning                                                                                                                                 | Möjliga värden                                                              |
+| Kolumnnamn         | Obligatoriskt          | beskrivning                                                                                                                                 | Möjliga värden                                                              |
 |---------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | Recolist            | :heavy_check_mark: | Den specifika listtypen för produktrekommendationer som demodatapunkten ska generera.                                                    | <ul><li>RecoBestSelling</li><li>RecoNew</li><li>RecoTrending</li><li>RecoCart</li><li>RecoPeopleAlsoBuy</li></ul> |
 | OperatingUnitNumber | :heavy_check_mark: | Det specifika driftenhetsnummer som produktrekommendationer förväntas bli indelade.                                        |                                                                              |
 | Kategori            |                    |    Den kategori som den specifika listan ska returneras för. Om ingen kategori har angetts är listan endast till för navigeringshierarkin.    |                                                                              |
 | SeedItemId          |                    |    För listor som kräver startvärde (RecoPeopleAlsoBuy och RecoCart) av produkten bör dessa listor innehålla ytterligare produkter.            |                                                                              |
+| CustomerId          |                    |    För listor som kräver ett kund-ID (RecoPicks).  Standardvärdet "0" gäller för alla kunder.          |                                                                              |
 | ItemIds             | :heavy_check_mark: | En eller flera produkter som kommer att returneras som resultat, avgränsade med ";".                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Anpassa demodata

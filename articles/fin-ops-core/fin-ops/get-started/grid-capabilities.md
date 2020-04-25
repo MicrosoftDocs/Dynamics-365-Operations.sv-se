@@ -3,7 +3,7 @@ title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 02/10/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7136edba828bf97b6e0c8d2a698b884640d680e5
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 0fd0e15ea88e9f5f34d8dff82606a8d26616a16d
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036275"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260470"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -90,4 +90,23 @@ Om du vill ångra grupperingar i ett rutnät högerklickar du på grupperingskol
 ## <a name="evaluating-math-expressions"></a>Utvärdera matematikuttryck
 Som en produktivitetsförstärkning kan användarna ange matematiska formler i numeriska celler i ett rutnät. De behöver inte utföra beräkningen i en app utanför systemet. Om du till exempel anger **=15\*4** och tryck sedan på **Tabb** tangenten för att flytta ut ur fältet, utvärderas uttrycket och värdet **60** för fältet sparas.
 
-Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**). Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).  
+Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**). Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
+
+## <a name="frequently-asked-questions"></a>Vanliga frågor
+### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hur aktiverar jag den nya rutnätskontrollen i min miljö? 
+
+**10.0.9/plattformsuppdatering 33 och senare** funktionen **ny rutnätskontroll** är tillgänglig direkt i funktionshantering i alla miljöer. Liksom andra offentliga förhandsgranskningsfunktioner är aktivering av den här funktionen i produktion är föremål för [Tilläggsavtal för användarvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/plattformsuppdatering 32 och 10.0.7/plattformsuppdatering 31** kan funktionen **ny rutnätskontroll** aktiveras i miljöer med nivå 1 (utv/test) och nivå 2 (sandbox) för att ge ytterligare tester och designändringar genom att följa stegen nedan.
+
+1.  **Aktivera flygningen**: kör följande SQL-uttryck: 
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
+
+2. **Återställ IIS** för att rensa den statiska förhandsversionscachen. 
+
+3.  **Hitta funktionen**: gå till arbetsytan **Funktionshantering**. Om **ny rutnätskontroll** inte visas i listan över alla funktioner väljer du **Sök efter uppdateringar**.   
+
+4.  **Aktivera funktionen**: Leta upp funktionen **Ny rutnätskontroll** i listan över funktioner och välj **Aktivera nu** i informationsfönstret. Observera att en uppdatering av webbläsaren krävs. 
+
+Alla efterföljande användarsessioner börjar med att aktivera nya rutnätskontrollen.

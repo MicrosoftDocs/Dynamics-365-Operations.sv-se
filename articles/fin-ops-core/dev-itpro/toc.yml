@@ -14,7 +14,9 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
-                - name: Platform update 34 (maj 2020)
+                - name: Platform updates för 10.0.11 (juli 2020)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: Platform updates för 10.0.10 (maj 2020)
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
@@ -324,8 +326,6 @@
                       href: data-entities/configuration-data-packages.md
                     - name: Konfigurationsdatapaket (endast utgåvan från juli 2017)
                       href: data-entities/configuration-data-packages.md
-                    - name: Gör Enhetslagring tillgängligt som en Data Lake
-                      href: data-entities/entity-store-data-lake.md
                 - name: Konfigurationsdatamallar
                   href: data-entities/configuration-data-templates.md
                 - name: Spåra ändringar av en enhet
@@ -380,11 +380,19 @@
               href: analytics/automated-entity-store-refresh.md
             - name: Automatisering av datauppgift
               href: data-entities/data-task-automation.md
-            - name: Arbetsyta - checklista för datavalidering
+            - name: Arbetsyta – checklista för datavalidering
               href: user-interface/data-validation-workspace.md
             - name: Felbeskrivningar för datahantering
               href: data-entities/dm-error-descriptions.md
-        - name: Database movement-operationer
+        - name: Azure Data Lake
+          items:
+            - name: Azure Data Lake – översikt
+              href: data-entities/azure-data-lake-overview.md
+            - name: Finance and Operations-appar i Azure Data Lake
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Gör enhetslagring tillgängligt som en Data Lake
+              href: data-entities/entity-store-data-lake.md
+        - name: Åtgärder för databasflytt
           items:
             - name: Översikt
               href: database/dbmovement-operations.md
@@ -482,56 +490,60 @@
               items:
                 - name: Lokal distribution – startsida
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: Lokal distribution – översikt
-                  href: deployment/on-premises-overview.md
-                - name: Planera och förbereda för lokala distributioner
-                  href: deployment/plan-onprem-deployment.md
-                - name: Storlekskrav för maskinvara
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Konfigurera lokala projekt
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                - name: Förbereda för lokala distributioner
+                  items:
+                    - name: Lokal distribution – översikt
+                      href: deployment/on-premises-overview.md
+                    - name: Planera och förbereda för lokala distributioner
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Storlekskrav för maskinvara
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                 - name: Konfigurera och distribuera lokala miljöer
                   items:
-                    - name: Ställ in och distribuera lokala miljöer – startsida
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: Distribuera lokala miljöer på (Platform update 12 och senare)
+                    - name: Konfigurera lokala projekt i LCS
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Konfigurera och distribuera lokala miljöer
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: Distribuera lokala miljöer (Platform update 8 och 11)
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö
                       href: deployment/deploy-retail-onprem.md
+                    - name: Utveckla och distribuera anpassade modeller i lokala miljöer
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Miljöunderhåll
+                  items:
+                    - name: Uppdatera en lokal distribution
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Certifikatrotation
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Internetanslutning för klient
+                      href: user-interface/client-disconnected.md
+                    - name: Konfigurera proxyservrar för lokala miljöer
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Lokal diagnostik
+                      href: deployment/on-premises-diagnostics.md
+                    - name: PowerBI.com-integrering med lokala miljöer
+                      href: analytics/entity-store-on-prem.md
+                    - name: Konfigurera om miljöer
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Distribuera om lokala distributioner
+                      href: deployment/redeploy-on-prem.md
+                    - name: Ta bort och installera om en AOS-nod
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Återanvänd samma AD FS-instans för flera miljöer
                       href: deployment/onprem-reuseadfs.md
-                - name: Utveckla och distribuera anpassade modeller i lokala miljöer
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: PowerBI.com-integrering med lokala miljöer
-                  href: analytics/entity-store-on-prem.md
-                - name: Konfigurera proxyservrar för lokala miljöer
-                  href: deployment/onprem-reverseproxy.md
-                - name: Uppdatera en lokal distribution
-                  href: deployment/apply-updates-on-premises.md
-                - name: Lokal diagnostik
-                  href: deployment/on-premises-diagnostics.md
-                - name: Distribuera om lokala distributioner
-                  href: deployment/redeploy-on-prem.md
                 - name: Lokal agent
                   items:
                     - name: AD FS Office 365-kompatibilitet
                       href: deployment/onprem-adfscompatibility.md
-                    - name: Skripts för lokal agent för för-distribution och efter-distribution
+                    - name: Skripts för lokal agent för fördistribution och efterdistribution
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Uppdatera den lokala agenten
                       href: lifecycle-services/update-local-agent.md
-                - name: Konfigurera om miljöer
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Internetanslutning för klient
-                  href: user-interface/client-disconnected.md
-                - name: Felsöka lokala distributioner
-                  href: deployment/troubleshoot-on-prem.md
-                - name: Skript för problemlösning i lokala miljöer
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Certifikatrotation
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Felsökning
+                  items:
+                    - name: Felsöka lokala distributioner
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Skript för problemlösning i lokala miljöer
+                      href: deployment/onprem-tsg-implementations.md
             - name: Distribuera anpassad kod
               items:
                 - name: Skapa modellpaket som kan distribueras
@@ -928,11 +940,13 @@
                       href: extensibility/extensibility-attributes.md
                     - name: Dela upp ändringar
                       href: extensibility/breaking-changes.md
+                    - name: Verktyg för kompatibilitetskontroll
+                      href: extensibility/compatibility-checker-tool.md
             - name: Prestanda
               items:
                 - name: Börja spåra med Trace parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Enanvändartestning med Uppgiftsinspelaren och Performance SDK
+                - name: Enanvändartestning med Uppgiftsinspelaren och Prestanda-SDK
                   href: perf-test/single-user-test-perf-sdk.md
                 - name: Fleranvändartestning med Performance SDK och en lokal testkontrollant
                   href: perf-test/multi-user-testing-local-test-controller.md
@@ -1442,6 +1456,8 @@
               href: sysadmin/configure-manage-database-log.md
             - name: Skapa cacheminne för OData-metadata när AOS startar
               href: sysadmin/odata-warmup.md
+            - name: Konfigurera Azure Key Vault-klienten
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: 'Uppgraderingar, uppdateringar och snabbkorrigeringar'
           items:
             - name: 'Resurser för uppgraderingar, uppdateringar och snabbkorrigeringar'
@@ -1542,7 +1558,7 @@
                   href: deployment/apply-updates-on-premises.md
                 - name: Distribuera om en lokal distribution
                   href: deployment/redeploy-on-prem.md
-                - name: Uppgradering på plats för lokal version av 7.x till 8.1
+                - name: Uppgraderingsprocessen för lokala miljöer
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Snabbkorrigeringar
               items:

@@ -3,7 +3,7 @@ title: Aktivera produktrekommendationer
 description: I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras på artificiell intelligens (AI-ML) tillgängligt för Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d8a579be5df3c5e7718a6fb4720341f3bd01a64c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154423"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259804"
 ---
 # <a name="enable-product-recommendations"></a>Aktivera produktrekommendationer
 
@@ -36,10 +36,30 @@ I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras p�
 
 Innan du aktiverar produkten bör du notera att produktrekommendationer endast stöds för handelskunder som har migrerat deras lagring till att använda Azure Data Lake Storage (ADLS). 
 
-Information om hur du aktiverar ADLS finns i [Så här aktiverar du ADLS i en Dynamics 365-miljö](enable-ADLS-environment.md).
+Följande konfigurationer måste aktiveras på baksidan innan rekommendationer aktiveras:
 
-Kontrollera också att RetailSale-mätningar har aktiverats. Du får mer information om den här inställningsprocessen [här.](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures)
+1. Kontrollera att ADLS har köpts och kontrollerats i miljön. För mer information, se [Kontrollera att ADLS har köpts och kontrollerats i miljön](enable-ADLS-environment.md).
+2. Kontrollera att uppdatering av enhetslagring är automatiserat. Mer information finns i [kontrollera att uppdatering av enhetsarkivet har automatiserats](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+3. Bekräfta att Azure AD identitetskonfigurationen innehåller en post för rekommendationer. Mer information om hur du utför den här åtgärden finns nedan.
 
+Kontrollera också att RetailSale-mätningar har aktiverats. Mer information om den här inställningsprocessen finns i [arbeta med mått](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+
+## <a name="azure-ad-identity-configuration"></a>Azure AD identitetskonfiguration
+
+Det här steget krävs för alla kunder som kör infrastruktur som en tjänst (IaaS) konfiguration. För kunder som kör on Service Fabric (SF) ska det här steget vara automatiskt och vi rekommenderar att du bekräftar att inställningen är konfigurerad som förväntat.
+
+### <a name="setup"></a>Konfigurera
+
+1. Från backoffice sök efter sidan **Azure Active Directory-program**.
+2. Kontrollera om det finns en post för "RecommendationSystemApplication-1".
+
+Om posten inte finns lägger du till en ny post med följande information:
+
+- **Klient-ID** - d37b07e8-dd1c-4514-835d-8b918e6f9727
+- **Namn** - RecommendationSystemApplication-1
+- **Användar-ID** - RetailServiceAccount
+
+Spara och stäng formuläret 
 
 ## <a name="turn-on-recommendations"></a>Aktivera rekommendationer
 
@@ -49,10 +69,10 @@ Så här aktiverar du produktrekommendationer.
 1. I listan över delade parametrar, välj **Rekommendationslistor**.
 1. Ge alternativet **Aktivera rekommendationer** värdet **Ja**.
 
-![aktivera produktrekommendationer](./media/enableproductrecommendations.png)
+![Aktivera rekommendationer](./media/enablepersonalization.png)
 
 > [!NOTE]
-> I den här proceduren inleds processen med att generera listor över produktrekommendationer. Det kan krävas upp till flera timmar innan listorna är tillgängliga och kan visas i kassan (POS) eller i Dynamics 365 Commerce.
+> I den här proceduren inleds processen med att generera listor över produktrekommendationer. Det kan ta flera timmar innan listorna är tillgängliga och kan visas i kassan (POS) eller i Dynamics 365 Commerce.
 
 ## <a name="configure-recommendation-list-parameters"></a>Konfigurera parametrar för rekommendationslista
 
@@ -64,7 +84,9 @@ När du har aktiverat rekommendationer i backoffice för Handel måste rekommend
 
 ## <a name="enable-personalized-recommendations"></a>Aktivera anpassade rekommendationer
 
-Mer information om hur du tar emot anpassade rekommendationer finns i [aktivera anpassade rekommendationer](personalized-recommendations.md).
+I Dynamics 365 Commerce kan återförsäljare göra anpassade produktrekommendationer (även kallade anpassningar) tillgängliga. På detta sätt kan personliga rekommendationer införlivas i kundupplevelsen online och i kassan. När anpassningsfunktionen är aktiverad kan systemet associera en användares inköps- och produktinformation för att skapa enskilda produktrekommendationer.
+
+Mer information om anpassade rekommendationer finns i [aktivera anpassade rekommendationer](personalized-recommendations.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

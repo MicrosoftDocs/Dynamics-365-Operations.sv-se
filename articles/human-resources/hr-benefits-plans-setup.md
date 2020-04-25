@@ -3,7 +3,7 @@ title: Skapa en förmånsplan
 description: Ställ in förmånsplaner i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010614"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230118"
 ---
 # <a name="create-a-benefits-plan"></a>Skapa en förmånsplan
-
-[!include [banner](includes/preview-feature.md)]
 
 I den här artikeln beskrivs hur du ställer in förmånsplaner i Dynamics 365 Human Resources.
 
@@ -39,16 +37,16 @@ I den här artikeln beskrivs hur du ställer in förmånsplaner i Dynamics 365 H
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Plan | En unik identifierare för planen. |
-   | Beskrivning | En beskrivning av planen. |
-   | Plantyp | När du skapar en ny plan måste du ange plantypen. En plantyp är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp anger om en medarbetare kan registreras i flera planer av den typen, anger om kontakter är mottagare eller beroende och definierar omfattningsalternativ. Du kan skapa nya anpassade plantyper som uppfyller behoven hos dina förmånserbjudanden. Huvudsakliga underhållsplaner är: <ul><li>401K</li><li>LÄGG TILL</li><li>Tandvård</li><li>Lämplighet</li><li>FSA</li><li>Livförsäkring</li><li>LTD</li><li>Sjukvård</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
-   | Kod för plantyp | Plantypkoden för plantypen. |
-   | Program | Anger ett program som du vill tilldela planen till. |
-   | Bunt | Anger en bunt som du vill tilldela planen till. |
-   | Rubrik | Anger om planen är huvudplan i den bunt den är tilldelad till. |
-   | Status | Visar aktuell status för förmånsplanen. Standardvärdet är Aktiv. Om du ändrar status till inaktiv kommer planen inte att vara tillgänglig som en markering vid registreringen. |
-   | Giltig från datum och tid | Datum och tid som planen startar. Standardvärdet är det aktuella systemdatumet. |
-   | Giltig till datum och tid | Det datum och den tidpunkt då planen slutar (status är inaktiverad). Standardvärdet är 12/31/2154, vilket betyder aldrig. |
+   | **Plan** | En unik identifierare för planen. |
+   | **Beskrivning** | En beskrivning av planen. |
+   | **Plantyp** | När du skapar en ny plan måste du ange plantypen. En plantyp är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp anger om en medarbetare kan registreras i flera planer av den typen, anger om kontakter är mottagare eller beroende och definierar omfattningsalternativ. Du kan skapa nya anpassade plantyper som uppfyller behoven hos dina förmånserbjudanden. Huvudsakliga underhållsplaner är: <ul><li>401K</li><li>LÄGG TILL</li><li>Tandvård</li><li>Lämplighet</li><li>FSA</li><li>Livförsäkring</li><li>LTD</li><li>Sjukvård</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
+   | **Kod för plantyp** | Plantypkoden för plantypen. |
+   | **Program** | Anger ett program som du vill tilldela planen till. |
+   | **Bunt** | Anger en bunt som du vill tilldela planen till. |
+   | **Rubrik** | Anger om planen är huvudplan i den bunt den är tilldelad till. |
+   | **Status** | Visar aktuell status för förmånsplanen. Standardvärdet är Aktiv. Om du ändrar status till inaktiv kommer planen inte att vara tillgänglig som en markering vid registreringen. |
+   | **Giltig från datum och tid** | Datum och tid som planen startar. Standardvärdet är det aktuella systemdatumet. |
+   | **Giltig till datum och tid** | Det datum och den tidpunkt då planen slutar (status är inaktiverad). Standardvärdet är 12/31/2154, vilket betyder aldrig. |
 
 4. På fliken **Konfiguration**, ange värden för följande fält, beroende på vilken typ av plan du skapar:
 
@@ -77,42 +75,42 @@ I den här artikeln beskrivs hur du ställer in förmånsplaner i Dynamics 365 H
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Tillåt/fortsätt anmälan | Anger om medarbetarna kan registrera sig i planen om de uppfyller berättigandekraven.</br></br>Om detta är inställt på Nej blir planen inte tillgänglig för medarbetare när du bearbetar berättiganden. |
-   | Anmäl automatiskt från föregående år | Anger om en berättigad medarbetare automatiskt ska anmälas till planen om den anställda har anmälts under föregående år. |
-   | Anmäl automatiskt som standard | Anger om du vill välja planen för registrering som standard. Planen är inte obligatorisk, så medarbetaren kan ändra standardurvalet. |
-   | Stängd för nya anmälningar | Anger om planen ska begränsas till endast berättigade anställda som ingick i planen året innan. |
-   | Obligatorisk plan | Anger om medarbetarna ska registreras automatiskt i planen. Medarbetare kan inte ändra anmälans val. |
-   | Startdatum | Det datum då planen skapades i företaget. |
-   | Leverantörskonto (förmånsleverantör) | Den leverantör som företaget betalar bonus för i planen. |
-   | Namn (förmånsleverantör) | Namn på leverantören. |
-   | Leverantörsreferens (förmånsleverantör) | Leverantörens referens för planen. Till exempel företagets grupplannummer. |
-   | Alternativ referens (förmånsleverantör) | Leverantörens alternativa referens för planen. Till exempel företagets kontonummer. |
-   | Valuta (förmånsleverantör) | Den valuta som används för att betala ut bonusar till leverantören. |
-   | Utgiftskonto (förmånsleverantör) | Det redovisningskonto som används som utgiftskonto för planbonusar. |
-   | Leverantörskonto (förmånsadministratör) | Den leverantör som företaget administrera planen. Om planen är självadministrerad lämnar du det här fältet tomt. |
-   | Namn (Förmånsadministratör) | Namnet på leverantören av förmånsadministratören. |
-   | Leverantörsreferens (förmånsadministratör) | Leverantörens administratörsreferens för planen. |
-   | Alternativ referens (förmånsadministratör) | Leverantörens alternativa referens för planen. |
-   | Valuta (Förmånsadministratör) | Den valuta som används för att betala ut förmånsadministratörer. |
-   | Utgiftskonto (förmånsadministratör) | Det redovisningskonto som används som utgiftskonto för de kostnader som är associerade med administration av planen. |
+   | **Tillåt/fortsätt anmälan** | Anger om medarbetarna kan registrera sig i planen om de uppfyller berättigandekraven.</br></br>Om detta är inställt på Nej blir planen inte tillgänglig för medarbetare när du bearbetar berättiganden. |
+   | **Anmäl automatiskt från föregående år** | Anger om en berättigad medarbetare automatiskt ska anmälas till planen om den anställda har anmälts under föregående år. |
+   | **Anmäl automatiskt som standard** | Anger om du vill välja planen för registrering som standard. Planen är inte obligatorisk, så medarbetaren kan ändra standardurvalet. |
+   | **Stängd för nya anmälningar** | Anger om planen ska begränsas till endast berättigade anställda som ingick i planen året innan. |
+   | **Obligatorisk plan** | Anger om medarbetarna ska registreras automatiskt i planen. Medarbetare kan inte ändra anmälans val. |
+   | **Startdatum** | Det datum då planen skapades i företaget. |
+   | **Leverantörskonto** (förmånsleverantör) | Den leverantör som företaget betalar bonus för i planen. |
+   | **Namn** (förmånsleverantör) | Namn på leverantören. |
+   | **Leverantörsreferens** (förmånsleverantör) | Leverantörens referens för planen. Till exempel företagets grupplannummer. |
+   | **Alternativ referens** (förmånsleverantör) | Leverantörens alternativa referens för planen. Till exempel företagets kontonummer. |
+   | **Valuta** (förmånsleverantör) | Den valuta som används för att betala ut bonusar till leverantören. |
+   | **Utgiftskonto** (förmånsleverantör) | Det redovisningskonto som används som utgiftskonto för planbonusar. |
+   | **Leverantörskonto** (förmånsadministratör) | Den leverantör som företaget administrera planen. Om planen är självadministrerad lämnar du det här fältet tomt. |
+   | **Namn** (Förmånsadministratör) | Namnet på leverantören av förmånsadministratören. |
+   | **Leverantörsreferens** (förmånsadministratör) | Leverantörens administratörsreferens för planen. |
+   | **Alternativ referens** (förmånsadministratör) | Leverantörens alternativa referens för planen. |
+   | **Valuta** (Förmånsadministratör) | Den valuta som används för att betala ut förmånsadministratörer. |
+   | **Utgiftskonto** (förmånsadministratör) | Det redovisningskonto som används som utgiftskonto för de kostnader som är associerade med administration av planen. |
 
 6. Filtrera efter behov på fliken **filter**. Du kan filtrera efter följande fält:
 
-   - Affärsenhet
-   - Avdelning
-   - Juridisk person
-   - Plats
-   - Befattning
+   - **Affärsenhet**
+   - **Avdelning**
+   - **Juridisk person**
+   - **Plats**
+   - **Befattning**
 
 7. På fliken **Berättiganderegler**, ange värden för följande fält:
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Radnummer | Avtalets radnummer för berättiganderegeln. |
-   | Berättiganderegel | En berättiganderegel som ska tillämpas på förmånsplanen. Den här berättiganderegeln för kommer att tillämpas på motsvarande åtgärdstyp och är associerad med den angivna vänteperiod för försäkringen och avdrag. |
-   | Åtgärdstyp | Åtgärden för att tillämpa berättiganderegeln på: förmånsanmälan eller förmånsutgång. |
-   | Vänteperiod för försäkringen | Ett värde från formuläret väntetider. Vänteperiod för försäkringen är det antal dagar eller månader en medarbetare väntar på att få förmånsdisponeringen eller förmånsutgång baserat på kriterierna i regeln och åtgärdstypen för berättigande. |
-   | Vänteperiod för avdrag | Ett värde från formuläret väntetider. Vänteperiod för avdrag är det antal dagar eller månader en medarbetare väntar på att få förmånsavdrag från deras lön baserat på kriterierna i regeln och åtgärdstypen för berättigande. |
+   | **Radnummer** | Avtalets radnummer för berättiganderegeln. |
+   | **Berättiganderegel** | En berättiganderegel som ska tillämpas på förmånsplanen. Den här berättiganderegeln för kommer att tillämpas på motsvarande åtgärdstyp och är associerad med den angivna vänteperiod för försäkringen och avdrag. |
+   | **Åtgärdstyp** | Åtgärden för att tillämpa berättiganderegeln på: förmånsanmälan eller förmånsutgång. |
+   | **Vänteperiod för försäkringen** | Ett värde från formuläret väntetider. Vänteperiod för försäkringen är det antal dagar eller månader en medarbetare väntar på att få förmånsdisponeringen eller förmånsutgång baserat på kriterierna i regeln och åtgärdstypen för berättigande. |
+   | **Vänteperiod för avdrag** | Ett värde från formuläret väntetider. Vänteperiod för avdrag är det antal dagar eller månader en medarbetare väntar på att få förmånsavdrag från deras lön baserat på kriterierna i regeln och åtgärdstypen för berättigande. |
 
 8. Välj **Spara**.
 

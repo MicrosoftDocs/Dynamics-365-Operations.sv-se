@@ -3,7 +3,7 @@ title: Konfigurera typer av tjänstledighet och frånvaro
 description: Ställ in tjänstledighetstyper som medarbetarna kan göra i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1748ec2a888a50af9b9260720dfd439adc4686f9
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010638"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198060"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurera typer av tjänstledighet och frånvaro
 
@@ -58,17 +58,21 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 
 9. Välj **Spara**.
 
-## <a name="configure-preview-features"></a>Konfigurera förhandsfunktioner
-
-Om du har aktiverat förhandsfunktioner för tjänstledighet och frånvaro, måste du också konfigurera inställningarna för dem.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
+## <a name="configure-leave-type-rules"></a>Konfigurera regler för tjänstledighetstyp
 
 1. Ange avrundningsalternativ för tjänstledighetstypen. Alternativen inkluderar **Ingen**, **Upp**, **Ned** och **Närmast**. Du kan också ställa in avrundningsprecision för tjänstledighetstypen.
 
 2. Ange **helgdagskorrigering** för tjänstledighetstypen. När du väljer det här alternativet använder personal antalet helgdagar som infaller en arbetsdag för att avgöra hur ledighetstypen ska skjutas upp. Om t.ex. juldagen infaller på en måndag kommer personalavdelningen att subtrahera en dag från tjänstledighetstypen när periodiseringen bearbetas.
 
    Du kan ange helgdagar arbetstidskalender. Mer information finns i [skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
+   
+## <a name="configure-preview-features"></a>Konfigurera förhandsfunktioner
+
+Om du har aktiverat förhandsfunktioner för tjänstledighet och frånvaro, måste du också konfigurera inställningarna för dem.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. Välj tjänstledighetstyp för att överföra de saldon som ska överföras till. Du kan också skapa en ny tjänstledighetstyp för överföring. 
 
 ## <a name="see-also"></a>Se även
 

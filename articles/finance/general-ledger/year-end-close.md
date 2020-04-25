@@ -3,7 +3,7 @@ title: Årsbokslut
 description: I det här avsnittet beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen.
 author: kweekley
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3071365640eb6c012cb9af5461e885bb3f135143
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175628"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259781"
 ---
 # <a name="year-end-close"></a>Årsbokslut
 
@@ -74,7 +74,7 @@ Fliken **ekonomiska dimensionen** används för att definiera vilka ekonomiska d
 Årsbokslutsprocessen följer inte kontostrukturer. Detta beror på att kontostrukturer kan ändras under ett räkenskapsår och det är inte alltid möjligt att identifiera relevanta kontostrukturen på grund av dessa ändringar.  När IB-transaktioner skapas flyttas saldona framåt med ekonomiska dimensioner enligt årsbokslutsmallen. Posterna i ingående saldon kan inte längre inkludera ekonomiska dimensioner i aktuell kontostruktur och segmentkombinationerna är inte längre giltiga i den aktuella kontostrukturen. Om organisationen vill utesluta en ekonomisk dimension för balanserade vinstmedel ingående balans anger du ekonomiska dimensionen **Stäng enstaka** och lämnar dimensionsvärdet tomt.
 
 ## <a name="run-the-year-end-close-process"></a>Körning av årsbokslutprocess
-När årsbokslutsmallar skapas initieras årsbokslutsprocessen genom att välja **Kör räkenskapsåret** i åtgärdsfönstret. Välj alla eller en underuppsättning juridiska personer från den mall för vilken du vill köra årsbokslutet. När du kör årsbokslut för första gången i ett räkenskapsår, kommer du troligen att välja de juridiska personerna för att skapa ingående balanser för de juridiska personerna. Om du kör årsbokslut igen måste du köra processen endast för de juridiska personerna som justerar transaktionerna bokfördes. 
+När årsbokslutsmallar skapas initieras årsbokslutsprocessen genom att välja **Kör årsbokslut** i åtgärdsfönstret. Välj alla eller en underuppsättning juridiska personer från den mall för vilken du vill köra årsbokslutet. När du kör årsbokslut för första gången i ett räkenskapsår, kommer du troligen att välja de juridiska personerna för att skapa ingående balanser för de juridiska personerna. Om du kör årsbokslut igen måste du köra processen endast för de juridiska personerna som justerar transaktionerna bokfördes. 
 
 Välj det räkenskapsår som du vill köra den nära årsslutsprocess mot. Om det finns fler än en UB-period för den första perioden på räkenskapsåret, blir **Periodnamn** tillgängligt så att du kan välja vilken UB-period som UB-transaktioner ska bokföras på om inställningarna har definierats för att skapa UB-transaktioner. 
 

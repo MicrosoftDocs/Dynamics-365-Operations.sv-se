@@ -1,9 +1,9 @@
 ---
-title: Skärmlayout för kassan (POS)
+title: Visuella konfigurationer för kassaanvändargränssnitt
 description: Det här avsnittet innehåller information om skärmlayouter för Dynamics 365 Commerce kassamiljöer (POS)-uppgifter.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024117"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261477"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skärmlayout för kassan (POS)
+# <a name="pos-user-interface-visual-configurations"></a>Visuella konfigurationer för kassaanvändargränssnitt
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Det här avsnittet innehåller information om skärmlayouter för Dynamics 365 Commerce kassamiljöer (POS)-uppgifter.
-
-Användargränssnittet för kassa kan konfigureras med en kombination av visuella profiler och skärmlayouter, tilldelade till butiker, kassor och/eller användare.
+Användargränssnittet (UI) för Microsoft Dynamics 365 Commerce kassa (POS) kan konfigureras med en kombination av visuella profiler och skärmlayouter, tilldelade till butiker, kassor och användare. Det här avsnittet innehåller information om dessa konfigurationsalternativ.
 
 Följande bild visar förhållandet mellan de olika enheter som utgör de konfigurerbara elementen i Användargränssnittet för kassa.
 
@@ -40,7 +39,7 @@ Följande bild visar förhållandet mellan de olika enheter som utgör de konfig
 
 ## <a name="visual-profile"></a>Visuell profil
 
-Visuella profiler tilldelas till kassor och de anger visuella element som är kassaspecifika och delade för användare. Alla användare som loggar in på kassan ser samma tema, färger och bilder.
+Visuella profiler tilldelas till kassor och de anger visuella element som är kassaspecifika och delade för användare. Alla användare som loggar in på kassan ser samma tema, layout, färger och bilder.
 
 ![Välkommen till POS-skärmen med ljust tema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ Visuella profiler tilldelas till kassor och de anger visuella element som är ka
 
 - **Profilnummer** - Profilnumret är en unik identifierare för den visuella profilen.
 - **Beskrivning** - Du kan ange ett beskrivande namn som gör det lättare att identifiera korrekt profil för din situation.
-- **Tema** - Du kan välja mellan programtema Ljus eller Mörk. Temat påverkar teckensnitt och bakgrundsfärg färgerna i hela programmet.
+- **Tema** – Du kan välja mellan programtema **Ljus** och **Mörk**. Temat påverkar teckensnitt och bakgrundsfärg färgerna i hela programmet.
 - **Accentfärg** - Accentfärgen används i hela kassan för att åtskilja eller framhäva vissa visuella element som rubriker, kommandoknappar eller hyperlänkar. Dessa element är vanligtvis åtgärdbara.
-- **Färgen på rubriken** – du kan konfigurera färgen på sidhuvudet för att tillgodose återförsäljarens varumärkeskrav. Den här funktionen är endast i Retail version 1611.
-- **Visa datum/tid** – när den är aktiverad visas aktuellt datum och tid i kassarubrik.
-- **Inloggningsbakgrunder** - Du kan ange en bakgrundsbild för inloggningsskärmen. Bakgrundsbildfilens storlek bör hållas så liten som möjligt, eftersom lagring och inläsning av stora filer kan påverka programfunktioner och prestanda.
-- **Programmets bakgrund** - Du kan ange en bakgrundsbild som används istället för den fasta temafärgen i hela programmet. När det gäller inloggningsbakgrunder ska filstorleken hållas så liten som möjligt.
+- **Färgen på rubriken** – du kan konfigurera färgen på sidhuvudet för att tillgodose återförsäljarens varumärkeskrav.
+- **Teckensnittsschema** – du kan välja mellan **standard** och **stora** teckensnittsscheman. Teckensnittsschemat påverkar teckenstorleken i hela programmet. Standardvalet är **Standard**.
+- **Visa alltid programfältets etiketter** – när det här alternativet är aktiverat är etikettexten alltid synlig under knapparna i programfältet.
+- **Layout** – du kan välja mellan layouterna **centrerad** och **höger**. Layouten påverkar justeringen av inloggningsrutan på inloggningsskärmen. Standardvalet är **centrerad**.
+- **Visa datum/tid** – när det här alternativet är aktiverat visas aktuellt datum och aktuell tid i kassarubriken och på inloggningsskärmen.
+- **Tangentbord** – du kan välja mellan **Standard till OS-tangentbord** och **Visa numeriskt knappsats** om du vill ange vilket standardtangentbord som används för inmatning på inloggningsskärmen. Det numeriska tangent bordet är ett virtuellt tangent bord som huvudsakligen används för beröringsbaserade enheter. Standardvalet är **Standard till OS-tangentbord**.
+- **Logotypbild** – du kan ange en logotypbild som visas på inloggningsskärmen. Vi rekommenderar att du använder en bild som har transparent bakgrund. Bildfilens storlek bör hållas så liten som möjligt, eftersom lagring och inläsning av stora filer kan påverkas när stora filer lagras och överförs.
+- **Inloggningsbakgrund** - Du kan ange en bakgrundsbild för inloggningsskärmen. Filstorleken för bakgrundsbilder ska hållas så liten som möjligt.
+- **Bakgrund** - Du kan ange en bakgrundsbild som används istället för den fasta temafärgen i hela programmet. Som bakgrundsbilder för inloggningsskärmen ska filstorleken hållas så liten som möjligt.
+
+> [!NOTE]
+> Layouten **höger** och datum/tid-visning gäller inte för inloggningsskärmen i den kompakta vyn.
 
 ## <a name="screen-layouts"></a>Skärmlayouter
 
-Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av gränssnittskontrollerna på kassavälkomstskärmen och **transaktionsskärmen**.
+Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av gränssnittskontrollerna på kassans **välkomst**-skärm och **transaktions**-skärmen.
 
 ![Visa vy för kassaskärmslayout](../commerce/media/POS-Screen-Layout-View.png)
 

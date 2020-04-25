@@ -3,7 +3,7 @@ title: Lista över ER-funktioner i textkategorin
 description: Det här ämnet ger information om textfunktionerna som stöds i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916624"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201099"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista över ER-funktioner i textkategorin
 
@@ -52,7 +52,7 @@ Textfunktioner för elektronisk rapportering (ER) kan användas för att utföra
 | [Ersätta](er-functions-text-replace.md) | Den här funktionen returnerar den angivna textsträngen som ett *sträng*-värde när hela eller en del av den har ersatts med en annan sträng. |
 | [Höger](er-functions-text-right.md) | Den här funktionen returnerar ett *sträng*-värde som visar angivet antal tecken från slutet av den angivna strängen. |
 | [Text](er-functions-text-text.md) | Den här funktionen returnerar det specificerade numret som ett *Sträng*-värde efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella programinstansen. |
-| [Översätt](er-functions-text-translate.md) | Den här funktionen returnerar den angivna textsträngen som ett *sträng*-värde när hela eller en del av den har ersatts med en annan sträng. |
+| [Översätt](er-functions-text-translate.md) | Funktionen returnerar ett *sträng*-värde som innehåller resultatet av teckenersättningen för angiven text i tecken som ingår i en annan uppsättning tecken. |
 | [Trim](er-functions-text-trim.md) | Den här funktionen returnerar den angivna textsträngen som ett *Sträng*-värde efter att inledande och efterföljande blanksteg har trunkerats och multipla blanksteg mellan ord har tagits bort. |
 | [Upper](er-functions-text-upper.md) | Den här funktionen returnerar den angivna textsträngen som ett *sträng*-värde efter att den har konverterats till versaler. |
 

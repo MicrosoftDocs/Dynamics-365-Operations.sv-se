@@ -3,7 +3,7 @@ title: REPLACE ER-funktion
 description: Det här avsnittet innehåller information om hur funktionen REPLACE elektronisk rapportering (ER) används.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba2590635ba465dae9ea50d3e4da989365548f3b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 83d5095620a938f1ac4b8428fff9209fda7a7831
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040996"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201076"
 ---
-# <a name="REPLACE">REPLACE ER-funktion</a>
+# <a name=""></a><a name="REPLACE">REPLACE ER-funktion</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +69,7 @@ Det resulterande textvärdet.
 
 Om `regular expression flag`-argumentet är **SANT** returnerar den här funktionen den angivna strängen när den har ändrats genom att använda det reguljära uttrycket som anges av `pattern`-argumentet. Vanliga uttryck används för att hitta tecken som måste ersättas.
 
-Om argumentet `regular expression flag` är **FALSKT** fungerar den här funktionen som [TRANSLATE](er-functions-text-translate.md). De tecken som anges av `replacement` argument används för att ersätta tecken som hittas. 
+Om argumentet `regular expression flag` är **FALSKT**, returnerar funktionen den angivna strängen efter att tecken uppsättningen som har definierats i argumentet `pattern` ersatts av tecknen i argumentet `replacement`. 
 
 ## <a name="example-1"></a>Exempel 1
 

@@ -3,7 +3,7 @@ title: Skapa plantyper
 description: En plantyp i Microsoft Dynamics 365 Human Resources är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d9bb490326c6dbfafa0f186cd05185ac01bad30
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 06a36f9f3fef54e7e06d616c9179374db4ce7115
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092385"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229704"
 ---
 # <a name="create-plan-types"></a>Skapa plantyper
-
-[!include [banner](includes/preview-feature.md)]
 
 En plantyp i Microsoft Dynamics 365 Human Resources är en grupp på hög nivå med specifika typer av förmåner. Varje plantyp har en plantypkod som bestämmer regler för plantypen. Exempel: den grundläggande plantypen enkelt liv skulle ha plantypkoden liv eftersom den är en typ av livförsäkringsplan och måste följa reglerna för plantypkoden för liv. En annan plantyp kan vara tillägg liv, även med plantypkod liv.
 
@@ -45,23 +43,23 @@ En plantyp kan definiera täckningsalternativ. Alternativen för disponering är
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Plantyp | Ett unikt namn som identifierar plantypen. |
-   | Beskrivning | En beskrivning av plantypen. |
-   | Kod för plantyp | Välj en kod för plantyp från listrutan med värden. I listan med kod för plantyp visas alla plantyper som stöds i den aktuella versionen. |
-   | Samtidig anmälan | Anger om en medarbetare kan registrera flera förmånsplaner av samma plantyp eller endast en förmånsplan per plantypen. |
-   | Kontakttyp | Anger rollen för personalkontakten. Värdena är tomma, beroende och mottagare. Du kan lämna kontakttypen tom om deras plantyp inte kräver en beroende eller mottagare som baseras på omfattningsalternativ. |
+   | **Plantyp** | Ett unikt namn som identifierar plantypen. |
+   | **Beskrivning** | En beskrivning av plantypen. |
+   | **Kod för plantyp** | Välj en kod för plantyp från listrutan med värden. I listan med kod för plantyp visas alla plantyper som stöds i den aktuella versionen. |
+   | **Samtidig anmälan** | Anger om en medarbetare kan registrera flera förmånsplaner av samma plantyp eller endast en förmånsplan per plantypen. |
+   | **Kontakttyp** | Anger rollen för personalkontakten. Värdena är tomma, beroende och mottagare. Du kan lämna **kontakttypen** tom om deras plantyp inte kräver en beroende eller mottagare som baseras på omfattningsalternativ. |
 
 4. Om du vill konfigurera livshändelsealternativ väljer du **åtgärder** och väljer sedan **alternativ för livshändelser**. Ange värden för de följande fälten:
 
    | Fält | Beskrivning |
    | --- | --- |
-   | Plantyp | Plantypen för att konfigurera livshändelsealternativ för. |
-   | ID för livshändelsetyp | ID för livshändelsetypen. |
-   | Tillåt annullering | Anger om en medarbetare kan annullera en förmånsplan under en livshändelse. |
-   |Ändra omfattningsalternativ | Anger om en medarbetare kan ändra omfattningsalternativ under en livshändelse. |
-   | Ändra till en ny plan | Anger om en medarbetare kan ändra planer under en livshändelse. |
-   | Annullera plan automatiskt |Anger om planen ska annulleras automatiskt under livshändelsen. |
-   | Öppna berättigandekontrollen igen automatiskt | Anger om berättigandekontrollen av förmånsanmälan automatiskt ska öppnas igen under livshändelsen. |
-   | Rapportfönster | Anger rapportfönstret, i dagar, för livshändelsen. **Obs**! om du inte anger ett belopp, förutsätts att rapportfönstret är noll och livshändelsen bearbetas inte. |
+   | **Plantyp** | Plantypen för att konfigurera livshändelsealternativ för. |
+   | **ID för livshändelsetyp** | ID för livshändelsetypen. |
+   | **Tillåt annullering** | Anger om en medarbetare kan annullera en förmånsplan under en livshändelse. |
+   | **Ändra omfattningsalternativ** | Anger om en medarbetare kan ändra omfattningsalternativ under en livshändelse. |
+   | **Ändra till en ny plan** | Anger om en medarbetare kan ändra planer under en livshändelse. |
+   | **Annullera plan automatiskt** | Anger om planen ska annulleras automatiskt under livshändelsen. |
+   | **Öppna berättigandekontrollen igen automatiskt** | Anger om berättigandekontrollen av förmånsanmälan automatiskt ska öppnas igen under livshändelsen. |
+   | **Rapportfönster** | Anger rapportfönstret, i dagar, för livshändelsen. **Obs**! om du inte anger ett belopp, förutsätts att rapportfönstret är noll och livshändelsen bearbetas inte. |
 
 5. Välj **Spara**. 

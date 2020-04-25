@@ -2,15 +2,15 @@
 title: Fördröjningar
 description: Det här ämnet innehåller information om fördröjda data i huvudplaneringen. Ett fördröjt datum är ett realistiskt förfallodatum som en transaktion får om det tidigaste uppfyllelsedatumet som huvudplaneringen beräknar infaller efter begärt datum.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522299"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203858"
 ---
 # <a name="delays"></a>Fördröjningar
 
@@ -44,6 +44,12 @@ På sidan **Huvudplaneringsparametrar** kan du ange starttiden för beräkningen
 
 > [!NOTE]
 > I tidigare versioner kallades beräknade förseningar *leveransplansmeddelanden*, förseningsdatumet kallades *leveransplansdatum* och en försenad transaktion kallades *en transaktion som är inställd på ett datum i framtiden*.
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Begränsade förseningar i produktionsinställningarna med flera strukturlistenivåer
+När du arbetar med förseningar i en produktionsinställning som har flera strukturlistenivåer, är det viktigt att observera att endast artiklarna direkt ovanför artikeln (i strukturlistan) som orsakar fördröjningen uppdateras med en fördröjning som en del av huvudplaneringskörningen. Andra artiklar i strukturlistan får inte den fördröjning som används fram till den första huvudplaneringskörningen, när den planerade ordern för den översta nivån har godkänts eller bekräftats. 
+
+För att undvika den här kända begränsningen kan tillverkningsorder högst upp i strukturlistan med förseningar godkännas (eller bekräftas) före nästa huvudplaneringskörning. På så sätt behålls förseningen från den fördröjda godkända planerade tillverkningsordern och alla underliggande komponenter uppdateras enligt detta.
+Åtgärdsmeddelanden kan också användas för att identifiera planerade order som kan flyttas till ett senare datum, på grund av andra förseningar i strukturlistan.
 
 ## <a name="desired-date"></a>Önskat datum
 
