@@ -44,6 +44,8 @@
                   href: provisioning-guide.md
                 - name: Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce
                   href: cpe-post-provisioning.md
+                - name: Konfigurera BOPIS i en Dynamics 365 Commerce-miljö
+                  href: cpe-bopis.md
                 - name: Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce
                   href: cpe-optional-features.md
                 - name: Förhandsversion för Dynamics 365 Commerce – vanliga frågor
@@ -86,6 +88,8 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.11 (juli 2020)
+                      href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (maj 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (april 2020)
@@ -202,10 +206,12 @@
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: PA-DSS-certifiering (Payment Application Data Security Standards)
                   href: dev-itpro/PA-DSS-Certification.md
-                - name: Handelsmöjligheter i lokala distributioner
+                - name: Commerce-möjligheter i lokala distributioner
                   href: retail-onprem.md
             - name: Distribution och snabbkorrigeringar
               items:
+                - name: Synkronisera installationsprogram för självbetjäning i Dynamics 365 Commerce
+                  href: dev-itpro/Synchronize-installers.md
                 - name: Commerce Scale Unit
                   href: dev-itpro/retail-store-system-begin.md
                 - name: Konfigurera och installera Commerce Scale Unit
@@ -214,7 +220,7 @@
                   href: retail-modern-pos-device-activation.md
                 - name: Hantera konton och enheter från huvudkontoret
                   href: set-up-activation-accounts-validate-devices-hq.md
-                - name: Enhetsaktivering för POS
+                - name: Aktivering av kassaenhet
                   href: dev-itpro/retail-device-activation.md
                 - name: Hjälp att skydda Cloud POS i delade miljöer
                   href: dev-itpro/secure-retail-cloud-pos.md
@@ -226,6 +232,8 @@
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Använd ett paket som kan distribueras
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
+                - name: Initiera startdata i nya Commerce-miljöer
+                  href: enable-configure-retail-functionality.md
             - name: Livscykelhantering för implementering
               items:
                 - name: Livscykelhantering för implementering – startsida
@@ -334,25 +342,25 @@
                   items:
                     - name: Välja mellan MPOS och Cloud POS
                       href: MPOS-or-CPOS.md
-                    - name: POS-åtgärder online och offline
+                    - name: Kassaåtgärder online och offline
                       href: pos-operations.md
                     - name: Enhetsaktivering av en anpassad Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Aktivera Azure Active Directory-autentisering för POS-inloggning
+                    - name: Aktivera Azure Active Directory-autentisering för kassainloggning
                       href: aad-pos-logon.md
                     - name: Demodataskärmlayouter i MPOS och Cloud POS
                       href: demo-data.md
-                    - name: Produkt- och kundsökning i POS
+                    - name: Produkt- och kundsökning i kassan
                       href: POS-search-improvements.md
                     - name: Söka efter produkter och produktvarianter under orderregistrering
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Förbättringar av likviditetsstyrning
                       href: cash-mgmt.md
-                    - name: Lagersökning i POS
+                    - name: Lagersökning i kassan
                       href: product-variants-POS.md
-                    - name: Pausa och återuppta transaktioner i POS
+                    - name: Pausa och återuppta transaktioner i kassan
                       href: pos-suspend-recall-transactions.md
-                    - name: Offlinefunktioner för POS
+                    - name: Offlinefunktioner för kassan
                       href: pos-offline-functionality.md
                     - name: Hantering av skift och kassalåda
                       href: shift-drawer-management.md
@@ -360,7 +368,7 @@
                       href: dev-itpro/gift-card-cash-out.md
                     - name: Leverera beställningar från en annan butik
                       href: charge-send.md
-                    - name: Dölj leveranslägen utan transportföretag från dialogrutan för POS-försändelse
+                    - name: Dölj leveranslägen utan transportföretag från kassans dialogrutan för leverans
                       href: hide-non-carrier-modes.md
                     - name: Uppgiftsinspelare och hjälp för MPOS och Cloud POS
                       href: task-recorder-retail-pos.md
@@ -370,25 +378,25 @@
                           href: retail-peripherals-overview.md
                         - name: Kringutrustningssimulator
                           href: dev-itpro/retail-peripheral-simulator.md
-                        - name: Ansluta kringutrustning till POS
+                        - name: Ansluta kringutrustning till kassan
                           href: define-maintain-channel-clients-registers-hw-stations.md
-                        - name: Hälsokontroll för kringutrustning och tjänster för POS
+                        - name: Hälsokontroll för kringutrustning och tjänster för kassa
                           href: pos-healthcheck.md
                     - name: Skärmlayouter
                       items:
                         - name: Demonstrationsdataskärmens layout i MPOS/CPOS
                           href: demo-data.md
-                        - name: Skärmlayouter för POS
+                        - name: Visuella konfigurationer för kassaanvändargränssnitt
                           href: pos-screen-layouts.md
-                        - name: Installera layoutdesignern för POS
+                        - name: Installera layoutdesignern för kassa
                           href: install-pos-layout-designer.md
                         - name: Välja meddelandeinställningar
                           href: Notifications-POS.md
-                        - name: Inställningar för POS-program och användarspråk
+                        - name: Inställningar för kassaprogram och användarspråk
                           href: pos-application-user-language-settings.md
                         - name: Ställa in och hantera bilder för MPOS
                           href: set-up-manage-images-retail-mpos.md
-                        - name: Klientbilder i POS
+                        - name: Klientbilder i kassan
                           href: pos-image.md
                     - name: Kundorder
                       items:
@@ -398,7 +406,7 @@
                           href: hybrid-customer-orders.md
                     - name: Försäljare
                       items:
-                        - name: Spåra provisioner i POS med hjälp av försäljningsgrupper
+                        - name: Spåra provisioner i kassan med hjälp av försäljningsgrupper
                           href: pos-sales-groups-track-commissions.md
                     - name: Enhetsaktivering
                       items:
@@ -408,11 +416,11 @@
                           href: extended-logon.md
                         - name: Hantera aktiveringskonton och validera enheter
                           href: set-up-activation-accounts-validate-devices-hq.md
-                    - name: Skapa ekonomiska dimensioner för POS-register och konfigurera dimensionsvärden för register
+                    - name: Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
                       href: tasks/create-financial-dimensions-pos.md
-                    - name: Skapa POS-behörighetsgrupp
+                    - name: Skapa kassabehörighetsgrupp
                       href: tasks/create-pos-permission-groups.md
-                    - name: Skapa visuella POS-profiler
+                    - name: Skapa visuella kassaprofiler
                       href: tasks/create-pos-visual-profile-2016-02.md
                 - name: Konfigurera och installera Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
@@ -484,7 +492,7 @@
                       href: work-with-payments.md
                     - name: 'Inställning, auktorisering och registrering av kreditkort'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurera kontantvalörer för POS
+                    - name: Konfigurera kontantvalörer för kassan
                       href: cash-denominations.md
                     - name: Konfigurera kreditkortsbearbetning
                       href: tasks/configure-credit-card-processing.md
@@ -580,7 +588,7 @@
                   href: retail-shipping-discount.md
                 - name: Ställa in kuponger
                   href: retail-coupons.md
-                - name: Visa rabatter i POS
+                - name: Visa rabatter i kassan
                   href: discounts-pos.md
                 - name: Prisrapporter
                   href: price-report.md
@@ -602,9 +610,9 @@
                       href: personalized-recommendations.md
                     - name: Avanmäl anpassade rekommendationer
                       href: personalization-gdpr.md
-                - name: POS-upplevelser
+                - name: Kassaupplevelser
                   items:
-                    - name: Lägg till produktrekommendationer i POS
+                    - name: Lägga till produktrekommendationer i kassan
                       href: product.md
                     - name: Lägg till rekommendationer på transaktionsskärmen
                       href: add-recommendations-control-pos-screen.md
@@ -640,9 +648,9 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Ställa in regler och parametrar för direktleverans och centraliserad distribution
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
-                    - name: Inkommande lageråtgärder i POS
+                    - name: Inkommande lageråtgärder i kassan
                       href: pos-inbound-inventory-operation.md
-                    - name: Utgående lageråtgärder i POS
+                    - name: Utgående lageråtgärder i kassan
                       href: pos-outbound-inventory-operation.md
                     - name: Beräkna lagertillgänglighet för butikskanaler
                       href: calculated-inventory-retail-channels.md
@@ -666,7 +674,7 @@
               items:
                 - name: Skapa en kundtjänstorder
                   href: tasks/create-call-center-orders.md
-                - name: Ändra Leveranssätt i POS
+                - name: Ändra leveranssätt i kassan
                   href: POS-change-delivery-mode.md
             - name: Fördelad orderhantering
               items:
@@ -680,7 +688,7 @@
                   href: order-fulfillment-overview.md
                 - name: Ställa in orderuppfyllelse för butiker
                   href: order-fulfillment-pos-setup.md
-                - name: Visa ordermeddelanden i POS
+                - name: Visa ordermeddelanden i kassan
                   href: notifications-pos.md
                 - name: Sälja kontinuitetsprogram och bearbeta försäljningsorder
                   href: tasks/use-continuity-program.md
@@ -760,7 +768,7 @@
               href: task-mgmt-create-lists.md
             - name: Tilldela butiker eller medarbetare uppgiftslistor
               href: task-mgmt-assign-lists.md
-            - name: Uppgiftshantering i POS
+            - name: Uppgiftshantering i kassan
               href: task-mgmt-pos.md
         - name: Hantera din e-handelsplats
           items:
@@ -906,6 +914,8 @@
                   href: cookie-compliance.md
                 - name: Lägga till en sida med sekretesspolicy
                   href: add-privacy-page.md
+                - name: 'Ersätt användar-ID:n som är associerade med spårade innehållsändringar'
+                  href: replace-IDs-tracked-changes.md
             - name: Startpaket
               items:
                 - name: Startpaket – översikt
@@ -942,12 +952,16 @@
                   items:
                     - name: Kundvagnsmodul
                       href: add-cart-module.md
+                    - name: Ikon för kundvagnsmodul
+                      href: cart-icon-module.md
                     - name: Kassamodul
                       href: add-checkout-module.md
                     - name: Modul för orderbekräftelse
                       href: order-confirmation-module.md
                     - name: Modul för butiksväljare
                       href: store-selector.md
+                    - name: Presentkortsmodul
+                      href: add-giftcard.md
                 - name: Moduler för kontohantering
                   items:
                     - name: Sidor och moduler för kontohantering
@@ -1044,7 +1058,7 @@
               items:
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-swe-cash-registers.md
-                - name: Exempel för POS-integration med styrenheter
+                - name: Exempel för kassaintegration med styrenheter
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering och Power BI-integrationer
           items:
@@ -1940,6 +1954,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurera temainställningar
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Utöka ett tema
+                      href: e-commerce-extensibility/extend-theme.md
                 - name: Mata in skript
                   items:
                     - name: Skriptinmatare
@@ -1962,6 +1978,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Slå samman versionssystemen för Commerce och Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+                - name: Migrera SDK för Retail från Visual Studio 2015 till Visual Studio 2017
+                  href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: 'Exempel på utbyggbarhet: SDK för Retail'
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Skapa distribuerbara paket
@@ -1970,23 +1988,23 @@
                   href: dev-itpro/cloud-dev-box.md
             - name: Utbyggbarhet för kassa
               items:
-                - name: POS-skärmslayouter
+                - name: Skärmlayouter för kassa
                   href: pos-screen-layouts.md
-                - name: Öppna URL i POS
+                - name: Öppna URL i kassa
                   href: Open-URL-in-POS.md
-                - name: Installera layoutdesignern för POS
+                - name: Installera layoutdesignern för kassa
                   href: install-pos-layout-designer.md
-                - name: Utöka vyn med dubbla bildskärmar för POS
+                - name: Utöka vyn med dubbla bildskärmar för kassan
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: 'Modern POS och Cloud POS, utbyggbarhet för utlösare'
                   href: dev-itpro/modern-pos-trigger-extensibility.md
-                - name: Lägga till anpassade kontroller i POS-vyer
+                - name: Lägga till anpassade kontroller i kassavyer
                   href: dev-itpro/pos-custom-control.md
-                - name: Lägga till POS-åtgärder i POS-layouter med hjälp av knappsatsdesigner
+                - name: Lägga till kassaåtgärder i kassalayouter med hjälp av knappsatsdesigner
                   href: dev-itpro/add-POS-operations.md
-                - name: 'POS API:er'
+                - name: 'API:er för kassa'
                   href: dev-itpro/POS-APIs.md
-                - name: Tillägg för POS-betalning
+                - name: Betalningstillägg för kassa
                   href: dev-itpro/pos-payment-extension.md
                 - name: Stöd för externa presentkort
                   href: dev-itpro/gift-card.md
@@ -1994,41 +2012,41 @@
                   href: dev-itpro/create-retail-experience-app.md
                 - name: Konfigurera appen POS Hybrid i Android och iOS
                   href: dev-itpro/hybridApp.md
-                - name: Åsidosätt begärandehanterare för POS
+                - name: Åsidosätt begärandehanterare för kassa
                   href: dev-itpro/pos-handler.md
-                - name: Visa information om POS-tilläggspaket
+                - name: Visa information om tilläggspaket för kassa
                   href: dev-itpro/view-pos-extension-package-details.md
                 - name: Testinspelare och Regression Suite Automation Tool för Cloud POS
                   href: dev-itpro/pos-rsat.md
-                - name: Lägga till anpassade fält i summapanel för POS
+                - name: Lägga till anpassade fält i summapanel för kassa
                   href: dev-itpro/custom-field-pos-totals.md
-                - name: Visa anpassade meddelanden i POS
+                - name: Visa anpassade meddelanden i kassa
                   href: dev-itpro/extend-pos-notification.md
                 - name: Signera MPOS med certifikat för kodsignering
                   href: dev-itpro/pos-app-signing-certificate.md
-                - name: Utöka POS-vyer för att lägga till egna kolumner och knappar i appfältet
+                - name: Utöka kassavyer för att lägga till egna kolumner och knappar i appfältet
                   href: dev-itpro/pos-view-extension.md
                 - name: Lägga till egna kontroller på Modern POS-transaktionssidor
                   href: dev-itpro/pos-custom-transaction.md
-                - name: Lägga till egna kolumner i ett transaktionsrutnät för POS
+                - name: Lägga till egna kolumner i ett transaktionsrutnät för kassa
                   href: dev-itpro/pos-custom-transaction-column.md
-                - name: 'Anropa API:er eller åtgärder för POS från POS-tillägg'
+                - name: 'Anropa API:er eller åtgärder för kassa från kassatillägg'
                   href: dev-itpro/pos-api-extension.md
                 - name: Utlösare och utskrift för Modern POS
                   href: dev-itpro/pos-trigger-printing.md
-                - name: Lägga till anpassade kontroller i designerbaserade vyer (ej skärm) för POS
+                - name: Lägga till anpassade kontroller i designerbaserade vyer (ej skärm) för kassa
                   href: dev-itpro/pos-control-non-screen.md
-                - name: Kör POS-exemplen
+                - name: Kör kassaexemplen
                   href: dev-itpro/pos-run-samples.md
                 - name: Riktlinjer för implementering av enhetshantering
                   href: implementation-considerations-devices.md
-                - name: POS-vy för händelser och hanterare av kundvagn
+                - name: Kassavy för kundvagnens händelser och hanterare
                   href: dev-itpro/cart-view-handlers.md
             - name: Utbyggbarhet för Hardware Station
               items:
                 - name: Hardware Station och utbyggbarhet
                   href: dev-itpro/hardware-station-extensibility.md
-                - name: Integrera POS med ny maskinvaruenhet
+                - name: Integrera kassa med ny maskinvaruenhet
                   href: dev-itpro/hardware-device-extension.md
             - name: Utbyggbarhet för Retail Server
               items:
