@@ -3,7 +3,7 @@ title: Lägg till ett välkomstmeddelande
 description: I det här avsnittet beskrivs hur du lägger till ett välkomstmeddelande på Microsoft Dynamics 365 Commerce-webbplatsen.
 author: psimolin
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ca10b01268b5dcd4c6fe448d90cd0ebd65a2673b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d2a125b4e71016ad620f128af2e3c9f29aa04f4c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001264"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269629"
 ---
 # <a name="add-a-welcome-message"></a>Lägg till ett välkomstmeddelande
 
@@ -41,17 +41,14 @@ När ett välkomstmeddelande läggs till i ett delat rubrikavsnitt visas det på
 
 Gör så här om du vill lägga till ett välkomstmeddelande på webbplatsen:
 
-1. I Dynamics 365 Commerce gå till webbplatsen.
+1. I Commerce webbplatsskaparen, gå till din webbplats.
 1. Välj **fragment**.
 1. Välj det rubrikavsnitt som meddelandet ska läggas till.
 1. Expandera **fel-/informationsmeddelanden** i dispositionsträdet.
-1. Välj notifieringsmodul.
-
-    Om det inte redan finns en notifieringsregel väljer du ellipsknappen-knappen (**...**) bredvid **fel-/informationsmeddelanden** och välj sedan **Lägg till modul**. Markera notifieringsmodulen och klicka sedan på **OK**.
-
+1. Markera notifieringsmodulen och klicka sedan på **OK**. Om det inte redan finns en notifieringsregel väljer du först ellipsknappen-knappen (**...**) bredvid **fel-/informationsmeddelanden** och välj sedan **Lägg till modul**.
 1. I egenskapsfönstret till höger, på fliken **Data** välj **Lägg till datakälla** och sedan **Innehåll**.
 1. I fältet **Inmatningstext** ange texten för välkomstmeddelandet.
-1. Spara rubrikfragmentet, checka in det och publicera det.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in rubrikavsnittet och välj sedan **publicera** för att publicera den. 
 
 Välkomstmeddelandet visas nu överst på varje webbplatssida där det valda rubrikavsnittet används.
 

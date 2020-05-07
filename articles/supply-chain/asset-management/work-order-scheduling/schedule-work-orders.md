@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a09b90c19d8d4fe5d08abc892ed0c42d9d4592d8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211731"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275612"
 ---
 # <a name="schedule-work-orders"></a>Schemalägg arbetsorder
 
@@ -102,14 +102,14 @@ Om servicenivåpoängen höjs till "100" i stället för "5" blir planeringsordn
 
 Bedömningspoängen för att beräkna vilka underhållsarbetare som ska arbeta med arbetsorderna ställs in som siffror som läggs till i varje underhållsarbetares beräkning under arbetsorderplaneringen. Underhållsarbetaren med högsta poäng väljs för arbetsordern. Här följer en kort beskrivning av underhållsarbetarens poäng:
 
-| Poäng för underhållsarbetare       | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ansvarig arbetare | Om underhållsarbetaren väljs som ansvarig arbetare på arbetsordern, läggs poängen till.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Ansvarig grupp med underhållsarbetare | Om underhållsarbetaren ingår i den ansvariga underhållsarbetargruppen på arbetsordern, läggs poängen till.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Prioriterad underhållsarbetare         | Om arbetaren väljs som prioriterad underhållsarbetare på tillgången, läggs poängen till.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Prioriterad grupp med underhållsarbetare   | Om arbetaren ingår i den prioriterade underhållsarbetargruppen på tillgången, läggs poängen till.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Plats                 | Om ditt företag använder funktionsplatser får underhållsarbetarna full poäng om de finns på den funktionsplats som är relaterad till tillgången. Om funktionsplatsen för tillgången har en överordnad plats, får underhållsarbetare på funktionsplatsen 1/2 poäng. Om den platsen också har en överordnad, får underhållsarbetare på den platsen 1/3 poäng. Om den platsen också har en överordnad, får underhållsarbetare på den platsen 1/4 poäng, osv. Om ditt företag använder tillgångsplats, som vi inte rekommenderar, används plats, område och zon för att beräkna platspoäng. Arbetare får full poäng om de finns på platsen och området och zonen som är relaterade till tillgången. Om arbetsplatsen endast matchar plats och område, är poängen för underhållsarbetaren 2/3 av hela poängen. Om underhållsarbetarens plats endast matchar plats, är poängen för underhållsarbetaren 1/3 av hela poängen. |
-| Arbetarens startdatum               | För varje datum som det schemalagda startdatumet är senare än det förväntade startdatumet subtraheras poängen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Poäng för underhållsarbetare| Beskrivning |
+|---|---|
+| Ansvarig arbetare | Om underhållsarbetaren väljs som ansvarig arbetare på arbetsordern, läggs poängen till. |
+| Ansvarig grupp med underhållsarbetare | Om underhållsarbetaren ingår i den ansvariga underhållsarbetargruppen på arbetsordern, läggs poängen till. |
+| Prioriterad underhållsarbetare         | Om arbetaren väljs som prioriterad underhållsarbetare på tillgången, läggs poängen till. |
+| Prioriterad grupp med underhållsarbetare   | Om arbetaren ingår i den prioriterade underhållsarbetargruppen på tillgången, läggs poängen till.  |
+| Plats  | Om ditt företag använder funktionsplatser får underhållsarbetarna full poäng om de finns på den funktionsplats som är relaterad till tillgången. Om funktionsplatsen för tillgången har en överordnad plats, får underhållsarbetare på funktionsplatsen 1/2 poäng. Om den platsen också har en överordnad, får underhållsarbetare på den platsen 1/3 poäng. Om den platsen också har en överordnad, får underhållsarbetare på den platsen 1/4 poäng, osv. Om ditt företag använder tillgångsplats, som vi inte rekommenderar, används plats, område och zon för att beräkna platspoäng. Arbetare får full poäng om de finns på platsen och området och zonen som är relaterade till tillgången. Om arbetsplatsen endast matchar plats och område, är poängen för underhållsarbetaren 2/3 av hela poängen. Om underhållsarbetarens plats endast matchar plats, är poängen för underhållsarbetaren 1/3 av hela poängen. |
+| Arbetarens startdatum  | För varje datum som det schemalagda startdatumet är senare än det förväntade startdatumet subtraheras poängen.  |
 
 >[!NOTE]
 >Om poängen är inställd på "0" beräknas inte poängen. Detta är användbart om du t.ex. inte vill inkludera ansvarig arbetare i planeringen.
@@ -120,3 +120,21 @@ Kompetenser och intygs krav kan ställas in för underhållsjobbtyper (**Tillgå
 
 Underhållsjobbtyper och yrkesgrenar för underhållsjobb väljs på arbetsorderjobb. Om kompetenser eller intyg har valts för en underhållsjobbtyp eller yrkesgren för underhållsjobb, och den underhållsjobbtypen eller yrkesgrenen för underhållsjobb används för ett arbetsorderjobb, planeras endast underhållsarbetare med matchande kompetenser och intyg för arbete på arbetsordern.
 
+<a name="gantt"></a>
+
+## <a name="work-with-scheduled-work-orders-using-a-gantt-chart"></a>Arbeta med schemalagda arbetsorder med hjälp av ett Gantt-diagram
+
+**Gantt-diagram för schemalagda arbetsorder** ger ett grafiskt gränssnitt där du kan visa och omplanera dina arbetsorder.
+
+Så här visar och arbetar du med Gantt-diagrammet:
+
+1. Gå till **Tillgångshantering > Arbetsorder > Gantt-diagram för schemalagda arbetsorder**.
+
+1. Använd listrutorna och fälten i området **inställningar** när du vill ange vilken funktionsplats, vilket tidsintervall och vilken tidsskala som ska visas i Gantt-diagrammet.
+
+1. Välj **Tillämpa**.
+
+    - Gantt-diagrammet uppdateras för att visa de schemalagda arbetsorder som matchar dina inställningar. Varje arbetsorder representeras av en blå rektangel.
+    - Om du vill omplanera en visad arbetsorder väljer du och drar den till lämpligt nytt datum och aktuell tid.
+
+1. Om du har gjort några ändringar väljer **Spara** i åtgärdsfönstret för att spara dem.

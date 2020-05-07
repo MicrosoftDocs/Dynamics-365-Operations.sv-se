@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172887"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275474"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Felsöka problem som rör uppgraderingar av Finance and Operations-appar
 
@@ -85,9 +85,8 @@ Om problemet fortfarande inte är åtgärdat följer du stegen nedan.
 > De här stegen vägleder dig genom processen att ta bort en enhet och sedan lägga till den igen. Se till att du följer stegen exakt om du vill undvika problem.
 
 1. I Finance and Operations-appen, gå till **Arbetsytor \> Datahantering** och välj panelen **Dataentiteter**.
-2. Sök efter den entitet som saknar fältet. Anteckna målentiteten, mellanlagringstabell, entitetsnamn och andra kolumnvärden.
-3. Om någon av dina bearbetningsgrupper är beroende av denna entitet ska du vidta lämpliga åtgärder för bearbetningsgrupperna innan du tar bort enheten.
-4. Ta bort den entitet som saknar fältet.
-5. Välj **ny** och lägg tillbaka entiteten. Ange de värden du angav en anmärkning för i steg 2.
-6. Öppna sidan **entitetsmappning** från sidan **dubbelriktad skrivning** i Finance and Operations-appen.
-7. Markera **uppdatera entitetslista** om du vill fylla i fälten i entitetsmappningarna automatiskt.
+2. Sök efter den entitet som saknar attributet. Klicka på **Ändra målmappning** i verktygsfältet.
+3. I fönstret **Mappa mellanlagring till mål**, klicka på **Generera källmappning**.
+4. Öppna sidan **entitetsmappning** från sidan **dubbelriktad skrivning** i Finance and Operations-appen.
+5. Om attributet inte fylls i automatiskt på kartan lägger du till det manuellt genom att klicka på knappen **Lägg till attribut** och sedan på **Spara**. 
+6. Markera mappningen och klicka på **Kör**.

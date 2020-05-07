@@ -3,7 +3,7 @@ title: Lägga till en sida med sekretesspolicy
 description: I det här avsnittet beskrivs hur du lägger till en sida med sekretesspolicy till din webbplats i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ee9a68f46c91299065732e5f65479906f9e06079
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001333"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274221"
 ---
 # <a name="add-a-privacy-policy-page"></a>Lägga till en sida med sekretesspolicy
 
@@ -54,36 +54,33 @@ Starta i redigeringsverktyg, gå till den webbplats som du vill skapa en sekrete
 
 Gör så här om du vill skapa en arbetsmall.
 
-1. Gå till **Mallar \> Ny mall**.
-1. Ange mallnamn och klicka sedan på **OK**.
-1. I mallen lägger du till nödvändiga moduler till de obligatoriska sidfacken. För vägledning håller du muspekaren över de röda utropstecknen.
-
-    Till exempe facket **HTML-rubrik** kräver en **extern standardskript**-modul.
-
+1. Gå till **mallar**och välj sedan **ny** för att skapa en sidmall.
+1. I dialogrutan **Ny mal** under **Mallnamn**, ange **annonsbanderollmall** och välj sedan **OK**.
+1. I mallen lägger du till nödvändiga moduler till de obligatoriska sidfacken. För vägledning håller du muspekaren över de röda utropstecknen. (Till exempel facket **HTML-rubrik** kräver en **extern standardskript**-modul.)
 1. I facket **Brödtext**, lägg till en **standardsid**-modul.
 1. I **standardsid**-modulen, i facket **Huvud**, lägg till en **Innehållsrikt block**-modul.
 1. I **Innehållsrikt block**-modulen lägger du till en **innehållsrika blockobjekt**-modul.
-1. Checka in mallen och publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 
 ### <a name="build-a-privacy-policy-page"></a>Skapa en sida med sekretesspolicy
 
 Gör så här om du vill skapa en sekretesspolicysida.
 
-1. Gå till **Sidor \> Ny sida**.
-1. Välj mallen för sidan sekretesspolicy.
-1. Ange ett sidnamn och en URL och klicka sedan på **OK**. 
+1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en sida.
+1. I dialogrutan **Välj en mall**, välj mallen för sidan för sekretesspolicy.
+1. Ange ett sidnamn och en sid-URL och klicka sedan på **OK**. 
 1. Lägg till platsen **Huvud** på ny sida, lägg till en **innehållsrik block**-modul.
 1. I **Innehållsrikt block**-modulen lägger du till en **innehållsrika blockobjekt**-modul.
 1. I egenskapsfönstret för **innehållsrik block**-modulen, välj **Lägg till data källa** och välj sedan **RTF-innehåll**.
 1. I RTF-redigeraren anger du innehållet för sidan sekretesspolicy. Expandera RTF-redigeraren till helskärmsläge som du behöver.
 1. När du är klar med att ange innehåll väljer du **förhandsgranska** för att förhandsgranska sidan i webbläsaren.
 1. Slutför eventuella återstående tillägg till sid- och modulegenskaperna.
-1. Checka in sidan sekretesspolicy och publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 För att publicera URL för sidan sekretesspolicy, följ dessa steg.
 
 1. Gå till **URL:er** och välj webbadressen till sidan sekretesspolicy.
-1. Publicera markerade URL.
+1. Välj **publicera** om du vill publicera den valda URL:en.
 
 ### <a name="create-a-link-to-the-privacy-policy-page-in-a-footer"></a>Skapa en länk till sidan sekretesspolicy i en sidfot
 
@@ -91,15 +88,14 @@ Du kan lägga till en länk till sidan sekretesspolicy till ett fragment. På s�
 
 Om du vill lägga till en länk till ett sidfotavsnitt gör du följande.
 
-1. Gå till **Sidfragment \> Nytt sidfragment**.
-1. Markera **sidfot**-modulen och ange sedan ett namn i fältet **sidfragmentets namn**.
+1. Gå till **Sidfragment** och välj **ny** för att skapa ett sidfragment.
+1. I dialogrutan **Ny sidfragment**, välj modulen **Sidfot**.
+1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
 1. I facket **Sidfotskategori**, lägg till en **sidfotsartikel**-modul.
 1. I egenskapsrutan till höger, välj egenskapen **Länktext**.
 1. I dialogrutan **länktext** anger du länktexten och länkmålet för sidan sekretesspolicy och klickar sedan på **OK**.
-
-    Om du vill hämta webbadressen till sidan sekretesspolicy går du till **sidor** går till sidan sekretesspolicy och kopierar webbadressen från fönstret Egenskaper.
-
-1. Spara fragmentet, checka in det och publicera det.
+1. Om du vill hämta webbadressen till sidan sekretesspolicy går du till **sidor** går till sidan sekretesspolicy och kopierar webbadressen från fönstret Egenskaper.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 1. Förhandsgranska fragmentet och testa länken till sidan sekretesspolicy.
 
 Fragmentet kan nu refereras i mallen för andra webbplatssidor. När det här fragmentet refereras i **sidfoten** i en modul för en mall visas länkreferensen på alla sidor som har skapats med den mallen.
@@ -108,6 +104,8 @@ Fragmentet kan nu refereras i mallen för andra webbplatssidor. När det här fr
 
 [Regelefterlevnad – översikt](compliance-overview.md)
 
-[Hjälpmedelsfunktioner](accessibility.md)
+[Hjälpmedelsfunktioner och möjligheter](accessibility.md)
 
 [Cookie-kompatibilitet](cookie-compliance.md)
+
+[Ersätt användar-ID:n som är associerade med spårade innehållsändringar](replace-IDs-tracked-changes.md)

@@ -3,7 +3,7 @@ title: Hantering av kredit och inkasso Power BI-innehåll
 description: Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kredit- och inkassohantering. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som används för att skapa innehållet.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189118"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278884"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Hantering av kredit och inkasso Power BI-innehåll
 
@@ -49,7 +49,7 @@ Följande inställningar måste slutföras för att data ska visas i **Kundkredi
 1. Gå till **systemadministrations > inställningar > systemparametrar** för att ställa in **Systemvaluta** och **Systemets valutakurs**.
 2. Gå till **redovisning > Inställningar > redovisning** och ange **redovisningsvaluta** och **valutakurstyp**.
 3. Definiera valutakurser mellan transaktionsvalutor och redovisningsvaluta, redovisningsvaluta och systemvaluta. Det gör du genom att gå till **redovisning > valutor > valutakurser**.
-4. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **CustCollectionsBIMeasurements**.
+4. Gå till **Systemadministration > Inställningar > Enhetslagring** för att uppdatera sammanlagda måtten **CustCollectionsBIMeasurementsV2**.
 
 ## <a name="accessing-the-power-bi-content"></a>Komma åt Power BI-innehåll
 

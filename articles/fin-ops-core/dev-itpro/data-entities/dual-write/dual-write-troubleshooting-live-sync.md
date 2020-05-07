@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 60839bbd1b3ae642cdd419c7df2388292776a461
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172747"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275427"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Felsöka problem med direkt synkronisering
 
@@ -102,7 +102,7 @@ Följande felmeddelande kan visas när du skapar data i en Finance and Operation
 
 Så här ser felet ut i den modellstyrda appen i Dynamics 365:
 
-*Ett oväntat fel uppstod från ISV-koden. (ErrorType = ClientError) Oväntat undantag från plugin-programmet (kör): Microsoft.Dynamics.Integrator.CrmPlugins.Plugin: System.Exception: misslyckades att bearbeta ett entitetskonto - (Ett anslutningsförsök misslyckades eftersom den anslutna parten inte svarade ordentligt efter en tidsperiod, eller upprättad anslutning misslyckades eftersom ansluten värd inte har svarat*
+*Ett oväntat fel uppstod från ISV-koden. (ErrorType = ClientError) Oväntat undantag från plugin-programmet (kör): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: misslyckades att bearbeta ett entitetskonto - (Ett anslutningsförsök misslyckades eftersom den anslutna parten inte svarade ordentligt efter en tidsperiod, eller upprättad anslutning misslyckades eftersom ansluten värd inte har svarat*
 
 Det här felet uppstår när Common Data Service miljön återställs felaktigt samtidigt som du försöker skapa data i Finance and Operations-appen.
 

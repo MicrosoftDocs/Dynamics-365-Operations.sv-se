@@ -3,7 +3,7 @@ title: Översikt över ekonomisk rapportering
 description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249070"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262659"
 ---
 # <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 
@@ -83,13 +83,15 @@ När en användare har lagts till eller om en roll ändras får användaren åtk
 ## <a name="report-deletions-and-expirations"></a>Rapportborttagningar och förfallodatum
 Användare som skapar en rapport kan ta bort sina egna rapporter. Användare med programbehörigheten **Underhåll säkerhet för ekonomiska rapporter** kan ta bort andras rapporter. 
 
-Från och med 10.0.7 frisläppning har begreppet utgångsdatum införts. En ny obligatorisk funktion kommer att aktiveras i arbetsytan funktionshantering. Den här funktionen innehåller följande ändringar:
+I version 10.0.8 har utgångsdatum fastställts. En ny nödvändig funktion kommer att aktiveras på sidan **Alla** på arbetsytan funktionshantering. Den **ekonomiska rapporten över lagringsprinciper** innehåller följande ändringar:
 * Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras
 * Alla befintliga rapporter från innan funktionen installerades kommer att ges en förfalloperiod på 90 dagar. Datumet kan visas som tomt under en kort tidsperiod tills den ekonomiska rapporteringstjänsten körs, en rapport genereras och tjänsten utför uppdateringen till befintliga rapporter med ett tomt förfallodatum. 
-* Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning - 
-  * Ett förfallodatum på 90 dagar
-  * Ett alternativ för att ange att rapporten aldrig ska upphöra att gälla
-
+* Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning. 
+  * Ett förfallodatum på 90 dagar.
+  * Ett alternativ för att ange att rapporten aldrig ska upphöra att gälla.
+  
+Ytterligare alternativ kommer att beaktas i framtida funktioner. Giltighetstiden på 90 dagar blir standardvärdet, och användare med rätt behörighet kan åsidosätta standardvärdet på listsidan **ekonomirapporter**.    
+  
 När ett förfallodatum som 90 dagar väljs, beviljar det 90 dagar från idag, vilket är annorlunda än de 90 dagar från det ursprungliga genereringsdatumet som angetts under rapportgenerering. 
 
 ## <a name="default-reports"></a>Standardrapporter

@@ -1,5 +1,5 @@
 ---
-title: Lagerföråldringsrapport
+title: Lagring av Lagerföråldringsrapport
 description: I det här avsnittet beskrivs de funktioner som gör att du kan köra en lagerföråldringsrapport och göra utdata tillgängliga som ett formulär och ett diagram.
 author: AndersGirke
 manager: tfehr
@@ -19,24 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 790c8fe3a52bce652227f1cef97eff6496476100
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9148a9032615222a1fdfe453488e716bacadbabc
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201635"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275589"
 ---
-# <a name="inventory-aging-report"></a>Lagerföråldringsrapport
+# <a name="inventory-aging-report-storage"></a>Lagring av Lagerföråldringsrapport
 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-I Microsoft Dynamics 365 Supply Chain Management kan du köra en **Lagerföråldringsrapport** och göra utdata tillgängliga som ett formulär och ett diagram. I formuläret justeras kolumner och aggregerade saldon dynamiskt, beroende på vilken layout som har konfigurerats. Diagrammet innehåller en visuell översikt som stöder filtrering och gör att du kan öka detaljnivån. Dessutom kan du med hjälp av en dataentitet som kallas **Lagerföråldringsrapport** exportera resultaten av en körning av **Lagerföråldringsrapport** till format som t.ex. Microsoft Excel-fil eller PDF-fil.
+I Microsoft Dynamics 365 Supply Chain Management kan du köra en **lagring av lagerföråldringsrapport** och göra utdata tillgängliga som ett formulär och ett diagram. I formuläret justeras kolumner och aggregerade saldon dynamiskt, beroende på vilken layout som har konfigurerats. Diagrammet innehåller en visuell översikt som stöder filtrering och gör att du kan öka detaljnivån. Dessutom kan du med hjälp av en dataentitet som kallas **Lagerföråldringsrapport** exportera resultaten av en körning av **Lagring av Lagerföråldringsrapport** till format som t.ex. Microsoft Excel-fil eller PDF-fil.
 
-Den här metoden för att köra en **Lagerföråldringsrapport** är användbar i fall där utdata innehåller många rader. Till exempel kommer udata att innehålla många rader om du har 50 000 artiklar och 300 butiker som har skapats som lagerställen och du begär lagerföråldring per artikel, plats och lagerställe.
+Den här metoden för att köra en **Lagring av Lagerföråldringsrapport** är användbar i fall där utdata innehåller många rader. Till exempel kommer udata att innehålla många rader om du har 50 000 artiklar och 300 butiker som har skapats som lagerställen och du begär lagerföråldring per artikel, plats och lagerställe.
 
-## <a name="run-an-inventory-aging-report"></a>Kör en lagerföråldringsrapport
+## <a name="enable-the-inventory-value-storage-report-feature"></a>Aktivera funktionen lagringsrapport för lagervärde
+
+Innan du kan använda den här funktionen måste du aktivera den i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Här visas funktionen i listan:
+
+- **Modul** - Kostnadshantering
+- **Funktionsnamn** - Lagring av Lagerföråldringsrapport
+
+## <a name="run-an-inventory-aging-report-storage"></a>Kör en lagring av Lagerföråldringsrapport
 
 1. Gå till **kostnadshantering \>förfrågningar och rapporter \>lagring av lagerföråldringsrapport**.
 1. Välj **Ny**.
@@ -51,4 +58,4 @@ Den här metoden för att köra en **Lagerföråldringsrapport** är användbar 
     > [!NOTE]
     > Formuläret innehåller delsummor som definieras i rapportlayouten.
 
-Dataentiteten **Lagerföråldringsrapport** låter dig exportera resultatet av **Lagerföråldringsrapport** genom att använda ett filter för fältet **Identifierare för process – Namn** till ett format som datahanteringen stöder.
+Dataentiteten **Lagerföråldringsrapport** låter dig exportera resultatet av **Lagring av Lagerföråldringsrapport** genom att använda ett filter för fältet **Identifierare för process – Namn** till ett format som datahanteringen stöder.

@@ -3,7 +3,7 @@ title: Lägg till copyrightmeddelande
 description: I det här avsnittet beskrivs hur du lägger till ett copyrightmeddelande till din näthandelsplats.
 author: psimolin
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025492"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269600"
 ---
 # <a name="add-a-copyright-notice"></a>Lägg till copyrightmeddelande
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,12 +50,12 @@ Om du vill lägga till copyrightinformation längst ned på varje sida som anvä
 1. I dialogrutan, välj **Textblock** och väljer sedan **OK**.
 1. Välj **textblock** i navigeringsfönstret.
 1. I det här egenskapsfönstret till höger, i fältet **stycke** lägger du till ditt copyright-meddelande. Ange till exempel **(C) Fabrikam 2019**.
-1. Välj **Spara**, välj **Checka in** och sedan **Publicera**.
-1. Gå till **mallar**, markera mallen och välj sedan **Checka ut**.
+1. Välj **Spara**, välj **Slutför redigering** och sedan **Publicera**.
+1. Gå till **mallar**, markera mallen och välj sedan **Redigera**.
 1. Under **Siddisposition**, utöka **Brödtext** och utöka sedan **Standardsidan**.
 1. Markera knappen med punkter för platsen **Sidfotsplats** och välj sedan **Lägg till fragment**.
 1. Markera det fragment som du skapade tidigare och välj sedan **Välj**.
-1. Checka in mallen och publicera den.
+1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 
 Sidfoten som innehåller copyrightinformationen visas automatiskt längst ner på alla sidor som använder den valda mallen.
 

@@ -3,7 +3,7 @@ title: Spara, förhandsgranska och publicera en sida
 description: I det här avsnittet beskrivs hur du sparar, förhandsgranskar och publicerar en sida i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 04200264fabca265484b5e66426810efe8028a50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002830"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269991"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Spara, förhandsgranska och publicera en sida
-
 
 [!include [banner](includes/banner.md)]
 
@@ -33,7 +32,7 @@ I det här avsnittet beskrivs hur du sparar, förhandsgranskar och publicerar en
 
 ## <a name="save-a-page"></a>Spara en sida
 
-Om du vill spara en sida måste du ha checkat ut den till dig själv och öppnat den i sidredigeraren. Du bör spara en sida omedelbart efter att du har ändrat den, så att du kan garantera att ändringarna sparas.
+Om du vill spara en sida måste du ha checkat ut den till dig själv och öppnat den i sidredigeraren. För att checka ut en sida, välj **Redigera** i kommandofältet. När du har redigerat en sida bör du omedelbart spara den för att se till att dina ändringar lagras.
 
 När du sparar en sida är ändringarna bara synliga för dig. Åtgärden Spara är i första hand avsedd att spara ändringar medan sidan inte är klar att checkas in. När du har ändrat sidan rekommenderar vi att du checkar in den, så att ändringarna blir synliga för andra. Vid den punkten kan du även checka ut sidan av andra användare som måste ändra den.
 
@@ -50,7 +49,7 @@ När du är klar med ändringarna av sidan kanske du vill förhandsgranska den f
 
 ## <a name="publish-a-page"></a>Publicera en sida
 
-När sidan är klar är nästa steg att publicera den, så att externa användare kan visa innehållet. Innan du kan publicera en sida måste du checka in den.
+När sidan är klar är nästa steg att publicera den, så att externa användare kan visa innehållet. Innan du kan publicera en sida måste du checka in den genom att välja **Slutför redigering** i kommandofältet.
 
 Du kan publicera och avpublicera sidor från antingen sidpanelen eller sidredigeraren. Sidkontrollen visar en lista över sidor och tillåter massåtgärder. Sidredigeraren kan bara användas för att publicera eller avpublicera den enda sida som är öppen i den.
 
@@ -70,9 +69,9 @@ Om du vill spara, förhandsgranska och publicera en startsida följer du stegen 
 1. Under **Webbplatser**, välj **Fabrikam** (eller namnet på webbplatsen).
 1. I navigeringsfönstret till vänster, välj **sidor**.
 1. Sök och välj startsidan för att öppna den i sidredigeraren.
-1. Välj **Checka ut**.
+1. Välj **Redigera**.
 1. Ändra sidan efter behov.
-1. Välj **spara**och välj sedan **checka in**.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du en notering om de ändringar som du har gjort och väljer sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska din sida. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

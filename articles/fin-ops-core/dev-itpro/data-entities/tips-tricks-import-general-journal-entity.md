@@ -1,9 +1,9 @@
 ---
 title: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
 description: Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
-author: ShylaThompson
+author: rcarlson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 13ea54a6fc4ccdfbcc917b533fe9896d57bcb347
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769620"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281496"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
 
@@ -30,9 +30,9 @@ ms.locfileid: "2769620"
 
 Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.
 
-Du kan använda enheten Allmän journal för att importera verifikationer som har motkontotypen **Redovisning, Kund, Försäljare, eller Bank**. Verifikationen kan anges som en rad med hjälp av både fältet **Konto** och fältet **Motkonto** eller som en flerradig verifikation där endast fältet **Konto** används (och fältet **Motkonto** är tomt på varje rad). Redovisningsjournalenheten stöder inte varje kontotyp. Det finns i stället andra enheter för scenarier där det krävs olika kombinationer av kontotyper. Om du till exempel vill importera en projekttransaktion använder du projektutgiftsjournalenheten. Varje enhet har utformats för speciella scenarier vilket innebär att ytterligare fält kan vara tillgängliga för dessa scenarier men inte enheter för ett annat scenario.
+Du kan använda enheten Allmän journal för att importera verifikationer som har motkontotypen **Redovisning**, **Kund**, **Försäljare** eller **Bank**. Verifikationen kan anges som en rad med hjälp av både fältet **Konto** och fältet **Motkonto** eller som en flerradig verifikation där endast fältet **Konto** används (och fältet **Motkonto** är tomt på varje rad). Redovisningsjournalenheten stöder inte varje kontotyp. Det finns i stället andra enheter för scenarier där det krävs olika kombinationer av kontotyper. Om du till exempel vill importera en projekttransaktion använder du projektutgiftsjournalenheten. Varje entitet är utformad för att stödja specifika scenarier. Detta innebär att ytterligare fält kan vara tillgängliga i entiteter för dessa scenarier. Ytterligare fält är emellertid inte tillgängliga i entiteter för olika scenarier.
 
-## <a name="setup"></a>Inställningar
+## <a name="setup"></a>Konfigurera
 Innan du genomför en import med hjälp av enheten Allmän journal ska du verifiera följande inställningar:
 
 - **Nummerserieinställningarna för journalbatchnumren** – När du genomför en import med hjälp av enheten Allmän journal använder journalbatchnumret den nummerserie som definierats i Allmänna huvudboksparametrar som standard. Om du har ställt in nummerserien för journalbatchnumret till **Manuell** tillämpas inget standardnummer. Den här inställningen stöds inte.
@@ -44,7 +44,7 @@ Två inställningar i datahantering påverkar hur standardjournalens batchnummer
 - **Uppsättningsbaserad bearbetning** (på dataenheten)
 - **Automatiskt skapad** (på fältmappning)
 
-Följande avsnitt innehåller en beskrivning av effekten av dessa inställningar och hur journalbatchnummer och verifikationsnummer skapas.
+I följande avsnitt beskrivs effekterna av dessa inställningar. De förklarar också hur systemet genererar batchjournaler för journaler och verifikationsnummer.
 
 ### <a name="journal-batch-number"></a>Journalbatchnummer
 
@@ -57,10 +57,10 @@ Följande avsnitt innehåller en beskrivning av effekten av dessa inställningar
 
 ### <a name="voucher-number"></a>Verifikationsnummer
 
-- Om du använder inställningen **Uppsättningsbaserad bearbetning** för enheten Allmän journal måste verifikationsnumret anges i den importerade filen. Varje transaktion i den allmänna journalen tilldelas det verifikationsnummer som tillhandahålls i den importerade filen även om verifikationen inte är balanserad. Om du vill använda uppsättningsbaserad bearbetning men även vill använda det nummerserie som har definierats för verifikationsnummer finns det en snabbkorrigering för i februariutgåvan 2016. Snabbkorrigeringsnumret är 3170316 och kan hämtas från Lifestyle services (LCS). Mer information hittar du i [Hämta uppdateringar från Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+- Om du använder inställningen **Uppsättningsbaserad bearbetning** för enheten Allmän journal måste verifikationsnumret anges i den importerade filen. Varje transaktion i den allmänna journalen tilldelas det verifikationsnummer som tillhandahålls i den importerade filen även om verifikationen inte är balanserad. Observera följande punkter om du vill använda uppsättningsbaserad bearbetning men även vill använda det nummerserie som har definierats för verifikationsnummer.
 
     - Om du vill aktivera den här funktionen på journalnamnet som används för importer, ställ in **Nummerallokering vid bokföring** på **Ja**.
-    - Ett verifikationsnummer måste fortfarande definieras i den importerade filen. Detta nummer är dock temporärt och skrivs över av verifikationsnumret när journalen bokförs. Du måste kontrollera att raderna i journalen är korrekt grupperade efter temporära verifikationsnummer. Till exempel under bokföring hittas tre rader som har ett tillfälligt verifikationsnummer 1. Det tillfälliga verifikationsnumret för alla tre rader skrivs över av nästa nummer i nummerserien. Om dessa tre rader inte är balanserade poster bokförs inte verifikationen. Om det dessutom finns rader som har det temporära verifikationsnumret 2 skrivs det här numret över med nästa verifikationsnummer i nummerserien och så vidare.
+    - Ett verifikationsnummer måste fortfarande definieras i den importerade filen. Detta nummer är dock temporärt och skrivs över av verifikationsnumret när journalen bokförs. Du måste kontrollera att raderna i journalen är korrekt grupperade efter temporära verifikationsnummer. Till exempel under bokföring hittas tre rader som har ett tillfälligt verifikationsnummer 1. Det tillfälliga verifikationsnumret för alla tre rader skrivs över av nästa nummer i nummerserien. Om dessa tre rader inte är balanserade poster bokförs inte verifikationen. Om det dessutom finns rader som har det temporära verifikationsnumret 2 skrivs det här numret över med nästa verifikationsnummer i serien och så vidare.
 
 - Om du inte använder inställningen **Uppsättningsbaserad bearbetning** behöver inget verifikationsnummer anges i den importerade filen. Verifikationsnumren skapas under importen baserat på inställningen för journalnamn (**endast en verifikation**, **ihop med saldo** och så vidare). Om journalnamnet exempelvis definieras som **Ihop med saldo** får den första raden ett nytt standardverifikationsnummer. Systemet utvärderar sedan raden för att fastställa om debet överensstämmer med kredit. Om det finns ett motkonto på raden får nästa rad som importeras ett nytt verifikationsnummer. Om det inte finns något motkonto utvärderar systemet om debet är lika med kredit allt eftersom varje ny rad importeras.
 - Om fältet **Verifikationsnummer** är inställt på **Automatiskt skapad** misslyckas importen. Inställningen **Automatiskt skapad** för fältet **Verifikationsnummer** stöds inte.

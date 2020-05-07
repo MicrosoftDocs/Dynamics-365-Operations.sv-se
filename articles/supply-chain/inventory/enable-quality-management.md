@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224919"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268826"
 ---
 # <a name="quality-management-overview"></a>Översikt över kvalitetshantering
 
@@ -43,7 +43,11 @@ Kvalitetshanteringen är flexibel och kan implementeras på olika sätt för att
 
 -   Starta automatiskt en kvalitetskontrollprocess baserat på fördefinierade villkor (vid lagerställeregistrering av en inköpsorder från en viss leverantör.)
 -   Blockera lagret under inspektion för att förhindra icke-godkänt lager från att användas (fullständig blockering av inköpsorderkvantiteter).
--   Använd artikelsamplingen som en del av en kvalitetsassociation för att definiera hur aktuellt fysiskt lager ska inspekteras. Samplingen kan baseras på fasta kvantiteter eller en procentsats.
+-   Använd artikelsamplingen som en del av en kvalitetsassociation för att definiera hur aktuellt fysiskt lager ska inspekteras. Samplingen kan baseras på fasta kvantiteter, en procentsats eller full registreringsskylt.
+
+> [!NOTE]
+> Funktionen _Kvalitetshantering för lagerprocesser_ omfattar kvalitetshanteringsfunktioner. Om du använder den här funktionen kan du se [Kvalitetshantering för lagerprocesser](quality-management-for-warehouses-processes.md) för exempel på hur kvalitetshanteringen fungerar när den är aktiverad.
+
 -   Skapa en kvalitetsorder för delleveranser. Om du vill skapa en kvalitetsorder som baseras på den kvantitet som inlevererats fysiskt till en order måste du markera kryssrutan **Per uppdaterad kvantitet** i formuläret **artikelsampling**.
 -   Skapa testtyper som innehåller minimum-, maximum- och måltestvärden och utför testning av typen ”kvalitativ kontra kvantitativ” som har fördefinierade valideringresultat.
 -   Ange en godtagbar kvalitetsnivå (AQL) för att kontrollera toleranserna för kvalitetsmått.
@@ -428,6 +432,9 @@ I produktion, om du ställer in fältet **händelsetyp** till **Rapportera som s
 </tbody>
 </table>
 
+> [!NOTE]
+> Funktionen *Kvalitetshantering för lagerprocesser* tillsätter funktioner för bearbetning av kvalitetsorder för produktion med **Händelsetyp** inställd på *Rapportera som färdig* och **Körning** inställd på *Efter* och för köp med **Händelsetypen** inställd på *Registrering*. Mer information finns i [Kvalitetshantering för lagerprocesser](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>Kvalitetshanteringssidor
 <table>
 <colgroup>
@@ -438,7 +445,7 @@ I produktion, om du ställer in fältet **händelsetyp** till **Rapportera som s
 <thead>
 <tr class="header">
 <th>Sida</th>
-<th>Beskrivning</th>
+<th>beskrivning</th>
 <th>Exempel</th>
 </tr>
 </thead>
@@ -495,3 +502,5 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 [Kvalitetshanteringsprocesser](quality-management-processes.md)
 
 [Avvikelsehantering](enable-nonconformance-management.md)
+
+[Kvalitetsstyrning för lagerprocesser](quality-management-for-warehouses-processes.md)

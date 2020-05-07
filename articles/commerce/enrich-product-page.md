@@ -3,7 +3,7 @@ title: Utöka en produktsida
 description: I det här avsnittet beskrivs hur du kan berika en produkt i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4c495fc6dfe4aa6561a1bb703253ef8ec71dc13
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003087"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269830"
 ---
 # <a name="enrich-a-product-page"></a>Utöka en produktsida
 
@@ -53,7 +53,7 @@ Om du vill utöka en produktsida följer du stegen nedan.
 1. Välj **Funktion**och välj sedan **OK**.
 1. I fönstret egenskaper till höger i fältet **oformaterad text** anger du den uppdaterade beskrivningen av produkten.
 1. I fältet **Rubrik** anger du rubriktexten och väljer sedan **OK**.
-1. Välj **spara**och välj sedan **checka in**.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du **Berika en produkt** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska den berikade produktsidan. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

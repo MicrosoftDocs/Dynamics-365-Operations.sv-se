@@ -3,7 +3,7 @@ title: Arbeta med mallar
 description: I det här avsnittet beskrivs hur du arbetar med mallar i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 815565dd203925fa0acca9336c4ddc56db8c4058
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002577"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269876"
 ---
 # <a name="work-with-templates"></a>Arbeta med mallar
 
@@ -132,14 +132,14 @@ Om du vill lägga till ett skript i mall gör du följande.
 Om du vill spara och checka in en mall, följ dessa steg.
 
 1. Välj **spara** längst upp i mallredigeraren. Sparade ändringar påverkar inte underordnade sidor förrän de checkas in.
-1. Välj **Checka in**. Dina ändringar kan nu upptäckas för efterföljande arbetsflöden.
+1. Välj **Slutför redigering**. Dina ändringar kan nu upptäckas för efterföljande arbetsflöden.
 
 Om du vill förhandsgranska ändringarna öppnar du en befintlig sida som använder mallen eller skapar en ny sida från mallen.
 
 När du har förhandsgranskat ändringarna i din mall gör du följande för att publicera mallen på din aktiva webbplats:
 
 * Gå till **mallar**, markera mallen och välj sedan **publicera**.
-* I mallredigeraren, välj **Publicera**.
+* Välj layoutnamn för att öppna layoutredigeraren och välj sedan **Publicera**.
 * Publicera en sida som refererar till den opublicerade mallen. Mallen publiceras automatiskt.
 
 > [!WARNING]

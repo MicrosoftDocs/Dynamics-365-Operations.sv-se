@@ -3,7 +3,7 @@ title: Välj sidlayouter
 description: Det här avsnittet beskriver hur du skapar och väljer sidlayouter i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3e8efcdc236911ac79007c606d5d1da56f6c424
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0cbcba7ce4f40298e0f2665fa811b125f11e9490
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002784"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269922"
 ---
 # <a name="select-page-layouts"></a>Välj sidlayouter
 
@@ -39,7 +39,7 @@ Det här avsnittet beskriver hur du skapar och väljer sidlayouter i Microsoft D
 Om du vill skapa layouter för en befintlig sida följer du stegen nedan.
 
 1. Gå till **sidor** och sök efter den befintliga sidan i listan. Använd sökfunktionen som du behöver.
-1. Markera sidan, checka ut den och markera sedan den för att öppna den. Gör en notering av modulens ordning.
+1. Markera sidan, välj **redigera** om du vill checka ut den och välj sedan namnet på sidan för att öppna den. Gör en notering av modulens ordning.
 1. Välj **Spara som ny layout**.
 1. Ange ett namn på layouten och välj sedan **OK**.
 1. Välj **konvertera till inbäddad layout**.
@@ -47,6 +47,7 @@ Om du vill skapa layouter för en befintlig sida följer du stegen nedan.
 1. Välj **Spara som ny layout**.
 1. Ange ett namn på layouten och välj sedan **OK**.
 1. Välj **ändra layout**, välj den första layout som du skapade och välj sedan **OK**. Gör en notering av modulens ordning. Ändra den så att den matchar den modulordning som sparades med layouten.
+1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. 
 
 ## <a name="select-a-different-layout-for-an-existing-page"></a>Välja en annan layout för en befintlig sida
 
@@ -56,9 +57,10 @@ Om du vill skapa layouter för en befintlig sida följer du stegen nedan.
 Om du vill välja en annan layouter för en befintlig sida följer du stegen nedan.
 
 1. Gå till **sidor** och sök efter den befintliga sidan i listan. Använd sökfunktionen som du behöver.
-1. Markera sidan, checka ut den och markera sedan den för att öppna den.
+1. Markera sidan, välj **redigera** om du vill checka ut den och välj sedan namnet på sidan för att öppna den.
 1. Välj **Ändra layout**.
 1. Välj den nya layouten för sidan och välj sedan **OK**. Sidredigeraren uppdateras för att visa den nya layouten.
+1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

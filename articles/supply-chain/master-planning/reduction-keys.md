@@ -3,7 +3,7 @@ title: Prognosreduceringnycklar
 description: Den här ämnet ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 6191b4809c3785d92395bec1b7d51bfc978f9245
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225115"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262706"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosreduceringnycklar
 
@@ -222,7 +222,7 @@ En prognosreduceringsnyckel måste tilldelas artikelns disponeringsgrupp. Följ 
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Minska en prognos med transaktioner
 
-När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dynamisk period** som metod för att minska prognosbehoven kan du ange vilka transaktioner som reducerar prognosen. På sidan **frisläppta produkter** på transaktioner **Övrigt** i fältet **reducera prognos efter** väljer du **alla transaktioner** om alla transaktioner ska reducera prognosen eller **order** om bara försäljningsorder ska reducera prognosen.
+När du väljer **transaktioner - reduceringsnyckel** eller **transaktioner - dynamisk period** som metod för att minska prognosbehoven kan du ange vilka transaktioner som reducerar prognosen. På sidan **Disponeringsgrupper** på transaktioner **Övrigt** i fältet **reducera prognos efter** väljer du **alla transaktioner** om alla transaktioner ska reducera prognosen eller **order** om bara försäljningsorder ska reducera prognosen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

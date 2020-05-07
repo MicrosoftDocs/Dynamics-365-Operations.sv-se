@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3d0b6c4ef9e6f21e1542bece9046e98edcab6b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207843"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281519"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
 
@@ -85,6 +85,9 @@ I det här exemplet innehåller arbetsflödesprocessen för inköpsrekvisitionsr
 3.  Beställarens linjechef granskar och godkänner inköpsrekvisitionsraderna. Godkännandet kan skickas till beställarens chef om till exempel beloppet på inköpsrekvisitionsraden överstiger beställarens utgiftsgräns för inköpsrekvisitionsrader. Chefen kan godkänna eller avvisa en eller båda rader i inköpsrekvisitionen.
 4.  Avdelningschefen för marknadsavdelningen granskar inköpsrekvisitionsraderna för både affischerna och t-tröjorna. Försäljningsavdelningschefen granskar inköpsrekvisitionsraden endast för affischerna, eftersom det är den enda kostnad som debiteras försäljningsavdelningen.
 5.  Gruppchefen granskar och godkänner inköpsrekvisitionsraden för T-tröjor, bara om gruppchefgodkännande krävs om t.ex. beloppet på inköpsrekvisitionsraden överskrider avdelningschefens godkännandegräns. Gruppchefen behöver inte godkänna inköpsrekvisitionsraden för affischerna.
+
+> [!NOTE]
+> Systemvalutan måste anges om huvudarbetsflödet för en inköpsrekvisition kräver godkännanden som rör signeringsbegränsningar.
 
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurera av arbetsflöde för inköpsrekvisitioner
 Om du vill skicka en inköpsrekvisition för granskning måste du konfigurera arbetsflödesprocesser för inköpsrekvisitioner. Arbetsflödesprocessen som du definierar styr samspelet mellan användaren som beställer artiklarna (beställaren) och granskaren och godkännaren i arbetsflödet. Flödet för inköpsrekvisitionen beror på villkoren som anges i arbetsflödeskonfigurationen. Till exempel bestämmer dessa kriterier, när inköpsrekvisitionen ska skickas, användaren eller rollen som den ska flödas till och åtgärder som användarna kan vidta.  

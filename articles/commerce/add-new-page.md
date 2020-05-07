@@ -3,7 +3,7 @@ title: Lägga till en ny webbplatssida
 description: I det här avsnittet beskrivs hur du lägger till en ny webbplatssida i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68461f1f0be46f979a67e1806e03c02200cf61db
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001356"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269968"
 ---
 # <a name="add-a-new-site-page"></a>Lägga till en ny webbplatssida
 
@@ -67,7 +67,7 @@ Gör så här om du vill lägga till en ny webbplatssida till din webbplats:
 1. Markera knappen med punkter för **Innehållsrikt block** och välj sedan **Lägg till modul**.
 1. Välj **Artikeln innehållsrikt block** och välj sedan **OK**.
 1. I egenskapsrutan till höger, välj **Paragraf** och ange sedan **Min testtext** i fältet.
-1. Välj **spara**och välj sedan **checka in**.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du **Ny sida tillagd** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska din sida. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

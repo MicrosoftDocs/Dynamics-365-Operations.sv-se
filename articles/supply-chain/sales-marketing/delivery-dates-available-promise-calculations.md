@@ -1,9 +1,9 @@
 ---
 title: Orderlöfte
-description: Denna artikel innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum.
+description: Detta avsnittet innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210074"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270039"
 ---
 # <a name="order-promising"></a>Orderlöfte
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum.
+Detta avsnittet innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum.
 
 Orderlöfte beräknar de tidigaste transport- och inleveransdatumen och baseras på metoden för kontroll av leveransdatum och transportdagar. Du kan välja mellan fyra metoder för kontroll av leveransdatum:
 
@@ -47,11 +47,13 @@ ATP beräknas med följande formel:
 
 ATP = ATP för föregående period + inleveranser för aktuell period – utleveranser för aktuell period – nettosaldo för varje framtida period till och med den period då summan av inleveranser för alla framtida perioder (inklusive den framtida perioden) överskrider summan av inleveranserna (inklusive den framtida perioden).  
 
+Observera att beräkningen av ATP inte innehåller information om utgångsdatum och efter den tidsgräns för ATP som systemet förväntar sig när någon kvantitet kan utlovas.
+
 När det inte finns några fler utleveranser eller inleveranser att ta hänsyn till är kvantiteten tillgängligt att lova för de följande datumen densamma som den senast beräknade kvantiteten tillgängligt att lova.  
 
 Om inte alla dimensionerna som används för en artikel är givna när ATP-kontrollen slutförs, kan de fortfarande anges i utleveransen och inleveranserna. I beräkningen av tillgängligt att lova måste i så fall inleveranser och utleveranser aggregeras till de befintliga dimensionerna, för att antalet inleverans- och utleveransrader som används i beräkningen av tillgängligt att lova ska minska.  
 
-ATP-kvantiteten som visas är alltid större än eller lika med 0 (noll). Om beräkningen returnerar en negativ ATP-kvantitet (till exempel kvantitet som lovades tidigare överskrider den tillgängliga kvantiteten) anges kvantiteten automatiskt till **0**.
+ATP-kvantiteten som visas är alltid större än eller lika med 0 (noll). Om beräkningen returnerar en negativ ATP-kvantitet (till exempel kvantitet som lovades tidigare överskrider den tillgängliga kvantiteten) anges kvantiteten anges automatiskt till 0.
 
 ### <a name="example"></a>Exempel
 

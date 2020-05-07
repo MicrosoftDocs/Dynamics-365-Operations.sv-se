@@ -3,7 +3,7 @@ title: Annonsbanderollmodul
 description: Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025630"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269784"
 ---
 # <a name="promo-banner-module"></a>Annonsbanderollmodul
 
@@ -64,16 +64,17 @@ Annonsbanderoller kan användas i webbplatshuvudet för att visa erbjudanden som
 
 Om du vill lägga till en annonsbanderollmodul på en sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa en sidmall som har namnet **annonsbanderollmall**.
+1. Skapa en ny sidmall genom att välja **Nytt**.
+1. I dialogrutan **Ny mal** under **Mallnamn**, ange **annonsbanderollmall** och välj sedan **OK**.
 1. Under **Siddisposition**, lägg till en **Standardsida** i facket **Brödtext**. 
-1. Checka in mallen och publicera den. 
+1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den. 
 1. Använd den mall som du just skapade för att skapa en sida med namnet **sida för annonsbanderoll**. 
 1. Lägg till platsen **Huvud** på ny sida, lägg till en behållarmodul. 
 1. I fönstret till höger, ange värdet **Bredd** till **Fyll behållare**.
 1. Under **Siddisposition**, lägg till en annonsbanderollmodul i behållarmodulen.
 1. Lägg till ett eller flera banderollmeddelanden i inställningarna för banderollmodulen. Varje meddelande kan ha text tillsammans med en länk. Du kan redigera de andra egenskaperna om du vill anpassa modulen ytterligare.
-1. Spara och förhandsgranska sidan. Högst upp på sidan ska du se en notifiering med den tillagda texten.
-1. Avsluta redigeringen av sidan och publicera den. 
+1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Högst upp på sidan ska du se en notifiering med den tillagda texten.
+1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. 
 
 > [!NOTE]
 > En annonsbanderoll används vanligtvis i sidhuvud- eller underrubrikfacket.
