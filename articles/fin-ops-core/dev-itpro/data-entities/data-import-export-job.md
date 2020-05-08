@@ -3,7 +3,7 @@ title: Översikt över jobb för import och export av data
 description: Använda arbetsytan Datahantering för att skapa och hantera dataimport- och dataexportjobb.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124622"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278908"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Översikt över jobb för import och export av data
 
@@ -151,6 +151,18 @@ Körningsinformationen anger statusen för varje dataenhet som jobbet bearbetat.
 Du kan hämta mellanlagringsdatan i en fil för exportjobb, eller också du kan hämta den i form av ett paket för import- och exportjobb.
 
 Du kan också öppna körningsloggen från körningsinformationen.
+
+## <a name="parallel-imports"></a>Parallella importer
+För att påskynda importen av data kan parallell bearbetning av import av en fil aktiveras om enheten stöder parallell import. Om du vill konfigurera parallell import för en entitet måste följande steg följas.
+
+1. Gå till **Systemadministration \> Arbetsytor \> Datahantering**.
+2. I avsnittet **importera/exportera** väljer du panelen **Ramverksparametrar** för att öppna sidan **Ramverket för dataimport/-export**.
+3. På fliken **Entitetsinställningar**, välj **Konfigurera parametrar för entitetskörning** för att öppna sidan **Parametrar för körning av entitetsimport**.
+4. Ställ in följande fält för att konfigurera parallell import för en entitet:
+
+    - Välj den entitet i fältet **Entitet**.
+    - I fältet **Importera antal för tröskelvärdepost** anger du antal för tröskelvärdepost för import. Detta bestämmer antalet poster som ska bearbetas av en tråd. Om en fil har 10 000 poster innebär detta att antalet poster på 2 500 med antalet uppgifter är 4 och varje tråd bearbetar 2 500 poster.
+    - I fältet **Import uppgiftsantal** anger du antalet importerade uppgifter. Detta får inte överskrida de maximalt antal trådar som allokerats för batchbearbetning i **Systemadministration \>Serverkonfiguration**.
 
 ## <a name="clean-up-the-staging-tables"></a>Rensa mellanlagringsregister
 Från och med plattformsuppdatering 29 har den här funktionen ersatts. Detta ersätts av en ny version av funktionen för jobbhistorikrensning som förklaras nedan.

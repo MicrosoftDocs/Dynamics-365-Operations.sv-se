@@ -3,7 +3,7 @@ title: Anpassa webbplatsnavigeringen
 description: I det här avsnittet beskrivs hur du skapar en anpassad onlinemapp för navigering för att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001839"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269669"
 ---
 # <a name="customize-site-navigation"></a>Anpassa webbplatsnavigeringen
 
@@ -93,7 +93,7 @@ Om du vill lägga till anpassade navigeringsalternativ på navigeringsmenyn föl
 1. I fönstret egenskaper, på fliken **Data** väljer du **Lägg till objekt** för att skapa ett nytt navigeringsobjekt i innehållshanteringssystem (CMS).
 1. Ange länktext och en URL.
 1. Upprepa steg 2 och 3 om du vill lägga till fler anpassade navigeringsalternativ.
-1. När du är klar sparar du mallen eller fragmentmallen och checkar in den.
+1. När du är klar väljer du **Spara** för att spara mallen eller fragmentet och väljer sedan **Slutför redigering** för att checka in den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

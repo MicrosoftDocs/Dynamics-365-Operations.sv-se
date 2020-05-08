@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller ändringar i Supply Chain Management – startsida
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.11 (juli 2020)
+                      href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (maj 2020)
                       href: get-started/whats-new-scm-10-0-10.md
                     - name: Supply Chain Management 10.0.9 (april 2020)
                       href: get-started/whats-new-scm-10-0-9.md
-                    - name: Supply Chain Management 10.0.8 (februari 2020)
-                      href: get-started/whats-new-scm-10-0-8.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -349,6 +349,8 @@
               items:
                 - name: 'Prognoser, arbetsorder och projekt'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Integrera tillgångshantering med anläggningstillgångar
+              href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Förebyggande och reaktivt underhåll
               items:
                 - name: Översikt över förebyggande underhåll
@@ -563,8 +565,10 @@
                   href: cost-management/lifo-date-physical-value-marking.md
                 - name: LIFO med fysiskt värde och markering
                   href: cost-management/lifo-physical-value-marking.md
-                - name: Rörligt genomsnitt
+                - name: Glidande medelvärde
                   href: cost-management/moving-average.md
+                - name: Glidande medelvärde – reservkostnadssekvens
+                  href: cost-management/moving-average-fallback.md
                 - name: Fysiska och finansiella uppdateringar
                   href: cost-management/physical-financial-updates.md
                 - name: Löpande genomsnittlig självkostnad
@@ -579,7 +583,9 @@
                   href: cost-management/inventory-close.md
                 - name: Justera kostnadsvärden för lagerbehållning
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Åldersfördelningsrapport för lager
+                - name: Lagringsrapport för lagervärde
+                  href: cost-management/inventory-value-report-storage.md
+                - name: Lagring av Lagerföråldringsrapport
                   href: cost-management/inventory-aging-report-storage.md
             - name: Tillverkningsredovisning
               items:
@@ -1223,6 +1229,8 @@
                   href: inventory/enable-quality-management.md
                 - name: Kvalitetshanteringsprocesser
                   href: inventory/quality-management-processes.md
+                - name: Kvalitetsstyrning för lagerprocesser
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Avvikelsehantering
                   href: inventory/enable-nonconformance-management.md
                 - name: Ställ in förutsättningar för hantering
@@ -2547,8 +2555,10 @@
                   href: warehousing/unit-measure-stocking-policies.md
                 - name: Power BI-innehåll för lagerställe
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                - name: Systemgruppering i en öppen arbetslista
+                - name: Systemgruppering i en öppen arbetsuppgiftslista
                   href: warehousing/system-group-on-open-work-list.md
+                - name: Layout för dokumentflöde för ID-nummeretiketter
+                  href: warehousing/document-routing-layout-for-license-plates.md
                 - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
                   href: warehousing/scan-bar-codes-using-a-camera.md
                 - name: Stöd för streckkod för mobil
@@ -2653,6 +2663,8 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Ställ in mobila enheter för lagerarbete
                   href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Inleverans av ID-nummer med mobilappen för lagerhantering
+                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
                   href: warehousing/tasks/set-up-mobile-device-menu.md
                 - name: Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
@@ -2673,6 +2685,8 @@
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: Inleveranser för registrering och artikelinförsel
               items:
+                - name: Lagerhantering av inkommande laster för inköpsorder
+                  href: warehousing/inbound-load-handling.md
                 - name: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
@@ -2682,6 +2696,7 @@
                 - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Ställ in en arbetsmall för inköpsorder
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Utveckling av Supply Chain Management
           items:
             - name: Guide för utveckling av Gantt-kontroll

@@ -3,7 +3,7 @@ title: Borttagna eller utfasade funktioner i tidigare versioner
 description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225138"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284024"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -230,7 +230,7 @@ Stöd för att skapa projektbaserade försäljningsorder där projektkontraktet 
 | **Ersatt av en annan funktion?**   | Nr. |
 | **Produktområden som påverkas**         | Produktinformationshantering |
 | **Distribueringsalternativ**              | Allt  |
-| **Status**                         | Tas bort från Finance and Operations 10.0.0 med plattformsuppdatering 24. (Om du behöver reparera skadade data som orsakas av ett tidigare namnbyte på primärnyckeln för en frisläppt produkt, kontaktar du Microsoft Support för att begära tillfällig borttagning av denna begränsning.) |
+| **Status**                         | Tas bort från Finance and Operations 10.0.0 med plattformsuppdatering 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 med plattformsuppdatering 23
@@ -267,7 +267,7 @@ Inbäddade KPI:er (Key Performance Indicators) kan utformas i Visual Studio av e
 | **Ersatt av en annan funktion?**   | Denna varning ersätts av ett kompileringsfel i framtiden. |
 | **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Inaktuell - varningen blir ett kompileringstidsfel i framtiden. Denna ändring är avsedd för plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
+| **Status**                         | Inaktuell: varningen är ett kompileringstidsfel med plattformsuppdateringar för version 10.0.11 av Finance and Operations-appar. |
 
 #### <a name="complete-list"></a>Fullständig lista
 Du hittar en fullständig lista över API:er som är inaktuella i [Avskrivning av metoder och metadataelement](deprecation-deletion-apis.md).

@@ -3,7 +3,7 @@ title: Hjälpmedelsfunktioner
 description: Det här avsnittet innehåller information om hjälpmedelsfunktioner i olika versioner av Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3edc6250dd5438be31d80a9d6b0f3b730438ca53
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001770"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274198"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Hjälpmedelsfunktioner
 
@@ -49,7 +49,7 @@ Dynamics 365 Commerce system för digital tillgångshantering stöder flera hjä
 
 | Video-funktionen               | Beskrivning |
 |-----------------------------|-------------|
-| Dold undertextning (CC)      | Text som kan visas för ljud- och ljudbeskrivande delar av en video, för att hjälpa användare som är hörselskadade |
+| Dold undertextning (CC)      | Text som kan visas för ljud- och ljudbeskrivande delar av en video, för att hjälpa användare som är döva eller hörselskadade |
 | Underrubriker                   | Textningsfiler som visar texten i kontext ledtrådar eller dialogrutan på skärmen |
 | Ljudutskrifter           | En textutskrift av talade ord som genereras från ljudet av en videotillgång |
 | Beskrivande ljud           | En icke-primär ljudkanal som beskriver innehållet eller kontexten som förekommer på skärmen |
@@ -57,7 +57,7 @@ Dynamics 365 Commerce system för digital tillgångshantering stöder flera hjä
 
 ### <a name="configure-video-accessibility-elements"></a>Konfigurera hjälpmedelselement för video
 
-I Dynamics 365 Commerce i avsnittet **tillgångar** för din webbplats kan du överföra videotillgångar som har separata filer för textning, vanligt ljud och beskrivande ljud. Dold textning kan också genereras automatiskt när en videotillgång laddas upp.
+I Commerce, avsnittet **Mediebibliotek** för din webbplats kan du överföra videotillgångar som har separata filer för textning, vanligt ljud och beskrivande ljud. Dold textning kan också genereras automatiskt när en videotillgång laddas upp.
 
 #### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a>Generera eller ladda upp filer med dold textning vid uppladdning av videotillgångar
 
@@ -72,7 +72,7 @@ Om du vill överföra en fil med dold textning manuellt när du överför en vid
 Om du vill överföra vanliga ljud- eller beskrivande ljudfiler för videoklippet använder du filväljaren i dialogrutan **Överför tillgång**.
 
 > [!NOTE]
-> Dold textning, regelbundet ljud och beskrivande ljudtillgångar kan också läggas till när en videotillgång har laddats upp. Gå till **tillgångar**, välj videotillgången och checka ut den, sedan i fönstret Egenskaper överför videotillgången, ladda upp ytterligare tillgångar.
+> Dold textning, regelbundet ljud och beskrivande ljudtillgångar kan också läggas till när en videotillgång har laddats upp. Gå till **Mediebibliotek**, välj videotillgången och välj **Redigera** för att checka ut den, sedan i fönstret Egenskaper överför videotillgången, ladda upp ytterligare tillgångar.
 
 #### <a name="edit-cc-and-audio-transcript-files"></a>Redigera CC och ljudavskriftsfiler
 
@@ -80,10 +80,10 @@ CC och ljudavskriftsfiler kan redigeras direkt i redigeringsverktyg. Videouppspe
 
 Gör så här om du vill redigera CC och ljudavskriftsfiler.
 
-1. Gå till **tillgångar**, välj videotillgången och välj sedan **redigera CC/avskrift**. Innehållsredigeraren för dold textning och avskrift visas.
-1. Välj **Checka ut**.
+1. Gå till **mediebiblioteket**och välj filnamn på videotillgången. Innehållsredigeraren för dold textning och avskrift visas.
+1. Välj **Redigera**.
 1. Redigera texten för dold textning eller avskrift.
-1. När du är klar, välj **Spara**, och välj sedan **checka in**.
+1. När du är klar, välj **Spara**, och välj sedan **Slutför redigering**.
 1. När du är redo att publicera väljer du **publicera**.
 
 #### <a name="set-the-minimum-age-attribute"></a>Ange minimiåldersattribut
@@ -92,8 +92,8 @@ Ett metadataattribut för **minimiålder** kan associeras med videotillgångar.
 
 Gör så här om du vill ange attributet för **minimiålder** för en videotillgång.
 
-1. Gå till **tillgångar** och välj videotillgången.
-1. Välj **Checka ut**.
+1. Gå till **Mediebibliotek** och välj videotillgången.
+1. Välj **Redigera**.
 1. Ange attributet **minimiålder** i fönstret Egenskaper för videotillgången.
 
 > [!NOTE]
@@ -112,3 +112,5 @@ Gör så här om du vill ange attributet för **minimiålder** för en videotill
 [Cookie-kompatibilitet](cookie-compliance.md)
 
 [Lägga till en sida med sekretesspolicy](add-privacy-page.md)
+
+[Ersätt användar-ID:n som är associerade med spårade innehållsändringar](replace-IDs-tracked-changes.md)

@@ -3,7 +3,7 @@ title: Metod för total kostnadsallokering
 description: Den här ämnet ger riktlinjer för att använda total kostnadsallokering (TCA). TCA är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/15/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e621b76742a5a115ba2d77e03b47cd1aead8664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 758015c566e39df7306e1b34b8d3b42f1f1eba79
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214675"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262683"
 ---
 # <a name="total-cost-allocation-method"></a>Metod för total kostnadsallokering
 
 [!include [banner](../includes/banner.md)]
-
-Den här ämnet ger riktlinjer för att använda total kostnadsallokering (TCA). TCA är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet.
 
 Total kostnadsallokering (TCA) är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet. Den här metoden är dynamisk. Den beräknar kostnaden som ett viktat medelvärde mellan kvantiteterna som rapporteras som avslutade för receptartikel och samprodukterna. När TCA används behöver du inte granska kostnadsallokeringarna för varje batchorder. Om TCA inte används använder receptberäkningen befintliga funktioner.
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172818"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270298"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
@@ -66,6 +66,14 @@ Försäljningsofferter kan skapas antingen i Sales eller Supply Chain Management
 + Du kan lägga till en rabatt för produkten på offerten. I det här fallet kommer rabatten att synkroniseras med Supply Chain Management. Fälten **rabatt**, **tillägg**, och **moms** på rubriken styrs av en inställning i Supply Chain Management. Den här inställningen stöder inte integreringsmappning. I stället underhålls och underhålls fälten **pris**, **rabatt**, **tillägg**, och **moms** i Supply Chain Management.
 + Fälten **Rabatt %**, **Rabatt** och **Fraktbelopp** fält på försäljningsoffertens rubrik är skrivskyddade fält.
 + Fälten **betalningsvillkor**, **fraktvillkor**, **leveransvillkor**, **leveranssätt** och leveransläge tillhör inte standardmappningarna. Om du vill mappa dessa fält måste du konfigurera en värdemappning som är specifik för data i organisationer som enheten synkroniseras mellan.
+
+Om du även använder Field Service-lösningen måste du aktivera parametern **Snabbskapa anbudsförfrågan**. Om du aktiverar parametern igen kan du fortsätta att skapa offertrader med hjälp av funktionen snabbgenerering.
+1. Navigera till ditt Dynamics 365 Sales-program.
+2. Välj ikonen Inställningar i det övre navigeringsfältet.
+3. Välj **avancerade inställningar**.
+4. Välj alternativet **anpassa systemet**.
+5. Välj menyalternativet **offertrad**.
+6. Gå till avsnittet **datatjänster** och markera kryssrutan **Tillåt snabbskapande**.
 
 ## <a name="sales-orders"></a>Försäljningsorder
 

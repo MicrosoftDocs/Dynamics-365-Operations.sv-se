@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209914"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274175"
 ---
 # <a name="create-an-asset"></a>Skapa en tillgång
 
@@ -38,13 +38,13 @@ Det här avsnittet beskriver hur du skapar en tillgång i tillgångshantering.
 3. I dialogrutan **skapa tillgångar** infogar du data om **tillgången** (tillgångs-ID) och tillgångens namn. Välj datum och tid för tillgången i fältet **Giltighet**. Från och med det datumet kan du installera tillgången på en funktionsplats samt flytta och ersätta tillgången i en tillgångsstruktur.
 4. Välj tillgångstyp för tillgången (obligatoriskt fält) i fältet **tillgångstyp**. Om det behövs väljer du **tillgångstillverkare** och **tillgångsmodell** för tillgången. Om endast en produkt har ställts in, väljs den produkten automatiskt i fältet **tillgångstillverkare**. De val som är tillgängliga **tillgångstillverkare** och **tillgångsmodell** beror på inställningarna i [Tillgångstillverkare och-modeller](../setup-for-objects/product-and-model.md).
 5. I gruppen **överordnad tillgång** är fältet **tillgång** tomt som standard. Om det behövs kan du välja en överordnad tillgång och sedan fylls alla fält i gruppen **överordnad tillgång** i automatiskt.
->[!NOTE]  
->När du väljer en överordnad tillgång är två eller tre flikar tillgängliga: fliken **mina tillgångar** innehåller tillgångar som är relaterade till de funktionsplatser som du (underhållsarbetaren som är inloggad på systemet) kan allokeras till. Om inga funktionsplatser ställs in för en underhållsarbetare i formuläret [underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md) kommer fliken **mina tillgångar** inte att visas. Fliken **aktiva tillgångar** innehåller en lista över alla tillgångar med livscykelstatus "aktiv". Fliken **tillgångsvisning** visar en trädvy över funktionsplatser och tillgångar som är installerade på dessa platser.
+    >[!NOTE]  
+    >När du väljer en överordnad tillgång är två eller tre flikar tillgängliga: fliken **mina tillgångar** innehåller tillgångar som är relaterade till de funktionsplatser som du (underhållsarbetaren som är inloggad på systemet) kan allokeras till. Om inga funktionsplatser ställs in för en underhållsarbetare i formuläret [underhållsarbetare och arbetargrupper](../setup-for-objects/workers-and-worker-groups.md) kommer fliken **mina tillgångar** inte att visas. Fliken **aktiva tillgångar** innehåller en lista över alla tillgångar med livscykelstatus "aktiv". Fliken **tillgångsvisning** visar en trädvy över funktionsplatser och tillgångar som är installerade på dessa platser.
 
 6. Den standardfunktionsplats som du har ställt in föreslås för tillgången i gruppen **tillgång** > fältet **> funktionsplats**. Välj en annan funktionsplats om det behövs.
 
->[!NOTE]
->När du har skapat en tillgång kan du installera den på en annan funktionsplats, om det behövs. Endast tillgångar på högsta nivån (tillgångar utan en aktuell överordnad tillgång) kan installeras på en funktionsplats. Det innebär att du installerar den översta nivån samt eventuella underordnade tillgångar på den valda funktionsplatsen. Läs mer om att installera tillgångar på funktionsplatser i [Introduktion till funktionsplatser](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >När du har skapat en tillgång kan du installera den på en annan funktionsplats, om det behövs. Endast tillgångar på högsta nivån (tillgångar utan en aktuell överordnad tillgång) kan installeras på en funktionsplats. Det innebär att du installerar den översta nivån samt eventuella underordnade tillgångar på den valda funktionsplatsen. Läs mer om att installera tillgångar på funktionsplatser i [Introduktion till funktionsplatser](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klicka på **OK**.
 8. Välj tillgången i listan **alla tillgångar** och klicka på knappen **redigera** för att lägga till ytterligare information till tillgången.

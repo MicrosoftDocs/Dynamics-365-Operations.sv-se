@@ -3,7 +3,7 @@ title: Utöka en kategorilandningssida
 description: I det här avsnittet beskrivs hur du berikar kategorisidor i Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71348efba9fc1374b9e6599eb23f198d3851036e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003060"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269853"
 ---
 # <a name="enrich-a-category-landing-page"></a>Utöka en kategorilandningssida
 
@@ -39,7 +39,7 @@ I stället för att använda standardkategorisidan kanske du vill använda en la
 
 ![Utöka en kategorilandningssida](./media/CategoryLandingPages.png)
 
-I utvecklingsverktyget innehåller sidan **produkt** en lista med kategorier från den kanal som har tilldelats webbplatsen. Om du har valt statusen **berikad** för en kategorisida har den kategorisidan berikats. I annat fall används standardkategorisidan och innehållet för kategorin. Du kan förhandsgranska både de berikade och icke-funktionella kategorisidorna för en kategori genom att markera kategorinamnet.
+I Commerce webbplatsskaparen innehåller sidan **produkter** en lista med kategorier från den kanal som har tilldelats webbplatsen. Om du har valt statusen **berikad** för en kategorisida har den kategorisidan berikats. I annat fall används standardkategorisidan och innehållet för kategorin. Du kan förhandsgranska både de berikade och icke-funktionella kategorisidorna för en kategori genom att markera kategorinamnet.
 
 Om du vill utöka en kategorisida gör du följande.
 
@@ -48,9 +48,7 @@ Om du vill utöka en kategorisida gör du följande.
 3. Välj en mall för den berikade kategorisidan. Om du bara gör mindre ändringar kan du välja standardkategorisidan. Du kan också välja en specifik mall för kategorisidan. När du väljer mallen öppnas sidredigeraren och den valda mallen används för att skapa en ny kategori sida för den valda kategorin. Sidan är utcheckad till dig och du kan nu göra dina ändringar.
 
 > [!NOTE]
-> Moduler som använder kategorispecifikationsdata använder data från den valda kategorin.
->
-> Inställningarna för den mall som du väljer avgör vilka ändringar du kan göra.
+> Moduler som använder kategorispecifikationsdata använder data från den valda kategorin. Inställningarna för den mall som du väljer avgör vilka ändringar du kan göra.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

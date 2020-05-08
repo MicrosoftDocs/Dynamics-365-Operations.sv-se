@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f8c2cdbf055a2854c4140d3ccc264da260c7cdf5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002276"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275358"
 ---
 # <a name="compliance-overview"></a>Regelefterlevnad – översikt
 
@@ -39,8 +39,10 @@ Om du vill veta mer om de grundläggande principer som Microsoft använder besö
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Hjälpmedelsfunktioner](accessibility.md)
+[Hjälpmedelsfunktioner och möjligheter](accessibility.md)
 
 [Cookie-kompatibilitet](cookie-compliance.md)
 
 [Lägga till en sida med sekretesspolicy](add-privacy-page.md)
+
+[Ersätt användar-ID:n som är associerade med spårade innehållsändringar](replace-IDs-tracked-changes.md)

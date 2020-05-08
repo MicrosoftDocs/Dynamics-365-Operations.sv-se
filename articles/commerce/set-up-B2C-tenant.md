@@ -3,7 +3,7 @@ title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 04/17 /2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5fca37fb89c723273ef753b102092e2cfb26563
-ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
+ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
+ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096527"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270220"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -169,8 +169,7 @@ För att en lösenordsåterställning för policy för användarflöde följ ste
 1. Under **identitetsleverantörer** väljer du **Återställ lösenord med e-postadress**.
 1. Markera **Skapa**.
 1. Markera en eller flera av följande kryssrutor under **Programanspråk**:
-    - **E-postadress**
-    - **Adresser**
+    - **E-postadresser**
     - **Angivet namn**
     - **Efternamn**
     - **Användarens objekt-ID**

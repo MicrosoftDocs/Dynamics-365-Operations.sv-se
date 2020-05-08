@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172701"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275660"
 ---
 # <a name="general-troubleshooting"></a>Allmän felsökning
 
@@ -70,14 +70,12 @@ Så här aktiverar du spårningslogg.
 Så här visar du spårningslogg.
 
 1. Logga in på Finance and Operations-appen, öppna sidan **inställningar** och under **Anpassning**, välj **Spårningslogg för plugin-program**.
-2. Sök efter spårningsloggarna där fältet **Typnamn** anges till **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**.
+2. Sök efter spårningsloggarna där fältet **Typnamn** anges till **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dubbelklicka på ett objekt om du vill visa hela loggen och på snabbfliken **Körning**, granska texten **Meddelandeblock**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivera felsökningsläget för att felsöka problem med direkt synkronisering i Finance and Operations-appar
 
-**Den roll som krävs för att visa felen:** systemadministratör
-
-Fel i dubbelriktad skrivning som har sitt ursprung i Common Data Service kan visas i Finance and Operations-appen. I vissa fall är den fullständiga texten i felmeddelandet inte tillgänglig eftersom meddelandet är för långt eller innehåller personligt identifierande information (PII). Du kan aktivera detaljerad loggning för fel genom att följa stegen nedan.
+**Den roll som krävs för att visa felet:** systemadministratören Fel i dubbelriktad skrivning som har sitt ursprung i Common Data Service kan visas i Finance and Operations-appen. I vissa fall är den fullständiga texten i felmeddelandet inte tillgänglig eftersom meddelandet är för långt eller innehåller personligt identifierande information (PII). Du kan aktivera detaljerad loggning för fel genom att följa stegen nedan.
 
 1. Alla projektkonfigurationer i Finance and Operations-appar har en **IsDebugMode**-egenskap i entiteten **DualWriteProjectConfiguration**. Öppna entiteten **DualWriteProjectConfiguration** genom att använda Excel-tillägget.
 
@@ -104,7 +102,7 @@ Fel i dubbelriktad skrivning som har sitt ursprung i Common Data Service kan vis
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Ta bort länken och länka en annan Common Data Service-miljö från en Finance and Operations-app
 
-**Nödvändiga autentiseringsuppgifter för ta bort länken till miljön:** Azure AD klientadministratör
+**Nödvändiga autentiseringsuppgifter för ta bort länken till miljö**: systemadministratör för antingen Finance and Operations-appen eller Common Data Service.
 
 1. Logga in på Finance and Operations-appen.
 2. Gå till **Arbetsytor \> Datahantering** och välj panelen **Dubbelriktad skrivning**.
@@ -113,3 +111,13 @@ Fel i dubbelriktad skrivning som har sitt ursprung i Common Data Service kan vis
 5. Välj **Ja** för att bekräfta åtgärden.
 
 Nu kan du länka en ny miljö.
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>Det går inte att visa formuläret information om försäljningsorderrad 
+
+När du skapar en försäljningsorder i Dynamics 365 Sales kan du om du klickar på **+ Lägg till produkter** omdirigeras till formuläret för orderrad Dynamics 365 projektåtgärder. Från det formuläret finns det inget sätt att visa formuläret för försäljningsorderrad **Information**. Alternativet för **information** visas inte i listrutan under **Ny orderrad**. Detta inträffar eftersom projektåtgärder har installerats i din miljö.
+
+Så här aktiverar du alternativet för formuläret **informations** igen:
+1. Navigera till entiteten **orderrad**.
+2. Hitta formuläret **Information** under formulärnoden. 
+3. Markera formuläret **Information** och klicka på **aktivera säkerhetsroller**. 
+4. Ändra säkerhetsinställningarna till **Visa för alla**.

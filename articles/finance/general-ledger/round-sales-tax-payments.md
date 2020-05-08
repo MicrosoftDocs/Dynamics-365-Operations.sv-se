@@ -3,7 +3,7 @@ title: Momsbetalningar och avrundningregler
 description: Den här artikeln beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771762"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275684"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsbetalningar och avrundningregler
 
@@ -43,26 +43,26 @@ Det totala momsen för en period visar ett kreditsaldo på -98 765,43. Den jurid
 
 Den juridiska personen vill använda en avrundningsmetod som rundar av saldot till närmaste hela 1,00. Användaren som ansvarar för momsredovisningen måste då göra följande steg.
 
-1.  Klicka på Skatt &gt; Indirekt moms &gt; Moms &gt; Skattemyndigheter
-2.  I snabbfliken Standard, välj Normal i fältet Avrundningssätt.
-3.  I fältet Avrundning anger du 1,00.
-4.  När det är dags att betala moms till skattemyndigheten öppnar du Kvitta och bokför moms. (Klicka på Skatt &gt; Deklarationer &gt; Moms &gt; Kvitta och bokför moms.)
-5.  På momskvittningkontot avrundas skatteskuldbeloppet på 98 765,43 till 98 765.
+1. Klicka på **Skatt** > **Indirekt moms** > **Moms** > **Skattemyndigheter**.
+2. I snabbfliken **Allmän** i fältet **Avrundningssätt**, välj **Normal**.
+3. I fältet **Avrundning** anger du 1,00.
+4. När det är dags att betala moms till skattemyndigheten, gå till **Skatt** > **Deklarationer** > **Moms** > **Kvitta och bokför moms**. På momskvittningskontot kan du se att skatteskuldbeloppet på **98 765,43** avrundas till **98 765**.
 
-Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje avrundningsmetod som är tillgänglig i fältet Avrundningsätt på sidan Skattemyndigheten.
+Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje avrundningsmetod som är tillgänglig i fältet **Avrundningsätt** på sidan **Skattemyndigheten**.
 
-| Aternativ för avrundningssätt                | Avrundningsvärde = 0,01 | Avrundningsvärde = 0,10 | Avrundningsvärde = 1,00 | Avrundningsvärde = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normal                              | 98 765,43              | 98 765,40              | 98 765,00              | 98 800,00                |
-| Nedåt                            | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Uppåt                         | 98 765,43              | 98 765,50              | 98 766,00              | 98 800,00                |
-| Egen fördel, för ett kreditsaldo | 98 765,43              | 98 765,40              | 98 765,00              | 98 700,00                |
-| Egen fördel, för ett debetsaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Om värdet för avrunda är inställt på 0,00 är:
+>
+> - Vid normal avrundning är avrundningsbeteendet detsamma som för **Avrundning = 0,01**.
+> - För **Alternativ för avrundningssätt**, **Nedåt**, **Uppåt** och **Egen fördel** är beteendet detsamma som för **Avrundning = 1,00**.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Ingen avrundning, eftersom avrundningen är 0,00
-
-avrundning (1,0151, 0,00) = 1,0151 avrundning (1,0149, 0,00) = 1,0149
+| Aternativ för avrundningssätt                | Avrundningsvärde = 0,01 | Avrundningsvärde = 0,10 | Avrundningsvärde = 1,00 | Avrundningsvärde = 100,00 | Avrundningsvärde = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Nedåt                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Uppåt                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Egen fördel, för ett kreditsaldo | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Egen fördel, för ett debetsaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normal avrundning och avrundningsprecision är 0,01
 

@@ -3,20 +3,20 @@ title: Utbildningskatalog för Finance and Operations
 description: Hitta alla utbildningsalternativ för Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078003"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3279091"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Utbildningskatalog för Finance and Operations
 
@@ -33,6 +33,10 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
     Bestämmer du om ni vill investera i ny teknik? 
 
     [Utbildningskatalog för affärs- och tekniska beslutsfattare](learning-catalog-bdm.md#)
+
+    [Kom igång](learning-catalog-bdm.md#get-started)
+
+    [Prov](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
 
     [Ekonomistyrning](learning-catalog-business-user.md#financial-management)
 
+    [Prov](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>Projektledare för distribution
+    ### <a name="implementation-project-managers"></a>Projektledare för distribution
 
     Är du ansvarig för att se till att ditt företags implementering går smidigt?
 
@@ -73,6 +79,9 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
     [Tillverkning](learning-catalog-project-manager.md#manufacturing)
 
     [Hantering av underleverantörer](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Prov](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -86,11 +95,15 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
 
     [Kunskap om huvudplattformen](learning-catalog-administrator.md#core-platform-knowledge)
 
+    [Core-utveckling](learning-catalog-administrator.md#core-development)
+
     [Migrering och uppgradering](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Behandling](learning-catalog-administrator.md#servicing)
 
     [Testar](learning-catalog-administrator.md#testing)
+
+    [Prov](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
 
     [Hantering av underleverantörer](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Prov](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Hitta rätt onlineutbildning, i personliga workshops och evenemang för din roll
     Är du ansvarig för att hjälpa dina kunder att köpa rätt lösning? 
 
     [Utbildningskatalog för Microsoft Partner Sales and Marketing](learning-catalog-partner-sales.md)
+
+    [Kom igång](learning-catalog-partner-sales.md#get-started)
+
+    [Prov](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

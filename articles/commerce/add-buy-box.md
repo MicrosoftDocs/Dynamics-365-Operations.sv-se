@@ -3,7 +3,7 @@ title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261408"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269761"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -80,15 +80,15 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 1. Skapa ett fragment med namnet **inköpsrutafragment**och lägg till en modul för inköpsruta.
 1. Platsen **Media** för modul för inköpsruta, lägg till en mediagallerimodul.
 1. I facket **Butiksväljare** i modul för inköpsruta, lägg till en modul för butiksväljare.
-1. Checka in sidan och publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 1. Skapa en mall för en produktinformationssida och ge den namnet **PDP-mall**.
 1. Lägg till en standardsida.
 1. Lägg till platsen **Huvud** på standardsida, lägg till ett inköpsrutafragment.
-1. Spara mallen, slutför redigeringen och publicera den.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Använd den mall som du just skapade för att skapa en sida med namnet **PDP-sida**.
 1. Lägg till platsen **Huvud** på den nya sidan, lägg till ett inköpsrutafragment.
 1. Spara och förhandsgranska sidan. Lägg till frågesträngparametern **?productid=&lt;product id&gt;** till URL för förhandsgranskningssidan. På så sätt används produktkontexten för att läsa in och återge förhandsgranskningssidan.
-1. Spara sidan, slutför redigeringen och publicera det. En inköpsruta bör visas på sidan för produktinformation.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. En inköpsruta bör visas på sidan för produktinformation.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

@@ -3,7 +3,7 @@ title: Hantera SEO-metadata
 description: I det här avsnittet beskrivs hur du hanterar SEO-metadata (Search Engine Optimization) i Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003474"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270060"
 ---
 # <a name="manage-seo-metadata"></a>Hantera SEO-metadata
 
@@ -72,13 +72,10 @@ Om du vill ändra metadata, följ dessa steg.
 1. Under **Webbplatser**, välj **Fabrikam** (eller namet på webbplatsen).
 1. I navigeringsfönstret till vänster, välj **sidor**.
 1. Välj startsidan för att öppna den i sidredigeraren.
-1. Klicka på **utcheckning** i åtgärdsfönstret.
+1. Klicka på **Redigera** i kommandofältet.
 1. I fönstret Egenskaper till höger, visa **Standardmetataggar**.
-1. Om du vill lägga till en ny metatagg väljer du **Lägg till** och anger sedan taggen i fältet.
-
-    Om du vill ta bort en befintlig metatagg markerar du papperskorgen till höger om den.
-
-1. Välj **spara**och välj sedan **checka in**.
+1. Om du vill lägga till en ny metatagg väljer du **Lägg till** och anger sedan taggen i fältet. Om du vill ta bort en befintlig metatagg markerar du papperskorgen till höger om den.
+1. Välj **spara**och välj sedan **Avsluta redigeringen**.
 1. I fältet **kommentarer** anger du **Uppdaterade metataggar** och sedan **OK**.
 1. Välj **Förhandsgranska** om du vill förhandsgranska din sida. När du är klar kan du stänga fliken förhandsgranskning och återgå till redigeringsverktyget.
 1. Markera **Publicera**.

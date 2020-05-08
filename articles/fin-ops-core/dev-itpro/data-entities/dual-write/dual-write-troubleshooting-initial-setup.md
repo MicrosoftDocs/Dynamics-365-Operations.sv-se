@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e20c9c5e1250c8e65b5642a7c45d7ae859315697
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172678"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275451"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Felsöka problem under första installationen
 
@@ -39,7 +39,7 @@ Det här avsnittet innehåller felsökningsinformation för integrering av dubbe
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-common-data-service"></a>Du kan inte länka en Finance and Operations-app till Common Data Service
 
-**Obligatoriska autentiseringsuppgifter för att konfigurera dubbelriktad skrivning:** Azure AD-klientadministratör
+**Obligatoriska autentiseringsuppgifter för att konfigurera dubbelriktad skrivning:** Systemadministratören i Finance and Operations-appar och Common Data Service.
 
 Fel på sidan **Konfigurera länk till Common Data Service** orsakas vanligtvis av ofullständiga installations- eller behörighetsproblem. Kontrollera att hela hälsokontrollen passerar **Konfigurera länk till Common Data Service** som visas i följande illustration. Du kan inte länka dubbelriktad skrivning om inte hela hälsokontrollen passerar.
 
