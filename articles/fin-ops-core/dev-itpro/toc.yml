@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-34.md
                 - name: Platform update 33 (april 2020)
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (februari 2020)
-                  href: get-started/whats-new-platform-update-32.md
             - name: Borttagna och utfasade funktioner
               items:
                 - name: Borttagna och utfasade funktioner för Platform
@@ -140,8 +138,6 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Inställning av dubbelriktad skrivning från Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Initial synkronisering
-                              href: data-entities/dual-write/initial-sync.md
                             - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
                               items:
                                 - name: Aktivera dubbelriktad skrivning för befintliga Finance and Operations-appar
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Versionskontroll, metadatasökning och navigering'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Skapa automatisering med Azure
+              items:
+                - name: Skapa automatisering med agenter värdbaserade hos Microsoft och Azure Pipelines
+                  href: dev-tools/hosted-build-automation.md
+                - name: Lägg till licensfiler till ett distribuerbart paket i Azure Pipelines
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Skapa distribuerbara i Azure Pipelines
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: X++-modellversionering i Azure Pipelines
+                  href: dev-tools/pipeline-model-version.md
             - name: Hantering av vagnpark – exempelprogram
               items:
                 - name: Slutpunkt till slutpunkt-scenario för exempelprogrammet Hantering av vagnpark
@@ -1396,6 +1402,8 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Tilldela användare till säkerhetsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Säkerhetsdiagnos för uppgiftsinspelningar
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
             - name: Batchbearbetning
               items:
                 - name: Batchbearbetning – översikt

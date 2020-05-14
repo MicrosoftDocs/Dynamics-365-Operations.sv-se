@@ -94,12 +94,12 @@
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: Commerce 10.0.9 (april 2020)
                       href: get-started/whats-new-10-0-9.md
-                    - name: Commerce 10.0.8 (februari 2020)
-                      href: get-started/whats-new-10-0-8.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                    - name: Borttagna och utfasade funktioner i Dynamics 365 Commerce
+                      href: get-started/removed-deprecated-features-commerce.md
                 - name: AX 2012-funktioner som har senarelagts
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
                 - name: Funktioner som ännu inte har implementerats i lokala distributioner
@@ -644,6 +644,8 @@
                       href: work-with-store-inventory.md
                     - name: Arbeta med serialiserade artiklar
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Arbeta med serialiserade artiklar i kassa
+                      href: pos-serialized-items.md
                     - name: Skjut produkter från distributionscenter till butik med centraliserad distribution
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Ställa in regler och parametrar för direktleverans och centraliserad distribution
@@ -1002,7 +1004,7 @@
               href: store-performance-information.md
             - name: 'Ställa in Recency-, frekvens- och penninganalys (RFM)'
               href: set-up-rfm-analysis.md
-        - name: Lokaliserings- och regelfunktioner
+        - name: Globalisering
           items:
             - name: Översikt över räkenskapsintegration för Commerce-kanal
               href: localizations/fiscal-integration-for-retail-channel.md
@@ -1014,18 +1016,26 @@
                   href: localizations/emea-aut-fi-sample.md
             - name: Östeuropa
               items:
-                - name: Förskottsfakturor för Commerce i Östeuropa
-                  href: localizations/emea-eeu-advance-invoices-for-retail.md
-                - name: Hantering av handkassa for Commerce i Östeuropa
-                  href: localizations/emea-eeu-petty-cash-for-retail.md
-                - name: Kundfakturor och returförsäljningsorder i östeuropeiska länder
-                  href: localizations/emea-eeu-retail-invoices.md
-                - name: 'Riktlinjer för distribution av kassaapparater i Tjeckien, Ungern och Polen'
-                  href: localizations/emea-eeu-deployment.md
-                - name: Exempel på integrering av kvittoskrivare för Polen
-                  href: localizations/emea-pol-fpi-sample.md
-                - name: Exempel på skatteregistreringstjänsten för Tjeckien
-                  href: localizations/emea-cze-fi-sample.md
+                - name: Standard
+                  items:
+                    - name: Förskottsfakturor för Commerce i Östeuropa
+                      href: localizations/emea-eeu-advance-invoices-for-retail.md
+                    - name: Hantering av handkassa for Commerce i Östeuropa
+                      href: localizations/emea-eeu-petty-cash-for-retail.md
+                    - name: Kundfakturor och returförsäljningsorder i östeuropeiska länder
+                      href: localizations/emea-eeu-retail-invoices.md
+                    - name: 'Riktlinjer för distribution av kassaapparater i Tjeckien, Ungern och Polen'
+                      href: localizations/emea-eeu-deployment.md
+                - name: Tjeckien
+                  items:
+                    - name: Exempel på skatteregistreringstjänsten för Tjeckien
+                      href: localizations/emea-cze-fi-sample.md
+                - name: Polen
+                  items:
+                    - name: Exempel på integrering av kvittoskrivare för Polen
+                      href: localizations/emea-pol-fpi-sample.md
+                    - name: Hantering av kundinformation för Polen
+                      href: localizations/emea-pol-customer-information.md
             - name: Frankrike
               items:
                 - name: Funktioner för kassaapparat
@@ -1044,6 +1054,8 @@
               items:
                 - name: Exempel på integrering av kvittoskrivare för Italien
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Hantering av kundinformation för Italien
+                  href: localizations/emea-ita-customer-information.md
             - name: Mexiko
               items:
                 - name: Globala CFDI e-fakturor för Mexiko
@@ -1058,7 +1070,9 @@
               items:
                 - name: Funktioner för kassaapparat
                   href: localizations/emea-swe-cash-registers.md
-                - name: Exempel för kassaintegration med styrenheter
+                - name: Exempel på integration av kontrollenhet för Sverige
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Exempel för Retail POS-integration med styrenheter (äldre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering och Power BI-integrationer
           items:
@@ -1138,7 +1152,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Skapa analytiska rapporter med PowerBI Desktop
+                - name: Skapa analytiska rapporter med Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1496,7 +1510,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
                 - name: Använda beräkningar för att skapa utdata för inventering och summering
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
-                - name: Köra format för att utföra inventering och summering
+                - name: Kör format för att utföra inventering och summering
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
             - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
               items:
