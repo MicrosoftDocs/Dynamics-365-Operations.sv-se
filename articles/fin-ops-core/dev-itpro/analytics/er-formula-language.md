@@ -3,7 +3,7 @@ title: Formelspråk i elektronisk rapportering
 description: Det här avsnittet innehåller information om hur du använder formelspråk i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/18/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
-ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
+ms.openlocfilehash: bb1f026b6a83aa8c1de0dc5088940d7377867a8b
+ms.sourcegitcommit: 139c8007e68d279d7ca9aa302598217522abb8cb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284366"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331357"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelspråk i elektronisk rapportering
 
@@ -129,6 +129,8 @@ Exemplet i följande illustration visar hur en relativ sökväg används. Den re
 Den återstående delen av den absoluta sökvägen visas också i [ER-formelredigeraren](general-electronic-reporting-formula-designer.md).
 
 ![Resterande del av den absoluta sökvägen på sidan ER formeldesigner](./media/ER-FormulaLanguage-RelativePath2.png)
+
+Mer information finns i [Använd en relativ sökväg i databindningar för ER-modeller och -format](relative-path-data-bindings-er-models-format.md).
 
 ## <a name=""></a><a name="Functions">Funktioner</a>
 

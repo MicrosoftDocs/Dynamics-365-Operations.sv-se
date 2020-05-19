@@ -18,16 +18,15 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7a5a62c184b229142673981777da026c3f4103dc
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 251e9982451c888424589e0f0d6fce48aab42df1
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204549"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323587"
 ---
 # <a name="wave-step-codes"></a>Koder för påfyllnadssteg
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Koder för påfyllnadssteg är koder som användarna kan ställa in och använda för att länka specifika förekomster av påfyllnadsmetoder till en motsvarande mall. Mallarna innehåller mallar för påfyllning, skapande av behållare, etikettutskrift, lastuppbyggnad och sortering.

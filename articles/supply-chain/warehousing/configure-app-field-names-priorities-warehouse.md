@@ -1,6 +1,6 @@
 ---
 title: Konfigurera programfältnamn i lagerstyrningsprogrammet
-description: Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 Supply Chain Management.
+description: Det här avsnittet beskriver hur du definierar och konfigurerar fältnamn i lagerstyrningsappen samt prioriteringar i Dynamics 365 Supply Chain Management.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f9b02b93895757580b323a4cd891909d5551ea55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205769"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346409"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurera programfältnamn i lagerstyrningsprogrammet
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 Supply Chain Management. 
+Det här avsnittet beskriver hur du definierar och konfigurerar fältnamn i lagerstyrningsappen samt prioriteringar i Dynamics 365 Supply Chain Management. 
 
 > [!NOTE]
-> Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i lagerställets program, samt hur dessa används i Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Lagerstyrning, finns i kursen [Installera och konfigurera lagerstyrningsappen - översikt](install-configure-warehousing-app.md).
+> Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet beskriver hur du definierar och konfigurerar fältnamn och prioriteringar i lagerstyrningsappen, samt hur dessa används i Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Lagerstyrning, finns i kursen [Installera och konfigurera lagerstyrningsappen - översikt](install-configure-warehousing-app.md).
 
-## <a name="configure-warehouse-app-field-names"></a>Konfigurera fältnamn i lagerställets program
+## <a name="configure-warehousing-app-field-names"></a>Konfigurera fältnamn i lagerstyrningsappen
 
 När du använder Lagerstyrning på din mobila enhet kan du konfigurera hur metadata ska visas på enheten på sidan **Fältnamn i lagerställeprogram**. Välj **Skapa standardinställning** i ett nytt företag för att skapa alla fältnamn som ska användas i lagerställets arbetsflöden för mobila enheter, och tilldela dem sedan ett föredraget inmatningsläge och en föredragen inmatningstyp. När du har genererat alla fältnamn väljer du in följande inmatningsalternativ.
 
@@ -68,7 +68,7 @@ När du använder Lagerstyrning på din mobila enhet kan du konfigurera hur meta
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a>Konfigurera prioriteringsordningen för lagerställets programfält
+## <a name="configure-warehousing-app-field-priority"></a>Konfigurera fältprioritet i lagerstyrningsappen
 
 På sidan **Fältprioritet för lagerställeprogram** kan du ange fältnamn i olika prioriteringsgrupper. Detta gör det möjligt att bestämma vilken information som ska visas på huvuduppgiftssidan när lagerarbetare utför åtgärder med programmet. Om du klickar på **Skapa standardinställning** skapas en standarduppsättning prioriterade grupper. Det går att skapa så många prioriteringsgrupper som krävs, men endast tre prioriteringsgrupper visas på uppgiftssidan. När systemet skickar metadata till programmet, kommer det att tilldela varje fält en relativ prioritet beroende på dess prioriteringsgrupp, och programmet kommer att visa de första tre prioriteringsgrupperna i metadatan på uppgiftssidan. Överflödig metadata visas på en ytterligare informationssida. Tabellen nedan visar ett exempel på fem prioriteringsgrupper.
 
@@ -132,7 +132,7 @@ När en lagerarbetare exempelvis utför en aktivitet på en mobil enhet och meta
 -   Artikelbeskrivning
 -   Storlek och plats
 
-Baserat på fältprioriteringen i lagerställets program som anges i tabellen ovan, kommer följande 3 rader med information att visas på uppgiftssidan:
+Baserat på fältprioriteringen i lagerstyrningsappen som anges i tabellen ovan, kommer följande 3 rader med information att visas på uppgiftssidan:
 
 -   Rad 1: Artikel, Kvantitet, Måttenhet
 -   Rad 2: Artikelbeskrivning

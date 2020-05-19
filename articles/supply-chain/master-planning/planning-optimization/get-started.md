@@ -3,7 +3,7 @@ title: Kom igång med planeringsoptimering
 description: Det här avsnittet beskriver hur du använder funktionen planeringsoptimering.
 author: ChristianRytt
 manager: tfehr
-ms.date: 02/10/2020
+ms.date: 05/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4f9124e824a0b6d5035b2567cb19c2c494390d55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ce1bbb18e9a448e84d001a4195421d2b0e4af5be
+ms.sourcegitcommit: c0d37fdd70f3dec4605fdee6f981f84a49be9b9e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213525"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3339888"
 ---
 # <a name="get-started-with-planning-optimization"></a>Kom igång med planeringsoptimering
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Funktionen planeringsoptimering stöder för närvarande inte alla funktioner som är tillgängliga i den planeringsmotor som är inbyggd i Microsoft Dynamics 365 Supply Chain Management. Därför är det viktigt att du utvärderar om den tillgängliga funktionsuppsättningen i planeringsoptimering ska uppfylla dina krav. Som standard är funktionen planeringsoptimering inte aktiverad i Dynamics Lifecycle Services (LCS). Därför har du möjlighet att utföra utvärderingen innan den är aktiverad.
@@ -36,6 +35,11 @@ Funktionen planeringsoptimering stöder för närvarande inte alla funktioner so
 Planeringsoptimering kommer till slut att ersätta befintliga inbyggda planeringsmotorn för Supply Chain Management.
 
 Innan du aktiverar planeringsoptimeringen rekommenderar vi att du utvärderar resultatet av anpassningsanalysen för planeringsoptimering. Mer information finns i [anpassningsanalys för planeringsoptimering](planning-optimization-fit-analysis.md).
+
+### <a name="availability"></a>Tillgänglighet
+Planeringsoptimering är för närvarande tillgänglig i följande Azure-områden: USA, Kanada, Europa, Storbritannien och Australien. Om du försöker installera tillägget från ett annat geografiskt område visas ett meddelande om att detta geografiska område inte stöds.
+
+Observera att planeringsoptimering inte har stöd för lokala distributioner av Dynamics 365 Supply Chain Management.
 
 ### <a name="licensing"></a>Licensiering
 
@@ -46,7 +50,7 @@ Om du kan köra huvudplanering med din nuvarande licens behöver du inte köpa y
 Om du vill använda planeringsoptimering installerar du tillägget för planeringsoptimering för Dynamics 365 Supply Chain Management. Du kan komma åt tillägget från LCS-projektet och aktivera funktionen för planeringsoptimering från användargränssnittet för Supply Chain Management.
 
 > [!NOTE]
-> Kravet på planeringsoptimering är en LCS-aktiverad miljö med hög tillgänglighet (inte en OneBox-miljö) med Dynamics 365 Supply Chain Management version 10.0.7 eller senare.
+> Kravet på planeringsoptimering är en LCS-aktiverad miljö med hög tillgänglighet, lägst nivå 2, (inte en OneBox-miljö) med Dynamics 365 Supply Chain Management version 10.0.7 eller senare. Om du försöker installera tillägget i en OneBox-miljö kommer installationen inte att slutföras och du måste avbryta installationen.
 
 1. Logga in på LCS och öppna den önskade miljön.
 1. Gå till **Fullständiga detaljer**.
@@ -88,11 +92,11 @@ Inställningen av alternativet **Använd planeringsoptimering** avgör vilken pl
 
 Om förhandsgranskningen av planeringsoptimeringen är aktiverad görs huvudplanering med tillägget planeringsoptimering. I det här fallet påverkas huvudplaneringens resultat och funktioner.
 
-## <a name="related-resources"></a>Relaterade resurser
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Villkor för förhandsgranskning](https://go.microsoft.com/fwlink/?linkid=2015274)
 
-[Rådgivning om optimering – översikt](planning-optimization-overview.md)
+[Planeringsoptimering – översikt](planning-optimization-overview.md)
 
 [Planera analys av optimeringsanpassning](planning-optimization-fit-analysis.md)
 

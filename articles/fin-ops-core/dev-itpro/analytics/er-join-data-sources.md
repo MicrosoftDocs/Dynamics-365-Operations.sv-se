@@ -3,7 +3,7 @@ title: Använd sammanfogningsdatakällor i ER-modellmappningar för att hämta d
 description: Det här avsnittet beskriver hur du kan använda datakällor av sammanfogningstyp i elektronisk rapportering (ER).
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667964"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332332"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Använd sammanfogningsdatakällor för att hämta data från flera programtabeller i ER-modellmappningar (elektronisk rapportering)
 
@@ -140,7 +140,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
 7.  Stäng sidan.
 
-### <a name="review"></a> Granska ER-modellmappning (del 2)
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> Granska ER-modellmappning (del 2)
 
 Granska inställningarna för ER-modellmappningskomponenten. Komponenten är konfigurerad för att få åtkomst till information om versioner av ER-konfigurationer, information om konfigurationer och konfigurationsprovider genom att använda datakällor av typen **Sammanfoga**.
 
@@ -185,7 +185,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 9.  Stäng sidan.
 10. Välj **Avbryt**.
 
-### <a name="executeERformat"></a> Kör ER-format
+### <a name="execute-er-format"></a><a name="executeERformat"></a> Kör ER-format
 
 1.  Gå till Finance eller RCS i webbläsarens andra session med samma autentiseringsuppgifter och företag som i den första sessionen.
 2.  Gå till **Organisationsadministration  \> Elektronisk rapportering \> Konfigurationer**.
@@ -240,7 +240,7 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
 
     ![Dialogsidan ER-användare](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> Analysera körningsspårning för ER-format
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analysera körningsspårning för ER-format
 
 1.  I den första sessionen av Finance eller RCS, välj **Designer**.
 2.  Välj **resultatspårning**.
@@ -256,6 +256,33 @@ Granska inställningarna för ER-modellmappningskomponenten. Komponenten är kon
     - Programdatabasen har anropats en gång för att beräkna antalet konfigurationsversioner med hjälp av sammanfogningar som konfigurerats i datakällan **Information**.
 
     ![Sidan ER-modellmappningsdesigner](./media/GER-JoinDS-Set2Run3.PNG)
+
+## <a name="limitations"></a>Begränsningar
+
+Som du ser i exemplet i det här avsnittet kan **KOPPLA**-datakällan skapas från flera datakällor som beskriver de enskilda datauppsättningarna för poster som måste kopplas. Du kan konfigurera dessa datakällor med hjälp av inbyggt ER-[FILTER](er-functions-list-filter.md). När du konfigurerar datakällan så att den anropas utanför **KOPPLA**-datakällan kan du använda företagsintervall som en del av villkor för dataurval. Den inledande implementeringen av **KOPPLA**-datakällan stöder inte datakällor av den här typen. Om du till exempel anropar en [FILTER](er-functions-list-filter.md)-baserad datakälla inom körningsintervallet av en **KOPPLA**-datakälla, och den anropade datakällan innehåller företagsintervall som en del av villkor för dataurval, uppstår ett undantag.
+
+I Microsoft Dynamics 365 Finance version 10.0.12 (augusti 2020) kan du använda företagsintervall inom intervallet för körning av [FILTER](er-functions-list-filter.md)-baserade datakällor som anropas inom körningsintervallet för en **KOPPLA**-datakälla. På grund av begränsningar i programmets [fråge](../dev-ref/xpp-library-objects.md#query-object-model)-verktyg kan företagsintervall endast användas för den första datakällan i en **KOPPLA**-datakälla.
+
+### <a name="example"></a>Exempel
+
+Du måste t.ex. göra ett enskilt anrop till programdatabasen för att få en lista över utländska handelstransaktioner för flera företag och information om den lagerartikel som det refereras till i dessa transaktioner.
+
+I det här fallet konfigurerar du följande artefakter i din ER-modellmappning:
+
+- **Intrastat**-rotdatakälla som representerar **Intrastat**-registret.
+- **Artiklars** rotdatakälla som representerar **InventTable**-registret.
+- **Företags** rotdatakälla som returnerar listan med företag (**DEMF** och **GBSI** i det här exemplet) där transaktioner måste nås. Företagskoden är tillgänglig från fältet **Companies.Code**.
+- **X1** rotdatakälla med uttrycket `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))`. Som en del av villkoret för dataurval innehåller det här uttrycket definitionen av företagsintervall `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- **X2** datakällan som ett kapslat element i **X1** datakälla. Det innehåller uttrycket `FILTER (Items, Items.ItemId = X1.ItemId)`.
+
+Slutligen kan du konfigurera en **KOPPLA**-datakälla där **X1** är den första datakällan och **X2** är den andra datakällan. Du kan ange **Fråga** som alternativet **Kör** för att tvinga ER att köra den här datakällan på databasnivå som ett direkt SQL-anrop.
+
+När den konfigurerade datakällan körs medan ER-körningen [spåras](trace-execution-er-troubleshoot-perf.md) visas följande uttryck i ER-modellmappningsdesignern som en del av ER-prestationsspårningen.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> Ett fel uppstår om du kör en **KOPPLA**-datakälla som har konfigurerats så att den innehåller villkor för dataurval med företagsintervall för ytterligare datakällor för den körda **KOPPLA**-datakällan.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

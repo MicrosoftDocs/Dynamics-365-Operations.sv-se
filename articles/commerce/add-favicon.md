@@ -3,7 +3,7 @@ title: Lägg till en favicon
 description: I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 287663817232e7ce86e8fdb1fb5c2fcfeed33d20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
+ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001556"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295090"
 ---
 # <a name="add-a-favicon"></a>Lägg till en favicon
-
 
 [!include [banner](includes/banner.md)]
 
@@ -41,29 +40,54 @@ En favicon är en liten grafisk fil som visas på en flik i webbläsaren, i adre
 
 Överför en favicon till webbplatsens tillgångssamling genom att följa dessa steg.
 
-1. Gå till **Tillgångar \> Överför \> Överför tillgångar**.
-1. Hitta och markera favicon i det lokala filsystemet.
-1. Ange en rubrik och klicka sedan på **OK**. 
-1. Kopiera den offentliga URL:en för favicon i egenskapsrutan till höger.
+1. I vänstra navigeringsfönstret, välj **mediebibliotek**.
+1. I kommandofältet, välj **Överför \> Överför medieartiklar**.
+1. I fönstret Utforskaren bläddrar du till avbildningsfilen favicon som du vill överföra, markerar den och väljer sedan **Öppna**.
+1. I dialogrutan **Överför medieartiklar** ange önskad titel och alt text.
+1. Om du vill publicera bilden omedelbart efter överföring markerar du kryssrutan **Publicera medieobjekt efter uppladdning**.
 
-> [!NOTE]
-> Om du inte markerar alternativet **publicera resurser efter överföring** måste du gå tillbaka till sidan **tillgångar** och publicera favicon manuellt senare.
+    > [!NOTE]
+    > Om du inte markerar kryssrutan **Publicera medieobjekt efter överföring** måste du gå tillbaka till sidan **Medieobjekt** och publicera favicon manuellt senare.
 
-## <a name="create-the-html-for-the-favicon"></a>Skapa HTML för favicon
+1. Välj **OK**.
+1. Kopiera den offentliga URL:en för favicon i egenskapsrutan till höger. Du kommer att använda denna URL senare.
 
-Om du vill skapa HTML för favicon använder du följande HTML-kodfragment. För attributet **href**, ersätt **"Public\_URL\_for\_your\_favicon"** med den offentliga URL som du kopierade tidigare.
+## <a name="create-the-html-for-your-favicon"></a>Skapa HTML för din favicon
+
+Om du vill skapa HTML för favicon använder du följande HTML-sträng. För attributet **href**, ersätt **Public\_URL\_for\_your\_favicon** med den offentliga URL som du kopierade tidigare.
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="add-the-html-for-the-favicon-to-the-head-element-of-your-pages"></a>Lägga till HTML-koden för favicon till elementet \<head\> på sidorna
+## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Skapa ett sidfragment som innehåller en metatagg för din favicon
 
-Om du vill lägga till en favicon på webbplatsen använder du samma procedur som för att lägga till alla typer av HTML och skript till elementet **\<head\>** på webbplatssidorna.
+För att skapa ett sidfragment som innehåller en metatagg för din favicon ska du följa dessa steg.
+
+1. Gå till **Sidfragment** och välj sedan **Nytt**.
+1. I dialogrutan **Nytt sidfragment** markerar du **Metataggar** som modulen sidfragment är baserat på.
+1. Ange ett namn på sidfragmentet och välj sedan **OK**.
+1. I trädet för fragmentets hierarki väljer du underordnade **Standard metataggar**.
+1. I det högra fönstret, under **Metataggar**, väljer du **Lägg till** och anger sedan den HTML-sträng som du skapade tidigare för favicon. 
+1. Välj **Slutför redigering** och välj sedan **Publicera** för att publicera sidfragmentet.
+
+## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Lägg till sidfragmentet med metatagg i HTML-huvudet på dina sidor
+
+För att lägga till sidfragmentet med metatagg i HTML-**huvudet** på dina sidor ska du följa dessa steg
+
+1. Gå till **Mallar** och öppna mallen för sidorna som du vill lägga till din favicon i och välj sedan **Redigera**.
+1. I trädet för mallhierarkin väljer du ellipsknappen (**...**) till höger om behållaren för **HTML-huvud** och väljer **Lägg till sidfragment**.
+1. I dialogrutan **Välj sidfragment** väljer du det metatagsidfragment som du skapade tidigare och väljer sedan **OK**.
+1. Välj **Slutför redigering** och välj sedan **Publicera** för att publicera mallen.
+
+> [!NOTE]
+> Om mer än en mall används på webbplatsen måste du lägga till metatagsidfragmentet på alla.
+
+När du förhandsgranskar sidor baserade på den mall som du har lagt till metatagsidfragmentet till ska du nu se favicon på fliken i webbläsaren.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Lägg till en logotyp](add-logo.md)
+[Lägga till en logotyp](add-logo.md)
 
-[Välj ett tema för webbplatsen](select-site-theme.md)
+[Välja ett tema för webbplatsen](select-site-theme.md)
 
 [Arbeta med CSS åsidosättningsfiler](css-override-files.md)
 
