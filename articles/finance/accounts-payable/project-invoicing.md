@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658630"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331382"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
@@ -112,6 +112,9 @@ När du har beställt en artikel från en leverantör och tilldelar artikeln til
 
 -   Fakturera projektets kund för artikeln: Ange radegenskapen för artikeln till ett debiterbart värde på inköpsordern och fakturera sedan kunden genom att använda rätt projektfaktureringsmetod.
 -   Fakturera inte projektets kund för artikeln: Välj inte radegenskapen **Debiterbar** på inköpsorderraden för artikeln. Det går sedan att fakturera inköpsordern och inga vidare åtgärder krävs.
+
+> [!NOTE] 
+> Frisläpp av kvarhållningsrader är inte debiterbara som standard. Det innebär att möjlighet att skapa ett fakturaförslag för den frisläppta kvarhållningen inte är aktiverad.
 
 ## <a name="credit-notes"></a>Kreditfakturor
 När ett belopp på en kundfaktura har ett negativt värde klassificeras fakturan som en kreditfaktura. När dokumentet skrivs ut har det rubriken Kreditfaktura. 

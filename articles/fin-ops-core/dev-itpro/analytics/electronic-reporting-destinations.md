@@ -3,7 +3,7 @@ title: Destinationer för elektronisk rapportering (ER)
 description: I det här avsnittet finns information om hantering av mål för elektroniska rapportering (ER), vilka typer av destinationer som stöds samt säkerhetsaspekter.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150825"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323702"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Destinationer för elektronisk rapportering (ER)
 
@@ -52,7 +52,36 @@ Det finns också måltypen [utskrift](er-destination-type-print.md). För att ku
 
 ## <a name="overview"></a>Översikt
 
-Du kan enbart ställa in mål för ER-konfigurationer som har [importerats](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) i aktuella Finance-instansen och för de format som är tillgängliga på sidan **Konfigurationer för elektronisk rapportering**. Funktionen för ER-målshantering är tillgänglig via **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektronisk rapporteringsmål**. På sidan **elektronisk rapporteringsmål** kan du åsidosätta standardbeteendet för en konfiguration. Importerade konfigurationer visas inte på denna sida förrän du har klickat på **Ny** och sedan gått till fältet **Referens** och valt en konfiguration för att skapa målsinställningar.
+Du kan enbart ställa in mål för ER-konfigurationer som har [importerats](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) i aktuella Finance-instansen och för de format som är tillgängliga på sidan **Konfigurationer för elektronisk rapportering**. Funktionen för ER-målshantering är tillgänglig via **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektronisk rapporteringsmål**.
+
+### <a name="default-behavior"></a>Standardbeteende
+
+Standardbeteende för en ER-formatkonfiguration beror på vilken körningstyp du anger när ett ER-format startar.
+
+I dialogrutan **Intrastat-rapport** på snabbfliken **Kör i bakgrunden**, om du ställer in alternativet **Batchbearbetning** som **Nej**,körs ett ER-format omedelbart i interaktivt läge. När körningen har slutförts blir ett genererat utgående dokument tillgängligt för hämtning.
+
+Om du ställer in alternativet **Batchbearbetning** som **Ja** körs ett ER-format i [batchläge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview). Lämpligt batchjobb skapas enligt de parametrar som du anger på fliken **Kör i bakgrunden** i dialogrutan **ER-parametrar**.
+
+> [!NOTE]
+> Jobbeskrivningen initieras för att informera dig om körning av en ER-formatmappning. Den innehåller även namn på körd ER-komponent.
+
+[![Köra ett ER-format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+Du kan hitta information om jobbet på flera ställen:
+
+- Gå till **Standard** \> **Förfrågningar** \> **Batchjobb** \> **Mina batchjobb** för att kontrollera status för det schemalagda jobbet.
+- Gå till **Organisationsadministration** \> **Elektronisk rapportering** \> **Elektroniska rapporteringsjobb** för att kontrollera status för det schemalagda jobbet och körningsresultatet för det slutförda jobbet. När jobbet har körts klart väljer du **Visa filer** på sidan **Elektroniska rapporteringsjobb** för att hämta ett genererat utgående dokument.
+
+    > [!NOTE]
+    > Dokumentet lagras som en bilaga till den aktuella jobbposten och styrs av ramverket för [dokumenthantering](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). [Dokumenttypen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) som används för att lagra ER-artefakter av den här typen konfigureras i [ER-parametrar](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+
+- På sidan **Elektroniska rapporteringsjobb** väljer du **Visa filer** för att visa en lista över eventuella fel och varningar som genererats under jobbkörningen.
+
+    [![Granska listan med ER-jobb](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### <a name="user-configured-behavior"></a>Användarkonfigurerat beteende
+
+På sidan **elektronisk rapporteringsmål** kan du åsidosätta standardbeteendet för en konfiguration. Importerade konfigurationer visas inte på denna sida förrän du har klickat på **Ny** och sedan gått till fältet **Referens** och valt en konfiguration för att skapa målsinställningar.
 
 [![Välja en konfiguration i fältet Referens](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
@@ -148,7 +177,7 @@ Alternativet PDF-konvertering kan bara aktiveras för filkomponenter som använd
 >
 > Den producerade PDF-filen är begränsad till ett maximalt antal 300 sidor.
 >
-> Vid denna tidpunkt stöds endast liggande sidorientering i PDF-dokumentet som har skapats från en Excel-utdatafil.
+> I Microsoft Dynamics 365 Finance version 10.0.9 (april 2020) stöds endast liggande sidorientering i PDF-dokument som har skapats från en Excel-utdatafil. I Dynamics 365 Finance version 10.0.10 (maj 2020) kan du [ange sidorientering](#SelectPdfPageOrientation) för PDF-dokument som har skapats från ett Excel-format när du konfigurerar ett ER-mål.
 >
 > Endast de vanligaste systemteckensnitten i Windows-operativsystemet används vid konvertering av utdata som inte innehåller inbäddade teckensnitt.
 

@@ -3,7 +3,7 @@ title: SUMIF ER-funktion
 description: Det här avsnittet innehåller information om hur funktionen SUMIF elektronisk rapportering (ER) används.
 author: NickSelin
 manager: kfend
-ms.date: 12/04/2019
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 374569d3bbe59f1b96eee9c789b97b7b2a6004bf
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 9df7be0825203f91434d348385c1ee358ae555ea
+ms.sourcegitcommit: ef6fd78c817f93610771cfb2477f52f16b882164
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042491"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "3290210"
 ---
-# <a name="SUMIF">SUMIF ER-funktion</a>
+# <a name=""></a><a name="SUMIF">SUMIF ER-funktion</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,6 +62,8 @@ I `condition value`-argumentet kan jokertecknet **"\*"** användas för att repr
 ## <a name="example"></a>Exempel
 
 För mer information om att använda den här funktionen, se uppgiftsguiden [ER Använd data från formatutmatningen för inventering och summering](tasks/er-format-counting-summing-1.md) (ingår i affärsprocessen **Införskaffa/utveckla komponenter för IT-tjänster/-lösningar**) för mer information om hur du använder dessa funktioner.
+
+Mer information och exempel på hur du använder funktionen finns i [Skjuta upp körning av serieelement i ER-format](er-defer-sequence-element.md#Example) och [Senarelägg körning av XML-element i ER-format](er-defer-xml-element.md#Example).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

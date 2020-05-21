@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 1 maj 2020
+          href: hr-whats-new-2020-05-01.md
         - name: 13 april 2020
           href: hr-whats-new-2020-04-13.md
         - name: 3 april 2020
@@ -503,6 +505,8 @@
               href: hr-leave-and-absence-accrue.md
             - name: Skjut upp tjänstledighet
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Hantera tjänstledighet för medarbetare
+              href: hr-leave-and-absence-manage-employee-leave.md
             - name: Visa analys för tjänstledighet och frånvaro
               href: hr-leave-and-absence-analytics.md
             - name: Hantera begäranden om ledighet och frånvaro

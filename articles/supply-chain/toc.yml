@@ -425,6 +425,8 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Underhållsstatus
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Integrera tillgångshantering med Dynamics 365 Guides
+              href: asset-management/asset-management-guides-integration.md
             - name: Mobil arbetsyta för tillgångshantering
               href: asset-management/asset-management-mobile-workspace.md
         - name: Datahantering
@@ -703,7 +705,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Skapa analytiska rapporter med PowerBI Desktop
+                - name: Skapa analytiska rapporter med Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1061,7 +1063,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Använda beräkningar för att skapa utdata för inventering och summering
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Köra format för att utföra inventering och summering
+                - name: Kör format för att utföra inventering och summering
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
             - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
               items:
@@ -1319,7 +1321,7 @@
               items:
                 - name: Planeringsoptimering – översikt
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Negativ behållning behandlas som noll i behållning
+                - name: Planera med negativ behållningskvantitet
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Kom igång med planeringsoptimering
                   href: master-planning/planning-optimization/get-started.md
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: Ställ in en min-max-process för lagerpåfyllnad
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Ställ in en arbetsmall för inköpsorder
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: Installera och konfigurera lagerstyrningsappen
               items:
                 - name: Installera och konfigurera – översikt

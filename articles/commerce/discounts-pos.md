@@ -3,7 +3,7 @@ title: Visa rabatter i kassan
 description: I det här avsnittet beskrivs hur Microsoft Dynamics 365 Commerce hjälper säljarna att lära sig mer om erbjudanden och hur de kan användas för korsförsäljning och merförsäljning.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
+ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265601"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334718"
 ---
 # <a name="show-discounts-in-pos"></a>Visa rabatter i kassan
 
@@ -54,9 +54,9 @@ På sidan **alla rabatter** kan säljarna också söka efter rabatter med nyckel
 
 Samköpsrabatter, t.ex. kvantitetsrabatter, mixa och matcha-rabatter och tröskelrabatter, är ett utmärkt sätt att motivera kunder för att köpa fler produkter för att få större rabatter. Därför bidrar de också till att öka storleken på kundens kundvagn och återförsäljares intäkter. Dessa rabatter kan publiceras på webbplatser för näthandel, på sociala medier och på banderoller i butiken.
 
-Även när alla dessa annonseringsmetoder används kan kunden missa möjligheten att utnyttja erbjudanden. För att göra det enklare för säljare att ta reda på vilka erbjudanden som gäller för en vald rad, eller till hela kundvagnen, kan återförsäljare lägga till knappen för åtgärden "Visa alla rabatter" i alla knappsatser i kassan. Vi rekommenderar att du lägger till knappen i knappsatsen på sidan **transaktion**. På så sätt kan en säljare välja en transaktionsrad och sedan välja knappen för att visa alla rabatter som är tillgängliga för den valda raden. Säljare kan också välja en annan flik för att Visa rabatter som gäller för hela transaktionen.
+Även när alla dessa annonseringsmetoder används kan kunden missa möjligheten att utnyttja erbjudanden. För att göra det enklare för säljare att ta reda på vilka erbjudanden som gäller för en vald rad, eller till hela kundvagnen, kan återförsäljare lägga till knappen för åtgärden "Visa tillgängliga rabatter" i knappsatsen på sidan **Transaktioner**. På så sätt kan en säljare välja transaktionsrad och sedan välja knappen för att visa alla rabatter som är tillgängliga för den valda raden. Säljare kan också välja en annan flik för att Visa rabatter som gäller för hela transaktionen.
 
-Sidan **alla rabatter** som nämnts tidigare visar endast rabatter som inte konkurrerar med någon av de kopplade rabatterna. På så sätt säkerställs att om en säljare informerar en kund om en rabatt och kunden vidtar den åtgärd som krävs (t.ex. kunden köper ytterligare en artikel för att få 10 procents rabatt) används rabatten på transaktionen. Som nämndes tidigare visas endast kupongbaserade rabatter om alternativet **Använd utan kupongkod** är aktiverat.
+Sidan **Alla rabatter** visar endast rabatter som inte konkurrerar med någon av de tillämpade rabatterna. På så sätt säkerställs att om en säljare informerar en kund om en rabatt och kunden vidtar den åtgärd som krävs (t.ex. kunden köper ytterligare en artikel för att få 10 procents rabatt) används rabatten på transaktionen. Kupongbaserade rabatter visas enbart om alternativet **Använd utan kupongkod** är aktiverat.
 
 I ett enkelt scenario där alla rabatter har samma prioritet är concurrency-läge för rabatt **sammansatt** och concurrency-läge för rabatt anges till **Bästa pris och sammansatt inom prioritet, aldrig sammansatt över prioriteringar**, sidan **Alla rabatter** visar alla tillgängliga rabatter för en produkt, eftersom alla rabatter är sammansatta och konkurrerar med varandra.
 

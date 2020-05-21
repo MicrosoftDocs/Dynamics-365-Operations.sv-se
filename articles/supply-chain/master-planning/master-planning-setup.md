@@ -19,17 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 7b6b4cb1c3035e8341928562c447b03affd40167
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1e7775e797708668a339b6b02ed822261406c829
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213571"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323679"
 ---
 # <a name="set-up-master-planning"></a>Ställ in huvudplanering
 
-
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Det här ämnet beskriver olika viktiga strategier och parametrar som används för att ställa in huvudplaneringen. Den innehåller en översikt över de typer av planer som används vid huvudplanering och förklarar vilken planeringsstrategi du ska använda, beroende på dina affärsbehov. Här beskrivs också de huvudsakliga parametrar som påverkar planen och förklarar hur dessa parametrar påverkar planerade order som föreslås.

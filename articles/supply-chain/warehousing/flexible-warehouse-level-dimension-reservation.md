@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205677"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346478"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på lagernivå
 
@@ -233,7 +233,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Åsidosätt plats</strong> på lagerapp för mobil (WMA) när du startar plockningsarbete.</li>
+<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerstyrningsappen när du startar plockningsarbete.</li>
 <li>Välj <strong>föreslå</strong>.</li>
 <li>Bekräfta den nya platsen som föreslås baserat på tillgängligheten för batchkvantitet.</li>
 </ol>
@@ -244,13 +244,13 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <li>Om kvantiteten finns på fler än en registreringsskylt på den nya platsen, delas den ursprungliga plockningsraden på flera rader för att matcha varje registreringsskylt.</li>
 </ul>
 </td>
-<td>Inte aktuellt</td>
+<td>Inte tillämpligt</td>
 </tr>
 <tr>
-<td>Nej</td>
+<td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Åsidosätt plats</strong> på WMA när du startar plockningsarbete.</li>
+<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerstyrningsappen när du startar plockningsarbete.</li>
 <li>Ange en plats manuellt.</li>
 </ol>
 </td>
@@ -275,10 +275,10 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <tbody>
 <tr>
 <td>Alternativet <strong>Tillåt delning av arbete</strong> är aktiverat på menyalternativet för mobil enhet.</td>
-<td>Inte aktuellt</td>
+<td>Inte tillämpligt</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Full</strong> på WMA när du bearbetar plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Full</strong> i lagerstyrningsappen när du bearbetar plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong> ange den delkvantitet för att ange den fullständiga kapaciteten.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Starta en rörelse på WMA.</li>
+<li>Starta en rörelse på lagerstyrningsappen.</li>
 <li>Ange "från-" och "till"-platser.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Kort plockning</strong> på WMA när du kör plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>Orsak</strong> anger du <strong>Ingen omallokering</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Kort plockning</strong> på WMA när du kör plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>Orsak</strong> anger du <strong>Ingen omallokering</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Kort plockning</strong> på WMA när du kör plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 <li>Välj plats/registreringsskylt i listan.</li>
@@ -545,10 +545,10 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 </tr>
 <tr>
 <td>Ett arbetsundantag från typen <strong>Kort plockning</strong> konfigureras där <strong>Omallokering av artikel</strong> = <strong>Manuell</strong>, <strong>Justera lager</strong> = <strong>Ja</strong> och <strong>Ta bort reservationer</strong> = <strong>Nej</strong>. Dessutom är alternativet <strong>Tillåt omfördelning av artikel</strong> aktiverat för arbetaren.</td>
-<td>Nej</td>
+<td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Kort plockning</strong> på WMA när du kör plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 </ol>
@@ -558,10 +558,10 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 </tr>
 <tr>
 <td>Ett arbetsundantag från typen <strong>Kort plockning</strong> konfigureras där <strong>Omallokering av artikel</strong> = <strong>Manuell</strong>, <strong>Justera lager</strong> = <strong>Ja</strong> och <strong>Ta bort reservationer</strong> = <strong>Ja</strong>. Dessutom är alternativet <strong>Tillåt omfördelning av artikel</strong> aktiverat för arbetaren.</td>
-<td>Nej</td>
+<td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Kort plockning</strong> på WMA när du kör plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 <li>Välj plats/registreringsskylt i listan.</li>
@@ -582,10 +582,10 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 </tr>
 <tr>
 <td>Ett arbetsundantag från typen <strong>Kort plockning</strong> konfigureras där <strong>Omallokering av artikel</strong> = <strong>Automatisk</strong>, <strong>Justera lager</strong> = <strong>Ja/Nej</strong> och <strong>Ta bort reservationer</strong> = <strong>Ja/Nej</strong>.</td>
-<td>Inte aktuellt</td>
+<td>Inte tillämpligt</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Kort plockning</strong> på WMA när du kör plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med automatisk omallokering</strong>.</li>
 </ol>

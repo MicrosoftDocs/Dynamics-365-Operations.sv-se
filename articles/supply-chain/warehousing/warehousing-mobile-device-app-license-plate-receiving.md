@@ -1,6 +1,6 @@
 ---
-title: ID-nummer tar emot via mobilappen för lager
-description: I det här avsnittet beskrivs hur du ställer in modulen för mobilappen för lager så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+title: Inleverans av ID-nummer via lagerstyrningsappen
+description: I det här avsnittet beskrivs hur du ställer in lagerstyrningsappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261378"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346386"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>ID-nummer tar emot via mobilappen för lager
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Inleverans av ID-nummer via lagerstyrningsappen
 
-I det här avsnittet beskrivs hur du ställer in modulen för mobilappen för lager så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+I det här avsnittet beskrivs hur du ställer in lagerstyrningsappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
 
 Du kan använda den här funktionen för att snabbt registrera inleveranser av ankommande lager som är relaterat till en leveransavisering (ASN). Systemet skapar automatiskt ett ASN när lagerstyrningsprocesser används för att leverera en överföringsorder. För inköpsorderprocessen kan ett ASN registreras manuellt, eller importeras automatiskt med hjälp av en inkommande ASN-dataenhetsprocess.
 
@@ -63,7 +63,7 @@ For more information about the *Report as finished* production scenario, see the
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Visa eller hoppa över sidan för sammanfattning av inleveranser
 
-Du kan använda funktionen *kontrollera om du vill visa en sida för sammanfattning av inleveranser* för att dra nytta av ett ytterligare detaljerat lagerställeflöde som en del av inleveransprocessen av ID-numret.
+Du kan använda funktionen *kontrollera om du vill visa en sida för sammanfattning av inleveranser* för att dra nytta av ett ytterligare detaljerat lagerstyrningsappflöde som del av inleveransprocessen med ID-numret.
 
 Innan du kan använda den här funktionen den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
 

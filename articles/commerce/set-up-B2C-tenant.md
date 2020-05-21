@@ -3,7 +3,7 @@ title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270220"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295279"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -87,7 +87,7 @@ Gör så här om du vill skapa ett B2C-applikation.
 
 ### <a name="reply-urls"></a>Svars-URL
 
-Svars-URL är viktiga eftersom de tillåter en vitlista av returdomänerna när platsen anropar Azure AD B2C för autentisering av en användare. På så sätt kan den autentiserade användaren returnera tillbaka till den domän som de loggar in på (din webbplatsdomän). 
+Svars-URL är viktiga eftersom de ger en tillåten-lista med returdomänerna när platsen anropar Azure AD B2C för autentisering av en användare. På så sätt tillåts den autentiserade användaren returnera tillbaka till den domän som de loggar in på (din webbplatsdomän). 
 
 I rutan **Svars-URL** på skärmen **Azure AD B2C - program \> Ny program** måste du lägga till separata rader för både din webbplatsdomän och (när din miljö har etablerats) den URL som genereras av Commerce. URL-adresserna får alltid använda ett giltigt URL-format och måste bara vara bas-URL:er (inga snedstreck eller sökvägar kan avslutas). Strängen ``/_msdyn365/authresp`` måste läggas till i bas-URL:erna, som i följande exempel.
 
@@ -121,7 +121,7 @@ För att skapa en inloggning och policy för användarflöde följ stegen nedan.
 
     | **Samla in attribut** | **Returnera anspråk** |
     | ---------------------- | ----------------- |
-    |                        | E-postadresser   |
+    | E-postadress          | E-postadresser   |
     | Angivet namn             | Angivet namn        |
     |                        | Identitetsprovider |
     | Efternamn                | Efternamn           |
@@ -246,10 +246,6 @@ Om du vill uppdatera huvud kontoret med den nya Azure AD B2C-informationen följ
     1. I rutan **Typ** ange **Offentlig**.
     1. I rutan **Användartyp** ange **Kund**.
 1. Klicka på **Spara** i åtgärdsfönstret.
-1. I Commerce-sökrutan, sök efter **nummerserier** (organisationsadministration > nummerserier).
-1. Under åtgärdsfönstret, välj **redigera** under **underhåll**.
-1. På snabbfliken **allmänt** väljer du **Nej** för **Manuell**.
-1. Klicka på **Spara** i åtgärdsfönstret. 
 1. I Commerce-sökrutan, sök efter **Distributionsschema**
 1. I den vänstra navigeringsmenyn på sidan **distributionsscheman** väljer du **1110 Global konfiguration**.
 1. I åtgärdsfönstret, klicka på **Kör nu**.
@@ -304,13 +300,14 @@ Följ stegen nedan om du vill lägga till din AAD B2C-information till Commerce.
 1. Ange följande obligatoriska objekt i formuläret som visas med värden från din B2C-innehavare och programmet. Fält som inte är obligatoriska (sådana som saknar asterisk) kan lämnas tomma.
 
     - **Programnamn**: namnet på ditt B2C-program, t.ex. "Fabrikam B2C".
-    - **Klientorganisationens namn**: namnet på din B2C-innehavare, t.ex. "Fabrikam".
+    - **Klientnamn**: Namnet på din B2C-klient (Använd till exempel "fabrikam" om domänen visas som "fabrikam.onmicrosoft.com" för B2C-klienten). 
     - **Glömt lösenordspolicy-ID**: glöm lösenord användarflödespolicy-ID, t.ex. "B2C_1_PasswordReset".
     - **Policy-ID för registrering och inloggning**: användarflödespolicy-ID för registrering och inloggning, t.ex. "B2C_1_signup_signin".
     - **Klient-GUID**: B2C program-ID, till exempel "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6".
     - **Redigera profilpolicy-ID-**: profil som redigerar användarflödespolicy-ID, till exempel "B2C_1A_ProfileEdit".
 
 1. Välj **OK**. Nu ska nu se att namnet på ditt B2C-program visas i listan.
+1. Spara ändringarna genom att klicka på **Spara**.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Associera B2C program till din webbplats och kanal
 
