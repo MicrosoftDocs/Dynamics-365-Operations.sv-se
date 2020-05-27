@@ -526,6 +526,32 @@
                   href: deployment/uninstall-deployable-package.md
                 - name: Felsöka problem med paketprogram
                   href: deployment/deployable-package-troubleshooting.md
+            - name: Distribuera anpassad hjälp
+              items:
+                - name: Anpassad hjälp – översikt
+                  href: help/custom-help-overview.md
+                - name: Förbereda innehåll för användning med hjälpfönstret
+                  href: help/preparing-content.md
+                - name: Distribuera anpassad hjälp till Azure
+                  href: help/walkthrough-help-azure.md
+                - name: Ansluta din anpassade hjälp till hjälpfönstret
+                  href: help/connect-help-pane.md
+                - name: Anpassat hjälpverktyg
+                  items:
+                    - name: Översikt
+                      href: help/custom-help-toolkit.md
+                    - name: Verktyget HTML From Repo Generator
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Verktyget Convert HTML To JSON
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: Verktyget HTML Locale Changer
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: Konvertera anpassad Dynamics AX-hjälp för användning i Dynamics 365
+                      href: help/migrate-dynamicsax2012.md
+                - name: Språk och nationella beskrivningar i olika produkter och hjälp
+                  href: help/language-locale.md
+                - name: 'Utöka, anpassa och samarbeta om hjälpen'
+                  href: help/contributor-guide.md
         - name: Ta fram och anpassa
           items:
             - name: Ta fram och anpassa – startsida
@@ -835,7 +861,7 @@
                     - name: Ändringar av utbyggbarhet version 8.0.1
                       href: extensibility/extensibility-changes-801.md
                     - name: Ändringar av utbyggbarhet i version 8.0
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Ändringar av utbyggbarhet i version 7.3
                       href: extensibility/extensibility-changes-73.md
                     - name: Ändringar av utbyggbarhet juli 2017

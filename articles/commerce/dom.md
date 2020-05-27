@@ -3,7 +3,7 @@ title: Fördelad orderhantering (DOM)
 description: I detta avsnitt beskrivs funktionen fördelad orderhantering (DOM) i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004330"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396042"
 ---
 # <a name="distributed-order-management-dom"></a>Fördelad orderhantering (DOM)
 
@@ -37,7 +37,7 @@ DOM optimerar orderuppfyllelsen i ett komplext nätverk som består av system oc
 
 Följande illustration visar livscykeln för en försäljningsorder i ett DOM-system.
 
-![Livscykel för försäljningsorder i samband med DOM](./media/flow.png "Livscykel för försäljningsorder i samband med DOM")
+![![Livscykel för försäljningsorder i samband med DOM](./media/flow.png "Livscykel för försäljningsorder i samband med DOM")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>Ställ in DOM
 
@@ -83,6 +83,15 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
     2. Välj **Ny** och ange ett nytt namn på och en beskrivning för den nya gruppen.
     3. Välj **Spara**.
     4. Välj **Lägg till rad** om du vill lägga till endast en plats i gruppen. Om du väljer **Lägg till rader** kan du lägga till flera platser.
+    
+    > [!NOTE]
+    > I Commerce version 10.0.12 och högre måste **möjligheten att ange platser som Leverans- eller Upphämtning-aktiverade i Uppfyllelsegrupp** vara aktiverad på arbetsytan **Funktionshantering**.
+    >
+    > Funktionen lägger till nya konfigurationer på sidan **Uppfyllelsegrupp** så att du kan definiera om lagret kan användas för leverans, eller om kombinationen av lager/butik kan användas för leverans, upphämtning eller både och. 
+    >
+    > Om du aktiverar funktionen uppdateras alternativen som är tillgängliga för val av plats när du skapar upphämtnings- eller leveransorder i kassan.
+    >
+    > Om du aktiverar funktionen resulterar det också i uppdaterade sidor i kassan när åtgärderna "leverera alla" eller "leverera valda" har valts.
 
 9. Definiera regler i **Retail och Commerce \> Fördelad orderhantering \> Inställningar \> Hantera regler**. Följande DOM-regler stöds nu:
 
@@ -134,7 +143,17 @@ Följande illustration visar livscykeln för en försäljningsorder i ett DOM-sy
     2. Välj **Ny**.
     3. Ange värden i fälten **Profil** och **Beskrivning**.
     4. Ange värdet på alternativet **Tillämpa resultat automatiskt**. Om du väljer **Ja** tillämpas resultaten från DOM-körningen för profilen automatiskt på försäljningsorderraderna. Om du väljer **Nej** går resultaten endast att se i uppfyllelseplanen. De används inte på försäljningsorderraderna.
-    5. Om du vill att DOM-profilen ska köras för order med samtliga försäljningsorderursprung – till och med order där försäljningsorderursprunget är odefinierat – ska alternativet **Bearbeta order med tomt försäljningsursprung** ha värdet **Ja**. Om du vill köra profilen endast för vissa försäljningsorderursprung går de att definiera på sidan **Försäljningsursprung**. Detta förklaras senare.
+    5. Om du vill att DOM-profilen ska köras för order med samtliga försäljningsorderursprung – inklusive order där försäljningsorderursprunget är odefinierat – ska alternativet **Bearbeta order med tomt försäljningsursprung** ha värdet **Ja**. Om du vill köra profilen endast för vissa försäljningsorderursprung går de att definiera på sidan **Försäljningsursprung**. Detta förklaras senare.
+
+    > [!NOTE]
+    > I Commerce version 10.0.12 och högre måste **möjligheten att ange uppfyllelsegrupp för en uppfyllelseprofil** aktiveras på arbetsytan **Funktionshantering**. 
+    >
+    > Den här funktionen lägger till en ny konfiguration på sidan **Uppfyllelseprofil** som kan associeras med en enskild uppfyllelsegrupp. 
+    >
+    > Om du väljer uppfyllelsegruppen körs DOM-reglerna för den uppfyllelseprofilen effektivt mot de "leverans"-lager som ingår i uppfyllelsegruppen. 
+    > 
+    > Om du vill använda den här funktionen effektivt måste du kontrollera att det finns en uppfyllelsegrupp som innehåller alla leveranslager och sedan associera den uppfyllelsegruppen med uppfyllelseprofilen.
+    
     6. Välj **Lägg till** på snabbfliken **Juridiska personer** och välj sedan en juridisk person.
     7. Välj **Lägg till** på snabbfliken **Regler** och välj sedan den regel som ska länkas till profilen.
     8. Upprepa de föregående två stegen tills alla regler som ska vara med är kopplade till profilen.
@@ -179,7 +198,7 @@ Vid bearbetningen beaktar DOM ordern och orderraderna enligt beskrivningen här:
 
 När DOM har tillämpat reglerna, lagerbegränsningarna och optimeringarna väljer DOM platsen som är närmast kundens leveransadress.
 
-![Villkor för försäljningsorder](./media/ordercriteria.png "Villkor för försäljningsorder")
+![![Villkor för försäljningsorder](./media/ordercriteria.png "Villkor för försäljningsorder")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>Resultat av DOM-körningar
 

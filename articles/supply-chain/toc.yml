@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management
+        - name: Dynamics 365 Supply Chain Management startsidan
           href: index.md
         - name: Kom igång
           items:
@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ansluta hjälpsystemet
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ansluta en anpassad hjälpwebbplats
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anpassad hjälp – översikt
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Visa och exportera fältbeskrivningar
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Uppgiftsinspelare
@@ -186,15 +186,15 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klienter'
+                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Flytta miljöer mellan datacenter
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Flytta licenser mellan avtalstyper
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klienter
+                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klientorganisationer
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klient
+                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalisering
           items:
@@ -1313,6 +1313,22 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Spåra löpande genomsnittlig kostnad per lagerdimension
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: IoT-intelligens
+          items:
+            - name: IoT-intelligens – startsida
+              href: iot/iot-intelligence-home-page.md
+            - name: Ställa in Azure-resurser
+              href: iot/iot-azure-setup.md
+            - name: Meddelandeschemaformat för IoT-hubb
+              href: iot/iot-schema-format.md
+            - name: Installera tillägget i LCS
+              href: iot/iot-lcs-setup.md
+            - name: Ställa in mått
+              href: iot/iot-metrics-setup.md
+            - name: Scenarioinställningar
+              href: iot/iot-scenario-setup.md
+            - name: Övervaka och hantera
+              href: iot/iot-management.md
         - name: Huvudplanering
           items:
             - name: Huvudplanering – startsida
@@ -1335,6 +1351,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Avbryta ett planeringsjobb
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Felsöka planeringsoptimering
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Huvudplaner
               items:
                 - name: Huvudplaner – översikt
@@ -1475,7 +1493,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: Utveckla e-postmiljöer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Felsöka Office-integrering
+            - name: Felsöka Office-integreringen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/supply-chain/toc.json
         - name: Organisationsadministration
           items:
@@ -2657,7 +2675,7 @@
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
             - name: Installera och konfigurera lagerstyrningsappen
               items:
-                - name: Installera och konfigurera – översikt
+                - name: Installera och ansluta lagerstyrningsappen
                   href: warehousing/install-configure-warehousing-app.md
                 - name: Konfigurera fältnamn i lagerstyrningsapp
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
@@ -2697,6 +2715,22 @@
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Ställ in en arbetsmall för inköpsorder
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Policyer för leveranskonsolidering
+              items:
+                - name: Policyer för leveranskonsolidering
+                  href: warehousing/about-shipment-consolidation-policies.md
+                - name: Konfigurera policyer för leveranskonsolidering
+                  href: warehousing/configure-shipment-consolidation-policies.md
+                - name: Scenario 1 – konsolidera leveranser när de frisläpps till lagret med hjälp av Automatisk frisläppning av försäljningsorder
+                  href: warehousing/consolidate-shipments-automatic.md
+                - name: Scenario 2 – konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Frisläpp till lager
+                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                - name: Scenario 3 – konsolidera leveranser genom att använda Frisläpp till lager från workbench för lastplanering
+                  href: warehousing/consolidate-shipments-load-planning-workbench.md
+                - name: Scenario 4 – konsolidera leveranser genom att använda workbench för leveranskonsolidering
+                  href: warehousing/consolidate-shipments-manual-workbench.md
+                - name: Scenario 5 – konsolidera leveranser manuellt via sidan Konsolidera leveranser
+                  href: warehousing/consolidate-shipments-manual-form.md
         - name: Utveckling av Supply Chain Management
           items:
             - name: Guide för utveckling av Gantt-kontroll
