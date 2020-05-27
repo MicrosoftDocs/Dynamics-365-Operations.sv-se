@@ -2,7 +2,7 @@
   items:
     - name: Dynamics 365 Commerce
       items:
-        - name: Dynamics 365 Commerce
+        - name: Dynamics 365 Commerce startsidan
           href: index.md
         - name: Kom igång
           items:
@@ -79,7 +79,7 @@
                 - name: 'Installation, konfiguration och övergång för fasindelad lansering (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: Uppgradera kanaltillägget för Retail till senaste SDK för Retail
-                  href: dev-itpro/retailSDK-update.md
+                  href: dev-itpro/RetailSDK-update.md
             - name: Nyheter och ändringar
               items:
                 - name: Nyheter och ändringar i Finance and Operations-appar
@@ -112,8 +112,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Ansluta hjälpsystemet
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/commerce/toc.json
-                - name: Ansluta en anpassad hjälpwebbplats
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/commerce/toc.json
+                - name: Anpassad hjälp – översikt
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Visa och exportera fältbeskrivningar
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
                 - name: Uppgiftsinspelare
@@ -252,15 +252,15 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klienter'
+                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Flytta miljöer mellan datacenter
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
                 - name: Flytta licenser mellan avtalstyper
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klienter
+                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klientorganisationer
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klient
+                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementera Finance and Operations Commerce-projekt
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
@@ -499,7 +499,9 @@
                     - name: Adyen-betalningskoppling
                       href: dev-itpro/adyen-connector.md
                     - name: Spara betalningsinstrument online med Adyen-kopplingen
-                      href: dev-itpro/adyen-connector-listpi.md
+                      href: dev-itpro/adyen-connector-listPI.md
+                    - name: Stark kundautentisering (SCA) med Adyen-kopplingen
+                      href: adyen_redirect.md
                     - name: Sömlös offline-switch för att åtgärda presentkort och kreditnotor
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Ordna scenarier för fakturabetalning
@@ -510,6 +512,8 @@
                       href: omni-channel-payments.md
                     - name: Vanliga frågor om betalningar
                       href: dev-itpro/payments-retail.md
+                - name: Hantera Bing Maps för din organisation
+                  href: dev-itpro/manage-bing-maps.md
         - name: Marknadsföra dina produkter och tjänster
           items:
             - name: 'Kategorier, produkter och sortiment'
@@ -796,7 +800,7 @@
                   href: set-up-B2C-tenant.md
                 - name: Ställa in anpassade sidor för användarinloggningar
                   href: custom-pages-user-logins.md
-                - name: Konfigurera flera B2C-klientinnehavare i en Commerce-miljö
+                - name: Konfigurera flera B2C-klientorganisationer i en Commerce-miljö
                   href: configure-multi-B2C-tenants.md
                 - name: Lägga till stöd för nätverk för innehållsleverans (CDN)
                   href: add-cdn-support.md
@@ -824,6 +828,8 @@
                   href: search-engine-optimization-considerations.md
                 - name: Hantera säkerhetspolicy för innehåll (CSP)
                   href: manage-csp.md
+                - name: Välj bort insamling av webbaktivitetshändelser
+                  href: web-activity-opt-out.md
             - name: Hantera webbplatsens innehåll
               items:
                 - name: Sätt att lägga till innehåll
@@ -1016,7 +1022,7 @@
                   href: localizations/emea-aut-fi-sample.md
             - name: Östeuropa
               items:
-                - name: Standard
+                - name: Gemensamt
                   items:
                     - name: Förskottsfakturor för Commerce i Östeuropa
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
@@ -1714,9 +1720,11 @@
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurera och skicka e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
+            - name: Skapa e-postmallar för transaktionshändelser
+              href: email-templates-transactions.md
             - name: Utveckla e-postmiljöer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
-            - name: Felsöka Office-integrering
+            - name: Felsöka Office-integreringen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/commerce/toc.json
         - name: Organisationsadministration
           items:
@@ -1856,7 +1864,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: Utbyggbarhet
           items:
-            - name: Utveckling och utbyggbarhet för handel
+            - name: Utveckling och utbyggbarhet för Commerce
               href: dev-itpro/dev-retail-home-page.md
             - name: Utbyggbarhet för onlinekanal
               items:
@@ -2116,6 +2124,8 @@
                   href: dev-itpro/async-commerce-extension.md
                 - name: Förutökade kolumner i kanaldatabasen
                   href: dev-itpro/extended-columns.md
+                - name: Utöka Commerce Data Exchange – realtidstjänst
+                  href: dev-itpro/extend-commerce-data-exchange.md
             - name: Utbyggbarhet för betalningskoppling
               items:
                 - name: Skapa en betalningsintegrering för en betalningsterminal

@@ -94,8 +94,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Ansluta hjälpsystemet
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
-                - name: Ansluta en anpassad hjälpwebbplats
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
+                - name: Anpassad hjälp – översikt
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Visa och exportera fältbeskrivningar
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: Uppgiftsinspelare
@@ -186,15 +186,15 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Skicka en serviceförfrågan
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
-                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klienter'
+                - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klientorganisationer'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Flytta miljöer mellan datacenter
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
                 - name: Flytta licenser mellan avtalstyper
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
-                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klienter
+                - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klientorganisationer
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
-                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klient
+                - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klientorganisation
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Leverantörsreskontra
           items:
@@ -1736,6 +1736,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Överföring av elektronisk momsdeklaration (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Momsdeklaration för Tyskland
+                  href: localizations/emea-de-vat-declaration.md
                 - name: Journallisterapport
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Ställa in elektroniska momsdeklarationer
@@ -2286,7 +2288,7 @@
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integration
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
-                - name: 'Verifieringsfil (XML AuditFile Financieel, XAF)'
+                - name: 'Verifieringsfil – XML Auditfile Financieel, XAF'
                   hred: localizations/emea-nl-audit-file.md
             - name: Norge
               items:
@@ -2398,6 +2400,8 @@
                       href: localizations/rus-prepayments-management.md
                     - name: Återställning av ingående moms
                       href: localizations/rus-incoming-VAT-restoring.md
+                    - name: Bearbeta fakturor för exporthandel
+                      href: localizations/rus-export-trade.md
                 - name: Anläggningstillgångar
                   items:
                     - name: Anläggningstillgångar – översikt
@@ -2496,6 +2500,12 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Lagerrapporter
                       href: localizations/rus-inventory-reports.md
+                    - name: Lagerprofil – översikt
+                      href: localizations/rus-inventory-profile-overview.md
+                    - name: Ställa in en lagerprofil
+                      hreF: localizations/rus-set-up-inventory-profile.md
+                    - name: Använda en lagerprofil i dokument och frågor
+                      href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Rapportering
                   items:
                     - name: Ekonomisk rapportering
@@ -3248,34 +3258,40 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Utforma ER-format för att skapa utgående elektroniska dokument i olika format
               items:
-                - name: (ER) Utforma en konfiguration för rapportgenerering i OPENXML-format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: (ER) Utforma konfigurationer för att generera rapporter i Word-format
+                - name: Skapa konfigurationer för att generera utgående dokument i Excel-format
+                  items:
+                    - name: Skapa en konfiguration för att generera dokument i Excel-format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                    - name: Exempel på generering av rapporter i OPENXML-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Ändra ER-format genom att tillämpa Excel-mallar igen
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
+                      items:
+                        - name: Utforma format för att dynamiskt lägga till kolumner i Excel-rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Köra format för att dynamiskt lägga till kolumner i Excel-rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                - name: Utforma konfigurationer för att generera rapporter i Word-format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Utforma konfigurationer för att fylla i PDF-mallar
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-            - name: Bädda in bilder och former
-              items:
-                - name: (ER) Bädda in bilder och former i dokument som du skapar
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                - name: Exempel på hur du bäddar in bilder och figurer
+                - name: Bädda in bilder och former
                   items:
-                    - name: Utforma konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: Granska konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Skapa rapporter i Office-format som har inbäddade bilder
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Ändra format för elektronisk rapportering genom att tillämpa mallar från Excel igen
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: (ER) Bädda in bilder och former i dokument som du skapar
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                    - name: Exempel på hur du bäddar in bilder och figurer
+                      items:
+                        - name: Utforma konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                        - name: Granska konfigurationer för att generera rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Skapa rapporter i Office-format som har inbäddade bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Definiera ER‑konfigurationers beroende av andra komponenter
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Lägg dynamiskt till kolumner till rapporter från Excel som horisontellt expanderbara intervall
-              items:
-                - name: Utforma format att dynamiskt lägga till kolumner i Excel-rapporter som horisontellt expanderbara intervall
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                - name: Kör format som dynamiskt lägger till kolumner till rapporter från Excel som horisontellt expanderbara intervall
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
             - name: Uppdatera programdata med elektronisk rapportering
               items:
                 - name: Generera elektroniska dokument och uppdatera programdata
@@ -3306,8 +3322,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurera ER‑format så att filer i XML-format importeras med valfria attribut
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-            - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Livscykel för konfiguration
               items:
                 - name: Hantera livscykeln för konfigurationer
@@ -3327,7 +3341,11 @@
                     - name: Hämta konfigurationer från ER-databasen för RCS‑typen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Importera konfigurationer från RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Skapa ER-konfigurationer i RCS och överföra dem till den globala databasen
+                  href: localizations/rcs-global-repo-upload.md
+                - name: Dela ER-konfigurationer i RCS med externa organisationer
+                  href: localizations/rcs-global-repo-share-configuration.md
             - name: Självstudier
               items:
                 - name: Läs om hur du använder datakällor
@@ -3512,7 +3530,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
             - name: Utveckla e-postmiljöer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/finance/toc.json
-            - name: Felsöka Office-integrering
+            - name: Felsöka Office-integreringen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/finance/toc.json
         - name: Organisationsadministration
           items:
