@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e76c123ffbeb33cbc3ba01b4b2758208ed0c445f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 66b6b365958820a76f733df5eb2aabf6c3c4ebac
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204227"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383514"
 ---
 # <a name="check-the-availability-of-stock"></a>Kontrollera lagertillgängligheten
 
@@ -35,9 +35,9 @@ Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerb
 2. Markera raden med **artikelnumret**. Välj det register där raden ställs in på lagerbehållning och angetts i fältet artikelnumret du vill fråga **lagerbehållningen** per **artikelnummer**.
 3. I fältet **Kriterier** väljer du den artikel du vill lägga söka. Om du använder företaget för USMF-demonstrationdata, kan du välja M9201.  
 4. Klicka på **OK**.
-5. I **åtgärdsfönstret**, klicka på **Dimensioner**. Fliken **dimensioner** låter dig välja hur mycket information du vill se om din lagerbehållning. Om du behöver data som är relaterade till reservation, måste du se alla lagerdimensioner för artiklarna som använder avancerade processer för lagerställe (WHS).
+5. I **åtgärdsfönstret** klickar du på **Dimensioner**. Fliken **dimensioner** låter dig välja hur mycket information du vill se om din lagerbehållning. Om du behöver data som är relaterade till reservation, måste du se alla lagerdimensioner för artiklarna som använder avancerade processer för lagerställe (WMS).
 6. Klicka på **OK**.
-7. I **åtgärdsfönstret**, klicka på **Relaterad information**. Om du inte ser det här alternativet kan du behöva klicka på ellipsknappen (…) Om du vill se ytterligare åtgärderfönsterväljare.
+7. I **åtgärdsfönstret**, klicka på **Relaterad information**. Om du inte ser det här alternativet kan du behöva klicka på ellipsknappen (…) för att se ytterligare alternativ för åtgärderfönster.
 8. Klicka på **Leveransöversikt**. Fliken **Leveransöversikt** innehåller information om varor för en viss artikel, till exempel den tillgängliga kvantiteten, produktionstiden och leverantörsinformation.  
 9. Expandera avsnittet **I lager**.
 10. Expandera avsnittet **Leverantörer**.
@@ -48,7 +48,7 @@ Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerb
 1. Gå till **Navigeringsfönster > Moduler > Lagerstyrning > Förfrågningar och rapporter > Fysisk lagerbehållning**.
 2. I fältet **Artikelnummer**, skriv ett värde. Du kan använda plats- och lagerställesfälten för att filtrera listan med artiklar. 
 3. Uppdatera sidan.
-4. I **Åtgärdsfönstret**, klicka på **Visa dimensioner**. På fliken Visa dimensioner kan du välja hur mycket information du vill se om din lagerbehållning.
+4. I **Åtgärdsfönstret** klickar du på **Visa dimensioner**. På fliken Visa dimensioner kan du välja hur mycket information du vill se om din lagerbehållning.
 5. Klicka på **OK**.
 6. Stäng sidan.
 

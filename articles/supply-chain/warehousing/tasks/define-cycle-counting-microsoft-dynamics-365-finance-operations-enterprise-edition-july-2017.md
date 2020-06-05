@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d10904414b8c35960e421caeb7cae838edd312dd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217067"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383031"
 ---
 # <a name="define-cycle-counting"></a>Definiera rullande inventering  
 
@@ -49,7 +49,7 @@ Rullande inventering är en lagerställesprocess som du kan använda för att ko
 10. Välj ett värde i fältet **Arbetsklass-ID**.
 11. Klicka på **Ny**.
 12. Välj ett värde i fältet **Arbetsklass-ID**.
-13. I **åtgärdsfönstret**, klicka på **spara**.
+13. I **åtgärdsfönstret**, klicka på **Spara**.
 14. Stäng sidan.
 15. I **Navigeringsfönster**, gå till **Moduler > Lagerstyrning > Inställningar > Mobil enhet > Meny på mobil enhet**.
 16. Hitta och markera önskad post i listan.

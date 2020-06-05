@@ -3,7 +3,7 @@ title: Utgående lageråtgärder i kassan
 description: Det här ämnet beskriver möjligheterna i den utgående lageråtgärden för en kassa (POS).
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123932"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384139"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageråtgärder i kassan
 
@@ -117,6 +117,18 @@ I vyn **fullständig orderlista** kan du manuellt välja en rad i listan och sed
 ### <a name="over-delivery-shipping-validations"></a>Leveransvalideringar för överleverans
 
 Valideringar sker under mottagningsprocessen för dokumentraderna. De inkluderar valideringar för överleverans. Om en användare försöker ta emot mer lager än vad som beställts på en inköpsorder, men antingen överleverans eller den kvantitet som har inlevererats överskrider den överleveranstolerans som har konfigurerats för inköpsorderraden, får användaren ett felmeddelande och får inte ta emot överskjutande kvantitet.
+
+### <a name="underdelivery-close-lines"></a>Stäng rader för underleverans
+
+I Commerce version 10.0.12 lades en funktion till som gör att kassaanvändare (POS) stänger eller annullerar resterande kvantiteter vid utgående orderleverans om berört utgående lagerställe bedömer att man inte kan leverera hela den kvantitet som har begärts. Kvantiteter kan också stängas eller annulleras senare. Om du vill använda den här funktionen måste företaget konfigureras att tillåta underleverans av överföringsorder. Dessutom måste en underleveransprocent definieras för överföringsorderraden.
+
+Om du vill konfigurera företaget att tillåta underleverans av överföringsorder i Commerce Headquarters går du till **Lagerhantering \> Inställningar \> Parametrar för hantering av lager och lagerstyrning**. På sidan **Parametrar för hantering av lager och lagerstyrning** på fliken **Överföringsorder** aktiverar du parametern **Acceptera underleverans**. Kör sedan jobb **1070** för distributionsscheman för att synkronisera parameterändringarna till butikskanalen.
+
+Underleveransprocenten för en överföringsorderrad kan fördefinieras för produkter som en del av produktkonfigurationen i Commerce Headquarters. De kan också ställas in eller skrivas över på en specifik överföringsorderrad via Commerce Headquarters.
+
+När en organisation har slutfört konfigureringen av underleveranser för överföringsorder visas ett nytt alternativ för **Stäng resterande kvantitet** i fönstret **Information** när de väljer en utgående överföringsorderrad via åtgärden **Utgående åtgärder** i POS. När användarna slutfört leveransen med hjälp av åtgärden **Avsluta uppfyllelse** kan de skicka en begäran till Commerce Headquarters om att annullera den återstående kvantiteten som ännu inte skickats. Om en användare väljer att stänga den återstående kvantiteten utförs en validering i Commerce i syfte att verifiera att den kvantitet som annulleras ligger inom den procentsats för underleverans som har definierats på överföringsorderraden. Om avvikelsen för underleverans överskrids får användaren ett felmeddelande och kan inte stänga den återstående kvantiteten förrän den tidigare levererats och "skicka nu"-kvantiteten uppfyller eller överskrider toleransen för underleverans.
+
+När leveransen har synkroniserats till Commerce Headquarters uppdateras de kvantiteter som har definierats i fältet **Skicka nu** för överföringsorderraden i POS till statusen "Levererad" i Commerce Headquarters. Alla icke levererade kvantiteter som tidigare skulle ha betraktats som "att skicka"-kvantiteter (dvs. kvantiteter som kommer att skickas) betraktas istället som annullerade kvantiteter. Kvantiteten "att skicka" för överföringsorderraden är inställd på **0** (noll) och raden anses fullt levererad.
 
 ### <a name="shipping-location-controlled-items"></a>Leveransplatskontrollerade artiklar
 

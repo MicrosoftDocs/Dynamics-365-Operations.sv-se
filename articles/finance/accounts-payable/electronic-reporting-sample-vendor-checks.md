@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ae42c9012a430aeeed6adb78b33776c727e4a3f8
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4ce9c9d5b5def386f159df581c87d48f3e0b0ad9
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551159"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367325"
 ---
-[!include [banner](../includes/banner.md)]
-
 # <a name="electronic-reporting-sample-vendor-checks"></a>Elektronisk rapportering för provleverantörscheckar
+
+[!include [banner](../includes/banner.md)]
 
 Du kan använda elektronisk rapportering (ER) för att formatera leverantörens checkar. Det finns många bankspecifika och checkproviderspecifika checkformat på marknaden. Provcheckformat har inkluderats i betalningscheckmodellen i databasen för ER. Dessa provcheckar betecknas **check i mitten (USA)** och **check på övre stump under (USA)**.
 

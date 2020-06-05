@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 14 maj 2020
+          href: hr-whats-new-2020-05-14.md
         - name: 1 maj 2020
           href: hr-whats-new-2020-05-01.md
         - name: 13 april 2020
@@ -111,14 +113,16 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: Förstå Lifecycle Services
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources-app i Teams
+          href: hr-admin-teams-leave-app.md
         - name: Dokumentationsresurser
           items:
             - name: Hjälpsystem
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Ansluta hjälpsystemet
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: Ansluta en anpassad hjälpwebbplats
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
+            - name: Anpassad hjälp – översikt
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
             - name: Visa och exportera fältbeskrivningar
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: Uppgiftsinspelare
@@ -515,6 +519,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Visa team- och företagskalendrar
               href: hr-employee-self-service-calendar.md
+        - name: Hantera begäranden om ledighet i Teams
+          href: hr-teams-leave-app.md
         - name: Utveckla medarbetare
           items:
             - name: Översikt över prestationshantering

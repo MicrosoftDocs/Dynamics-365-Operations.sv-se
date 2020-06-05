@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab0a108b5c8b7f2f90a4d33d8a9ff088335c18d4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f8092ab7f960fd36515afb8448dfe1e262197595
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207679"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383146"
 ---
 # <a name="create-a-vendor-bank-account"></a>Skapa ett leverantörsbankkonto
 
@@ -31,7 +31,7 @@ Den här proceduren visar hur du skapar ett bakkonto för en leverantör. Du kan
 
 1. Gå till **navigeringsfönstret > Moduler > Anskaffning och källa > Leverantörer > Alla leverantörer**.
 2. Markera leverantören som du vill skapa ett bankkonto för, och klicka sedan på länken i fältet **Leverantörskonto-ID.**
-3. Klicka på **Leverantör** i **åtgärdsfönstret**.
+3. I **åtgärdsfönstret**, klicka på **Leverantör**.
 4. Klicka på **Bankkonton**.
 5. Klicka på **Nytt** i **Åtgärdsfönstret**.
 6. Ange ett värde i fältet **Bankkonto**. Detta ID ska användas för att identifiera bankkontot på leverantörsposten.  

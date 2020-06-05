@@ -1,9 +1,9 @@
 ---
 title: Videoklipp
-description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Finance and Operations-appar som är tillgängliga på YouTube och andra platser.
+description: Den här sidan anger Microsoft-skapade videor med instruktioner och tekniksnack om Finance and Operations-appar som är tillgängliga på YouTube och andra webbplatser.
 author: josaw1
 manager: AnnBe
-ms.date: 11/11/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781860"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367139"
 ---
 # <a name="videos"></a>Videoklipp 
 
@@ -33,7 +33,7 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 > [!Note]
 > Vissa av de angivna videorna publicerades under ett tidigare produktnamn, men är fortfarande tillämpliga.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videor för utveckling och administration för Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videor för utveckling och administrering av Finance and Operations
 
 ### <a name="data-integration"></a>Dataintegration
 
@@ -55,8 +55,8 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 ### <a name="intelligence"></a>Intelligence
 
 - [Hur du bäddar in en rapport i en analytisk arbetsyta](https://youtu.be/_8WlwmSggcQ)
-- [Så här bäddar du in PowerBI.coms-rapporter i Finance and Operations-appar](https://youtu.be/gGWuNJDoi-M)
-- [Ta med din egen databas (BYOD) till Finance and Operations-appar](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Så här bäddar du in PowerBI.com-rapporter i Finance and Operations-appar](https://youtu.be/gGWuNJDoi-M)
+- [Ta med din egen databas (Bring your own database, BYOD) till Finance and Operations-appar](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Använda Power BI-innehåll i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -76,6 +76,12 @@ På [Microsoft Dynamics 365 YouTube kanal](https://www.youtube.com/channel/UCJGC
 - [Uppdatera data i en produktionsmiljö](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [Deltagande i en ny plattformsversionen efter plattformsuppdatering 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Använda telemetri för att övervaka viktiga prestandaräknare i Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+
+### <a name="regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT)
+
+- [Så här använder du uppgiftsinspelaren för att skapa ett testfall för verktyget för Regression Suite Automation Tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
+- [Så här skapar du en testplan i Azure DevOps som du kan använda tillsammans med Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
+- [Så här använder du Regression Suite Automation Tool (RSAT)](https://youtu.be/uhN9JItzGAk)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videor för Dynamics 365 Finance

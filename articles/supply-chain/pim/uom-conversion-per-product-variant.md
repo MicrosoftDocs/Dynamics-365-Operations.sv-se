@@ -1,9 +1,9 @@
 ---
 title: Måttenhetskonvertering per produktvariant
-description: Det här avsnittet beskriver hur måttenhetskonvertering kan ställas in på produktvarianter.
+description: Det här avsnittet beskriver hur du konfigurerar måttenhetskonvertering för produktvarianter. Den innehåller ett exempel på inställningarna.
 author: johanhoffmann
 manager: tfehr
-ms.date: 01/06/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,71 +17,93 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e50be7fa6fa686a90b2dd5c5200c881e4629f019
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
+ms.sourcegitcommit: 92611ec276da6f7211d722cfcd66739b612296dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204503"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382807"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Måttenhetskonvertering per produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet beskriver hur måttenhetskonvertering kan ställas in på produktvarianter. Den innehåller ett exempel på inställningarna.
+Det här avsnittet beskriver hur du konfigurerar måttenhetskonverteringar för diverse produktvarianter.
 
-Den här funktionen gör det möjligt för företag att definiera olika enhetskonverteringar mellan varianter av samma produkt. Följande exempel används i det här avsnittet. Ett företag säljer t-shirts i storlek Small, Medium, Large och Extra large. T-shirten definieras som en produkt och de olika storlekarna definieras som varianter av produkten. T-shirts förpackas i lådor och det kan finnas fem T-shirts i en låda, med undantag för Extra large som endast kan fyra T-shirts. Företaget vill spåra olika varianter av T-shirts i enheten **enheter** men säljer T-shirts i enheten **lådor**. Konverteringen mellan lagerenheten och försäljningsenheten är 1 låda = 5 enheter utom varianten Extra large där konverteringen är 1 låda = 4 enheter.
+I stället för att skapa flera enskilda produkter som måste underhållas kan du använda produktvarianter för att skapa varianter av en enskild produkt. En produktvariant kan till exempel vara en T-shirt med given storlek och färg.
 
-### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurera en produkt för enhetskonvertering per variant
+Tidigare kunde enhetskonverteringar endast ställas in i produktmallen. Därför hade alla produktvarianter samma enhetskonverteringsregler. När funktionen *Måttenhetskonverteringar för produktvarianter* är aktiverad, dina T-shirtar säljs i kartonger och antalet T-shirtar som kan förpackas i en och samma kartong beror på storleken på T-shirtarna, kan du nu ställa in enhetskonverteringar mellan olika tröjstorlekar och de kartonger som används för paketering.
 
-Produktvarianter kan bara skapas för produkter av **undertypen Produkt**: **produktmall**. Mer information finns i [Skapa en produktmall](tasks/create-product-master.md).
+## <a name="turn-on-the-feature-in-your-system"></a>Aktivera funktionen i systemet
 
-Funktionen är inte aktiverad för produkter som har ställts in för faktisk/nominell vikt-processer. 
+Om du inte redan ser funktionen i systemet går du till [Funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) och aktiverar funktionen *Måttenhetskonverteringar för produktvarianter*.
 
-När produktmallen med frisläppta produktvarianter skapas kan enhetskonverteringar per varianter ställas in. Du hittar alternativet för att öppna sidan enhetskonvertering i samband med en produkt eller en produktvariant på följande sidor.
+## <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Konfigurera en produkt för enhetskonvertering per variant
 
--   Sidan **Produktinformation**
--   Sidan **Uppgifter om frisläppta produkter**
--   Sidan **Frisläppta produktvarianter**
+Produktvarianter kan bara skapas för produkter som är produktmallar. Mer information finns i [Skapa en produktmall](tasks/create-product-master.md). Funktionen *Måttenhetskonverteringar för produktvarianter* är inte tillgänglig för produkter som har ställts in för faktiska viktprocesser.
 
-När du öppnar sidan **Enhetskonvertering** i samband med en produktmall eller frisläppt produktvariant kan du välja om du vill ställa in enhetskonvertering för produkten eller för en produktvariant. Du gör detta genom att välja antingen **Produktvariant** eller **Produkt** i fältet **Skapa konvertering för**.
+Så här konfigurerar du en produktmall till stöd för enhetskonvertering per variant:
 
-### <a name="product-variant"></a>Produktvariant
+1. Gå till **Hantering av produktinformation \> Produkter \> Produktmallar**.
+1. Skapa eller öppna en produktmall om du vill gå till sidan **Produktinformation**.
+1. Ställ in alternativet **Aktivera måttenhetskonverteringar** som *Ja*.
+1. I åtgärdsfönstret, på fliken **Produkt** i gruppen **Konfigurering**, markerar du **Enhetskonverteringar**.
+1. Sidan **Enhetskonverteringar** öppnas. Välj en av följande flikar:
 
-Om du väljer **Produktvariant** kan du sedan välja vilken variant du vill ställa in enhetskonvertering i fältet **Produktvariant**.
+    - **Konverteringar inom klasser** – Välj den här fliken om du vill konvertera mellan enheter som tillhör samma enhetsklass.
+    - **Konverteringar inom klasser** – Välj den här fliken om du vill konvertera mellan enheter som tillhör olika enhetsklasser.
 
-### <a name="product"></a>Produkt
+1. Klicka på **Ny** om du vill lägga till en ny enhetskonvertering.
+1. Ställ in fältet **Skapa konvertering för** på ett av följande värden:
 
-Om du väljer **Produkt** kan du ställa in en enhetskonvertering för produktmallen. Denna enhetskonvertering gäller för alla produktvarianter utan definierad enhetskonvertering.
+    - **Produkt** – Om du väljer detta värde kan du ange en enhetskonvertering för produktmallen. Den enhetskonverteringen kommer att användas som reserv för alla produktvarianter som ingen enhetskonvertering definieras för.
+    - **Produktvariant** – Om du väljer detta värde kan du ange en enhetskonvertering för en specifik produktvariant. Använd fältet **Produktvariant** för att välja varianten.
 
-### <a name="example"></a>Exempel
+    ![Lägga till en ny enhets konvertering](media/uom-new-conversion.png "Lägga till en ny enhetskonvertering")
 
-En produktmall **T-Shirt** har fyra frisläppta produktvarianter Small, Medium, Large och X-Large. T-shirts förpackas i lådor och det kan finnas fem T-shirts i en låda, med undantag för Extra large som endast kan fyra T-shirts.
+1. Använd de andra fälten som tillhandahålls för att ställa in din enhetskonvertering.
+1. Klicka på **OK** om du vill spara den nya enhetskonverteringen.
 
-Öppna först sidan **Enhetskonvertering** från sidan Information om frisläppt produkt för **T-shirt.**
+> [!TIP]
+> Du kan öppna sidan **Enhetskonverteringar** för en produkt eller en produktvariant från någon av följande sidor:
+> 
+> - Produktdetaljer
+> - Information om släppt produkt
+> - Frisläppta produktvarianter
 
-På sidan **Enhetskonvertering**, ställ in enhetskonvertering för den frisläppta produktvarianten X-Large.
+## <a name="example-scenario"></a>Exempelscenario
 
-| **Fält**             | **Inställning**             |
-|-----------------------|-------------------------|
-| Skapa konvertering för | Produktvariant         |
-| Produktvariant       | T-Shirt : : X-Large : : |
-| Från enhet             | Lådor                   |
-| Faktor                | 4                       |
-| Till enhet               | Antal                  |
+I detta scenario säljer ett företag T-shirts i storlekarna Small, Medium, Large och Extra large. T-shirten definieras som en produkt och de olika storlekarna definieras som varianter av den produkten. Tröjorna förpackas i kartonger. För storlekarna Small, Medium och Large kan det finnas fem tröjor per kartong. För storleken Extra stor finns emellertid plats för endast fyra tröjor per kartong.
 
-De frisläppta produktvarianten Small, Medium och Large har samma enhetskonvertering mellan enheten Låda och Enheter, vilket innebär att du kan definiera enhetskonvertering för dessa produktvarianter för produktmallen.
+Företaget vill spåra de olika varianterna i enheten *Stycken*, men man säljer dem i enheten *kartonger*. För storlekarna Small, Medium och Large är konverteringsförhållandet mellan lagerenhet och försäljningsenhet 1 kartong = 5 stycken. För storleken Extra large är konverteringen 1 kartong = 4 stycken.
 
-| **Fält**             | **Inställning** |
-|-----------------------|-------------|
-| Skapa konvertering för | Produkt     |
-| Produkt               | T-shirt     |
-| Från enhet             | Lådor       |
-| Faktor                | 5           |
-| Till enhet               | Antal      |
+1. På sidan **Information om frisläppt produkt** för produkten **T-shirt** öppnar du sidan **Enhetskonvertering**.
+1. På sidan **Enhetskonverteringar** anger du följande enhetskonvertering för produktvarianten **X-Large**.
 
-### <a name="using-excel-to-update-the-unit-conversions"></a>Uppdatera enhetskonverteringarna med Excel
+    | Fält                 | Inställning                 |
+    |-----------------------|-------------------------|
+    | Skapa konvertering för | Produktvariant         |
+    | Produktvariant       | T-Shirt : : X-Large : : |
+    | Från enhet             | Lådor                   |
+    | Faktor                | 4                       |
+    | Till enhet               | Antal                  |
 
-Om en produkt har många produktvarianter med olika enhetskonverteringar, är det en bra idé att exportera enhetskonverteringar från sidan **Enhetskonvertering** till ett Excel-kalkylblad, uppdatera konverteringar och publicera tillbaka dem i Supply Chain Mangement.
+1. Eftersom produktvarianterna **Small**, **Medium** och **Large** samtliga har samma enhetskonvertering mellan enheterna *Kartong* och *Stycken* kan du definiera följande enhetskonvertering för dem i produktmallen.
 
-Alternativet för att exportera till Excel och publicera ändringarna tillbaka till Supply Chain Mangement aktiveras från menyobjektet **Öppna i Microsoft Office** i åtgärdsfönstret på sidan **Enhetskonverteringar**.
+    | Fält                 | Inställning |
+    |-----------------------|---------|
+    | Skapa konvertering för | Produkt |
+    | Produkt               | T-shirt |
+    | Från enhet             | Lådor   |
+    | Faktor                | 5       |
+    | Till enhet               | Antal  |
+
+## <a name="using-excel-to-update-the-unit-conversions"></a>Uppdatera enhetskonverteringarna med Excel
+
+Om en produkt har många produktvarianter som har olika enhetskonverteringar är det en god idé att exportera enhetskonverteringarna till en Microsoft Excel-arbetsbok, uppdatera dem och sedan publicera dem på nytt i Dynamics 365 Supply Chain Management.
+
+Om du vill exportera enhetskonverteringar till Excel går du till sidan **Enhetskonverteringar** och väljer **Öppna i Microsoft Office** i åtgärdsfönstret.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Hantera måttenhet](tasks/manage-unit-measure.md)

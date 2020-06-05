@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a594bacb1fcf53ae4a278dbb26f1de174e22288c
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: e98a30a03856f5532d420e516cb35d66acffb278
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275612"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383504"
 ---
 # <a name="schedule-work-orders"></a>Schemalägg arbetsorder
 
@@ -137,4 +137,4 @@ Så här visar och arbetar du med Gantt-diagrammet:
     - Gantt-diagrammet uppdateras för att visa de schemalagda arbetsorder som matchar dina inställningar. Varje arbetsorder representeras av en blå rektangel.
     - Om du vill omplanera en visad arbetsorder väljer du och drar den till lämpligt nytt datum och aktuell tid.
 
-1. Om du har gjort några ändringar väljer **Spara** i åtgärdsfönstret för att spara dem.
+1. Om du har gjort några ändringar väljer du **Spara** i åtgärdsfönstret för att spara dem.

@@ -3,7 +3,7 @@ title: Automation av leverantörsfaktura
 description: Det här avsnittet beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180026"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396019"
 ---
 # <a name="vendor-invoice-automation"></a>Automation av leverantörsfaktura
 
@@ -61,7 +61,7 @@ Ett datapaket är den arbetsenhet som måste skickas till, så att fakturahuvude
 
 Dokumentbilagor till leverantörsfakturan är en ny dataenhet som introduceras som en del av den här funktionen. Rubrikenheten för leverantörsfakturan har ändrats så att den stöder bilagor. Radenheten för leverantörsfakturan har inte ändrats för den här funktionen.
 
-Det här avsnittet ger inte en detaljerad definition av ett datapaket. Det ges inte heller någon beskrivning av hur du skapar datapaket. Den här informationen finns i [Ramverk för dataenheter och -paket](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Detaljerad information om datapaket finns i [Datahantering – en översikt](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Information om hur du skapar datapaket med hjälp av arbetsytan för datahantering finns i [Bearbeta och förbruka datapaket i Dynamics 365 Finance and Operations-applösningen](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Om du snabbt vill generera testdata som inkluderar fakturor och bilagor ska du följa dessa steg.
 
@@ -89,7 +89,7 @@ Fakturor som importeras med datapaket kan associeras med den juridiska person de
 
 ## <a name="exception-processing"></a>Behandling av undantag
 
-I fall där leverantörsfakturor kommer till Finance and Operations via integrering måste det finnas ett enkelt sätt för ansvariga för leverantörsreskontra att behandla undantag och felaktiga fakturor och att skapa väntande fakturor med utgångspunkt från felaktiga fakturor. Behandlingen av detta undantag för leverantörsfakturor ingår nu i Finance and Operations.
+I fall där leverantörsfakturor når Finance and Operations via integrering måste det finnas ett enkelt sätt för ansvariga för leverantörsreskontra att behandla undantag och felaktiga fakturor, samt att skapa väntande fakturor med utgångspunkt från felaktiga fakturor. Behandlingen av detta undantag för leverantörsfakturor ingår nu i Finance and Operations.
 
 ### <a name="exceptions-list-page"></a>Sida med lista över undantag
 

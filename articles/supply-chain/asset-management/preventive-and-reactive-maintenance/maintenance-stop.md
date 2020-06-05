@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8946baa4597ad4b696bcb6bcc49d4202163a41a9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214885"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383537"
 ---
 # <a name="maintenance-downtime"></a>Underhållsstopp
 
@@ -75,7 +75,7 @@ Bilden nedan visar ett exempel på detaljvyn **Aktiviteter för underhållsstopp
 
 9. I dialogen **Beräkna kapacitetsbeläggning** redigerar du start- och sluttider om det behövs, och väljer om du vill inkludera arbetsorder och underhållsscheman i beräkningen. Du kan använda fältet **Nivå** för att indikera hur detaljerad beräkningen av kapacitetsbeläggningen ska vara gällande funktionsplatser. Om du till exempel infogar siffran "1" i fältet och har en funktionsplatsstruktur med flera nivåer, visas alla tillgångar för en funktionsplats, som väljs på aktiviteten för underhållsstopp, på den översta nivån, och därmed kan också de timmar som finns på en rad läggas till från funktionsplatser på en lägre nivå. Om du infogar siffran "0" i fältet **Nivå** visas ett detaljerat resultat med alla kapacitetsbeläggningsrader på alla de funktionsplatsnivåer som de är relaterade till.
 
-10. Klicka på **OK** för att starta beräkningen. Det totala antalet timmar visas i översikten **Kapacitetsbeläggning**. På fliken **Kapacitetsbeläggning** > åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade timmar. Bilden nedan visar resultaten av en beräkning av **Kapacitetsbeläggning**.
+10. Klicka på **OK** för att starta beräkningen. Det totala antalet timmar visas i översikten **Kapacitetsbeläggning**. På fliken **Kapacitetsbeläggning** > i åtgärdsfönstergrupperna **Gruppera efter...** klickar du på de relevanta knapparna för att få en mer detaljerad översikt över allokeringen av prognostiserade timmar. Bilden nedan visar resultaten av en beräkning av **Kapacitetsbeläggning**.
 
 ![Figur 3](media/21-preventive-maintenance.png)
 

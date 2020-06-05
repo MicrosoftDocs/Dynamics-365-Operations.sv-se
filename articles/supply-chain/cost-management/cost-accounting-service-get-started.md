@@ -1,5 +1,5 @@
 ---
-title: Kom igång med kostnadsredovisningstjänst
+title: Kom igång med kostnadsredovisningstjänsten (privat förhandsvisning)
 description: Det här avsnittet innehåller licensieringsinformation och Installationsinstruktioner för kostnadsredovisningstjänst.
 author: AndersGirke
 manager: tfehr
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cbbce7eaac264973bf0b95ad5175bf70ed2b4ae9
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: a82af9e8ec1806f470103897389d0316d33a4a06
+ms.sourcegitcommit: 7fec9dc5297ed6e687d4a0dff099922d59d6a830
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276964"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "3372746"
 ---
-# <a name="get-started-with-the-cost-accounting-service"></a>Kom igång med kostnadsredovisningstjänst
+# <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Kom igång med kostnadsredovisningstjänsten (privat förhandsvisning)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -43,16 +43,22 @@ Kostnadsredovisningstjänsten är ett tillägg. För att göra funktionerna till
 
 Kostnadsredovisningstjänsten stöder för närvarande inte alla kostnads hanteringsfunktioner som är inbyggda i Dynamics 365 Supply Chain Management. Därför är det viktigt att du utvärderar om den tillgängliga funktionsuppsättningen ska uppfylla dina krav.
 
-## <a name="licensing"></a>Licensiering
-
-Kostnadsredovisningstjänsten licensieras tillsammans med de standardfunktioner i lagerredovisningen som är tillgängliga för Supply Chain Management. Du behöver inte köpa ytterligare en licens för att kunna använda kostnadsredovisningstjänsten.
-
-## <a name="install-the-add-in"></a>Installera tillägget
+## <a name="how-to-get-the-cost-accounting-service-private-preview"></a><a name="sign-up"></a>Så här kommer du igång med kostnadsredovisningstjänsten (privat förhandsvisning)
 
 > [!IMPORTANT]
 > För att kunna använda kostnadsredovisningstjänsten måste du ha en LCS hög tillgänglighetsmiljö (inte en OneBox-miljö) och du måste köra Dynamics 365 Supply Chain Management version 10.0.11 eller senare.
 
+Om du vill registrera dig för privatförhandsvisning för kostnadsredovisningstjänsten skickar du ditt ID för LCS-miljö via e-post till [Kostnadsredovisningstjänst (privat förhandsvisning)](mailto:aevengir@microsoft.com?subject=Cost%20accounting%20service%20%28private%20preview%29). När vi godkänner dig för programmet kommer vi att skicka ett uppföljningsmail till dig som innehåller en betanyckel för kostnadsredovisningtjänsten. När du tar emot betanyckeln kan du fortsätta genom att [installera tillägget](#install).
+
+## <a name="licensing"></a>Licensiering
+
+Kostnadsredovisningstjänsten licensieras tillsammans med de standardfunktioner i lagerredovisningen som är tillgängliga för Supply Chain Management. Du behöver inte köpa ytterligare en licens för att kunna använda kostnadsredovisningstjänsten.
+
+## <a name="install-the-add-in"></a><a name="install"></a>Installera tillägget
+
 Om du vill använda kostnadsredovisningstjänsten installerar du tillägget kostnadsredovisningstjänst för Supply Chain Management enligt beskrivningen i följande procedur.
+
+1. [Registrera dig](#sign-up) för kostnadsredovisningstjänsten (privat förhandsvisning).
 
 1. Logga in på LCS.
 

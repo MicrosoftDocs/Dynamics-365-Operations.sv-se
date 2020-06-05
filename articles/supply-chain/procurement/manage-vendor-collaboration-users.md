@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8491fd7c5af015989d409391e3ac143d88b6ad92
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 29930fdb65f96e281e0f0f01db41ec1475ad81c2
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207173"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383077"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Hantera leverantörssamarbetesanvändare
 
@@ -49,7 +49,7 @@ Om du vill ta bort en kontakt kan du bara ta bort dem som du har skapat.
 Användarförfrågningar för leverantörssamarbeten kan göras av en yrkesperson inom anskaffning eller av en extern leverantörsadministratör.
 
 -   Om du är en extern leverantör skickar du in begäran från sidan **Alla kontakter** i modulen **Leverantörssamarbete**.
--   Om du är verksam inom anskaffning skickar du in förfrågningar från sidan **Visa kontakter**. För att göra detta: I leverantörsposten, i avsnittet **Inställningar** i åtgärdsfönstret, väljer du **Kontakter** &gt; **Visa kontakter**.
+-   Om du är verksam inom anskaffning skickar du in förfrågningar från sidan **Visa kontakter**. För att göra detta: I avsnittet **Inställningar** i åtgärdsfönstret i leverantörsfönstert väljer du **Kontakter** &gt; **Visa kontakter**.
 
 Du kan ställa en begäran om reservera en användare, inaktivera en användare eller ändra säkerhetsroller. Om du är en extern leverantörsadministratör måste du registreras som en kontaktperson för de leverantörskonton som du vill göra användarbegäran för, och du måste ha åtkomst till leverantörssamarbetesgränssnittet för dessa leverantörskonton.  
 

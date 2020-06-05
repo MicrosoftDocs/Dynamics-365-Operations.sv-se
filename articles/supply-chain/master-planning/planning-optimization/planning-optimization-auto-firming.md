@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 81c26b8a99f86d663d91ac4f549987262c0541ad
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: e412ccbc7c44d41e0a70ef8b5436901e01c671e6
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323541"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383698"
 ---
 # <a name="auto-firming-with-planning-optimization"></a>Automatisk bekräftelse med planeringsoptimering
 
@@ -47,7 +47,7 @@ Så här aktiverar du automatisk bekräftelse.
 Bekräftad tidsgräns beräknas framåt från körningsdatumet för huvudplaneringen. Det definieras av antalet dagar som du anger. Du kan kontrollera bekräftad tidsgräns på följande sätt:
 
 - Om du vill definiera standard bekräftad tidsgräns för en disponeringsgrupp går du till **Huvudplanering** \> **Inställningar** \> **Disponering** \> **Disponeringsgrupper** och väljer en disponeringsgrupp. Ange sedan antalet dagar på snabbfliken **övrigt** i fältet **Automatisk bekräftelse av tidsgräns (dagar)**.
-- Om du vill skriva över den bekräftelse av tidsgräns som har definierats för disponeringsgruppen för en viss artikel går du till **produktinformationshantering** \> **frisläppta produkter**, sedan från åtgärdsfönstret väljer du **Plan** och sedan **artikeldisponering**. Sedan på fliken **Allmänt** väljer du **Åsidosätt tidsgränser** och i fältet **Automatisk bekräftelse av tidsgräns (dagar)** anger du antalet dagar.
+- Om du vill skriva över den bekräftelse av tidsgräns som har definierats för disponeringsgruppen för en viss artikel går du till **Produktinformationshantering** \> **Släppta produkter**. I åtgärdsfönstret väljer du sedan **Plan** och därefter **Artikeldisponering**. Sedan på fliken **Allmänt** väljer du **Åsidosätt tidsgränser** och i fältet **Automatisk bekräftelse av tidsgräns (dagar)** anger du antalet dagar.
 - Om du vill skriva över den bekräftelse av tidsgräns som har definierats för disponeringsgruppen och artikeldisponering för en viss huvudplan går du till **Huvudplanering** \> **Inställningar** \> **Huvudplaner** och välj en huvudplan. Sedan på snabbfliken **tidsgräns i dagar** ange **Frys** till **Ja** och ange antalet dagar.
 
 Om automatisk bekräftelse aktiveras för en huvudplaneringskörning där planeringsoptimering används, utförs automatiskt bekräftelseprocess enligt inställningen för automatisk bekräftelse. Om automatisk bekräftelse inte är aktiverad eller om planeringen startas från sidan **nettobehov** hoppas den automatiska bekräftelseprocessen över.

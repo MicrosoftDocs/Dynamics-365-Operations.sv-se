@@ -3,7 +3,7 @@ title: Borttagna eller föråldrade funktioner i Lifecycle Services (LCS)
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Microsoft Dynamics Lifecycle Services (LCS).
 author: AngelMarshall
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 96ecd040ef8661765c0a3861d8e07fee3c241161
-ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
+ms.openlocfilehash: 5c5c525b403715ba8dfd3c1bc2dfac4dd69f4a3d
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027990"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367278"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Borttagna eller föråldrade funktioner i Lifecycle Services (LCS)
 
@@ -53,9 +53,9 @@ Den här listan tillhandahålls så att du kan ta hänsyn till dessa borttagna o
 </tr>
 <tr>
 <td><strong>Status</strong></td>
-<td>Inaktuell: komponenten flödesschema i BPM förväntas tas bort år 2020. Följande funktion kommer att tas bort:
+<td>Inaktuell: komponenten flödesschema i BPM förväntas tas bort år 2020. Följande funktion kommer att bli otillgänglig:
 <ul>
-<li>Befintliga flödesscheman kommer inte att vara tillgängliga för visning eller redigering. De formegenskaper som associeras med flödesschemats aktiviteter kommer inte heller att vara tillgängliga, eftersom hela <strong>flödesschemat</strong> kommer att tas bort. Dessa flödesscheman innehåller både standardflödesscheman som genereras automatiskt och anpassade flödesscheman som ändras baserat på dessa standard flödesscheman.</li>
+<li>Alla flödesscheman blir skrivskyddade och kan inte redigeras. Formegenskaperna som är kopplade till flödesscheman kommer heller inte att vara tillgängliga. Dessa flödesscheman innehåller både standardflödesscheman som genereras automatiskt och anpassade flödesscheman som ändras baserat på dessa standard flödesscheman.</li>
 <li>Den inaktuella funktionen Bristanalys kommer inte att vara tillgänglig. Därför skapas ingen lista över luckor automatiskt eller tillgänglig för export.
 <p><strong>Obs!</strong> Den här funktionen hade tidigare ersatts av Microsoft Azure DevOps-integreringar.</p>
 </li>
