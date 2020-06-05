@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c83cafd3a8934c488bb7a9f315bd5cb154f88c09
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b4587c9d64c2456e5f9f27cdb19625d9537f1e29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204848"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383215"
 ---
 # <a name="create-a-purchase-return-order"></a>Skapa en inköpsreturorder
 
@@ -34,7 +34,7 @@ I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åt
 2. Klicka på **Ny**.
 3. In the **Leverantörskonto**, ange "US-102".
 4. Klicka på **OK**.
-5. I **åtgärdsrutan**, klicka på **köp**.
+5. I **Åtgärdsfönstret** klickar du på **Köp**.
 6. Klicka på **Kreditfaktura**. Detta är sidan som du kan kopiera från en befintlig leverantörsfaktura till din returorder. Detta är samma sida som används för andra kopieringsåtgärder. Men eftersom du har öppnat den från åtgärden Kreditfaktura konfigureras sidan för att stödja skapandet av en returorder som motbokar leverantörsfakturor.  
 7. Expandera avsnittet **Parametrar**.
     - Alternativet **Byt förtecken** väljs automatiskt och kan inte ändras. På så sätt ser du till att tecknet ändras för kvantiteterna och att orderrader som läggs till kommer att motboka leverantörsfakturan.  

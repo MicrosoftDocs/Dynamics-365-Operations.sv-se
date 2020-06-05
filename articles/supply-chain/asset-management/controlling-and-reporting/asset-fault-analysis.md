@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 67ccbb742bb4e2283c30b4dec055d137b4a51e40
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 32cd8fb55cd9245a9a7c426a7c956bb40c3fdb0e
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216423"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383560"
 ---
 # <a name="asset-fault-analysis"></a>Felanalys för tillgång
 
@@ -78,7 +78,7 @@ I bilden nedan läggs **år** och **månad** till för att visa hur du kan visa 
 
 Kombinationen av till gångar och en tillgångstyp används som grund för beräkningarna som visas i på de tre bilderna nedan, vilket ökar detaljnivån.  
 
-I allmänhet innehåller knapparna i grupperna **Gruppera efter datum**, **Gruppera efter tillgång**, **Gruppera efter funktionsplats** samt knappen **Fel** (fel-ID) perioder eller tillgångsrelationer. Knapparna **Symptom**, **Område**, **Typ**, **Orsak** och **Åtgärd** är kategoriseringar som används vid felhantering för att analysera registreringar av tillgångsfel och hitta problemområden.  
+I allmänhet innehåller knapparna i åtgärdsfönstergrupperna **Gruppera efter datum**, **Gruppera efter tillgång**, **Gruppera efter funktionsplats** samt knappen **Fel** (Fel-ID) perioder eller tillgångsrelationer. Knapparna **Symptom**, **Område**, **Typ**, **Orsak** och **Åtgärd** är kategoriseringar som används vid felhantering för att analysera registreringar av tillgångsfel och hitta problemområden.  
 
 **Gruppera efter symptom, tillgång och tillgångstyp**
 

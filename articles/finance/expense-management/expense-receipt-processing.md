@@ -3,7 +3,7 @@ title: Bearbetning av utgiftskvitto
 description: Det här ämnet ger information om optisk teckenläsning (OCR) av kvitton. Den här funktionen är utformad för att förbättra användarupplevelsen när utgiftsrapporter skapas i Microsoft Dynamics 365 Finance.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248973"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378241"
 ---
 # <a name="expense-receipt-processing"></a>Bearbetning av utgiftskvitto
 
@@ -36,24 +36,24 @@ Utgiftsregistrering har förbättrats genom introduktion av OCR (optisk teckenl�
 
 ## <a name="usage-examples"></a>Exempel på användning
 
-- **Koppla automatiskt kvitton som inkluderar kreditkortstransaktioner när en utgiftsrapport skapas.**
+För att automatiskt koppla kvitton som inkluderar kreditkortstransaktioner när en utgiftsrapport skapas, gör följande:
 
-    1. Öppna arbetsytan **utgiftshantering**.
-    2. På fliken **kvitton** kontrollerar du att det inte finns några kopplade kvitton. Du kan även överföra kvitton på fliken **kvitton**.
-    3. På fliken **utgifter** kontrollerar du att det inte finns några kopplade utgifter. Vanligtvis importerar utgiftsadministratören dessa utgifter från kreditkortsutfärdaren.
-    4. Välj **Ny utgiftsrapport**. Observera att du kan inkludera utgifter och kvitton även när du skapar en utgiftsrapport. Om du lägger till både utgifter och kvitton utlöses automatisk matchning av kvitton mot utgifterna.
+  1. Öppna arbetsytan **utgiftshantering**.
+  2. På fliken **kvitton** kontrollerar du att det inte finns några kopplade kvitton. Du kan även överföra kvitton på fliken **kvitton**.
+  3. På fliken **utgifter** kontrollerar du att det inte finns några kopplade utgifter. Vanligtvis importerar utgiftsadministratören dessa utgifter från kreditkortsutfärdaren.
+  4. Välj **Ny utgiftsrapport**. Observera att du kan inkludera utgifter och kvitton även när du skapar en utgiftsrapport. Om du lägger till både utgifter och kvitton utlöses automatisk matchning av kvitton mot utgifterna.
 
-- **Skapa en utgift eller matcha en utgift från ett kvitto.**
+För att skapa en utgift eller matcha en utgift från ett kvitto, gör följande:
 
-    1. På en utgiftsrapport på fliken **kvitton** bifogar du ett kvitto genom att välja **Lägg kvitton**.
-    2. Lägg märke till under den uppladdade bilden av kvittot, observera alternativet **Skapa** och **Matcha**.
+  1. På en utgiftsrapport på fliken **kvitton** bifogar du ett kvitto genom att välja **Lägg kvitton**.
+  2. Lägg märke till under den uppladdade bilden av kvittot, observera alternativet **Skapa** och **Matcha**.
 
-        - Välj **skapa** om du vill skapa en manuellt angiven utgiftstransaktion och fyll i de värden som hämtas från kvittot.
-        - Om du väljer **matcha** kommer systemet att försöka matcha en befintlig utgift mot kvittot.
+      - Välj **skapa** om du vill skapa en manuellt angiven utgiftstransaktion och fyll i de värden som hämtas från kvittot.
+      - Om du väljer **matcha** kommer systemet att försöka matcha en befintlig utgift mot kvittot.
 
 ## <a name="installation"></a>Installation
 
-Den här funktionen fungerar tillsammans med **Utgiftsrapporter på nytt sätt**, så att utgiftsupplevelsen blir enklare att använda.
+Den här funktionen fungerar tillsammans med **Utgiftsrapporter på nytt sätt**, så att utgiftsupplevelsen blir enklare att använda. Den här funktionen är bara tillgänglig för miljöer på Nivå2+, dvs. begränsat läge och tillverkning.
 
 Om du vill använda de avancerade utgiftsfunktionerna installerar du tillägget utgiftshanteringstjänst för Microsoft Dynamics 365 Finance och aktiverar funktionerna i din instans. Du kan komma åt tillägget från ditt projekt i Microsoft Dynamics Lifecycle Services (LCS).
 

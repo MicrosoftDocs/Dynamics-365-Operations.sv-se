@@ -3,7 +3,7 @@ title: Beräkna lagertillgänglighet för butikskanaler
 description: I det här avsnittet beskrivs alternativen som kan användas för att visa lagerbehållningen för butiken och online-kanaler.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113930"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379246"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beräkna lagertillgänglighet för butikskanaler
 
@@ -50,12 +50,7 @@ Båda API:er hämtar data från Commerce Server och tillhandahåller en uppskatt
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Komma igång med beräknad lagertillgänglighet för e-handel
 
-Innan du använder de två API:er som nämnts tidigare, måste du göra en parameterändring i Commerce-administration för att säkerställa att ögonblicksbilden av de lagervärden som beräknas med hjälp av jobbet **produkttillgänglighet** anger data i korrekt tabeller.
-
-Följ dessa steg för att ställa in parametern.
-
-1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**.
-1. På fliken **Lager** i avsnittet **produkttillgänglighetsjobb** välj **Använd optimerad process för produkttillgänglighetsjobb**. Den här inställningen garanterar att den optimala funktionsuppsättningen används för att beräkna kanalens tillgängliga lager via Commerce Server.
+Innan du använder de två API:er som nämnts tidigare måste du aktivera funktionen **Optimerad beräkning för produkttillgänglighet** via arbetsytan **Funktionshantering** i Commerce Headquarters.
 
 Innan API:erna kan beräkna den bästa uppskattningen av lagertillgänglighet för en artikel, måste en periodisk ögonblicksbild av lagertillgänglighet från Commerce-administration bearbetas och skickas till den kanaldatabas som e-handel Commerce Scale Unit använder. Ögonblicksbilden representerar den information som Commerce-administration har om lagertillgänglighet för en specifik kombination av en produkt- eller produktvarianten och ett lagerställe. Den kan omfatta lagerjusteringar eller rörelser som orsakas av lagerinleveranser, försändelser eller andra processer som utförs i Commerce-administration och som e-handelskanalen har information om endast på grund av synkroniseringsprocessen.
 
@@ -85,20 +80,15 @@ När kanalsidans beräkning är korrekt konfigurerad och hanterad kan den ge en 
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Komma igång med beräknad lagertillgänglighet för kassa på kanalsida
 
-Om du vill använda beräkningslogiken på kanalsidan och inaktivera servicesamtal i realtid för lagersökningar från kassaprogrammet, måste du först göra två parameterändringar. Du måste sedan synkronisera ändringarna till kanalen genom distributionsschemaprocessen.
+Om du vill använda beräkningslogiken på kanalsidan och inaktivera serviceanrop i realtid för lagersökningar från kassaprogrammet (POS) måste du först aktivera funktionen **Optimerad beräkning för produkttillgänglighet** via arbetsytan **Funktionshantering** i Commerce Headquarters. Förutom att aktivera funktionen måste du utföra ändringar i **Funktionsprofilen**.
 
-Följ dessa steg för att ställa in den första parametern.
-
-1. Öppna **Retail och Commerce \> Administrationsinställning \> Parametrar \> delade Commerce-parametrar**.
-1. På fliken **Lager** i avsnittet **produkttillgänglighetsjobb** välj **Använd optimerad process för produkttillgänglighetsjobb**. Den här inställningen garanterar att den optimala funktionsuppsättningen används för att beräkna kanalens tillgängliga lager via Commerce Server.
-
-Följ dessa steg för att ställa in den andra parametern.
+Följ dessa steg för att ändra **Funktionsprofilen**:
 
 1. Gå till **Butik och handel \> Kanalinställningar \> Kassainställningar \> Kassaprofiler \> Funktionsprofiler**.
 1. Välj en funktionsprofil.
 1. På snabbfliken **funktioner** i avsnittet **Beräkning av lagertillgänglighet**, ändra värdet för fältet **Läget beräkning av lagertillgänglighet** från **Realtidstjänst** till **Kanal**. Alla funktionsprofiler använder som standard servicesamtal i realtid. Därför måste du ändra värdet i det här fältet om du vill använda beräkningslogik på kanalsidan. Alla butiker som är kopplade till den valda funktionsprofilen påverkas av den här ändringen.
 
-Följ dessa steg för att uppdatera servrarna.
+Du måste sedan synkronisera ändringarna till kanalen genom distributionsschemaprocessen genom att utföra följande steg:
 
 1. Gå till **Butik och handel \> Butik och handel-IT \> Distributionsschema**.
 1. Kör jobbet **1070** (**jakanlkonfiguration**).

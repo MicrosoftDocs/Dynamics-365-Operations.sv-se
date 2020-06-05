@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cdb66620d5d57a42ce6a2dc443a9276a2e3ca0ae
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540ba2266ea74c36babce57670f84159c89018f1
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203996"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383444"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Överför fysiskt lager i lagerstället
 
@@ -52,7 +52,7 @@ I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverförin
 12. Klicka på **Spara**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Bokföra lageröverföringsjournalen
-1. Klicka på **Bokför** i **åtgärdsfönstret**.
+1. Klicka på **Inlägg** i **åtgärdsfönstret**.
 2. Klicka på **OK**.
 
 ## <a name="view-inventory-transactions"></a>Visa lagertransaktioner

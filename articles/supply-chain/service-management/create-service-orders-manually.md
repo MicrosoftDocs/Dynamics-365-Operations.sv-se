@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d80461694a28a0842155cbd8ca224c37bd85dde7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 45261931d8083e179f0d3a8285b12fdaa2494adc
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202708"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383376"
 ---
 # <a name="create-service-orders-manually"></a>Skapa en serviceorder manuellt    
 
@@ -58,7 +58,7 @@ Du kan skapa serviceorder manuellt med hjälp av ett serviceavtal eller med form
 
 1.  Klicka på **Projekthantering och redovisning** \> **Vanligt** \> **Projekt** \> **Alla projekt**.
 
-2.  I formuläret **projekt** i **åtgärdsfönstret**, klcika på fliken **hantera** \> klicka på **Service** \> **Serviceorder**.
+2.  I formuläret **Projekt** i **åtgärdsfönstret** klickar du på fliken **Hantera** \> och **Service** \> **Serviceorder**.
 
 3.  Följ tidigare procedur för att skapa en serviceorder manuellt i formuläret **Serviceorder**. Fältet **Projekt-ID**, visar projektreferensen.
 

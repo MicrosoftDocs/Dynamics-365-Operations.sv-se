@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9d307ceae85773feb58d11e575df27e74b065cd3
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a9b5bafb70883d9daf35a7d5a9107d7aee23469
+ms.sourcegitcommit: 98ef9178b28cd548f08f8c32255636e6e09b25f2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773451"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3395988"
 ---
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
@@ -265,13 +265,13 @@ Momsrapporten för varje land måste uppfylla kraven i landets lagstiftning. Det
 | Belgien        |                                                                                 |
 | Tjeckien |  [Momsutdrag för Tjeckien](emea-cze-vat-statement-details.md)   |
 | Estland        |  [Detaljerad momsinformation för Estland](emea-est-vat-statement-details.md) |
-| Finland        |                                                                                 |
-| Tyskland        |                                                                                 |
+| Finland        | [Momsrapport för Finland](emea-fin-sales-tax-payment-report-finland.md)          |
+| Tyskland        | [Momsdeklaration för Tyskland](emea-de-vat-declaration.md)                       |
 | Italien          | [Detaljerad momsinformation för Italien](emea-ita-vat-statements-details.md)            |
 | Lettland         | [Detaljerad momsinformation för Lettland](emea-lva-vat-statement-details.md)           |
 | Litauen      | [Detaljerad momsinformation för Litauen](emea-ltu-vat-statement-details.md)         |
-| Nederländerna    |                                                                                 |
-| Sverige         |                                                                                 |
+| Nederländerna    | [Momsdeklaration för Nederländerna](emea-nl-vat-declaration.md)           |
+| Sverige         | [Momsrapport för Sverige](emea-swe-sales-tax-payment-report-sweden.md)          |
 
 
 

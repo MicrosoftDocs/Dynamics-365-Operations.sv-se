@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26112a9d25c0097bdbf30003247ce6dd4b4fb634
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7ed359521dd018047fdbd5312d0cb73d764de925
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204894"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383238"
 ---
 # <a name="create-a-purchase-order"></a>Skapa en inköpsorder
 
@@ -68,7 +68,7 @@ Det här avsnittet visar hur du skapar en inköpsorder manuellt. Den är vanliga
 ## <a name="review-order-totals"></a>Granska ordersummor
 1. Välj **Summor**.
 
-    - Om du inte ser åtgärden **Summor** välj fliken **Inköpsorder** i åtgärdsfältet.  
+    - Om du inte ser åtgärden **Summor** väljer du fliken **Inköpsorder** i åtgärdsfönstret.  
     - Denna dialogruta visar summan för helhetsordern.  
     - Fältet **Val** låter dig ändra grunden för hur summorna beräknas. Du kanske till exempel kan välja **Produktinleveranskvantitet** för att visa summor som är relaterade till beloppet för produkter, som har inlevererats, eller **Beställd kvantitet** om du vill visa beloppet av produkten, som har beställts.  
 

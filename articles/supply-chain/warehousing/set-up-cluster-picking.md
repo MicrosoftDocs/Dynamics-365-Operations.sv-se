@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daf8bc65dc937962e2e08b6f25805ddd3b8ee3c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204296"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367417"
 ---
-[!include[banner](../includes/banner.md)]
-
 # <a name="set-up-cluster-picking"></a>Ställa in klusterplockning
+
+[!include[banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du möjliggör för en arbetare att använda sin mobila enhet för att gruppera plockningarbete till kluster, så att de kan plocka artiklar från en enda plats för flera arbetsordrar samtidigt. Detta kallas *klusterplockning*.
 
@@ -36,35 +36,35 @@ När arbetsorder har frisläppts till lagerstället kan arbetare använda en mob
 
 Om det behövs kan en anställd skicka ett kluster till en annan arbetare. Detta ändrar klusterstatus till Klarat. När arbetstagaren använder en mobil enhet för att ange att plockningen och det inlagrade arbetet är slutfört måste leveransen eller lasten bekräftas i klienten.
 
-## <a name="set-up-cluster-picking"></a>Ställa in klusterplockning
+## <a name="enable-cluster-picking"></a>Aktivera klusterplockning
 
 Om du vill aktivera klusterplockning måste du ställa in följande:
 
--   **Klusterprofiler** – Ange om kluster-ID:n ska genereras automatiskt, antalet positioner som ska användas, när kluster ska brytas och plockarbetet ska ordnas och verifieras.
+- **Klusterprofiler** – Ange om kluster-ID:n ska genereras automatiskt, antalet positioner som ska användas, när kluster ska brytas och plockarbetet ska ordnas och verifieras.
 
--   **Arbetsmallar** – Ange hur man skapar plockningsarbetet för klusterplockning.
+- **Arbetsmallar** – Ange hur plockningsarbetet för klusterplockning ska skapas.
 
--   **Platsdirektiv** – Ange var artiklar ska plockas från och var du vill placera dem.
+- **Platsdirektiv** – Ange var artiklar ska plockas ifrån och var du vill placera dem.
 
--   **Menyalternativ på mobil enhet** – Konfigurera ett menyalternativ för mobila enheter för att använda befintligt arbete som dirigeras av klusterplockning. Du måste sedan lägga till menykommandot på en meny för mobil enhet så att det visas på mobila enheter.
+- **Menyalternativ på mobil enhet** – Konfigurera ett menyalternativ för mobila enheter för att använda befintligt arbete som dirigeras av klusterplockning. Du måste sedan lägga till menykommandot på en meny för mobil enhet så att det visas på mobila enheter.
 
--   **Parametrar för lagerstyrning** – Ange nummerserien som ska användas, om du vill generera identifierare för kluster.
+- **Parametrar för lagerstyrning** – Ange nummerserien som ska användas, om du vill generera identifierare för kluster.
 
 ## <a name="set-up-a-cluster-profile"></a>Ställa in en klusterprofil
 
 Så här ställer du in en klusterprofil:
 
-1.  Klicka på **lagerstyrning**\>**inställningar**\>**mobiltelefon**\>**klusterprofiler**.
+1. Klicka på **Lagerstyrning** \> **Inställningar** \> **Mobil enhet** \>  **Klusterprofiler**.
 
-2.  Klicka på **Ny** om du vill skapa en ny profil.
+1. Klicka på **Ny** om du vill skapa en ny profil.
 
-3.  Klicka på **Skapa kluster** och under **Klustersortering**, klickar du på **Ny** för att ställa in sorteringskriterier för klustret. Sorteringskriteriet kontrollerar den följd i vilken arbetaren ska utföra plockningsarbetet. Du kan lägga till så många villkor du vill.
+1. Klicka på **Skapa kluster** och under **Klustersortering**, klickar du på **Ny** för att ställa in sorteringskriterier för klustret. Sorteringskriteriet kontrollerar den följd i vilken arbetaren ska utföra plockningsarbetet. Du kan lägga till så många villkor du vill.
 
-4.  I fältet **Sekvensnummer** anger du ett nummer som definierar i vilken ordning som sorteringskriteriet ska bearbeta.
+1. I fältet **Sekvensnummer** anger du ett värde som definierar i vilken ordning sorteringskriterierna ska bearbetas.
 
-5.  Markera fältet som fastställer sorteringen i fältet **Fältnamn**. Om du till exempel väljer fältet **WMSLocationId** kommer arbetet att sorteras efter plats.
+1. Markera fältet som fastställer sorteringen i fältet **Fältnamn**. Om du till exempel väljer fältet **WMSLocationId** kommer arbetet att sorteras efter plats.
 
-6.  Välj ett av följande alternativ i fältet **Sortering**.
+1. Välj ett av följande alternativ i fältet **Sortering**.
 
 | **Alternativ**     | **Beskrivning**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,6 +77,6 @@ När klusterplockning används, är objektbekräftelse avgörande för att kontr
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Ställa in objektverifiering med klusterplockning
 
-1.  I den mobila enhetens menyalternativ öppnar du inställningsformuläret för arbetsbekräftelse: **Lagerstyrning** \> **Lagerstyrning** \> **Inställningar** \> **Mobil enhet** \> **Mobila enhetens menyalternativ**.
+1. I den mobila enhetens menyalternativ öppnar du inställningsformuläret för arbetsbekräftelse: **Hantering av lagerställe** \> **Hantering av lagerställe** \> **Inställningar** \>  **Mobil enhet** \> **Menyobjekt för mobil enhet**.
 
-2.  Från mobila enhetens menyalternativ öppnar du **Inställning av arbetsbekräftelse**. Alternativet **Produktbekräftelse** låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat.
+1. Från mobila enhetens menyalternativ öppnar du **Inställning av arbetsbekräftelse**. Alternativet **Produktbekräftelse** låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat.

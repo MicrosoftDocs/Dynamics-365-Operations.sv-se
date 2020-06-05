@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ccaeea8d0494644b4d55c29a778d9a8239de10b9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207794"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383284"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkänn leverantörer för specifika produkter
 
@@ -42,7 +42,7 @@ I den här proceduren visas hur du godkänner leverantörer för specifika produ
 11. Ange eller välj ett värde i fältet **Leverantör**.
 12. I fältet **Utgång** anger du ett datum. Välj ett datum som är annorlunda än det föregående utgångsdatumet.  
 13. Stäng sidan.
-14. Klicka på **Godkänd leverantör** i åtgärdsfönstret.
+14. Klicka på **Godkända leverantörer** i åtgärdsfönstret.
 15. I fältet **Utgång** anger du ett datum. Detta datum fungerar som ett filter så att du kan se vilka som är godkända leverantörer, fram till ett visst datum.  
 16. Stäng sidan.
 17. Klicka på **Giltighetstid** i åtgärdsfönstret.

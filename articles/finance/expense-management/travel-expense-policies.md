@@ -1,9 +1,9 @@
 ---
 title: Definiera utgiftspolicyer
 description: Du kan definiera utgiftspolicyer som dina medarbetare måste följa i samband med att de anger och skickar in utgiftsrapporter och reserekvisitioner i Microsoft Dynamics 365 Finance.
-author: ryansandness
+author: suvaidya
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d3b4a8f6cf74bb1fe7e53a4dfdd607f604e16e3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22504e0e26c025d117f29dee3b59b41d508e7724
+ms.sourcegitcommit: 4f90b9ddedf312e75a714e0ec7f7ee5fd43cac6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187462"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3389725"
 ---
 # <a name="define-expense-policies"></a>Definiera utgiftspolicyer
 
@@ -45,9 +45,10 @@ Du kan definiera tre olika typer av policy:
  - Motivering – Kräver att medarbetaren eller en chef anger en motivering för att policybeloppet har överskridits innan utgiftsrapporten eller reserekvisitionen lämnas in.        
 
 ## <a name="policy-tips"></a>Policytips
-Här är några förslag som kan hjälpa dig när du skapar nya policyer för kostnadshantering. 
+Här följer några förslag som kan hjälpa dig när du skapar nya policyer för utgiftshantering. 
 * Principer är giltighetsdatum och börjar inte gälla om policyn skapas med ett datum efter det datum då kostnaden inträffade. Om du till exempel skapar en ny policy idag för att upprätthålla en maximal måltidskostnaden av 50 USD, kontrolleras inte alla befintliga utgifter som anges i igår mot den här policy.
 * När du skapar en policy för en utgiftskategori som kan specificeras, bör du lägga till ett villkor för utgiftsradtypen. Vissa policyer t.ex. krav på inleverans, kanske inte stämmer överens med specificerade rader och ska bara användas på rubrikraden eller en rad som inte har specificerats. 
+* Utgiftshanteringspolicyer utvärderas mot källentiteten som standard. I koncerninterna scenarier kan du istället ställa in policyn så att den utvärderas mot målentiteten (lånande entitet). Om du vill köra policyerna mot målentiteten aktiverar du funktionen "Utvärdera utgiftspolicy mot lånande juridisk person" i arbetsytan **Funktionshantering**.
 
 ## <a name="when-to-evaluate-policies"></a>När policyer ska utvärderas
 
