@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för 10.0.12 (augusti 2020)
+                  href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platform updates för 10.0.11 (juli 2020)
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platform updates för 10.0.10 (maj 2020)
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integrerad arbetare, jobb och befattning'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Lagertillgänglighet
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: Stöd för dubbelriktad skrivning
                           items:
                             - name: Stöd för Field Service- och Project Service Automation-lösningar
@@ -452,9 +456,9 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Tillämpa uppdateringar i molnmiljöer
                   href: deployment/apply-deployable-package-system.md
-                - name: Installera uppdateringar och tillägg för molnstyrda kanalkomponenter i Retail
+                - name: Tillämpa uppdateringar och tillägg för Commerce Scale Unit (moln)
                   href: deployment/Update-retail-channel.md
-                - name: Initiera Retail Cloud Scale Unit
+                - name: Initiera Commerce Scale Unit (moln)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Datahemvist för Retail
                   href: deployment/retail-data-residency.md
@@ -488,6 +492,8 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Internetanslutning för klient
                       href: user-interface/client-disconnected.md
+                    - name: Konfigurera endast batchvisa och interaktiva AOS-noder i lokala distributioner
+                      href: deployment/onprem-batchonly.md
                     - name: Konfigurera proxyservrar för lokala miljöer
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokal diagnostik
@@ -646,11 +652,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-klasser i scenarier med begäran eller svar
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Skriva affärslogik med källkod av typen C# och X++'
+                - name: Skriva affärslogik med källkod av typen C# och X++
                   href: dev-tools/write-business-logic.md
                 - name: Ändringar i X++ och kompileraren för X++
                   href: dev-tools/programming-language-support.md
-                - name: 'LINQ-provider för C#'
+                - name: LINQ-provider för C#
                   href: dev-tools/linq-provider-c.md
                 - name: Skriva regelverksregler
                   href: dev-tools/author-best-practice-rules.md
@@ -710,7 +716,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: Attributklasser för X++
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'Jämförelse mellan X++ och C#'
+                    - name: Jämförelse mellan X++ och C#
                       href: dev-ref/xpp-cs-comparison.md
                     - name: Syntax för X++
                       href: dev-ref/xpp-syntax.md
@@ -1048,6 +1054,8 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Användarhandbok för Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
+            - name: Projektregistrering
+              href: lifecycle-services/project-onboarding.md
             - name: Prenumerationsberäkning
               href: lifecycle-services/subscription-estimator.md
             - name: Konfigurera säkerhet
@@ -1118,6 +1126,20 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Filer för översättningsminne
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Microsoft Power Platform-integration
+          items:
+            - name: Microsoft Power Platform-integration med Finance and Operations
+              href: power-platform/overview.md
+            - name: Enhetsmodellering
+              href: power-platform/entity-modeling.md
+            - name: Livscykelhantering för program
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations- och Common Data Service-administratörsreferens
+              href: power-platform/admin-reference.md
+            - name: Power Apps-portaler med Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Vanliga frågor om virtuella Finance and Operations-enheter
+              href: power-platform/faq.md
         - name: Mobilplattform
           items:
             - name: Mobila plattformsresurser
@@ -1330,9 +1352,7 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Installation och konfiguration
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Kör testfall
+            - name: Använda Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
             - name: Validera förväntade värden
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1360,12 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Härledda testfall
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Göra självstudier med Regression Suite Automation Tool
+            - name: Regression Suite Automation Tool-självstudier och andra funktioner
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Regelverk
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Dataagnostiska tester med hjälp av Regression Suite Automation Tool
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Felsökning
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Släpp lösningar med hjälp av Lifecycle Services
@@ -1442,6 +1464,8 @@
                   href: sysadmin/copy-batch-job.md
                 - name: Aktiva batchperioder
                   href: sysadmin/activeperiod.md
+                - name: Sommartidsstöd för aktiva batchperioder
+                  href: sysadmin/batch-active-period-dst.md
                 - name: Säkerhetsroll för batchhanterare
                   href: sysadmin/runby.md
                 - name: Batchjobbet ska hantera defragmentering av SQL-index
