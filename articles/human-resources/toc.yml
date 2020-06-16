@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 28 maj 2020
+          href: hr-whats-new-2020-05-28.md
         - name: 14 maj 2020
           href: hr-whats-new-2020-05-14.md
         - name: 1 maj 2020
@@ -509,16 +511,22 @@
               href: hr-leave-and-absence-accrue.md
             - name: Skjut upp tjänstledighet
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Tjänstledighetsansökan
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Hantera tjänstledighet för medarbetare
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Visa analys för tjänstledighet och frånvaro
               href: hr-leave-and-absence-analytics.md
             - name: Hantera begäranden om ledighet och frånvaro
               href: hr-employee-self-service-manage-requests.md
-            - name: Begära ledig tid
+            - name: Begär ledig tid
               href: hr-employee-self-service-request-time-off.md
             - name: Visa team- och företagskalendrar
               href: hr-employee-self-service-calendar.md
+            - name: Hantera principer för köpa och sälja tjänstledighet
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Köpa och sälja tjänstledighet
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Hantera begäranden om ledighet i Teams
           href: hr-teams-leave-app.md
         - name: Utveckla medarbetare
