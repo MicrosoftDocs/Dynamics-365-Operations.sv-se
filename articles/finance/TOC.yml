@@ -3344,7 +3344,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: Importera konfigurationer (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory service (RCS)
+                - name: Regulatory services (RCS)
                   items:
                     - name: Regulatory Configuration Services (RCS) – globaliseringsfunktioner
                       href: localizations/rcs-globalization-feature.md
