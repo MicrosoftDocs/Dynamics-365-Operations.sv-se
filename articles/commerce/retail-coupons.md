@@ -3,7 +3,7 @@ title: Ställa in kuponger för butiksförsäljning
 description: Det här avsnittet innehåller en översikt över kuponger och hur du ställer in dem.
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057381"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431988"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Ställa in kuponger för butiksförsäljning
 
@@ -48,8 +48,10 @@ Du kan konfigurera kuponger som kuponger med begränsad användning. Användning
 
 Gränsen tillämpas per kupongkod på en kupong. Exempelvis kan en kupong med två kupongkoder användas två gånger: en gång för varje kupongkod. Varje kod i en kupong aktiveras oberoende av varandra.
 
+Kuponger kan användas i alla försäljningskanaler för kundtjänstorder, kan de begränsade användningskupongerna bara användas för de kundtjänstorder där inställningen **Slutförande av order** för kundtjänst är aktiverad. Om detta inte är aktiverat kan endast icke-begränsade användningskuponger användas i kundtjänstorder.
+
 > [!NOTE]
-> När en kupongkod har nått sin användningsgräns ändrar systemet *inte* automatiskt status för kupongkoden till ”använd”. Systemet tillåter emellertid inte ytterligare användning av kupongkod som har nått sin användningsgräns. Om status för en kupongkod anges manuellt till något förutom ”aktiv” kan inte denna kupongkod användas i någon kanal.
+> När en kupongkod har nått sin användningsgräns ändrar systemet *inte* automatiskt status för kupongkoden till ”använd”. Kupongkoden har dock nått sin användningsgräns och kan inte användas. Om status för en kupongkod anges manuellt till något förutom **aktiv** kan inte denna kupongkod användas i någon kanal.  
 
 ## <a name="managing-coupons"></a>Hantera kuponger
 

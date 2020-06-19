@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388126"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431140"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
@@ -45,6 +45,7 @@ Information om hur du hanterar appbehörigheter i Teams finns i [Hantera policye
 
 | Utfärda | Status |
 | --- | --- |
+| Fel: det finns ett problem med att hitta en miljö att ansluta till. | Det här felet kan visas även om du har kontrollerat att användaren har åtkomst till en eller flera personalmiljöer. Dessutom kanske du inte ser alla miljöer som du förväntar dig. Innan vi åtgärdar det här problemet ska du ta bort användaren och sedan importera dem igen för att lösa problemet. |
 | Saldot är felaktigt när ledighet skickas in för ett framtida datum. | Prognosticering är ännu ej tillgänglig. Saldot visas för det aktuella datumet. |
 | När du minskar antalet timmar som har ägnats i en befintlig begäran går **Återstående saldo** ner istället för upp. | Vi kommer att lösa detta välkända problem i framtiden. Visningen är felaktig, men de korrekta beloppen justeras vid överföringen. |
 | Två **Kommande ledighet**-kort visas för samma datum. | Korten representerar enskilda inlämningar. Vi kommer även fortsatt att ta emot feedback och göra justeringar. |

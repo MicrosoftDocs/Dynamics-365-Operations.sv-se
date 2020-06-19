@@ -3,7 +3,7 @@ title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f6365d42de5d19d960641f188cb6052ef07d721f
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
+ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268757"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3433932"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -36,7 +36,39 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > [!NOTE]
 > Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.12 för Finance and Operations-appar
+
+### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Formulärtillägg för rutnät- eller gruppkontroll som innehåller ogiltiga fältreferenser
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Datagruppegenskapen för rutnäts- eller gruppkontroller används för att automatiskt visa alla fält i en fältgrupp. En rutnäts- eller gruppkontroll som läggs till av tillägget kan innehålla fält som inte längre definieras i fältgruppen, eller saknas fält som är definierade i fältgruppen. Detta kan orsaka inkonsekvent beteende vid körning. Plattformsuppdateringar för version 10.0.12 av Finance and Operations-appar kategoriserar nu det här problemet som ett kompilator *varning*. Du åtgärdar det här problemet genom att öppna formulärtillägget och spara det.
+| **Ersatt av en annan funktion?**   | Den här kompilatorvarningen kommer att ersättas med ett kompileringsfel i en framtida uppdatering. |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | En kompilatorvarning införs i plattformsuppdateringar för version 10.0.12 för Finance and Operations-appar. |
+
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.11 för Finance and Operations-appar
+
+### <a name="explicit-whitelisting-for-self-service-environments"></a>Explicita vitlistor för självbetjäningsmiljöer
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Processen för IP-vitlista har ändrats. Självbetjäning stöder inte längre IP-vitlista. |
+| **Ersatt av en annan funktion?**   | Mer information finns i [Konfigurera Azure Active Directory villkorlig åtkomst](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Produktområden som påverkas**         | Säkerhet |
+| **Distribueringsalternativ**              | Moln |
+| **Status**                         | **Inaktuell:** Den här funktionen är helt utfasad för självbetjäningsdistributioner. |
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | För att stödja de senaste versionerna av Visual Studio måste vissa ändringar göras i tilläggen X++ Visual Studio. Dessa ändringar är inkompatibla med Visual Studio 2015. |
+| **Ersatt av en annan funktion?**   | Visual Studio 2017 ersätter Visual Studio 2015 som den distribuerade och begärda versionen. |
+| **Produktområden som påverkas**         | Visual Studio utvecklingsverktyg. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | När du har fått till gång till nya virtuella datorer (VM) med Visual Studio 2017 meddelas, måste befintliga virtuella datorer med bara Visual Studio 2015 omdistribueras efter utgivningsvåg 1 av 2021. |
 
 ### <a name="field-groups-containing-invalid-field-references"></a>Fältgrupper innehåller ogiltiga fältreferenser
 
