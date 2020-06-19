@@ -3,7 +3,7 @@ title: ER Använd ekonomiska dimensioner som en datakälla (Del 3 - Designa rapp
 description: I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbbc81eaf8c13e8d13e30a0276e38453e07ead9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: cef61787e50561eaac4fd52741ab5f90d9c4171d
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142534"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406507"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Använd ekonomiska dimensioner som en datakälla (Del 3 - Designa rapporten)
 
@@ -95,6 +95,7 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 59. Klicka på Add Attribute.
 60. Ange "Desc" i namnfältet.
 61. Klicka på OK.
+![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Mappa rapportelement till datakällor
 1. Klicka på fliken Mappning.
@@ -143,4 +144,5 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 44. Klicka på Bind.
 45. Klicka på Spara.
 46. Stäng sidan.
+![ER-åtgärdsdesignersida](../media/er-financial-dimensions-guides-format2.png)
 

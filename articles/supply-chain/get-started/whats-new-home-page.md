@@ -3,7 +3,7 @@ title: Nyheter och ändringar i Dynamics 365 Supply Chain Management
 description: Det här ämnet pekar på avsnitt som beskriver de nya och ändrade funktionerna i varje utgåva av Dynamics 365 Supply Chain Management.
 author: kamaybac
 manager: tfehr
-ms.date: 03/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 276924e67e0507847cfb4ca9cf0b077c36c084b5
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: ad8f01a27fde8525c09807a28ed980c335eb8d25
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261244"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417425"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 
 
@@ -36,7 +36,6 @@ Information om vad som är nytt eller ändrat i varje utgåva av Dynamics 365 Su
 |---|---|---|---|
 | 10.0.11 | 10.0.464 | 2020 juni | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.11](whats-new-scm-10-0-11.md) |
 | 10.0.10 | 10.0.420 | 2020 maj | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.10](whats-new-scm-10-0-10.md) |
-| 10.0.9 | 10.0.383 | 2020 april | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.9](whats-new-scm-10-0-9.md) |
 
 ## <a name="releases-before-march-2020"></a>Versioner före mars 2020
 
@@ -44,6 +43,7 @@ Information om vad som är nytt eller ändrat i utgåvor före november 2019 fin
 
 | Frisläpp | Version | Byggnummer | Tillgänglighet | Läs mer |
 |---|---|---|---|---|
+| Dynamics 365 Supply Chain Management | 10.0.9  | 10.0.383   | 2020 april | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.9](whats-new-scm-10-0-9.md) |
 | Dynamics 365 Supply Chain Management | 10.0.8  | 10.0.319   | 2020 februari | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.8](whats-new-scm-10-0-8.md) |
 | Dynamics 365 Supply Chain Management | 10.0.7  | 10.0.283   | 2020 januari | [Nyheter och ändringar i Dynamics 365 Supply Chain Management version 10.0.7](whats-new-scm-10-0-7.md) |
 | Dynamics 365 Supply Chain Management | 10.0.6 |   10.0.234   | November 2019  | [Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.6](whats-new-scm-10-0-6.md) |

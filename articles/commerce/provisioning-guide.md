@@ -3,7 +3,7 @@ title: Etablera en Dynamics 365 Commerce förhandsversionsmiljö
 description: Det här avsnittet förklarar hur du etablerar en förhandsversionsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254758"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426475"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Etablera en Dynamics 365 Commerce förhandsversionsmiljö
 
@@ -39,7 +39,7 @@ Innan du börjar rekommenderar vi att du tar en snabbgenomgång genom det här a
 
 ## <a name="overview"></a>Översikt
 
-För att kunna etablera din förhandsversionsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och skalningsenhet för handel (CSU) har även del specifika parametrar som du måste använda för att kunna etablera e-handel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
+För att kunna etablera din förhandsversionsmiljö för Commerce måste du skapa ett projekt som har ett specifikt produktnamn och en viss typ. Miljön och Commerce Scale Unit (CSU) har även del specifika parametrar som du måste använda för att kunna etablera e-handel senare. Instruktionerna i det här avsnittet beskriver alla nödvändiga steg för att slutföra etablering och de parametrar som du måste använda.
 
 När du har tillhandahållit din förhandsversionsmiljö för Commerce måste du slutföra några steg efter etablering för att förbereda den. Vissa steg är valfria, beroende på vilka delar av systemet du vill utvärdera. Du kan alltid slutföra de valfria stegen senare.
 
@@ -193,7 +193,7 @@ Följ dessa steg för att distribuera miljön.
 
 1. Innan du fortsätter bör du kontrollera att miljöstatus är **distribuerad**.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Initiera skalningsenhet för handel (CSU)
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initiera Commerce Scale Unit (moln)
 
 Gör så här om du vill initiera en CSU.
 
@@ -215,7 +215,7 @@ Gör så här om du vill initiera e-handel.
 
 1. Granska medgivande för förhandsversion på fliken **e-handel** och välj sedan **inställningar**.
 1. I fältet **E-handelsinnehavarens namn**, ange ett namn. Tänk dock på att det här namnet kommer att visas i några av webbadresserna som pekar på din e-handelsinstans.
-1. I fältet **Namn på skalningsenhet för handel** välj din CSU i listan. (Listan bör bara ha ett alternativ.)
+1. I fältet **Namn på Commerce Scale Unit** välj din CSU i listan. (Listan bör bara ha ett alternativ.)
 
     Fältet **e-handelsgeografi** ställs in automatiskt och värdet kan inte ändras.
 
@@ -251,7 +251,7 @@ För att fortsätta processen med att tillhandahålla och konfigurera din förha
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (moln)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 

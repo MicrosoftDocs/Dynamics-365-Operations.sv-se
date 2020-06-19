@@ -3,7 +3,7 @@ title: Aktivera produktrekommendationer
 description: I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras på artificiell intelligens (AI-ML) tillgängligt för Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d38d7b0e98d84e23d7a51c5d8ee65df4a3b9e4a7
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 694e5a451b8e25f3729364dfaed0adc7d242f2fe
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259804"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404219"
 ---
 # <a name="enable-product-recommendations"></a>Aktivera produktrekommendationer
 
@@ -34,11 +34,11 @@ I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras p�
 
 ## <a name="recommendations-pre-check"></a>Förkontroll av rekommendationer
 
-Innan du aktiverar produkten bör du notera att produktrekommendationer endast stöds för handelskunder som har migrerat deras lagring till att använda Azure Data Lake Storage (ADLS). 
+Innan du aktiverar produkten bör du notera att produktrekommendationer endast stöds för handelskunder som har migrerat deras lagring till att använda Azure Data Lake Storage. 
 
 Följande konfigurationer måste aktiveras på baksidan innan rekommendationer aktiveras:
 
-1. Kontrollera att ADLS har köpts och kontrollerats i miljön. För mer information, se [Kontrollera att ADLS har köpts och kontrollerats i miljön](enable-ADLS-environment.md).
+1. Kontrollera att Azure Data Lake Storage har köpts och kontrollerats i miljön. För mer information, se [Kontrollera att Azure Data Lake Storage har köpts och kontrollerats i miljön](enable-ADLS-environment.md).
 2. Kontrollera att uppdatering av enhetslagring är automatiserat. Mer information finns i [kontrollera att uppdatering av enhetsarkivet har automatiserats](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Bekräfta att Azure AD identitetskonfigurationen innehåller en post för rekommendationer. Mer information om hur du utför den här åtgärden finns nedan.
 
@@ -92,7 +92,7 @@ Mer information om anpassade rekommendationer finns i [aktivera anpassade rekomm
 
 [Översikt av produktrekommendationer](product-recommendations.md)
 
-[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
+[Aktivera Azure Data Lake Storage i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
 
 [Aktivera anpassade rekommendationer](personalized-recommendations.md)
 

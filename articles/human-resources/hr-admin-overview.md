@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b2d65be5163e5dcb7971f04ebcad2fce55a06dad
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9da6fc7338942e97a1a7417dbd4dfca55fa95272
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010553"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410068"
 ---
 # <a name="overview"></a>Översikt
 
@@ -35,15 +35,15 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
   - [Etablera Personal](hr-admin-setup-provision.md)
   - [Kopiera en instans](hr-admin-setup-copy-instance.md)
   - [Ta bort en instans](hr-admin-setup-remove-instance.md)
-  - [Uppdateringsprocess](hr-admin-setup-update-process.md)
+  - [Uppdatera process](hr-admin-setup-update-process.md)
 
-- Ställ in dataintegrering
+- Ställa in dataintegrering
   - [Välj en dataintegreringsteknik](hr-admin-integration-choose-technology.md)
   - [Konfigurera Common Data Service-integrering](hr-admin-integration-common-data-service.md)
   - [Konfigurera integration med Finance](hr-admin-integration-finance.md)
   - [Konfigurera integration med Dayforce](hr-admin-integration-dayforce.md)
   - [Skapa en app för återkommande dataexport](hr-admin-integration-recurring-data-export.md)
-  - Integrera med Office
+  - Integration med Office
     - [Office-integrering – självstudier](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Uppdatera enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
     - [Skapa Öppna i Excel-upplevelse](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
@@ -75,21 +75,20 @@ Den här administratörsguiden hjälper dig att konfigurera, hantera och felsök
 - Dokumentationsresurser
   - [Hjälpsystem](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
   - [Ansluta hjälpsystemet](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [Ansluta en anpassad hjälpwebbplats](../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json        )
   - [Visa och exportera fältbeskrivningar](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
   - [Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
   - [Skapa dokumentation eller utbildning med Uppgiftsinspelare](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- Felsök Personal
+- Felsöka Human Resources
   - [Få support](hr-admin-troubleshooting-support.md)
   - [Optimera prestanda med automatiska rensningsuppgifter](hr-admin-troubleshooting-batch-history.md)
   - [Analysrapporter uppdateras inte](hr-admin-troubleshooting-analytic-reports.md)
   - [Det går inte att skapa en miljö i administrationscentret för Power Apps](hr-admin-troubleshooting-power-apps.md)
   - [Klienten kopplas från](hr-admin-troubleshooting-disconnect.md)
   - [Undvika trunkerad text i positionshierarki](hr-admin-troubleshooting-truncate.md)
-  - [Kör kompensationsprocessen](hr-admin-troubleshooting-compensation.md)
-  - [Spara en uppgiftsguide på LCS](hr-admin-troubleshooting-task-guide.md)
-  - [Åtkomst till privata adresser per säkerhetsroll](hr-admin-troubleshooting-private-addresses.md)
+  - [Köra kompensationsprocessen](hr-admin-troubleshooting-compensation.md)
+  - [Spara en uppgiftsguide i LCS](hr-admin-troubleshooting-task-guide.md)
+  - [Få åtkomst till privata adresser efter säkerhetsroll](hr-admin-troubleshooting-private-addresses.md)
   - [Personalresurser visas inte i Dynamics 365-appar](hr-admin-troubleshooting-not-in-apps.md)
   - [Rapporteringsalternativ](hr-admin-troubleshooting-reporting.md)
   - [Integrering av frågor och svar](hr-admin-troubleshooting-integration.md)

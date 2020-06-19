@@ -3,7 +3,7 @@ title: Modul för sidfot
 description: Det här avsnittet innehåller moduler för sidfot och hur du redigerar dem i Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 51f8d26d6223dcd1f6961058cd9d772a67c69670
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269646"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411232"
 ---
 # <a name="footer-module"></a>Modul för sidfot  
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,6 +34,10 @@ Det här avsnittet handlar om moduler för sidfot och beskriver hur du skapar de
 
 Modulen för sidfot är en särskild behållare som används som värd för modulerna som visas i sidfoten. Den kan till exempel innehålla länkar till olika sidor på webbplatsen, t.ex. sidorna **Kontakta oss** och **Butikspolicyer**.
 
+Följande bild visar ett exempel på en sidfotsmodul på en webbplatssida.
+
+![Exempel på en sidfotsmodul](./media/ecommerce-footer.PNG)
+
 ## <a name="footer-module-properties"></a>Egenskaper för moduler för sidfot 
 
 Precis som i de flesta behållare har en modul för sidfot stöd för egenskaper för rubriker och bredd. Den stöder också att du lägger till flera kategorimoduler för sidfötter. Varje kategorimodul för sidfot som läggs till återges som en kolumn i modulen sidfot.
@@ -43,27 +46,27 @@ Precis som i de flesta behållare har en modul för sidfot stöd för egenskaper
 
 **Sidfotsobjekt** – en modul för sidfotsobjekt kan innehålla en rubrik, en bild och en länk. Rubriken kan antingen användas separat eller tillsammans med en bild och en länk. Varje länk i sidfoten kan konfigureras så att den bara har text (t.ex. "kontakta oss" och "sekretess") eller så att den har både text och bild (t.ex. sociala medielänkar).
 
-**Tillbaka till början** – modulen Tillbaka till början innehåller en länk för snabb navigering till sidans övre del. En destination måste anges. Standarddestinationen är #, vilket innebär att användaren kommer högst upp på sidan.
+**Tillbaka till början** – modulen Tillbaka till början innehåller en länk för snabb navigering till sidans övre del. En destination måste anges. Standarddestinationen är \# vilket innebär att användaren kommer högst upp på sidan.
 
-## <a name="author-a-footer-module"></a>Skriva en sidfotsmodul
+## <a name="create-a-footer-module"></a>Skapa en sidfotsmodul
 
-1. I navigeringsfönstret, välj **fragment** och välj sedan **Nytt sidfragment**.
-1. I dialogrutan **Nytt sidfragment** väljer du modul för sidfot, anger ett namn på sidan och väljer sedan **OK**.
-1. I dispositionsträdet till vänster väljer du ellipsknappen (**...**) för modulen för sidfot och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen sidfotskategori och sedan **OK**.
-1. I dispositionsträdet väljer du ellipsknappen (...) för modulen för sidfotskategori och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen sidfotsartikel och sedan **OK**.
-1. Välj modul för sidfotsartikel i dispositionsträdet. I egenskapsrutan till höger konfigurerar du rubrik, länk och länktext och bilden efter behov.
+1. Gå till **Sidfragment** och välj **ny** för att skapa ett nytt fragment.
+1. I dialogrutan **Nytt sidfragment** väljer du modul för **Behållare**, anger ett namn på sidan och väljer sedan **OK**.
+1. I facket **Standardbehållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **sidfotskategori** och sedan **OK**.
+1. I facket **Sidfotskategori** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** välj modulen **sidfotsartikel** och sedan **OK**.
+1. Välj platsen **Sidfotskategori** och sedan i egenskapsrutan till höger konfigurerar du rubrik, länk och länktext och bilden efter behov.
 1. Upprepa steg 5 till 7 om du vill lägga till fler sidfotsartiklar.
-1. Om du vill lägga till länken "Tillbaka till början" väljer du ellipsknappen (...) för modulen för sidfotskategori och väljer sedan **Lägg till modul**.
-1. I dialogrutan **Lägg till modul**, välj modulen Tillbaka till början och sedan **OK**.
-1. Välj modul för Tillbaka till början i dispositionsträdet. Konfigurera sedan tillbaka till modulen Tillbaka till början i egenskapsfönstret till höger efter behov.
-1. Välj **Spara**, välj **Slutför redigering** för att checka in sidfragmentet och välj sedan **publicera** för att publicera den.
+1. Om du vill lägga till länken "Tillbaka till början" väljer du ellipsknappen (**...**) i platsen **sidfotskategori** och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Tillbaka till början** och sedan **OK**.
+1. Välj platsen **Tillbaka till början** och sedan i egenskapsrutan till höger konfigurerar du text och andra modulegenskaper efter behov.
+1. Välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera det.
 
-Gör följande för varje sidmall som har skapats för webbplatsen:
+Om du vill garantera att ett sidhuvud visas på varje sida följer du stegen nedan för varje sidmall som skapas för webbplatsen.
 
-1. Lägg till platsen **Huvud** för standardsidan i modulen för sidfot, lägg till det sidfotsfragment som du skapade.
-1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. På platsen **Sidfot** i modulen **standardsida** lägg till det sidfotsfragment som du skapade.
+1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 
 Genom att lägga till sidfragment i sidmallar kan du säkerställa att sidfoten återges på varje sida.
 

@@ -1,5 +1,5 @@
 ---
-title: Kredit och inkasso i Kundreskontra
+title: Samlingar i kundreskontra
 description: Inkassoinformation för kundreskontra hanteras i en central vy med sidan Microsoft Dynamics 365 Finance Inkasso. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189187"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426406"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>Kredit och inkasso i Kundreskontra
+# <a name="collections-in-accounts-receivable"></a>Samlingar i kundreskontra
 
 [!include [banner](../includes/banner.md)]
 
@@ -68,7 +68,7 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 
 > [!NOTE]
 > En ögonblicksbild av åldersfördelning måste skapas innan du kan visa information om listsidan Inkasso. Information visas bara för kunder som en ögonblicksbild av åldersfördelning har skapats för. De poster som visas på listsidan kan dessutom filtreras, enligt följande:
-> <li>Som standard har en Finance and Operations-användare åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
+> <li>Som standard har användare av Finance and Operations åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
 > <li>Om kundpooler finns, måste en användare anges som en inkassohandläggare för att använda poolerna till att filtrera information om listsidorna för inkasso. Informationen begränsas till de kunder som ingår i den valda kundpoolen.</li>
 > <li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>
 

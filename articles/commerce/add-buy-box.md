@@ -3,7 +3,7 @@ title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269761"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411352"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
@@ -38,6 +38,10 @@ Termen *inköpsruta* syftar vanligtvis på en sida med produktinformation som ä
 En inköpsruta är en speciell behållare som används för att vara värd för alla moduler som visas i området för inköpsruta på en produktinformationssida.
 
 URL för produktinformationssidan innehåller produkt-ID. All information som krävs för att återge en modul för inköpsruta kommer från detta produkt-ID. Om inget produkt-ID har angetts, återges inte affärsmodulen korrekt på en sida. Därför kan en modul för inköpsruta bara användas på sidor som har produktkontext. Om du vill använda den på en sida som saknar produktkontext (t.ex. en start sida eller en marknadsföringssida), måste du utföra ytterligare anpassningar.
+
+Följande bild visar ett exempel på en modul för inköpsruta på en produktinformationssida.
+
+![Exempel på en modul för inköpsruta](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Egenskaper och platser för modul för inköpsruta 
 
@@ -58,35 +62,47 @@ Teman kan användas för att ta bort eller ändra ordningen på produktegenskape
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler kan användas i modul för inköpsruta
 
 - **Mediegalleri** – den här modulen används för att visa bilder av en produkt på en produktinformationssida. Det kan stödja en till många bilder. Den stöder också miniatyrbilder. Miniatyrbilderna kan antingen ordnas vågrätt (som en rad under bilden) eller lodrätt (som en kolumn bredvid bilden). Modulen mediegalleri kan läggas till i platsen **media** i modulen inköpsruta. Den stöder för närvarande endast bilder. 
-- **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Mer information om den här modulen finns i [modulen Butiksväljare](store-selector.md).
+- **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Mer information om den här modulen finns i [Modul för butiksväljare](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Inställningar för modul för inköpsruta
 
-Modul för inköpsruta har tre inställningar som kan konfigureras på **Platsinställningar \> Tillägg**:
+Följande köpboxmodulinställningar som kan konfigureras på **Platsinställningar \> Tillägg**:
 
-- **Maximal kvantitet** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
-- **Inventering** – när värdet är inställt på **Sant** läggs en artikel till i vagnen först när modul för inköpsruta kontrollerar att den finns i lager. Den här inventeringen görs för scenarier där artikeln ska levereras och för scenarier där den ska hämtas i butiken. Om värdet är inställt på **Falsk** görs ingen lagerkontroll innan en artikel läggs till i vagnen och ordern placeras. Information om hur du konfigurerar lagerinställningar i backoffice finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
+- **Kvantitetsbegränsning för kundvagn** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
+- **Lager** – För information om hur du använder lagerinställningar finns i [tillämpa lagerinställningar](inventory-settings.md).
+- **Lägg till i kundvagn** - den här egenskapen används för att ange funktionen när en artikel har lagts till i vagnen. De möjliga värdena är **Navigera till kundvagn**, **Navigera inte i kundvagn** och **Visa meddelanden**. När värdet är inställt på **Navigera till kundvagn** skickas användarna till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Navigera inte till kundvagn** skickas användarna inte till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Visa meddelanden** visas användarna ett bekräftelsemeddelande och du kan fortsätta att bläddra på sidan produktinformation. 
 
-- **Lagerkvantitet** – den här egenskapen används för att ange ett buffertnummer för lager. Lagret underhålls i realtid och när många kunder gör beställningar kan det vara svårt att underhålla en korrekt inventering. När en lagerkontroll utförs, om lagret är mindre än buffertlagret, behandlas produkten som om den ligger utanför lagret. När försäljningen går snabbt via flera kanaler, så att lager inventeringen inte fullständigt synkroniseras, finns det därför mindre risk för försäljning av en artikel som ligger utanför lagret.
+    I följande bild visas ett exempel på ett bekräftelsemeddelande om tillägg till kundvagnen på Fabrikam webbplats.
+
+    ![Exempel på en meddelandemodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
 
-Modul för inköpsruta hämtar produktinformation med hjälp av API:er för skalningsenhet för handel. Produkt-ID:t från sidan produktinformation används för att hämta all information.
+Modul för inköpsruta hämtar produktinformation med hjälp av API:er för skalningsenhet för Commerce Scale Unit. Produkt-ID:t från sidan produktinformation används för att hämta all information.
 
 ## <a name="add-a-buy-box-module-to-a-page"></a>Lägg till en modul för inköpsruta på en ny sida
 
 Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa ett fragment med namnet **inköpsrutafragment**och lägg till en modul för inköpsruta.
-1. Platsen **Media** för modul för inköpsruta, lägg till en mediagallerimodul.
-1. I facket **Butiksväljare** i modul för inköpsruta, lägg till en modul för butiksväljare.
+1. Gå till **Sidfragment** och välj **ny** för att skapa ett nytt fragment.
+1. I dialogrutan **Ny sidfragment**, välj modulen **inköpsruta**.
+1. Under **sidfragmentets namn**, anger du ett namn på **inköpsrutafragmentet** och klickar sedan på **OK**.
+1. I platsen för modul för inköpsruta väljer du **Mediagalleriet**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** välj modulen **Mediagalleriet** och sedan **OK**.
+1. I platsen för modul för inköpsruta väljer du **butiksväljare**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** välj modulen **butiksväljare** och sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
-1. Skapa en mall för en produktinformationssida och ge den namnet **PDP-mall**.
-1. Lägg till en standardsida.
-1. Lägg till platsen **Huvud** på standardsida, lägg till ett inköpsrutafragment.
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. I dialogrutan **Ny mal** under **Mallnamn**, ange **PDP-mall** och välj sedan **OK**.
+1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I platsen för standardsidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till sidfragment**.
+1. I dialogrutan **Välj sidfragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
-1. Använd den mall som du just skapade för att skapa en sida med namnet **PDP-sida**.
-1. Lägg till platsen **Huvud** på den nya sidan, lägg till ett inköpsrutafragment.
+1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
+1. I dialogrutan **Välj en mall** väljer du en **PDP-mall**. Under **sidnamn**, ange **PDP-sida** och klicka sedan på **OK**.
+1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till sidfragment**.
+1. I dialogrutan **Välj sidfragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
 1. Spara och förhandsgranska sidan. Lägg till frågesträngparametern **?productid=&lt;product id&gt;** till URL för förhandsgranskningssidan. På så sätt används produktkontexten för att läsa in och återge förhandsgranskningssidan.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. En inköpsruta bör visas på sidan för produktinformation.
 
