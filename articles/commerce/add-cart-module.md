@@ -3,7 +3,7 @@ title: Kundvagnsmodul
 description: Det här avsnittet handlar om kundvagnsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d91f6ff24f8f2c051ed23565983c2bc6a2c12b55
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 3ba46fd90507a9cf8da92598c8449a2e553da352
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261431"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411283"
 ---
 # <a name="cart-module"></a>Kundvagnsmodul
 
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om kundvagnsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
@@ -36,7 +37,11 @@ En kundvagnsmodul visar artiklarna som har lagts till i kundvagnen innan kunden 
 
 Kundvagnsmodulen stöder inloggade utcheckning och gästkassa. Det stöder också en **Tillbaka till shopping**-länk. Du kan konfigurera flödet för den här länken när **webbplatsinställningar \> tillägg \> flöden**.
 
-I modulen kundvagn återges data baserat på vagn-ID:t, som är en webbläsarcookie som är tillgänglig på hela webbplatsen.
+I modulen kundvagn återges data baserat på vagn-ID:t, som är en webbläsarcookie som är tillgänglig på hela webbplatsen. 
+
+Följande bild visar ett exempel på en kundvagnssida på Fabrikam-webbplatsen.
+
+![Exempel på en kundvagnsmodul](./media/cart2.PNG)
 
 ## <a name="cart-module-properties-and-slots"></a>Egenskaper och platser för kundvagnsmodul
 
@@ -47,14 +52,12 @@ Kundvagnsmodulen har en egenskap för **Rubrik** som kan ställas in på värden
 - **Textblock** – den här modulen stöder anpassade meddelanden i kundvagnsmodulen. Meddelandena styrs av innehållshanteringssystem (CMS). Alla meddelanden kan läggas till, till exempel "för problem med ordern, kontakta 1-800-Fabrikam."
 - **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Mer information om den här modulen finns i [modulen Butiksväljare](store-selector.md).
 
-
 ## <a name="module-properties"></a>Modulegenskaper
 
-Vagnmoduler har följande inställningar som kan konfigureras på **Platsinställningar \> Tillägg**:
+Följande kundvagnsmodulinställningar som kan konfigureras på **Platsinställningar \> Tillägg**:
 
 - **Maximal kvantitet** – Den här egenskapen används för att ange det maximala antalet för varje objekt som kan läggas till i vagnen. En återförsäljare kan till exempel besluta att endast 10 av varje produkt kan säljas i en enda transaktion.
-- **Inventering** – när värdet är inställt på **Sant** läggs en artikel till i vagnen först när modul för inköpsruta kontrollerar att den finns i lager. Den här inventeringen görs för scenarier där artikeln ska levereras och för scenarier där den ska hämtas i butiken. Om värdet är inställt på **Falsk** görs ingen lagerkontroll innan en artikel läggs till i vagnen och ordern placeras. Information om hur du konfigurerar lagerinställningar i backoffice finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
-- **Lagerkvantitet** – den här egenskapen används för att ange ett buffertnummer för lager. Lagret underhålls i realtid och när många kunder gör beställningar kan det vara svårt att underhålla en korrekt inventering. När en lagerkontroll utförs, om lagret är mindre än buffertlagret, behandlas produkten som om den ligger utanför lagret. När försäljningen går snabbt via flera kanaler, så att lager inventeringen inte fullständigt synkroniseras, finns det därför mindre risk för försäljning av en artikel som ligger utanför lagret.
+- **Lager** – För information om hur du använder lagerinställningar finns i [tillämpa lagerinställningar](inventory-settings.md).
 - **Tillbaka till shopping** – den här egenskapen används för att ange vägen för länken **Tillbaka till shopping**. Vägen kan konfigureras på webbplatsnivå, vilket gör att återförsäljare kan ta kunden tillbaka till startsidan eller någon annan sida på webbplatsen.
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
@@ -65,15 +68,23 @@ Vagnmodul för inköpsruta hämtar produktinformation med hjälp av API:er för 
 
 Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa ett fragment med namnet **vagnfragment**och lägg till en kundvagnsmodul till det nya fragmentet.
-1. Lägg till en rubrik i vagnmodulen.
-1. Lägg till modulen för butiksväljare i vagnmodulen.
-1. Spara fragmentet, slutför redigeringen och publicera sedan fragmentet.
-1. Skapa en mall med namnet **vagnmall** och lägg till det vagnfragment som du precis skapade.
-1. Spara mallen, slutför redigeringen och publicera sedan mallen.
-1. Skapa en sida som använder den nya mallen.
-1. Spara och förhandsgranska sidan.
-1. Avsluta redigeringen av sidan och publicera sedan sidan.
+1. Gå till **Sidfragment** och välj **ny** för att skapa ett nytt fragment.
+1. I dialogrutan **Ny sidfragment**, välj modulen **kundvagn**.
+1. Under **sidfragmentets namn**, anger du ett namn på **kundvagnsfragmentet** och klickar sedan på **OK**.
+1. Markera platsen **kundvagn**.
+1. I pennfönstret till höger väljer du pennsymbolen, anger rubriktext i fältet och markerar sedan kryssmarkeringssymbolen.
+1. I facket **kundvagn** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** välj modulen **butiksväljare** och sedan **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. I dialogrutan **Ny mall** under **Mallnamn** anger du ett namn för mallen.
+1. I dispositionsträdet väljer du platsen **Brödtext** markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
+1. I dialogrutan **Välj sidfragment** väljer du det **kundvagnsfragment** och väljer sedan **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
+1. I dialogrutan **Välj en mall** väljer du den mall som du skapade, anger sidnamn och väljer sedan **OK**.
+1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.
+1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

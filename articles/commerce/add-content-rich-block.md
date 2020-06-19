@@ -3,7 +3,7 @@ title: Textblockmodul
 description: Det här avsnittet handlar om textblockmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc5b2fa35633b1ce7f7ffefacec318e14fa8db3f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025607"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411145"
 ---
 # <a name="text-block-module"></a>Textblockmodul
 
@@ -46,9 +46,13 @@ Innehållsrika textblockmoduler kan användas på följande sätt:
 * Om du vill lägga till anpassade meddelanden på en produktinformationssida. (t.ex. "gratis frakt för order över 50 $").
 * För avskrivningar och kontaktinformation på produktinformationssidor, kundvagnssidor, betalningssidor och andra sidor (t.ex. "leverans och returer" är föremål för lagringsprinciper").
 
+Följande bild visar ett exempel på en modul för textblock som används på en startsida.
+
+![Exempel på en modul för textblock](./media/ecommerce-textblock.PNG)
+
 ## <a name="text-block-module-properties"></a>Egenskaper för textblockmodul
 
-| Egenskapsnamn     | Value                                            | Beskrivning |
+| Egenskapsnamn     | Värde                                            | beskrivning |
 |-------------------|--------------------------------------------------|-------------|
 | RTF-format         | RTF-format                                        | Stycketext. Vissa grundläggande RTF-funktioner stöds, t.ex. fetstil, understrykning och kursiv text. |
 | Anpassat klassnamn | Ett klassnamn för Överlappande formatmallar (CSS)        | Namnet på en anpassad CSS-klass som en utvecklare använder för att formatera modulen. Klassnamnet måste definieras i temapaketet. |
@@ -58,21 +62,27 @@ Innehållsrika textblockmoduler kan användas på följande sätt:
 
 Om du vill lägga till en textblockmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa en sidmall som har namnet **Innehållsmall**. 
-1. I facket **Brödtext**, lägg till en **standardsida**-modul.
-1. Avsluta redigeringen i mallen och publicera den.
-1. Använd den innehållsmall som du just skapade för att skapa en sida med namnet **Innehållssida**.
-1. Lägg till platsen **Huvud** på ny sida, lägg till en behållarmodul.
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. I dialogrutan **Ny mall** under **Mallnamn** anger du **Innehållsmall**.
+1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
+1. I dialogrutan **Välj en mall** väljer du en **Innehållsmall**. Under **sidnamn**, ange **Innehållssida** och klicka sedan på **OK**.
+1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. I egenskapsfönstret för behållarmodulen, ange egenskapen **bredd** till **fyll behållare**.
-1. I textblockmodulen, lägg till en behållarmodul. 
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Textblock** och klicka sedan på **OK**. 
 1. I egenskapsfönstret för textblockmodulen, lägg till text i fältet **RTF**.
-1. Avsluta redigeringen av sidan och publicera den.
+1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan.
+1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Startpaket – översikt](starter-kit-overview.md)
 
-[Annonsbanderollmodul](add-alert.md)
+[Modul med kampanjbanderoll](add-alert.md)
 
 [Karusellmodul](add-carousel.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 03426e86186c6aa283531eb37ae26527e6891042
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2742c5c12dcc554745b618dd1ff819c8c1e1d05f
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276962"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413109"
 ---
 # <a name="inventory-value-storage-report"></a>Lagringsrapport för lagervärde
 
@@ -50,7 +50,7 @@ Följ dessa steg för att skapa och lagra **Lagringsrapport för lagervärde**.
 1. Välj **Ny**.
 1. I dialogrutan **Lagervärde** som visas anger du följande värden för att definiera vilka poster som ska ingå i rapporten:
 
-    - På snabbfliken **Parametrar** ange ett unikt namn för rapporten och använd fälten i avsnittet **Datumintervall** för att definiera vilka poster som ska ingå i rapporten. Om du vill definiera datumintervallet kan du antingen välja ett förinställt intervall (relativt rapportens genereringsdatum) i fältet **datumintervallkod** eller välja särskilda datum i fälten i fälten **Från datum** och **Till datum**. <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - På snabbfliken **Parametrar** ange ett unikt namn för rapporten och använd fälten i avsnittet **Datumintervall** för att definiera vilka poster som ska ingå i rapporten. Om du vill definiera datumintervallet kan du antingen välja ett förinställt intervall (relativt rapportens genereringsdatum) i fältet **datumintervallkod** eller välja särskilda datum i fälten i fälten **Från datum** och **Till datum**.
     - På snabbfliken **Poster som ska ingå** kan du ställa in filter och begränsningar för att definiera vilka data som ska ingå i rapporten.
     - På snabbfliken **kör på snabbfliken bakgrund** anger du hur, när och hur ofta rapporten ska genereras.
 

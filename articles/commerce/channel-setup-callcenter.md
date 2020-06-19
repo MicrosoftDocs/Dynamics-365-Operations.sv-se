@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 14cee020cc8aead627180343c82bf23534ae83c4
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: bdaabad39484cb12537bc5f94c34dcb2575a5b2f
+ms.sourcegitcommit: ef27189efc15ce79c3c31ce2e41ef8a606fc5429
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131741"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3410423"
 ---
 # <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
@@ -34,7 +34,7 @@ I det här avsnittet beskrivs hur du skapar en ny kundtjänstkanal i Microsoft D
 ## <a name="overview"></a>Översikt
 
 
-I Dynamics 365 Commerce, är kundtjänst en typ av butikskanal som kan definieras i programmet. Om du definierar en kanal för dina kundtjänstenheter kan systemet koppla specifika data och orderbearbetningsstandard till försäljningsorder. Ett företag kan definiera flera kundtjänstkanaler i Commerce, men det är viktigt att tänka på att en enskild användare bara kan länkas till en kundtjänstkanal. 
+I Dynamics 365 Commerce, är kundtjänst en typ av Commerce-kanal som kan definieras i programmet. Om du definierar en kanal för dina kundtjänstenheter kan systemet koppla specifika data och orderbearbetningsstandard till försäljningsorder. Ett företag kan definiera flera kundtjänstkanaler i Commerce, men det är viktigt att tänka på att en enskild användare bara kan länkas till en kundtjänstkanal. 
 
 Innan du skapar en ny kundtjänstkanal måste du kontrollera att du har slutfört [Förutsättningar för att ställa in kanaler](channels-prerequisites.md).
 
@@ -84,7 +84,7 @@ Om du vill ställa in betalningsmetoder följer du dessa steg för varje betalni
 
 I bilden nedan visas ett exempel på en kontantbetalningsmetod.
 
-![Exempel på betalningsmetoder](media/channel-setup-retail-5.png)
+![Exempel på betalningsmetoder](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ställ in leveranssätt
 

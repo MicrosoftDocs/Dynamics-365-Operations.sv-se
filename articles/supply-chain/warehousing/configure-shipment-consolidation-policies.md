@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383864"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403345"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurera konsolideringspolicyer för leverans
 
@@ -270,7 +270,7 @@ I det här exemplet kommer du att skapa en policy om *Kunder som tillåter konso
 
 - Policyn kommer att fråga efter en specifik orderpool i syfte att identifiera kunder som accepterar konsoliderade leveranser.
 - Konsolidering med öppna leveranser är inaktiverade.
-- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare kryssrutan **Lagerställe**).
+- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare **Konsolidera leverans vid släpp till lagerställe**).
 
 - Du kan åsidosätta regeln på en försäljningsorder genom att välja en annan orderpool.
 
@@ -306,7 +306,7 @@ I det här exemplet kommer du att skapa en policy om *Lagerställen som tillåte
 
 - Policyn kommer att fråga efter en specifik orderpool i syfte att identifiera lagerställen som kan konsolidera leveranser.
 - Konsolidering med öppna leveranser är inaktiverade.
-- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare kryssrutan **Lagerställe**).
+- Konsolidering sker mellan order med hjälp av de fält som väljs av den förvalda CrossOrder-policyn (för att replikera den tidigare **Konsolidera leverans vid släpp till lagerställe**).
 
 Vanligtvis kan detta affärsärendet åtgärdas med hjälp av de standardprinciper som du skapade i [Scenario 1](#scenario-1). Du kan emellertid även skapa likartade policyer manuellt genom att följa stegen nedan.
 

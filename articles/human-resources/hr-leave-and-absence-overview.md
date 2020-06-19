@@ -3,12 +3,12 @@ title: Översikt
 description: I Dynamics 365 Human Resources ger arbetsytan tjänstledighet och frånvaro finns ett flexibel ramverk för att skapa nya frånvaroplaner, arbetsflöden för hantering av förfrågningar och en intuitiv sida för självbetjäningstjänster för medarbetare som ber om ledighet.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325775"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428977"
 ---
 # <a name="overview"></a>Översikt
 
@@ -84,10 +84,9 @@ Du kan testa nya funktioner för tjänstledighet och frånvaro i en **begränsad
 
 Bland funktionerna för förhandsgranskning är:
 
-- **Skjuta upp tjänstledighet** - Du kan skjuta upp tjänstledighet och frånvaro i personal för en medarbetare. Om du skjuter upp tjänstledighet avbryts tjänstledigheten för de valda tjänstledighetstyperna. Om uppskjutningen sker efter att en periodisering har bearbetats, skapar skjuta upp ledighet en proportionell justering av medarbetarens ledighetssaldo. Du kan även inkludera orsakskoder när du pausar en medarbetares tjänstledighet. Användarupplevelsen har uppdaterats för att visa paus. 
+- **Lämna periodisering per företag eller plan** - du kan köra periodiseringsprocessen antingen för alla företag eller för ett enskilt företag. Du kan också köra periodiseringsprocessen för en viss plan för tjänstledighet och frånvaro för ett visst företag. 
 
-- **Överför regler** - Du kan ange en överför tjänstledighetstyp för överföringsaldon där överför justeringar överförs. Om en medarbetare till exempel överförs 10 dagar kan du välja en annan tjänstledighetstyp för de 10 dagarna. 
+- **Köp tjänstledighet** – du kan aktivera och skapa policyer för tjänstledighet som medarbetare kan använda för att skicka in inköpsförfrågningar. Medarbetare kan skicka inköpsförfrågningar och få saldon uppdateras automatiskt för att återspegla begäran.  
 
-- **Inkludera orsakskod och kommentarer för justeringar** – Du kan inkludera en orsakskod och en kommentar när du gör en justering av en medarbetares ledighetssaldo. 
+- **Lägg till bilagor till godkända ansökan om tjänstledighet** – du kan lägga till en bilaga på en begäran om att lämna en begäran som redan har godkänts. 
 
-- **Övergång till tjänstledighet och frånvaroparametrar** – Nu behöver du bara använda parametrar för tjänstledighet och frånvaro istället för HR-parametrar. 

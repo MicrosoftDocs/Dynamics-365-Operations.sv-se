@@ -3,7 +3,7 @@ title: Annonsbanderollmodul
 description: Det här avsnittet handlar om annonsbanderollmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269784"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411375"
 ---
 # <a name="promo-banner-module"></a>Annonsbanderollmodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -48,9 +47,15 @@ Annonsbanderoller kan användas i webbplatshuvudet för att visa erbjudanden som
 
 "Spara stort med tillbaka till skolan-rea. Handla nu."
 
+"Shoppa på Thanksgiving-rea!" 
+
+Följande bild visar ett exempel på en annonsbanderoll.
+
+![Exempel på en annonsbannermodul](./media/ecommerce-Promobanner.PNG)
+
 ## <a name="promo-banner-module-properties"></a>Egenskaper för annonsbanderollmodul
 
-| Egenskapsnamn             | Value                              | Beskrivning |
+| Egenskapsnamn             | Värde                              | beskrivning |
 |---------------------------|------------------------------------|-------------|
 | Banderollmeddelanden           | Text och länkar                     | En matris med text och länkar. |
 | Spela upp automatiskt                  | **Sant** eller **falskt**              | Ett värde som anger om meddelanden markeras automatiskt genom, om flera meddelanden har konfigurerats. |
@@ -64,7 +69,7 @@ Annonsbanderoller kan användas i webbplatshuvudet för att visa erbjudanden som
 
 Om du vill lägga till en annonsbanderollmodul på en sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa en ny sidmall genom att välja **Nytt**.
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **annonsbanderollmall** och välj sedan **OK**.
 1. Under **Siddisposition**, lägg till en **Standardsida** i facket **Brödtext**. 
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den. 
@@ -74,7 +79,7 @@ Om du vill lägga till en annonsbanderollmodul på en sida och ställa in de obl
 1. Under **Siddisposition**, lägg till en annonsbanderollmodul i behållarmodulen.
 1. Lägg till ett eller flera banderollmeddelanden i inställningarna för banderollmodulen. Varje meddelande kan ha text tillsammans med en länk. Du kan redigera de andra egenskaperna om du vill anpassa modulen ytterligare.
 1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Högst upp på sidan ska du se en notifiering med den tillagda texten.
-1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. 
+1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
 
 > [!NOTE]
 > En annonsbanderoll används vanligtvis i sidhuvud- eller underrubrikfacket.

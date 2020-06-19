@@ -3,7 +3,7 @@ title: Justera AI-ML-baserade produktrekommendationsresultat
 description: I det här avsnittet beskrivs hur du skräddarsyr resultat för produktrekommendationer baserat på maskininlärning med artificiell intelligens (AI-ML) till ditt företag.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: afd9271c680b1f4248d6e60036f3e79d204dc3c2
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 0b4228583c4a2b89d7139b51880cea0288d7fe49
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154351"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404381"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Justera AI-ML-baserade produktrekommendationsresultat
 
@@ -102,7 +102,7 @@ Följ dessa steg för att lägga till eller ta bort resultat för en startproduk
 
 [Översikt av produktrekommendationer](product-recommendations.md)
 
-[Aktivera ADLS i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
+[Aktivera Azure Data Lake Storage i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
 
 [Aktivera produktrekommendationer](enable-product-recommendations.md)
 

@@ -3,7 +3,7 @@ title: Modul för videospelare
 description: Det här avsnittet handlar om moduler för videospelare och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e94658eed12b12d6666e63d2c06b86646c81a120
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025685"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411169"
 ---
 # <a name="video-player-module"></a>Modul för videospelare
 
@@ -47,9 +47,13 @@ Videospelarmodulen stöder också sekundära ljudspår. När en video laddas upp
 - Reklamfilmer eller videoklipp om policyer på alla marknadsföringssidor
 - Marknadsföringsvideor som markerar produktegenskaper på produktinformationssidor eller på marknadsföringssidor
 
+Följande bild visar ett exempel på en modul för videospelare på en startsida.
+
+![Exempel på en videospelar-modul](./media/ecommerce-videoplayer.PNG)
+
 ### <a name="video-player-module-properties"></a>Egenskaper för videospelarmodul
 
-| Egenskapsnamn         | Värde                               | Beskrivning |
+| Egenskapsnamn         | Värde                               | beskrivning |
 |-----------------------|-------------------------------------|-------------|
 | Spela upp automatiskt             | **Sant** eller **falskt**               | När värdet är inställt på **Sant** spelas videon upp automatiskt. |
 | Ljud av                  | **Sant** eller **falskt**               | När värdet är inställt på **Sant** stängs ljudet av. För den här spelaren är standardvärdet **Falskt**. I webbläsaren Chrome är automatiska videor avstängda som standard och ljudet spelas endast upp om användaren spelar upp videon manuellt. |
@@ -68,22 +72,34 @@ Videospelarmodulen stöder också sekundära ljudspår. När en video laddas upp
 
 Om du vill lägga till en modul för videospelare på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa en sidmall som har namnet **videospelarmall**.
-1. Lägg till platsen **Huvud** på standardsida, lägg till en behållarmodul.
-1. Lägg till videospelare och modul för videospelare i behållarmodulen.
-1. Avsluta redigeringen i mallen och publicera den.
-1. Använd den videospelarmall som du skapade för att skapa en sida med namnet **videospelarsida**.
-1. Lägg till platsen **Huvud** på den nya sidan, lägg till en modul för videospelare.
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. I dialogrutan **Ny mal** under **Mallnamn**, ange **mall för videospelare** och välj sedan **OK**.
+1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. I platsen **Huvud** i modulen **Standardsida** markerar du ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Videospelare** och klicka sedan på **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den. 
+1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
+1. I dialogrutan **Välj en mall**, välj den videospelarmall du skapade. Under **sidnamn**, ange **Videospelarsida** och klicka sedan på **OK**.
+1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Videospelare** och klicka sedan på **OK**.
 1. Välj **Lägg till en video** i egenskapsrutan för videospelarmodulen.
 1. I dialogrutan **medieväljare**, välj en video och välj sedan **Överför nytt mediobjekt**.
-1. Spara och förhandsgranska sidan. Du bör se videomodulerna på sidan. Du kan ändra ytterligare inställningar om du vill anpassa funktionen för modulen.
-1. Avsluta redigeringen av sidan och publicera den.
+1. Markera en videofil i Utforskaren och välj sedan **öppna**.
+1. I dialogrutan **Överför medieartiklar** ange en rubrik och övrig information efter behov och välj sedan **OK**.
+1. I dialogrutan **Mediaväljare**, välj **Stäng**.
+1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Du bör se videomodulerna på sidan. Du kan ändra ytterligare inställningar om du vill anpassa funktionen för modulen.
+1. Välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Startpaket – översikt](starter-kit-overview.md)
 
-[Annonsbanderollmodul](add-alert.md)
+[Modul med kampanjbanderoll](add-alert.md)
 
 [Karusellmodul](add-carousel.md)
 

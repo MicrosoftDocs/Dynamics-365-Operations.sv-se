@@ -3,7 +3,7 @@ title: Skattdirektiv för Europa
 description: Du kan ange om du vill ta med en förklaring av momskoder på försäljningsfakturor och projektfakturor. Du kan skriva ut referensnummer på försäljningsfakturor, fritextfakturor och projektfakturor.
 author: epodkolz
 manager: AnnBe
-ms.date: 05/12/2017
+ms.date: 06/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2d054a1bdcfb3d189b343b51de77b407335a7792
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 70c86d85b66f1b5c0bf72f80f93299c3848ca158
+ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183945"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3423000"
 ---
 # <a name="tax-directives-for-europe"></a>Skattdirektiv för Europa
 
@@ -31,3 +31,5 @@ EU-direktiv innehåller bestämmelser som ska följas av alla medlemsstater ang�
 - För att skriva ut en beskrivning av momskoder på en försäljningsfaktura, en fritextfaktura eller en rapport för projektfaktura, ställer du in momsdirektivets referenstext på momskoderna.
 - För kreditnotor skrivs numret och datumet för den ursprungliga fakturan ut tillsammans med orsaken till korrigeringen.
 
+> [!NOTE]
+> Kontrollera sidan **Formulärinställningar** (**Kundreskontra** > **Konfigurera** > **Formulär** > **Formulärinställningar**, på the **fliken Allmänt**) att fältet **Momsspecifikation** är inställt på **Registreringsvaluta** eller **Registrerings- och företagsvaluta**.

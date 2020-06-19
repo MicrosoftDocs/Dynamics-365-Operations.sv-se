@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 45677681ebae40210d6e2d896323f7e691b765e2
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057566"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403225"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Översikt över räkenskapsintegration för handelskanaler
 
@@ -139,6 +139,7 @@ Följande exempel på räkenskapsintegration är tillgängliga i Retail SDK:
 - [Exempel på skatteregistreringstjänsten för Österrike](emea-aut-fi-sample.md)
 - [Exempel på skatteregistreringstjänsten för Tjeckien](emea-cze-fi-sample.md)
 - [Exempel på integration av kontrollenhet för Sverige](./emea-swe-fi-sample.md)
+- [Exempel på skatteregistreringstjänsten för Tyskland](./emea-deu-fi-sample.md)
 
 Följande funktioner för räkenskapsintegration finns också i Retail SDK men för närvarande utnyttjar inte i ramverket för räkenskapsintegration. Migrering av den här funktionen till ramverket för räkenskapsintegration planeras för senare uppdateringar.
 

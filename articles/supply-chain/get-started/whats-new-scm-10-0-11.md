@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: e396d2f2731d3600ee9e83e419d1038571e7bd85
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346363"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413041"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.11 (juli 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.11. Den här versionen har ett versionsnummer för 10.0.464 och är tillgänglig enligt följande:
 
@@ -44,7 +43,7 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 - [Förbättringar av radreservation för formuläret batchnummer-reservation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – mer information finns i [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Nya dataenheter för tillverkningsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Överinleverans av lastkvantiteter](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
-- [Rapportera som färdig för batchnummer från jobbkortsenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)
+- [Rapportera som färdig för batchnummer från jobbkortsenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) – Mer information finns i [rapportera som färdigt från jobbkortenheten](../production-control/report-finished-job-device.md)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

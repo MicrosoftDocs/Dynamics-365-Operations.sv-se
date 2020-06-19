@@ -3,7 +3,7 @@ title: Skapa e-postmallar för transaktionshändelser
 description: I det här avsnittet beskrivs hur du skapar, överför och konfigurerar e-postmallar för transaktionshändelser i Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: annbe
-ms.date: 05/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5cd928e90654cca639ed1e163be9192c0dffd9ad
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: a02839088addfa9b405af486f3b795eace1671cc
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367185"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416589"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Skapa e-postmallar för transaktionshändelser
 
@@ -40,7 +40,7 @@ Innan du kan mappa en specifik transaktionshändelse till en e-postmall måste d
 
 Gör så här om du vill skapa en e-postmall.
 
-1. Gå till **Butik och handel \> Inställningar för Headquarters \> E-postmallar för organisation** i Commerce Headquarters.
+1. I Commerce-administration, gå till **Organisationens e-postmallar**, som är under **Retail och Commerce \> Administrationsinställning \> Organisationens e-postmallar** eller **Organisationsadministration \> Konfigurera \> Organisation e-postmallar**.
 1. Välj **Ny**.
 1. Under **Allmänt** anger du följande fält:
 
