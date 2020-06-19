@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup
+ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Core, Operations
@@ -16,31 +16,31 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3285222b11905999f0eadb846ac785342c16aa38
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 2ae8ca5b20f331709e9fc1d9ae3b5f350e5c19ab
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010628"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3430151"
 ---
-# <a name="modify-reporting-relationships-for-a-position"></a><span data-ttu-id="9b65b-103">Ändra rapporteringsrelationer för en befattning</span><span class="sxs-lookup"><span data-stu-id="9b65b-103">Modify reporting relationships for a position</span></span>
+# <a name="modify-reporting-relationships-for-a-position"></a><span data-ttu-id="ade9b-103">Ändra rapporteringsrelationer för en befattning</span><span class="sxs-lookup"><span data-stu-id="ade9b-103">Modify reporting relationships for a position</span></span>
 
 
 
-<span data-ttu-id="9b65b-104">I den här proceduren visas hur du ändrar rapporteringsrelationen för en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="9b65b-104">This procedure shows how to change the reporting relationship for an employee.</span></span> <span data-ttu-id="9b65b-105">Rapporteringsrelationen kan användas för att dirigera dokument genom arbetsflödet.</span><span class="sxs-lookup"><span data-stu-id="9b65b-105">The reporting relationship can be used for routing documents through workflow.</span></span> <span data-ttu-id="9b65b-106">Proceduren visar även hur du tilldelar medarbetaren till ytterligare hierarkier.</span><span class="sxs-lookup"><span data-stu-id="9b65b-106">The procedure also shows how to assign the employee to additional hierarchies.</span></span> <span data-ttu-id="9b65b-107">En medarbetare kan till exempel vara en del av en projektteam med en informell rapporteringsrelation till en projektansvarig.</span><span class="sxs-lookup"><span data-stu-id="9b65b-107">For example, an employee might be a part of a project team with an informal reporting relationship to a project supervisor.</span></span> <span data-ttu-id="9b65b-108">Fler rapporteringsrelationer kan definieras för befattningen för att kunna hantera olika projekt eller matrisscenarier.</span><span class="sxs-lookup"><span data-stu-id="9b65b-108">Additional reporting relationships can be defined on the position to accommodate various project or matrix scenarios.</span></span> <span data-ttu-id="9b65b-109">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="9b65b-109">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="ade9b-104">I den här proceduren visas hur du ändrar rapporteringsrelationen för en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="ade9b-104">This procedure shows how to change the reporting relationship for an employee.</span></span> <span data-ttu-id="ade9b-105">Rapporteringsrelationen kan användas för att dirigera dokument genom arbetsflödet.</span><span class="sxs-lookup"><span data-stu-id="ade9b-105">The reporting relationship can be used for routing documents through workflow.</span></span> <span data-ttu-id="ade9b-106">Proceduren visar även hur du tilldelar medarbetaren till ytterligare hierarkier.</span><span class="sxs-lookup"><span data-stu-id="ade9b-106">The procedure also shows how to assign the employee to additional hierarchies.</span></span> <span data-ttu-id="ade9b-107">En medarbetare kan till exempel vara en del av en projektteam med en informell rapporteringsrelation till en projektansvarig.</span><span class="sxs-lookup"><span data-stu-id="ade9b-107">For example, an employee might be a part of a project team with an informal reporting relationship to a project supervisor.</span></span> <span data-ttu-id="ade9b-108">Fler rapporteringsrelationer kan definieras för befattningen för att kunna hantera olika projekt eller matrisscenarier.</span><span class="sxs-lookup"><span data-stu-id="ade9b-108">Additional reporting relationships can be defined on the position to accommodate various project or matrix scenarios.</span></span> <span data-ttu-id="ade9b-109">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="ade9b-109">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="9b65b-110">Gå till Personal > Befattningar > Befattningar.</span><span class="sxs-lookup"><span data-stu-id="9b65b-110">Go to Human resources > Positions > Positions.</span></span>
-2. <span data-ttu-id="9b65b-111">Använd snabbfiltret för att söka efter poster.</span><span class="sxs-lookup"><span data-stu-id="9b65b-111">Use the Quick Filter to find records.</span></span> <span data-ttu-id="9b65b-112">Filtrera till exempel fältet Befattning med värdet 000091.</span><span class="sxs-lookup"><span data-stu-id="9b65b-112">For example, filter on the Position field with a value of '000091'.</span></span>
-3. <span data-ttu-id="9b65b-113">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="9b65b-113">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="9b65b-114">Expandera avsnittet Rapporter till befattning.</span><span class="sxs-lookup"><span data-stu-id="9b65b-114">Expand the Reports to position section.</span></span>
-5. <span data-ttu-id="9b65b-115">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="9b65b-115">Click New to open the drop dialog.</span></span>
-6. <span data-ttu-id="9b65b-116">I fältet Rapporter till fält, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="9b65b-116">In the Reports to field, enter or select a value.</span></span>
-7. <span data-ttu-id="9b65b-117">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="9b65b-117">Click Create.</span></span>
-8. <span data-ttu-id="9b65b-118">Utöka avsnittet Relationer.</span><span class="sxs-lookup"><span data-stu-id="9b65b-118">Expand the Relationships section.</span></span>
-9. <span data-ttu-id="9b65b-119">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="9b65b-119">Click Add.</span></span>
-10. <span data-ttu-id="9b65b-120">Markera kryssrutan till vänster om rutnätet.</span><span class="sxs-lookup"><span data-stu-id="9b65b-120">Select the check box on the left of the grid.</span></span>
-11. <span data-ttu-id="9b65b-121">I fältet Hierarkinamn, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="9b65b-121">In the Hierarchy name field, enter or select a value.</span></span>
-    * <span data-ttu-id="9b65b-122">Exempel: projekt</span><span class="sxs-lookup"><span data-stu-id="9b65b-122">Example: Project</span></span>  
-12. <span data-ttu-id="9b65b-123">I fältet Rapporter till befattning, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="9b65b-123">In the Reports to position field, enter or select a value.</span></span>  <span data-ttu-id="9b65b-124">Exempel: 000437</span><span class="sxs-lookup"><span data-stu-id="9b65b-124">Example:  000437</span></span>
-13. <span data-ttu-id="9b65b-125">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="9b65b-125">Click Save.</span></span>
+1. <span data-ttu-id="ade9b-110">Gå till Personal > Befattningar > Befattningar.</span><span class="sxs-lookup"><span data-stu-id="ade9b-110">Go to Human resources > Positions > Positions.</span></span>
+2. <span data-ttu-id="ade9b-111">Använd snabbfiltret för att söka efter poster.</span><span class="sxs-lookup"><span data-stu-id="ade9b-111">Use the Quick Filter to find records.</span></span> <span data-ttu-id="ade9b-112">Filtrera till exempel fältet Befattning med värdet 000091.</span><span class="sxs-lookup"><span data-stu-id="ade9b-112">For example, filter on the Position field with a value of '000091'.</span></span>
+3. <span data-ttu-id="ade9b-113">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ade9b-113">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="ade9b-114">Expandera avsnittet Rapporter till befattning.</span><span class="sxs-lookup"><span data-stu-id="ade9b-114">Expand the Reports to position section.</span></span>
+5. <span data-ttu-id="ade9b-115">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="ade9b-115">Click New to open the drop dialog.</span></span>
+6. <span data-ttu-id="ade9b-116">I fältet Rapporter till fält, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="ade9b-116">In the Reports to field, enter or select a value.</span></span>
+7. <span data-ttu-id="ade9b-117">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="ade9b-117">Click Create.</span></span>
+8. <span data-ttu-id="ade9b-118">Utöka avsnittet Relationer.</span><span class="sxs-lookup"><span data-stu-id="ade9b-118">Expand the Relationships section.</span></span>
+9. <span data-ttu-id="ade9b-119">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="ade9b-119">Click Add.</span></span>
+10. <span data-ttu-id="ade9b-120">Markera kryssrutan till vänster om rutnätet.</span><span class="sxs-lookup"><span data-stu-id="ade9b-120">Select the check box on the left of the grid.</span></span>
+11. <span data-ttu-id="ade9b-121">I fältet Hierarkinamn, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="ade9b-121">In the Hierarchy name field, enter or select a value.</span></span>
+    * <span data-ttu-id="ade9b-122">Exempel: projekt</span><span class="sxs-lookup"><span data-stu-id="ade9b-122">Example: Project</span></span>  
+12. <span data-ttu-id="ade9b-123">I fältet Rapporter till befattning, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="ade9b-123">In the Reports to position field, enter or select a value.</span></span>  <span data-ttu-id="ade9b-124">Exempel: 000437</span><span class="sxs-lookup"><span data-stu-id="ade9b-124">Example:  000437</span></span>
+13. <span data-ttu-id="ade9b-125">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ade9b-125">Click Save.</span></span>
 

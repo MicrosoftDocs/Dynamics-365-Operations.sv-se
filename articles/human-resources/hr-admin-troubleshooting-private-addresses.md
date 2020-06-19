@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: facfd17f007b2c9e6f068d0ec4c5ce45b85a1b78
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: fbe0e8acc1b879e4d7982b33413236432f25f630
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010622"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431048"
 ---
-# <a name="access-to-private-addresses-by-security-role"></a><span data-ttu-id="71cd5-103">Åtkomst till privata adresser efter säkerhetsroll</span><span class="sxs-lookup"><span data-stu-id="71cd5-103">Access to private addresses by security role</span></span>
+# <a name="access-to-private-addresses-by-security-role"></a><span data-ttu-id="d152e-103">Åtkomst till privata adresser efter säkerhetsroll</span><span class="sxs-lookup"><span data-stu-id="d152e-103">Access to private addresses by security role</span></span>
 
-<span data-ttu-id="71cd5-104">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="71cd5-104">**Issue**</span></span>
+<span data-ttu-id="d152e-104">**Utleverans**</span><span class="sxs-lookup"><span data-stu-id="d152e-104">**Issue**</span></span>
 
-<span data-ttu-id="71cd5-105">Efter att en kund duplicerar en säkerhetsroll och loggar in som den nya rollen kan kunden inte se adresser som är märkta som privata.</span><span class="sxs-lookup"><span data-stu-id="71cd5-105">After a customer duplicates a security role and signs in as that new role, the customer can't see addresses that were marked as private.</span></span>
+<span data-ttu-id="d152e-105">Efter att en kund duplicerar en säkerhetsroll och loggar in som den nya rollen kan kunden inte se adresser som är märkta som privata.</span><span class="sxs-lookup"><span data-stu-id="d152e-105">After a customer duplicates a security role and signs in as that new role, the customer can't see addresses that were marked as private.</span></span>
 
-<span data-ttu-id="71cd5-106">**Upplösning**</span><span class="sxs-lookup"><span data-stu-id="71cd5-106">**Resolution**</span></span>
+<span data-ttu-id="d152e-106">**Upplösning**</span><span class="sxs-lookup"><span data-stu-id="d152e-106">**Resolution**</span></span>
 
-<span data-ttu-id="71cd5-107">För att lösa problemet måste kunden följa instruktionerna på den dubblerade säkerhetsrollen.</span><span class="sxs-lookup"><span data-stu-id="71cd5-107">To resolve the issue, the customer must follow these steps for the duplicated security role.</span></span>
+<span data-ttu-id="d152e-107">För att lösa problemet måste kunden följa instruktionerna på den dubblerade säkerhetsrollen.</span><span class="sxs-lookup"><span data-stu-id="d152e-107">To resolve the issue, the customer must follow these steps for the duplicated security role.</span></span>
 
-1. <span data-ttu-id="71cd5-108">Gå till **Organisationsadministration \> Global adressbok \> Parametrar för global adressbok**.</span><span class="sxs-lookup"><span data-stu-id="71cd5-108">Go to **Organization administration \> Global address book \> Global address book parameters**.</span></span>
-2. <span data-ttu-id="71cd5-109">På fliken **Säkerhet för privat plats** och flytta den nya rollen från listan **Tillgängliga roller** till listan **Markerade roller**.</span><span class="sxs-lookup"><span data-stu-id="71cd5-109">On the **Private location security** tab, move the new security role from the **Available roles** list to the **Selected roles** list.</span></span>
-3. <span data-ttu-id="71cd5-110">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="71cd5-110">Select **Save**.</span></span>
+1. <span data-ttu-id="d152e-108">Gå till **Organisationsadministration \> Global adressbok \> Parametrar för global adressbok**.</span><span class="sxs-lookup"><span data-stu-id="d152e-108">Go to **Organization administration \> Global address book \> Global address book parameters**.</span></span>
+2. <span data-ttu-id="d152e-109">På fliken **Säkerhet för privat plats** och flytta den nya rollen från listan **Tillgängliga roller** till listan **Markerade roller**.</span><span class="sxs-lookup"><span data-stu-id="d152e-109">On the **Private location security** tab, move the new security role from the **Available roles** list to the **Selected roles** list.</span></span>
+3. <span data-ttu-id="d152e-110">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="d152e-110">Select **Save**.</span></span>
 
 ![Sidan Parametrar för global adressbok](media/GAD-parameters.png)
