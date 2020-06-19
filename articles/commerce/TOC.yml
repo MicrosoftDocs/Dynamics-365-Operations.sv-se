@@ -88,6 +88,8 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.12 (augusti 2020)
+                      href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (maj 2020)
@@ -212,9 +214,9 @@
               items:
                 - name: Synkronisera installationsprogram för självbetjäning i Dynamics 365 Commerce
                   href: dev-itpro/Synchronize-installers.md
-                - name: Commerce Scale Unit
+                - name: Commerce Scale Unit (självvärdbaserad)
                   href: dev-itpro/retail-store-system-begin.md
-                - name: Konfigurera och installera Commerce Scale Unit
+                - name: Konfigurera och installera Commerce Scale Unit (självvärdbaserad)
                   href: dev-itpro/retail-store-scale-unit-configuration-installation.md
                 - name: Konfiguration och installation av Modern POS
                   href: retail-modern-pos-device-activation.md
@@ -604,7 +606,7 @@
               items:
                 - name: Översikt av produktrekommendationer
                   href: product-recommendations.md
-                - name: Aktivera ADLS i en Dynamics 365 Commerce-miljö
+                - name: Aktivera Azure Data Lake Storage i en Dynamics 365 Commerce-miljö
                   href: enable-ADLS-environment.md
                 - name: Aktivera produktrekommendationer
                   href: enable-product-recommendations.md
@@ -646,8 +648,8 @@
                   items:
                     - name: Hantering av butikslager
                       href: work-with-store-inventory.md
-                    - name: Arbeta med serialiserade artiklar
-                      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurera lagerkvantiteter och lagernivåer
+                      href: inventory-buffers-levels.md
                     - name: Arbeta med serialiserade artiklar i kassa
                       href: pos-serialized-items.md
                     - name: Skjut produkter från distributionscenter till butik med centraliserad distribution
@@ -824,6 +826,8 @@
                   href: authoring-home-overview.md
                 - name: Hantera användare och roller
                   href: manage-ecommerce-users-roles.md
+                - name: Använd lagerinställningar
+                  href: inventory-settings.md
                 - name: Språkinformation för sökmotoroptimering (SEO) för din webbplats
                   href: search-engine-optimization-considerations.md
                 - name: Hantera säkerhetspolicy för innehåll (CSP)
@@ -848,6 +852,8 @@
                       href: select-site-theme.md
                     - name: Arbeta med CSS-åsidosättningsfiler
                       href: css-override-files.md
+                    - name: Arbeta med format för inställningar
+                      href: style-presets.md
                     - name: Lägga till en favoritikon
                       href: add-favicon.md
                     - name: Lägga till ett välkomstmeddelande
@@ -932,6 +938,10 @@
                   items:
                     - name: Behållarmodul
                       href: add-container-module.md
+                    - name: Drag spels modulen
+                      href: add-accordion.md
+                    - name: Flikkontroll
+                      href: add-tab.md
                 - name: Marknadsföringsmoduler
                   items:
                     - name: Modul med kampanjbanderoll
@@ -978,6 +988,10 @@
                   items:
                     - name: Produktsamlingsmoduler
                       href: product-collection-module-overview.md
+                - name: Navigeringsmoduler
+                  items:
+                    - name: Navigeringsmodul
+                      href: add-breadcrumb.md
             - name: Sök
               items:
                 - name: Standardkategorilandningssida och sida för sökresultat
@@ -1048,6 +1062,10 @@
                   href: localizations/emea-fra-cash-registers.md
                 - name: Riktlinjer för distribution av kassaapparater
                   href: localizations/emea-fra-deployment.md
+            - name: Tyskland
+              items:
+                - name: Exempel på skatteregistreringstjänsten för Tyskland
+                  href: localizations/emea-deu-fi-sample.md
             - name: Indien
               items:
                 - name: Integrering av moms (GST) för varor och tjänster för kassaapparater
@@ -1158,7 +1176,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Skapa analytiska rapporter med Power BI Desktop
+                - name: Skapa analytiska rapporter med PowerBi Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1976,7 +1994,9 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurera temainställningar
                       href: e-commerce-extensibility/configure-theme-settings.md
-                    - name: Utöka ett tema
+                    - name: Utöka ett tema för att lägga till modultillägg
+                      href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Utöka ett tema från ett bastema
                       href: e-commerce-extensibility/extend-theme.md
                 - name: Mata in skript
                   items:
@@ -2072,17 +2092,17 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Utbyggbarhet för Retail Server
               items:
-                - name: Utöka en Retail Server OData-styrenhet
+                - name: Utöka en Commerce Scale Unit OData-styrenhet
                   href: dev-itpro/extend-retail-server-odata-controller.md
-                - name: 'API:er för Retail Server-kund och -konsument'
+                - name: 'Kund- och klient-API:er för Commerce Scale Unit'
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Utöka standardstyrenheten för Retail Server-metadata
+                - name: Utöka standardstyrenheten för Commerce Scale Unit-metadata
                   href: dev-itpro/extend-metadata.md
                 - name: Anropa CRT-tjänsten i offlineläge
                   href: dev-itpro/call-crt-service-offline.md
                 - name: Skapa nytt tillägg för Retail Server
                   href: dev-itpro/retail-server-extension.md
-                - name: 'Retail Typescript- och C#-proxyservrar'
+                - name: Retail Typescript- och C#-proxyservrar
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Utbyggbarhet av Commerce Runtime (CRT)
               items:
@@ -2096,8 +2116,6 @@
                   href: dev-itpro/add-customer-preference-channel.md
                 - name: Hantera hemligheter för butikskanaler
                   href: dev-itpro/manage-secrets.md
-                - name: Lägga till egenskaper i försäljningsorder
-                  href: dev-itpro/add-properties-sales-order.md
                 - name: Utbyggbarhet och utlösare för CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Spärra transaktioner med utlösare

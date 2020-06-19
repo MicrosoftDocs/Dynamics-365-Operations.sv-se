@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller ändringar i Supply Chain Management – startsida
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.12 (augusti 2020)
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: Supply Chain Management 10.0.10 (maj 2020)
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: Supply Chain Management 10.0.9 (april 2020)
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -595,6 +595,8 @@
                   href: cost-management/bom-calculations.md
                 - name: Beräkningsgrupper för strukturlista
                   href: cost-management/bom-calculation-groups.md
+                - name: Kostnadsberäkningsnivå
+                  href: cost-management/cost-calculation-level.md
                 - name: Kostnadskalkylering med automatisk lageravräkning
                   href: cost-management/backflush-costing.md
                 - name: Gemensamma källor till produktionsavvikelser
@@ -705,7 +707,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Skapa analytiska rapporter med Power BI Desktop
+                - name: Skapa analytiska rapporter med PowerBi Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1345,6 +1347,8 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Använda filter på en plan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Huvudplanering med inköpshandelsavtal
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Visa planhistorik och planeringsloggar
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Automatisk bekräftelse med planeringsoptimering
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Rapportera produktionsorder som slutförda
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Rapportera som färdig till en plats som styrs av registreringsskylt
+                    - name: Konfigurera jobbkort för enheter
+                      href: production-control/config-job-card-device.md
+                    - name: Rapportera som färdig från jobbkortenhet
                       href: production-control/report-finished-job-device.md
                     - name: Återför produktionsorderstatus
                       href: production-control/reverse-production-order-status.md
@@ -2259,11 +2265,21 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Ställa in regler för försäljningsprovision
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Kundportal för Dynamics 365 Supply Chain Management
+              items:
+                - name: Översikt över kundportal
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Installera, ställa in och uppdatera kundportalen'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Skapa och hantera kundportalanvändare
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Anpassa och använda kundportalen
+                  href: sales-marketing/customer-portal-customize.md
             - name: Handelsavdrag
               href: sales-marketing/trade-allowance.md
             - name: Skapa ett nytt handelsavtal
               href: sales-marketing/tasks/create-new-trade-agreement.md
-        - name: Tjänsthantering
+        - name: Servicehantering
           items:
             - name: Tjänsthantering – översikt
               href: service-management/service-management-home-page.md
@@ -2655,6 +2671,8 @@
                   href: warehousing/partial-location-cycle-counting.md
                 - name: Definiera rullande inventering av del av platser
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Jobbet Rensning av behållningsposter för lagerstyrning
+                  href: warehousing/onhand-cleanup.md
                 - name: Lagerjournal
                   href: inventory/inventory-journals.md
                 - name: Lagerplats
