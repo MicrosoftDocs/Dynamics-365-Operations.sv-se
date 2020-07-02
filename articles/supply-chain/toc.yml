@@ -587,8 +587,10 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Lagringsrapport för lagervärde
                   href: cost-management/inventory-value-report-storage.md
-                - name: Lagring av Lagerföråldringsrapport
+                - name: Lagring av lagerföråldringsrapport
                   href: cost-management/inventory-aging-report-storage.md
+                - name: Exempel på lagerföråldringsrapport och logik
+                  href: cost-management/inventory-aging-report.md
             - name: Tillverkningsredovisning
               items:
                 - name: Strukturlisteberäkningar
@@ -707,7 +709,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Skapa analytiska rapporter med PowerBi Desktop
+                - name: Skapa analytiska rapporter med Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1141,7 +1143,7 @@
               items:
                 - name: Använd JOIN-datakällor för att hämta data från flera programregister
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera ER-format för användning av parametrar som anges per juridisk person
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
@@ -1479,11 +1481,11 @@
                   href: procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Publicera mobila arbetsytor
               href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Office-integrering
+        - name: Office-integration
           items:
-            - name: Office-integrering – översikt
+            - name: Office-integration – översikt
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Office-integrering – självstudier
+            - name: Office-integration – självstudier
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
@@ -1497,7 +1499,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: Utveckla e-postmiljöer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Felsöka Office-integreringen
+            - name: Felsöka Office-integrationen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/supply-chain/toc.json
         - name: Organisationsadministration
           items:
