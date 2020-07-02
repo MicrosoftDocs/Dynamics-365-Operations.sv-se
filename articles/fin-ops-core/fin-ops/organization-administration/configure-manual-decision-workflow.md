@@ -3,7 +3,7 @@ title: Konfigurera manuella beslut i ett arbetsflöde
 description: I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett manuellt beslut.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46b875f52d3d3e7c755ee92dcd5faddf0d94356
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 130cb50369c13bc3478340023c94f169ee5250cf
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180059"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455043"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurera manuella beslut i ett arbetsflöde
 
@@ -239,26 +239,6 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
     <li>Listan <strong>Tillgängliga användare</strong> innehåller alla användare. Markera de användare som ska tilldelas beslutet och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>Kö</td>
-    <td>En arbetsuppgiftskö</td>
-    <td>
-    <ol>
-    <li>Klicka på fliken <strong>Köbaserad</strong>när du har markerat <strong>Kö</strong>.</li>
-    <li>Följ dessa steg om du vill tilldela beslutet till en viss kö: <ol>
-    <li>I listan <strong>Kötyp</strong> väljer du <strong>Arbetsuppgiftskö</strong>.</li>
-    <li>Välj kön i listan <strong>Könamn</strong>.</li>
-    </ol>
-    </li>
-    <li>Om ett visst villkor ska bestämma vilken kö beslutet har tilldelats, följer du dessa steg: <ol>
-    <li>I listan <strong>Kötyp</strong> väljer du <strong>Villkorsbelagda arbetsuppgiftsköer</strong>.</li>
-    <li>I listan <strong>Könamn</strong> väljer du <strong>Villkorsbaserad kö</strong>.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] Detta alternativ används bara för vissa arbetsflöden, till exempel ärendehantering.</blockquote>
     </td>
     </tr>
     </tbody>

@@ -3,7 +3,7 @@ title: Installera, ställ in och uppdatera kundportalen
 description: Det här avsnittet innehåller licensieringsinformation och installationsinstruktioner för kundportalen.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3414010"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435619"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installera, ställ in och uppdatera kundportalen
 
@@ -35,7 +35,7 @@ Om du vill implementera kundportalen måste du ha följande licenser:
 
 Kundportalen beror på Power Apps-portaler och dubbelskrivning, vilket visas i bilden nedan.
 
-![![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")](media/customer-portal-elements.png "Customer portal dependencies")
+![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")
 
 Till skillnad från andra funktioner från Supply Chain Management, kundportalmallen finns i Power Apps-portaler. Därför begränsas kundportalen av de funktioner som tillhandahålls av Power Apps-portaler och enheterna i dubbelriktad skrivning.
 
@@ -59,7 +59,7 @@ Innan du börjar ska du kontrollera att du redan har slutfört de [nödvändiga 
 
 1. Gå till [make.powerapps.com](https://make.powerapps.com/).
 2. Kontrollera att du använder den miljö där du har aktiverat dubbelriktad skrivning.
-3. På fliken **Skapa** bläddra ned till avsnittet **Starta från mall** och välj den mall som har fått kunden för hantering av **Supply Chain Management-kund**.
+3. På fliken **Skapa** bläddra ned till avsnittet **Starta från mall** och välj den mall som har fått kunden för hantering av **Kundportal**.
 4. Följ instruktionerna på skärmen.
 
 När etableringen har slutförts kan du få tillgång till kundportalen i avsnittet **Dina appar** på sidan **Start**-sidan.
@@ -71,7 +71,7 @@ När etableringen har slutförts kan du få tillgång till kundportalen i avsnit
 
 Fler funktioner kan läggas till kundportalen senare. Alla ändringar som Microsoft gör i de underliggande lösningskomponenterna visas automatiskt i din miljö. Den webbplats som är etablerad i miljön återspeglar dock inte automatiskt ändringar som görs i konfigurationsdata. Du måste manuellt tillämpa ändringarna genom att hämta koden från den nya mallen och koppla den till den etablerade webbplatsen.
 
-## <a name="resources"></a>Resurser
+## <a name="additional-resources"></a>Ytterligare resurser
 
 Om du vill veta hur du kan ställa in och anpassa kundportalen bör du börja med att granska följande dokumentation för den underliggande tekniken:
 

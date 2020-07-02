@@ -3,7 +3,7 @@ title: Översikt över klienteling
 description: Det här avsnittet innehåller en översikt över nya klienteling funktioner som är tillgängliga i butiksappen.
 author: bebeale
 manager: AnnBe
-ms.date: 11/01/19
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 4f045f8509a6b5027fd3cf8e5ca9e382457a5e83
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
+ms.sourcegitcommit: 21943fa91c35f063a5bd064290bf2c005394df52
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024029"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456517"
 ---
 # <a name="clienteling-overview"></a>Översikt över kundhantering
 
@@ -115,7 +115,7 @@ Följ dessa steg för att ställa in integrationen.
 3. Skapa ett Azure Key Vault och spara programhemligheten. Instruktioner finns i [snabbstart: ställ in och hämta en hemlighet från Azure Key Vault med hjälp av Azure-portalen](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
 4. Aktivera åtkomst till Azure Key Vault från Handel. För att slutföra det här steget måste du ha ett program-ID och en hemlighet. Programmet kan vara samma program som du skapade i steg 1, eller så kan det vara ett nytt program. (Med andra ord kan du använda det program som du skapade i steg 1 för både åtkomst till Key Vault valv och Customer Insights service, eller så kan du skapa ett unikt program för varje typ av åtkomst.) Instruktioner finns i [lagra autentiseringsuppgifter för Service Principals i Azure Stack Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
 5. In Administration, gå till **Systemadministration \> Inställningar \> Parametrar för Key Vault** och ange den information som krävs för Key Vault. I fältet **Key Vault-klient** anger du det program-ID som du använde i steg 4, så att Handel kan komma åt hemligheterna i Key Vault.
-6. Om du vill lägga till det program som du skapade i steg 1 i listan över säkra program (kallas ibland för vit lista), går du till Customer Insights och ger åtkomst **Visa** till programmet. För anvisningar, se [Behörigheter](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Om du vill lägga till det program som du skapade i steg 1 i listan över säkra program (kallas ibland för säker lista), går du till Customer Insights och ger åtkomst **Visa** till programmet. För anvisningar, se [Behörigheter](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
 7. I Handel, på sidan **Handel-parametrar** på fliken **klienteling** på snabbfliken **Dynamics 365 Customer Insights** följ dessa steg:
 
     1. I fältet **program-ID** ange det program-ID du använde i steg 1.

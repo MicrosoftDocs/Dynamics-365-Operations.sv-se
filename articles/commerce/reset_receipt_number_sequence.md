@@ -19,17 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123956"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456583"
 ---
-# <a name="reset-receipt-numbers"></a>Återställ kvittonummer 
+# <a name="reset-receipt-numbers"></a>Återställa kvittonummer 
 
 [!include [banner](includes/banner.md)]
 
+> [!NOTE]
+> Vi kräver att du väljer egenskapen **oberoende sekvens** för alla kvittotyper i funktionsprofilen innan du använder den här funktionen. Även systemets tidszon för enheten, där kassan används, bör matcha motsvarande lagringstidszon. Vi arbetar med att ta bort dessa begränsningar i framtida versioner. Kontakta Microsoft Support innan du använder den här funktionen i produktionen.
 
 Åter försäljare genererar kvittonummer för olika åtgärder i butiken, t.ex. kontanter och hämtköpstransaktioner, returtransaktioner, kundorder, offerter och betalningar. Även om återförsäljare definierar sina egna kvittoformat, har vissa länder eller regioner regler som begränsar dessa kvittoformat. Dessa förordningar kan t.ex. begränsa antalet tecken på kvittot, kräva efterföljande kvittonummer, begränsa vissa specialtecken eller kräva att kvittonummer måste återställas vid början av året. Microsoft Dynamics 365 Commerce gör processen att hantera kvittonummer mycket flexibel, så att återförsäljarna kan uppfylla gällande krav. I det här avsnittet beskrivs hur du använder funktionen för att återställa kvittonummer.
 

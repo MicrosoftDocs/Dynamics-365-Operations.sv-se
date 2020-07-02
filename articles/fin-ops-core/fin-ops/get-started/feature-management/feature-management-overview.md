@@ -1,9 +1,9 @@
 ---
 title: Översikt över funktionshantering
 description: I det här avsnittet beskrivs funktionen funktionshantering och hur du kan använda den.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778715"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456607"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -144,3 +144,34 @@ Med funktionshantering kan du styra de funktioner som levereras i varje utgåva.
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Använda funktionshantering för att aktivera ISV-funktioner eller anpassade funktioner
 
 Funktionshantering är för närvarande inte tillgängligt för funktioner från oberoende programvaruleverantörer (ISV) och anpassade funktioner. Microsoft lägger dock till fler funktioner för att förbättra funktionshanteringen. När dessa förbättringar har genomförts gör Microsoft funktionshantering tillgängligt för alla funktioner och innehåller instruktioner för hur du uppdaterar funktionerna.
+
+## <a name="frequently-asked-questions-faq"></a>Vanliga frågor
+
+### <a name="when-are-features-added-removed-or-changed"></a>När är funktioner tillagda, borttagna eller ändrade? 
+Funktionerna läggs till, tas bort och ändras genom kodändringar. Miljöer måste uppdateras för att de ska få ändringarna.
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>Blir en funktion automatiskt obligatorisk? 
+Nej, en funktion som blir obligatorisk är inte en automatisk åtgärd. Produktgrupperna måste göra en kodändring.
+
+### <a name="when-do-features-become-mandatory"></a>När ska funktioner vara obligatoriska? 
+Policyn är att alla nya funktioner kommer att ingå i en 12-månaders period och inte kräver någon ändringshantering förrän funktionen aktiveras. Produktgrupperna kan välja om en funktion ska vara obligatorisk efter att perioden har upphört. 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Varför finns det inget specifikt "obligatoriskt aktiverat datum"? 
+Tidpunkten för uppdateringsfrisläppning är variabel, tidsinställning för miljön är variabel och kunderna kan välja att hoppa över vissa uppdateringar. Därför är det svårt att fastställa särskilda datum. 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Var är dokumentationen till de funktioner som görs obligatoriska? 
+Denna dokumentation hämtas från programteamen. Dessa nämns ofta i [borttagna eller inaktuella funktioner](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Finns det ett produkt- eller signalmeddelande om att en funktion ska vara obligatorisk aktiverad? 
+En meddelandefunktion som är relaterad till att utföra en funktion som är obligatorisk finns inte idag.
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Kan funktionerna någonsin aktiveras utan att kunden vet om det? 
+Ja, om funktioner inte har en funktionell effekt kan de aktiveras som standard.
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Vad är funktionsflygning och hur fungerar det med funktionshantering? 
+Funktionsflygningar är i realtid på/av-brytare som Microsoft kontrollerar. De är åtskilda från kundkontrollen som ingår i funktionshantering. 
+- Privata förhandsgranskningsfunktioner visas inte i funktionshantering förrän de har bearbetats. I produktionen måste kunden komma överens om att bli en del av ett specialprogram för att kunna genomföras.
+- Funktioner för offentlig förhandsgranskning (allmänt tillgängliga) visas i funktionshantering om de inte är tillgängliga. Att utföra en flygning av en funktion betraktas som en sista utvägsalternativ för produktgrupper om det finns ett kritiskt problem och vanligtvis är en per kund-operation.
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Kan funktionerna någonsin inte vara tillgängliga utan att kunden vet om det? 
+Ja, om en funktion påverkar en miljö som inte har någon funktionell effekt kan de aktiveras som standard.

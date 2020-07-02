@@ -1818,8 +1818,34 @@
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: 'GST (moms), Indien'
                   items:
-                    - name: Indien GST – översikt
+                    - name: Indien GST (moms) – översikt
                       href: localizations/apac-ind-gst.md
+                    - name: Nyheter eller ändringar för GST-lokalisering (moms) för APAC Indien
+                      items:
+                        - name: Nyheter och ändringar i 10.0.0
+                          href: localizations/apac-ind-news-letter-10-0-00.md
+                        - name: Nyheter och ändringar i 10.0.01
+                          href: localizations/apac-ind-news-letter-10-0-01.md
+                        - name: Nyheter och ändringar i 10.0.02
+                          href: localizations/apac-ind-news-letter-10-0-02.md
+                        - name: Nyheter och ändringar i 10.0.03
+                          href: localizations/apac-ind-news-letter-10-0-03.md
+                        - name: Nyheter och ändringar i 10.0.04
+                          href: localizations/apac-ind-news-letter-10-0-04.md
+                        - name: Nyheter och ändringar i 10.0.05
+                          href: localizations/apac-ind-news-letter-10-0-05.md
+                        - name: Nyheter och ändringar i 10.0.06
+                          href: localizations/apac-ind-news-letter-10-0-06.md
+                        - name: Nyheter och ändringar i 10.0.07
+                          href: localizations/apac-ind-news-letter-10-0-07.md
+                        - name: Nyheter och ändringar i 10.0.08
+                          href: localizations/apac-ind-news-letter-10-0-08.md
+                        - name: Nyheter och ändringar i 10.0.09
+                          href: localizations/apac-ind-news-letter-10-0-09.md
+                        - name: Nyheter och ändringar i 10.0.10
+                          href: localizations/apac-ind-news-letter-10-0-10.md
+                        - name: Nyheter och ändringar i 10.0.11
+                          href: localizations/apac-ind-news-letter-10-0-11.md
                     - name: 'Referensgrupper för GST (moms), Indien'
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST (moms)‑integration för kassaapparater
@@ -2346,6 +2372,8 @@
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Omsättnings- och saldoutdrag
                   href: localizations/emea-pol-turnover-balances-statement.md
+                - name: Dela upp kursdifferens för LR/KR
+                  href: localizations/emea-pol-split-ap-ar-exchange-difference.md
             - name: Ryssland
               items:
                 - name: Ryssland – översikt
@@ -2956,7 +2984,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: Skapa analytiska rapporter med PowerBI Desktop
+                - name: Skapa analytiska rapporter med Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -3408,28 +3436,32 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Ändra och kör format för att använda dokumenthanteringsfiler
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                        - name: Felsök datakällor
-                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Felsök datakällor
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Generera streckkods bilder med BARCODE
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera modellmappningar
                   items:
-                    - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                    - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
                     - name: Hantera ER-modellmappning i separata ER-konfigurationer
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurera format
                   items:
+                    - name: Välj modelldefinitioner när du skapar format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurera ER-format för användning av parametrar som anges per juridisk person
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                     - name: Ställa in parametrarna för ett ER-format per juridisk person
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: Välj modelldefinitioner när du skapar format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Periodisera körning av element i ER-format
                       items:
                         - name: Periodisera körning av ett sekvenselement
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                         - name: Periodisera körning av ett XML-element
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Utforma flerspråkiga rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Relativ sökväg i databindningar
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Använd elektroniska rapporteringslösningar i Finance and Operations
@@ -3538,11 +3570,11 @@
                   href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/finance/toc.json
             - name: Publicera mobila arbetsytor
               href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/finance/toc.json
-        - name: Office-integrering
+        - name: Office-integration
           items:
-            - name: Office-integrering – översikt
+            - name: Office-integration – översikt
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/finance/toc.json
-            - name: Office-integrering – självstudier
+            - name: Office-integration – självstudier
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
@@ -3556,7 +3588,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
             - name: Utveckla e-postmiljöer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/finance/toc.json
-            - name: Felsöka Office-integreringen
+            - name: Felsöka Office-integrationen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/finance/toc.json
         - name: Organisationsadministration
           items:

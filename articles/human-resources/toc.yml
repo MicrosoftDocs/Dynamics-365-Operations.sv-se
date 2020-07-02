@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 11 juni 2020
+          href: hr-whats-new-2020-06-11.md
         - name: 28 maj 2020
           href: hr-whats-new-2020-05-28.md
         - name: 14 maj 2020
@@ -23,16 +25,18 @@
           href: hr-whats-new-2020-03-10.md
         - name: 3 mars 2020
           href: hr-whats-new-2020-03-03.md
-        - name: 25 februari 2020
-          href: hr-whats-new-2020-02-25.md
-        - name: 18 februari 2020
-          href: hr-whats-new-2020-02-18.md
-        - name: 12 februari 2020
-          href: hr-whats-new-2020-02-12.md
-        - name: 7 februari 2020
-          href: hr-whats-new-2020-02-07.md
-        - name: 3 februari 2020
-          href: hr-whats-new-2020-02-03.md
+        - name: Nyhetsarkiv 2020
+          items:
+            - name: 25 februari 2020
+              href: hr-whats-new-2020-02-25.md
+            - name: 18 februari 2020
+              href: hr-whats-new-2020-02-18.md
+            - name: 12 februari 2020
+              href: hr-whats-new-2020-02-12.md
+            - name: 7 februari 2020
+              href: hr-whats-new-2020-02-07.md
+            - name: 3 februari 2020
+              href: hr-whats-new-2020-02-03.md
     - name: Administratörsguide
       items:
         - name: Översikt
@@ -65,16 +69,18 @@
               href: hr-admin-integration-recurring-data-export.md
             - name: Integration med Office
               items:
-                - name: Office-integrering – självstudier
+                - name: Office-integration – självstudier
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Uppdatera enhetsdata i Excel
                   href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Skapa Öppna i Excel-upplevelse
                   href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Felsöka Office-integrering
+                - name: Felsöka Office-integration
                   href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Hantera funktioner
           href: hr-admin-manage-features.md
+        - name: Konfigurera och hantera databasloggning
+          href: hr-admin-database-logging.md
         - name: Utforska användargränssnittet
           items:
             - name: Användargränssnittselement
@@ -181,13 +187,13 @@
               href: hr-admin-integration-recurring-data-export.md
             - name: Integration med Office
               items:
-                - name: Office-integrering – självstudier
+                - name: Office-integration – självstudier
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Uppdatera enhetsdata i Excel
                   href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Skapa Öppna i Excel-upplevelse
                   href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Felsöka Office-integrering
+                - name: Felsöka Office-integration
                   href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Referens för enhets-API
           items:

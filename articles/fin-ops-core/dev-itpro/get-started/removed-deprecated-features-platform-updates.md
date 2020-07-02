@@ -3,7 +3,7 @@ title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
-ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3433932"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457576"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -36,6 +36,22 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > [!NOTE]
 > Detaljerad information om objekt i Finance and Operations-appar hittas i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations-appar.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.13 för Finance and Operations-appar
+
+> [!NOTE]
+> Version 10.0.13 har ännu inte frisläppts. Denna information tillhandahålls för planeringsändamål. Funktionen och dess innehåll för version 10.0.13 kan ändras. Mer information om versioner finns i [Tillgänglighet för tjänstuppdateringar](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Uppgradering av tre jQuery-komponentbibliotek 
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Tre jQuery-komponentbibliotek uppdateras för säkerhetskorrigeringar och för att bibehålla valutan.   
+| **Ersatt av en annan funktion?**   | Följande bibliotekpåverkas: jQuery (till version 3.5.0 från version 2.1.4), jQuery UI (till version 1.12.1 från version 1.11.4), jQuery qTip (till version 3.0.3 från 2.2.1). Vägledningen för migreringen har tillhandahållits online av jQuery.  |
+| **Produktområden som påverkas**         | Utökningsbara kontroller, anpassad JavaScript-kod använda gamla API:er |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Med version 10.0.13/plattformsuppdatering 37 kan kunderna flytta till de senaste biblioteken genom att aktivera funktionen "uppgradera tre jQuery komponentbibliotek". Det är obligatoriskt att flytta till de nya biblioteken med utgåvan från april 2021 för att kunna migrera berörda API:er.   |
+
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.12 för Finance and Operations-appar
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Formulärtillägg för rutnät- eller gruppkontroll som innehåller ogiltiga fältreferenser
@@ -50,11 +66,11 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.11 för Finance and Operations-appar
 
-### <a name="explicit-whitelisting-for-self-service-environments"></a>Explicita vitlistor för självbetjäningsmiljöer
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicita säkra listor för självbetjäningsmiljöer
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Processen för IP-vitlista har ändrats. Självbetjäning stöder inte längre IP-vitlista. |
+| **Orsak till inaktuell/borttagning** | Processen för att flytta IP till säkra listor har ändrats. Självbetjäning stöder inte längre IP säkra listor. |
 | **Ersatt av en annan funktion?**   | Mer information finns i [Konfigurera Azure Active Directory villkorlig åtkomst](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
 | **Produktområden som påverkas**         | Säkerhet |
 | **Distribueringsalternativ**              | Moln |

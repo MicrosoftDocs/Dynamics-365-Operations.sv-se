@@ -3,7 +3,7 @@ title: Kundportal för Dynamics 365 Supply Chain Management – översikt
 description: I det här avsnittet introduceras kundportalen och det beskrivs vilka personer som ska använda dem och hur de fungerar.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b57365d8042c1d791ee2c50c5458a6595a58270
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 709ba18be9e2edd5d0a7f143aaed5ef94f365b91
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3414009"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456936"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundportal för Dynamics 365 Supply Chain Management – översikt
 
@@ -37,6 +37,12 @@ Kundportalmallen har alla anpassningsmöjligheter som de portalfunktioner Power 
 
 > [!NOTE]
 > Kundportaldokumentationen riktar sig till administratörer, systemanpassare och systemintegrerare som ställer in kundportalen för en Supply Chain Management-installation. Med hjälp av termerna _kund_ och _användare_ kan du beskriva personer som är kunder i organisationen som kör Supply Chain Management och vem som ska använda den sista portalen.
+
+## <a name="video"></a>Video
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
+
+[Översikten över kundportalmallen i Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (visas ovan) finns med i [Finance and Operations spellistan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) tillgänglig på YouTube.
 
 ## <a name="who-should-use-it"></a>Vem ska använda den?
 
@@ -58,6 +64,6 @@ Kundportalen utgörs av en Power Apps-mall för portaler. Det beror på Power Ap
 
 [Dubbelriktad skrivning](https://docs.microsoft.com/powerapps/maker/portals/overview) är en medföljande infrastruktur som ger nära realtidssamverkan mellan Dynamics 365 och Finance and Operations-appar. Dubbelriktad skrivning ger dubbelriktad integration mellan Finance and Operations-appar och Common Data Service. Därför ger den ett integrerat användargränssnitt mellan programmen. Kundportalen är beroende av enheter som har synkroniserats med dubbelriktad skrivning. Innan data från Supply Chain Management kan placeras i kundportalen måste dubbelriktade skrivfunktioner aktiveras för alla lämpliga enheter.
 
-![![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")](media/customer-portal-elements.png "Customer portal dependencies")
+![Kundportalberoenden](media/customer-portal-elements.png "Kundportalberoenden")
 
 Kundportalen fungerar som utgångspunkt för organisationer som vill använda Power Apps-portaler för att skapa en extern webbplats som använder data från en installation av Supply Chain Management. Det hjälper organisationer att ansluta dubbelriktad, Supply Chain Management och Power Apps-portaler.

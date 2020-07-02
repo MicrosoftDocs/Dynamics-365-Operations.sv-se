@@ -3,7 +3,7 @@ title: Betalningsmetoder
 description: Varje betalningstyp som en återförsäljare godtar, måste konfigureras när systemet installeras. Det här avsnittet ger en beskrivning av betalningstyperna som du kan ställa in och processen för hur du ställer in dem.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6afbddad869c70e4527c49fc5d4b520d7602f825
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 710c2f3bbe5b76af6d0bc0bf9a469e52c98c18d2
+ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024124"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463170"
 ---
 # <a name="payment-methods"></a>Betalningsmetoder
 
@@ -39,7 +39,7 @@ Varje betalningstyp som en återförsäljare godtar, måste konfigureras när sy
 - **Valuta** – Den primära formen av betalningsmedel förutom företagets standardvaluta. Mynt och sedlar är två former av valuta. Valutabetalningsmetoden representerar alla valutor som används. Innan du kan använda den här typen av betalningsmedel måste du ställa in valutor och ange växelkurser för valutorna.
 - **Kort** – Alla typer av kort som används, till exempel debetkort och kreditkort. Det är en bra idé att ställa in en kortbetalningsmetod på organisationsnivå för varje typ av kort. Sedan kan en typ av betalningsmetod ställas in för varje kort eller kortuppsättning på butiksnivå som bearbetas med samma inställningar. För att kunna använda typen av betalningsmedel Kort måste du ställa in de kort som finns på marknaden, dvs. betal- och kreditkort som Visa, Master och Euro, innan de kan godkännas som betalning i en butik.
 - **Kreditfaktura** – Kreditfakturor som utfärdas och löses in i kassan. Kreditfakturor kan vara kreditfakturor för kredit eller returorder som utfärdats mot en returförsäljning. Om kreditfakturor bara löses in delvis utfärdar programmet en ny kreditfaktura med ett nytt saldo. Den nya kreditfakturan har ett nytt nummer. En kreditfaktura kan bara användas en gång och systemet håller reda på alla nummer som använts. Posten kan visas på sidan **Kreditfakturaregister**. Kunden kan inte lösa in mer än värdet på kreditfakturan.
-- **Presentkort** – Presentkort som utfärdas och löses in i kassan. Överbetalning är inte tillåten med presentkort.
+- **Presentkort** – Presentkort som utfärdas och löses in i kassan. Överbetalning är inte tillåten med presentkort. Alla presentkort bör ha mappningar av kortnummer. 
 - **Kundkonto** – Betalningen kan debiteras ett kundkonto från kassan samtidigt som försäljningen. Du kan också använda denna betalningsmetod för att samla in försäljninginformation eller kundspecifika rabatter, eller när kunden gör betalningar, med hjälp av en annan betalningsmetod. I detta fall måste du ställa in kundspecifik information.
 - **Förmånspoäng** – Poängen som kunder samlar in via bonusprogram. Om du skapar bonusprogram kan kunder tjäna in poäng och lösa in dem på olika sätt. Till exempel i vissa bonusprogram kan kunder lösa in förmånspoängen i form av en rabatt eller även använda dem som en betalningsform.
 
