@@ -3,7 +3,7 @@ title: Behållaremodul
 description: Det här avsnittet handlar om behållarmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025538"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417356"
 ---
 # <a name="container-module"></a>Behållaremodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -46,9 +45,13 @@ Tre behållarmoduler stöds: behållare, behållare med 2 platser och behållare
 - En webbplatsförfattare vill ha en layout med sex kolumner, där sex moduler visas sida vid sida. Därför använder webbplatsförfattaren en behållare som innehåller sex kolumner.
 - En webbplatsförfattare vill placera en modul på en sida men vill inte att den ska fylla skärmen. Därför lägger webbplatsförfattaren till modulen i en behållarmodul och anger behållarens egenskap **bredd** till **anpassad behållare**.
 
+Följande bild visar ett exempel på en behållarmodul som innehåller en karusellmodul i Commerce webbplatsskaparen. I det här exemplet är egenskapen **Bredd** för behållarmodulen inställd på **Fyll skärm**.
+
+![Exempel på en behållarmodul](./media/ecommerce-container.PNG)
+
 ## <a name="container-module-properties"></a>Egenskaper för behållarmoduler
 
-| Egenskapsnamn     | Värden | Beskrivning |
+| Egenskapsnamn     | Värden | beskrivning |
 |-------------------|--------|-------------|
 | Rubrik           | Rubriktext och rubriktagg (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En valfri rubrik kan anges för behållaren. Som standard används rubriktaggen **H2** för rubriken. Taggen kan emellertid ändras så att den uppfyller tillgänglighetskraven. |
 | Bredd             | **Passa behållare** eller **Fyll skärm** | Om värdet är inställt på att **Fylla behållare** (standardvärdet) modulerna inne i behållaren begränsas till behållarens bredd. Om värdet är inställt på **Fyll skärm** begränsas modulerna inte till behållarens bredd utan kan fylla skärmen. |
@@ -99,23 +102,32 @@ Ytterligare egenskaper kan användas för att optimera layouten för olika visni
 
 Om du vill lägga till en modul för behållarspelare på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa en sidmall som har namnet **behållarmall**. 
-1. I facket **Brödtext**, lägg till en **standardsida**-modul.
-1. Avsluta redigeringen i mallen och publicera den.
-1. Använd den behållarmall som du just skapade för att skapa en sida med namnet **behållarsida**.
-1. Lägg till platsen **Huvud** på ny sida, lägg till en behållarmodul.
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Behållarmall** och välj sedan **OK**.
+1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den. 
+1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
+1. I dialogrutan **Välj en mall**, välj den videospelarmall du skapade. Under **sidnamn**, ange **Behållarsida** och klicka sedan på **OK**.
+1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
 1. I egenskapsrutan för behållarmodulen anger du egenskapen **antalet kolumner** till **1** och egenskapen **bredd** till **fyll behållare**.
-1. I behållarmodulen, lägg till ett innehållsblockmodul.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Innehållsblock** och klicka sedan på **OK**.
 1. Konfigurera rubrik, bild och layout i egenskapsfönstret för innehållsblockmodulen.
-1. Spara och förhandsgranska sidan. Du bör se en modul som får plats inom samma bredd som behållarmodulen.
+1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Du bör se en modul som får plats inom samma bredd som behållarmodulen.
 1. I behållarmodulens egenskapsfönster, ändra värdet för **Antal kolumner** till **3**.
-1. Lägg till två fler innehållsblockmoduler till behållarmodulen.
-1. Spara och förhandsgranska sidan. Nu ska du se tre innehållsblockmoduler som visas sida vid sida.
-1. När du har uppnått layouten du vill ha, avslutar du redigeringen av sidan och publicerar den.
+1. Lägg till ytterligare två moduler för innehållsblock i behållarmodulen och konfigurera dem.
+1. Klicka på **Spara** och välj **Förhandsgranska** för att förhandsgranska sidan. Nu ska du se tre innehållsblockmoduler som visas sida vid sida.
+1. När du har uppnått layouten du vill ha väljer du **Slutför redigering** för att checka in sidan och väljer sedan **Publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Startpaket – översikt](starter-kit-overview.md)
+
+[Dragspelsmodulen](add-accordion.md)
+
+[Flikmodulen](add-tab.md)
 
 [Karusellmodul](add-carousel.md)
 

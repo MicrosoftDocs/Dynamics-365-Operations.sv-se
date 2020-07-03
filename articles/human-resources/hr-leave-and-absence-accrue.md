@@ -3,12 +3,12 @@ title: Periodisera planer för tjänstledighet och frånvaro
 description: Du kan periodisera tjänstledighet och frånvaro i Dynamics 365 Human Resources för flera medarbetare eller för en person.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3048f9b6b52a150219067430abb54e5b5bf5c3e4
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3197323"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429069"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodisera planer för tjänstledighet och frånvaro
 
@@ -103,7 +103,19 @@ Ta bort periodiseringsposter för ett specifikt plan- och datumintervall. Period
 
 2. Under **Hantera tjänstledighet**, välj **Ta bort granskning av periodisering av tjänstledighet**.
 
+## <a name="configure-preview-features"></a>Konfigurera förhandsfunktioner
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+Om du har aktiverat förhandsfunktioner för tjänstledighet och frånvaro, måste du också konfigurera inställningarna för dem.
+
+### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Periodisera tjänstledighet per företag eller per tjänstledighetsplan
+
+När du ska periodisera planer för tjänstledighet och frånvaro kan du välja att periodisera för alla företag. Om du väljer alla företag kan du inte välja enskilda tjänstledighetsplaner. Om du väljer att inte periodisera för alla företag kan du periodisera för en viss tjänstledighetsplan. 
+
+Dessa alternativ är tillgängliga när du periodiserar för alla medarbetare eller enskilda medarbetare. 
+
 ## <a name="see-also"></a>Se även
 
-- [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
-- [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)
+[Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)</br>
+[Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)

@@ -3,7 +3,7 @@ title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260516"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412364"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
@@ -117,7 +117,11 @@ Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 - Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. Observera att du inte kan flytta ett element utanför dess överordnade grupp. Om du vill använda det här verktyget väljer du knappen **Flytta** i verktygsfältet och väljer sedan det element som ska flyttas. När du markerar ett element kommer appen att bestämma platser som elementet kan flyttas till. Dessa platser kallas *släppzoner*. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
 - Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer knappen **Hoppa över** på verktygsfältet kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan ta bort eller lägga till fält interaktivt i tabbsekvensen.
 - Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från den genom att markera fälten.
-- Använd verktyget **Kräv** för att tilldela ett element som krävs för inmatning av data. När du väljer knappen **Kräv** på verktygsfältet kommer alla element som har anpassats för att krävas att visas i en skuggad behållare. Du kan sedan göra dem inte obligatoriska igen. Det här alternativet är bara tillgängligt i en framtida version när funktionerna [Sparade vyer](saved-views.md) och **Tilldela fält enligt önskemål med anpassning** är aktiverade.
+- Använd verktyget **Kräv** för att tilldela ett element som krävs för inmatning av data. När du väljer knappen **Kräv** på verktygsfältet kommer alla element som har anpassats för att krävas att visas i en skuggad behållare. Du kan sedan göra dem inte obligatoriska igen. Det här alternativet är tillgängligt version 10.0.12 och senare när funktionen **Tilldela fält enligt önskemål med anpassning** är aktiverade.
+
+    > [!IMPORTANT]
+    > Version 10.0.12 är en förhandsgranskningsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 - Använd verktyget **Låsa** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer knappen **Låsa** på verktygsfältet kommer alla element som för närvarande icke är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
 - Använd knappen **Lägg till en app från Power Apps** under infoga i ett program som har skapats med hjälp av Microsoft Power Apps på sidan. För detaljerad information om hur du bäddar in en app från Power Apps på en sida finns i [Bädda in appar från Power Apps](embed-power-apps.md). Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad.  
 - Använd knappen **Lägg till en app** för att bädda in en app, antingen en skapad från Microsoft Power Apps eller en tredje part på sidan. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är aktiverad. 
@@ -159,11 +163,14 @@ För att anpassa instrumentpanelen högerklickar du på en kakel och väljer sed
 - Om du vill omorganisera arbetsytans paneler, välj i egenskapsfönstret **Anpassa den här sidan** för att öppna verktygsfältet **Anpassning**. Du kan sedan använda verktyget **Flytta** för att arrangera om panelerna som du vill.
 - Om du vill lägga till en ny panel i arbetsytans egenskapsfönster, välj **lägg till en arbetsyta**. En ny panel i arbetsytan skapas längst ned på instrumentpanelen. Du kan byta namn på denna nya arbetsytapanel som helst. Du kan också lägga till listor, rutor och länkar till arbetsytan enligt avsnittet [Lägga till listor, rubriker eller länkar till arbetsytor](#adding-a-tile-list-or-link-to-a-workspace) i det här ämnet.
 
+
+## <a name="sharing-personalizations"></a>Dela anpassningar
+När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att öppna den anpassade sidan och importera anpassningsfilen som du har skapat. Alternativt kan du ge dina anpassningar till en användare med administratörsbehörighet. Användaren kan sedan använda din anpassningsfil för många användare samtidigt genom att använda administrationssidan **anpassning**.
+
 ## <a name="administration-of-personalizations"></a>Administration av anpassning
+Sidan **Anpassning** är det centrala navet för hantering av anpassningar på organisationsnivå. Innehållet och funktionerna på den här sidan beror på om funktionen **Sparade vyer** har aktiverats.  
 
-När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att öppna den anpassade sidan och importera anpassningsfilen som du har skapat. Alternativt kan du ge dina anpassningar till en användare med administratörsbehörighet. Användaren kan sedan använda den anpassade filen till många användare samtidigt.
-
-Användare med administratörsbehörighet kan även hantera anpassningsalternativ för andra användare på sidan **Anpassning** .
+Information om kunder som har aktiverat funktionen **Sparade vyer** finns i avsnittet "Hantera vyer globalt" i ämnet [Sparade vyer](saved-views.md).  
 
 För kunder som inte har aktiverat funktionen [sparade vyer](saved-views.md) har den här sidan fyra flikar:
 
@@ -171,16 +178,6 @@ För kunder som inte har aktiverat funktionen [sparade vyer](saved-views.md) har
 - **Rensa** – Du kan rensa alla anpassningar för arbetsyta för en eller flera användare. Välj först en sida eller arbetsyta för att se en lista över de användare som har anpassat den. Sedan väljer du de användare vars anpassningar för den aktuella sidan eller arbetsytan ska avmarkeras och välj **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om en anpassning sparades för sidan eller arbetsytan, kan den anpassningen emellertid återimporteras.
 - **Användare** – Välj en användare för att visa listan över sidor som användaren har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare. Du kan dessutom återställa en användares bildtexter för funktioner. I detta fall, om användaren tidigare stängde alla popup-fönster som introducerar nya funktioner visas det i detta fall igen nästa gång användaren påträffar dessa funktioner.
 - **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I det här fallet tas alla anpassningar bort för alla användare, och alla sidor återställs till standardtillståndet. Om du senare aktiverar anpassningen igen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
-
-För kunder som inte har aktiverat funktionen [sparade vyer](saved-views.md) har sidan **Anpassning** fem flikar:
-
-- **Publicerade vyer** – de här vyerna har publicerats i din organisation. Om du vill ändra vilka användare som är riktade till dessa vyer kan du ändra säkerhetsrollerna eller de juridiska personer som är kopplade till varje vy. Du kan också exportera eller ta bort en eller flera publicerade vyer.
-- **Opublicerade vyer** – dessa vyer är mappvyer som har importerats till ditt system men ännu inte publicerats. Du kan publicera, exportera eller ta bort dessa vyer.
-- **Personliga vyer** – de här vyerna har skapats av användare i systemet. Du kan publicera en personlig vy till organisationen, eller kopiera en eller flera av dessa vyer till andra användare. Du kan också exportera eller ta bort dessa vyer.
-- **Användare** – Välj en användare för att visa listan över sidor som användaren har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare. Du kan dessutom återställa en användares bildtexter för funktioner. I detta fall, om användaren tidigare stängde alla popup-fönster som introducerar nya funktioner visas det i detta fall igen nästa gång användaren påträffar dessa funktioner.
-- **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I det här fallet tas alla anpassningar bort för alla användare, och alla sidor återställs till standardtillståndet. Om du senare aktiverar anpassningen igen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
-
-Användare som har åtkomst till sidan **anpassning** kan också importera personliga vyer eller verktygspalettsvyer genom att använda knappen **Importera vyer** i åtgärdsfönstret.
 
 ## <a name="personalizing-inventory-dimensions"></a>Anpassning av lagerdimensioner
 

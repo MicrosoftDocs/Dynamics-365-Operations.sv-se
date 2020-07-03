@@ -3,7 +3,7 @@ title: Skapa nya användare
 description: Användare är interna medarbetare i organisationen, eller externa kunder och leverantörer, som behöver åtkomst till systemet för att utföra sitt arbete.
 author: maertenm
 manager: AnnBe
-ms.date: 02/06/2020
+ms.date: 06/08/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9db4b6d355d6499bce6c550b2fbe76b82cf69fd4
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d126b449074663772549b96b86acb53db971a5d4
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143591"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435594"
 ---
 # <a name="create-new-users"></a>Skapa nya användare
 
@@ -50,8 +50,9 @@ Användare som är externa till innehavaren som miljön distribuerades till mås
 10. Välj **Spara**.
 
 ## <a name="import-users"></a>Importera användare
-1. Välj **Importera användare** i åtgärdsfönstret.
-2. Markera vald rad i listan.
-3. Välj **Importera användare**.
-4. Välj **Nära**.
+1. Gå till **Systemadministration \> Användare \> Användare**.
+2. Välj **Importera användare** i åtgärdsfönstret.
+3. Markera vald rad i listan.
+4. Välj **Importera användare**.
+5. Välj **Nära**.
 

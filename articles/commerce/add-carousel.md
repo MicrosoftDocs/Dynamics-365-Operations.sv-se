@@ -3,7 +3,7 @@ title: Karusellmodul
 description: Det här avsnittet handlar om karusellmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f399e4c5618b65b781fdd3ec835e841614579313
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 35aaf35419a8c5b83b2a3e1136a02200bf347c6b
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269738"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411306"
 ---
 # <a name="carousel-module"></a>Karusellmodul
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om karusellmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
@@ -44,9 +44,13 @@ Du kan lägga till innehållsblockmoduler i en karusellmodul. Egenskaperna för 
 - En karusell med flera reklammoduler i kan användas på en sida med produktinformation.
 - En karusell kan användas på alla marknadsföringssidor för att främja flera erbjudanden eller produkter.
 
+Följande bild visar ett exempel på en karusellmodul som används på en startsida. Den här karusellmodulen innehåller flera innehållsblockobjekt.
+
+![Exempel på en karusellmodul](./media/Hero.PNG)
+
 ## <a name="carousel-module-properties"></a>Egenskaper för karusellmodul
 
-| Egenskapsnamn             | Värde                 | Beskrivning |
+| Egenskapsnamn             | Värde                 | beskrivning |
 |---------------------------|-----------------------|-------------|
 | Spela upp automatiskt                  | **Sant** eller **falskt** | Om värdet är inställt på **Sant**sker övergången mellan objekten i karusellen automatiskt. Om värdet är inställt på **Falsk** sker ingen övergång om inte kunden använder tangentbordet eller musen för att flytta från ett objekt till nästa objekt. |
 | Intervall för bildövergång | Ett värde i sekunder    | Intervallet för övergångar mellan artiklar. |
@@ -58,7 +62,7 @@ Du kan lägga till innehållsblockmoduler i en karusellmodul. Egenskaperna för 
 
 Om du vill lägga till en karusellmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Skapa en ny sidmall genom att välja **Nytt**.
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Karusellmall** och välj sedan **OK**.
 1. I facket **Brödtext**, lägg till en **standardsida**-modul.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.  

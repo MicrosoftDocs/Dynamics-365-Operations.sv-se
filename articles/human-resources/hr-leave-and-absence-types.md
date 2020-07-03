@@ -3,12 +3,12 @@ title: Konfigurera typer av tjänstledighet och frånvaro
 description: Ställ in tjänstledighetstyper som medarbetarna kan göra i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df6e34fe6a23e6f0a8307a035752a35a15a3431c
-ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
+ms.openlocfilehash: 1802938f54a1d78e6ea60572a76177a037192ae0
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3198060"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428603"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurera typer av tjänstledighet och frånvaro
 
@@ -56,7 +56,9 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 
 8. Under **begränsa åtkomst till valda roller** väljer du om du vill begränsa åtkomsten. Välj sedan säkerhetsrollerna under **säkerhetsroller för denna tjänstledighetstyp**. Säkerhetsrollerna definieras i det arbetsflöde du markerade under **arbetsflödes-ID** tidigare i den här proceduren.
 
-9. Välj **Spara**.
+9. Under **Uppskjutningsrelationer**, välj om du vill att den här tjänstledighetstypen antingen ska skjuta upp en annan tjänstledighetstyp eller skjutas upp av en annan tjänstledighetstyp. När en ledighetsansökan lämnas in för den uppskjutna tjänstledighetstypen, skapas en uppskjutning av tjänstledighet automatiskt för den uppskjutna tjänstledighetstypen. 
+
+10. Välj **Spara**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurera regler för tjänstledighetstyp
 
@@ -66,16 +68,15 @@ Tjänstledighetstyper i Dynamics 365 Human Resources definierar olika typer av f
 
    Du kan ange helgdagar arbetstidskalender. Mer information finns i [skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
    
-## <a name="configure-preview-features"></a>Konfigurera förhandsfunktioner
-
-Om du har aktiverat förhandsfunktioner för tjänstledighet och frånvaro, måste du också konfigurera inställningarna för dem.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. Välj tjänstledighetstyp för att överföra de saldon som ska överföras till. Du kan också skapa en ny tjänstledighetstyp för överföring. 
-
+ 3. Ange **Överför tjänstledighetstyp** för tjänstledighetstypen. När du väljer det här alternativet överförs alla överförda saldon till den angivna tjänstledighetstypen. Tjänstledighetstypen måste också inkluderas i planen för tjänstledighet och frånvaro. 
+ 
+ 4. Definiera **utgångsregler** för tjänstledighetstypen. När du konfigurerar det här alternativet kan du välja en enhet med dagar eller månader och ange varaktighet för förfallodatum. Du kan också ange giltighetsdatum för utgångsregeln. Alla tjänstledighetssaldon som finns vid förfallotiden kommer att dras från tjänstledighetstypen och återspeglas i tjänstledighetssaldot. 
+ 
+ 
 ## <a name="see-also"></a>Se även
 
 - [Översikt över tjänstledighet och frånvaro](hr-leave-and-absence-overview.md)
 - [Skapa en plan för tjänstledighet och frånvaro](hr-leave-and-absence-plans.md)
 - [Skapa en arbetstidskalender](hr-leave-and-absence-working-time-calendar.md)
+- [Skjut upp tjänstledighet](hr-leave-and-absence-suspend-leave.md)
+

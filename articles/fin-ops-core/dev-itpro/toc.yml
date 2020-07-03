@@ -20,11 +20,9 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: Platform updates för 10.0.10 (maj 2020)
                   href: get-started/whats-new-platform-update-34.md
-                - name: Platform update 33 (april 2020)
-                  href: get-started/whats-new-platform-update-33.md
             - name: Borttagna och utfasade funktioner
               items:
-                - name: Borttagna och utfasade funktioner för Platform
+                - name: Borttagna och utfasade plattformsfunktioner
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Borttagna eller utfasade funktioner i tidigare versioner
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: Aktivera enhetsmappning för dubbelriktad skrivning
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Migrering av valutadatatyp för dubbelriktad skrivning
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Hantera dubbelriktad skrivning
                           items:
                             - name: Anpassa enhets- och fältmappningar
@@ -364,6 +364,8 @@
           items:
             - name: Azure Data Lake – översikt
               href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurera export till Azure Data Lake
+              href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-appar i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gör enhetslagring tillgängligt som en Data Lake
@@ -498,7 +500,9 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokal diagnostik
                       href: deployment/on-premises-diagnostics.md
-                    - name: PowerBI.com-integrering med lokala miljöer
+                    - name: Konfiguration av lokal haveriberedskap
+                      href: deployment/onprem-dr.md
+                    - name: PowerBI.com-integration med lokala miljöer
                       href: analytics/entity-store-on-prem.md
                     - name: Konfigurera om miljöer
                       href: lifecycle-services/reconfigure-environment.md
@@ -1436,6 +1440,8 @@
                   href: sysadmin/role-based-security.md
                 - name: Säkerhetsarkitektur
                   href: sysadmin/security-architecture.md
+                - name: Kryptering i Finance and Operations-appar
+                  href: sysadmin/encryption.md
                 - name: Ange tidsgräns för inaktiv session
                   href: sysadmin/session-idle-timeout.md
                 - name: Färdiga säkerhetsrapporter

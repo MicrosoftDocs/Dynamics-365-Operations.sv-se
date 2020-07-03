@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c66b25e941d9492c9749043b65c929c9b81db641
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: ad0f33aae7651dff4f424a047eccabd691a99d83
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279099"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418576"
 ---
 # <a name="administrators-learning-catalog"></a>Utbildningskatalog för administratörer
 
@@ -30,7 +30,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Dynamics 365 och Power Platform grunder](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar.  | Gratis, självstudier online utbildningsväg  | 5.5 timmar |
 | [Kom igång med Finance and Operations-appar](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)      | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg   | 2 timmar   |
-| [Kurs MB-900T01-A: Dynamics 365 - grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)   | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden.  | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag     |
+
 
 
 ## <a name="core-platform-knowledge"></a>Kunskap om huvudplattformen<a name="core-platform-knowledge"></a>

@@ -3,7 +3,7 @@ title: Sparade vyer
 description: I det här avsnittet beskrivs hur du använder funktionerna för sparade vyer.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: f6b7f1c64c273f52dc1d414185ba54efdfb8e5c0
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260493"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412341"
 ---
 # <a name="saved-views"></a>Sparade vyer
 
@@ -137,7 +137,7 @@ Om de ändringar som du vill göra i en publicerad vy bara innefattar publicerin
 7. [10.0.9/plattformsuppdatering 33 eller senare] om du ursprungligen har valt att den här publicerade vyn ska vara standardvy, blir den standardvyn för dessa användare igen efter publicera igen.  
 
 Om ändringarna i den publicerade vyn innefattar ändring av anpassningar eller filter som hör till vyn gör du så här: 
-1.  Växla till den publicerade vyn som du vill ändra. 
+1.  Läs in den publicerade vyn som du vill ändra. 
 2.  Spara en kopia av den publicerade vyn om du vill skapa ett lokalt utkast av den publicerade vyn. 
 3.  Ändra det lokala utkastet med ändringarna som krävs.
 4.  Publicera vyn med det ursprungliga namnet. 
@@ -149,14 +149,27 @@ Medan alla användare ser fliken **mina vyer** med deras personliga vyer ser äv
 
 För en lista med alla publicerade vyer för sidan är följande åtgärder tillgängliga. 
 
--    **Publicera**: Använd åtgärden **publicera** om du vill publicera en vy på nytt efter att publiceringsparametrar (namn, beskrivning, säkerhetsroller eller juridiska personer) ändras.
--    **Ta bort**: Använd åtgärden **Ta bort** för att ta bort en publicerad vy permanent. Den här åtgärden tar bort vyn för alla användare i systemet. Borttagningen av publicerade vyer börjar gälla när knappen **Spara** har valts.
+-    **Publicera** – Använd åtgärden **publicera** om du vill publicera en vy på nytt efter att publiceringsparametrar (namn, beskrivning, säkerhetsroller eller juridiska personer) ändras.
+-    **Spara som personlig** – Använd åtgärden **Spara som personlig** och skapa en personlig kopia av den publicerade vyn. Den här funktionen kan hjälpa dig att förstå innehållet i en vy som inte har publicerats till dig eller som ännu inte har publicerats. Du kan också använda den för att redigera och publicera om en vy. Den här funktionen introduceras i version 10.0.12.  
+-    **Ta bort** – Använd åtgärden **Ta bort** för att ta bort en publicerad vy permanent. Den här åtgärden tar bort vyn för alla användare i systemet. Borttagningen av publicerade vyer börjar gälla när knappen **Spara** har valts.
+
+## <a name="managing-views-globally"></a>Hantera vyer globalt
+Även om vissa hanteringsfunktioner ligger på alla sidor, vilket visas i det här avsnittet kan **systemadministratörer** och **sparade vyadministratörer** kan hantera vyer mer holistiskt för systemet via sidan **anpassning**. Den här sidan har särskilt följande avsnitt och funktioner: 
+
+- **Publicerade vyer** – i det här avsnittet visas alla vyer som har publicerats för din organisation. Härifrån kan du publicera en vy igen när du har justerat säkerhetsrollerna eller juridiska personer som är mål för vyn. Du kan också exportera eller ta bort en eller flera publicerade vyer. I version 10.0.12 och senare kan du använda åtgärden **Spara som personlig** för att skapa en personlig kopia av vyn, så att du kan uppdatera vyn eller få en bättre förståelse för innehållet. 
+- **Opublicerade vyer** – Detta avsnitt listar alla vyer som har importerats till ditt system men ännu inte publicerats. Du kan publicera, exportera eller ta bort dessa vyer. Åtgärden **Snabbpublicering** som har lagts till i version 10.0.12 gör att flera vyer från det här avsnittet kan publiceras i en åtgärd, med hjälp av den befintliga säkerhets rollen och konfigurationen av juridiska enheter. I version 10.0.12 och senare kan du använda åtgärden **Spara som personlig** för att skapa personliga kopior av dessa vyer, så att du kan få en bättre förståelse av deras antal.   
+- **Personliga vyer** – Det här avsnittet listar alla vyer som har skapats av användare i systemet. Härifrån kan du publicera en personlig vy till organisationen, eller kopiera en eller flera av dessa vyer till andra användare. Du kan också exportera eller ta bort dessa vyer.
+- **Användare** – Välj en användare för att visa listan över sidor som användaren har besökt. Du kan sedan justera användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare. Du kan dessutom återställa en användares bildtexter för funktioner. I detta fall, om användaren tidigare stängde alla popup-fönster som introducerar nya funktioner visas dessa popup-fönster igen nästa gång användaren påträffar dessa funktioner.
+- **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I det här fallet tas alla anpassningar bort för alla användare, och alla sidor återställs till standardtillståndet. Om du senare aktiverar anpassningen igen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
+
+Användare som har åtkomst till sidan **anpassning** kan också importera personliga vyer eller verktygspalettsvyer genom att använda knappen **Importera vyer** i åtgärdsfönstret. I version 10.0.12 och senare har en mekanism lagts till för att publicera vyer direkt när de importeras.  
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hur aktiverar jag sparade vyer i min miljö? 
-Obs! funktionen **sparade vyer** kräver att anpassningssystemet i Finance and Operations aktiveras. Om anpassningar inaktiveras för hela miljön inaktiveras vyer även om du följer stegen nedan. 
+> [!NOTE]
+> Funktionen **sparade vyer** kräver att anpassningssystemet i Finance and Operations aktiveras. Om anpassningar inaktiveras för hela miljön inaktiveras vyer även om du följer stegen nedan. 
 
-**10.0.9/plattformsuppdatering 33 och senare** funktionen **sparade vyer** är tillgänglig direkt i funktionshantering i alla miljöer. Liksom andra offentliga förhandsgranskningsfunktioner är aktivering av den här funktionen i produktion är föremål för [Tilläggsavtal för användarvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9/plattformsuppdatering 33 och senare** funktionen **sparade vyer** är tillgänglig direkt i funktionshantering i alla miljöer. Liksom andra förhandsgranskningsfunktioner är aktivering av den här funktionen i produktion är föremål för [Tilläggsavtal för användarvillkor](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8/plattformsuppdatering 32 och tidigare** funktionen **sparade vyer** kan aktiveras i miljöer med nivå 1 (utv/test) och nivå 2 (sandbox) för att ge ytterligare tester och designändringar genom att följa stegen nedan.
 

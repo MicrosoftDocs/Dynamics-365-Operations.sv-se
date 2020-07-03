@@ -3,7 +3,7 @@ title: Modul för sidhuvud
 description: Det här avsnittet handlar om moduler för sidhuvud och beskriver hur du skapar sidhuvud i Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cec138ebefbd2beb2f1cf6302ce58d8bbc5c4bbd
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261454"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411260"
 ---
 # <a name="header-module"></a>Modul för sidhuvud
-
 
 [!include [banner](includes/banner.md)]
 
@@ -36,6 +35,10 @@ Det här avsnittet handlar om moduler för sidhuvud och beskriver hur du skapar 
 I Dynamics 365 Commerce består ett sidhuvud av flera moduler, t.ex. rubrik, navigeringsmeny, sökning, annonsbanderoll och moduler för godkännande. 
 
 Modulen rubrik innehåller en webbplats logotyp, länkar till navigeringsnoden, länkar till andra sidor på webbplatsen, en vagnsymbol, en önskelista-symbol, inloggningsalternativ och sökfältet. En sidhuvudmodul optimeras automatiskt för enheten som platsen visas på (dvs. en stationär enhet eller en mobil enhet). Om du till exempel använder en mobil enhet döljs navigeringsfältet i **meny**-knapp (som ibland kallas en *hamburgarmeny*).
+
+Följande bild visar ett exempel på en rubrikmodul på en startsida.
+
+![Exempel på en rubrikmodul](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Egenskaper för sidhuvudmodul
 
@@ -50,31 +53,40 @@ Egenskapen **länkar till mitt konto** kan användas för att definiera kontosid
 Följande moduler kan användas i en sidhuvudmodul:
 
 - **Navigeringsmeny** – navigeringsmenyn representerar en hierarki för kanaler och andra statiska navigeringslänkar. Du kan konfigurera kanalnavigeringshierarkin i Dynamics 365 Commerce. Navigeringsmenyn har egenskapen **navigeringskälla** som används för att ange navigeringsmenyobjekt och statiska menyalternativ i Retail Server som en källa. Om statiska menyalternativ anges som källa kan relativa länkar till andra sidor på webbplatsen tillhandahållas. Konfigurerade artiklar visas sedan som sidhuvudnavigering. 
+
 - **Sökfält** – Sökmodulen låter användarna ange söktermer så att de kan söka efter produkter. URL-adressen till standardsöksidan och parametrarna för sökning måste ges i tillägg till **Webbplatsinställningar \> Tillägg**. Sökmodulen har egenskaper som gör att du kan hindra sökknappen eller etiketten efter behov. Sökmodulen stöder också automatiska förslag, t.ex. produkt, nyckelord och kategorisökningsresultat.
+
 - **Vagnikon** – modulen kundvagn representerar vagnikonen, som visar antalet artiklar i vagnen vid en given tidpunkt. Mer information finns i avsnittet [modulen vagnikonen](cart-icon-module.md).
 
 ## <a name="create-a-header-module-for-a-page"></a>Skapa en sidhuvudmodul för en sida
 
 Gör så här om du vill skapa en sidhuvudmodul.
 
-1. Skapa ett fragment med namnet **sidhuvudfragment**och lägg till en modul för behållare.
-1. I egenskapsfönstret för behållarmodulen, ange egenskapen **bredd** till **fyll behållare**.
-1. Lägg till moduler för annonsbanderoll och cookies i behållarmodulen.
-1. Lägg till en annan behållarmodul till fragmentet och ställ in egenskapen **bredd** till **fyll behållare**.
-1. Lägg till en sidhuvudmodul till den andra behållarmodulen.
-1. I facket **Navigeringsmeny** i sidhuvudmodulen, lägg till en modul för navigeringsmeny. 
-1. Konfigurera egenskaperna för modulen för navigeringmenyn i egenskapsfönstret för modulen navigering.
-1. Lägg till facket **sök** i sidhuvudmodulens sökmotor. 
-1. Konfigurera egenskaperna för sökmodulen för navigeringmenyn i egenskapsfönstret för sökmodulen. 
-1. I facket **Vagnikon** i huvudmodulen, lägg till modulen vagnikon. 
-1. Konfigurera egenskaperna för modulen vagnikon i modulen vagnikon. Om du vill att vagnikonen ska visa en minivagn när du hovrar över den, välj **sant** för **visa minivagn**.
-1. Spara sidfragmentet, slutför redigeringen och publicera det. 
-
+1. Gå till **Sidfragment** och välj **ny** för att skapa ett nytt fragment.
+1. I dialogrutan **Nytt sidfragment** väljer du modul för **Behållare**, anger ett namn på sidan och väljer sedan **OK**.
+1. Välj platse **standardenhet** och sedan i egenskapsfönstret till höger, ange egenskapen **Bredd** till **Fyll behållare**.
+1. I facket **Standardbehållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** välj modulerna **Kampanjbanderoll** och **Cookie-samtycke** och välj sedan **OK**.
+1. I facket **Standardbehållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. Välj platsen **behållare** och sedan i egenskapsfönstret till höger, ange egenskapen **Bredd** till **Fyll behållare**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Rubrik** och klicka sedan på **OK**.
+1. I platsen för rubrikmodul väljer du **Navigeringsmeny**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul** välj modulen **Navigeringsmeny** och sedan **OK**.
+1. Konfigurera egenskaperna efter behov i egenskapsfönstret för modulen för navigeringmenyn.
+1. I platsen för rubrikmodul väljer du **Sök**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Sök** och klicka sedan på **OK**.
+1. Konfigurera egenskaperna efter behov i egenskapsfönstret för sökmodulen.
+1. I platsen för rubrikmodul väljer du **Kundvagnsikon**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Kundvagnsikon** och klicka sedan på **OK**.
+1. Konfigurera egenskaperna efter behov i egenskapsfönstret för modulen för kundvagnsikon. Om du vill att kundvagnsikonen ska visa en kundvagnssammanfattning (även kallad en minikundvagn) när användarna hovrar över den väljer du **Visa minikundvagnen**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 
 Om du vill garantera att ett sidhuvud visas på varje sida följer du stegen nedan för varje sidmall som skapas för webbplatsen.
 
-1. I facket **Huvud** lägger du till standardsidan, lägg till sidhuvudfragmentet som innehåller sidhuvudmodulen i rubriken.
-1. Spara mallen, slutför redigeringen och publicera den.
+1. På platsen **Rubrik** i modulen **standardsida** lägg till det sidfotsfragment som du skapade.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

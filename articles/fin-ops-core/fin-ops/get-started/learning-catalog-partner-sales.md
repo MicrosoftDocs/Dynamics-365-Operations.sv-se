@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d2c029f6e5654f0da399ee7fc26ead6d787e59f5
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 69db88dd5a30d35cbc2c5b46f0ab3fbce057f799
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279093"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418525"
 ---
 # <a name="microsoft-partner-sales-and-marketing-learning-catalog"></a>Utbildningskatalog för Microsoft Partner Sales and Marketing
 
@@ -31,7 +31,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten.  | Gratis, självstudier online utbildningsväg                                          | 7 timmar |
 | [Dynamics 365 och Power Platform grunder](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/)  | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | 5.5 timmar |
 | [Kom igång med Finance and Operations-appar](https://docs.microsoft.com/learn/paths/get-started-with-dynamics-365-for-finance-and-ops/)  | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg   | 2 timmar |
-| [Kurs MB-900T01-A: Dynamics 365 - grunder](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)  | Den här kursen kommer att bekanta dig med Dynamics 365-funktionalitet och affärsvärde. Kursen omfattar Dynamics 365-program, Power Platform, molnkoncepten, säkerhetsmodellen och licensieringsöverväganden.  | Lärarledd personlig eller onlineutbildning. Kostnader varierar per region och partner | 1 dag     |
+
 
 
 ## <a name="exam"></a>Prov<a name="exam"></a>

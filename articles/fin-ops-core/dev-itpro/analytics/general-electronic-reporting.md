@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: d050bfa5b28219ef421dba4ed3a72f11bfd4daee
+ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933942"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421665"
 ---
 # <a name="electronic-reporting-er-overview"></a>Översikt över elektronisk rapportering (ER)
 
@@ -81,7 +81,7 @@ En modellmappning som har stöd för inkommande elektroniska dokument har följa
 
 En datamodellskomponent har utformats för respektive företagsdomän som ska användas som en enhetlig datakälla för rapportering som isolerar rapporterna från den fysiska implementeringen av datakällor för Finance and Operations. Den representerar domänspecifika affärsbegrepp och -funktioner i ett formulär som utgör ett rapporteringsformulärs ursprungliga konstruktion och vidare underhåll effektivare.
 
-#### <a name="FormatComponentOutbound"></a>Formatkomponenter för utgående elektroniska dokument
+#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Formatkomponenter för utgående elektroniska dokument
 
 En formatkomponent är schemat för de rapporteringsutdata som skapas vid körning. Ett schema består av följande element:
 
@@ -107,7 +107,7 @@ Följande bild visar hur datan flödar för dessa format.
 
 Du måste identifiera mappningen av formatkonfigurationen för att kunna köra en enskild ER formatkonfiguration och skapa utgående elektroniska dokument.
 
-#### <a name="FormatComponentInbound"></a>Formatkomponenter för inkommande elektroniska dokument
+#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenter för inkommande elektroniska dokument
 En formatkomponent är schemat för de inkommande dokument som importeras vid körning. Ett schema består av följande element:
 
 - Ett format som definierar strukturen och innehållet i de inkommande elektroniska dokument som innehåller data som importeras vid körning. En formatkomponent används för att tolka ett inkommande dokument i olika format, till exempel text och XML.
@@ -144,7 +144,7 @@ ER-komponentversionerna har giltighetsdatum. Du kan ange **Gäller från**-datum
 
 Olika versioner av en dataformatkomponent kan ha olika inställningar för ISO-lands-/regionskoder.
 
-#### <a name="Configuration"></a>Konfiguration
+#### <a name="configuration"></a><a name="Configuration"></a>Konfiguration
 
 En ER-konfiguration är omslaget (wrappern) för en viss ER-komponent. Komponenten kan antingen vara en datamodellskomponent eller en formatkomponent. En konfiguration kan omfatta olika versioner av en ER-komponent. Varje konfiguration markeras som ägda av en viss konfigurationsleverantör. **Utkast**-versionen av en komponent i en konfiguration kan redigeras om ägaren av en konfiguration har valts som en aktiv leverantör i ER-inställningarna i programmet.
 
@@ -154,26 +154,26 @@ Formatkonfigurationen som skapas innehåller en formatkomponent. Datamodellkompo
 
 En ER-konfiguration delas av programföretag.
 
-#### <a name="Provider"></a>Leverantör
+#### <a name="provider"></a><a name="Provider"></a>Leverantör
 
 ER-leverantören är partens identifierare som används för att indikera författare (ägare) av varje ER-konfiguration. Med hjälp av ER kan du hantera listan över konfigurationsleverantörer. Formatkonfigurationer som släpps för elektroniska dokument som en del av Finance and Operations-lösningen markeras som ägda av **Microsoft**-konfigurationsleverantören.
 
 För information om hur du registrerar en ny ER-leverantör, kör uppgiftsguiden **ER skapa en konfigurationstjänst och markera den som aktiv** (ingår i affärsprocessen **7.5.4.3 Införskaffa/utveckla IT-tjänst/-lösningskomponenter (10677)**).
 
-#### <a name="Repository"></a>Databas
+#### <a name="repository"></a><a name="Repository"></a>Databas
 
 En ER-databas lagrar ER-konfigurationer. Följande typer av ER-databaser stöds för närvarande: 
 
 - Delat LCS-bibliotek
 - LCS-projekt
-- Filsystem:
-- Lagstadgad konfigurationstjänst (RCS)
-- Verksamhetsresurser
-
+- Filsystem
+- RCS
+- Operations-resurser
+- Global databas
 
 En databas för **delat LCS-bibliotek** ger dig listan över konfigurationer i det delade tillgångsbiblioteket i Lifecycle Services (LCS). Den här typen av ER-databas kan endast registreras för Microsoft-leverantören. Från det delade LCS-tillgångsbiblioteket kan du importera de senaste versionerna av ER-konfigurationer till den aktuella instansen.
 
-En **LCS-projekt**-databas ger åtkomst till listan över konfigurationerna för ett visst LCS-projekt (tillgångsbibliotek för LCS-projekt) som valdes i registreringssteget för databasen. ER låter dig överföra delade konfigurationer från den befintliga instansen till en specifik databas för **LCS-projekt**. Du kan även importera konfigurationer från en **LCS-projekt**-databas till den befintliga Finance and Operations-instansen.
+En **LCS-projekt**-databas ger åtkomst till listan över konfigurationerna för ett visst LCS-projekt (tillgångsbibliotek för LCS-projekt) som valdes när databasen registrerades. ER låter dig överföra delade konfigurationer från den befintliga instansen till en specifik databas för **LCS-projekt**. Du kan även importera konfigurationer från en **LCS-projek**-databas till den befintliga Finance and Operations-appar.
 
 En **Filsystem**-datalager ger åtkomst till listan över konfigurationer som finns som XML-filer i en viss mapp i det lokala filsystemet på maskinen där AOS-tjänsten finns. Önskad mapp väljs vid registreringssteget för datalagret. Du kan även importera konfigurationer från ett **Filsystem**-datalager till den befintliga instansen. 
 
@@ -184,9 +184,13 @@ Observera att den här databasen är tillgänglig i följande miljöer:
 
 Mer information finns i [Importera konfigurationer för elektronisk rapportering (ER)](./electronic-reporting-import-ger-configurations.md).
 
-Ett **RCS-instans**-datalager ger åtkomst till listan över konfigurationerna för en viss RCS-instans som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen så att du kan använda dem för elektronisk rapportering.
+En **RCS**-databasen ger åtkomst till listan över konfigurationerna för en viss instans som valdes i [Regulatory Configuration Service (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) som valdes i registreringssteget för datalagret. ER låter dig importera slutförda eller delade konfigurationer från valda RCS-instansen till den aktuella instansen så att du kan använda dem för elektronisk rapportering.
 
-För mer information, se [Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+Mer information finns i [Importera konfigurationer för elektronisk rapportering från RCS](./rcs-download-configurations.md).
+
+En **Global databas** ger åtkomst till listan över konfigurationer i den globala databasen i [Regulatory Configuration Services](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Den här typen av ER-databas kan endast registreras för Microsoft-leverantören. Från den globala databasen kan du importera de senaste versionerna av ER-konfigurationer till den aktuella instansen.
+
+För mer information, se [Importera e-rapporteringskonfigurationer från global databas från Regulatory Configuration Services](./er-download-configurations-global-repo.md).
 
 En databas för **Verksamhetsresurser** ger åtkomst till listan över konfigurationer som Microsoft frisläpper som en del av programlösningen i egenskap av ER-konfigurationsleverantör. Dessa konfigurationer kan importeras till den aktuella instansen och användas för elektronisk rapportering eller spela upp exempeluppgiftsguider. De kan också användas för ytterligare lokaliseringar och anpassningar. Observera att de senaste versionerna från Microsoft ER-konfigurationer måste importeras från det delade LCS-tillgångsbiblioteket med motsvarande ER-databas.
 

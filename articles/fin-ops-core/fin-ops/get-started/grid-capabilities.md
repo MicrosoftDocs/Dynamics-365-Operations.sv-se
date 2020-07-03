@@ -3,7 +3,7 @@ title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 04/23/2020
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fd45f71fc15e467c461433682310ab7b7cc0158a
-ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
+ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284414"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431370"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -89,11 +89,11 @@ Om du vill ångra grupperingar i ett rutnät högerklickar du på grupperingskol
 ## <a name="typing-ahead-of-the-system"></a>Skriva före systemet
 I många affärsscenarier är möjligheten att snabbt registrera data i systemet mycket viktig. Innan den nya rutnätskontrollen introducerades kunde användarna bara ändra data på den aktuella raden. Innan de kan skapa en ny rad eller växla till en annan rad tvingades de vänta på att kontrollera ändringar i systemet. I ett försök att minska den tid som användarna väntar på att dessa valideringar ska slutföras, och för att förbättra användarproduktiviteten, justerar det nya rutnätet dessa valideringar så att de är asynkrona. Användaren kan därför flytta till andra rader och göra ändringar medan föregående radvalideringar väntar. 
 
-För att det nya beteendet ska fungera har en ny kolumn för radstatus lagts till överst i rutnätet när rutnätet är i redigeringsläge. I den här kolumnen visas en av följande statusvärden:
+För att det nya beteendet ska fungera har en ny kolumn för radstatus lagts till höger om kolumnen för radval när rutnätet är i redigeringsläge. I den här kolumnen visas en av följande statusvärden:
 
 - **Tom** – ingen statusbild anger att raden har sparats korrekt av systemet.
 - **Bearbetning väntar** – denna status anger att ändringarna i raden ännu inte har sparats av servern men att de finns i en kö med ändringar som måste bearbetas. Innan du utför en åtgärd utanför rutnätet måste du vänta tills alla väntande ändringar har bearbetats. Dessutom är texten i dessa rader kursiv för att ange statusen som inte har sparats för raderna. 
-- **Valideringsvarning** – den här statusen anger att systemet inte kan spara ändringarna på raden på grund av ett valideringsproblem. I det gamla rutnätet tvingades du tillbaka till raden för att åtgärda problemet direkt. I det nya rutnätet får du dock ett meddelande om att ett valideringsproblem har uppstått, men du kan bestämma när du vill åtgärda eventuella problem på raden. När du är redo att åtgärda problemet kan du manuellt flytta tillbaka fokus till raden. Du kan också välja åtgärden **Lös problemet**. Den här åtgärden flyttar omedelbart tillbaka fokus till den rad där problemet finns och gör att du kan redigera det inuti eller utanför rutnätet. Observera att bearbetningen av efterföljande väntande rader stoppas tills den här valideringsvarningen har lösts. 
+- **Ogiltigt tillstånd** – denna status anger att en del varningar eller meddelanden utlöstes under bearbetningen av raden och kan ha hindrat systemet från att spara ändringarna på den raden. I det gamla rutnätet, om åtgärden inte sparades tvingades du tillbaka till raden för att åtgärda problemet direkt. I det nya rutnätet får du dock ett meddelande om att ett valideringsproblem har uppstått, men du kan bestämma när du vill åtgärda eventuella problem på raden. När du är redo att åtgärda problemet kan du manuellt flytta tillbaka fokus till raden. Du kan också välja åtgärden **Lös problemet**. Den här åtgärden flyttar omedelbart tillbaka fokus till den rad där problemet finns och gör att du kan redigera det inuti eller utanför rutnätet. Observera att bearbetningen av efterföljande väntande rader stoppas tills den här valideringsvarningen har lösts. 
 - **Paus** – denna status anger att servern håller på att göra paus eftersom validering av raden utlöst en popup-dialogruta som kräver användarindata. Eftersom användaren kan mata in data på en annan rad visas inte dialogrutan direkt för den användaren. Den visas i stället när användaren väljer att återuppta bearbetningen. Denna status åtföljs av ett meddelande som informerar användaren om situationen. Meddelandet innehåller en åtgärd **återuppta bearbetning** som utlöser popup-dialogrutan.  
     
 När användarna skriver in data i förväg på den plats där servern bearbetas, kan de förvänta sig en del graderingar i data inmatningsupplevelsen, t.ex. brist på sökningar, validering på kontrollnivå och registrering av standardvärden. Användare som behöver en nedrullningsbar lista för att hitta ett värde bör vänta på att servern ska fånga upp den aktuella raden. Verifiering och inmatning av standardvärden på kontrollnivå görs också när servern bearbetar raden.   
@@ -135,55 +135,62 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 
 - Kortlistor som återges som flera kolumner återges nu som en enda kolumn.
 - Grupperade listor återges inte som grupper eller i separata kolumner.
-- Knappbeskrivningar visas inte för bilder.
-- Stödlinjerna visas inte för alla fälttyper.
-- Ibland kan du inte klicka utanför rutnätet när du har flera markeringar i alla rader.
-- Alternativen **validera** och **kopiera** uppgiftsinspelning är inte tillgängliga för kontroll av datum/nummer.
+
+### <a name="fixed-as-part-of-10013"></a>Korrigerat som en del av 10.0.13
+
+> [!NOTE]
+> Följande information finns tillgänglig så att du kan planera i enlighet med detta. Mer information om målinriktad publicering av version 10.0.13 finns i [Tillgänglighet för tjänstuppdateringar](../../fin-ops/get-started/public-preview-releases.md).
+
+- [KB 4563317] Knappbeskrivningar visas inte för bilder.
 
 ### <a name="fixed-as-part-of-10012"></a>Korrigerat som en del av 10.0.12
 
-> [!Note]
-> Följande information finns tillgänglig så att du kan planera i enlighet med detta. Mer information om målinriktad publicering av version 10.0.12 finns i [Tillgänglighet för tjänstuppdateringar](../../fin-ops/get-started/public-preview-releases.md).
-
-- [Problem 429126] Kontroller utanför rutnätet uppdateras inte efter att sista posten har tagits bort.
-- [Problem 430575] Register kontroller uppdaterar inte innehållet i visade objekt.
+- [KB 4558545] Register kontroller uppdaterar inte innehållet i visade objekt.
 - [KB 4558570] Objekten visas fortfarande på sidan när posten har tagits bort.
-- [KB 4558584] Negativa tal återges inte korrekt.
-- [KB 4558575] Fält uppdateras inte efter att en rad ändring/rutnätsbehandling har fastnat efter att rader har tagits bort.
-- [Problem 436980] Formatering som associeras med **ExtendedStyle** på listpanelen används inte.
+- [KB 4558572] Formatering som associeras med **ExtendedStyle** på listpanelen används inte.
 - [KB 4558573] Valideringsfel kan inte åtgärdas när den obligatoriska ändringen ligger utanför rutnätet.
-    
-### <a name="quality-update-for-10011"></a>Kvalitetsuppdatering för 10.0.11
-
-- [KB 4558381] Negativa tal återges inte korrekt, utan att användarna ibland blir låsta när det har uppstått valideringsproblem.
+- [KB 4558584] Negativa tal återges inte korrekt.
+- [KB 4560726] Ett "oväntat klientfel" inträffar när växlingen mellan listor har utförts med en listvy.
+- [KB 4562141] Rutnätsindex är inaktiverade efter att en ny post har lagts till.
+- [KB 4562151] alternativen **validera** och **kopiera** uppgiftsinspelning är inte tillgängliga för kontroll av datum/nummer. 
+- [KB 4562153] Kryssrutor med flera markeringar visas inte i list- eller kortrutnätet.
+- [KB 4562646] Ibland kan du inte klicka utanför rutnätet när du har flera markeringar i rutnätet.
+- [KB 4562647] Fokus återställs till den första kontrollen i dialogrutan **publicera** efter att en ny rad har lagts till i rutnätet för säkerhetsroller.
+- [KB 4563310] Den utökade förhandsgranskningen stängs inte efter att en rad har ändrats.
+- [KB 4563313] Ett oväntat klientfel inträffar i Internet Explorer när ett värde väljs i en sökning.
+- [KB 4563324] Navigeringen fungerar inte när arbetsytan **personalhantering** har öppnats.
 
 ### <a name="fixed-as-part-of-10011"></a>Korrigerat som en del av 10.0.11
 
+- [Problem 432458] Tomma eller duplicerade rader visas i början av vissa underordnade samlingar.
+- [KB 4549711] Rader i ett betalningsförslag kan inte tas bort korrekt när den nya rutnätskontrollen är aktiverad.
 - [KB 4558374] Poster som kräver en dialogruta med polymorfa väljare kan inte skapas.
-- [KB 4558382] Oväntade klientfel uppstår.
 - [KB 4558375] Hjälptexten visas inte på kolumnerna i det nya rutnätet.
 - [KB 4558376] Listpanelens rutnät återges inte på rätt höjd i Internet Explorer.
 - [KB 4558377] Kolumner med kombinationsrutor som har en bredd på **SizeToAvailable** återges inte på vissa sidor.
-- [KB 4549711] Rader i ett betalningsförslag kan inte tas bort korrekt när den nya rutnätskontrollen är aktiverad.
 - [KB 4558378] Visning ibland öppnar fel post.
 - [KB 4558379] Ett fel uppstår när sökningar öppnas där **ReplaceOnLookup**=**Nej**.
 - [KB 4558380] Det tillgängliga utrymmet i rutnätet fylls inte direkt efter att en del av sidan har dolts.
-- [Problem 432458] Tomma eller duplicerade rader visas i början av vissa underordnade samlingar.
+- [KB 4558381] Negativa tal återges inte korrekt, utan att användarna ibland blir låsta när det har uppstått valideringsproblem.
+- [KB 4558382] Oväntade klientfel uppstår.
+- [KB 4558383] Kontroller utanför rutnätet uppdateras inte efter att sista posten har tagits bort.
 - [KB 4558587] Referensgrupper som har kombinationsrutor för ersättningsfält visar inte värden.
+- [KB 4562143] Fält uppdateras inte efter att en rad ändring/rutnätsbehandling har fastnat efter att rader har tagits bort.
+- [KB 4562645] Ett undantag uppstår när ett uppslag öppnas när testerna av RSAT (Remote Server Administration Tools) körs.
 
 ### <a name="fixed-as-part-of-10010"></a>Korrigerat som en del av 10.0.10
 
 - [Problem 414301] Vissa data från tidigare rader försvinner när nya rader skapas.
-- [KB 4550367] Tidsvärden formateras inte korrekt.
-- [KB 4549734] Aktiva rader behandlas inte som markerade om markeringskolumnen är dold.
 - [Fel 417044] Det finns inget tomt rutnätsmeddelande för rutnät med listformat.
-- [KB 4558367] Textmarkeringen är inkonsekvent när rader ändras.
-- [KB 4558372] Det nya rutnätet fastnar i bearbetningsläget om antalet kolumner i innehållet som klistras in överskrider antalet återstående kolumner i rutnätet.
-- [KB 4558368] Flerval via tangentbordet tillåts vid scenarier med ett val.
 - [KB 4539058] Vissa rutnät (vanligtvis på snabbflikar) återges ibland inte (men de visas om du zoomar ut).
+- [KB 4549734] Aktiva rader behandlas inte som markerade om markeringskolumnen är dold.
+- [KB 4549796] Det går inte att redigera värden i ett rutnät när det är i visningsläge.
+- [KB 4558367] Textmarkeringen är inkonsekvent när rader ändras.
+- [KB 4558368] Flerval via tangentbordet tillåts vid scenarier med ett val.
 - [KB 4558369] Statusbilder försvinner i det hierarkiska rutnätet.
 - [KB 4558370] En ny rad rullas inte in i bild.
-- [KB 4549796] Det går inte att redigera värden i ett rutnät när det är i visningsläge.
+- [KB 4558372] Det nya rutnätet fastnar i bearbetningsläget om antalet kolumner i innehållet som klistras in överskrider antalet återstående kolumner i rutnätet.
+- [KB 4562631] Tidsvärden formateras inte korrekt.
 
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsuppdatering för 10.0.9/plattformsuppdatering 33
 

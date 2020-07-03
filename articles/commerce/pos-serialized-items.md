@@ -3,7 +3,7 @@ title: Arbeta med serialiserade artiklar i kassa
 description: I det här avsnittet beskrivs hur du hanterar serialiserade artiklar i programmet kassa (POS).
 author: boycezhu
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 05/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,17 +15,16 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 1e0d6aa7cd5576578378e70c6ee808833314aff3
-ms.sourcegitcommit: 919620b4aca425e6a1248ee12f50a622d2531e58
+ms.openlocfilehash: eedb64ae04345cb94bdd8cc68de833cfcfd40119
+ms.sourcegitcommit: 39981582778b0a62567324452485a6721ca18284
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "3290780"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3407508"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeta med serialiserade artiklar i kassa
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Många återförsäljare säljer produkter som kräver seriell kontroll. Dessa artiklar kallas för *serialiserade artiklar*. En del återförsäljare kanske vill behålla serienummer för spårning. Andra återförsäljare kan vilja samla serienummer under försäljningsprocessen, för service- och garantisyften. I det här avsnittet beskrivs hur du kan hantera serialiserade artiklar i programmet Microsoft Dynamics 365 Commerce kassa (POS).
 

@@ -3,7 +3,7 @@ title: Hantering av försäljningspris (butik)
 description: Det här avsnittet beskriver begreppen för att skapa och hantera försäljningspriser i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057497"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3432011"
 ---
 # <a name="retail-sales-price-management"></a>Prishantering för Retail-försäljning
 
@@ -53,7 +53,9 @@ Följande bild visar hur prisgrupper används. I den här illustrationen observe
 
 När du skapar prisgrupper bör du inte använda en enda prisgrupp för flera typer av handelsenheter. I annat fall kan det vara svårt att avgöra varför ett särskilt pris eller en rabatt används i en transaktion.
 
-När en röd streckad linje i bilden visas ger Handel inte stöd för huvudfunktionerna i Microsoft Dynamics 365 för en prisgrupp som anges direkt på en kund. I detta fall får du endast handelsavtal för försäljningspris. Om du vill använda kundspecifika priser rekommenderar vi att du inte anger prisgrupper direkt på kunden. Du bör i stället använda anknytningar.
+När en röd streckad linje i bilden visas ger Handel inte stöd för huvudfunktionerna i Microsoft Dynamics 365 för en prisgrupp som anges direkt på en kund. I detta fall får du endast handelsavtal för försäljningspris. Om du vill använda kundspecifika priser rekommenderar vi att du inte anger prisgrupper direkt på kunden. Du bör i stället använda anknytningar. 
+
+Observera att om prisgruppen har ställts in för kunden, kommer den här prisgruppen att associeras med försäljningsorderrubriken för de order som skapas för den här kunden. Om användaren ändrar prisgruppen i orderrubriken ersätts den gamla prisgruppen bara med den nya prisgruppen för den aktuella ordern. Den gamla prisgruppen kommer till exempel inte att påverka den aktuella ordern, men den kommer fortfarande att vara kopplad till kunden för framtida order.
 
 Följande avsnitt innehåller mer information om de handelsenheter som du kan använda när du vill ställa in olika priser när prisgrupperna används. Konfigurationen av priser och rabatter för dessa enheter är en tvåstegsprocess. Dessa steg kan göras i vilken ordning som helst. Den logiska ordningen är emellertid att först ange prisgrupperna för entiteterna eftersom det här steget är engångsinställningar som görs under genomförandet. Därefter när priser och rabatter skapas kan du ange prisgrupperna för dessa priser och rabatter separat.
 
@@ -108,7 +110,7 @@ Låt oss titta på ett exempel där butikspriser åsidosätter andra priser.
 
 En nationell återförsäljare anger de flesta priser per region och har fyra områden: Nordöst, Sydöst, Mellanvästern och Väst. Den har identifierat flera höga kostnadsmarknader som stöder högre priser. Dessa marknader är i New York City, Chicago och San Francisco. 
 
-I det här exemplet ska vi gå till regionen Nordöst. Butik 2 finns i Boston och butik 2 i Manhattan. För Boston-butiken är två prisgrupper kopplade till kanalen: nordöst och Butik 1. För Manhattan-butiken är tre prisgrupper kopplade till kanalen: nordöst, NYC och Butik 2.
+I det här exemplet ska vi gå till regionen Nordöst. Butik 1 finns i Boston och butik 2 i Manhattan. För Boston-butiken är två prisgrupper kopplade till kanalen: nordöst och Butik 1. För Manhattan-butiken är tre prisgrupper kopplade till kanalen: nordöst, NYC och Butik 2.
 
 Återförsäljaren anger två prissättningsprioriteter: hög kostnad har prioritetsnummer 5 och i butikspriser har prioritetsnummer 10. (Kom ihåg att som standard är prissättningsprioritet 0 \[noll\], och ett pris eller en rabatt med högre prioritet används innan ett pris eller en rabatt med ett lägre prioritetsnummer.) Prisgruppen nordöst har prissättningsprioritet standardvärdet på **0** (noll). Prisgrupp NYC prissättningsprioritet anges till **5**, eftersom New York City är en hög kostnadsmarknad. För prisgrupperna för butik 1 och 2 har prissättningsprioriteten värdet **10**.
 
@@ -226,6 +228,7 @@ Prissättningsmotorn **stöder inte** följande prissättningsfunktioner:
 - Det går inte att ange priser efter plats eller plats och lagringsdimensioner för lagerställe. Om du bara anger platsdimensionen på handelsavtalen ignoreras webbplatsen av prissättningsmotorn och handelsavtalet tillämpas på alla webbplatser. Om du anger både webbplats och lagerställe är beteendet odefinierat/oprövat eftersom det förväntas att återförsäljare använder butikspris grupperna för att kontrollera priserna för varje butik/lagerställe.
 - Attributbaserad prissättning stöds inte.
 - Leverantörsrabattens genomströmning stöds inte.
+- Standard prissättningsmotorn för Supply Chain Management stöder prisberäkningen baserat på "begärt transportdatum" och "begärt inleveransdatum" tillsammans med aktuellt datum. Butikspriset stöder dock för närvarande inte dessa värden. Orsaken till detta är att kunder för B2C-scenario inte förväntar sig begärt leveransdatum för att påverka artikelpriset. I vissa fall har återförsäljare både B2B- och B2C-operationer. För B2B-operationer är det vanligt att ändra priser baserat på leveransdatum. Dessa återförsäljare kan använda Supply Chain Management prissättning för B2B-företag och återförsäljningspris för deras B2C-företag. Självkostnaden aktiveras bara om programanvändaren läggs till som en kundtjänstanvändare, så återförsäljarna kan tilldela vissa användare som kommer att arbeta med Supply Chain Management prissättning och tilldela ett par som fungerar med butikspriset, dvs. dessa användare bör läggas till som en kundtjänstanvändare. Dessutom måste egenskapen **Använd dagens datum för att beräkna priser** i avsnittet **Handelsparametrar > Prissättning och rabatter > Diverse** vara aktiverade. På så sätt kan de behålla det använda kundreskontra parametervärden för begärt transportdatum eller begärt inleveransdatum för Supply Chain Management prissättning, men återförsäljarpriset fortsätter att använda dagens datum för prisberäkning.
 
 Dessutom, **endast** prissättningsmotorn stöder följande prissättningsfunktioner:
 

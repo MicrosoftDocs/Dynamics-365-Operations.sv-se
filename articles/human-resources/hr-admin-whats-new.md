@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f14056735b927d9b14f686f43bd9be121808ba23
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 33c436c0ac65470c6237d079314222b2925cfca7
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379293"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443451"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Human Resources
 
@@ -41,7 +41,10 @@ Mer information om kommande funktioner eller uppdateringsprocessen för personal
 
 Information om vad som är nytt eller ändrat i varje utgåva varannan vecka av Personal finns i följande artiklar:
 
-[14 maj 2020](hr-whats-new-2020-05-14.md)</br>[1 maj 2020](hr-whats-new-2020-05-01.md)</br>
+[11 juni 2020](hr-whats-new-2020-06-11.md)</br>
+[28 maj 2020](hr-whats-new-2020-05-28.md)</br>
+[14 maj 2020](hr-whats-new-2020-05-14.md)</br>
+[1 maj 2020](hr-whats-new-2020-05-01.md)</br>
 [13 april 2020](hr-whats-new-2020-04-13.md)</br>
 [3 april 2020](hr-whats-new-2020-04-03.md)</br>
 [24 mars 2020](hr-whats-new-2020-03-24.md)</br>

@@ -74,7 +74,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Uppgraderings- och N-1-stöd
               items:
-                - name: Uppgraderings- och N-1-stöd för Retail
+                - name: Uppgraderings- och N-1-stöd för Commerce
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Installation, konfiguration och övergång för fasindelad lansering (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
@@ -94,8 +94,6 @@
                       href: get-started/whats-new-commerce-10-0-11.md
                     - name: Commerce 10.0.10 (maj 2020)
                       href: get-started/whats-new-commerce-10-0-10.md
-                    - name: Commerce 10.0.9 (april 2020)
-                      href: get-started/whats-new-10-0-9.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Finance and Operations
@@ -504,6 +502,8 @@
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Stark kundautentisering (SCA) med Adyen-kopplingen
                       href: adyen_redirect.md
+                    - name: Dedikerade betalningsterminaler och fråga om skrivare och kassalåda
+                      href: pos-multi-hws.md
                     - name: Sömlös offline-switch för att åtgärda presentkort och kreditnotor
                       href: dev-itpro/seamless-offline-improvements.md
                     - name: Ordna scenarier för fakturabetalning
@@ -572,6 +572,10 @@
                       href: set-up-bar-codes.md
                     - name: Ställa in streckkodsmasker
                       href: set-up-bar-code-masks.md
+                - name: Garantier
+                  items:
+                    - name: Skapa och konfigurera utökade garantier
+                      href: extended-warranty.md
             - name: Prissättning och rabatter
               items:
                 - name: Rabatter
@@ -974,7 +978,7 @@
                       href: cart-icon-module.md
                     - name: Kassamodul
                       href: add-checkout-module.md
-                    - name: Modul för orderbekräftelse
+                    - name: Orderinformationsmodul
                       href: order-confirmation-module.md
                     - name: Modul för butiksväljare
                       href: store-selector.md
@@ -1176,7 +1180,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Lägga till ekonomiska dimensioner i aggregerade mått
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Skapa analytiska rapporter med PowerBi Desktop
+                - name: Skapa analytiska rapporter med Power BI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Lägg till analyser i arbetsytor genom att använda Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1610,7 +1614,7 @@
               items:
                 - name: Använd JOIN-datakällor för att hämta data från flera programregister
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurera ER-modellmappningar som är beroende av landsammanhang
+                - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera ER-format för användning av parametrar som anges per juridisk person
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
@@ -1722,11 +1726,11 @@
                   href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Publicera mobila arbetsytor
               href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-        - name: Office-integrering
+        - name: Office-integration
           items:
-            - name: Office-integrering – översikt
+            - name: Office-integration – översikt
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/commerce/toc.json
-            - name: Office-integrering – självstudier
+            - name: Office-integration – självstudier
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
@@ -1742,7 +1746,7 @@
               href: email-templates-transactions.md
             - name: Utveckla e-postmiljöer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/commerce/toc.json
-            - name: Felsöka Office-integreringen
+            - name: Felsöka Office-integrationen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/commerce/toc.json
         - name: Organisationsadministration
           items:
@@ -1896,7 +1900,9 @@
                       href: e-commerce-extensibility/setup-dev-environment.md
                     - name: Konfigurera en fil för utvecklingsmiljö (.env)
                       href: e-commerce-extensibility/configure-env-file.md
-                    - name: Ställ in Azure DevOps koddelning och skapa en versionspipeline
+                    - name: Felsöka mot en Commerce-utvecklingsmiljö på nivå 1
+                      href: e-commerce-extensibility/debug-tier-1.md
+                    - name: Konfigurera koddelning för Azure DevOps och skapa en versionspipeline
                       href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
                 - name: Plattformsöversikt
                   items:
@@ -2028,6 +2034,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Utveckling i molnbaserade utvecklingsmiljöer utan administratörsåtkomst
                   href: dev-itpro/cloud-dev-box.md
+                - name: Konfigurera versionspipeline för SDK för Commerce
+                  href: dev-itpro/retail-sdk/SDK-build-pipeline.md
             - name: Utbyggbarhet för kassa
               items:
                 - name: Skärmlayouter för kassa
