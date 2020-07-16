@@ -74,8 +74,6 @@
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (juli 2020)
                       href: get-started/whats-new-changed-10-0-11.md
-                    - name: Finance 10.0.10 (maj 2020)
-                      href: get-started/whats-new-changed-10-0-10.md
             - name: Borttagna och utfasade funktioner
               items:
                 - name: Borttagna och utfasade funktioner i Dynamics 365 Finance
@@ -1184,6 +1182,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Kolumndefinitioner
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Rapportträddefinitioner i ekonomiska rapporter
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: Ändra raddefinitionsceller
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Återställa data mart för ekonomisk rapportering
@@ -3382,16 +3382,22 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Importera konfigurationer från RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Global databas (GR)
+                    - name: Global lagringsplats (GR)
                       items:
                         - name: Importera konfigurationer från GR
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Importera uppdaterade versioner av ER-konfigurationer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: Förbättrad filtrering för att hitta konfigurationer i GR
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Överför konfigurationer till GR
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Dela konfigurationer i GR
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Snabbstartsguider
+              items:
+                - name: Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
             - name: Självstudier
               items:
                 - name: Läs om hur du använder datakällor
