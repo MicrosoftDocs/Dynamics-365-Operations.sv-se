@@ -3,7 +3,7 @@ title: Stämma av bankutdrag med hjälp av avancerad bankavstämning
 description: Funktionen Avancerad bankavstämning låter dig importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 Finance. Det här ämnet innehåller en beskrivning av avstämningsprocessen.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b37cf8d83c7134ae65da6a885bffeb01d16f9f06
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c13203217af1788fe3b8a6f9bbf805e03b650a0d
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179989"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497155"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Stäm av bankutdrag med hjälp av avancerad bankavstämning
 
@@ -41,9 +41,9 @@ Du kan överföra ett bankutdrag som innehåller information om antingen ett ens
 -   Om du vill importera en enskild bankutdragsfil för ett enskilt konto, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Nej** och välj det bankkonto som är associerat med utdraget. Klicka på **Bläddra** för att välja den associerade bankutdragsfilen och klicka sedan på **Överför**.
 -   Om du vill importera en enstaka bankutdragsfil för flera konton, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Ja**. Klicka på **Bläddra** för att välja den associerade bankutdragsfilen och klicka sedan på **Överför**.
 
-Om några utdrag i en elektronisk fil inte kan kopplas till ett bankkonto med hjälp av identifieringsfälten ska de inte importeras. Du kan dock fortfarande importera andra utdrag i filen. Användaren får sedan ett meddelande med information om att importen av bankutdraget misslyckades för specifika bankkonton. Observera att användaren som importerar bankutdraget måste ha åtkomst till en juridisk person för att importera utdrag för den juridiska personens bankkonton. 
+Om några uttalanden i den elektroniska filen inte kan kopplas till ett bankkonto eller om det är associerat med flera bankkonton genom att använda de identifierande fälten, importeras de inte. Du kan dock fortfarande importera andra utdrag i filen. Användaren får sedan ett meddelande med information om att importen av bankutdraget misslyckades för specifika bankkonton. Observera att användaren som importerar bankutdraget måste ha åtkomst till en juridisk person för att importera utdrag för den juridiska personens bankkonton. 
 
-Du kan använda en zip-fil för att överföra flera utdragsfiler till Financ i en enda process. Om du vill importera flera bankutdragsfiler för flera konton kan du slå samla alla bankutdragsfiler i en zip-fil. I dialogrutan **Importera bankutdrag**, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Ja**. Klicka på **Bläddra** för att välja zip-filen som innehåller bankutdragsfilerna och klicka sedan på **Överför**. Importeringsprocessen kommer att känna igen zip-filen och överföra varje utdrag som är inkluderade i den, oavsett bankkontots juridiska person. 
+Du kan använda en zip-fil för att överföra flera utdragsfiler till Financ i en enda process. Om du vill importera flera bankutdragsfiler för flera konton kan du slå samla alla bankutdragsfiler i en zip-fil. I dialogrutan **Importera bankutdrag**, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Ja**. Klicka på **Bläddra** för att välja zip-filen som innehåller bankutdragsfilerna och klicka sedan på **Överför**. Importeringsprocessen kommer att känna igen zip-filen och överföra varje utdrag som är inkluderade i den, oavsett bankkontots juridiska person.
 
 Alternativet **Stäm av efter import** är tillgängligt. När det här alternativet är inställt på **Ja** validerar systemet kontoutdraget, skapar en ny bankkontoavstämning och ett nytt kalkylblad och kör standarduppsättningen för matchningsregler när bankutdraget överförs. Den här funktionen automatiserar processen fram till den punkt där transaktionen måste stämmas av manuellt.
 

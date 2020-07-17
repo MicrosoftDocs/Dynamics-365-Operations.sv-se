@@ -15,11 +15,11 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e6ccdce21ccc5f3e83ad860163cccadcea2edc
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
+ms.sourcegitcommit: edb46dce498df42b09e8f5ad6de00f86c8022dfa
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
+ms.lasthandoff: 07/03/2020
 ms.locfileid: "3346432"
 ---
 # <a name="subcontracting"></a>Legotillverkning
@@ -211,7 +211,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
     ![Två uppsättningar arbete för råmaterialplockning på sidan Arbete.](./media/subcontract22_work-page.png)
 
-26. Starta lagerstyrningsappen för att bearbeta lagerarbetet för åtgärd 10.
+26. Starta lagerställeappen för att bearbeta lagerställearbetet för operation 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -229,7 +229,7 @@ En produktionsorder på 10 enheter skapas för produkten D8100, ”belagd kabine
 
     Observera att statusen för produktionsordern nu är **startad**. Materialen för en operation 10 förbrukas av en automatisk bokföring av plocklistejournalen. Tidsförbrukning för operationen 10 redovisas enligt en automatisk bokföring av en flödeskortjournal.
 
-32. Starta lagerstyrningsappen för att bearbeta lagerarbetet för åtgärd 20.
+32. Starta lagerställeappen för att bearbeta lagerställearbetet för operation 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 

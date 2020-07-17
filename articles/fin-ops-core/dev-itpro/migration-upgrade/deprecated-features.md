@@ -3,7 +3,7 @@ title: Borttagna eller utfasade funktioner i tidigare versioner
 description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
-ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
+ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
+ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284024"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500422"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -588,7 +588,7 @@ eGiro baseras på den internationella UN EDIFACT CREMUL-standarden (Multiple Cre
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Betalningformatet används inte längre.                                                     |
-| **Ersatt av en annan funktion?**   | Nr. Formatet ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
+| **Ersatt av en annan funktion?**   | Ja ISO20022 Camt.054 meddelandeimport. |
 | **Produktområden som påverkas**         | Kundreskontra                                                                       |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.                            |
 
@@ -621,7 +621,7 @@ Du kan välja ett importformat för finska betalningar som importerar kundbetaln
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Betalningformatet används inte längre.                                                     |
-| **Ersatt av en annan funktion?**   | Nr. Formatet ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
+| **Ersatt av en annan funktion?**   | Ja ISO20022 Camt.054 meddelandeimport. |
 | **Produktområden som påverkas**         | Kundreskontra                                                                       |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.                            |
 
@@ -632,7 +632,7 @@ Ett format som är specifik för Finland används för att importera redovisning
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Betalningformatet används inte längre.                                                     |
-| **Ersatt av en annan funktion?**   | Nr. Formatet ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
+| **Ersatt av en annan funktion?**   | Ja ISO20022 Camt.053 import av bankutdrag med avancerad bankavstämning. |
 | **Produktområden som påverkas**         | Kundreskontra                                                                       |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.                            |
 
@@ -698,7 +698,7 @@ Formaten Telehansa och TeleTeenu används för bankbetalningsimport.
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Betalningformaten används inte längre.                                                    |
-| **Ersatt av en annan funktion?**   | Nr. Formaten ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
+| **Ersatt av en annan funktion?**   | Ja ISO20022 Camt.054 import av bankmeddelanden. |
 | **Produktområden som påverkas**         | Kundreskontra                                                                        |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.                             |
 
@@ -784,7 +784,7 @@ Telepay betalningsformat inkluderar leverantörsbetalningsexporten (kreditöverf
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Betalningformaten används inte längre.                                                        |
-| **Ersatt av en annan funktion?**   | Ja, ISO20022 betalningsformat för kreditöverföring och AvtaleGiro kundbetalningsformat för Norge |
+| **Ersatt av en annan funktion?**   | Ja, ISO20022 betalningsformat för kreditöverföring och format för AvtaleGiro-kundbetalning för Norge och även pain.002 och camt.054 import av returfiler för bankmeddelanden. |
 | **Produktområden som påverkas**         | Leverantörsreskontra, Kundreskontra                                                          |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.                                 |
 
@@ -844,7 +844,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- och AxBC-integrationer
 
-I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras in eller ut från Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som baseras på dokument använder **Axd \<dokument\>**-klasserna.
+I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras in eller ut från Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som baseras på dokument använder **Axd \<Document\>**-klasserna.
 
 |   |  |
 |------------|--------------------|
@@ -1125,13 +1125,13 @@ Genereringen av förauktoriseringar kan inte utföras med hjälp av en batch men
 | **Produktområden som påverkas**         | Alla moduler  |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
-### <a name="german-dtazv-payment-format"></a>Tyskt DTAZV-betalningsformat
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Tyskt DTAZV betalningsformat i nationell valuta
 
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Formatet är inte längre tillämpligt i Tyskland eftersom det har ersatts av SEPA-funktionen. |
 | **Ersatt av en annan funktion?**   | SEPA-betalningsexport    |
-| **Produktområden som påverkas**         | Alla moduler   |
+| **Produktområden som påverkas**         | Leverantörsreskontra   |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.    |
 
 ### <a name="german-mt940-import"></a>Tysk MT940-import

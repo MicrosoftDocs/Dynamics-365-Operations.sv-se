@@ -1,9 +1,9 @@
 ---
 title: Delegera arbetsuppgifter i ett arbetsflöde
 description: Om du kommer att vara borta från kontoret under en tid eller av annat skäl inte kommer att kunna arbeta med en arbetsuppgift, kan du delegera eller omfördela dina arbetsuppgifter till andra användare.
-author: jasongre
+author: ChrisGarty
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/23/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: jasongre
+ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aceafbe8dfcdac2ac7b97a4f77a9a30599c60c51
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
+ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140592"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3515774"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegera arbetsuppgifter i ett arbetsflöde
 
@@ -30,6 +30,16 @@ ms.locfileid: "3140592"
 ## <a name="manually-delegate-a-work-item"></a>Manuellt delegera en arbetsuppgift
 
 Om du vill delegera en enskild arbetsuppgift, välj alternativet **Delegera** i menyn **Arbetsflöde** och ange sedan användaren som ska delegeras till tillsammans med en kommentar. Detta tilldelar om arbetsuppgift till användaren så att de kan slutföra den.
+
+## <a name="manually-delegate-multiple-work-items"></a>Delegera flera arbetsuppgifter manuellt
+
+Flera arbetsuppgifter kan delegeras till varandra från sidan **Arbetsuppgifter som tilldelats till mig**. Följande arbetsflödestyper är berättigade för massdelegering: arbetsflöde för godkännande av inköpsavtal, arbetsflöde för inköpsorder, granskning av inköpsrekvisition och arbetsflöde för leverantör. Funktionen **Delegera flera arbetsuppgifter** är inaktiverad som standard och kan aktiveras i **Arbetsytor > Funktionshantering**. Kontakta systemadministratören om du vill ha hjälp med att aktivera den här funktionen.
+1.  Gå till **Gemensamt > Gemensamt > Arbetsuppgifter > Arbetsuppgifter som tilldelats till mig**.
+2.  Välj de arbetsuppgifter som ska delegeras.
+3.  Klicka på menyn **Delegera arbetsuppgifter**.
+4.  I fältet **användare** markera den användare som du vill delegera arbetsuppgifterna till.
+5.  Ange en kommentar som förklarar varför du delegerar arbetsuppgifterna i fältet **Kommentar**.
+6.  Klicka på knappen **Delegera arbetsuppgifter** om du vill slutföra delegeringen av arbetsuppgiften.
 
 ## <a name="automatically-delegate-work-items"></a>Delegera arbetsuppgiften automatiskt
 

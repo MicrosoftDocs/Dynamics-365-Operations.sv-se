@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175164"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505621"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avancerade automatiska avgifter för flera kanaler
 
@@ -40,7 +40,7 @@ När du använder versioner före version 10.0 uppmanas POS-användare att manue
 
 Manuella anvisningar för att lägga till leveransavgifter används fortfarande i version 10.0 eller senare. Om en organisation inte har aktiverat parametern **avancerade automatiska avgifter** kommer kassauppmaningar om manuell inmatning av avgifter inte att påverkas.
 
-Med funktionen för avancerade automatiska avgifter kan kassaanvändare ha systematiska beräkningar för alla definierade diverse avgifter baserat på inställningstabeller för automatiska avgifter. Dessutom kan har användare möjlighet att lägga till eller redigera en obegränsad mängd ytterligare debiteringar och avgifter till en försäljningstransaktion i kassa i rubrik eller radnivå (för en hämtköp eller kundorder).
+Med funktionen för avancerade automatiska avgifter kan kassaanvändare ha systematiska beräkningar för alla definierade diverse avgifter baserat på inställningstabeller för automatiska avgifter. Dessutom kan har användare möjlighet att lägga till eller redigera ett obegränsat antal ytterligare debiteringar och avgifter till en försäljningstransaktion i kassa i rubrik eller radnivå (för en hämtköp eller kundorder).
 
 ## <a name="enabling-advanced-auto-charges"></a>Aktivera avancerade automatiska avgifter
 
@@ -52,7 +52,7 @@ När avancerad automatiska avgifter aktiveras uppmanas användare inte längre a
 
 När avancerade automatiska tillägg är aktiverade kommer befintliga **handelsparametrar** för **leveransavgiftskod** och **återbetala leveransavgifter** inte längre användas. Dessa parametrar kan endast användas om parametern **Använd avancerade automatiska avgifter** är inställd på **Nej**.
 
-Innan du aktiverar den här funktionen, kontrollera att du har testat och utbildad personal, eftersom detta ändrar affärsprocessflödet för hur frakt och andra avgifter beräknas och läggs till försäljningsorder från kassan. Kontrollera att du förstår effekten av processflödet för att skapa transaktioner från kassan. För kundtjänst och e-handel är effekterna av att aktivera avancerade automatiska tillägg minimal. Kundtjänst och e-handelsprogram fortsätter att ha samma sätt som de tidigare har haft relaterade till register för automatiska avgifter för att beräkna ytterligare avgifter. Användare av kundtjänstkanal kommer även fortsättningsvis ha möjlighet att manuellt redigera beräknade automatiska avgifter på rubrik- eller radnivå eller lägga till ytterligare tillägg manuellt på rubrik- eller radnivå.
+Innan du aktiverar den här funktionen, kontrollera att du har testat och utbildad personal, eftersom den aktiverade funktionen ändrar affärsprocessflödet för hur frakt och andra avgifter beräknas och läggs till försäljningsorder från kassan. Kontrollera att du förstår effekten av processflödet för att skapa transaktioner från kassan. För kundtjänst och e-handel är effekterna av att aktivera avancerade automatiska tillägg minimal. Kundtjänst och e-handelsprogram fortsätter att ha samma sätt som de tidigare har haft relaterade till register för automatiska avgifter för att beräkna ytterligare avgifter. Användare av kundtjänstkanal kommer även fortsättningsvis ha möjlighet att manuellt redigera beräknade automatiska avgifter på rubrik- eller radnivå eller lägga till ytterligare tillägg manuellt på rubrik- eller radnivå.
 
 ## <a name="additional-pos-operations"></a>Ytterligare kassaåtgärder
 
@@ -89,7 +89,7 @@ Konfigurera två olika automatiska avgifter på huvudnivå. Konfigurera en för 
 
 För markleverans, i radavsnittet på sidan **automatiska avgifter** kan du definiera ett tillägg som ska användas för order mellan $,01- och $100 som $10,00. Skapa en annan avgiftsrad för att ange att order under $100,01 inte har avgifter.
 
-![Exempel på automatiska avgifter](media/headerchargesexample.png)
+![Exempel på tabeller med två automatiska debiteringar](media/headerchargesexample.png)
 
 För luftsleverans, i radavsnittet på formuläret automatiska avgifter kan du definiera ett tillägg på $20,00 som ska användas för alla order (mellan $,01och $9 999 999).
 
@@ -119,7 +119,7 @@ Gå till **Kundreskontra \> Ställa in avgifter \> Automatiska avgifter**.
 
 Ange listrutan **nivå** till **rad** och skapa en ny post för automatiska avgifter för alla kunder och för en viss produkt eller produktgrupp där inställningsavgifter tas ut.
 
-![Exempel på automatiska avgifter](media/linechargesexample.png)
+![Exempel på tabell med automatiska debiteringar på en radnivå](media/linechargesexample.png)
 
 Skicka avgifterna till skalningsenhet för handel/Channel DB så att kassan kan utnyttja dem genom att köra jobbet **1040 distributionsschema**.
 
@@ -173,7 +173,7 @@ Skicka avgifterna till skalningsenhet för handel/Channel DB så att kassan kan 
 
 Om du vill köra scenariot i kassaprogrammet kommer kassaanvändaren att skapa försäljningstransaktionen som vanligt, lägga till produkter och andra konfigurationer för försäljning. Innan man tar betalt måste användaren markera den rad som avgiften tillämpas från kassans visning av artikellista och köra åtgärden **lägga till radavgift**. Användaren uppmanas att välja avgiftskod och ange värdet för avgiften. När användaren slutför processen kopplas avgiften till raden och läggs till ordersumman som en avgift på radnivå. Användaren kan upprepa processen för att lägga till ytterligare radavgifter för andra artikelrader i transaktionen om det behövs.
 
-Samma tillvägagångssätt kan användas i kundtjänst med funktionen ”Underhåll avgifter” som du hittar under listrutan **ekonomi** i avsnittet **försäljningsorderrader** på dian **försäljningsorder**. Då öppnas sidan **Underhåll avgifter** där användaren kan lägga till en ny radspecifik avgift i transaktionen.
+Samma tillvägagångssätt kan användas i kundtjänst med funktionen ”Underhåll avgifter” som du hittar under listrutan **ekonomi** i avsnittet **försäljningsorderrader** på dian **försäljningsorder**. Att välja det här alternativet kommer att öppna **Underhåll avgifter** där användaren kan lägga till en ny radspecifik avgift i transaktionen.
 
 ## <a name="additional-features"></a>Ytterligare funktioner
 

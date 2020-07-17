@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7521784931cc4aac5a7e7729d045e501cba9460e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: b310b787906850a60c9e2a453ce2d13330dad212
+ms.sourcegitcommit: 26399aafe2b02732c79073455f5bc9ac07bab4b4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3279094"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502123"
 ---
 # <a name="implementation-project-manager-learning-catalog"></a>Utbildningskatalog för projektledare för implementering
 
@@ -29,7 +29,7 @@ Följande katalog är ordnad efter grundläggande kunskaper i specifika domäner
 | Innehåll | beskrivning  | Format  | Längd    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
 | [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Vill du lära dig mer om affärsprogram? Kanske du inte vet var du ska börja med Microsoft Dynamics 365 och Power Platform-appar? Lär dig hur kraften hos affärsappar kan hjälpa dig att omvandla verksamheten. | Gratis, självstudier online utbildningsväg   | 7 timmar   |
-| [Dynamics 365 och Power Platform grunder](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/ | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg   | 5.5 timmar |
+| [Dynamics 365 och Power Platform grunder](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Vill du lära dig mer om affärsprogram? Börja med den här utbildningsvägen för att se hur Dynamics 365-appar används. Lär dig mer om molnkoncept Power Platform och hur du kommer igång med Dynamics 365-appar. | Gratis, självstudier online utbildningsväg   | 5.5 timmar |
 | [Kom igång med Finance and Operations-appar](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Lär dig hur Finance and Operations-appar ger stöd till företag för att hantera deras globala ekonomisystem, operativa affärsprocesser och effektiviserade leveranskedjor för att ge användarna möjlighet att fatta snabba, välgrundade beslut. Det första steget i arbetet med Finance and Operations-appar är att bekanta dig med dess funktioner och egenskaper, oavsett vilken roll du vill ha. | Gratis, självstudier online utbildningsväg   | 2 timmar   |
 | [Innan du köper](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy)  | Ta en titt på steg-för-steg-guide om du fortfarande utvärderar Finance and Operations eller är redo för att göra ett inköp.| Dokumentation  |           |
 | [Utgivningsplan](https://docs.microsoft.com/dynamics365/release-plans/)  | Lär dig mer om de senaste funktionerna och förbättringarna i Dynamics 365  | Dokumentation  |           |

@@ -3,7 +3,7 @@ title: Skapa en e-handelsplats
 description: I det här avsnittet beskrivs de steg och den information som krävs för att skapa en ny e-handelswebbplats i Dynamics 365 Commerce webbplatsskaparen.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,25 +19,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7177bae911dfa91a645b40581bf23b3ed76562a3
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096784"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533446"
 ---
 # <a name="create-an-e-commerce-site"></a>Skapa en e-handelsplats
-
 
 [!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs de steg och den information som krävs för att skapa en ny e-handelswebbplats i Dynamics 365 Commerce webbplatsskaparen.
 
-Innan du börjar utveckla din näthandelsplats måste du först skapa en ny webbplats i webbplatsskaparen. 
-
-
-Innan du börjar utveckla din näthandelsplats måste du först skapa en ny webbplats i webbplatsredigeringsmiljön. Innan du kan skapa en ny plats måste minst en onlinebutik skapas i Handel. 
-
+När du licensierar näthandelsfunktionerna etableras webbplatsskaparen med en startwebbplats som du kan använda som grund för din egen webbplats. Om du däremot vill börja från början eller om du vill skapa en andra plats måste du skapa en ny webbplats i redigeringsmiljön för webbplatsen. 
 
 ## <a name="set-up-your-site"></a>Ställ in din webbplats
 
@@ -64,8 +59,6 @@ När du har skapat webbplatsen kan du kontrollera att den är kopplad till onlin
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
-
-[Ställ in en kanal för onlinebutik](online-stores.md)
 
 [Associera en online-webbplats med en kanal](associate-site-online-store.md)
 

@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dbf8f4c1ea479a508f4a0294020b7201b32fe228
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025935"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527549"
 ---
-# <a name="overview-of-product-details-pages"></a>Översikt över sidor med produktinformation
-
+# <a name="product-details-pages-overview"></a>Översikt över sidor med produktinformation
 
 [!include [banner](includes/banner.md)]
 
@@ -83,8 +82,6 @@ Om marknadsföringsinnehållet är unikt för en viss produkt kan en marknadsfö
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över startsidan](quick-tour-home-page.md)
-
-[Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 
 [Översikt över sidor för kundvagn och kassa](quick-tour-cart-checkout.md)
 

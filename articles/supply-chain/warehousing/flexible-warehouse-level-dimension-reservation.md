@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346478"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530315"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på lagernivå
 
@@ -186,7 +186,7 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
 
     Kvantiteten **10** för batchnummer **B11** har nu plockats för försäljningsorderraden och placerats på platsen **Baydoor**. I detta skede är den klar att lastas på lastbilen och skickas till kundens adress.
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>Hantering av undantag av lageställearbete som har orderallokerade batchnummer
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Hantering av undantag av lageställearbete som har orderallokerade batchnummer
 
 Orderallokerade batchnummer för lagerarbete för plockning är underställt samma standardundantagshantering och åtgärder för lagerställe som normalt arbete. I allmänhet kan öppna arbete eller arbetsrad avbrytas, den kan avbrytas eftersom en användarplats är full, det kan tas bort och kan uppdateras på grund av en rörelse. På samma sätt kan plockad kvantitet av arbete som redan har slutförts minskas, eller så kan arbetet återföras.
 
@@ -233,7 +233,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerstyrningsappen när du startar plockningsarbete.</li>
+<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerställeappen när du startar plockningsarbete.</li>
 <li>Välj <strong>föreslå</strong>.</li>
 <li>Bekräfta den nya platsen som föreslås baserat på tillgängligheten för batchkvantitet.</li>
 </ol>
@@ -250,7 +250,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerstyrningsappen när du startar plockningsarbete.</li>
+<li>Välj menyalternativ <strong>Åsidosätt plats</strong> i lagerställeappen när du startar plockningsarbete.</li>
 <li>Ange en plats manuellt.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Inte tillämpligt</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Full</strong> i lagerstyrningsappen när du bearbetar plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Full</strong> i lagerställeappen när du bearbetar plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong> ange den delkvantitet för att ange den fullständiga kapaciteten.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Starta en rörelse på lagerstyrningsappen.</li>
+<li>Starta en rörelse på lagerställeappen.</li>
 <li>Ange "från-" och "till"-platser.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>Orsak</strong> anger du <strong>Ingen omallokering</strong>.</li>
 </ol>
@@ -498,7 +498,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>Orsak</strong> anger du <strong>Ingen omallokering</strong>.</li>
 </ol>
@@ -522,7 +522,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Ja</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 <li>Välj plats/registreringsskylt i listan.</li>
@@ -548,7 +548,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 </ol>
@@ -561,7 +561,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Nr</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med manuell omallokering</strong>.</li>
 <li>Välj plats/registreringsskylt i listan.</li>
@@ -585,7 +585,7 @@ Följande register ger en översikt som visar hur systemet hanterar den beställ
 <td>Inte tillämpligt</td>
 <td>
 <ol>
-<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerstyrningsappen när du utför plockningsarbete.</li>
+<li>Välj menyalternativet <strong>Kort plockning</strong> i lagerställeappen när du utför plockningsarbete.</li>
 <li>I fältet <strong>Kort plockkvantitet</strong>, ange <strong>0</strong> (noll).</li>
 <li>I fältet <strong>orsak</strong> väljer du <strong>Kort plockning med automatisk omallokering</strong>.</li>
 </ol>

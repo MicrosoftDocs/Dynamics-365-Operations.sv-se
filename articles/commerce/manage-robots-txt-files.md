@@ -3,7 +3,7 @@ title: Hantera robots.txt-filer
 description: I det här avsnittet beskrivs hur du hanterar robots.txt-filer i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brishoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d248dae36e6e038749ee17a5a6ccb32f1dde0aed
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 4b3856a7a0b4b198e71ce9af6691b1d90362f3e7
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096854"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533423"
 ---
 # <a name="manage-robotstxt-files"></a>Hantera robots.txt-filer
 
@@ -91,8 +91,6 @@ Så här tar du bort en robots.txt-fil i Commerce.
 [Konfigurera ditt domännamn](configure-your-domain-name.md)
 
 [Distribuera en ny näthandelsplats](deploy-ecommerce-site.md)
-
-[Ställ in en kanal för onlinebutik](online-stores.md)
 
 [Skapa en e-handelsplats](create-ecommerce-site.md)
 
