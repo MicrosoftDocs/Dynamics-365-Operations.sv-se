@@ -74,8 +74,6 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (maj 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -1141,7 +1139,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
             - name: Självstudier
               items:
-                - name: Använd JOIN-datakällor för att hämta data från flera programregister
+                - name: Använd KOPPLA-datakällor för att hämta data från flera programregister
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
@@ -1943,7 +1941,7 @@
                       href: production-control/tasks/define-resource-capabilities.md
                     - name: Flöden och operationer
                       href: production-control/routes-operations.md
-                    - name: Policyer för lagerarbete
+                    - name: Policyer för distributionslagerarbete
                       href: warehousing/warehouse-work-policies.md
                     - name: Skapa planeringsegenskaper för arbetstider
                       href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2561,196 +2559,234 @@
               href: transportation/tasks/set-up-shipping-carriers.md
             - name: Ställ in transportbegränsningar för en artikel
               href: transportation/tasks/set-up-transportation-constraints-item.md
-        - name: Lagerstyrning
+        - name: Hantering av distributionslager
           items:
-            - name: Lagerstyrning – översikt
+            - name: Hantering av distributionslager – översikt
               href: warehousing/warehouse-management-overview.md
-            - name: Konfiguration av lagerställe
+            - name: Åtgärder för mottagande distributionslager
               items:
-                - name: Konfiguration av lagerställe – översikt
-                  href: warehousing/warehouse-configuration.md
-                - name: Konfigurera ett lagerställe med hjälp av konfigurationsmall
-                  href: inventory/warehouse-template.md
-                - name: Styr arbetsuppgifter genom att använda arbetsmallar och platsdirektiv
-                  href: warehousing/control-warehouse-location-directives.md
-                - name: Koder för påfyllnadssteg
-                  href: warehousing/wave-step-codes.md
-                - name: Konfigurera påfyllnadsbearbetning
-                  href: warehousing/tasks/configure-wave-processing.md
-                - name: Uppdatera försändelser automatiskt
-                  href: warehousing/auto-update-shipment.md
-                - name: Skapa en platsprofil
-                  href: warehousing/tasks/create-location-profile.md
-                - name: Konfigurera platser i ett WMS-aktiverat lagerställe
-                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-                - name: Tidsplanera beläggningsutnyttjande
-                  href: warehousing/schedule-load-utilization.md
-                - name: Tidsplanera kapacitet för lagerställe
-                  href: warehousing/schedule-workload-capacity.md
-                - name: Ställ in dispositionskoder
-                  href: warehousing/tasks/set-up-dispositions-codes.md
-                - name: Måttenhet och lagerpolicyer
-                  href: warehousing/unit-measure-stocking-policies.md
-                - name: Power BI-innehåll för lagerställe
-                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                - name: Systemgruppering i en öppen arbetsuppgiftslista
-                  href: warehousing/system-group-on-open-work-list.md
-                - name: Layout för dokumentflöde för ID-nummeretiketter
-                  href: warehousing/document-routing-layout-for-license-plates.md
-                - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Stöd för streckkod för mobil
-                  href: warehousing/mobile-barcode-support.md
-                - name: Ställ in lagerställe för överföringsorder
-                  href: warehousing/transfer-orders-warehouse.md
-            - name: Reservationer i lagerstyrning
+                - name: Inleveranser för registrering och artikelinförsel
+                  items:
+                    - name: Distributionslagerhantering av inkommande laster för inköpsorder
+                      href: warehousing/inbound-load-handling.md
+                    - name: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                      href: warehousing/tasks/register-items-advanced-warehousing.md
+                    - name: Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                      href: warehousing/tasks/register-items-basic-warehousing.md
+                    - name: Direktleverera produkter från det mottagande lagerstället till butiker
+                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                    - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
+                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                    - name: Ställ in en arbetsmall för inköpsorder
+                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                    - name: Blandning av produktdimensioner på plats
+                      href: warehousing/location-product-dimension-mixing.md
+            - name: Åtgärder för utgående distributionslager
               items:
-                - name: Flexibel reservationspolicy för dimension på lagernivå
-                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
-            - name: Policyer för lagerarbete
-              items:
-                - name: Policyer för lagerarbete – översikt
-                  href: warehousing/warehouse-work-policies.md
-                - name: Ställ in policyer för lagerarbete
-                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
-                - name: Lagerrörelse med tillhörande arbete i Lagerstyrning
-                  href: warehousing/move-inventory-associated-work.md
-                - name: Skapa en arbetsklass
-                  href: warehousing/tasks/create-work-class.md
-                - name: Hantera lagerställearbetare
-                  href: warehousing/manage-warehouse-workers.md
-                - name: Uppskjuten bearbetning av lagerhållningsarbete
-                  href: warehousing/deferred-put.md
-            - name: Direktleverans
-              items:
-                - name: Direktleverans från produktionsorder till utlastningsplatser
-                  href: production-control/cross-docking-opportunities.md
-                - name: Automatisk frisläppning av direktleverans
-                  href: warehousing/auto-release-shipment-for-cross-docking.md
-            - name: Delvis frisläppning och delleverans
-              items:
-                - name: Delleverans av en transportlast
-                  href: warehousing/partial-shipping-of-transport-loads.md
-                - name: Frisläppning i batch av delvis reserverade överföringsorder
-                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
-            - name: Plockning och packning
-              items:
-                - name: Ställa in klusterplockning
-                  href: warehousing/set-up-cluster-picking.md
-                - name: Definiera skapande av behållare
-                  href: warehousing/tasks/set-up-containerization.md
-                - name: Bekräftelse av batch och ID-nummer
-                  href: warehousing/batch-and-license-plate-confirmation.md
-                - name: Aktivera utskrift av ID-nummer
-                  href: warehousing/tasks/license-plate-label-printing.md
-                - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Enhetsplockningsbekräftelse
-                  href: warehousing/piece-picking-confirmation.md
-                - name: Förpackningsmaterial och avgifter
-                  href: warehousing/pack-materials-packing-material-fees.md
-                - name: Ställ in manuell förpackning (enbart februari och maj 2016)
-                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
-                - name: Skapa omallokering av artiklar för kort plockning
-                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                - name: Avbryt lagerarbete för undantagshantering
-                  href: warehousing/cancel-warehouse-work.md
-                - name: Systemdirigerad klusterplockning
-                  href: warehousing/system-directed-cluster-pick.md
-                - name: Plockradsgruppering
-                  href: warehousing/pick-line-grouping.md
-            - name: Lagerinventering
-              items:
-                - name: Orsakskoder för lagerinventering
-                  href: warehousing/reason-codes-for-counting-journals.md
-                - name: Spärra lager
-                  href: inventory/inventory-blocking.md
-                - name: Rullande inventering
-                  href: warehousing/cycle-counting.md
-                - name: Definiera rullande inventering
-                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
-                - name: Rullande inventering av del av platser
-                  href: warehousing/partial-location-cycle-counting.md
-                - name: Definiera rullande inventering av del av platser
-                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                - name: Jobbet Rensning av behållningsposter för lagerstyrning
-                  href: warehousing/onhand-cleanup.md
-                - name: Lagerjournal
-                  href: inventory/inventory-journals.md
-                - name: Lagerplats
-                  href: inventory/inventory-locations.md
-                - name: Lagerstatus
-                  href: inventory/inventory-statuses.md
-                - name: Lagermärkesinventering
-                  href: inventory/inventory-tag-counting.md
-            - name: Lagerpåfyllnad
-              items:
-                - name: Lagerpåfyllnad – översikt
-                  href: warehousing/replenishment.md
-                - name: Omedelbar lagerpåfyllnad
-                  href: warehousing/immediate-replenishment.md
-                - name: Lagerpåfyllnad med uttags-kanbans
-                  href: warehousing/material-replenishment-withdrawal-kanban.md
-                - name: Ställ in en min-max-process för lagerpåfyllnad
-                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
-            - name: Installera och konfigurera lagerstyrningsappen
-              items:
-                - name: Installera och ansluta lagerstyrningsappen
-                  href: warehousing/install-configure-warehousing-app.md
-                - name: Konfigurera fältnamn i lagerstyrningsapp
-                  href: warehousing/configure-app-field-names-priorities-warehouse.md
-                - name: Ställ in mobila enheter för lagerarbete
-                  href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Inleverans av ID-nummer med mobilappen för lagerhantering
-                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                - name: Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
-                  href: warehousing/tasks/set-up-mobile-device-menu.md
-                - name: Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
-                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                - name: Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
-                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                - name: Inleverans av blandat ID-nummer på en mobil enhet
-                  href: warehousing/mixed-license-plate-receiving.md
-                - name: Konfigurera visning av äldre batchar inom lagerstället på en mobil enhet
-                  href: warehousing/display-older-batches-within-warehouses.md
-                - name: Plocka den äldsta batchen på en mobil enhet
-                  href: warehousing/pick-oldest-batch.md
-                - name: Processguideram
-                  href: warehousing/process-guide-framework.md
-            - name: Uppgradering och migrering
-              items:
-                - name: Uppgradera lagerhanteringsprocesser från Microsoft Dynamics AX 2012 till Finance and Operations
-                  href: warehousing/upgrade-migration-warehouse-management-processes.md
-            - name: Inleveranser för registrering och artikelinförsel
-              items:
-                - name: Lagerhantering av inkommande laster för inköpsorder
-                  href: warehousing/inbound-load-handling.md
-                - name: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
-                  href: warehousing/tasks/register-items-advanced-warehousing.md
-                - name: Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
-                  href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Direktleverera produkter från det mottagande lagerstället till butiker
-                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
-                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                - name: Ställ in en arbetsmall för inköpsorder
-                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
-            - name: Policyer för leveranskonsolidering
-              items:
+                - name: Reservationer i distributionslagerhantering
+                  items:
+                    - name: Flexibel reservationspolicy för dimension på distributionslagernivå
+                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                - name: Delvis frisläppning och delleverans
+                  items:
+                    - name: Delleverans av en transportlast
+                      href: warehousing/partial-shipping-of-transport-loads.md
+                    - name: Frisläppning i batch av delvis reserverade överföringsorder
+                      href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                - name: Plockning och packning
+                  items:
+                    - name: Ställa in klusterplockning
+                      href: warehousing/set-up-cluster-picking.md
+                    - name: Definiera skapande av behållare
+                      href: warehousing/tasks/set-up-containerization.md
+                    - name: Bekräftelse av batch och ID-nummer
+                      href: warehousing/batch-and-license-plate-confirmation.md
+                    - name: Aktivera utskrift av ID-nummer
+                      href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Enhetsplockningsbekräftelse
+                      href: warehousing/piece-picking-confirmation.md
+                    - name: Förpackningsmaterial och avgifter
+                      href: warehousing/pack-materials-packing-material-fees.md
+                    - name: Ställ in manuell förpackning (enbart februari och maj 2016)
+                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Skapa omallokering av artiklar för kort plockning
+                      href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                    - name: Avbryt distributionslagerarbete för undantagshantering
+                      href: warehousing/cancel-warehouse-work.md
+                    - name: Systemdirigerad klusterplockning
+                      href: warehousing/system-directed-cluster-pick.md
+                    - name: Systemstyrd arbetssekvensering
+                      href: warehousing/system-directed-work-sequencing.md
+                    - name: Plockradsgruppering
+                      href: warehousing/pick-line-grouping.md
+                    - name: Artikelplacering för distributionslager
+                      href: warehousing/warehouse-slotting.md
+                - name: Lagerpåfyllnad
+                  items:
+                    - name: Lagerpåfyllnad – översikt
+                      href: warehousing/replenishment.md
+                    - name: Omedelbar lagerpåfyllnad
+                      href: warehousing/immediate-replenishment.md
+                    - name: Lagerpåfyllnad med uttags-kanbans
+                      href: warehousing/material-replenishment-withdrawal-kanban.md
+                    - name: Ställ in en min-max-process för lagerpåfyllnad
+                      href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                    - name: Zontröskel för lagerpåfyllnad
+                      href: warehousing/zone-threshold-replenishment.md
+                - name: Lastuppbyggnad och utleveranser
+                  items:
+                    - name: Bekräfta och överför
+                      href: warehousing/confirm-and-transfer.md
+                    - name: Avancerad lastuppbyggnad under påfyllnad
+                      href: warehousing/advanced-load-building-during-wave.md
+                    - name: Släpp till distributionslager – regel
+                      href: warehousing/release-to-warehouse-rule.md
+                    - name: Gruppering av påfyllnadsmall
+                      href: warehousing/wave-template-grouping.md
                 - name: Policyer för leveranskonsolidering
-                  href: warehousing/about-shipment-consolidation-policies.md
-                - name: Konfigurera policyer för leveranskonsolidering
-                  href: warehousing/configure-shipment-consolidation-policies.md
-                - name: Scenario 1 – konsolidera leveranser när de frisläpps till lagret med hjälp av Automatisk frisläppning av försäljningsorder
-                  href: warehousing/consolidate-shipments-automatic.md
-                - name: Scenario 2 – konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Frisläpp till lager
-                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                - name: Scenario 3 – konsolidera leveranser genom att använda Frisläpp till lager från workbench för lastplanering
-                  href: warehousing/consolidate-shipments-load-planning-workbench.md
-                - name: Scenario 4 – konsolidera leveranser genom att använda workbench för leveranskonsolidering
-                  href: warehousing/consolidate-shipments-manual-workbench.md
-                - name: Scenario 5 – konsolidera leveranser manuellt via sidan Konsolidera leveranser
-                  href: warehousing/consolidate-shipments-manual-form.md
+                  items:
+                    - name: Policyer för leveranskonsolidering
+                      href: warehousing/about-shipment-consolidation-policies.md
+                    - name: Konfigurera policyer för leveranskonsolidering
+                      href: warehousing/configure-shipment-consolidation-policies.md
+                    - name: Scenario 1 – konsolidera leveranser när de frisläpps till lagret med hjälp av Automatisk frisläppning av försäljningsorder
+                      href: warehousing/consolidate-shipments-automatic.md
+                    - name: Scenario 2 – konsolidera leveranser när policyn för leveranskonsolidering åsidosätts från sidan Frisläpp till lager
+                      href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                    - name: Scenario 3 – konsolidera leveranser genom att använda Frisläpp till lager från workbench för lastplanering
+                      href: warehousing/consolidate-shipments-load-planning-workbench.md
+                    - name: Scenario 4 – konsolidera leveranser genom att använda workbench för leveranskonsolidering
+                      href: warehousing/consolidate-shipments-manual-workbench.md
+                    - name: Scenario 5 – konsolidera leveranser manuellt via sidan Konsolidera leveranser
+                      href: warehousing/consolidate-shipments-manual-form.md
+            - name: För alla distributionslageråtgärder
+              items:
+                - name: Policyer för distributionslagerarbete
+                  items:
+                    - name: Policyer för distributionslagerarbete – översikt
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Ställ in policyer för distributionslagerarbete
+                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                    - name: Lagerrörelse med tillhörande arbete i Lagerstyrning
+                      href: warehousing/move-inventory-associated-work.md
+                    - name: Skapa en arbetsklass
+                      href: warehousing/tasks/create-work-class.md
+                    - name: Hantera lagerställearbetare
+                      href: warehousing/manage-warehouse-workers.md
+                    - name: Uppskjuten bearbetning av lagerhållningsarbete
+                      href: warehousing/deferred-put.md
+                - name: Direktleverans
+                  items:
+                    - name: Direktleverans från produktionsorder till utlastningsplatser
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Automatisk frisläppning av direktleverans
+                      href: warehousing/auto-release-shipment-for-cross-docking.md
+                    - name: Planerad direktleverans
+                      href: warehousing/planned-cross-docking.md
+                - name: Lagerinventering
+                  items:
+                    - name: Orsakskoder för lagerinventering
+                      href: warehousing/reason-codes-for-counting-journals.md
+                    - name: Spärra lager
+                      href: inventory/inventory-blocking.md
+                    - name: Rullande inventering
+                      href: warehousing/cycle-counting.md
+                    - name: Definiera rullande inventering
+                      href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                    - name: Rullande inventering av del av platser
+                      href: warehousing/partial-location-cycle-counting.md
+                    - name: Definiera rullande inventering av del av platser
+                      href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Jobbet Rensning av behållningsposter för lagerstyrning
+                      href: warehousing/onhand-cleanup.md
+                    - name: Lagerjournal
+                      href: inventory/inventory-journals.md
+                    - name: Lagerplats
+                      href: inventory/inventory-locations.md
+                    - name: Lagerstatus
+                      href: inventory/inventory-statuses.md
+                    - name: Lagermärkesinventering
+                      href: inventory/inventory-tag-counting.md
+                - name: Distributionslagerarbete
+                  items:
+                    - name: Arbetsradsdetaljer
+                      href: warehousing/work-line-details.md
+                    - name: Placering för plats-ID-nummer
+                      href: warehousing/location-license-plate-positioning.md
+            - name: Inställningar för distributionslager
+              items:
+                - name: Konfiguration av distributionslager
+                  items:
+                    - name: Konfiguration av distributionslager – översikt
+                      href: warehousing/warehouse-configuration.md
+                    - name: Konfigurera ett lagerställe med hjälp av konfigurationsmall
+                      href: inventory/warehouse-template.md
+                    - name: Styr arbetsuppgifter genom att använda arbetsmallar och platsdirektiv
+                      href: warehousing/control-warehouse-location-directives.md
+                    - name: Koder för påfyllnadssteg
+                      href: warehousing/wave-step-codes.md
+                    - name: Konfigurera påfyllnadsbearbetning
+                      href: warehousing/tasks/configure-wave-processing.md
+                    - name: Uppdatera försändelser automatiskt
+                      href: warehousing/auto-update-shipment.md
+                    - name: Skapa en platsprofil
+                      href: warehousing/tasks/create-location-profile.md
+                    - name: Konfigurera platser i ett WMS-aktiverat distributionslager
+                      href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                    - name: Distributionslagrets platsstatus
+                      href: warehousing/warehouse-location-status.md
+                    - name: Ytterligare platszoner
+                      href: warehousing/additional-location-zones.md
+                    - name: Tidsplanera beläggningsutnyttjande
+                      href: warehousing/schedule-load-utilization.md
+                    - name: Tidsplanera kapacitet för distributionslager
+                      href: warehousing/schedule-workload-capacity.md
+                    - name: Ställ in dispositionskoder
+                      href: warehousing/tasks/set-up-dispositions-codes.md
+                    - name: Måttenhet och lagerpolicyer
+                      href: warehousing/unit-measure-stocking-policies.md
+                    - name: Power BI-innehåll för lagerställe
+                      href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                    - name: Systemgruppering i en öppen arbetsuppgiftslista
+                      href: warehousing/system-group-on-open-work-list.md
+                    - name: Layout för dokumentflöde för ID-nummeretiketter
+                      href: warehousing/document-routing-layout-for-license-plates.md
+                    - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Stöd för streckkod för mobil
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Ställ in distributionslager för överföringsorder
+                      href: warehousing/transfer-orders-warehouse.md
+                - name: Installera och konfigurera distributionslagerappen
+                  items:
+                    - name: Installera och ansluta distributionslagerappen
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Konfigurera fältnamn i distributionslagerappen
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Ställ in mobila enheter för distributionslagerarbete
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Inleverans av ID-nummer med distributionslagerappen
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Inleverans av blandat ID-nummer på en mobil enhet
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurera visning av äldre batchar inom lagerstället på en mobil enhet
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Plocka den äldsta batchen på en mobil enhet
+                      href: warehousing/pick-oldest-batch.md
+                    - name: Processguideram
+                      href: warehousing/process-guide-framework.md
+                - name: Uppgradering och migrering
+                  items:
+                    - name: Uppgradera processer för distributionslagerhantering från Microsoft Dynamics AX 2012 till Finance and Operations
+                      href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Utveckling av Supply Chain Management
           items:
             - name: Guide för utveckling av Gantt-kontroll

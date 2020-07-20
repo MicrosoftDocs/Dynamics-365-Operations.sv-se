@@ -3,7 +3,7 @@ title: Ställa in en B2C-innehavare i Commerce
 description: I det här avsnittet beskrivs hur du ställer in din Azure Active Directory (Azure AD) B2C-innehavare (Business-to-Consumer) för autentisering av användarplats i Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 04/28/2020
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9339b584c2d78e59f1a6b79d1610eef1581722c7
-ms.sourcegitcommit: 717346fb00c68a64ed58c846e89f41b80c7de9dd
+ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "3488772"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497178"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -91,7 +91,7 @@ Svars-URL är viktiga eftersom de ger en tillåten-lista med returdomänerna nä
 
 I rutan **Svars-URL** på skärmen **Azure AD B2C - program \> Ny program** måste du lägga till separata rader för både din webbplatsdomän och (när din miljö har etablerats) den URL som genereras av Commerce. URL-adresserna får alltid använda ett giltigt URL-format och måste bara vara bas-URL:er (inga snedstreck eller sökvägar kan avslutas). Strängen ``/_msdyn365/authresp`` måste läggas till i bas-URL:erna, som i följande exempel.
 
-- ``https://www.fabrikam.com/_msdyn365/authresp``
+- ``https://www.fabrikam.com/_msdyn365/authresp`` (Domänen ska matcha e-handelsdomänen helt. Om du har flera domäner måste du lägga till denna URL för varje domän.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
 ## <a name="create-user-flow-policies"></a>Skapa policyer för användarflöden

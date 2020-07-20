@@ -1,6 +1,6 @@
 ---
-title: Inleverans av ID-nummer via lagerstyrningsappen
-description: I det här avsnittet beskrivs hur du ställer in lagerstyrningsappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+title: Inleverans av ID-nummer via lagerställeappen
+description: I det här avsnittet beskrivs hur du ställer in lagerställeappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
 author: perlynne
 manager: tfehr
 ms.date: 04/29/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 5330981bde98b80e81076a9b1416473135ebdac6
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410895"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530200"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-app"></a>Inleverans av ID-nummer via lagerstyrningsappen
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>Inleverans av ID-nummer via lagerställeappen
 
-I det här avsnittet beskrivs hur du ställer in lagerstyrningsappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
+I det här avsnittet beskrivs hur du ställer in lagerställeappen så att du kan använda en mottagningsprocess med ID-nummer som tar emot en process som tar emot fysiskt lager.
 
 Du kan använda den här funktionen för att snabbt registrera inleveranser av ankommande lager som är relaterat till en leveransavisering (ASN). Systemet skapar automatiskt ett ASN när lagerstyrningsprocesser används för att leverera en överföringsorder. För inköpsorderprocessen kan ett ASN registreras manuellt, eller importeras automatiskt med hjälp av en inkommande ASN-dataenhetsprocess.
 

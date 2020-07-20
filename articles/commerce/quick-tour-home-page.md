@@ -3,7 +3,7 @@ title: Översikt över startsidan
 description: Det här ämnet innehåller en översikt över startsidan i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025981"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527595"
 ---
-# <a name="overview-of-the-home-page"></a>Översikt över startsidan
-
+# <a name="home-page-overview"></a>Översikt över startsidan
 
 [!include [banner](includes/banner.md)]
 
@@ -68,8 +67,6 @@ I huvudavsnittet på startsidan kan du markera produkter, kategorier eller kampa
 > Alla moduler som anges här kan användas på alla webbplatssidor. Det är dock viktigt att deras placering på startsidan är viktig eftersom kunderna först interagerar med din webbplats.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-
-[Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 
 [Översikt över sidor med produktinformation](quick-tour-pdp.md)
 

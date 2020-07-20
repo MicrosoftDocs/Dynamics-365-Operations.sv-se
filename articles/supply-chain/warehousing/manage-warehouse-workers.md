@@ -1,6 +1,6 @@
 ---
 title: Hantera lagerställearbetare
-description: Denna artikel beskriver hur du kan använda Dynamics 365 Supply Chain Management - lagerställeappen för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
+description: Denna artikel beskriver hur du kan använda lagerställeappen för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
 author: perlynne
 manager: tfehr
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205585"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530039"
 ---
 # <a name="manage-warehouse-workers"></a>Hantera lagerställearbetare
 
 [!include [banner](../includes/banner.md)]
 
-Denna artikel beskriver hur du kan använda Dynamics 365 Supply Chain Management - lagerställeappen för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
+Denna artikel beskriver hur du kan använda lagerställeappen för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
 
 Om du använder funktionerna i lagerhantering, alla lagerarbetare operationer som *arbete*. Arbetet såsom plockning, flytta och räknar lagersaldot registreras med hjälp av mobila enheter. Innan en lagerarbetare kan utföra arbete, han eller hon måste vara associerad med en arbetstagare i mänskliga resurser. Varje **arbetstagare** kan ha flera lagerarbetet användare som är associerade med den. Dessa arbeten kan användarna arbeta i olika lager och kan ha olika nivåer av åtkomst till olika mobila enheten menyer. Du kan tänker av lagerarbetet användare som flera inloggningar för vald anställd. Varje användare har en standard lager, och specifika arbetsflöden exponeras genom menyerna tillgängliga alternativ som fungerar. 
 

@@ -3,7 +3,7 @@ title: Ställ in en onlinekanal
 description: I det här avsnittet beskrivs hur du skapar en ny onlinekanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9b7a2b8fd157df8b39e9e227d188a3802cacb4e3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002437"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533331"
 ---
 # <a name="set-up-an-online-channel"></a>Ställ in en onlinekanal
 
@@ -35,9 +35,9 @@ I det här avsnittet beskrivs hur du skapar en ny onlinekanal i Microsoft Dynami
 
 Dynamics 365 Commerce stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). En onlinebutik ger en kunder alternativet att köpa produkter från återförsäljarens onlinebutik såväl som från deras fysiska butik.
 
-Om du vill skapa en onlinebutik i Handel måste du först skapa en onlinekanal. 
+Om du vill skapa en onlinebutik i Handel måste du först skapa en onlinekanal. Innan du skapar en ny onlinekanal måste du kontrollera att du har slutfört [Förutsättningar för att ställa in kanaler](channels-prerequisites.md).
 
-Innan du skapar en ny onlinekanal måste du kontrollera att du har slutfört [Förutsättningar för att ställa in kanaler](channels-prerequisites.md).
+Innan du kan skapa en ny plats måste minst en onlinebutik skapas i Handel. Mer information finns i [skapa en handelsschemaläggare](create-ecommerce-site.md).
 
 ## <a name="create-and-configure-a-new-online-channel"></a>Skapa och konfigurera en ny onlinekanal
 

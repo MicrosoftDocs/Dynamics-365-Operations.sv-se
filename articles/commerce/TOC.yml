@@ -92,8 +92,6 @@
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: Commerce 10.0.11 (juli 2020)
                       href: get-started/whats-new-commerce-10-0-11.md
-                    - name: Commerce 10.0.10 (maj 2020)
-                      href: get-started/whats-new-commerce-10-0-10.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Finance and Operations
@@ -192,6 +190,8 @@
               items:
                 - name: Arkitekturöversikt för Dynamics 365 Commerce
                   href: commerce-architecture.md
+                - name: Autentiseringsflöden för Dynamics 365 Commerce
+                  href: arch-auth-flow.md
                 - name: Arkitektur för Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Välja en butikstopologi
@@ -294,7 +294,7 @@
                           href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
                         - name: Definiera relationerna mellan organisationsenheter
                           href: tasks/design-relationships-between-organizational-units.md
-                    - name: Inställningar för lagerställe
+                    - name: Inställningar för distributionslager
                       href: channels-setup-warehouse.md
                     - name: Momsinställningar
                       items:
@@ -748,12 +748,12 @@
               href: edit-audit-retail-transactions.md
             - name: 'Skapa, beräkna och bokföra utdrag för en butik'
               href: tasks/create-calculate-post-statement-retail-store.md
-            - name: Förbättringar av funktionen för bokföring av utdrag
-              href: statement-posting-eod.md
             - name: Indroppningsbaserat orderskapande för butikstransaktioner
               href: trickle-feed.md
             - name: 'Skapa, beräkna och bokföra utdrag för en butik'
               href: tasks/create-calculate-post-statement-retail-store.md
+            - name: Finansiell avstämning i butiker
+              href: fin-recon.md
             - name: Förbättringar av funktionen för bokföring av utdrag
               href: statement-posting-eod.md
             - name: Förbättrad hantering av batchspårade artiklar
@@ -786,15 +786,13 @@
           items:
             - name: Översikt över onlinebutik
               href: online-store-overview.md
-            - name: Skapa en e-handelsplats
+            - name: Skapa en näthandelsplats
               items:
                 - name: Konfigurera ditt domännamn
                   href: configure-your-domain-name.md
-                - name: Distribuera en ny klientorganisation för e-handel
+                - name: Distribuera en ny klientorganisation för näthandel
                   href: deploy-ecommerce-site.md
-                - name: Ställ in en kanal för onlinebutik
-                  href: online-stores.md
-                - name: Skapa en e-handelsplats
+                - name: Skapa en näthandelsplats
                   href: create-ecommerce-site.md
                 - name: Associera en näthandelsplats med en onlinekanal
                   href: associate-site-online-store.md
@@ -810,14 +808,12 @@
                   href: configure-multi-B2C-tenants.md
                 - name: Lägga till stöd för nätverk för innehållsleverans (CDN)
                   href: add-cdn-support.md
-                - name: Aktivera platsbaserad butiksdetektering
+                - name: Aktivera platsbaserad butiksidentifiering
                   href: enable-store-detection.md
             - name: Exempelwebbplats – översikt
               items:
                 - name: Översikt över startsidan
                   href: quick-tour-home-page.md
-                - name: Översikt över standardkategorilandningssida och sida för sökresultat
-                  href: category-search-page-overview.md
                 - name: Översikt över sidor med produktinformation
                   href: quick-tour-pdp.md
                 - name: Översikt över sidor för kundvagn och kassa
@@ -998,7 +994,7 @@
                       href: add-breadcrumb.md
             - name: Sök
               items:
-                - name: Standardkategorilandningssida och sida för sökresultat
+                - name: Översikt över standardkategorilandningssida och sida för sökresultat
                   href: category-search-page-overview.md
                 - name: Översikt över molnbaserade sökningar
                   href: cloud-powered-search-overview.md
@@ -1612,7 +1608,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Självstudier
               items:
-                - name: Använd JOIN-datakällor för att hämta data från flera programregister
+                - name: Använd KOPPLA-datakällor för att hämta data från flera programregister
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurera ER-modellmappningar som är beroende av landssammanhang
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
@@ -2000,6 +1996,8 @@
                       href: e-commerce-extensibility/create-theme.md
                     - name: Konfigurera temainställningar
                       href: e-commerce-extensibility/configure-theme-settings.md
+                    - name: Konfigurera förinställningar för temaformat
+                      href: e-commerce-extensibility/theme-style-presets.md
                     - name: Utöka ett tema för att lägga till modultillägg
                       href: e-commerce-extensibility/theme-module-extensions.md
                     - name: Utöka ett tema från ett bastema
@@ -2036,6 +2034,8 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Konfigurera versionspipeline för SDK för Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
+                - name: Vanliga frågor och svar om SDK för Retail
+                  href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Utbyggbarhet för kassa
               items:
                 - name: Skärmlayouter för kassa
@@ -2046,8 +2046,6 @@
                   href: install-pos-layout-designer.md
                 - name: Utöka vyn med dubbla bildskärmar för kassan
                   href: dev-itpro/pos-dual-display-extension.md
-                - name: 'Modern POS och Cloud POS, utbyggbarhet för utlösare'
-                  href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Lägga till anpassade kontroller i kassavyer
                   href: dev-itpro/pos-custom-control.md
                 - name: Lägga till kassaåtgärder i kassalayouter med hjälp av knappsatsdesigner
@@ -2082,7 +2080,7 @@
                   href: dev-itpro/pos-custom-transaction-column.md
                 - name: 'Anropa API:er eller åtgärder för kassa från kassatillägg'
                   href: dev-itpro/pos-api-extension.md
-                - name: Utlösare och utskrift för Modern POS
+                - name: Utlösare och utskrift för Modern POS (MPOS)
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Lägga till anpassade kontroller i designerbaserade vyer (ej skärm) för kassa
                   href: dev-itpro/pos-control-non-screen.md

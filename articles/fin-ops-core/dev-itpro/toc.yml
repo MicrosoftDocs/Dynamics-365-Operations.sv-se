@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Platform updates för 10.0.11 (juli 2020)
                   href: get-started/whats-new-platform-update-35.md
-                - name: Platform updates för 10.0.10 (maj 2020)
-                  href: get-started/whats-new-platform-update-34.md
             - name: Borttagna och utfasade funktioner
               items:
                 - name: Borttagna och utfasade plattformsfunktioner
@@ -713,9 +711,29 @@
                         - name: Händelser
                           href: dev-ref/xpp-events.md
                     - name: Dataval och manipulering för X++
-                      href: dev-ref/xpp-data-query.md
-                    - name: Dataåtkomst med SysDa API
-                      href: dev-ref/sysda.md
+                      items:
+                        - name: Översikt över dataval och manipulering för X++
+                          href: dev-ref/xpp-data/xpp-data-home-page.md
+                        - name: Select-instruktion
+                          href: dev-ref/xpp-data/xpp-select-statement.md
+                        - name: Markera data
+                          href: dev-ref/xpp-data/xpp-select.md
+                        - name: Infoga data
+                          href: dev-ref/xpp-data/xpp-insert.md
+                        - name: Uppdatera data
+                          href: dev-ref/xpp-data/xpp-update.md
+                        - name: Ta bort data
+                          href: dev-ref/xpp-data/xpp-delete.md
+                        - name: While select-instruktion
+                          href: dev-ref/xpp-data/xpp-while-select.md
+                        - name: Skriva en Select-instruktion som ett uttryck
+                          href: dev-ref/xpp-data/xpp-select-expression.md
+                        - name: Transaktionsintegritet
+                          href: dev-ref/xpp-data/xpp-transaction.md
+                        - name: Konvertering av åtgärder från set-baserat till post för post
+                          href: dev-ref/xpp-data/xpp-data-perf.md
+                        - name: Dataåtkomst med API för SysDa
+                          href: dev-ref/sysda.md
                     - name: Makron för X++
                       href: dev-ref/xpp-macros.md
                     - name: Attributklasser för X++
@@ -750,80 +768,62 @@
                       href: dev-ref/xpp-session-run-time-functions.md
                     - name: Strängexekveringsfunktioner för X++
                       href: dev-ref/xpp-string-run-time-functions.md
-                - name: Systemregister
+                - name: Systemtabeller
                   href: dev-ref/system-tables.md
                 - name: Systemklasser
                   items:
-                    - name: A-klasser
-                      href: dev-ref/a-classes.md
-                    - name: B-klasser
-                      href: dev-ref/b-classes.md
-                    - name: C-klasser
-                      href: dev-ref/c-classes.md
-                    - name: D-klasser
-                      href: dev-ref/d-classes.md
-                    - name: E-klasser
-                      href: dev-ref/e-classes.md
-                    - name: F-klasser (FieldBinding to FormBuildAnimateControl)
-                      href: dev-ref/fieldbinding-classes.md
-                    - name: F-klasser (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
-                      href: dev-ref/formbuildbuttoncontrol-classes.md
-                    - name: F-klasser (FormBuildFilterPaneControl to FormBuildRealControl)
-                      href: dev-ref/formbuildfilterpanecontrol-classes.md
-                    - name: F-klasser (FormBuildReferenceControl to FormButtonSeparatorControl)
-                      href: dev-ref/formbuildreferencecontrol-classes.md
-                    - name: F-klasser (FormChangeTracker to FormControlEventArgs)
-                      href: dev-ref/formchangetracker-classes.md
-                    - name: F-klasser (FormDataObject to FormFastTabHeaderControl)
-                      href: dev-ref/formdataobject-classes.md
-                    - name: F-klasser (FormFastTabSummarySeparator to FormGridControl)
-                      href: dev-ref/formfasttabsummaryseparator-classes.md
-                    - name: F-klasser (FormGroupControl till FormIntControl)
-                      href: dev-ref/formgroupcontrol-classes.md
-                    - name: F-klasser (FormListBoxControl till FormNotifyEventArgs)
-                      href: dev-ref/formlistboxcontrol-classes.md
-                    - name: F-klasser (FormObject till FormRealControl)
-                      href: dev-ref/formobject-classes.md
-                    - name: F-klasser (FormReferenceControl to FormStringControl)
-                      href: dev-ref/formreferencecontrol-classes.md
-                    - name: F-klasser (FormTabControl to FormWindowControl)
-                      href: dev-ref/formtabcontrol-classes.md
-                    - name: G-klasser
-                      href: dev-ref/g-classes.md
-                    - name: H-klasser
-                      href: dev-ref/h-classes.md
-                    - name: I-klasser
-                      href: dev-ref/i-classes.md
-                    - name: J-klasser
-                      href: dev-ref/j-classes.md
-                    - name: K-klasser
-                      href: dev-ref/k-classes.md
-                    - name: L-klasser
-                      href: dev-ref/l-classes.md
-                    - name: M-klasser
-                      href: dev-ref/m-classes.md
-                    - name: N-klasser
-                      href: dev-ref/n-classes.md
-                    - name: O-klasser
-                      href: dev-ref/o-classes.md
-                    - name: P-klasser
-                      href: dev-ref/p-classes.md
-                    - name: Q-klasser
-                      href: dev-ref/q-classes.md
-                    - name: R-klasser
-                      href: dev-ref/r-classes.md
-                    - name: S-klasser
-                      href: dev-ref/s-classes.md
-                    - name: T-klasser
-                      href: dev-ref/t-classes.md
-                    - name: U-klasser
-                      href: dev-ref/u-classes.md
-                    - name: V-klasser
-                      href: dev-ref/v-classes.md
-                    - name: W-klasser
-                      href: dev-ref/w-classes.md
-                    - name: X-klasser
-                      href: dev-ref/x-classes.md
+                    - name: Lista med systemklasser
+                      href: dev-ref/system-classes/toc.yml
+                    - name: Systemklasser grupperade alfabetiskt
+                      items:
+                        - name: A-klasser
+                          href: dev-ref/a-classes.md
+                        - name: B-klasser
+                          href: dev-ref/b-classes.md
+                        - name: C-klasser
+                          href: dev-ref/c-classes.md
+                        - name: D-klasser
+                          href: dev-ref/d-classes.md
+                        - name: E-klasser
+                          href: dev-ref/e-classes.md
+                        - name: F-klasser
+                          href: dev-ref/f-classes.md
+                        - name: G-klasser
+                          href: dev-ref/g-classes.md
+                        - name: H-klasser
+                          href: dev-ref/h-classes.md
+                        - name: I-klasser
+                          href: dev-ref/i-classes.md
+                        - name: J-klasser
+                          href: dev-ref/j-classes.md
+                        - name: K-klasser
+                          href: dev-ref/k-classes.md
+                        - name: L-klasser
+                          href: dev-ref/l-classes.md
+                        - name: M-klasser
+                          href: dev-ref/m-classes.md
+                        - name: N-klasser
+                          href: dev-ref/n-classes.md
+                        - name: O-klasser
+                          href: dev-ref/o-classes.md
+                        - name: P-klasser
+                          href: dev-ref/p-classes.md
+                        - name: Q-klasser
+                          href: dev-ref/q-classes.md
+                        - name: R-klasser
+                          href: dev-ref/r-classes.md
+                        - name: S-klasser
+                          href: dev-ref/s-classes.md
+                        - name: T-klasser
+                          href: dev-ref/t-classes.md
+                        - name: U-klasser
+                          href: dev-ref/u-classes.md
+                        - name: V-klasser
+                          href: dev-ref/v-classes.md
+                        - name: W-klasser
+                          href: dev-ref/w-classes.md
+                        - name: X-klasser
+                          href: dev-ref/x-classes.md
             - name: Utbyggbarhet
               items:
                 - name: Startsida för utbyggbarhet
@@ -964,7 +964,7 @@
               items:
                 - name: Börja spåra med Trace parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Enanvändartestning med Uppgiftsinspelaren och Prestanda-SDK
+                - name: Enanvändartestning med Uppgiftsinspelaren och Performance SDK
                   href: perf-test/single-user-test-perf-sdk.md
                 - name: Fleranvändartestning med Performance SDK och en lokal testkontrollant
                   href: perf-test/multi-user-testing-local-test-controller.md
@@ -1434,6 +1434,8 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Exportera B2B-användare till Azure AD
               href: sysadmin/implement-b2b.md
+            - name: Processautomatisering
+              href: sysadmin/process-automation.md
             - name: Säkerhet
               items:
                 - name: Rollbaserad säkerhet
@@ -1454,10 +1456,12 @@
                   href: sysadmin/tasks/set-up-segregation-duties.md
                 - name: Identifiera och lösa konflikter vid ansvarsfördelning
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
-                - name: Tilldela användare till säkerhetsroller
+                - name: Tilldela användare säkerhetsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
                 - name: Säkerhetsdiagnos för uppgiftsinspelningar
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+            - name: Processautomatisering
+              href: /sysadmin/process-automation.md
             - name: Batchbearbetning
               items:
                 - name: Batchbearbetning – översikt
@@ -1516,8 +1520,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-uppgradering – Checklista för föruppgradering för datauppgradering
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012-uppgradering – Datauppgradering i begränsade lägen
+                - name: AX 2012-uppgradering – Datauppgradering i sandbox-miljöer
                   href: migration-upgrade/upgrade-data-sandbox.md
+                - name: AX 2012-uppgradering – Lokala miljöer
+                  href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012-uppgradering – Övergångstest
                   href: migration-upgrade/upgrade-cutover-testing.md
                 - name: AX 2012-uppgradering – Uppgifter efter uppgradering

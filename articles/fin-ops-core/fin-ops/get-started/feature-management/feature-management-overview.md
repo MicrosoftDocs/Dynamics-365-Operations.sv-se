@@ -3,7 +3,7 @@ title: Översikt över funktionshantering
 description: I det här avsnittet beskrivs funktionen funktionshantering och hur du kan använda den.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456607"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499629"
 ---
 # <a name="feature-management-overview"></a>Översikt över funktionshantering
 
@@ -140,6 +140,10 @@ I följande exempel beskrivs vad som händer när du använder entiteten **funkt
 ## <a name="feature-management-and-flighting"></a>Funktionshantering och flygning
 
 Med funktionshantering kan du styra de funktioner som levereras i varje utgåva. Förhandsversioner låter Microsoft Teams frisläppa funktioner till ett begränsat antal kunder så att funktionerna kan testas och valideras utan att alla kunder påverkas. Funktionshanteringen styr inte förhandsversioner av funktioner.
+
+## <a name="new-features-are-optional-for-12-months"></a>Nya funktioner är valfria i 12 månader
+
+När en ny icke-kritisk funktion installeras, är den valfri under en 12-månaders period. Detta gör att du och din organisations tid planerar framåt för att kunna utsätta en funktion och låta den testas mot dina dagliga operationer. Mer information i [Frågor och svar om tjänstuppdateringar för en version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Använda funktionshantering för att aktivera ISV-funktioner eller anpassade funktioner
 

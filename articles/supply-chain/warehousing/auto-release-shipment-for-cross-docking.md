@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201489"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530246"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frisläppning av försändelse för direktutleverans
 
@@ -164,7 +164,7 @@ Om du vill direktleverera kvantiteten av färdiga varor till den utgående plats
 8. På sidan **Produktionsorder** i åtgärdsfönstret, på fliken **Produktionsorder** i grupp **Process** välj **Uppskatta** och välj sedan **OK**. Ordern är uppskattad och råmaterialkvantiteten reserveras för produktionen.
 9. I åtgärdsfönstret, på fliken **Produktionsorder** i gruppen **Process** välj **Frisläpp** och välj sedan **OK**. Lagerplockningsarbete skapas för råmaterialen.
 10. Öppna och granska arbetet. I åtgärdsfönstret, på fliken **Lagerställe**, i gruppen **Allmänt**, väljer du **Arbetsdetaljer**. Gör en notering av arbets-ID.
-11. Öppna och logga in på Dynamics 365 for Finance and Operations – appen lagerställe för att köra arbete i lagerställe 51.
+11. Logga in på lagerställeappen för att köra arbete i lager 51.
 12. Gå till **Produktion** \> **Produktionsplockning**.
 13. Ange arbets-ID:t för att starta och slutföra plockningen av råmaterial. 
 

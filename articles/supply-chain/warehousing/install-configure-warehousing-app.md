@@ -1,6 +1,6 @@
 ---
-title: Installera och anslut lagerstyrningsappen
-description: I det här avsnittet beskrivs hur du installerar modulen för lagerstyrning på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
+title: Installera och ansluta lagerställeappen
+description: I det här avsnittet beskrivs hur du installerar lagerställeappen på alla dina mobila enheter och konfigurerar den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 05/25/2020
@@ -19,46 +19,46 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 290888dbf7d194b8cf259d7218d01d4a4f911db0
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367092"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530085"
 ---
-# <a name="install-and-connect-the-warehousing-app"></a>Installera och anslut lagerstyrningsappen
+# <a name="install-and-connect-the-warehouse-app"></a>Installera och ansluta lagerställeappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Det här ämnet beskriver hur man konfigurerar lagerstyrning för molndistribution. Om du letar efter information om hur du konfigurerar lagerstyrning för lokal distribution, se [Lagerstyrning för lokal distribution](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
-Lagerstyrningsappen kan hämtas från Google Play och i Microsoft Store. Den utgör en fristående komponent. Därför måste du hämta den på varje enskild enhet och sedan konfigurera den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
+Lagerställeappen kan hämtas från Google Play och i Microsoft Store. Den utgör en fristående komponent. Därför måste du hämta den på varje enskild enhet och sedan konfigurera den för anslutning till din Microsoft Dynamics 365 Supply Chain Management-miljö.
 
-I det här avsnittet beskrivs hur du installerar modulen för lagerstyrning på alla dina mobila enheter och konfigurerar den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
+I det här avsnittet beskrivs hur du installerar lagerställeappen på alla dina mobila enheter och konfigurerar den för anslutning till din Supply Chain Management-miljö. Du kan konfigurera varje enhet manuellt eller också kan du importera anslutningsinställningar via en fil eller genom att skanna en QR-kod.
 
 ## <a name="system-requirements"></a>Systemkrav
 
-Lagerstyrningsappen är tillgänglig för både operativsystemet Android och operativsystemet Windows. Om du vill använda den senaste versionen av appen måste du ha något av följande operativsystem som stöds installerat på dina mobila enheter.
+Lagerställeappen är tillgänglig för både operativsystemet Android och operativsystemet Windows. Om du vill använda den senaste versionen av appen måste du ha något av följande operativsystem som stöds installerat på dina mobila enheter.
 
 - Windows 10 (Universal Windows Platform \[UWP\]) Fall creators update 1709 (version 10.0.16299) eller senare
 - Android 4.4 eller senare
 
 > [!NOTE]
-> Om du måste stödja äldre Windows-enheter som inte kan köra den senaste versionen av Windows kan du ändå hämta version 1.6.3.0 av lagerstyrningsappen från Microsoft Store. Den versionen kan köras på Windows 10 (UWP), novemberuppdatering 1511 (version 10.0.10586) eller senare. Tänk dock på att den här versionen av lagerstyrningsappen inte stöder massdistribution av anslutningsinställningar. Du måste därför [konfigurera anslutningen manuellt](#config-manually) på varje enskild enhet som kör den här versionen av appen.
+> Om du måste stödja äldre Windows-enheter som inte kan köra den senaste versionen av Windows kan du ändå hämta version 1.6.3.0 av lagerställeappen från Microsoft Store. Den versionen kan köras på Windows 10 (UWP), novemberuppdatering 1511 (version 10.0.10586) eller senare. Tänk dock på att den här versionen av lagerställeappen inte stöder massdistribution av anslutningsinställningar. Du måste därför [konfigurera anslutningen manuellt](#config-manually) på varje enskild enhet som kör den här versionen av appen.
 
-## <a name="get-the-warehousing-app"></a>Hämta appen för lagerstyrning
+## <a name="get-the-warehouse-app"></a>Hämta lagerställeappen
 
 Använd någon av följande länkar för att hämta appen:
 
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing i Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 i Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-För mindre distributioner kanske du vill installera appen från den relevanta butiken på respektive enhet och sedan manuellt konfigurera anslutningen till de miljöer du använder. I version 1.7.0.0 och senare av modulen för lagerstyrning kan du emellertid också automatisera appdistributionen och/eller -konfigurationen. Den här metoden kan vara praktisk om du hanterar många enheter och använder en hanteringslösning för mobila enheter och mobil apphantering, t.ex. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Information om hur du använder Intune för att lägga till program finns i [Lägga till appar i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+För mindre distributioner kanske du vill installera appen från den relevanta butiken på respektive enhet och sedan manuellt konfigurera anslutningen till de miljöer du använder. I version 1.7.0.0 och senare av lagerställeappen kan du emellertid också automatisera appdistributionen och/eller -konfigurationen. Den här metoden kan vara praktisk om du hanterar många enheter och använder en hanteringslösning för mobila enheter och mobil apphantering, t.ex. [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Information om hur du använder Intune för att lägga till program finns i [Lägga till appar i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Skapa ett webbtjänstprogram i Azure Active Directory
 
-Om du vill att appen för lagerstyrning ska interagera med en viss Supply Chain Management-server måste du registrera ett webbtjänstprogram i en klientorganisation för Supply Chain Management i Azure Active Directory (Azure AD). Följande procedur anger ett sätt att skapa slutföra denna uppgift. Mer information och alternativ finns bland länkarna efter proceduren.
+Om du vill att lagerställeappen ska interagera med en viss Supply Chain Management-server måste du registrera ett webbtjänstprogram i en klientorganisation för Supply Chain Management i Azure Active Directory (Azure AD). Följande procedur anger ett sätt att skapa slutföra denna uppgift. Mer information och alternativ finns bland länkarna efter proceduren.
 
 1. I en webbläsare går du till [https://portal.azure.com](https://portal.azure.com/).
 1. Ange namn och lösenord för den användare som har tillgång till Azure-abonnemanget.
@@ -82,7 +82,7 @@ Om du vill att appen för lagerstyrning ska interagera med en viss Supply Chain 
 
 1. I listan **Hantera** väljer du **Certifikat och hemligheter**. Välj sedan någon av följande knappar, beroende på hur du vill konfigurera appen för autentisering. (Mer information finns under [Autentisera med hjälp av ett certifikat eller en klienthemlighet](#authenticate) senare i det här avsnittet.)
 
-    - **Ladda upp certifikat** – Ladda upp ett certifikat som ska användas som hemlighet. Vi rekommenderar detta tillvägagångssätt eftersom det är säkrare och även kan automatiseras helt. Om du kör lagerstyrningsappen på Windows-enheter ska du anteckna det värde för **tumavtryck** som visas när du har laddat upp certifikatet. Du kommer att behöva detta värde när du konfigurerar certifikatet på Windows-enheter.
+    - **Ladda upp certifikat** – Ladda upp ett certifikat som ska användas som hemlighet. Vi rekommenderar detta tillvägagångssätt eftersom det är säkrare och även kan automatiseras helt. Om du kör lagerställeappen på Windows-enheter ska du anteckna det värde för **tumavtryck** som visas när du har laddat upp certifikatet. Du kommer att behöva detta värde när du konfigurerar certifikatet på Windows-enheter.
     - **Ny klienthemlighet** – Skapa en nyckel genom att ange en nyckelbeskrivning och en varaktighet i avsnittet **Lösenord**, och välj sedan **Lägg till**. Skapa en kopia av nyckeln och spara den på ett säkert sätt.
 
     ![Certifikat & hemligheter](media/app-connect-azure-authentication.png "Certifikat & hemligheter")
@@ -99,7 +99,7 @@ Mer information om hur du ställer in webbtjänstprogram i Azure AD finns i föl
 
 Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-program.
 
-1. Skapa en användare som motsvarar autentiseringsuppgifterna för lagerstyrningsprogrammet:
+1. Skapa en användare som motsvarar autentiseringsuppgifterna för lagerställeappen:
 
     1. I Supply Chain Management går du till **Systemadministration \> Användare \> Användare**.
     1. Skapa en användare.
@@ -107,7 +107,7 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
 
     ![Tilldela användaren av den mobila enheten för lagerstyrningsenheten](media/app-connect-app-users.png "Tilldela användaren av den mobila enheten för lagerstyrningsenheten")
 
-1. Koppla ditt Azure AD-program till användaren av lagerstyrningsappen:
+1. Koppla ditt Azure AD-program till användaren av lagerställeappen:
 
     1. Gå till **Systemadministration \> Konfiguration \> Azure Active Directory-program**.
     1. Skapa en rad.
@@ -119,9 +119,9 @@ Gör så här om du vill låta Supply Chain Management använda ditt Azure AD-pr
 
 Autentisering med Azure AD är ett säkert sätt att ansluta en mobil enhet till Supply Chain Management. Du kan autentisera med hjälp av antingen en klienthemlighet eller ett certifikat. Om du vill importera anslutningsinställningar rekommenderar vi att du använder ett certifikat istället för en klienthemlighet. Eftersom klienthemligheten alltid måste lagras på ett säkert sätt kan du inte importera den från en anslutningsinställningsfil eller en QR-kod, enligt beskrivningen längre fram i det här avsnittet.
 
-Certifikat kan användas som hemligheter för att bevisa programmets identitet när en token begärs. Den offentliga delen av certifikatet överförs till app-registreringen i Azure-portalen, medan det fullständiga certifikatet måste distribueras på varje enskild enhet där appen för lager styrning installeras. Organisationen ansvarar för att hantera certifikatet i fråga om rotation osv.. Du kan använda självsignerade certifikat, men du bör alltid använda icke-exporterbara certifikat.
+Certifikat kan användas som hemligheter för att bevisa programmets identitet när en token begärs. Den offentliga delen av certifikatet överförs till app-registreringen i Azure-portalen, medan det fullständiga certifikatet måste distribueras på varje enskild enhet där lagerställeappen installeras. Organisationen ansvarar för att hantera certifikatet i fråga om rotation osv.. Du kan använda självsignerade certifikat, men du bör alltid använda icke-exporterbara certifikat.
 
-Du måste göra certifikatet tillgängligt lokalt på varje enskild enhet där du kör appen för lagerstyrning. Information om hur du hanterar certifikat för Intune-styrda enheter om du använder Intune finns i [Använda certifikat för autentisering i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Du måste göra certifikatet tillgängligt lokalt på varje enskild enhet där du kör lagerställeappen. Information om hur du hanterar certifikat för Intune-styrda enheter om du använder Intune finns i [Använda certifikat för autentisering i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurera programmet genom att importera anslutningsinställningar
 
@@ -177,7 +177,7 @@ Du kan antingen spara informationen som en JSON-fil eller generera en QR-kod med
 
 ### <a name="save-the-connection-settings-file-on-each-device"></a>Spara filen med anslutningsinställningar på varje enskild enhet
 
-Vanligtvis använder du ett verktyg för enhetshantering eller ett skript för att distribuera filerna med anslutningsinställningar till alla enheter som du hanterar. Om du använder standardnamn och -plats när du sparar filen med anslutningsinställningar på varje enhet importerar appen för lagerstyrning den automatiskt, även under den första körningen efter det att appen har installerats. Om du använder ett anpassat namn eller en anpassad plats för filen måste programanvändaren ange värdena under den första körningen. Appen fortsätter dock att använda angivet namn och angiven plats efteråt.
+Vanligtvis använder du ett verktyg för enhetshantering eller ett skript för att distribuera filerna med anslutningsinställningar till alla enheter som du hanterar. Om du använder standardnamn och -plats när du sparar filen med anslutningsinställningar på varje enhet importerar lagerställeappen den automatiskt, även under den första körningen efter det att appen har installerats. Om du använder ett anpassat namn eller en anpassad plats för filen måste programanvändaren ange värdena under den första körningen. Appen fortsätter dock att använda angivet namn och angiven plats efteråt.
 
 Varje gång appen startas återimporterar den anslutningsinställningarna från dessas tidigare plats för att avgöra om några ändringar har gjorts. Appen uppdaterar bara anslutningar som har samma namn som anslutningarna i filen med anslutningsinställningar. Användarskapade anslutningar som använder andra namn uppdateras inte.
 
@@ -197,7 +197,7 @@ Normalt skapas sökvägarna automatiskt när appen har körts för första gång
 
 Följ dessa steg om du vill importera anslutningsinställningar från antingen en fil eller en QR-kod.
 
-1. Öppna appen för lagerstyrning på din mobila enhet.
+1. Öppna lagerställeappen på din mobila enhet.
 1. Gå till **Anslutningsinställningar**.
 1. Ange alternativet **Använd demoläge** som _Nej_.
 
@@ -226,7 +226,7 @@ Följ dessa steg om du vill importera anslutningsinställningar från antingen e
 
 Du kan konfigurera programmet manuellt på enheten så att den ansluter till Supply Chain Management-servern via Azure AD-programmet.
 
-1. Öppna appen för lagerstyrning på din mobila enhet.
+1. Öppna lagerställeappen på din mobila enhet.
 1. Gå till **Anslutningsinställningar**.
 1. Ange alternativet **Använd demoläge** som _Nej_.
 

@@ -1,9 +1,9 @@
 ---
 title: Översikt över standardkategorilandningssida och sida för sökresultat
 description: Det här ämnet ger en överblick över målsidan för standardkategori och sökresultatsida i Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002506"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527478"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>Översikt över standardkategorilandningssida och sida för sökresultat
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>Översikt över standardkategorilandningssida och sida för sökresultat
 
 [!include [banner](includes/banner.md)]
 
@@ -96,7 +95,13 @@ Följande komponenter är nödvändiga för en sökresultatsida:
 - **Sidnumrering** gör att webbplatsbesökarna kan flytta från en sida med kategoriserade produktresultat till en annan sida.
 - **Totalt antal** anger det totala antalet produkter som har definierats i en kategori som matchar sökkriterierna.
 
+>[!NOTE]
+>De här molndrivna sökfunktionerna är tillgängliga från och med version 10.0.8. Se till att under **Handelsparametrar > Konfigurationsparametrar** finns en post för "ProductSearch.UseAzureSearch inställd på true". 
+![Konfigurationsparametrar för med molndriven sökning](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Ytterligare resurser
+
+[Översikt över molnbaserade sökningar](cloud-powered-search-overview.md)
 
 [Översikt över startsidan](quick-tour-home-page.md)
 
