@@ -41,7 +41,7 @@ I ett typiskt affärsscenario för Microsoft Dynamics 365-integrationer måste d
 I den här självstudien används följande tekniker:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**– Huvuddatakällan för arbetare som ska exporteras.
-- **[Azure Logic-appar](https://azure.microsoft.com/services/logic-apps/)** – tekniken som tillhandahåller dirigering och schemaläggning av den återkommande exporten.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – tekniken som tillhandahåller dirigering och schemaläggning av den återkommande exporten.
 
     - **[Kopplingar](https://docs.microsoft.com/azure/connectors/apis-list)** – tekniken som används för att ansluta logikappen till de obligatoriska slutpunkterna.
 
@@ -83,7 +83,7 @@ Den stora delen av övningen innebär att skapa logikappen.
 
     ![Sidan för att skapa logikapp](media/integration-logic-app-creation-1.png)
 
-2. Starta med en tom logikapp i modulen logikapp-designer.
+2. Starta med en tom logikapp i modulen Logic Apps Designer.
 3. Lägg till en [utlösare för upprepningsschema](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) om du vill köra logikappen var 24:e timme (eller enligt ett schema som du väljer).
 
     ![Dialogrutan Upprepning](media/integration-logic-app-recurrence-step.png)
@@ -196,7 +196,7 @@ Om du vill testa din logikapp väljer du knappen **Kör** i designern. Du kommer
 
 Om ett fel rapporteras för något steg väljer du det misslyckade steget i designer och granskar fälten **indata** och **utdata**. Felsök och justera steget efter behov för att korrigera felen.
 
-Följande bild visar hur logikapp-designer ser ut när alla steg i logikappen körs korrekt.
+Följande bild visar hur Logic Apps Designer ser ut när alla steg i logikappen körs korrekt.
 
 ![Körning av lyckade logikappar](media/integration-logic-app-successful-run.png)
 
