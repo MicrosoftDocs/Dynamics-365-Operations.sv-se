@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Exportera B2B-användare till Azure AD
               href: sysadmin/implement-b2b.md
-            - name: Processautomatisering
-              href: sysadmin/process-automation.md
             - name: Säkerhet
               items:
                 - name: Rollbaserad säkerhet
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Tilldela användare säkerhetsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Importera eller exportera anpassad säkerhetskonfiguration med hjälp av datahantering
+                  href: sysadmin/import-export-customized-security.md
                 - name: Säkerhetsdiagnos för uppgiftsinspelningar
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Utökningsbara datasäkerhetsprinciper
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Skapa en säkerhetsprincip
+                  href: sysadmin/create-simple-security-policy.md
             - name: Processautomatisering
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: Batchbearbetning
               items:
                 - name: Batchbearbetning – översikt
@@ -1582,7 +1586,7 @@
               items:
                 - name: Process för att flytta till den senaste uppdateringen
                   href: migration-upgrade/upgrade-latest-update.md
-                - name: Sökvägar till en version
+                - name: Sökvägar till One Version
                   items:
                     - name: Självbetjäningsuppgradering till den senaste versionen
                       href: migration-upgrade/self-service-upgrade.md
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: Filtreringsalternativ
                   href: user-interface/filtering.md
-                - name: PowerApps Värdkontroll
+                - name: Power Apps Värdkontroll
                   href: user-interface/powerapps-host-control.md
             - name: Fönsterhantering
               items:
