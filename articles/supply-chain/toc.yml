@@ -10,11 +10,11 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
             - name: Registrera abonnemang på förhandsversioner
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Tjänstuppdateringar för en version
+            - name: Tjänstuppdateringar för One Version
               items:
-                - name: Översikt över tjänstuppdateringar för en version
+                - name: Översikt över tjänstuppdateringar för One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Frågor och svar om tjänstuppdateringar för en version
+                - name: Frågor och svar om tjänstuppdateringar för One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Livscykelpolicy för programmet – moln
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Automatisering av datauppgift
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Leverera ISV-lösningar med en version
+                - name: Leverera ISV-lösningar med One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skapa och automatisera användaracceptanstest
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
@@ -74,6 +74,8 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
+                    - name: Supply Chain Management 10.0.10 (maj 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -1355,6 +1357,8 @@
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Avbryta ett planeringsjobb
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: 'Planeringsoptimering, utökningsbarhet'
+                  href: master-planning/planning-optimization/extensibility.md
                 - name: Felsöka planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
             - name: Huvudplaner
@@ -1511,6 +1515,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ställa in nummerserier med hjälp av en guide
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurera nummerserier för distributionslagerflöden
+                  href: warehousing/configure-number-sequence-extensions.md?toc=/dynamics365/supply-chain/toc.json
             - name: Organisationer och organisationshierarkier
               items:
                 - name: Organisationer och organisationshierarkier – översikt
@@ -1817,6 +1823,10 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Exkludera produkter från huvudplanering
                       href: pim/tasks/exclude-products-master-planning.md
+                - name: Varor med dubbla användningsområden
+                  href: pim/dual-use.md
+                - name: Ursprungsland
+                  href: pim/country-of-origin.md
                 - name: Skapa en streckkod för en produkt
                   href: pim/tasks/create-bar-code-product.md
                 - name: Ange GTIN-koden för en produkt
@@ -2565,22 +2575,20 @@
               href: warehousing/warehouse-management-overview.md
             - name: Åtgärder för mottagande distributionslager
               items:
-                - name: Inleveranser för registrering och artikelinförsel
-                  items:
-                    - name: Distributionslagerhantering av inkommande laster för inköpsorder
-                      href: warehousing/inbound-load-handling.md
-                    - name: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
-                      href: warehousing/tasks/register-items-advanced-warehousing.md
-                    - name: Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
-                      href: warehousing/tasks/register-items-basic-warehousing.md
-                    - name: Direktleverera produkter från det mottagande lagerstället till butiker
-                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                    - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
-                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                    - name: Ställ in en arbetsmall för inköpsorder
-                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
-                    - name: Blandning av produktdimensioner på plats
-                      href: warehousing/location-product-dimension-mixing.md
+                - name: Distributionslagerhantering av inkommande laster för inköpsorder
+                  href: warehousing/inbound-load-handling.md
+                - name: Registrera artiklar för en avancerad lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: Registrera artiklar för en grundläggande lagerstyrningsaktiverad artikel med hjälp av en artikelinförseljournal
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Direktleverera produkter från det mottagande lagerstället till butiker
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Ställ in ett platsdirektiv för artikelinförsel av inköpsorder
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Ställ in en arbetsmall för inköpsorder
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                - name: Blandning av produktdimensioner på plats
+                  href: warehousing/location-product-dimension-mixing.md
             - name: Åtgärder för utgående distributionslager
               items:
                 - name: Reservationer i distributionslagerhantering
@@ -2597,14 +2605,14 @@
                   items:
                     - name: Ställa in klusterplockning
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Systemdirigerad klusterplockning
+                      href: warehousing/system-directed-cluster-pick.md
                     - name: Definiera skapande av behållare
                       href: warehousing/tasks/set-up-containerization.md
                     - name: Bekräftelse av batch och ID-nummer
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Aktivera utskrift av ID-nummer
                       href: warehousing/tasks/license-plate-label-printing.md
-                    - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Enhetsplockningsbekräftelse
                       href: warehousing/piece-picking-confirmation.md
                     - name: Förpackningsmaterial och avgifter
@@ -2615,14 +2623,18 @@
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Avbryt distributionslagerarbete för undantagshantering
                       href: warehousing/cancel-warehouse-work.md
-                    - name: Systemdirigerad klusterplockning
-                      href: warehousing/system-directed-cluster-pick.md
-                    - name: Systemstyrd arbetssekvensering
+                    - name: Systemstyrd arbetsordningsföljd
                       href: warehousing/system-directed-work-sequencing.md
                     - name: Plockradsgruppering
                       href: warehousing/pick-line-grouping.md
                     - name: Artikelplacering för distributionslager
                       href: warehousing/warehouse-slotting.md
+                    - name: Platsdirektiv för plockning i åldersfördelat lager
+                      href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Utgående sortering
+                      href: warehousing/outbound-sorting.md
+                    - name: Placera på vägg – placera i butik
+                      href: warehousing/put-to-wall-put-to-store.md
                 - name: Lagerpåfyllnad
                   items:
                     - name: Lagerpåfyllnad – översikt
@@ -2645,6 +2657,8 @@
                       href: warehousing/release-to-warehouse-rule.md
                     - name: Gruppering av påfyllnadsmall
                       href: warehousing/wave-template-grouping.md
+                    - name: Skriv ut på nytt och annullera påfyllnadsetiketter
+                      href: warehousing/reprint-and-void-wave-labels.md
                 - name: Policyer för leveranskonsolidering
                   items:
                     - name: Policyer för leveranskonsolidering
@@ -2715,7 +2729,11 @@
                       href: warehousing/work-line-details.md
                     - name: Placering för plats-ID-nummer
                       href: warehousing/location-license-plate-positioning.md
-            - name: Inställningar för distributionslager
+                    - name: Ändra arbetspool för arbetsuppgift
+                      href: warehousing/change-work-pool-on-work.md
+                    - name: Artikelkonsolidering – platsutnyttjande
+                      href: warehousing/item-consolidation-location-utilization.md
+            - name: Inställning för distributionslager
               items:
                 - name: Konfiguration av distributionslager
                   items:
@@ -2729,7 +2747,9 @@
                       href: warehousing/wave-step-codes.md
                     - name: Konfigurera påfyllnadsbearbetning
                       href: warehousing/tasks/configure-wave-processing.md
-                    - name: Uppdatera försändelser automatiskt
+                    - name: Ställa in och använda utskrift av påfyllnadsetikett
+                      href: warehousing/configure-wave-label-printing.md
+                    - name: Uppdatera leveranser automatiskt
                       href: warehousing/auto-update-shipment.md
                     - name: Skapa en platsprofil
                       href: warehousing/tasks/create-location-profile.md
@@ -2749,12 +2769,10 @@
                       href: warehousing/unit-measure-stocking-policies.md
                     - name: Power BI-innehåll för lagerställe
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                    - name: Systemgruppering i en öppen arbetsuppgiftslista
+                    - name: Systemgruppering i en öppen arbetslista
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Layout för dokumentflöde för ID-nummeretiketter
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Skanna streckkoder med hjälp av en kamera i Dynamics 365 for Finance and Operations
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Stöd för streckkod för mobil
                       href: warehousing/mobile-barcode-support.md
                     - name: Ställ in distributionslager för överföringsorder
@@ -2767,6 +2785,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Ställ in mobila enheter för distributionslagerarbete
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Skanna streckkoder med kamera i distributionslagerappen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Inleverans av ID-nummer med distributionslagerappen
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder

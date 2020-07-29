@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 8 juli 2020
+          href: hr-whats-new-2020-07-08.md
         - name: 25 juni 2020
           href: hr-whats-new-2020-06-23.md
         - name: 11 juni 2020
@@ -217,11 +219,11 @@
           href: hr-hrpro-overview.md
         - name: Ställa in Human Resources
           items:
-            - name: Konfigurera personalparametrar
+            - name: Konfigurera Human Resources-parametrar
               href: hr-setup-parameters.md
-            - name: Konfigurera delade personalparametrar
+            - name: Konfigurera delade Human Resources-parametrar
               href: hr-setup-shared-parameters.md
-            - name: Ställa in arbetsflöden för personal
+            - name: Ställa in arbetsflöden för Human Resources
               href: hr-setup-workflows.md
             - name: Förstå Datum- och tid-fält
               href: hr-setup-date-time-fields.md
@@ -573,9 +575,11 @@
               href: hr-learning-create-closed-ended-question.md
             - name: Skapa en beroende fråga
               href: hr-learning-depending-question.md
-        - name: Ställ in självservice för medarbetare och chef
+        - name: Ställ in självbetjäning för medarbetare och chef
           items:
-            - name: Ställ in självservice för medarbetare och chef – översikt
+            - name: Ställ in självbetjäning för medarbetare och chef – översikt
               href: hr-employee-manager-self-service-overview.md
+            - name: Ändra namn på arbetsytan Självbetjäning för medarbetare
+              href: hr-employee-self-service-workspace-name.md
             - name: Redigera personliga uppgifter
               href: hr-employee-manager-self-service-edit-personal-information.md
