@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce förhandsversionsmiljö – översikt
-description: Det här ämnet ger en översikt över förhandsversionsmiljö i Microsoft Dynamics 365 Commerce.
+title: Dynamics 365 Commerce utvärderingsmiljö – översikt
+description: Det här ämnet ger en översikt över utvärderingsmiljö i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,45 +17,50 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 25c0574e8d4502bcb846fba0ddf913d81eded87b
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024693"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599777"
 ---
-# <a name="dynamics-365-commerce-preview-environment-overview"></a><span data-ttu-id="9baae-103">Dynamics 365 Commerce förhandsversionsmiljö – översikt</span><span class="sxs-lookup"><span data-stu-id="9baae-103">Dynamics 365 Commerce preview environment overview</span></span>
-
+# <a name="dynamics-365-commerce-evaluation-environment-overview"></a><span data-ttu-id="59f1f-103">Dynamics 365 Commerce utvärderingsmiljö – översikt</span><span class="sxs-lookup"><span data-stu-id="59f1f-103">Dynamics 365 Commerce evaluation environment overview</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="9baae-104">Det här ämnet ger en översikt över förhandsversionsmiljö i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="9baae-104">This topic gives an overview of the Microsoft Dynamics 365 Commerce preview environment.</span></span>
+<span data-ttu-id="59f1f-104">Det här ämnet ger en översikt över utvärderingsmiljö i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="59f1f-104">This topic gives an overview of the Microsoft Dynamics 365 Commerce evaluation environment.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="9baae-105">Översikt</span><span class="sxs-lookup"><span data-stu-id="9baae-105">Overview</span></span>
+> [!NOTE]
+> <span data-ttu-id="59f1f-105">Commerce utvärderingsmiljöer är i allmänhet inte tillgängliga och ges till partners och kunder för varje enskild begäran.</span><span class="sxs-lookup"><span data-stu-id="59f1f-105">Commerce evaluation environments aren't generally available, and are granted to partners and customers on a per-request basis.</span></span> <span data-ttu-id="59f1f-106">För mer information, kontakta din Microsoft-partnerkontakt.</span><span class="sxs-lookup"><span data-stu-id="59f1f-106">For more information, reach out to your Microsoft partner contact.</span></span>
 
-<span data-ttu-id="9baae-106">Commerce förhandsversionsmiljön är en valfri förhandsversionsmiljö av Dynamics 365 Commerce som låter potentiella kunder prova Commerce-produkten innan den allmänna utgåvan släpps till allmänheten.</span><span class="sxs-lookup"><span data-stu-id="9baae-106">The Commerce preview environment is an optional end-to-end preview environment of Dynamics 365 Commerce that lets potential customers try out the Commerce product before its general release to the public.</span></span>
+## <a name="overview"></a><span data-ttu-id="59f1f-107">Översikt</span><span class="sxs-lookup"><span data-stu-id="59f1f-107">Overview</span></span>
 
-<span data-ttu-id="9baae-107">Bortsett från några mindre begränsningar som inte påverkar funktioner eller funktioner, tillhandahåller förhandsversionsmiljön för Commerce den kompletta handels upplevelsen och kan användas av kunder och implementeringspartners för att utvärdera produkten, ge återkoppling och göra passform/gap-analys.</span><span class="sxs-lookup"><span data-stu-id="9baae-107">Aside from some minor limitations that don't affect features or functionality, the Commerce preview environment provides the complete Commerce experience, and can be used by customers and implementation partners to evaluate the product, provide feedback, and do fit/gap analysis.</span></span>
+<span data-ttu-id="59f1f-108">Commerce utvärderingsmiljö är en valfri komplett miljö av Dynamics 365 Commerce som låter partners och potentiella kunder prova Commerce-produkten.</span><span class="sxs-lookup"><span data-stu-id="59f1f-108">The Commerce evaluation environment is an optional end-to-end environment of Dynamics 365 Commerce that lets partners and potential customers try out the Commerce product.</span></span>
 
-## <a name="limitations-of-the-commerce-preview-environment"></a><span data-ttu-id="9baae-108">Begränsningar i förhandsversionsmiljö Commerce</span><span class="sxs-lookup"><span data-stu-id="9baae-108">Limitations of the Commerce preview environment</span></span>
+<span data-ttu-id="59f1f-109">Utvärderingsmiljöer är delvis förkonfigurerade för att minska de nödvändiga åtgärderna efter etablering.</span><span class="sxs-lookup"><span data-stu-id="59f1f-109">Evaluation environments are partially preconfigured to reduce the required post-provisioning steps.</span></span>
 
-<span data-ttu-id="9baae-109">Även om förhandsversionsmiljön Commerce innehåller en fullständig uppsättning handelsfunktioner och funktioner finns det några mindre begränsningar:</span><span class="sxs-lookup"><span data-stu-id="9baae-109">Although the Commerce preview environment provides the full set of Commerce features and functionality, there are some minor limitations:</span></span>
+<span data-ttu-id="59f1f-110">Bortsett från några mindre begränsningar som inte påverkar funktioner eller funktioner, tillhandahåller utvärderingsmiljö för Commerce den kompletta handels upplevelsen och kan användas av kunder och implementeringspartners för att utvärdera produkten, ge återkoppling och göra passform/gap-analys.</span><span class="sxs-lookup"><span data-stu-id="59f1f-110">Aside from some minor limitations that don't affect features or functionality, the Commerce evaluation environment provides the complete Commerce experience, and can be used by customers and implementation partners to evaluate the product, provide feedback, and do fit/gap analysis.</span></span>
 
-- <span data-ttu-id="9baae-110">Även om förhandsversionsmiljö Commerce inte har några geografiska begränsningar, kan komponenter i miljön, till exempel Retail Cloud Scale Unit (RCSU) och e-handelsprogram, endast etableras i USA.</span><span class="sxs-lookup"><span data-stu-id="9baae-110">Although the Commerce preview environment itself has no geographical limitations, components of the environment, such as the Retail Cloud Scale Unit (RCSU) and e-Commerce applications, can be provisioned only in the United States.</span></span>
-- <span data-ttu-id="9baae-111">Användning av förhandsversionsmiljö för Commerce är begränsad till 30 dagar från det datum då e-handel etableras.</span><span class="sxs-lookup"><span data-stu-id="9baae-111">Use of the Commerce preview environment is limited to 30 days from the date when e-Commerce is provisioned.</span></span>
-- <span data-ttu-id="9baae-112">Förhandsversionsmiljö för Commerce kan distribueras och initieras endast i en miljö som använder demotopologin, där alla komponenter i en miljödistribueras i en enda virtuell dator (VM).</span><span class="sxs-lookup"><span data-stu-id="9baae-112">The Commerce preview environment can be successfully deployed and initialized only in an environment that uses the demo topology, where all components of an environment are deployed in a single virtual machine (VM).</span></span> <span data-ttu-id="9baae-113">Den huvudsakliga begränsningen för denna OneBox VM-topologi är antalet samtidiga användare som förhandsversionen miljön kan stödja.</span><span class="sxs-lookup"><span data-stu-id="9baae-113">The main limitation of this OneBox VM topology is the number of concurrent users that the preview environment can support.</span></span>
-- <span data-ttu-id="9baae-114">Förhandsversionsmiljö för Commerce kan endast utvärderas till den allmänna tillgängligheten (GA) för Commerce-produkten.</span><span class="sxs-lookup"><span data-stu-id="9baae-114">The Commerce preview environment can be evaluated only until the general availability (GA) of the Commerce product.</span></span> <span data-ttu-id="9baae-115">Nya demomiljöer kommer att finnas tillgängliga efter GA.</span><span class="sxs-lookup"><span data-stu-id="9baae-115">New demo environments will be available after GA.</span></span>
+## <a name="limitations-of-the-commerce-evaluation-environment"></a><span data-ttu-id="59f1f-111">Begränsningar i utvärderingsmiljö Commerce</span><span class="sxs-lookup"><span data-stu-id="59f1f-111">Limitations of the Commerce evaluation environment</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="9baae-116">Kom igång</span><span class="sxs-lookup"><span data-stu-id="9baae-116">Get started</span></span>
+<span data-ttu-id="59f1f-112">Även om utvärderingsmiljö Commerce innehåller en fullständig uppsättning handelsfunktioner och funktioner finns det några mindre begränsningar:</span><span class="sxs-lookup"><span data-stu-id="59f1f-112">Although the Commerce evaluation environment provides the full set of Commerce features and functionality, there are some minor limitations:</span></span>
 
-<span data-ttu-id="9baae-117">Om du vill etablera förhandsversionsmiljö för Commerce, se [Etablera en förhandsversionsmiljö för Commerce](provisioning-guide.md).</span><span class="sxs-lookup"><span data-stu-id="9baae-117">To provision the Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).</span></span>
+- <span data-ttu-id="59f1f-113">Även om utvärderingsmiljö Commerce inte har några geografiska begränsningar, kan komponenter i miljön, till exempel Retail Cloud Scale Unit (RCSU) och e-handelsprogram, endast etableras i USA.</span><span class="sxs-lookup"><span data-stu-id="59f1f-113">Although the Commerce evaluation environment itself has no geographical limitations, components of the environment, such as the Retail Cloud Scale Unit (RCSU) and e-Commerce applications, should be provisioned only in the United States.</span></span>
+- <span data-ttu-id="59f1f-114">Användning av utvärderingsmiljö för Commerce är begränsad till 30 dagar från det datum då e-handel etableras.</span><span class="sxs-lookup"><span data-stu-id="59f1f-114">Use of the Commerce evaluation environment is limited to 30 days from the date when e-Commerce is provisioned.</span></span>
+- <span data-ttu-id="59f1f-115">Utvärderingsmiljö för Commerce kan distribueras och initieras endast i en miljö som använder demotopologin, där alla komponenter i en miljö distribueras i en enda molnstyrd virtuell dator (VM).</span><span class="sxs-lookup"><span data-stu-id="59f1f-115">The Commerce evaluation environment can be successfully deployed and initialized only in an environment that uses the demo topology, where all components of an environment are deployed on a single cloud-hosted virtual machine (VM).</span></span> <span data-ttu-id="59f1f-116">Den huvudsakliga begränsningen för denna topologi är antalet samtidiga användare som miljön kan stödja.</span><span class="sxs-lookup"><span data-stu-id="59f1f-116">The main limitation of this topology is the number of concurrent users that the environment can support.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="9baae-118">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="9baae-118">Additional resources</span></span>
+## <a name="get-started"></a><span data-ttu-id="59f1f-117">Kom igång</span><span class="sxs-lookup"><span data-stu-id="59f1f-117">Get started</span></span>
 
-[<span data-ttu-id="9baae-119">Etablera en Dynamics 365 Commerce förhandsversionsmiljö</span><span class="sxs-lookup"><span data-stu-id="9baae-119">Provision a Dynamics 365 Commerce preview environment</span></span>](provisioning-guide.md)
+<span data-ttu-id="59f1f-118">Om du vill etablera utvärderingsmiljö för Commerce, se [Etablera en utvärderingsmiljö för Commerce](provisioning-guide.md).</span><span class="sxs-lookup"><span data-stu-id="59f1f-118">To provision the Commerce evaluation environment, see [Provision a Commerce evaluation environment](provisioning-guide.md).</span></span>
 
-[<span data-ttu-id="9baae-120">Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="9baae-120">Configure a Dynamics 365 Commerce preview environment</span></span>](cpe-post-provisioning.md)
+## <a name="additional-resources"></a><span data-ttu-id="59f1f-119">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="59f1f-119">Additional resources</span></span>
 
-[<span data-ttu-id="9baae-121">Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="9baae-121">Configure optional features for a Dynamics 365 Commerce preview environment</span></span>](cpe-optional-features.md)
+[<span data-ttu-id="59f1f-120">Etablera en Dynamics 365 Commerce utvärderingsmiljön</span><span class="sxs-lookup"><span data-stu-id="59f1f-120">Provision a Dynamics 365 Commerce evaluation environment</span></span>](provisioning-guide.md)
 
-[<span data-ttu-id="9baae-122">Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö</span><span class="sxs-lookup"><span data-stu-id="9baae-122">Dynamics 365 Commerce preview environment FAQ</span></span>](cpe-faq.md)
+[<span data-ttu-id="59f1f-121">Konfigurera en Dynamics 365 Commerce utvärderingsmiljö</span><span class="sxs-lookup"><span data-stu-id="59f1f-121">Configure a Dynamics 365 Commerce evaluation environment</span></span>](cpe-post-provisioning.md)
+
+[<span data-ttu-id="59f1f-122">Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö</span><span class="sxs-lookup"><span data-stu-id="59f1f-122">Configure BOPIS in a Dynamics 365 Commerce evaluation environment</span></span>](cpe-bopis.md)
+
+[<span data-ttu-id="59f1f-123">Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö</span><span class="sxs-lookup"><span data-stu-id="59f1f-123">Configure optional features for a Dynamics 365 Commerce evaluation environment</span></span>](cpe-optional-features.md)
+
+[<span data-ttu-id="59f1f-124">Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor</span><span class="sxs-lookup"><span data-stu-id="59f1f-124">Dynamics 365 Commerce evaluation environment FAQ</span></span>](cpe-faq.md)
