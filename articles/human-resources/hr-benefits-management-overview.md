@@ -3,7 +3,7 @@ title: Hantering av förmåner – översikt
 description: Översikt över funktionen för förmånshantering i Dynamics 365 Human Resources. Erbjud dina medarbetare utökade förmånsalternativ med en lättanvänd onlineupplevelse.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4157cb1f83d686d435f3d04e47c578df455376c9
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
+ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429276"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3599390"
 ---
 # <a name="benefits-management-overview"></a>Förmånshantering – översikt
 
@@ -59,6 +59,8 @@ Den här artikeln beskriver hur du aktiverar funktionerna i personal. Den talar 
 ## <a name="configure-employee-information"></a>Konfigurera information om medarbetare
 
 Innan du kan registrera medarbetare i förmåner måste du ange den information som krävs. Du måste registrera en medarbetare i en **fast kompensationsplan** på deras startdatum och du måste välja en **förmånslönefrekvens** i **medarbetarinformation** i formuläret **medarbetare**.
+
+Om du har en medarbetare som tar emot kompletterande kompensation som provisioner kan du lägga till ett belopp för **årslön** från medarbetarposten. Personal kommer att använda beloppet **Årslön** vid fastställande av täckningsbelopp, istället för det årliga beloppet för fast ersättning. Den **Årslönen** måste vara giltig för medarbetarens startdatum eller början av förmånsperioden, beroende på vilket som är senaste. Om både en fast kompensation och bestämda årslönsbelopp registreras för en medarbetare, kommer den bestämda årslönen att användas vid fast ställande av täckningsbelopp.
 
 När du skapar en förmånsplan som bygger på kön eller ålder måste du ange ett födelsedatum och kön för medarbetaren för att beräkna förmånskostnaden.
 

@@ -3,7 +3,7 @@ title: Översikt för efterfrågeprognosticering
 description: Behovsprognoser används för att förutsäga oberoende efterfrågan från beställningar och beroende efterfrågan på någon frikoppling för kundorder. De förbättrade minskningsreglerna för efterfrågeprognosticering ger en perfekt lösning för massanpassning.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be60bb5c856020d76d185249fddf09493ea1d2ed
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
+ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213893"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3550050"
 ---
 # <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
@@ -48,7 +48,7 @@ Här är några av de viktigaste funktionerna i behovsprognoser:
 Tre stora teman genomförs i behovsprognoser:
 
 -   **Modularitet** – Behovsprognoser är modulär och enkel att konfigurera. Du kan aktivera och avaktivera funktionen genom att ändra konfigurationen på **Handel** &gt; **Lagerprognos** &gt; **Efterfrågeprognosticering**.
--   **Återanvändning av Microsoft-stapeln** – Microsoft lanserade plattformen för maskininlärning i februari 2015. Med maskininlärning, som nu ingår i Microsoft Cortana Analytics Suite, kan du snabbt och enkelt skapa försök förutsägbara analysexperiment, till exempel experiment för efterfrågeuppskattning, genom att använda R-algoritmer eller programmeringsspråket Python och ett enkelt gränssnitt för dra och släpp.
+-   **Återanvändning av Microsoft Stack** – Med maskininlärning, som nu ingår i Microsoft Cortana Analytics Suite, kan du snabbt och enkelt skapa försök förutsägbara analysexperiment, till exempel experiment för efterfrågeuppskattning, genom att använda R-algoritmer eller programmeringsspråket Python och ett enkelt gränssnitt för dra och släpp.
     -   Du kan hämta behovsprognoser experiment, ändra dem för att uppfylla dina affärsbehov, publicerar dem som en webbtjänst på Azure, och använda dem för att skapa prognoser. Experimenten är tillgängliga för nedladdning om du har köpt en Supply Chain Management-prenumeration för en produktionsplanerare som användare på företagsnivå.
     -   Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos automatiskt integreras med Supply Chain Management, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Därför är experiment från [Cortana Analytics-galleri](https://gallery.cortanaanalytics.com/) inte lika enkla att använda som Finance and Operations behovsprognoser experiment. Du måste modifiera koden för experiment så att de använder Finance and Operations (application programming interface).
     -   Du kan skapar dina egna experiment i Microsoft Azure Machine Learning Studio (klassisk), publicerar dem som tjänster på Azure, och använda dem för att skapa prognoser.
@@ -70,6 +70,16 @@ Du kan använda Supply Chain Management för att visualisera och modifiera basli
 
 ## <a name="limitations"></a>Begränsningar
 Efterfrågan prognostisera är ett verktyg som hjälper kunder inom tillverkningsindustrin skapar prognosprocesserna. Det erbjuder kärnfunktionen hos efterfrågeprognosticeringslösningen, och har utformats så att det enkelt kan utökas. Efterfrågeprognosticering är kanske inte det bästa valet för kunder inom exempelvis handel, grossist, lagring, transport eller andra professionella tjänster.
+
+### <a name="demand-forecast-variant-conversion-limitation"></a>Konverteringsbegränsning för variant av begärd prognos
+
+Måttenhetskonverteringen (UOM) per variant stöds inte fullt ut när efterfrågeprognosen skapas om lagerenheten skiljer sig från efter efterfrågeprognos UOM.
+
+Generera prognos (**Lagerenhet UOM > Efterfrågeprognos UOM**) använder produktenhetskonvertering. Vid inläsning av historiska data för generering efter efterfrågeprognos kommer enhetskonvertering på produktnivå alltid att användas vid konvertering från lagerenheten till efter efterfrågeprognosenhet, även om det finns konverteringar definierade på variantnivån.
+
+Den första delen av att godkänna prognosen (**Efterfrågeprognosenhet > Lagerenhet**) använder konvertering av produktenhet. Den andra delen av godkänna prognosen ( **lagerenhet > försäljningsenhet**) använder du konvertering av variantenhet. När den genererade efter frågeprognosen är godkänd görs konverteringen till lagerenhet från efterfrågeprognosenhet med enhetskonvertering på produktnivå. Vid samma tidpunkt respekteras konverteringen mellan lagerenheten och försäljningsenheten med de definierade variantkoderna.
+
+Observera att efterfrågeprognosenhet inte behöver ha någon specifik betydelse. Den kan definieras som "efterfrågeenhet". För varje produkt kan du definiera konverteringen till 1:1 med lagerenheten.
 
 <a name="additional-resources"></a>Ytterligare resurser
 --------

@@ -3,7 +3,7 @@ title: Regeluppdateringar
 description: Det här avsnittet innehåller en lista med planerade och utgivna regleruppdateringar för Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/29/2020
+ms.date: 07/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a7a26d8c506a9e61f6e4319a33176b4e92fc30ad
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 785797af0fe62fa6d0ee40fb4df45bcec47780c7
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411422"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598094"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -42,48 +42,30 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 
 |Land|Planerat frisläppningsdatum |Slutversion|Regeluppdatering|
 |--------------------|---------------|-------|-------|
-|      Brasilien         |   April 2020 - januari 2020      | 10.0.10, 10.0.9HF      |   DRCST SC – förordning SEF nr. 416    |
-|      Brasilien         |   2020 april      | 10.0.10      |   SPED Contribuições (PIS/COFINS) - Block M115 och M515    |
-|      Brasilien         |   2020 april      | 10.0.10      |   Sped-bidrag - registrera C100 och D100 uppdateringar när krediten inte kan återställas    |
-|      Brasilien         |   April 2020 - januari 2020     | 10.0.10, 10.0.9HF      |   SPED bidrag - layout för jan-2020    |
-|      Brasilien         |   2020 mars       | 10.0.9      |   SPED-skatt - ändringar i post D100 fält COD_MUN_ORI    |
-|      Brasilien         |   Mars 2020 - Januari 2020       | 10.0.9      |   DRCST SC – förordning SEF nr. 254/19    |
-|      Brasilien         |   Mars 2020 - Januari 2020       | 10.0.9      |   SPED-skattelayout 014 |
-|      Brasilien         |   Mars 2020 - Januari 2020       | 10.0.9      |   DRCST SC – förordning SEF nr. 343DR   |
-|      Brasilien         |   Maj 2020 - mars 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD layout 8   |
-|      Brasilien         |   Maj 2020 - april 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   Teknisk anmärkning NT2019.001 v1.40   |
-|      Brasilien         |   2020 maj      | 10.0.12, 10.0.11HF, 10.0.10HF,      |   ADCR ICMS-ST utdrag för Parana-stat   |
+|      Brasilien         |   2020 mars      | 10.0.11      |   SPED ECD layout 8   |
+|      Brasilien         |   2020 april      | 10.0.11      |   Teknisk anmärkning NT2019.001 v1.40   |
+|      Brasilien         |   2020 maj      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST utdrag för Parana-stat   |
+|      Brasilien         |   Juli 2020 - maj 2020      | 10.0.13, 10.0.12, 10.0.11      |   SPED ECF layout 6   |
+|      Brasilien         |   Juli 2020      | 10.0.13, 10.0.12HF      |   SPED-skatt - post C176 - RS-status   |
+|      Tjeckien      |   Juli 2020      | 10.0.13      |   Momskontroll ändras i XML-schema (fakturalista)   |
+|      Tjeckien         |   Juli 2020      | 10.0.13      |   Momsdeklaration i XML, momsdeklaration för förhandsgranskning i Excel- och XML-format för momskontroll baserade på momsdeklarationsmodellen   |
 |      Estland         |   2020 maj       | 10.0.11      |   Elektronisk fakturering i Estland: kundfakturor exportera i estniskt särskilt format version 1.2.  |
-|      Frankrike         |   2020 april       | 10.0.10      |   Deklaration av juridiska avgifter till skattemyndigheter för egen företagare (DAS2)    |
-|      Frankrike         |   2020 mars       | 10.0.9      |   Fransk lokalisering: ISO 20022-format för internationell betalning och statskassaöverföring    |
 |      Tyskland         |   2020 maj       | 10.0.12      |   Tyskland - detaljhandel - kassakrav    |
-|      Ungern         |   Maj 2020 - mars 2020       | 10.0.11, 10.0.10, 10.0.9HF     |   Online-faktureringssystem v.2.0 på Finance and Operations    |
-|      Indien         |   2020 mars      | 10.0.9      |   Ny GSTR (ANX-1 och ANX-2) Återställ offline-verktyg    |
+|      Ungern         |   2020 mars       | 10.0.11     |   Online-faktureringssystem v.2.0 i Finance and Operations    |
 |      Indien         |   2020 maj      | 10.0.12      |   Förbättringar av enhetspris och självkostnadshantering i lageröverföringsorder  |
-|      Italien         |   2020 mars      | 10.0.9      |   Retail - Hantera kundinformation i kassan |
-|      Italien         |   2020 mars      | 10.0.9      |   Retail - Skriva ut kundinformation i kvittoskrivare |
-|      Italien         |   2020 maj      | 10.0.12. 10.0.11      |   Modello 770 / 2019 formatändring |
-|      Japan          |   2020 mars     | 10.0.9     |   Japanska bankirassociationen ersätter JBA betalningsformat med fast längd med ISO20022 |
-|      Japan          |   2020 januari      | 10.0.8       |   Ändring av konsumtionsskattesats och reducerad momssats införs (Konsumtionsskatterapport) |
-|      Nederländerna          |   2020 april   | 10.0.10     |   Holländsk taxonomi ny version - NT14 |
-|      Norge          |   2020 mars   | 10.0.9     |   SAF-T XSD-uppdatering till version 1.1 för Dynamics 365 for Finance and Operations |
-|      Norge          |   2020 maj   | 10.0.12     |   SAF-T omorganisation av rapport: ingående balans med "operation"-transaktionstyp och skatteinformation i skattekodens valuta i Finance (v.10) |
+|      Indien         |   2020 maj      | 10.0.12      |   Lageröverföring samma momssats tillämplig vid leverans och inleverans (inklusive delvis inleverans)  |
+|      Italien         |   2020 maj      | 10.0.12, 10.0.11      |   Modello 770 / 2019 formatändring |
+|      Italien         |   Juli 2020      | 10.0.13, 10.0.12HF      |   Ändringar i formatet för italienska elektroniska fakturor - FatturaPA |
+|      Norge          |   2020 maj   | 10.0.12     |   SAF-T omorganisation av rapport: ingående balans med "operation"-transaktionstyp och skatteinformation i skattekodens valuta i Finance (version10) |
 |      Norge          |   2020 maj   | 10.0.12     |   SAF-T rapport dialogändring: så här ger du möjlighet att välja kontaktperson mellan företag |
 |      Norge          |   2020 maj   | 10.0.12     |   SAF-T Namnge utrymmesdeklarationer på varje rad istället för endast på rubriken |
-|      Polen          |   2020 mars    | 10.0.9     |   Ingående momsregister och SAF momsregister: Tullmyndigheten från SAD-dokument måste ersättas med tredje partens namn och momsregistreringsnummer |
-|      Polen          |   Mars 2020 - Januari 2020   | 10.0.9     |   Retail - Hantera kundinformation i kassan |
-|      Polen          |   Mars 2020 - Januari 2020     | 10.0.9    |   Retail - Skriva ut kundinformation i kvittoskrivare |
-|      Polen          |   2020 mars     | 10.0.9     |   SAF fakturor (JPK_FA) v.3 från 2Dec2019 |
-|      Polen          |   2020 april     | 10.0.10, 10.0.9     |   JPK_VDEK som ersätter JPK_VAT (SAF-moms) |
 |      Polen          |   2020 maj     | 10.0.11     |   Dela AP/AR realiserade växelskillnadsbelopp till växelskillnad mellan fakturans nettovärde och momsbeloppet  |
 |      Polen          |   2020 maj     | 10.0.11     |   SAF redovisningsböcker – förbättringar av filtrering av bokföringsskikt |
-|      Polen          |   2020 maj     | 10.0.11     |   JPK_VDEK tilläggspaket I |
+|      Polen          |   2020 mars     | 10.0.11     |   JPK_VDEK tilläggspaket I |
 |      Polen          |   2020 maj     | 10.0.12     |   JPK_VDEK tilläggspaket II |
-|      Polen          |   2020 maj     | 10.0.11     |   Delvis kreditfaktura för försäljningsorder med förskottsfaktura |
-|      Ryssland          |   2020 mars     | 10.0.9     |   Formatet för fastighetsskattdeklarationen för 2019 års rapportering |
-|      Ryssland          |   2020 mars     | 10.0.9     |   Formatuppdateringar för fastighetsskattdeklaration |
-|      Schweiz           |   2020 mars     | 10.0.9      |   Schweiziskt betalningskvitto ISR hämtar nytt format (QR-kod) |
-|      Storbritannien           |   2020 april     | 10.0.10      |   MTD bedrägeriskydd tilläggspaket |
+|      Polen          |   2020 mars     | 10.0.11     |   Delvis kreditfaktura för försäljningsorder med förskottsfaktura |
+|      Polen          |   Juli 2020     | 10.0.13     |   Förbättringar av obligatorisk icke delbetalning |
+|      Ryssland          |   Juli 2020     | 10.0.13    |   Avskrivningsberäkning av anskaffningskostnad och huvudreparationer vid användning av avskrivningsbonus i skatteredovisning  |
 
 
 

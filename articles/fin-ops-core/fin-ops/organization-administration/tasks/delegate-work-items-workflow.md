@@ -3,7 +3,7 @@ title: Delegera arbetsuppgifter i ett arbetsflöde
 description: Om du kommer att vara borta från kontoret under en tid eller av annat skäl inte kommer att kunna arbeta med en arbetsuppgift, kan du delegera eller omfördela dina arbetsuppgifter till andra användare.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d98d84b89f1f3322a9c896b74b63a3b6425b13b
-ms.sourcegitcommit: 267864eb0dccd6e26d49d280bd4ad1b770a73a77
+ms.openlocfilehash: 96777b66645453bc909bd4053e2724a37771d5d6
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "3515774"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541095"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegera arbetsuppgifter i ett arbetsflöde
 
@@ -49,13 +49,15 @@ Om du tänker vara borta från kontoret eller annars inte kan åtgärda arbetsup
 1. Gå till **Allmänt > Inställningar > Användaralternativ**.
 2. Klicka på **Arbetsflöde**. Kontrollera att avsnittet Delegering är expanderat. Om du vill konfigurera systemet för att automatiskt delegera dina arbetsuppgifter till andra användare, måste du skapa delegeringsregler som anger när vissa typer av arbetsuppgifter delegeras. Följ dessa steg för att skapa en ny delegeringsregel.  
 3. Klicka på **Lägg till**.
-4. Markera ett alternativ i fältet **Omfattning**.
+4. Markera ett alternativ i fältet **Omfattning**:
     - Alla – Delegera alla arbetsuppgifter som har tilldelats dig.
-    - Modul – Delegera enbart de arbetsuppgifter som är relaterade till en specifik arbetsflödestyp. Om du väljer det här alternativet måste du välja typ av arbetsflöde i fältet Namn.
-    - Arbetsflöde – Delegera enbart de arbetsuppgifter som är relaterade till en specifik typ av arbetsflöde. Om du väljer det här alternativet måste du välja typen av arbetsflöde i fältet Namn.  
-5. Markera den användare som du vill delegera arbetsuppgifterna till i fältet **Delegera**. Använd fälten Startdatum/-tid och Slutdatum/-tid när du vill att arbetsuppgifterna ska delegeras automatiskt.  
-6. Ange datum och tid i fältet **Startdatum/-tid**.
-7. Ange datum och tid i fältet **Slutdatum/-tid**.
-8. Aktivera delegeringsregeln genom att markera kryssrutan **Aktiverad**. Om du har valt **Modul** som Omfattning måste du välja modulen i fältet Namn. Om du har valt **Arbetsflöde** som Omfattning måste du välja specifikt arbetsflöde att delegera i fältet Namn.  
-9. Ange en kommentar som förklarar varför du delegerar arbetsuppgifterna i fältet **Kommentar**.
-
+    - Modul – Delegera enbart de arbetsuppgifter som är relaterade till en specifik arbetsflödestyp. Om du väljer det här alternativet måste du välja typ av arbetsflöde i fältet **Namn**.
+    - Arbetsflöde – Delegera enbart de arbetsuppgifter som är relaterade till en specifik typ av arbetsflöde. Om du väljer det här alternativet måste du välja typen av arbetsflöde i fältet **Namn**.  
+5. I fältet **Namn**:
+    - För omfattningen **Modul** välj målmodul.
+    - För omfattningen **Arbetsflöde** välj målarbetsflöde.
+6. Markera den användare som du vill delegera arbetsuppgifterna till i fältet **Delegera**. Använd fälten **Startdatum/-tid** och **Slutdatum/-tid** när du vill att arbetsuppgifterna ska delegeras automatiskt.  
+7. Ange datum och tid i fältet **Startdatum/-tid**.
+8. Ange datum och tid i fältet **Slutdatum/-tid**.
+9. Aktivera delegeringsregeln genom att markera kryssrutan **Aktiverad**. 
+10. Ange en kommentar som förklarar varför du delegerar arbetsuppgifterna i fältet **Kommentar**.

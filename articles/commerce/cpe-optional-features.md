@@ -1,9 +1,9 @@
 ---
-title: Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce
-description: Detta ämne förklarar hur du konfigurerar valfria funktioner för förhandsversionsmiljö för Microsoft Dynamics 365 Commerce.
+title: Konfigurera valfria funktioner för en utvärderingsmiljö för Dynamics 365 Commerce
+description: Detta ämne förklarar hur du konfigurerar valfria funktioner för utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,28 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057750"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599830"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce
-
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurera valfria funktioner för en utvärderingsmiljö för Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Detta ämne förklarar hur du konfigurerar valfria funktioner för förhandsversionsmiljö för Microsoft Dynamics 365 Commerce.
+Detta ämne förklarar hur du konfigurerar valfria funktioner för utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 Följande förutsättningar måste uppfyllas om du vill utvärdera e-postfunktionerna för transaktion:
 
-- Du kan ha en tillgänglig e-postserver (Simple Mail Transfer Protocol \[SMTP\]- server) som kan användas från Microsoft Azure-prenumeration där du tillhandahåller förhandsversionsmiljön.
+- Du kan ha en tillgänglig e-postserver (Simple Mail Transfer Protocol \[SMTP\]- server) som kan användas från Microsoft Azure-prenumeration där du tillhandahåller utvärderingsmiljö.
 - Du har serverns fullt kvalificerade domännamn (FQDN)-/IP-nummer, SMTP-portnummer och autentiseringsinformation.
-
-Om du vill utvärdera funktioner för hantering av digitala tillgångar genom att mata in nya flerkanalsbilder, måste du ha namnet på din CMS-klientorganisation (Content Management System) tillgängligt. Instruktioner för att hitta det här namnet finns senare i det här avsnittet. >>>(F: Var är instruktionerna?)
 
 ## <a name="configure-the-image-back-end"></a>Konfigurera bildserver
 
@@ -47,9 +44,9 @@ Om du vill utvärdera funktioner för hantering av digitala tillgångar genom at
 > [!NOTE]
 > Innan du kan slutföra den här proceduren måste du slutföra stegen i [konfigurera din webbplats i Commerce](cpe-post-provisioning.md#set-up-your-site-in-commerce).
 
-1. Logga in på verktyget Commerce site Management med hjälp av den URL som du antecknade när du initierade e-handel under etableringen (se [initiera e-handel](provisioning-guide.md#initialize-e-commerce)).
+1. Logga in på verktyget Commerce webbplatsskaparen med hjälp av den URL som du antecknade när du initierade e-handel under etableringen (se [initiera e-handel](provisioning-guide.md#initialize-e-commerce)).
 1. Öppna webbplatsen **Fabrikam**.
-1. I menyn till vänster, välj **Tillgångar**.
+1. I menyn till vänster, välj **Mediebibliotek**.
 1. Markera en enskild bildtillgång.
 1. Hitta egenskapen i egenskapsinspektören till höger **offentlig URL**. Värdet är en URL. Här är ett exempel:
 
@@ -63,22 +60,22 @@ Om du vill utvärdera funktioner för hantering av digitala tillgångar genom at
 
 ### <a name="update-the-media-base-url"></a>Uppdatera mediebas-URL
 
-1. Logga in på Dynamics 365 Commerce.
+1. Logga in på Commerce-administration.
 1. Med hjälp av menyn till vänster, gå till **Moduler \> Retail och Commerce \> Kanalinställning \> Kanalprofiler**.
 1. Välj **Redigera**.
 1. Under **Profilegenskaper**, ersätt värdet för egenskapen **Medieserverbas-URL** med den mediebas-URL du skapade tidigare.
-1. I listan till vänster, under kanalen **Standard** väljer du den andra kanalen.
+1. Välj kanalen med namnet **scXXXXXXXXX**.
 1. Under **Profilegenskaper**, klicka på **Lägg till**.
 1. För egenskapen som har lagts till väljer du **medieserverns bas-URL** som egenskapsnyckel. Ange den mediebas-URL som du skapade tidigare som egenskapsvärde.
 1. Välj **Spara**.
 
-## <a name="configure-the-email-server"></a>Konfigurera e-postserver
+## <a name="configure-and-test-the-email-server"></a>Konfigurera och testa e-postserver
 
 > [!NOTE]
 > SMTP-servern eller e-posttjänsten som du anger här måste vara tillgänglig från den Azure-prenumeration du använder för miljön.
 
-1. Logga in på Commerce.
-1. Använd menyn till vänster, gå till **Moduler \> Systemadministration \> Inställning \> E-post \> E-postparametrar**.
+1. Logga in på Commerce-administration.
+1. Använd menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Parametrar \> E-postparametrar**.
 1. På fliken **SMTP-inställningar** i fältet **utgående e-postserver** anger du FQDN- eller IP-adressen för SMTP-servern eller e-posttjänsten.
 1. Ange **SMTP-portnummer** anger du portnumret. (Om du inte använder Secure Sockets Layer \[SSL\], är standardportnumret **25**.)
 1. Om autentisering krävs anger du värden i fälten **användarnamn** och **lösenord**.
@@ -92,8 +89,8 @@ Om du vill utvärdera funktioner för hantering av digitala tillgångar genom at
 
 För varje transaktionshändelse som du vill skicka e-post till måste du uppdatera e-postmallen med en giltig e-postadress till avsändaren.
 
-1. Logga in på Commerce.
-1. Med hjälp av menyn till vänster, gå till **Moduler \> Organisationsadministration \> Inställning \> E-postmall för organisation**.
+1. Logga in på Commerce-administration.
+1. Använd menyn till vänster, gå till **Moduler \> Retail och Commerce \> Administrationsinställning \> Parametrar \> Organisationens e-postmallar**.
 1. Välj **Visa lista**.
 1. Följ dessa steg i listan för varje mall:
 
@@ -104,9 +101,9 @@ För varje transaktionshändelse som du vill skicka e-post till måste du uppdat
 
 ## <a name="customize-email-templates"></a>Anpassa e-postmallar
 
-Du kanske vill anpassa e-postmallarna så att de använder olika bilder. Eller så kanske du vill uppdatera länkarna i mallarna så att de går till din förhandsgranskningsmiljö. Den här proceduren förklarar hur du hämtar standardmallarna, anpassar dem och uppdaterar mallarna i systemet.
+Du kanske vill anpassa e-postmallarna så att de använder olika bilder. Eller så kanske du vill uppdatera länkarna i mallarna så att de går till din utvärderingsmiljö. Den här proceduren förklarar hur du hämtar standardmallarna, anpassar dem och uppdaterar mallarna i systemet.
 
-1. Med hjälp av en webbläsare, hämta [Microsoft Dynamics 365 Commerce förhandsversion av standard e-postmallar .zip-fil](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) till den lokala datorn. Den här filen innehåller följande HTML-dokument:
+1. Med hjälp av en webbläsare, hämta [Microsoft Dynamics 365 Commerce utvärdering av standard e-postmallar .zip-fil](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) till den lokala datorn. Den här filen innehåller följande HTML-dokument:
 
     - Orderbekräftelsemall
     - Utfärda presentkortsmall
@@ -156,12 +153,12 @@ Följande token ersätts med värden för varje produkt i ordningen.
 > [!NOTE]
 > Placera token **produktlista - start** i början av HTML-blocket som upprepas för varje produkt och placera token **produktlista - slut** i slutet av blocket.
 
-| Namn på token      | Token  |
+| Namn på token      | Token |
 |------------------------|-------|
 | Produktlista - start   | \<!--%tablebegin.salesline% --\> |
 | Produktlista - slut     | \<!--%tableend.salesline%--\> |
 | Produktnamn           | %lineproductname% |
-| Beskrivning            | %lineproductdescription% |
+| beskrivning            | %lineproductdescription% |
 | Antal               | %linequantity% |
 | Pris för radenhet        | %lineprice% (verifiera) |
 | totalbelopp för radartikel        | %linenetamount% |
@@ -173,13 +170,15 @@ Följande token ersätts med värden för varje produkt i ordningen.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Dynamics 365 Commerce förhandsversionsmiljö – översikt](cpe-overview.md)
+[Dynamics 365 Commerce utvärderingsmiljö – översikt](cpe-overview.md)
 
-[Etablera en Dynamics 365 Commerce förhandsversionsmiljö](provisioning-guide.md)
+[Etablera en Dynamics 365 Commerce utvärderingsmiljön](provisioning-guide.md)
 
-[Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurera en Dynamics 365 Commerce utvärderingsmiljö](cpe-post-provisioning.md)
 
-[Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö](cpe-faq.md)
+[Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](cpe-bopis.md)
+
+[Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
