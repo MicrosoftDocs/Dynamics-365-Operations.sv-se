@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 795e9f5b843ba8e50dc091949c9732b8b033355e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 89c38b354bbca022e80ace4aa8d0b947cfe67f3e
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812098"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598191"
 ---
 # <a name="globalization-resources"></a>Globaliseringsresurser
 
 ## <a name="local-and-regional-deployments"></a>Lokala och regionala distributioner
 Om dina myndighetsregleringar kräver att data lagras på ett annat sätt eller att de underhålls på ett annat sätt vad som krävs för andra länder/regioner, kan det finnas lands-/regionspecifika krav som du måste ta hänsyn till under distributionen. Följande resurser kan vara relevanta för dig:
 
-[Microsoft Dynamics 365 Finance and Operations-apparna av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-apparna av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance and Operations-apparna innehåller funktioner för länder/regioner dokumenterade i [tillgänglighetsguiden för lokaliserade och översatta produkter](https://aka.ms/dynamics_365_international_availability_deck). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
+Finance and Operations-apparna innehåller funktioner för länder/regioner dokumenterade i [tillgänglighetsguiden för lokaliserade och översatta produkter](https://aka.ms/dynamics_365_international_availability_deck). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
 
 Det här avsnittet innehåller listor över resurser som kan hjälpa dig att göra följande: 
 - Läs mer om hur du utvecklar lands-/regionspecifika lösningar.
@@ -66,8 +66,8 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 #### <a name="dynamics-365-release-plans"></a>Utgivningsplaner för Dynamics 365
 [Utgivningsplaner för Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) innehåller beskrivningar av förbättrade funktioner som planeras för affärsapparna och applattformen för Dynamics 365. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Nyheter i Finance and Operations-apparna
-Listan [Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.
+#### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations-appar – Nyheter
+[Nyheter och ändringar på startsidan för Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) innehåller de funktioner som ingår i olika versioner av Finance and Operations-apparna.
 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 Verktyget Elektronisk rapportering (ER) gör det möjligt att konfigurera elektroniska dokumentformat i enligt rättsliga krav i olika länder/regioner. Med ER går det att hantera formaten under deras livscykel. Mer information finns i följande ämnen:

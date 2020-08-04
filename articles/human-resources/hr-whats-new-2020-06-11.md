@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39f18dc92fb01f9a0437f4166c0f08f8d6b1b81b
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: cba6e48899ec39fc4de6656f8151a42b8aa43261
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456630"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555205"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-11-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (11 juni 2020)
 
@@ -95,3 +95,10 @@ Du kan göra fält obligatoriska genom att använda anpassningar. Den här funkt
 ## <a name="configure-the-name-of-employee-self-service"></a>Konfigurera namnet på självbetjäning för medarbetare
 
 Ett nytt alternativ är tillgängligt i personalparametrarna för att uppdatera namnet på arbetsytan självbetjäning för medarbetare till självbetjäning. 
+
+## <a name="see-also"></a>Se även
+
+[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Uppdatera process](hr-admin-setup-update-process.md)</br>
+[Hantera funktioner](hr-admin-manage-features.md)

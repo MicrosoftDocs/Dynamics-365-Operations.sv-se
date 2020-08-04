@@ -3,7 +3,7 @@ title: Inkommande lageråtgärder i kassan
 description: Det här ämnet beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
 author: hhaines
 manager: annbe
-ms.date: 03/12/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: b212906dcf037171af264c60720f361215eed599
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123909"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551611"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -57,6 +57,9 @@ Följ instruktionerna nedan om du vill konfigurera ett asynkront dokumentramverk
 5. På snabbfliken **Allmänt** i avsnittet **Inställningar**, ange alternativet **Kontinuerligt** till **Nej** för att se till att det inte finns några prestandaproblem.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Skapa och tidsplanera två batchjobb för dokumentbearbetning och övervakning av uppgifter
+
+> [!NOTE]
+> I Commerce version 10.0.13 och senare behöver du inte konfigurera dessa batchjobb via batch-jobbets ramverk. Batchprocesser kan konfigureras från menyn **Retail och Commerce > Retail och Commerce IT**. Använd menyalternativen **Åtgärdsövervakare för butiksdokument** och **Åtgärdsbearbetning för butiksdokument** när du konfigurerar batchjobb.
 
 De batchjobb som du skapar kommer att användas för att bearbeta dokument som misslyckas eller timeout. De kommer också att användas när antalet aktiva lagerdokument som bearbetas från kassan överskrider ett systemkonfigurerat värde.
 

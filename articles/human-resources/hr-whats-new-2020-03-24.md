@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83f24dd6f094715f96666c3ae94faa4bdb97a652
-ms.sourcegitcommit: fac1d519a85eab0c936b54e0a9247f6a11842871
+ms.openlocfilehash: 4f46d631379711dd2002a95dfa6001a362727f4f
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3177947"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555109"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-24-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (24 mars 2020)
 
@@ -113,3 +113,10 @@ Från och med april kommer frisläppningstakten för personal att flyttas från 
 ## <a name="employment-detail-entity"></a>Entiteten anställningsinformation
 
 Enheten **anställningsinformation** har uppdaterats med följande fält: **PayFrequency**, **Anställningskategori-ID**, **Anställningstyp**, **EmploymentType ID** och **Status för anställningsförmån**. Inställningsdata för dessa fält är beroende av att hanteringen av förmåner aktiveras i funktionshantering. Dessa fält bör inte fyllas i eller uppdateras i entiteten **anställningsinformation** eftersom det resulterar i fel under importen.
+
+## <a name="see-also"></a>Se även
+
+[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Uppdatera process](hr-admin-setup-update-process.md)</br>
+[Hantera funktioner](hr-admin-manage-features.md)

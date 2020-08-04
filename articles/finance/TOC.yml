@@ -10,11 +10,11 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Registrera abonnemang på förhandsversioner
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: Tjänstuppdateringar för en version
+            - name: Tjänstuppdateringar för One Version
               items:
-                - name: Översikt över tjänstuppdateringar för en version
+                - name: Översikt över tjänstuppdateringar för One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Frågor och svar om tjänstuppdateringar för en version
+                - name: Frågor och svar om tjänstuppdateringar för One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
                 - name: Livscykelpolicy för programmet – moln
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
@@ -34,7 +34,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Automatisering av datauppgift
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: Leverera ISV-lösningar med en version
+                - name: Leverera ISV-lösningar med One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
                 - name: Skapa och automatisera användaracceptanstest
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
@@ -2540,12 +2540,14 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Lagerrapporter
                       href: localizations/rus-inventory-reports.md
-                    - name: Lagerprofil – översikt
-                      href: localizations/rus-inventory-profile-overview.md
-                    - name: Ställa in en lagerprofil
-                      hreF: localizations/rus-set-up-inventory-profile.md
-                    - name: Använda en lagerprofil i dokument och frågor
-                      href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Lagerprofil
+                      items:
+                        - name: Lagerprofil – översikt
+                          href: localizations/rus-inventory-profile-overview.md
+                        - name: Ställa in en lagerprofil
+                          hreF: localizations/rus-set-up-inventory-profile.md
+                        - name: Använda en lagerprofil i dokument och frågor
+                          href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Rapportering
                   items:
                     - name: Ekonomisk rapportering
@@ -2700,17 +2702,17 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: 1099-blankett för den offentliga sektorn
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: Personal
+        - name: Human Resources
           items:
-            - name: Personal – översikt
+            - name: Human Resources – översikt
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Ställa in personal
+            - name: Ställa in Human Resources
               items:
-                - name: Konfigurera personalparametrar
+                - name: Konfigurera Human Resources-parametrar
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurera delade personalparametrar
+                - name: Konfigurera delade Human Resources-parametrar
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Ställa in arbetsflöden för personal
+                - name: Ställa in arbetsflöden för Human Resources
                   href: ../human-resources/hr-setup-workflows.md?toc=/dynamics365/finance/toc.json
                 - name: Förstå Datum- och tid-fält
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json

@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a6d792a0e52d2b82b25de461dcec358fdc8f439
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f2422dcec1fb222f1be7162d7c799a13046329b4
+ms.sourcegitcommit: f0faa2929435cd1408c5925f0ee4d6636fec5da1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211087"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3552927"
 ---
 # <a name="routes-and-operations"></a>Flöden och operationer
 
@@ -225,7 +225,7 @@ När du använder den här metoden blir sidan **operationsrelationer** det prim�
 Om du inte anger en operationsresurs eller resursgrupp som en del av resurskraven för en operation, kan resurser arbeta med olika hastigheter. Den tid som behövs för att bearbeta en operation varierar. För att lösa problemet kan du använda fältet **formel** på operationsrelationenför att ange hur processtiden beräknas. Följande alternativ är tillgängliga:
 
 -   **Standard** – (standardalternativet) beräkningen använder endast fälten från operationsrelationen och angiven körtid multipliceras med orderantalet.
--   **Kapacitet** – beräkningen innefattar fältet **kapacitet** från operationsresursen. Därför är tiden resursenberoende. Värdet som anges för operationsresursen är kapacitet per timme. Det här värdet multipliceras med orderantalet och värdet **faktor** från operationsrelationen.
+-   **Kapacitet** – beräkningen innefattar fältet **kapacitet** från operationsresursen. Därför är tiden resursenberoende. Värdet som anges för operationsresursen är kapacitet per timme. **Processtiden** beräknas som **Orderkvantitet** delad av **Kapacitet**.
 -   **Batch** – Batchkapacitet beräknas utifrån informationen från operationsrelationen. Antal batchar och därmed bearbetningstiden kan beräknas baserat på orderkvantiteten.
 -   **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursberoende.
 

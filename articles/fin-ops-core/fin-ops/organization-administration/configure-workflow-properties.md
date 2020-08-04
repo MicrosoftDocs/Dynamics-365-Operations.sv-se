@@ -3,7 +3,7 @@ title: Konfigurera arbetsflödesegenskaper
 description: I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbetsflöde.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199446"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541119"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurera arbetsflödesegenskaper
 
@@ -91,12 +91,7 @@ Följ dessa steg för att ange när arbetsflödet som du konfigurerar ska använ
 3. Klicka på **Lägg till villkor**.
 4. Ange ett villkor.
 5. Ange eventuellt ytterligare villkor som krävs.
-6. Följ dessa steg för att bekräfta att de villkor som du har angett har ställts in korrekt:
-
-    1. Klicka på **Ja**.
-    2. På sidan **Testa arbetsflödesvillkor**, i avsnittet **Testa arbetsflödesvillkoret**, markerar du en post.
-    3. Klicka på **Ja**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du har angett. Om du till exempel skapar ett arbetsflöde för inköpsrekvisition för Spanien, visar området **Validera villkor** på sidan en lista över inköpsrekvisitioner. När du klickar på **Testa** utför systemet en utvärdering av vald inköpsrekvisition för att kontrollera om land/region är ES.
-    4. När du vill återgå till sidan **Egenskaper** klickar du på **OK** eller på **Avbryt**.
+6. Kör genom arbetsflödet med några målposter för att verifiera att villkoret innehåller och exkluderar poster.
 
 ## <a name="specify-when-notifications-are-sent"></a>Ange när meddelanden ska skickas
 

@@ -1,9 +1,9 @@
 ---
-title: Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö
-description: Det här avsnittet innehåller vanliga frågor och svar om förhandsversionsmiljön för Microsoft Dynamics 365 Commerce.
+title: Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor
+description: Det här avsnittet innehåller vanliga frågor och svar om utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,73 +17,57 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254734"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599780"
 ---
-# <a name="dynamics-365-commerce-preview-environment-faq"></a>Vanliga frågor om Dynamics 365 Commerce förhandsversionsmiljö
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Dynamics 365 Commerce utvärderingsmiljö – vanliga frågor
 
 [!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller vanliga frågor och svar om förhandsversionsmiljön för Microsoft Dynamics 365 Commerce.
+Det här avsnittet innehåller vanliga frågor och svar om utvärderingsmiljö för Microsoft Dynamics 365 Commerce.
 
-**Kan jag överföra min inbjudan för förhandsversionsmiljön för Commerce till en annan klientorganisation?**
+**Kan vi använda utvärderingsmiljön för Commerce som ett e-handelsskyltfönstret för kunder som för närvarande implementerar Retail?**
 
-Ja. För inbjudningsöverföringar kan du använda formuläret [förhandsgranskningsformulär för överföring av Commerce](https://aka.ms/Dynamics365CommercePreviewTransferForm).
+Nr. Commerce utvärderingsmiljön är endast till för utvärdering. Om du behöver en miljö för en kund som implementerar Retail kontaktar du Microsoft.
 
-**Hur lång tid tar inbjudningsöverföringen?**
+**Kan utvärderingsmiljön för Commerce användas för att etablera e-handelsfunktioner ovanpå ett befintligt program/miljö som implementerar Retail?**
 
-Överföringen tar i genomsnitt cirka tre till fem arbetsdagar. Undantag kan dock gälla.
+Nej (oftast). Commerce utvärderingskomponenterna är bara tillgängliga för miljöer som matchar de konfigurationer som anges i guiden för förutsättningar. Dessutom är de nödvändiga grundläggande demodata inte tillgängliga i miljöer som distribuerades med en första utgåva som är tidigare än 10.0.8. 
 
-**Fungerar förhandsversionsmiljö för Commerce med Dynamics 365 Finance eller Dynamics 365 Supply Chain-projekt?**
+**Vilka kostnader är inblandade i att distribuera utvärderingsmiljö för Commerce Microsoft Azure på Microsoft Dynamics Lifecycle Services (LCS)?**
 
-Nr. Förhandsversionsmiljön för Commerce fungerar bara med Dynamics 365 Retail-projekt.
+En traditionell Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce huvudkontoret demomiljö (virtuell dator \[VM\]) kommer att finnas i Azure-prenumeration. Du kan använda [Azure priskalkylatorn](https://azure.microsoft.com/pricing/calculator/) för att uppskatta den här kostnaden.
 
-**Kan vi använda förhandsversionsmiljön för Commerce som ett e-handelsskyltfönstret för kunder som för närvarande implementerar Retail?**
+Andra komponenter, t.ex. Commerce Scale Unit, Commerce webbplatsskaparen och din e-handelswebbplats kommer att vara tillgängliga som en tjänst (SaaS) och värd från Microsoft.
 
-Nr. Förhandsversionsmiljön för Commerce är bara utvärderingsmiljön. Om du behöver en miljö för en kund som implementerar Retail kontaktar du Microsoft.
+**Vilka Azure-geografiska områden stöds för närvarande i utvärderingsmiljön Commerce?**
 
-**Kan förhandsversionsmiljön för Commerce användas för att etablera e-handelsfunktioner ovanpå ett befintligt program/miljö som implementerar Retail?**
-
-Nr. Förhandsversionsmiljön för Commerce är för närvarande endast tillgänglig i nya miljöer som har distribuerats på projekt för Retail lagerhållningsenhet (SKU) som har demonstrationsdata från version 10.0.6.
-
-**Vilka kostnader är inblandade i att distribuera förhandsversionsmiljön för Commerce Microsoft Azure på Microsoft Dynamics Lifecycle Services (LCS)?**
-
-Retail är den enda komponent som är värd för din prenumeration. Andra komponenter som Retail Cloud Scale Unit (RCSU) och e-handel kommer att vara värd i Microsoft-prenumerationer. Du kan använda [Azure priskalkylatorn](https://azure.microsoft.com/pricing/calculator/) för att uppskatta den här kostnaden.
-
-**Vilka Azure-geografiska områden stöds för närvarande i förhandsversionsmiljön Commerce?**
-
-Förhandsversionsmiljön för Commerce kan endast distribueras i Nordamerikas geografi.
+Utvärderingsmiljö för Commerce kan endast distribueras i Nordamerikas geografi.
 
 **Finns det en nedladdningsbar virtuell hårddisk (VHD) som har alternativet fullständig OneBox virtuell dator (VM)?**
 
-Dynamics 365 Retail Cloud Scale Unit (RCSU) och e-handel är helt programvara som en tjänst (SaaS) och måste vara molnbaserade.
+Dynamics 365 Commerce och Commerce Scale Unit är helt programvara som en tjänst (SaaS) och måste vara molnbaserade.
 
-**Hur länge kan förhandsversionsmiljön för Commerce användas?**
+**Hur länge kan utvärderingsmiljön för Commerce användas?**
 
-Förhandsversionsmiljö för Commerce har en 30 dagars begränsning från det datum då e-handel etableras.
+Commerce utvärderingsmiljön har en tidsgräns på 30 dagar från det datum då SaaS-komponenter som Commerce Scale Unit, Commerce webbplatsskaparen och din e-handelswebbplats etableras.
 
-**Kan jag förlänga tidsgränsen för min förhandsversionsmiljö för Commerce?**
+**Kan jag förlänga tidsgränsen för min utvärderingsmiljö för Commerce?**
 
-Ja. Du kan kontakta supportteamet med hjälp av [tilläggsformuläret förhandsversionsmiljö för Commerce](https://aka.ms/Dynamics365CommercePreviewExtensionForm).
-
-**Kan vi göra flera förfrågningar om en förhandsversionsmiljö för Commerce?**
-
-Vi beviljar en kvot för en förhandsversionsmiljö för Commerce för varje begäran som accepteras. Om du behöver mer än en förhandsgranskningsmiljö kontaktar du Microsoft. Se nästa avsnitt för kontaktinformation.
-
-## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Dynamics 365 Commerce kontaktinformation för förhandsgranskningsmiljön
-
-Om du vill kontakta Microsoft om du har frågor eller begäranden som är relaterade till förhandsversionsmiljö för Commerce, besök [förhandsversionsmiljö för Microsoft Dynamics 365 Commerce Yammer-grupp](https://aka.ms/Dynamics365CommercePreviewYammer) för att få hjälp.
+Förlängning av tidsgränsen är ett undantag från normen och beaktas från fall till fall. Du bör kontakta din Microsoft-partnerkontakt för hjälp.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Dynamics 365 Commerce förhandsversionsmiljö – översikt](cpe-overview.md)
+[Dynamics 365 Commerce utvärderingsmiljö – översikt](cpe-overview.md)
 
-[Etablera en Dynamics 365 Commerce förhandsversionsmiljö](provisioning-guide.md)
+[Etablera en Dynamics 365 Commerce utvärderingsmiljön](provisioning-guide.md)
 
-[Konfigurera en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-post-provisioning.md)
+[Konfigurera en Dynamics 365 Commerce utvärderingsmiljö](cpe-post-provisioning.md)
 
-[Konfigurera valfria funktioner för en förhandsversionsmiljö för Dynamics 365 Commerce](cpe-optional-features.md)
+[Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](cpe-bopis.md)
+
+[Konfigurera valfria funktioner för en Dynamics 365 Commerce utvärderingsmiljö](cpe-optional-features.md)

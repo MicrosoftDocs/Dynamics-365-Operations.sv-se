@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c1a9f10a434343e4c9c8a42ec5c0b7a1a18ad36
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 1843095c41428d377341154c9f2140085831e770
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3124026"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555273"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Nyheter och ändringar i Dynamics 365 Human Resources (10 mars 2020)
 
@@ -97,3 +97,10 @@ Följande förhandsgranskningsfunktioner är tillgängliga den 3 februari 2020:
 - Rekommenderade fält – användarna ofta måste lägga till fält i ett rutnät eller på en sida. Det kan vara svårt med så många tillgängliga fält. I stället för att behöva söka igenom en stor lista, aktiverar den här funktionen systemet för en uppsättning rekommenderade fält baserat på vad andra användare ofta lägger till i liknande scenarier.
 
 - Tröga standardåtgärder i rutnät – med den här funktionen kan du se till att standardåtgärden i ett rutnät länkas till en viss kolumn i ett rutnät, oavsett om den kolumnen flyttas eller döljs.
+
+## <a name="see-also"></a>Se även
+
+[Nyheter och ändringar i Human Resources](hr-admin-whats-new.md)</br>
+[Översikt över Dynamics 365 Human Resources 2019 utgivningsvåg 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Uppdatera process](hr-admin-setup-update-process.md)</br>
+[Hantera funktioner](hr-admin-manage-features.md)

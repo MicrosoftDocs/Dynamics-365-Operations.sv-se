@@ -3,7 +3,7 @@ title: Översikt över ekonomisk rapportering
 description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
+ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262659"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3609599"
 ---
 # <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 
@@ -45,10 +45,11 @@ Menyn **Ekonomisk rapportering** finns på följande platser:
 Om du vill skapa och skapa ekonomiska rapporter för en juridisk person måste du ange följande information för den juridiska personen:
 
 -   Räkenskapskalender
--   Redovisning
+-   Ledger
 -   Kontoplan
 -   Valuta
 
+## <a name="granting-security-access-to-financial-reporting"></a>Bevilja säkerhetsåtkomst till Financial Reporting
 Funktionerna för ekonomisk rapportering är tillgängliga för användare som har rätt behörigheter och uppgifter tilldelade genom sina säkerhetsroller. Nedan följer dessa privilegier och behörigheter tillsammans med de kopplade rollerna.
 
 ### <a name="duties"></a>Programbehörigheter
@@ -78,15 +79,26 @@ Funktionerna för ekonomisk rapportering är tillgängliga för användare som h
 | Skapa ekonomiska rapporter            | Skapa ekonomiska rapporter            | VD, Ekonomichef, Revisor                                                            |
 | Visa ekonomiska rapporter                | Granska finansiellt resultat          | Ingen tilldelad                                                                   |
 
-När en användare har lagts till eller om en roll ändras får användaren åtkomst till ekonomisk rapportering inom några minuter. **Obs!** Rollen sysadmin läggs till i alla roller inom ekonomisk rapportering.
+När en användare har lagts till eller om en roll ändras får användaren åtkomst till ekonomisk rapportering inom några minuter. 
+
+> [!NOTE]
+> Rollen sysadmin läggs till i alla roller inom ekonomisk rapportering.
 
 ## <a name="report-deletions-and-expirations"></a>Rapportborttagningar och förfallodatum
 Användare som skapar en rapport kan ta bort sina egna rapporter. Användare med programbehörigheten **Underhåll säkerhet för ekonomiska rapporter** kan ta bort andras rapporter. 
 
-I version 10.0.8 har utgångsdatum fastställts. En ny nödvändig funktion kommer att aktiveras på sidan **Alla** på arbetsytan funktionshantering. Den **ekonomiska rapporten över lagringsprinciper** innehåller följande ändringar:
+Från och med 10.0.7 frisläppning har begreppet utgångsdatum införts. En ny obligatorisk funktion kommer att aktiveras i arbetsytan funktionshantering. Den här funktionen innehåller följande ändringar:
+
+* Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras.
+* Alla befintliga rapporter från innan funktionen installerades kommer att ges en förfalloperiod på 90 dagar. Datumet kan visas som tomt under en kort tidsperiod tills den ekonomiska rapporteringstjänsten körs, en rapport genereras och tjänsten utför uppdateringen till befintliga rapporter med ett tomt förfallodatum. 
+* Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning:
+   * Ett förfallodatum på 90 dagar
+   * Ett alternativ för att ange att rapporten aldrig ska upphöra att gälla
+
+När ett förfallodatum som 90 dagar väljs, beviljar det 90 dagar från idag, vilket är annorlunda än de 90 dagar från det ursprungliga genereringsdatumet som angetts under rapportgenerering. I version 10.0.8 har utgångsdatum fastställts. En ny nödvändig funktion kommer att aktiveras på sidan **Alla** på arbetsytan funktionshantering. Den **ekonomiska rapporten över lagringsprinciper** innehåller följande ändringar:
 * Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras
 * Alla befintliga rapporter från innan funktionen installerades kommer att ges en förfalloperiod på 90 dagar. Datumet kan visas som tomt under en kort tidsperiod tills den ekonomiska rapporteringstjänsten körs, en rapport genereras och tjänsten utför uppdateringen till befintliga rapporter med ett tomt förfallodatum. 
-* Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning. 
+* Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning: 
   * Ett förfallodatum på 90 dagar.
   * Ett alternativ för att ange att rapporten aldrig ska upphöra att gälla.
   
@@ -125,16 +137,36 @@ Ekonomisk rapportering innehåller 22 standardrapporter. Varje rapport använder
 | Tillgängliga budgetmedel - standardinställningar                         | Visa en detaljerad jämförelse av reviderad budget, faktisk utgift, budgetreservationer och tillgängliga budgetmedel för alla konton                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Öppna ekonomiska rapporter
-När du klickar på menyn **Ekonomisk rapportering** visas listan över ekonomiska standardrapporter för företaget. Du kan sedan öppna eller ändra en rapport. Öppna en av standardrapporterna genom att välja rapportnamnet. Första gången rapporten öppnas skapas den automatiskt för föregående månad. Om du exempelvis öppnar en rapport för första gången i augusti 2016 skapas rapporten för den 31 juli 2016. När en rapport har öppnats kan du börja utforska den mer ingående genom att titta närmare på specifika delar av data och ändra rapportsalternativ.
+När du klickar på menyn **Ekonomisk rapportering** visas listan över ekonomiska standardrapporter för företaget. Du kan sedan öppna eller ändra en rapport. Öppna en av standardrapporterna genom att välja rapportnamnet. Första gången rapporten öppnas skapas den automatiskt för föregående månad. Om du exempelvis öppnar en rapport för första gången i augusti 2019 skapas rapporten för den 31 juli 2019. När en rapport har öppnats kan du börja utforska den mer ingående genom att titta närmare på specifika delar av data och ändra rapportsalternativ.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Skapa och ändra ekonomiska rapporter
-På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för företaget som använder i Finance. 
+På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för företaget som använder i Dynamics 365 Finance. 
 
-> [!NOTE] 
-> Den dator som du hämtar rapportdesignerklienten till måste har version 4.6.2 av Microsoft .NET Framework installerat. Den här versionen av Microsoft .NET Framework kan hämtas och installeras från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345). Om du använder Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Det går även att ändra en rapport på listan med ekonomiska rapporter. Klicka på **Redigera** i åtgärdsfönstret när området runt rapportnamnet markeras. Rapportprogrammet startar.
+## <a name="troubleshooting-issues-opening-report-designer"></a>Felsökning av problem vid öppnande av rapportdesignern
+Det finns några vanliga problem som kan orsaka problem när du öppnar rapportdesigner. De här problemen och stegen för att lösa dem är följande.
+
+Problem 1: Rapportdesigner startar inte när du väljer **ny** eller **Redigera**.
+
+* I Internet Explorer, välj **inställningar** och sedan **Internetalternativ**. Välj fliken **säkerhet**. Välj betrodda platser och välj sedan **platser**. I **Lägg till denna webbplats till zon**, ange "\*\.dynamics.com" (utan citattecken) och välj sedan **Lägg till**. 
+* I Internet Explorer, välj **inställningar** och sedan **Internetalternativ**. Välj fliken **säkerhet**. Välj tillförlitliga platser. Ändra alternativet till i området märkt Säkerhetsnivå för denna zon till **Medel-låg**.
+* Inaktivera blockering av popup-fönster i webbläsaren.
+* Arbetsstationer måste installera Visual Studio.NET 4.6.2 eller senare.
+
+Den här versionen av Microsoft .NET Framework kan hämtas och installeras från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Om du använder webbläsaren Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Om du inte kan logga in med Chrome kan du försöka med att följa de installationssteg som beskrivs i nummer 1 med Internet Explorer eller Edge. 
+
+Problem 2: användaren har inte tilldelats de behörigheter som krävs för att använda Financial Reporting. 
+
+* Om du vill kontrollera att användaren saknar behörighet väljer du **Ja** vid felet "det går inte att ansluta till Financial Reporting-servern. Välj Ja om du vill fortsätta och ange en annan serveradress." Välj sedan **Testanslutning**. Om du inte har behörighet visas ett meddelande om att anslutningsförsöket misslyckades. Användaren har inte den behörighet som krävs för att ansluta till servern. Kontakta systemadministratören.
+* De behörigheter som krävs visas ovan i [beviljande av säkerhetsåtkomst till Financial Reporting](#granting-security-access-to-financial-reporting). Säkerheten i Financial Reporting baseras på dessa behörigheter. Du får inte åtkomst om inte dessa privilegier (eller någon annan säkerhetsroll som omfattar dessa privilegier) tilldelas dig. 
+* Integreringsuppgift **Företagets användarleverantör till företaget** (som också ansvarar för och kallas användarintegration) körs med ett 5-minuters intervall. Det kan ta upp till 10 minuter innan alla behörighetsändringar börjar gälla i Financial Reporting. 
+  Om en annan användare kan öppna rapportdesigner, väljer du **verktyg** och väljer **integrationsstatus**. Kontrollera att integrationskartan, "Företagets användarleverantör till företaget", har körts korrekt eftersom du tilldelades behörighet att använda Financial Reporting. 
+* Det kan vara möjligt att ett annat fel har hindrat **Dynamics-användare till den Financial Reporting användarintegration** från att slutföras. Det kan också hända att en återställning av datamart har initierats och ännu inte slutförts, eller att ett annat systemfel har inträffat. Försök köra processen igen senare. Kontakta systemadministratören om problemet kvarstår.
+
+Problem 3: du kan gå vidare till sidan logga in rapport i ClickOnce rapportdesigner, men du kan inte slutföra inloggningen i rapportdesigner. 
+
+* Den tid som anges på din lokala dator när du anger dina inloggningsuppgifter måste ligga inom fem minuter efter tiden på den Financial Reporting-servern. Om det finns en skillnad på mer än fem minuter kommer systemet inte att tillåta inloggning. 
+* I det här fallet rekommenderar vi att du aktiverar Windows-alternativet för att ställa in datorns tid automatiskt. 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Visa ekonomiska rapporter](view-financial-reports.md)
-
-
-
