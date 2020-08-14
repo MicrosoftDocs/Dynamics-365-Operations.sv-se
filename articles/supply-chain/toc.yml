@@ -70,12 +70,12 @@
                   items:
                     - name: Nyheter eller ändringar i Supply Chain Management – startsida
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.13 (oktober 2020)
+                      href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (augusti 2020)
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: Supply Chain Management 10.0.11 (juli 2020)
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: Supply Chain Management 10.0.10 (maj 2020)
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -109,23 +109,23 @@
             - name: Utbildningskatalog
               items:
                 - name: Hemsida för utbildningskatalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Företagets beslutsfattare
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Företagsanvändare
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Projektledare för distribution
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratörer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Utvecklare
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Försäljning och marknadsföring för partners
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionskonsulter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Lösningsarkitekter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Utforska användargränssnittet
               items:
                 - name: Användargränssnittselement
@@ -1257,19 +1257,23 @@
               items:
                 - name: Lagerjournaler
                   href: inventory/inventory-journals.md
+                - name: Godkännandearbetsflöden för lagerjournal
+                  href: inventory/inventory-journal-workflow.md
                 - name: Lagerplatser
                   href: inventory/inventory-locations.md
                 - name: Lagerstatus
                   href: inventory/inventory-statuses.md
-                - name: Skapa en ny layout för lagerställe
+                - name: Skapa en ny layout för distributionslager
                   href: inventory/tasks/create-new-warehouse-layout.md
                 - name: Underhåll streckkodstyper
                   href: inventory/tasks/maintain-barcode-types.md
                 - name: Kontrollera lagertillgängligheten
                   href: inventory/tasks/check-availability-stock.md
-                - name: Initiera lagernivåer i lagerstället
+                - name: Lagerbehållningslista
+                  href: inventory/inventory-on-hand-list.md
+                - name: Initiera lagernivåer i distributionslagret
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
-                - name: Överför fysiskt lager i lagerstället
+                - name: Överför fysiskt lager i distributionslagret
                   href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
                 - name: Justera lagernivåer i lagerstället (grundläggande lagerstyrning)
                   href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
@@ -1945,13 +1949,13 @@
                       href: production-control/operations-resources.md
                     - name: Skapa en verksamhetsresurs
                       href: production-control/tasks/create-operations-resource.md
-                    - name: Resurskunskaper
+                    - name: Resursfunktioner
                       href: production-control/resource-capabilities.md
-                    - name: Definiera resurskunskaper
+                    - name: Definiera resursfunktioner
                       href: production-control/tasks/define-resource-capabilities.md
-                    - name: Flöden och operationer
+                    - name: Flöden och åtgärder
                       href: production-control/routes-operations.md
-                    - name: Policyer för distributionslagerarbete
+                    - name: Arbetspolicyer
                       href: warehousing/warehouse-work-policies.md
                     - name: Skapa planeringsegenskaper för arbetstider
                       href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2157,7 +2161,7 @@
                       href: production-control/formulas-versions.md
                     - name: Verksamhetsresurser
                       href: production-control/operations-resources.md
-                    - name: Resurskunskaper
+                    - name: Resursfunktioner
                       href: production-control/resource-capabilities.md
                     - name: Batchattribut
                       href: production-control/batch-attributes.md
@@ -2589,6 +2593,8 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Blandning av produktdimensioner på plats
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Kvalitetskontroll
+                  href: warehousing/quality-check.md
             - name: Åtgärder för utgående distributionslager
               items:
                 - name: Reservationer i distributionslagerhantering
@@ -2647,10 +2653,14 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Zontröskel för lagerpåfyllnad
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Lagerpåfyllnad över platskapacitet
+                      href: warehousing/replenishment-over-location-capacity.md
                 - name: Lastuppbyggnad och utleveranser
                   items:
                     - name: Bekräfta och överför
                       href: warehousing/confirm-and-transfer.md
+                    - name: Bekräfta utgående leveranser från batchjobb
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Avancerad lastuppbyggnad under påfyllnad
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Släpp till distributionslager – regel
@@ -2679,11 +2689,9 @@
               items:
                 - name: Policyer för distributionslagerarbete
                   items:
-                    - name: Policyer för distributionslagerarbete – översikt
+                    - name: Arbetspolicyer
                       href: warehousing/warehouse-work-policies.md
-                    - name: Ställ in policyer för distributionslagerarbete
-                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
-                    - name: Lagerrörelse med tillhörande arbete i Lagerstyrning
+                    - name: Lagerrörelse med tillhörande arbete med distributionslagerhantering
                       href: warehousing/move-inventory-associated-work.md
                     - name: Skapa en arbetsklass
                       href: warehousing/tasks/create-work-class.md
@@ -2713,9 +2721,9 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Definiera rullande inventering av del av platser
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                    - name: Jobbet Rensning av behållningsposter för lagerstyrning
+                    - name: Jobbet Rensning av behållningsposter för distributionslagerhantering
                       href: warehousing/onhand-cleanup.md
-                    - name: Lagerjournal
+                    - name: Lagerjournaler
                       href: inventory/inventory-journals.md
                     - name: Lagerplats
                       href: inventory/inventory-locations.md
