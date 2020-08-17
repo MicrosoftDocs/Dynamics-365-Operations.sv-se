@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: fdf4464e5b6fc6f2f4b99dcac80eb199799bf13d
-ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
+ms.openlocfilehash: e9ca2d2cd018777b4c5c01fb10d63505af3940c4
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3268780"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652117"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.10 (maj 2020)
 
@@ -39,11 +39,11 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 - [Förbättring för användning av befintliga faktisk/nominell vikt taggar med lagerhantering](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
-- [Förbättringar av inkommande laster för lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) - mer information finns i [Lagerstyrning av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
-- [Förbättringar av etikettutskrift förbättringar för lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management) – mer information finns i [Layout för dokumentflöde för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
+- [Förbättringar av inkommande belastningshantering för lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
+- [Förbättringar av etikettutskrift för lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Mer information finns i [Layout för dokumentflöde för ID-nummeretiketter](../warehousing/document-routing-layout-for-license-plates.md).
 - [Huvudplanering inkluderar artiklar med lager behållning när för bearbetnings filter aktiveras](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 - [Nya dataenheter för tillverkningsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Kvalitetshantering för lagerprocesser](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes) – För mer information, se [kvalitetshantering för lagerprocesser](../inventory/quality-management-for-warehouses-processes.md).
+- [Kvalitetsstyrning för lagerprocesser](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Mer information finns i [Kvalitetshantering för lagerprocesser](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

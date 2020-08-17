@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 32271e967da2e7f3702b0c6c2dcdba460aa1b382
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4c8216ebdd1f26601743e6b35849be0813d06b4a
+ms.sourcegitcommit: 4676ea9646fa1a182103ecab93e78a69001f0b8d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770630"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3612672"
 ---
 # <a name="process-allocations"></a>Bearbeta allokeringar
 
@@ -34,8 +34,8 @@ Det här avsnittet innehåller information om allokeringar, alternativen för at
 Följande funktioner stöder den här processen:
 
 -   Fördela transaktionsbelopp manuellt genom att använda uppdelningsåtgärden i redovisningsfördelningarna eller genom att använda standardmallarna för ekonomiska dimensioner. Mer information finns i [Redovisningsfördelningar](../accounts-payable/accounting-distributions.md).
--   Fördela transaktionsbelopp automatiskt baserat på allokeringsvillkor som definieras för individuella huvudkonton. Allokeringskontoposter skapas för varje journal som baseras på procentsats och målhuvudbokskontot, när en redovisningspost uppfyller kriterierna som definieras som källhuvudbokskontot.
--   Fördela redovisningssaldon eller fasta belopp automatiskt baserat på redovisningsallokeringsregler. Redovisningsallokeringsreglerna bearbetas periodvis med hjälp av allokeringsjournaler. 
+-   Fördela transaktionsbelopp automatiskt baserat på allokeringsvillkor som definieras för individuella huvudkonton. Allokeringskontoposter skapas för varje journal som baseras på procentsats och målhuvudbokskontot, när en redovisningspost uppfyller kriterierna som definieras som källhuvudbokskontot. Mer information finns i [allokeringsvillkor för huvudkonto](../general-ledger/main-account-allocation-terms.md)
+-   Fördela redovisningssaldon eller fasta belopp automatiskt baserat på redovisningsallokeringsregler. Redovisningsallokeringsreglerna bearbetas periodvis med hjälp av allokeringsjournaler. Mer information finns i [Allokeringsregler](../general-ledger/ledger-allocation-rules.md).
 
 ###  <a name="allocations-in-budget-planning"></a>Allokeringar i budgetplanering
 
@@ -43,8 +43,4 @@ Redovisningsallokeringsregler kan användas för budgetplaner. När du använder
 
 > [!NOTE]
 > Du kan inte använda koncerninterna redovisningsallokeringsregler för budgetplanering.
-
-
-
-
 

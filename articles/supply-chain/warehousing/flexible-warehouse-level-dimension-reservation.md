@@ -1,9 +1,9 @@
 ---
 title: Flexibel reservationspolicy för dimension på lagernivå
 description: I det här avsnittet beskrivs den reservationspolicy för lager som gör det möjligt för företag att sälja batchspårade produkter och köra sin logistik som WMS-aktiverade operationer reservera specifika batchar för kundförsäljningsorder, även om den reservationssekvens som är kopplad till produkterna inte tillåter reservation av specifika batchar.
-author: omulvad
+author: perlynne
 manager: tfehr
-ms.date: 02/07/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,25 +13,29 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: perlynne
 ms.search.validFrom: 2020-01-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530315"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652189"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexibel reservationspolicy för dimension på lagernivå
 
 [!include [banner](../includes/banner.md)]
 
-När en hierarki för lagerreservationer av typen "batch-under\[plats\]" associeras med produkter kan företag som säljer spårade produkter och kör sin logistik när operationer som har aktiverats för Microsoft Dynamics 365 lagerställehanteringssystem (WMS) inte kan reservera specifika partier för dessa produkter för kundförsäljningsorder. I det här avsnittet beskrivs den reservationspolicy för lager som gör det möjligt för dessa företag att reservera specifika batchar, även om produkterna är kopplade till reservationshierarkin "Batch-under\[plats\]".
+När en hierarki för lagerreservationer av typen "batch-under\[plats\]" associeras med produkter kan företag som säljer spårade produkter och kör sin logistik när operationer som har aktiverats för Microsoft Dynamics 365 lagerställehanteringssystem (WMS) inte kan reservera specifika partier för dessa produkter för kundförsäljningsorder.
+
+På samma sätt kan särskilda ID-nummer inte reserveras för produkter på försäljningsorder när dessa produkter associeras med standardhierarkin för reservationer.
+
+I det här avsnittet beskrivs den reservationspolicy för lager som gör det möjligt för dessa företag att reservera specifika batchar eller ID-nummer, även om produkterna är kopplade till reservationshierarkin "Batch-under\[plats\]".
 
 ## <a name="inventory-reservation-hierarchy"></a>Lagerreservationshierarki
 
-Det här avsnittet sammanfattar den befintliga lagerreservationshierarkin. Den fokuserar på hur batchspårade och seriespårade artiklar hanteras.
+Det här avsnittet sammanfattar den befintliga lagerreservationshierarkin.
 
 Lagerreservationshierarkin avgör att när det gäller lagringsdimensioner har efterfrågeordern de obligatoriska dimensionerna för plats, lager och lagerstatus, medan lagerställelogiken är ansvarig för att tilldela en plats till de begärda kvantiteterna och reservera platsen. Med andra ord förväntas en efterfrågeorder i interaktionen mellan efterfrågeorder ordern och lagerställeåtgärder för att ange var ordern måste levereras från (dvs. vilken plats och lagerställe). Lagerstället använder sig av sin logik för att hitta den begärda kvantiteten i dessa lagerlokaler.
 
@@ -64,7 +68,7 @@ När nivån **Batch-nummer** i hierarkin väljs kommer alla dimensioner över de
 > [!NOTE]
 > Kryssrutan **Tillåt reservation på efterfrågerorder** gäller bara för de nivåer för reservationshierarkier som ligger under dimensionen lagerställe.
 >
-> **Batchnummer** är den enda nivå i hierarkin som är öppen för den flexibla reservationsprincipen. Med andra ord kan du inte markera kryssrutan **Tillåt reservation på efterfrågeorder** för nivån **plats**, **ID-nummer** eller **serienummer**.
+> **Batchnummer** och **ID-nummer** är de enda nivåerna i hierarkin som är öppen för den flexibla reservationsprincipen. Med andra ord kan du inte markera kryssrutan **Tillåt reservation på efterfrågeorder** för nivån **Plats** eller **Serienummer**.
 >
 > Om din reservationshierarki innehåller dimensionen för serienummer (som alltid måste vara under nivån **Batch-nummer**), och om du har aktiverat batch-specifik reservation för batch-numret kommer systemet att fortsätta hantera reservations- och plockningsoperationer för serienummer baserat på de regler som gäller för reservationsprincipen "Serie-under\[plats\]".
 
@@ -90,11 +94,11 @@ Följande regler gäller när kvantiteter bearbetas och ett batchnummer allokera
 
 I följande exempel visas ett komplett flöde.
 
-## <a name="example-scenario"></a>Exempelscenario
+## <a name="example-scenario-batch-number-allocation"></a>Exempel scenario: allokering av batchnummer
 
 För det här exemplet måste demonstrationsdata vara installerade och du måste använda **USMF**-demodataföretaget.
 
-### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a>Ställ in en hierarki för lagerreservationer för att tillåta batch-specifika reservationer
+### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a><a name="Example-batch-allocation"></a>Ställ in en hierarki för lagerreservationer för att tillåta batch-specifika reservationer
 
 1. Gå till **Lagerstyrning** \> **Inställningar** \> **Lager \> Reservationshierarki**.
 2. Välj **Ny**.
@@ -122,7 +126,7 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
     | 24        | B11          | FL-001   | LP11          | 10       |
     | 24        | B22          | FL-002   | LP22          | 10       |
 
-### <a name="enter-sales-order-details"></a>Ange försäljningsorderinformation
+### <a name="enter-sales-order-details"></a><a name="sales-order-details"></a>Ange försäljningsorderinformation
 
 1. Gå till **Försäljning och marknadsföring** \> **Försäljningsorder** \> **Alla försäljningsorder**.
 2. Välj **Ny**.
@@ -186,6 +190,176 @@ För det här exemplet måste demonstrationsdata vara installerade och du måste
 
     Kvantiteten **10** för batchnummer **B11** har nu plockats för försäljningsorderraden och placerats på platsen **Baydoor**. I detta skede är den klar att lastas på lastbilen och skickas till kundens adress.
 
+## <a name="flexible-license-plate-reservation"></a>Flexibel reservation av ID-nummer
+
+### <a name="business-scenario"></a>Affärsscenario
+
+I det här scenariot använder ett företag lagerstyrnings- och arbetsbearbetning och hanterar belastningsplanering vid nivån för enskilda lastpallar/behållare utanför Supply Chain Management innan arbetet skapas. Dessa behållare representeras av ID-nummer i lagerdimensionerna. Därför måste specifika ID-nummer på försäljnings orderrader innan plockningsarbete utförs. Företaget letar efter flexibilitet i hur reservationsreglerna för ID-nummer, så att följande beteende uppstår:
+
+- Ett ID-nummer kan registreras och reserveras när ordern görs av försäljningsbehandlaren och kan inte tas av andra behov. Det här beteendet garanterar att det ID-nummer som planerats levereras till kunden.
+- Om ID-numret inte redan har tilldelats en försäljningsorderrad kan lagerpersonalen välja ett ID-nummer under plockningsarbete när registrering och reservation av försäljningsorder har slutförts.
+
+### <a name="turn-on-flexible-license-plate-reservation"></a>Aktivera flexibel reservation av ID-nummer
+
+Innan du kan använda flexibel reservation av ID-nummer måste två funktioner aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera status för dessa funktioner och aktivera dem om de behövs. Du måste aktivera funktionerna i följande ordning:
+
+1. **Funktionsnamn:** *Flexibel reservation för dimension på distributionslagernivå*
+1. **Funktionsnamn:** *flexibel orderallokerade reservation av ID-nummer*
+
+### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Reservera ett specifikt ID-nummer på försäljningsordern
+
+Om du vill aktivera reservation av ID-nummer på en order måste du markera kryssrutan **Tillåt reservation på efterfrågeorder** för nivån **ID-nummer** på sidan **Tillåt reservation av efterfrågeorder** för lagerreservationer för den hierarki som är kopplad till den relevanta artikeln.
+
+![Sidan hierarkier för lagerreservationer för en flexibel reservationshierarki för ID-nummer](media/Flexible-LP-reservation-hierarchy.png)
+
+Du kan aktivera reservation av ID-nummer på ordern när som helst i distributionen. Den här ändringen påverkar inte reservationer och öppna jobb i lagerställe som har skapats innan ändringen gjordes. Men du kan inte avmarkera kryssrutan **Tillåt reservation på efterfrågeorder** om öppna avgående lagertransaktioner som har en för utleveransstatus *Som har beställts*, *Fysiskt reserverat* eller *Beställt* finns för en eller flera artiklar som är associerade med den reservationshierarkin.
+
+Även om kryssrutan **Tillåt reservation på efterfrågeorder** har markerat nivån **ID-nummer** är det fortfarande möjligt att *inte* reservera ett specifikt ID-nummer på order. I det här fallet gäller standardlogiken för lageråtgärder som är giltig för den här reservationshierarkin.
+
+Om du vill reservera ett visst ID-nummer måste du använda en process med [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). I appen kan du göra denna reservation direkt från en försäljningsorder med hjälp av alternativet **orderallokerade reservation av ID-nummer** för kommandot **Öppna i Excel**. I enhets data som öppnas i Excel-tillägget måste du ange följande reservationsrelaterade data och sedan välja **publicera** för att skicka tillbaka data till Supply Chain Management:
+
+- Referens (endast *försäljningsordern* värde stöds.)
+- Ordernummer (värdet kan härledas från partiet.)
+- Parti-ID
+- ID-nummer
+- Kvantitet
+
+Om du måste reservera en viss ID-nummer för en spårad artikel, använder du sidan **Batchreservation**, som beskrivs i avsnittet [Ange detaljinformation om försäljningsorder](#sales-order-details).
+
+När försäljningsorderraden som använder en orderallokerad reserverat ID-nummer bearbetas av lagerställe, används inte platsdirektiv.
+
+Om en artikel för ett lagerställe består av rader som är lika med en komplett lastpall och har licensskyltar, kan du optimera plockningsprocessen genom att använda ett menyalternativ för mobila enheter där alternativet **Hantera efter ID-nummer** är inställt på *Ja*. En lagerarbetare kan sedan söka igenom ett ID-nummer för att slutföra en plockning i stället för att behöva skanna artiklarna från ett arbetsställe en i taget.
+
+![Menyalternativet mobilen där alternativet hantera efter ID-nummer är inställt på Ja](media/Handle-by-LP-menu-item.png)
+
+Eftersom funktionen **Hantera efter ID-nummer** inte stöder arbete som täcker flera lastpallar, är det bättre att ha en separat arbetsuppgift för olika ID-nummer. Om du vill använda den här metoden lägger du till fältet **orderallokerade reservation av ID-nummer** som en sidhuvudsbrytning på sidan **arbetsmall**.
+
+## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Exempelscenario: Ställ in och bearbeta en beställning med utfästa registreringslicenser
+
+Scenariot visar hur du ställer och bearbeta en beställning med utfästa registreringslicenser.
+
+### <a name="make-demo-data-available"></a>Gör demodata tillgängliga
+
+Det här scenariot i detta ämne innehåller värdet och poster som ingår i den standarddemodata som finns för Supply Chain Management. Därför, om du vill arbeta igenom scenariot genom att använda värdena som ges här måste du arbeta på ett miljö där demodata är installerat. Dessutom måste du välja juridisk person **USMF** juridiska personen innan du börjar.
+
+### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Skapa en hierarki för lager reservationer som möjliggör reservation av ID-nummrt
+
+1. Gå till **Lagerstyrning \> Inställningar \> Lager \> Reservationshierarki**.
+1. Välj **Ny**.
+1. I fältet **Namn** anger du ett värde (till exempel *FlexibleLP*).
+1. I fältet **Beskrivning** anger du en värde (till exempel, *Flexibel LP reservation*).
+1. I listan **Valda** välj **Batchnummer**, **Serienummer** och **Ägare**.
+1. Välj knappen **Ta bort** ![Bakåtpilen](media/backward-button.png) om du vill flytta fältet till valda poster till listan **Tillgängliga**.
+1. Välj **OK**.
+1. I raden för dimensionsnivån **ID-nummer** markera kryssrutan **Tillåt reservation på efterfrågeorder**. Nivån **Plats** markeras automatiskt och du kan inte avmarkera kryssrutorna för den.
+1. Välj **Spara**.
+
+### <a name="create-two-released-products"></a>Skapa två frisläppta produkter
+
+1. Gå till **Produktinformationshantering \> Produkter \> Frisläppta produkter**.
+1. Klicka på **Ny** i åtgärdsfönstret.
+1. I dialogrutan **Ny frisläppt produkt** anger du följande värden:
+
+    - **Produktnummer:** *Artikel1*
+    - **Artikelnummer:** *Artikel1*
+    - **Artikelmodellgrupp:** *FIFO*
+    - **Artikelgrupp:** *Ljud*
+    - **Lagringsdimensionsgrupp:** *Lager*
+    - **Spårningsdimensionsgrupp:** *Ingen*
+    - **Reservationshierarki:** *FlexibleLP*
+
+1. Välj **OK** för att skapa produkt och stänga dialogrutan.
+1. Den nya produkten öppnas. På snabbfliken **lagerställe** i fältet **enhetssekvensgrupp- ID** anger du *ea*.
+1. Upprepa föregående steg för att skapa en andra produkt som har samma inställningar, men ställ in fält **produktnummer** och **artikelnummer** på *Artikel2*.
+1. I åtgärdsfönstret, på fliken **Hantera lager**, i gruppen **Visa**, väljer du **Lagerbehållning**. Välj sedan **justering av kvantitet**.
+1. Justera lagerbehållningen för de nya artiklarna enligt vad som anges i följande tabell.
+
+    | Artikel  | Lagerställe | Plats | ID-nummer | Kvantitet |
+    |-------|-----------|----------|---------------|----------|
+    | Artikel1 | 24        | FL-010   | LP01          | 10       |
+    | Artikel1 | 24        | FL-011   | LP02          | 10       |
+    | Artikel2 | 24        | FL-010   | LP01          | 5        |
+    | Artikel2 | 24        | FL-011   | LP02          | 5        |
+
+    > [!NOTE]
+    > Du måste skapa de två ID-numren och använda platser som tillåter blandade artiklar t.ex. *FL-010* och *FL-011*.
+
+### <a name="create-a-sales-order-and-reserve-a-specific-license-plate"></a>Skapa en försäljningsorder och reservera ett specifikt ID-nummer
+
+1. Gå till **Försäljning och marknadsföring \> Försäljningsorder \> Alla försäljningsorder**.
+1. Välj **Ny**.
+1. I dialogrutan **Skapa försäljningsorder** ställ in följande värden:
+
+    - **Kundkonto:** *US-001*
+    - **Lagerställe:** *24*
+
+1. Välj **OK** för att stänga dialogrutan **Skapa försäljningsorder** och öppna den nya försäljningsordern.
+1. På snabbfliken **försäljningsorderrader** lägger du till en rad som har följande inställningar:
+
+    - **Artikelnummer:** *Artikel1*
+    - **Kvantitet:** *10*
+
+1. Lägg till en andra försäljningsorderrad med följande inställningar:
+
+    - **Artikelnummer:** *Artikel2*
+    - **Kvantitet:** *5*
+
+1. Välj **Spara**.
+1. På snabbfliken **Radinformation** på fliken **Inställningar** gör en anteckning av värdet **Parti-ID** för varje rad. Dessa värden kommer att krävas vid reservation av specifika ID-nummer.
+
+    > [!NOTE]
+    > Om du vill reservera ett visst ID-nummer måste du använda dataentiteten **orderallokerade reservation av ID-nummer**. För att reservera en batchspårad artikel på ett visst ID-nummer kan du också använda sidan **Batchreservation**, som beskrivs i avsnittet [Ange detaljinformation om försäljningsorder](#sales-order-details).
+    >
+    > Om du anger ID-numret direkt på försäljningsorderraden och bekräftar den i systemet, används inte bearbetning av lagerstyrning för raden.
+
+1. Välj **Öppna i Microsoft Office**, välj **orderallokerade reservation av ID-nummer** och hämta filen.
+1. Öppna den nedladdade filen i Excel och välj **skrivskyddet** för att tillåta att Excel-tillägget körs.
+1. Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget**.
+1. Om du uppmanas att logga in klickar du på **Logga in** och loggar sedan in med samma inloggningsuppgifter som du använde för att logga in på Supply Chain Management.
+1. Om du vill reservera en artikel på ett visst ID-nummer i Excel-tillägget väljer du **Ny** för att lägga till en reservationsrad och anger sedan följande värden:
+
+    - **Parti-ID:** ange värdet **parti-ID** som du hittade för försäljningsorderraden för *Artikel1*.
+    - **ID-nummer:** *LP02*
+    - **ReservedInventoryQuantity:** *10*
+
+1. Välj **Ny** för att lägga till en till reservationsrad och ställa in följande värden:
+
+    - **Parti-ID:** ange värdet **parti-ID** som du hittade för försäljningsorderraden för *Artikel2*.
+    - **ID-nummer:** *LP02*
+    - **ReservedInventoryQuantity:** *5*
+
+1. I Excel-tillägget väljer du **publicera** för att skicka tillbaka informationen till Supply Chain Management.
+
+    > [!NOTE]
+    > Reservationsraden kommer endast att visas i systemet om publiceringen slutförts utan fel.
+
+1. Gå tillbaka till Supply Chain Management. 
+1. Om du vill granska artikelns reservation väljer du snabbfliken **försäljningsorderrader** på menyn **Lager** välj **Underhåll \> Reservation**. Observera att för försäljningsorderraden för *Aritikel1* är lagret på *10* reserverat och för försäljningsorderraden för *Artikel2* är lagret på *5* reserverat.
+1. Om du vill granska lagertransaktioner som är relaterade till reservationen för försäljningsorderraden på snabbfliken **försäljningsorderrader** väljer du menyn **Lager** och **Visa \> Transaktioner**. Observera att det finns två transaktioner som är relaterade till reservationen: en där fältet **Referens** anges till *Försäljningsorder* och en där fältet **Referens** anges till *Orderallokerad reservation*.
+
+    > [!NOTE]
+    > En transaktion där fältet **Referens** anges till *Försäljningsorder* representerar orderradreservationen för lagerdimensionerna ovanför nivå **Plats** (plats, lagerställe och lagerstatus). En transaktion där fältet **referens** är inställt på *Orderallokerad reservation* representerar orderradreservationen för den specifika ID-numret och platsen.
+
+1. För att frisläppa försäljningsorder i åtgärdsfönstret väljer du **Lagerställe** i gruppen **Åtgärder** välj **Släpp till distributionslager**.
+
+### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>Granska och bearbeta lagerställearbete med ett orderallokerat ID-nummer tilldelat
+
+1. På snabbfliken **Försäljningsorderrader** i menyn **Lagerställe** välj **Arbetsinformation**.
+
+    När reservation görs för en specifik batch, använder systemet inte platsdirektiv när det skapar arbetet för försäljningsordern som använder reservation av ID-nummer. Eftersom den orderallokerade reservationen anger alla lagerdimensioner, inklusive lagerstället, behöver inte platsdirektiven användas eftersom dessa lagerdimensioner bara registrerats i arbetet. De visas i avsnittet **från lagerdimensioner** på sidan **Arbetslagertransaktioner**.
+
+    > [!NOTE]
+    > När arbetet har skapats är artikelns lagertransaktion där fältet **Referens** är inställt på *Order-allokerad reservation* borttagen. Lagertransaktionen där fältet **Referens** anges till *Arbete* innehåller nu den fysiska reservationen på alla lagerdimensionerna för kvantiteten.
+
+1. Slutför plockning och placera arbetet på den mobila enheten med hjälp av ett menyalternativ där kryssrutan **Hantera efter ID-nummer** är markerad.
+
+    > [!NOTE]
+    > Med hjälp av funktionen **Hantera efter ID-nummer** kan du bearbeta hela ID-numret. Om du måste bearbeta en del av ID-numret kan du inte använda den här funktionen.
+    >
+    > Vi rekommenderar att du har separat arbete skapat för varje ID-nummer. Om du vill uppnå det här resultatet använder du funktionen **Arbetsuppgiftshuvudet delas** på sidan **arbetsmall**.
+
+    ID-nummer *LP02* plockas nu för försäljningsorderrader och placeras på platsen *Baydoor*. I detta skede är den klar att lastas och skickas till kunden.
+
 ## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Hantering av undantag av lageställearbete som har orderallokerade batchnummer
 
 Orderallokerade batchnummer för lagerarbete för plockning är underställt samma standardundantagshantering och åtgärder för lagerställe som normalt arbete. I allmänhet kan öppna arbete eller arbetsrad avbrytas, den kan avbrytas eftersom en användarplats är full, det kan tas bort och kan uppdateras på grund av en rörelse. På samma sätt kan plockad kvantitet av arbete som redan har slutförts minskas, eller så kan arbetet återföras.
@@ -194,7 +368,7 @@ Följande nyckelregel används för alla dessa undantagsåtgärder: det batchnum
 
 ### <a name="example-scenario"></a>Exempelscenario
 
-Ett exempel på det här scenariot är en situation där arbetet med tidigare slutfört arbete avbryts med funktionen **minska plockad kvantitet**. I det här exemplet fortsätter det föregående exemplet i det här avsnittet.
+Ett exempel på det här scenariot är en situation där arbetet med tidigare slutfört arbete avbryts med funktionen **minska plockad kvantitet**. I det här exemplet förutsätts det att du redan har utfört stegen som beskrivs i [exempelscenario: allokering av batchnummer](#Example-batch-allocation). Det fortsätter från det här exemplet.
 
 1. Gå till **Lagerstyrning** \> **Laster** \> **Aktiva laster**.
 2. Välj den last som skapades i samband med leveransen av din försäljningsorder.

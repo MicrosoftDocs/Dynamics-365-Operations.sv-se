@@ -3,7 +3,7 @@ title: Anpassa användarupplevelsen
 description: Det här avsnittet beskriver hur du kan anpassa appen.
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,67 +18,76 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
-ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
+ms.openlocfilehash: f8afbea3b3a6a06d005efae7305b2e394907c67c
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3412364"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652141"
 ---
 # <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Det här avsnittet beskriver hur du kan anpassa appen.
+I det här avsnittet beskrivs hur du kan anpassa appen och omfattar följande ämnen: 
 
-Det finns tre grundläggande klasser för anpassningar.
-
-- Anpassningar som har gjorts på sidan Inställningar. Exempel omfattar färgtema och tidszon.
-- Anpassningar som är relaterade till sidanvändning. Dessa anpassningsalternativ kallas *implicita* anpassningar. Exempelvis håller systemet koll på bredden på rutnätskolumner om du justerar dem, och på det expanderade/komprimerade läget för snabbflikar.
-- Anpassningar som en användare gör för utseendet på en sida genom att ändra hur ett element visas eller fungerar på den sidan, ofta genom ett interaktivt anpassningsläge. Dessa anpassningsalternativ kallas *explicita* anpassningar. Användaren kan till exempel lägga till, dölja eller ordna om element på sidan.
-
-Alla anpassningsalternativ som en användare gör i gäller endast för den användaren, oavsett typen av anpassning eller vilket företag som användaren för närvarande interagerar med. Ändringar som en användare gör att en sida inte påverka andra användare i systemet.
+- **Systemövergripande alternativ** – dessa anpassningsalternativ görs på en inställningssida och är tillgängliga för alla användare. Exempel omfattar färgtema och tidszon. 
+- **Begränsad anpassningsåtkomst** – på den här åtkomstnivån sparas de användaråtgärder som är kopplade till typisk sidanvändning automatiskt av appen och återställs nästa gång du besöker sidan. Exempelvis håller appen bredden på rutnätskolumner om du justerar dem, och på det expanderade/komprimerade läget för snabbflikar. 
+- **Fullständig anpassningsåtkomst** – på den här åtkomstnivån har användarna tillgång till alla anpassningsfunktioner i appen. De har särskilt tillgång till verktygsfältet **anpassning**. 
+- **Dela anpassningar** – användare med fullständig anpassningsbehörighet kan exportera sina sidanpassningar och dela dem med andra användare.
+- **Administration av anpassningar** – privilegierade användare kan komma åt administrationssidan **Anpassningar** för att hantera alla anpassningar på befattningsnivå. 
 
 ## <a name="system-wide-options-for-the-current-user"></a>System-wide alternativ för aktuell användare
 
-Sidan **användaralternativ** innehåller flera systeminställningar för den aktuella användaren. För att öppna sidan **användaralternativ**, välj knappen **inställningar** (växel-symbol) i navigeringsfältet, och välj sedan **användaralternativ**. Sidan **användaralternativ** har fyra flikar med olika användarinställningar:
+Sidan **användaralternativ** innehåller flera systeminställningar för den aktuella användaren. Dessa alternativ är tillgängliga för alla användare, även användare som inte har fått åtkomst till personlig anpassning. För att öppna sidan **användaralternativ**, välj knappen **inställningar** i navigeringsfältet, och välj sedan **användaralternativ**. Sidan **användaralternativ** har fyra flikar med olika användarinställningar:
 
 - **Visuellt** - Välj en färg för att välja ett färgtema och standardstorleken för element på dina sidor.
-- **Inställningar** – Välj standardvärden som används varje gång du öppnar systemet. Dessa värden inkluderar företaget, den första sidan och standardläget visa/redigera. (Det/redigeringsläget bestämmer om en sida är låst för visning eller öppnas för redigering i varje gång du öppnar den.) Den här fliken innehåller också alternativ för språk, tidszon, och datum, tid och nummerformat. Den här fliken innehåller dessutom flera diverse inställningar som kan variera från version till version.
-- **Konto:** - Justera ditt användarnamn och andra kontorelaterade inställningar.
+- **Inställningar** – Välj standardvärden som används varje gång du öppnar systemet. Dessa värden inkluderar standardföretaget, den första sidan och standardläget visa/redigera. (Det/redigeringsläget bestämmer om en sida är låst för visning eller öppnas för redigering i varje gång du öppnar den.) Den här fliken innehåller också alternativ för språk, tidszon, och datum, tid och nummerformat. Den här fliken innehåller dessutom flera diverse inställningar som kan variera från version till version.
+- **Konto:** – Visa eller justera ditt användarnamn och andra kontorelaterade inställningar.
 - **Arbetsflöde** – Välj arbetsflöderelaterade alternativ.
 
-Förutom att ändra dina användarinställningar kan du också använda sidan **Användaralternativ** för att visa och ta bort dina användardata och anpassningar. Välj bara **Användningsdata** i åtgärdsfönstret.
-
-När du använder appen sparas många av dina val för att underlätta för dig när du använder systemet i framtiden. På fliken **Anpassning** kan du visa och hantera personliga ändringar du har gjort på sidor i systemet. På den här fliken kan du också återställa bildtext (dvs. popup-fönstren som introducerar nya systemfunktioner). Du får då ett meddelande om tidigare påträffade funktioner.
+Förutom att ändra dina användarinställningar kan du också visa och ta bort dina användardata och anpassningar från sidan **Användaralternativ**. Om du vill se dina användningsdata väljer du **användningsdata** i åtgärdsfönstret. På fliken **Anpassning** kan du visa och hantera personliga ändringar du har gjort på sidor i systemet. På den här fliken kan du också återställa bildtext (dvs. popup-fönstren som introducerar nya systemfunktioner). Du får då ett meddelande om tidigare påträffade funktioner.
 
 > [!NOTE]
 > Om funktionen [sparade vyer](saved-views.md) är aktiverad kan du visa och hantera dina anpassningar genom att välja **anpassning** i åtgärdsfönstret på sidan **Användaralternativ**.
 
-## <a name="implicit-personalizations"></a>Uttryckliga anpassningsalternativ
+## <a name="restricted-personalization-access-formerly-implicit-personalizations"></a>Begränsad anpassningsåtkomst (tidigare implicita anpassningar)
 
-Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som lagrar deras aktuella synliga tillstånd.
+På nivån **Begränsad anpassningsåtkomst** sparas de användaråtgärder som är kopplade till typisk sidanvändning automatiskt av appen och återställs nästa gång du besöker sidan. Ingen explicit spara-åtgärd krävs. 
 
-- **Bredd på rutnätskolumner** - Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Appen lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan med det rutnätet.
-- **Summa för rutnätskolumner** – (endast tillgängligt när den nya rutnätskontrollen är aktiverad) du kan bestämma om en summa ska visas längst ned i en numerisk kolumn i ett rutnät och om rutnätssidfoten ska visas. Programmet lagrar dessa data så att dessa inställningar sparas nästa gång du öppnar sidan. Mer information finns i avsnittet [rutnätsfunktioner](grid-capabilities.md). 
+Här följer en lista över de åtgärder som ligger under normal sidanvändning och som täcks av begränsad anpassningsåtkomst: 
+
+- **Bredd på rutnätskolumner** - Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Appen lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan.
+- **Summa för rutnätets sidfot och kolumn** – *(endast tillgängligt när den nya rutnätskontrollen är aktiverad)* du kan bestämma om en summa ska visas längst ned i en numerisk kolumn i ett rutnät och om rutnätssidfoten ska visas. Programmet lagrar dessa data och använder dem nästa gång du öppnar sidan. Mer information finns i [Rutnätsmöjligheter](grid-capabilities.md). 
 - **Snabbflikar** - Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Appen lagrar information om snabbflikar som du har utökat och komprimerat. Nästa gång du öppnar sidan kommer samma snabbflikar att visas eller döljs, utifrån din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en snabbflik eftersom appen inte behöver hämta informationen för snabbflikar förrän de expanderas. Såsom beskrivs senare i det här avsnittet kan du också ändra ordning på snabbflikarna på en sida.
-- **Faktarutor** – vissa sidor har rutan **relaterad information** som visar skrivskyddad information som är relaterad till sidans aktuella ämne. Varje avsnitt i rutan **relaterad information** kallas en *faktabox*. Du kan utöka eller komprimera rutan **relaterad information** och du kan också visa eller dölja enskilda faktarutor. Appen lagrar dessa inställningar. Nästa gång du öppnar sidan kommer rutan **relaterad information** och de enskilda faktarutorna antingen utökas eller komprimeras baserat på din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en faktabox eftersom appen inte behöver hämta informationen för faktaboxar förrän de expanderas.
-- **Åtgärdsfönster** – Ett *åtgärdsfönstret* visas längst upp på de flesta sidor. Åtgärdsfönstret innehåller knappar för många av de åtgärder som du kan utföra på den aktuella sidan. Knapparna ordnas ofta på flikarna. Du kan öppna hela åtgärdsfönstret och du kan konfigurera den så att den komprimeras som standard. Nästa gång du öppnar sidan kommer åtgärdsfönstret antingen att visas eller döljas, utifrån din senaste interaktion med sidan. Om du har öppnat åtgärdsfönstret visas den sista fliken som du använde.
-- **Snabbfilter** – Ett *snabbfilter* visas ovanför många rutnät. Snabbfilter låter dig filtrera rutnät, baserat på en kolumn som du väljer. Appen lagrar den kolumn som du filtrerade på. Nästa gång som du öppnar sidan med det rutnätet kommer rutnätet att filtreras på samma kolumn. Du kan sedan välja en annan kolumn att filtrera rutnätet på.
+- **Faktaboxar** – vissa sidor har rutan **relaterad information** som visar skrivskyddad information som är relaterad till sidans aktuella ämne. Varje avsnitt i rutan **relaterad information** kallas en *faktabox*. Du kan utöka eller komprimera rutan **relaterad information** och du kan också visa eller dölja enskilda faktaboxar. Appen lagrar dessa inställningar. Nästa gång du öppnar sidan kommer rutan **relaterad information** och de enskilda faktaboxar antingen utökas eller komprimeras baserat på din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera ett fönster eller faktabox för **relaterad information** eftersom appen inte behöver hämta informationen för faktaboxar förrän de expanderas.
+- **Åtgärdsfönster** – Ett *åtgärdsfönstret* visas längst upp på de flesta sidor. Åtgärdsfönstret innehåller knappar för många av de åtgärder som du kan utföra på den aktuella sidan. Knapparna ordnas ofta på flikarna. Du kan *öppna* hela åtgärdsfönstret och du kan konfigurera den så att den komprimeras som standard. Nästa gång du öppnar sidan kommer åtgärdsfönstret antingen att visas eller döljas, utifrån din senaste interaktion med sidan. Om du har öppnat åtgärdsfönstret visas den sista fliken som du använde.
+- **Snabbfilter** – Ett *snabbfilter* visas ovanför många rutnät. Snabbfilter låter dig filtrera rutnät, baserat på en kolumn som du väljer. Appen lagrar den kolumn som du filtrerade på. Nästa gång som du öppnar sidan kommer det rutnätet att använda samma kolumn för filtrering som standard. Du kan sedan välja en annan kolumn att filtrera rutnätet på.
 - **Kolumnrubrikfilter** – när du filtrerar ett rutnät med hjälp av *Kolumnrubrikfilter*, kan du ändra filteroperatör för att hitta de data som du vill. Du kan exempelvis ändra operatorn från **börjar med** till **exakt**. Varje gång du använder ett kolumnrubrikfilter och ändrar filteroperatör kommer appen att spara ändringen. Nästa gång du filtrerar efter den kolumnen kommer filteroperatören att återställas.
 - **Navigeringsfönstret** – du kan öppna *navigeringsfönstret* genom att välja knappen **Expandera navigeringsfönstret** längst upp till vänster på en sida. (Den här knappen kallas ibland _**Meny**-knappen_, *hamburgare*, *hamburgarmeny* eller *hamburgarknappen*.) Du kan öppna navigeringsfönstret eller du kan hålla det komprimerat som standard. När du öppnar navigeringsfönstret håller appen det öppet tills du komprimerar det.
 
-## <a name="explicit-personalizations"></a>Uttryckliga anpassningsalternativ
+## <a name="full-personalization-access-formerly-explicit-personalizations"></a>Fullständig anpassningsåtkomst (tidigare explicita anpassningar)
 
-Olika personer och företag har ett annorlunda perspektiv på de viktigaste data eller data som inte behövs för hur de sköta verksamheten. Du kan skräddarsy hur informationen beställs och interageras med. Du kan också ange att viss information ska döljas. Dessa funktioner är viktiga för en personlig och produktiv upplevelse och är exempel på uttryckliga anpassningar. Uttryckliga anpassningar är de anpassningar som du uttryckligen utför med avsikt att ändra utseende eller funktion för ett element eller en sida.
+På nivån **Fullständig anpassningsåtkomst** har användarna tillgång till alla anpassningsfunktioner i appen. Eftersom olika personer och företag har olika behov när de interagerar med appen, särskilt i termer av använda fält, innehåller anpassningsverktyg som gör det möjligt för användare och organisationer att skräddarsy det sätt som informationen beställs och interageras inom appen. Dessa funktioner är viktiga för att tillhandahålla enklare, optimerade upplevelser i appen som är skräddarsydda för dig och din organisation. 
+
+Om funktionen [Sparade vyer](saved-views.md) är aktiverad krävs ett uttryckligt sparande för att ändringarna i användarupplevelsen för en viss vy ska bibehållas. När funktionen **Sparade vyer** är inaktiverad sparas ändringarna automatiskt.
+
+Följande avsnitt beskriver omfattningen av de anpassningsfunktioner som är tillgängliga för användarna på nivån **fullständig anpassningsåtkomst**. Här följer några av dessa funktioner:
+
+- Alternativ för snabbmeny
+- Verktygsfält för **anpassning**
+- Lägga till paneler, listor och länkar till arbetsytor
+- Lägga till en sammanfattning från en arbetsyta till en panel
+- Anpassa instrumentpanelen
 
 ### <a name="shortcut-menu-options"></a>Alternativ för snabbmeny
 
-Snabbmenyer innehåller några sätt för att uttryckligen ändra en sida så att den passar bättre till dina behov eller ditt företags behov. (EN snabbmeny kallas också en *högerklicksmeny* eller *kontextmenyn*.)
+Snabbmenyer innehåller ett sätt för att uttryckligen ändra en sidas gränssnitt så att den passar bättre till dina behov eller ditt företags organisation. (EN snabbmeny kallas också en *högerklicksmeny* eller *kontextmenyn*.)
 
-Några av de vanligaste och mest viktiga ändringar som kan göras till en sida visas direkt som ett alternativ på en snabbmeny. Om du t.ex. startar i Plattformsuppdatering 17, om du vill lägga till eller dölja kolumner i ett rutnät, bara högerklicka på en kolumnrubrik och markera **lägg till kolumner** eller **dölj denna kolumn**.
+Några av de vanligaste och mest viktiga ändringar som kan göras till en sida visas direkt som ett alternativ på en snabbmeny. Om du t.ex. vill lägga till eller dölja kolumner i ett rutnät, bara högerklicka på en kolumnrubrik och markera **Infoga kolumner** eller **dölj denna kolumn**.
 
-Dessutom är de vanligaste typerna av uttrycklig anpassning tillgängliga genom att högerklicka på ett element och sedan välja **anpassa**. (Observera att inte alla element på sidan kan anpassas). När du använder den här metoden för anpassning visas elementets egenskapsfönster.
+Dessutom är de vanligaste typerna av anpassning tillgängliga genom att högerklicka på ett element och sedan välja **anpassa**. (Observera att inte alla element på sidan kan anpassas). När du använder den här metoden för anpassning visas elementets *egenskapsfönster*.
 
 ![Anpassa egenskaper för ett element](./media/cli-element-property-window.png)
 
@@ -91,12 +100,13 @@ Du kan använda egenskapsfönstret för att anpassa ett element på följande s�
 - Förhindra att data i fältet redigeras (för alla poster).
 - Ange ett fält som krävs för inmatning av data. Om inget värde har angetts i det här fältet kommer det att visas med en röd kantlinje och en asterisk för att ange det här läget. Det här alternativet är bara tillgängligt från början i version 10.0.11 när funktionerna [Sparade vyer](saved-views.md) och **Tilldela fält enligt önskemål med anpassning** är aktiverade.
 
-Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket element. Exempelvis egenskapsfönstret för en panel kan låta dig flytta upp den panelen till en instrumentpanel och egenskapsfönster för en instrumentpanel låter dig skapa en ny arbetsyta på den här instrumentpanelen.
+Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket element. Exempelvis egenskapsfönstret för en panel kan låta dig flytta upp den panelen till en instrumentpanel och egenskapsfönster för element på standardpanelen kan låta dig skapa ett nytt anpassat arbetsområde.
 
 ### <a name="the-personalization-toolbar"></a>Verktygsfält för anpassning
 
 Om du vill göra flera ändringar på en sida eller göra ändringar som inte är tillgängliga genom andra metoder (till exempel ändra ordning på element), kan du använda verktygsfältet **anpassning**. För att öppna verktygsfältet **anpassning**, följ något av dessa steg:
 
+- Välj **Ctrl+Shift+P** från alla element på sidan.
 - Välj **anpassa den här sidan** i ett elements egenskapsfönster.
 - Välj **anpassa den här sidan** i gruppen **Anpassa** på fliken **Alternativ** på en sidas åtgärdsfönster.
 - Välj knappen **inställningar** (kugghjulssymbolen) i navigeringsfältet och välj sedan **anpassa**.
@@ -112,40 +122,40 @@ När verktygsfältet **anpassning** är öppet är den underliggande sidan skriv
 Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 
 - Använd verktyget **Välj** för att välja och öppna ett elements egenskaper. Om du vill använda det här verktyget väljer du knappen **Välj** i verktygsfältet och väljer sedan det önskade elementet. Elementets egenskapsfönster visas och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element som kan anpassas på den sidan. Observera att vissa anpassningsegenskaper kanske inte är tillgängliga i vissa fall. Exempelvis kan du inte låsa ett fält som krävs.
-- Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Om du vill använda det här verktyget väljer du knappen **Dölj** i verktygsfältet och väljer sedan det element som ska döljas. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra ett element synligt genom att markera det. Om du vill se hur sidan ser ut när elementen är dolda, växlar du till ett annat anpassningsverktyg.
-- Använd verktyget **Lägg till ett fält** för att lägga till ett fält till din sida. När du använder det här verktyget kan du bara lägga till fält som är en del av siddefinitionen. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns i [Skapa och arbeta med anpassade fält](user-defined-fields.md). När du har valt knappen **Lägg till ett fält** på verktygsfältet måste du först välja den grupp eller det område där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till den valda gruppen eller området. Välj ett eller flera fält i dialogrutan och välj sedan **Infoga**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
+- Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Om du vill använda det här verktyget väljer du knappen **Dölj** i verktygsfältet och väljer sedan det element som ska döljas. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra ett element synligt genom att markera det. Om du vill se hur sidan ser ut när elementen är dolda, växlar du till ett annat anpassningsverktyg eller stäng verktygsfältet för anpassning.
+- Använd verktyget **Lägg till fält** för att lägga till ett fält till din sida. När du använder det här verktyget kan du bara lägga till fält som är en del av siddefinitionen. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns i [Skapa och arbeta med anpassade fält](user-defined-fields.md). När du har valt knappen **Lägg till fält** på verktygsfältet måste du först välja det rutnät eller avsnitt där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till det valda rutnätet eller avsnittet. Välj ett eller flera fält i dialogrutan och välj sedan **Uppdatera**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
 - Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. Observera att du inte kan flytta ett element utanför dess överordnade grupp. Om du vill använda det här verktyget väljer du knappen **Flytta** i verktygsfältet och väljer sedan det element som ska flyttas. När du markerar ett element kommer appen att bestämma platser som elementet kan flyttas till. Dessa platser kallas *släppzoner*. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
 - Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer knappen **Hoppa över** på verktygsfältet kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan ta bort eller lägga till fält interaktivt i tabbsekvensen.
-- Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från den genom att markera fälten.
+- Använd verktyget **Visa i rubrik** när du vill att ett fält ska visas i sammanfattningen på snabbfliken. När du väljer knappen **Visa i rubrik** i verktygsfältet har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från sammanfattning genom att markera fälten.
 - Använd verktyget **Kräv** för att tilldela ett element som krävs för inmatning av data. När du väljer knappen **Kräv** på verktygsfältet kommer alla element som har anpassats för att krävas att visas i en skuggad behållare. Du kan sedan göra dem inte obligatoriska igen. Det här alternativet är tillgängligt version 10.0.12 och senare när funktionen **Tilldela fält enligt önskemål med anpassning** är aktiverade.
-
-    > [!IMPORTANT]
-    > Version 10.0.12 är en förhandsgranskningsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 - Använd verktyget **Låsa** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer knappen **Låsa** på verktygsfältet kommer alla element som för närvarande icke är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
-- Använd knappen **Lägg till en app från Power Apps** under infoga i ett program som har skapats med hjälp av Microsoft Power Apps på sidan. För detaljerad information om hur du bäddar in en app från Power Apps på en sida finns i [Bädda in appar från Power Apps](embed-power-apps.md). Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad.  
+- Använd verktyget **Lägg till en app från Power Apps** under infoga i ett program som har skapats med hjälp av Microsoft Power Apps på sidan. För detaljerad information om hur du bäddar in en app från Power Apps på en sida finns i [Bädda in appar från Power Apps](embed-power-apps.md). Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är inaktiverad.
 - Använd knappen **Lägg till en app** för att bädda in en app, antingen en skapad från Microsoft Power Apps eller en tredje part på sidan. Det här alternativet är bara tillgängligt om funktionen [sparade vyer](saved-views.md) är aktiverad. 
-- Använd verktyget **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Det finns ingen ångra-åtgärd. Använd därför endast detta verktyg om du är säker på att du vill återställa sidan.
-- Använd verktyget **Importera** för att ladda en anpassning från en fil som du eller någon annan tidigare skapade. När du importerar anpassningar för en sida kan du välja om de ska läggas till i eller ersätta alla befintliga anpassningar för sidan. Det finns ingen ångra-åtgärd. När du har importerat anpassningar måste du därför manuellt rensa eller ångra de ändringar som du inte vill ha.
-- Använd verktyget **exportera** om du vill spara dina anpassningar för sidan till en fil. Du kan sedan dela dina anpassningar med andra användare. Användarna behöver bara importera filen med dina anpassningar för sidan.
+- Använd verktyget **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Du kan inte ångra denna åtgärd. Använd därför endast detta verktyg om du är säker på att du vill återställa sidan. När funktionen **Sparade vyer** är aktiverad rensar det här verktyget anpassningarna för den aktuella vyn.
+- Använd verktyget **Importera** för att ladda en anpassning från en fil som du eller någon annan tidigare skapade. 
+
+    - När funktionen **Sparade vyer** är inaktiverad kan du välja om du vill lägga till eller ersätta befintliga anpassningar med de anpassningar som importeras för sidan. Du kan inte ångra denna åtgärd. När du har importerat anpassningar måste du därför manuellt rensa eller ångra de ändringar som du inte vill ha.
+    - När funktionen **Sparade vyer** aktiveras blir de importerade anpassningarna en vy på sidan. Om vyn redan finns kan du hoppa över importen, ersätta den aktuella vyn som har samma namn eller byta namn på den importerade vyn.
+
+- Använd verktyget **exportera** om du vill spara dina anpassningar för sidan till en fil. Du kan sedan dela dina anpassningar med andra användare. Användarna behöver bara importera filen med dina anpassningar för sidan. När funktionen **Sparade vyer** är aktiverad sparar det här verktyget din aktuella vy till en fil för delning.
 - Välj knappen **Stäng** för att stänga verktygsfältet **Anpassning** och återställa sidan till sin tidigare interaktiva status.
 
 När verktygsfältet **anpassning** används kommer dina anpassningar att börja gälla så fort du gör dem. Om funktionen [sparade vyer](saved-views.md) är aktiverad måste du uttryckligen spara anpassningar i en vy som du väljer.
 
 I vissa fall visas en hänglåssymbol bredvid ett element när du väljer ett verktyg. Den här symbolen visar att du inte kan ändra egenskaperna för elementet som är relaterade till det valda verktyget eftersom ändringar i de egenskaperna som förhindrar att sidan fungerar som den ska.
 
-### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Lägga till en panel, lista eller länk till en arbetsyta
+### <a name="adding-tiles-lists-and-links-to-a-workspace"></a>Lägga till paneler, listor och länkar till arbetsytor
 
 För vissa sidor som innehåller listor är anpassningsfunktionen **Lägg till på arbetsyta** tillgänglig i gruppen **Anpassa** på fliken **alternativ** i åtgärdsfönstret. Med den här funktionen kan du skicka relevant information från den aktuella listan till en viss arbetsyta. Informationen som visas på arbetsytan kan antingen baseras på hela listan eller en filtrerad och sorterad version av listan. Du kan också ange om informationen ska visas på arbetsytan som en lista, en sammanfattande sida som kan visa antalet objekt i listan eller en länk.
 
 > [!NOTE]
-> Om funktionen [sparade vyer](saved-views.md) är aktiv länkas det innehåll som du flyttar till en arbetsyta direkt till en vy. Frågan används för att hämta data på arbetsytan och på motsvarande sida eller länk i arbetsytan öppnas sidan i vyn så att frågans fråga och anpassningar tillämpas på den.
+> Om funktionen [sparade vyer](saved-views.md) är aktiv länkas det innehåll som du flyttar till en arbetsyta direkt till en vy. Frågan används för att hämta data på arbetsytan och på motsvarande sida eller länk i arbetsytan öppnas sidan i vyn så att frågans fråga och anpassningar tillämpas på den. Om vyn uppdateras ändras motsvarande element i arbetsytan till den nya vydefinitionen.
 
 [![Lägg till på arbetsyta](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
-- Lägg till en lista i en arbetsyta, sortera först eller filtrera listan på sidan så att den visar information som du vill ska visas på arbetsytan. (Om funktionen Sparade vyer är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Lista**. När du har valt **konfigurera**, visas en dialogruta, där du kan välja vilka kolumner som ska visas i listan i arbetsytan. Du kan också ange etiketten som ska användas för i listan i arbetsytan.
-- För att lägga till en panel till en arbetsyta, filtrera först listan på sidan så att den visar de data som du vill sammanfatta eller som vill ha snabb tillgång till. (Om funktionen Sparade vyer är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Panel**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för panelen på arbetsytan. Du kan också ange om panelen ska visa ett antal. När du har lagt till en panel i arbetsytan kan du välja den för att öppna den aktuella sidan från arbetsytan. Du kan sedan visa den filtrerade listan som är kopplad till panelen.
-- Om du vill lägga till en länk till en arbetsyta filtrerar du först listan så att den visar de data du är intresserad av. (Om funktionen Sparade vyer är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Länk**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för länken. Du kan också ange en etikett för ett nytt avsnitt som innehåller länken.
+- Lägg till en lista i en arbetsyta, sortera först eller filtrera listan på sidan så att den visar information som du vill ska visas på arbetsytan. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Lista**. När du har valt **konfigurera**, visas en dialogruta, där du kan välja vilka kolumner som ska visas i listan i arbetsytan. Du kan också ange etiketten som ska användas för i listan i arbetsytan.
+- För att lägga till en panel till en arbetsyta, filtrera först listan på sidan så att den visar de data som du vill sammanfatta eller som vill ha snabb tillgång till. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Panel**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för panelen på arbetsytan. Du kan också ange om panelen ska visa ett antal. När du har lagt till en panel i arbetsytan kan du välja den för att öppna den aktuella sidan från arbetsytan. Du kan sedan visa den filtrerade listan som är kopplad till panelen.
+- Om du vill lägga till en länk till en arbetsyta filtrerar du först listan så att den visar de data du är intresserad av. (Om funktionen **Sparade vyer** är aktiverad kan du inte fortsätta förrän du har sparat en vy som har dessa villkor.) Välj sedan **Lägg till i arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Länk**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för länken. Du kan också ange en etikett för ett nytt avsnitt som innehåller länken.
 
 När du har lagt till en lista, panel eller länk har lagts till en arbetsyta kan du öppna den arbetsytan och ordna om elementen i den som du vill.
 
@@ -155,22 +165,25 @@ En del arbetsytor innehåller antalet paneler (detta är paneler som har nummer 
 
 ### <a name="personalizing-your-dashboard"></a>Anpassa instrumentpanelen
 
-Instrumentpanelen är ofta den första sida som du ser när du öppnar appen. Du kan anpassa instrumentpanelen så att den bara visar arbetsytans paneler som du vill visa. Du kan också ordna om panelerna så att de är i samma ordning som du föredrar att visa dem i, byta namn på din arbetsytas navigeringspaneler eller lägga till en ny panel i arbetsytan.
+Instrumentpanelen är ofta den första sida som du ser när du öppnar appen. Den kan anpassas på samma sätt som andra sidor i systemet, med hjälp av samma mekanismer som beskrivs tidigare i det här avsnittet. 
 
-För att anpassa instrumentpanelen högerklickar du på en kakel och väljer sedan **anpassa** för att öppna panelens egenskapsfönster.
+> [!WARNING]
+> När du döljer innehåll på instrumentpanelen för närvarande är det viktigt att du direkt anpassar en panel, inte utrymmet runt det. Om du döljer gruppen runt en panel kan det bli oväntade resultat om fler paneler läggs till senare, eller om systemet växlas till ett annat språk.
 
-- Om du vill dölja eller byta namn på den valda färgen kan du ändra direkt i egenskapsfönstret.
-- Om du vill omorganisera arbetsytans paneler, välj i egenskapsfönstret **Anpassa den här sidan** för att öppna verktygsfältet **Anpassning**. Du kan sedan använda verktyget **Flytta** för att arrangera om panelerna som du vill.
-- Om du vill lägga till en ny panel i arbetsytans egenskapsfönster, välj **lägg till en arbetsyta**. En ny panel i arbetsytan skapas längst ned på instrumentpanelen. Du kan byta namn på denna nya arbetsytapanel som helst. Du kan också lägga till listor, rutor och länkar till arbetsytan enligt avsnittet [Lägga till listor, rubriker eller länkar till arbetsytor](#adding-a-tile-list-or-link-to-a-workspace) i det här ämnet.
+En unik anpassningskapacitet som är tillgänglig på instrument panelen är möjligheten att lägga till paneler. 
 
+- Om funktionen **Helsideappar** är inaktiverad, lägger du till en ny panel genom att högerklicka på ett element på instrumentpanelen och sedan välja **Lägg till en arbetsyta**. En ny panel i arbetsytan skapas längst ned på instrumentpanelen. Du kan byta namn på denna nya arbetsytapanel som helst. Du kan också lägga till listor, rutor och länkar till arbetsytan enligt avsnittet [Lägga till paneler, listor och länkar till arbetsytor](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace) i det här ämnet.
+- Om funktionen **Helsideappar** är aktiverad, lägger du till en ny panel genom att högerklicka på ett element på instrumentpanelen och sedan välja **Lägg till en app**. I dialogrutan väljer du om du vill lägga till en panel för en ny arbetsyta eller en sida som har innehåll från Power Apps eller en webbplats. Följ sedan stegen för att konfigurera alternativet som du har valt. En ny panel skapas längst ned på instrumentpanelen. 
 
 ## <a name="sharing-personalizations"></a>Dela anpassningar
-När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att öppna den anpassade sidan och importera anpassningsfilen som du har skapat. Alternativt kan du ge dina anpassningar till en användare med administratörsbehörighet. Användaren kan sedan använda din anpassningsfil för många användare samtidigt genom att använda administrationssidan **anpassning**.
+
+När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att importera anpassningsfilen. Alternativt kan du ge dina anpassningar till en användare med administratörsbehörighet. Användaren kan sedan använda din anpassningsfil för många användare samtidigt genom att använda administrationssidan **anpassning**.
 
 ## <a name="administration-of-personalizations"></a>Administration av anpassning
-Sidan **Anpassning** är det centrala navet för hantering av anpassningar på organisationsnivå. Innehållet och funktionerna på den här sidan beror på om funktionen **Sparade vyer** har aktiverats.  
 
-Information om kunder som har aktiverat funktionen **Sparade vyer** finns i avsnittet "Hantera vyer globalt" i ämnet [Sparade vyer](saved-views.md).  
+Sidan **Anpassning** är det centrala navet för hantering av anpassningar på organisationsnivå. Innehållet och funktionerna på den här sidan beror på om funktionen **Sparade vyer** har aktiverats.
+
+Information om kunder som har aktiverat funktionen **Sparade vyer** finns i avsnittet "Hantera vyer globalt" i ämnet [Sparade vyer](saved-views.md).
 
 För kunder som inte har aktiverat funktionen [sparade vyer](saved-views.md) har den här sidan fyra flikar:
 

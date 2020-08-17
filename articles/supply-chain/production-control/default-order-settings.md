@@ -1,9 +1,9 @@
 ---
 title: Standardorderinställningar för dimensioner och produktvarianter
 description: Standardorderinställningar definierar site och lagerställe som artiklar kommer att anskaffas från eller lagras, och de minimum-, maximum-, multipla- och standardkvantiteter som ska användas för handel eller lagerhantering, ledtider, stoppflagga och orderlöftesmetod.
-author: roxanadiaconu
+author: t-benebo
 manager: tfehr
-ms.date: 11/03/2017
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,15 +16,15 @@ ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 46b1efb274c9f54f27c26884dc18fc4a317786be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
+ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211593"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "3637766"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardorderinställningar för dimensioner och produktvarianter
 
@@ -32,55 +32,58 @@ ms.locfileid: "3211593"
 
 Standardorderinställningar i Dynamics 365 Supply Chain Management definierar site och lagerställe som artiklar kommer att anskaffas från eller lagras, och de minimum-, maximum-, multipla- och standardkvantiteter som ska användas för handel eller lagerhantering, ledtider, stoppflagga och orderlöftesmetod. Standardorderinställningar används när du skapar inköpsorder, försäljningsorder, överföringsorder, lagerjournaler och genom huvudplanering att skapa planerade order. Standardorderinställningar kan vara artikelspecifika, sitespecifika, produktvariantspecifika eller produktdimensionspecifika.
 
-Du definierar standardorderinställningar på sidan **Standardorderinställningar**. För att öppna denna sida går du till **Hantering av produktinformation** &gt; **Produkter** &gt; **Frisläppta produkter** &gt; **Välj en frisläppt produkt** &gt; i åtgärdsfönstret **Plan** eller **Hantera lager** Åtgärdsfönster &gt; **Orderinställningar** &gt; **Förvalda orderinställningar**.
+Du definierar standardorderinställningar på sidan **Standardorderinställningar**. För att öppna denna sida gå till **produktinformationshantering** &gt; **produkter** &gt; **frisläppta produkter** &gt; **Välj en frisläppt produkt** &gt; i **Plan**. Du kan också gå till **Hantera lager** &gt; **Orderinställningar** &gt; **Standardorderinställningar**.
 
 ## <a name="default-order-settings"></a>Standardorderinställningar
+
 Det finns tre typer av standardorderinställningar för inköp, försäljning och lager. Standardorderinställningarna för inköp används när det skapas:
 
--   Inköpsorderrader
--   Inköpsavtalsrader
--   Rader i anbudsförfrågan
--   Inköpsrekvisitionsrader
--   Rader för försändelseåteranskaffning
--   Planerade inköpsorder
+- Inköpsorderrader
+- Inköpsavtalsrader
+- Rader i anbudsförfrågan
+- Inköpsrekvisitionsrader
+- Rader för försändelseåteranskaffning
+- Planerade inköpsorder
 
 Standardorderinställningarna för försäljning används när det skapas:
 
--   Försäljningsorderrader
--   Försäljningsavtalsrader
--   Försäljningsoffertrader
--   Returorderrader och artikelersättningsrader
--   Rader i efterfrågeprognos
+- Försäljningsorderrader
+- Försäljningsavtalsrader
+- Försäljningsoffertrader
+- Returorderrader och artikelersättningsrader
+- Rader i efterfrågeprognos
 
 Standardinställningen för försäljningsorder gäller även när det skapas:
 
--   Projektartikelkrav
--   Artikelbehov för serviceorder
+- Projektartikelkrav
+- Artikelbehov för serviceorder
 
 Standardorderinställningarna för lager används när det skapas:
 
--   Lagerjournaler.
--   Överföringsorder
--   Planerade överföringsorder
+- Lagerjournaler.
+- Överföringsorder
+- Planerade överföringsorder
 
 Standardinställningen för lagerorder gäller även när det skapas:
 
--   Karantänorder
--   Kvalitetsorder
--   Produktionsorder
--   Strukturlisterader
--   Planerade produktionsorder
+- Karantänorder
+- Kvalitetsorder
+- Produktionsorder
+- Strukturlisterader
+- Planerade produktionsorder
 
 ## <a name="full-definition-of-a-released-product"></a>Fullständig definition av en frisläppt produkt
+
 När du skapar en transaktion måste du först ange hela definitionen för en släppt produkt på raden för att Supply Chain Management ska försöka identifiera standardorderinställningarna. "Hela definitionen för en frisläppt produkt" innebär att artikelnumret och alla aktiva produktdimensioner, till exempel konfiguration, storlek, utförande och färg specificeras för transaktionen. Om du till exempel manuellt skapar en inköpsorderrad för en frisläppt produktvariant, måste du ange alla nödvändiga produktdimensioner innan site, lagerställe, kvantitet och produktionstid visas som standard på orderraden. 
 
-Alla parametrar för standardorderinställningar används inte när du skapar order eller journalrader. Kvantiteter och ledtider visas som standard endast när så är lämpligt. Exempelvis kommer, vid räkning av en journalrad, endast plats och lagerställe att visas som standard när raden skapas. Självklart kommer inga kvantiteter att återställas till sina standardvärden och heller inga kontroller av minimi- och maxvärden att utföras när raden skapas eller journalen bokförs. 
+Alla parametrar för standardorderinställningar används inte när du skapar order eller journalrader. Kvantiteter och ledtider visas som standard endast när så är lämpligt. Exempelvis kommer, vid räkning av en journalrad, endast plats och lagerställe att visas som standard när raden skapas. Av denna anledning utförs ingen standardkvantitet eller kontroller av minimi- och maxvärden att utföras när raden skapas eller journalen bokförs. 
 
 Systemet försöker alltid att hitta en standardsite och lagerställe, när en order eller en journalrad skapas. Siten visas inte alltid som standard från orderinställningarna. Till exempel när du skapar en försäljningsorder eller inköpsorder används siten från orderrubriken automatiskt på orderraderna. När du skapar en strukturlisterad används platsen från sidrubriken Strukturlista. När platsen har fastställts kommer den att användas för att hitta alla eventuella, platsspecifika orderinställningar som sedan kan användas som standardinställningar för lagerstället. 
 
-Standardordertyp, inköp och lagerledtider kan åsidosättas av disponeringsreglerna för artikeln på sidan **Artikeldisponering**. Även om standardorderinställningar inte medger åtskillnad mellan ledtider för produktion och överföring, så medger reglerna för artikeldisponering detta. Men om inställningen för artikeldisponering bara kommer att användas av MPS när du skapar planerad produktion och planerade överföringsorder och inte ska användas när du skapar manuell produktion och överföringsorder. 
+Standardordertyp, inköp och lagerledtider kan åsidosättas av disponeringsreglerna för artikeln på sidan **Artikeldisponering**. Även om standardorderinställningar inte medger åtskillnad mellan ledtider för produktion och överföring, så medger reglerna för artikeldisponering detta. Men om inställningen för artikeldisponering bara kommer att användas av Huvudplanering (MRP) när du skapar planerad produktion och planerade överföringsorder och inte ska användas när du skapar manuell produktion och överföringsorder. 
 
 ## <a name="default-order-settings-rules"></a>Regler för standardorderinställningar
+
 Du kan ange allmänna standardorderinställningar och ett valfritt antal regler för standardorderinställningar som endast gäller i vissa villkor, som till exempel site eller en specifik produktdimension eller produktdimensionskombination. Du kan inte ange specifika orderinställningar för ett lagerställe.
 
 ### <a name="rank-in-default-order-settings"></a>Rangordna i standardorderinställningar
@@ -89,13 +92,13 @@ Reglerna för standardorderinställningar har rangordningar. Ju högre rangordni
 
 ### <a name="default-order-settings-for-released-products"></a>Standardorderinställningar för frisläppta produkter
 
-För specifika frisläppta produkter kan du definiera allmänna orderinställningar eller sitespecifika orderinställningar. De allmäna orderinställningarna kommer alltid att ha rangordning noll. Om du ställer in nya försäljningar, inköp och lagerorderinställningar tillsammans samtidigt, rekommenderar vi att du använder **Informationsvy** på sidan **Standardorderinställningar**. För att växla till informationsvyn, gå till **Alternativ** Åtgärdsfönster &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Detaljvy**.
+För specifika frisläppta produkter kan du definiera allmänna orderinställningar eller sitespecifika orderinställningar. De allmäna orderinställningarna kommer alltid att ha rangordning noll. Om du ställer in nya försäljningar, inköp och lagerorderinställningar tillsammans samtidigt, rekommenderar vi att du använder **Informationsvy** på sidan **Standardorderinställningar**. För att växla till informationsvyn, gå till **Alternativ** &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Detaljvy**.
 
-### <a name="site-specific-order-settings"></a>Platsspecifika orderinställningar
+### <a name="site-specific-order-settings"></a>Platsspecifika orderinställningar.
 
 För att skapa sitespecifika orderinställningar klickar du på **Nytt**. I **Detaljvyn**, ange platsen i fältet **Giltiga inställningar för** &gt; **Plats**. I **Diagramvy** fyller du i kolumnen **Plats**. Den nya regeln kommer automatiskt att få ett nytt rangordningsvärde, högre än noll. Du kan skapa så många sitespecifika regler som behövs och du kan tilldela alla sitespecifika detaljregler samma rangordning för att visa att de är lika viktiga. 
 
-Om du är i **Detaljvy**, kan du inte få en överblick över reglerna som skapats för artikeln. Växla knappen **Visa/dölj lista** om du vill visa översiktsinformation. När en orderrad av något slag skapas och inte har någon angiven plats, söker Supply Chain Management efter en regel utan angiven site. Detta kan hjälpa till att bestämma en standardplats på orderraden. Den här siten används sedan till att söka efter en specifik regel där ett standardlagerställe kan ha ställts in. Detta lagerställe används för orderraden.
+Om du är i **Detaljvy**, kan du inte få en överblick över reglerna som skapats för artikeln. Använd knappen **Visa/dölj lista** om du vill visa översiktsinformation. När en orderrad av något slag skapas och inte har någon angiven plats, söker Supply Chain Management efter en regel utan angiven site. Detta kan hjälpa till att bestämma en standardplats på orderraden. Den här siten används sedan till att söka efter en specifik regel där ett standardlagerställe kan ha ställts in. Detta lagerställe används för orderraden.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Specifika orderinställningar för produktdimension
 
@@ -142,7 +145,7 @@ Beakta följande regler för standardorderinställningar.
 | 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Systemet korsar uppsättningen av regler två gånger för att bestämma site och lagerställe. När en inköpsorderrad skapas för konfigurationen C1, utförande R2, bestäms platsen utifrån regeln med rangordningen 10. Systemet söker sedan efter en regel för plats 2 i syfte att fastställa ett lagerställe. Regel 20 hittas och eftersom den har en högre rangordning, kommer lagerstället på inköpsorderraden vara 22 och inte 21. 
+Systemet korsar uppsättningen av regler två gånger för att bestämma site och lagerställe. När en inköpsorderrad skapas för konfigurationen C1, utförande R2, bestäms platsen utifrån regeln med rangordningen 10. Systemet söker sedan efter en regel för plats 2 i syfte att fastställa ett lagerställe. Regel 20 hittas och eftersom den har en högre rangordning, kommer lagerstället på inköpsorderraden vara 22 och inte 21.
 
 Som en allmän vägledning kommer specifika regler och regler för dimensioner som är viktigare än andra dimensioner att få en högre rangordning, medan mer allmänna regler får lägre rangordning. 
 
@@ -150,11 +153,11 @@ Regeln med rangordning noll fungerar som ett skyddsnät. Om inga andra regler hi
 
 Eftersom rangordningsnumret är så viktigt, finns det på åtgärdsfönstret **Standardorderinställningar** funktioner som flyttar en regel upp eller ned så att de alltid är i steg om 10. 
 
-Antalet regler som har skapats för en frisläppt produkt kan vara många. För att få en bättre känsla för vad varje regel åsidosätter och varför den behövs, rekommenderar vi att använda **Rutnätsvy** på sidan **Standardorderinställningar**. Du kan aktivera rutnätsvy genom att gå till åtgärdsfönstret **Alternativ** Åtgärdsfönster &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Rutnätsvy**. Antalet kolumner som visas i rutnätet kan vara ganska betydande, särskilt för försäljnings- och lagerflikarna. Om du vill begränsa antalet kolumner som visas i rutnätet, kan du dölja eller visa grupper av kolumner genom att använda knapparna i menyn **Standardorderinställningar** &gt; **Visa kolumn**.
+Antalet regler som har skapats för en frisläppt produkt kan vara många. För att få en bättre känsla för vad varje regel åsidosätter och varför den behövs, rekommenderar vi att använda **Rutnätsvy** på sidan **Standardorderinställningar**. Du kan aktivera rutnätsvy genom att gå till **Alternativ** &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Rutnätsvy**. Antalet kolumner som visas i rutnätet kan vara ganska betydande, särskilt för försäljnings- och lagerflikarna. Om du vill begränsa antalet kolumner som visas i rutnätet, kan du dölja eller visa grupper av kolumner genom att använda knapparna i menyn **Standardorderinställningar** &gt; **Visa kolumn**.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Specifika orderinställningar för frisläppta produktvarianter
 
-Om regelsystemet för standardorderinställningar är för besvärligt finns alternativet att bara definiera standardorderinställningar för varje produktvariant. Följande exempel visar hur detta ser ut för produkten och de fall som beskrivs nedan.
+Om regelsystemet för standardorderinställningar är för besvärligt finns alternativet att definiera standardorderinställningar för varje produktvariant. Följande exempel visar hur detta ser ut för produkten och de fall som beskrivs nedan.
 
 | Rangordning | Plats | Inställningar | Stil | Inköp - Åsidosätt standardinställningar | Ledtid för inköp | Inköp - Stoppat | Försäljning - Åsidosätt standardinställningar | Försäljning - Stoppad |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
@@ -168,5 +171,24 @@ Om regelsystemet för standardorderinställningar är för besvärligt finns alt
 
 Rangordningen i det här fallet har ingen betydelse, så du kan välja att dölja den. Den här lösningen har potentiellt ett underhållsproblem. Du kan dock behöva överväga att använda denna inställning om du funderar på att integrera med PML-system (Livscykelhantering för produkt).
 
+## <a name="use-strict-or-standard-validation-of-default-order-quantities"></a>Använda strikt eller standardvalidering av standard orderantal
 
+Du kan välja hur strikt systemet ska vara när de validerar de kvantiteter som anges i **Standardorderinställningar** för en produkt. När du använder det nya strikta alternativet måste **standardkvantiteten** alltid vara en multipel av det angivna **multipla** värdet för inköpsorder, lager och försäljningsorder. Om du använder strikt validering kan du inte spara standardorderinställningar som inte uppfyller dessa krav (och ett fel visas i meddelandefältet). 
 
+Strikt validering gäller de värden för **Standardorderkvantitet** som anges på snabbflikarna **Inköpsorder**, **Lager** och **Försäljningsorder** på sidan **Standardorderinställningar**. Varje snabbflik har en egen inställning för **Flera** som används för att validera värdet **Standardorderkvantitet** som angetts för den valda snabbfliken.
+
+### <a name="enable-the-strict-validation-option"></a>Aktivera strikt valideringsalternativ
+
+Innan du kan använda alternativet strikt validering måste den aktiveras i ditt system. Administratörer kan använda sidan [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den om det behövs. Här visas funktionen i listan:
+
+- **Modul** - *Produktinformationshantering*
+- **Funktionsnamn** - *Strikt validering för standardorderkvantitet*
+
+### <a name="set-the-validation-option"></a>Ange valideringsalternativ
+
+Ange valideringsalternativ:
+
+1. Gå till **Produktinformationshantering \> Konfigurera \> Parametrar för produktinformationshantering**.
+1. På fliken **Allmänt** ange **Validering för standardorderkvantitet** till ett av följande värden:
+    - **Strikt** – Välj det här alternativet om du vill se till att alla **Standardorderkvantitet** blir en multipel av det **multipla** värdet för varje snabbflik (**inköpsorder**, **lager** och **försäljningsorder**).
+    - **Standard** – Välj det här alternativet om du vill använda standardvalidering (som fungerar på samma sätt som funktionen inte aktiverad).

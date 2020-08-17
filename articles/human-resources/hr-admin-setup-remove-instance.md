@@ -3,7 +3,7 @@ title: Ta bort en instans
 description: I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17f299f81d1326dfb06c11a6125acc54b8ef2a6e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431209"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621390"
 ---
 # <a name="remove-an-instance"></a>Ta bort en instans
 
@@ -67,8 +67,21 @@ Gör följande om du vill ta bort en Personal-miljö från en befintlig Power Ap
 1. Kontakta supporten för att initiera en begäran om borttagning.
 2. Supportteamet initierar en begäran om borttagning med Personal DevOps-teamet. 
 3. Fortsätt efter att du fått veta att miljön har tagits bort.
-4.  Logga in på LCS med det konto som du använder för din Personal-prenumeration. 
+4. Logga in på LCS med det konto som du använder för din Personal-prenumeration. 
 5. Välj Personal-projektet som innehåller miljön. 
 6. I LCS-projektet väljer du fliken **-hantering for Personal**. 
 7. Välj instansen som du vill ta bort, som bör markeras med distributionsstatusen **Misslyckad**.
 8. Välj **Ta bort instans** och bekräfta ditt val. 
+
+## <a name="recover-a-soft-deleted-environment"></a>Återställa en tyst, borttagen miljö
+
+Om du tar bort Power Apps-miljön som personalmiljön är ansluten till kommer status för personalmiljön i Lifecycle Services för personal att vara **mjukt borttagen**. I det här fallet kan användarna inte ansluta till personal.
+
+Så här återställer du miljön:
+
+1. Följ anvisningarna i [Återställ Power Apps-miljön](/power-platform/admin/recover-environment.md).
+
+2. Kontakta support för att återställa personalmiljön. För mer information, se [Få support](hr-admin-troubleshooting-support.md).
+
+> [!Warning]
+> Power Apps-miljöer sparas bara i sju dagar efter borttagning. Du måste återställa miljön inom sju dagar.

@@ -3,7 +3,7 @@ title: Modul för butiksväljare
 description: Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 03/19/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,54 +18,113 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 460d05ca29d5b8da70a971a649d9edd786f7260d
-ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
+ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3378218"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646145"
 ---
 # <a name="store-selector-module"></a>Modul för butiksväljare
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om modulen för butiksväljare och beskriver hur du lägger till den till webbsidorna i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-En modul för butiksväljare används för kundscenariot "Köp online, hämta i butik" "(BOPIS). En lista visas med butiker där en produkt är tillgänglig för upphämtning, samt butikstimmar och produktlager för varje butik.
+Kunder kan använda modulen butiksväljare för att hämta en produkt i en vald butik efter ett onlineinköp. I Commerce version 10.0.13 inkluderar modulen butiksväljare ytterligare funktioner som kan visa sidan **Visa en butik** som visar närliggande butiker.
 
-Modulen butiksväljare kräver en produkts kontext och en sökplats för att hitta butiker. I avsaknad av en sökplats är det standardadressen till kundens webbläsare, förutsatt att kunden godkänner det. Modulen har en inmatningsruta där kunden kan ange en plats (postnummer, ort och delstat) för att hitta butiker som finns i närheten.
+Med modulen butiksväljare kan användarna ange en plats (ort, delstat, adress och så vidare) för att söka efter butiker inom en sökradie. När modulen öppnas använder den kundens webbläsare och söker efter butiker (om medgivande finns).
 
-Butiksväljarmodulen är integrerad med geokodnings-API för Bing Maps för att konvertera platsen till en latitud och longitud. En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-parametrar i Dynamics 365 Commerce.
+## <a name="store-selector-module-usage-in-e-commerce"></a>Användning av modul för butiksväljare i e-handel
 
-Modulen butiksväljare kan läggas till i en modul för inköpsruta på sidan produktinformation (PDP) för att visa butiker där en produkt är tillgänglig för upphämtning. Den kan också läggas till i en vagnmodul. När du lägger till i en kundvagn visar modulen butiksväljare visas upphämtningsalternativ för varje vagnradartikel. Med anpassad kodning kan du dessutom lägga till modulen i andra sidor eller moduler via tillägg och anpassningar.
+- En modul för butiksväljare kan användas på en produktinformationssida (PDP) för att välja en butik för upphämtning.
+- En modul för butiksväljare kan användas på en kundvagnssida för att välja en butik för upphämtning.
+- En modul för butiksväljare kan användas på en fristående sida där alla tillgängliga butiker visas.
 
-För att BOPIS-scenariot ska fungera bör produkter konfigureras med leveransläget "kundupphämtning". Annars visas modulen inte på respektive sida. Mer information om hur du konfigurerar leveransläget finns i [ställa in leveransmetod](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+## <a name="bing-maps-integration"></a>Bing Maps-integrering
+
+Modulen butiks väljare är integrerad med [Bing Maps REST-API:er (Application Programming Interfaces)](https://docs.microsoft.com/bingmaps/rest-services/) för att använda funktionerna Bing geokodning och automatiska förslag. En Bing Maps API-nyckel krävs och måste läggas till på sidan för delade Commerce-administration. Geokodnings-API används för att konvertera en plats till latitud- och longitudvärden. Integrationen med API för automatiska förslag används för att visa sökförslag när användare anger platser i sökfältet.
+
+För funktionen REST API för automatiska förslag ser du till att följande URL:er tillåts (kallas också "vitlistade") per din webbplats säkerhetsprinciper för innehåll (CSP). Den här inställningen görs i Commerce webbplatsskapare genom att lägga till tillåtna URL:er för webbplatsens CSP-direktiv (till exempel **img-src**). Mer information finns i [säkerhetsprinciper för innehåll](manage-csp.md). 
+
+- Till direktivet **connect-src** lägger du till **&#42;.bing.com**.
+- Till direktivet **img-src** lägger du till **&#42;.virtualearth.net**.
+- Till direktivet **script-src** **lägg till &#42;.bing.com, &#42;.virtualearth.net**.
+- Till direktivet **script style-src** lägger du till **&#42;.bing.com**.
+ 
+## <a name="pickup-in-store-mode"></a>Avhämta i butiksläge
+
+Modulen för butiksväljare stöder läget **Hämta i butik** som visar en lista över butiker där en produkt är tillgänglig för hämtning. Den visar även butikstider och produktlager för varje butik i listan. Modulen butiksväljare kräver en produktskontext för att återge produkttillgänglighet och för att användaren ska kunna lägga till produkten i vagnen, om produktens leveransläge är inställt på **hämta** vid den valda butiken. Mer information om [lagerinställning](inventory-settings.md). 
+
+Modulen butiksväljare kan läggas till i en modul för inköpsruta på en PDP för att visa butiker där en produkt är tillgänglig för upphämtning. Den kan också läggas till i en vagnmodul. I det här fallet visar modulen butiksväljare upphämtningsalternativ för varje radartikel i vagnen. Modulen butiksväljare kan också läggas till andra sidor eller moduler via tillägg och anpassningar.
+
+För att detta scenario ska fungera bör produkter konfigureras så att leveransläget **hämta** används. Annars visas modulen inte på respektive produktsidor. Mer information om hur du konfigurerar leveransläget finns i [ställa in leveransmetod](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Följande bild visar ett exempel på en modul för butiksväljare som används på ett PDP.
 
 ![Exempel på en modul för butiksväljare](./media/BOPIS.PNG)
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Användning av modul för butiksväljare i e-handel
+## <a name="find-stores-mode"></a>Sök efter butiksläge
 
-- En modul för butiksväljare kan användas för sidan produktinformation (PDP) för att hitta butiker i närheten där en produkt är tillgänglig för upphämtning.
-- En modul för butiksväljare kan användas på en kundvagnssida för att hitta butiker i närheten där en produkt i kundvagnen är tillgänglig för upphämtning.
+Modulen butiksväljare stöder också ett läge för **sök butiker**. Detta läge kan användas för att skapa sidan butiksplatser där tillgängliga butiker och information visas. I det här läget fungerar modulen butiksväljare utan produktkontext och kan användas som en fristående modul på alla webbplatssidor. Om de relevanta inställningarna aktiveras för modulen kan användarna välja en butik som primär butik. När en butik väljs som en användares önskade butik, behålls butiks-ID:t i webbläsarcookien. Därför måste användaren acceptera ett meddelande om cookie-tillstånd.
+
+I bilden nedan visas ett exempel på en modul i butiksväljaren som används tillsammans med en kartmodul på en butiksplatssida.
+
+![Exempel på en modul för butiksväljare](./media/ecommerce-Storelocator.PNG)
+
+## <a name="render-a-map"></a>Återge en karta
+
+Modulen butiksväljare kan användas tillsammans med kartmodulen för att visa butiksplatserna på kartan. Mer information om den här kartmodulen finns i [Kartmodul](map-module.md)
 
 ## <a name="store-selector-module-properties"></a>Egenskaper för modul för butiksväljare
 
-| Egenskapsnamn             | Värde                 | beskrivning |
-|---------------------------|-----------------------|-------------|
-| Sök radie | Antal | Definierar sökradien för butiker, i mil. Om inget värde anges används standardsökradien 50 mil.|
-|Användarvillkor | URL    |  Det krävs en URL för tjänstvillkors för Bing Maps-tjänsten. |
+| Egenskapsnamn | Värde | beskrivning |
+|---------------|-------|-------------|
+| Rubrik | Text | Rubriken för modulen. |
+| Läge | **Sök efter butiker** eller **Hämta i butik** | **Sök butiker**-läget visar tillgängliga butiker. **Hämta i butik**-läge låter användarna välja en butik för upphämtning. |
+| Format | **Dialog** eller **infogad** | Modulen kan återges i antingen infogade eller i en dialogruta. |
+| Ange som önskad butik | **Sant** eller **falskt** | När den här egenskapen har angetts till **True** kan användare ange en prioriterad butik. Den här funktionen kräver att användarna accepterar ett meddelande om cookie-tillstånd. |
+| Visa alla butiker | **Sant** eller **falskt** | När den här egenskapen har angetts till **True** kan användare förbigå egenskapen **sökradie** och visa alla butiker. |
+| Alternativ för automatiska förslag: Max resultat | Antal | Den här egenskapen anger det högsta antalet resultat för automatiska förslag som kan visas via Bing automatiska förslag-API. |
+| Sök radie | Antal | Den här egenskapen definierar sökradien för butiker, i mil. Om inget värde anges används standardsökradien 50 mil. |
+| Användarvillkor | URL |  Den här egenskapen anger den användarvillkor-URL som krävs för att använda Bing Maps-tjänsten. |
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Lägg till modulen för butiksväljare till en sida
 
-En modulen för butiksväljare behöver kontexten för en produkt, så den kan bara användas i köp- och vagnmoduler. Modulen för butiksväljare fungerar inte utanför dessa moduler.
+För **upphämtning i butik**-läge kan modulen bara användas på PDP och kundvagnssidor. Du måste ställa in läget för **upphämtning i butik** i modulens egenskapsfönster.
 
 - Mer information om hur du lägger till en modulen för butiksväljare i en modul för inköpsruta finns i [modul för inköpsruta](add-buy-box.md). 
 - Mer information om hur du lägger till en modulen för butiksväljare i en vagnmodul i [vagnmodul](add-cart-module.md)
 
+Om du vill konfigurera modulen för butiksväljaren att visa tillgängliga butiker för en sida för lagringsplatser, som i bilden som visas tidigare i det här avsnittet följer du stegen nedan.
+
+1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
+1. I dialogrutan **Ny mal** under **Mallnamn**, ange **Marknadsföringsmall** och välj sedan **OK**.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
+1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
+1. I dialogrutan **Välj en mall** väljer du en **Marknadsföringsmall**. Under **sidnamn**, ange **Butiksplatser** och klicka sedan på **OK**.
+1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare** och klicka sedan på **OK**.
+1. I facket **behållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Behållare med 2 kolumner** och klicka sedan på **OK**.
+1. I modulens egenskapsfönster, ange värdet **Bredd** till **Fyll behållare**.
+1. Ställ in värdet för **X-Small visningsport kolumnkonfiguration** till **100%**.
+1. Ställ in värdet för **Small visningsport kolumnkonfiguration** till **100%**.
+1. Ställ in värdet för **Medium visningsport kolumnkonfiguration** till **33% 67%**.
+1. Ställ in värdet för **Large visningsport kolumnkonfiguration** till **33% 67%**.
+1. I facket **Behållare med 2 kolumner** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul** välj modulen **butiksväljare** och sedan **OK**.
+1. I modulens egenskapsfönster, ange värdet **Läge** till **Hitta butiker**.
+1. Ange värdet **sökradie** i mil.
+1. Ange andra egenskaper, t.ex. **Ange som prioriterad butik**, **Visa alla butiker** och **Aktivera automatiskt förslag** efter behov.
+1. I facket **Behållare med 2 kolumner** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
+1. I dialogrutan **Lägg till modul**, välj modulen **Karta** och klicka sedan på **OK**.
+1. Ange eventuella ytterligare egenskaper efter behov i modulens egenskapsfönster.
+1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den.
+ 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Startpaket – översikt](starter-kit-overview.md)
@@ -80,4 +139,8 @@ En modulen för butiksväljare behöver kontexten för en produkt, så den kan b
 
 [Ställ in leveranssätt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Hantera Bing Maps för din organisation](dev-itpro/manage-bing-maps.md)
+[Hantera Bing-kartor för din organisation](dev-itpro/manage-bing-maps.md)
+
+[Bing Maps REST API:er](https://docs.microsoft.com/bingmaps/rest-services/)
+
+[Kartmodul](map-module.md)

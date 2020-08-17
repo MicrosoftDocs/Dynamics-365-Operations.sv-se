@@ -3,7 +3,7 @@ title: Översikt över betalningar i flera kanaler
 description: Det här ämnet innehåller en översikt betalningar i flera kanaler i Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2251e523f7dfa3a06f0c45a4e156dbe097587f9a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024129"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613187"
 ---
 # <a name="omni-channel-payments-overview"></a>Översikt över betalningar i flera kanaler
 
@@ -68,11 +68,13 @@ Följande komponenter och inställningssteg krävs:
 
 - **eCommerce-integration** : en integration med Handel krävs för att stödja scenarier där en order kommer från en onlinebutik. Mer information om Retail E-commerce SDK finns i [SKD (Software Development Kit) för e-handelsplattform](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I en demomiljö har referensbutiken stöd för betalningsscenarier i flera kanaler. 
 - **Konfiguration av onlinebetalningar:** inställningarna för onlinekanal måste inkludera en betalningsanslutning som har uppdaterats för att stödja betalningar i flera kanaler. Alternativt kan den färdiga betalningssndlutningen användas. Information om hur du konfigurerar Adyen för betalningsanslutning för onlinebutiker finns i [Adyen betalningsanslutning](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce) Förutom de inställningssteg för e-handel som beskrivs i det avsnittet, måste parametern **Tillåt att spara betalningsinformation i e-handel** anges till **Sant** i inställningarna för Adyen-anslutningen. 
-- **Konfiguration av betalningar i flera kanaler** I backoffice, gå till **Butik och handel \> Administrationsinställning \> Parametrar \> Gemensamma handelsparametrar**. sedan på fliken **Betalningar i flera kanaler** anger du alternativet **Använd betalningar i flera kanaler** till **Ja**.
+- **Konfiguration av betalningar i flera kanaler** I backoffice, gå till **Butik och handel \> Administrationsinställning \> Parametrar \> Gemensamma handelsparametrar**. sedan på fliken **Betalningar i flera kanaler** anger du alternativet **Använd betalningar i flera kanaler** till **Ja**. I Commerce versioner 10.0.12 och senare finns den här inställningen på arbetsytan **funktionshantering**. Välj funktionen **Betalningar i flera kanaler** och klicka på **Aktivera nu**. 
 - **Betalningstjänster:** Kundtjänst använder standardbetalningsanslutningen på sidan **betalningstjänster** för att bearbeta betalningar. Om du vill stödja scenarier som t.ex. "Köp i kundtjänst, hämta i butik" måste den här standardbetalningsanslutningen vara Adyen betalningsanslutning eller en betalningsanslutning som uppfyller implementeringskraven för betalningar i flera kanaler.
 - **EFT-tjänst** : betalningar via en betalningsterminal måste ställas in på snabbfliken **EFT** i maskinvaruprofilen. Adyen-anslutaren stöder färdiga scenarier för betalningar i flera kanaler. Andra betalningsanslutningar som stöder **iNamedRequestHandler**-gränssnittet kan även användas om de stöder betalningar i flera kanaler.
 - **Tillgänglighet för betalningsanslutning:** när en order återkallas, inkluderar betalningsmedelsraderna som återkallas tillsammans med ordernamnet på betalningsanslutningen som användes för att skapa de auktoriseringar som är associerade med ordern. När ordern är uppfylld försöker betalnings-SDK använda samma anslutnnig som du använde när du skapade den ursprungliga auktoriseringen. Därför måste en betalningsanslutning med samma handelsegenskaper finnas tillgänglig för insamling. 
 - **Korttyper:** för att scenarier ska fungera ordentligt måste varje kanal ha samma inställningar för betalningsmedelstyper som kan användas för flera kanaler. Dessa inställningar inkluderar betalningsmetod-ID:n och korttyp-ID:n. Om t.ex. **kortets** betalningsmedeltyp har ID **2** i inställningen för onlinebutik, ska det ha samma ID i butiksinställningarna. Samma krav gäller för kort typs-ID:n. Om kortnummer **12** är inställt på **VISA** i onlinebutiken ska samma ID ställas in för butiken. 
+- Retail Modern POS för Windows eller Android med inbyggd maskinvarustation -eller-
+- Modern POS för iOS eller Cloud POS med ansluten delad maskinvarustation. 
 
 ### <a name="basic-principle-supporting-omni-channel-payments"></a>Grundläggande princip som stöder betalningar i felra kanaler
 
@@ -100,8 +102,10 @@ I följande avsnitt beskrivs stegen för varje scenario och hur du kör scenario
 Innan du börjar måste du se till att följande förutsättningar är på plats:
 
 - Du har en referensbutik där Adyen-anslutning har konfigurerats.
-- Alternativet **Betalningar i flera kanaler** på sidan **Gemensamma handelsparametrar** är inställt på **Sant**.
+- Alternativet **Betalningar i flera kanaler** på sidan **Gemensamma handelsparametrar** är inställt på **Sant**. I senare versioner flyttas den här inställningen till arbetsytan **funktionshantering** där du kan välja funktionen **Betalningar i flera kanaler** och klicka på **Aktivera nu**. 
 - Adyen-betalnings anslutnng har konfigurerats för Houston kassaregistret.
+- Retail Modern POS för Windows eller Android med inbyggd maskinvarustation -eller-
+- Modern POS för iOS eller Cloud POS med ansluten delad maskinvarustation. 
 
 Följ dessa steg om du vill köra scenariet:
 
@@ -229,3 +233,5 @@ När en order som har flera betalningsmedel och flera rader hämtas, tar kassör
 
 - [Vanliga frågor om betalningar](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+

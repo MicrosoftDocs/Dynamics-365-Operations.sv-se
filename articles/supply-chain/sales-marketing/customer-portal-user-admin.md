@@ -3,7 +3,7 @@ title: Skapa och hantera kundportal användare
 description: I det här avsnittet beskrivs hur du skapar användarkonton för kundportal och ställer in behörigheter för dem.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3414011"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645323"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Skapa och hantera kundportal användare
 
@@ -30,11 +30,16 @@ Innan en användare kan använda en webbplats måste en kontaktpost skapas för 
 
 När användare själv registrerar sig skapas kontaktposter automatiskt för dem. Därför kan du inte se till att en användare väljer rätt kundkonto och juridisk person. Med inbjudan kan en administratör, å andra sidan, tilldela rätt kundkonto och juridisk person till kontaktposten innan en inbjudan skickas. Om du tänker anpassa lösningen så att användarna kan registrera sig själv bör du tänka på vilka konsekvenser du är.
 
+## <a name="video"></a>Video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+Videon [Bjud in kunder att registrera och använda kundportalen](https://youtu.be/drGUYHX9QIQ) (visas ovan) finns med på [Finance and Operations spellistan](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) på YouTube.
+
 ## <a name="prerequisite-setup"></a>Nödvändiga inställningar
 
 Kontakter i Power Apps-portaler lagras som poster i entiteten **kontakter** i Common Data Service. Vid dubbelriktad skrivning synkroniseras dessa poster med Microsoft Dynamics 365 Supply Chain Management efter behov.
 
-![![Systemdiagram för kundportalkontakter](media/customer-portal-contacts.png "Systemdiagram för kundportalkontakter")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![Systemdiagram för kundportalkontakter](media/customer-portal-contacts.png "Systemdiagram för kundportalkontakter")
 
 Innan du börjar bjuda in nya kunder måste du kontrollera att du har aktiverat mappning av entiteten **Kontakt** i dubbelriktad skrivning.
 

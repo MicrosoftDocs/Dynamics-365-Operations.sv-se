@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3ee74ba108008ccef53fe3b904c71ddf5f51afb7
-ms.sourcegitcommit: 137e2bd30f0a85bd2e1baf1cf16b993edd2094f9
+ms.openlocfilehash: 2f4506d2c1808198d4b10e50f4635bcc21d934e1
+ms.sourcegitcommit: 0f877ee4b53cfb002b179a53a67c4f9adae354bf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "3546464"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3640409"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurera nummerserier för lagerflöden
 
@@ -36,7 +36,7 @@ Denna funktion omfattar följande funktioner:
 - Fraktsedel-ID (BOL) kan genereras i förväg.
 - En unik nummerserie kan skapas för SSCC-nummer (Serial Shipping Container Code).
 - GS1-kompatibla nummerserier kan skapas för BOL- och SSCCa-nummer. Funktionen lägger till medföljande stöd för licens platta ID-nummer, behållar-ID, påfyllnadsetikett-ID och BOL-ID.
-- Konfiguration av ID-nummer är flexibel. Du kan t.ex. inkludera eller utesluta artificiell intelligens (AI), t.ex. inledande nollor (00).
+- Konfiguration av ID-nummer är flexibel. Du kan t.ex. inkludera eller utesluta appidentifierare (AI), t.ex. inledande nollor (00).
 
 Den här funktionen gör det effektivare att stödja märkning av kartonger och att justera nya nummer som skapas av systemet.
 

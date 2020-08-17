@@ -3,7 +3,7 @@ title: Inställningar för parametrar för kredithantering
 description: I det här avsnittet beskrivs alternativen som du kan använda för att konfigurera kredithantering efter företagets behov.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c4930d346ddc4679e6a3196c5f35adb598ed38c1
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154538"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651915"
 ---
 # <a name="credit-management-parameters-setup"></a>Inställningar för parametrar för kredithantering
 
@@ -34,7 +34,7 @@ Det finns fyra snabbflikar i avsnittet **Kredit** där du kan ändra parametrarn
 
 ### <a name="credit-holds"></a>Kreditspärrar
 
-- Ange alternativet **Tillåt redigering av försäljningsordervärden efter att orderspärren frisläppts** till **Ja** om du vill att bokföringsreglerna ska kontrolleras igen om försäljningsorderns värde (utökat pris) har ändrats sedan försäljningsordern släpptes från den spärrade listan. .
+- Ange alternativet **Tillåt redigering av försäljningsordervärden efter att orderspärren frisläppts** till **Nej** om du vill att bokföringsreglerna ska kontrolleras igen om försäljningsorderns värde (utökat pris) har ökat sedan försäljningsordern släpptes från den spärrade listan. .
 - I fältet **orsaker till annullerade order** väljer du den frisläppningsorsak som kommer att användas som standard när en försäljningsorder som hade kredithanteringsspärr annulleras.
 - Ange alternativet **Kontrollera kundkreditgruppernas kreditgräns** till **JA** för att kontrollera kreditgränsen för en kundkreditgrupp när kunden på en försäljningsorder tillhör en kundkreditgrupp. Kreditgränsen för gruppen kommer att kontrolleras och om det behövs, kontrolleras kreditgränsen för kunden.
 - Ange alternativet **Kontrollera kreditgräns när betalningsvillkoren ökas** till **Ja** för att kontrollera betalningsvillkoren rankning för att avgöra om betalningsvillkoren i försäljningsordern skiljer sig från standardbetalningsvillkoren för kunden. Om de nya betalningsvillkoren har en högre rangordning än de ursprungliga betalningsvillkoren placeras ordern i en kredithanteringsspärr.

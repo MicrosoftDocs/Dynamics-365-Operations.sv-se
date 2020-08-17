@@ -3,7 +3,7 @@ title: Översikt över ekonomisk rapportering
 description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/10/2020
+ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
-ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
+ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
+ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3609599"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "3618048"
 ---
 # <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
 
@@ -87,24 +87,16 @@ När en användare har lagts till eller om en roll ändras får användaren åtk
 ## <a name="report-deletions-and-expirations"></a>Rapportborttagningar och förfallodatum
 Användare som skapar en rapport kan ta bort sina egna rapporter. Användare med programbehörigheten **Underhåll säkerhet för ekonomiska rapporter** kan ta bort andras rapporter. 
 
-Från och med 10.0.7 frisläppning har begreppet utgångsdatum införts. En ny obligatorisk funktion kommer att aktiveras i arbetsytan funktionshantering. Den här funktionen innehåller följande ändringar:
-
-* Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras.
-* Alla befintliga rapporter från innan funktionen installerades kommer att ges en förfalloperiod på 90 dagar. Datumet kan visas som tomt under en kort tidsperiod tills den ekonomiska rapporteringstjänsten körs, en rapport genereras och tjänsten utför uppdateringen till befintliga rapporter med ett tomt förfallodatum. 
-* Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning:
-   * Ett förfallodatum på 90 dagar
-   * Ett alternativ för att ange att rapporten aldrig ska upphöra att gälla
-
-När ett förfallodatum som 90 dagar väljs, beviljar det 90 dagar från idag, vilket är annorlunda än de 90 dagar från det ursprungliga genereringsdatumet som angetts under rapportgenerering. I version 10.0.8 har utgångsdatum fastställts. En ny nödvändig funktion kommer att aktiveras på sidan **Alla** på arbetsytan funktionshantering. Den **ekonomiska rapporten över lagringsprinciper** innehåller följande ändringar:
+I version 10.0.8 har utgångsdatum fastställts. En ny nödvändig funktion kommer att aktiveras på sidan **Alla** på arbetsytan funktionshantering. Den **ekonomiska rapporten över lagringsprinciper** innehåller följande ändringar:
 * Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras
 * Alla befintliga rapporter från innan funktionen installerades kommer att ges en förfalloperiod på 90 dagar. Datumet kan visas som tomt under en kort tidsperiod tills den ekonomiska rapporteringstjänsten körs, en rapport genereras och tjänsten utför uppdateringen till befintliga rapporter med ett tomt förfallodatum. 
 * Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning: 
   * Ett förfallodatum på 90 dagar.
   * Ett alternativ för att ange att rapporten aldrig ska upphöra att gälla.
   
-Ytterligare alternativ kommer att beaktas i framtida funktioner. Giltighetstiden på 90 dagar blir standardvärdet, och användare med rätt behörighet kan åsidosätta standardvärdet på listsidan **ekonomirapporter**.    
+När ett förfallodatum, t.ex. 90 dagar, har valts används 90 dagar från idag. Detta är ett annat beteende än 90 dagar från det ursprungliga genereringsdatum som angavs när rapporten genererades. 
   
-När ett förfallodatum som 90 dagar väljs, beviljar det 90 dagar från idag, vilket är annorlunda än de 90 dagar från det ursprungliga genereringsdatumet som angetts under rapportgenerering. 
+Ytterligare alternativ kommer att beaktas i framtida funktioner. Giltighetstiden på 90 dagar blir standardvärdet, och användare med rätt behörighet kan åsidosätta standardvärdet på listsidan **ekonomirapporter**.    
 
 ## <a name="default-reports"></a>Standardrapporter
 Ekonomisk rapportering innehåller 22 standardrapporter. Varje rapport använder standardkategorierna för huvudkonton. Du kan använda dessa rapporter som de är eller som utgångspunkt för din ekonomiska rapportering. Utöver de traditionella boksluten, som till exempel resultaträkning och balansräkning, inkluderar dessa standardrapporter rapporter som visar andra typer av ekonomiska rapporter som du kan skapa. 
@@ -153,7 +145,7 @@ Problem 1: Rapportdesigner startar inte när du väljer **ny** eller **Redigera*
 * Arbetsstationer måste installera Visual Studio.NET 4.6.2 eller senare.
 
 Den här versionen av Microsoft .NET Framework kan hämtas och installeras från [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Om du använder webbläsaren Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Om du inte kan logga in med Chrome kan du försöka med att följa de installationssteg som beskrivs i nummer 1 med Internet Explorer eller Edge. 
+* Om du använder webbläsaren Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Om du inte kan logga in med Chrome kan du försöka med att följa de installationssteg som beskrivs i nummer 1 med Internet Explorer eller Edge-webbläsare. 
 
 Problem 2: användaren har inte tilldelats de behörigheter som krävs för att använda Financial Reporting. 
 

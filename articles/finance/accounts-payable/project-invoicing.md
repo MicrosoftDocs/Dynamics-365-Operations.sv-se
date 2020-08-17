@@ -1,9 +1,9 @@
 ---
 title: Projektfakturering
-description: Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
-author: ShylaThompson
+description: Det här ämnet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
+author: TaylorVH
 manager: AnnBe
-ms.date: 10/24/2017
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,20 @@ ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
-ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
+ms.search.validFrom: 2020-07-06
+ms.dyn365.ops.version: AX 10.0.13
+ms.openlocfilehash: eab7523296996709dfe7407c582e61e28b7d4f23
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331382"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651602"
 ---
 # <a name="project-invoicing"></a>Projektfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
+Det här ämnet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 
 Projekttypen bestämmer vilken faktureringsprocedur som ska användas. Endast de två externa projekttyperna, Tid och material och Fastpris, går att fakturera. Tids- och materialprojekt och fastprisprojekt är alltid kopplade till ett projektkontrakt.
 
@@ -47,7 +47,7 @@ Innan du skapar en kundfaktura för ett projekt kan du skapa en preliminär fakt
 
 ### <a name="creating-invoice-proposals"></a>Skapar fakturaförslag
 
-Du kan skapa fakturaförslag, genom att manuellt välja från en lista över transaktioner för ett visst projekt. Du kan även ställa in faktureringsregler som anger när du automatiskt vill skapa ett förslag faktura. Du kan till exempel skapa en faktureringsregel om du vill skapa ett fakturaförslag när arbetet med ett projekt är 25 procent, 50 procent, 75 procent och 100 procent slutfört. 
+Du kan skapa fakturaförslag, genom att manuellt välja en transaktion från en lista över tillgängliga transaktioner för ett visst projekt. Du kan även ställa in faktureringsregler som anger när du automatiskt vill skapa ett fakturaförslag. Du kan till exempel skapa en faktureringsregel om du vill skapa ett fakturaförslag när arbetet med ett projekt är 25 procent, 50 procent, 75 procent och 100 procent slutfört. 
 
 Fakturaförslag kan skapas för följande transaktioner:
 
@@ -57,11 +57,11 @@ Fakturaförslag kan skapas för följande transaktioner:
 -   Belopp som en kund betalar dig innan ett projekt har startats
 
 > [!NOTE]
-> Med funktionen **Aktivera sortering per resurs under skapande av projektfakturaförslag** kan projektrevisorn sortera de projekttransaktioner som är tillgängliga för fakturering av resursen när ett nytt projektfakturaförslag skapas. Rutnätet som visar de tillgängliga projekt transaktionerna har ett separat fält för resurs-ID och resurs, så att användaren kan filtrera och sortera efter resursnamnet. Den här funktionen är inaktiverad som standard och kan aktiveras i **arbetsytor > funktionshantering**. Kontakta systemadministratören om du vill ha hjälp med att aktivera den här funktionen.
+> Med funktionen **Aktivera sortering per resurs under skapande av projektfakturaförslag** kan projektrevisorn sortera de projekttransaktioner som är tillgängliga för fakturering av resursen när ett nytt projektfakturaförslag skapas. Rutnätet som visar de tillgängliga projekttransaktionerna kommer att ha separata fält för **resurs-ID** och **resurs**. Med hjälp av dessa fält kan du filtrera och sortera resursnamnet. Den här funktionen är inaktiverad som standard. Den kan aktiveras med hjälp av sidan **Funktionshantering** (**Arbetsytan > funktionshantering**). Kontakta systemadministratören om du vill ha hjälp med att aktivera den här funktionen.
 
 Du kan du skapa avgiftstransaktioner i ett fakturaförslag. Du kan också ändra försäljningspriset på tim-, utgifts-, artikel- och avgiftstransaktioner. När du bokför ett fakturaförslag kommer de uppdaterade priserna och transaktionerna att läggas till i projektrapporter och transaktionshistoriken. 
 
-För att skapa flera kundfakturor för ett projekt måste du skapa ett fakturaförslag för varje faktura. Du kan till exempel skapa fakturor som baseras på transaktionstyp. För att ange timmar på en kundfaktura och artiklar på en annan, måste du skapa separata fakturaförslag för timtransaktioner och avgiftstransaktioner. 
+För att skapa flera kundfakturor för ett projekt måste du skapa ett fakturaförslag för varje faktura. Du kan till exempel skapa fakturor som baseras på transaktionstyp. För att ange timmar på en kundfaktura och artiklar på en annan faktura måste du skapa separata fakturaförslag för timtransaktioner och avgiftstransaktioner. 
 
 Om ett projekt har mer än en finansieringskälla kan du skapa ett separat fakturaförslag för varje finansieringskälla. På sidan **Finansieringsregelallokeringar** kan du definiera procentadel av transaktionsbeloppet att tilldela varje finansieringskälla och källan till bokföring av avrundningsdifferenser.
 
@@ -69,17 +69,20 @@ Om ett projekt har mer än en finansieringskälla kan du skapa ett separat faktu
 
 När du har skapat och bokfört ett fakturaförslag skapas en kundfaktura automatiskt för de transaktioner som ingår i fakturaförslaget. 
 
-Innan du bokför ett fakturaförslag kan du lägga till eller ta bort transaktioner i det. Du kan till exempel ta bort utgiftstransaktioner som bokfördes i ett projekt, men som inte kan debiteras kunden. 
+Innan du bokför ett fakturaförslag kan du lägga till eller ta bort transaktioner i det. Du kan till exempel ta bort utgiftstransaktioner som bokförts i ett projekt, men inte kan debiteras kunden. 
 
-Om din organisation kräver att fakturaförslag granskas innan de bokförs, kan fakturaförslaget behöva godkännas med arbetsflödet Granska projektfakturaförslag innan det bokförs.
+Om din organisation kräver att fakturaförslag granskas innan de bokförs, kan du behöva godkännas med arbetsflödet Granska projektfakturaförslag innan det bokförs.
+
+### <a name="view-grant-information-on-project-invoice-list-pages"></a>Visa anslagsinformation på listsidor för projektfakturor
+
+Användare i offentlig sektor kan lägga till **anslags-ID** och **anslagsnamn** på **listsidorna för projektfakturaförslag** och **projektfakturor**. Dessa kolumner aktive ras med funktionen **Lägg till anslagsinformation till listsidor för projektfakturor**. Den här funktionen är inaktiverad som standard och kan aktiveras i  **arbetsytor > funktionshantering**. Kontakta systemadministratören om du vill ha hjälp med att aktivera den här funktionen.
 
 ## <a name="on-account-invoicing"></a>A conto-fakturering
 Det belopp som du anger i en à conto-faktura för ett projekt baseras på timingen, slutförandeprocenten och andra faktureringsvillkor som anges i det relaterade projektkontraktet. Beloppet beräknas inte utifrån de timmar, artiklar, utgifter eller avgifter som bokförts till projektet. 
 
-Du måste först skapa en à conto-transaktion för ett Tid och material-projekt eller ett Fastpris-projekt, innan du kan lägga till det i à conto-transaktionen på en projektfaktura. På à conto-transaktionen anger du beloppet att fakturera en kund. Skapa en preliminär faktura (fakturaförslag) om du vill skapa en projektfaktura för beloppet. Välj à-conto-transaktionen i fakturaförslaget. Du kan granska à conto informationen i fakturaförslaget, innan du skapar en faktura för den projekt.
+Du måste först skapa en à conto-transaktion för ett Tid och material-projekt eller ett Fastpris-projekt, innan du kan lägga till det i à conto-transaktionen på en projektfaktura. På à conto-transaktionen anger du beloppet att fakturera en kund. Skapa en preliminär faktura (fakturaförslag) om du vill skapa en projektfaktura för beloppet. Välj à-conto-transaktionen i fakturaförslaget. Du kan granska à conto informationen i fakturaförslaget, innan du skapar en faktura för den projekt. 
 
 ### <a name="fixed-price-projects"></a>Fastprisprojekt
-
 För fastprisprojekt baseras à conto-transaktioner på en avtalad milstolpe, leveransenhet eller delfaktureringsarrangemang som anges i ett projektkontrakt. En rad skapas för varje betalning som måste tas emot från projektkunden. Inga avdrag krävs.
 
 ### <a name="time-and-material-projects"></a>Tids- och materialprojekt
@@ -108,10 +111,10 @@ Du kan till exempel ställa in följande faktureringstidsplan:
 När milstolpsbetalningarna är klara att faktureras använder du proceduren för att fakturera à conto-belopp.
 
 ## <a name="vendor-invoicing"></a>Fakturering av leverantör
-När du har beställt en artikel från en leverantör och tilldelar artikeln till ett projekt, bestämmer radegenskapen som du väljer för inköpsorderraden för den artikeln, om den inköpta artikeln ska faktureras till en kund. Om du ställer in standardegenskaperna visas de för artikeln på inköpsorderraden (Radinformation &gt; Projekt &gt; Radegenskap). Det finns två sätt att ändra radegenskapen:
+När du har beställt en artikel från en leverantör och tilldelar artikeln till ett projekt, bestämmer radegenskapen som du väljer för inköpsorderraden för den artikeln, om den inköpta artikeln ska faktureras till en kund. Om du ställer in standardegenskaperna visas de för artikeln på inköpsorderraden Radinformation (**Radinformation > Projekt > Radegenskapsbelopp**). Det finns två sätt att ändra radegenskapen:
 
--   Fakturera projektets kund för artikeln: Ange radegenskapen för artikeln till ett debiterbart värde på inköpsordern och fakturera sedan kunden genom att använda rätt projektfaktureringsmetod.
--   Fakturera inte projektets kund för artikeln: Välj inte radegenskapen **Debiterbar** på inköpsorderraden för artikeln. Det går sedan att fakturera inköpsordern och inga vidare åtgärder krävs.
+-   Fakturera projektets kund för artikeln. För att göra detta ange radegenskapen för artikeln till ett debiterbart värde på inköpsordern och fakturera sedan kunden genom att använda rätt projektfaktureringsmetod.
+-   Fakturera inte projektets kund för artikeln. Det gör du genom att inte välja den **debiterbara** radegenskapen på inköpsorderraden för artikeln. Det går sedan att fakturera inköpsordern och inga vidare åtgärder krävs.
 
 > [!NOTE] 
 > Frisläpp av kvarhållningsrader är inte debiterbara som standard. Det innebär att möjlighet att skapa ett fakturaförslag för den frisläppta kvarhållningen inte är aktiverad.
@@ -119,7 +122,7 @@ När du har beställt en artikel från en leverantör och tilldelar artikeln til
 ## <a name="credit-notes"></a>Kreditfakturor
 När ett belopp på en kundfaktura har ett negativt värde klassificeras fakturan som en kreditfaktura. När dokumentet skrivs ut har det rubriken Kreditfaktura. 
 
-När du skapar en kreditfaktura för att kreditera ett belopp som tidigare fakturerats, måste du först välja det fakturerade beloppet för kreditering. Därefter skapar du en kreditfaktura genom att följa samma procedur som du använder för att skapa en vanlig kundfaktura. Du måste alltså välja transaktionerna som tidigare har bokförts i en kundfaktura och sedan skapa och bokföra ett kreditfakturaförslag. 
+När du skapar en kreditfaktura för att kreditera ett belopp som tidigare fakturerats, måste du först välja det fakturerade beloppet för kreditering. Därefter skapar du en kreditfaktura genom att följa samma procedur som du använder för att skapa en vanlig kundfaktura. Du måste välja transaktionerna som tidigare har bokförts i en kundfaktura och sedan skapa och bokföra ett kreditfakturaförslag. 
 
 Samma dokument kan inkludera transaktioner som markerat för kreditering, kredittransaktioner och transaktioner som har bokförts. Dokumentet klassificeras antingen som en faktura eller en kreditfaktura beroende på om totalsumman är positiv eller negativ. 
 

@@ -18,16 +18,15 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e06a0e0289e8c0c718aff4beab2c7a6ceb0a8cb1
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: 1097289d339b84aa477752934afe8192e56c5ce5
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417264"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621094"
 ---
 # <a name="accordion-module"></a>Dragspelsmodulen
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet handlar om dragspelsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.

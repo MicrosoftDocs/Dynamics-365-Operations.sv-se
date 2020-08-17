@@ -3,7 +3,7 @@ title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431370"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651700"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
@@ -128,20 +128,47 @@ Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du
 
 Alla efterföljande användarsessioner börjar med att aktivera nya rutnätskontrollen.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvecklare] Avanmäl individuella sidor från att använda det nya rutnätet 
+Om din organisation hittar en sida med vissa problem med att använda det nya rutnätet, finns det en API som gör det möjligt för ett enskilt formulär att använda den gamla rutnätskontrollen samtidigt som resten av systemet tillåter att den nya rutnätskontrollen används. Om du vill välja en enskild sida från det nya rutnätet lägger du till följande samtalspost `super()` i formulärets `run()`-metod.
+
+        this.forceLegacyGrid();
+
+Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Rapportera alla problem till Microsoft som kräver att detta API används. 
+
 ## <a name="known-issues"></a>Kända problem
 Det här avsnittet innehåller en lista med kända problem för den nya rutnätskontrollen medan funktionen är i förhandsgranskningsläge.  
 
 ### <a name="open-issues"></a>Öppna ärenden
+-  När funktionen för **ny rutnätskontroll** aktiveras fortsätter vissa sidor att använda den befintliga rutnätskontrollen. Detta sker i följande situationer:  
+    -  Det finns en kortlista på sidan som renderas i flera kolumner.
+    -  Det finns en grupperad kortlista på sidan.
+    -  En rutnätskolumn med en icke-reagerande utökningsbar kontroll.
 
-- Kortlistor som återges som flera kolumner återges nu som en enda kolumn.
-- Grupperade listor återges inte som grupper eller i separata kolumner.
+    När en användare först stöter på en av dessa situationer, visas ett meddelande om att sidan ska uppdateras. När det här meddelandet visas fortsätter sidan att använda det befintliga rutnätet för alla användare tills nästa versionsuppdatering av produkten sker. En bättre hantering av dessa scenarier, så att det nya rutnätet kan användas, övervägs för framtida uppdateringar.     
 
 ### <a name="fixed-as-part-of-10013"></a>Korrigerat som en del av 10.0.13
 
-> [!NOTE]
-> Följande information finns tillgänglig så att du kan planera i enlighet med detta. Mer information om målinriktad publicering av version 10.0.13 finns i [Tillgänglighet för tjänstuppdateringar](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Knappbeskrivningar visas inte för bilder.
+-  [Fel 470173] Kryssrutor på inaktiva rader växlar när användaren klickar på blanksteg i cellen
+-  [Fel 474848] Utökade förhandsgranskningar med rutnät visas inte
+-  [Fel 474851] Hyperlänkar i referensgruppskontroller fungerar inte 
+-  [Fel 471777] Det går inte att markera fält i ett rutnät för att redigera eller skapa en mobilapp
+-  [KB 4569441] Problem med återgivning av kortlistor för flera kolumner, knappbeskrivningar på bilder och visningsalternativ för vissa fält
+-  [KB 4575279] Alla markerade rader raderas inte i redovisningsjournalen
+-  [KB 4575233] Visningsalternativ återställs inte efter flyttning till en annan rad
+-  [KB 4571095] Bokföring av produktinleverans sker när användaren råkar trycka på retur (korrekt hantering av sidans standardåtgärd)
+-  [KB 4575437] Sökningar med redigerbara kontroller stängs oväntat
+-  [KB 4569418] Formuläret duplicerad rad har skapats i leveransschemaformuläret
+-  [KB 4575435] Förbättrad förhandsgranskning är ibland även om muspekaren inte är nära fältet
+-  [KB 4575434] Sökningen filtreras inte när fältet har ändrats
+-  [KB 4575430] Värden i lösenordsfält maskeras inte i rutnätet
+-  [KB 4569438] "Bearbetning har avbrutits på grund av ett valideringsproblem" visar efter markeringsrader under kvittning av leverantörstransaktioner
+-  [KB 4569434] Att uppdatera formuläret juridiska personer resulterar i färre poster
+-  [KB 4575297] Fokus flyttas till fönstret uppgiftsinspelaren när du redigerar och tabbar genom ett rutnät
+-  [KB 4566773] Korrigeringstransaktioner som inte visas som negativa på transaktioner i verifikationstransaktioner 
+-  [KB 4575288] Fokus återställs till den aktiva raden när kantlinjen mellan raderna i en enkel lista markeras
+-  [KB 4575287] Fokus återgår inte till den första kolumnen när du använder nedpil för att skapa en ny rad i journaler
+-  [KB 4564819] Det går inte att ta bort rader i en fritext faktura (eftersom datakällan ChangeGroupMode=ImplicitInnerOuter)
+-  [KB 4563317] Knappbeskrivningar/förbättrade förhandsgranskningar visas inte för bilder
 
 ### <a name="fixed-as-part-of-10012"></a>Korrigerat som en del av 10.0.12
 
@@ -158,6 +185,7 @@ Det här avsnittet innehåller en lista med kända problem för den nya rutnäts
 - [KB 4562647] Fokus återställs till den första kontrollen i dialogrutan **publicera** efter att en ny rad har lagts till i rutnätet för säkerhetsroller.
 - [KB 4563310] Den utökade förhandsgranskningen stängs inte efter att en rad har ändrats.
 - [KB 4563313] Ett oväntat klientfel inträffar i Internet Explorer när ett värde väljs i en sökning.
+- [KB 4564557] Uppslag och nedrullningsbara menyer öppnas inte i Internet Explorer
 - [KB 4563324] Navigeringen fungerar inte när arbetsytan **personalhantering** har öppnats.
 
 ### <a name="fixed-as-part-of-10011"></a>Korrigerat som en del av 10.0.11

@@ -3,7 +3,7 @@ title: Konfigurera Common Data Service-integrering
 description: Du kan aktivera eller inaktivera integration mellan Common Data Service och Dynamics 365 Human Resources. Du kan också visa synkroniseringsinformation, ta bort uppföljningsdata och synkronisera om en enhet för att hjälpa till att felsöka data från de två miljöerna.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431324"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621314"
 ---
 # <a name="configure-common-data-service-integration"></a>Konfigurera Common Data Service-integrering
 
@@ -66,6 +66,9 @@ Du kanske vill inaktivera integration i följande situationer:
 - Om du vill stänga av integrationen ställer du in alternativet på **Nej**.
 
 [![Aktivera eller inaktivera Common Data Service-integreringen](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> Vi rekommenderar att du inaktiverar Common Data Service integration när du utför dataflyttningsuppgifter. Stora dataöverföringar kan påverka prestanda betydligt. Exempelvis kan överföringar av 2 000 arbetare ta flera timmar när integreringen är aktiverad och mindre än en timme när den är inaktiverad. Siffrorna i det här exemplet är endast avsedda som demonstrationer. Hur lång tid det tar att importera poster kan variera kraftigt baserat på många faktorer.
 
 ## <a name="view-data-integration-details"></a>Visa information om dataintegrering
 
