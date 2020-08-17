@@ -1,252 +1,302 @@
 ---
-title: Policyer för lagerarbete – översikt
-description: Policyer för lagerställearbete styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.
-author: johanhoffmann
+title: Arbetspolicyer
+description: Det här avsnittet innehåller information om hur du ställer in arbetspolicyer.
+author: perlynne
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
-ms.custom: 196561
-ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3fe22a92b445abbf6d1dcc67ead878db3f80d532
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.author: perlynne
+ms.search.validFrom: 2020-07-31
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 5ea93324547ed81df120db3412ee41fce2a93f4a
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204572"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652015"
 ---
-# <a name="warehouse-work-policies-overview"></a><span data-ttu-id="49d2e-103">Policyer för lagerarbete – översikt</span><span class="sxs-lookup"><span data-stu-id="49d2e-103">Warehouse work policies overview</span></span>
+# <a name="work-policies"></a><span data-ttu-id="fbc63-103">Arbetspolicyer</span><span class="sxs-lookup"><span data-stu-id="fbc63-103">Work policies</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="49d2e-104">Policyer för lagerställearbete styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.</span><span class="sxs-lookup"><span data-stu-id="49d2e-104">Warehouse work policies control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.</span></span>
+<span data-ttu-id="fbc63-104">I det här avsnittet beskrivs hur du ställer in systemet och lagerställeappen så att de stöder arbetspolicyer.</span><span class="sxs-lookup"><span data-stu-id="fbc63-104">This topic explains how to set up the system and the warehouse app so that they support work policies.</span></span> <span data-ttu-id="fbc63-105">Du kan använda den här funktionen för att snabbt registrera lager utan att skapa inlagringsarbete när du tar emot inköps- eller överföringsorder, eller när du avslutar tillverkningsprocesser.</span><span class="sxs-lookup"><span data-stu-id="fbc63-105">You can use this functionality to quickly register inventory without creating putaway work when you receive purchase or transfer orders, or when you complete manufacturing processes.</span></span> <span data-ttu-id="fbc63-106">Det här avsnittet innehåller allmän information.</span><span class="sxs-lookup"><span data-stu-id="fbc63-106">This topic provides general information.</span></span> <span data-ttu-id="fbc63-107">Detaljerad information som är relaterad till det mottagna ID-numret finns i [Inleverans av ID-nummer som erhålls via lagerställeappen](warehousing-mobile-device-app-license-plate-receiving.md).</span><span class="sxs-lookup"><span data-stu-id="fbc63-107">For detailed information that is related to license plate receiving, see [License plate receiving via the warehouse app](warehousing-mobile-device-app-license-plate-receiving.md).</span></span>
 
-<span data-ttu-id="49d2e-105">Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen.</span><span class="sxs-lookup"><span data-stu-id="49d2e-105">This work policy controls whether warehouse work is created for warehouse processes in manufacturing.</span></span> <span data-ttu-id="49d2e-106">Du kan ställa in arbetspolicyn genom att använda en kombination av **arbetsordertyper**, en **lagerplats** samt en **produkt**</span><span class="sxs-lookup"><span data-stu-id="49d2e-106">You can set up the work policy by using a combination of **work order types**, an **inventory location**, and a **product**.</span></span> <span data-ttu-id="49d2e-107">Exempelvis rapporteras produkt L0101 som färdig till utleveransplats 001.</span><span class="sxs-lookup"><span data-stu-id="49d2e-107">For example, product L0101 is reported as finished to output location 001.</span></span> <span data-ttu-id="49d2e-108">Den färdiga varan förbrukas senare i en annan produktionsorder på utleveransplats 001.</span><span class="sxs-lookup"><span data-stu-id="49d2e-108">The finished good is later consumed in another production order at output location 001.</span></span> <span data-ttu-id="49d2e-109">I det här fallet kan du ställa in en arbetspolicy för att förhindra arbete för inlagring av färdiga varor skapas när du rapporterar produkt L0101 som färdig till utleveransplats 001.</span><span class="sxs-lookup"><span data-stu-id="49d2e-109">In this case, you can set up a work policy to prevent the work for finished goods put-away from being created when you report product L0101 as finished to output location 001.</span></span> <span data-ttu-id="49d2e-110">Arbetspolicyn är en enskild enhet som kan beskrivas genom följande information:</span><span class="sxs-lookup"><span data-stu-id="49d2e-110">The work policy is an individual entity that can be described through the following information:</span></span>
+<span data-ttu-id="fbc63-108">En arbetspolicy styr om lagerarbete ska skapas när en tillverkad artikel rapporteras som färdig eller när varor tas emot med hjälp av lagerställeapp.</span><span class="sxs-lookup"><span data-stu-id="fbc63-108">A work policy controls whether warehouse work is created when a manufactured item is reported as finished, or when goods are received by using the warehouse app.</span></span> <span data-ttu-id="fbc63-109">Du ställer in varje arbetspolicy genom att definiera villkoren där den gäller: arbetsordertyper och processer, lagerstället och (valfritt) produkterna.</span><span class="sxs-lookup"><span data-stu-id="fbc63-109">You set up each work policy by defining the conditions where it applies: the work order types and processes, the inventory location, and (optionally) the products.</span></span> <span data-ttu-id="fbc63-110">En inköpsorder för produkt *A0001* måste tas emot på plats *RECV* i lagerstället *24*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-110">For example, a purchase order for product *A0001* must be received in location *RECV* in warehouse *24*.</span></span> <span data-ttu-id="fbc63-111">Senare förbrukas produkten i en annan process vid platsen *RECV*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-111">Later, the product is consumed in another process at location *RECV*.</span></span> <span data-ttu-id="fbc63-112">I det här fallet kan du ställa in en arbetspolicy för att förhindra att inlagringsarbete skapas när en arbetare rapporterar produkt *A0001* som inlevererad på plats *RECV*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-112">In this case, you can set up a work policy to prevent putaway work from being created when a worker reports product *A0001* as received in location *RECV*.</span></span>
 
--   <span data-ttu-id="49d2e-111">**Arbetspolicynamn**(den unika identifieraren för arbetspolicyn)</span><span class="sxs-lookup"><span data-stu-id="49d2e-111">**Work policy name** (the unique identifier of the work policy)</span></span>
--   <span data-ttu-id="49d2e-112">**Arbetsordertyper** och **Metod för skapande av arbetsuppgift**</span><span class="sxs-lookup"><span data-stu-id="49d2e-112">**Work order types** and **Work creation method**</span></span>
--   <span data-ttu-id="49d2e-113">**Lagerplatser**</span><span class="sxs-lookup"><span data-stu-id="49d2e-113">**Inventory locations**</span></span>
--   <span data-ttu-id="49d2e-114">**Produkter**</span><span class="sxs-lookup"><span data-stu-id="49d2e-114">**Products**</span></span>
+> [!NOTE]
+> - <span data-ttu-id="fbc63-113">Om en arbetspolicy ska vara aktiv måste du definiera minst en plats för den på snabbfliken **lagerplatser** på sidan **Arbetspolicyer**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-113">For a work policy to be active, you must define at least one location for it on the **Inventory locations** FastTab of the **Work policies** page.</span></span> 
+> - <span data-ttu-id="fbc63-114">Du kan inte ange samma plats för flera arbetspolicyer.</span><span class="sxs-lookup"><span data-stu-id="fbc63-114">You can't specify the same location for multiple work policies.</span></span>
+> - <span data-ttu-id="fbc63-115">Alternativet **Skriv ut etikett** för menyalternativ för mobila enheter kommer inte att skriva ut en ID-nummeretikett om inte ett arbete skapas.</span><span class="sxs-lookup"><span data-stu-id="fbc63-115">The **Print label** option for mobile device menu items won't print a license plate label unless work was created.</span></span>
 
-## <a name="work-order-types"></a><span data-ttu-id="49d2e-115">Typer av arbetsorder</span><span class="sxs-lookup"><span data-stu-id="49d2e-115">Work order types</span></span>
-<span data-ttu-id="49d2e-116">Du kan välja bland följande arbetsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="49d2e-116">You can select the following work order types:</span></span>
+## <a name="activate-the-features-in-your-system"></a><span data-ttu-id="fbc63-116">Aktivera funktionerna i systemet</span><span class="sxs-lookup"><span data-stu-id="fbc63-116">Activate the features in your system</span></span>
 
--   <span data-ttu-id="49d2e-117">Plats för slutförda varor</span><span class="sxs-lookup"><span data-stu-id="49d2e-117">Finished goods put away</span></span>
--   <span data-ttu-id="49d2e-118">Plats för samprodukt och biprodukt</span><span class="sxs-lookup"><span data-stu-id="49d2e-118">Co-product and by-product put away</span></span>
--   <span data-ttu-id="49d2e-119">Råmaterialhämtning</span><span class="sxs-lookup"><span data-stu-id="49d2e-119">Raw material picking</span></span>
+<span data-ttu-id="fbc63-117">Om du vill göra alla funktioner som beskrivs i det här avsnittet tillgängliga i systemet aktiverar du följande två funktioner i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):</span><span class="sxs-lookup"><span data-stu-id="fbc63-117">To make all the functionality that is described in this topic available in your system, turn on the following two features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):</span></span>
 
-<span data-ttu-id="49d2e-120">Fältet **Metod för att skapa arbete** har värdet **Aldrig**.</span><span class="sxs-lookup"><span data-stu-id="49d2e-120">The **Work creation method** field has the value **Never**.</span></span> <span data-ttu-id="49d2e-121">Det här värdet anger att arbetspolicyn förhindrar att arbetsuppgifter på lagerstället skapas för vald arbetsordertyp.</span><span class="sxs-lookup"><span data-stu-id="49d2e-121">This value indicates that the work policy will prevent warehouse work from being created for the selected work order type.</span></span>
+- <span data-ttu-id="fbc63-118">Förbättrad mottagning av registreringsskylt</span><span class="sxs-lookup"><span data-stu-id="fbc63-118">License plate receiving enhancements</span></span>
+- <span data-ttu-id="fbc63-119">Arbetspolicyförbättringar för inkommande arbete</span><span class="sxs-lookup"><span data-stu-id="fbc63-119">Work policy enhancements for inbound work</span></span>
 
-## <a name="inventory-locations"></a><span data-ttu-id="49d2e-122">Lagerplatser</span><span class="sxs-lookup"><span data-stu-id="49d2e-122">Inventory locations</span></span>
-<span data-ttu-id="49d2e-123">Du kan välja en plats som arbetspolicyn gäller för.</span><span class="sxs-lookup"><span data-stu-id="49d2e-123">You can select a location that the work policy applies to.</span></span> <span data-ttu-id="49d2e-124">Om ingen plats finns associerad med en arbetspolicy, gäller inte arbetspolicyn för några processer.</span><span class="sxs-lookup"><span data-stu-id="49d2e-124">If no location is associated with a work policy, the work policy doesn’t apply to any processes.</span></span> <span data-ttu-id="49d2e-125">På sidan **Locations** kan du också välja eller avbryta valet av arbetspolicy för en viss plats.</span><span class="sxs-lookup"><span data-stu-id="49d2e-125">On the **Locations** page, you can also select or cancel the selection of the work policy for a specific location.</span></span>
+## <a name="the-work-policies-page"></a><span data-ttu-id="fbc63-120">Sidan arbetspolicyer</span><span class="sxs-lookup"><span data-stu-id="fbc63-120">The Work policies page</span></span>
 
-## <a name="products"></a><span data-ttu-id="49d2e-126">Produkter</span><span class="sxs-lookup"><span data-stu-id="49d2e-126">Products</span></span>
-<span data-ttu-id="49d2e-127">Du kan välja en produkt som arbetspolicyn gäller för.</span><span class="sxs-lookup"><span data-stu-id="49d2e-127">You can select a product that the work policy applies to.</span></span> <span data-ttu-id="49d2e-128">Du kan använda arbetspolicyn antingen på alla produkter eller på utvalda produkter.</span><span class="sxs-lookup"><span data-stu-id="49d2e-128">You can apply the work policy to either all products or selected products.</span></span>
+<span data-ttu-id="fbc63-121">Om du vill ställa in arbetspolicyer går du till **Hantering av distributionslager \> inställningar \> arbete \> arbetspolicyer**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-121">To set up work policies, go to **Warehouse management \> Setup \> Work \> Work policies**.</span></span> <span data-ttu-id="fbc63-122">Ställ sedan in fälten enligt beskrivningen i följande underavsnitt på varje snabbflik.</span><span class="sxs-lookup"><span data-stu-id="fbc63-122">Then, on each FastTab, set the fields as described in the following subsections.</span></span>
 
-## <a name="example"></a><span data-ttu-id="49d2e-129">Exempel</span><span class="sxs-lookup"><span data-stu-id="49d2e-129">Example</span></span>
-<span data-ttu-id="49d2e-130">I följande exempel finns det två produktionsorder, PRD-001 och PRD-00*2*.</span><span class="sxs-lookup"><span data-stu-id="49d2e-130">In the following example, there are two production orders, PRD-001 and PRD-00*2*.</span></span> <span data-ttu-id="49d2e-131">Produktionsorder PRD-001 har en åtgärd med namnet **Sammansättning**, där produkten SC1 rapporterats som färdig till plats O1.</span><span class="sxs-lookup"><span data-stu-id="49d2e-131">Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1.</span></span> <span data-ttu-id="49d2e-132">Produktionsorder PRD-002 har en åtgärd med namnet **Painting** och förbrukar produkten SC1 från platsen O1.</span><span class="sxs-lookup"><span data-stu-id="49d2e-132">Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1.</span></span> <span data-ttu-id="49d2e-133">Produktionsorder PRD-002 förbrukar även råmaterial RM1 från platsen O1.</span><span class="sxs-lookup"><span data-stu-id="49d2e-133">Production order PRD-002 also consumes raw material RM1 from location O1.</span></span> <span data-ttu-id="49d2e-134">RM1 lagras på lagerställeplats och BULK-001 och plockas till platsen O1 av lagerställets arbetsuppgift för plockning av råmaterial.</span><span class="sxs-lookup"><span data-stu-id="49d2e-134">RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking.</span></span> <span data-ttu-id="49d2e-135">Plockningsarbetet skapas när produktion PRD-002 frisläpps.</span><span class="sxs-lookup"><span data-stu-id="49d2e-135">The picking work is generated when production PRD-002 is released.</span></span> 
+### <a name="the-work-order-types-fasttab"></a><span data-ttu-id="fbc63-123">Snabbfliken arbetsordertyper</span><span class="sxs-lookup"><span data-stu-id="fbc63-123">The Work order types FastTab</span></span>
 
-<span data-ttu-id="49d2e-136">[![Policyer för lagerarbete](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span><span class="sxs-lookup"><span data-stu-id="49d2e-136">[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span></span> 
+<span data-ttu-id="fbc63-124">På snabbfliken **arbetsordertyper** kan du lägga till alla arbetsordertyper och relaterade arbetsprocesser som arbetspolicyn gäller för.</span><span class="sxs-lookup"><span data-stu-id="fbc63-124">On the **Work order types** FastTab, add all the work order types, and the related work processes, that the work policy applies to.</span></span> <span data-ttu-id="fbc63-125">Följande arbetsordertyper och relaterade arbetsprocesser stöds för arbetspolicyer.</span><span class="sxs-lookup"><span data-stu-id="fbc63-125">The following work order types and related work processes are supported for work policies.</span></span>
 
-<span data-ttu-id="49d2e-137">När du planerar att konfigurera en arbetspolicy för detta scenario på lagerstället, bör du beakta följande information:</span><span class="sxs-lookup"><span data-stu-id="49d2e-137">When you plan to configure a warehouse work policy for this scenario, you should consider the following information:</span></span>
+| <span data-ttu-id="fbc63-126">Typ av arbetsorder</span><span class="sxs-lookup"><span data-stu-id="fbc63-126">Work order type</span></span> | <span data-ttu-id="fbc63-127">Arbetsprocess</span><span class="sxs-lookup"><span data-stu-id="fbc63-127">Work process</span></span> |
+|---|---|
+| <span data-ttu-id="fbc63-128">Råmaterialhämtning</span><span class="sxs-lookup"><span data-stu-id="fbc63-128">Raw material picking</span></span>| <span data-ttu-id="fbc63-129">Alla relaterade processer</span><span class="sxs-lookup"><span data-stu-id="fbc63-129">All related processes</span></span> |
+| <span data-ttu-id="fbc63-130">Plats för samprodukt och biprodukt</span><span class="sxs-lookup"><span data-stu-id="fbc63-130">Co-product and by-product put away</span></span> | <span data-ttu-id="fbc63-131">Alla relaterade processer</span><span class="sxs-lookup"><span data-stu-id="fbc63-131">All related processes</span></span> |
+| <span data-ttu-id="fbc63-132">Plats för slutförda varor</span><span class="sxs-lookup"><span data-stu-id="fbc63-132">Finished goods putaway</span></span> | <span data-ttu-id="fbc63-133">Alla relaterade processer</span><span class="sxs-lookup"><span data-stu-id="fbc63-133">All related processes</span></span> |
+| <span data-ttu-id="fbc63-134">Överföringsinleverans</span><span class="sxs-lookup"><span data-stu-id="fbc63-134">Transfer receipt</span></span> | <span data-ttu-id="fbc63-135">Plats och mottagning av registreringsskylt</span><span class="sxs-lookup"><span data-stu-id="fbc63-135">License plate receiving (and putaway)</span></span> |
+| <span data-ttu-id="fbc63-136">Inköpsorder</span><span class="sxs-lookup"><span data-stu-id="fbc63-136">Purchase orders</span></span> | <ul><li><span data-ttu-id="fbc63-137">Plats och mottagning av registreringsskylt</span><span class="sxs-lookup"><span data-stu-id="fbc63-137">License plate receiving (and putaway)</span></span></li><li><span data-ttu-id="fbc63-138">Mottagande och inleverans av lastartikel</span><span class="sxs-lookup"><span data-stu-id="fbc63-138">Load item receiving (and putaway)</span></span></li><li><span data-ttu-id="fbc63-139">Inköpsorderrad har inlevererats och inlagrats</span><span class="sxs-lookup"><span data-stu-id="fbc63-139">Purchase order line receiving (and putaway)</span></span></li><li><span data-ttu-id="fbc63-140">Inleverans och inlagring av inköpsorderartikel</span><span class="sxs-lookup"><span data-stu-id="fbc63-140">Purchase order item receiving (and putaway)</span></span></li></ul> |
 
--   <span data-ttu-id="49d2e-138">Arbetsuppgifter för förvaring av färdiga varor på lagerställen krävs inte när du rapporterar produkten SC1 som färdig från produktionsorder PRD-001 till platsen O1.</span><span class="sxs-lookup"><span data-stu-id="49d2e-138">Warehouse work for finished goods put-away isn’t required when you report product SC1 as finished from production order PRD-001 to location O1.</span></span> <span data-ttu-id="49d2e-139">Detta eftersom åtgärden **Painting** för produktionsorder PRD-002 förbrukar SC1 på samma plats.</span><span class="sxs-lookup"><span data-stu-id="49d2e-139">This is because the **Painting** operation for production order PRD-002 consumes SC1 at the same location.</span></span>
--   <span data-ttu-id="49d2e-140">Lagerställearbete för plockning av råmaterial krävs för att flytta råmaterialet RM1 från lagerplats BULK-001 till plats O1.</span><span class="sxs-lookup"><span data-stu-id="49d2e-140">Warehouse work for raw material picking is required in order to move raw material RM1 from warehouse location BULK-001 to location O1.</span></span>
+<span data-ttu-id="fbc63-141">Om du vill ställa in en arbetspolicy så att den gäller för flera arbetsprocesser av samma arbetsordertyp, lägger du till en separat rad för varje arbetsprocess i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="fbc63-141">To set up a work policy so that it applies to several work processes of the same work order type, add a separate line for each work process to the grid.</span></span>
 
-<span data-ttu-id="49d2e-141">Här följer ett exempel på en arbetspolicy som du kan ställa in, baserat på dessa överväganden.</span><span class="sxs-lookup"><span data-stu-id="49d2e-141">Here is an example of the work policy that you can set up, based on these considerations.</span></span>
+<span data-ttu-id="fbc63-142">För varje rad i rutnätet anger du fältet **Metod för att skapa arbete** till ett av följande värden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-142">For each line in the grid, set the **Work creation method** field to one of the following values:</span></span>
 
+- <span data-ttu-id="fbc63-143">**Aldrig** – Arbetspolicyn förhindrar att arbetsuppgifter på lagerstället skapas för vald arbetsordertyp och relaterade arbetsprocesser.</span><span class="sxs-lookup"><span data-stu-id="fbc63-143">**Never** – The work policy will prevent warehouse work from being created for the selected work order type and related work process.</span></span>
+- <span data-ttu-id="fbc63-144">**Direktutleverans** – Arbetspolicyn kommer att skapa direktutleverans med hjälp av den policy du väljer i fältet **Direktleveranspolicynamn**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-144">**Cross docking** – The work policy will create cross-docking work by using the policy that you select in the **Cross docking policy name** field.</span></span>
 
-|                                       |                                       |
-|---------------------------------------|---------------------------------------|
-| <span data-ttu-id="49d2e-142"><strong>Namn på arbetspolicy</strong></span><span class="sxs-lookup"><span data-stu-id="49d2e-142"><strong>Work policy name</strong></span></span><br> | <span data-ttu-id="49d2e-143"><strong>Typer av arbetsorder</strong></span><span class="sxs-lookup"><span data-stu-id="49d2e-143"><strong>Work order types</strong></span></span><br> |
-|         <span data-ttu-id="49d2e-144">Lagringsfri 01</span><span class="sxs-lookup"><span data-stu-id="49d2e-144">No put away 01     \`</span></span>          |     <span data-ttu-id="49d2e-145">- Lagring av färdig vara</span><span class="sxs-lookup"><span data-stu-id="49d2e-145">- Finished good put away</span></span><br>      |
-|                                       |    <span data-ttu-id="49d2e-146"><strong>Platser</strong></span><span class="sxs-lookup"><span data-stu-id="49d2e-146"><strong>Locations</strong></span></span><br>     |
-|                                       |                 <span data-ttu-id="49d2e-147">- O1</span><span class="sxs-lookup"><span data-stu-id="49d2e-147">- O1</span></span>                  |
-|                                       |    <span data-ttu-id="49d2e-148"><strong>Produkter</strong></span><span class="sxs-lookup"><span data-stu-id="49d2e-148"><strong>Products</strong></span></span> <br>     |
-|                                       |                 <span data-ttu-id="49d2e-149">- SC1</span><span class="sxs-lookup"><span data-stu-id="49d2e-149">- SC1</span></span>                 |
+### <a name="the-inventory-locations-fasttab"></a><span data-ttu-id="fbc63-145">Snabbfliken lagerplatser</span><span class="sxs-lookup"><span data-stu-id="fbc63-145">The Inventory locations FastTab</span></span>
 
-<span data-ttu-id="49d2e-150">Följande procedurer innehåller steg-för-steg-instruktioner om hur du ställer in arbetspolicyn för lagerstället för detta scenario.</span><span class="sxs-lookup"><span data-stu-id="49d2e-150">The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario.</span></span> <span data-ttu-id="49d2e-151">En exempelinställning som visar hur du rapporterar en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt beskrivs också.</span><span class="sxs-lookup"><span data-stu-id="49d2e-151">A sample setup showing how to report a production order as finished to a location that isn’t license plate–controlled is also described.</span></span>
+<span data-ttu-id="fbc63-146">På snabbfliken **lagerplatser** lägger du till alla platser där den här arbetspolicyn ska användas.</span><span class="sxs-lookup"><span data-stu-id="fbc63-146">On the **Inventory locations** FastTab, add all the locations where this work policy should be applied.</span></span> <span data-ttu-id="fbc63-147">Om ingen plats finns associerad med en arbetspolicy, gäller inte arbetspolicyn för några processer.</span><span class="sxs-lookup"><span data-stu-id="fbc63-147">If no location is associated with a work policy, the work policy won't be applied to any process.</span></span>
 
-## <a name="set-up-a-warehouse-work-policy"></a><span data-ttu-id="49d2e-152">Konfigurera en policy för lagerarbete</span><span class="sxs-lookup"><span data-stu-id="49d2e-152">Set up a warehouse work policy</span></span>
-<span data-ttu-id="49d2e-153">Lagerställeprocesser inkluderar inte alltid lagerarbete.</span><span class="sxs-lookup"><span data-stu-id="49d2e-153">Warehouse processes don’t always include warehouse work.</span></span> <span data-ttu-id="49d2e-154">Genom att definiera en arbetspolicy kan du förhindra skapande av arbete för råmaterialhämtning och inlagring av färdiga varor för en uppsättning av produkter på specifika platser.</span><span class="sxs-lookup"><span data-stu-id="49d2e-154">By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations.</span></span> <span data-ttu-id="49d2e-155">Demonstrationsdataföretaget USMF har använts för att skapa denna procedur.</span><span class="sxs-lookup"><span data-stu-id="49d2e-155">The USMF demo data company was used to create this procedure.</span></span> 
+<span data-ttu-id="fbc63-148">Du kan inte ange samma plats för flera arbetspolicyer.</span><span class="sxs-lookup"><span data-stu-id="fbc63-148">You can't specify the same location for multiple work policies.</span></span>
 
-<span data-ttu-id="49d2e-156">STEG (21)</span><span class="sxs-lookup"><span data-stu-id="49d2e-156">STEPS (21)</span></span>
+<span data-ttu-id="fbc63-149">Det går att använda ett lagerställe som är tilldelat till en platsprofil även om **Använd spårning av ID-nummer** inte är aktiverad.</span><span class="sxs-lookup"><span data-stu-id="fbc63-149">You can use a warehouse location that is assigned to a location profile where the **Use license plate tracking** option is turned off.</span></span> <span data-ttu-id="fbc63-150">I det här fallet registrerar arbetare direkt lagerbehållningen.</span><span class="sxs-lookup"><span data-stu-id="fbc63-150">In this case, workers will directly register the on-hand inventory.</span></span>
 
-|     |                                                                            |
-|-----|----------------------------------------------------------------------------|
-| <span data-ttu-id="49d2e-157">1.</span><span class="sxs-lookup"><span data-stu-id="49d2e-157">1.</span></span>  | <span data-ttu-id="49d2e-158">Gå till Lagerstyrning &gt; Inställningar &gt; Arbete &gt; Arbetspolicyer.</span><span class="sxs-lookup"><span data-stu-id="49d2e-158">Go to Warehouse management &gt; Setup &gt; Work &gt; Work policies.</span></span>        |
-| <span data-ttu-id="49d2e-159">2.</span><span class="sxs-lookup"><span data-stu-id="49d2e-159">2.</span></span>  | <span data-ttu-id="49d2e-160">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="49d2e-160">Click New.</span></span>                                                                 |
-| <span data-ttu-id="49d2e-161">3.</span><span class="sxs-lookup"><span data-stu-id="49d2e-161">3.</span></span>  | <span data-ttu-id="49d2e-162">Skriv in "Inget inlagrat arbete" i fältet Namn på arbetspolicy.</span><span class="sxs-lookup"><span data-stu-id="49d2e-162">In the Work policy name field, type 'No put-away work'.</span></span>                    |
-| <span data-ttu-id="49d2e-163">4.</span><span class="sxs-lookup"><span data-stu-id="49d2e-163">4.</span></span>  | <span data-ttu-id="49d2e-164">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="49d2e-164">Click Save.</span></span>                                                                |
-| <span data-ttu-id="49d2e-165">5.</span><span class="sxs-lookup"><span data-stu-id="49d2e-165">5.</span></span>  | <span data-ttu-id="49d2e-166">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="49d2e-166">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="49d2e-167">6.</span><span class="sxs-lookup"><span data-stu-id="49d2e-167">6.</span></span>  | <span data-ttu-id="49d2e-168">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="49d2e-168">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="49d2e-169">7.</span><span class="sxs-lookup"><span data-stu-id="49d2e-169">7.</span></span>  | <span data-ttu-id="49d2e-170">Skriv in "Plats för slutförda varor" i fältet Typ av arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="49d2e-170">In the Work order type field, select 'Finished goods put away'.</span></span>            |
-| <span data-ttu-id="49d2e-171">8.</span><span class="sxs-lookup"><span data-stu-id="49d2e-171">8.</span></span>  | <span data-ttu-id="49d2e-172">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="49d2e-172">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="49d2e-173">9.</span><span class="sxs-lookup"><span data-stu-id="49d2e-173">9.</span></span>  | <span data-ttu-id="49d2e-174">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="49d2e-174">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="49d2e-175">10.</span><span class="sxs-lookup"><span data-stu-id="49d2e-175">10.</span></span> | <span data-ttu-id="49d2e-176">Välj ”Plats för samprodukt och biprodukt” i fältet Typ arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="49d2e-176">In the Work order type field, select 'Co-product and by-product put away'.</span></span> |
-| <span data-ttu-id="49d2e-177">11.</span><span class="sxs-lookup"><span data-stu-id="49d2e-177">11.</span></span> | <span data-ttu-id="49d2e-178">Visa avsnittet Lagerplatser.</span><span class="sxs-lookup"><span data-stu-id="49d2e-178">Expand the Inventory locations section.</span></span>                                    |
-| <span data-ttu-id="49d2e-179">12.</span><span class="sxs-lookup"><span data-stu-id="49d2e-179">12.</span></span> | <span data-ttu-id="49d2e-180">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="49d2e-180">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="49d2e-181">13.</span><span class="sxs-lookup"><span data-stu-id="49d2e-181">13.</span></span> | <span data-ttu-id="49d2e-182">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="49d2e-182">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="49d2e-183">14.</span><span class="sxs-lookup"><span data-stu-id="49d2e-183">14.</span></span> | <span data-ttu-id="49d2e-184">Ange ”51" i lagerställets lista.</span><span class="sxs-lookup"><span data-stu-id="49d2e-184">In the Warehouse list, enter '51'.</span></span>                                         |
-| <span data-ttu-id="49d2e-185">15.</span><span class="sxs-lookup"><span data-stu-id="49d2e-185">15.</span></span> | <span data-ttu-id="49d2e-186">Ange eller välj "001" i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="49d2e-186">In the Location field, enter or select '001'.</span></span>                              |
-| <span data-ttu-id="49d2e-187">16.</span><span class="sxs-lookup"><span data-stu-id="49d2e-187">16.</span></span> | <span data-ttu-id="49d2e-188">Expandera avsnittet Produkter.</span><span class="sxs-lookup"><span data-stu-id="49d2e-188">Expand the Products section.</span></span>                                               |
-| <span data-ttu-id="49d2e-189">17.</span><span class="sxs-lookup"><span data-stu-id="49d2e-189">17.</span></span> | <span data-ttu-id="49d2e-190">Välj "Markerad" i fältet Produktval.</span><span class="sxs-lookup"><span data-stu-id="49d2e-190">In the Product selection field, select 'Selected'.</span></span>                         |
-| <span data-ttu-id="49d2e-191">18.</span><span class="sxs-lookup"><span data-stu-id="49d2e-191">18.</span></span> | <span data-ttu-id="49d2e-192">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="49d2e-192">Click Add.</span></span>                                                                 |
-| <span data-ttu-id="49d2e-193">19.</span><span class="sxs-lookup"><span data-stu-id="49d2e-193">19.</span></span> | <span data-ttu-id="49d2e-194">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="49d2e-194">In the list, mark the selected row.</span></span>                                        |
-| <span data-ttu-id="49d2e-195">20.</span><span class="sxs-lookup"><span data-stu-id="49d2e-195">20.</span></span> | <span data-ttu-id="49d2e-196">Ange eller välj "L0101" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="49d2e-196">In the Item number field, enter or select 'L0101'.</span></span>                         |
-| <span data-ttu-id="49d2e-197">21.</span><span class="sxs-lookup"><span data-stu-id="49d2e-197">21.</span></span> | <span data-ttu-id="49d2e-198">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="49d2e-198">Click Save.</span></span>                                                                |
+### <a name="the-products-fasttab"></a><span data-ttu-id="fbc63-151">Snabbfliken produkter</span><span class="sxs-lookup"><span data-stu-id="fbc63-151">The Products FastTab</span></span>
 
-## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a><span data-ttu-id="49d2e-199">Rapportera en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt</span><span class="sxs-lookup"><span data-stu-id="49d2e-199">Report a production order as finished to a location that isn’t license plate–controlled</span></span>
-<span data-ttu-id="49d2e-200">Denna procedur visar ett exempel på rapportering som slutförd till en plats som inte kontrolleras via registreringsskylt.</span><span class="sxs-lookup"><span data-stu-id="49d2e-200">This procedure shows an example of reporting as finished to a location that isn't license plate–controlled.</span></span> <span data-ttu-id="49d2e-201">En tillämplig arbetspolicy är förutsättningen är den här uppgiften.</span><span class="sxs-lookup"><span data-stu-id="49d2e-201">An applicable work policy is the prerequisite for this task.</span></span> <span data-ttu-id="49d2e-202">Föregående procedur anger arbetspolicyns konfiguration.</span><span class="sxs-lookup"><span data-stu-id="49d2e-202">The previous procedure shows the setup of the work policy.</span></span> 
+<span data-ttu-id="fbc63-152">På fliken **produkter** ställer du in fältet **produktval** så att du kan kontrollera vilka produkter policyn ska gälla för:</span><span class="sxs-lookup"><span data-stu-id="fbc63-152">On the **Products** tab, set the **Product selection** field to control which products the policy should apply to:</span></span>
 
-<span data-ttu-id="49d2e-203">STEG (25)</span><span class="sxs-lookup"><span data-stu-id="49d2e-203">STEPS (25)</span></span>
+- <span data-ttu-id="fbc63-153">**Alla** – policyn ska gälla för alla produkter.</span><span class="sxs-lookup"><span data-stu-id="fbc63-153">**All** – The policy should apply to all products.</span></span>
+- <span data-ttu-id="fbc63-154">**Markerad** – policyn ska bara gälla för produkter som visas i rutnätet.</span><span class="sxs-lookup"><span data-stu-id="fbc63-154">**Selected** – The policy should apply only to products that are listed in the grid.</span></span> <span data-ttu-id="fbc63-155">Använd verktygsfältet på snabbfliken **produkter** om du vill lägga till produkter i rutnätet eller ta bort dem från rutnätet.</span><span class="sxs-lookup"><span data-stu-id="fbc63-155">Use the toolbar on the **Products** FastTab to add products to the grid or remove them from the grid.</span></span>
 
-<table>
-<tbody>
-<tr>
-<td colspan="3"><span data-ttu-id="49d2e-204"><strong>Deluppgift: Ställ in en utleveransplats.</strong></span><span class="sxs-lookup"><span data-stu-id="49d2e-204"><strong>Sub-task: Set up an output location.</strong></span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>1.</td>
-<td><span data-ttu-id="49d2e-205">Gå till Organisationsadministration &gt; Resurser &gt; Resursgrupper.</span><span class="sxs-lookup"><span data-stu-id="49d2e-205">Go to Organization administration &gt; Resources &gt; Resource groups.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>2.</td>
-<td><span data-ttu-id="49d2e-206">Välj resursgrupp &#39;5102&#39; i listan.</span><span class="sxs-lookup"><span data-stu-id="49d2e-206">In the list, select resource group &#39;5102&#39;.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>3.</td>
-<td><span data-ttu-id="49d2e-207">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="49d2e-207">Click Edit.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>4.</td>
-<td><span data-ttu-id="49d2e-208">Ange &#39;51&#39; i fältet Utleveranslagerställe.</span><span class="sxs-lookup"><span data-stu-id="49d2e-208">In the Output warehouse field, enter &#39;51&#39;.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>5.</td>
-<td><span data-ttu-id="49d2e-209">Ange &#39;001&#39; fältet Utleveransplats.</span><span class="sxs-lookup"><span data-stu-id="49d2e-209">In the Output location field, enter &#39;001&#39;.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>6.</td>
-<td><span data-ttu-id="49d2e-210">Plats 001 är en ej ID-nummerstyrd plats.</span><span class="sxs-lookup"><span data-stu-id="49d2e-210">Location 001 isn&#39;t a license plate–controlled location.</span></span> <span data-ttu-id="49d2e-211">Du kan ställa in en plats för ej ID-nummertyrd utleveransplats bara om en lämplig arbetspolicy finns för platsen.</span><span class="sxs-lookup"><span data-stu-id="49d2e-211">You can set up a non–license plate output location only if an applicable work policy exists for the location.</span></span></td>
-</tr>
-<tr>
-<td colspan="3"><span data-ttu-id="49d2e-212"><strong>Deluppgift: Skapa en produktionsorder och rapportera den som färdig.</strong></span><span class="sxs-lookup"><span data-stu-id="49d2e-212"><strong>Sub-task: Create a production order and report it as finished.</strong></span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>1.</td>
-<td><span data-ttu-id="49d2e-213">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="49d2e-213">Close the page.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>2.</td>
-<td><span data-ttu-id="49d2e-214">Gå till Produktionskontroll &gt; Produktionsorder &gt; Alla produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="49d2e-214">Go to Production control &gt; Production orders &gt; All production orders.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>3.</td>
-<td><span data-ttu-id="49d2e-215">Klicka på Ny produktionsorder.</span><span class="sxs-lookup"><span data-stu-id="49d2e-215">Click New production order.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>4.</td>
-<td><span data-ttu-id="49d2e-216">Ange &#39;L0101&#39; i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="49d2e-216">In the Item number field, enter &#39;L0101&#39;.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>5.</td>
-<td><span data-ttu-id="49d2e-217">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="49d2e-217">Click Create.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>6.</td>
-<td><span data-ttu-id="49d2e-218">Klicka på Produktionsorder i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="49d2e-218">On the Action Pane, click Production order.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>7.</td>
-<td><span data-ttu-id="49d2e-219">Klicka på Uppskattning.</span><span class="sxs-lookup"><span data-stu-id="49d2e-219">Click Estimate.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>8.</td>
-<td><span data-ttu-id="49d2e-220">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="49d2e-220">Click OK.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>9.</td>
-<td><span data-ttu-id="49d2e-221">Klicka på Start.</span><span class="sxs-lookup"><span data-stu-id="49d2e-221">Click Start.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>10.</td>
-<td><span data-ttu-id="49d2e-222">Klicka på fliken Allmänt.</span><span class="sxs-lookup"><span data-stu-id="49d2e-222">Click the General tab.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>11.</td>
-<td><span data-ttu-id="49d2e-223">Välj &#39;Aldrig&#39; i fältet Automatisk strukturlisteförbrukning.</span><span class="sxs-lookup"><span data-stu-id="49d2e-223">In the Automatic BOM consumption field, select &#39;Never&#39;.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>12.</td>
-<td><span data-ttu-id="49d2e-224">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="49d2e-224">Click OK.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>13.</td>
-<td><span data-ttu-id="49d2e-225">Klicka på Rapportera som färdig.</span><span class="sxs-lookup"><span data-stu-id="49d2e-225">Click Report as finished.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>14.</td>
-<td><span data-ttu-id="49d2e-226">Klicka på fliken Allmänt.</span><span class="sxs-lookup"><span data-stu-id="49d2e-226">Click the General tab.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>15.</td>
-<td><span data-ttu-id="49d2e-227">Välj Ja i fältet Godkänn fel.</span><span class="sxs-lookup"><span data-stu-id="49d2e-227">Select Yes in the Accept error field.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>16.</td>
-<td><span data-ttu-id="49d2e-228">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="49d2e-228">Click OK.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>17.</td>
-<td><span data-ttu-id="49d2e-229">Klicka på Lagerställe i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="49d2e-229">On the Action Pane, click Warehouse.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>18.</td>
-<td><span data-ttu-id="49d2e-230">Klicka på Information om arbete.</span><span class="sxs-lookup"><span data-stu-id="49d2e-230">Click Work details.</span></span></td>
-</tr>
-<tr>
-<td></td>
-<td>19.</td>
-<td><span data-ttu-id="49d2e-231">När tillverkningsordern rapporterades som färdig, genererades inget arbete för plats.</span><span class="sxs-lookup"><span data-stu-id="49d2e-231">When the production order was reported as finished, no work was generated for put-away.</span></span> <span data-ttu-id="49d2e-232">Detta inträffar, eftersom en arbetspolicy definieras som hindrar arbete från att genereras när produkten L0101 rapporterats som färdig till plats 001.</span><span class="sxs-lookup"><span data-stu-id="49d2e-232">This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.</span></span></td>
-</tr>
-</tbody>
-</table>
+## <a name="default-and-custom-to-locations"></a><span data-ttu-id="fbc63-156">Standard och anpassade till platser</span><span class="sxs-lookup"><span data-stu-id="fbc63-156">Default and custom "to" locations</span></span>
 
+> [!NOTE]
+> <span data-ttu-id="fbc63-157">Om du vill göra funktionen som beskrivs i det här avsnittet tillgänglig i ditt system, måste du aktivera funktionerna *Förbättringar av inleverans av ID-nummer* och *Förbättringar av arbetspolicy för inkommande arbete* i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).</span><span class="sxs-lookup"><span data-stu-id="fbc63-157">To make the functionality that is described in this section available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).</span></span>
 
+<span data-ttu-id="fbc63-158">Tidigare har systemet endast tagit emot den standardplats som har definierats för varje lagerställe.</span><span class="sxs-lookup"><span data-stu-id="fbc63-158">Previously, the system supported receiving only at the default location that is defined for each warehouse.</span></span> <span data-ttu-id="fbc63-159">Menyalternativen för mobila enheter som använder följande processer för arbetsskapande har nu alternativet **Använd standarddata**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-159">However, mobile device menu items that use the following work creation processes now provide the **Use default data** option.</span></span> <span data-ttu-id="fbc63-160">Med det här alternativet kan du tilldela en anpassad "till"-plats till ett eller flera menyalternativ.</span><span class="sxs-lookup"><span data-stu-id="fbc63-160">This option lets you assign a custom "to" location to one or more menu items.</span></span> <span data-ttu-id="fbc63-161">(Det här alternativet är redan tillgängligt för andra typer av menyalternativ.)</span><span class="sxs-lookup"><span data-stu-id="fbc63-161">(This option was already available for some other types of menu items.)</span></span>
 
+- <span data-ttu-id="fbc63-162">Plats och mottagning av registreringsskylt</span><span class="sxs-lookup"><span data-stu-id="fbc63-162">License plate receiving (and putaway)</span></span>
+- <span data-ttu-id="fbc63-163">Mottagande och inleverans av lastartikel</span><span class="sxs-lookup"><span data-stu-id="fbc63-163">Load item receiving (and putaway)</span></span>
+- <span data-ttu-id="fbc63-164">Inköpsorderrad har inlevererats och inlagrats</span><span class="sxs-lookup"><span data-stu-id="fbc63-164">Purchase order line receiving (and putaway)</span></span>
+- <span data-ttu-id="fbc63-165">Inleverans och inlagring av inköpsorderartikel</span><span class="sxs-lookup"><span data-stu-id="fbc63-165">Purchase order item receiving (and putaway)</span></span>
+
+<span data-ttu-id="fbc63-166">Inställningen **Till plats** för ett menyalternativ åsidosätter standard mottagningsplatsen för lagerstället, för alla order som bearbetas med hjälp av det menyalternativet.</span><span class="sxs-lookup"><span data-stu-id="fbc63-166">The **To location** setting for a menu item overrides the default receiving location for the warehouse, for all orders that are processed by using that menu item.</span></span>
+
+<span data-ttu-id="fbc63-167">Gör så här om du vill konfigurera ett menyalternativ för mobila enheter för att stödja mottagning på en vald plats:</span><span class="sxs-lookup"><span data-stu-id="fbc63-167">To set up a mobile device menu item to support receiving at a custom location, follow these steps.</span></span>
+
+1. <span data-ttu-id="fbc63-168">Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-168">Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.</span></span>
+1. <span data-ttu-id="fbc63-169">Välj eller skapa ett menyalternativ som använder en av arbetsprocesserna som listas tidigare i det här avsnittet.</span><span class="sxs-lookup"><span data-stu-id="fbc63-169">Select or create a menu item that uses one of the work creation processes that are listed earlier in this section.</span></span>
+1. <span data-ttu-id="fbc63-170">På snabbfliken **allmänt** anger du alternativet **Använd standarddata** till **Ja**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-170">On the **General** FastTab, set the **Use default data** option to **Yes**.</span></span>
+1. <span data-ttu-id="fbc63-171">I åtgärdsfönstret, välj **Standarddata**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-171">On the Action Pane, select **Default data**.</span></span>
+1. <span data-ttu-id="fbc63-172">Ange följande värden på sidan **Standarddata**:</span><span class="sxs-lookup"><span data-stu-id="fbc63-172">On the **Default data** page, set the following values:</span></span>
+
+    - <span data-ttu-id="fbc63-173">**Standarddatafält:** Ange det här fältet till *till plats*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-173">**Default data field:** Set this field to *To location*.</span></span>
+    - <span data-ttu-id="fbc63-174">**Lagerställe:** Välj det lagerställe vid destinationen som ska användas för menyartikeln.</span><span class="sxs-lookup"><span data-stu-id="fbc63-174">**Warehouse:** Select the destination warehouse to use with this menu item.</span></span>
+    - <span data-ttu-id="fbc63-175">**Plats:** i det här fältet visas en lista över de plats-ID:n som är tillgängliga för det valda lagerstället.</span><span class="sxs-lookup"><span data-stu-id="fbc63-175">**Location:** This field lists all the location IDs that are available for the selected warehouse.</span></span> <span data-ttu-id="fbc63-176">Inställningen av det här fältet har dock ingen effekt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-176">However, the setting of this field doesn't actually have any effect.</span></span> <span data-ttu-id="fbc63-177">Därför kan du lämna det tomt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-177">Therefore, you can leave it blank.</span></span> <span data-ttu-id="fbc63-178">Du kan dock använda listan för att bekräfta det ID som du måste ange i fältet **Hårdkodat värde**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-178">Nevertheless, you can use the list to confirm the ID that you must enter in the **Hardcoded value** field.</span></span>
+    - <span data-ttu-id="fbc63-179">**Hårdkodat värde:** Ange plats-ID för mottagningsplatsen som gäller för det här menyalternativet.</span><span class="sxs-lookup"><span data-stu-id="fbc63-179">**Hardcoded value:** Enter the location ID for the receiving location that applies to this menu item.</span></span>
+
+> [!TIP]
+> <span data-ttu-id="fbc63-180">En arbetspolicy kan bara användas om alla mottagande platser anges i de relevanta inställningarna för arbetspolicy.</span><span class="sxs-lookup"><span data-stu-id="fbc63-180">A work policy can be applied only if all the receiving locations are listed in the relevant work policy setup.</span></span> <span data-ttu-id="fbc63-181">Detta krav gäller oavsett om du använder standardplatsen för lagermottagning eller en anpassad "till"-plats.</span><span class="sxs-lookup"><span data-stu-id="fbc63-181">This requirement applies regardless of whether you're using the default warehouse receiving location or a custom "to" location.</span></span>
+
+## <a name="example-scenario-warehouse-receiving"></a><span data-ttu-id="fbc63-182">Exempelscenario: inleverans av lager</span><span class="sxs-lookup"><span data-stu-id="fbc63-182">Example scenario: Warehouse receiving</span></span>
+
+<span data-ttu-id="fbc63-183">Alla produkter som tas emot av processen *Inleverans och inlagring av inköpsorderartikel* måste registreras på platsen *FL-001* och de måste vara tillgängliga i lagerstället *24*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-183">All products that are received by the *Purchase order item receiving (and putaway)* process must be registered in location *FL-001*, and they must be available in warehouse *24*.</span></span> <span data-ttu-id="fbc63-184">Arbete ska dock inte skapas.</span><span class="sxs-lookup"><span data-stu-id="fbc63-184">However, work should not be created.</span></span> <span data-ttu-id="fbc63-185">Produkter som tas emot av någon annan process (dvs. genom att använda andra menyartiklar för mobila enheter) registreras på standardplatsen för inleverans av lager (*RECV*) och arbete ska skapas som vanligt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-185">Products that are received by any other process (that is, by using other mobile device menu items) should be registered at the default warehouse receiving location (*RECV*), and work should be created as usual.</span></span> <span data-ttu-id="fbc63-186">(Det här scenariot visar inte standardinställningarna för mottagning.)</span><span class="sxs-lookup"><span data-stu-id="fbc63-186">(This scenario doesn't show the default receiving setup.)</span></span>
+
+<span data-ttu-id="fbc63-187">Det här scenariot kräver följande element:</span><span class="sxs-lookup"><span data-stu-id="fbc63-187">This scenario requires the following elements:</span></span>
+
+- <span data-ttu-id="fbc63-188">En arbetspolicy för processen *Inleverans och inlagring av inköpsorderartikel* på platsen *FL-001* för alla produkter</span><span class="sxs-lookup"><span data-stu-id="fbc63-188">A work policy for the *Purchase order item receiving (and putaway)* process in location *FL-001*, for all products</span></span>
+- <span data-ttu-id="fbc63-189">En menyartikel på en mobil enhet som har standarddata och som anger fältet **Till plats** till *FL-001*</span><span class="sxs-lookup"><span data-stu-id="fbc63-189">A mobile device menu item that has default data, and that sets the **To location** field to *FL-001*</span></span>
+
+### <a name="prerequisites"></a><span data-ttu-id="fbc63-190">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="fbc63-190">Prerequisites</span></span>
+
+<span data-ttu-id="fbc63-191">Om du vill göra funktionen som beskrivs i det här scenariot tillgänglig i ditt system, måste du aktivera funktionerna *Förbättringar av inleverans av ID-nummer* och *Förbättringar av arbetspolicy för inkommande arbete* i [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).</span><span class="sxs-lookup"><span data-stu-id="fbc63-191">To make the functionality that is described in this scenario available in your system, you must turn on the *License plate receiving enhancements* and *Work policy enhancements for inbound work* features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).</span></span>
+
+<span data-ttu-id="fbc63-192">Den här scenariot använder sig av standard demodata.</span><span class="sxs-lookup"><span data-stu-id="fbc63-192">This scenario uses the standard demo data.</span></span> <span data-ttu-id="fbc63-193">Därför, om du vill arbeta igenom scenariot genom att använda värdena som ges här måste du arbeta på ett system där demodata är installerat.</span><span class="sxs-lookup"><span data-stu-id="fbc63-193">Therefore, if you want to work through it by using the values that are provided here, you must work on a system where demo data is installed.</span></span> <span data-ttu-id="fbc63-194">Dessutom måste du välja den **USMF** juridiska personen.</span><span class="sxs-lookup"><span data-stu-id="fbc63-194">Additionally, you must select the **USMF** legal entity.</span></span>
+
+### <a name="set-up-a-work-policy"></a><span data-ttu-id="fbc63-195">Konfigurera en arbetspolicy</span><span class="sxs-lookup"><span data-stu-id="fbc63-195">Set up a work policy</span></span>
+
+1. <span data-ttu-id="fbc63-196">Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetspolicyer**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-196">Go to **Warehouse management \> Setup \> Work \> Work policies**.</span></span>
+1. <span data-ttu-id="fbc63-197">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-197">Select **New**.</span></span>
+1. <span data-ttu-id="fbc63-198">I fältet the **Arbetspolicynamn** anger du *Ingen inköpspost för inlagringsarbete*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-198">In the **Work policy name** field, enter *No purchase item putaway work*.</span></span>
+1. <span data-ttu-id="fbc63-199">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-199">Select **Save**.</span></span>
+1. <span data-ttu-id="fbc63-200">På snabbfliken **Arbetsordertyper** väljer du **Lägg till** om du vill lägga till en rad i rutnätet och sedan ange följande värden för den nya raden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-200">On the **Work order types** FastTab, select **Add** to add a row to the grid, and then set the following values for the new row:</span></span>
+
+    - <span data-ttu-id="fbc63-201">**Arbetsordertyp:** *inköpsorder*</span><span class="sxs-lookup"><span data-stu-id="fbc63-201">**Work order type:** *Purchase orders*</span></span>
+    - <span data-ttu-id="fbc63-202">**Arbetsprocess:** *Inköpsorderpost har inlevererats och inlagrats*</span><span class="sxs-lookup"><span data-stu-id="fbc63-202">**Work process:** *Purchase order item receiving (and putaway)*</span></span>
+    - <span data-ttu-id="fbc63-203">**Arbetsskapande metod:** *aldrig*</span><span class="sxs-lookup"><span data-stu-id="fbc63-203">**Work creation method:** *Never*</span></span>
+    - <span data-ttu-id="fbc63-204">**Direktleveranspolicynamn:** Lämna det här fältet tomt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-204">**Cross docking policy name:** Leave this field blank.</span></span>
+
+1. <span data-ttu-id="fbc63-205">På snabbfliken **Lagerplatser** väljer du **Lägg till** om du vill lägga till en rad i rutnätet och sedan ange följande värden för den nya raden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-205">On the **Inventory locations** FastTab, select **Add** to add a row to the grid, and then set the following values for the new row:</span></span>
+
+    - <span data-ttu-id="fbc63-206">**Lagerställe:** *24*</span><span class="sxs-lookup"><span data-stu-id="fbc63-206">**Warehouse:** *24*</span></span>
+    - <span data-ttu-id="fbc63-207">**Plats:** *FL-001*</span><span class="sxs-lookup"><span data-stu-id="fbc63-207">**Location:** *FL-001*</span></span>
+
+1. <span data-ttu-id="fbc63-208">På snabbfliken **produkter** ställer du in fältet **produktval** till *alla*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-208">On the **Products** FastTab, set the **Product selection** field to *All*.</span></span>
+1. <span data-ttu-id="fbc63-209">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-209">Select **Save**.</span></span>
+
+### <a name="set-up-a-mobile-device-menu-item-to-change-the-receiving-location"></a><span data-ttu-id="fbc63-210">Ställ in ett menyalternativ för mobila enheter för att ändra mottagningsplats</span><span class="sxs-lookup"><span data-stu-id="fbc63-210">Set up a mobile device menu item to change the receiving location</span></span>
+
+1. <span data-ttu-id="fbc63-211">Gå till **Lagerstyrning \> Inställningar \> Mobil enhet \> Menyalternativ på mobil enhet**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-211">Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.</span></span>
+1. <span data-ttu-id="fbc63-212">I vänster ruta, välj befintligt menyalternativ **inleverans av inköp**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-212">In the left pane, select the existing **Purchase receive** menu item.</span></span>
+1. <span data-ttu-id="fbc63-213">På snabbfliken **allmänt** anger du alternativet **Använd standarddata** till *Ja*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-213">On the **General** FastTab, set the **Use default data** option to *Yes*.</span></span>
+1. <span data-ttu-id="fbc63-214">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-214">Select **Save**.</span></span>
+1. <span data-ttu-id="fbc63-215">I åtgärdsfönstret, välj **Standarddata**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-215">On the Action Pane, select **Default data**.</span></span>
+1. <span data-ttu-id="fbc63-216">På sidan **Standarddata** i åtgärdsfönstret väljer du **Ny** om du vill lägga till en rad i rutnätet och sedan ange följande värden för den nya raden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-216">On the **Default data** page, on the Action Pane, select **New** to add a row to the grid, and then set the following values for the new row:</span></span>
+
+    - <span data-ttu-id="fbc63-217">**Standarddatafält:** *till plats*</span><span class="sxs-lookup"><span data-stu-id="fbc63-217">**Default data field:** *To location*</span></span>
+    - <span data-ttu-id="fbc63-218">**Lagerställe:** *24*</span><span class="sxs-lookup"><span data-stu-id="fbc63-218">**Warehouse:** *24*</span></span>
+    - <span data-ttu-id="fbc63-219">**Plats:** lämna det här fältet tomt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-219">**Location:** Leave this field blank.</span></span>
+    - <span data-ttu-id="fbc63-220">**Hårdkodat värde:** *FL-001*</span><span class="sxs-lookup"><span data-stu-id="fbc63-220">**Hardcoded value:** *FL-001*</span></span>
+
+1. <span data-ttu-id="fbc63-221">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-221">Select **Save**.</span></span>
+
+### <a name="receive-a-purchase-order-without-creating-work"></a><span data-ttu-id="fbc63-222">Ta emot en inköpsorder utan att skapa arbete</span><span class="sxs-lookup"><span data-stu-id="fbc63-222">Receive a purchase order without creating work</span></span>
+
+<span data-ttu-id="fbc63-223">Exemplet i det här avsnittet visar hur du tar emot en inköpsorderartikel, men utan att skapa arbete på en plats som skiljer sig från den standardplats för inleverans som har ställts in för lagerstället.</span><span class="sxs-lookup"><span data-stu-id="fbc63-223">The example in this section shows how to receive a purchase order item, but without creating work, at a location that differs from the default receiving location that is set up for the warehouse.</span></span> <span data-ttu-id="fbc63-224">I det här exemplet används arbetspolicyn och objektet i den mobila enheten som du skapade tidigare i det här scenariot.</span><span class="sxs-lookup"><span data-stu-id="fbc63-224">This example uses the work policy and mobile device item that you created earlier in this scenario.</span></span>
+
+#### <a name="create-a-purchase-order"></a><span data-ttu-id="fbc63-225">Skapa en inköpsorder</span><span class="sxs-lookup"><span data-stu-id="fbc63-225">Create a purchase order</span></span>
+
+1. <span data-ttu-id="fbc63-226">Gå till **Anskaffning och källa \> Inköpsorder \> Alla inköpsorder**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-226">Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.</span></span>
+1. <span data-ttu-id="fbc63-227">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-227">Select **New**.</span></span>
+1. <span data-ttu-id="fbc63-228">I dialogrutan **Skapa inköpsorder** ställ in följande värden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-228">In the **Create purchase order** dialog box, set the following values:</span></span>
+
+    - <span data-ttu-id="fbc63-229">**Leverantörskonto:** *US-101*</span><span class="sxs-lookup"><span data-stu-id="fbc63-229">**Vendor account:** *US-101*</span></span>
+    - <span data-ttu-id="fbc63-230">**Plats:** *2*</span><span class="sxs-lookup"><span data-stu-id="fbc63-230">**Site:** *2*</span></span>
+    - <span data-ttu-id="fbc63-231">**Lagerställe:** *24*</span><span class="sxs-lookup"><span data-stu-id="fbc63-231">**Warehouse:** *24*</span></span>
+
+1. <span data-ttu-id="fbc63-232">Välj **OK** för att stänga dialogrutan och öppna den nya inköpsordern.</span><span class="sxs-lookup"><span data-stu-id="fbc63-232">Select **OK** to close the dialog box and open the new purchase order.</span></span>
+1. <span data-ttu-id="fbc63-233">På snabbfliken **inköpsorderrader** anger du följande värden för den tomma raden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-233">On the **Purchase order lines** FastTab, set the following values for the empty row:</span></span>
+
+    - <span data-ttu-id="fbc63-234">**Artikelnummer:** *A0001*</span><span class="sxs-lookup"><span data-stu-id="fbc63-234">**Item number:** *A0001*</span></span>
+    - <span data-ttu-id="fbc63-235">**Kvantitet:** *1*</span><span class="sxs-lookup"><span data-stu-id="fbc63-235">**Quantity:** *1*</span></span>
+
+1. <span data-ttu-id="fbc63-236">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-236">Select **Save**.</span></span>
+1. <span data-ttu-id="fbc63-237">Anteckna inköpsordernumret.</span><span class="sxs-lookup"><span data-stu-id="fbc63-237">Make a note of the purchase order number.</span></span>
+
+#### <a name="receive-a-purchase-order"></a><span data-ttu-id="fbc63-238">Få en inköpsorder</span><span class="sxs-lookup"><span data-stu-id="fbc63-238">Receive a purchase order</span></span>
+
+1. <span data-ttu-id="fbc63-239">På den mobila enheten logga in på lagerställe *24* med hjälp av *24* som användar-ID och *1* som lösenord.</span><span class="sxs-lookup"><span data-stu-id="fbc63-239">On the mobile device, sign in to warehouse *24* by using *24* as the user ID and *1* as the password.</span></span>
+1. <span data-ttu-id="fbc63-240">Välj **Ankommande**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-240">Select **Inbound**.</span></span>
+1. <span data-ttu-id="fbc63-241">Välj **inköpsmottagare**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-241">Select **Purchase receive**.</span></span> <span data-ttu-id="fbc63-242">Fältet **Plats** fältet ska ställas in på *FL-001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-242">The **Location** field should be set to *FL-001*.</span></span>
+1. <span data-ttu-id="fbc63-243">Ange inköpsordernumret för inköpsordern som du skapade i den föregående proceduren.</span><span class="sxs-lookup"><span data-stu-id="fbc63-243">Enter the purchase order number for the purchase order that you created in the previous procedure.</span></span>
+1. <span data-ttu-id="fbc63-244">I fältet **artikelnummer** ange *A0001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-244">In the **Item number** field, enter *A0001*.</span></span>
+1. <span data-ttu-id="fbc63-245">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-245">Select **OK**.</span></span>
+1. <span data-ttu-id="fbc63-246">I fältet **Kvantitet**, ange *1*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-246">In the **Quantity** field, enter *1*.</span></span>
+1. <span data-ttu-id="fbc63-247">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-247">Select **OK**.</span></span>
+
+<span data-ttu-id="fbc63-248">Inköpsordern tas nu emot, men inget arbete associeras med den.</span><span class="sxs-lookup"><span data-stu-id="fbc63-248">The purchase order is now received, but no work is associated with it.</span></span> <span data-ttu-id="fbc63-249">Lagerbehållningen har uppdaterats och kvantiteten *1* av artikel *A0001* finns nu tillgänglig på platsen *FL-001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-249">The on-hand inventory has been updated, and a quantity of *1* of item *A0001* is now available at location *FL-001*.</span></span>
+
+## <a name="example-scenario-manufacturing"></a><span data-ttu-id="fbc63-250">Exempelscenario: tillverkning</span><span class="sxs-lookup"><span data-stu-id="fbc63-250">Example scenario: Manufacturing</span></span>
+
+<span data-ttu-id="fbc63-251">I följande exempel finns det två produktionsorder *PRD-001* och *PRD-002*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-251">In the following example, there are two production orders, *PRD-001* and *PRD-002*.</span></span> <span data-ttu-id="fbc63-252">Produktionsorder *PRD-001* har en åtgärd med namnet *Sammansättning*, där produkten *SC1* rapporterats som färdig till plats *001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-252">Production order *PRD-001* has an operation that is named *Assembly*, where product *SC1* is being reported as finished to location *001*.</span></span> <span data-ttu-id="fbc63-253">Produktionsorder *PRD-002* har en åtgärd med namnet *Målar* och förbrukar produkten *SC1* från platsen *001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-253">Production order *PRD-002* has an operation that is named *Painting* and consumes product *SC1* from location *001*.</span></span> <span data-ttu-id="fbc63-254">Produktionsorder *PRD-002* förbrukar även råmaterial *RM1* från platsen *001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-254">Production order *PRD-002* also consumes raw material *RM1* from location *001*.</span></span> <span data-ttu-id="fbc63-255">Råmaterial *RM1* lagras på lagerställeplats och *BULK-001* plockas till platsen *001* av lagerställets arbetsuppgift för plockning av råmaterial.</span><span class="sxs-lookup"><span data-stu-id="fbc63-255">Raw material *RM1* is stored in warehouse location *BULK-001* and will be picked to location *001* by warehouse work for raw material picking.</span></span> <span data-ttu-id="fbc63-256">Plockningsarbetet skapas när produktion *PRD-002* frisläpps.</span><span class="sxs-lookup"><span data-stu-id="fbc63-256">The picking work is generated when production *PRD-002* is released.</span></span>
+
+<span data-ttu-id="fbc63-257">[![Policyer för distributionslagerarbete](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span><span class="sxs-lookup"><span data-stu-id="fbc63-257">[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)</span></span>
+
+<span data-ttu-id="fbc63-258">När du planerar att konfigurera en arbetspolicy för detta scenario på lagerstället, bör du beakta följande punkter:</span><span class="sxs-lookup"><span data-stu-id="fbc63-258">When you're planning to configure a warehouse work policy for this scenario, you should consider the following points:</span></span>
+
+- <span data-ttu-id="fbc63-259">Arbetsuppgifter för förvaring av färdiga varor på lagerställen krävs inte när du rapporterar produkten *SC1* som färdig från produktionsorder *PRD-001* till platsen *001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-259">Warehouse work for putaway of finished goods isn't required when you report product *SC1* as finished from production order *PRD-001* to location *001*.</span></span> <span data-ttu-id="fbc63-260">Detta eftersom åtgärden *Målar* för produktionsorder *PRD-002* förbrukar produkten *SC1* på samma plats.</span><span class="sxs-lookup"><span data-stu-id="fbc63-260">The reason is that the *Painting* operation for production order *PRD-002* consumes product *SC1* at the same location.</span></span>
+- <span data-ttu-id="fbc63-261">Lagerställearbete för plockning av råmaterial krävs för att flytta råmaterialet *RM1* från lagerplats *BULK-001* till plats *001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-261">Warehouse work for raw material picking is required to move raw material *RM1* from warehouse location *BULK-001* to location *001*.</span></span>
+
+<span data-ttu-id="fbc63-262">Här följer ett exempel på en arbetspolicy som du kan ställa in, baserat på dessa överväganden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-262">Here is an example of a work policy that you can set up, based on these considerations:</span></span>
+
+- <span data-ttu-id="fbc63-263">**Namn på arbetspolicy:** *inget inlagringsarbete*</span><span class="sxs-lookup"><span data-stu-id="fbc63-263">**Work policy name:** *No putaway work*</span></span>
+- <span data-ttu-id="fbc63-264">**Arbetsordertyper:** *Plats för slutförda varor* och *Plats för samprodukt och biprodukt*</span><span class="sxs-lookup"><span data-stu-id="fbc63-264">**Work order types:** *Finished goods put away* and *Co-product and by-product put away*</span></span>
+- <span data-ttu-id="fbc63-265">**Lagerställen:** lagerställe *51* och plats *001*</span><span class="sxs-lookup"><span data-stu-id="fbc63-265">**Inventory locations:** Warehouse *51* and location *001*</span></span>
+- <span data-ttu-id="fbc63-266">**Produkter:** *SC1*</span><span class="sxs-lookup"><span data-stu-id="fbc63-266">**Products:** *SC1*</span></span>
+
+<span data-ttu-id="fbc63-267">Följande exempelscenario ger steg-för-steg-instruktioner om hur du ställer in arbetspolicyn för lagerstället för detta scenario.</span><span class="sxs-lookup"><span data-stu-id="fbc63-267">The following example scenario provides step-by-step instructions for setting up the warehouse work policy for this scenario.</span></span>
+
+## <a name="example-scenario-report-as-finished-to-a-location-that-isnt-license-platecontrolled"></a><span data-ttu-id="fbc63-268">Exempelscenario: Rapportera en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt</span><span class="sxs-lookup"><span data-stu-id="fbc63-268">Example scenario: Report as finished to a location that isn't license plate–controlled</span></span>
+
+<span data-ttu-id="fbc63-269">Detta scenario visar ett exempel som visar hur du rapporterar en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-269">This scenario shows an example where a production order is reported as finished to a location that isn't license plate–controlled.</span></span>
+
+<span data-ttu-id="fbc63-270">Den här scenariot använder sig av standard demodata.</span><span class="sxs-lookup"><span data-stu-id="fbc63-270">This scenario uses the standard demo data.</span></span> <span data-ttu-id="fbc63-271">Därför, om du vill arbeta igenom scenariot genom att använda värdena som ges här måste du arbeta på ett system där demodata är installerat.</span><span class="sxs-lookup"><span data-stu-id="fbc63-271">Therefore, if you want to work through it by using the values that are provided here, you must work on a system where demo data is installed.</span></span> <span data-ttu-id="fbc63-272">Dessutom måste du välja den **USMF** juridiska personen.</span><span class="sxs-lookup"><span data-stu-id="fbc63-272">Additionally, you must select the **USMF** legal entity.</span></span>
+
+### <a name="set-up-a-warehouse-work-policy"></a><span data-ttu-id="fbc63-273">Konfigurera en policy för lagerarbete</span><span class="sxs-lookup"><span data-stu-id="fbc63-273">Set up a warehouse work policy</span></span>
+
+<span data-ttu-id="fbc63-274">Lagerställeprocesser inkluderar inte alltid lagerarbete.</span><span class="sxs-lookup"><span data-stu-id="fbc63-274">Warehouse processes don't always include warehouse work.</span></span> <span data-ttu-id="fbc63-275">Genom att definiera en arbetspolicy kan du förhindra skapande av arbete för råmaterialhämtning och inlagring av färdiga varor för en uppsättning av produkter på specifika platser.</span><span class="sxs-lookup"><span data-stu-id="fbc63-275">By defining a work policy, you can prevent the creation of work for raw material picking and putaway of finished goods for a set of products at specific locations.</span></span>
+
+1. <span data-ttu-id="fbc63-276">Gå till **Lagerstyrning \> Inställningar \> Arbete \> Arbetspolicyer**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-276">Go to **Warehouse management \> Setup \> Work \> Work policies**.</span></span>
+1. <span data-ttu-id="fbc63-277">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-277">Select **New**.</span></span>
+1. <span data-ttu-id="fbc63-278">I fältet **Arbetspolicynamn** anger du *Inget inlagringsarbete*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-278">In the **Work policy name** field, enter *No putaway work*.</span></span>
+1. <span data-ttu-id="fbc63-279">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="fbc63-279">On the Action Pane, select **Save**.</span></span>
+1. <span data-ttu-id="fbc63-280">På snabbfliken **Arbetsordertyper** väljer du **Lägg till** om du vill lägga till en rad i rutnätet och sedan ange följande värden för den nya raden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-280">On the **Work order types** FastTab, select **Add** to add a row to the grid, and then set the following values for the new row:</span></span>
+
+    - <span data-ttu-id="fbc63-281">**Arbetsordertyp:** *Plats för slutförda varor*</span><span class="sxs-lookup"><span data-stu-id="fbc63-281">**Work order type:** *Finished goods put away*</span></span>
+    - <span data-ttu-id="fbc63-282">**Arbetsprocess:** *Alla relaterade arbetsprocesser*</span><span class="sxs-lookup"><span data-stu-id="fbc63-282">**Work process:** *All related work processes*</span></span>
+    - <span data-ttu-id="fbc63-283">**Arbetsskapande metod:** *aldrig*</span><span class="sxs-lookup"><span data-stu-id="fbc63-283">**Work creation method:** *Never*</span></span>
+    - <span data-ttu-id="fbc63-284">**Direktleveranspolicynamn:** Lämna det här fältet tomt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-284">**Cross docking policy name:** Leave this field blank.</span></span>
+
+1. <span data-ttu-id="fbc63-285">Välj **Lägg till** igen om du vill lägga till en rad i rutnätet och sedan ange följande värden för den nya raden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-285">Select **Add** again to add a second row to the grid, and then set the following values for the new row:</span></span>
+
+    - <span data-ttu-id="fbc63-286">**Arbetsordertyp:** *Plats för samprodukt och biprodukt*</span><span class="sxs-lookup"><span data-stu-id="fbc63-286">**Work order type:** *Co-product and by-product put away*</span></span>
+    - <span data-ttu-id="fbc63-287">**Arbetsprocess:** *Alla relaterade arbetsprocesser*</span><span class="sxs-lookup"><span data-stu-id="fbc63-287">**Work process:** *All related work processes*</span></span>
+    - <span data-ttu-id="fbc63-288">**Arbetsskapande metod:** *aldrig*</span><span class="sxs-lookup"><span data-stu-id="fbc63-288">**Work creation method:** *Never*</span></span>
+    - <span data-ttu-id="fbc63-289">**Direktleveranspolicynamn:** Lämna det här fältet tomt.</span><span class="sxs-lookup"><span data-stu-id="fbc63-289">**Cross docking policy name:** Leave this field blank.</span></span>
+
+1. <span data-ttu-id="fbc63-290">På snabbfliken **Lagerplatser** väljer du **Lägg till** om du vill lägga till en rad i rutnätet och sedan ange följande värden för den nya raden:</span><span class="sxs-lookup"><span data-stu-id="fbc63-290">On the **Inventory locations** FastTab, select **Add** to add a row to the grid, and then set the following values for the new row:</span></span>
+
+    - <span data-ttu-id="fbc63-291">**Lagerställe:** *51*</span><span class="sxs-lookup"><span data-stu-id="fbc63-291">**Warehouse:** *51*</span></span>
+    - <span data-ttu-id="fbc63-292">**Plats:** *001*</span><span class="sxs-lookup"><span data-stu-id="fbc63-292">**Location:** *001*</span></span>
+
+1. <span data-ttu-id="fbc63-293">På snabbfliken **produkter** ställer du in fältet **produktval** till *valda*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-293">On the **Products** FastTab, set the **Product selection** field to *Selected*.</span></span>
+1. <span data-ttu-id="fbc63-294">På snabbfliken **produkter**, välj **Lägg till** om du vill lägga till rutnätet.</span><span class="sxs-lookup"><span data-stu-id="fbc63-294">On the **Products** FastTab, select **Add** to add a row to the grid.</span></span>
+1. <span data-ttu-id="fbc63-295">I nya rader, ange fältet **Artikelnummer** till *L0101*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-295">In the new row, set the **Item number** field to *L0101*.</span></span>
+1. <span data-ttu-id="fbc63-296">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="fbc63-296">On the Action Pane, select **Save**.</span></span>
+
+### <a name="set-up-an-output-location"></a><span data-ttu-id="fbc63-297">Ställ in en utleveransplats</span><span class="sxs-lookup"><span data-stu-id="fbc63-297">Set up an output location</span></span>
+
+1. <span data-ttu-id="fbc63-298">Gå till **Organisationsadministration \> Resurser \> Resursgrupper**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-298">Go to **Organization administration \> Resources \> Resource groups**.</span></span>
+1. <span data-ttu-id="fbc63-299">I det vänstra fönstret, välj resursgrupp **5102**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-299">In the left pane, select resource group **5102**.</span></span>
+1. <span data-ttu-id="fbc63-300">Ange följande värden på snabbfliken **Allmänt**:</span><span class="sxs-lookup"><span data-stu-id="fbc63-300">On the **General** FastTab, set the following values:</span></span>
+
+    - <span data-ttu-id="fbc63-301">**Utleveranslagerställe:** *51*</span><span class="sxs-lookup"><span data-stu-id="fbc63-301">**Output warehouse:** *51*</span></span>
+    - <span data-ttu-id="fbc63-302">**Utleveransplats:** *001*</span><span class="sxs-lookup"><span data-stu-id="fbc63-302">**Output location:** *001*</span></span>
+
+1. <span data-ttu-id="fbc63-303">Klicka på **Spara** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="fbc63-303">On the Action Pane, select **Save**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="fbc63-304">Plats *001* är en ej ID-nummerstyrd plats.</span><span class="sxs-lookup"><span data-stu-id="fbc63-304">Location *001* isn't a license plate–controlled location.</span></span> <span data-ttu-id="fbc63-305">Du kan ställa in en utgående plats som inte är ID-nummerstyrd utleveransplats bara om en lämplig arbetspolicy finns för platsen.</span><span class="sxs-lookup"><span data-stu-id="fbc63-305">You can set up an output location that isn't license plate–controlled only if an applicable work policy exists for the location.</span></span>
+
+### <a name="create-a-production-order-and-report-it-as-finished"></a><span data-ttu-id="fbc63-306">Skapa en produktionsorder och rapportera den som färdig.</span><span class="sxs-lookup"><span data-stu-id="fbc63-306">Create a production order and report it as finished</span></span>
+
+1. <span data-ttu-id="fbc63-307">Gå till **Produktionskontroll \> Produktionsorder \> Alla produktionsorder**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-307">Go to **Production control \> Production orders \> All production orders**.</span></span>
+1. <span data-ttu-id="fbc63-308">Välj **Ny produktionsorder** i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="fbc63-308">On the Action Pane, select **New production order**.</span></span>
+1. <span data-ttu-id="fbc63-309">I dialogrutan **Skapa produktionsorder** ange fältet **Artikelnummer** till *L0101*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-309">In the **Create production order** dialog box, set the **Item number** field to *L0101*.</span></span>
+1. <span data-ttu-id="fbc63-310">Välj **Skapa** för att skapa den försäljningsordern och stänga dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="fbc63-310">Select **Create** to create the order and close the dialog box.</span></span>
+
+    <span data-ttu-id="fbc63-311">En ny tillverkningsorder läggs till i rutnätet på sidan **Alla produktionsorder**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-311">A new production order is added to the grid on the **All production orders** page.</span></span>
+
+    <span data-ttu-id="fbc63-312">Behåll den nya produktionsordern vald.</span><span class="sxs-lookup"><span data-stu-id="fbc63-312">Keep the new production order selected.</span></span>
+
+1. <span data-ttu-id="fbc63-313">I Åtgärdsfönstret, på fliken **Produktionsorder**, i gruppen **Process**, markerar du **Uppskatta**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-313">On the Action Pane, on the **Production order** tab, in the **Process** group, select **Estimate**.</span></span>
+1. <span data-ttu-id="fbc63-314">I dialogrutan **uppskattningen** läs uppskattningen och välj sedan **OK** för att stänga dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="fbc63-314">In the **Estimate** dialog box, read the estimate, and then select **OK** to close the dialog box.</span></span>
+1. <span data-ttu-id="fbc63-315">I Åtgärdsfönstret, på fliken **Produktionsorder**, i gruppen **Process**, markerar du **Start**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-315">On the Action Pane, on the **Production order** tab, in the **Process** group, select **Start**.</span></span>
+1. <span data-ttu-id="fbc63-316">I dialogrutan **Start** på fliken **Allmänt** anger du fältet **automatisk strukturlisteförbrukning** till *Aldrig*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-316">In the **Start** dialog box, on the **General** tab, set the **Automatic BOM consumption** field to *Never*.</span></span>
+1. <span data-ttu-id="fbc63-317">Välj **OK** om du vill spara inställningarna och stänga dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="fbc63-317">Select **OK** to save your setting and close the dialog box.</span></span>
+1. <span data-ttu-id="fbc63-318">I Åtgärdsfönstret, på fliken **Produktionsorder**, i gruppen **Process**, markerar du **Rapportera som slutförd**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-318">On the Action Pane, on the **Production order** tab, in the **Process** group, select **Report as finished**.</span></span>
+1. <span data-ttu-id="fbc63-319">I dialogrutan **Rapportera som slutförd** på fliken **Allmänt** anger du alternativet **Acceptera fel** till *Ja*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-319">In the **Report as finished** dialog box, on the **General** tab, set the **Accept error** option to *Yes*.</span></span>
+1. <span data-ttu-id="fbc63-320">Välj **OK** om du vill spara inställningarna och stänga dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="fbc63-320">Select **OK** to save your setting and close the dialog box.</span></span>
+1. <span data-ttu-id="fbc63-321">I åtgärdsfönstret, på fliken **Lagerställe**, i gruppen **Allmänt**, väljer du **Arbetsdetaljer**.</span><span class="sxs-lookup"><span data-stu-id="fbc63-321">On the Action Pane, on the **Warehouse** tab, in the **General** group, select **Work details**.</span></span>
+
+<span data-ttu-id="fbc63-322">När tillverkningsordern rapporterades som färdig, genererades inget arbete för plats.</span><span class="sxs-lookup"><span data-stu-id="fbc63-322">When the production order is reported as finished, no work is generated for putaway.</span></span> <span data-ttu-id="fbc63-323">Detta beteende inträffar, eftersom en arbetspolicy definieras som hindrar arbete från att genereras när produkten *L0101* rapporterats som färdig till plats *001*.</span><span class="sxs-lookup"><span data-stu-id="fbc63-323">This behavior occurs because a work policy is defined that prevents work from being generated when product *L0101* is reported as finished to location *001*.</span></span>
+
+## <a name="more-information"></a><span data-ttu-id="fbc63-324">Mer information</span><span class="sxs-lookup"><span data-stu-id="fbc63-324">More information</span></span>
+
+<span data-ttu-id="fbc63-325">Mer information om menyartiklar för mobila enheter finns i [ställa in mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md).</span><span class="sxs-lookup"><span data-stu-id="fbc63-325">For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).</span></span>
+
+<span data-ttu-id="fbc63-326">Detaljerad information om det mottagna ID-numret och arbetspolicyer finns i [Inleverans av ID-nummer som erhålls via lagerställeappen](warehousing-mobile-device-app-license-plate-receiving.md).</span><span class="sxs-lookup"><span data-stu-id="fbc63-326">For more information about license plate receiving and work policies, see [License plate receiving via the warehouse app](warehousing-mobile-device-app-license-plate-receiving.md).</span></span>
+
+<span data-ttu-id="fbc63-327">Mer information om inkommande belastningshantering finns i [Lagerhantering av inkommande laster för inköpsorder](inbound-load-handling.md).</span><span class="sxs-lookup"><span data-stu-id="fbc63-327">For more information about inbound load management, see [Warehouse handling of inbound loads for purchase orders](inbound-load-handling.md).</span></span>
