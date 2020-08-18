@@ -3,7 +3,7 @@ title: Lojalitetsöversikt
 description: Det här avsnittet beskriver lojalitetsfunktioner i Dynamics 365 Commerce och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024105"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613213"
 ---
 # <a name="loyalty-overview"></a>Lojalitetsöversikt
 
@@ -55,7 +55,7 @@ I tabellen nedan beskrivs varje komponent och var den används i lojalitetinstä
 | Ställa in rabatter (förutsättning)                  | Ställa in rabatter som du erbjuder dina förmånskunder. Exempelvis kan du erbjuda 5 procents avdrag på alla kläder. | Rabatter måste läggas till i prisgrupper innan de tas med i ett bonusprogram. Prisgrupper tilldelas till bonusprogram och förmånsnivåer. |
 | Ställa in prisgrupper (förutsättning)               | Prisgrupper används för att skapa och hantera priser och rabatter för produkter. Ställa in de prisgrupper som inkluderar rabatter som gäller för dina bonusprogram. | Prisgrupper tilldelas till bonusprogram och bonusprogramnivåer. |
 | Ställa in kanaler (förutsättning)                   | Handelskanaler är de butiker som ska delta i dina bonusprogram, till exempel fysiska butiker, online-butiker eller kundtjänster. Du måste ställa in dina handelskanaler innan du kan tilldela bonusprogram till dem. | Du tilldelar kanaler till ett bonusprogram, om kanalen deltar i bonusprogrammet. |
-| Ställa in en förmånsbetalningsmetod (förutsättning) | Du måste ställa in en betalningsmetod innan ett förmånskort kan användas i en kassa och förmånspoäng kan lösas in som en del av ett bonusprogram. Du måste också lägga till bonusbetalningsmetod till kanalen innan kunder kan lösa in sina förmånspoäng som betalning för produkter. | Ställa in en förmånstypsbetalningsmetod och sedan tilldela förmånsbetalningsmetoden till de kanalerna som deltar i bonusprogrammet. |
+| Ställa in en förmånsbetalningsmetod (förutsättning) | För att se till att förmånspoängen kan lösas in i vilken kanal som helst, till exempel i fysiska butiker, onlinebutiker eller kundtjänst, måste du ställa in lagerplatsområdet för förmånskorten på sidan **kortnummer**. | Ställa in en förmånstypsbetalningsmetod och sedan tilldela förmånsbetalningsmetoden till de kanalerna som deltar i bonusprogrammet. |
 | Ställa in datumintervall                            | Datumintervall är ett flexibelt sätt att ange tidsspann för bonusnivåer. Använd datumintervall för att ange hur länge en kund kan förbli på en nivå eller hur lång tid en kund måste utföra en aktivitet för att kvalificera för en nivå. | Datumintervall är endast tillgängliga om du använder nivåer i dina bonusprogram. Du väljer det datumintervall som gäller för programnivåerna, och även datumintervallen som gäller för programnivåreglerna. |
 | Ställa in belöningspoäng                             | Belöningspoäng är olika typer av belöningar som du erbjuder kunderna. Belöningspoäng kan vara inlösbara eller icke-inlösbara. Inlösbara belöningspoäng kan bytas ut mot produkter. Icke-inlösbara belöningspoäng används för att spåra syften eller för att flytta en kund till nästa nivå i ett bonusprogram. | Belöningspoäng refereras i nivåregler och används för att kvalificera en kund för en viss nivå. Belöningspoäng refereras också i förmånsscheman i förtjänst- och befrielseregler. I intäktsregler anger du belöningar som en kund kan tjäna för en viss aktivitet. I befrielseregler anger du den belöning som kunden kan lösa in. |
 | Ställa in bonusprogram                          | Bonusprogram är den viktigaste förmånen som du erbjuder. Varje bonusprogram kan även ha tilldelade förmånsnivåer. Rabatter och prisgrupper tilldelas till bonusprogrammen på antingen programnivå eller bonusnivå. | Du skapar förmånsscheman för dina bonusprogram. Du tilldelar förmånskort till dina bonusprogram, förmånskort och kan tilldelas till en kund. Kanaler deltar i bonusprogrammen som har tilldelats till förmånsscheman. Kunder med förmånskort kan delta i de bonusprogram som är tilldelade till kortet. |

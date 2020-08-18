@@ -3,7 +3,7 @@ title: Borttagna eller utfasade funktioner i tidigare versioner
 description: I det här ämnet beskrivs funktioner som har tagits bort, eller som planerats för borttagning från Dynamics 365 for Finance and Operations och tidigare versioner av produkten.
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: bccc9a0a2b0abfdeba248007cfdb2bd599e35f48
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500422"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645399"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Borttagna eller utfasade funktioner i tidigare versioner
 
@@ -62,7 +62,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Ja |
 | **Produktområden som påverkas**         | Ansökning |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Föråldrad: av 1 april 2020 måste utvecklare använda det nya API. |
+| **Status**                         | Inaktuell: från den 1 april 2020 måste utvecklare använda de plattforms-API:er som finns i klassen **HasFunction**. |
 
 ### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(srängmeddelande)
 
@@ -72,7 +72,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Ersatt av en annan funktion?**   | Ja |
 | **Produktområden som påverkas**         | Plattform |
 | **Distribueringsalternativ**              | Allt |
-| **Status**                         | Föråldrad: av 1 april 2020 måste utvecklare använda det nya API. |
+| **Status**                         | Inaktuell: från den 1 april 2020 måste utvecklare använda de plattforms-API:er som finns i klassen **HasFunction**. |
 
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
@@ -616,7 +616,7 @@ Ett verktyg för att ställa in datainsamling för redovisning och momsrapporter
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Import av kundbetalningstransaktioner för Finland
 
-Du kan välja ett importformat för finska betalningar som importerar kundbetalningstransaktioner från en extern fil som tillhandahålls av banken.
+Du kan välja ett importformat för finländska betalningar som importerar kundbetalningstransaktioner från en extern fil som tillhandahålls av banken.
 
 |   |  |
 |------------|--------------------|
@@ -1125,7 +1125,7 @@ Genereringen av förauktoriseringar kan inte utföras med hjälp av en batch men
 | **Produktområden som påverkas**         | Alla moduler  |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
-### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Tyskt DTAZV betalningsformat i nationell valuta
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Tyskt DTAZV betalningsformat i inhemsk valuta
 
 |   |  |
 |------------|--------------------|

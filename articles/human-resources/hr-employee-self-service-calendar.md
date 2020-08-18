@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0efc2b50b080b769cb103d1519217517b8330668
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429668"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628439"
 ---
 # <a name="view-team-and-company-calendars"></a>Visa team- och företagskalendrar
 
@@ -33,15 +33,13 @@ Du kan visa team- och företagskalendrar i Dynamics 365 Human Resources. Endast 
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Visa teamkalendern som en medarbetare
 
-1. I arbetsytan **Självbetjäning för medarbetare** välj **Mitt team**.
-
-2. Välj **Tjänstledighet och frånvaro** och välj sedan **Visa teamkalender**.
+1. I arbetsytan **Självbetjäning för medarbetare** väljer du **Frånvarokalender för team** under **Sammanfattning**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Visa teamkalendern som en chef
 
 1. I arbetsytan **Självbetjäning för medarbetare** välj **Mitt team**.
 
-2. Välj **Tjänstledighet och frånvaro** och välj sedan **Visa teamkalender**.
+2. Välj **Tjänstledighet och frånvaro** och välj sedan **Visa frånvarokalender för chef**.
 
 Chefer kan också komma åt teamkalendern från **Väntande ledighetsansökningar för mitt team**, **Godkänd ledighet** och **Ledighetsansökningar**. 
 

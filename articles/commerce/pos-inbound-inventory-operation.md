@@ -3,7 +3,7 @@ title: Inkommande lageråtgärder i kassan
 description: Det här ämnet beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551611"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627548"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551611"
 I Microsoft Dynamics 365 Commerce version 10.0.10 och senare ersätter inkommande och utgående åtgärder i kassan (POS) åtgärden plockning och inleverans.
 
 > [!NOTE]
-> I version 10.0.10 och senare kommer alla nya funktioner i kassaprogrammet som är relaterade till att ta emot butikslager att tas med i inköpsorder och överföringsorder att läggas till i kassaåtgärden **Inkommande åtgärd**. Om du använder åtgärden för plockning och mottagning i kassa rekommenderar vi att du utvecklar en strategi för att flytta från den åtgärden till nya inkommande och utgående åtgärder. Även om åtgärden för plockning och mottagning inte tas bort från produkten, finns det inga ytterligare investeringar i den, från ett funktionellt eller resultatperspektiv efter version 10.0.9.
+> I Commerce version 10.0.10 och senare kommer alla nya funktioner i kassaprogrammet som är relaterade till att ta emot butikslager att tas med i inköpsorder och överföringsorder att läggas till i kassaåtgärden **Inkommande åtgärd**. Om du använder åtgärden för plockning och mottagning i kassa rekommenderar vi att du utvecklar en strategi för att flytta från den åtgärden till nya inkommande och utgående åtgärder. Även om åtgärden för plockning och mottagning inte tas bort från produkten, finns det inga ytterligare investeringar i den, från ett funktionellt eller resultatperspektiv efter version 10.0.9.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Förutsättning: Konfigurera ett asynkront dokumentramverk
 
@@ -153,6 +153,20 @@ Du bör bara använda funktion **Avbryt inleverans** på appfältet endast om du
 Om du uppfyller lagermottagning kan du använda funktionen **pausa inleverans** för att pausa uppfyllelse om du vill ta en paus från inleveransen. Du kanske till exempel vill utföra en annan åtgärd från kassa, t.ex. att ringa upp en kundförsäljning, eller att försena bokföringen av inleveransen.
 
 När du väljer **Pausa inleverans** ändras dokumentets status till **Pausa**. Därför vet användaren att data har registrerats i dokumentet, men dokumentet har ännu inte genomförts. När du är redo att återuppta inleveransen markerar du det pausade dokumentet och väljer **orderdetaljer**. Alla kvantiteter **Inleverans nu** kvantiteter som tidigare sparats kommer att behållas och kan ses från **fullständig orderlista**.
+
+### <a name="review"></a>Granska
+
+Innan det slutliga åtagandet från kvittot till Commerce-administration (HQ) kan du validera det inkommande dokumentet med hjälp av granskningsfunktionen. Granskningen varnar för data som saknas eller är felaktiga och ger dig möjlighet att rätta till problemen innan du skickar in begäran om kvitto. Om du vill aktivera funktionen **Granska** i programfältet aktiverar du funktionen **Aktivera validering i kassans inkommande och utgående lageråtgärder** via arbetsytan **Funktionshantering** i Commerce-administration (HQ).
+
+Funktionen **granska** validerar följande problem i ett inkommande dokument:
+
+- **Överleverans** – den mottagna nu kvantiteten är större än den beställda kvantiteten. Problemets allvar beror på överleveransens konfiguration i Commerce-administration (HQ).
+- **Underleverans** – den mottagna nu kvantiteten är mindre än den beställda kvantiteten. Problemets allvar beror på underleveransens konfiguration i Commerce-administration (HQ).
+- **Serienummer** – serienumret har inte angetts eller validerats för en serialiserad artikel som kräver att serienumret registreras i lagret.
+- **Ingen plats angiven** – ingen plats har angetts för en plats kontrollerad artikel där tom plats inte är tillåten.
+- **Borttagna rader** – ordern har rader tagits bort av Commerce-administration (HQ) som inte är känd för kassaprogram.
+
+Ställ in parametern **Aktivera automatisk validering** till **Ja** i **Commerce-parametrar** > **Lager** > **Lagerhantering** om du vill att valideringen ska utföras automatiskt när **Slutför mottagande** är vald.
 
 ### <a name="finish-receiving"></a>Slutför mottagande
 

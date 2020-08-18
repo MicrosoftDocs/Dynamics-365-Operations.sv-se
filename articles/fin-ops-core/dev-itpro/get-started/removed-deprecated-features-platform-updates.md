@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606832"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651676"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -38,8 +38,7 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.13 för Finance and Operations-appar
 
 > [!NOTE]
-> Version 10.0.13 har ännu inte frisläppts. Denna information tillhandahålls för planeringsändamål. Funktionen och dess innehåll för version 10.0.13 kan ändras. Mer information om versioner finns i [Tillgänglighet för tjänstuppdateringar](../../fin-ops/get-started/public-preview-releases.md).
-
+> Version 10.0.13 är en förhandsgranskningsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Uppgradering av tre jQuery-komponentbibliotek 
 
@@ -50,6 +49,27 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 | **Produktområden som påverkas**         | Utökningsbara kontroller, anpassad JavaScript-kod använda gamla API:er |
 | **Distribueringsalternativ**              | Allt |
 | **Status**                         | Med version 10.0.13/plattformsuppdatering 37 kan kunderna flytta till de senaste biblioteken genom att aktivera funktionen "uppgradera tre jQuery komponentbibliotek". Det är obligatoriskt att flytta till de nya biblioteken med utgåvan från april 2021 för att kunna migrera berörda API:er.   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>Befintlig rutnätskontroll/forceLegacyGrid() API
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Den befintliga rutnätskontrollen ersätts av den nya rutnätskontrollen. |
+| **Ersatt av en annan funktion?**   | Den [nya rutnätskontrollen](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Produktområden som påverkas**         | Webbklient |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | I version 10.0.13 är den nya rutnätskontrollen allmänt tillgänglig och kunder kan välja att aktivera den här funktionen. Den nya rutnätskontrollen kommer att vara obligatorisk i versionen oktober 2021. När den nya rutnätskontrollen blir obligatorisk kommer **forceLegacyGrid()** API inte längre att användas. |
+
+### <a name="personalization-without-saved-views"></a>Anpassning utan sparade vyer 
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Undersystemet för anpassning har dragits av med funktionen Sparade vyer så att den har bättre prestanda och erbjuder ytterligare funktioner. |
+| **Ersatt av en annan funktion?**   | Sparade vyer |
+| **Produktområden som påverkas**         | Webbklient |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | I version 10.0.13/plattformsuppdatering 37 är funktionen Sparade vyer vanligtvis tillgänglig och kunder kan välja att aktivera den här funktionen. Funktionen sparade vyer kommer att vara obligatorisk i versionen oktober 2021. |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.12 för Finance and Operations-appar
 

@@ -3,7 +3,7 @@ title: Produkt- och kundsökning i kassan (POS)
 description: Det här avsnittet innehåller en översikt över de förbättringar som har gjorts i produkt- och kundsökfunktionen i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 2b4c17b41056a35c2d2caaedb4f52998179b3c3e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024013"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628919"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i kassan (POS)
 
@@ -95,6 +95,9 @@ I samband med fjärrkundsökning visas inte kundens ID för kunder från andra j
 
 Sökningar som är baserade på telefonnummer har förenklats. Dessa sökningar kan nu ignorera specialtecken såsom blanksteg, bindestreck och parenteser som kan ha lagts till när kunden skapades. Därför behöver kassörerna inte ta hänsyn till telefonnummerformatet när de söker. De kan även söka efter kunder genom att skriva en del av ett telefonnummer. Om ett telefonnummer innehåller specialtecken kan du även hitta det genom att söka efter de siffror som visas efter specialtecknet. Om ett kundtelefonnummer exempelvis angetts som **123-456-7890** kan en kassör söka efter kunden genom att skriva in **123**, **456**, **7890** eller **1234567890**, eller genom att ange de första siffrorna i telefonnumret.
 
+> [!NOTE]
+> En kund kan ha flera telefonnummer och flera e-postadresser. Kundens sökalgoritm söker också igenom dessa sekundära e-postadresser och telefonnummer, men sidan med sökresultat för kund visar endast primär e-postadress och telefonnummer. Detta kan leda till en del förvirring när det returnerade kundresultatet inte visar den sökta e-postadressen eller telefonnumret. I en senare version planerar vi att förbättra skärmen för kundens sökresultat för att visa den här informationen.
+
 Vanlig kundsökning kan vara tidskrävande, eftersom den söker över flera fält. Kassörer kan istället nu söka i en kudegenskap, till exempel namn, telefonnummer eller e-postadress. Egenskaper som kundens sökalgoritm använder kallas *sökvillkor för kund*. Systemadministratören kan enkelt konfigurera ett eller flera kriterier som genvägar som visas i kassan. Eftersom sökningen är begränsat till ett enda villkor visas endast relevanta sökresultat och den får mycket bättre prestanda än en standardkundsökningsprestanda. I följande illustration visas kundens sökgenvägar i kassan.
 
 ![Genvägar för kundsökning](./media/SearchShortcutsPOS.png "Genvägar för kundsökning")
@@ -114,3 +117,4 @@ Fältet **visningsordning** anger den ordning som genvägarna visas i kassan. Kr
 I en kommande version av Handel kan återförsäljare ställa in standardsökläget för kunder i kassan för att **söka igenom alla butiker**. Den här konfigurationen kan vara till hjälp i situationer där kunder som har skapats utanför kund måste sökas igenom direkt (t.ex. till och med innan fördelningsjobbet körs). En nytt alternativ för **standardsökläget för kunder** är tillgängligt i funktionsprofilen för kassan. Ställ in den på **på** för att ange att standardsökläget **söka igenom alla butiker**. Varje kunds sökning gör då ett realtidssamtal till huvudkontoret.
 
 För att förhindra att oväntade prestandaproblem döljs den här konfigurationen bakom en förhandsversionsflagga som kallas **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Om du därför vill visa inställningen **standardsökläget för kunder** för kund i användargränssnittet måste återförsäljaren skapa ett acceptanstestet för användare (UAT) och produktionsmiljön. När ärendet har tagits emot arbetar teknikteamet tillsammans med återförsäljaren för att säkerställa att återförsäljaren testar i sina miljöer för icke-produktion för att bedöma prestanda och implementera eventuella optimeringar som krävs.
+

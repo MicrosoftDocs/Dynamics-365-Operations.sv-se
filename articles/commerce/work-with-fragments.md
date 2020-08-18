@@ -3,7 +3,7 @@ title: Arbeta med fragment
 description: I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 7ae834f38fe380ce0a66f5b1968f1261af670979
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124369"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646001"
 ---
 # <a name="work-with-fragments"></a>Arbeta med fragment 
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 I det här avsnittet beskrivs varför, när och hur du ska använda fragment i Microsoft Dynamics 365 Commerce.
 
@@ -62,9 +62,10 @@ Du kan antingen skapa ett nytt fragment eller spara en befintlig modul som ett f
 Om du vill konvertera en tidigare konfigurerad modul till ett återanvändbart fragment följer du stegen nedan.
 
 1. Öppna en sida eller mall som innehåller modulen som du vill konvertera till ett fragment.
-1. Markera ellipsknappen i dispositionsrutan till vänster (**...**) bredvid modulens namn. 
-1. Välj **dela som fragment**. 
-1. En dialogruta visas. Ange ett namn och metadata för fragmentet.
+1. Markera den tidigare konfigurerade modulen i dispositionsrutan till vänster eller direkt i huvudarbetsytan.
+1. Markera tre punkter (**...**) bredvid modulens namn i antingen dispositionsfönstret eller i den markerade modulens verktygsfält på arbetsytan. 
+1. Välj **dela som sidfragment**. 
+1. I dialogrutan **Spara som sidfragment** anger du namnet för fragmentet.
 1. Välj **OK** om du vill spara modulens konfiguration som ett fragment som kan läggas till på andra sidor.
 
 Följande bild visar hur du sparar en moduls konfiguration som ett fragment.
@@ -94,15 +95,16 @@ I följande procedurer beskrivs hur du lägger till, tar bort och redigerar frag
 
 Om du vill lägga till ett fragment till en sida gör du följande.
 
-1. I dispositionsrutan till vänster väljer du en behållare eller en plats som underordnade moduler kan läggas till i.
-1. Markera knappen med punkter bredvid namnet på behållaren eller platsen och välj sedan **Lägg till fragment**. En dialogruta visas.
+1. I dispositionsfönstret till vänster eller direkt i huvudarbetsytan, välj en behållare eller fack som underordnade moduler kan läggas till.
+1. Välj tre punkter (**...**) bredvid namnet på behållaren eller platsen.  Om du vill kan du även välja plustecknet (**+**) om du använder huvudarbetsytan.  
+1. Välj **Lägg till fragment**.
 
     ![En skärmbild av hur man lägger till ett befintligt fragment på en plats eller en behållare](./media/add-fragment.png)
  
     > [!NOTE]
     > Om en behållare eller en plats inte stöder nya underordnade moduler är alternativet **Lägg till fragment** inte tillgängligt.
     
-1. Sök efter och markera ett fragment som ska läggas till i dialogrutan. Om det inte finns några tillgängliga fragment kanske du först måste skapa ett fragment från en modultyp som den valda behållaren eller platsen stöder.
+1. Sök efter och markera ett fragment som ska läggas till i dialogrutan **Lägg till fragment**. Om det inte finns några tillgängliga fragment kanske du först måste skapa ett fragment från en modultyp som den valda behållaren eller platsen stöder.
 1. Välj önskat fragment om du vill lägga till behållaren eller platsen på sidan.
 
     ![En skärmdump av spärrat fönster för fragmentväljare](./media/fragment-picker.png)
@@ -114,7 +116,7 @@ Om du vill lägga till ett fragment till en sida gör du följande.
 
 För att ta bort ett fragment från en plats eller behållare på en sida, följ dessa steg.
 
-1. Markera ellipsknappen bredvid namnet på det fragment som du vill ta bort i dispositionsrutan till vänster och markera sedan knappen papperskorgen.
+1. I dispositionsrutan till vänster, välj ellipsknappen (**...**) bredvid namnet på det fragment som du vill ta bort och markera sedan knappen papperskorgen.  Du kan också markera avsnittet på arbetsytan och välja papperskorgssymbolen i fragmentets verktygsfält.
 1. När du uppmanas att bekräfta att du vill ta bort fragmentet väljer du **OK**.
 
 > [!NOTE]

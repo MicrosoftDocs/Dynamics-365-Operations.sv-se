@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0d5265079dd96b272d13b30436b83b94bdb7297f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: fa67cdc7ad07c1384c4a0bad453447a464adf144
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530292"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652093"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.11 (juli 2020)
 
@@ -39,11 +39,11 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
 - [Lagring av lagerbehållningsrapport](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [Förbättringar i Inleverans med ID-nummer för lagerstyrningsapp](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Mer information finns i [Inleverans med ID-nummer via lagerstyrningsapp](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Förbättringar av radreservation för formuläret batchnummer-reservation](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – mer information finns i [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Förbättringar av inleverans av ID-nummer med distributionslagerappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Mer information finns i [Inleverans av ID-nummer du via distributionslagerappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Förbättringar av radreservationen för reservationsformuläret batchnummer](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Mer information finns i [Reservera samma batch för en försäljningsorder](../sales-marketing/reserve-same-batch-sales-order.md).
 - [Nya dataenheter för tillverkningsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Överinleverans av lastkvantiteter](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
-- [Rapportera som färdig för batchnummer från jobbkortsenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) – Mer information finns i [rapportera som färdigt från jobbkortenheten](../production-control/report-finished-job-device.md)
+- [Överinleverans av lastkvantiteter](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Mer information finns i [Lagerhantering av inkommande laster för inköpsorder](../warehousing/inbound-load-handling.md).
+- [Rapportera som färdig för batchnummer från jobbkortsenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Mer information finns i [Rapportera som färdig från jobbkortenhet](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

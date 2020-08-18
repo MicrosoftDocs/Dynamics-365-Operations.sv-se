@@ -3,7 +3,7 @@ title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411352"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645349"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
@@ -61,7 +61,7 @@ Teman kan användas för att ta bort eller ändra ordningen på produktegenskape
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler kan användas i modul för inköpsruta
 
-- **Mediegalleri** – den här modulen används för att visa bilder av en produkt på en produktinformationssida. Det kan stödja en till många bilder. Den stöder också miniatyrbilder. Miniatyrbilderna kan antingen ordnas vågrätt (som en rad under bilden) eller lodrätt (som en kolumn bredvid bilden). Modulen mediegalleri kan läggas till i platsen **media** i modulen inköpsruta. Den stöder för närvarande endast bilder. 
+- **Mediegalleri** – den här modulen används för att visa bilder av en produkt på en produktinformationssida. Mer information om den här modulen finns i [Modul för mediegalleri](mediagallery-module.md).
 - **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Mer information om den här modulen finns i [Modul för butiksväljare](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Inställningar för modul för inköpsruta
@@ -112,11 +112,13 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 
 [Modul för butiksväljare](store-selector.md)
 
+[Modul för mediegalleri](media-gallery-module.md)
+
 [Behållarmodul](add-container-module.md)
 
 [Kundvagnsmodul](add-cart-module.md)
 
-[Vagnikonmodul](cart-icon-module.md)
+[Ikon för kundvagnsmodul](cart-icon-module.md)
 
 [Kassamodul](add-checkout-module.md)
 

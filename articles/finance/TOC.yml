@@ -70,6 +70,8 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.13 (oktober 2020)
+                      href: get-started/whats-new-changed-10-0-13.md
                     - name: Finance 10.0.12 (augusti 2020)
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: Finance 10.0.11 (juli 2020)
@@ -107,23 +109,23 @@
             - name: Utbildningskatalog
               items:
                 - name: Hemsida för utbildningskatalog
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Företagets beslutsfattare
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: Företagsanvändare
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Projektledare för distribution
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratörer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Utvecklare
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Försäljning och marknadsföring för partners
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionskonsulter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Lösningsarkitekter
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Utforska användargränssnittet
               items:
                 - name: Användargränssnittselement
@@ -846,6 +848,8 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: Bearbeta allokeringar
                   href: general-ledger/process-allocations.md
+                - name: Allokeringsvillkor
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: Ekonomiska dimensioner
                   href: general-ledger/financial-dimensions.md
                 - name: Konsolideringskontogrupper och ytterligare konsolideringskonton
@@ -1122,6 +1126,8 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Skapa en avancerad redovisningspost i den offentliga sektorn
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+                - name: Rapport för råbalans med transaktionsinformation
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Använd gränser för kontantkontroll
                   href: public-sector/cash-control.md
                 - name: Årsslutsbearbetning i offentlig sektor
@@ -1146,6 +1152,8 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Lägga till en leverantörscertifieringstyp i den offentliga sektorn
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: Beräkna kanadensisk HST (Harmonised Sales Tax)
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Ekonomisk rapportering
           items:
             - name: Översikt över ekonomisk rapportering
@@ -1846,6 +1854,8 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: Nyheter och ändringar i 10.0.11
                           href: localizations/apac-ind-news-letter-10-0-11.md
+                        - name: Nyheter och ändringar i 10.0.12
+                          href: localizations/apac-ind-news-letter-10-0-12.md
                     - name: 'Referensgrupper för GST (moms), Indien'
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST (moms)‑integration för kassaapparater
@@ -2632,10 +2642,14 @@
                   href: localizations/emea-esp-promissory-note-options.md
                 - name: Rapport 340
                   href: localizations/emea-esp-report-340.md
+                - name: Deklaration 347-rapport
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: Inköps- och försäljningscykler
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Särskilda poster och ingående ark
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: Omedelbar inlämning av momsinformation
+                  href: localizations/emea-esp-sii.md
             - name: Sverige
               items:
                 - name: Sverige – översikt

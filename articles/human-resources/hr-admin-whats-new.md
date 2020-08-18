@@ -3,7 +3,7 @@ title: Nyheter och ändringar i Human Resources
 description: Varje vecka tillhandahåller vi en ny lansering för Microsoft Dynamics 365 Human Resources. Artiklarna som anges här beskriver ändringarna som görs varje vecka.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/01/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 418ac9cf680f3a3f6316888c62f02b4dc86030c9
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: a0fc9d521d40f47821d6134ebef4dc041df3059f
+ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555373"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3614322"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheter och ändringar i Human Resources
 
@@ -41,6 +41,7 @@ Mer information om kommande funktioner eller uppdateringsprocessen för personal
 
 Information om vad som är nytt eller ändrat i varje utgåva varannan vecka av Personal finns i följande artiklar:
 
+[23 juli 2020](hr-whats-new-2020-07-23.md)</br>
 [8 juli 2020](hr-whats-new-2020-07-08.md)</br>
 [23 juni 2020](hr-whats-new-2020-06-23.md)</br>
 [11 juni 2020](hr-whats-new-2020-06-11.md)</br>

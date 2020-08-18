@@ -3,7 +3,7 @@ title: Kassaflödesprognoser
 description: Det här avsnittet innehåller en översikt över kassaflödeprognosprocess. Dessutom beskrivs hur kassaflödesprognos är integrerad med andra moduler i systemet.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188428"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653786"
 ---
 # <a name="cash-flow-forecasting"></a>Kassaflödesprognoser
 
@@ -104,6 +104,13 @@ Beräkna kassaflödesprognosen genom att använda sdian **beräkna kassaflödesp
 
 Du kan också använda batchbearbetning för din kassaflödesprognos. För att garantera att prognosanalysen uppdateras regelbundet, anger du en återkommande batchprocess för beräkning av kassaflödesprognos.
 
+I version 10.0.13 släpptes en förbättring av beräkningsprocessen som använder ramverket för processautomatisering för att tidsplanera kassaflödesberäkningen. Detta aktiveras med funktionen **Automatisering av kassaflödesprognos** i arbetsytan **Funktionshantering**. När den är aktiverad väljer du länken **Automatisering av kassaflödesprognos** för att visa den nya automatiseringssidan där du kan schemalägga beräkningsprocessen för kassaflödet. Om du vill skapa en ny kassaflödesprognos kan du välja **Skapa ny processautomatisering** och sedan välja **Automatisering av kassaflödesprognos** på menyn **Schematyp**. Du måste ställa in ett schema för varje företag som du uppdaterar kassaflödesprognosdata för.  På den här sidan visas också vilka automatiseringsjobb för kassaflödesprognoser som väntar och när det senaste jobbet slutfördes.  
+
+> [!NOTE] 
+> Om befintliga batchjobb redan har schemalagts för kassaflödesprognoser visas ett felmeddelande och du kan inte aktivera den här funktionen. Befintliga batchjobb måste rensas innan du kan aktivera den här funktionen. 
+
+Mer information finns i [Processautomatisering](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
 ### <a name="reporting"></a>Rapportering
 
 När du har berälnat kassaflödesprognosen måste du uppdatera den kopplade entitetsinformationen för analytisk rapportering. På sidan **Enhetslagring** anger du mätningen **LedgerCovLiquidityMeasurement aggregera** och klickar sedan på **uppdatera**.
@@ -128,7 +135,7 @@ Arbetsytan **kassaöversikt – alla företag** visar kassaflödesanalys i syste
 
 Arbetsytan **kassaöversikt – aktuellt företag** visar kassaflödesprognosanalyser i företagets definierade redovisningsvaluta. Redovisningsvalutan som används för analysen definieras på sidan **redovisning**. Den här arbetsytan visar en översikt över kassaflödesprognos och bankkontosaldon för det aktuella företaget. Ett diagram över kassainflöden och kassautflöden ger en översikt över framtida kassaflödesrörelser och saldon i redovisningsvalutan tillsammans med detaljerad information om de prognostiserade transaktionerna. Du kan också se prognostiserade valutasaldon.
 
-Mer information om kassaflödesprognosanalys finns i kassaöversikt Power BI-innehåll.
+Mer information om kassaflödesprognosanalys finns i [kassaöversikt Power BI-innehåll](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) topic.
 
 Dessutom kan du visa kassaflödesprognoser för specifika konton, order och artiklar på följande sidor:
 

@@ -1,0 +1,85 @@
+---
+title: Förhandsfunktioner i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
+description: Det här ämnet beskriver nya eller ändrade funktioner i Dynamics 365 Supply Chain Management 10.0.13.
+author: kamaybac
+manager: tfehr
+ms.date: 07/31/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: kamaybac
+ms.search.validFrom: 2020-07-31
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: dae936ea9a72b865096cdda54d767f3e44816e20
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.translationtype: HT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652269"
+---
+# <a name="preview-features-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Förhandsfunktioner i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Supply Chain Management förhandsversion 10.0.13. Den här versionen har ett versionsnummer för 10.0.569 och är tillgänglig enligt följande: 
+
+- **Förhandsversion:** augusti 2020
+- **Allmän tillgänglighet (självuppdatering):** september 2020
+- **Automatisk uppdatering:** oktober 2020
+
+## <a name="features-included-in-this-release"></a>Funktioner som ingår i den här versionen
+
+Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation som för närvarande är tillgängliga för den funktionen. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
+
+- [Ändra terminologin för annullering av stängning av lager till "omvänd stängning av lager"](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - Mer information om [stängning av lager](../cost-management/inventory-close.md).
+
+- [Bekräfta utgående leveranser från batchjobb](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Mer information finns i [Bekräfta utgående försändelser från batchjobb](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
+
+- [Delegering av flera arbetsuppgifter för inköp](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Mer information finns i [delegera arbetsuppgifter till ett arbetsflöde](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
+
+- [Ange och serienummer vid rapportering som färdiga från jobbkortenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - Mer information finns i [Rapportera som färdig från jobbkortenhet](../production-control/report-finished-job-device.md).
+
+- [Nya lagerdimensioner för spårning av produktversioner och förbättrad utökning](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Mer information finns i [Produktdimensioner](../pim/product-dimensions.md).
+
+- [Orderallokerad reservation baserad på ID-nummer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Mer information finns i [Flexibel reservation av ID-nummer](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+
+- [Visualisering av utgående arbetsbelastning](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
+
+- [Översikt över arbetsplockrad](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+
+- [Arbetspolicyförbättringar för inkommande arbete](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Mer information finns i [Policyer för lagerställe](../warehousing/warehouse-work-policies.md).
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformsuppdateringar för Finance and Operations-appar
+
+Microsoft Dynamics 365 Supply Chain Management 10.0.13 inkluderar plattformsuppdateringar. Mer information finns i [plattformsuppdateringar för version 10.0.13 av Finance and Operations appar (oktober 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-13.md).
+
+### <a name="bug-fixes"></a>Felkorrigeringar
+
+Om du vill ha information om felkorrigeringar som ingår i varje uppdatering som ingår i 10.0.13 loggar du in på Lifecycle Services (LCS) och visar [KB-artikel](https://fix.lcs.dynamics.com/Issue/Details?bugId=476824&dbType=3&qc=18d329e7d9887a622bada690791f5814dbbef22bb6f4eaada3718299f40132fd). 
+
+### <a name="dynamics-365-2020-release-wave-2-plan"></a>Dynamics 365: 2020 utgivningsvåg 2 plan
+
+Har du frågor om nya och kommande funktioner i våra affärsappar eller plattformen?
+
+Se [Dynamics 365: 2020 utgivningsvåg 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Vi har sammanställt all information som du kan tänkas behöva på ett enskilt dokument som du kan använda för din planering.
+
+### <a name="removed-and-deprecated-supply-chain-management-features"></a>Borttagna och inaktuella funktioner för Supply Chain Management
+
+De [borttagna eller föråldrade funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) i ämnet beskriver funktioner som har schemalagts eller är planerade att tas bort eller inaktuellt för Supply Chain Management.
+
+- En *borttagen* funktion är inte längre tillgänglig i produkten.
+- En *borttagen* funktion är inte i aktiv utveckling och kan tas bort i en kommande uppdatering.
+
+Innan någon funktion tas bort från produkten visas understrykningsmeddelandet i ämnet [borttagna eller inaktuella funktionerna i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 månader före avhämtningen.
+
+För att bryta ändringar som endast påverkar kompileringen, men är binära kompatibla med begränsade lägen och produktionsmiljöer, blir utgångstiden mindre än 12 månader. Vanligtvis är dessa funktionsuppdateringar som måste göras till kompileraren.

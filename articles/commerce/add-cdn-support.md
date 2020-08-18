@@ -3,7 +3,7 @@ title: Lägga till stöd för ett innehållsleveransnätverk (CDN)
 description: I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk (CDN) på Microsoft Dynamics 365 Commerce-miljön.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: febef3bcc06dc1b5868a0decebee33d76110c505
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533354"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646049"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Lägga till stöd för ett innehållsleveransnätverk (CDN)
 
@@ -35,7 +35,7 @@ I det här avsnittet beskrivs hur du lägger till ett innehållsleveransnätverk
 
 När du ställer in en näthandelsmiljö i Dynamics 365 Commerce kan du konfigurera den så att den fungerar med ditt CDN-tjänst. 
 
-Din anpassade domän kan aktiveras under etableringsprocessen för näthandelsmiljön. Du kan också använda en serviceförfrågan för att ställa in den när etableringen har slutförts. Etableringsprocessen för näthandelsmiljön genererar ett värdnamn som associeras med miljön. Det här värdnamnet har följande format, där *e-handelsinnehavarens-namn* är namnet på din miljö:
+Din anpassade domän kan aktiveras under etableringsprocessen för näthandelsmiljön. Du kan också använda en serviceförfrågan för att ställa in den när etableringen har slutförts. Etableringsprocessen för näthandelsmiljön genererar ett värdnamn som associeras med miljön. Det här värdnamnet har följande format, där \<*e-commerce-tenant-name*\> är namnet på din miljö:
 
 &lt;e-handelsinnehavarens-namn&gt;.commerce.dynamics.com
 
@@ -74,18 +74,20 @@ Alla CDN-tjänster kan användas, men i det här avsnittet används Azure Front 
 
 Information om hur du ställer in Azure Front Door Service finns i [snabbstart: skapa en Front Door för ett mycket tillgängligt globalt webbprogram](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### <a name="configure-a-back-end-pool-in-azure-front-door-service"></a>Konfigurera en serverpool i Azure Front Door Service
+### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurera en serverpool i Azure Front Door Service
 
 För att konfigurera en serverpool i Azure Front Door Service, följ dessa steg.
 
 1. Lägg till **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** till en serverpool som en anpassad värd som har en tom servervärdrubrik.
-1. Under **hälsosonder** i fältet **sökväg** ange **/keepalive**.
-1. I fältet **intervall (sekunder)** anger du **255**.
 1. Under **belastningsutjämning** lämna standardvärdena.
 
-I följande bild visas dialogrutan **Lägg till en serverpool** i Azure Front Door Service.
+I följande bild visas dialogrutan **Lägg till en serverpool** i Azure Front Door Service med serverpoolens värdnamn angivet.
 
 ![Lägga till en dialogruta för en serverpool](./media/CDN_BackendPool.png)
+
+I följande bild visar dialogrutan **Lägg till en serverpool** i Azure Front Door Service med standardvärden för belastningsutjämning.
+
+![Lägga till en dialogruta för en serverpool fortsatt](./media/CDN_BackendPool_2.png)
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Ställ in regler i Azure Front Door Service
 
@@ -121,20 +123,22 @@ I följande bild visas dialogrutan **Lägg till en regel** i Azure Front Door Se
 
 ![Dialogrutan Lägg till en regel](./media/CDN_CachingRule.png)
 
-När den här inledande konfigurationen har distribuerats måste du lägga till din anpassade domän i konfigurationen för Azure Front Door Service. Om du vill lägga till den anpassade domänen (t.ex. `www.fabrikam.com`), måste du konfigurera ett kanoniskt namn (CNAME) för domänen.
+> [!WARNING]
+> Om den domän som du ska använda redan är aktiv och publicerad, skapar du ett supportärende från panelen **Support** i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) för att få hjälp med nästa steg. Mer information finns i [Få support för Finance and Operations-appar eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+Om din domän är ny och inte är en befintlig aktiv domän kan du lägga till din anpassade domän i konfigurationen för Azure Front Door Service. Detta gör att webbtrafik kan dirigeras till din webbplats via Azure Front Door Service. Om du vill lägga till den anpassade domänen (t.ex. `www.fabrikam.com`), måste du konfigurera ett kanoniskt namn (CNAME) för domänen.
 
 I följande bild visas dialogrutan **CNAME-konfiguration** i Azure Front Door Service.
 
 ![Dialogrutan CNAME-konfiguration](./media/CNAME_Configuration.png)
-
-> [!NOTE]
-> Om den domän som du ska använda redan är aktiv och publicerad kontaktar du support för att aktivera den här domänen med Azure Front Door Service för att ställa in ett test.
 
 Du kan använda Azure Front Door Service för att hantera certifikatet, eller så kan du använda ditt eget certifikat för den anpassade domänen.
 
 I följande bild visas dialogrutan **anpassade domän-HTTPS** i Azure Front Door Service.
 
 ![Dialogrutan anpassad domän-HTTPS](./media/Custom_Domain_HTTPS.png)
+
+Detaljerad information om hur du lägger till en anpassad domän i din Azure Front Door Service finns i [lägga till en anpassad domän i din Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
 
 Din CDN ska nu vara korrekt konfigurerad så att den kan användas med din näthandelsplats.
 

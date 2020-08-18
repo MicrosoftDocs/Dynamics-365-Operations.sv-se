@@ -3,7 +3,7 @@ title: Aktivera Azure Active Directory-autentisering för kassainloggning
 description: I det här avsnittet beskrivs hur du konfigurerar inloggnings upplevelsen för Microsoft Dynamics 365 Commerce kassa (POS) så att den använder Azure Active Directory-autentisering.
 author: boycezhu
 manager: annbe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: ccb2d62b09153d03b064d9661227f3499d67bca2
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410045"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641043"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Aktivera Azure Active Directory-autentisering för kassainloggning
 [!include [banner](includes/banner.md)]
@@ -64,9 +64,12 @@ Om du vill associera ett Azure AD-konto med en arbetare följer du stegen nedan.
 
 Fälten **Alias**, **UPN** och **Extern underidentifierare** på fliken **Commerce** på arbetarens detaljsida fylls i.
 
+> [!NOTE]
+> När en arbetarpost har uppdaterats, till exempel om ett nytt Azure AD-konto är associerat, ett lösenord ändras eller en adressbok för medarbetare uppdateras bör du köra distributionsschema **1060** (**personal**) för att synkronisera den senaste informationen om personalen till kanalen. På så sätt kan kassaprogrammet hämta korrekta data för kontroll av användarautentisering och behörighet.
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa](extended-logon.md)
+[Ställa in utökad inloggningsfunktion för MPOS och Cloud POS](extended-logon.md)
 
 [Skapa en Retail-funktionsprofil](retail-functionality-profile.md)
 

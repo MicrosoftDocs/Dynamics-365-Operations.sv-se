@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 3b9a1485d37da614eea2427735e0e1323897682d
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173210"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621340"
 ---
 # <a name="unified-product-experience"></a>Enhetlig produktupplevelse
 
@@ -86,7 +86,7 @@ I den här modellen representeras produkten av kombinationen av två entiteter i
 Eftersom produkten representeras som SKU kan begreppen distinkta produkter, produktmallar och produktvarianter fångas in i Common Data Service på följande sätt:
 
 - **Produkter med undertypsprodukter** är produkter som definieras av dem själva. Inga dimensioner behöver definieras. Ett exempel på detta är en specifik bok. För dessa produkter skapas en post i entiteten **produkt** och en post skapas i entiteten **msdyn\_sharedproductdetails**. Ingen produktfamiljepost skapas.
-- **Produktmallar** används som allmänna produkter som innehåller definitionen och reglerna som bestämmer beteendet i affärsprocessern Baserat på dessa definitioner kan distinkta produkter som kallas produktvarianter genereras. T.ex. t-shirt är produktmall och kan ha färg och storlek som dimensioner. Varianter kan frisläppas med olika kombinationer av dessa dimensioner, t.ex. en liten blå t-shirt eller en medelstor grön t-shirt. I integrationen skapas en post per variant i produktregistret. Den här posten innehåller den variantspecifika informationen, t.ex. de olika dimensionerna. Den allmänna informationen för produkten lagras i entiteten **msdyn\_sharedproductdetails**. (Denna allmänna information finns i produktmallen). Dessutom skapas en produktfamiljpost per produktmall. Produktmallinformationen synkroniseras till Common Data Service så snart den frisläppta produktmallen skapas (men innan varianter släpps).
+- **Produktmallar** används som allmänna produkter som innehåller definitionen och reglerna som bestämmer beteendet i affärsprocessern Baserat på dessa definitioner kan distinkta produkter som kallas produktvarianter genereras. T.ex. t-shirt är produktmall och kan ha färg och storlek som dimensioner. Varianter kan frisläppas med olika kombinationer av dessa dimensioner, t.ex. en liten blå t-shirt eller en medelstor grön t-shirt. I integrationen skapas en post per variant i produktregistret. Den här posten innehåller den variantspecifika informationen, t.ex. de olika dimensionerna. Den allmänna informationen för produkten lagras i entiteten **msdyn\_sharedproductdetails**. (Denna allmänna information finns i produktmallen). Produktmallinformationen synkroniseras till Common Data Service så snart den frisläppta produktmallen skapas (men innan varianter släpps).
 - **Distinkta produkter** refererar till alla produkters undertypprodukt och alla produktvarianter. 
 
 ![Datamodell för produkter](media/dual-write-product.png)
