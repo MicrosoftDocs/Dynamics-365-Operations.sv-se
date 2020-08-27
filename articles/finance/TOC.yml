@@ -1152,15 +1152,15 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Lägga till en leverantörscertifieringstyp i den offentliga sektorn
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
-            - name: Beräkna kanadensisk HST (Harmonised Sales Tax)
+            - name: 'Beräkna kanadensisk HST (Harmonised Sales Tax, harmoniserad moms)'
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Ekonomisk rapportering
           items:
-            - name: Översikt över ekonomisk rapportering
+            - name: Kom i gång med ekonomisk rapportering
               href: general-ledger/financial-reporting-getting-started.md
             - name: Översikt över ekonomisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
-            - name: Komponenter i ekonomisk rapport
+            - name: Komponenter i ekonomisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
             - name: Valutafunktioner i ekonomisk rapportering
               href: general-ledger/financial-reporting-currency-capability.md
@@ -2600,6 +2600,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: Rapporter för uppskjutningar
                       href: localizations/rus-reporting-deferrals.md
+                - name: Momsredovisning
+                  items:
+                    - name: Utgifts- och inkomstkoder
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Skatteregister för tillgångar
+                      href: localizations/rus-assets-tax-registers.md
             - name: Saudiarabien
               items:
                 - name: Saudiarabien – översikt
@@ -3100,7 +3106,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Lista
+                    - name: List
                       items:
                         - name: Lista över funktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -3112,11 +3118,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
-                        - name: Uppräkning
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
                         - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
-                        - name: Första
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/finance/toc.json
@@ -3124,8 +3130,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
-                        - name: Lista
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3134,7 +3142,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
-                        - name: Återför
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
                         - name: Dela
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
@@ -3413,7 +3421,9 @@
             - name: Snabbstartsguider
               items:
                 - name: Justera ett ER-format för att skapa ett anpassat elektroniskt dokument
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Skapa en ny ER-lösning om du vill skriva ut en anpassad rapport
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Självstudier
               items:
                 - name: Läs om hur du använder datakällor
