@@ -408,12 +408,6 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Klientbilder i kassan
                           href: pos-image.md
-                    - name: Kundorder
-                      items:
-                        - name: Kundorder i MPOS
-                          href: customer-orders-overview.md
-                        - name: Kombinerade kundorder
-                          href: hybrid-customer-orders.md
                     - name: Försäljare
                       items:
                         - name: Spåra provisioner i kassan med hjälp av försäljningsgrupper
@@ -630,6 +624,8 @@
                       href: personalized-recommendations.md
                     - name: Avanmäl anpassade rekommendationer
                       href: personalization-gdpr.md
+                - name: Aktivera rekommendationer för "köp liknande produkter"
+                  href: shop-similar-looks.md
                 - name: Kassaupplevelser
                   items:
                     - name: Lägga till produktrekommendationer i kassan
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Hantera dina order
           items:
+            - name: Kundorder
+              items:
+                - name: Kundorder i MPOS
+                  href: customer-orders-overview.md
+                - name: Kombinerade kundorder
+                  href: hybrid-customer-orders.md
             - name: Försäljningsorder
               items:
                 - name: Skapa en kundtjänstorder
@@ -988,6 +990,12 @@
                       href: cart-icon-module.md
                     - name: Kassamodul
                       href: add-checkout-module.md
+                    - name: Betalningsmodul
+                      href: payment-module.md
+                    - name: Modul för leveransadress
+                      href: ship-address-module.md
+                    - name: Modul för leveransalternativ
+                      href: delivery-options-module.md
                     - name: Orderinformationsmodul
                       href: order-confirmation-module.md
                     - name: Presentkortsmodul
@@ -1290,7 +1298,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/commerce/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
-                    - name: Lista
+                    - name: List
                       items:
                         - name: Lista över funktioner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json
@@ -1302,11 +1310,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/commerce/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/commerce/toc.json
-                        - name: Uppräkning
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/commerce/toc.json
                         - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/commerce/toc.json
-                        - name: Första
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/commerce/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/commerce/toc.json
@@ -1314,7 +1322,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/commerce/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
-                        - name: Lista
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/commerce/toc.json
@@ -1324,7 +1332,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/commerce/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/commerce/toc.json
-                        - name: Återför
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/commerce/toc.json
                         - name: Dela
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Översikt över cookie-API
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Översikt över interaktiva komponenter
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: Globaliseringsmoduler med hjälp av klassen CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: Utveckla dataåtgärder
@@ -2026,6 +2036,10 @@
                   items:
                     - name: Skriptinmatare
                       href: e-commerce-extensibility/script-injector.md
+                - name: Anslutningsprogram
+                  items:
+                    - name: Konfigurera och aktivera anslutningsprogram
+                      href: e-commerce-extensibility/connectors.md
                 - name: Telemetri och analyser
                   items:
                     - name: Telemetrilogg
@@ -2042,6 +2056,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Kommande ändringar i SDK för Retail
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: Viktig utveckling och ALM-ändringar från version 10.0.10 till 10.0.13
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: Slå samman versionssystemen för Commerce och Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Migrera SDK för Retail från Visual Studio 2015 till Visual Studio 2017
@@ -2118,15 +2134,11 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Utbyggbarhet för Retail Server
               items:
-                - name: Utöka en Commerce Scale Unit OData-styrenhet
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: 'Kund- och klient-API:er för Commerce Scale Unit'
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Utöka standardstyrenheten för Commerce Scale Unit-metadata
-                  href: dev-itpro/extend-metadata.md
-                - name: Anropa CRT-tjänsten i offlineläge
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: Skapa nytt tillägg för Retail Server
+                - name: Skapa nytt tilläggs-API för Retail Server (SDK för Retail version 10.0.11 och senare)
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: Skapa nytt tilläggs-API för Retail Server (SDK för Retail version 10.0.11 och tidigare)
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript- och C#-proxyservrar
                   href: dev-itpro/typescript-proxy-retail-pos.md
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: Utbyggbarhet för CRT och Retail Server
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Lägga till kundpreferensdata i kanaldatabaser
-                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Hantera hemligheter för butikskanaler
                   href: dev-itpro/manage-secrets.md
                 - name: Utbyggbarhet och utlösare för CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Spärra transaktioner med utlösare
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Implementera en returpolicy med utlösare
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Lojalitetstillägg
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Tilläggspunkter för följesedlar
