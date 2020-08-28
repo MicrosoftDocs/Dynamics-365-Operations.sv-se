@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154096"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686824"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
 
@@ -45,7 +45,7 @@ Med hjälp av ett fragment kan du återanvända en infogad eller extern skriptko
 
 Om du vill skapa ett återanvändbart sidfel för den infogade skriptoden i webbplatsskaparen följer du stegen nedan.
 
-1. Gå till **Sidfragment** och välj **nytt**.
+1. Gå till **Fragment** och välj sedan **Nytt**.
 1. I dialogrutan **Nytt sidfragment** välj **infogat skript**.
 1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
 1. Under det sidfel som du har skapat väljer du modulen **infogat standardskript**.
@@ -57,7 +57,7 @@ Om du vill skapa ett återanvändbart sidfel för den infogade skriptoden i webb
 
 Om du vill skapa ett återanvändbart sidfel för den externa skripkoden i webbplatsskaparen följer du stegen nedan.
 
-1. Gå till **Sidfragment** och välj **nytt**.
+1. Gå till **Fragment** och välj sedan **Nytt**.
 1. I dialogrutan **Nytt sidfragment** välj **externt skript**.
 1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
 1. Under det sidfel som du har skapat väljer du modulen **externt standardskript**.

@@ -3,7 +3,7 @@ title: Redovisning och ekonomisk rapportering – översikt
 description: Använd redovisningen när du vill definiera och hantera den juridiska personens ekonomiska poster.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/31/2017
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4cad11bcd1b1674055a07b5093093e33d3ac556
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e68fee44fdc18cada99e3c7e2cba021036e869db
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771809"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696674"
 ---
-# <a name="general-ledger-and-financial-reporting-overview"></a>Redovisning och ekonomisk rapportering – översikt
+# <a name="general-ledger-home-page"></a>Startsida för redovisning
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,7 +55,10 @@ Dessutom måste reglerna uppdateras regelbundet när skattemyndigheter ändrar s
 
 #### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
-Gå till [Viktig information om Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
+Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) för att se vilka nya funktioner har planerats. 
+
+#### <a name="financial-reporting"></a>Ekonomisk rapportering
+Gå till avsnittet [översikt över Financial reporting](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) om du vill ha information om ekonomiska rapporter.
 
 #### <a name="blogs"></a>Bloggar
 

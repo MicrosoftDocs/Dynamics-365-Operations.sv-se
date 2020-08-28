@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497178"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677914"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Ställa in en B2C-innehavare i Commerce
 
@@ -77,7 +77,7 @@ När B2C-innehavaren har skapats kommer du att skapa ett B2C-program inom inneha
 
 Gör så här om du vill skapa ett B2C-applikation.
 
-1. Markera **Program** och välj **Lägg till** i Azure-portalen.
+1. Markera **Program (äldre)** och välj **Lägg till** i Azure-portalen.
 1. Under **namn** anger du namnet på det önskade AAD B2C-programmet.
 1. Under **Webbapp/Webb-API**, för **Inkludera webbapp/webb-API**, välj **Ja**.
 1. För **Tillåt implicit flöde**, välj **Ja** (standardvärde).

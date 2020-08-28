@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411099"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661157"
 ---
 # <a name="cart-icon-module"></a>Vagnikonmodul
 
@@ -42,22 +42,22 @@ Följande bild visar ett exempel på en kundvagnsikon som visar en minikundvagn 
 
 - **Visa minivagn** – när värdet är sant kan den här egenskapen användas för att visa en sammanfattning av kundvagnen (minivagn) när man hovrar över vagnikonen. Den här funktionen stöds endast för portar i skrivbordsvy.
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Lägg till en vagnikonmodul på en ny sida
 
 Mer information om hur du lägger till en vagnikonmodul finns i [Huvudmodul](author-header-module.md).
 
-
 ## <a name="additional-resources"></a>Ytterligare resurser
-
-[Modul för inköpsruta](add-buy-box.md)
 
 [Kundvagnsmodul](add-cart-module.md)
 
 [Kassamodul](add-checkout-module.md)
 
-[Modul för orderbekräftelse](order-confirmation-module.md)
+[Betalningsmodul](payment-module.md)
 
-[Modul för sidhuvud](author-header-module.md)
+[Modul för leveransadress](ship-address-module.md)
 
-[Modul för sidfot](author-footer-module.md)
+[Modul för leveransalternativ](delivery-options-module.md)
+
+[Orderinformationsmodul](order-confirmation-module.md)
+
+[Presentkortsmodul](add-giftcard.md)

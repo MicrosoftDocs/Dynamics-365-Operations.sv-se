@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411260"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686632"
 ---
 # <a name="header-module"></a>Modul för sidhuvud
 
@@ -62,7 +62,7 @@ Följande moduler kan användas i en sidhuvudmodul:
 
 Gör så här om du vill skapa en sidhuvudmodul.
 
-1. Gå till **Sidfragment** och välj **ny** för att skapa ett nytt fragment.
+1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
 1. I dialogrutan **Nytt sidfragment** väljer du modul för **Behållare**, anger ett namn på sidan och väljer sedan **OK**.
 1. Välj platse **standardenhet** och sedan i egenskapsfönstret till höger, ange egenskapen **Bredd** till **Fyll behållare**.
 1. I facket **Standardbehållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
