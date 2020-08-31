@@ -3,7 +3,7 @@ title: Ta bort en instans
 description: I det här artikel får du veta hur du tar bort en testkörning eller produktionsmiljö för Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: f759d361fa505323b8b171a98024dca9cc9fa0f0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621390"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "3668335"
 ---
 # <a name="remove-an-instance"></a>Ta bort en instans
 
@@ -70,7 +70,7 @@ Gör följande om du vill ta bort en Personal-miljö från en befintlig Power Ap
 4. Logga in på LCS med det konto som du använder för din Personal-prenumeration. 
 5. Välj Personal-projektet som innehåller miljön. 
 6. I LCS-projektet väljer du fliken **-hantering for Personal**. 
-7. Välj instansen som du vill ta bort, som bör markeras med distributionsstatusen **Misslyckad**.
+7. Välj instansen som du vill ta bort, som bör markeras med distributionsstatusen **Raderad**.
 8. Välj **Ta bort instans** och bekräfta ditt val. 
 
 ## <a name="recover-a-soft-deleted-environment"></a>Återställa en tyst, borttagen miljö

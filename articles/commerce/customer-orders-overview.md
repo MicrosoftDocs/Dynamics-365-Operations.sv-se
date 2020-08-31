@@ -3,7 +3,7 @@ title: Kundorder i Modern POS (MPOS)
 description: Det här avsnittet innehåller information om kundorder i Modern POS (MOPS). Kundorder kallas även specialorder. Avsnittet innehåller en beskrivning av relaterade parametrar och transaktionsflöden.
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b8ea8339c2ad25ceed2415eb5ccf5e2048c612fa
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
+ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3024026"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699379"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Kundorder i Modern POS (MPOS)
 
@@ -53,6 +53,8 @@ Här följer några av de parametrar som kan anges på sidan **Handelsparametrar
 
     - Avgifter tillämpas på nivån för försäljningsorderrubrik, och när en viss kvantitet av en produktlinje returneras, kan maxbeloppet för återbetalning av leveranskostnader som tillåts för produkterna och kvantiteten inte fastställas på ett sätt som passar alla handelskunder.
     - Leveransavgifterna infaller efter alla leveransförekomster. Om en kund returnerar varor flera gånger och återförsäljarens policy anger att återförsäljaren ska stå för kostnaderna för returleveranser, kommer kostnaderna för returleveranser att överstiga de faktiska leveranskostnaderna.
+    
+- **Momsberäkningsbeteende** - **Omräkning** är standardinställningen och den traditionella inställningen för hur moms räknas om när ordern importeras till backoffice. **Omberäkna inte** inaktiverar momsomberäkning tills eller om inte beställningen redigeras i backoffice, när omberäkning initieras. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsflöde för kundorder
 

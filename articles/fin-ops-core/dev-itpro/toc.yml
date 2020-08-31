@@ -156,6 +156,8 @@
                           items:
                             - name: Anpassa enhets- och fältmappningar
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Hantera flera enhetsmappningar
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Redigera en juridisk person efter konfiguration med dubbelriktad skrivning
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: Felhantering och varningsaviseringar

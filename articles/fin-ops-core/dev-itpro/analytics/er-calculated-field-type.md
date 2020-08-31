@@ -3,7 +3,7 @@ title: Stödparameteranrop till ER-datakällor för typen beräknat fält
 description: Det här avsnittet innehåller information om hur du använder typen beräknat fält för ER-datakällor.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771339"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665620"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Stödparameteranrop till ER-datakällor för typen beräknat fält
 
@@ -45,14 +45,14 @@ För att slutföra exemplet i det här avsnittet måste du ha följande åtkomst
     - Konsult för funktionen för elektronisk rapportering
     - Systemadministratör
 
-Från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684), hämta den komprimerade filen **Stödparameteranrop till ER-datakällor för beräknad fälttyp**. Den innehåller följande ER-konfigurationer som måste extraheras och lagras lokalt.
+Du måste också hämta följande filer och lagra dem lokalt.
 
 | **Innehåll**                           | **Filnamn**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Konfiguration av exempel på ER-datamodell.    | Modell för att lära dig parameteranrop.version.1.xml     |
-| Konfiguration av exempel på ER-metadata.      | Metadata för att lära dig parameteranrop.version.1.xml  |
-| Konfiguration av exempel på ER-modellmappning | Mappning för att lära dig parameteranrop.version.1.1.xml |
-| Konfiguration av exempel på ER-format.        | Format för att lära dig parameteranrop.version.1.1.xml  |
+| Konfiguration av exempel på ER-datamodell.    | [Modell för att lära dig parameteranrop.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Konfiguration av exempel på ER-metadata.      | [Metadata för att lära dig parameteranrop.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Konfiguration av exempel på ER-modellmappning | [Mappning för att lära dig parameteranrop.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguration av exempel på ER-format.        | [Format för att lära dig parameteranrop.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Logga in på RCS-instansen.
 I det här exemplet skapar du en konfiguration för exempelföretaget, Litware, Inc. Först, i RCS, måste du slutföra stegen i proceduren [Skapa en konfigurationsleverantör och markera den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md):

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645349"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686680"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -61,7 +61,7 @@ Teman kan användas för att ta bort eller ändra ordningen på produktegenskape
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler kan användas i modul för inköpsruta
 
-- **Mediegalleri** – den här modulen används för att visa bilder av en produkt på en produktinformationssida. Mer information om den här modulen finns i [Modul för mediegalleri](mediagallery-module.md).
+- **Mediegalleri** – den här modulen används för att visa bilder av en produkt på en produktinformationssida. Mer information om den här modulen finns i [Modul för mediegalleri](media-gallery-module.md).
 - **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Mer information om den här modulen finns i [Modul för butiksväljare](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Inställningar för modul för inköpsruta
@@ -84,8 +84,8 @@ Modul för inköpsruta hämtar produktinformation med hjälp av API:er för skal
 
 Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
-1. Gå till **Sidfragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Ny sidfragment**, välj modulen **inköpsruta**.
+1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
+1. I dialogrutan **Nytt sidfragment**, välj modulen **inköpsruta**.
 1. Under **sidfragmentets namn**, anger du ett namn på **inköpsrutafragmentet** och klickar sedan på **OK**.
 1. I platsen för modul för inköpsruta väljer du **Mediagalleriet**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul** välj modulen **Mediagalleriet** och sedan **OK**.

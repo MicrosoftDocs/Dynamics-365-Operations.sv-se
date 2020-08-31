@@ -3,7 +3,7 @@ title: Human Resources-app i Teams
 description: Detta avsnitt introducerar Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431140"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666370"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
@@ -43,12 +43,12 @@ Information om hur du hanterar appbehörigheter i Teams finns i [Hantera policye
 
 ## <a name="known-issues"></a>Kända problem
 
-| Utfärda | Status |
+| Utleverans | Status |
 | --- | --- |
+| Vågrät rullning fungerar inte på Android-telefoner | Vågrät rullning är inte ett problem med iOS eller stationära enheter. Vi arbetar på en korrigering för Android. |
 | Fel: det finns ett problem med att hitta en miljö att ansluta till. | Det här felet kan visas även om du har kontrollerat att användaren har åtkomst till en eller flera personalmiljöer. Dessutom kanske du inte ser alla miljöer som du förväntar dig. Innan vi åtgärdar det här problemet ska du ta bort användaren och sedan importera dem igen för att lösa problemet. |
 | Saldot är felaktigt när ledighet skickas in för ett framtida datum. | Prognosticering är ännu ej tillgänglig. Saldot visas för det aktuella datumet. |
 | När du minskar antalet timmar som har ägnats i en befintlig begäran går **Återstående saldo** ner istället för upp. | Vi kommer att lösa detta välkända problem i framtiden. Visningen är felaktig, men de korrekta beloppen justeras vid överföringen. |
-| Två **Kommande ledighet**-kort visas för samma datum. | Korten representerar enskilda inlämningar. Vi kommer även fortsatt att ta emot feedback och göra justeringar. |
 | Det går inte att avbryta en **Granskas**-begäran. | Den här funktionen stöds för närvarande inte, men kommer att läggas till i en framtida version. |
 | Information om saldo beräknas från och med idag. | Systemet visar för närvarande inte saldon per periodiseringsperioden, även om det har konfigurerats bland parametrarna för Tjänstledighet. |
 

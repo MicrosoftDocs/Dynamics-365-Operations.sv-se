@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411232"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686728"
 ---
 # <a name="footer-module"></a>Modul för sidfot  
 
@@ -50,7 +50,7 @@ Precis som i de flesta behållare har en modul för sidfot stöd för egenskaper
 
 ## <a name="create-a-footer-module"></a>Skapa en sidfotsmodul
 
-1. Gå till **Sidfragment** och välj **ny** för att skapa ett nytt fragment.
+1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
 1. I dialogrutan **Nytt sidfragment** väljer du modul för **Behållare**, anger ett namn på sidan och väljer sedan **OK**.
 1. I facket **Standardbehållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul**, välj modulen **sidfotskategori** och sedan **OK**.

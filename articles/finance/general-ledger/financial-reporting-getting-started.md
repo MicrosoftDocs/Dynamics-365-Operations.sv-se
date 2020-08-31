@@ -1,9 +1,9 @@
 ---
 title: Översikt över ekonomisk rapportering
-description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
+description: Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 Finance och hur du använder finansiella rapporteringsfunktioner.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618048"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696698"
 ---
-# <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
+# <a name="get-started-with-financial-reporting"></a>Kom i gång med Financial reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ När en användare har lagts till eller om en roll ändras får användaren åtk
 Användare som skapar en rapport kan ta bort sina egna rapporter. Användare med programbehörigheten **Underhåll säkerhet för ekonomiska rapporter** kan ta bort andras rapporter. 
 
 I version 10.0.8 har utgångsdatum fastställts. En ny nödvändig funktion kommer att aktiveras på sidan **Alla** på arbetsytan funktionshantering. Den **ekonomiska rapporten över lagringsprinciper** innehåller följande ändringar:
-* Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras
+* Nyligen genererade rapporter markeras automatiskt med ett förfallodatum på 90 dagar från det att de genereras.
 * Alla befintliga rapporter från innan funktionen installerades kommer att ges en förfalloperiod på 90 dagar. Datumet kan visas som tomt under en kort tidsperiod tills den ekonomiska rapporteringstjänsten körs, en rapport genereras och tjänsten utför uppdateringen till befintliga rapporter med ett tomt förfallodatum. 
 * Användare med den **upprätthålla ekonomisk rapporteringssäkerhet** har åtkomst till den här funktionen. Alla användare i programbehörigheten **Underhåll ekonomisk rapport** som beviljats privilegium **Underhåll utgångsdatum för ekonomisk rapport** kommer också att ha möjlighet att ändra förfalloperioden. Det finns för närvarande två alternativ för kvarhållning: 
   * Ett förfallodatum på 90 dagar.
@@ -134,6 +134,12 @@ När du klickar på menyn **Ekonomisk rapportering** visas listan över ekonomis
 ## <a name="creating-and-modifying-financial-reports"></a>Skapa och ändra ekonomiska rapporter
 På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för företaget som använder i Dynamics 365 Finance. 
 
+## <a name="reporting-tree-definitions"></a>Rapportträddefinitioner 
+En av komponenterna som används för att bygga ekonomiska rapporter är en rapportträdsdefinition. En rapportträddefinition hjälper till att definiera din organisations struktur och hierarki. Det är en korsdimensionell hierarkisk struktur som baseras på de dimensionella relationerna i ekonomiska data. Den innehåller information på rapporteringsenhetsnivå och sammanfattningsnivå för alla enheter i trädet.
+
+Du kan skapa ett obegränsat antal rapportträd för att visa ditt företags data på olika sätt. Varje rapportträd kan innehålla valfri kombination av avdelningar och sammanfattningsenheter, men en rapport definition kan bara länka ett rapportträd åt gången. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Felsökning av problem vid öppnande av rapportdesignern
 Det finns några vanliga problem som kan orsaka problem när du öppnar rapportdesigner. De här problemen och stegen för att lösa dem är följande.
 
@@ -162,3 +168,4 @@ Problem 3: du kan gå vidare till sidan logga in rapport i ClickOnce rapportdesi
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Visa ekonomiska rapporter](view-financial-reports.md)
+- [Rapportträddefinitioner i ekonomiska rapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

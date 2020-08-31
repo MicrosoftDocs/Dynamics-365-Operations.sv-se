@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: 6e51d9a1d68c48391a223fe48f396c63c206580e
+ms.sourcegitcommit: 41e165482b9bff4175c0e3b224dbeead13461956
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201053"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3687968"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Lista över ER-funktioner i listkategorin
 
@@ -46,6 +46,7 @@ Listfunktioner för elektronisk rapportering (ER) kan användas för att extrahe
 | [Index](er-functions-list-index.md)                       | Den här funktionen returnerar värde för *behållare (post)* som väljs med hjälp av det angivna numeriska indexet i den angivna listan. Om indexet är utom räckvidd för posterna i den angivna listan erhåller denna funktion ett undantag. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Den här funktionen returnerar *booleskt värde* för **SANT** om den angivna listan inte innehåller några poster. Annars returnerar uttrycket värdet *boolesk* av **FALSK**. |
 | [Lista](er-functions-list-list.md)                         | Den här funktionen returnerar ett *postlista*-värde som består av en ny lista som skapas från de angivna argumenten.|
+| [ListDistinct](er-functions-list-listdistinct.md)         | Den här funktionen beräknar det angivna uttrycket som en väljare för varje post i den angivna listan. Det returnerar ett nytt värde för *postlista* som innehåller en enskild post för varje unikt väljarvärde.|
 | [ListJoin](er-functions-list-listjoin.md)                 | Den här funktionen returnerar ett *postlista*-värde som representerar en ny sammanslagen lista som skapas från de angivna argumenten.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Den här funktionen returnerar ett *postlista*-värde som skapas baserat på strukturen för det angivna argumentet i typen *uppräkning* eller *behållare (post)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Den här funktionen returnerar ett *postlista*-värde som endast består av den första posten i den angivna listan.|

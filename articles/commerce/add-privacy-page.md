@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3274221"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686705"
 ---
 # <a name="add-a-privacy-policy-page"></a>Lägga till en sida med sekretesspolicy
 
@@ -88,8 +88,8 @@ Du kan lägga till en länk till sidan sekretesspolicy till ett fragment. På s�
 
 Om du vill lägga till en länk till ett sidfotavsnitt gör du följande.
 
-1. Gå till **Sidfragment** och välj **ny** för att skapa ett sidfragment.
-1. I dialogrutan **Ny sidfragment**, välj modulen **Sidfot**.
+1. Gå till **Fragment** och välj **ny** för att skapa ett sidfragment.
+1. I dialogrutan **Nytt sidfragment**, välj modulen **Sidfot**.
 1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
 1. I facket **Sidfotskategori**, lägg till en **sidfotsartikel**-modul.
 1. I egenskapsrutan till höger, välj egenskapen **Länktext**.

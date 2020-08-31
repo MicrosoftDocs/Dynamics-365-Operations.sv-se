@@ -3,7 +3,7 @@ title: Beräkna lagertillgänglighet för butikskanaler
 description: I det här avsnittet beskrivs alternativen som kan användas för att visa lagerbehållningen för butiken och online-kanaler.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379246"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694932"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beräkna lagertillgänglighet för butikskanaler
 
@@ -66,7 +66,7 @@ När jobbet **produkttillgänglighet** har slutförts måste de data som fångad
 1. Gå till **Butik och handel \> Butik och handel-IT \> Distributionsschema**.
 1. Kör jobbet **1130** (**produkttillgänglighet**) om du vill synkronisera data för ögonblicksbild **produkttillgänglighet** har skapats från Commerce-administration till kanaldatabaserna.
 
-När lagertillgängligheten begärs från API **GetEstimatedAvailabilty** eller **ProductWarehouseInventoryAvailabilities** körs en beräkning för att försöka få bästa möjliga uppskattning av lagret för produkten. Beräkningen hänvisar till alla kundorder för näthandel som finns i kanaldatabasen, men den togs inte med i ögonblicksbilden av de data som 1130-jobbet tillhandahåller. Den här logiken utförs genom att den senast bearbetade lagertransaktionen spåras från Commerce-administration och jämförs med transaktionerna i kanaldatabasen. Den tillhandahåller en baslinje för beräkningslogiken för kanalsidan, så att de ytterligare lagerrörelser som inträffat för kundorder försäljningstransaktioner i e-handels kanaldatabas kan delas upp i det uppskattade lagervärdet som API:n kan.
+När lagertillgängligheten begärs från API **GetEstimatedAvailability** eller **GetEstimatedProductWarehouseAvailability** körs en beräkning för att försöka få bästa möjliga uppskattning av lagret för produkten. Beräkningen hänvisar till alla kundorder för näthandel som finns i kanaldatabasen, men den togs inte med i ögonblicksbilden av de data som 1130-jobbet tillhandahåller. Den här logiken utförs genom att den senast bearbetade lagertransaktionen spåras från Commerce-administration och jämförs med transaktionerna i kanaldatabasen. Den tillhandahåller en baslinje för beräkningslogiken för kanalsidan, så att de ytterligare lagerrörelser som inträffat för kundorder försäljningstransaktioner i e-handels kanaldatabas kan delas upp i det uppskattade lagervärdet som API:n kan.
 
 Beräkningslogiken på kanalsidan returnerar ett uppskattat fysiskt tillgängligt värde och ett totalt tillgängligt värde för den begärda produkten och lagerstället. Värdena kan visas på din e-handelsplats om du vill det, eller så kan de användas för att utlösa annan affärslogik på din e-handelswebbplats. Du kan till exempel visa meddelandet "brist på lager" i stället för den faktiska behållningskvantiteten som har godkänt API.
 
@@ -107,6 +107,8 @@ För att säkerställa bästa möjliga uppskattning av lagret är det viktigt at
 - **Bokför transaktionsutdrag i batch** – det här jobbet krävs även för indroppningsbaserad bokföring. Den följer jobbet **Beräkna transaktionsutdrag i batch**. Det här jobbet bokför de beräknade utdragen, så att försäljningsorder för hämtköpförsäljningen skapas i Commerce-administration och i Commerce-administration på ett mer exakt sätt återspeglar butikens lager.
 - **Produkttillgänglighet** – det här jobbet skapar ögonblicksbilden av lagret från Commerce-administration.
 - **1130 (Produkttillgänglighet)** – det här jobbet finns på sidan **distributionsplaner** och bör köras omedelbart efter jobbet **produkttillgänglighet**. Det här jobbet transporterar data för lagerögonblicksbilden från Commerce-administration till kanaldatabaserna.
+
+Vi rekommenderar att du inte kör dessa batchjobb för ofta (med några minuters intervall). Att köra ofta överbelastar Commerce-administration (HQ) och kan påverka prestanda negativt. I allmänhet är det bra att köra produkttillgänglighet och 1130 jobb per timme och att tidsplanera P-jobb, synkronisera order och indroppningsbaserade jobb med samma eller högre frekvens.
 
 > [!NOTE]
 > Av prestandaskäl används beräkningen av lagerdispositionen för lagertillgänglighetsberäkningar för att göra en begäran om lagertillgänglighet att använda näthandels API: n eller den nya lagerlogiken för kassakanaler, beräkningen använder cache som fastställer om det har gått tillräckligt med tid för att motivera körning av beräkningslogiken igen. Standardcache är inställd på 60 sekunder. Du har till exempel aktiverat en beräkning på kanalsidan för butiken och visat lagerbehållningen för en produkt på sidan **lagersökning**. Om en enhet av produkten sedan säljs kommer sidan **lagersökning** inte att visa det reducerade lagret förrän cachen har rensats. När användarna har bokfört transaktioner i kassan ska de vänta 60 sekunder innan de kontrollerar att lagerbehållningen har reducerats.

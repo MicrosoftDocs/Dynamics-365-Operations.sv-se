@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295090"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686800"
 ---
 # <a name="add-a-favicon"></a>Lägg till en favicon
 
@@ -62,7 +62,7 @@ Om du vill skapa HTML för favicon använder du följande HTML-sträng. För att
 
 För att skapa ett sidfragment som innehåller en metatagg för din favicon ska du följa dessa steg.
 
-1. Gå till **Sidfragment** och välj sedan **Nytt**.
+1. Gå till **Fragment** och välj sedan **Nytt**.
 1. I dialogrutan **Nytt sidfragment** markerar du **Metataggar** som modulen sidfragment är baserat på.
 1. Ange ett namn på sidfragmentet och välj sedan **OK**.
 1. I trädet för fragmentets hierarki väljer du underordnade **Standard metataggar**.

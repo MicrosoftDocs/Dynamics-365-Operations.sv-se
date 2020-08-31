@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2ec629d9fd027be01652351ab1c99001e063e30
-ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
+ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "3464940"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661182"
 ---
 # <a name="order-details-module"></a>Orderinformationsmodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -72,16 +71,16 @@ Om du vill lägga till en orderdetaljmodul på en ny sida och ställa in de obli
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Kundvagnsmodul](add-cart-module.md)
 
-[Behållarmodul](add-container-module.md)
-
-[Köp en boxmodul](add-buy-box.md)
-
-[Vagnmodul](add-cart-module.md)
+[Ikon för kundvagnsmodul](cart-icon-module.md)
 
 [Kassamodul](add-checkout-module.md)
 
-[Rubrikmodul](author-header-module.md)
+[Betalningsmodul](payment-module.md)
 
-[Sidfotmodul](author-footer-module.md)
+[Modul för leveransadress](ship-address-module.md)
+
+[Modul för leveransalternativ](delivery-options-module.md)
+
+[Presentkortsmodul](add-giftcard.md)

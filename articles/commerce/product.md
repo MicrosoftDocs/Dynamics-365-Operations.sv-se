@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fabf08e8dde1b9b6d27af3e42d3aaff904b467b0
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 7afe9225b8fc966ca154a5eb7421e8d4cc7c3023
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454543"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664844"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Lägg till produktrekommendationer i kassan
 
@@ -80,6 +80,8 @@ Så här ställs produktrekommendationer in:
 [Aktivera anpassade rekommendationer](personalized-recommendations.md)
 
 [Avanmäl anpassade rekommendationer](personalization-gdpr.md)
+
+[Aktivera rekommendationer för "köp liknande produkter"](shop-similar-looks.md)
 
 [Lägg till rekommendationer på transaktionsskärmen](add-recommendations-control-pos-screen.md)
 

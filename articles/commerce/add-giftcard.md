@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411122"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661252"
 ---
 # <a name="gift-card-module"></a>Presentkortsmodul
 
@@ -63,8 +63,18 @@ Instruktioner om hur du lägger till en presentkortsmodul på en betalningssida 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Kundvagnsmodul](add-cart-module.md)
+
+[Ikon för kundvagnsmodul](cart-icon-module.md)
 
 [Kassamodul](add-checkout-module.md)
+
+[Betalningsmodul](payment-module.md)
+
+[Modul för leveransadress](ship-address-module.md)
+
+[Modul för leveransalternativ](delivery-options-module.md)
+
+[Orderinformationsmodul](order-confirmation-module.md)
 
 [Stöd för externa presentkort](./dev-itpro/gift-card.md)

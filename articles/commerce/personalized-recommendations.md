@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e49b4db17ffd792e8dd536a1671773253c74d71
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 4103096f23e5568cc2bf64f21720c7c16d3e0cd1
+ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404150"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3664868"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivera anpassade rekommendationer
 
@@ -113,6 +113,8 @@ Om du vill använda anpassningar för en befintlig rekommendations lista i webbp
 [Aktivera Azure Data Lake Storage i en Dynamics 365 Commerce-miljö](enable-adls-environment.md)
 
 [Aktivera produktrekommendationer](enable-product-recommendations.md)
+
+[Aktivera rekommendationer för "köp liknande produkter"](shop-similar-looks.md)
 
 [Avanmäl anpassade rekommendationer](personalization-gdpr.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570204"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665852"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Momsberäkning för allmänna journalrader
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ Följande diagram visar regeln grafiskt.
 
 Om en verifikation har en journalrad där kontotypen är **leverantör**, använder alla journalrader i verifikationen samma momsriktning. Följande poäng visar de möjliga momsriktningarna för leverantörskonton. 
 
-•   Om momskoden är momsbefriad är momsriktningen är skattefritt inköp.
-
-•   Om momskoden är Inomeuropeisk moms är momsriktningen Ingående moms.
-
-•   Om momskoden är återfört tillägg moms är momsriktningen Ingående moms.
-
-
-Annars är momsriktningen Utgående moms.
-
-Följande diagram visar regeln grafiskt.
-
-![Momsriktningsmöjligheter för leverantörskonton](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Kontotyp är kund
-
-Om en verifikation har en journalrad där kontotypen är **kund**, använder alla journalrader i verifikationen samma momsriktning. Följande poäng visar de möjliga momsriktningarna för kundkonton.
-
 •   Om momskoden är importavgift är momsriktningen importavgift.
 
 •   Om momskoden är momsbefriad är momsriktningen är skattefritt inköp.
@@ -90,6 +73,22 @@ Om en verifikation har en journalrad där kontotypen är **kund**, använder all
 •   Om momskoden är återfört tillägg moms är momsriktningen Utgående moms.
 
 Annars är momsriktningen Ingående moms.
+
+Följande diagram visar regeln grafiskt.
+
+![Momsriktningsmöjligheter för leverantörskonton](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Kontotyp är kund
+
+Om en verifikation har en journalrad där kontotypen är **kund**, använder alla journalrader i verifikationen samma momsriktning. Följande poäng visar de möjliga momsriktningarna för kundkonton.
+
+•   Om momskoden är momsbefriad är momsriktningen är skattefritt inköp.
+
+•   Om momskoden är Inomeuropeisk moms är momsriktningen Ingående moms.
+
+•   Om momskoden är återfört tillägg moms är momsriktningen Ingående moms.
+
+Annars är momsriktningen Utgående moms.
 
 Följande diagram visar regeln grafiskt.
 
