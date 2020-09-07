@@ -130,6 +130,8 @@
                       items:
                         - name: Startsida för dubbelriktad skrivning
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Nyheter och ändringar för dubbelriktad skrivning
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Översikt över dubbelriktad skrivning
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: Inställning av dubbelriktad skrivning
@@ -1468,10 +1470,12 @@
                   href: sysadmin/import-export-customized-security.md
                 - name: Säkerhetsdiagnos för uppgiftsinspelningar
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
-                - name: Utökningsbara datasäkerhetsprinciper
+                - name: Utökningsbara datasäkerhetspolicyer
                   href: sysadmin/extensible-data-security-policies.md
-                - name: Skapa en säkerhetsprincip
+                - name: Skapa en säkerhetspolicy
                   href: sysadmin/create-simple-security-policy.md
+            - name: Följ standard för användarlicensieringskrav
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Processautomatisering
               href: sysadmin/process-automation.md
             - name: Batchbearbetning

@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 20 augusti 2020
+          href: hr-whats-new-2020-08-20.md
         - name: 6 augusti 2020
           href: hr-whats-new-2020-08-06.md
         - name: 23 juli 2020
@@ -78,13 +80,91 @@
             - name: Integration med Office
               items:
                 - name: Office-integration – självstudier
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Uppdatera enhetsdata i Excel
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
                 - name: Skapa Öppna i Excel-upplevelse
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
                 - name: Felsöka Office-integration
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Konfigurera datahantering
+          items:
+            - name: Översikt över ramverk för datahantering
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Datatabeller
+              items:
+                - name: Översikt över datatabeller
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdataprojekt
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kopiera konfigurationsdata mellan företag eller juridiska personer
+                  items:
+                    - name: Kopiera konfigurationsdata – översikt
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatapaket
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatapaket (endast utgåvan från juli 2017)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatamallar
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Spåra ändringar av en enhet
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Söka efter information om standarddatatabeller
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Datamallar med flera kalkylblad
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Aktivera ändringsspårning för enheter
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsnycklar och datatabeller
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatapaket
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Jobb för import och export av data
+              items:
+                - name: Översikt över jobb för import och export av data
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Utveckling för datatabeller
+              items:
+                - name: Designprinciper och metodtips för datatabeller
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa nya datatabeller
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Egenskaper för datatabell
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa beräknade kolumner och virtuella fält
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Korsföretagsbeteende
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Hantera lands-/regionkoder
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arvmönster
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Guideregler för datatabell
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Metadataegenskaper
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Valideringar, standarder och omappade fält'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Säkerhet och datatabeller
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Använda testverktyg i tjänster från tredje part
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Ta med din egen databas
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: Optimera BYOD batchjobb
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Automatiserad uppdatering av Enhetslagring
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Automatisering av datauppgift
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbetsyta – checklista för datavalidering
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Felbeskrivningar för datahantering
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
         - name: Hantera funktioner
           href: hr-admin-manage-features.md
         - name: Konfigurera och hantera databasloggning
@@ -537,8 +617,10 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Visa team- och företagskalendrar
               href: hr-employee-self-service-calendar.md
-            - name: Hantera principer för köpa och sälja tjänstledighet
+            - name: Hantera policyer för köpa och sälja tjänstledighet
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Skapa arbetsflöden för att köpa och sälja tjänstledigt
+              href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Köpa och sälja tjänstledighet
               href: hr-employee-self-service-buy-sell-leave.md
         - name: Hantera begäranden om ledighet i Teams
