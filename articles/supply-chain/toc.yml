@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Bädda in PowerApps‑appar
+                - name: Bädda in Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Hitta information med hjälp av sökningar
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Åtkomst till information och rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Anpassningsalternativ med PowerBI.com
+            - name: Anpassningsalternativ med Power BI
               items:
-                - name: Funktioner som är tillgängliga genom PowerBI.com-integration
+                - name: Funktioner tillgängliga genom Power BI-integration
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Fäst PowerBI.com-innehåll
+                - name: Fäst Power BI-innehåll
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Välj analysarbetsytor från PowerBI.com
+                - name: Välj analysarbetsytor från Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Power BI-innehåll
               items:
@@ -1827,10 +1827,6 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Exkludera produkter från huvudplanering
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Varor med dubbla användningsområden
-                  href: pim/dual-use.md
-                - name: Ursprungsland
-                  href: pim/country-of-origin.md
                 - name: Skapa en streckkod för en produkt
                   href: pim/tasks/create-bar-code-product.md
                 - name: Ange GTIN-koden för en produkt
@@ -1839,6 +1835,20 @@
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: Lägg till en bild till en produkt
                   href: pim/tasks/add-image-product.md
+                - name: Ursprungsland
+                  href: pim/country-of-origin.md
+                - name: Varor med dubbla användningsområden
+                  href: pim/dual-use.md
+                - name: Farliga material
+                  items:
+                    - name: Översikt över farliga material
+                      href: pim/hazmat-overview.md
+                    - name: Ställa in farliga material
+                      href: pim/hazmat-setup.md
+                    - name: 'Farliga material i produkter, order, leveranser och laster'
+                      href: pim/hazmat-items.md
+                    - name: Frågor och rapporter gällande farliga material
+                      href: pim/hazmat-reports.md
                 - name: Vanliga frågor och svar om översättning av produktinformation
                   href: pim/translations-product-related-information.md
                 - name: Sök efter produkt under orderregistreringen
