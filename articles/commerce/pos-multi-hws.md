@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 41b0faa7ef24bdae229f7e6760d22357cb87eb0d
-ms.sourcegitcommit: 7b7cc93c0f78c6bfc7a3ea66a74a29ba0f218553
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3658368"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719224"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerade betalningsterminaler och fråga om skrivare och kassalåda
 
@@ -78,8 +78,8 @@ Om du vill ställa in maskinvaruprofilen som är kopplad till kassaapparaten fö
 
     | Enhet | Typ | Enhetsnamn | Ytterligare detaljer |
     |---|---|---|---|
-    | Skrivare | Reserv | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till nätverksskrivaren som har ställts in i maskinvaruprofilen som har tilldelats maskinvarustationen på kanalnivå. |
-    | Kassalåda | Reserv | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. Ange alternativet **Använda delade skift** till **Ja**. |
+    | Skrivare | Reserv | *Något* | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till nätverksskrivaren som har ställts in i maskinvaruprofilen som har tilldelats maskinvarustationen på kanalnivå. |
+    | Kassalåda | Reserv | *Något* | Enhetsnamnet är skiftlägeskänsligt. Ange alternativet **Använda delade skift** till **Ja**. |
     | EFT-tjänst | Adyen | Inte tillämpligt | Information om hur du konfigurerar den medföljande Adyen-anslutningen, se [Dynamics 365 betalningsanslutning för Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3) Andra betalningskopplingar kan dock stödjas via [Commerce programutvecklingskit (SDK) för betalningar](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
     | PIN-knappsats | Nätverk | **MicrosoftAdyenDeviceV001** | Ingen. |
 
@@ -103,7 +103,7 @@ Om du vill ställa in maskinvaruprofilen som används för att gruppera skrivare
     | Enhet | Typ | beskrivning | Ytterligare detaljer |
     |---|---|---|---|
     | Skrivare | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. **Kvittoprofil-ID** ska vara detsamma som **kvittoprofil-ID** som mappas till skrivaren som har ställts in i maskinvaruprofilen som har tilldelats kassan. |
-    | Kassalåda | Reserv | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. ange alternativet **Använda delade skift** till **Ja**. |
+    | Kassalåda | Nätverk | **Epson** eller **Star** | Enhetsnamnet är skiftlägeskänsligt. ange alternativet **Använda delade skift** till **Ja**. |
 
 5. Välj **Spara**.
 

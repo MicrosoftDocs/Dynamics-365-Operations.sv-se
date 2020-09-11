@@ -3,7 +3,7 @@ title: Kopiera en instans
 description: Du kan använda Microsoft Dynamics Lifecycle Services (LCS) för att kopiera en Microsoft Dynamics 365 Human Resources-databas till en miljö i begränsat läge.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
-ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
+ms.openlocfilehash: 6b52b696d323df6bafead2418ae322d1a9cdf64a
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3554335"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706238"
 ---
 # <a name="copy-an-instance"></a>Kopiera en instans
 
 Du kan använda Microsoft Dynamics Lifecycle Services (LCS) för att kopiera en Microsoft Dynamics 365 Human Resources-databas till en miljö i begränsat läge. Om du har en annan miljö med begränsat läge kan du även kopiera databasen från den miljön till en miljö med begränsat läge.
 
-Om du vill kopiera en instans måste du säkerställa följande:
+Om du vill kopiera en instans bör du tänka på följande:
 
 - Den personalinstans som du vill skriva över måste vara en miljö i begränsat läge.
 
@@ -37,7 +37,9 @@ Om du vill kopiera en instans måste du säkerställa följande:
 
 - Du måste vara administratör i målmiljön för att du ska kunna logga in på den efter att du har kopierat instansen.
 
-- När du kopierar databasen för Personal kopierar du inte de element (appar eller data) som finns i en Microsoft PowerApps-miljö. Information om hur du kopierar element i en PowerApps-miljö finns i [kopiera en miljö](https://docs.microsoft.com/power-platform/admin/copy-environment). Den PowerApps-miljö som du vill skriva över måste vara en miljö i begränsat läge. Du måste vara global innehavaradministratör om du vill ändra en PowerApps-produktionsmiljö till en miljö i begränsat läge. Mer information om hur du ändrar PowerApps-miljö finns i [Växla en instans](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- När du kopierar databasen för Personal kopierar du inte de element (appar eller data) som finns i en Microsoft Power Apps-miljö. Information om hur du kopierar element i en Power Apps-miljö finns i [kopiera en miljö](https://docs.microsoft.com/power-platform/admin/copy-environment). Den Power Apps-miljö som du vill skriva över måste vara en miljö i begränsat läge. Du måste vara global innehavaradministratör om du vill ändra en Power Apps-produktionsmiljö till en miljö i begränsat läge. Mer information om hur du ändrar Power Apps-miljö finns i [Växla en instans](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+
+- Om du kopierar en instans till sandbox-miljön och vill integrera sandbox-miljön med Common Data Service måste du återställa anpassade fält till Common Data Service-entiteter. Se [tillämpa anpassade fält på Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Effekter av att kopiera personaldatabasen
 
@@ -49,13 +51,13 @@ Följande händelser inträffar när du kopierar en personaldatabas:
 
 - Dokument i Microsoft Azure Blob-lagring kopieras inte från en miljö till en annan. Därför kopieras inte de kopplade dokumenten och mallarna och de blir kvar i källmiljön.
 
-- Alla användare förutom administratören och andra interna användarkonton kommer inte att vara tillgängliga.​ Därför kan administratörsanvändaren ta bort eller dölja data innan andra användare tillåts tillbaka till systemet.
+- Alla användare förutom administratören och andra interna användarkonton kommer inte att vara tillgängliga.​ Administratörsanvändaren kan ta bort eller dölja data innan andra användare tillåts tillbaka till systemet.
 
 - Administratörsanvändaren måste göra obligatoriska konfigurationsändringar, t.ex. återansluta integreringsslutpunkter för specifika tjänster eller URL:er.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiera databasen för personal
 
-Om du vill slutföra den här uppgiften kopierar du först en instans och loggar sedan in på Microsoft Power Platform administrationscenter för att kopiera PowerApps-miljön.
+Om du vill slutföra den här uppgiften kopierar du först en instans och loggar sedan in på Microsoft Power Platform administrationscenter för att kopiera Power Apps-miljön.
 
 > [!WARNING]
 > När du kopierar en instans raderas databasen i målinstansen. Målinstansen är inte tillgänglig under denna process.
@@ -74,7 +76,7 @@ Om du vill slutföra den här uppgiften kopierar du först en instans och loggar
 
    ![[Välj Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
-6. Markera den PowerApps-miljö du vill kopiera och välj sedan **kopiera**.
+6. Markera den Power Apps-miljö du vill kopiera och välj sedan **kopiera**.
 
 7. När kopieringsprocessen har slutförts loggar du in på målinstansen och aktiverar Common Data Service-integreringen. Mer information och anvisningar finns i [Konfigurera Common Data Service-integration](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
@@ -98,7 +100,13 @@ Följande dataelement kopieras inte när du kopierar en personalinstans:
 
 - Anslutningssträngen i registret **PersonnelIntegrationConfiguration**
 
-Vissa av elementen kopieras inte eftersom de är miljöspecifika. Exempel innehåller posterna **BatchServerConfig** och **SysCorpNetPrinters**. Andra element kopieras inte på grund av supportärendens volym. Dubbletter av e-postmeddelanden kan t.ex. skickas eftersom SMTP fortfarande är aktiverat i miljön i begränsat läge för användargodkännande kan ogiltiga integrationsmeddelanden skickas eftersom batch-jobb fortfarande är aktiverade och användarna kan aktiveras innan administratörer kan utföra rensningsåtgärder efter uppdatering.
+Vissa av elementen kopieras inte eftersom de är miljöspecifika. Exempel innehåller posterna **BatchServerConfig** och **SysCorpNetPrinters**. Andra element kopieras inte på grund av supportärendens volym. Exempel:
+
+- Dubbla e-postmeddelanden kan skickas eftersom SMTP fortfarande är aktiverat i den begränsade miljön för användar godkännande.
+
+- Ogiltiga integrationsmeddelanden kan skickas eftersom batch-jobb fortfarande är aktiverade.
+
+- Användare kan aktiveras innan administratörer kan utföra rensningsåtgärder efter uppdatering.
 
 Dessutom ändras följande statusvärden när du kopierar en instans:
 
@@ -111,3 +119,32 @@ Dessutom ändras följande statusvärden när du kopierar en instans:
 Alla användare i målmiljön i begränsat läge, inklusive administratörer, ersätts av användarna i källmiljön. Kontrollera att du är administratör i källmiljön innan du kopierar en instans. Om du inte är det kan du inte logga in till målmiljön efter att kopieringen har slutförts.
 
 Alla användare som inte är administratörer i målmiljön i begränsat läge är inaktiverade för att förhindra oönskade inloggningar i miljön i begränsat läge. Administratörer kan återaktivera användare om det behövs.
+
+## <a name="apply-custom-fields-to-common-data-service"></a>Tillämpa anpassade fält på Common Data Service
+
+Om du kopierar en instans till sandbox-miljön och vill integrera sandbox-miljön med Common Data Service måste du återställa anpassade fält till Common Data Service-entiteter.
+
+Utför följande steg för varje anpassat fält som visas på Common Data Service-entiteter:
+
+1. Gå till det anpassade fältet och välj **Redigera**.
+
+2. Avmarkera fältet **aktiverad** för varje cdm_*-entitet som det anpassade fältet är aktiverat på.
+
+3. Välj **Verkställ ändringar**.
+
+4. Välj **Redigera** igen.
+
+5. Markera fältet **aktiverad** för varje cdm_*-entitet som det anpassade fältet är aktiverat på.
+
+6. Välj **Verkställ ändringar**.
+
+Avmarkerar, tillämpar ändringar, markerar om och återanvänder ändringar gör att schemat uppdateras i Common Data Service för att inkludera de anpassade fälten.
+
+Mer information om anpassade fält finns i [Skapa och arbeta med anpassade fält](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+
+## <a name="see-also"></a>Se även
+
+[Reservera Human Resources](hr-admin-setup-provision.md)</br>
+[Ta bort en instans](hr-admin-setup-remove-instance.md)</br>
+[Uppdatera process](hr-admin-setup-update-process.md)
+

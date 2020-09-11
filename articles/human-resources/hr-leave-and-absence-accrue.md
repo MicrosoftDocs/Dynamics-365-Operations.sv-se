@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429069"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712184"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Periodisera planer för tjänstledighet och frånvaro
 
@@ -37,7 +37,9 @@ Du kan periodisera tjänstledighet och frånvaro i Dynamics 365 Human Resources 
 
 3. Dialogrutan **Periodisera planer för tjänstledighet och frånvaro** visas. I **Accrue as of**, either select **Samla ihop från och med** eller välj **Anpassat datum** och ange ett anpassat datum.
 
-4. Om du vill köra periodiseringsprocessen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
+4. Om du vill köra periodiseringar för alla företag väljer du **alla företag**. Om du vill bearbeta periodiseringar för en enda tjänstledighetsplan väljer du **Nej** för **Alla planer** och väljer sedan en **Tjänstledighetsplan**. Om du väljer alla företag kan du inte välja en enskild tjänstledighetsplan. 
+
+5. Om du vill köra periodiseringsprocessen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
 
    1. Ange information för periodiseringsprocessen.
 
@@ -55,7 +57,9 @@ Du kan periodisera tjänstledighet och frånvaro i Dynamics 365 Human Resources 
 
 3. Dialogrutan **Periodisera planer för tjänstledighet och frånvaro** visas. I **Accrue as of**, either select **Samla ihop från och med** eller välj **Anpassat datum** och ange ett anpassat datum.
 
-4. Om du vill köra periodiseringsprocessen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
+4. Om du vill köra periodiseringar för alla företag väljer du **alla företag**. Om du vill bearbeta periodiseringar för en enda tjänstledighetsplan väljer du **Nej** för **Alla planer** och väljer sedan en **Tjänstledighetsplan**. Om du väljer alla företag kan du inte välja en enskild tjänstledighetsplan. 
+
+5. Om du vill köra periodiseringsprocessen i bakgrunden väljer du **Kör i bakgrunden** och utför följande uppgifter:
 
    1. Ange information för periodiseringsprocessen.
 
@@ -102,18 +106,6 @@ Ta bort periodiseringsposter för ett specifikt plan- och datumintervall. Period
 1. På sidan **tjänstledighet och frånvaro** välj fliken **Länkar**.
 
 2. Under **Hantera tjänstledighet**, välj **Ta bort granskning av periodisering av tjänstledighet**.
-
-## <a name="configure-preview-features"></a>Konfigurera förhandsfunktioner
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Om du har aktiverat förhandsfunktioner för tjänstledighet och frånvaro, måste du också konfigurera inställningarna för dem.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Periodisera tjänstledighet per företag eller per tjänstledighetsplan
-
-När du ska periodisera planer för tjänstledighet och frånvaro kan du välja att periodisera för alla företag. Om du väljer alla företag kan du inte välja enskilda tjänstledighetsplaner. Om du väljer att inte periodisera för alla företag kan du periodisera för en viss tjänstledighetsplan. 
-
-Dessa alternativ är tillgängliga när du periodiserar för alla medarbetare eller enskilda medarbetare. 
 
 ## <a name="see-also"></a>Se även
 

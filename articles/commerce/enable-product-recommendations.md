@@ -3,7 +3,7 @@ title: Aktivera produktrekommendationer
 description: I det här avsnittet beskrivs hur du gör produktrekommendationer som baseras på artificiell intelligens (AI-ML) tillgängligt för Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2dacd4a94f706be5aa65947c0b6a92e281733ca
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: b201e5481cfaf5bb6cd64a89cdb6b5a91f31447f
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3665036"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700852"
 ---
 # <a name="enable-product-recommendations"></a>Aktivera produktrekommendationer
 
@@ -65,11 +65,13 @@ Spara och stäng formuläret
 
 Så här aktiverar du produktrekommendationer.
 
-1. Gå till **Butik och handel &gt; Produktrekommendationer &gt; Rekommendationsparametrar**.
-1. I listan över delade parametrar, välj **Rekommendationslistor**.
-1. Ge alternativet **Aktivera rekommendationer** värdet **Ja**.
+1. Sök efter **funktionshantering** i Commerce Headquarters.
+1. Välj **alla** om du vill visa en lista över tillgängliga funktioner. 
+1. Ange **rekommendationer** i sökrutan.
+1. Välj funktionen **produktrekommendationer**.
+1. I egenskapsfönstret **produktrekommendationer** välj **Aktivera nu**.
 
-![Aktivera rekommendationer](./media/enablepersonalization.png)
+![Aktivera rekommendationer](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
 > I den här proceduren inleds processen med att generera listor över produktrekommendationer. Det kan ta flera timmar innan listorna är tillgängliga och kan visas i kassan (POS) eller i Dynamics 365 Commerce.

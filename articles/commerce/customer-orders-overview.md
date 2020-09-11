@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699379"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710269"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Kundorder i Modern POS (MPOS)
 
@@ -54,7 +54,10 @@ Här följer några av de parametrar som kan anges på sidan **Handelsparametrar
     - Avgifter tillämpas på nivån för försäljningsorderrubrik, och när en viss kvantitet av en produktlinje returneras, kan maxbeloppet för återbetalning av leveranskostnader som tillåts för produkterna och kvantiteten inte fastställas på ett sätt som passar alla handelskunder.
     - Leveransavgifterna infaller efter alla leveransförekomster. Om en kund returnerar varor flera gånger och återförsäljarens policy anger att återförsäljaren ska stå för kostnaderna för returleveranser, kommer kostnaderna för returleveranser att överstiga de faktiska leveranskostnaderna.
     
-- **Momsberäkningsbeteende** - **Omräkning** är standardinställningen och den traditionella inställningen för hur moms räknas om när ordern importeras till backoffice. **Omberäkna inte** inaktiverar momsomberäkning tills eller om inte beställningen redigeras i backoffice, när omberäkning initieras. 
+
+## <a name="disable-option-to-pay-later"></a>Inaktivera alternativ för att betala senare
+
+I Commerce version 10.0.12 och senare kan butiker ta bort alternativet att betala senare när en kund order skapas i kassan. Om du vill inaktivera alternativet öppnar du **funktionsprofilen** för kanalen som senare inte tillåts i och väljer sedan **Redigera**. På fliken **Allmänt** väljer du den nedrullningsbara listrutan för att **kräv betalning för uppfyllelse**. Om det inte ska vara tillåtet att betala senare än kassa väljer du **Kort som krävs** och väljer **Spara**. Kör distributionsschema **1070** för att synkronisera denna ändring i kanalen. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsflöde för kundorder
 

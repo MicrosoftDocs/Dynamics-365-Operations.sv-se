@@ -3,7 +3,7 @@ title: Scenarier som stöds för inställningen dubbelriktad skrivning
 description: I det här avsnittet beskrivs scenarier som stöds för inställningen dubbelriktad skrivning.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d7ff514768ee8e4797b591da89e190a855385885
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 275d24d8f32fd1d2d15356d14c5c6591e8503c65
+ms.sourcegitcommit: ec4df354602c20f48f8581bfe5be0c04c66d2927
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172864"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3706262"
 ---
 # <a name="supported-scenarios-for-dual-write-setup"></a>Scenarier som stöds för inställningen dubbelriktad skrivning
 
@@ -34,8 +34,11 @@ ms.locfileid: "3172864"
 
 Du kan skapa en dubbelriktad anslutning mellan en Finance and Operations-miljö och en Common Data Service-miljö.
 
-+ En **Finance and Operations-miljö** tillhandahåller den underliggande plattformen för **Finance and Operations-appar** (till exempel Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Retail och Dynamics 365 Human Resources).
++ En **Finance and Operations-miljö** tillhandahåller den underliggande plattformen för **Finance and Operations-appar** (till exempel Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management och Dynamics 365 Retail).
 + En **Common Data Service-miljö** tillhandahåller den underliggande plattformen för **modellstyrda appar i Dynamics 365** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing och Dynamics 365 Project Service Automation).
+
+>[!IMPORTANT]
+>Personal i Finance and Operations stöder anslutningar med dubbla skrivfunktioner med inte Dynamics 365 Human Resources-appen.
 
 Installationsmekanismen varierar beroende på din prenumeration och miljön.
 

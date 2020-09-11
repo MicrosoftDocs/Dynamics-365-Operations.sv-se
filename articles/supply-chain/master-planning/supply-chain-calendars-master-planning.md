@@ -3,7 +3,7 @@ title: Kalendrar och huvudplanering
 description: Det här avsnittet innehåller en översikt över logistikkalendrar och hur de påverkar huvudplanering.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213502"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710343"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendrar och huvudplanering
 
@@ -105,28 +105,28 @@ Orderdatum i en planerad inköpsorder anger det datum då ordern görs. Det blir
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Leveransdatum för planerade inköpsorder
 Inleveransdatumet för ett inköp visas det datum då varorna tas emot. Det ska vara ett öppet datum i kalendern. Kalendern som tas hänsyn till för att ange vilka dagar som inköpsorder kan inlevereras är följande, från högsta till lägsta prioritet: 
-    1. Leverantörens kalender
-    2. Kalender för en disponeringsgrupp
-    3. Kalender för lagerstället för speditionslagret
+1. Leverantörens kalender
+1. Kalender för en disponeringsgrupp
+1. Kalender för lagerstället för speditionslagret
 
 Observera att kalendern för disponeringsgruppen ställs in på olika sidor och prioriteras i följande ordning:
-    1. Disponeringsgrupp för artikeln på sidan **uppgifter om frisläppta produkter**
-    2. Disponeringsgrupp för artikeln på sidan **artikeldisponering**
-    3. Standardartikeldisponeringsgrupp i **huvudplaneringsparametrar**
+1. Disponeringsgrupp för artikeln på sidan **artikeldisponering**
+1. Disponeringsgrupp för artikeln på sidan **uppgifter om frisläppta produkter**
+1. Standardartikeldisponeringsgrupp i **huvudplaneringsparametrar**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Leveransdatum för planerade överföringsorder
 När du skapar en överföringsorder mellan två lagerställen med leveransdatum och inleveransdatum i överföringsorderhuvudet tillsammans med lagerstället ”från” lager och ”till” lager. Skillnaden mellan dessa två datum är förväntade transporttiden (i dagar) mellan lagerställen.
 
 Leveransdatum för planerade överföringsorder anger det datum då varorna levereras från ”från” lager. Följande kalendrar används för att ange tillgängliga leveransdatum anges med prioritet: 
-    1. Lagerställekalender med ”från” lager
-    2. Disponering för gruppkalender blir (se reservorder för den här kalendern ovan) om det inte finns en lagerställekalender kommer leveransdatum vara ett öppet datum i kalendern. Om det inte finns en lagerställekalender tar den kalendern för disponeringsgruppen. 
+1. Lagerställekalender med ”från” lager
+1. Disponering för gruppkalender blir (se reservorder för den här kalendern ovan) om det inte finns en lagerställekalender kommer leveransdatum vara ett öppet datum i kalendern. Om det inte finns en lagerställekalender tar den kalendern för disponeringsgruppen. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Inleveransdatum för planerade överföringsorder
 Inleveransdatum för planerade överföringsorder anger det datum då varorna inlevereras från ”till” lager.
 
 Följande kalendrar används för att ange tillgängliga inleveransdatum anges med prioritet: 
-    1. Kalender för en disponeringsgrupp 
-    2. Kalender för lagerstället för ”till” lager om det finns en disponeringskalender kommer inleveransdatum vara ett öppet datum i kalendern. Om det inte finns en kalender för disponeringsgrupp tar den kalendern för lagerställe. 
+1. Kalender för en disponeringsgrupp 
+1. Kalender för lagerstället för ”till” lager om det finns en disponeringskalender kommer inleveransdatum vara ett öppet datum i kalendern. Om det inte finns en kalender för disponeringsgrupp tar den kalendern för lagerställe. 
 
 När man hittar inleverans- och mottagandedatum för den planerade överföringen, kommer också de marginaler som användaren fastställer för leverans och mottagande att övervägas. 
 

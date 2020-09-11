@@ -18,11 +18,11 @@ ms.author: sepism
 ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: 10.0.7
 ms.openlocfilehash: 41333f8c0ec77a591d372c5b0654585d05872a5c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.sourcegitcommit: fa5c45f7842c4d20c994ac1655e2fbf2a1cf14a9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124348"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "3734899"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Exempel på integration av kontrollenhet för Sverige
 

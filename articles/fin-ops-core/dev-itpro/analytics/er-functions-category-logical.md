@@ -3,7 +3,7 @@ title: Lista över ER-funktioner i logisk kategori
 description: Det här ämnet ger information om logiska funktionerna som stöds i elektronisk rapportering (ER).
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916647"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705105"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Lista över ER-funktioner i logisk kategori
 
@@ -41,6 +41,8 @@ Logiska funktioner för elektronisk rapportering (ER) kan användas för att arb
 | [Inte](er-functions-logical-not.md)                       | Den här funktionen returnerar omvända logiska värdet för det angivna villkoret som ett *Booleskt* värde. |
 | [Eller](er-functions-logical-or.md)                         | Den här funktionen returnerar ett *booleskt* värde på **FALSK** om alla angivna villkor är falsk. Den här funktionen returnerar ett *booleskt* värde på **SANT** om alla angivna villkor är sant. |
 | [ValueIn](er-functions-logical-valuein.md)               | Denna funktion bestämmer om specifik indata matchar något värde för en angiven objekt i den angivna listan. Det returnerar ett *booleskt* värde på **SANT** om den angivna indata matchar resultatet av att köra det angivna uttrycket för minst en post i den angivna listan. Annars returnerar uttrycket värdet *boolesk* av **FALSK**. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | Denna funktion bestämmer om specifik indata av typen *Int64* eller *heltal* matchar något värde för en angiven objekt i den angivna listan. Det returnerar ett *booleskt* värde på **SANT** om den angivna indata matchar resultatet av att köra det angivna uttrycket för minst en post i den angivna listan. Annars returnerar uttrycket värdet *boolesk* av **FALSK**. |
+
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

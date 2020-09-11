@@ -3,7 +3,7 @@ title: Hantera policyer för köpa och sälja tjänstledighet
 description: Du kan göra det möjligt för medarbetare att köpa och sälja sin tjänstledighet i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429023"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712132"
 ---
-# <a name="manage-buy-and-sell-leave-policies"></a>Hantera policyer för köpa och sälja tjänstledighet
+# <a name="manage-buy-and-sell-leave-policies"></a>Hantera principer för köpa och sälja tjänstledighet
 
-[!include [banner](includes/preview-feature.md)]
-
-Du kan göra det möjligt för medarbetare att köpa tjänstledighet genom att skapa en policy för köpa tjänstledighet.  
+Du kan göra det möjligt för medarbetare att sälja tjänstledighet genom att skapa en policy för sälja tjänstledighet. Du kan konfigurera dessa principer till att använda arbetsflöden för godkännanden, ställa in högsta belopp och tariffer och ange kostnader för inköp och försäljning. 
 
 ## <a name="enable-employees-to-buy-and-sell-leave"></a>Göra det möjligt för medarbetare att köpa och sälja sin tjänstledighet.
 
-1. På sidan **Parametrar för tjänstledighet och frånvaro** välj **Ja** för **Tillåt medarbetare att köpa tjänstledighet**. 
+1. På sidan **Parametrar för tjänstledighet** och frånvaro välj **Ja** för **Tillåt medarbetare att köpa tjänstledighet** och **Tillåt medarbetare att sälja tjänstledighet**.
 
-## <a name="create-a-buy-leave-policy"></a>Skapa en policy för att köpa tjänstledighet
+## <a name="create-a-buy-and-sell-leave-policy"></a>Skapa policy för att köpa och sälja tjänstledigt
 
 1. På sidan **tjänstledighet och frånvaro** välj fliken **Länkar**. 
 
@@ -51,19 +49,23 @@ Du kan göra det möjligt för medarbetare att köpa tjänstledighet genom att s
 
 6. Välj ett **startdatum** och ett **slutdatum** för policyn. Begäran om att köpa eller sälja tjänstledighet är bara tillgänglig för överföring under den här tidsperioden. 
 
-7. Under **köppolicy** väljer du **Heltidslön** (FTE) för att göra proportionell fördelning det högsta beloppet baserat på den heltidslön som definierats för medarbetarens befattning. Om policytypen är **belopp** anger du ett **maximalt fast belopp**. 
+7. Välj ett **arbetsflödes-ID** för policyn. Alla köp- och säljbegäranden kommer att använda det här arbetsflödet för granskning och godkännande. 
 
-8. Välj **Lägg till** om du vill lägga till tjänstledighetstyperna för medarbetare att köpa tjänstledighet. Du kan lägga till flera tjänstledighetstyper till policyn. 
+8. Under **köppolicy** väljer du **Heltidslön** (FTE) för att göra proportionell fördelning det högsta beloppet baserat på den heltidslön som definierats för medarbetarens befattning. Om policytypen är **belopp** anger du ett **maximalt fast belopp**. 
 
-9. Ange **servicemånader** för den tjänstledighetstyp om du vill tillåta olika månaders service att avgöra det maximala belopp en medarbetare kan köpa. 
+9. Välj **Lägg till** om du vill lägga till tjänstledighetstyperna för medarbetare att köpa tjänstledighet. Du kan lägga till flera tjänstledighetstyper till policyn. 
 
-10. Ange det **högsta beloppet** för tjänstledighetstypen. 
+10. Ange **servicemånader** för den tjänstledighetstyp om du vill tillåta olika månaders service att avgöra det maximala belopp en medarbetare kan köpa. 
 
-11. Ange **Priset** som medarbetaren ska köpa tjänstledigheten för. 
+11. Ange det **högsta beloppet** för tjänstledighetstypen. 
 
-12. Alternativt kan du ange den **Inkomstkod** som ska användas för att köpa tjänstledighet. 
+12. Ange **Priset** som medarbetaren ska köpa tjänstledigheten för. 
 
-13. Ange om du vill använda en motsvarande avskrivningstyp för att fastställa det högsta beloppet för tjänstledighetstypen. 
+13. Alternativt kan du ange den **Inkomstkod** som ska användas för att köpa tjänstledighet. 
+
+14. Ange om du vill använda en motsvarande avskrivningstyp för att fastställa det högsta beloppet för tjänstledighetstypen. 
+
+15. Skapa en försäljningspolicy genom att följa steg 8 till 14 under **försäljningspolicy**. 
 
 ## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a>Lägg till policyn köp och försäljning av tjänstledighet till en plan för tjänstledighet och frånvaro
 

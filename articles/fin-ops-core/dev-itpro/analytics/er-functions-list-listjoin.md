@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b5b82917e3083b5ffe4546a6a15fd14938383a
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: c7f78b687865e63e658c1c1c4f148b50595bf063
+ms.sourcegitcommit: 54bdcf8e9b6d1b1aae2a244f7a82754879d12053
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249045"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "3740673"
 ---
 # <a name=""></a><a name="LISTJOIN">LISTJOIN ER-funktion</a>
 
@@ -69,8 +69,18 @@ Du anger datakälla **post 2** av typen `Container`. Den här datakällan inneh�
 - **Belopp**: det här fältet innehåller ett uttryck som returnerar ett värde av typen `Real`.
 - **IsValid**: det här fältet innehåller ett uttryck som returnerar ett värde av typen `Boolean`.
 
-I det här fallet returnerar uttrycket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny lista som innehåller två poster. Strukturen för den här listan består av ett enda fält **belopp** av typen `Real`, eftersom det här fältet är det enda fält som presenteras i alla argument i den anropade funktionen.
+![Sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image1.gif)
+
+I det här fallet returnerar uttrycket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny lista som innehåller två poster.
+
+![Sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image2.gif)
+
+Strukturen för den här listan består av ett enda fält **belopp** av typen `Real`, eftersom det här fältet är det enda fält som presenteras i alla argument i den anropade funktionen.
+
+![Sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Lista över funktioner](er-functions-category-list.md)
+
+[Felsöka datakällor i ett kört ER-format för analys av dataflöde och omvandling](er-debug-data-sources.md)

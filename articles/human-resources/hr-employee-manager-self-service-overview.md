@@ -3,7 +3,7 @@ title: Översikt över självbetjäning för medarbetare och chef
 description: Den här artikeln innehåller en översikt över arbetsytan för självbetjäning för medarbetare och chef.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429806"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712242"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Översikt över självbetjäning för medarbetare och chef
 
@@ -32,6 +32,25 @@ Den här artikeln innehåller en översikt över arbetsytan för självbetjänin
 ## <a name="edit-personal-details"></a>Redigera persondetaljer
 
 Om du behöver lägga till eller ändra personuppgifter, se [redigera personuppgifter](hr-employee-manager-self-service-edit-personal-information.md).
+
+## <a name="user-not-assigned-to-a-worker-record"></a>Användaren har inte tilldelats till en arbetarpost
+
+Om du inte har länkat din användare till en post för **arbetare** på sidan **användare** visas följande meddelande:
+
+**Ditt användar-ID är inte associerat med din medarbetarpost i systemet och du kan inte visa eller uppdatera din information förrän den kan associeras. Kontakta din chef eller ditt supportteam för hjälp.**
+
+Om du vill koppla en användare till en post för **arbetare**, navigerar du till **användare** och väljer användaren. Välj **Redigera**, lägg till motsvarande arbetare i fältet **Person** i formuläret och välj **Spara**. Du bör nu ha till gång till Självbetjäning för medarbetare.
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>Säkerhetskrav för självbetjäning för medarbetare och chef
+
+Självbetjäning för medarbetare och chef kräver två säkerhetsroller:
+
+- Medarbetare måste ha medarbetarrollen.
+- Chefer behöver båda rollerna medarbetare och chef.
+
+>[!NOTE]
+>Du kan också använda anpassade roller för att komma åt självbetjäning för medarbetare och chef så länge som de har beviljats åtkomst till arbetsytorna medarbetare och chef.<br>
+>Chefsåtkomst till medarbetarinformation baseras på den aktuella positionsradens hierarki som definieras i personal.
 
 ## <a name="employee-self-service"></a>Självbetjäning för medarbetare
 

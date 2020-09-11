@@ -3,7 +3,7 @@ title: Inkommande lageråtgärder i kassan
 description: Det här ämnet beskriver möjligheterna i den inkommande lageråtgärden för en kassa (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
-ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
+ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3627548"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710319"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inkommande lageråtgärder i kassan
 
@@ -143,6 +143,20 @@ Operationen respekterar konfigurationen **Tom inleverans tillåten** på lagring
 ### <a name="receive-all"></a>Ta emot alla
 
 Som du behöver kan du välja **Inleverera alla** på appfältet för att snabbt uppdatera kvantiteten **inleverans nu** för alla dokumentrader till det maximala värdet som är tillgängligt för att uppfylla för dessa rader.
+
+### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Inleverans av oplanerade artiklar i inköpsorder
+
+I Commerce version 10.0.14 och senare kan användare ta emot en produkt som inte ursprungligen fanns på inköpsordern. Aktivera den här funktionen genom att aktivera **Lägg till rader i inköpsordern när kassan inlevereras**.  
+
+Den här funktionen fungerar bara för inleverans av inköpsorder. Det går inte att ta emot artiklar mot överföringsorder när artiklarna inte tidigare har beställts och levererats från det utgående lagerstället.
+
+Användare kan inte lägga till nya produkter i inköpsordern under kassamottagning om [arbetsflödet för ändringshantering av inköpsorder](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) är aktiverat i Commerce-administration (HQ). Om du vill aktivera ändringshantering måste alla ändringar av en inköpsorder först godkännas innan mottagning tillåts. Eftersom den här processen tillåter att en mottagare lägger till nya rader i inköpsordern misslyckas inleveransen om arbetsflödet för ändringshantering aktiveras. Om ändringshantering aktiveras för alla inköpsorder eller för den leverantör som är kopplad till inköpsordern aktivt som inlevereras i kassan, kan användaren inte lägga till nya produkter i inköpsordern under inleverans i kassa.
+
+Funktionen som gör det möjligt att lägga till rader kan inte användas som en lösning för att ta emot ytterligare kvantiteter av produkter som redan finns på inköpsordern. Överleverans hanteras via standardinställningarna för [Överleverans](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) för produktraden på inköpsordern.
+
+Om **Lägg till rader i inköpsordern under den tidpunkt då inleveransen** är aktiverad och en användare tar emot den **inkommande operationen** i kassan, om användaren läser in eller nycklar för en produktstreckkod eller ett produktnummer som inte är identifierat som en artikel på den aktuella inköpsordern, men som är identifierad som en giltig artikel, får användaren ett meddelande om att artikeln läggs till Om användaren lägger till artikeln på inköpsordern beaktas den kvantitet som angetts i **inleverans nu** den beställda kvantiteten för inköpsorderraden.
+
+När inleveransen av inköpsordern slutförs och skickas till HQ för bearbetning, skapas de tillagda raderna i inköpsorderns huvuddokument. På inköpsorderraden i HQ kommer en flagga **tillagd av kassan** på fliken **Allmänt** inköpsorderraden att läggas till. Flaggan **tillagd av kassan** anger att inköpsorderraden lades till av kassa mottagande processen och inte var en rad som fanns på inköpsordern före inleveransen.
 
 ### <a name="cancel-receiving"></a>Annullera inleverans
 

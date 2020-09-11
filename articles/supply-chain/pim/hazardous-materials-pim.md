@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208480"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699546"
 ---
 # <a name="hazardous-materials"></a>Farliga material
 
@@ -35,7 +35,7 @@ Information om farligt material ställs in i produktinformationshantering. Modul
 När du levererar material som klassificeras som farligt gods, måste ytterligare pappersarbete inkluderas i försändelserna. Med hjälp av funktionen för farliga material kan du informera kunder om klassificeringsinformation och relatera den till att frisläppa artiklar. Denna information kan sedan användas för att förbereda leveransdokumentationen.
 
 > [!IMPORTANT]
-> För att hantera transporter av farligt gods kan du med hjälp av Microsoft Dynamics 365 Supply Chain Management ställa in ytterligare referensinformation om produkter. Du kan också ställa in fler leveransdokument. Systemet följer dock inte automatiskt upp dina lands- eller regionsregler. I stället är det ett verktyg som kan hjälpa ditt övergripande program.
+> Funktionerna för farliga material i Microsoft Dynamics 365 Supply Chain Management tillhandahåller en samling användbara produktinformationsfält och tillhörande funktioner som kan hjälpa dig att registrera och referera till information som rör dina farliga produkter. Dessa funktioner kan också hjälpa dig att utforma och skriva ut leveransdokument som innehåller en del av samma information om något farligt material som du levererar. Systemet gör dock inte att du automatiskt följer alla tillämpliga regler i ditt land eller din region. Även om dessa verktyg är avsedda att hjälpa dig att följa gemensamma regler är de varken tillräckliga i sig eller garanterat. Organisationen är ansvarig för att vara medveten om alla tillämpliga regler och vidta alla nödvändiga åtgärder för att följa dem.
 
 Innan du kan använda den här funktionen, krävs följande inställningar:
 
