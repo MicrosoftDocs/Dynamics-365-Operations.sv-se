@@ -3,7 +3,7 @@ title: VALUEIN ER-funktion
 description: Det här avsnittet innehåller information om hur funktionen VALUEIN elektronisk rapportering (ER) används.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 44459ae56891a08eb11a6c254f4b4d5652a0e693
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041709"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705129"
 ---
-# <a name="VALUEIN">VALUEIN ER-funktion</a>
+# <a name=""></a><a name="VALUEIN">VALUEIN ER-funktion</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Det resulterande *booleska* värdet.
 
 ## <a name="usage-notes"></a>Användningsanteckningar
 
-I allmänhet översätts funktionen `VALUEIN` till en uppsättning **ELLER**-villkor.
+I allmänhet översätts funktionen `VALUEIN` till en uppsättning **ELLER**-villkor. Om listan med villkor **ELLER** är stor och den maximala totala längden för en SQL-sats kan överskridas, kan du överväga att använda [`VALUEINLARGE`](er-functions-logical-valueinlarge.md)-funktionen.
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
@@ -77,13 +77,13 @@ När en datakälla anropas, om den har konfigurerats som `VALUEIN ("B", List, LE
 
 Den övre gränsen för antalet tecken i texten i sådant tillstånd är 32 768 tecken. Därför bör du inte skapa datakällor som eventuellt överskrider begränsningen vid körning. Programmet ska sluta köras om gränsen överskrids och ett undantag genereras. Till exempel kan detta inträffa om datakällan har konfigurerats som `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)` och listorna **List1** och **List2** innehåller en stor mängd poster.
 
-I vissa fall kan funktionen `VALUEIN` översätts till en databas med hjälp av operatören `EXISTS JOIN`. Det här problemet uppstår när funktionen [FILTER](er-functions-list-filter.md) används och följande villkor uppfylls:
+I vissa fall kan funktionen `VALUEIN` översätts till en databas med hjälp av operatören `EXISTS JOIN`. Det här problemet uppstår när funktionen [`FILTER`](er-functions-list-filter.md) används och följande villkor uppfylls:
 
 - Alternativet **FRÅGA EFTER FRÅGA** är inte markerat för datakällan för funktionen `VALUEIN` som refererar till listan över poster. Inga ytterligare villkor ska kopplas till den här datakällan vid körning.
 - Inga kapslade uttryck är konfigurerade för funktionen `VALUEIN` som refererar till listan över poster.
 - Ett listobjekt för funktionen `VALUEIN` refererar till ett fält i den angivna datakällan, inte ett uttryck eller en metod.
 
-Överväg att använda det här alternativet i stället för funktionen [WHERE](er-functions-list-where.md) som beskrivs tidigare i det här exemplet.
+Överväg att använda det här alternativet i stället för funktionen [`WHERE`](er-functions-list-where.md) som beskrivs tidigare i det här exemplet.
 
 ## <a name="example-2"></a>Exempel 2
 
@@ -118,3 +118,5 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Logiska funktioner](er-functions-category-logical.md)
+
+[VALUEINLARGE funktioner](er-functions-logical-valueinlarge.md)

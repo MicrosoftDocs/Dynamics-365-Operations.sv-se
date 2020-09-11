@@ -158,7 +158,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: Bädda in PowerApps‑appar
+                - name: Bädda in Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Hitta information med hjälp av sökningar
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
@@ -2076,11 +2076,13 @@
                   href: localizations/emea-ita-exil-protest-boe.md
                 - name: Momsplafond
                   href: localizations/emea-ita-exil-tax-plafond.md
+                - name: Elektroniska kundfakturor
+                  href: localizations/emea-ita-e-invoices.md
             - name: Japan
               items:
                 - name: Japan – översikt
                   href: localizations/japan.md
-                - name: Anskaffa en anläggningstillgång och begära statsbidragssubvention
+                - name: Anskaffa anläggningstillgång och begära statsbidragssubvention
                   href: localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
                 - name: Anskaffa en anläggningstillgång med skyldigheter vid utrangering av tillgång
                   href: localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
@@ -2890,13 +2892,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: Åtkomst till information och rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Anpassningsalternativ med PowerBI.com
+            - name: Anpassningsalternativ med Power BI
               items:
-                - name: Funktioner som är tillgängliga genom PowerBI.com-integration
+                - name: Funktioner tillgängliga genom Power BI-integration
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-                - name: Fäst PowerBI.com-innehåll
+                - name: Fäst Power BI-innehåll
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-                - name: Välj analysarbetsytor från PowerBI.com
+                - name: Välj analysarbetsytor från Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
             - name: Power BI-innehåll
               items:
@@ -2992,7 +2994,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
                 - name: Lösa problem efter underhålla av enhetslagring
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Konfigurera PowerBI.com-integration
+                - name: Konfigurera Power BI-integreringen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
                 - name: Ta med din egen databas
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
@@ -3170,6 +3172,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
                     - name: Matematiska
                       items:
                         - name: Matematiska funktioner

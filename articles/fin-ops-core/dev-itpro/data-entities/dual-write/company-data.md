@@ -3,7 +3,7 @@ title: Företagskoncept i Common Data Service
 description: I det här avsnittet beskrivs integreringen av företagsdata mellan Finance and Operations och Common Data Service.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
+ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172910"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3728423"
 ---
 # <a name="company-concept-in-common-data-service"></a>Företagskoncept i Common Data Service
 
@@ -72,3 +72,32 @@ Common Data Service-integrering ger företagsparitet genom att använda en före
 + För poster blir värdet skrivskyddat när ett företag har lagts till och sparats. Därför bör användare se till att de väljer rätt företag.
 + Endast poster som har företagsdata är kvalificerade för dubbelriktadskrivning mellan appen och Common Data Service.
 + För befintliga Common Data Service-data kommer en administratörsledd initieringsupplevelse snart att vara tillgänglig.
+
+
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Fyll i företagets namn automatiskt i kundengagemangsappar
+
+Det finns flera sätt att fylla i företagsnamnet automatiskt i kundengagemangsappen.
+
++ Om du är systemadministratör kan du ställa in standardföretaget genom att navigera till **Avancerade inställningar > System > Säkerhet > Användare**. Öppna formuläret **användare** och i avsnittet **organisationsinformation** i värdet **företag till standard på formulär**.
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Ange standardföretag i avsnittet organisationsinformation.":::
+
++ Om du har **Skriv** åtkomst till entiteten **SystemUser** på nivån **affärsenhet** kan du ändra standardföretaget i valfritt formulär genom att välja ett företag i listrutan **företag**.
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Ändra företagsnamnet på ett nytt konto.":::
+
++ Om du har **Skriv**-åtkomst till data i fler än ett företag kan du ändra standardföretaget genom att välja en post som tillhör ett annat företag.
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="När du väljer en post ändras standardföretaget.":::
+
++ Om du är systemets konfigurator eller administratör och vill fylla i företagsdata automatiskt i ett anpassat formulär, kan du använda [formulärhändelser](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Lägg till en JavaScript-referens till **msdyn_/DefaultCompany.js** och använd följande händelser. Du kan t. ex. använda ett formulär som är utanför rutan, till exempel formuläret **konto**.
+
+    + **OnLoad**-händelse för formuläret: Ställ in fältet **defaultCompany**.
+    + **OnChange**-händelse för fältet **företag**: Ställ in fältet **updateDefaultCompany**.
+
+## <a name="apply-filtering-based-on-the-company-context"></a>Använd filtrering baserat på företagets kontext
+
+Om du vill använda filtrering baserat på företagets kontext i dina anpassade formulär eller anpassade uppslagsfält som lagts till i standardformulären öppnar du formuläret och använder avsnittet **filtrering av relaterade poster** för att använda företagsfiltret. Du måste ställa in detta för varje uppslags fält som kräver filtrering baserat på det underliggande företaget för en viss post. Inställningen visas för **kontot** i följande bild.
+
+:::image type="content" source="media/apply-company-context.png" alt-text="Använd företagets kontext":::
+

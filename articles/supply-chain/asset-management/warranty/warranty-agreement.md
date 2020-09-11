@@ -3,7 +3,7 @@ title: Garantiavtal
 description: I det här avsnittet beskrivs garantiavtal i Tillgångshantering.
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e9cbb9068101f3004179f338da18af0369190807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215388"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719248"
 ---
 # <a name="warranty-agreements"></a>Garantiavtal
 
@@ -42,12 +42,12 @@ Ett garantiavtal kan innehålla flera avtalsrader för att täcka garantin för 
 
 1. Välj **Tillgångshantering** \> **Inställningar** \> **Tillgångar** \> **Garanti**.
 2. Välj **Ny** för att skapa en produkt.
-3. Ange ett garanti-ID i fältet **Garanti**.
+3. Ange ett garanti-ID i fältet **Garanti**. 
 4. Ange en beskrivning i fältet **Namn**.
 
     På snabbfliken **Detaljer** visar fältet **Tillgångar** antalet aktiva tillgångar som använder garantiavtalet.
 
-5. På snabbflikarna **Timgaranti** och **Artikelgaranti** följer du dessa steg för att lägga till rader som ska ingå i ett garantiavtal som gäller för timmar eller artiklar:
+5. På snabbfliken **garantirader** följer du stegen nedan för att lägga till rader som ska ingå i ett garantiavtal:
 
     1. Välj **Lägg till rad** om du vill lägga till ett nytt villkor i garantin. Ett sekventiellt nummer anges automatiskt i fältet **Rad**.
     2. Välj typen av garantiperiod i fältet **Period**.

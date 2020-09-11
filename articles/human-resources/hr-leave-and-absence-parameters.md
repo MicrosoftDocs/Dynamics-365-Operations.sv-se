@@ -3,7 +3,7 @@ title: Konfigurera tjänstledighets- och frånvaroparametrar
 description: Definiera personalparametrar för tjänstledighet och frånvaro i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e4d3b3e4b373631bed5e2d7e3c3a4e14f0c5c98
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428954"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712386"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurera tjänstledighets- och frånvaroparametrar
 
@@ -46,8 +46,6 @@ Innan du ställer in tjänstledighets- och frånvaroplan i Dynamics 365 Human Re
 
 5. På fliken **Självbetjäning för medarbetare** anger du om chefer kan ange tjänstledighets- och frånvaroansökningar för medarbetarnas räkning.
 
-6. På fliken **tjänstledighet och frånvaro** kontrollera inställningar och ändra efter behov.
-
 7. Välj **Spara**.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Visa och ändra parametrar för ledighet och frånvaro
@@ -63,6 +61,10 @@ Innan du ställer in tjänstledighets- och frånvaroplan i Dynamics 365 Human Re
     - Välj **tjänstmånaders giltighetsdatum** om du vill ange när periodiseringspriser ska gälla för tjänstledighetsplaner med hjälp av tjänstmånader.
 
     - Välj **saldoberäkning** om du vill visa saldon som visas från och med den period som ska periodiseras. Om du väljer **saldo från idag** visar saldot summan av alla periodiseringar, justeringar och begäranden från och med idag. Om du väljer **saldo för en periodiseringsperiod**, visar saldot summan av alla periodiseringar, justeringar och förfrågningar per den periodiseringsperiod som definieras av frekvensen i planen för tjänstledighet. 
+
+    - Ange starttiden för batchjobbet för förfallet av överföringsdatumet.  
+    
+    - Välj **Ja** om **låt medarbetare köpa tjänstledighet** och **låta medarbetare sälja sina tjänstledighet**. Om du väljer **Ja** för dessa alternativ kan du skapa inköps- och försäljningsprincip för tjänstledighet och göra det möjligt för medarbetare att skicka in begäran inköps- och försäljningsprincip.
 
 ## <a name="configure-calendar-parameters"></a>Konfigurera kalenderparametrar
 

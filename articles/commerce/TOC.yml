@@ -68,6 +68,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Köp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Commerce Data Exchange – riktlinjer för implementering
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: Finance and Operations-appar som drivs av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-appar i Frankrike
@@ -178,7 +180,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Skapa och arbeta med anpassade fält
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Bädda in PowerApps‑appar
+                - name: Bädda in Microsoft Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Hitta information med hjälp av sökningar
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
@@ -200,10 +202,16 @@
                   href: arch-component-versioning.md
                 - name: Arkitektur för Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
-                - name: Välja en butikstopologi
+                - name: Välj en butikstopologi
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchange och kommunikation för butikskanaler
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Commerce Data Exchange – bästa praxis
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Commerce Data Exchange och kommunikation för butikskanaler
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Commerce Data Exchange – felsökning
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Arkitektur för Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Publiceringsarkitektur för onlinebutik
@@ -514,8 +522,10 @@
                       href: payinvoice.md
                     - name: Förebygga dubblettbetalningar
                       href: duplicate-payment-protection.md
-                    - name: Översikt över betalningar i flera kanaler
+                    - name: Översikt över flerkanalsbetalningar
                       href: omni-channel-payments.md
+                    - name: Flerkanals handelsorderbetalningar
+                      href: dev-itpro/commerce-payments.md
                     - name: Vanliga frågor om betalningar
                       href: dev-itpro/payments-retail.md
                 - name: Hantera Bing-kartor för din organisation
@@ -536,7 +546,7 @@
                       href: create-product-hierarchy.md
                     - name: Hantera produktkategorier och produkter
                       href: category-management-product-creation.md
-                    - name: Ändra sorteringsordning för marknadsföringsentiteter
+                    - name: Ändra sorteringsordning för marknadsföringsenheter
                       href: custom-order-categories-nav-retail-prod-hierarchy.md
                 - name: Produktdimensioner
                   items:
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: Redigera och granska butikstransaktioner
               href: edit-audit-retail-transactions.md
-            - name: 'Skapa, beräkna och bokföra utdrag för en butik'
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: Indroppningsbaserat orderskapande för butikstransaktioner
               href: trickle-feed.md
             - name: 'Skapa, beräkna och bokföra utdrag för en butik'
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Åtkomst till information och rapportering
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: Anpassningsalternativ med PowerBI.com
+            - name: Anpassningsalternativ med Power BI
               items:
-                - name: Funktioner som är tillgängliga genom PowerBI.com-integration
+                - name: Funktioner tillgängliga genom Power BI-integration
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: Fäst PowerBI.com-innehåll
+                - name: Fäst Power BI-innehåll
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Välj analysarbetsytor från PowerBI.com
+                - name: Välj analysarbetsytor från Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Power BI-innehåll
               items:
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Lösa problem efter underhålla av enhetslagring
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Konfigurera PowerBI.com-integration
+                - name: Konfigurera Power BI-integreringen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Ta med din egen databas
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: Paketera konfigurationer och distribuera dem till en onlinemiljö
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: Uppdateringar av SDK och kärnbibliotek
+                    - name: Uppdateringar av SDK och startpaket för butik
                       href: e-commerce-extensibility/sdk-updates.md
             - name: SDK för Retail
               items:
@@ -2186,6 +2194,8 @@
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Distribuera betalningskopplingar
                   href: dev-itpro/deploy-payment-connector.md
+                - name: Inkrementell insamling för fakturering i backoffice
+                  href: dev-itpro/incremental-capture.md
                 - name: Skapa anpassade lokaliserade felmeddelanden för betalningsterminalstillägg
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: Skapa Windows-installationsprogram för betalningskopplingar

@@ -3,7 +3,7 @@ title: Aktivera anpassade produktrekommendationer
 description: I det här avsnittet beskrivs hur du gör anpassade produktrekommendationer tillgängliga för kunder i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4103096f23e5568cc2bf64f21720c7c16d3e0cd1
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664868"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700876"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivera anpassade rekommendationer
 
@@ -49,11 +49,13 @@ Mer information om produktrekommendationslistor finns i [produktrekommendationer
 
 Så här aktiverar du anpassning.
 
-1. Gå till **Butik och handel \> Produktrekommendationer \> Rekommendationsparametrar**.
-1. I listan över delade butiksparametrar, välj **Rekommendationslistor**.
-1. Ge alternativet **Aktivera anpassning** värdet **Ja**.
+1. Sök efter **funktionshantering** i Commerce Headquarters.
+1. Välj **alla** om du vill visa en lista över tillgängliga funktioner. 
+1. Ange **rekommendationer** i sökrutan.
+1. Välj funktionen **Anpassade produktrekommendationer**.
+1. I egenskapsfönstret **Anpassade produktrekommendationer** välj **Aktivera nu**.
 
-![Aktivera anpassning](./media/enablepersonalization.png)
+![Aktivera anpassning](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > När du aktiverar anpassningar startas processen för generering av anpassade produktrekommendationslistor. Det kan krävas upp till en dag innan dessa listor är tillgängliga och kan visas online och i kassan.

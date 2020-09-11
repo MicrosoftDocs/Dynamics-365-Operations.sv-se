@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443905"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719274"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potentiell kund till kontanter vid dubbel skrivning
 
@@ -79,7 +79,7 @@ Om du även använder Field Service-lösningen måste du aktivera parametern **S
 
 Försäljningsorder kan skapas antingen i Sales eller Supply Chain Management. Om du skapar en försäljningsorder i Sales synkroniseras den med Supply Chain Management i realtid. Om du skapar en försäljningsorder i Supply Chain Management synkroniseras den med Sales i realtid. Observera följande:
 
-+ Du kan bara aktivera och synkronisera order från Sales om alla produkter på ordern kommer från Finance and Operations-appar. Det kan därför inte finnas någon produkt ej i register.
++ Produkter som körs på Dynamics 365 Sales visas som produkt kategorier i Dynamics 365 Supply Chain Management.
 + Rabattberäkning och avrundning:
 
     - Rabattberäkningsmodellen i Sales avviker från rabattberäkningsmodell i Supply Chain Management. I Supply Chain Management kan det slutgiltiga rabattbeloppet på en försäljningsrad vara resultatet av en kombination av rabattbelopp och rabattsatser. Om detta slutliga rabattbelopp divideras med antalet på raden, kan avrundning uppstå. Den här typen av avrundning inkluderas inte om ett avrundat rabattbelopp per enhet synkroniseras till Sales. För att garantera att det fullständiga rabattbeloppet från en försäljningsrad i Supply Chain Management synkroniseras korrekt till Sales, måste hela beloppet synkroniseras utan att divideras med radkvantiteten. Därför måste du definiera rabattberäkningsmetod som **radartikel** i Sales.
