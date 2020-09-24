@@ -14,12 +14,12 @@
               items:
                 - name: Nyheter och ändringar på startsidan för Platform updates
                   href: get-started/whats-new-home-page.md
+                - name: Platform updates för 10.0.14 (november 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Platform updates för 10.0.13 (oktober 2020)
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Platform updates för 10.0.12 (augusti 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Platform updates för 10.0.11 (juli 2020)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Borttagna och utfasade funktioner
               items:
                 - name: Borttagna och utfasade plattformsfunktioner
@@ -604,11 +604,19 @@
                   href: dev-tools/pipeline-add-license-package.md
                 - name: Skapa distribuerbara i Azure Pipelines
                   href: dev-tools/pipeline-create-deployable-package.md
-                - name: X++-modellversionering i Azure Pipelines
+                - name: Hantering av X++-modellversioner i Azure Pipelines
                   href: dev-tools/pipeline-model-version.md
+                - name: Ladda ned tillgångar med hjälp av Azure Pipelines
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Ladda upp tillgångar med hjälp av Azure Pipelines
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Distribuera tillgångar med hjälp av Azure Pipelines
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Skapa en anslutning till Lifecycle Services (LCS) i Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Hantering av vagnpark – exempelprogram
               items:
-                - name: Slutpunkt till slutpunkt-scenario för exempelprogrammet Hantering av vagnpark
+                - name: Komplett scenario för exempelprogrammet Hantering av vagnpark
                   href: dev-tools/fleet-management-sample.md
                 - name: Hantering av vagnpark – exempelprogram
                   href: dev-tools/introduction-fleet-management-sample.md
