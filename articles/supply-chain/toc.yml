@@ -68,14 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nyheter eller ändringar i Supply Chain Management
                   items:
-                    - name: Nyheter eller ändringar i Supply Chain Management – startsida
+                    - name: Nyheter eller ändringar av startsidan till Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (november 2020)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: Supply Chain Management 10.0.13 (oktober 2020)
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: Supply Chain Management 10.0.12 (augusti 2020)
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: Supply Chain Management 10.0.11 (juli 2020)
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Borttagna och utfasade funktioner
                   items:
                     - name: Borttagna och utfasade funktioner i Dynamics 365 Supply Chain Management
@@ -333,15 +333,15 @@
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Underhållschecklistor
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Underhållsstopp
+                - name: Underhållsavbrott för arbetsorder
                   href: asset-management/work-orders/maintenance-downtime.md
-                - name: Lägg till fel i arbetsorder
+                - name: Lägga till fel i arbetsorder
                   href: asset-management/work-orders/add-fault-to-work-order.md
                 - name: Arbetsorderrapport
                   href: asset-management/work-orders/work-order-report.md
                 - name: Arbetsorderpooler
                   href: asset-management/work-orders/work-order-pools.md
-                - name: Underhållsjobb för aktiva arbetsorder
+                - name: Aktiva underhållsjobb för arbetsorder
                   href: asset-management/work-orders/active-work-order-jobs-overview.md
                 - name: Arbetsorder och anläggningstillgångar
                   href: asset-management/work-orders/work-orders-and-fixed-assets.md
@@ -367,7 +367,7 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
                 - name: Skapa arbetsorder
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Underhållsstopp
+                - name: Aktiviteter för underhållsstopp
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Kapacitetsplanering
               items:
@@ -1155,7 +1155,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Periodisera körning av ett XML-element
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Använd elektroniska rapporteringslösningar i Finance and Operations
+            - name: Använda elektroniska rapporteringslösningar i Finance and Operations
               items:
                 - name: Konfigurera ramverket
                   items:
@@ -1345,8 +1345,6 @@
               items:
                 - name: Planeringsoptimering – översikt
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Planera med negativ behållningskvantitet
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Kom igång med planeringsoptimering
                   href: master-planning/planning-optimization/get-started.md
                 - name: Bristanalys för planeringsoptimering
@@ -1355,21 +1353,27 @@
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Huvudplanering med inköpshandelsavtal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Visa planhistorik och planeringsloggar
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Säkerhetsmarginaler
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Godkänna planerade order
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatisk bekräftelse med planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Planera med negativ behållningskvantitet
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Visa planhistorik och planeringsloggar
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Avbryta ett planeringsjobb
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: 'Planeringsoptimering, utökningsbarhet'
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: Felsöka planeringsoptimering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: 'Planeringsoptimering, utökningsbarhet'
+                  href: master-planning/planning-optimization/extensibility.md
             - name: Huvudplaner
               items:
                 - name: Huvudplaner – översikt
                   href: master-planning/master-plans.md
-                - name: Ställ in huvudplaner
+                - name: Ställa in huvudplaner
                   href: master-planning/master-planning-setup.md
                 - name: Inställningsguide för huvudplanering
                   href: master-planning/master-planning-setup-wizard.md
@@ -2621,6 +2625,8 @@
                   items:
                     - name: Ställa in klusterplockning
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Klusterposition full
+                      href: warehousing/cluster-position-full.md
                     - name: Systemdirigerad klusterplockning
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Definiera skapande av behållare

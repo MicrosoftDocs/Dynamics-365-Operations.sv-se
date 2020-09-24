@@ -3,7 +3,7 @@ title: Returnera artiklar för flera kunder, order och fakturor
 description: I det här avsnittet beskrivs funktionen som gör det möjligt att returnera via flera kundorder och fakturor i Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 08/27/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,27 +18,40 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c5f17424f0837344030f9ce2d2d037cde08c4e49
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e95f06ffaaf2d250b02a8458faa2d9e0b5ef5631
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004468"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760260"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Returnera artiklar för flera kunder, order och fakturor
 
 [!include [banner](includes/banner.md)]
 
 
-Returer kan göras för flera order och fakturor. 
+I den här artikeln beskrivs två funktioner som optimerar kundorderreturer för flera fakturor. 
 
-## <a name="configure-commerce-to-support-returns-across-multiple-customer-order-and-invoices"></a>Konfigurera Commerce så att det går att göra returer för flera kundorder och fakturor
+## <a name="enable-refunds-over-multiple-captures"></a>Aktivera återbetalningar för flera poster
 
-1. Gå till **Commerce-parametrar \> Kundorder**.
-1. Aktivera parametern **Aktivera returer för flera order**. 
+Den här funktionen aktiverar flera kopplade återbetalningar mot samma kundorder. 
+
+1. Gå till arbetsytan **Funktionshantering** och sök efter **Aktivera återbetalningar för flera poster**.
+2. Välj **Aktivera återbetalningar för flera order** och klicka sedan på **Aktivera**. 
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktivera korrekt momsberäkning för returer med delkvantitet
+
+Med hjälp av den här funktionen kan du se till att momsen blir lika med det momsbelopp som ursprungligen debiterades när en order returneras med hjälp av flera fakturor. 
+
+1. Gå till arbetsytan **Funktionshantering** och sök efter **Aktivera korrekt momsberäkning för returer med delkvantitet**.
+2. Välj **Aktivera korrekt momsberäkning för returer med delkvantitet** och klicka sedan på **Aktivera**. 
+
 
 ## <a name="process-returns"></a>Bearbeta returer
 
-När parametern är aktiverad och ändringarna synkroniserats till butikerna, kan kassören i butiken välja flera försäljningsorder för en kund och göra returer.
+När dessa funktioner har aktiverats och ändringarna synkroniserats till butikerna, kan kassören i butiken välja flera försäljningsorder för en kund och göra returer.
 
 När ordern har valts visas en lista över alla produkter på alla fakturor som kan returneras för ordern. Kassören kan sedan välja vilka produkter som ska returneras. En enda returorder skapas för alla valda produkter.
+
+Om ordern har returnerats till fullo kommer momsbeloppet som har returnerats till kunden att vara lika med det momsbelopp som ursprungligen debiterades.
+

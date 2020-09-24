@@ -92,6 +92,8 @@
                   items:
                     - name: Nyheter och ändringar på startsidan för Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (november 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (oktober 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: Commerce 10.0.12 (augusti 2020)
@@ -242,9 +244,9 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Massdistribution av självbetjäningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Retail-komponenthändelser för diagnostik och felsökning
+                - name: Commerce-komponenthändelser för diagnostik och felsökning
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
-                - name: Använd ett paket som kan distribueras
+                - name: Använda ett paket som kan distribueras
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Initiera startdata i nya Commerce-miljöer
                   href: enable-configure-retail-functionality.md
@@ -422,9 +424,9 @@
                           href: pos-sales-groups-track-commissions.md
                     - name: Enhetsaktivering
                       items:
-                        - name: 'Konfigurera, installera och aktivera MOPS'
+                        - name: 'Konfigurera, installera och aktivera MPOS'
                           href: retail-modern-pos-device-activation.md
-                        - name: Ställa in utökad inloggningsfunktion för MPOS och Cloud POS
+                        - name: Ställa in utökad inloggningsfunktion för MPOS och molnbaserad kassa
                           href: extended-logon.md
                         - name: Hantera aktiveringskonton och validera enheter
                           href: set-up-activation-accounts-validate-devices-hq.md
@@ -524,8 +526,10 @@
                       href: duplicate-payment-protection.md
                     - name: Översikt över flerkanalsbetalningar
                       href: omni-channel-payments.md
-                    - name: Flerkanals handelsorderbetalningar
+                    - name: Flerkanals orderbetalningar för Commerce
                       href: dev-itpro/commerce-payments.md
+                    - name: Behandla kreditkort utan en maskinvarustation
+                      href: dev-itpro/cnp-pos.md
                     - name: Vanliga frågor om betalningar
                       href: dev-itpro/payments-retail.md
                 - name: Hantera Bing-kartor för din organisation
@@ -700,7 +704,7 @@
           items:
             - name: Kundorder
               items:
-                - name: Kundorder i MPOS
+                - name: Kundorder i kassan
                   href: customer-orders-overview.md
                 - name: Kombinerade kundorder
                   href: hybrid-customer-orders.md
@@ -826,7 +830,9 @@
                   href: custom-pages-user-logins.md
                 - name: Konfigurera flera B2C-klientorganisationer i en Commerce-miljö
                   href: configure-multi-B2C-tenants.md
-                - name: Lägga till stöd för nätverk för innehållsleverans (CDN)
+                - name: Domäner i Dynamics 365 Commerce
+                  href: domains-commerce.md
+                - name: Lägga till stöd för nätverk för innehållsleverans
                   href: add-cdn-support.md
                 - name: Aktivera platsbaserad butiksidentifiering
                   href: enable-store-detection.md
@@ -990,6 +996,8 @@
                       href: media-gallery-module.md
                     - name: Moduler för omdömen och recensioner
                       href: ratings-reviews-modules.md
+                    - name: Modul för delning på sociala nätverk
+                      href: social-share-module.md
                 - name: Inköpsmoduler
                   items:
                     - name: Kundvagnsmodul
@@ -1024,8 +1032,14 @@
                       href: product-collection-module-overview.md
                 - name: Navigeringsmoduler
                   items:
-                    - name: Navigeringsmodul
+                    - name: Modul för navigeringssökväg
                       href: add-breadcrumb.md
+                    - name: Modul för navigeringsmeny
+                      href: nav-menu-module.md
+                - name: Efterlevnadsmoduler
+                  items:
+                    - name: Modul för samtycke till cookies
+                      href: cookie-consent-module.md
             - name: Sök
               items:
                 - name: Översikt över standardkategorilandningssida och sida för sökresultat
@@ -1652,11 +1666,11 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Periodisera körning av element i ER-format
                   items:
-                    - name: Periodisera körning av ett sekvenselement
+                    - name: Skjuta upp körningen av sekvenselement i ER-format
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Periodisera körning av ett XML-element
+                    - name: Skjuta upp körningen av XML-element i ER-format
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
-            - name: Använd elektroniska rapporteringslösningar i Finance and Operations
+            - name: Använda elektroniska rapporteringslösningar i Finance and Operations
               items:
                 - name: Konfigurera ramverket
                   items:

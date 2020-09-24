@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d601ca9b28bb720fd05e25ef66df7be12a08f7e0
-ms.sourcegitcommit: e2a953bea055611023c00a55c00391d14daaca25
+ms.openlocfilehash: 95cf53cbbd7863590f08afa72143effaa80ba8de
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696140"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813819"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management – startsida
 
@@ -103,7 +103,7 @@ Det finns många avsnitt om tillverkning och hantering av underleverantörer i [
 ## <a name="white-papers"></a>White paper
 
 - [Lean Manufacturing: CTP (Capable To Promise) och tidsplanering av kanban-jobb](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
-- [Strukturlisteberäkning med hjälp av kostnadsredovisningsblad](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/)
+- [Strukturlisteberäkning med hjälp av kostnadsredovisningsblad](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 

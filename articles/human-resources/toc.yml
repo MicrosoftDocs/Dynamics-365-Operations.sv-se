@@ -5,6 +5,8 @@
       items:
         - name: Nyheter och ändringar i Human Resources
           href: hr-admin-whats-new.md
+        - name: 3 september 2020
+          href: hr-whats-new-2020-09-03.md
         - name: 20 augusti 2020
           href: hr-whats-new-2020-08-20.md
         - name: 6 augusti 2020
@@ -23,12 +25,12 @@
           href: hr-whats-new-2020-05-14.md
         - name: 1 maj 2020
           href: hr-whats-new-2020-05-01.md
-        - name: 13 april 2020
-          href: hr-whats-new-2020-04-13.md
-        - name: 3 april 2020
-          href: hr-whats-new-2020-04-03.md
         - name: Nyhetsarkiv 2020
           items:
+            - name: 13 april 2020
+              href: hr-whats-new-2020-04-13.md
+            - name: 3 april 2020
+              href: hr-whats-new-2020-04-03.md
             - name: 24 mars 2020
               href: hr-whats-new-2020-03-24.md
             - name: 19 mars 2020
@@ -301,7 +303,7 @@
       items:
         - name: Översikt
           href: hr-hrpro-overview.md
-        - name: Ställa in Human Resources
+        - name: Konfigurera Human Resources
           items:
             - name: Konfigurera Human Resources-parametrar
               href: hr-setup-parameters.md
