@@ -3,7 +3,7 @@ title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fe5c1eb5808ef778aeda29442fa884556671296
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686680"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761307"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -59,10 +59,13 @@ Teman kan användas för att ta bort eller ändra ordningen på produktegenskape
 
 - **Rubriketikett** – den här egenskapen definierar rubriketiketten för produktrubriken. Om inköpsrutan finns högst upp på sidan ska den här egenskapen ställas in på **h1** för att uppfylla tillgänglighetsstandarder. 
 
+- **Aktivera rekommendationer för "Köp liknande utseende"** – med den här egenskapen kan köprutan för att visa länkar till produkter som liknar det objekt som för närvarande visas. Den här funktionen är tillgänglig i Commerce version 10.0.13 och senare.
+
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Moduler kan användas i modul för inköpsruta
 
 - **Mediegalleri** – den här modulen används för att visa bilder av en produkt på en produktinformationssida. Mer information om den här modulen finns i [Modul för mediegalleri](media-gallery-module.md).
 - **Butiksväljare** – i den här modulen visas en lista över närliggande butiker där det finns en artikel tillgänglig för upphämtning. Användare kan ange en plats för att hitta butiker som finns i närheten. Mer information om den här modulen finns i [Modul för butiksväljare](store-selector.md).
+- **Social delning** – denna modul kan läggas till i köprutan köp så att användarna kan dela produktinformation på sociala medier. Mer information finns i avsnittet [modulen social delning](social-share-module.md).
 
 ## <a name="buy-box-module-settings"></a>Inställningar för modul för inköpsruta
 
@@ -85,8 +88,8 @@ Modul för inköpsruta hämtar produktinformation med hjälp av API:er för skal
 Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt sidfragment**, välj modulen **inköpsruta**.
-1. Under **sidfragmentets namn**, anger du ett namn på **inköpsrutafragmentet** och klickar sedan på **OK**.
+1. I dialogrutan **Nytt fragment**, välj modulen **inköpsruta**.
+1. Under **Fragmentets namn**, anger du ett namn på **inköpsrutafragmentet** och klickar sedan på **OK**.
 1. I platsen för modul för inköpsruta väljer du **Mediagalleriet**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
 1. I dialogrutan **Lägg till modul** välj modulen **Mediagalleriet** och sedan **OK**.
 1. I platsen för modul för inköpsruta väljer du **butiksväljare**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till modul**.
@@ -96,13 +99,13 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 1. I dialogrutan **Ny mal** under **Mallnamn**, ange **PDP-mall** och välj sedan **OK**.
 1. I facket **brödtext** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul**, välj modulen **Standardsida** och klicka sedan på **OK**.
-1. I platsen för standardsidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till sidfragment**.
-1. I dialogrutan **Välj sidfragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
+1. I platsen för standardsidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
+1. I dialogrutan **Välj fragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
 1. I dialogrutan **Välj en mall** väljer du en **PDP-mall**. Under **sidnamn**, ange **PDP-sida** och klicka sedan på **OK**.
-1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till sidfragment**.
-1. I dialogrutan **Välj sidfragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
+1. I platsen för nya sidan väljer du **Huvud**, markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
+1. I dialogrutan **Välj fragment** väljer du det **inköpsrutafragment** som du skapade tidigare och väljer sedan **OK**.
 1. Spara och förhandsgranska sidan. Lägg till frågesträngparametern **?productid=&lt;product id&gt;** till URL för förhandsgranskningssidan. På så sätt används produktkontexten för att läsa in och återge förhandsgranskningssidan.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in sidan och välj sedan **publicera** för att publicera den. En inköpsruta bör visas på sidan för produktinformation.
 
@@ -118,8 +121,6 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 
 [Kundvagnsmodul](add-cart-module.md)
 
-[Ikon för kundvagnsmodul](cart-icon-module.md)
-
 [Kassamodul](add-checkout-module.md)
 
 [Modul för orderbekräftelse](order-confirmation-module.md)
@@ -127,5 +128,7 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 [Modul för sidhuvud](author-header-module.md)
 
 [Modul för sidfot](author-footer-module.md)
+
+[Modul för social delning](social-share-module.md)
 
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)

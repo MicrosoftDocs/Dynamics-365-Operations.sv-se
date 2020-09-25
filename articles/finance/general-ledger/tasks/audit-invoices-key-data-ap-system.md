@@ -1,6 +1,6 @@
 ---
-title: Granska fakturor och nyckeldata i LR-system
-description: När du får en faktura från en leverantör för varor eller tjänster på en inköpsorder kanske affärsprocesserna kräver att varorna eller tjänsterna inlevereras innan fakturan godkänns för betalning.
+title: Granska fakturor och nyckeldata i leverantörsreskontra
+description: Det här avsnittet visar hur du granskar fakturor och nyckeldata på leverantörskonton.
 author: saraschi2
 manager: AnnBe
 ms.date: 08/29/2018
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e1af0dac107be6009eb3ca576c49ac5abbd9848
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 5bb89f0adce41b045b1f573c4c0e841f78b2248c
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139954"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761559"
 ---
-# <a name="audit-invoices-and-key-data-in-ap-system"></a>Granska fakturor och nyckeldata i LR-system
+# <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Granska fakturor och nyckeldata i leverantörsreskontra
 
 [!include [banner](../../includes/banner.md)]
 
 När du får en faktura från en leverantör för varor eller tjänster på en inköpsorder kanske affärsprocesserna kräver att varorna eller tjänsterna inlevereras innan fakturan godkänns för betalning. Innan du börjar kontrollerar du att konfigurationsnyckeln för fakturamatchning har valts. 
 
-På sidan med leverantörsreskontraparametrarna kontrollerar du att alternativet Aktivera fakturamatchningsvalidering har valts, fältet Bokför faktura med avvikelser har ställts in som Begär godkännande och fältet Radmatchningspolicy har ställts in som Trevägsmatchning.
+På sidan med **leverantörsreskontraparametrarna** kontrollerar du att alternativet Aktivera fakturamatchningsvalidering har valts, fältet **Bokför faktura med avvikelser** har ställts in som **Begär godkännande** och fältet **Radmatchningspolicy** har ställts in som **Trevägsmatchning**.
 
 I den här proceduren används demonstrationsföretaget USMF. Leverantörsreskontrachefsrollen eller redovisningschefsrollen ska utföra stegen nedan.
 

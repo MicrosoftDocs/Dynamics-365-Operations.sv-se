@@ -3,7 +3,7 @@ title: Lägga till skriptkod på webbsidor för att stödja telemetri
 description: I det här avsnittet beskrivs hur du lägger till skriptkod på klientsidan på webbplatssidorna för att stödja insamling av telemetri på klientsidan.
 author: bicyclingfool
 manager: annbe
-ms.date: 03/20/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: a88f4f920154aafaa15a48af67365152e21111f7
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686824"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761259"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Lägga till skriptkod på webbsidor för att stödja telemetri
 
@@ -37,48 +37,48 @@ Webbanalys är ett viktigt verktyg när du vill förstå hur dina kunder samverk
 > [!NOTE]
 > Instruktionerna i det här avsnittet gäller även andra anpassade klientfunktioner som Microsoft Dynamics 365 Commerce inte erbjuder.
 
-## <a name="create-a-reusable-page-fragment-for-your-script-code"></a>Skapa ett återanvändbart sidfragment för skriptkoden
+## <a name="create-a-reusable-fragment-for-your-script-code"></a>Skapa ett återanvändbart fragment för skriptkoden
 
 Med hjälp av ett fragment kan du återanvända en infogad eller extern skriptkod på alla sidor på din webbplats, oavsett vilken mall de använder.
 
-### <a name="create-a-reusable-page-fragment-for-your-inline-script-code"></a>Skapa ett återanvändbart sidfragment för den infogade skriptkoden
+### <a name="create-a-reusable-fragment-for-your-inline-script-code"></a>Skapa ett återanvändbart fragment för den infogade skriptkoden
 
-Om du vill skapa ett återanvändbart sidfel för den infogade skriptoden i webbplatsskaparen följer du stegen nedan.
+Om du vill skapa ett återanvändbart fragment för den infogade skriptoden i webbplatsskaparen följer du stegen nedan.
 
 1. Gå till **Fragment** och välj sedan **Nytt**.
-1. I dialogrutan **Nytt sidfragment** välj **infogat skript**.
-1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
-1. Under det sidfel som du har skapat väljer du modulen **infogat standardskript**.
+1. I dialogrutan **Nytt fragment** välj **infogat skript**.
+1. Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
+1. Under det fragment som du har skapat väljer du modulen **infogat standardskript**.
 1. Ange skript på klientsidan i egenskapsrutan till höger under **infogat skript**. Konfigurera sedan andra alternativ som du behöver.
 1. Välj **spara**och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
-### <a name="create-a-reusable-page-fragment-for-your-external-script-code"></a>Skapa ett återanvändbart sidfragment för den externa skriptkoden
+### <a name="create-a-reusable-fragment-for-your-external-script-code"></a>Skapa ett återanvändbart fragment för den externa skriptkoden
 
-Om du vill skapa ett återanvändbart sidfel för den externa skripkoden i webbplatsskaparen följer du stegen nedan.
+Om du vill skapa ett återanvändbart fragment för den externa skripkoden i webbplatsskaparen följer du stegen nedan.
 
 1. Gå till **Fragment** och välj sedan **Nytt**.
-1. I dialogrutan **Nytt sidfragment** välj **externt skript**.
-1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
-1. Under det sidfel som du har skapat väljer du modulen **externt standardskript**.
+1. I dialogrutan **Nytt fragment** välj **externt skript**.
+1. Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
+1. Under det fragment som du har skapat väljer du modulen **externt standardskript**.
 1. I egenskapsrutan till höger, under **Skriptkälla**, lägg till en extern eller relativ URL för den externa skriptkällan. Konfigurera sedan andra alternativ som du behöver.
 1. Välj **spara**och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
-## <a name="add-a-page-fragment-that-includes-script-code-to-a-template"></a>Lägga till ett sidfragment som innehåller skriptkod i en mall
+## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>Lägga till ett fragment som innehåller skriptkod i en mall
 
-Följ dessa steg för att lägga till ett sidfragment som innehåller skriptkod till en mall i webbplatsbyggaren.
+Följ dessa steg för att lägga till ett fragment som innehåller skriptkod till en mall i webbplatsbyggaren.
 
 1. Gå till **mallarna** och öppna mallen för sidorna som du vill lägga till skriptkoden i.
 1. I det vänstra fönstret expanderar du mallstrukturlistan så att platsen **HTML-huvud** visas.
-1. I facket **HTML-huvud** välj ellips-knappen (**...**) och välj sedan **Lägg till sidfragment**.
+1. På platsen **HTML-huvud** markera knappen med punkter (**...**) och välj sedan **Lägg till fragment**.
 1. Markera det fragment som du har skapat för skriptkoden.
 1. Välj **spara**och välj sedan **Avsluta redigeringen**.
 1. Markera **Publicera**.
 
 ## <a name="add-an-external-script-or-inline-script-directly-to-a-template"></a>Lägga till ett externt skript eller infogat skript direkt i en mall
 
-Om du vill infoga ett infogat eller externt skript direkt på en uppsättning sidor som kontrolleras av en enskild mall, behöver du inte skapa ett sidfel först.
+Om du vill infoga ett infogat eller externt skript direkt på en uppsättning sidor som kontrolleras av en enskild mall, behöver du inte skapa ett fragment först.
 
 ### <a name="add-an-inline-script-directly-to-a-template"></a>Lägga till ett infogat skript direkt i en mall
 

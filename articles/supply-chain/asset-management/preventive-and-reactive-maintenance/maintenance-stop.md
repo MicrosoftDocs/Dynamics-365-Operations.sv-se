@@ -1,6 +1,6 @@
 ---
-title: Underhållsstopp
-description: I det här avsnittet beskrivs underhållsstopp i Tillgångshantering.
+title: Aktiviteter för underhållsstopp
+description: Detta ämne förklarar hur underhållsstopp används för att få en översikt över den kapacitet som krävs för att utföra underhållsjobb på specifika tillgångar under en angiven period.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f864e7fe0129f8487cddadc99b32f75a2b6d9ca
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383537"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802831"
 ---
-# <a name="maintenance-downtime"></a>Underhållsstopp
+# <a name="maintenance-downtime-activities"></a>Aktiviteter för underhållsstopp
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Underhållsstopp används för att få en översikt över den kapacitet som krävs för att utföra underhållsjobb på specifika tillgångar under en angiven period. Du kan till exempel skapa en registrering av underhållsstopp för produktionsrad 10 i produktionshall 29-A på produktionsplatsen 02. Registreringen av underhållsstopp har en start- och sluttid som anger den period under vilken tillgångarna relaterade till underhållsstoppet inte är tillgängliga för produktion.
 

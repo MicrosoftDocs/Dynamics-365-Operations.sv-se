@@ -3,7 +3,7 @@ title: Rutnätsmöjligheter
 description: I det här avsnittet beskrivs flera kraftfulla funktioner i rutnätskontrollen. Den nya rutnätsfunktionen måste aktiveras för att du ska kunna använda dessa funktioner.
 author: jasongre
 manager: AnnBe
-ms.date: 08/03/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651700"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760409"
 ---
 # <a name="grid-capabilities"></a>Rutnätsmöjligheter
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Den nya rutnätskontrollen innehåller flera användbara och kraftfulla funktioner som kan användas för att förbättra användarproduktiviteten, skapa mer intressanta vyer av dina data och få meningsfulla insikter om dina data. Den här artikeln kommer att omfatta följande funktioner: 
 
 -  Beräknar summor
--  Gruppera data
 -  Skriva före systemet
 -  Utvärdera matematikuttryck 
+-  Gruppera data i en tabell (aktiveras separat med hjälp av funktionen **(förhandsversion) gruppering i rutnät**)
 
 ## <a name="calculating-totals"></a>Beräknar summor
 I Finance and Operations-appar har användare möjlighet att visa summor längst ned på numeriska kolumner i rutnät. Dessa summor visas i ett sidfotsavsnitt längst ned i rutnätet. 
@@ -71,21 +70,6 @@ Om beräkningen tar för lång tid kan du avbryta operationen genom att välja k
 
 Summor uppdateras automatiskt när du uppdaterar, tar bort eller skapar rader i datauppsättningen.  
 
-## <a name="grouping-data"></a>Gruppera data
-Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **gruppera** i tabellrutnät gör att användarna kan ordna sina data på intressanta sätt inom Finance and Operations-appar. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
-
-Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**. Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny grupp efter kolumn i början av rutnätet och infogar "rubrikrader" i början av varje grupp. Dessa rubrikrader innehåller följande information om varje grupp: 
--  Datavärde för gruppen 
--  Kolumnetikett (den här informationen är särskilt användbar när flera grupperingsnivåer stöds.)
--  Antal data rader i den här gruppen
--  Delsummor för alla kolumner som konfigurerats att visa summor
-
-När [sparade vyer](saved-views.md) är aktiverad kan den här gruppen sparas med personlig anpassning som en del av en vy för snabbåtkomst nästa gång du besöker sidan.  
-
-Om du väljer **gruppera efter denna kolumn** i en annan kolumn, ersätts den ursprungliga grupperingen eftersom det bara går att använda en grupperingsnivå i version 10.0.9 med plattformsuppdatering 33.
-
-Om du vill ångra grupperingar i ett rutnät högerklickar du på grupperingskolumnen och väljer **Ta bort grupp**.  
-
 ## <a name="typing-ahead-of-the-system"></a>Skriva före systemet
 I många affärsscenarier är möjligheten att snabbt registrera data i systemet mycket viktig. Innan den nya rutnätskontrollen introducerades kunde användarna bara ändra data på den aktuella raden. Innan de kan skapa en ny rad eller växla till en annan rad tvingades de vänta på att kontrollera ändringar i systemet. I ett försök att minska den tid som användarna väntar på att dessa valideringar ska slutföras, och för att förbättra användarproduktiviteten, justerar det nya rutnätet dessa valideringar så att de är asynkrona. Användaren kan därför flytta till andra rader och göra ändringar medan föregående radvalideringar väntar. 
 
@@ -109,6 +93,32 @@ Som en produktivitetsförstärkning kan användarna ange matematiska formler i n
 
 Om du vill att ett värde ska identifieras som ett uttryck i systemet startar du värdet med ett likhetstecken (**=**). Mer information om operatorer och syntax som stöds finns i [matematiska symboler som stöds](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
+## <a name="grouping-tabular-data"></a>Gruppera data i tabellform
+[!include [preview banner](../includes/preview-banner.md)]
+
+Företagsanvändare behöver ofta för att utföra ad hoc-analys av data. Det kan du göra genom att exportera data till Microsoft Excel och med hjälp av pivottabeller och funktionen **(förhandsversion) gruppera i rutnät** som är beroende av den nya nätkontrollfunktionen, tillåter användare att organisera sina tabelldata på intressanta sätt i Finance and Operations-appar. När funktionen utökas kommer funktionen **Summor**, **Gruppera** också få meningsfulla insikter i data genom att tillhandahålla delsummor på gruppnivån.
+
+Om du vill använda den här funktionen högerklickar du på den kolumn som du vill gruppera efter och väljer **gruppera efter denna kolumn**. Den här åtgärden sorterar data efter den markerade kolumnen, lägger till en ny **gruppera efter kolumn** i början av rutnätet och infogar "rubrikrader" i början av varje grupp. Dessa rubrikrader innehåller följande information om varje grupp: 
+-  Datavärde för gruppen 
+-  Kolumnnamn (den här informationen är särskilt användbar när flera grupperingsnivåer stöds.)  
+-  Antal data rader i den här gruppen
+-  Delsummor för alla kolumner som konfigurerats att visa summor
+
+När [sparade vyer](saved-views.md) är aktiverad kan den här gruppen sparas med personlig anpassning som en del av en vy för snabbåtkomst nästa gång du besöker sidan.  
+
+Om du väljer **gruppera efter denna kolumn** i en annan kolumn, ersätts den ursprungliga grupperingen eftersom det bara går att använda en grupperingsnivå i version 10.0.9 med plattformsuppdatering 33.
+
+Om du vill ångra grupperingar i ett rutnät högerklickar du på grupperingskolumnen och väljer **Ta bort grupp**.  
+
+### <a name="expanding-and-collapsing-groups"></a>Expandera och komprimera grupper
+Den första grupperingen av data kommer att ha alla grupper expanderade. Du kan skapa sammanfattade vyer över informationen genom att dölja enskilda grupper, eller så kan du använda expandera och komprimera grupp för att underlätta navigeringen mellan data. Om du vill expandera eller komprimera en grupp, markerar du knappen (>) i motsvarande grupprubrikrad. Observera att läget utöka/komprimera för enskilda grupper **inte** sparas i anpassning.
+
+### <a name="selecting-and-unselecting-rows-at-the-group-level"></a>Markera och avmarkera rader på gruppnivå
+På samma sätt som du kan markera (eller avmarkera) alla rader i rutnätet genom att markera kryssrutan högst upp i den första kolumnen i rutnätet kan du snabbt markera (eller avmarkera) alla raderna i en grupp genom att markera kryssrutan i motsvarande grupprubrikrad. Kryssrutan på raden i grupphuvudet visar alltid aktuell markeringsstatus för rader i den gruppen, oavsett om alla rader har markerats eller om alla rader är markerade, eller om bara vissa rader är markerade.
+
+### <a name="hiding-column-names"></a>Dölja kolumnnamn
+När du grupperar data är standardfunktionen att visa kolumnnamnet i grupprubrikraden. Från och med version 10.0.14/plattformsuppdatering 38 kan du välja att utelämna kolumnnamnet i grupphuvud rader genom att välja **Rutnätsalternativ** > **Dölj gruppkolumnnamn**.
+
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hur aktiverar jag den nya rutnätskontrollen i min miljö? 
 
@@ -131,7 +141,7 @@ Alla efterföljande användarsessioner börjar med att aktivera nya rutnätskont
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvecklare] Avanmäl individuella sidor från att använda det nya rutnätet 
 Om din organisation hittar en sida med vissa problem med att använda det nya rutnätet, finns det en API som gör det möjligt för ett enskilt formulär att använda den gamla rutnätskontrollen samtidigt som resten av systemet tillåter att den nya rutnätskontrollen används. Om du vill välja en enskild sida från det nya rutnätet lägger du till följande samtalspost `super()` i formulärets `run()`-metod.
 
-        this.forceLegacyGrid();
+ ```this.forceLegacyGrid();```
 
 Denna API kommer att hedras tills oktober 2021 släpps när den nya nätkontrollen blir obligatorisk. Rapportera alla problem till Microsoft som kräver att detta API används. 
 

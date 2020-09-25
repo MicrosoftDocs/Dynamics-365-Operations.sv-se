@@ -3,7 +3,7 @@ title: Hantera ansökningar om ledighet i Teams
 description: I det här avsnittet beskrivs hur du begär ledighet i Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b3daa76385518ad4c7150fa93ce33be0351bfd57
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428838"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766770"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Hantera ansökningar om ledighet i Teams
 
@@ -82,11 +82,11 @@ Du kan be roboten att:
 
    ![Begär tjänstledighet i Human Resources Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-request.png)
  
-När du har startat en begäran om tjänstledighet kan du justera dagarna direkt på kortet, eller också kan du välja **Redigera information** för att lägga till ytterligare information i din begäran.
+När du har startat en ledighetsansökan kan du justera dagarna direkt på kortet.
 
 ![Redigera begäran i Human Resources Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-edit.png)
  
-När du är klar med att mata in information skriver du **Skicka in** för att skicka in den för godkännande. Du kan också skriva **Spara som utkast** om du vill komma tillbaka till den senare.
+När du är klar med att mata in information väljer du **Skicka in** för att skicka in den för godkännande. Du kan också välja **Spara som utkast** om du vill komma tillbaka till den senare.
 
 ![Skicka in begäran i Human Resources Teams-appen för tjänstledighet](./media/hr-teams-leave-app-bot-submit.png)
 
@@ -130,15 +130,43 @@ På fliken **Ledighet** kan du visa:
 
    ![Redigera utkast i Human Resources Teams-appen för tjänstledighet](./media/hr-teams-leave-app-drafts-edit.png)
    
+### <a name="teams-notifications"></a>Teams-meddelanden
+
+När du eller en arbetare är godkännare för att skicka en begäran om ledighet får du ett meddelande i Human Resources-appen i Teams. Du kan välja meddelandet om du vill visa det. Meddelanden visas också i området **Chatt** .
+
+Om du är en godkännare kan du välja **Godkänn** eller **Neka** i meddelandet. Du kan också ange ett valfritt meddelande.
+
+![Meddelande om ledighetsansökan i Human Resources Teams-appen](./media/hr-teams-leave-app-notification.png)
+
+## <a name="view-your-teams-leave-calendar"></a>Visa ditt teams ledighetskalender
+
+Om du är chef med underställda kan du visa teamets godkända och väntande ledighet.
+
+1. I Human Resources-appen i Teams, välj **Ledighet**.
+
+2. Välj **teamkalender** .
+
+   ![Visa kalender i Human Resources Teams-app](./media/hr-teams-leave-app-view-calendar.png)
+
+Kalendern visar dina underställdas godkända och väntande ledighet.
+
+![Ledighetskalender i Human Resources Teams-app](./media/hr-teams-leave-app-calendar.png)
+
 ## <a name="privacy-notice"></a>Sekretesspolicy
 
-Med Dynamics 365 Human Resources-roboten i Microsoft Teams analyseras användarens textinmatningar i syfte att förstå den underliggande frågan eller avsikten. Användarens indata, t.ex. "Sök konto Contoso", vidarebefordras till en av Microsofts kognitiva tjänster som kallas LUIS (Language Understanding Intelligent Service). Läs mer om LUIS [här](https://www.luis.ai/). LUIS-tjänsten disambiguerar eller förstår syftet med användarindata (i det här fallet är avsikten att hitta information) och målentiteten (i det här fallet är den avsedda entiteten ett konto med namnet Contoso). Denna information överförs sedan till Microsofts [Azure-robotramverk](https://azure.microsoft.com/services/bot-service/) , som samverkar med data från Dynamics 365 Human Resources och hämtar den önskade informationen för användarfrågan. 
+### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
+
+Med Dynamics 365 Human Resources-roboten i Microsoft Teams analyseras användarens textinmatningar i syfte att förstå den underliggande frågan eller avsikten. Användarens indata, t.ex. "Sök konto Contoso", vidarebefordras till en av Microsofts kognitiva tjänster som kallas LUIS (Language Understanding Intelligent Service). Läs mer om LUIS [här](https://www.luis.ai/). LUIS-tjänsten disambiguerar eller förstår syftet med användarindata (i det här fallet är avsikten att hitta information) och målentiteten (i det här fallet är den avsedda entiteten ett konto med namnet Contoso). Denna information överförs sedan till [Azure-robotramverk](https://azure.microsoft.com/services/bot-service/)  som samverkar med data från Dynamics 365 Human Resources och hämtar den önskade informationen för användarfrågan. 
 
 Genom att installera och tillåta åtkomst till robotprogrammet godkänner du att LUIS-tjänsten och Azure-robotramverket kan bearbeta avsikten bakom inmatningen, vilket leder till en förbättrad användarupplevelse i konversationen. LUIS-tjänsten och Azure-robotramverket kan ha varierande nivåer av kompatibilitet jämfört med Dynamics 365 Human Resources. LUIS-tjänsten har endast åtkomst till användarfrågorna och är inte utformad för att vara ansluten till användarens Dynamics 365 Human Resources-data eller -konto, och en användare av Dynamics 365 Human Resources-roboten kan frivilligt ange en fråga som innehåller kunddata, personliga data eller andra data, och detta frågeinnehåll kan komma att skickas till LUIS-tjänsten och Azure-robotramverket. 
 
 Innehållet i användarens frågor och meddelanden behålls i LUIS-systemet under högst 30 dagar, är krypterat i vila och används inte för utbildning eller serviceförbättring. Läs mer om kognitiva tjänster [här](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 
-Om du vill hantera administrationsinställningar för appar i Microsoft Teams går du till administratörscentret för [Microsoft Teams](https://admin.teams.microsoft.com/). 
+Om du vill hantera administrationsinställningar för appar i Microsoft Teams går du till administratörscentret för [Microsoft Teams](https://admin.teams.microsoft.com/).
+
+### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid och Microsoft Teams
+
+När du använder meddelandefunktionen för Dynamics 365 Human Resources-appen i Teams, kommer vissa kunddata att flöda utanför det geografiska område där medarbetarens Human Resources har distribuerats. Dynamics 365 Human Resources överför medarbetarens information om tjänstledighet och arbetsflödes uppgifter till Microsoft Azure Event Grid och Microsoft Teams . Dessa data kan lagras i upp till 24 timmar och bearbetas i USA, krypteras i transit och vila och används inte av Microsoft eller dess under processer för utbildning eller serviceförbättringar.
 
 ## <a name="see-also"></a>Se även
 

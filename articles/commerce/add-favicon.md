@@ -3,7 +3,7 @@ title: Lägg till en favicon
 description: I det här avsnittet beskrivs hur du lägger till en favicon på webbplatsen.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686800"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761163"
 ---
 # <a name="add-a-favicon"></a>Lägg till en favicon
 
@@ -58,30 +58,30 @@ Om du vill skapa HTML för favicon använder du följande HTML-sträng. För att
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Skapa ett sidfragment som innehåller en metatagg för din favicon
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Skapa ett fragment som innehåller en metatagg för din favicon
 
-För att skapa ett sidfragment som innehåller en metatagg för din favicon ska du följa dessa steg.
+För att skapa ett fragment som innehåller en metatagg för din favicon ska du följa dessa steg.
 
 1. Gå till **Fragment** och välj sedan **Nytt**.
-1. I dialogrutan **Nytt sidfragment** markerar du **Metataggar** som modulen sidfragment är baserat på.
-1. Ange ett namn på sidfragmentet och välj sedan **OK**.
+1. I dialogrutan **Nytt fragment** markerar du **Metataggar** som modulen fragment är baserat på.
+1. Ange ett namn på fragment och välj sedan **OK**.
 1. I trädet för fragmentets hierarki väljer du underordnade **Standard metataggar**.
 1. I det högra fönstret, under **Metataggar**, väljer du **Lägg till** och anger sedan den HTML-sträng som du skapade tidigare för favicon. 
-1. Välj **Slutför redigering** och välj sedan **Publicera** för att publicera sidfragmentet.
+1. Välj **Slutför redigering** och välj sedan **Publicera** för att publicera fragment.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Lägg till sidfragmentet med metatagg i HTML-huvudet på dina sidor
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Lägg till fragment med metatagg i HTML-huvudet på dina sidor
 
-För att lägga till sidfragmentet med metatagg i HTML-**huvudet** på dina sidor ska du följa dessa steg
+För att lägga till fragment med metatagg i HTML-**huvudet** på dina sidor ska du följa dessa steg
 
 1. Gå till **Mallar** och öppna mallen för sidorna som du vill lägga till din favicon i och välj sedan **Redigera**.
-1. I trädet för mallhierarkin väljer du ellipsknappen (**...**) till höger om behållaren för **HTML-huvud** och väljer **Lägg till sidfragment**.
-1. I dialogrutan **Välj sidfragment** väljer du det metatagsidfragment som du skapade tidigare och väljer sedan **OK**.
+1. I trädet för mallhierarkin väljer du ellipsknappen (**...**) till höger om behållaren för **HTML-huvud** och väljer **Lägg till fragment**.
+1. I dialogrutan **Välj fragment** väljer du det metatagfragment som du skapade tidigare och väljer sedan **OK**.
 1. Välj **Slutför redigering** och välj sedan **Publicera** för att publicera mallen.
 
 > [!NOTE]
-> Om mer än en mall används på webbplatsen måste du lägga till metatagsidfragmentet på alla.
+> Om mer än en mall används på webbplatsen måste du lägga till metatagfragmentet på alla.
 
-När du förhandsgranskar sidor baserade på den mall som du har lagt till metatagsidfragmentet till ska du nu se favicon på fliken i webbläsaren.
+När du förhandsgranskar sidor baserade på den mall som du har lagt till metatagfragmentet till ska du nu se favicon på fliken i webbläsaren.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

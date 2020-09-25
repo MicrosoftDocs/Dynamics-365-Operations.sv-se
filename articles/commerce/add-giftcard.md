@@ -3,7 +3,7 @@ title: Presentkortsmodul
 description: Det här avsnittet handlar om presentkortsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,24 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 4cc947b9d6f3cfa51bce2155170c49e9529d0f7d
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661252"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761091"
 ---
 # <a name="gift-card-module"></a>Presentkortsmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Det här avsnittet handlar om presentkortsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Översikt
 
-Presentkort är en vanlig typ av betalning och presentkortsmodulen kan användas i en betalningsmodul för att ta emot presentkort. Presentkortsmodulen kan användas med Dynamics 365, SVS, och Givex presentkortskort. SVS och Givex presentkort löses in via Adyen betalningsförmedlaren.
+Presentkortmoduler är en vanlig typ av betalningsmoduler för att acceptera presentkort, en vanlig betalningsmetod för e-handelstransaktioner. Presentkortsmodulen kan användas med Dynamics 365, SVS, och Givex presentkortskort. SVS och Givex presentkort löses in via Adyen betalningsförmedlaren. Mer information om stöd för externa presentkort, t.ex. SVS och Givex, se [Stöd för externa presentkort](./dev-itpro/gift-card.md).
 
-Mer information om stöd för externa presentkort, t.ex. SVS och Givex, se [Stöd för externa presentkort](./dev-itpro/gift-card.md)
+Det finns två tillgängliga presentkortmoduler:
+
+- **Presentkort** – den här modulen kan användas på en betalningssida för att lösa in ett presentkort som betalningsmedel. 
+- **Kontroll av presentkortssaldo** – den här modulen kan användas på alla sidor för att kontrollera saldot på ett presentkort. Den här modulen är tillgänglig i Commerce version 10.0.14 och senare.
 
 Följande bild visar ett exempel på en presentkortmodul på en kassasida.
 

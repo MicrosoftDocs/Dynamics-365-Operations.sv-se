@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208027"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803173"
 ---
 # <a name="purchase-agreements"></a>Inköpsavtal
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Det här avsnittet innehåller information om inköpsavtal. Ett inköpsavtal är ett kontrakt som ålägger en organisation att köpa en angiven kvantitet eller ett visst belopp via flera framtida inköpsorder. I utbyte mot detta åtagande får köparen särskilda priser och rabatter. 
 
@@ -42,8 +41,13 @@ Om du vill förhindra att ditt inköpsavtal används och bekräftas markerar du 
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>Ansvarsfulla arbetstagare på inköpsavtal
 
-Du kan identifiera en primär ansvarig arbetstagare och sekundär ansvarig arbetare på inköpsavtal klassificering. Dessa värden kommer att ärvas av det resulterande inköpsavtalet. Du behöver inte lägga till ansvariga arbetstagare till inköpsavtalet och de kan ändras direkt på basis av varje ärende på själva inköpsavtalet. Du kan inte ange en sekundär ansvarig arbetare utan en primär ansvarig arbetare, även om du inte behöver ha en sekundär ansvarig arbetare. Du kan inte ange samma arbetsprocesser som både den primära och sekundära ansvariga arbetaren. 
+Du kan identifiera en primär ansvarig arbetstagare och sekundär ansvarig arbetare på inköpsavtal klassificering. Dessa värden kommer att ärvas av det resulterande inköpsavtalet. Du behöver inte lägga till ansvariga arbetstagare till inköpsavtalet och de kan ändras direkt på basis av varje ärende på själva inköpsavtalet. Du kan inte ange en sekundär ansvarig arbetare utan en primär ansvarig arbetare, även om du inte behöver ha en sekundär ansvarig arbetare. Du kan inte ange samma arbetsprocesser som både den primära och sekundära ansvariga arbetaren.
 
+> [!IMPORTANT]
+> Innan du kan använda funktionen ansvariga part måste den aktiveras i ditt system. Administratörer kan använda inställningarna [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) för att kontrollera funktionens status och aktivera den. I arbetsytan **utgiftshantering** anges den här funktionen på följande sätt:
+> 
+> - **Modul:** *anskaffning och källa*
+> - **Funktionsnamn:** *Ansvarig part för inköpsavtal*
 
 ## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett inköpsavtal är en utfästelse att köpa något. Du kan använda rader från flera inköpsorder för att uppfylla utfästelsen. Det finns fyra typer av utfästelser:

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771527"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759266"
 ---
 # <a name="cost-management-power-bi-content"></a>Kostnadshantering Power BI-innehåll
 
@@ -176,9 +176,9 @@ Data från programmet används för att fylla i rapportsidorna i **Kostnadshante
 
 Huvudaggregatmått för följande objekt ligger till grund för Power BI-innehållet.
 
-| Objekt                          | Sammanlagda huvudmått | Datakällan för Finance and Operations | Fält               |
+| Objekt                          | Sammanlagda huvudmått | Datakälla för Finance and Operations | Fält               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
-| CostObjectStatementCacheMonthly | Tid                     | CostObjectStatementCache               | Tid              |
+| CostObjectStatementCacheMonthly | Mängd                     | CostObjectStatementCache               | Tid              |
 | CostObjectStatementCacheMonthly | Kvantitet                   | CostObjectStatementCache               | Kvt                 |
 | CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
 | CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
@@ -193,10 +193,10 @@ Nedan visas de viktigaste beräknade måtten i Power BI-innehållet.
 | Slutsaldokvantitet                | Slutsaldokvantitet = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Nettoändring                         | Nettoändring = SUM(\[AMOUNT\]) |
 | Nettoändringskvantitet                    | Nettoändringskvantitet = SUM(\[QTY\]) |
-| Lageromsättningshastighet per belopp | Lageromsättningshastighet per belopp = if(OR(\[Genomsnittligt lagersaldo\] \<= 0, \[Sålt lager eller förbrukad utleverans\] \>= 0), 0, ABS(\[Sålt lager eller förbrukad utleverans\])/\[Genomsnittligt lagersaldo\]) |
+| Lageromsättningshastighet per belopp | Lageromsättningshastighet per belopp = if(OR(\[Genomsnittligt lagersaldo\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Sålt lager eller förbrukad utleverans\])/\[Genomsnittligt lagersaldo\]) |
 | Genomsnittligt lagersaldo          | Genomsnittligt lagersaldo = ((\[Utgående saldo\] + \[Ingående saldo\]) / 2) |
 | Lagerbehållning räknat i dagar             | Lagerbehållning räknat i dagar = 365 / CostObjectStatementEntries\[Lageromsättningshastighet per belopp\] |
-| Lagerprecision                 | Lagerexakthet efter belopp = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Inventerat lagerbelopp\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] - ABS(\[Inventerat lagerbelopp\]))/\[Slutsaldo\])) |
+| Lagerprecision                 | Lagerexakthet efter belopp = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] - ABS(\[Inventerat lagerbelopp\]))/\[Slutsaldo\])) |
 
 Följande tabell visar nyckeldimensionerna används som filter för att dela upp de sammanlagda måtten så att du kan uppnå bättre nivåer och få djupare analysinsikter.
 
