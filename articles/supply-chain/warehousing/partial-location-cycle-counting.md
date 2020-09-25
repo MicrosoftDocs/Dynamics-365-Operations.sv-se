@@ -3,7 +3,7 @@ title: Rullande inventering av del av platser
 description: Planer för rullande inventering guidar de faktiska räkningsoperationerna. Du kan begära att bara specifika produkter och produktvarianter räknas i stället för alla tillgängliga lager på en plats.
 author: perlynne
 manager: tfehr
-ms.date: 11/02/2017
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f07c7754dbe36334e8972d49edf9fb84a78f5d0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 46365f618b13c2bcaef9a45d2a835fda27019857
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215687"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760017"
 ---
 # <a name="partial-location-cycle-counting"></a>Rullande inventering av del av platser
 
@@ -45,7 +45,7 @@ Om du associerar planerna för rullande inventering med arbetsmallar genom att a
 
 Innan arbetet för partiell rullande inventering kan bearbetas, måste du välja minst **Visa artikelnummer** för menyalternativet för mobil enhet som en del av konfigurationen för rullande inventering. Lageroperatören kommer att uppmanas att registrera endast inventeringsinformation som är relaterad till inventeringsraderna (artikelnummer och produktdimensioner). Alla andra tillgängliga lager kommer att ignoreras för den här inventeringsprocessen. 
 
-För den partiella rullande inventeringsprocessen kommer datum/tid för **Senaste rullande inventering** inte att uppdateras för platsen.
+För den partiella rullande inventeringsprocessen kommer datum/tid för **Senaste rullande inventering** inte att uppdateras för platsen även om alla artiklarnas lagerbehållning på en given plats räknas. Den partiella rullande inventeringen tar inte hänsyn till parametern **dagar mellan rullande inventering** på sidan **Planer för rullande inventering** . Partiell rullande inventering stöder inte samtidig räkning av flera artiklar på samma plats. Funktionen för partiell rullande inventering kan leda till att samma lagerställe räknas flera gånger för en artikel när **Bearbetning av plan för rullande inventering** körs. Undvik det scenariot genom att ange filter i fältet **Välj platser**.
 
 ## <a name="example"></a>Exempel
 I det här exemplet måste bara artikelnumret A0001 räknas i lagerställe 61.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a127fcf2bf429299dc73e338cbfc3fbf8f5f2d9f
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 936bd88faad0d24c8cd72bc153cf55c38b4a4825
+ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651991"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3763441"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Vad är nytt och ändrat i Dynamics 365 Supply Chain Management (10.0.9 april 2020)
 
@@ -38,7 +38,7 @@ Det här ämnet anger nya eller ändrade funktioner i Microsoft Dynamics 365 Sup
 
 Den här versionen innehåller följande nya funktioner: Funktionstitlarna länkar till ytterligare information på webbplatsen [utgivningsplaner](https://docs.microsoft.com/dynamics365/release-plans/). Ytterligare länkar pekar på ytterligare dokumentation eller videoklipp som för närvarande är tillgängliga för den funktionen. Vissa av dessa funktioner kan också ha inkluderats i en tidigare stegvis version, men inte annonserats i föregående avsnitt *Nyheter*, så vi lägger till dem här. De flesta av dessa funktioner måste aktiveras med [funktionshantering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) innan du kan använda dem.
 
-- [Avancerad belastningsuppbyggnad under en våg](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)
+- [Avancerad belastningsuppbyggnad under en våg](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Mer information finns i [Avancerad lastuppbyggnad under påfyllnad](../warehousing/advanced-load-building-during-wave.md) .
 - [Automatisk frisläppning av direktleverans](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock)<br> - Mer information finns i [Automatisk frisläppning av direktleverans](../warehousing/auto-release-shipment-for-cross-docking.md).
 - [Beräkna leveransdatum för inköp baserat på produktionstider och arbetsdagar (offentlig sektor)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
 - [Produktbearbetning med faktisk/nominell vikt med lagerstyrning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Mer information finns i [Produktbearbetning med faktisk/nominell vikt med lagerstyrning](../warehousing/catch-weight-processing.md) och videon [Produktförbättringar med faktisk/nominell vikt](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
@@ -50,22 +50,22 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 - [Flexibel dimensionsreservation på lagerställenivå](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)<br> - För mer information [Flexibel reservationspolicy för dimension på distributionslagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 - [Förbättrad jobbkortsenhet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device)<br> - Förbättrad jobbkortenhet [Rapportera framsteg på en mobil jobbenhet](../production-control/tasks/report-progress-mobile-job-device.md) och [Rapportera som färdig från jobbkortenheten](../production-control/report-finished-job-device.md).
 - [Ankommande kvalitetskontroll](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
-- [Lagring av lagerföråldringsrapport](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
-- [Lagring av lagervärderapport](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)
+- [Lagring av Lagerföråldringsrapport](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
+- [Lagring av lagervärderapport](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)<br> - Mer information finns i [Lagringsrapport för lagervärde](../cost-management/inventory-value-report-storage.md)
 - [Gantt-schema för huvudplaneringsstatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - För mer information, se [Övervaka en huvudplaneringskörning](../master-planning/tasks/monitor-master-planning-run.md) och video [MRP-prestanda och användbarhetsförbättringar](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 - [Nya dataenheter för tillverkningsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
-- [Utgående sortering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)
+- [Utgående sortering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)<br> - Mer information finns i [utgående sortering](../warehousing/outbound-sorting.md) .
 - [Förpackning jämfört med lagringsdimensioner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 - [Parallell bekräftelse av planerade order](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - För mer information, se [Parallell bekräftelse](../master-planning/maintain-planned-orders.md#parallelize-firming) och video [MRP-prestanda och användbarhetsförbättringar](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 - [Planera optimering för distribution](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Mer information finns i [översikt för planeringsoptimering](../master-planning/planning-optimization/planning-optimization-overview.md).
 - [Förbättringar av inköpsavtal](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Mer information finns i [Inköpsavtal](../procurement/purchase-agreements.md).
 - [Kluster för artikelinförsel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - Mer information finns i videon [Kluster för artikelinförsel](https://www.microsoft.com/videoplayer/embed/RE4f5aB).
-- [Placera på vägg/placera i butik](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)
+- [Placera på vägg/placera i butik](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)<br> - Mer information finns i [Placera på vägg – placera i butik](../warehousing/put-to-wall-put-to-store.md).
 - [Ta emot sortering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 - [Leverans av små paket (SPS)](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 - [Budgivning av leverantör – frågor från leverantörer och sammanfattade svar](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 - [Visuell planering av arbetsorder i tillgångshantering](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Mer information finns i [arbeta med schemalagda arbetsorder med hjälp av ett Gantt-diagram](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
-- [Artikelplacering för distributionslager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)
+- [Artikelplacering för lagerställe](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)<br> - Mer information finns i [Artikelplacering för distributionslager](../warehousing/warehouse-slotting.md).
 - [Förbättringar av utskrift av påfyllnadsetiketter](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 - [Kod för påfyllnadssteg](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)<br> - För mer information, se [Kod för påfyllnadssteg](../warehousing/wave-step-codes.md).
 

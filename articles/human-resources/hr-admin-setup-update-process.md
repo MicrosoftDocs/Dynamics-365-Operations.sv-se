@@ -3,7 +3,7 @@ title: Uppdatera process
 description: Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (SaaS) som tillhandahåller kontinuerliga, beröringsfria tjänstuppdateringar för app- och plattformsändringar.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431186"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759969"
 ---
 # <a name="update-process"></a>Uppdatera process
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources är en äkta programvara som en tjänst (
 
 Uppdateringar släpps regelbundet för alla miljöer. Personal stöds enligt [Microsoft livscykelpolicy](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy), som ger konsekventa och förutsägbara riktlinjer för tillgängligheten av support.
 
-## <a name="release-cadence"></a>Frisläpp miljö
+## <a name="release-cadence"></a>Frisläpp miljö 
 
 Personaluppdateringar tillämpas automatiskt på alla miljöer. I personal finns två typer av utgåvor:
 
@@ -56,14 +56,12 @@ Versioner granskas, testas och valideras i en intern miljö. När versioner har 
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Frisläppningstakt undantag i 2020
 
-Följande datum utgör undantag från schemat för regelbunden publicering:
+För att kunna redovisa helgdagar är publicering av version för november och december 2020 följande:
 
-| Datum | beskrivning |
-| --- | --- |
-| Vecka för 23 november | Inga uppdateringar |
-| Vecka för 14 december | Endast mindre uppdateringar |
-| Vecka för 21 december | Inga uppdateringar |
-| Vecka för 28 december | Inga uppdateringar |
+- November version: 2 november - 13 november
+- December version: 30 november - 11 december
+ 
+Frisläppningstakten på två veckor kommer att återupptas som vanligt den 11 januari, 2021.
 
 ## <a name="communications"></a>Kommunikationer
 

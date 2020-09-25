@@ -3,7 +3,7 @@ title: Borttagna eller avskrivna plattformsfunktioner
 description: I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning i plattformsuppdatering av Finance and Operations-appar.
 author: sericks007
 manager: AnnBe
-ms.date: 08/10/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8b26ad668b6cc15d759e10952c042acd5e85bdea
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: b2d54cfaddc1697eda543952831e745182df2753
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678232"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803149"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Borttagna eller avskrivna plattformsfunktioner
 
@@ -37,8 +37,6 @@ Detaljerad information om objekt i Finance and Operations-appar hittas i [Teknis
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformsuppdateringar för version 10.0.13 för Finance and Operations-appar
 
-> [!NOTE]
-> Version 10.0.13 är en förhandsgranskningsversion. Funktionen och dess innehåll kan ändras. Mer information om förhandsversioner finns i [Tillgänglighet för tjänstuppdateringar](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Anpassad kod som definierats i SSRS-rapportens egenskaper 
 

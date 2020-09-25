@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 128083b22bb14d9b445863a0ba1217f723727ee4
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 7b17df2afee22dde1af5c44de31c585069daa349
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597516"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775184"
 ---
 # <a name="warehouse-location-status"></a>Lagerställets platsstatus
 
@@ -76,6 +76,9 @@ Exempelscenariot kräver att du förbereder två platsprofiler.
     Dessa alternativ bestämmer om referensfälten på platsen är aktiva.
 
 1. Upprepa steg 3 till och med 4 för **PICK-06**-profilen.
+
+> [!NOTE]
+> När parametrarna i platsprofilen (**Aktivera artikel i lagerställe**, **Aktivera platsaktivitet**, **Aktivera platsstatus**) ställs in på *Ja*, uppdateras de relevanta platserna omedelbart genom att jobbet före *Konsekvenskontroll för lagerplatsstatus*.
 
 ### <a name="scenario"></a>Scenario
 
