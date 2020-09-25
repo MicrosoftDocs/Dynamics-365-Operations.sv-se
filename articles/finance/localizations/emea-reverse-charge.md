@@ -3,7 +3,7 @@ title: Omvänd moms
 description: Det här avsnittet beskriver hur du ställer in omvänd moms (VAT) för europeiska länder, Saudiarabien och Singapore.
 author: epodkolz
 manager: AnnBe
-ms.date: 07/16/2019
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,24 +11,25 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a58ae689a6185316854bf8f01d1237a487d3981
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183948"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760239"
 ---
 # <a name="reverse-charge-vat"></a>Omvänd moms
 
-
 [!include [banner](../includes/banner.md)]
 
+Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för EU:s och Gulfrådets länder och Singapore.
 
-Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för Saudiarabien, Singapore och europeiska länder.
+> [!NOTE]                                                                                  
+> För Bahrain, Kuwait, Oman och Qatar ska funktionen **Tillgänglighet för omvänd moms för ytterligare länder** aktiveras i arbetsytan **Funktionshantering**. 
 
 Omvänd moms är ett skatteschema som har ansvaret för redovisning och rapportering av moms från säljaren till köparen av varor eller tjänster. Därför rapporterar mottagaren av varor eller tjänster både utgående moms (i rollen som säljare) och ingående moms (i rollen som inköpare) i deras momsrapport.
 
@@ -85,7 +86,7 @@ På sidan omvänd momsartikelgrupper **Artikelgrupper för återfört tillägg**
 På sidan **Regler för återfört tillägg** (**Skatt** &gt; **Inställningar** &gt; **Moms** &gt; **Regler för återfört tillägg**), kan du definiera tillämpningsreglerna för inköp och försäljning. Du kan konfigurera en uppställning med regler för omvänd moms. För varje regel anger du följande fält:
 
 - **Dokumenttyp** – Välj **inköpsorder**, **leverantörsfakturajournal**, **försäljningsorder**, **fritextfaktura**, **Kundfakturajournal**, och/eller **leverantörsfakturan**.
-- **Partnerns land/regions-typ** – Välj **lokal**, **EU**, eller **utländsk**. Alternativt om regeln kan kopplas till alla handelspartner oavsett land eller region för adressen kan du välja **alla**.
+- **Partnerns land/regions-typ** – Välj **lokal**, **EU**, **GCC** eller **utländsk**. Alternativt om regeln kan kopplas till alla handelspartner oavsett land eller region för adressen kan du välja **alla**.
 - **Lokal leveransadress** – Markera den här kryssrutan om du vill använda regeln för leveranser inom samma land eller region. Den här kryssrutan kan inte väljas för dokumenttyperna **leverantörsfakturajournal** och **Kundfakturajournal**.
 - **Artikelgrupp för omvänd moms** – Välj den grupp som regeln kan tillämpas på.
 - **Tröskelbelopp** – används endast i schemat för omvänd moms till en faktura om värdet på artiklarna eller tjänsterna som ingår i artikelgruppen för omvänd moms överskrider den gräns som du anger här.
@@ -98,13 +99,16 @@ Du kan också ange om ett meddelande visas och dokumentraden uppdateras med moms
 - **Fråga** – ett meddelande visas som bekräftar att omvänd moms kan användas.
 - **Ange** – dokumentraden uppdateras utan meddelande.
 
+## <a name="set-up-countryregion-properties"></a>Ange egenskaper för land/region
+Sidan **Utländska handelsparametrar** (**skatt** &gt; **inställningar** &gt; **moms** &gt; **utländsk handel** &gt; **parametrar för utländsk handel**) på fliken **egenskaper för land/region** ange land/region för aktuell juridisk person till *lokal*. Ange **typ av land/region** för EU-länder/EU-regioner som deltar i EU-handel med den aktuella juridiska personen till *EU*. Ange **typ av land/region** för GCC-länder/regioner som deltar i GCC-handel med den aktuella juridiska personen till *GCC*.
+
 ## <a name="set-up-default-parameters"></a>Ställ in standardparametrar
 Om du vill aktivera funktionen för återföring av moms på sidan **allmänna redovisningsparametrar** på fliken **omvänd moms** anger du alternativet **aktivera omvänd moms** till **Ja**. I fälten **Momsgrupp för inköpsorder** och **Momsgrupp för försäljningsorder** väljer du standardmomsgrupper. När villkoren för omvänd moms uppfylls kommer försäljnings- eller inköpsordern att uppdateras med de här momsgrupperna.
 
 ## <a name="reverse-charge-on-a-sales-invoice"></a>Omvänd moms på en försäljningsfaktura
 För försäljningen under schema för omvänd moms debiterar inte säljaren moms. Istället indikerar fakturan både artiklarna för vilka momsen ska återföras och det totala beloppet för den återförda momsen noteras på fakturan.
 
-När en försäljningsfaktura bokförs med omvänd momstransaktion har kryssrutorna **Momsskuld** momsriktning och nollmom och **omvänd moms** markerats.
+När en försäljningsfaktura bokförs med omvänd momstransaktion har kryssrutorna **Momsskuld** momsriktning och nollmoms och **omvänd moms** och **momsbefrielse** markerade.
 
 ## <a name="reverse-charge-on-a-purchase-invoice"></a>Omvänd moms på en inköpsfaktura
 För inköpare under schemat omvänd moms agerar inköparen som tar emot fakturan som har omvänd moms som en köpare och säljare för redovisningsändamål.

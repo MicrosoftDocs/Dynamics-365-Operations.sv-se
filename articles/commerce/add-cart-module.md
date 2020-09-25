@@ -3,7 +3,7 @@ title: Kundvagnsmodul
 description: Det här avsnittet handlar om kundvagnsmoduler och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686776"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761139"
 ---
 # <a name="cart-module"></a>Kundvagnsmodul
 
@@ -77,8 +77,8 @@ Vagnmodul för inköpsruta hämtar produktinformation med hjälp av API:er för 
 Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obligatoriska egenskaperna följer du stegen nedan.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt sidfragment**, välj modulen **kundvagn**.
-1. Under **sidfragmentets namn**, anger du ett namn på **kundvagnsfragmentet** och klickar sedan på **OK**.
+1. I dialogrutan **Nytt fragment**, välj modulen **Kundvagn**.
+1. Under **Fragmentets namn**, anger du ett namn på **kundvagnsfragmentet** och klickar sedan på **OK**.
 1. Markera platsen **kundvagn**.
 1. I pennfönstret till höger väljer du pennsymbolen, anger rubriktext i fältet och markerar sedan kryssmarkeringssymbolen.
 1. I facket **kundvagn** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
@@ -86,8 +86,8 @@ Om du vill lägga till en kundvagnsmodul på en ny sida och ställa in de obliga
 1. Välj **Spara**, välj **Slutför redigering** för att checka in fragmentet och välj sedan **publicera** för att publicera den.
 1. Gå till **mallar**och välj sedan **ny** för att skapa en ny mall.
 1. I dialogrutan **Ny mall** under **Mallnamn** anger du ett namn för mallen.
-1. I dispositionsträdet väljer du platsen **Brödtext** markerar ellipsknappen (**...**) och väljer sedan **Lägg till sidfragment**.
-1. I dialogrutan **Välj sidfragment** väljer du det **kundvagnsfragment** och väljer sedan **OK**.
+1. I dispositionsträdet väljer du platsen **Brödtext** markerar ellipsknappen (**...**) och väljer sedan **Lägg till fragment**.
+1. I dialogrutan **Välj fragment** väljer du det **kundvagnsfragment** och väljer sedan **OK**.
 1. Välj **Spara**, välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 1. Gå till **Sidor** och välj **nytt sidfragment** för att skapa en ny sida.
 1. I dialogrutan **Välj en mall** väljer du den mall som du skapade, anger sidnamn och väljer sedan **OK**.
