@@ -1,7 +1,7 @@
 ---
 title: Konfigurera Azure-resurser för IoT-information
 description: I det här avsnittet beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.
-author: robinarh
+author: ''
 manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
@@ -17,148 +17,148 @@ ms.search.region: Global
 ms.author: ''
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 431ad6766f1e7f2035d6d5ed87bed4856e58e098
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ea1083a65efb25699b9237c72c081f50e1fb476c
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597274"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802783"
 ---
-# <a name="set-up-azure-resources-for-iot-intelligence"></a><span data-ttu-id="8fabb-103">Konfigurera Azure-resurser för IoT-information</span><span class="sxs-lookup"><span data-stu-id="8fabb-103">Set up Azure resources for IoT Intelligence</span></span>
+# <a name="set-up-azure-resources-for-iot-intelligence"></a><span data-ttu-id="6aaab-103">Konfigurera Azure-resurser för IoT-information</span><span class="sxs-lookup"><span data-stu-id="6aaab-103">Set up Azure resources for IoT Intelligence</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8fabb-104">I det här avsnittet beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.</span><span class="sxs-lookup"><span data-stu-id="8fabb-104">This topic explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.</span></span>
+<span data-ttu-id="6aaab-104">I det här avsnittet beskrivs hur du skapar och konfigurerar de Microsoft Azure-resurser som krävs för IoT-information.</span><span class="sxs-lookup"><span data-stu-id="6aaab-104">This topic explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.</span></span>
 
-## <a name="create-azure-resources"></a><span data-ttu-id="8fabb-105">Skapa Azure-resurser</span><span class="sxs-lookup"><span data-stu-id="8fabb-105">Create Azure resources</span></span>
+## <a name="create-azure-resources"></a><span data-ttu-id="6aaab-105">Skapa Azure-resurser</span><span class="sxs-lookup"><span data-stu-id="6aaab-105">Create Azure resources</span></span>
 
-<span data-ttu-id="8fabb-106">Följ stegen nedan om du vill skapa ett IoT-nav en Redis-cache och ett nyckelvalv som Microsoft Dynamics 365 Supply Chain Management kan få åtkomst till.</span><span class="sxs-lookup"><span data-stu-id="8fabb-106">Follow these steps to create an IoT hub, a Redis cache, and a key vault that can be accessed by Microsoft Dynamics 365 Supply Chain Management.</span></span>
+<span data-ttu-id="6aaab-106">Följ stegen nedan om du vill skapa ett IoT-nav en Redis-cache och ett nyckelvalv som Microsoft Dynamics 365 Supply Chain Management kan få åtkomst till.</span><span class="sxs-lookup"><span data-stu-id="6aaab-106">Follow these steps to create an IoT hub, a Redis cache, and a key vault that can be accessed by Microsoft Dynamics 365 Supply Chain Management.</span></span>
 
-### <a name="verify-that-the-microsoft-dynamics-erp-microservices-first-party-app-id-is-in-your-tenant"></a><span data-ttu-id="8fabb-107">Kontrollera att förstaparts app-ID för Microsoft Dynamics ERP Microservices finns i din klientorganisation</span><span class="sxs-lookup"><span data-stu-id="8fabb-107">Verify that the Microsoft Dynamics ERP Microservices first-party app ID is in your tenant</span></span>
+### <a name="verify-that-the-microsoft-dynamics-erp-microservices-first-party-app-id-is-in-your-tenant"></a><span data-ttu-id="6aaab-107">Kontrollera att förstaparts app-ID för Microsoft Dynamics ERP Microservices finns i din klientorganisation</span><span class="sxs-lookup"><span data-stu-id="6aaab-107">Verify that the Microsoft Dynamics ERP Microservices first-party app ID is in your tenant</span></span>
 
-<span data-ttu-id="8fabb-108">Du kan kontrollera att förstaparts app-ID för Microsoft Dynamics ERP Microservices finns i din klientorganisation genom att följa stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="8fabb-108">To verify that the app ID for the Microsoft Dynamics ERP Microservices first-party app is in your tenant, follow these steps.</span></span>
+<span data-ttu-id="6aaab-108">Du kan kontrollera att förstaparts app-ID för Microsoft Dynamics ERP Microservices finns i din klientorganisation genom att följa stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="6aaab-108">To verify that the app ID for the Microsoft Dynamics ERP Microservices first-party app is in your tenant, follow these steps.</span></span>
 
-1. <span data-ttu-id="8fabb-109">Logga in på Azure portal på <https://portal.azure.com>.</span><span class="sxs-lookup"><span data-stu-id="8fabb-109">Sign in to the Azure portal at <https://portal.azure.com>.</span></span>
-2. <span data-ttu-id="8fabb-110">Gå till **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-110">Go to **Azure Active Directory**.</span></span>
-3. <span data-ttu-id="8fabb-111">Gå till **Företagsprogram**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-111">Go to **Enterprise applications**.</span></span>
-4. <span data-ttu-id="8fabb-112">I fältet **Programtyp** väljer du **Microsoft-program**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-112">In the **Application type** field, select **Microsoft applications**.</span></span>
-5. <span data-ttu-id="8fabb-113">I sökfältet anger du **Microsoft Dynamics ERP Microservices**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-113">In the search field, enter **Microsoft Dynamics ERP Microservices**.</span></span>
-6. <span data-ttu-id="8fabb-114">Kontrollera att **Microsoft Dynamics ERP Microservices** finns i listan.</span><span class="sxs-lookup"><span data-stu-id="8fabb-114">Verify that **Microsoft Dynamics ERP Microservices** is in the list.</span></span> <span data-ttu-id="8fabb-115">Andra program har liknande namn.</span><span class="sxs-lookup"><span data-stu-id="8fabb-115">Other applications have similar names.</span></span> <span data-ttu-id="8fabb-116">Se därför till att du använder rätt program.</span><span class="sxs-lookup"><span data-stu-id="8fabb-116">Therefore, make sure that you find the correct application.</span></span> <span data-ttu-id="8fabb-117">App-ID:t är **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-117">The app ID is **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span></span>
+1. <span data-ttu-id="6aaab-109">Logga in på Azure portal på <https://portal.azure.com>.</span><span class="sxs-lookup"><span data-stu-id="6aaab-109">Sign in to the Azure portal at <https://portal.azure.com>.</span></span>
+2. <span data-ttu-id="6aaab-110">Gå till **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-110">Go to **Azure Active Directory**.</span></span>
+3. <span data-ttu-id="6aaab-111">Gå till **Företagsprogram**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-111">Go to **Enterprise applications**.</span></span>
+4. <span data-ttu-id="6aaab-112">I fältet **Programtyp** väljer du **Microsoft-program**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-112">In the **Application type** field, select **Microsoft applications**.</span></span>
+5. <span data-ttu-id="6aaab-113">I sökfältet anger du **Microsoft Dynamics ERP Microservices**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-113">In the search field, enter **Microsoft Dynamics ERP Microservices**.</span></span>
+6. <span data-ttu-id="6aaab-114">Kontrollera att **Microsoft Dynamics ERP Microservices** finns i listan.</span><span class="sxs-lookup"><span data-stu-id="6aaab-114">Verify that **Microsoft Dynamics ERP Microservices** is in the list.</span></span> <span data-ttu-id="6aaab-115">Andra program har liknande namn.</span><span class="sxs-lookup"><span data-stu-id="6aaab-115">Other applications have similar names.</span></span> <span data-ttu-id="6aaab-116">Se därför till att du använder rätt program.</span><span class="sxs-lookup"><span data-stu-id="6aaab-116">Therefore, make sure that you find the correct application.</span></span> <span data-ttu-id="6aaab-117">App-ID:t är **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-117">The app ID is **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span></span>
 
-    <span data-ttu-id="8fabb-118">Om programmet inte finns med i listan måste du lägga till det i klientorganisationen:</span><span class="sxs-lookup"><span data-stu-id="8fabb-118">If the application isn't in the list, you must add it to your tenant:</span></span>
+    <span data-ttu-id="6aaab-118">Om programmet inte finns med i listan måste du lägga till det i klientorganisationen:</span><span class="sxs-lookup"><span data-stu-id="6aaab-118">If the application isn't in the list, you must add it to your tenant:</span></span>
 
-    1. <span data-ttu-id="8fabb-119">I Azure-portalen väljer du knappen för att öppna Azure Cloud Shell i verktygsfältet.</span><span class="sxs-lookup"><span data-stu-id="8fabb-119">In the Azure portal, on the toolbar, select the button to open Azure Cloud Shell.</span></span>
-    2. <span data-ttu-id="8fabb-120">Kör kommandot **Install-Module AzureAD**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-120">Run the command **Install-Module AzureAD**.</span></span> <span data-ttu-id="8fabb-121">Ange **J** om du vill installera modulen.</span><span class="sxs-lookup"><span data-stu-id="8fabb-121">Enter **Y** to install the module.</span></span>
-    3. <span data-ttu-id="8fabb-122">Kör kommandot **Get-InstalledModule -Name "AzureAD"** för att bekräfta att modulen har installerats.</span><span class="sxs-lookup"><span data-stu-id="8fabb-122">Run the command **Get-InstalledModule -Name "AzureAD"** to verify that the module is installed.</span></span>
-    4. <span data-ttu-id="8fabb-123">Kör kommandot **Connect-AzureAD -Confirm** för att köra autentiseringen.</span><span class="sxs-lookup"><span data-stu-id="8fabb-123">Run the command **Connect-AzureAD -Confirm** to run the authentication.</span></span>
-    5. <span data-ttu-id="8fabb-124">Kör kommandot **New-AzureADServicePrincipal-AppId 0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-124">Run the command **New-AzureADServicePrincipal -AppId 0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span></span>
+    1. <span data-ttu-id="6aaab-119">I Azure-portalen väljer du knappen för att öppna Azure Cloud Shell i verktygsfältet.</span><span class="sxs-lookup"><span data-stu-id="6aaab-119">In the Azure portal, on the toolbar, select the button to open Azure Cloud Shell.</span></span>
+    2. <span data-ttu-id="6aaab-120">Kör kommandot **Install-Module AzureAD**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-120">Run the command **Install-Module AzureAD**.</span></span> <span data-ttu-id="6aaab-121">Ange **J** om du vill installera modulen.</span><span class="sxs-lookup"><span data-stu-id="6aaab-121">Enter **Y** to install the module.</span></span>
+    3. <span data-ttu-id="6aaab-122">Kör kommandot **Get-InstalledModule -Name "AzureAD"** för att bekräfta att modulen har installerats.</span><span class="sxs-lookup"><span data-stu-id="6aaab-122">Run the command **Get-InstalledModule -Name "AzureAD"** to verify that the module is installed.</span></span>
+    4. <span data-ttu-id="6aaab-123">Kör kommandot **Connect-AzureAD -Confirm** för att köra autentiseringen.</span><span class="sxs-lookup"><span data-stu-id="6aaab-123">Run the command **Connect-AzureAD -Confirm** to run the authentication.</span></span>
+    5. <span data-ttu-id="6aaab-124">Kör kommandot **New-AzureADServicePrincipal-AppId 0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-124">Run the command **New-AzureADServicePrincipal -AppId 0cdb527f-a8d1-4bf8-9436-b352c68682b2**.</span></span>
 
-    <span data-ttu-id="8fabb-125">Du kan nu upprepa steg 1 till och med 6 och kontrollera att app-ID:t finns i din klientorganisation.</span><span class="sxs-lookup"><span data-stu-id="8fabb-125">You can now repeat steps 1 through 6 to verify that the app ID is in your tenant.</span></span>
+    <span data-ttu-id="6aaab-125">Du kan nu upprepa steg 1 till och med 6 och kontrollera att app-ID:t finns i din klientorganisation.</span><span class="sxs-lookup"><span data-stu-id="6aaab-125">You can now repeat steps 1 through 6 to verify that the app ID is in your tenant.</span></span>
 
-### <a name="create-a-key-vault-resource"></a><span data-ttu-id="8fabb-126">Skapa en nyckelvalvresurs</span><span class="sxs-lookup"><span data-stu-id="8fabb-126">Create a key vault resource</span></span>
+### <a name="create-a-key-vault-resource"></a><span data-ttu-id="6aaab-126">Skapa en nyckelvalvresurs</span><span class="sxs-lookup"><span data-stu-id="6aaab-126">Create a key vault resource</span></span>
 
-<span data-ttu-id="8fabb-127">Gör så här om du vill skapa en nyckelvalvsresurs.</span><span class="sxs-lookup"><span data-stu-id="8fabb-127">To create a key vault resource, follow these steps.</span></span>
+<span data-ttu-id="6aaab-127">Gör så här om du vill skapa en nyckelvalvsresurs.</span><span class="sxs-lookup"><span data-stu-id="6aaab-127">To create a key vault resource, follow these steps.</span></span>
 
-1. <span data-ttu-id="8fabb-128">Skapa eller gå till en resursgrupp i Azure-portalen.</span><span class="sxs-lookup"><span data-stu-id="8fabb-128">In the Azure portal, create or go to a resource group.</span></span>
-2. <span data-ttu-id="8fabb-129">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-129">Select **Add**.</span></span>
-3. <span data-ttu-id="8fabb-130">På sidan **Ny** anger du **Nyckelvalv** i sökrutan.</span><span class="sxs-lookup"><span data-stu-id="8fabb-130">On the **New** page, in the search field, enter **Key vault**.</span></span> <span data-ttu-id="8fabb-131">Markera sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-131">Then select **Create**.</span></span>
-4. <span data-ttu-id="8fabb-132">På sidan **Skapa nyckelvalv** anger du ett värde i fältet **Namn på nyckelvalv**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-132">On the **Create key vault** page, in the **Key vault name** field, enter a name.</span></span>
-5. <span data-ttu-id="8fabb-133">Granska standardvärdena och välj sedan **Granska + skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-133">Review the default values, and then select **Review + create**.</span></span>
-6. <span data-ttu-id="8fabb-134">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-134">Select **Create**.</span></span>
+1. <span data-ttu-id="6aaab-128">Skapa eller gå till en resursgrupp i Azure-portalen.</span><span class="sxs-lookup"><span data-stu-id="6aaab-128">In the Azure portal, create or go to a resource group.</span></span>
+2. <span data-ttu-id="6aaab-129">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-129">Select **Add**.</span></span>
+3. <span data-ttu-id="6aaab-130">På sidan **Ny** anger du **Nyckelvalv** i sökrutan.</span><span class="sxs-lookup"><span data-stu-id="6aaab-130">On the **New** page, in the search field, enter **Key vault**.</span></span> <span data-ttu-id="6aaab-131">Markera sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-131">Then select **Create**.</span></span>
+4. <span data-ttu-id="6aaab-132">På sidan **Skapa nyckelvalv** anger du ett värde i fältet **Namn på nyckelvalv**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-132">On the **Create key vault** page, in the **Key vault name** field, enter a name.</span></span>
+5. <span data-ttu-id="6aaab-133">Granska standardvärdena och välj sedan **Granska + skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-133">Review the default values, and then select **Review + create**.</span></span>
+6. <span data-ttu-id="6aaab-134">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-134">Select **Create**.</span></span>
 
-<span data-ttu-id="8fabb-135">Nyckelvärdet skapas i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="8fabb-135">The key vault is created in the background.</span></span>
+<span data-ttu-id="6aaab-135">Nyckelvärdet skapas i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="6aaab-135">The key vault is created in the background.</span></span>
 
-### <a name="create-an-iot-hub-resource"></a><span data-ttu-id="8fabb-136">Skapa en IoT-navresurs</span><span class="sxs-lookup"><span data-stu-id="8fabb-136">Create an IoT hub resource</span></span>
+### <a name="create-an-iot-hub-resource"></a><span data-ttu-id="6aaab-136">Skapa en IoT-navresurs</span><span class="sxs-lookup"><span data-stu-id="6aaab-136">Create an IoT hub resource</span></span>
 
-<span data-ttu-id="8fabb-137">Gör så här om du vill skapa en IoT-navresurs.</span><span class="sxs-lookup"><span data-stu-id="8fabb-137">To create an IoT hub resource, follow these steps.</span></span>
+<span data-ttu-id="6aaab-137">Gör så här om du vill skapa en IoT-navresurs.</span><span class="sxs-lookup"><span data-stu-id="6aaab-137">To create an IoT hub resource, follow these steps.</span></span>
 
-1. <span data-ttu-id="8fabb-138">Skapa eller gå till en resursgrupp.</span><span class="sxs-lookup"><span data-stu-id="8fabb-138">Create or go to a resource group.</span></span>
-2. <span data-ttu-id="8fabb-139">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-139">Select **Add**.</span></span>
-3. <span data-ttu-id="8fabb-140">På sidan **Ny** anger du **Iot-nav** i sökrutan.</span><span class="sxs-lookup"><span data-stu-id="8fabb-140">On the **New** page, in the search field, enter **Iot Hub**.</span></span> <span data-ttu-id="8fabb-141">Markera sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-141">Then select **Create**.</span></span>
-4. <span data-ttu-id="8fabb-142">I fältet **IoT-navnamn** anger du ett namn.</span><span class="sxs-lookup"><span data-stu-id="8fabb-142">In the **IoT hub name** field, enter a name.</span></span>
-5. <span data-ttu-id="8fabb-143">Granska standardvärdena och välj sedan **Granska + skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-143">Review the default values, and then select **Review + create**.</span></span>
-6. <span data-ttu-id="8fabb-144">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-144">Select **Create**.</span></span>
+1. <span data-ttu-id="6aaab-138">Skapa eller gå till en resursgrupp.</span><span class="sxs-lookup"><span data-stu-id="6aaab-138">Create or go to a resource group.</span></span>
+2. <span data-ttu-id="6aaab-139">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-139">Select **Add**.</span></span>
+3. <span data-ttu-id="6aaab-140">På sidan **Ny** anger du **Iot-nav** i sökrutan.</span><span class="sxs-lookup"><span data-stu-id="6aaab-140">On the **New** page, in the search field, enter **Iot Hub**.</span></span> <span data-ttu-id="6aaab-141">Markera sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-141">Then select **Create**.</span></span>
+4. <span data-ttu-id="6aaab-142">I fältet **IoT-navnamn** anger du ett namn.</span><span class="sxs-lookup"><span data-stu-id="6aaab-142">In the **IoT hub name** field, enter a name.</span></span>
+5. <span data-ttu-id="6aaab-143">Granska standardvärdena och välj sedan **Granska + skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-143">Review the default values, and then select **Review + create**.</span></span>
+6. <span data-ttu-id="6aaab-144">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-144">Select **Create**.</span></span>
 
-<span data-ttu-id="8fabb-145">IoT-navet skapas i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="8fabb-145">The IoT hub is created in the background.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8fabb-146">Vi rekommenderar att du endast skapar en enda IoT-navresurs per miljö.</span><span class="sxs-lookup"><span data-stu-id="8fabb-146">We recommend that you create only one IoT hub resource per environment.</span></span>
-
-### <a name="create-a-redis-cache-resource"></a><span data-ttu-id="8fabb-147">Skapa en resurs för Redis-cache</span><span class="sxs-lookup"><span data-stu-id="8fabb-147">Create a Redis cache resource</span></span>
-
-<span data-ttu-id="8fabb-148">Gör så här om du vill skapa en Redis-cacheresurs.</span><span class="sxs-lookup"><span data-stu-id="8fabb-148">To create a Redis cache resource, follow these steps.</span></span>
-
-1. <span data-ttu-id="8fabb-149">Skapa eller gå till en resursgrupp.</span><span class="sxs-lookup"><span data-stu-id="8fabb-149">Create or go to a resource group.</span></span>
-2. <span data-ttu-id="8fabb-150">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-150">Select **Add**.</span></span>
-3. <span data-ttu-id="8fabb-151">På sidan **Ny** anger du **Azure Cache for Redis** i sökfältet.</span><span class="sxs-lookup"><span data-stu-id="8fabb-151">On the **New** page, in the search field, enter **Azure Cache for Redis**.</span></span> <span data-ttu-id="8fabb-152">Markera sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-152">Then select **Create**.</span></span>
-4. <span data-ttu-id="8fabb-153">I fältet **DNS-namn** anger du ett namn.</span><span class="sxs-lookup"><span data-stu-id="8fabb-153">In the **DNS name** field, enter a name.</span></span>
-5. <span data-ttu-id="8fabb-154">Granska standardvärdena och välj sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-154">Review the default values, and then select **Create**.</span></span>
-
-<span data-ttu-id="8fabb-155">Redis-cachen skapas i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="8fabb-155">The Redis cache is created in the background.</span></span>
+<span data-ttu-id="6aaab-145">IoT-navet skapas i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="6aaab-145">The IoT hub is created in the background.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8fabb-156">Vi rekommenderar att du endast skapar en enda Redis-cache per miljö.</span><span class="sxs-lookup"><span data-stu-id="8fabb-156">We recommend that you create only one Redis cache per environment.</span></span>
+> <span data-ttu-id="6aaab-146">Vi rekommenderar att du endast skapar en enda IoT-navresurs per miljö.</span><span class="sxs-lookup"><span data-stu-id="6aaab-146">We recommend that you create only one IoT hub resource per environment.</span></span>
 
-<span data-ttu-id="8fabb-157">Alla resurser har nu skapats.</span><span class="sxs-lookup"><span data-stu-id="8fabb-157">All the resources have now been created.</span></span>
+### <a name="create-a-redis-cache-resource"></a><span data-ttu-id="6aaab-147">Skapa en resurs för Redis-cache</span><span class="sxs-lookup"><span data-stu-id="6aaab-147">Create a Redis cache resource</span></span>
 
-## <a name="configure-the-azure-resources"></a><span data-ttu-id="8fabb-158">Konfigurera Azure-resurserna</span><span class="sxs-lookup"><span data-stu-id="8fabb-158">Configure the Azure resources</span></span>
+<span data-ttu-id="6aaab-148">Gör så här om du vill skapa en Redis-cacheresurs.</span><span class="sxs-lookup"><span data-stu-id="6aaab-148">To create a Redis cache resource, follow these steps.</span></span>
 
-### <a name="configure-the-iot-hub"></a><span data-ttu-id="8fabb-159">Konfigurera IoT-navet</span><span class="sxs-lookup"><span data-stu-id="8fabb-159">Configure the IoT hub</span></span>
+1. <span data-ttu-id="6aaab-149">Skapa eller gå till en resursgrupp.</span><span class="sxs-lookup"><span data-stu-id="6aaab-149">Create or go to a resource group.</span></span>
+2. <span data-ttu-id="6aaab-150">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-150">Select **Add**.</span></span>
+3. <span data-ttu-id="6aaab-151">På sidan **Ny** anger du **Azure Cache for Redis** i sökfältet.</span><span class="sxs-lookup"><span data-stu-id="6aaab-151">On the **New** page, in the search field, enter **Azure Cache for Redis**.</span></span> <span data-ttu-id="6aaab-152">Markera sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-152">Then select **Create**.</span></span>
+4. <span data-ttu-id="6aaab-153">I fältet **DNS-namn** anger du ett namn.</span><span class="sxs-lookup"><span data-stu-id="6aaab-153">In the **DNS name** field, enter a name.</span></span>
+5. <span data-ttu-id="6aaab-154">Granska standardvärdena och välj sedan **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-154">Review the default values, and then select **Create**.</span></span>
 
-<span data-ttu-id="8fabb-160">Följ dessa steg för att konfigurera IoT-navet:</span><span class="sxs-lookup"><span data-stu-id="8fabb-160">To configure the IoT hub, follow these steps.</span></span>
-
-1. <span data-ttu-id="8fabb-161">Markera IoT Hub-resursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="8fabb-161">In your resources, select the IoT hub resource.</span></span>
-2. <span data-ttu-id="8fabb-162">I det vänstra navigeringsfönstret väljer du **Inbyggda slutpunkter**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-162">In the left navigation pane, select **Built-in endpoints**.</span></span>
-3. <span data-ttu-id="8fabb-163">Under **Konsumentgrupper** klistrar du in följande konsumentgrupper.</span><span class="sxs-lookup"><span data-stu-id="8fabb-163">Under **Consumer groups**, paste the following consumer groups.</span></span> <span data-ttu-id="8fabb-164">Dessa konsumentgrupper motsvarar de färdiga scenarierna.</span><span class="sxs-lookup"><span data-stu-id="8fabb-164">These consumer groups correspond to the out-of-box scenarios.</span></span>
-
-    + <span data-ttu-id="8fabb-165">microsoft.dynamics.iotintelligence-1</span><span class="sxs-lookup"><span data-stu-id="8fabb-165">microsoft.dynamics.iotintelligence-1</span></span>
-    + <span data-ttu-id="8fabb-166">microsoft.dynamics.iotintelligence-2</span><span class="sxs-lookup"><span data-stu-id="8fabb-166">microsoft.dynamics.iotintelligence-2</span></span>
-    + <span data-ttu-id="8fabb-167">microsoft.dynamics.iotintelligence-3</span><span class="sxs-lookup"><span data-stu-id="8fabb-167">microsoft.dynamics.iotintelligence-3</span></span>
-
-### <a name="configure-the-key-vault"></a><span data-ttu-id="8fabb-168">Konfigurera nyckelvalvet</span><span class="sxs-lookup"><span data-stu-id="8fabb-168">Configure the key vault</span></span>
-
-<span data-ttu-id="8fabb-169">Följ dessa steg när du vill konfigurera nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="8fabb-169">To configure the key vault, follow these steps.</span></span>
-
-1. <span data-ttu-id="8fabb-170">Markera nyckelvalvsresursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="8fabb-170">In your resources, select the key vault resource.</span></span>
-2. <span data-ttu-id="8fabb-171">I det vänstra navigeringsfönstret välj er du **Policyåtkomst**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-171">In the left navigation pane, select **Access policies**.</span></span>
-3. <span data-ttu-id="8fabb-172">Välj **Lägg till en åtkomstpolicy**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-172">Select **Add an access policy**.</span></span>
-4. <span data-ttu-id="8fabb-173">På sidan **Lägg till åtkomstpolicy**, i fältet **Hemliga behörigheter**, väljer du **Hämta** och **Lista**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-173">On the **Add access policy** page, in the **Secret permissions** field, select **Get** and **List**.</span></span>
-5. <span data-ttu-id="8fabb-174">Klicka på i **Välj primär**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-174">Click in the **Select principal**.</span></span>
-6. <span data-ttu-id="8fabb-175">I dialogrutan **Primär** letar du upp och väljer **Microsoft Dynamics ERP Microservices**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-175">In the **Principal** dialog box, search for and select **Microsoft Dynamics ERP Microservices**.</span></span> <span data-ttu-id="8fabb-176">Välj sedan **Välj**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-176">Then select **Select**.</span></span>
-7. <span data-ttu-id="8fabb-177">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-177">Select **Add**.</span></span>
-8. <span data-ttu-id="8fabb-178">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-178">Select **Save**.</span></span>
-
-<span data-ttu-id="8fabb-179">Appen har nu åtkomst till hemligheterna i nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="8fabb-179">The app now has access to the secrets in the key vault.</span></span>
-
-### <a name="save-the-iot-hub-connection-string-secret"></a><span data-ttu-id="8fabb-180">Spara hemligheten för IoT-navets anslutningssträng</span><span class="sxs-lookup"><span data-stu-id="8fabb-180">Save the IoT hub connection string secret</span></span>
-
-<span data-ttu-id="8fabb-181">Gör så här om du vill spara hemligheten för IoT-navets anslutningssträng:</span><span class="sxs-lookup"><span data-stu-id="8fabb-181">To save the secret for the IoT hub connection string, follow these steps.</span></span>
-
-1. <span data-ttu-id="8fabb-182">Markera IoT Hub-resursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="8fabb-182">In your resources, select the IoT hub resource.</span></span>
-2. <span data-ttu-id="8fabb-183">I det vänstra navigeringsfönstret väljer du **Inbyggda slutpunkter**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-183">In the left navigation pane, select **Built-in endpoints**.</span></span>
-3. <span data-ttu-id="8fabb-184">Kopiera värdet i fältet för **Händelsenavskompatilbel slutpunkt**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-184">Copy the value in the **Event Hub-compatible endpoint** field.</span></span>
-4. <span data-ttu-id="8fabb-185">Gå till nyckelvalvsresursen.</span><span class="sxs-lookup"><span data-stu-id="8fabb-185">Go to the key vault resource.</span></span>
-5. <span data-ttu-id="8fabb-186">I navigeringsfönstret till vänster välj er du **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-186">In the left navigation pane, select **Secrets**.</span></span>
-6. <span data-ttu-id="8fabb-187">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-187">Select **Generate/Import**.</span></span>
-7. <span data-ttu-id="8fabb-188">Ange sedan ett namn i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-188">In the **Name** field, enter a name.</span></span>
-8. <span data-ttu-id="8fabb-189">I fältet **Värde** klistrar du in det slutpunktsvärde som du tidigare kopierade.</span><span class="sxs-lookup"><span data-stu-id="8fabb-189">In the **Value** field, paste the endpoint value that you copied earlier.</span></span>
-9. <span data-ttu-id="8fabb-190">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-190">Select **Create**.</span></span>
-
-### <a name="save-the-redis-cache-connection-string-secret"></a><span data-ttu-id="8fabb-191">Spara hemligheten för Redis-cachens anslutningssträng</span><span class="sxs-lookup"><span data-stu-id="8fabb-191">Save the Redis cache connection string secret</span></span>
-
-<span data-ttu-id="8fabb-192">Gör så här om du vill spara hemligheten för Redis-cachens anslutningssträng:</span><span class="sxs-lookup"><span data-stu-id="8fabb-192">To save the secret for the Redis cache connection string, follow these steps.</span></span>
-
-1. <span data-ttu-id="8fabb-193">Markera Redis-cache-resursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="8fabb-193">In your resources, select the Redis cache resource.</span></span>
-2. <span data-ttu-id="8fabb-194">Välj **Åtkomstnycklar**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-194">Select **Access keys**.</span></span>
-3. <span data-ttu-id="8fabb-195">Kopiera värdet i fältet **Primär anslutningssträng**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-195">Copy the value in the **Primary connection string** field.</span></span>
-4. <span data-ttu-id="8fabb-196">Gå till nyckelvalvsresursen.</span><span class="sxs-lookup"><span data-stu-id="8fabb-196">Go to the key vault resource.</span></span>
-5. <span data-ttu-id="8fabb-197">I navigeringsfönstret till vänster välj er du **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-197">In the left navigation pane, select **Secrets**.</span></span>
-6. <span data-ttu-id="8fabb-198">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-198">Select **Generate/Import**.</span></span>
-7. <span data-ttu-id="8fabb-199">Ange sedan ett namn i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-199">In the **Name** field, enter a name.</span></span>
-8. <span data-ttu-id="8fabb-200">I fältet **Värde** klistrar du in den anslutningssträng som du tidigare kopierade.</span><span class="sxs-lookup"><span data-stu-id="8fabb-200">In the **Value** field, paste the connection string that you copied earlier.</span></span>
-9. <span data-ttu-id="8fabb-201">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="8fabb-201">Select **Create**.</span></span>
+<span data-ttu-id="6aaab-155">Redis-cachen skapas i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="6aaab-155">The Redis cache is created in the background.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8fabb-202">När du uppdaterar en av anslutningssträngarna måste du också uppdatera de hemliga värdena.</span><span class="sxs-lookup"><span data-stu-id="8fabb-202">Whenever you update one of the connection strings, you must also update the secret values.</span></span>
+> <span data-ttu-id="6aaab-156">Vi rekommenderar att du endast skapar en enda Redis-cache per miljö.</span><span class="sxs-lookup"><span data-stu-id="6aaab-156">We recommend that you create only one Redis cache per environment.</span></span>
 
-<span data-ttu-id="8fabb-203">Du har nu slutfört etableringen av de nödvändiga Azure-resurserna.</span><span class="sxs-lookup"><span data-stu-id="8fabb-203">You've now finished provisioning the required Azure resources.</span></span> <span data-ttu-id="8fabb-204">Nästa steg är att [installera IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).</span><span class="sxs-lookup"><span data-stu-id="8fabb-204">The next step is to [install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).</span></span>
+<span data-ttu-id="6aaab-157">Alla resurser har nu skapats.</span><span class="sxs-lookup"><span data-stu-id="6aaab-157">All the resources have now been created.</span></span>
+
+## <a name="configure-the-azure-resources"></a><span data-ttu-id="6aaab-158">Konfigurera Azure-resurserna</span><span class="sxs-lookup"><span data-stu-id="6aaab-158">Configure the Azure resources</span></span>
+
+### <a name="configure-the-iot-hub"></a><span data-ttu-id="6aaab-159">Konfigurera IoT-navet</span><span class="sxs-lookup"><span data-stu-id="6aaab-159">Configure the IoT hub</span></span>
+
+<span data-ttu-id="6aaab-160">Följ dessa steg för att konfigurera IoT-navet:</span><span class="sxs-lookup"><span data-stu-id="6aaab-160">To configure the IoT hub, follow these steps.</span></span>
+
+1. <span data-ttu-id="6aaab-161">Markera IoT Hub-resursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="6aaab-161">In your resources, select the IoT hub resource.</span></span>
+2. <span data-ttu-id="6aaab-162">I det vänstra navigeringsfönstret väljer du **Inbyggda slutpunkter**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-162">In the left navigation pane, select **Built-in endpoints**.</span></span>
+3. <span data-ttu-id="6aaab-163">Under **Konsumentgrupper** klistrar du in följande konsumentgrupper.</span><span class="sxs-lookup"><span data-stu-id="6aaab-163">Under **Consumer groups**, paste the following consumer groups.</span></span> <span data-ttu-id="6aaab-164">Dessa konsumentgrupper motsvarar de färdiga scenarierna.</span><span class="sxs-lookup"><span data-stu-id="6aaab-164">These consumer groups correspond to the out-of-box scenarios.</span></span>
+
+    + <span data-ttu-id="6aaab-165">microsoft.dynamics.iotintelligence-1</span><span class="sxs-lookup"><span data-stu-id="6aaab-165">microsoft.dynamics.iotintelligence-1</span></span>
+    + <span data-ttu-id="6aaab-166">microsoft.dynamics.iotintelligence-2</span><span class="sxs-lookup"><span data-stu-id="6aaab-166">microsoft.dynamics.iotintelligence-2</span></span>
+    + <span data-ttu-id="6aaab-167">microsoft.dynamics.iotintelligence-3</span><span class="sxs-lookup"><span data-stu-id="6aaab-167">microsoft.dynamics.iotintelligence-3</span></span>
+
+### <a name="configure-the-key-vault"></a><span data-ttu-id="6aaab-168">Konfigurera nyckelvalvet</span><span class="sxs-lookup"><span data-stu-id="6aaab-168">Configure the key vault</span></span>
+
+<span data-ttu-id="6aaab-169">Följ dessa steg när du vill konfigurera nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="6aaab-169">To configure the key vault, follow these steps.</span></span>
+
+1. <span data-ttu-id="6aaab-170">Markera nyckelvalvsresursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="6aaab-170">In your resources, select the key vault resource.</span></span>
+2. <span data-ttu-id="6aaab-171">I det vänstra navigeringsfönstret välj er du **Policyåtkomst**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-171">In the left navigation pane, select **Access policies**.</span></span>
+3. <span data-ttu-id="6aaab-172">Välj **Lägg till en åtkomstpolicy**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-172">Select **Add an access policy**.</span></span>
+4. <span data-ttu-id="6aaab-173">På sidan **Lägg till åtkomstpolicy**, i fältet **Hemliga behörigheter**, väljer du **Hämta** och **Lista**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-173">On the **Add access policy** page, in the **Secret permissions** field, select **Get** and **List**.</span></span>
+5. <span data-ttu-id="6aaab-174">Klicka på i **Välj primär**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-174">Click in the **Select principal**.</span></span>
+6. <span data-ttu-id="6aaab-175">I dialogrutan **Primär** letar du upp och väljer **Microsoft Dynamics ERP Microservices**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-175">In the **Principal** dialog box, search for and select **Microsoft Dynamics ERP Microservices**.</span></span> <span data-ttu-id="6aaab-176">Välj sedan **Välj**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-176">Then select **Select**.</span></span>
+7. <span data-ttu-id="6aaab-177">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-177">Select **Add**.</span></span>
+8. <span data-ttu-id="6aaab-178">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-178">Select **Save**.</span></span>
+
+<span data-ttu-id="6aaab-179">Appen har nu åtkomst till hemligheterna i nyckelvalvet.</span><span class="sxs-lookup"><span data-stu-id="6aaab-179">The app now has access to the secrets in the key vault.</span></span>
+
+### <a name="save-the-iot-hub-connection-string-secret"></a><span data-ttu-id="6aaab-180">Spara hemligheten för IoT-navets anslutningssträng</span><span class="sxs-lookup"><span data-stu-id="6aaab-180">Save the IoT hub connection string secret</span></span>
+
+<span data-ttu-id="6aaab-181">Gör så här om du vill spara hemligheten för IoT-navets anslutningssträng:</span><span class="sxs-lookup"><span data-stu-id="6aaab-181">To save the secret for the IoT hub connection string, follow these steps.</span></span>
+
+1. <span data-ttu-id="6aaab-182">Markera IoT Hub-resursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="6aaab-182">In your resources, select the IoT hub resource.</span></span>
+2. <span data-ttu-id="6aaab-183">I det vänstra navigeringsfönstret väljer du **Inbyggda slutpunkter**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-183">In the left navigation pane, select **Built-in endpoints**.</span></span>
+3. <span data-ttu-id="6aaab-184">Kopiera värdet i fältet för **Händelsenavskompatilbel slutpunkt**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-184">Copy the value in the **Event Hub-compatible endpoint** field.</span></span>
+4. <span data-ttu-id="6aaab-185">Gå till nyckelvalvsresursen.</span><span class="sxs-lookup"><span data-stu-id="6aaab-185">Go to the key vault resource.</span></span>
+5. <span data-ttu-id="6aaab-186">I navigeringsfönstret till vänster välj er du **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-186">In the left navigation pane, select **Secrets**.</span></span>
+6. <span data-ttu-id="6aaab-187">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-187">Select **Generate/Import**.</span></span>
+7. <span data-ttu-id="6aaab-188">Ange sedan ett namn i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-188">In the **Name** field, enter a name.</span></span>
+8. <span data-ttu-id="6aaab-189">I fältet **Värde** klistrar du in det slutpunktsvärde som du tidigare kopierade.</span><span class="sxs-lookup"><span data-stu-id="6aaab-189">In the **Value** field, paste the endpoint value that you copied earlier.</span></span>
+9. <span data-ttu-id="6aaab-190">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-190">Select **Create**.</span></span>
+
+### <a name="save-the-redis-cache-connection-string-secret"></a><span data-ttu-id="6aaab-191">Spara hemligheten för Redis-cachens anslutningssträng</span><span class="sxs-lookup"><span data-stu-id="6aaab-191">Save the Redis cache connection string secret</span></span>
+
+<span data-ttu-id="6aaab-192">Gör så här om du vill spara hemligheten för Redis-cachens anslutningssträng:</span><span class="sxs-lookup"><span data-stu-id="6aaab-192">To save the secret for the Redis cache connection string, follow these steps.</span></span>
+
+1. <span data-ttu-id="6aaab-193">Markera Redis-cache-resursen bland dina resurser.</span><span class="sxs-lookup"><span data-stu-id="6aaab-193">In your resources, select the Redis cache resource.</span></span>
+2. <span data-ttu-id="6aaab-194">Välj **Åtkomstnycklar**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-194">Select **Access keys**.</span></span>
+3. <span data-ttu-id="6aaab-195">Kopiera värdet i fältet **Primär anslutningssträng**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-195">Copy the value in the **Primary connection string** field.</span></span>
+4. <span data-ttu-id="6aaab-196">Gå till nyckelvalvsresursen.</span><span class="sxs-lookup"><span data-stu-id="6aaab-196">Go to the key vault resource.</span></span>
+5. <span data-ttu-id="6aaab-197">I navigeringsfönstret till vänster välj er du **Hemligheter**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-197">In the left navigation pane, select **Secrets**.</span></span>
+6. <span data-ttu-id="6aaab-198">Välj **Generera/Importera**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-198">Select **Generate/Import**.</span></span>
+7. <span data-ttu-id="6aaab-199">Ange sedan ett namn i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-199">In the **Name** field, enter a name.</span></span>
+8. <span data-ttu-id="6aaab-200">I fältet **Värde** klistrar du in den anslutningssträng som du tidigare kopierade.</span><span class="sxs-lookup"><span data-stu-id="6aaab-200">In the **Value** field, paste the connection string that you copied earlier.</span></span>
+9. <span data-ttu-id="6aaab-201">Markera **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="6aaab-201">Select **Create**.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="6aaab-202">När du uppdaterar en av anslutningssträngarna måste du också uppdatera de hemliga värdena.</span><span class="sxs-lookup"><span data-stu-id="6aaab-202">Whenever you update one of the connection strings, you must also update the secret values.</span></span>
+
+<span data-ttu-id="6aaab-203">Du har nu slutfört etableringen av de nödvändiga Azure-resurserna.</span><span class="sxs-lookup"><span data-stu-id="6aaab-203">You've now finished provisioning the required Azure resources.</span></span> <span data-ttu-id="6aaab-204">Nästa steg är att [installera IoT-information-tillägget i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).</span><span class="sxs-lookup"><span data-stu-id="6aaab-204">The next step is to [install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).</span></span>
