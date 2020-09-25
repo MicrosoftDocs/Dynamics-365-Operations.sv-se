@@ -1,9 +1,9 @@
 ---
-title: ER överför en konfiguration till Lifecycle Services
-description: I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny formatkonfiguration för elektronisk rapportering (ER) och överföra den till Microsoft Lifecycle Services (LCS).
+title: Överför en konfiguration till Lifecycle Services
+description: Detta ämne förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny en konfiguration för elektronisk rapportering (ER) och ladda upp den i Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,133 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: c43bad3ee2530a454de718a0a7da4d1e468a4af4
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143302"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810701"
 ---
-# <a name="er-upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="6ceb3-103">ER överför en konfiguration till Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="6ceb3-103">ER Upload a configuration into Lifecycle Services</span></span>
+# <a name="upload-a-configuration-into-lifecycle-services"></a><span data-ttu-id="37203-103">Överför en konfiguration till Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="37203-103">Upload a configuration into Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6ceb3-104">I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny formatkonfiguration för elektronisk rapportering (ER) och överföra den till Microsoft Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="6ceb3-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration and upload it into Microsoft Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="37203-104">Detta ämne förklarar hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny [konfiguration för elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) och ladda upp den i [Tillgångsbibliotek på projektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="37203-104">This topic explains how a user in the System administrator or Electronic reporting developer role can create a new [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) and upload it into the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="6ceb3-105">I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litware, Inc. och överföra den till LCS. Dessa steg kan utföras i alla företag eftersom ER-konfigureringar delas mellan företag.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-105">In this example, you will create a configuration and upload it to LCS for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="6ceb3-106">För att slutföra dessa steg måste du först slutföra stegen i proceduren "Create a configuration provider and mark it as active”.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span> <span data-ttu-id="6ceb3-107">Åtkomst till LCS krävs även för att slutföra dessa steg.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-107">Access to LCS is also required for completion of these steps.</span></span>
+<span data-ttu-id="37203-105">I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litware, Inc. och överföra den till LCS. Dessa steg kan slutföras i alla företag eftersom ER-konfigureringar delas mellan företag.</span><span class="sxs-lookup"><span data-stu-id="37203-105">In this example, you will create a configuration and upload it into LCS for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.</span></span> <span data-ttu-id="37203-106">För att slutföra dessa steg måste du först slutföra stegen i [Skapa en konfigurationsleverantörer och välj de som aktiva](er-configuration-provider-mark-it-active-2016-11.md)</span><span class="sxs-lookup"><span data-stu-id="37203-106">To complete these steps, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).</span></span> <span data-ttu-id="37203-107">Du måste också ha tillgång till LCS.</span><span class="sxs-lookup"><span data-stu-id="37203-107">Access to LCS is also required.</span></span>
 
-1. <span data-ttu-id="6ceb3-108">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="6ceb3-109">Välj Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-109">Select 'Litware, Inc.'</span></span> <span data-ttu-id="6ceb3-110">och ställ in som aktiv</span><span class="sxs-lookup"><span data-stu-id="6ceb3-110">and set it as active.</span></span>
-3. <span data-ttu-id="6ceb3-111">Klientkonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-111">Click Configurations.</span></span>
+1. <span data-ttu-id="37203-108">Logga in på programmet med någon av följande roller:</span><span class="sxs-lookup"><span data-stu-id="37203-108">Sign in to the application by using one of the following roles:</span></span>
 
-## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="6ceb3-112">Skapa en ny datamodellskonfiguration</span><span class="sxs-lookup"><span data-stu-id="6ceb3-112">Create a new data model configuration</span></span>
-1. <span data-ttu-id="6ceb3-113">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-113">Click Create configuration to open the drop dialog.</span></span>
-    * <span data-ttu-id="6ceb3-114">Du skapar en konfiguration som innehåller en exempeldatamodell för elektroniska dokument.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-114">You will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="6ceb3-115">Denna konfiguration av datamodellen ska överföras till LCS senare.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-115">This data model configuration will be uploaded into LCS later.</span></span>  
-2. <span data-ttu-id="6ceb3-116">Skriv "Konfiguration av exempelmodell" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-116">In the Name field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="6ceb3-117">Konfiguration av exempelmodell.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-117">Sample model configuration</span></span>  
-3. <span data-ttu-id="6ceb3-118">Skriv "Konfiguration av exempelmodell" i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-118">In the Description field, type 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="6ceb3-119">Konfiguration av exempelmodell.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-119">Sample model configuration</span></span>  
-4. <span data-ttu-id="6ceb3-120">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-120">Click Create configuration.</span></span>
-5. <span data-ttu-id="6ceb3-121">Klicka på Modelldesigner.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-121">Click Model designer.</span></span>
-6. <span data-ttu-id="6ceb3-122">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-122">Click New.</span></span>
-7. <span data-ttu-id="6ceb3-123">Skriv "Startpunkt" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-123">In the Name field, type 'Entry point'.</span></span>
-    * <span data-ttu-id="6ceb3-124">Startpunkt</span><span class="sxs-lookup"><span data-stu-id="6ceb3-124">Entry point</span></span>  
-8. <span data-ttu-id="6ceb3-125">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-125">Click Add.</span></span>
-9. <span data-ttu-id="6ceb3-126">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-126">Click Save.</span></span>
-10. <span data-ttu-id="6ceb3-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-127">Close the page.</span></span>
-11. <span data-ttu-id="6ceb3-128">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-128">Click Change status.</span></span>
-12. <span data-ttu-id="6ceb3-129">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-129">Click Complete.</span></span>
-13. <span data-ttu-id="6ceb3-130">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-130">Click OK.</span></span>
+    - <span data-ttu-id="37203-109">Utvecklare för elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="37203-109">Electronic reporting developer</span></span>
+    - <span data-ttu-id="37203-110">Systemadministratör</span><span class="sxs-lookup"><span data-stu-id="37203-110">System administrator</span></span>
 
-## <a name="register-a-new--repository"></a><span data-ttu-id="6ceb3-131">Registrera ett nytt databas</span><span class="sxs-lookup"><span data-stu-id="6ceb3-131">Register a new  repository</span></span>
-1. <span data-ttu-id="6ceb3-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-132">Close the page.</span></span>
-2. <span data-ttu-id="6ceb3-133">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-133">Click Repositories.</span></span>
-    * <span data-ttu-id="6ceb3-134">Detta låter dig öppna listan över databaser för konfigurationsleverantören Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-134">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-3. <span data-ttu-id="6ceb3-135">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-135">Click Add to open the drop dialog.</span></span>
-    * <span data-ttu-id="6ceb3-136">Detta låter dig lägga till en ny databas.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-136">This allows you to add a new repository.</span></span>  
-4. <span data-ttu-id="6ceb3-137">I fältet Typ av konfigurationsdatabas, välj LCS.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-137">In the Configuration repository type field, select LCS.</span></span>
-5. <span data-ttu-id="6ceb3-138">Klicka på Skapa en databas.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-138">Click Create repository.</span></span>
-6. <span data-ttu-id="6ceb3-139">Ange eller välj ett värde i fältet Projekt.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-139">In the Project field, enter or select a value.</span></span>
-    * <span data-ttu-id="6ceb3-140">Välj önskat LCS-projekt.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-140">Select the desired LCS project.</span></span> <span data-ttu-id="6ceb3-141">Du måste ha åtkomst till projektet.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-141">You must have access to the project.</span></span>  
-7. <span data-ttu-id="6ceb3-142">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-142">Click OK.</span></span>
-    * <span data-ttu-id="6ceb3-143">Avsluta en ny databaspost.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-143">Complete a new repository entry.</span></span>  
-8. <span data-ttu-id="6ceb3-144">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-144">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="6ceb3-145">Välj LCS-databasposten.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-145">Select the LCS repository record.</span></span>  
-    * <span data-ttu-id="6ceb3-146">Observera att en registrerad databas markeras av den aktuella leverantören vilket betyder att de enda konfigurationerna som ägs av den leverantören, kan läggas till denna databas och därmed överföras till det valda LCS-projektet.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-146">Note that a registered repository is marked by the current provider meaning that the only configurations owned by that provider can be placed to this repository and, consequently, uploaded into the selected LCS project.</span></span>  
-9. <span data-ttu-id="6ceb3-147">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-147">Click Open.</span></span>
-    * <span data-ttu-id="6ceb3-148">Öppna databasen om du vill visa listan över ER-konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-148">Open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="6ceb3-149">Den kommer att vara tom om ett sådant projekt ännu inte har använts för delning av ER-konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-149">It will be empty if this project has not yet been used for ER configurations sharing.</span></span>  
-10. <span data-ttu-id="6ceb3-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-150">Close the page.</span></span>
-11. <span data-ttu-id="6ceb3-151">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-151">Close the page.</span></span>
+2. <span data-ttu-id="37203-111">Gå till **Organisationsadministration** \> **Arbetsytor** \> **Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="37203-111">Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+3. <span data-ttu-id="37203-112">Välj **Litware, Inc.** och markera den som **Aktiv**.</span><span class="sxs-lookup"><span data-stu-id="37203-112">Select **Litware, Inc.**, and mark it as **Active**.</span></span>
+4. <span data-ttu-id="37203-113">Välj **konfigurationer**.</span><span class="sxs-lookup"><span data-stu-id="37203-113">Select **Configurations**.</span></span>
 
-## <a name="upload-configuration-into-lcs"></a><span data-ttu-id="6ceb3-152">Överför konfigurationen i LCS</span><span class="sxs-lookup"><span data-stu-id="6ceb3-152">Upload configuration into LCS</span></span>
-1. <span data-ttu-id="6ceb3-153">Klientkonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-153">Click Configurations.</span></span>
-2. <span data-ttu-id="6ceb3-154">Välj "Konfiguration av exempelmodell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-154">In the tree, select 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="6ceb3-155">Välj en skapad konfiguration som redan har slutförts.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-155">Select a created configuration that has been already completed.</span></span>  
-3. <span data-ttu-id="6ceb3-156">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-156">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="6ceb3-157">Välj vilken version av den valda konfigurationen med statusen "Avslutade".</span><span class="sxs-lookup"><span data-stu-id="6ceb3-157">Select the version of the selected configuration with the status of 'Completed'.</span></span>  
-4. <span data-ttu-id="6ceb3-158">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-158">Click Change status.</span></span>
-5. <span data-ttu-id="6ceb3-159">Klicka Dela.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-159">Click Share.</span></span>
-    * <span data-ttu-id="6ceb3-160">Konfigurationstatusen ändras från "Avslutade” till "Delade" när den publiceras i LCS.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-160">The configuration status will change from 'Completed' to 'Shared' when it is published in LCS.</span></span>  
-6. <span data-ttu-id="6ceb3-161">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-161">Click OK.</span></span>
-7. <span data-ttu-id="6ceb3-162">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-162">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="6ceb3-163">Välj konfigurationsversionen som har statusen "Delad".</span><span class="sxs-lookup"><span data-stu-id="6ceb3-163">Select the configuration version with the status of 'Shared'.</span></span>  
-    * <span data-ttu-id="6ceb3-164">Observera att statusen för den valda versionen har ändrats från "Slutförd till "Delad".</span><span class="sxs-lookup"><span data-stu-id="6ceb3-164">Note that the status of the selected version has changed from 'Completed' to 'Shared'.</span></span>  
-8. <span data-ttu-id="6ceb3-165">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-165">Close the page.</span></span>
-9. <span data-ttu-id="6ceb3-166">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-166">Click Repositories.</span></span>
-    * <span data-ttu-id="6ceb3-167">Detta låter dig öppna listan över databaser för konfigurationsleverantören Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-167">This enables you to open the list of repositories for the Litware, Inc. configuration provider.</span></span>  
-10. <span data-ttu-id="6ceb3-168">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-168">Click Open.</span></span>
-    * <span data-ttu-id="6ceb3-169">Välj LCS-databasen och öppna den.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-169">Select the LCS repository and open it.</span></span>  
-    * <span data-ttu-id="6ceb3-170">Observera att den valda konfigurationen visas som en tillgång för det valda LCS-projektet.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-170">Note that the selected configuration is shown as an asset of the selected LCS project.</span></span>  
-    * <span data-ttu-id="6ceb3-171">Öppna LCS med https://lcs.dynamics.com.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-171">Open LCS using https://lcs.dynamics.com.</span></span> <span data-ttu-id="6ceb3-172">Öppna ett projekt som användes tidigare till databasregistrering, öppna "Tillgångbiblioteket" för det här projektet och visa innehållet av tillgångstypen "GER-konfiguration" - den överförda ER-konfigurationen kommer att vara tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-172">Open a project that was used earlier for repository registration, open the 'Asset library' of this project, and expand the content of the 'GER configuration' asset type – the uploaded ER configuration will be available.</span></span> <span data-ttu-id="6ceb3-173">Observera att den överförda LCS-konfigurationen kan importeras till en annan instans om leverantörerna har tillgång till det här LCS-projektet.</span><span class="sxs-lookup"><span data-stu-id="6ceb3-173">Note that the uploaded LCS configuration can be imported to another instance if providers have access to this LCS project.</span></span>  
+<a name="accessconditions"></a>
+> [!NOTE]
+> <span data-ttu-id="37203-114">Kontrollera att den aktuella Dynamics 365 Finance användaren är medlem i det LCS-projekt som innehåller [Tillgångsbibliotek](../../lifecycle-services/asset-library.md#asset-library-support) till för att importera ER-konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="37203-114">Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the [Asset library](../../lifecycle-services/asset-library.md#asset-library-support) that is used to import ER configurations.</span></span>
+>
+> <span data-ttu-id="37203-115">Du har inte åtkomst till ett LCS-projekt från en ER-databas som representerar en annan domän än den domän som används i Finance.</span><span class="sxs-lookup"><span data-stu-id="37203-115">You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance.</span></span> <span data-ttu-id="37203-116">Om du försöker kommer en tom lista med LCS-projekt att visas, och du kan inte importera ER-konfigurationer från tillgångsbiblioteket på projektnivå i LCS.</span><span class="sxs-lookup"><span data-stu-id="37203-116">If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS.</span></span> <span data-ttu-id="37203-117">Om du vill komma åt tillgångsbibliotek på projektnivå från en ER-databas som används för att importera ER-konfigurationer loggar du in på Finance genom att använda referenserna för en användare som tillhör den innehavare (domän) som den aktuella Finance-instansen har etablerats för.</span><span class="sxs-lookup"><span data-stu-id="37203-117">To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.</span></span>
 
+## <a name="create-a-new-data-model-configuration"></a><span data-ttu-id="37203-118">Skapa en ny datamodellskonfiguration</span><span class="sxs-lookup"><span data-stu-id="37203-118">Create a new data model configuration</span></span>
+
+1. <span data-ttu-id="37203-119">Gå till **Organisationsadministration  \> Elektronisk rapportering \> Konfigurationer**.</span><span class="sxs-lookup"><span data-stu-id="37203-119">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="37203-120">På sidan **konfiguration** välj **Skapa konfiguration** om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="37203-120">On the **Configurations** page, select **Create configuration** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="37203-121">I detta exempel skapar du en konfiguration som innehåller en exempeldatamodell för elektroniska dokument.</span><span class="sxs-lookup"><span data-stu-id="37203-121">In this example, you will create a configuration that contains a sample data model for electronic documents.</span></span> <span data-ttu-id="37203-122">Denna konfiguration av datamodellen ska överföras till LCS senare.</span><span class="sxs-lookup"><span data-stu-id="37203-122">This data model configuration will be uploaded into LCS later.</span></span>
+
+3. <span data-ttu-id="37203-123">I fältet **Namn** ange **Konfiguration av exempelmodell**.</span><span class="sxs-lookup"><span data-stu-id="37203-123">In the **Name** field, enter **Sample model configuration**.</span></span>
+4. <span data-ttu-id="37203-124">I fältet **Beskrivning** ange **Konfiguration av exempelmodell**.</span><span class="sxs-lookup"><span data-stu-id="37203-124">In the **Description** field, enter **Sample model configuration**.</span></span>
+5. <span data-ttu-id="37203-125">Välj **Skapa konfiguration**.</span><span class="sxs-lookup"><span data-stu-id="37203-125">Select **Create configuration**.</span></span>
+6. <span data-ttu-id="37203-126">Välj **modelldesign** .</span><span class="sxs-lookup"><span data-stu-id="37203-126">Select **Model designer**.</span></span>
+7. <span data-ttu-id="37203-127">Välj **Ny**.</span><span class="sxs-lookup"><span data-stu-id="37203-127">Select **New**.</span></span>
+8. <span data-ttu-id="37203-128">I fältet **Namn** anger du **Startpunkt**.</span><span class="sxs-lookup"><span data-stu-id="37203-128">In the **Name** field, enter **Entry point**.</span></span>
+9. <span data-ttu-id="37203-129">Markera **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="37203-129">Select **Add**.</span></span>
+10. <span data-ttu-id="37203-130">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="37203-130">Select **Save**.</span></span>
+11. <span data-ttu-id="37203-131">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="37203-131">Close the page.</span></span>
+12. <span data-ttu-id="37203-132">Välj **Ändra status**.</span><span class="sxs-lookup"><span data-stu-id="37203-132">Select **Change status**.</span></span>
+13. <span data-ttu-id="37203-133">Välj **Slutför**.</span><span class="sxs-lookup"><span data-stu-id="37203-133">Select **Complete**.</span></span>
+14. <span data-ttu-id="37203-134">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="37203-134">Select **OK**.</span></span>
+15. <span data-ttu-id="37203-135">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="37203-135">Close the page.</span></span>
+
+## <a name="register-a-new-repository"></a><span data-ttu-id="37203-136">Registrera ett nytt databas</span><span class="sxs-lookup"><span data-stu-id="37203-136">Register a new repository</span></span>
+
+1. <span data-ttu-id="37203-137">Gå till **Organisationsadministration \> Arbetsytor \> Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="37203-137">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+
+2. <span data-ttu-id="37203-138">I avsnittet **Konfigurationsleverantörer** väljer du panelen **Litware, Inc.**.</span><span class="sxs-lookup"><span data-stu-id="37203-138">In the **Configuration providers** section, select the **Litware, Inc.** tile.</span></span>
+
+3. <span data-ttu-id="37203-139">I panelen **Litware, Inc.** väljer du **Databaser**.</span><span class="sxs-lookup"><span data-stu-id="37203-139">On the **Litware, Inc.** tile, select **Repositories**.</span></span>
+
+    <span data-ttu-id="37203-140">Du kan nu öppna listan över databaser för konfigurationsleverantören Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="37203-140">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+4. <span data-ttu-id="37203-141">Välj **Lägg till** för att öppna listrutan.</span><span class="sxs-lookup"><span data-stu-id="37203-141">Select **Add** to open the drop-down dialog box.</span></span>
+
+    <span data-ttu-id="37203-142">Nu kan du lägga till en ny lagringsplats.</span><span class="sxs-lookup"><span data-stu-id="37203-142">You can now add a new repository.</span></span>
+
+5. <span data-ttu-id="37203-143">I **konfigurationsdatabas** välj **LCS**.</span><span class="sxs-lookup"><span data-stu-id="37203-143">In the **Configuration repository enter** field, select **LCS**.</span></span>
+6. <span data-ttu-id="37203-144">Välj **Skapa databas**.</span><span class="sxs-lookup"><span data-stu-id="37203-144">Select **Create repository**.</span></span>
+7. <span data-ttu-id="37203-145">Ange eller välj ett värde i fältet **Projekt**.</span><span class="sxs-lookup"><span data-stu-id="37203-145">In the **Project** field, enter or select a value.</span></span>
+
+    <span data-ttu-id="37203-146">I det här exemplet väljer du önskat LCS-projekt.</span><span class="sxs-lookup"><span data-stu-id="37203-146">For this example, select the desired LCS project.</span></span> <span data-ttu-id="37203-147">Du måste ha [åtkomst](#accessconditions) till projektet.</span><span class="sxs-lookup"><span data-stu-id="37203-147">You must have [access](#accessconditions) to the project.</span></span>
+
+8. <span data-ttu-id="37203-148">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="37203-148">Select **OK**.</span></span>
+
+    <span data-ttu-id="37203-149">Avsluta en ny databaspost.</span><span class="sxs-lookup"><span data-stu-id="37203-149">Complete a new repository entry.</span></span>
+
+9. <span data-ttu-id="37203-150">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="37203-150">In the list, mark the selected row.</span></span>
+
+    <span data-ttu-id="37203-151">I det här exemplet väljer du databasposten **LCS**.</span><span class="sxs-lookup"><span data-stu-id="37203-151">For this example, select the **LCS** repository record.</span></span>
+
+    <span data-ttu-id="37203-152">Observera att en registrerad databas har markerats av den aktuella providern.</span><span class="sxs-lookup"><span data-stu-id="37203-152">Note that a registered repository is marked by the current provider.</span></span> <span data-ttu-id="37203-153">Med andra ord kan endast konfigurationer som ägs av den providern placeras i den här databasen och därför överföras till det valda LCS-projektet.</span><span class="sxs-lookup"><span data-stu-id="37203-153">In other words, only configurations that are owned by that provider can be put in this repository and therefore uploaded into the selected LCS project.</span></span>
+
+10. <span data-ttu-id="37203-154">Välj **Öppen**.</span><span class="sxs-lookup"><span data-stu-id="37203-154">Select **Open**.</span></span>
+
+    <span data-ttu-id="37203-155">Du öppnar databasen om du vill visa listan över ER-konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="37203-155">You open the repository to view the list of ER configurations.</span></span> <span data-ttu-id="37203-156">Om det valda projektet ännu inte har använts för delning av ER-konfigurationer kommer listan att vara tom.</span><span class="sxs-lookup"><span data-stu-id="37203-156">If the selected project hasn't yet been used for ER configurations sharing, the list will be empty.</span></span>
+
+11. <span data-ttu-id="37203-157">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="37203-157">Close the page.</span></span>
+12. <span data-ttu-id="37203-158">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="37203-158">Close the page.</span></span>
+
+## <a name="upload-a-configuration-into-lcs"></a><span data-ttu-id="37203-159">Överför konfigurationer till LCS</span><span class="sxs-lookup"><span data-stu-id="37203-159">Upload a configuration into LCS</span></span>
+
+1. <span data-ttu-id="37203-160">Gå till **Organisationsadministration  \> Elektronisk rapportering \> Konfigurationer**.</span><span class="sxs-lookup"><span data-stu-id="37203-160">Go to **Organization administration \> Electronic reporting \> Configurations**.</span></span>
+2. <span data-ttu-id="37203-161">På sidan **konfigurationer** i konfigurationsträdet väljer du artikeln **Konfiguration av exempelmodell**.</span><span class="sxs-lookup"><span data-stu-id="37203-161">On the **Configurations** page, in the configurations tree, select **Sample model configuration**.</span></span>
+
+    <span data-ttu-id="37203-162">Du måste välja en skapad konfiguration som redan har slutförts.</span><span class="sxs-lookup"><span data-stu-id="37203-162">You must select a created configuration that has been already completed.</span></span>
+
+3. <span data-ttu-id="37203-163">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37203-163">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="37203-164">I det här exemplet väljer du den version av den valda konfigurationen som har status **Slutförd**.</span><span class="sxs-lookup"><span data-stu-id="37203-164">For this example, select the version of the selected configuration that has a status of **Completed**.</span></span>
+
+4. <span data-ttu-id="37203-165">Välj **Ändra status**.</span><span class="sxs-lookup"><span data-stu-id="37203-165">Select **Change status**.</span></span>
+5. <span data-ttu-id="37203-166">Välj **dela**.</span><span class="sxs-lookup"><span data-stu-id="37203-166">Select **Share**.</span></span>
+
+    <span data-ttu-id="37203-167">Konfigurationens status ändras från **slutförd** till **delad** när konfigurationen publiceras i LCS.</span><span class="sxs-lookup"><span data-stu-id="37203-167">The status of the configuration is changed from **Completed** to **Shared** when the configuration is published in LCS.</span></span>
+
+6. <span data-ttu-id="37203-168">Välj **OK**.</span><span class="sxs-lookup"><span data-stu-id="37203-168">Select **OK**.</span></span>
+7. <span data-ttu-id="37203-169">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37203-169">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="37203-170">I det här exemplet väljer du den version av konfigurationen som har status **Delad**.</span><span class="sxs-lookup"><span data-stu-id="37203-170">For this example, select the configuration version that has a status of **Shared**.</span></span>
+
+    <span data-ttu-id="37203-171">Observera att statusen för den valda versionen har ändrats från **Slutförd** till **Delad**.</span><span class="sxs-lookup"><span data-stu-id="37203-171">Note that the status of the selected version was changed from **Completed** to **Shared**.</span></span>
+
+8. <span data-ttu-id="37203-172">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="37203-172">Close the page.</span></span>
+9. <span data-ttu-id="37203-173">Välj **Databaser**.</span><span class="sxs-lookup"><span data-stu-id="37203-173">Select **Repositories**.</span></span>
+
+    <span data-ttu-id="37203-174">Du kan nu öppna listan över databaser för konfigurationsleverantören Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="37203-174">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+10. <span data-ttu-id="37203-175">Välj **Öppen**.</span><span class="sxs-lookup"><span data-stu-id="37203-175">Select **Open**.</span></span>
+
+    <span data-ttu-id="37203-176">I det här exemplet väljer du databasen **LCS** och öppnar den.</span><span class="sxs-lookup"><span data-stu-id="37203-176">For this example, select the **LCS** repository, and open it.</span></span>
+
+    <span data-ttu-id="37203-177">Observera att den valda konfigurationen visas som en tillgång för det valda LCS-projektet.</span><span class="sxs-lookup"><span data-stu-id="37203-177">Notice that the selected configuration is shown as an asset of the selected LCS project.</span></span>
+
+11. <span data-ttu-id="37203-178">Öppna LCS genom att gå till <https://lcs.dynamics.com> .</span><span class="sxs-lookup"><span data-stu-id="37203-178">Open LCS by going to <https://lcs.dynamics.com>.</span></span>
+12. <span data-ttu-id="37203-179">Öppna ett projekt som tidigare användes för registrering av databasen.</span><span class="sxs-lookup"><span data-stu-id="37203-179">Open a project that was used earlier for repository registration.</span></span>
+13. <span data-ttu-id="37203-180">Öppna resursbiblioteket för projektet.</span><span class="sxs-lookup"><span data-stu-id="37203-180">Open the Asset library of the project.</span></span>
+14. <span data-ttu-id="37203-181">Välj tillgångstypen **GER-konfiguration**.</span><span class="sxs-lookup"><span data-stu-id="37203-181">Select the **GER configuration** asset type.</span></span>
+
+    <span data-ttu-id="37203-182">Den ER-konfiguration som du överförde ska visas i listan.</span><span class="sxs-lookup"><span data-stu-id="37203-182">The ER configuration that you uploaded should be listed.</span></span>
+
+    <span data-ttu-id="37203-183">Observera att den överförda LCS-konfigurationen kan importeras till en annan instans om leverantörerna har tillgång till det här LCS-projektet.</span><span class="sxs-lookup"><span data-stu-id="37203-183">Note that the uploaded LCS configuration can be imported into another instance if providers have access to this LCS project.</span></span>

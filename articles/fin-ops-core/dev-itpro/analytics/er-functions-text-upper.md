@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77854d645ba5b65a2819437af510fcd67be6d99d
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 672abf4938df7d96c0190bfd5325689b381e2764
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040950"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744345"
 ---
-# <span data-ttu-id="4a7bb-103"><a name="UPPER">UPPER ER-funktion</a></span><span class="sxs-lookup"><span data-stu-id="4a7bb-103"><a name="UPPER">UPPER ER function</a></span></span>
+# <a name="upper-er-function"></a><span data-ttu-id="28a32-103">UPPER ER-funktion</span><span class="sxs-lookup"><span data-stu-id="28a32-103">UPPER ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4a7bb-104">`UPPER`-funktionen returnerar den angivna textsträngen som ett *sträng* värde efter att den har konverterats till versaler.</span><span class="sxs-lookup"><span data-stu-id="4a7bb-104">The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.</span></span>
+<span data-ttu-id="28a32-104">`UPPER`-funktionen returnerar den angivna textsträngen som ett *sträng* värde efter att den har konverterats till versaler.</span><span class="sxs-lookup"><span data-stu-id="28a32-104">The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4a7bb-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="4a7bb-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="28a32-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="28a32-105">Syntax</span></span>
 
 ```vb
 UPPER (text )
 ```
 
-## <a name="arguments"></a><span data-ttu-id="4a7bb-106">Argument</span><span class="sxs-lookup"><span data-stu-id="4a7bb-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="28a32-106">Argument</span><span class="sxs-lookup"><span data-stu-id="28a32-106">Arguments</span></span>
 
-<span data-ttu-id="4a7bb-107">`text`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="4a7bb-107">`text`: *String*</span></span>
+<span data-ttu-id="28a32-107">`text`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="28a32-107">`text`: *String*</span></span>
 
-<span data-ttu-id="4a7bb-108">Den giltiga sökvägen till en datakälla av typen *Sträng*.</span><span class="sxs-lookup"><span data-stu-id="4a7bb-108">The valid path of a data source of the *String* type.</span></span>
+<span data-ttu-id="28a32-108">Den giltiga sökvägen till en datakälla av typen *Sträng*.</span><span class="sxs-lookup"><span data-stu-id="28a32-108">The valid path of a data source of the *String* type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="4a7bb-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="4a7bb-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="28a32-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="28a32-109">Return values</span></span>
 
-<span data-ttu-id="4a7bb-110">*Sträng*</span><span class="sxs-lookup"><span data-stu-id="4a7bb-110">*String*</span></span>
+<span data-ttu-id="28a32-110">*Sträng*</span><span class="sxs-lookup"><span data-stu-id="28a32-110">*String*</span></span>
 
-<span data-ttu-id="4a7bb-111">Det resulterande textvärdet.</span><span class="sxs-lookup"><span data-stu-id="4a7bb-111">The resulting text value.</span></span>
+<span data-ttu-id="28a32-111">Det resulterande textvärdet.</span><span class="sxs-lookup"><span data-stu-id="28a32-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a7bb-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="4a7bb-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="28a32-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="28a32-112">Example</span></span>
 
-<span data-ttu-id="4a7bb-113">`UPPER ("Sample")` returnerar **"EXEMPEL"**.</span><span class="sxs-lookup"><span data-stu-id="4a7bb-113">`UPPER ("Sample")` returns **"SAMPLE"**.</span></span>
+<span data-ttu-id="28a32-113">`UPPER ("Sample")` returnerar **"EXEMPEL"**.</span><span class="sxs-lookup"><span data-stu-id="28a32-113">`UPPER ("Sample")` returns **"SAMPLE"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="4a7bb-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="4a7bb-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="28a32-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="28a32-114">Additional resources</span></span>
 
-[<span data-ttu-id="4a7bb-115">Textfunktioner</span><span class="sxs-lookup"><span data-stu-id="4a7bb-115">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="28a32-115">Textfunktioner</span><span class="sxs-lookup"><span data-stu-id="28a32-115">Text functions</span></span>](er-functions-category-text.md)

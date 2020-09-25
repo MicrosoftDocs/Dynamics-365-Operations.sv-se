@@ -18,39 +18,39 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24a295a6ad8aca7718e60dd351248c9fbfdafee8
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: edf43cc19636f51387504a7d9da73d757d96e558
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042330"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744297"
 ---
-# <span data-ttu-id="458cb-103"><a name="NULLDATE">Funktionen NULLDATE ER</a></span><span class="sxs-lookup"><span data-stu-id="458cb-103"><a name="NULLDATE">NULLDATE ER function</a></span></span>
+# <a name="nulldate-er-function"></a><span data-ttu-id="8818d-103">Funktionen NULLDATE ER</span><span class="sxs-lookup"><span data-stu-id="8818d-103">NULLDATE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="458cb-104">`NULLDATE`-funktionen returnerar ett *Datum*-värde som representerar **null**-datumet (1 januari 1900).</span><span class="sxs-lookup"><span data-stu-id="458cb-104">The `NULLDATE` function returns a *Date* value that represents the **null** date (January 1, 1900).</span></span>
+<span data-ttu-id="8818d-104">`NULLDATE`-funktionen returnerar ett *Datum*-värde som representerar **null**-datumet (1 januari 1900).</span><span class="sxs-lookup"><span data-stu-id="8818d-104">The `NULLDATE` function returns a *Date* value that represents the **null** date (January 1, 1900).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="458cb-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="458cb-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8818d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8818d-105">Syntax</span></span>
 
 ```vb
 NULLDATE () as 
 ```
 
-## <a name="return-values"></a><span data-ttu-id="458cb-106">Returvärden</span><span class="sxs-lookup"><span data-stu-id="458cb-106">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="8818d-106">Returvärden</span><span class="sxs-lookup"><span data-stu-id="8818d-106">Return values</span></span>
 
-<span data-ttu-id="458cb-107">*Datum*</span><span class="sxs-lookup"><span data-stu-id="458cb-107">*Date*</span></span>
+<span data-ttu-id="8818d-107">*Datum*</span><span class="sxs-lookup"><span data-stu-id="8818d-107">*Date*</span></span>
 
-<span data-ttu-id="458cb-108">Det resulterande datum-värdet.</span><span class="sxs-lookup"><span data-stu-id="458cb-108">The resulting date value.</span></span>
+<span data-ttu-id="8818d-108">Det resulterande datum-värdet.</span><span class="sxs-lookup"><span data-stu-id="8818d-108">The resulting date value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="458cb-109">Exempel 1</span><span class="sxs-lookup"><span data-stu-id="458cb-109">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="8818d-109">Exempel 1</span><span class="sxs-lookup"><span data-stu-id="8818d-109">Example 1</span></span>
 
-<span data-ttu-id="458cb-110">`DATEFORMAT (NULLDATE(), "yyyy-MM-dd")` returnerar **null**-datum, 1 januari 1900, som **"1900-01-01"**, baserat på det angivna anpassade formatet.</span><span class="sxs-lookup"><span data-stu-id="458cb-110">`DATEFORMAT (NULLDATE(), "yyyy-MM-dd")` returns the **null** date, January 1, 1900, as **"1900-01-01"**, based on the specified custom format.</span></span>
+<span data-ttu-id="8818d-110">`DATEFORMAT (NULLDATE(), "yyyy-MM-dd")` returnerar **null**-datum, 1 januari 1900, som **"1900-01-01"**, baserat på det angivna anpassade formatet.</span><span class="sxs-lookup"><span data-stu-id="8818d-110">`DATEFORMAT (NULLDATE(), "yyyy-MM-dd")` returns the **null** date, January 1, 1900, as **"1900-01-01"**, based on the specified custom format.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="458cb-111">Exempel 2</span><span class="sxs-lookup"><span data-stu-id="458cb-111">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="8818d-111">Exempel 2</span><span class="sxs-lookup"><span data-stu-id="8818d-111">Example 2</span></span>
 
-<span data-ttu-id="458cb-112">Uttrycket `IF( Invoice.DocumentDate = NULLDATE(), true, false)` returnerar **sant** när värdet i fältet **DocumentDate** är lika med **null**-datum.</span><span class="sxs-lookup"><span data-stu-id="458cb-112">The expression `IF( Invoice.DocumentDate = NULLDATE(), true, false)` returns **True** when the value of the **DocumentDate** field equals the **null** date.</span></span> <span data-ttu-id="458cb-113">I det här exemplet är **Faktura** är en Elektronisk rapportering (ER) datakälla av typen **Ekonomi/tabellposter** och refererar till tabellen CustInvoiceJour-tabellen.</span><span class="sxs-lookup"><span data-stu-id="458cb-113">In this example, **Invoice** is an Electronic reporting (ER) data source of the **Finance/Table records** type, and it refers to the CustInvoiceJour table.</span></span>
+<span data-ttu-id="8818d-112">Uttrycket `IF( Invoice.DocumentDate = NULLDATE(), true, false)` returnerar **sant** när värdet i fältet **DocumentDate** är lika med **null**-datum.</span><span class="sxs-lookup"><span data-stu-id="8818d-112">The expression `IF( Invoice.DocumentDate = NULLDATE(), true, false)` returns **True** when the value of the **DocumentDate** field equals the **null** date.</span></span> <span data-ttu-id="8818d-113">I det här exemplet är **Faktura** är en Elektronisk rapportering (ER) datakälla av typen **Ekonomi/tabellposter** och refererar till tabellen CustInvoiceJour-tabellen.</span><span class="sxs-lookup"><span data-stu-id="8818d-113">In this example, **Invoice** is an Electronic reporting (ER) data source of the **Finance/Table records** type, and it refers to the CustInvoiceJour table.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="458cb-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="458cb-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8818d-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="8818d-114">Additional resources</span></span>
 
-[<span data-ttu-id="458cb-115">Datum- och tidsfunktioner</span><span class="sxs-lookup"><span data-stu-id="458cb-115">Date and time functions</span></span>](er-functions-category-datetime.md)
+[<span data-ttu-id="8818d-115">Datum- och tidsfunktioner</span><span class="sxs-lookup"><span data-stu-id="8818d-115">Date and time functions</span></span>](er-functions-category-datetime.md)

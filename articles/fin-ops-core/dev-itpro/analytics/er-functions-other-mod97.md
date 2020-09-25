@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce2192c7bc849996e08573d71d8ed43956c8fb89
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: b58e06a034fc6d26c891b78c26ac53c87a39b92b
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070539"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3744057"
 ---
-# <span data-ttu-id="1454e-103"><a name="MOD_97">MOD_97 ER-funktion</a></span><span class="sxs-lookup"><span data-stu-id="1454e-103"><a name="MOD_97">MOD_97 ER function</a></span></span>
+# <a name="mod_97-er-function"></a><span data-ttu-id="e9187-103">MOD_97 ER-funktion</span><span class="sxs-lookup"><span data-stu-id="e9187-103">MOD_97 ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1454e-104">`MOD_97`-funktionen returnerar ett *sträng*-värde som representerar en betalningsmottagarreferens som ett MOD97-uttryck, baserat på siffrorna i det angivna fakturanumret.</span><span class="sxs-lookup"><span data-stu-id="1454e-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
+<span data-ttu-id="e9187-104">`MOD_97`-funktionen returnerar ett *sträng*-värde som representerar en betalningsmottagarreferens som ett MOD97-uttryck, baserat på siffrorna i det angivna fakturanumret.</span><span class="sxs-lookup"><span data-stu-id="e9187-104">The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1454e-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1454e-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e9187-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="e9187-105">Syntax</span></span>
 
 ```vb
 MOD_97 (invoice number digits)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="1454e-106">Argument</span><span class="sxs-lookup"><span data-stu-id="1454e-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="e9187-106">Argument</span><span class="sxs-lookup"><span data-stu-id="e9187-106">Arguments</span></span>
 
-<span data-ttu-id="1454e-107">`invoice number digits`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="1454e-107">`invoice number digits`: *String*</span></span>
+<span data-ttu-id="e9187-107">`invoice number digits`: *Sträng*</span><span class="sxs-lookup"><span data-stu-id="e9187-107">`invoice number digits`: *String*</span></span>
 
-<span data-ttu-id="1454e-108">Ett textvärde som representerar siffrorna i ett fakturanummer.</span><span class="sxs-lookup"><span data-stu-id="1454e-108">A text value that represents the digits of an invoice number.</span></span>
+<span data-ttu-id="e9187-108">Ett textvärde som representerar siffrorna i ett fakturanummer.</span><span class="sxs-lookup"><span data-stu-id="e9187-108">A text value that represents the digits of an invoice number.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="1454e-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="1454e-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="e9187-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="e9187-109">Return values</span></span>
 
-<span data-ttu-id="1454e-110">*Sträng*</span><span class="sxs-lookup"><span data-stu-id="1454e-110">*String*</span></span>
+<span data-ttu-id="e9187-110">*Sträng*</span><span class="sxs-lookup"><span data-stu-id="e9187-110">*String*</span></span>
 
-<span data-ttu-id="1454e-111">Det resulterande textvärdet.</span><span class="sxs-lookup"><span data-stu-id="1454e-111">The resulting text value.</span></span>
+<span data-ttu-id="e9187-111">Det resulterande textvärdet.</span><span class="sxs-lookup"><span data-stu-id="e9187-111">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1454e-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="1454e-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e9187-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="e9187-112">Example</span></span>
 
-<span data-ttu-id="1454e-113">`MOD_97 ("VEND-200002")` returnerar **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="1454e-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
+<span data-ttu-id="e9187-113">`MOD_97 ("VEND-200002")` returnerar **"20000285"**.</span><span class="sxs-lookup"><span data-stu-id="e9187-113">`MOD_97 ("VEND-200002")` returns **"20000285"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="1454e-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="1454e-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="e9187-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="e9187-114">Additional resources</span></span>
 
-[<span data-ttu-id="1454e-115">Andra (företagsdomänspecifika) funktioner</span><span class="sxs-lookup"><span data-stu-id="1454e-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="e9187-115">Andra (företagsdomänspecifika) funktioner</span><span class="sxs-lookup"><span data-stu-id="e9187-115">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)

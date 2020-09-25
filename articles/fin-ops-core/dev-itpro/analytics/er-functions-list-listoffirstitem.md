@@ -18,41 +18,41 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8cd48732280c9af0b89129a32b42285207f97fb7
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 069ec0c6d5578ca6ab68814adf325bd79e73b9e8
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041985"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745067"
 ---
-# <span data-ttu-id="7d9a5-103"><a name="LISTOFFIRSTITEM">LISTOFFIRSTITEM ER-funktion</a></span><span class="sxs-lookup"><span data-stu-id="7d9a5-103"><a name="LISTOFFIRSTITEM">LISTOFFIRSTITEM ER function</a></span></span>
+# <a name="listoffirstitem-er-function"></a><span data-ttu-id="8c028-103">LISTOFFIRSTITEM ER-funktion</span><span class="sxs-lookup"><span data-stu-id="8c028-103">LISTOFFIRSTITEM ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="7d9a5-104">`LISTOFFIRSTITEM`-funktionen returnerar ett *postlist*-värde som endast består av den första posten i den angivna listan.</span><span class="sxs-lookup"><span data-stu-id="7d9a5-104">The `LISTOFFIRSTITEM` function returns a *Record list* value that consists of only the first record of the specified list.</span></span>
+<span data-ttu-id="8c028-104">`LISTOFFIRSTITEM`-funktionen returnerar ett *postlist*-värde som endast består av den första posten i den angivna listan.</span><span class="sxs-lookup"><span data-stu-id="8c028-104">The `LISTOFFIRSTITEM` function returns a *Record list* value that consists of only the first record of the specified list.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7d9a5-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="7d9a5-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8c028-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8c028-105">Syntax</span></span>
 
 ```vb
 LISTOFFIRSTITEM (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="7d9a5-106">Argument</span><span class="sxs-lookup"><span data-stu-id="7d9a5-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="8c028-106">Argument</span><span class="sxs-lookup"><span data-stu-id="8c028-106">Arguments</span></span>
 
-<span data-ttu-id="7d9a5-107">`list`: *Post-lista*</span><span class="sxs-lookup"><span data-stu-id="7d9a5-107">`list`: *Record list*</span></span>
+<span data-ttu-id="8c028-107">`list`: *Post-lista*</span><span class="sxs-lookup"><span data-stu-id="8c028-107">`list`: *Record list*</span></span>
 
-<span data-ttu-id="7d9a5-108">Den giltiga sökvägen av en datakälla för datatypen *Postlista*.</span><span class="sxs-lookup"><span data-stu-id="7d9a5-108">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="8c028-108">Den giltiga sökvägen av en datakälla för datatypen *Postlista*.</span><span class="sxs-lookup"><span data-stu-id="8c028-108">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="7d9a5-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="7d9a5-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="8c028-109">Returvärden</span><span class="sxs-lookup"><span data-stu-id="8c028-109">Return values</span></span>
 
-<span data-ttu-id="7d9a5-110">*Post-lista*</span><span class="sxs-lookup"><span data-stu-id="7d9a5-110">*Record list*</span></span>
+<span data-ttu-id="8c028-110">*Post-lista*</span><span class="sxs-lookup"><span data-stu-id="8c028-110">*Record list*</span></span>
 
-<span data-ttu-id="7d9a5-111">Den resulterande listan med poster.</span><span class="sxs-lookup"><span data-stu-id="7d9a5-111">The resulting list of records.</span></span>
+<span data-ttu-id="8c028-111">Den resulterande listan med poster.</span><span class="sxs-lookup"><span data-stu-id="8c028-111">The resulting list of records.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7d9a5-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="7d9a5-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8c028-112">Exempel</span><span class="sxs-lookup"><span data-stu-id="8c028-112">Example</span></span>
 
-<span data-ttu-id="7d9a5-113">Uttrycket `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` returnerar textvärdet **"A"**.</span><span class="sxs-lookup"><span data-stu-id="7d9a5-113">The expression `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` returns the text value **"A"**.</span></span>
+<span data-ttu-id="8c028-113">Uttrycket `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` returnerar textvärdet **"A"**.</span><span class="sxs-lookup"><span data-stu-id="8c028-113">The expression `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` returns the text value **"A"**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="7d9a5-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="7d9a5-114">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8c028-114">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="8c028-114">Additional resources</span></span>
 
-[<span data-ttu-id="7d9a5-115">Lista över funktioner</span><span class="sxs-lookup"><span data-stu-id="7d9a5-115">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="8c028-115">Lista över funktioner</span><span class="sxs-lookup"><span data-stu-id="8c028-115">List functions</span></span>](er-functions-category-list.md)
