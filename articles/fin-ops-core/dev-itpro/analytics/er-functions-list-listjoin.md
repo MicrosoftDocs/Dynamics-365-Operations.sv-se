@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7f78b687865e63e658c1c1c4f148b50595bf063
-ms.sourcegitcommit: 54bdcf8e9b6d1b1aae2a244f7a82754879d12053
+ms.openlocfilehash: 035bf720a892e987ff9fc073ab8ed6f6cc6ea18e
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "3740673"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745115"
 ---
-# <a name=""></a><a name="LISTJOIN">LISTJOIN ER-funktion</a>
+# <a name="listjoin-er-function"></a>LISTJOIN ER-funktion
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,11 +73,11 @@ Du anger datakälla **post 2** av typen `Container`. Den här datakällan inneh�
 
 I det här fallet returnerar uttrycket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny lista som innehåller två poster.
 
-![Sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image2.gif)
+![Sidan ER-modell mappning i designer med två poster](./media/er-functions-list-listjoin-image2.gif)
 
 Strukturen för den här listan består av ett enda fält **belopp** av typen `Real`, eftersom det här fältet är det enda fält som presenteras i alla argument i den anropade funktionen.
 
-![Sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image3.gif)
+![Beloppsfält på sidan ER-modellmappningsdesigner](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

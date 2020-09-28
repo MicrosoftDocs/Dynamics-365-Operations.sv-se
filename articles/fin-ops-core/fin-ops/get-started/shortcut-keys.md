@@ -1,6 +1,6 @@
 ---
 title: Kortkommandon
-description: Du kan använda följande kortkommandon för att snabbt och effektivt mata in data.
+description: Det här ämnet innehåller en översikt över de tangentkombinationer som du kan använda när du arbetar med Finance and Operations-appar.
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811565"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761631"
 ---
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include [banner](../includes/banner.md)]
 
-Du kan använda följande kortkommandon för att snabbt och effektivt mata in data.
+Du kan använda följande kortkommandon för att snabbt och effektivt mata in data i Finance and Operations-appar.
 
 > [!NOTE]
 > Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
@@ -236,6 +236,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta upp/ned en rad i uppslagningen                                                                                        | Uppåtil/nedåtpil            |
 | Flytta upp/ned en sida i uppslagningen                                                                                       | Page Up / Page Down              |
 | Flytta till längst upp/längst ned i uppslagningen                                                                                    | Startsida/slut                       |
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Tangentbordsgenvägar för analys av saknade konton](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)

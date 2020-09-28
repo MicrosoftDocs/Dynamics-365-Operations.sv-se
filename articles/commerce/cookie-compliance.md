@@ -3,7 +3,7 @@ title: Cookie-kompatibilitet
 description: I det här avsnittet beskrivs överväganden för cookie-efterlevnad och standardprinciper som ingår i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446923"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761331"
 ---
 # <a name="cookie-compliance"></a>Cookie-kompatibilitet
 
@@ -56,6 +56,10 @@ I följande tabell visas den aktuella referenslistan över cookies som placerats
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Används för att underhålla SSO-sessionen.                        |
 | x-ms-cpim-trans                             | Används för att spåra transaktioner (antalet öppna flikar som autentiserar mot en B2C-webbplats), inklusive den aktuella transaktionen. |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Cookie-tillstånd för webbplatsanvändare på en e-handelsplats 
+
+Om en användare av en e-handelsplats eller en modul använder en icke-väsentlig cookie måste en webbplatsanvändare erhålla ett tillstånd innan cookien spåras. För att webbplatsanvändare ska kunna ge cookie-samtycke på e-handelsplatsen måste en webbplatsförfattare lägga till och konfigurera en modul för cookie-samtycke i sidans rubrikmodul för att säkerställa att samtycket uppmanas och tas emot. Tillstånd från webbplatsanvändare måste ges innan en funktion eller modul med en icke-väsentlig cookie kan återges på en webbplatssida.
+
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Hjälpmedelsfunktioner och möjligheter](accessibility.md)
@@ -65,3 +69,7 @@ I följande tabell visas den aktuella referenslistan över cookies som placerats
 [Lägga till en sida med sekretesspolicy](add-privacy-page.md)
 
 [Ersätt användar-ID:n som är associerade med spårade innehållsändringar](replace-IDs-tracked-changes.md)
+
+[Modul för cookie-samtycke](cookie-consent-module.md) 
+ 
+[Modul för sidhuvud](author-header-module.md)

@@ -3,7 +3,7 @@ title: Skapa ett teamkalender
 description: Visa och skapa teamkalendrar i Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2862c98014f91c5500ec11119d04d15bd050c89c
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712218"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796479"
 ---
 # <a name="view-team-and-company-calendars"></a>Visa team- och företagskalendrar
 
@@ -50,6 +50,22 @@ Personer som är i personalroller kan visa företagskalendrar. Företagskalendra
 2. Välj **Tjänstledighet och kalender**.
 
 Personalroller kan också få åtkomst till företagskalendern från **Begäran om tjänstledighet och frånvaro**, **Godkänd ledighet** och **Ledighetsansökningar**. 
+
+[!include [banner](includes/preview-feature.md)]
+
+Kalendrar innehåller nu ytterligare filter och alternativ. Alla kalendrar inkluderar visningsalternativ för:
+
+- Godkända begäran
+- Väntande begäranden
+- Medarbetare med tjänstledighetsbegäran
+- Medarbetare utan tjänstledighetsbegäran
+- Medarbetarnas födelsedagar
+- Ansökningar om ledighet 
+- Tjänstledighetsansökningar
+
+Kalenderkonfiguration i tjänstledighets- och frånvaroparametrar bestämmer tillgängliga visningsalternativ.
+
+Du kan även filtrera kalendern efter chef eller avdelning. Den primära befattningstilldelningen avgör vilka medarbetare som visas när dessa filter ställs in. 
 
 Information om kalenderinställningar finns i [konfigurera kalenderparametrar](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
 

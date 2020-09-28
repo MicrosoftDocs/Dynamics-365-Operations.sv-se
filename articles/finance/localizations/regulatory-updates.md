@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 785797af0fe62fa6d0ee40fb4df45bcec47780c7
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: b01162f034a948a94139aed66b7ec8d2e861ee9b
+ms.sourcegitcommit: 4b63e71fb031d8f47bd9e72dd9cdfb9bc7ef2efc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598094"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3789758"
 ---
 # <a name="regulatory-updates"></a>Regeluppdateringar
 
@@ -42,6 +42,12 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 
 |Land|Planerat frisläppningsdatum |Slutversion|Regeluppdatering|
 |--------------------|---------------|-------|-------|
+|      Österrike         |   2020 september      | 10.0.15      |   U30 för momsdeklarationsformat har uppdaterats för 2020-rapportering   |
+|      Bahrain         |   Juli 2020      | 10.0.12      |   Omvänd moms   |
+|      Bahrain         |   Juli 2020      | 10.0.12      |   Tidsgräns för fakturautfärdande (GCC)   |
+|      Bahrain         |   Juli 2020      | 10.0.12      |   Momsdeklaration för Bahrain   |
+|      Bahrain         |   Juli 2020      | 10.0.12      |   Försäljningsfakturor för Bahrain   |
+|      Brasilien         |   Augusti 2020      | 10.0.14, 10.0.13, 10.0.12      |   ADRCST-deklaration PR   |
 |      Brasilien         |   2020 mars      | 10.0.11      |   SPED ECD layout 8   |
 |      Brasilien         |   2020 april      | 10.0.11      |   Teknisk anmärkning NT2019.001 v1.40   |
 |      Brasilien         |   2020 maj      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST utdrag för Parana-stat   |
@@ -50,21 +56,35 @@ För de senaste kravuppdateringsplanerna, se följande tabell.
 |      Tjeckien      |   Juli 2020      | 10.0.13      |   Momskontroll ändras i XML-schema (fakturalista)   |
 |      Tjeckien         |   Juli 2020      | 10.0.13      |   Momsdeklaration i XML, momsdeklaration för förhandsgranskning i Excel- och XML-format för momskontroll baserade på momsdeklarationsmodellen   |
 |      Estland         |   2020 maj       | 10.0.11      |   Elektronisk fakturering i Estland: kundfakturor exportera i estniskt särskilt format version 1.2.  |
+|      Europa        |   Augusti 2020       | 10.0.14      |   Överför moms-ID för partner till Intrastat  |
+|      Finland         |   Juli 2020       | 10.0.13      |   Stöd för elektroniska fakturor för Finland  |
 |      Tyskland         |   2020 maj       | 10.0.12      |   Tyskland - detaljhandel - kassakrav    |
 |      Ungern         |   2020 mars       | 10.0.11     |   Online-faktureringssystem v.2.0 i Finance and Operations    |
+|      Indien         |   Augusti 2020, juli 2020      | 10.0.3, 10.0.12HF      |   Via-kamerasystem för försäljning av varor enligt avsnitt 206C (1H)-tröskel som per PAN-baserad ackumulering av transaktioner.  |
+|      Indien         |   Augusti 2020, juni 2020      | 10.0.13, 10.0.12HF      |   Kredit-/debetfaktura mot exportfaktura  |
+|      Indien         |   Augusti 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Elektronisk faktura under GST  |
+|      Indien         |   2020 maj      | 10.0.13, 10.0.12      |   Nytt returformat för GSTR-1 och GSTR-2  |
+|      Indien         |   Juli 2020      | 10.0.13      |   Nytt offlineverktyg GSTR (ANX-1 och ANX-2) (betaversion)  |
 |      Indien         |   2020 maj      | 10.0.12      |   Förbättringar av enhetspris och självkostnadshantering i lageröverföringsorder  |
 |      Indien         |   2020 maj      | 10.0.12      |   Lageröverföring samma momssats tillämplig vid leverans och inleverans (inklusive delvis inleverans)  |
 |      Italien         |   2020 maj      | 10.0.12, 10.0.11      |   Modello 770 / 2019 formatändring |
 |      Italien         |   Juli 2020      | 10.0.13, 10.0.12HF      |   Ändringar i formatet för italienska elektroniska fakturor - FatturaPA |
+|      Kuwait         |   Juli 2020      | 10.0.12      |   Omvänd moms |
+|      Malaysia         |   Juli 2020      | 10.0.13      |   SST-rapport |
+|      Mexiko         |   2020 september      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   CFDI URL-schema platsbaserad på Anexo 20-dokument |
 |      Norge          |   2020 maj   | 10.0.12     |   SAF-T omorganisation av rapport: ingående balans med "operation"-transaktionstyp och skatteinformation i skattekodens valuta i Finance (version10) |
 |      Norge          |   2020 maj   | 10.0.12     |   SAF-T rapport dialogändring: så här ger du möjlighet att välja kontaktperson mellan företag |
 |      Norge          |   2020 maj   | 10.0.12     |   SAF-T Namnge utrymmesdeklarationer på varje rad istället för endast på rubriken |
+|      Oman         |   Juli 2020      | 10.0.12H      |   Omvänd moms |
+|      Polen          |   2020 september     | 10.0.14     |   Polen: JPK-V7M (VDEK) Excel-format - för att ersätta SSRS-rapport  |
 |      Polen          |   2020 maj     | 10.0.11     |   Dela AP/AR realiserade växelskillnadsbelopp till växelskillnad mellan fakturans nettovärde och momsbeloppet  |
 |      Polen          |   2020 maj     | 10.0.11     |   SAF redovisningsböcker – förbättringar av filtrering av bokföringsskikt |
 |      Polen          |   2020 mars     | 10.0.11     |   JPK_VDEK tilläggspaket I |
 |      Polen          |   2020 maj     | 10.0.12     |   JPK_VDEK tilläggspaket II |
 |      Polen          |   2020 mars     | 10.0.11     |   Delvis kreditfaktura för försäljningsorder med förskottsfaktura |
 |      Polen          |   Juli 2020     | 10.0.13     |   Förbättringar av obligatorisk icke delbetalning |
+|      Qatar         |   Juli 2020      | 10.0.12H      |   Omvänd moms |
+|      Ryssland          |   Augusti 2020     | 10.0.14    |   Formatet på redovisningsrapporten ändras från år 2020  |
 |      Ryssland          |   Juli 2020     | 10.0.13    |   Avskrivningsberäkning av anskaffningskostnad och huvudreparationer vid användning av avskrivningsbonus i skatteredovisning  |
 
 

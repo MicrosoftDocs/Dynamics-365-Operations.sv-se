@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
-ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
+ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628919"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759945"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- och kundsökning i kassan (POS)
 
@@ -93,7 +93,7 @@ I samband med fjärrkundsökning visas inte kundens ID för kunder från andra j
 
 ### <a name="enhancements-to-local-customer-search"></a>Förbättringar av lokala kundsökningar
 
-Sökningar som är baserade på telefonnummer har förenklats. Dessa sökningar kan nu ignorera specialtecken såsom blanksteg, bindestreck och parenteser som kan ha lagts till när kunden skapades. Därför behöver kassörerna inte ta hänsyn till telefonnummerformatet när de söker. De kan även söka efter kunder genom att skriva en del av ett telefonnummer. Om ett telefonnummer innehåller specialtecken kan du även hitta det genom att söka efter de siffror som visas efter specialtecknet. Om ett kundtelefonnummer exempelvis angetts som **123-456-7890** kan en kassör söka efter kunden genom att skriva in **123**, **456**, **7890** eller **1234567890**, eller genom att ange de första siffrorna i telefonnumret.
+Sökningar som är baserade på telefonnummer har förenklats. Dessa sökningar kan nu ignorera specialtecken såsom blanksteg, bindestreck och parenteser som kan ha lagts till när kunden skapades. Därför behöver kassörerna inte ta hänsyn till telefonnummerformatet när de söker. Om ett kundtelefonnummer exempelvis angetts som **123-456-7890**, kan en kassör söka efter kunden genom att skriva in **1234567890**, eller genom att ange de första siffrorna i telefonnumret.
 
 > [!NOTE]
 > En kund kan ha flera telefonnummer och flera e-postadresser. Kundens sökalgoritm söker också igenom dessa sekundära e-postadresser och telefonnummer, men sidan med sökresultat för kund visar endast primär e-postadress och telefonnummer. Detta kan leda till en del förvirring när det returnerade kundresultatet inte visar den sökta e-postadressen eller telefonnumret. I en senare version planerar vi att förbättra skärmen för kundens sökresultat för att visa den här informationen.

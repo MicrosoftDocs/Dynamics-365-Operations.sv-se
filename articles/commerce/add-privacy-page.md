@@ -3,7 +3,7 @@ title: Lägga till en sida med sekretesspolicy
 description: I det här avsnittet beskrivs hur du lägger till en sida med sekretesspolicy till din webbplats i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686705"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761283"
 ---
 # <a name="add-a-privacy-policy-page"></a>Lägga till en sida med sekretesspolicy
 
@@ -89,8 +89,8 @@ Du kan lägga till en länk till sidan sekretesspolicy till ett fragment. På s�
 Om du vill lägga till en länk till ett sidfotavsnitt gör du följande.
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett sidfragment.
-1. I dialogrutan **Nytt sidfragment**, välj modulen **Sidfot**.
-1. Under **sidfragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
+1. I dialogrutan **Nytt fragment**, välj modulen **Sidfot**.
+1. Under **fragmentets namn**, anger du ett namn på fragmentet och klickar sedan på **OK**.
 1. I facket **Sidfotskategori**, lägg till en **sidfotsartikel**-modul.
 1. I egenskapsrutan till höger, välj egenskapen **Länktext**.
 1. I dialogrutan **länktext** anger du länktexten och länkmålet för sidan sekretesspolicy och klickar sedan på **OK**.

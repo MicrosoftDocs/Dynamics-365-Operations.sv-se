@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dbb9876b5df3309d280f242a9fce8f79f12afeb
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9caea2d41e6d3ba74e4d156d8aeae6c4693ce7e2
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214767"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813868"
 ---
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
@@ -56,7 +56,7 @@ Tillverkningsredovisning låter dig hantera [kostnadsberäkning för jobborder](
 
 #### <a name="white-paper"></a>Dokumentation
 
-[BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) beskriver hur man ställer upp ett kostnadsredovisningsblad med material och tillverkning och hur inställningar påverkar resultat från strukturlisteberäkningar. För att bättre förstå ämnena tillhandahålls konkreta scenarier och data som visar effekten av olika inställningar och konfigurationer.
+[BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937) beskriver hur man ställer upp ett kostnadsredovisningsblad med material och tillverkning och hur inställningar påverkar resultat från strukturlisteberäkningar. För att bättre förstå ämnena tillhandahålls konkreta scenarier och data som visar effekten av olika inställningar och konfigurationer.
 
 #### <a name="blogs"></a>Bloggar
 

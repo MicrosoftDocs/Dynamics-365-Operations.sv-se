@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6585e44701160bf31c107c07226f992b12cf035e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 207783f5a44d5c6432539ac27a8c491bca811da4
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550658"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760041"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spåra körning av ER-format för att felsöka prestanda problem
 
@@ -101,7 +101,7 @@ Anta att du har börjat designa en ny ER-lösning för att skapa en ny rapport s
 
 Anta att du har skapat den första versionen av ER-lösningen. Du vill nu testa instansen och analysera körningsprestanda.
 
-### <a id='import-configuration'></a>Importera en ER-konfiguration från RCS till Finance and Operations
+### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importera ER-konfigurationer från RCS till Finance and Operations
 
 1. Logga in på programinstansen.
 2. För den här självstudien ska du importera konfigurationer från din RCS-instans (där du utformar dina ER-komponenter) instansen (där du testar och slutligen använder dem.) Därför måste du se till att alla nödvändiga artefakter har förberetts. För mer information, se proceduren [Importera e-rapporteringskonfigurationer från Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
@@ -146,7 +146,7 @@ Motsvarande versioner av datamodell- och modellmappningskonfigurationer importer
 
     ![Dialogruta Användarparametrar](./media/GER-PerfTrace-GER-UserParameters.png)
 
-### <a id='run-format'></a>Kör ER-format
+### <a name="run-the-er-format"></a><a id='run-format'></a>Kör ER-format
 
 1. Välj företaget **DEMF**.
 2. Gå till **Organisationsadministration  \> Elektronisk rapportering \> Konfigurationer**.
@@ -157,7 +157,7 @@ Observera att filen som genereras visar information om 265 transaktioner för se
 
 ## <a name="review-the-execution-trace"></a>Granska körningsspårningen
 
-### <a id='export-trace'></a>Exportera den genererade spårningen från programmet
+### <a name="export-the-generated-trace-from-the-application"></a><a id='export-trace'></a>Exportera den genererade spårningen från programmet
 
 Prestandaspårningen kopplas från källans ER-format och kan serialiseras till en extern ZIP-fil.
 
@@ -176,7 +176,7 @@ Prestandaspårningen kopplas från källans ER-format och kan serialiseras till 
 
 Observera att associationen mellan resultatspårningen som har genererats för det körda ER-formatet och ER-modellmappningen baseras på den rotbeskrivare som användes och den gemensamma datamodellen. Versionsnumret för formatet ochmmdellmappning beaktas inte. Inställningen av flaggan **Standard för modellmappning** för modellmappningen beaktas inte heller.
 
-### <a id='import-trace'></a>Importera genererad spårning till RCS.
+### <a name="import-the-generated-trace-into-rcs"></a><a id='import-trace'></a>Importera genererad spårning till RCS.
 
 1. I RCS på arbetsytan **Elektronisk rapportering** väljer du panelen **Rapporteringskonfiguration**.
 2. På sidan **konfigurationer** i konfigurationsträdet, expandera artikeln **Prestandaspårningsmodell** och väljer artikeln **Prestandaspårningsformat**.
@@ -201,7 +201,7 @@ Observera att associationen mellan resultatspårningen som har genererats för d
 
 2. Stäng sidan **Formatdesigner**.
 
-### <a id='use-trace'></a>Använd prestandaspårning för analys i RCS – modellmappning
+### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a><a id='use-trace'></a>Använd prestandaspårning för analys i RCS – modellmappning
 
 1. I RCS på sidan **konfigurationer** i konfigurationsträdet väljer du artikeln **Prestandaspårningsmappning**.
 2. Klicka på **Designer** i åtgärdsfönstret.
@@ -301,7 +301,7 @@ Upprepa stegen i avsnittet [Importera en ER-konfiguration från RCS till Finance
 
 Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avsnittet om du vill generera en ny prestandaspårning.
 
-## <a name="review-the-execution-trace"></a>Granska körningsspårningen
+## <a name="work-with-the-execution-trace"></a>Arbeta med körningsspårningen
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Exportera den genererade spårningen från programmet
 
@@ -347,7 +347,7 @@ Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avs
 
 Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning.
 
-![Spårningsinformation för det körda återställningsformatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Information om prestandaspårning i PerfView-format](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Använd externa verktyg för att granska en körningsspårning som omfattar databasfrågor
 
@@ -363,7 +363,7 @@ På grund av de förbättringar som har gjorts i ER-ramverk innehåller den pres
     - Ställ in alternativet **Samla in frågestatistik** till **Ja**.
     - Ställ in alternativet **Spårningsfråga** till **Ja**.
 
-    ![Dialogruta Användarparametrar](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Avsnitt för körningsspårning, dialogrutan användarparametrar](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Kör ER-format
 
@@ -372,3 +372,8 @@ Upprepa stegen i avsnittet [kör ER-format](#run-format) tidigare i det här avs
 Observera att en zip-fil kan hämtas i webbläsaren. Den här filen innehåller prestandaspårningen i PerfView-format. Du kan sedan använda prestandaanalysverktyget PerfView för att analysera information om ER-formatkörning. I den här spårningen finns nu information om åtkomst till SQL-databasen under körningen av ER-formatet.
 
 ![Spårningsinformation för det körda återställningsformatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+- [Översikt över elektronisk rapportering](general-electronic-reporting.md)
+- [Förbättra prestanda för ER-lösningar genom att lägga till parametriserade datakällor för BERÄKNADE FÄLT](er-calculated-field-ds-performance.md)

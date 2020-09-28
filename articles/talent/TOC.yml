@@ -1,13 +1,15 @@
 - name: Dynamics 365 for Talent
   href: talent-welcome.md
   items:
-    - name: Kom igång
+    - name: Kom i gång
       items:
-        - name: Kom igång med Talent
+        - name: Kom i gång med Talent
           href: talent-get-started.md
         - name: Nyheter och ändringar i Talent
           href: whats-new.md
           items:
+            - name: 1 september 2020
+              href: whats-new-talent-september-01-2020.md
             - name: 21 januari 2020
               href: whats-new-talent-january-21-2020.md
             - name: 14 januari 2020

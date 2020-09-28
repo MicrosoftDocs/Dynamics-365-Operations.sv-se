@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
+ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651967"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3801468"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nyheter och ändringar i Dynamics 365 Supply Chain Management 10.0.8 (februari 2020)
 
@@ -41,10 +41,10 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 - [Ytterligare platszoner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 - [Tillgångshantering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Mer information finns i [Översikt för tillgångshantering](../asset-management/index.md).
 - [Avbryt arbete](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Mer information finns i [Avbryt lagerarbete för undantagshantering](../warehousing/cancel-warehouse-work.md).
-- [Ändra arbetspool för arbete](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
-- [Klusterposition full](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
-- [Bekräfta och överför](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
-- [Platsdirektiv för plockning i åldersfördelat lager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
+- [Ändra arbetspool för arbete](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Mer information finns i [Ändra arbetspool för arbetsuppgift](../warehousing/change-work-pool-on-work.md).
+- [Klusterposition full](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) - För mer information, se [Klusterposition full](../warehousing/cluster-position-full.md).
+- [Bekräfta och överför](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Mer information finns i [Bekräfta och överför](../warehousing/confirm-and-transfer.md).
+- [Platsdirektiv för plockning i åldersfördelat lager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Mer information finns i [Platsdirektiv för plockning i åldersfördelat lager](../warehousing/location-directive-inventory-picking-aging.md).
 - [Platsens status](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
 - [Plockradsgruppering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Mer information finns i [plockning av radgruppering](../warehousing/pick-line-grouping.md).
 - [Automatiska uppdateringar av leverans](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Mer information finns i [automatiska uppdateringar av leverans](../warehousing/auto-update-shipment.md).
@@ -54,9 +54,9 @@ Den här versionen innehåller följande nya funktioner: Funktionstitlarna länk
 - [Uppgiftsvalidering av lagerställeprogram med RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Lagerställets frisläppningsregel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Visualisering av påfyllningsstatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [Gruppering av påfyllnadsmall](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [Arbetsradsdetaljer](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Information om arbetsrad finns i videon [Arbetsraddetaljer](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
-- [Zontröskel för lagerpåfyllnad](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
+- [Gruppering av påfyllnadsmall](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - För mer information, se [Gruppering av påfyllnadsmall](../warehousing/wave-template-grouping.md).
+- [Arbetsradsdetaljer](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - För mer information, se [Information om arbetsrad](../warehousing/work-line-details.md) och [Information om arbetsrad](https://www.microsoft.com/videoplayer/embed/RE4fcYN) video.
+- [Zontröskel för lagerpåfyllnad](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Mer information finns i [Zontröskel för lagerpåfyllnad](../warehousing/zone-threshold-replenishment.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

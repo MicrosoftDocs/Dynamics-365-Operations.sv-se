@@ -3,7 +3,7 @@ title: Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services
 description: Detta avsnitt innehåller information om hur du hämtar elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 8a18427114bddb7c72024a8d96d33f3fbf8dbe17
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934664"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810629"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Hämta konfigurationer för elektronisk rapportering från Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
-Detta avsnitt innehåller information om hur du hämtar elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
-
-Denna guide vägleder dig genom processen att hämta den senaste versionen av elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
+I det här avsnittet beskrivs hur du hämtar den senaste versionen av dina [Elektronisk rapportering (ER) konfigurationer](general-electronic-reporting.md#Configuration) från [biblioteket med gemensamma tillgångar](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
 
 1. Logga in på programmet med någon av följande roller:
 
@@ -43,21 +41,24 @@ Denna guide vägleder dig genom processen att hämta den senaste versionen av el
 3. I avsnittet **Konfigurationsleverantörer** väljer du panelen **Microsoft**.
 4. I panelen **Microsoft** väljer du **Databaser**.
 
-    [![uppdatera-er-från-lcs-för-ms-öppna-lista-över-ms-databaser](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft-panel på sidan lokaliseringskonfiguration](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **LCS**-typen. Om denna databas inte visas i rutnätet, följ då nedanstående steg:
 
-    1. Klicka på Click **Lägg till** för att lägga till en ny databas.
+    1. Välj **Lägg till** för att lägga till en databas.
     2. Välj **LCS** som databastyp.
-    3. Klicka på **Skapa databas**.
-    4. Följ autoriseringsinstruktionerna om du uppmanas.
+    3. Välj **Skapa databas**.
+    4. Om du tillfrågas om auktorisering följer du instruktionerna på skärmen.
     5. Skriv ett namn och en beskrivning för databasen.
     6. Klicka på **OK** för att bekräfta den nya databasposten.
     7. I rutnätet väljer du den nya databasen för **LCS**-typen.
 
-6. Klicka på **Öppna** om du vill visa listan över ER-konfigurationer för den valda databasen.
+6. Välj **Öppna** om du vill visa listan över ER-konfigurationer för den valda databasen.
 
-    [![uppdatera-er-från-lcs-för-ms-skapa-lcs-databas](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+    [![Sidan Konfigurationsdatabas](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+
+    > [!TIP]
+    > Om du har problem med att komma åt LCS-databasen för hämtning av konfigurationer från biblioteket med gemensamma tillgångar i LCS kan du i stället hämta konfigurationer från den [globala databasen](er-download-configurations-global-repo.md) .
 
 7. I konfigurationsträdet i det vänstra fönstret väljer du erforderlig ER-konfiguration.
 8. I snabbfliken **Versioner** väljer du erforderlig version för vald ER-konfiguration.
@@ -66,7 +67,7 @@ Denna guide vägleder dig genom processen att hämta den senaste versionen av el
     > [!NOTE]
     > Knappen **Importera** är inte tillgänglig för ER-konfigurationsversioner som redan finns i den aktuella instansen.
 
-    [![uppdatera-er-från-lcs-för-ms-hämta-konfiguration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+    [![Sidan Konfigurationsdatabas](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
 > [!NOTE]
 > Beroende på ER-inställningarna valideras konfigurationerna när de har importerats. Du kan komma att meddelas om eventuella inkonsekvensproblem som upptäcks. Du måste lösa dessa problem innan du kan använda den importerade konfigurationsversionen. Mer information finns i listan över relaterade artiklar för detta avsnitt.
@@ -74,3 +75,5 @@ Denna guide vägleder dig genom processen att hämta den senaste versionen av el
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+[Hämta ER-konfigurationer från den globala databasen med konfigurationstjänster](er-download-configurations-global-repo.md)

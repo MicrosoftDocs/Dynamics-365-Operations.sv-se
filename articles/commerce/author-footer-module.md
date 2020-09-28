@@ -3,7 +3,7 @@ title: Modul för sidfot
 description: Det här avsnittet innehåller moduler för sidfot och hur du redigerar dem i Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 6dd9f214fbeeeaabadac4853916363c20a3288ca
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686728"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761212"
 ---
 # <a name="footer-module"></a>Modul för sidfot  
 
@@ -51,7 +51,7 @@ Precis som i de flesta behållare har en modul för sidfot stöd för egenskaper
 ## <a name="create-a-footer-module"></a>Skapa en sidfotsmodul
 
 1. Gå till **Fragment** och välj **ny** för att skapa ett nytt fragment.
-1. I dialogrutan **Nytt sidfragment** väljer du modul för **Behållare**, anger ett namn på sidan och väljer sedan **OK**.
+1. I dialogrutan **Nytt fragment** väljer du modul för **Behållare**, anger ett namn på fragmentet och väljer sedan **OK**.
 1. I facket **Standardbehållare** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
 1. I dialogrutan **Lägg till modul**, välj modulen **sidfotskategori** och sedan **OK**.
 1. I facket **Sidfotskategori** välj ellips-knappen (**...**) och välj sedan **Lägg till modulen**.
@@ -68,7 +68,7 @@ Om du vill garantera att ett sidhuvud visas på varje sida följer du stegen ned
 1. På platsen **Sidfot** i modulen **standardsida** lägg till det sidfotsfragment som du skapade.
 1. Välj **Slutför redigering** för att checka in mallen och välj sedan **publicera** för att publicera den.
 
-Genom att lägga till sidfragment i sidmallar kan du säkerställa att sidfoten återges på varje sida.
+Genom att lägga till fragment i sidmallar kan du säkerställa att sidfoten återges på varje sida.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

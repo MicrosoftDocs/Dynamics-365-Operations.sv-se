@@ -3,7 +3,7 @@ title: Skapa en plan för tjänstledighet och frånvaro
 description: Skapa frånvaroplaner i Dynamics 365 Human Resources för olika typer av tjänstledighet.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428719"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796507"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Skapa en plan för tjänstledighet och frånvaro
 
@@ -43,7 +43,15 @@ Du kan också skapa befattningsfria förmåner, t.ex. förmånstimmar som endast
 
 2. Under **information**, ange **namn**, **startdatum**, **beskrivning** och **tjänstledighetstyp** för planen.
 
-Om funktionen **Konfigurera flera tjänstledighetstyper för en enskild tjänstledighets- och frånvaroplan** är aktiverad konfigureras tjänstledighetstyper i **Periodiseringsschema** istället under **Detaljer**. För varje post i registret för periodiseringsschema kan du ange en tjänstledighetstyp.
+Om funktionen **Konfigurera flera tjänstledighetstyper för en enskild tjänstledighets- och frånvaroplan** är aktiverad konfigureras tjänstledighetstyper i **Periodiseringsschema** istället under **Detaljer**. För varje post i registret för periodiseringsschema kan du ange en tjänstledighetstyp. När den här funktionen är aktiverad måste du dessutom använda nya dataenheter för integration eller andra scenarier där du behöver använda entiteter. 
+
+De nya entiteterna är:
+
+- Transaktion för tjänstledighets- och frånvarobank V2
+- Anmälan om tjänstledighet och frånvaro V2
+- Plannivå för tjänstledighet och frånvaro V2
+- Plan för tjänstledighet och frånvaro V2
+- Ledighetsansökan V2
 
  > [!IMPORTANT]
    > När du har aktiverat den här funktionen kan du inte inaktivera den.

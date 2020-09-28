@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 227111f4703d9dc381270382dcb796874d7de937
-ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
+ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699661"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802759"
 ---
 # <a name="hazardous-materials-overview"></a>Översikt över farliga material
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 För att fortsätta att följa sjöfarts- och transportbestämmelserna måste organisationer som skickar material som klassificeras som farligt gods inkludera ytterligare pappersarbete med sina transporter. Med hjälp av funktionen för farliga material kan kunderna lagra information som är relaterad till frisläppta artiklar. Denna information kan sedan användas för att förbereda leveransdokumentationen. En organisation som levererar farligt gods måste ha egna processer och procedurer för hantering av leveransprocessen. Microsoft Dynamics 365 Supply Chain Management är bara ett verktyg som kan hjälpa dig att skapa de dokument som krävs.
 
