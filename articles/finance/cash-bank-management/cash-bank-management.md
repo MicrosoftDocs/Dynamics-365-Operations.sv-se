@@ -1,7 +1,7 @@
 ---
 title: Startsidan för kassa- och bankhantering
 description: Använd Kassa- och bankhantering till att underhålla den juridiska personens bankkonton och de finansiella instrument som är associerade med dessa bankkonton.
-author: ShylaThompson
+author: panolte
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: shylaw
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c27811fc900cb497f62780a5185b20d4efbbbdba
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026301"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899628"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startsidan för kassa- och bankhantering
 
@@ -92,7 +92,7 @@ Gå till [Utgivningsplaner för Microsoft Dynamics 365](https://go.microsoft.com
 
 Det finns åsikter, nyheter och annan information i [bloggen om Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) och [bloggen om Microsoft Dynamics 365 Finance and Operations – Ekonomi](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
+I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics-partner en resurs där de kan få mer information om vad som är nytt och trendar i Dynamics 365.
 
 #### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.

@@ -20,9 +20,9 @@
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Platform updates för 10.0.12 (augusti 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-            - name: Borttagna och utfasade funktioner
+            - name: Borttagna eller utfasade funktioner
               items:
-                - name: Borttagna och utfasade plattformsfunktioner
+                - name: Borttagna eller utfasade plattformsfunktioner
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Borttagna eller utfasade funktioner i tidigare versioner
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
@@ -86,6 +86,8 @@
               href: data-entities/integration-overview.md
             - name: Prioritetsbaserad begränsning
               hreF: data-entities/priority-based-throttling.md
+            - name: Vanliga frågor och svar om prioritetsbaserad begränsning
+              href: data-entities/throttling-faq.md
             - name: 'API:er för dataintegrering'
               items:
                 - name: REST API för datahanteringspaket
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Migrering av valutadatatyp för dubbelriktad skrivning
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Ställ in mappning för fälten för försäljningsorderns status
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: Hantera dubbelriktad skrivning
                           items:
                             - name: Anpassa enhets- och fältmappningar
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Lokal agent
                   items:
-                    - name: AD FS Office 365-kompatibilitet
+                    - name: AD FS Microsoft 365-kompatibilitet
                       href: deployment/onprem-adfscompatibility.md
                     - name: Skripts för lokal agent för fördistribution och efterdistribution
                       href: lifecycle-services/pre-post-scripts.md
@@ -627,14 +631,12 @@
                 - name: Utvecklingsverktyg – självstudier
                   href: dev-tools/introduction-visual-studio.md
                 - name: Programkontroll
-                  items:
-                    - name: Installera BaseX för Programkontroll
-                      href: dev-tools/install-basex.md
+                  href: dev-tools/application-checker.md
                 - name: Programutforskaren
                   href: dev-tools/application-explorer.md
                 - name: Skapa och felsöka projekt
                   href: dev-tools/build-debug-project.md
-                - name: Versionsoperationer
+                - name: Versionsåtgärder
                   href: dev-tools/build-operations.md
                 - name: Kodredigerare – funktioner
                   href: dev-tools/code-editor.md
@@ -1368,6 +1370,24 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: 'ValueMetadata, typ'
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Processa automatiseringsramverk
+          items:
+            - name: Processa utveckling av automatiseringsramverk
+              href: process-automation/process-automation-framework.md
+            - name: Typregistrering
+              href: process-automation/type-registration.md
+            - name: Serieregistrering
+              href: process-automation/series-registration.md
+            - name: Processparametrar
+              href: process-automation/process-parameters.md
+            - name: Frågor som kan konfigureras av användare
+              href: process-automation/user-queries.md
+            - name: Köra processen
+              href: process-automation/run-process.md
+            - name: Logga resultat och meddelanden
+              href: process-automation/log-results.md
+            - name: Anpassa användargränssnittet
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
             - name: Regression Suite Automation Tool – översikt
@@ -1395,7 +1415,7 @@
             - name: Utveckla och släppa
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Mellanlagra och publicera
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Lägga till metoder
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Konfigurera bibliotek för affärsprocessmodelleraren
@@ -1644,7 +1664,7 @@
                   href: dev-tools/update-development-tools.md
             - name: Utfasningar
               items:
-                - name: Borttagna och utfasade funktioner
+                - name: Borttagna eller utfasade funktioner
                   href: migration-upgrade/deprecated-features.md
                 - name: Avskrivning av metoder och metadataelement
                   href: migration-upgrade/deprecation-deletion-apis.md
