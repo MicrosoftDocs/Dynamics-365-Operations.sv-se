@@ -3,7 +3,7 @@ title: Avanmälan av anpassade rekommendationer
 description: I det här avsnittet beskrivs hur du kan låta kunderna avanmäla si från anpassade rekommendationer i Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51c8c0e2743b67df9d66a8c45ab7a69597f4002
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664940"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817533"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Avanmälan av anpassade rekommendationer
 
@@ -74,7 +74,7 @@ Följande exempel visar hur en återförsäljare kan utföra uppgiften.
 1. Återförsäljaren skapar ett anpassat tillägg för att hämta personliga rekommendationer för användarens räkning. Information om hur du skapar moduler, klonar befintliga moduler, anropar API:er för Retail Server och anropar dataåtgärder finns i [Utbyggbarhet för onlinekanal](e-commerce-extensibility/overview.md).
 2. Det anpassade tillägget gör ett anrop till grundläggande dataåtgärder **skaffa rekommendationer** och skickar den nödvändiga informationen till den, baserat på kraven i listan. Om du väljer listan **plockningar för dig** måste tillägget skicka rätt listnamn och kund-ID till dataåtgärden.
 
-    Ett sätt att skapa det anpassade tillägget är att klona den befintliga modulen för produktsamlingar som används för att returnera rekommendationer. Genom att klona denna befintliga modul kan en återförsäljare ändra den befintliga koden och lägga till en ny knapp som exporterar rekommendationerna till en CSV-fil. Mer information finns i [Klona en modul för startpaket](e-commerce-extensibility/clone-starter-module.md) och [Produktsamlingsmoduler](product-collection-module-overview.md).
+    Ett sätt att skapa det anpassade tillägget är att klona den befintliga modulen för produktsamlingar som används för att returnera rekommendationer. Genom att klona denna befintliga modul kan en återförsäljare ändra den befintliga koden och lägga till en ny knapp som exporterar rekommendationerna till en CSV-fil. Mer information finns i [Klona en modul för modulbibliotek](e-commerce-extensibility/clone-starter-module.md) och [Produktsamlingsmoduler](product-collection-module-overview.md).
 
     En fullständig vy av API-biblioteket för Retail Server finns i [API:er för Retail Server-kund och -konsument](dev-itpro/retail-server-customer-consumer-api.md).
 

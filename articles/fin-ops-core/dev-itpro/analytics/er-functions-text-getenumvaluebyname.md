@@ -3,7 +3,7 @@ title: Funktionen GETENUMVALUEBYNAME ER
 description: Det här avsnittet innehåller information om hur funktionen GETENUMVALUEBYNAME elektronisk rapportering (ER) används.
 author: NickSelin
 manager: kfend
-ms.date: 12/12/2019
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33ccf358dc5355cd00d5ff41ebd8148a334cba38
-ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
+ms.openlocfilehash: 722ea8ea233d617b0584e21e98073428f16c0801
+ms.sourcegitcommit: ad5b7676fc1213316e478afcffbfaee7d813f3bb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "3743865"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885237"
 ---
 # <a name="getenumvaluebyname-er-function"></a>Funktionen GETENUMVALUEBYNAME ER
 
@@ -61,11 +61,11 @@ Det resulterande fasttextvärde.
 
 Inget undantag genereras om *fasttextvärde* inte hittas med hjälp av namnet på uppräkningsvärdet som anges som ett *sträng*-värde.
 
-## <a name="example"></a>Exempel
+## <a name="example-1"></a>Exempel 1
 
 I följande illustration introduceras uppräkningen **ReportDirection** i en datamodell. Observera att etiketter definieras för uppräkningsvärden.
 
-<p><a href="./media/ER-data-model-enumeration-values.PNG"><img src="./media/ER-data-model-enumeration-values.PNG" alt="Available values for a data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Tillgängliga värden för en uppräkningen för datamodell](./media/ER-data-model-enumeration-values.PNG)
 
 Illustrationen som följer visar dessa detaljer:
 
@@ -73,8 +73,48 @@ Illustrationen som följer visar dessa detaljer:
 - `$IsArrivals`-uttrycket är utformat för att använda modelluppräkningsbaserad **$Direction** datakälla som en parameter för denna funktion.
 - Värdet för detta jämförelseuttryck är **SANT**.
 
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+![Exempel på uppräkning av en datamodell](./media/ER-data-model-enumeration-usage.PNG)
+
+## <a name="example-2"></a>Exempel 2
+
+Med funktionerna `GETENUMVALUEBYNAME` och [`LISTOFFIELDS`](er-functions-list-listoffields.md) kan du hämta värden och etiketter för uppräkningar som stöds som textvärden. (De uppräkningar som stöds är programuppräkningar, uppräkningar av datamodeller och formatuppräkningar.)
+
+I följande illustration introduceras datakällan **TransType** i en modellmappning. Den här datakällan refererar till uppräkningen **LedgerTransType** för program.
+
+![Datakälla för en modellmappning som refererar till ett programuppräkning](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+
+Följande bild visar datakällan **TransTypeList** som konfigureras i en modellmappning. Den här datakällan konfigureras baserat på den **TransType** programuppräkning. Funktionen `LISTOFFIELDS` används för att returnera alla uppräkningsvärden som en lista med poster som innehåller fält. På så sätt visas information om varje uppräkningsvärde.
+
+> [!NOTE]
+> Fälteet **EnumValue** konfigureras för datakällan **TransTypeList** med hjälp av `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`-uttrycket. Det här fältet returnerar ett uppräkningsvärde för varje post i den här listan.
+
+![Datakälla för en modellmappning som returnerar alla uppräkningsvärden för en markerad uppräkning som en lista med poster](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+
+Följande bild visar datakällan **VendTrans** som konfigureras i en modellmappning. Den här datakällan returnerar transaktionsposter för leverantörer från programregistret **VendTrans**. Redovisningstypen för varje transaktion definieras av värdet i fältet **TransType**.
+
+> [!NOTE]
+> Fälteet **TransTypeTitle** konfigureras för datakällan **VendTrans** med hjälp av `FIRSTORNULL(WHERE(TransTypeList, TransTypeList.EnumValue = @.TransType)).Label`-uttrycket. Det här fältet returnerar etiketten för ett uppräkningsvärde för den aktuella transaktionen som text, om detta uppräkningsvärde är tillgängligt. Annars returneras ett tomt strängvärde.
+>
+> Fältet **TransTypeTitle** är bundet till **LedgerType** för en datamodell som gör att informationen kan användas i alla ER-format där datamodellen används som datakälla.
+
+![Datakälla för en modellmappning som returnerar leverantörstransaktioner](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+
+Följande bild visar hur du kan använda [datakällans felsökare](er-debug-data-sources.md) för att testa den konfigurerade modellmappningen.
+
+![Använda datakällans felsökare för att testa den konfigurerade modellmappningen](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+
+Fältet **LedgerType** i en datamodell visar etiketter för de transaktionstyper som förväntas.
+
+Om du planerar att använda den här metoden för en stor mängd transaktionsdata måste du överväga att köra prestanda. För mer information, se [Spåra körningen av ER-format för att felsöka prestandaproblem](trace-execution-er-troubleshoot-perf.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
 [Textfunktioner](er-functions-category-text.md)
+
+[Spåra körningen av ER-format för att felsöka prestandaproblem](trace-execution-er-troubleshoot-perf.md)
+
+[LISTOFFIELDS ER-funktion](er-functions-list-listoffields.md)
+
+[FIRSTORNULL ER-funktion](er-functions-list-firstornull.md)
+
+[WHERE ER-funktionen](er-functions-list-where.md)

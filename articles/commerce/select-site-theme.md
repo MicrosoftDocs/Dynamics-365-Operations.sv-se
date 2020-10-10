@@ -3,7 +3,7 @@ title: Välj ett tema för webbplatsen
 description: I det här avsnittet beskrivs hur du ställer in eller ändrar webbplatstema i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45184c7b0e29d1258b26368fbc7221df91013cc3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002761"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817716"
 ---
 # <a name="select-a-site-theme"></a>Välj ett tema för webbplatsen
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +34,7 @@ I det här avsnittet beskrivs hur du ställer in eller ändrar webbplatstema i M
 
 En webbplats layout och stil (t.ex. teckensnitt, storlekar och färger) definieras av det tema som du väljer och tillämpar på webbplatsen. Ett tema skapas och distribueras av en utvecklare på ditt företag. En översikt över teman finns i [Översikt över teman](http://). Mer information om hur du skapar och distribuerar teman finns i [Skapa ett nytt tema](http://).
 
-När du först skapar en webbplats använder den som standard ett tema som heter **Fabrikam**. Det här standardtemat ingår i startpaketet. När du har distribuerat ytterligare teman för platsen kan du konfigurera platsen så att den använder en av dem i stället.
+När du först skapar en webbplats använder den som standard ett tema som heter **Fabrikam**. Det här standardtemat ingår i Commerce-modulbibliotek. När du har distribuerat ytterligare teman för platsen kan du konfigurera platsen så att den använder en av dem i stället.
 
 ## <a name="select-the-site-theme"></a>Välj ett tema för webbplatsen
 

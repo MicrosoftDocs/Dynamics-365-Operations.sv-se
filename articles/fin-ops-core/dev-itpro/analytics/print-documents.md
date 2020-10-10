@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9acc4c26febacf4ec7647cf436ac678e52df3973
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 25996cbccf3e9eec6fc29b80b8241e89b5b6b4a5
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772568"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893289"
 ---
 # <a name="document-printing-overview"></a>Dokumentetutskrift – översikt
 
@@ -52,10 +52,10 @@ I följande tabell beskrivs de tre primära utskriftsscenarierna.
 Eftersom lösningen varierar beroende på scenariet, innehåller appar inbyggda tjänster och verktygsuppsättningar som hjälper användarna att uppnå sina mål:
 
 - **Scenario 1** stöds av webbläsarens återgivning av HTML5-klienten.
-- **Scenario 2** använder klientprogram och Microsoft Office 365-tjänster.
+- **Scenario 2** använder klientprogram och Microsoft 365-tjänster.
 - **Scenario 3** kräver stöd från klientprogram och från tjänster som finns i Microsoft Azure.
 
-Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and Operations-.program kunderna en integrerad, första part Azure-program som kan användas för att enkelt använda domänhanterade enheter för att skriva ut dokument.
+Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and Operations-program ger kunderna en integrerad, första part Azure-program som kan användas för att enkelt använda domänhanterade enheter för att skriva ut dokument.
 
 ## <a name="service-overview"></a>Översikt över tjänsten
 När dokument som har skapats av värdprogram som väntar på att skrivas ut på en nätverksansluten enhet, förvaras de i Azure blobblagring. [Installera dokumentflödesagenten för att aktivera nätverksutskrift](install-document-routing-agent.md) använder Azure-autentisering för att upprätta en säker kanal till Azure-tjänsterna.

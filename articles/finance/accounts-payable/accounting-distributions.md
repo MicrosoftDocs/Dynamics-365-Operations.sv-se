@@ -1,9 +1,9 @@
 ---
 title: Redovisningsfördelningar
-description: Det här avsnittet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton.
+description: Det här ämnet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772270"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819849"
 ---
 # <a name="accounting-distributions"></a>Redovisningsfördelningar
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton. 
+Det här ämnet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton. 
 
 Redovisningsfördelningar är en programomfattande funktion som används och utökas med varje källdokument, till exempel inköpsorder, leverantörsfaktura, utgiftsrapport och fritextfaktura. Som standard skapas en redovisningsfördelning för varje källdokumentrad och penningbelopp och den är villkorad för ändring. 
 
-> [!Note] 
+> [!NOTE] 
 > Vissa dokument har även stöd för penningbelopp för huvuddokument, till exempel avgifter för order och fakturor. 
 
 De allmänna redovisningsfördelningsfunktionerna innehåller följande alternativ för bearbetning av redovisningsfördelningar:
@@ -47,14 +47,13 @@ De allmänna redovisningsfördelningsfunktionerna innehåller följande alternat
     -   Knappen **Återställ** kan aktiveras för överordnade fördelningar när det finns mer än en fördelning. **Återställ** återför alla manuella ändringar av fördelningen genom att ta bort alla befintliga fördelningar och regenerera standardfördelningarna igen.
     -   Alla underordnade fördelningar, som rabatt, avgift och moms, kommer efter den överordnade fördelningen. Du kan visa den överordnade/underordnade relationen via **Referens** &gt; **Överordnad information**.
     -   Huvudkontot och ekonomiska dimensionen kan även vara redigerbara för underordnade.
-    -   Den ekonomiska dimensionerna i redovisningsfördelningarna följer ett standardmönster som ett dokument kan utöka. Mer information finns i närliggande artiklar.
+    -   Den ekonomiska dimensionerna i redovisningsfördelningarna följer ett standardmönster som ett dokument kan utöka.
     -   Avvikelsefördelningar kan genereras i att matchande scenarier, till exempel matchning mellan en leverantörsfaktura och en inköpsorder. Du kan visa matchande relationer mellan redovisningsfördelningen via **Referens** &gt; **Information om dokument**.
     -   Knappen **Korrekt** visas och kan aktiveras för dokument som stöder korrigeringar. **Korrekt** skapar nya fördelningar. Först skapas fördelningar som återför ursprungliga fördelningar. Dessa fördelningar kan inte ändras. Därnäst skapas nya och korrekta redovisningsfördelningar. Dessa fördelningar kan ändras, om de ursprungliga fördelningarna kunde ändras.
     -   Knappen **Projektinformation** aktiveras som ett tillägg när en rad hör till ett projekt. Projektredovisningsfördelningar gör att du kan ändra detaljer som finansieringskälla och radegenskap.
     -   Du kan visa aktuell redovisningsstatus för dokumentet under **Referens**. Statusen är för hela dokumentet och anger om dokumentet är pågående eller slutfört.
 -   **Visa fördelningar** – Visa redovisningsfördelningarna för alla rader och penningbelopp i dokumentet. Du kan inte ändra redovisningsfördelningarna från den här vyn.
 
+I version 10.0.13 har en funktion lagts till som validerar registret för redovisningsfördelning för att se till att nya fält ställs in korrekt. Den här funktionen kallas för **Aktivera ytterligare validering av data för dokument med hjälp av källdokumentets redovisningsramverk**. Om du vill använda funktionen måste du aktivera den med hjälp av arbetsytan **funktionshantering**. Aktivera funktionen genom att söka efter funktionsnamnet i fältet **Sök** på sidan **Funktionshantering** och välj sedan **Aktivera nu**.
 
 Mer information finns i [Redovisningsfördelningar och redovisningsjournalposter för leverantörsfakturor](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
-
-

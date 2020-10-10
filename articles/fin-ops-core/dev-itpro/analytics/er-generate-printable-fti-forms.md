@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771293"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893373"
 ---
 # <a name="generate-printable-fti-forms"></a>Skapa utskrivbara FTI-formulär
 
@@ -111,7 +111,7 @@ Du kan även generera FTI-formulär när du bokför en FTI genom att aktivera **
 ER-ramverket stöder för närvarande följande mål för skapade dokument:
 
 - **Hämtad fil** – Skapade formulär görs tillgängliga som hämtningar som du kan spara via webbläsaren.
-- **Skärm** – Microsoft Office 365 Excel används för att förhandsgranska skapade FTI-formulär i Excel-format.
+- **Skärm** – Microsoft 365 Excel används för att förhandsgranska skapade FTI-formulär i Excel-format.
 - **SharePoint-mapp** – Skapade formulär lagras baserat på inställningarna för ramverket för dokumenthantering.
 - **Programarkiv** – Skapade formulär lagras om bilagor till poster med körningsloggar i Microsoft Azure-lagringen.
 - **E-post** – Skapade formulär skickas som e-postbilagor.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2ea87e4147757a584e38b819faa8a0423ec0028
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 59c8071ed20740f81854d29e21f87b2e8650d10f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216105"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893171"
 ---
 # <a name="set-up-vendor-accounts"></a>Skapa leverantörskonton
 
@@ -66,7 +66,7 @@ Du kan skapa leverantörskontakter från noll. Alternativt kan du också kopiera
 
 Du kan inte ta bort en post för kontaktperson om ett dokument refererar till kontakten. I stället kan du avaktivera kontakten.  
 
-Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft Office 365. Du måste dock först ställa in synkronisering mellan Supply Chain Management och Office 365 i både Microsoft Exchange Server-synkroniseringen och Microsoft Outlook-installationsguiden.
+Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft 365. Du måste dock först ställa in synkronisering mellan Supply Chain Management och Microsoft Exchange Server i både Microsoft 365.-synkroniseringen och Microsoft Outlook-installationsguiden.
 
 ## <a name="vendors-in-different-legal-entities"></a>Leverantörer i olika juridiska personer
 Om en leverantör registreras för endast en juridisk person inom din organisation, och andra juridiska personer måste registrera samma leverantör, kan du använda sidan **Lägg till leverantör till en annan juridisk person** för att konfigurera leverantören i syfte att göra affärer med en annan juridisk person. Du måste välja en leverantörsgrupp, en valuta och en undantagsstatus för leverantören i den valda juridiska personen.  

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae7587fc46d2907241a5da3b6329465d77b3555
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e6a3330b0123605d4c7b86cedcb8bc95b3cf6de8
+ms.sourcegitcommit: a52a789044ca66c6771224a6cf0be8749bc99e5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383100"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "3837273"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Ställ in mobila enheter för lagerarbete
 
@@ -399,6 +399,9 @@ I följande register beskrivs dessa alternativ.
 <tr class="odd">
 <td>Kod för arbetsmall</td>
 <td>Välj den arbetsmall som ska användas för att skapa arbetet för en process. Om du till exempel tar emot en artikel för en inköpsorder, genereras det inlagrade arbetet baserat på arbetsmallen. Om du inte väljer någon arbetsmall tilldelar Supply Chain Management en mall baserat på frågevillkor. Mer information om arbetsmallar finns i <a href="control-warehouse-location-directives.md">Kontrollera lagerarbete med arbetsmallar och platsdirektiv</a>.</td>
+<tr class="even">
+<td>Visa lista med arbetsrad</td>
+<td>Välj ett alternativ för hur arbetare ska kunna visa och interagera med raderna för det valda plockningsarbetet. Mer information om det här alternativet finns i <a href="pick-line-overview.md">Konfigurera en menyartikel för mobila enheter för att visa en översikt över en plockningsrad</a>.</td>
 </tr>
 </tbody>
 </table>

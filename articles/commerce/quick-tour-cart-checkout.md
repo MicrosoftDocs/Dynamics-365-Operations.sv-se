@@ -3,7 +3,7 @@ title: Översikt över sidor för kundvagn och kassa
 description: Det här ämnet innehåller en översikt över sidor för kundvagn och kassa i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527581"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817788"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Översikt över sidor för kundvagn och kassa
 
@@ -40,7 +40,7 @@ På kassasida in en näthandelsplats visas ett steg-för-steg-flöde som kundern
 
 Kundvagnssidan fungerar som shoppingväskor och innehåller alla artiklar som har lagts till i vagnen.
 
-Följande illustration visar ett exempel på en kundvagnssida som har skapats med hjälp av online-startpaketet och temat "Fabrikam".
+Följande illustration visar ett exempel på en kundvagnssida som har skapats med hjälp av modulbibliotek och temat "Fabrikam".
 
 ![Exempel på en kundvagnssida](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ Information om hur du redigerar en kundvagnssida finns i [lägga till en kundvag
 
 Kassasidan anger var kunden anger den information som behövs för att göra en beställning.
 
-Följande illustration visar ett exempel på kassasidan som har skapats med hjälp av online startpaketet.
+Följande illustration visar ett exempel på kassasidan som har skapats med hjälp av modulbiblioteket.
 
 ![Exempel på en kassasida](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ Huvuddelen av kassasidan är där all orderinformation samlas in. Informationen 
 
 En leveransadress måste anges om artiklar måste levereras. Formatet på leveransadresser för varje språkversion kan konfigureras i Dynamics 365 Commerce. Om till exempel artiklarna ska levereras till USA måste leveransadressen innehålla gatuadress, region och postnummer. En del grundläggande verifiering sker för leverans adressfält, t.ex. validering av alfanumeriska tecken, maximal längd och siffror. Även om giltigheten för själva adressen inte har verifierats kan den här verifieringen utföras med hjälp av anpassade tjänster från tredje part.
 
-Leveransadressen används för alla artiklar i vagnen som alternativet "leverera" har valts för. Om du använder det kassaflöde som finns i online startpaketet kan enskilda kundvagnsartiklar inte levereras till olika adresser. Om du behöver den här funktionen kan den implementeras genom anpassningar av modulerna för utcheckning.
+Leveransadressen används för alla artiklar i vagnen som alternativet "leverera" har valts för. Om du använder det kassaflöde som finns i modulbiblioteket kan enskilda kundvagnsartiklar inte levereras till olika adresser. Om du behöver den här funktionen kan den implementeras genom anpassningar av modulerna för utcheckning.
 
 När leveransadressen har angetts visas de leveransmetoder som är tillgängliga från Dynamics 365 Commerce onlinebutiken. Leveransmetoderna och adresserna som stöds kan konfigureras i handel.
 
@@ -80,7 +80,7 @@ Under kassaflödet kan en kund som är medlem i ett förmånsprogram och som har
 
 #### <a name="gift-cards"></a>Presentkort
 
-Online startpaketet ska lösa in sina interna presentkort för en beställning. Om du vill använda ett internt presentkort måste kunden vara inloggad. Om du vill ha ytterligare säkerhet rekommenderar vi att du anpassar flödet med hjälp av en PIN-kod (personal Identification Number) för interna presentkort.
+Modulbiblioteket ska lösa in sina interna presentkort för en beställning. Om du vill använda ett internt presentkort måste kunden vara inloggad. Om du vill ha ytterligare säkerhet rekommenderar vi att du anpassar flödet med hjälp av en PIN-kod (personal Identification Number) för interna presentkort.
 
 ### <a name="signed-in-and-guest-users"></a>Inloggade och gästanvändare
 

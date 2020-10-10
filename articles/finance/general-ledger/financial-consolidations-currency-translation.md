@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823465"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Ekonomisk konsolidering och valutaregistrering – översikt
 
@@ -103,6 +103,7 @@ Om du vill visa resultaten av konsolideringen har du flera alternativ:
     ![Konsolideringstransaktioner på sidan Konsolideringar](./media/managing-consolidation-transactions.png "Konsolideringstransaktioner på sidan Konsolideringar")
 
 Om du vill köra konsolideringen igen, kan du bara behandla konsolideringen. Alternativt kan du först markera **ta bort transaktionerna** på sidan **konsolideringar**.
+I händelsen är saldona för det konsoliderade kontot inte korrekta, dessa saldon kan korrigeras med hjälp av **Sidan UB-periodsjusteringar**.
 
 ## <a name="consolidate-with-import"></a>Konsolidera med import
 Konsolidera med importeringsfunktionalitet fungerar på samma sätt som funktionen Konsolidera online. När du väljer de juridiska personerna ska du bläddra från källfilen som innehåller data.
@@ -156,6 +157,7 @@ För mer information om hur valutaomvärdering fungerar i modulen **redovisning*
 - Elimineringsjournaler kan bara bokföras till det aktuella lagret.
 - Endast aktiva saldon konsolideras. Om du därför vill visa ingående balans, måste du fortfarande köra ett årsbokslut i konsolideringsföretaget.
 - Du kan bokföra en dagboksjournal i ett elimineringsföretag, men inte i ett konsolideringsföretag.
+- Justeringar av saldon i ett konsolideringsföretag kan bara göras med hjälp av sidan **UB-periodsjusteringar**. 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>Fördelar med att använda ekonomisk rapportering för ekonomisk konsolidering och valutaomräkning eller att komplettera Konsolidera online för konsoliderad rapportering
 Kunder som använder ekonomisk rapportering för ekonomisk konsolidering och valutaomräkning eller att komplettera Konsolidera online för konsoliderad rapportering får olika fördelar:
