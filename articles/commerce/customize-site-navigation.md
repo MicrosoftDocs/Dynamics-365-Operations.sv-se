@@ -3,7 +3,7 @@ title: Anpassa webbplatsnavigeringen
 description: I det här avsnittet beskrivs hur du skapar en anpassad onlinemapp för navigering för att ordna dina produkter för bläddring på din Microsoft Dynamics 365 Commerce-webbplats.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269669"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817240"
 ---
 # <a name="customize-site-navigation"></a>Anpassa webbplatsnavigeringen
 
@@ -81,7 +81,7 @@ Gör så här om du vill att din navigeringsnoden ska vara tillgänglig för din
 Om du vill visa kategorihierarkin i din nätbutik måste du lägga till modulen för navigeringsmenyn på lämplig plats i en mall eller i ett fragment. Modulen navigeringsmeny visar sedan webbhierarkin, förutsatt att du har publicerat din hierarki på den kanal som webbplatsen är bunden till.
 
 > [!NOTE]
-> Med modulen navigeringsmeny som ingår i butikens startpaket kan användarna bara navigera till kategorier som inte har underkategorier. Om dina kunder ska kunna navigera till kategorier som har underkategorier måste du anpassa modulen för navigeringsmenyn.
+> Med modulen navigeringsmeny som ingår i modulbibliotek kan användarna bara navigera till kategorier som inte har underkategorier. Om dina kunder ska kunna navigera till kategorier som har underkategorier måste du anpassa modulen för navigeringsmenyn.
 
 ## <a name="add-custom-navigation-options"></a>Lägga till anpassade navigeringsalternativ
 

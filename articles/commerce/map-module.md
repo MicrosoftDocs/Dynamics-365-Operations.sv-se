@@ -3,7 +3,7 @@ title: Kartmodul
 description: Det här avsnittet mappar kartmoduler och beskriver hur du konfigurerar dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ca531e6cbf0a1044b0a13e5cdf42c7b4f0498fe5
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811194"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817216"
 ---
 # <a name="map-module"></a>Kartmodul
 
@@ -38,7 +38,8 @@ En kartmodul visar platserna för butikerna i en interaktiv karta som återges m
 
 En kartmodul arbetar tillsammans med modulen butiksväljare för att fastställa geografiska platser för butiker som måste återges på en karta. Butiksväljare och kartmoduler interagerar när en användare väljer en butik i en av dessa moduler på en webbplatssida. Kartmoduler kan utökas för andra scenarier, förutom interaktion med modulerna för butiksväljare. Det krävs emellertid att modulen anpassas.
 
-Kartmodulen introducerades i Commerce version 10.0.13.
+> [!NOTE]
+> Mappningsmodulen är tillgänglig i Dynamics 365 Commerce 10.0.13-versionen.
 
 Följande bild visar ett exempel på en kartmodul som används på en sida för butiksväljare.
 
@@ -70,7 +71,7 @@ Mer information om hur du konfigurerar en kartmodul på en sida finns i [modulen
  
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
 [Modul för inköpsruta](add-buy-box.md)
 

@@ -3,7 +3,7 @@ title: Hantering av förmåner – översikt
 description: Översikt över funktionen för förmånshantering i Dynamics 365 Human Resources. Erbjud dina medarbetare utökade förmånsalternativ med en lättanvänd onlineupplevelse.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599390"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819775"
 ---
 # <a name="benefits-management-overview"></a>Förmånshantering – översikt
 
@@ -41,15 +41,9 @@ För att vara konkurrenskraftig måste du erbjuda en stor mängd fördelar för 
 
 Om du vill ha tillgång till demonstrationsdata måste du omdistribuera miljön i begränsat läge.
 
-## <a name="benefits-management-known-issues"></a>Kända problem med förmånshantering
-
-### <a name="flex-credit-programs"></a>Flexkreditprogram
-
-Det totala kreditvärde som har definierats för ett flexkreditprogram visas i formuläret **Förmånsplaner för arbetare**. Om du anger att ett flexkreditprogram ska ha en proportionell fördelningsregel som **ingen**, får du också ett felmeddelande i formuläret **arbetarens förmånsplan** när du väljer och bekräftar planer.
-
 ## <a name="enable-benefits-management"></a>Aktivera hantering av förmåner
 
-Den här artikeln beskriver hur du aktiverar funktionerna i personal. Den talar också om vilka befintliga funktioner i personal som hantering av förmåner ersätter eller inaktiveras när du har aktiverat hantering av förmåner.
+Det här ämnet beskriver hur du aktiverar funktionerna i personal. Den talar också om vilka befintliga funktioner i personal som hantering av förmåner ersätter eller inaktiveras när du har aktiverat hantering av förmåner.
 
 > [!IMPORTANT]
 > När du har aktiverat hantering av förmåner i miljön **produktion** kan du inte inaktivera den. Vi rekommenderar att du aktiverar och testar förmånshantering i en miljö med **begränsat läge** innan du aktiverar den i en miljö för **produktion**. Det finns betydande skillnader mellan den tidigare förmånsfunktionen och nya fördelar för hanteringsfunktioner som kräver ytterligare inställningar och bör testas innan de kan placeras i produktionen.

@@ -3,7 +3,7 @@ title: Modul för inköpsruta
 description: Det här avsnittet handlar om moduler för inköpsruta och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761307"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817095"
 ---
 # <a name="buy-box-module"></a>Modul för inköpsruta
 
@@ -75,9 +75,12 @@ Följande köpboxmodulinställningar som kan konfigureras på **Platsinställnin
 - **Lager** – För information om hur du använder lagerinställningar finns i [tillämpa lagerinställningar](inventory-settings.md).
 - **Lägg till i kundvagn** - den här egenskapen används för att ange funktionen när en artikel har lagts till i vagnen. De möjliga värdena är **Navigera till kundvagn**, **Navigera inte i kundvagn** och **Visa meddelanden**. När värdet är inställt på **Navigera till kundvagn** skickas användarna till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Navigera inte till kundvagn** skickas användarna inte till kundvagnssidan när de har lagt till en artikel. När värdet är inställt på **Visa meddelanden** visas användarna ett bekräftelsemeddelande och du kan fortsätta att bläddra på sidan produktinformation. 
 
-    I följande bild visas ett exempel på ett bekräftelsemeddelande om tillägg till kundvagnen på Fabrikam webbplats.
+> [!IMPORTANT]
+> Platsinställningarna **Lägg till i kundvagn** är tillgängliga i Dynamics 365 Commerce 10.0.11 versionen. Om du uppdaterar från en äldre version av Dynamics 365 Commerce måste du uppdatera filen appsettings.json manuellt. Information om hur du uppdaterar filen appsettings.json finns i [SDK- och modulens biblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Exempel på en meddelandemodul](./media/ecommerce-addtocart-notifications.PNG)
+I följande bild visas ett exempel på ett bekräftelsemeddelande om tillägg till kundvagnen på Fabrikam webbplats.
+
+![Exempel på en meddelandemodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interaktion för skalningsenhet för handel
 
@@ -111,7 +114,7 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
 [Modul för butiksväljare](store-selector.md)
 
@@ -129,6 +132,8 @@ Om du vill lägga till en modul för inköpsruta på en ny sida och ställa in d
 
 [Modul för sidfot](author-footer-module.md)
 
-[Modul för social delning](social-share-module.md)
+[Modul för delning på sociala nätverk](social-share-module.md)
 
 [Beräkna lagertillgänglighet för butikskanaler](calculated-inventory-retail-channels.md)
+
+[Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)

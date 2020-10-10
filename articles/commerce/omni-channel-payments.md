@@ -3,7 +3,7 @@ title: Översikt över betalningar i flera kanaler
 description: Det här ämnet innehåller en översikt betalningar i flera kanaler i Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613187"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819823"
 ---
 # <a name="omni-channel-payments-overview"></a>Översikt över betalningar i flera kanaler
 
@@ -92,6 +92,9 @@ Följande scenarier för betalning i flera kanaler stöds:
 - Köp i kundtjänst och hämta i butiken
 - Köp i butik A och hämta i butik B
 - Köp i butik A, leverera till kund
+
+    > [!NOTE]
+    > Betalningar som görs i kundtjänst och som är kopplade till betalningsfunktionen "normal" måste markeras som **Förskottsbetala** = **Ja** för att återspeglas i det belopp som ska förfalla vid återanrop av ordern i kassan. Ej förskottsbetala betalningar av typen normal identifieras inte när ordern återkallas i kassan. 
 
 Variationer av dessa scenarier stöds också. En onlinebeställning kan till exempel inkludera både rader som ska levereras till kunden och de rader som ska hämtas i butiken. Alla alternativ för orderuppfyllelse stöds via betalningar i flera kanaler. 
 
@@ -190,8 +193,8 @@ Följ dessa steg om du vill köra scenariet:
 2. På sidan **transaktion** lägger du till Karen Berg till transaktionen med hjälp av det numeriska tangentbordet för **2001**.
 3. Lägg till en eller flera rader till transaktionen.
 4. Välj **order** om du vill visa orderalternativen.
-5. Välj **plocka alla**och välj sedan när du uppmanas **kundorder**.
-6. Ange **Seattle**i sökfältet och välj sedan butiken i **Stockholm** för upphämtning. 
+5. Välj **leverera alla**och välj sedan när du uppmanas **kundorder**.
+6. På sidan för leveransmetod, välj **Standard på natten** och välj sedan **OK** för att acceptera dagens datum som leveransdatum. 
 7. Välj **OK** om du vill acceptera aktuellt datum som datum för upphämtningen.
 8. Välj **Betalningskort** för att initiera betalningen.
 9. Betalningsmedel kortbetalning för det belopp som förfaller till insättning. 
@@ -233,5 +236,5 @@ När en order som har flera betalningsmedel och flera rader hämtas, tar kassör
 
 - [Vanliga frågor om betalningar](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365-betalningskoppling för Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [Konfigurera BOPIS i en Dynamics 365 Commerce utvärderingsmiljö](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

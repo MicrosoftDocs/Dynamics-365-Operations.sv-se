@@ -3,7 +3,7 @@ title: Visuella konfigurationer för kassaanvändargränssnitt
 description: Det här avsnittet innehåller information om skärmlayouter för Dynamics 365 Commerce kassamiljöer (POS)-uppgifter.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505644"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834219"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuella konfigurationer för kassaanvändargränssnitt
 
@@ -62,6 +62,8 @@ Visuella profiler tilldelas till kassor och de anger visuella element som är ka
 > [!NOTE]
 > Layouten **höger** och datum/tid-visning gäller inte för inloggningsskärmen i den kompakta vyn.
 
+Du måste köra distributionschemajobbet **1090** (**Kassor**) för att synkronisera de senaste inställningarna för visuell profil i kanaldatabasen.
+
 ## <a name="screen-layouts"></a>Skärmlayouter
 
 Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av gränssnittskontrollerna på kassans **välkomst**-skärm och **transaktions**-skärmen.
@@ -81,6 +83,8 @@ Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen a
 ### <a name="assignment"></a>Uppdrag
 
 Skärmlayouter kan tilldelas på butik-, kassa- och användarnivå. Användartilldelningen åsidosätter kassa- och butikstilldelningen, och kassatilldelningen åsidosättningar butikstilldelningen. I ett enkelt scenario där alla användare använder samma layout oavsett kassa eller roll kan skärmlayouten endast anges för butiksnivå. I de scenarier där vissa kassor eller användare kräver specialiserade layouter, kan dessa layouter tilldelas.
+
+Beroende på vilken nivå du har tilldelat webblayouterna måste du köra distributionschemajobbet **1070** (**kanalkonfiguration**), **1090** (**kassor**) och/eller **1060** (**personal**) för att synkronisera de senaste konfigurationerna för skärmlayout med kanaldatabasen.
 
 ### <a name="layout-sizes"></a>Layoutstorlekar
 

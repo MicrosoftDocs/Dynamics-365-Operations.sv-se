@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210167"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887250"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram för jobbplanering
 
@@ -38,7 +38,7 @@ Ett Gantt-diagram är en visuell representation av schemalagda aktiviteter inom 
 -   Jobb från planerade tillverkningsorder.
 -   Finplanerade projektaktiviteter av typen timprognoser.
 
-Gantt-schemat kan öppnas i två olika vyer, **Ordervy** och **Resursvy**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). I **Ordervy**, grupperas aktiviteter under tillverkningsorder. Detta kan exempelvis vara användbart om du vill behålla en översikt över de jobb som tillhör samma order. I **Resursvy** grupperas alla jobb under enskilda resurser. Den här vyn kan vara användbar när du optimerar planen på resursnivå, till exempel en dator eller en grupp av datorer. Gantt-diagrammet nedan visar **Ordervy** och **Resursvy** med dessa nyckelelement:
+Gantt-schemat kan öppnas i två olika vyer **Ordervy** och **Resursvy**. I **Ordervy**, grupperas aktiviteter under tillverkningsorder. Detta kan exempelvis vara användbart om du vill behålla en översikt över de jobb som tillhör samma order. I **Resursvy** grupperas alla jobb under enskilda resurser. Den här vyn kan vara användbar när du optimerar planen på resursnivå, till exempel en dator eller en grupp av datorer. Gantt-diagrammet nedan visar **Ordervy** och **Resursvy** med dessa nyckelelement:
 
 1.  Gantt-diagramaktivitet
 2.  Symbol för materialbrist
