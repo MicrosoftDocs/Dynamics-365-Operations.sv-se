@@ -1,14 +1,14 @@
 ---
 title: Produktdimensioner
 description: Det finns fem produktdimensioner – färg, konfiguration, storlek, stil och version. Du kombinerar produktdimensioner i dimensionsgrupper och tilldelar dimensionsgrupper till produktmallar. Kombinationerna av produktdimensioner bestämmer hur produktvarianter definieras.
-author: cvocph
+author: t-benebo
 manager: tfehr
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -16,15 +16,15 @@ ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: conradv
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 72b8cd8149ab7b2074eb815231be348db62e282e
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657326"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895459"
 ---
 # <a name="product-dimensions"></a>Produktdimensioner
 
@@ -107,7 +107,7 @@ När du testar dina lösningar för att få kompatibilitet med versionsdimension
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Kartor:** Om några kartor använder lagerdimensionerna måste motsvarande relationskartläggning till dessa kartor uppdateras så att de inkluderar versionsdimension. I utökade modell- eller registertillägg kan du söka efter register där fälten inkluderar lagerdimensioner.
-1. **Microsoft Dynamics 365 Commerce-funktioner:** när den är aktiverad kommer versionsdimensionen att visas i den Commerce-specifika koden i Dynamics 365 Supply Chain Management. Versionsdimensionen stöds dock ännu inte av Commerce-kanaldatabasen eller i kassaprogrammen (POS). Detta beteende liknar det aktuella beteendet för konfigurationsdimensionen i hela Commerce.
+1. **Microsoft Dynamics 365 Commerce-funktioner:** när den är aktiverad kommer versionsdimensionen att visas i den Commerce-specifika koden i Dynamics 365 Supply Chain Management. Versionsdimensionen stöds dock ännu inte av Commerce-kanaldatabasen eller i kassaprogrammen (POS) eller e-handelsprogram. Dessa Commerce-specifika appar stöder inte användare som säljer/levererar eller returnerar/tar emot lager efter versionsdimension. Sökfunktionerna för lagertillgänglighet kommer inte att urskilja lager per versionsdimension i Commerce-appar. Detta beteende liknar det aktuella beteendet för konfigurationsdimensionen i hela Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Aktivera versionsdimension
 

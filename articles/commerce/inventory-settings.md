@@ -3,7 +3,7 @@ title: Använd lagerinställningar
 description: Det här avsnittet behandlar lagerinställningar och beskriver hur du använder dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 737e71dc73750bf151629fd904081924ac15b91e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621231"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817619"
 ---
 # <a name="apply-inventory-settings"></a>Använd lagerinställningar
 
@@ -38,6 +38,9 @@ Lagerinställningarna anger om lagret ska kontrolleras innan produkter läggs ti
 Dynamics 365 Commerce tillhandahåller uppskattningar av tillgänglig lagerbehållning för produkter. Information om hur uppskattad behållnings tillgänglighet beräknas finns i [Beräkna lagerdisposition för butikskanaler](calculated-inventory-retail-channels.md).
 
 I Commerce webbplatsskaparen kan lagertrösklar och intervall definieras för en produkt eller en kategori. De bestämmer om lager kan klassificeras som i lager, låglager eller utanför lagret. Mer information finns i [Konfigurera inventeringsbuffertar and lagernivåer](inventory-buffers-levels.md).
+
+> [!NOTE]
+> Stöd för lagertrösklar och -intervall är tillgängliga i Dynamics 365 Commerce 10.0.12-versionen.
 
 ## <a name="inventory-settings"></a>Lagerinställningar
 
@@ -55,6 +58,9 @@ I Commerce, lagerinställningar definieras på **Platsinställningar \> Tillägg
     - När **inte i lager** är markerat visas endast meddelandet "inte i lager".
 
 - **Tröskel för inte i lager** – den här gamla numeriska inställningen börjar gälla först om värdet **tröskelvärdet för inte i lager** har valts för inställningen **lagernivå baserat på**.
+
+> [!IMPORTANT] 
+> Dessa inställningar finns i Dynamics 365 Commerce 10.0.12 versionen. Om du uppdaterar från en äldre version av Dynamics 365 Commerce måste du uppdatera filen appsettings.json manuellt. Information om hur du uppdaterar filen appsettings.json finns i [SDK- och modulens biblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="modules-that-use-inventory-settings"></a>Moduler som använder lagerinställningar
 
@@ -74,9 +80,9 @@ Följande bild visar ett exempel på en kundvagn som visar meddelandet i lager (
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
-[Konfigurera inventeringsbuffertar and lagernivåer](inventory-buffers-levels.md)
+[Konfigurera lagerkvantiteter och lagernivåer](inventory-buffers-levels.md)
 
 [Kundvagnsmodul](add-cart-module.md)
 
@@ -85,3 +91,5 @@ Följande bild visar ett exempel på en kundvagn som visar meddelandet i lager (
 [Sidor och moduler för kontohantering](account-management.md)
 
 [Modul för butiksväljare](store-selector.md)
+
+[Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)

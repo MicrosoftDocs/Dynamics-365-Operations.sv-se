@@ -3,7 +3,7 @@ title: Översikt över sidor för kontohantering
 description: Det här ämnet innehåller en översikt över sidor för kontohantering i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 03a2ebd07c2a95198f506df3fd94c967ad0315e8
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: d0e066428e8c4717b5a50144f63e59b87089d286
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527618"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817812"
 ---
 # <a name="account-management-pages-overview"></a>Översikt över sidor för kontohantering
 
@@ -46,7 +46,7 @@ Följande illustration visar ett exempel på landningssidan kontohantering.
 
 På sidan **Min profil** visas kundens kontoinformation, till exempel namn och telefonnummer till kunder. Kunden kan uppdatera profilinformationen på den här sidan. Den här sidan kan anpassas så att den innehåller ytterligare kundkontoinställningar, till exempel ett alternativ för att registrera sig för marknadsföring via e-post.
 
-Följande illustration visar ett exempel på sidan **Min profil** som har skapats med hjälp av startpaketet.
+Följande illustration visar ett exempel på sidan **Min profil** som har skapats med hjälp av modulbibliotek.
 
 ![Exempel på sidan Min profil](./media/Account-Management-MyProfile.PNG)
 

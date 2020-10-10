@@ -3,7 +3,7 @@ title: Skapa ER-konfigurationer i RCS och överföra dem till den globala databa
 description: Det här förklarar hur du skapar en elektronisk rapporteringskonfiguration (ER) i Microsoft Regulatory Configuration Services (RCS) och laddar upp den till den globala databasen.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 0e194a8b777f984412d81e315f92ab4bb8a3b0c9
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371269"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834243"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Skapa ER-konfigurationer i RCS och överför dem till den globala databasen
 
@@ -54,7 +54,7 @@ Om en RCS-miljö redan har etablerats för ditt företag kan du använda sidans 
 5. Ange ett namn och en beskrivning och välj sedan **Skapa konfiguration** för att skapa en ny härledd version.
 6. Välj den nya härledda konfigurationen, lägg till en beskrivning av versionen och välj sedan **OK**. Status för konfigurationen ändras till **Slutförd**.
 
-![Ny konfigurationsversion i RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
+![Ny konfigurationsversion i RCS](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > När konfigurationsstatusen ändras kan du få ett meddelande om valideringsfel som berör de anslutna programmen. Om du vill inaktivera valideringen grå du till åtgärdsfönstret i fliken **Konfigurationer**, väljer **Användarparametrar** och anger sedan alternativet **Hoppa över validering vid statusändring och ombasering av konfigurationsstatus** som **Ja** 
@@ -66,7 +66,7 @@ Om du vill dela en ny eller härledd konfiguration med din organisation kan du �
 1. Markera den slutförda versionen av konfigurationen och välj sedan **Överför till databas**.
 2. Markera alternativet **Global (Microsoft)** och välj sedan **Överför**.
 
-    ![Alternativ för databasöverföring](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Alternativ för databasöverföring](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Markera **Ja** i bekräftelserutan som visas. 
 4. Uppdatera beskrivningen av versionen efter behov och välj sedan **OK**. 
@@ -74,6 +74,27 @@ Om du vill dela en ny eller härledd konfiguration med din organisation kan du �
 Konfigurationens status uppdateras till **Delas**, och konfigurationen överförs till den globala databasen. Därifrån kan du arbeta med den på följande sätt:
 
 - Importera den till din Dynamics 365-instans. Mer information finns i [Importera konfigurationer för elektronisk rapportering (ER) från RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- För att dela den med en tredje part eller en extern organisation, se [RCS Dela konfigurationer för elektronisk rapportering (ER) med externa organisationer](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
+- För att dela den med en tredje part eller en extern organisation, se [RCS Dela konfigurationer för elektronisk rapportering (ER) med externa organisationer](rcs-global-repo-share-configuration.md)
 
-![Härledd Intrastat contoso-konfigurationsversion i den globala databasen](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Härledd Intrastat contoso-konfigurationsversion i den globala databasen](media/RCS_Config_upload_GlobalRepo.JPG)
+
+## <a name="delete-a-configuration-from-the-global-repository"></a>Radera en konfiguration från den globala databasen
+Gör på följande sätt för att ta bort en konfiguration som din organisation har skapat.
+
+1. I arbetsytan **Elektronisk rapportering** verifierar du att din konfigurationsleverantör är **Aktiv**. Mer information finns i [Skapa konfigurationsleverantörer och markera dem som aktiva](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Välj **databas** i den aktiva konfigurationsleverantören.
+3. Välj typ av databas **Global** och sedan **Öppna**.
+4. På snabbfliken **Filter** hittar du den konfiguration som du vill radera med hjälp av funktionen **Filter**.
+5. På snabbfliken **Version** välj den version av konfigurationen som du vill ta bort och välj sedan **Ta bort**:
+
+    ![Radera en konfiguration från den globala databasen](media/RCS_Delete_from_GlobalRepo.JPG)
+
+6. Markera **Ja** i bekräftelserutan som visas.
+
+    ![Ta bort bekräftelsemeddelande för konfigurationsversion](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+Konfigurationsversionen tas bort och bekräftelsemeddelandet visas. 
+
+> [!NOTE]
+> Konfigurationer kan bara tas bort av den konfigurationsprovider som skapade dem. Om konfigurationen har delats med en annan organisation måste konfigurationen delas ut innan du kan ta bort den.
+ 

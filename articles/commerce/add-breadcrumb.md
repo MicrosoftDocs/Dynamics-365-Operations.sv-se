@@ -3,7 +3,7 @@ title: Modulen för navigeringssökväg
 description: Det här avsnittet handlar om moduler för navigeringssökväg och beskriver hur du lägger till dem till webbsidorna i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 38efc3a60ae0ba49db2036dc84c49e4896727d94
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 7c6f215c3a7539cc16b0d72594702e6bdde7c58e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621070"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817120"
 ---
 # <a name="breadcrumb-module"></a>Modulen för navigeringssökväg
 
@@ -37,6 +37,9 @@ Med hjälp av moduler för navigeringssökväg navigering kan du navigera på we
 
 På sidor som har produktkategorikontext, t.ex. PDP och kategorisidor, visar modulerna för navigeringssökväg kategorihierarkin. På sidor som inte har kategorikontext visar moduler för navigeringssökväg **&lt;webbplatsens rot&gt; / &lt;aktuell sida&gt;** som standard. Moduler för navigeringssökväg kan också konfigureras manuellt på andra typer av webbplatssidor för att visa länkar till specifika sidor på webbplatsen.
 
+> [!NOTE]
+> Den dynamiska modulen är tillgänglig i Dynamics 365 Commerce 10.0.12-versionen.
+
 Följande bild visar ett exempel på en modul för navigeringssökväg som visar kategorihierarkin på ett PDP.
 
 ![Exempel på en modulen för navigeringssökväg](./media/ecommerce-breadcrumb.PNG)
@@ -48,6 +51,9 @@ Modulen för navigeringssökväg är beroende av inställningen **navigeringssö
 - **Visa kategorihierarki** – när det här värdet väljs visar den fullständiga kategorihierarkin för produkten som visas på PDP i modulen för dynamiska länkar.
 - **Visa tillbaka till resultat** – när det här värdet väljs visas länken "tillbaka till resultat" på ett PDP om användaren har öppnat PDP från en modul där det går att använda länken "tillbaka till resultat". Den här funktionen är tillgänglig när användare navigerar på sidorna kategori, sökning, lista och rekommendationslistor. För att stödja den här funktionen har modulerna för produktsamling och sökresultat en egenskap med namnet **Tillåt tillbaka till resultaten på PDP**. Den här egenskapen ger dig flexibiliteten att definiera vilka moduler som ska stödja länkfunktionen "tillbaka till resultat" i PDP. Till exempel när **Visa tillbaka till resultat** har valts som inställning på **navigeringssökväg displaytyp på PDP** i modulen för navigeringssökväg och **Tillåt tillbaka till resultat på PDP** är vald för sökresultatmodulen för sökningssidan, en "Tillbaka till resultat"-länk visas när användare navigerar från söksidan till en PDP.
 - **Visa kategorihierarki och tillbaka till resultat** – detta värde är en kombination av de föregående två. När det här värdet väljs visas både den fullständiga kategorihierarkin och länken "tillbaka till resultat" (om den har konfigurerats) på ett PDP.
+
+> [!IMPORTANT]
+> Dessa inställningar finns i Dynamics 365 Commerce 10.0.12 versionen. Om du uppdaterar från en äldre version av Dynamics 365 Commerce måste du uppdatera filen appsettings.json manuellt. Information om hur du uppdaterar filen appsettings.json finns i [SDK- och modulens biblioteksuppdateringar](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="breadcrumb-module-properties"></a>Egenskaper för modulen för navigeringssökväg
 
@@ -76,10 +82,12 @@ Om du vill lägga till en modul för navigeringssökväg till en PDP och ställa
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Startpaket – översikt](starter-kit-overview.md)
+[Översikt över modulbibliotek](starter-kit-overview.md)
 
 [Översikt över standardkategorilandningssida och sida för sökresultat](category-search-page-overview.md)
 
 [Produktsamlingsmoduler](product-collection-module-overview.md)
 
 [Modul för inköpsruta](add-buy-box.md)
+
+[Uppdateringar av SDK och modulbibliotek](e-commerce-extensibility/sdk-updates.md)

@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8e029c128140b5773f6ceef882d3f6cd0c0dd750
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: 504433fba95893bc0af651d74f43dd112238e8c1
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793307"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821190"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-functional-consultants"></a>Utbildningskatalog för funktionella konsulter för Dynamics 365 Commerce
 
@@ -35,6 +35,8 @@ Om du vill öva på funktioner som delas med andra Finance and Operations-appar,
 
 | Innehåll| beskrivning  | Format  | Längd  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
+| [Lär dig affärsvärdet av Microsoft Dynamics 365 och Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Den här utbildningsupplevelsen kommer att ta dig på en resa som börjar med att visa hur digitala transformeringar och hur kraftfulla affärsprogram kan förändra ditt företag. Vi kommer att ta upp hur Dynamics 365 och Power Platform hjälper dig att fatta välgrundade beslut baserade på organisationens behov och mål, genom fyra byggblock av digital transformation - modern, enhetlig, intelligent och anpassningsbar. | Gratis, självstudier online utbildningsväg | 6.5 timmar |
+| [Kom igång med Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/) | Dynamics 365 Commerce som bygger på de beprövade funktionerna i Dynamics 365 Retail är en omfattande lösning i flera kanaler där backoffice, butik, kundtjänst och digitala upplevelser samordnas. Dynamics 365 Commerce gör det möjligt för dig att skapa varumärkeslojalitet via anpassade kundåtaganden, öka intäkterna med förbättrad produktivitet hos anställda, optimera åtgärder för att minska kostnaderna och öka effektiviteten i leveranskedjan och slutligen leverera bättre affärsresultat. | Gratis, självstudier online utbildningsväg | 2 timmar |
 | [Kom igång med Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection är en molnbaserad lösning som är utformad för näthandel, fysiska butiker och handlare i flera kanaler att skydda sina intäkter och rykte genom att tillhandahålla verktyg och funktioner för att minska bedrägerier och missbruk, minska driftskostnaderna och öka acceptansnivåerna, samtidigt som användarkonton skyddas från bedrägeriexponering. | Gratis, självstudier online utbildningsväg | 35 minuter |
 
 ## <a name="commerce"></a>Commerce<a name="commerce"></a>

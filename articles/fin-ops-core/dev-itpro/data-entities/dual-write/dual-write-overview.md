@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8957065bcadc3f33adb60c2a8f2be78710289631
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 1eb5e4ea8d086baeee686ccb3d044b3ef9d2a4fa
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775157"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818582"
 ---
 # <a name="dual-write-overview"></a>Översikt över dubbelriktad skrivning
 
@@ -86,7 +86,7 @@ Dubbelriktad skrivning skapar en mappning mellan koncept i Finance and Operation
 Dubbelriktad skrivning ger dataintegrering i Microsoft Dynamics 365-program. Detta robusta ramverk länkar sig till miljöer och gör att olika affärsprogram kan fungera tillsammans. Här följer de viktigaste skälen till varför du bör använda dubbelriktad skrivning:
 
 + Dubbelriktad skrivning ger tätt sammankopplade, nära realtid och dubbelriktad integration mellan Finance and Operations-appar och modellstyrda appar i Dynamics 365. Den här integrationen gör Microsoft Dynamics 365 en enda kontaktpunkt för alla dina affärslösningar. Kunder som använder Dynamics 365 Finance och Dynamics 365 Supply Chain Management, men som inte använder Microsoft-lösningar för hantering av kundrelationer (CRM), flyttar till Dynamics 365 för sitt stöd till dubbelriktad skrivning.
-+ Data från kunder, produkter, åtgärder, projekt och sakernas Internet (IoT) skickas automatiskt till Common Data Service via dubbelriktad skrivning. Denna anslutning är användbar för företag som är intresserade av Microsoft Power Platform expansioner.
++ Data från kunder, produkter, åtgärder, projekt och sakernas Internet (IoT) skickas automatiskt till Common Data Service via dubbelriktad skrivning. Denna anslutning är användbar för företag som är intresserade av Power Platform expansioner.
 + Infrastrukturen för dubbelriktad skrivning följer principen för ingen kod/ingen kod. Minsta tekniska ansträngning krävs för att utöka standardmappningarna mellan tabeller och för att inkludera anpassade kartor.
 + Dubbelriktad skrivning stöder både online-läge och offline-läge. Microsoft är det enda företaget som har stöd för online- och offline-lägen.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258567"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893145"
 ---
 # <a name="business-document-management-overview"></a>Översikt över hantering av affärsdokument
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258567"
 
 Affärsanvändare använder ramverket [elektronisk rapportering (ER)](general-electronic-reporting.md) för att konfigurera format för utgående dokument i enlighet med lagkraven för olika länder/regioner. Användare kan också definiera dataflödet för att ange vilka programdata som placeras i genererade dokument. I ER-ramverket genereras utgående dokument i Microsoft Office-format (Excel-arbetsböcker eller Word-dokument) med hjälp av fördefinierade mallar. Mallarna fylls med data som krävs i enlighet med konfigurerat dataflöde när de dokument som krävs skapas. Varje konfigurerat format kan publiceras som en del av en ER-lösning för att generera specifika utgående dokument. Detta representeras av en ER-formatkonfiguration som kan innehålla mallar som du kan använda för att generera olika utgående dokument. Företagsanvändare kan använda det här ramverket för att hantera nödvändiga affärsdokument.
 
-**Hanteringen av affärsdokument** bygger vidare på ER-ramverket och gör det möjligt för affärsanvändare att redigera affärsdokumentmallar genom att använda Microsoft Office 365-tjänst eller lämpligt Microsoft Office-skrivbordprogram. Ändringar i dokumenten kan inkludera ändring av affärsdokumentdesign och att lägga till platshållare för ytterligare data utan källkodsändringar och nya distributioner. Det krävs ingen kunskap om ER-ramverk för uppdatering av mallar för affärsdokument.
+**Hanteringen av affärsdokument** bygger vidare på ER-ramverket och gör det möjligt för affärsanvändare att redigera affärsdokumentmallar genom att använda Microsoft 365-tjänst eller lämpligt Microsoft Office-skrivbordprogram. Ändringar i dokumenten kan inkludera ändring av affärsdokumentdesign och att lägga till platshållare för ytterligare data utan källkodsändringar och nya distributioner. Det krävs ingen kunskap om ER-ramverk för uppdatering av mallar för affärsdokument.
 
 > [!NOTE]
 > Tänk på att hanteringen av affärsdokument gör det möjligt att ändra mallar som används för att skapa affärsdokument som t.ex. order, fakturor osv. När en mall har ändrats och en ny version av den har publicerats, används den här versionen för att generera nödvändiga affärsdokument. Det går inte att använda hantering av affärsdokument för att ändra redan genererade affärsdokument.
@@ -170,7 +170,7 @@ Använd följande procedur om du vill ställa in de grundläggande parametrarna 
 Den valda dokumenttypen är företagsspecifik och används när användaren arbetar med affärsdokumenthantering i det företag för vilket den valda dokumenttypen konfigurerats. När användaren arbetar med affärsdokumenthantering i ett annat företag används samma dokumenttyp om ingen har konfigurerats för det här företaget. När en dokumenttyp har konfigurerats kommer den att användas istället för den som har valts i fältet **SharePoint-dokumenttyp**.
 
 > [!NOTE]
-> Parametern **SharePoint dokument typ** definierar en SharePoint-mapp som tillfällig lagringsplats för mallar som kan redigeras med antingen Microsoft Excel eller Word. Du måste ställa in den här parametern om du tänker använda de här Office-programmen för att redigera mallar. Mer information finns i [Redigera en mall i Office skrivbordsprogrammet](#EditInOfficeDesktopApp). Du kan behålla den här parametern tom om du planerar att ändra mallen genom att endast använda funktionen i Office 365. Mer information finns i [Redigera en mall i Office 365](#EditInOffice365).
+> Parametern **SharePoint dokument typ** definierar en SharePoint-mapp som tillfällig lagringsplats för mallar som kan redigeras med antingen Microsoft Excel eller Word. Du måste ställa in den här parametern om du tänker använda de här Office-programmen för att redigera mallar. Mer information finns i [Redigera en mall i Office skrivbordsprogrammet](#EditInOfficeDesktopApp). Du kan behålla den här parametern tom om du planerar att ändra mallen genom att endast använda funktionen i Microsoft 365. Mer information finns i [Redigera en mall i Microsoft 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurera åtkomstbehörigheter
 
@@ -295,13 +295,13 @@ Alternativet **Nytt dokument** är alltid tillgängligt för en mall i en ER-for
 
 5. Välj **OK** för att bekräfta starten av redigeringsprocessen.
 
-Sidan **BDM-mallredigerare** öppnas. Den valda mallen blir tillgänglig för redigering online med hjälp av Office 365.
+Sidan **BDM-mallredigerare** öppnas. Den valda mallen blir tillgänglig för redigering online med hjälp av Microsoft 365.
 
 ![Sidan Arbetsyta för hantering av affärsdokument](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Redigera en mall i Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Redigera en mall i Microsoft 365</a>
 
-Du kan inte ändra mall med Office 365. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet från **Vanligt** till **Fetstil** i Office Online. Dessa ändringar sparas automatiskt för den redigerbara mallen som lagras i den primära mallens lagringsutrymme (som standard Azure blob-lagringen). Detta är konfigurerat för ER-ramverket.
+Du kan inte ändra mall med Microsoft 365. Ändra till exempel teckensnittet för fältfrågan i mallhuvudet från **Vanligt** till **Fetstil** i Office Online. Dessa ändringar sparas automatiskt för den redigerbara mallen som lagras i den primära mallens lagringsutrymme (som standard Azure blob-lagringen). Detta är konfigurerat för ER-ramverket.
 
 ![Redigeringssida för mall för affärsdokumenthantering](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ När du redigerar mallen från ett ER-format som ägs av den aktuella aktiva lev
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Jag valde **Redigera dokument**, men i stället för att öppna sidan **BDM-mallredigeraren** i Finance and Operations, har jag skickats till Office 365 webbsidan.
-Detta är ett känt problem i Office 365 omdirigeringen. Detta inträffar när du loggar in i Office 365 på första gången. Du löser det här problemet genom att välja knappen **Bakåt** i webbläsaren för att gå tillbaka.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Jag valde **Redigera dokument**, men i stället för att öppna sidan **BDM-mallredigeraren** i Finance and Operations, har jag skickats till Microsoft 365 webbsidan.
+Detta är ett känt problem i Microsoft 365 omdirigeringen. Detta inträffar när du loggar in på Microsoft 365 första gången. Du löser det här problemet genom att välja knappen **Bakåt** i webbläsaren för att gå tillbaka.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jag förstår hur man redigerar en mall med hjälp Office 365 i den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag göra detta med Office-skrivbordsprogrammet?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Jag förstår hur man redigerar en mall med hjälp av Microsoft 365 den första programsessionen och hur man använder mallen i den andra programsessionen för att justera mallen för att se hur ändringarna påverkar det genererade affärsdokumentet. Kan jag göra detta med Office-skrivbordsprogrammet?
 Ja, det kan du. I den första programsessionen, välj **Öppna i skrivbordsprogram**. Din mall lagras i den temporära fillagringen och öppnas i Office-skrivbordsprogrammet. Utför sedan följande steg för att förhandsgranska malländringarna i det genererade affärsdokumentet:
 
 1. Gör ändringarna i mallen med hjälp av Office-skrivbordsprogrammet.
